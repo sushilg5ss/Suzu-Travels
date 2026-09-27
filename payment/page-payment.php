@@ -4,14 +4,14 @@
  *
  * Redesigned 28 Sep 2026. The "Pay online" form comes from the Suzu Payments plugin ([suzu_payment_form]):
  * it creates a WooCommerce order for the amount entered and opens the secure pay page, where the
- * site's Razorpay / PhonePe gateways take the payment. Previous version: page-payment.php.bak-2026-09-28
+ * site's Razorpay gateway takes the payment. Previous version: page-payment.php.bak-2026-09-28
  */
 get_header();
 
 $suzu_wa_pay  = 'https://wa.me/917087488961?text=' . rawurlencode('Hi Suzu Travels, please share your verified bank / UPI details for my booking payment.');
 $suzu_wa_help = 'https://wa.me/917087488961?text=' . rawurlencode('Hi Suzu Travels, I need help with a payment.');
 $suzu_faqs = array(
-	array( 'Is paying online on this page safe?', 'Yes. The payment itself happens on the secure Razorpay or PhonePe payment screen. Your card details, UPI PIN and banking passwords go only to them — Suzu Travels never sees or stores them.' ),
+	array( 'Is paying online on this page safe?', 'Yes. The payment itself happens on the secure Razorpay payment screen. Your card details, UPI PIN and banking passwords go only to Razorpay — Suzu Travels never sees or stores them.' ),
 	array( 'How much should I pay?', 'Pay the amount your trip planner has confirmed with you. Usually that is a small token or advance to confirm the booking and lock the rate, and the balance before travel, as agreed in writing.' ),
 	array( 'Will I get a receipt?', 'Yes. As soon as the payment succeeds you see a confirmation page and get a receipt by email, and your tour manager confirms the payment on WhatsApp.' ),
 	array( 'My payment failed but money was deducted. What now?', 'A failed payment that was debited is normally reversed to your account automatically within a few working days. Send us a screenshot on WhatsApp and we will check it with the payment gateway straight away.' ),
@@ -107,8 +107,8 @@ $suzu_faqs = array(
   <section class="sxp-hero">
     <span class="sxp-eyebrow">Payments</span>
     <h1>Secure Booking &amp; Payments</h1>
-    <p>Pay your token, advance or balance online in a minute. The payment is processed by Razorpay or PhonePe, and you get an instant receipt by email.</p>
-    <div class="sxp-chips"><span>UPI · Cards · Net banking · Wallets</span><span>Razorpay &amp; PhonePe secured</span><span>Instant email receipt</span><span>A small token locks today&rsquo;s rate</span></div>
+    <p>Pay your token, advance or balance online in a minute. The payment is processed securely by Razorpay, and you get an instant receipt by email.</p>
+    <div class="sxp-chips"><span>UPI · Cards · Net banking · Wallets</span><span>Secured by Razorpay</span><span>Instant email receipt</span><span>A small token locks today&rsquo;s rate</span></div>
     <div class="sxp-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4"/></svg></div>
   </section>
 
@@ -130,14 +130,14 @@ $suzu_faqs = array(
         <h3>How it works</h3>
         <ol class="sxp-steps">
           <li><div><b>Enter your details and amount</b>Name, mobile, email, your trip and the amount agreed with your planner.</div></li>
-          <li><div><b>Pay on the secure screen</b>Razorpay or PhonePe opens with UPI, cards, net banking and wallets.</div></li>
+          <li><div><b>Pay on the secure screen</b>Razorpay opens with UPI, cards, net banking and wallets.</div></li>
           <li><div><b>Get your confirmation</b>An email receipt instantly, and your tour manager confirms on WhatsApp.</div></li>
         </ol>
       </div>
       <div class="sxp-card sxp-safe">
         <h3>Pay safely</h3>
         <ul>
-          <li>Online payments on this page go only to Suzu Travels, through Razorpay or PhonePe.</li>
+          <li>Online payments on this page go only to Suzu Travels, through Razorpay.</li>
           <li>We never ask for your OTP, UPI PIN or card CVV on a call or message.</li>
           <li>Before any bank or UPI transfer, confirm the account details with our office on <b>+91 70874 88961</b>.</li>
         </ul>

@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Suzu Payments
- * Description: "Pay online" form for the Payment page. The guest enters name, phone, email, trip reference and amount; the plugin creates a WooCommerce order for that amount and sends them to the secure WooCommerce pay page, where the site's existing Razorpay / PhonePe gateways take the payment. Shortcode: [suzu_payment_form]
- * Version: 1.1.0
+ * Description: "Pay online" form for the Payment page. The guest enters name, phone, email, trip reference and amount; the plugin creates a WooCommerce order for that amount and sends them to the secure WooCommerce pay page, where the site's existing Razorpay gateway takes the payment. Shortcode: [suzu_payment_form]
+ * Version: 1.1.1
  * Author: Suzu Travels
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 final class Suzu_Payments
 {
-    const VERSION = '1.1.0';
+    const VERSION = '1.1.1';
     const VIA = 'suzu-pay';
     const MIN = 100;
     const MAX = 500000;
@@ -98,7 +98,7 @@ final class Suzu_Payments
             <label class="sp-f"><span>Trip / booking reference</span><input type="text" name="sp_ref" maxlength="120" placeholder="e.g. Kashmir 6D/5N, 12 Oct, tour manager Anshul"></label>
             <label class="sp-f sp-amt"><span>Amount (₹) *</span><div class="sp-amt-in"><b>₹</b><input type="number" name="sp_amount" required min="<?php echo (int) self::MIN; ?>" max="<?php echo (int) self::MAX; ?>" step="1" inputmode="numeric" placeholder="Agreed amount"></div></label>
             <button type="submit" class="sp-btn">Continue to secure payment <span aria-hidden="true">→</span></button>
-            <p class="sp-note">You will pay on the next screen through <b>Razorpay</b> or <b>PhonePe</b> (UPI, cards, net banking, wallets). Suzu Travels never sees your card or UPI PIN. A receipt is emailed to you and your tour manager confirms on WhatsApp.</p>
+            <p class="sp-note">You will pay on the next screen through <b>Razorpay</b> (UPI incl. Google Pay, PhonePe &amp; Paytm apps, cards, net banking, wallets). Suzu Travels never sees your card or UPI PIN. A receipt is emailed to you and your tour manager confirms on WhatsApp.</p>
         </form>
         <?php
         return ob_get_clean();
