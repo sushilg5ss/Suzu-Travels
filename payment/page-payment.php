@@ -70,6 +70,25 @@ $suzu_faqs = array(
 .sxp-way h3{font-size:18px;margin-bottom:6px}
 .sxp-way p{color:var(--mut);font-size:14.5px;line-height:1.6;margin:0 0 14px}
 .sxp-way a{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14.5px;color:var(--g2)!important;text-decoration:none!important;border-bottom:2px solid var(--gold);padding-bottom:2px}
+.spa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:16px}
+.spa-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 22px 18px;position:relative;overflow:hidden}
+.spa-card:before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:var(--bank,#1B5E20)}
+.spa-bank{font:800 20px/1.2 'Sora',sans-serif;color:var(--bank,#122615);margin:4px 0 12px}
+.spa-row,.spa-upi-id{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(18,38,21,.12);font-size:14.5px}
+.spa-row span,.spa-upi-id span{color:var(--mut)}
+.spa-row b,.spa-upi-id b{color:var(--ink);font-weight:700;text-align:right;display:inline-flex;align-items:center;gap:8px;word-break:break-all}
+.spa-copy{border:1px solid var(--line);background:var(--cream);color:var(--g2);font:700 12px/1 'Plus Jakarta Sans',sans-serif;padding:6px 9px;border-radius:8px;cursor:pointer}
+.spa-copy:hover{background:var(--g);color:#fff}
+.spa-upi{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:14px}
+.spa-qr{width:190px;height:190px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.spa-qr svg{width:100%;height:100%;display:block}
+.spa-upi-id{width:100%;border-bottom:0}
+.spa-app{display:none;font-weight:800;font-size:14.5px;color:#fff!important;background:var(--g2);padding:11px 18px;border-radius:12px;text-decoration:none!important}
+@media(hover:none) and (pointer:coarse){.spa-app{display:inline-flex}}
+.sxp-terms{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.sxp-term{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.sxp-term h3{font-size:16.5px;margin-bottom:6px}
+.sxp-term p{color:var(--mut);font-size:14.5px;line-height:1.6;margin:0}
 .sxp-faqs{background:#fff;border:1px solid var(--line);border-radius:18px;padding:6px 22px}
 .sxp-faqs details{border-bottom:1px solid var(--line)}
 .sxp-faqs details:last-child{border-bottom:0}
@@ -81,7 +100,7 @@ $suzu_faqs = array(
 .sxp-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .sxp-links a{font-size:14px;font-weight:700;color:var(--g)!important;text-decoration:none!important;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:#fff}
 .sxp-links a:hover{background:var(--g);color:#fff!important}
-@media(max-width:980px){.sxp-grid{grid-template-columns:1fr}.sxp-ways{grid-template-columns:1fr}.sxp-lock{display:none}}
+@media(max-width:980px){.sxp-grid{grid-template-columns:1fr}.sxp-ways{grid-template-columns:1fr}.sxp-terms{grid-template-columns:1fr}.sxp-lock{display:none}}
 @media(max-width:600px){.sxp{padding:16px 12px 50px}.sxp-hero{padding:30px 20px}.sxp-card{padding:22px 18px}.sp-row{grid-template-columns:1fr}}
 </style>
 <div class="sxp-in">
@@ -126,13 +145,37 @@ $suzu_faqs = array(
     </aside>
   </section>
 
-  <section class="sxp-sec">
+  <?php $suzu_accounts = shortcode_exists( 'suzu_payment_accounts' ) ? do_shortcode( '[suzu_payment_accounts]' ) : ''; ?>
+  <section class="sxp-sec" id="bank-upi">
+    <?php if ( $suzu_accounts ) : ?>
+    <h2>Bank transfer &amp; UPI</h2>
+    <p>Pay by NEFT, IMPS, RTGS or any UPI app to our official accounts below. After paying, send the screenshot on WhatsApp so we can match it to your booking.</p>
+    <?php echo $suzu_accounts; // phpcs:ignore -- escaped inside the plugin ?>
+    <div class="sxp-ways" style="grid-template-columns:repeat(2,1fr)">
+      <div class="sxp-way"><h3>Paid by transfer or UPI?</h3><p>Share the payment screenshot with your name and trip so your tour manager can confirm it.</p><a href="<?php echo esc_url( 'https://wa.me/917087488961?text=' . rawurlencode( 'Hi Suzu Travels, I have paid for my booking. Sharing the screenshot.' ) ); ?>" target="_blank" rel="noopener">Send screenshot on WhatsApp →</a></div>
+      <div class="sxp-way"><h3>Paying from abroad</h3><p>Travelling from outside India? Tell us your country and we will suggest the easiest way to pay for your trip.</p><a href="<?php echo esc_url( $suzu_wa_help ); ?>" target="_blank" rel="noopener">Ask on WhatsApp →</a></div>
+    </div>
+    <?php else : ?>
     <h2>Other ways to pay</h2>
     <p>Prefer a transfer, or paying from outside India? We will share verified details directly with you.</p>
     <div class="sxp-ways">
       <div class="sxp-way"><h3>Bank transfer (NEFT / IMPS / RTGS)</h3><p>Ask us for our current account details on WhatsApp. Share the transfer screenshot afterwards so we can match it to your booking.</p><a href="<?php echo esc_url( $suzu_wa_pay ); ?>" target="_blank" rel="noopener">Get bank details on WhatsApp →</a></div>
       <div class="sxp-way"><h3>UPI or QR code</h3><p>We can send our UPI ID or QR code on WhatsApp, confirmed by our office for your booking.</p><a href="<?php echo esc_url( $suzu_wa_pay ); ?>" target="_blank" rel="noopener">Get UPI details on WhatsApp →</a></div>
       <div class="sxp-way"><h3>Paying from abroad</h3><p>Travelling from outside India? Tell us your country and we will suggest the easiest way to pay for your trip.</p><a href="<?php echo esc_url( $suzu_wa_help ); ?>" target="_blank" rel="noopener">Ask on WhatsApp →</a></div>
+    </div>
+    <?php endif; ?>
+  </section>
+
+  <section class="sxp-sec" id="payment-terms">
+    <h2>Payment terms</h2>
+    <p>Simple rules, so there are no surprises. Your written booking confirmation always has the final details for your trip.</p>
+    <div class="sxp-terms">
+      <div class="sxp-term"><h3>Confirming your booking</h3><p>Your booking is confirmed when your token or advance is received and we send you the confirmation in writing, with hotels and dates named. The token holds the rate quoted to you.</p></div>
+      <div class="sxp-term"><h3>Balance payment</h3><p>The balance is paid before your trip starts, on the date written in your booking confirmation. You can pay it on this page, by bank transfer or by UPI.</p></div>
+      <div class="sxp-term"><h3>Receipts</h3><p>Every online payment gets an email receipt straight away. For transfers and UPI, we confirm receipt on WhatsApp once the amount reaches our account. A detailed invoice is available on request.</p></div>
+      <div class="sxp-term"><h3>Cancellations and refunds</h3><p>Cancellations and refunds follow our <a href="<?php echo esc_url( home_url( '/cancellation-and-refund-policy/' ) ); ?>">Cancellation &amp; Refund Policy</a>. Approved refunds are returned to the original payment method.</p></div>
+      <div class="sxp-term"><h3>Official accounts only</h3><p>Pay only through this page or to the accounts shown here. We never ask you to pay into a personal account. If anyone does, call us on +91 70874 88961 before paying.</p></div>
+      <div class="sxp-term"><h3>Charges and currency</h3><p>Prices and payments are in Indian rupees unless your quote says otherwise. Any charges your own bank or card adds are separate from your trip cost.</p></div>
     </div>
   </section>
 

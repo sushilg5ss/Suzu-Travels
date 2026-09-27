@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Suzu Payments
  * Description: "Pay online" form for the Payment page. The guest enters name, phone, email, trip reference and amount; the plugin creates a WooCommerce order for that amount and sends them to the secure WooCommerce pay page, where the site's existing Razorpay / PhonePe gateways take the payment. Shortcode: [suzu_payment_form]
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Suzu Travels
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 final class Suzu_Payments
 {
-    const VERSION = '1.0.0';
+    const VERSION = '1.1.0';
     const VIA = 'suzu-pay';
     const MIN = 100;
     const MAX = 500000;
@@ -25,6 +25,15 @@ final class Suzu_Payments
     public static function init()
     {
         add_shortcode('suzu_payment_form', [__CLASS__, 'shortcode']);
+        add_shortcode('suzu_payment_accounts', [__CLASS__, 'accounts_shortcode']);
+        add_action('admin_menu', function () {
+            add_options_page('Suzu Payments', 'Suzu Payments', 'manage_options', 'suzu-payments', [__CLASS__, 'admin_page']);
+        });
+        add_action('admin_post_suzu_pay_accounts_save', [__CLASS__, 'admin_save']);
+        add_filter('plugin_action_links_' . plugin_basename(__FILE__), function ($l) {
+            array_unshift($l, '<a href="' . esc_url(admin_url('options-general.php?page=suzu-payments')) . '">Bank &amp; UPI details</a>');
+            return $l;
+        });
         add_action('admin_post_nopriv_suzu_pay_submit', [__CLASS__, 'submit']);
         add_action('admin_post_suzu_pay_submit', [__CLASS__, 'submit']);
         add_action(self::CRON, [__CLASS__, 'cleanup']);
@@ -116,6 +125,126 @@ final class Suzu_Payments
         wp_register_script('suzu-pay', false, [], self::VERSION, true);
         wp_enqueue_script('suzu-pay');
         wp_add_inline_script('suzu-pay', "(function(){var forms=document.querySelectorAll('.sp-form');for(var i=0;i<forms.length;i++)(function(f){var mark=function(){var t=f.querySelector('.sp-t');if(!t||t.value)return;t.value='h-'+Math.random().toString(36).slice(2);};f.addEventListener('input',mark);f.addEventListener('focusin',mark);f.addEventListener('pointerdown',mark);})(forms[i]);})();");
+    }
+
+    /* ------------------------------------------- bank & UPI details (owner-entered) */
+
+    const OPT_ACC = 'suzu_pay_accounts';
+    const ACC_FIELDS = ['bank' => 'Bank name', 'name' => 'Account name', 'number' => 'Account number', 'ifsc' => 'IFSC code', 'branch' => 'Branch', 'type' => 'Account type', 'upi' => 'UPI ID', 'qr' => 'QR code image URL (optional)'];
+
+    public static function accounts()
+    {
+        $a = get_option(self::OPT_ACC);
+        $def = [['bank' => 'State Bank of India', 'color' => '#0066cc'], ['bank' => 'HDFC Bank', 'color' => '#004b8e']];
+        $out = [];
+        for ($i = 0; $i < 2; $i++) {
+            $row = is_array($a) && isset($a[$i]) && is_array($a[$i]) ? $a[$i] : [];
+            $out[] = array_merge(['bank' => $def[$i]['bank'], 'name' => '', 'number' => '', 'ifsc' => '', 'branch' => '', 'type' => '', 'upi' => '', 'qr' => '', 'color' => $def[$i]['color']], $row);
+        }
+        return $out;
+    }
+
+    public static function accounts_shortcode()
+    {
+        $accs = array_filter(self::accounts(), function ($a) {
+            return trim($a['number']) !== '' || trim($a['upi']) !== '' || trim($a['qr']) !== '';
+        });
+        if (!$accs) {
+            return '';
+        }
+        $needs_qr = false;
+        $html = '<div class="spa-grid">';
+        foreach ($accs as $a) {
+            $html .= '<div class="spa-card" style="--bank:' . esc_attr($a['color']) . '"><div class="spa-bank">' . esc_html($a['bank']) . '</div>';
+            if (trim($a['number']) !== '') {
+                foreach (['name', 'number', 'ifsc', 'branch', 'type'] as $k) {
+                    if (trim($a[$k]) === '') {
+                        continue;
+                    }
+                    $copy = in_array($k, ['number', 'ifsc'], true) ? '<button type="button" class="spa-copy" data-copy="' . esc_attr($a[$k]) . '">Copy</button>' : '';
+                    $html .= '<div class="spa-row"><span>' . esc_html(self::ACC_FIELDS[$k]) . '</span><b>' . esc_html($a[$k]) . $copy . '</b></div>';
+                }
+            }
+            $upi = trim($a['upi']);
+            if ($upi !== '' || trim($a['qr']) !== '') {
+                $html .= '<div class="spa-upi">';
+                if (trim($a['qr']) !== '') {
+                    $html .= '<img class="spa-qr" src="' . esc_url($a['qr']) . '" alt="' . esc_attr($a['bank'] . ' UPI QR code') . '" loading="lazy">';
+                } elseif ($upi !== '') {
+                    $needs_qr = true;
+                    $uri = 'upi://pay?pa=' . rawurlencode($upi) . '&pn=' . rawurlencode('Suzu Travels') . '&cu=INR';
+                    $html .= '<div class="spa-qr" data-upi="' . esc_attr($uri) . '" role="img" aria-label="' . esc_attr($a['bank'] . ' UPI QR code') . '"></div>';
+                }
+                if ($upi !== '') {
+                    $uri = 'upi://pay?pa=' . rawurlencode($upi) . '&pn=' . rawurlencode('Suzu Travels') . '&cu=INR';
+                    $html .= '<div class="spa-upi-id"><span>UPI ID</span><b>' . esc_html($upi) . '<button type="button" class="spa-copy" data-copy="' . esc_attr($upi) . '">Copy</button></b></div>'
+                        . '<a class="spa-app" href="' . esc_attr($uri) . '">Open in UPI app</a>';
+                }
+                $html .= '</div>';
+            }
+            $html .= '</div>';
+        }
+        $html .= '</div>';
+        wp_register_script('suzu-pay-acc', false, [], self::VERSION, true);
+        if ($needs_qr) {
+            wp_enqueue_script('suzu-qrcode', plugins_url('assets/qrcode.min.js', __FILE__), [], '1.4.4', true);
+            wp_register_script('suzu-pay-acc', false, ['suzu-qrcode'], self::VERSION, true);
+        }
+        wp_enqueue_script('suzu-pay-acc');
+        wp_add_inline_script('suzu-pay-acc', "(function(){var q=document.querySelectorAll('.spa-qr[data-upi]');for(var i=0;i<q.length;i++){if(typeof qrcode!=='function')break;var c=qrcode(0,'M');c.addData(q[i].getAttribute('data-upi'));c.make();q[i].innerHTML=c.createSvgTag({cellSize:5,margin:2,scalable:true});}var b=document.querySelectorAll('.spa-copy');for(var j=0;j<b.length;j++)b[j].addEventListener('click',function(e){var t=e.currentTarget,v=t.getAttribute('data-copy');var done=function(){t.textContent='Copied';setTimeout(function(){t.textContent='Copy';},1600);};if(navigator.clipboard){navigator.clipboard.writeText(v).then(done,done);}else{var x=document.createElement('textarea');x.value=v;document.body.appendChild(x);x.select();try{document.execCommand('copy');}catch(err){}document.body.removeChild(x);done();}});})();");
+        return $html;
+    }
+
+    public static function admin_page()
+    {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+        $accs = self::accounts(); ?>
+        <div class="wrap"><h1>Suzu Payments — bank &amp; UPI details</h1>
+        <p>These details appear on the <a href="<?php echo esc_url(home_url('/payment/')); ?>" target="_blank">Payment page</a> under “Bank transfer &amp; UPI”. Leave an account empty to hide it. If you give a UPI ID and no QR image, a QR code is generated automatically on the page. <b>Please double-check every digit — customers will pay to exactly what is shown here.</b></p>
+        <?php if (isset($_GET['saved'])) : ?><div class="notice notice-success"><p>Saved.</p></div><?php endif; ?>
+        <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+        <input type="hidden" name="action" value="suzu_pay_accounts_save"><?php wp_nonce_field('suzu_pay_accounts'); ?>
+        <?php foreach ($accs as $i => $a) : ?>
+            <h2>Account <?php echo (int) $i + 1; ?></h2>
+            <table class="form-table" role="presentation">
+            <?php foreach (self::ACC_FIELDS as $k => $label) : ?>
+                <tr><th scope="row"><label for="acc<?php echo (int) $i . esc_attr($k); ?>"><?php echo esc_html($label); ?></label></th>
+                <td><input class="regular-text" id="acc<?php echo (int) $i . esc_attr($k); ?>" name="acc[<?php echo (int) $i; ?>][<?php echo esc_attr($k); ?>]" value="<?php echo esc_attr($a[$k]); ?>" autocomplete="off"></td></tr>
+            <?php endforeach; ?>
+            </table>
+        <?php endforeach; ?>
+        <?php submit_button('Save details'); ?></form></div>
+        <?php
+    }
+
+    public static function admin_save()
+    {
+        if (!current_user_can('manage_options')) {
+            wp_die('Not allowed');
+        }
+        check_admin_referer('suzu_pay_accounts');
+        $in = isset($_POST['acc']) && is_array($_POST['acc']) ? wp_unslash($_POST['acc']) : [];
+        $cur = self::accounts();
+        $save = [];
+        for ($i = 0; $i < 2; $i++) {
+            $row = ['color' => $cur[$i]['color']];
+            foreach (array_keys(self::ACC_FIELDS) as $k) {
+                $v = isset($in[$i][$k]) ? trim(sanitize_text_field($in[$i][$k])) : '';
+                $row[$k] = $k === 'qr' ? esc_url_raw($v) : $v;
+            }
+            $save[] = $row;
+        }
+        update_option(self::OPT_ACC, $save, 'no');
+        if (function_exists('rocket_clean_post')) {
+            $p = get_page_by_path('payment');
+            if ($p) {
+                rocket_clean_post($p->ID);
+            }
+        }
+        wp_safe_redirect(add_query_arg(['page' => 'suzu-payments', 'saved' => 1], admin_url('options-general.php')));
+        exit;
     }
 
     /* ---------------------------------------------------------- submit */
