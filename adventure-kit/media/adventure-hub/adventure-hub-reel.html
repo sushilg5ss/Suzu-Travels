@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #0b1f33; font-family: "Plus Jakarta Sans", Inter, sans-serif; color: #fff; }
+      .full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; }
+      .ph img { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; display: block; }
+      .shade { background: linear-gradient(180deg, rgba(11,31,51,.78) 0%, rgba(11,31,51,.10) 22%, rgba(11,31,51,0) 40%, rgba(11,31,51,.55) 55%, rgba(11,31,51,.92) 78%, rgba(11,31,51,.96) 100%); }
+      .brand { position: absolute; left: 72px; top: 236px; width: 936px; }
+      .brand .k { font-size: 34px; font-weight: 800; letter-spacing: .22em; color: #f3d98f; }
+      .brand .s { margin-top: 10px; font-size: 30px; font-weight: 500; letter-spacing: .12em; color: rgba(255,255,255,.9); }
+      .ridge { position: absolute; left: 0; top: 930px; width: 1080px; height: 140px; }
+      .cap { position: absolute; left: 72px; top: 1070px; width: 936px; }
+      .cap .n { font-size: 34px; font-weight: 800; letter-spacing: .24em; color: #d4a24c; }
+      .mask { overflow: hidden; height: 236px; margin-top: 6px; }
+      .cap .w { font-size: 232px; font-weight: 800; line-height: 236px; letter-spacing: -0.035em; color: #fff; }
+      .cap .sub { margin-top: 18px; font-size: 52px; font-weight: 500; line-height: 1.2; color: #fff; }
+      .chip { display: inline-block; margin-top: 30px; padding: 16px 30px; border-radius: 999px; background: #d4a24c; color: #0b1f33; font-size: 40px; font-weight: 800; letter-spacing: -0.01em; }
+      .navy { background: #0b1f33; }
+      .g-head { position: absolute; left: 72px; top: 236px; width: 936px; }
+      .g-num { font-size: 260px; font-weight: 800; line-height: 250px; letter-spacing: -0.05em; color: #d4a24c; }
+      .g-t1 { font-size: 72px; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; color: #fff; margin-top: 8px; }
+      .g-t2 { font-size: 46px; font-weight: 500; color: rgba(255,255,255,.92); margin-top: 18px; }
+      .grid { position: absolute; left: 72px; top: 790px; width: 936px; display: grid; grid-template-columns: 456px 456px; grid-auto-rows: 232px; gap: 24px; }
+      .tile { position: relative; overflow: hidden; border-radius: 22px; background: #13304d; }
+      .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .tile span { position: absolute; left: 22px; bottom: 16px; font-size: 38px; font-weight: 800; letter-spacing: .06em; color: #fff; text-shadow: 0 3px 14px rgba(0,0,0,.7); }
+      .tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0) 45%, rgba(11,31,51,.75) 100%); }
+      .tile span { z-index: 1; }
+      .end-bg { background: radial-gradient(120% 70% at 80% 10%, #16395c 0%, #0b1f33 60%); }
+      .e { position: absolute; left: 72px; top: 400px; width: 936px; }
+      .e .k { font-size: 36px; font-weight: 800; letter-spacing: .24em; color: #d4a24c; }
+      .e .h { margin-top: 26px; font-size: 118px; font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; color: #fff; }
+      .e .h b { color: #f0c46a; font-weight: 800; }
+      .e .p { margin-top: 36px; font-size: 50px; font-weight: 500; line-height: 1.25; color: rgba(255,255,255,.94); }
+      .btn { display: inline-block; margin-top: 56px; padding: 30px 56px; border-radius: 999px; background: #d4a24c; color: #0b1f33; font-size: 60px; font-weight: 800; letter-spacing: -0.01em; }
+      .e .url { margin-top: 44px; font-size: 48px; font-weight: 800; color: #fff; letter-spacing: -0.01em; }
+      .e .reg2 { font-size: 30px; font-weight: 500; line-height: 1.35; color: rgba(255,255,255,.85); }
+      .e .reg { margin-top: 22px; font-size: 30px; font-weight: 500; line-height: 1.35; color: rgba(255,255,255,.85); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <!-- Photo scenes -->
+      <div id="p1" class="full ph clip" data-start="0" data-duration="10.2" data-track-index="0"><img data-layout-allow-overflow id="i1" src="assets/px4110203.jpg" style="object-position: 76% 30%" alt="" /></div>
+      <div id="p2" class="full ph clip" data-start="3.2" data-duration="7" data-track-index="1"><img data-layout-allow-overflow id="i2" src="assets/px31798407.jpg" style="object-position: 46% 50%" alt="" /></div>
+      <div id="p3" class="full ph clip" data-start="6.6" data-duration="3.6" data-track-index="2"><img data-layout-allow-overflow id="i3" src="assets/px11237738.jpg" style="object-position: 42% 50%" alt="" /></div>
+      <div class="full shade clip" data-start="0" data-duration="10.2" data-track-index="3"></div>
+
+      <svg id="ridgeWrap" class="ridge clip" data-start="0" data-duration="10.2" data-track-index="4" viewBox="0 0 1080 140" fill="none">
+        <path id="ridge" d="M0 118 L120 96 L190 108 L300 52 L372 84 L470 20 L560 76 L640 58 L740 104 L830 42 L920 80 L1000 64 L1080 92" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+
+      <div id="brand" class="brand clip" data-start="0" data-duration="10.2" data-track-index="5"><div class="k">HIMACHAL ADVENTURES</div><div class="s">by Suzu Travels</div></div>
+
+      <div id="c1" class="cap clip" data-start="0" data-duration="3.5" data-track-index="6">
+        <div class="n c1a">01 · FLY</div>
+        <div class="mask"><div class="w c1w">AIR</div></div>
+        <div class="sub c1a">Paragliding · Bungee · Zipline</div>
+        <div class="chip c1a">Tandem flights for first-timers</div>
+      </div>
+      <div id="c2" class="cap clip" data-start="3.4" data-duration="3.5" data-track-index="7">
+        <div class="n c2a">02 · SPLASH</div>
+        <div class="mask"><div class="w c2w">WATER</div></div>
+        <div class="sub c2a">River rafting · Lakes · Angling</div>
+        <div class="chip c2a">Grade II–III rapids</div>
+      </div>
+      <div id="c3" class="cap clip" data-start="6.8" data-duration="3.3" data-track-index="8">
+        <div class="n c3a">03 · PLAY</div>
+        <div class="mask"><div class="w c3w">SNOW</div></div>
+        <div class="sub c3a">Snow points · Skiing · Igloos</div>
+        <div class="chip c3a">Snow season Dec–Mar</div>
+      </div>
+
+      <!-- Grid scene -->
+      <div id="gscene" class="full navy clip" data-start="10" data-duration="2.9" data-track-index="9">
+        <div class="g-head">
+          <div class="g-num"><span id="cnt">0</span></div>
+          <div class="g-t1 ga">adventures in Himachal</div>
+          <div class="g-t2 ga">8 categories · one trip</div>
+        </div>
+        <div class="grid">
+          <div class="tile gt"><img src="assets/t-paragliding-over-mountains.jpg" alt="" /><span>AIR</span></div>
+          <div class="tile gt"><img src="assets/t-river-rafting-white-water.jpg" alt="" /><span>WATER</span></div>
+          <div class="tile gt"><img src="assets/t-snow-covered-himalayan-valley.jpg" alt="" /><span>SNOW</span></div>
+          <div class="tile gt"><img src="assets/t-motorbike-mountain-road.jpg" alt="" /><span>RIDES</span></div>
+          <div class="tile gt"><img src="assets/t-camping-tents-mountain-valley.jpg" alt="" /><span>TREKS</span></div>
+          <div class="tile gt"><img src="assets/t-ropeway-cable-car-snow.jpg" alt="" /><span>ROPEWAYS</span></div>
+        </div>
+      </div>
+
+      <!-- End card -->
+      <div id="escene" class="full end-bg clip" data-start="12.8" data-duration="2.2" data-track-index="10">
+        <div class="e">
+          <div class="k ea">PLAN IT WITH SUZU</div>
+          <div class="h ea">Hotel + cab + <b>adventure</b>, one plan.</div>
+          <div class="p ea">Get today’s rate on WhatsApp within minutes.</div>
+          <div class="btn ea" id="btn">Get Quote →</div>
+          <div class="url ea">suzutravels.com/adventure</div>
+          <div class="reg ea">HP Tourism registered travel agent</div><div class="reg2 ea">Reg. No. DTO-MND-11-243/2022</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      // Ken Burns on each photo (scale on the inner img, wrapper is the clip)
+      tl.fromTo("#i1", { scale: 1.0 }, { scale: 1.12, duration: 3.7, ease: "none" }, 0);
+      tl.fromTo("#i2", { scale: 1.14 }, { scale: 1.02, duration: 3.7, ease: "none" }, 3.2);
+      tl.fromTo("#i3", { scale: 1.0 }, { scale: 1.1, x: -30, duration: 3.6, ease: "none" }, 6.6);
+      // Wipes: next photo reveals bottom-up
+      tl.fromTo("#p2", { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.inOut" }, 3.2);
+      tl.fromTo("#p3", { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.inOut" }, 6.6);
+
+      // Brand line
+      tl.fromTo("#brand .k, #brand .s", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power2.out" }, 0.1);
+
+      // Signature ridge line, drawn once per scene
+      const L = 1300;
+      tl.set("#ridge", { strokeDasharray: L }, 0);
+      [0, 3.4, 6.8].forEach((t) => {
+        tl.fromTo("#ridge", { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 1.4, ease: "power2.inOut", immediateRender: false }, t + 0.1);
+      });
+
+      // Captions
+      function cap(i, t, out) {
+        tl.fromTo(".c" + i + "w", { yPercent: 105 }, { yPercent: 0, duration: 0.6, ease: "power4.out" }, t + 0.15);
+        tl.fromTo(".c" + i + "a", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.12, ease: "power2.out" }, t + 0.3);
+        if (out) {
+          tl.to(".c" + i + "w", { yPercent: -105, duration: 0.35, ease: "power3.in" }, out);
+          tl.to(".c" + i + "a", { opacity: 0, duration: 0.3, ease: "power1.in" }, out);
+        }
+      }
+      cap(1, 0, 3.05);
+      cap(2, 3.4, 6.45);
+      cap(3, 6.8, 9.7);
+
+      // Grid scene
+      tl.fromTo("#gscene", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" }, 10);
+      const c = { v: 0 };
+      tl.fromTo(c, { v: 0 }, { v: 54, duration: 1.1, ease: "power2.out", onUpdate: () => { document.getElementById("cnt").textContent = Math.round(c.v); } }, 10.15);
+      tl.fromTo(".ga", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 10.35);
+      tl.fromTo(".gt", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.45, stagger: 0.08, ease: "back.out(1.6)" }, 10.45);
+
+      // End card
+      tl.fromTo("#escene", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out" }, 12.8);
+      tl.fromTo(".ea", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.1, ease: "power2.out" }, 12.9);
+      tl.fromTo("#btn", { scale: 1 }, { scale: 1.06, duration: 0.3, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.0);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
