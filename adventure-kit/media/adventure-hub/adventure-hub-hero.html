@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: Inter, system-ui, sans-serif; }
+      .ph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,.55) 0%, rgba(11,31,51,.22) 38%, rgba(11,31,51,.62) 62%, rgba(11,31,51,.86) 100%); }
+      .rail { position: absolute; right: 120px; top: 300px; display: flex; flex-direction: column; gap: 18px; align-items: flex-end; }
+      .word { font-size: 120px; font-weight: 800; letter-spacing: .04em; color: #fff; opacity: 0; line-height: 1; text-shadow: 0 6px 30px rgba(0,0,0,.45); }
+      .word b { color: #f0c46a; }
+      .tag { position: absolute; right: 124px; top: 240px; font-size: 30px; font-weight: 700; letter-spacing: .3em; color: #f3d98f; opacity: 0; text-shadow: 0 3px 16px rgba(0,0,0,.5); }
+      .bar { position: absolute; right: 124px; top: 440px; height: 6px; width: 0; background: #d4a24c; border-radius: 3px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="9" data-width="1920" data-height="1080">
+      <img id="p1" class="ph clip" src="assets/4110203.jpg" data-start="0" data-duration="9" data-track-index="0" />
+      <img id="p2" class="ph clip" src="assets/31798407.jpg" data-start="0" data-duration="9" data-track-index="1" />
+      <img id="p3" class="ph clip" src="assets/11237738.jpg" data-start="0" data-duration="9" data-track-index="2" />
+      <div class="shade clip" data-start="0" data-duration="9" data-track-index="3"></div>
+      <div id="tag" class="tag clip" data-start="0" data-duration="9" data-track-index="4">HIMACHAL ADVENTURES</div>
+      <div class="rail clip" data-start="0" data-duration="9" data-track-index="5">
+        <div id="w1" class="word">A<b>I</b>R</div>
+      </div>
+      <div id="w2" class="word clip" style="position:absolute;right:120px;top:300px" data-start="0" data-duration="9" data-track-index="6">W<b>A</b>TER</div>
+      <div id="w3" class="word clip" style="position:absolute;right:120px;top:300px" data-start="0" data-duration="9" data-track-index="7">SN<b>O</b>W</div>
+      <div id="bar" class="bar clip" data-start="0" data-duration="9" data-track-index="8"></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      // AIR (p1) -> WATER (p2) -> SNOW (p3) -> back to AIR; short crossfades so each word sits on its own photo; loop-safe (p1 at scale 1 at 0 and 9)
+      tl.set("#p1", { opacity: 1, scale: 1.0 }, 0);
+      tl.to("#p1", { scale: 1.07, duration: 3.4, ease: "none" }, 0);
+      tl.set("#p2", { opacity: 0, scale: 1.02 }, 0);
+      tl.to("#p2", { opacity: 1, duration: 0.6, ease: "none" }, 2.8);
+      tl.to("#p2", { scale: 1.09, duration: 3.6, ease: "none" }, 2.8);
+      tl.set("#p3", { opacity: 0, scale: 1.02 }, 0);
+      tl.to("#p3", { opacity: 1, duration: 0.6, ease: "none" }, 5.8);
+      tl.to("#p3", { scale: 1.08, duration: 3.2, ease: "none" }, 5.8);
+      tl.set("#p1", { scale: 1.0 }, 6.5);
+      tl.set("#p2", { opacity: 0 }, 6.5);
+      tl.to("#p3", { opacity: 0, duration: 0.6, ease: "none" }, 8.4);
+      tl.to("#tag", { opacity: 1, duration: 0.6 }, 0.2);
+      tl.to("#tag", { opacity: 0, duration: 0.5 }, 8.4);
+      [["#w1", 0.3], ["#w2", 3.3], ["#w3", 6.3]].forEach(([id, t]) => {
+        tl.fromTo(id, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, t);
+        tl.to(id, { opacity: 0, y: -30, duration: 0.5, ease: "power2.in" }, t + 2.1);
+      });
+      tl.fromTo("#bar", { width: 0 }, { width: 420, duration: 8.2, ease: "none" }, 0.3);
+      tl.to("#bar", { opacity: 0, duration: 0.3 }, 8.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
