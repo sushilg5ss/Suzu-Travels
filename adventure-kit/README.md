@@ -1,0 +1,43 @@
+# Suzu Adventure Kit v1
+
+Design system + build tool for every page under `suzutravels.com/adventure/`.
+Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Adventure …" agents.
+
+## Files
+- `kit.css` — all styles, scoped to `.sza` (plus a small `:has(.sza)` rule that tidies the theme title bar). Never edit per page; improve it here and bump the version.
+- `template-activity.html` — the landing-page template for an activity or activity×place page (sample filled for Bir Billing paragliding).
+- `build.py` — `python3 build.py page.html > page.min.html` → inlines `kit.css` as `<style>` and minifies to ONE line (WordPress wpautop cannot break it). It REFUSES to build if a placeholder or a ₹/Rs price is left in.
+- `media/<slug>/` — HyperFrames videos and stills per page (see Media).
+
+## Business rules baked into the kit (non-negotiable)
+1. **No prices anywhere.** Every price slot says "Get Quote". Suzu shares verified operator options and current rates only on request (WhatsApp / quote form).
+2. **No vendor names on the site.** Suzu's authorised vendor network is private.
+3. Suzu Travels is **registered with HP Tourism** (certificate number to be added when Sushil shares it — never invent it).
+4. Every page's CTAs: WhatsApp `https://wa.me/917087488961?text=<url-encoded: Hi Suzu Travels, I want a quote for <activity> in <place>. Travel date: ___ , people: ___>` and `/himachal-tour-packages-quote/`.
+5. Facts (seasons, closures, age/weight limits, rules) must be researched and current. Monsoon ban (Kullu, Kangra): 15 Jul – 15 Sep.
+
+## Page anatomy (activity / spot page) — keep this order
+1. `.sza-hero` — HyperFrames loop video (`<video autoplay muted loop playsinline preload="metadata" poster>` with WebM + MP4) or a hero image; kicker, big tagline (`p.sza-hero-tag`, NOT a heading — the theme prints the page H1), sub line, 4–6 fact chips, 2 CTAs, trust row.
+2. `.sza-nav` — sticky in-page menu (sticks under the 70px site header). One link per section + "Get Quote".
+3. `#overview` — `.sza-answer` (answer-first, 40–70 words) + `.sza-facts` (5–6 facts, last one = "Get Quote — verified options").
+4. `#spots` — `.sza-grid` of `.sza-card` (spots / options / variants), each with its own Get Quote link.
+5. `#experience` — `.sza-steps` (what happens) + `.sza-media` (motion graphic / second video / map still).
+6. `#season` — `.sza-tbl` month table (inside `.sza-scroll`).
+7. `#safety` — `.sza-band` + `.sza-checks` (what Suzu verifies).
+8. `#booking` — `.sza-steps`: Tell us → We share options → You choose → Confirmed + hotel & cab.
+9. `.sza-quote` — big CTA block.
+10. `#packages` — contextual links to real `/packages/`, `/tours/` or hub pages (check they return 200).
+11. `#faq` — `.sza-faq` `<details>` (6–8 questions). Plain-HTML answers, no JS.
+12. `#more` — `.sza-cats` tiles to sibling adventure pages that are LIVE only.
+
+## Hub page anatomy (`/adventure/`)
+Hero (montage video) → sticky menu of categories (Air · Water · Snow · Land & Rides · Treks & Camps · Ropeways & Parks · Rentals & Services · By destination) → `.sza-cats` category tiles → one `.sza-sec` per category with a `.sza-grid` of every activity in it (live pages link "Explore →", not-yet-built ones show only "Get Quote →") → "By destination" grid (Manali–Solang, Bir–Kangra, Kullu, Shimla–Kufri–Narkanda, Dharamshala, Bilaspur, Chamba–Dalhousie, Tirthan–Jibhi, Lahaul–Spiti) → safety band → how booking works → quote block → FAQ.
+
+## Media (HyperFrames)
+- Per page: hero loop 1920×1080, 8–15 s, silent, seamless; export `hero.mp4` (H.264, ≤ 4 MB), `hero.webm` (≤ 3 MB), `poster.webp` (first frame, ≤ 200 KB); optional `explainer.mp4` (motion graphic: flight path, map, altitude, how-it-works) and `reel-9x16.mp4` for Instagram.
+- Text inside videos: large, few words, brand colours (navy #0b1f33, gold #d4a24c). Keep text clear of the left 45% of the hero frame on desktop (the page's own tagline sits there) and inside the centre 36% for mobile crops.
+- Stills and photos: Suzu media library first; else free-licence photos (Pexels / Unsplash) downloaded and re-hosted in the WordPress media library via `wp_upload_media_from_url`. Never present a photo of another place as the named Himachal location — use neutral alt text for generic activity photos.
+- Hosting: images → WordPress media library. Videos → this repo's `adventure` branch under `adventure-kit/media/<slug>/`, served through jsDelivr pinned to the commit: `https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@<commit>/adventure-kit/media/<slug>/hero.mp4` (WordPress media upload only accepts images).
+
+## Quality gate (QA agent checks every page)
+Live 200 with and without cache-buster · one H1 (theme title) · no ₹/prices · no vendor names · every link 200 · images load · video plays (desktop + 390 px phone screenshot) · sticky menu anchors work · Rank Math title < 60, description < 155 · page weight excl. video < 1.5 MB · no layout overflow at 390 px.
