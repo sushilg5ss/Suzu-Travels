@@ -113,7 +113,8 @@ TERMS = dict(
         ('about', 'About Suzu Travels', f'''
 <p>Suzu Travels is a destination management company based in Ghumarwin, Himachal Pradesh. We plan and arrange holidays across India and to selected international destinations: tour packages, hotel stays, cabs, sightseeing and related services.</p>
 <p>Hotels, transporters, airlines, railways and activity operators are independent suppliers. We choose them with care and coordinate your trip with them, and each supplier is also bound by its own rules (for example hotel check-in rules).</p>
-<p>&ldquo;We&rdquo;, &ldquo;us&rdquo; and &ldquo;Suzu Travels&rdquo; mean Suzu Travels, {ADDRESS.split(", ", 1)[1]}. &ldquo;You&rdquo; means the person making the booking and every traveller on it.</p>'''),
+<p>&ldquo;We&rdquo;, &ldquo;us&rdquo; and &ldquo;Suzu Travels&rdquo; mean Suzu Travels, {ADDRESS.split(", ", 1)[1]}. &ldquo;You&rdquo; means the person making the booking and every traveller on it.</p>
+<p>Suzu Travels is a proprietorship of Sushil Kumar, registered as a Travel Agent with the Department of Tourism &amp; Civil Aviation, Government of Himachal Pradesh (Reg. No. DTO-MND-11-243/2022), and registered under GST (GSTIN 02BLPPK1401E1ZR). You can see both certificates on our <a href="https://suzutravels.com/certificates/">Registration &amp; Certificates</a> page.</p>'''),
         ('quotes', 'Quotes, prices and inclusions', '''
 <ul>
 <li>A quotation is valid for the period written on it and depends on availability until the booking is confirmed.</li>

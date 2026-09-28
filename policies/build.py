@@ -101,6 +101,7 @@ def oneline(s):
 def build(p):
     tabs = ''.join(f'<a href="https://suzutravels.com/{q["slug"]}/"' + (' aria-current="page"' if q is p else '') + f'>{q["short"]}</a>' for q in ALL)
     tabs += f'<a href="{L_PAY}">Payments</a>'
+    tabs += '<a href="https://suzutravels.com/certificates/">Certificates</a>'
     glance = ''.join(f'<div class="pl-card">{icon(k)}<b>{t}</b><span>{d}</span></div>' for k, t, d in p['glance'])
     toc = ''.join(f'<a href="#{sid}"><i>{n:02d}</i>{t}</a>' for n, (sid, t, _) in enumerate(p['sections'], 1))
     secs = ''.join(f'<section class="pl-sec" id="{sid}"><h2><span>{n:02d}</span>{t}</h2>{oneline(body)}</section>'
