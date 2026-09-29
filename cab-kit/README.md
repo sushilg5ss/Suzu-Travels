@@ -46,3 +46,11 @@ City pages add a local-rates table and outstation table; vehicle pages add per-k
 - New child page: WordPress REST or Royal MCP `wp_create_page` (parent 10080, content = `out/<slug>.min.html`), slug = the page slug, template default. Rank Math title/description/focus keyword via `wp_update_seo_meta`. Add the slug to `live.json`, rebuild the hub and update page 10080's content.
 - Verify live twice (cache-busted and plain): 200, one H1, index robots, video plays, no horizontal overflow at 390 px, all links 200.
 - Rollback for the hub: set `_wp_page_template` of 10080 back to `page-cabs.php` and empty the content (the old PHP template is untouched in the theme).
+
+## LIVE STATE (30 Sep 2026, ~03:45 IST)
+- Hub + 12 child pages are LIVE. WordPress IDs in `wp_ids.json`. Published from commit `c8b53a7` (content fetched from jsDelivr in the logged-in wp-admin tab, POST `/wp-json/wp/v2/pages`, saved raw content verified byte-identical).
+- **HUB TEMPLATE GOTCHA:** the theme has `page-cabs.php`, and WordPress picks `page-{slug}.php` automatically when a page's template is "default" — so `/cabs/` kept rendering the OLD template with the new content appended at the bottom. Fix applied: `_wp_page_template` of 10080 set to `page.php` (via Royal MCP `wp_update_post_meta`), which forces the theme's normal page wrapper (H1 = page title). Do NOT set the hub template back to "default" through the editor/REST. Rollback = set it to `page-cabs.php`.
+- After changing only post meta, WP Rocket does not purge — re-save the page (REST POST with the same title) to purge the cache.
+- WP Rocket "Delay JS" is on: kit.js (calculator, route finder, quote form) runs after the first user interaction — expected. `moment is not defined` / `setSettings` / `feather is not defined` console errors are PRE-EXISTING site-wide (seen on /contact/ too), not from the kit.
+- Rank Math titles/descriptions/focus keywords set on all 13 (see `out/meta.json`). Old hub SEO: title "Himachal Cab Booking | Delhi & Chandigarh Taxi | Suzu Travels", focus "cab booking himachal"; old hub title "Cab Booking".
+- Old rendered hub saved in `backup/cabs-old-rendered-2026-09-30.html`.
