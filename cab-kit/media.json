@@ -1,0 +1,211 @@
+{
+ "hero": {
+  "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/hub/hero.mp4",
+  "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/hub/hero.webm",
+  "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/hub/hero-poster.webp",
+  "w": 1600,
+  "h": 900
+ },
+ "manali-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/manali-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/manali-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/manali-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/manali-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/manali-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/manali-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "jammu-to-srinagar-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/jammu-to-srinagar-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/jammu-to-srinagar-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/jammu-to-srinagar-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/jammu-to-srinagar-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/jammu-to-srinagar-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/jammu-to-srinagar-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "delhi-to-shimla-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-shimla-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-shimla-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-shimla-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-shimla-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-shimla-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-shimla-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "chandigarh-to-shimla-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/chandigarh-to-shimla-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/chandigarh-to-shimla-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/chandigarh-to-shimla-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/chandigarh-to-shimla-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/chandigarh-to-shimla-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/chandigarh-to-shimla-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "innova-crysta-on-rent": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/innova-crysta-on-rent/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/innova-crysta-on-rent/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/innova-crysta-on-rent/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/innova-crysta-on-rent/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/innova-crysta-on-rent/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/innova-crysta-on-rent/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "shimla-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/shimla-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/shimla-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/shimla-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/shimla-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/shimla-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/shimla-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "chandigarh-to-manali-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/chandigarh-to-manali-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/chandigarh-to-manali-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/chandigarh-to-manali-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/chandigarh-to-manali-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/chandigarh-to-manali-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/chandigarh-to-manali-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "pathankot-to-dharamshala-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/pathankot-to-dharamshala-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/pathankot-to-dharamshala-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/pathankot-to-dharamshala-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/pathankot-to-dharamshala-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/pathankot-to-dharamshala-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/pathankot-to-dharamshala-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "delhi-to-manali-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-manali-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-manali-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-manali-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-manali-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-manali-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-manali-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "delhi-to-chandigarh-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-chandigarh-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-chandigarh-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-chandigarh-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-chandigarh-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-chandigarh-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-chandigarh-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "delhi-to-dehradun-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-dehradun-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-dehradun-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/delhi-to-dehradun-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-dehradun-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-dehradun-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/delhi-to-dehradun-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "tempo-traveller-hire-delhi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/tempo-traveller-hire-delhi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/tempo-traveller-hire-delhi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2505fec144908dbc53732d2bee761ae457b5205a/cab-kit/media/tempo-traveller-hire-delhi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  },
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/tempo-traveller-hire-delhi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/tempo-traveller-hire-delhi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/tempo-traveller-hire-delhi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ },
+ "svg_base": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c21d2cf1a60e7c188e3c8735cef196fda9d412ca/cab-kit/media/fleet",
+ "cabs": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/hub/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/hub/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@42e21fd6ecc3cdd2595c2c51ec9b33f17549dab3/cab-kit/media/hub/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  }
+ }
+}
