@@ -45,14 +45,21 @@ def main():
     mix /= max(1.0, np.abs(mix).max() / 0.95)
     tmp = os.path.join(ep_dir, "audio", "mix_raw.wav")
     sf.write(tmp, mix, SR)
-    # size budget: deliverable must stay under ~25 MB (chat upload limit is 30 MiB); IG/FB re-encode anyway
+    # size budget ~18.5 MB: jsDelivr serves GitHub files only up to 20 MB (as video/mp4, which Instagram and
+    # Facebook fetch reliably); chat delivery limit is 30 MiB. Two-pass x264 keeps quality at this size.
     dur = tm["total"]
-    vk = int(min(6000, max(1500, (25 * 8 * 1024 * 1024 / dur) / 1000 - 200)))
-    # loudnorm to -14 LUFS, then mux
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vin, "-i", tmp, "-map", "0:v", "-map", "1:a",
-                    "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-maxrate", f"{vk}k", "-bufsize", f"{vk*2}k",
-                    "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-g", "60", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k",
-                    "-ar", "48000", "-shortest", "-movflags", "+faststart", out], check=True)
+    vk = int(min(6000, max(1200, (18.5 * 8 * 1000 * 1000 / dur) / 1000 - 200)))
+    aac = os.path.join(ep_dir, "audio", "mix.m4a")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+                    "-c:a", "aac", "-b:a", "160k", "-ar", "48000", aac], check=True)
+    venc = ["-c:v", "libx264", "-preset", "slow", "-b:v", f"{vk}k", "-maxrate", f"{int(vk*1.4)}k",
+            "-bufsize", f"{int(vk*2.8)}k", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-g", "60"]
+    plog = os.path.join(ep_dir, "audio", "x264pass")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vin] + venc + ["-pass", "1", "-passlogfile", plog, "-an",
+                    "-f", "null", "/dev/null"], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vin, "-i", aac, "-map", "0:v", "-map", "1:a"] + venc +
+                   ["-pass", "2", "-passlogfile", plog, "-c:a", "copy", "-shortest", "-movflags", "+faststart", out],
+                   check=True)
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", out, "-af", "ebur128", "-f", "null", "-"],
                        capture_output=True, text=True).stderr
     print("mixed", out, [l.strip() for l in r.splitlines() if "I:" in l][-1:])
