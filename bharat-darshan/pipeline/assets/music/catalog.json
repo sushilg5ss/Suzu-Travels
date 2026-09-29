@@ -1,0 +1,110 @@
+[
+ {
+  "file": "Dhaka.mp3",
+  "title": "Dhaka",
+  "feel": "Mysterious, Mystical",
+  "instruments": "Sarod, Dilruba, Drone",
+  "bpm": null,
+  "length": "00:04:08",
+  "credit": "Music: \"Dhaka\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Eastern Thought.mp3",
+  "title": "Eastern Thought",
+  "feel": "Mystical, Relaxed",
+  "instruments": "Strings, Metals, Percussion",
+  "bpm": "98",
+  "length": "00:04:22",
+  "credit": "Music: \"Eastern Thought\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Impact Lento.mp3",
+  "title": "Impact Lento",
+  "feel": "Epic, Mysterious, Relaxed",
+  "instruments": "Synths, Choir",
+  "bpm": "60",
+  "length": "00:03:31",
+  "credit": "Music: \"Impact Lento\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Jalandhar.mp3",
+  "title": "Jalandhar",
+  "feel": "Mysterious, Mystical, Grooving",
+  "instruments": "Bass, Percussion, Sitar",
+  "bpm": "81",
+  "length": "00:04:09",
+  "credit": "Music: \"Jalandhar\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Long Road Ahead.mp3",
+  "title": "Long Road Ahead",
+  "feel": "Epic, Mystical, Somber",
+  "instruments": "Choir, Strings, Brass, Percussion",
+  "bpm": "74",
+  "length": "00:02:26",
+  "credit": "Music: \"Long Road Ahead\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Magistar.mp3",
+  "title": "Magistar",
+  "feel": "Driving, Epic, Mystical",
+  "instruments": "Choir, Glockenspiel, Trumpets, Trombones, Tubas, Percussion",
+  "bpm": "79",
+  "length": "00:03:12",
+  "credit": "Music: \"Magistar\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Naraina.mp3",
+  "title": "Naraina",
+  "feel": "Driving, Mystical, Grooving",
+  "instruments": "Bass, Percussion, Brass, Woodwind",
+  "bpm": "81",
+  "length": "00:03:31",
+  "credit": "Music: \"Naraina\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Noble Race.mp3",
+  "title": "Noble Race",
+  "feel": "Intense, Action, Epic, Driving, Mysterious",
+  "instruments": "Full Orchestra",
+  "bpm": null,
+  "length": "00:05:16",
+  "credit": "Music: \"Noble Race\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Our Story Begins.mp3",
+  "title": "Our Story Begins",
+  "feel": "Epic, Suspenseful, Uplifting",
+  "instruments": "Winds, Strings, Brass, Percussion, Choir",
+  "bpm": "129",
+  "length": "00:01:25",
+  "credit": "Music: \"Our Story Begins\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Tabuk.mp3",
+  "title": "Tabuk",
+  "feel": "Calming, Epic, Mysterious",
+  "instruments": "Strings, Percussion, Flute",
+  "bpm": "125",
+  "length": "00:02:39",
+  "credit": "Music: \"Tabuk\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Tempting Secrets.mp3",
+  "title": "Tempting Secrets",
+  "feel": "Dark, Epic, Uplifting, Somber",
+  "instruments": "Strings, Flute, Choir",
+  "bpm": null,
+  "length": "00:03:02",
+  "credit": "Music: \"Tempting Secrets\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ },
+ {
+  "file": "Vadodora.mp3",
+  "title": "Vadodora",
+  "feel": "Intense, Grooving",
+  "instruments": "Sitar, Percussion, Synth, Tambura, Bansuri",
+  "bpm": "97",
+  "length": "00:03:43",
+  "credit": "Music: \"Vadodora\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+ }
+]

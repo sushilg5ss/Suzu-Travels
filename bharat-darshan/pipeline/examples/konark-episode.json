@@ -1,0 +1,400 @@
+{
+ "episode": 12,
+ "slug": "konark-sun-temple",
+ "place": "कोणार्क सूर्य मंदिर",
+ "place_en": "Konark Sun Temple",
+ "region": "ज़िला पुरी, ओडिशा",
+ "coords": "19.8876° N, 86.0945° E",
+ "title_hi": "10 रुपये के नोट पर छपी घड़ी",
+ "lines": [
+  {
+   "id": "l01",
+   "tts": "आपकी जेब में रखा दस रुपये का नोट... उस पर एक घड़ी छपी है।",
+   "exag": 0.7,
+   "caption": "आपकी जेब में रखा ₹10 का नोट... उस पर एक घड़ी छपी है।"
+  },
+  {
+   "id": "l02",
+   "tts": "एक ऐसी घड़ी, जो साढ़े सात सौ साल से... बिना रुके, समय बता रही है।",
+   "exag": 0.65,
+   "caption": "एक ऐसी घड़ी, जो 750 साल से... बिना रुके, समय बता रही है।"
+  },
+  {
+   "id": "l03",
+   "tts": "ये है, ओडिशा का कोणार्क सूर्य मंदिर।",
+   "exag": 0.6
+  },
+  {
+   "id": "l04",
+   "tts": "करीब बारह सौ पचास ईस्वी में, राजा नरसिंहदेव प्रथम ने, सूर्य देव के लिए, पत्थर का एक विशाल रथ बनवाया।",
+   "exag": 0.55,
+   "caption": "करीब 1250 ईस्वी में, राजा नरसिंहदेव प्रथम ने, सूर्य देव के लिए, पत्थर का एक विशाल रथ बनवाया।"
+  },
+  {
+   "id": "l05",
+   "tts": "चौबीस पहिये... और सात घोड़े। मानो सूर्य देव खुद, इस रथ पर सवार होकर, धरती पर उतर आए हों।",
+   "exag": 0.65,
+   "caption": "24 पहिये... और 7 घोड़े। मानो सूर्य देव खुद, इस रथ पर सवार होकर, धरती पर उतर आए हों।"
+  },
+  {
+   "id": "l06",
+   "tts": "पर असली रहस्य... इन पहियों में छिपा है।",
+   "exag": 0.75
+  },
+  {
+   "id": "l07",
+   "tts": "करीब बारह फ़ीट ऊँचा हर पहिया, असल में एक धूप-घड़ी है।",
+   "exag": 0.6,
+   "caption": "करीब 12 फ़ीट ऊँचा हर पहिया, असल में एक धूप-घड़ी है।"
+  },
+  {
+   "id": "l08",
+   "tts": "तीलियों पर पड़ती सूरज की छाया देखकर, आज भी, लगभग मिनट तक सही समय पढ़ा जा सकता है।",
+   "exag": 0.6
+  },
+  {
+   "id": "l09",
+   "tts": "सदियों पहले, समुद्र से गुज़रते यूरोपीय नाविक, दूर से काले दिखते इस शिखर को, ब्लैक पगोडा कहते थे।",
+   "exag": 0.55,
+   "caption": "सदियों पहले, समुद्र से गुज़रते यूरोपीय नाविक, दूर से काले दिखते इस शिखर को, 'ब्लैक पगोडा' कहते थे।"
+  },
+  {
+   "id": "l10",
+   "tts": "और उन्नीस सौ चौरासी में, यूनेस्को ने इसे विश्व धरोहर घोषित किया।",
+   "exag": 0.55,
+   "caption": "और 1984 में, यूनेस्को ने इसे विश्व धरोहर घोषित किया।"
+  },
+  {
+   "id": "l11",
+   "tts": "तो अगली बार, जब दस का नोट हाथ में आए... याद रखिएगा, आप इतिहास की एक घड़ी थामे हुए हैं।",
+   "exag": 0.65,
+   "caption": "तो अगली बार, जब ₹10 का नोट हाथ में आए... याद रखिएगा, आप इतिहास की एक घड़ी थामे हुए हैं।"
+  },
+  {
+   "id": "l12",
+   "tts": "कोणार्क और पुरी की यात्रा का पूरा प्लान, सुज़ू ट्रैवल्स के साथ।",
+   "exag": 0.55
+  },
+  {
+   "id": "l13",
+   "tts": "जुड़े रहिए भारत दर्शन के साथ... मिलते हैं अगले एपिसोड में।",
+   "exag": 0.6
+  }
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+  "https://whc.unesco.org/en/list/246/",
+  "https://en.wikipedia.org/wiki/Indian_10-rupee_note"
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "lines": [
+    "l01",
+    "l02"
+   ],
+   "no_captions": true,
+   "shots": [
+    {
+     "img": "konark-sun-temple-wheel-3.jpg",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "zoom": [
+      1.35,
+      1.15
+     ],
+     "grade": "dark"
+    }
+   ],
+   "headline": [
+    "आपकी जेब में",
+    "एक घड़ी छपी है"
+   ],
+   "headline2": [
+    "750 साल पुरानी"
+   ],
+   "prop": "note10",
+   "prop_caption": "सूर्य मंदिर, कोणार्क",
+   "prop_img": "konark-sun-temple-wheel-3.jpg"
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "lines": [
+    "l03"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-front-view-2.jpg",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "zoom": [
+      1.18,
+      1.02
+     ],
+     "pan": [
+      0,
+      40
+     ]
+    }
+   ],
+   "headline": [
+    "कोणार्क",
+    "सूर्य मंदिर"
+   ],
+   "kicker": "ज़िला पुरी, ओडिशा",
+   "coords": "19.8876° N · 86.0945° E"
+  },
+  {
+   "id": "king",
+   "type": "photo",
+   "lines": [
+    "l04"
+   ],
+   "shots": [
+    {
+     "img": "konark-temple-odisha-panorama-2.jpg",
+     "focus": [
+      0.18,
+      0.55
+     ],
+     "zoom": [
+      1.05,
+      1.12
+     ],
+     "pan": [
+      -900,
+      0
+     ]
+    }
+   ],
+   "stat": {
+    "num": 1250,
+    "prefix": "~",
+    "suffix": " ई.",
+    "label": "राजा नरसिंहदेव प्रथम"
+   }
+  },
+  {
+   "id": "chariot",
+   "type": "photo",
+   "lines": [
+    "l05"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-wheel-1.jpg",
+     "focus": [
+      0.35,
+      0.5
+     ],
+     "zoom": [
+      1.1,
+      1.25
+     ],
+     "at": 0,
+     "stat": {
+      "num": 24,
+      "suffix": "",
+      "label": "पहिये"
+     }
+    },
+    {
+     "img": "konark-horse-3.jpg",
+     "focus": [
+      0.55,
+      0.45
+     ],
+     "zoom": [
+      1.25,
+      1.1
+     ],
+     "at": 0.42,
+     "stat": {
+      "num": 7,
+      "suffix": "",
+      "label": "घोड़े"
+     }
+    }
+   ]
+  },
+  {
+   "id": "secret",
+   "type": "beat",
+   "lines": [
+    "l06"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-wheel-3.jpg",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "zoom": [
+      1.0,
+      1.6
+     ],
+     "grade": "dark"
+    }
+   ],
+   "headline": [
+    "असली रहस्य…"
+   ]
+  },
+  {
+   "id": "dial",
+   "type": "dial",
+   "lines": [
+    "l07",
+    "l08"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-wheel-2.jpg",
+     "focus": [
+      0.51,
+      0.47
+     ],
+     "fit": "contain",
+     "scale": 0.42,
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "dial": {
+      "cx": 0.51,
+      "cy": 0.47,
+      "r": 0.255
+     },
+     "anchor": [
+      540,
+      1030
+     ]
+    }
+   ],
+   "kicker": "धूप-घड़ी",
+   "clock": [
+    "06:00",
+    "09:36"
+   ]
+  },
+  {
+   "id": "pagoda",
+   "type": "photo",
+   "lines": [
+    "l09"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-5.jpg",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "zoom": [
+      1.25,
+      1.05
+     ],
+     "grade": "mono"
+    }
+   ],
+   "label_en": "THE BLACK PAGODA"
+  },
+  {
+   "id": "unesco",
+   "type": "stamp",
+   "lines": [
+    "l10"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-front-view-3.jpg",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "zoom": [
+      1.02,
+      1.15
+     ]
+    }
+   ],
+   "stamp": [
+    "UNESCO",
+    "विश्व धरोहर",
+    "1984"
+   ]
+  },
+  {
+   "id": "payoff",
+   "type": "hook",
+   "lines": [
+    "l11"
+   ],
+   "shots": [
+    {
+     "img": "konark-sun-temple-wheel-3.jpg",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "zoom": [
+      1.15,
+      1.3
+     ],
+     "grade": "dark"
+    }
+   ],
+   "prop": "note10",
+   "headline": [
+    "इतिहास की घड़ी"
+   ],
+   "prop_caption": "सूर्य मंदिर, कोणार्क",
+   "prop_img": "konark-sun-temple-wheel-3.jpg"
+  },
+  {
+   "id": "end",
+   "type": "end",
+   "lines": [
+    "l12",
+    "l13"
+   ],
+   "shots": [
+    {
+     "img": "konark-temple-odisha-panorama-2.jpg",
+     "focus": [
+      0.3,
+      0.5
+     ],
+     "zoom": [
+      1.1,
+      1.2
+     ],
+     "grade": "dark",
+     "pan": [
+      300,
+      0
+     ]
+    }
+   ],
+   "cta": "कमेंट करें: अगला एपिसोड कहाँ?",
+   "pack_kicker": "कोणार्क · पुरी · भुवनेश्वर"
+  }
+ ],
+ "music_prompt": "epic cinematic Indian orchestral score, deep taiko and tabla drums, sitar and strings, mysterious then triumphant, film trailer, 90 bpm",
+ "hashtags": [
+  "BharatDarshan",
+  "KonarkSunTemple",
+  "Odisha",
+  "IncredibleIndia",
+  "SuzuTravels"
+ ],
+ "state_badge": "ओडिशा",
+ "music_track": "Jalandhar.mp3"
+}
