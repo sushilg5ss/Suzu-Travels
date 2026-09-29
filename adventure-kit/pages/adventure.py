@@ -267,17 +267,20 @@ def build():
                     f'<span class="c">{len(c[7])} {"services" if c[0] == "services" else "activities"}</span></a>' for c in CATS)
     tiles += f'<a class="sza-cat dest" href="#destinations">{icon("dest")}<span class="n">By destination</span><span class="c">{len(DESTS)} regions</span></a>'
 
+    SNOW_EXPLAINER = '<figure id="snow-explainer" style="margin:0 auto 32px;max-width:880px"><video poster="https://suzutravels.com/wp-content/uploads/2026/09/wheres-the-snow-manali-altitude-explainer.webp" autoplay muted loop playsinline preload="none" width="1600" height="900" style="display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:18px;background:#0b1f33;box-shadow:0 12px 32px rgba(11,31,51,.2)" aria-label="12-second motion graphic: where is the snow near Manali. Altitudes Manali 2,050 m, Solang 2,560 m, Atal Tunnel 3,060 m, Rohtang 3,978 m; first snow up high in October to November, best snow at Solang late December to February; Atal Tunnel needs no Rohtang permit"><source src="https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@94beec6a920a51a03b5fd553534a8b2951d6b7db/adventure-kit/media/snow-activities-manali/explainer.webm" type="video/webm"><source src="https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@94beec6a920a51a03b5fd553534a8b2951d6b7db/adventure-kit/media/snow-activities-manali/explainer.mp4" type="video/mp4"></video><figcaption style="margin-top:10px;font-size:15px;line-height:1.5;color:#5b6975;text-align:center">Where\'s the snow near Manali? Higher points get it first. We check the road and snow status the evening before your snow day.</figcaption></figure>'
     secs = []
     for i, (cid, label, kicker, h2, lead, img, alt, acts) in enumerate(CATS):
         alt_cls = ' alt' if i % 2 == 0 else ''
         cards = ''.join(act_card(cid, *a) for a in acts)
         word = 'services' if cid == 'services' else 'activities'
+        # Visual Studio 29 Sep 2026: snow explainer motion graphic between the snow head and its cards
+        extra = SNOW_EXPLAINER if cid == 'snow' else ''
         secs.append(
             f'<section class="sza-sec{alt_cls}" id="{cid}"><div class="sza-cathead">'
             f'<img src="{MEDIA}{img}" alt="{e(alt)}" loading="lazy" decoding="async" width="768" height="480">'
             f'<div><span class="sza-kicker">{e(kicker)}</span><h2>{e(h2)}</h2><p class="sza-lead">{e(lead)}</p>'
             f'<span class="sza-count">{icon(cid, "")}{len(acts)} {word} · price on request</span></div></div>'
-            f'<div class="sza-grid sza-acts">{cards}</div></section>')
+            f'{extra}<div class="sza-grid sza-acts">{cards}</div></section>')
 
     dcards = ''
     for name, what, when, links in DESTS:
