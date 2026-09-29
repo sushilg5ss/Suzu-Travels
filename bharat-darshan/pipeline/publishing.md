@@ -2,25 +2,23 @@
 
 Change a line here to change what the agent does; no need to touch the scheduled task.
 
+## Public video URL route: `github` (approved by Sushil, 29 Sep 2026)
+1. Attach the repo with push access: Claude_Code_Remote `add_repo` owner `sushilg5ss`, repo `Suzu-Travels`, access `push`.
+2. `git clone --depth 1 --single-branch -b bharat-darshan https://github.com/sushilg5ss/Suzu-Travels ~/st`
+   (the pipeline code + assets also live here under `bharat-darshan/pipeline/`).
+3. Copy the final files to `media/<YYYY-MM-DD>-<slug>/` as `bharat-darshan-<slug>.mp4`, `cover.jpg`, `caption.txt`;
+   also `bharat-darshan/episodes/<date>-<slug>.json`. Commit as "Suzu Bharat Darshan Agent" <info@suzutravels.com>
+   and `git push` to branch `bharat-darshan` (never to any other branch).
+4. Public URL = `https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@<COMMIT_SHA>/media/<folder>/<file>` —
+   always the commit SHA, never the branch name (jsDelivr caches branch URLs for hours).
+   Check it returns `200 video/mp4` before posting. jsDelivr refuses files over 20 MB → mix.py targets ~18.5 MB.
+
 ## Channels
 | Channel | Account | Status | How |
 |---|---|---|---|
-| Instagram Reels | @suzutravels · IG id `17841452423207372` (ad account `act_206984245998270`) | WAITING — needs a public video URL route | Pipeboard `publish_instagram_media` (media_type REELS, share_to_feed true, cover_url) |
-| Facebook Page | Suzu Travels · page id `102371355018489` | WAITING — same public URL route | Pipeboard `publish_facebook_page_post` (post_type VIDEO, video_title) |
-| YouTube Shorts | Suzu Travels channel | WAITING — no YouTube connection yet | Postiz (`postiz` skill) once connected |
-
-## Public video URL route
-`none` — Instagram and Facebook fetch the video from a public HTTPS URL, and this workspace has no approved
-place to put one yet. Options Sushil can pick (write the chosen one here):
-- `github` — push each final MP4 to branch `bharat-darshan` of `sushilg5ss/suzu-travels` (media/…) and use
-  `https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@bharat-darshan/media/<file>.mp4`. Needs Sushil's
-  explicit OK for the agent to push to that repo.
-- `postiz` — Postiz uploads the file itself and posts to Instagram + Facebook + YouTube in one go
-  (needs a Postiz account + API key stored as POSTIZ_API_KEY).
-
-## Until a route is set (current behaviour)
-Make the reel, send it in the run with `SendUserFile` (video + cover + ready-to-paste caption), and log it
-as `made, not posted` in `claude/bharat-darshan/episode-log.md`. Never post anywhere else.
+| Instagram Reels | @suzutravels · IG id `17841452423207372` | ENABLED | Pipeboard `publish_instagram_media`: media_type `REELS`, `video_url` = jsDelivr SHA URL, `share_to_feed: true`, `thumb_offset` = ms of the title-card frame (≈ scene-1 start + 2 s). **Do NOT pass `cover_url`** — it made Meta fail the container (error 2207077) on 29 Sep. |
+| Facebook Page | Suzu Travels · page id `102371355018489` | BLOCKED — Pipeboard gets "(#100) No permission to publish the video" | Try once per run with `publish_facebook_page_post` (VIDEO); if it still fails, skip and note it. Fix = Sushil turns on Reels auto-share to Facebook in Instagram, or reconnects Pipeboard with video-publish permission. |
+| YouTube Shorts | Suzu Travels channel | WAITING — no YouTube connection | Postiz (`postiz` skill) once Sushil connects it. Until then, include the MP4 in the run delivery for manual upload. |
 
 ## Posting time
-Target: publish between 17:00 and 18:30 IST (Sushil's suggested 4–6 pm window).
+Publish between 17:00 and 18:30 IST. One reel per day. Never delete or edit earlier posts.

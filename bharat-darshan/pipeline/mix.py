@@ -53,7 +53,7 @@ def main():
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
                     "-c:a", "aac", "-b:a", "160k", "-ar", "48000", aac], check=True)
     venc = ["-c:v", "libx264", "-preset", "slow", "-b:v", f"{vk}k", "-maxrate", f"{int(vk*1.4)}k",
-            "-bufsize", f"{int(vk*2.8)}k", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-g", "60"]
+            "-bufsize", f"{int(vk*2.8)}k", "-profile:v", "high", "-level:v", "4.1", "-pix_fmt", "yuv420p", "-r", "30", "-g", "60"]
     plog = os.path.join(ep_dir, "audio", "x264pass")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vin] + venc + ["-pass", "1", "-passlogfile", plog, "-an",
                     "-f", "null", "/dev/null"], check=True)
