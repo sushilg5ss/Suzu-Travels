@@ -2,7 +2,11 @@
 """Suzu Cabs hub hero — 1920x1080, 12 s seamless loop: parallax Himalaya, winding road, Suzu-branded SUV, cycling route names.
 Output: cab-hero/index.html"""
 import math, random, pathlib, sys
-sys.path.insert(0, "/home/claude/cabs/kit")
+import os, pathlib as _pl
+KIT = _pl.Path(__file__).resolve().parent
+SCAFFOLD = KIT / "hf-scaffold"
+HF_OUT = _pl.Path(os.environ.get("CAB_HF_OUT", str(KIT.parent.parent / "cab-hf")))
+sys.path.insert(0, str(KIT))
 W, H, DUR = 1920, 1080, 12
 rng = random.Random(7)
 
@@ -151,10 +155,10 @@ window.__timelines["main"] = tl;
 </body></html>'''
   d = pathlib.Path(out); (d/"assets").mkdir(parents=True, exist_ok=True)
   import shutil
-  for f in pathlib.Path("/home/claude/cabs/hf/cab-hero/assets").glob("*.woff2"):
+  for f in (SCAFFOLD / "assets").glob("*.woff2"):
       if not (d/"assets"/f.name).exists(): shutil.copy(f, d/"assets"/f.name)
   for f in ["package.json","hyperframes.json","meta.json"]:
-      if not (d/f).exists(): shutil.copy(pathlib.Path("/home/claude/cabs/hf/cab-hero")/f, d/f)
+      if not (d/f).exists(): shutil.copy(SCAFFOLD / f, d/f)
   (d/"index.html").write_text(html)
   return d
 
@@ -176,4 +180,4 @@ VARIANTS = {
 if __name__ == "__main__":
   want = sys.argv[1:] or list(VARIANTS)
   for k in want:
-      print(make(f"/home/claude/cabs/hf/heroes/{k}", **VARIANTS[k]))
+      print(make(str(HF_OUT / "heroes" / k), **VARIANTS[k]))

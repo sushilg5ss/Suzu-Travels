@@ -5,13 +5,16 @@ Modes: 'path' (A->B through waypoints) or 'hub' (spokes from one town). Data com
 No borders are drawn (one borderless landmass look); only towns, a Himalaya zone and the route.
 """
 import sys, math, json, shutil, pathlib
-sys.path.insert(0, "/home/claude/cabs/kit")
+import os, pathlib as _pl
+sys.path.insert(0, str(_pl.Path(__file__).resolve().parent))
 from cabs_data import PLACES, ROUTE_BY_SLUG
 from pages_content import PAGES
 
 W, H, DUR = 1600, 900, 9
-HF = pathlib.Path("/home/claude/cabs/hf")
-FONTS = HF / "cab-hero" / "assets"
+KIT = pathlib.Path(__file__).resolve().parent
+HF = pathlib.Path(os.environ.get("CAB_HF_OUT", str(KIT.parent.parent / "cab-hf")))  # render workspace (outside the repo)
+SCAFFOLD = KIT / "hf-scaffold"
+FONTS = SCAFFOLD / "assets"
 
 FRONT = [(33.6, 70.0), (33.3, 73.6), (32.75, 75.0), (32.35, 75.75), (32.05, 76.2), (31.75, 76.6), (31.35, 76.85), (31.0, 76.95), (30.85, 77.0),
          (30.55, 77.6), (30.35, 77.95), (30.1, 78.3), (29.7, 78.9), (29.35, 79.4), (29.2, 80.5), (28.6, 84.0), (27.5, 95.0)]
@@ -239,7 +242,7 @@ window.__timelines["main"]=tl;
     for f in FONTS.glob("*.woff2"):
         shutil.copy(f, d / "assets" / f.name)
     for f in ["package.json", "hyperframes.json", "meta.json"]:
-        shutil.copy(HF / "cab-hero" / f, d / f)
+        shutil.copy(SCAFFOLD / f, d / f)
     (d / "index.html").write_text(html)
     return d
 

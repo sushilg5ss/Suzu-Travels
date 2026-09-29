@@ -17,6 +17,12 @@ Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Cab …" agents.
 | `live.json` | Slugs that are LIVE. Only live pages get "Route & fares" links; others show WhatsApp quote. |
 | `gen_hero.py` | HyperFrames hero loop generator (parallax Himalaya, Suzu-branded car, page title). `VARIANTS` dict = one per page. |
 | `gen_route.py` | HyperFrames route-map loop generator (path mode A→B via waypoints, or hub mode = spokes). Borderless map (no state/national borders drawn). |
+| `make_media.sh` | `bash make_media.sh <slug> [hero|route|both]` — generates the HyperFrames compositions (gen_hero/gen_route), renders them, encodes mp4/webm/posters into `media/<slug>/`, copies sources to `compositions/<slug>/`. Render workspace = `$CAB_HF_OUT` (default `../../cab-hf`, outside the repo). |
+| `pin_media.py` | `python3 pin_media.py <slug> <full-sha>` — writes the jsDelivr URLs for that page's media into `media.json` after the media commit is pushed. |
+| `hf-scaffold/` | Fonts (Plus Jakarta Sans woff2) + HyperFrames project files copied into every composition. |
+| `BACKLOG.md` / `LOG.md` | Page backlog (priority order) and the squad's progress log (newest first). |
+| `agents/` | The prompts of the scheduled Cab squad agents (shared rules, Route Builder, SEO/Fares/QA). |
+| `wp_ids.json` | WordPress page IDs of every live cab page. |
 | `research/kw_all.csv` | Google Ads Keyword Planner export (India, 30 Sep 2026) — 700+ cab/taxi keywords with monthly volume. |
 
 ## Fare rules (approved by Sushil on 30 Sep 2026 — prices ARE shown on cab pages)
