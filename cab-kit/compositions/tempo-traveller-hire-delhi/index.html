@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1600, height=900">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"SuzuSans";src:url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2");font-weight:800}
+@font-face{font-family:"SuzuSans";src:url("assets/plus-jakarta-sans-latin-700-normal.woff2") format("woff2");font-weight:700}
+@font-face{font-family:"SuzuSans";src:url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2");font-weight:500}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{margin:0;width:1600px;height:900px;overflow:hidden;background:#0d1f12}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"SuzuSans",sans-serif}
+.scene{position:absolute;inset:0;width:100%;height:100%;background:radial-gradient(1200px 800px at 35% 55%,#1d3f27 0%,#122615 55%,#0b1a0e 100%)}
+svg.map{position:absolute;inset:0;width:100%;height:100%}
+.grid line{stroke:#ffffff;stroke-opacity:.05;stroke-width:1}
+.zone{fill:#26452e;fill-opacity:.55}
+.glyph path{fill:none;stroke:#8fb59a;stroke-opacity:.17;stroke-width:2;stroke-linejoin:round}
+.zlabel{font-size:22px;font-weight:800;letter-spacing:.5em;fill:#cfe3d4;fill-opacity:.35}
+.ctx circle{fill:#9fb7a6;fill-opacity:.55} .ctx text{font-size:20px;font-weight:500;fill:#cfe0d4;fill-opacity:.55}
+.town .dot{fill:#ffffff} .town .halo{fill:#d4af37;fill-opacity:.0}
+.town text{font-size:26px;font-weight:700;fill:#ffffff;paint-order:stroke;stroke:#0b1a0e;stroke-width:6px;stroke-linejoin:round}
+.town.end .dot{fill:#d4af37;stroke:#fff;stroke-width:3} .town.end text{font-size:32px;font-weight:800;fill:#f1d98a}
+.road{fill:none;stroke:#d4af37;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.roadglow{fill:none;stroke:#f1d98a;stroke-opacity:.25;stroke-width:22;stroke-linecap:round;stroke-linejoin:round}
+.base{fill:none;stroke:#ffffff;stroke-opacity:.12;stroke-width:4;stroke-dasharray:2 12;stroke-linecap:round}
+.cab{filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+.panel{position:absolute;left:1070px;top:70px;width:470px;height:760px;padding:44px 40px;border-radius:30px;background:rgba(9,22,12,.72);border:1px solid rgba(241,217,138,.28);display:flex;flex-direction:column;gap:10px;color:#fff}
+.kick{font-size:20px;font-weight:800;letter-spacing:.3em;color:#d4af37}
+.big{font-size:62px;font-weight:800;line-height:1.02;letter-spacing:-.01em}
+.arrow{display:block;width:140px;height:8px;margin:6px 0} .arrow i{display:block;width:100%;height:8px;border-radius:4px;background:#d4af37}
+.stats{display:flex;gap:18px;margin-top:22px}
+.stats div{flex:1;background:rgba(255,255,255,.07);border-radius:18px;padding:18px 18px}
+.stats b{display:block;white-space:nowrap;font-size:30px;font-weight:800;color:#f1d98a;line-height:1.1} .stats span{font-size:18px;color:#cfe0d4;font-weight:500}
+.via{font-size:22px;color:#e8efe9;margin-top:16px;line-height:1.4;font-weight:500}
+.list{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:14px}
+.list li{font-size:30px;font-weight:700;display:flex;align-items:center;gap:16px;color:#e8efe9;opacity:.45}
+.list li i{display:block;width:16px;height:16px;border-radius:50%;background:#d4af37;flex:0 0 16px}
+.brand{margin-top:auto;font-size:18px;font-weight:800;letter-spacing:.3em;color:#f1d98a;opacity:.85}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="9" data-width="1600" data-height="900">
+<div class="scene clip" id="scene" data-start="0" data-duration="9" data-track-index="0">
+<svg class="map" viewBox="0 0 1600 900" data-layout-allow-overflow>
+ <g class="grid"><line x1="0" y1="908" x2="1600" y2="908"/><line x1="0" y1="853" x2="1600" y2="853"/><line x1="0" y1="797" x2="1600" y2="797"/><line x1="0" y1="742" x2="1600" y2="742"/><line x1="0" y1="686" x2="1600" y2="686"/><line x1="0" y1="631" x2="1600" y2="631"/><line x1="0" y1="575" x2="1600" y2="575"/><line x1="0" y1="520" x2="1600" y2="520"/><line x1="0" y1="464" x2="1600" y2="464"/><line x1="0" y1="409" x2="1600" y2="409"/><line x1="0" y1="353" x2="1600" y2="353"/><line x1="0" y1="298" x2="1600" y2="298"/><line x1="0" y1="242" x2="1600" y2="242"/><line x1="0" y1="187" x2="1600" y2="187"/><line x1="0" y1="131" x2="1600" y2="131"/><line x1="0" y1="76" x2="1600" y2="76"/><line x1="0" y1="20" x2="1600" y2="20"/><line x1="8" y1="0" x2="8" y2="900"/><line x1="56" y1="0" x2="56" y2="900"/><line x1="103" y1="0" x2="103" y2="900"/><line x1="151" y1="0" x2="151" y2="900"/><line x1="199" y1="0" x2="199" y2="900"/><line x1="247" y1="0" x2="247" y2="900"/><line x1="295" y1="0" x2="295" y2="900"/><line x1="342" y1="0" x2="342" y2="900"/><line x1="390" y1="0" x2="390" y2="900"/><line x1="438" y1="0" x2="438" y2="900"/><line x1="486" y1="0" x2="486" y2="900"/><line x1="533" y1="0" x2="533" y2="900"/><line x1="581" y1="0" x2="581" y2="900"/><line x1="629" y1="0" x2="629" y2="900"/><line x1="677" y1="0" x2="677" y2="900"/><line x1="724" y1="0" x2="724" y2="900"/><line x1="772" y1="0" x2="772" y2="900"/><line x1="820" y1="0" x2="820" y2="900"/><line x1="868" y1="0" x2="868" y2="900"/><line x1="915" y1="0" x2="915" y2="900"/><line x1="963" y1="0" x2="963" y2="900"/><line x1="1011" y1="0" x2="1011" y2="900"/></g>
+ <path class="zone" d="M-88 65 L256 98 L390 159 L462 204 L505 237 L543 270 L567 315 L576 353 L581 370 L638 403 L672 426 L705 453 L763 498 L810 537 L915 553 L1250 620 L2300 742 L2300 -2000 L-88 -2000 Z"/>
+ <g class="glyph"><path d="M7 48 L20 31 L33 48" /><path d="M75 48 L88 31 L101 48" /><path d="M143 48 L156 31 L169 48" /><path d="M211 48 L224 31 L237 48" /><path d="M279 48 L292 31 L305 48" /><path d="M347 48 L360 31 L373 48" /><path d="M415 48 L428 31 L441 48" /><path d="M483 48 L496 31 L509 48" /><path d="M551 48 L564 31 L577 48" /><path d="M619 48 L632 31 L645 48" /><path d="M687 48 L700 31 L713 48" /><path d="M755 48 L768 31 L781 48" /><path d="M823 48 L836 31 L849 48" /><path d="M891 48 L904 31 L917 48" /><path d="M959 48 L972 31 L985 48" /><path d="M1027 48 L1040 31 L1053 48" /><path d="M1095 48 L1108 31 L1121 48" /><path d="M1163 48 L1176 31 L1189 48" /><path d="M1231 48 L1244 31 L1257 48" /><path d="M1299 48 L1312 31 L1325 48" /><path d="M1367 48 L1380 31 L1393 48" /><path d="M1435 48 L1448 31 L1461 48" /><path d="M1503 48 L1516 31 L1529 48" /><path d="M1571 48 L1584 31 L1597 48" /><path d="M313 106 L326 89 L339 106" /><path d="M381 106 L394 89 L407 106" /><path d="M449 106 L462 89 L475 106" /><path d="M517 106 L530 89 L543 106" /><path d="M585 106 L598 89 L611 106" /><path d="M653 106 L666 89 L679 106" /><path d="M721 106 L734 89 L747 106" /><path d="M789 106 L802 89 L815 106" /><path d="M857 106 L870 89 L883 106" /><path d="M925 106 L938 89 L951 106" /><path d="M993 106 L1006 89 L1019 106" /><path d="M1061 106 L1074 89 L1087 106" /><path d="M1129 106 L1142 89 L1155 106" /><path d="M1197 106 L1210 89 L1223 106" /><path d="M1265 106 L1278 89 L1291 106" /><path d="M1333 106 L1346 89 L1359 106" /><path d="M1401 106 L1414 89 L1427 106" /><path d="M1469 106 L1482 89 L1495 106" /><path d="M1537 106 L1550 89 L1563 106" /><path d="M415 164 L428 147 L441 164" /><path d="M483 164 L496 147 L509 164" /><path d="M551 164 L564 147 L577 164" /><path d="M619 164 L632 147 L645 164" /><path d="M687 164 L700 147 L713 164" /><path d="M755 164 L768 147 L781 164" /><path d="M823 164 L836 147 L849 164" /><path d="M891 164 L904 147 L917 164" /><path d="M959 164 L972 147 L985 164" /><path d="M1027 164 L1040 147 L1053 164" /><path d="M1095 164 L1108 147 L1121 164" /><path d="M1163 164 L1176 147 L1189 164" /><path d="M1231 164 L1244 147 L1257 164" /><path d="M1299 164 L1312 147 L1325 164" /><path d="M1367 164 L1380 147 L1393 164" /><path d="M1435 164 L1448 147 L1461 164" /><path d="M1503 164 L1516 147 L1529 164" /><path d="M1571 164 L1584 147 L1597 164" /><path d="M517 222 L530 205 L543 222" /><path d="M585 222 L598 205 L611 222" /><path d="M653 222 L666 205 L679 222" /><path d="M721 222 L734 205 L747 222" /><path d="M789 222 L802 205 L815 222" /><path d="M857 222 L870 205 L883 222" /><path d="M925 222 L938 205 L951 222" /><path d="M993 222 L1006 205 L1019 222" /><path d="M1061 222 L1074 205 L1087 222" /><path d="M1129 222 L1142 205 L1155 222" /><path d="M1197 222 L1210 205 L1223 222" /><path d="M1265 222 L1278 205 L1291 222" /><path d="M1333 222 L1346 205 L1359 222" /><path d="M1401 222 L1414 205 L1427 222" /><path d="M1469 222 L1482 205 L1495 222" /><path d="M1537 222 L1550 205 L1563 222" /><path d="M551 280 L564 263 L577 280" /><path d="M619 280 L632 263 L645 280" /><path d="M687 280 L700 263 L713 280" /><path d="M755 280 L768 263 L781 280" /><path d="M823 280 L836 263 L849 280" /><path d="M891 280 L904 263 L917 280" /><path d="M959 280 L972 263 L985 280" /><path d="M1027 280 L1040 263 L1053 280" /><path d="M1095 280 L1108 263 L1121 280" /><path d="M1163 280 L1176 263 L1189 280" /><path d="M1231 280 L1244 263 L1257 280" /><path d="M1299 280 L1312 263 L1325 280" /><path d="M1367 280 L1380 263 L1393 280" /><path d="M1435 280 L1448 263 L1461 280" /><path d="M1503 280 L1516 263 L1529 280" /><path d="M1571 280 L1584 263 L1597 280" /><path d="M585 338 L598 321 L611 338" /><path d="M653 338 L666 321 L679 338" /><path d="M721 338 L734 321 L747 338" /><path d="M789 338 L802 321 L815 338" /><path d="M857 338 L870 321 L883 338" /><path d="M925 338 L938 321 L951 338" /><path d="M993 338 L1006 321 L1019 338" /><path d="M1061 338 L1074 321 L1087 338" /><path d="M1129 338 L1142 321 L1155 338" /><path d="M1197 338 L1210 321 L1223 338" /><path d="M1265 338 L1278 321 L1291 338" /><path d="M1333 338 L1346 321 L1359 338" /><path d="M1401 338 L1414 321 L1427 338" /><path d="M1469 338 L1482 321 L1495 338" /><path d="M1537 338 L1550 321 L1563 338" /><path d="M687 396 L700 379 L713 396" /><path d="M755 396 L768 379 L781 396" /><path d="M823 396 L836 379 L849 396" /><path d="M891 396 L904 379 L917 396" /><path d="M959 396 L972 379 L985 396" /><path d="M1027 396 L1040 379 L1053 396" /><path d="M1095 396 L1108 379 L1121 396" /><path d="M1163 396 L1176 379 L1189 396" /><path d="M1231 396 L1244 379 L1257 396" /><path d="M1299 396 L1312 379 L1325 396" /><path d="M1367 396 L1380 379 L1393 396" /><path d="M1435 396 L1448 379 L1461 396" /><path d="M1503 396 L1516 379 L1529 396" /><path d="M1571 396 L1584 379 L1597 396" /><path d="M721 454 L734 437 L747 454" /><path d="M789 454 L802 437 L815 454" /><path d="M857 454 L870 437 L883 454" /><path d="M925 454 L938 437 L951 454" /><path d="M993 454 L1006 437 L1019 454" /><path d="M1061 454 L1074 437 L1087 454" /><path d="M1129 454 L1142 437 L1155 454" /><path d="M1197 454 L1210 437 L1223 454" /><path d="M1265 454 L1278 437 L1291 454" /><path d="M1333 454 L1346 437 L1359 454" /><path d="M1401 454 L1414 437 L1427 454" /><path d="M1469 454 L1482 437 L1495 454" /><path d="M1537 454 L1550 437 L1563 454" /><path d="M823 512 L836 495 L849 512" /><path d="M891 512 L904 495 L917 512" /><path d="M959 512 L972 495 L985 512" /><path d="M1027 512 L1040 495 L1053 512" /><path d="M1095 512 L1108 495 L1121 512" /><path d="M1163 512 L1176 495 L1189 512" /><path d="M1231 512 L1244 495 L1257 512" /><path d="M1299 512 L1312 495 L1325 512" /><path d="M1367 512 L1380 495 L1393 512" /><path d="M1435 512 L1448 495 L1461 512" /><path d="M1503 512 L1516 495 L1529 512" /><path d="M1571 512 L1584 495 L1597 512" /><path d="M1061 570 L1074 553 L1087 570" /><path d="M1129 570 L1142 553 L1155 570" /><path d="M1197 570 L1210 553 L1223 570" /><path d="M1265 570 L1278 553 L1291 570" /><path d="M1333 570 L1346 553 L1359 570" /><path d="M1401 570 L1414 553 L1427 570" /><path d="M1469 570 L1482 553 L1495 570" /><path d="M1537 570 L1550 553 L1563 570" /><path d="M1435 628 L1448 611 L1461 628" /><path d="M1503 628 L1516 611 L1529 628" /><path d="M1571 628 L1584 611 L1597 628" /></g>
+ <path class="base" d="M601.1 618.7 Q649.0 479.8 597.3 342.3"/><path class="base" d="M601.1 618.7 Q672.7 416.9 599.2 215.8"/><path class="base" d="M601.1 618.7 Q630.8 403.1 516.1 218.0"/><path class="base" d="M601.1 618.7 Q681.3 554.8 702.4 454.4"/><path class="base" d="M601.1 618.7 Q674.5 537.9 679.5 428.9"/><path class="base" d="M601.1 618.7 Q549.7 410.9 377.6 283.5"/><path class="base" d="M601.1 618.7 Q579.8 336.4 383.4 132.5"/>
+ <path class="roadglow" id="g0" d="M601.1 618.7 Q649.0 479.8 597.3 342.3"/><path class="road" id="r0" d="M601.1 618.7 Q649.0 479.8 597.3 342.3"/><path class="roadglow" id="g1" d="M601.1 618.7 Q672.7 416.9 599.2 215.8"/><path class="road" id="r1" d="M601.1 618.7 Q672.7 416.9 599.2 215.8"/><path class="roadglow" id="g2" d="M601.1 618.7 Q630.8 403.1 516.1 218.0"/><path class="road" id="r2" d="M601.1 618.7 Q630.8 403.1 516.1 218.0"/><path class="roadglow" id="g3" d="M601.1 618.7 Q681.3 554.8 702.4 454.4"/><path class="road" id="r3" d="M601.1 618.7 Q681.3 554.8 702.4 454.4"/><path class="roadglow" id="g4" d="M601.1 618.7 Q674.5 537.9 679.5 428.9"/><path class="road" id="r4" d="M601.1 618.7 Q674.5 537.9 679.5 428.9"/><path class="roadglow" id="g5" d="M601.1 618.7 Q549.7 410.9 377.6 283.5"/><path class="road" id="r5" d="M601.1 618.7 Q549.7 410.9 377.6 283.5"/><path class="roadglow" id="g6" d="M601.1 618.7 Q579.8 336.4 383.4 132.5"/><path class="road" id="r6" d="M601.1 618.7 Q579.8 336.4 383.4 132.5"/>
+ <g class="ctx"><circle cx="677.5" cy="777.5" r="5"/><text x="688.5" y="782.5">Agra</text></g><g class="ctx"><circle cx="560.1" cy="383.4" r="5"/><text x="571.1" y="388.4">Chandigarh</text></g><g class="town end" id="t0" data-x="601.1" data-y="618.7"><circle class="halo" cx="601.1" cy="618.7" r="22"/><circle class="dot" cx="601.1" cy="618.7" r="9"/><text x="631.1" y="625.7" text-anchor="start">Delhi</text></g><g class="town" id="t1" data-x="597.3" data-y="342.3"><circle class="halo" cx="597.3" cy="342.3" r="14"/><circle class="dot" cx="597.3" cy="342.3" r="6"/><text x="613.3" y="349.3" text-anchor="start">Shimla</text></g><g class="town" id="t2" data-x="599.2" data-y="215.8"><circle class="halo" cx="599.2" cy="215.8" r="14"/><circle class="dot" cx="599.2" cy="215.8" r="6"/><text x="615.2" y="222.8" text-anchor="start">Manali</text></g><g class="town" id="t3" data-x="516.1" data-y="218.0"><circle class="halo" cx="516.1" cy="218.0" r="14"/><circle class="dot" cx="516.1" cy="218.0" r="6"/><text x="500.1" y="225.0" text-anchor="end">Dharamshala</text></g><g class="town" id="t4" data-x="702.4" data-y="454.4"><circle class="halo" cx="702.4" cy="454.4" r="14"/><circle class="dot" cx="702.4" cy="454.4" r="6"/><text x="718.4" y="461.4" text-anchor="start">Rishikesh</text></g><g class="town" id="t5" data-x="679.5" data-y="428.9"><circle class="halo" cx="679.5" cy="428.9" r="14"/><circle class="dot" cx="679.5" cy="428.9" r="6"/><text x="695.5" y="435.9" text-anchor="start">Dehradun</text></g><g class="town" id="t6" data-x="377.6" data-y="283.5"><circle class="halo" cx="377.6" cy="283.5" r="14"/><circle class="dot" cx="377.6" cy="283.5" r="6"/><text x="361.6" y="290.5" text-anchor="end">Amritsar</text></g><g class="town" id="t7" data-x="383.4" data-y="132.5"><circle class="halo" cx="383.4" cy="132.5" r="14"/><circle class="dot" cx="383.4" cy="132.5" r="6"/><text x="367.4" y="139.5" text-anchor="end">Katra</text></g>
+ <g class="cab" id="cab"><circle r="20" fill="#d4af37"/><circle r="20" fill="none" stroke="#fff" stroke-width="4"/>
+   <path d="M-11 3 L-9 -4 L-4 -8 L6 -8 L10 -3 L12 3 L12 6 L-12 6 Z" fill="#122615"/><circle cx="-6" cy="7" r="3.2" fill="#fff"/><circle cx="7" cy="7" r="3.2" fill="#fff"/></g>
+</svg>
+<div class="panel" data-layout-allow-overflow><div class="kick">POPULAR TRIPS FROM</div><div class="big">Delhi</div><ul class="list"><li id="li0"><i></i>Shimla</li><li id="li1"><i></i>Manali</li><li id="li2"><i></i>Dharamshala</li><li id="li3"><i></i>Rishikesh</li><li id="li4"><i></i>Dehradun</li><li id="li5"><i></i>Amritsar</li><li id="li6"><i></i>Katra</li></ul><div class="brand">SUZU TRAVELS · CABS</div></div>
+</div></div>
+<script>
+const C={"mode": "hub", "n": 7, "labels": 8};
+const tl=gsap.timeline({paused:true});
+const roads=[...Array(C.n).keys()].map(i=>document.getElementById("r"+i));
+const glows=[...Array(C.n).keys()].map(i=>document.getElementById("g"+i));
+const lens=roads.map(r=>r.getTotalLength());
+roads.forEach((r,i)=>{gsap.set([r,glows[i]],{strokeDasharray:lens[i],strokeDashoffset:lens[i]});});
+const cab=document.getElementById("cab");
+function place(i,t){const p=roads[i].getPointAtLength(lens[i]*t);cab.setAttribute("transform","translate("+p.x+" "+p.y+")");}
+place(0,0);
+gsap.set(cab,{opacity:0});
+const towns=[...Array(C.labels).keys()].map(i=>document.getElementById("t"+i));
+towns.forEach((t,i)=>{gsap.set(t,{opacity:(i===0?1:.5)});});
+if(C.mode==="path"){
+  const drawStart=0.6, drawDur=5.0;
+  tl.fromTo(cab,{opacity:0},{opacity:1,duration:0.3},drawStart-0.3);
+  tl.fromTo([roads[0],glows[0]],{strokeDashoffset:lens[0]},{strokeDashoffset:0,duration:drawDur,ease:"power1.inOut"},drawStart);
+  const prox={t:0};
+  tl.fromTo(prox,{t:0},{t:1,duration:drawDur,ease:"power1.inOut",onUpdate:()=>place(0,prox.t)},drawStart);
+  // light up towns in order of distance along the road
+  const samples=200;const pts=[...Array(samples+1).keys()].map(j=>roads[0].getPointAtLength(lens[0]*j/samples));
+  towns.forEach((t,i)=>{
+    if(i===0) return;
+    const x=+t.dataset.x,y=+t.dataset.y;let best=0,bd=1e9;
+    pts.forEach((p,j)=>{const d=(p.x-x)**2+(p.y-y)**2;if(d<bd){bd=d;best=j;}});
+    const f=best/samples;
+    tl.fromTo(t,{opacity:.5},{opacity:1,duration:0.3},drawStart+drawDur*f-0.1);
+  });
+  const last=towns[towns.length-1].querySelector(".halo");
+  tl.fromTo(last,{fillOpacity:0,scale:.6,transformOrigin:"50% 50%"},{fillOpacity:.45,scale:1.6,duration:0.9,ease:"power2.out",yoyo:true,repeat:1},drawStart+drawDur);
+  tl.to([roads[0],glows[0]],{opacity:0,duration:0.7},8.0);
+  tl.to(cab,{opacity:0,duration:0.5},8.0);
+  tl.to(towns.slice(1),{opacity:.5,duration:0.6},8.1);
+  tl.set([roads[0],glows[0]],{strokeDashoffset:lens[0]},8.85);
+  tl.set([roads[0],glows[0]],{opacity:1},8.9);
+} else {
+  const per=7.2/C.n;
+  const hubHalo=towns[0].querySelector(".halo");
+  tl.fromTo(hubHalo,{fillOpacity:0,scale:.6,transformOrigin:"50% 50%"},{fillOpacity:.4,scale:1.5,duration:0.6,yoyo:true,repeat:1},0.1);
+  roads.forEach((r,i)=>{
+    const t0=0.4+i*per, d=per*0.8; const prox={t:0};
+    tl.fromTo([r,glows[i]],{strokeDashoffset:lens[i]},{strokeDashoffset:0,duration:d,ease:"power1.inOut"},t0);
+    tl.fromTo(prox,{t:0},{t:1,duration:d,ease:"power1.inOut",onUpdate:()=>place(i,prox.t)},t0);
+    tl.fromTo(towns[i+1],{opacity:.5},{opacity:1,duration:0.3},t0+d-0.2);
+    const li=document.getElementById("li"+i); if(li) tl.fromTo(li,{opacity:.45},{opacity:1,duration:0.3},t0+d-0.2);
+  });
+  tl.fromTo(cab,{opacity:0},{opacity:1,duration:0.3},0.2);
+  tl.to(cab,{opacity:0,duration:0.4},8.0);
+  tl.to([...roads,...glows],{opacity:0,duration:0.6},8.1);
+  tl.to(towns.slice(1),{opacity:.5,duration:0.6},8.1);
+  tl.to([...document.querySelectorAll(".list li")],{opacity:.45,duration:0.6},8.1);
+  tl.set([...roads,...glows],{strokeDashoffset:(i,el)=>el.getTotalLength()},8.85);
+  tl.set([...roads,...glows],{opacity:1},8.9);
+}
+window.__timelines["main"]=tl;
+</script></body></html>
