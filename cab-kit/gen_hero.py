@@ -62,9 +62,9 @@ def posts():
     one = "".join(f'<g transform="translate({x} 0)"><rect x="0" y="846" width="10" height="30" rx="2" fill="#f4f1e6"/><rect x="0" y="846" width="10" height="9" rx="2" fill="#d4af37"/></g>' for x in range(80, W, 480))
     return "".join(f'<g transform="translate({k*W} 0)">{one}</g>' for k in range(4))
 
-def car():
+def car(kind="crysta"):
     from vehicles_svg import V
-    v = V["crysta"]
+    v = V[kind]
     pts = " ".join(f"{x},{y}" for x, y in v["body"])
     wins = "".join(f'<polygon points="{" ".join(f"{x},{y}" for x,y in w)}" fill="url(#glass)"/>' for w in v["win"])
     x0, x1 = v["wheels"][0] + 24, v["wheels"][1] - 24
@@ -76,16 +76,21 @@ def car():
             f'<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfd6d1"/></linearGradient>'
             f'<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b5d66"/><stop offset=".55" stop-color="#15252a"/><stop offset="1" stop-color="#e9c778" stop-opacity=".8"/></linearGradient></defs>'
             f'<polygon points="{pts}" fill="url(#body)" stroke="#122615" stroke-opacity=".3" stroke-width="1.2" stroke-linejoin="round"/>'
-            f'<rect x="24" y="99" width="272" height="7" rx="3" fill="#1b2620" opacity=".9"/>{wheels}{wins}'
+            f'<rect x="{min(x for x,_ in v["body"])+2}" y="99" width="{max(x for x,_ in v["body"])-min(x for x,_ in v["body"])-4}" height="7" rx="3" fill="#1b2620" opacity=".9"/>{wheels}{wins}'
             f'<rect x="{x0}" y="80" width="{x1-x0}" height="15" rx="3" fill="#d4af37"/>'
             f'<text x="{(x0+x1)/2}" y="91.5" text-anchor="middle" font-family="SuzuSans" font-size="9.5" font-weight="800" letter-spacing="2" fill="#122615">SUZU TRAVELS</text>'
-            f'<rect x="284" y="70" width="12" height="6" rx="2" fill="#fff3c4"/><rect x="21" y="72" width="7" height="8" rx="2" fill="#c0392b"/>{rims}</svg>')
+            f'<rect x="{max(x for x,_ in v["body"])-14}" y="70" width="12" height="6" rx="2" fill="#fff3c4"/><rect x="{min(x for x,_ in v["body"])-1}" y="72" width="7" height="8" rx="2" fill="#c0392b"/>{rims}</svg>')
 
-ROUTES = [("Delhi", "Shimla"), ("Chandigarh", "Manali"), ("Pathankot", "Dharamshala"), ("Jammu", "Srinagar")]
-route_html = "".join(
-    f'<div class="rt" id="rt{i}"><span class="a">{a}</span><span class="arrow"><i></i></span><span class="b">{b}</span></div>' for i, (a, b) in enumerate(ROUTES))
+def make(out, routes, kicker="SUZU TRAVELS · CABS", vehicle="crysta"):
+  ROUTES = routes
+  single = len(ROUTES) == 1
+  def one(i, r):
+    if len(r) == 2 and r[1]:
+      return f'<div class="rt" id="rt{i}"><span class="a">{r[0]}</span><span class="arrow"><i></i></span><span class="b">{r[1]}</span></div>'
+    return f'<div class="rt" id="rt{i}"><span class="a">{r[0]}</span></div>'
+  route_html = "".join(one(i, r) for i, r in enumerate(ROUTES))
 
-html = f'''<!doctype html>
+  html = f'''<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
 <style>
@@ -125,8 +130,8 @@ html,body{{margin:0;width:{W}px;height:{H}px;overflow:hidden;background:#10281a}
   <div class="streak" id="s2" style="left:820px;top:840px;width:240px"></div>
   <div class="streak" id="s3" style="left:700px;top:900px;width:150px"></div>
   <div class="shadow"></div>
-  <div class="car" id="car">{car()}</div>
-  <div class="brand"><div class="kick">SUZU TRAVELS · CABS</div><div class="rtbox" data-layout-allow-overlap>{route_html}</div><div class="bar"></div></div>
+  <div class="car" id="car">{car(vehicle)}</div>
+  <div class="brand"><div class="kick">{kicker}</div><div class="rtbox" data-layout-allow-overlap>{route_html}</div><div class="bar"></div></div>
  </div>
 </div>
 <script>
@@ -139,13 +144,36 @@ tl.fromTo(".rim",{{rotation:0}},{{rotation:360*36,duration:{DUR},ease:"none",tra
 tl.fromTo("#car",{{y:0}},{{y:-5,duration:0.5,ease:"sine.inOut",yoyo:true,repeat:{int(DUR/0.5)-1}}},0);
 ["#s1","#s2","#s3"].forEach((s,i)=>{{tl.fromTo(s,{{x:0,opacity:0}},{{x:-520,opacity:1,duration:0.75,ease:"none",repeat:{int(DUR/1.5)-1},repeatDelay:0.75}},0.25*i);}});
 tl.fromTo("#sun",{{scale:1}},{{scale:1.06,duration:3,ease:"sine.inOut",yoyo:true,repeat:3}},0);
-for(let i=0;i<{len(ROUTES)};i++){{
-  const t0=i*3;
-  tl.fromTo("#rt"+i,{{opacity:0,x:60}},{{opacity:1,x:0,duration:0.5,ease:"power3.out"}},t0+0.05);
-  tl.to("#rt"+i,{{opacity:0,x:-60,duration:0.45,ease:"power2.in"}},t0+2.5);
-}}
+{"gsap.set('#rt0',{opacity:1});" if single else ""}
+{"" if single else "for(let i=0;i<"+str(len(ROUTES))+";i++){const t0=i*3;tl.fromTo('#rt'+i,{opacity:0,x:60},{opacity:1,x:0,duration:0.5,ease:'power3.out'},t0+0.05);tl.to('#rt'+i,{opacity:0,x:-60,duration:0.45,ease:'power2.in'},t0+2.5);}"}
 window.__timelines["main"] = tl;
 </script>
 </body></html>'''
-pathlib.Path("/home/claude/cabs/hf/cab-hero/index.html").write_text(html)
-print("ok", len(html))
+  d = pathlib.Path(out); (d/"assets").mkdir(parents=True, exist_ok=True)
+  import shutil
+  for f in pathlib.Path("/home/claude/cabs/hf/cab-hero/assets").glob("*.woff2"):
+      if not (d/"assets"/f.name).exists(): shutil.copy(f, d/"assets"/f.name)
+  for f in ["package.json","hyperframes.json","meta.json"]:
+      if not (d/f).exists(): shutil.copy(pathlib.Path("/home/claude/cabs/hf/cab-hero")/f, d/f)
+  (d/"index.html").write_text(html)
+  return d
+
+VARIANTS = {
+  "hub": dict(routes=[("Delhi","Shimla"),("Chandigarh","Manali"),("Pathankot","Dharamshala"),("Jammu","Srinagar")]),
+  "delhi-to-shimla-taxi": dict(routes=[("Delhi","Shimla")], kicker="ONE-WAY · ROUND TRIP"),
+  "delhi-to-manali-taxi": dict(routes=[("Delhi","Manali")], kicker="ONE-WAY · ROUND TRIP"),
+  "chandigarh-to-manali-taxi": dict(routes=[("Chandigarh","Manali")], kicker="ONE-WAY · ROUND TRIP"),
+  "chandigarh-to-shimla-taxi": dict(routes=[("Chandigarh","Shimla")], kicker="ONE-WAY · ROUND TRIP"),
+  "delhi-to-chandigarh-taxi": dict(routes=[("Delhi","Chandigarh")], kicker="ONE-WAY · BOTH WAYS"),
+  "delhi-to-dehradun-taxi": dict(routes=[("Delhi","Dehradun")], kicker="VIA THE NEW EXPRESSWAY"),
+  "pathankot-to-dharamshala-taxi": dict(routes=[("Pathankot","Dharamshala")], kicker="STATION · AIRPORT PICKUP"),
+  "jammu-to-srinagar-taxi": dict(routes=[("Jammu","Srinagar")], kicker="THROUGH THE BANIHAL TUNNELS"),
+  "manali-taxi-service": dict(routes=[("Manali taxis",None)], kicker="SOLANG · ATAL TUNNEL · ROHTANG"),
+  "shimla-taxi-service": dict(routes=[("Shimla taxis",None)], kicker="KUFRI · CHAIL · NARKANDA"),
+  "tempo-traveller-hire-delhi": dict(routes=[("Tempo Traveller",None)], kicker="12–17 SEATS · DELHI NCR", vehicle="tempo"),
+  "innova-crysta-on-rent": dict(routes=[("Innova Crysta",None)], kicker="ON RENT WITH DRIVER"),
+}
+if __name__ == "__main__":
+  want = sys.argv[1:] or list(VARIANTS)
+  for k in want:
+      print(make(f"/home/claude/cabs/hf/heroes/{k}", **VARIANTS[k]))

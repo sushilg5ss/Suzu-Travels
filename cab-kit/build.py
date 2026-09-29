@@ -51,7 +51,7 @@ def hero(p, chips):
     trust = (f'<div class="szc-trust"><span><a href="/certificates/">{REG}</a></span><span>GST registered</span>'
              f'<span>{RATING}</span><span>24×7 WhatsApp {PHONE_TXT}</span></div>')
     chip_html = "".join(f"<li>{c}</li>" for c in chips)
-    return (f'<section class="szc-hero">{video_tag(MEDIA.get("hero"), eager=True)}<div class="szc-hero-in">'
+    return (f'<section class="szc-hero">{video_tag(MEDIA.get(p["slug"], {}).get("hero") or MEDIA.get("hero"), eager=True)}<div class="szc-hero-in">'
             f'<span class="szc-kicker">{p["kicker"]}</span><p class="szc-hero-tag">{p["tag"]}</p>'
             f'<p class="szc-hero-sub">{p["sub"]}</p><ul class="szc-chips">{chip_html}</ul>'
             f'<div class="szc-btns"><a class="szc-btn gold" href="{wa(p["wa"] + " (page: " + p["slug"] + ")")}" target="_blank" rel="noopener">Get fare on WhatsApp</a>'
@@ -82,12 +82,13 @@ def calculator(dests, slug, default_vehicle="sedan"):
     data = json.dumps(dict(v=veh, d=dests, s=slug), ensure_ascii=False, separators=(",", ":"))
     dopts = "".join(f'<option value="{i}">{esc(d["l"])}</option>' for i, d in enumerate(dests))
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]==default_vehicle else ""}>{v["name"]} ({v["seats"]} seats)</option>' for v in FLEET)
+    d0 = dests[0]; amt0 = oneway(default_vehicle, d0["km"], d0["f"])
     return (f'<div class="szc-calc" id="szc-calc" data-cfg=\'{esc(data)}\'>'
             f'<div class="szc-calc-f"><div class="full"><label for="szc-cd">Route</label><select id="szc-cd">{dopts}</select></div>'
             f'<div class="full"><label>Trip type</label><div class="szc-seg" role="group"><button type="button" class="on" data-m="one">One-way drop</button><button type="button" data-m="round">Round trip / tour</button></div></div>'
             f'<div><label for="szc-cv">Car</label><select id="szc-cv">{vopts}</select></div>'
             f'<div><label for="szc-cn">Days (round trip)</label><input id="szc-cn" type="number" min="1" max="20" value="3" disabled></div></div>'
-            f'<div class="szc-calc-o" aria-live="polite"><span class="lbl">Estimated fare</span><div class="amt" id="szc-ca">—</div><p class="brk" id="szc-cb"></p>'
+            f'<div class="szc-calc-o" aria-live="polite"><span class="lbl">Estimated fare</span><div class="amt" id="szc-ca">{inr(amt0)}</div><p class="brk" id="szc-cb">One-way drop · {d0["km"]} km · fuel, driver and driver allowance included</p>'
             f'<ul><li>Tolls, parking & state entry fee extra at actuals</li><li>Final price confirmed on WhatsApp before you pay</li></ul>'
             f'<a class="szc-btn gold" id="szc-cw" href="{wa("Hi Suzu Travels")}" target="_blank" rel="noopener">Lock this fare on WhatsApp</a></div></div>')
 
@@ -106,7 +107,8 @@ def vehicle_cards(slug, ctx_label):
     for v in FLEET:
         q = wa(f"Hi Suzu Travels, I'd like a {v['name']} for {ctx_label}. Date: ___ , people: ___ (page: {slug})")
         more = f'<a class="szc-btn sm line" href="{page_url(v["page"])}">Details</a>' if v["page"] and v["page"] != slug and is_live(v["page"]) else ""
-        cards.append(f'<article class="szc-card szc-veh">{vsvg(v["id"], uid=slug[:6] + v["id"])}<div class="szc-card-b"><span class="szc-tag">{v["model"]}</span><h3>{v["name"]}</h3>'
+        img = f'<img src="{MEDIA.get("svg_base","")}/{v["id"]}.svg" alt="{v["name"]} ({v["model"]}) illustration" width="320" height="140" loading="lazy" decoding="async">' if MEDIA.get("svg_base") else vsvg(v["id"], uid=slug[:6] + v["id"])
+        cards.append(f'<article class="szc-card szc-veh">{img}<div class="szc-card-b"><span class="szc-tag">{v["model"]}</span><h3>{v["name"]}</h3>'
                      f'<div class="meta"><span>{v["seats"]} seats</span><span>{v["bags"]}</span><span>AC · {v["fuel"]}</span></div><p>Best for: {v["best"]}</p>'
                      f'<div class="acts"><a class="szc-btn sm wa" href="{q}" target="_blank" rel="noopener">WhatsApp quote</a>{more}</div></div></article>')
     return '<div class="szc-grid">' + "".join(cards) + "</div>"
