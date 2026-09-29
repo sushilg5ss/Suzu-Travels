@@ -261,7 +261,7 @@ dict(slug="manali-taxi-service", kind="city", route=None,
 # ------------------------------------------------------------------ SHIMLA TAXI SERVICE
 dict(slug="shimla-taxi-service", kind="city", route=None,
  title="Shimla Taxi Service", seo_title="Shimla Taxi Service 2026 | Kufri, Chail & Narkanda Trips",
- seo_desc="Shimla taxi service for Kufri, Chail, Naldehra & Narkanda sightseeing, Kalka & Chandigarh airport transfers, and Shimla to Manali or Delhi drops. Get a quote.",
+ seo_desc="Shimla taxi service for Kufri, Chail, Naldehra & Narkanda sightseeing, Kalka & Chandigarh airport transfers, and drops to Manali or Delhi.",
  focus="shimla taxi service",
  kicker="Shimla · Sightseeing & transfers",
  tag="Shimla taxis for Kufri, Chail, Narkanda and every drop",
@@ -317,7 +317,7 @@ dict(slug="tempo-traveller-hire-delhi", kind="vehicle", vehicle="tempo", route=N
 
 # ------------------------------------------------------------------ INNOVA CRYSTA
 dict(slug="innova-crysta-on-rent", kind="vehicle", vehicle="crysta", route=None,
- title="Innova Crysta on Rent with Driver", seo_title="Innova Crysta on Rent | ₹19/km with Driver | Delhi, Chandigarh",
+ title="Innova Crysta on Rent with Driver", seo_title="Innova Crysta on Rent with Driver | From ₹19/km",
  seo_desc="Innova Crysta on rent with driver from ₹19/km: Delhi & Chandigarh pickups for Shimla, Manali, Kashmir and Char Dham trips. One-way drops too. Get a quote.",
  focus="innova crysta on rent",
  kicker="Innova Crysta · With driver",
