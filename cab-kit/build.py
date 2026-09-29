@@ -168,7 +168,7 @@ def route_card(r, page_slug):
     q = wa(f"Hi Suzu Travels, I need a {r['a']} to {r['b']} taxi. Date: ___ , people: ___ (page: {page_slug})")
     acts = (f'<a class="szc-btn sm em" href="{page_url(r["slug"])}">Route & fares</a>' if live else "") + \
            f'<a class="szc-btn sm wa" href="{q}" target="_blank" rel="noopener">WhatsApp quote</a>'
-    rid = f' id="rt-{r["a"].lower()}-{r["b"].lower()}"'.replace(" ", "-")
+    rid = ' id="rt-' + (r["a"].lower() + "-" + r["b"].lower()).replace(" ", "-") + '"'
     return (f'<article class="szc-card szc-route-card"{rid}><div class="rc-top"><div class="from">{r["a"]}</div><div class="to">→ {r["b"]}</div>'
             f'<div class="line"><span>{r["km"]} km</span><i></i><span>{r["t"]}</span></div></div>'
             f'<div class="szc-card-b"><div class="price">Sedan from <b>{inr(sedan)}</b> · Innova Crysta from {inr(crysta)}</div><div class="acts">{acts}</div></div></article>')
