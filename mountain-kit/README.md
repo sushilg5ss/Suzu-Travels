@@ -4,7 +4,7 @@ This kit is the design system, dataset, video pipeline and publishing toolkit fo
 - `/mountains-of-india/` and its child pages
 - the enquiry page `/adventure/himalayan-peak-expeditions/`
 
-Owner: Suzu Travels (Sushil Kumar). The kit is built and run by the scheduled Suzu Mountain agents. Repo: `sushilg5ss/suzu-travels`, branch **`mountains`**, folder `mountain-kit/`.
+Owner: Suzu Travels (Sushil Kumar). The kit is built and run by the scheduled Suzu Mountain agents. Repo: `sushilg5ss/Suzu-Travels`, branch **`mountains`**, folder `mountain-kit/`.
 
 **Goal (Sushil, 1 Oct 2026).** Rank worldwide for India-mountain searches, both informational ("highest peaks in India", "Friendship Peak", "IMF permit") and commercial ("peak climbing Himachal"). Turn that traffic into WhatsApp enquiries. Suzu arranges each climb with validated, authorised **Himachal** mountaineering companies. The pages stay **informational and neutral**: no partner is ever named. Every page gets striking **HyperFrames** visuals and must still load fast.
 

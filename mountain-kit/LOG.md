@@ -2,6 +2,7 @@
 
 Format: `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 04:25 IST · Claude · Dataset CSV re-pinned to d12f4fc (includes the public-wording overrides). Page 11841: the CSV URL updated in all 3 places (hero button, method link, Dataset JSON-LD) via `wp_replace_in_page`; length stays 128,910. `cmp_live`: 0/0 with cache-buster and plain.
 - 2026-10-01 04:10 IST · Claude (setup with Sushil) · Kit v1.1 for the agents:
   - generic page template `content_page()` for `src/pages/*.json` + media specs in `src/media/`;
   - new HyperFrames compositions: words hero, peak ladder (any 3–7 dataset peaks), route profile fixes;

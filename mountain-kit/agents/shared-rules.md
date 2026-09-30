@@ -20,9 +20,9 @@ The goal (Sushil, 1 Oct 2026) is to rank worldwide for India-mountain searches, 
 - Give every page with its full URL.
 - Put only real decisions under **"Sushil ke liye"**, or write "kuch nahi".
 
-**The Mountain Kit is the single source of truth.** GitHub `sushilg5ss/suzu-travels`, branch **`mountains`**, folder `mountain-kit/`. To get it:
-1. `add_repo` (Claude Code Remote connector) with owner `sushilg5ss`, repo `suzu-travels`, access `push`.
-2. `git clone --depth 1 --single-branch -b mountains https://github.com/sushilg5ss/suzu-travels ~/mk`. Use one clone and a generous timeout.
+**The Mountain Kit is the single source of truth.** GitHub `sushilg5ss/Suzu-Travels`, branch **`mountains`**, folder `mountain-kit/`. To get it:
+1. `add_repo` (Claude Code Remote connector) with owner `sushilg5ss`, repo `Suzu-Travels`, access `push`.
+2. `git clone --depth 1 --single-branch -b mountains https://github.com/sushilg5ss/Suzu-Travels ~/mk`. Use one clone and a generous timeout.
 3. `cd ~/mk && git config user.name "Suzu Mountain Agent" && git config user.email info@suzutravels.com`.
 
 Then read:
