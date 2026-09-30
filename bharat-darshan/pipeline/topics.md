@@ -12,7 +12,7 @@ episodes. Every Sunday, prefer a Himachal row (Suzu's home market). Add 3 fresh 
 | # | Place | State | Hook angle (verify before use) | Status |
 |---|-------|-------|--------------------------------|--------|
 | 1 | Konark Sun Temple | Odisha | ₹10 note motif; wheels are sundials; "Black Pagoda" | done 2026-09-29 (pilot) |
-| 2 | Rani ki Vav, Patan | Gujarat | On the ₹100 note; stepwell buried in silt for centuries | todo |
+| 2 | Rani ki Vav, Patan | Gujarat | On the ₹100 note; stepwell buried in silt for centuries | done 2026-09-30 |
 | 3 | Jantar Mantar, Jaipur | Rajasthan | Samrat Yantra — world's largest stone sundial; reads time to ~2 s | todo |
 | 4 | Atal Tunnel, Rohtang | Himachal | Guinness: world's longest highway tunnel above 10,000 ft (9.02 km) | todo |
 | 5 | Iron Pillar, Qutub complex | Delhi | ~1,600-year-old iron pillar that has barely rusted | todo |
