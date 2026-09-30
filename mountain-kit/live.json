@@ -1,0 +1,5 @@
+{
+ "mountains-of-india": {"id": 11831, "path": "/mountains-of-india/", "kind": "base", "label": "Mountains of India", "blurb": "Records, permits and training", "added": "2026-10-01"},
+ "highest-peaks-in-india": {"id": 11841, "path": "/mountains-of-india/highest-peaks-in-india/", "kind": "base", "label": "Highest peaks in India", "blurb": "Full list of 156 peaks", "added": "2026-10-01"},
+ "himalayan-peak-expeditions": {"id": 11846, "path": "/adventure/himalayan-peak-expeditions/", "kind": "base", "label": "Guided peak climbs", "blurb": "Friendship Peak to Deo Tibba", "added": "2026-10-01"}
+}

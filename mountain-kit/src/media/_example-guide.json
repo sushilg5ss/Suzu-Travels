@@ -1,0 +1,107 @@
+{
+ "_note": "EXAMPLE — media spec for a GUIDE / BAND / STATE page. 'hero' with 'words' (exactly 4 pairs, words <= 9 letters, the 13 s loop is tiled by the 4 scenes); 'ladder' = 3-7 peak ids from data/peaks.json shown at their true heights.",
+ "hero": {
+  "kicker": "IMF PERMITS · INDIA",
+  "words": [
+   [
+    "APPLY",
+    "EARLY."
+   ],
+   [
+    "PAY THE",
+    "PEAK FEE."
+   ],
+   [
+    "MEET YOUR",
+    "LIAISON."
+   ],
+   [
+    "THEN",
+    "CLIMB."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-35319376.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 480
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "INDIA'S 7,000 m PEAKS",
+  "title": "The seven-thousanders, side by side",
+  "peaks": [
+   "satopanth",
+   "trisul-i",
+   "nun",
+   "mamostong-kangri",
+   "saser-kangri-i",
+   "kamet",
+   "nanda-devi"
+  ],
+  "subs": {
+   "nanda-devi": "Closed since 1983"
+  },
+  "end": "48 summits of 7,000 m and more in our list"
+ }
+}

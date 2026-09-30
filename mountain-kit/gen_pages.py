@@ -4,11 +4,14 @@
     python3 gen_pages.py <slug|all>        -> out/<slug>.html   (then: python3 build.py <slug> -> out/<slug>.min.html)
 
 Every number on a page (heights, counts, first-ascent years) comes from data/peaks.json — never type one by hand.
-Pages: mountains-of-india (hub) · highest-peaks-in-india (master list) · himalayan-peak-expeditions (enquiry page, under /adventure/)
-New page kinds (peak / band / state / guide) are added here by the Mountain Page Builder agent, one function each,
-re-using the blocks below. Copy is original English; facts must trace to research/*.md or a source listed on the page.
+Base pages (functions below): mountains-of-india (hub) · highest-peaks-in-india (master list) · himalayan-peak-expeditions
+(enquiry page, under /adventure/). Every other page is DATA: src/pages/<slug>.json rendered by content_page() — see
+README.md "Page file schema". Links between pages come from live.json (what is published), so publishing a page and
+adding it to live.json is enough for the hub, list, band/state pages and siblings to link to it on their next build
+(tools/sync_plan.py turns those changes into small find/replace edits on the live pages).
+Copy is original English; facts must trace to research/pages/<slug>.md or research/*.md and to a source listed on the page.
 """
-import html, json, pathlib, random, sys, urllib.parse
+import html, json, os, pathlib, random, sys, urllib.parse
 
 KIT = pathlib.Path(__file__).resolve().parent
 P = json.loads((KIT / "data" / "peaks.json").read_text(encoding="utf-8"))
@@ -62,7 +65,65 @@ def pill(status):
     return f'<span class="szm-st {status}">{STATUS_LABEL[status]}</span>'
 
 
+# ------------------------------------------------------------------------------------------------ live pages (live.json)
+BASE = ("mountains-of-india", "highest-peaks-in-india", "himalayan-peak-expeditions")
+KIND_LABEL = {"peak": "Peak guides", "band": "Peaks by height", "state": "Peaks by state", "guide": "Permits, courses &amp; planning"}
+
+
+def live_path(slug):
+    return LIVE.get(slug, {}).get("path")
+
+
+def peak_page(pid):
+    """Path of the live page about peak <pid> (live.json entry with "peak_id": pid or pid in "peak_ids"), else None."""
+    for k, v in LIVE.items():
+        if k not in BASE and (v.get("peak_id") == pid or pid in v.get("peak_ids", [])):
+            return v["path"]
+    return None
+
+
+def peak_url(pid):
+    """A peak's own page if it is live, else its row in the master list."""
+    return peak_page(pid) or f"{LIST}#peak-{pid}"
+
+
+def peak_link(pid, text=None):
+    return f'<a href="{peak_url(pid)}">{text or e(BY[pid]["name"])}</a>'
+
+
+def children(pred=lambda slug, v: True):
+    """Live child pages (not the three base pages) matching pred, newest first (by 'added', then slug)."""
+    items = [(k, v) for k, v in LIVE.items() if k not in BASE and pred(k, v)]
+    return sorted(items, key=lambda kv: (kv[1].get("added", ""), kv[0]), reverse=True)
+
+
+def tile(v):
+    return f'<a class="szm-link" href="{v["path"]}"><span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
+
+
+def guides_block(kinds=("peak", "band", "state", "guide"), exclude=()):
+    out = []
+    for kind in kinds:
+        items = children(lambda k, v, kind=kind: v.get("kind") == kind and k not in exclude)
+        if items:
+            out.append(f'<h3 class="szm-gh">{KIND_LABEL[kind]}</h3><div class="szm-links">' + "".join(tile(v) for _, v in items) + "</div>")
+    return "".join(out)
+
+
+def band_page(b):
+    return next((v["path"] for k, v in LIVE.items() if k not in BASE and v.get("kind") == "band" and v.get("band") == b), None)
+
+
+def state_page(s):
+    return next((v["path"] for k, v in LIVE.items() if k not in BASE and v.get("kind") == "state" and v.get("state") == s), None)
+
+
+LOCAL_MEDIA = bool(os.environ.get("MK_LOCAL_MEDIA"))  # preview only: point videos at local renders (build.py refuses file:// URLs)
+
+
 def media_url(slug, fname):
+    if LOCAL_MEDIA:
+        return (KIT / "media" / slug / fname).as_uri()
     sha = MEDIA.get(slug)
     if not sha:
         raise SystemExit(f"media.json has no commit pinned for '{slug}' — run make_media.sh, push, then pin_media.py")
@@ -114,7 +175,7 @@ def ld(*objs):
 def ridge(seed, m):
     """Tiny decorative ridge for a peak card (apex height follows the peak's altitude)."""
     r = random.Random(seed)
-    top = 8 + max(0, (8600 - m)) / 5600 * 34
+    top = 10 + max(0, (8600 - m)) / 5600 * 30
     ax = r.uniform(110, 190)
     pts = [(0, 60 + r.uniform(-6, 6)), (ax * .45, 40 + r.uniform(0, 14)), (ax * .75, 30 + r.uniform(0, 10)), (ax, top), (ax + 45, 28 + r.uniform(0, 12)), (ax + 85, 44 + r.uniform(0, 10)), (300, 50 + r.uniform(-6, 8))]
     d = "M0 78 " + " ".join(f"L{x:.0f} {y:.0f}" for x, y in pts) + " L300 78Z"
@@ -124,9 +185,11 @@ def ridge(seed, m):
 
 def peak_card(p, badge, extra=""):
     fa = f"First ascent <b>{p['fa']}</b>" if p["fa"] else "First ascent <b>not recorded</b>"
+    lp = peak_page(p["id"])
+    go = f'<a href="{lp}">Read the guide →</a>' if lp else f'<a href="{LIST}#peak-{p["id"]}">In the full list →</a>'
     return (f'<li class="szm-peak"><div class="top"><span class="rk">{badge}</span><div class="h num">{n(p["m"])} m<small>{n(p["ft"])} ft</small></div>{ridge(p["id"], p["m"])}</div>'
             f'<div class="body"><h3>{e(p["name"])}</h3><div class="meta">{e(p["where"])}</div><div class="meta">{fa} · {pill(p["status"])}</div>'
-            f'{extra}<div class="go"><a href="{LIST}#peak-{p["id"]}">In the full list →</a></div></div></li>')
+            f'{extra}<div class="go">{go}</div></div></li>')
 
 
 def quote_block(title, text, wa_text, second=None):
@@ -208,22 +271,22 @@ def hub():
     ]
     # ladder rows
     bex = {
-        "8000": f"{link(LIST + '#peak-kangchenjunga', 'Kangchenjunga')} — India's only 8,000 m summit. Sacred in Sikkim and closed to climbing from the Indian side.",
-        "7000": f"Expedition giants such as {link(LIST + '#peak-kamet', 'Kamet')}, Saser Kangri, Nun and Trisul. Plan on three to five weeks, prior high-altitude experience and an IMF permit.",
-        "6000": f"The big step up: Deo Tibba, Reo Purgyil, Shivling, Changabang. A few are non-technical, like {link(LIST + '#peak-mount-yunam', 'Yunam')}; most need rope work.",
-        "5000": f"First real summits: {link(LIST + '#peak-friendship-peak', 'Friendship Peak')}, Ladakhi, Hanuman Tibba, Kanamo. Snow slopes, ice axe and crampons — usually with a guide.",
+        "8000": f"{peak_link('kangchenjunga', 'Kangchenjunga')} — India's only 8,000 m summit. Sacred in Sikkim and closed to climbing from the Indian side.",
+        "7000": f"Expedition giants such as {peak_link('kamet', 'Kamet')}, Saser Kangri, Nun and Trisul. Plan on three to five weeks, prior high-altitude experience and an IMF permit.",
+        "6000": f"The big step up: Deo Tibba, Reo Purgyil, Shivling, Changabang. A few are non-technical, like {peak_link('mount-yunam', 'Yunam')}; most need rope work.",
+        "5000": f"First real summits: {peak_link('friendship-peak', 'Friendship Peak')}, Ladakhi, Hanuman Tibba, Kanamo. Snow slopes, ice axe and crampons — usually with a guide.",
         "4000": "High trekking tops such as Chanshal, Patalsu and Pangarchulla — long days, no ropes.",
-        "3000": f"Hill summits and trek tops: {link(LIST + '#peak-churdhar', 'Churdhar')}, Kedarkantha, Chandrashila, Sandakphu.",
+        "3000": f"Hill summits and trek tops: {peak_link('churdhar', 'Churdhar')}, Kedarkantha, Chandrashila, Sandakphu.",
     }
     mx = max(BB.values())
     rows = "".join(
         f'<li><div class="b">{BAND_LABEL[b]}<small>{BB[b]} peak{"s" if BB[b] != 1 else ""}</small></div>'
-        f'<div><div class="bar"><i style="width:{max(3, round(BB[b] / mx * 100))}%"></i></div><div class="d">{bex[b]} {link(LIST + "#band-" + b, "See the list →")}</div></div></li>'
+        f'<div><div class="bar"><i style="width:{max(3, round(BB[b] / mx * 100))}%"></i></div><div class="d">{bex[b]} {link(band_page(b) or LIST + "#band-" + b, "See the list →")}</div></div></li>'
         for b in ["8000", "7000", "6000", "5000", "4000", "3000"])
     top_cards = "".join(peak_card(p, f"#{p['rank']}", f'<p class="meta">{e(p["notable"])}</p>' if p["notable"] else "") for p in TOP10)
     state_notes = {
         "ladakh": "Stands on the Siachen ground-position line, a military zone; the highest summit fully under Indian control is Saser Kangri I, " + hm("saser-kangri-i") + ".",
-        "jammu-kashmir": "Nun sits on the J&K–Ladakh boundary above the Suru valley.",
+        "jammu-kashmir": "Sits on the J&amp;K–Ladakh boundary above the Suru valley.",
         "arunachal-pradesh": "Heights quoted from 7,042 to 7,090 m; first climbed in late 2025.",
         "sikkim": "Sacred: climbing it from Sikkim has been banned since 2001.",
         "uttarakhand": "Closed since 1983 — the highest peak wholly inside India.",
@@ -231,7 +294,7 @@ def hub():
         "west-bengal": "Trek summit on the Singalila ridge with views of Kangchenjunga.",
     }
     tiles = "".join(
-        f'<a class="szm-state" href="{LIST}#state-{s}"><span class="n">{e(STATE_NAME[s])}</span><span class="h num">{n(STATE_HI[s]["m"])} m</span>'
+        f'<a class="szm-state" href="{state_page(s) or LIST + "#state-" + s}"><span class="n">{e(STATE_NAME[s])}</span><span class="h num">{n(STATE_HI[s]["m"])} m</span>'
         f'<span class="p"><b>{e(STATE_HI[s]["name"])}</b> — {state_notes[s]}</span><span class="c">{BS[s]} peaks in our list →</span></a>'
         for s in STATE_ORDER)
 
@@ -286,6 +349,9 @@ def hub():
     ]
     inst_rows = "".join(f"<tr><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td>{d}</td></tr>" for a, b, c, d in insts)
     watxt = "Hi Suzu Travels, I want to plan a guided peak climb in Himachal. Peak: ___ , dates: ___ , people: ___"
+    hub_guides = guides_block()
+    if hub_guides:
+        hub_guides += '<h3 class="szm-gh">More from Suzu Travels</h3>'
     body = f'''
 <section class="szm-hero">{hero_video("mountains-of-india", "mountains-hero", "Climbers on Himalayan snow slopes, with an altitude read-out rising from 3,000 m to 8,586 m")}
 <div class="szm-hero-in"><span class="k">Mountains of India · 3,000 m to {n(kc['m'])} m</span>
@@ -344,7 +410,7 @@ def hub():
 <p class="szm-note">Fees and batch dates change every season — apply directly on each institute's official site.</p></section>
 <section class="szm-sec szm-cv" id="plan">{quote_block("Want to climb one? We'll plan it from Himachal", f"Suzu Travels is an HP Tourism-registered travel agent based in Himachal. For guided climbs, from Friendship Peak ({hm('friendship-peak')}) to Deo Tibba ({hm('deo-tibba')}), we pair you with registered local mountaineering outfitters and certified guides. Permits, hotels, transfers and acclimatisation days all go into one plan and one quote.", watxt, (EXP, "See guided peak climbs"))}</section>
 <section class="szm-sec szm-cv" id="faq"><span class="k">FAQ</span><h2>Questions people ask about India's mountains</h2>{faq(faqs)}</section>
-<section class="szm-sec szm-cv" id="more"><h2>Keep exploring</h2><div class="szm-links">
+<section class="szm-sec szm-cv" id="more"><h2>Keep exploring</h2>{hub_guides}<div class="szm-links">
 <a class="szm-link" href="{LIST}"><span class="n">Highest peaks in India</span><span class="c">Full list of {TOTAL} peaks with filters</span></a>
 <a class="szm-link" href="{EXP}"><span class="n">Guided peak climbs</span><span class="c">Friendship Peak, Yunam, Deo Tibba &amp; more</span></a>
 <a class="szm-link" href="/adventure/"><span class="n">Adventure in Himachal</span><span class="c">Paragliding, rafting, snow and more</span></a>
@@ -355,7 +421,7 @@ def hub():
 <p class="szm-note">Heights follow the most-cited survey figure; alternate heights are listed in the downloadable dataset. Photos in the video are free-licence stock and do not show a named peak unless the caption says so.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Mountains of India: Peaks, Permits & Mountaineering Guide", "url": "https://suzutravels.com" + HUB, "dateModified": "2026-10-01", "inLanguage": "en",
-         "about": [{"@type": "Mountain", "name": p["name"], "url": f"https://suzutravels.com{LIST}#peak-{p['id']}"} for p in TOP10],
+         "about": [{"@type": "Mountain", "name": p["name"], "url": f"https://suzutravels.com{peak_url(p['id'])}"} for p in TOP10],
          "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961"}},
         {"@type": "ItemList", "name": "The 10 highest mountains in India", "itemListOrder": "https://schema.org/ItemListOrderDescending", "numberOfItems": len(TOP10),
          "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "Mountain", "name": p["name"], "description": f"{n(p['m'])} m ({n(p['ft'])} ft), {p['where']}"}} for i, p in enumerate(TOP10)]},
@@ -382,15 +448,15 @@ def list_page():
     ]
     rows = []
     for i, p in enumerate(P):
-        q = " ".join([p["name"], *p["alt"], p["state_label"], p["range"], p["where"]]).lower()
+        alt = f' data-alt="{e(" ".join(p["alt"]).lower())}"' if p["alt"] else ""
         fa = str(p["fa"]) if p["fa"] else "—"
         note = p["notable"] or p["status_note"]
         note = (note[:170].rsplit(" ", 1)[0] + "…") if len(note) > 175 else note
         rows.append(
-            f'<tr id="peak-{p["id"]}" data-band="{p["band"]}" data-state="{p["state"]}" data-status="{p["status"]}" data-m="{p["m"]}" data-fa="{p["fa"] or ""}" data-name="{e(p["name"].lower())}" data-q="{e(q)}">'
-            f'<td class="rk">{i + 1}</td><td class="pk"><span class="pn">{e(p["name"])}</span>{"<small>" + e(note) + "</small>" if note else ""}</td>'
+            f'<tr id="peak-{p["id"]}" data-band="{p["band"]}" data-state="{p["state"]}" data-status="{p["status"]}" data-m="{p["m"]}" data-fa="{p["fa"] or ""}" data-name="{e(p["name"].lower())}"{alt}>'
+            f'<td class="rk">{i + 1}</td><td class="pk"><span class="pn">{peak_link(p["id"]) if peak_page(p["id"]) else e(p["name"])}</span>{"<small>" + e(note) + "</small>" if note else ""}</td>'
             f'<td class="ht n">{n(p["m"])} m<span class="ft">{n(p["ft"])} ft</span></td><td class="sta">{e(p["state_label"])}</td><td class="rg">{e(p["range"])}</td>'
-            f'<td class="fa n">{fa}</td><td class="stt">{pill(p["status"])}</td><td class="gr">{GRADE_LABEL[p["grade"]]}</td></tr>')
+            f'<td class="fy n">{fa}</td><td class="stt">{pill(p["status"])}</td><td class="gr">{GRADE_LABEL[p["grade"]]}</td></tr>')
     bands = [("", "All")] + [(b, BAND_LABEL[b].replace("–", "–")) for b in ["8000", "7000", "6000", "5000", "4000", "3000"]]
     states = [("", "All")] + [(s, STATE_NAME[s]) for s in STATE_ORDER]
     stats = [("", "All")] + [(k, STATUS_LABEL[k]) for k in ["climbed", "unclimbed", "closed", "restricted"]]
@@ -398,11 +464,13 @@ def list_page():
     def fb(k, opts):
         return f'<div class="szm-filt" role="group" aria-label="{k}"><b>{k}</b>' + "".join(
             f'<button type="button" data-k="{k}" data-v="{v}" aria-pressed="{"true" if v == "" else "false"}">{t}</button>' for v, t in opts) + "</div>"
+    def gl(path):
+        return f" · <a href='{path}'>Guide</a>" if path else ""
     band_rows = "".join(
-        f"<tr><td><b>{BAND_LABEL[b]}</b></td><td class='n'>{BB[b]}</td><td>{e(max((p for p in P if p['band'] == b), key=lambda p: p['m'])['name'])} ({n(max(p['m'] for p in P if p['band'] == b))} m)</td><td><a href='#band-{b}'>Show</a></td></tr>"
+        f"<tr><td><b>{BAND_LABEL[b]}</b></td><td class='n'>{BB[b]}</td><td>{e(max((p for p in P if p['band'] == b), key=lambda p: p['m'])['name'])} ({n(max(p['m'] for p in P if p['band'] == b))} m)</td><td><a href='#band-{b}'>Show</a>{gl(band_page(b))}</td></tr>"
         for b in ["8000", "7000", "6000", "5000", "4000", "3000"])
     state_rows = "".join(
-        f"<tr><td><b>{e(STATE_NAME[s])}</b></td><td class='n'>{BS[s]}</td><td>{e(STATE_HI[s]['name'])} ({n(STATE_HI[s]['m'])} m)</td><td><a href='#state-{s}'>Show</a></td></tr>" for s in STATE_ORDER)
+        f"<tr><td><b>{e(STATE_NAME[s])}</b></td><td class='n'>{BS[s]}</td><td>{e(STATE_HI[s]['name'])} ({n(STATE_HI[s]['m'])} m)</td><td><a href='#state-{s}'>Show</a>{gl(state_page(s))}</td></tr>" for s in STATE_ORDER)
     top_ol = "".join(f"<li><b>{e(p['name'])}</b> — {n(p['m'])} m ({n(p['ft'])} ft), {e(p['state_label'])}</li>" for p in TOP10)
     csv_url = data_url("india-peaks.csv")
     watxt = "Hi Suzu Travels, I saw your list of Indian peaks and want to plan a climb. Peak: ___ , dates: ___ , people: ___"
@@ -435,7 +503,7 @@ def list_page():
 <p class="szm-note">Free to reuse under CC BY 4.0 — please credit "Suzu Travels, suzutravels.com". Spotted an error? Tell us on WhatsApp and we will fix it.</p>
 <h3 style="margin-top:22px">Main sources</h3>{sources(SRC_CORE[5:10] + [("American Alpine Journal", "https://publications.americanalpineclub.org/"), ("The Himalayan Club — Himalayan Journal", "https://www.himalayanclub.org/")])}</section>
 <section class="szm-sec szm-cv">{quote_block("Found a peak you want to climb?", f"We plan guided climbs of Himachal peaks with registered local outfitters and certified guides — permits, stays, transfers and acclimatisation in one quote.", watxt, (EXP, "See guided peak climbs"))}</section>
-<section class="szm-sec szm-cv" id="faq"><span class="k">FAQ</span><h2>About this list</h2>{faq(faqs)}
+<section class="szm-sec szm-cv" id="faq"><span class="k">FAQ</span><h2>About this list</h2>{faq(faqs)}{guides_block(("band", "state", "guide"))}
 <div class="szm-links" style="margin-top:30px"><a class="szm-link" href="{HUB}"><span class="n">Mountains of India guide</span><span class="c">Records, permits, training</span></a><a class="szm-link" href="{EXP}"><span class="n">Guided peak climbs</span><span class="c">From Friendship Peak to Deo Tibba</span></a><a class="szm-link" href="/adventure/"><span class="n">Adventure in Himachal</span><span class="c">All activities</span></a></div></section>'''
     schema = ld(
         {"@type": "Dataset", "name": "Highest peaks in India (Suzu Travels mountain dataset)", "description": f"{TOTAL} notable peaks in India from 3,000 m to 8,586 m with height (m/ft), state, range, first ascent, climbing status and grade.",
@@ -444,7 +512,7 @@ def list_page():
          "keywords": ["mountains of India", "highest peaks in India", "Himalaya", "mountaineering"],
          "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": csv_url}]},
         {"@type": "ItemList", "name": "Highest mountains in India", "itemListOrder": "https://schema.org/ItemListOrderDescending", "numberOfItems": 20,
-         "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"https://suzutravels.com{LIST}#peak-{p['id']}", "name": f"{p['name']} ({n(p['m'])} m)"} for i, p in enumerate(P[:20])]},
+         "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"https://suzutravels.com{peak_url(p['id'])}", "name": f"{p['name']} ({n(p['m'])} m)"} for i, p in enumerate(P[:20])]},
         faq_ld(faqs))
     return page(body + schema)
 
@@ -486,11 +554,13 @@ def expeditions():
     cards = []
     for pid, days, start, level, what, season in CLIMBS:
         p = pk(pid)
+        lp = peak_page(pid)
+        facts_link = f'<a href="{lp}">Route guide</a>' if lp else f'<a href="{LIST}#peak-{pid}">Peak facts</a>'
         cards.append(
             f'<li class="szm-peak"><div class="top"><span class="rk">{level}</span><div class="h num">{n(p["m"])} m<small>{n(p["ft"])} ft</small></div>{ridge(pid, p["m"])}</div>'
             f'<div class="body"><h3>{e(p["name"])}</h3><div class="meta"><b>Duration:</b> {days}</div><div class="meta"><b>Route:</b> {e(start)}</div>'
             f'<div class="meta"><b>Season:</b> {season}</div><p class="meta">{what}</p>'
-            f'<div class="go"><a style="color:#1a7f37!important" href="{wa("Hi Suzu Travels, I want a quote for a guided climb of " + p["name"] + ". Dates: ___ , people: ___ , nationality: ___")}" target="_blank" rel="noopener">Get Quote →</a> · <a href="{LIST}#peak-{pid}">Peak facts</a></div></div></li>')
+            f'<div class="go"><a style="color:#1a7f37!important" href="{wa("Hi Suzu Travels, I want a quote for a guided climb of " + p["name"] + ". Dates: ___ , people: ___ , nationality: ___")}" target="_blank" rel="noopener">Get Quote →</a> · {facts_link}</div></div></li>')
     watxt = "Hi Suzu Travels, I want to plan a guided peak climb in Himachal. Peak: ___ , dates: ___ , people: ___ , nationality: ___"
     body = f'''
 <section class="szm-hero">{hero_video("himalayan-peak-expeditions", "expeditions-hero", "Guided climbers roped up on snow, a tent at high camp and a summit ridge")}
@@ -536,7 +606,7 @@ def expeditions():
 <a class="szm-link" href="/spiti-dmc/"><span class="n">Spiti Valley</span><span class="c">Kaza, Kibber and the high villages</span></a></div></section>
 <section class="szm-sec szm-cv">{quote_block("Tell us your peak and your dates", "We reply with the right peak for your experience, a day-by-day plan and one quote — guides, permits, stay and transfers included.", watxt)}</section>
 <section class="szm-sec szm-cv" id="faq"><span class="k">FAQ</span><h2>Peak climbing in Himachal: your questions</h2>{faq(faqs)}</section>
-<section class="szm-sec szm-cv" id="more"><h2>Learn about the mountains first</h2><div class="szm-links">
+<section class="szm-sec szm-cv" id="more"><h2>Learn about the mountains first</h2><div class="szm-links">{"".join(tile(v) for _, v in children(lambda k, v: v.get("commercial")))}
 <a class="szm-link" href="{HUB}"><span class="n">Mountains of India</span><span class="c">Records, permits and training</span></a>
 <a class="szm-link" href="{LIST}"><span class="n">Highest peaks in India</span><span class="c">Full list of {TOTAL} peaks</span></a>
 <a class="szm-link" href="/adventure/"><span class="n">Adventure in Himachal</span><span class="c">All activities</span></a>
@@ -549,7 +619,196 @@ def expeditions():
     return page(body + schema)
 
 
+
+# ------------------------------------------------------------------------------------------------ GENERIC CONTENT PAGE (agents)
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MLABEL = {"good": "Best", "maybe": "Possible", "no": "Closed / not advised"}
+
+
+def data_table(rows_):
+    out = []
+    for i, p in enumerate(rows_):
+        fa = str(p["fa"]) if p["fa"] else "—"
+        note = p["notable"] or p["status_note"]
+        note = (note[:170].rsplit(" ", 1)[0] + "…") if len(note) > 175 else note
+        alt = f' data-alt="{e(" ".join(p["alt"]).lower())}"' if p["alt"] else ""
+        out.append(f'<tr id="peak-{p["id"]}" data-band="{p["band"]}" data-state="{p["state"]}" data-status="{p["status"]}" data-m="{p["m"]}" data-fa="{p["fa"] or ""}" data-name="{e(p["name"].lower())}"{alt}>'
+                   f'<td class="rk">{i + 1}</td><td class="pk"><span class="pn">{peak_link(p["id"])}</span>{"<small>" + e(note) + "</small>" if note else ""}</td>'
+                   f'<td class="ht n">{n(p["m"])} m<span class="ft">{n(p["ft"])} ft</span></td><td class="sta">{e(p["state_label"])}</td><td class="rg">{e(p["range"])}</td>'
+                   f'<td class="fy n">{fa}</td><td class="stt">{pill(p["status"])}</td><td class="gr">{GRADE_LABEL[p["grade"]]}</td></tr>')
+    return ('<div class="szm-tools"><input id="szm-q" type="search" placeholder="Search these peaks…" aria-label="Search peaks"></div>'
+            f'<p class="szm-count" id="szm-count" aria-live="polite">Showing {len(rows_)} of {len(rows_)} peaks</p>'
+            '<div class="szm-scroll"><table class="szm-tbl szm-data"><thead><tr><th>#</th><th data-sort="name"><button type="button">Peak</button></th>'
+            '<th data-sort="m" aria-sort="descending"><button type="button">Height</button></th><th>State</th><th>Range</th>'
+            '<th data-sort="fa"><button type="button">First ascent</button></th><th>Status</th><th>Grade</th></tr></thead><tbody>' + "".join(out) + "</tbody></table></div>")
+
+
+def nearby(p, k=4):
+    cand = [q for q in P if q["id"] != p["id"] and q["state"] == p["state"] and q["status"] != "restricted"]
+    cand.sort(key=lambda q: abs(q["m"] - p["m"]))
+    return cand[:k]
+
+
+def has_media(slug, name):
+    """True when media/<slug>/<name>.mp4 exists in the kit AND the slug has a pinned commit in media.json."""
+    return (LOCAL_MEDIA or bool(MEDIA.get(slug))) and (KIT / "media" / slug / f"{name}.mp4").exists()
+
+
+def strip_tags(x):
+    import re
+    return html.unescape(re.sub(r"<[^>]+>", "", x))
+
+
+def clip(x, k=300):
+    x = strip_tags(x)
+    return x if len(x) <= k else x[:k].rsplit(" ", 1)[0] + "…"
+
+
+def related(slug, c, k=4):
+    """Up to k live sibling pages: same state first, then same kind (newest first)."""
+    st = c.get("state") or (BY[c["peak_id"]]["state"] if c.get("peak_id") in BY else None)
+    same_state = children(lambda s_, v: s_ != slug and st and (v.get("state") == st))
+    same_kind = children(lambda s_, v: s_ != slug and v.get("kind") == c.get("kind") and (s_, v) not in same_state)
+    return (same_state + same_kind)[:k]
+
+
+def content_page(slug):
+    """Generic page from src/pages/<slug>.json (kind: peak | band | state | guide). Every section is optional except the
+    header fields. Schema: README.md "Page file schema" and src/pages/_example-peak.json."""
+    c = json.loads((KIT / "src" / "pages" / f"{slug}.json").read_text(encoding="utf-8"))
+    for key in ("path", "title", "kicker", "tag", "sub", "answer"):
+        if not c.get(key):
+            raise SystemExit(f"src/pages/{slug}.json: missing '{key}'")
+    pk_ = BY.get(c.get("peak_id", ""))
+    path = c["path"]
+    commercial = bool(c.get("commercial"))
+    short = c["title"].split(":")[0].split(" (")[0]
+    wa_text = c.get("wa") or (f"Hi Suzu Travels, I read your {short} page and want to plan this climb. Dates: ___ , people: ___ , nationality: ___" if commercial
+                              else f"Hi Suzu Travels, I read your {short} page and want to plan a guided climb in Himachal. Dates: ___ , people: ___")
+    sec, navi = [], []
+
+    def add(sid, label, html_):
+        sec.append(f'<section class="szm-sec{" alt" if len(sec) % 2 else ""}" id="{sid}">{html_}</section>')
+        navi.append((sid, label))
+    mspec = KIT / "src" / "media" / f"{slug}.json"
+    media_all = c.get("media") or (json.loads(mspec.read_text(encoding="utf-8")) if mspec.exists() else {})
+    media = {k: v for k, v in media_all.items() if has_media(slug, k)}
+    used = set()
+    chips = "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in c.get("chips", []))
+    ctas = (f'<div class="szm-btns"><a class="szm-btn gold" href="{wa(wa_text)}" target="_blank" rel="noopener">Get a quote on WhatsApp</a>'
+            f'<a class="szm-btn ghost" href="{EXP if commercial else LIST}">{"Guided peak climbs" if commercial else "All Indian peaks"}</a></div>')
+    head = (f'<span class="k">{e(c["kicker"])}</span><p class="szm-tag">{e(c["tag"])}</p><p class="szm-sub">{e(c["sub"])}</p>'
+            f'<ul class="szm-chips">{chips}</ul>{ctas}{trust()}')
+    if "hero" in media:
+        hero = f'<section class="szm-hero">{hero_video(slug, "hero", c.get("hero_alt", c["title"]))}<div class="szm-hero-in">{head}</div></section>'
+        used.add("hero")
+    else:
+        side = next((m for m in ("profile", "ladder") if m in media), None)
+        vid = lazy_video(slug, side, c.get(side + "_alt", c["title"])) if side else ""
+        if side:
+            used.add(side)
+        hero = f'<section class="szm-split"><div class="szm-split-in"><div>{head}</div><div>{vid}</div></div></section>'
+    # breadcrumb line (visible) — Mountains of India › state › page
+    crumbs = [f'<a href="{HUB}">Mountains of India</a>']
+    if pk_:
+        crumbs.append(f'<a href="{state_page(pk_["state"]) or LIST + "#state-" + pk_["state"]}">{e(pk_["state_label"])}</a>')
+    crumbs.append(e(short))
+    facts_ = c.get("facts")
+    if facts_ is None and pk_:
+        facts_ = [["Height", f"{n(pk_['m'])} m / {n(pk_['ft'])} ft"], ["State", pk_["state_label"]], ["Range", pk_["range"]],
+                  ["First ascent", str(pk_["fa"]) if pk_["fa"] else "Not recorded"], ["Status", STATUS_LABEL[pk_["status"]]], ["Grade", GRADE_LABEL[pk_["grade"]]]]
+    facts = "".join(f'<div class="szm-fact"><span class="k2">{e(a)}</span><span class="v">{e(b)}</span></div>' for a, b in (facts_ or []))
+    add("overview", "Overview", f'<p class="szm-crumbs">{" › ".join(crumbs)}</p><span class="szm-verified">Last verified {e(c.get("verified", VERIFIED))}</span><h2>{e(c.get("q", "Overview"))}</h2>'
+        f'<div class="szm-answer"><p>{c["answer"]}</p></div>' + (f'<div class="szm-facts">{facts}</div>' if facts else "") + "".join(f"<p>{x}</p>" for x in c.get("intro", [])))
+    if c.get("route"):
+        rows = "".join(f'<tr><td><b>{e(r["name"])}</b></td><td class="n">{n(r["m"])} m / {n(round(r["m"] * 3.28084))} ft</td><td>{e(r.get("note", ""))}</td></tr>' for r in c["route"])
+        txt = "".join(f"<p>{x}</p>" for x in c.get("route_text", []))
+        if "profile" in media and "profile" not in used:
+            prof = f'<div class="szm-media">{lazy_video(slug, "profile", c.get("profile_alt", "Altitude profile of the route"))}<div>{txt}</div></div>'
+            used.add("profile")
+        else:
+            prof = txt
+        add("route", "Route", f'<span class="k">Route and camps</span><h2>{e(c.get("route_h2", "Route, camps and altitudes"))}</h2>{prof}'
+            f'<div class="szm-scroll"><table class="szm-tbl"><thead><tr><th>Camp / point</th><th>Altitude</th><th>Notes</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    if c.get("itinerary"):
+        its = "".join(f"<li><b>{e(d)} · {e(t)}</b>{e(x)}</li>" for d, t, x in c["itinerary"])
+        add("itinerary", "Itinerary", f'<span class="k">Day by day</span><h2>{e(c.get("itinerary_h2", "Typical itinerary"))}</h2><ol class="szm-steps">{its}</ol>'
+            f'<p class="szm-note">Itineraries vary with the outfitter, group and weather; rest days are added when needed.</p>')
+    if c.get("difficulty"):
+        sk = "".join(f"<li><b>{e(a)}</b>{e(b)}</li>" for a, b in c.get("skills", []))
+        add("difficulty", "Difficulty", f'<span class="k">What it takes</span><h2>{e(c.get("difficulty_h2", "How hard is it?"))}</h2>' + "".join(f"<p>{x}</p>" for x in c["difficulty"])
+            + (f'<ul class="szm-steps">{sk}</ul>' if sk else ""))
+    if c.get("months"):
+        cells = "".join(f'<td class="mo {c["months"].get(m, "no")}" title="{MLABEL[c["months"].get(m, "no")]}">{m}</td>' for m in MONTHS)
+        add("season", "Season", f'<span class="k">When to go</span><h2>{e(c.get("season_h2", "Best months to climb"))}</h2>' + "".join(f"<p>{x}</p>" for x in c.get("season_text", []))
+            + f'<div class="szm-scroll"><table class="szm-tbl szm-months"><tbody><tr>{cells}</tr></tbody></table></div><p class="szm-note"><span class="mo good">Best</span> <span class="mo maybe">Possible</span> <span class="mo no">Closed / not advised</span></p>')
+    if c.get("table"):
+        flt = c["table"]
+        rows_ = [p for p in P if all(p.get(k) == v for k, v in flt.get("where", {}).items()) and flt.get("min_m", 0) <= p["m"] <= flt.get("max_m", 9999)
+                 and (not flt.get("ids") or p["id"] in flt["ids"])]
+        lad = ""
+        if "ladder" in media and "ladder" not in used:
+            lad = f'<div class="szm-media" style="margin-bottom:22px">{lazy_video(slug, "ladder", c.get("ladder_alt", "Animated chart of the peaks at their true heights"))}<div>' + "".join(f"<p>{x}</p>" for x in flt.get("text", [])) + "</div></div>"
+            used.add("ladder")
+        else:
+            lad = "".join(f"<p>{x}</p>" for x in flt.get("text", []))
+        add("list", flt.get("label", "The list"), f'<span class="k">Data</span><h2>{e(flt.get("h2", "The list"))}</h2>{lad}' + data_table(rows_))
+    if c.get("permits"):
+        add("permits", "Permits", f'<span class="k">Permits</span><h2>{e(c.get("permits_h2", "Permits and rules"))}</h2>' + "".join(f"<p>{x}</p>" for x in c["permits"]))
+    if c.get("includes"):
+        inc = "".join(f"<li>{e(x)}</li>" for x in c["includes"])
+        add("cost", "Cost", f'<span class="k">Price: Get Quote</span><h2>{e(c.get("cost_h2", "What a guided climb includes"))}</h2>' + "".join(f"<p>{x}</p>" for x in c.get("cost_text", []))
+            + f'<ul class="szm-gear">{inc}</ul>')
+    if c.get("gear"):
+        add("gear", "Gear", f'<span class="k">Kit list</span><h2>{e(c.get("gear_h2", "What to pack"))}</h2><ul class="szm-gear">' + "".join(f"<li>{e(x)}</li>" for x in c["gear"]) + "</ul>")
+    if c.get("history"):
+        add("history", "History", f'<span class="k">History</span><h2>{e(c.get("history_h2", "Climbing history"))}</h2>' + "".join(f"<p>{x}</p>" for x in c["history"]))
+    for extra in c.get("extra_sections", []):  # [{"id","label","kicker","h2","html"}] — html must be original copy
+        add(extra["id"], extra["label"], f'<span class="k">{e(extra.get("kicker", ""))}</span><h2>{e(extra["h2"])}</h2>{extra["html"]}')
+    leftover = [m for m in ("profile", "ladder") if m in media and m not in used]
+    if leftover:  # every rendered visual gets shown somewhere
+        m = leftover[0]
+        add("visual", c.get(m + "_label", "In motion"), f'<span class="k">{e(c.get(m + "_kicker", "At a glance"))}</span><h2>{e(c.get(m + "_h2", "See it in motion"))}</h2>'
+            f'<div class="szm-media">{lazy_video(slug, m, c.get(m + "_alt", c["title"]))}<div>' + "".join(f"<p>{x}</p>" for x in c.get(m + "_text", [])) + "</div></div>")
+    if pk_:
+        cards = "".join(peak_card(q, q["state_label"]) for q in nearby(pk_))
+        add("nearby", "Nearby", f'<span class="k">Also in {e(pk_["state_label"])}</span><h2>Peaks of a similar height nearby</h2><ul class="szm-peaks">{cards}</ul>')
+    q_title = c.get("quote_h2", "Plan this climb with Suzu" if commercial else "Want to stand on a Himalayan summit?")
+    q_text = c.get("quote_text", "We pair you with a registered Himachal outfitter and certified guides, sort the permits and add hotel and transfers — one plan, one quote." if commercial
+                   else f"We plan guided climbs of Himachal peaks, from Friendship Peak ({hm('friendship-peak')}) to Deo Tibba ({hm('deo-tibba')}), with registered local outfitters and certified guides — permits, stays and transfers in one quote.")
+    quote = quote_block(q_title, q_text, wa_text, (EXP, "See guided peak climbs"))
+    faqs = [tuple(x) for x in c.get("faqs", [])]
+    if faqs:
+        add("faq", "FAQ", f'<span class="k">FAQ</span><h2>{e(c.get("faq_h2", "Questions climbers ask"))}</h2>{faq(faqs)}')
+    base_links = [[HUB, "Mountains of India", "Records, permits and training"], [LIST, "Highest peaks in India", f"Full list of {TOTAL} peaks"], [EXP, "Guided peak climbs", "Friendship Peak to Deo Tibba"]]
+    links = c.get("links", base_links)
+    rel = "".join(tile(v) for _, v in related(slug, c))
+    more = ('<section class="szm-sec" id="more"><h2>Keep exploring</h2><div class="szm-links">' + rel + "".join(f'<a class="szm-link" href="{a}"><span class="n">{e(b)}</span><span class="c">{e(d)}</span></a>' for a, b, d in links)
+            + f'</div><h3 style="margin-top:30px">Sources</h3>{sources([tuple(x) for x in c.get("sources", [])])}</section>')
+    body = hero + nav(navi[:9], wa(wa_text)) + "".join(sec) + f'<section class="szm-sec">{quote}</section>' + more
+    graph = []
+    if pk_:
+        mt = {"@type": "Mountain", "name": pk_["name"], "description": clip(c["answer"]), "url": "https://suzutravels.com" + path,
+              "containedInPlace": {"@type": "AdministrativeArea", "name": pk_["state_label"] + ", India"},
+              "additionalProperty": [{"@type": "PropertyValue", "name": "Elevation", "value": f"{pk_['m']} m"}]}
+        if pk_["fa"]:
+            mt["additionalProperty"].append({"@type": "PropertyValue", "name": "First ascent", "value": str(pk_["fa"])})
+        if c.get("sameAs"):
+            mt["sameAs"] = c["sameAs"]
+        graph.append(mt)
+    if commercial:
+        graph.append({"@type": "TouristTrip", "name": c.get("trip_name", "Guided climb of " + (pk_["name"] if pk_ else short)), "touristType": "Mountaineers",
+                      "description": clip(c["answer"]), "provider": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/"}})
+    if faqs:
+        graph.append(faq_ld(faqs))
+    return page(body + (ld(*graph) if graph else ""))
+
+
+def dynamic_pages():
+    return {f.stem: (lambda s=f.stem: content_page(s)) for f in sorted((KIT / "src" / "pages").glob("*.json")) if not f.stem.startswith("_")}
+
 PAGES = {"mountains-of-india": hub, "highest-peaks-in-india": list_page, "himalayan-peak-expeditions": expeditions}
+PAGES.update(dynamic_pages())
 
 if __name__ == "__main__":
     which = sys.argv[1] if len(sys.argv) > 1 else "all"

@@ -3,7 +3,9 @@
 
     python3 data/build_data.py
 
-Input : data/peaks.research.json (research agent output, 1 Oct 2026) + data/overrides.json (manual fixes, optional)
+Input : data/peaks.research.json (research agent output, 1 Oct 2026)
+        + data/additions.json (optional: NEW peaks, a list of objects in exactly the peaks.research.json format)
+        + data/overrides.json (optional: {"<peak name>": {field: new value, ...}} fixes, e.g. status after a closure)
 Output: data/peaks.json  (canonical, used by every page)  and  data/india-peaks.csv (public download, CC BY 4.0)
 Never type a height or first-ascent year into a page by hand — add/fix it here and rebuild.
 """
@@ -44,6 +46,8 @@ def state_of(p):
 
 def main():
     raw = json.loads((D / "peaks.research.json").read_text())
+    if (D / "additions.json").exists():
+        raw += json.loads((D / "additions.json").read_text())
     ov = json.loads((D / "overrides.json").read_text()) if (D / "overrides.json").exists() else {}
     out = []
     for p in raw:

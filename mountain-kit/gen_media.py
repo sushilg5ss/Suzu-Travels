@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 """Suzu Mountain Kit — HyperFrames composition generator.
 
-    python3 gen_media.py <composition> [<out_dir>]
+    python3 gen_media.py <mountains-hero|height-ladder|expeditions-hero|all>      section-level compositions (already rendered)
+    python3 gen_media.py peak-hero <slug>        per-page hero      <- src/media/<slug>.json  "hero"
+    python3 gen_media.py route-profile <slug>    per-page explainer <- src/media/<slug>.json  "profile"
+    python3 gen_media.py peak-ladder <slug>      per-page explainer <- src/media/<slug>.json  "ladder"
+    (src/media/<slug>.json holds the media spec; a "media" key inside src/pages/<slug>.json also works)
 
 Compositions (1920x1080, 30 fps, silent, seamless loops):
   mountains-hero      hub hero: 4 photo scenes + rolling altitude read-out 3,000 -> 8,586 m + altitude gauge + spindrift
   height-ladder       explainer: India's height ladder — named summits placed at their true heights, climber route
   expeditions-hero    /adventure/himalayan-peak-expeditions/ hero: ROPE UP / HIGH CAMP / SUMMIT DAY / HOME SAFE
-  peak-hero           per-peak hero (agents): python3 gen_media.py peak-hero <slug>   (reads data/peaks.json + media_spec in src/pages.py)
+  peak-hero           media.hero.steps -> photo hero with rolling altitude read-out (start -> summit)
+                      media.hero.words -> photo hero with 4 big two-word lines (guides: permits, courses, records …)
+  route-profile       media.profile.camps -> animated altitude profile, camp by camp
+  peak-ladder         media.ladder.peaks (3-7 ids from data/peaks.json) -> those summits at their true heights
 
-Writes <out_dir>/<composition>/index.html plus assets/ (fonts, photos). Render with make_media.sh.
-Rules: photos are free-licence (Pexels) and never captioned as a named place; text stays in the right 55% of the frame.
+Writes $MK_HF_OUT/<name>/index.html plus assets/ (fonts, photos). Render + encode with make_media.sh.
+Rules: photos are free-licence (Pexels, listed in hf/photos/CREDITS.md) and NEVER captioned as a named peak unless
+CREDITS.md says the photo shows that peak; text stays in the right 55% of the frame (the page's tagline sits on the left).
 """
-import json, os, random, shutil, sys, pathlib
+import html as _html, json, os, random, shutil, sys, pathlib
 
 KIT = pathlib.Path(__file__).resolve().parent
 HF = KIT / "hf"
@@ -97,30 +105,21 @@ def photo_scene_js(scenes, dur, xf=0.6):
     return "".join(js)
 
 
-def mountains_hero():
-    DUR = 14
-    scenes = [
-        {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": (0, 4.0), "from": {"scale": 1.0}, "to": {"scale": 1.09, "x": -30}},
-        {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": (3.4, 7.6), "from": {"y": 250}, "to": {"y": 1320}},
-        {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "mirror": True, "t": (7.0, 10.8), "from": {"scale": 1.04, "x": 30, "y": -20}, "to": {"scale": 1.13, "x": -30, "y": 30}},
-        {"img": "px-30701907.jpg", "kind": "land", "h": 1408, "t": (10.2, 14.0), "from": {"scale": 1.08, "x": -150}, "to": {"scale": 1.15, "x": -215}},
-    ]
-    vals = ["3,000", "4,000", "5,000", "6,000", "7,000", "8,000", "8,586", "3,000"]
-    caps = ["HILL SUMMITS", "HIGH PASSES &amp; SUMMITS", "TREKKING PEAKS", "EXPEDITION PEAKS", "THE SEVEN-THOUSANDERS", "ABOVE 8,000 m", "INDIA&#8217;S HIGHEST SUMMIT", "HILL SUMMITS"]
-    alts = [3000, 4000, 5000, 6000, 7000, 8000, 8586, 3000]
-    times = [None, 1.7, 3.7, 5.5, 7.3, 10.4, 11.7, 13.25]
+def photo_hero(name, scenes, vals, caps, alts, times, kicker="MOUNTAINS OF INDIA", DUR=14, gauge=(3000, 8586)):
+    """Photo scenes + rolling altitude read-out + gauge. vals/caps/alts/times: one entry per step (times[0] is None)."""
     NH, CH = 212, 50
-    GY0, GY1 = 850, 250   # gauge y for 3,000 and 8,586
+    GY0, GY1 = 850, 250   # gauge y for gauge[0] and gauge[1]
+    LO, HI = gauge
 
     def gy(a):
-        return GY0 - (a - 3000) / (8586 - 3000) * (GY0 - GY1)
+        return GY0 - (a - LO) / (HI - LO) * (GY0 - GY1)
 
     ticks = "".join(
         f'<div class="tk" style="top:{gy(a) - 1:.0f}px"></div><div class="tl" style="top:{gy(a) - 13:.0f}px">{a // 1000}k</div>'
-        for a in (3000, 4000, 5000, 6000, 7000, 8000))
-    ticks += f'<div class="tk top" style="top:{gy(8586) - 1:.0f}px"></div><div class="tl gold" style="top:{gy(8586) - 13:.0f}px">8586</div>'
+        for a in range((LO // 1000 + (1 if LO % 1000 else 0)) * 1000, HI, 1000) if HI - a > 250)
+    ticks += f'<div class="tk top" style="top:{gy(HI) - 1:.0f}px"></div><div class="tl gold" style="top:{gy(HI) - 13:.0f}px">{HI}</div>'
     snow_html, snow_js = snow_layers(DUR)
-    d = prep("mountains-hero", [s["img"] for s in scenes])
+    d = prep(name, [s["img"] for s in scenes])
     num_strip = "".join(f"<div>{v}</div>" for v in vals)
     cap_strip = "".join(f"<div>{c}</div>" for c in caps)
 
@@ -130,11 +129,11 @@ def mountains_hero():
         roll = .7 if k == len(vals) - 1 else .5
         js.append(f'tl.to("#ns",{{y:{-k * NH},duration:{roll},ease:"power3.inOut"}},{t});')
         js.append(f'tl.to("#cs",{{y:{-k * CH},duration:{roll},ease:"power3.inOut"}},{t + .06});')
-        js.append(f'tl.to("#mk",{{y:{gy(alts[k]) - gy(3000):.1f},duration:{roll + .15},ease:"power2.inOut"}},{t});')
+        js.append(f'tl.to("#mk",{{y:{gy(alts[k]) - gy(alts[0]):.1f},duration:{roll + .15},ease:"power2.inOut"}},{t});')
     # gold flash at the crown
-    js.append('tl.fromTo("#crown",{opacity:0,scaleX:0},{opacity:1,scaleX:1,duration:.5,ease:"power2.out"},11.9);')
-    js.append('tl.to("#crown",{opacity:0,duration:.4},13.1);')
-    js.append('tl.fromTo("#bar",{scaleX:0},{scaleX:1,duration:11.6,ease:"none"},.2);tl.to("#bar",{opacity:0,duration:.3},13.0);tl.set("#bar",{scaleX:0,opacity:1},13.4);')
+    js.append(f'tl.fromTo("#crown",{{opacity:0,scaleX:0}},{{opacity:1,scaleX:1,duration:.5,ease:"power2.out"}},{times[-2] + .2});')
+    js.append(f'tl.to("#crown",{{opacity:0,duration:.4}},{times[-1] - .15});')
+    js.append(f'tl.fromTo("#bar",{{scaleX:0}},{{scaleX:1,duration:{times[-1] - .6:.2f},ease:"none"}},.2);tl.to("#bar",{{opacity:0,duration:.3}},{times[-1] - .2:.2f});tl.set("#bar",{{scaleX:0,opacity:1}},{times[-1] + .2:.2f});')
 
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
@@ -159,7 +158,7 @@ def mountains_hero():
 .tk.top{{background:#f3d98f;width:22px;left:34px}}
 .tl{{position:absolute;left:-10px;width:40px;text-align:right;font-size:18px;font-weight:700;color:rgba(255,255,255,.75)}}
 .tl.gold{{color:#f3d98f;left:-26px;width:56px}}
-.mk{{position:absolute;left:26px;top:{GY0 - 12}px;width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-left:18px solid #d4a24c;filter:drop-shadow(0 0 10px rgba(212,162,76,.8))}}
+.mk{{position:absolute;left:26px;top:{gy(alts[0]) - 12:.0f}px;width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-left:18px solid #d4a24c;filter:drop-shadow(0 0 10px rgba(212,162,76,.8))}}
 </style></head><body>
 <div id="root" data-composition-id="main" data-start="0" data-duration="{DUR}" data-width="{W}" data-height="{H}">
 {"".join(photo_scene_html(i, s, DUR) for i, s in enumerate(scenes))}
@@ -167,7 +166,7 @@ def mountains_hero():
 <div class="clip" data-start="0" data-duration="{DUR}" data-track-index="11" style="position:absolute;inset:0;overflow:hidden">{snow_html}</div>
 <div class="shade clip" data-start="0" data-duration="{DUR}" data-track-index="12"></div>
 <div class="hud clip" data-start="0" data-duration="{DUR}" data-track-index="13">
-  <div class="kick">MOUNTAINS OF INDIA</div>
+  <div class="kick">{kicker}</div>
   <div style="position:relative;display:inline-block;width:640px"><div class="nwin"><div class="nstrip" id="ns">{num_strip}</div></div><div class="unit">m</div></div>
   <div class="cwin"><div class="cstrip" id="cs">{cap_strip}</div></div>
   <div class="bar" id="bar"></div>
@@ -186,11 +185,24 @@ tl.seek(0);
     return d
 
 
+def mountains_hero():
+    scenes = [
+        {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": (0, 4.0), "from": {"scale": 1.0}, "to": {"scale": 1.09, "x": -30}},
+        {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": (3.4, 7.6), "from": {"y": 250}, "to": {"y": 1320}},
+        {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "mirror": True, "t": (7.0, 10.8), "from": {"scale": 1.04, "x": 30, "y": -20}, "to": {"scale": 1.13, "x": -30, "y": 30}},
+        {"img": "px-30701907.jpg", "kind": "land", "h": 1408, "t": (10.2, 14.0), "from": {"scale": 1.08, "x": -150}, "to": {"scale": 1.15, "x": -215}},
+    ]
+    vals = ["3,000", "4,000", "5,000", "6,000", "7,000", "8,000", "8,586", "3,000"]
+    caps = ["HILL SUMMITS", "HIGH PASSES &amp; SUMMITS", "TREKKING PEAKS", "EXPEDITION PEAKS", "THE SEVEN-THOUSANDERS", "ABOVE 8,000 m", "INDIA&#8217;S HIGHEST SUMMIT", "HILL SUMMITS"]
+    alts = [3000, 4000, 5000, 6000, 7000, 8000, 8586, 3000]
+    times = [None, 1.7, 3.7, 5.5, 7.3, 10.4, 11.7, 13.25]
+    return photo_hero("mountains-hero", scenes, vals, caps, alts, times)
+
+
 # --------------------------------------------------------------------------------------------
 # Expeditions hero (commercial page)
 # --------------------------------------------------------------------------------------------
 def expeditions_hero():
-    DUR = 13
     scenes = [
         {"img": "px-32109154.jpg", "kind": "tilt", "h": 2560, "t": (0, 3.6), "from": {"y": 0}, "to": {"y": 520}},
         {"img": "px-20809686.jpg", "kind": "tilt", "h": 2560, "t": (3.0, 6.8), "from": {"y": 820, "scale": 1.0}, "to": {"y": 940, "scale": 1.06}},
@@ -198,16 +210,22 @@ def expeditions_hero():
         {"img": "px-38468355.jpg", "kind": "land", "h": 1406, "t": (9.4, 13.0), "from": {"scale": 1.1, "x": -150}, "to": {"scale": 1.16, "x": -230}},
     ]
     words = [("ROPE", "UP."), ("HIGH", "CAMP."), ("SUMMIT", "DAY."), ("HOME", "SAFE.")]
-    wt = [0.25, 3.35, 6.55, 9.75]
-    snow_html, snow_js = snow_layers(DUR, seed=11)
-    d = prep("expeditions-hero", [s["img"] for s in scenes])
+    return words_hero("expeditions-hero", scenes, words, "GUIDED PEAK CLIMBS")
+
+
+def words_hero(name, scenes, words, kicker, DUR=13, seed=11):
+    """Photo scenes + four big two-word lines (white word + gold word), one per scene. Keep each word <= 9 letters."""
+    n = len(words)
+    wt = [0.25 + i * (DUR - 0.25) / n for i in range(n)]
+    snow_html, snow_js = snow_layers(DUR, seed=seed)
+    d = prep(name, [s["img"] for s in scenes])
     wh = "".join(f'<div class="w clip" id="w{i}" data-start="0" data-duration="{DUR}" data-track-index="{20 + i}"><span>{a}</span> <b>{b}</b></div>' for i, (a, b) in enumerate(words))
     js = [photo_scene_js(scenes, DUR), snow_js]
     for i, t in enumerate(wt):
-        js.append(f'tl.fromTo("#w{i}",{{opacity:0,y:50}},{{opacity:1,y:0,duration:.6,ease:"power3.out"}},{t});')
-        js.append(f'tl.to("#w{i}",{{opacity:0,y:-36,duration:.45,ease:"power2.in"}},{t + 2.6});')
-    js.append('tl.fromTo("#kick",{opacity:0},{opacity:1,duration:.6},.1);tl.to("#kick",{opacity:0,duration:.4},12.4);')
-    js.append('tl.fromTo("#bar",{scaleX:0},{scaleX:1,duration:12.1,ease:"none"},.2);tl.to("#bar",{opacity:0,duration:.3},12.4);')
+        js.append(f'tl.fromTo("#w{i}",{{opacity:0,y:50}},{{opacity:1,y:0,duration:.6,ease:"power3.out"}},{t:.2f});')
+        js.append(f'tl.to("#w{i}",{{opacity:0,y:-36,duration:.45,ease:"power2.in"}},{t + 2.6:.2f});')
+    js.append(f'tl.fromTo("#kick",{{opacity:0}},{{opacity:1,duration:.6}},.1);tl.to("#kick",{{opacity:0,duration:.4}},{DUR - .6:.2f});')
+    js.append(f'tl.fromTo("#bar",{{scaleX:0}},{{scaleX:1,duration:{DUR - .9:.2f},ease:"none"}},.2);tl.to("#bar",{{opacity:0,duration:.3}},{DUR - .6:.2f});')
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
 <script src="{GSAP}"></script>
@@ -224,7 +242,7 @@ def expeditions_hero():
 {"".join(photo_scene_html(i, s, DUR) for i, s in enumerate(scenes))}
 <div class="clip" data-start="0" data-duration="{DUR}" data-track-index="11" style="position:absolute;inset:0;overflow:hidden">{snow_html}</div>
 <div class="shade clip" data-start="0" data-duration="{DUR}" data-track-index="12"></div>
-<div id="kick" class="kick clip" data-start="0" data-duration="{DUR}" data-track-index="13">GUIDED PEAK CLIMBS</div>
+<div id="kick" class="kick clip" data-start="0" data-duration="{DUR}" data-track-index="13">{kicker}</div>
 {wh}
 <div id="bar" class="bar clip" data-start="0" data-duration="{DUR}" data-track-index="30"></div>
 </div>
@@ -242,75 +260,94 @@ tl.seek(0);
 # --------------------------------------------------------------------------------------------
 # Height ladder explainer (vector, no photos)
 # --------------------------------------------------------------------------------------------
-LADDER = [  # name, height, sub-label, x position
-    ("Churdhar", 3647, "Himachal", 330),
-    ("Friendship Peak", 5289, "Himachal", 560),
-    ("Deo Tibba", 6001, "Himachal", 790),
-    ("Reo Purgyil", 6816, "Himachal&#8217;s highest", 1020),
-    ("Kamet", 7756, "Uttarakhand", 1250),
-    ("Nanda Devi", 7816, "Highest wholly in India", 1480),
-    ("Kangchenjunga", 8586, "India&#8217;s highest", 1710),
+LADDER = [  # name, height, sub-label   (hub composition; heights match data/peaks.json)
+    ("Churdhar", 3647, "Himachal"),
+    ("Friendship Peak", 5289, "Himachal"),
+    ("Deo Tibba", 6001, "Himachal"),
+    ("Reo Purgyil", 6816, "Himachal&#8217;s highest"),
+    ("Kamet", 7756, "Uttarakhand"),
+    ("Nanda Devi", 7816, "Highest wholly in India"),
+    ("Kangchenjunga", 8586, "India&#8217;s highest"),
 ]
 
 
 def height_ladder():
-    DUR = 16
-    Y0, Y1 = 960, 190   # y for 2,500 m and 8,800 m
+    n_peaks = len(json.loads((KIT / "data" / "peaks.json").read_text(encoding="utf-8")))
+    return ladder_comp("height-ladder", LADDER, "INDIA&#8217;S HEIGHT LADDER", "From hill summits to the 8,586 m crown",
+                       f"{n_peaks} peaks · heights · first ascents · climbing status", "suzutravels.com/mountains-of-india", lo=2500, hi=8800)
+
+
+def ladder_comp(name, items, kicker, title, end_a, end_b, DUR=16, lo=None, hi=None):
+    """items: [(name, height_m, sub_label)], 3-7 of them; drawn left->right in ascending height at their true altitudes.
+    The scale is fitted to the heights (lowest ~24% up, highest ~93% up, at least 2,000 m of scale) unless lo/hi are given."""
+    items = sorted(items, key=lambda t: t[1])
+    n = len(items)
+    ms = [m for _, m, _ in items]
+    if lo is None or hi is None:
+        span = max((max(ms) - min(ms)) / 0.69, 2000)
+        lo = int((min(ms) - 0.24 * span) // 100 * 100)
+        hi = int(lo + span + 99) // 100 * 100
+    span = hi - lo
+    Y0, Y1 = 960, 190
 
     def y(a):
-        return Y0 - (a - 2500) / (8800 - 2500) * (Y0 - Y1)
-
+        return Y0 - (a - lo) / (hi - lo) * (Y0 - Y1)
+    xs = [330 + (1710 - 330) * i / (n - 1) for i in range(n)] if n > 1 else [1020]
     # ridge profile: start low left, summits at named heights, saddles between them
-    pts = [(-20, y(2600)), (150, y(3000))]
+    pts = [(-20, y(lo + .016 * span)), (150, y(lo + .08 * span))]
     prev = None
-    for name, a, st, x in LADDER:
+    for (nm, a, st), x in zip(items, xs):
         if prev:
             px, pa = prev
-            sad = min(pa, a) - (380 if a < 6000 else 620)
-            pts.append(((px + x) / 2, y(max(2700, sad))))
+            sad = min(pa, a) - (.06 if (a - lo) / span < .55 else .1) * span
+            pts.append(((px + x) / 2, y(max(lo + .03 * span, sad))))
         pts.append((x, y(a)))
         prev = (x, a)
-    pts += [(1760, y(6100)), (1940, y(5200)), (1940, 1100), (-20, 1100)]
+    pts += [(xs[-1] + 50, y(ms[-1] - .39 * span)), (1940, y(ms[-1] - .53 * span)), (1940, 1100), (-20, 1100)]
     d_ridge = "M" + " L".join(f"{px:.0f} {py:.0f}" for px, py in pts) + " Z"
-    # snow caps: small polygons at each summit above 5,000 m
+    # snow caps on the upper summits
     caps = []
-    for name, a, st, x in LADDER:
-        if a >= 5000:
+    for (nm, a, st), x in zip(items, xs):
+        fr = (a - lo) / span
+        if fr > .38:
             sy = y(a)
-            k = 26 + (a - 5000) / 40
+            k = 26 + (fr - .38) * 150
             caps.append(f'<path d="M{x - k:.0f} {sy + k * .9:.0f} L{x:.0f} {sy:.0f} L{x + k:.0f} {sy + k * .9:.0f} L{x + k * .45:.0f} {sy + k * .72:.0f} L{x + k * .1:.0f} {sy + k * .95:.0f} L{x - k * .35:.0f} {sy + k * .7:.0f} Z" fill="#eef4f8"/>')
+    gstep = 1000 if span > 3500 else 500
     grid = ""
-    for a in (3000, 4000, 5000, 6000, 7000, 8000):
+    for a in range((lo // gstep + 1) * gstep, hi, gstep):
         grid += f'<div class="gl" style="top:{y(a):.0f}px"></div><div class="gt" style="top:{y(a) - 30:.0f}px">{a:,} m</div>'
     markers, js = "", []
-    route = [(150, y(3000))] + [(x, y(a)) for _, a, _, x in LADDER]
-    t0, step = 4.2, 1.05
-    for i, (name, a, st, x) in enumerate(LADDER):
+    route = [(150, y(lo + .08 * span))] + [(x, y(a)) for (_, a, _), x in zip(items, xs)]
+    t0 = 4.2
+    step = min(1.3, 6.3 / max(1, n - 1))
+    for i, ((nm, a, st), x) in enumerate(zip(items, xs)):
         my = y(a)
-        lw = 300 if a == 8586 else 226
-        lab = f'left:{x - lw // 2}px;top:{my + 24:.0f}px;width:{lw}px'
-        big = " big" if a == 8586 else ""
-        markers += (f'<div class="dot{big}" id="d{i}" style="left:{x - 11}px;top:{my - 11}px"></div>'
-                    f'<div class="lab{big}" id="l{i}" style="{lab}"><div class="h">{a:,} m</div><div class="n">{name}</div><div class="s">{st}</div></div>')
+        top_ = i == n - 1
+        lw = 226
+        lab = f'left:{x - lw // 2:.0f}px;top:{my + 24:.0f}px;width:{lw}px'
+        big = " big" if top_ else ""
+        markers += (f'<div class="dot{big}" id="d{i}" style="left:{x - 11:.0f}px;top:{my - 11:.0f}px"></div>'
+                    f'<div class="lab{big}" id="l{i}" style="{lab}"><div class="h">{a:,} m</div><div class="n">{nm}</div><div class="s">{st}</div></div>')
         t = t0 + i * step
-        js.append(f'tl.fromTo("#d{i}",{{scale:0,opacity:0}},{{scale:1,opacity:1,duration:.35,ease:"back.out(2.2)"}},{t});')
-        js.append(f'tl.fromTo("#l{i}",{{opacity:0,y:14}},{{opacity:1,y:0,duration:.4,ease:"power2.out"}},{t + .08});')
-    # climber moving along route (piecewise)
-    js.append(f'tl.set("#cl",{{x:{route[0][0] - 9},y:{route[0][1] - 9},opacity:0}},0);tl.to("#cl",{{opacity:1,duration:.3}},{t0 - .7});')
+        js.append(f'tl.fromTo("#d{i}",{{scale:0,opacity:0}},{{scale:1,opacity:1,duration:.35,ease:"back.out(2.2)"}},{t:.2f});')
+        js.append(f'tl.fromTo("#l{i}",{{opacity:0,y:14}},{{opacity:1,y:0,duration:.4,ease:"power2.out"}},{t + .08:.2f});')
+    # climber moving along the route (piecewise)
+    js.append(f'tl.set("#cl",{{x:{route[0][0] - 9:.0f},y:{route[0][1] - 9:.0f},opacity:0}},0);tl.to("#cl",{{opacity:1,duration:.3}},{t0 - .7:.2f});')
     for i in range(1, len(route)):
         x, yy = route[i]
-        js.append(f'tl.to("#cl",{{x:{x - 9:.0f},y:{yy - 9:.0f},duration:{step - .05 if i > 1 else .6},ease:"power1.inOut"}},{t0 - .65 + (i - 1) * step if i > 1 else t0 - .65});')
-    # route line reveal (scaleX of clipped container) — draw via polyline dash
+        js.append(f'tl.to("#cl",{{x:{x - 9:.0f},y:{yy - 9:.0f},duration:{step - .05 if i > 1 else .6:.2f},ease:"power1.inOut"}},{t0 - .65 + (i - 1) * step if i > 1 else t0 - .65:.2f});')
     poly = " ".join(f"{px:.0f},{py:.0f}" for px, py in route)
     total = sum(((route[i][0] - route[i - 1][0]) ** 2 + (route[i][1] - route[i - 1][1]) ** 2) ** .5 for i in range(1, len(route)))
-    js.append(f'tl.fromTo("#rline",{{strokeDashoffset:{total:.0f}}},{{strokeDashoffset:0,duration:{step * (len(route) - 1):.2f},ease:"none"}},{t0 - .65});')
-    tend = t0 + (len(LADDER) - 1) * step + .6
+    js.append(f'tl.fromTo("#rline",{{strokeDashoffset:{total:.0f}}},{{strokeDashoffset:0,duration:{step * (len(route) - 1):.2f},ease:"none"}},{t0 - .65:.2f});')
+    tend = t0 + (n - 1) * step + .6
     js.insert(0, 'tl.fromTo("#ttl",{opacity:0,y:20},{opacity:1,y:0,duration:.6,ease:"power2.out"},.2);')
     js.insert(1, 'tl.fromTo(".gl",{scaleX:0},{scaleX:1,duration:1.1,stagger:.08,ease:"power2.out"},.5);tl.fromTo(".gt",{opacity:0},{opacity:1,duration:.5,stagger:.08},.7);')
     js.insert(2, 'tl.fromTo("#massif",{y:500},{y:0,duration:1.8,ease:"power3.out"},1.3);tl.fromTo("#massif2",{y:520},{y:0,duration:2.0,ease:"power3.out"},1.2);')
-    js.append(f'tl.fromTo("#halo",{{opacity:0,scale:.4}},{{opacity:1,scale:1,duration:.7,ease:"power2.out"}},{tend});')
-    js.append(f'tl.fromTo("#end",{{opacity:0,y:16}},{{opacity:1,y:0,duration:.6}},{tend + .4});')
-    js.append(f'tl.to("#all",{{opacity:0,duration:.6,ease:"none"}},{DUR - .6});')
+    js.append(f'tl.fromTo("#halo",{{opacity:0,scale:.4}},{{opacity:1,scale:1,duration:.7,ease:"power2.out"}},{tend:.2f});')
+    js.append(f'tl.fromTo("#end",{{opacity:0,y:16}},{{opacity:1,y:0,duration:.6}},{tend + .4:.2f});')
+    js.append(f'tl.to("#all",{{opacity:0,duration:.6,ease:"none"}},{DUR - .6:.2f});')
+    hx, hy = xs[-1], y(ms[-1])
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
 <script src="{GSAP}"></script>
@@ -332,7 +369,7 @@ html,body{{background:#06121f}}
 #ttl .k{{font-size:24px;font-weight:800;letter-spacing:.32em;color:#d4a24c}}
 #ttl .t{{font-size:56px;font-weight:800;color:#fff;margin-top:6px;letter-spacing:-.01em}}
 #cl{{position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#ff5a36;box-shadow:0 0 0 7px rgba(255,90,54,.28),0 0 26px rgba(255,90,54,.8)}}
-#halo{{position:absolute;left:{1710 - 90}px;top:{y(8586) - 90:.0f}px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(243,217,143,.55),rgba(243,217,143,0) 70%)}}
+#halo{{position:absolute;left:{hx - 90:.0f}px;top:{hy - 90:.0f}px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(243,217,143,.55),rgba(243,217,143,0) 70%)}}
 #end{{position:absolute;left:64px;bottom:40px;text-align:left;color:#fff}}
 #end .a{{font-size:30px;font-weight:800}} #end .b{{font-size:22px;font-weight:600;color:rgba(207,230,245,.8);margin-top:4px}}
 </style></head><body>
@@ -351,8 +388,8 @@ html,body{{background:#06121f}}
  <div id="halo"></div>
  {markers}
  <div id="cl"></div>
- <div id="ttl"><div class="k">INDIA&#8217;S HEIGHT LADDER</div><div class="t">From hill summits to the 8,586 m crown</div></div>
- <div id="end"><div class="a">156 peaks · heights · first ascents · climbing status</div><div class="b">suzutravels.com/mountains-of-india</div></div>
+ <div id="ttl"><div class="k">{kicker}</div><div class="t">{title}</div></div>
+ <div id="end"><div class="a">{end_a}</div><div class="b">{end_b}</div></div>
 </div>
 </div>
 <script>
@@ -362,7 +399,7 @@ window.__timelines = window.__timelines || {{}};
 window.__timelines["main"] = tl;
 tl.seek(0);
 </script></body></html>'''
-    d = prep("height-ladder")
+    d = prep(name)
     (d / "index.html").write_text(html, encoding="utf-8")
     return d
 
@@ -391,9 +428,156 @@ def topo_lines():
     return "".join(out)
 
 
+
+# --------------------------------------------------------------------------------------------
+# Per-page compositions for the Mountain agents (read src/media/<slug>.json, else src/pages/<slug>.json -> "media")
+# --------------------------------------------------------------------------------------------
+def page_spec(slug):
+    """{"media": {...}} for a page: src/media/<slug>.json (written by the Visual Studio) or the "media" key of src/pages/<slug>.json."""
+    m = KIT / "src" / "media" / f"{slug}.json"
+    if m.exists():
+        return {"media": json.loads(m.read_text(encoding="utf-8"))}
+    f = KIT / "src" / "pages" / f"{slug}.json"
+    if not f.exists():
+        raise SystemExit(f"missing src/media/{slug}.json (and src/pages/{slug}.json)")
+    return json.loads(f.read_text(encoding="utf-8"))
+
+
+def esc(s):
+    """Idempotent HTML escape for text that agents write into page JSON ("A & B" or "A &amp; B" both come out right)."""
+    return _html.escape(_html.unescape(str(s)), quote=False)
+
+
+def peak_hero(slug):
+    """Photo hero for a peak or guide page. spec["media"]["hero"] = {
+         "scenes": [ {img, kind: land|tilt, h, mirror?, t:[a,b], from:{}, to:{}} x 3-4 ]   photos from hf/photos/ (see CREDITS.md:
+                     sizes, what each shows, which may be mirrored). NEVER caption a photo of another mountain as this peak.
+         "kicker": "FRIENDSHIP PEAK · HIMACHAL",
+         and EITHER "steps": [[altitude_m, "CAPTION"], ...]  3-7 steps, first = start (road-head / base camp), last = summit
+                                                           -> rolling altitude read-out start -> summit -> start (peak pages)
+         OR     "words": [["APPLY", "EARLY."], ["PAY THE", "PEAK FEE."], ...]  exactly 4 pairs, each word <= 9 letters
+                                                           -> four big two-line statements (guide pages) }
+    Scene times must tile the loop: first scene starts at 0, each next one starts ~0.6 s before the previous ends,
+    the last ends at DUR (14 s for steps, 13 s for words)."""
+    spec = page_spec(slug)["media"]["hero"]
+    scenes = [{**sc, "t": tuple(sc["t"])} for sc in spec["scenes"]]
+    kicker = esc(spec.get("kicker", "MOUNTAINS OF INDIA"))
+    if spec.get("words"):
+        words = [(esc(a), esc(b)) for a, b in spec["words"]]
+        return words_hero(f"{slug}-hero", scenes, words, kicker, DUR=round(max(sc["t"][1] for sc in scenes)))
+    if not 3 <= len(spec["steps"]) <= 7:
+        raise SystemExit("media.hero.steps needs 3-7 [altitude, caption] pairs")
+    steps = spec["steps"] + [spec["steps"][0]]
+    vals = [f"{a:,}" for a, _ in steps]
+    caps = [esc(c) for _, c in steps]
+    alts = [a for a, _ in steps]
+    n = len(steps) - 1
+    times = [None] + [round(1.5 + (11.2 / (n - 1)) * i, 2) for i in range(n - 1)] + [13.25]
+    lo = (min(alts) // 1000) * 1000
+    hi = max(alts)
+    return photo_hero(f"{slug}-hero", scenes, vals, caps, alts, times, kicker=kicker, gauge=(lo, hi))
+
+
+def peak_ladder(slug):
+    """Summits at their true heights. spec["media"]["ladder"] = {
+         "kicker": "INDIA'S 7,000 m PEAKS", "title": "The seven-thousanders, side by side",
+         "peaks": ["kamet", "nanda-devi", ...]   3-7 ids from data/peaks.json (heights + names are read from the dataset),
+         "subs": {"nanda-devi": "Closed since 1983"}   optional sub-labels (default: the peak's state),
+         "end": "48 peaks above 7,000 m in our list"   optional end-card line }"""
+    spec = page_spec(slug)["media"]["ladder"]
+    data = {p["id"]: p for p in json.loads((KIT / "data" / "peaks.json").read_text(encoding="utf-8"))}
+    ids = spec["peaks"]
+    if not 3 <= len(ids) <= 7:
+        raise SystemExit("media.ladder.peaks needs 3-7 peak ids")
+    missing = [i for i in ids if i not in data]
+    if missing:
+        raise SystemExit(f"unknown peak ids: {missing}")
+    subs = spec.get("subs", {})
+    items = [(esc(data[i]["name"]), data[i]["m"], esc(subs.get(i, data[i]["state_label"]))) for i in ids]
+    return ladder_comp(f"{slug}-ladder", items, esc(spec.get("kicker", "MOUNTAINS OF INDIA")), esc(spec.get("title", "")),
+                       esc(spec.get("end", f"{len(data)} peaks · heights · first ascents · climbing status")), "suzutravels.com/mountains-of-india")
+
+
+def route_profile(slug):
+    """Altitude-profile explainer. spec["media"]["profile"] = {
+         "title": "Friendship Peak route", "sub": "Manali to the 5,289 m summit",
+         "camps": [ {"name": "Manali", "m": 2050, "day": "Day 1"}, ..., {"name": "Summit", "m": 5289, "day": "Day 6"} ] }
+       Every altitude must come from the page's fact pack (research), never guessed."""
+    spec = page_spec(slug)["media"]["profile"]
+    camps = spec["camps"]
+    DUR = 12
+    lo = (min(c["m"] for c in camps) // 1000) * 1000
+    hi = ((max(c["m"] for c in camps) + 300) // 1000 + 1) * 1000   # >= 300 m headroom above the summit label
+    X0, X1, Y0, Y1 = 270, 1760, 900, 250
+
+    def y(a):
+        return Y0 - (a - lo) / (hi - lo) * (Y0 - Y1)
+    xs = [X0 + (X1 - X0) * i / (len(camps) - 1) for i in range(len(camps))]
+    pts = [(x, y(c["m"])) for x, c in zip(xs, camps)]
+    grid = "".join(f'<div class="gl" style="top:{y(a):.0f}px"></div><div class="gt" style="top:{y(a) - 28:.0f}px">{a:,} m</div>' for a in range(lo, hi + 1, 1000))
+    poly = " ".join(f"{a:.0f},{b:.0f}" for a, b in pts)
+    area = f"M{X0} {Y0} " + " ".join(f"L{a:.0f} {b:.0f}" for a, b in pts) + f" L{X1} {Y0} Z"
+    total = sum(((pts[i][0] - pts[i - 1][0]) ** 2 + (pts[i][1] - pts[i - 1][1]) ** 2) ** .5 for i in range(1, len(pts)))
+    step = 7.0 / (len(camps) - 1)
+    labs, js = "", []
+    for i, ((x, yy), c) in enumerate(zip(pts, camps)):
+        above = (i % 2 == 0) or i == len(camps) - 1
+        top = yy - 136 if above else yy + 26
+        top = max(150, min(top, Y0 - 100))
+        last = " big" if i == len(camps) - 1 else ""
+        labs += (f'<div class="dot{last}" id="d{i}" style="left:{x - 11:.0f}px;top:{yy - 11:.0f}px"></div>'
+                 f'<div class="lab{last}" id="l{i}" style="left:{x - 110:.0f}px;top:{top:.0f}px"><div class="h">{c["m"]:,} m</div><div class="n">{esc(c["name"])}</div><div class="s">{esc(c.get("day", ""))}</div></div>')
+        t = 1.6 + i * step
+        js.append(f'tl.fromTo("#d{i}",{{scale:0,opacity:0}},{{scale:1,opacity:1,duration:.3,ease:"back.out(2)"}},{t:.2f});')
+        js.append(f'tl.fromTo("#l{i}",{{opacity:0,y:12}},{{opacity:1,y:0,duration:.35}},{t + .05:.2f});')
+    js.append(f'tl.fromTo("#rl",{{strokeDashoffset:{total:.0f}}},{{strokeDashoffset:0,duration:{7.0:.2f},ease:"none"}},1.6);')
+    js.append('tl.fromTo("#area",{opacity:0},{opacity:1,duration:1.2},1.2);')
+    js.append('tl.fromTo("#ttl",{opacity:0,y:16},{opacity:1,y:0,duration:.6},.2);tl.fromTo(".gl",{scaleX:0},{scaleX:1,duration:1,stagger:.06},.4);tl.fromTo(".gt",{opacity:0},{opacity:1,duration:.4,stagger:.06},.6);')
+    js.append(f'tl.to("#all",{{opacity:0,duration:.6}},{DUR - .6});')
+    html = f'''<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
+<script src="{GSAP}"></script>
+<style>{FONTS}
+.bg{{position:absolute;inset:0;background:radial-gradient(ellipse at 80% 10%,#16395c 0%,#0b1f33 45%,#06121f 100%)}}
+#all{{position:absolute;inset:0}}
+.gl{{position:absolute;left:{X0 - 40}px;width:{X1 - X0 + 80}px;height:1px;background:rgba(207,230,245,.2);transform-origin:0 50%}}
+.gt{{position:absolute;left:40px;font-size:22px;font-weight:700;color:rgba(207,230,245,.6)}}
+.dot{{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid #d4a24c}}
+.dot.big{{background:#d4a24c;border-color:#fff;box-shadow:0 0 0 10px rgba(212,162,76,.25)}}
+.lab{{position:absolute;width:220px;text-align:center;color:#fff;background:rgba(6,18,31,.66);border:1px solid rgba(207,230,245,.18);border-radius:14px;padding:8px 8px 10px}}
+.lab .h{{font-size:32px;font-weight:800;font-variant-numeric:tabular-nums}} .lab .n{{font-size:21px;font-weight:700;color:#f3d98f}} .lab .s{{font-size:17px;color:rgba(207,230,245,.75)}}
+.lab.big{{border-color:rgba(243,217,143,.6)}} .lab.big .h{{color:#f3d98f;font-size:40px}}
+#ttl{{position:absolute;left:60px;top:54px}} #ttl .k{{font-size:24px;font-weight:800;letter-spacing:.3em;color:#d4a24c}} #ttl .t{{font-size:52px;font-weight:800;color:#fff;margin-top:4px}}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="{DUR}" data-width="{W}" data-height="{H}">
+<div class="bg clip" data-start="0" data-duration="{DUR}" data-track-index="0"></div>
+<div id="all" class="clip" data-start="0" data-duration="{DUR}" data-track-index="1">{grid}
+<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" style="position:absolute;left:0;top:0"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f78b7" stop-opacity=".55"/><stop offset="1" stop-color="#0b1f33" stop-opacity=".1"/></linearGradient></defs>
+<path id="area" d="{area}" fill="url(#ag)"/><polyline id="rl" points="{poly}" fill="none" stroke="#f3d98f" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="{total:.0f}" stroke-dashoffset="{total:.0f}"/></svg>
+{labs}
+<div id="ttl"><div class="k">ALTITUDE PROFILE</div><div class="t">{esc(spec.get("title", ""))}</div></div>
+</div></div>
+<script>
+const tl = gsap.timeline({{ paused: true }});
+{"".join(js)}
+window.__timelines = window.__timelines || {{}};
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script></body></html>'''
+    d = prep(f"{slug}-profile")
+    (d / "index.html").write_text(html, encoding="utf-8")
+    return d
+
 if __name__ == "__main__":
     which = sys.argv[1] if len(sys.argv) > 1 else "all"
-    fns = {"mountains-hero": mountains_hero, "height-ladder": height_ladder, "expeditions-hero": expeditions_hero}
-    for k, f in fns.items():
-        if which in (k, "all"):
-            print(f())
+    if which == "peak-hero":
+        print(peak_hero(sys.argv[2]))
+    elif which == "route-profile":
+        print(route_profile(sys.argv[2]))
+    elif which == "peak-ladder":
+        print(peak_ladder(sys.argv[2]))
+    else:
+        fns = {"mountains-hero": mountains_hero, "height-ladder": height_ladder, "expeditions-hero": expeditions_hero}
+        for k, f in fns.items():
+            if which in (k, "all"):
+                print(f())

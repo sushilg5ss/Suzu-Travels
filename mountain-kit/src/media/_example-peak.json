@@ -1,0 +1,116 @@
+{
+ "_note": "EXAMPLE — media spec for a PEAK page (Visual Studio writes src/media/<slug>.json). Photos: hf/photos/CREDITS.md. Altitudes must come from research/pages/<slug>.md.",
+ "hero": {
+  "kicker": "FRIENDSHIP PEAK · HIMACHAL",
+  "scenes": [
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 520
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 250
+    },
+    "to": {
+     "y": 1320
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    2050,
+    "MANALI"
+   ],
+   [
+    3300,
+    "BAKARTHACH"
+   ],
+   [
+    3800,
+    "LADY LEG CAMP"
+   ],
+   [
+    5289,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Friendship Peak route",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Day 1"
+   },
+   {
+    "name": "Bakarthach",
+    "m": 3300,
+    "day": "Day 3"
+   },
+   {
+    "name": "Lady Leg",
+    "m": 3800,
+    "day": "Day 4"
+   },
+   {
+    "name": "Summit",
+    "m": 5289,
+    "day": "Day 6"
+   }
+  ]
+ }
+}

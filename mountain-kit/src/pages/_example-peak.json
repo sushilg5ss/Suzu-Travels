@@ -1,0 +1,195 @@
+{
+ "_note": "EXAMPLE / SCHEMA ONLY — files starting with _ are never built or published. Every altitude, day count and fact in a real page file must come from the page's fact pack (research/pages/<slug>.md) with sources. Numbers here are illustrative. The page's videos are specified separately in src/media/<slug>.json (see src/media/_example-peak.json).",
+ "kind": "peak",
+ "path": "/mountains-of-india/friendship-peak/",
+ "peak_id": "friendship-peak",
+ "title": "Friendship Peak (5,289 m), Manali: Climbing Guide",
+ "seo_title": "Friendship Peak Manali (5,289 m): Route, Itinerary & Season",
+ "seo_desc": "Climb Friendship Peak near Manali: route via Bakarthach and Lady Leg, 8-day itinerary, difficulty, best months and permits. Enquire for a guided climb.",
+ "focus": "friendship peak",
+ "commercial": true,
+ "label": "Friendship Peak",
+ "blurb": "5,289 m · the classic first summit above Manali",
+ "kicker": "Solang valley · Pir Panjal · 5,289 m",
+ "tag": "The classic first summit above Manali.",
+ "sub": "One short paragraph that sells the climb honestly: where it starts, what summit day feels like, who it suits.",
+ "chips": [
+  [
+   "5,289 m",
+   "summit"
+  ],
+  [
+   "8 days",
+   "from Manali"
+  ],
+  [
+   "May–Jun",
+   "Sep–Oct"
+  ],
+  [
+   "Grade",
+   "trekking peak"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "q": "How high is Friendship Peak and how hard is it to climb?",
+ "answer": "40–70 word answer-first paragraph: what it is, where, how high (m and ft), how hard, how many days, which months. Plain facts, may contain <a href=\"/mountains-of-india/highest-peaks-in-india/\">links</a>.",
+ "facts": [
+  [
+   "Height",
+   "5,289 m / 17,352 ft"
+  ],
+  [
+   "Start",
+   "Manali (Solang)"
+  ],
+  [
+   "Duration",
+   "About 8 days"
+  ],
+  [
+   "Grade",
+   "Trekking peak"
+  ],
+  [
+   "Best months",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "intro": [
+  "Optional extra paragraph(s) under the answer box."
+ ],
+ "route_h2": "Route, camps and altitudes",
+ "route_text": [
+  "One or two paragraphs describing the approach and summit day."
+ ],
+ "route": [
+  {
+   "name": "Manali",
+   "m": 2050,
+   "note": "Gear check, permits"
+  },
+  {
+   "name": "Bakarthach",
+   "m": 3300,
+   "note": "Meadow camp"
+  },
+  {
+   "name": "Lady Leg",
+   "m": 3800,
+   "note": "Base camp"
+  },
+  {
+   "name": "Summit",
+   "m": 5289,
+   "note": "Summit push"
+  }
+ ],
+ "itinerary": [
+  [
+   "Day 1",
+   "Title",
+   "What happens"
+  ],
+  [
+   "Day 2",
+   "Title",
+   "What happens"
+  ]
+ ],
+ "difficulty": [
+  "Paragraph on what it takes."
+ ],
+ "skills": [
+  [
+   "Fitness",
+   "…"
+  ],
+  [
+   "Skills",
+   "…"
+  ]
+ ],
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "maybe",
+  "May": "good",
+  "Jun": "good",
+  "Jul": "no",
+  "Aug": "no",
+  "Sep": "good",
+  "Oct": "good",
+  "Nov": "maybe",
+  "Dec": "no"
+ },
+ "season_text": [
+  "Why those months."
+ ],
+ "permits": [
+  "Paragraph(s) specific to this peak (IMF booking, forest permits, PAP near borders, Kangra registration if relevant)."
+ ],
+ "includes": [
+  "Guides and support staff",
+  "Camps and meals",
+  "Permits",
+  "Hotel in Manali",
+  "Transfers"
+ ],
+ "cost_text": [
+  "We quote each climb for your dates and group; foreign nationals also pay the IMF peak fee (from US$500 per team) and liaison-officer charges, shown separately."
+ ],
+ "gear": [
+  "Mountaineering boots",
+  "Crampons",
+  "Harness",
+  "Helmet"
+ ],
+ "history": [
+  "Paragraph(s)."
+ ],
+ "faqs": [
+  [
+   "Question?",
+   "Answer."
+  ],
+  [
+   "Question 2?",
+   "Answer."
+  ],
+  [
+   "Question 3?",
+   "Answer."
+  ],
+  [
+   "Question 4?",
+   "Answer."
+  ],
+  [
+   "Question 5?",
+   "Answer."
+  ]
+ ],
+ "sources": [
+  [
+   "Title of an official or neutral source",
+   "https://example.org/"
+  ],
+  [
+   "…",
+   "https://example.org/2"
+  ],
+  [
+   "…",
+   "https://example.org/3"
+  ]
+ ]
+}

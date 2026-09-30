@@ -18,11 +18,12 @@
   var t = d.querySelector('.szm-data'); if (!t) return;
   var body = t.tBodies[0], rows = Array.prototype.slice.call(body.rows), q = d.getElementById('szm-q'), cnt = d.getElementById('szm-count');
   var f = { band: '', state: '', status: '' };
+  rows.forEach(function (r) { r._q = (r.textContent + ' ' + (r.getAttribute('data-alt') || '')).toLowerCase(); });
   function apply() {
     var s = (q && q.value || '').toLowerCase().trim(), k = 0;
     rows.forEach(function (r) {
       var ok = (!f.band || r.getAttribute('data-band') === f.band) && (!f.state || r.getAttribute('data-state') === f.state) &&
-        (!f.status || r.getAttribute('data-status') === f.status) && (!s || r.getAttribute('data-q').indexOf(s) > -1);
+        (!f.status || r.getAttribute('data-status') === f.status) && (!s || r._q.indexOf(s) > -1);
       r.hidden = !ok; if (ok) k++;
     });
     if (cnt) cnt.textContent = 'Showing ' + k + ' of ' + rows.length + ' peaks';
