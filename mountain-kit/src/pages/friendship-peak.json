@@ -1,0 +1,297 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/friendship-peak/",
+ "peak_id": "friendship-peak",
+ "title": "Friendship Peak (5,289 m), Manali: Climbing Guide",
+ "seo_title": "Friendship Peak Manali (5,289 m): Route, Itinerary & Season",
+ "seo_desc": "Friendship Peak (5,289 m) near Manali: the route via Bakarthach and Lady Leg, an 8-day itinerary, difficulty, best months and permits. Plan a guided climb.",
+ "focus": "friendship peak",
+ "commercial": true,
+ "label": "Friendship Peak",
+ "blurb": "5,289 m · the classic first summit above Manali",
+ "verified": "1 Oct 2026",
+ "kicker": "Solang valley · Pir Panjal · 5,289 m",
+ "tag": "The classic first summit above Manali.",
+ "sub": "Eight days from Manali: up through the meadows of Bakarthach to a snow summit with the Pir Panjal all around you. Steep enough to feel like real mountaineering, and within reach of a fit first-timer with good guides.",
+ "chips": [
+  [
+   "5,289 m",
+   "summit"
+  ],
+  [
+   "About 8 days",
+   "from Manali"
+  ],
+  [
+   "May–Jun",
+   "Sep–Oct"
+  ],
+  [
+   "Grade",
+   "first summit"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "hero_alt": "Climbers on Himalayan snow slopes (stock footage) with an altitude read-out rising from Manali, 2,050 m, to the 5,289 m summit of Friendship Peak",
+ "profile_alt": "Animated altitude profile of the Friendship Peak route: Manali, Bakarthach, Lady Leg base camp, summit camp and the 5,289 m summit",
+ "q": "How high is Friendship Peak, and how hard is it to climb?",
+ "answer": "<b>Friendship Peak</b> (5,289 m / 17,352 ft) rises above the Solang valley near Manali, in the Pir Panjal range of Himachal Pradesh. It is one of the best-known <a href=\"/mountains-of-india/highest-peaks-in-india/#band-5000\">5,000 m peaks in India</a> for a first Himalayan summit: about 8 days from Manali via Bakarthach and Lady Leg base camp, ending with a long summit day on steep snow with crampons, ice axe and rope. Climb it in May–June or September–October.",
+ "facts": [
+  [
+   "Height",
+   "5,289 m / 17,352 ft"
+  ],
+  [
+   "Start",
+   "Manali (Dhundi road-head)"
+  ],
+  [
+   "Duration",
+   "About 8 days"
+  ],
+  [
+   "Grade",
+   "Trekking peak, steep snow"
+  ],
+  [
+   "Best months",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "intro": [
+  "Wikipedia gives the height as 5,287 m; most climbing sources and our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a> use 5,289 m. It is part of the <a href=\"/mountains-of-india/\">Indian Himalaya guide</a> on this site, where you can compare it with every other major peak in the country."
+ ],
+ "route_h2": "Route, camps and altitudes",
+ "route_text": [
+  "The climb starts in Manali. A short drive up the Solang valley brings you to the Dhundi road-head, where the trail climbs through meadows to Bakarthach and then to Lady Leg, the base camp below the peak.",
+  "After an acclimatisation day with snow-craft practice at base camp, teams move up to a summit camp at about 4,200 m. Summit day starts in the dark: a long climb over moraine and snowfields to the steep snow slopes below the top, where you move roped to your guide with crampons and an ice axe. Most teams are back in camp by the afternoon, before the snow softens."
+ ],
+ "route": [
+  {
+   "name": "Manali",
+   "m": 2050,
+   "note": "Gear check, briefing and an acclimatisation walk"
+  },
+  {
+   "name": "Bakarthach",
+   "m": 3300,
+   "note": "Meadow camp; walk in from the Dhundi road-head"
+  },
+  {
+   "name": "Lady Leg (base camp)",
+   "m": 3850,
+   "note": "About 3,850 m; acclimatisation and snow-craft day"
+  },
+  {
+   "name": "Summit camp",
+   "m": 4200,
+   "note": "About 4,000–4,400 m, depending on the team"
+  },
+  {
+   "name": "Friendship Peak summit",
+   "m": 5289,
+   "note": "Pre-dawn start; 8–10 hours up and back"
+  }
+ ],
+ "itinerary": [
+  [
+   "Day 1",
+   "Manali",
+   "Arrive, gear check and briefing, and a short acclimatisation walk."
+  ],
+  [
+   "Day 2",
+   "Dhundi to Bakarthach",
+   "Drive to the Dhundi road-head, then walk up through meadows to camp at about 3,300 m."
+  ],
+  [
+   "Day 3",
+   "Bakarthach to Lady Leg",
+   "A shorter climb to base camp at about 3,850 m."
+  ],
+  [
+   "Day 4",
+   "Acclimatisation",
+   "Rest, snow-craft practice (crampons, ice axe, rope) and a load ferry towards summit camp."
+  ],
+  [
+   "Day 5",
+   "Summit camp",
+   "Move up to about 4,200 m and sleep early."
+  ],
+  [
+   "Day 6",
+   "Summit day",
+   "Start before dawn, reach the 5,289 m summit and come back down to camp: 8–10 hours."
+  ],
+  [
+   "Day 7",
+   "Reserve day",
+   "Kept free for bad weather or a second attempt."
+  ],
+  [
+   "Day 8",
+   "Back to Manali",
+   "Descend to Dhundi and drive back to Manali."
+  ]
+ ],
+ "difficulty_h2": "How hard is Friendship Peak?",
+ "difficulty": [
+  "By Himalayan standards Friendship Peak is a trekking peak: there are no vertical rock or ice walls. It is still a real climb. The upper slopes are steep snow, so you wear crampons, carry an ice axe and are usually roped to your guide, and summit day is long — 8 to 10 hours from summit camp and back, starting in the dark.",
+  "Most outfitters take fit trekkers without a formal mountaineering course and teach the basics at base camp. You should already have trekked above about 4,000 m. If you want technical peaks later, such as Deo Tibba or Hanuman Tibba, a <a href=\"/mountains-of-india/#training\">Basic Mountaineering Course</a> is the natural next step."
+ ],
+ "skills": [
+  [
+   "Fitness",
+   "Walking 5–7 hours a day with a daypack, then one 8–10 hour summit day."
+  ],
+  [
+   "Experience",
+   "At least one high-altitude trek (about 4,000 m or more) before this climb."
+  ],
+  [
+   "Skills taught on the climb",
+   "Crampon technique, ice-axe self-arrest, moving on a rope and descending steep snow."
+  ],
+  [
+   "Acclimatisation",
+   "Sleeping altitude rises in steps (3,300 m, 3,850 m, 4,200 m) with a rest day at base camp."
+  ]
+ ],
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "maybe",
+  "May": "good",
+  "Jun": "good",
+  "Jul": "no",
+  "Aug": "no",
+  "Sep": "good",
+  "Oct": "good",
+  "Nov": "maybe",
+  "Dec": "no"
+ },
+ "season_h2": "Best time to climb Friendship Peak",
+ "season_text": [
+  "<b>May and June</b> bring full snow cover: the classic snow climb, with long days before the monsoon.",
+  "<b>September and October</b> are drier and clearer after the monsoon. The lower route has more rock and scree, and the nights are colder.",
+  "July and August are monsoon months on the Kullu side, with rain and poor visibility. In winter the route lies under deep snow; an Indian Army team climbed it in January 2015, but winter is for experienced teams only."
+ ],
+ "permits_h2": "Permits for Friendship Peak",
+ "permits": [
+  "Himachal Pradesh requires trekking and mountaineering outfitters and their guides to be registered with HP Tourism, and every participant to be insured. Your outfitter arranges the local permissions for the climb and for camping on the route.",
+  "<b>Foreign nationals</b> also need permission from the Indian Mountaineering Foundation (IMF): apply at least 90 days ahead. The IMF fee for a team of two is US$200 on IMF-listed trekking peaks or US$500 on other peaks up to 6,500 m, plus liaison-officer charges; your outfitter confirms which applies. Full details are in our <a href=\"/mountains-of-india/#permits\">guide to climbing permits in India</a>."
+ ],
+ "cost_h2": "What a guided Friendship Peak climb includes",
+ "cost_text": [
+  "The price depends on your dates, group size and nationality, so we quote each climb. Tell us your dates on WhatsApp and you get one plan and one quote. Foreign nationals also pay the IMF fee and liaison-officer charges, shown separately."
+ ],
+ "includes": [
+  "Certified mountaineering guide and support staff",
+  "Tents, camps and all meals on the mountain",
+  "Group climbing equipment (ropes and anchors)",
+  "Local permissions and paperwork",
+  "Hotel nights in Manali",
+  "Transfers to and from the Dhundi road-head",
+  "Acclimatisation and reserve days in the plan"
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots that take crampons",
+  "Crampons and an ice axe (often available to hire)",
+  "Climbing harness and helmet",
+  "Down jacket and warm layers",
+  "Waterproof jacket and trousers",
+  "Warm gloves plus liner gloves",
+  "Glacier sunglasses (UV400) and sunscreen",
+  "Headlamp with spare batteries",
+  "Trekking poles",
+  "Two water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "History",
+ "history": [
+  "The date and party of the first ascent are not reliably recorded, and we could not verify where the peak's name comes from.",
+  "On 2 January 2015 an Indian Army team led by Major R.S. Jamwal reached the summit in deep winter, reported at the time as the first winter ascent, while training for the Army's 2015 Everest expedition. Today Friendship Peak is a popular first summit for climbers from India and abroad."
+ ],
+ "faq_h2": "Friendship Peak: questions climbers ask",
+ "faqs": [
+  [
+   "How high is Friendship Peak?",
+   "5,289 m (17,352 ft), the most-cited figure. Wikipedia lists 5,287 m (17,346 ft)."
+  ],
+  [
+   "How difficult is Friendship Peak?",
+   "It is one of the easier Himalayan snow summits, but a real climb: steep snow near the top, crampons and an ice axe, usually roped to a guide, and a summit day of 8–10 hours."
+  ],
+  [
+   "Can a beginner climb Friendship Peak without a mountaineering course?",
+   "Usually yes, if you are fit and have trekked above about 4,000 m. Guides teach crampon, ice-axe and rope basics at base camp. A Basic Mountaineering Course helps and is the next step for technical peaks."
+  ],
+  [
+   "How many days does the Friendship Peak climb take?",
+   "About 8 days from Manali, including an acclimatisation day at base camp and a reserve day for weather."
+  ],
+  [
+   "What is the best time to climb Friendship Peak?",
+   "May–June for a full snow climb, and September–October for drier, clearer weather. Avoid the July–August monsoon."
+  ],
+  [
+   "Do I need a permit to climb Friendship Peak?",
+   "Your registered outfitter handles the local permissions. Foreign nationals also need Indian Mountaineering Foundation permission, applied for at least 90 days ahead, and pay IMF fees."
+  ],
+  [
+   "Where does the Friendship Peak climb start?",
+   "At the Dhundi road-head in the Solang valley, a short drive from Manali. The route goes via Bakarthach and Lady Leg base camp."
+  ],
+  [
+   "Can Suzu Travels arrange a guided Friendship Peak climb?",
+   "Yes. We pair you with a registered Himachal outfitter and certified guides, sort the permissions, and add your hotel in Manali and transfers — one plan and one quote on WhatsApp at +91 70874 88961."
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Mount Friendship",
+   "https://en.wikipedia.org/wiki/Mount_Friendship"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ],
+  [
+   "Hill Post, Jan 2015 — Army scale Mt Friendship in winter",
+   "https://hillpost.in/2015/01/army-scale-mt-friendship-in-winter/102085/"
+  ],
+  [
+   "The Tribune — Army conquers Kullu's Friendship Peak",
+   "https://www.tribuneindia.com/news/archive/features/army-conquers-kullu-friendship-peak-27814"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Indian Mountaineering Foundation — expedition application rules",
+   "https://www.indmount.org/IMF/expeapp"
+  ],
+  [
+   "HP Miscellaneous Adventure Activities (Amendment) Rules 2021",
+   "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"
+  ],
+  [
+   "CDC Yellow Book — high-altitude travel and altitude illness",
+   "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"
+  ]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Mount_Friendship"
+ ],
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Friendship Peak. Dates: ___ , people: ___ , nationality: ___"
+}

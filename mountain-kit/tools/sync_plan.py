@@ -24,7 +24,11 @@ MAX_OPS, MAX_CHARS = 16, 40000
 
 
 def tokens(s):
-    return re.findall(r"<[^>]*>|[^<]+", s)
+    """Tags stay whole; long text runs (CSS, JSON-LD, paragraphs) are split into words so edits stay small."""
+    out = []
+    for t in re.findall(r"<[^>]*>|[^<]+", s):
+        out.extend(re.findall(r"\S+\s*|\s+", t) if (len(t) > 200 and not t.startswith("<")) else [t])
+    return out
 
 
 def render(slug, live):
@@ -33,7 +37,7 @@ def render(slug, live):
     fn = G.PAGES.get(slug)
     if fn is None:
         raise SystemExit(f"no generator for '{slug}' (base page function or src/pages/{slug}.json)")
-    return build.assemble(fn())
+    return build.assemble(fn(), slug)
 
 
 def plan(a, b):

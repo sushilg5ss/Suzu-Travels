@@ -107,10 +107,56 @@ def check(slug, body, allowed=None):
     return problems
 
 
-def assemble(body_html):
-    """Page HTML (out/<slug>.html contents) -> the one-line WordPress content string."""
+BASE = ("mountains-of-india", "highest-peaks-in-india", "himalayan-peak-expeditions")
+KEEP_CLASSES = {"hl", "page-content", "page-header", "entry-title"}  # added by kit.js, or the theme's own wrappers
+
+
+def css_rules(css):
+    """Split minified CSS into top-level chunks: plain rules and whole @media blocks."""
+    out, i, depth, start = [], 0, 0, 0
+    while i < len(css):
+        ch = css[i]
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                out.append(css[start:i + 1])
+                start = i + 1
+        i += 1
+    return out
+
+
+def prune_css(css, body):
+    """Keep only rules whose every class name is used on the page (content pages only: smaller pages, same look)."""
+    used = set(c for m in re.finditer(r'class="([^"]*)"', body) for c in m.group(1).split()) | KEEP_CLASSES
+
+    def keep_rule(rule):
+        sel = rule[:rule.find("{")]
+        for part in sel.split(","):
+            classes = re.findall(r"\.([A-Za-z0-9_-]+)", re.sub(r":has\([^)]*\)", "", part))
+            if all(c in used for c in classes):
+                return True
+        return False
+    out = []
+    for r in css_rules(css):
+        if r.startswith("@media"):
+            inner = r[r.find("{") + 1:-1]
+            kept = [x for x in css_rules(inner) if keep_rule(x)]
+            if kept:
+                out.append(r[:r.find("{") + 1] + "".join(kept) + "}")
+        elif keep_rule(r):
+            out.append(r)
+    return "".join(out)
+
+
+def assemble(body_html, slug=None):
+    """Page HTML (out/<slug>.html contents) -> the one-line WordPress content string.
+    Content pages get only the CSS rules they use; the three base pages keep the full kit CSS."""
     body = min_html(body_html)
     css = min_css((KIT / "kit.css").read_text(encoding="utf-8"))
+    if slug and slug not in BASE:
+        css = prune_css(css, body)
     js = min_js((KIT / "kit.js").read_text(encoding="utf-8"))
     body = body.replace("<script>/*KITJS*/</script>", f"<script>{js}</script>")
     return f"<style>{css}</style>{body}"
@@ -123,7 +169,7 @@ def build(slug, force=False):
         sys.stderr.write(f"BUILD REFUSED ({slug}):\n  " + "\n  ".join(sorted(set(probs))) + "\n")
         sys.exit(1)
     outp = KIT / "out" / f"{slug}.min.html"
-    outp.write_text(assemble(src), encoding="utf-8")
+    outp.write_text(assemble(src, slug), encoding="utf-8")
     print(f"{outp.name}: {outp.stat().st_size:,} bytes")
 
 

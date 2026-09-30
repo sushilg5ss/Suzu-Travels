@@ -2,6 +2,14 @@
 
 Format: `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 05:05 IST · Claude (first pipeline run, end to end) · **Friendship Peak LIVE:** https://suzutravels.com/mountains-of-india/friendship-peak/ (page **11920**, parent 11831).
+  - Fact pack, and media (hero 1.83 MB + mobile 0.65 MB, route profile 0.14 MB) pinned at 8e1bcb9.
+  - Content 39,975 bytes, 2 chunks, stored length verified.
+  - Rank Math: slug, title, description and focus set (undo b13b290ff62a264093edeaecc40ed618).
+  - Sync ops applied: hub 11831 (Peak guides group + band link), list 11841 (row name link), expeditions 11846 (tile + "Route guide").
+  - Also IMF fee wording fixed: US$200 IMF-listed trekking peaks / US$500 up to 6,500 m (hub ×2, expeditions ×3). `.szm-gh` / `.szm-crumbs` CSS inserted on hub and list.
+  - `cmp_live`: 0/0 on all 4 pages (cache-buster and plain). 390 px: hero plays, no overflow.
+  - Kit: content pages now inline only the CSS rules they use (about 11.6 KB instead of 21 KB); sync_plan splits long text into words (small ops).
 - 2026-10-01 04:25 IST · Claude · Dataset CSV re-pinned to d12f4fc (includes the public-wording overrides). Page 11841: the CSV URL updated in all 3 places (hero button, method link, Dataset JSON-LD) via `wp_replace_in_page`; length stays 128,910. `cmp_live`: 0/0 with cache-buster and plain.
 - 2026-10-01 04:10 IST · Claude (setup with Sushil) · Kit v1.1 for the agents:
   - generic page template `content_page()` for `src/pages/*.json` + media specs in `src/media/`;

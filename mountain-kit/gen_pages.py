@@ -773,7 +773,7 @@ def content_page(slug):
             f'<div class="szm-media">{lazy_video(slug, m, c.get(m + "_alt", c["title"]))}<div>' + "".join(f"<p>{x}</p>" for x in c.get(m + "_text", [])) + "</div></div>")
     if pk_:
         cards = "".join(peak_card(q, q["state_label"]) for q in nearby(pk_))
-        add("nearby", "Nearby", f'<span class="k">Also in {e(pk_["state_label"])}</span><h2>Peaks of a similar height nearby</h2><ul class="szm-peaks">{cards}</ul>')
+        add("nearby", "Similar peaks", f'<span class="k">Also in {e(pk_["state_label"])}</span><h2>Other {e(pk_["state_label"])} peaks of a similar height</h2><ul class="szm-peaks">{cards}</ul>')
     q_title = c.get("quote_h2", "Plan this climb with Suzu" if commercial else "Want to stand on a Himalayan summit?")
     q_text = c.get("quote_text", "We pair you with a registered Himachal outfitter and certified guides, sort the permits and add hotel and transfers — one plan, one quote." if commercial
                    else f"We plan guided climbs of Himachal peaks, from Friendship Peak ({hm('friendship-peak')}) to Deo Tibba ({hm('deo-tibba')}), with registered local outfitters and certified guides — permits, stays and transfers in one quote.")
