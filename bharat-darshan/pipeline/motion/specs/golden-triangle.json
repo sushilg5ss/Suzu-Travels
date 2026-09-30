@@ -1,0 +1,182 @@
+{
+ "title": "Suzu Travels \u2014 The Golden Triangle, explained",
+ "duration": 38,
+ "music": "Our Story Begins.mp3",
+ "scenes": [
+  {
+   "type": "photo",
+   "start": 0,
+   "dur": 5,
+   "img": "taj-mahal-sunrise-1.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.25,
+    1.08
+   ],
+   "grade": "warm",
+   "kicker": "India \u00b7 first trip?",
+   "headline": [
+    "India's most",
+    "*famous route,",
+    "in 40 seconds"
+   ],
+   "pos": "low",
+   "t_head": 0.4
+  },
+  {
+   "type": "map",
+   "start": 5,
+   "dur": 9,
+   "kicker": "The Golden Triangle",
+   "headline": [
+    "3 cities.",
+    "*One loop."
+   ],
+   "pins": [
+    {
+     "city": "Delhi",
+     "at": 3.6,
+     "side": "r"
+    },
+    {
+     "city": "Agra",
+     "at": 4.0,
+     "side": "r"
+    },
+    {
+     "city": "Jaipur",
+     "at": 4.4,
+     "side": "l"
+    }
+   ],
+   "route": {
+    "cities": [
+     "Delhi",
+     "Agra",
+     "Jaipur"
+    ],
+    "close": true,
+    "at": 4.8,
+    "draw": 2.2,
+    "labels": [
+     {
+      "text": "4\u20136 h",
+      "dx": 110,
+      "dy": -10
+     },
+     {
+      "text": "4\u20136 h",
+      "dx": 0,
+      "dy": 80
+     },
+     {
+      "text": "4\u20136 h",
+      "dx": -120,
+      "dy": -30
+     }
+    ]
+   },
+   "stat": {
+    "num": 720,
+    "suffix": " km",
+    "label": "the whole loop, by road",
+    "at": 7.2,
+    "cdur": 1.4
+   },
+   "zoom_map": {
+    "scale": 3.2,
+    "at": 2.3,
+    "dur": 1.4,
+    "around": [
+     "Delhi",
+     "Agra",
+     "Jaipur"
+    ],
+    "to": [
+     580,
+     840
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "start": 14,
+   "dur": 6,
+   "img": "humayun-tomb-delhi-1.jpg",
+   "focus": [
+    0.5,
+    0.42
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "warm",
+   "kicker": "Stop 1 \u00b7 Delhi",
+   "headline": [
+    "Old city,",
+    "*new capital"
+   ],
+   "pos": "low",
+   "sub": "Humayun's Tomb, Qutub Minar, Chandni Chowk food walks",
+   "tag": "UNESCO"
+  },
+  {
+   "type": "photo",
+   "start": 20,
+   "dur": 6,
+   "img": "taj-mahal-sunrise-1.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.35,
+    1.1
+   ],
+   "grade": "warm",
+   "kicker": "Stop 2 \u00b7 Agra",
+   "headline": [
+    "*Taj Mahal",
+    "at sunrise"
+   ],
+   "pos": "low",
+   "sub": "Be at the gate by 6 am \u2014 the marble turns pink, then gold",
+   "tag": "UNESCO"
+  },
+  {
+   "type": "photo",
+   "start": 26,
+   "dur": 6,
+   "img": "amber-fort-jaipur-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "warm",
+   "kicker": "Stop 3 \u00b7 Jaipur",
+   "headline": [
+    "The",
+    "*Pink City"
+   ],
+   "pos": "low",
+   "sub": "Amber Fort, Hawa Mahal, bazaars, rooftop dinners",
+   "tag": "UNESCO"
+  },
+  {
+   "type": "end",
+   "start": 32,
+   "dur": 6,
+   "big": "5\u20136 days is perfect",
+   "small": "Private driver \u00b7 handpicked hotels \u00b7 local guides \u00b7 24/7 support",
+   "cta": "DM \u201cTRIANGLE\u201d for a free plan"
+  }
+ ]
+}

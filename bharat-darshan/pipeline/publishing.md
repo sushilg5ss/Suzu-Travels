@@ -2,6 +2,8 @@
 
 Change a line here to change what the agent does; no need to touch the scheduled task.
 
+## MODE: DRAFT ONLY (Sushil, 30 Sep 2026) — do NOT publish anywhere. See the Project doc claude/bharat-darshan/publishing.md.
+
 ## Public video URL route: `github` (approved by Sushil, 29 Sep 2026)
 1. Attach the repo with push access: Claude_Code_Remote `add_repo` owner `sushilg5ss`, repo `Suzu-Travels`, access `push`.
 2. `git clone --depth 1 --single-branch -b bharat-darshan https://github.com/sushilg5ss/Suzu-Travels ~/st`

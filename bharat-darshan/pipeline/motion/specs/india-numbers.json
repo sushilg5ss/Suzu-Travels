@@ -1,0 +1,211 @@
+{
+ "title": "Suzu Travels \u2014 India, by the numbers",
+ "duration": 40,
+ "music": "Tabuk.mp3",
+ "scenes": [
+  {
+   "type": "photo",
+   "start": 0,
+   "dur": 5,
+   "img": "taj-mahal-sunrise-2.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.3,
+    1.1
+   ],
+   "grade": "warm",
+   "kicker": "Thinking about India?",
+   "headline": [
+    "One country.",
+    "*A hundred",
+    "journeys."
+   ],
+   "pos": "low",
+   "t_head": 0.4
+  },
+  {
+   "type": "map",
+   "start": 5,
+   "dur": 8,
+   "kicker": "Himalayas to backwaters",
+   "headline": [
+    "Where do",
+    "you *start?"
+   ],
+   "pins": [
+    {
+     "city": "Leh",
+     "at": 2.2,
+     "label": "Ladakh"
+    },
+    {
+     "city": "Manali",
+     "at": 2.5,
+     "label": "Himachal",
+     "side": "l"
+    },
+    {
+     "city": "Jaipur",
+     "at": 2.8,
+     "label": "Rajasthan",
+     "side": "l"
+    },
+    {
+     "city": "Agra",
+     "at": 3.1,
+     "label": "Taj Mahal"
+    },
+    {
+     "city": "Varanasi",
+     "at": 3.4
+    },
+    {
+     "city": "Darjeeling",
+     "at": 3.7
+    },
+    {
+     "city": "Goa",
+     "at": 4.0,
+     "side": "l"
+    },
+    {
+     "city": "Kochi",
+     "at": 4.6,
+     "label": "Kerala",
+     "side": "r"
+    }
+   ],
+   "stat": {
+    "num": 45,
+    "label": "UNESCO sites \u00b7 6th in the world",
+    "at": 5.2,
+    "cdur": 1.4
+   },
+   "map_w": 640,
+   "map_dx": 150,
+   "map_y": 620
+  },
+  {
+   "type": "photo",
+   "start": 13,
+   "dur": 6,
+   "img": "dhamek-stupa-sarnath-1.jpg",
+   "focus": [
+    0.5,
+    0.35
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "warm",
+   "kicker": "Newest on the list \u00b7 2026",
+   "headline": [
+    "*Sarnath",
+    "where the Buddha",
+    "first taught"
+   ],
+   "pos": "low",
+   "tag": "UNESCO 2026"
+  },
+  {
+   "type": "photo",
+   "start": 19,
+   "dur": 6,
+   "img": "goa-beach-palolem-2.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.25,
+    1.05
+   ],
+   "grade": "warm",
+   "stat": {
+    "num": 7516,
+    "suffix": " km",
+    "label": "of coastline",
+    "at": 0.5,
+    "cdur": 1.6,
+    "from": 6000
+   },
+   "kicker": "Goa \u00b7 Kerala \u00b7 Andamans",
+   "headline": [
+    "Beaches",
+    "*most people",
+    "never hear of"
+   ],
+   "pos": "low"
+  },
+  {
+   "type": "photo",
+   "start": 25,
+   "dur": 6,
+   "img": "pangong-tso-lake-1.jpg",
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "zoom": [
+    1.05,
+    1.22
+   ],
+   "grade": "warm",
+   "stat": {
+    "num": 28,
+    "label": "states \u00b7 22 official languages",
+    "at": 0.5,
+    "cdur": 1.2
+   },
+   "kicker": "Ladakh \u00b7 4,350 m",
+   "headline": [
+    "Every region",
+    "is a *different",
+    "country"
+   ],
+   "pos": "low"
+  },
+  {
+   "type": "photo",
+   "start": 31,
+   "dur": 4,
+   "img": "amber-fort-jaipur-2.jpg",
+   "focus": [
+    0.4,
+    0.45
+   ],
+   "zoom": [
+    1.1,
+    1.25
+   ],
+   "grade": "warm",
+   "stat": {
+    "num": 9,
+    "suffix": "M+",
+    "label": "international visitors in 2025",
+    "at": 0.4,
+    "cdur": 1.0
+   },
+   "kicker": "Most visitors come from",
+   "headline": [
+    "*USA, UK,",
+    "Canada,",
+    "Australia"
+   ],
+   "pos": "low",
+   "hl_size": 130
+  },
+  {
+   "type": "end",
+   "start": 35,
+   "dur": 5,
+   "big": "Plan India with locals",
+   "small": "Suzu Travels \u00b7 DMC of India",
+   "cta": "DM \u201cINDIA\u201d for a free itinerary"
+  }
+ ]
+}
