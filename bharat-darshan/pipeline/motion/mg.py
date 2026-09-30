@@ -185,6 +185,7 @@ def build(spec_path, out_dir):
                 js.append(f'tl.fromTo("#{p}-it{i}",{{opacity:0,x:60}},{{opacity:1,x:0,duration:0.55,ease:"power3.out"}},{t:.3f});')
             items.append("</div>")
             inner.append("".join(items))
+            js.append(f'tl.fromTo("#{p}-list",{{opacity:0,y:30}},{{opacity:1,y:0,duration:0.5,ease:"power3.out"}},{S+sc.get("t_items",1.0)-0.2:.3f});')
         if typ == "end":
             inner.append(f'''<div class="end">
 <div class="halo" id="{p}-halo"></div><img class="logo" id="{p}-logo" src="assets/suzu-logo.png" alt="">
