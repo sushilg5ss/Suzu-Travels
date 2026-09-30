@@ -10,7 +10,7 @@ Scene types: hook | title | photo | beat | dial | stamp | end
 Shot keys: img, focus[fx,fy], zoom[z0,z1], pan[dx,dy], at (0..1 of scene), grade (warm|dark|mono),
            fit ("cover"|"contain"), width (display width in frame-widths, contain only),
            anchor[ax,ay] px, stat{num,prefix,suffix,label}, dial{cx,cy,r} (fractions of image width/height)
-Scene keys: headline[..], headline2[..], kicker, coords, stat, label_en, stamp[3], prop ("note10" + prop_img, prop_caption), cta,
+Scene keys: headline[..], headline2[..], kicker, coords, stat, label_en, stamp[3], prop ("note10" + prop_img, prop_caption, prop_value e.g. "₹100", prop_words, prop_bg CSS gradient), cta,
             pack_kicker / pack_title (end card, e.g. "कोणार्क · पुरी · भुवनेश्वर" / "पूरा टूर प्लान"),
             no_captions, custom_html (raw HTML placed in scene), custom_js (JS using tl, S=scene start, D=duration)
 """
@@ -85,9 +85,9 @@ def reveal_js(idp, lines, t0, step=0.09):
     return "\n".join(js)
 
 
-NOTE10 = '''<div class="note-wrap" id="{p}-note"><div class="note" id="{p}-notecard">
+NOTE10 = '''<div class="note-wrap" id="{p}-note"><div class="note" id="{p}-notecard"{style}>
 <svg class="note-guil" viewBox="0 0 760 360" preserveAspectRatio="none">{guil}</svg>
-<div class="note-10">₹10</div><div class="note-txt">दस रुपये</div>
+<div class="note-10">{val}</div><div class="note-txt">{words}</div>
 <div class="note-win"><img src="{img}" alt=""></div>
 <div class="note-cap">{cap}</div><div class="note-shine" id="{p}-shine"></div>
 </div></div>'''
@@ -187,7 +187,11 @@ def build(ep_dir):
         if typ in ("hook", "beat"):
             if sc.get("prop") == "note10":
                 wimg = prep_image(ep_dir, os.path.join(hf, "img"), sc.get("prop_img", "konark-sun-temple-wheel-3.jpg"), "warm")[0]
-                body.append(NOTE10.format(p=p, guil=guilloche(), img="img/" + wimg, cap=esc(sc.get("prop_caption", ep.get("place", "")))))
+                pv = sc.get("prop_value") or ep.get("prop_value") or "₹10"
+                pw = sc.get("prop_words") or ep.get("prop_words") or "दस रुपये"
+                pbg = sc.get("prop_bg") or ep.get("prop_bg")
+                body.append(NOTE10.format(p=p, guil=guilloche(), img="img/" + wimg, cap=esc(sc.get("prop_caption", ep.get("place", ""))),
+                                          val=esc(pv), words=esc(pw), style=(f' style="background:{pbg}"' if pbg else "")))
                 js.append(f'tl.fromTo("#{p}-notecard",{{y:900,rotation:-28,rotationX:55,opacity:0}},{{y:0,rotation:-6,rotationX:0,opacity:1,duration:1.1,ease:"expo.out"}},{S+0.35:.3f});')
                 js.append(f'tl.to("#{p}-notecard",{{rotation:-3,y:-18,duration:{D-1.5:.2f},ease:"sine.inOut"}},{S+1.45:.3f});')
                 js.append(f'tl.fromTo("#{p}-shine",{{xPercent:-160}},{{xPercent:260,duration:1.0,ease:"power2.inOut"}},{S+1.6:.3f});')

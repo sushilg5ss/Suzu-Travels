@@ -22,7 +22,7 @@ def get(url, tries=5):
         if code == b"200":
             return body
         if code in (b"429", b"503") and t < tries - 1:
-            time.sleep(15 * (t + 1)); continue
+            time.sleep(12 * (t + 1)); continue
         raise RuntimeError(f"HTTP {code.decode()} for {url}")
 
 
@@ -68,7 +68,11 @@ def main():
     credits = json.load(open(cred_path)) if os.path.exists(cred_path) else []
     seen = {c["title"] for c in credits}
     for q in queries:
-        for k, it in enumerate(search(q, n, min_w)):
+        try:
+            found = search(q, n, min_w)
+        except Exception as e:  # rate-limited search: skip this query, keep the rest
+            print("search failed", q, e); time.sleep(20); continue
+        for k, it in enumerate(found):
             if it["title"] in seen:
                 continue
             slug = re.sub(r"[^a-z0-9]+", "-", q.lower()).strip("-") + f"-{k+1}"
@@ -81,6 +85,7 @@ def main():
                 print("skip", it["title"], e); continue
             it["file"] = os.path.basename(path); it["query"] = q
             credits.append(it); seen.add(it["title"])
+            json.dump(credits, open(cred_path, "w"), ensure_ascii=False, indent=1)  # incremental: survives a timeout
             print(f"{it['file']:40s} {it['w']}x{it['h']} {it['license']:12s} {it['title'][:70]}")
     json.dump(credits, open(cred_path, "w"), ensure_ascii=False, indent=1)
 

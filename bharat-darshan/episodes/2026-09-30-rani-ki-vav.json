@@ -1,0 +1,420 @@
+{
+ "episode": 2,
+ "slug": "rani-ki-vav",
+ "place": "रानी की वाव",
+ "place_en": "Rani ki Vav",
+ "region": "ज़िला पाटन, गुजरात",
+ "coords": "23.8589° N, 72.1017° E",
+ "state_badge": "गुजरात",
+ "lines": [
+  {
+   "id": "l01",
+   "tts": "सौ रुपये का नोट पलटिए... उस पर एक मंदिर छपा है, जो ज़मीन के ऊपर नहीं... अंदर बना है।",
+   "caption": "₹100 का नोट पलटिए... उस पर एक मंदिर छपा है, जो ज़मीन के ऊपर नहीं... अंदर बना है।",
+   "exag": 0.7
+  },
+  {
+   "id": "l02",
+   "tts": "और सदियों तक, ये पूरा का पूरा... मिट्टी में दबा रहा।",
+   "exag": 0.65
+  },
+  {
+   "id": "l03",
+   "tts": "ये है, गुजरात के पाटन की... रानी की वाव।",
+   "exag": 0.6
+  },
+  {
+   "id": "l04",
+   "tts": "ग्यारहवीं सदी में, रानी उदयमती ने, राजा भीमदेव प्रथम की याद में, ये बावड़ी बनवाई।",
+   "caption": "11वीं सदी में, रानी उदयमती ने, राजा भीमदेव प्रथम की याद में, ये बावड़ी बनवाई।",
+   "exag": 0.55
+  },
+  {
+   "id": "l05",
+   "tts": "सात मंज़िल नीचे उतरती सीढ़ियाँ... करीब सत्ताईस मीटर गहरी।",
+   "caption": "7 मंज़िल नीचे उतरती सीढ़ियाँ... करीब 27 मीटर गहरी।",
+   "exag": 0.6
+  },
+  {
+   "id": "l06",
+   "tts": "और दीवारों पर, पाँच सौ से ज़्यादा बड़ी मूर्तियाँ... ज़्यादातर, भगवान विष्णु के अवतारों की।",
+   "caption": "और दीवारों पर, 500 से ज़्यादा बड़ी मूर्तियाँ... ज़्यादातर, भगवान विष्णु के अवतारों की।",
+   "exag": 0.6
+  },
+  {
+   "id": "l07",
+   "tts": "इसे बनाया गया, एक उल्टे मंदिर की तरह... क्योंकि यहाँ, पानी ही पवित्र था।",
+   "exag": 0.6
+  },
+  {
+   "id": "l08",
+   "tts": "पर असली रहस्य... इसके गायब होने में है।",
+   "exag": 0.75
+  },
+  {
+   "id": "l09",
+   "tts": "पास बहती सरस्वती नदी की बाढ़ ने, इसे धीरे-धीरे, गाद से भर दिया।",
+   "exag": 0.6
+  },
+  {
+   "id": "l10",
+   "tts": "सदियों बाद, बस कुआँ और कुछ खंभे ही, ऊपर दिखते थे।",
+   "exag": 0.6
+  },
+  {
+   "id": "l11",
+   "tts": "फिर उन्नीस सौ अस्सी के दशक में, पुरातत्व सर्वेक्षण ने इसे फिर से सँवारा... और दो हज़ार चौदह में, ये बनी, यूनेस्को विश्व धरोहर।",
+   "caption": "फिर 1980 के दशक में, पुरातत्व सर्वेक्षण (ASI) ने इसे फिर से सँवारा... और 2014 में, ये बनी, यूनेस्को विश्व धरोहर।",
+   "exag": 0.55
+  },
+  {
+   "id": "l12",
+   "tts": "तो अगली बार, सौ का नोट हाथ में आए... याद रखिएगा, आप मिट्टी से लौटी, एक रानी की विरासत थामे हुए हैं।",
+   "caption": "तो अगली बार, ₹100 का नोट हाथ में आए... याद रखिएगा, आप मिट्टी से लौटी, एक रानी की विरासत थामे हुए हैं।",
+   "exag": 0.65
+  },
+  {
+   "id": "l13",
+   "tts": "पाटन और गुजरात की यात्रा का पूरा प्लान, सुज़ू ट्रैवल्स के साथ।",
+   "exag": 0.55
+  },
+  {
+   "id": "l14",
+   "tts": "जुड़े रहिए भारत दर्शन के साथ... मिलते हैं अगले एपिसोड में।",
+   "exag": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "hook",
+   "lines": [
+    "l01",
+    "l02"
+   ],
+   "no_captions": true,
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-3.jpg",
+     "focus": [
+      0.45,
+      0.5
+     ],
+     "zoom": [
+      1.35,
+      1.15
+     ],
+     "grade": "dark"
+    }
+   ],
+   "headline": [
+    "ज़मीन के अंदर",
+    "बना मंदिर"
+   ],
+   "headline2": [
+    "सदियों तक मिट्टी में दबा"
+   ],
+   "prop": "note10",
+   "prop_caption": "रानी की वाव, पाटन",
+   "prop_img": "rani-ki-vav-pillars-4.jpg"
+  },
+  {
+   "id": "title",
+   "type": "title",
+   "lines": [
+    "l03"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-4.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "zoom": [
+      1.18,
+      1.02
+     ],
+     "pan": [
+      0,
+      40
+     ]
+    }
+   ],
+   "headline": [
+    "रानी की",
+    "वाव"
+   ],
+   "kicker": "ज़िला पाटन, गुजरात",
+   "coords": "23.8589° N · 72.1017° E"
+  },
+  {
+   "id": "queen",
+   "type": "photo",
+   "lines": [
+    "l04"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-3.jpg",
+     "focus": [
+      0.25,
+      0.45
+     ],
+     "zoom": [
+      1.05,
+      1.15
+     ],
+     "pan": [
+      -150,
+      0
+     ]
+    }
+   ],
+   "stat": {
+    "num": 11,
+    "suffix": "वीं सदी",
+    "label": "रानी उदयमती"
+   }
+  },
+  {
+   "id": "levels",
+   "type": "photo",
+   "lines": [
+    "l05"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-4.jpg",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "zoom": [
+      1.3,
+      1.05
+     ],
+     "grade": "mono"
+    }
+   ],
+   "stat": {
+    "num": 7,
+    "label": "मंज़िल · ~27 मीटर गहरी"
+   }
+  },
+  {
+   "id": "sculpt",
+   "type": "photo",
+   "lines": [
+    "l06"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-vishnu-1.jpg",
+     "focus": [
+      0.2,
+      0.45
+     ],
+     "zoom": [
+      1.1,
+      1.22
+     ],
+     "at": 0,
+     "stat": {
+      "num": 500,
+      "suffix": "+",
+      "label": "बड़ी मूर्तियाँ"
+     }
+    },
+    {
+     "img": "rani-ki-vav-vishnu-1.jpg",
+     "focus": [
+      0.82,
+      0.45
+     ],
+     "zoom": [
+      1.2,
+      1.08
+     ],
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "id": "inverted",
+   "type": "photo",
+   "lines": [
+    "l07"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-vishnu-2.jpg",
+     "focus": [
+      0.75,
+      0.35
+     ],
+     "zoom": [
+      1.2,
+      1.05
+     ],
+     "pan": [
+      150,
+      0
+     ],
+     "grade": "dark"
+    }
+   ],
+   "label_en": "INVERTED TEMPLE",
+   "custom_html": "<style>.label-en{font-size:48px;letter-spacing:.1em;color:#F2C84B}</style>"
+  },
+  {
+   "id": "secret",
+   "type": "beat",
+   "lines": [
+    "l08"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-4.jpg",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "zoom": [
+      1.0,
+      1.6
+     ],
+     "grade": "dark"
+    }
+   ],
+   "headline": [
+    "असली रहस्य…"
+   ]
+  },
+  {
+   "id": "silt",
+   "type": "photo",
+   "lines": [
+    "l09",
+    "l10"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-3.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "zoom": [
+      1.15,
+      1.3
+     ],
+     "grade": "dark"
+    }
+   ],
+   "custom_html": "<div id=\"rkv\" style=\"position:absolute;left:70px;top:560px;width:900px;height:720px;filter:drop-shadow(0 6px 18px rgba(0,0,0,.9))\">\n<div id=\"rkv-k\" style=\"position:absolute;left:0;top:-230px;width:760px;font-family:Tiro,serif;font-size:92px;line-height:1.25;color:#fff\">गाद में दबी<br><span style=\"color:#F2C84B\">सदियों तक</span></div>\n<svg viewBox=\"0 0 900 720\" width=\"900\" height=\"720\" style=\"position:absolute;left:0;top:0;overflow:visible\">\n<defs><clipPath id=\"rkv-clip\"><polygon points=\"40,90 126,90 126,152 212,152 212,214 298,214 298,276 384,276 384,338 470,338 470,400 556,400 556,462 642,462 642,524 700,524 700,90 40,90\"/></clipPath>\n<pattern id=\"rkv-pat\" width=\"24\" height=\"24\" patternUnits=\"userSpaceOnUse\"><rect width=\"24\" height=\"24\" fill=\"#6b4526\"/><circle cx=\"6\" cy=\"8\" r=\"2.2\" fill=\"#8a5d34\"/><circle cx=\"17\" cy=\"18\" r=\"1.6\" fill=\"#533419\"/></pattern></defs>\n<line x1=\"0\" y1=\"90\" x2=\"860\" y2=\"90\" stroke=\"#ffe7c2\" stroke-width=\"4\" stroke-dasharray=\"14 10\" opacity=\".8\"/>\n<text x=\"0\" y=\"70\" fill=\"#ffe7c2\" font-family=\"Baloo\" font-weight=\"700\" font-size=\"34\" opacity=\".9\">ज़मीन</text>\n<g id=\"rkv-pills\"><line class=\"rkv-pl\" x1=\"106\" y1=\"90\" x2=\"106\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/><line class=\"rkv-pl\" x1=\"192\" y1=\"152\" x2=\"192\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/><line class=\"rkv-pl\" x1=\"278\" y1=\"214\" x2=\"278\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/><line class=\"rkv-pl\" x1=\"364\" y1=\"276\" x2=\"364\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/><line class=\"rkv-pl\" x1=\"450\" y1=\"338\" x2=\"450\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/><line class=\"rkv-pl\" x1=\"536\" y1=\"400\" x2=\"536\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/><line class=\"rkv-pl\" x1=\"622\" y1=\"462\" x2=\"622\" y2=\"46\" stroke=\"#F2C84B\" stroke-width=\"7\" stroke-linecap=\"round\"/></g><g clip-path=\"url(#rkv-clip)\"><rect id=\"rkv-silt\" x=\"0\" y=\"560\" width=\"900\" height=\"600\" fill=\"url(#rkv-pat)\"/><rect id=\"rkv-silt2\" x=\"0\" y=\"560\" width=\"900\" height=\"10\" fill=\"#b58550\"/></g>\n<polyline id=\"rkv-out\" points=\"40,90 126,90 126,152 212,152 212,214 298,214 298,276 384,276 384,338 470,338 470,400 556,400 556,462 642,462 642,524 700,524 700,90\" fill=\"none\" stroke=\"#F2C84B\" stroke-width=\"9\" stroke-linejoin=\"round\" stroke-dasharray=\"2600\" stroke-dashoffset=\"2600\"/>\n<text x=\"70\" y=\"138\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">1</text><text x=\"156\" y=\"200\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">2</text><text x=\"242\" y=\"262\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">3</text><text x=\"328\" y=\"324\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">4</text><text x=\"414\" y=\"386\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">5</text><text x=\"500\" y=\"448\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">6</text><text x=\"586\" y=\"510\" class=\"rkv-n\" fill=\"#ffe7c2\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"34\">7</text>\n<g id=\"rkv-tops\"><rect x=\"700\" y=\"40\" width=\"80\" height=\"50\" fill=\"none\" stroke=\"#F2C84B\" stroke-width=\"7\"/></g>\n<rect x=\"700\" y=\"90\" width=\"80\" height=\"434\" fill=\"none\" stroke=\"#F2C84B\" stroke-width=\"7\" id=\"rkv-well\" opacity=\"0\"/>\n<line x1=\"812\" y1=\"90\" x2=\"812\" y2=\"524\" stroke=\"#fff\" stroke-width=\"4\" id=\"rkv-rule\" opacity=\"0\"/>\n<text x=\"640\" y=\"590\" fill=\"#fff\" font-family=\"Cinzel\" font-weight=\"900\" font-size=\"38\" id=\"rkv-27\" opacity=\"0\">~27m</text>\n</svg></div>",
+   "custom_js": "var L=Math.min(D,99);\ntl.fromTo(\"#rkv\",{opacity:0},{opacity:1,duration:0.4},S+0.1);\ntl.fromTo(\"#rkv-k\",{opacity:0,y:-30},{opacity:1,y:0,duration:0.7,ease:\"power3.out\"},S+0.3);\ntl.to(\"#rkv-out\",{strokeDashoffset:0,duration:1.6,ease:\"power2.inOut\"},S+0.3);\ntl.to(\"#rkv-well\",{opacity:1,duration:0.4},S+1.5);\ntl.fromTo(\".rkv-n\",{opacity:0},{opacity:1,duration:0.2,stagger:0.12},S+0.6);\ntl.fromTo(\".rkv-pl\",{opacity:0,scaleY:0,transformOrigin:\"50% 100%\"},{opacity:1,scaleY:1,duration:0.3,stagger:0.1},S+1.0);\ntl.to(\"#rkv-rule\",{opacity:.8,duration:0.4},S+1.8);tl.to(\"#rkv-27\",{opacity:1,duration:0.4},S+1.9);\ntl.to(\"#rkv-silt\",{attr:{y:90},duration:D*0.5,ease:\"power1.inOut\"},S+2.2);\ntl.to(\"#rkv-silt2\",{attr:{y:86},duration:D*0.5,ease:\"power1.inOut\"},S+2.2);\ntl.to(\".rkv-n\",{opacity:0,duration:0.6,stagger:-0.2},S+2.4);\ntl.to(\"#rkv-out\",{opacity:0.25,duration:1.0},S+2.2+D*0.4);\ntl.fromTo(\"#rkv-pills,#rkv-tops\",{filter:\"drop-shadow(0 0 0px #F2C84B)\"},{filter:\"drop-shadow(0 0 22px #F2C84B)\",duration:0.8,repeat:3,yoyo:true},S+2.4+D*0.5);"
+  },
+  {
+   "id": "unesco",
+   "type": "stamp",
+   "lines": [
+    "l11"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-4.jpg",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "zoom": [
+      1.02,
+      1.15
+     ]
+    }
+   ],
+   "stamp": [
+    "UNESCO",
+    "विश्व धरोहर",
+    "2014"
+   ]
+  },
+  {
+   "id": "payoff",
+   "type": "hook",
+   "lines": [
+    "l12"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-4.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "zoom": [
+      1.15,
+      1.3
+     ],
+     "grade": "dark"
+    }
+   ],
+   "prop": "note10",
+   "headline": [
+    "मिट्टी से लौटी",
+    "विरासत"
+   ],
+   "prop_caption": "रानी की वाव, पाटन",
+   "prop_img": "rani-ki-vav-pillars-4.jpg"
+  },
+  {
+   "id": "end",
+   "type": "end",
+   "lines": [
+    "l13",
+    "l14"
+   ],
+   "shots": [
+    {
+     "img": "rani-ki-vav-pillars-3.jpg",
+     "focus": [
+      0.4,
+      0.5
+     ],
+     "zoom": [
+      1.1,
+      1.2
+     ],
+     "grade": "dark",
+     "pan": [
+      300,
+      0
+     ]
+    }
+   ],
+   "cta": "कमेंट करें: अगला एपिसोड कहाँ?",
+   "pack_kicker": "पाटन · मोढेरा · अहमदाबाद"
+  }
+ ],
+ "title_hi": "₹100 के नोट पर ज़मीन के अंदर बना मंदिर",
+ "prop_value": "₹100",
+ "prop_words": "सौ रुपये",
+ "prop_bg": "linear-gradient(135deg,#4a3a6e,#8b78b3 45%,#5c4a85)",
+ "music_track": "Dhaka.mp3",
+ "hashtags": [
+  "BharatDarshan",
+  "RaniKiVav",
+  "Gujarat",
+  "IncredibleIndia",
+  "SuzuTravels"
+ ],
+ "sources": [
+  "https://en.wikipedia.org/wiki/Rani_ki_Vav",
+  "https://whc.unesco.org/en/list/922",
+  "https://gujarattourism.com/north-zone/patan/rani-ki-vav.html",
+  "https://www.theweek.in/leisure/society/2018/07/20/lavender-tinged-rs-100-note-feature-rani-ki-vav-motif.html",
+  "https://en.wikipedia.org/wiki/Indian_100-rupee_note"
+ ],
+ "music_prompt": "mysterious Indian sarod and drone, rising to a warm reveal"
+}
