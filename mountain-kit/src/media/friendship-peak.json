@@ -1,0 +1,11 @@
+{
+ "hero": {"kicker": "FRIENDSHIP PEAK · HIMACHAL",
+  "scenes": [
+   {"img": "px-35319376.jpg", "kind": "tilt", "h": 2560, "t": [0, 4.0], "from": {"y": 0}, "to": {"y": 480}},
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [3.4, 7.6], "from": {"scale": 1.02}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "t": [7.0, 10.8], "from": {"scale": 1.04, "x": 30, "y": -20}, "to": {"scale": 1.12, "x": -30, "y": 30}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [10.2, 14.0], "from": {"scale": 1.02, "x": 60, "y": 30}, "to": {"scale": 1.12, "x": -20, "y": 70}}],
+  "steps": [[2050, "MANALI"], [3300, "BAKARTHACH"], [3850, "LADY LEG BASE CAMP"], [4200, "SUMMIT CAMP"], [5289, "SUMMIT"]]},
+ "profile": {"title": "Friendship Peak route",
+  "camps": [{"name": "Manali", "m": 2050, "day": "Day 1"}, {"name": "Bakarthach", "m": 3300, "day": "Day 2"}, {"name": "Lady Leg base camp", "m": 3850, "day": "Day 3"}, {"name": "Summit camp", "m": 4200, "day": "Day 5"}, {"name": "Summit", "m": 5289, "day": "Day 6"}]}
+}

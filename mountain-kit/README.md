@@ -24,7 +24,7 @@ Owner: Suzu Travels (Sushil Kumar). The kit is built and run by the scheduled Su
    - Never write "registered DMC".
    - Phone / WhatsApp is **+91 70874 88961** only.
 5. **Original copy, true facts.**
-   - Every fact traces to the page's fact pack (`research/pages/<slug>.md`) and to a source listed on the page.
+   - Every fact traces to the page's fact pack (`research/pages/<slug>.md`), where each fact has its source URL. The page lists the official and neutral sources; operator sites may back route logistics inside the fact pack only.
    - No copied competitor text.
    - No links to or mentions of competitor operators (`build.py` refuses the known ones).
 6. **Photo honesty.** A photo may be labelled as a named peak only when `hf/photos/CREDITS.md` says it shows that peak.
@@ -40,7 +40,7 @@ Owner: Suzu Travels (Sushil Kumar). The kit is built and run by the scheduled Su
   - The 2025 Indo-Nepal Army ascent went via Nepal.
 - **Stok Kangri** is closed (2020 → no official reopening). **Kanamo:** access status conflicting, so verify it before any sales wording.
 - **IMF fees.**
-  - Base fees (US$500 / 700 / 1,000 by height band) are fine.
+  - Base fees for a team of two are fine: US$200 (IMF-listed trekking peaks), US$500 (up to 6,500 m), US$700 (6,501–7,000 m), US$1,000 (above 7,000 m), plus US$500 LO equipment hire (IMF peak-fee page, checked 1 Oct 2026). Do not claim a particular peak is on the trekking-peak list unless the IMF says so.
   - Per-member figures differ between IMF pages, so write "per-member charges apply".
   - There is no national garbage deposit. There is no new national IMF portal or fee waiver: the 2026 change is Uttarakhand's UKMPS portal and state-fee waiver for Indians.
 - **Visas.** A tourist visa covers open areas. The X (mountaineering) visa is for restricted areas. Always "confirm with the Indian mission".

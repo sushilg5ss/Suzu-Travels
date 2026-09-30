@@ -392,14 +392,15 @@ def hub():
 <ol class="szm-tl">{tl_html}</ol>
 <div class="szm-call" style="background:rgba(255,255,255,.06);border-color:rgba(207,230,245,.18);color:#e8f1f8"><p><b>Did you know?</b> In October 1965 an Indian and American team tried to place a plutonium-powered sensor on Nanda Devi to watch Chinese missile tests. A blizzard forced them to leave it at Camp IV, and the 1966 search never found it. The story became public in 1978.</p></div></section>
 <section class="szm-sec szm-cv" id="permits"><span class="k">Rules, permits and fees</span><h2>How to get permission to climb in India</h2>
-<div class="szm-answer"><p>Foreign teams apply to the <b>Indian Mountaineering Foundation (IMF)</b> at least <b>90 days</b> ahead. They climb with an IMF liaison officer and pay a peak fee that starts at <b>US$500</b> for peaks up to 6,500 m, plus per-member charges. Indian teams book peaks through the IMF too. Border areas need a protected-area permit, and sacred or military-zone peaks are off-limits.</p></div>
+<div class="szm-answer"><p>Foreign teams apply to the <b>Indian Mountaineering Foundation (IMF)</b> at least <b>90 days</b> ahead. They climb with an IMF liaison officer and pay a peak fee: <b>US$500</b> for a team of two on most peaks up to 6,500 m, or <b>US$200</b> on IMF-listed trekking peaks, plus per-member charges. Indian teams book peaks through the IMF too. Border areas need a protected-area permit, and sacred or military-zone peaks are off-limits.</p></div>
 <ol class="szm-steps"><li><b>Pick an open peak</b>In 2019 the government opened 137 peaks to foreigners: 47 in Himachal, 51 in Uttarakhand, 24 in Sikkim and 15 in J&amp;K. Uttarakhand added its own list of 83 in 2026.</li>
 <li><b>Apply to the IMF</b>Apply online at least 90 days before you go. Open-area permits usually come through fast; restricted areas can take two to six months.</li>
 <li><b>Visa and local permits</b>A tourist visa covers open areas; restricted areas need a mountaineering (X) visa, so confirm with the Indian mission. Kinnaur beyond Jangi, parts of Spiti and much of Ladakh also need a protected-area permit.</li>
 <li><b>Insurance</b>Your policy must cover ground and helicopter search and rescue plus altitude illness. Support staff must be insured too.</li>
 <li><b>Leave no trace</b>Carry all non-biodegradable waste down, retrieve ropes and gear, and include photo proof in your expedition report.</li></ol>
 <div class="szm-scroll"><table class="szm-tbl"><thead><tr><th>Peak height</th><th>IMF base fee (foreign team of 2)</th><th>Also payable</th></tr></thead><tbody>
-<tr><td>Up to 6,500 m</td><td class="n">US$500</td><td rowspan="3">Per-member charge for bigger teams, plus US$500 hire of the liaison officer's equipment and the LO's travel from Delhi</td></tr>
+<tr><td>IMF-listed trekking peaks</td><td class="n">US$200</td><td rowspan="4">Per-member charge for bigger teams, plus US$500 hire of the liaison officer's equipment and the LO's travel from Delhi</td></tr>
+<tr><td>Up to 6,500 m</td><td class="n">US$500</td></tr>
 <tr><td>6,501–7,000 m</td><td class="n">US$700</td></tr><tr><td>Above 7,000 m</td><td class="n">US$1,000</td></tr></tbody></table></div>
 <p class="szm-note">Source: IMF peak-fee page, checked {VERIFIED}. Fees change, so confirm with the IMF before you budget.</p>
 <h3 style="margin-top:28px">Climbing in Himachal Pradesh</h3>
@@ -541,7 +542,7 @@ def expeditions():
         ("What is the best season for peak climbing in Himachal?",
          "Around Manali (Friendship Peak, Deo Tibba, Hanuman Tibba): May–June and September–October. In rain-shadow Lahaul and Spiti (Yunam, Manirang, Mulkila): July to September. July and August bring monsoon landslides on the Kullu side."),
         ("How much does a guided climb cost?",
-         "It depends on the peak, the number of days, group size and nationality, so we quote each climb. The quote covers guides and support staff, camps, meals, permits, transfers and your hotel. Foreign nationals also pay IMF fees (from US$500 per team) and liaison officer charges; we show these separately."),
+         "It depends on the peak, the number of days, group size and nationality, so we quote each climb. The quote covers guides and support staff, camps, meals, permits, transfers and your hotel. Foreign nationals also pay IMF fees (US$200 per team of two on IMF-listed trekking peaks, US$500 on most other peaks up to 6,500 m) and liaison officer charges; we show these separately."),
         ("Do foreigners need a liaison officer?",
          "Yes, on IMF-permitted peaks every foreign expedition climbs with an IMF-appointed liaison officer. Apply at least 90 days ahead. Kinnaur and Spiti border areas also need a protected-area permit."),
         ("Is Stok Kangri open? What should I climb instead?",
@@ -597,7 +598,7 @@ def expeditions():
 <li><b>Weather and turnaround</b>Summit pushes follow forecast windows, with fixed turnaround times.</li>
 <li><b>Leave no trace</b>All non-biodegradable waste comes down the mountain, as IMF and state rules require.</li></ul></div></section>
 <section class="szm-sec szm-cv" id="permits"><span class="k">Permits and paperwork</span><h2>Permits for climbing in Himachal</h2>
-<p><b>Indian climbers</b> need the peak booked with the Indian Mountaineering Foundation (IMF) and the local forest and police formalities, which the outfitter handles. <b>Foreign climbers</b> need an IMF permit, applied for at least 90 days ahead. The IMF peak fee starts at US$500 for peaks up to 6,500 m, and a liaison officer must go with the team. Kinnaur beyond Jangi and parts of Spiti also need a protected-area permit.</p>
+<p><b>Indian climbers</b> need the peak booked with the Indian Mountaineering Foundation (IMF) and the local forest and police formalities, which the outfitter handles. <b>Foreign climbers</b> need an IMF permit, applied for at least 90 days ahead. The IMF fee for a team of two is US$200 on IMF-listed trekking peaks and US$500 on most other peaks up to 6,500 m, and a liaison officer must go with the team. Kinnaur beyond Jangi and parts of Spiti also need a protected-area permit.</p>
 <p>In <b>Kangra district, from 8 July to 15 October 2026</b>, trekkers on ten Dhauladhar routes must register at check posts. Full details are in our {link(HUB + "#permits", "guide to climbing permits in India")}.</p></section>
 <section class="szm-sec alt szm-cv" id="add"><span class="k">Make it one trip</span><h2>Add the rest of your Himachal trip</h2>
 <div class="szm-links"><a class="szm-link" href="/cabs/delhi-to-manali-taxi/"><span class="n">Delhi to Manali taxi</span><span class="c">Door to door, one-way or round trip</span></a>
