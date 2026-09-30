@@ -25,7 +25,11 @@ For each entry in `live.json`, including the 3 base pages:
    1. `python3 tools/chunks.py <slug>`
    2. `wp_update_page(id, content = chunk 0 + marker)`, then the replace steps
    3. verify the byte length and `cmp_live.py`
-3. **Broken links.** Fix them in the page file (or `gen_pages.py` for base pages), rebuild, and re-upload or apply a targeted `wp_replace_in_page`.
+3. **Broken links and content fixes.**
+   1. Fix them in the page file (or `gen_pages.py` for base pages).
+   2. Run `python3 tools/sync_plan.py --rebuild <slug>` BEFORE rebuilding. That gives small ops from what is live to the fixed build.
+   3. Apply the ops, then `gen_pages.py` + `build.py`, and verify.
+   4. If it says `"full"`, re-upload with `chunks.py`.
 4. **Meta.** Fix it with `wp_update_seo_meta`, then re-save the title to purge the cache.
 5. **Kit bugs.** Fix bugs in `gen_pages.py`, `kit.css`, `kit.js`, `build.py` or `tools/` in the kit, then re-sync every live page the change affects: the same drift procedure, one page at a time, verified. Keep kit changes small and backward-compatible, and bump the version line in `kit.css` and the README title.
 

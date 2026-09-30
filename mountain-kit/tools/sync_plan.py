@@ -3,6 +3,9 @@
 
     python3 tools/sync_plan.py <new-slug>            (live.json must already contain <new-slug>)
     python3 tools/sync_plan.py <new-slug> --page <slug>   (only one page)
+    python3 tools/sync_plan.py --rebuild <slug>      (after editing src/pages/<slug>.json or the kit: ops from the committed
+                                                      out/<slug>.min.html — what is live — to a fresh build; run it BEFORE
+                                                      build.py overwrites out/, then apply, verify, and build)
 
 For every live page P (from live.json, the three base pages included) it renders P twice with gen_pages.py — once with
 live.json WITHOUT <new-slug> (= what is on the site now) and once WITH it — and diffs the two one-line builds.
@@ -74,7 +77,27 @@ def plan(a, b):
     return ops if cur == b else None
 
 
+def rebuild(slug):
+    """Kit or page-file change on ONE live page: ops from the committed out/<slug>.min.html (what is live) to a fresh build."""
+    live = json.loads((KIT / "live.json").read_text())
+    a = (KIT / "out" / f"{slug}.min.html").read_text(encoding="utf-8")
+    b = render(slug, live)
+    out = {"ops": [], "full": [], "unchanged": [], "expected_bytes": len(b.encode("utf-8"))}
+    if a == b:
+        out["unchanged"].append(slug)
+    else:
+        ops = plan(a, b)
+        if ops is None or len(ops) > MAX_OPS or sum(len(f) + len(r) for f, r in ops) > MAX_CHARS:
+            out["full"].append(slug)
+        else:
+            out["ops"] = [{"page": slug, "id": live[slug]["id"], "find": f, "replace": r, "expected_count": 1} for f, r in ops]
+    json.dump(out, sys.stdout, ensure_ascii=False, indent=1)
+    print()
+
+
 def main():
+    if sys.argv[1] == "--rebuild":
+        return rebuild(sys.argv[2])
     new = sys.argv[1]
     only = sys.argv[sys.argv.index("--page") + 1] if "--page" in sys.argv else None
     live = json.loads((KIT / "live.json").read_text())

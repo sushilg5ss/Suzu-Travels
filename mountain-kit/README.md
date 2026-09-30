@@ -165,6 +165,8 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 1. **Generate and build:**
    - `python3 gen_pages.py <slug>` → `out/<slug>.html`.
    - `python3 build.py <slug>` → `out/<slug>.min.html`. It is **one line**, which WordPress wpautop cannot break, with the CSS and JS inlined.
+     - Content pages inline **only the CSS rules they use** (about 12 KB). The three base pages carry the full kit CSS.
+     - A typical peak page is about 40 KB, i.e. 2 upload chunks.
    - If the build refuses, fix the cause. Never publish a `--force` build.
 2. **Preview:**
    - `python3 tools/preview.py <slug>` puts the page in the real theme.
@@ -185,7 +187,14 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
    - `python3 tools/cmp_live.py <slug>` for the new page and every touched page: 0 text / 0 attr diffs.
    - Also check with `--plain` (cached copy), plus one H1, robots `index` and the right title.
    - `node tools/live_check.js <url> /tmp/x.png 390 844`: the hero video plays (readyState ≥ 2) and there is no overflow.
-8. **Commit** `src/`, `out/`, `live.json`, `BACKLOG.md` and `LOG.md`, then push.
+8. **Commit** `src/`, `out/`, `live.json`, `BACKLOG.md` and `LOG.md`, then push. `out/*.min.html` in the repo = what is live, which step 9 depends on.
+9. **Changing a live page later** (fact fix, new section, kit/template change):
+   1. Edit `src/pages/<slug>.json` or the kit.
+   2. `python3 tools/sync_plan.py --rebuild <slug>`: ops from the committed `out/<slug>.min.html` to a fresh build.
+   3. Apply the ops, then `python3 gen_pages.py <slug> && python3 build.py <slug>`.
+   4. Verify: stored length = new file size (content pages), and `cmp_live.py`.
+   5. If it reports `"full"`, re-upload the page with `chunks.py`.
+   6. Base pages: their live CSS may lag the kit CSS (targeted inserts were used on 1 Oct 2026). After a `kit.css` change, re-upload them in full.
 
 ## 8. WordPress traps (Royal MCP "Suzu Travels WordPress" connector)
 - **One-line content.** Content must be exactly the one-line `.min.html`. Multi-line HTML gets `<p>`/`<br>` injected by wpautop.
