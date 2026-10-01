@@ -1,0 +1,180 @@
+{
+ "title": "Suzu Travels — October to March: India's best season",
+ "duration": 40,
+ "music": "Long Road Ahead.mp3",
+ "_photos_todo": "Commons queries (CC0/PD/CC BY/BY-SA only): 'Hawa Mahal Jaipur' -> hawa-mahal.jpg; 'Alleppey backwaters houseboat' -> kerala-backwaters.jpg; 'Palolem beach' -> goa-beach.jpg; 'Solang Valley snow' -> solang-snow.jpg; 'Varanasi ghats evening' -> varanasi-ghats.jpg; 'Pangong Tso' -> pangong.jpg",
+ "scenes": [
+  {
+   "type": "photo",
+   "start": 0,
+   "dur": 5,
+   "img": "hawa-mahal.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.3,
+    1.1
+   ],
+   "grade": "warm",
+   "kicker": "October is here",
+   "headline": [
+    "India's *best",
+    "season",
+    "just opened"
+   ],
+   "pos": "low",
+   "t_head": 0.3
+  },
+  {
+   "type": "map",
+   "start": 5,
+   "dur": 8,
+   "kicker": "October → March",
+   "headline": [
+    "Where to go",
+    "*this winter"
+   ],
+   "pins": [
+    {
+     "city": "Delhi",
+     "at": 2.0,
+     "label": "Golden Triangle",
+     "side": "r"
+    },
+    {
+     "city": "Jaipur",
+     "at": 2.4,
+     "label": "Rajasthan",
+     "side": "l"
+    },
+    {
+     "city": "Varanasi",
+     "at": 2.8,
+     "label": "Varanasi"
+    },
+    {
+     "city": "Manali",
+     "at": 3.2,
+     "label": "Snow · Dec–Feb",
+     "side": "l"
+    },
+    {
+     "city": "Goa",
+     "at": 3.6,
+     "label": "Goa",
+     "side": "l"
+    },
+    {
+     "city": "Kochi",
+     "at": 4.0,
+     "label": "Kerala",
+     "side": "r"
+    }
+   ],
+   "map_w": 640,
+   "map_dx": 150,
+   "map_y": 620
+  },
+  {
+   "type": "photo",
+   "start": 13,
+   "dur": 6,
+   "img": "kerala-backwaters.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "warm",
+   "kicker": "Monsoon is over",
+   "headline": [
+    "Kerala turns",
+    "*green & calm"
+   ],
+   "pos": "low",
+   "tag": "Oct – Mar"
+  },
+  {
+   "type": "photo",
+   "start": 19,
+   "dur": 6,
+   "img": "solang-snow.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.2,
+    1.05
+   ],
+   "grade": "warm",
+   "kicker": "Himachal · Dec – Feb",
+   "headline": [
+    "Snow in",
+    "*Manali &",
+    "Solang Valley"
+   ],
+   "pos": "low"
+  },
+  {
+   "type": "photo",
+   "start": 25,
+   "dur": 6,
+   "img": "goa-beach.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.25,
+    1.05
+   ],
+   "grade": "warm",
+   "stat": {
+    "num": 1,
+    "suffix": "M+",
+    "label": "visitors in Dec 2025 · busiest month",
+    "at": 0.5,
+    "cdur": 1.0
+   },
+   "kicker": "Our tip",
+   "headline": [
+    "Book Dec–Jan",
+    "*early"
+   ],
+   "pos": "low"
+  },
+  {
+   "type": "list",
+   "start": 31,
+   "dur": 4,
+   "kicker": "Our tip",
+   "headline": [
+    "Save for *summer"
+   ],
+   "items": [
+    {
+     "a": "Ladakh & Spiti",
+     "b": "June – September"
+    },
+    {
+     "a": "Winter is for",
+     "b": "plains, desert & coast"
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "start": 35,
+   "dur": 5,
+   "big": "Plan your winter India trip",
+   "small": "Suzu Travels · DMC of India",
+   "cta": "DM “SEASON” for a free plan"
+  }
+ ]
+}
