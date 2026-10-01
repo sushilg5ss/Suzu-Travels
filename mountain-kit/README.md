@@ -73,7 +73,7 @@ Owner: Suzu Travels (Sushil Kumar). The kit is built and run by the scheduled Su
 | `media/<slug>/` | Encoded videos + posters (served from jsDelivr) · `compositions/` = source of every render |
 | `kit.css`, `kit.js` | Design system (scoped `.szm`) and the small page script (lazy videos, table filters/sort/search, hash links) |
 | `build.py` | One-line minified build + quality gate |
-| `tools/` | `sync_plan.py` (link updates on live pages), `chunks.py` (upload in chunks), `cmp_live.py` (live vs build), `preview.py` + `shots.js` (theme preview screenshots), `live_check.js` (live video/overflow/filter test) |
+| `tools/` | `sync_plan.py` (link updates on live pages), `chunks.py` (upload in chunks), `cmp_live.py` (live vs build), `linkcheck.py` (every link, video and poster URL), `preview.py` + `shots.js` (theme preview screenshots), `live_check.js` (live video/overflow/filter test) |
 | `agents/` | The four agents' standing instructions (the scheduled prompts are copies of these) |
 
 ## 4. Pipeline (one page per day)
@@ -203,7 +203,14 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
   - Always check live twice, with `?v=<random>` and plain.
   - "Delay JS" means kit.js runs only after the first user interaction. Test filters and lazy videos after a mouse move or scroll. The site-wide console errors `moment is not defined`, `setSettings` and `feather is not defined` are pre-existing: ignore them.
 - **Undo tokens.** Every Royal MCP write returns a 72-hour undo token; put it in LOG.md.
-- **Hostinger bot protection** may show a reCAPTCHA to headless Chromium after many loads. Keep headless loads to a few per run and use curl for the rest.
+- **Hostinger bot protection.**
+  - It may show a reCAPTCHA to headless Chromium after many loads. Keep headless loads to a few per run.
+  - A burst of requests from one IP also triggers it. On 1 Oct 2026, about 60 curl requests in 2 minutes did. Requests that send `Accept-Encoding` (browsers, `curl --compressed`) then get a 403 **"Checking your browser before accessing"** page for that IP. Requests without `Accept-Encoding` still get 200.
+  - This is NOT a broken page and NOT drift: never re-upload or "fix" a page because of it. Wait and retry.
+  - The tools handle it:
+    - `tools/linkcheck.py` spaces site requests 1.2 s apart and stops with exit code 3 on a challenge;
+    - `tools/cmp_live.py` waits and retries, then exits with code 3.
+  - Run headless checks (`live_check.js`) before the link check, not after it.
 - **Never:**
   - delete content, or change existing URLs or slugs;
   - touch the static homepage, menus, theme, plugins, PHP or .htaccess;
@@ -225,6 +232,8 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 - **Links and media:**
   - Every internal link returns 200.
   - Every video and poster URL returns 200.
+  - Check both with `python3 tools/linkcheck.py --all` (or `<slug>`). Exit code 0 means OK, 1 means a real failure, and 3 means the bot challenge (re-run later).
+  - External sources that refuse bots (403) are listed separately; confirm them with WebFetch.
   - The hero video plays at 390 px.
   - No horizontal overflow at 390 and 1440 px.
   - The sticky menu anchors work.

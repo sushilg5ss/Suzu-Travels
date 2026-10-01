@@ -14,9 +14,12 @@ For each entry in `live.json`, including the 3 base pages:
   1. `python3 gen_pages.py <slug> && python3 build.py <slug>` (the current kit build).
   2. `python3 tools/cmp_live.py <slug>`: expect 0 text and 0 attr diffs, 1 H1, robots index, the right title, and JSON-LD that parses.
   3. Run it once more with `--plain`.
-- **Links.** curl every internal link and every video and poster URL on the page. Each must return 200. Use HEAD requests, 0.3 s apart.
+- **Headless (do this before the link check).** At most 4 loads per run: rotate through the pages with `node tools/live_check.js <url> /tmp/qa.png 390 844` (and `1440 900` for one page). The hero plays, there is no overflow, and the list page's table filter works (pass `1`). **Look at the screenshot.**
+- **Links.** Run `python3 tools/linkcheck.py --all` once for all pages. It covers every internal link and every video and poster URL, spacing site requests 1.2 s apart.
+  - Exit code 0 = OK; 1 = real failures (fix them in Step 2).
+  - Exit code 3 = Hostinger's bot challenge: re-run once at the end of the run, and log it if it persists.
+  - "Blocked to bots" external sources are not failures; spot-check one with WebFetch.
 - **SEO meta.** `wp_get_seo_meta(id)`: the title is 60 characters or fewer, the description 110–155, the focus keyword is set, and there is no noindex.
-- **Headless.** At most 4 loads per run: rotate through the pages with `node tools/live_check.js <url> /tmp/qa.png 390 844` (and `1440 900` for one page). The hero plays, there is no overflow, and the list page's table filter works (pass `1`). **Look at the screenshot.**
 - **Adventure hub 11529.** Its "Mountaineering" tile and `#act-peak-climbing` card still exist: `wp_replace_in_page` dry run, searching for `href="/mountains-of-india/"`.
 
 ## Step 2 — fix (in this order)

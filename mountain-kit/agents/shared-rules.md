@@ -53,7 +53,11 @@ Then read:
   - edit pages outside this section. The exceptions are ONE contextual internal link into this section (SEO & QA only, on non-Elementor pages; check `_elementor_edit_mode` first) and re-adding the manual Mountaineering tile or card on the Adventure hub 11529 if they vanish.
 - **WP Rocket cache.** Verify live twice: `?v=<random>` and plain. A meta-only change does not purge the cache, so re-save the page with the same title to purge.
 - **Delay JS.** kit.js runs after the first interaction. Ignore the site-wide console errors `moment`, `setSettings` and `feather`.
-- **Hostinger bot protection.** Keep headless Chromium loads to a few per run and use curl for the rest.
+- **Hostinger bot protection.**
+  - Keep headless Chromium loads to a few per run, and do them before any link check.
+  - Space requests to suzutravels.com at least 1 s apart.
+  - A 403 page titled "Checking your browser before accessing" is the bot challenge for your container's IP, triggered by request bursts. It is not a broken page and not drift: never re-upload or "fix" anything because of it.
+  - `tools/cmp_live.py` and `tools/linkcheck.py` detect it, wait and retry, and exit with code 3. Re-run later in the run; if it persists, log `bot challenge` in LOG.md.
 
 **Lanes.** Each agent edits only what its file says:
 - **Research & Data:** `research/`, `data/`, BACKLOG status `researched` and re-ranking.
