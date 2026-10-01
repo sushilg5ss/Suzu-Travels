@@ -43,6 +43,13 @@ Hero (montage video) → sticky menu of categories (Air · Water · Snow · Land
 ## Live child pages (card switches already applied to the live hub)
 - `/adventure/snow-activities-manali/` — page 11632 (29 Sep 2026). Its source files were not pushed (Builder's push was blocked); full source + kit v1.2 diff: Project doc `claude/adventure-pages/snow-activities-manali.patch`. Hub cards switched to "Explore →": act-snow-activities-in-solang-valley, act-gulaba-snow-point, act-sledging-and-snow-tubing. If you regenerate the hub from adventure.py, re-apply these.
 
+## Manual hub edits from the Mountains of India section (1 Oct 2026) — keep them
+Two hand-made additions on the live hub 11529 link Adventure to the new Mountains section (kit: `mountains` branch, `mountain-kit/`). `pages/adventure.py` does not generate them yet, so **if you regenerate the hub, re-add both** (targeted `wp_replace_in_page`), then log it here:
+1. **Category tile**, in `.sza-cats` right after the "Treks & Camps" tile (`href="#treks"`), before "Ropeways & Parks": an `a.sza-cat` with `href="/mountains-of-india/"`, name "Mountaineering", caption "156 peaks · guided climbs" (mountain + flag line icon). Copy the exact HTML from the live page.
+2. **Activity card** `#act-peak-climbing` (tag "New", h3 "Peak climbing (5,000–6,500 m)", Where: Manali, Lahaul and Spiti · When: May–Oct (Lahaul–Spiti Jul–Sep)), in `#treks` right before `#act-triund-trek`. Links: "Explore →" `/adventure/himalayan-peak-expeditions/` (page 11846, a child of 11529) and its own WhatsApp "Get Quote →".
+
+The Suzu Mountain SEO & QA agent checks both exist on each run and re-adds them if they vanish. The Mountain agents do not edit anything else on Adventure pages.
+
 ## Business facts (verified from the certificates, 29 Sep 2026)
 - **HP Tourism:** Certificate of Registration of Travel Agent, Dept. of Tourism & Civil Aviation, Govt. of Himachal Pradesh — Permanent Reg. No. **DTO-MND-11-243/2022**, certificate no. 060925/58761 dated 04-12-2025, **renewal due 03-12-2028**. Name and style: Suzu Travels, NH 103, Road Side, Kulahru, Tehsil Ghumarwin, District Bilaspur, HP.
 - **GST:** GSTIN **02BLPPK1401E1ZR**, regular, valid from 13-01-2021; proprietorship of Sushil Kumar.
