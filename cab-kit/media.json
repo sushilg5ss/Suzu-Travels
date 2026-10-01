@@ -223,5 +223,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-rishikesh-taxi": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e601fcdffcb115f84c843f05a7d419980cf41219/cab-kit/media/delhi-to-rishikesh-taxi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e601fcdffcb115f84c843f05a7d419980cf41219/cab-kit/media/delhi-to-rishikesh-taxi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e601fcdffcb115f84c843f05a7d419980cf41219/cab-kit/media/delhi-to-rishikesh-taxi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e601fcdffcb115f84c843f05a7d419980cf41219/cab-kit/media/delhi-to-rishikesh-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e601fcdffcb115f84c843f05a7d419980cf41219/cab-kit/media/delhi-to-rishikesh-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e601fcdffcb115f84c843f05a7d419980cf41219/cab-kit/media/delhi-to-rishikesh-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
