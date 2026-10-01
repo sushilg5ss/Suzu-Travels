@@ -2,6 +2,7 @@
 
 Format: `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 12:20 IST · Research & Data · Kick-start re-fire: rows 2–4 (himachal-pradesh, hanuman-tibba, stok-kangri) were already researched at 11:55 in the same session, so nothing was repeated (capacity rule). Rows 5–7 (deo-tibba, yunam-peak, imf-permit-fees) are left for the Fri 2 Oct run.
 - 2026-10-01 11:55 IST · Research & Data · Fact packs: `himachal-pradesh`, `hanuman-tibba`, `stok-kangri` → researched (keywords: research/kw/pages_2026-10-01.json, 3 geos; ~22 sources checked). No `FIX NEEDED` (data) open; not Monday, no status sweep.
   - Dataset (overrides.json → build_data.py): Hanuman Tibba first ascent 1912 (Bruce's guide Führer and party, HJ 25 1964) + notable/sources; Stok Kangri status_note now cites the 21 Dec 2023 Ladakh administration order (The Statesman) on top of the 2020 ALTOA halt.
   - Found: Hanuman Tibba height still disputed (Survey of India point 19,450 ft ≈ 5,928 m; itineraries 5,932 m; dataset/Wikipedia 5,982 m) — kept 5,982 m, range stated once.
