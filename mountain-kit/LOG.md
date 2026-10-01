@@ -2,6 +2,10 @@
 
 Format (take the time from `TZ=Asia/Kolkata date '+%F %H:%M'`, not from the schedule): `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 10:40 IST · Claude (setup with Sushil) · Dataset re-sync and a public-dataset rule fix:
+  - **Dataset re-sync.** The research run's dataset changes went live on list page 11841 (129,340 → 129,476) with 6 targeted ops from `sync_plan.py --rebuild`: Hanuman Tibba first ascent 1912 (row, data-fa, note), and the CSV re-pinned to b5c19c0 in all 3 places (hero button, method link, Dataset JSON-LD). `cmp_live` 0/0 (cache-buster + plain). Stok Kangri's new status note is not shown on the list page, so nothing changed there.
+  - **Rule fix.** The research run had put an operator site (trekthehimalayas) in Stok Kangri's dataset sources, which flow into the public CSV. It was removed. `data/build_data.py` now drops operator domains (the `build.py` COMPETITORS list) from dataset sources and prints a warning.
+  - **Kit.** The TouristTrip schema name on non-peak pages now defaults to "Guided Himalayan peak climbs from Himachal" (override with `trip_name`). Live pages are unchanged.
 - 2026-10-01 10:15 IST · Claude (setup with Sushil) · Final QA + two fixes:
   - **Final QA:** `cmp_live` 0/0 on all 4 pages (cache-buster + plain); `linkcheck`: 93/94 URLs 200, CDC blocks bots but the page is fine (checked with WebFetch); 390 px: heroes play, no overflow.
   - **Kit v1.2, mobile hero crop:** `.szm-hero video,.szm-hero .bgimg{object-position:15% 50%}` at ≤ 640 px. On phones the video's right-side captions were showing half-cut ("FRIENDSH…") behind the page text. Applied live with one targeted `wp_replace_in_page` each on 11831 (69,456 → 69,513), 11841 (129,283 → 129,340), 11846 (55,088 → 55,145) and 11920 (39,975 → 40,032, equal to the build). Verified by the rule served live, `cmp_live` 0/0 and 390 px screenshots.
@@ -12,7 +16,7 @@ Format (take the time from `TZ=Asia/Kolkata date '+%F %H:%M'`, not from the sche
 - 2026-10-01 10:04 IST · Research & Data · Fact packs: `himachal-pradesh`, `hanuman-tibba`, `stok-kangri` → researched (keywords: research/kw/pages_2026-10-01.json, 3 geos; ~22 sources checked). No `FIX NEEDED` (data) open; not Monday, no status sweep.
   - Dataset (overrides.json → build_data.py): Hanuman Tibba first ascent 1912 (Bruce's guide Führer and party, HJ 25 1964) + notable/sources; Stok Kangri status_note now cites the 21 Dec 2023 Ladakh administration order (The Statesman) on top of the 2020 ALTOA halt.
   - Found: Hanuman Tibba height still disputed (Survey of India point 19,450 ft ≈ 5,928 m; itineraries 5,932 m; dataset/Wikipedia 5,982 m) — kept 5,982 m, range stated once.
-  - FIX NEEDED: SEO & QA — re-upload highest-peaks-in-india (dataset changed: Hanuman Tibba first-ascent year; Stok Kangri status note) and re-pin the CSV.
+  - ~~FIX NEEDED: SEO & QA — re-upload highest-peaks-in-india (dataset changed) and re-pin the CSV.~~ Done at 10:40 IST by Claude (see the entry above).
 - 2026-10-01 09:45 IST · Claude (setup with Sushil) · **Four Suzu Mountain agents scheduled** (cloud, automatic approval; prompts = `agents/*.md` + shared rules):
   - Research & Data, Mon/Wed/Fri 11:47 · `trig_011guuR4Cj49yiQcxSZbRFtg`
   - Visual Studio, daily 17:17 · `trig_01GJzzhGutGknu8iP33PfX7v`
