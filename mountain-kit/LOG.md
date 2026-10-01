@@ -2,6 +2,10 @@
 
 Format (take the time from `TZ=Asia/Kolkata date '+%F %H:%M'`, not from the schedule): `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 17:32 IST · Visual Studio · Media for 2 pages (BACKLOG → `media`):
+  - `himachal-pradesh`: words hero (UP TO 6,816 m · 47 PEAKS OPENED · MAY–JUN / SEP–OCT · START IN MANALI) hero.mp4 2.06 MB / -m 0.78 MB; ladder (Reo Purgyil, Leo Pargial, Manirang, Mulkila, Indrasan, Deo Tibba, Friendship) 0.26 MB. Photos px-38930225, px-32109154, px-20809686, px-37358046. Pinned 90ab9c95749a.
+  - `hanuman-tibba`: steps hero (2,050 Manali → 3,600 Beas Kund camp → 4,750 Tentu Pass → 5,050 summit camp → 5,982 summit) hero.mp4 1.53 MB / -m 0.59 MB; profile (7 camps, Day 1–9) 0.15 MB. Photos px-10254837 (NEW, Pexels 10254837, CAT logo, no mirror), px-38468349, px-20809686, px-9683997. Pinned 8e95bcfccc5d.
+  - Contact sheets checked; jsDelivr 200 on hero / -m / explainer for both. No FIX NEEDED (media) open. Stok Kangri (`researched`) is next.
 - 2026-10-01 11:35 IST · Claude (Sushil: "Homepage pe bhi laga do") · **Static homepage menu done:**
   - `public_html/index.html` was edited via the Hostinger File Browser API in Sushil's Chrome: the "Mountains" dropdown li (`<!--szmnt-->`) went in after the Adventure li, and `<style id="szmnt-nav">` before `</head>`.
   - Size 353,318 → 355,506 bytes; read-back SHA-256 matches (c05b7e44c69e…).
