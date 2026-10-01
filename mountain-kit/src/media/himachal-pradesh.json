@@ -1,0 +1,14 @@
+{
+ "hero": {"kicker": "HIGHEST PEAKS · HIMACHAL",
+  "words": [["UP TO", "6,816 m."], ["47 PEAKS", "OPENED."], ["MAY–JUN.", "SEP–OCT."], ["START IN", "MANALI."]],
+  "scenes": [
+   {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": [0, 3.8], "from": {"scale": 1.02}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-32109154.jpg", "kind": "tilt", "h": 2560, "t": [3.2, 7.0], "from": {"y": 0}, "to": {"y": 480}},
+   {"img": "px-20809686.jpg", "kind": "tilt", "h": 2560, "t": [6.4, 10.2], "from": {"y": 820}, "to": {"y": 940, "scale": 1.05}},
+   {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": [9.6, 13.0], "from": {"y": 250}, "to": {"y": 1200}}]},
+ "ladder": {"kicker": "HIMACHAL'S HIGH PEAKS",
+  "title": "Himachal's peaks, side by side",
+  "peaks": ["reo-purgyil", "leo-pargial", "manirang", "mulkila", "indrasan", "deo-tibba", "friendship-peak"],
+  "subs": {"reo-purgyil": "Kinnaur · highest", "leo-pargial": "Kinnaur", "manirang": "Kinnaur / Spiti", "mulkila": "Lahaul", "indrasan": "Kullu", "deo-tibba": "Kullu", "friendship-peak": "Kullu · Manali"},
+  "end": "26 Himachal peaks in our dataset"}
+}
