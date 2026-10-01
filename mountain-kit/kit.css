@@ -1,4 +1,4 @@
-/* Suzu Mountain Kit v1.1 (1 Oct 2026) — scoped to .szm. Inlined (minified) at the top of every /mountains-of-india/ page
+/* Suzu Mountain Kit v1.2 (1 Oct 2026) — scoped to .szm. Inlined (minified) at the top of every /mountains-of-india/ page
    and /adventure/himalayan-peak-expeditions/. Palette: night navy + glacier ice + Suzu gold. Never edit per page. */
 .page-content:has(.szm){padding-top:20px!important}
 .page-content:has(.szm) .page-header{margin-bottom:14px!important}
@@ -31,7 +31,7 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szm-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
 .szm-chips li{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.26);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:7px 13px;border-radius:999px;font-size:14px;font-weight:600;color:#fff}
 .szm-chips li b{color:var(--gold2);font-weight:800}
-@media(max-width:640px){.szm-chips li:nth-child(n+4){display:none}.szm-sub{font-size:15.5px}}
+@media(max-width:640px){.szm-chips li:nth-child(n+4){display:none}.szm-sub{font-size:15.5px}.szm-hero video,.szm-hero .bgimg{object-position:15% 50%}}
 .szm-btns{display:flex;flex-wrap:wrap;gap:12px}
 .szm-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:800;font-size:16px;text-decoration:none!important;transition:transform .15s ease,box-shadow .15s ease;line-height:1.2}
 .szm-btn:hover{transform:translateY(-2px)}

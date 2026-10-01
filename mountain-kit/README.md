@@ -1,4 +1,4 @@
-# Suzu Mountain Kit v1.1 (1 Oct 2026)
+# Suzu Mountain Kit v1.2 (1 Oct 2026)
 
 This kit is the design system, dataset, video pipeline and publishing toolkit for the **Mountains of India** section of suzutravels.com. It covers:
 - `/mountains-of-india/` and its child pages
@@ -158,6 +158,9 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 - Hero: under 2.5 MB desktop and 1 MB mobile.
 - Explainer: under 2 MB.
 - Text stays in the right 55% of the frame, because the page's own tagline sits on the left.
+- **Phones (≤ 640 px).** kit.css (v1.2) crops the hero to the left part of the frame (`object-position:15% 50%`), so the video's captions never show half-cut behind the page text.
+  - Keep the left ~45% of every hero frame free of text and visually alive: climbers, ridges, snow.
+  - Check this in the contact sheet.
 - Scenes must tile the loop: the first starts at 0, each next one starts about 0.6 s before the previous ends, and the last ends at 14 s (steps) or 13 s (words).
 - **Hosting:** videos are served from jsDelivr pinned to a commit, e.g. `https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@<sha>/mountain-kit/media/<slug>/hero.mp4`. The WordPress media library is for images only. Hero videos autoplay (preload=metadata, mobile gets the 960 w file); every other video lazy-loads.
 
