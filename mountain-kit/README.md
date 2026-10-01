@@ -254,11 +254,13 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 Child pages are listed in `live.json`, and their history is in LOG.md.
 
 ## 12. The agents
-| Agent | When (IST) | Job |
-|---|---|---|
-| Suzu Mountain Research & Data | Mon, Wed, Fri 11:47 | Fact packs for the next 3 pages, keywords, dataset upkeep, weekly status sweep |
-| Suzu Mountain Visual Studio | Daily 17:17 | HyperFrames media for the next researched page; visual upgrades |
-| Suzu Mountain Page Builder | Daily 19:37 | One new page per day, end to end |
-| Suzu Mountain SEO & QA | Sun, Tue, Thu, Sat 22:37 | QA of every page, fixes, re-syncs, internal links from the rest of the site |
+| Agent | When (IST) | Job | Scheduled task |
+|---|---|---|---|
+| Suzu Mountain Research & Data | Mon, Wed, Fri 11:47 | Fact packs for the next 3 pages, keywords, dataset upkeep, weekly status sweep | `trig_011guuR4Cj49yiQcxSZbRFtg` |
+| Suzu Mountain Visual Studio | Daily 17:17 | HyperFrames media for the next researched page; visual upgrades | `trig_01GJzzhGutGknu8iP33PfX7v` |
+| Suzu Mountain Page Builder | Daily 19:37 | One new page per day, end to end | `trig_011o83qJ3nDkWCi4kqVDEGXN` |
+| Suzu Mountain SEO & QA | Sun, Tue, Thu, Sat 22:37 | QA of every page, fixes, re-syncs, internal links from the rest of the site | `trig_019E5tsYSkuQUL6hiP4NrMrV` |
+
+All four run in the cloud with automatic approval, created 1 Oct 2026. To change a prompt, edit the file in `agents/` first, then update the scheduled task with the same text.
 
 Their full instructions are in `agents/`. They commit as `Suzu Mountain Agent <info@suzutravels.com>` and push to `mountains` only (`git pull --rebase` first; never force-push). Reports go to Sushil in simple Hinglish, with full page URLs.

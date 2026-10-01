@@ -2,6 +2,13 @@
 
 Format: `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 09:45 IST · Claude (setup with Sushil) · **Four Suzu Mountain agents scheduled** (cloud, automatic approval; prompts = `agents/*.md` + shared rules):
+  - Research & Data, Mon/Wed/Fri 11:47 · `trig_011guuR4Cj49yiQcxSZbRFtg`
+  - Visual Studio, daily 17:17 · `trig_01GJzzhGutGknu8iP33PfX7v`
+  - Page Builder, daily 19:37 · `trig_011o83qJ3nDkWCi4kqVDEGXN` (push + email on finish)
+  - SEO & QA, Sun/Tue/Thu/Sat 22:37 · `trig_019E5tsYSkuQUL6hiP4NrMrV`
+
+  Kick-start: Research fired once today (Thu) for BACKLOG rows 2–4 (himachal-pradesh, hanuman-tibba, stok-kangri), so today's Visual Studio and Page Builder runs have researched pages. README §12 now lists the task IDs.
 - 2026-10-01 05:05 IST · Claude (first pipeline run, end to end) · **Friendship Peak LIVE:** https://suzutravels.com/mountains-of-india/friendship-peak/ (page **11920**, parent 11831).
   - Fact pack, and media (hero 1.83 MB + mobile 0.65 MB, route profile 0.14 MB) pinned at 8e1bcb9.
   - Content 39,975 bytes, 2 chunks, stored length verified.
