@@ -11,7 +11,7 @@ Slug rule: `<from>-to-<to>-taxi` (routes), `<city>-taxi-service` (city pages), `
 | # | Slug | Main keyword | ~Vol/mo | Notes |
 |---|---|---|---|---|
 | 1 | [x] delhi-to-haridwar-taxi — LIVE 2026-09-30 https://suzutravels.com/cabs/delhi-to-haridwar-taxi/ (ID 11785) | delhi to haridwar taxi | 12,000 | Also "haridwar to delhi", Kanwar/Ganga Dussehra peak notes; link Char Dham packages |
-| 2 | [ ] delhi-to-rishikesh-taxi | delhi to rishikesh taxi | 5,100 | Via Delhi–Dehradun Expressway / Meerut; rafting → link /adventure/ only if a page exists |
+| 2 | [x] delhi-to-rishikesh-taxi — LIVE 2026-10-01 https://suzutravels.com/cabs/delhi-to-rishikesh-taxi/ (ID 11964) | delhi to rishikesh taxi | 5,100 | Via Delhi–Dehradun Expressway / Meerut; rafting → link /adventure/ only if a page exists |
 | 3 | [ ] delhi-to-amritsar-taxi | delhi to amritsar taxi | 3,400 | Golden Temple, Wagah; Amritsar → Dharamshala/Dalhousie onward |
 | 4 | [ ] delhi-to-mussoorie-taxi | delhi to mussoorie taxi | 3,100 | Via Dehradun; Kempty, Dhanaulti add-ons |
 | 5 | [ ] shimla-to-manali-taxi | shimla to manali taxi | 2,500 | Via Mandi/Kullu, Pandoh dam; Kufri/Narkanda option |
