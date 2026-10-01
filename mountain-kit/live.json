@@ -33,5 +33,15 @@
   "blurb": "5,289 m · the classic first summit above Manali",
   "added": "2026-10-01",
   "commercial": true
+ },
+ "himachal-pradesh": {
+  "id": 11995,
+  "path": "/mountains-of-india/himachal-pradesh/",
+  "kind": "state",
+  "label": "Peaks of Himachal Pradesh",
+  "blurb": "26 peaks · Reo Purgyil 6,816 m to Churdhar",
+  "added": "2026-10-01",
+  "state": "himachal-pradesh",
+  "commercial": true
  }
 }
