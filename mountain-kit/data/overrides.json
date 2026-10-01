@@ -1,6 +1,33 @@
 {
- "Zemu Gap Peak": {"notable": "A subsidiary summit of the Kangchenjunga massif rather than an independent mountain; no known attempts."},
- "Chiumo": {"notable": "No documented ascent; recent attempts have come from the south."},
- "Nanda Khat": {"notable": "Sources give different first-ascent years; 1972 is the most cited."},
- "Chombu": {"notable": "No documented ascent. British attempts in 2019 and 2022 turned back; climbing is tightly controlled near the Tibet border."}
+ "Zemu Gap Peak": {
+  "notable": "A subsidiary summit of the Kangchenjunga massif rather than an independent mountain; no known attempts."
+ },
+ "Chiumo": {
+  "notable": "No documented ascent; recent attempts have come from the south."
+ },
+ "Nanda Khat": {
+  "notable": "Sources give different first-ascent years; 1972 is the most cited."
+ },
+ "Chombu": {
+  "notable": "No documented ascent. British attempts in 2019 and 2022 turned back; climbing is tightly controlled near the Tibet border."
+ },
+ "Hanuman Tibba": {
+  "first_ascent_year": 1912,
+  "first_ascent_by": "Bruce's guide Führer and party (recorded in the Himalayan Journal, 1964)",
+  "notable": "Called the 'Solang Weisshorn' in early accounts; published heights range from 5,860 m to 5,982 m. Wikipedia calls it the highest peak of Kangra district.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hanuman_Tibba",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh",
+   "https://himalayanclub.org/hj/25/22/expeditions-and-notes-25/"
+  ]
+ },
+ "Stok Kangri": {
+  "status_note": "Closed: the All Ladakh Tour Operators Association stopped climbs from 2020 (over-tourism, Stok village water source, glacier retreat); on 21 Dec 2023 the Ladakh administration closed 'all kinds of expeditions' with immediate effect, citing depletion of the Stok glacier. No reopening found as of Oct 2026.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Stok_Kangri",
+   "https://trekthehimalayas.com/stok-kangri-trek",
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html",
+   "https://www.outdoorjournal.com/exclusive-why-climbing-was-banned-on-indias-most-popular-trans-himalayan-trekking-peak/"
+  ]
+ }
 }

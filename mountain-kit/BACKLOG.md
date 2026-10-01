@@ -21,9 +21,9 @@ The rank weighs four things: search demand (Keyword Planner, 1 Oct 2026), Himach
 | # | Status | Slug (URL) | Kind | Data key | Focus keyword (monthly searches) | SEO title (≤ 60) | Sell? | Notes |
 |---|---|---|---|---|---|---|---|---|
 | 1 | live 2026-10-01 | `friendship-peak` | peak | peak_id friendship-peak | friendship peak (6,600 + trek 1,900) | Friendship Peak Manali (5,289 m): Route, Itinerary & Season | yes | Top commercial page. Solang–Bakarthach–Lady Leg route; profile video. |
-| 2 | todo | `himachal-pradesh` | state | state himachal-pradesh | peaks in himachal pradesh (1,900) | Highest Peaks in Himachal Pradesh: List & Climbing Guide | yes | Table where state=himachal-pradesh; ladder of 5–7 HP peaks; links every HP peak page. |
-| 3 | todo | `hanuman-tibba` | peak | peak_id hanuman-tibba | hanuman tibba (2,900) | Hanuman Tibba (5,982 m): Route, Grade & Expedition Guide | yes | Height quoted 5,860–5,982 m: state the range once. |
-| 4 | todo | `stok-kangri` | peak | peak_id stok-kangri | stok kangri (2,900; intl 480) | Stok Kangri 2026: Is It Open? Status & Best Alternatives | no | CLOSED since 2020 — never sell it. Funnel to Yunam, Friendship Peak, Kang Yatse. |
+| 2 | researched | `himachal-pradesh` | state | state himachal-pradesh | peaks in himachal pradesh (1,900) | Highest Peaks in Himachal Pradesh: List & Climbing Guide | yes | Table where state=himachal-pradesh; ladder of 5–7 HP peaks; links every HP peak page. |
+| 3 | researched | `hanuman-tibba` | peak | peak_id hanuman-tibba | hanuman tibba (2,900) | Hanuman Tibba (5,982 m): Route, Grade & Expedition Guide | yes | Height quoted 5,860–5,982 m: state the range once. |
+| 4 | researched | `stok-kangri` | peak | peak_id stok-kangri | stok kangri (2,900; intl 480) | Stok Kangri 2026: Is It Open? Status & Best Alternatives | no | CLOSED since 2020 — never sell it. Funnel to Yunam, Friendship Peak, Kang Yatse. |
 | 5 | todo | `deo-tibba` | peak | peak_id deo-tibba | deo tibba (1,300) | Deo Tibba (6,001 m): Expedition Route, Itinerary & Season | yes | Jagatsukh–Chika–Seri–Duhangan Col route; profile video. |
 | 6 | todo | `yunam-peak` | peak | peak_id mount-yunam | yunam peak (1,600) | Yunam Peak (6,111 m): Route, Itinerary & Best Season | yes | Easiest 6,000er angle; Bharatpur / Baralacha La base. |
 | 7 | todo | `imf-permit-fees` | guide | - | imf permit / peak fees india | IMF Climbing Permit & Peak Fees in India (USD Guide) | yes | Words hero. Fees in USD are information (allowed). No Suzu prices. |

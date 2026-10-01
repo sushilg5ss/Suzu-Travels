@@ -3520,7 +3520,7 @@
   "fa": 1951,
   "fa_by": "",
   "status": "closed",
-  "status_note": "Closed to climbing and trekking since 2020 (All Ladakh Tour Operators Association / LAHDC order citing over-tourism and glacier depletion); operators report it still closed for 2025–26.",
+  "status_note": "Closed: the All Ladakh Tour Operators Association stopped climbs from 2020 (over-tourism, Stok village water source, glacier retreat); on 21 Dec 2023 the Ladakh administration closed 'all kinds of expeditions' with immediate effect, citing depletion of the Stok glacier. No reopening found as of Oct 2026.",
   "grade": "trekking peak",
   "grade_note": "Non-technical but very high (8–14 h summit day); ideal first 6,000er when open",
   "season": "Jun–Sep",
@@ -3531,7 +3531,8 @@
   "sources": [
    "https://en.wikipedia.org/wiki/Stok_Kangri",
    "https://trekthehimalayas.com/stok-kangri-trek",
-   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html",
+   "https://www.outdoorjournal.com/exclusive-why-climbing-was-banned-on-indias-most-popular-trans-himalayan-trekking-peak/"
   ]
  },
  {
@@ -3693,8 +3694,8 @@
   "where": "Himachal Pradesh",
   "range": "Dhauladhar / Pir Panjal (Manali)",
   "area": "Kullu–Kangra",
-  "fa": null,
-  "fa_by": "",
+  "fa": 1912,
+  "fa_by": "Bruce's guide Führer and party (recorded in the Himalayan Journal, 1964)",
   "status": "climbed",
   "status_note": "West spur direct and north face still unclimbed (routes, not peak).",
   "grade": "technical",
@@ -3703,10 +3704,11 @@
   "base": "Manali → Solang",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Highest peak of Kangra district.",
+  "notable": "Called the 'Solang Weisshorn' in early accounts; published heights range from 5,860 m to 5,982 m. Wikipedia calls it the highest peak of Kangra district.",
   "sources": [
    "https://en.wikipedia.org/wiki/Hanuman_Tibba",
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh",
+   "https://himalayanclub.org/hj/25/22/expeditions-and-notes-25/"
   ]
  },
  {
