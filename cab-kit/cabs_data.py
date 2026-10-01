@@ -76,6 +76,7 @@ PLACES = {
     "Mashobra": (31.13, 77.23), "Nainital": (29.38, 79.46), "Agra": (27.18, 78.01), "Jaipur": (26.91, 75.79),
     "Meerut": (28.98, 77.71), "Khatauli": (29.28, 77.73), "Muzaffarnagar": (29.47, 77.70), "Narsan": (29.71, 77.87),
     "Roorkee": (29.87, 77.89), "Bahadarabad": (29.92, 78.04),
+    "Shivpuri": (30.14, 78.39), "Jolly Grant": (30.19, 78.18), "Doiwala": (30.18, 78.12),
 }
 
 # every route card shown anywhere (hub grid, "more routes"); page = slug when a page exists
@@ -97,7 +98,7 @@ ROUTES = [
     dict(slug=None, a="Chandigarh", b="Dharamshala", km=240, t="5.5–6.5 hrs", f=1.1),
     dict(slug=None, a="Pathankot", b="Dalhousie", km=80, t="2.5–3 hrs", f=1.1),
     dict(slug="delhi-to-haridwar-taxi", a="Delhi", b="Haridwar", km=220, t="4.5–5.5 hrs", f=0.85),
-    dict(slug=None, a="Delhi", b="Rishikesh", km=240, t="5–6 hrs", f=0.85),
+    dict(slug="delhi-to-rishikesh-taxi", a="Delhi", b="Rishikesh", km=240, t="5–6 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Mussoorie", km=280, t="5–6 hrs", f=0.95),
     dict(slug=None, a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
