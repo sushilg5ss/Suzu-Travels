@@ -9,6 +9,7 @@ Each one is re-sized for HyperFrames scenes:
 
 | File | Kind / size | Shows | Mirror? | Notes |
 |---|---|---|---|---|
+| px-10254837.jpg | land 2112×1408 | Back view of a roped line of climbers with ice axes on a snow slope, rocks on the left | **no** | CAT logo on the yellow pack. Climbers fill the left half (good for the phone crop). Added 1 Oct 2026, pexels.com/photo/10254837 |
 | px-15148510.jpg | land 2112×1408 | Aerial view of a vast snowfield with a line of roped climbers | ok | Great "scale" shot for any page |
 | px-20809686.jpg | tilt 1920×2560 | Orange tent glowing at night on snow, under a starry sky | ok | "High camp" scene |
 | px-30701907.jpg | land 2112×1408 | **Kangchenjunga** at sunrise, verified 30 Sep 2026 | **no** | The only named-peak photo. Use it for Kangchenjunga or India's highest, never as any other peak |

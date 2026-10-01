@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"SZ";src:url("assets/pjs-800.woff2") format("woff2");font-weight:800}
+@font-face{font-family:"SZ";src:url("assets/pjs-700.woff2") format("woff2");font-weight:700}
+@font-face{font-family:"SZ";src:url("assets/pjs-500.woff2") format("woff2");font-weight:500}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#06121f}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"SZ",sans-serif}
+
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse at 80% 10%,#16395c 0%,#0b1f33 45%,#06121f 100%)}
+#all{position:absolute;inset:0}
+.gl{position:absolute;left:230px;width:1570px;height:1px;background:rgba(207,230,245,.2);transform-origin:0 50%}
+.gt{position:absolute;left:40px;font-size:22px;font-weight:700;color:rgba(207,230,245,.6)}
+.dot{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid #d4a24c}
+.dot.big{background:#d4a24c;border-color:#fff;box-shadow:0 0 0 10px rgba(212,162,76,.25)}
+.lab{position:absolute;width:220px;text-align:center;color:#fff;background:rgba(6,18,31,.66);border:1px solid rgba(207,230,245,.18);border-radius:14px;padding:8px 8px 10px}
+.lab .h{font-size:32px;font-weight:800;font-variant-numeric:tabular-nums} .lab .n{font-size:21px;font-weight:700;color:#f3d98f} .lab .s{font-size:17px;color:rgba(207,230,245,.75)}
+.lab.big{border-color:rgba(243,217,143,.6)} .lab.big .h{color:#f3d98f;font-size:40px}
+#ttl{position:absolute;left:60px;top:54px} #ttl .k{font-size:24px;font-weight:800;letter-spacing:.3em;color:#d4a24c} #ttl .t{font-size:52px;font-weight:800;color:#fff;margin-top:4px}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+<div class="bg clip" data-start="0" data-duration="12" data-track-index="0"></div>
+<div id="all" class="clip" data-start="0" data-duration="12" data-track-index="1"><div class="gl" style="top:900px"></div><div class="gt" style="top:872px">2,000 m</div><div class="gl" style="top:770px"></div><div class="gt" style="top:742px">3,000 m</div><div class="gl" style="top:640px"></div><div class="gt" style="top:612px">4,000 m</div><div class="gl" style="top:510px"></div><div class="gt" style="top:482px">5,000 m</div><div class="gl" style="top:380px"></div><div class="gt" style="top:352px">6,000 m</div><div class="gl" style="top:250px"></div><div class="gt" style="top:222px">7,000 m</div>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f78b7" stop-opacity=".55"/><stop offset="1" stop-color="#0b1f33" stop-opacity=".1"/></linearGradient></defs>
+<path id="area" d="M270 900 L270 894 L518 731 L767 692 L1015 601 L1263 542 L1512 504 L1760 382 L1760 900 Z" fill="url(#ag)"/><polyline id="rl" points="270,894 518,731 767,692 1015,601 1263,542 1512,504 1760,382" fill="none" stroke="#f3d98f" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1595" stroke-dashoffset="1595"/></svg>
+<div class="dot" id="d0" style="left:259px;top:882px"></div><div class="lab" id="l0" style="left:160px;top:758px"><div class="h">2,050 m</div><div class="n">Manali</div><div class="s">Day 1</div></div><div class="dot" id="d1" style="left:507px;top:720px"></div><div class="lab" id="l1" style="left:408px;top:757px"><div class="h">3,300 m</div><div class="n">Bakarthach</div><div class="s">Day 2</div></div><div class="dot" id="d2" style="left:756px;top:681px"></div><div class="lab" id="l2" style="left:657px;top:556px"><div class="h">3,600 m</div><div class="n">Beas Kund</div><div class="s">Day 3</div></div><div class="dot" id="d3" style="left:1004px;top:590px"></div><div class="lab" id="l3" style="left:905px;top:627px"><div class="h">4,300 m</div><div class="n">Camp 1</div><div class="s">Day 5</div></div><div class="dot" id="d4" style="left:1252px;top:532px"></div><div class="lab" id="l4" style="left:1153px;top:406px"><div class="h">4,750 m</div><div class="n">Tentu Pass</div><div class="s">Day 7</div></div><div class="dot" id="d5" style="left:1501px;top:492px"></div><div class="lab" id="l5" style="left:1402px;top:530px"><div class="h">5,050 m</div><div class="n">Summit camp</div><div class="s">Day 8</div></div><div class="dot big" id="d6" style="left:1749px;top:371px"></div><div class="lab big" id="l6" style="left:1650px;top:246px"><div class="h">5,982 m</div><div class="n">Summit</div><div class="s">Day 9</div></div>
+<div id="ttl"><div class="k">ALTITUDE PROFILE</div><div class="t">Hanuman Tibba route</div></div>
+</div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#d0",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},1.60);tl.fromTo("#l0",{opacity:0,y:12},{opacity:1,y:0,duration:.35},1.65);tl.fromTo("#d1",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},2.77);tl.fromTo("#l1",{opacity:0,y:12},{opacity:1,y:0,duration:.35},2.82);tl.fromTo("#d2",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},3.93);tl.fromTo("#l2",{opacity:0,y:12},{opacity:1,y:0,duration:.35},3.98);tl.fromTo("#d3",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},5.10);tl.fromTo("#l3",{opacity:0,y:12},{opacity:1,y:0,duration:.35},5.15);tl.fromTo("#d4",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},6.27);tl.fromTo("#l4",{opacity:0,y:12},{opacity:1,y:0,duration:.35},6.32);tl.fromTo("#d5",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},7.43);tl.fromTo("#l5",{opacity:0,y:12},{opacity:1,y:0,duration:.35},7.48);tl.fromTo("#d6",{scale:0,opacity:0},{scale:1,opacity:1,duration:.3,ease:"back.out(2)"},8.60);tl.fromTo("#l6",{opacity:0,y:12},{opacity:1,y:0,duration:.35},8.65);tl.fromTo("#rl",{strokeDashoffset:1595},{strokeDashoffset:0,duration:7.00,ease:"none"},1.6);tl.fromTo("#area",{opacity:0},{opacity:1,duration:1.2},1.2);tl.fromTo("#ttl",{opacity:0,y:16},{opacity:1,y:0,duration:.6},.2);tl.fromTo(".gl",{scaleX:0},{scaleX:1,duration:1,stagger:.06},.4);tl.fromTo(".gt",{opacity:0},{opacity:1,duration:.4,stagger:.06},.6);tl.to("#all",{opacity:0,duration:.6},11.4);
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script></body></html>

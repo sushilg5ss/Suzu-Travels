@@ -1,0 +1,141 @@
+{
+ "hero": {
+  "kicker": "HANUMAN TIBBA · HIMACHAL",
+  "scenes": [
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": -20
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 30
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    2050,
+    "MANALI"
+   ],
+   [
+    3600,
+    "BEAS KUND CAMP"
+   ],
+   [
+    4750,
+    "TENTU PASS"
+   ],
+   [
+    5050,
+    "SUMMIT CAMP"
+   ],
+   [
+    5982,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Hanuman Tibba route",
+  "sub": "Manali to the 5,982 m summit · camp heights are approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Day 1"
+   },
+   {
+    "name": "Bakarthach",
+    "m": 3300,
+    "day": "Day 2"
+   },
+   {
+    "name": "Beas Kund",
+    "m": 3600,
+    "day": "Day 3"
+   },
+   {
+    "name": "Camp 1",
+    "m": 4300,
+    "day": "Day 5"
+   },
+   {
+    "name": "Tentu Pass",
+    "m": 4750,
+    "day": "Day 7"
+   },
+   {
+    "name": "Summit camp",
+    "m": 5050,
+    "day": "Day 8"
+   },
+   {
+    "name": "Summit",
+    "m": 5982,
+    "day": "Day 9"
+   }
+  ]
+ }
+}
