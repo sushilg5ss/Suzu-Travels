@@ -222,7 +222,7 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 - **Header menu (1 Oct 2026, done with Sushil).** Primary Menu 5 has a top-level "Mountains" item (11958) with 4 links, plus "Peak climbing & mountaineering" (11963) under Adventure. A CSS block after the Design Agent block in Additional CSS keeps 11 items on one row.
   - Menus stay human-only: agents never add pages to the menu.
   - After any menu change, WP Rocket needs "Clear and Preload Cache" in wp-admin; menu edits through the connector do not purge the cache.
-  - The static homepage has its own nav. Its tested "Mountains" snippet is `site/homepage-nav-mountains.html`, not yet applied.
+  - The static homepage has its own nav. The same "Mountains" dropdown was applied there on 1 Oct 2026 from `site/homepage-nav-mountains.html` (markers `<!--szmnt-->` and `#szmnt-nav`; backup `public_html/index.html.pre-mountains-menu-2026-10-01`).
 - **Mountain pages in the site sitemap.** Rank Math includes new pages automatically. The site-wide Indexing & Housekeeping agent handles indexing requests.
 
 ## 9. Quality gate (the SEO & QA agent checks every live page)

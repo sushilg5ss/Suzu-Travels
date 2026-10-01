@@ -2,6 +2,11 @@
 
 Format (take the time from `TZ=Asia/Kolkata date '+%F %H:%M'`, not from the schedule): `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 11:35 IST · Claude (Sushil: "Homepage pe bhi laga do") · **Static homepage menu done:**
+  - `public_html/index.html` was edited via the Hostinger File Browser API in Sushil's Chrome: the "Mountains" dropdown li (`<!--szmnt-->`) went in after the Adventure li, and `<style id="szmnt-nav">` before `</head>`.
+  - Size 353,318 → 355,506 bytes; read-back SHA-256 matches (c05b7e44c69e…).
+  - Backup: `public_html/index.html.pre-mountains-menu-2026-10-01` (353,318 bytes, sha 13d736d56ca7…). Rollback = copy it back over index.html.
+  - Live (hcdn DYNAMIC, no purge needed). From 1181 to 1920 px: 11 items on one row, right-hand buttons fully on screen (they were cut at 1440–1536 px before). Mobile menu shows Mountains.
 - 2026-10-01 10:55 IST · Claude (Sushil asked: "Mountains of India ka header pe link / menu button") · **Header menu, WordPress pages:**
   - **Menu 5 "Primary Menu".** New top-level item **"Mountains"** (11958 → /mountains-of-india/) after Adventure. Its dropdown:
     - Mountains of India (11959)
