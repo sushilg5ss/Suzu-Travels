@@ -219,6 +219,10 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
   - touch the static homepage, menus, theme, plugins, PHP or .htaccess;
   - touch `/adventure/` pages other than 11846.
 - **The Adventure hub (page 11529)** belongs to the Suzu Adventure squad. Its "Mountaineering" tile and `#act-peak-climbing` card were added by hand on 1 Oct 2026. If they disappear, re-add them with a targeted `wp_replace_in_page` and log it.
+- **Header menu (1 Oct 2026, done with Sushil).** Primary Menu 5 has a top-level "Mountains" item (11958) with 4 links, plus "Peak climbing & mountaineering" (11963) under Adventure. A CSS block after the Design Agent block in Additional CSS keeps 11 items on one row.
+  - Menus stay human-only: agents never add pages to the menu.
+  - After any menu change, WP Rocket needs "Clear and Preload Cache" in wp-admin; menu edits through the connector do not purge the cache.
+  - The static homepage has its own nav. Its tested "Mountains" snippet is `site/homepage-nav-mountains.html`, not yet applied.
 - **Mountain pages in the site sitemap.** Rank Math includes new pages automatically. The site-wide Indexing & Housekeeping agent handles indexing requests.
 
 ## 9. Quality gate (the SEO & QA agent checks every live page)

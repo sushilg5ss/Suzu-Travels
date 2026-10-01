@@ -2,6 +2,25 @@
 
 Format (take the time from `TZ=Asia/Kolkata date '+%F %H:%M'`, not from the schedule): `YYYY-MM-DD HH:MM IST · <agent> · what changed · page IDs · undo tokens · checks · FIX NEEDED: <who> — <what>`
 
+- 2026-10-01 10:55 IST · Claude (Sushil asked: "Mountains of India ka header pe link / menu button") · **Header menu, WordPress pages:**
+  - **Menu 5 "Primary Menu".** New top-level item **"Mountains"** (11958 → /mountains-of-india/) after Adventure. Its dropdown:
+    - Mountains of India (11959)
+    - Highest peaks in India (11960)
+    - Friendship Peak (5,289 m) (11961)
+    - Guided peak climbs (11962)
+  - **Adventure dropdown.** New item "Peak climbing & mountaineering" (11963 → /adventure/himalayan-peak-expeditions/).
+  - **Order.** Reordered (undo d60a28aab065c2f08692657d5bed95f2).
+  - **Additional CSS.** A block appended AFTER the Design Agent's END marker (undo d30b137d283f903bd0cdbfc1067fccc6) tightens the desktop nav so 11 items fit beside the phone and Enquire buttons:
+    - 1181–1299 px: link padding 5 px, 12.5 px text;
+    - ≥ 1300 px: padding 6 px, 13 px text;
+    - header side padding 24 px.
+
+    Checked at 1200/1280/1440: one row, 17–69 px clear of the buttons. The mobile drawer gets a "Mountains" section with the 4 links.
+  - **WP Rocket.** Menu edits through the connector do not purge the cache: a nav_menu term re-save (undo c86ba0b42d5dda4416a9ac2f82bc1ceb) did not purge either, so "Clear and Preload Cache" was clicked in wp-admin. All pages now serve the new header.
+  - **Static homepage** (public_html/index.html, its own hand-coded nav): NOT changed. The edit through Hostinger File Manager was blocked by the permission check, so it waits for Sushil.
+    - Tested snippet: `site/homepage-nav-mountains.html`.
+    - It also fixes the homepage's existing cut-off of the right-hand buttons at 1440–1536 px.
+  - Menus stay human-only for the agents.
 - 2026-10-01 10:40 IST · Claude (setup with Sushil) · Dataset re-sync and a public-dataset rule fix:
   - **Dataset re-sync.** The research run's dataset changes went live on list page 11841 (129,340 → 129,476) with 6 targeted ops from `sync_plan.py --rebuild`: Hanuman Tibba first ascent 1912 (row, data-fa, note), and the CSV re-pinned to b5c19c0 in all 3 places (hero button, method link, Dataset JSON-LD). `cmp_live` 0/0 (cache-buster + plain). Stok Kangri's new status note is not shown on the list page, so nothing changed there.
   - **Rule fix.** The research run had put an operator site (trekthehimalayas) in Stok Kangri's dataset sources, which flow into the public CSV. It was removed. `data/build_data.py` now drops operator domains (the `build.py` COMPETITORS list) from dataset sources and prints a warning.

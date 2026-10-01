@@ -1,0 +1,13 @@
+<!-- Static homepage (public_html/index.html) — "Mountains" menu item, prepared and tested 1 Oct 2026 (not yet applied).
+  1) Paste the <li> right AFTER: <li><a href="https://suzutravels.com/adventure/">Adventure</a></li>
+  2) Paste the <style> block just BEFORE </head>.
+  Tested by injecting both into the live homepage: one row of 11 items from 1181 px to 1920 px, right-hand buttons never cut (they already were at 1440–1536 px), mobile menu OK. -->
+
+<!--szmnt--><li class="nav-dropdown-wrapper szmnt"><a href="https://suzutravels.com/mountains-of-india/"><span class="nav-pill-icon"><i class="ph ph-mountains"></i></span> Mountains<svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 6 8 10 12 6"/></svg></a><div class="dropdown-menu" style="min-width:0;width:max-content;"><div class="dropdown-menu-inner" style="grid-template-columns:250px;"><div class="dropdown-col"><div class="dropdown-col-title">Mountains of India</div><a class="simple-link" href="https://suzutravels.com/mountains-of-india/"><div class="simple-link-icon"><i class="ph-fill ph-mountains" style="color:var(--teal);"></i></div>Mountains of India</a><a class="simple-link" href="https://suzutravels.com/mountains-of-india/highest-peaks-in-india/"><div class="simple-link-icon"><i class="ph-fill ph-chart-bar" style="color:var(--teal-deep);"></i></div>Highest peaks in India</a><a class="simple-link" href="https://suzutravels.com/mountains-of-india/friendship-peak/"><div class="simple-link-icon"><i class="ph-fill ph-flag" style="color:var(--amber-deep);"></i></div>Friendship Peak (5,289 m)</a><a class="simple-link" href="https://suzutravels.com/adventure/himalayan-peak-expeditions/"><div class="simple-link-icon"><i class="ph-fill ph-person-simple-hike" style="color:var(--amber);"></i></div>Guided peak climbs</a></div></div></div></li><!--/szmnt-->
+
+<style>
+/* szmnt (1 Oct 2026): 11 top-level items incl. Mountains, so the desktop nav is tightened and the right-hand buttons are never cut off */
+@media (min-width:1181px) and (max-width:1250px){nav ul.nav-links{margin-left:4px!important}nav ul.nav-links>li>a{padding:6px 4px!important;font-size:12px!important}}
+@media (min-width:1251px) and (max-width:1320px){nav ul.nav-links{margin-left:8px!important}nav ul.nav-links>li>a{padding:6px 4px!important;font-size:12.5px!important}}
+@media (min-width:1321px) and (max-width:1680px){nav ul.nav-links{margin-left:10px!important}nav ul.nav-links>li>a{padding:6px 5px!important;font-size:13px!important}nav ul.nav-links .nav-pill-icon{display:none!important}}
+</style>
