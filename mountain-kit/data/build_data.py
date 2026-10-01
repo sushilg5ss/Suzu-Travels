@@ -9,9 +9,11 @@ Input : data/peaks.research.json (research agent output, 1 Oct 2026)
 Output: data/peaks.json  (canonical, used by every page)  and  data/india-peaks.csv (public download, CC BY 4.0)
 Never type a height or first-ascent year into a page by hand — add/fix it here and rebuild.
 """
-import csv, json, pathlib, re, unicodedata
+import csv, json, pathlib, re, sys, unicodedata
 
 D = pathlib.Path(__file__).resolve().parent
+sys.path.insert(0, str(D.parent))
+from build import COMPETITORS  # noqa: E402  (operator sites may back research notes, never the public dataset)
 STATES = [  # key, label, match words
     ("sikkim", "Sikkim", ["Sikkim"]),
     ("uttarakhand", "Uttarakhand", ["Uttarakhand"]),
@@ -77,8 +79,11 @@ def main():
             "foreigners": p.get("open_to_foreigners") or "unknown",
             "rank": p.get("india_rank"),
             "notable": p.get("notable") or "",
-            "sources": p.get("sources") or [],
+            "sources": [u for u in (p.get("sources") or []) if not any(c in u for c in COMPETITORS)],
         })
+        for u in p.get("sources") or []:
+            if any(c in u for c in COMPETITORS):
+                print(f"dropped operator source for {p['name']}: {u} (never cite operators in the public dataset)")
     out.sort(key=lambda r: (-r["m"], r["name"]))
     ids = [r["id"] for r in out]
     assert len(ids) == len(set(ids)), "duplicate ids"

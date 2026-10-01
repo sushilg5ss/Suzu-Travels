@@ -135,7 +135,7 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 
 **Schema output:**
 - a Mountain (peak pages)
-- a TouristTrip (commercial pages, without offers or prices)
+- a TouristTrip (commercial pages, without offers or prices). Its name is "Guided climb of <Peak>" on peak pages and "Guided Himalayan peak climbs from Himachal" on other pages; set `trip_name` to override it, e.g. "Guided peak climbs in Himachal Pradesh" on the state page.
 - a FAQPage
 
 ## 6. Media: HyperFrames (every page has at least one video, and `build.py` refuses a page without one)

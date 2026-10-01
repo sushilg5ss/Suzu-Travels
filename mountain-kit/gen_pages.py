@@ -798,7 +798,7 @@ def content_page(slug):
             mt["sameAs"] = c["sameAs"]
         graph.append(mt)
     if commercial:
-        graph.append({"@type": "TouristTrip", "name": c.get("trip_name", "Guided climb of " + (pk_["name"] if pk_ else short)), "touristType": "Mountaineers",
+        graph.append({"@type": "TouristTrip", "name": c.get("trip_name", ("Guided climb of " + pk_["name"]) if pk_ else "Guided Himalayan peak climbs from Himachal"), "touristType": "Mountaineers",
                       "description": clip(c["answer"]), "provider": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/"}})
     if faqs:
         graph.append(faq_ld(faqs))
