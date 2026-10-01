@@ -29,43 +29,49 @@ The rank weighs four things: search demand (Keyword Planner, 1 Oct 2026), Himach
 | 7 | todo | `imf-permit-fees` | guide | - | imf permit / peak fees india | IMF Climbing Permit & Peak Fees in India (USD Guide) | yes | Words hero. Fees in USD are information (allowed). No Suzu prices. |
 | 8 | todo | `trekking-peaks` | guide | table ids (beginner peaks) | trekking peaks india | Trekking Peaks in India: Best First 5,000–6,000 m Climbs | yes | Compare Friendship, Shitidhar, Ladakhi, Yunam, Kanamo*, Mentok Kangri; ladder. |
 | 9 | todo | `mountaineering-courses` | guide | - | mountaineering course india (1,600) | Mountaineering Courses in India: Basic & Advanced (2026) | no | ABVIMAS, NIM, HMI, JIM&WS, NIMAS — link each official site; no fees unless official and dated. |
-| 10 | todo | `7000m-peaks` | band | band 7000 | 7000m peaks india | 7000m Peaks in India: Complete List & Climbing Status | no | Table band=7000; ladder of 7 seven-thousanders. |
-| 11 | todo | `mountaineering-in-india` | guide | - | mountaineering in india (14,800 shared) | Mountaineering in India: Guide for Foreign Climbers | yes | Owns 'how to climb / foreigners'; must not target 'mountains in india' (hub). |
-| 12 | todo | `reo-purgyil` | peak | peak_id reo-purgyil | reo purgyil (1,900) | Reo Purgyil (6,816 m): Highest Peak of Himachal Pradesh | yes | Border belt: protected-area permit for foreigners. |
-| 13 | todo | `nanda-devi` | peak | peak_id nanda-devi | nanda devi (49,500) | Nanda Devi (7,816 m): Facts, History & Climbing Status | no | CLOSED since 1983; only Nanda Devi East is on the 2026 list. |
-| 14 | todo | `kangchenjunga` | peak | peak_id kangchenjunga | kangchenjunga (40,500) | Kangchenjunga from India: Facts, Views & Climbing Status | no | Banned from Sikkim (70/HOME/2001). px-30701907 is a verified photo. |
-| 15 | todo | `6000m-peaks` | band | band 6000 | 6000m peaks india | 6000m Peaks in India: List by State, Grade & Season | no | Table band=6000; ladder. |
-| 16 | todo | `kanamo-peak` | peak | peak_id kanamo | kanamo peak (1,300) | Kanamo Peak (5,964 m), Spiti: Status, Route & Season | hold | Access status conflicting (banned vs reopened): verify with 2026 local/official sources first; if unclear say so and sell alternatives. |
-| 17 | todo | `chau-chau-kang-nilda` | peak | peak_id chau-chau-kang-nilda | chau chau kang nilda (170) | Chau Chau Kang Nilda (6,303 m), Spiti: Expedition Guide | yes | Spiti, Kaza base. |
-| 18 | todo | `unclimbed-peaks` | guide | table status=unclimbed (+ closed/restricted) | unclimbed peaks india | Unclimbed Peaks in India: Virgin & Closed Summits List | no | Data + editorial; Kangto first ascent late 2025. |
-| 19 | todo | `records` | guide | - | mountaineering records india | Indian Himalaya Climbing Records & First Ascents Timeline | no | Trisul 1907 was the first 7,000 m summit (not Kamet). |
-| 20 | todo | `satopanth` | peak | peak_id satopanth | satopanth (1,900) | Satopanth (7,075 m): Expedition Guide & Climbing History | no | Uttarakhand; on the 2026 opened list? verify. |
-| 21 | todo | `shivling-peak` | peak | peak_id shivling | shivling peak (2,400) | Shivling Peak (6,543 m): Routes, Grade & Climbing History | no | Gangotri; 'Matterhorn of the Himalaya'. |
-| 22 | todo | `mulkila` | peak | peak_id mulkila | mulkila | Mulkila (6,517 m), Lahaul: Route & Expedition Guide | yes | Highest in Lahaul; Milang valley. |
-| 23 | todo | `indrasan` | peak | peak_id indrasan | indrasan | Indrasan (6,220 m): Route, Grade & Climbing History | yes | Experts only — hardest in the Pir Panjal. |
-| 24 | todo | `kang-yatse` | peak | peak_id kang-yatse-i (+ add Kang Yatse II via additions.json) | kang yatse (1,300) | Kang Yatse I & II, Ladakh: Climbing Guide & Season | no | Ladakh — informational; CTA suggests Himachal alternatives. |
-| 25 | todo | `kamet` | peak | peak_id kamet | kamet mountain (27,100 incl. whisky) | Kamet (7,756 m): History, Route & Climbing Guide | no | 1931 first ascent: first summit above 25,000 ft — NOT the first 7,000 m summit. |
-| 26 | todo | `changabang` | peak | peak_id changabang | changabang (1,000) | Changabang (6,864 m): The Granite Fang of Garhwal | no | 1974 first ascent; 1976 West Wall. |
-| 27 | todo | `uttarakhand` | state | state uttarakhand | highest peak in uttarakhand | Highest Peaks in Uttarakhand: List & Climbing Guide | no | Table state=uttarakhand; 83 peaks opened Feb 2026 (UKMPS). |
-| 28 | todo | `ladakh` | state | state ladakh | highest peak in ladakh | Highest Peaks in Ladakh: List & Climbing Guide | no | Siachen peaks restricted; Stok Kangri closed. |
-| 29 | todo | `trisul` | peak | peak_id trisul-i | trishul peak / trisul | Trisul (7,120 m): The First 7,000 m Summit Ever Climbed | no | 1907, Longstaff; 'trishul' volume is mostly the symbol — target 'trishul peak/parvat'. |
-| 30 | todo | `highest-peak-in-every-state` | guide | - | highest peak in each state of india | Highest Peak in Every Indian State & UT (Full List) | no | Needs a verified table of every state/UT high point (incl. Anamudi, Doddabetta…) in extra_sections. |
-| 31 | todo | `sikkim` | state | state sikkim | highest peak in sikkim | Highest Peaks in Sikkim: List, Status & Viewpoints | no | Sacred peaks; viewpoints (Goecha La, Sandakphu). |
-| 32 | todo | `jammu-kashmir` | state | state jammu-kashmir | highest peak in jammu and kashmir | Highest Peaks in Jammu & Kashmir: List & Climbing Guide | no | Nun is counted under J&K. |
-| 33 | todo | `arunachal-pradesh` | state | state arunachal-pradesh | highest peak in arunachal pradesh | Highest Peaks in Arunachal Pradesh: Kangto & More | no | Kangto first recorded ascent late 2025. |
-| 34 | todo | `menthosa` | peak | peak_id menthosa | menthosa | Menthosa (6,443 m), Lahaul: Expedition Guide | yes | Miyar valley. |
-| 35 | todo | `manirang` | peak | peak_id manirang | manirang | Manirang (6,593 m), Spiti: Route & Expedition Guide | yes | PAP for foreigners. |
-| 36 | todo | `hardest-peaks-in-india` | guide | - | hardest mountains to climb in india | Hardest Peaks to Climb in India: Changabang to Meru | no | Piolet d'Or lines; from the hub's 'hardest' section, expanded. |
-| 37 | todo | `best-time-for-mountaineering-in-india` | guide | - | best time for mountaineering in india | Best Time for Mountaineering in India: Season by Region | yes | Region-by-region months; monsoon; rain-shadow. |
-| 38 | todo | `3000m-4000m-summits` | band | bands 3000+4000 (table min_m 3000 max_m 4999) | easy himalayan summits | Easy Himalayan Summits in India (3,000–4,999 m) | no | Churdhar, Kedarkantha, Chandrashila, Sandakphu, Pangarchulla… |
+| 10 | todo | `mountaineering-gear-list` | guide | - | mountaineering gear / equipment (27.1K / 74K ww; informational gap — SERP is all shops) | Mountaineering Gear List for Indian Peaks: What to Pack | yes | Full kit explained: what the outfitter provides (rope, tents, group gear) vs what you bring; rental options in Manali/Solang mentioned generically. NO brand names, NO prices (kit rule). Words hero; use the gear/boots photos in hf/photos. |
+| 11 | todo | `crampons-and-mountaineering-boots` | guide | - | crampons (165K ww) + mountaineering boots (14.8K ww) | Crampons & Mountaineering Boots: A Beginner's Guide | yes | What crampons are, how they grip, B1/B2/B3 boot–crampon matching, snow boots vs trekking shoes, fit and care; where climbers rent them for Himachal climbs. szm-tbl for the B1–B3 matrix. |
+| 12 | todo | `ice-axe-guide` | guide | - | ice axe (27.1K ww) | Ice Axe Guide: Parts, Types & How Climbers Use It | yes | Parts, walking vs technical axes, sizing, how it is carried/used on Indian snow peaks; self-arrest described at concept level with a safety note (guides teach it at base camp — funnel to guided climbs). |
+| 13 | todo | `what-to-wear-himalayan-climb` | guide | - | high altitude clothing / layering (small volume, strong AEO: 'what to wear in snow/Manali' questions) | What to Wear on a Himalayan Climb: The Layering System | yes | Base / mid / shell 3-layer system, summit-day wear, hands-head-feet, what winter Manali visitors need vs climbers; rentals mentioned generically. Words hero (LAYER / SMART etc.). |
+| 14 | todo | `expedition-camping` | guide | - | camping in himachal (390 IN) + expedition camp life | Expedition Camping: Base Camp to Summit Camp Explained | yes | How camps work on a climb: tents, sleeping-bag ratings, mats, kitchen/mess, water, toilets, leave-no-trace; links Friendship Peak & Deo Tibba camp tables. |
+| 15 | todo | `altitude-sickness` | guide | - | altitude sickness himalayas / AMS | Altitude Sickness on Indian Peaks: Signs, Prevention & Rules | no | Promoted from Later ideas. CDC Yellow Book as source; include the 'informational, not medical advice' line; acclimatisation schedules from live itineraries. |
+| 16 | todo | `first-6000m-peak` | guide | - | easiest 6000m peak / first 6000er (long-tail + AEO) | How to Climb Your First 6,000 m Peak in India | yes | Promoted from Later ideas. Fitness prep, course-or-no-course, gear link, peak ladder Yunam/Friendship/Shitidhar; the strongest commercial funnel of the guide set. |
+| 17 | todo | `7000m-peaks` | band | band 7000 | 7000m peaks india | 7000m Peaks in India: Complete List & Climbing Status | no | Table band=7000; ladder of 7 seven-thousanders. |
+| 18 | todo | `mountaineering-in-india` | guide | - | mountaineering in india (14,800 shared) | Mountaineering in India: Guide for Foreign Climbers | yes | Owns 'how to climb / foreigners'; must not target 'mountains in india' (hub). |
+| 19 | todo | `reo-purgyil` | peak | peak_id reo-purgyil | reo purgyil (1,900) | Reo Purgyil (6,816 m): Highest Peak of Himachal Pradesh | yes | Border belt: protected-area permit for foreigners. |
+| 20 | todo | `nanda-devi` | peak | peak_id nanda-devi | nanda devi (49,500) | Nanda Devi (7,816 m): Facts, History & Climbing Status | no | CLOSED since 1983; only Nanda Devi East is on the 2026 list. |
+| 21 | todo | `kangchenjunga` | peak | peak_id kangchenjunga | kangchenjunga (40,500) | Kangchenjunga from India: Facts, Views & Climbing Status | no | Banned from Sikkim (70/HOME/2001). px-30701907 is a verified photo. |
+| 22 | todo | `6000m-peaks` | band | band 6000 | 6000m peaks india | 6000m Peaks in India: List by State, Grade & Season | no | Table band=6000; ladder. |
+| 23 | todo | `kanamo-peak` | peak | peak_id kanamo | kanamo peak (1,300) | Kanamo Peak (5,964 m), Spiti: Status, Route & Season | hold | Access status conflicting (banned vs reopened): verify with 2026 local/official sources first; if unclear say so and sell alternatives. |
+| 24 | todo | `chau-chau-kang-nilda` | peak | peak_id chau-chau-kang-nilda | chau chau kang nilda (170) | Chau Chau Kang Nilda (6,303 m), Spiti: Expedition Guide | yes | Spiti, Kaza base. |
+| 25 | todo | `unclimbed-peaks` | guide | table status=unclimbed (+ closed/restricted) | unclimbed peaks india | Unclimbed Peaks in India: Virgin & Closed Summits List | no | Data + editorial; Kangto first ascent late 2025. |
+| 26 | todo | `records` | guide | - | mountaineering records india | Indian Himalaya Climbing Records & First Ascents Timeline | no | Trisul 1907 was the first 7,000 m summit (not Kamet). |
+| 27 | todo | `satopanth` | peak | peak_id satopanth | satopanth (1,900) | Satopanth (7,075 m): Expedition Guide & Climbing History | no | Uttarakhand; on the 2026 opened list? verify. |
+| 28 | todo | `shivling-peak` | peak | peak_id shivling | shivling peak (2,400) | Shivling Peak (6,543 m): Routes, Grade & Climbing History | no | Gangotri; 'Matterhorn of the Himalaya'. |
+| 29 | todo | `mulkila` | peak | peak_id mulkila | mulkila | Mulkila (6,517 m), Lahaul: Route & Expedition Guide | yes | Highest in Lahaul; Milang valley. |
+| 30 | todo | `indrasan` | peak | peak_id indrasan | indrasan | Indrasan (6,220 m): Route, Grade & Climbing History | yes | Experts only — hardest in the Pir Panjal. |
+| 31 | todo | `kang-yatse` | peak | peak_id kang-yatse-i (+ add Kang Yatse II via additions.json) | kang yatse (1,300) | Kang Yatse I & II, Ladakh: Climbing Guide & Season | no | Ladakh — informational; CTA suggests Himachal alternatives. |
+| 32 | todo | `kamet` | peak | peak_id kamet | kamet mountain (27,100 incl. whisky) | Kamet (7,756 m): History, Route & Climbing Guide | no | 1931 first ascent: first summit above 25,000 ft — NOT the first 7,000 m summit. |
+| 33 | todo | `changabang` | peak | peak_id changabang | changabang (1,000) | Changabang (6,864 m): The Granite Fang of Garhwal | no | 1974 first ascent; 1976 West Wall. |
+| 34 | todo | `uttarakhand` | state | state uttarakhand | highest peak in uttarakhand | Highest Peaks in Uttarakhand: List & Climbing Guide | no | Table state=uttarakhand; 83 peaks opened Feb 2026 (UKMPS). |
+| 35 | todo | `ladakh` | state | state ladakh | highest peak in ladakh | Highest Peaks in Ladakh: List & Climbing Guide | no | Siachen peaks restricted; Stok Kangri closed. |
+| 36 | todo | `trisul` | peak | peak_id trisul-i | trishul peak / trisul | Trisul (7,120 m): The First 7,000 m Summit Ever Climbed | no | 1907, Longstaff; 'trishul' volume is mostly the symbol — target 'trishul peak/parvat'. |
+| 37 | todo | `highest-peak-in-every-state` | guide | - | highest peak in each state of india | Highest Peak in Every Indian State & UT (Full List) | no | Needs a verified table of every state/UT high point (incl. Anamudi, Doddabetta…) in extra_sections. |
+| 38 | todo | `sikkim` | state | state sikkim | highest peak in sikkim | Highest Peaks in Sikkim: List, Status & Viewpoints | no | Sacred peaks; viewpoints (Goecha La, Sandakphu). |
+| 39 | todo | `jammu-kashmir` | state | state jammu-kashmir | highest peak in jammu and kashmir | Highest Peaks in Jammu & Kashmir: List & Climbing Guide | no | Nun is counted under J&K. |
+| 40 | todo | `arunachal-pradesh` | state | state arunachal-pradesh | highest peak in arunachal pradesh | Highest Peaks in Arunachal Pradesh: Kangto & More | no | Kangto first recorded ascent late 2025. |
+| 41 | todo | `menthosa` | peak | peak_id menthosa | menthosa | Menthosa (6,443 m), Lahaul: Expedition Guide | yes | Miyar valley. |
+| 42 | todo | `manirang` | peak | peak_id manirang | manirang | Manirang (6,593 m), Spiti: Route & Expedition Guide | yes | PAP for foreigners. |
+| 43 | todo | `hardest-peaks-in-india` | guide | - | hardest mountains to climb in india | Hardest Peaks to Climb in India: Changabang to Meru | no | Piolet d'Or lines; from the hub's 'hardest' section, expanded. |
+| 44 | todo | `best-time-for-mountaineering-in-india` | guide | - | best time for mountaineering in india | Best Time for Mountaineering in India: Season by Region | yes | Region-by-region months; monsoon; rain-shadow. |
+| 45 | todo | `3000m-4000m-summits` | band | bands 3000+4000 (table min_m 3000 max_m 4999) | easy himalayan summits | Easy Himalayan Summits in India (3,000–4,999 m) | no | Churdhar, Kedarkantha, Chandrashila, Sandakphu, Pangarchulla… |
 
 ## Later ideas (add rows when the list above is nearly done)
+- Winter treks in India guide (winter trek in india 1,000 IN; "kedarkantha trek" alone 49.5K IN — informational, would funnel to Himachal winter climbs & Adventure pages; coordinate with the Adventure squad lane before writing).
+- Mountaineering glossary A–Z (col, serac, bergschrund, moraine…) — AEO/definition queries, internal-link hub.
 - Other high peaks with search demand:
   - Bhagirathi group, Thalay Sagar, Meru, Chaukhamba, Nun Kun, Saser Kangri, Mentok Kangri, Shilla.
   - Papsura and CB-13 (add to the dataset first).
-- "How to climb your first 6,000 m peak" (a guide that funnels to Yunam and Friendship Peak).
-- "Altitude sickness on Indian peaks" (cite the CDC, and add the "not medical advice" line).
-- "Mountaineering gear checklist" (no brand promotion).
 - "Women mountaineers of India" (records), and "Indian Everest summiteers from Himachal". These are verified facts only: see the facts-to-avoid list.
 - Comparison pages:
   - "Friendship Peak vs Yunam"
