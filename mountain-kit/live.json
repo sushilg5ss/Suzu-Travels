@@ -43,5 +43,16 @@
   "added": "2026-10-01",
   "state": "himachal-pradesh",
   "commercial": true
+ },
+ "hanuman-tibba": {
+  "id": 12026,
+  "path": "/mountains-of-india/hanuman-tibba/",
+  "kind": "peak",
+  "peak_id": "hanuman-tibba",
+  "state": "himachal-pradesh",
+  "label": "Hanuman Tibba",
+  "blurb": "5,982 m · the technical snow pyramid above Beas Kund",
+  "added": "2026-10-03",
+  "commercial": true
  }
 }
