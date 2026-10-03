@@ -1,0 +1,14 @@
+{
+ "hero": {"kicker": "STOK KANGRI · LADAKH",
+  "words": [["CLOSED", "IN 2020."], ["DEC 2023", "BANNED."], ["NO DATE", "TO OPEN."], ["TRY YUNAM", "6,111 m."]],
+  "scenes": [
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [0, 3.8], "from": {"scale": 1.02}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": [3.2, 7.0], "from": {"scale": 1.0, "x": 30}, "to": {"scale": 1.08, "x": -30}},
+   {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "t": [6.4, 10.2], "from": {"scale": 1.04, "x": 30, "y": -20}, "to": {"scale": 1.12, "x": -30, "y": 30}},
+   {"img": "px-35319376.jpg", "kind": "tilt", "h": 2560, "t": [9.6, 13.0], "from": {"y": 0}, "to": {"y": 480}}]},
+ "ladder": {"kicker": "STOK KANGRI · ALTERNATIVES",
+  "title": "Stok Kangri and the climbs to choose instead",
+  "peaks": ["stok-kangri", "mount-yunam", "mentok-kangri", "dzo-jongo", "deo-tibba", "friendship-peak"],
+  "subs": {"stok-kangri": "Closed since 2020", "mount-yunam": "Himachal · closest", "mentok-kangri": "Ladakh", "dzo-jongo": "Ladakh", "deo-tibba": "Himachal", "friendship-peak": "Himachal · Manali"},
+  "end": "Yunam, Deo Tibba and Friendship Peak are in Himachal"}
+}
