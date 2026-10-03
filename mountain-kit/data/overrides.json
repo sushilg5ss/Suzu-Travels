@@ -28,5 +28,26 @@
    "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html",
    "https://www.outdoorjournal.com/exclusive-why-climbing-was-banned-on-indias-most-popular-trans-himalayan-trekking-peak/"
   ]
+ },
+ "Deo Tibba": {
+  "first_ascent_by": "J. de V. Graaff's party (sources differ on who else was in it)",
+  "difficulty_note": "Flat snow-dome summit, but the approach crosses the steep Duhangan Col and a crevassed glacier on fixed ropes",
+  "notable": "First climbed in 1952 by J. de V. Graaff's party via the Duhangan col between Deo Tibba and Indrasan. Wikipedia names Clare Graaff and Pasang Dawa Lama; the Himalayan Journal names Graaff, his wife and K. E. Berrill.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Deo_Tibba",
+   "https://www.himalayanclub.org/hj/67/12/duhangan-valley-of-the-western-himalaya/",
+   "https://publications.americanalpineclub.org/articles/12196227503",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ },
+ "Mount Yunam": {
+  "difficulty_note": "Non-technical but steep: scree, moraine and snow slopes of about 50° near the top; altitude is the main challenge",
+  "base": "Bharatpur (Manali–Leh highway, below Baralacha La)",
+  "notable": "Climbed from the Bharatpur tent camp on the Manali–Leh highway; summit day is a long single push. No documented first ascent found.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh",
+   "https://fastestknowntime.com/route/mount-yunam-peak",
+   "https://en.wikipedia.org/wiki/Bara-lacha_la"
+  ]
  }
 }

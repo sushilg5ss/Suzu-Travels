@@ -1,0 +1,173 @@
+{
+ "_note": "Keyword Planner (Pipeboard get_google_ads_keyword_ideas), customer 1172710099, English, Google Search, 12-mo avg Sep 2025-Aug 2026, banded. Pulled 2026-10-03 by Research agent. ww=worldwide, in=India, intl6=US+GB+AU+IL+DE+FR. Seeds 'imf permit', 'imf peak fees', 'climbing/mountaineering permit india', 'imf peak booking', 'liaison officer expedition india' returned no volume.",
+ "deo-tibba": {
+  "deo tibba": {
+   "ww": 1300,
+   "in": 1300,
+   "intl6": 70
+  },
+  "deo tibba trek": {
+   "ww": 480,
+   "in": 390,
+   "intl6": 10
+  },
+  "mount deo tibba / mt deo tibba": {
+   "ww": 320,
+   "in": 320,
+   "intl6": 10
+  },
+  "deo tibba base camp trek": {
+   "ww": 210,
+   "in": 210,
+   "intl6": 10
+  },
+  "deo tibba expedition": {
+   "ww": 170,
+   "in": 170,
+   "intl6": 10
+  },
+  "deo tibba base camp": {
+   "ww": 90,
+   "in": 90,
+   "intl6": 10
+  },
+  "deo tibba height": {
+   "ww": 90,
+   "in": 90,
+   "intl6": 10
+  },
+  "deo tibba peak": {
+   "ww": 70,
+   "in": 70,
+   "intl6": 10
+  },
+  "mt deo tibba expedition": {
+   "ww": 50,
+   "in": 50,
+   "intl6": 10
+  },
+  "deo tibba expedition cost": {
+   "ww": 40,
+   "in": 40,
+   "intl6": 10
+  },
+  "deo tibba trek distance": {
+   "ww": 30,
+   "in": 30,
+   "intl6": 10
+  },
+  "deo tibba trek cost": {
+   "ww": 20,
+   "in": 20,
+   "intl6": 0
+  },
+  "jagatsukh": {
+   "ww": 3600,
+   "in": 2900,
+   "intl6": 30
+  },
+  "jagatsukh manali": {
+   "ww": 390,
+   "in": 390,
+   "intl6": 10
+  },
+  "indrasan trek": {
+   "ww": 70,
+   "in": 70,
+   "intl6": 0
+  }
+ },
+ "yunam-peak": {
+  "yunam peak": {
+   "ww": 1600,
+   "in": 1300,
+   "intl6": 50
+  },
+  "mount yunam": {
+   "ww": 1300,
+   "in": 1300,
+   "intl6": 50
+  },
+  "yunam peak trek": {
+   "ww": 590,
+   "in": 590,
+   "intl6": 10
+  },
+  "yunam peak expedition": {
+   "ww": 480,
+   "in": 480,
+   "intl6": 10
+  },
+  "mt yunam expedition": {
+   "ww": 140,
+   "in": 140,
+   "intl6": 10
+  },
+  "yunam peak height": {
+   "ww": 110,
+   "in": 110,
+   "intl6": 10
+  },
+  "yunam trek": {
+   "ww": 70,
+   "in": 70,
+   "intl6": 10
+  },
+  "yunam expedition": {
+   "ww": 30,
+   "in": 30,
+   "intl6": 10
+  },
+  "yunam peak difficulty": {
+   "ww": 10,
+   "in": 10,
+   "intl6": 10
+  },
+  "baralacha la": {
+   "ww": 60500,
+   "in": 60500,
+   "intl6": 480
+  }
+ },
+ "imf-permit-fees": {
+  "indian mountaineering foundation": {
+   "ww": 301000,
+   "in": 49500,
+   "intl6": 74000,
+   "note": "inflated by 'IMF' (International Monetary Fund) confusion"
+  },
+  "indian mountaineering foundation courses": {
+   "ww": 1000,
+   "in": 110,
+   "intl6": 70
+  },
+  "imf mountaineering": {
+   "ww": 390,
+   "in": 390,
+   "intl6": 10
+  },
+  "indian mountaineering foundation fees": {
+   "ww": 170,
+   "in": 40,
+   "intl6": 90
+  },
+  "indian mountaineering foundation contact number": {
+   "ww": 70,
+   "in": 20,
+   "intl6": 40
+  },
+  "india mountaineering foundation": {
+   "ww": 50,
+   "in": 50,
+   "intl6": 10
+  },
+  "mount everest permit cost for indian": {
+   "ww": 70,
+   "in": 70,
+   "intl6": 10
+  },
+  "imf permit / imf peak fees / climbing permit india / mountaineering permit india / imf peak booking": {
+   "ww": null
+  }
+ }
+}

@@ -3610,14 +3610,16 @@
   "status": "climbed",
   "status_note": "",
   "grade": "trekking peak",
-  "grade_note": "Non-technical walk-up from the Manali–Leh highway",
+  "grade_note": "Non-technical but steep: scree, moraine and snow slopes of about 50° near the top; altitude is the main challenge",
   "season": "Jun–Sep",
-  "base": "Bharatpur / Baralacha La",
+  "base": "Bharatpur (Manali–Leh highway, below Baralacha La)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "Climbed from the Bharatpur tent camp on the Manali–Leh highway; summit day is a long single push. No documented first ascent found.",
   "sources": [
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh",
+   "https://fastestknowntime.com/route/mount-yunam-peak",
+   "https://en.wikipedia.org/wiki/Bara-lacha_la"
   ]
  },
  {
@@ -3662,18 +3664,20 @@
   "range": "Pir Panjal",
   "area": "Kullu",
   "fa": 1952,
-  "fa_by": "Dr J. de V. Graaff, Clare Graaff & Pasang Dawa Lama",
+  "fa_by": "J. de V. Graaff's party (sources differ on who else was in it)",
   "status": "climbed",
   "status_note": "",
   "grade": "moderate",
-  "grade_note": "Flat snow-dome summit via crevassed glacier",
+  "grade_note": "Flat snow-dome summit, but the approach crosses the steep Duhangan Col and a crevassed glacier on fixed ropes",
   "season": "May–Jun & Sep–Oct",
   "base": "Manali → Jagatsukh / Chikka",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "First climbed in 1952 by J. de V. Graaff's party via the Duhangan col between Deo Tibba and Indrasan. Wikipedia names Clare Graaff and Pasang Dawa Lama; the Himalayan Journal names Graaff, his wife and K. E. Berrill.",
   "sources": [
    "https://en.wikipedia.org/wiki/Deo_Tibba",
+   "https://www.himalayanclub.org/hj/67/12/duhangan-valley-of-the-western-himalaya/",
+   "https://publications.americanalpineclub.org/articles/12196227503",
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
   ]
  },
