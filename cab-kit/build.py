@@ -221,7 +221,7 @@ def outstation_table(outs, slug):
 def build_city(p):
     town = p["map"]["hub"]
     outs = p["outstation"]
-    chips = [f"Local sightseeing", f"Outstation drops", f'To Chandigarh from <b>{inr(oneway("sedan", outs[0][2], outs[0][3]))}</b>', "Hatchback → Tempo Traveller", "24×7 WhatsApp"]
+    chips = [f"Local sightseeing", f"Outstation drops", f'To {outs[0][1]} from <b>{inr(oneway("sedan", outs[0][2], outs[0][3]))}</b>', "Hatchback → Tempo Traveller", "24×7 WhatsApp"]
     dests = [dict(l=f"{a} → {b}", km=km, f=f) for a, b, km, f in outs]
     body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Rates"), ("route", "Trips"), ("cars", "Cars"), ("tips", "Tips"), ("faq", "FAQ")])
     body += (f'<section class="szc-sec" id="overview"><span class="szc-kicker">At a glance</span><h2>{p["title"]}: rates and trips</h2>'
@@ -236,7 +236,7 @@ def build_city(p):
     body += quote_block(p, town, "")
     body += f'<section class="szc-sec" id="more"><span class="szc-kicker">More cab routes</span><h2>Popular routes to and from the hills</h2>{more_routes(p["slug"])}<h3 style="margin-top:30px">Plan the rest of the trip</h3>{related(p["related"])}</section>'
     body += faq_block(p["faqs"])
-    return wrap(body, p, p["faqs"], [town, "Himachal Pradesh"])
+    return wrap(body, p, p["faqs"], p.get("area") or [town, "Himachal Pradesh"])
 
 def build_vehicle(p):
     v = FLEET_BY_ID[p["vehicle"]]

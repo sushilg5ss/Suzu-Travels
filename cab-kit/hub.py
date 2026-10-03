@@ -52,6 +52,7 @@ def build():
     # local taxis
     local = [("manali-taxi-service", "Manali taxi service", "Solang, Atal Tunnel–Sissu, Rohtang at union rates; drops to Chandigarh, Delhi, Leh."),
              ("shimla-taxi-service", "Shimla taxi service", "Kufri, Chail, Naldehra, Narkanda day trips; Kalka & airport transfers."),
+             ("chandigarh-taxi-service", "Chandigarh taxi service", "IXC airport & Tricity pickups; drops to Shimla, Kasauli, Manali, Amritsar, Delhi."),
              ("tempo-traveller-hire-delhi", "Tempo Traveller hire in Delhi", "12–17 seats for hill trips, Char Dham and weddings."),
              ("innova-crysta-on-rent", "Innova Crysta on rent", "With driver, from ₹19/km for tours; one-way hill drops.")]
     lc = "".join(f'<article class="szc-card"><div class="szc-card-b"><span class="szc-tag">Service</span><h3>{t}</h3><p>{d}</p><div class="acts">'

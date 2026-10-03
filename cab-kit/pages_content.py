@@ -3,6 +3,11 @@
 
 L = lambda path, label, small="": (path, label, small)
 
+from cabs_data import oneway as _ow, inr as _inr, FLEET_BY_ID as _FB
+_O = lambda vid, km, f: _inr(_ow(vid, km, f))           # one-way fare from the engine
+_S = lambda km, f: _O("sedan", km, f)
+_DAY = lambda vid, days=1: _inr(250 * days * _FB[vid]["hire"] + (days - 1) * _FB[vid]["night"])  # full-day hire, 250 km/day minimum
+
 HP_ENTRY = ("Himachal entry fee", "Cars registered outside Himachal pay an entry fee at the state barrier (₹100 a day for passenger vehicles up to 12 seats in 2026–27; commercial and larger vehicles pay more). It is added to your quote at actuals. Details: <a href=\"/himachal-entry-tax-permits-2026/\">Himachal entry tax & permits 2026</a>.")
 NIGHT = ("No night driving in the hills", "For safety our drivers do not run hill sections late at night. Leave early (5–6 am from Delhi) and plan to reach before dark; the quote tells you the best start time.")
 WINTER = ("Snow months need a plan", "From mid-December to February roads above Shimla and Manali can close after fresh snow. Drivers carry chains; sometimes the last stretch is done in a local 4×4. We confirm the day before.")
@@ -358,6 +363,46 @@ dict(slug="shimla-taxi-service", kind="city", route=None,
        ("Can taxis go on the Mall Road?","No, the Mall Road and Ridge are car-free zones. Hotels there are reached on foot or by the public lift.")],
  related=[L("/shimla/","Shimla travel guide"),L("/best-time-to-visit-shimla/","Best time to visit Shimla"),L("/cabs/chandigarh-to-shimla-taxi/","Chandigarh to Shimla taxi"),L("/cabs/delhi-to-shimla-taxi/","Delhi to Shimla taxi"),L("/packages/unexplored-kinnaur-tour-package-from-shimla/","Kinnaur tour from Shimla")],
  wa="Hi Suzu Travels, I need a taxi in Shimla. Trip (Kufri/Chail/Narkanda/drop): ___ , date: ___ , people: ___"),
+
+# ------------------------------------------------------------------ CHANDIGARH TAXI SERVICE (3 Oct 2026)
+dict(slug="chandigarh-taxi-service", kind="city", route=None,
+ title="Chandigarh Taxi Service", seo_title=f"Chandigarh Taxi Service | Airport & Hill Drops from {_S(115,1.1)}",
+ seo_desc=f"Chandigarh taxi service: IXC airport, station & Tricity pickups. One-way to Shimla or Kasauli from {_S(115,1.1)}, Delhi {_S(250,.85)}, Manali {_S(290,1.1)}. WhatsApp quote.",
+ focus="chandigarh taxi service",
+ area=["Chandigarh", "Mohali", "Panchkula", "Zirakpur", "Punjab", "Himachal Pradesh"],
+ kicker="Chandigarh · Tricity & outstation",
+ tag="Chandigarh taxis for the airport, the city and the hills",
+ sub="Pickup anywhere in the Tricity — IXC airport, the railway station, ISBT-43 or ISBT-17, Mohali, Panchkula or Zirakpur — for day trips and one-way drops to Shimla, Kasauli, Manali, Dharamshala, Amritsar and Delhi.",
+ answer=f"Our <b>Chandigarh taxi service</b> picks up anywhere in the Tricity, including IXC airport and the railway station. One-way drops start around <b>{_S(115,1.1)} to Shimla or Kasauli</b>, <b>{_S(250,.85)} to Delhi</b>, <b>{_S(230,.85)} to Amritsar</b> and <b>{_S(290,1.1)} to Manali</b> in a sedan. A full-day hire (up to 250 km) starts at <b>{_DAY('sedan')}</b>. Tolls, parking and the Himachal entry fee are extra.",
+ facts=[("IXC airport","~12 km from centre"),("Kasauli","~60 km"),("Shimla","~115 km"),("Amritsar","~230 km"),("Manali","~290 km"),("Sedan from",_S(115,1.1)+" one-way")],
+ stops=[("Chandigarh Tricity","Pickup at IXC airport, Chandigarh railway station, ISBT-43/17, any sector, Mohali, Panchkula or Zirakpur."),
+        ("Kasauli","About 60 km via Parwanoo and Dharampur — Monkey Point, the Mall and the Gilbert Trail; an easy day trip."),
+        ("Shimla","About 115 km, 3–3.5 hours via Kalka, Solan and Kandaghat — the quickest hill escape from the Tricity."),
+        ("Manali","About 290 km, 7–8 hours on the Kiratpur–Nerchowk four-lane through Mandi and Kullu."),
+        ("Dharamshala","About 240 km, 5.5–6.5 hours via Ropar, Una and Kangra; McLeodganj is 10 km further up."),
+        ("Amritsar","About 230 km, 4–5 hours on the NH44 six-lane via Ludhiana and Jalandhar — Golden Temple and Wagah."),
+        ("Delhi","About 250 km, 4–5 hours via Ambala, Karnal and Panipat; drops at IGI airport, stations or your door.")],
+ map=dict(hub="Chandigarh", spokes=["Kasauli","Shimla","Manali","Dharamshala","Amritsar","Delhi"], ctx=["Dehradun"]),
+ local_rates=dict(head=["Trip (from Chandigarh)","Sedan","Ertiga","Innova Crysta"], note="Full-day and 2-day rates = our per-km tour rate × the included kilometres (250 km a day); 2-day prices include one night's driver allowance. Extra kilometres at the same per-km rate; tolls, parking and Himachal entry fee at actuals. Short city runs are quoted on WhatsApp.",
+   rows=[("IXC airport / railway station / ISBT transfer within the Tricity","On quote","On quote","On quote"),
+         ("City sightseeing, half day (Rock Garden, Sukhna Lake, Rose Garden)","On quote","On quote","On quote"),
+         ("Full day, up to 250 km (Kasauli, Morni Hills, Pinjore, Anandpur Sahib)",_DAY('sedan'),_DAY('ertiga'),_DAY('crysta')),
+         ("2-day hill trip, up to 500 km (e.g. Shimla & Kufri with one night)",_DAY('sedan',2),_DAY('ertiga',2),_DAY('crysta',2))]),
+ outstation=[("Chandigarh","Shimla",115,1.1),("Chandigarh","Kasauli",60,1.1),("Chandigarh","Delhi",250,0.85),("Chandigarh","Amritsar",230,0.85),("Chandigarh","Dharamshala",240,1.1),("Chandigarh","Kasol",280,1.1),("Chandigarh","Manali",290,1.1)],
+ tips=[("Airport pickups at IXC","Share your flight number when you book. The driver tracks the flight and meets you at arrivals with a name card; airport parking is added at actuals."),
+       NIGHT,HP_ENTRY,
+       ("Winter fog on the plains","In December and January dense morning fog can slow the NH44 towards Delhi and Amritsar. We may suggest a slightly later start so you drive in better visibility."),
+       ("One car for a multi-stop trip","Chandigarh → Kasauli → Shimla → Manali → back is cheaper as one per-km tour than as separate one-way drops. Ask for a split itinerary and we'll price both.")],
+ faqs=[("How much does a taxi in Chandigarh cost?",f"A full-day hire of up to 250 km starts at {_DAY('sedan')} in a sedan, {_DAY('ertiga')} in an Ertiga and {_DAY('crysta')} in an Innova Crysta. One-way drops start around {_S(115,1.1)} to Shimla or Kasauli and {_S(250,.85)} to Delhi in a sedan. Short airport and city runs are quoted on WhatsApp."),
+       ("What is the Chandigarh to Shimla taxi fare?",f"One-way starts around {_S(115,1.1)} in a sedan, {_O('ertiga',115,1.1)} in an Ertiga and {_O('crysta',115,1.1)} in an Innova Crysta for about 115 km (3–3.5 hours). The Himachal entry fee and tolls are extra at actuals."),
+       ("How much is a taxi from Chandigarh to Kasauli?",f"A one-way drop to Kasauli (about 60 km, around 2 hours via Parwanoo) starts at {_S(60,1.1)} in a sedan. For a same-day return, the full-day rate of {_DAY('sedan')} (up to 250 km) is better value and lets you add Pinjore or Morni on the way."),
+       ("Do you pick up from Chandigarh airport (IXC)?","Yes. IXC is about 12 km from the city centre. The driver tracks your flight and meets you at arrivals, for a Tricity drop or straight to Shimla, Kasauli, Manali or Dharamshala."),
+       ("What is the Chandigarh to Amritsar taxi fare?",f"One-way starts around {_S(230,.85)} in a sedan and {_O('crysta',230,.85)} in an Innova Crysta. The drive is about 230 km, 4–5 hours on the NH44 via Ludhiana and Jalandhar."),
+       ("Can I book a one-way taxi from Chandigarh to Delhi?",f"Yes. Chandigarh to Delhi one-way starts around {_S(250,.85)} in a sedan and {_O('crysta',250,.85)} in an Innova Crysta, about 4–5 hours. We drop at IGI airport, any station or your address."),
+       ("How much is a Chandigarh to Manali or Kasol taxi?",f"Chandigarh to Manali starts around {_S(290,1.1)} and Chandigarh to Kasol around {_S(280,1.1)} in a sedan, one-way, both about 7–8 hours via the Kiratpur–Nerchowk four-lane and Mandi."),
+       ("Do you have Innova Crysta and Tempo Traveller in Chandigarh?","Yes — hatchback, sedan, Ertiga, Kia Carens, Innova Crysta, 12–14 seat Tempo Traveller and Force Urbania, all with a driver.")],
+ related=[L("/cabs/chandigarh-to-shimla-taxi/","Chandigarh to Shimla taxi"),L("/cabs/chandigarh-to-manali-taxi/","Chandigarh to Manali taxi"),L("/cabs/delhi-to-chandigarh-taxi/","Delhi ⇄ Chandigarh taxi"),L("/tours/shimla-manali-tour-package-from-chandigarh/","Shimla–Manali tour from Chandigarh","Hotel + cab package"),L("/escape-the-heat-and-recharge-the-ultimate-stress-free-weekend-getaway-to-himachal-pradesh-from-chandigarh/","Weekend getaways from Chandigarh")],
+ wa="Hi Suzu Travels, I need a taxi in Chandigarh. Pickup (airport/station/sector): ___ , drop: ___ , date: ___ , people: ___"),
 
 # ------------------------------------------------------------------ TEMPO TRAVELLER DELHI
 dict(slug="tempo-traveller-hire-delhi", kind="vehicle", vehicle="tempo", route=None,
