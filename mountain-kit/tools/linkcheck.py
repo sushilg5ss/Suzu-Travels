@@ -27,9 +27,9 @@ def urls_of(slug):
         yield urljoin("https://suzutravels.com/", u)
 
 
-def get(u):
+def get(u, ranged=True):
     with tempfile.NamedTemporaryFile() as f:
-        r = subprocess.run(["curl", "-s", "-L", "--max-redirs", "3", "-m", "40", "-A", UA, "-r", "0-0", "-o", f.name,
+        r = subprocess.run(["curl", "-s", "-L", "--max-redirs", "3", "-m", "40", "-A", UA] + (["-r", "0-0"] if ranged else []) + ["-o", f.name,
                             "-w", "%{http_code} %{url_effective}", u], capture_output=True, text=True)
         body = pathlib.Path(f.name).read_text(encoding="utf-8", errors="replace")[:4000]
     code, _, final = r.stdout.strip().partition(" ")
@@ -55,6 +55,9 @@ def main():
             if group is site and challenged:
                 break
             code, final, body = get(u)
+            if group is ext and code == "000":  # connection reset/timeout: some servers drop ranged requests; retry once plain
+                time.sleep(3)
+                code, final, body = get(u, ranged=False)
             if group is site and CHALLENGE in body:
                 challenged = True
                 print(f"BOT CHALLENGE at {u}: Hostinger is challenging this IP. Stopped checking site URLs; re-run later.")

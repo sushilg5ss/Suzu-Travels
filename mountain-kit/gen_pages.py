@@ -199,9 +199,9 @@ def quote_block(title, text, wa_text, second=None):
             f'<a class="szm-btn ghost" href="{s[0]}">{s[1]}</a></div></div>')
 
 
-def trust(extra=""):
+def trust(extra="", verified=None):
     return (f'<div class="szm-trust"><span><a href="/certificates/">{REG}</a></span>'
-            f'<span>Facts checked {VERIFIED}</span><span>Sources listed on the page</span>{extra}</div>')
+            f'<span>Facts checked {e(verified or VERIFIED)}</span><span>Sources listed on the page</span>{extra}</div>')
 
 
 def sources(items):
@@ -699,7 +699,7 @@ def content_page(slug):
     ctas = (f'<div class="szm-btns"><a class="szm-btn gold" href="{wa(wa_text)}" target="_blank" rel="noopener">Get a quote on WhatsApp</a>'
             f'<a class="szm-btn ghost" href="{EXP if commercial else LIST}">{"Guided peak climbs" if commercial else "All Indian peaks"}</a></div>')
     head = (f'<span class="k">{e(c["kicker"])}</span><p class="szm-tag">{e(c["tag"])}</p><p class="szm-sub">{e(c["sub"])}</p>'
-            f'<ul class="szm-chips">{chips}</ul>{ctas}{trust()}')
+            f'<ul class="szm-chips">{chips}</ul>{ctas}{trust(verified=c.get("verified"))}')
     if "hero" in media:
         hero = f'<section class="szm-hero">{hero_video(slug, "hero", c.get("hero_alt", c["title"]))}<div class="szm-hero-in">{head}</div></section>'
         used.add("hero")

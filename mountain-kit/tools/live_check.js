@@ -10,6 +10,11 @@ const { chromium } = require('playwright');
   await p.goto(url, { waitUntil: 'load', timeout: 90000 });
   const loadMs = Date.now() - t0;
   await p.waitForTimeout(3000);
+  // A late navigation (Hostinger JS challenge reloads the page ~3 s after load) destroys the context:
+  // wait for the real page (waitForSelector survives navigations), then let it settle.
+  try { await p.waitForSelector('.szm', { timeout: 45000 }); await p.waitForLoadState('load', { timeout: 30000 }); await p.waitForTimeout(2000); } catch (e) {}
+  const title = await p.title().catch(() => '');
+  if (/Checking your browser/i.test(title)) { console.log(JSON.stringify({ challenge: true, title })); await b.close(); process.exit(3); }
   const v1 = await p.evaluate(() => { const v = document.querySelector('.szm-hero video'); return v ? { rs: v.readyState, src: v.currentSrc.split('/').pop(), paused: v.paused } : null; });
   await p.mouse.move(300, 300); await p.mouse.wheel(0, 600); await p.waitForTimeout(3000);
   const info = await p.evaluate(() => ({ sw: document.documentElement.scrollWidth, iw: innerWidth, h1: document.querySelectorAll('h1').length, lazyDone: [...document.querySelectorAll('video[data-lazy]')].map(v => v.getAttribute('data-done')) }));
