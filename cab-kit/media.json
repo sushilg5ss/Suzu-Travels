@@ -255,5 +255,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "dehradun-taxi-service": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@68c869309c9aaaf99c05c9664167b2e65519b1da/cab-kit/media/dehradun-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@68c869309c9aaaf99c05c9664167b2e65519b1da/cab-kit/media/dehradun-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@68c869309c9aaaf99c05c9664167b2e65519b1da/cab-kit/media/dehradun-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@68c869309c9aaaf99c05c9664167b2e65519b1da/cab-kit/media/dehradun-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@68c869309c9aaaf99c05c9664167b2e65519b1da/cab-kit/media/dehradun-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@68c869309c9aaaf99c05c9664167b2e65519b1da/cab-kit/media/dehradun-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
