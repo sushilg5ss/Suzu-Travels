@@ -1,4 +1,4 @@
-# Suzu Mountain Kit v1.2.1 (3 Oct 2026)
+# Suzu Mountain Kit v1.2.2 (4 Oct 2026)
 
 This kit is the design system, dataset, video pipeline and publishing toolkit for the **Mountains of India** section of suzutravels.com. It covers:
 - `/mountains-of-india/` and its child pages
@@ -184,6 +184,7 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 6. **Update the links on other pages:**
    - `python3 tools/sync_plan.py <slug>` gives a JSON list of small find/replace ops.
    - Apply each one in the order given: `wp_replace_in_page(id, find, replace, expected_count=1)`.
+   - Since v1.2.2 the plan also covers the new page itself (its own self-links, e.g. its row in a peak table), so stored = build with no manual op.
    - An op that finds 0 matches means that page is on an older template. Log `FIX NEEDED: full re-upload <slug>` and move on.
    - Pages listed under `"full"` get a full re-upload with `chunks.py`.
 7. **Verify live:**

@@ -7,7 +7,7 @@
                                                       out/<slug>.min.html — what is live — to a fresh build; run it BEFORE
                                                       build.py overwrites out/, then apply, verify, and build)
 
-For every live page P (from live.json, the three base pages included) it renders P twice with gen_pages.py — once with
+For every live page P (from live.json, the three base pages and <new-slug> itself included) it renders P twice with gen_pages.py — once with
 live.json WITHOUT <new-slug> (= what is on the site now) and once WITH it — and diffs the two one-line builds.
 Output (stdout, JSON): {"ops": [ {"page", "id", "find", "replace", "expected_count": 1}, ... ], "full": [slugs to re-upload in full]}
 Apply each op IN THE ORDER GIVEN with the WordPress connector:
@@ -107,8 +107,9 @@ def main():
     before.pop(new)
     out = {"ops": [], "full": [], "unchanged": []}
     for slug, v in live.items():
-        if slug == new or (only and slug != only):
-            continue
+        if only and slug != only:
+            continue  # the new page itself is included too: it was built before live.json listed it, so its own
+                      # self-links (e.g. its row in a peak table) need ops as well (fix 4 Oct 2026)
         a, b = render(slug, before), render(slug, live)
         if a == b:
             out["unchanged"].append(slug)
