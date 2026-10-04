@@ -54,5 +54,16 @@
   "blurb": "5,982 m · the technical snow pyramid above Beas Kund",
   "added": "2026-10-03",
   "commercial": true
+ },
+ "stok-kangri": {
+  "id": 12119,
+  "path": "/mountains-of-india/stok-kangri/",
+  "kind": "peak",
+  "peak_id": "stok-kangri",
+  "state": "ladakh",
+  "label": "Stok Kangri",
+  "blurb": "6,153 m · closed since 2020, and what to climb instead",
+  "added": "2026-10-04",
+  "commercial": false
  }
 }
