@@ -1,4 +1,4 @@
-# Suzu Adventure Kit v1.3 (29 Sep 2026)
+# Suzu Adventure Kit v1.4 (4 Oct 2026)
 
 Design system + build tool for every page under `suzutravels.com/adventure/`.
 Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Adventure …" agents.
@@ -35,6 +35,7 @@ Each activity card has a unique id `act-<slug>` and a unique WhatsApp link; when
 Hero (montage video) → sticky menu of categories (Air · Water · Snow · Land & Rides · Treks & Camps · Ropeways & Parks · Rentals & Services · By destination) → `.sza-cats` category tiles → one `.sza-sec` per category with a `.sza-grid` of every activity in it (live pages link "Explore →", not-yet-built ones show only "Get Quote →") → "By destination" grid (Manali–Solang, Bir–Kangra, Kullu, Shimla–Kufri–Narkanda, Dharamshala, Bilaspur, Chamba–Dalhousie, Tirthan–Jibhi, Lahaul–Spiti) → safety band → how booking works → quote block → FAQ.
 
 ## Changelog
+- v1.4 (30 Sep 2026, Page Builder; pushed by QA 4 Oct 2026): `.sza-media>p:empty{display:none}` — the theme leaves a stray empty `<p>` after the video/img in `.sza-media`, which dropped the text column under the media on desktop. Already live on 11632, 11776, 11945, 12099 (inlined); the Builder's own pushes were blocked, so this repo copy was behind the live pages until now. Page sources for kufri / solang / skiing are in Project docs `claude/adventure-pages/*.html|.patch`.
 - v1.3 (29 Sep 2026, QA): `.sza-band` gets `scroll-margin-top:140px` — the #safety menu anchor landed under the sticky menu on both live pages. Already patched live on pages 11529 and 11632 (targeted CSS replace); new pages get it from kit.css.
 - v1.2 (29 Sep 2026, Page Builder): mobile sticky menu `top:70px` (was 60px, hid under the 70 px header); paragraph text links underlined. Live on 11632; hub 11529 got the 70px fix by QA replace (the underline rule is not on the hub yet — Builder re-inlines when it next touches the hub).
 - Note: `pages/adventure.min.html` in this repo is the hub BEFORE the 29 Sep live edits (Explore card switches, #snow-explainer, QA CSS/Rohtang fixes). The live page 11529 is the source of truth — pull it with wp_get_page before regenerating.

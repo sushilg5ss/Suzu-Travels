@@ -107,3 +107,6 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .sza-note{font-size:14px;color:var(--mid)}
 @media(max-width:640px){.sza{font-size:16px}.sza-sec{padding:40px 0}.sza-nav{top:70px}.sza-hero{min-height:560px}.sza-hero-in{padding:32px 18px 28px}}
 @media(prefers-reduced-motion:reduce){.sza *{transition:none!important}}
+
+/* v1.4 (30 Sep 2026, Page Builder; pushed by QA 4 Oct 2026): the theme leaves a stray empty <p> inside .sza-media, which pushed the text column under the media on desktop */
+.sza .sza-media>p:empty{display:none}
