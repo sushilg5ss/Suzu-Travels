@@ -1,0 +1,135 @@
+{
+ "hero": {
+  "kicker": "DEO TIBBA · HIMACHAL",
+  "scenes": [
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.05,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -200
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 520
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 250
+    },
+    "to": {
+     "y": 1320
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ],
+  "steps": [
+   [
+    2050,
+    "MANALI"
+   ],
+   [
+    3160,
+    "CHHIKA"
+   ],
+   [
+    4100,
+    "TAINTA BASE CAMP"
+   ],
+   [
+    5100,
+    "DUHANGAN COL"
+   ],
+   [
+    6001,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Deo Tibba route",
+  "sub": "Manali to the 6,001 m summit · camp heights are approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Day 1"
+   },
+   {
+    "name": "Chhika",
+    "m": 3160,
+    "day": "Day 2"
+   },
+   {
+    "name": "Seri",
+    "m": 3620,
+    "day": "Day 3"
+   },
+   {
+    "name": "Base camp",
+    "m": 4100,
+    "day": "Day 4"
+   },
+   {
+    "name": "Duhangan Col",
+    "m": 5100,
+    "day": "Day 6"
+   },
+   {
+    "name": "Summit camp",
+    "m": 5500,
+    "day": "Day 8"
+   },
+   {
+    "name": "Summit",
+    "m": 6001,
+    "day": "Day 10"
+   }
+  ]
+ }
+}

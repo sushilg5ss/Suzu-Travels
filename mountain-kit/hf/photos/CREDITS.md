@@ -20,6 +20,9 @@ Each one is re-sized for HyperFrames scenes:
 | px-38468355.jpg | land 2112×1406 | Portrait of a climber (red jacket, helmet, ice axe) | **no** | Mont-bell logo on the jacket |
 | px-38930225.jpg | land 2112×1188 | Snowy mountain range under cloud (not a named peak) | ok | Wide establishing shot |
 | px-9683997.jpg | land 2112×1408 | Two climbers on a corniced snow ridge | ok | "Ridge" or "summit day" |
+| px-17613105.jpg | tilt 1920×2880 | Hiker (pink beanie, dark pack) on brown scree with snow patches, a glaciated generic peak behind | **no** | Nike swoosh on the pack. Not a named peak. Use as Lahaul / high-desert approach. Added 4 Oct 2026, pexels.com/photo/17613105 |
+| px-28409954.jpg | land 2112×1399 | Three roped climbers (helmets, ice axes) crossing a flat glacier under seracs and rock bands | ok | No logos seen. Climbers sit bottom-left (move the scene up ~y −190 to show them). "Glacier plateau" shot. Added 4 Oct 2026, pexels.com/photo/28409954 |
+| px-35905430.jpg | tilt 1920×2880 | Two hikers with big packs picking through a giant-boulder moraine with old snow | **no** | Painted red-white trail mark on a boulder; no brand logos seen (kept no-mirror to be safe). Hikers in the lower third: keep y 0–500. "Moraine to base camp". Added 4 Oct 2026, pexels.com/photo/35905430 |
 
 **Adding a photo.**
 1. Find candidate photo IDs with WebSearch or WebFetch, e.g. "pexels mountaineer snow ridge". pexels.com pages return 403 to curl, but the image CDN works: download the large JPEG with curl from `https://images.pexels.com/photos/<id>/pexels-photo-<id>.jpeg?auto=compress&cs=tinysrgb&w=2400` (checked 1 Oct 2026). Look at the image (Read) before using it.

@@ -1,0 +1,133 @@
+{
+ "hero": {
+  "kicker": "YUNAM PEAK · HIMACHAL",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 450
+    },
+    "to": {
+     "y": 1050
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 500
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": -20
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 30
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    2050,
+    "MANALI"
+   ],
+   [
+    3200,
+    "JISPA"
+   ],
+   [
+    4700,
+    "BY ROAD TO 4,700 M"
+   ],
+   [
+    5200,
+    "BASE CAMP"
+   ],
+   [
+    6111,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Yunam Peak route",
+  "sub": "By road to 4,700 m, then on foot to 6,111 m · heights approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Day 1"
+   },
+   {
+    "name": "Jispa",
+    "m": 3200,
+    "day": "Day 2"
+   },
+   {
+    "name": "Bharatpur",
+    "m": 4700,
+    "day": "Day 3"
+   },
+   {
+    "name": "Base camp",
+    "m": 5200,
+    "day": "Day 5"
+   },
+   {
+    "name": "Shoulder",
+    "m": 5900,
+    "day": "Day 7"
+   },
+   {
+    "name": "Summit",
+    "m": 6111,
+    "day": "Day 7"
+   }
+  ]
+ }
+}
