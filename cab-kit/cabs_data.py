@@ -77,6 +77,8 @@ PLACES = {
     "Meerut": (28.98, 77.71), "Khatauli": (29.28, 77.73), "Muzaffarnagar": (29.47, 77.70), "Narsan": (29.71, 77.87),
     "Roorkee": (29.87, 77.89), "Bahadarabad": (29.92, 78.04),
     "Shivpuri": (30.14, 78.39), "Jolly Grant": (30.19, 78.18), "Doiwala": (30.18, 78.12),
+    "Paonta Sahib": (30.44, 77.62), "Nahan": (30.56, 77.30), "Dhanaulti": (30.43, 78.24), "Kempty": (30.49, 77.99),
+    "Chakrata": (30.70, 77.87),
 }
 
 # every route card shown anywhere (hub grid, "more routes"); page = slug when a page exists
