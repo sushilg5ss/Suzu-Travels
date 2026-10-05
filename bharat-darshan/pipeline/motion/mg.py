@@ -19,6 +19,7 @@ CITIES = {  # lon, lat
     "Mumbai": (72.88, 19.08), "Jaisalmer": (70.91, 26.92), "Darjeeling": (88.26, 27.04), "Hampi": (76.46, 15.34),
     "Amritsar": (74.87, 31.63), "Shimla": (77.17, 31.10), "Udaipur": (73.71, 24.58), "Rishikesh": (78.27, 30.09),
     "Kolkata": (88.36, 22.57), "Chennai": (80.27, 13.08), "Bengaluru": (77.59, 12.97), "Khajuraho": (79.92, 24.85),
+    "Munnar": (77.06, 10.09), "Thekkady": (77.16, 9.60), "Alleppey": (76.34, 9.49),
 }
 
 

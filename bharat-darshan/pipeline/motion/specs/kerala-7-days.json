@@ -1,0 +1,201 @@
+{
+ "title": "Suzu Travels — Kerala in 7 days",
+ "duration": 40,
+ "music": "Our Story Begins.mp3",
+ "_status": "spec only 2026-10-05 (scheduled run blocked at setup-motion.sh) — render on first unblocked run",
+ "_music_note": "Last two reels used Naraina and Long Road Ahead. Swap to any calmer catalog track if Our Story Begins feels reused (golden-triangle used it on 30 Sep).",
+ "_sources": {
+  "western_ghats": "whc.unesco.org/en/list/1342 — Western Ghats inscribed 2012 (serial site; Periyar sub-cluster includes Periyar Tiger Reserve, Thekkady); keralatourism.org/kerala-article/western-ghats/188",
+  "advice": "Route, day split, 'best Sep–Mar after the monsoon', houseboat overnight = Suzu tips, not statistics",
+  "dropped": "Vembanad length (~96 km) and Munnar altitude (~1,600 m) not on screen — could not open sources this run to verify"
+ },
+ "scenes": [
+  {
+   "type": "photo",
+   "start": 0,
+   "dur": 5,
+   "img": "alleppey-backwaters-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.25,
+    1.08
+   ],
+   "grade": "warm",
+   "kicker": "God's Own Country",
+   "headline": [
+    "Kerala",
+    "*in 7 days"
+   ],
+   "pos": "low",
+   "t_head": 0.3
+  },
+  {
+   "type": "map",
+   "start": 5,
+   "dur": 9,
+   "kicker": "The route",
+   "headline": [
+    "Coast, hills,",
+    "*backwaters"
+   ],
+   "pins": [
+    {
+     "city": "Kochi",
+     "at": 3.4,
+     "side": "l"
+    },
+    {
+     "city": "Munnar",
+     "at": 3.7,
+     "side": "r"
+    },
+    {
+     "city": "Thekkady",
+     "at": 4.0,
+     "side": "r"
+    },
+    {
+     "city": "Alleppey",
+     "at": 4.3,
+     "side": "l"
+    }
+   ],
+   "route": {
+    "cities": [
+     "Kochi",
+     "Munnar",
+     "Thekkady",
+     "Alleppey"
+    ],
+    "close": false,
+    "at": 4.6,
+    "draw": 2.4,
+    "labels": []
+   },
+   "zoom_map": {
+    "scale": 4.5,
+    "at": 2.2,
+    "dur": 1.4,
+    "around": [
+     "Kochi",
+     "Munnar",
+     "Thekkady",
+     "Alleppey"
+    ],
+    "to": [
+     540,
+     1150
+    ]
+   },
+   "_tune": "Kerala is small on the India outline — check scale/to at snapshot (headline + brand bug must stay clear)"
+  },
+  {
+   "type": "photo",
+   "start": 14,
+   "dur": 5,
+   "img": "fort-kochi-nets-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "warm",
+   "kicker": "Day 1 · Kochi",
+   "headline": [
+    "Chinese nets",
+    "*& old Fort Kochi"
+   ],
+   "pos": "low",
+   "sub": "Our tip: watch the nets at sunset"
+  },
+  {
+   "type": "photo",
+   "start": 19,
+   "dur": 6,
+   "img": "munnar-tea-1.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.2,
+    1.05
+   ],
+   "grade": "cool",
+   "kicker": "Day 2–3 · Munnar",
+   "headline": [
+    "Rolling",
+    "*tea hills"
+   ],
+   "pos": "low",
+   "sub": "Our tip: start early — mist lifts by 9"
+  },
+  {
+   "type": "photo",
+   "start": 25,
+   "dur": 6,
+   "img": "periyar-lake-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "cool",
+   "kicker": "Day 4 · Thekkady",
+   "headline": [
+    "Wild *Western",
+    "Ghats"
+   ],
+   "pos": "low",
+   "tag": "UNESCO",
+   "sub": "UNESCO World Heritage since 2012"
+  },
+  {
+   "type": "photo",
+   "start": 31,
+   "dur": 4,
+   "img": "houseboat-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.2,
+    1.05
+   ],
+   "grade": "warm",
+   "kicker": "Day 5–7 · Alleppey",
+   "headline": [
+    "A night on",
+    "*the backwaters"
+   ],
+   "pos": "low",
+   "sub": "Our tip: best Sep–Mar, after the monsoon"
+  },
+  {
+   "type": "end",
+   "start": 35,
+   "dur": 5,
+   "big": "Your Kerala, planned by locals",
+   "small": "Private driver · houseboat · 24/7 support",
+   "cta": "DM “KERALA” for a free plan"
+  }
+ ],
+ "_photos_todo": [
+  "Alleppey backwaters houseboat",
+  "Chinese fishing nets Fort Kochi",
+  "Munnar tea plantation",
+  "Periyar lake Thekkady",
+  "Kerala backwaters sunset",
+  "Kumarakom backwaters"
+ ]
+}
