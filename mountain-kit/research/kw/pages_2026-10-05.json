@@ -1,0 +1,44 @@
+{
+ "_meta": {"source": "Google Ads Keyword Planner via Pipeboard, customer 1172710099, English, Google Search, Sep 2025-Aug 2026 averages (banded)", "pulled": "2026-10-05", "geos": {"ww": "all locations", "in": "India", "intl6": "US+GB+AU+IL+DE+FR"}},
+ "trekking-peaks": {
+  "trekking peaks": {"ww": 590, "in": 480, "intl6": 70},
+  "trekking peaks india": {"ww": null, "in": null, "intl6": null, "note": "no volume returned"},
+  "highest trekking peak in india": {"ww": 140, "in": 140, "intl6": 10},
+  "easiest 6000m peak": {"ww": 210, "in": 20, "intl6": 90},
+  "easiest mountain to climb in india": {"ww": 70, "in": 70, "intl6": 10},
+  "best mountains to climb in india": {"ww": 20},
+  "mentok kangri": {"ww": 390, "in": 320, "intl6": 40},
+  "shitidhar peak": {"ww": 110, "in": 110, "intl6": 10},
+  "ladakhi peak": {"ww": 110, "in": 90, "intl6": 10},
+  "_context": {"mera peak": 18100, "island peak": 12100, "kedarkantha trek": 49500}
+ },
+ "mountaineering-courses": {
+  "mountaineering course india": {"ww": 1600, "in": 1600, "intl6": 50},
+  "mountaineering course": {"ww": 6600, "in": 2900, "intl6": 2900},
+  "basic mountaineering course": {"ww": 2900, "in": 2400, "intl6": 170},
+  "basic mountaineering course in india": {"ww": 480},
+  "advanced mountaineering course": {"ww": 390, "in": 390},
+  "mountaineering training india": {"ww": 1600},
+  "mountaineering institute in india": {"ww": 1000, "in": 1000},
+  "bmc course": {"ww": 1300, "note": "mixed intent (also Bloomberg BMC)"},
+  "nehru institute of mountaineering": {"ww": 12100, "in": 12100, "intl6": 170},
+  "himalayan mountaineering institute": {"ww": 8100, "in": 8100, "intl6": 170},
+  "nimas dirang": {"ww": 3600},
+  "abvimas manali": {"ww": 1300, "in": 1300},
+  "jawahar institute of mountaineering": {"ww": 1000},
+  "mountaineering course manali": {"ww": 50},
+  "winter mountaineering course": {"ww": 480, "intl6": 390, "note": "mostly Scotland/Alps intent"}
+ },
+ "mountaineering-gear-list": {
+  "mountaineering equipment": {"ww": 74000, "in": 590, "intl6": 60500, "competition": "HIGH (shopping)"},
+  "mountaineering gear": {"ww": 27100, "in": 720, "intl6": 6600, "competition": "HIGH (shopping)"},
+  "mountaineering boots": {"ww": 14800},
+  "trekking gear list": {"ww": 590, "in": 480, "intl6": 50},
+  "mountaineering equipment list": {"ww": 390, "in": 140, "intl6": 170},
+  "climbing gear list": {"ww": 390},
+  "mountaineering gear list": {"ww": 260, "in": 30, "intl6": 140},
+  "mountaineering checklist": {"ww": 110, "in": 10, "intl6": 70},
+  "expedition gear list": {"ww": 10},
+  "mountaineering gear rental manali": {"ww": null, "note": "no volume returned"}
+ }
+}

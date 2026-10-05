@@ -2515,7 +2515,7 @@
   "notable": "",
   "sources": [
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
-   "https://www.dreamladakh.com/chamser-lungser-kangri.htm"
+   "https://en.wikipedia.org/wiki/Tso_Moriri"
   ]
  },
  {
@@ -3324,7 +3324,7 @@
   "rank": null,
   "notable": "",
   "sources": [
-   "https://www.dreamladakh.com/chamser-lungser-kangri.htm"
+   "https://assamtribune.com/state-mountaineers-scale-peak"
   ]
  },
  {
@@ -3375,14 +3375,15 @@
   "status": "climbed",
   "status_note": "",
   "grade": "trekking peak",
-  "grade_note": "Non-technical snow walk-up above Tso Moriri",
+  "grade_note": "Non-technical in normal conditions: snow slopes early in the season, loose moraine and rock scrambling when dry; the massif has several summits (Mentok I–III) whose names and heights differ between maps",
   "season": "Jun–Sep",
   "base": "Korzok (Tso Moriri)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "Rises above the west shore of Tso Moriri; the lake is ringed by 6,000 m peaks including Mentok Kangri and Lungser Kangri. A 2010s SummitPost report gives about 6,250 m for Mentok I and a GPS reading of 6,151 m on a lower summit.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Mentok_(mountain)"
+   "https://en.wikipedia.org/wiki/Tso_Moriri",
+   "https://www.summitpost.org/mentok-kangri-2/993166"
   ]
  },
  {
@@ -4064,9 +4065,9 @@
   "base": "Manali → Solang / Beas Kund",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "Climbed from Beas Kund above Solang; the final ridge is narrow and exposed, so it 'can feel like a mountain' despite the trekking-peak label. Published heights vary (about 5,257–5,345 m).",
   "sources": [
-   "https://ascentdescentadventures.com/climb/hanuman-tibba/"
+   "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi"
   ]
  },
  {
