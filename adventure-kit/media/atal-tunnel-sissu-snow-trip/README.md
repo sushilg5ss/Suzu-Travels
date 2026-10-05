@@ -7,3 +7,5 @@ Re-render: `python3 <script>.py` (needs the photos below in /home/claude/work/ph
 - reel: 15 s 9:16 (9.02 km tunnel, no Rohtang permit; snow day ~40 km from Manali, first snow Oct–Nov; after snowfall 4x4 only, chains beyond Solang Nala; end card Hotel + cab + snow day, suzutravels.com/adventure/atal-tunnel-sissu-snow-trip, HP Tourism reg. no.).
 
 Photos (WordPress IDs, all generic, neutral alt): 12196 mountain road tunnel after snowfall (Pexels 15295177) · 12197 cars driving towards a mountain tunnel in winter (Pexels 7291309) · 12198 frozen waterfall with icicles (Pexels 12548491) · 12199 snowy mountain wall with an icefall (Pexels 15443915) · reuse 11627 SUV on a snowy forest road · reuse 9050 snowy valley with a river (Suzu library, Spiti) · reuse 11939 visitors on a snow field.
+
+Also placed (5 Oct 2026): the explainer runs on the live page /adventure/snow-activities-manali/#sissu-explainer (page 11632, #season, before the snowfall-guide note; poster WP 12208). Hero poster WP 12207.
