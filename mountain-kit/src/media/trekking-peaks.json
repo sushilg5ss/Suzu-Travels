@@ -1,0 +1,19 @@
+{
+ "hero": {
+  "kicker": "TREKKING PEAKS · INDIA",
+  "words": [["FIRST:", "5,289 M."], ["ROPE AND", "ICE AXE."], ["NEXT:", "6,111 M."], ["TRAIN.", "THEN CLIMB."]],
+  "scenes": [
+   {"img": "px-10254837.jpg", "kind": "land", "h": 1408, "t": [0, 3.8], "from": {"scale": 1.02, "x": 20}, "to": {"scale": 1.1, "x": -30}},
+   {"img": "px-32109154.jpg", "kind": "tilt", "h": 2560, "t": [3.2, 7.0], "from": {"y": 0}, "to": {"y": 480}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [6.4, 10.2], "from": {"scale": 1.02, "x": 60, "y": 30}, "to": {"scale": 1.12, "x": -20, "y": 70}},
+   {"img": "px-17613105.jpg", "kind": "tilt", "h": 2880, "t": [9.6, 13.0], "from": {"y": 450}, "to": {"y": 1000}}
+  ]
+ },
+ "ladder": {
+  "kicker": "TREKKING PEAKS · INDIA",
+  "title": "First summits, side by side",
+  "peaks": ["friendship-peak", "shitidhar", "ladakhi-peak", "mount-yunam", "mentok-kangri", "dzo-jongo"],
+  "subs": {"friendship-peak": "Himachal · Solang", "shitidhar": "Himachal · Solang", "ladakhi-peak": "Himachal · Solang", "mount-yunam": "Himachal · Lahaul", "mentok-kangri": "Ladakh · height varies", "dzo-jongo": "Ladakh"},
+  "end": "Friendship, Shitidhar, Ladakhi and Yunam are in Himachal"
+ }
+}
