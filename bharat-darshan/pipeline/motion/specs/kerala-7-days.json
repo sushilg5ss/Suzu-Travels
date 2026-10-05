@@ -2,7 +2,7 @@
  "title": "Suzu Travels — Kerala in 7 days",
  "duration": 40,
  "music": "Our Story Begins.mp3",
- "_status": "spec only 2026-10-05 (scheduled run blocked at setup-motion.sh) — render on first unblocked run",
+ "_status": "rendered 2026-10-05 — media/drafts/2026-10-05-kerala-7-days/suzu-kerala-7-days.mp4",
  "_music_note": "Last two reels used Naraina and Long Road Ahead. Swap to any calmer catalog track if Our Story Begins feels reused (golden-triangle used it on 30 Sep).",
  "_sources": {
   "western_ghats": "whc.unesco.org/en/list/1342 — Western Ghats inscribed 2012 (serial site; Periyar sub-cluster includes Periyar Tiger Reserve, Thekkady); keralatourism.org/kerala-article/western-ghats/188",
@@ -16,7 +16,7 @@
    "dur": 5,
    "img": "alleppey-backwaters-1.jpg",
    "focus": [
-    0.5,
+    0.3,
     0.5
    ],
    "zoom": [
@@ -76,7 +76,7 @@
     "labels": []
    },
    "zoom_map": {
-    "scale": 4.5,
+    "scale": 11,
     "at": 2.2,
     "dur": 1.4,
     "around": [
@@ -86,11 +86,10 @@
      "Alleppey"
     ],
     "to": [
-     540,
-     1150
+     560,
+     1180
     ]
-   },
-   "_tune": "Kerala is small on the India outline — check scale/to at snapshot (headline + brand bug must stay clear)"
+   }
   },
   {
    "type": "photo",
@@ -98,7 +97,7 @@
    "dur": 5,
    "img": "fort-kochi-nets-1.jpg",
    "focus": [
-    0.5,
+    0.55,
     0.5
    ],
    "zoom": [
@@ -112,7 +111,13 @@
     "*& old Fort Kochi"
    ],
    "pos": "low",
-   "sub": "Our tip: watch the nets at sunset"
+   "sub": "Our tip: watch the nets at sunset",
+   "days": {
+    "total": 7,
+    "on": [
+     1
+    ]
+   }
   },
   {
    "type": "photo",
@@ -120,8 +125,8 @@
    "dur": 6,
    "img": "munnar-tea-1.jpg",
    "focus": [
-    0.5,
-    0.45
+    0.45,
+    0.55
    ],
    "zoom": [
     1.2,
@@ -134,7 +139,14 @@
     "*tea hills"
    ],
    "pos": "low",
-   "sub": "Our tip: start early — mist lifts by 9"
+   "sub": "Our tip: start early — mist lifts by 9",
+   "days": {
+    "total": 7,
+    "on": [
+     2,
+     3
+    ]
+   }
   },
   {
    "type": "photo",
@@ -157,16 +169,22 @@
    ],
    "pos": "low",
    "tag": "UNESCO",
-   "sub": "UNESCO World Heritage since 2012"
+   "sub": "UNESCO World Heritage since 2012",
+   "days": {
+    "total": 7,
+    "on": [
+     4
+    ]
+   }
   },
   {
    "type": "photo",
    "start": 31,
    "dur": 4,
-   "img": "houseboat-1.jpg",
+   "img": "houseboat-2.jpg",
    "focus": [
-    0.5,
-    0.5
+    0.35,
+    0.55
    ],
    "zoom": [
     1.2,
@@ -179,7 +197,15 @@
     "*the backwaters"
    ],
    "pos": "low",
-   "sub": "Our tip: best Sep–Mar, after the monsoon"
+   "sub": "Our tip: best Sep–Mar, after the monsoon",
+   "days": {
+    "total": 7,
+    "on": [
+     5,
+     6,
+     7
+    ]
+   }
   },
   {
    "type": "end",
@@ -190,12 +216,5 @@
    "cta": "DM “KERALA” for a free plan"
   }
  ],
- "_photos_todo": [
-  "Alleppey backwaters houseboat",
-  "Chinese fishing nets Fort Kochi",
-  "Munnar tea plantation",
-  "Periyar lake Thekkady",
-  "Kerala backwaters sunset",
-  "Kumarakom backwaters"
- ]
+ "_photos": "see media/drafts/2026-10-05-kerala-7-days/photo-credits.txt"
 }

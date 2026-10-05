@@ -95,6 +95,15 @@ def build(spec_path, out_dir):
             if sc.get("kicker"):
                 inner.append(f'<div class="kicker" id="{p}-k">{esc(sc["kicker"])}</div>')
                 js.append(f'tl.fromTo("#{p}-k",{{opacity:0,x:-30}},{{opacity:1,x:0,duration:0.6,ease:"power3.out"}},{S+0.25:.3f});')
+            if sc.get("days"):  # itinerary day strip: {"total":7,"on":[2,3]}
+                dy = sc["days"]; tot = dy.get("total", 7); on = set(dy.get("on", []))
+                cells = "".join(f'<div class="dcell{" on" if d in on else ""}" id="{p}-d{d}">{d}</div>' for d in range(1, tot + 1))
+                inner.append(f'<div class="days" id="{p}-days"><span class="dlab">DAY</span>{cells}</div>')
+                t0 = S + dy.get("at", 0.15)
+                js.append(f'tl.fromTo("#{p}-days .dcell",{{opacity:0,y:18}},{{opacity:1,y:0,duration:0.35,stagger:0.05,ease:"power3.out"}},{t0:.3f});')
+                js.append(f'tl.fromTo("#{p}-days .dlab",{{opacity:0}},{{opacity:1,duration:0.4}},{t0:.3f});')
+                for j, d in enumerate(sorted(on)):
+                    js.append(f'tl.fromTo("#{p}-d{d}",{{scale:1}},{{scale:1.22,duration:0.22,yoyo:true,repeat:1,ease:"power2.out"}},{t0+0.45+tot*0.05+j*0.12:.3f});')
             if sc.get("headline"):
                 pos = sc.get("pos", "low")
                 inner.append(words_html(sc["headline"], f"hl hl-{pos}", f"{p}-h").replace('id="%s-h"' % p, 'id="%s-h" style="font-size:%dpx"' % (p, sc.get("hl_size", 150)), 1))
@@ -155,6 +164,7 @@ def build(spec_path, out_dir):
                 cs = [pts[c] for c in zm.get("around", list(pts.keys()))]
                 ox, oy = sum(c[0] for c in cs) / len(cs), sum(c[1] for c in cs) / len(cs)
                 tx, ty = zm.get("to", [W / 2, 1000])
+                js.append(f'tl.to("#{p}-outline",{{attr:{{"stroke-width":{2.6/k/zs*zm.get("stroke_keep",1.6):.2f}}},duration:{zm.get("dur",1.4)},ease:"power2.inOut"}},{S+zm.get("at",2.0):.3f});')
                 js.append(f'tl.fromTo("#{p}-cam",{{scale:1,x:0,y:0,svgOrigin:"{ox:.1f} {oy:.1f}"}},{{scale:{zs},x:{tx-ox:.1f},y:{ty-oy:.1f},duration:{zm.get("dur",1.4)},ease:"power2.inOut"}},{S+zm.get("at",2.0):.3f});')
             inner.append("".join(svg))
             if sc.get("kicker"):
@@ -237,6 +247,10 @@ body{{margin:0;background:{EM}}}
 .stat-n{{font-family:"Bebas";font-size:300px;line-height:.9;color:{GOLD}}}
 .stat-l{{font-family:"Inter";font-weight:700;font-size:44px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px;max-width:820px}}
 .tag{{position:absolute;right:210px;top:300px;background:{GOLD};color:{EM};font-family:"Inter";font-weight:800;font-size:30px;letter-spacing:.12em;text-transform:uppercase;padding:14px 26px;border-radius:999px}}
+.days{{position:absolute;left:80px;top:950px;display:flex;align-items:center;gap:12px}}
+.dlab{{font-family:"Inter";font-weight:800;font-size:22px;letter-spacing:.2em;color:rgba(255,255,255,.75);margin-right:6px;text-shadow:0 2px 10px rgba(0,0,0,.8)}}
+.dcell{{width:56px;height:56px;border-radius:50%;border:2px solid rgba(255,255,255,.6);background:rgba(7,15,9,.35);display:flex;align-items:center;justify-content:center;font-family:"Inter";font-weight:800;font-size:24px;color:rgba(255,255,255,.8)}}
+.dcell.on{{background:{GOLD};border-color:{GOLD};color:{EM};box-shadow:0 0 24px rgba(242,200,75,.55)}}
 .map{{position:absolute;inset:0}}
 .pinlab{{font-family:"Inter";font-weight:700;font-size:34px;fill:#fff;paint-order:stroke;stroke:{EM};stroke-width:8px;stroke-linejoin:round}}
 .rlab{{font-family:"Inter";font-weight:700;font-size:28px;fill:{GOLD}}}
