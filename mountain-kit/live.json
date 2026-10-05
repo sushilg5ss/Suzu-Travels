@@ -76,5 +76,15 @@
   "blurb": "6,001 m · the snow dome above Jagatsukh and the Duhangan Col",
   "added": "2026-10-05",
   "commercial": true
+ },
+ "yunam-peak": {
+  "id": 12259,
+  "path": "/mountains-of-india/yunam-peak/",
+  "kind": "peak",
+  "label": "Yunam Peak",
+  "blurb": "6,111 m · a road-head 6,000er above Baralacha La in Lahaul",
+  "added": "2026-10-05",
+  "peak_id": "mount-yunam",
+  "commercial": true
  }
 }
