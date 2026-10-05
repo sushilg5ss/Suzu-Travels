@@ -179,6 +179,7 @@ VARIANTS = {
   "shimla-taxi-service": dict(routes=[("Shimla taxis",None)], kicker="KUFRI · CHAIL · NARKANDA"),
   "chandigarh-taxi-service": dict(routes=[("Chandigarh taxis",None)], kicker="AIRPORT · TRICITY · HILLS"),
   "dehradun-taxi-service": dict(routes=[("Dehradun taxis",None)], kicker="JOLLY GRANT · MUSSOORIE"),
+  "dharamshala-taxi-service": dict(routes=[("Dharamshala taxis",None)], kicker="MCLEODGANJ · BIR · GAGGAL"),
   "tempo-traveller-hire-delhi": dict(routes=[("Tempo Traveller",None)], kicker="12–17 SEATS · DELHI NCR", vehicle="tempo"),
   "innova-crysta-on-rent": dict(routes=[("Innova Crysta",None)], kicker="ON RENT WITH DRIVER"),
 }
