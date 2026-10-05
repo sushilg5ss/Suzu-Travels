@@ -287,5 +287,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "dharamshala-taxi-service": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c669fb000756d3b1012d098f2e66bf29306b2fd/cab-kit/media/dharamshala-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c669fb000756d3b1012d098f2e66bf29306b2fd/cab-kit/media/dharamshala-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c669fb000756d3b1012d098f2e66bf29306b2fd/cab-kit/media/dharamshala-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c669fb000756d3b1012d098f2e66bf29306b2fd/cab-kit/media/dharamshala-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c669fb000756d3b1012d098f2e66bf29306b2fd/cab-kit/media/dharamshala-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c669fb000756d3b1012d098f2e66bf29306b2fd/cab-kit/media/dharamshala-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
