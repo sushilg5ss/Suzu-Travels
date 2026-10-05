@@ -65,5 +65,16 @@
   "blurb": "6,153 m · closed since 2020, and what to climb instead",
   "added": "2026-10-04",
   "commercial": false
+ },
+ "deo-tibba": {
+  "id": 12183,
+  "path": "/mountains-of-india/deo-tibba/",
+  "kind": "peak",
+  "peak_id": "deo-tibba",
+  "state": "himachal-pradesh",
+  "label": "Deo Tibba",
+  "blurb": "6,001 m · the snow dome above Jagatsukh and the Duhangan Col",
+  "added": "2026-10-05",
+  "commercial": true
  }
 }

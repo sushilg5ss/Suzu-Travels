@@ -1,0 +1,361 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/deo-tibba/",
+ "peak_id": "deo-tibba",
+ "title": "Deo Tibba (6,001 m), Manali: Expedition Route & Climbing Guide",
+ "seo_title": "Deo Tibba (6,001 m): Expedition Route, Itinerary & Season",
+ "seo_desc": "Deo Tibba (6,001 m) above Manali: the Jagatsukh–Duhangan Col route, a 13-day plan, base-camp trek vs summit climb, grade, months and permits.",
+ "focus": "deo tibba",
+ "commercial": true,
+ "label": "Deo Tibba",
+ "blurb": "6,001 m · the snow dome above Jagatsukh and the Duhangan Col",
+ "verified": "5 Oct 2026",
+ "kicker": "Jagatsukh · Pir Panjal · 6,001 m",
+ "tag": "The snow dome where the gods are said to meet.",
+ "sub": "About thirteen days from Manali: up the Duhangan valley through Chhika and Seri to the meadows of Tainta, then a steep couloir to the Duhangan Col and a crevassed glacier to a broad summit of snow. A first 6,000 m expedition for climbers who already have snow-and-ice experience.",
+ "chips": [
+  [
+   "6,001 m",
+   "summit (19,688 ft)"
+  ],
+  [
+   "About 13 days",
+   "from Manali"
+  ],
+  [
+   "May–Jun",
+   "Sep–Oct"
+  ],
+  [
+   "Grade",
+   "snow dome, steep col"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "hero_alt": "Climbers on Himalayan snow and glacier terrain (stock footage) with an altitude read-out rising from Manali, 2,050 m, past Chhika, Tainta base camp and the Duhangan Col to the 6,001 m summit of Deo Tibba",
+ "profile_alt": "Animated altitude profile of the Deo Tibba route: Manali, Chhika, Seri, base camp, Duhangan Col, summit camp and the 6,001 m summit",
+ "q": "How high is Deo Tibba, and how hard is it to climb?",
+ "answer": "<b>Deo Tibba</b> (6,001 m / 19,688 ft) is the snow dome of the Pir Panjal above Jagatsukh, about 6 km from Manali. Among the <a href=\"/mountains-of-india/highest-peaks-in-india/#band-6000\">6,000 m peaks of India</a> it is a real expedition: about 13 days from Manali via Chhika, Seri and Tainta base camp, then a steep couloir to the Duhangan Col and a crevassed glacier on fixed ropes. Climb it in May–June or September–October.",
+ "facts": [
+  [
+   "Height",
+   "6,001 m / 19,688 ft"
+  ],
+  [
+   "Start",
+   "Manali, via Jagatsukh to the Khanol road-head"
+  ],
+  [
+   "Duration",
+   "About 13 days"
+  ],
+  [
+   "Grade",
+   "Snow-dome summit; steep col and crevassed glacier on fixed ropes"
+  ],
+  [
+   "Best months",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "First ascent",
+   "1952"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "intro": [
+  "Deo Tibba stands in Kullu district of Himachal Pradesh, southwest of Manali above the village of Jagatsukh. Its name joins <i>deo</i>, gods, and <i>tibba</i>, hill: local belief holds it to be an assembly place of the gods. Unlike most Himalayan summits it is not a point but a broad snow dome with a flat top, and an American Alpine Journal report pictured it and its neighbour Indrasan (6,220 m) sitting on \"a gigantic three-tier cake of ice\".",
+  "The two peaks are joined by the Duhangan Col, the key to the standard route. Deo Tibba is one of the classic <a href=\"/mountains-of-india/himachal-pradesh/\">Himachal peaks</a> and appears in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>; for the wider picture see the <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>. Climbers often reach it after <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> or <a href=\"/mountains-of-india/hanuman-tibba/\">Hanuman Tibba</a>, both on the Solang side of Manali."
+ ],
+ "route_h2": "Route, camps and altitudes",
+ "route_text": [
+  "The standard route starts in Manali. A short drive past Jagatsukh, about 6 km from Manali, reaches the Khanol road-head, and a forest trail climbs to Chhika and its small Shiva shrine. The walk continues up the Duhangan valley to the meadow of Seri and on to Tainta, where teams set base camp below the peak. A small lake called Chandratal lies above it (not the well-known lake of the same name in Spiti).",
+  "Above base camp the route climbs a steep couloir to the Duhangan Col, the crux of the climb: a 1961 expedition reported slopes of 45° to 65°, and teams climb it on fixed ropes after a load ferry. From Camp 1 at the col a crevassed glacier leads to summit camp on the ice plateau, and summit day crosses the snow plateau to the dome. Camp heights differ between teams, so the figures below are rounded."
+ ],
+ "route": [
+  {
+   "name": "Manali",
+   "m": 2050,
+   "note": "Gear check and briefing"
+  },
+  {
+   "name": "Chhika",
+   "m": 3160,
+   "note": "About 3,100–3,160 m; drive via Jagatsukh to the Khanol road-head, then walk up"
+  },
+  {
+   "name": "Seri",
+   "m": 3620,
+   "note": "About 3,600–3,850 m; meadow camp in the upper Duhangan valley"
+  },
+  {
+   "name": "Tainta (base camp)",
+   "m": 4100,
+   "note": "About 4,100–4,500 m depending on the site; acclimatisation day"
+  },
+  {
+   "name": "Camp 1 (Duhangan Col)",
+   "m": 5100,
+   "note": "About 5,100–5,200 m; steep couloir on fixed ropes, the crux"
+  },
+  {
+   "name": "Summit camp",
+   "m": 5500,
+   "note": "About 5,500–5,600 m, across a crevassed glacier"
+  },
+  {
+   "name": "Deo Tibba summit",
+   "m": 6001,
+   "note": "Early start across the snow plateau to the dome"
+  }
+ ],
+ "itinerary_h2": "A 13-day Deo Tibba plan",
+ "itinerary": [
+  [
+   "Day 1",
+   "Manali",
+   "Arrive, gear check and briefing."
+  ],
+  [
+   "Day 2",
+   "Khanol to Chhika",
+   "Drive via Jagatsukh to the road-head and walk up through forest to Chhika, about 3,160 m."
+  ],
+  [
+   "Day 3",
+   "Chhika to Seri",
+   "Walk up the Duhangan valley to the meadow camp at Seri."
+  ],
+  [
+   "Day 4",
+   "Seri to Tainta base camp",
+   "Climb on to base camp below the peak, about 4,100 m."
+  ],
+  [
+   "Day 5",
+   "Base camp",
+   "Rest, acclimatisation and snow-craft practice: crampons, ice axe, rope and jumar."
+  ],
+  [
+   "Day 6",
+   "Duhangan Col",
+   "Climb the couloir on fixed ropes to Camp 1 on the col, about 5,100 m, after a load ferry."
+  ],
+  [
+   "Day 7",
+   "Camp 1",
+   "Acclimatisation and a load carry onto the glacier."
+  ],
+  [
+   "Day 8",
+   "Summit camp",
+   "Cross the crevassed glacier, roped, to summit camp at about 5,500 m."
+  ],
+  [
+   "Day 9",
+   "Summit camp",
+   "Rest and preparation; a spare day for weather."
+  ],
+  [
+   "Day 10",
+   "Summit day",
+   "Early start across the snow plateau to the 6,001 m summit, then back down to camp."
+  ],
+  [
+   "Day 11",
+   "Down to base camp",
+   "Descend over the col to Tainta."
+  ],
+  [
+   "Day 12",
+   "Back to Manali",
+   "Walk out past Seri and Chhika to the road-head and drive to Manali."
+  ],
+  [
+   "Day 13",
+   "Reserve day",
+   "Kept free for weather on the mountain; used earlier if needed."
+  ]
+ ],
+ "difficulty_h2": "How hard is Deo Tibba?",
+ "difficulty": [
+  "The summit itself is gentle: a broad snow dome with a flat top. What makes Deo Tibba a serious climb is the way there. The couloir to the Duhangan Col is steep, reported at 45° to 65°, and is climbed on fixed ropes; above it a crevassed glacier is crossed roped together, with load ferries between camps. Crampons, an ice axe and a jumar are essential.",
+  "Expect outfitters to ask for earlier high-altitude treks and previous expedition or snow-and-ice experience; a Basic Mountaineering Course (BMC) is a strong plus. Deo Tibba is a good first 6,000 m expedition once you have a smaller snow summit such as Friendship Peak behind you."
+ ],
+ "skills": [
+  [
+   "Experience",
+   "Earlier high-altitude treks and ideally a first snow summit or expedition."
+  ],
+  [
+   "Training",
+   "A Basic Mountaineering Course is a strong plus."
+  ],
+  [
+   "Technique",
+   "Crampons, ice axe, jumaring on fixed rope and roped glacier travel."
+  ],
+  [
+   "Fitness",
+   "Load-carrying days between camps and a long summit day above 5,500 m."
+  ],
+  [
+   "Acclimatisation",
+   "Sleeping altitude rises in steps (about 3,160 m, 3,620 m, 4,100 m, 5,100 m, 5,500 m) with rest days at base camp and summit camp."
+  ]
+ ],
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "no",
+  "May": "good",
+  "Jun": "good",
+  "Jul": "no",
+  "Aug": "no",
+  "Sep": "good",
+  "Oct": "good",
+  "Nov": "no",
+  "Dec": "no"
+ },
+ "season_h2": "Best time to climb Deo Tibba",
+ "season_text": [
+  "<b>May and June</b> are the main season, with good snow on the couloir and glacier and long days before the monsoon.",
+  "<b>September and October</b> follow the monsoon with clearer weather and colder nights; a Japanese party reached the summit on 13 October 1962.",
+  "July and August are monsoon months on the Kullu side, with rain and poor visibility."
+ ],
+ "permits_h2": "Permits for Deo Tibba",
+ "permits": [
+  "Himachal Pradesh requires climbers to go through an HP Tourism-registered outfitter with registered guides, and under the state's adventure-activity rules every participant needs life and rescue insurance cover. Your outfitter arranges the local permissions.",
+  "<b>Foreign nationals</b> also need permission from the Indian Mountaineering Foundation (IMF): apply at least 90 days ahead. For peaks up to 6,500 m the IMF base fee is US$500 for a team of two, plus per-member charges and US$500 liaison-officer equipment hire (IMF peak-fee page, checked 1 Oct 2026). More in our <a href=\"/mountains-of-india/#permits\">guide to climbing permits in India</a>.",
+  "The 2026 Kangra trekker registration covers ten Dhauladhar routes in Kangra district; Deo Tibba is climbed from Jagatsukh in Kullu district and is not one of them."
+ ],
+ "cost_h2": "What a guided Deo Tibba expedition includes",
+ "cost_text": [
+  "The price depends on your dates, group size and nationality, so we quote each expedition. Tell us your dates on WhatsApp and you get one plan and one quote. Foreign nationals also pay the IMF fee and liaison-officer charges, shown separately."
+ ],
+ "includes": [
+  "Certified mountaineering guides and support staff",
+  "Tents, camps and all meals on the mountain",
+  "Group climbing equipment (ropes, fixed lines and anchors)",
+  "Local permissions and paperwork",
+  "Hotel nights in Manali",
+  "Transfers to and from the Khanol road-head",
+  "Acclimatisation and reserve days in the plan"
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots that take crampons",
+  "Crampons, ice axe and a jumar (ascender)",
+  "Climbing harness, helmet, carabiners and slings",
+  "Down jacket and warm layers",
+  "Waterproof jacket and trousers",
+  "Warm summit gloves plus liner gloves",
+  "Glacier sunglasses (UV400) and sunscreen",
+  "Headlamp with spare batteries",
+  "Trekking poles",
+  "Two water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "History of Deo Tibba",
+ "history": [
+  "Deo Tibba was first climbed in 1952 by J. de V. Graaff's party, up the couloir to the Duhangan Col and on to the summit. Sources differ on who else was in the party, so this page names only its leader.",
+  "In 1956 Eileen Gregory reached the top with two Ladakhi porters, the second recorded ascent. A British party turned back in bad weather on 11 June 1958, and in 1961 the Derbyshire Himalayan Expedition made what it called the fifth ascent, climbing the peak twice.",
+  "On 13 October 1962 a Japanese party (Y. Omori, J. Tanaka, T. Iwase and Gunding) reached the summit at noon from a camp at about 5,500 m, approaching from the Parbati and Malana glacier side. In June 2026 an All-India NCC expedition of cadets, selected at ABVIMAS in Manali, was flagged off for the peak on 1 June."
+ ],
+ "extra_sections": [
+  {
+   "id": "trek-or-climb",
+   "label": "Trek or climb?",
+   "kicker": "Base-camp trek vs expedition",
+   "h2": "Deo Tibba base-camp trek or summit expedition?",
+   "html": "<p>Both start from Jagatsukh and share the first four days, but they are different trips. The trek ends below the mountain; the summit is an expedition.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>Base-camp trek</h3><ul><li><b>High point:</b> Tainta base camp, about 4,100–4,500 m, with the small Chandratal lake above it.</li><li><b>Terrain:</b> forest trail and high meadows up the Duhangan valley, via Chhika and Seri.</li><li><b>For:</b> fit trekkers who want the meadows and the view of the dome.</li></ul></div><div class=\"szm-col\"><h3>Summit expedition</h3><ul><li><b>High point:</b> the 6,001 m summit, about 13 days from Manali.</li><li><b>Terrain:</b> a steep couloir to the Duhangan Col on fixed ropes, a crevassed glacier and a snow plateau.</li><li><b>For:</b> climbers with earlier high-altitude and snow-and-ice experience.</li></ul></div></div><div class=\"szm-call\"><p>We arrange the full summit expedition: we pair you with a registered Himachal outfitter and certified guides, with permissions, Manali stays and transfers in one plan.</p></div>"
+  }
+ ],
+ "faq_h2": "Deo Tibba: questions climbers ask",
+ "faqs": [
+  [
+   "How high is Deo Tibba?",
+   "6,001 m (19,688 ft). Wikipedia, the Himalayan Journal and our dataset agree; some older reports give 19,687 ft."
+  ],
+  [
+   "Where is Deo Tibba?",
+   "In the Pir Panjal range of Kullu district, Himachal Pradesh, above Jagatsukh village, about 6 km from Manali. It is joined to Indrasan by the Duhangan Col."
+  ],
+  [
+   "Is the Deo Tibba base camp trek the same as the expedition?",
+   "No. The base-camp trek ends at Tainta, about 4,100–4,500 m. The expedition adds the steep couloir to the Duhangan Col, glacier camps and the 6,001 m summit."
+  ],
+  [
+   "How difficult is Deo Tibba?",
+   "The summit is a gentle snow dome, but the couloir to the Duhangan Col is steep (45° to 65° reported) and climbed on fixed ropes, followed by a crevassed glacier. Expect to need earlier high-altitude and snow-and-ice experience."
+  ],
+  [
+   "How many days does a Deo Tibba expedition take?",
+   "About 13 days from Manali back to Manali, including acclimatisation days, load ferries and a reserve day for weather."
+  ],
+  [
+   "What is the best time to climb Deo Tibba?",
+   "May–June and September–October. July and August are monsoon months on the Kullu side."
+  ],
+  [
+   "Who first climbed Deo Tibba?",
+   "A party led by J. de V. Graaff made the first ascent in 1952 via the Duhangan Col. Eileen Gregory made the second ascent in 1956."
+  ],
+  [
+   "Deo Tibba or Hanuman Tibba: which is harder?",
+   "Deo Tibba is higher (6,001 m against 5,982 m) and a longer expedition, but its summit is a gentle dome; Hanuman Tibba finishes on a steeper snow-and-ice pyramid. Both need snow-and-ice skills."
+  ],
+  [
+   "Can Suzu Travels arrange a guided Deo Tibba expedition?",
+   "Yes. We pair you with a registered Himachal outfitter and certified guides, sort the permissions, and add your hotel in Manali and transfers — one plan and one quote on WhatsApp at +91 70874 88961."
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Deo Tibba",
+   "https://en.wikipedia.org/wiki/Deo_Tibba"
+  ],
+  [
+   "Himalayan Journal 67 — Duhangan valley of the Western Himalaya",
+   "https://www.himalayanclub.org/hj/67/12/duhangan-valley-of-the-western-himalaya/"
+  ],
+  [
+   "Himalayan Journal 21 — Deo Tibba and Indrasan, 1958",
+   "https://www.himalayanclub.org/hj/21/11/deo-tibba-and-indrasan-1958/"
+  ],
+  [
+   "Himalayan Journal 24 — The ascents of Indrasan and Deo Tibba",
+   "https://www.himalayanclub.org/hj/24/13/the-ascents-of-indrasan-and-deo-tibba/"
+  ],
+  [
+   "American Alpine Journal — Derbyshire Himalayan Expedition (1961)",
+   "https://publications.americanalpineclub.org/articles/12196227503"
+  ],
+  [
+   "The Tribune (May 2026) — NCC cadets' expedition to Mount Deo Tibba",
+   "https://www.tribuneindia.com/news/himachal/250-ncc-cadets-to-take-part-in-expedition-to-mount-deo-tibba/"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Indian Mountaineering Foundation — expedition application rules",
+   "https://www.indmount.org/IMF/expeapp"
+  ],
+  [
+   "HP Miscellaneous Adventure Activities (Amendment) Rules 2021",
+   "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"
+  ]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Deo_Tibba"
+ ],
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Deo Tibba. Dates: ___ , people: ___ , nationality: ___"
+}
