@@ -1,8 +1,7 @@
 {
  "title": "Suzu Travels — October to March: India's best season",
  "duration": 40,
- "music": "Long Road Ahead.mp3",
- "_photos_todo": "Commons queries (CC0/PD/CC BY/BY-SA only): 'Hawa Mahal Jaipur' -> hawa-mahal.jpg; 'Alleppey backwaters houseboat' -> kerala-backwaters.jpg; 'Palolem beach' -> goa-beach.jpg; 'Solang Valley snow' -> solang-snow.jpg; 'Varanasi ghats evening' -> varanasi-ghats.jpg; 'Pangong Tso' -> pangong.jpg",
+ "music": "Naraina.mp3",
  "scenes": [
   {
    "type": "photo",
@@ -10,8 +9,8 @@
    "dur": 5,
    "img": "hawa-mahal.jpg",
    "focus": [
-    0.5,
-    0.45
+    0.45,
+    0.5
    ],
    "zoom": [
     1.3,
@@ -83,7 +82,7 @@
    "dur": 6,
    "img": "kerala-backwaters.jpg",
    "focus": [
-    0.5,
+    0.58,
     0.5
    ],
    "zoom": [
@@ -127,8 +126,8 @@
    "dur": 6,
    "img": "goa-beach.jpg",
    "focus": [
-    0.5,
-    0.5
+    0.62,
+    0.6
    ],
    "zoom": [
     1.25,
@@ -176,5 +175,7 @@
    "small": "Suzu Travels · DMC of India",
    "cta": "DM “SEASON” for a free plan"
   }
- ]
+ ],
+ "_status": "rendered 2026-10-05 (catch-up, interactive) — media/drafts/2026-10-05-intl-reels/suzu-winter-season.mp4",
+ "_photos": "see media/drafts/2026-10-05-intl-reels/winter-season-photo-credits.txt"
 }

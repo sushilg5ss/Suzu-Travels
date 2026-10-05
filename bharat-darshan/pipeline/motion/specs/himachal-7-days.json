@@ -2,31 +2,186 @@
  "title": "Suzu Travels — Himachal in 7 days",
  "duration": 40,
  "music": "Long Road Ahead.mp3",
- "_status": "spec ready 2026-10-04 — render pending (setup-motion.sh blocked in scheduled runs)",
- "_photos_todo": ["Kalka Shimla Railway toy train bridge", "Shimla Ridge Christ Church", "Manali Old Manali Himalaya", "Atal Tunnel portal", "Solang Valley snow", "Hadimba Temple Manali"],
+ "_status": "rendered 2026-10-05 (catch-up, interactive) — media/drafts/2026-10-05-intl-reels/suzu-himachal-7-days.mp4",
  "_sources": {
   "atal_tunnel": "PIB doc 24 Mar 2022 (static.pib.gov.in/.../doc202232428801.pdf): 9.02 km, ~3,000 m / 10,000 ft, saves 46 km & 4–5 h Manali–Leh; World Book of Records (NOT Guinness), 9 Feb 2022",
   "kalka_shimla": "en.wikipedia.org/wiki/Kalka–Shimla_Railway: 96.6 km, 102 active tunnels, opened 1903; UNESCO 2008 as part of Mountain Railways of India (en.wikipedia.org/wiki/Mountain_railways_of_India)",
   "advice": "7 days, Mar–Jun & Sep–Nov for green valleys, Dec–Feb for snow = Suzu tips, not statistics"
  },
  "scenes": [
-  {"type": "photo", "start": 0, "dur": 5, "img": "manali-himalaya-1.jpg", "focus": [0.5, 0.45], "zoom": [1.25, 1.08], "grade": "cool",
-   "kicker": "India's Himalaya", "headline": ["Himachal", "*in 7 days"], "pos": "low", "t_head": 0.3},
-  {"type": "map", "start": 5, "dur": 9, "kicker": "The route", "headline": ["Delhi to", "*the snowline"],
-   "pins": [{"city": "Delhi", "at": 3.4, "side": "r"}, {"city": "Shimla", "at": 3.8, "side": "r"}, {"city": "Manali", "at": 4.2, "side": "l"}],
-   "route": {"cities": ["Delhi", "Shimla", "Manali"], "close": false, "at": 4.6, "draw": 2.2,
-     "labels": [{"text": "Day 1–2", "dx": 120, "dy": 0}, {"text": "Day 3–7", "dx": -130, "dy": -20}]},
-   "zoom_map": {"scale": 3.6, "at": 2.2, "dur": 1.4, "around": ["Delhi", "Shimla", "Manali"], "to": [560, 860]}},
-  {"type": "photo", "start": 14, "dur": 6, "img": "kalka-shimla-railway-1.jpg", "focus": [0.5, 0.5], "zoom": [1.05, 1.2], "grade": "warm",
-   "kicker": "Day 1–2 · Shimla", "headline": ["The UNESCO", "*toy train"], "pos": "low",
-   "stat": {"num": 102, "suffix": " tunnels", "label": "Kalka–Shimla Railway, since 1903", "at": 1.6, "cdur": 1.4}, "tag": "UNESCO"},
-  {"type": "photo", "start": 20, "dur": 6, "img": "old-manali-1.jpg", "focus": [0.5, 0.45], "zoom": [1.2, 1.05], "grade": "cool",
-   "kicker": "Day 3–4 · Manali", "headline": ["Cedar forests,", "*cafés, rivers"], "pos": "low",
-   "sub": "Our tip: stay in Old Manali — slower, quieter, better views"},
-  {"type": "photo", "start": 26, "dur": 7, "img": "atal-tunnel-1.jpg", "focus": [0.5, 0.5], "zoom": [1.05, 1.22], "grade": "cool",
-   "kicker": "Day 5–6 · Atal Tunnel", "headline": ["Drive *under", "the Himalaya"], "pos": "low",
-   "stat": {"num": 9.02, "decimals": 2, "suffix": " km", "label": "at ~3,000 m — then snow at Solang Valley", "at": 1.6, "cdur": 1.4}},
-  {"type": "end", "start": 33, "dur": 7, "big": "Your Himalaya, planned by locals",
-   "small": "Private driver · mountain hotels · 24/7 support", "cta": "DM “HIMACHAL” for a free plan"}
- ]
+  {
+   "type": "photo",
+   "start": 0,
+   "dur": 5,
+   "img": "manali-himalaya-1.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.25,
+    1.08
+   ],
+   "grade": "cool",
+   "kicker": "India's Himalaya",
+   "headline": [
+    "Himachal",
+    "*in 7 days"
+   ],
+   "pos": "low",
+   "t_head": 0.3
+  },
+  {
+   "type": "map",
+   "start": 5,
+   "dur": 9,
+   "kicker": "The route",
+   "headline": [
+    "Delhi to",
+    "*the snowline"
+   ],
+   "pins": [
+    {
+     "city": "Delhi",
+     "at": 3.4,
+     "side": "r"
+    },
+    {
+     "city": "Shimla",
+     "at": 3.8,
+     "side": "r"
+    },
+    {
+     "city": "Manali",
+     "at": 4.2,
+     "side": "r"
+    }
+   ],
+   "route": {
+    "cities": [
+     "Delhi",
+     "Shimla",
+     "Manali"
+    ],
+    "close": false,
+    "at": 4.6,
+    "draw": 2.2,
+    "labels": [
+     {
+      "text": "Day 1–2",
+      "dx": 120,
+      "dy": 0
+     },
+     {
+      "text": "Day 3–7",
+      "dx": -130,
+      "dy": -20
+     }
+    ]
+   },
+   "zoom_map": {
+    "scale": 2.4,
+    "at": 2.2,
+    "dur": 1.4,
+    "around": [
+     "Delhi",
+     "Shimla",
+     "Manali"
+    ],
+    "to": [
+     560,
+     1150
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "start": 14,
+   "dur": 6,
+   "img": "kalka-shimla-railway-1.jpg",
+   "focus": [
+    0.72,
+    0.45
+   ],
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "grade": "warm",
+   "kicker": "Day 1–2 · Shimla",
+   "headline": [
+    "The UNESCO",
+    "*toy train"
+   ],
+   "pos": "low",
+   "stat": {
+    "num": 102,
+    "suffix": "",
+    "label": "tunnels · Kalka–Shimla Railway, since 1903",
+    "at": 1.6,
+    "cdur": 1.4
+   },
+   "tag": "UNESCO"
+  },
+  {
+   "type": "photo",
+   "start": 20,
+   "dur": 6,
+   "img": "old-manali-1.jpg",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.2,
+    1.05
+   ],
+   "grade": "cool",
+   "kicker": "Day 3–4 · Manali",
+   "headline": [
+    "Cedar forests,",
+    "*cafés, rivers"
+   ],
+   "pos": "low",
+   "sub": "Our tip: stay in Old Manali — slower, quieter, better views"
+  },
+  {
+   "type": "photo",
+   "start": 26,
+   "dur": 7,
+   "img": "atal-tunnel-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.05,
+    1.22
+   ],
+   "grade": "cool",
+   "kicker": "Day 5–6 · Atal Tunnel",
+   "headline": [
+    "Drive *under",
+    "the Himalaya"
+   ],
+   "pos": "low",
+   "stat": {
+    "num": 9.02,
+    "decimals": 2,
+    "suffix": " km",
+    "label": "at ~3,000 m — then snow at Solang Valley",
+    "at": 1.6,
+    "cdur": 1.4
+   }
+  },
+  {
+   "type": "end",
+   "start": 33,
+   "dur": 7,
+   "big": "Your Himalaya, planned by locals",
+   "small": "Private driver · mountain hotels · 24/7 support",
+   "cta": "DM “HIMACHAL” for a free plan"
+  }
+ ],
+ "_photos": "see media/drafts/2026-10-05-intl-reels/himachal-7-days-photo-credits.txt"
 }

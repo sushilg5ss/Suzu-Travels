@@ -106,7 +106,7 @@ def build(spec_path, out_dir):
                 inner.append(f'<div class="stat" id="{p}-st"><div class="stat-n" id="{p}-stn">{esc(st.get("prefix",""))}0{esc(st.get("suffix",""))}</div><div class="stat-l">{esc(st["label"])}</div></div>')
                 t = S + st.get("at", 0.4)
                 js.append(f'tl.fromTo("#{p}-st",{{opacity:0,y:40}},{{opacity:1,y:0,duration:0.5,ease:"power3.out"}},{t:.3f});')
-                js.append(f'(function(){{var o={{v:{st.get("from",0)}}};tl.to(o,{{v:{st["num"]},duration:{st.get("cdur",1.2)},ease:"power2.out",onUpdate:function(){{document.getElementById("{p}-stn").textContent="{st.get("prefix","")}"+Math.round(o.v).toLocaleString("en-US")+"{st.get("suffix","")}";}}}},{t:.3f});}})();')
+                js.append(f'(function(){{var o={{v:{st.get("from",0)}}};tl.to(o,{{v:{st["num"]},duration:{st.get("cdur",1.2)},ease:"power2.out",onUpdate:function(){{document.getElementById("{p}-stn").textContent="{st.get("prefix","")}"+o.v.toLocaleString("en-US",{{minimumFractionDigits:{st.get("decimals",0)},maximumFractionDigits:{st.get("decimals",0)}}})+"{st.get("suffix","")}";}}}},{t:.3f});}})();')
             if sc.get("tag"):
                 inner.append(f'<div class="tag" id="{p}-tag">{esc(sc["tag"])}</div>')
                 js.append(f'tl.fromTo("#{p}-tag",{{opacity:0,scale:0.8}},{{opacity:1,scale:1,duration:0.5,ease:"back.out(2)"}},{S+sc.get("t_tag",1.0):.3f});')
@@ -167,7 +167,7 @@ def build(spec_path, out_dir):
                 inner.append(f'<div class="stat stat-bottom" id="{p}-st"><div class="stat-n" id="{p}-stn">0</div><div class="stat-l">{esc(st["label"])}</div></div>')
                 t = S + st.get("at", 1.0)
                 js.append(f'tl.fromTo("#{p}-st",{{opacity:0,y:40}},{{opacity:1,y:0,duration:0.5,ease:"power3.out"}},{t:.3f});')
-                js.append(f'(function(){{var o={{v:0}};tl.to(o,{{v:{st["num"]},duration:{st.get("cdur",1.6)},ease:"power2.out",onUpdate:function(){{document.getElementById("{p}-stn").textContent="{st.get("prefix","")}"+Math.round(o.v).toLocaleString("en-US")+"{st.get("suffix","")}";}}}},{t:.3f});}})();')
+                js.append(f'(function(){{var o={{v:0}};tl.to(o,{{v:{st["num"]},duration:{st.get("cdur",1.6)},ease:"power2.out",onUpdate:function(){{document.getElementById("{p}-stn").textContent="{st.get("prefix","")}"+o.v.toLocaleString("en-US",{{minimumFractionDigits:{st.get("decimals",0)},maximumFractionDigits:{st.get("decimals",0)}}})+"{st.get("suffix","")}";}}}},{t:.3f});}})();')
             if sc.get("sub"):
                 inner.append(f'<div class="sub sub-bottom" id="{p}-sub">{esc(sc["sub"])}</div>')
                 js.append(f'tl.fromTo("#{p}-sub",{{opacity:0,y:24}},{{opacity:1,y:0,duration:0.7,ease:"power3.out"}},{S+sc.get("t_sub",2.6):.3f});')
@@ -234,7 +234,7 @@ body{{margin:0;background:{EM}}}
 .stat{{position:absolute;left:80px;top:330px;text-shadow:0 6px 24px rgba(0,0,0,.85)}}
 .stat-bottom{{top:auto;bottom:430px;left:80px}}
 .stat-n{{font-family:"Bebas";font-size:300px;line-height:.9;color:{GOLD}}}
-.stat-l{{font-family:"Inter";font-weight:700;font-size:44px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px}}
+.stat-l{{font-family:"Inter";font-weight:700;font-size:44px;letter-spacing:.08em;text-transform:uppercase;margin-top:10px;max-width:820px}}
 .tag{{position:absolute;right:210px;top:300px;background:{GOLD};color:{EM};font-family:"Inter";font-weight:800;font-size:30px;letter-spacing:.12em;text-transform:uppercase;padding:14px 26px;border-radius:999px}}
 .map{{position:absolute;inset:0}}
 .pinlab{{font-family:"Inter";font-weight:700;font-size:34px;fill:#fff;paint-order:stroke;stroke:{EM};stroke-width:8px;stroke-linejoin:round}}
