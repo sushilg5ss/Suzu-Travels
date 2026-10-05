@@ -1,0 +1,19 @@
+{
+ "hero": {
+  "kicker": "IMF BASE FEES · TEAM OF 2 · OCT 2026",
+  "words": [["US$500", "≤ 6,500 M"], ["US$700", "≤ 7,000 M"], ["US$1,000", "7,000 M +"], ["APPLY 90", "DAYS OUT."]],
+  "scenes": [
+   {"img": "px-35319376.jpg", "kind": "tilt", "h": 2560, "t": [0, 3.8], "from": {"y": 60}, "to": {"y": 520}},
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [3.2, 7.0], "from": {"scale": 1.02, "x": 30}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": [6.4, 10.2], "from": {"scale": 1.0, "x": -20}, "to": {"scale": 1.08, "x": 30}},
+   {"img": "px-20809686.jpg", "kind": "tilt", "h": 2560, "t": [9.6, 13.0], "from": {"y": 800}, "to": {"y": 940, "scale": 1.05}}
+  ]
+ },
+ "ladder": {
+  "kicker": "IMF FEE BANDS · OCT 2026",
+  "title": "Which fee band? Peaks at their true heights",
+  "peaks": ["friendship-peak", "deo-tibba", "mount-yunam", "reo-purgyil", "nanda-devi-east", "kamet"],
+  "subs": {"friendship-peak": "US$500 band", "deo-tibba": "US$500 band", "mount-yunam": "US$500 band", "reo-purgyil": "US$700 band", "nanda-devi-east": "US$1,000 band", "kamet": "US$1,000 band"},
+  "end": "Base fees, foreign team of 2 · indmount.org, Oct 2026"
+ }
+}
