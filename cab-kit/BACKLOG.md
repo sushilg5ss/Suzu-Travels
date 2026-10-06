@@ -17,7 +17,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 4 | [x] dehradun-taxi-service — LIVE 2026-10-04 https://suzutravels.com/cabs/dehradun-taxi-service/ (ID 12104) | taxi service in dehradun | 6,600 (+ dehradun taxi service 3,600, dehradun airport taxi 590) | Re-ranked 1 Oct (was #21). Jolly Grant airport, Mussoorie (1,600), Rishikesh (390), Char Dham starts; links Delhi→Dehradun/Haridwar/Rishikesh pages |
 | 5 | [x] delhi-to-amritsar-taxi — LIVE 2026-10-05 https://suzutravels.com/cabs/delhi-to-amritsar-taxi/ (ID 12174) | delhi to amritsar taxi | 3,400 | Golden Temple, Wagah; Amritsar → Dharamshala/Dalhousie onward |
 | 6 | [x] dharamshala-taxi-service — LIVE 2026-10-05 https://suzutravels.com/cabs/dharamshala-taxi-service/ (ID 12200) | dharamshala taxi service | 4,400 (LOW comp.) | NEW 1 Oct. McLeodganj/Bir/Palampur locals, Gaggal airport, Pathankot drops; links Pathankot→Dharamshala page |
-| 7 | [ ] delhi-to-mussoorie-taxi | delhi to mussoorie taxi | 3,100 | Via Dehradun; Kempty, Dhanaulti add-ons |
+| 7 | [x] delhi-to-mussoorie-taxi — LIVE 2026-10-06 https://suzutravels.com/cabs/delhi-to-mussoorie-taxi/ (ID 12377) | delhi to mussoorie taxi | 3,100 | Via Dehradun; Kempty, Dhanaulti add-ons |
 | 8 | [ ] srinagar-taxi-service | srinagar taxi service | 5,400 (+ srinagar to gulmarg taxi fare 1,000, to pahalgam 720) | NEW 1 Oct. Gulmarg/Pahalgam/Sonamarg = local union taxis (say so); links Jammu→Srinagar page |
 | 9 | [ ] shimla-to-manali-taxi | shimla to manali taxi | 2,500 | Via Mandi/Kullu, Pandoh dam; Kufri/Narkanda option |
 | 10 | [ ] haridwar-taxi-service | taxi service in haridwar | 4,400 (+ haridwar to rishikesh cab 720, to badrinath fare 880) | NEW 1 Oct. Local + Char Dham drops; links Delhi→Haridwar page |
