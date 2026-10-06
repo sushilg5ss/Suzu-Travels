@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; background: radial-gradient(1300px 800px at 70% 10%, #17385c 0%, #0b1f33 70%); font-family: "Plus Jakarta Sans", sans-serif; color: #fff; }
+      #head { position: absolute; left: 100px; top: 64px; width: 1720px; }
+      #kick { font-weight: 800; font-size: 30px; letter-spacing: 0.16em; text-transform: uppercase; color: #d4a24c; }
+      #ttl { font-weight: 800; font-size: 76px; letter-spacing: -0.02em; margin-top: 8px; }
+      #chart { position: absolute; left: 100px; top: 275px; width: 1720px; height: 700px; }
+      .mon { position: absolute; top: 0; width: 105px; text-align: center; font-weight: 800; font-size: 26px; color: #9fb2c6; }
+      .grid { position: absolute; top: 46px; width: 1px; height: 640px; background: rgba(255,255,255,0.08); }
+      .lab { position: absolute; left: 0; width: 440px; height: 80px; display: flex; flex-direction: column; justify-content: center; font-weight: 800; font-size: 36px; }
+      .lab small { font-weight: 500; font-size: 22px; color: #b8c7d6; margin-top: 2px; }
+      .bar { position: absolute; height: 44px; border-radius: 22px; background: #d4a24c; transform-origin: 0 50%; display: block; }
+      .track { position: absolute; left: 460px; width: 1260px; height: 44px; border-radius: 22px; background: rgba(255,255,255,0.06); }
+      #now { position: absolute; top: -8px; width: 6px; height: 690px; margin-left: -3px; border-radius: 3px; background: #ffffff; display: block; transform-origin: 50% 0; }
+      #nowtag { position: absolute; top: -52px; margin-left: -110px; width: 220px; height: 44px; border-radius: 22px; background: #fff; color: #0b1f33; font-weight: 800; font-size: 24px; display: flex; align-items: center; justify-content: center; }
+      #end { position: absolute; left: 100px; bottom: 50px; width: 1720px; display: flex; justify-content: space-between; align-items: center; font-weight: 800; font-size: 36px; }
+      #cta { background: #d4a24c; color: #0b1f33; padding: 14px 34px; border-radius: 40px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="head" class="clip" data-start="0" data-duration="12" data-track-index="0">
+        <div id="kick">Treks and camps in Himachal</div>
+        <div id="ttl">Which trek, which month?</div>
+      </div>
+      <div id="chart" class="clip" data-start="0" data-duration="12" data-track-index="1"></div>
+      <div id="endwrap" class="clip" data-start="0" data-duration="12" data-track-index="2">
+        <div id="end"><div id="endtxt">Registered guides · trek + hotel + cab in one plan</div><div id="cta">Get Quote</div></div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        const X0 = 460, MW = 105, RY0 = 64, RH = 90;
+        // [name, sub, [[startMonth, endMonth(exclusive)], ...]] — from the hub's own trek cards
+        const R = [
+          ["Triund", "Dharamshala · beginner", [[2, 6], [8, 12]]],
+          ["Kareri Lake", "Dharamshala", [[4, 6], [8, 11]]],
+          ["Kheerganga", "Parvati Valley", [[3, 6], [8, 11]]],
+          ["Great Himalayan NP", "Tirthan · Sainj", [[2, 6], [8, 11]]],
+          ["Beas Kund · Bhrigu Lake", "Manali", [[5, 10]]],
+          ["Hampta Pass", "Manali → Lahaul", [[5.5, 9.5]]],
+          ["Chandratal camping", "Lahaul–Spiti", [[5, 10]]]
+        ];
+        const chart = document.getElementById("chart");
+        const add = (cls, css, html) => { const d = document.createElement("div"); d.className = cls; Object.assign(d.style, css); if (html) d.innerHTML = html; chart.appendChild(d); return d; };
+        M.forEach((m, i) => { add("mon", { left: X0 + i * MW + "px" }, m); add("grid", { left: X0 + i * MW + "px" }); });
+        add("grid", { left: X0 + 12 * MW + "px" });
+        const bars = [], labs = [], hasOct = [];
+        R.forEach((r, k) => {
+          const y = RY0 + k * RH;
+          labs.push(add("lab", { top: y - 18 + "px" }, r[0] + "<small>" + r[1] + "</small>"));
+          add("track", { top: y + "px" });
+          let oct = false;
+          r[2].forEach(([a, b]) => { if (a <= 9.2 && b > 9.2) oct = true; bars.push({ el: add("bar", { top: y + "px", left: X0 + a * MW + 4 + "px", width: (b - a) * MW - 8 + "px" }), k }); });
+          hasOct.push(oct);
+        });
+                
+        tl.fromTo("#head", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0);
+        tl.fromTo(".mon", { opacity: 0 }, { opacity: 1, duration: 0.4, stagger: 0.03 }, 0.4);
+        labs.forEach((l, k) => tl.fromTo(l, { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0.8 + k * 0.35));
+        bars.forEach((b) => tl.fromTo(b.el, { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.out" }, 1.0 + b.k * 0.35));
+        tl.fromTo("#end", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 4.8);
+        window.__timelines["main"] = tl;
+        tl.seek(0);
+      })();
+    </script>
+  </body>
+</html>
