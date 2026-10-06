@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; font-family: "Plus Jakarta Sans", sans-serif; }
+      .layer { position: absolute; inset: 0; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 30%, rgba(11,31,51,0.55) 52%, rgba(11,31,51,0.88) 78%, rgba(11,31,51,0.92) 100%); }
+      .vign { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.35) 0%, rgba(11,31,51,0) 22%, rgba(11,31,51,0) 70%, rgba(11,31,51,0.55) 100%); }
+      #snow { position: absolute; inset: 0; }
+      .flake { position: absolute; left: 0; top: 0; border-radius: 50%; background: #fff; display: block; }
+      #panel { position: absolute; left: 1010px; top: 0; width: 830px; height: 100%; display: flex; flex-direction: column; justify-content: center; color: #fff; }
+      #kicker { font-weight: 800; font-size: 34px; letter-spacing: 0.16em; color: #d4a24c; text-transform: uppercase; }
+      #title { font-weight: 800; font-size: 100px; line-height: 1.02; letter-spacing: -0.02em; margin-top: 18px; }
+      #chiprow { margin-top: 30px; height: 72px; display: flex; }
+      #chip { display: block; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 38px; padding: 12px 28px; border-radius: 40px; }
+      #facts { position: relative; margin-top: 40px; height: 150px; width: 820px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; font-weight: 800; font-size: 60px; line-height: 1.1; color: #fff; display: block; }
+      .fact small { display: block; font-weight: 500; font-size: 34px; color: #e9eef4; margin-top: 10px; }
+      #line { position: absolute; inset: 0; }
+      #brand { position: absolute; right: 80px; bottom: 56px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="scenes" class="clip layer" data-start="0" data-duration="12" data-track-index="0">
+        <div class="scene" id="sA" data-layout-allow-overflow><img id="iA" src="assets/px6289768-s.jpg" alt="" style="object-position: 50% 60%" /></div>
+        <div class="scene" id="sB" data-layout-allow-overflow><img id="iB" src="assets/px6557335-s.jpg" alt="" style="object-position: 40% 50%" /></div>
+        <div class="scene" id="sC" data-layout-allow-overflow><img id="iC" src="assets/px3737687-s.jpg" alt="" style="object-position: 50% 62%" /></div>
+        <div class="scene" id="sD" data-layout-allow-overflow style="background:#0b1f33"><img id="iD" src="assets/wp_mallroad-s.jpg" alt="" style="width:1180px;object-position: 50% 30%;-webkit-mask-image:linear-gradient(90deg,#000 70%,transparent 100%)" /></div>
+        <div class="scene" id="sA2" data-layout-allow-overflow><img id="iA2" src="assets/px6289768-s.jpg" alt="" style="object-position: 50% 60%" /></div>
+        <div class="vign"></div>
+        <div class="shade"></div>
+      </div>
+      <div id="fx" class="clip layer" data-start="0" data-duration="12" data-track-index="1">
+        <svg id="line" width="1920" height="1080" viewBox="0 0 1920 1080">
+          <path id="carve" d="M -40 930 C 260 1000, 520 760, 760 860 S 1180 1010, 1480 900 S 1820 760, 1980 820" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" />
+        </svg>
+        <div id="snow"></div>
+      </div>
+      <div id="panel" class="clip" data-start="0" data-duration="12" data-track-index="2">
+        <div id="kicker">Snow · Shimla</div>
+        <div id="title">Ice skating in Shimla</div>
+        <div id="chiprow"><div id="chip">Since 1920</div></div>
+        <div id="facts">
+          <div class="fact" id="f1">Natural open-air ice<small>Frozen overnight on the town rink</small></div>
+          <div class="fact" id="f2">Season: early Dec – Feb<small>Best chance late Dec – Jan</small></div>
+          <div class="fact" id="f3">Morning session 8–10 am<small>Skates available at the rink</small></div>
+          <div class="fact" id="f4">Clear, freezing nights only<small>No frost, no session that day</small></div>
+        </div>
+      </div>
+      <div id="brandwrap" class="clip" data-start="0" data-duration="12" data-track-index="3"><div id="brand">suzutravels.com</div></div>
+    </div>
+    <script>
+      (function () {
+        const D = 12;
+        const tl = gsap.timeline({ paused: true });
+        // Scenes: opacity crossfades + slow Ken Burns. A2 ends identical to A at t=0 (seamless loop).
+        gsap.set(["#sB", "#sC", "#sD", "#sA2"], { opacity: 0 });
+        tl.fromTo("#iA", { scale: 1.0, x: 0 }, { scale: 1.07, x: -30, duration: 3.4, ease: "none" }, 0);
+        tl.fromTo("#sB", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.inOut" }, 2.7);
+        tl.fromTo("#iB", { scale: 1.12, x: 30 }, { scale: 1.02, x: 0, duration: 3.6, ease: "none" }, 2.7);
+        tl.fromTo("#sC", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.inOut" }, 5.6);
+        tl.fromTo("#iC", { scale: 1.02, y: 20 }, { scale: 1.1, y: -20, duration: 3.6, ease: "none" }, 5.6);
+        tl.fromTo("#sD", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.inOut" }, 8.5);
+        tl.fromTo("#iD", { scale: 1.1, x: -20 }, { scale: 1.02, x: 10, duration: 3.0, ease: "none" }, 8.5);
+        tl.fromTo("#sA2", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power1.inOut" }, 10.9);
+        gsap.set("#iA2", { scale: 1.0, x: 0 });
+
+        // Gold carve line
+        const p = document.getElementById("carve");
+        const L = p.getTotalLength();
+        gsap.set(p, { strokeDasharray: L, strokeDashoffset: L, opacity: 1 });
+        tl.fromTo(p, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 2.4, ease: "power2.inOut" }, 0.4);
+        tl.fromTo(p, { opacity: 1 }, { opacity: 0, duration: 0.8, ease: "power1.in" }, 9.8);
+
+        // Facts: f1 visible at 0 and at 12
+        const fin = (sel, t) => tl.fromTo(sel, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out", immediateRender: false }, t);
+        const fout = (sel, t) => tl.fromTo(sel, { opacity: 1, y: 0 }, { opacity: 0, y: -24, duration: 0.4, ease: "power2.in", immediateRender: false }, t);
+        gsap.set(["#f2", "#f3", "#f4"], { opacity: 0 });
+        fout("#f1", 2.6); fin("#f2", 3.1); fout("#f2", 5.5); fin("#f3", 6.0);
+        fout("#f3", 8.4); fin("#f4", 8.9); fout("#f4", 10.6); fin("#f1", 11.1);
+        tl.fromTo("#chip", { scale: 1 }, { scale: 1.06, duration: 0.3, yoyo: true, repeat: 1, ease: "sine.inOut" }, 0.9);
+
+        // Seeded, periodic snowfall (period divides 12 s → seamless)
+        let s = 1920;
+        const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+        const snow = document.getElementById("snow");
+        const flakes = [];
+        for (let i = 0; i < 70; i++) {
+          const el = document.createElement("div");
+          el.className = "flake";
+          const r = 3 + rnd() * 6;
+          el.style.width = el.style.height = r + "px";
+          el.style.opacity = (0.45 + rnd() * 0.5).toFixed(2);
+          snow.appendChild(el);
+          flakes.push({ el, x0: rnd() * 1920, y0: rnd() * 1160, k: 1 + Math.floor(rnd() * 3), amp: 10 + rnd() * 30, ph: rnd() * 6.283 });
+        }
+        const draw = (t) => {
+          for (const f of flakes) {
+            const y = ((f.y0 + (1160 * f.k * t) / D) % 1160) - 60;
+            const x = f.x0 + f.amp * Math.sin((6.283 * t) / D * 2 + f.ph);
+            f.el.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+          }
+        };
+        const proxy = { t: 0 };
+        tl.fromTo(proxy, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: () => draw(proxy.t) }, 0);
+        draw(0);
+        window.__timelines["main"] = tl;
+        tl.seek(0);
+      })();
+    </script>
+  </body>
+</html>

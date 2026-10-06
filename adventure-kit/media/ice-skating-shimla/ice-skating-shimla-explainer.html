@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; background: radial-gradient(1200px 700px at 30% 20%, #16365a 0%, #0b1f33 70%); font-family: "Plus Jakarta Sans", sans-serif; color: #fff; }
+      #head { position: absolute; left: 110px; top: 80px; width: 1700px; }
+      #kick { font-weight: 800; font-size: 32px; letter-spacing: 0.16em; text-transform: uppercase; color: #d4a24c; }
+      #ttl { font-weight: 800; font-size: 84px; letter-spacing: -0.02em; margin-top: 10px; }
+      #stage1, #stage2 { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      #sky { position: absolute; left: 110px; top: 300px; width: 760px; height: 620px; border-radius: 36px; overflow: hidden; background: linear-gradient(180deg, #0a1a2c 0%, #12304f 100%); border: 2px solid rgba(255,255,255,0.12); }
+      .star { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #fff; display: block; }
+      #moon { position: absolute; left: 520px; top: 70px; width: 120px; height: 120px; border-radius: 50%; background: #f3e6c6; box-shadow: 0 0 60px rgba(243,230,198,0.5); }
+      #cloud { position: absolute; left: 80px; top: 40px; width: 600px; height: 260px; }
+      #rain { position: absolute; inset: 0; }
+      .drop { position: absolute; width: 4px; height: 46px; border-radius: 2px; background: rgba(170,200,230,0.8); display: block; }
+      #therm { position: absolute; left: 60px; top: 230px; width: 70px; height: 340px; }
+      #tube { position: absolute; left: 20px; top: 0; width: 30px; height: 290px; border-radius: 15px; background: rgba(255,255,255,0.15); overflow: hidden; }
+      #merc { position: absolute; left: 0; bottom: 0; width: 30px; height: 290px; background: #e36a5a; transform-origin: 50% 100%; display: block; }
+      #bulb { position: absolute; left: 5px; top: 270px; width: 60px; height: 60px; border-radius: 50%; background: #e36a5a; }
+      #temp { position: absolute; left: 170px; top: 380px; line-height: 1.1; font-weight: 800; font-size: 120px; letter-spacing: -0.03em; }
+      #templbl { position: absolute; left: 175px; top: 330px; font-weight: 500; font-size: 30px; color: #c9d6e4; }
+      #rows { position: absolute; left: 960px; top: 320px; width: 850px; }
+      .row { display: flex; align-items: center; height: 110px; font-weight: 800; font-size: 52px; }
+      .mark { position: relative; width: 76px; height: 76px; border-radius: 50%; margin-right: 30px; background: rgba(255,255,255,0.12); flex: none; }
+      .mark span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 46px; }
+      .ok { color: #0b1f33; } .no { color: #fff; }
+      #tile { position: absolute; left: 960px; top: 600px; width: 850px; height: 260px; border-radius: 32px; background: rgba(255,255,255,0.08); border: 3px solid rgba(255,255,255,0.18); }
+      #tileOn, #tileOff { position: absolute; inset: 0; border-radius: 30px; display: flex; flex-direction: column; justify-content: center; padding: 0 56px; }
+      #tileOn { background: #d4a24c; color: #0b1f33; }
+      #tileOff { background: #3a4a5c; color: #fff; }
+      .big { font-weight: 800; font-size: 80px; letter-spacing: -0.02em; }
+      .sub { font-weight: 500; font-size: 36px; margin-top: 6px; }
+      #months { position: absolute; left: 110px; top: 420px; width: 1700px; height: 170px; display: flex; gap: 14px; }
+      .m { position: relative; flex: 1; height: 170px; border-radius: 22px; background: rgba(255,255,255,0.08); }
+      .m .fill { position: absolute; inset: 0; border-radius: 22px; background: #d4a24c; transform-origin: 0 50%; display: block; }
+      .m .lab { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 800; font-size: 44px; }
+      .m .lab small { font-weight: 500; font-size: 26px; margin-top: 6px; }
+      #season { position: absolute; left: 110px; top: 330px; font-weight: 800; font-size: 54px; }
+      #count { position: absolute; left: 110px; top: 650px; display: flex; align-items: baseline; }
+      #num { font-weight: 800; font-size: 170px; color: #d4a24c; letter-spacing: -0.03em; width: 230px; }
+      #numlbl { font-weight: 800; font-size: 52px; margin-left: 24px; }
+      #numsub { position: absolute; left: 116px; top: 870px; font-weight: 500; font-size: 34px; color: #c9d6e4; }
+      #end { position: absolute; left: 110px; bottom: 60px; width: 1700px; display: flex; justify-content: space-between; align-items: center; font-weight: 800; font-size: 40px; }
+      #cta { background: #d4a24c; color: #0b1f33; padding: 16px 36px; border-radius: 40px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="head" class="clip" data-start="0" data-duration="12" data-track-index="0">
+        <div id="kick">Shimla's open-air rink</div>
+        <div id="ttl">Will there be ice tomorrow?</div>
+      </div>
+      <div id="stage1" class="clip" data-start="0" data-duration="7.6" data-track-index="1">
+        <div id="sky">
+          <div id="stars"></div>
+          <div id="moon"></div>
+          <svg id="cloud" viewBox="0 0 600 260"><path d="M120 220 C40 220 30 130 110 120 C120 50 230 30 270 90 C310 20 450 40 450 120 C540 110 570 220 480 220 Z" fill="#8c9bab" /></svg>
+          <div id="rain"></div>
+          <div id="therm"><div id="tube"><div id="merc"></div></div><div id="bulb"></div></div>
+          <div id="templbl">Overnight</div>
+          <div id="temp"><span id="tv">+4</span> °C</div>
+        </div>
+        <div id="rows">
+          <div class="row" id="r1"><div class="mark" id="m1"><span class="ok" id="m1y">✓</span><span class="no" id="m1n">✕</span></div>Clear night sky</div>
+          <div class="row" id="r2"><div class="mark" id="m2"><span class="ok" id="m2y">✓</span><span class="no" id="m2n">✕</span></div>Below 0 °C overnight</div>
+        </div>
+        <div id="tile">
+          <div id="tileOn"><div class="big">Session ON</div><div class="sub">Morning skating, 8–10 am</div></div>
+          <div id="tileOff"><div class="big">No ice today</div><div class="sub">Cloud, rain or a warm night</div></div>
+        </div>
+      </div>
+      <div id="stage2" class="clip" data-start="7.4" data-duration="4.6" data-track-index="2">
+        <div id="season">The season: early Dec – Feb</div>
+        <div id="months">
+          <div class="m"><div class="lab">Nov<small>no ice</small></div></div>
+          <div class="m"><div class="fill" id="fd"></div><div class="lab" style="color:#0b1f33">Dec<small>opens</small></div></div>
+          <div class="m"><div class="fill" id="fj"></div><div class="lab" style="color:#0b1f33">Jan<small>best chance</small></div></div>
+          <div class="m"><div class="fill" id="ff"></div><div class="lab" style="color:#0b1f33">Feb<small>fewer days</small></div></div>
+          <div class="m"><div class="lab">Mar<small>closed</small></div></div>
+        </div>
+        <div id="count"><div id="num">0</div><div id="numlbl">skating sessions in 2024-25</div></div>
+        <div id="numsub">The weather decides. We plan your Shimla days around it.</div>
+        <div id="end"><div>Rink + hotel + cab, one plan</div><div id="cta">Get Quote</div></div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        let s = 77;
+        const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+        const stars = document.getElementById("stars");
+        for (let i = 0; i < 40; i++) { const d = document.createElement("div"); d.className = "star"; d.style.left = (rnd() * 740).toFixed(0) + "px"; d.style.top = (rnd() * 330).toFixed(0) + "px"; d.style.opacity = (0.4 + rnd() * 0.6).toFixed(2); stars.appendChild(d); }
+        const rain = document.getElementById("rain");
+        const drops = [];
+        for (let i = 0; i < 36; i++) { const d = document.createElement("div"); d.className = "drop"; rain.appendChild(d); drops.push({ el: d, x: 120 + rnd() * 560, y0: rnd() * 400 }); }
+        const proxy = { t: 0 };
+        const drawRain = (t) => { for (const d of drops) { const y = 230 + ((d.y0 + t * 900) % 400); d.el.style.transform = "translate(" + d.x.toFixed(0) + "px," + y.toFixed(0) + "px)"; } };
+
+        tl.fromTo("#head", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0);
+        // Night 1: clear and freezing
+        gsap.set("#cloud", { x: -700, opacity: 1 });
+        gsap.set("#rain", { opacity: 0 });
+        gsap.set(["#m1y", "#m2y", "#m1n", "#m2n"], { opacity: 0 });
+        gsap.set(["#tileOn", "#tileOff"], { opacity: 0 });
+        const temp = { v: 4 };
+        const setT = () => { const v = Math.round(temp.v); document.getElementById("tv").textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v); };
+        tl.fromTo(temp, { v: 4 }, { v: -3, duration: 1.8, ease: "power1.inOut", onUpdate: setT }, 0.7);
+        tl.fromTo("#merc", { scaleY: 0.62 }, { scaleY: 0.22, duration: 1.8, ease: "power1.inOut" }, 0.7);
+        tl.fromTo("#merc", { backgroundColor: "#e36a5a" }, { backgroundColor: "#7fc4f0", duration: 1.8 }, 0.7);
+        tl.fromTo("#bulb", { backgroundColor: "#e36a5a" }, { backgroundColor: "#7fc4f0", duration: 1.8 }, 0.7);
+        tl.fromTo("#r1", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 0.8);
+        tl.fromTo("#r2", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 1.1);
+        tl.to("#m1", { backgroundColor: "#d4a24c", duration: 0.3 }, 1.5);
+        tl.to("#m1y", { opacity: 1, duration: 0.3 }, 1.5);
+        tl.to("#m2", { backgroundColor: "#d4a24c", duration: 0.3 }, 2.5);
+        tl.to("#m2y", { opacity: 1, duration: 0.3 }, 2.5);
+        tl.fromTo("#tileOn", { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)", immediateRender: false }, 2.9);
+        // Night 2: cloud, rain, warm
+        tl.to("#cloud", { x: 0, duration: 0.9, ease: "power2.out" }, 4.4);
+        tl.to("#moon", { opacity: 0.15, duration: 0.6 }, 4.6);
+        tl.to("#stars", { opacity: 0.1, duration: 0.6 }, 4.6);
+        tl.to("#rain", { opacity: 1, duration: 0.4 }, 5.0);
+        tl.fromTo(proxy, { t: 0 }, { t: 2.6, duration: 2.6, ease: "none", onUpdate: () => drawRain(proxy.t) }, 5.0);
+        tl.to(temp, { v: 3, duration: 1.2, ease: "power1.inOut", onUpdate: setT }, 4.9);
+        tl.to("#merc", { scaleY: 0.55, backgroundColor: "#e36a5a", duration: 1.2 }, 4.9);
+        tl.to("#bulb", { backgroundColor: "#e36a5a", duration: 1.2 }, 4.9);
+        tl.to(["#m1y", "#m2y"], { opacity: 0, duration: 0.2 }, 5.4);
+        tl.to(["#m1", "#m2"], { backgroundColor: "#c0504a", duration: 0.3 }, 5.4);
+        tl.to(["#m1n", "#m2n"], { opacity: 1, duration: 0.3 }, 5.5);
+        tl.to("#tileOn", { opacity: 0, duration: 0.25 }, 5.7);
+        tl.fromTo("#tileOff", { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)", immediateRender: false }, 6.0);
+        tl.to("#stage1", { opacity: 0, duration: 0.4 }, 7.2);
+        // Stage 2: season + counter
+        tl.fromTo("#stage2", { opacity: 0 }, { opacity: 1, duration: 0.4, immediateRender: false }, 7.4);
+        tl.fromTo("#season", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 7.5);
+        tl.fromTo(["#fd", "#fj", "#ff"], { scaleX: 0 }, { scaleX: 1, duration: 0.45, stagger: 0.25, ease: "power2.out" }, 7.8);
+        const n = { v: 0 };
+        tl.fromTo(n, { v: 0 }, { v: 35, duration: 1.4, ease: "power2.out", onUpdate: () => { document.getElementById("num").textContent = Math.round(n.v); } }, 8.6);
+        tl.fromTo("#count", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.6);
+        tl.fromTo("#numsub", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 9.8);
+        tl.fromTo("#end", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 10.3);
+        drawRain(0); setT();
+        window.__timelines["main"] = tl;
+        tl.seek(0);
+      })();
+    </script>
+  </body>
+</html>

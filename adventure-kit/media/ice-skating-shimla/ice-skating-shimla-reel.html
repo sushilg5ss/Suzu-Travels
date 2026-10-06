@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b1f33; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; font-family: "Plus Jakarta Sans", sans-serif; color: #fff; background: #0b1f33; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+      .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.55) 0%, rgba(11,31,51,0) 22%, rgba(11,31,51,0) 48%, rgba(11,31,51,0.82) 72%, rgba(11,31,51,0.95) 100%); }
+      .cap { position: absolute; left: 80px; top: 1300px; width: 920px; }
+      .kick { font-weight: 800; font-size: 40px; letter-spacing: 0.14em; text-transform: uppercase; color: #d4a24c; }
+      .big { font-weight: 800; font-size: 108px; line-height: 1.02; letter-spacing: -0.02em; margin-top: 14px; }
+      .bar { width: 260px; height: 12px; border-radius: 6px; background: #d4a24c; margin-top: 34px; transform-origin: 0 50%; display: block; }
+      .small { font-weight: 800; font-size: 54px; line-height: 1.15; margin-top: 30px; }
+      #snow { position: absolute; inset: 0; }
+      .flake { position: absolute; left: 0; top: 0; border-radius: 50%; background: #fff; display: block; }
+      #endc { position: absolute; inset: 0; background: radial-gradient(900px 900px at 50% 30%, #17385c 0%, #0b1f33 70%); display: flex; flex-direction: column; justify-content: center; padding: 0 90px; }
+      #e1 { font-weight: 800; font-size: 40px; letter-spacing: 0.14em; text-transform: uppercase; color: #d4a24c; }
+      #e2 { font-weight: 800; font-size: 104px; line-height: 1.04; letter-spacing: -0.02em; margin-top: 20px; }
+      #e3 { margin-top: 60px; display: flex; }
+      #btn { display: block; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 60px; padding: 26px 60px; border-radius: 60px; }
+      #e4 { font-weight: 800; font-size: 34px; white-space: nowrap; margin-top: 60px; color: #fff; }
+      #e5 { font-weight: 500; font-size: 30px; line-height: 1.4; margin-top: 26px; color: #c9d6e4; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="scenes" class="clip" data-start="0" data-duration="15" data-track-index="0" style="position:absolute;inset:0">
+        <div class="scene" id="s1" data-layout-allow-overflow><img id="i1" src="assets/px3737687-s.jpg" alt="" style="object-position: 50% 55%" /><div class="grad"></div>
+          <div class="cap" id="c1"><div class="kick">Snow · Shimla</div><div class="big">Ice skating in Shimla</div><div class="bar" id="b1"></div><div class="small">Natural open-air rink, since 1920</div></div></div>
+        <div class="scene" id="s2" data-layout-allow-overflow><img id="i2" src="assets/px30112886-s.jpg" alt="" style="object-position: 50% 40%" /><div class="grad"></div>
+          <div class="cap" id="c2"><div class="kick">Mornings on the ice</div><div class="big">Skates at the rink</div><div class="bar" id="b2"></div><div class="small">Morning session 8–10 am</div></div></div>
+        <div class="scene" id="s3" data-layout-allow-overflow><img id="i3" src="assets/px6289768-s.jpg" alt="" style="object-position: 55% 50%" /><div class="grad"></div>
+          <div class="cap" id="c3"><div class="kick">When to go</div><div class="big">Early Dec – Feb</div><div class="bar" id="b3"></div><div class="small">Only on clear, freezing nights</div></div></div>
+        <div class="scene" id="s4"><div id="endc">
+          <div id="e1">Plan your Shimla winter</div>
+          <div id="e2">Rink day + hotel + cab, one plan</div>
+          <div id="e3"><div id="btn">Get Quote</div></div>
+          <div id="e4">suzutravels.com/adventure/ice-skating-shimla</div>
+          <div id="e5">HP Tourism registered travel agent · <span style="white-space:nowrap">Reg. No. DTO-MND-11-243/2022</span></div>
+        </div></div>
+      </div>
+      <div id="fx" class="clip" data-start="0" data-duration="15" data-track-index="1" style="position:absolute;inset:0"><div id="snow"></div></div>
+    </div>
+    <script>
+      (function () {
+        const D = 15;
+        const tl = gsap.timeline({ paused: true });
+        gsap.set(["#s2", "#s3", "#s4"], { opacity: 0 });
+        const capIn = (c, b, t) => {
+          tl.fromTo(c + " .kick", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, t);
+          tl.fromTo(c + " .big", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, t + 0.12);
+          tl.fromTo(b, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, t + 0.45);
+          tl.fromTo(c + " .small", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, t + 0.7);
+        };
+        tl.fromTo("#i1", { scale: 1.0 }, { scale: 1.1, duration: 4.0, ease: "none" }, 0);
+        capIn("#c1", "#b1", 0.2);
+        tl.fromTo("#s2", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 3.6);
+        tl.fromTo("#i2", { scale: 1.1 }, { scale: 1.0, duration: 4.0, ease: "none" }, 3.6);
+        capIn("#c2", "#b2", 3.9);
+        tl.to("#s1", { opacity: 0, duration: 0.1 }, 4.1);
+        tl.fromTo("#s3", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 7.3);
+        tl.fromTo("#i3", { scale: 1.05, x: 40 }, { scale: 1.15, x: -40, duration: 4.0, ease: "none" }, 7.3);
+        capIn("#c3", "#b3", 7.6);
+        tl.to("#s2", { opacity: 0, duration: 0.1 }, 7.8);
+        tl.fromTo("#s4", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 11.0);
+        tl.to("#s3", { opacity: 0, duration: 0.1 }, 11.5);
+        tl.fromTo("#e1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 11.3);
+        tl.fromTo("#e2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 11.45);
+        tl.fromTo("#btn", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.8)" }, 11.9);
+        tl.fromTo("#e4", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 12.3);
+        tl.fromTo("#e5", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 12.5);
+        let s = 1080;
+        const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+        const snow = document.getElementById("snow");
+        const fl = [];
+        for (let i = 0; i < 60; i++) {
+          const el = document.createElement("div"); el.className = "flake";
+          const r = 4 + rnd() * 7; el.style.width = el.style.height = r + "px"; el.style.opacity = (0.4 + rnd() * 0.5).toFixed(2);
+          snow.appendChild(el); fl.push({ el, x0: rnd() * 1080, y0: rnd() * 2000, v: 90 + rnd() * 160, amp: 10 + rnd() * 25, ph: rnd() * 6.28 });
+        }
+        const draw = (t) => { for (const f of fl) { const y = ((f.y0 + f.v * t) % 2000) - 40; const x = f.x0 + f.amp * Math.sin(t * 1.3 + f.ph); f.el.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)"; } };
+        const p = { t: 0 };
+        tl.fromTo(p, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: () => draw(p.t) }, 0);
+        draw(0);
+        window.__timelines["main"] = tl;
+        tl.seek(0);
+      })();
+    </script>
+  </body>
+</html>
