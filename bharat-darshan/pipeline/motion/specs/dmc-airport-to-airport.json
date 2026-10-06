@@ -1,0 +1,113 @@
+{
+ "title": "Suzu Travels — What a local DMC does (airport to airport)",
+ "duration": 40,
+ "music": "Vadodora.mp3",
+ "_status": "spec only 2026-10-06 — scheduled run blocked at setup-motion.sh (auto-permission 'Code from External'); render on the next unblocked run",
+ "_needs": "Apply proposed/mg-timeline.patch to mg.py first (new scene type 'timeline'), lint 0 errors + snapshot. If it does not look better, swap scene 1 to the '_fallback_list' version below.",
+ "_music_note": "Last two reels used Long Road Ahead (himachal) and Our Story Begins (kerala). Vadodora = intense/grooving, 97 bpm, sitar + percussion — confident 'we handle it' energy.",
+ "_sources": {
+  "facts": "No statistics on screen. Every line is a description of Suzu's own service (private driver, airport pickup/drop, handpicked hotels, 24/7 WhatsApp support — as listed in the motion-reels README) or a Suzu tip.",
+  "advice": "'keep a buffer day in Dec–Jan for North India fog' = Suzu tip, not a statistic"
+ },
+ "_photos_todo": {
+  "hook-taj-dawn": "Taj Mahal sunrise / morning mist (no people as subject)",
+  "airport-arrivals": "Indira Gandhi International Airport Terminal 3 interior / mudras sculpture (no identifiable people)",
+  "road-driver": "Rajasthan highway road car / NH road Aravalli (empty road)",
+  "hotel-courtyard": "Haveli courtyard Jaipur / heritage hotel courtyard Rajasthan (no brand logos)",
+  "fog-train": "Indian Railways train winter fog / New Delhi railway station platform (crowd not the subject)"
+ },
+ "scenes": [
+  {
+   "type": "photo",
+   "start": 0,
+   "dur": 5,
+   "img": "hook-taj-dawn-1.jpg",
+   "focus": [0.5, 0.5],
+   "zoom": [1.25, 1.08],
+   "grade": "warm",
+   "kicker": "What a local DMC does",
+   "headline": ["Land in India.", "*We do the rest"],
+   "hl_size": 132,
+   "pos": "low",
+   "t_head": 0.25
+  },
+  {
+   "type": "timeline",
+   "start": 5,
+   "dur": 10,
+   "kicker": "Airport to airport",
+   "headline": ["One team,", "*whole trip"],
+   "t_items": 1.4,
+   "step": 1.6,
+   "tl_top": 780,
+   "tl_bottom": 1380,
+   "steps": [
+    {"t": "Before you fly", "a": "We plan it all"},
+    {"t": "Arrival day", "a": "We meet you"},
+    {"t": "Every day", "a": "On call 24/7"},
+    {"t": "Last day", "a": "We see you off"}
+   ],
+   "_fallback_list": {
+    "type": "list",
+    "kicker": "Airport to airport",
+    "headline": ["One team,", "*whole trip"],
+    "items": [
+     {"a": "We plan it all", "b": "Before you fly"},
+     {"a": "We meet you", "b": "At the airport"},
+     {"a": "On call 24/7", "b": "WhatsApp, every day"},
+     {"a": "We see you off", "b": "Back to your gate"}
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "start": 15,
+   "dur": 6,
+   "img": "road-driver-1.jpg",
+   "focus": [0.5, 0.55],
+   "zoom": [1.05, 1.2],
+   "grade": "warm",
+   "kicker": "On the road",
+   "headline": ["Your own driver,", "*all trip"],
+   "hl_size": 132,
+   "pos": "low",
+   "sub": "Our tip: no taxi queues, no haggling"
+  },
+  {
+   "type": "photo",
+   "start": 21,
+   "dur": 6,
+   "img": "hotel-courtyard-1.jpg",
+   "focus": [0.5, 0.5],
+   "zoom": [1.2, 1.05],
+   "grade": "warm",
+   "kicker": "Where you sleep",
+   "headline": ["Hotels we", "*know first-hand"],
+   "hl_size": 132,
+   "pos": "low",
+   "sub": "Handpicked for location, comfort and character"
+  },
+  {
+   "type": "photo",
+   "start": 27,
+   "dur": 7,
+   "img": "fog-train-1.jpg",
+   "focus": [0.5, 0.5],
+   "zoom": [1.05, 1.2],
+   "grade": "cool",
+   "kicker": "When plans change",
+   "headline": ["We fix it", "*on the ground"],
+   "pos": "low",
+   "tag": "24/7",
+   "sub": "Our tip: in Dec–Jan keep a buffer day for North India fog"
+  },
+  {
+   "type": "end",
+   "start": 34,
+   "dur": 6,
+   "big": "India, handled by locals",
+   "small": "Private driver · handpicked hotels · 24/7 support",
+   "cta": "DM “PLAN” for a free plan"
+  }
+ ]
+}
