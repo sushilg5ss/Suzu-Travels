@@ -1,0 +1,93 @@
+{
+ "hero": {
+  "kicker": "MOUNTAINEERING COURSES · INDIA",
+  "words": [
+   [
+    "TRAIN FOR",
+    "24–28 DAYS."
+   ],
+   [
+    "BMC",
+    "FIRST."
+   ],
+   [
+    "'A' GRADE",
+    "OPENS AMC."
+   ],
+   [
+    "THEN YOUR",
+    "FIRST PEAK."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "y": -190,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.1,
+     "y": -190,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 1150
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 60
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -10
+    }
+   }
+  ]
+ }
+}
