@@ -319,5 +319,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "srinagar-taxi-service": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5f68f8c3b77b2c5d33b0fb81cda94f1521381c7e/cab-kit/media/srinagar-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5f68f8c3b77b2c5d33b0fb81cda94f1521381c7e/cab-kit/media/srinagar-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5f68f8c3b77b2c5d33b0fb81cda94f1521381c7e/cab-kit/media/srinagar-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5f68f8c3b77b2c5d33b0fb81cda94f1521381c7e/cab-kit/media/srinagar-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5f68f8c3b77b2c5d33b0fb81cda94f1521381c7e/cab-kit/media/srinagar-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5f68f8c3b77b2c5d33b0fb81cda94f1521381c7e/cab-kit/media/srinagar-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
