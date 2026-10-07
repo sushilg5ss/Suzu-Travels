@@ -1,0 +1,114 @@
+{
+ "kind": "guide",
+ "path": "/mountains-of-india/trekking-peaks/",
+ "title": "Trekking Peaks in India: Best First 5,000–6,000 m Climbs",
+ "seo_title": "Trekking Peaks in India: Best First 5,000–6,000 m Climbs",
+ "seo_desc": "Trekking peaks in India compared: Friendship Peak, Shitidhar, Ladakhi and Yunam by height, base, season and 2026 status, plus permits and how to step up.",
+ "focus": "trekking peaks",
+ "commercial": true,
+ "label": "Trekking peaks in India",
+ "blurb": "First summits from 5,289 m to 6,111 m, compared",
+ "verified": "7 Oct 2026",
+ "kicker": "Trekking peaks · First summits · Oct 2026",
+ "tag": "Your first Himalayan summit, chosen well.",
+ "sub": "\"Trekking peak\" sounds easy, but these are real snow summits that ask for crampons, an ice axe and rope work. Here are the open first climbs in India side by side, with heights, bases, seasons, 2026 access status and the permits behind them. Dated and sourced.",
+ "chips": [
+  ["5,289 m", "first summits"],
+  ["6,111 m", "the next step"],
+  ["About 8 days", "from Manali"],
+  ["May–Oct", "by region"],
+  ["Price", "Get Quote"]
+ ],
+ "hero_alt": "Roped climbers on snow, a corniced ridge and scree slopes (generic stock footage) with four statements: first 5,289 m, rope and ice axe, next 6,111 m, train then climb",
+ "ladder_alt": "Animated chart of Friendship Peak, Shitidhar, Ladakhi, Yunam, Mentok Kangri and Dzo Jongo drawn at their true heights",
+ "q": "What is a trekking peak, and which one should you climb first in India?",
+ "answer": "A <b>trekking peak</b> is a loose label for a summit that needs little technical climbing but still calls for crampons, an ice axe and rope work. India has no single official list. The usual first climbs are Friendship Peak (5,289 m / 17,352 ft) and Shitidhar (5,294 m) above Manali, then Yunam (6,111 m / 20,049 ft) in Lahaul. Compare them below or in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  ["Lowest here", "Friendship Peak 5,289 m / 17,352 ft"],
+  ["First 6,000er", "Yunam 6,111 m / 20,049 ft"],
+  ["Kullu peaks", "May–Jun, Sep–Oct"],
+  ["Lahaul & Ladakh", "Jun–Sep"],
+  ["Closed", "Stok Kangri (since 2020)"],
+  ["Price", "Get Quote"]
+ ],
+ "intro": [
+  "The term comes from Nepal, where the Nepal Mountaineering Association designates about 30 \"NMA peaks\", all under 7,000 m. Nepal's list and its rules do not apply in India. Here \"trekking peak\" is a colloquial word that guidebooks and operators use loosely, and it covers summits of very different difficulty: some are long snow walks, others end on a narrow, exposed ridge.",
+  "There is one place where the label matters in India: the Indian Mountaineering Foundation charges a lower base fee (US$200 for a foreign team of two) only for peaks on its own trekking-peak list. A peak that a guidebook calls a trekking peak is not automatically on that list, so ask for the peak's IMF category when you apply. For where these summits sit in the wider range, start with our guide to the <a href=\"/mountains-of-india/\">mountains of India</a>."
+ ],
+ "table": {
+  "ids": ["friendship-peak", "shitidhar", "ladakhi-peak", "mount-yunam", "mentok-kangri", "dzo-jongo", "stok-kangri", "chamser-kangri", "lungser-kangri"],
+  "label": "The peaks",
+  "h2": "Nine trekking peaks in India, from 5,289 m to 6,666 m",
+  "text": [
+   "The animation draws six first summits at their true heights, from Friendship Peak (5,289 m) above Solang to Dzo Jongo (6,280 m) in Ladakh. Friendship, Shitidhar, Ladakhi and Yunam are in Himachal Pradesh; the rest are in Ladakh.",
+   "The table adds three more Ladakh summits: the higher Rupshu walk-ups of Chamser Kangri and Lungser Kangri, and Stok Kangri, once India's most-climbed 6,000er and closed since 2020. Search or sort it by height; each name opens its guide or its row in the national list."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "compare",
+   "label": "Compare",
+   "kicker": "Side by side · Oct 2026",
+   "h2": "Trekking peaks compared: base, season and what makes them hard",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Height</th><th>Status, Oct 2026</th><th>Base</th><th>Season</th><th>The hard part</th></tr></thead><tbody><tr><td><b><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a></b><br>Himachal</td><td class=\"n\">5,289 m<br>17,352 ft</td><td>Open</td><td>Manali → Solang (Dhundi / Bakarthach)</td><td>May–Jun, Sep–Oct</td><td>Steep final snow slope</td></tr><tr><td><b>Shitidhar</b><br>Himachal</td><td class=\"n\">5,294 m<br>17,369 ft</td><td>Open</td><td>Manali → Solang</td><td>May–Jun, Sep–Oct</td><td>Beginner snow peak near Beas Kund</td></tr><tr><td><b>Ladakhi</b><br>Himachal</td><td class=\"n\">5,342 m<br>17,526 ft</td><td>Open</td><td>Solang → Beas Kund</td><td>May–Jun, Sep–Oct</td><td>Narrow, exposed final ridge</td></tr><tr><td><b>Kanamo</b><br>Himachal (Spiti)</td><td class=\"n\">5,964 m<br>19,567 ft</td><td><b>Unclear: ask first</b></td><td>Kibber</td><td>Jun–Sep</td><td>High walk-up; access status unverified</td></tr><tr><td><b><a href=\"/mountains-of-india/yunam-peak/\">Yunam</a></b><br>Himachal (Lahaul)</td><td class=\"n\">6,111 m<br>20,049 ft</td><td>Open</td><td>Bharatpur, below Baralacha La</td><td>Jun–Sep</td><td>Scree and snow of about 50° near the top; long summit push</td></tr><tr><td><b>Mentok Kangri</b><br>Ladakh</td><td class=\"n\">6,250 m<br>20,505 ft</td><td>Open (PAP for foreigners)</td><td>Korzok, Tso Moriri</td><td>Jun–Sep</td><td>Snow early, loose moraine when dry</td></tr><tr><td><b>Dzo Jongo</b><br>Ladakh</td><td class=\"n\">6,280 m<br>20,604 ft</td><td>Open</td><td>Markha valley, Hemis NP</td><td>Jun–Sep</td><td>Altitude on a snow walk-up</td></tr><tr><td><b><a href=\"/mountains-of-india/stok-kangri/\">Stok Kangri</a></b><br>Ladakh</td><td class=\"n\">6,153 m<br>20,187 ft</td><td><b>Closed since 2020</b></td><td>Stok village</td><td>–</td><td>Not climbable today</td></tr></tbody></table></div><p class=\"szm-note\">Heights from our peak dataset. Some vary by source: Shitidhar is also given as 5,250 m, Ladakhi between about 5,257 and 5,345 m, and the Mentok massif has several summits whose names and heights differ between maps. Status as of 7 Oct 2026.</p>"
+  },
+  {
+   "id": "choose",
+   "label": "Step up",
+   "kicker": "Which one first?",
+   "h2": "How to step up, from your first snow summit to 6,000 m",
+   "html": "<ol class=\"szm-steps\"><li><b>First snow summit: Friendship Peak or Shitidhar (about 5,300 m).</b>Both start from Solang above Manali and are climbed in May–June and September–October. Expect a pre-dawn start and a steep snow slope near the top. A guided Friendship Peak climb takes about 8 days from Manali.</li><li><b>A sharper top: Ladakhi (5,342 m).</b>It is climbed from Beas Kund, and its final ridge is narrow and exposed, so it can feel like a proper mountain despite the label. Beginners should not try it without professional guides.</li><li><b>Your first 6,000er: Yunam (6,111 m).</b>The road-head is the Bharatpur tent camp on the Manali–Leh highway. The climbing is not technical, but the slopes reach about 50° near the top and summit day is one long push, so altitude is the real test. Best from June to September.</li><li><b>Higher walk-ups in Ladakh: Mentok Kangri, Dzo Jongo, Lungser Kangri.</b>These rise from 6,250 m to 6,666 m in the rain-shadow and need extra acclimatisation days in Leh. We cover them here as information; the climbs we arrange are in Himachal.</li></ol><div class=\"szm-call\"><p>Done a trekking peak and want a true expedition next? <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m) is a snow dome above Jagatsukh, climbed via the Duhangan Col, and it is not a trekking peak. For any climb in Himachal, we pair you with a registered Himachal outfitter and certified guides: one plan, one quote.</p></div>"
+  },
+  {
+   "id": "status",
+   "label": "Open or closed",
+   "kicker": "Access status · Oct 2026",
+   "h2": "Which trekking peaks are closed or unclear in 2026?",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>Stok Kangri: closed</h3><ul><li>The All Ladakh Tour Operators Association stopped climbs from 2020.</li><li>On 21 Dec 2023 the Ladakh administration closed <b>all kinds of expeditions</b> to the peak.</li><li>No reopening found as of Oct 2026, even though some websites still sell it. See our <a href=\"/mountains-of-india/stok-kangri/\">Stok Kangri status page</a>.</li></ul></div><div class=\"szm-col\"><h3>Kanamo: unclear</h3><ul><li>Sources conflict: some say it is restricted or banned, others describe 2026 climbs.</li><li>No official order from the district or Kaza was found.</li><li>Ask us before planning; we suggest an open Himachal peak instead until the status is clear.</li></ul></div><div class=\"szm-col\"><h3>Nepal's list: not India's</h3><ul><li>Nepal's NMA peaks and their fees are Nepal's rules only.</li><li>In India foreign teams need an <b>IMF permit</b>, and peaks near Tso Moriri also need a protected-area permit.</li><li>Opening lists change: in 2021 the Centre listed 340 peaks open to foreign expeditions, 91 of them in Himachal.</li></ul></div></div>"
+  },
+  {
+   "id": "prepare",
+   "label": "Prepare",
+   "kicker": "Before you go",
+   "h2": "Do you need a course, and how hard is a trekking peak really?",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>A course?</h3><ul><li>Most guided trekking-peak climbs <b>do not ask for a Basic Mountaineering Course</b>.</li><li>Your outfitter will ask about your high-altitude trekking experience.</li><li>Indian teams applying to the IMF on their own must meet its course rules: half the members with the Advanced course, the rest with the Basic.</li></ul></div><div class=\"szm-col\"><h3>Altitude</h3><ul><li>Above 3,000 m, raise your sleeping altitude by <b>no more than 500 m a night</b>.</li><li>Add an extra night for every 1,000 m gained.</li><li>If symptoms get worse, descent is the best treatment (CDC Yellow Book). This is general information, not medical advice.</li></ul></div><div class=\"szm-col\"><h3>\"Easy\" is relative</h3><ul><li>Every peak here means snow slopes, cold and a pre-dawn summit day.</li><li>You will use crampons, an ice axe and a rope.</li><li>Ladakhi's ridge is exposed and Yunam's top slopes are steep, so arrive fit and acclimatised.</li></ul></div></div>"
+  },
+  {
+   "id": "permits",
+   "label": "Permits",
+   "kicker": "Permits and rules",
+   "h2": "Permits for trekking peaks in India",
+   "html": "<p><b>Foreign climbers</b> need an Indian Mountaineering Foundation permit. For a team of two the base fee is US$200 on peaks the IMF lists as trekking peaks and US$500 on other peaks up to 6,500 m, plus per-member charges and US$500 liaison-officer equipment hire (IMF peak-fee page, as of Oct 2026). Every fee band, the 90-day rule and worked examples are in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fees guide</a>.</p><p><b>In Himachal Pradesh</b>, trekking and mountaineering operators and their guides must be registered with HP Tourism, difficult routes are led by qualified guides, and every participant needs life and rescue insurance. The Kangra trekker registration (8 Jul–15 Oct 2026) covers ten Dhauladhar routes only, not these peaks.</p><p><b>Border belts:</b> foreigners need a protected-area permit for the Tso Moriri peaks (Mentok, Chamser, Lungser Kangri) and for parts of Spiti near the Tibet border. More on the state's summits in our <a href=\"/mountains-of-india/himachal-pradesh/\">Himachal Pradesh climbing guide</a>.</p>"
+  }
+ ],
+ "faq_h2": "Trekking peaks in India: questions climbers ask",
+ "faqs": [
+  ["What is a trekking peak?", "A loose label for a summit that needs limited technical climbing but still asks for crampons, an ice axe and rope skills. The term comes from Nepal's list of NMA peaks; India has no single official list of trekking peaks."],
+  ["Which is the easiest peak to climb in India?", "Among Himachal summits, Friendship Peak (5,289 m) and Shitidhar (5,294 m) above Solang near Manali are the usual first snow climbs. Easy still means high altitude, steep snow near the top and a pre-dawn start."],
+  ["What is the highest trekking peak in India?", "There is no official ranking. Popular non-technical summits above 6,000 m include Lungser Kangri (6,666 m), Dzo Jongo (6,280 m) and Mentok Kangri (6,250 m) in Ladakh, and Yunam (6,111 m) in Himachal."],
+  ["Do I need a mountaineering course to climb a trekking peak?", "Most guided trekking-peak climbs do not ask for a Basic Mountaineering Course; the outfitter asks about your high-altitude trekking experience. Indian teams applying to the IMF on their own must meet the IMF's course rules."],
+  ["Can foreigners climb trekking peaks in India?", "Yes, with an IMF permit: a base fee of US$200 for a team of two where the peak is on the IMF's trekking-peak list, otherwise US$500 up to 6,500 m, plus a liaison officer. Border areas such as Tso Moriri also need a protected-area permit."],
+  ["Is Stok Kangri open in 2026?", "No. Climbs stopped in 2020, and on 21 Dec 2023 the Ladakh administration closed all expeditions to the peak. No reopening had been announced as of Oct 2026."],
+  ["Is Kanamo open in 2026?", "Sources conflict and no official order was found as of Oct 2026. Ask before planning; an open Himachal peak such as Yunam is the safer choice until the status is clear."],
+  ["When is the best time to climb a trekking peak in India?", "May–June and September–October for the Kullu peaks above Manali, which get monsoon rain in July and August. June–September for Lahaul, Spiti and Ladakh, which lie in the rain-shadow."]
+ ],
+ "links": [
+  ["/mountains-of-india/", "Mountains of India", "Records, permits and training"],
+  ["/mountains-of-india/highest-peaks-in-india/", "Highest peaks in India", "Full list of 156 peaks"],
+  ["/adventure/himalayan-peak-expeditions/", "Guided peak climbs", "Friendship Peak to Deo Tibba"],
+  ["/mountains-of-india/friendship-peak/", "Friendship Peak", "5,289 m · the classic first summit above Manali"],
+  ["/mountains-of-india/yunam-peak/", "Yunam Peak", "6,111 m · a road-head 6,000er in Lahaul"]
+ ],
+ "sources": [
+  ["Wikipedia — Trekking peak", "https://en.wikipedia.org/wiki/Trekking_peak"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions (checked 1 Oct 2026)", "https://www.indmount.org/IMF/peakfee"],
+  ["Ministry of Tourism — Rajya Sabha unstarred question 2386, 16 Mar 2021 (peaks opened to foreigners)", "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"],
+  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"],
+  ["Wikipedia — List of mountain peaks of Ladakh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"],
+  ["Wikipedia — Tso Moriri", "https://en.wikipedia.org/wiki/Tso_Moriri"],
+  ["Wikipedia — Stok Kangri", "https://en.wikipedia.org/wiki/Stok_Kangri"],
+  ["Outlook Traveller — A hard climb up to Ladakhi", "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi"],
+  ["HP Miscellaneous Adventure Activities (Amendment) Rules 2021", "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"],
+  ["CDC Yellow Book — High-altitude travel and altitude illness", "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"]
+ ]
+}

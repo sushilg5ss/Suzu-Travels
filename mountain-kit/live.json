@@ -95,5 +95,14 @@
   "blurb": "US$ fee bands, liaison officer and the 90-day rule",
   "added": "2026-10-06",
   "commercial": true
+ },
+ "trekking-peaks": {
+  "id": 12438,
+  "path": "/mountains-of-india/trekking-peaks/",
+  "kind": "guide",
+  "label": "Trekking peaks in India",
+  "blurb": "First summits from 5,289 m to 6,111 m, compared",
+  "added": "2026-10-07",
+  "commercial": true
  }
 }
