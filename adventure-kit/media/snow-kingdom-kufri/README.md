@@ -1,0 +1,9 @@
+# snow-kingdom-kufri media (Visual Studio, 7 Oct 2026)
+Rendered with the deterministic PIL + ffmpeg renderer (`sz.py` + `snow-kingdom-kufri-{hero,explainer,reel}.py`; 30 fps, seeded snow). The HyperFrames CLI install (`npx hyperframes@0.8.85`) was blocked by the sandbox's permission check this run.
+Re-render: `python3 <script>.py` (needs the Pexels photos below in /home/claude/work/ph/ — 6617714 and 10589592 are mirrored to *-m.jpg by the hero script — and Plus Jakarta Sans .woff from @fontsource in /home/claude/work/fonts/package/files/).
+
+- hero: 12 s seamless loop (1920×1080 → 1600 web): family with sledge + snow tube → mother and child in snow → kids building a snowman → family snowball fight → back. Right-half type: "Kufri · near Shimla / Snow Kingdom / Real snow · all year" + rotating facts (Real snow, any month · About a 1-hour session · Gear included · Sledges, tubes & slides). Signature: falling snow + 12-month strip lighting all 12 months ("12/12 months") + "Shimla to Kufri · 16–20 km".
+- explainer: 11 s "Real snow, any month": calendar — outdoor Kufri natural snow lights Dec–Feb only, indoor snow park lights all 12 → "Dec–Feb: do both. Mar–Nov: indoor is the sure snow." → 60-minute ring (~15 min gear up + ~45 min in the snow) → Shimla–Kufri 16–20 km · 30–45 min by cab → "Hotel + cab + snow day · Get Quote".
+- reel: 15 s 9:16 — child in snow with sledge / kids' snowball fight / sledge + tube; end card suzutravels.com/adventure/snow-kingdom-kufri + HP Tourism reg. no.
+
+Photos (all generic outdoor snow-play photos — neutral alt, never labelled as Snow Kingdom or Kufri): 12402 family pulling a sledge and a snow tube (Pexels 6617714) · 12403 family snowball fight (6618008) · 12404 mother and child playing in snow (1620651) · 12405 kids building a snowman (10589592) · 12406 child in deep snow beside a sledge (20008914) · 12407 kids' snowball fight (10936117).
