@@ -1,0 +1,88 @@
+{
+ "hero": {
+  "kicker": "CRAMPONS & BOOTS · BEGINNER'S GUIDE",
+  "words": [
+   [
+    "12 POINTS.",
+    "FRONT BITE."
+   ],
+   [
+    "STRAP.",
+    "OR STEP-IN."
+   ],
+   [
+    "B1 · B2 · B3",
+    "GRADES."
+   ],
+   [
+    "BOOT SETS",
+    "THE LIMIT."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 1150
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ]
+ }
+}

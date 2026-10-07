@@ -1,0 +1,94 @@
+{
+ "hero": {
+  "kicker": "ICE AXE · CLIMBER'S GUIDE",
+  "words": [
+   [
+    "PICK. ADZE.",
+    "SHAFT."
+   ],
+   [
+    "MOST USE",
+    "45–60 CM."
+   ],
+   [
+    "THE AXE IS",
+    "A BRAKE."
+   ],
+   [
+    "LEARN IT",
+    "IN PERSON."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "y": -190,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.1,
+     "y": -190,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   }
+  ]
+ }
+}
