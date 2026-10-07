@@ -1,0 +1,96 @@
+{
+ "title": "Suzu Travels — India's 45 UNESCO World Heritage Sites",
+ "duration": 40,
+ "music": "Magistar.mp3",
+ "_status": "spec only 2026-10-07 (scheduled run blocked at setup-motion.sh) — needs photos + proposed/mg-mosaic.patch, then lint/snapshot/render",
+ "_music_note": "Last two reels used Our Story Begins (kerala) and Vadodora (dmc). Magistar = grand/cinematic, fits heritage. Fallback: Noble Race.",
+ "_sources": {
+  "count": "Wikipedia 'List of World Heritage Sites in India' (fetched 2026-10-07): 45 sites = 37 cultural, 7 natural, 1 mixed (Khangchendzonga NP, 2016). Sarnath ('Ancient Buddhist Site of Sarnath') inscribed 2026 at the 48th WHC session as India's 45th — also Drishti IAS 27 Jul 2026, Outlook Traveller. Official page whc.unesco.org/en/statesparties/in could not be opened this run (permission timeout) — re-check before posting.",
+  "years": "Wikipedia list: Taj Mahal 1983, Agra Fort 1983, Ajanta 1983, Ellora 1983, Konark 1984, Mahabalipuram 1984, Kaziranga 1985, Hampi 1986, Fatehpur Sikri 1986, Mountain Railways 1999, Jantar Mantar Jaipur 2010, Western Ghats 2012, Hill Forts of Rajasthan 2013 (includes Amber Fort), Rani-ki-Vav 2014, Great Himalayan NP 2014, Khangchendzonga 2016, Jaipur City 2019, Sarnath 2026",
+  "tip": "'Agra + Jaipur = 6 UNESCO sites' = Taj Mahal, Agra Fort, Fatehpur Sikri, Jaipur City, Jantar Mantar, Amber Fort (part of Hill Forts of Rajasthan). Phrased as a Suzu tip."
+ },
+ "_photos_todo": {
+  "taj-hook.jpg": "Taj Mahal sunrise / reflection, warm, no crowds as subject (3840px thumb)",
+  "hampi-1.jpg": "Hampi Virupaksha or Stone Chariot Vittala temple",
+  "jaipur-1.jpg": "Hawa Mahal Jaipur facade",
+  "kaziranga-1.jpg": "Indian rhinoceros Kaziranga",
+  "ranikivav-1.jpg": "Rani ki Vav stepwell Patan",
+  "ghnp-1.jpg": "Great Himalayan National Park Tirthan / Sainj valley",
+  "westernghats-1.jpg": "Western Ghats green hills (Munnar / Periyar)",
+  "khangchendzonga-1.jpg": "Kangchenjunga peak from Sikkim (sharp, morning light)",
+  "sarnath-1.jpg": "Dhamek Stupa Sarnath (reuse dhamek-stupa-sarnath-1.jpg from india-numbers if still on disk)",
+  "amber-1.jpg": "Amber Fort Jaipur (reuse amber-fort-jaipur-2.jpg from india-numbers)"
+ },
+ "scenes": [
+  {
+   "type": "photo", "start": 0, "dur": 5,
+   "img": "taj-hook.jpg", "focus": [0.5, 0.45], "zoom": [1.18, 1.04], "grade": "warm",
+   "kicker": "UNESCO World Heritage",
+   "headline": ["45 wonders.", "*How many", "have you seen?"],
+   "pos": "low", "t_head": 0.25, "hl_size": 140
+  },
+  {
+   "type": "map", "start": 5, "dur": 8,
+   "kicker": "All in one country",
+   "headline": ["Every corner", "of *India"],
+   "pins": [
+    {"city": "Agra", "at": 2.0, "label": "Taj Mahal", "side": "l"},
+    {"city": "Hampi", "at": 2.25, "label": "Hampi"},
+    {"lon": 83.02, "lat": 25.38, "at": 2.5, "label": "Sarnath", "side": "l"},
+    {"lon": 75.70, "lat": 20.55, "at": 2.75, "label": "Ajanta", "side": "l"},
+    {"lon": 93.36, "lat": 26.58, "at": 2.95},
+    {"lon": 88.30, "lat": 27.60, "at": 3.1},
+    {"lon": 86.09, "lat": 19.89, "at": 3.25},
+    {"lon": 80.19, "lat": 12.62, "at": 3.4},
+    {"lon": 72.10, "lat": 23.86, "at": 3.55},
+    {"lon": 77.60, "lat": 31.80, "at": 3.7},
+    {"city": "Thekkady", "at": 3.85},
+    {"lon": 88.90, "lat": 21.90, "at": 4.0},
+    {"city": "Shimla", "at": 4.15}
+   ],
+   "stat": {"num": 45, "label": "UNESCO World Heritage Sites", "at": 4.4, "cdur": 1.6},
+   "map_w": 640, "map_dx": 150, "map_y": 620
+  },
+  {
+   "type": "mosaic", "start": 13, "dur": 8,
+   "kicker": "37 cultural · 7 natural · 1 mixed",
+   "headline": ["Forts, temples,", "*wild parks"],
+   "tiles": [
+    {"img": "hampi-1.jpg", "label": "Hampi · 1986"},
+    {"img": "jaipur-1.jpg", "label": "Jaipur · 2019"},
+    {"img": "kaziranga-1.jpg", "label": "Kaziranga · 1985"},
+    {"img": "ranikivav-1.jpg", "label": "Rani-ki-Vav · 2014"},
+    {"img": "ghnp-1.jpg", "label": "Great Himalayan NP · 2014"},
+    {"img": "westernghats-1.jpg", "label": "Western Ghats · 2012"}
+   ],
+   "cols": 2, "grid_top": 690, "grid_bottom": 1480, "t_items": 0.9, "step": 0.25, "pulse": 4
+  },
+  {
+   "type": "photo", "start": 21, "dur": 5,
+   "img": "khangchendzonga-1.jpg", "focus": [0.5, 0.4], "zoom": [1.05, 1.18], "grade": "cool",
+   "kicker": "Sikkim · since 2016",
+   "headline": ["The only", "*mixed site"],
+   "pos": "low", "sub": "Khangchendzonga — listed for nature and culture"
+  },
+  {
+   "type": "photo", "start": 26, "dur": 5,
+   "img": "sarnath-1.jpg", "focus": [0.5, 0.35], "zoom": [1.05, 1.2], "grade": "warm",
+   "kicker": "Newest on the list",
+   "headline": ["*Sarnath", "joins in 2026"],
+   "pos": "low", "tag": "UNESCO 2026", "sub": "Where the Buddha gave his first sermon"
+  },
+  {
+   "type": "photo", "start": 31, "dur": 4.5,
+   "img": "amber-1.jpg", "focus": [0.4, 0.45], "zoom": [1.2, 1.05], "grade": "warm",
+   "kicker": "Our tip",
+   "headline": ["Agra + Jaipur", "*= 6 sites"],
+   "pos": "low", "sub": "Taj, forts and the Pink City in one easy route"
+  },
+  {
+   "type": "end", "start": 35.5, "dur": 4.5,
+   "big": "Your heritage trail, planned by locals",
+   "small": "Private driver · expert guides · 24/7 support",
+   "cta": "DM “UNESCO” for a free plan"
+  }
+ ]
+}

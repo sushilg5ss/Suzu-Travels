@@ -1,0 +1,58 @@
+diff --git a/bharat-darshan/pipeline/motion/mg.py b/bharat-darshan/pipeline/motion/mg.py
+index 7b8646f..f5e090b 100644
+--- a/bharat-darshan/pipeline/motion/mg.py
++++ b/bharat-darshan/pipeline/motion/mg.py
+@@ -3,7 +3,7 @@
+ 
+ usage: mg.py SPEC.json OUT_DIR
+ Scene types: photo (Ken Burns + kinetic headline + optional stat), map (India outline, pins, route),
+-list (numbered points), timeline (vertical journey steps + travelling dot), end (brand card).  All timing absolute (seconds) via "start"/"dur".
++list (numbered points), timeline (vertical journey steps + travelling dot), mosaic (photo grid, iris reveal), end (brand card).  All timing absolute (seconds) via "start"/"dur".
+ """
+ import json, math, os, shutil, sys, html
+ from PIL import Image, ImageEnhance, ImageFilter
+@@ -225,6 +225,34 @@ def build(spec_path, out_dir):
+             js.append(f'tl.fromTo("#{p}-tl",{{opacity:0}},{{opacity:1,duration:0.4}},{t0-0.3:.3f});')
+             js.append(f'tl.fromTo("#{p}-line",{{scaleY:0}},{{scaleY:1,duration:{(n-1)*stp:.2f},ease:"none"}},{t0:.3f});')
+             js.append(f'tl.fromTo("#{p}-dot",{{y:0}},{{y:{y1-y0:.1f},duration:{(n-1)*stp:.2f},ease:"none"}},{t0:.3f});')
++        if typ == "mosaic":  # photo mosaic reveal: {"tiles":[{"img":"a.jpg","label":"Hampi · 1986","focus":[.5,.5]}],"cols":2,"grid_top":690,"grid_bottom":1480,"t_items":0.9,"step":0.22}
++            if sc.get("kicker"):
++                inner.append(f'<div class="kicker top" id="{p}-k">{esc(sc["kicker"])}</div>')
++                js.append(f'tl.fromTo("#{p}-k",{{opacity:0,x:-30}},{{opacity:1,x:0,duration:0.6,ease:"power3.out"}},{S+0.2:.3f});')
++            if sc.get("headline"):
++                inner.append(words_html(sc["headline"], "hl hl-top", f"{p}-h").replace('id="%s-h"' % p, 'id="%s-h" style="font-size:%dpx"' % (p, sc.get("hl_size", 130)), 1))
++                js += words_js(f"{p}-h", sc["headline"], S + 0.3)
++            tiles = sc["tiles"]; cols = sc.get("cols", 2); rows = math.ceil(len(tiles) / cols)
++            gap = sc.get("gap", 18)
++            gx0, gx1 = sc.get("grid_left", 60), W - sc.get("grid_right", 190)
++            gy0, gy1 = sc.get("grid_top", 690), sc.get("grid_bottom", 1480)
++            tw, th = (gx1 - gx0 - gap * (cols - 1)) / cols, (gy1 - gy0 - gap * (rows - 1)) / rows
++            t0, stp = S + sc.get("t_items", 0.9), sc.get("step", 0.22)
++            for i, tile in enumerate(tiles):
++                fn, _ = prep(src_dir, os.path.join(out_dir, "img"), tile["img"], tile.get("grade", sc.get("grade", "warm")))
++                fx, fy = tile.get("focus", [0.5, 0.5])
++                x, y = gx0 + (i % cols) * (tw + gap), gy0 + (i // cols) * (th + gap)
++                inner.append(f'<div class="mtile" id="{p}-t{i}" style="left:{x:.1f}px;top:{y:.1f}px;width:{tw:.1f}px;height:{th:.1f}px">'
++                             f'<img class="mimg" id="{p}-ti{i}" src="img/{fn}" alt="" style="object-position:{fx*100:.0f}% {fy*100:.0f}%">'
++                             f'<div class="mlab" id="{p}-tl{i}">{esc(tile.get("label", ""))}</div></div>')
++                ti = t0 + i * stp
++                # tile opens from its centre (rounded clip-path iris) while the photo settles from a slight zoom
++                js.append(f'tl.fromTo("#{p}-t{i}",{{clipPath:"inset(50% 50% 50% 50% round 28px)",opacity:0}},{{clipPath:"inset(0% 0% 0% 0% round 28px)",opacity:1,duration:0.6,ease:"power3.out"}},{ti:.3f});')
++                js.append(f'tl.fromTo("#{p}-ti{i}",{{scale:1.3}},{{scale:1.04,duration:{max(1.0, S + D - ti):.2f},ease:"sine.out"}},{ti:.3f});')
++                js.append(f'tl.fromTo("#{p}-tl{i}",{{opacity:0,y:16}},{{opacity:1,y:0,duration:0.4,ease:"power3.out"}},{ti+0.35:.3f});')
++            if "pulse" in sc:  # gold ring pulse on one tile after all are in, e.g. "pulse": 0
++                j = sc["pulse"]
++                js.append(f'tl.fromTo("#{p}-t{j}",{{boxShadow:"0 0 0 0px rgba(242,200,75,0)"}},{{boxShadow:"0 0 0 6px rgba(242,200,75,1)",duration:0.35,yoyo:true,repeat:1}},{t0+len(tiles)*stp+0.4:.3f});')
+         if typ == "end":
+             inner.append(f'''<div class="end">
+ <div class="halo" id="{p}-halo"></div><img class="logo" id="{p}-logo" src="assets/suzu-logo.png" alt="">
+@@ -296,6 +324,9 @@ body{{margin:0;background:{EM}}}
+ .tl-txt{{position:absolute;left:200px;right:190px}}
+ .tl-t{{font-family:"Inter";font-weight:800;font-size:26px;letter-spacing:.2em;text-transform:uppercase;color:{GOLD};margin-bottom:6px}}
+ .tl-a{{font-family:"Bebas";font-size:88px;line-height:.95;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.6)}}
++.mtile{{position:absolute;overflow:hidden;border-radius:28px;background:#0a160d;box-shadow:0 12px 40px rgba(0,0,0,.45)}}
++.mimg{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}}
++.mlab{{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 18px;background:linear-gradient(180deg,rgba(7,15,9,0),rgba(7,15,9,.85));font-family:"Inter";font-weight:800;font-size:30px;letter-spacing:.06em;text-transform:uppercase;color:#fff}}
+ .end{{position:absolute;inset:0;text-align:center}}
+ .halo{{position:absolute;left:190px;top:330px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(242,200,75,.35),rgba(242,200,75,0) 70%)}}
+ .logo{{position:absolute;left:340px;top:430px;width:400px}}
