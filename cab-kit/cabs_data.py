@@ -82,6 +82,8 @@ PLACES = {
     "Rajpura": (30.48, 76.59), "Khanna": (30.70, 76.22), "Ludhiana": (30.90, 75.85), "Phagwara": (31.22, 75.77),
     "Jalandhar": (31.33, 75.58), "Beas": (31.52, 75.29), "Attari": (31.60, 74.60),
     "Palampur": (32.11, 76.54), "Bir": (32.05, 76.73), "Baijnath": (32.05, 76.65), "Bhagsu": (32.25, 76.33),
+    "Gulmarg": (34.05, 74.38), "Tangmarg": (34.06, 74.43), "Sonamarg": (34.30, 75.29), "Pahalgam": (34.02, 75.32),
+    "Doodhpathri": (33.87, 74.56), "Yusmarg": (33.83, 74.66), "Baramulla": (34.20, 74.34), "Kargil": (34.56, 76.13),
 }
 
 # every route card shown anywhere (hub grid, "more routes"); page = slug when a page exists
