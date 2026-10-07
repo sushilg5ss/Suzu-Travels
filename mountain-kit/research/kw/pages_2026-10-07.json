@@ -1,0 +1,281 @@
+{
+ "_meta": {
+  "source": "Google Ads Keyword Planner via Pipeboard (get_google_ads_keyword_ideas), customer 1172710099, English, Google Search, last-12-month averages (banded). null = not returned for that geo.",
+  "pulled": "2026-10-07",
+  "geos": {
+   "ww": "all locations",
+   "in": "India",
+   "intl6": "US+GB+AU+IL+DE+FR"
+  }
+ },
+ "crampons-and-mountaineering-boots": {
+  "crampons": {
+   "ww": 165000,
+   "in": 4400,
+   "intl6": 110000,
+   "ads_competition": "HIGH"
+  },
+  "what are crampons": {
+   "ww": 1900,
+   "in": 90,
+   "intl6": 1600,
+   "ads_competition": "LOW"
+  },
+  "what is a crampon": {
+   "ww": 1000,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "mountaineering boots": {
+   "ww": 14800,
+   "in": 590,
+   "intl6": 8100,
+   "ads_competition": "HIGH"
+  },
+  "microspikes vs crampons": {
+   "ww": 4400,
+   "in": 70,
+   "intl6": 3600,
+   "ads_competition": "HIGH"
+  },
+  "crampons for hiking": {
+   "ww": 5400,
+   "in": 70,
+   "intl6": 3600,
+   "ads_competition": "HIGH"
+  },
+  "crampons for shoes": {
+   "ww": 4400,
+   "in": 1000,
+   "intl6": 2400,
+   "ads_competition": "HIGH"
+  },
+  "snow spikes for shoes": {
+   "ww": 4400,
+   "in": 720,
+   "intl6": 2400,
+   "ads_competition": "HIGH"
+  },
+  "b2 boots": {
+   "ww": 2900,
+   "in": 20,
+   "intl6": 1900,
+   "ads_competition": "HIGH"
+  },
+  "b3 mountaineering boots": {
+   "ww": 480,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "b1 b2 b3 boots": {
+   "ww": 40,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "crampon types": {
+   "ww": 480,
+   "in": null,
+   "intl6": 320,
+   "ads_competition": "HIGH"
+  },
+  "crampon boot compatibility": {
+   "ww": 320,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "semi automatic crampons": {
+   "ww": 1300,
+   "in": 10,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "how do crampons work": {
+   "ww": 40,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "how to wear crampons": {
+   "ww": 30,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "MEDIUM"
+  },
+  "alpine boots": {
+   "ww": 4400,
+   "in": 110,
+   "intl6": 2900,
+   "ads_competition": "HIGH"
+  },
+  "best mountaineering boots": {
+   "ww": 880,
+   "in": 20,
+   "intl6": 590,
+   "ads_competition": "HIGH"
+  },
+  "snow boots for trekking": {
+   "ww": 30,
+   "in": 20,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "ice crampons": {
+   "ww": 1600,
+   "in": 50,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  }
+ },
+ "ice-axe-guide": {
+  "ice axe": {
+   "ww": 27100,
+   "in": 1900,
+   "intl6": 14800,
+   "ads_competition": "HIGH"
+  },
+  "mountaineering ice axe": {
+   "ww": 1300,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "self arrest": {
+   "ww": 880,
+   "in": 140,
+   "intl6": 480,
+   "ads_competition": "LOW"
+  },
+  "ice axe self arrest": {
+   "ww": 590,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "how to use an ice axe": {
+   "ww": 260,
+   "in": 10,
+   "intl6": 210,
+   "ads_competition": "LOW"
+  },
+  "ice axe uses": {
+   "ww": 260,
+   "in": 30,
+   "intl6": 210,
+   "ads_competition": "HIGH"
+  },
+  "ice axe length": {
+   "ww": 210,
+   "in": null,
+   "intl6": 140,
+   "ads_competition": "HIGH"
+  },
+  "ice axe parts": {
+   "ww": 140,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  }
+ },
+ "what-to-wear-himalayan-climb": {
+  "layering for hiking": {
+   "ww": 1000,
+   "in": 110,
+   "intl6": 720,
+   "ads_competition": "HIGH"
+  },
+  "layering system": {
+   "ww": 720,
+   "in": null,
+   "intl6": 320,
+   "ads_competition": "LOW"
+  },
+  "base layer mid layer outer layer": {
+   "ww": 170,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "MEDIUM"
+  },
+  "hiking base layer": {
+   "ww": 2400,
+   "in": 210,
+   "intl6": 1600,
+   "ads_competition": "HIGH"
+  },
+  "hiking mid layer": {
+   "ww": 720,
+   "in": 30,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "mountaineering clothing": {
+   "ww": 4400,
+   "in": null,
+   "intl6": 2400,
+   "ads_competition": "HIGH"
+  },
+  "climbing clothes": {
+   "ww": 2900,
+   "in": null,
+   "intl6": 1900,
+   "ads_competition": "HIGH"
+  },
+  "mountaineering jacket": {
+   "ww": 5400,
+   "in": null,
+   "intl6": 2900,
+   "ads_competition": "HIGH"
+  },
+  "mountaineering pants": {
+   "ww": 2400,
+   "in": null,
+   "intl6": 1000,
+   "ads_competition": "HIGH"
+  },
+  "how to dress for cold weather hiking": {
+   "ww": 110,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "what to wear hiking in snow": {
+   "ww": 70,
+   "in": null,
+   "intl6": 40,
+   "ads_competition": "HIGH"
+  },
+  "high altitude clothing": {
+   "ww": 70,
+   "in": 20,
+   "intl6": 40,
+   "ads_competition": "HIGH"
+  },
+  "what to wear mountaineering": {
+   "ww": 20,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "trekking clothes": {
+   "ww": null,
+   "in": 1300,
+   "intl6": null,
+   "ads_competition": null
+  },
+  "trekking jacket": {
+   "ww": null,
+   "in": 5400,
+   "intl6": null,
+   "ads_competition": null
+  },
+  "what to wear in manali in winter": {
+   "ww": 10,
+   "in": 10,
+   "intl6": null,
+   "ads_competition": "LOW"
+  }
+ }
+}
