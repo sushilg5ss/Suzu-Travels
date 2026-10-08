@@ -110,6 +110,11 @@ One-line content only (wpautop). WP Rocket: meta-only changes don't purge — re
 | `/char-dham-yatra-for-nri/` (11413) | char dham yatra for nri | Char Dham page |
 Our pages own the **informational** heads ("12 jyotirlinga", "naina devi", "char dham yatra", "amarnath yatra", "somnath temple"…). Focus keywords per page: `research/keyword-plan.md` §4.
 
+**Redirects & archives set on 8 Oct 2026 (see LOG):**
+- `/char-dham-yatra/` → Rank Math Redirections rule, **302** to `/pilgrimage-tours/#chardham`. It used to be a WordPress 404 *guess* that sent the 90,500/mo head term to the NRI page. When BACKLOG row 13 (`/pilgrimage-tours/char-dham-yatra/`) is live, the Page Builder edits this rule in wp-admin › Rank Math › Redirections to **301 → the new guide** (the one allowed redirect edit; no other redirect changes).
+- `/destination/jyotirlinga-tour-packages/` (suzu_destination term 212) is **noindex, follow** (term meta `rank_math_robots`) because it held 1 package and competed with 10876. Re-index it (`["index","follow"]`) only when it lists 3+ packages. Do not link to it from our pages meanwhile.
+- WordPress trap: a URL that doesn't exist is 301-guessed to any slug that starts with it (`x-redirect-by: WordPress`). Before claiming a short slug, `curl -sI` it; an explicit Rank Math rule or a real page overrides the guess.
+
 ## 10. Quality gate (SEO & QA checks every live page)
 200 with and without cache-buster · one H1 · robots index · canonical = URL · Rank Math title ≤ 60, description 110–155 · `cmp_live.py` 0/0 · JSON-LD parses · no ₹, no competitor links, no fact traps · every internal link, video and poster 200 (`tools/linkcheck.py`) · hero plays at 390 px · no overflow at 390 / 1440 · dates on the page still current (anything "not announced yet" re-checked weekly).
 
