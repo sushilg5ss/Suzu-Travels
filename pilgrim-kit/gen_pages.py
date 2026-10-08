@@ -40,7 +40,8 @@ PKG = {
 
 
 def e(s):
-    return html.escape(str(s), quote=True)
+    # " - " -> " – ": WordPress' wptexturize does this on output anyway, so the build matches live (cmp_live 0 diffs)
+    return html.escape(str(s), quote=True).replace(" - ", " – ")
 
 
 def wa(text):
