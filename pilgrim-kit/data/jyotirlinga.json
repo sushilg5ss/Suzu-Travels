@@ -1,0 +1,2114 @@
+[
+  {
+    "order": 1,
+    "slug": "somnath-jyotirlinga",
+    "name_en": "Somnath Jyotirlinga",
+    "name_hi": "सोमनाथ ज्योतिर्लिंग",
+    "temple_name": "Shree Somnath Temple (Somnath Mahadev Mandir)",
+    "town": "Prabhas Patan (near Veraval)",
+    "district": "Gir Somnath",
+    "state": "Gujarat",
+    "lat": 20.888,
+    "lon": 70.4014,
+    "coord_source": "https://en.wikipedia.org/wiki/Somnath_Temple",
+    "river_or_sea": "Arabian Sea shore; Triveni Sangam (Hiran, Kapila, Saraswati) nearby",
+    "altitude_m": null,
+    "legend_summary": "According to the Shiva Purana (Koti Rudra Samhita) and the Prabhas Khanda of the Skanda Purana, the Moon god Chandra married the twenty-seven daughters of Daksha Prajapati but showered his love on Rohini alone. The neglected sisters complained, and when Chandra ignored Daksha's warnings, the angry father cursed him to waste away. As the Moon's glow faded, the worlds suffered. On Brahma's advice Chandra came to Prabhas on the Saurashtra coast and worshipped Shiva with deep devotion. Shiva softened rather than cancelled the curse: the Moon would wane for one fortnight and grow again in the next. Grateful, Chandra, also called Soma, begged Shiva to remain at Prabhas, and the shrine came to be known as Somnath, the Lord of Soma.",
+    "story_beats": [
+      "Daksha cursed the Moon to fade",
+      "Chandra prayed to Shiva at Prabhas",
+      "Shiva eased the curse: wax, wane",
+      "Light returned and Somnath rose"
+    ],
+    "history_facts": [
+      {
+        "date": "January 1026",
+        "fact": "Mahmud of Ghazni raided the temple and desecrated the linga (two Persian sources give 1027).",
+        "source": "https://en.wikipedia.org/wiki/Somnath_Temple"
+      },
+      {
+        "date": "c. 1782-1783",
+        "fact": "Queen Ahilyabai Holkar built a separate smaller Somnath temple near the ruins so that worship could continue (the Trust site says 1782; Wikipedia gives c. 1783 or 1785/86).",
+        "source": "https://somnath.org/somnath-darshan/"
+      },
+      {
+        "date": "12-13 November 1947",
+        "fact": "Sardar Vallabhbhai Patel visited the ruins and resolved to rebuild the temple (Wikipedia dates his order to 12 Nov 1947; the Somnath Trust says he visited the ruins on 13 Nov 1947).",
+        "source": "https://somnath.org/somnath-darshan/"
+      },
+      {
+        "date": "11 May 1951",
+        "fact": "President Dr Rajendra Prasad performed the Pran-Pratishtha of the jyotirlinga in the rebuilt temple, at K. M. Munshi's invitation.",
+        "source": "https://somnath.org/somnath-darshan/"
+      },
+      {
+        "date": "10-11 January 2026",
+        "fact": "The 'Somnath Swabhiman Parv' marked 1,000 years since the 1026 raid; PM Narendra Modi attended.",
+        "source": "https://www.theweek.in/news/india/2026/01/10/what-is-the-somnath-swabhiman-parv-inside-the-grand-event-attended-by-pm-modi.amp.html"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://somnath.org/faq/",
+      "temple_hours": "06:00-22:00 daily",
+      "aartis": [
+        {
+          "name": "Morning Aarti",
+          "time": "07:00"
+        },
+        {
+          "name": "Madhyahna (noon) Aarti",
+          "time": "12:00"
+        },
+        {
+          "name": "Sandhya (evening) Aarti",
+          "time": "19:00"
+        }
+      ],
+      "special": "Sound & Light Show 'Jay Somnath' nightly except in monsoon. Official FAQ says 20:00-21:00; the Trust's Somnath Darshan page says 19:45-20:45 - confirm locally. Entry to temple is free.",
+      "online_booking": "Pooja vidhi/donation, guest-house rooms, prasad and live darshan only via somnath.org (Trust warns of WhatsApp/phone booking frauds). Rooms: https://somnath.org/guesthouse/guesthouse-booking-new/",
+      "dress_code": "Sarees, dhotis, trousers, T-shirts, skirts allowed; mini skirts and 'disrespectful dress' not permitted.",
+      "rules": "Mobiles, cameras, smartwatches and all electronic gadgets prohibited (free cloakroom/lockers). Photography prohibited. Footwear removed (free shoe house). Wheelchairs/golf carts and lift for elderly/disabled."
+    },
+    "open_season": "All year",
+    "best_months": "October-March (cooler, dry coastal weather) - editorial recommendation; avoid monsoon if you want the Sound & Light Show.",
+    "festivals": [
+      "Mahashivratri",
+      "Shravan month",
+      "Kartik Purnima Fair (5 days)",
+      "Somnath Sthapana Divas (11 May)",
+      "Golokdham Utsav"
+    ],
+    "festivals_source": "https://somnath.org/faq/",
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Diu Airport",
+          "km": 85
+        },
+        {
+          "name": "Rajkot",
+          "km": 200
+        },
+        {
+          "name": "Ahmedabad (Sardar Vallabhbhai Patel Intl)",
+          "km": 390
+        }
+      ],
+      "railway": [
+        {
+          "name": "Somnath railway station",
+          "km": 0.5
+        },
+        {
+          "name": "Veraval Junction",
+          "km": 7
+        }
+      ],
+      "road": "Well connected by state highway/bus to Veraval, Junagadh, Rajkot and Ahmedabad. Trust runs a 'Tirth Darshan' bus to nearby shrines from the main gate at 08:30 and 15:30 (nominal fare).",
+      "source": "https://somnath.org/faq/"
+    },
+    "nearby": [
+      {
+        "name": "Bhalka Tirth (site of Krishna's final departure, by tradition)",
+        "km": "within 20 km (Trust)"
+      },
+      {
+        "name": "Triveni Sangam Ghat",
+        "km": "within 20 km (Trust)"
+      },
+      {
+        "name": "Sasan Gir (Asiatic lion sanctuary)",
+        "km": 65
+      },
+      {
+        "name": "Diu (fort, Nagoa beach)",
+        "km": 85
+      },
+      {
+        "name": "Junagadh / Mount Girnar",
+        "km": 90
+      },
+      {
+        "name": "Dwarka (Dwarkadhish; Nageshwar Jyotirlinga beyond)",
+        "km": 230
+      }
+    ],
+    "nearby_source": "https://somnath.org/faq/",
+    "official_site": "https://somnath.org",
+    "sources": [
+      {
+        "title": "Shree Somnath Trust - FAQs",
+        "url": "https://somnath.org/faq/"
+      },
+      {
+        "title": "Shree Somnath Trust - Somnath Darshan",
+        "url": "https://somnath.org/somnath-darshan/"
+      },
+      {
+        "title": "Somnath Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Somnath_Temple"
+      },
+      {
+        "title": "The Week - What is the Somnath Swabhiman Parv (10 Jan 2026)",
+        "url": "https://www.theweek.in/news/india/2026/01/10/what-is-the-somnath-swabhiman-parv-inside-the-grand-event-attended-by-pm-modi.amp.html"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "What are the Somnath temple darshan and aarti timings?",
+        "a": "Darshan 6:00 AM to 10:00 PM; aartis at 7:00 AM, 12:00 noon and 7:00 PM (Shree Somnath Trust FAQ, checked 8 Oct 2026)."
+      },
+      {
+        "q": "Can I take my mobile phone inside Somnath temple?",
+        "a": "No. Mobiles, cameras, smartwatches and other gadgets are not allowed; free lockers are available at the cloakroom."
+      },
+      {
+        "q": "What time is the Somnath Sound and Light Show?",
+        "a": "It runs every night except in the monsoon. The Trust's FAQ lists 8-9 PM while another Trust page lists 7:45-8:45 PM, so confirm on arrival."
+      },
+      {
+        "q": "Is there a dress code at Somnath?",
+        "a": "Normal modest clothing is fine; the Trust says mini skirts and disrespectful clothing are not permitted."
+      },
+      {
+        "q": "Which is the nearest airport to Somnath?",
+        "a": "Diu (about 85 km). Rajkot is about 200 km and Ahmedabad about 390 km. Somnath railway station is 0.5 km and Veraval Junction 7 km from the temple."
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "slug": "mallikarjuna-jyotirlinga",
+    "name_en": "Mallikarjuna Jyotirlinga (Srisailam)",
+    "name_hi": "मल्लिकार्जुन ज्योतिर्लिंग",
+    "temple_name": "Sri Bhramaramba Mallikarjuna Swamy Varla Devasthanam, Srisailam",
+    "town": "Srisailam",
+    "district": "Nandyal",
+    "state": "Andhra Pradesh",
+    "lat": 16.0742,
+    "lon": 78.8681,
+    "coord_source": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam",
+    "river_or_sea": "Krishna River (called Patala Ganga here; reached by 852 steps)",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) relates that Shiva and Parvati set their sons a race around the world, the winner to marry first. Kartikeya sped away on his peacock, but Ganesha simply walked around his parents, calling them his whole universe, and was declared the winner and married. When Kartikeya returned and learned what had happened, he felt wronged and withdrew to the Krauncha mountain. His grieving parents followed and settled close by on the Srisailam hill so they could stay near him. It is believed Shiva shines here as a Jyotirlinga alongside Parvati as Bhramaramba. Popular tradition adds that Shiva visits as Arjuna on new-moon days and Parvati as Mallika on full-moon days, giving the name Mallikarjuna.",
+    "story_beats": [
+      "Two brothers raced around the world",
+      "Ganesha circled his parents and won",
+      "Hurt Kartikeya left for Krauncha hill",
+      "Shiva and Parvati followed to Srisailam"
+    ],
+    "history_facts": [
+      {
+        "date": "c. 2nd century CE",
+        "fact": "Satavahana-era inscriptional evidence indicates the shrine already existed.",
+        "source": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+      },
+      {
+        "date": "14th-15th century",
+        "fact": "Most later additions, including the Mukha Mandapa, were made under Vijayanagara ruler Harihara I and his successors.",
+        "source": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+      },
+      {
+        "date": "Tradition",
+        "fact": "The goddess Bhramaramba here is counted among the 18 Maha Shakti Peethas, so Srisailam is both a Jyotirlinga and a Shakti Peetha.",
+        "source": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+      },
+      {
+        "date": "10 December 2024",
+        "fact": "Devasthanam reinstated Sparsha (touch) Darshanam on busy days in three slots (7:30-9:30 AM, 11:45 AM-1:30 PM, 8:30-10 PM), tickets online only.",
+        "source": "https://deccanchronicle.com/news/srisailam-temple-revises-darshan-timing-1845685"
+      },
+      {
+        "date": "3 August 2026",
+        "fact": "Temple EO announced no Sparsha Darshan in morning/afternoon on Saturdays, Sundays and Mondays (night slot only on those days); three slots continue on other days.",
+        "source": "https://www.deccanchronicle.com/amp/southern-states/andhra-pradesh/srisailam-revises-darshan-timings-to-ease-pilgrim-rush-1976246"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://deccanchronicle.com/news/srisailam-temple-revises-darshan-timing-1845685 ; https://www.deccanchronicle.com/amp/southern-states/andhra-pradesh/srisailam-revises-darshan-timings-to-ease-pilgrim-rush-1976246 (official site srisailadevasthanam.org is JavaScript-only and could not be read)",
+      "temple_hours": "Alankara (general) darshan slots reported Dec 2024: 04:30-07:30, 09:30-11:45, 13:30-16:00, 17:30-20:30; Alaya Suddhi 16:00-17:30. Not confirmed on official site - verify.",
+      "aartis": null,
+      "aartis_note": "Daily seva/aarti times (Suprabhatam, Mahamangala Harathi etc.) could not be verified from the official site on 2026-10-08.",
+      "special": "Sparsha Darshan (devotees touch the linga): slots 07:30-09:30, 11:45-13:30, 20:30-22:00 (Dec 2024 report); since Aug 2026 only the night slot on Sat/Sun/Mon. Tickets sold online only.",
+      "online_booking": "Sparsha darshan, sevas and accommodation: https://www.srisailadevasthanam.org",
+      "dress_code": null,
+      "dress_code_note": "Traditional attire is widely reported as mandatory for Sparsha Darshan, but this could not be verified on the official site.",
+      "rules": null
+    },
+    "open_season": "All year",
+    "best_months": "October-February (editorial); Kartika masam (Oct-Nov) and Mahashivratri bring heavy crowds.",
+    "festivals": [
+      "Mahashivratri Brahmotsavam",
+      "Kartika Masam (especially Mondays)",
+      "Ugadi",
+      "Dasara / Navaratri (Bhramaramba)"
+    ],
+    "festivals_source": "https://deccanchronicle.com/amp/nation/in-other-news/041223/kartika-masam-sunday-rush-at-srisailam-shrine.html (Kartika rush); others: general tradition - verify dates with Devasthanam",
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Hyderabad Rajiv Gandhi International (Hyderabad city ~213 km per Wikipedia; airport approx. 200 km by road)",
+          "km": 200
+        }
+      ],
+      "railway": [
+        {
+          "name": "Markapur Road",
+          "km": 85
+        },
+        {
+          "name": "Nandyal / Kurnool",
+          "km": 180
+        }
+      ],
+      "road": "Ghat road through the Nallamala forest from Hyderabad (via Dornala side from AP). Forest stretches may have night-time vehicle restrictions (widely reported; unverified).",
+      "source": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+    },
+    "nearby": [
+      {
+        "name": "Patala Ganga (Krishna river ghat, 852 steps)",
+        "km": "approx. 1"
+      },
+      {
+        "name": "Bhramaramba Devi shrine (Shakti Peetha, same complex)",
+        "km": 0
+      },
+      {
+        "name": "Sakshi Ganapati temple",
+        "km": "approx. 3"
+      },
+      {
+        "name": "Srisailam Dam",
+        "km": "approx. 10-15 (unverified)"
+      },
+      {
+        "name": "Akkamahadevi Caves (boat from reservoir)",
+        "km": "approx. 10 by boat (unverified)"
+      }
+    ],
+    "official_site": "https://www.srisailadevasthanam.org",
+    "sources": [
+      {
+        "title": "Mallikarjuna Temple, Srisailam - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+      },
+      {
+        "title": "Deccan Chronicle - Srisailam Temple Revises Darshan Timing (10 Dec 2024)",
+        "url": "https://deccanchronicle.com/news/srisailam-temple-revises-darshan-timing-1845685"
+      },
+      {
+        "title": "Deccan Chronicle - Srisailam revises darshan timings to ease pilgrim rush (3 Aug 2026)",
+        "url": "https://www.deccanchronicle.com/amp/southern-states/andhra-pradesh/srisailam-revises-darshan-timings-to-ease-pilgrim-rush-1976246"
+      },
+      {
+        "title": "Srisaila Devasthanam (official booking portal)",
+        "url": "https://www.srisailadevasthanam.org"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "Can devotees touch the Mallikarjuna Jyotirlinga?",
+        "a": "Yes, through the paid Sparsha Darshan, booked online. Since August 2026 it is offered only in the night slot on Saturdays, Sundays and Mondays; on other days there are three slots."
+      },
+      {
+        "q": "Which state is Mallikarjuna Jyotirlinga in?",
+        "a": "Andhra Pradesh - Srisailam in Nandyal district, on the Krishna river in the Nallamala hills."
+      },
+      {
+        "q": "Is Srisailam both a Jyotirlinga and a Shakti Peetha?",
+        "a": "Yes. Mallikarjuna is a Jyotirlinga and the goddess Bhramaramba in the same complex is counted among the 18 Maha Shakti Peethas."
+      },
+      {
+        "q": "What is the nearest railway station to Srisailam?",
+        "a": "Markapur Road (about 85 km); Nandyal and Kurnool are about 180 km away. Most pilgrims drive from Hyderabad (about 200+ km)."
+      },
+      {
+        "q": "What are Srisailam darshan timings?",
+        "a": "General (Alankara) darshan has been reported in slots from 4:30 AM to 8:30 PM with breaks; timings are revised for crowds, so check srisailadevasthanam.org before travelling."
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "slug": "mahakaleshwar-jyotirlinga",
+    "name_en": "Mahakaleshwar Jyotirlinga",
+    "name_hi": "महाकालेश्वर ज्योतिर्लिंग",
+    "temple_name": "Shri Mahakaleshwar Temple, Ujjain",
+    "town": "Ujjain",
+    "district": "Ujjain",
+    "state": "Madhya Pradesh",
+    "lat": 23.1828,
+    "lon": 75.7683,
+    "coord_source": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga",
+    "river_or_sea": "Shipra (Kshipra) River",
+    "altitude_m": null,
+    "legend_summary": "According to the Shiva Purana (Koti Rudra Samhita), a learned Brahmin named Vedapriya lived in Avanti, today's Ujjain, with four devout sons who worshipped an earthen linga every day. The demon Dushana, empowered by a boon from Brahma, swept down from the Ratnamala hills, tormenting priests and stopping sacred rites. The family refused to abandon their prayers. As the demon closed in on them, the ground beside their linga split open and Shiva emerged in his terrifying Mahakala form, reducing Dushana to ashes with a mere roar. The grateful devotees begged him to stay and guard the city forever, and it is believed he remained as the self-manifested, south-facing Mahakaleshwar. Another tradition links the shrine to King Chandrasena and the young cowherd Shrikhar.",
+    "story_beats": [
+      "A demon terrorised the city of Avanti",
+      "Brahmins kept chanting Shiva's name",
+      "Mahakal burst from the earth",
+      "Ujjain's eternal guardian took his seat"
+    ],
+    "history_facts": [
+      {
+        "date": "1234-35",
+        "fact": "Sultan Iltutmish of Delhi destroyed the temple complex during a raid on Ujjain.",
+        "source": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+      },
+      {
+        "date": "18th century",
+        "fact": "The temple was rebuilt under Maratha (Scindia) rule by Diwan Ramachandra Sukthankar.",
+        "source": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+      },
+      {
+        "date": "Annual (Nag Panchami)",
+        "fact": "The Nagchandreshwar idol on the temple's top storey opens for darshan only one day a year, on Nag Panchami.",
+        "source": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+      },
+      {
+        "date": "11 October 2022",
+        "fact": "PM Narendra Modi dedicated Phase I of the 'Shri Mahakal Lok' corridor to the nation.",
+        "source": "https://pmindia.gov.in/en/eventgallery/pm-in-ujjain-madhya-pradesh-october-11-2022"
+      },
+      {
+        "date": "22 June 2026",
+        "fact": "Temple committee enforced a rule allowing one Bhasma Aarti permission per mobile number every 3 months (90 days), including VIP-protocol visitors.",
+        "source": "https://navbharatlive.com/madhya-pradesh/ujjain/mahakal-temple-implements-new-booking-rule-for-bhasma-aarti-devotees-1815340.html"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.mptourism.com/bhasm-aarti-at-mahakaleshwar-and-ujjain.html (MP Tourism, govt). Official site shrimahakaleshwar.mp.gov.in / shrimahakaleshwar.com could not be fetched (TLS certificate error) on 2026-10-08.",
+      "temple_hours": null,
+      "temple_hours_note": "Not verified from an official source. Travel guides (e.g. ujjaindarshan.com - unverified) cite approx. 04:00-23:00.",
+      "aartis": [
+        {
+          "name": "Bhasma Aarti",
+          "time": "04:00 (starts; ~2 hours per travel guides - unverified)",
+          "verified": true,
+          "source": "https://www.mptourism.com/bhasm-aarti-at-mahakaleshwar-and-ujjain.html"
+        },
+        {
+          "name": "Naivedya / morning aarti",
+          "time": "approx. 07:00 (unverified)",
+          "verified": false
+        },
+        {
+          "name": "Bhog aarti",
+          "time": "approx. 10:00 (unverified)",
+          "verified": false
+        },
+        {
+          "name": "Sandhya aarti",
+          "time": "approx. 17:00 (unverified)",
+          "verified": false
+        },
+        {
+          "name": "Shayan aarti",
+          "time": "approx. 22:30 (unverified)",
+          "verified": false
+        }
+      ],
+      "aartis_note": "Only the 4 AM Bhasma Aarti start is confirmed by a government source; other times are from travel agencies (ujjaindarshan.com) and are flagged unverified. Times shift seasonally.",
+      "special": "Bhasma Aarti needs prior booking (MP Tourism advises about a month ahead) at https://shrimahakaleshwar.com/bhasmarti ; arrive an hour or more early. Sheeghra (fast) darshan: https://shrimahakaleshwar.com/sheeghra-darshan . Since June 2026 one Bhasma Aarti permission per mobile number per 90 days.",
+      "online_booking": "https://shrimahakaleshwar.com (Bhasma Aarti, Sheeghra Darshan)",
+      "dress_code": "For worship at the inner sanctum (incl. Bhasma Aarti): men dhoti, women saree (MP Tourism).",
+      "rules": "Mobiles and cameras not allowed - deposit in lockers. MP Tourism notes garbhagriha entry was closed with the ritual shown on screens (policy changes often - verify). The ash is now prepared from cow dung, not taken from funeral pyres."
+    },
+    "open_season": "All year",
+    "best_months": "October-March (editorial); Shravan Mondays and Mahashivratri are spectacular but very crowded.",
+    "festivals": [
+      "Mahashivratri (Shiv Navratri)",
+      "Shravan-Bhadrapad Mondays - Mahakal Sawari procession",
+      "Nag Panchami (Nagchandreshwar darshan)",
+      "Kartik month"
+    ],
+    "festivals_source": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga",
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Devi Ahilyabai Holkar Airport, Indore",
+          "km": "approx. 55"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Ujjain Junction",
+          "km": "approx. 2"
+        }
+      ],
+      "road": "Indore-Ujjain approx. 55 km by highway; Omkareshwar is about 140 km (via Indore).",
+      "source": "Omkareshwar Trust FAQ for Ujjain-Omkareshwar 140 km (https://www.shriomkareshwar.org/FAQ.aspx); other distances approximate (editorial, not from an official source)"
+    },
+    "nearby": [
+      {
+        "name": "Harsiddhi Mata temple",
+        "km": "approx. 0.5"
+      },
+      {
+        "name": "Ram Ghat on the Shipra",
+        "km": "approx. 1"
+      },
+      {
+        "name": "Kal Bhairav temple",
+        "km": "approx. 5"
+      },
+      {
+        "name": "Sandipani Ashram",
+        "km": "approx. 5"
+      },
+      {
+        "name": "Omkareshwar Jyotirlinga",
+        "km": 140
+      }
+    ],
+    "official_site": "https://shrimahakaleshwar.mp.gov.in (booking: https://shrimahakaleshwar.com)",
+    "sources": [
+      {
+        "title": "MP Tourism - Bhasm Aarti at Mahakaleshwar",
+        "url": "https://www.mptourism.com/bhasm-aarti-at-mahakaleshwar-and-ujjain.html"
+      },
+      {
+        "title": "Mahakaleshwar Jyotirlinga - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+      },
+      {
+        "title": "PM India - PM in Ujjain, 11 Oct 2022 (Mahakal Lok)",
+        "url": "https://pmindia.gov.in/en/eventgallery/pm-in-ujjain-madhya-pradesh-october-11-2022"
+      },
+      {
+        "title": "Navbharat Live - Mahakal temple new Bhasma Aarti booking rule (22 Jun 2026)",
+        "url": "https://navbharatlive.com/madhya-pradesh/ujjain/mahakal-temple-implements-new-booking-rule-for-bhasma-aarti-devotees-1815340.html"
+      },
+      {
+        "title": "Ujjain Darshan - Mahakaleshwar timings (travel agency; UNVERIFIED)",
+        "url": "https://www.ujjaindarshan.com/mahakaleshwar-temple-timings.html"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "What is the Bhasma Aarti timing at Mahakaleshwar and how do I book it?",
+        "a": "It begins at about 4:00 AM daily. Book online in advance on the temple's official portal (shrimahakaleshwar.com/bhasmarti) - MP Tourism suggests about a month ahead - and reach well before the start. Since June 2026 a mobile number can get permission only once in 90 days."
+      },
+      {
+        "q": "What is the dress code for Bhasma Aarti?",
+        "a": "For worship at the sanctum, men should wear a dhoti and women a saree (MP Tourism)."
+      },
+      {
+        "q": "Why is Mahakaleshwar called Dakshinamukhi?",
+        "a": "The linga faces south - the direction associated with death - which tradition says suits Shiva as Mahakala, lord of time and death. It is the only south-facing one among the 12."
+      },
+      {
+        "q": "Is the ash in Bhasma Aarti from cremation pyres?",
+        "a": "Not today. MP Tourism notes that it was once said to come from a funeral pyre but is now prepared from cow dung."
+      },
+      {
+        "q": "How far is Omkareshwar from Mahakaleshwar?",
+        "a": "About 140 km by road via Indore (Omkareshwar Mandir Trust FAQ)."
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "slug": "omkareshwar-jyotirlinga",
+    "name_en": "Omkareshwar Jyotirlinga",
+    "name_hi": "ओंकारेश्वर ज्योतिर्लिंग",
+    "temple_name": "Shri Omkareshwar Mandir (with Mamleshwar / Amaleshwar on the south bank)",
+    "town": "Omkareshwar (Mandhata island)",
+    "district": "Khandwa",
+    "state": "Madhya Pradesh",
+    "lat": 22.2456,
+    "lon": 76.1511,
+    "coord_source": "https://en.wikipedia.org/wiki/Omkareshwar_Temple",
+    "river_or_sea": "Narmada River (island at the Narmada-Kaveri confluence)",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) relates that the sage Narada once praised Mount Meru in the presence of the Vindhya mountain, wounding Vindhya's pride. Seeking greatness, the mountain deity went to the banks of the Narmada, shaped a linga from earth and worshipped Shiva with long, single-minded penance. Pleased, Shiva appeared and granted his wish, and at the request of the gods and sages agreed to stay here in two aspects, Omkareshwar and Amaleshwar (Mamleshwar). Another tradition credits Mandhata, a king of the Ikshvaku line, whose devotion gave the island its name. The island, wrapped by the Narmada, is believed to resemble the sacred syllable Om, which is why Shiva here is hailed as the Lord of Omkara.",
+    "story_beats": [
+      "Proud Vindhya longed for greatness",
+      "He shaped a linga by Narmada",
+      "Shiva appeared in two forms",
+      "An Om-shaped island became holy"
+    ],
+    "history_facts": [
+      {
+        "date": "11th century CE",
+        "fact": "Temple built under the Paramara kings of Malwa; later administered by Chauhan rulers.",
+        "source": "https://en.wikipedia.org/wiki/Omkareshwar_Temple"
+      },
+      {
+        "date": "18th century",
+        "fact": "Rebuilt by the Holkars - begun under Gautama Bai Holkar and completed by Ahilyabai Holkar.",
+        "source": "https://en.wikipedia.org/wiki/Omkareshwar_Temple"
+      },
+      {
+        "date": "21 September 2023",
+        "fact": "MP CM Shivraj Singh Chouhan unveiled the 108-ft 'Statue of Oneness' of Adi Shankaracharya on Mandhata island (Ekatma Dham project).",
+        "source": "https://thehitavada.com/Encyc/2023/9/22/MP-CM-unveils-108-ft-Statue-of-Oneness-of-Adi-Shankaracharya.html"
+      },
+      {
+        "date": "2026 (current)",
+        "fact": "Trust offers optional paid 'Shighra Darshan' at Rs 300 per person in a 2-hour slot; normal darshan is free.",
+        "source": "https://www.shriomkareshwar.org/VisheshDarshan.aspx"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.shriomkareshwar.org/Schedules.aspx",
+      "temple_hours": "Darshan 05:00-22:30 with breaks (closed before 05:00, after 22:30, and during aarti/shringar periods)",
+      "aartis": [
+        {
+          "name": "Mangal Aarti & Naivedya Bhog",
+          "time": "04:30-05:00"
+        },
+        {
+          "name": "Mangal Darshan",
+          "time": "05:00-12:20"
+        },
+        {
+          "name": "Madhyanha Bhog",
+          "time": "12:20-13:15"
+        },
+        {
+          "name": "Madhyanha Darshan",
+          "time": "13:15-16:00"
+        },
+        {
+          "name": "Sayamkalin Shringar",
+          "time": "16:00-16:30 (one page says 16:00-16:15)"
+        },
+        {
+          "name": "Shringar Darshan",
+          "time": "16:30-21:30"
+        },
+        {
+          "name": "Shayan Aarti",
+          "time": "21:30-22:00"
+        },
+        {
+          "name": "Shayan Darshan",
+          "time": "22:00-22:30"
+        }
+      ],
+      "special": "Shighra Darshan Rs 300/person, 2-hour slot, same-day booking, valid once for the slot. Narmada Aarti at Kotitirth Ghat every evening (free to watch; Rs 1,500 to perform, book 1 day ahead). Somvar Sawari procession every Monday (royal Sawari in Shravan). Offerings like bilva, flowers, coconut may sometimes be barred inside the garbhagriha.",
+      "online_booking": "https://www.shriomkareshwar.org (Shighra Darshan, Abhishek, Narmada Pujan); bookings non-refundable, one-time reschedule via helpline.",
+      "dress_code": "No official dress code; modest attire recommended (Trust FAQ).",
+      "rules": "Carry printed ticket and photo ID (Aadhaar or similar) for booked services."
+    },
+    "open_season": "All year",
+    "best_months": "October-March (editorial). Monsoon (Jul-Sep) can raise the Narmada and affect boats/ghats.",
+    "festivals": [
+      "Mahashivratri",
+      "Shravan Mondays (royal Somvar Sawari)",
+      "Kartik Purnima"
+    ],
+    "festivals_source": "https://www.shriomkareshwar.org/FAQ.aspx (Somvar Sawari); others general tradition",
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Devi Ahilyabai Holkar International Airport, Indore",
+          "km": 77
+        }
+      ],
+      "railway": [
+        {
+          "name": "Sanawad",
+          "km": 12
+        },
+        {
+          "name": "Khandwa Junction",
+          "km": 72
+        }
+      ],
+      "road": "Taxi from Indore or Khandwa; road via Sanawad from Khandwa/Burhanpur side. Mortakka bus stand 12 km with buses to Indore, Ujjain, Khargone, Khandwa. Ujjain is 140 km.",
+      "source": "https://www.shriomkareshwar.org/HowToReach.aspx"
+    },
+    "nearby": [
+      {
+        "name": "Mamleshwar (Amaleshwar) temple, south bank",
+        "km": "approx. 1"
+      },
+      {
+        "name": "Ekatma Dham - Statue of Oneness (Adi Shankaracharya)",
+        "km": "on Mandhata island, approx. 1-2"
+      },
+      {
+        "name": "Narmada-Kaveri Sangam and Parikrama path",
+        "km": "on the island"
+      },
+      {
+        "name": "Maheshwar (Ahilyabai's capital, ghats)",
+        "km": "approx. 65"
+      },
+      {
+        "name": "Mahakaleshwar, Ujjain",
+        "km": 140
+      }
+    ],
+    "official_site": "https://www.shriomkareshwar.org",
+    "sources": [
+      {
+        "title": "Shri Omkareshwar Mandir Trust - Time Table",
+        "url": "https://www.shriomkareshwar.org/Schedules.aspx"
+      },
+      {
+        "title": "Shri Omkareshwar Mandir Trust - FAQ",
+        "url": "https://www.shriomkareshwar.org/FAQ.aspx"
+      },
+      {
+        "title": "Shri Omkareshwar Mandir Trust - How to Reach",
+        "url": "https://www.shriomkareshwar.org/HowToReach.aspx"
+      },
+      {
+        "title": "Omkareshwar Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Omkareshwar_Temple"
+      },
+      {
+        "title": "The Hitavada - MP CM unveils 108-ft Statue of Oneness (22 Sep 2023)",
+        "url": "https://thehitavada.com/Encyc/2023/9/22/MP-CM-unveils-108-ft-Statue-of-Oneness-of-Adi-Shankaracharya.html"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": {
+      "note": "Not a location dispute, but tradition differs on whether the Jyotirlinga is Omkareshwar on the island or Mamleshwar/Amaleshwar on the south bank; most pilgrims visit both. The Shiva Purana list reads 'Omkare Parameshwaram'; the popular smaranam stotra reads 'Omkaram Amaleshwaram'.",
+      "alternates": [
+        {
+          "name": "Mamleshwar (Amaleshwar) Temple",
+          "lat": null,
+          "lon": null,
+          "note": "Opposite bank of the Narmada, about 1 km; coordinates not separately verified."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "What are Omkareshwar temple darshan timings?",
+        "a": "Darshan runs from 5:00 AM to 10:30 PM with breaks for bhog, shringar and aarti; Mangal Aarti is 4:30-5:00 AM and Shayan Aarti 9:30-10:00 PM (Trust time table)."
+      },
+      {
+        "q": "How much is Shighra (VIP) darshan at Omkareshwar?",
+        "a": "Rs 300 per person for a 2-hour slot, bookable the same day on shriomkareshwar.org. Normal darshan is free."
+      },
+      {
+        "q": "Should I visit Mamleshwar too?",
+        "a": "Yes - tradition treats Omkareshwar and Mamleshwar (Amaleshwar) as two aspects of the same Jyotirlinga, and most pilgrims visit both."
+      },
+      {
+        "q": "Is there a dress code at Omkareshwar?",
+        "a": "No official dress code; the Trust recommends modest clothing."
+      },
+      {
+        "q": "How do I reach Omkareshwar from Indore?",
+        "a": "Indore airport is 77 km away; go by taxi or bus. Nearest railway stations are Sanawad (12 km) and Khandwa Junction (72 km)."
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "slug": "kedarnath-jyotirlinga",
+    "name_en": "Kedarnath Jyotirlinga",
+    "name_hi": "केदारनाथ ज्योतिर्लिंग",
+    "temple_name": "Shri Kedarnath Dham",
+    "town": "Kedarnath",
+    "district": "Rudraprayag",
+    "state": "Uttarakhand",
+    "lat": 30.7352,
+    "lon": 79.0669,
+    "coord_source": "https://en.wikipedia.org/wiki/Kedarnath_Temple",
+    "river_or_sea": "Mandakini River",
+    "altitude_m": 3583,
+    "altitude_note": "Wikipedia 3,583 m; BKTC page says 3,584 m.",
+    "legend_summary": "Tradition drawn from the Mahabharata cycle and the Shiva Purana holds that the Pandavas, burdened by the bloodshed of the Kurukshetra war, set out to find Shiva and seek his forgiveness. Shiva avoided them and hid in the Garhwal Himalaya disguised as a bull among a grazing herd. Bhima stood astride a valley so the cattle had to pass beneath his legs; one bull refused, and the brothers knew it was Shiva. As the bull sank into the earth, Bhima grabbed its hump, which remained at Kedarnath, while other parts appeared at the four other Panch Kedar shrines. The Shiva Purana also says Shiva settled here at the request of the sages Nara and Narayana, rewarding their long penance.",
+    "story_beats": [
+      "The Pandavas sought Shiva's forgiveness",
+      "Shiva hid as a Himalayan bull",
+      "Bhima seized the sinking hump",
+      "Kedarnath rose amid snowy peaks"
+    ],
+    "history_facts": [
+      {
+        "date": "8th century CE (tradition)",
+        "fact": "Adi Shankaracharya is believed to have revived the temple; BKTC credits the present structure to him, beside the site of an earlier Pandava-era shrine.",
+        "source": "https://www.badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"
+      },
+      {
+        "date": "16-17 June 2013",
+        "fact": "Catastrophic floods devastated Kedarnath; the temple survived as a large boulder lodged behind it diverted debris. The rock is now worshipped as 'Bhim Shila'.",
+        "source": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+      },
+      {
+        "date": "5 November 2021",
+        "fact": "PM Narendra Modi unveiled a 12-ft statue of Adi Shankaracharya at his rebuilt samadhi behind the temple.",
+        "source": "https://www.thenewsminute.com/news/pm-modi-unveils-adi-shankaracharya-statue-rebuilt-samadhi-kedarnath-157271"
+      },
+      {
+        "date": "15 February 2026",
+        "fact": "On Mahashivratri, acting chief priest T. Gangadhar Ling announced at Omkareshwar Temple, Ukhimath that the doors would open at about 8 AM on 22 April 2026.",
+        "source": "https://www.etvbharat.com/en/state/mahashivratri-2026-kedarnath-temple-opening-announced-enn26021501713"
+      },
+      {
+        "date": "31 March 2026",
+        "fact": "UCADA selected 8 helicopter operators for 2026 (Guptkashi, Phata, Sirsi); one-way fares Rs 6,077 / 4,840 / 3,043 excl. GST; booking only via IRCTC HeliYatra.",
+        "source": "https://www.etvbharat.com/en/state/8-helicopter-companies-to-operate-heli-service-to-kedarnath-dham-know-fares-enn26033106782"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.badrinath-kedarnath.gov.in (BKTC)",
+      "temple_hours": null,
+      "temple_hours_note": "BKTC's site does not publish daily darshan hours. Travel sites commonly cite early-morning opening, an afternoon break and closing around 9 PM - UNVERIFIED, so left null.",
+      "aartis": null,
+      "special": "Pujas (Mahabhishek, Rudrabhishek, Laghurudrabhishek, Shodashopachar, evening aarti etc.) bookable online on BKTC; prior registration with an Indian mobile number mandatory for puja/aarti/bhog booking.",
+      "online_booking": "Puja: https://www.badrinath-kedarnath.gov.in ; Yatra registration (mandatory): https://registrationandtouristcare.uk.gov.in ; Helicopter: https://www.heliyatra.irctc.co.in (Char Dham registration required first)",
+      "dress_code": null,
+      "rules": "Mandatory Uttarakhand Char Dham yatra registration. Weather-related yatra suspensions happen during monsoon alerts."
+    },
+    "open_season": {
+      "type": "seasonal",
+      "opened_2026": "22 April 2026, approx. 08:00 (announced 15 Feb 2026 on Mahashivratri at Ukhimath)",
+      "opened_2026_source": "https://www.etvbharat.com/en/state/mahashivratri-2026-kedarnath-temple-opening-announced-enn26021501713",
+      "note_on_akshaya_tritiya": "Akshaya Tritiya 2026 fell on 19 April (Gangotri/Yamunotri open on that day). Kedarnath's date is fixed separately each Mahashivratri and in 2026 was 22 April - not Akshaya Tritiya.",
+      "closing_2026": null,
+      "closing_2026_note": "NOT officially announced as of 8 Oct 2026. By custom the doors close on Bhai Dooj and BKTC announces the exact muhurat on Vijayadashami (20 Oct 2026). Bhai Dooj 2026 is 11 Nov per Dekho Panchang (New Delhi); some panchangs give 10 Nov. Times Now Hindi (2 Sep 2026) also reports the date is unannounced.",
+      "closing_2026_sources": [
+        "https://www.timesnowhindi.com/spirituality/kedarnath-closing-date-2026-kedarnath-ke-kapat-kab-band-honge-2026-winter-seat-ukhimath-article-156029922",
+        "https://dekhopanchang.com/en/festivals/bhai-dooj/2026"
+      ],
+      "precedent_2025": "Closed 23 Oct 2025 (Bhai Dooj); date announced on Vijayadashami, 2 Oct 2025.",
+      "precedent_2025_source": "https://www.newsonair.gov.in/uttarakhand-announces-winter-closing-dates-for-kedarnath-badrinath-gangotri-and-yamunotri-temples/",
+      "winter_seat": "Omkareshwar Temple, Ukhimath (worship continues there Nov-Apr)"
+    },
+    "best_months": "May-June and mid-September to October (editorial). July-August monsoon brings landslide risk and periodic yatra halts.",
+    "festivals": [
+      "Kapat opening (Apr/May)",
+      "Shravan month",
+      "Kapat closing on Bhai Dooj (Oct/Nov)",
+      "Mahashivratri (date announcement at Ukhimath)"
+    ],
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Jolly Grant Airport, Dehradun (to Gaurikund by road)",
+          "km": "approx. 240 (approximate; unverified)"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Rishikesh / Yog Nagari Rishikesh (to Gaurikund by road)",
+          "km": "approx. 215 (approximate; unverified)"
+        }
+      ],
+      "road": "Drive to Sonprayag, shuttle to Gaurikund (last motorable point).",
+      "trek": "Gaurikund to Kedarnath approx. 16 km (IRCTC HeliYatra) - Wikipedia says 17 km; 6-8 hours uphill.",
+      "helicopter": "Shuttles from Guptkashi, Phata and Sirsi/Sersi helipads; 2026 one-way fares Rs 6,077 (Guptkashi), Rs 4,840 (Phata), Rs 3,043 (Sirsi) excl. GST. Book ONLY on https://www.heliyatra.irctc.co.in after Char Dham registration; max 2 tickets per user ID, 6 pilgrims per ticket; booking window tied to registered tour date.",
+      "pony_palki": "Ponies/mules, palkis (dandi) and pithoo (basket porters) operate from Gaurikund; rates are fixed by the district administration (not verified here).",
+      "sources": [
+        "https://www.heliyatra.irctc.co.in/",
+        "https://www.etvbharat.com/en/state/8-helicopter-companies-to-operate-heli-service-to-kedarnath-dham-know-fares-enn26033106782",
+        "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+      ]
+    },
+    "nearby": [
+      {
+        "name": "Bhairavnath temple (guardian deity)",
+        "km": "approx. 1"
+      },
+      {
+        "name": "Adi Shankaracharya Samadhi",
+        "km": "behind the temple"
+      },
+      {
+        "name": "Vasuki Tal",
+        "km": "approx. 8 (trek)"
+      },
+      {
+        "name": "Triyuginarayan (Shiva-Parvati wedding site)",
+        "km": "approx. 12 from Sonprayag by road"
+      },
+      {
+        "name": "Ukhimath Omkareshwar Temple (winter seat)",
+        "km": "approx. 40-45 from Gaurikund by road"
+      }
+    ],
+    "nearby_note": "Distances approximate (editorial).",
+    "official_site": "https://www.badrinath-kedarnath.gov.in",
+    "sources": [
+      {
+        "title": "BKTC - Shri Kedarnath Dham",
+        "url": "https://www.badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"
+      },
+      {
+        "title": "Kedarnath Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+      },
+      {
+        "title": "ETV Bharat - Kedarnath opening announced (15 Feb 2026)",
+        "url": "https://www.etvbharat.com/en/state/mahashivratri-2026-kedarnath-temple-opening-announced-enn26021501713"
+      },
+      {
+        "title": "ETV Bharat - 8 helicopter companies, fares (31 Mar 2026)",
+        "url": "https://www.etvbharat.com/en/state/8-helicopter-companies-to-operate-heli-service-to-kedarnath-dham-know-fares-enn26033106782"
+      },
+      {
+        "title": "IRCTC HeliYatra (official helicopter booking)",
+        "url": "https://www.heliyatra.irctc.co.in/"
+      },
+      {
+        "title": "Times Now Hindi - Kedarnath closing date 2026 (2 Sep 2026)",
+        "url": "https://www.timesnowhindi.com/spirituality/kedarnath-closing-date-2026-kedarnath-ke-kapat-kab-band-honge-2026-winter-seat-ukhimath-article-156029922"
+      },
+      {
+        "title": "News On Air - 2025 closing dates announced on Vijayadashami",
+        "url": "https://www.newsonair.gov.in/uttarakhand-announces-winter-closing-dates-for-kedarnath-badrinath-gangotri-and-yamunotri-temples/"
+      },
+      {
+        "title": "The News Minute - Adi Shankaracharya statue unveiled (5 Nov 2021)",
+        "url": "https://www.thenewsminute.com/news/pm-modi-unveils-adi-shankaracharya-statue-rebuilt-samadhi-kedarnath-157271"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "When did Kedarnath open in 2026 and when will it close?",
+        "a": "It opened on 22 April 2026. The 2026 closing date had not been officially announced as of 8 October 2026; by custom it is Bhai Dooj (10/11 Nov 2026) and BKTC announces the muhurat on Vijayadashami (20 Oct 2026)."
+      },
+      {
+        "q": "How long is the Kedarnath trek?",
+        "a": "About 16-17 km one way from Gaurikund, usually 6-8 hours uphill. Ponies, palkis and pithoos are available."
+      },
+      {
+        "q": "How do I book a Kedarnath helicopter?",
+        "a": "Only on IRCTC HeliYatra (heliyatra.irctc.co.in), after completing mandatory Char Dham registration. 2026 one-way fares were Rs 3,043-6,077 plus GST depending on helipad."
+      },
+      {
+        "q": "Is registration mandatory for Kedarnath?",
+        "a": "Yes. Register on the Uttarakhand government portal registrationandtouristcare.uk.gov.in; it is also required for helicopter booking."
+      },
+      {
+        "q": "Where is Lord Kedarnath worshipped in winter?",
+        "a": "At the Omkareshwar Temple in Ukhimath, from the closing in Oct/Nov until the reopening in Apr/May."
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "slug": "bhimashankar-jyotirlinga",
+    "name_en": "Bhimashankar Jyotirlinga",
+    "name_hi": "भीमाशंकर ज्योतिर्लिंग",
+    "temple_name": "Shree Kshetra Bhimashankar Temple",
+    "town": "Bhimashankar",
+    "district": "Pune (Khed taluka)",
+    "state": "Maharashtra",
+    "lat": 19.072,
+    "lon": 73.536,
+    "coord_source": "https://en.wikipedia.org/wiki/Bhimashankar_Temple",
+    "river_or_sea": "Source of the Bhima (Bhimarathi) River",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) tells of Bhima, son of Kumbhakarna and the demoness Karkati, who grew up in the hills after his father fell to Rama. Learning this, he performed fierce penance, won a boon of great strength from Brahma and set out to conquer the gods and righteous kings. He imprisoned Sudakshina, the Shiva-devoted king of Kamarupa, who kept worshipping a clay linga inside his prison. When Bhima raised his sword to smash that linga, Shiva burst forth and destroyed him. At the gods' plea Shiva remained there as Bhimashankar. A separate Maharashtra tradition links the name to Shiva's battle with the demon Tripurasura and says the sweat of that fight became the Bhima river.",
+    "story_beats": [
+      "Kumbhakarna's son Bhima grew mighty",
+      "He jailed a devoted king",
+      "His sword struck the sacred linga",
+      "Shiva arose as Bhimashankar"
+    ],
+    "history_facts": [
+      {
+        "date": "February 1739",
+        "fact": "Chimaji Appa presented a large bell taken from Vasai fort after defeating the Portuguese at the Battle of Bassein; it still hangs before the temple.",
+        "source": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+      },
+      {
+        "date": "18th century",
+        "fact": "Nana Phadnavis built the sabhamandap (assembly hall) and the shikhara.",
+        "source": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+      },
+      {
+        "date": "20 February 2023",
+        "fact": "Assam CM Himanta Biswa Sarma asserted the Shiva Purana's Bhimashankar is in Kamrup, Assam, after an Assam government advertisement drew objections from Maharashtra.",
+        "source": "https://www.outlookindia.com/amp/story/national/-bhimashankar-jyotirlinga-located-in-assam-s-kamrup-himanta-news-263538"
+      },
+      {
+        "date": "9 January - 14 June 2026",
+        "fact": "Temple closed to devotees for construction of a new hall and stair improvements (linked to Simhastha 2027 preparations); reopened 15 June 2026 with mandatory online passes, 1,000 devotees/day, 7-11 AM until 30 June.",
+        "source": "https://www.punekarnews.in/bhimashankar-darshan-resumes-from-june-15-online-registration-now-compulsory/"
+      },
+      {
+        "date": "August 2026 (Shravan)",
+        "fact": "Darshan extended to 5 AM-9:30 PM through Shravan month.",
+        "source": "https://www.thebridgechronicle.com/pune/bhimashankar-temple-open-throughout-shravan-darshan-timings-extended-agn97"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.punekarnews.in/bhimashankar-darshan-resumes-from-june-15-online-registration-now-compulsory/ ; https://www.thebridgechronicle.com/pune/bhimashankar-temple-open-throughout-shravan-darshan-timings-extended-agn97",
+      "temple_hours": null,
+      "temple_hours_note": "Post-Shravan (Sept-Oct 2026) timings and whether the online pass is still compulsory could NOT be verified; shreebhimashankar.com returned no readable timings. Last confirmed: 5:00-21:30 during Shravan 2026.",
+      "aartis": null,
+      "special": "Online darshan pass introduced June 2026 (1,000/day cap) - check https://shreebhimashankar.com/en/ for current status; carry photo ID.",
+      "online_booking": "https://shreebhimashankar.com/en/",
+      "dress_code": null,
+      "rules": "Valid photo ID required with online pass (June 2026 rules)."
+    },
+    "open_season": "All year (note: closed 9 Jan-14 Jun 2026 for works; development work continuing)",
+    "best_months": "October-February (editorial); June-September monsoon is lush but ghat roads and trails are slippery and foggy.",
+    "festivals": [
+      "Mahashivratri",
+      "Shravan Mondays",
+      "Tripuri (Kartik) Purnima"
+    ],
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Pune Airport",
+          "km": "approx. 110-120 (approximate)"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Pune Junction",
+          "km": "approx. 110"
+        }
+      ],
+      "road": "From Pune via Rajgurunagar-Manchar and a ghat road (about 110 km per Wikipedia). Trekkers also climb from the Konkan side (Khandas) - unverified details.",
+      "source": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+    },
+    "nearby": [
+      {
+        "name": "Bhimashankar Wildlife Sanctuary (Malabar giant squirrel habitat)",
+        "km": "surrounds the temple"
+      },
+      {
+        "name": "Gupt Bhimashankar (forest trail)",
+        "km": "approx. 1.5-2 (unverified)"
+      },
+      {
+        "name": "Kusharanya Tirth - Bhima river source",
+        "km": "adjacent (south of temple)"
+      },
+      {
+        "name": "Nagphani point",
+        "km": "approx. 1-2 (unverified)"
+      },
+      {
+        "name": "Pune city",
+        "km": 110
+      }
+    ],
+    "official_site": "https://shreebhimashankar.com/en/",
+    "sources": [
+      {
+        "title": "Bhimashankar Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+      },
+      {
+        "title": "Punekar News - Bhimashankar darshan resumes from June 15 (15 Jun 2026)",
+        "url": "https://www.punekarnews.in/bhimashankar-darshan-resumes-from-june-15-online-registration-now-compulsory/"
+      },
+      {
+        "title": "The Bridge Chronicle - Temple open throughout Shravan, timings extended (11 Aug 2026)",
+        "url": "https://www.thebridgechronicle.com/pune/bhimashankar-temple-open-throughout-shravan-darshan-timings-extended-agn97"
+      },
+      {
+        "title": "Outlook - Bhimashankar Jyotirlinga located in Assam's Kamrup: Himanta (20 Feb 2023)",
+        "url": "https://www.outlookindia.com/amp/story/national/-bhimashankar-jyotirlinga-located-in-assam-s-kamrup-himanta-news-263538"
+      },
+      {
+        "title": "Bhimeswar Dham - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bhimeswar_Dham"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": {
+      "note": "The Shiva Purana places Bhimashankar in 'Dakini' and its story involves the king of Kamarupa (Assam). Most pilgrims and the Dwadasha Jyotirlinga tradition in western India identify it with Bhimashankar in Pune district, whose forest is called Dakini Vana. Assam's government and devotees identify it with Bhimeswar Dham on Dakini hill, Pamohi, Guwahati. Both are presented here as traditions; this dataset uses the Pune site as the most widely accepted.",
+      "alternates": [
+        {
+          "name": "Bhimeswar Dham (Dakini hill, Pamohi, Guwahati)",
+          "state": "Assam",
+          "lat": 26.0971,
+          "lon": 91.6961,
+          "source": "https://en.wikipedia.org/wiki/Bhimeswar_Dham"
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Is Bhimashankar temple open now?",
+        "a": "It reopened on 15 June 2026 after works closed it from 9 January 2026; during Shravan 2026 darshan ran 5 AM-9:30 PM. Check shreebhimashankar.com for the current pass and timing rules before you go."
+      },
+      {
+        "q": "Do I need an online pass for Bhimashankar darshan?",
+        "a": "From 15 June 2026 online registration was compulsory with a 1,000-per-day cap. Whether it still applies after Shravan 2026 could not be verified - check the official site."
+      },
+      {
+        "q": "How far is Bhimashankar from Pune?",
+        "a": "About 110 km by road via Rajgurunagar and a ghat section."
+      },
+      {
+        "q": "Is the real Bhimashankar Jyotirlinga in Assam?",
+        "a": "It is a matter of tradition. The Pune-district temple is the most widely accepted, while Assam identifies Bhimeswar Dham near Guwahati based on the Shiva Purana's Kamarupa setting."
+      },
+      {
+        "q": "Which river starts at Bhimashankar?",
+        "a": "The Bhima (Bhimarathi), a tributary of the Krishna, rises at Bhimashankar."
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "slug": "kashi-vishwanath-jyotirlinga",
+    "name_en": "Kashi Vishwanath Jyotirlinga",
+    "name_hi": "काशी विश्वनाथ ज्योतिर्लिंग",
+    "temple_name": "Shri Kashi Vishwanath Temple (Vishweshwar)",
+    "town": "Varanasi (Kashi)",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "lat": 25.3108,
+    "lon": 83.0106,
+    "coord_source": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple",
+    "river_or_sea": "Ganga (Ganges) - western bank",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) honours Kashi as Avimukta, the place Shiva never leaves. It is believed that at the beginning of creation Shiva and Shakti shaped this city as their own home, and that it is held aloft on the tip of Shiva's trident, so it survives even the great dissolution of the universe. Tradition also links Vishweshwara with the endless column of light that appeared when Brahma and Vishnu quarrelled over who was greater; neither could find its top or base. Here Shiva is the Lord of the Universe, and devotees believe that anyone who dies in Kashi hears from him the liberating Taraka mantra, making the city a doorway to moksha.",
+    "story_beats": [
+      "Shiva and Shakti chose Kashi",
+      "The city rests on his trident",
+      "Here Shiva whispers the liberating mantra",
+      "Vishwanath, Lord of the Universe"
+    ],
+    "history_facts": [
+      {
+        "date": "1194",
+        "fact": "Forces of Muhammad of Ghor razed Kashi and destroyed the original temple.",
+        "source": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+      },
+      {
+        "date": "1669",
+        "fact": "Aurangzeb ordered the temple demolished; the Gyanvapi Mosque was built on the site.",
+        "source": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+      },
+      {
+        "date": "1780",
+        "fact": "Maharani Ahilyabai Holkar built the present temple beside the mosque.",
+        "source": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+      },
+      {
+        "date": "1835",
+        "fact": "Maharaja Ranjit Singh donated about one tonne of gold to plate the dome and spire.",
+        "source": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+      },
+      {
+        "date": "13 December 2021",
+        "fact": "PM Narendra Modi inaugurated the Shri Kashi Vishwanath Dham corridor linking the temple to the Ganga ghats.",
+        "source": "https://narendramodi.in/prime-minister-narendra-modi-to-visit-varanasi-and-inaugurate-shri-kashi-vishwanath-dham-on-13-december"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf",
+      "temple_hours": "Temple open 03:00-23:00; darshan 04:00-11:00, 12:20-19:00, 20:30-21:00",
+      "aartis": [
+        {
+          "name": "Mangala Aarti",
+          "time": "03:00-04:00 (report 02:30, enter Gate No. 1)"
+        },
+        {
+          "name": "Mid-day Bhog Aarti",
+          "time": "11:15-12:20"
+        },
+        {
+          "name": "Saptarishi Aarti",
+          "time": "19:00-20:15"
+        },
+        {
+          "name": "Night Shringar / Bhog Aarti",
+          "time": "21:00-22:15"
+        }
+      ],
+      "special": "Sugam Darshan Rs 300/person - escorted queue-less darshan with a Shastri, free locker and prasad. Aarti tickets non-cancellable, non-refundable. Rudrabhishek can be booked 04:00-18:00. Ghat-side entry via Gate 1, 06:00-21:00.",
+      "online_booking": "https://shrikashivishwanath.org (aarti, Sugam Darshan, Rudrabhishek) and the official app",
+      "dress_code": "No dress code; decent clothing advised.",
+      "rules": "No electronic or non-electronic gadgets, pens etc. inside. Free lockers at Mandir Chowk, YSK-1/2/3 and Helpdesk. Entry free."
+    },
+    "open_season": "All year",
+    "best_months": "October-March (editorial); Dev Deepawali (Kartik Purnima) and Mahashivratri are peak-crowd days.",
+    "festivals": [
+      "Mahashivratri",
+      "Rangbhari Ekadashi",
+      "Diwali",
+      "Monthly Shivratri",
+      "Kartik month / Dev Deepawali",
+      "Shravan Mondays"
+    ],
+    "festivals_source": "https://shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf",
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Lal Bahadur Shastri International Airport (Babatpur)",
+          "km": "approx. 25 (approximate)"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Varanasi Junction (Varanasi Cantt)",
+          "km": "approx. 5 (approximate)"
+        },
+        {
+          "name": "Banaras station",
+          "km": "approx. 5 (approximate)"
+        }
+      ],
+      "road": "Cars stop outside the old city; e-rickshaw/walk to gates. Main bus stand: Chaudhary Charan Singh Bus Stand. Can also arrive by boat to the corridor ghat entrance.",
+      "source": "https://shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf (names); distances approximate"
+    },
+    "nearby": [
+      {
+        "name": "Annapurna Devi temple",
+        "km": "adjacent"
+      },
+      {
+        "name": "Dashashwamedh Ghat (evening Ganga Aarti)",
+        "km": "approx. 0.5"
+      },
+      {
+        "name": "Manikarnika Ghat",
+        "km": "approx. 0.5"
+      },
+      {
+        "name": "Kaal Bhairav temple",
+        "km": "approx. 2"
+      },
+      {
+        "name": "Sarnath",
+        "km": "approx. 10"
+      }
+    ],
+    "official_site": "https://shrikashivishwanath.org",
+    "sources": [
+      {
+        "title": "Shri Kashi Vishwanath Temple Trust - FAQ (PDF)",
+        "url": "https://shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf"
+      },
+      {
+        "title": "Shri Kashi Vishwanath Temple Trust - official site",
+        "url": "https://shrikashivishwanath.org"
+      },
+      {
+        "title": "Kashi Vishwanath Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+      },
+      {
+        "title": "narendramodi.in - PM to inaugurate Shri Kashi Vishwanath Dham on 13 December",
+        "url": "https://narendramodi.in/prime-minister-narendra-modi-to-visit-varanasi-and-inaugurate-shri-kashi-vishwanath-dham-on-13-december"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "What is the Mangala Aarti time at Kashi Vishwanath and how do I book?",
+        "a": "3:00-4:00 AM, reporting by 2:30 AM at Gate No. 1. Book on shrikashivishwanath.org, the official app or the temple help desk; tickets can't be cancelled."
+      },
+      {
+        "q": "How much does Sugam Darshan cost at Kashi Vishwanath?",
+        "a": "Rs 300 per person - a Shastri escorts you near the sanctum without queuing, with a free locker and prasad box."
+      },
+      {
+        "q": "Are mobile phones allowed in Kashi Vishwanath temple?",
+        "a": "No. Phones, gadgets and even pens are not allowed; free lockers are provided."
+      },
+      {
+        "q": "Is there a dress code at Kashi Vishwanath?",
+        "a": "There is no formal dress code, but the trust asks devotees to wear decent clothes."
+      },
+      {
+        "q": "When was the Kashi Vishwanath corridor inaugurated?",
+        "a": "On 13 December 2021, by PM Narendra Modi; it links the temple directly to the Ganga ghats."
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "slug": "trimbakeshwar-jyotirlinga",
+    "name_en": "Trimbakeshwar Jyotirlinga",
+    "name_hi": "त्र्यंबकेश्वर ज्योतिर्लिंग",
+    "temple_name": "Shri Trimbakeshwar Temple",
+    "town": "Trimbak",
+    "district": "Nashik",
+    "state": "Maharashtra",
+    "lat": 19.9322,
+    "lon": 73.5308,
+    "coord_source": "https://en.wikipedia.org/wiki/Trimbakeshwar_Temple",
+    "river_or_sea": "Source of the Godavari (Gautami) - Brahmagiri hills / Kushavarta Kund",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) recounts that Sage Gautama and his wife Ahalya lived on the Brahmagiri hills, where Varuna had granted them an ever-full pond during a drought. Envious sages schemed to drive him away: a frail cow was sent into his fields, and when Gautama shooed it with a blade of grass it fell dead. Blamed for killing a cow, Gautama turned to Shiva for atonement. Pleased by his penance, Shiva released the Ganga here, who flows on as the Godavari, also called Gautami, and agreed to remain as Tryambaka, the three-eyed lord. The linga's three small faces are believed to represent Brahma, Vishnu and Shiva together.",
+    "story_beats": [
+      "Jealous sages tricked Sage Gautama",
+      "A cow fell; he was blamed",
+      "Shiva freed Ganga as Godavari",
+      "Tryambaka stayed at Brahmagiri"
+    ],
+    "history_facts": [
+      {
+        "date": "18th century",
+        "fact": "The present basalt temple was commissioned by Peshwa Balaji Bajirao (Nanasaheb) after the earlier shrine was destroyed under Aurangzeb.",
+        "source": "https://en.wikipedia.org/wiki/Trimbakeshwar_Temple"
+      },
+      {
+        "date": "1817-1818",
+        "fact": "The Nassak Diamond that once adorned the linga was taken by the British during the Third Anglo-Maratha War.",
+        "source": "https://en.wikipedia.org/wiki/Trimbakeshwar_Temple"
+      },
+      {
+        "date": "Weekly",
+        "fact": "The jewelled crown (mukut), said to date from the Pandava era, is displayed on Mondays from 4 to 5 PM.",
+        "source": "https://en.wikipedia.org/wiki/Trimbakeshwar_Temple"
+      },
+      {
+        "date": "31 October 2026",
+        "fact": "Flag hoisting (Dhwajarohan) at Trimbakeshwar and Ramkund begins the Nashik-Trimbakeshwar Simhastha Kumbh; Amrit Snans 2 Aug, 31 Aug 2027 and 12 Sep 2027 at Trimbakeshwar (11 Sep in Nashik); ends 24 Jul 2028.",
+        "source": "https://www.theweek.in/wire-updates/national/2025/06/01/bom14-mh-ld-kumbh-mela.html"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://trimbakeshwartrust.com/ ; https://trimbakeshwartrust.com/daily_programme",
+      "temple_hours": "05:30-21:00",
+      "aartis": [
+        {
+          "name": "Morning Puja (Brahma puja)",
+          "time": "07:00-08:30"
+        },
+        {
+          "name": "Mid-day Puja (Mahadev puja)",
+          "time": "10:45-12:30"
+        },
+        {
+          "name": "Evening Puja (Vishnu puja)",
+          "time": null,
+          "note": "Official page lists '7.00 AM to 8.30 AM' for the evening puja - an apparent error; evening time unverified."
+        }
+      ],
+      "special": "Donation Darshan Pass (paid, faster queue) via Online Services > Online Donation Darshan Bookings; Rudrabhishek and Laghurudra puja bookable online. Crown (mukut) display Mondays 16:00-17:00.",
+      "online_booking": "https://trimbakeshwartrust.com",
+      "dress_code": null,
+      "rules": "Timings change on festival days (Trust)."
+    },
+    "open_season": "All year",
+    "best_months": "July-February (editorial): monsoon greens Brahmagiri; Oct-Feb is pleasant. Expect very heavy crowds during Simhastha 2027 snan dates.",
+    "festivals": [
+      "Mahashivratri",
+      "Shravan Mondays",
+      "Tripuri (Kartik) Purnima",
+      "Simhastha Kumbh 2026-28"
+    ],
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Nashik (Ozar) Airport",
+          "km": "approx. 55 (approximate)"
+        },
+        {
+          "name": "Mumbai CSMIA",
+          "km": "approx. 180 (approximate)"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Nashik Road",
+          "km": 40
+        }
+      ],
+      "road": "Nashik city to Trimbak about 28-30 km by road; frequent MSRTC buses and taxis.",
+      "source": "https://en.wikipedia.org/wiki/Trimbakeshwar_Temple"
+    },
+    "nearby": [
+      {
+        "name": "Kushavarta Kund (Godavari's ritual source)",
+        "km": "in Trimbak town"
+      },
+      {
+        "name": "Brahmagiri hill / Gangadwar",
+        "km": "approx. 1-3 (trek)"
+      },
+      {
+        "name": "Anjaneri (Hanuman's birthplace by tradition)",
+        "km": "approx. 7"
+      },
+      {
+        "name": "Nashik Panchavati & Ramkund",
+        "km": "approx. 30"
+      },
+      {
+        "name": "Shirdi",
+        "km": "approx. 115-120"
+      }
+    ],
+    "official_site": "https://trimbakeshwartrust.com",
+    "sources": [
+      {
+        "title": "Shri Trimbakeshwar Devasthan Trust - home",
+        "url": "https://trimbakeshwartrust.com/"
+      },
+      {
+        "title": "Shri Trimbakeshwar Devasthan Trust - Daily Programme",
+        "url": "https://trimbakeshwartrust.com/daily_programme"
+      },
+      {
+        "title": "Trimbakeshwar Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Trimbakeshwar_Temple"
+      },
+      {
+        "title": "The Week (PTI) - Simhastha Kumbh to begin Oct 31 (1 Jun 2025)",
+        "url": "https://www.theweek.in/wire-updates/national/2025/06/01/bom14-mh-ld-kumbh-mela.html"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "What are Trimbakeshwar temple timings?",
+        "a": "The trust says the temple is open for darshan from 5:30 AM to 9:00 PM; timings change on festival days."
+      },
+      {
+        "q": "Why does the Trimbakeshwar linga have three faces?",
+        "a": "Tradition says the three small faces represent Brahma, Vishnu and Shiva - the 'Tryambaka' form."
+      },
+      {
+        "q": "How can I avoid the queue at Trimbakeshwar?",
+        "a": "Buy the paid Donation Darshan Pass online on trimbakeshwartrust.com (Online Services > Online Donation Darshan Bookings)."
+      },
+      {
+        "q": "When is the Nashik-Trimbakeshwar Kumbh?",
+        "a": "Flag hoisting is on 31 Oct 2026; the Amrit Snans at Trimbakeshwar are on 2 Aug, 31 Aug and 12 Sep 2027."
+      },
+      {
+        "q": "How far is Trimbakeshwar from Nashik?",
+        "a": "About 28-30 km from Nashik city and 40 km from Nashik Road railway station."
+      }
+    ]
+  },
+  {
+    "order": 9,
+    "slug": "vaidyanath-jyotirlinga",
+    "name_en": "Vaidyanath (Baidyanath) Jyotirlinga",
+    "name_hi": "वैद्यनाथ ज्योतिर्लिंग (बाबा बैद्यनाथ धाम)",
+    "temple_name": "Baba Baidyanath Dham",
+    "town": "Deoghar",
+    "district": "Deoghar",
+    "state": "Jharkhand",
+    "lat": 24.4925,
+    "lon": 86.7,
+    "coord_source": "https://en.wikipedia.org/wiki/Baidyanath_Temple",
+    "coord_note": "Wikipedia coordinates are given to low precision (24.4925, 86.7); verify on map before pinning.",
+    "river_or_sea": null,
+    "altitude_m": null,
+    "legend_summary": "It is believed, following the Shiva Purana's account of Vaidyanath, that the demon-king Ravana performed fierce penance to win Shiva's grace, offering his heads one by one. Shiva restored him, which earned the Lord the title Vaidyanath, 'Lord of Physicians', and granted Ravana a linga to install in Lanka, on condition that it would stay wherever it first touched the ground. Fearing Ravana's growing power, the gods arranged that he was forced to halt on the way. A cowherd, identified with Vishnu and remembered locally as Baiju, held the linga and set it down. Ravana could not lift it again, pressed it with his thumb in anger, and the linga remained forever at Deoghar.",
+    "story_beats": [
+      "Ravana offered his heads to Shiva",
+      "Shiva healed him as Vaidyanath",
+      "A cowherd set the linga down",
+      "It stayed forever at Deoghar"
+    ],
+    "history_facts": [
+      {
+        "date": "From 1266",
+        "fact": "The Gidhaur rulers, whose principality was founded in 1266, were closely attached to the temple.",
+        "source": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+      },
+      {
+        "date": "1788",
+        "fact": "After Plassey, the East India Company sent an official to supervise pilgrim offerings and dues; control was later returned to the high priest.",
+        "source": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+      },
+      {
+        "date": "12 July 2022",
+        "fact": "PM Narendra Modi inaugurated Deoghar Airport, about 9 km from the temple.",
+        "source": "https://www.narendramodi.in/prime-minister-narendra-modi-to-visit-deoghar-and-patna-on-12th-july-563060"
+      },
+      {
+        "date": "Annual (Shravan)",
+        "fact": "During the month-long Shravani Mela, kanwariyas walk about 105 km from Sultanganj (Bihar) carrying Ganga water to pour on the linga; 35-40 lakh devotees attend on average.",
+        "source": "https://www.theweek.in/wire-updates/national/2025/07/10/ces5-jh-shravani-fair.html"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://babadham.org/timings/",
+      "source_caveat": "babadham.org is styled 'Baba Baidyanath Dham Temple Trust, Deoghar'; its status as the government-constituted shrine board's site could not be independently confirmed. The page also shows 'Open daily 4 AM-9 PM' in its header but a schedule ending 8 PM.",
+      "temple_hours": "04:00-16:00 and 18:00-20:00 per daily schedule (header says 04:00-21:00 - inconsistency)",
+      "aartis": [
+        {
+          "name": "Pat (door) opens",
+          "time": "04:00"
+        },
+        {
+          "name": "Kancha Jal (early-morning water offering)",
+          "time": "04:10"
+        },
+        {
+          "name": "Pat closes",
+          "time": "16:00"
+        },
+        {
+          "name": "Pat reopens",
+          "time": "18:00"
+        },
+        {
+          "name": "Shringar Puja",
+          "time": "18:10"
+        },
+        {
+          "name": "Pat closes",
+          "time": "20:00"
+        }
+      ],
+      "special": "Extended hours during Shravani Mela (July-August) and Mahashivratri. Out-of-turn VIP darshan suspended during Shravani Mela (2025 report). Live darshan streamed 24x7 (site).",
+      "online_booking": null,
+      "dress_code": null,
+      "rules": null
+    },
+    "open_season": "All year",
+    "best_months": "October-March (editorial). Shravan (Jul-Aug) is the peak pilgrimage with very large crowds.",
+    "festivals": [
+      "Shravani Mela (Shravan month)",
+      "Mahashivratri"
+    ],
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Deoghar Airport",
+          "km": 9
+        }
+      ],
+      "railway": [
+        {
+          "name": "Jasidih Junction (Howrah-Delhi main line)",
+          "km": 7
+        }
+      ],
+      "road": "Good road links from Ranchi, Patna, Kolkata, Bhagalpur; Sultanganj (Bihar) is the traditional start of the 105 km kanwar walk.",
+      "source": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+    },
+    "nearby": [
+      {
+        "name": "Basukinath temple (Dumka)",
+        "km": "approx. 43"
+      },
+      {
+        "name": "Naulakha Mandir",
+        "km": "approx. 1.5"
+      },
+      {
+        "name": "Tapovan hills and caves",
+        "km": "approx. 10"
+      },
+      {
+        "name": "Trikut Parvat (ropeway)",
+        "km": "approx. 16"
+      },
+      {
+        "name": "Sultanganj / Ajgaibinath (kanwar start)",
+        "km": 105
+      }
+    ],
+    "nearby_note": "Distances other than Sultanganj approximate (editorial).",
+    "official_site": "https://babadham.org (see source_caveat)",
+    "sources": [
+      {
+        "title": "Baidyanath Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+      },
+      {
+        "title": "Baba Baidyanath Dham - Temple Timings",
+        "url": "https://babadham.org/timings/"
+      },
+      {
+        "title": "The Week (PTI) - Month-long Shravani Mela inaugurated (10 Jul 2025)",
+        "url": "https://www.theweek.in/wire-updates/national/2025/07/10/ces5-jh-shravani-fair.html"
+      },
+      {
+        "title": "narendramodi.in - PM to visit Deoghar and Patna on 12 July (2022)",
+        "url": "https://www.narendramodi.in/prime-minister-narendra-modi-to-visit-deoghar-and-patna-on-12th-july-563060"
+      },
+      {
+        "title": "Shri Vaijnath Temple (Parli) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shri_Vaijnath_Temple"
+      },
+      {
+        "title": "Baijnath, Himachal Pradesh - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Baijnath,_Himachal_Pradesh"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": {
+      "note": "Three shrines are identified with the Vaidyanath Jyotirlinga. The Shiva Purana list says 'Vaidyanatham chitabhumau' (in the cremation-ground land), which tradition associates with Deoghar, Jharkhand - the most widely accepted site and the one used for lat/lon here. The popular short smaranam stotra reads 'Paralyam Vaidyanatham', the basis for Parli Vaijnath in Maharashtra, which Maharashtra tradition counts among the 12. Baijnath in Kangra, Himachal Pradesh, has a Ravana legend and an ancient Shiva temple (built 1204 CE) but is less commonly counted as the Jyotirlinga.",
+      "alternates": [
+        {
+          "name": "Shri Vaijnath Temple, Parli Vaijnath",
+          "district": "Beed",
+          "state": "Maharashtra",
+          "lat": 18.8428,
+          "lon": 76.5354,
+          "source": "https://en.wikipedia.org/wiki/Shri_Vaijnath_Temple"
+        },
+        {
+          "name": "Baijnath Temple, Baijnath",
+          "district": "Kangra",
+          "state": "Himachal Pradesh",
+          "lat": 32.05,
+          "lon": 76.65,
+          "coord_note": "Town-level coordinates from Wikipedia; the temple article's own coordinates (32.0836, 76.9664) look inconsistent with the town - verify.",
+          "source": "https://en.wikipedia.org/wiki/Baijnath,_Himachal_Pradesh"
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Where is the real Vaidyanath Jyotirlinga - Deoghar or Parli?",
+        "a": "Both are revered. Deoghar (Jharkhand) is the most widely accepted, linked to the Shiva Purana's 'chitabhumi'; Maharashtra tradition, following the stotra line 'Paralyam Vaidyanatham', honours Parli Vaijnath in Beed district."
+      },
+      {
+        "q": "What are Baba Baidyanath Dham darshan timings?",
+        "a": "The temple's site lists doors opening at 4:00 AM, closing at 4:00 PM, reopening at 6:00 PM and closing at 8:00 PM, with longer hours in Shravan and on Mahashivratri. Its header says 4 AM-9 PM, so confirm locally."
+      },
+      {
+        "q": "What is the Shravani Mela at Deoghar?",
+        "a": "A month-long Shravan fair in which kanwariyas walk about 105 km from Sultanganj in Bihar carrying Ganga water to offer at Baba Baidyanath."
+      },
+      {
+        "q": "Which is the nearest airport and railway station to Deoghar?",
+        "a": "Deoghar Airport is about 9 km away; Jasidih Junction railway station is about 7 km."
+      },
+      {
+        "q": "Why is it called Vaidyanath?",
+        "a": "Vaidya means physician; tradition says Shiva healed Ravana here, so he is worshipped as the Lord of Physicians."
+      }
+    ]
+  },
+  {
+    "order": 10,
+    "slug": "nageshwar-jyotirlinga",
+    "name_en": "Nageshwar Jyotirlinga",
+    "name_hi": "नागेश्वर ज्योतिर्लिंग",
+    "temple_name": "Shri Nageshwar Jyotirlinga Temple (Dwarka)",
+    "town": "Near Dwarka (on the Dwarka-Okha/Bet Dwarka route)",
+    "district": "Devbhumi Dwarka",
+    "state": "Gujarat",
+    "lat": 22.3359,
+    "lon": 69.0869,
+    "coord_source": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga",
+    "river_or_sea": "Saurashtra coast, Arabian Sea (Gulf of Kutch side)",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) tells of a demon named Daruka and his demoness consort who ruled the forest of Darukavana beside the western sea and preyed on travellers. Among their captives was Supriya, a merchant devoted to Shiva, who kept leading his fellow prisoners in chanting Shiva's name inside the demons' dungeon. When the demons rushed to kill him, Shiva appeared in a blaze of light, destroyed the attackers and blessed his devotee. At the request of those he had rescued, Shiva remained there as Nageshwara, 'Lord of the Serpents', with Parvati as Nageshwari. Devotees believe that prayers at this shrine protect against poison of every kind, including snakebite.",
+    "story_beats": [
+      "Demons ruled Darukavana by the sea",
+      "Supriya chanted Shiva's name in chains",
+      "Shiva blazed forth and freed them",
+      "Nageshwar, Lord of Serpents, stayed"
+    ],
+    "history_facts": [
+      {
+        "date": "Tradition",
+        "fact": "The Shiva Purana places Darukavana on the western sea, the basis for identifying the Dwarka shrine as Nageshwar.",
+        "source": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
+      },
+      {
+        "date": "Modern (date unverified)",
+        "fact": "The present complex, with its large seated Shiva statue (about 80 ft per Incredible India), was sponsored by T-Series founder Gulshan Kumar; the year could not be verified.",
+        "source": "https://esamskriti.com/a/Gujarat/Nageshwar-Mandir.aspx"
+      },
+      {
+        "date": "Feature",
+        "fact": "The linga, of Dwarka Shila stone, sits in an underground sanctum.",
+        "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga"
+      },
+      {
+        "date": "25 February 2024",
+        "fact": "Sudarshan Setu, a cable-stayed bridge from Okha to Bet Dwarka, was inaugurated by PM Modi, easing the Dwarka-Nageshwar-Bet Dwarka circuit.",
+        "source": "https://www.businesstoday.in/amp/india/story/pm-narendra-modi-inaugurates-indias-longest-cable-stayed-bridge-sudarshan-setu-in-dwarka-gujarat-418831-2024-02-25"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga (no official temple website found)",
+      "temple_hours": null,
+      "temple_hours_note": "Incredible India says only 'dawn to dusk'. Thomas Cook's blog cites 6 AM-9 PM with puja 6:30 AM-5:30 PM and 8-9 PM - UNVERIFIED (travel company).",
+      "aartis": null,
+      "special": null,
+      "online_booking": null,
+      "dress_code": null,
+      "dress_code_note": "Reports that men need a dhoti for abhishek in the sanctum are unverified.",
+      "rules": null
+    },
+    "open_season": "All year",
+    "best_months": "October-March (editorial).",
+    "festivals": [
+      "Mahashivratri",
+      "Shravan month"
+    ],
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Jamnagar Airport (named by Incredible India)",
+          "km": "approx. 130 (approximate)"
+        },
+        {
+          "name": "Porbandar Airport",
+          "km": "approx. 107 (Thomas Cook; unverified)"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Dwarka railway station",
+          "km": "approx. 18"
+        }
+      ],
+      "road": "About 16-18 km from Dwarka town by road on the way to Okha/Bet Dwarka; usually combined with Dwarkadhish and Bet Dwarka.",
+      "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga ; distances from https://www.thomascook.in/blog/?p=161427 (unverified)"
+    },
+    "nearby": [
+      {
+        "name": "Dwarkadhish Temple, Dwarka",
+        "km": "approx. 17"
+      },
+      {
+        "name": "Gopi Talav",
+        "km": "approx. 5 (unverified)"
+      },
+      {
+        "name": "Bet Dwarka via Sudarshan Setu (Okha)",
+        "km": "approx. 15-20"
+      },
+      {
+        "name": "Rukmini Devi Temple",
+        "km": "approx. 15-18"
+      },
+      {
+        "name": "Somnath Jyotirlinga",
+        "km": "approx. 245 (Dwarka-Somnath 230 km per Somnath Trust)"
+      }
+    ],
+    "official_site": null,
+    "sources": [
+      {
+        "title": "Incredible India - Nageshwar Jyotirlinga",
+        "url": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga"
+      },
+      {
+        "title": "Nageshwar Jyotirlinga - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
+      },
+      {
+        "title": "Aundha Nagnath Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
+      },
+      {
+        "title": "Jageshwar - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jageshwar"
+      },
+      {
+        "title": "eSamskriti - Nageshwar Mandir",
+        "url": "https://esamskriti.com/a/Gujarat/Nageshwar-Mandir.aspx"
+      },
+      {
+        "title": "Business Today - Sudarshan Setu inaugurated (25 Feb 2024)",
+        "url": "https://www.businesstoday.in/amp/india/story/pm-narendra-modi-inaugurates-indias-longest-cable-stayed-bridge-sudarshan-setu-in-dwarka-gujarat-418831-2024-02-25"
+      },
+      {
+        "title": "Thomas Cook blog - Nageshwar timings (travel company; UNVERIFIED)",
+        "url": "https://www.thomascook.in/blog/?p=161427"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": {
+      "note": "Three sites claim the Nagesh(war) Jyotirlinga. Dwarka, Gujarat is the most widely accepted (Shiva Purana: Darukavana by the western sea) and is used for lat/lon here. Maharashtra tradition honours Aundha Nagnath (Hingoli), reading Shankaracharya's stotra phrase about a southern town 'Sadanga' as Aundha. Others identify Jageshwar (Almora, Uttarakhand), linking 'Daruka-vana' with the deodar (daru) forests there.",
+      "alternates": [
+        {
+          "name": "Aundha Nagnath Temple",
+          "district": "Hingoli",
+          "state": "Maharashtra",
+          "lat": 19.5371,
+          "lon": 77.0415,
+          "source": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
+        },
+        {
+          "name": "Jageshwar temple group",
+          "district": "Almora",
+          "state": "Uttarakhand",
+          "lat": 29.6373,
+          "lon": 79.8547,
+          "source": "https://en.wikipedia.org/wiki/Jageshwar"
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Where is Nageshwar Jyotirlinga located?",
+        "a": "Near Dwarka in Devbhumi Dwarka district, Gujarat, about 16-18 km from Dwarka town on the road to Okha/Bet Dwarka. Aundha Nagnath (Maharashtra) and Jageshwar (Uttarakhand) are alternative claimants."
+      },
+      {
+        "q": "How tall is the Shiva statue at Nageshwar?",
+        "a": "The seated Shiva statue is about 80 ft tall (Incredible India)."
+      },
+      {
+        "q": "What are Nageshwar temple timings?",
+        "a": "No official temple website was found. Incredible India says dawn to dusk; travel sites cite about 6 AM-9 PM, but that is unverified, so confirm locally."
+      },
+      {
+        "q": "Can I cover Dwarkadhish, Nageshwar and Bet Dwarka in one day?",
+        "a": "Yes - they lie on one route, and the Sudarshan Setu bridge (opened February 2024) now links Okha to Bet Dwarka by road."
+      },
+      {
+        "q": "Which is the nearest airport to Nageshwar?",
+        "a": "Jamnagar (roughly 130 km); Porbandar (about 107 km) is another option. Dwarka railway station is about 18 km away."
+      }
+    ]
+  },
+  {
+    "order": 11,
+    "slug": "rameshwaram-jyotirlinga",
+    "name_en": "Rameshwaram (Ramanathaswamy) Jyotirlinga",
+    "name_hi": "रामेश्वरम् (रामनाथस्वामी) ज्योतिर्लिंग",
+    "temple_name": "Arulmigu Ramanathaswamy Temple, Rameswaram",
+    "town": "Rameswaram (Pamban island)",
+    "district": "Ramanathapuram",
+    "state": "Tamil Nadu",
+    "lat": 9.2881,
+    "lon": 79.3173,
+    "coord_source": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple",
+    "river_or_sea": "Bay of Bengal / Palk Strait - Agni Theertham sea-front",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) says that Rama, camped on the southern shore before crossing to Lanka, shaped a linga and prayed to Shiva for victory. Shiva appeared, blessed him and, at Rama's request, stayed as Rameshwara, the Lord worshipped by Rama. A widely told temple tradition adds that after the war Rama wished to cleanse himself of having slain Ravana, a learned Brahmin. Hanuman was sent to Kailash for a linga but was delayed, so Sita fashioned one from sand, which Rama consecrated as the Ramalingam. To honour Hanuman's effort, Rama decreed that the Vishwalingam brought from Kailash be worshipped first, a custom still followed in the temple.",
+    "story_beats": [
+      "Rama prayed by the southern sea",
+      "Sita shaped a linga of sand",
+      "Hanuman's linga is worshipped first",
+      "Rameshwaram: Lord of Rama"
+    ],
+    "history_facts": [
+      {
+        "date": "12th century",
+        "fact": "The Pandya dynasty expanded the temple; Sri Lankan king Parakramabahu I (1153-1186) was involved in building the sanctum.",
+        "source": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+      },
+      {
+        "date": "1763-1795",
+        "fact": "Muthuramalinga Sethupathi built the third corridor (Chokkatan Mandapam); outer corridors total about 3,850 ft with roughly 1,212 pillars.",
+        "source": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+      },
+      {
+        "date": "Feature",
+        "fact": "22 theerthams (wells and tanks) inside the temple, said to represent the arrows in Rama's quiver; Agni Theertham is the sea-front bath.",
+        "source": "https://www.incredibleindia.gov.in/en/tamil-nadu/rameswaram/sri-ramanathaswamy-temple"
+      },
+      {
+        "date": "6 April 2025",
+        "fact": "PM Narendra Modi inaugurated the new Pamban rail bridge, India's first vertical-lift sea bridge, on Ram Navami.",
+        "source": "https://www.newsonair.gov.in/pm-modi-inaugurates-sea-bridge-in-tamil-nadu-unveils-₹8300-cr-projects-on-ram-navami"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.incredibleindia.gov.in/en/tamil-nadu/rameswaram/sri-ramanathaswamy-temple (official HRCE site rameswaramramanathar.hrce.tn.gov.in unreachable on 2026-10-08)",
+      "temple_hours": "05:00-13:00 and 15:00-21:00",
+      "aartis": null,
+      "aartis_note": "Pooja schedule (including the early-morning Spadika Linga darshan) not verified from an official source.",
+      "special": "Ritual sequence: dip at Agni Theertham, then bath at the 22 theerthams inside (ticketed), then darshan. Paid quick darshan and theertham-bath tickets exist; prices reported by travel sites (approx. Rs 25 for theerthams, Rs 100-200 special darshan) are unverified.",
+      "online_booking": null,
+      "dress_code": null,
+      "dress_code_note": "Traditional dress (dhoti/veshti for men; saree/salwar for women) is widely expected; formal rule not verified.",
+      "rules": null
+    },
+    "open_season": "All year",
+    "best_months": "October-April (editorial); summers are hot and humid; NE monsoon rain Oct-Dec.",
+    "festivals": [
+      "Mahashivratri",
+      "Aadi Amavasya & Thirukalyanam (July-August)",
+      "Navaratri"
+    ],
+    "festivals_note": "Commonly observed festivals; exact dates should be checked with the HRCE temple office.",
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Madurai International Airport",
+          "km": "approx. 175 (approximate)"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Rameswaram railway station",
+          "km": "approx. 2 (approximate)"
+        }
+      ],
+      "road": "By road over the Pamban road bridge from Mandapam; by rail over the new Pamban vertical-lift bridge (opened April 2025).",
+      "source": "https://www.incredibleindia.gov.in/en/tamil-nadu/rameswaram/sri-ramanathaswamy-temple (airport/station names); distances approximate"
+    },
+    "nearby": [
+      {
+        "name": "Agni Theertham",
+        "km": "approx. 0.2"
+      },
+      {
+        "name": "Gandhamadhana Parvatham (Rama's footprints)",
+        "km": "approx. 3"
+      },
+      {
+        "name": "Dr APJ Abdul Kalam National Memorial",
+        "km": "approx. 7-8"
+      },
+      {
+        "name": "Pamban Bridge",
+        "km": "approx. 12"
+      },
+      {
+        "name": "Dhanushkodi / Arichal Munai",
+        "km": "approx. 20-25"
+      }
+    ],
+    "nearby_note": "Distances approximate (editorial).",
+    "official_site": "https://rameswaramramanathar.hrce.tn.gov.in",
+    "sources": [
+      {
+        "title": "Incredible India - Sri Ramanathaswamy Temple",
+        "url": "https://www.incredibleindia.gov.in/en/tamil-nadu/rameswaram/sri-ramanathaswamy-temple"
+      },
+      {
+        "title": "Ramanathaswamy Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+      },
+      {
+        "title": "News On Air - PM inaugurates sea bridge on Ram Navami (6 Apr 2025)",
+        "url": "https://www.newsonair.gov.in/pm-modi-inaugurates-sea-bridge-in-tamil-nadu-unveils-₹8300-cr-projects-on-ram-navami"
+      },
+      {
+        "title": "TN HRCE - Arulmigu Ramanathaswamy Temple (official)",
+        "url": "https://rameswaramramanathar.hrce.tn.gov.in"
+      },
+      {
+        "title": "Thomas Cook blog - Rameshwaram temple guide (travel company; UNVERIFIED fees)",
+        "url": "https://www.thomascook.in/blog/india-holidays/rameshwaram-temple-guide-timings-darshan/"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "What are Rameswaram temple timings?",
+        "a": "5:00 AM-1:00 PM and 3:00 PM-9:00 PM (Incredible India). Confirm special-darshan hours locally."
+      },
+      {
+        "q": "What are the 22 theerthams in Rameswaram?",
+        "a": "Twenty-two sacred wells and tanks inside the temple; pilgrims bathe in them in sequence after a dip at Agni Theertham, before darshan."
+      },
+      {
+        "q": "Which Jyotirlinga is in the south of India?",
+        "a": "Rameshwaram (Ramanathaswamy) in Tamil Nadu is the southernmost; Mallikarjuna at Srisailam, Andhra Pradesh, is the other southern Jyotirlinga."
+      },
+      {
+        "q": "Which linga is worshipped first at Rameswaram?",
+        "a": "The Vishwalingam brought by Hanuman from Kailash, by Rama's command, before the Ramalingam made of sand."
+      },
+      {
+        "q": "How do I reach Rameswaram?",
+        "a": "Fly to Madurai (about 175 km) and drive, or take a train to Rameswaram station over the new Pamban bridge."
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "slug": "grishneshwar-jyotirlinga",
+    "name_en": "Grishneshwar (Ghrishneshwar) Jyotirlinga",
+    "name_hi": "घृष्णेश्वर ज्योतिर्लिंग",
+    "temple_name": "Shri Grishneshwar (Ghushmeshwar) Temple, Verul",
+    "town": "Verul (Ellora)",
+    "district": "Chhatrapati Sambhajinagar (formerly Aurangabad)",
+    "state": "Maharashtra",
+    "lat": 20.025,
+    "lon": 75.1699,
+    "coord_source": "https://en.wikipedia.org/wiki/Ghrishneshwar_Temple",
+    "river_or_sea": "Shivalaya Teerth tank (sacred tank beside the temple)",
+    "altitude_m": null,
+    "legend_summary": "The Shiva Purana (Koti Rudra Samhita) tells of the Brahmin Sudharma and his wife Sudeha, who had no children. Sudeha urged her husband to marry her younger sister Ghushma, a devoted worshipper who shaped and worshipped 101 clay lingas every day before immersing them in a nearby pond. Ghushma bore a son, and Sudeha's jealousy grew until she killed the young man and threw his body into the same pond. Ghushma calmly continued her worship, and by Shiva's grace her son came back to life. Shiva wished to punish Sudeha, but Ghushma begged him to forgive her sister and to stay at that spot for the good of all. He remained as Ghushmeshwar.",
+    "story_beats": [
+      "Ghushma worshipped 101 clay lingas",
+      "Jealousy took her son's life",
+      "Faith revived him; she forgave",
+      "Shiva stayed as Ghushmeshwar"
+    ],
+    "history_facts": [
+      {
+        "date": "13th-14th century",
+        "fact": "The temple was destroyed by Delhi Sultanate forces and later suffered repeated damage during the Mughal-Maratha conflicts.",
+        "source": "https://en.wikipedia.org/wiki/Ghrishneshwar_Temple"
+      },
+      {
+        "date": "16th century",
+        "fact": "Maloji Bhosale, grandfather of Chhatrapati Shivaji, restored the temple.",
+        "source": "https://en.wikipedia.org/wiki/Ghrishneshwar_Temple"
+      },
+      {
+        "date": "1729 / 18th century",
+        "fact": "The present structure dates from an 18th-century rebuild: Wikipedia credits Gautama Bai Holkar (1729), while popular accounts credit Ahilyabai Holkar.",
+        "source": "https://en.wikipedia.org/wiki/Ghrishneshwar_Temple"
+      },
+      {
+        "date": "Custom",
+        "fact": "Men must be bare-chested to enter the garbhagriha, and devotees may touch the linga.",
+        "source": "https://www.incredibleindia.gov.in/en/maharashtra/chhatrapati-sambhaji-nagar/grishneshwar-temple"
+      }
+    ],
+    "darshan": {
+      "as_of": "2026-10-08",
+      "source": "https://www.incredibleindia.gov.in/en/maharashtra/chhatrapati-sambhaji-nagar/grishneshwar-temple (no official temple website located)",
+      "temple_hours": "05:30-21:30",
+      "aartis": [
+        {
+          "name": "Morning Aarti",
+          "time": "05:30"
+        },
+        {
+          "name": "Noon Aarti",
+          "time": "12:00"
+        },
+        {
+          "name": "Evening Aarti",
+          "time": "19:00"
+        },
+        {
+          "name": "Shayan Aarti",
+          "time": "21:30"
+        }
+      ],
+      "special": "General darshan free; special puja/abhishek booked at temple counters (travel reports).",
+      "online_booking": null,
+      "dress_code": "Men must remove shirts/vests to enter the sanctum (garbhagriha).",
+      "rules": "Devotees may touch the linga."
+    },
+    "open_season": "All year",
+    "best_months": "July-March (editorial): monsoon and winter are pleasant; combine with Ellora (Ellora Caves are closed on Tuesdays - verify).",
+    "festivals": [
+      "Mahashivratri",
+      "Shravan Mondays"
+    ],
+    "how_to_reach": {
+      "airport": [
+        {
+          "name": "Chhatrapati Sambhajinagar (Aurangabad) Airport",
+          "km": "approx. 30-37"
+        }
+      ],
+      "railway": [
+        {
+          "name": "Chhatrapati Sambhajinagar (Aurangabad) railway station",
+          "km": "approx. 30"
+        }
+      ],
+      "road": "About 30 km north-west of Chhatrapati Sambhajinagar city; 1.5 km from Ellora Caves.",
+      "source": "https://en.wikipedia.org/wiki/Ghrishneshwar_Temple"
+    },
+    "nearby": [
+      {
+        "name": "Ellora Caves (UNESCO World Heritage)",
+        "km": 1.5
+      },
+      {
+        "name": "Bhadra Maruti temple, Khuldabad",
+        "km": "approx. 4"
+      },
+      {
+        "name": "Daulatabad (Devagiri) Fort",
+        "km": "approx. 15"
+      },
+      {
+        "name": "Bibi ka Maqbara",
+        "km": "approx. 30"
+      },
+      {
+        "name": "Ajanta Caves",
+        "km": "approx. 100"
+      }
+    ],
+    "official_site": null,
+    "sources": [
+      {
+        "title": "Incredible India - Grishneshwar Temple",
+        "url": "https://www.incredibleindia.gov.in/en/maharashtra/chhatrapati-sambhaji-nagar/grishneshwar-temple"
+      },
+      {
+        "title": "Ghrishneshwar Temple - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ghrishneshwar_Temple"
+      },
+      {
+        "title": "Thomas Cook blog - Grishneshwar guide (travel company; distances UNVERIFIED)",
+        "url": "https://www.thomascook.in/blog/india-holidays/grishneshwar-jyotirlinga-temple-guide/"
+      },
+      {
+        "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
+        "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      },
+      {
+        "title": "Jyotirlinga - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jyotirlinga"
+      }
+    ],
+    "disputes": null,
+    "faqs": [
+      {
+        "q": "What are Grishneshwar temple timings?",
+        "a": "5:30 AM to 9:30 PM, with aartis at 5:30 AM, 12 noon, 7 PM and the Shayan Aarti at 9:30 PM (Incredible India)."
+      },
+      {
+        "q": "Why do men remove their shirts at Grishneshwar?",
+        "a": "By local tradition men enter the sanctum bare-chested; devotees may touch the linga."
+      },
+      {
+        "q": "Which is the 12th Jyotirlinga?",
+        "a": "Grishneshwar (Ghushmeshwar) near Ellora is traditionally listed twelfth and last."
+      },
+      {
+        "q": "How far is Grishneshwar from Ellora Caves?",
+        "a": "About 1.5 km - most visitors combine the two."
+      },
+      {
+        "q": "How far is Grishneshwar from Chhatrapati Sambhajinagar (Aurangabad)?",
+        "a": "About 30 km by road; the airport is roughly 30-37 km away."
+      }
+    ]
+  }
+]

@@ -1,0 +1,3281 @@
+[
+  {
+    "slug": "naina-devi-bilaspur",
+    "group": "himachal-5",
+    "name_en": "Shri Naina Devi Ji Temple",
+    "name_hi": "श्री नैना देवी जी मंदिर",
+    "devi_form": "Naina Devi, worshipped as Mahishasuramardini (Mahishapeeth); pindi form",
+    "bhairav": "Krodhish (Krodhishwar) - per compiled 51-peeth table on Wikipedia; not confirmed by temple/government source",
+    "body_part": "Eyes - Wikipedia specifies the right eye; HP district site says only 'limbs of Sati' and Incredible India says 'eyes'. Note: Naina Devi temple in Nainital (Uttarakhand) also claims the eyes.",
+    "lists": [
+      "51-peeth (as described by HP district administration; popular compiled lists)",
+      "saat-behna-7",
+      "nau-devi-9",
+      "himachal-5"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Naina Devi",
+    "district": "Bilaspur",
+    "state": "Himachal Pradesh",
+    "lat": 31.306,
+    "lon": 76.5364,
+    "coord_source": "https://en.wikipedia.org/wiki/Naina_Devi",
+    "legend_summary": "When grieving Shiva carried Sati's body across the worlds, Vishnu's Sudarshan Chakra divided it, and tradition holds that her eyes came to rest on this Shivalik hilltop above the Gobind Sagar. Centuries later the forgotten spot was revealed by a Gujjar herd boy named Naina, who saw a white cow pouring its milk over a stone. The Goddess told him in a dream that the stone was her pindi; Raja Bir Chand then raised a shrine and named it after the boy. Another strand links the name to the Devi plucking out Mahishasura's eyes, hence 'Mahishapeeth'.",
+    "story_beats": [
+      "Sati's eyes fall on Shivalik hill",
+      "A white cow showers milk",
+      "Herd boy Naina dreams of Devi",
+      "Raja Bir Chand builds her temple"
+    ],
+    "darshan": {
+      "open": "05:00-21:00",
+      "aarti": null,
+      "note": "Opening hours per Incredible India; aarti times not published on any official page found. Hours extend during melas.",
+      "as_of": "2026-10-08",
+      "source": "https://www.incredibleindia.gov.in/en/himachal-pradesh/bilaspur/shree-naina-devi-temple"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Shravan Ashtami / Shravan Navratri mela",
+        "start": null,
+        "end": null,
+        "note": "Major fair in Shravan (Jul-Aug) besides Chaitra and Ashwin Navratri; 2026/2027 dates not published by trust - verify.",
+        "as_of": "2026-10-08",
+        "source": "https://hpbilaspur.nic.in/tourist-place/sri-naina-devi-ji/"
+      }
+    ],
+    "how_to_reach": {
+      "air": "Chandigarh International Airport (IXC) ~100 km; Shimla (Jubbarhatti) ~170 km",
+      "rail": "Anandpur Sahib ~20-30 km (Incredible India says 20, district site 30); Kiratpur Sahib ~30 km",
+      "road": "Chandigarh ~100 km (district site; OSRM road route 106 km); Delhi ~350 km (OSRM 368 km); Bilaspur town: district site says ~85 km, OSRM shortest road ~56 km; Ghumarwin ~64 km (OSRM)",
+      "ropeway": "A cable car runs from the base of the hill to the hilltop temple (Wikipedia); length/fare/hours not verified. The proposed Anandpur Sahib-Naina Devi ropeway (3.85 km, est. Rs 175 crore) had seen no work as of Aug 2024 (The Tribune).",
+      "sources": [
+        "https://hpbilaspur.nic.in/tourist-place/sri-naina-devi-ji/",
+        "https://www.incredibleindia.gov.in/en/himachal-pradesh/bilaspur/shree-naina-devi-temple",
+        "https://www.tribuneindia.com/news/himachal/no-private-party-interested-punjab-hp-hold-talks-on-naina-devi-ropeway-project",
+        "OSRM/OpenStreetMap router (router.project-osrm.org), computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Gobind Sagar Lake",
+      "Bhakra Dam (~14 km from Nangal)",
+      "Anandpur Sahib",
+      "Naina Devi Wildlife Sanctuary"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://hpbilaspur.nic.in/tourist-place/sri-naina-devi-ji/",
+      "https://www.incredibleindia.gov.in/en/himachal-pradesh/bilaspur/shree-naina-devi-temple",
+      "https://en.wikipedia.org/wiki/Naina_Devi",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://www.tribuneindia.com/news/himachal/no-private-party-interested-punjab-hp-hold-talks-on-naina-devi-ropeway-project"
+    ],
+    "faqs": [
+      {
+        "q": "Which body part of Sati fell at Naina Devi?",
+        "a": "Tradition says her eyes (Wikipedia specifies the right eye); the name 'Naina' means eyes."
+      },
+      {
+        "q": "Is there a ropeway to Naina Devi temple?",
+        "a": "Yes, a cable car links the base to the hilltop; the much longer Anandpur Sahib ropeway is still only a proposal."
+      },
+      {
+        "q": "When is Naina Devi most crowded?",
+        "a": "During Chaitra and Ashwin Navratri and the Shravan Ashtami fair (Jul-Aug)."
+      },
+      {
+        "q": "How far is Naina Devi from Chandigarh?",
+        "a": "About 100-106 km by road; nearest railheads are Anandpur Sahib and Kiratpur Sahib."
+      }
+    ],
+    "unverified": [
+      "Aarti timings",
+      "Ropeway length/fare/hours",
+      "Shravan Ashtami 2026/27 dates",
+      "Official trust website"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "jwalamukhi-jwala-ji-kangra",
+    "group": "himachal-5",
+    "name_en": "Shri Jwalamukhi (Jwala Ji) Temple",
+    "name_hi": "श्री ज्वालामुखी (ज्वाला जी) मंदिर",
+    "devi_form": "Jwala / Ambika - worshipped as natural flames (jyotis), no idol; typically nine flames",
+    "bhairav": "Unmatta Bhairav - per compiled 51-peeth table on Wikipedia",
+    "body_part": "Tongue (HP Kangra district site, Wikipedia tables). Some legends add that Sati's yogic fire/clothes fell here too.",
+    "lists": [
+      "51-peeth",
+      "ashtadasha-18 (Wikipedia maps the stotram's 'Jwala' peetha here)",
+      "saat-behna-7",
+      "nau-devi-9",
+      "himachal-5"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Jawalamukhi",
+    "district": "Kangra",
+    "state": "Himachal Pradesh",
+    "lat": 31.8752,
+    "lon": 76.3243,
+    "coord_source": "https://en.wikipedia.org/wiki/Jwalamukhi_temple,_Himachal_Pradesh",
+    "legend_summary": "Here the Goddess has no idol: small blue flames rising from rock fissures are worshipped as her presence, at the spot where Sati's tongue is believed to have fallen. A cowherd once traced a mysterious girl who drank his cow's milk, and later a king located a burning flame in the hills and built a shrine. Legend says Mughal emperor Akbar tried to smother the fire with water and an iron cover, failed, and offered a golden chhatra that turned into an unknown metal. Geologists explain the flames as natural gas seeping from the ground.",
+    "story_beats": [
+      "Sati's tongue falls in Kangra",
+      "Flames burn without any idol",
+      "Akbar tries to douse them",
+      "His golden chhatra changes metal"
+    ],
+    "darshan": {
+      "open": {
+        "summer": "06:00-11:30, 12:30-22:00",
+        "winter": "07:00-11:00, 12:30-21:30"
+      },
+      "aarti": {
+        "summer": [
+          "06:00",
+          "20:00"
+        ],
+        "winter": [
+          "07:00",
+          "19:00"
+        ]
+      },
+      "note": "From the HP temples portal page; the same page carries text copied from another shrine, so treat as indicative. The Kangra district page instead gives 05:00-22:00 with Mangal, Bhog, evening and Shaiyan aartis ('approximate').",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://kangratemples.hp.gov.in/",
+        "https://hpkangra.nic.in/tourist-place/shri-jawalamukhi-mata-temple/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": "Gaggal (Kangra/Dharamshala) ~46-50 km; Chandigarh ~200 km; Shimla ~160 km",
+      "rail": "Narrow gauge: Jawalamukhi Road (Ranital) ~20 km; broad gauge: Pathankot ~120-140 km",
+      "road": "Kangra ~30-34 km; Dharamshala ~54-56 km; Chintpurni ~31 km (OSRM); Delhi ~480 km; Ghumarwin ~80 km (OSRM)",
+      "sources": [
+        "https://hpkangra.nic.in/tourist-place/shri-jawalamukhi-mata-temple/",
+        "https://kangratemples.hp.gov.in/",
+        "https://hpkangra.nic.in/tourist-places-distance-from-dharamshala/",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Tara Devi, Ashtabhuja and Bhairav temples in the complex town",
+      "Chintpurni (~31 km)",
+      "Baglamukhi, Bankhandi",
+      "Kangra Fort"
+    ],
+    "official_site": "https://kangratemples.hp.gov.in/",
+    "sources": [
+      "https://hpkangra.nic.in/tourist-place/shri-jawalamukhi-mata-temple/",
+      "https://kangratemples.hp.gov.in/",
+      "https://en.wikipedia.org/wiki/Jwalamukhi_temple,_Himachal_Pradesh",
+      "https://en.wikipedia.org/wiki/Jwala_(goddess)",
+      "https://eparlib.nic.in/bitstream/123456789/2005205/1/03_VII_11-03-1964_p14_p15_s528.pdf",
+      "https://www.tribuneindia.com/news/himachal/kangras-shaktipeeths-set-for-major-makeover/amp"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Jwala Ji?",
+        "a": "Her tongue, according to the Shakti Peeth tradition."
+      },
+      {
+        "q": "Why does the flame at Jwala Ji never go out?",
+        "a": "Devotees see it as the Devi herself; geologically it is natural gas seeping through rock fissures. ONGC drilled exploratory wells nearby from 1957."
+      },
+      {
+        "q": "Is there an idol in Jwalamukhi temple?",
+        "a": "No. The flames (usually counted as nine) are worshipped directly."
+      },
+      {
+        "q": "What did Akbar do at Jwalamukhi?",
+        "a": "By legend he tried to put out the flames, failed, and offered a golden umbrella (chhatra) that is said to have turned into an unknown metal."
+      }
+    ],
+    "unverified": [
+      "Exact current aarti schedule (two official pages disagree)"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "chintpurni-una",
+    "group": "himachal-5",
+    "name_en": "Mata Shri Chintpurni Temple",
+    "name_hi": "माता श्री चिंतपूर्णी मंदिर",
+    "devi_form": "Chhinnamastika (Chhinnamasta) - the self-decapitated Mahavidya",
+    "bhairav": "Rudra Mahadev - the official site says the dham is guarded by Shiva temples on four sides (Kaleshwar E, Narahna W, Muchhkund N, Shiv Bari S)",
+    "body_part": "Disputed: the Wikipedia compiled table says 'foot'; popular Himachal tradition says the forehead (mastak); the Wikipedia Chintpurni article says Sati's 'consciousness'. The official temple site cites the Chhinnamasta legend rather than a body part.",
+    "lists": [
+      "51-peeth (some popular lists; contested)",
+      "saat-behna-7",
+      "nau-devi-9",
+      "himachal-5"
+    ],
+    "classical_shakti_peeth": "contested",
+    "town": "Chintpurni (Chhaproh)",
+    "district": "Una",
+    "state": "Himachal Pradesh",
+    "lat": 31.80862,
+    "lon": 76.10287,
+    "coord_source": "https://en.wikipedia.org/wiki/Chintpurni",
+    "legend_summary": "Chintpurni is the seat of Chhinnamastika, the goddess shown holding her own severed head. The temple's own account says that after a great battle her companions Jaya and Vijaya still thirsted, so the Mother cut off her head to feed them with her blood. Scriptures hold that her abode is ringed by Shiva shrines on all four sides, which marks this hill. Pandit Mai Das, a devotee from Patiala state, received her darshan at Chhaproh village; because she removed his worries (chinta), the place became known as Chintpurni, and his descendants still serve as priests.",
+    "story_beats": [
+      "Devi offers her own head",
+      "Shiva guards all four directions",
+      "Mai Das receives her darshan",
+      "She who ends all worries"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": "Three daily aartis listed (Pratahkal, day, Sandhya) - times not published",
+      "note": "Official site lists aarti texts but no clock times; paid 'Sugam Darshan' booking available online. Darshan parchi (slip) from the guard is required per official Do's.",
+      "as_of": "2026-10-08",
+      "source": "https://matashrichintpurni.com/aarties.php"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Sawan Ashtami mela",
+        "start": null,
+        "end": null,
+        "note": "10-day fair in July-August per temple trust",
+        "as_of": "2026-10-08",
+        "source": "https://matashrichintpurni.com/matashri-chintpurni-festivals.php"
+      },
+      {
+        "name": "Asuj (Ashwin) Navratra mela",
+        "start": null,
+        "end": null,
+        "note": "10-day fair in October per temple trust",
+        "as_of": "2026-10-08",
+        "source": "https://matashrichintpurni.com/matashri-chintpurni-festivals.php"
+      },
+      {
+        "name": "New Year event",
+        "start": "28 Dec",
+        "end": "2 Jan",
+        "note": "Annual per temple trust",
+        "as_of": "2026-10-08",
+        "source": "https://matashrichintpurni.com/matashri-chintpurni-festivals.php"
+      },
+      {
+        "name": "Monthly Sankranti",
+        "start": null,
+        "end": null,
+        "note": "Every month",
+        "as_of": "2026-10-08",
+        "source": "https://matashrichintpurni.com/matashri-chintpurni-festivals.php"
+      }
+    ],
+    "how_to_reach": {
+      "air": "Gaggal (Kangra) - distance not verified",
+      "rail": "Una district stations (Una Himachal / Amb Andaura) - distances not verified",
+      "road": "~40 km north of Una (Wikipedia); Jwalamukhi ~31 km, Naina Devi ~112 km, Ghumarwin ~147 km by OSRM fastest route via Una (a shorter hill route may exist)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chintpurni",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Jwalamukhi (~31 km)",
+      "HPTDC Chintpurni Heights, Bharwain",
+      "Shiv Bari, Kaleshwar Mahadev"
+    ],
+    "official_site": "https://matashrichintpurni.com/",
+    "sources": [
+      "https://matashrichintpurni.com/history-and-mythology.php",
+      "https://matashrichintpurni.com/matashri-chintpurni-festivals.php",
+      "https://matashrichintpurni.com/dos_and_donts.php",
+      "https://en.wikipedia.org/wiki/Chintpurni",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Why is she called Chintpurni?",
+        "a": "Because she is believed to remove devotees' worries (chinta); the village was earlier called Chhaproh."
+      },
+      {
+        "q": "Who founded the Chintpurni temple?",
+        "a": "Tradition credits Pandit Mai Das, about 12 generations ago; his descendants are the temple priests."
+      },
+      {
+        "q": "Is Chintpurni one of the 51 Shakti Peeths?",
+        "a": "It is commonly counted, but texts and lists disagree on the body part (foot vs forehead)."
+      },
+      {
+        "q": "Can I book VIP/Sugam darshan at Chintpurni?",
+        "a": "The temple trust offers paid Sugam Darshan booking on matashrichintpurni.com; check current fee there."
+      }
+    ],
+    "unverified": [
+      "Darshan hours",
+      "Aarti clock times",
+      "Sugam Darshan fee",
+      "Rail/air distances"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "brajeshwari-kangra-devi",
+    "group": "himachal-5",
+    "name_en": "Shri Bajreshwari (Brajeshwari / Vajreshwari) Devi Temple, Kangra",
+    "name_hi": "श्री बज्रेश्वरी (ब्रजेश्वरी) देवी मंदिर, कांगड़ा",
+    "devi_form": "Vajreshwari - Durga with the thunderbolt (vajra); listed as Jayadurga in a compiled table; locally 'Kangrewali Devi'",
+    "bhairav": "Abhiru (Abhirunatheshwar) - per compiled 51-peeth table on Wikipedia",
+    "body_part": "Left breast (Kangra district site, Incredible India, Wikipedia)",
+    "lists": [
+      "51-peeth",
+      "saat-behna-7",
+      "nau-devi-9",
+      "himachal-5"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Kangra (Nagarkot)",
+    "district": "Kangra",
+    "state": "Himachal Pradesh",
+    "lat": 32.10183,
+    "lon": 76.26987,
+    "coord_source": "https://en.wikipedia.org/wiki/Bajreshwari_Mata_Temple,_Kangra",
+    "legend_summary": "Sati's left breast is believed to have fallen at Nagarkot, the old name of Kangra, making this the seat of Vajreshwari, the Durga who wields the thunderbolt. Tradition says the Pandavas built the first temple after the Goddess warned them in a dream. Its legendary wealth drew Mahmud of Ghazni, who plundered it several times, and the 1905 Kangra earthquake flattened the complex before it was rebuilt. Each Makar Sankranti, priests cover the pindi with butter (ghrit), recalling the Devi healing her battle wounds with ghee after fighting Mahishasura.",
+    "story_beats": [
+      "Sati's left breast falls at Nagarkot",
+      "Pandavas raise the first shrine",
+      "Ghazni loots, earthquake destroys",
+      "Butter-clad Devi each Sankranti"
+    ],
+    "darshan": {
+      "open": "06:00-12:00, 12:30-20:00",
+      "aarti": null,
+      "note": "Per Incredible India (closes at noon for ~30 min). Aarti times not verified.",
+      "as_of": "2026-10-08",
+      "source": "https://incredibleindia.gov.in/en/himachal-pradesh/kangra/brajeshwari-devi-temple"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Makar Sankranti Ghrit (butter) festival",
+        "start": null,
+        "end": null,
+        "note": "Seven-day fair at Makar Sankranti (mid-January) with butter sculptures and puja, per Kangra district",
+        "as_of": "2026-10-08",
+        "source": "https://hpkangra.nic.in/?p=25713"
+      }
+    ],
+    "how_to_reach": {
+      "air": "Gaggal airport is ~8 km from Kangra town (district site)",
+      "rail": "Kangra (narrow gauge, Kangra Valley Railway) ~11 km per district site; broad gauge Pathankot",
+      "road": "Jwalamukhi ~36 km, Chamunda ~22 km (OSRM); Ghumarwin ~115 km (OSRM)",
+      "sources": [
+        "https://hpkangra.nic.in/kangra-pilgrimage/",
+        "https://hpkangra.nic.in/how-to-reach/",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Kangra Fort",
+      "Chamunda Nandikeshwar Dham",
+      "Masroor rock-cut temples",
+      "Dharamshala-McLeodganj"
+    ],
+    "official_site": "https://kangratemples.hp.gov.in/",
+    "sources": [
+      "https://hpkangra.nic.in/kangra-pilgrimage/",
+      "https://incredibleindia.gov.in/en/himachal-pradesh/kangra/brajeshwari-devi-temple",
+      "https://en.wikipedia.org/wiki/Bajreshwari_Mata_Temple,_Kangra",
+      "https://hpkangra.nic.in/?p=25713"
+    ],
+    "faqs": [
+      {
+        "q": "Which body part of Sati fell at Kangra Devi?",
+        "a": "Her left breast, per the Shakti Peeth tradition."
+      },
+      {
+        "q": "What is the butter (ghrit) festival at Brajeshwari?",
+        "a": "At Makar Sankranti the pindi is decorated with butter and a week-long fair is held."
+      },
+      {
+        "q": "Is Brajeshwari the same as Kangra Devi?",
+        "a": "Yes - Bajreshwari, Brajeshwari, Vajreshwari and Kangrewali Devi are names of the same temple."
+      },
+      {
+        "q": "How far is Brajeshwari from Jwala Ji?",
+        "a": "Roughly 30-36 km by road."
+      }
+    ],
+    "unverified": [
+      "Aarti times",
+      "Exact 2027 Makar Sankranti fair dates"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "chamunda-nandikeshwar-dham-kangra",
+    "group": "himachal-5",
+    "name_en": "Shri Chamunda Nandikeshwar Dham",
+    "name_hi": "श्री चामुंडा नंदिकेश्वर धाम",
+    "devi_form": "Chamunda (fierce form of Durga/Chandika), with Shiva as Nandikeshwar in a cave shrine",
+    "bhairav": null,
+    "body_part": null,
+    "lists": [
+      "himachal-5 (local pilgrimage grouping)",
+      "saat-behna-7",
+      "nau-devi-9"
+    ],
+    "classical_shakti_peeth": false,
+    "classical_note": "Not in the 51/52 classical lists; revered as one of Himachal's five major Devi shrines by local tradition (Wikipedia; Kangra district site).",
+    "town": "Padar (Chamunda), near Dharamshala",
+    "district": "Kangra",
+    "state": "Himachal Pradesh",
+    "lat": 32.1483,
+    "lon": 76.4192,
+    "coord_source": "https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir",
+    "legend_summary": "In the Devi Mahatmya, a fierce warrior goddess sprang from the furrowed brow of the Devi during the war with the asuras and beheaded the demon generals Chanda and Munda; for this she was named Chamunda. On the banks of the Baner river below the Dhauladhar, a 16th-century king and priest asked the Goddess to let them move her remote hilltop shrine (Aadi Himani Chamunda) somewhere reachable. She showed the priest in a dream where her old idol lay buried; when others could not lift it, he carried it alone after bathing and approaching with reverence.",
+    "story_beats": [
+      "Devi's brow births a warrior",
+      "Chanda and Munda are slain",
+      "A priest dreams of hidden idol",
+      "Shrine moves down to Baner river"
+    ],
+    "darshan": {
+      "open": "approx. 06:00-19:00/20:00",
+      "aarti": null,
+      "note": "Kangra district page says 'generally' open 6 AM to 7 or 8 PM; not an exact schedule.",
+      "as_of": "2026-10-08",
+      "source": "https://hpkangra.nic.in/tourist-place/shri-chamunda-nandikeshwar-dham/"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": "Gaggal (Kangra) ~25 km (Wikipedia)",
+      "rail": "Kangra (narrow gauge) ~14 km; Pathankot broad gauge ~90 km (Wikipedia)",
+      "road": "Dharamshala 15 km (Kangra district); Kangra/Brajeshwari ~22 km (OSRM); Katra ~241 km via Pathankot (OSRM); Ghumarwin ~113 km (OSRM)",
+      "sources": [
+        "https://hpkangra.nic.in/tourist-places-distance-from-dharamshala/",
+        "https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Aadi Himani Chamunda (original hilltop shrine)",
+      "Nandikeshwar cave shrine",
+      "Dharamshala & McLeodganj",
+      "Palampur tea gardens"
+    ],
+    "official_site": "https://kangratemples.hp.gov.in/",
+    "sources": [
+      "https://hpkangra.nic.in/tourist-place/shri-chamunda-nandikeshwar-dham/",
+      "https://hpkangra.nic.in/kangra-pilgrimage/",
+      "https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir",
+      "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"
+    ],
+    "faqs": [
+      {
+        "q": "Is Chamunda Devi Kangra a Shakti Peeth?",
+        "a": "Not in the classical 51/52 lists; it is one of Himachal's five major Devi shrines by local tradition."
+      },
+      {
+        "q": "Why is she called Chamunda?",
+        "a": "Because she killed the demons Chanda and Munda (Devi Mahatmya)."
+      },
+      {
+        "q": "How far is Chamunda Devi from Dharamshala?",
+        "a": "About 15 km."
+      },
+      {
+        "q": "What is Aadi Himani Chamunda?",
+        "a": "The original, much higher hilltop shrine; the present temple was set up lower for easier access."
+      }
+    ],
+    "unverified": [
+      "Exact darshan/aarti timings"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "vaishno-devi-katra",
+    "group": "nau-devi",
+    "name_en": "Shri Mata Vaishno Devi (Bhawan), Trikuta",
+    "name_hi": "श्री माता वैष्णो देवी",
+    "devi_form": "Vaishno Devi - three natural pindis of Mahakali, Mahalakshmi and Mahasaraswati in a cave",
+    "bhairav": "Bhairon Nath (Bhairav) - his temple above Bhawan is visited to 'complete' the yatra",
+    "body_part": "Contested: one tradition says the skull, another the right arm (a hand-shaped rock in the cave); scholars note other texts place the right arm elsewhere (e.g. Gandarbal, Kashmir).",
+    "lists": [
+      "108/64-peeth traditions (per Wikipedia)",
+      "saat-behna-7 (the 'elder sister')",
+      "nau-devi-9"
+    ],
+    "classical_shakti_peeth": false,
+    "classical_note": "Not in the Pithanirnaya-style 51 lists or the Ashtadasha-18; counted in broader 64/108 traditions.",
+    "town": "Katra (base) / Bhawan on Trikuta hill",
+    "district": "Reasi",
+    "state": "Jammu and Kashmir",
+    "lat": 33.0299,
+    "lon": 74.9482,
+    "coord_source": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple",
+    "legend_summary": "High on the three-peaked Trikuta mountain, the Mother is worshipped not as a statue but as three natural rock pindis inside a narrow cave washed by the Charan Ganga stream. Popular tradition says the cave was revealed to Pandit Shridhar of Hansali village near Katra, and that the tantric Bhairon Nath pursued the divine girl up the mountain until she slew him; forgiven, he asked that pilgrims visit his shrine too, so the yatra ends at Bhairon temple. Some devotees regard a hand-shaped rock in the cave as Sati's fallen arm.",
+    "story_beats": [
+      "Trikuta's cave holds three pindis",
+      "Pandit Shridhar finds the shrine",
+      "Bhairon chases, then is forgiven",
+      "Yatra completes at Bhairon temple"
+    ],
+    "darshan": {
+      "open": "Round the clock except aarti periods",
+      "aarti": "Twice daily: just before sunrise and just after sunset; ~2 hours each, darshan suspended",
+      "note": "Daily capacity about 30,000-35,000; during peak rush registration halts ('waiting'). Attka Aarti seats bookable online.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://www.maavaishnodevi.org/blog/aarti",
+        "https://www.maavaishnodevi.org/blog/yatra-registration"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": "Jammu airport; Jammu-Katra ~50 km (Shrine Board), ~2 h by bus",
+      "rail": "Shri Mata Vaishno Devi Katra station (Jammu-Udhampur-Katra line per Shrine Board)",
+      "road": "Katra-Bhawan trek ~12 km (Wikipedia); Chamunda Devi-Katra ~241 km, Katra-Delhi ~649 km (OSRM)",
+      "registration": "Mandatory free RFID Yatra Access Card - Yatra Registration Counter near Katra bus stand (YRC-II on Udhampur road) or online at online.maavaishnodevi.org; cross Banganga checkpost within 6 hours of issue; one card per pilgrim.",
+      "helicopter": "Shrine Board helipads at Katra, Sanjichhat and Panchi; Katra-Sanjichhat shuttle bookable via official online portal (fares not verified)",
+      "battery_car": "Battery vehicles on Bhawan-Himkoti-Ardhkuwari route, with quotas for senior citizens and the disabled (Wikipedia)",
+      "ropeway": "Bhawan-Bhairon ropeway operating 09:00-17:00 (Shrine Board)",
+      "sources": [
+        "https://www.maavaishnodevi.org/blog/yatra-registration",
+        "https://www.maavaishnodevi.org/blog/how-reach-katra",
+        "https://www.maavaishnodevi.org/causes/bhawan-bhairo-ropeway",
+        "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+      ]
+    },
+    "nearby": [
+      "Bhairon Nath temple",
+      "Ardhkuwari (Garbh Joon)",
+      "Banganga, Charan Paduka",
+      "Nau Devi cave (Navadurga pindis) near Katra",
+      "Shiv Khori"
+    ],
+    "official_site": "https://www.maavaishnodevi.org/",
+    "sources": [
+      "https://www.maavaishnodevi.org/blog/yatra-registration",
+      "https://www.maavaishnodevi.org/blog/dos-donts",
+      "https://www.maavaishnodevi.org/blog/cloak-rooms",
+      "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple",
+      "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"
+    ],
+    "faqs": [
+      {
+        "q": "Is RFID card mandatory for Vaishno Devi?",
+        "a": "Yes. It is free, issued at Katra counters or online, and you must cross Banganga checkpost within 6 hours."
+      },
+      {
+        "q": "Is Vaishno Devi one of the 51 Shakti Peeths?",
+        "a": "Not in the classical 51 lists; it is counted in wider 64/108 traditions and its body-part claim is disputed."
+      },
+      {
+        "q": "Where does the Vaishno Devi helicopter land?",
+        "a": "At Sanjichhat helipad on the track; pilgrims walk the remaining stretch to Bhawan."
+      },
+      {
+        "q": "How long is the Vaishno Devi trek?",
+        "a": "About 12 km from Katra to Bhawan, plus the Bhairon climb (ropeway available from Bhawan)."
+      }
+    ],
+    "unverified": [
+      "Helicopter fares/timings",
+      "Sanjichhat-Bhawan walking distance",
+      "Battery car fares"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "mansa-devi-panchkula",
+    "group": "nau-devi",
+    "name_en": "Shri Mata Mansa Devi Temple, Panchkula",
+    "name_hi": "श्री माता मनसा देवी मंदिर, पंचकूला",
+    "devi_form": "Mansa Devi (wish-fulfilling form of Shakti); three pindis",
+    "bhairav": null,
+    "body_part": "Forehead - claimed by the Shrine Board's own history page (pindis 'found to be the forehead of Shri Sati'); not in the standard 51-peeth tables.",
+    "lists": [
+      "local-tradition (forehead)",
+      "saat-behna-7",
+      "nau-devi-9"
+    ],
+    "classical_shakti_peeth": false,
+    "classical_note": "Shrine Board calls it a renowned Shakti temple; it is absent from the compiled 51/52 tables.",
+    "town": "Bilaspur village, Mansa Devi Complex, Panchkula",
+    "district": "Panchkula",
+    "state": "Haryana",
+    "lat": 30.7653,
+    "lon": 76.8269,
+    "coord_source": "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir",
+    "legend_summary": "In the Shivalik foothills near Mani Majra, a cow is said to have offered its milk every day on three stones on a hilltop. Locals began worshipping the stones, and the Shrine Board's history says they came to be regarded as Sati's forehead, so the shrine was first called the temple of Mata Sati. Maharaja Gopal Singh of Mani Majra built the present temple in 1811-1815 and, by legend, walked to it daily through a tunnel from his fort. The Haryana government formed a Shrine Board in 1991 to run it.",
+    "story_beats": [
+      "A cow milks three hill stones",
+      "Sati's forehead, say devotees",
+      "Raja Gopal Singh builds, 1815",
+      "Wishes fulfilled at Mansa Devi"
+    ],
+    "darshan": {
+      "open": {
+        "summer": "04:00-22:00",
+        "winter": "05:00-21:00"
+      },
+      "aarti": {
+        "summer": [
+          "04:30-05:00",
+          "19:00-19:30"
+        ],
+        "winter": [
+          "05:30-06:00",
+          "18:00-18:30"
+        ]
+      },
+      "bhog": "11:00-11:15",
+      "note": "Per Shri Mata Mansa Devi Shrine Board website.",
+      "as_of": "2026-10-08",
+      "source": "https://mansadevi.org.in/"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Navratra melas (Chaitra & Ashwin)",
+        "start": null,
+        "end": null,
+        "note": "Two big melas a year organised by the Shrine Board",
+        "as_of": "2026-10-08",
+        "source": "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir"
+      }
+    ],
+    "how_to_reach": {
+      "air": "Chandigarh airport - distance not verified",
+      "rail": "Chandigarh / Panchkula area stations - distance not verified",
+      "road": "Delhi ~272 km (OSRM); Kalka Kali Mata ~25 km (OSRM); Naina Devi ~110 km (OSRM); ~10 km from Chandi Mandir (Wikipedia)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Patiala Shivalaya (1840) in the complex",
+      "Chandi Mandir",
+      "Kali Mata Mandir, Kalka",
+      "Pinjore Gardens"
+    ],
+    "official_site": "https://mansadevi.org.in/",
+    "sources": [
+      "https://mansadevi.org.in/",
+      "https://mansadevi.org.in/mansa-devi-temple.php",
+      "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir",
+      "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"
+    ],
+    "faqs": [
+      {
+        "q": "Which Mansa Devi is in the Nau Devi Yatra?",
+        "a": "Usually the Panchkula (Chandigarh) temple, not Mansa Devi in Haridwar."
+      },
+      {
+        "q": "What are Mansa Devi Panchkula timings?",
+        "a": "Summer 4 AM-10 PM, winter 5 AM-9 PM, per the Shrine Board."
+      },
+      {
+        "q": "Is Mansa Devi Panchkula a Shakti Peeth?",
+        "a": "The Shrine Board says Sati's forehead is worshipped here, but it is not in the classical 51 tables."
+      },
+      {
+        "q": "Who built Mansa Devi temple?",
+        "a": "Maharaja Gopal Singh of Mani Majra, between 1811 and 1815."
+      }
+    ],
+    "unverified": [
+      "Air/rail distances"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "kali-mata-kalka",
+    "group": "nau-devi",
+    "name_en": "Shri Kali Mata Mandir, Kalka",
+    "name_hi": "श्री काली माता मंदिर, कालका",
+    "devi_form": "Kali (Kalika) - pindi",
+    "bhairav": null,
+    "body_part": null,
+    "lists": [
+      "nau-devi-9 (traditional variant)"
+    ],
+    "classical_shakti_peeth": false,
+    "town": "Kalka",
+    "district": "Panchkula",
+    "state": "Haryana",
+    "lat": 30.83,
+    "lon": 76.93,
+    "coord_precision": "town-level (Wikipedia Kalka)",
+    "coord_source": "https://en.wikipedia.org/wiki/Kalka",
+    "legend_summary": "Kalka takes its very name from Kalika Mata. The Shrine Board's account says that when demons such as Mahishasura, Chanda-Munda and Shumbha-Nishumbha drove the gods into the hills, the Adishakti appeared, took a many-armed form armed with the weapons of all the gods, and destroyed the demons at this place, becoming Kali Mata of Kalka. A second tradition credits the Pandavas: during their exile a cow named Shyama poured her milk on the Devi's pindi here, and the brothers founded a temple on the spot. It sits at the gateway to Himachal.",
+    "story_beats": [
+      "Gods flee demons into hills",
+      "Adishakti rises, armed by gods",
+      "Kali destroys the demon host",
+      "Pandavas honour the pindi"
+    ],
+    "darshan": {
+      "open": {
+        "summer": "04:00-22:00",
+        "winter": "05:00-21:00"
+      },
+      "aarti": [
+        "04:30/05:00",
+        "19:00/19:30"
+      ],
+      "note": "Per Shri Mata Mansa Devi Shrine Board, which manages the temple.",
+      "as_of": "2026-10-08",
+      "source": "https://mansadevi.org.in/kalka-temple.php"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": "Chandigarh airport - distance not verified",
+      "rail": "Kalka station (Kalka-Shimla railway terminus)",
+      "road": "Mansa Devi Panchkula ~25 km (OSRM); on the Chandigarh-Shimla highway",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalka",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Pinjore Gardens",
+      "Mansa Devi",
+      "Chandi Mandir",
+      "Kalka-Shimla toy train"
+    ],
+    "official_site": "https://mansadevi.org.in/kalka-temple.php",
+    "sources": [
+      "https://mansadevi.org.in/kalka-temple.php",
+      "https://en.wikipedia.org/wiki/Kalka",
+      "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"
+    ],
+    "faqs": [
+      {
+        "q": "Is Kalka Kali Mata part of Nau Devi Yatra?",
+        "a": "In the traditional nine-goddess list, yes (Kalika); many commercial packages drop it."
+      },
+      {
+        "q": "Who manages Kali Mata Mandir Kalka?",
+        "a": "The Shri Mata Mansa Devi Shrine Board, Panchkula."
+      },
+      {
+        "q": "How far is Kalka from Mansa Devi?",
+        "a": "About 25 km by road."
+      },
+      {
+        "q": "How did Kalka get its name?",
+        "a": "From the goddess Kalika (Kali)."
+      }
+    ],
+    "unverified": [
+      "Precise temple coordinates"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "shakumbhari-devi-saharanpur",
+    "group": "nau-devi",
+    "name_en": "Siddhpeeth Shri Shakumbhari Devi Temple",
+    "name_hi": "सिद्धपीठ श्री शाकुम्भरी देवी मंदिर",
+    "devi_form": "Shakambhari / Shatakshi (hundred-eyed nourisher), flanked by Bhima, Bhramari and Shatakshi",
+    "bhairav": "Bhura Dev (Bhairav), ~1 km away, traditionally visited first",
+    "body_part": null,
+    "lists": [
+      "nau-devi-9 (traditional variant)",
+      "siddhpeeth (local)"
+    ],
+    "classical_shakti_peeth": false,
+    "classical_note": "Some popular sources claim Sati's head fell here; not found in the compiled 51 tables - unverified.",
+    "town": "Jasmour, Behat tehsil",
+    "district": "Saharanpur",
+    "state": "Uttar Pradesh",
+    "lat": 30.2566,
+    "lon": 77.7425,
+    "coord_source": "https://en.wikipedia.org/wiki/Siddhpeeth_Shri_Shakumbhari_Devi,_Saharanpur",
+    "legend_summary": "The Devi Bhagavata Purana and Durga Saptashati tell of the demon Durgamasura, who seized the Vedas and brought a century-long drought upon the world. Answering the gods' prayers, the Mother appeared with a hundred eyes; her tears became rain, and vegetables and grain sprang from her body to feed all creatures, so she is called Shakambhari, the bearer of greens, and Shatakshi, the hundred-eyed. Her Shivalik shrine near Saharanpur shows her with Bhima, Bhramari and Shatakshi, and pilgrims first salute Bhura Dev, her Bhairav guardian.",
+    "story_beats": [
+      "Durgamasura steals the Vedas",
+      "A hundred-year famine grips earth",
+      "Devi's hundred eyes weep rain",
+      "Greens and grain feed the world"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://matashakumbharidevi.in/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Shakambhari Purnima / Shakambhari Navratri",
+        "start": null,
+        "end": null,
+        "note": "Paush month (Dec-Jan); 2026-27 date not verified",
+        "as_of": "2026-10-08",
+        "source": "https://en.wikipedia.org/wiki/Siddhpeeth_Shri_Shakumbhari_Devi,_Saharanpur"
+      }
+    ],
+    "how_to_reach": {
+      "air": "Dehradun ~80 km; Delhi IGI ~200 km (Wikipedia)",
+      "rail": "Saharanpur Junction ~40-45 km",
+      "road": "Delhi ~210 km; Mansa Devi Panchkula ~156 km (OSRM)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siddhpeeth_Shri_Shakumbhari_Devi,_Saharanpur",
+        "OSRM/OpenStreetMap router, computed 2026-10-08"
+      ]
+    },
+    "nearby": [
+      "Bhura Dev temple",
+      "Bala Sundari temple",
+      "Saharanpur"
+    ],
+    "official_site": "https://matashakumbharidevi.in/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Siddhpeeth_Shri_Shakumbhari_Devi,_Saharanpur",
+      "https://saharanpur.nic.in/tourist-place/shakumbhari-devi-temple/",
+      "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"
+    ],
+    "faqs": [
+      {
+        "q": "Where is Shakumbhari Devi temple?",
+        "a": "Near Jasmour, Behat tehsil, ~40 km north of Saharanpur (UP) in the Shivaliks."
+      },
+      {
+        "q": "Why visit Bhura Dev first?",
+        "a": "Bhura Dev is the Bhairav guardian; tradition is to pay respects there before the Devi."
+      },
+      {
+        "q": "Is Shakumbhari Devi a Shakti Peeth?",
+        "a": "It is called a Siddhpeeth; it is not in the standard 51 tables."
+      },
+      {
+        "q": "Is Shakumbhari in every Nau Devi package?",
+        "a": "No - it is in the traditional nine but most packages replace it with Himachal shrines."
+      }
+    ],
+    "unverified": [
+      "Timings",
+      "Official site content (not fetched)"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "baglamukhi-bankhandi-kangra",
+    "group": "nau-devi-variant",
+    "name_en": "Shri Bagalamukhi Mata Temple, Bankhandi",
+    "name_hi": "श्री बगलामुखी माता मंदिर, बनखंडी",
+    "devi_form": "Bagalamukhi / Pitambara - eighth of the ten Mahavidyas",
+    "bhairav": null,
+    "body_part": null,
+    "lists": [
+      "nau-devi-9 (commercial package variant)",
+      "mahavidya siddhpeeth (local)"
+    ],
+    "classical_shakti_peeth": false,
+    "town": "Bankhandi (near Dehra)",
+    "district": "Kangra",
+    "state": "Himachal Pradesh",
+    "lat": null,
+    "lon": null,
+    "coord_source": null,
+    "legend_summary": "Bagalamukhi, one of the ten Mahavidyas, is the yellow-clad goddess said to paralyse enemies and silence false speech. Kangra district's account says she rose from a lake of turmeric at Vishnu's request to still a cosmic storm, that the Pandavas raised this temple in a single night during their exile, and that Rama worshipped here before obtaining the Brahmastra. Everything is yellow: walls, robes, laddoos. Devotees come for night havans to win court cases and disputes. It is a frequent add-on in packaged Nau Devi tours between Jwalamukhi and Kangra.",
+    "story_beats": [
+      "Turmeric lake, a goddess rises",
+      "Storm stilled at Vishnu's plea",
+      "Pandavas build in one night",
+      "Yellow offerings for victory"
+    ],
+    "darshan": {
+      "open": "approx. 05:00-21:30",
+      "aarti": null,
+      "note": "Kangra district page says 'generally'; verify aarti locally.",
+      "as_of": "2026-10-08",
+      "source": "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Guru Purnima, Vasant Panchami",
+        "start": null,
+        "end": null,
+        "note": "Crowded days per district page",
+        "as_of": "2026-10-08",
+        "source": "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/"
+      }
+    ],
+    "how_to_reach": {
+      "air": "Gaggal ~40 km (district)",
+      "rail": "Kangra Mandir station ~40 km (district)",
+      "road": "On NH503 Chandigarh-Dharamshala highway, 30-40 km from Kangra town (district)",
+      "sources": [
+        "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/"
+      ]
+    },
+    "nearby": [
+      "Jwalamukhi",
+      "Kangra",
+      "Pong Dam lake"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/",
+      "https://hpkangra.nic.in/kangra-pilgrimage/",
+      "https://www.indianholiday.com/tours-of-india/nau-devi-darshan.html"
+    ],
+    "faqs": [
+      {
+        "q": "Why is everything yellow at Baglamukhi temple?",
+        "a": "Yellow (pitambara) is the goddess's colour; devotees wear and offer yellow."
+      },
+      {
+        "q": "Is Baglamukhi part of Nau Devi Yatra?",
+        "a": "Many commercial 9-Devi packages include it; the traditional nine do not."
+      },
+      {
+        "q": "Why do people do havan at Baglamukhi?",
+        "a": "Devotees seek victory in legal cases and protection from enemies."
+      },
+      {
+        "q": "Where is Baglamukhi temple in Himachal?",
+        "a": "At Bankhandi near Dehra, Kangra district, on NH503."
+      }
+    ],
+    "unverified": [
+      "Coordinates",
+      "Exact timings",
+      "Distance from Jwalamukhi"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "kamakhya-guwahati",
+    "group": "india-major",
+    "name_en": "Maa Kamakhya Temple",
+    "name_hi": "माँ कामाख्या मंदिर",
+    "devi_form": "Kamakhya - worshipped as a yoni-shaped rock with a natural spring; no idol",
+    "bhairav": "Umananda (Umanandeshwar)",
+    "body_part": "Yoni (genitals)",
+    "lists": [
+      "adi-4",
+      "ashtadasha-18 ('Hari kshetre Kamarupi')",
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Nilachal Hill, Guwahati",
+    "district": "Kamrup Metropolitan",
+    "state": "Assam",
+    "lat": 26.166426,
+    "lon": 91.705509,
+    "coord_source": "https://en.wikipedia.org/wiki/Kamakhya_Temple",
+    "legend_summary": "On Nilachal hill above the Brahmaputra stands the most celebrated of all Shakti Peethas, where Sati's yoni is said to have fallen. In the dark sanctum there is no image, only a cleft rock kept moist by an underground spring and draped in red. Kamakhya is the heart of Tantric worship and of the Dasa Mahavidya cult, with shrines to the ten wisdom goddesses on the hill. Every June the temple shuts for three days of Ambubachi, when the Goddess is believed to menstruate, and reopens to a vast gathering of sadhus and pilgrims.",
+    "story_beats": [
+      "Sati's yoni falls on Nilachal",
+      "A spring-fed rock, no idol",
+      "Ten Mahavidyas guard the hill",
+      "Ambubachi: doors close, then open"
+    ],
+    "darshan": {
+      "open": "08:00-13:00, 14:30-17:15 (regular schedule)",
+      "aarti": "19:30",
+      "note": "Snana 05:30, nitya puja 06:00; temple closes 13:00 for bhog. A 'special schedule' opens 09:00. Footwear left at camps on approach road.",
+      "as_of": "2026-10-08",
+      "source": "https://maakamakhya.org/"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      },
+      {
+        "name": "Ambubachi Mela 2026",
+        "start": "2026-06-22",
+        "end": "2026-06-26",
+        "note": "Closed to devotees 23-25 Jun, reopened 26 Jun morning",
+        "as_of": "2026-10-08",
+        "source": "https://maakamakhya.org/"
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Umananda island temple",
+      "Bhuvaneshwari temple on Nilachal",
+      "Brahmaputra riverfront"
+    ],
+    "official_site": "https://maakamakhya.org/",
+    "sources": [
+      "https://maakamakhya.org/",
+      "https://en.wikipedia.org/wiki/Kamakhya_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Is Kamakhya a Shakti Peeth?",
+        "a": "Yes - one of the four Adi peethas and the most revered; Sati's yoni is believed to have fallen here."
+      },
+      {
+        "q": "When is Kamakhya closed?",
+        "a": "For Ambubachi in June; in 2026 doors were closed 23-25 June."
+      },
+      {
+        "q": "Is there an idol in Kamakhya?",
+        "a": "No, a spring-moistened yoni-shaped rock is worshipped."
+      },
+      {
+        "q": "What are Kamakhya darshan timings?",
+        "a": "Regular schedule 8 AM-1 PM and 2:30-5:15 PM, aarti 7:30 PM (official site)."
+      }
+    ],
+    "unverified": [
+      "Airport/rail distances"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "kalighat-kolkata",
+    "group": "india-major",
+    "name_en": "Kalighat Kali Temple",
+    "name_hi": "कालीघाट काली मंदिर",
+    "devi_form": "Dakshina Kali",
+    "bhairav": "Nakuleshwar",
+    "body_part": "Toes of the right foot",
+    "lists": [
+      "adi-4",
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Kalighat",
+    "district": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.52,
+    "lon": 88.3419,
+    "coord_source": "https://en.wikipedia.org/wiki/Kalighat_Temple",
+    "legend_summary": "On an old course of the Hooghly in south Kolkata, Kalighat marks the place where toes of Sati's right foot are believed to have fallen. Its striking black-stone image of Kali is among the most recognisable icons of Bengal, and the city's very name is often linked to this ghat of Kali; a gilded dome now crowns the shrine. Nakuleshwar Shiva is her guardian Bhairav nearby. Counted among the four Adi peethas in several lists, the shrine is busiest on Tuesdays, Saturdays and during Kali Puja and Durga Puja.",
+    "story_beats": [
+      "Sati's right toes fall here",
+      "Black-stone Kali of Bengal",
+      "Nakuleshwar keeps watch",
+      "Kolkata's heart of Shakti"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://www.kalighatkalitemple.com/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalighat_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Nakuleshwar Bhairav temple",
+      "Dakshineswar Kali temple",
+      "Belur Math"
+    ],
+    "official_site": "https://www.kalighatkalitemple.com/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kalighat_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://www.kalighatkalitemple.com/"
+    ],
+    "faqs": [
+      {
+        "q": "What fell at Kalighat?",
+        "a": "The toes of Sati's right foot, per tradition."
+      },
+      {
+        "q": "Who is the Bhairav of Kalighat?",
+        "a": "Nakuleshwar."
+      },
+      {
+        "q": "Is Kalighat one of the Adi Shakti Peeths?",
+        "a": "Yes, in the four-Adi-peetha grouping used by several lists."
+      },
+      {
+        "q": "Best time to visit Kalighat?",
+        "a": "Early morning on weekdays; avoid Tuesdays/Saturdays and Kali Puja if you dislike crowds."
+      }
+    ],
+    "unverified": [
+      "Timings (official site not fetched)"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "tarapith-birbhum",
+    "group": "india-major",
+    "name_en": "Tarapith Temple",
+    "name_hi": "तारापीठ",
+    "devi_form": "Tara (second Mahavidya), shown nursing Shiva",
+    "bhairav": "Chandrachuda",
+    "body_part": "Third eye (per Wikipedia citing Puranic texts); some lists treat Tarapith as a Siddha peetha rather than one of the 51",
+    "lists": [
+      "51-peeth (some lists)",
+      "siddhpeeth"
+    ],
+    "classical_shakti_peeth": "contested",
+    "town": "Tarapith, near Rampurhat",
+    "district": "Birbhum",
+    "state": "West Bengal",
+    "lat": 24.1133,
+    "lon": 87.797,
+    "coord_source": "https://en.wikipedia.org/wiki/Tarapith_temple",
+    "legend_summary": "Beside a cremation ground on the Dwarka river, Tarapith is famed as a Tantric seat of Tara, the second of the ten Mahavidyas, where Sati's third eye is said to have fallen. Her best-known image shows the Goddess suckling Shiva, who had swallowed the poison of the churning ocean, to soothe his burning throat. The shrine is inseparable from the 19th-century mystic Bamakhepa, the 'mad saint' who lived and meditated in the cremation ground. Sadhaks still keep vigil there, and Kaushiki Amavasya draws huge crowds.",
+    "story_beats": [
+      "Sati's third eye falls here",
+      "Tara nurses poisoned Shiva",
+      "Bamakhepa meditates by pyres",
+      "Tantric vigil on Amavasya"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "http://tarapith.in/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": "Rampurhat (distance not verified)",
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tarapith_temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Bamakhepa's samadhi",
+      "Maha shmashan",
+      "Nalhateswari peetha"
+    ],
+    "official_site": "http://tarapith.in/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tarapith_temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "http://tarapith.in/"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Tarapith?",
+        "a": "Tradition says her third eye."
+      },
+      {
+        "q": "Who was Bamakhepa?",
+        "a": "A 19th-century Tara devotee and saint associated with Tarapith."
+      },
+      {
+        "q": "Nearest railway station to Tarapith?",
+        "a": "Rampurhat."
+      },
+      {
+        "q": "Is Tarapith among the 51 Shakti Peeths?",
+        "a": "Some lists include it; others call it a Siddha peetha."
+      }
+    ],
+    "unverified": [
+      "Timings",
+      "Rampurhat distance",
+      "Tara-nursing-Shiva iconography not cross-checked"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "vishalakshi-varanasi",
+    "group": "india-major",
+    "name_en": "Vishalakshi Temple",
+    "name_hi": "विशालाक्षी मंदिर",
+    "devi_form": "Vishalakshi ('wide-eyed'), also Manikarni",
+    "bhairav": "Kaal Bhairav",
+    "body_part": "Earring (manikarna) per many lists; the Devi Bhagavata gives the face; others say the eye",
+    "lists": [
+      "ashtadasha-18 ('Varanasyam Visalakshi')",
+      "51-peeth",
+      "108-devi-bhagavata (first in list)"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Meer Ghat, Varanasi",
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "lat": 25.3089,
+    "lon": 83.0108,
+    "coord_source": "https://en.wikipedia.org/wiki/Vishalakshi_Temple",
+    "legend_summary": "Near Meer Ghat, a short walk from Kashi Vishwanath, sits Vishalakshi, the wide-eyed Goddess of Kashi. The best-known tradition says the jewel of Sati's earring dropped here, which is why she is also called Manikarni and is linked to nearby Manikarnika Ghat; other texts speak of her eye or face instead. The Devi Bhagavata Purana names Vishalakshi first among its 108 seats of the Goddess, and Adi Shankara's Ashtadasha hymn includes her. Kaal Bhairav, the city's guardian, is regarded as her Bhairav.",
+    "story_beats": [
+      "Sati's earring jewel drops in Kashi",
+      "Wide-eyed Mother by Meer Ghat",
+      "First of Devi's 108 seats",
+      "Kaal Bhairav guards the city"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Vishalakshi_Temple"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vishalakshi_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Kashi Vishwanath",
+      "Manikarnika Ghat",
+      "Kaal Bhairav temple",
+      "Annapurna temple"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vishalakshi_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "What fell at Vishalakshi temple?",
+        "a": "Most lists say Sati's earring jewel; some say her eye or face."
+      },
+      {
+        "q": "Where is Vishalakshi temple?",
+        "a": "Near Meer Ghat, close to Kashi Vishwanath, Varanasi."
+      },
+      {
+        "q": "Is Vishalakshi one of the 18 Maha Shakti Peeths?",
+        "a": "Yes, it is named in the Ashtadasha stotram."
+      },
+      {
+        "q": "Who is the Bhairav of Vishalakshi?",
+        "a": "Kaal Bhairav."
+      }
+    ],
+    "unverified": [
+      "Timings",
+      "Official site"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "ambaji-banaskantha",
+    "group": "india-major",
+    "name_en": "Arasuri Ambaji Temple",
+    "name_hi": "अरासुरी अम्बाजी मंदिर",
+    "devi_form": "Amba (Arasuri Amba)",
+    "bhairav": "Batuk Bhairav",
+    "body_part": "Heart (per compiled Wikipedia table)",
+    "lists": [
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Ambaji (Gabbar hill nearby)",
+    "district": "Banaskantha",
+    "state": "Gujarat",
+    "lat": 24.33,
+    "lon": 72.85,
+    "coord_source": "https://en.wikipedia.org/wiki/Ambaji",
+    "legend_summary": "Ambaji, in the Aravalli hills on the Gujarat-Rajasthan border, is counted among the 51 Shakti Peethas; the compiled lists say Sati's heart fell on nearby Gabbar hill. The town temple is Gujarat's foremost Devi shrine and the focus of the Bhadarvi Poonam fair, when walkers stream in from across the state. Devotees also climb the 999-odd steps of Gabbar, believed to be the original seat of the Goddess. Ambaji lies about 20 km from Abu Road and 45 km from Mount Abu.",
+    "story_beats": [
+      "Sati's heart falls at Gabbar",
+      "Arasuri Amba of the Aravallis",
+      "Pilgrims walk for Bhadarvi Poonam",
+      "Climb Gabbar's thousand steps"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official site lists for 8 Oct 2026: aarti 07:30-08:00, darshan 08:00-11:30 & 12:30-16:30, aarti 19:00-19:30, darshan 19:30-21:00 (blocks unlabeled; likely morning/afternoon/evening). Verify.",
+      "as_of": "2026-10-08",
+      "source": "https://ambajitemple.in/"
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": "Abu Road ~20 km",
+      "road": "Mount Abu ~45 km; Palanpur ~65 km; Ahmedabad ~185 km",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ambaji"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Gabbar hill (999+ steps)",
+      "Kumbhariya Jain temples",
+      "Mount Abu"
+    ],
+    "official_site": "https://ambajitemple.in/",
+    "sources": [
+      "https://ambajitemple.in/",
+      "https://en.wikipedia.org/wiki/Ambaji",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Ambaji?",
+        "a": "Compiled lists say her heart, at Gabbar hill."
+      },
+      {
+        "q": "What is Bhadarvi Poonam at Ambaji?",
+        "a": "The big full-moon fair in Bhadrapad when lakhs walk to Ambaji."
+      },
+      {
+        "q": "How many steps to Gabbar?",
+        "a": "The temple site mentions 999+ steps."
+      },
+      {
+        "q": "Nearest station to Ambaji?",
+        "a": "Abu Road, about 20 km."
+      }
+    ],
+    "unverified": [
+      "Exact darshan block labels",
+      "Bhadarvi Poonam 2026/27 date"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "mahalakshmi-kolhapur",
+    "group": "india-major",
+    "name_en": "Shri Mahalakshmi (Ambabai) Temple, Kolhapur",
+    "name_hi": "श्री महालक्ष्मी (अंबाबाई) मंदिर, कोल्हापुर",
+    "devi_form": "Mahalakshmi / Ambabai",
+    "bhairav": null,
+    "body_part": "Eyes (per Wikipedia's Ashtadasha table); not consistently specified",
+    "lists": [
+      "ashtadasha-18 ('Kolhapure Mahalakshmi')",
+      "maharashtra-3.5-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Kolhapur",
+    "district": "Kolhapur",
+    "state": "Maharashtra",
+    "lat": 16.7,
+    "lon": 74.2333,
+    "coord_source": "https://en.wikipedia.org/wiki/Mahalakshmi_Temple,_Kolhapur",
+    "legend_summary": "Kolhapur's Ambabai temple honours Mahalakshmi as the protecting Mother of the city, and Adi Shankara's Ashtadasha hymn names 'Kolhapure Mahalakshmi' among the eighteen great seats. Local tradition says she came here to slay the demon Kolhasur, who gave the city its name, and Maharashtrians count it among the state's three and a half Shakti Peethas with Tuljapur, Mahur and Saptashrungi. The temple is attributed to the Chalukya-era ruler Karnadeva and remains Kolhapur's spiritual centre, crowded through Navratri.",
+    "story_beats": [
+      "Mahalakshmi comes to Kolhapur",
+      "Demon Kolhasur is slain",
+      "Named in Shankara's eighteen",
+      "Chalukya-era shrine of Ambabai"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "http://www.mahalaxmikolhapur.com/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahalakshmi_Temple,_Kolhapur"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Jyotiba temple",
+      "Panhala fort",
+      "Rankala lake"
+    ],
+    "official_site": "http://www.mahalaxmikolhapur.com/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mahalakshmi_Temple,_Kolhapur",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "http://www.mahalaxmikolhapur.com/"
+    ],
+    "faqs": [
+      {
+        "q": "Is Kolhapur Mahalakshmi a Shakti Peeth?",
+        "a": "Yes, it is in the Ashtadasha (18) list and Maharashtra's 3.5 peethas."
+      },
+      {
+        "q": "Why is it called Ambabai?",
+        "a": "Local name for the Mother Goddess Mahalakshmi."
+      },
+      {
+        "q": "Who built Kolhapur Mahalakshmi temple?",
+        "a": "Wikipedia credits Karnadeva of the Chalukya dynasty."
+      },
+      {
+        "q": "Which demon did she kill in Kolhapur?",
+        "a": "Kolhasur, per local tradition."
+      }
+    ],
+    "unverified": [
+      "Timings",
+      "Body part (varies)"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "tripura-sundari-udaipur",
+    "group": "india-major",
+    "name_en": "Tripura Sundari Temple (Matabari)",
+    "name_hi": "त्रिपुर सुंदरी मंदिर (माताबाड़ी)",
+    "devi_form": "Tripura Sundari (Shodashi)",
+    "bhairav": "Tripuresh",
+    "body_part": "Right foot including the big toe",
+    "lists": [
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Udaipur (Matabari)",
+    "district": "Gomati",
+    "state": "Tripura",
+    "lat": 23.51,
+    "lon": 91.5,
+    "coord_source": "https://en.wikipedia.org/wiki/Shakta_pithas",
+    "legend_summary": "In the hills near Udaipur in southern Tripura, the tortoise-backed mound of Matabari holds the shrine of Tripura Sundari, one of the 51 peethas, where part of Sati's right foot and big toe are believed to have fallen. Maharaja Dhanya Manikya raised the present cubical, triple-roofed temple in 1501 CE, and Tripuresh is her Bhairav. Because the hillock resembles a tortoise's hump, considered the holiest shape for a Shakti shrine, it is also called Kurma Peetha. Every Diwali a fair beside the temple draws more than two lakh pilgrims.",
+    "story_beats": [
+      "Sati's right foot falls here",
+      "Dhanya Manikya builds, 1501",
+      "Tortoise-hump hill: Kurma Peetha",
+      "Two lakh pilgrims at Diwali"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Agartala",
+      "Neermahal"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Tripura Sundari?",
+        "a": "Part of her right foot, including the big toe."
+      },
+      {
+        "q": "Who built Tripura Sundari temple?",
+        "a": "Maharaja Dhanya Manikya, in 1501 CE."
+      },
+      {
+        "q": "Where is Tripura Sundari temple?",
+        "a": "Matabari near Udaipur, Gomati district, Tripura."
+      },
+      {
+        "q": "Who is the Bhairav here?",
+        "a": "Tripuresh."
+      }
+    ],
+    "unverified": [
+      "Precise coordinates (2-decimal map value)",
+      "Timings"
+    ],
+    "coord_precision": "approx (Wikipedia list map)",
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "kanyakumari-bhagavathy",
+    "group": "india-major",
+    "name_en": "Devi Kanya Kumari (Bhagavathy Amman) Temple",
+    "name_hi": "देवी कन्याकुमारी (भगवती अम्मन) मंदिर",
+    "devi_form": "Kanya Kumari / Bala Bhadra - the virgin goddess",
+    "bhairav": "Nimish (Nimisheshwar) - per compiled table",
+    "body_part": "Back (per compiled Wikipedia table)",
+    "lists": [
+      "51-peeth (compiled lists)",
+      "skanda-purana-list ('Kanyaka')"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Kanyakumari",
+    "district": "Kanyakumari",
+    "state": "Tamil Nadu",
+    "lat": 8.08,
+    "lon": 77.55,
+    "coord_source": "https://en.wikipedia.org/wiki/Shakta_pithas",
+    "legend_summary": "At India's southern tip, where three seas meet, the virgin goddess Kanya Kumari stands with a rosary, waiting for Shiva. Tradition says she took this form to destroy Banasura, a powerful demon-king of the land who had won great boons through austerity; the saint Vadiraja Tirtha even describes her as Lakshmi descending to slay him. Worship here follows both gentle and fierce modes of rite. Compiled Shakti Peetha lists place Sati's back at this sacred cape, making it the southernmost seat of the Goddess.",
+    "story_beats": [
+      "Maiden goddess at land's end",
+      "Banasura terrorises the south",
+      "Kumari rises to slay him",
+      "Sati's back rests at the cape"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Devi_Kanya_Kumari"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devi_Kanya_Kumari"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Vivekananda Rock Memorial",
+      "Thiruvalluvar statue",
+      "Suchindram Thanumalayan temple"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Devi_Kanya_Kumari",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Is Kanyakumari temple a Shakti Peeth?",
+        "a": "Compiled lists include it, with Sati's back said to have fallen here."
+      },
+      {
+        "q": "Which demon did Kanya Kumari kill?",
+        "a": "Banasura, per legend."
+      },
+      {
+        "q": "Is there a dress code?",
+        "a": "Kerala-style temple customs are commonly reported; verify locally."
+      },
+      {
+        "q": "Who is Kanya Kumari's Bhairav?",
+        "a": "Nimish (Nimisheshwar) per compiled tables."
+      }
+    ],
+    "unverified": [
+      "Coordinates precision",
+      "Timings",
+      "Dress code",
+      "Maiden/wedding legend details"
+    ],
+    "coord_precision": "approx (Wikipedia list map)",
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "harsiddhi-ujjain",
+    "group": "india-major",
+    "name_en": "Harsiddhi Mata Temple, Ujjain",
+    "name_hi": "हरसिद्धि माता मंदिर, उज्जैन",
+    "devi_form": "Harsiddhi (Avanti Devi)",
+    "bhairav": "Lambkarna (per compiled table for the Ujjain/Avanti peetha)",
+    "body_part": "Elbow (compiled list entry for Avanti/Ujjain); separately, Wikipedia's Ashtadasha table links 'Ujjayinyam Mahakali' to the upper lip at Mahakaleshwar - identifications differ",
+    "lists": [
+      "51-peeth (Avanti, as commonly identified)",
+      "ashtadasha-18 (Ujjain Mahakali seat - identification disputed)"
+    ],
+    "classical_shakti_peeth": "contested",
+    "town": "Ujjain",
+    "district": "Ujjain",
+    "state": "Madhya Pradesh",
+    "lat": null,
+    "lon": null,
+    "coord_source": null,
+    "legend_summary": "Ujjain, ancient Avanti, appears in Shakti Peetha lists as the place where Sati's elbow fell, and the Harsiddhi temple near the Mahakaleshwar Jyotirlinga is widely identified with that seat. Adi Shankara's hymn also names 'Ujjayinyam Mahakali', a seat some match to Harsiddhi and others to Mahakaleshwar or Gadkalika, so sources disagree. Harsiddhi is the family goddess traditionally linked to King Vikramaditya. Its signature sight is a pair of tall lamp pillars that are lit with hundreds of wicks on festival evenings, especially during Navratri.",
+    "story_beats": [
+      "Sati's elbow falls at Avanti",
+      "Vikramaditya's guardian goddess",
+      "Lamp towers blaze at dusk",
+      "Near Mahakal's Jyotirlinga"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Shakta_pithas"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shakta_pithas"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Mahakaleshwar Jyotirlinga",
+      "Gadkalika",
+      "Ram Ghat on the Shipra"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Ujjain",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Is Harsiddhi Ujjain a Shakti Peeth?",
+        "a": "Commonly identified as the Avanti peetha where Sati's elbow fell, though sources differ."
+      },
+      {
+        "q": "What are the lamp pillars at Harsiddhi?",
+        "a": "Two tall deepstambhas lit on festival evenings."
+      },
+      {
+        "q": "Is Harsiddhi near Mahakaleshwar?",
+        "a": "Yes, both are in central Ujjain."
+      },
+      {
+        "q": "Which king is linked to Harsiddhi?",
+        "a": "Vikramaditya, by tradition."
+      }
+    ],
+    "unverified": [
+      "Coordinates",
+      "Timings",
+      "Lamp-pillar claims (not sourced here)",
+      "Vikramaditya link (not sourced here)"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "bhadrakali-kurukshetra",
+    "group": "india-major",
+    "name_en": "Shri Devikoop Bhadrakali Temple, Kurukshetra",
+    "name_hi": "श्री देवीकूप भद्रकाली मंदिर, कुरुक्षेत्र",
+    "devi_form": "Bhadrakali",
+    "bhairav": "Sthanu",
+    "body_part": "Ankle (compiled Wikipedia table); location given as Kurukshetra or Thanesar",
+    "lists": [
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Thanesar / Kurukshetra",
+    "district": "Kurukshetra",
+    "state": "Haryana",
+    "lat": 29.98,
+    "lon": 76.83,
+    "coord_source": "https://en.wikipedia.org/wiki/Shakta_pithas",
+    "legend_summary": "In Thanesar, the old core of Kurukshetra, the Bhadrakali shrine is counted among the 51 peethas as the place where Sati's ankle fell, with Shiva as Sthanu, the immovable, as its Bhairav. The temple is also called Devikoop, after the well into which the ankle is said to have dropped. Popular tradition links it to the Mahabharata: the Pandavas are said to have prayed here for victory before the great war, and Krishna's first haircut is also placed here by local belief. Devotees offer terracotta or metal horses after a wish is fulfilled.",
+    "story_beats": [
+      "Sati's ankle drops into a well",
+      "Sthanu Shiva stands guard",
+      "Pandavas pray before the war",
+      "Horses offered for wishes"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Shakta_pithas"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": "Chandigarh-Delhi corridor (Kurukshetra/Thanesar)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shakta_pithas"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Brahma Sarovar",
+      "Jyotisar",
+      "Sthaneshwar Mahadev"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Thanesar",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Kurukshetra?",
+        "a": "Her ankle, per compiled lists."
+      },
+      {
+        "q": "Why is it called Devikoop?",
+        "a": "The ankle is said to have fallen into a well (koop)."
+      },
+      {
+        "q": "Who is the Bhairav at Kurukshetra Shakti Peeth?",
+        "a": "Sthanu."
+      },
+      {
+        "q": "Is it on the Delhi-Chandigarh route?",
+        "a": "Yes, Kurukshetra/Thanesar is just off NH44."
+      }
+    ],
+    "unverified": [
+      "Coordinates precision",
+      "Timings",
+      "Mahabharata/horse-offering details (popular, not sourced)"
+    ],
+    "coord_precision": "approx (Wikipedia list map)",
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "chamundeshwari-mysuru",
+    "group": "india-major",
+    "name_en": "Sri Chamundeshwari Temple, Chamundi Hills",
+    "name_hi": "श्री चामुंडेश्वरी मंदिर, मैसूरु",
+    "devi_form": "Chamundeshwari",
+    "bhairav": null,
+    "body_part": "Hair (per Wikipedia's Ashtadasha table - 'Krauncha peetha')",
+    "lists": [
+      "ashtadasha-18 ('Chamunda Krauncha pattane')"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Chamundi Hills, Mysuru",
+    "district": "Mysuru",
+    "state": "Karnataka",
+    "lat": 12.272474,
+    "lon": 76.670611,
+    "coord_source": "https://en.wikipedia.org/wiki/Chamundeshwari_Temple",
+    "legend_summary": "Atop Chamundi Hills above Mysuru, Chamundeshwari is honoured as the slayer of Mahishasura, the buffalo-demon from whom Mysuru (Mahishuru) takes its name; Wikipedia's reading of Adi Shankara's Ashtadasha hymn identifies this hill with the Krauncha peetha, where Sati's hair fell. Navratri here is the heart of Mysuru Dasara, Karnataka's state festival. A stairway of a thousand steps, built in 1659, climbs the 3,000-foot hill, and a huge granite Nandi sits near the 700th step.",
+    "story_beats": [
+      "Mahishasura rules Mahishuru",
+      "Chamundeshwari slays the demon",
+      "1659 stairway of thousand steps",
+      "Mysuru Dasara honours her"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "http://srichamundeshwaridevi.in/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chamundeshwari_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Mysuru Palace",
+      "Monolithic Nandi on Chamundi Hills",
+      "Srirangapatna"
+    ],
+    "official_site": "http://srichamundeshwaridevi.in/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chamundeshwari_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Is Chamundeshwari temple a Shakti Peeth?",
+        "a": "It is identified with the Krauncha peetha of the Ashtadasha (18) list."
+      },
+      {
+        "q": "How did Mysuru get its name?",
+        "a": "From Mahishasura, the demon slain by the goddess."
+      },
+      {
+        "q": "When is Mysuru Dasara?",
+        "a": "During Sharad Navratri; Vijayadashami 20 Oct 2026."
+      },
+      {
+        "q": "Can you climb Chamundi Hills?",
+        "a": "Yes, by the stone stairway or by road."
+      }
+    ],
+    "unverified": [
+      "Timings"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "biraja-jajpur",
+    "group": "india-major",
+    "name_en": "Maa Biraja (Viraja) Temple, Jajpur",
+    "name_hi": "माँ बिरजा मंदिर, जाजपुर",
+    "devi_form": "Biraja / Girija (Durga as Mahishamardini)",
+    "bhairav": "Varaha (Varaheshwar)",
+    "body_part": "Navel",
+    "lists": [
+      "ashtadasha-18 ('Odhyane Girija' - Oddiyana peetha)",
+      "51-peeth",
+      "adi-4 (in some groupings/maps)"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Jajpur",
+    "district": "Jajpur",
+    "state": "Odisha",
+    "lat": 20.8338,
+    "lon": 86.3381,
+    "coord_source": "https://en.wikipedia.org/wiki/Biraja_Temple",
+    "legend_summary": "On the banks of the Baitarani at Jajpur, Biraja is the goddess of the Oddiyana peetha, where Sati's navel is believed to have fallen; Adi Shankara's hymn names her Girija. Jajpur is called Biraja Kshetra or Nabhi Gaya, and pilgrims come to offer pinda for ancestors here, as they do at Gaya. A sacred well here is the Nabhi Gaya, one of three Gayas with Sira Gaya in Bihar and Pada Gaya at Pithapuram. The temple is an Odisha state-protected monument and a major Durga Puja centre.",
+    "story_beats": [
+      "Sati's navel falls at Jajpur",
+      "Girija of Oddiyana peetha",
+      "Pinda offered at Nabhi Gaya",
+      "Baitarani's ancient Shakti seat"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Biraja_Temple"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Biraja_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Baitarani ghats",
+      "Ratnagiri-Udayagiri Buddhist sites"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Biraja_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Biraja?",
+        "a": "Her navel (nabhi)."
+      },
+      {
+        "q": "Why is Jajpur called Nabhi Gaya?",
+        "a": "Because pinda rites for ancestors are offered here, as at Gaya."
+      },
+      {
+        "q": "Is Biraja in Adi Shankara's 18 list?",
+        "a": "Yes, as Girija of Oddiyana."
+      },
+      {
+        "q": "Who is Biraja's Bhairav?",
+        "a": "Varaha (Varaheshwar)."
+      }
+    ],
+    "unverified": [
+      "Timings"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "sharda-maihar",
+    "group": "india-major",
+    "name_en": "Maa Sharda Temple, Maihar",
+    "name_hi": "माँ शारदा मंदिर, मैहर",
+    "devi_form": "Sharda (Saraswati form)",
+    "bhairav": "Chandeshwar - per compiled table (uncertain)",
+    "body_part": "Necklace (haar) - per Wikipedia; 'Maihar' popularly read as 'Mai ka haar'",
+    "lists": [
+      "51-peeth (compiled lists)"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Maihar (Trikuta hill)",
+    "district": "Maihar",
+    "state": "Madhya Pradesh",
+    "lat": 24.2612,
+    "lon": 80.7232,
+    "coord_source": "https://en.wikipedia.org/wiki/Maa_Sharda_Mandir,_Maihar",
+    "legend_summary": "On Trikuta hill above Maihar, the shrine of Maa Sharda marks the place where, by tradition, Sati's necklace fell, which many read in the town's name, 'Mai ka haar'. Pilgrims climb a long flight of steps to the hilltop. Local legend credits the warrior brothers Alha and Udal of the Bundeli ballads with discovering the forest shrine, and holds that Alha, granted immortality after twelve years of penance, still worships here before dawn, so that fresh flowers are found on the deity when the doors open.",
+    "story_beats": [
+      "Sati's necklace falls on Trikuta",
+      "Alha and Udal find the shrine",
+      "Alha's penance wins immortality",
+      "Fresh flowers at every dawn"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://www.maihartemple.com/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Maa_Sharda_Mandir,_Maihar"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Alha talab and akhara",
+      "Maihar gharana (Ustad Allauddin Khan)"
+    ],
+    "official_site": "https://www.maihartemple.com/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maa_Sharda_Mandir,_Maihar",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://www.maihartemple.com/"
+    ],
+    "faqs": [
+      {
+        "q": "Which part of Sati fell at Maihar?",
+        "a": "Her necklace, per tradition."
+      },
+      {
+        "q": "Is there a ropeway at Maihar?",
+        "a": "Yes, popularly reported; details not verified here."
+      },
+      {
+        "q": "Who were Alha and Udal?",
+        "a": "Legendary warrior brothers said to have found the shrine."
+      },
+      {
+        "q": "Where is Maihar?",
+        "a": "In Maihar district (formerly Satna), Madhya Pradesh."
+      }
+    ],
+    "unverified": [
+      "Timings",
+      "Ropeway details",
+      "Step count"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "bhramaramba-srisailam",
+    "group": "india-major",
+    "name_en": "Bhramaramba Devi, Srisailam",
+    "name_hi": "भ्रमरांबा देवी, श्रीशैलम",
+    "devi_form": "Bhramaramba (Bhramari)",
+    "bhairav": "Mallikarjuna (Jyotirlinga)",
+    "body_part": "Neck (upper part of neck per compiled lists)",
+    "lists": [
+      "ashtadasha-18 ('Sri Shaile Bhramarambika')",
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Srisailam",
+    "district": "Nandyal",
+    "state": "Andhra Pradesh",
+    "lat": 16.0742,
+    "lon": 78.8681,
+    "coord_source": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam",
+    "legend_summary": "In the Nallamala forests above the Krishna river, Srisailam is one of the rare places where a Jyotirlinga and a Shakti Peetha share one complex: Mallikarjuna Shiva and the goddess Bhramaramba, where Sati's neck is believed to have fallen. Her name recalls the legend in which the Goddess took the form of a swarm of black bees (bhramara) to destroy the demon Arunasura, who had a boon of safety from two- and four-legged beings. Devotees say a faint humming can still be heard behind her shrine.",
+    "story_beats": [
+      "Sati's neck falls in Nallamala",
+      "Shiva and Shakti share a hill",
+      "Devi becomes a swarm of bees",
+      "Arunasura falls; bees still hum"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://www.srisailadevasthanam.org/en-in/home"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Srisailam dam",
+      "Pathala Ganga",
+      "Sakshi Ganapati"
+    ],
+    "official_site": "https://www.srisailadevasthanam.org/en-in/home",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://www.srisailadevasthanam.org/en-in/home"
+    ],
+    "faqs": [
+      {
+        "q": "Is Srisailam both a Jyotirlinga and a Shakti Peeth?",
+        "a": "Yes - Mallikarjuna Jyotirlinga and Bhramaramba Shakti Peeth."
+      },
+      {
+        "q": "Which part of Sati fell at Srisailam?",
+        "a": "Her neck."
+      },
+      {
+        "q": "Why is she called Bhramaramba?",
+        "a": "She took the form of bees (bhramara) to kill Arunasura."
+      },
+      {
+        "q": "Where is Srisailam?",
+        "a": "Nandyal district, Andhra Pradesh, in the Nallamala hills."
+      }
+    ],
+    "unverified": [
+      "Timings (site needs JavaScript)",
+      "Bhramari bee legend not cross-checked in fetched sources"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "kamakshi-kanchipuram",
+    "group": "india-major",
+    "name_en": "Kamakshi Amman Temple",
+    "name_hi": "कामाक्षी अम्मन मंदिर",
+    "devi_form": "Kamakshi (Tripura Sundari / Lalita)",
+    "bhairav": "Ekambareshwar (for the Adi Kamakshi entry)",
+    "body_part": "Part of the abdomen/navel (Wikipedia tables give 'abdomen' for Kamakoti and 'navel' for Adi Kamakshi)",
+    "lists": [
+      "ashtadasha-18 ('Kamakshi Kanchika pure')",
+      "51-peeth (Adi Kamakshi)"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Kanchipuram",
+    "district": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "lat": 12.840684,
+    "lon": 79.703238,
+    "coord_source": "https://en.wikipedia.org/wiki/Kamakshi_Amman_Temple",
+    "legend_summary": "Kanchipuram, one of India's seven sacred cities, has Kamakshi as its presiding goddess, worshipped in a seated yogic pose as Lalita Tripura Sundari. Wikipedia's reading of the Ashtadasha hymn places the Kamakoti peetha here, and a separate small shrine, Adi Kamakshi, behind the main temple is listed among the 51 as the place where Sati's navel fell. Adi Shankara is closely linked with the temple and is said to have installed the Sri Chakra before the goddess. The shrine also contains a Divya Desam of Vishnu as Varaha.",
+    "story_beats": [
+      "Sati's navel rests at Kanchi",
+      "Kamakshi sits in yogic pose",
+      "Shankara installs the Sri Chakra",
+      "Shiva-Vishnu-Shakti city of temples"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Kamakshi_Amman_Temple"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kamakshi_Amman_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Ekambareswarar temple",
+      "Varadaraja Perumal temple",
+      "Kailasanathar temple"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kamakshi_Amman_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Is Kamakshi temple a Shakti Peeth?",
+        "a": "Yes, in the Ashtadasha 18; Adi Kamakshi is in the 51 list."
+      },
+      {
+        "q": "What fell at Kanchipuram?",
+        "a": "Part of Sati's abdomen/navel, per compiled lists."
+      },
+      {
+        "q": "Which form of Devi is Kamakshi?",
+        "a": "Lalita Tripura Sundari."
+      },
+      {
+        "q": "How far is Kanchipuram from Chennai?",
+        "a": "Not verified here; it is in the Chennai region."
+      }
+    ],
+    "unverified": [
+      "Timings",
+      "Sri Chakra claim (popular)"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "meenakshi-madurai",
+    "group": "india-major",
+    "name_en": "Meenakshi Amman Temple, Madurai",
+    "name_hi": "मीनाक्षी अम्मन मंदिर, मदुरै",
+    "devi_form": "Meenakshi (Parvati)",
+    "bhairav": null,
+    "body_part": null,
+    "lists": [
+      "popular-extended only (not in the 51 or 18 tables on Wikipedia)"
+    ],
+    "classical_shakti_peeth": false,
+    "town": "Madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "lat": null,
+    "lon": null,
+    "coord_source": null,
+    "legend_summary": "Madurai's Meenakshi temple is often mentioned in Shakti Peetha listicles, but it does not appear in the compiled 51 or Ashtadasha tables; it is best presented as one of India's greatest Devi temples. In the Thiruvilaiyadal Puranam, King Malayadhwaja Pandya and Queen Kanchanamalai performed a fire sacrifice for a son, and instead a three-year-old girl with three breasts rose from the flames; a divine voice said the third would vanish when she met her husband. That husband was Shiva, as Sundareswarar. The temple's soaring painted gopurams and hall of a thousand pillars are icons of Tamil architecture.",
+    "story_beats": [
+      "Fish-eyed princess of Madurai",
+      "Born from the Pandya king's fire",
+      "Shiva comes as Sundareswarar",
+      "Thousand-pillared hall stands proud"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://maduraimeenakshi.hrce.tn.gov.in/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Thirumalai Nayakkar Mahal",
+      "Gandhi Museum Madurai"
+    ],
+    "official_site": "https://maduraimeenakshi.hrce.tn.gov.in/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Meenakshi_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://maduraimeenakshi.hrce.tn.gov.in/"
+    ],
+    "faqs": [
+      {
+        "q": "Is Meenakshi temple a Shakti Peeth?",
+        "a": "It is not in the classical 51 or 18 lists, though it is a major Devi temple."
+      },
+      {
+        "q": "Who is Meenakshi married to?",
+        "a": "Shiva as Sundareswarar."
+      },
+      {
+        "q": "When is the Meenakshi wedding festival?",
+        "a": "During Chithirai (April-May); 2027 date not verified."
+      },
+      {
+        "q": "Who manages Meenakshi temple?",
+        "a": "Tamil Nadu HR&CE department (official site)."
+      }
+    ],
+    "unverified": [
+      "Coordinates",
+      "Chithirai 2027 dates"
+    ],
+    "classical_note": "Included because often mislabelled as a Shakti Peeth; not in classical lists.",
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "jayanti-nartiang",
+    "group": "india-major",
+    "name_en": "Nartiang Durga (Jayanti) Temple",
+    "name_hi": "नर्तियांग दुर्गा (जयंती) मंदिर",
+    "devi_form": "Jayanti Devi (Durga)",
+    "bhairav": "Kramadishwar (Kamadishwar)",
+    "body_part": "Left thigh",
+    "lists": [
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Nartiang",
+    "district": "West Jaintia Hills",
+    "state": "Meghalaya",
+    "lat": 25.567,
+    "lon": 92.209,
+    "coord_source": "https://en.wikipedia.org/wiki/Nartiang_Durga_Temple",
+    "legend_summary": "In the Jaintia hills of Meghalaya, near the famous field of standing monoliths, the Nartiang Durga temple is identified with the Jayanti peetha, where Sati's left thigh is believed to have fallen. Worship blends Hindu rites with local custom: in keeping with the Khasi practice of not using figurines, Durga is represented during the Puja by a plantain trunk decked with marigolds. The local chief, the Syiem, is the temple's patron, a gun salute is offered to the Goddess, and goats are still sacrificed during Durga Puja.",
+    "story_beats": [
+      "Sati's left thigh falls in hills",
+      "Plantain trunk becomes the Devi",
+      "Monoliths stand beside the shrine",
+      "Durga Puja, northeastern style"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "https://en.wikipedia.org/wiki/Nartiang_Durga_Temple"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nartiang_Durga_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Nartiang monoliths",
+      "Jowai",
+      "Shillong"
+    ],
+    "official_site": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nartiang_Durga_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "https://en.wikipedia.org/wiki/Shakta_pithas"
+    ],
+    "faqs": [
+      {
+        "q": "Which Shakti Peeth is in Meghalaya?",
+        "a": "Jayanti, identified with Nartiang Durga temple."
+      },
+      {
+        "q": "What fell at Nartiang?",
+        "a": "Sati's left thigh."
+      },
+      {
+        "q": "What is near Nartiang temple?",
+        "a": "The Nartiang monoliths."
+      },
+      {
+        "q": "Who is the Bhairav of Jayanti?",
+        "a": "Kramadishwar."
+      }
+    ],
+    "unverified": [
+      "Timings"
+    ],
+    "as_of": "2026-10-08"
+  },
+  {
+    "slug": "vimala-puri",
+    "group": "india-major",
+    "name_en": "Vimala Temple (inside Jagannath Temple), Puri",
+    "name_hi": "विमला मंदिर (जगन्नाथ मंदिर), पुरी",
+    "devi_form": "Vimala",
+    "bhairav": "Jagannath (as Bhairava)",
+    "body_part": "Feet (some say navel/lower limbs)",
+    "lists": [
+      "adi-4",
+      "51-peeth"
+    ],
+    "classical_shakti_peeth": true,
+    "town": "Puri",
+    "district": "Puri",
+    "state": "Odisha",
+    "lat": 19.8047,
+    "lon": 85.8183,
+    "coord_source": "https://en.wikipedia.org/wiki/Vimala_Temple",
+    "legend_summary": "Within the walls of Puri's Jagannath temple stands the shrine of Vimala, counted among the four Adi Shakti Peethas, where Sati's feet are believed to have fallen. Uniquely, Jagannath himself is regarded as her Bhairava, so a char dham and a Shakti Peetha share one compound. Food cooked for Jagannath becomes Mahaprasad only after it is offered to Vimala, and during Durga Puja she receives special rites. Entry follows Jagannath temple rules, which restrict non-Hindus.",
+    "story_beats": [
+      "Sati's feet fall at Puri",
+      "Vimala in Jagannath's courtyard",
+      "Jagannath serves as her Bhairav",
+      "Offered to her, food turns Mahaprasad"
+    ],
+    "darshan": {
+      "open": null,
+      "aarti": null,
+      "note": "Official timings not published/verified; confirm locally.",
+      "as_of": "2026-10-08",
+      "source": [
+        "http://www.jagannath.nic.in/"
+      ]
+    },
+    "festivals": [
+      {
+        "name": "Chaitra Navratri 2026",
+        "start": "2026-03-19",
+        "end": "2026-03-27",
+        "note": "Ram Navami 27 Mar 2026; already past as of as_of date",
+        "as_of": "2026-10-08",
+        "source": "https://www.outlookindia.com/amp/story/brand-studio/chaitra-navratri-2026-exact-dates-timings-puja-vidhi-significance"
+      },
+      {
+        "name": "Sharad (Shardiya/Ashwin) Navratri 2026",
+        "start": "2026-10-11",
+        "end": "2026-10-19",
+        "vijayadashami": "2026-10-20",
+        "note": "Ghatasthapana 11 Oct 2026 (Delhi). Navami 19 Oct, Dussehra 20 Oct per navbharatlive day calendar; that article also quotes a conflicting 12-21 Oct range - confirm with a local panchang. Some sites (e.g. BankBazaar table) wrongly show 22 Sep-1 Oct 2026.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/navaratri",
+          "https://navbharatlive.com/religion/shardiya-navratri-2026-start-date-tithi-shubh-muhurat-complete-calendar-1871087.html"
+        ]
+      },
+      {
+        "name": "Chaitra Navratri 2027",
+        "start": "2027-04-07",
+        "end": null,
+        "note": "Ghatasthapana 7 Apr 2027 (Delhi). Ram Navami not explicitly given for India; drikpanchang (US location) shows 14 Apr 2027 - verify Indian date.",
+        "as_of": "2026-10-08",
+        "source": [
+          "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
+          "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
+        ]
+      }
+    ],
+    "how_to_reach": {
+      "air": null,
+      "rail": null,
+      "road": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vimala_Temple"
+      ],
+      "note": "Distances not verified unless stated; null = not verified."
+    },
+    "nearby": [
+      "Jagannath temple",
+      "Puri beach",
+      "Konark Sun Temple"
+    ],
+    "official_site": "http://www.jagannath.nic.in/",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vimala_Temple",
+      "https://en.wikipedia.org/wiki/Shakta_pithas",
+      "http://www.jagannath.nic.in/"
+    ],
+    "faqs": [
+      {
+        "q": "Where is the Shakti Peeth in Puri?",
+        "a": "Vimala shrine inside the Jagannath temple complex."
+      },
+      {
+        "q": "What fell at Puri?",
+        "a": "Sati's feet, per tradition."
+      },
+      {
+        "q": "Can non-Hindus enter Vimala temple?",
+        "a": "Jagannath temple rules apply; non-Hindus are not admitted."
+      },
+      {
+        "q": "Why is Vimala linked to Mahaprasad?",
+        "a": "Jagannath's food is offered to her before it becomes Mahaprasad."
+      }
+    ],
+    "unverified": [
+      "Timings"
+    ],
+    "as_of": "2026-10-08"
+  }
+]

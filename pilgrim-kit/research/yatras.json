@@ -1,0 +1,2313 @@
+[
+  {
+    "slug": "char-dham-yatra-uttarakhand",
+    "name_en": "Char Dham Yatra (Uttarakhand)",
+    "name_hi": "चार धाम यात्रा (उत्तराखंड)",
+    "region": "Garhwal Himalaya",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "Late April / early May (Yamunotri & Gangotri on Akshaya Tritiya; Kedarnath date fixed on Mahashivratri at Omkareshwar, Ukhimath; Badrinath date fixed on Basant Panchami at Narendranagar royal court)",
+      "close": "Late Oct / Nov (Gangotri on Annakut/Govardhan Puja; Yamunotri & Kedarnath on Bhai Dooj; Badrinath date fixed on Vijayadashami)",
+      "dates_2026": {
+        "yamunotri": {
+          "opened": "2026-04-19",
+          "opening_time": "12:35",
+          "closing": null,
+          "closing_status": "not yet announced; traditionally Bhai Dooj = 2026-11-11 per Delhi panchang"
+        },
+        "gangotri": {
+          "opened": "2026-04-19",
+          "opening_time": "12:15",
+          "closing": null,
+          "closing_status": "not yet announced; traditionally Annakut/Govardhan Puja = 2026-11-10 per Delhi panchang"
+        },
+        "kedarnath": {
+          "opened": "2026-04-22",
+          "opening_time": "08:00",
+          "closing": null,
+          "closing_status": "not yet announced; traditionally Bhai Dooj = 2026-11-11; formal date expected on Vijayadashami 2026-10-20"
+        },
+        "badrinath": {
+          "opened": "2026-04-23",
+          "opening_time": "06:15",
+          "closing": null,
+          "closing_status": "not yet announced; to be fixed on Vijayadashami 2026-10-20 at Badrinath"
+        },
+        "season_footfall": "53,23,401 pilgrims across four dhams per DD India report of 2026-09-29 (Badrinath 18.10 lakh+, Kedarnath 15.57 lakh, Gangotri 8.41 lakh record, Yamunotri 7.5 lakh+)"
+      },
+      "dates_2027": null,
+      "source": "ETV Bharat 2026-04-19 (Gangotri/Yamunotri opening & times); Sunday Guardian 2026-02-15 (Kedarnath 22 Apr 8 AM, announced on Mahashivratri); The Daily Guardian 2026-01-23 (Badrinath 23 Apr 6:15 AM, announced Basant Panchami at Narendranagar); DD India 2026-09-29 (no closing date yet); festival dates: dekhopanchang.com (Dussehra 2026-10-20, Bhai Dooj 2026-11-11 Delhi), haindavam.org (Govardhan Puja 2026-11-10)",
+      "as_of": "2026-10-08",
+      "notes": "2027 opening dates: not yet announced (Kedarnath fixed on Mahashivratri 2027, Badrinath on Basant Panchami 2027, Gangotri/Yamunotri on Akshaya Tritiya 2027). Some calendars put Govardhan Puja 2026 on 9 Nov and Bhai Dooj on 10 Nov - treat temple committee announcements as final."
+    },
+    "registration": {
+      "required": true,
+      "how": "Free biometric/online registration for every pilgrim (and vehicle) on the Uttarakhand Tourism portal, the 'Tourist Care Uttarakhand' app (Android/iOS), WhatsApp, or offline counters (e.g., Rahi Hotel Haridwar, Transit Camp Rishikesh). Create a tour, enter dates per dham, add pilgrims, download the QR-coded Yatra Registration Letter; it is verified at each dham. Helpline 1364 / 0135-2559898. Registration number is also required to book Kedarnath helicopter tickets.",
+      "official_url": "https://registrationandtouristcare.uk.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Haridwar/Rishikesh to Barkot (Yamuna valley)",
+        "km": 210,
+        "time": "7-8 h drive"
+      },
+      {
+        "step": "Barkot to Janki Chatti by road, then trek Janki Chatti to Yamunotri",
+        "km": "45 road + ~6 trek",
+        "time": "1 day return (3-4 h up)"
+      },
+      {
+        "step": "Barkot to Uttarkashi/Harsil, then road to Gangotri (motorable to temple)",
+        "km": "100 + 100",
+        "time": "1-2 days"
+      },
+      {
+        "step": "Uttarkashi to Guptkashi/Sitapur via Tehri & Rudraprayag",
+        "km": 220,
+        "time": "8-9 h drive"
+      },
+      {
+        "step": "Sonprayag shuttle to Gaurikund, trek Gaurikund to Kedarnath",
+        "km": "5 shuttle + ~16 trek",
+        "time": "6-8 h up; pony, palki, pithoo or helicopter options"
+      },
+      {
+        "step": "Guptkashi to Badrinath via Ukhimath, Chopta/Chamoli, Joshimath",
+        "km": 200,
+        "time": "7-8 h drive"
+      },
+      {
+        "step": "Badrinath to Rishikesh/Haridwar",
+        "km": 300,
+        "time": "9-10 h drive"
+      }
+    ],
+    "transport_options": [
+      "Road (cab/tempo traveller/bus from Haridwar, Rishikesh, Dehradun)",
+      "Helicopter shuttle to Kedarnath from Phata/Sersi/Guptkashi helipads (book only on heliyatra.irctc.co.in)",
+      "Pony, palki (doli), pithoo on Yamunotri and Kedarnath treks",
+      "Nearest airport Jolly Grant (Dehradun); railheads Haridwar, Rishikesh, Dehradun"
+    ],
+    "days_typical": "10-12 days ex Haridwar/Delhi for all four dhams (Do Dham Kedarnath + Badrinath: 5-6 days)",
+    "difficulty": {
+      "level": "moderate",
+      "why": "Two treks (Yamunotri ~6 km, Kedarnath ~16 km uphill to ~3,580 m), long mountain drives, cold and landslide-prone monsoon roads; Gangotri and Badrinath are drive-up."
+    },
+    "altitude_m": 3583,
+    "health_rules": "Uttarakhand health advisory: pilgrims above 50 or with heart, lung or BP conditions should get a medical check-up before travel; acclimatise, carry prescriptions; health screening kiosks on the Kedarnath and Yamunotri routes. Avoid the trek if unwell; descend at signs of altitude sickness.",
+    "legend_summary": "Adi Shankaracharya is credited with reviving these four Himalayan shrines as one sacred circuit in the 8th century. Yamunotri honours the river goddess Yamuna, sister of Yama, so a dip is said to remove fear of untimely death. Gangotri marks where King Bhagiratha's penance brought Ganga down to earth. At Kedarnath, Shiva hid from the Pandavas as a bull and left his hump behind. Badrinath is where Vishnu meditated in the cold while Lakshmi sheltered him as a badri (jujube) tree.",
+    "story_beats": [
+      "Four doors open each spring",
+      "Yamuna, Ganga, Shiva, then Vishnu",
+      "West to east, river to peak",
+      "Doors close as winter arrives"
+    ],
+    "best_time": "May-June and mid-September to October; avoid peak monsoon (July-August) landslide period",
+    "what_to_carry": [
+      "Printed/QR Yatra Registration Letter + photo ID",
+      "Warm layers, rain jacket, trekking shoes",
+      "Personal medicines, ORS, altitude kit",
+      "Torch, power bank, some cash (patchy ATMs/network)"
+    ],
+    "faqs": [
+      {
+        "q": "Is registration compulsory?",
+        "a": "Yes. Every pilgrim must register (free) on registrationandtouristcare.uk.gov.in or the Tourist Care Uttarakhand app; QR letters are checked at each dham."
+      },
+      {
+        "q": "When does Kedarnath close in 2026?",
+        "a": "Not officially announced as of 8 Oct 2026. Kedarnath traditionally closes on Bhai Dooj (11 Nov 2026 per panchang); the formal date is announced on Vijayadashami (20 Oct 2026)."
+      },
+      {
+        "q": "What is the correct order of the Char Dham?",
+        "a": "West to east: Yamunotri, Gangotri, Kedarnath, Badrinath."
+      },
+      {
+        "q": "Where do I book a Kedarnath helicopter?",
+        "a": "Only on IRCTC HeliYatra (heliyatra.irctc.co.in), using your Char Dham registration number. Any other site or WhatsApp seller is a scam risk."
+      },
+      {
+        "q": "What is Do Dham Yatra?",
+        "a": "A shorter 5-6 day circuit covering only Kedarnath and Badrinath."
+      }
+    ],
+    "official_sites": [
+      "https://registrationandtouristcare.uk.gov.in/",
+      "https://heliyatra.irctc.co.in/",
+      "https://badrinath-kedarnath.gov.in/",
+      "https://uttarakhandtourism.gov.in/"
+    ],
+    "sources": [
+      "https://www.etvbharat.com/en/bharat/char-dham-yatra-2026-begins-today-gangotri-yamunotri-dham-temple-enn26041901059",
+      "https://sundayguardianlive.com/india/kedarnath-temple-to-reopen-on-april-22-at-8-am-char-dham-yatra-2026-dates-announced-as-uttarakhand-government-begins-preparations-170587/",
+      "https://thedailyguardian.com/news/badrinath-dham-portals-to-reopen-on-april-23-691250/",
+      "https://ianslive.in/pm-modi-celebrates-opening-of-lord-kedarnath-temple-portals--20260422223818",
+      "https://ddindia.co.in/2026/09/char-dham-yatra-draws-record-pilgrims-badrinath-and-gangotri-set-new-highs/",
+      "https://registrationandtouristcare.uk.gov.in/",
+      "https://dekhopanchang.com/en/festivals/dussehra",
+      "https://dekhopanchang.com/en/festivals/bhai-dooj/2026",
+      "https://haindavam.org/festivals/govardhan_puja/2026-11-10"
+    ]
+  },
+  {
+    "slug": "winter-char-dham-yatra",
+    "name_en": "Winter Char Dham Yatra (Shitkaleen Yatra)",
+    "name_hi": "शीतकालीन चार धाम यात्रा",
+    "region": "Garhwal Himalaya",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "Begins after the main dhams close (Nov)",
+      "close": "Until the summer dhams reopen (Apr/May)",
+      "dates_2026": {
+        "status": "2026-27 winter season starts after the Nov 2026 closings; exact dates not yet announced"
+      },
+      "dates_2027": null,
+      "source": "ETV Bharat 2025-10-25 winter circuit guide (seats and format); Uttarakhand Tourism Winter Char Dham Circuit",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": null,
+      "how": "No separate mandatory registration was reported for the winter seats in 2025-26; check the Uttarakhand registration portal before travel.",
+      "official_url": "https://registrationandtouristcare.uk.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Kharsali (Yamuna's winter seat, near Janki Chatti)",
+        "km": null,
+        "time": "drive-up"
+      },
+      {
+        "step": "Mukhba village near Harsil (Ganga's winter seat)",
+        "km": null,
+        "time": "drive-up"
+      },
+      {
+        "step": "Omkareshwar Temple, Ukhimath (Kedarnath's winter seat)",
+        "km": null,
+        "time": "drive-up"
+      },
+      {
+        "step": "Yogdhyan Badri, Pandukeshwar (Badrinath's Uddhav/Kuber idols) and Narsingh temple, Jyotirmath (Joshimath) (Shankaracharya gaddi)",
+        "km": null,
+        "time": "drive-up"
+      }
+    ],
+    "transport_options": [
+      "Road only; no helicopters in winter"
+    ],
+    "days_typical": "7-8 days",
+    "difficulty": {
+      "level": "easy",
+      "why": "All winter seats are motorable; the challenge is snow, fog and icy roads, not trekking."
+    },
+    "altitude_m": null,
+    "health_rules": "Sub-zero nights; drive in daylight; carry warm gear and check road status (snow closures).",
+    "legend_summary": "When snow buries the high shrines, the deities are carried down in decorated palanquins to villages that host them through winter. The Yamuna doli rests at Kharsali, Ganga at Mukhba, Kedarnath's Panchmukhi idol at Omkareshwar in Ukhimath, and Badrinath's companions at Pandukeshwar, with Adi Shankaracharya's gaddi at Jyotirmath. Tradition holds that worship never stops; it simply moves closer to the people. The state now promotes this as a winter pilgrimage to keep mountain livelihoods alive in the off-season.",
+    "story_beats": [
+      "Snow closes the high shrines",
+      "Palanquins carry gods downhill",
+      "Worship moves to village temples",
+      "Darshan continues all winter"
+    ],
+    "best_time": "November-March (check snow advisories)",
+    "what_to_carry": [
+      "Heavy woollens, thermals",
+      "Snow-grip footwear",
+      "Chains/4x4 if self-driving",
+      "Cash"
+    ],
+    "faqs": [
+      {
+        "q": "Can I do Char Dham in winter?",
+        "a": "Not at the main shrines, but you can visit the four winter seats where the deities are worshipped."
+      },
+      {
+        "q": "Where is Kedarnath worshipped in winter?",
+        "a": "Omkareshwar Temple, Ukhimath (Rudraprayag district)."
+      },
+      {
+        "q": "Where is Badrinath worshipped in winter?",
+        "a": "Yogdhyan Badri at Pandukeshwar; Shankaracharya's gaddi stays at Jyotirmath."
+      },
+      {
+        "q": "Is there a helicopter in winter?",
+        "a": "No. Winter circuit is by road only."
+      },
+      {
+        "q": "How many days does it take?",
+        "a": "About 7-8 days from Dehradun/Rishikesh."
+      }
+    ],
+    "official_sites": [
+      "https://uttarakhandtourism.gov.in/",
+      "https://badrinath-kedarnath.gov.in/"
+    ],
+    "sources": [
+      "https://www.etvbharat.com/en/bharat/exploring-the-winter-char-dham-circuit-a-guide-to-the-off-season-pilgrimage-enn25102504268",
+      "https://www.etvbharat.com/en/state/chardham-winter-yatra-set-to-begin-in-uttarakhand-on-oct-24-enn25102203611",
+      "https://www.gktoday.in/winter-char-dham-circuit-inaugurated-in-uttarakhand/"
+    ]
+  },
+  {
+    "slug": "amarnath-yatra",
+    "name_en": "Shri Amarnathji Yatra",
+    "name_hi": "श्री अमरनाथ यात्रा",
+    "region": "Kashmir Himalaya (Anantnag/Ganderbal)",
+    "state": "Jammu & Kashmir (UT)",
+    "season": {
+      "open": "Late June / early July",
+      "close": "Shravan Purnima (Raksha Bandhan) with Chhari Mubarak",
+      "dates_2026": {
+        "start": "2026-07-03",
+        "end": "2026-08-28",
+        "duration_days": 57,
+        "pratham_puja": "2026-06-29 (Jyeshtha Purnima)",
+        "advance_registration_opened": "2026-04-15",
+        "status": "concluded 2026-08-28; 4.8 lakh+ pilgrims"
+      },
+      "dates_2027": null,
+      "source": "Kashmir Life 2026-04-12 (LG Manoj Sinha announcement: 3 Jul-28 Aug, 57 days); Organiser 2026-02-13 (pratham puja 29 Jun); News On AIR 2026-08-28 (concluded, 4.8 lakh+)",
+      "as_of": "2026-10-08",
+      "notes": "2027 dates: not yet announced (SASB usually announces in spring)."
+    },
+    "registration": {
+      "required": true,
+      "how": "Advance registration (opened 15 Apr 2026) online via SASB or at ~550 designated bank branches (SBI, PNB, J&K Bank, Yes Bank etc.); first-come-first-served route/date quotas. Upload a Compulsory Health Certificate (CHC) from an authorised doctor (2026: issued after 8 Apr 2026). Complete e-KYC, then collect the mandatory RFID card in person at Jammu/Kashmir centres (e.g., Jammu Railway Station, Bhagwati Nagar, Tawi River Front, Udhampur, Banihal, Lakhanpur) before base camp; wear it throughout. Limited on-the-spot registration in Jammu.",
+      "official_url": "https://jksasb.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Pahalgam route: Pahalgam to Chandanwari (motorable)",
+        "km": 16,
+        "time": "1 h drive"
+      },
+      {
+        "step": "Chandanwari - Pissu Top - Sheshnag",
+        "km": 12,
+        "time": "6-7 h"
+      },
+      {
+        "step": "Sheshnag - Mahagunas Top (~4,270 m) - Panchtarni",
+        "km": 10.6,
+        "time": "6-7 h"
+      },
+      {
+        "step": "Panchtarni - Sangam - Holy Cave",
+        "km": 6,
+        "time": "3-4 h; total Chandanwari-cave ~32 km over 3-4 days (Pahalgam-cave ~48 km)"
+      },
+      {
+        "step": "Baltal route: Baltal - Domail - Barari - Sangam - Holy Cave",
+        "km": 14,
+        "time": "same-day up and back possible (steep); 1-2 days"
+      }
+    ],
+    "transport_options": [
+      "Road to Pahalgam/Baltal in SASB-escorted convoys from Jammu (Bhagwati Nagar base camp)",
+      "Ponies, palkis, pithoos (registered service providers)",
+      "Helicopter: NOT available in 2026 - routes declared no-fly zone and services suspended (Zee News 2026-06-03); confirm for 2027"
+    ],
+    "days_typical": "Baltal: 1-2 days on the trek (4-5 days from Jammu); Pahalgam: 3-5 days on the trek (6-7 days from Jammu)",
+    "difficulty": {
+      "level": "hard",
+      "why": "Cave at ~3,880 m; Mahagunas pass above 4,200 m; steep, weather-exposed tracks; strict medical and security rules."
+    },
+    "altitude_m": 3888,
+    "health_rules": "CHC compulsory; age 13-70 only; women more than 6 weeks pregnant not allowed; elderly and cardiac/respiratory patients need medical clearance; acclimatise, no alcohol/smoking.",
+    "legend_summary": "Parvati asked Shiva why he wore a garland of skulls and how he alone was deathless. He agreed to tell her the Amar Katha, the secret of immortality, but only where no living being could hear. On the way he shed his bull Nandi at Pahalgam, the moon at Chandanwari, his snakes at Sheshnag, Ganesha at Mahagunas and the five elements at Panchtarni. Inside the cave a pair of pigeons, hidden under the deer-skin, overheard and became immortal; pilgrims still look for them. Folklore credits the shepherd Buta Malik with rediscovering the cave after a sadhu's gift of coal turned to gold. The ice lingam forms naturally.",
+    "story_beats": [
+      "Shiva whispers the secret",
+      "Two pigeons overhear forever",
+      "A shepherd finds the cave",
+      "Ice lingam rises each summer"
+    ],
+    "best_time": "Early in the yatra window (July) when the ice lingam is usually fullest; weather is volatile throughout",
+    "what_to_carry": [
+      "Yatra permit, RFID card, CHC, photo ID",
+      "Waterproof shell, down jacket, gloves, cap",
+      "Trekking shoes with grip, walking stick",
+      "Personal medicines, dry fruit, water bottle"
+    ],
+    "faqs": [
+      {
+        "q": "What were the Amarnath Yatra 2026 dates?",
+        "a": "3 July to 28 August 2026 (Raksha Bandhan), 57 days. It has concluded."
+      },
+      {
+        "q": "What is the age limit?",
+        "a": "13 to 70 years; women more than 6 weeks pregnant cannot register."
+      },
+      {
+        "q": "Is a medical certificate required?",
+        "a": "Yes, a Compulsory Health Certificate from an SASB-authorised doctor/institution issued in the current season's validity window."
+      },
+      {
+        "q": "Which route is easier, Baltal or Pahalgam?",
+        "a": "Baltal is short (~14 km) but steep; Pahalgam is long (~32 km trek from Chandanwari) but more gradual."
+      },
+      {
+        "q": "Was helicopter service available in 2026?",
+        "a": "No. Authorities declared the yatra routes a no-fly zone and suspended helicopter services for 2026."
+      }
+    ],
+    "official_sites": [
+      "https://jksasb.nic.in/"
+    ],
+    "sources": [
+      "https://kashmirlife.net/amarnath-yatra-2026-to-begin-on-july-3-lg-sinha-432035/",
+      "https://newsonair.gov.in/annual-shri-amarnathji-yatra-concludes-in-jk-with-chhari-mubarak-rituals/",
+      "https://www.business-standard.com/lifestyle/amarnath-yatra-2026-registration-begins-step-by-step-guide-to-apply-nc-126041501047_1.html",
+      "https://newsonair.gov.in/all-arrangements-in-place-for-57-day-amarnath-yatra-beginning-july-3/",
+      "https://zeenews.india.com/india/amarnath-yatra-2026-authorities-declare-baltal-pahalgam-routes-no-fly-zones-helicopter-services-suspended-3052599.html",
+      "https://en.wikipedia.org/wiki/Amarnath_Temple",
+      "https://www.freepressjournal.in/lifestyle/did-muslim-shepherd-buta-malik-discover-amarnath-cave-heres-what-legend-says"
+    ]
+  },
+  {
+    "slug": "vaishno-devi-yatra",
+    "name_en": "Mata Vaishno Devi Yatra",
+    "name_hi": "माता वैष्णो देवी यात्रा",
+    "region": "Trikuta hills, Reasi district",
+    "state": "Jammu & Kashmir (UT)",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round (track may close briefly for landslides/snow)",
+      "dates_2026": {
+        "note": "Open all year; Chaitra and Sharad Navratri are peak periods"
+      },
+      "dates_2027": {
+        "note": "Open all year"
+      },
+      "source": "Shri Mata Vaishno Devi Shrine Board (maavaishnodevi.org)",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": true,
+      "how": "Every pilgrim must register and carry an RFID Yatra Access Card. Register online on online.maavaishnodevi.org (also books helicopter, ropeway, battery car, accommodation, Atka Aarti) or at registration counters in Katra/Jammu; card is checked at Banganga/Darshani Deodi.",
+      "official_url": "https://online.maavaishnodevi.org/"
+    },
+    "route": [
+      {
+        "step": "Katra to Banganga checkpoint",
+        "km": 1.5,
+        "time": "auto/walk"
+      },
+      {
+        "step": "Banganga - Charan Paduka - Ardhkuwari (old track) or Tarakote Marg (~7 km, Banganga area to Adhkuwari)",
+        "km": 6,
+        "time": "2-3 h"
+      },
+      {
+        "step": "Ardhkuwari - Himkoti/Sanjichhat - Bhawan (new track, battery cars Ardhkuwari-Bhawan)",
+        "km": 6,
+        "time": "2-3 h; total Katra-Bhawan ~12-13 km"
+      },
+      {
+        "step": "Bhawan to Bhairon temple (ropeway or trek)",
+        "km": 1.5,
+        "time": "few minutes by ropeway (operates ~9 AM-5 PM) or 45-60 min trek"
+      },
+      {
+        "step": "Bhairon to Sanjichhat and descent to Katra",
+        "km": 13,
+        "time": "3-4 h"
+      }
+    ],
+    "transport_options": [
+      "Helicopter Katra - Sanjichhat (book on SMVDSB portal; ~2.5 km walk Sanjichhat to Bhawan)",
+      "Battery car (Ardhkuwari - Bhawan, priority to seniors/disabled)",
+      "Bhawan - Bhairon passenger ropeway",
+      "Ponies, palkis, pithoos",
+      "Train to Shri Mata Vaishno Devi Katra station; Jammu airport ~50 km"
+    ],
+    "days_typical": "1-2 days at Katra (2-3 days ex Jammu)",
+    "difficulty": {
+      "level": "moderate",
+      "why": "12-13 km paved uphill track, well lit with shelters and langar; easy with helicopter/battery car options."
+    },
+    "altitude_m": 1585,
+    "health_rules": "No special medical certificate; elderly/cardiac pilgrims should use ponies, battery car or helicopter; heavy crowds at Navratri.",
+    "legend_summary": "The goddess took birth as Vaishnavi, uniting the powers of Kali, Lakshmi and Saraswati. Lord Rama asked her to wait in the Trikuta hills until his Kalki form. When the tantric Bhairon Nath pursued her, she shot an arrow to create the Banganga stream, rested at Charan Paduka and meditated nine months in the narrow Ardhkuwari (Garbh Joon) cave. At the holy cave she took the form of Mahakali and beheaded him; his head fell on the hill where Bhairon temple stands. Forgiving him, she ruled that the yatra is complete only after visiting Bhairon.",
+    "story_beats": [
+      "A goddess waits in Trikuta",
+      "An arrow brings Banganga",
+      "Nine months in Ardhkuwari cave",
+      "Complete it at Bhairon Nath"
+    ],
+    "best_time": "March-June and September-October; Navratri for festive atmosphere (very crowded); winter is cold but quieter",
+    "what_to_carry": [
+      "RFID Yatra card + photo ID",
+      "Comfortable walking shoes",
+      "Light woollens (cold at night)",
+      "Water bottle; leather items/large bags are restricted at Bhawan"
+    ],
+    "faqs": [
+      {
+        "q": "How long is the trek?",
+        "a": "About 12-13 km one way from Katra to Bhawan, plus ~1.5 km to Bhairon temple."
+      },
+      {
+        "q": "Is registration mandatory?",
+        "a": "Yes, every pilgrim needs an RFID Yatra Access Card, available online or at Katra counters."
+      },
+      {
+        "q": "Where do I book the helicopter?",
+        "a": "Only on the Shrine Board's portal online.maavaishnodevi.org; it flies Katra to Sanjichhat."
+      },
+      {
+        "q": "Is the yatra complete without Bhairon Nath?",
+        "a": "By tradition, no - the goddess's boon says darshan of Bhairon completes it."
+      },
+      {
+        "q": "Is it open in winter?",
+        "a": "Yes, the shrine is open all year."
+      }
+    ],
+    "official_sites": [
+      "https://www.maavaishnodevi.org/",
+      "https://online.maavaishnodevi.org/"
+    ],
+    "sources": [
+      "https://www.maavaishnodevi.org/",
+      "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple",
+      "https://en.wikipedia.org/wiki/Vaishno_Devi",
+      "https://www.tribuneindia.com/news/archive/j-k/modi-to-e-inaugurate-new-vaishno-devi-track-today-591234"
+    ]
+  },
+  {
+    "slug": "manimahesh-kailash-yatra",
+    "name_en": "Manimahesh Kailash Yatra",
+    "name_hi": "मणिमहेश कैलाश यात्रा",
+    "region": "Bharmour, Chamba district",
+    "state": "Himachal Pradesh",
+    "season": {
+      "open": "Krishna Janmashtami",
+      "close": "Radha Ashtami (main bath)",
+      "dates_2026": {
+        "start": "2026-08-25",
+        "end": "2026-09-19",
+        "registration_opened": "2026-08-01/05 (online, phased slots)",
+        "daily_cap": "about 5,000 pilgrims",
+        "status": "season over"
+      },
+      "dates_2027": null,
+      "source": "News Arena India 2026-07-18 & 2026-08-04; Amar Ujala 2026-08-04",
+      "as_of": "2026-10-08",
+      "notes": "2027 dates: not announced; will again follow Janmashtami-Radha Ashtami."
+    },
+    "registration": {
+      "required": true,
+      "how": "From 2026, online registration/e-pass with daily slot booking is mandatory (first-come-first-served, ~5,000/day); carry a printout for checks on the route.",
+      "official_url": "https://manimaheshyatra.hp.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Pathankot/Chamba to Bharmour",
+        "km": "Chamba-Bharmour ~65",
+        "time": "3 h drive from Chamba"
+      },
+      {
+        "step": "Bharmour to Hadsar (road head)",
+        "km": 13,
+        "time": "45 min"
+      },
+      {
+        "step": "Hadsar - Dhancho",
+        "km": 6,
+        "time": "3-4 h"
+      },
+      {
+        "step": "Dhancho - Gauri Kund - Manimahesh Lake (4,080 m)",
+        "km": 7,
+        "time": "4-5 h; Hadsar-lake ~13-14 km"
+      },
+      {
+        "step": "Kugti parikrama route (via 4,748 m Jotnu pass)",
+        "km": "38-45 circuit",
+        "time": "closed to most pilgrims in 2026 for safety"
+      }
+    ],
+    "transport_options": [
+      "Road to Hadsar",
+      "Ponies/porters on the trek",
+      "Helicopter Bharmour-Gauri Kund has operated in past seasons (verify each year)"
+    ],
+    "days_typical": "3-4 days from Chamba (1 night Dhancho or lake camps)",
+    "difficulty": {
+      "level": "hard",
+      "why": "Steep 13-14 km climb to a 4,080 m lake; weather-related deaths and 2025 flood strandings led to new caps and route closures."
+    },
+    "altitude_m": 4080,
+    "health_rules": "Registration/e-pass compulsory; follow daily caps; avoid night trekking; carry rain and cold gear; NGT plastic ban enforced.",
+    "legend_summary": "Manimahesh Kailash is believed to be one of Shiva's abodes, and the glacial lake at its foot is where devotees take a holy dip after Janmashtami. Local Gaddi tradition says that at dawn on clear days the peak shows a jewel-like glow, the 'mani' of the mountain. Shiva is said to have created the lake after marrying Parvati, and the Gaddi shepherds, who see themselves as his people, lead the Radha Ashtami bath. Legend also tells of a shepherd and his flock who tried to climb the peak and were turned to stone.",
+    "story_beats": [
+      "Shiva's jewel on the peak",
+      "Gaddi shepherds lead the way",
+      "Holy dip at the lake",
+      "Janmashtami to Radha Ashtami"
+    ],
+    "best_time": "Only during the official yatra window (late Aug-mid Sept); outside it, trekking only with permits and guides",
+    "what_to_carry": [
+      "Registration/e-pass printout + ID",
+      "Rain gear, warm layers",
+      "Trek poles, headlamp",
+      "Cash (no ATMs beyond Bharmour)"
+    ],
+    "faqs": [
+      {
+        "q": "When was Manimahesh Yatra 2026?",
+        "a": "25 August (Janmashtami) to 19 September 2026 (Radha Ashtami)."
+      },
+      {
+        "q": "Is registration compulsory now?",
+        "a": "Yes, from 2026 an online e-pass and slot booking are mandatory with a daily cap."
+      },
+      {
+        "q": "How long is the trek?",
+        "a": "About 13-14 km from Hadsar to the lake via Dhancho and Gauri Kund."
+      },
+      {
+        "q": "Can I use the Kugti route?",
+        "a": "In 2026 it was closed to most pilgrims for safety; check the current order."
+      },
+      {
+        "q": "How high is the lake?",
+        "a": "About 4,080 m."
+      }
+    ],
+    "official_sites": [
+      "https://manimaheshyatra.hp.gov.in/",
+      "https://hpchamba.nic.in/"
+    ],
+    "sources": [
+      "https://newsarenaindia.com/states/manimahesh-yatra-to-have-daily-pilgrim-cap-mandatory-e-pass/82705",
+      "https://www.newsarenaindia.com/states/online-registration-for-manimahesh-yatra-opens-on-aug-5/83852",
+      "https://www.amarujala.com/shimla/online-registration-for-manimahesh-yatra-to-begin-from-august-5-5-000-pilgrims-to-be-allowed-daily-2026-08-04",
+      "https://www.tribuneindia.com/news/himachal/manimahesh-yatra-concludes-without-final-rituals-at-sacred-lake"
+    ]
+  },
+  {
+    "slug": "shrikhand-mahadev-yatra",
+    "name_en": "Shrikhand Mahadev Yatra",
+    "name_hi": "श्रीखंड महादेव यात्रा",
+    "region": "Nirmand, Kullu district",
+    "state": "Himachal Pradesh",
+    "season": {
+      "open": "July (administration-notified window)",
+      "close": "Late July",
+      "dates_2026": {
+        "planned": "2026-07-10 to 2026-07-23",
+        "status": "SUSPENDED 'until further orders' by Kullu DC on 2026-06-29 after joint inspection found Bheem Dwar-Parvati Bagh stretch unsafe; no verified resumption found"
+      },
+      "dates_2027": null,
+      "source": "Free Press Journal (updated 2026-06-29); News Arena India 2026-06-29",
+      "as_of": "2026-10-08",
+      "notes": "Do not advertise 2026 departures. 2027 dates not announced."
+    },
+    "registration": {
+      "required": true,
+      "how": "Registration with Kullu district administration/Shrikhand Yatra Trust plus medical check at the base camp has been mandatory in past seasons; follow the DC Kullu notification for the year.",
+      "official_url": "https://hpkullu.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Rampur/Nirmand to Jaon village (road head)",
+        "km": null,
+        "time": "drive"
+      },
+      {
+        "step": "Jaon - Singhad - Barati Nala - Thachdu",
+        "km": 15,
+        "time": "1 day"
+      },
+      {
+        "step": "Thachdu - Kali Ghati - Bheem Dwar",
+        "km": 9,
+        "time": "1 day"
+      },
+      {
+        "step": "Bheem Dwar - Parvati Bagh - Nain Sarovar - Shrikhand rock lingam",
+        "km": 9,
+        "time": "1 day up and back to Bheem Dwar; total ~32-35 km one way"
+      }
+    ],
+    "transport_options": [
+      "Road to Jaon; trek only beyond (no ponies on upper sections)"
+    ],
+    "days_typical": "5-6 days return from Jaon",
+    "difficulty": {
+      "level": "hard",
+      "why": "Considered among India's toughest pilgrimages: ~32-35 km one way, boulder fields and glaciers, summit lingam at ~5,200 m."
+    },
+    "altitude_m": 5227,
+    "health_rules": "Medical fitness screening at base camp; only fit adults; no night trekking; obey suspension orders.",
+    "legend_summary": "Shrikhand Mahadev is a natural rock spire revered as a Shiva lingam high above the Kullu-Kinnaur ridges. A popular tale links it to the demon Bhasmasura, who won a boon to burn anyone he touched and chased Shiva himself; Vishnu, as the enchantress Mohini, tricked the demon into touching his own head. Locals point to red-tinged rocks and the Bheem Dwar camp, said to recall the Pandavas, who are believed to have passed this way. Reaching the rock is seen as a test of faith and stamina.",
+    "story_beats": [
+      "A rock lingam in clouds",
+      "Mohini outwits Bhasmasura",
+      "Glaciers guard the final climb",
+      "A test of faith"
+    ],
+    "best_time": "Only the notified July window, if opened",
+    "what_to_carry": [
+      "Registration + medical clearance",
+      "Mountaineering-grade boots, gaiters",
+      "Down jacket, rain gear",
+      "High-energy food, water purification"
+    ],
+    "faqs": [
+      {
+        "q": "Did Shrikhand Yatra happen in 2026?",
+        "a": "It was scheduled for 10-23 July 2026 but suspended on 29 June 2026 for safety; no official resumption was found as of 8 Oct 2026."
+      },
+      {
+        "q": "How high is Shrikhand?",
+        "a": "The rock lingam is at about 5,200 m (~18,570 ft)."
+      },
+      {
+        "q": "How long is the trek?",
+        "a": "About 32-35 km one way from Jaon."
+      },
+      {
+        "q": "Is it suitable for beginners?",
+        "a": "No. It is one of India's hardest pilgrim treks."
+      },
+      {
+        "q": "Who issues permission?",
+        "a": "Kullu district administration notifies dates, registration and medical checks."
+      }
+    ],
+    "official_sites": [
+      "https://hpkullu.nic.in/"
+    ],
+    "sources": [
+      "https://www.freepressjournal.in/lifestyle/shrikhand-mahadev-yatra-2026-pilgrimage-suspended-till-further-notice-over-route-safety-concerns-in-himachal-pradesh-when-will-it-resume",
+      "https://newsarenaindia.com/states/shrikhand-mahadev-kinnaur-kailash-yatras-suspended/81138",
+      "https://www.tribuneindia.com/news/himachal/shrikhand-mahadev-yatra-begins-pilgrims-told-to-exercise-caution-639865/amp"
+    ]
+  },
+  {
+    "slug": "kinner-kailash-yatra",
+    "name_en": "Kinner (Kinnaur) Kailash Yatra",
+    "name_hi": "किन्नर कैलाश यात्रा",
+    "region": "Kinnaur district",
+    "state": "Himachal Pradesh",
+    "season": {
+      "open": "Late July / August (administration-notified)",
+      "close": "Mid-August",
+      "dates_2026": {
+        "start": "2026-07-30",
+        "end": "2026-08-10",
+        "history": "suspended 2026-06-29, then reopened after safety review",
+        "daily_cap": "375 (175 online, 125 offline, 75 ATOA Kinnaur quota)",
+        "status": "season over"
+      },
+      "dates_2027": null,
+      "source": "Travel Trade Journal 2026-07-28; Outlook Traveller 2026; News Arena India 2026-06-29",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": true,
+      "how": "Online registration (portal reported as logdest.com/kk/register, opened 28 Jul 2026) or offline at Tangling village registration camp; medical fitness certificate compulsory (or examination at Tangling medical camp).",
+      "official_url": "https://hpkinnaur.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Reckong Peo/Powari to Tangling village (base, registration & medical camp)",
+        "km": null,
+        "time": "drive"
+      },
+      {
+        "step": "Tangling - Malingkhatta (night camp)",
+        "km": 8,
+        "time": "6-8 h"
+      },
+      {
+        "step": "Malingkhatta - Parvati Kund - Kinner Kailash Shivling (~79 ft rock pillar) and back",
+        "km": 6,
+        "time": "long summit day; total ~14 km one way"
+      }
+    ],
+    "transport_options": [
+      "Road to Tangling; trek only"
+    ],
+    "days_typical": "3 days from Tangling (5-6 days ex Shimla)",
+    "difficulty": {
+      "level": "hard",
+      "why": "Steep, exposed ascent to a ~4,800 m-plus rock spire with glaciers, rockfall and landslide zones."
+    },
+    "altitude_m": null,
+    "health_rules": "Medical certificate compulsory; no night trekking, no shortcuts; registration and medical clearance both required.",
+    "legend_summary": "Kinner Kailash is a tall natural rock pillar, worshipped as a Shiva lingam, that is said to change colour through the day. Kinnauri belief holds that Shiva and Parvati spent time here and that Parvati bathed in the small lake known as Parvati Kund on the way. The surrounding Kinnaur Kailash range is sacred to both Hindus and Buddhists of the valley, and pilgrims circle the pillar before descending.",
+    "story_beats": [
+      "A pillar that changes colour",
+      "Parvati's lake below",
+      "Kinnaur's sacred mountain",
+      "Only the fit climb"
+    ],
+    "best_time": "Notified window (late July-August)",
+    "what_to_carry": [
+      "Registration + medical certificate",
+      "Trekking boots, layers, rain gear",
+      "Headlamp, snacks, water"
+    ],
+    "faqs": [
+      {
+        "q": "What were the 2026 dates?",
+        "a": "30 July to 10 August 2026, after an initial suspension in June."
+      },
+      {
+        "q": "Is there a daily limit?",
+        "a": "Yes, 375 pilgrims a day in 2026."
+      },
+      {
+        "q": "Is a medical certificate required?",
+        "a": "Yes, from a registered medical officer or the Tangling medical camp."
+      },
+      {
+        "q": "Where does the trek start?",
+        "a": "Tangling village near Powari, Kinnaur."
+      },
+      {
+        "q": "Can I trek at night?",
+        "a": "No, night trekking is prohibited."
+      }
+    ],
+    "official_sites": [
+      "https://hpkinnaur.nic.in/"
+    ],
+    "sources": [
+      "https://traveltradejournal.com/kinnaur-kailash-yatra-2026-to-be-held-from-july-30-to-august-10-registration-mandatory/",
+      "https://www.outlooktraveller.com/News/kinnaur-kailash-yatra-2026-to-begin-from-july-30-after-safety-review-registration-dates-and-key-guidelines",
+      "https://newsarenaindia.com/states/shrikhand-mahadev-kinnaur-kailash-yatras-suspended/81138"
+    ]
+  },
+  {
+    "slug": "baijnath-temple-kangra",
+    "name_en": "Baijnath Shiva Temple",
+    "name_hi": "बैजनाथ शिव मंदिर",
+    "region": "Baijnath, Kangra district",
+    "state": "Himachal Pradesh",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Open all year; Mahashivratri fair is the main festival"
+      },
+      "dates_2027": null,
+      "source": "Wikipedia; HP Kangra district",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration.",
+      "official_url": "https://hpkangra.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Dharamshala/Gaggal airport to Palampur",
+        "km": 35,
+        "time": "1 h"
+      },
+      {
+        "step": "Palampur to Baijnath on NH 154 (Kangra-Mandi road)",
+        "km": 16,
+        "time": "30 min"
+      }
+    ],
+    "transport_options": [
+      "Road",
+      "Kangra Valley narrow-gauge railway (Baijnath Paprola station)",
+      "Gaggal (Dharamshala) airport"
+    ],
+    "days_typical": "Half day (combine with Palampur, Bir-Billing, Dharamshala)",
+    "difficulty": {
+      "level": "easy",
+      "why": "Drive-up town temple."
+    },
+    "altitude_m": null,
+    "health_rules": "None.",
+    "legend_summary": "Baijnath honours Shiva as Vaidyanath, the lord of healers. Inscriptions say two merchants, Ahuka and Manyuka, built the stone Nagara-style temple in 1204 CE. Legend links the lingam to Ravana, who carried Shiva's lingam from Kailash but was tricked into setting it down here. Because of Ravana's devotion, the town traditionally does not burn his effigy on Dussehra. Its spring water is still believed to have healing properties.",
+    "story_beats": [
+      "Shiva the divine healer",
+      "Built by two merchants, 1204",
+      "Ravana set the lingam down",
+      "No Dussehra effigies here"
+    ],
+    "best_time": "March-June, September-November; Mahashivratri",
+    "what_to_carry": [
+      "Light woollens in winter",
+      "Modest dress"
+    ],
+    "faqs": [
+      {
+        "q": "Who built Baijnath temple?",
+        "a": "Merchants Ahuka and Manyuka in 1204 CE, per temple inscriptions."
+      },
+      {
+        "q": "Why is Dussehra not celebrated?",
+        "a": "Out of respect for Ravana's devotion to Shiva, linked to the temple legend."
+      },
+      {
+        "q": "How far is it from Palampur?",
+        "a": "About 16 km."
+      },
+      {
+        "q": "Is there a train?",
+        "a": "Yes, the Kangra Valley toy train serves Baijnath Paprola."
+      },
+      {
+        "q": "Main festival?",
+        "a": "Mahashivratri."
+      }
+    ],
+    "official_sites": [
+      "https://hpkangra.nic.in/",
+      "https://himachaltourism.gov.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Baijnath_Temple",
+      "https://hpkangra.nic.in/",
+      "https://himachaltourism.gov.in/"
+    ]
+  },
+  {
+    "slug": "bijli-mahadev-kullu",
+    "name_en": "Bijli Mahadev Temple",
+    "name_hi": "बिजली महादेव मंदिर",
+    "region": "Kashawri, Kullu district",
+    "state": "Himachal Pradesh",
+    "season": {
+      "open": "Spring",
+      "close": "Winter snow may close access",
+      "dates_2026": {
+        "note": "Accessible most of the year; snow Dec-Feb"
+      },
+      "dates_2027": null,
+      "source": "Wikipedia; HP Kullu district",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration.",
+      "official_url": "https://hpkullu.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Kullu town to Chansari/road head via Ramshila",
+        "km": 22,
+        "time": "1 h drive"
+      },
+      {
+        "step": "Road head to temple ridge",
+        "km": 3,
+        "time": "1-1.5 h trek"
+      }
+    ],
+    "transport_options": [
+      "Road + short trek",
+      "Bhuntar (Kullu) airport"
+    ],
+    "days_typical": "Half day from Kullu",
+    "difficulty": {
+      "level": "easy",
+      "why": "Short ~3 km stepped trek to ~2,460 m."
+    },
+    "altitude_m": 2460,
+    "health_rules": "None special; slippery in rain/snow.",
+    "legend_summary": "Bijli Mahadev, the 'lightning lord', stands on a ridge above the meeting of the Beas and Parvati rivers. Tradition says lightning strikes the lingam roughly every twelve years and shatters it; the priest then rejoins the pieces with butter and grain paste. Locals believe Shiva takes the blow to protect the valley. Another tale says Shiva slew the serpent-demon Kulant here, whose body became the surrounding mountains of Kullu.",
+    "story_beats": [
+      "Lightning strikes the lingam",
+      "Butter heals the stone",
+      "Shiva shields the valley",
+      "Ridge above two rivers"
+    ],
+    "best_time": "March-June, September-November",
+    "what_to_carry": [
+      "Good shoes",
+      "Water",
+      "Light jacket"
+    ],
+    "faqs": [
+      {
+        "q": "How long is the trek?",
+        "a": "About 3 km from the road head."
+      },
+      {
+        "q": "Why is it called Bijli Mahadev?",
+        "a": "By belief, lightning strikes the lingam periodically and it is rejoined with butter."
+      },
+      {
+        "q": "Altitude?",
+        "a": "About 2,460 m."
+      },
+      {
+        "q": "Can I visit in winter?",
+        "a": "Heavy snow can block access in mid-winter."
+      },
+      {
+        "q": "Distance from Kullu?",
+        "a": "Roughly 22 km by road plus the short trek."
+      }
+    ],
+    "official_sites": [
+      "https://hpkullu.nic.in/",
+      "https://himachaltourism.gov.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bijli_Mahadev",
+      "https://hpkullu.nic.in/",
+      "https://himachaltourism.gov.in/"
+    ]
+  },
+  {
+    "slug": "panch-kedar",
+    "name_en": "Panch Kedar",
+    "name_hi": "पंच केदार",
+    "region": "Rudraprayag & Chamoli districts",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "April-May (BKTC announces each temple's date)",
+      "close": "Oct-Nov (Kalpeshwar open year-round)",
+      "dates_2026": {
+        "kedarnath": "opened 2026-04-22",
+        "tungnath": null,
+        "madhyamaheshwar": null,
+        "rudranath": null,
+        "kalpeshwar": "year-round"
+      },
+      "dates_2027": null,
+      "source": "BKTC; Indiahikes Panch Kedar guide",
+      "as_of": "2026-10-08",
+      "notes": "Exact 2026 opening/closing dates for Tungnath, Madhyamaheshwar and Rudranath were not verified here - check BKTC."
+    },
+    "registration": {
+      "required": null,
+      "how": "Kedarnath falls under Char Dham registration; for the others check the Uttarakhand portal/BKTC notices.",
+      "official_url": "https://badrinath-kedarnath.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Kedarnath (hump) - Gaurikund trek",
+        "km": 16,
+        "time": "6-8 h up"
+      },
+      {
+        "step": "Madhyamaheshwar (navel) - Ransi via Gaundar",
+        "km": 16,
+        "time": "1.5-2 days"
+      },
+      {
+        "step": "Tungnath (arms) - Chopta",
+        "km": 3.5,
+        "time": "2-3 h up (Chandrashila +1.5 km)"
+      },
+      {
+        "step": "Rudranath (face) - Sagar/Panar route",
+        "km": 20,
+        "time": "2 days; hardest of the five"
+      },
+      {
+        "step": "Kalpeshwar (jata/hair) - Urgam valley, short walk from road head",
+        "km": 0.5,
+        "time": "minutes"
+      }
+    ],
+    "transport_options": [
+      "Road + treks; helicopter only for Kedarnath"
+    ],
+    "days_typical": "12-16 days for all five",
+    "difficulty": {
+      "level": "hard",
+      "why": "Multiple high-altitude treks (Rudranath, Madhyamaheshwar); Tungnath and Kalpeshwar are easy."
+    },
+    "altitude_m": 3680,
+    "health_rules": "Acclimatise; winter closures at high temples.",
+    "legend_summary": "After the Kurukshetra war the Pandavas sought Shiva's forgiveness for killing their kin. Shiva avoided them by becoming a bull and diving into the earth at Guptkashi. Bhima caught the bull's hind part at Kedarnath, where the hump remained; the other parts appeared elsewhere - arms at Tungnath, navel at Madhyamaheshwar, face at Rudranath and matted hair at Kalpeshwar. Together these five shrines form the Panch Kedar.",
+    "story_beats": [
+      "Shiva hides as a bull",
+      "Five parts, five shrines",
+      "Tungnath: highest Shiva temple",
+      "Pandavas earn forgiveness"
+    ],
+    "best_time": "May-June and September-October",
+    "what_to_carry": [
+      "Trekking gear",
+      "Warm layers",
+      "Permits/registration where applicable"
+    ],
+    "faqs": [
+      {
+        "q": "Which is the highest Shiva temple?",
+        "a": "Tungnath (~3,680 m), reached by a ~3.5 km trek from Chopta."
+      },
+      {
+        "q": "Which Panch Kedar is open all year?",
+        "a": "Kalpeshwar in the Urgam valley."
+      },
+      {
+        "q": "Which is the hardest trek?",
+        "a": "Rudranath."
+      },
+      {
+        "q": "Where is Tungnath worshipped in winter?",
+        "a": "At Makkumath."
+      },
+      {
+        "q": "Where is Madhyamaheshwar worshipped in winter?",
+        "a": "At Omkareshwar temple, Ukhimath."
+      }
+    ],
+    "official_sites": [
+      "https://badrinath-kedarnath.gov.in/"
+    ],
+    "sources": [
+      "https://indiahikes.com/documented-trek/panch-kedar-trek",
+      "https://badrinath-kedarnath.gov.in/other-temples/Other-Temples.aspx",
+      "https://en.wikipedia.org/wiki/Panch_Kedar"
+    ]
+  },
+  {
+    "slug": "adi-kailash-om-parvat",
+    "name_en": "Adi Kailash & Om Parvat Yatra",
+    "name_hi": "आदि कैलाश एवं ॐ पर्वत यात्रा",
+    "region": "Vyas valley, Dharchula, Pithoragarh district",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "May",
+      "close": "October/November (monsoon pause July-Aug)",
+      "dates_2026": {
+        "start": "2026-05-01 (flag-off at Dharchula; Jolingkong Shiva-Parvati temple opened)",
+        "permits_by_2026-06-02": 30016,
+        "monsoon_suspension": "permits stopped after 2026-07-01 (reported 2026-07-04) until further orders",
+        "post_monsoon_status": "resumption not verified as of 2026-10-08"
+      },
+      "dates_2027": null,
+      "source": "TripToTemples news 2026-06-06; The Pioneer 2026-07-04",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": true,
+      "how": "Inner Line Permit (Indian nationals) - apply online via Uttarakhand e-District/KMVN, then mandatory in-person verification at SDM office Dharchula; age 10-70 reported; reported cost Rs 1,500-2,500. Use only official channels - authorities warned of fake permits.",
+      "official_url": "https://pithoragarh.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Kathgodam/Tanakpur to Dharchula",
+        "km": 280,
+        "time": "1-2 days"
+      },
+      {
+        "step": "Dharchula to Gunji (road via Vyas valley)",
+        "km": 70,
+        "time": "5-6 h"
+      },
+      {
+        "step": "Gunji - Nabhidhang (Om Parvat viewpoint)",
+        "km": 26,
+        "time": "1.5 h"
+      },
+      {
+        "step": "Gunji - Kuti - Jolingkong (Adi Kailash, Parvati Kund)",
+        "km": 36,
+        "time": "2 h + short walk"
+      }
+    ],
+    "transport_options": [
+      "Road (4x4/taxi) - now motorable to Jolingkong and Nabhidhang",
+      "KMVN packages",
+      "Helicopter darshan (state-run) when operating"
+    ],
+    "days_typical": "6-9 days ex Kathgodam",
+    "difficulty": {
+      "level": "moderate",
+      "why": "Mostly motorable but very high (Jolingkong ~4,500 m) with rough landslide-prone roads."
+    },
+    "altitude_m": 4500,
+    "health_rules": "Medical fitness certified during ILP process; acclimatise at Gunji; monsoon suspension.",
+    "legend_summary": "Adi Kailash, also called Chhota Kailash, is said to resemble Mount Kailash and is revered as an earlier abode of Shiva and Parvati; Parvati Kund at its base mirrors the peak. Nearby Om Parvat carries a natural snow pattern shaped like the sacred syllable Om, visible from Nabhidhang. The Vyas valley takes its name from sage Ved Vyas, and the old Kailash Mansarovar trade and pilgrim path runs through it to Lipulekh.",
+    "story_beats": [
+      "Om written in snow",
+      "Shiva's first Kailash",
+      "Parvati Kund mirrors the peak",
+      "Permit-only border valley"
+    ],
+    "best_time": "May-June and September-October",
+    "what_to_carry": [
+      "ILP + Aadhaar + medical certificate",
+      "Heavy woollens",
+      "Altitude medicines",
+      "Cash (no ATMs beyond Dharchula)"
+    ],
+    "faqs": [
+      {
+        "q": "Do I need a permit?",
+        "a": "Yes, an Inner Line Permit verified in person at SDM Dharchula."
+      },
+      {
+        "q": "Can foreigners go?",
+        "a": "Foreign nationals face separate protected-area rules; check with Pithoragarh administration."
+      },
+      {
+        "q": "Is it a trek?",
+        "a": "Mostly drivable now; short walks at Jolingkong and Om Parvat viewpoint."
+      },
+      {
+        "q": "When is it closed?",
+        "a": "Permits are stopped during monsoon (early July onwards in 2026) and in winter."
+      },
+      {
+        "q": "Is it the same as Kailash Mansarovar?",
+        "a": "No. Adi Kailash is inside India; Kailash Mansarovar is in Tibet (China)."
+      }
+    ],
+    "official_sites": [
+      "https://pithoragarh.nic.in/",
+      "https://www.kmvn.in/"
+    ],
+    "sources": [
+      "https://www.triptotemples.com/news/adi-kailash/adi-kailash-yatra-2026-surges-thirty-thousands-permits-issued-in-34-days",
+      "https://dailypioneer.com/news/adi-kailash-yatra-suspended-due-to-monsoon",
+      "https://newsarenaindia.com/states/adi-kailash-yatra-put-on-hold-for-pilgrims-safety/81495"
+    ]
+  },
+  {
+    "slug": "hemkund-sahib",
+    "name_en": "Hemkund Sahib Yatra",
+    "name_hi": "हेमकुंड साहिब यात्रा",
+    "region": "Chamoli district",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "Late May",
+      "close": "~10 October",
+      "dates_2026": {
+        "opened": "2026-05-23",
+        "closing": "2026-10-10",
+        "footfall": "2.38 lakh+ by 2026-08-10"
+      },
+      "dates_2027": null,
+      "source": "Republic World 2026-08-10 (Trust president N.J.S. Bindra)",
+      "as_of": "2026-10-08",
+      "notes": "2027 opening not yet announced."
+    },
+    "registration": {
+      "required": true,
+      "how": "Same Uttarakhand registration portal/app as Char Dham; verification at Pulna/Govindghat. Helicopter Govindghat-Ghangaria via heliyatra.irctc.co.in.",
+      "official_url": "https://registrationandtouristcare.uk.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Rishikesh to Govindghat (via Joshimath)",
+        "km": 275,
+        "time": "10-11 h"
+      },
+      {
+        "step": "Govindghat - Pulna (road) - Ghangaria",
+        "km": "4 + ~10",
+        "time": "5-6 h trek"
+      },
+      {
+        "step": "Ghangaria - Hemkund Sahib",
+        "km": 6,
+        "time": "4-5 h steep climb"
+      }
+    ],
+    "transport_options": [
+      "Road to Govindghat/Pulna",
+      "Ponies, pithoos",
+      "Helicopter Govindghat-Ghangaria (IRCTC HeliYatra)"
+    ],
+    "days_typical": "4-5 days ex Rishikesh (add Valley of Flowers +1 day)",
+    "difficulty": {
+      "level": "hard",
+      "why": "Steep 6 km climb from Ghangaria to ~4,630 m glacial lake."
+    },
+    "altitude_m": 4632,
+    "health_rules": "Descend same day (no overnight stay at Hemkund); acclimatise at Ghangaria.",
+    "legend_summary": "Hemkund Sahib is a Sikh gurdwara beside a glacial lake ringed by seven peaks. In the Dasam Granth, Guru Gobind Singh recalls meditating in a previous life at a place called Hemkunt in the Himalaya. The site was identified in the 1930s and a gurdwara built; the Lokpal Lakshman temple beside the lake is also revered by Hindus. Pilgrims bathe in the icy sarovar before prayers.",
+    "story_beats": [
+      "Seven peaks ring a lake",
+      "A Guru's past-life meditation",
+      "Highest gurdwara in India",
+      "Open only four months"
+    ],
+    "best_time": "July-September (also Valley of Flowers bloom)",
+    "what_to_carry": [
+      "Registration letter",
+      "Rain gear, warm layers",
+      "Head covering for gurdwara"
+    ],
+    "faqs": [
+      {
+        "q": "When did Hemkund Sahib open/close in 2026?",
+        "a": "Opened 23 May 2026; closes 10 October 2026."
+      },
+      {
+        "q": "Is registration required?",
+        "a": "Yes, on the Uttarakhand Char Dham/Hemkund portal."
+      },
+      {
+        "q": "Can I stay overnight at Hemkund?",
+        "a": "No; pilgrims return to Ghangaria the same day."
+      },
+      {
+        "q": "Helicopter?",
+        "a": "Govindghat-Ghangaria, bookable only on heliyatra.irctc.co.in."
+      },
+      {
+        "q": "Altitude?",
+        "a": "About 4,630 m (over 15,000 ft)."
+      }
+    ],
+    "official_sites": [
+      "https://registrationandtouristcare.uk.gov.in/",
+      "https://heliyatra.irctc.co.in/"
+    ],
+    "sources": [
+      "https://www.republicworld.com/india/hemkunt-sahib-yatra-to-conclude-on-october-10-over-238-lakh-devotees-visit-shrine-2026-08-10-134421",
+      "https://newsable.asianetnews.com/india/hemkunt-sahib-yatra-to-end-oct-10-over-2-38-lakh-pilgrims-visit-articleshow-xpe9wsp",
+      "https://registrationandtouristcare.uk.gov.in/",
+      "https://en.wikipedia.org/wiki/Hemkund"
+    ]
+  },
+  {
+    "slug": "kainchi-dham",
+    "name_en": "Kainchi Dham (Neem Karoli Baba Ashram)",
+    "name_hi": "कैंची धाम",
+    "region": "Kainchi, Nainital district (Kumaon)",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "foundation_day_mela": "2026-06-15 (traffic plan 13-16 Jun; no private vehicles to temple, shuttles from Bhimtal/Nainital/Haldwani parkings)"
+      },
+      "dates_2027": {
+        "foundation_day_mela": "2027-06-15 (fixed date)"
+      },
+      "source": "Wikipedia (Hanuman temple consecrated 15 June 1964); India TV/Aaj Tak 2026-06 (fair arrangements)",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration; follow police traffic/shuttle plans on peak days.",
+      "official_url": "https://nainital.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Kathgodam railway station to Bhowali",
+        "km": 30,
+        "time": "1 h"
+      },
+      {
+        "step": "Bhowali to Kainchi Dham (Nainital-Almora road)",
+        "km": 9,
+        "time": "20 min; ~17 km from Nainital"
+      }
+    ],
+    "transport_options": [
+      "Road",
+      "Kathgodam rail head",
+      "Pantnagar airport"
+    ],
+    "days_typical": "Half day (pair with Nainital/Mukteshwar/Almora)",
+    "difficulty": {
+      "level": "easy",
+      "why": "Roadside ashram."
+    },
+    "altitude_m": null,
+    "health_rules": "Huge crowds and long queues on 15 June.",
+    "legend_summary": "Neem Karoli Baba, a revered Hanuman devotee, founded this ashram by the Shipra stream in the 1960s, and the Hanuman temple was consecrated on 15 June 1964, now marked each year by a large fair. Devotees tell of his simple teaching - love everyone, serve everyone, remember God. Western seekers such as Ram Dass carried his name abroad, and later visitors included tech founders, which brought the ashram worldwide attention.",
+    "story_beats": [
+      "A saint by the Shipra",
+      "Love all, serve all",
+      "Every 15 June, a fair",
+      "Seekers from across the world"
+    ],
+    "best_time": "March-June, September-November; avoid 13-16 June unless attending the fair",
+    "what_to_carry": [
+      "Modest dress",
+      "Water",
+      "Patience on weekends"
+    ],
+    "faqs": [
+      {
+        "q": "When is Kainchi Dham foundation day?",
+        "a": "15 June every year (consecrated 1964)."
+      },
+      {
+        "q": "Can I drive to the temple on 15 June?",
+        "a": "In 2026 private vehicles were stopped; shuttles ran from designated parkings 13-16 June."
+      },
+      {
+        "q": "How far from Nainital?",
+        "a": "About 17 km; 9 km from Bhowali."
+      },
+      {
+        "q": "Is there an entry fee?",
+        "a": "No."
+      },
+      {
+        "q": "Nearest railway?",
+        "a": "Kathgodam."
+      }
+    ],
+    "official_sites": [
+      "https://nainital.nic.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kainchi_Dham",
+      "https://www.indiatvnews.com/news/india/kainchi-dham-fair-2026-no-private-vehicle-entry-allowed-police-issue-major-traffic-advisory-check-details-here-2026-06-11-1044510",
+      "https://www.aajtak.in/india/uttarakhand/story/kainchi-dham-foundation-day-over-one-lakh-devotees-expected-nainital-lclcn-strc-2578747-2026-06-14"
+    ]
+  },
+  {
+    "slug": "kailash-mansarovar-yatra",
+    "name_en": "Kailash Mansarovar Yatra (MEA)",
+    "name_hi": "कैलाश मानसरोवर यात्रा",
+    "region": "Tibet Autonomous Region (China), via Uttarakhand/Sikkim",
+    "state": "Outside India (routes via Uttarakhand & Sikkim)",
+    "season": {
+      "open": "June",
+      "close": "August",
+      "dates_2026": {
+        "window": "June-August 2026",
+        "applications": "2026-04-30 to 2026-05-19 on kmy.gov.in",
+        "draw": "computerised draw ~2026-05-21, 1,000 yatris selected",
+        "batches": "20 batches x 50 (10 via Lipulekh, 10 via Nathu La)",
+        "first_nathu_la_batch": "2026-06-20",
+        "first_lipulekh_batch_flag_off": "2026-07-05 (Tanakpur)",
+        "status": "season over"
+      },
+      "dates_2027": null,
+      "source": "Tribune/ANI 2026-05-01; The Statesman 2026-05-21; Amar Ujala/IANS 2026-06-20; IANS 2026-07-05",
+      "as_of": "2026-10-08",
+      "notes": "2027 not yet announced. INFO ONLY - Suzu Travels cannot sell this yatra (MEA-organised, in China)."
+    },
+    "registration": {
+      "required": true,
+      "how": "Online-only application on the MEA portal; random, gender-balanced computerised draw; selected yatris pay a non-refundable confirmation fee and clear medical tests in Delhi.",
+      "official_url": "https://kmy.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Lipulekh route: Delhi - Tanakpur - Dharchula - Gunji - Lipulekh pass - Taklakot (Purang) - Mansarovar - Kailash parikrama",
+        "km": null,
+        "time": "~22 days; reported cost ~Rs 2.09 lakh"
+      },
+      {
+        "step": "Nathu La route: Delhi - Gangtok - Nathu La - Kangma/Lazi - Mansarovar - Kailash parikrama (mostly by vehicle)",
+        "km": null,
+        "time": "~21 days; reported cost ~Rs 3.31 lakh"
+      }
+    ],
+    "transport_options": [
+      "MEA-organised groups only (government route)",
+      "Private Nepal-route tours are separate and not MEA"
+    ],
+    "days_typical": "21-22 days",
+    "difficulty": {
+      "level": "hard",
+      "why": "Kailash parikrama crosses Dolma La (~5,600 m); strict medical screening."
+    },
+    "altitude_m": 5630,
+    "health_rules": "Indian citizens 18-70; passport valid beyond the yatra; BMI 25 or below; mandatory medical tests (DHLI/ITBP); OCI/foreigners not eligible.",
+    "legend_summary": "Mount Kailash is revered by Hindus as Shiva's abode, by Jains as the place of Rishabhadeva's liberation, by Buddhists as the seat of Demchok, and by Bon followers as a sacred axis. Lake Mansarovar is said to have been formed first in Brahma's mind; a dip and the circumambulation of the mountain are believed to wash away lifetimes of karma. India's government-run yatra resumed in 2025 after a pause since 2020.",
+    "story_beats": [
+      "Shiva's throne in Tibet",
+      "Lake born in Brahma's mind",
+      "A draw decides who goes",
+      "Three weeks, one parikrama"
+    ],
+    "best_time": "June-August (only MEA window)",
+    "what_to_carry": [
+      "Passport",
+      "MEA documents",
+      "High-altitude gear as per MEA list"
+    ],
+    "faqs": [
+      {
+        "q": "Did Kailash Mansarovar Yatra happen in 2026?",
+        "a": "Yes, June-August 2026: 20 batches of 50 via Lipulekh and Nathu La."
+      },
+      {
+        "q": "Who can apply?",
+        "a": "Indian citizens aged 18-70 with a valid passport and BMI 25 or less; OCI and foreigners cannot."
+      },
+      {
+        "q": "Where to apply?",
+        "a": "Only on kmy.gov.in when MEA opens applications (usually spring)."
+      },
+      {
+        "q": "Can a travel agent book it?",
+        "a": "No. The MEA yatra is by draw; Suzu Travels does not sell it."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "About 21-22 days depending on route."
+      }
+    ],
+    "official_sites": [
+      "https://kmy.gov.in/",
+      "https://www.mea.gov.in/"
+    ],
+    "sources": [
+      "https://www.tribuneindia.com/news/world/kailash-manasarovar-yatra-2026-to-take-place-from-june-august-online-registration-open-mea/",
+      "https://www.thestatesman.com/india/jaishankar-conducts-computerised-draw-for-selection-of-yatris-for-kailash-manasarovar-yatra-2026-1000-selected-1503596587.html",
+      "https://www.outlooktraveller.com/News/kailash-mansarovar-yatra-2026-opens-dates-routes-costs-and-how-to-apply",
+      "https://www.amarujala.com/india-news/kailash-mansarovar-yatra-reopens-after-seven-years-first-batch-to-depart-from-nathu-la-today-2026-06-20",
+      "https://ianslive.in/ukhand-cm-dhami-flags-off-first-batch-of-kailash-mansarovar-yatra-pilgrims-from-tanakpur--20260705112900"
+    ]
+  },
+  {
+    "slug": "kashi-ayodhya-prayagraj-circuit",
+    "name_en": "Kashi - Ayodhya - Prayagraj Faith Circuit",
+    "name_hi": "काशी - अयोध्या - प्रयागराज तीर्थ परिपथ",
+    "region": "Eastern Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "ram_mandir": "Pran Pratishtha 2024-01-22; trust timings effective 2026-04-18: free darshan slots 7 AM-9 PM (break 12-1 PM); Mangala aarti 4 AM, Shringar 6 AM, Shayan 10 PM; free passes at online.srjbtkshetra.org",
+        "kashi_vishwanath": "opens 2:30 AM; Mangala aarti 3-4 AM; darshan 4-11 AM and 12-7 PM; Bhog aarti 11:30-12; Saptarishi aarti 7-8:30 PM; Shringar/Bhog aarti ~9 PM; Shayan aarti 10:30 PM; closes 11 PM"
+      },
+      "dates_2027": {
+        "magh_mela_prayagraj_2027": {
+          "makar_sankranti": "2027-01-14/15 (calendars differ)",
+          "paush_purnima": "2027-01-22",
+          "mauni_amavasya": "2027-02-06",
+          "basant_panchami": "2027-02-11",
+          "maghi_purnima": "2027-02-20",
+          "mahashivratri": "2027-03-06",
+          "status": "panchang-based; official Magh Mela 2027 schedule not yet published by UP govt - festival dates match those announced for Haridwar Ardh Kumbh 2027"
+        },
+        "next_prayagraj_kumbh": "Ardh Kumbh 2031 (UP govt preparations reported; no official dates)"
+      },
+      "source": "srjbtkshetra.org (accessed 2026-10-08); shrikashivishwanath.org rituals page; HappyFares (Oct 2026) & The Week/PTI 2026-04-15 for 2027 festival dates; Dynamite News 2025-01-22 for Ardh Kumbh 2031",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No yatra registration. Ram Mandir: free darshan/aarti passes optional online. Kashi Vishwanath: paid Sugam Darshan/aarti tickets online.",
+      "official_url": "https://srjbtkshetra.org/"
+    },
+    "route": [
+      {
+        "step": "Varanasi (Kashi Vishwanath, Ganga aarti at Dashashwamedh) ",
+        "km": null,
+        "time": "2 days"
+      },
+      {
+        "step": "Varanasi to Prayagraj (Triveni Sangam)",
+        "km": 120,
+        "time": "3 h"
+      },
+      {
+        "step": "Prayagraj to Ayodhya (Ram Janmabhoomi, Hanumangarhi, Saryu ghats)",
+        "km": 165,
+        "time": "4 h"
+      },
+      {
+        "step": "Ayodhya to Lucknow/Varanasi for departure",
+        "km": 135,
+        "time": "3 h to Lucknow"
+      }
+    ],
+    "transport_options": [
+      "Airports: Varanasi, Prayagraj, Ayodhya, Lucknow",
+      "Vande Bharat and regular trains",
+      "Expressways/cab"
+    ],
+    "days_typical": "5-6 days",
+    "difficulty": {
+      "level": "easy",
+      "why": "City temples; challenges are crowds, queues and summer heat."
+    },
+    "altitude_m": null,
+    "health_rules": "Heat in May-June; crowd crush risk on mela snan days - follow administration routes.",
+    "legend_summary": "Kashi is believed to rest on Shiva's trident, so dying there grants liberation; the Vishwanath jyotirlinga is its heart. Prayagraj's Triveni Sangam joins the Ganga, Yamuna and the unseen Saraswati, where drops of amrit are said to have fallen, giving rise to the Kumbh. Ayodhya is revered as Lord Rama's birthplace; the new Ram Mandir's idol of Ram Lalla was consecrated on 22 January 2024.",
+    "story_beats": [
+      "Kashi on Shiva's trident",
+      "Three rivers meet at Prayag",
+      "Ram Lalla returns home",
+      "One circuit, three blessings"
+    ],
+    "best_time": "October-March; Magh Mela Jan-Feb; Dev Deepawali (Kartik Purnima) in Kashi; Ram Navami in Ayodhya",
+    "what_to_carry": [
+      "Photo ID (security checks)",
+      "No phones/bags inside Ram Mandir and Kashi Vishwanath - use lockers",
+      "Light cotton (summer) / woollens (Dec-Jan)"
+    ],
+    "faqs": [
+      {
+        "q": "What are Ram Mandir darshan timings?",
+        "a": "Per the trust (from 18 Apr 2026), darshan slots run 7 AM to 9 PM with a 12-1 PM break; Mangala aarti 4 AM, Shringar 6 AM, Shayan 10 PM."
+      },
+      {
+        "q": "Is there a fee for Ram Mandir darshan?",
+        "a": "No. Passes for darshan/aarti are free on online.srjbtkshetra.org."
+      },
+      {
+        "q": "When is Magh Mela 2027?",
+        "a": "Expected mid-Jan to early Mar 2027; Mauni Amavasya 6 Feb 2027 is the biggest bath. Await the official UP schedule."
+      },
+      {
+        "q": "When is the next Kumbh at Prayagraj?",
+        "a": "Ardh Kumbh is due in 2031; exact dates not announced."
+      },
+      {
+        "q": "What time does Kashi Vishwanath open?",
+        "a": "2:30 AM, with Mangala aarti 3-4 AM; closes 11 PM after Shayan aarti."
+      }
+    ],
+    "official_sites": [
+      "https://srjbtkshetra.org/",
+      "https://shrikashivishwanath.org/",
+      "https://kumbh.gov.in/",
+      "https://uptourism.gov.in/"
+    ],
+    "sources": [
+      "https://srjbtkshetra.org/",
+      "https://shrikashivishwanath.org/general/rituals",
+      "https://www.happyfares.in/blog/?p=12655",
+      "https://www.theweek.in/wire-updates/national/2026/04/15/dates-announced-for-bathing-festivals-during-ardh-kumbh-mela-in-haridwar.amp.html",
+      "https://www.dynamitenews.com/story/up-cabinet-discusses-preparations-for-2031-ardha-kumbh-after-taking-a-holy-hip-at-sangam"
+    ]
+  },
+  {
+    "slug": "haridwar-ardh-kumbh-2027",
+    "name_en": "Haridwar Ardh Kumbh Mela 2027",
+    "name_hi": "हरिद्वार अर्धकुंभ मेला 2027",
+    "region": "Haridwar",
+    "state": "Uttarakhand",
+    "season": {
+      "open": "2027-01-14",
+      "close": "2027-04-20",
+      "dates_2026": null,
+      "dates_2027": {
+        "bathing_dates": {
+          "2027-01-14": "Makar Sankranti",
+          "2027-02-06": "Mauni Amavasya",
+          "2027-02-11": "Basant Panchami",
+          "2027-02-20": "Magh Purnima",
+          "2027-03-06": "Mahashivratri (Amrit Snan)",
+          "2027-03-08": "Phalguna Amavasya (Amrit Snan)",
+          "2027-04-07": "Nav Samvatsar",
+          "2027-04-14": "Mesh Sankranti/Baisakhi (Amrit Snan)",
+          "2027-04-15": "listed bathing day",
+          "2027-04-20": "Chaitra Purnima"
+        }
+      },
+      "source": "PTI via The Week 2026-04-15 (Mela Officer Sonika Singh); The Statesman (Akhara Parishad: 14 Jan-20 Apr 2027)",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": null,
+      "how": "Mela administration registration/advisories expected closer to the date.",
+      "official_url": "https://haridwar.nic.in/"
+    },
+    "route": [
+      {
+        "step": "Delhi to Haridwar",
+        "km": 220,
+        "time": "5-6 h by road; ~4.5 h by Vande Bharat/Shatabdi"
+      }
+    ],
+    "transport_options": [
+      "Rail to Haridwar",
+      "Jolly Grant airport (Dehradun)",
+      "Road"
+    ],
+    "days_typical": "2-3 days (snan + Rishikesh)",
+    "difficulty": {
+      "level": "easy",
+      "why": "Riverside ghats; crowd management is the main issue on Amrit Snan days."
+    },
+    "altitude_m": null,
+    "health_rules": "Expect road closures and walking distances on snan days.",
+    "legend_summary": "When gods and demons churned the ocean for amrit, drops of nectar fell at four places - Haridwar, Prayagraj, Ujjain and Nashik - which now host the Kumbh in rotation. At Haridwar, Har ki Pauri is believed to hold Vishnu's footprint, and a dip during the Kumbh's planetary alignment is thought to be especially purifying. The 2027 mela is an Ardh (half) Kumbh that the state says it will stage on a Purna Kumbh scale.",
+    "story_beats": [
+      "Nectar falls at Haridwar",
+      "Sadhus march to the Ganga",
+      "Three Amrit Snans in 2027",
+      "Har ki Pauri glows"
+    ],
+    "best_time": "Amrit Snan days for spectacle; weekdays for calmer darshan",
+    "what_to_carry": [
+      "ID",
+      "Light bag",
+      "Change of clothes for snan",
+      "Book stays early"
+    ],
+    "faqs": [
+      {
+        "q": "When is Haridwar Kumbh 2027?",
+        "a": "14 January to 20 April 2027."
+      },
+      {
+        "q": "What are the Amrit Snan dates?",
+        "a": "6 March (Mahashivratri), 8 March (Phalguna Amavasya) and 14 April 2027 (Mesh Sankranti)."
+      },
+      {
+        "q": "Is it a full Kumbh?",
+        "a": "It is an Ardh Kumbh, though the state plans it at full-Kumbh scale."
+      },
+      {
+        "q": "How to reach?",
+        "a": "Train to Haridwar or fly to Dehradun (Jolly Grant), ~35 km."
+      },
+      {
+        "q": "Can we combine it with Rishikesh?",
+        "a": "Yes, Rishikesh is ~25 km away."
+      }
+    ],
+    "official_sites": [
+      "https://haridwar.nic.in/",
+      "https://uttarakhandtourism.gov.in/"
+    ],
+    "sources": [
+      "https://www.theweek.in/wire-updates/national/2026/04/15/dates-announced-for-bathing-festivals-during-ardh-kumbh-mela-in-haridwar.amp.html",
+      "https://www.thestatesman.com/india/haridwar-kumbh-2027-will-be-from-january-14-to-april-20-as-aiap-seers-finalised-holy-bath-day-1503518967.html",
+      "https://www.theweek.in/wire-updates/national/2025/11/28/des89-ukd-ardh-kumbh-dhami.html"
+    ]
+  },
+  {
+    "slug": "jagannath-puri-rath-yatra",
+    "name_en": "Jagannath Puri & Rath Yatra",
+    "name_hi": "जगन्नाथ पुरी रथ यात्रा",
+    "region": "Puri",
+    "state": "Odisha",
+    "season": {
+      "open": "Year-round temple",
+      "close": "Year-round",
+      "dates_2026": {
+        "rath_yatra": "2026-07-16 (Ashadha Shukla Dwitiya; some calendars showed 15 Jul)",
+        "status": "held"
+      },
+      "dates_2027": {
+        "rath_yatra": "2027-07-05 (panchang-based; official Shree Jagannath Temple Administration notice not yet seen)"
+      },
+      "source": "Free Press Journal 2026 (Drik Panchang tithi); dekhopanchang.com Rath Yatra 2027",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration; only Hindus are allowed inside the main temple.",
+      "official_url": "https://www.shreejagannatha.in/"
+    },
+    "route": [
+      {
+        "step": "Bhubaneswar airport to Puri",
+        "km": 60,
+        "time": "1.5 h"
+      },
+      {
+        "step": "Rath Yatra: Jagannath temple to Gundicha temple along Bada Danda",
+        "km": 3,
+        "time": "chariots pulled over 1-2 days; return (Bahuda) after ~9 days"
+      }
+    ],
+    "transport_options": [
+      "Puri railway station",
+      "Bhubaneswar airport",
+      "Road"
+    ],
+    "days_typical": "2-3 days (add Konark, Bhubaneswar)",
+    "difficulty": {
+      "level": "easy",
+      "why": "Coastal town temple; Rath Yatra crowds are intense."
+    },
+    "altitude_m": null,
+    "health_rules": "Heat and humidity in June-July; crowd safety on chariot day.",
+    "legend_summary": "Lord Jagannath, with siblings Balabhadra and Subhadra, is worshipped in wooden forms that are renewed in the Nabakalebara ritual. Once a year the deities leave the temple on three giant new chariots to visit their aunt's house, the Gundicha temple, so that everyone - regardless of caste or creed - can see them. The return journey, Bahuda Yatra, follows about nine days later.",
+    "story_beats": [
+      "Lord of the Universe rides out",
+      "Three chariots, one Bada Danda",
+      "Darshan for every devotee",
+      "Return after nine days"
+    ],
+    "best_time": "October-March for the town; June-July for Rath Yatra",
+    "what_to_carry": [
+      "Cotton clothes",
+      "ID",
+      "No leather inside temple"
+    ],
+    "faqs": [
+      {
+        "q": "When is Rath Yatra 2027?",
+        "a": "Expected 5 July 2027 (Ashadha Shukla Dwitiya) per panchang; await temple notice."
+      },
+      {
+        "q": "Can non-Hindus enter?",
+        "a": "No, only Hindus may enter the main Jagannath temple."
+      },
+      {
+        "q": "When was Rath Yatra 2026?",
+        "a": "16 July 2026."
+      },
+      {
+        "q": "Nearest airport?",
+        "a": "Bhubaneswar, about 60 km."
+      },
+      {
+        "q": "What is Bahuda Yatra?",
+        "a": "The deities' return journey to the main temple."
+      }
+    ],
+    "official_sites": [
+      "https://www.shreejagannatha.in/",
+      "https://odishatourism.gov.in/"
+    ],
+    "sources": [
+      "https://www.freepressjournal.in/lifestyle/when-is-rath-yatra-2026-july-15-or-july-16-heres-the-correct-date-and-everything-to-know-about-the-chariot-festival",
+      "https://dekhopanchang.com/en/festivals/jagannath-rath-yatra/2027",
+      "https://en.wikipedia.org/wiki/Ratha_Yatra_(Puri)"
+    ]
+  },
+  {
+    "slug": "tirupati-tirumala",
+    "name_en": "Tirumala Tirupati (Sri Venkateswara)",
+    "name_hi": "तिरुमला तिरुपति बालाजी",
+    "region": "Tirumala hills, Tirupati district",
+    "state": "Andhra Pradesh",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Srivari Brahmotsavams are held annually around Sept-Oct"
+      },
+      "dates_2027": null,
+      "source": "TTD; Wikipedia",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": true,
+      "how": "Free Sarva Darshan via queue/tokens, or book Special Entry Darshan (Rs 300) and sevas online on TTD's portal when monthly quotas release; Aadhaar/ID needed.",
+      "official_url": "https://ttdevasthanams.ap.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Tirupati to Tirumala by ghat road",
+        "km": 22,
+        "time": "45-60 min"
+      },
+      {
+        "step": "Or walk the Alipiri footpath (24 h) or Srivari Mettu (6 AM-6 PM)",
+        "km": "~9 (Alipiri)",
+        "time": "3-5 h"
+      }
+    ],
+    "transport_options": [
+      "Tirupati airport (Renigunta)",
+      "Tirupati railway station",
+      "APSRTC buses up the ghat"
+    ],
+    "days_typical": "1-2 days",
+    "difficulty": {
+      "level": "easy",
+      "why": "Drive-up; the footpath climb is optional and moderate."
+    },
+    "altitude_m": 853,
+    "health_rules": "Long queues; carry water; seniors have special darshan provisions (check TTD).",
+    "legend_summary": "Lord Venkateswara is a form of Vishnu who came to the Seshachalam hills in the Kali Yuga. In one popular telling, after sage Bhrigu kicked Vishnu and Lakshmi left Vaikuntha in hurt, Vishnu followed her to earth, later marrying Padmavati, Lakshmi reborn. To fund the wedding he took a loan from Kubera, and devotees' offerings are said to help repay it - one reason hair and gifts are offered here.",
+    "story_beats": [
+      "Vishnu descends to seven hills",
+      "A wedding loan from Kubera",
+      "Devotees offer hair and gold",
+      "Darshan worth the wait"
+    ],
+    "best_time": "September-February; avoid summer holiday rush",
+    "what_to_carry": [
+      "Booking confirmation + ID",
+      "Traditional dress (dress code applies)",
+      "No phones inside sanctum"
+    ],
+    "faqs": [
+      {
+        "q": "How do I book Rs 300 darshan?",
+        "a": "Online on TTD's official portal when the monthly quota opens."
+      },
+      {
+        "q": "Is there a dress code?",
+        "a": "Yes, traditional attire is expected for darshan."
+      },
+      {
+        "q": "Can I walk up?",
+        "a": "Yes, via Alipiri (open 24 h) or Srivari Mettu (6 AM-6 PM)."
+      },
+      {
+        "q": "When is Brahmotsavam?",
+        "a": "Annually around Sept-Oct; check TTD for dates."
+      },
+      {
+        "q": "Is free darshan available?",
+        "a": "Yes, Sarva Darshan is free but can take many hours."
+      }
+    ],
+    "official_sites": [
+      "https://ttdevasthanams.ap.gov.in/",
+      "https://www.tirumala.org/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala",
+      "https://www.tirumala.org/",
+      "https://ttdevasthanams.ap.gov.in/"
+    ]
+  },
+  {
+    "slug": "shirdi-sai-baba",
+    "name_en": "Shirdi Sai Baba Samadhi Mandir",
+    "name_hi": "शिर्डी साईं बाबा",
+    "region": "Shirdi, Ahilyanagar district",
+    "state": "Maharashtra",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Ram Navami, Guru Purnima and Vijayadashami (Baba's Mahasamadhi, 1918) are the big festivals"
+      },
+      "dates_2027": null,
+      "source": "Shri Saibaba Sansthan Trust; Wikipedia",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "Free darshan; paid darshan/aarti passes bookable on the Sansthan's online portal.",
+      "official_url": "https://online.sai.org.in/"
+    },
+    "route": [
+      {
+        "step": "Shirdi airport / Sainagar Shirdi railway station to temple",
+        "km": 15,
+        "time": "30 min"
+      },
+      {
+        "step": "Nashik to Shirdi",
+        "km": 90,
+        "time": "2 h"
+      }
+    ],
+    "transport_options": [
+      "Shirdi airport",
+      "Sainagar Shirdi rail",
+      "Road from Mumbai (~240 km) and Nashik"
+    ],
+    "days_typical": "1 day (pair with Shani Shingnapur, Nashik-Trimbakeshwar)",
+    "difficulty": {
+      "level": "easy",
+      "why": "Town temple."
+    },
+    "altitude_m": null,
+    "health_rules": "Crowds on Thursdays and festivals.",
+    "legend_summary": "Sai Baba arrived in Shirdi as a young fakir in the 1850s and lived in an old mosque he called Dwarkamai, keeping a sacred fire (dhuni) whose ash (udi) devotees still receive. He drew both Hindus and Muslims, teaching faith (shraddha) and patience (saburi). He took Mahasamadhi on Vijayadashami in 1918, and his tomb became the Samadhi Mandir, now among India's busiest shrines.",
+    "story_beats": [
+      "A fakir comes to Shirdi",
+      "Shraddha and saburi",
+      "The ever-burning dhuni",
+      "Samadhi on Vijayadashami 1918"
+    ],
+    "best_time": "October-March",
+    "what_to_carry": [
+      "ID",
+      "Modest dress"
+    ],
+    "faqs": [
+      {
+        "q": "Is darshan free?",
+        "a": "Yes; paid passes are optional via the Sansthan's portal."
+      },
+      {
+        "q": "Which day is busiest?",
+        "a": "Thursdays and festivals."
+      },
+      {
+        "q": "Nearest airport?",
+        "a": "Shirdi airport, about 15 km."
+      },
+      {
+        "q": "When did Sai Baba take Samadhi?",
+        "a": "Vijayadashami, 1918."
+      },
+      {
+        "q": "What is udi?",
+        "a": "Sacred ash from the dhuni given to devotees."
+      }
+    ],
+    "official_sites": [
+      "https://www.sai.org.in/",
+      "https://online.sai.org.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sai_Baba_of_Shirdi",
+      "https://en.wikipedia.org/wiki/Shirdi",
+      "https://www.sai.org.in/"
+    ]
+  },
+  {
+    "slug": "golden-temple-amritsar",
+    "name_en": "Sri Harmandir Sahib (Golden Temple), Amritsar",
+    "name_hi": "श्री हरमंदिर साहिब (स्वर्ण मंदिर)",
+    "region": "Amritsar",
+    "state": "Punjab",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Gurpurabs, Baisakhi, Bandi Chhor Divas (Diwali) are peak"
+      },
+      "dates_2027": null,
+      "source": "SGPC; Wikipedia",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration or ticket; open to all faiths. Cover head, remove shoes, wash feet.",
+      "official_url": "https://sgpc.net/"
+    },
+    "route": [
+      {
+        "step": "Amritsar airport to Golden Temple",
+        "km": 12,
+        "time": "30 min"
+      },
+      {
+        "step": "Golden Temple to Attari-Wagah border (retreat ceremony)",
+        "km": 30,
+        "time": "45 min"
+      }
+    ],
+    "transport_options": [
+      "Amritsar airport",
+      "Amritsar Junction rail",
+      "Road from Delhi (~450 km)"
+    ],
+    "days_typical": "1-2 days (add Jallianwala Bagh, Wagah)",
+    "difficulty": {
+      "level": "easy",
+      "why": "City shrine."
+    },
+    "altitude_m": null,
+    "health_rules": "None special; free langar serves 100,000+ meals daily.",
+    "legend_summary": "Guru Ram Das, the fourth Sikh Guru, excavated the sacred pool, Amrit Sarovar, and founded the town around it. His son Guru Arjan built the Harmandir Sahib in the middle of the pool with doors on all four sides, open to every caste and creed, and installed the Adi Granth there in 1604. The gilding came later under Maharaja Ranjit Singh, giving it the name Golden Temple.",
+    "story_beats": [
+      "A pool of nectar",
+      "Four doors, open to all",
+      "Langar feeds a city",
+      "Gold over the Granth"
+    ],
+    "best_time": "October-March; early morning Prakash or night Sukhasan ceremony",
+    "what_to_carry": [
+      "Head covering",
+      "Socks for hot marble in summer"
+    ],
+    "faqs": [
+      {
+        "q": "Is there an entry fee?",
+        "a": "No, entry and langar are free."
+      },
+      {
+        "q": "Is it open at night?",
+        "a": "The complex is open round the clock; the sanctum follows Prakash (early morning) and Sukhasan (night) rites."
+      },
+      {
+        "q": "Do I need to cover my head?",
+        "a": "Yes, for everyone."
+      },
+      {
+        "q": "Who manages it?",
+        "a": "Shiromani Gurdwara Parbandhak Committee (SGPC)."
+      },
+      {
+        "q": "How far is Wagah border?",
+        "a": "About 30 km."
+      }
+    ],
+    "official_sites": [
+      "https://sgpc.net/",
+      "https://punjabtourism.punjab.gov.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Golden_Temple",
+      "https://sgpc.net/",
+      "https://punjabtourism.punjab.gov.in/"
+    ]
+  },
+  {
+    "slug": "dwarka-somnath",
+    "name_en": "Dwarka - Somnath Circuit",
+    "name_hi": "द्वारका - सोमनाथ",
+    "region": "Saurashtra coast",
+    "state": "Gujarat",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Janmashtami at Dwarka; Mahashivratri and Kartik Purnima at Somnath"
+      },
+      "dates_2027": null,
+      "source": "Somnath Trust; Gujarat Tourism",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration; online puja/aarti booking with Somnath Trust.",
+      "official_url": "https://somnath.org/"
+    },
+    "route": [
+      {
+        "step": "Jamnagar/Rajkot to Dwarka (Dwarkadhish, Nageshwar Jyotirlinga, Bet Dwarka via Sudarshan Setu)",
+        "km": 140,
+        "time": "2.5-3 h from Jamnagar"
+      },
+      {
+        "step": "Dwarka to Porbandar to Somnath",
+        "km": 235,
+        "time": "5 h"
+      }
+    ],
+    "transport_options": [
+      "Jamnagar, Rajkot, Porbandar, Diu airports",
+      "Dwarka & Veraval/Somnath railway",
+      "Road"
+    ],
+    "days_typical": "4-5 days",
+    "difficulty": {
+      "level": "easy",
+      "why": "Coastal drive-up temples."
+    },
+    "altitude_m": null,
+    "health_rules": "Summer heat; sea breeze evenings.",
+    "legend_summary": "Dwarka is revered as Krishna's kingdom after he left Mathura, and the Dwarkadhish temple is one of the four Char Dham of Adi Shankaracharya. Somnath is counted first among the twelve jyotirlingas; legend says the Moon god Soma worshipped Shiva here to be freed of a curse. The temple was destroyed and rebuilt many times; the present shrine was rebuilt after Independence and consecrated in 1951.",
+    "story_beats": [
+      "Krishna's kingdom by the sea",
+      "First of twelve jyotirlingas",
+      "Rebuilt again and again",
+      "Sunset aarti on the shore"
+    ],
+    "best_time": "October-March",
+    "what_to_carry": [
+      "Light cotton",
+      "ID for phone deposit"
+    ],
+    "faqs": [
+      {
+        "q": "Is Dwarka part of the Char Dham?",
+        "a": "Yes, Dwarka is one of the four dhams (with Badrinath, Puri, Rameswaram)."
+      },
+      {
+        "q": "Which jyotirlingas are on this circuit?",
+        "a": "Somnath and Nageshwar."
+      },
+      {
+        "q": "How to reach Bet Dwarka?",
+        "a": "By road over Sudarshan Setu bridge from Okha."
+      },
+      {
+        "q": "Distance Dwarka to Somnath?",
+        "a": "About 235 km, ~5 h."
+      },
+      {
+        "q": "Best time?",
+        "a": "October to March."
+      }
+    ],
+    "official_sites": [
+      "https://somnath.org/",
+      "https://www.gujarattourism.com/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Somnath_temple",
+      "https://en.wikipedia.org/wiki/Dwarkadhish_Temple",
+      "https://somnath.org/"
+    ]
+  },
+  {
+    "slug": "rameshwaram-madurai-kanyakumari",
+    "name_en": "Rameswaram - Madurai - Kanyakumari",
+    "name_hi": "रामेश्वरम - मदुरै - कन्याकुमारी",
+    "region": "South Tamil Nadu",
+    "state": "Tamil Nadu",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Meenakshi Thirukalyanam (Chithirai festival, Apr-May) at Madurai; Mahashivratri at Rameswaram"
+      },
+      "dates_2027": null,
+      "source": "TN HR&CE; Wikipedia",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration; special darshan tickets at temples.",
+      "official_url": "https://hrce.tn.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Madurai (Meenakshi Amman temple) to Rameswaram over Pamban bridge",
+        "km": 175,
+        "time": "3.5-4 h"
+      },
+      {
+        "step": "Rameswaram to Dhanushkodi",
+        "km": 20,
+        "time": "30 min"
+      },
+      {
+        "step": "Rameswaram/Madurai to Kanyakumari",
+        "km": 310,
+        "time": "6 h"
+      }
+    ],
+    "transport_options": [
+      "Madurai airport",
+      "Rail to Rameswaram, Madurai, Kanyakumari",
+      "Road"
+    ],
+    "days_typical": "5-6 days",
+    "difficulty": {
+      "level": "easy",
+      "why": "Town temples and coastal sights."
+    },
+    "altitude_m": null,
+    "health_rules": "Heat and humidity; dress codes at temples.",
+    "legend_summary": "Rameswaram's Ramanathaswamy jyotirlinga is linked to Rama, who worshipped Shiva here before or after the battle in Lanka; pilgrims bathe in the temple's 22 sacred wells and the sea at Agni Theertham. Madurai's Meenakshi temple celebrates the warrior-princess Meenakshi's marriage to Sundareswarar (Shiva). At Kanyakumari, the virgin goddess Kanya Kumari waits at the land's end where three seas meet, near the rock where Swami Vivekananda meditated.",
+    "story_beats": [
+      "Rama worships Shiva at sea",
+      "Twenty-two wells, one bath",
+      "Meenakshi weds Sundareswarar",
+      "Where three seas meet"
+    ],
+    "best_time": "October-March",
+    "what_to_carry": [
+      "Traditional dress",
+      "Change of clothes for theertham bath"
+    ],
+    "faqs": [
+      {
+        "q": "Is Rameswaram one of the Char Dham?",
+        "a": "Yes, along with Badrinath, Dwarka and Puri."
+      },
+      {
+        "q": "What is the 22 theertham bath?",
+        "a": "A ritual bath at 22 wells inside Ramanathaswamy temple."
+      },
+      {
+        "q": "How to reach Rameswaram?",
+        "a": "By road or rail across the Pamban bridge."
+      },
+      {
+        "q": "How many days for the circuit?",
+        "a": "About 5-6 days."
+      },
+      {
+        "q": "Best time?",
+        "a": "October to March."
+      }
+    ],
+    "official_sites": [
+      "https://hrce.tn.gov.in/",
+      "https://www.tamilnadutourism.tn.gov.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple",
+      "https://en.wikipedia.org/wiki/Meenakshi_Temple",
+      "https://en.wikipedia.org/wiki/Kanyakumari"
+    ]
+  },
+  {
+    "slug": "mathura-vrindavan",
+    "name_en": "Mathura - Vrindavan (Braj)",
+    "name_hi": "मथुरा - वृंदावन (ब्रज)",
+    "region": "Braj, Mathura district",
+    "state": "Uttar Pradesh",
+    "season": {
+      "open": "Year-round",
+      "close": "Year-round",
+      "dates_2026": {
+        "note": "Janmashtami (Aug-Sep) and Holi/Lathmar Holi (Feb-Mar) are peak"
+      },
+      "dates_2027": null,
+      "source": "UP Tourism; Wikipedia",
+      "as_of": "2026-10-08"
+    },
+    "registration": {
+      "required": false,
+      "how": "No registration; heavy crowd management on festival days.",
+      "official_url": "https://uptourism.gov.in/"
+    },
+    "route": [
+      {
+        "step": "Delhi to Mathura (Krishna Janmabhoomi)",
+        "km": 180,
+        "time": "3 h via Yamuna Expressway"
+      },
+      {
+        "step": "Mathura to Vrindavan (Banke Bihari, ISKCON, Prem Mandir)",
+        "km": 12,
+        "time": "30 min"
+      },
+      {
+        "step": "Govardhan parikrama / Barsana / Nandgaon",
+        "km": "21 km parikrama",
+        "time": "1 day"
+      }
+    ],
+    "transport_options": [
+      "Rail to Mathura Junction",
+      "Road from Delhi/Agra",
+      "Agra/Delhi airports"
+    ],
+    "days_typical": "2-3 days",
+    "difficulty": {
+      "level": "easy",
+      "why": "Town temples; Govardhan parikrama is a long but flat walk."
+    },
+    "altitude_m": null,
+    "health_rules": "Crowd crush risk at Banke Bihari on festival days; follow police advisories.",
+    "legend_summary": "Mathura is honoured as Krishna's birthplace, born in Kansa's prison, while Vrindavan, Gokul and Barsana are where he grew up among the cowherds and played with Radha and the gopis. Lifting Govardhan hill to shelter villagers from Indra's storm is commemorated by the 21 km parikrama. Braj comes alive at Janmashtami and in the playful Lathmar Holi of Barsana and Nandgaon.",
+    "story_beats": [
+      "Born in Kansa's prison",
+      "Childhood in Vrindavan's groves",
+      "Govardhan lifted on a finger",
+      "Holi of colours and sticks"
+    ],
+    "best_time": "October-March; Holi and Janmashtami for festivals",
+    "what_to_carry": [
+      "Comfortable shoes",
+      "Secure belongings (monkeys)"
+    ],
+    "faqs": [
+      {
+        "q": "How far is Vrindavan from Mathura?",
+        "a": "About 12 km."
+      },
+      {
+        "q": "What is Govardhan parikrama?",
+        "a": "A ~21 km walk around Govardhan hill."
+      },
+      {
+        "q": "When is Lathmar Holi?",
+        "a": "A few days before Holi at Barsana and Nandgaon."
+      },
+      {
+        "q": "Best base?",
+        "a": "Vrindavan or Mathura."
+      },
+      {
+        "q": "Can I do it from Delhi in a day?",
+        "a": "Possible, but 2 days is more comfortable."
+      }
+    ],
+    "official_sites": [
+      "https://uptourism.gov.in/",
+      "https://mathura.nic.in/"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vrindavan",
+      "https://en.wikipedia.org/wiki/Mathura",
+      "https://en.wikipedia.org/wiki/Govardhan_Hill"
+    ]
+  }
+]
