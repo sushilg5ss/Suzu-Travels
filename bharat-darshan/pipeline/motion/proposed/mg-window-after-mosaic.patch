@@ -1,0 +1,74 @@
+diff --git a/bharat-darshan/pipeline/motion/mg.py b/bharat-darshan/pipeline/motion/mg.py
+index f5e090b..1491fc5 100644
+--- a/bharat-darshan/pipeline/motion/mg.py
++++ b/bharat-darshan/pipeline/motion/mg.py
+@@ -253,6 +253,51 @@ def build(spec_path, out_dir):
+             if "pulse" in sc:  # gold ring pulse on one tile after all are in, e.g. "pulse": 0
+                 j = sc["pulse"]
+                 js.append(f'tl.fromTo("#{p}-t{j}",{{boxShadow:"0 0 0 0px rgba(242,200,75,0)"}},{{boxShadow:"0 0 0 6px rgba(242,200,75,1)",duration:0.35,yoyo:true,repeat:1}},{t0+len(tiles)*stp+0.4:.3f});')
++        if typ == "window":  # booking-window ruler: {"from":120,"to":0,"band":[120,4],"off":[4,0],"marks":[{"v":120,"t":"120 days","a":"earliest","side":"up"}],"scale":"sqrt"}
++            if sc.get("kicker"):
++                inner.append(f'<div class="kicker top" id="{p}-k">{esc(sc["kicker"])}</div>')
++                js.append(f'tl.fromTo("#{p}-k",{{opacity:0,x:-30}},{{opacity:1,x:0,duration:0.6,ease:"power3.out"}},{S+0.2:.3f});')
++            if sc.get("headline"):
++                inner.append(words_html(sc["headline"], "hl hl-top", f"{p}-h"))
++                js += words_js(f"{p}-h", sc["headline"], S + 0.3)
++            vmax, vmin = sc.get("from", 120), sc.get("to", 0)
++            x0, x1, yb = sc.get("w_left", 100), sc.get("w_right", 880), sc.get("w_y", 1060)
++            def X(v, vmax=vmax, vmin=vmin, x0=x0, x1=x1):
++                f = (v - vmin) / float(vmax - vmin)
++                if sc.get("scale") == "sqrt": f = f ** 0.5
++                return x1 - (x1 - x0) * f
++            t0 = S + sc.get("t_items", 1.2)
++            parts = [f'<div class="wn" id="{p}-wn"><div class="wn-rail" style="left:{x0}px;width:{x1-x0}px;top:{yb}px"></div>']
++            b0, b1 = sc.get("band", [vmax, vmin])
++            parts.append(f'<div class="wn-band" id="{p}-band" style="left:{X(b0):.1f}px;width:{X(b1)-X(b0):.1f}px;top:{yb-14}px"></div>')
++            if sc.get("off"):
++                o0, o1 = sc["off"]
++                parts.append(f'<div class="wn-off" id="{p}-off" style="left:{X(o0):.1f}px;width:{X(o1)-X(o0):.1f}px;top:{yb-14}px"></div>')
++            for i, tv in enumerate(sc.get("ticks", [])):
++                parts.append(f'<div class="wn-tick" id="{p}-tk{i}" style="left:{X(tv):.1f}px;top:{yb+26}px">{tv}</div>')
++                js.append(f'tl.fromTo("#{p}-tk{i}",{{opacity:0,y:10}},{{opacity:.6,y:0,duration:0.3}},{t0+0.05*i:.3f});')
++            js.append(f'tl.fromTo("#{p}-band",{{scaleX:0}},{{scaleX:1,duration:{sc.get("draw",1.6)},ease:"power2.inOut"}},{t0+0.3:.3f});')
++            if sc.get("off"):
++                js.append(f'tl.fromTo("#{p}-off",{{opacity:0}},{{opacity:1,duration:0.4}},{t0+0.3+sc.get("draw",1.6):.3f});')
++            for i, mk in enumerate(sc.get("marks", [])):
++                x = X(mk["v"]); up = mk.get("side", "up") == "up"
++                al = mk.get("align", "c")
++                xp = {"l": 0, "c": -50, "r": -100}[al]
++                ty = yb - 40 if up else yb + 74
++                parts.append(f'<div class="wn-pin{" hot" if mk.get("hot") else ""}" id="{p}-pn{i}" style="left:{x:.1f}px;top:{yb}px"></div>'
++                             f'<div class="wn-lab {"up" if up else "dn"}" id="{p}-lb{i}" style="left:{x:.1f}px;top:{ty}px">'
++                             f'<div class="wn-t">{esc(mk["t"])}</div><div class="wn-a">{esc(mk.get("a",""))}</div></div>')
++                ti = t0 + mk.get("at", 0.6 + i * sc.get("step", 0.9))
++                js.append(f'tl.fromTo("#{p}-pn{i}",{{scale:0,opacity:0}},{{scale:1,opacity:1,duration:0.45,ease:"back.out(2.6)"}},{ti:.3f});')
++                js.append(f'tl.set("#{p}-lb{i}",{{xPercent:{xp},yPercent:{-100 if up else 0}}},0);')
++                js.append(f'tl.fromTo("#{p}-lb{i}",{{opacity:0,y:{-24 if up else 24}}},{{opacity:1,y:0,duration:0.5,ease:"power3.out"}},{ti+0.08:.3f});')
++            parts.append(f'<div class="wn-dot" id="{p}-dot" style="left:{X(b0):.1f}px;top:{yb}px"></div></div>')
++            inner.append("".join(parts))
++            js.append(f'tl.fromTo("#{p}-wn",{{opacity:0}},{{opacity:1,duration:0.4}},{t0-0.3:.3f});')
++            js.append(f'tl.fromTo("#{p}-dot",{{x:0,opacity:1}},{{x:{X(vmin)-X(b0):.1f},duration:{sc.get("travel",3.0)},ease:"power1.inOut"}},{t0+0.3:.3f});')
++            if sc.get("sub"):
++                inner.append(f'<div class="sub sub-bottom" id="{p}-sub">{esc(sc["sub"])}</div>')
++                js.append(f'tl.fromTo("#{p}-sub",{{opacity:0,y:24}},{{opacity:1,y:0,duration:0.7,ease:"power3.out"}},{S+sc.get("t_sub",3.0):.3f});')
+         if typ == "end":
+             inner.append(f'''<div class="end">
+ <div class="halo" id="{p}-halo"></div><img class="logo" id="{p}-logo" src="assets/suzu-logo.png" alt="">
+@@ -327,6 +372,17 @@ body{{margin:0;background:{EM}}}
+ .mtile{{position:absolute;overflow:hidden;border-radius:28px;background:#0a160d;box-shadow:0 12px 40px rgba(0,0,0,.45)}}
+ .mimg{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}}
+ .mlab{{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 18px;background:linear-gradient(180deg,rgba(7,15,9,0),rgba(7,15,9,.85));font-family:"Inter";font-weight:800;font-size:30px;letter-spacing:.06em;text-transform:uppercase;color:#fff}}
++.wn{{position:absolute;inset:0}}
++.wn-rail{{position:absolute;height:8px;margin-top:-4px;border-radius:4px;background:rgba(255,255,255,.22)}}
++.wn-band{{position:absolute;height:28px;border-radius:14px;background:linear-gradient(90deg,rgba(242,200,75,.55),{GOLD});transform-origin:0 50%;box-shadow:0 0 26px rgba(242,200,75,.55)}}
++.wn-off{{position:absolute;height:28px;border-radius:14px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.32) 0 10px,rgba(255,255,255,.08) 10px 20px)}}
++.wn-tick{{position:absolute;transform:translateX(-50%);font-family:"Inter";font-weight:700;font-size:24px;color:#fff}}
++.wn-pin{{position:absolute;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#fff;border:7px solid {EM};box-sizing:border-box;box-shadow:0 0 0 3px #fff}}
++.wn-pin.hot{{background:{GOLD};box-shadow:0 0 0 3px {GOLD},0 0 30px rgba(242,200,75,.7)}}
++.wn-lab{{position:absolute;white-space:nowrap;text-align:center}} .wn-lab.dn .wn-a{{margin-top:4px}}
++.wn-t{{font-family:"Bebas";font-size:76px;line-height:.95;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.6)}}
++.wn-a{{font-family:"Inter";font-weight:700;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:{GOLD}}}
++.wn-dot{{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:#fff;box-shadow:0 0 30px 8px rgba(255,255,255,.6)}}
+ .end{{position:absolute;inset:0;text-align:center}}
+ .halo{{position:absolute;left:190px;top:330px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(242,200,75,.35),rgba(242,200,75,0) 70%)}}
+ .logo{{position:absolute;left:340px;top:430px;width:400px}}
