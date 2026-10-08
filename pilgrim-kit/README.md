@@ -129,4 +129,6 @@ Parents: Jyotirlinga temple pages → parent = 12-jyotirlinga page id; everythin
 | Suzu Pilgrim Visual Studio | daily 18:07 | HyperFrames media for the next researched page |
 | Suzu Pilgrim Page Builder | daily 20:47 | One new page per day, end to end |
 | Suzu Pilgrim SEO & QA | Mon, Wed, Fri 22:37 | QA, fixes, date refresh, internal links from the rest of the site |
+
+Scheduled tasks (cloud, automatic approval, created 8 Oct 2026): Research `trig_015L21nL3YQFMu6Rv8SUNroA` · Visual Studio `trig_01B8Qm59M8AjmTbu6bQc1EDM` · Page Builder `trig_018mUq2WTP2zBhkr8iwZTa2c` · SEO & QA `trig_015gFnnAauowkS3L87aQnh72`. Their prompts only bootstrap the repo and point to `agents/<agent>.md` + `agents/shared-rules.md`, so editing those files changes the agents — no trigger update needed.
 They commit as `Suzu Pilgrim Agent <info@suzutravels.com>` and push to `pilgrimage` only (`git pull --rebase` first; never force-push). Reports go to Sushil in simple Hinglish with full URLs.
