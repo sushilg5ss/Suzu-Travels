@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bg { position: absolute; inset: 0; opacity: 0.18; }
+      .bg img { width: 1920px; height: 1080px; object-fit: cover; }
+      .layer { position: absolute; inset: 0; }
+      .k { position: absolute; left: 120px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .h { position: absolute; left: 120px; top: 112px; color: #fff; font-weight: 800; font-size: 84px; letter-spacing: -0.02em; }
+      svg.prof { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 46px; white-space: nowrap; }
+      .sub { position: absolute; color: rgba(255,255,255,0.88); font-weight: 500; font-size: 32px; white-space: nowrap; }
+      .gold { color: #d4a24c; }
+      .timer { position: absolute; left: 1140px; top: 260px; width: 660px; text-align: right; color: #fff; font-weight: 800; font-size: 76px; }
+      .timer2 { position: absolute; left: 1140px; top: 350px; width: 660px; text-align: right; color: rgba(255,255,255,0.88); font-weight: 500; font-size: 34px; }
+      .mon { position: absolute; top: 880px; width: 120px; text-align: center; color: #fff; font-weight: 800; font-size: 30px; }
+      .end { position: absolute; left: 120px; top: 1000px; width: 1680px; text-align: center; color: #fff; font-weight: 800; font-size: 40px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div class="bg clip" data-start="0" data-duration="11" data-track-index="0"><img src="assets/bg.jpg" alt="" /></div>
+      <div id="L" class="layer clip" data-start="0" data-duration="11" data-track-index="1">
+        <div class="k">AIR · BIR, KANGRA</div>
+        <div class="h">Your Bir flight</div>
+        <svg class="prof" viewBox="0 0 1920 1080">
+          <path id="terrain" d="M 0 760 L 120 640 L 220 420 L 300 330 L 380 360 L 520 520 L 700 610 L 900 660 L 1150 690 L 1500 700 L 1920 705 L 1920 800 L 0 800 Z" fill="#14324f" stroke="#2c5172" stroke-width="3" />
+          <path id="road" d="M 1480 700 C 1200 690, 1000 690, 900 662 C 760 640, 820 600, 700 610 C 600 590, 640 540, 520 520 C 450 470, 470 440, 380 362 C 350 345, 330 335, 300 330" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+          <path id="glide" d="M 300 330 C 600 300, 900 420, 1150 560 S 1420 690, 1480 698" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 14" />
+          <circle cx="300" cy="330" r="14" fill="#d4a24c" />
+          <circle cx="1480" cy="700" r="14" fill="#ffffff" />
+          <circle id="jeep" r="11" fill="#ffffff" stroke="#0b1f33" stroke-width="4" />
+          <g id="glider">
+            <path d="M -46 -20 Q 0 -52 46 -20" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" />
+            <line x1="-36" y1="-22" x2="0" y2="16" stroke="#fff" stroke-width="3" />
+            <line x1="36" y1="-22" x2="0" y2="16" stroke="#fff" stroke-width="3" />
+            <circle cx="0" cy="19" r="8" fill="#d4a24c" />
+          </g>
+          <g id="months"></g>
+          <rect id="closed" x="1020" y="800" width="240" height="64" rx="0" fill="#5d6b7a" />
+          <rect id="best1" x="480" y="800" width="360" height="64" fill="#d4a24c" />
+          <rect id="best2" x="1320" y="800" width="240" height="64" fill="#d4a24c" />
+        </svg>
+        <div id="lb1" class="lab" style="left:200px; top:240px">Billing <span class="gold">~2,400 m</span></div>
+        <div id="lb2" class="lab" style="left:1300px; top:720px">Bir <span class="gold">~1,400 m</span></div>
+        <div id="rd" class="sub" style="left:640px; top:690px">14 km hill road · jeep up</div>
+        <div id="tm" class="timer">15–30 min</div>
+        <div id="tm2" class="timer2">in the air · tandem with a registered pilot</div>
+        <div id="cl" class="sub" style="left:930px; top:930px; width:360px; font-size:28px; text-align:center">Closed 15 Jul–15 Sep</div>
+        <div id="bs" class="sub gold" style="left:480px; top:930px; width:360px; text-align:center; font-weight:800">Best Mar–May</div>
+        <div id="bs2" class="sub gold" style="left:1330px; top:930px; width:260px; text-align:center; font-weight:800">Best Oct–Nov</div>
+        <div id="mrow"></div>
+        <div id="end" class="end">Hotel + cab + flight in one plan · <span class="gold">Get Quote</span></div>
+      </div>
+    </div>
+    <script>
+      // month labels + cells (static DOM, deterministic)
+      const months = "JFMAMJJASOND".split("");
+      const g = document.getElementById("months");
+      const mrow = document.getElementById("mrow");
+      months.forEach((m, i) => {
+        const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        r.setAttribute("x", 240 + i * 120); r.setAttribute("y", 800); r.setAttribute("width", 118); r.setAttribute("height", 64);
+        r.setAttribute("fill", "#1d4266"); r.setAttribute("class", "mcell"); g.appendChild(r);
+        const d = document.createElement("div"); d.className = "mon"; d.style.left = (240 + i * 120) + "px"; d.style.top = "812px"; d.textContent = m; if ([2,3,4,9,10].includes(i)) d.style.color = "#0b1f33"; d.style.zIndex = 2; mrow.appendChild(d);
+      });
+      const tl = gsap.timeline({ paused: true });
+      const road = document.getElementById("road"), RL = road.getTotalLength();
+      const glide = document.getElementById("glide"), GL = glide.getTotalLength();
+      road.style.strokeDasharray = RL + " " + RL;
+      const jeep = document.getElementById("jeep"), glider = document.getElementById("glider");
+      const s = { r: 0, g: 0 };
+      function upd() {
+        road.style.strokeDashoffset = String(RL * (1 - s.r));
+        const p = road.getPointAtLength(RL * s.r); jeep.setAttribute("cx", p.x.toFixed(2)); jeep.setAttribute("cy", p.y.toFixed(2));
+        const q = glide.getPointAtLength(GL * s.g); glider.setAttribute("transform", "translate(" + q.x.toFixed(2) + "," + (q.y - 6).toFixed(2) + ")");
+      }
+      tl.from(".k, .h", { opacity: 0, y: 30, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0);
+      tl.from("#terrain", { opacity: 0, duration: 0.6 }, 0.2);
+      tl.from(["#lb1", "#lb2"], { opacity: 0, y: 20, duration: 0.5, stagger: 0.15 }, 0.5);
+      tl.fromTo(s, { r: 0 }, { r: 1, duration: 2.0, ease: "sine.inOut", onUpdate: upd }, 0.9);
+      tl.from("#rd", { opacity: 0, duration: 0.4 }, 1.4);
+      tl.set(glider, { opacity: 0 }, 0);
+      tl.to(glider, { opacity: 1, duration: 0.3 }, 3.0);
+      tl.to(jeep, { opacity: 0, duration: 0.3 }, 3.0);
+      tl.fromTo(glide, { opacity: 0 }, { opacity: 1, duration: 0.4 }, 3.0);
+      tl.fromTo(s, { g: 0 }, { g: 1, duration: 3.2, ease: "sine.inOut", onUpdate: upd, immediateRender: false }, 3.1);
+      tl.from(["#tm", "#tm2"], { opacity: 0, x: 40, duration: 0.5, stagger: 0.12, ease: "power3.out" }, 3.4);
+      tl.from(".mcell", { opacity: 0, duration: 0.3, stagger: 0.04 }, 6.4);
+      tl.from(".mon", { opacity: 0, duration: 0.3, stagger: 0.04 }, 6.4);
+      tl.from(["#best1", "#best2"], { scaleX: 0, transformOrigin: "left center", duration: 0.6, stagger: 0.2, ease: "power2.out" }, 7.2);
+      tl.from(["#bs", "#bs2"], { opacity: 0, y: 14, duration: 0.4, stagger: 0.2 }, 7.5);
+      tl.from("#closed", { scaleX: 0, transformOrigin: "left center", duration: 0.6, ease: "power2.out" }, 8.1);
+      tl.from("#cl", { opacity: 0, y: 14, duration: 0.4 }, 8.4);
+      tl.from("#end", { opacity: 0, y: 20, duration: 0.5, ease: "power3.out" }, 9.2);
+      upd();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
