@@ -24,7 +24,11 @@
     function show(i) {
       var x = data[i]; if (!x) return;
       each(m.querySelectorAll('.pt'), function (p) { p.classList.toggle('on', p.getAttribute('data-i') == i); });
-      card.innerHTML = '<span class="k">' + x.k + '</span><div class="dv">' + x.dv + '</div><h3>' + x.n + '</h3><div class="meta">' + x.m + '</div><p>' + x.p + '</p>' + (x.u ? '<p><a href="' + x.u + '">' + x.ul + ' →</a></p>' : '');
+      // built with DOM calls: WordPress' wpautop breaks block-level tags written inside JS strings
+      while (card.firstChild) card.removeChild(card.firstChild);
+      function add(tag, cls, html) { var n = d.createElement(tag); if (cls) n.className = cls; n.innerHTML = html; card.appendChild(n); return n; }
+      add('span', 'k', x.k); add('span', 'dv', x.dv).style.display = 'block'; add('strong', 'nm', x.n); add('span', 'meta', x.m).style.display = 'block'; add('span', 'p', x.p).style.display = 'block';
+      if (x.u) { var a = d.createElement('a'); a.href = x.u; a.innerHTML = x.ul + ' →'; a.className = 'go'; card.appendChild(a); }
     }
     each(m.querySelectorAll('.pt'), function (p) {
       p.setAttribute('tabindex', '0'); p.setAttribute('role', 'button');

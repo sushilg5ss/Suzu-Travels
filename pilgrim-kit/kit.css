@@ -82,7 +82,9 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szp-mapcard .dv{font-size:34px;color:var(--gold2);line-height:1.2}
 .szp-mapcard h3{color:#fff3d6;font-size:22px;margin:4px 0}
 .szp-mapcard .meta{font-size:14px;color:rgba(247,234,214,.7);margin-bottom:12px}
-.szp-mapcard p{font-size:15.5px}
+.szp-mapcard p,.szp-mapcard .p{font-size:15.5px;margin:0 0 12px}
+.szp-mapcard .nm{display:block;font-size:22px;color:#fff3d6;margin:4px 0}
+.szp-mapcard .go{font-weight:800}
 .szp-mapcard a{color:var(--gold2)!important}
 @media(max-width:900px){.szp-map{grid-template-columns:1fr}}
 /* MEDIA ROW */
