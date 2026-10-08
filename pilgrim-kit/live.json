@@ -1,1 +1,4 @@
-{}
+{
+ "pilgrimage-tours": {"id": 12541, "path": "/pilgrimage-tours/", "kind": "hub", "label": "Pilgrimage tours", "blurb": "Jyotirlingas, Shakti Peeths, Char Dham & more", "added": "2026-10-08"},
+ "12-jyotirlinga": {"id": 12542, "path": "/pilgrimage-tours/12-jyotirlinga/", "kind": "guide", "label": "12 Jyotirlinga", "blurb": "Names, places, map & route", "added": "2026-10-08"}
+}
