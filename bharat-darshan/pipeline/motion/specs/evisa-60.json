@@ -1,0 +1,48 @@
+{
+ "title": "Suzu Travels — India e-Visa made simple",
+ "duration": 40,
+ "music": "Tabuk.mp3",
+ "_status": "spec only 2026-10-08 (scheduled run blocked at setup-motion.sh) — needs photos + proposed/mg-window.patch, then lint/snapshot/render",
+ "_music_note": "Last two rendered reels used Our Story Begins (kerala) and Vadodora (dmc); queued unesco-45 uses Magistar. Tabuk = light, upbeat, last used 30 Sep. Fallback: Naraina.",
+ "_sources": {
+  "types": "indianvisaonline.gov.in/evisa/tvoa.html (fetched 2026-10-08): e-Tourist Visa 30 days (valid from first arrival), 1 year and 5 years (multiple entries, from ETA grant).",
+  "window": "Same page/FAQ: apply at least 4 days before arrival; up to 120 days before travel (30-day, 1-year, 5-year). Also passportindex.org 'India extends e-Tourist Visa planning window to four months'.",
+  "steps": "Same page: apply online, upload photo + passport page, ETA issued by email, biometrics mandatorily captured at immigration on arrival; passport valid 6+ months with 2 blank pages; fee non-refundable (no price shown on screen).",
+  "dropped": "Port counts (page lists 33/19 in FAQ vs 36/38 in checkpost list — inconsistent) and stay-per-visit rules (differ by nationality) — NOT on screen.",
+  "tip": "'Apply 3–4 weeks ahead' and 'use only the official site' are Suzu tips, not statistics."
+ },
+ "_photos_todo": {
+  "hook.jpg": "Humayun's Tomb Delhi golden hour, wide, no crowd as subject (3840px thumb)",
+  "list-bg.jpg": "Amber Fort Jaipur (reuse amber-fort-jaipur-2.jpg)",
+  "tip.jpg": "India Gate New Delhi dusk / blue hour (3840px thumb)"
+ },
+ "scenes": [
+  {"type":"photo","start":0,"dur":5,"img":"hook.jpg","focus":[0.5,0.45],"zoom":[1.16,1.03],"grade":"warm",
+   "kicker":"Travelling to India?","headline":["Your visa","is *online"],"pos":"low","t_head":0.2,"hl_size":160,
+   "sub":"The India e-Visa, explained in 40 seconds","t_sub":1.3},
+  {"type":"list","start":5,"dur":8,"img":"list-bg.jpg","focus":[0.45,0.45],"zoom":[1.05,1.18],"grade":"dark",
+   "kicker":"Pick your e-Tourist Visa","step":1.3,"t_items":0.7,
+   "items":[{"a":"30 days","b":"Counted from your first day in India"},
+            {"a":"1 year","b":"Multiple entries"},
+            {"a":"5 years","b":"Multiple entries"}]},
+  {"type":"window","start":13,"dur":9,
+   "kicker":"When to apply","headline":["Not too late.","*Not too early."],
+   "from":120,"to":0,"scale":"sqrt","band":[120,4],"off":[4,0],"ticks":[90,60,30,14],
+   "marks":[{"v":120,"t":"120 days","a":"earliest","side":"up","align":"l","at":0.5},
+            {"v":4,"t":"4 days","a":"latest","side":"up","align":"c","hot":true,"at":2.1},
+            {"v":0,"t":"You land","a":"arrival","side":"dn","align":"r","at":3.0}],
+   "t_items":1.1,"draw":1.8,"travel":3.0,"w_y":1060,"sub":"Our tip: apply 3–4 weeks before you fly","t_sub":4.6},
+  {"type":"timeline","start":22,"dur":8.5,
+   "kicker":"How it works","headline":["4 simple *steps"],
+   "steps":[{"t":"Step 1","a":"Apply on the official site"},
+            {"t":"Step 2","a":"Upload photo + passport page"},
+            {"t":"Step 3","a":"Your ETA arrives by email"},
+            {"t":"Step 4","a":"Biometrics on arrival"}],
+   "t_items":1.2,"step":1.7,"tl_top":720,"tl_bottom":1400,"tl_size":84},
+  {"type":"photo","start":30.5,"dur":5,"img":"tip.jpg","focus":[0.5,0.5],"zoom":[1.04,1.16],"grade":"cool",
+   "kicker":"Our tip","headline":["Use only the","*official site"],"pos":"low","hl_size":140,
+   "sub":"indianvisaonline.gov.in · passport valid 6+ months","t_sub":1.1},
+  {"type":"end","start":35.5,"dur":4.5,"big":"Visa done? We plan the rest",
+   "small":"Private driver · handpicked hotels · 24/7 support","cta":"DM “VISA” for a free plan"}
+ ]
+}
