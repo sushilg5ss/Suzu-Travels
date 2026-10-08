@@ -74,7 +74,7 @@ Owner: Suzu Travels (Sushil Kumar). Built by Claude with Sushil on 8 Oct 2026; r
 | `light-map` | fixed (data) | The 12 Jyotirlingas light up at their true lat/lon (no borders drawn — never draw India's outline) |
 | `temple-hero` | `hero` {arch, deva, kicker, beats[3–4, ≤8 words], sky?} | One illustrated temple + its story in 4 beats |
 | `story-strip` | `story` {title, beats[{arch, line}]×4} | Legend told across 4 illustrated scenes (16 s) |
-| `route-map` | `route` {title, sub, stops[{name, deva, state, lat, lon}]} | A yatra's stops lighting up (Nau Devi, Char Dham, Panch Kedar…) |
+| `route-map` | `route` {title, sub, stops[{name, deva, state, lat, lon}], bounds? [lon0, lon1, lat0, lat1] (zoom for regional circuits), dur?} | A yatra's stops lighting up (Nau Devi, Char Dham, Panch Kedar…) |
 
 Archetypes (`arch`): `himalaya` (Kedarnath-style stone temple in snow), `nagara` (curved shikhara by the sea), `ghats` (river ghats with diyas), `devi` (hill shrine with flags), `gopuram` (south-Indian tower), `cave` (mountain cave with ice lingam), `pillar` (pillar of light), `gurudwara`, `pagoda` (Himachal hill temple — stacked wooden roofs, brass finial, deodars, snow ridges; for Hidimba / Bhimakali-type temples; caption it as a Himachal-style temple, not a likeness; added 8 Oct 2026). Skies: dusk, dawn, night, saffron, snow.
 
@@ -123,6 +123,7 @@ Our pages own the **informational** heads ("12 jyotirlinga", "naina devi", "char
 |---|---|---|
 | Hub | 12541 | https://suzutravels.com/pilgrimage-tours/ |
 | 12 Jyotirlinga | 12542 (parent 12541) | https://suzutravels.com/pilgrimage-tours/12-jyotirlinga/ |
+| 5 Shakti Peeths of Himachal | 12566 (parent 12541) | https://suzutravels.com/pilgrimage-tours/shakti-peeth-himachal/ |
 
 **Menus (8 Oct 2026, with Sushil):** Primary Menu 5 has a top-level **"Devotional"** item (12549) after Mountains with 7 links (12550–12556); an Additional CSS block ("Header menu: Devotional item…") tightens the 12-item desktop nav. The static homepage got the same saffron "Devotional" dropdown (`<!--szpil-->`, `#szpil-nav`), two links in Destinations › Pilgrimages, the Pilgrimage experience tile → hub, and a "Devotional tours" chip (`site/enh-devotional.py`; backup `index-nz-previous.html`). Menus stay human-only for agents.
 Parents: Jyotirlinga temple pages → parent = 12-jyotirlinga page id; everything else → parent = hub id.

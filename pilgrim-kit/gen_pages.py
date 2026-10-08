@@ -609,7 +609,7 @@ def content_page(slug):
     if c.get("route"):
         r = c["route"]
         lis = "".join(f'<li><div class="d">{e(dd)}</div><div class="t">{e(t)}' + (f'<span class="dv">{e(dv)}</span>' if dv else "") + f'</div><p>{p}</p></li>' for dd, t, dv, p in r["stops"])
-        add("route", "Route", f'<span class="k">Route</span><h2>{e(r["h2"])}</h2>' + (f'<p class="lead">{r["lead"]}</p>' if r.get("lead") else "") + f'<ol class="szp-route">{lis}</ol>' + (f'<p class="szp-note">{r["note"]}</p>' if r.get("note") else ""), "alt" if not c.get("dates") else "")
+        add("route", "Route", f'<span class="k">Route</span><h2>{e(r["h2"])}</h2>' + (f'<p class="lead">{r["lead"]}</p>' if r.get("lead") else "") + (f'<div class="szp-media">{lazy_video(m, "route", r["h2"])}<div><p>{r.get("video_caption", "")}</p></div></div>' if MEDIA.get(m) and (KIT / "src" / "media" / f"{m}.json").exists() and "route" in json.loads((KIT / "src" / "media" / f"{m}.json").read_text(encoding="utf-8")) else "") + f'<ol class="szp-route">{lis}</ol>' + (f'<p class="szp-note">{r["note"]}</p>' if r.get("note") else ""), "alt" if not c.get("dates") else "")
     if c.get("reach"):
         r = c["reach"]
         cards = "".join(f'<div class="szp-card"><h3>{e(a)}</h3><p>{b}</p></div>' for a, b in r["cards"])
