@@ -1,0 +1,71 @@
+{
+ "_note": "MODEL FILE for agents (files starting with _ are never built). Copy its structure for a temple page. Facts from data/shaktipeeth.json (naina-devi-bilaspur), as of 8 Oct 2026. When BACKLOG row 'naina-devi' is built, re-check every fact and timing first.",
+ "path": "/pilgrimage-tours/naina-devi/",
+ "parent": "HUB_ID_FROM_LIVE_JSON",
+ "kind": "temple",
+ "title": "Naina Devi Temple, Bilaspur: Darshan, Story & How to Reach",
+ "seo_title": "Naina Devi Temple Bilaspur: Timings, Story & How to Reach",
+ "seo_desc": "Shri Naina Devi Ji, the Shakti Peeth on a Shivalik hilltop in Bilaspur: darshan hours, the legend of Sati's eyes, cable car, Navratri crowds and routes.",
+ "focus": "naina devi",
+ "label": "Naina Devi, Bilaspur",
+ "blurb": "Shakti Peeth above Gobind Sagar",
+ "shrine": "naina-devi-bilaspur",
+ "kicker": "Shakti Peeth · Bilaspur, Himachal",
+ "deva": "श्री नैना देवी जी",
+ "tag": "The Devi's eyes, on a Shivalik hilltop.",
+ "sub": "One of the five Shakti Peeths of Himachal — in Suzu Travels' home district. The legend, darshan hours, the cable car, Navratri crowds and the easiest ways to reach the temple.",
+ "chips": [["5 am–9 pm", "darshan"], ["~100 km", "from Chandigarh"], ["Cable car", "to the hilltop"], ["11 Oct", "Sharad Navratri 2026 begins"]],
+ "q": "Where is Naina Devi temple and why is it sacred?",
+ "answer": "Shri Naina Devi Ji stands on a Shivalik hilltop in <b>Bilaspur district, Himachal Pradesh</b>, above the Gobind Sagar lake, about 100 km from Chandigarh. Tradition counts it among the <a href=\"/pilgrimage-tours/#shakti\">Shakti Peeths</a>: it is believed that Sati's eyes fell here. It is open from about 5 am to 9 pm and is busiest in Navratri.",
+ "facts": [["5 am–9 pm", "temple hours (longer during melas)"], ["~100 km", "by road from Chandigarh"], ["~20–30 km", "to Anandpur Sahib railhead"], ["3 melas", "Chaitra & Sharad Navratri, Shravan Ashtami"]],
+ "story": {
+  "h2": "The story of Naina Devi",
+  "lead": "Two traditions meet on this hilltop — the fall of Sati's eyes, and a herd boy named Naina.",
+  "beats": [
+   ["Sati's eyes fall", "When Shiva carried Sati's body through the worlds, Vishnu's chakra divided it; her eyes are believed to have fallen on this hill."],
+   ["A white cow", "Centuries later, a Gujjar herd boy saw a white cow pouring its milk over a stone."],
+   ["Naina's dream", "The Goddess told him in a dream that the stone was her pindi."],
+   ["A temple for the boy", "Raja Bir Chand built the shrine and named it after him — Naina Devi."]
+  ],
+  "more": ["Another strand of the legend links the name to the Devi taking the eyes of the demon Mahishasura — which is why the shrine is also called Mahishapeeth."]
+ },
+ "darshan": {
+  "h2": "Naina Devi darshan timings",
+  "rows": [["Temple hours", "About 5 am – 9 pm (longer during melas)"], ["Aarti", "Times are not published officially — confirm at the temple"], ["Busiest days", "Chaitra and Sharad Navratri; the Shravan Ashtami fair (Jul–Aug)"], ["Next Navratri", "Sharad Navratri 11–19 Oct 2026; Chaitra Navratri from 7 Apr 2027"]],
+  "note": "Hours as published by Incredible India (checked 8 Oct 2026). They extend on festival days."
+ },
+ "reach": {
+  "h2": "How to reach Naina Devi",
+  "cards": [["By air", "Chandigarh airport is about 100 km away; Shimla airport about 170 km."], ["By rail", "Anandpur Sahib (about 20–30 km) and Kiratpur Sahib (about 30 km) are the nearest stations."], ["By road", "About 100 km from Chandigarh and 350–370 km from Delhi; from Bilaspur town about 56 km."], ["Cable car", "A cable car lifts pilgrims from the base of the hill to the temple. The long-proposed Anandpur Sahib ropeway has not been built yet."]]
+ },
+ "tips": {
+  "h2": "Before you go",
+  "items": [["Go early in Navratri", "Queues build from dawn; plan the climb or cable car early in the day."], ["Combine the Devis", "Chintpurni, Jwala Ji, Kangra and Chamunda are a few hours away — the 5 Shakti Peeth circuit."], ["Stay nearby", "Naina Devi town, Anandpur Sahib or Bilaspur have simple stays; book ahead for melas."], ["Respect the shrine", "Modest clothes, shoes off at the gate, and follow the temple's photography rules."]]
+ },
+ "itinerary": {
+  "h2": "A simple Naina Devi day trip from Chandigarh",
+  "days": [["1", "Chandigarh → Naina Devi", "Early drive (~2.5 hours), cable car up, darshan, prasad; lunch by Gobind Sagar; return or continue to Chintpurni."]]
+ },
+ "packages": ["shakti5"],
+ "quote_h2": "Plan your Naina Devi darshan with Suzu",
+ "quote_text": "Naina Devi is in our home district of Bilaspur. We plan day trips, the 5 Shakti Peeth circuit or the full Nau Devi yatra — cars, stays and timings around Navratri crowds.",
+ "wa": "Namaste Suzu Travels, I want to plan a yatra to Naina Devi. From city: ___ , dates: ___ , people: ___",
+ "links": ["12-jyotirlinga"],
+ "place": {"type": "HinduTemple", "name": "Shri Naina Devi Ji Temple", "alt": "श्री नैना देवी जी मंदिर", "town": "Naina Devi", "state": "Himachal Pradesh", "lat": 31.306, "lon": 76.5364, "sameAs": ["https://en.wikipedia.org/wiki/Naina_Devi"]},
+ "faqs": [
+  ["Which part of Sati fell at Naina Devi?", "Tradition says her eyes — 'naina' means eyes. Some accounts specify the right eye; the Naina Devi temple in Nainital has its own 'eyes' tradition."],
+  ["What are Naina Devi temple timings?", "About 5 am to 9 pm, with longer hours during the Navratri and Shravan melas. Aarti times are not published officially, so confirm at the temple."],
+  ["Is there a ropeway to Naina Devi?", "Yes, a cable car runs from the base of the hill to the hilltop temple. A longer ropeway from Anandpur Sahib has been proposed for years but not built."],
+  ["How far is Naina Devi from Chandigarh?", "About 100–106 km by road, roughly 2.5 hours. The nearest railway stations are Anandpur Sahib and Kiratpur Sahib."],
+  ["When is Naina Devi most crowded?", "In Chaitra and Sharad Navratri (Sharad Navratri 2026 begins on 11 October) and at the Shravan Ashtami fair in July–August."],
+  ["Which other Shakti Peeths are near Naina Devi?", "Chintpurni (Una), Jwala Ji, Brajeshwari (Kangra Devi) and Chamunda (Kangra) — together they make the five Shakti Peeths of Himachal."]
+ ],
+ "sources": [
+  ["HP Bilaspur district — Sri Naina Devi Ji", "https://hpbilaspur.nic.in/tourist-place/sri-naina-devi-ji/"],
+  ["Incredible India — Shree Naina Devi Temple", "https://www.incredibleindia.gov.in/en/himachal-pradesh/bilaspur/shree-naina-devi-temple"],
+  ["Wikipedia — Naina Devi", "https://en.wikipedia.org/wiki/Naina_Devi"],
+  ["Wikipedia — Shakta pithas", "https://en.wikipedia.org/wiki/Shakta_pithas"],
+  ["The Tribune — Naina Devi ropeway project", "https://www.tribuneindia.com/news/himachal/no-private-party-interested-punjab-hp-hold-talks-on-naina-devi-ropeway-project"]
+ ],
+ "verified": "8 Oct 2026"
+}

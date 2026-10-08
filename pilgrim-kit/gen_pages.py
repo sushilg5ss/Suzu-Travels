@@ -283,7 +283,7 @@ def hub():
     for i, j in enumerate(J):
         own = jl_page(j["slug"])
         jl_cards += (f'<li class="szp-shrine"><span class="no">{i + 1:02d} · {e(j["state"]).upper()}</span><span class="dv">{e(deva_short(j))}</span><h3>{e(short_name(j))}</h3>'
-                     f'<div class="meta">{e(j["town"])}</div><p>{e(first_sentences(j["legend_summary"], 1))}</p>'
+                     f'<div class="meta">{e(j["town"])}</div><ol class="szp-beats">{"".join(f"<li>{e(b)}</li>" for b in j["story_beats"])}</ol>'
                      f'<div class="go"><a href="{own or (jl_live + "#jl-" + j["slug"] if jl_live else "#jyotirlinga")}">{"Temple guide" if own else "Timings, route &amp; story"} →</a></div></li>')
     pts = jl_points()
     devi5 = ["naina-devi-bilaspur", "jwalamukhi-jwala-ji-kangra", "chintpurni-una", "brajeshwari-kangra-devi", "chamunda-nandikeshwar-dham-kangra"]
@@ -296,7 +296,7 @@ def hub():
               "chintpurni-una": "Chhinnamasta, the Devi who ends worry", "brajeshwari-kangra-devi": "Sati's left breast, by tradition",
               "chamunda-nandikeshwar-dham-kangra": "Where the Devi slew Chanda and Munda"}[s]
         devi_cards += (f'<li class="szp-shrine"><span class="no">{e(x["district"]).upper()} · HIMACHAL</span><span class="dv">{e(x["name_hi"].split(",")[0].replace("श्री ", ""))}</span><h3>{nm}</h3>'
-                       f'<div class="meta">{bp}</div><p>{e(first_sentences(x["legend_summary"], 1))}</p></li>')
+                       f'<div class="meta">{bp}</div><ol class="szp-beats">{"".join(f"<li>{e(b)}</li>" for b in x["story_beats"])}</ol></li>')
     nau = [("Shakumbhari Devi", "शाकुम्भरी देवी", "Behat, Saharanpur (UP)", "Day 1 · 210 km from Delhi", "Start the circuit with the Devi of greens and grain, after a stop at Bhura Dev."),
            ("Mansa Devi &amp; Kali Mata", "मनसा देवी · काली माता", "Panchkula &amp; Kalka (Haryana)", "Day 2 · 156 + 25 km", "Both temples are run by the Mansa Devi Shrine Board; summer darshan 4 am–10 pm."),
            ("Naina Devi", "नैना देवी", "Bilaspur, Himachal — our home district", "Day 3 · 110 km", "A cable car lifts you to the hilltop shrine above the Gobind Sagar lake."),
@@ -331,7 +331,7 @@ def hub():
 {circuit("#chardham", "चार धाम", "Char Dham Yatra", "Yamunotri, Gangotri, Kedarnath and Badrinath.", "Apr–Nov · 10–12 days", "himalaya")}
 {circuit("#amarnath", "अमरनाथ", "Amarnath Yatra", "The ice lingam in a Himalayan cave at 3,888 m.", "Jul–Aug · registration", "cave")}
 {circuit("#vaishno", "वैष्णो देवी", "Vaishno Devi", "The Trikuta cave shrine above Katra.", "All year · 12 km trek", "cave")}
-{circuit("#kashi", "काशी · अयोध्या", "Kashi, Ayodhya &amp; Prayagraj", "Ganga aarti, Ram Mandir and the Sangam.", "All year · 6 days", "ghats")}
+{circuit("#kashi", "काशी · अयोध्या", "Kashi, Ayodhya & Prayagraj", "Ganga aarti, Ram Mandir and the Sangam.", "All year · 6 days", "ghats")}
 {circuit("#himachal", "देवभूमि", "Himachal yatras", "Manimahesh, Kinner Kailash, Baijnath and more.", "Seasonal · Dev Bhoomi", "lake")}
 </div></section>
 <section class="szp-sec dark" id="jyotirlinga"><span class="k">द्वादश ज्योतिर्लिंग · 12 Jyotirlingas</span><h2>Twelve pillars of light across India</h2>
