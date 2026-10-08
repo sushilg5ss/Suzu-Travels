@@ -416,9 +416,13 @@ def temple_hero(slug):
 LON0, LON1, LAT0, LAT1 = 67.5, 97.5, 6.5, 36.5
 
 
+BOUNDS = None  # optional (lon0, lon1, lat0, lat1) zoom for regional route maps (route spec "bounds"; added 8 Oct 2026)
+
+
 def proj(lat, lon, box):
     x0, y0, x1, y1 = box
-    return x0 + (lon - LON0) / (LON1 - LON0) * (x1 - x0), y0 + (LAT1 - lat) / (LAT1 - LAT0) * (y1 - y0)
+    l0, l1, a0, a1 = BOUNDS or (LON0, LON1, LAT0, LAT1)
+    return x0 + (lon - l0) / (l1 - l0) * (x1 - x0), y0 + (a1 - lat) / (a1 - a0) * (y1 - y0)
 
 
 def light_map_comp(name, stops, title, sub, dur=13.0, box=(200, 40, 1240, 1050), route=False):
@@ -427,13 +431,20 @@ def light_map_comp(name, stops, title, sub, dur=13.0, box=(200, 40, 1240, 1050),
     r = random.Random(17)
     star = "".join(f'<circle cx="{r.uniform(0, W):.0f}" cy="{r.uniform(0, H):.0f}" r="{r.uniform(.6, 1.8):.1f}" fill="#fff" opacity="{r.uniform(.15, .55):.2f}"/>' for _ in range(160))
     grat = ""
-    for lon in range(70, 98, 5):
-        x, _ = proj(LAT0, lon, box)
+    if BOUNDS:
+        l0, l1, a0, a1 = BOUNDS
+        lons = [l0 + (l1 - l0) * k / 6 for k in range(1, 6)]
+        lats = [a0 + (a1 - a0) * k / 6 for k in range(1, 6)]
+        lbl = lambda v: f"{v:.1f}°N"
+    else:
+        lons, lats, lbl = range(70, 98, 5), range(10, 37, 5), (lambda v: f"{v}°N")
+    for lon in lons:
+        x, _ = proj(0 if BOUNDS else LAT0, lon, box)
         grat += f'<line x1="{x:.0f}" y1="{box[1]}" x2="{x:.0f}" y2="{box[3]}" stroke="#f2c14e" stroke-opacity=".08"/>'
-    for lat in range(10, 37, 5):
-        _, y = proj(lat, LON0, box)
+    for lat in lats:
+        _, y = proj(lat, 0, box)
         grat += f'<line x1="{box[0]}" y1="{y:.0f}" x2="{box[2]}" y2="{y:.0f}" stroke="#f2c14e" stroke-opacity=".08"/>'
-        grat += f'<text x="{box[0] - 12}" y="{y + 6:.0f}" text-anchor="end" font-family="SZ" font-size="15" fill="#f2c14e" fill-opacity=".35">{lat}°N</text>'
+        grat += f'<text x="{box[0] - 12}" y="{y + 6:.0f}" text-anchor="end" font-family="SZ" font-size="15" fill="#f2c14e" fill-opacity=".35">{lbl(lat)}</text>'
     pts = [proj(s["lat"], s["lon"], box) for s in stops]
     path = "M" + " L".join(f"{x:.0f} {y:.0f}" for x, y in pts)
     plen = sum(math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1)) + 10
@@ -488,8 +499,10 @@ def light_map():
 
 
 def route_map(slug):
+    global BOUNDS
     spec = json.loads((KIT / "src" / "media" / f"{slug}.json").read_text(encoding="utf-8"))["route"]
-    return light_map_comp(f"{slug}-route", spec["stops"], spec["title"], spec["sub"], dur=float(spec.get("dur", 13)))
+    BOUNDS = tuple(spec["bounds"]) if spec.get("bounds") else None
+    return light_map_comp(f"{slug}-route", spec["stops"], spec["title"], spec["sub"], dur=float(spec.get("dur", 13)), route=True)
 
 
 # ------------------------------------------------------------------------------------------------ story strip (legend in 4 beats, full-frame)

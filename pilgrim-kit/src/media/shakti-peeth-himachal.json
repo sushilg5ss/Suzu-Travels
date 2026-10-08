@@ -1,0 +1,11 @@
+{
+ "hero": {"arch": "devi", "sky": "saffron", "deva": "हिमाचल के शक्तिपीठ", "kicker": "Shakti Peeths · Himachal Pradesh",
+  "beats": ["Sati gives up her body at Daksha's yagna", "Shiva wanders the worlds in grief", "Vishnu's chakra divides her body", "Five seats of the Devi in Himachal"]},
+ "route": {"title": "5 Shakti Peeths", "sub": "One loop through Bilaspur, Una and Kangra", "bounds": [75.6, 77.1, 31.05, 32.55], "dur": 13,
+  "stops": [
+   {"name": "Naina Devi", "deva": "नैना देवी", "state": "Bilaspur", "lat": 31.306, "lon": 76.5364},
+   {"name": "Chintpurni", "deva": "चिंतपूर्णी", "state": "Una", "lat": 31.80862, "lon": 76.10287},
+   {"name": "Jwala Ji", "deva": "ज्वाला जी", "state": "Kangra", "lat": 31.8752, "lon": 76.3243},
+   {"name": "Brajeshwari", "deva": "ब्रजेश्वरी", "state": "Kangra", "lat": 32.10183, "lon": 76.26987},
+   {"name": "Chamunda", "deva": "चामुंडा", "state": "Kangra", "lat": 32.1483, "lon": 76.4192}]}
+}
