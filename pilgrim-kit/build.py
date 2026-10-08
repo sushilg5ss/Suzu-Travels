@@ -178,7 +178,17 @@ def build(slug, force=False):
         sys.stderr.write(f"BUILD REFUSED ({slug}):\n  " + "\n  ".join(sorted(set(probs))) + "\n")
         sys.exit(1)
     outp = KIT / "out" / f"{slug}.min.html"
-    outp.write_text(assemble(src, slug), encoding="utf-8")
+    page_html = assemble(src, slug)
+    import subprocess, tempfile
+    for m in re.finditer(r"<script>(.*?)</script>", page_html, re.S):  # untyped = executable JS
+        if re.search(r"<(?:div|p|h[1-6]|ul|ol|li|table|section)\b", m.group(1)) and not force:
+            sys.exit("BUILD REFUSED: block-level HTML inside a <script> — WordPress wpautop will break it (README §8)")
+        with tempfile.NamedTemporaryFile("w", suffix=".js", delete=False) as t:
+            t.write(m.group(1))
+        r = subprocess.run(["node", "--check", t.name], capture_output=True, text=True)
+        if r.returncode and not force:
+            sys.exit("BUILD REFUSED: inline JS does not parse:\n" + r.stderr[:400])
+    outp.write_text(page_html, encoding="utf-8")
     print(f"{outp.name}: {outp.stat().st_size:,} bytes")
 
 
