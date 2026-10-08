@@ -92,6 +92,8 @@ Budgets: hero < 2.5 MB desktop / < 1 MB mobile; explainers < 2 MB. Text stays in
 8. Commit `src/`, `out/`, `live.json`, `BACKLOG.md`, `LOG.md`; push. `out/*.min.html` = what is live.
 
 ## 8. WordPress traps (same server as the mountain section)
+**wpautop inside scripts:** WordPress inserts line breaks and `</p>` before block-level tags (`<div>`, `<h3>`, `<p>`…) even inside `<script>` — never write block-level HTML inside JS strings (kit.js builds DOM with `createElement`). `build.py`'s JS check: `node --check` the inline script of every new build.
+**wptexturize:** " - " becomes " – " on output; `gen_pages.e()` already does this so cmp_live shows 0 diffs.
 One-line content only (wpautop). WP Rocket: meta-only changes don't purge — re-save the title. Every Royal MCP write returns a 72-h undo token → LOG.md. Hostinger bot protection: space requests ≥ 1 s, a 403 "Checking your browser" is not a broken page. **Never**: delete content, change existing URLs/slugs, touch the static homepage, menus, theme, plugins, PHP, .htaccess, or bookable package/product pages (only link to them).
 
 ## 9. Keyword owners (avoid cannibalisation — research/site-inventory.md)
@@ -114,8 +116,10 @@ Our pages own the **informational** heads ("12 jyotirlinga", "naina devi", "char
 ## 11. Live pages
 | Page | ID | URL |
 |---|---|---|
-| Hub | see live.json | https://suzutravels.com/pilgrimage-tours/ |
-| 12 Jyotirlinga | see live.json | https://suzutravels.com/pilgrimage-tours/12-jyotirlinga/ |
+| Hub | 12541 | https://suzutravels.com/pilgrimage-tours/ |
+| 12 Jyotirlinga | 12542 (parent 12541) | https://suzutravels.com/pilgrimage-tours/12-jyotirlinga/ |
+
+**Menus (8 Oct 2026, with Sushil):** Primary Menu 5 has a top-level **"Devotional"** item (12549) after Mountains with 7 links (12550–12556); an Additional CSS block ("Header menu: Devotional item…") tightens the 12-item desktop nav. The static homepage got the same saffron "Devotional" dropdown (`<!--szpil-->`, `#szpil-nav`), two links in Destinations › Pilgrimages, the Pilgrimage experience tile → hub, and a "Devotional tours" chip (`site/enh-devotional.py`; backup `index-nz-previous.html`). Menus stay human-only for agents.
 Parents: Jyotirlinga temple pages → parent = 12-jyotirlinga page id; everything else → parent = hub id.
 
 ## 12. The agents
