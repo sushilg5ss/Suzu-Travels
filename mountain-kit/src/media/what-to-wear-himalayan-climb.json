@@ -1,0 +1,90 @@
+{
+ "hero": {
+  "kicker": "WHAT TO WEAR · HIMALAYAN CLIMB",
+  "words": [
+   [
+    "LAYER UP.",
+    "PEEL OFF."
+   ],
+   [
+    "DITCH",
+    "COTTON."
+   ],
+   [
+    "UP HIGH,",
+    "MITTS WIN."
+   ],
+   [
+    "SUMMIT:",
+    "WEAR IT ALL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-92081.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.06,
+     "x": -120
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -180
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 560
+    },
+    "to": {
+     "y": 860
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.04
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   }
+  ]
+ }
+}
