@@ -1,0 +1,56 @@
+
+/* [DA-2026-10-09] Blog article reading aids: gold reading-progress bar, section markers on H2, calmer links and lists, brand "Explore Destinations" end card — pages: .single-post only */
+/* Why: long guides (up to 31 H2 / 19,000px) gave no sense of progress or section breaks; in-text links were thick full-colour underlines; list bullets were plain grey; the end-of-article destinations box used an off-brand slate heading in the unloaded 'Inter' font with emoji pills. Content, links, headings text unchanged. */
+/* 1) Reading progress — thin gold bar at the very top, filled by scroll position (CSS scroll timeline; browsers without support simply show no bar) */
+@supports (animation-timeline: scroll()) {
+  @keyframes da-read-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  body.single-post::before {
+    content: ""; position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 100000; pointer-events: none;
+    background: var(--amber, #D4AF37); transform-origin: 0 50%; transform: scaleX(0);
+    animation: da-read-progress linear both; animation-timeline: scroll(root block);
+  }
+}
+/* 2) Section rhythm — a short gold rule above every H2 makes sections easy to spot while scrolling; anchors land below the sticky header */
+.single-post .article-body > h2 { scroll-margin-top: 96px; }
+.single-post .article-body > h2::before {
+  content: ""; display: block; width: 40px; height: 3px; margin-bottom: 14px; border-radius: 2px;
+  background: var(--amber, #D4AF37);
+}
+.single-post .article-body > h3 { scroll-margin-top: 96px; color: var(--teal-deep, #1B5E20); }
+/* 3) Links: thinner, offset underline that darkens on hover; visible keyboard focus */
+.single-post .article-body a:not([style]) {
+  color: var(--teal-deep, #1B5E20); text-decoration-line: underline; text-decoration-thickness: 1px;
+  text-underline-offset: 3px; text-decoration-color: rgba(46, 125, 50, 0.45);
+  transition: text-decoration-color .15s ease, color .15s ease;
+}
+.single-post .article-body a:not([style]):hover { color: var(--teal, #2E7D32); text-decoration-color: currentColor; }
+.single-post :is(.article-body, .popular-destinations-section) a:focus-visible { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; border-radius: 3px; }
+/* 4) Lists: gold markers, strong lead-ins in brand ink */
+.single-post .article-body :is(ul, ol) > li::marker { color: var(--amber-deep, #B8860B); font-weight: 700; }
+.single-post .article-body li strong,
+.single-post .article-body p strong { color: var(--dark, #122615); }
+/* 5) End-of-article "Explore Destinations Mentioned" — brand card with clear 44px destination buttons */
+.single-post .popular-destinations-section {
+  max-width: 44rem; margin-top: 56px !important; padding: 28px 28px 30px !important; border: 0 !important;
+  border-radius: 18px; background: var(--teal-deep, #1B5E20); box-shadow: 0 10px 30px rgba(18, 38, 21, 0.16);
+}
+.single-post .popular-destinations-section > h2 {
+  font-family: 'Sora', 'Plus Jakarta Sans', sans-serif !important; font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.6rem) !important;
+  line-height: 1.3; letter-spacing: -0.01em !important; color: #fff !important; margin: 0 0 8px !important;
+}
+.single-post .popular-destinations-section > div { gap: 10px !important; }
+.single-post .popular-destinations-section > div::before {
+  content: "Tour packages for the places in this guide \2014  stay, transport, sightseeing and meals, planned by our own team in Himachal.";
+  flex: 0 0 100%; margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.88); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .92rem; font-weight: 500; line-height: 1.55;
+}
+.single-post .popular-destinations-section > div > a {
+  display: inline-flex !important; align-items: center; min-height: 44px; box-sizing: border-box; padding: 10px 20px !important;
+  background: #fff !important; color: var(--teal-deep, #1B5E20) !important; border: 0 !important; border-radius: 999px !important;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .92rem;
+}
+.single-post .popular-destinations-section > div > a:hover { background: var(--amber, #D4AF37) !important; color: var(--dark, #122615) !important; transform: translateY(-1px); }
+@media (max-width: 767px) {
+  .single-post .article-body > h2::before { width: 32px; margin-bottom: 10px; }
+  .single-post .popular-destinations-section { margin-top: 40px !important; padding: 22px 18px 24px !important; border-radius: 16px; }
+}

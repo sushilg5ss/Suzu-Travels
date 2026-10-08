@@ -1,0 +1,552 @@
+/* Video Gallery: legacy Elementor header/footer hidden — site header/footer used instead (2026-09-26) */
+.page-id-2516 .elementor-element-1d5c1345,
+.page-id-2516 .elementor-element-ca53774 { display: none !important; }
+
+/* BEGIN SUZU-DESIGN-AGENT */
+/* Design agent block — one dated sub-block per run. Homepage (static index.html) is never targeted. */
+
+/* [DA-2026-09-27] Blog article foundation: mobile clipping fix, readable text, styled tables — pages: .single-post only */
+/* 1) Grid children could not shrink below their widest table, pushing the whole article 16–120px past the screen edge on phones */
+.single-post .page-layout > .content-area,
+.single-post .page-layout > .sidebar { min-width: 0; }
+.single-post .article-body { max-width: 100%; overflow-wrap: break-word; }
+
+/* 2) Body text: slate grey (#718096, ~4:1) → brand --mid (~7:1); comfortable ~75-character lines (44rem) on desktop */
+.single-post .article-body p,
+.single-post .article-body li { color: var(--mid, #4A5D4E); }
+.single-post .article-body > p,
+.single-post .article-body > ul,
+.single-post .article-body > ol,
+.single-post .article-body > h2,
+.single-post .article-body > h3,
+.single-post .article-body > h4,
+.single-post .article-body > blockquote { max-width: 44rem; }
+
+/* 3) Heading scale that fits phones */
+.single-post .article-body h2 { font-size: clamp(1.5rem, 1.15rem + 1.6vw, 2rem); line-height: 1.25; letter-spacing: -0.01em; }
+.single-post .article-body h3 { font-size: clamp(1.2rem, 1.05rem + 0.8vw, 1.5rem); line-height: 1.3; }
+
+/* 4) Tables — one consistent brand style (overrides the per-post inline styles) */
+.single-post .article-body table {
+  width: 100% !important;
+  margin: 28px 0 32px !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 1px solid rgba(27, 94, 32, 0.18) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95rem !important;
+  line-height: 1.55;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(18, 38, 21, 0.06);
+}
+.single-post .article-body th,
+.single-post .article-body td {
+  padding: 12px 16px !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(27, 94, 32, 0.10) !important;
+  text-align: left !important;
+  vertical-align: top;
+  color: var(--mid, #4A5D4E);
+}
+.single-post .article-body thead th,
+.single-post .article-body table tr:first-child > th {
+  background: var(--teal-deep, #1B5E20) !important;
+  color: #fff !important;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+.single-post .article-body thead th strong,
+.single-post .article-body table tr:first-child > th strong { color: #fff; }
+.single-post .article-body tbody tr { background: #fff !important; }
+.single-post .article-body tbody tr:nth-child(even) { background: var(--cream, #F9FAF5) !important; }
+.single-post .article-body tbody tr:last-child > td { border-bottom: 0 !important; }
+.single-post .article-body td strong { color: var(--dark, #122615); }
+
+/* Phones: wide tables scroll sideways inside their own box instead of pushing the page */
+@media (max-width: 767px) {
+  .single-post .article-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    font-size: 0.875rem !important;
+  }
+  .single-post .article-body th,
+  .single-post .article-body td { padding: 10px 12px !important; min-width: 112px; }
+}
+
+/* [DA-2026-09-28] Brand type + colour tokens on package, tour & destination templates — pages: .single-suzu_package, .single-product, .post-type-archive-suzu_package, .tax-suzu_destination */
+/* Why: these templates set body font to 'Inter' (never loaded → Arial/Segoe/Roboto fallback) and redefine --dark/--muted/--green/--gold to an old slate palette (#2d3748 / #718096 / #1e7a56 / #dca34b). Re-point the template's own tokens to Emerald & Gold and use Sora + Plus Jakarta Sans. */
+body.single-suzu_package,
+body.single-product,
+body.post-type-archive-suzu_package,
+body.tax-suzu_destination {
+  --dark: #122615;
+  --text: #122615;
+  --muted: #4A5D4E;
+  --green: #2E7D32;
+  --green-d: #1B5E20;
+  --green-l: #EDF5EE;
+  --gold: #D4AF37;
+  --gold-d: #B8860B;
+  --saffron: #B8860B;
+  --saffron-d: #8C6A08;
+  --bg: #F9FAF5;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+body.single-suzu_package .about-desc,
+body.single-product .about-desc,
+body.single-suzu_package :is(input, select, textarea),
+body.single-product :is(input, select, textarea),
+body.post-type-archive-suzu_package :is(input, select, textarea),
+body.tax-suzu_destination :is(input, select, textarea) { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+
+body.single-suzu_package :is(h1, h2, h3, h4),
+body.single-product :is(h1, h2, h3, h4),
+body.post-type-archive-suzu_package :is(h1, h2, h3, h4),
+body.tax-suzu_destination :is(h1, h2, h3, h4) {
+  font-family: 'Sora', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.01em;
+}
+body.single-suzu_package h1,
+body.single-product h1,
+body.post-type-archive-suzu_package h1,
+body.tax-suzu_destination h1 { letter-spacing: -0.02em; line-height: 1.15; }
+
+/* Leftover slate text (#2d3748 / #718096) in description, places and policy boxes → brand ink */
+body.single-suzu_package :is(.about-desc, .place-body, .policy-box) :is(h2, h3, h4),
+body.single-product :is(.about-desc, .place-body, .policy-box) :is(h2, h3, h4) { color: #122615; }
+body.single-suzu_package .about-desc :is(p, li, span, strong),
+body.single-product .about-desc :is(p, li, span, strong) { color: #4A5D4E; }
+body.single-suzu_package .about-desc strong,
+body.single-product .about-desc strong { color: #122615; }
+
+/* Buttons and search form fell back to browser Arial / unloaded 'Outfit' → brand body font */
+body.single-suzu_package :is(button, .szf-container, .szf-input),
+body.single-product :is(.btn-book, .btn-enquire, .cta-btn-primary, .cta-btn-secondary, .szf-container, .szf-input, .szf-btn),
+body.post-type-archive-suzu_package :is(.btn-apply),
+body.tax-suzu_destination :is(.btn-apply) { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+
+/* [DA-2026-09-29] Package & tour long-form guide (.about-desc): heading rhythm, ~85-char lines, brand tables, on-brand CTA buttons — pages: .single-suzu_package, .single-product (83 pages) */
+/* Why: the SEO guide under "About" had H2/H3 with zero top margin (headings glued to the previous paragraph), 130-character lines at 1440px, raw grey-bordered tables, and a red (#e63946) "Get a dated quote" button that is off-brand. Content, links and headings text unchanged. */
+:is(body.single-suzu_package, body.single-product) .about-desc { max-width: 50rem; }
+:is(body.single-suzu_package, body.single-product) .about-desc h2 {
+  font-size: clamp(1.45rem, 1.1rem + 1.4vw, 1.9rem) !important;
+  line-height: 1.25;
+  margin: 2.75rem 0 0.9rem !important;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(27, 94, 32, 0.12);
+}
+:is(body.single-suzu_package, body.single-product) .about-desc > h2:first-child { margin-top: 0 !important; padding-top: 0; border-top: 0; }
+:is(body.single-suzu_package, body.single-product) .about-desc h3 {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem) !important;
+  line-height: 1.35;
+  margin: 1.9rem 0 0.55rem !important;
+  color: var(--teal-deep, #1B5E20);
+}
+:is(body.single-suzu_package, body.single-product) .about-desc h2 + h3 { margin-top: 0.75rem !important; }
+:is(body.single-suzu_package, body.single-product) .about-desc :is(ul, ol) { padding-left: 1.3rem; margin: 0.4rem 0 1.25rem; }
+:is(body.single-suzu_package, body.single-product) .about-desc li { margin-bottom: 0.35rem; }
+:is(body.single-suzu_package, body.single-product) .about-desc ul > li::marker { color: var(--amber-deep, #B8860B); }
+:is(body.single-suzu_package, body.single-product) .about-desc img { border-radius: 14px !important; margin: 1.25rem 0 1.5rem !important; }
+
+/* Tables — same brand style as blog posts (overrides inline border/padding) */
+:is(body.single-suzu_package, body.single-product) .about-desc table {
+  width: 100% !important;
+  margin: 1.5rem 0 1.75rem !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 1px solid rgba(27, 94, 32, 0.18) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95rem !important;
+  line-height: 1.55;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(18, 38, 21, 0.06);
+}
+:is(body.single-suzu_package, body.single-product) .about-desc :is(th, td) {
+  padding: 12px 16px !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(27, 94, 32, 0.10) !important;
+  text-align: left !important;
+  vertical-align: top;
+  color: var(--mid, #4A5D4E);
+}
+:is(body.single-suzu_package, body.single-product) .about-desc :is(thead th, table tr:first-child > th) {
+  background: var(--teal-deep, #1B5E20) !important;
+  color: #fff !important;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+:is(body.single-suzu_package, body.single-product) .about-desc :is(thead th, table tr:first-child > th) strong { color: #fff; }
+:is(body.single-suzu_package, body.single-product) .about-desc tbody tr:nth-child(even) { background: var(--cream, #F9FAF5); }
+:is(body.single-suzu_package, body.single-product) .about-desc tbody tr:last-child > td { border-bottom: 0 !important; }
+:is(body.single-suzu_package, body.single-product) .about-desc td:first-child { color: var(--dark, #122615); font-weight: 600; }
+
+/* In-content CTA buttons (inline-styled): red quote button → brand gold; WhatsApp keeps its recognisable green. Both get 48px tap height. */
+:is(body.single-suzu_package, body.single-product) .about-desc a[style*="#e63946"],
+:is(body.single-suzu_package, body.single-product) .about-desc a[style*="#25d366"] {
+  display: inline-flex !important;
+  align-items: center;
+  min-height: 48px;
+  border-radius: 10px !important;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+:is(body.single-suzu_package, body.single-product) .about-desc a[style*="#e63946"] {
+  background: var(--amber, #D4AF37) !important;
+  color: var(--dark, #122615) !important;
+  box-shadow: 0 4px 14px rgba(184, 134, 11, 0.28);
+}
+:is(body.single-suzu_package, body.single-product) .about-desc a[style*="#25d366"] { box-shadow: 0 4px 14px rgba(18, 38, 21, 0.14); }
+:is(body.single-suzu_package, body.single-product) .about-desc a[style*="#e63946"]:hover,
+:is(body.single-suzu_package, body.single-product) .about-desc a[style*="#25d366"]:hover { transform: translateY(-1px); }
+
+@media (max-width: 767px) {
+  :is(body.single-suzu_package, body.single-product) .about-desc { overflow-wrap: break-word; }
+  :is(body.single-suzu_package, body.single-product) .about-desc h2 { margin-top: 2rem !important; padding-top: 1.25rem; }
+  :is(body.single-suzu_package, body.single-product) .about-desc table {
+    display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; font-size: 0.875rem !important;
+  }
+  :is(body.single-suzu_package, body.single-product) .about-desc :is(th, td) { padding: 10px 12px !important; min-width: 112px; }
+  :is(body.single-suzu_package, body.single-product) .about-desc a[style*="#e63946"],
+  :is(body.single-suzu_package, body.single-product) .about-desc a[style*="#25d366"] { display: flex !important; justify-content: center; text-align: center; margin: 0 0 10px !important; }
+}
+
+/* [DA-2026-09-30] Restore floating CTAs (Quote / WhatsApp / Call bar + WhatsApp bubble) on package, tour & packages-archive pages — pages: .single-suzu_package, .single-product, .post-type-archive-suzu_package */
+/* Root cause: these templates set `perspective: 1000px` on the body element, which makes body the containing block for every position:fixed element. The site-wide sticky bar (#szcta) and the WhatsApp bubble were therefore parked at the very bottom of the page instead of floating on screen, invisible while a visitor reads a package. Body perspective is decorative only (the card grids and sidebar carry their own). */
+body.single-suzu_package,
+body.single-product,
+body.post-type-archive-suzu_package { perspective: none !important; }
+/* With floating restored, the template's own round WhatsApp button would sit on top of the site-wide bubble and bar (three WhatsApp buttons in one corner). Bar and bubble stay, the duplicate goes. */
+:is(body.single-suzu_package, body.single-product) .whatsapp-fab { display: none !important; }
+/* The scroll-reveal script only un-hides a section once 8% of it is on screen. A very long "About" guide (taller than ~10,500px — e.g. 23,900px on the Shimla-Manali package on phones) can never reach 8%, so it stayed invisible (opacity 0) while the visitor scrolled through it. Show it without the fade. */
+:is(body.single-suzu_package, body.single-product) #about.reveal { opacity: 1 !important; transform: none !important; }
+
+/* [DA-2026-10-03] Desktop sticky booking card + sticky header on package & tour pages — pages: .single-suzu_package, .single-product (at least 901px wide and 820px tall, so the card never runs under the bottom Quote/WhatsApp/Call bar) */
+/* Root cause: these templates put overflow-x: hidden on both the html and body elements. That turns body into its own never-scrolling scroll box, so every position:sticky inside it is dead — the site header and the booking sidebar both scrolled away. overflow-x: clip blocks sideways scroll the same way without creating a scroll box. */
+/* The sidebar (1,270–1,315px) is taller than a laptop screen, so pinning all of it hid its lower half. Quick Info + Best Time now come first and scroll normally; the booking card follows and stays pinned under the header for the rest of the page. Mobile (900px and below) unchanged. */
+@supports (overflow: clip) {
+  @media (min-width: 901px) and (min-height: 820px) {
+    body.single-suzu_package,
+    body.single-product { overflow-x: clip !important; overflow-y: visible !important; }
+    :is(body.single-suzu_package, body.single-product) aside#book { display: flex; flex-direction: column; gap: 28px; }
+    :is(body.single-suzu_package, body.single-product) aside#book > .sidebar-sticky { display: contents; }
+    :is(body.single-suzu_package, body.single-product) aside#book .info-card { order: 1; }
+    :is(body.single-suzu_package, body.single-product) aside#book .best-time-card { order: 2; }
+    :is(body.single-suzu_package, body.single-product) aside#book .book-card { order: 3; position: sticky; top: 90px; z-index: 2; }
+  }
+}
+
+/* [DA-2026-10-04] Itinerary timeline cards + clean inclusions/exclusions lists — pages: .single-suzu_package, .single-product (#itinerary, #inclusions only) */
+/* Why: the timeline's connecting line was drawn ~40px right of the day badges (left:39px inside an already-centred element), so nothing linked day to day; day text sat loose on the page background; "DAY" was big and the number tiny; every location showed two pins; inclusions had a ✅ emoji plus a content emoji per line and exclusions were in off-brand red. Content and headings unchanged. */
+:is(body.single-suzu_package, body.single-product) #itinerary .day-badge { align-self: stretch; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-line { flex: 1; width: 2px; margin: 6px 0 -2px; background: rgba(27, 94, 32, 0.22); position: static; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-line::after { display: none !important; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-item:last-child .day-line { visibility: hidden; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-num {
+  width: 52px; height: 52px; flex-shrink: 0;
+  background: var(--teal-deep, #1B5E20) !important; color: #fff;
+  font-family: 'Sora', sans-serif; font-size: .58rem; font-weight: 600; letter-spacing: .1em; line-height: 1;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 5px rgba(212, 175, 55, 0.55), 0 4px 12px rgba(18, 38, 21, 0.18);
+}
+:is(body.single-suzu_package, body.single-product) #itinerary .day-num span { display: block; margin-top: 2px; font-size: 1.15rem; font-weight: 700; letter-spacing: 0; opacity: 1; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-body {
+  margin: 0 0 18px; padding: 18px 22px 20px;
+  background: #fff; border: 1px solid rgba(27, 94, 32, 0.12); border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(18, 38, 21, 0.05);
+}
+:is(body.single-suzu_package, body.single-product) #itinerary .day-item:last-child .day-body { margin-bottom: 0; }
+/* Location label: brand green (gold text was ~3:1 on white) and the first of the two pins hidden */
+:is(body.single-suzu_package, body.single-product) #itinerary .day-location { color: var(--teal-deep, #1B5E20); font-weight: 700; font-size: .72rem; margin-bottom: 6px; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-location::first-letter { font-size: 0; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-title { font-family: 'Sora', sans-serif; font-size: 1.12rem; line-height: 1.35; color: var(--dark, #122615); margin-bottom: 8px; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-desc { font-size: .97rem; line-height: 1.7; color: var(--mid, #4A5D4E); max-width: 44rem; }
+:is(body.single-suzu_package, body.single-product) #itinerary .day-include {
+  margin-top: 14px; padding: 6px 12px; border-radius: 8px;
+  background: #EDF5EE; color: var(--teal-deep, #1B5E20); font-size: .8rem; font-weight: 600; line-height: 1.4;
+}
+
+/* Inclusions / exclusions: white cards, one small check (green) or cross (grey) badge per line instead of the ✅ / ❌ emoji */
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box,
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box:hover {
+  background: #fff !important; border: 1px solid rgba(27, 94, 32, 0.12) !important; border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(18, 38, 21, 0.05);
+}
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.inc { border-top: 4px solid var(--teal, #2E7D32) !important; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.exc { border-top: 4px solid rgba(74, 93, 78, 0.45) !important; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box h3 { font-family: 'Sora', sans-serif; font-size: 1.08rem; letter-spacing: -0.01em; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.inc h3 { color: var(--teal-deep, #1B5E20); }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.exc h3 { color: var(--dark, #122615); }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box ul { gap: 12px; padding: 0; margin: 0; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box li {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: .95rem; line-height: 1.55; color: var(--dark, #122615);
+}
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box li .tick {
+  font-size: 0 !important; width: 22px; height: 22px; margin-top: 1px; flex: 0 0 22px;
+  border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+}
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box li .tick::before { font-size: 12px; font-weight: 800; line-height: 1; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.inc li .tick { background: #EDF5EE; color: var(--teal-deep, #1B5E20); }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.inc li .tick::before { content: "✓"; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.exc li .tick { background: rgba(74, 93, 78, 0.12); color: var(--mid, #4A5D4E); }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.exc li .tick::before { content: "✕"; }
+:is(body.single-suzu_package, body.single-product) #inclusions .list-box.exc li { color: var(--mid, #4A5D4E); }
+
+@media (max-width: 900px) {
+  :is(body.single-suzu_package, body.single-product) #itinerary .day-item { grid-template-columns: 40px 1fr; gap: 0 12px; }
+  :is(body.single-suzu_package, body.single-product) #itinerary .day-num { width: 40px; height: 40px; font-size: .5rem; box-shadow: 0 0 0 3px #fff, 0 0 0 4px rgba(212, 175, 55, 0.55); }
+  :is(body.single-suzu_package, body.single-product) #itinerary .day-num span { font-size: .95rem; }
+  :is(body.single-suzu_package, body.single-product) #itinerary .day-body { padding: 14px 16px 16px; margin-bottom: 14px; }
+  :is(body.single-suzu_package, body.single-product) #itinerary .day-title { font-size: 1rem; }
+  :is(body.single-suzu_package, body.single-product) #itinerary .day-desc { font-size: .92rem; line-height: 1.65; }
+  :is(body.single-suzu_package, body.single-product) #inclusions .list-box { padding: 20px 18px; }
+  :is(body.single-suzu_package, body.single-product) #inclusions .list-box li { font-size: .92rem; }
+}
+
+/* [DA-2026-10-06] Package hero: readable scrim, calmer height, compact trip facts, real-proof trust line — pages: .single-suzu_package, .single-product (.hero only) */
+/* Why: white title and chips sat straight on the photo with no shade (bright skies made them hard to read); the hero filled 88% of the screen so a laptop visitor saw no enquiry form or section nav; on phones the title shrank to 1.2rem (19px) and the three fact chips stacked into three loose rows; no trust proof anywhere above the fold. Content, links and H1 text unchanged. */
+:is(body.single-suzu_package, body.single-product) .hero { isolation: isolate; }
+:is(body.single-suzu_package, body.single-product) .hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top, rgba(18, 38, 21, 0.86) 0%, rgba(18, 38, 21, 0.55) 34%, rgba(18, 38, 21, 0.12) 62%, rgba(18, 38, 21, 0) 80%);
+}
+:is(body.single-suzu_package, body.single-product) .hero h1 { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28); margin-bottom: 18px; }
+:is(body.single-suzu_package, body.single-product) .hero-badge {
+  background: var(--amber, #D4AF37) !important; color: var(--dark, #122615) !important;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; font-size: .72rem; letter-spacing: .1em;
+}
+/* Trip facts: one quiet glass row; the emoji icon circles become small and even */
+:is(body.single-suzu_package, body.single-product) .hero-meta { gap: 8px 10px; margin-bottom: 0; }
+:is(body.single-suzu_package, body.single-product) .hero-meta > span {
+  color: #fff; font-size: .9rem; font-weight: 500; line-height: 1.35;
+  background: rgba(18, 38, 21, 0.38); border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 7px 14px 7px 10px; gap: 8px;
+}
+:is(body.single-suzu_package, body.single-product) .hero-meta .icon { font-size: .85rem; background: none !important; width: auto; height: auto; padding: 0; }
+:is(body.single-suzu_package, body.single-product) .hero-cta-row { margin-top: 26px; gap: 12px; }
+:is(body.single-suzu_package, body.single-product) .hero-btn-book {
+  background: var(--amber, #D4AF37) !important; color: var(--dark, #122615) !important;
+  box-shadow: 0 6px 20px rgba(184, 134, 11, 0.35); min-height: 52px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+:is(body.single-suzu_package, body.single-product) .hero-btn-enquire { min-height: 52px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+/* Trust line — only real, verified proof points */
+:is(body.single-suzu_package, body.single-product) .hero-content::after {
+  content: "★  4.7 Google rating   ·   7+ years, since 2019   ·   HP Tourism registered   ·   Own office in Himachal   ·   Small token amount locks today’s rate";
+  display: block; white-space: pre-wrap; margin-top: 24px; padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.92); font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: .82rem; font-weight: 600; line-height: 1.7; letter-spacing: .01em;
+}
+/* Desktop: hero no longer swallows the whole first screen */
+@media (min-width: 901px) {
+  :is(body.single-suzu_package, body.single-product) .hero { height: 74vh; min-height: 560px; max-height: 720px; }
+  :is(body.single-suzu_package, body.single-product) .hero-content { padding: 48px 56px 44px; max-width: 980px; }
+}
+/* Phones: bigger title, tighter facts */
+@media (max-width: 900px) {
+  :is(body.single-suzu_package, body.single-product) .hero { height: auto; min-height: 460px; }
+  :is(body.single-suzu_package, body.single-product) .hero-content { padding: 96px 18px 22px; }
+  :is(body.single-suzu_package, body.single-product) .hero h1 { font-size: clamp(1.55rem, 1.1rem + 2.2vw, 2.1rem) !important; line-height: 1.18; margin-bottom: 14px; }
+  :is(body.single-suzu_package, body.single-product) .hero-meta { gap: 6px; }
+  :is(body.single-suzu_package, body.single-product) .hero-meta > span { font-size: .8rem !important; padding: 5px 11px 5px 8px; gap: 6px; }
+  :is(body.single-suzu_package, body.single-product) .hero-cta-row { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  :is(body.single-suzu_package, body.single-product) .hero-cta-row > a { justify-content: center; padding: 12px 10px; font-size: .92rem; min-height: 48px; }
+  :is(body.single-suzu_package, body.single-product) .hero-content::after { margin-top: 18px; padding-top: 12px; font-size: .72rem; line-height: 1.65; }
+}
+
+/* [DA-2026-10-07] Destination archive cards: clean white cards, readable badges + duration, full trip facts, whole card clickable, trust line under H1 — pages: .tax-suzu_destination (/destination/* archives only) */
+/* Why: cards were 45%-transparent glass on cream (edges barely visible); long marketing badges wrapped to 2-3 lines of white-on-gold text (~2:1 contrast) and covered the photo; the duration chip was faint white-on-photo; hotel/meal values were cut off with "…"; only the small Explore button and title were clickable; no trust proof near the H1. Links, H1, titles and card order unchanged. */
+body.tax-suzu_destination .pkg-card {
+  position: relative; overflow: hidden;
+  background: #fff !important; border: 1px solid rgba(27, 94, 32, 0.12) !important; border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(18, 38, 21, 0.06);
+}
+body.tax-suzu_destination .pkg-card:hover { transform: translateY(-4px); border-color: rgba(212, 175, 55, 0.6) !important; box-shadow: 0 16px 36px rgba(18, 38, 21, 0.13); }
+body.tax-suzu_destination .pkg-card:focus-within { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; }
+/* Photo: gentle zoom on hover + bottom shade so the duration reads on any sky */
+body.tax-suzu_destination .pkg-img { overflow: hidden; isolation: isolate; }
+body.tax-suzu_destination .pkg-img img { transition: transform .6s cubic-bezier(.165, .84, .44, 1); }
+body.tax-suzu_destination .pkg-card:hover .pkg-img img { transform: scale(1.05); }
+body.tax-suzu_destination .pkg-img::after {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 45%; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top, rgba(18, 38, 21, 0.55), rgba(18, 38, 21, 0));
+}
+body.tax-suzu_destination :is(.pkg-img-badges, .pkg-dur) { z-index: 2; pointer-events: none; }
+/* Badge: one line, dark text on gold (was white on gold) */
+body.tax-suzu_destination .pkg-img-badges { display: flex; }
+body.tax-suzu_destination .badge-sale {
+  display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  background: var(--amber, #D4AF37) !important; color: var(--dark, #122615) !important;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .68rem; font-weight: 700; letter-spacing: .05em;
+  padding: 5px 11px; box-shadow: 0 2px 8px rgba(18, 38, 21, 0.18);
+}
+/* Duration: solid white pill, brand green, easy to scan */
+body.tax-suzu_destination .pkg-dur {
+  background: #fff !important; color: var(--teal-deep, #1B5E20) !important; backdrop-filter: none;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .78rem; font-weight: 700;
+  padding: 5px 12px; border: 0; border-radius: 999px; box-shadow: 0 2px 10px rgba(18, 38, 21, 0.22);
+}
+/* Title: whole card opens the package (same link as the title and Explore) */
+body.tax-suzu_destination .pkg-body { padding: 18px 20px 4px; }
+body.tax-suzu_destination .pkg-title { font-size: 1.08rem; line-height: 1.38; margin-bottom: 10px; }
+body.tax-suzu_destination .pkg-title a { color: var(--dark, #122615); }
+body.tax-suzu_destination .pkg-title a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+body.tax-suzu_destination .pkg-card:hover .pkg-title a { color: var(--teal-deep, #1B5E20); }
+/* Trip facts: full values (no "…"), quieter dividers */
+body.tax-suzu_destination .pkg-meta-row { align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(27, 94, 32, 0.08); font-size: .82rem; }
+body.tax-suzu_destination .pkg-meta-row:last-child { border-bottom: 0; }
+body.tax-suzu_destination .pkg-meta-row .lbl { flex: 0 0 auto; white-space: nowrap; color: var(--mid, #4A5D4E); }
+body.tax-suzu_destination .pkg-meta-row .val { white-space: normal; overflow: visible; max-width: 64%; line-height: 1.4; color: var(--dark, #122615); }
+/* Footer: full-width Explore button, 48px tap height */
+body.tax-suzu_destination .pkg-footer { padding: 14px 20px 20px; border-top: 1px solid rgba(27, 94, 32, 0.08); }
+body.tax-suzu_destination .pkg-footer > div:empty { display: none; }
+body.tax-suzu_destination .btn-explore {
+  position: relative; z-index: 2; flex: 1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+  background: var(--teal-deep, #1B5E20) !important; color: #fff !important; border-radius: 12px;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .9rem; font-weight: 700;
+}
+body.tax-suzu_destination .pkg-card:hover .btn-explore { background: var(--teal, #2E7D32) !important; }
+/* Trust line under the H1 — real proof only */
+body.tax-suzu_destination .page-header-top > div:first-child::after {
+  content: "★ 4.7 Google rating   ·   7+ years, since 2019   ·   HP Tourism registered   ·   Own office in Himachal   ·   Small token amount locks today’s rate";
+  display: block; white-space: pre-wrap; margin-top: 14px;
+  color: var(--mid, #4A5D4E); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .88rem; font-weight: 600; line-height: 1.6;
+}
+@media (min-width: 901px) {
+  body.tax-suzu_destination .page-header { padding-bottom: 32px; }
+  body.tax-suzu_destination .content-grid { padding-top: 28px; }
+}
+@media (max-width: 900px) {
+  body.tax-suzu_destination .pkg-title { font-size: 1.05rem; }
+  body.tax-suzu_destination .page-header-top > div:first-child::after { margin-top: 10px; font-size: .76rem; line-height: 1.55; }
+}
+/* Phones: the theme hides the sticky filter bar at 768px and below but kept its 46px spacer — an empty gap above the first card */
+@media (max-width: 768px) {
+  body.tax-suzu_destination .filter-nav-spacer { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.tax-suzu_destination .pkg-card:hover, body.tax-suzu_destination .pkg-card:hover .pkg-img img { transform: none; }
+}
+
+/* [DA-2026-10-08] /packages/ archive: hero fits phones, swipeable destination chips, readable badges, white cards with full trip facts, whole card clickable, brand Explore button, readable "Talk to an Expert" box, trust line — pages: .post-type-archive-suzu_package (/packages/ and /packages/page/N/ only) */
+/* Why: on phones the hero block was 473px wide on a 390px screen (the search input's default width pushed it out), so the intro text and the search box were cut off at both edges; 6 destination chips stacked into 4 rows before the first card; card badges were black text on a 45%-transparent grey pill over the photo; hotel/pickup values were cut off with "…"; the green Explore pill looked like a WhatsApp button; the "Talk to an Expert" text was ~1.5:1 on green; hover tilted cards in 3D. Links, H1, titles, card order unchanged. */
+body.post-type-archive-suzu_package { --border: rgba(27, 94, 32, 0.12); --white: #fff; --glass: #fff; --glass-solid: #fff; }
+/* Hero: brand-green shade instead of blue-black; content and search fit the screen */
+body.post-type-archive-suzu_package .archive-hero::after { background: linear-gradient(to top, rgba(18, 38, 21, 0.82), rgba(18, 38, 21, 0.38)); }
+body.post-type-archive-suzu_package .archive-hero-content { width: 100%; min-width: 0; box-sizing: border-box; }
+body.post-type-archive-suzu_package .archive-hero h1 { font-family: 'Sora', 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.02em; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25); }
+body.post-type-archive-suzu_package .hero-search-form { max-width: 100%; box-sizing: border-box; }
+body.post-type-archive-suzu_package .hero-search-input { min-width: 0; width: 100%; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+body.post-type-archive-suzu_package .hero-search-btn { flex-shrink: 0; min-height: 48px; background: var(--amber, #D4AF37); color: var(--dark, #122615); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+/* Trust line under the intro — real proof only */
+body.post-type-archive-suzu_package .archive-hero-content > p::after {
+  content: "★ 4.7 Google rating   ·   7+ years, since 2019   ·   HP Tourism registered   ·   Own office in Himachal";
+  display: block; white-space: pre-wrap; margin-top: 14px;
+  color: #fff; font-size: .85rem; font-weight: 600; line-height: 1.6; letter-spacing: .01em;
+}
+/* Destination chips: solid, readable, 44px tall */
+body.post-type-archive-suzu_package .filter-nav a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 8px 18px;
+  background: #fff; border: 1px solid rgba(27, 94, 32, 0.16); backdrop-filter: none;
+  color: var(--dark, #122615); font-size: .88rem;
+}
+body.post-type-archive-suzu_package .filter-nav a:hover { background: #EDF5EE; color: var(--teal-deep, #1B5E20); border-color: rgba(27, 94, 32, 0.3); box-shadow: none; }
+body.post-type-archive-suzu_package .filter-nav a.active { background: var(--teal-deep, #1B5E20); border-color: var(--teal-deep, #1B5E20); color: #fff; box-shadow: none; }
+/* Cards */
+body.post-type-archive-suzu_package .pkg-card {
+  position: relative; background: #fff; backdrop-filter: none; -webkit-backdrop-filter: none;
+  border: 1px solid rgba(27, 94, 32, 0.12); border-radius: 18px; box-shadow: 0 2px 12px rgba(18, 38, 21, 0.06);
+  transform-style: flat;
+}
+body.post-type-archive-suzu_package .pkg-card:hover { transform: translateY(-4px); background: #fff; border-color: rgba(212, 175, 55, 0.6); box-shadow: 0 16px 36px rgba(18, 38, 21, 0.13); }
+body.post-type-archive-suzu_package .pkg-card:focus-within { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; }
+body.post-type-archive-suzu_package .pkg-card:hover .pkg-img-wrap img { transform: scale(1.05); }
+body.post-type-archive-suzu_package .pkg-badges { pointer-events: none; }
+body.post-type-archive-suzu_package .badge-tag {
+  display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  background: var(--amber, #D4AF37); color: var(--dark, #122615);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: .68rem; letter-spacing: .05em;
+  padding: 5px 11px; box-shadow: 0 2px 8px rgba(18, 38, 21, 0.18);
+}
+body.post-type-archive-suzu_package .pkg-body { padding: 20px 22px 22px; }
+body.post-type-archive-suzu_package .pkg-title { font-size: 1.12rem; font-weight: 700; line-height: 1.38; margin-bottom: 10px; }
+body.post-type-archive-suzu_package .pkg-title a { color: var(--dark, #122615); }
+body.post-type-archive-suzu_package .pkg-title a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+body.post-type-archive-suzu_package .pkg-card:hover .pkg-title a { color: var(--teal-deep, #1B5E20); }
+/* Trip facts: full values, quiet dividers */
+body.post-type-archive-suzu_package .pkg-meta { gap: 0; margin-bottom: 18px; }
+body.post-type-archive-suzu_package .pkg-meta-row { align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(27, 94, 32, 0.08); font-size: .84rem; }
+body.post-type-archive-suzu_package .pkg-meta-row:last-child { border-bottom: 0; }
+body.post-type-archive-suzu_package .pkg-meta-row .label { flex: 0 0 auto; white-space: nowrap; color: var(--mid, #4A5D4E); }
+body.post-type-archive-suzu_package .pkg-meta-row .val { white-space: normal; overflow: visible; max-width: 64%; line-height: 1.4; color: var(--dark, #122615); }
+/* Explore: full-width brand button, 48px (green #25d366 is the WhatsApp colour) */
+body.post-type-archive-suzu_package .pkg-footer { border-top: 1px solid rgba(27, 94, 32, 0.08); padding-top: 16px; }
+body.post-type-archive-suzu_package .pkg-footer > div:empty { display: none; }
+body.post-type-archive-suzu_package .btn-explore {
+  position: relative; z-index: 2; flex: 1; display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+  background: var(--teal-deep, #1B5E20); color: #fff; border-radius: 12px; box-shadow: none;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+body.post-type-archive-suzu_package .pkg-card:hover .btn-explore { background: var(--teal, #2E7D32); transform: none; box-shadow: none; }
+/* Sidebar: solid white boxes; Talk to an Expert readable, gold button */
+body.post-type-archive-suzu_package .widget-box { background: #fff; backdrop-filter: none; -webkit-backdrop-filter: none; border: 1px solid rgba(27, 94, 32, 0.12); border-radius: 18px; box-shadow: 0 2px 12px rgba(18, 38, 21, 0.06); }
+body.post-type-archive-suzu_package .widget-box h3 { font-family: 'Sora', sans-serif; font-weight: 700; color: var(--dark, #122615); }
+body.post-type-archive-suzu_package .cat-list li a { min-height: 44px; box-sizing: border-box; }
+body.post-type-archive-suzu_package .cat-list li a:hover { background: #EDF5EE; color: var(--teal-deep, #1B5E20); }
+body.post-type-archive-suzu_package .promo-box { background: var(--teal-deep, #1B5E20); border-color: var(--teal-deep, #1B5E20); }
+body.post-type-archive-suzu_package .promo-box h3 { color: #fff; }
+body.post-type-archive-suzu_package .promo-box p { color: rgba(255, 255, 255, 0.92); opacity: 1; }
+body.post-type-archive-suzu_package .promo-btn { display: flex; align-items: center; justify-content: center; min-height: 48px; box-sizing: border-box; background: var(--amber, #D4AF37); color: var(--dark, #122615); border-radius: 12px; }
+/* Pagination: 44px targets */
+body.post-type-archive-suzu_package .pagination .page-numbers { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; box-sizing: border-box; }
+/* Phones */
+@media (max-width: 768px) {
+  body.post-type-archive-suzu_package .archive-hero { height: auto; min-height: 0; padding: 64px 0 40px; margin-bottom: 28px; }
+  body.post-type-archive-suzu_package .archive-hero-content { padding: 0 18px; }
+  body.post-type-archive-suzu_package .archive-hero h1 { font-size: clamp(1.9rem, 1.4rem + 2.6vw, 2.3rem); line-height: 1.15; margin-bottom: 12px; }
+  body.post-type-archive-suzu_package .archive-hero p { font-size: .98rem; line-height: 1.55; }
+  body.post-type-archive-suzu_package .archive-hero-content > p::after { font-size: .76rem; margin-top: 12px; }
+  body.post-type-archive-suzu_package .hero-search-wrapper { margin-top: 22px; }
+  body.post-type-archive-suzu_package .hero-search-input { padding: 10px 14px; font-size: 1rem; }
+  body.post-type-archive-suzu_package .hero-search-btn { padding: 10px 20px; font-size: .95rem; }
+  /* One swipeable row of chips instead of 4 stacked rows (grid column may shrink so the row scrolls inside it) */
+  body.post-type-archive-suzu_package .page-grid > * { min-width: 0; }
+  body.post-type-archive-suzu_package .filter-nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; margin: 0 -32px 24px; padding: 2px 32px 6px; }
+  body.post-type-archive-suzu_package .filter-nav::-webkit-scrollbar { display: none; }
+  body.post-type-archive-suzu_package .filter-nav a { flex: 0 0 auto; white-space: nowrap; }
+  body.post-type-archive-suzu_package .pkg-title { font-size: 1.05rem; }
+  body.post-type-archive-suzu_package .pkg-body { padding: 18px 18px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.post-type-archive-suzu_package .pkg-card:hover, body.post-type-archive-suzu_package .pkg-card:hover .pkg-img-wrap img { transform: none; }
+}
+/* END SUZU-DESIGN-AGENT */
+
+/* Header menu: "Mountains" item for the Mountains of India section (1 Oct 2026). With 11 top-level items the desktop nav needs slightly tighter spacing to fit beside the phone and Enquire buttons. Remove this block if that menu item is removed. */
+@media (min-width: 1181px) and (max-width: 1299px) {
+  .site-header nav ul.nav-pill > li > a { padding: 6px 5px !important; font-size: 12.5px !important; }
+  .site-header .header-inner { padding-left: 24px; padding-right: 24px; }
+}
+@media (min-width: 1300px) {
+  .site-header nav ul.nav-pill > li > a { padding-left: 6px !important; padding-right: 6px !important; font-size: 13px !important; }
+  .site-header .header-inner { padding-left: 24px; padding-right: 24px; }
+}
+
+/* [OPS-2026-10-05] Hide the footer "Call Us Now" button that dials the retired number 7018135199 (hardcoded in the Suzu Destinations plugin template). Only the button with that exact number is hidden; "Send Enquiry" and the site-wide Quote/WhatsApp/Call bar (7087488961) stay. Remove this block once the plugin template is fixed to 7087488961. */
+.footer-cta .cta-btn-primary[onclick*="7018135199"] { display: none !important; }
+
+
+/* Header menu: "Devotional" item for the Pilgrimage Tours section (8 Oct 2026). With 12 top-level items the desktop nav is tightened a little more so it never overlaps the logo or the phone/Enquire buttons. Remove this block if that menu item is removed. */
+@media (min-width: 1181px) and (max-width: 1299px) {
+  .site-header nav ul.nav-pill > li > a { padding: 6px 3px !important; font-size: 11.4px !important; }
+  .site-header .header-inner { padding-left: 16px; padding-right: 16px; }
+}
+@media (min-width: 1300px) {
+  .site-header nav ul.nav-pill > li > a { padding-left: 4px !important; padding-right: 4px !important; font-size: 12.2px !important; }
+}
