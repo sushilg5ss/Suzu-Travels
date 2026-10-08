@@ -9,7 +9,7 @@
 
 Why illustrated: every visual is drawn here from SVG shapes, so there is no photo licence to worry about (Sushil, 8 Oct
 2026: "copyright claim na ho"). Temple drawings are stylised ARCHETYPES (himalaya, nagara, ghats, gopuram, cave, devi,
-pillar, gurudwara) — never captioned as an exact architectural likeness.
+pillar, gurudwara, pagoda) — never captioned as an exact architectural likeness.
 
 Rules (same as the mountain kit): 1920x1080, 30 fps, silent, seamless loop (last frame == first frame), deterministic
 (no Math.random at runtime — every random number is generated here with a fixed seed). Hero text stays in the RIGHT 55%
@@ -249,14 +249,38 @@ def arch_gurudwara():
     return b + causeway + pool
 
 
+def arch_pagoda():
+    """Himachal hill temple (Kath-Kuni / pagoda style, e.g. the Hidimba or Bhimakali type): stone-and-timber base,
+    stacked hipped wooden roofs, brass finial, deodar forest and snow ridges. Stylised archetype, not a likeness."""
+    ridge = ('<path d="M-40 720 L140 470 L260 560 L430 330 L600 520 L720 430 L900 640 L1250 520 L1600 640 L1960 500 L1960 1080 L-40 1080Z" fill="#26325c"/>'
+             '<path d="M430 330 L492 418 L458 404 L430 432 L402 404 L368 418Z M140 470 L185 530 L160 522 L135 548 L112 524Z M720 430 L772 494 L745 488 L720 512 L698 488Z" fill="url(#snowg)"/>'
+             '<path d="M-40 880 L240 700 L520 800 L780 690 L900 740 L1400 700 L1960 780 L1960 1080 L-40 1080Z" fill="#1d2448"/>')
+    def deodar(x, base, h, op=1):
+        t = "".join(f'<path d="M{x} {base - h + i * h * .2:.0f} L{x + h * (.16 + i * .06):.0f} {base - h * (.62 - i * .2) + h * .2:.0f} L{x - h * (.16 + i * .06):.0f} {base - h * (.62 - i * .2) + h * .2:.0f}Z" fill="#101a2e" opacity="{op}"/>' for i in range(4))
+        return t + f'<rect x="{x - 4}" y="{base - h * .1:.0f}" width="8" height="{h * .12:.0f}" fill="#101a2e" opacity="{op}"/>'
+    trees = "".join(deodar(x, b, h, o) for x, b, h, o in [(60, 900, 300, .9), (150, 930, 380, 1), (760, 920, 360, 1), (850, 890, 280, .9), (690, 950, 240, 1)])
+    t = ('<rect x="320" y="800" width="260" height="140" fill="#1b0c1f" stroke="rgba(242,193,78,.55)" stroke-width="3"/>'
+         + "".join(f'<rect x="320" y="{y}" width="260" height="8" fill="#3a2410"/>' for y in (830, 870, 910))
+         + door(450, 940, 60, 100))
+    roofs = ""
+    for i, (w, y, h) in enumerate([(400, 800, 60), (330, 700, 70), (260, 610, 64), (190, 530, 56)]):
+        roofs += (f'<path d="M{450 - w / 2 - 20:.0f} {y} L{450 - w / 2 + 30:.0f} {y - h} L{450 + w / 2 - 30:.0f} {y - h} L{450 + w / 2 + 20:.0f} {y}Z" fill="{SIL}" stroke="{GOLD}" stroke-width="2.4"/>'
+                  + "".join(f'<line x1="{450 - w / 2 + 20 + k * 24:.0f}" y1="{y - 4}" x2="{450 - w / 2 + 34 + k * 24:.0f}" y2="{y - h + 6}" stroke="{RIM}" stroke-width="1.4"/>' for k in range(int((w - 40) // 24)))
+                  + (f'<rect x="{450 - w * .36:.0f}" y="{y - h - (100 - h) + 4:.0f}" width="{w * .72:.0f}" height="{100 - h - 4}" fill="#1b0c1f" stroke="{RIM}" stroke-width="2"/>' if i < 3 else ""))
+    cone = (f'<path d="M370 474 Q450 330 530 474Z" fill="{SIL}" stroke="{GOLD}" stroke-width="2.4"/>' + kalash(450, 380, 1.0)
+            + "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{GOLD2}"/>' for x, y in [(230, 800), (670, 800), (285, 700), (615, 700), (320, 610), (580, 610)]))
+    return ridge + trees + roofs + cone + t + flag(600, 940, 160, "fg") + '<rect x="-40" y="940" width="2000" height="160" fill="#120714"/>'
+
+
 ARCH = {"himalaya": arch_himalaya, "nagara": arch_nagara_sea, "ghats": arch_ghats, "devi": arch_devi,
-        "gopuram": arch_gopuram, "cave": arch_cave, "pillar": arch_pillar, "gurudwara": arch_gurudwara}
-SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn"}
+        "gopuram": arch_gopuram, "cave": arch_cave, "pillar": arch_pillar, "gurudwara": arch_gurudwara,
+        "pagoda": arch_pagoda}
+SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow"}
 
 
 def scene_svg(arch, uid, sky=None):
     sky = sky or SKY_FOR[arch]
-    sun = {"himalaya": (470, 420, 110), "pillar": (450, 420, 60), "cave": (700, 220, 50)}.get(arch, (470, 560, 140))
+    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50)}.get(arch, (470, 560, 140))
     return (sky_svg(uid, sky, sun) + (stars(uid, 80, 7) if sky in ("night", "snow", "dusk") else "")
             + mandala(sun[0], sun[1], 300, f"md{uid}", op=.18)
             + f'<svg class="lay" viewBox="0 0 {W} {H}">{DEFS}<g>{ARCH[arch]()}</g></svg>')
@@ -265,7 +289,7 @@ def scene_svg(arch, uid, sky=None):
 def arch_js(arch, uid_prefix, dur, start=0.0):
     """Small seamless secondary motion for an archetype (flag sway, waves, diya bob, pillar pulse)."""
     js = []
-    if arch in ("himalaya", "nagara", "devi"):
+    if arch in ("himalaya", "nagara", "devi", "pagoda"):
         js.append(f'tl.fromTo("{uid_prefix} #fg",{{rotation:-6}},{{rotation:6,duration:{dur / 8:.3f},ease:"sine.inOut",yoyo:true,repeat:7}},{start});')
     if arch == "nagara":
         for i in range(4):

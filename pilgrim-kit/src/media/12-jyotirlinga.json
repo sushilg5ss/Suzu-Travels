@@ -1,4 +1,10 @@
 {
  "hero": {"arch": "pillar", "deva": "द्वादश ज्योतिर्लिंग", "deva_size": 112, "kicker": "12 Jyotirlingas · Shiva Purana",
-  "beats": ["Brahma and Vishnu argued: who is greater?", "A pillar of light split the worlds", "Neither found its top nor its end", "Shiva appeared — the first Jyotirlinga"]}
+  "beats": ["Brahma and Vishnu argued: who is greater?", "A pillar of light split the worlds", "Neither found its top nor its end", "Shiva appeared — the first Jyotirlinga"]},
+ "story": {"title": "Twelve lights · twelve stories",
+  "beats": [
+   {"arch": "nagara", "sky": "dusk", "line": "Somnath — the Moon, freed from Daksha's curse"},
+   {"arch": "nagara", "sky": "saffron", "line": "Ujjain — Mahakal bursts from the earth"},
+   {"arch": "ghats", "sky": "dawn", "line": "Omkareshwar — Vindhya's prayer by the Narmada"},
+   {"arch": "himalaya", "sky": "snow", "line": "Kedarnath — the Pandavas seek Shiva"}]}
 }

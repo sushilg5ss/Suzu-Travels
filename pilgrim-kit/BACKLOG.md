@@ -36,14 +36,14 @@
 | 26 | todo | `mallikarjuna` | 12-JL | temple | mallikarjuna jyotirlinga (74,000) | gopuram | Also Bhramaramba Shakti Peeth |
 | 27 | todo | `mansa-devi` | hub | temple | mansa devi temple (22,200) | devi | Panchkula — disambiguate from Haridwar Mansa Devi |
 | 28 | todo | `baglamukhi` | hub | temple | baglamukhi mandir himachal (6,600) | devi | Bankhandi, Kangra |
-| 29 | todo | `hidimba-devi` | hub | temple | hidimba devi temple (165,000) | devi | Manali; pagoda temple (use devi arch, honest caption) |
+| 29 | todo | `hidimba-devi` | hub | temple | hidimba devi temple (165,000) | pagoda | Manali; pagoda temple (pagoda arch since 8 Oct, honest caption) |
 | 30 | todo | `baijnath` | hub | temple | baijnath temple (22,200) | nagara | Kangra, 13th c. |
 | 31 | todo | `kainchi-dham` | hub | temple | kainchi dham (201,000) | devi | Post 12444 owns registration — link it |
 | 32 | todo | `manimahesh-yatra` | hub | yatra | manimahesh yatra (2,900) | himalaya | Live by Jun 2027; e-pass rules |
 | 33 | todo | `panch-kedar` | hub | circuit | panch kedar (40,500) | himalaya + route-map | Tungnath highest Shiva temple |
 | 34 | todo | `jakhu-temple` | hub | temple | jakhu temple shimla (22,200) | devi | |
 | 35 | todo | `baba-balak-nath` | hub | temple | baba balak nath temple (12,100) | devi | Deotsidh, Hamirpur — near Suzu office |
-| 36 | todo | `bhimakali` | hub | temple | bhimakali temple sarahan (5,400) | devi | |
+| 36 | todo | `bhimakali` | hub | temple | bhimakali temple sarahan (5,400) | pagoda | |
 | 37 | todo | `ayodhya-ram-mandir` | hub | temple | ayodhya tour package (2,900) | nagara | Commercial terms only for single-city Ayodhya; combo owned by 10584 |
 | 38 | todo | `adi-kailash-yatra` | hub | yatra | adi kailash yatra (2,900) | himalaya | ILP; status check |
 | 39 | todo | `kailash-mansarovar-yatra` | hub | yatra | kailash mansarovar yatra (18,100) | lake | Info only (Tibet) — Suzu cannot sell |
