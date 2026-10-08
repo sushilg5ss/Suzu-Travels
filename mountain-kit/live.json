@@ -104,5 +104,14 @@
   "blurb": "First summits from 5,289 m to 6,111 m, compared",
   "added": "2026-10-07",
   "commercial": true
+ },
+ "mountaineering-courses": {
+  "id": 12560,
+  "path": "/mountains-of-india/mountaineering-courses/",
+  "kind": "guide",
+  "label": "Mountaineering courses in India",
+  "blurb": "BMC, AMC and the five government institutes, compared",
+  "added": "2026-10-08",
+  "commercial": false
  }
 }
