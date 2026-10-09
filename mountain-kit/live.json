@@ -113,5 +113,14 @@
   "blurb": "BMC, AMC and the five government institutes, compared",
   "added": "2026-10-08",
   "commercial": false
+ },
+ "mountaineering-gear-list": {
+  "id": 12660,
+  "path": "/mountains-of-india/mountaineering-gear-list/",
+  "kind": "guide",
+  "label": "Mountaineering gear list",
+  "blurb": "What the outfitter provides, what you bring, what to rent",
+  "added": "2026-10-09",
+  "commercial": true
  }
 }
