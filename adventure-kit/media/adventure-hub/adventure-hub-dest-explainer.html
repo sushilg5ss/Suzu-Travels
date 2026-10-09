@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .kick { position: absolute; left: 100px; top: 60px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 100px; top: 100px; color: #fff; font-weight: 800; font-size: 70px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 80px; top: 250px; width: 600px; height: 587px; overflow: visible; }
+      .list { position: absolute; left: 740px; top: 236px; width: 1100px; height: 780px; }
+      .row { position: absolute; left: 0; width: 1100px; height: 76px; border-bottom: 2px solid rgba(255,255,255,0.12); }
+      .num { position: absolute; left: 0; top: 12px; width: 52px; height: 52px; border-radius: 26px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 28px; line-height: 52px; text-align: center; }
+      .reg { position: absolute; left: 76px; top: 0; width: 560px; height: 76px; line-height: 76px; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .when { position: absolute; left: 630px; top: 0; width: 470px; height: 76px; line-height: 76px; color: #d4a24c; font-weight: 500; font-size: 29px; white-space: nowrap; text-align: right; }
+      .foot { position: absolute; left: 100px; top: 960px; width: 560px; color: rgba(255,255,255,0.86); font-weight: 500; font-size: 28px; line-height: 1.35; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="all" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick" id="kick">ADVENTURE BY DESTINATION</div>
+        <div class="title" id="title">Where to go, and when</div>
+        <svg class="map" id="map" viewBox="0 0 470 460">
+          <path d="M 13 165 L 45 120 L 76 82 L 115 60 L 159 22 L 204 52 L 249 52 L 300 75 L 357 105 L 376 157 L 414 202 L 440 255 L 414 307 L 344 337 L 300 375 L 281 435 L 242 435 L 191 390 L 166 352 L 121 315 L 89 300 L 57 255 L 26 217 Z" fill="#12304d" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linejoin="round" />
+          <text x="235" y="455" fill="rgba(255,255,255,0.62)" font-size="13" font-family="PJS" font-weight="500" text-anchor="middle">Himachal Pradesh · stylised, not to scale</text>
+          <g id="pins"></g>
+        </svg>
+        <div class="foot" id="foot">Tell us where you are staying; we add the activity to your hotel + cab plan.</div>
+        <div class="list" id="list"></div>
+      </div>
+    </div>
+    <script>
+      const NS = "http://www.w3.org/2000/svg";
+      const tl = gsap.timeline({ paused: true });
+      const D = [
+        ["Manali and Solang", "Oct–Jun · snow Dec–Mar", [215, 159]],
+        ["Bir and Kangra", "Oct–Nov and Mar–May", [156, 189]],
+        ["Kullu and Kasol", "Mar–Jun and Sep–Nov", [210, 205]],
+        ["Shimla–Kufri–Narkanda", "Snow Dec–Mar · rides year-round", [236, 322]],
+        ["Dharamshala–McLeodganj", "Mar–Jun and Sep–Dec", [105, 162]],
+        ["Bilaspur", "Oct–Jun", [161, 294]],
+        ["Chamba–Dalhousie–Khajjiar", "Mar–Jun and Sep–Nov", [70, 112]],
+        ["Tirthan and Jibhi", "Mar–Jun and Sep–Nov", [242, 252]],
+        ["Lahaul and Spiti", "May–Oct · winter trips Jan–Mar", [287, 112]]
+      ];
+      const pinsG = document.getElementById("pins");
+      const list = document.getElementById("list");
+      const pins = [], rings = [], rows = [];
+      D.forEach((d, i) => {
+        const p = d[2];
+        const r = document.createElementNS(NS, "circle");
+        r.setAttribute("cx", p[0]); r.setAttribute("cy", p[1]); r.setAttribute("r", 19);
+        r.setAttribute("fill", "none"); r.setAttribute("stroke", "#ffffff"); r.setAttribute("stroke-width", 3);
+        pinsG.appendChild(r); rings.push(r);
+        const g = document.createElementNS(NS, "g");
+        const c = document.createElementNS(NS, "circle");
+        c.setAttribute("cx", p[0]); c.setAttribute("cy", p[1]); c.setAttribute("r", 13);
+        c.setAttribute("fill", "#d4a24c"); c.setAttribute("stroke", "#0b1f33"); c.setAttribute("stroke-width", 2.5);
+        const t = document.createElementNS(NS, "text");
+        t.setAttribute("x", p[0]); t.setAttribute("y", p[1] + 5.5); t.setAttribute("text-anchor", "middle");
+        t.setAttribute("fill", "#0b1f33"); t.setAttribute("font-size", "15"); t.setAttribute("font-family", "PJS"); t.setAttribute("font-weight", "800");
+        t.textContent = String(i + 1);
+        g.appendChild(c); g.appendChild(t); pinsG.appendChild(g); pins.push(g);
+        const row = document.createElement("div");
+        row.className = "row"; row.style.top = (i * 82) + "px";
+        row.innerHTML = '<div class="num">' + (i + 1) + '</div><div class="reg">' + d[0] + '</div><div class="when">' + d[1] + '</div>';
+        list.appendChild(row); rows.push(row);
+      });
+      tl.fromTo("#kick", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.1);
+      tl.fromTo("#title", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+      tl.fromTo("#map", { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, 0.3);
+      tl.set(rings, { opacity: 0 }, 0);
+      tl.set(pins, { opacity: 0 }, 0);
+      tl.set(rows, { opacity: 0 }, 0);
+      tl.set("#foot", { opacity: 0 }, 0);
+      D.forEach((d, i) => {
+        const t = 0.9 + i * 0.78;
+        tl.fromTo(pins[i], { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.5)", immediateRender: false }, t);
+        tl.fromTo(rings[i], { opacity: 0, attr: { r: 12 } }, { opacity: 1, attr: { r: 22 }, duration: 0.4, ease: "power2.out", immediateRender: false }, t);
+        tl.to(rings[i], { opacity: 0, duration: 0.3 }, t + 0.7);
+        tl.fromTo(rows[i], { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out", immediateRender: false }, t);
+      });
+      tl.fromTo("#foot", { opacity: 0 }, { opacity: 1, duration: 0.5, immediateRender: false }, 8.2);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

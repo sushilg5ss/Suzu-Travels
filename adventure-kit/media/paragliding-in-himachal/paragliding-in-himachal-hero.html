@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.08) 38%, rgba(11,31,51,0.76) 54%, rgba(11,31,51,0.92) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 860px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 104px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 152px; color: #fff; font-weight: 800; font-size: 108px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 262px; color: #d4a24c; font-weight: 800; font-size: 108px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.map { position: absolute; left: 0; top: 410px; width: 470px; height: 460px; overflow: visible; }
+      .site { position: absolute; left: 500px; top: 560px; width: 360px; height: 180px; }
+      .sitewrap { position: absolute; left: 0; top: 0; width: 360px; height: 180px; }
+      .sname { position: absolute; left: 0; top: 0; width: 360px; color: #fff; font-weight: 800; font-size: 58px; line-height: 1.05; }
+      .sreg { position: absolute; left: 0; width: 360px; color: #d4a24c; font-weight: 500; font-size: 32px; }
+      .facts { position: absolute; left: 0; top: 922px; width: 860px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 860px; color: #fff; font-weight: 800; font-size: 52px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 900px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">AIR · HIMACHAL PRADESH</div>
+          <div class="t1">Paragliding</div>
+          <div class="t2">in Himachal</div>
+          <svg class="map" viewBox="0 0 470 460">
+            <path d="M 13 165 L 45 120 L 76 82 L 115 60 L 159 22 L 204 52 L 249 52 L 300 75 L 357 105 L 376 157 L 414 202 L 440 255 L 414 307 L 344 337 L 300 375 L 281 435 L 242 435 L 191 390 L 166 352 L 121 315 L 89 300 L 57 255 L 26 217 Z" fill="rgba(11,31,51,0.55)" stroke="rgba(255,255,255,0.8)" stroke-width="3" stroke-linejoin="round" />
+            <g id="legs" fill="none" stroke="#d4a24c" stroke-width="5" stroke-linecap="round"></g>
+            <g id="pins"></g>
+            <g id="glider">
+              <path d="M -24 -10 Q 0 -27 24 -10" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" />
+              <line x1="-19" y1="-11" x2="0" y2="9" stroke="#fff" stroke-width="2" />
+              <line x1="19" y1="-11" x2="0" y2="9" stroke="#fff" stroke-width="2" />
+              <circle cx="0" cy="10" r="5" fill="#d4a24c" />
+            </g>
+          </svg>
+          <div class="site">
+            <div class="sitewrap" id="w0"><div class="sname">Bir Billing</div><div class="sreg" style="top:70px">Kangra</div></div>
+            <div class="sitewrap" id="w1"><div class="sname">Manali &amp; Kullu</div><div class="sreg" style="top:132px">Solang · Dobhi · Gadsa</div></div>
+            <div class="sitewrap" id="w2"><div class="sname">Shimla</div><div class="sreg" style="top:70px">Junga</div></div>
+            <div class="sitewrap" id="w3"><div class="sname">Bandla</div><div class="sreg" style="top:70px">Bilaspur · lake landing</div></div>
+            <div class="sitewrap" id="w4"><div class="sname">Indrunag</div><div class="sreg" style="top:70px">Dharamshala</div></div>
+          </div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">5 flying areas, one trip</div>
+            <div class="fact" id="f2">Best Oct–Nov · Mar–May</div>
+            <div class="fact" id="f3">Closed 15 Jul–15 Sep</div>
+            <div class="fact" id="f4">Age 12+ · 30 kg+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const NS = "http://www.w3.org/2000/svg";
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+
+      // pins on a stylised outline: bir, manali, shimla, bandla, indrunag
+      const P = [[156, 189], [215, 159], [213, 340], [162, 292], [102, 159]];
+      const pinsG = document.getElementById("pins");
+      const dots = [], rings = [];
+      P.forEach((p, i) => {
+        const r = document.createElementNS(NS, "circle");
+        r.setAttribute("cx", p[0]); r.setAttribute("cy", p[1]); r.setAttribute("r", 15);
+        r.setAttribute("fill", "none"); r.setAttribute("stroke", "#d4a24c"); r.setAttribute("stroke-width", 3);
+        pinsG.appendChild(r); rings.push(r);
+        const d = document.createElementNS(NS, "circle");
+        d.setAttribute("cx", p[0]); d.setAttribute("cy", p[1]); d.setAttribute("r", 10);
+        d.setAttribute("fill", i === 0 ? "#d4a24c" : "#ffffff"); d.setAttribute("stroke", "#0b1f33"); d.setAttribute("stroke-width", 3);
+        pinsG.appendChild(d); dots.push(d);
+      });
+      const order = [0, 1, 2, 3, 4, 0];
+      const legsG = document.getElementById("legs");
+      const legs = [];
+      for (let k = 0; k < 5; k++) {
+        const a = P[order[k]], b = P[order[k + 1]];
+        const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
+        const dx = b[0] - a[0], dy = b[1] - a[1], len = Math.hypot(dx, dy);
+        const cx = mx - (dy / len) * 34, cy = my + (dx / len) * 34 - 20;
+        const p = document.createElementNS(NS, "path");
+        p.setAttribute("d", "M " + a[0] + " " + a[1] + " Q " + cx.toFixed(1) + " " + cy.toFixed(1) + " " + b[0] + " " + b[1]);
+        legsG.appendChild(p);
+        const L = p.getTotalLength();
+        p.style.strokeDasharray = L + " " + L; p.style.strokeDashoffset = String(L);
+        legs.push({ p: p, L: L });
+      }
+      const glider = document.getElementById("glider");
+      function put(k, t) {
+        const pt = legs[k].p.getPointAtLength(legs[k].L * t);
+        glider.setAttribute("transform", "translate(" + pt.x.toFixed(2) + "," + (pt.y - 22).toFixed(2) + ")");
+      }
+      put(0, 0);
+      const starts = [0.6, 2.8, 5.0, 7.2, 9.4];
+      const durs = [1.8, 1.8, 1.8, 1.8, 1.2];
+      legs.forEach((lg, k) => {
+        const st = { t: 0 };
+        tl.fromTo(st, { t: 0 }, { t: 1, duration: durs[k], ease: "sine.inOut", immediateRender: false,
+          onUpdate: () => { put(k, st.t); lg.p.style.strokeDashoffset = String(lg.L * (1 - st.t)); } }, starts[k]);
+      });
+      tl.set([rings[1], rings[2], rings[3], rings[4]], { opacity: 0 }, 0);
+      const arrive = [2.4, 4.6, 6.8, 9.0];
+      [1, 2, 3, 4].forEach((i, k) => {
+        tl.to(dots[i], { attr: { fill: "#d4a24c" }, duration: 0.25 }, arrive[k]);
+        tl.fromTo(rings[i], { opacity: 0, attr: { r: 8 } }, { opacity: 1, attr: { r: 15 }, duration: 0.4, ease: "back.out(3)", immediateRender: false }, arrive[k]);
+      });
+      tl.to([dots[1], dots[2], dots[3], dots[4]], { attr: { fill: "#ffffff" }, duration: 0.6 }, 10.9);
+      tl.to([rings[1], rings[2], rings[3], rings[4]], { opacity: 0, duration: 0.6 }, 10.9);
+      tl.to(legs.map(l => l.p), { opacity: 0, duration: 0.6 }, 10.9);
+
+      tl.set(["#w1", "#w2", "#w3", "#w4"], { opacity: 0 }, 0);
+      const lab = [["#w0", "#w1", 2.3], ["#w1", "#w2", 4.5], ["#w2", "#w3", 6.7], ["#w3", "#w4", 8.9], ["#w4", "#w0", 10.5]];
+      lab.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, x: -16, duration: 0.3, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, t + 0.3);
+      });
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
