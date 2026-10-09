@@ -139,11 +139,13 @@ Valid photo ID (needed for Vaishno Devi registration) · light bag; the Shrine B
 | 14 | "Madurai Meenakshi is a Shakti Peeth." | It is not in the compiled 51 or 18 tables. It is a great Devi temple, not a peetha. | [Wikipedia: Shakta pithas](https://en.wikipedia.org/wiki/Shakta_pithas) |
 | 15 | "Kamakhya closes during Navratri." | It closes for **Ambubachi** in June (23–25 Jun 2026), not during Navratri. | [maakamakhya.org](https://maakamakhya.org/) |
 | 16 | Official-looking timing tables on the HP temples portal | The Jwalamukhi page on kangratemples.hp.gov.in contains aarti text copied from the Vaishno Devi site ("cave maintenance"). Treat its timings as indicative, and cross-check with the district page (05:00–22:00). | [kangratemples.hp.gov.in](https://kangratemples.hp.gov.in/); [hpkangra.nic.in](https://hpkangra.nic.in/tourist-place/shri-jawalamukhi-mata-temple/) |
+| 17 | "Cross Banganga within 6 hours of the RFID card" stated as settled. | Reports conflict since Dec 2025: Shrine Board page / ETV Bharat (23 Dec 2025) say 6 h; Dainik Jagran English (24 Dec 2025) says start within 10 h and return to Katra within 24 h. Say "within the time limit on your card; check maavaishnodevi.org". (added 2026-10-09) | [ETV Bharat](https://www.etvbharat.com/en/bharat/vaishno-devi-shrine-board-updates-yatra-registration-guidelines-ahead-of-new-year-rush-enn25122305434); [Dainik Jagran English](https://www.thedailyjagran.com/india/vaishno-devi-new-rules-begin-yatra-within-10-hours-of-obtaining-rfid-card-return-within-24-hours-check-guidelines-10288132) |
+| 18 | "Naina Devi is open 5 am – 9 pm" (Incredible India) or "4 am – 10 am" (utsav.gov.in typo). | The trust's official site srinainadevi.com: 04:00–22:00 on normal days, 02:00–24:00 in Navratri. nainadevi.com is NOT the trust's site. (added 2026-10-09) | [srinainadevi.com](https://srinainadevi.com/) |
 
 ---
 
 ## 7. Still unverified (write `null` / "check locally" on site)
-- Naina Devi: aarti times, cable car length/fare/hours, Shravan Ashtami 2026/27 dates, official trust website.
+- Naina Devi: aarti times, cable car length/fare/hours, Shravan Ashtami 2026/27 dates. (Official trust website found 2026-10-09: https://srinainadevi.com/.)
 - Chintpurni: darshan hours and aarti clock times (the official site publishes neither), Sugam Darshan fee.
 - Chamunda and Baglamukhi: only "generally" hours from the district site. Baglamukhi coordinates.
 - Vaishno Devi: helicopter fares and slots, the Sanjichhat–Bhawan walking distance, and whether the phone ban on the track is enforced today.

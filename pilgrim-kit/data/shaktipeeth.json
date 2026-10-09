@@ -28,11 +28,18 @@
       "Raja Bir Chand builds her temple"
     ],
     "darshan": {
-      "open": "05:00-21:00",
+      "open": {
+        "normal": "04:00-22:00",
+        "navratri": "02:00-24:00"
+      },
       "aarti": null,
-      "note": "Opening hours per Incredible India; aarti times not published on any official page found. Hours extend during melas.",
-      "as_of": "2026-10-08",
-      "source": "https://www.incredibleindia.gov.in/en/himachal-pradesh/bilaspur/shree-naina-devi-temple"
+      "note": "Hours per the temple trust's official site srinainadevi.com (homepage footer, General Information; also utsav.gov.in). Incredible India gives 05:00-21:00 (older). Aarti clock times are not published by the trust - confirm locally. Trust helpline 1800 180 80 69 (toll-free 24x7), 01978-288048, WhatsApp 98052 52008.",
+      "as_of": "2026-10-09",
+      "source": [
+        "https://srinainadevi.com/",
+        "https://srinainadevi.com/general-information/",
+        "https://utsav.gov.in/view-darshan/shri-naina-devi-ji-temple-bilaspur-1"
+      ]
     },
     "festivals": [
       {
@@ -93,7 +100,7 @@
       "Anandpur Sahib",
       "Naina Devi Wildlife Sanctuary"
     ],
-    "official_site": null,
+    "official_site": "https://srinainadevi.com/",
     "sources": [
       "https://hpbilaspur.nic.in/tourist-place/sri-naina-devi-ji/",
       "https://www.incredibleindia.gov.in/en/himachal-pradesh/bilaspur/shree-naina-devi-temple",
@@ -123,7 +130,7 @@
       "Aarti timings",
       "Ropeway length/fare/hours",
       "Shravan Ashtami 2026/27 dates",
-      "Official trust website"
+      "Official trust website - FOUND 2026-10-09: srinainadevi.com (online donation, accommodation, langar permission)"
     ],
     "as_of": "2026-10-08"
   },
@@ -720,7 +727,7 @@
       "air": "Jammu airport; Jammu-Katra ~50 km (Shrine Board), ~2 h by bus",
       "rail": "Shri Mata Vaishno Devi Katra station (Jammu-Udhampur-Katra line per Shrine Board)",
       "road": "Katra-Bhawan trek ~12 km (Wikipedia); Chamunda Devi-Katra ~241 km, Katra-Delhi ~649 km (OSRM)",
-      "registration": "Mandatory free RFID Yatra Access Card - Yatra Registration Counter near Katra bus stand (YRC-II on Udhampur road) or online at online.maavaishnodevi.org; cross Banganga checkpost within 6 hours of issue; one card per pilgrim.",
+      "registration": "Mandatory free RFID Yatra Access Card - Yatra Registration Counter near Katra bus stand (YRC-II on Udhampur road) or online at online.maavaishnodevi.org; cross Banganga checkpost within the time limit after issue (Shrine Board page and ETV Bharat 23 Dec 2025 say 6 hours; Dainik Jagran English 24 Dec 2025 reports a new rule of starting within 10 hours and returning to Katra within 24 hours after darshan - conflicting, check maavaishnodevi.org before travel; as_of 2026-10-09); one card per pilgrim. Daily cap ~30,000-35,000; registration pauses in rush (ETV Bharat 23 Dec 2025).",
       "helicopter": "Shrine Board helipads at Katra, Sanjichhat and Panchi; Katra-Sanjichhat shuttle bookable via official online portal (fares not verified)",
       "battery_car": "Battery vehicles on Bhawan-Himkoti-Ardhkuwari route, with quotas for senior citizens and the disabled (Wikipedia)",
       "ropeway": "Bhawan-Bhairon ropeway operating 09:00-17:00 (Shrine Board)",
@@ -749,7 +756,7 @@
     "faqs": [
       {
         "q": "Is RFID card mandatory for Vaishno Devi?",
-        "a": "Yes. It is free, issued at Katra counters or online, and you must cross Banganga checkpost within 6 hours."
+        "a": "Yes. It is free, issued at Katra counters or online, and you must start the yatra within the Shrine Board's time limit (6 hours per its registration page; Dec 2025 reports say 10 hours) - check maavaishnodevi.org."
       },
       {
         "q": "Is Vaishno Devi one of the 51 Shakti Peeths?",
@@ -765,7 +772,8 @@
       }
     ],
     "unverified": [
-      "Helicopter fares/timings",
+      "RFID start-time limit: 6 h (SMVDSB page, ETV Bharat 23 Dec 2025) vs 10 h start / 24 h return (Dainik Jagran English 24 Dec 2025) - unresolved 2026-10-09",
+   "Helicopter fares/timings",
       "Sanjichhat-Bhawan walking distance",
       "Battery car fares"
     ],
