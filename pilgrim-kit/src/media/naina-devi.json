@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "dawn",
+  "deva": "श्री नैना देवी जी",
+  "kicker": "Shakti Peeth · Bilaspur, Himachal",
+  "beats": [
+   "Sati's eyes fall on Shivalik hill",
+   "A cow showers milk on a stone",
+   "Devi's pindi revealed in a dream",
+   "Shrine above Gobind Sagar lake"
+  ]
+ },
+ "story": {
+  "title": "The legend of Naina Devi",
+  "beats": [
+   {"arch": "devi", "sky": "saffron", "line": "Sati gives up her body at Daksha's yagna"},
+   {"arch": "pillar", "sky": "night", "line": "Vishnu's chakra divides her — her eyes fall here"},
+   {"arch": "devi", "sky": "dawn", "line": "A cowherd's cow pours its milk on a stone"},
+   {"arch": "devi", "sky": "dusk", "line": "A hilltop shrine rises above the lake"}
+  ]
+ }
+}

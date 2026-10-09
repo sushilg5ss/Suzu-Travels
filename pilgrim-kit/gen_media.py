@@ -536,7 +536,7 @@ def story_strip(slug):
         else:
             js.append(f'tl.set("#c{i}",{{opacity:0}},0);tl.to("#c{i}",{{opacity:1,duration:.5}},{a + .35:.2f});tl.to("#c{i}",{{opacity:0,duration:.4}},{(i + 1) * seg - .1 if i < n - 1 else dur - .6:.2f});')
     css = SHADE + ('.cap{position:absolute;right:120px;top:300px;width:820px;text-align:right}'
-                   '.cp{position:absolute;right:0;top:0;width:820px;opacity:0;font:700 62px/1.15 "CG",serif;color:#fff7e6;text-shadow:0 6px 30px rgba(0,0,0,.6)}'
+                   '.cp{position:absolute;right:0;top:0;width:820px;opacity:0;text-wrap:balance;font:700 62px/1.15 "CG",serif;color:#fff7e6;text-shadow:0 6px 30px rgba(0,0,0,.6)}'
                    '.cp span{display:block;font:800 22px "SZ",sans-serif;letter-spacing:.24em;color:#f2c14e;margin-bottom:14px}')
     (d / "index.html").write_text(wrap(name, dur, "\n".join(body), css, "".join(js)), encoding="utf-8")
     return d

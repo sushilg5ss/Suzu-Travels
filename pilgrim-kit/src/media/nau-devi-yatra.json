@@ -1,0 +1,90 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "dusk",
+  "deva": "नौ देवी यात्रा",
+  "kicker": "Nine Devis · Himachal to Jammu",
+  "beats": [
+   "Seven sister goddesses of the hills",
+   "Nine nights, nine shrines of Shakti",
+   "From Shivalik hilltops to Kangra valley",
+   "Ending at Trikuta with Mata Vaishno"
+  ]
+ },
+ "route": {
+  "title": "Nau Devi Yatra",
+  "sub": "9 Devis · about 9 days",
+  "bounds": [
+   74.5,
+   78.1,
+   29.9,
+   33.7
+  ],
+  "dur": 15,
+  "stops": [
+   {
+    "name": "Shakumbhari Devi",
+    "deva": "शाकुंभरी देवी",
+    "state": "Saharanpur, UP",
+    "lat": 30.2566,
+    "lon": 77.7425
+   },
+   {
+    "name": "Mansa Devi",
+    "deva": "मनसा देवी",
+    "state": "Panchkula, Haryana",
+    "lat": 30.7653,
+    "lon": 76.8269
+   },
+   {
+    "name": "Kali Mata",
+    "deva": "काली माता",
+    "state": "Kalka, Haryana",
+    "lat": 30.83,
+    "lon": 76.93
+   },
+   {
+    "name": "Naina Devi",
+    "deva": "नैना देवी",
+    "state": "Bilaspur, HP",
+    "lat": 31.306,
+    "lon": 76.5364
+   },
+   {
+    "name": "Chintpurni",
+    "deva": "चिंतपूर्णी",
+    "state": "Una, HP",
+    "lat": 31.80862,
+    "lon": 76.10287
+   },
+   {
+    "name": "Jwala Ji",
+    "deva": "ज्वाला जी",
+    "state": "Kangra, HP",
+    "lat": 31.8752,
+    "lon": 76.3243
+   },
+   {
+    "name": "Brajeshwari",
+    "deva": "ब्रजेश्वरी",
+    "state": "Kangra, HP",
+    "lat": 32.10183,
+    "lon": 76.26987
+   },
+   {
+    "name": "Chamunda",
+    "deva": "चामुंडा",
+    "state": "Kangra, HP",
+    "lat": 32.1483,
+    "lon": 76.4192
+   },
+   {
+    "name": "Vaishno Devi",
+    "deva": "वैष्णो देवी",
+    "state": "Katra, J&K",
+    "lat": 33.0299,
+    "lon": 74.9482
+   }
+  ]
+ }
+}
