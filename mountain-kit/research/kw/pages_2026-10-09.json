@@ -1,0 +1,282 @@
+{
+ "_meta": {
+  "source": "Google Ads Keyword Planner via Pipeboard (get_google_ads_keyword_ideas), customer 1172710099, English, Google Search, last-12-month averages Sep 2025\u2013Aug 2026 (banded). null = not pulled/returned for that geo.",
+  "pulled": "2026-10-09",
+  "geos": {
+   "ww": "all locations",
+   "in": "India",
+   "intl6": "US+GB+AU+IL+DE+FR"
+  }
+ },
+ "altitude-sickness": {
+  "altitude sickness": {
+   "ww": 60500,
+   "in": 3600,
+   "intl6": 40500,
+   "ads_competition": "LOW"
+  },
+  "high altitude sickness": {
+   "ww": 8100,
+   "in": 1900,
+   "intl6": 2900,
+   "ads_competition": "LOW"
+  },
+  "acute mountain sickness": {
+   "ww": 6600,
+   "in": 1600,
+   "intl6": 3600,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness symptoms": {
+   "ww": 27100,
+   "in": 720,
+   "intl6": 22200,
+   "ads_competition": "LOW"
+  },
+  "how to prevent altitude sickness": {
+   "ww": 5400,
+   "in": 110,
+   "intl6": 4400,
+   "ads_competition": "LOW"
+  },
+  "how to avoid altitude sickness": {
+   "ww": 1900,
+   "in": 70,
+   "intl6": 1600,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness prevention": {
+   "ww": 2400,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness treatment": {
+   "ww": 4400,
+   "in": 210,
+   "intl6": 3600,
+   "ads_competition": "LOW"
+  },
+  "ams symptoms": {
+   "ww": 1900,
+   "in": 720,
+   "intl6": 720,
+   "ads_competition": "LOW"
+  },
+  "hape symptoms": {
+   "ww": 880,
+   "in": 90,
+   "intl6": 590,
+   "ads_competition": "LOW"
+  },
+  "hace symptoms": {
+   "ww": 590,
+   "in": 70,
+   "intl6": 390,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness height": {
+   "ww": 880,
+   "in": 30,
+   "intl6": 480,
+   "ads_competition": "LOW"
+  },
+  "acclimatization high altitude": {
+   "ww": 480,
+   "in": 170,
+   "intl6": 170,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness ladakh": {
+   "ww": 40,
+   "in": 20,
+   "intl6": 10,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness medication": {
+   "ww": 22200,
+   "in": 1600,
+   "intl6": 14800,
+   "ads_competition": "LOW"
+  },
+  "altitude sickness tablets": {
+   "ww": 4400,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "oxygen for altitude sickness": {
+   "ww": 1000,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "MEDIUM"
+  }
+ },
+ "expedition-camping": {
+  "expedition camping": {
+   "ww": 260,
+   "in": 10,
+   "intl6": 140,
+   "ads_competition": "HIGH"
+  },
+  "base camp meaning": {
+   "ww": 880,
+   "in": 210,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "what is base camp": {
+   "ww": 2400,
+   "in": 210,
+   "intl6": null,
+   "ads_competition": "LOW (mixed with Basecamp software)"
+  },
+  "basecamp definition": {
+   "ww": 590,
+   "in": 90,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "high camp": {
+   "ww": 5400,
+   "in": 40,
+   "intl6": 3600,
+   "ads_competition": "LOW (mostly the High Camp flask brand)"
+  },
+  "base camp mountaineering": {
+   "ww": 30,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "mountaineering camps": {
+   "ww": 50,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "high altitude camping": {
+   "ww": 50,
+   "in": 10,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "camping at high altitude": {
+   "ww": 10,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "sleeping bag temperature rating": {
+   "ww": 880,
+   "in": 20,
+   "intl6": 720,
+   "ads_competition": "MEDIUM"
+  },
+  "how to stay warm in a tent": {
+   "ww": 880,
+   "in": 10,
+   "intl6": 720,
+   "ads_competition": "HIGH"
+  },
+  "leave no trace principles": {
+   "ww": 6600,
+   "in": 110,
+   "intl6": 3600,
+   "ads_competition": "LOW"
+  },
+  "leave no trace": {
+   "ww": 60500,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "winter camping tips": {
+   "ww": 320,
+   "in": 10,
+   "intl6": 210,
+   "ads_competition": "MEDIUM"
+  },
+  "mountaineering tent": {
+   "ww": 2400,
+   "in": 170,
+   "intl6": 1600,
+   "ads_competition": "HIGH"
+  },
+  "expedition tent": {
+   "ww": 880,
+   "in": 20,
+   "intl6": 480,
+   "ads_competition": "HIGH"
+  },
+  "4 season tent": {
+   "ww": 8100,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "HIGH"
+  },
+  "camping in himachal": {
+   "ww": 390,
+   "in": 390,
+   "intl6": 10,
+   "ads_competition": "LOW"
+  },
+  "camping in manali": {
+   "ww": 1000,
+   "in": 880,
+   "intl6": 10,
+   "ads_competition": "MEDIUM"
+  }
+ },
+ "first-6000m-peak": {
+  "easiest 6000m peak": {
+   "ww": 210,
+   "in": 20,
+   "intl6": 90,
+   "ads_competition": "LOW"
+  },
+  "mountaineering for beginners": {
+   "ww": 590,
+   "in": 20,
+   "intl6": 390,
+   "ads_competition": "LOW"
+  },
+  "how to start mountaineering": {
+   "ww": 480,
+   "in": 50,
+   "intl6": 260,
+   "ads_competition": "LOW"
+  },
+  "how to train for mountaineering": {
+   "ww": 170,
+   "in": 10,
+   "intl6": 110,
+   "ads_competition": "LOW"
+  },
+  "beginner mountaineering course": {
+   "ww": 210,
+   "in": 20,
+   "intl6": 140,
+   "ads_competition": "LOW"
+  },
+  "fitness for mountaineering": {
+   "ww": 90,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "training for high altitude climbing": {
+   "ww": 20,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW"
+  },
+  "mountain fitness": {
+   "ww": 5400,
+   "in": null,
+   "intl6": null,
+   "ads_competition": "LOW (gym brands)"
+  },
+  "first 6000m peak / first 6000er / 6000m peaks for beginners / easiest 6000m peak in india / how to climb a 6000 meter mountain": "no volume returned (2026-10-09)"
+ }
+}
