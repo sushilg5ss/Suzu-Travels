@@ -20,7 +20,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 7 | [x] delhi-to-mussoorie-taxi — LIVE 2026-10-06 https://suzutravels.com/cabs/delhi-to-mussoorie-taxi/ (ID 12377) | delhi to mussoorie taxi | 3,100 | Via Dehradun; Kempty, Dhanaulti add-ons |
 | 8 | [x] srinagar-taxi-service — LIVE 2026-10-07 https://suzutravels.com/cabs/srinagar-taxi-service/ (ID 12418) | srinagar taxi service | 5,400 (+ srinagar to gulmarg taxi fare 1,000, to pahalgam 720) | NEW 1 Oct. Gulmarg/Pahalgam/Sonamarg = local union taxis (say so); links Jammu→Srinagar page |
 | 9 | [x] shimla-to-manali-taxi — LIVE 2026-10-08 https://suzutravels.com/cabs/shimla-to-manali-taxi/ (ID 12485) | shimla to manali taxi | 2,500 | Via Mandi/Kullu, Pandoh dam; Kufri/Narkanda option |
-| 10 | [ ] haridwar-taxi-service | taxi service in haridwar | 4,400 (+ haridwar to rishikesh cab 720, to badrinath fare 880) | NEW 1 Oct. Local + Char Dham drops; links Delhi→Haridwar page |
+| 10 | [x] haridwar-taxi-service — LIVE 2026-10-09 https://suzutravels.com/cabs/haridwar-taxi-service/ (ID 12633) | taxi service in haridwar | 4,400 (+ haridwar to rishikesh cab 720, to badrinath fare 880) | NEW 1 Oct. Local + Char Dham drops; links Delhi→Haridwar page |
 | 11 | [ ] outstation-cab-delhi | outstation cab delhi | 4,300 (cluster) | City/service page: every outstation route from Delhi with fares table |
 | 12 | [ ] amritsar-taxi-service | amritsar taxi service | 4,400 (+ car hire in amritsar 2,900) | NEW 1 Oct. Golden Temple/Wagah locals, drops to Dharamshala (260), Dalhousie, Jammu |
 | 13 | [ ] delhi-to-nainital-taxi | delhi to nainital taxi | 2,000 | Kathgodam/Haldwani pickups, Bhimtal/Mukteshwar |
