@@ -1,0 +1,123 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c"></canvas>
+<script>
+// Suzu "Bharat Darshan" hero film compositor — 2.5D depth parallax, mist, light, particles, cloud transitions.
+const P = new URLSearchParams(location.search);
+const W = +(P.get('w')||1600), H = +(P.get('h')||900);
+const SCENE = 6.0, TR = 1.1;
+// fx: 0 none,1 snow,2 warm motes,3 sparkle ; water:[y0,y1,x0,x1] in image uv (y down) ; sun: [x,y] ; move: [dx,dy,zoomFrom,zoomTo] ; fog color ; focus x for portrait
+const S = [
+ {n:'himachal',   fx:1, snow:0.95, water:[0,0,0,0],          sun:[0.55,-0.15], warm:0.04, move:[ 0.022, 0.004,1.05,1.16], fog:[0.86,0.90,0.96], fogAmt:0.28, fx2:0.50, lights:0},
+ {n:'spiti',      fx:1, snow:0.70, water:[0,0,0,0],          sun:[0.25,-0.1], warm:0.0, move:[ 0.030, 0.006,1.16,1.06], fog:[0.80,0.86,0.95], fogAmt:0.55, fx2:0.72, lights:0},
+ {n:'kasol',      fx:2, snow:0.0, water:[0.62,0.98,0.30,0.75], sun:[0.50,0.08], warm:0.14, move:[-0.028, 0.000,1.15,1.06], fog:[0.86,0.93,0.90], fogAmt:0.50, fx2:0.50, lights:0},
+ {n:'kashmir',    fx:1, snow:0.55, water:[0,0,0,0],          sun:[0.78,-0.15], warm:0.06, move:[ 0.030, 0.002,1.05,1.17], fog:[0.84,0.88,0.95], fogAmt:0.35, fx2:0.34, lights:0},
+ {n:'ladakh',     fx:0, snow:0.0, water:[0.44,0.76,0.28,1.0],sun:[0.50,-0.1], warm:0.05, move:[-0.026,-0.004,1.14,1.06], fog:[0.86,0.90,0.97], fogAmt:0.25, fx2:0.26, lights:0},
+ {n:'sikkim',     fx:2, snow:0.0, water:[0,0,0,0],          sun:[0.50,-0.30], warm:0.16, move:[ 0.000, 0.014,1.04,1.17], fog:[1.00,0.86,0.78], fogAmt:0.35, fx2:0.55, lights:0},
+ {n:'uttarakhand',fx:1, snow:0.25,water:[0,0,0,0],          sun:[0.85,-0.1], warm:0.05, move:[ 0.000, 0.028,1.08,1.16], fog:[0.86,0.88,0.94], fogAmt:0.45, fx2:0.40, lights:0},
+ {n:'rajasthan',  fx:2, snow:0.0, water:[0.80,1.0,0.0,1.0], sun:[0.10,0.05], warm:0.35, move:[-0.026, 0.004,1.16,1.07], fog:[1.00,0.86,0.66], fogAmt:0.30, fx2:0.45, lights:0},
+ {n:'goa',        fx:2, snow:0.0, water:[0.42,0.66,0.0,1.0], sun:[0.40,0.30], warm:0.30, move:[ 0.000, 0.000,1.06,1.17], fog:[1.00,0.80,0.78], fogAmt:0.25, fx2:0.52, lights:0},
+ {n:'kerala',     fx:2, snow:0.0, water:[0.55,1.0,0.0,0.70], sun:[0.20,0.22], warm:0.35, move:[-0.028, 0.004,1.15,1.06], fog:[1.00,0.80,0.60], fogAmt:0.35, fx2:0.62, lights:1},
+ {n:'andaman',    fx:3, snow:0.0, water:[0.42,0.70,0.0,0.85],sun:[0.85,-0.1], warm:0.10, move:[ 0.026, 0.000,1.08,1.16], fog:[0.90,0.96,1.00], fogAmt:0.20, fx2:0.60, lights:0},
+];
+const TOTAL = S.length*SCENE;
+const cv=document.getElementById('c'); cv.width=W; cv.height=H;
+const gl=cv.getContext('webgl',{preserveDrawingBuffer:true,antialias:false});
+const vs=`attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}`;
+const fs=`precision highp float;varying vec2 v;
+uniform sampler2D A,Ad,B,Bd; uniform vec2 res,aspA,aspB; uniform float t,mixp;
+uniform vec4 mA,mB,wA,wB; uniform vec3 fogA,fogB; uniform vec4 pA,pB; uniform vec4 qA,qB; // p: fx,snow,warm,fogAmt  q: sunx,suny,focusx,lights
+uniform float lt_A, lt_B;
+float h21(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+float nz(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h21(i),h21(i+vec2(1,0)),f.x),mix(h21(i+vec2(0,1)),h21(i+vec2(1,1)),f.x),f.y);}
+float fbm(vec2 p){float s=0.,a=.5;for(int i=0;i<4;i++){s+=a*nz(p);p=p*2.03+vec2(1.7,9.2);a*=.5;}return s;}
+// cover-fit uv of screen into image with focus x, zoom and pan
+vec2 cover(vec2 uv, vec2 asp, float zoom, vec2 pan, float fx){
+  float sa=res.x/res.y, ia=asp.x/asp.y; vec2 s=vec2(1.); if(sa>ia){s.y=ia/sa;}else{s.x=sa/ia;}
+  vec2 c=vec2(mix(.5,fx,step(sa,ia)),.5);
+  float hx=s.x/zoom*.5, hy=s.y/zoom*.5; c=vec2(clamp(c.x+pan.x,hx,1.-hx),clamp(c.y+pan.y,hy,1.-hy));
+  return (uv-.5)*s/zoom + c;}
+vec3 scene(sampler2D T, sampler2D D, vec2 asp, vec4 m, vec4 w, vec3 fogc, vec4 p, vec4 q, float lt){
+  float k=clamp(lt/${SCENE.toFixed(1)},-.25,1.25); float e=k*k*(3.-2.*k);
+  float zoom=mix(m.z,m.w,e);
+  vec2 uv=vec2(v.x,1.-v.y);
+  vec2 cam=vec2(m.x,m.y)*(e-.5);
+  vec2 base=cover(uv,asp,zoom,vec2(0.),q.z);
+  // parallax: refine depth lookup
+  vec2 off=cam*vec2(1.,asp.x/asp.y);
+  float d=texture2D(D,base).r; vec2 st=base-off*(d-.35);
+  d=texture2D(D,st).r; st=base-off*(d-.35); d=texture2D(D,st).r; st=base-off*(d-.35);
+  // water shimmer
+  float inW=step(w.x,st.y)*step(st.y,w.y)*step(w.z,st.x)*step(st.x,w.w)*step(.001,w.y-w.x);
+  float rip=sin(st.y*260.+lt*3.2+sin(st.x*40.+lt)*2.)*.0011+ (fbm(vec2(st.x*30.,st.y*90.-lt*.6))-.5)*.0022;
+  st.x+=rip*inW*smoothstep(w.x,w.x+.06,st.y); st=clamp(st,vec2(.002),vec2(.998));
+  vec3 col=texture2D(T,st).rgb; d=texture2D(D,st).r;
+  // twinkling warm lights
+  float lum=dot(col,vec3(.3,.59,.11));
+  if(q.w>.5){float wl=smoothstep(.62,.9,lum)*step(col.b*1.25,col.r); col*=1.+wl*(.10*sin(lt*6.+h21(floor(st*180.))*30.));}
+  if(inW>.5){float gl=smoothstep(.72,.95,lum); col+=gl*.18*pow(nz(st*vec2(140.,520.)+vec2(lt*2.,0.)),6.)*4.;}
+  // drifting mist hugging the far distance
+  float far=pow(1.-d,1.6);
+  float mist=fbm(vec2(st.x*3.+lt*.05,st.y*7.-lt*.02)+ k*.3);
+  col=mix(col,fogc,clamp(far*p.w*(.35+.65*mist),0.,.85)*.55);
+  // god rays / light sweep from the sun
+  vec2 sp=vec2(q.x,q.y); vec2 dv=uv-sp; float ang=atan(dv.y,dv.x); float dist=length(dv);
+  float rays=(fbm(vec2(ang*7.,lt*.15))*.8+.2)*exp(-dist*1.8);
+  col+=vec3(1.,.93,.78)*rays*(.16+.25*p.z)*smoothstep(.0,.6,1.-dist)*(.6+.4*far);
+  // warm grade
+  col=mix(col,col*vec3(1.08,1.0,.9),p.z);
+  return col;}
+float snow(vec2 uv,float lt,float amt){
+  float s=0.; for(int L=0;L<3;L++){float fl=float(L); float sc=8.+fl*9.; vec2 g=uv*vec2(sc*res.x/res.y,sc);
+    g.y+=lt*(1.2+fl*.7); g.x+=sin(lt*.7+fl*2.+g.y*.3)*.4;
+    vec2 id=floor(g),f=fract(g)-.5; float r=h21(id+fl*7.); if(r>.55){vec2 o=vec2(h21(id+3.1),h21(id+5.7))-.5; float sz=(.05+.10*(2.-fl)/2.)*(.7+.6*h21(id+9.));
+    s+=smoothstep(sz,sz*.25,length(f-o*.6))*(.55+.45*(2.-fl)/2.);}}
+  return s*amt;}
+float motes(vec2 uv,float lt){float s=0.; for(int L=0;L<2;L++){float fl=float(L);float sc=4.+fl*5.;vec2 g=uv*vec2(sc*res.x/res.y,sc);g.y-=lt*(.12+fl*.1);g.x+=sin(lt*.4+g.y)*.3;
+  vec2 id=floor(g),f=fract(g)-.5; float r=h21(id+fl*3.); if(r>.86){vec2 o=vec2(h21(id+1.3),h21(id+2.9))-.5; float tw=.5+.5*sin(lt*1.6+r*40.); s+=smoothstep(.11,.0,length(f-o*.6))*tw*.8;}} return s;}
+void main(){
+  vec2 uv=vec2(v.x,1.-v.y);
+  vec3 a=scene(A,Ad,aspA,mA,wA,fogA,pA,qA,lt_A);
+  float sA=pA.x==1.?snow(uv,lt_A,pA.y):0.; float mAo=pA.x>=2.?motes(uv,lt_A):0.;
+  a+=sA*vec3(.95,.97,1.); a+=mAo*vec3(1.,.85,.55)*(pA.x==3.?.45:.6);
+  vec3 col=a;
+  if(mixp>0.){
+    vec3 b=scene(B,Bd,aspB,mB,wB,fogB,pB,qB,lt_B);
+    float sB=pB.x==1.?snow(uv,lt_B,pB.y):0.; float mBo=pB.x>=2.?motes(uv,lt_B):0.;
+    b+=sB*vec3(.95,.97,1.); b+=mBo*vec3(1.,.85,.55)*(pB.x==3.?.45:.6);
+    float n=fbm(uv*vec2(3.2*res.x/res.y,3.2)+vec2(t*.15,0.));
+    float e=mixp; float th=smoothstep(e-.18,e+.18, n*.75+ (1.-uv.y)*.15+ .05);
+    float m=1.-th; m=smoothstep(.0,1.,clamp((e*1.25-.1)-(n*.7+(1.-uv.y)*.2)+.25,0.,1.)*1.6);
+    col=mix(a,b,clamp(m,0.,1.));
+    float cloud=sin(3.14159*e); float cn=fbm(uv*vec2(2.2*res.x/res.y,2.2)+vec2(-t*.25,t*.05));
+    col=mix(col,vec3(.97,.98,1.),clamp(cloud*(cn*1.3-.15),0.,.92));
+  }
+  // vignette
+  vec2 q2=uv-.5; col*=1.-dot(q2,q2)*.55;
+  gl_FragColor=vec4(pow(col,vec3(1.)),1.);
+}`;
+function sh(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(s));return s}
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(pr);gl.useProgram(pr);
+const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+const loc=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+const U=n=>gl.getUniformLocation(pr,n);
+function tex(img){const t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);return t}
+const load=src=>new Promise((r,j)=>{const i=new Image();i.onload=()=>r(i);i.onerror=j;i.src=src});
+window.ready=(async()=>{for(const s of S){const [i,d]=await Promise.all([load('tex/'+s.n+'.jpg'),load('tex/'+s.n+'_d.png')]);s.t=tex(i);s.d=tex(d);s.asp=[i.width,i.height]}return true})();
+function bindScene(slot,s,pre){
+  const ti=slot*2; gl.activeTexture(gl.TEXTURE0+ti);gl.bindTexture(gl.TEXTURE_2D,s.t);gl.uniform1i(U(pre),ti);
+  gl.activeTexture(gl.TEXTURE0+ti+1);gl.bindTexture(gl.TEXTURE_2D,s.d);gl.uniform1i(U(pre+'d'),ti+1);
+  gl.uniform2f(U('asp'+pre),s.asp[0],s.asp[1]);gl.uniform4f(U('m'+pre),...s.move);gl.uniform4f(U('w'+pre),...s.water);
+  gl.uniform3f(U('fog'+pre),...s.fog);gl.uniform4f(U('p'+pre),s.fx,s.snow,s.warm,s.fogAmt);
+  gl.uniform4f(U('q'+pre),s.sun[0],s.sun[1],(P.get('portrait')?s.fx2:.5),s.lights);}
+window.renderAt=function(t){
+  t=((t%TOTAL)+TOTAL)%TOTAL; const i=Math.floor(t/SCENE), lt=t-i*SCENE; const a=S[i], b=S[(i+1)%S.length];
+  gl.viewport(0,0,W,H); gl.uniform2f(U('res'),W,H); gl.uniform1f(U('t'),t);
+  bindScene(0,a,'A'); gl.uniform1f(U('lt_A'),lt);
+  const ts=SCENE-TR; let mp=0; if(lt>ts){mp=(lt-ts)/TR;}
+  bindScene(1,b,'B'); gl.uniform1f(U('lt_B'),lt-SCENE); gl.uniform1f(U('mixp'),mp);
+  gl.drawArrays(gl.TRIANGLE_STRIP,0,4); return true;};
+window.TOTAL=TOTAL; window.SCENES=S.map(s=>s.n); window.SCENE=SCENE;
+</script></body></html>
