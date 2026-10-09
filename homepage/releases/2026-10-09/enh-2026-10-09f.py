@@ -14,7 +14,7 @@ assert 'nz-ph-loader' not in s, 'already applied'
 def once(n): assert s.count(n) == 1, (n[:70], s.count(n)); return s.index(n)
 a = '<script defer src="https://unpkg.com/@phosphor-icons/web"></script>'; once(a)
 s = s.replace(a, '<script id="nz-ph-loader">(function(){var d=false;function go(){if(d)return;d=true;["regular","fill","bold"].forEach(function(v){var l=document.createElement("link");l.rel="stylesheet";l.href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/"+v+"/style.css";document.head.appendChild(l)})}["pointermove","pointerdown","touchstart","keydown","scroll"].forEach(function(e){addEventListener(e,go,{once:true,passive:true})});addEventListener("load",function(){setTimeout(go,8000)})})();</script>')
-PRE = ''.join('<link rel="preload" as="font" type="font/woff2" crossorigin href="%s">' % u for u in [
+PRE = ''.join('<link rel="preload" as="font" type="font/woff2" crossorigin media="(min-width: 901px)" href="%s">' % u for u in [
  'https://fonts.gstatic.com/s/sora/v17/xMQbuFFYT72XzQUpDg.woff2',
  'https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2',
  'https://fonts.gstatic.com/s/tirodevanagarihindi/v7/55xyezN7P8T4e0_CfIJrwdodg9HoYw0i-M9vTuMPTG0.woff2',
