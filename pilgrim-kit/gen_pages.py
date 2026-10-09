@@ -482,7 +482,7 @@ def jyotirlinga_page():
                     + (f'<tr><td><b>Season</b></td><td>{e(os_)}</td></tr>' if os_ else "")
                     + f'<tr><td><b>Best months</b></td><td>{e(dash(months(j)))}</td></tr><tr><td><b>Good to know</b></td><td>{e(dd_["tip"])}</td></tr>'
                     f'<tr><td><b>Nearest airport</b></td><td>{e(dash(airport(j)))}</td></tr><tr><td><b>Nearest railway</b></td><td>{e(dash(rail(j)))}</td></tr>'
-                    + (f'<tr><td><b>Official site</b></td><td>{ext(j["official_site"], e(urllib.parse.urlparse(j["official_site"]).netloc))}</td></tr>' if j.get("official_site") else "")
+                    + (f'<tr><td><b>Official site</b></td><td>{ext(j["official_site"].split()[0], e(urllib.parse.urlparse(j["official_site"].split()[0]).netloc))}</td></tr>' if j.get("official_site") else "")
                     + f'</tbody></table></div>{disp}<p class="szp-note">Timings as published by the temple or state tourism (checked {VERIFIED}); they change on festivals — confirm before you go.</p></article>')
     faqs = [
         ("What are the names of the 12 Jyotirlingas?", "Somnath, Mallikarjuna, Mahakaleshwar, Omkareshwar, Kedarnath, Bhimashankar, Kashi Vishwanath, Trimbakeshwar, Vaidyanath, Nageshwar, Rameshwaram and Grishneshwar — the order of the Shiva Purana."),
@@ -527,7 +527,7 @@ def jyotirlinga_page():
 <li><b>A pillar of light</b><span>An endless column of fire appears between them, splitting earth and sky.</span></li>
 <li><b>No top, no end</b><span>Vishnu dives as a boar to find its base; Brahma flies up as a swan. Neither finds an end.</span></li>
 <li><b>Shiva emerges</b><span>Shiva appears from the pillar — the light worshipped at the twelve Jyotirlingas.</span></li></ol>
-<p>The scene is carved in temples across India as the <b>Lingodbhava</b>. Each Jyotirlinga then has its own story — the Moon's curse at Somnath, the demon Dushana at Ujjain, the Vindhya mountain at Omkareshwar, the Pandavas at Kedarnath. You'll find them temple by temple below.</p></section>
+<div class="szp-media">{lazy_video("12-jyotirlinga", "story", "Illustrated animation: four Jyotirlinga legends — Somnath, Ujjain, Omkareshwar and Kedarnath")}<div><p>The scene is carved in temples across India as the <b>Lingodbhava</b>. Each Jyotirlinga then has its own story — the Moon's curse at Somnath, the demon Dushana at Ujjain, the Vindhya mountain at Omkareshwar, the Pandavas at Kedarnath. You'll find them temple by temple below.</p></div></div></section>
 <section class="szp-sec alt" id="route"><span class="k">Route plan</span><h2>How to plan the 12 Jyotirlinga yatra</h2>
 <p class="lead">The temples are spread over seven states, so pilgrims group them and fly between the groups. A comfortable pace is 18–22 days; many families split the circuit over two or three trips.</p>
 <ol class="szp-route">
