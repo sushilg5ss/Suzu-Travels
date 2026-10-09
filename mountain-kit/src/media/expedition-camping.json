@@ -1,0 +1,88 @@
+{
+ "hero": {
+  "kicker": "EXPEDITION CAMPING · BASE TO SUMMIT",
+  "words": [
+   [
+    "BASE CAMP:",
+    "HOME BASE."
+   ],
+   [
+    "CARRY HIGH.",
+    "SLEEP LOW."
+   ],
+   [
+    "TOP CAMP:",
+    "ONE NIGHT."
+   ],
+   [
+    "PACK IT IN.",
+    "PACK IT OUT."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 1100
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 480
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-10555794.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": -60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -140
+    }
+   }
+  ]
+ }
+}

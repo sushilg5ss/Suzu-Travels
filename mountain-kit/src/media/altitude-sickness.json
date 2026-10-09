@@ -1,0 +1,91 @@
+{
+ "hero": {
+  "kicker": "ALTITUDE SICKNESS · INDIAN PEAKS",
+  "words": [
+   [
+    "MAX 500 M",
+    "PER NIGHT."
+   ],
+   [
+    "HEADACHE?",
+    "STOP HERE."
+   ],
+   [
+    "WORSE?",
+    "GO DOWN."
+   ],
+   [
+    "FIT DOESN'T",
+    "MEAN SAFE."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 450
+    },
+    "to": {
+     "y": 1000
+    }
+   },
+   {
+    "img": "px-35319376.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 60
+    },
+    "to": {
+     "y": 520
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "y": -190,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.1,
+     "y": -190,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 30
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ]
+ }
+}
