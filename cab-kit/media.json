@@ -351,5 +351,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "haridwar-taxi-service": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c1744fbd2129aeabe6e7f5558ebac0f897d4e2b/cab-kit/media/haridwar-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c1744fbd2129aeabe6e7f5558ebac0f897d4e2b/cab-kit/media/haridwar-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c1744fbd2129aeabe6e7f5558ebac0f897d4e2b/cab-kit/media/haridwar-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c1744fbd2129aeabe6e7f5558ebac0f897d4e2b/cab-kit/media/haridwar-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c1744fbd2129aeabe6e7f5558ebac0f897d4e2b/cab-kit/media/haridwar-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@8c1744fbd2129aeabe6e7f5558ebac0f897d4e2b/cab-kit/media/haridwar-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
