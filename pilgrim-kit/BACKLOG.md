@@ -11,7 +11,7 @@
 | 1 | live 2026-10-08 | `pilgrimage-tours` | — | hub | pilgrimage tours india (110; tirth yatra 3,600) | pilgrim-hero | Hub with 8 circuits, map of light, calendar |
 | 2 | live 2026-10-08 | `12-jyotirlinga` | hub | guide | 12 jyotirlinga (450,000) | pillar + light-map | Names in Hindi, map, table, legend, route, stotram |
 | 3 | live 2026-10-08 | `shakti-peeth-himachal` | hub | circuit | shakti peeth in himachal pradesh (2,400) | devi | Navratri from 11 Oct — publish first. CTA product 10861. Sati story-strip |
-| 4 | media | `naina-devi` | hub | temple | naina devi (110,000) | devi | Bilaspur = Suzu's home district. Cable car, Shravan mela, Gobind Sagar |
+| 4 | live 2026-10-09 | `naina-devi` | hub | temple | naina devi (110,000) | devi | Bilaspur = Suzu's home district. Cable car, Shravan mela, Gobind Sagar |
 | 5 | media | `nau-devi-yatra` | hub | circuit | nau devi yatra (90; 9 devi yatra 140) | devi + route-map | 9-day route with km table (shaktipeeth-notes §3) |
 | 6 | todo | `chintpurni` | hub | temple | chintpurni temple (8,100; chintpurni 90,500) | devi | Sugam Darshan; Mai Das legend |
 | 7 | todo | `jwala-ji` | hub | temple | jwalamukhi temple (18,100) | devi | Flames: tradition + geology side by side |
