@@ -1,0 +1,50 @@
+{
+ "title": "Suzu Travels — Diwali in India: where to be (2026)",
+ "duration": 40,
+ "music": "Eastern Thought.mp3",
+ "_status": "spec only 2026-10-09 (scheduled run blocked at setup-motion.sh, 8th time) — needs photos, then lint/snapshot/render. Timely: post window ~18 Oct – 7 Nov 2026.",
+ "_music_note": "Last two rendered: Our Story Begins (kerala), Vadodora (dmc); queued unesco-45 = Magistar, evisa-60 = Tabuk. Eastern Thought (last used 30 Sep) = warm, festive. Fallback: Naraina.",
+ "_sources": {
+  "diwali_date": "DoPT closed-holiday list 2026 (via staffnews.in, fetched 2026-10-09): 'Diwali (Deepavali) | November 08 | Kartika 17 | Sunday'.",
+  "dev_deepawali": "24 Nov 2026 = Kartik Purnima; DoPT list has Guru Nanak's Birthday (also Kartik Purnima) on Tuesday 24 Nov 2026; multiple festival calendars give Dev Deepawali Varanasi 24 Nov 2026. Re-check before posting.",
+  "tips": "Lit-up bazaars, lake views, booking early, quiet Diwali day = Suzu tips, not statistics. No religious claims beyond 'festival of lights'."
+ },
+ "_photos_todo": {
+  "hook.jpg": "close-up of rows of clay diyas (oil lamps) at night, no faces — Commons 'Diya Diwali', 3840px thumb",
+  "jaipur.jpg": "Jaipur market / Hawa Mahal illuminated at night for Diwali (Commons 'Jaipur Diwali lights')",
+  "varanasi.jpg": "Varanasi ghats with lamps at night, Dev Deepawali (Commons 'Dev Deepawali Varanasi'), crowd small, not subject",
+  "udaipur.jpg": "Udaipur Lake Pichola / City Palace at night (Commons 'Udaipur night Lake Pichola')",
+  "list-bg.jpg": "rangoli or diyas wide shot, dark grade"
+ },
+ "scenes": [
+  {"type": "photo", "start": 0, "dur": 5, "img": "hook.jpg", "focus": [0.5, 0.5], "zoom": [1.16, 1.03], "grade": "warm",
+   "kicker": "Sunday · 8 November 2026", "headline": ["India's", "*festival", "of lights"], "pos": "low", "t_head": 0.2, "hl_size": 170,
+   "sub": "Where to be for Diwali — in 40 seconds", "t_sub": 1.3},
+  {"type": "map", "start": 5, "dur": 7, "kicker": "Diwali 2026", "headline": ["Where to", "*celebrate"],
+   "pins": [
+    {"city": "Jaipur", "at": 1.8, "label": "Jaipur", "side": "l"},
+    {"city": "Udaipur", "at": 2.3, "label": "Udaipur", "side": "l"},
+    {"city": "Delhi", "at": 2.8, "label": "Delhi", "side": "r"},
+    {"city": "Varanasi", "at": 3.3, "label": "Varanasi", "side": "r"}
+   ],
+   "map_w": 640, "map_dx": 150, "map_y": 620},
+  {"type": "photo", "start": 12, "dur": 6, "img": "jaipur.jpg", "focus": [0.5, 0.5], "zoom": [1.05, 1.18], "grade": "warm",
+   "kicker": "Jaipur", "headline": ["The Pink City", "*glows"], "pos": "low",
+   "sub": "Our tip: walk the old-city bazaars after dark", "t_sub": 1.2},
+  {"type": "photo", "start": 18, "dur": 6, "img": "udaipur.jpg", "focus": [0.55, 0.5], "zoom": [1.18, 1.04], "grade": "warm",
+   "kicker": "Udaipur", "headline": ["Lights on", "*the lakes"], "pos": "low",
+   "sub": "Our tip: book a lake-view room early", "t_sub": 1.2},
+  {"type": "photo", "start": 24, "dur": 6.5, "img": "varanasi.jpg", "focus": [0.5, 0.55], "zoom": [1.04, 1.16], "grade": "warm",
+   "kicker": "Varanasi · 24 November", "headline": ["Dev Deepawali:", "*ghats in", "lamplight"], "pos": "low", "hl_size": 140,
+   "sub": "16 days after Diwali — stay on for it", "t_sub": 1.3},
+  {"type": "list", "start": 30.5, "dur": 5, "img": "list-bg.jpg", "focus": [0.5, 0.5], "zoom": [1.05, 1.15], "grade": "dark",
+   "kicker": "Our tips", "step": 1.1, "t_items": 0.6,
+   "items": [
+    {"a": "Book early", "b": "Festive weeks fill up fast"},
+    {"a": "Keep Diwali day light", "b": "Families celebrate at home"},
+    {"a": "Expect fireworks", "b": "Ask for a quiet room"}
+   ]},
+  {"type": "end", "start": 35.5, "dur": 4.5, "big": "Celebrate Diwali in India", "small": "Private driver · handpicked hotels · 24/7 support",
+   "cta": "DM “DIWALI” for a free plan"}
+ ]
+}
