@@ -276,7 +276,7 @@ def hub():
         ("When is the Amarnath Yatra 2027?",
          "The 2027 dates have not been announced yet. The Shri Amarnathji Shrine Board usually announces them in spring and opens registration around mid-April. In 2026 the yatra ran from 3 July to 28 August (57 days). Pilgrims must be 13–70 years old, carry a compulsory health certificate and collect an RFID card."),
         ("Is registration needed for Char Dham and Vaishno Devi?",
-         "Yes. Char Dham pilgrims must register on the Uttarakhand government's portal (registrationandtouristcare.uk.gov.in) or app, and Kedarnath helicopter tickets are sold only on heliyatra.irctc.co.in. Every Vaishno Devi pilgrim needs a free RFID yatra card from the Shrine Board (online.maavaishnodevi.org or the Katra counters) and must cross Banganga within 6 hours of getting it."),
+         "Yes. Char Dham pilgrims must register on the Uttarakhand government's portal (registrationandtouristcare.uk.gov.in) or app, and Kedarnath helicopter tickets are sold only on heliyatra.irctc.co.in. Every Vaishno Devi pilgrim needs a free RFID yatra card from the Shrine Board (online.maavaishnodevi.org or the Katra counters) and must start the yatra within the time limit on the card — check maavaishnodevi.org before you travel."),
         ("Can senior citizens do these yatras?",
          "Most can. The 12 Jyotirlingas, Kashi–Ayodhya–Prayagraj and the Himachal Devi temples are road-and-ropeway journeys. Kedarnath (about 16 km on foot from Gaurikund) and Vaishno Devi (about 12 km) have pony, palki, battery-car or helicopter options. Amarnath has an age limit of 70. We plan the pace, hotels near the temples and the slower days around each pilgrim."),
     ]
@@ -370,7 +370,7 @@ def hub():
 <div class="szp-links">{pkg_link("amarnath")}</div></section>
 <section class="szp-sec" id="vaishno"><span class="k">वैष्णो देवी · Vaishno Devi</span><h2>Vaishno Devi: the climb to the Trikuta cave</h2>
 <p class="lead">From Katra a paved track of about 12–13 km climbs to the cave shrine at 1,585 m, where the Devi is worshipped as three natural pindis. Tradition says she meditated for nine months in the Ardhkuwari cave on the way; the yatra is completed at the Bhairon temple above.</p>
-<ol class="szp-steps"><li><b>Get the free RFID card</b>Online at online.maavaishnodevi.org or at the Katra counters — cross Banganga within 6 hours of collecting it.</li>
+<ol class="szp-steps"><li><b>Get the free RFID card</b>Online at online.maavaishnodevi.org or at the Katra counters — start the yatra within the time limit on your card (check maavaishnodevi.org).</li>
 <li><b>Choose your way up</b>Walk, pony or palki; helicopter Katra–Sanjichhat; battery car on the Tarakote side; ropeway Bhawan–Bhairon (9 am–5 pm).</li>
 <li><b>Mind the aarti</b>Darshan pauses for about two hours at each aarti, before sunrise and after sunset.</li>
 <li><b>Avoid peak rain</b>Spring and autumn are best; in heavy monsoon the Shrine Board can pause the track.</li></ol>
