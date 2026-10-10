@@ -1,0 +1,55 @@
+/* [DA-2026-10-10] Blog header card + sidebar: brand body font, phone-sized H1, readable author line, 44px share buttons, sidebar package cards with full trip facts and a brand button, calmer article suggestions — pages: .single-post only */
+/* Why: the blog template sets body text to 'Inter' (never loaded → system fallback) so the author bar, sidebar and buttons rendered in Arial/Roboto; on phones the H1 was 20.8px (smaller than the article's own H2s) inside a 14px-padded card with a 64px empty gap under the intro; the author role was ~2.9:1 grey; share buttons were 34px tall; sidebar package cards cut every value off with "…", used emoji labels in slate grey and a white-on-light-gold "View Package" button (~2.2:1). Links, H1 text, content and card order unchanged. */
+body.single-post { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+.single-post :is(.article-header-card, .sidebar, .series-widget) { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+/* 1) Header card */
+.single-post .article-title {
+  font-size: clamp(1.65rem, 1.1rem + 2.4vw, 2.85rem) !important; line-height: 1.16 !important; letter-spacing: -0.02em; margin-bottom: 18px !important;
+}
+.single-post .article-excerpt { color: var(--mid, #4A5D4E); padding-bottom: 26px !important; margin-bottom: 24px !important; }
+.single-post .author-name { font-family: 'Sora', 'Plus Jakarta Sans', sans-serif; color: var(--dark, #122615); }
+.single-post .author-role { color: var(--mid, #4A5D4E) !important; }
+.single-post .author-avatar img { box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgba(212, 175, 55, 0.6); }
+.single-post .social-share { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.single-post .social-share .btn-action {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; box-sizing: border-box;
+  border-color: rgba(27, 94, 32, 0.18); color: var(--teal-deep, #1B5E20); transition: background .15s ease, border-color .15s ease;
+}
+.single-post .social-share .btn-action:hover { background: #EDF5EE; border-color: rgba(27, 94, 32, 0.35); }
+.single-post .social-share .btn-action:focus-visible { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; }
+/* 2) Sidebar package cards (inline-styled by the template) */
+.single-post .series-widget { border-color: rgba(27, 94, 32, 0.12) !important; box-shadow: 0 2px 12px rgba(18, 38, 21, 0.05); }
+.single-post .series-icon { background: #EDF5EE !important; color: var(--teal-deep, #1B5E20) !important; }
+.single-post .series-header [style*="font-weight: 800"] { font-family: 'Sora', 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.01em; }
+.single-post .series-widget a[style*="border-radius:16px"] { border-color: rgba(27, 94, 32, 0.12) !important; box-shadow: 0 2px 10px rgba(18, 38, 21, 0.05) !important; }
+.single-post .series-widget a[style*="border-radius:16px"]:hover { border-color: rgba(212, 175, 55, 0.6) !important; box-shadow: 0 12px 28px rgba(18, 38, 21, 0.12) !important; }
+.single-post .series-widget a[style*="border-radius:16px"]:focus-visible { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; }
+.single-post .series-widget a h3 { font-family: 'Sora', 'Plus Jakarta Sans', sans-serif; font-weight: 700 !important; letter-spacing: -0.01em; }
+.single-post .series-widget [style*="dashed"] { align-items: flex-start !important; gap: 12px; border-bottom: 1px solid rgba(27, 94, 32, 0.08) !important; }
+.single-post .series-widget [style*="dashed"] > span:first-child {
+  display: block !important; flex: 0 0 auto; white-space: nowrap; color: var(--mid, #4A5D4E) !important; font-weight: 500;
+}
+/* hide the leading emoji in each label (same technique as the itinerary pins) */
+.single-post .series-widget [style*="dashed"] > span:first-child::first-letter { font-size: 0; }
+.single-post .series-widget [style*="text-overflow"] {
+  white-space: normal !important; overflow: visible !important; text-overflow: clip !important; line-height: 1.4; color: var(--dark, #122615);
+}
+.single-post .series-widget [style*="#dca34b"] {
+  display: flex; align-items: center; justify-content: center; min-height: 44px; box-sizing: border-box;
+  background: var(--teal-deep, #1B5E20) !important; color: #fff !important; box-shadow: none !important; font-size: .9rem !important;
+}
+.single-post .series-widget a:hover [style*="#dca34b"] { background: var(--teal, #2E7D32) !important; }
+/* 3) Article suggestions */
+.single-post .suggestion-card { min-height: 44px; }
+.single-post .suggestion-card:hover { background: var(--cream, #F9FAF5); border-color: rgba(27, 94, 32, 0.12); }
+.single-post .suggestion-card-title { color: var(--dark, #122615); }
+.single-post .suggestion-card:hover .suggestion-card-title { color: var(--teal-deep, #1B5E20); }
+.single-post .suggestion-card-meta { color: var(--mid, #4A5D4E); }
+@media (max-width: 767px) {
+  .single-post .article-header-card { padding: 22px 20px 20px !important; }
+  .single-post .article-excerpt { font-size: 1rem; padding-bottom: 20px !important; margin-bottom: 18px !important; }
+  .single-post .author-bar { flex-wrap: wrap; gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .single-post .series-widget a[style*="border-radius:16px"]:hover { transform: none !important; }
+}
