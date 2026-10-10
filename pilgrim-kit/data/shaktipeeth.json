@@ -344,11 +344,14 @@
       },
       {
         "name": "Asuj (Ashwin) Navratra mela",
-        "start": null,
-        "end": null,
-        "note": "10-day fair in October per temple trust",
-        "as_of": "2026-10-08",
-        "source": "https://matashrichintpurni.com/matashri-chintpurni-festivals.php"
+        "start": "2026-10-11",
+        "end": "2026-10-20",
+        "note": "10-day fair in October per temple trust. 2026 mela 11-20 Oct per Una administration (Amar Ujala headline, 5 Oct 2026; article body not read).",
+        "as_of": "2026-10-10",
+        "source": [
+          "https://matashrichintpurni.com/matashri-chintpurni-festivals.php",
+          "https://www.amarujala.com/himachal-pradesh/una/chintpurni-dham-to-be-decked-up-from-october-11-to-20-una-news-c-93-1-una1002-208523-2026-10-05"
+        ]
       },
       {
         "name": "New Year event",
@@ -773,7 +776,7 @@
     ],
     "unverified": [
       "RFID start-time limit: 6 h (SMVDSB page, ETV Bharat 23 Dec 2025) vs 10 h start / 24 h return (Dainik Jagran English 24 Dec 2025) - unresolved 2026-10-09",
-   "Helicopter fares/timings",
+      "Helicopter fares/timings",
       "Sanjichhat-Bhawan walking distance",
       "Battery car fares"
     ],
