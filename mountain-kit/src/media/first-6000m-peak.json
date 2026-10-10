@@ -1,0 +1,114 @@
+{
+ "hero": {
+  "kicker": "YOUR FIRST 6,000 M · INDIA",
+  "words": [
+   [
+    "START AT",
+    "5,289 M."
+   ],
+   [
+    "LEARN THE",
+    "ICE AXE."
+   ],
+   [
+    "THEN:",
+    "6,111 M."
+   ],
+   [
+    "TRAIN.",
+    "GO SLOW."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20,
+     "y": 60
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "YOUR FIRST 6,000 M · INDIA",
+  "title": "First 6,000 m peaks, side by side",
+  "peaks": [
+   "friendship-peak",
+   "shitidhar",
+   "deo-tibba",
+   "mount-yunam",
+   "mentok-kangri",
+   "dzo-jongo"
+  ],
+  "subs": {
+   "friendship-peak": "Himachal · warm-up",
+   "shitidhar": "Himachal · warm-up",
+   "deo-tibba": "Himachal · Kullu",
+   "mount-yunam": "Himachal · Lahaul",
+   "mentok-kangri": "Ladakh · height varies",
+   "dzo-jongo": "Ladakh"
+  },
+  "end": "Yunam and Deo Tibba are Himachal 6,000ers"
+ }
+}
