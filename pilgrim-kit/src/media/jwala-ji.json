@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "night",
+  "deva": "श्री ज्वालामुखी",
+  "kicker": "Shakti Peeth · Kangra, Himachal",
+  "beats": [
+   "Sati's tongue falls in Kangra",
+   "Flames burn without any idol",
+   "Akbar tries to douse them",
+   "Faith and earth's fire, side by side"
+  ]
+ },
+ "story": {
+  "title": "The legend of Jwala Ji",
+  "beats": [
+   {"arch": "devi", "sky": "saffron", "line": "Sati gives up her body at Daksha's yagna"},
+   {"arch": "pillar", "sky": "night", "line": "Her tongue falls here — living flame from the rock"},
+   {"arch": "devi", "sky": "dawn", "line": "A cowherd follows a mysterious girl to the fire"},
+   {"arch": "devi", "sky": "dusk", "line": "Akbar's golden chhatra, offered at the flame"}
+  ]
+ }
+}

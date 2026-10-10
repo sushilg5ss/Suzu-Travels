@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "saffron",
+  "deva": "माता श्री चिंतपूर्णी",
+  "kicker": "Chhinnamastika · Una, Himachal",
+  "beats": [
+   "Devi offers her own head",
+   "Shiva guards all four directions",
+   "Mai Das receives her darshan",
+   "She who ends all worries"
+  ]
+ },
+ "story": {
+  "title": "The legend of Chintpurni",
+  "beats": [
+   {"arch": "devi", "sky": "night", "line": "After the battle, Jaya and Vijaya still hunger"},
+   {"arch": "pillar", "sky": "saffron", "line": "The Mother gives herself — three streams of light"},
+   {"arch": "devi", "sky": "dusk", "line": "Shiva shrines guard the hill on four sides"},
+   {"arch": "devi", "sky": "dawn", "line": "Mai Das receives her darshan at Chhaproh"}
+  ]
+ }
+}
