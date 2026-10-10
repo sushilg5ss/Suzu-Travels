@@ -122,5 +122,14 @@
   "blurb": "What the outfitter provides, what you bring, what to rent",
   "added": "2026-10-09",
   "commercial": true
+ },
+ "crampons-and-mountaineering-boots": {
+  "id": 12724,
+  "path": "/mountains-of-india/crampons-and-mountaineering-boots/",
+  "kind": "guide",
+  "label": "Crampons & mountaineering boots",
+  "blurb": "Crampon types, B1–B3 boots and which pair for which peak",
+  "added": "2026-10-10",
+  "commercial": true
  }
 }
