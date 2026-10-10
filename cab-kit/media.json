@@ -367,5 +367,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "outstation-cab-delhi": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d2815af5703a13648458269b89c365bf7d155c6a/cab-kit/media/outstation-cab-delhi/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d2815af5703a13648458269b89c365bf7d155c6a/cab-kit/media/outstation-cab-delhi/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d2815af5703a13648458269b89c365bf7d155c6a/cab-kit/media/outstation-cab-delhi/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d2815af5703a13648458269b89c365bf7d155c6a/cab-kit/media/outstation-cab-delhi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d2815af5703a13648458269b89c365bf7d155c6a/cab-kit/media/outstation-cab-delhi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d2815af5703a13648458269b89c365bf7d155c6a/cab-kit/media/outstation-cab-delhi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
