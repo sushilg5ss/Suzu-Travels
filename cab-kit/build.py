@@ -221,12 +221,12 @@ def outstation_table(outs, slug):
 def build_city(p):
     town = p["map"]["hub"]
     outs = p["outstation"]
-    chips = [f"Local sightseeing", f"Outstation drops", f'To {outs[0][1]} from <b>{inr(oneway("sedan", outs[0][2], outs[0][3]))}</b>', "Hatchback → Tempo Traveller", "24×7 WhatsApp"]
+    chips = p.get("chips") or [f"Local sightseeing", f"Outstation drops", f'To {outs[0][1]} from <b>{inr(oneway("sedan", outs[0][2], outs[0][3]))}</b>', "Hatchback → Tempo Traveller", "24×7 WhatsApp"]
     dests = [dict(l=f"{a} → {b}", km=km, f=f) for a, b, km, f in outs]
     body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Rates"), ("route", "Trips"), ("cars", "Cars"), ("tips", "Tips"), ("faq", "FAQ")])
     body += (f'<section class="szc-sec" id="overview"><span class="szc-kicker">At a glance</span><h2>{p["title"]}: rates and trips</h2>'
              f'<div class="szc-answer">{p["answer"]}</div>{facts(p["facts"])}</section>')
-    body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Rates 2026</span><h2>{town} local taxi rates</h2>{local_table(p["local_rates"])}'
+    body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Rates 2026</span><h2>{p.get("rates_h") or town + " local taxi rates"}</h2>{local_table(p["local_rates"])}'
              f'<h3 style="margin-top:34px">Outstation taxi from {town}</h3>{outstation_table(outs, p["slug"])}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
     body += route_media(p["slug"], p["stops"], f"Popular taxi trips from {town}", f"Where our {town} cabs go most, and what each trip is known for.")

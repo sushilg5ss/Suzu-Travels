@@ -8,6 +8,9 @@ _O = lambda vid, km, f: _inr(_ow(vid, km, f))           # one-way fare from the 
 _S = lambda km, f: _O("sedan", km, f)
 _DAY = lambda vid, days=1: _inr(250 * days * _FB[vid]["hire"] + (days - 1) * _FB[vid]["night"])  # full-day hire, 250 km/day minimum
 
+from cabs_data import r99 as _r99
+_RT = lambda vid, km, days: _inr(_r99(max(2 * km, 250 * days) * _FB[vid]["hire"]) + (days - 1) * _FB[vid]["night"])  # round trip, same formula as the calculator
+
 HP_ENTRY = ("Himachal entry fee", "Cars registered outside Himachal pay an entry fee at the state barrier (₹100 a day for passenger vehicles up to 12 seats in 2026–27; commercial and larger vehicles pay more). It is added to your quote at actuals. Details: <a href=\"/himachal-entry-tax-permits-2026/\">Himachal entry tax & permits 2026</a>.")
 NIGHT = ("No night driving in the hills", "For safety our drivers do not run hill sections late at night. Leave early (5–6 am from Delhi) and plan to reach before dark; the quote tells you the best start time.")
 WINTER = ("Snow months need a plan", "From mid-December to February roads above Shimla and Manali can close after fresh snow. Drivers carry chains; sometimes the last stretch is done in a local 4×4. We confirm the day before.")
@@ -683,6 +686,52 @@ dict(slug="haridwar-taxi-service", kind="city", route=None,
        ("Can the same taxi take us on the Char Dham or Do Dham yatra?","Yes. We plan Char Dham and Do Dham (Kedarnath + Badrinath) trips from Haridwar in a sedan, Innova Crysta or Tempo Traveller, priced per kilometre with a 250 km daily minimum and driver allowance. Pilgrim registration is compulsory.")],
  related=[L("/cabs/delhi-to-haridwar-taxi/","Delhi ⇄ Haridwar taxi"),L("/cabs/delhi-to-rishikesh-taxi/","Delhi to Rishikesh taxi"),L("/cabs/dehradun-taxi-service/","Dehradun taxi service"),L("/packages/ultimate-char-dham-yatra/","Char Dham yatra package"),L("/tours/do-dham-gangotri-kedarnath-tour-from-haridwar/","Do Dham tour from Haridwar","Gangotri + Kedarnath"),L("/uttarakhand/","Uttarakhand travel guide")],
  wa="Hi Suzu Travels, I need a taxi in Haridwar. Pickup (station/ghat/hotel): ___ , drop or trip: ___ , date: ___ , people: ___"),
+
+# ------------------------------------------------------------------ OUTSTATION CAB DELHI (10 Oct 2026)
+dict(slug="outstation-cab-delhi", kind="city", route=None,
+ title="Outstation Cab Delhi", seo_title=f"Outstation Cab from Delhi | One-Way Fares from {_S(220,.85)}",
+ seo_desc=f"Outstation cab from Delhi NCR: one-way to Haridwar {_S(220,.85)}, Agra {_S(230,.85)}, Shimla {_S(345,1.0)}, Manali {_S(540,1.0)}. Round trips ₹12/km. WhatsApp quote.",
+ focus="outstation cab delhi",
+ area=["Delhi", "New Delhi", "Gurugram", "Noida", "Ghaziabad", "Faridabad"],
+ chips=["All Delhi NCR & IGI pickup", f'Haridwar from <b>{_S(220,.85)}</b>', f'Shimla from <b>{_S(345,1.0)}</b>', "One-way or round trip", "Hatchback → Tempo Traveller"],
+ rates_h="Round trips and tours from Delhi",
+ kicker="Delhi NCR · One-way & round trip",
+ tag="Outstation cabs from Delhi to the hills, the Ganga and beyond",
+ sub="Pickup from your door anywhere in Delhi, Gurugram, Noida, Ghaziabad or Faridabad, IGI Airport or any Delhi station — one-way drops and round trips to Himachal, Uttarakhand, Punjab, Jammu, Agra and Jaipur.",
+ answer=f"Our <b>outstation cab from Delhi</b> picks you up anywhere in Delhi NCR, including IGI Airport, for one-way drops and round trips. One-way sedan fares start around <b>{_S(220,.85)} to Haridwar</b>, <b>{_S(230,.85)} to Agra</b>, <b>{_S(250,.85)} to Chandigarh</b>, <b>{_S(345,1.0)} to Shimla</b> and <b>{_S(540,1.0)} to Manali</b>. Round trips cost <b>₹12 a km in a sedan</b> (250 km a day minimum) plus ₹400 a night driver allowance; tolls, parking and state taxes are extra.",
+ facts=[("Pickup","All Delhi NCR · IGI"),("Sedan one-way","from " + _S(220,.85)),("Innova Crysta","from " + _O("crysta",220,.85)),("Round trip","₹12/km sedan"),("Minimum","250 km a day"),("Driver allowance","₹400 a night")],
+ stops=[("Delhi NCR","Pickup at your home or office in Delhi, Gurugram, Noida, Ghaziabad or Faridabad, IGI Airport T1/T3, New Delhi, Nizamuddin or Anand Vihar stations, or any ISBT."),
+        ("Chandigarh · Shimla","Chandigarh is about 250 km up the NH44 (4–5 hours); Shimla another 115 km of hill road via Kalka and Solan, 7–8 hours in all."),
+        ("Manali · Dharamshala","The long Himachal days: Manali about 540 km via the Kiratpur–Nerchowk four-lane and Mandi, Dharamshala about 475 km via Una or Pathankot. Start by 5 am."),
+        ("Haridwar · Rishikesh","About 220–240 km via the Meerut Expressway, Muzaffarnagar and Roorkee — Har Ki Pauri for the evening aarti, or the Rishikesh camps and cafés."),
+        ("Dehradun · Mussoorie","The Delhi–Dehradun Expressway via Baghpat and Saharanpur makes Dehradun about 4–5 hours; Mussoorie is 35 km of climb further."),
+        ("Nainital","About 310 km, 7–8 hours via Moradabad, Rampur and Haldwani, then the hill road up from Kathgodam."),
+        ("Amritsar · Katra","Amritsar about 460 km straight up the NH44 (7–8 hours); Katra for Vaishno Devi about 640 km via Pathankot and Jammu, a full 11–12 hour day."),
+        ("Agra · Jaipur","Agra about 230 km on the Yamuna Expressway (3.5–4 hours) — an easy same-day Taj Mahal trip; Jaipur about 280 km via Gurugram and Neemrana on the NH48.")],
+ map=dict(hub="Delhi", spokes=["Shimla","Manali","Amritsar","Haridwar","Nainital","Agra","Jaipur"], ctx=["Dehradun"]),
+ local_rates=dict(head=["Trip (from Delhi NCR)","Sedan","Ertiga","Innova Crysta"], note="Round-trip prices = our per-km rate × the kilometres (at least 250 km a day) + ₹400 a night driver allowance — the same maths as the fare calculator below. Extra kilometres at the same per-km rate; tolls, parking, state entry fees and monument tickets at actuals.",
+   rows=[("Full day, up to 250 km (e.g. Mathura–Vrindavan, Neemrana, Kurukshetra)",_DAY('sedan'),_DAY('ertiga'),_DAY('crysta')),
+         ("Same-day Agra & Taj Mahal return (about 460 km)",_RT('sedan',230,1),_RT('ertiga',230,1),_RT('crysta',230,1)),
+         ("2-day Jaipur trip with one night (about 560 km)",_RT('sedan',280,2),_RT('ertiga',280,2),_RT('crysta',280,2)),
+         ("2-day Haridwar & Rishikesh with one night (500 km minimum)",_RT('sedan',240,2),_RT('ertiga',240,2),_RT('crysta',240,2)),
+         ("3-day Shimla & Kufri with two nights (750 km minimum)",_RT('sedan',345,3),_RT('ertiga',345,3),_RT('crysta',345,3))]),
+ outstation=[("Delhi","Shimla",345,1.0),("Delhi","Manali",540,1.0),("Delhi","Chandigarh",250,0.85),("Delhi","Haridwar",220,0.85),("Delhi","Rishikesh",240,0.85),("Delhi","Dehradun",240,0.85),("Delhi","Mussoorie",280,0.95),("Delhi","Nainital",310,0.95),("Delhi","Dharamshala",475,1.0),("Delhi","Amritsar",460,0.85),("Delhi","Katra",640,0.85),("Delhi","Agra",230,0.85),("Delhi","Jaipur",280,0.85)],
+ tips=[("One-way or round trip?",f"A one-way fare already covers the car's empty run home, so for a simple there-and-back with a few days in between, two one-way drops often cost less — Delhi to Haridwar starts around {_S(220,.85)} each way. A round trip keeps the car and driver with you for sightseeing all along: two days for Haridwar and Rishikesh is {_RT('sedan',240,2)} in a sedan. The calculator shows both."),
+       ("Beat the Delhi traffic","Leave by 5–6 am for the hills and the long Punjab and Jammu runs; you clear the city before the rush and drive the hill sections in daylight. Coming back, avoid entering Delhi between 5 and 9 pm on Sundays and holiday evenings."),
+       ("State fees at the border","Taxis from Delhi pay state charges where they cross in: Himachal charges non-HP vehicles an entry fee, Uttarakhand reads a green cess from cameras at the border (₹80 for cars since February 2026), and other states levy taxi permits. All are added to your quote at actuals, never marked up."),
+       NIGHT,
+       ("Winter fog on the plains","From late December to January dense morning fog can sit on the NH44, the Yamuna Expressway and the Moradabad road. Your driver may suggest starting a little later so you drive in better visibility."),
+       ("One car for the whole circuit","For Delhi → Shimla → Manali → Delhi or Delhi → Haridwar → Rishikesh → Mussoorie, one per-km tour keeps the same car and driver with you for every stop and day trip, and your bags never change cars. Tell us the plan and we price it both as a tour and as one-way drops, so you can pick.")],
+ faqs=[("How much does an outstation cab from Delhi cost?",f"One-way drops in a sedan start around {_S(220,.85)} to Haridwar, {_S(230,.85)} to Agra, {_S(250,.85)} to Chandigarh, {_S(345,1.0)} to Shimla and {_S(540,1.0)} to Manali. An Innova Crysta starts around {_O('crysta',220,.85)} to Haridwar and {_O('crysta',345,1.0)} to Shimla. Tolls, parking and state entry fees are extra at actuals."),
+       ("What is the per km rate for an outstation taxi in Delhi?","For round trips and tours: about ₹11 a km for a hatchback, ₹12 for a sedan, ₹14 for an Ertiga, ₹16 for a Kia Carens, ₹19 for an Innova Crysta, ₹26 for a Tempo Traveller and ₹36 for a Force Urbania, with a 250 km daily minimum and ₹400 a night driver allowance (₹500 for the vans)."),
+       ("Is there a minimum kilometre charge for outstation cabs?","Round trips are billed for at least 250 km a day even if you drive less, because the car and driver are with you all day. One-way drops have a fixed route fare instead, which already covers the car's return."),
+       ("What is the Delhi to Agra taxi fare for a same-day Taj Mahal trip?",f"A same-day Agra return is about 460 km, so it starts around {_RT('sedan',230,1)} in a sedan, {_RT('ertiga',230,1)} in an Ertiga and {_RT('crysta',230,1)} in an Innova Crysta. A one-way drop to Agra starts around {_S(230,.85)}. Yamuna Expressway tolls and parking are extra; the Taj is closed on Fridays."),
+       ("What is the Delhi to Jaipur one-way taxi fare?",f"About 280 km via Gurugram and Neemrana, 5–6 hours. One-way starts around {_S(280,.85)} in a sedan, {_O('ertiga',280,.85)} in an Ertiga and {_O('crysta',280,.85)} in an Innova Crysta, tolls extra."),
+       ("Are tolls included in the outstation fare?","No. Fuel, the driver and driver allowance are included; tolls, parking and state entry fees or permits are paid at actuals and listed in your WhatsApp quote before you pay anything."),
+       ("Can the cab pick me up from IGI Airport, Gurugram or Noida?","Yes. We pick up anywhere in Delhi NCR — IGI Airport T1 or T3, the railway stations, ISBTs, Gurugram, Noida, Greater Noida, Ghaziabad and Faridabad. Share your flight or train number and the driver tracks it; airport parking is added at actuals."),
+       ("Which car should I book for a family of six?","An Ertiga or Kia Carens fits six with light bags; for six adults with full suitcases, or hill roads with elders, the Innova Crysta is more comfortable. Groups of 8 to 17 take a Tempo Traveller or Force Urbania.")],
+ related=[L("/cabs/delhi-to-shimla-taxi/","Delhi to Shimla taxi"),L("/cabs/delhi-to-manali-taxi/","Delhi to Manali taxi"),L("/cabs/delhi-to-haridwar-taxi/","Delhi ⇄ Haridwar taxi"),L("/cabs/tempo-traveller-hire-delhi/","Tempo Traveller hire in Delhi","12–17 seats"),L("/cabs/innova-crysta-on-rent/","Innova Crysta on rent"),L("/himachal-tour-packages/","Himachal tour packages","Hotel + cab")],
+ wa="Hi Suzu Travels, I need an outstation cab from Delhi. Pickup: ___ , destination: ___ , date: ___ , one-way / round trip: ___ , people: ___"),
 
 # ------------------------------------------------------------------ TEMPO TRAVELLER DELHI
 dict(slug="tempo-traveller-hire-delhi", kind="vehicle", vehicle="tempo", route=None,

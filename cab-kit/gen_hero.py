@@ -184,6 +184,7 @@ VARIANTS = {
   "dharamshala-taxi-service": dict(routes=[("Dharamshala taxis",None)], kicker="MCLEODGANJ · BIR · GAGGAL"),
   "srinagar-taxi-service": dict(routes=[("Srinagar taxis",None)], kicker="GULMARG · PAHALGAM · DAL"),
   "haridwar-taxi-service": dict(routes=[("Haridwar taxis",None)], kicker="HAR KI PAURI · CHAR DHAM"),
+  "outstation-cab-delhi": dict(routes=[("Delhi outstation",None)], kicker="ONE-WAY FROM DELHI NCR"),
   "tempo-traveller-hire-delhi": dict(routes=[("Tempo Traveller",None)], kicker="12–17 SEATS · DELHI NCR", vehicle="tempo"),
   "innova-crysta-on-rent": dict(routes=[("Innova Crysta",None)], kicker="ON RENT WITH DRIVER"),
 }
