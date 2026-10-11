@@ -22,7 +22,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 9 | [x] shimla-to-manali-taxi — LIVE 2026-10-08 https://suzutravels.com/cabs/shimla-to-manali-taxi/ (ID 12485) | shimla to manali taxi | 2,500 | Via Mandi/Kullu, Pandoh dam; Kufri/Narkanda option |
 | 10 | [x] haridwar-taxi-service — LIVE 2026-10-09 https://suzutravels.com/cabs/haridwar-taxi-service/ (ID 12633) | taxi service in haridwar | 4,400 (+ haridwar to rishikesh cab 720, to badrinath fare 880) | NEW 1 Oct. Local + Char Dham drops; links Delhi→Haridwar page |
 | 11 | [x] outstation-cab-delhi — LIVE 2026-10-10 https://suzutravels.com/cabs/outstation-cab-delhi/ (ID 12714) | outstation cab delhi | 4,300 (cluster) | City/service page: every outstation route from Delhi with fares table |
-| 12 | [ ] amritsar-taxi-service | amritsar taxi service | 4,400 (+ car hire in amritsar 2,900) | NEW 1 Oct. Golden Temple/Wagah locals, drops to Dharamshala (260), Dalhousie, Jammu |
+| 12 | [x] amritsar-taxi-service — LIVE 2026-10-11 https://suzutravels.com/cabs/amritsar-taxi-service/ (ID 12827) | amritsar taxi service | 4,400 (+ car hire in amritsar 2,900) | NEW 1 Oct. Golden Temple/Wagah locals, drops to Dharamshala (260), Dalhousie, Jammu |
 | 13 | [ ] delhi-to-nainital-taxi | delhi to nainital taxi | 2,000 | Kathgodam/Haldwani pickups, Bhimtal/Mukteshwar |
 | 14 | [ ] nainital-taxi-service | nainital taxi service | 4,400 (LOW comp.; + kathgodam to nainital fare 720, kathgodam taxi 1,000) | NEW 1 Oct. Kathgodam station pickups, lake circuit |
 | 15 | [ ] chandigarh-airport-taxi | chandigarh airport taxi | 2,200 (cluster) | IXC pickups to Shimla, Manali, Kasauli, Dharamshala, Delhi |
