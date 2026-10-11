@@ -131,5 +131,14 @@
   "blurb": "Crampon types, B1–B3 boots and which pair for which peak",
   "added": "2026-10-10",
   "commercial": true
+ },
+ "ice-axe-guide": {
+  "id": 12840,
+  "path": "/mountains-of-india/ice-axe-guide/",
+  "kind": "guide",
+  "label": "Ice axe guide",
+  "blurb": "Parts, types, length and self-arrest, explained",
+  "added": "2026-10-11",
+  "commercial": true
  }
 }

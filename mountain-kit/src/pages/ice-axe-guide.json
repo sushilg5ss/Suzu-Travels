@@ -1,0 +1,209 @@
+{
+ "kind": "guide",
+ "path": "/mountains-of-india/ice-axe-guide/",
+ "title": "Ice Axe Guide: Parts, Types, Length and How Climbers Use It",
+ "seo_title": "Ice Axe Guide: Parts, Types & How Climbers Use It",
+ "seo_desc": "What is an ice axe? A brand-free guide to its parts, basic vs technical axes, the right length, self-arrest and where you use one on Himachal peaks.",
+ "focus": "ice axe",
+ "commercial": true,
+ "label": "Ice axe guide",
+ "blurb": "Parts, types, length and self-arrest, explained",
+ "verified": "11 Oct 2026",
+ "kicker": "Ice axe · Climber's guide · 2026",
+ "tag": "Your brake on snow.",
+ "sub": "A plain-English, brand-free guide for first-time climbers: the parts of an ice axe, basic versus technical axes, what length to use, the four jobs it does on a snow slope, what self-arrest means, and where you will carry one on Himachal peaks.",
+ "chips": [
+  [
+   "Pick · adze",
+   "the two ends of the head"
+  ],
+  [
+   "45–60 cm",
+   "what most climbers use"
+  ],
+  [
+   "B or T",
+   "basic or technical"
+  ],
+  [
+   "UIAA 152",
+   "the safety standard"
+  ],
+  [
+   "c. 1840",
+   "the first true ice axe"
+  ]
+ ],
+ "hero_alt": "Three roped climbers with ice axes on a glacier, a corniced snow ridge, a night start by headlamp and a tent at high camp (generic stock footage) with four statements: pick, adze, shaft; most use 45–60 cm; the axe is a brake; learn it in person",
+ "q": "What is an ice axe, and what is it used for?",
+ "answer": "An ice axe is a mountaineer's tool for snow and ice: a steel head with a pointed pick and a flat adze, on a shaft with a spike at the base. Climbers use it for balance on slopes, to stop a slide (self-arrest), to cut steps and as an anchor. Most carry a 45–60 cm basic axe. See our <a href=\"/mountains-of-india/mountaineering-gear-list/\">mountaineering gear list</a> for the rest of the kit.",
+ "facts": [
+  [
+   "What it is",
+   "A climbing tool for snow and ice"
+  ],
+  [
+   "Parts",
+   "Pick, adze, shaft, spike, leash"
+  ],
+  [
+   "Typical length",
+   "45–60 cm"
+  ],
+  [
+   "Types",
+   "Basic (B) or technical (T)"
+  ],
+  [
+   "Standard",
+   "UIAA 152, based on EN 13089"
+  ],
+  [
+   "On a guided climb",
+   "Often on loan"
+  ]
+ ],
+ "intro": [
+  "On the snow peaks of the Indian Himalaya the ice axe goes everywhere the crampons go. On a guided climb you carry it from the snow line to the summit: as a third point of contact on steep snow, and as the tool that can stop a slide.",
+  "Most ice-axe guides online are written for Scotland, the Alps or the Cascades. This one is brand-free and written for climbs in India: what each part does, which type and length suit a first peak such as <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a>, and why self-arrest is something you learn on the snow with a guide, not from a web page. For the other half of your snow kit, read our <a href=\"/mountains-of-india/crampons-and-mountaineering-boots/\">crampons and boots guide</a>."
+ ],
+ "extra_sections": [
+  {
+   "id": "parts",
+   "label": "Parts",
+   "kicker": "Anatomy",
+   "h2": "Ice axe parts and what each one does",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Part</th><th>What it is</th><th>What it does</th></tr></thead><tbody><tr><td><b>Head</b></td><td>The top of the axe, usually steel, with a hole for a leash or carabiner</td><td>Carries the pick and the adze; you hold the axe by it when walking</td></tr><tr><td><b>Pick</b></td><td>The toothed, pointed end of the head, typically slightly curved</td><td>Bites into snow and ice: the part that does the work in a self-arrest</td></tr><tr><td><b>Adze</b></td><td>The flat, wide end of the head</td><td>Chops steps in hard snow and ice</td></tr><tr><td><b>Shaft</b></td><td>Straight or slightly angled; aluminium, titanium, steel alloys or composites</td><td>The handle; on moderate slopes it works like a walking stick</td></tr><tr><td><b>Spike</b> (ferrule)</td><td>The pointed metal tip at the base of the shaft</td><td>Pushes into the snow when you use the axe for balance</td></tr><tr><td><b>Leash</b> (optional)</td><td>A strap clipped through the head or shaft</td><td>Keeps the axe attached to you if you let go</td></tr></tbody></table></div><div class=\"szm-call\"><p><b>A little history.</b> Climbers first used the alpenstock, a wooden pole with an iron spike. Around 1840 the pole and a hatchet were merged into the first true ice axe. In 1966 Yvon Chouinard pioneered strongly curved picks, which led to the modern ice tools used on steep ice.</p></div>"
+  },
+  {
+   "id": "types",
+   "label": "Types",
+   "kicker": "Basic or technical",
+   "h2": "Basic vs technical ice axes",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>Basic (B)</h3><ul><li>For general mountaineering: walking on snow, glaciers and moderate slopes.</li><li>The axe a beginner uses on a trekking peak.</li></ul></div><div class=\"szm-col\"><h3>Technical (T)</h3><ul><li>Built stronger for steep and vertical terrain.</li><li>For experienced climbers on steep snow and ice.</li></ul></div><div class=\"szm-col\"><h3>Ice tools</h3><ul><li>Short, strongly curved axes used in pairs.</li><li>Made for climbing vertical ice.</li><li>Not needed on beginner peaks.</li></ul></div></div><div class=\"szm-call\"><p><b>The standard to look for.</b> The UIAA safety standard for ice tools, UIAA 152 (2025), is based on the European standard EN 13089 and separates basic (B) from technical (T) axes. Certified tools carry the UIAA trademark or the letters “UIAA”.</p></div>"
+  },
+  {
+   "id": "length",
+   "label": "Length",
+   "kicker": "Sizing",
+   "h2": "Ice axe length: what size do you need?",
+   "html": "<p>Modern mountaineers typically carry an axe of <b>45 to 60 cm</b> (about 18 to 24 in) for general use. Anything over 60 cm is usually regarded as too large and unwieldy.</p><p>Older rules that size an axe from your body height are disputed, so we do not give one. Your guide sizes the axe for you and for the peak.</p><p class=\"szm-note\">On a guided climb the axe is often lent to you. Ask for one in the 45–60 cm range and check it on the first snow day.</p>"
+  },
+  {
+   "id": "uses",
+   "label": "Uses",
+   "kicker": "Four jobs",
+   "h2": "How climbers use an ice axe",
+   "html": "<ol class=\"szm-steps\"><li><b>Balance on a slope.</b>On moderate snow you hold the axe by the head and push the spike into the slope with each step, like a walking stick: a third point of contact.</li><li><b>Stop a slide (self-arrest).</b>If you slip on a snow slope, the pick is your brake. More on this below.</li><li><b>Cut steps.</b>The adze chops footholds in hard snow and ice where kicking steps is not enough.</li><li><b>Anchor.</b>Buried in the snow, an axe can serve as an anchor for a rope.</li></ol><p>On a guided climb in India you will mostly use the first two. On steep sections, guides often fix ropes and you move on them with the axe in one hand.</p>"
+  },
+  {
+   "id": "self-arrest",
+   "label": "Self-arrest",
+   "kicker": "The axe as a brake",
+   "h2": "What is self-arrest?",
+   "html": "<p>Self-arrest is stopping your own slide on a snow or ice slope with the ice axe. In outline, the falling climber gets the pick into the snow with the axe across the body, rolls onto it so their body weight presses the pick in, and digs in their boots or crampon points until they stop.</p><p>It has to be practised until it is instinctive: that is why it is taught on a safe slope, never first tried on the real one.</p><div class=\"szm-call\"><p><b>Learn it in person, not from a page.</b> The British Mountaineering Council puts it plainly: there is no substitute for skills taught face to face by an experienced instructor. On a guided Himachal climb, your guides run a snow-skills session near base camp before summit day: holding the axe, walking with it, and self-arrest on a safe slope. Formal training is covered in our <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses guide</a>.</p></div>"
+  },
+  {
+   "id": "by-peak",
+   "label": "By peak",
+   "kicker": "Himachal climbs",
+   "h2": "Where you use an ice axe on Himachal peaks",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Where the axe comes in</th></tr></thead><tbody><tr><td><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a><br>5,289 m / 17,352 ft</td><td>Steep snow near the summit, with ice axe and crampons, usually roped</td></tr><tr><td><a href=\"/mountains-of-india/hanuman-tibba/\">Hanuman Tibba</a><br>5,982 m / 19,626 ft (heights quoted vary by survey, from 5,860 m)</td><td>Snow and ice of about 45°–50° on the upper mountain</td></tr><tr><td><a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a><br>6,001 m / 19,688 ft</td><td>A couloir of 45°–65° to the Duhangan Col on fixed ropes (AAJ, 1961)</td></tr></tbody></table></div><p class=\"szm-note\">Conditions change with the month and the year: follow the gear list your outfitter and guide give you. New to snow? Start with the <a href=\"/mountains-of-india/trekking-peaks/\">trekking peaks guide</a>, or browse the <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>.</p>"
+  },
+  {
+   "id": "borrow-buy",
+   "label": "Borrow or buy",
+   "kicker": "Borrow · rent · buy",
+   "h2": "Do you need your own ice axe?",
+   "html": "<ol class=\"szm-steps\"><li><b>Ask what is on loan.</b>On guided climbs, group technical gear often includes an ice axe, crampons and a helmet on loan. Get the list of what is provided in writing before you pack.</li><li><b>On a course, it is provided.</b>The Nehru Institute of Mountaineering provides technical equipment to its trainees.</li><li><b>Check it before you trust it.</b>Whether the axe is yours, borrowed or rented, look for the UIAA or CE/EN marking and check the head, pick and spike for damage.</li><li><b>Bring it all back down.</b>The Indian Mountaineering Foundation's expedition rules say all ropes and technical gear must be retrieved from the mountain.</li></ol>"
+  }
+ ],
+ "quote_h2": "Plan a guided Himachal climb with Suzu",
+ "quote_text": "Tell us your peak and dates. We pair you with a registered Himachal outfitter and certified guides, confirm in writing which technical gear is provided, and add hotels and transfers: one plan, one quote.",
+ "faq_h2": "Ice axe questions beginners ask",
+ "faqs": [
+  [
+   "What is an ice axe used for?",
+   "For balance on snow slopes, for stopping a slide (self-arrest), for cutting steps in hard snow and ice, and as an anchor when buried in the snow."
+  ],
+  [
+   "What are the parts of an ice axe?",
+   "The head (with a pointed pick at one end and a flat adze at the other), the shaft, the spike at the base, and often a leash."
+  ],
+  [
+   "What size ice axe do I need?",
+   "Most climbers use an axe of 45 to 60 cm for general mountaineering; over 60 cm is usually too unwieldy. Your guide sizes it for the peak."
+  ],
+  [
+   "What is self-arrest?",
+   "Stopping your own slide on a snow slope by getting the pick into the snow and pressing your body weight onto it. It has to be practised with an instructor until it is instinctive."
+  ],
+  [
+   "What is the difference between a basic and a technical ice axe?",
+   "A basic (B) axe is for walking and general mountaineering; a technical (T) axe is built for steep and vertical ice. Beginners on trekking peaks use a basic axe."
+  ],
+  [
+   "Do I need my own ice axe for Friendship Peak?",
+   "Usually not: outfitters commonly lend one on guided climbs. Confirm in the written inclusions before you travel."
+  ],
+  [
+   "Which hand do you hold an ice axe in?",
+   "Usually the uphill hand. Your guide shows you on the slope during the snow-skills session."
+  ],
+  [
+   "Do I need an ice axe on a winter trek?",
+   "Only where steep, hard snow is expected. Your trek leader decides, based on the route and the conditions."
+  ]
+ ],
+ "links": [
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "Records, permits and training"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 156 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Deo Tibba"
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Ice axe",
+   "https://en.wikipedia.org/wiki/Ice_axe"
+  ],
+  [
+   "Wikipedia — Self-arrest",
+   "https://en.wikipedia.org/wiki/Self-arrest"
+  ],
+  [
+   "UIAA 152 — Ice-tools safety standard (PDF, 2025)",
+   "https://www.theuiaa.org/documents/safety-standards/UIAA_152-IceTools-2025.pdf"
+  ],
+  [
+   "UIAA — Safety standards",
+   "https://www.theuiaa.org/safety/safety-standards/"
+  ],
+  [
+   "British Mountaineering Council — Winter skills video series",
+   "https://services.thebmc.co.uk/watch-and-learn-new-winter-skills-video-series"
+  ],
+  [
+   "Nehru Institute of Mountaineering — brochure (PDF, 2023)",
+   "https://www.nimindia.net/_files/ugd/25f551_0536aef95dba40dab0207f89a84667b0.pdf"
+  ],
+  [
+   "Indian Mountaineering Foundation — Expedition application",
+   "https://www.indmount.org/IMF/expeapp"
+  ],
+  [
+   "American Alpine Journal — Derbyshire Himalayan Expedition (1961)",
+   "https://publications.americanalpineclub.org/articles/12196227503"
+  ]
+ ]
+}

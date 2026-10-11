@@ -8,7 +8,7 @@
  "commercial": true,
  "label": "Crampons & mountaineering boots",
  "blurb": "Crampon types, B1–B3 boots and which pair for which peak",
- "verified": "10 Oct 2026",
+ "verified": "11 Oct 2026",
  "kicker": "Crampons & boots · Beginner's guide · 2026",
  "tag": "Grip for snow and ice.",
  "sub": "A plain-English, brand-free guide for first-time climbers: what crampons are, how strap, hybrid and step-in models attach, what the B1, B2 and B3 boot ratings mean, which pair suits which Himachal peak, and when you rent, borrow or buy.",
@@ -197,5 +197,13 @@
    "Wikipedia — Deo Tibba",
    "https://en.wikipedia.org/wiki/Deo_Tibba"
   ]
- ]
+ ],
+ "ladder_label": "Grades by height",
+ "ladder_kicker": "At a glance",
+ "ladder_h2": "Boot and crampon grades on four Himachal peaks",
+ "ladder_text": [
+  "The animation draws Friendship Peak (5,289 m / 17,352 ft), Hanuman Tibba (5,982 m / 19,626 ft), Deo Tibba (6,001 m / 19,688 ft) and Yunam (6,111 m / 20,049 ft) at their true heights, with the boot and crampon pairing that is <b>typical</b> on each.",
+  "Height alone does not set the grade: steep snow, ice and fixed ropes do. Treat these pairings as a starting point and follow the gear list your outfitter and guide give you."
+ ],
+ "ladder_alt": "Animated chart of Friendship Peak, Hanuman Tibba, Deo Tibba and Yunam at their true heights, with typical boot and crampon grades for each"
 }
