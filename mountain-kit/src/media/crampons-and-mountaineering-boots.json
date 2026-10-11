@@ -84,5 +84,22 @@
     }
    }
   ]
+ },
+ "ladder": {
+  "kicker": "CRAMPONS & BOOTS · BY PEAK",
+  "title": "Typical boot and crampon grades, by peak",
+  "peaks": [
+   "friendship-peak",
+   "hanuman-tibba",
+   "deo-tibba",
+   "mount-yunam"
+  ],
+  "subs": {
+   "friendship-peak": "B2 boot · C1–C2",
+   "hanuman-tibba": "B2–B3 boot · C2",
+   "deo-tibba": "B2–B3 boot · C2",
+   "mount-yunam": "B2 boot · C1–C2"
+  },
+  "end": "Typical pairings only: follow your outfitter's gear list"
  }
 }
