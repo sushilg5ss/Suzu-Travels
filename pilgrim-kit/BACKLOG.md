@@ -13,7 +13,7 @@
 | 3 | live 2026-10-08 | `shakti-peeth-himachal` | hub | circuit | shakti peeth in himachal pradesh (2,400) | devi | Navratri from 11 Oct — publish first. CTA product 10861. Sati story-strip |
 | 4 | live 2026-10-09 | `naina-devi` | hub | temple | naina devi (110,000) | devi | Bilaspur = Suzu's home district. Cable car, Shravan mela, Gobind Sagar |
 | 5 | live 2026-10-10 | `nau-devi-yatra` | hub | circuit | nau devi yatra (90; 9 devi yatra 140) | devi + route-map | 9-day route with km table (shaktipeeth-notes §3) |
-| 6 | media | `chintpurni` | hub | temple | chintpurni temple (8,100; chintpurni 90,500) | devi | Sugam Darshan; Mai Das legend |
+| 6 | live 2026-10-11 | `chintpurni` | hub | temple | chintpurni temple (8,100; chintpurni 90,500) | devi | Sugam Darshan; Mai Das legend |
 | 7 | media | `jwala-ji` | hub | temple | jwalamukhi temple (18,100) | devi | Flames: tradition + geology side by side |
 | 8 | media | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
 | 9 | media | `kashi-vishwanath` | 12-JL | temple | kashi vishwanath temple (673,000) | ghats | shrine kashi-vishwanath-jyotirlinga; CTA 10584 |
