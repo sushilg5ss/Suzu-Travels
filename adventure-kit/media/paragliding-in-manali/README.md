@@ -1,0 +1,10 @@
+# paragliding-in-manali media (Visual Studio, 11 Oct 2026)
+
+Files @58e1ed7 (HyperFrames 0.8.85; compositions = paragliding-in-manali-{hero,explainer,reel}.html):
+- hero.webm 1.30 MB / hero.mp4 1.29 MB / poster.webp 78 KB (WP 12808) — 12 s seamless 1920x1080 (first vs last frame mean diff ~1/255): red wing over pines near Manali → paraglider above Solang snow peaks → tandem selfie in flight → snow peaks in cloud; right half "Paragliding in Manali", schematic Kullu valley map (Beas line, Manali + Kullu towns, Rohtang road) with Solang, Gulaba, Kothi, Dobhi pins; a glider flies a gold line from Solang to Dobhi; rotating facts (9 registered sites in Kullu · Tandem, no experience needed · Closed 15 Jul–15 Sep · Age 12+ · 30 kg+).
+- explainer.webm 0.25 MB / explainer.mp4 0.19 MB / explainer-poster.webp 50 KB (WP 12809) — 11 s "Pick your Manali flight": valley map, short hop ↔ longer flight bar, 4 rows (Solang / Dobhi / Gulaba · Kothi / Kullu side), month bar (best Mar–Jun + Oct–Nov, snow may close roads Dec–Feb, closed 15 Jul–15 Sep), chips 12+ · 30 kg+, Price: Get Quote, Registered pilots only.
+- reel-web.webm 0.66 MB / reel-web.mp4 0.72 MB / reel-web-poster.webp 25 KB — 15 s 9:16; end card suzutravels.com/adventure/paragliding-in-manali + HP Tourism reg. no.
+- reel-section.html — ready #reel section for the Page Builder (insert before `<section class="sza-quote">`).
+
+Photos (WP): new 12806 snow-capped Himalayan peaks in cloud (Pexels 32261644, generic) · 12807 paraglider in hazy evening sky (Pexels 14760650, generic). Reused: 11937 red wing near Manali (Pexels 6149892, captioned Manali) · 11938 paraglider above Solang snow peaks (Pexels 17521689, captioned Solang) · 12473 tandem in flight (generic) · 12703 tandem pair ready on a hilltop (generic) · 12615 wings inflating on grass (generic) · 12476 yellow wing over green fields (generic).
+Facts only from the brief (Tribune 15 Sep 2026 etc.); nothing from its unverified list (no heights, minutes, Marhi/Bijli Mahadev, upper weight).
