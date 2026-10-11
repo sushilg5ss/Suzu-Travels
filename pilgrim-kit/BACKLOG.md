@@ -15,8 +15,8 @@
 | 5 | live 2026-10-10 | `nau-devi-yatra` | hub | circuit | nau devi yatra (90; 9 devi yatra 140) | devi + route-map | 9-day route with km table (shaktipeeth-notes §3) |
 | 6 | media | `chintpurni` | hub | temple | chintpurni temple (8,100; chintpurni 90,500) | devi | Sugam Darshan; Mai Das legend |
 | 7 | media | `jwala-ji` | hub | temple | jwalamukhi temple (18,100) | devi | Flames: tradition + geology side by side |
-| 8 | todo | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
-| 9 | todo | `kashi-vishwanath` | 12-JL | temple | kashi vishwanath temple (673,000) | ghats | shrine kashi-vishwanath-jyotirlinga; CTA 10584 |
+| 8 | researched | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
+| 9 | researched | `kashi-vishwanath` | 12-JL | temple | kashi vishwanath temple (673,000) | ghats | shrine kashi-vishwanath-jyotirlinga; CTA 10584 |
 | 10 | todo | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
 | 11 | todo | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
 | 12 | todo | `kedarnath` | hub | yatra | kedarnath yatra (8,100; kedarnath temple 135,000) | himalaya | Link post 12021 for closing date; heli only via IRCTC |
