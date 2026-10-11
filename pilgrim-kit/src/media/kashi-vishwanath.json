@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "night",
+  "deva": "श्री काशी विश्वनाथ",
+  "kicker": "Jyotirlinga · Varanasi, Uttar Pradesh",
+  "beats": [
+   "Shiva and Shakti chose Kashi",
+   "The city rests on his trident",
+   "Shiva whispers the mantra of moksha",
+   "Vishwanath, Lord of the Universe"
+  ]
+ },
+ "story": {
+  "title": "The legend of Kashi",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "A column of light with no beginning or end"},
+   {"arch": "ghats", "sky": "dawn", "line": "Kashi, it is said, rests on Shiva's trident"},
+   {"arch": "ghats", "sky": "dusk", "line": "Diyas on the river — the mantra of liberation"},
+   {"arch": "ghats", "sky": "night", "line": "Vishwanath, Lord of the Universe, keeps watch"}
+  ]
+ }
+}

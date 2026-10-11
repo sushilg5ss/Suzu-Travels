@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "dusk",
+  "deva": "श्री सोमनाथ",
+  "kicker": "Jyotirlinga 1 · Prabhas Patan, Gujarat",
+  "beats": [
+   "Daksha cursed the Moon to fade",
+   "Chandra prayed to Shiva at Prabhas",
+   "Shiva eased the curse: wax, wane",
+   "Light returned and Somnath rose"
+  ]
+ },
+ "story": {
+  "title": "The legend of Somnath",
+  "beats": [
+   {"arch": "nagara", "sky": "night", "line": "Cursed by Daksha, the Moon begins to fade"},
+   {"arch": "pillar", "sky": "night", "line": "Chandra prays at Prabhas — Shiva appears as light"},
+   {"arch": "nagara", "sky": "dawn", "line": "The curse is eased: the Moon waxes and wanes"},
+   {"arch": "nagara", "sky": "dusk", "line": "Somnath, Lord of the Moon, rises by the sea"}
+  ]
+ }
+}
