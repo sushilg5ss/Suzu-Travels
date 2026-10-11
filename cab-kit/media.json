@@ -383,5 +383,21 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "amritsar-taxi-service": {
+  "hero": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@990414cf49a3ac5dfef1ee5ac37cfc3be8c2e798/cab-kit/media/amritsar-taxi-service/hero.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@990414cf49a3ac5dfef1ee5ac37cfc3be8c2e798/cab-kit/media/amritsar-taxi-service/hero.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@990414cf49a3ac5dfef1ee5ac37cfc3be8c2e798/cab-kit/media/amritsar-taxi-service/hero-poster.webp",
+   "w": 1600,
+   "h": 900
+  },
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@990414cf49a3ac5dfef1ee5ac37cfc3be8c2e798/cab-kit/media/amritsar-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@990414cf49a3ac5dfef1ee5ac37cfc3be8c2e798/cab-kit/media/amritsar-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@990414cf49a3ac5dfef1ee5ac37cfc3be8c2e798/cab-kit/media/amritsar-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
