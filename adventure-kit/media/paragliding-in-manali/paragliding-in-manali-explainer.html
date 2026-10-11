@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .kicker { position: absolute; left: 120px; top: 56px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; }
+      .title { position: absolute; left: 120px; top: 98px; color: #fff; font-weight: 800; font-size: 80px; letter-spacing: -0.02em; }
+      .mapbox { position: absolute; left: 120px; top: 230px; width: 700px; height: 480px; border-radius: 28px; background: #12304d; border: 3px solid rgba(255,255,255,0.14); }
+      .mapbox svg { position: absolute; left: 0; top: 0; width: 700px; height: 480px; overflow: visible; }
+      .ml2 { position: absolute; color: #fff; font-weight: 800; font-size: 28px; white-space: nowrap; }
+      .ml2.town { font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.8); }
+      .nts { position: absolute; right: 22px; bottom: 16px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 20px; }
+      .scale { position: absolute; left: 900px; top: 236px; width: 900px; height: 70px; }
+      .scale .ln { position: absolute; left: 0; top: 30px; width: 900px; height: 10px; border-radius: 5px; background: linear-gradient(90deg, #ffffff 0%, #d4a24c 100%); }
+      .scale .a { position: absolute; left: 0; top: 46px; color: #fff; font-weight: 800; font-size: 26px; }
+      .scale .b { position: absolute; right: 0; top: 46px; color: #d4a24c; font-weight: 800; font-size: 26px; }
+      .scale .dot { position: absolute; top: 22px; width: 26px; height: 26px; border-radius: 13px; border: 4px solid #0b1f33; }
+      .row { position: absolute; left: 900px; width: 900px; height: 84px; border-radius: 18px; background: #12304d; border: 2px solid rgba(255,255,255,0.12); }
+      .row .n { position: absolute; left: 28px; top: 0; line-height: 84px; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .row .d { position: absolute; left: 330px; top: 0; line-height: 84px; color: #d4a24c; font-weight: 500; font-size: 28px; white-space: nowrap; }
+      .months { position: absolute; left: 120px; top: 790px; width: 1680px; height: 90px; }
+      .m { position: absolute; top: 0; width: 132px; height: 56px; border-radius: 12px; background: #1d4266; }
+      .mn { position: absolute; top: 64px; width: 132px; text-align: center; color: #fff; font-weight: 500; font-size: 24px; }
+      .closed { position: absolute; top: 0; height: 56px; border-radius: 12px; background: repeating-linear-gradient(135deg, #4a5a6a 0 14px, #3a4856 14px 28px); }
+      .closedl { position: absolute; top: 10px; color: #fff; font-weight: 800; font-size: 26px; white-space: nowrap; }
+      .legend { position: absolute; left: 120px; top: 742px; color: #fff; font-weight: 800; font-size: 28px; white-space: nowrap; }
+      .chips { position: absolute; left: 120px; top: 936px; width: 1680px; height: 90px; }
+      .chip { position: absolute; top: 0; height: 80px; padding: 0 38px; border-radius: 40px; font-weight: 800; font-size: 38px; line-height: 80px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker" id="k">KULLU–MANALI · 9 REGISTERED SITES</div>
+        <div class="title" id="ti">Pick your Manali flight</div>
+        <div class="mapbox" id="mb">
+          <svg viewBox="0 0 700 480">
+            <path id="rd" d="M 250 140 L 420 112 L 560 56" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="3" stroke-dasharray="10 10" />
+            <path id="rv" d="M 110 40 Q 230 120 320 200 Q 372 268 360 330 Q 352 390 410 460" fill="none" stroke="rgba(150,200,240,0.9)" stroke-width="6" stroke-linecap="round" />
+            <rect x="308" y="188" width="24" height="24" rx="4" fill="#fff" stroke="#0b1f33" stroke-width="3" />
+            <rect x="420" y="424" width="24" height="24" rx="4" fill="#fff" stroke="#0b1f33" stroke-width="3" />
+            <circle id="pS" cx="170" cy="78" r="15" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle id="pD" cx="360" cy="330" r="15" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle id="pG" cx="560" cy="56" r="15" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle id="pK" cx="420" cy="112" r="15" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle id="pR" cx="330" cy="420" r="15" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+          </svg>
+          <div class="ml2" id="lS" style="left:110px; top:100px">Solang</div>
+          <div class="ml2" id="lD" style="left:388px; top:312px">Dobhi</div>
+          <div class="ml2" id="lG" style="left:520px; top:78px">Gulaba</div>
+          <div class="ml2" id="lK" style="left:400px; top:134px">Kothi</div>
+          <div class="ml2" id="lR" style="left:16px; top:404px; font-size:25px">Raisan · Gadsa · Peej</div>
+          <div class="ml2 town" style="left:220px; top:216px">Manali</div>
+          <div class="ml2 town" style="left:456px; top:422px">Kullu</div>
+          <div class="nts">Not to scale</div>
+        </div>
+        <div class="scale" id="sc">
+          <div class="ln"></div>
+          <div class="dot" style="left:30px; background:#fff"></div>
+          <div class="dot" style="left:844px; background:#d4a24c"></div>
+          <div class="a">Short hop</div>
+          <div class="b">Longer flight</div>
+        </div>
+        <div class="row" id="r1" style="top:330px"><div class="n">Solang</div><div class="d">Nearest to Manali · short flights</div></div>
+        <div class="row" id="r2" style="top:426px"><div class="n">Dobhi</div><div class="d">Higher take-off · longer flights</div></div>
+        <div class="row" id="r3" style="top:522px"><div class="n">Gulaba · Kothi</div><div class="d">Rohtang road · snow-peak views</div></div>
+        <div class="row" id="r4" style="top:618px"><div class="n">Kullu side</div><div class="d">Fly + raft the Beas the same day</div></div>
+        <div class="legend" id="lg"><span style="color:#d4a24c">■</span> Best months &nbsp;&nbsp; <span style="color:#7fa6c9">■</span> Snow may close roads &nbsp;&nbsp; <span style="color:#7a8a9a">■</span> No flying</div>
+        <div class="months" id="mo"></div>
+        <div class="chips">
+          <div class="chip" id="ch1" style="left:0; background:#d4a24c; color:#0b1f33">Age 12+ · 30 kg+</div>
+          <div class="chip" id="ch2" style="left:460px; background:#fff; color:#0b1f33">Price: Get Quote</div>
+          <div class="chip" id="ch3" style="left:920px; border:3px solid #fff; color:#fff; line-height:74px">Registered pilots only</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const mo = document.getElementById("mo");
+      const names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      const best = [2,3,4,5,9,10];
+      const snow = [0,1,11];
+      const W = 140;
+      const boxes = [];
+      names.forEach((n, i) => {
+        const b = document.createElement("div"); b.className = "m"; b.style.left = (i * W) + "px"; mo.appendChild(b); boxes.push(b);
+        const l = document.createElement("div"); l.className = "mn"; l.style.left = (i * W) + "px"; l.textContent = n; mo.appendChild(l);
+      });
+      const cl = document.createElement("div"); cl.className = "closed"; cl.id = "cl";
+      cl.style.left = (6 * W + 66) + "px"; cl.style.width = (2 * W) + "px"; mo.appendChild(cl);
+      const cll = document.createElement("div"); cll.className = "closedl"; cll.id = "cll";
+      cll.style.left = (6 * W + 66 + 20) + "px"; cll.textContent = "Closed 15 Jul–15 Sep"; mo.appendChild(cll);
+
+      tl.fromTo("#k", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo("#ti", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.25);
+      tl.fromTo("#mb", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.6);
+      const rv = document.getElementById("rv"); const LR = rv.getTotalLength();
+      tl.fromTo(rv, { strokeDasharray: LR + " " + LR, strokeDashoffset: LR }, { strokeDashoffset: 0, duration: 1.2, ease: "sine.inOut" }, 0.9);
+      tl.fromTo("#sc", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 1.4);
+      const pairs = [["#pS","#lS","#r1"],["#pD","#lD","#r2"],["#pG","#lG","#r3"],["#pR","#lR","#r4"]];
+      pairs.forEach(([p, l, r], k) => {
+        const t = 1.9 + k * 0.7;
+        tl.fromTo(p, { attr: { r: 0 } }, { attr: { r: 15 }, duration: 0.4, ease: "back.out(3)" }, t);
+        tl.fromTo(l, { opacity: 0 }, { opacity: 1, duration: 0.3 }, t + 0.1);
+        tl.fromTo(r, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, t);
+      });
+      tl.fromTo("#pK", { attr: { r: 0 } }, { attr: { r: 15 }, duration: 0.4, ease: "back.out(3)" }, 3.4);
+      tl.fromTo("#lK", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 3.5);
+      tl.fromTo("#lg", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 4.8);
+      boxes.forEach((b, i) => {
+        tl.fromTo(b, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 4.9 + i * 0.06);
+        if (best.includes(i)) tl.to(b, { backgroundColor: "#d4a24c", duration: 0.35 }, 6.0 + best.indexOf(i) * 0.1);
+        if (snow.includes(i)) tl.to(b, { backgroundColor: "#7fa6c9", duration: 0.35 }, 6.7);
+      });
+      tl.fromTo(".mn", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 5.1);
+      tl.fromTo("#cl", { opacity: 0, scaleX: 0 }, { opacity: 1, scaleX: 1, transformOrigin: "left center", duration: 0.6, ease: "power2.out" }, 7.0);
+      tl.fromTo("#cll", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 7.4);
+      tl.fromTo("#ch1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(2)" }, 8.1);
+      tl.fromTo("#ch2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(2)" }, 8.4);
+      tl.fromTo("#ch3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(2)" }, 8.7);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
