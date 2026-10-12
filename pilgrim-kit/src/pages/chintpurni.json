@@ -19,7 +19,7 @@
  "facts": [["3 aartis", "daily — morning, midday and evening"], ["~40 km", "north of Una town"], ["~31 km", "by road to Jwala Ji"], ["4 Shiva shrines", "guard the dham on four sides"]],
  "intro": [
   "The goddess of Chintpurni is Chhinnamastika (Chhinnamasta), the Mahavidya who is shown holding her own severed head — a form that speaks of the Mother giving even herself for those who depend on her. The temple trust describes the dham as guarded by Shiva, as Rudra Mahadev, on all four sides: Kaleshwar Mahadev to the east, Narahna to the west, Muchhkund to the north and Shiv Bari to the south.",
-  "Chintpurni is the second stop on the <a href=\"/pilgrimage-tours/shakti-peeth-himachal/\">five Shakti Peeths of Himachal</a> circuit, after <a href=\"/pilgrimage-tours/naina-devi/\">Naina Devi</a> and before Jwala Ji, and one of the nine shrines of the <a href=\"/pilgrimage-tours/nau-devi-yatra/\">Nau Devi Yatra</a>. Please note that this is the Himachal temple — the Chhinnamasta temple at Rajrappa in Jharkhand is a different shrine of the same goddess."
+  "Chintpurni is the second stop on the <a href=\"/pilgrimage-tours/shakti-peeth-himachal/\">five Shakti Peeths of Himachal</a> circuit, after <a href=\"/pilgrimage-tours/naina-devi/\">Naina Devi</a> and before <a href=\"/pilgrimage-tours/jwala-ji/\">Jwala Ji</a>, and one of the nine shrines of the <a href=\"/pilgrimage-tours/nau-devi-yatra/\">Nau Devi Yatra</a>. Please note that this is the Himachal temple — the Chhinnamasta temple at Rajrappa in Jharkhand is a different shrine of the same goddess."
  ],
  "story": {
   "h2": "The story of Chintpurni",
@@ -58,7 +58,7 @@
  "quote_h2": "Plan your Chintpurni darshan with Suzu",
  "quote_text": "Chintpurni is next door to our home district of Bilaspur. We plan Chintpurni trips, the five Shakti Peeth circuit and the Nau Devi yatra — cars, stays and timings that keep you clear of the worst mela crowds.",
  "wa": "Namaste Suzu Travels, I want to plan a yatra to Chintpurni. From city: ___ , dates: ___ , people: ___",
- "links": ["shakti-peeth-himachal", "naina-devi", "nau-devi-yatra"],
+ "links": ["shakti-peeth-himachal", "naina-devi", "nau-devi-yatra", "jwala-ji"],
  "place": {"type": "HinduTemple", "name": "Mata Shri Chintpurni Temple", "alt": "माता श्री चिंतपूर्णी मंदिर", "town": "Chintpurni", "state": "Himachal Pradesh", "lat": 31.80862, "lon": 76.10287, "sameAs": ["https://en.wikipedia.org/wiki/Chintpurni"]},
  "faqs": [
   ["What are Chintpurni temple timings?", "The temple trust does not publish clock times. There are three daily aartis — morning, midday and evening — and hours are longer during Navratri. Check matashrichintpurni.com or confirm locally before you go."],
@@ -82,5 +82,5 @@
   ["Navratri dates — Dekho Panchang", "https://dekhopanchang.com/en/festivals/navaratri"]
  ],
  "verified": "11 Oct 2026",
- "modified": "2026-10-11"
+ "modified": "2026-10-12"
 }

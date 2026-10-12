@@ -4,5 +4,6 @@
  "shakti-peeth-himachal": {"id": 12566, "path": "/pilgrimage-tours/shakti-peeth-himachal/", "kind": "circuit", "label": "5 Shakti Peeths of Himachal", "blurb": "Naina Devi to Chamunda in one loop", "added": "2026-10-08"},
  "naina-devi": {"id": 12672, "path": "/pilgrimage-tours/naina-devi/", "kind": "temple", "label": "Naina Devi, Bilaspur", "blurb": "Shakti Peeth above Gobind Sagar", "added": "2026-10-09", "shrine": "naina-devi-bilaspur"},
  "nau-devi-yatra": {"id": 12733, "path": "/pilgrimage-tours/nau-devi-yatra/", "kind": "circuit", "label": "Nau Devi Yatra", "blurb": "Nine Devis, from Shakumbhari to Vaishno Devi", "added": "2026-10-10"},
- "chintpurni": {"id": 12855, "path": "/pilgrimage-tours/chintpurni/", "kind": "temple", "label": "Chintpurni, Una", "blurb": "Chhinnamastika, ringed by four Shiva shrines", "added": "2026-10-11", "shrine": "chintpurni-una"}
+ "chintpurni": {"id": 12855, "path": "/pilgrimage-tours/chintpurni/", "kind": "temple", "label": "Chintpurni, Una", "blurb": "Chhinnamastika, ringed by four Shiva shrines", "added": "2026-10-11", "shrine": "chintpurni-una"},
+ "jwala-ji": {"id": 12935, "path": "/pilgrimage-tours/jwala-ji/", "kind": "temple", "label": "Jwala Ji, Kangra", "blurb": "The Devi as living flame, with no idol", "added": "2026-10-12", "shrine": "jwalamukhi-jwala-ji-kangra"}
 }
