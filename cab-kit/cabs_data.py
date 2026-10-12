@@ -87,6 +87,10 @@ PLACES = {
     "Gulmarg": (34.05, 74.38), "Tangmarg": (34.06, 74.43), "Sonamarg": (34.30, 75.29), "Pahalgam": (34.02, 75.32),
     "Doodhpathri": (33.87, 74.56), "Yusmarg": (33.83, 74.66), "Baramulla": (34.20, 74.34), "Kargil": (34.56, 76.13),
     "Batala": (31.82, 75.20), "Gurdaspur": (32.04, 75.40),
+    "Ghaziabad": (28.67, 77.44), "Hapur": (28.73, 77.78), "Garhmukteshwar": (28.79, 78.10), "Gajraula": (28.85, 78.24),
+    "Moradabad": (28.84, 78.77), "Rampur": (28.81, 79.03), "Rudrapur": (28.98, 79.40), "Haldwani": (29.22, 79.51),
+    "Kathgodam": (29.27, 79.54), "Bhimtal": (29.35, 79.56), "Bhowali": (29.38, 79.51), "Ramnagar": (29.39, 79.13),
+    "Almora": (29.60, 79.66), "Mukteshwar": (29.47, 79.65),
     "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
 }
 
@@ -113,7 +117,7 @@ ROUTES = [
     dict(slug="delhi-to-mussoorie-taxi", a="Delhi", b="Mussoorie", km=280, t="5–6 hrs", f=0.95),
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
-    dict(slug=None, a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.95),
+    dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.95),
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
 
