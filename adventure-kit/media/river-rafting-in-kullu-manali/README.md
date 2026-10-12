@@ -1,0 +1,10 @@
+# river-rafting-in-kullu-manali media (Visual Studio, 12 Oct 2026)
+
+Files @d1b185a (HyperFrames 0.8.85; compositions = river-rafting-in-kullu-manali-{hero,explainer,reel}.html):
+- hero.webm 1.52 MB / hero.mp4 1.50 MB / poster.webp 83 KB (WP 12893) — 12 s seamless 1920x1080 (first vs last frame mean diff ~1.6/255): yellow raft in a white rapid → blue raft crew paddling → raft on a calm forest river → clear mountain river below snow peaks → back; right half "River Rafting in Kullu Manali", schematic Beas line Manali → Raisan → Babeli → Kullu → Pirdi with flowing water dashes and a gold raft drifting down; rotating facts (3 rafting points on the Beas · Routes about 7–14 km · Life jacket + helmet, always · Closed 15 Jul – 15 Sep).
+- explainer.webm 0.30 MB / explainer.mp4 0.22 MB / explainer-poster.webp 52 KB (WP 12894) — 11 s "Which rafting point?": Beas map (Raisan nearest to Manali, Babeli, Pirdi longest run), count-up 600 rafts · 572 guides · 176 operators (Kullu 2026), 4 rows (Raisan / Babeli / Pirdi / combo day), month bar (open Mar–Jun + Oct–Nov, very cold fair days only Dec–Feb, closed 15 Jul–15 Sep), chips Life jacket + helmet · Routes about 7–14 km · Price: Get Quote.
+- reel-web.webm 0.76 MB / reel-web.mp4 0.80 MB / reel-web-poster.webp 34 KB — 15 s 9:16; end card suzutravels.com/adventure/river-rafting-in-kullu-manali + HP Tourism reg. no.
+- reel-section.html — ready #reel section for the Page Builder (insert before `<section class="sza-quote">`).
+
+Photos (WP, all Pexels, generic — neutral alt, no place label): 12887 guide + rafters in a yellow raft in a white rapid (27828903, hero) · 12888 blue raft crew paddling through a rapid (1732284, steps) · 12889 raft on a calm forest river (1615766, season/calm) · 12890 wide river valley between steep mountains (12404230, Tattapani card) · 12891 clear mountain river below snow peaks (27033995, season) · 12892 kayaker in white water (2250521, safety / rescue kayak). Reused: 11538 group rafting through white water (hub).
+Facts only from the brief (Tribune Sep 2026 etc.); nothing from its unverified list (no grades, minutes, raft capacity, ages, Jhiri/Bajaura).
