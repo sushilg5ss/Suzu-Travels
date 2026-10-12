@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "dawn",
+  "deva": "श्री ओंकारेश्वर",
+  "kicker": "Jyotirlinga 4 · Narmada, Madhya Pradesh",
+  "beats": [
+   "Proud Vindhya longed for greatness",
+   "He shaped a linga by Narmada",
+   "Shiva appeared in two forms",
+   "An Om-shaped island became holy"
+  ]
+ },
+ "story": {
+  "title": "The legend of Omkareshwar",
+  "beats": [
+   {"arch": "nagara", "sky": "dusk", "line": "Proud Vindhya longs to rise above all"},
+   {"arch": "pillar", "sky": "night", "line": "Shiva's light shines over the earthen linga"},
+   {"arch": "ghats", "sky": "dawn", "line": "Two banks, two shrines, one Jyotirlinga"},
+   {"arch": "ghats", "sky": "dusk", "line": "Diyas float on the Narmada at dusk"}
+  ]
+ }
+}

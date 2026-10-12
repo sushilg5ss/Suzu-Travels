@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "night",
+  "deva": "श्री महाकालेश्वर",
+  "kicker": "Jyotirlinga 3 · Ujjain, Madhya Pradesh",
+  "beats": [
+   "A demon terrorised the city of Avanti",
+   "Brahmins kept chanting Shiva's name",
+   "Mahakal burst from the earth",
+   "Ujjain's eternal guardian took his seat"
+  ]
+ },
+ "story": {
+  "title": "The legend of Mahakal",
+  "beats": [
+   {"arch": "nagara", "sky": "night", "line": "A shadow falls over the city of Avanti"},
+   {"arch": "pillar", "sky": "night", "line": "Shiva rises from the earth as light"},
+   {"arch": "nagara", "sky": "dawn", "line": "Before dawn, the Bhasma Aarti glows"},
+   {"arch": "ghats", "sky": "dusk", "line": "Diyas on the Shipra — Mahakal keeps watch"}
+  ]
+ }
+}
