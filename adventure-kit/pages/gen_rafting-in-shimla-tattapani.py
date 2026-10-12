@@ -8,7 +8,7 @@ UP = "https://suzutravels.com/wp-content/uploads/2026/10/"
 QUOTE = "/himachal-tour-packages-quote/?activity=" + urllib.parse.quote("Rafting at Tattapani")
 
 def wa(activity, place="Tattapani near Shimla", tag=SLUG):
-    t = f"Hi Suzu Travels, I want a quote for {activity} at {place}. Travel date: ___ , people: ___ (page: {tag})"
+    t = f"Hi Suzu Travels, I want a quote for {activity}{' at ' + place if place else ''}. Travel date: ___ , people: ___ (page: {tag})"
     return "https://wa.me/917087488961?text=" + urllib.parse.quote(t, safe="")
 
 def walink(activity, label, cls="sza-btn gold", place="Tattapani near Shimla"):
@@ -41,7 +41,7 @@ cards = "".join([
          "Cars driving along a winding mountain road through pine forest",
          "Day plan", "Shimla day trip", "<b>About 55 km each way</b>",
          "Leave Shimla in the morning, raft, ride and soak, and be back by evening in our cab.",
-         "a Shimla day trip to Tattapani with rafting", place="Shimla"),
+         "a Shimla day trip to Tattapani with rafting", place=None),
     card(f"{UP}wide-himalayan-river-valley-768x982.webp", 768, 982,
          "Wide river winding through a deep green Himalayan valley under a blue sky with white clouds",
          "Manali side", "Kullu rafting instead", "<b>Beas river</b> · Pirdi · Babeli · Raisan",
@@ -157,7 +157,7 @@ page = f'''<!-- rafting-in-shimla-tattapani — built by Page Builder (night) 13
 <span class="sza-kicker">Make it a trip</span>
 <h2>Pair Tattapani rafting with a Shimla trip</h2>
 <div class="sza-media"><img src="{UP}cars-on-pine-forest-mountain-road-768x512.webp" alt="Cars driving along a winding mountain road through pine forest" loading="lazy" width="768" height="512"><div><p>Tattapani is an easy day out from a Shimla stay: raft in the morning, soak in the hot springs and be back for dinner. Driving on to Manali? Tattapani works as a rafting stop on the way via Mandi.</p><p>Need only a cab? Book a <a href="/cabs/shimla-taxi-service/">Shimla taxi</a>, a <a href="/cabs/delhi-to-shimla-taxi/">Delhi to Shimla taxi</a> or a <a href="/cabs/chandigarh-to-shimla-taxi/">Chandigarh to Shimla taxi</a>.</p></div></div>
-<div class="sza-btns" style="margin-top:18px">{walink("a Shimla 2-night trip with a Tattapani rafting day", "Shimla 2N + Tattapani rafting — Get Quote", place="Shimla")}{walink("a Shimla to Tattapani to Manali road trip with a rafting stop", "Shimla → Tattapani → Manali road trip — Get Quote", cls="sza-btn line", place="Shimla")}</div>
+<div class="sza-btns" style="margin-top:18px">{walink("a Shimla 2-night trip with a Tattapani rafting day", "Shimla 2N + Tattapani rafting — Get Quote", place=None)}{walink("a Shimla to Tattapani to Manali road trip with a rafting stop", "Shimla → Tattapani → Manali road trip — Get Quote", cls="sza-btn line", place=None)}</div>
 </section>
 
 <section class="sza-sec sza-faq" id="faq">
