@@ -17,15 +17,15 @@
 | 7 | media | `jwala-ji` | hub | temple | jwalamukhi temple (18,100) | devi | Flames: tradition + geology side by side |
 | 8 | media | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
 | 9 | media | `kashi-vishwanath` | 12-JL | temple | kashi vishwanath temple (673,000) | ghats | shrine kashi-vishwanath-jyotirlinga; CTA 10584 |
-| 10 | todo | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
-| 11 | todo | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
+| 10 | researched | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
+| 11 | researched | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
 | 12 | todo | `kedarnath` | hub | yatra | kedarnath yatra (8,100; kedarnath temple 135,000) | himalaya | Link post 12021 for closing date; heli only via IRCTC |
 | 13 | todo | `char-dham-yatra` | hub | yatra | char dham yatra (90,500) | himalaya + route-map | 2027 guide; registration 60,500; CTA 9905; live before Feb 2027. On go-live: edit Rank Math redirect `/char-dham-yatra/` (302 → hub#chardham) to 301 → this page |
-| 14 | todo | `chamunda-devi` | hub | temple | chamunda devi temple (14,800) | devi | |
-| 15 | todo | `kangra-devi` | hub | temple | kangra devi temple (6,600) | devi | Brajeshwari; ghee/butter Makar Sankranti |
-| 16 | todo | `vaishno-devi-yatra` | hub | yatra | vaishno devi yatra (9,900) | cave | RFID card rules; CTA 9367 |
-| 17 | todo | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
-| 18 | todo | `badrinath` | hub | temple | badrinath temple (90,500) | himalaya | Closing date fixed on Vijayadashami |
+| 14 | todo | `badrinath` | hub | temple | badrinath temple (90,500) | himalaya | Closing date fixed on Vijayadashami (20 Oct 2026). Moved up 12 Oct 2026: Oct demand peak 110,000 + Char Dham cluster support |
+| 15 | todo | `chamunda-devi` | hub | temple | chamunda devi temple (14,800) | devi | |
+| 16 | todo | `kangra-devi` | hub | temple | kangra devi temple (6,600) | devi | Brajeshwari; ghee/butter Makar Sankranti |
+| 17 | todo | `vaishno-devi-yatra` | hub | yatra | vaishno devi yatra (9,900) | cave | RFID card rules; CTA 9367 |
+| 18 | todo | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
 | 19 | todo | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
 | 20 | todo | `rameshwaram` | 12-JL | temple | rameshwaram temple (246,000) | gopuram | 22 theerthams |
 | 21 | todo | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (135,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
