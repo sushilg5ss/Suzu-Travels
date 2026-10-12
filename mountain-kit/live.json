@@ -140,5 +140,14 @@
   "blurb": "Parts, types, length and self-arrest, explained",
   "added": "2026-10-11",
   "commercial": true
+ },
+ "what-to-wear-himalayan-climb": {
+  "id": 12914,
+  "path": "/mountains-of-india/what-to-wear-himalayan-climb/",
+  "kind": "guide",
+  "label": "What to wear on a climb",
+  "blurb": "The layering system, from valley to summit",
+  "added": "2026-10-12",
+  "commercial": true
  }
 }
