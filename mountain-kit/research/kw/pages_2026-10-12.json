@@ -1,0 +1,48 @@
+{
+ "_meta": "Keyword Planner via Pipeboard, customer 1172710099, English, Sep 2025-Aug 2026 avg monthly searches; pulled 2026-10-12. Geos: ww = worldwide, in = India, intl = US+GB+AU+IL+DE+FR. Banded values (orders of magnitude).",
+ "7000m-peaks": {
+  "7000m peaks": {"ww":110,"in":10,"intl":70,"note":"Aug 2026 210"},
+  "7000m peaks india": {"ww":10,"in":10,"intl":10},
+  "7000 meter peaks": {"ww":70,"in":10,"intl":40},
+  "7000m mountains": {"ww":90,"in":10,"intl":40},
+  "7000 meter mountains": {"ww":50,"in":10,"intl":30},
+  "easiest 7000m peak": {"ww":210,"in":20,"intl":90,"note":"Aug 2026 480"},
+  "easy 7000m peaks": {"ww":20,"in":10,"intl":10},
+  "best 7000m peaks to climb": {"ww":10,"in":10,"intl":10},
+  "satopanth": {"ww":1900,"in":1600,"intl":110},
+  "mount satopanth": {"ww":210,"in":210,"intl":20},
+  "satopanth peak": {"ww":170,"in":140,"intl":10},
+  "nun peak": {"ww":1900,"in":1600,"intl":170,"note":"Aug 2026 5400"},
+  "nun peak expedition": {"ww":90,"in":70,"intl":10},
+  "kun peak": {"ww":140,"in":90,"intl":10},
+  "mt kun expedition": {"ww":110,"in":90,"intl":10},
+  "trishul peak": {"ww":2400,"in":2400,"intl":90},
+  "trisul peak": {"ww":210,"in":170,"intl":10},
+  "kamet": {"ww":27100,"in":3600,"intl":3600,"note":"ww inflated by Kamet whisky"},
+  "saser kangri": {"ww":720,"in":590,"intl":90},
+  "mamostong kangri": {"ww":1000,"in":590,"intl":210},
+  "nanda devi east": {"ww":49500,"in":33100,"intl":4400,"note":"Planner groups it with 'nanda devi' - not a real figure for the East peak"},
+  "nanda devi east expedition": {"ww":40,"in":30,"intl":10}
+ },
+ "mountaineering-in-india": {
+  "mountaineering in india": {"ww":14800,"in":9900,"intl":3600,"note":"close-variant group shared with 'mountains in india' (hub owns that)"},
+  "climbing himalayas / climb the himalayas": {"ww":390,"in":140,"intl":110},
+  "himalayan expedition": {"ww":880,"in":590,"intl":140},
+  "mountain climbing in india": {"ww":140,"in":110,"intl":10},
+  "climbing in india": {"ww":70,"in":50,"intl":10},
+  "how to climb himalayas": {"ww":30,"in":20,"intl":10},
+  "mountaineering visa india": {"ww":10,"in":10,"intl":10},
+  "_no_data": ["mountaineering permit india","himalaya climbing permit","mountaineering india foreigners","best mountaineering in india","indian himalayas climbing"]
+ },
+ "reo-purgyil": {
+  "reo purgyil": {"ww":1900,"in":1900,"intl":110,"note":"Jun 2026 3600"},
+  "highest peak in himachal pradesh": {"ww":1000,"in":1000,"intl":30},
+  "highest peak of himachal": {"ww":170,"in":170,"intl":10},
+  "leo pargil": {"ww":110,"in":110,"intl":10},
+  "reo purgyil peak": {"ww":90,"in":90,"intl":10},
+  "himachal highest mountain": {"ww":50,"in":50,"intl":10},
+  "reo purgyil expedition": {"ww":30,"in":30,"intl":10},
+  "nako lake": {"ww":9900,"in":9900,"intl":70,"note":"tourism intent - mention only"},
+  "_no_data": ["reo purgyil height","leo pargial"]
+ }
+}

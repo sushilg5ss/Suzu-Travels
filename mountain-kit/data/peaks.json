@@ -1164,7 +1164,7 @@
   "fa": 2025,
   "fa_by": "Indian Army Eastern Command team (18 members, southern route)",
   "status": "climbed",
-  "status_note": "First recorded ascent Nov–Dec 2025; approach was only reached by an ITBP/IMF team in 2017. Border area near the McMahon Line.",
+  "status_note": "First recorded ascent: an 18-member Indian Army team (4 Corps) reached the summit on 26 Nov 2025 (Arunachal Governor's press release, 8 Dec 2025). An ITBP/IMF team reached the approach in 2017. Border area near the McMahon Line.",
   "grade": "technical",
   "grade_note": "Remote jungle-to-glacier approach, very few attempts",
   "season": "Oct–Nov",
@@ -1174,8 +1174,8 @@
   "notable": "Highest point of Arunachal Pradesh; unclimbed until 2025.",
   "sources": [
    "https://en.wikipedia.org/wiki/Kangto",
-   "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point",
-   "https://www.freepressjournal.in/india/indian-army-mountaineers-make-historic-first-ascent-of-arunachal-pradeshs-mount-kangto"
+   "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf",
+   "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point"
   ]
  },
  {
@@ -2000,11 +2000,14 @@
   "id": "reo-purgyil",
   "name": "Reo Purgyil",
   "alt": [
-   "Leo Pargial main summit"
+   "Reo Pargil",
+   "Leo Purgyil"
   ],
   "m": 6816,
   "ft": 22362,
-  "m_alt": [],
+  "m_alt": [
+   6759
+  ],
   "band": "6000",
   "state": "himachal-pradesh",
   "state_label": "Himachal Pradesh",
@@ -2012,19 +2015,21 @@
   "range": "Western Himalaya (Zanskar range, southern end)",
   "area": "Kinnaur (Pooh tehsil)",
   "fa": 1971,
-  "fa_by": "Indo-Tibetan Border Police",
+  "fa_by": "Indo-Tibetan Border Police (ITBP records list the 1971 climb as Leo Pargial; a 1991 Indian team found an 'ITBP EXP 1971' cairn on the 6,816 m summit)",
   "status": "climbed",
-  "status_note": "Border area; inner-line permit needed.",
+  "status_note": "Climbed; open (no closure found, Oct 2026). Border belt beyond Jangi: foreigners need a Protected Area Permit, Indians need none. An ITBP team summited on 16 Sep 2026 (reported height 6,759 m).",
   "grade": "technical",
-  "grade_note": "Long glaciated route on a remote massif",
+  "grade_note": "Remote border massif: scree approach from Nako, then a glacier and a long, loose west ridge with short rock pitches near the top (HJ 48, 1991)",
   "season": "Jun–Sep",
   "base": "Nako (Kinnaur)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Highest peak of Himachal Pradesh.",
+  "notable": "Highest peak of Himachal Pradesh. Twin of Leo Pargial (6,791 m), about 2 km to the north; Nako village is the trekking base.",
   "sources": [
    "https://en.wikipedia.org/wiki/Reo_Purgyil",
-   "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point",
+   "https://www.himalayanclub.org/hj/48/11/reo-purgyil-beneath-the-shroud/",
+   "https://www.himalayanclub.org/hj/34/14/the-i-m-a-expedition-to-gang-chua-and-leo-pargial-1974/",
+   "https://www.socialnews.xyz/2026/09/16/itbp-team-summits-mt-reo-pargil-gallery/",
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
   ]
  },
