@@ -12,7 +12,7 @@
  "deva": "हिमाचल के शक्तिपीठ",
  "tag": "Five seats of the Devi in the hills.",
  "sub": "Naina Devi, Chintpurni, Jwala Ji, Brajeshwari and Chamunda — the legend of Sati, which shrine holds which tradition, darshan hours, the route with distances and how to plan around Navratri. Written by Suzu Travels, from Bilaspur.",
- "chips": [["5 temples", "in 3 districts"], ["~378 km", "full loop by road"], ["4–5 days", "at an easy pace"], ["11 Oct", "Sharad Navratri 2026 begins"]],
+ "chips": [["5 temples", "in 3 districts"], ["~378 km", "full loop by road"], ["4–5 days", "at an easy pace"], ["11–19 Oct", "Sharad Navratri 2026"]],
  "q": "Which are the Shakti Peeths in Himachal Pradesh?",
  "answer": "Five Devi temples are grouped as the <b>Shakti Peeths of Himachal Pradesh</b>: Naina Devi (Bilaspur), Chintpurni (Una), Jwala Ji, Brajeshwari and Chamunda (all in Kangra). Tradition holds that parts of Sati's body fell at the first four; Chamunda joins the group by local tradition. All five fit in one road loop of about 378 km — four to five days at an easy pace.",
  "facts": [["5", "Devi temples, 3 districts"], ["~378 km", "loop from Ghumarwin by road"], ["4–5 days", "comfortable pace"], ["2 Navratris", "Chaitra & Sharad: the peak crowds"]],
@@ -125,5 +125,6 @@
   ["Incredible India — Brajeshwari Devi Temple", "https://incredibleindia.gov.in/en/himachal-pradesh/kangra/brajeshwari-devi-temple"],
   ["Wikipedia — Shakta pithas", "https://en.wikipedia.org/wiki/Shakta_pithas"]
  ],
- "verified": "8 Oct 2026"
+ "verified": "8 Oct 2026",
+ "modified": "2026-10-12"
 }

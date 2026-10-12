@@ -18,6 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
+HUB_VERIFIED = "12 Oct 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -318,7 +319,7 @@ def hub():
 <div class="szp-btns"><a class="szp-btn gold" href="#circuits">Choose your yatra</a><a class="szp-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Plan on WhatsApp</a></div>
 {trust()}</div></section>
 {nav([("circuits", '<span class="dv">ॐ</span>All yatras'), ("jyotirlinga", "12 Jyotirlinga"), ("shakti", "Shakti Peeth"), ("naudevi", "Nau Devi"), ("chardham", "Char Dham"), ("amarnath", "Amarnath"), ("vaishno", "Vaishno Devi"), ("kashi", "Kashi–Ayodhya"), ("himachal", "Himachal yatras"), ("calendar", "Calendar"), ("faq", "FAQ")], wa(watxt))}
-<section class="szp-sec" id="overview"><span class="szp-verified">Dates and timings verified {VERIFIED}</span>
+<section class="szp-sec" id="overview"><span class="szp-verified">Dates and timings verified {HUB_VERIFIED}</span>
 <h2>Pilgrimage tours in India, planned from the Himalaya</h2>
 <div class="szp-answer"><p>A <b>tirth yatra</b> is a journey to sacred places — a single temple or a whole circuit. The best known are the <b>12 Jyotirlingas</b> of Shiva, the <b>Shakti Peeths</b> of the Goddess (five of them in Himachal), the <b>Char Dham</b> of Uttarakhand, the <b>Amarnath</b> cave and <b>Vaishno Devi</b> in Jammu &amp; Kashmir, and the <b>Kashi–Ayodhya–Prayagraj</b> trail. Suzu Travels plans these yatras end to end — registration, hotels near the temples, cars, ponies or helicopters, and the slower days elders need.</p></div>
 <div class="szp-stats"><div class="szp-stat"><b>12</b><span>Jyotirlingas in 7 states — Shiva as a pillar of light</span></div><div class="szp-stat"><b>51</b><span>Shakti Peeths in the most-quoted list (traditions count 18 to 108)</span></div><div class="szp-stat"><b>3,583 m</b><span>Kedarnath — the highest of the Jyotirlingas</span></div><div class="szp-stat"><b>9</b><span>Devi temples on the Nau Devi circuit, 5 in Himachal</span></div></div>
@@ -355,7 +356,7 @@ def hub():
 <section class="szp-sec alt" id="naudevi"><span class="k">नौ देवी दर्शन · Nau Devi Yatra</span><h2>Nau Devi Yatra: nine Devis in nine days</h2>
 <p class="lead">The folk tradition of the "seven sisters" — Vaishno Devi, Jwala Ji, Naina Devi, Chintpurni, Kangra, Chamunda and Mansa Devi — grew to nine to match the nine nights of Navratri, adding Shakumbhari and Kalka. From Chandigarh you can do seven of them in about 7 days.</p>
 <ol class="szp-route">{nau_html}</ol>
-<p class="szp-note">Road distances are approximate (OpenStreetMap routing) — hill roads take longer than the map says. Sharad Navratri 2026 begins on 11 October and Chaitra Navratri 2027 on 7 April: expect the biggest crowds then.</p></section>
+<p class="szp-note">Road distances are approximate (OpenStreetMap routing) — hill roads take longer than the map says. Sharad Navratri 2026 runs 11–19 October and Chaitra Navratri 2027 begins on 7 April: expect the biggest crowds then.</p></section>
 <section class="szp-sec" id="chardham"><span class="k">चार धाम · Char Dham Yatra</span><h2>Char Dham Yatra: 2026 season and 2027 planning</h2>
 <div class="szp-answer"><p>The 2026 yatra opened with <b>Yamunotri and Gangotri on 19 April</b>, <b>Kedarnath on 22 April</b> and <b>Badrinath on 23 April</b>. Closing dates follow tradition: Badrinath's is announced on <b>Vijayadashami, 20 October 2026</b>; Kedarnath and Yamunotri close on <b>Bhai Dooj</b> and Gangotri on <b>Annakut</b> (around 10–11 November). Registration on the Uttarakhand government portal is compulsory.</p></div>
 <ol class="szp-steps"><li><b>Register first</b>On registrationandtouristcare.uk.gov.in or the Tourist Care Uttarakhand app — for every pilgrim, before you travel.</li>
@@ -403,7 +404,7 @@ def hub():
 <p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Pilgrimage Tours in India: Tirth Yatra Guide & Packages", "url": "https://suzutravels.com" + HUB,
-         "dateModified": "2026-10-08", "inLanguage": "en-IN",
+         "dateModified": "2026-10-12", "inLanguage": "en-IN",
          "about": [{"@type": "HinduTemple", "name": short_name(j) + " Jyotirlinga", "address": {"@type": "PostalAddress", "addressLocality": j["town"], "addressRegion": j["state"], "addressCountry": "IN"}} for j in J],
          "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961"}},
         {"@type": "ItemList", "name": "The 12 Jyotirlingas of India", "numberOfItems": 12,
