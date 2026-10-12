@@ -17,8 +17,8 @@
 | 7 | media | `jwala-ji` | hub | temple | jwalamukhi temple (18,100) | devi | Flames: tradition + geology side by side |
 | 8 | media | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
 | 9 | media | `kashi-vishwanath` | 12-JL | temple | kashi vishwanath temple (673,000) | ghats | shrine kashi-vishwanath-jyotirlinga; CTA 10584 |
-| 10 | researched | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
-| 11 | researched | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
+| 10 | media | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
+| 11 | media | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
 | 12 | todo | `kedarnath` | hub | yatra | kedarnath yatra (8,100; kedarnath temple 135,000) | himalaya | Link post 12021 for closing date; heli only via IRCTC |
 | 13 | todo | `char-dham-yatra` | hub | yatra | char dham yatra (90,500) | himalaya + route-map | 2027 guide; registration 60,500; CTA 9905; live before Feb 2027. On go-live: edit Rank Math redirect `/char-dham-yatra/` (302 → hub#chardham) to 301 → this page |
 | 14 | todo | `badrinath` | hub | temple | badrinath temple (90,500) | himalaya | Closing date fixed on Vijayadashami (20 Oct 2026). Moved up 12 Oct 2026: Oct demand peak 110,000 + Char Dham cluster support |
