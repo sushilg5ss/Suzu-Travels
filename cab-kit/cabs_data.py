@@ -98,8 +98,8 @@ PLACES = {
 ROUTES = [
     # slug, from, to, km, time, factor
     dict(slug="delhi-to-shimla-taxi", a="Delhi", b="Shimla", km=345, t="7–8 hrs", f=1.0),
-    dict(slug="delhi-to-manali-taxi", a="Delhi", b="Manali", km=540, t="11–13 hrs", f=1.0),
-    dict(slug="chandigarh-to-manali-taxi", a="Chandigarh", b="Manali", km=290, t="7–8 hrs", f=1.1),
+    dict(slug="delhi-to-manali-taxi", a="Delhi", b="Manali", km=540, t="11–13 hrs", f=0.78),
+    dict(slug="chandigarh-to-manali-taxi", a="Chandigarh", b="Manali", km=290, t="7–8 hrs", f=0.9),
     dict(slug="chandigarh-to-shimla-taxi", a="Chandigarh", b="Shimla", km=115, t="3–3.5 hrs", f=1.1),
     dict(slug="delhi-to-chandigarh-taxi", a="Delhi", b="Chandigarh", km=250, t="4–5 hrs", f=0.85),
     dict(slug="delhi-to-dehradun-taxi", a="Delhi", b="Dehradun", km=240, t="4–5 hrs", f=0.85),
@@ -117,7 +117,7 @@ ROUTES = [
     dict(slug="delhi-to-mussoorie-taxi", a="Delhi", b="Mussoorie", km=280, t="5–6 hrs", f=0.95),
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
-    dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.95),
+    dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.8),
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
 
