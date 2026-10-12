@@ -1,0 +1,117 @@
+{
+ "hero": {
+  "kicker": "7,000 M PEAKS · INDIA",
+  "words": [
+   [
+    "48 PEAKS",
+    "OF 7,000 M."
+   ],
+   [
+    "TRISUL:",
+    "FIRST, 1907."
+   ],
+   [
+    "MOST ARE",
+    "OFF-LIMITS."
+   ],
+   [
+    "START IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.16,
+     "x": -150
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.18,
+     "x": -160
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.04,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40,
+     "y": -190
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "INDIA'S 7,000 M PEAKS",
+  "title": "The seven-thousanders, side by side",
+  "peaks": [
+   "satopanth",
+   "trisul-i",
+   "nun",
+   "nanda-devi-east",
+   "saser-kangri-i",
+   "kamet",
+   "nanda-devi"
+  ],
+  "subs": {
+   "nanda-devi": "Closed since 1983",
+   "kamet": "First climbed 1931",
+   "saser-kangri-i": "Ladakh · restricted",
+   "nanda-devi-east": "Uttarakhand",
+   "nun": "Jammu & Kashmir",
+   "trisul-i": "First climbed 1907",
+   "satopanth": "Uttarakhand"
+  },
+  "end": "Himachal's highest: Reo Purgyil 6,816 m"
+ }
+}
