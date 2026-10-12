@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.16; }
+      .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.55) 0%, rgba(11,31,51,0.92) 100%); }
+      .kicker { position: absolute; left: 120px; top: 90px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.14em; white-space: nowrap; }
+      .title { position: absolute; left: 120px; top: 140px; color: #fff; font-weight: 800; font-size: 92px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.road { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .town { position: absolute; color: #fff; font-weight: 800; font-size: 44px; white-space: nowrap; }
+      .km { position: absolute; left: 560px; top: 330px; width: 300px; text-align: center; color: #d4a24c; font-weight: 800; font-size: 48px; white-space: nowrap; }
+      .card { position: absolute; width: 380px; height: 200px; border-radius: 22px; background: #fff; }
+      .card svg { position: absolute; left: 24px; top: 50px; width: 100px; height: 100px; }
+      .card .n { position: absolute; left: 140px; top: 0; width: 220px; height: 200px; display: flex; align-items: center; color: #0b1f33; font-weight: 800; font-size: 38px; line-height: 1.15; }
+      .back { position: absolute; left: 120px; top: 700px; color: #fff; font-weight: 800; font-size: 44px; white-space: nowrap; }
+      .stat { position: absolute; left: 120px; top: 800px; color: #fff; font-weight: 500; font-size: 36px; white-space: nowrap; }
+      .stat b { color: #d4a24c; font-weight: 800; font-size: 56px; }
+      .chips { position: absolute; left: 120px; top: 930px; display: flex; gap: 22px; }
+      .chip { height: 72px; padding: 0 30px; line-height: 72px; border-radius: 36px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .chip.o { background: transparent; color: #fff; border: 3px solid #d4a24c; line-height: 66px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div id="bg" class="clip" data-start="0" data-duration="11" data-track-index="0" style="position:absolute;inset:0">
+        <img class="bgimg" src="assets/road.jpg" alt="" />
+        <div class="veil"></div>
+        <div class="kicker">TATTAPANI · SATLUJ · NEAR SHIMLA</div>
+        <div class="title" id="title">One day from Shimla</div>
+        <svg class="road" viewBox="0 0 1920 1080">
+          <path id="rd" d="M 220 430 C 520 360 900 500 1240 430" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="22" stroke-linecap="round" />
+          <path id="rdash" d="M 220 430 C 520 360 900 500 1240 430" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" />
+          <path id="ret" d="M 1240 480 C 900 570 560 610 270 650" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14" />
+          <path id="reth" d="M 296 628 L 262 651 L 300 666" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="220" cy="430" r="18" fill="#fff" stroke="#0b1f33" stroke-width="5" />
+          <circle id="dest" cx="1240" cy="430" r="20" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <g id="cab">
+            <rect x="-34" y="-18" width="68" height="28" rx="8" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <rect x="-20" y="-32" width="40" height="18" rx="5" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle cx="-18" cy="12" r="8" fill="#0b1f33" /><circle cx="18" cy="12" r="8" fill="#0b1f33" />
+          </g>
+        </svg>
+        <div class="town" style="left:150px; top:460px">Shimla</div>
+        <div class="town" id="tt" style="left:1130px; top:286px">Tattapani</div>
+        <div class="km" id="km">55 km</div>
+        <div class="card" id="c1" style="left:1420px; top:130px">
+          <svg viewBox="-50 -50 100 100"><rect x="-34" y="0" width="68" height="22" rx="11" fill="#d4a24c" stroke="#0b1f33" stroke-width="4"/><line x1="-12" y1="0" x2="-24" y2="-30" stroke="#0b1f33" stroke-width="6" stroke-linecap="round"/><line x1="12" y1="0" x2="24" y2="-30" stroke="#0b1f33" stroke-width="6" stroke-linecap="round"/><path d="M -44 36 C -28 28 -14 42 0 36 C 14 28 28 42 44 36" fill="none" stroke="#3b8fd0" stroke-width="5" stroke-linecap="round"/></svg>
+          <div class="n">Satluj rafting</div>
+        </div>
+        <div class="card" id="c2" style="left:1420px; top:360px">
+          <svg viewBox="-50 -50 100 100"><path d="M -38 6 L 34 6 L 22 24 L -30 24 Z" fill="#d4a24c" stroke="#0b1f33" stroke-width="4"/><rect x="-14" y="-16" width="24" height="22" rx="4" fill="#0b1f33"/><path d="M -44 38 C -28 30 -14 44 0 38 C 14 30 28 44 44 38" fill="none" stroke="#3b8fd0" stroke-width="5" stroke-linecap="round"/></svg>
+          <div class="n">Kol Dam lake rides</div>
+        </div>
+        <div class="card" id="c3" style="left:1420px; top:590px">
+          <svg viewBox="-50 -50 100 100"><path d="M -36 18 C -36 40 36 40 36 18 Z" fill="#d4a24c" stroke="#0b1f33" stroke-width="4"/><path d="M -16 8 C -28 -6 -4 -14 -16 -32 M 0 8 C -12 -6 12 -14 0 -32 M 16 8 C 4 -6 28 -14 16 -32" fill="none" stroke="#0b1f33" stroke-width="6" stroke-linecap="round"/></svg>
+          <div class="n">Hot springs</div>
+        </div>
+        <div class="back" id="back">Back in Shimla by evening</div>
+        <div class="stat" id="stat">Rafting here since <b>2002</b> · about <b id="rafts">20</b> rafts</div>
+        <div class="chips" id="chips">
+          <div class="chip o">Life jacket + helmet</div>
+          <div class="chip o">Registered operators</div>
+          <div class="chip">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const rd = document.getElementById("rd");
+      const L = rd.getTotalLength();
+      const dash = document.getElementById("rdash");
+      dash.setAttribute("stroke-dasharray", L + " " + L);
+      const cab = document.getElementById("cab");
+      function put(t) {
+        const a = rd.getPointAtLength(L * t);
+        cab.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + (a.y - 26).toFixed(2) + ")");
+      }
+      put(0);
+      tl.from("#title", { opacity: 0, y: 30, duration: 0.6, ease: "power3.out" }, 0.1);
+      tl.fromTo("#rdash", { attr: { "stroke-dashoffset": L } }, { attr: { "stroke-dashoffset": 0 }, duration: 2.4, ease: "sine.inOut" }, 0.6);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 2.4, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.6);
+      tl.from("#km", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 1.4);
+      tl.from("#tt", { opacity: 0, duration: 0.4 }, 2.8);
+      tl.fromTo("#dest", { attr: { r: 20 } }, { attr: { r: 30 }, duration: 0.3, ease: "power2.out", immediateRender: false }, 3.0);
+      tl.to("#dest", { attr: { r: 20 }, duration: 0.4, ease: "power2.in" }, 3.3);
+      [["#c1", 3.4], ["#c2", 4.2], ["#c3", 5.0]].forEach(([c, t]) => {
+        tl.from(c, { opacity: 0, x: 60, duration: 0.55, ease: "back.out(1.6)" }, t);
+      });
+      tl.from(["#ret", "#reth"], { opacity: 0, duration: 0.6 }, 6.0);
+      tl.from("#back", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 6.6);
+      tl.from("#stat", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 7.4);
+      const cnt = { v: 0 };
+      tl.fromTo(cnt, { v: 0 }, { v: 20, duration: 1.0, ease: "power1.out", immediateRender: false, onUpdate: () => { document.getElementById("rafts").textContent = Math.round(cnt.v); } }, 7.5);
+      tl.from("#chips .chip", { opacity: 0, y: 20, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 8.3);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
