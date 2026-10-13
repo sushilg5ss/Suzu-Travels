@@ -1155,3 +1155,18 @@ delhi to nainital by car best route,50,LOW,,,"[20, 30, 40, 50, 40, 30, 50, 50, 1
 delhi nainital expressway,50,LOW,,,"[10, 30, 40, 30, 10, 30, 20, 70, 140, 140, 40, 50]"
 delhi to nainital taxi package,40,HIGH,11.5,29.43,"[20, 20, 30, 30, 40, 40, 50, 50, 70, 40, 10, 10]"
 delhi airport to nainital cab,20,MEDIUM,8.9,31.22,"[10, 20, 30, 30, 20, 20, 20, 20, 20, 10, 10, 10]"
+taxi in nainital,320,MEDIUM,4.67,24.38,[]
+cab in nainital,320,MEDIUM,4.67,24.38,[]
+nainital car rental,590,LOW,3.3,20.31,[]
+cab from kathgodam to nainital,480,MEDIUM,4.05,16.35,[]
+kathgodam to nainital taxi price,170,LOW,3.48,15.09,[]
+taxi from kathgodam to nainital,90,MEDIUM,4.94,19.85,[]
+haldwani to nainital taxi,140,MEDIUM,4.73,19.59,[]
+haldwani to nainital taxi fare,260,MEDIUM,3.81,16.37,[]
+cab from haldwani to nainital,140,MEDIUM,4.73,19.59,[]
+best taxi service in nainital,170,LOW,3.58,25.15,[]
+cab service nainital,90,LOW,6.09,25.21,[]
+nainital local sightseeing taxi,40,LOW,4.91,33.07,[]
+bhimtal to nainital taxi fare,40,LOW,2.71,13.01,[]
+cab booking in nainital,40,MEDIUM,2.61,16.92,[]
+haldwani to nainital taxi price,50,LOW,2.82,20.48,[]
