@@ -1,0 +1,26 @@
+{
+ "hero": {
+  "arch": "himalaya",
+  "sky": "dawn",
+  "deva": "चार धाम यात्रा",
+  "kicker": "Uttarakhand · Yamunotri to Badrinath",
+  "beats": [
+   "Four doors open each spring",
+   "Yamuna, Ganga, Shiva, then Vishnu",
+   "West to east, river to peak",
+   "Doors close as winter arrives"
+  ]
+ },
+ "route": {
+  "title": "Char Dham Yatra",
+  "sub": "Haridwar · 4 Dhams · about 10–12 days",
+  "bounds": [77.9, 79.7, 29.8, 31.2],
+  "stops": [
+   {"name": "Haridwar", "deva": "हरिद्वार", "state": "Uttarakhand", "lat": 29.9457, "lon": 78.1642},
+   {"name": "Yamunotri", "deva": "यमुनोत्री", "state": "Uttarakhand", "lat": 31.0140, "lon": 78.4600},
+   {"name": "Gangotri", "deva": "गंगोत्री", "state": "Uttarakhand", "lat": 30.9947, "lon": 78.9398},
+   {"name": "Kedarnath", "deva": "केदारनाथ", "state": "Uttarakhand", "lat": 30.7352, "lon": 79.0669},
+   {"name": "Badrinath", "deva": "बद्रीनाथ", "state": "Uttarakhand", "lat": 30.7433, "lon": 79.4938}
+  ]
+ }
+}

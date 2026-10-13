@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "himalaya",
+  "sky": "snow",
+  "deva": "श्री केदारनाथ",
+  "kicker": "Jyotirlinga · Rudraprayag, Uttarakhand",
+  "beats": [
+   "The Pandavas sought Shiva's forgiveness",
+   "Shiva hid as a Himalayan bull",
+   "Bhima seized the sinking hump",
+   "Kedarnath rose amid snowy peaks"
+  ]
+ },
+ "story": {
+  "title": "The legend of Kedarnath",
+  "beats": [
+   {"arch": "himalaya", "sky": "dusk", "line": "After the war, the Pandavas climb to seek Shiva"},
+   {"arch": "pillar", "sky": "night", "line": "Shiva hides among the herds as a bull"},
+   {"arch": "himalaya", "sky": "snow", "line": "The hump remains — worshipped as the lingam"},
+   {"arch": "himalaya", "sky": "dawn", "line": "Each spring, the doors open to pilgrims"}
+  ]
+ }
+}
