@@ -1,0 +1,194 @@
+{
+ "kind": "guide",
+ "path": "/mountains-of-india/expedition-camping/",
+ "title": "Expedition Camping: Base Camp to Summit Camp Explained",
+ "seo_title": "Base Camp Meaning: Expedition Camps from Base to Summit",
+ "seo_desc": "What base camp means on a Himalayan climb, how camps step up to summit camp, sleeping-bag ratings, water, toilets and the IMF rules on waste.",
+ "focus": "base camp meaning",
+ "commercial": true,
+ "label": "Expedition camping",
+ "blurb": "Base camp to summit camp, explained",
+ "verified": "13 Oct 2026",
+ "kicker": "Expedition camping · Climber's guide · 2026",
+ "tag": "Base camp to summit camp.",
+ "sub": "A plain-English guide for first-time climbers in the Indian Himalaya: what base camp, camp 1 and summit camp mean, why teams carry loads high and sleep low, how to read a sleeping-bag rating, and how water, toilets and rubbish are handled on a climb, with real camp altitudes from Himachal peaks.",
+ "chips": [
+  [
+   "Base camp",
+   "the staging area"
+  ],
+  [
+   "Carry high",
+   "sleep low"
+  ],
+  [
+   "Summit camp",
+   "one or two cold nights"
+  ],
+  [
+   "Pack it out",
+   "IMF waste rules"
+  ]
+ ],
+ "hero_alt": "Ridge tents in a high meadow, climbers with big packs on a boulder moraine, a tent glowing on snow at night and two lit dome tents on snow (generic stock footage, not named peaks) with four statements: base camp, home base; carry high, sleep low; top camp, one night; pack it in, pack it out",
+ "q": "What does base camp mean?",
+ "answer": "Base camp is the main camp at the foot of a climb: the staging area where the team lives, cooks and acclimatises before moving higher. Above it, bigger peaks add camp 1 or an advanced base, then a small summit camp for the final push. Teams ferry loads up and sleep lower. Compare the peaks themselves on our <a href=\"/mountains-of-india/highest-peaks-in-india/\">highest peaks in India</a> list.",
+ "facts": [
+  [
+   "Base camp",
+   "The main staging camp at the foot of the climb"
+  ],
+  [
+   "Camp 1 / ABC",
+   "Intermediate camp on bigger peaks"
+  ],
+  [
+   "Summit camp",
+   "Small high camp for the summit push"
+  ],
+  [
+   "Above 3,000 m",
+   "Sleep ≤ 500 m higher a night (CDC)"
+  ],
+  [
+   "Sleeping bag",
+   "Read the ISO comfort and lower-limit ratings"
+  ],
+  [
+   "Rubbish",
+   "Non-biodegradable waste goes back down"
+  ]
+ ],
+ "intro": [
+  "Merriam-Webster defines a base camp as a place that serves as the starting point or staging area for an expedition, usually stocked with shelter and supplies. On a mountain the idea grows into a ladder of camps: a road-head where the vehicles stop, a base camp where the team settles in, sometimes one or more intermediate camps, and a small summit camp from which climbers leave in the dark for the top.",
+  "Most pages that explain base camp are dictionaries, and most pages about expedition camping sell tents. This guide does neither. It explains how a camp system works on climbs in the <a href=\"/mountains-of-india/\">mountains of India</a>, using the real camp altitudes of Himachal peaks, and covers the parts first-timers ask about most: sleeping warm, safe water, toilets and the rubbish rules of the Indian Mountaineering Foundation (IMF)."
+ ],
+ "extra_sections": [
+  {
+   "id": "camp-ladder",
+   "label": "Camp ladder",
+   "kicker": "Road-head to summit",
+   "h2": "The camp ladder: base camp, camp 1 and summit camp",
+   "html": "<ol class=\"szm-steps\"><li><b>Road-head.</b>Where the road ends and the walk begins. Gear is loaded for the walk-in, often with a first night in a meadow camp on the way.</li><li><b>Base camp.</b>The big, comfortable camp at the foot of the climb. The team lives, cooks and acclimatises here, practises snow skills and waits out bad weather.</li><li><b>Camp 1 or advanced base.</b>An intermediate camp on bigger peaks. Teams stock it by carrying loads up and coming back down to sleep, then move up once it is ready.</li><li><b>Summit camp.</b>A small tent camp as close to the top as is safe, used for one or two nights. Climbers leave it before dawn for the summit and return to it, or further down, the same day.</li></ol><div class=\"szm-call\"><p><b>How many camps?</b> A small trekking peak needs only one or two camps. Bigger peaks add camp 1 or an advanced base and a summit camp, each stocked by load ferries from the camp below.</p></div>"
+  },
+  {
+   "id": "himachal-camps",
+   "label": "Himachal camps",
+   "kicker": "Real examples",
+   "h2": "Camp altitudes on four Himachal peaks",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Road-head</th><th>Base camp</th><th>Camp 1 / ABC</th><th>Summit camp</th><th>Summit</th></tr></thead><tbody><tr><td><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a></td><td>Dhundi, Solang valley (meadow camp at Bakarthach, about 3,300 m)</td><td>Lady Leg, about 3,850 m</td><td>–</td><td>About 4,000–4,400 m</td><td>5,289 m / 17,352 ft</td></tr><tr><td><a href=\"/mountains-of-india/hanuman-tibba/\">Hanuman Tibba</a></td><td>Dhundi</td><td>Beas Kund, about 3,600 m</td><td>About 4,000–4,600 m</td><td>About 5,000–5,100 m</td><td>5,982 m / 19,626 ft</td></tr><tr><td><a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a></td><td>Khanol, via Jagatsukh</td><td>Tainta, about 4,100–4,500 m</td><td>Duhangan Col, about 5,100–5,200 m</td><td>About 5,500–5,600 m</td><td>6,001 m / 19,688 ft</td></tr><tr><td><a href=\"/mountains-of-india/yunam-peak/\">Yunam Peak</a></td><td>Bharatpur, a highway tent camp at about 4,600–4,700 m</td><td>About 5,200 m, a stone shelter on the moraine</td><td>–</td><td>– (summit from base camp)</td><td>6,111 m / 20,049 ft</td></tr></tbody></table></div><p class=\"szm-note\">Camp altitudes are approximate and vary with the team and the season; summit heights come from our peak dataset. Each peak page has its full camp-by-camp route.</p>"
+  },
+  {
+   "id": "carry-high",
+   "label": "Carry high",
+   "kicker": "Acclimatisation",
+   "h2": "Carry high, sleep low: why camps are spaced the way they are",
+   "html": "<p>Above about 3,000 m, most climbers follow the rule \"climb high, sleep low\": they carry a load up to the next camp, leave it there and come back down to sleep. Their bodies adjust to the height they touched during the day, and the higher camp is stocked by the time the team moves up.</p><div class=\"szm-call\"><p><b>The sleeping-altitude rule.</b> The CDC Yellow Book advises that above 3,000 m you should not raise your sleeping altitude by more than 500 m a night, and should add an extra night for every 1,000 m you climb. That is why good itineraries include rest and acclimatisation days at base camp. This page is information, not medical advice: tell your guide at once if you feel unwell.</p></div>"
+  },
+  {
+   "id": "day-in-camp",
+   "label": "Life in camp",
+   "kicker": "What the team provides",
+   "h2": "Life in camp: what the outfitter provides and what you bring",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>Usually provided on a guided climb</h3><ul><li>Tents at base camp and the high camps.</li><li>A kitchen and mess tent, and the meals.</li><li>Ropes and other group climbing gear.</li></ul></div><div class=\"szm-col\"><h3>Usually yours to bring</h3><ul><li>A sleeping bag warm enough for the high camp.</li><li>Your layers for camp evenings.</li><li>A headlamp and water bottles.</li><li>Your personal kit from the <a href=\"/mountains-of-india/mountaineering-gear-list/\">mountaineering gear list</a>.</li></ul></div></div><p>Lists differ between climbs, so get yours in writing before you travel. Sleeping bags and down jackets are commonly rented in Manali and Solang if you would rather not buy them; check the condition and fit before you leave town.</p>"
+  },
+  {
+   "id": "sleeping-warm",
+   "label": "Sleeping warm",
+   "kicker": "Sleeping-bag ratings",
+   "h2": "Sleeping warm: how to read a sleeping-bag temperature rating",
+   "html": "<p>Camps above 5,000 m are well below freezing at night, even in autumn. Most sleeping bags are tested to the ISO 23537-1:2022 standard (formerly EN 13537), on a manikin wearing one layer of long underwear and lying on an insulating mat. The label shows three numbers:</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Rating</th><th>What it means</th></tr></thead><tbody><tr><td><b>Comfort</b></td><td>A standard woman sleeps comfortably in a relaxed position</td></tr><tr><td><b>Lower limit</b></td><td>A standard man sleeps for eight hours, curled up, without waking</td></tr><tr><td><b>Extreme</b></td><td>A survival-only rating for a standard woman, with a risk of hypothermia: never plan around it</td></tr></tbody></table></div><div class=\"szm-call\"><p><b>Choosing a bag.</b> Ask your outfitter how high the top camp is and how cold the nights are expected to be, then pick a bag whose comfort rating covers it. Sleep in dry layers, not in the clothes you sweated in; our guide to <a href=\"/mountains-of-india/what-to-wear-himalayan-climb/\">what to wear on a Himalayan climb</a> explains the layers.</p></div>"
+  },
+  {
+   "id": "water-waste",
+   "label": "Water and waste",
+   "kicker": "Water · toilets · rubbish",
+   "h2": "Water, toilets and rubbish on an expedition",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>Water</h3><ul><li>Camp water is boiled or treated.</li><li>Do not drink untreated stream or river water: the Ladakh tourism advisory warns against it.</li></ul></div><div class=\"szm-col\"><h3>Toilets</h3><ul><li>Base camps dig deep toilet pits.</li><li>Where there is no pit, Leave No Trace advises a cathole 15–20 cm (6–8 in) deep, at least about 60 m (200 ft) from water, camps and trails.</li></ul></div><div class=\"szm-col\"><h3>Rubbish</h3><ul><li>Under IMF rules, only biodegradable waste may be left, and only below the snow line.</li><li>Non-biodegradable waste goes down to the road-head in sacks.</li><li>All ropes and gear are retrieved, with photo proof in the expedition report.</li></ul></div></div><h3>The seven Leave No Trace principles</h3><ol class=\"szm-steps\"><li><b>Plan ahead and prepare.</b>Know the rules of the area and the climb.</li><li><b>Travel and camp on durable surfaces.</b>Use existing camp sites where you can.</li><li><b>Dispose of waste properly.</b>Pack it in, pack it out.</li><li><b>Leave what you find.</b>Stones, plants and old cairns stay where they are.</li><li><b>Minimise campfire impacts.</b>Check the local rules before lighting any fire.</li><li><b>Respect wildlife.</b>Watch from a distance and never feed animals.</li><li><b>Be considerate of other visitors.</b>Shepherds, villagers and other teams share these valleys.</li></ol>"
+  }
+ ],
+ "quote_h2": "Plan a guided Himachal climb with Suzu",
+ "quote_text": "Tell us your peak and dates. We pair you with a registered Himachal outfitter and certified guides, confirm in writing what the camps include and what you bring, and add hotels and transfers: one plan, one quote.",
+ "faq_h2": "Base camp and camping questions",
+ "faqs": [
+  [
+   "What does base camp mean?",
+   "The main camp at the foot of a climb: the staging area where the team lives, cooks and acclimatises before moving higher."
+  ],
+  [
+   "What is the difference between base camp and summit camp?",
+   "Base camp is the big, comfortable camp lower down. Summit camp, or high camp, is a small tent camp as close to the top as is safe, used for one or two nights before the summit push."
+  ],
+  [
+   "What are camp 1 and camp 2?",
+   "Intermediate camps between base camp and the summit on bigger peaks. Teams stock them by carrying loads up and coming back down to sleep: climb high, sleep low."
+  ],
+  [
+   "How cold is it at high camp?",
+   "Well below freezing at night above 5,000 m, even in autumn. Bring a sleeping bag rated for it and dry layers to sleep in."
+  ],
+  [
+   "What sleeping-bag rating do I need?",
+   "Look at the ISO comfort and lower-limit ratings. Ask your outfitter how high the top camp is and how cold the nights are expected to be, then choose a bag whose comfort rating covers it."
+  ],
+  [
+   "Where do you go to the toilet on an expedition?",
+   "In toilet pits dug at base camp. Higher up, waste is packed out or buried following the rules, and non-biodegradable rubbish is carried down to the road-head under IMF rules."
+  ],
+  [
+   "Is the water safe to drink at camp?",
+   "Camp water is boiled or treated. Do not drink untreated stream or river water."
+  ],
+  [
+   "Do I need my own tent on a guided climb?",
+   "No. Tents and the kitchen come with a guided expedition. Confirm in writing what is provided and what you bring, usually your sleeping bag and personal kit."
+  ]
+ ],
+ "links": [
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "Records, permits and training"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 156 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Deo Tibba"
+  ]
+ ],
+ "sources": [
+  [
+   "Merriam-Webster — Definition of base camp",
+   "https://www.merriam-webster.com/dictionary/base%20camp"
+  ],
+  [
+   "CDC Yellow Book — High-altitude travel and altitude illness",
+   "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"
+  ],
+  [
+   "Wikipedia — Altitude sickness",
+   "https://en.wikipedia.org/wiki/Altitude_sickness"
+  ],
+  [
+   "Australian Hiker — ISO 23537-1:2022 sleeping bag temperature rating",
+   "https://australianhiker.com.au/advice/iso-23537-12022-sleeping-bag-temperature-rating/"
+  ],
+  [
+   "US National Park Service — Leave No Trace seven principles",
+   "https://www.nps.gov/articles/leave-no-trace-seven-principles.htm"
+  ],
+  [
+   "Indian Mountaineering Foundation — Expedition application",
+   "https://www.indmount.org/IMF/expeapp"
+  ],
+  [
+   "Ladakh Tourism — Advisory",
+   "https://tourism.ladakh.gov.in/advisory"
+  ]
+ ]
+}

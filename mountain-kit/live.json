@@ -149,5 +149,14 @@
   "blurb": "The layering system, from valley to summit",
   "added": "2026-10-12",
   "commercial": true
+ },
+ "expedition-camping": {
+  "id": 13188,
+  "path": "/mountains-of-india/expedition-camping/",
+  "kind": "guide",
+  "label": "Expedition camping",
+  "blurb": "Base camp to summit camp, explained",
+  "added": "2026-10-13",
+  "commercial": true
  }
 }
