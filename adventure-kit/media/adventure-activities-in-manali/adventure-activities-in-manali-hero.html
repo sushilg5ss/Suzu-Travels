@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.82) 54%, rgba(11,31,51,0.95) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 860px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 96px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.14em; white-space: nowrap; }
+      .t1 { position: absolute; left: 0; top: 146px; color: #fff; font-weight: 800; font-size: 100px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 254px; color: #d4a24c; font-weight: 800; font-size: 92px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 0; top: 390px; width: 840px; height: 480px; overflow: visible; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; font-size: 30px; }
+      .bar { position: absolute; left: 0; top: 900px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 926px; width: 860px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 860px; color: #fff; font-weight: 800; font-size: 48px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div id="fd5" style="position:absolute;inset:0"><img id="im5" src="assets/s1.jpg" alt="" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">ADVENTURE · MANALI · KULLU</div>
+          <div class="t1">Fly, raft, ride</div>
+          <div class="t2">&amp; play in snow</div>
+          <svg class="map" viewBox="0 0 840 480">
+            <path id="route" d="M 10 90 C 160 10 300 130 430 70 C 560 10 690 120 830 50" fill="none" stroke="#d4a24c" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 22" />
+            <g id="glider">
+              <path d="M -34 -6 C -20 -26 20 -26 34 -6" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+              <line x1="-28" y1="-8" x2="0" y2="18" stroke="#fff" stroke-width="2.5" /><line x1="28" y1="-8" x2="0" y2="18" stroke="#fff" stroke-width="2.5" />
+              <circle cx="0" cy="22" r="6" fill="#fff" />
+            </g>
+            <g id="ic1" transform="translate(110,200)"><circle r="50" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><path d="M -26 -2 C -14 -20 14 -20 26 -2" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round"/><line x1="-20" y1="-4" x2="0" y2="16" stroke="#fff" stroke-width="3"/><line x1="20" y1="-4" x2="0" y2="16" stroke="#fff" stroke-width="3"/><circle cy="20" r="5" fill="#fff"/></g>
+            <g id="ic2" transform="translate(410,200)"><circle r="50" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><rect x="-26" y="0" width="52" height="16" rx="8" fill="#d4a24c"/><line x1="-8" y1="0" x2="-16" y2="-20" stroke="#fff" stroke-width="5" stroke-linecap="round"/><line x1="8" y1="0" x2="16" y2="-20" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M -30 26 C -18 20 -8 32 4 26 C 16 20 24 30 32 26" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g>
+            <g id="ic3" transform="translate(710,200)"><circle r="50" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><line x1="-32" y1="-22" x2="32" y2="-8" stroke="#fff" stroke-width="3"/><line x1="0" y1="-15" x2="0" y2="-6" stroke="#fff" stroke-width="3"/><rect x="-14" y="-6" width="28" height="26" rx="6" fill="#d4a24c"/><rect x="-9" y="0" width="18" height="9" rx="2" fill="#0b1f33"/></g>
+            <text x="110" y="290" text-anchor="middle">Paragliding</text>
+            <text x="410" y="290" text-anchor="middle">Rafting</text>
+            <text x="710" y="290" text-anchor="middle">Ropeway</text>
+            <g id="ic4" transform="translate(110,370)"><circle r="50" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><g stroke="#fff" stroke-width="4" stroke-linecap="round"><line x1="0" y1="-24" x2="0" y2="24"/><line x1="-21" y1="-12" x2="21" y2="12"/><line x1="-21" y1="12" x2="21" y2="-12"/></g><circle r="7" fill="#d4a24c"/></g>
+            <g id="ic5" transform="translate(410,370)"><circle r="50" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><path d="M -28 20 L -28 0 C -28 -26 28 -26 28 0 L 28 20 Z" fill="#d4a24c"/><path d="M -14 20 L -14 4 C -14 -10 14 -10 14 4 L 14 20 Z" fill="#0b1f33"/></g>
+            <g id="ic6" transform="translate(710,370)"><circle r="50" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><path d="M -30 20 L -8 -18 L 6 4 L 14 -8 L 30 20 Z" fill="#d4a24c"/><path d="M -8 -18 L -2 -8 L -14 -8 Z" fill="#fff"/></g>
+            <text x="110" y="460" text-anchor="middle">Snow day</text>
+            <text x="410" y="460" text-anchor="middle">Atal Tunnel</text>
+            <text x="710" y="460" text-anchor="middle">Treks</text>
+          </svg>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">6 activity types, one trip</div>
+            <div class="fact" id="f2">Fly + raft: 16 Sep – 14 Jul</div>
+            <div class="fact" id="f3">Solang ropeway: all year</div>
+            <div class="fact" id="f4">Snow: late Dec – Feb</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.07, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.06, y: 0 }, { scale: 1, y: -30, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: 30, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      tl.fromTo("#route", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -216 }, duration: 12, ease: "none" }, 0);
+      const route = document.getElementById("route");
+      const L = route.getTotalLength();
+      const g = document.getElementById("glider");
+      function put(t) {
+        const a = route.getPointAtLength(L * t);
+        g.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + (a.y - 26).toFixed(2) + ")");
+      }
+      put(0.06);
+      const st = { t: 0.06 };
+      tl.fromTo(st, { t: 0.06 }, { t: 0.94, duration: 9.8, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.4);
+      tl.to("#glider", { opacity: 0, duration: 0.4, ease: "power1.in" }, 10.4);
+      const rs = { t: 0.94 };
+      tl.fromTo(rs, { t: 0.94 }, { t: 0.06, duration: 0.01, immediateRender: false, onUpdate: () => put(rs.t) }, 11.0);
+      tl.to("#glider", { opacity: 1, duration: 0.55, ease: "power1.out" }, 11.3);
+      [["#ic1", 0.6], ["#ic2", 3.6], ["#ic3", 6.6], ["#ic4", 9.4], ["#ic5", 10.0], ["#ic6", 10.6]].forEach(([p, t]) => {
+        tl.fromTo(p + " > circle", { attr: { "stroke-width": 5 } }, { attr: { "stroke-width": 12 }, duration: 0.35, ease: "power2.out", immediateRender: false }, t);
+        tl.to(p + " > circle", { attr: { "stroke-width": 5 }, duration: 0.45, ease: "power2.in" }, t + 0.35);
+      });
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.9], ["#f2", "#f3", 5.9], ["#f3", "#f4", 8.9], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
