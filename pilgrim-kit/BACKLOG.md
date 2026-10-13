@@ -15,7 +15,7 @@
 | 5 | live 2026-10-10 | `nau-devi-yatra` | hub | circuit | nau devi yatra (90; 9 devi yatra 140) | devi + route-map | 9-day route with km table (shaktipeeth-notes §3) |
 | 6 | live 2026-10-11 | `chintpurni` | hub | temple | chintpurni temple (8,100; chintpurni 90,500) | devi | Sugam Darshan; Mai Das legend |
 | 7 | live 2026-10-12 | `jwala-ji` | hub | temple | jwalamukhi temple (18,100) | devi | Flames: tradition + geology side by side |
-| 8 | media | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
+| 8 | live 2026-10-13 | `somnath` | 12-JL | temple | somnath temple (450,000) | nagara | shrine somnath-jyotirlinga |
 | 9 | media | `kashi-vishwanath` | 12-JL | temple | kashi vishwanath temple (673,000) | ghats | shrine kashi-vishwanath-jyotirlinga; CTA 10584 |
 | 10 | media | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
 | 11 | media | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
