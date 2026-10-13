@@ -81,7 +81,7 @@ DESTS = [  # name, lon, lat, url, label dx, dy, anchor
  ('Rajasthan',73.71,24.58,'/rajasthan-tour-packages/',-14,6,'end'),
  ('Goa',73.83,15.49,'/goa-tour-packages/',-14,6,'end'),
  ('Kerala',77.06,10.09,'/kerala-tour-packages/',-14,6,'end'),
- ('Andaman',92.73,11.62,'/andaman/',-14,6,'end'),
+ ('Andaman',92.73,11.62,'/andaman-nicobar-islands-trip-planning-tips-2026-step-guide/',-14,6,'end'),
 ]
 def build_map():
     w, h = MAP['w'], MAP['h']

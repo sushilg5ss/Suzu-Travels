@@ -10,7 +10,7 @@ R.querySelectorAll('[data-ab-count2]').forEach(function(e){e.textContent=d.count
 var v=document.getElementById('abCrewFilm');
 if(v&&io){var vo=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting&&x.intersectionRatio>.45){v.preload='auto';var p=v.play();if(p&&p.catch)p.catch(function(){})}else if(!v.paused){v.pause()}})},{threshold:[0,.45,.8]});vo.observe(v)}
 // count-up of hero numbers
-function cu(el){var t=el.textContent.replace(/,/g,'');var n=parseFloat(t);if(isNaN(n)||/\./.test(t))return;var s=performance.now(),d=1400;function f(now){var k=Math.min(1,(now-s)/d),e=1-Math.pow(1-k,3),c=Math.round(n*e);el.textContent=c.toLocaleString('en-IN');if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+function cu(el){var t=el.textContent.replace(/,/g,'');var n=parseFloat(t);if(isNaN(n)||t.indexOf('.')>-1)return;var s=performance.now(),d=1400;function f(now){var k=Math.min(1,(now-s)/d),e=1-Math.pow(1-k,3),c=Math.round(n*e);el.textContent=c.toLocaleString('en-IN');if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
 var nums=R.querySelectorAll('.ab-st b span:not([data-ab-rating])');
 if(io){var co=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){cu(x.target);co.unobserve(x.target)}})},{threshold:.6});nums.forEach(function(n){co.observe(n)})}
 // chapter nav: highlight the section on screen
