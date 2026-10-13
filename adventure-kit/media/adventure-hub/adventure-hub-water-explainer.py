@@ -1,5 +1,5 @@
 """Hub water explainer: 'Where and when you can get on the water'. 1920x1080 (web 1600x900), 30 fps, 12 s.
-Facts only from the live hub #water section (page 11529): Beas rafting Kullu (Pirdi/Babeli/Raisan to Jhiri, Grade II-III,
+Facts only from the live hub #water section (page 11529): Beas rafting Kullu (Pirdi/Babeli/Raisan, guided runs of about 7-14 km — 13 Oct 2026: unverified 'to Jhiri' + 'Grade II-III' removed per QA,
 Mar-Jun + mid-Sep-Nov, closed 15 Jul-15 Sep); Sutlej rafting at Tattapani (Oct-May); lakes: Gobind Sagar (Luhnu, Bilaspur:
 jet ski, speed boat, kayak), Kol Dam (boat rides), Pong Dam (kayak, canoe, sail), Oct-Jun, Pong closed 15 Jul-15 Sep;
 trout angling Tirthan, Barot, Rohru, Sangla, 1 Mar-31 Oct, Fisheries licence. Map is schematic (not to scale). No prices."""
@@ -26,7 +26,7 @@ PINS = [  # x, y, label, side, appear
     (1180, 630, 'Tirthan', 'r', 4.6, 'fish'),
     (820, 440, 'Barot', 'l', 4.8, 'fish'),
 ]
-CARDS = [(1.4, 'RAFTING · BEAS', 'Kullu: Pirdi to Jhiri', 'Grade II–III rapids'),
+CARDS = [(1.4, 'RAFTING · BEAS', 'Kullu: Pirdi · Babeli · Raisan', 'Guided runs of about 7–14 km'),
          (3.0, 'RAFTING · SUTLEJ', 'Tattapani, near Shimla', 'Pairs with the hot springs'),
          (3.6, 'LAKES', 'Gobind Sagar · Kol Dam · Pong', 'Jet ski, kayak, boat rides'),
          (4.6, 'TROUT ANGLING', 'Tirthan · Barot · Rohru · Sangla', 'Fisheries licence needed')]
