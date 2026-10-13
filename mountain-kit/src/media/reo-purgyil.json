@@ -1,0 +1,138 @@
+{
+ "hero": {
+  "kicker": "REO PURGYIL · HIMACHAL",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 550
+    },
+    "to": {
+     "y": 200
+    }
+   },
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 1050
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": 40
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    3624,
+    "NAKO"
+   ],
+   [
+    4880,
+    "MEADOW CAMP"
+   ],
+   [
+    5450,
+    "BASE CAMP"
+   ],
+   [
+    6816,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Reo Purgyil route from Nako",
+  "sub": "Nako to the 6,816 m summit · camp heights are approximate",
+  "camps": [
+   {
+    "name": "Nako",
+    "m": 3624,
+    "day": "Day 1"
+   },
+   {
+    "name": "Meadow camp",
+    "m": 4880,
+    "day": "Day 3"
+   },
+   {
+    "name": "Base camp",
+    "m": 5450,
+    "day": "Day 4"
+   },
+   {
+    "name": "Summit",
+    "m": 6816,
+    "day": "Day 18–19"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "HIMACHAL'S HIGHEST",
+  "title": "Himachal's top five, side by side",
+  "peaks": [
+   "manirang",
+   "parvati-parbat",
+   "leo-pargial",
+   "mount-gya",
+   "reo-purgyil"
+  ],
+  "subs": {
+   "reo-purgyil": "Highest in Himachal",
+   "leo-pargial": "Twin summit, 2 km N",
+   "mount-gya": "Himachal Pradesh",
+   "parvati-parbat": "Himachal Pradesh",
+   "manirang": "Himachal Pradesh"
+  },
+  "end": "Reo Purgyil, 6,816 m: the roof of Himachal"
+ }
+}
