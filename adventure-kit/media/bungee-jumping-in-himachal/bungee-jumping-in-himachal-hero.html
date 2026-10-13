@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.76) 56%, rgba(11,31,51,0.9) 100%); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 150px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 200px; color: #fff; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 316px; color: #d4a24c; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.cord { position: absolute; left: 0; top: 460px; width: 360px; height: 390px; overflow: visible; }
+      .big { position: absolute; left: 380px; top: 520px; width: 440px; text-align: right; color: #fff; font-weight: 800; font-size: 120px; letter-spacing: -0.02em; }
+      .biglab { position: absolute; left: 380px; top: 666px; width: 440px; text-align: right; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 30px; }
+      .facts { position: absolute; left: 0; top: 880px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 54px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 860px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">AIR · BIR, KANGRA</div>
+          <div class="t1">Bungee</div>
+          <div class="t2">Jump at Bir</div>
+          <svg class="cord" viewBox="0 0 360 390">
+            <rect x="40" y="0" width="200" height="14" rx="7" fill="#fff" />
+            <line x1="140" y1="14" x2="140" y2="380" stroke="rgba(255,255,255,0.35)" stroke-width="4" stroke-dasharray="4 14" stroke-linecap="round" />
+            <line id="cordl" x1="140" y1="14" x2="140" y2="60" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+            <g id="jumper" transform="translate(140,60)">
+              <circle cx="0" cy="34" r="13" fill="#fff" />
+              <line x1="0" y1="0" x2="0" y2="22" stroke="#fff" stroke-width="7" stroke-linecap="round" />
+              <line x1="-22" y1="30" x2="22" y2="30" stroke="#fff" stroke-width="7" stroke-linecap="round" />
+              <circle cx="0" cy="2" r="7" fill="#d4a24c" />
+            </g>
+          </svg>
+          <div class="big">~50 m</div>
+          <div class="biglab">jump, operator-listed</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Himachal's verified jump</div>
+            <div class="fact" id="f2">Near Bir, Kangra</div>
+            <div class="fact" id="f3">Harness + safety briefing</div>
+            <div class="fact" id="f4">Pair it with paragliding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      const cord = document.getElementById("cordl");
+      const jumper = document.getElementById("jumper");
+      const st = { y: 60 };
+      function place() {
+        cord.setAttribute("y2", st.y.toFixed(2));
+        jumper.setAttribute("transform", "translate(140," + st.y.toFixed(2) + ")");
+      }
+      tl.to(st, { y: 330, duration: 1.3, ease: "power2.in", onUpdate: place }, 0.8);
+      tl.to(st, { y: 190, duration: 0.9, ease: "sine.out", onUpdate: place }, 2.1);
+      tl.to(st, { y: 300, duration: 0.8, ease: "sine.in", onUpdate: place }, 3.0);
+      tl.to(st, { y: 230, duration: 0.7, ease: "sine.out", onUpdate: place }, 3.8);
+      tl.to(st, { y: 270, duration: 0.8, ease: "sine.inOut", onUpdate: place }, 4.5);
+      tl.to(st, { y: 260, duration: 1.0, ease: "sine.inOut", onUpdate: place }, 5.3);
+      tl.to(st, { y: 120, duration: 3.6, ease: "sine.inOut", onUpdate: place }, 6.4);
+      tl.to(["#jumper", "#cordl"], { opacity: 0, duration: 0.4 }, 10.2);
+      tl.to(st, { y: 60, duration: 0.05, onUpdate: place }, 10.7);
+      tl.to(["#jumper", "#cordl"], { opacity: 1, duration: 0.6 }, 11.2);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

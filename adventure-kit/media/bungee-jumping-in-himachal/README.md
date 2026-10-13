@@ -1,0 +1,7 @@
+# bungee-jumping-in-himachal media (Visual Studio night, 14 Oct 2026)
+Rendered with HyperFrames 0.8.85 (compositions: bungee-jumping-in-himachal-{hero,explainer,reel}.html).
+- hero.webm/mp4 + poster.webp: 12 s seamless loop, 1600 px. Generic bungee photos (Pexels 26811613, 1486036, 37355190, 13972232) — NOT Bir; on-screen text names the activity/place only. Right half: "Bungee / Jump at Bir", gold cord that drops, rebounds and settles, "~50 m — jump, operator-listed", rotating facts (Himachal's verified jump · Near Bir, Kangra · Harness + safety briefing · Pair it with paragliding).
+- explainer.webm/mp4 + explainer-poster.webp: 10 s "Where can I actually jump?" — schematic map (no borders): Manali grey ✕ "No verified site today", Bir gold ✓ "Verified jump · ~50 m*", Dharamshala "Short drive to Bir", route line "Add a Bir night on the route", chip "Add it to your trip → Get Quote"; footnote *operator-listed height, confirmed on booking · schematic map, not to scale. Faint background = WP 12701 (Dharamshala valley).
+- reel-web.webm/mp4 + reel-web-poster.webp: 15 s 9:16, 540 px; end card suzutravels.com/adventure/bungee-jumping-in-himachal + HP Tourism reg. no.
+- reel-section.html — ready #reel section for the Page Builder.
+WP photos: 13275 jumper leaping off a platform over a green gorge · 13276 free fall over pine forest (red cord) · 13277 rebound above green forest · 13278 upside down against blue sky. Reuse: 12701 Dharamshala valley + Dhauladhar, 12476 / 12474 paragliders (combo card).

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bg { position: absolute; inset: 0; background: url("assets/bg.jpg") center/cover; opacity: 0.09; }
+      .kick { position: absolute; left: 110px; top: 80px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 128px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; }
+      svg.map { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 46px; white-space: nowrap; }
+      .sub { display: block; font-weight: 500; font-size: 30px; color: rgba(255,255,255,0.85); margin-top: 6px; }
+      .chip { position: absolute; left: 50%; top: 900px; transform: translateX(-50%); background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 46px; padding: 22px 48px; border-radius: 999px; white-space: nowrap; }
+      .note { position: absolute; right: 110px; bottom: 36px; color: rgba(255,255,255,0.72); font-weight: 500; font-size: 24px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="10" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="10" data-track-index="0" style="position:absolute;inset:0">
+        <div class="bg"></div>
+        <div class="kick" id="kick">BUNGEE IN HIMACHAL</div>
+        <div class="title" id="title">Where can I actually jump?</div>
+        <svg class="map" viewBox="0 0 1920 1080">
+          <path id="rt" d="M 1450 470 C 1250 560, 1060 640, 900 650" fill="none" stroke="#d4a24c" stroke-width="6" stroke-dasharray="14 14" stroke-linecap="round" />
+          <path id="dr" d="M 900 650 C 760 610, 600 520, 470 470" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="14 14" stroke-linecap="round" />
+          <g id="mn"><circle cx="1450" cy="470" r="30" fill="#6b7a89" /><path d="M 1436 456 L 1464 484 M 1464 456 L 1436 484" stroke="#fff" stroke-width="7" stroke-linecap="round" /></g>
+          <g id="bir"><circle id="pulse" cx="900" cy="650" r="40" fill="none" stroke="#d4a24c" stroke-width="5" /><circle cx="900" cy="650" r="36" fill="#d4a24c" /><path d="M 884 651 L 896 664 L 918 636" fill="none" stroke="#0b1f33" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /></g>
+          <g id="dh"><circle cx="470" cy="470" r="24" fill="#fff" /></g>
+        </svg>
+        <div class="lab" id="lmn" style="left:1340px; top:310px;">Manali<span class="sub">No verified site today</span></div>
+        <div class="lab" id="lbir" style="left:960px; top:640px; color:#d4a24c;">Bir, Kangra<span class="sub">Verified jump · ~50 m*</span></div>
+        <div class="lab" id="ldh" style="left:300px; top:310px;">Dharamshala<span class="sub">Short drive to Bir</span></div>
+        <div class="lab" id="lrt" style="left:1250px; top:600px; font-size:30px; font-weight:500; color:rgba(255,255,255,0.9)">Add a Bir night on the route</div>
+        <div class="chip" id="chip">Add it to your trip → Get Quote</div>
+        <div class="note" id="note">*Operator-listed height, confirmed on booking · schematic map, not to scale</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kick", "#title"], { opacity: 0, y: 30, duration: 0.6, stagger: 0.15, ease: "power2.out" }, 0.1);
+      tl.from("#mn", { opacity: 0, scale: 0.4, transformOrigin: "1450px 470px", duration: 0.5, ease: "back.out(2)" }, 1.0);
+      tl.from("#lmn", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 1.2);
+      tl.from("#bir", { opacity: 0, scale: 0.4, transformOrigin: "900px 650px", duration: 0.6, ease: "back.out(2)" }, 2.4);
+      tl.from("#lbir", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 2.6);
+      tl.fromTo("#pulse", { attr: { r: 40 }, opacity: 0.9 }, { attr: { r: 90 }, opacity: 0, duration: 1.2, repeat: 4, ease: "sine.out" }, 3.0);
+      tl.from("#dh", { opacity: 0, scale: 0.4, transformOrigin: "470px 470px", duration: 0.5, ease: "back.out(2)" }, 3.8);
+      tl.from("#ldh", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 4.0);
+      tl.fromTo("#dr", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 4.2);
+      tl.fromTo("#rt", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 5.2);
+      tl.from("#lrt", { opacity: 0, y: 16, duration: 0.5, ease: "power2.out" }, 5.5);
+      tl.from("#chip", { opacity: 0, y: 40, duration: 0.6, ease: "back.out(1.6)" }, 7.0);
+      tl.from("#note", { opacity: 0, duration: 0.5 }, 7.2);
+      tl.to({}, { duration: 0.1 }, 9.9);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
