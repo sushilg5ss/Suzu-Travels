@@ -1,0 +1,39 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "dusk",
+  "deva": "श्री चामुंडा देवी",
+  "kicker": "Dhauladhar foothills · Kangra",
+  "beats": [
+   "Devi's brow births a warrior",
+   "Chanda and Munda are slain",
+   "A priest dreams of hidden idol",
+   "Shrine moves down to Baner river"
+  ]
+ },
+ "story": {
+  "title": "The legend of Chamunda",
+  "beats": [
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "From the Mother's brow rises a fierce power"
+   },
+   {
+    "arch": "devi",
+    "sky": "night",
+    "line": "Chanda and Munda fall — she is named Chamunda"
+   },
+   {
+    "arch": "himalaya",
+    "sky": "snow",
+    "line": "Her first seat: Aadi Himani, high on the ridge"
+   },
+   {
+    "arch": "devi",
+    "sky": "dawn",
+    "line": "A dream brings the shrine down to the Baner river"
+   }
+  ]
+ }
+}

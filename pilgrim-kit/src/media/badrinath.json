@@ -1,0 +1,39 @@
+{
+ "hero": {
+  "arch": "himalaya",
+  "sky": "saffron",
+  "deva": "श्री बद्रीनाथ",
+  "kicker": "Char Dham · Chamoli, Uttarakhand",
+  "beats": [
+   "Vishnu meditated in the Himalayan cold",
+   "Lakshmi sheltered him as a badri tree",
+   "Nar and Narayan kept penance here",
+   "Badri Vishal beside the Alaknanda"
+  ]
+ },
+ "story": {
+  "title": "The legend of Badrinath",
+  "beats": [
+   {
+    "arch": "himalaya",
+    "sky": "snow",
+    "line": "Vishnu sits in deep meditation amid the snows"
+   },
+   {
+    "arch": "devi",
+    "sky": "dawn",
+    "line": "Lakshmi becomes a badri tree to shelter him"
+   },
+   {
+    "arch": "himalaya",
+    "sky": "dusk",
+    "line": "Twin peaks Nar and Narayan keep their penance"
+   },
+   {
+    "arch": "ghats",
+    "sky": "dawn",
+    "line": "Pilgrims bathe at Tapt Kund by the Alaknanda"
+   }
+  ]
+ }
+}
