@@ -53,6 +53,7 @@ def build():
     local = [("manali-taxi-service", "Manali taxi service", "Solang, Atal Tunnel–Sissu, Rohtang at union rates; drops to Chandigarh, Delhi, Leh."),
              ("shimla-taxi-service", "Shimla taxi service", "Kufri, Chail, Naldehra, Narkanda day trips; Kalka & airport transfers."),
              ("chandigarh-taxi-service", "Chandigarh taxi service", "IXC airport & Tricity pickups; drops to Shimla, Kasauli, Manali, Amritsar, Delhi."),
+             ("chandigarh-airport-taxi", "Chandigarh airport taxi", "IXC arrivals pickup with flight tracking; drops to Shimla, Kasauli, Manali, Dharamshala, Amritsar & Delhi."),
              ("dehradun-taxi-service", "Dehradun taxi service", "Jolly Grant airport pickups, Mussoorie & Dhanaulti day trips; drops to Rishikesh, Haridwar, Delhi."),
              ("srinagar-taxi-service", "Srinagar taxi service", "Airport pickups, Gulmarg, Pahalgam & Sonamarg day trips; drops to Jammu."),
              ("haridwar-taxi-service", "Haridwar taxi service", "Station & ghat pickups, Rishikesh and Neelkanth trips; drops to Delhi, Sonprayag & Badrinath."),

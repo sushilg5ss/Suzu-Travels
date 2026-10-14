@@ -188,6 +188,7 @@ VARIANTS = {
   "outstation-cab-delhi": dict(routes=[("Delhi outstation",None)], kicker="ONE-WAY FROM DELHI NCR"),
   "amritsar-taxi-service": dict(routes=[("Amritsar taxis",None)], kicker="GOLDEN TEMPLE · WAGAH"),
   "nainital-taxi-service": dict(routes=[("Nainital taxis",None)], kicker="KATHGODAM · LAKES · KAINCHI"),
+  "chandigarh-airport-taxi": dict(routes=[("Chandigarh Airport",None)], kicker="IXC · SHIMLA · MANALI"),
   "tempo-traveller-hire-delhi": dict(routes=[("Tempo Traveller",None)], kicker="12–17 SEATS · DELHI NCR", vehicle="tempo"),
   "innova-crysta-on-rent": dict(routes=[("Innova Crysta",None)], kicker="ON RENT WITH DRIVER"),
 }

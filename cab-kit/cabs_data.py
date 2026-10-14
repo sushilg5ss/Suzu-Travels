@@ -92,6 +92,7 @@ PLACES = {
     "Kathgodam": (29.27, 79.54), "Bhimtal": (29.35, 79.56), "Bhowali": (29.38, 79.51), "Ramnagar": (29.39, 79.13),
     "Almora": (29.60, 79.66), "Mukteshwar": (29.47, 79.65),
     "Pantnagar": (29.03, 79.47), "Ranikhet": (29.64, 79.43), "Kausani": (29.84, 79.60), "Kainchi Dham": (29.42, 79.52),
+    "Chandigarh Airport": (30.67, 76.79),
     "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
 }
 
