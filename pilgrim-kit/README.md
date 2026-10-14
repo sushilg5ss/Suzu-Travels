@@ -104,7 +104,7 @@ One-line content only (wpautop). WP Rocket: meta-only changes don't purge — re
 | `/tours/5-shakti-peeth-tour-package-himachal-5-days-4-nights/` (10861) | 5 shakti peeth tour package himachal | Shakti Peeth / Himachal Devi pages |
 | `/packages/ultimate-char-dham-yatra/` (9905) | char dham yatra package | Char Dham, Kedarnath, Badrinath |
 | `/char-dham-closing-dates-2026/` (post 12021) | char dham / kedarnath closing date | link, never target |
-| `/packages/kashmir-amarnath-by-helicopter/` (9763) | amarnath yatra by helicopter | Amarnath page |
+| `/packages/kashmir-amarnath-by-helicopter/` (9763) | amarnath yatra by helicopter | Amarnath page (**404 since Oct 2026** — PKG['amarnath'] now points to `/kashmir-tour-packages-quote/` "Amarnath Yatra by road", as edited live on the hub; no helicopter in 2026) |
 | `/tours/amazing-kashmir-vaishno-devi-package/` (9367) | kashmir with vaishno devi | Vaishno Devi page |
 | `/tours/spiritual-journey-varanasi-ayodhya-prayagraj-tour-package/` (10584) | varanasi ayodhya prayagraj tour package | Kashi / Ayodhya pages |
 | `/kainchi-dham-registration-…/` (post 12444) | kainchi dham registration | Kainchi Dham page |

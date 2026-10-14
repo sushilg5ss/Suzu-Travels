@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "12 Oct 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "14 Oct 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -32,7 +32,7 @@ PKG = {
     "dodham": ("/tours/holiest-himalayan-pilgrimage-tour/", "Kedarnath–Badrinath Do Dham tour", "From Haridwar"),
     "chardham-nri": ("/char-dham-yatra-for-nri/", "Char Dham Yatra for NRIs", "Planned from Delhi, quoted in USD"),
     "chardham-dates": ("/char-dham-closing-dates-2026/", "Char Dham closing dates 2026", "Our live update post"),
-    "amarnath": ("/packages/kashmir-amarnath-by-helicopter/", "Amarnath Yatra package", "Baltal route, 4 days"),
+    "amarnath": ("/kashmir-tour-packages-quote/", "Amarnath Yatra by road", "Baltal or Pahalgam route, on request"),  # 14 Oct 2026: helicopter package 9763 URL now 404s; live hub edited to this by hand
     "vaishno": ("/tours/amazing-kashmir-vaishno-devi-package/", "Kashmir with Vaishno Devi", "7 days"),
     "kashi": ("/tours/spiritual-journey-varanasi-ayodhya-prayagraj-tour-package/", "Varanasi–Ayodhya–Prayagraj tour", "6 days"),
     "kainchi": ("/kainchi-dham-registration-2026-new-rules-and-crowd-cap/", "Kainchi Dham registration 2026", "Rules and daily cap"),
@@ -404,7 +404,7 @@ def hub():
 <p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Pilgrimage Tours in India: Tirth Yatra Guide & Packages", "url": "https://suzutravels.com" + HUB,
-         "dateModified": "2026-10-12", "inLanguage": "en-IN",
+         "dateModified": "2026-10-14", "inLanguage": "en-IN",
          "about": [{"@type": "HinduTemple", "name": short_name(j) + " Jyotirlinga", "address": {"@type": "PostalAddress", "addressLocality": j["town"], "addressRegion": j["state"], "addressCountry": "IN"}} for j in J],
          "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961"}},
         {"@type": "ItemList", "name": "The 12 Jyotirlingas of India", "numberOfItems": 12,
