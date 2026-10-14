@@ -121,7 +121,7 @@ CATS = [
      ]),
     ('treks', 'Treks & Camps', 'Walk', 'Treks and camps: day hikes to high passes',
      'Low treks run most of the year outside the monsoon; high passes open from mid-June to mid-October. Trekking in Himachal comes under the state’s adventure rules, with registered guides and insurance.',
-     'camping-tents-mountain-valley-768x512.webp', 'Orange camping tent pitched in a high mountain valley under storm clouds', [
+     '../10/hikers-uphill-snow-peaks-768x512.webp', 'Two hikers with backpacks walking uphill over grass and rock toward snow-capped peaks under a cloudy sky', [
          ('Triund trek', 'McLeodganj, Dharamshala', 'Mar–Jun and Sep–Dec',
           'A short ridge trek with big Dhauladhar views; overnight camps on top.', 'Beginner friendly', 'Triund'),
          ('Kareri Lake trek', 'Kareri village, Dharamshala', 'May–Jun and Sep–Nov', 'A glacial lake below the Dhauladhars.', None, 'Kareri'),
@@ -295,7 +295,7 @@ def build():
         after = RAFTING_POINT_EXPLAINER if cid == 'water' else ''
         secs.append(
             f'<section class="sza-sec{alt_cls}" id="{cid}"><div class="sza-cathead">'
-            f'<img src="{MEDIA}{img}" alt="{e(alt)}" loading="lazy" decoding="async" width="768" height="480">'
+            f'<img src="{(U + "/wp-content/uploads/2026/10/" + img[6:]) if img.startswith("../10/") else MEDIA + img}" alt="{e(alt)}" loading="lazy" decoding="async" width="768" height="480">'
             f'<div><span class="sza-kicker">{e(kicker)}</span><h2>{e(h2)}</h2><p class="sza-lead">{e(lead)}</p>'
             f'<span class="sza-count">{icon(cid, "")}{len(acts)} {word} · price on request</span></div></div>'
             f'{extra}<div class="sza-grid sza-acts">{cards}</div>{after}</section>')
