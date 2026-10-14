@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bg { position: absolute; inset: 0; background: url("assets/bg.jpg") center/cover; opacity: 0.12; }
+      .kick { position: absolute; left: 110px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 116px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; }
+      svg.ch { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .sub { display: block; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); margin-top: 4px; }
+      .ctr { position: absolute; top: 60px; width: 280px; height: 130px; border: 3px solid rgba(212,162,76,0.7); border-radius: 22px; }
+      .cv { position: absolute; left: 0; top: 14px; width: 274px; text-align: center; color: #fff; font-weight: 800; font-size: 60px; white-space: nowrap; }
+      .cl { position: absolute; left: 0; top: 86px; width: 274px; text-align: center; color: #d4a24c; font-weight: 800; font-size: 22px; letter-spacing: 0.16em; }
+      .wl { position: absolute; left: 140px; top: 340px; color: rgba(255,255,255,0.9); font-weight: 800; font-size: 26px; white-space: nowrap; }
+      .chip { position: absolute; left: 560px; top: 900px; width: 800px; height: 92px; line-height: 92px; text-align: center; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 44px; border-radius: 46px; white-space: nowrap; }
+      .note { position: absolute; left: 110px; bottom: 30px; color: rgba(255,255,255,0.72); font-weight: 500; font-size: 22px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="bg"></div>
+        <div class="kick" id="kick">TRIUND TREK · DHARAMSHALA</div>
+        <div class="title" id="title">Your Triund climb</div>
+        <div class="ctr" id="ckm" style="left:1180px"><div class="cv" id="vkm">0 km</div><div class="cl">DISTANCE</div></div>
+        <div class="ctr" id="chr" style="left:1500px"><div class="cv" id="vhr">0 h</div><div class="cl">TIME UP</div></div>
+        <svg class="ch" viewBox="0 0 1920 1080">
+          <line id="wline" x1="140" y1="386" x2="1780" y2="386" stroke="rgba(255,255,255,0.55)" stroke-width="3" stroke-dasharray="10 10" />
+          <path id="base" d="M 160 860 L 1780 860" stroke="rgba(255,255,255,0.25)" stroke-width="3" />
+          <path id="ext" d="M 1420 451 C 1520 420, 1600 360, 1700 322" fill="none" stroke="#8a97a5" stroke-width="7" stroke-dasharray="12 12" stroke-linecap="round" />
+          <path id="trail" d="M 160 817 C 260 806, 340 790, 420 774 C 500 758, 560 726, 650 709 C 760 690, 820 640, 930 623 C 1020 610, 1080 590, 1140 580 C 1240 560, 1330 470, 1420 451" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <circle id="dot" cx="160" cy="817" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <g id="m0"><circle cx="160" cy="817" r="11" fill="#fff" /></g>
+          <g id="m1"><circle cx="420" cy="774" r="10" fill="#fff" /></g>
+          <g id="m2"><circle cx="650" cy="709" r="14" fill="#fff" /><rect x="636" y="702" width="28" height="18" rx="3" fill="#0b1f33" /><line x1="642" y1="708" x2="658" y2="708" stroke="#fff" stroke-width="3" /><line x1="642" y1="714" x2="652" y2="714" stroke="#fff" stroke-width="3" /></g>
+          <g id="m3"><circle cx="930" cy="623" r="10" fill="#fff" /></g>
+          <g id="m4"><circle cx="1140" cy="580" r="10" fill="#fff" /></g>
+          <g id="m5"><circle cx="1420" cy="451" r="18" fill="#d4a24c" stroke="#fff" stroke-width="5" /></g>
+          <g id="m6"><circle cx="1700" cy="322" r="11" fill="#8a97a5" /></g>
+        </svg>
+        <div class="lab" id="l0" style="left:110px; top:880px;">McLeodganj<span class="sub">about 2,000 m · start</span></div>
+        <div class="lab" id="l1" style="left:330px; top:690px;">Dharamkot</div>
+        <div class="lab" id="l2" style="left:560px; top:740px;">Gallu Devi check post<span class="sub">Show ID · register · forest fee</span></div>
+        <div class="lab" id="l3" style="left:870px; top:650px;">Tea stalls<span class="sub">on the forest trail</span></div>
+        <div class="lab" id="l4" style="left:1090px; top:606px;">"22 curves"<span class="sub">last ~2 km, steep + rocky</span></div>
+        <div class="lab" id="l5" style="left:1455px; top:462px; color:#d4a24c; font-size:44px;">Triund<span class="sub">about 2,850 m</span></div>
+        <div class="lab" id="l6" style="left:1560px; top:228px; color:#c3ccd5;">Snowline<span class="sub">add-on, ~2 km more</span></div>
+        <div class="wl" id="wl">3,000 m · winter-order line</div>
+        <div class="chip" id="chip">Day hike or one night · Get Quote</div>
+        <div class="note" id="note">Heights and distances are approximate · schematic profile, not to scale · winter trekking needs district permission</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kick", "#title"], { opacity: 0, y: 30, duration: 0.6, stagger: 0.15, ease: "power2.out" }, 0.1);
+      tl.from(["#ckm", "#chr"], { opacity: 0, y: 20, duration: 0.5, stagger: 0.1, ease: "power2.out" }, 0.4);
+      tl.from(["#m0", "#l0"], { opacity: 0, duration: 0.4 }, 0.6);
+      const trail = document.getElementById("trail");
+      const dot = document.getElementById("dot");
+      const vkm = document.getElementById("vkm");
+      const vhr = document.getElementById("vhr");
+      const L = trail.getTotalLength();
+      trail.style.strokeDasharray = L + " " + L;
+      const st = { p: 0 };
+      function place() {
+        const d = L * st.p;
+        trail.style.strokeDashoffset = (L - d).toFixed(2);
+        const pt = trail.getPointAtLength(Math.max(0.01, d));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+        vkm.textContent = st.p >= 0.999 ? "~9 km" : Math.floor(9 * st.p) + " km";
+        vhr.textContent = st.p >= 0.999 ? "4–5 h" : Math.floor(4 * st.p) + " h";
+      }
+      place();
+      tl.to(st, { p: 1, duration: 6.6, ease: "none", onUpdate: place }, 1.0);
+      const pops = [["#m1", "#l1", 1.9], ["#m2", "#l2", 2.9], ["#m3", "#l3", 4.2], ["#m4", "#l4", 5.4], ["#m5", "#l5", 7.5]];
+      pops.forEach(([m, l, t]) => {
+        tl.from(m, { opacity: 0, scale: 0.3, transformOrigin: "50% 50%", duration: 0.4, ease: "back.out(2)" }, t);
+        tl.from(l, { opacity: 0, y: 16, duration: 0.4, ease: "power2.out" }, t + 0.1);
+      });
+      tl.fromTo("#ext", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 8.2);
+      tl.from(["#m6", "#l6"], { opacity: 0, duration: 0.4 }, 8.5);
+      tl.fromTo("#wline", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 8.8);
+      tl.from("#wl", { opacity: 0, y: 12, duration: 0.4 }, 8.9);
+      tl.from("#chip", { opacity: 0, y: 40, duration: 0.6, ease: "back.out(1.6)" }, 9.6);
+      tl.from("#note", { opacity: 0, duration: 0.5 }, 9.8);
+      tl.to({}, { duration: 0.1 }, 11.9);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
