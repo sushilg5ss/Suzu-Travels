@@ -570,11 +570,12 @@
       "Shrine moves down to Baner river"
     ],
     "darshan": {
-      "open": "approx. 06:00-19:00/20:00",
-      "aarti": null,
-      "note": "Kangra district page says 'generally' open 6 AM to 7 or 8 PM; not an exact schedule.",
-      "as_of": "2026-10-08",
-      "source": "https://hpkangra.nic.in/tourist-place/shri-chamunda-nandikeshwar-dham/"
+      "open": "Summer 05:00-12:00 & 13:00-22:00; winter 06:00-12:00 & 13:00-21:00 (12-1 pm bhog break)",
+      "aarti": "Morning 08:00-08:45; evening 19:10-19:50 (both seasons)",
+      "langar": "12:00-14:00 and 19:00-21:00 daily, free (all day in Navratri)",
+      "note": "Official temple trust page (Commissioner Temple / DC Kangra). Summer/winter changeover date not stated - confirm locally. Supersedes the district page's 'generally 6 AM to 7 or 8 PM'.",
+      "as_of": "2026-10-14",
+      "source": "https://kangratemples.hp.gov.in/shri-chamunda-mata-temple/"
     },
     "festivals": [
       {
@@ -651,7 +652,7 @@
       }
     ],
     "unverified": [
-      "Exact darshan/aarti timings"
+      "Summer/winter timing changeover date"
     ],
     "as_of": "2026-10-08"
   },
