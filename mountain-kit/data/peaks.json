@@ -27,11 +27,13 @@
   "base": "Yuksom (Indian side, trekking only to Goecha La) / Taplejung (Nepal)",
   "foreigners": "no",
   "rank": 1,
-  "notable": "India's highest peak and world's 3rd highest; second ascent 1977 by an Indian Army team (Col. Narendra Kumar) via the NE spur from Sikkim.",
+  "notable": "India's highest peak and world's 3rd highest; second ascent 31 May 1977 by an Indian Army team (leader Col. Narendra Kumar) via the NE spur from Sikkim. In May 2025 Indian Army teams summited from Nepal; Sikkim's Chief Minister then asked the Centre to stop expeditions from the Nepal side too.",
   "sources": [
    "https://en.wikipedia.org/wiki/Kangchenjunga",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
-   "https://scroll.in/latest/935435/top-mountaineering-authority-to-deny-permits-to-climb-kanchenjunga-as-sikkim-protests-lifting-ban"
+   "https://scroll.in/latest/935435/top-mountaineering-authority-to-deny-permits-to-climb-kanchenjunga-as-sikkim-protests-lifting-ban",
+   "https://himalayan-database.climbing-history.org/expedition/KANG77101/1977",
+   "https://english.nepalnews.com/s/explainers/explained-why-a-kanchenjunga-expedition-sparked-outrage-in-indias-sikkim/"
   ]
  },
  {
@@ -54,7 +56,7 @@
   "fa": 1936,
   "fa_by": "Bill Tilman & Noel Odell (British-American expedition)",
   "status": "closed",
-  "status_note": "Nanda Devi Sanctuary and main summit closed to climbers and locals since 1983 (one-off 1993 army clean-up). Feb 2026 Uttarakhand opening of 83 peaks named Nanda Devi East, not the main summit.",
+  "status_note": "Nanda Devi Sanctuary and main summit closed to climbers and locals since 1983 (one-off 1993 army clean-up and summit). In July 2025 the IMF's reopening proposal went to Uttarakhand Tourism for review; no reopening order found as of Oct 2026. Feb 2026 Uttarakhand opening of 83 peaks named Nanda Devi East, not the main summit.",
   "grade": "extreme",
   "grade_note": "Guarded by the Rishi Gorge and sanctuary wall; south (Coxcomb) ridge is technical rock/snow/ice",
   "season": "May–Jun & Sep–Oct",
@@ -65,7 +67,8 @@
   "sources": [
    "https://en.wikipedia.org/wiki/Nanda_Devi",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
-   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743",
+   "https://www.travelandtourworld.com/news/article/uttarakhand-state-in-talks-to-reopen-nanda-devi-peak-for-climbers-after-40-year-environmental-and-security-lockdown/"
   ]
  },
  {
