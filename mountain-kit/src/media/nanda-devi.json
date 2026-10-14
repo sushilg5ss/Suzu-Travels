@@ -1,0 +1,114 @@
+{
+ "hero": {
+  "kicker": "NANDA DEVI · UTTARAKHAND",
+  "words": [
+   [
+    "7,816 M.",
+    "INDIA'S 2ND."
+   ],
+   [
+    "CLIMBED",
+    "IN 1936."
+   ],
+   [
+    "CLOSED",
+    "SINCE 1983."
+   ],
+   [
+    "CLIMB IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-92081.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.08,
+     "x": -150
+    },
+    "to": {
+     "scale": 1.14,
+     "x": -190
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.04,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40,
+     "y": -190
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "NANDA DEVI · TRUE HEIGHTS",
+  "title": "Nanda Devi beside its Uttarakhand neighbours",
+  "peaks": [
+   "changabang",
+   "dunagiri",
+   "trisul-i",
+   "nanda-devi-east",
+   "kamet",
+   "nanda-devi"
+  ],
+  "subs": {
+   "nanda-devi": "Closed since 1983",
+   "kamet": "First climbed 1931",
+   "nanda-devi-east": "On 2026 open list",
+   "trisul-i": "First climbed 1907",
+   "dunagiri": "Uttarakhand",
+   "changabang": "Uttarakhand"
+  },
+  "end": "Climb in Himachal: Reo Purgyil 6,816 m"
+ }
+}

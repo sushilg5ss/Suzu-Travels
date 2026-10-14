@@ -1,0 +1,109 @@
+{
+ "hero": {
+  "kicker": "KANCHENJUNGA · SIKKIM",
+  "words": [
+   [
+    "8,586 M.",
+    "WORLD NO. 3."
+   ],
+   [
+    "SACRED.",
+    "NO PERMITS."
+   ],
+   [
+    "SEE IT FROM",
+    "GOECHA LA."
+   ],
+   [
+    "CLIMB IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-30701907.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 450
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "SIKKIM · TRUE HEIGHTS",
+  "title": "Kanchenjunga beside Sikkim's high peaks",
+  "peaks": [
+   "pandim",
+   "siniolchu",
+   "pauhunri",
+   "kabru-north",
+   "jongsong-peak",
+   "kangchenjunga"
+  ],
+  "subs": {
+   "kangchenjunga": "Sacred · no permits",
+   "jongsong-peak": "Sikkim",
+   "kabru-north": "Sikkim",
+   "pauhunri": "Sikkim",
+   "siniolchu": "Sikkim",
+   "pandim": "Sikkim"
+  },
+  "end": "Sacred peaks of Sikkim: climb in Himachal"
+ }
+}
