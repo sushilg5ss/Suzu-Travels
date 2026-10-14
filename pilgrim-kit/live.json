@@ -6,5 +6,6 @@
  "nau-devi-yatra": {"id": 12733, "path": "/pilgrimage-tours/nau-devi-yatra/", "kind": "circuit", "label": "Nau Devi Yatra", "blurb": "Nine Devis, from Shakumbhari to Vaishno Devi", "added": "2026-10-10"},
  "chintpurni": {"id": 12855, "path": "/pilgrimage-tours/chintpurni/", "kind": "temple", "label": "Chintpurni, Una", "blurb": "Chhinnamastika, ringed by four Shiva shrines", "added": "2026-10-11", "shrine": "chintpurni-una"},
  "jwala-ji": {"id": 12935, "path": "/pilgrimage-tours/jwala-ji/", "kind": "temple", "label": "Jwala Ji, Kangra", "blurb": "The Devi as living flame, with no idol", "added": "2026-10-12", "shrine": "jwalamukhi-jwala-ji-kangra"},
- "somnath": {"id": 13207, "path": "/pilgrimage-tours/12-jyotirlinga/somnath/", "kind": "temple", "label": "Somnath, Gujarat", "blurb": "The first Jyotirlinga, on the Arabian Sea", "added": "2026-10-13", "shrine": "somnath-jyotirlinga"}
+ "somnath": {"id": 13207, "path": "/pilgrimage-tours/12-jyotirlinga/somnath/", "kind": "temple", "label": "Somnath, Gujarat", "blurb": "The first Jyotirlinga, on the Arabian Sea", "added": "2026-10-13", "shrine": "somnath-jyotirlinga"},
+ "kashi-vishwanath": {"id": 13352, "path": "/pilgrimage-tours/12-jyotirlinga/kashi-vishwanath/", "kind": "temple", "label": "Kashi Vishwanath, Varanasi", "blurb": "The Lord of the Universe, on the Ganga", "added": "2026-10-14", "shrine": "kashi-vishwanath-jyotirlinga"}
 }
