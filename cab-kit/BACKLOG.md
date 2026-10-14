@@ -25,7 +25,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 12 | [x] amritsar-taxi-service — LIVE 2026-10-11 https://suzutravels.com/cabs/amritsar-taxi-service/ (ID 12827) | amritsar taxi service | 4,400 (+ car hire in amritsar 2,900) | NEW 1 Oct. Golden Temple/Wagah locals, drops to Dharamshala (260), Dalhousie, Jammu |
 | 13 | [x] delhi-to-nainital-taxi — LIVE 2026-10-12 https://suzutravels.com/cabs/delhi-to-nainital-taxi/ (ID 12904) | delhi to nainital taxi | 2,000 | Kathgodam/Haldwani pickups, Bhimtal/Mukteshwar |
 | 14 | [x] nainital-taxi-service — LIVE 2026-10-13 https://suzutravels.com/cabs/nainital-taxi-service/ (ID 13171) | nainital taxi service | 4,400 (LOW comp.; + kathgodam to nainital fare 720, kathgodam taxi 1,000) | NEW 1 Oct. Kathgodam station pickups, lake circuit |
-| 15 | [ ] chandigarh-airport-taxi | chandigarh airport taxi | 2,200 (cluster) | IXC pickups to Shimla, Manali, Kasauli, Dharamshala, Delhi |
+| 15 | [x] chandigarh-airport-taxi — LIVE 2026-10-14 https://suzutravels.com/cabs/chandigarh-airport-taxi/ (ID 13343) | chandigarh airport taxi | 2,200 (cluster) | IXC pickups to Shimla, Manali, Kasauli, Dharamshala, Delhi |
 | 16 | [ ] kalka-to-shimla-taxi | kalka to shimla taxi | 1,600 | Kalka station pickup (toy-train alternative), Parwanoo, Timber Trail |
 | 17 | [ ] dehradun-to-mussoorie-taxi | dehradun to mussoorie taxi | 1,600 (+ fare/price 1,000) | NEW 1 Oct. Short hill transfer; Kempty/Dhanaulti add-ons |
 | 18 | [ ] rishikesh-taxi-service | rishikesh taxi service | 2,400 (LOW comp.) | NEW 1 Oct. Local + Char Dham; links Delhi→Rishikesh page |

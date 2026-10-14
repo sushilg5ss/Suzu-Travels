@@ -230,8 +230,8 @@ def build_city(p):
              f'<h3 style="margin-top:34px">Outstation taxi from {town}</h3>{outstation_table(outs, p["slug"])}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
     body += route_media(p["slug"], p["stops"], f"Popular taxi trips from {town}", f"Where our {town} cabs go most, and what each trip is known for.")
-    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Cars available in {town}</h2>{vehicle_cards(p["slug"], town)}</section>'
-    body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know about taxis in {town}</h2>{tips(p["tips"])}</section>'
+    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Cars available {p.get("in_town") or "in " + town}</h2>{vehicle_cards(p["slug"], town)}</section>'
+    body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know about taxis {p.get("in_town") or "in " + town}</h2>{tips(p["tips"])}</section>'
     body += f'<section class="szc-sec alt" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'
     body += quote_block(p, town, "")
     body += f'<section class="szc-sec" id="more"><span class="szc-kicker">More cab routes</span><h2>Popular routes to and from the hills</h2>{more_routes(p["slug"])}<h3 style="margin-top:30px">Plan the rest of the trip</h3>{related(p["related"])}</section>'
