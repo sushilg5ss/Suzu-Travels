@@ -308,3 +308,11 @@ details.fq p{margin:0 0 14px;color:#2c4637}
   .tp-mode button{padding:6px 9px;font-size:12px;white-space:nowrap;min-height:36px}
   .tp-call{padding:6px 9px}
 }
+
+/* ---------- embedded in the homepage overlay ---------- */
+.tp-close{display:inline-flex;align-items:center;gap:4px;border:0;background:var(--m);color:var(--f);border-radius:999px;padding:0 14px 0 10px;min-height:40px;font-weight:800;font-size:14px}
+.tp-close svg{width:18px;height:18px}
+.tp-embed .tp-hero h1,.tp-embed .tp-hero p.sub,.tp-embed .tp-hero .mtn{display:none}
+.tp-embed .tp-hero .in{padding:14px 16px 16px}
+.tp-embed .tp-call span{display:none}
+@media(max-width:520px){.tp-embed .tp-logo span{display:none}}

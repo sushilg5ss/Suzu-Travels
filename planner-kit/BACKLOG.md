@@ -7,9 +7,12 @@
 4. [ ] **Hindi UI toggle** (EN / हिं) for labels, day-plan sentences and PDF.
 5. [ ] **Split data**: lazy-load road geometry (`/plan-your-trip/roads.json`) after first paint; target < 150 KB first load, LCP < 2.0 s mobile. Lighthouse before/after in LOG.
 
-## Phase 2 — replace the homepage hero film with the booking engine (Sushil's request)
-6. [ ] Build `#tp-engine` hero (MakeMyTrip-style search card: Holiday planner · Yatra & Mata darshan · Cabs · Hotels) for the static homepage, deep-linking to `/plan-your-trip/#t=…`. Rules in `agents/developer.md` §Homepage. Ship only after /plan-your-trip/ has been live and green for 2 runs.
-7. [ ] Lightweight HyperFrames loop (≤ 1.5 MB phone / 2.5 MB desktop, poster first) as the engine's background — snow, roads, temples — instead of the 11-scene film; or a pure CSS/SVG animated mountain scene if speed suffers.
+## Phase 2 — homepage booking engine (LIVE 15 Oct 2026) — now: improve it
+- [ ] Measure homepage Lighthouse mobile/desktop after the swap (before: mobile 84 / desktop 90) and fix any regression (LCP image size, CLS of the card).
+- [ ] Card UX: recent searches chip, auto-suggest by season, 'Plan with Suzu assistant' link, Hindi labels.
+- [ ] iOS Safari: check PDF/print inside the overlay iframe; if it fails, open /plan-your-trip/#t=… in a new tab for PDF.
+6. [x] done 2026-10-15 (live 065caa4b, see LOG) Build `#tp-engine` hero (MakeMyTrip-style search card: Holiday planner · Yatra & Mata darshan · Cabs · Hotels) for the static homepage, deep-linking to `/plan-your-trip/#t=…`. Rules in `agents/developer.md` §Homepage. Ship only after /plan-your-trip/ has been live and green for 2 runs.
+7. [~] 2026-10-15: light photo crossfade shipped instead of video (Sushil: no video in hero). Optional later: a tiny CSS/SVG motion layer only if Lighthouse stays green. Lightweight HyperFrames loop (≤ 1.5 MB phone / 2.5 MB desktop, poster first) as the engine's background — snow, roads, temples — instead of the 11-scene film; or a pure CSS/SVG animated mountain scene if speed suffers.
 
 ## Phase 3 — make it the best planner in India
 8. [ ] More places: Kerala, Goa, Rajasthan, Sikkim/North-East (fly-in circuits; hotel-only + local car), Amarnath, Kainchi Dham, Adi Kailash. Re-run `tools/fetch_roads.py`.

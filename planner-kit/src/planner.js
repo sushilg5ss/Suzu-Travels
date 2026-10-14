@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '0.1';
+  var VER = '0.2';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -703,6 +703,7 @@
   }
 
   /* ---------------- hero search + tabs ---------------- */
+  function selTab(t) { var tabs = $$('.tp-tabs [role=tab]'); tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; $('#' + x.getAttribute('aria-controls')).hidden = !on; }); ev('trip_planner', { step: 'tab', tab: t.id }); }
   function wireHero() {
     placeOptions($('#q-from'), 'chandigarh', function (p) { return p.kind === 'hub' || ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu'].indexOf(p.id) > -1; });
     $('#q-date').value = S.d; $('#q-date').min = iso(today);
@@ -736,7 +737,6 @@
       t.addEventListener('click', function () { selTab(t); });
       t.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { var n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; selTab(n); n.focus(); } });
     });
-    function selTab(t) { tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; $('#' + x.getAttribute('aria-controls')).hidden = !on; }); ev('trip_planner', { step: 'tab', tab: t.id }); }
     /* mode */
     $$('.tp-mode button').forEach(function (b) { b.addEventListener('click', function () { setMode(b.dataset.mode); }); });
   }
@@ -862,7 +862,7 @@
     });
   }
   function finish(act) { if (act === 'pdf') doPdf(); else if (act === 'share') showShare(); }
-  function shareUrl(cv) { return location.href.split('#')[0] + '#t=' + encState(cv); }
+  function shareUrl(cv) { return location.origin + location.pathname + '#t=' + encState(cv); }
   function showShare() {
     var url = shareUrl(MODE === 'agent'), m = $('#mod');
     $('#mod-t').textContent = MODE === 'agent' ? 'Client link ready' : 'Your link is ready';
@@ -939,9 +939,46 @@
   }
 
   /* ---------------- boot ---------------- */
+  /* ---------------- embedded in the homepage (iframe overlay) ---------------- */
+  var Q = new URLSearchParams(location.search), EMBED = Q.get('embed') === '1';
+  function closeEmbed() { try { if (W.parent && W.parent !== W) { W.parent.postMessage({ type: 'tp-close' }, location.origin); return; } } catch (e) {} location.href = '/'; }
+  function setupEmbed() {
+    D.documentElement.classList.add('tp-embed');
+    var top = $('.tp-top .in'), b = D.createElement('button');
+    b.type = 'button'; b.className = 'tp-close'; b.setAttribute('aria-label', 'Close planner and go back to the homepage');
+    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span>Home</span>';
+    b.addEventListener('click', closeEmbed); top.insertBefore(b, top.firstChild);
+    var lg = $('.tp-logo'); if (lg) { lg.removeAttribute('href'); lg.setAttribute('role', 'presentation'); }
+    D.addEventListener('keydown', function (e) { if (e.key === 'Escape' && $('#mod').hidden) closeEmbed(); });
+  }
+  function applyParams() {
+    if (/^\d{4}-\d\d-\d\d$/.test(Q.get('date') || '')) S.d = Q.get('date');
+    if (+Q.get('ad') > 0) S.a = clamp(+Q.get('ad'), 1, 40);
+    var from = PL[Q.get('from')] ? Q.get('from') : null, tab = Q.get('tab');
+    if (Q.get('tpl')) { var t = TPL.filter(function (x) { return x.id === Q.get('tpl'); })[0]; if (t) { loadTpl(t, from); return true; } }
+    if (Q.get('place') && PL[Q.get('place')]) { if (from) S.s = from; loadPlace(PL[Q.get('place')], from); return true; }
+    if (tab === 'cab') {
+      selTab($('#tab-cab'));
+      if (PL[Q.get('cf')]) $('#c-from').value = Q.get('cf'); if (PL[Q.get('ct')]) $('#c-to').value = Q.get('ct');
+      if (Q.get('ctype') === 'round') $('#c-type').value = 'round'; if (veh(Q.get('cv'))) $('#c-veh').value = Q.get('cv');
+      if (Q.get('cf') && Q.get('ct')) $('#c-go').click();
+      return true;
+    }
+    if (tab === 'hotel') {
+      selTab($('#tab-hotel'));
+      if (PL[Q.get('hp')]) $('#h-place').value = Q.get('hp'); if (/^\d{4}-\d\d-\d\d$/.test(Q.get('hin') || '')) $('#h-in').value = Q.get('hin');
+      if (+Q.get('hn')) $('#h-n').value = String(clamp(+Q.get('hn'), 1, 7)); if (+Q.get('hr')) $('#h-rooms').value = Q.get('hr'); if (tier(Q.get('ht')).id === Q.get('ht')) $('#h-tier').value = Q.get('ht');
+      if (Q.get('hp')) $('#h-go').click();
+      return true;
+    }
+    if (tab === 'yatra') { selTab($('#tab-yatra')); return true; }
+    return false;
+  }
   function boot() {
+    if (EMBED) setupEmbed();
     wireHero(); wireTemplates(); wireBuilder(); wireCab(); wireHotel(); wireModal();
     var fromLink = loadHash();
+    if (!fromLink && (EMBED || Q.has('tpl') || Q.has('place') || Q.has('tab'))) { $('#q-date').value = S.d; applyParams(); }
     if (MODE === 'agent') setMode('agent');
     renderTemplates();
     if (S.cv) { var md = $('.tp-mode'); if (md) md.hidden = true; }
