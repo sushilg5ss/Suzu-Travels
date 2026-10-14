@@ -1,0 +1,42 @@
+{
+  "version": "0.1 — 15 Oct 2026",
+  "note": "Estimator rates. Deliberately on the higher side of the 2026 market so the team can confirm at or below the estimate. Cab per-km rates and driver allowance are the same as the live /cabs/ fare engine (cab-kit/cabs_data.py). Hotel rates: per room per night incl. breakfast + dinner (MAP), double occupancy, off-peak. Sources: research/rates-sources.md.",
+  "cab": {
+    "min_km_per_day": 250,
+    "union_min_km_per_day": 150,
+    "toll_parking_per_km": 1.5,
+    "vehicles": [
+      {"id": "sedan",   "name": "Sedan (Dzire / Etios)",       "hi": "सेडान",          "seats": 4,  "rate": 12, "allow": 400},
+      {"id": "ertiga",  "name": "Ertiga / similar",            "hi": "अर्टिगा",         "seats": 6,  "rate": 14, "allow": 400},
+      {"id": "crysta",  "name": "Innova Crysta",               "hi": "इनोवा क्रिस्टा",   "seats": 7,  "rate": 19, "allow": 400},
+      {"id": "tempo",   "name": "Tempo Traveller (12 seats)",  "hi": "टेम्पो ट्रैवलर",    "seats": 12, "rate": 26, "allow": 500},
+      {"id": "urbania", "name": "Force Urbania (17 seats)",    "hi": "अर्बानिया",        "seats": 17, "rate": 36, "allow": 500}
+    ],
+    "suv_only_regions": ["remote_route"],
+    "suv_places": ["kaza", "tabo", "nako", "chandratal", "jispa", "sarchu", "leh", "nubra", "pangong", "kargil", "chitkul"],
+    "local_union_factor": {"kashmir": 1.25, "ladakh": 1.35},
+    "local_union_note": "In Kashmir and Ladakh sightseeing runs on local union taxis; the estimate already includes their higher rates."
+  },
+  "hotel": {
+    "classes": {
+      "metro":        {"label": "City hotel",              "deluxe": 3200},
+      "hill_premium": {"label": "Popular hill station",    "deluxe": 3400},
+      "hill":         {"label": "Hill town",               "deluxe": 2800},
+      "remote":       {"label": "Remote valley / camp",    "deluxe": 3600},
+      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 2400},
+      "kashmir":      {"label": "Kashmir",                 "deluxe": 3800},
+      "ladakh":       {"label": "Ladakh",                  "deluxe": 3900}
+    },
+    "tiers": [
+      {"id": "standard", "name": "Standard (2★ / homestay)", "hi": "स्टैंडर्ड", "f": 0.7},
+      {"id": "deluxe",   "name": "Deluxe (3★)",              "hi": "डीलक्स",    "f": 1.0},
+      {"id": "super",    "name": "Super Deluxe (3★+ / 4★)",  "hi": "सुपर डीलक्स", "f": 1.45},
+      {"id": "luxury",   "name": "Luxury (4★–5★)",           "hi": "लग्ज़री",    "f": 2.6}
+    ],
+    "extra_adult_f": 0.35,
+    "child_bed_f": 0.25,
+    "peak": {"f": 1.25, "windows": [["03-15", "06-30"], ["10-01", "10-31"], ["12-20", "01-05"]]}
+  },
+  "service": {"handling_f": 0.10, "gst_f": 0.05, "range_high_f": 1.12},
+  "b2b": {"default_markup_pct": 15}
+}
