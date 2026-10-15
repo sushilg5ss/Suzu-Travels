@@ -1,0 +1,56 @@
+/* [DA-2026-10-15] Package FAQ accordion: solid cards with clear edges, readable answers, open-state highlight, round chevron, ~75-char answer lines, FAQ heading lands below the sticky header — pages: .single-suzu_package, .single-product (#faq section only) */
+/* Before: each question sat in a 70%-transparent white card with a 6% grey edge (cards melted into the cream page); answers were slate grey #718096 (~3.9:1) with 42px of empty space under the last line; nothing but a tiny ▾ showed which question was open; at 1440px answers ran ~130 characters per line; the "FAQ" tab in the section bar scrolled the heading under the sticky header. Questions, answers, order, schema and the accordion script are untouched. */
+:is(.single-suzu_package, .single-product) #faq { scroll-margin-top: 130px; }
+@media (max-width: 900px) { :is(.single-suzu_package, .single-product) #faq { scroll-margin-top: 16px; } }
+:is(.single-suzu_package, .single-product) #faq .faq { gap: 10px; }
+:is(.single-suzu_package, .single-product) #faq .faq-item {
+  background: #fff;
+  border: 1px solid rgba(18, 38, 21, .12);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(18, 38, 21, .04);
+  transition: border-color .2s, box-shadow .2s;
+}
+:is(.single-suzu_package, .single-product) #faq .faq-item:hover { border-color: rgba(46, 125, 50, .35); }
+:is(.single-suzu_package, .single-product) #faq .faq-q {
+  margin: 0; min-height: 56px;
+  padding: 16px 18px 16px 22px;
+  font-family: 'Sora', 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem; line-height: 1.45; font-weight: 600;
+  color: var(--dark, #122615);
+}
+:is(.single-suzu_package, .single-product) #faq .faq-q:hover { background: var(--cream, #F9FAF5); }
+/* Round chevron chip instead of a bare glyph */
+:is(.single-suzu_package, .single-product) #faq .faq-q .arrow {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--cream, #F9FAF5); border: 1px solid rgba(18, 38, 21, .10);
+  color: var(--teal-deep, #1B5E20); font-size: .85rem; line-height: 1;
+  transition: transform .3s, background .2s, color .2s;
+}
+/* Open question: emerald edge, green question text, filled chip */
+:is(.single-suzu_package, .single-product) #faq .faq-item.open {
+  border-color: var(--teal, #2E7D32);
+  box-shadow: 0 6px 20px rgba(18, 38, 21, .08), inset 3px 0 0 var(--teal, #2E7D32);
+}
+:is(.single-suzu_package, .single-product) #faq .faq-item.open .faq-q { color: var(--teal-deep, #1B5E20); background: transparent; }
+:is(.single-suzu_package, .single-product) #faq .faq-item.open .faq-q .arrow { background: var(--teal-deep, #1B5E20); border-color: var(--teal-deep, #1B5E20); color: #fff; }
+/* Answers: brand ink, comfortable line length, no empty tail */
+:is(.single-suzu_package, .single-product) #faq .faq-a {
+  padding: 14px 22px 18px;
+  border-top: 1px solid rgba(18, 38, 21, .08);
+  font-size: .95rem; line-height: 1.7;
+  color: var(--mid, #4A5D4E);
+}
+:is(.single-suzu_package, .single-product) #faq .faq-a > div { max-width: 46rem; }
+:is(.single-suzu_package, .single-product) #faq .faq-a :is(p, li) { color: var(--mid, #4A5D4E); font-size: inherit; line-height: inherit; }
+:is(.single-suzu_package, .single-product) #faq .faq-a p { margin: 0 0 .75em; }
+:is(.single-suzu_package, .single-product) #faq .faq-a > div > :last-child { margin-bottom: 0; }
+:is(.single-suzu_package, .single-product) #faq .faq-a a { color: var(--teal-deep, #1B5E20); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 600px) {
+  :is(.single-suzu_package, .single-product) #faq .faq-q { padding: 14px 14px 14px 16px; font-size: .95rem; }
+  :is(.single-suzu_package, .single-product) #faq .faq-q .arrow { width: 30px; height: 30px; }
+  :is(.single-suzu_package, .single-product) #faq .faq-a { padding: 12px 16px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.single-suzu_package, .single-product) #faq .faq-q .arrow, :is(.single-suzu_package, .single-product) #faq .faq-item { transition: none; }
+}
