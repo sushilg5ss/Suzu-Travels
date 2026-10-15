@@ -384,7 +384,17 @@
     "registration": {
       "required": true,
       "how": "Every pilgrim must register and carry an RFID Yatra Access Card. Register online on online.maavaishnodevi.org (also books helicopter, ropeway, battery car, accommodation, Atka Aarti) or at registration counters in Katra/Jammu; card is checked at Banganga/Darshani Deodi.",
-      "official_url": "https://online.maavaishnodevi.org/"
+      "official_url": "https://online.maavaishnodevi.org/",
+      "time_limit": {
+        "note": "Shrine Board page: cross Banganga within 6 h of RFID issue; Dec 2025 reports: start within 10 h (Dainik Jagran) or 12 h (SPO India) and return to Katra within 24 h - conflicting, say 'within the limit on your card'.",
+        "as_of": "2026-10-15",
+        "source": [
+          "https://maavaishnodevi.org/blog/yatra-registration",
+          "https://www.thedailyjagran.com/india/vaishno-devi-new-rules-begin-yatra-within-10-hours-of-obtaining-rfid-card-return-within-24-hours-check-guidelines-10288132",
+          "https://spoindia.org/news/new-vaishno-devi-yatra-rules-pilgrims-must-start-in-12-hrs-return-in-24-hrs"
+        ]
+      },
+      "counters": "YRC near Katra bus stand; YRC-II near the second bus stand on Udhampur road (~1 km); Banganga check post ~1.5 km from YRC (Shrine Board, 2026-10-15)"
     },
     "route": [
       {
@@ -472,7 +482,8 @@
       "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple",
       "https://en.wikipedia.org/wiki/Vaishno_Devi",
       "https://www.tribuneindia.com/news/archive/j-k/modi-to-e-inaugurate-new-vaishno-devi-track-today-591234"
-    ]
+    ],
+    "safety_2025_26": "26 Aug 2025 Ardhkuwari landslide (34 dead), yatra halted 22 days (Business Standard 17 Sep 2025); Jul 2026 6-day rain suspension, resumed 25 Jul on old track; 20 Sep 2026 Katra helipad terminal fire, flights resumed same morning. As_of 2026-10-15."
   },
   {
     "slug": "manimahesh-kailash-yatra",

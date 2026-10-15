@@ -437,11 +437,15 @@
       "Butter-clad Devi each Sankranti"
     ],
     "darshan": {
-      "open": "06:00-12:00, 12:30-20:00",
-      "aarti": null,
-      "note": "Per Incredible India (closes at noon for ~30 min). Aarti times not verified.",
-      "as_of": "2026-10-08",
-      "source": "https://incredibleindia.gov.in/en/himachal-pradesh/kangra/brajeshwari-devi-temple"
+      "open": "Winter 05:30-12:00 & 12:30-20:00; summer 05:00-12:00 & 12:30-21:00 (12:00-12:30 bhog break)",
+      "aarti": "Winter: Mangal 05:45-06:00, morning 06:00-07:00, evening (with shayan) 18:30-19:30. Summer: Mangal 05:00-05:15, morning ~05:00-06:15, evening 19:00-20:00",
+      "langar": "12:30-14:30 and 19:30-21:00 daily, free (Navratri: afternoon to night)",
+      "note": "Official temple trust page (Commissioner Temple / DC Kangra). The trust's own 'About' page gives 05:00-12:00 & 12:30-21:30 all year (aarti winter 06-07/19:30-20:00, summer 05:30-06/19:30-20:00); Incredible India says 06:00-20:00. Changeover date not stated - confirm locally. Supersedes Incredible India 06:00-12:00, 12:30-20:00.",
+      "as_of": "2026-10-15",
+      "source": [
+        "https://kangratemples.hp.gov.in/shri-bajreshwari-mata-temple/",
+        "https://kangratemples.hp.gov.in/about-bajreshwariji/"
+      ]
     },
     "festivals": [
       {
@@ -476,12 +480,16 @@
         ]
       },
       {
-        "name": "Makar Sankranti Ghrit (butter) festival",
-        "start": null,
+        "name": "Makar Sankranti Ghrit Mandal Parv (butter festival)",
+        "start": "2027-01-15",
         "end": null,
-        "note": "Seven-day fair at Makar Sankranti (mid-January) with butter sculptures and puja, per Kangra district",
-        "as_of": "2026-10-08",
-        "source": "https://hpkangra.nic.in/?p=25713"
+        "note": "Makar Sankranti 2027 = 15 Jan 2027 (timeanddate). Pindi covered with butter (21 quintals reported in 2025, 2,500 kg in 2019), kept about a week, then distributed as prasad. 2027 fair schedule not announced yet.",
+        "as_of": "2026-10-15",
+        "source": [
+          "https://www.timeanddate.com/holidays/india/makar-sankranti",
+          "https://www.tribuneindia.com/news/himachal/butter-ritual-marks-makar-sankranti-at-kangras-brajeshwari-temple/",
+          "https://www.tribuneindia.com/news/archive/himachal/kangra-temple-to-have-2-500-kg-butter-goddess-idol-713968"
+        ]
       }
     ],
     "how_to_reach": {
@@ -526,10 +534,22 @@
       }
     ],
     "unverified": [
-      "Aarti times",
-      "Exact 2027 Makar Sankranti fair dates"
+      "Kangra railway station distance (3 km district vs 11 km Incredible India)",
+      "Exact 2027 Ghrit Mandal fair dates",
+      "Summer/winter timing changeover date"
     ],
-    "as_of": "2026-10-08"
+    "as_of": "2026-10-15",
+    "distances_trust": {
+      "gaggal_airport_km": 8,
+      "jwalaji_km": 35,
+      "chintpurni_km": 70,
+      "mcleodganj_km": 30,
+      "palampur_km": 36,
+      "pathankot_km": 90,
+      "naina_devi_km": 175,
+      "as_of": "2026-10-15",
+      "source": "https://kangratemples.hp.gov.in/shri-bajreshwari-mata-temple/"
+    }
   },
   {
     "slug": "chamunda-nandikeshwar-dham-kangra",
@@ -682,7 +702,8 @@
       "source": [
         "https://www.maavaishnodevi.org/blog/aarti",
         "https://www.maavaishnodevi.org/blog/yatra-registration"
-      ]
+      ],
+      "helpline": "1800-180-7212 / 9906019494 (Shrine Board aarti page)"
     },
     "festivals": [
       {
@@ -770,7 +791,30 @@
       "Sanjichhat-Bhawan walking distance",
       "Battery car fares"
     ],
-    "as_of": "2026-10-08"
+    "as_of": "2026-10-08",
+    "status_notes": [
+      {
+        "note": "Jul 2026: yatra suspended 6 days for heavy rain, resumed 25 Jul 2026 on the old track; new track closed (shooting stones), battery cars and helicopter suspended at that time. Current new-track status not re-verified.",
+        "as_of": "2026-10-15",
+        "source": [
+          "https://newsonair.gov.in/shri-mata-vaishno-devi-yatra-resumes-after-six-day-suspension/",
+          "https://www.dailyexcelsior.com/despite-rain-devotees-resume-vaishno-devi-pilgrimage-along-old-track-after-6-day-break/"
+        ]
+      },
+      {
+        "note": "20 Sep 2026: fire (short circuit suspected) partly damaged the Katra (Serli) helipad terminal, no casualties; Katra-Sanjichhat flights paused and resumed ~08:30 same day.",
+        "as_of": "2026-10-15",
+        "source": [
+          "https://kashmirobserver.net/2026/09/20/fire-damages-vaishno-devi-helipad-terminal-in-reasi-no-casualties/",
+          "https://khabardigital.com/india/mata-vaishno-devi-katra-serli-helipad-fire-helicopter-service-update/"
+        ]
+      },
+      {
+        "note": "Sharad Navratri 2026: 47,346 pilgrims on day 1 (11 Oct), >95,000 in two days; Shat Chandi Maha Yagya; priority darshan and help desks for differently abled.",
+        "as_of": "2026-10-15",
+        "source": "https://kashmirobserver.net/2026/10/12/over-95000-pilgrims-visit-vaishnodevi-shrine-in-two-days"
+      }
+    ]
   },
   {
     "slug": "mansa-devi-panchkula",
