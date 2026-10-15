@@ -158,5 +158,14 @@
   "blurb": "Base camp to summit camp, explained",
   "added": "2026-10-13",
   "commercial": true
+ },
+ "altitude-sickness": {
+  "id": 13433,
+  "path": "/mountains-of-india/altitude-sickness/",
+  "kind": "guide",
+  "label": "Altitude sickness",
+  "blurb": "Signs, the 500 m rule and when to go down",
+  "added": "2026-10-15",
+  "commercial": false
  }
 }
