@@ -108,7 +108,7 @@ ROUTES = [
     dict(slug="pathankot-to-dharamshala-taxi", a="Pathankot", b="Dharamshala", km=90, t="2.5–3 hrs", f=1.1),
     dict(slug="jammu-to-srinagar-taxi", a="Jammu", b="Srinagar", km=250, t="6–8 hrs", f=1.7),
     dict(slug="shimla-to-manali-taxi", a="Shimla", b="Manali", km=250, t="7–8 hrs", f=1.3),
-    dict(slug=None, a="Kalka", b="Shimla", km=85, t="2.5–3 hrs", f=1.1),
+    dict(slug="kalka-to-shimla-taxi", a="Kalka", b="Shimla", km=85, t="2.5–3 hrs", f=1.1),
     dict(slug=None, a="Delhi", b="Dharamshala", km=475, t="9–10 hrs", f=1.0),
     dict(slug=None, a="Delhi", b="Kasol", km=520, t="11–12 hrs", f=1.0),
     dict(slug=None, a="Manali", b="Leh", km=430, t="2 days (Jun–Oct)", f=1.6),
