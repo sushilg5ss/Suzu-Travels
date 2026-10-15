@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+      .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.92) 0%, rgba(11,31,51,0.7) 9%, rgba(11,31,51,0) 22%, rgba(11,31,51,0) 48%, rgba(11,31,51,0.82) 74%, rgba(11,31,51,0.92) 100%); }
+      .brand { position: absolute; left: 70px; top: 90px; color: #d4a24c; font-weight: 800; font-size: 38px; letter-spacing: 0.14em; text-shadow: 0 2px 10px rgba(11,31,51,0.9); }
+      .cap { position: absolute; left: 70px; top: 1330px; width: 940px; color: #fff; font-weight: 800; font-size: 96px; line-height: 1.04; letter-spacing: -0.01em; }
+      .cap small { display: block; margin-top: 18px; color: #d4a24c; font-weight: 500; font-size: 46px; line-height: 1.2; letter-spacing: 0; }
+      svg.road { position: absolute; left: 70px; top: 1700px; width: 940px; height: 80px; overflow: visible; }
+      .endbg { position: absolute; inset: 0; background: #0b1f33; }
+      .e1 { position: absolute; left: 70px; top: 520px; color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.14em; }
+      .e2 { position: absolute; left: 70px; top: 580px; width: 940px; color: #fff; font-weight: 800; font-size: 124px; line-height: 1.02; }
+      .e3 { position: absolute; left: 70px; top: 860px; width: 940px; color: #fff; font-weight: 500; font-size: 50px; line-height: 1.25; }
+      .btn { position: absolute; left: 70px; top: 1060px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 56px; padding: 26px 48px; border-radius: 22px; }
+      .url { position: absolute; left: 70px; top: 1260px; width: 960px; color: #fff; font-weight: 800; font-size: 35px; white-space: nowrap; }
+      .reg { position: absolute; left: 70px; top: 1500px; width: 940px; color: rgba(255,255,255,0.78); font-weight: 500; font-size: 32px; line-height: 1.35; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.9" data-track-index="0"><img id="im1" src="assets/r1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3.4" data-duration="3.6" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/r2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6.5" data-duration="3.4" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/r3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9.4" data-duration="3.2" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/r4.jpg" alt="" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12.6" data-track-index="4" style="position:absolute;inset:0">
+        <div class="grad"></div>
+        <div class="brand">BIKE RENT · MANALI</div>
+        <div class="cap" id="c1">Licence + ID<small>Scooty: licence without gear<br />Bike: licence with gear</small></div>
+        <div class="cap" id="c2">Scooty for town.<br />Bike for the hills.<small>Old Manali · Hadimba · Solang ~13 km</small></div>
+        <div class="cap" id="c3">Sissu: yes<small>~40 km via Atal Tunnel · no Rohtang permit</small></div>
+        <div class="cap" id="c4">Rohtang: not by bike<small>After snow, 4x4-only days — we add a backup cab</small></div>
+        <svg class="road" viewBox="0 0 940 80">
+          <line x1="0" y1="40" x2="940" y2="40" stroke="rgba(255,255,255,0.35)" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16" />
+          <line id="prog" x1="0" y1="40" x2="940" y2="40" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="940 940" stroke-dashoffset="940" />
+          <g id="rb">
+            <circle cx="-16" cy="8" r="11" fill="none" stroke="#fff" stroke-width="4" />
+            <circle cx="16" cy="8" r="11" fill="none" stroke="#fff" stroke-width="4" />
+            <path d="M -16 8 L -4 -8 L 10 -8 L 16 8 M -4 -8 L 2 6" fill="none" stroke="#d4a24c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="0" cy="-22" r="8" fill="#d4a24c" />
+          </g>
+        </svg>
+      </div>
+      <div id="endc" class="clip" data-start="12.2" data-duration="2.8" data-track-index="5" style="position:absolute;inset:0">
+        <div class="endbg"></div>
+        <div class="e1">RIDES &amp; RENTALS · MANALI</div>
+        <div class="e2">Bike Rent in Manali</div>
+        <div class="e3">Bike or scooty + hotel + backup cab, in one quote</div>
+        <div class="btn">Get Quote on WhatsApp</div>
+        <div class="url">suzutravels.com/adventure/bike-rent-in-manali</div>
+        <div class="reg">HP Tourism registered travel agent<br />Reg. No. DTO-MND-11-243/2022</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1.06, y: 0 }, { scale: 1, y: -20, duration: 3.9, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1, y: 0 }, { scale: 1.08, y: -30, duration: 3.6, ease: "none" }, 3.4);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.1, y: 0, duration: 3.4, ease: "none" }, 6.5);
+      tl.fromTo("#im4", { scale: 1.08, y: -20 }, { scale: 1, y: 0, duration: 3.2, ease: "none" }, 9.4);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 3.4);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 6.5);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 9.4);
+      tl.set(["#c2", "#c3", "#c4"], { opacity: 0 }, 0);
+      tl.from("#c1", { opacity: 0, y: 40, duration: 0.5, ease: "power2.out" }, 0.3);
+      [["#c1", "#c2", 3.4], ["#c2", "#c3", 6.5], ["#c3", "#c4", 9.4]].forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.3);
+      });
+      const st = { t: 0 };
+      const prog = document.getElementById("prog"), rb = document.getElementById("rb");
+      function put(t) { prog.setAttribute("stroke-dashoffset", (940 * (1 - t)).toFixed(1)); rb.setAttribute("transform", "translate(" + (940 * t).toFixed(1) + ",14)"); }
+      put(0);
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 12, ease: "none", immediateRender: false, onUpdate: () => put(st.t) }, 0.2);
+      tl.fromTo("#endc", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 12.2);
+      tl.from(".e2", { y: 40, opacity: 0, duration: 0.5, ease: "power2.out" }, 12.4);
+      tl.from(".btn", { scale: 0.9, opacity: 0, duration: 0.4, ease: "back.out(2)", transformOrigin: "0% 50%" }, 12.8);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

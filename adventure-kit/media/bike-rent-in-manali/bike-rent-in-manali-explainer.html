@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.16; }
+      svg.map { position: absolute; left: 0; top: 0; width: 1200px; height: 1080px; overflow: visible; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 40px; white-space: nowrap; }
+      .lab small { display: block; color: #d4a24c; font-weight: 500; font-size: 28px; }
+      .tag { position: absolute; font-weight: 800; font-size: 28px; padding: 6px 16px; border-radius: 999px; white-space: nowrap; }
+      .ok { background: #d4a24c; color: #0b1f33; }
+      .no { background: #ffffff; color: #0b1f33; }
+      .amb { background: #f0a04b; color: #0b1f33; }
+      .panel { position: absolute; left: 1240px; top: 0; width: 620px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 110px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; }
+      .title { position: absolute; left: 0; top: 156px; width: 620px; color: #fff; font-weight: 800; font-size: 72px; line-height: 1.06; letter-spacing: -0.01em; }
+      .row { position: absolute; left: 0; width: 620px; color: #fff; font-weight: 500; font-size: 34px; line-height: 1.25; }
+      .row b { font-weight: 800; color: #d4a24c; }
+      .snow { position: absolute; left: 0; top: 700px; width: 600px; height: 92px; border-radius: 20px; border: 3px solid rgba(255,255,255,0.5); }
+      .snow .txt { position: absolute; left: 96px; top: 22px; color: #fff; font-weight: 800; font-size: 38px; }
+      .end { position: absolute; left: 0; top: 820px; width: 620px; }
+      .end .a { color: #fff; font-weight: 800; font-size: 46px; }
+      .end .b { display: inline-block; margin-top: 18px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 40px; padding: 12px 30px; border-radius: 14px; }
+      .note { position: absolute; left: 60px; top: 1020px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 22px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="art" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <img class="bgimg" src="assets/bg.jpg" alt="" />
+        <svg class="map" viewBox="0 0 1200 1080">
+          <circle id="ring" cx="260" cy="860" r="92" fill="rgba(212,162,76,0.12)" stroke="#d4a24c" stroke-width="4" stroke-dasharray="6 10" />
+          <path id="pA" d="M 260 860 L 400 700 L 300 540" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="pB" d="M 300 540 L 430 420 L 590 330 L 740 250" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="pBs" d="M 300 540 L 430 420 L 590 330 L 740 250" fill="none" stroke="#f0a04b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="pR" d="M 400 700 L 640 640 L 860 560" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 14" />
+          <path id="pS" d="M 740 250 L 900 300 L 1080 360" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-dasharray="4 18" />
+          <path id="pL" d="M 740 250 L 760 140 L 790 70" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-dasharray="4 18" />
+          <path id="arL" d="M 770 92 L 792 62 L 808 98" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="arS" d="M 1056 336 L 1090 364 L 1052 380" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+          <g id="tun"><rect x="440" y="352" width="140" height="44" rx="22" transform="rotate(-29 510 374)" fill="#0b1f33" stroke="#d4a24c" stroke-width="6" /></g>
+          <circle id="nM" cx="260" cy="860" r="18" fill="#d4a24c" stroke="#0b1f33" stroke-width="5" />
+          <circle id="nP" cx="400" cy="700" r="10" fill="#fff" />
+          <circle id="nS" cx="300" cy="540" r="16" fill="#fff" stroke="#0b1f33" stroke-width="5" />
+          <circle id="nSi" cx="740" cy="250" r="16" fill="#fff" stroke="#0b1f33" stroke-width="5" />
+          <g id="nR"><circle cx="860" cy="560" r="24" fill="#fff" /><path d="M 849 549 L 871 571 M 871 549 L 849 571" stroke="#0b1f33" stroke-width="6" stroke-linecap="round" /></g>
+        </svg>
+        <div class="lab" id="lM" style="left:110px; top:960px">Manali town</div>
+        <div class="tag ok" id="tM" style="left:380px; top:880px">Scooty ✓</div>
+        <div class="lab" id="lS" style="left:60px; top:470px">Solang<small>~13 km</small></div>
+        <div class="tag ok" id="tS" style="left:60px; top:580px">Bike ✓</div>
+        <div class="lab" id="lT" style="left:250px; top:300px">Atal Tunnel<small>~9 km</small></div>
+        <div class="lab" id="lSi" style="left:480px; top:130px">Sissu<small>~40 km · no permit</small></div>
+        <div class="tag ok" id="tSi" style="left:800px; top:226px">Bike ✓</div>
+        <div class="tag amb" id="tSi2" style="left:800px; top:226px">4x4 only</div>
+        <div class="lab" id="lR" style="left:700px; top:600px">Rohtang<small>no two-wheeler permit category</small></div>
+        <div class="lab" id="lSp" style="left:880px; top:390px; font-size:34px">Spiti<small>multi-day · experienced</small></div>
+        <div class="lab" id="lL" style="left:830px; top:40px; font-size:34px">Leh<small>ask first</small></div>
+        <div class="note">Schematic, not to scale · road status changes with weather</div>
+        <div class="panel">
+          <div class="kicker">BIKE RENT IN MANALI</div>
+          <div class="title" id="ttl">Where can your rental go this week?</div>
+          <div class="row" id="r1" style="top:420px"><b>Town:</b> scooty is enough</div>
+          <div class="row" id="r2" style="top:480px"><b>Solang · Sissu:</b> geared bike</div>
+          <div class="row" id="r3" style="top:540px"><b>Rohtang:</b> plan it by cab</div>
+          <div class="row" id="r4" style="top:600px"><b>Spiti · Leh:</b> ask us first</div>
+          <div class="snow" id="snow">
+            <svg style="position:absolute;left:24px;top:16px" width="56" height="56" viewBox="-28 -28 56 56"><g id="flake" stroke="#fff" stroke-width="5" stroke-linecap="round"><line x1="0" y1="-24" x2="0" y2="24" /><line x1="-21" y1="-12" x2="21" y2="12" /><line x1="-21" y1="12" x2="21" y2="-12" /></g></svg>
+            <div class="txt" id="snowtxt">After snow: 4x4 only</div>
+          </div>
+          <div class="end" id="end"><div class="a">Bike + hotel + backup cab</div><div class="b">Get Quote</div></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      function prep(id) { const p = document.getElementById(id); const L = p.getTotalLength(); return { p, L }; }
+      const A = prep("pA"), B = prep("pB"), Bs = prep("pBs");
+      [A, B, Bs].forEach(o => { o.p.style.strokeDasharray = o.L + " " + o.L; o.p.style.strokeDashoffset = String(o.L); });
+      tl.set(["#pR", "#pS", "#pL", "#arL", "#arS", "#nR", "#lR", "#lSp", "#lL", "#tM", "#tS", "#tSi", "#tSi2", "#r1", "#r2", "#r3", "#r4", "#snow", "#end", "#ring", "#lM", "#lS", "#lT", "#lSi", "#tun", "#nS", "#nSi", "#nP"], { opacity: 0 }, 0);
+      tl.from("#ttl", { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" }, 0.1);
+      tl.fromTo("#nM", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.4);
+      tl.to(["#ring", "#lM"], { opacity: 1, duration: 0.5 }, 0.6);
+      tl.fromTo("#tM", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.4, immediateRender: false }, 1.0);
+      tl.to("#r1", { opacity: 1, duration: 0.4 }, 1.1);
+      tl.to("#nP", { opacity: 1, duration: 0.2 }, 1.8);
+      tl.to(A.p, { strokeDashoffset: 0, duration: 1.2, ease: "power1.inOut" }, 1.8);
+      tl.to(["#nS", "#lS"], { opacity: 1, duration: 0.3 }, 2.8);
+      tl.fromTo("#tS", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.4, immediateRender: false }, 3.0);
+      tl.to("#r2", { opacity: 1, duration: 0.4 }, 3.1);
+      tl.to(["#tun", "#lT"], { opacity: 1, duration: 0.4 }, 3.4);
+      tl.to(B.p, { strokeDashoffset: 0, duration: 1.4, ease: "power1.inOut" }, 3.4);
+      tl.to(["#nSi", "#lSi"], { opacity: 1, duration: 0.3 }, 4.7);
+      tl.fromTo("#tSi", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.4, immediateRender: false }, 4.9);
+      tl.to("#pR", { opacity: 1, duration: 0.6 }, 5.4);
+      tl.fromTo("#nR", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)", immediateRender: false }, 5.9);
+      tl.to(["#lR", "#r3"], { opacity: 1, duration: 0.4 }, 6.0);
+      tl.to(["#pS", "#arS", "#lSp"], { opacity: 1, duration: 0.5 }, 6.6);
+      tl.to(["#pL", "#arL", "#lL", "#r4"], { opacity: 1, duration: 0.5 }, 7.0);
+      tl.fromTo("#snow", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, immediateRender: false }, 7.7);
+      tl.to("#snow", { backgroundColor: "rgba(240,160,75,0.22)", borderColor: "#f0a04b", duration: 0.4 }, 8.3);
+      tl.fromTo("#flake", { rotation: 0, transformOrigin: "50% 50%" }, { rotation: 60, duration: 1.2, ease: "power1.inOut", immediateRender: false }, 8.2);
+      tl.to(Bs.p, { strokeDashoffset: 0, duration: 1.0, ease: "power1.inOut" }, 8.4);
+      tl.to("#tSi", { opacity: 0, duration: 0.3 }, 8.9);
+      tl.to("#tSi2", { opacity: 1, duration: 0.3 }, 9.1);
+      tl.fromTo("#end", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", immediateRender: false }, 9.9);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

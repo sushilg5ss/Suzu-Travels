@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.08) 38%, rgba(11,31,51,0.8) 54%, rgba(11,31,51,0.94) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 860px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 100px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.16em; }
+      .t1 { position: absolute; left: 0; top: 148px; color: #fff; font-weight: 800; font-size: 116px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 274px; color: #d4a24c; font-weight: 800; font-size: 108px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.map { position: absolute; left: 0; top: 410px; width: 840px; height: 440px; overflow: visible; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 38px; white-space: nowrap; }
+      .lab small { display: block; color: #d4a24c; font-weight: 500; font-size: 28px; }
+      .bar { position: absolute; left: 0; top: 896px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 922px; width: 860px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 860px; color: #fff; font-weight: 800; font-size: 52px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.6" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="2.9" data-duration="3.4" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="5.6" data-duration="3.4" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="8.3" data-duration="3.7" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.9" data-duration="1.1" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">RIDES &amp; RENTALS · MANALI</div>
+          <div class="t1">Bike Rent</div>
+          <div class="t2">in Manali</div>
+          <svg class="map" viewBox="0 0 840 440">
+            <path id="route" d="M 40 380 C 120 380 150 300 220 290 C 300 280 330 220 400 200 L 520 150 C 600 120 640 70 760 50" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16" />
+            <rect x="440" y="160" width="60" height="34" rx="10" transform="rotate(-22 470 177)" fill="#0b1f33" stroke="#fff" stroke-width="4" />
+            <circle cx="40" cy="380" r="14" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle id="n2" cx="220" cy="290" r="12" fill="#fff" stroke="#0b1f33" stroke-width="4" />
+            <circle id="n3" cx="760" cy="50" r="12" fill="#fff" stroke="#0b1f33" stroke-width="4" />
+            <g id="bike">
+              <circle cx="-16" cy="6" r="10" fill="none" stroke="#fff" stroke-width="4" />
+              <circle cx="16" cy="6" r="10" fill="none" stroke="#fff" stroke-width="4" />
+              <path d="M -16 6 L -4 -8 L 10 -8 L 16 6 M -4 -8 L 2 4" fill="none" stroke="#d4a24c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="0" cy="-20" r="7" fill="#d4a24c" />
+            </g>
+          </svg>
+          <div class="lab" style="left:0px; top:810px">Manali</div>
+          <div class="lab" style="left:150px; top:612px">Solang<small>~13 km</small></div>
+          <div class="lab" style="left:330px; top:478px">Atal Tunnel</div>
+          <div class="lab" style="left:600px; top:370px">Sissu<small>~40 km</small></div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Scooty · Classic 350 · Himalayan</div>
+            <div class="fact" id="f2">Licence + photo ID needed</div>
+            <div class="fact" id="f3">Sissu via Atal Tunnel · no permit</div>
+            <div class="fact" id="f4">After snow: 4x4-only days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.6, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.4, ease: "none" }, 2.9);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.4, ease: "none" }, 5.6);
+      tl.fromTo("#im4", { scale: 1.06, x: -20 }, { scale: 1, x: 10, duration: 3.7, ease: "none" }, 8.3);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut" }, 2.9);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut" }, 5.6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut" }, 8.3);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.05, ease: "sine.inOut" }, 10.9);
+
+      const route = document.getElementById("route");
+      const L = route.getTotalLength();
+      const bike = document.getElementById("bike");
+      const NS = "http://www.w3.org/2000/svg";
+      const trail = document.createElementNS(NS, "path");
+      trail.setAttribute("d", route.getAttribute("d"));
+      trail.setAttribute("fill", "none"); trail.setAttribute("stroke", "#d4a24c"); trail.setAttribute("stroke-width", "7"); trail.setAttribute("stroke-linecap", "round");
+      trail.style.strokeDasharray = L + " " + L; trail.style.strokeDashoffset = String(L);
+      route.parentNode.insertBefore(trail, route.nextSibling);
+      function put(t) {
+        const a = route.getPointAtLength(L * t);
+        const b = route.getPointAtLength(Math.min(L, L * t + 2));
+        const ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+        bike.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + (a.y - 24).toFixed(2) + ") rotate(" + (ang * 0.35).toFixed(2) + ")");
+        trail.style.strokeDashoffset = String(L * (1 - t));
+      }
+      put(0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 9.6, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.6);
+      tl.fromTo("#n2", { attr: { fill: "#ffffff" } }, { attr: { fill: "#d4a24c" }, duration: 0.3, immediateRender: false }, 3.4);
+      tl.fromTo("#n3", { attr: { fill: "#ffffff" } }, { attr: { fill: "#d4a24c" }, duration: 0.3, immediateRender: false }, 10.1);
+      tl.to("#bike", { opacity: 0, duration: 0.4, ease: "power1.in" }, 10.7);
+      tl.to(trail, { opacity: 0, duration: 0.5 }, 10.8);
+      tl.to(["#n2", "#n3"], { attr: { fill: "#ffffff" }, duration: 0.4 }, 11.0);
+      const rs = { t: 1 };
+      tl.fromTo(rs, { t: 1 }, { t: 0, duration: 0.01, immediateRender: false, onUpdate: () => put(rs.t) }, 11.3);
+      tl.set(trail, { opacity: 1 }, 11.35);
+      tl.to("#bike", { opacity: 1, duration: 0.55, ease: "power1.out" }, 11.4);
+
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
