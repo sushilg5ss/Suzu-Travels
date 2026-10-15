@@ -9,7 +9,7 @@
 
 Why illustrated: every visual is drawn here from SVG shapes, so there is no photo licence to worry about (Sushil, 8 Oct
 2026: "copyright claim na ho"). Temple drawings are stylised ARCHETYPES (himalaya, nagara, ghats, gopuram, cave, devi,
-pillar, gurudwara, pagoda) — never captioned as an exact architectural likeness.
+pillar, gurudwara, pagoda, devi-cave) — never captioned as an exact architectural likeness.
 
 Rules (same as the mountain kit): 1920x1080, 30 fps, silent, seamless loop (last frame == first frame), deterministic
 (no Math.random at runtime — every random number is generated here with a fixed seed). Hero text stays in the RIGHT 55%
@@ -272,15 +272,31 @@ def arch_pagoda():
     return ridge + trees + roofs + cone + t + flag(600, 940, 160, "fg") + '<rect x="-40" y="940" width="2000" height="160" fill="#120714"/>'
 
 
+def arch_devicave():
+    """Mountain cave shrine of the Devi (Vaishno Devi / Trikuta type): three-peaked hill, glowing cave mouth with three
+    small stone mounds (pindis) instead of an ice lingam, a saffron flag and a lamp-lit path. Added 15 Oct 2026.
+    Stylised archetype, not a likeness — caption it "a mountain cave shrine"."""
+    mtn = ('<path d="M-40 1080 L-40 640 L210 330 L330 430 L450 230 L570 430 L690 330 L900 560 L1250 420 L1600 580 L1960 470 L1960 1080Z" fill="#2a2350"/>'
+           '<path d="M-40 1080 L-40 840 L260 660 L520 730 L900 650 L1400 770 L1960 670 L1960 1080Z" fill="#1d1a3e"/>')
+    cave = ('<path d="M300 784 Q450 516 600 784 L600 824 L300 824Z" fill="#0c0610" stroke="rgba(242,193,78,.6)" stroke-width="3"/>'
+            '<ellipse cx="450" cy="782" rx="135" ry="58" fill="url(#eg2)"/>'
+            + "".join(f'<path d="M{x - 19} 810 Q{x - 18} {810 - h} {x} {810 - h - 8} Q{x + 18} {810 - h} {x + 19} 810Z" fill="#7a4a2a" stroke="{GOLD}" stroke-width="1.8"/>' for x, h in ((402, 32), (450, 42), (498, 32)))
+            + '<rect x="360" y="818" width="180" height="12" rx="3" fill="#3a2410"/>' + flag(450, 652, 100, "fg"))
+    lamps = "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{GOLD2}" opacity=".9"/>' for x, y in ((150, 990), (175, 935), (130, 895), (210, 852), (290, 830)))
+    path = '<path d="M60 1080 Q200 960 120 900 Q60 860 220 840 Q360 830 300 818" stroke="#f2c14e" stroke-width="5" stroke-dasharray="10 14" fill="none" opacity=".75"/>'
+    return ('<defs><radialGradient id="eg2"><stop offset="0" stop-color="#fff1b8" stop-opacity=".95"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient></defs>'
+            + mtn + cave + path + lamps)
+
+
 ARCH = {"himalaya": arch_himalaya, "nagara": arch_nagara_sea, "ghats": arch_ghats, "devi": arch_devi,
         "gopuram": arch_gopuram, "cave": arch_cave, "pillar": arch_pillar, "gurudwara": arch_gurudwara,
-        "pagoda": arch_pagoda}
-SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow"}
+        "pagoda": arch_pagoda, "devi-cave": arch_devicave}
+SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk"}
 
 
 def scene_svg(arch, uid, sky=None):
     sky = sky or SKY_FOR[arch]
-    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50)}.get(arch, (470, 560, 140))
+    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60)}.get(arch, (470, 560, 140))
     return (sky_svg(uid, sky, sun) + (stars(uid, 80, 7) if sky in ("night", "snow", "dusk") else "")
             + mandala(sun[0], sun[1], 300, f"md{uid}", op=.18)
             + f'<svg class="lay" viewBox="0 0 {W} {H}">{DEFS}<g>{ARCH[arch]()}</g></svg>')
@@ -289,7 +305,7 @@ def scene_svg(arch, uid, sky=None):
 def arch_js(arch, uid_prefix, dur, start=0.0):
     """Small seamless secondary motion for an archetype (flag sway, waves, diya bob, pillar pulse)."""
     js = []
-    if arch in ("himalaya", "nagara", "devi", "pagoda"):
+    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave"):
         js.append(f'tl.fromTo("{uid_prefix} #fg",{{rotation:-6}},{{rotation:6,duration:{dur / 8:.3f},ease:"sine.inOut",yoyo:true,repeat:7}},{start});')
     if arch == "nagara":
         for i in range(4):

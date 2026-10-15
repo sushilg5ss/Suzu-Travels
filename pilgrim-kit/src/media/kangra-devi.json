@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "dawn",
+  "deva": "श्री बज्रेश्वरी देवी",
+  "kicker": "Shakti Peeth · Kangra, Himachal",
+  "beats": [
+   "Sati's left breast falls at Nagarkot",
+   "Pandavas raise the Devi's first shrine",
+   "Rebuilt after the great 1905 earthquake",
+   "Butter-clad Devi each Makar Sankranti"
+  ]
+ },
+ "story": {
+  "title": "The legend of Kangra Devi",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Sati's light falls across the land as Shiva grieves"},
+   {"arch": "devi", "sky": "dawn", "line": "At Nagarkot a shrine rises where her light came to rest"},
+   {"arch": "devi", "sky": "dusk", "line": "After the 1905 earthquake, devotees rebuild her temple"},
+   {"arch": "devi", "sky": "snow", "line": "Each Makar Sankranti the Devi is clad in butter and lamps"}
+  ]
+ }
+}
