@@ -50,6 +50,15 @@ const { chromium, devices } = require('playwright');
     await page.screenshot({ path: `${out}/${name}-5-share.png` });
     const p2 = await ctx.newPage(); await p2.goto(link, { waitUntil: 'load' }); await p2.waitForTimeout(1200);
     r.roundTrip = await p2.textContent('#m-title');
+    // v:1 link (old format) — winter Manali (Rohtang left out) + Kedarnath with 1 night (2-night warning)
+    const v1 = (o) => Buffer.from(JSON.stringify(o)).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    const base = url.split('#')[0];
+    const p3 = await ctx.newPage();
+    await p3.goto(base + '#t=' + v1({ v: 1, s: 'chandigarh', e: 'chandigarh', d: '2027-01-12', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['manali', 3]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
+    r.winter = { title: await p3.textContent('#m-title'), rohtangInPlan: (await p3.$$eval('.tl-day', x => x.map(y => y.textContent).join(' '))).includes('Rohtang'), warns: await p3.$$eval('.warn', x => x.map(y => y.textContent)) };
+    await p3.goto(base + '?k=1#t=' + v1({ v: 1, s: 'dehradun', e: 'dehradun', d: '2027-05-20', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['guptkashi', 1], ['badrinath', 1]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
+    r.kedar = (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Kedarnath'));
+    await p3.close();
     // agent mode client link
     await p2.click('.tp-mode [data-mode="agent"]'); await p2.waitForTimeout(300);
     await p2.fill('#ag-name', 'Shubh Yatra Holidays'); await p2.fill('#ag-phone', '9812345678'); await p2.fill('#ag-mk', '20'); await p2.waitForTimeout(500);

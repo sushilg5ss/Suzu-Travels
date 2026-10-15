@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '0.2';
+  var VER = '0.3';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -166,7 +166,15 @@
     var cur = S.s, dayNo = 0, date = d0, nights = [], kmDrive = 0, kmLocal = 0;
     var pending = { from: cur, via: [], km: 0, min: 0, path: [cur] };
     var visited = [cur];
-    function sightsOf(id) { return (PL[id].sights || []).map(function (s) { return { n: s.n, km: s.km, note: s.note }; }); }
+    function sightsOf(id, dt) {
+      var mo = dt.getMonth() + 1;
+      return (PL[id].sights || []).filter(function (s) {
+        if (!s.m || s.m.indexOf(mo) > -1) return true;
+        var key = 'sight-' + s.n; if (!out.warn.some(function (w) { return w.k === key; }))
+          out.warn.push({ r: 0, k: key, t: s.n.replace(/ \(.*\)$/, '') + ' is usually closed in ' + MS[mo - 1] + ' (open about ' + MS[s.m[0] - 1] + '–' + MS[s.m[s.m.length - 1] - 1] + '), so it is left out of your day plan.' + (id === 'manali' ? ' Snow fun in winter is at Solang Valley; Atal Tunnel & Sissu when the road is open.' : '') });
+        return false;
+      }).map(function (s) { return { n: s.n, km: s.km, note: s.note }; });
+    }
     var left = {};
     stops.forEach(function (st, si) {
       var p = PL[st.id];
@@ -174,7 +182,7 @@
       pending.km += k; pending.min += m; pending.path.push(st.id);
       if (k > 0) out.legs.push([cur, st.id]);
       cur = st.id; visited.push(st.id);
-      if (!left[st.id]) left[st.id] = sightsOf(st.id);
+      if (!left[st.id]) left[st.id] = sightsOf(st.id, date);
       if (st.n === 0) {
         var s0 = left[st.id].shift();
         pending.via.push({ id: st.id, sight: s0 });
@@ -225,6 +233,11 @@
     out.days.push(dep);
     out.route = visited.concat([S.e]);
 
+    /* Kedarnath: trek up, darshan, trek down = 2 nights at Guptkashi / Sitapur */
+    stops.forEach(function (st) {
+      if (st.id === 'guptkashi' && st.n < 2 && !out.warn.some(function (w) { return w.k === 'kedar'; }))
+        out.warn.push({ r: 1, k: 'kedar', t: 'Kedarnath needs 2 nights at ' + PL.guptkashi.name + ' (trek up, darshan, trek down — or helicopter, subject to tickets). You have ' + st.n + ' night' + (st.n === 1 ? '' : 's') + ' here; add a night for a relaxed darshan.' });
+    });
     /* seasons */
     out.days.forEach(function (dy) {
       [dy.to].concat(dy.via.map(function (v) { return v.id; })).forEach(function (id) {

@@ -2,7 +2,7 @@
 """Suzu Trip Planner — master place list (v0.1, 15 Oct 2026).
 
 Each place: id, name, hi (Hindi name), lat, lon, region, kind, cls (hotel class), stay (can overnight),
-months (open months, None = all year), sights [(name, extra_km_round_trip, note)], tip.
+months (open months, None = all year), sights [(name, extra_km_round_trip, note[, open_months])], tip.
 
 kind:  hub   = arrival / departure city (airport / railhead)
        stay  = overnight destination
@@ -14,9 +14,10 @@ P = []
 def add(id, name, hi, lat, lon, region, kind, cls, sights=(), months=None, tip="", stay=True, local_km=60):
     P.append(dict(id=id, name=name, hi=hi, lat=lat, lon=lon, region=region, kind=kind, cls=cls,
                   stay=stay, months=months, local_km=local_km,
-                  sights=[dict(n=s[0], km=s[1], note=(s[2] if len(s) > 2 else "")) for s in sights], tip=tip))
+                  sights=[dict(n=s[0], km=s[1], note=(s[2] if len(s) > 2 else ""), **({"m": s[3]} if len(s) > 3 else {})) for s in sights], tip=tip))
 
 SUMMER = [6, 7, 8, 9, 10]           # high passes (Kunzum, Baralacha, Chandratal, Manali-Leh road)
+ROHTANG = [5, 6, 7, 8, 9, 10, 11]   # Rohtang Pass usually open mid-May to mid-Nov (snow closes it in winter)
 DHAM = [5, 6, 7, 8, 9, 10]          # Char Dham portals (opening late Apr/May, closing Oct/Nov)
 
 # ---------- arrival hubs ----------
@@ -60,7 +61,7 @@ add("chandratal", "Chandratal (camps)", "चंद्रताल", 32.4780, 77.
     [("Chandratal Lake walk", 10)], months=SUMMER, tip="Camps only, open about mid-June to mid-October")
 add("manali", "Manali", "मनाली", 32.2432, 77.1892, "himachal", "stay", "hill_premium",
     [("Solang Valley", 30), ("Atal Tunnel & Sissu", 70), ("Hadimba Temple & Old Manali", 10),
-     ("Vashisht hot springs", 8), ("Rohtang Pass (permit, May–Nov)", 110), ("Naggar Castle", 45)], local_km=80)
+     ("Vashisht hot springs", 8), ("Rohtang Pass (permit, May–Nov)", 110, "Online permit needed; closed in winter", ROHTANG), ("Naggar Castle", 45)], local_km=80)
 add("sissu", "Sissu (Lahaul)", "सिस्सू", 32.4820, 77.1250, "himachal", "stay", "hill",
     [("Sissu waterfall & lake", 5), ("Keylong & Kardang Monastery", 60)])
 add("jispa", "Jispa", "जिस्पा", 32.6410, 77.1890, "himachal", "stay", "remote",

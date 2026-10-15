@@ -1,9 +1,12 @@
 # Trip Planner backlog (top = next). Tick with `done YYYY-MM-DD` + one LOG line.
 
+## Phase 0 — deploy pending
+0. [ ] **Deploy v0.3** (dist 4c765ffa28e2b0a9, release in Project `claude/trip-planner/releases/2026-10-15/`) — Chrome tools were absent on 15 Oct 11:53 run. Rebuild from branch if newer.
+
 ## Phase 1 — go live at /plan-your-trip/ (week 1)
 1. [x] done 2026-10-15 (live SHA 873f29f3c6f26826; real test lead skipped — send one only if leads look missing) **Deploy v0.1** to `public_html/plan-your-trip/index.html` (new folder). Verify 200, test live (stubbed lead), then ONE real test lead named "TEST Claude Trip Planner (ignore)" and confirm it reached the lead inbox / info@ email. Add Rank Math-independent sitemap note in LOG (static page: ask GSC URL inspection is human-only → "Sushil ke liye").
 2. [ ] **Rate audit** — research 2026 hotel rates (MakeMyTrip/Agoda/Booking public listings, 3 dates) for the 7 classes and the 12 most-used places; cab rates already = /cabs/ engine. Write `research/rates-sources.md` (dated rows + URLs); move `rates.json` only if the estimate is BELOW market (it must stay on the higher side).
-3. [ ] **Entry points (outside the homepage)**: ask the Design agent via hand-off board for a "Plan your trip" link in menus; on WordPress hub pages (`/himachal-tour-packages/`, `/cabs/`, `/destinations/`, pilgrimage hub) add ONE contextual link each (Royal MCP, non-Elementor pages only, check `_elementor_edit_mode`).
+3. [~] 2026-10-15: /himachal-tour-packages/ link done (page 1087); next /cabs/, /destinations/, pilgrimage hub, menu via Design agent. **Entry points (outside the homepage)**: ask the Design agent via hand-off board for a "Plan your trip" link in menus; on WordPress hub pages (`/himachal-tour-packages/`, `/cabs/`, `/destinations/`, pilgrimage hub) add ONE contextual link each (Royal MCP, non-Elementor pages only, check `_elementor_edit_mode`).
 4. [ ] **Hindi UI toggle** (EN / हिं) for labels, day-plan sentences and PDF.
 5. [ ] **Split data**: lazy-load road geometry (`/plan-your-trip/roads.json`) after first paint; target < 150 KB first load, LCP < 2.0 s mobile. Lighthouse before/after in LOG.
 
@@ -16,10 +19,10 @@
 
 ## Phase 3 — make it the best planner in India
 8. [ ] More places: Kerala, Goa, Rajasthan, Sikkim/North-East (fly-in circuits; hotel-only + local car), Amarnath, Kainchi Dham, Adi Kailash. Re-run `tools/fetch_roads.py`.
-9. [ ] Smarter day plans: opening hours/closed days of sights, Navratri crowd notes, sunrise/sunset slots, snow-season "Atal Tunnel only" logic for Rohtang, Kedarnath 2-night rule enforced.
+9. [~] 2026-10-15: Rohtang winter skip + Kedarnath 2-night warning built (v0.3). Rest open: Smarter day plans: opening hours/closed days of sights, Navratri crowd notes, sunrise/sunset slots, snow-season "Atal Tunnel only" logic for Rohtang, Kedarnath 2-night rule enforced.
 10. [ ] Hotel-name suggestions per class (no prices, "or similar"), photos from Suzu's own media only.
 11. [ ] "Compare 2 plans" and "Budget slider → auto-pick tier/car".
 12. [ ] HyperFrames: render a shareable 15-s "trip film" of a plan (route + day titles) server-side later; for now an in-page animated preview.
 13. [ ] Agent portal polish: agency logo upload (kept in the browser only, never uploaded), GST invoice note, B2B rate card request button.
 14. [ ] Suzu Assistant hand-off: when a chat mentions a route, offer "Open in Trip Planner" (coordinate via hand-off board — the assistant file is not ours).
-15. [ ] Structured data: FAQPage for the FAQ block; WebApplication already present.
+15. [x] done 2026-10-15 (v0.3 build; live after deploy) Structured data: FAQPage for the FAQ block; WebApplication already present.

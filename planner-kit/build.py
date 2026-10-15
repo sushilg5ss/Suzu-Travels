@@ -10,7 +10,7 @@ from places import PLACES
 
 def rd(p): return open(os.path.join(HERE, p), encoding='utf-8').read()
 data = {
-    'v': '0.1',
+    'v': '0.3',
     'built': time.strftime('%Y-%m-%d'),
     'places': PLACES,
     'roads': json.loads(rd('data/roads.json')),
@@ -23,7 +23,13 @@ for t in data['templates']:
     for s in t['stops']: assert s[0] in ids, (t['id'], s)
     assert t['start'] in ids and t['end'] in ids, t['id']
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-html = rd('src/index.html').replace('/*__CSS__*/', rd('src/planner.css')).replace('/*__JS__*/', rd('src/planner.js')).replace('/*__DATA__*/', blob)
+src = rd('src/index.html')
+# FAQPage JSON-LD generated from the visible FAQ (<details class="fq">) so schema and page never drift apart
+faq = [{'@type': 'Question', 'name': re.sub('<[^>]+>', '', q).strip(), 'acceptedAnswer': {'@type': 'Answer', 'text': re.sub('<[^>]+>', '', a).strip()}}
+       for q, a in re.findall(r'<details class="fq"><summary>(.*?)</summary><p>(.*?)</p></details>', src, re.S)]
+assert len(faq) >= 5, 'FAQ not found in src/index.html'
+src = src.replace('"@graph":[', '"@graph":[' + json.dumps({'@type': 'FAQPage', 'mainEntity': faq}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + ',', 1)
+html = src.replace('/*__CSS__*/', rd('src/planner.css')).replace('/*__JS__*/', rd('src/planner.js')).replace('/*__DATA__*/', blob)
 out = os.path.join(HERE, 'dist', 'plan-your-trip')
 os.makedirs(out, exist_ok=True)
 fn = os.path.join(out, 'index.html')
