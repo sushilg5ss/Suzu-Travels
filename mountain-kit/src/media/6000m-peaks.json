@@ -1,0 +1,116 @@
+{
+ "hero": {
+  "kicker": "6,000 M PEAKS · INDIA",
+  "words": [
+   [
+    "74 NOTABLE",
+    "6,000ERS."
+   ],
+   [
+    "14 IN",
+    "HIMACHAL."
+   ],
+   [
+    "PICK YOUR",
+    "SEASON."
+   ],
+   [
+    "START WITH",
+    "YUNAM."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 550
+    },
+    "to": {
+     "y": 250,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.1,
+     "x": -180
+    },
+    "to": {
+     "scale": 1.14,
+     "x": -220
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.04
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.2,
+     "x": -180
+    },
+    "to": {
+     "y": 400,
+     "scale": 1.22,
+     "x": -190
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "HIMACHAL'S 6,000ERS",
+  "title": "Himachal's six-thousanders, side by side",
+  "peaks": [
+   "deo-tibba",
+   "mount-yunam",
+   "chau-chau-kang-nilda",
+   "menthosa",
+   "mulkila",
+   "manirang",
+   "reo-purgyil"
+  ],
+  "subs": {
+   "deo-tibba": "Kullu",
+   "mount-yunam": "Non-technical",
+   "chau-chau-kang-nilda": "Spiti",
+   "menthosa": "Lahaul",
+   "mulkila": "First climbed 1939",
+   "manirang": "Kinnaur / Spiti",
+   "reo-purgyil": "Highest in Himachal"
+  },
+  "end": "Start at 6,001 m, finish at 6,816 m"
+ }
+}
