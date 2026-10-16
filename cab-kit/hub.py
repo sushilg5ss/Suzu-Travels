@@ -2,6 +2,7 @@
 """The /cabs/ hub page (page ID 10080)."""
 import json
 from build import *
+from cabs_data import TIERS, PRICED, PLACES
 
 HUB = dict(slug="cabs", title="Cab & Taxi Booking — Delhi, Chandigarh & Himachal",
     seo_title="Himachal & North India Cab Booking | One-Way Taxi Fares",
@@ -20,35 +21,66 @@ FAQS = [
  ("Can your cab do sightseeing in Manali, Solang and Rohtang?", "Sightseeing around Manali (Solang, Atal Tunnel, Rohtang) is done in Manali-registered local taxis as per union practice. We book the local taxi for you at union rates on the same chat."),
  ("Which pickup points do you cover?", "All of Delhi NCR (including IGI Airport and the main stations), Chandigarh–Mohali–Panchkula and IXC airport, Ambala, Kalka, Pathankot, Jammu, Katra, Dehradun, Haridwar, Amritsar, and airports at Bhuntar (Kullu) and Gaggal (Kangra)."),
  ("Is Suzu Travels a registered company?", "Suzu Travels is a registered travel agent with HP Tourism (Reg. No. DTO-MND-11-243/2022) and GST registered. You can see both certificates on our certificates page."),
+ ("What is the difference between Prime, Standard and Saver cabs?", "They are the same car class with a different fleet age. Prime cars are 2023 or newer (under 3 years old) and cost about 15% more than Standard; Standard cars are 3–5 years old and carry the fares shown on our route pages; Saver cars are 5–10 years old, well maintained, and about 8% cheaper. Every car is AC with a driver who knows the hills."),
+ ("Do you have buses and Tempo Travellers for large groups?", "Yes. Besides 12- and 17-seater Tempo Travellers and the Force Urbania, we arrange 26-seater mini coaches and 35- and 45-seater AC coaches for weddings, corporate outings and yatras from Delhi, Chandigarh and Himachal. Coaches are quoted per trip on WhatsApp."),
+ ("Can I see the road route before I book?", "Yes — use the route planner at the top of this page. Type any pickup and drop in North India and it draws the real road route on a map, plays the drive, and shows the distance, time and fares for every car."),
  ("Do you drive at night in the hills?", "For safety we plan hill sections in daylight. Leave early and we'll tell you the best start time for your route."),
 ]
 
+TIER_COPY = {
+    "prime": "Latest-generation cars with the newest safety kit and the quietest cabins - for guests who want the best car on the road.",
+    "standard": "The cars we book most: serviced on schedule, clean, and the fares shown on every route page.",
+    "saver": "Older but well-kept cars from our transporter network at a lower fare - the same driver standard, a few more kilometres on the clock.",
+}
+
+def planner():
+    pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
+    pr = [dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u=(page_url(r["slug"]) if r["slug"] and is_live(r["slug"]) else "")) for r in ROUTES]
+    cfg = dict(p={k: [round(v[0], 3), round(v[1], 3)] for k, v in PLACES.items()}, r=pr, v=pv,
+               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
+    vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
+    dl = "".join(f"<option value=\"{esc(k)}\">" for k in sorted(PLACES))
+    return (f'<section class="szc-sec" id="planner"><span class="szc-kicker">Live route planner</span><h2>See your road trip on the map - with the fare</h2>'
+            f'<p class="szc-lead">Type any two places in North India. We draw the real road route, play the drive, and show one-way or round-trip fares for every car and fleet tier.</p>'
+            f'<form class="szc-plan" id="szc-plan" data-plan=\'{esc(json.dumps(cfg, ensure_ascii=False, separators=(",", ":")))}\' onsubmit="return false">'
+            f'<div class="szc-pform"><div><label for="szc-fa">From</label><input id="szc-fa" type="text" list="szc-places" value="Delhi" placeholder="City, airport or station" autocomplete="off"></div>'
+            f'<div><label for="szc-fb">To</label><input id="szc-fb" type="text" list="szc-places" value="Manali" placeholder="Anywhere in North India" autocomplete="off"></div>'
+            f'<div><label for="szc-pv">Car</label><select id="szc-pv">{vopts}</select></div>'
+            f'<div><label for="szc-pm">Trip</label><select id="szc-pm"><option value="one">One-way drop</option><option value="round">Round trip</option></select></div>'
+            f'<div><label for="szc-pd">Date</label><input id="szc-pd" type="date"></div>'
+            f'<div><label for="szc-pn">People</label><input id="szc-pn" type="number" min="1" max="45" value="2"></div>'
+            f'<button class="szc-btn gold" type="submit">Show route &amp; fare</button><p class="szc-pstat" id="szc-pstat"></p></div>'
+            f'<div class="szc-mapwrap"><div class="szc-map" id="szc-map" aria-label="Road map of your route"></div><div class="szc-mapidle"><b>Your route appears here</b><span>Real roads, live distance and a drive-through animation - hills, tunnels and all.</span></div></div>'
+            f'<div class="szc-pout" id="szc-pout"><div class="szc-pempty"><b>How it works:</b> pick From and To and press <b>Show route &amp; fare</b>. You get the distance, the driving time and the fare for Prime, Standard and Saver fleets - then lock the price on WhatsApp in one tap.</div></div>'
+            f'</form><datalist id="szc-places">{dl}</datalist>'
+            f'<p class="szc-note">Map data © OpenStreetMap contributors · road routing by OSRM · map tiles by OpenFreeMap. Distances and times are road estimates for planning; your WhatsApp quote is the final price.</p></section>')
+
 def build():
     p = HUB
-    chips = ["<b>20+</b> popular routes", "Sedan from <b>₹12/km</b>", "Hatchback → 17-seat Urbania", "One-way & round trip", "24×7 WhatsApp"]
-    places = sorted({r["a"] for r in ROUTES} | {r["b"] for r in ROUTES})
-    fmap = {f'{r["a"]}>{r["b"]}': page_url(r["slug"]) for r in ROUTES if r["slug"] and is_live(r["slug"])}
-    fopts_a = "".join(f'<option{" selected" if x=="Delhi" else ""}>{x}</option>' for x in places)
-    fopts_b = "".join(f'<option{" selected" if x=="Manali" else ""}>{x}</option>' for x in places)
-    finder = (f'<form class="szc-finder" id="szc-find" data-map=\'{esc(json.dumps(fmap))}\'>'
-              f'<div><label for="szc-fa">From</label><select id="szc-fa">{fopts_a}</select></div>'
-              f'<div><label for="szc-fb">To</label><select id="szc-fb">{fopts_b}</select></div>'
-              f'<div><label for="szc-fd">Travel date</label><input id="szc-fd" type="date"></div>'
-              f'<button class="szc-btn gold" type="submit">Find my cab</button></form>')
+    chips = ["<b>20+</b> popular routes", "Sedan from <b>₹12/km</b>", f"<b>{len(FLEET)}</b> vehicle classes, hatchback → 45-seat coach", "Prime · Standard · Saver fleets", "Live route map", "24×7 WhatsApp"]
+    finder = (f'<form class="szc-finder" id="szc-find">'
+              f'<div><label for="szc-ha">From</label><input id="szc-ha" type="text" list="szc-places" value="Delhi" placeholder="City, airport or station" autocomplete="off"></div>'
+              f'<div><label for="szc-hb">To</label><input id="szc-hb" type="text" list="szc-places" value="Manali" placeholder="Anywhere in North India" autocomplete="off"></div>'
+              f'<div><label for="szc-hd">Travel date</label><input id="szc-hd" type="date"></div>'
+              f'<button class="szc-btn gold" type="submit">Show route &amp; fare</button></form>')
     body = hero(p, chips) + finder
-    body += nav([("routes", "Routes"), ("fares", "Fares"), ("fleet", "Fleet"), ("local", "Local taxis"), ("pickup", "Pickup points"), ("why", "Why Suzu"), ("faq", "FAQ")])
+    body += nav([("planner", "Route map"), ("routes", "Routes"), ("fares", "Fares"), ("fleet", "Fleet"), ("local", "Local taxis"), ("pickup", "Pickup points"), ("why", "Why Suzu"), ("faq", "FAQ")])
+    body += planner()
     # routes
     body += (f'<section class="szc-sec" id="routes"><span class="szc-kicker">Popular routes</span><h2>Taxi routes and one-way fares</h2>'
              f'<p class="szc-lead">Starting fares for a sedan and an Innova Crysta, one-way. Every route runs both directions at the same price.</p>{more_routes("cabs")}</section>')
     # fares
-    rows = "".join(f'<tr><td><b>{v["name"]}</b><br><small>{v["model"]}</small></td><td>{v["seats"]}</td><td>{v["bags"]}</td><td class="num">₹{v["hire"]}/km</td><td class="num">{inr(v["min"])}</td><td class="num">₹{v["night"]}</td></tr>' for v in FLEET)
-    tbl = f'<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>Vehicle</th><th>Seats</th><th>Luggage</th><th>Round trip rate</th><th>Minimum one-way fare</th><th>Driver / night</th></tr></thead><tbody>{rows}</tbody></table></div>'
+    rows = "".join(f'<tr><td><b>{v["name"]}</b><br><small>{v["model"]}</small></td><td>{v["seats"]}</td><td>{v["bags"]}</td><td class="num">{pkm(v["hire"])}</td><td class="num">{pinr(v["min"])}</td><td class="num">₹{v["night"]}</td></tr>' for v in PRICED)
+    rows += "".join(f'<tr><td><b>{v["name"]}</b><br><small>{v["model"]}</small></td><td>{v["seats"]}</td><td>{v["bags"]}</td><td class="num">On quote</td><td class="num">On quote</td><td class="num">₹{v["night"]}</td></tr>' for v in FLEET if v.get("quote"))
+    tiers_exp = "".join(f'<div class="szc-tip"><h3>{t["name"]} <small style="font-weight:600;color:#56675b">· {t["badge"].lower()}</small></h3><p>{t["sub"]}. {TIER_COPY[t["id"]]}</p></div>' for t in TIERS)
+    tbl = (f'<div class="szc-tips" style="margin-top:10px">{tiers_exp}</div>{tier_switch()}'
+           f'<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>Vehicle</th><th>Seats</th><th>Luggage</th><th>Round trip rate (<span data-tiername>Standard</span>)</th><th>Minimum one-way fare</th><th>Driver / night</th></tr></thead><tbody>{rows}</tbody></table></div>')
     dests = [dict(l=f'{r["a"]} → {r["b"]}', km=r["km"], f=r["f"]) for r in ROUTES]
     body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Fare chart 2026</span><h2>Cab rates per km</h2>'
              f'<p class="szc-lead">Round trips and tours are billed per kilometre (minimum 250 km a day). One-way drops have fixed route fares — use the calculator.</p>{tbl}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, "cabs")}</section>')
     # fleet
-    body += f'<section class="szc-sec" id="fleet"><span class="szc-kicker">Our fleet</span><h2>Pick the right car</h2><p class="szc-lead">Every car is AC, comes with a driver who knows hill roads, and is sized honestly for people and bags.</p>{vehicle_cards("cabs", "my trip")}</section>'
+    body += f'<section class="szc-sec" id="fleet"><span class="szc-kicker">Our fleet</span><h2>Pick the right car</h2><p class="szc-lead">Every car is AC, comes with a driver who knows hill roads, and is sized honestly for people and bags.</p>{vehicle_cards("cabs", "my trip", dict(l="Delhi → Shimla", km=345, f=1.0))}</section>'
     # local taxis
     local = [("manali-taxi-service", "Manali taxi service", "Solang, Atal Tunnel–Sissu, Rohtang at union rates; drops to Chandigarh, Delhi, Leh."),
              ("shimla-taxi-service", "Shimla taxi service", "Kufri, Chail, Naldehra, Narkanda day trips; Kalka & airport transfers."),

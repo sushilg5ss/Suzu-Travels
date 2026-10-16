@@ -1,4 +1,4 @@
-# Suzu Cab Kit v1.0 (30 Sep 2026)
+# Suzu Cab Kit v2.0 (16 Oct 2026; v1.0 30 Sep 2026)
 
 Design system + content + build tool for every page under **suzutravels.com/cabs/** (hub = page **10080**, children have `post_parent` 10080).
 Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Cab …" agents. Branch `cabs` of `sushilg5ss/suzu-travels`, folder `cab-kit/`.
@@ -21,7 +21,9 @@ Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Cab …" agents.
 | `pin_media.py` | `python3 pin_media.py <slug> <full-sha>` — writes the jsDelivr URLs for that page's media into `media.json` after the media commit is pushed. |
 | `hf-scaffold/` | Fonts (Plus Jakarta Sans woff2) + HyperFrames project files copied into every composition. |
 | `BACKLOG.md` / `LOG.md` | Page backlog (priority order) and the squad's progress log (newest first). |
-| `agents/` | The prompts of the scheduled Cab squad agents (shared rules, Route Builder, SEO/Fares/QA). |
+| `agents/` | The prompts of the scheduled Cab squad agents (shared rules, Route Builder, SEO/Fares/QA, Experience Enhancer). |
+| `ENHANCEMENTS.md` | The Experience Enhancer's backlog + ideas board (v2 features, rollout, speed). |
+| `media/fleet-photos/` | Real vehicle photos (WebP, ≤1600 px) under free licences; credits in `media.json → photos` (author, licence, file page). |
 | `wp_ids.json` | WordPress page IDs of every live cab page. |
 | `research/kw_all.csv` | Google Ads Keyword Planner export (India, 30 Sep 2026) — 700+ cab/taxi keywords with monthly volume. |
 
@@ -33,11 +35,22 @@ Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Cab …" agents.
 - **12 Oct 2026 — Sushil: "competitive karo".** Routes priced >10% above the fare-watch market median were brought to about the median by lowering only their route factor (per-km rates unchanged): Delhi→Manali f 1.0→0.78 (sedan ₹5,899 / Crysta ₹10,199 vs median ₹5,940 / ₹9,720), Chandigarh→Manali f 1.1→0.9 (₹3,699 / ₹6,299 vs ₹3,410 / ₹6,749), Delhi→Nainital f 0.95→0.8 (₹3,499 / ₹5,999 vs ₹3,350 / ₹6,050). Routes where one car is above and another below market (Delhi→Haridwar, Delhi→Jaipur) were left as they are. Standing direction: keep every route's sedan fare within ±10% of the market median; going lower than −10% still needs Sushil.
 - Benchmarks used (Sep 2026): Delhi–Shimla sedan ₹4,500–5,500 one-way, Crysta ₹7,000–8,500 (trivenicabs 2026 guide); Chandigarh–Manali sedan ₹4,000–6,500, Crysta ₹9,500–11,000 (rajputanacabs, taxiyatri 2026); outstation per-km sedan ₹10–17, Innova ₹18–22, Tempo ₹26–32 (cabbazar Jul 2026); Manali union 2026: Solang 1,999/2,499/2,999, Atal+Sissu 2,999/3,499/4,999, Rohtang 3,999/4,999/6,999 (himalayan-routes).
 
+## v2 (16 Oct 2026, Sushil + Claude): fleet tiers, 13 vehicle classes, photo gallery, live route planner
+- **Fleet tiers** (`TIERS` in `cabs_data.py`): **Prime** = 2023 & newer (under 3 yrs) ×1.15 · **Standard** = 3–5 yrs ×1.00 (= the engine fare, the one in every `seo_title`/copy) · **Saver** = 5–10 yrs ×0.92. `oneway(vid, km, f, tier)` applies the multiplier to the final amount and re-rounds to …99. On the page every price is `<span data-inr="<standard>">` (`pinr()`) and every per-km rate `<span data-km>` (`pkm()`); `kit.js` re-paints them when the visitor changes the tier (`.szc-tier` switch, remembered in localStorage, synced across calculator, viewer and planner). Copy/SEO text always states Standard fares. Multipliers are Sushil's decision.
+- **Fleet** (`FLEET`): 13 classes with `type` (see `VTYPES`) and `seats`; `quote=True` classes (26-seat mini coach, 35- and 45-seat coaches) have no per-km rate and show "On quote". `PRICED` = the 10 priced classes (fare tables, calculator). New since v1: Innova Hycross (₹22/km hire, ₹28 one-way, min ₹4,499), Fortuner (₹32/₹40, min ₹6,999), Tempo Traveller 17-seater (₹30/₹36, min ₹7,999) — indicative, set 16 Oct 2026, Sushil may adjust.
+- **Fleet gallery** (`vehicle_cards()` in `build.py`): type + seat filter chips, photo cards (3:2, 3D tilt on hover), "View car" opens `#szc-modal` with specs, per-tier fares for the page's reference route (`ref` = first calculator destination) and WhatsApp. Photos come from `media.json → photos.<id>` `{src, w, h, credit, lic, lic_url, page, cropped}`; classes without a photo fall back to the SVG illustration (`svg_base`). `credits_block()` renders the licence credits automatically — keep it (CC BY requires attribution).
+- **Route planner** (hub only, `planner()` in `hub.py`, `#szc-plan` in `kit.js`): From/To text inputs with a datalist of `PLACES`; geocoding = `PLACES` first, then Photon (`photon.komoot.io`, India bbox); routing = OSRM `routing.openstreetmap.de/routed-car` → fallback `router.project-osrm.org` → fallback straight line ×1.3; map = MapLibre GL **5.24.0 UMD** from jsDelivr (lazy-loaded when the planner is used or scrolled near; 6.x is ESM-only, don't use) with OpenFreeMap `liberty` tiles, `boundary` layers hidden, `maxBounds` India; drive animation = growing line + rotating car marker (5–11 s). Fares: a known `ROUTES` pair uses its km / factor / time exactly (so the planner matches the route pages); unknown pairs use OSRM km with a factor from average speed (≥58 km/h 0.85, ≥44 1.0, ≥34 1.1, else 1.3; J&K 1.7, Ladakh 1.6) and a hill-aware time range. Every result ends in "Lock this fare on WhatsApp" (`page: cabs planner`) + call-back. The hero finder (`#szc-find`) feeds the planner; route cards have a "Map" button (`data-plan-route`).
+- **kit.js rules unchanged**: no `&` anywhere (use `'\x26'`), no `//` comments, no `&&`; feature-detect every block.
+- **Rollout state:** hub 10080 published on v2 on 16 Oct 2026; child pages get v2 (tiers + gallery, no planner) when rebuilt and republished — the Experience Enhancer republishes up to 4 per run until all 29 are on v2 (`ENHANCEMENTS.md` row 1). Until then the Route Builder/QA must not "restore" a v2 page to v1: the kit build is always the truth.
+
 ## Business facts to use (never invent others)
 - HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022 (link `/certificates/`), GST registered. Office NH 103, Kulahru, Tehsil Ghumarwin, Bilaspur HP. WhatsApp/phone +91 70874 88961.
 - Rating phrase must be exactly `★ 4.7 · 377 Google reviews` (the Suzu Live Reviews plugin rewrites it site-wide).
 - Manali (Solang/Atal/Rohtang) and Kashmir local sightseeing = locally registered union taxis; Suzu books them. Rohtang: online permit, closed Tuesdays. Himachal entry fee for non-HP vehicles (₹100/day up to 12 seats, 2026–27).
-- Never claim fleet size, "verified/insured drivers", customer counts, awards or reviews that are not proven.
+- Never claim fleet size, "verified/insured drivers", customer counts, awards or reviews that are not proven. Vehicle photos are "representative of the class" (credits block says so) — never promise a specific car/colour/number plate.
+
+## Page anatomy (hub, v2)
+Hero (HyperFrames loop) → finder (From/To/date → planner) → sticky menu → `#planner` (form + map + result panel) → `#routes` (cards with Route & fares / WhatsApp / Map) → `#fares` (tier explainer + switch + per-km table incl. on-quote coaches + inclusions + calculator with tier switch) → `#fleet` (switch + filters + gallery + credits) → `#local` → `#pickup` → `#why` → `#tips` → `#booking` → `#quote` → `#plan` → `#faq` (+ JSON-LD) → viewer modal → kit.js.
 
 ## Page anatomy (route page) — keep this order
 Hero (per-page HyperFrames loop, title in video on the right) → sticky menu → `#overview` (answer-first 40–70 words + facts) → `#fares` (table for 7 vehicles + inclusions + calculator) → `#route` (route-map loop + stop-by-stop list) → `#cars` → `#tips` → `#booking` → `#quote` form (WhatsApp) + "Request a call back" (`#enquiry` opens the site-wide lead popup) → `#more` (route cards + related links) → `#faq` (+ FAQPage JSON-LD) + TaxiService JSON-LD (no prices/offers in schema).

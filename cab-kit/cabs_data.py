@@ -13,22 +13,62 @@ PHONE_TXT = "+91 70874 88961"
 REG = "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022"
 RATING = "★ 4.7 · 377 Google reviews"   # same phrase the Suzu Live Reviews plugin rewrites site-wide
 
-FLEET = [
-    dict(id="hatch", name="Hatchback", model="Swift / WagonR class", seats=4, bags="2 small bags", fuel="Petrol / CNG",
-         ow=12, hire=11, min=1999, night=400, best="Couples & short transfers", page=None),
-    dict(id="sedan", name="Sedan", model="Dzire / Etios / Aura", seats=4, bags="3 bags", fuel="Petrol / CNG",
-         ow=14, hire=12, min=2299, night=400, best="Couples & small families, highway runs", page=None),
-    dict(id="ertiga", name="Maruti Ertiga", model="6-seater MUV", seats=6, bags="3 bags + carrier", fuel="Petrol / CNG",
-         ow=17, hire=14, min=2999, night=400, best="Families of 5–6 on a budget", page=None),
-    dict(id="carens", name="Kia Carens", model="6-seater premium MPV", seats=6, bags="4 bags", fuel="Diesel / Petrol",
-         ow=19, hire=16, min=3499, night=400, best="Families who want extra comfort", page=None),
-    dict(id="crysta", name="Toyota Innova Crysta", model="6+1 / 7-seater SUV", seats=7, bags="5 bags", fuel="Diesel",
-         ow=24, hire=19, min=3999, night=400, best="Hill circuits, senior citizens, groups of 6–7", page="innova-crysta-on-rent"),
-    dict(id="tempo", name="Tempo Traveller", model="Force Traveller 12–14 seater", seats=12, bags="10 bags", fuel="Diesel",
-         ow=32, hire=26, min=6999, night=500, best="Groups, pilgrimages, office trips", page="tempo-traveller-hire-delhi"),
-    dict(id="urbania", name="Force Urbania", model="Luxury van, up to 17 seats", seats=17, bags="12+ bags", fuel="Diesel",
-         ow=42, hire=36, min=9999, night=500, best="Premium group transfers & weddings", page=None),
+# Fleet-age tiers (Sushil, 16 Oct 2026): the engine fare is the Standard tier; Prime (newest cars) +15 %, Saver (older cars) -8 %.
+# Customer-facing names chosen over A/B/C. mult applies to the final one-way / round-trip amount (rounded up to ...99).
+TIERS = [
+    dict(id="prime", name="Prime", sub="2023 & newer · under 3 years old", mult=1.15, badge="Latest models"),
+    dict(id="standard", name="Standard", sub="3–5 years old · well maintained", mult=1.0, badge="Most booked"),
+    dict(id="saver", name="Saver", sub="5–10 years old · budget friendly", mult=0.92, badge="Best price"),
 ]
+TIER_BY_ID = {t["id"]: t for t in TIERS}
+
+# Vehicle types used by the fleet filters (id, label)
+VTYPES = [("hatchback", "Hatchback"), ("sedan", "Sedan"), ("muv", "MUV / 6–7 seater"), ("suv", "Premium SUV"),
+          ("tempo", "Tempo Traveller"), ("van", "Luxury van"), ("bus", "Bus / coach")]
+
+# quote=True vehicles have no per-km rate on the site (price varies too much) — they appear in the fleet gallery with "Get quote" only.
+FLEET = [
+    dict(id="hatch", name="Hatchback", model="Swift / WagonR class", type="hatchback", seats=4, bags="2 small bags", fuel="Petrol / CNG",
+         ow=12, hire=11, min=1999, night=400, best="Couples & short transfers", page=None,
+         photo_alt="White Maruti Suzuki Swift hatchback, the kind of car used for Suzu's hatchback cabs"),
+    dict(id="sedan", name="Sedan", model="Dzire / Etios / Aura", type="sedan", seats=4, bags="3 bags", fuel="Petrol / CNG",
+         ow=14, hire=12, min=2299, night=400, best="Couples & small families, highway runs", page=None,
+         photo_alt="Maruti Suzuki Dzire sedan taxi, 4 seats with boot space for 3 bags"),
+    dict(id="ertiga", name="Maruti Ertiga", model="6-seater MUV", type="muv", seats=6, bags="3 bags + carrier", fuel="Petrol / CNG",
+         ow=17, hire=14, min=2999, night=400, best="Families of 5–6 on a budget", page=None,
+         photo_alt="Maruti Suzuki Ertiga 6-seater MUV used for family cab trips"),
+    dict(id="carens", name="Kia Carens", model="6-seater premium MPV", type="muv", seats=6, bags="4 bags", fuel="Diesel / Petrol",
+         ow=19, hire=16, min=3499, night=400, best="Families who want extra comfort", page=None,
+         photo_alt="Kia Carens 6-seater MPV with captain seats"),
+    dict(id="crysta", name="Toyota Innova Crysta", model="6+1 / 7-seater SUV", type="muv", seats=7, bags="5 bags", fuel="Diesel",
+         ow=24, hire=19, min=3999, night=400, best="Hill circuits, senior citizens, groups of 6–7", page="innova-crysta-on-rent",
+         photo_alt="Toyota Innova Crysta, the most booked 7-seater for Himachal hill roads"),
+    dict(id="hycross", name="Toyota Innova Hycross", model="7-seater premium MPV", type="muv", seats=7, bags="5 bags", fuel="Petrol hybrid",
+         ow=28, hire=22, min=4499, night=400, best="Premium family trips, quieter and roomier than the Crysta", page=None,
+         photo_alt="Toyota Innova Hycross premium 7-seater MPV"),
+    dict(id="fortuner", name="Toyota Fortuner", model="7-seater premium SUV", type="suv", seats=6, bags="4 bags", fuel="Diesel",
+         ow=40, hire=32, min=6999, night=500, best="VIP transfers, weddings, Leh & Spiti roads", page=None,
+         photo_alt="Toyota Fortuner premium SUV for VIP transfers and high-altitude roads"),
+    dict(id="tempo", name="Tempo Traveller", model="Force Traveller 12–14 seater", type="tempo", seats=12, bags="10 bags", fuel="Diesel",
+         ow=32, hire=26, min=6999, night=500, best="Groups, pilgrimages, office trips", page="tempo-traveller-hire-delhi",
+         photo_alt="Force Traveller 12-seater Tempo Traveller for group trips"),
+    dict(id="tempo17", name="Tempo Traveller 17-seater", model="Force Traveller 17 seater", type="tempo", seats=17, bags="14 bags", fuel="Diesel",
+         ow=36, hire=30, min=7999, night=500, best="Bigger groups, Char Dham, school & office tours", page="tempo-traveller-hire-delhi",
+         photo_alt="17-seater Force Traveller Tempo Traveller for large groups"),
+    dict(id="urbania", name="Force Urbania", model="Luxury van, up to 17 seats", type="van", seats=17, bags="12+ bags", fuel="Diesel",
+         ow=42, hire=36, min=9999, night=500, best="Premium group transfers & weddings", page=None,
+         photo_alt="Force Urbania luxury van, up to 17 reclining seats"),
+    dict(id="minibus", name="Mini coach 26-seater", model="AC mini bus, 2+2 seats", type="bus", seats=26, bags="Luggage hold", fuel="Diesel",
+         ow=None, hire=None, min=None, night=600, best="Wedding parties, corporate outings, school trips", page=None, quote=True,
+         photo_alt="26-seater AC mini coach for group tours"),
+    dict(id="bus35", name="AC coach 35-seater", model="2+2 push-back seats", type="bus", seats=35, bags="Luggage hold", fuel="Diesel",
+         ow=None, hire=None, min=None, night=600, best="Large groups, yatras and corporate tours", page=None, quote=True,
+         photo_alt="35-seater AC coach with push-back seats"),
+    dict(id="bus45", name="Luxury coach 45-seater", model="Volvo / Scania class", type="bus", seats=45, bags="Luggage hold", fuel="Diesel",
+         ow=None, hire=None, min=None, night=600, best="Big groups between Delhi, Chandigarh and the hills", page=None, quote=True,
+         photo_alt="45-seater luxury Volvo-class coach"),
+]
+PRICED = [v for v in FLEET if not v.get("quote")]
 FLEET_BY_ID = {v["id"]: v for v in FLEET}
 
 
@@ -36,9 +76,13 @@ def r99(x):
     return int(math.ceil(x / 100.0) * 100 - 1)
 
 
-def oneway(vid, dist, factor):
+def oneway(vid, dist, factor, tier="standard"):
     v = FLEET_BY_ID[vid]
-    return max(v["min"], r99(dist * v["ow"] * factor))
+    if v.get("quote"):
+        return None
+    base = max(v["min"], r99(dist * v["ow"] * factor))
+    m = TIER_BY_ID[tier]["mult"]
+    return base if m == 1 else r99(base * m)
 
 
 def inr(n):

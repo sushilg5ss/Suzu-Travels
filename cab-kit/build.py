@@ -39,6 +39,20 @@ def page_url(slug):
 def is_live(slug):
     return slug in LIVE
 
+def pinr(n):
+    """Price span the tier switch re-paints (n = Standard-tier amount)."""
+    return f'<span data-inr="{int(n)}">{inr(n)}</span>'
+
+def pkm(rate):
+    return f'<span data-km="{int(rate)}">₹{int(rate)}/km</span>'
+
+def tier_switch(note=True):
+    b = "".join(f'<button type="button" data-tier="{t["id"]}"{" class=on" if t["id"]=="standard" else ""} aria-pressed="{"true" if t["id"]=="standard" else "false"}"><span class="n">{t["name"]}</span><span class="s">{t["sub"]}</span><span class="b">{t["badge"]}</span></button>' for t in TIERS)
+    n = '<p class="szc-tier-note">Same route, same driver standard - you pick how new the car should be. Prices on this page update with your choice.</p>' if note else ""
+    return f'<div class="szc-tier" role="group" aria-label="Choose fleet">{b}</div>{n}'
+
+PHOTOS = MEDIA.get("photos", {})
+
 def video_tag(m, cls="", eager=False):
     if not m:
         return ""
@@ -66,28 +80,29 @@ def facts(fs):
 
 def fare_table_route(r, slug):
     rows = []
-    for v in FLEET:
+    for v in PRICED:
         ow = oneway(v["id"], r["km"], r["f"])
         q = wa(f"Hi Suzu Travels, quote for {r['a']} to {r['b']} in {v['name']}. Date: ___ , people: ___ (page: {slug})")
-        rows.append(f'<tr><td><b>{v["name"]}</b><br><small>{v["model"]}</small></td><td>{v["seats"]}</td><td class="num">{inr(ow)}</td>'
-                    f'<td class="num">₹{v["hire"]}/km</td><td><a class="szc-btn sm line" href="{q}" target="_blank" rel="noopener">Quote</a></td></tr>')
-    return ('<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>Car</th><th>Seats</th><th>One-way from</th><th>Round trip</th><th></th></tr></thead><tbody>'
+        rows.append(f'<tr><td><b>{v["name"]}</b><br><small>{v["model"]}</small></td><td>{v["seats"]}</td><td class="num">{pinr(ow)}</td>'
+                    f'<td class="num">{pkm(v["hire"])}</td><td><a class="szc-btn sm line" href="{q}" target="_blank" rel="noopener">Quote</a></td></tr>')
+    return (tier_switch() + '<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>Car</th><th>Seats</th><th>One-way from (<span data-tiername>Standard</span>)</th><th>Round trip</th><th></th></tr></thead><tbody>'
             + "".join(rows) + "</tbody></table></div>")
 
 def includes():
     return '<ul class="szc-note" style="padding-left:18px;margin-top:14px">' + "".join(f"<li>{x}</li>" for x in COMMON_INCLUDES) + "</ul>"
 
 def calculator(dests, slug, default_vehicle="sedan"):
-    veh = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"]) for v in FLEET]
+    veh = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"]) for v in PRICED]
     data = json.dumps(dict(v=veh, d=dests, s=slug), ensure_ascii=False, separators=(",", ":"))
     dopts = "".join(f'<option value="{i}">{esc(d["l"])}</option>' for i, d in enumerate(dests))
-    vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]==default_vehicle else ""}>{v["name"]} ({v["seats"]} seats)</option>' for v in FLEET)
+    vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]==default_vehicle else ""}>{v["name"]} ({v["seats"]} seats)</option>' for v in PRICED)
     d0 = dests[0]; amt0 = oneway(default_vehicle, d0["km"], d0["f"])
     return (f'<div class="szc-calc" id="szc-calc" data-cfg=\'{esc(data)}\'>'
             f'<div class="szc-calc-f"><div class="full"><label for="szc-cd">Route</label><select id="szc-cd">{dopts}</select></div>'
             f'<div class="full"><label>Trip type</label><div class="szc-seg" role="group"><button type="button" class="on" data-m="one">One-way drop</button><button type="button" data-m="round">Round trip / tour</button></div></div>'
             f'<div><label for="szc-cv">Car</label><select id="szc-cv">{vopts}</select></div>'
-            f'<div><label for="szc-cn">Days (round trip)</label><input id="szc-cn" type="number" min="1" max="20" value="3" disabled></div></div>'
+            f'<div><label for="szc-cn">Days (round trip)</label><input id="szc-cn" type="number" min="1" max="20" value="3" disabled></div>'
+            f'<div class="full"><label>Fleet</label>{tier_switch(note=False)}</div></div>'
             f'<div class="szc-calc-o" aria-live="polite"><span class="lbl">Estimated fare</span><div class="amt" id="szc-ca">{inr(amt0)}</div><p class="brk" id="szc-cb">One-way drop · {d0["km"]} km · fuel, driver and driver allowance included</p>'
             f'<ul><li>Tolls, parking & state entry fee extra at actuals</li><li>Final price confirmed on WhatsApp before you pay</li></ul>'
             f'<a class="szc-btn gold" id="szc-cw" href="{wa("Hi Suzu Travels")}" target="_blank" rel="noopener">Lock this fare on WhatsApp</a></div></div>')
@@ -102,16 +117,56 @@ def route_media(slug, stops, heading, lead):
     return (f'<section class="szc-sec" id="route"><span class="szc-kicker">Route plan</span><h2>{heading}</h2><p class="szc-lead">{lead}</p>'
             f'<div class="szc-split">{left}<ol class="szc-stops">{"".join(items)}</ol></div></section>')
 
-def vehicle_cards(slug, ctx_label):
+def photo_tag(v, uid):
+    ph = PHOTOS.get(v["id"])
+    if ph:
+        return f'<img src="{ph["src"]}" alt="{esc(v["photo_alt"])}" width="{ph.get("w",1280)}" height="{ph.get("h",853)}" loading="lazy" decoding="async">'
+    fb = {"hycross": "crysta", "fortuner": "crysta", "tempo17": "tempo", "minibus": "urbania", "bus35": "urbania", "bus45": "urbania"}
+    sid = fb.get(v["id"], v["id"])
+    if MEDIA.get("svg_base"):
+        return f'<img src="{MEDIA["svg_base"]}/{sid}.svg" alt="{esc(v["photo_alt"])}" width="320" height="140" loading="lazy" decoding="async" style="object-fit:contain;padding:16px">'
+    return vsvg(sid, uid=uid)
+
+def credits_block():
+    items = []
+    for v in FLEET:
+        ph = PHOTOS.get(v["id"])
+        if ph and ph.get("credit"):
+            items.append(f'<li>{v["name"]} - {ph["credit"]}, <a href="{ph["lic_url"]}" rel="license noopener" target="_blank">{ph["lic"]}</a>, via <a href="{ph["page"]}" rel="noopener" target="_blank">Wikimedia Commons</a>{" (cropped)" if ph.get("cropped") else ""}</li>')
+    if not items:
+        return ""
+    return ('<details class="szc-credits"><summary>Photo credits (the cars shown are representative of each class, not the exact vehicle you will get)</summary><ul>'
+            + "".join(items) + "</ul></details>")
+
+def vehicle_cards(slug, ctx_label, ref=None):
+    """Fleet gallery: type/seat filters, photo cards with 3D tilt, 'View car' opens the viewer (per-tier fares for the page's reference route)."""
+    ref = ref or dict(l="Delhi → Shimla", km=345, f=1.0)
     cards = []
     for v in FLEET:
         q = wa(f"Hi Suzu Travels, I'd like a {v['name']} for {ctx_label}. Date: ___ , people: ___ (page: {slug})")
         more = f'<a class="szc-btn sm line" href="{page_url(v["page"])}">Details</a>' if v["page"] and v["page"] != slug and is_live(v["page"]) else ""
-        img = f'<img src="{MEDIA.get("svg_base","")}/{v["id"]}.svg" alt="{v["name"]} ({v["model"]}) illustration" width="320" height="140" loading="lazy" decoding="async">' if MEDIA.get("svg_base") else vsvg(v["id"], uid=slug[:6] + v["id"])
-        cards.append(f'<article class="szc-card szc-veh">{img}<div class="szc-card-b"><span class="szc-tag">{v["model"]}</span><h3>{v["name"]}</h3>'
-                     f'<div class="meta"><span>{v["seats"]} seats</span><span>{v["bags"]}</span><span>AC · {v["fuel"]}</span></div><p>Best for: {v["best"]}</p>'
+        if v.get("quote"):
+            rate = '<div class="rate"><span><b>On quote</b>per trip, all-in</span><span>Luggage hold · AC</span></div>'
+        else:
+            ow0 = oneway(v["id"], ref["km"], ref["f"])
+            rate = f'<div class="rate"><span><b>{pkm(v["hire"])}</b>round trip</span><span><b>{pinr(ow0)}</b>{esc(ref["l"])} one-way</span></div>'
+        cards.append(f'<article class="szc-card szc-veh" data-type="{v["type"]}" data-seats="{v["seats"]}"><div class="szc-ph">{photo_tag(v, slug[:6] + v["id"])}'
+                     f'<span class="szc-seats">{v["seats"]} seats</span><button type="button" class="szc-view" data-view="{v["id"]}">View car</button></div>'
+                     f'<div class="szc-card-b"><span class="szc-tag">{v["model"]}</span><h3>{v["name"]}</h3>'
+                     f'<div class="meta"><span>{v["seats"]} seats</span><span>{v["bags"]}</span><span>AC · {v["fuel"]}</span></div><p>Best for: {v["best"]}</p>{rate}'
                      f'<div class="acts"><a class="szc-btn sm wa" href="{q}" target="_blank" rel="noopener">WhatsApp quote</a>{more}</div></div></article>')
-    return '<div class="szc-grid">' + "".join(cards) + "</div>"
+    fl = dict(s=slug, ctx=ctx_label, ref=ref, v=[dict(id=v["id"], name=v["name"], model=v["model"], seats=v["seats"], bags=v["bags"], fuel=v["fuel"], best=v["best"],
+             ow=v["ow"], hire=v["hire"], min=v["min"], night=v["night"], quote=bool(v.get("quote")), page=(page_url(v["page"]) if v["page"] and is_live(v["page"]) else ""),
+             photo=(PHOTOS.get(v["id"], {}).get("src", "")), alt=v["photo_alt"], credit=(PHOTOS.get(v["id"], {}).get("credit", ""))) for v in FLEET])
+    types = '<span class="lbl">Type</span><button type="button" class="szc-chip on" data-ft="all">All</button>' + "".join(f'<button type="button" class="szc-chip" data-ft="{k}">{l}</button>' for k, l in VTYPES)
+    seats = '<span class="lbl">Seats</span><button type="button" class="szc-chip on" data-fs="all">Any</button><button type="button" class="szc-chip" data-fs="1-4">Up to 4</button><button type="button" class="szc-chip" data-fs="5-7">5–7</button><button type="button" class="szc-chip" data-fs="8-17">8–17</button><button type="button" class="szc-chip" data-fs="18-99">18+</button><span class="szc-fcount" id="szc-fcount"></span>'
+    return (f'<div id="szc-fleet" data-fleet=\'{esc(json.dumps(fl, ensure_ascii=False, separators=(",", ":")))}\'>{tier_switch()}'
+            f'<div class="szc-filters">{types}</div><div class="szc-filters" style="margin-top:8px">{seats}</div>'
+            f'<div class="szc-grid">{"".join(cards)}</div>{credits_block()}</div>')
+
+def modal_block():
+    return ('<div class="szc-modal" id="szc-modal" hidden role="dialog" aria-modal="true" aria-labelledby="szc-mt"><div class="szc-mbox">'
+            '<button type="button" class="szc-mclose" aria-label="Close">×</button><div class="szc-mbody"></div></div></div>')
 
 def tips(ts):
     return '<div class="szc-tips">' + "".join(f'<div class="szc-tip"><h3>{h}</h3><p>{t}</p></div>' for h, t in ts) + "</div>"
@@ -169,9 +224,11 @@ def route_card(r, page_slug):
     acts = (f'<a class="szc-btn sm em" href="{page_url(r["slug"])}">Route & fares</a>' if live else "") + \
            f'<a class="szc-btn sm wa" href="{q}" target="_blank" rel="noopener">WhatsApp quote</a>'
     rid = ' id="rt-' + (r["a"].lower() + "-" + r["b"].lower()).replace(" ", "-") + '"'
+    if page_slug == "cabs":
+        acts += f'<a class="szc-btn sm line" href="#planner" data-plan-route="{esc(r["a"])}>{esc(r["b"])}">Map</a>'
     return (f'<article class="szc-card szc-route-card"{rid}><div class="rc-top"><div class="from">{r["a"]}</div><div class="to">→ {r["b"]}</div>'
             f'<div class="line"><span>{r["km"]} km</span><i></i><span>{r["t"]}</span></div></div>'
-            f'<div class="szc-card-b"><div class="price">Sedan from <b>{inr(sedan)}</b> · Innova Crysta from {inr(crysta)}</div><div class="acts">{acts}</div></div></article>')
+            f'<div class="szc-card-b"><div class="price">Sedan from <b>{pinr(sedan)}</b> · Innova Crysta from {pinr(crysta)}</div><div class="acts">{acts}</div></div></article>')
 
 def related(rel):
     return '<div class="szc-links">' + "".join(f'<a href="{u}"><span>{l}{("<small>" + s + "</small>") if s else ""}</span></a>' for u, l, s in rel) + "</div>"
@@ -179,7 +236,7 @@ def related(rel):
 JS = (ROOT / "kit.js").read_text()
 
 def wrap(body, p, faqs, area):
-    return f'<div class="szc" data-szc="{p["slug"]}">{body}{jsonld(p, faqs, area)}<script>{JS}</script></div>'
+    return f'<div class="szc" data-szc="{p["slug"]}" data-tier="standard">{body}{modal_block()}{jsonld(p, faqs, area)}<script>{JS}</script></div>'
 
 # ---------------------------------------------------------------- pages
 def build_route(p):
@@ -196,7 +253,7 @@ def build_route(p):
              f'<p class="szc-lead">Indicative starting prices for off-season weekdays. Same fare for the return direction ({r["b"]} to {r["a"]}).</p>'
              f'{fare_table_route(r, p["slug"])}{includes()}<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
     body += route_media(p["slug"], p["stops"], f'{r["a"]} to {r["b"]} by road, stop by stop', f'The route our drivers take, with the stops worth making.')
-    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Choose your car for {r["b"]}</h2>{vehicle_cards(p["slug"], r["a"] + " to " + r["b"])}</section>'
+    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Choose your car for {r["b"]}</h2>{vehicle_cards(p["slug"], r["a"] + " to " + r["b"], dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Road tips for {r["a"]} to {r["b"]}</h2>{tips(p["tips"])}</section>'
     body += f'<section class="szc-sec alt" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'
     body += quote_block(p, r["a"], r["b"])
@@ -214,7 +271,7 @@ def outstation_table(outs, slug):
     for a, b, km, f in outs:
         link = next((r["slug"] for r in ROUTES if r["slug"] and is_live(r["slug"]) and {r["a"], r["b"]} == {a, b}), None)
         name = f'<a href="{page_url(link)}">{a} → {b}</a>' if link else f"{a} → {b}"
-        rows.append(f'<tr><td><b>{name}</b></td><td>{km} km</td><td class="num">{inr(oneway("sedan", km, f))}</td><td class="num">{inr(oneway("ertiga", km, f))}</td><td class="num">{inr(oneway("crysta", km, f))}</td></tr>')
+        rows.append(f'<tr><td><b>{name}</b></td><td>{km} km</td><td class="num">{pinr(oneway("sedan", km, f))}</td><td class="num">{pinr(oneway("ertiga", km, f))}</td><td class="num">{pinr(oneway("crysta", km, f))}</td></tr>')
     return ('<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>One-way drop</th><th>Distance</th><th>Sedan</th><th>Ertiga</th><th>Innova Crysta</th></tr></thead><tbody>'
             + "".join(rows) + "</tbody></table></div>")
 
@@ -230,7 +287,7 @@ def build_city(p):
              f'<h3 style="margin-top:34px">Outstation taxi from {town}</h3>{outstation_table(outs, p["slug"])}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
     body += route_media(p["slug"], p["stops"], f"Popular taxi trips from {town}", f"Where our {town} cabs go most, and what each trip is known for.")
-    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Cars available {p.get("in_town") or "in " + town}</h2>{vehicle_cards(p["slug"], town)}</section>'
+    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Cars available {p.get("in_town") or "in " + town}</h2>{vehicle_cards(p["slug"], town, dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know about taxis {p.get("in_town") or "in " + town}</h2>{tips(p["tips"])}</section>'
     body += f'<section class="szc-sec alt" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'
     body += quote_block(p, town, "")
@@ -244,11 +301,11 @@ def build_vehicle(p):
     chips = [f'From <b>₹{v["hire"]}/km</b>', "250 km / day minimum", f'{v["seats"]} seats · {v["bags"]}', "Driver included", "Delhi · Chandigarh pickup"]
     top = [r for r in ROUTES if r["a"] in ("Delhi", "Chandigarh", "Pathankot", "Jammu")][:12]
     dests = [dict(l=f'{r["a"]} → {r["b"]}', km=r["km"], f=r["f"]) for r in top]
-    rate_rows = "".join(f'<tr><td><b>{x["name"]}</b><br><small>{x["model"]}</small></td><td>{x["seats"]}</td><td class="num">₹{x["hire"]}/km</td><td>250 km/day</td><td class="num">₹{x["night"]}/night</td></tr>' for x in vs)
+    rate_rows = "".join(f'<tr><td><b>{x["name"]}</b><br><small>{x["model"]}</small></td><td>{x["seats"]}</td><td class="num">{pkm(x["hire"])}</td><td>250 km/day</td><td class="num">₹{x["night"]}/night</td></tr>' for x in vs)
     rate_tbl = f'<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>Vehicle</th><th>Seats</th><th>Round trip rate</th><th>Minimum</th><th>Driver allowance</th></tr></thead><tbody>{rate_rows}</tbody></table></div>'
     ow_rows = "".join(
         f'<tr><td><b>{("<a href=" + chr(34) + page_url(r["slug"]) + chr(34) + ">" + r["a"] + " → " + r["b"] + "</a>") if r["slug"] and is_live(r["slug"]) else r["a"] + " → " + r["b"]}</b></td><td>{r["km"]} km</td>'
-        + "".join(f'<td class="num">{inr(oneway(x["id"], r["km"], r["f"]))}</td>' for x in vs) + "</tr>" for r in top)
+        + "".join(f'<td class="num">{pinr(oneway(x["id"], r["km"], r["f"]))}</td>' for x in vs) + "</tr>" for r in top)
     ow_tbl = (f'<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>One-way drop</th><th>Distance</th>' + "".join(f"<th>{x['name']}</th>" for x in vs)
               + f"</tr></thead><tbody>{ow_rows}</tbody></table></div>")
     body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Rates"), ("route", "Trips"), ("cars", "Fleet"), ("tips", "Tips"), ("faq", "FAQ")])
@@ -258,7 +315,7 @@ def build_vehicle(p):
              f'<h3 style="margin-top:34px">One-way drops from Delhi, Chandigarh, Pathankot & Jammu</h3>{ow_tbl}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"], default_vehicle=v["id"])}</section>')
     body += route_media(p["slug"], p["stops"], f"Where groups take our {v['name']}", "The trips this vehicle does most, from Delhi NCR and Chandigarh.")
-    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Compare every car we run</h2>{vehicle_cards(p["slug"], "my trip")}</section>'
+    body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Compare every car we run</h2>{vehicle_cards(p["slug"], "my trip", dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know before you book</h2>{tips(p["tips"])}</section>'
     body += f'<section class="szc-sec alt" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'
     body += quote_block(p, "Delhi", "")
