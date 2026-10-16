@@ -1,0 +1,39 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "night",
+  "deva": "५१ शक्तिपीठ",
+  "kicker": "Shakti Peeth · across the subcontinent",
+  "beats": [
+   "Sati honours Shiva against her father",
+   "Shiva carries his grief across the worlds",
+   "Where she falls, the Devi stays",
+   "Fifty-one seats of the Goddess"
+  ]
+ },
+ "story": {
+  "title": "The story of the Shakti Peeths",
+  "beats": [
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Sati gives up her body to honour Shiva"
+   },
+   {
+    "arch": "lake",
+    "sky": "dusk",
+    "line": "In grief, Shiva wanders across the worlds"
+   },
+   {
+    "arch": "devi",
+    "sky": "saffron",
+    "line": "Wherever a part of her falls, a shrine arises"
+   },
+   {
+    "arch": "devi",
+    "sky": "dawn",
+    "line": "Each Peeth keeps its Devi and a guardian Bhairava"
+   }
+  ]
+ }
+}

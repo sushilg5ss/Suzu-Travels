@@ -1,0 +1,39 @@
+{
+ "hero": {
+  "arch": "cave",
+  "sky": "snow",
+  "deva": "श्री अमरनाथ",
+  "kicker": "Holy cave · Kashmir Himalaya",
+  "beats": [
+   "Shiva whispers the secret",
+   "Two pigeons overhear forever",
+   "A shepherd finds the cave",
+   "Ice lingam rises each summer"
+  ]
+ },
+ "story": {
+  "title": "The legend of Amarnath",
+  "beats": [
+   {
+    "arch": "pillar",
+    "sky": "dusk",
+    "line": "Shiva leaves Nandi behind at Pahalgam"
+   },
+   {
+    "arch": "lake",
+    "sky": "snow",
+    "line": "At Sheshnag lake he sets down his serpents"
+   },
+   {
+    "arch": "cave",
+    "sky": "night",
+    "line": "In the cave, two pigeons hear the Amar Katha"
+   },
+   {
+    "arch": "cave",
+    "sky": "dawn",
+    "line": "Each summer the ice lingam takes shape again"
+   }
+  ]
+ }
+}

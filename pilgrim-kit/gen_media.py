@@ -9,7 +9,7 @@
 
 Why illustrated: every visual is drawn here from SVG shapes, so there is no photo licence to worry about (Sushil, 8 Oct
 2026: "copyright claim na ho"). Temple drawings are stylised ARCHETYPES (himalaya, nagara, ghats, gopuram, cave, devi,
-pillar, gurudwara, pagoda, devi-cave) — never captioned as an exact architectural likeness.
+pillar, gurudwara, pagoda, devi-cave, lake) — never captioned as an exact architectural likeness.
 
 Rules (same as the mountain kit): 1920x1080, 30 fps, silent, seamless loop (last frame == first frame), deterministic
 (no Math.random at runtime — every random number is generated here with a fixed seed). Hero text stays in the RIGHT 55%
@@ -288,15 +288,35 @@ def arch_devicave():
             + mtn + cave + path + lamps)
 
 
+def arch_lake():
+    """High Himalayan sacred lake (Sheshnag / Manimahesh / Hemkund type): snow peaks mirrored in a still lake, a small
+    stone cairn with a saffron flag and lamps on the shore — no building. For legend beats set at a lake or on the trek.
+    Added 16 Oct 2026. Stylised archetype, not a likeness — caption it "a Himalayan lake"."""
+    back = ('<path d="M-40 790 L120 520 L230 600 L400 300 L560 560 L700 420 L860 640 L1100 540 L1400 660 L1700 560 L1960 640 L1960 800 L-40 800Z" fill="#26325c"/>'
+            '<path d="M400 300 L462 392 L428 378 L400 408 L372 378 L338 392Z M120 520 L165 578 L140 570 L115 596 L94 572Z M700 420 L752 486 L725 480 L700 504 L678 480Z" fill="url(#snowg)"/>')
+    refl = ('<g opacity=".28" transform="translate(0 1600) scale(1 -1)">'
+            '<path d="M-40 800 L120 520 L230 600 L400 300 L560 560 L700 420 L860 640 L1100 540 L1400 660 L1700 560 L1960 640 L1960 800Z" fill="#3a4a80"/>'
+            '<path d="M400 300 L462 392 L428 378 L400 408 L372 378 L338 392Z M700 420 L752 486 L725 480 L700 504 L678 480Z" fill="#c9d6f2"/></g>')
+    lake = ('<rect x="-40" y="800" width="2000" height="180" fill="url(#lk)"/>' + refl
+            + "".join(f'<path id="lk{i}" d="M{x0} {y} L{x0 + w} {y}" stroke="{GOLD2}" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>'
+                      for i, (x0, y, w) in enumerate([(380, 840, 160), (250, 885, 230), (520, 925, 140)])))
+    shore = ('<path d="M-40 1080 L-40 960 Q300 930 620 975 Q900 1010 1960 990 L1960 1080Z" fill="#160a1c"/>'
+             '<path d="M120 968 L150 930 L200 924 L230 960Z M150 930 L168 900 L196 898 L200 924Z" fill="#2c2440" stroke="' + RIM + '" stroke-width="2"/>'
+             + flag(176, 900, 110, "fg")
+             + "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{GOLD2}" opacity=".9"/>' for x, y in ((260, 968), (320, 972), (90, 975))))
+    return ('<defs><linearGradient id="lk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4f8c"/><stop offset=".6" stop-color="#1d2448"/><stop offset="1" stop-color="#120714"/></linearGradient></defs>'
+            + back + lake + shore)
+
+
 ARCH = {"himalaya": arch_himalaya, "nagara": arch_nagara_sea, "ghats": arch_ghats, "devi": arch_devi,
         "gopuram": arch_gopuram, "cave": arch_cave, "pillar": arch_pillar, "gurudwara": arch_gurudwara,
-        "pagoda": arch_pagoda, "devi-cave": arch_devicave}
-SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk"}
+        "pagoda": arch_pagoda, "devi-cave": arch_devicave, "lake": arch_lake}
+SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk", "lake": "snow"}
 
 
 def scene_svg(arch, uid, sky=None):
     sky = sky or SKY_FOR[arch]
-    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60)}.get(arch, (470, 560, 140))
+    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60), "lake": (760, 230, 60)}.get(arch, (470, 560, 140))
     return (sky_svg(uid, sky, sun) + (stars(uid, 80, 7) if sky in ("night", "snow", "dusk") else "")
             + mandala(sun[0], sun[1], 300, f"md{uid}", op=.18)
             + f'<svg class="lay" viewBox="0 0 {W} {H}">{DEFS}<g>{ARCH[arch]()}</g></svg>')
@@ -305,7 +325,7 @@ def scene_svg(arch, uid, sky=None):
 def arch_js(arch, uid_prefix, dur, start=0.0):
     """Small seamless secondary motion for an archetype (flag sway, waves, diya bob, pillar pulse)."""
     js = []
-    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave"):
+    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave", "lake"):
         js.append(f'tl.fromTo("{uid_prefix} #fg",{{rotation:-6}},{{rotation:6,duration:{dur / 8:.3f},ease:"sine.inOut",yoyo:true,repeat:7}},{start});')
     if arch == "nagara":
         for i in range(4):
@@ -313,6 +333,9 @@ def arch_js(arch, uid_prefix, dur, start=0.0):
     if arch == "ghats":
         for i in range(5):
             js.append(f'tl.fromTo("{uid_prefix} #dy{i}",{{y:0}},{{y:-8,duration:{dur / 6:.3f},ease:"sine.inOut",yoyo:true,repeat:5}},{start + i * .2:.2f});')
+    if arch == "lake":
+        for i in range(3):
+            js.append(f'tl.fromTo("{uid_prefix} #lk{i}",{{opacity:.25,x:0}},{{opacity:1,x:{18 - i * 12},duration:{dur / 4:.3f},ease:"sine.inOut",yoyo:true,repeat:3}},{start + i * .3:.2f});')
     if arch == "pillar":
         js.append(f'tl.fromTo("{uid_prefix} #pil",{{scaleX:.85,opacity:.85}},{{scaleX:1.12,opacity:1,duration:{dur / 4:.3f},ease:"sine.inOut",yoyo:true,repeat:3}},{start});')
         js.append(f'tl.fromTo("{uid_prefix} #ob1",{{y:0}},{{y:-640,duration:{dur / 2:.3f},ease:"sine.inOut",yoyo:true,repeat:1}},{start});')
