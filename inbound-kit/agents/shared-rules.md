@@ -1,0 +1,27 @@
+## Shared rules for every Suzu Inbound agent (v1 — 16 Oct 2026; read carefully)
+
+**The project.** The **India for international travellers** section of suzutravels.com: hub `/india-tours/` (WordPress page **11411**) and child pages `/india-tours/<slug>/` (first-timer guides, sample itineraries, the private car + driver product, practical pages: e-Visa, SIM/eSIM, UPI & money, trains vs flights, safety, best time to visit). Goal (Sushil, 16 Oct 2026): rank in the US, UK, Australia, Canada, Germany, Israel, Netherlands for what foreigners search about travelling North India, answer honestly and completely, and turn that trust into WhatsApp/email enquiries and 20% deposits. Suzu's strengths: Himachal (home), Kashmir, Ladakh/Spiti, Uttarakhand/Char Dham, Golden Triangle, private car with driver.
+
+**The owner.** Sushil Kumar, Suzu Travels, office at NH 103, Kulahru, Tehsil Ghumarwin, Bilaspur HP. Phone / WhatsApp **+91 70874 88961** (all older numbers are dead); info@suzutravels.com. *HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022* (link `/certificates/`). Never "registered DMC", never "government approved", never another number. Founded 2019.
+
+**Nobody is watching this run.** Never ask a question: take the most reasonable reading, act, and report. Your final message IS the report, in simple Hinglish that reads well on a phone, with every page's full URL. Put only real decisions under **"Sushil ke liye"**, or write "kuch nahi".
+
+**The Inbound Kit is the single source of truth.** GitHub `sushilg5ss/Suzu-Travels`, branch **`inbound`**, folder `inbound-kit/`.
+1. `add_repo` (Claude Code Remote connector) with owner `sushilg5ss`, repo `Suzu-Travels`, access `push`.
+2. `git clone --depth 1 --single-branch -b inbound https://github.com/sushilg5ss/Suzu-Travels ~/ik` (one clone, generous timeout ~10 min).
+3. `cd ~/ik && git config user.name "Suzu Inbound Agent" && git config user.email info@suzutravels.com`.
+Then read `inbound-kit/README.md` **fully first**, `BACKLOG.md`, the top of `LOG.md` and `live.json`. Take the real time from `TZ=Asia/Kolkata date` for logs.
+
+**Git.** `git pull --rebase` before every push; push to `inbound` only; never force-push; short commit messages.
+
+**Non-negotiables** (README §1): facts only from fact packs with sources + as-of; prices only from `data/prices.json`, otherwise "on request"; the booking line is fixed (20% deposit / 48-hour full refund / Razorpay international or PayPal); never name drivers, transporters, hotels, partners; never claim "verified / police-verified drivers"; registration line exact; visa pages point to indianvisaonline.gov.in only and warn about look-alike sites; no medical or legal advice; licensed media only, credited; no competitor text; no social posting; forum answers are drafts for the team.
+
+**WordPress** (Royal MCP "Suzu Travels WordPress" cloud connector). Load tools with ToolSearch, e.g. `select:mcp__Suzu_Travels_WordPress__wp_get_page,mcp__Suzu_Travels_WordPress__wp_create_page,mcp__Suzu_Travels_WordPress__wp_update_page,mcp__Suzu_Travels_WordPress__wp_replace_in_page,mcp__Suzu_Travels_WordPress__wp_update_seo_meta,mcp__Suzu_Travels_WordPress__wp_get_seo_meta,mcp__Suzu_Travels_WordPress__wp_get_pages,mcp__Suzu_Travels_WordPress__wp_search`. If absent: log in LOG.md, push, report, stop. Every write returns a 72-hour undo token → LOG.md.
+**Never:** delete content; change existing URLs or slugs (11411/11412/11413 included); touch the static homepage, menus, theme, plugins, PHP, settings or .htaccess; edit pages outside this section — except ONE contextual internal link per run into this section (Reviewer only, non-Elementor posts; check `_elementor_edit_mode` first).
+**WP Rocket:** verify live twice (`?v=<random>` and plain); meta-only changes don't purge — re-save the title. **Hostinger bot protection:** few headless loads per run, ≥1 s between requests; a 403 "Checking your browser" is not a broken page — wait and retry (tools exit 3), never "fix" a page because of it.
+
+**Lanes.** Research & Keywords: `research/`, `data/` (not `prices.json`), BACKLOG `researched` + re-ranking. Visual Studio: `src/media/`, `media/`, `compositions/`, `hf/`, `gen_media.py`, `make_media.sh`, `media.json`, BACKLOG `media`. Page Builder: `src/pages/`, `out/`, `live.json`, this section's WordPress pages, BACKLOG `live`. Reviewer (SEO, Legal & Compliance QA): fixes on live pages, kit code improvements (re-sync every page it changes), internal links from the rest of the site, `research/forum-drafts/`, `research/serp-log.csv`. Other Suzu agents (Pilgrim, Mountain, Adventure, Cab, Homepage, Trip Planner, Design, GEO…) don't edit these pages; you don't edit theirs (apart from the one-link rule). The existing pages 11411/11412/11413 were hand-built in Sep 2026 (sources in repo folder `intl/`): the Page Builder may ADD link blocks to them via `wp_replace_in_page` but never rebuilds them.
+
+**Capacity.** Sushil keeps ~30% of his Claude capacity for himself. Work efficiently, don't repeat heavy steps (a HyperFrames render is ~8 min), and stop early with a LOG line if there is nothing useful to do.
+
+**Human-only** (list under "Sushil ke liye", never do): adding prices, marketplace/forum accounts and posting, ad spend, naming partners, menu/header changes, File Manager/PHP, WP Rocket full cache clear, anything involving money or legal agreements.

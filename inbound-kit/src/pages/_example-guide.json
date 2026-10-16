@@ -1,0 +1,213 @@
+{
+ "_note": "MODEL FILE for agents (files starting with _ are never built). Structure of a `product` page — row 1 of the BACKLOG. Facts here are placeholders for shape only: the real page is built ONLY from research/pages/private-driver-india.md. Copy the structure, not the words.",
+ "path": "/india-tours/private-driver-india/",
+ "parent": 11411,
+ "kind": "product",
+ "title": "Private Car with Driver in North India: How It Works, Routes & Booking",
+ "seo_title": "Private Driver in India: Car + Driver for North India Trips",
+ "seo_desc": "Hire a private car with an English-speaking driver for Delhi, Agra, Jaipur, Shimla, Manali and Kashmir: how it works, routes, inclusions, 20% deposit.",
+ "focus": "private driver india",
+ "label": "Private car + driver",
+ "blurb": "Your own car and driver for the whole trip",
+ "kicker": "North India · Private car with driver",
+ "tag": "One car, one driver, your whole trip.",
+ "sub": "The way most international visitors see North India: a dedicated car and an English-speaking driver from the day you land to the day you fly out — Delhi, Agra, Jaipur, the Himachal hills, Kashmir.",
+ "chips": [
+  [
+   "Door to door",
+   "airport to airport"
+  ],
+  [
+   "English-speaking",
+   "drivers"
+  ],
+  [
+   "Local office",
+   "in Himachal"
+  ],
+  [
+   "20% deposit",
+   "48-hour free cancellation"
+  ]
+ ],
+ "q": "What does a private car with driver in India include?",
+ "answer": "A <b>private car with driver</b> gives you a dedicated vehicle and the same English-speaking driver for your whole route — airport pick-up, every transfer, sightseeing days and hill roads — with fuel, tolls, parking, state taxes and the driver's stay included. You choose the route; we handle the car. Book with a 20% deposit (refundable within 48 hours).",
+ "facts": [
+  [
+   "7+ years",
+   "arranging North India road trips"
+  ],
+  [
+   "Sedan · SUV · Tempo",
+   "2 to 12 travellers"
+  ],
+  [
+   "Himachal",
+   "home turf, local office"
+  ],
+  [
+   "2 h",
+   "reply time, 9 am–9 pm IST"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "how",
+   "nav": "How it works",
+   "h2": "How a private driver trip works",
+   "kind": "steps",
+   "lead": "From your first message to the airport drop.",
+   "items": [
+    [
+     "Tell us your route and dates",
+     "Cities, nights, pace. We suggest changes only where a road or season needs them."
+    ],
+    [
+     "Get a written quote",
+     "Car type, what's included, day-by-day plan — in US dollars."
+    ],
+    [
+     "Lock it with a 20% deposit",
+     "Card via Razorpay (international cards) or PayPal. Full refund if you cancel within 48 hours."
+    ],
+    [
+     "Before the trip",
+     "Your driver's name, photo and car number are shared with you, plus our 24×7 office number in Himachal."
+    ],
+    [
+     "On the road",
+     "Same car and driver throughout; change the plan on the way if you like."
+    ]
+   ]
+  },
+  {
+   "id": "included",
+   "nav": "Included",
+   "h2": "What's included — and what isn't",
+   "kind": "cards",
+   "items": [
+    [
+     "Included",
+     "Car, fuel, tolls, parking, interstate taxes, driver's food and stay, airport pick-up and drop."
+    ],
+    [
+     "Not included",
+     "Hotels (we can add them), monument tickets, guides at monuments, meals, tips."
+    ],
+    [
+     "Cars",
+     "Sedan (2–3 travellers), SUV such as Innova Crysta (4–6), Tempo Traveller (7–12). Mountain roads use SUVs."
+    ],
+    [
+     "Drivers",
+     "English-speaking, experienced on hill roads; they are drivers, not guides — we add licensed guides at monuments on request."
+    ]
+   ]
+  },
+  {
+   "id": "routes",
+   "nav": "Sample routes",
+   "h2": "Sample routes international travellers take",
+   "kind": "table",
+   "head": [
+    "Route",
+    "Days",
+    "Highlights"
+   ],
+   "rows": [
+    [
+     "Delhi → Agra → Jaipur → Delhi",
+     "5–6",
+     "The Golden Triangle by road, with Fatehpur Sikri and Abhaneri on the way"
+    ],
+    [
+     "Delhi → Shimla → Manali → Dharamshala → Amritsar",
+     "10–12",
+     "Himachal hills, Atal Tunnel, Tibetan McLeod Ganj, the Golden Temple"
+    ],
+    [
+     "Golden Triangle + Himachal",
+     "14",
+     "Our most-booked two-week plan"
+    ],
+    [
+     "Srinagar → Gulmarg → Pahalgam → Sonamarg",
+     "6–7",
+     "Kashmir valley, flights in and out of Srinagar"
+    ]
+   ],
+   "note": "Prices depend on car, season and nights — ask for a quote; we reply with a day-by-day plan."
+  },
+  {
+   "id": "trust",
+   "nav": "Why a local company",
+   "h2": "Why book the driver through a local company",
+   "kind": "prose",
+   "paras": [
+    "We are a registered travel agent based in Himachal Pradesh, not a marketplace. The same team that quotes your trip answers the phone while you travel.",
+    "Your driver's details reach you before the trip, and our office number works 24×7 for the days you are on the road."
+   ]
+  },
+  {
+   "id": "roads",
+   "nav": "Roads & seasons",
+   "h2": "Roads, passes and seasons to know",
+   "kind": "callout",
+   "text": "Rohtang Pass is closed from roughly November to May; the Atal Tunnel keeps Manali–Lahaul open year-round. Hill roads mean 30–40 km/h (20–25 mph) averages — we plan days around that, not around the map distance."
+  }
+ ],
+ "faqs": [
+  [
+   "How much does a private driver in India cost?",
+   "It depends on the car, the season and how many nights you travel. Send us your route and dates and we reply with a day-by-day plan and a US-dollar quote; a 20% deposit locks it."
+  ],
+  [
+   "Is the driver also a guide?",
+   "No — drivers drive and help with logistics. For monuments we add licensed local guides on request."
+  ],
+  [
+   "Can I change the route during the trip?",
+   "Yes, within the same number of days and region; extra kilometres or nights are quoted on the spot."
+  ],
+  [
+   "Do I pay the driver anything directly?",
+   "No. Fuel, tolls, parking, taxes and the driver's own stay are in the price. Tips are optional."
+  ],
+  [
+   "How do I pay from abroad?",
+   "By card through Razorpay (international cards accepted) or PayPal. The balance is due before the trip."
+  ],
+  [
+   "What if I cancel?",
+   "Cancel within 48 hours of paying the deposit for a full refund. After that, the deposit holds your dates; see our booking policy."
+  ]
+ ],
+ "sources": [
+  [
+   "Atal Tunnel — Border Roads Organisation",
+   "https://www.bro.gov.in/"
+  ],
+  [
+   "Himachal Pradesh Tourism",
+   "https://himachaltourism.gov.in/"
+  ],
+  [
+   "Incredible India — travel information",
+   "https://www.incredibleindia.gov.in/"
+  ]
+ ],
+ "verified": "16 Oct 2026",
+ "cta": {
+  "h2": "Tell us your route — we'll send a plan and a quote",
+  "text": "Cities, dates, how many of you, and what kind of car. We reply within two hours (9 am–9 pm IST).",
+  "wa": "Hello Suzu Travels, I'd like a private car with driver in North India. Route: ___ , dates: ___ , travellers: ___ , country: ___"
+ },
+ "service": {
+  "name": "Private car with driver — North India",
+  "type": "Chauffeur-driven car hire",
+  "area": "Delhi, Uttar Pradesh, Rajasthan, Himachal Pradesh, Punjab, Jammu & Kashmir, Uttarakhand"
+ },
+ "links": [
+  "golden-triangle-tour"
+ ]
+}
