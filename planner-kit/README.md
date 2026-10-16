@@ -34,8 +34,9 @@ Share link: `#t=<base64url(JSON)>` — `{v:1,s,e,d,a,c,i,r,t,m,k,p:[[id,nights]]
 
 ## 3. Pricing engine (data/rates.json) — "higher side" by design
 - **Car**: per-km rates and driver allowance identical to the live /cabs/ fare engine (`cab-kit/cabs_data.py` on branch `cabs`): sedan 12, Ertiga 14, Innova Crysta 19, Tempo 26, Urbania 36 ₹/km; ₹400/night (₹500 Tempo/Urbania). Billable km = max(actual drive + sightseeing km, 250 km × days; 150 km/day on Kashmir/Ladakh union days). Kashmir ×1.25 / Ladakh ×1.35 local-union factor. Tolls + parking ₹1.5/km.
-- **Hotels**: per room-night, double, MAP, off-peak, by place class: metro 3,200 · popular hill 3,400 · hill town 2,800 · remote/camps 3,600 · pilgrim 2,400 · Kashmir 3,800 · Ladakh 3,900. Tier ×0.7 / 1.0 / 1.45 / 2.6 (remote capped ×1.8). Extra adult 35 %, child bed 25 %, CP ×0.88. **Peak ×1.25** on Suzu's own windows: 15 Mar–30 Jun, all October, 20 Dec–5 Jan.
+- **Hotels**: per room-night, double, MAP, off-peak, by place class: metro 3,200 · popular hill 3,800 · hill town 3,200 · remote/camps 3,600 · pilgrim town 2,400 · pilgrim city (Katra/Haridwar) 4,000 · Kashmir 4,400 · Ladakh 3,900 (rate audit 16 Oct 2026, `research/rates-sources.md`). Tier ×0.7 / 1.0 / 1.45 / 2.6 (remote capped ×1.8). Extra adult 35 %, child bed 25 %, CP ×0.88. **Peak ×1.25** on Suzu's own windows: 15 Mar–30 Jun, all October, 20 Dec–5 Jan.
 - **Service** 10 % + **GST 5 %**; display range = total → total × 1.12; per adult = total ÷ (adults + ½ children).
+- Calibration 16 Oct 2026 (after rate audit): same trip → ₹23,300/adult; Vaishno Devi template ₹9,300; Kashmir classic ₹22,300.
 - Calibration 15 Oct 2026: Shimla–Manali 5N from Chandigarh, 2 adults, deluxe, Nov → ₹22,200/adult (sedan ₹21.3k + hotels ₹17k). The homepage "from ₹12,499" is a 4–6 person off-season rate; the planner estimate drops toward it as the group grows. **Never show a figure lower than the market; never call an estimate a quote.**
 - Activities are never priced (Suzu rule: "Get Quote" / "price on request").
 

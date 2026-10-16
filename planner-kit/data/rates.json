@@ -1,5 +1,5 @@
 {
-  "version": "0.1 — 15 Oct 2026",
+  "version": "0.2 — 16 Oct 2026 (rate audit #1)",
   "note": "Estimator rates. Deliberately on the higher side of the 2026 market so the team can confirm at or below the estimate. Cab per-km rates and driver allowance are the same as the live /cabs/ fare engine (cab-kit/cabs_data.py). Hotel rates: per room per night incl. breakfast + dinner (MAP), double occupancy, off-peak. Sources: research/rates-sources.md.",
   "cab": {
     "min_km_per_day": 250,
@@ -20,11 +20,12 @@
   "hotel": {
     "classes": {
       "metro":        {"label": "City hotel",              "deluxe": 3200},
-      "hill_premium": {"label": "Popular hill station",    "deluxe": 3400},
-      "hill":         {"label": "Hill town",               "deluxe": 2800},
+      "hill_premium": {"label": "Popular hill station",    "deluxe": 3800},
+      "hill":         {"label": "Hill town",               "deluxe": 3200},
       "remote":       {"label": "Remote valley / camp",    "deluxe": 3600},
       "pilgrim":      {"label": "Pilgrim town",            "deluxe": 2400},
-      "kashmir":      {"label": "Kashmir",                 "deluxe": 3800},
+      "pilgrim_city": {"label": "Pilgrim city (Katra / Haridwar)", "deluxe": 4000},
+      "kashmir":      {"label": "Kashmir",                 "deluxe": 4400},
       "ladakh":       {"label": "Ladakh",                  "deluxe": 3900}
     },
     "tiers": [

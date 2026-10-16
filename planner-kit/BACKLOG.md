@@ -1,11 +1,12 @@
 # Trip Planner backlog (top = next). Tick with `done YYYY-MM-DD` + one LOG line.
 
 ## Phase 0 — deploy pending
-0. [ ] **Deploy v0.3** (dist 4c765ffa28e2b0a9, release in Project `claude/trip-planner/releases/2026-10-15/`) — Chrome tools were absent on 15 Oct 11:53 run. Rebuild from branch if newer.
+00. [ ] **Deploy v0.4** (rate audit; release in Project `claude/trip-planner/releases/2026-10-16/`) — Chrome tools absent on 16 Oct run.
+0. [x] done 2026-10-16 (live = 4c765ffa, uploaded during the 16 Oct ops sweep / by Sushil) **Deploy v0.3** (dist 4c765ffa28e2b0a9, release in Project `claude/trip-planner/releases/2026-10-15/`) — Chrome tools were absent on 15 Oct 11:53 run. Rebuild from branch if newer.
 
 ## Phase 1 — go live at /plan-your-trip/ (week 1)
 1. [x] done 2026-10-15 (live SHA 873f29f3c6f26826; real test lead skipped — send one only if leads look missing) **Deploy v0.1** to `public_html/plan-your-trip/index.html` (new folder). Verify 200, test live (stubbed lead), then ONE real test lead named "TEST Claude Trip Planner (ignore)" and confirm it reached the lead inbox / info@ email. Add Rank Math-independent sitemap note in LOG (static page: ask GSC URL inspection is human-only → "Sushil ke liye").
-2. [ ] **Rate audit** — research 2026 hotel rates (MakeMyTrip/Agoda/Booking public listings, 3 dates) for the 7 classes and the 12 most-used places; cab rates already = /cabs/ engine. Write `research/rates-sources.md` (dated rows + URLs); move `rates.json` only if the estimate is BELOW market (it must stay on the higher side).
+2. [~] 2026-10-16: audit #1 done (Manali, Shimla, Dharamshala, Kasol, Katra, Haridwar, Srinagar, Leh; 2 dates) → hill_premium 3,800, hill 3,200, new pilgrim_city 4,000, kashmir 4,400 = v0.4. Next: metro, remote, small temple towns, Gulmarg/Pahalgam, Nubra. **Rate audit** — research 2026 hotel rates (MakeMyTrip/Agoda/Booking public listings, 3 dates) for the 7 classes and the 12 most-used places; cab rates already = /cabs/ engine. Write `research/rates-sources.md` (dated rows + URLs); move `rates.json` only if the estimate is BELOW market (it must stay on the higher side).
 3. [~] 2026-10-15: /himachal-tour-packages/ link done (page 1087); next /cabs/, /destinations/, pilgrimage hub, menu via Design agent. **Entry points (outside the homepage)**: ask the Design agent via hand-off board for a "Plan your trip" link in menus; on WordPress hub pages (`/himachal-tour-packages/`, `/cabs/`, `/destinations/`, pilgrimage hub) add ONE contextual link each (Royal MCP, non-Elementor pages only, check `_elementor_edit_mode`).
 4. [ ] **Hindi UI toggle** (EN / हिं) for labels, day-plan sentences and PDF.
 5. [ ] **Split data**: lazy-load road geometry (`/plan-your-trip/roads.json`) after first paint; target < 150 KB first load, LCP < 2.0 s mobile. Lighthouse before/after in LOG.

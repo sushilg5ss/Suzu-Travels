@@ -7,7 +7,7 @@ months (open months, None = all year), sights [(name, extra_km_round_trip, note[
 kind:  hub   = arrival / departure city (airport / railhead)
        stay  = overnight destination
        temple= shrine town (pilgrim circuits)
-cls (hotel class, see rates.json):  metro, hill_premium, hill, remote, pilgrim, kashmir, ladakh
+cls (hotel class, see rates.json):  metro, hill_premium, hill, remote, pilgrim, pilgrim_city, kashmir, ladakh
 """
 
 P = []
@@ -100,7 +100,7 @@ add("kangra", "Kangra (Brajeshwari Devi)", "कांगड़ा (बज्र�
     [("Maa Brajeshwari Devi darshan", 3), ("Kangra Fort", 6), ("Masroor rock-cut temples", 70)])
 add("chamunda", "Chamunda Devi", "चामुंडा देवी", 32.1446, 76.4011, "pilgrim", "temple", "pilgrim",
     [("Chamunda Nandikeshwar Dham darshan", 3)])
-add("katra", "Katra (Vaishno Devi)", "कटरा (वैष्णो देवी)", 32.9916, 74.9318, "kashmir", "temple", "pilgrim",
+add("katra", "Katra (Vaishno Devi)", "कटरा (वैष्णो देवी)", 32.9916, 74.9318, "kashmir", "temple", "pilgrim_city",
     [("Mata Vaishno Devi Bhawan (13 km trek / helicopter)", 0, "Yatra registration (RFID card) required"), ("Shiv Khori", 160)],
     tip="Keep a full day for the Bhawan trek")
 
@@ -129,7 +129,7 @@ add("sarchu", "Sarchu (camps)", "सरचू", 32.9100, 77.5800, "ladakh", "sta
     [("Camp stay on the Manali–Leh highway", 0)], months=SUMMER)
 
 # ---------- Uttarakhand ----------
-add("haridwar", "Haridwar", "हरिद्वार", 29.9457, 78.1642, "uttarakhand", "temple", "pilgrim",
+add("haridwar", "Haridwar", "हरिद्वार", 29.9457, 78.1642, "uttarakhand", "temple", "pilgrim_city",
     [("Har Ki Pauri Ganga Aarti", 5), ("Mansa Devi & Chandi Devi (ropeway)", 10)])
 add("rishikesh", "Rishikesh", "ऋषिकेश", 30.0869, 78.2676, "uttarakhand", "stay", "hill",
     [("Triveni Ghat aarti", 5), ("Ram Jhula, Laxman Jhula & Beatles Ashram", 10), ("River rafting at Shivpuri (Get Quote)", 40),

@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '0.3';
+  var VER = '0.4';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
