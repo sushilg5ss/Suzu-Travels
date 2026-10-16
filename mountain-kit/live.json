@@ -167,5 +167,14 @@
   "blurb": "Signs, the 500 m rule and when to go down",
   "added": "2026-10-15",
   "commercial": false
+ },
+ "first-6000m-peak": {
+  "id": 13559,
+  "path": "/mountains-of-india/first-6000m-peak/",
+  "kind": "guide",
+  "label": "Your first 6,000 m peak",
+  "blurb": "The easiest 6,000ers and the path to one",
+  "added": "2026-10-16",
+  "commercial": true
  }
 }
