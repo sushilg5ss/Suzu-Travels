@@ -1,0 +1,44 @@
+
+/* [DA-2026-10-16] Bottom Quote / Book a Call / WhatsApp / Call bar finished: /contact/ gets the brand bar it was missing, desktop "Book a Call" no longer a 668px white slab, /contact/ title lined up with the page; FAQ heading clears the top on phones — pages: /contact/ (.page-id-11131), every page with the brand bar (desktop .ap width only), .single-suzu_package + .single-product (#faq, phones only) */
+/* Before: /contact/ wraps its own content in a class that happens to be .szc, so the [DA-2026-10-12] cab-page exclusion also skipped the Contact page — it kept the off-brand navy bar, system font, 86px empty strip on the right and the WhatsApp bubble sitting on the Call button (phone buttons 81/64/74/57px). On desktop, the "Book a Call" button added after 12 Oct stretched to 668px on every page. Links, numbers, WhatsApp texts and the .szc content are untouched; nothing inside .szc / .sza is targeted. */
+body.page-id-11131 #szcta {
+  background: var(--dark, #122615) !important;
+  border-top: 1px solid rgba(212, 175, 55, .35);
+  box-shadow: 0 -6px 20px rgba(18, 38, 21, .22) !important;
+  gap: 8px !important;
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)) !important;
+  align-items: stretch;
+}
+body.page-id-11131 #szcta > a {
+  display: flex !important; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0 8px !important;
+  border-radius: 10px !important; border: 1.5px solid transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 700 !important; line-height: 1.2; letter-spacing: .01em; white-space: nowrap;
+  transition: filter .15s ease, background-color .15s ease;
+}
+body.page-id-11131 #szcta > a:not(.ap) { font-size: 14.5px !important; }
+body.page-id-11131 #szcta > a:hover { filter: brightness(1.07); }
+body.page-id-11131 #szcta > a:focus-visible { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; }
+body.page-id-11131 #szcta .q { flex: 1.35 1 0% !important; background: var(--amber, #D4AF37) !important; color: var(--dark, #122615) !important; }
+body.page-id-11131 #szcta .w { flex: 1 1 0% !important; background: var(--teal, #2E7D32) !important; color: #fff !important; }
+body.page-id-11131 #szcta .c { flex: 1 1 0% !important; background: transparent !important; border-color: rgba(255, 255, 255, .55); color: #fff !important; }
+body.page-id-11131 #szcta .c:hover { background: rgba(255, 255, 255, .08) !important; filter: none; }
+@media (max-width: 900px) {
+  body.page-id-11131:has(#szcta) #sz-wa-widget { display: none !important; }
+}
+@media (min-width: 901px) {
+  body.page-id-11131 #szcta { justify-content: center !important; padding-left: 24px !important; padding-right: 24px !important; }
+  body.page-id-11131 #szcta .q { flex: 0 1 280px !important; }
+  body.page-id-11131 #szcta .w,
+  body.page-id-11131 #szcta .c { flex: 0 1 210px !important; }
+  body.page-id-11131:has(#szcta) #sz-wa-widget { bottom: 84px !important; right: 24px !important; }
+  /* Desktop "Book a Call": same compact width as WhatsApp / Call, so the bar reads as one centred group */
+  body:has(#szcta):not(:has(.sza, .szc)) #szcta .ap,
+  body.page-id-11131 #szcta .ap { flex: 0 1 210px !important; }
+}
+/* /contact/: the page title starts on the same left edge as the content under it (was 46px further left on desktop, 20px on phones) and uses the brand heading font */
+body.page-id-11131 .page-header { max-width: 1180px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; box-sizing: border-box; }
+body.page-id-11131 .page-header .entry-title { font-family: 'Sora', 'Plus Jakarta Sans', sans-serif; color: var(--dark, #122615); letter-spacing: -.01em; }
+/* Package FAQ (carry-over from [DA-2026-10-15]): on phones the "FAQ" tab now lands the heading clear of the top edge instead of 14px under it */
+@media (max-width: 900px) { :is(.single-suzu_package, .single-product) #faq { scroll-margin-top: 48px; } }
