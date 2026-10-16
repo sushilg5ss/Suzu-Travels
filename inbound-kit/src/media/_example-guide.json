@@ -1,0 +1,43 @@
+{
+ "_note": "MODEL FILE for the Visual Studio (files starting with _ are never used on a real page; the Studio may render it to test the compositions). One file per page: src/media/<slug>.json with up to three blocks — hero (photo-hero), route (route-map), cost (cost-ladder). Photos: only files listed in hf/photos/CREDITS.md, captioned as a place only if that row allows it. Route lat/lon and day numbers come from research/pages/<slug>.md 'Media notes' (the figures below are the model's own, for shape). Prices: a 'price' prints 'from US$…' and must be in data/prices.json 'allowed'; everything else is words only.",
+ "hero": {
+  "_fields": "kicker ≤ 28 chars, CAPITALS. scenes: 3–5 photos; kind = tilt (portrait, 1920 wide, vertical pan) | land (landscape, 2112 wide, scale + x pan); mirror only if CREDITS.md allows; t = [start, end] seconds (optional: scenes tile the 14 s loop with 0.6 s cross-fades); from/to = GSAP props (optional: gentle default pans). steps: 3–5 captions, CAPITALS, ≤ 18 characters, one per beat (14 s / n). The hero keeps all text in the right 55% of the frame; the Suzu wordmark sits bottom-right.",
+  "kicker": "NORTH INDIA · 14 DAYS",
+  "scenes": [
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}},
+   {"img": "px-28206557.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 560}}
+  ],
+  "steps": ["DELHI → AGRA", "TAJ MAHAL AT DAWN", "JAIPUR, PINK CITY", "UP TO THE HILLS"]
+ },
+ "route": {
+  "_fields": "title (CAPITALS, short), sub (one line), bounds = \"auto\" (zoom to the stops) or [lon0, lon1, lat0, lat1] (omit for all-India), dur (s), stops 3–9 in travel order: name, sub (one or two words), day ('Day 1–2'), lat, lon. The map has no outline and no boundary lines — graticule, stops and the route line only.",
+  "title": "INDIA · 14 DAYS",
+  "sub": "Golden Triangle, then the Himachal hills",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Delhi", "sub": "arrive · old city", "day": "Day 1–2", "lat": 28.61, "lon": 77.21},
+   {"name": "Agra", "sub": "Taj Mahal", "day": "Day 3", "lat": 27.18, "lon": 78.02},
+   {"name": "Jaipur", "sub": "forts · bazaars", "day": "Day 4–6", "lat": 26.91, "lon": 75.79},
+   {"name": "Shimla", "sub": "by car via Delhi", "day": "Day 7–8", "lat": 31.10, "lon": 77.17},
+   {"name": "Manali", "sub": "Kullu valley", "day": "Day 9–11", "lat": 32.24, "lon": 77.19},
+   {"name": "Dharamshala", "sub": "McLeod Ganj", "day": "Day 12–13", "lat": 32.22, "lon": 76.32},
+   {"name": "Delhi", "sub": "fly home", "day": "Day 14", "lat": 28.61, "lon": 77.21}
+  ]
+ },
+ "cost": {
+  "_fields": "kicker, title, items 3–7 (bottom rung first): label ≤ 26 chars, sub ≤ 60 chars, optional price (must be in data/prices.json allowed; prints 'from US$…'; items without a price show 'included'). end = one closing line (words).",
+  "kicker": "WHAT'S INCLUDED",
+  "title": "One quote, few surprises",
+  "items": [
+   {"label": "Private car + driver", "sub": "fuel, tolls, parking and the driver's stay"},
+   {"label": "Hotels, your tier", "sub": "heritage, boutique or comfortable 3–4 star"},
+   {"label": "Breakfast every day", "sub": "other meals as you like, where you like"},
+   {"label": "Local guides", "sub": "English-speaking, at the big monuments"},
+   {"label": "A priced rung (model)", "sub": "price must be in data/prices.json allowed", "price": 449}
+  ],
+  "end": "Flights, visa, entry tickets and tips are extra · exact quote on request"
+ }
+}

@@ -56,11 +56,13 @@ Build: `python3 gen_pages.py <slug> && python3 build.py <slug>` → `out/<slug>.
 placeholders, ₹, banned claims, fact traps, links to unbuilt pages and pages without a hero video.
 
 ## 3. Media (Visual Studio)
-Hero = 16:9 + 9:16 loops (`hero.mp4`, `hero-m.mp4`, `hero-poster.webp`), ≤2.5 MB / ≤1 MB, built with HyperFrames (`npx -y hyperframes@0.8.85`),
-Chromium at `/opt/pw-browsers/chromium`. Compositions live in `compositions/<slug>-hero/`; `gen_media.py` is the pilgrim-kit generator carried
-over as a base — **Sprint 0 for the Visual Studio is to add three inbound compositions**: `photo-hero` (licensed photos + 3–5 caption steps,
-like mountain-kit `peak_hero`), `route-map` (stops by lat/lon, reuse pilgrim `route-map`), `cost-ladder` (what a day costs: car, hotel tiers, meals —
-labels only, US$ only from prices.json). Render with `make_media.sh`, push, `pin_media.py <slug> <sha>` → `media.json`. Always look at the contact sheet first.
+Hero = 16:9 + mobile loops (`hero.mp4`, `hero-m.mp4`, `hero-poster.webp`), ≤2.5 MB / ≤1 MB, built with HyperFrames (`npx -y hyperframes@0.8.85`),
+Chromium at `/opt/pw-browsers/chromium`. Three inbound compositions in `gen_media.py` (Sprint 0 done 16 Oct 2026), all read `src/media/<slug>.json`
+(fields: `src/media/_example-guide.json`): **`photo-hero`** (3–5 Pexels/Unsplash photos from `hf/photos/` + `CREDITS.md`, slow pans, 3–5 CAPITAL caption
+steps ≤18 chars, Suzu wordmark) → `hero*`; **`route-map`** (stops by lat/lon, English labels + day numbers, graticule only — no outline, no borders)
+→ `route.mp4` + poster; **`cost-ladder`** (what's included, in words; "from US$" only from `prices.json`) → `cost.mp4` + poster. Page sections embed
+explainers by name (`"video": "route"` / `"cost"`). Render with `make_media.sh` (always Read the contact sheet first; `CRF_ADD=2 ENCODE_ONLY=1`
+re-encodes an over-budget file without re-rendering), push, `pin_media.py <slug> <sha>` → `media.json`.
 
 ## 4. Publishing (Page Builder) — WordPress via the Royal MCP "Suzu Travels WordPress" connector
 1. `python3 tools/chunks.py <slug>` → `wp_create_page` (title words = slug, **parent 11411**, status publish, content = chunk 0 + marker) → remaining chunks with `wp_replace_in_page` (`expected_count` 1).
