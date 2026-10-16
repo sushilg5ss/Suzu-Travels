@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.76) 56%, rgba(11,31,51,0.9) 100%); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 150px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 200px; color: #fff; font-weight: 800; font-size: 120px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 330px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.prof { position: absolute; left: 0; top: 480px; width: 820px; height: 330px; overflow: visible; }
+      .big { position: absolute; left: 0px; top: 466px; width: 420px; text-align: left; color: #fff; font-weight: 800; font-size: 92px; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 0px; top: 578px; width: 360px; white-space: nowrap; text-align: left; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 30px; }
+      .facts { position: absolute; left: 0; top: 880px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 52px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 860px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">TREK · MANALI → LAHAUL</div>
+          <div class="t1">Hampta Pass</div>
+          <div class="t2">Trek</div>
+          <svg class="prof" viewBox="0 0 820 330">
+            <path d="M 10 300 C 100 292, 140 272, 190 244 S 275 205, 315 190 S 375 162, 392 124 S 418 66, 435 46 C 470 70, 520 130, 600 170 S 720 210, 800 230" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round" />
+            <text x="10" y="340" fill="rgba(255,255,255,0.85)" font-size="26" font-weight="500" font-family="PJS">Kullu side</text>
+            <text x="800" y="275" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="26" font-weight="500" font-family="PJS">Lahaul side</text>
+            <path id="trail" d="M 10 300 C 100 292, 140 272, 190 244 S 275 205, 315 190 S 375 162, 392 124 S 418 66, 435 46" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+            <circle cx="10" cy="300" r="10" fill="#fff" />
+            <circle cx="435" cy="46" r="10" fill="#fff" /><circle cx="800" cy="230" r="10" fill="#fff" />
+            <g id="g-dot"><circle id="dot" cx="10" cy="300" r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" /></g>
+          </svg>
+          <div class="big" id="alt">3,050 m</div>
+          <div class="biglab">top: about 4,270 m</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">~26 km on foot</div>
+            <div class="fact" id="f2">4–5 trek days</div>
+            <div class="fact" id="f3">Open mid-Jun to Sep</div>
+            <div class="fact" id="f4">Green Kullu → bare Lahaul</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      const trail = document.getElementById("trail");
+      const dot = document.getElementById("dot");
+      const alt = document.getElementById("alt");
+      const L = trail.getTotalLength();
+      trail.style.strokeDasharray = L + " " + L;
+      const st = { p: 0 };
+      function place() {
+        const d = L * st.p;
+        trail.style.strokeDashoffset = (L - d).toFixed(2);
+        const pt = trail.getPointAtLength(Math.max(0.01, d));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+        const a = Math.round((3050 + 1220 * st.p) / 10) * 10;
+        alt.textContent = (st.p >= 0.999 ? "~" : "") + a.toLocaleString("en-US") + " m";
+      }
+      tl.to(st, { p: 1, duration: 8.4, ease: "sine.inOut", onUpdate: place }, 0.6);
+      tl.to(["#trail", "#g-dot", "#alt"], { opacity: 0, duration: 0.4 }, 10.2);
+      tl.to(st, { p: 0, duration: 0.05, onUpdate: place }, 10.7);
+      tl.to(["#trail", "#g-dot", "#alt"], { opacity: 1, duration: 0.6 }, 11.2);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
