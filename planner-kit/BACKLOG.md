@@ -1,7 +1,7 @@
 # Trip Planner backlog (top = next). Tick with `done YYYY-MM-DD` + one LOG line.
 
 ## Phase 0 — deploy pending
-000. [ ] **Deploy homepage release** `homepage/releases/2026-10-16/` (hero motion pause; only if live homepage is still 63c1b336, else re-apply).
+000. [x] done 2026-10-16 18:40 (live acb9460c, includes engine sync 2026-10-16b) **Deploy homepage release** `homepage/releases/2026-10-16/` (hero motion pause).
 00. [x] done 2026-10-16 18:05 (live dfbcaaa77cf38e3b + roads-geo 0eabc86d) **Deploy v0.5** (supersedes v0.4; TWO files: index.html + roads-geo.json) (rate audit; release in Project `claude/trip-planner/releases/2026-10-16/`) — Chrome tools absent on 16 Oct run.
 0. [x] done 2026-10-16 (live = 4c765ffa, uploaded during the 16 Oct ops sweep / by Sushil) **Deploy v0.3** (dist 4c765ffa28e2b0a9, release in Project `claude/trip-planner/releases/2026-10-15/`) — Chrome tools were absent on 15 Oct 11:53 run. Rebuild from branch if newer.
 
@@ -14,7 +14,7 @@
 
 ## Phase 2 — homepage booking engine (LIVE 15 Oct 2026) — now: improve it
 - [ ] Measure homepage Lighthouse mobile/desktop after the swap (before: mobile 84 / desktop 90) and fix any regression (LCP image size, CLS of the card).
-- [ ] Card UX: recent searches chip, auto-suggest by season, 'Plan with Suzu assistant' link, Hindi labels.
+- [~] 2026-10-16: data synced to v0.5 + dropdown overlap fixed (`homepage/sync_engine.py` — re-run after every places/templates change). Open: recent searches chip, auto-suggest by season, 'Plan with Suzu assistant' link, Hindi labels.
 - [x] done 2026-10-16 (v0.5: iOS in embed opens ?pdf=1#t=… in a new tab; verify on a real iPhone after deploy) iOS Safari PDF inside the overlay iframe.
 6. [x] done 2026-10-15 (live 065caa4b, see LOG) Build `#tp-engine` hero (MakeMyTrip-style search card: Holiday planner · Yatra & Mata darshan · Cabs · Hotels) for the static homepage, deep-linking to `/plan-your-trip/#t=…`. Rules in `agents/developer.md` §Homepage. Ship only after /plan-your-trip/ has been live and green for 2 runs.
 7. [~] 2026-10-15: light photo crossfade shipped instead of video (Sushil: no video in hero). Optional later: a tiny CSS/SVG motion layer only if Lighthouse stays green. Lightweight HyperFrames loop (≤ 1.5 MB phone / 2.5 MB desktop, poster first) as the engine's background — snow, roads, temples — instead of the 11-scene film; or a pure CSS/SVG animated mountain scene if speed suffers.

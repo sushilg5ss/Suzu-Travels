@@ -22,6 +22,9 @@ Read `planner-kit/README.md` fully first (spec, pricing engine, business rules),
 6. **Record**: LOG line (what, why, SHA, test result), tick BACKLOG, commit + push (`git pull --rebase` first; branch `planner` only; never force-push).
 7. **Report** (below).
 
+## Homepage engine data sync
+Whenever `data/places.py` or `data/templates.json` changes, the homepage card must be re-synced: fetch the LIVE homepage bytes, `python3 homepage/sync_engine.py live.html out.html`, `python3 homepage/parity.py live.html out.html` (PARITY PASS), `node tools/test_home.js`, then deploy with the homepage protocol below (backup `index-nz-previous.html`).
+
 ## Deploy (Hostinger File Browser API through Sushil's Chrome)
 - Load the Claude-in-Chrome tools with ToolSearch in ONE call (tabs_context_mcp, tabs_create_mcp, navigate, javascript_tool, find, file_upload, tabs_close_mcp). If absent or Chrome does not answer: save the release as Project doc `claude/trip-planner/releases/YYYY-MM-DD/` (index.html + DEPLOY.md) and, if device tools exist, to `C:\Users\Sushil\OneDrive\Desktop\Claude-Work\Suzu-Travels\Trip-Planner\releases\YYYY-MM-DD\`; report "Needs Sushil: Chrome closed, release ready". Never retry in a loop.
 - Open `https://hpanel.hostinger.com/websites/suzutravels.com/files/file-manager`, click "Access files of suzutravels.com" → File Browser at `srv1000-files.hstgr.io/<id>/`. In that tab use `javascript_tool`; header `X-Auth: localStorage.getItem('jwt')`.

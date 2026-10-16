@@ -25,7 +25,7 @@ SLIDES = [  # [desktop, phone, caption, template id]
     [U + '2026/04/gangotri-temple-1024x683.webp', U + '2026/04/gangotri-temple-768x512.webp', 'Gangotri Dham, Char Dham', 'char-dham'],
     [U + '2026/10/kanchenjunga-sunrise-sikkim-1536x1024.webp', U + '2026/10/kanchenjunga-sunrise-sikkim-768x512.webp', 'Himalayan sunrise', 'nau-devi'],
 ]
-FROM = [p['id'] for p in PLACES if p['kind'] == 'hub'] + ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu']
+FROM = [p['id'] for p in PLACES if p['kind'] == 'hub'] + ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu', 'agra', 'udaipur', 'jodhpur', 'nainital']
 DATA = {
     't': [[t['id'], t['name'], t['cat'], sum(s[1] for s in t['stops']) + 1, t['start']] for t in TPL],
     'p': [[p['id'], p['name'], p['hi'], p['kind'], p['region']] for p in PLACES],
