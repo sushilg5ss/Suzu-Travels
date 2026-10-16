@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Suzu Cab Kit — single source of truth for fleet, fares, places and page content.
 Edit fares here (FLEET rates / ROUTE factors) and rebuild; every page and the on-page calculator update together.
-Fare rule (Sushil approved research-based fares, 30 Sep 2026):
+Fare rule (Sushil approved research-based fares, 30 Sep 2026; one-way rates and minimums raised to the premium-operator level on 17 Oct 2026 at Sushil's direction):
   one-way  = max(min_fare, dist_km * ow_rate * route_factor) rounded up to the next ...99
   round trip / multi-day = max(2*dist, 250*days) * hire_rate + driver allowance per night
 Fares are indicative starting prices (off-season). Tolls, parking and state entry tax/permits are extra at actuals.
@@ -29,34 +29,34 @@ VTYPES = [("hatchback", "Hatchback"), ("sedan", "Sedan"), ("muv", "MUV / 6–7 s
 # quote=True vehicles have no per-km rate on the site (price varies too much) — they appear in the fleet gallery with "Get quote" only.
 FLEET = [
     dict(id="hatch", name="Hatchback", model="Swift / Celerio / WagonR class", type="hatchback", seats=4, bags="2 small bags", fuel="Petrol / CNG",
-         ow=12, hire=11, min=1999, night=400, best="Couples & short transfers", page=None,
+         ow=13, hire=11, min=2199, night=400, best="Couples & short transfers", page=None,
          photo_alt="Maruti Suzuki Celerio hatchback, the class of car used for Suzu hatchback cabs"),
     dict(id="sedan", name="Sedan", model="Dzire / Etios / Aura", type="sedan", seats=4, bags="3 bags", fuel="Petrol / CNG",
-         ow=14, hire=12, min=2299, night=400, best="Couples & small families, highway runs", page=None,
+         ow=15, hire=12, min=2499, night=400, best="Couples & small families, highway runs", page=None,
          photo_alt="Maruti Suzuki Dzire sedan taxi, 4 seats with boot space for 3 bags"),
     dict(id="ertiga", name="Maruti Ertiga", model="6-seater MUV", type="muv", seats=6, bags="3 bags + carrier", fuel="Petrol / CNG",
-         ow=17, hire=14, min=2999, night=400, best="Families of 5–6 on a budget", page=None,
+         ow=19, hire=14, min=3299, night=400, best="Families of 5–6 on a budget", page=None,
          photo_alt="Maruti Suzuki Ertiga 6-seater MUV used for family cab trips"),
     dict(id="carens", name="Kia Carens", model="6-seater premium MPV", type="muv", seats=6, bags="4 bags", fuel="Diesel / Petrol",
-         ow=19, hire=16, min=3499, night=400, best="Families who want extra comfort", page=None,
+         ow=22, hire=16, min=3799, night=400, best="Families who want extra comfort", page=None,
          photo_alt="Kia Carens 6-seater MPV with captain seats"),
     dict(id="crysta", name="Toyota Innova Crysta", model="6+1 / 7-seater SUV", type="muv", seats=7, bags="5 bags", fuel="Diesel",
-         ow=24, hire=19, min=3999, night=400, best="Hill circuits, senior citizens, groups of 6–7", page="innova-crysta-on-rent",
+         ow=26, hire=19, min=4499, night=400, best="Hill circuits, senior citizens, groups of 6–7", page="innova-crysta-on-rent",
          photo_alt="Toyota Innova Crysta, the most booked 7-seater for Himachal hill roads"),
     dict(id="hycross", name="Toyota Innova Hycross", model="7-seater premium MPV", type="muv", seats=7, bags="5 bags", fuel="Petrol hybrid",
-         ow=28, hire=22, min=4499, night=400, best="Premium family trips, quieter and roomier than the Crysta", page=None,
+         ow=30, hire=22, min=4999, night=400, best="Premium family trips, quieter and roomier than the Crysta", page=None,
          photo_alt="Toyota Innova Hycross premium 7-seater MPV"),
     dict(id="fortuner", name="Toyota Fortuner", model="7-seater premium SUV", type="suv", seats=6, bags="4 bags", fuel="Diesel",
-         ow=40, hire=32, min=6999, night=500, best="VIP transfers, weddings, Leh & Spiti roads", page=None,
+         ow=42, hire=32, min=7499, night=500, best="VIP transfers, weddings, Leh & Spiti roads", page=None,
          photo_alt="Toyota Fortuner premium SUV for VIP transfers and high-altitude roads"),
     dict(id="tempo", name="Tempo Traveller", model="Force Traveller 12–14 seater", type="tempo", seats=12, bags="10 bags", fuel="Diesel",
-         ow=32, hire=26, min=6999, night=500, best="Groups, pilgrimages, office trips", page="tempo-traveller-hire-delhi",
+         ow=36, hire=26, min=7499, night=500, best="Groups, pilgrimages, office trips", page="tempo-traveller-hire-delhi",
          photo_alt="Force Traveller 12-seater Tempo Traveller for group trips"),
     dict(id="tempo17", name="Tempo Traveller 17-seater", model="Force Traveller 17 seater", type="tempo", seats=17, bags="14 bags", fuel="Diesel",
-         ow=36, hire=30, min=7999, night=500, best="Bigger groups, Char Dham, school & office tours", page="tempo-traveller-hire-delhi",
+         ow=40, hire=30, min=8499, night=500, best="Bigger groups, Char Dham, school & office tours", page="tempo-traveller-hire-delhi",
          photo_alt="17-seater Force Traveller Tempo Traveller for large groups"),
     dict(id="urbania", name="Force Urbania", model="Luxury van, up to 17 seats", type="van", seats=17, bags="12+ bags", fuel="Diesel",
-         ow=42, hire=36, min=9999, night=500, best="Premium group transfers & weddings", page=None,
+         ow=46, hire=36, min=10999, night=500, best="Premium group transfers & weddings", page=None,
          photo_alt="Force Urbania luxury van, up to 17 reclining seats"),
     dict(id="minibus", name="Mini coach 26-seater", model="AC mini bus, 2+2 seats", type="bus", seats=26, bags="Luggage hold", fuel="Diesel",
          ow=None, hire=None, min=None, night=600, best="Wedding parties, corporate outings, school trips", page=None, quote=True,
@@ -144,8 +144,8 @@ PLACES = {
 ROUTES = [
     # slug, from, to, km, time, factor
     dict(slug="delhi-to-shimla-taxi", a="Delhi", b="Shimla", km=345, t="7–8 hrs", f=1.0),
-    dict(slug="delhi-to-manali-taxi", a="Delhi", b="Manali", km=540, t="11–13 hrs", f=0.78),
-    dict(slug="chandigarh-to-manali-taxi", a="Chandigarh", b="Manali", km=290, t="7–8 hrs", f=0.9),
+    dict(slug="delhi-to-manali-taxi", a="Delhi", b="Manali", km=540, t="11–13 hrs", f=0.85),
+    dict(slug="chandigarh-to-manali-taxi", a="Chandigarh", b="Manali", km=290, t="7–8 hrs", f=0.95),
     dict(slug="chandigarh-to-shimla-taxi", a="Chandigarh", b="Shimla", km=115, t="3–3.5 hrs", f=1.1),
     dict(slug="delhi-to-chandigarh-taxi", a="Delhi", b="Chandigarh", km=250, t="4–5 hrs", f=0.85),
     dict(slug="delhi-to-dehradun-taxi", a="Delhi", b="Dehradun", km=240, t="4–5 hrs", f=0.85),
@@ -164,7 +164,7 @@ ROUTES = [
     dict(slug="dehradun-to-mussoorie-taxi", a="Dehradun", b="Mussoorie", km=35, t="1–1.5 hrs", f=1.1),
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
-    dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.8),
+    dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
 

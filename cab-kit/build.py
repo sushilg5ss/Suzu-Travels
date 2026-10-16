@@ -225,7 +225,7 @@ def route_card(r, page_slug):
            f'<a class="szc-btn sm wa" href="{q}" target="_blank" rel="noopener">WhatsApp quote</a>'
     rid = ' id="rt-' + (r["a"].lower() + "-" + r["b"].lower()).replace(" ", "-") + '"'
     if page_slug == "cabs":
-        acts += f'<a class="szc-btn sm line" href="#planner" data-plan-route="{esc(r["a"])}>{esc(r["b"])}">Map</a>'
+        acts += f'<a class="szc-btn sm line" href="#planner" data-plan-route="{esc(r["a"] + ">" + r["b"])}">Map</a>'
     return (f'<article class="szc-card szc-route-card"{rid}><div class="rc-top"><div class="from">{r["a"]}</div><div class="to">→ {r["b"]}</div>'
             f'<div class="line"><span>{r["km"]} km</span><i></i><span>{r["t"]}</span></div></div>'
             f'<div class="szc-card-b"><div class="price">Sedan from <b>{pinr(sedan)}</b> · Innova Crysta from {pinr(crysta)}</div><div class="acts">{acts}</div></div></article>')
@@ -351,6 +351,8 @@ def finish(slug, h):
     m = f"<style>{min_css(KIT_CSS)}</style>" + min_html(h)
     if "&&" in m.split("<script>", 1)[-1]:
         sys.exit(f"BUILD REFUSED {slug}: '&&' in script would be mangled by WordPress convert_chars")
+    if re.search(r'="[^"<]*>[^"<]*"', m.split("<script>", 1)[0]):
+        sys.exit(f"BUILD REFUSED {slug}: literal '>' inside an attribute value (wptexturize breaks the closing quote) — use &gt;")
     kitjs = m.rsplit("<script>", 1)[-1].split("</script>")[0]
     if re.search(r"<(/|p\b|div\b|table\b|img\b|ul\b|ol\b|li\b|span\b|br\b|svg\b|button\b|details\b|summary\b|small\b|b\b|a\b|h[1-6]\b|t[rdh]\b|thead\b|tbody\b|circle\b|path\b)", kitjs):
         sys.exit(f"BUILD REFUSED {slug}: HTML tag inside kit script (wpautop would inject <p>) — use \\x3c")

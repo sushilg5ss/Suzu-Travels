@@ -15,7 +15,7 @@ HUB = dict(slug="cabs", title="Cab & Taxi Booking — Delhi, Chandigarh & Himach
 
 FAQS = [
  ("How do I book a cab with Suzu Travels?", "Send the pickup, drop, date and number of people on WhatsApp (+91 70874 88961) or use the form on this page. You get one clear quote with the car and total fare, confirm with a small advance on our payment page, and receive the driver's details the day before."),
- ("Do you offer one-way taxis to Shimla and Manali?", "Yes. One-way drops are our most booked service — for example Delhi to Shimla from about ₹4,899 and Chandigarh to Manali from about ₹3,699 in a sedan. The fare already covers the car's empty return."),
+ ("Do you offer one-way taxis to Shimla and Manali?", "Yes. One-way drops are our most booked service — for example Delhi to Shimla from about ₹5,199 and Chandigarh to Manali from about ₹4,199 in a sedan. The fare already covers the car's empty return."),
  ("What is included in your cab fare?", "One-way fares include the AC car, fuel, driver and driver allowance. Tolls, parking and state entry tax or permits are extra at actuals and are shown in your quote before you pay."),
  ("What are your per-km rates for round trips?", "Round trips and tours are billed per kilometre with a 250 km daily minimum: about ₹11/km hatchback, ₹12 sedan, ₹14 Ertiga, ₹16 Kia Carens, ₹19 Innova Crysta, ₹26 Tempo Traveller and ₹36 Force Urbania, plus driver allowance per night."),
  ("Can your cab do sightseeing in Manali, Solang and Rohtang?", "Sightseeing around Manali (Solang, Atal Tunnel, Rohtang) is done in Manali-registered local taxis as per union practice. We book the local taxi for you at union rates on the same chat."),
