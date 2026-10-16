@@ -28,9 +28,9 @@ VTYPES = [("hatchback", "Hatchback"), ("sedan", "Sedan"), ("muv", "MUV / 6–7 s
 
 # quote=True vehicles have no per-km rate on the site (price varies too much) — they appear in the fleet gallery with "Get quote" only.
 FLEET = [
-    dict(id="hatch", name="Hatchback", model="Swift / WagonR class", type="hatchback", seats=4, bags="2 small bags", fuel="Petrol / CNG",
+    dict(id="hatch", name="Hatchback", model="Swift / Celerio / WagonR class", type="hatchback", seats=4, bags="2 small bags", fuel="Petrol / CNG",
          ow=12, hire=11, min=1999, night=400, best="Couples & short transfers", page=None,
-         photo_alt="White Maruti Suzuki Swift hatchback, the kind of car used for Suzu's hatchback cabs"),
+         photo_alt="Maruti Suzuki Celerio hatchback, the class of car used for Suzu hatchback cabs"),
     dict(id="sedan", name="Sedan", model="Dzire / Etios / Aura", type="sedan", seats=4, bags="3 bags", fuel="Petrol / CNG",
          ow=14, hire=12, min=2299, night=400, best="Couples & small families, highway runs", page=None,
          photo_alt="Maruti Suzuki Dzire sedan taxi, 4 seats with boot space for 3 bags"),

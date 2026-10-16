@@ -479,5 +479,127 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "photos": {
+  "hatch": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/hatch.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Exhibit Magazine",
+   "lic": "CC BY 3.0",
+   "lic_url": "https://creativecommons.org/licenses/by/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:2021_Maruti_Suzuki_Celerio_ZXi_(India)_front_view_01.png",
+   "cropped": true
+  },
+  "sedan": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/sedan.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Sant1207ug",
+   "lic": "CC BY-SA 4.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Suzuki_Dzire_2024_ZXI%2B.jpg",
+   "cropped": true
+  },
+  "ertiga": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/ertiga.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Ramakrishna Mission Vidyapith",
+   "lic": "Public domain",
+   "lic_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+   "page": "https://commons.wikimedia.org/wiki/File:2022_Maruti_Suzuki_Ertiga_LXi.jpg",
+   "cropped": true
+  },
+  "carens": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/carens.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "DriveSpark",
+   "lic": "CC BY 3.0",
+   "lic_url": "https://creativecommons.org/licenses/by/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:2022_Kia_Carens_1.4_(India)_front_view_02.jpg",
+   "cropped": true
+  },
+  "crysta": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/crysta.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Premnath Kudva",
+   "lic": "CC BY-SA 4.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Innova_Crysta_2.4_Z_front_right.jpg",
+   "cropped": true
+  },
+  "hycross": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/hycross.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Ethan Llamas",
+   "lic": "CC BY-SA 4.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:2024_Toyota_Zenix_2.0_Q_HEV_in_Dark_Steel_Mica,_front_right.jpg",
+   "cropped": true
+  },
+  "fortuner": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/fortuner.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Saiphani02",
+   "lic": "CC BY-SA 4.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Fortuner_India.jpg",
+   "cropped": true
+  },
+  "tempo": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/tempo.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "वंपायर",
+   "lic": "CC BY-SA 2.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Force_Traveller_Luxury.jpg",
+   "cropped": true
+  },
+  "tempo17": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/tempo17.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Yann Forget",
+   "lic": "CC BY-SA 3.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Force_Traveller,_Leh-Manali_Highway.jpg",
+   "cropped": true
+  },
+  "minibus": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/minibus.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Biswarup Ganguly",
+   "lic": "CC BY 3.0",
+   "lic_url": "https://creativecommons.org/licenses/by/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Force_Motors_-_Traveller_26_-_Agra_2014-05-14_4222.JPG",
+   "cropped": true
+  },
+  "bus35": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/bus35.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "LoveofZ",
+   "lic": "CC BY-SA 3.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:APSRTC_Saptagiri_Deluxe_Bus.jpg",
+   "cropped": true
+  },
+  "bus45": {
+   "src": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c0a51bbd34f60b6f0057b002a7527c003a798607/cab-kit/media/fleet-photos/bus45.webp",
+   "w": 1200,
+   "h": 800,
+   "credit": "Karthik Nadar",
+   "lic": "CC BY-SA 4.0",
+   "lic_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Scania_Metrolink_HD_14.5_M_Ashwamedh.jpg",
+   "cropped": true
+  }
  }
 }
