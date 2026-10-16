@@ -121,5 +121,31 @@
    "https://himalayan-database.climbing-history.org/expedition/KANG77101/1977",
    "https://english.nepalnews.com/s/explainers/explained-why-a-kanchenjunga-expedition-sparked-outrage-in-indias-sikkim/"
   ]
+ },
+ "Kanamo": {
+  "height_alternates_m": [
+   5974,
+   5970
+  ],
+  "base": "Kibber (about 4,270 m), Spiti",
+  "status_note": "Access status unclear (as of Oct 2026): on 20 Jul 2019 the village leaders above Kibber barred all trekking groups after trekkers contaminated a water source; no official lifting order has been found. A local Spiti climber reached the summit in 2026 (Tribune, 4 Jul 2026) and operators advertise 2026 departures, but no district or state order confirming open access was found — check with the Kibber panchayat / Kaza administration before booking.",
+  "notable": "Non-technical walk-up above Kibber in the Kibber Wildlife Sanctuary area; heights quoted 5,964–5,974 m. In 2026 Tenzin Norden became the first woman from Spiti to summit it (Tribune, 4 Jul 2026).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh",
+   "https://en.wikipedia.org/wiki/Kibber",
+   "https://www.tribuneindia.com/news/himachal/spiti-teen-tenzin-norden-scripts-history-becomes-1st-woman-from-valley-to-scale-kanamo-peak/"
+  ]
+ },
+ "Chau Chau Kang Nilda": {
+  "first_ascent_by": "J.O.M. Roberts (1939, while crossing Spiti from Kullu)",
+  "base": "Kaza → Langza (about 4,420 m); base camp above Langza",
+  "difficulty_note": "Glaciated dome NE of Kaza; normal route by the south-west ridge / scree slopes with two high camps",
+  "notable": "'Blue moon in the sky'; also called Guan Nelda. Second ascent 1955 (Trevor Braham and Peter Holmes); Indian ascents 1966 and 1981; a Calcutta team made the first ascent of the south-east ridge on 15 September (AAJ 1991).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chau_Chau_Kang_Nilda",
+   "https://publications.americanalpineclub.org/articles/12198923303/Asia-IndiaHimachal-Pradesh-Chau-Chau-Kang-Nilda",
+   "https://publications.americanalpineclub.org/articles/12199125801/Asia-IndiaHimachal-Pradesh-Chau-Chau-Kang-Nilda-Southeast-Ridge",
+   "https://en.wikipedia.org/wiki/Langza"
+  ]
  }
 }
