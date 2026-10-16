@@ -1,0 +1,106 @@
+{
+ "hero": {
+  "kicker": "KANAMO · SPITI",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   },
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 420
+    },
+    "to": {
+     "y": 1050
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": 30
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    4270,
+    "KIBBER"
+   ],
+   [
+    4800,
+    "BASE CAMP"
+   ],
+   [
+    5964,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Kanamo route from Kibber",
+  "sub": "Kibber to the 5,964 m summit · base camp height is approximate",
+  "camps": [
+   {
+    "name": "Kibber",
+    "m": 4270,
+    "day": "Day 2"
+   },
+   {
+    "name": "Base camp",
+    "m": 4800,
+    "day": "Day 4"
+   },
+   {
+    "name": "Summit",
+    "m": 5964,
+    "day": "Day 5"
+   }
+  ]
+ }
+}
