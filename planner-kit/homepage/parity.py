@@ -37,7 +37,7 @@ def legacy_blocks(s, tag):
     """script/style blocks NOT owned by the nature layer (ids starting nz / suzu-nature)."""
     out = []
     for attrs, body in re.findall(r'<%s\b([^>]*)>(.*?)</%s>' % (tag, tag), s, re.S | re.I):
-        if re.search(r'id="(nz|suzu-nature)', attrs) or 'ld+json' in attrs:
+        if re.search(r'id="(nz|suzu-nature|tp-engine|tpe-)', attrs) or 'ld+json' in attrs:
             continue
         out.append(hashlib.md5((attrs + body).encode()).hexdigest())
     return out

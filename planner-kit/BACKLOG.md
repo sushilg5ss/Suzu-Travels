@@ -1,6 +1,7 @@
 # Trip Planner backlog (top = next). Tick with `done YYYY-MM-DD` + one LOG line.
 
 ## Phase 0 — deploy pending
+000. [ ] **Deploy homepage release** `homepage/releases/2026-10-16/` (hero motion pause; only if live homepage is still 63c1b336, else re-apply).
 00. [ ] **Deploy v0.4** (rate audit; release in Project `claude/trip-planner/releases/2026-10-16/`) — Chrome tools absent on 16 Oct run.
 0. [x] done 2026-10-16 (live = 4c765ffa, uploaded during the 16 Oct ops sweep / by Sushil) **Deploy v0.3** (dist 4c765ffa28e2b0a9, release in Project `claude/trip-planner/releases/2026-10-15/`) — Chrome tools were absent on 15 Oct 11:53 run. Rebuild from branch if newer.
 
