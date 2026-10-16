@@ -8,5 +8,6 @@
  "jwala-ji": {"id": 12935, "path": "/pilgrimage-tours/jwala-ji/", "kind": "temple", "label": "Jwala Ji, Kangra", "blurb": "The Devi as living flame, with no idol", "added": "2026-10-12", "shrine": "jwalamukhi-jwala-ji-kangra"},
  "somnath": {"id": 13207, "path": "/pilgrimage-tours/12-jyotirlinga/somnath/", "kind": "temple", "label": "Somnath, Gujarat", "blurb": "The first Jyotirlinga, on the Arabian Sea", "added": "2026-10-13", "shrine": "somnath-jyotirlinga"},
  "kashi-vishwanath": {"id": 13352, "path": "/pilgrimage-tours/12-jyotirlinga/kashi-vishwanath/", "kind": "temple", "label": "Kashi Vishwanath, Varanasi", "blurb": "The Lord of the Universe, on the Ganga", "added": "2026-10-14", "shrine": "kashi-vishwanath-jyotirlinga"},
- "mahakaleshwar": {"id": 13457, "path": "/pilgrimage-tours/12-jyotirlinga/mahakaleshwar/", "kind": "temple", "label": "Mahakaleshwar, Ujjain", "blurb": "The south-facing Lord of Time, by the Shipra", "added": "2026-10-15", "shrine": "mahakaleshwar-jyotirlinga"}
+ "mahakaleshwar": {"id": 13457, "path": "/pilgrimage-tours/12-jyotirlinga/mahakaleshwar/", "kind": "temple", "label": "Mahakaleshwar, Ujjain", "blurb": "The south-facing Lord of Time, by the Shipra", "added": "2026-10-15", "shrine": "mahakaleshwar-jyotirlinga"},
+ "omkareshwar": {"id": 13587, "path": "/pilgrimage-tours/12-jyotirlinga/omkareshwar/", "kind": "temple", "label": "Omkareshwar, Narmada", "blurb": "Lord of Om, on a Narmada island", "added": "2026-10-16", "shrine": "omkareshwar-jyotirlinga"}
 }
