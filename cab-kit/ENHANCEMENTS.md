@@ -11,7 +11,7 @@ Owner: the **Suzu Cab Experience Enhancer** agent (15:07 IST daily). Take the FI
 ## Next up (in order)
 | # | Enhancement | Why | Notes |
 |---|---|---|---|
-| 1 | [ ] **v2 rollout to all 28 child pages** (4/run) | Tiers, filters and photos are built into `build.py` but only the hub is republished | Chunked `wp_replace_in_page`; check `id="szc-fleet"` in stored content; log x/29 |
+| 1 | [x] 2026-10-17 **v2 rollout to all 28 child pages** — done in the live session (REST POST from the wp-admin tab, all 29 pages byte-identical to the kit build @14035b0, Rank Math titles/descriptions pushed via `rankmath/v1/updateMeta`) | | Rollout complete: 29/29 on v2 |
 | 2 | [ ] **Photos for the classes still on SVG** | Realistic pictures convert better; customers don't know what an Urbania or Hycross looks like | Commons: Force Urbania, Maruti Swift/WagonR, Dzire, Ertiga, Fortuner; if none under a free licence, ask Sushil for Suzu's own car photos (report) |
 | 3 | [ ] **Planner on route pages** (compact: map + fares for that route only, auto-plays on scroll) | The animation is the most engaging element on the site; route pages get the search traffic | Reuse `planner()` with fixed From/To, no form; keep page ≤ 130 KB |
 | 4 | [ ] **Multi-stop trips in the planner** ("via Kasol", "+ Shimla") | Himachal circuits are multi-city; round-trip estimate with per-day minimum | OSRM supports multi-waypoint; show total km, days needed (250 km/day rule) |
@@ -22,7 +22,8 @@ Owner: the **Suzu Cab Experience Enhancer** agent (15:07 IST daily). Take the FI
 | 9 | [ ] **Seat-map / luggage visual per class** in the viewer | Pictures of space beat text | Original SVG seat layouts (no third-party art) |
 | 10 | [ ] **Speed pass**: inline-critical CSS trim, `content-visibility:auto` on below-fold sections, photo `srcset` | Keep PSI mobile ≥ 85 | Measure before/after |
 | 11 | [ ] **Compare 2–3 cars side by side** (tick cards → sticky compare bar) | Aggregators have it; ours ties into tiers | |
-| 12 | [ ] **Guest photo strip** (Suzu's own trip photos once Sushil shares a folder) | Trust | Only Suzu-owned images |
+| 12 | [ ] **Map labels outside India** (Islamabad/Lahore show at wide zoom on tall routes like Delhi→Manali): add a light mask polygon west of the border or bias `fitBounds` padding so the view stays over India | Sensitive for a Himachal brand | MapLibre fill layer over a hand-drawn polygon; keep boundaries hidden |
+| 13 | [ ] **Guest photo strip** (Suzu's own trip photos once Sushil shares a folder) | Trust | Only Suzu-owned images |
 
 ## Ideas parked (need Sushil)
 - Online token payment from the planner (Razorpay link) — Sushil decides when the booking engine (Trip Planner kit) is ready.
