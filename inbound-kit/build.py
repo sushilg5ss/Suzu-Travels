@@ -29,7 +29,17 @@ FACT_TRAPS = [
     (r"Stok Kangri[^.<]{0,60}(?:open|climb|book)", "Stok Kangri is closed since 2020"),
     (r"Rohtang (?:Pass )?(?:is )?open[^.<]{0,30}(?:December|January|February|March|year[- ]round)", "Rohtang Pass is closed roughly Nov/Dec–Apr/May; the Atal Tunnel stays open"),
     (r"(?:cheapest|lowest price|best price) (?:guarantee|in India)", "no price-superlative claims (Consumer Protection Act / ASCI)"),
+    # Reviewer additions, 16 Oct 2026 (README §1.5)
+    (r"government[- ](?:approved|recogni[sz]ed|certified)", "never 'government approved/recognised': the exact line is 'HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022'"),
+    (r"(?:licen[sc]ed|approved|recogni[sz]ed) by (?:the )?Ministry of Tourism", "Suzu is not MoT-approved — only the HP Tourism registration line"),
+    (r"\b(?:100%|completely|totally|absolutely) safe\b|\bsafest\b", "safety pages: balanced, sourced, no absolutes"),
+    (r"guaranteed? (?:visa|approval)|visa (?:approval )?guaranteed?", "never promise visa approval — we are not a visa agency"),
+    (r"(?<!not a )(?<!not an )\bvisa agency\b", "we are not a visa agency — the only allowed mention is 'we are not a visa agency'"),
 ]
+PHONE_OK = "7087488961"  # the ONLY Suzu number (all older numbers are dead)
+VISA_WORDS = r"\be-?visa\b|\bvisa\b"
+VISA_OFFICIAL = "indianvisaonline.gov.in"
+VISA_WARN = r"look[- ]alike|unofficial (?:site|website)s?|copycat"
 
 
 def min_css(css):
@@ -89,6 +99,18 @@ def check(slug, body, allowed=None):
     for m in re.finditer(r'href="(/india-tours/[^"#?]*)', body):
         if m.group(1) not in allowed:
             problems.append(f"link to a page that is not live: {m.group(1)}")
+    # only Suzu's current number may appear (any Indian mobile written as +91 / 91 / 0 + 10 digits)
+    for m in re.finditer(r"(?:\+?91[-\s]?|\b0)?([6-9]\d{4})[-\s]?(\d{5})\b", visible):
+        num = m.group(1) + m.group(2)
+        if num != PHONE_OK and re.search(r"\+?91|\bcall\b|\bphone\b|\bWhatsApp\b", visible[max(0, m.start() - 40):m.start()], re.I):
+            problems.append(f"phone number {m.group(0).strip()} is not Suzu's current number (+91 70874 88961 only)")
+    # visa content: official site named + look-alike warning (README §1.5)
+    text = re.sub(r"<[^>]+>", " ", visible)
+    if len(re.findall(VISA_WORDS, text, flags=re.I)) >= 4:
+        if VISA_OFFICIAL not in body:
+            problems.append(f"visa content without the official site {VISA_OFFICIAL} — name it as the only place to apply")
+        if not re.search(VISA_WARN, text, flags=re.I):
+            problems.append("visa content without a look-alike-site warning ('beware look-alike sites that charge extra')")
     if "file://" in body:
         problems.append("local media URLs (file://) — this build was made with PK_LOCAL_MEDIA=1 for preview; rebuild without it")
     if "<video" not in body:

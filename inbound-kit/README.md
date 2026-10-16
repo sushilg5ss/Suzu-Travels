@@ -1,4 +1,4 @@
-# Suzu Inbound Kit v0.1 — "India for international travellers" (16 Oct 2026)
+# Suzu Inbound Kit v0.2 — "India for international travellers" (16 Oct 2026)
 
 **Goal (Sushil Kumar, 16 Oct 2026):** make suzutravels.com rank for what foreign visitors to India actually search, give them
 honest, complete answers, and turn that trust into enquiries (WhatsApp / email / 20% deposit). Foreign guests book 10–14 day

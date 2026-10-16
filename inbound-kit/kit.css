@@ -1,4 +1,4 @@
-/* Suzu Inbound Kit v0.1 (16 Oct 2026) — scoped to .szi. Inlined (minified) at the top of every /india-tours/ page.
+/* Suzu Inbound Kit v0.2 (16 Oct 2026, Reviewer: focus rings, 44 px nav tap targets) — scoped to .szi. Inlined (minified) at the top of every /india-tours/ page.
    Palette "Himalaya sky": deep navy + glacier teal + saffron + gold on snow white (Suzu brand navy/gold). Never edit per page. */
 .page-content:has(.szi){padding-top:20px!important}
 .page-content:has(.szi) .page-header{margin-bottom:14px!important}
@@ -49,7 +49,7 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szi-nav{position:sticky;top:70px;z-index:50;width:100vw;margin-left:calc(50% - 50vw);background:rgba(255,250,240,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 6px 18px rgba(90,15,30,.07)}
 .szi-nav-in{max-width:1232px;margin:0 auto;padding:8px 16px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;align-items:center}
 .szi-nav-in::-webkit-scrollbar{display:none}
-.szi-nav a{flex:0 0 auto;padding:8px 14px;font-size:14px;font-weight:700;color:var(--maroon)!important;text-decoration:none!important;border:1.5px solid var(--line);border-radius:999px;background:#fff;white-space:nowrap;transition:background .15s,border-color .15s}
+.szi-nav a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;font-size:14px;font-weight:700;color:var(--maroon)!important;text-decoration:none!important;border:1.5px solid var(--line);border-radius:999px;background:#fff;white-space:nowrap;transition:background .15s,border-color .15s}
 .szi-nav a:hover,.szi-nav a.on{border-color:var(--saff);background:#fff4e2}
 .szi-nav a .dv{color:var(--saff);margin-right:5px}
 .szi-nav a.cta{margin-left:auto;background:linear-gradient(135deg,var(--gold2),var(--saff2));color:#0b1f3a!important;border:0}
@@ -182,3 +182,5 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szi-gh{margin-top:26px}
 .szi-src{font-size:14px;color:var(--mid);padding-left:20px}
 .szi-src li{margin:4px 0}
+/* accessibility: visible keyboard focus on every interactive element (WCAG 2.4.7) */
+.szi a:focus-visible,.szi button:focus-visible,.szi summary:focus-visible,.szi [tabindex]:focus-visible{outline:3px solid var(--saff);outline-offset:2px;border-radius:6px}

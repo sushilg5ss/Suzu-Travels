@@ -1,9 +1,11 @@
-/* Suzu Pilgrim Kit JS v1.0 — lazy videos, story reveal, map of light, shrine table filters, menu highlight. No dependencies. */
+/* Suzu Inbound Kit JS v1.1 — lazy videos, reduced-motion hero, story reveal, map of light, table filters, menu highlight. No dependencies. */
 (function () {
   var d = document;
   function each(l, f) { Array.prototype.forEach.call(l, f); }
   var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var IO = 'IntersectionObserver' in window;
+  // 0) accessibility (WCAG 2.2.2): with prefers-reduced-motion the autoplaying hero stays on its poster frame
+  if (rm) each(d.querySelectorAll('.szi-hero video[autoplay]'), function (v) { v.removeAttribute('autoplay'); try { v.pause(); } catch (e) {} });
   // 1) lazy videos: <video data-lazy> with <source data-src>
   function load(v) {
     if (v.getAttribute('data-done')) return; v.setAttribute('data-done', '1');

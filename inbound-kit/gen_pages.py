@@ -11,7 +11,8 @@ Page Builder never writes raw HTML by hand. Scoped to `.szi` (kit.css). Hero vid
 Hard rules enforced here (build.py enforces more):
   * prices: ONLY the "from US$…" values listed in data/prices.json (the live /india-tours/ rates) — any other US$ number refuses
   * every page carries: answer-first block, FAQ (≥5), sources (≥3), verified date, trust strip with the HP Tourism reg. no.,
-    WhatsApp + email CTA, deposit line ("20% deposit locks your dates — refundable within 48 hours")
+    WhatsApp + email CTA, the booking line (DEPOSIT, printed ONCE, in the CTA section — price boxes only point to it) and the
+    privacy line (PRIVACY: enquiry answered by the Suzu team only, data not shared, link to /privacy-policy/) — Reviewer rules 16 Oct 2026
   * links to /india-tours/<slug>/ only when that slug is in live.json
 """
 import html, json, os, pathlib, re, sys, urllib.parse
@@ -27,6 +28,8 @@ EMAIL = "info@suzutravels.com"
 REG = "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022"
 HUB = "/india-tours/"
 DEPOSIT = "A 20% deposit locks your dates and price. Full refund if you cancel within 48 hours of paying. Pay by card (Razorpay, international cards accepted) or PayPal; the balance is due before the trip."
+PRIVACY = ('Your message goes only to the Suzu Travels team in Himachal and is used only to answer your enquiry — we do not sell or share it. '
+           '<a href="/privacy-policy/">Privacy policy</a>.')
 VERIFIED = "16 Oct 2026"
 LOCAL_MEDIA = bool(os.environ.get("PK_LOCAL_MEDIA"))
 
@@ -37,6 +40,15 @@ def e(s):
 
 def wa(text):
     return WA + urllib.parse.quote(text)
+
+
+def iso_date(verified):
+    """'16 Oct 2026' -> '2026-10-16' for schema.org dates (falls back to the text as given)."""
+    try:
+        import datetime
+        return datetime.datetime.strptime(verified.strip(), "%d %b %Y").date().isoformat()
+    except Exception:
+        return verified
 
 
 def ext(url, text):
@@ -164,16 +176,18 @@ def price_box(p):
     return (f'<section class="szi-sec alt" id="prices"><span class="k">Prices</span><h2>{e(p["h2"])}</h2>'
             + (f'<p class="lead">{p["lead"]}</p>' if p.get("lead") else "") + table(rows, ["Option", "From", "What it covers"])
             + f'<p class="szi-note">{p.get("note", "Prices are per person in US dollars, indicative for the season shown, and confirmed on your quote. Taxes included; international flights excluded.")}</p>'
-            + f'<p class="szi-note"><b>Booking:</b> {DEPOSIT}</p></section>')
+            + '<p class="szi-note">Booking terms (20% deposit, 48-hour refund window) are stated once, under <a href="#plan">Plan it with a local</a>.</p></section>')
 
 
 def cta(c, slug):
     text = c.get("wa", f"Hello Suzu Travels, I'm planning a trip to India. Page: {slug}. Dates: ___ , travellers: ___ , country: ___")
     second = c.get("second", ["/himachal-tour-packages-quote/", "Send a quote request"])
     return (f'<section class="szi-sec" id="plan"><div class="szi-quote"><div><span class="k">Plan it with a local</span><h2>{e(c["h2"])}</h2><p>{c["text"]}</p>'
-            f'<p class="szi-note">Reply within 2 hours, 9 am–9 pm IST (UTC+5:30). Email {EMAIL} if you don\'t use WhatsApp.</p></div>'
+            f'<p class="szi-note">We usually reply within 2 hours, 9 am–9 pm IST (UTC+5:30). Email {EMAIL} if you don\'t use WhatsApp.</p></div>'
             f'<div class="szi-btns"><a class="szi-btn gold" href="{wa(text)}" target="_blank" rel="noopener">WhatsApp {PHONE}</a>'
-            f'<a class="szi-btn ghost" href="{second[0]}">{e(second[1])}</a></div></div></section>')
+            f'<a class="szi-btn ghost" href="{second[0]}">{e(second[1])}</a></div></div>'
+            f'<p class="szi-note"><b>Booking:</b> {DEPOSIT}</p>'
+            f'<p class="szi-note">{PRIVACY}</p></section>')
 
 
 def page(body):
@@ -198,7 +212,7 @@ def content_page(slug):
     more = (f'<section class="szi-sec" id="more"><h2>Keep exploring</h2><div class="szi-links">{links}</div><h3 class="szi-gh">Sources</h3>{sources([(a, b) for a, b in c["sources"]])}'
             f'<p class="szi-note">Written by the Suzu Travels team in Himachal Pradesh, India. Facts checked {e(c.get("verified", VERIFIED))}. Prices, visa rules and road conditions change — we re-check this page regularly; ask us before you book.</p></section>')
     body = hero + nav(navi, wa(watxt)) + over + "".join(secs) + pb + fq + cta(c["cta"], slug) + more
-    graph = [{"@type": "Article", "headline": c["title"], "inLanguage": "en", "dateModified": c.get("modified", "2026-10-16"),
+    graph = [{"@type": "Article", "headline": c["title"], "inLanguage": "en", "dateModified": c.get("modified", iso_date(c.get("verified", VERIFIED))),
               "author": {"@type": "Organization", "name": "Suzu Travels"}, "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961", "address": {"@type": "PostalAddress", "addressLocality": "Bilaspur", "addressRegion": "Himachal Pradesh", "addressCountry": "IN"}}}]
     if c.get("trip"):
         t = c["trip"]
