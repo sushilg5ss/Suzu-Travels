@@ -13,7 +13,7 @@ After looking at MakeMyTrip, Sushil found the big hero video on the homepage "on
 - Not a one-day job: a dedicated developer agent improves it every day.
 
 ## 2. What exists (v0.1, 15 Oct 2026)
-One static page, `dist/plan-your-trip/index.html` (≈460 KB raw, ≈115 KB gzip; CSS + JS + data inline), to live at **https://suzutravels.com/plan-your-trip/** as `public_html/plan-your-trip/index.html` (static file → LiteSpeed serves it without PHP; WordPress has no page on that slug — 404 checked 15 Oct).
+Two static files (since v0.5, 16 Oct 2026): `dist/plan-your-trip/index.html` (≈240 KB raw, ≈81 KB gzip; CSS + JS + places/rates/templates/km-matrix inline) and `dist/plan-your-trip/roads-geo.json` (≈460 KB road geometry, fetched after first paint — deploy BOTH together), to live at **https://suzutravels.com/plan-your-trip/** as `public_html/plan-your-trip/index.html` (static file → LiteSpeed serves it without PHP; WordPress has no page on that slug — 404 checked 15 Oct).
 
 Booking-engine tabs (MakeMyTrip-style card on a light mountain hero):
 1. **Holiday planner** — Starting from · Going to (search over places + ready ideas) · Start date · Travellers → *Plan my trip*.
@@ -34,16 +34,16 @@ Share link: `#t=<base64url(JSON)>` — `{v:1,s,e,d,a,c,i,r,t,m,k,p:[[id,nights]]
 
 ## 3. Pricing engine (data/rates.json) — "higher side" by design
 - **Car**: per-km rates and driver allowance identical to the live /cabs/ fare engine (`cab-kit/cabs_data.py` on branch `cabs`): sedan 12, Ertiga 14, Innova Crysta 19, Tempo 26, Urbania 36 ₹/km; ₹400/night (₹500 Tempo/Urbania). Billable km = max(actual drive + sightseeing km, 250 km × days; 150 km/day on Kashmir/Ladakh union days). Kashmir ×1.25 / Ladakh ×1.35 local-union factor. Tolls + parking ₹1.5/km.
-- **Hotels**: per room-night, double, MAP, off-peak, by place class: metro 3,200 · popular hill 3,800 · hill town 3,200 · remote/camps 3,600 · pilgrim town 2,400 · pilgrim city (Katra/Haridwar) 4,000 · Kashmir 4,400 · Ladakh 3,900 (rate audit 16 Oct 2026, `research/rates-sources.md`). Tier ×0.7 / 1.0 / 1.45 / 2.6 (remote capped ×1.8). Extra adult 35 %, child bed 25 %, CP ×0.88. **Peak ×1.25** on Suzu's own windows: 15 Mar–30 Jun, all October, 20 Dec–5 Jan.
+- **Hotels**: per room-night, double, MAP, off-peak, by place class: metro 3,200 · Rajasthan city/heritage 3,600 · popular hill 3,800 · hill town 3,200 · remote/camps 3,600 · pilgrim town 2,400 · pilgrim city (Katra/Haridwar) 4,000 · Kashmir 4,400 · Ladakh 3,900 (rate audit 16 Oct 2026, `research/rates-sources.md`). Tier ×0.7 / 1.0 / 1.45 / 2.6 (remote capped ×1.8). Extra adult 35 %, child bed 25 %, CP ×0.88. **Peak ×1.25** on Suzu's own windows: 15 Mar–30 Jun, all October, 20 Dec–5 Jan.
 - **Service** 10 % + **GST 5 %**; display range = total → total × 1.12; per adult = total ÷ (adults + ½ children).
 - Calibration 16 Oct 2026 (after rate audit): same trip → ₹23,300/adult; Vaishno Devi template ₹9,300; Kashmir classic ₹22,300.
 - Calibration 15 Oct 2026: Shimla–Manali 5N from Chandigarh, 2 adults, deluxe, Nov → ₹22,200/adult (sedan ₹21.3k + hotels ₹17k). The homepage "from ₹12,499" is a 4–6 person off-season rate; the planner estimate drops toward it as the group grows. **Never show a figure lower than the market; never call an estimate a quote.**
 - Activities are never priced (Suzu rule: "Get Quote" / "price on request").
 
 ## 4. Data
-- `data/places.py` — 63 places (hubs, Himachal stays, Mata temples, Kashmir, Ladakh, Uttarakhand) with Hindi names, class, open months, sights (name, extra km, note), tips.
+- `data/places.py` — 87 places (hubs, Himachal, Mata temples, Kashmir, Ladakh, Uttarakhand/Kumaon, Rajasthan, Agra–Mathura, Punjab) with Hindi names, class, open months, sights (name, extra km, note), tips.
 - `data/roads.json` — OSRM road km + minutes for every pair, plus simplified road geometry (Google polyline) for 531 legs; missing pairs are drawn by chaining stored legs (Dijkstra) in the browser. Rebuild: `EXTRA_LEGS="a-b,..." python3 tools/fetch_roads.py` (OSRM demo server, polite; cache `data/.osrm_cache.json` is git-ignored).
-- `data/templates.json` — 20 ready ideas (cat himachal / mata / pilgrim / honeymoon / kashmir / ladakh / uttarakhand) with links to the live package pages.
+- `data/templates.json` — 31 ready ideas (cat himachal / mata / pilgrim / honeymoon / kashmir / ladakh / uttarakhand / rajasthan) with links to the live package pages.
 
 ## 5. Build · test · deploy
 ```

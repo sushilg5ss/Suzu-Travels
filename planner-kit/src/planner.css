@@ -297,7 +297,16 @@ details.fq p{margin:0 0 14px;color:#2c4637}
   .doc .pr{border:2px solid #1f7a45;border-radius:8px;padding:8px 10px;margin:8px 0;break-inside:avoid}
   .doc .pr b{font-size:14pt;color:#123d26}
   .doc ul{margin:4px 0;padding-left:18px}
-  .doc .ft{margin-top:12px;border-top:1px solid #d9e6dd;padding-top:6px;font-size:9pt;color:#5b6b62}
+  .doc .ft{margin-top:12px;border-top:1px solid #d9e6dd;padding-top:8px;font-size:9pt;color:#5b6b62;display:flex;gap:12px;align-items:flex-start;break-inside:avoid}
+  .doc .ft .qr{width:96px;height:96px;flex:0 0 96px}
+  .doc .ft .qr img,.doc .ft .qr canvas{width:96px!important;height:96px!important}
+  .doc .tag{margin:0 0 6px;color:#5b6b62;font-size:10.5pt}
+  .doc .gk{border-left:4px solid #c98a1b;background:#fff8e8;padding:6px 10px;margin:8px 0;font-size:10pt;break-inside:avoid}
+  .doc .gk b{display:block;margin-bottom:2px;color:#7a4e05}
+  .doc ul.two{columns:2;column-gap:18px;font-size:10pt}
+  .doc ul.two li{break-inside:avoid;margin-bottom:3px}
+  .doc .nums{font-size:10pt;margin:4px 0}
+  .doc .dv{font-family:'Tiro Devanagari Hindi',serif;color:#5b6b62}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media(max-width:520px){

@@ -1,53 +1,947 @@
 [
-  {"id": "shimla-manali", "cat": "himachal", "name": "Shimla – Manali classic", "hi": "शिमला – मनाली क्लासिक", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["shimla", 2], ["manali", 3]], "img": "https://suzutravels.com/wp-content/uploads/2026/04/Shimla-Manali-Tour-1024x466.webp",
-   "pkg": "https://suzutravels.com/packages/himachal-tour-package-shimla-manali/", "tags": ["family", "couple", "snow"]},
-  {"id": "manali-honeymoon", "cat": "honeymoon", "name": "Kullu – Manali honeymoon", "hi": "कुल्लू – मनाली हनीमून", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["manali", 3], ["kasol", 1]], "pkg": "https://suzutravels.com/packages/kullu-manali-honeymoon-tour-package/", "tags": ["couple", "snow"]},
-  {"id": "dharamshala-dalhousie", "cat": "himachal", "name": "Dharamshala – Dalhousie", "hi": "धर्मशाला – डलहौज़ी", "start": "pathankot", "end": "pathankot",
-   "stops": [["dharamshala", 2], ["dalhousie", 2]], "pkg": "https://suzutravels.com/tours/splendid-dharamshala-dalhousie-tour-package-from-pathankot/", "tags": ["family", "couple"]},
-  {"id": "grand-himachal", "cat": "himachal", "name": "Grand Himachal (8 nights)", "hi": "ग्रैंड हिमाचल", "start": "delhi", "end": "delhi",
-   "stops": [["shimla", 2], ["manali", 3], ["dharamshala", 2], ["dalhousie", 1]], "pkg": "https://suzutravels.com/tours/incredible-himachal-tour-package-from-delhi/", "tags": ["family", "couple"]},
-  {"id": "kinnaur", "cat": "himachal", "name": "Kinnaur – Sangla – Chitkul", "hi": "किन्नौर – सांगला – छितकुल", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["narkanda", 1], ["sangla", 2], ["kalpa", 1], ["shimla", 1]], "pkg": "https://suzutravels.com/tours/eccentric-kinnaur-tour-package-from-chandigarh/", "tags": ["offbeat"]},
-  {"id": "spiti-circuit", "cat": "himachal", "name": "Spiti full circuit (summer)", "hi": "स्पीति सर्किट (गर्मी)", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["shimla", 1], ["sangla", 1], ["kalpa", 1], ["tabo", 1], ["kaza", 2], ["chandratal", 1], ["manali", 2]], "months": [6, 7, 8, 9, 10],
-   "pkg": "https://suzutravels.com/tours/delightful-kinnaur-kaza-tour-package-with-chandratal-lake/", "tags": ["offbeat", "adventure"]},
-  {"id": "winter-spiti", "cat": "himachal", "name": "Winter Spiti (in & out via Kinnaur)", "hi": "विंटर स्पीति", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["shimla", 1], ["kalpa", 1], ["tabo", 1], ["kaza", 2], ["nako", 1], ["sarahan", 1]], "months": [11, 12, 1, 2, 3],
-   "pkg": "https://suzutravels.com/tours/winter-spiti-reasonable-euphoria/", "tags": ["snow", "adventure"]},
-  {"id": "tirthan-jibhi", "cat": "himachal", "name": "Jibhi & Tirthan valley escape", "hi": "जीभी और तीर्थन घाटी", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["jibhi", 2], ["tirthan", 2]], "tags": ["offbeat", "couple"]},
-
-  {"id": "nau-devi", "cat": "mata", "name": "Himachal Shakti Peeth darshan (Mata tour)", "hi": "हिमाचल शक्तिपीठ दर्शन (माता यात्रा)", "start": "chandigarh", "end": "chandigarh",
-   "stops": [["nainadevi", 1], ["chintpurni", 1], ["jwalaji", 0], ["kangra", 1], ["chamunda", 1]],
-   "pkg": "https://suzutravels.com/tours/5-shakti-peeth-tour-package-himachal-5-days-4-nights/", "tags": ["pilgrimage", "family"]},
-  {"id": "vaishno-devi", "cat": "mata", "name": "Vaishno Devi yatra", "hi": "वैष्णो देवी यात्रा", "start": "jammu", "end": "jammu",
-   "stops": [["katra", 2]], "tags": ["pilgrimage", "family"]},
-  {"id": "vaishno-kashmir", "cat": "mata", "name": "Vaishno Devi + Kashmir", "hi": "वैष्णो देवी + कश्मीर", "start": "jammu", "end": "jammu",
-   "stops": [["katra", 2], ["srinagar", 2], ["gulmarg", 1], ["pahalgam", 1]], "pkg": "https://suzutravels.com/tours/panoramic-kashmir-vaishnodevi-economy/", "tags": ["pilgrimage", "family"]},
-  {"id": "mata-plus-dharamshala", "cat": "mata", "name": "Mata darshan + Dharamshala + Dalhousie", "hi": "माता दर्शन + धर्मशाला + डलहौज़ी", "start": "chandigarh", "end": "pathankot",
-   "stops": [["chintpurni", 1], ["jwalaji", 0], ["kangra", 0], ["chamunda", 0], ["dharamshala", 2], ["dalhousie", 2]], "tags": ["pilgrimage", "family"]},
-
-  {"id": "char-dham", "cat": "pilgrim", "name": "Char Dham yatra", "hi": "चार धाम यात्रा", "start": "haridwar", "end": "haridwar",
-   "stops": [["barkot", 2], ["uttarkashi", 2], ["guptkashi", 2], ["badrinath", 1], ["rishikesh", 1]], "months": [5, 6, 7, 8, 9, 10],
-   "pkg": "https://suzutravels.com/packages/ultimate-char-dham-yatra/", "tags": ["pilgrimage"]},
-  {"id": "do-dham", "cat": "pilgrim", "name": "Do Dham — Kedarnath & Badrinath", "hi": "दो धाम — केदारनाथ और बद्रीनाथ", "start": "haridwar", "end": "haridwar",
-   "stops": [["guptkashi", 2], ["badrinath", 1], ["rishikesh", 1]], "months": [5, 6, 7, 8, 9, 10],
-   "pkg": "https://suzutravels.com/tours/holiest-himalayan-pilgrimage-tour/", "tags": ["pilgrimage"]},
-  {"id": "golden-temple-himachal", "cat": "pilgrim", "name": "Golden Temple + Dharamshala + Dalhousie", "hi": "स्वर्ण मंदिर + धर्मशाला + डलहौज़ी", "start": "amritsar", "end": "amritsar",
-   "stops": [["amritsar", 1], ["dharamshala", 2], ["dalhousie", 2]], "tags": ["pilgrimage", "family"]},
-
-  {"id": "kashmir-classic", "cat": "kashmir", "name": "Kashmir — Srinagar, Gulmarg, Pahalgam", "hi": "कश्मीर — श्रीनगर, गुलमर्ग, पहलगाम", "start": "srinagar", "end": "srinagar",
-   "stops": [["srinagar", 2], ["gulmarg", 1], ["pahalgam", 2], ["sonamarg", 0]], "pkg": "https://suzutravels.com/tours/stunning-kashmir-tour-package/", "tags": ["family", "couple", "snow"]},
-  {"id": "ladakh-fly", "cat": "ladakh", "name": "Leh – Nubra – Pangong (fly-in)", "hi": "लेह – नुब्रा – पैंगोंग", "start": "leh", "end": "leh",
-   "stops": [["leh", 2], ["nubra", 1], ["pangong", 1], ["leh", 1]], "pkg": "https://suzutravels.com/packages/glimpses-of-ladakh/", "tags": ["adventure", "couple"]},
-  {"id": "manali-leh", "cat": "ladakh", "name": "Manali – Leh road trip (summer)", "hi": "मनाली – लेह रोड ट्रिप", "start": "chandigarh", "end": "leh",
-   "stops": [["manali", 2], ["jispa", 1], ["sarchu", 1], ["leh", 2], ["nubra", 1], ["pangong", 1], ["leh", 1]], "months": [6, 7, 8, 9],
-   "tags": ["adventure"]},
-
-  {"id": "rishikesh-mussoorie", "cat": "uttarakhand", "name": "Rishikesh & Mussoorie", "hi": "ऋषिकेश और मसूरी", "start": "delhi", "end": "delhi",
-   "stops": [["rishikesh", 2], ["mussoorie", 2]], "tags": ["family", "couple", "adventure"]},
-  {"id": "nainital-corbett", "cat": "uttarakhand", "name": "Nainital & Jim Corbett", "hi": "नैनीताल और जिम कॉर्बेट", "start": "delhi", "end": "delhi",
-   "stops": [["nainital", 2], ["corbett", 2]], "pkg": "https://suzutravels.com/tours/uttarakhand-bhimtal-corbett/", "tags": ["family", "wildlife"]}
+ {
+  "id": "shimla-manali",
+  "cat": "himachal",
+  "name": "Shimla – Manali classic",
+  "hi": "शिमला – मनाली क्लासिक",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "shimla",
+    2
+   ],
+   [
+    "manali",
+    3
+   ]
+  ],
+  "img": "https://suzutravels.com/wp-content/uploads/2026/04/Shimla-Manali-Tour-1024x466.webp",
+  "pkg": "https://suzutravels.com/packages/himachal-tour-package-shimla-manali/",
+  "tags": [
+   "family",
+   "couple",
+   "snow"
+  ]
+ },
+ {
+  "id": "manali-honeymoon",
+  "cat": "honeymoon",
+  "name": "Kullu – Manali honeymoon",
+  "hi": "कुल्लू – मनाली हनीमून",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "manali",
+    3
+   ],
+   [
+    "kasol",
+    1
+   ]
+  ],
+  "pkg": "https://suzutravels.com/packages/kullu-manali-honeymoon-tour-package/",
+  "tags": [
+   "couple",
+   "snow"
+  ]
+ },
+ {
+  "id": "dharamshala-dalhousie",
+  "cat": "himachal",
+  "name": "Dharamshala – Dalhousie",
+  "hi": "धर्मशाला – डलहौज़ी",
+  "start": "pathankot",
+  "end": "pathankot",
+  "stops": [
+   [
+    "dharamshala",
+    2
+   ],
+   [
+    "dalhousie",
+    2
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/splendid-dharamshala-dalhousie-tour-package-from-pathankot/",
+  "tags": [
+   "family",
+   "couple"
+  ]
+ },
+ {
+  "id": "grand-himachal",
+  "cat": "himachal",
+  "name": "Grand Himachal (8 nights)",
+  "hi": "ग्रैंड हिमाचल",
+  "start": "delhi",
+  "end": "delhi",
+  "stops": [
+   [
+    "shimla",
+    2
+   ],
+   [
+    "manali",
+    3
+   ],
+   [
+    "dharamshala",
+    2
+   ],
+   [
+    "dalhousie",
+    1
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/incredible-himachal-tour-package-from-delhi/",
+  "tags": [
+   "family",
+   "couple"
+  ]
+ },
+ {
+  "id": "kinnaur",
+  "cat": "himachal",
+  "name": "Kinnaur – Sangla – Chitkul",
+  "hi": "किन्नौर – सांगला – छितकुल",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "narkanda",
+    1
+   ],
+   [
+    "sangla",
+    2
+   ],
+   [
+    "kalpa",
+    1
+   ],
+   [
+    "shimla",
+    1
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/eccentric-kinnaur-tour-package-from-chandigarh/",
+  "tags": [
+   "offbeat"
+  ]
+ },
+ {
+  "id": "spiti-circuit",
+  "cat": "himachal",
+  "name": "Spiti full circuit (summer)",
+  "hi": "स्पीति सर्किट (गर्मी)",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "shimla",
+    1
+   ],
+   [
+    "sangla",
+    1
+   ],
+   [
+    "kalpa",
+    1
+   ],
+   [
+    "tabo",
+    1
+   ],
+   [
+    "kaza",
+    2
+   ],
+   [
+    "chandratal",
+    1
+   ],
+   [
+    "manali",
+    2
+   ]
+  ],
+  "months": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "pkg": "https://suzutravels.com/tours/delightful-kinnaur-kaza-tour-package-with-chandratal-lake/",
+  "tags": [
+   "offbeat",
+   "adventure"
+  ]
+ },
+ {
+  "id": "winter-spiti",
+  "cat": "himachal",
+  "name": "Winter Spiti (in & out via Kinnaur)",
+  "hi": "विंटर स्पीति",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "shimla",
+    1
+   ],
+   [
+    "kalpa",
+    1
+   ],
+   [
+    "tabo",
+    1
+   ],
+   [
+    "kaza",
+    2
+   ],
+   [
+    "nako",
+    1
+   ],
+   [
+    "sarahan",
+    1
+   ]
+  ],
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "pkg": "https://suzutravels.com/tours/winter-spiti-reasonable-euphoria/",
+  "tags": [
+   "snow",
+   "adventure"
+  ]
+ },
+ {
+  "id": "tirthan-jibhi",
+  "cat": "himachal",
+  "name": "Jibhi & Tirthan valley escape",
+  "hi": "जीभी और तीर्थन घाटी",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "jibhi",
+    2
+   ],
+   [
+    "tirthan",
+    2
+   ]
+  ],
+  "tags": [
+   "offbeat",
+   "couple"
+  ]
+ },
+ {
+  "id": "nau-devi",
+  "cat": "mata",
+  "name": "Himachal Shakti Peeth darshan (Mata tour)",
+  "hi": "हिमाचल शक्तिपीठ दर्शन (माता यात्रा)",
+  "start": "chandigarh",
+  "end": "chandigarh",
+  "stops": [
+   [
+    "nainadevi",
+    1
+   ],
+   [
+    "chintpurni",
+    1
+   ],
+   [
+    "jwalaji",
+    0
+   ],
+   [
+    "kangra",
+    1
+   ],
+   [
+    "chamunda",
+    1
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/5-shakti-peeth-tour-package-himachal-5-days-4-nights/",
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
+ },
+ {
+  "id": "vaishno-devi",
+  "cat": "mata",
+  "name": "Vaishno Devi yatra",
+  "hi": "वैष्णो देवी यात्रा",
+  "start": "jammu",
+  "end": "jammu",
+  "stops": [
+   [
+    "katra",
+    2
+   ]
+  ],
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
+ },
+ {
+  "id": "vaishno-kashmir",
+  "cat": "mata",
+  "name": "Vaishno Devi + Kashmir",
+  "hi": "वैष्णो देवी + कश्मीर",
+  "start": "jammu",
+  "end": "jammu",
+  "stops": [
+   [
+    "katra",
+    2
+   ],
+   [
+    "srinagar",
+    2
+   ],
+   [
+    "gulmarg",
+    1
+   ],
+   [
+    "pahalgam",
+    1
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/panoramic-kashmir-vaishnodevi-economy/",
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
+ },
+ {
+  "id": "mata-plus-dharamshala",
+  "cat": "mata",
+  "name": "Mata darshan + Dharamshala + Dalhousie",
+  "hi": "माता दर्शन + धर्मशाला + डलहौज़ी",
+  "start": "chandigarh",
+  "end": "pathankot",
+  "stops": [
+   [
+    "chintpurni",
+    1
+   ],
+   [
+    "jwalaji",
+    0
+   ],
+   [
+    "kangra",
+    0
+   ],
+   [
+    "chamunda",
+    0
+   ],
+   [
+    "dharamshala",
+    2
+   ],
+   [
+    "dalhousie",
+    2
+   ]
+  ],
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
+ },
+ {
+  "id": "char-dham",
+  "cat": "pilgrim",
+  "name": "Char Dham yatra",
+  "hi": "चार धाम यात्रा",
+  "start": "haridwar",
+  "end": "haridwar",
+  "stops": [
+   [
+    "barkot",
+    2
+   ],
+   [
+    "uttarkashi",
+    2
+   ],
+   [
+    "guptkashi",
+    2
+   ],
+   [
+    "badrinath",
+    1
+   ],
+   [
+    "rishikesh",
+    1
+   ]
+  ],
+  "months": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "pkg": "https://suzutravels.com/packages/ultimate-char-dham-yatra/",
+  "tags": [
+   "pilgrimage"
+  ]
+ },
+ {
+  "id": "do-dham",
+  "cat": "pilgrim",
+  "name": "Do Dham — Kedarnath & Badrinath",
+  "hi": "दो धाम — केदारनाथ और बद्रीनाथ",
+  "start": "haridwar",
+  "end": "haridwar",
+  "stops": [
+   [
+    "guptkashi",
+    2
+   ],
+   [
+    "badrinath",
+    1
+   ],
+   [
+    "rishikesh",
+    1
+   ]
+  ],
+  "months": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "pkg": "https://suzutravels.com/tours/holiest-himalayan-pilgrimage-tour/",
+  "tags": [
+   "pilgrimage"
+  ]
+ },
+ {
+  "id": "golden-temple-himachal",
+  "cat": "pilgrim",
+  "name": "Golden Temple + Dharamshala + Dalhousie",
+  "hi": "स्वर्ण मंदिर + धर्मशाला + डलहौज़ी",
+  "start": "amritsar",
+  "end": "amritsar",
+  "stops": [
+   [
+    "amritsar",
+    1
+   ],
+   [
+    "dharamshala",
+    2
+   ],
+   [
+    "dalhousie",
+    2
+   ]
+  ],
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
+ },
+ {
+  "id": "kashmir-classic",
+  "cat": "kashmir",
+  "name": "Kashmir — Srinagar, Gulmarg, Pahalgam",
+  "hi": "कश्मीर — श्रीनगर, गुलमर्ग, पहलगाम",
+  "start": "srinagar",
+  "end": "srinagar",
+  "stops": [
+   [
+    "srinagar",
+    2
+   ],
+   [
+    "gulmarg",
+    1
+   ],
+   [
+    "pahalgam",
+    2
+   ],
+   [
+    "sonamarg",
+    0
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/stunning-kashmir-tour-package/",
+  "tags": [
+   "family",
+   "couple",
+   "snow"
+  ]
+ },
+ {
+  "id": "ladakh-fly",
+  "cat": "ladakh",
+  "name": "Leh – Nubra – Pangong (fly-in)",
+  "hi": "लेह – नुब्रा – पैंगोंग",
+  "start": "leh",
+  "end": "leh",
+  "stops": [
+   [
+    "leh",
+    2
+   ],
+   [
+    "nubra",
+    1
+   ],
+   [
+    "pangong",
+    1
+   ],
+   [
+    "leh",
+    1
+   ]
+  ],
+  "pkg": "https://suzutravels.com/packages/glimpses-of-ladakh/",
+  "tags": [
+   "adventure",
+   "couple"
+  ]
+ },
+ {
+  "id": "manali-leh",
+  "cat": "ladakh",
+  "name": "Manali – Leh road trip (summer)",
+  "hi": "मनाली – लेह रोड ट्रिप",
+  "start": "chandigarh",
+  "end": "leh",
+  "stops": [
+   [
+    "manali",
+    2
+   ],
+   [
+    "jispa",
+    1
+   ],
+   [
+    "sarchu",
+    1
+   ],
+   [
+    "leh",
+    2
+   ],
+   [
+    "nubra",
+    1
+   ],
+   [
+    "pangong",
+    1
+   ],
+   [
+    "leh",
+    1
+   ]
+  ],
+  "months": [
+   6,
+   7,
+   8,
+   9
+  ],
+  "tags": [
+   "adventure"
+  ]
+ },
+ {
+  "id": "rishikesh-mussoorie",
+  "cat": "uttarakhand",
+  "name": "Rishikesh & Mussoorie",
+  "hi": "ऋषिकेश और मसूरी",
+  "start": "delhi",
+  "end": "delhi",
+  "stops": [
+   [
+    "rishikesh",
+    2
+   ],
+   [
+    "mussoorie",
+    2
+   ]
+  ],
+  "tags": [
+   "family",
+   "couple",
+   "adventure"
+  ]
+ },
+ {
+  "id": "nainital-corbett",
+  "cat": "uttarakhand",
+  "name": "Nainital & Jim Corbett",
+  "hi": "नैनीताल और जिम कॉर्बेट",
+  "start": "delhi",
+  "end": "delhi",
+  "stops": [
+   [
+    "nainital",
+    2
+   ],
+   [
+    "corbett",
+    2
+   ]
+  ],
+  "pkg": "https://suzutravels.com/tours/uttarakhand-bhimtal-corbett/",
+  "tags": [
+   "family",
+   "wildlife"
+  ]
+ },
+ {
+  "id": "golden-triangle",
+  "cat": "rajasthan",
+  "name": "Golden Triangle — Delhi, Agra, Jaipur",
+  "hi": "गोल्डन ट्रायंगल — दिल्ली, आगरा, जयपुर",
+  "start": "delhi",
+  "end": "delhi",
+  "stops": [
+   [
+    "agra",
+    1
+   ],
+   [
+    "jaipur",
+    2
+   ]
+  ],
+  "pkg": "https://suzutravels.com/golden-triangle-tour/",
+  "tags": [
+   "family",
+   "couple",
+   "first-time",
+   "heritage"
+  ]
+ },
+ {
+  "id": "agra-mathura",
+  "cat": "rajasthan",
+  "name": "Mathura – Vrindavan – Agra (Braj darshan + Taj)",
+  "hi": "मथुरा – वृंदावन – आगरा",
+  "start": "delhi",
+  "end": "delhi",
+  "stops": [
+   [
+    "mathura",
+    1
+   ],
+   [
+    "agra",
+    1
+   ]
+  ],
+  "tags": [
+   "pilgrimage",
+   "family",
+   "weekend"
+  ]
+ },
+ {
+  "id": "rajasthan-royal",
+  "cat": "rajasthan",
+  "name": "Royal Rajasthan — Jaipur, Jodhpur, Jaisalmer, Udaipur",
+  "hi": "रॉयल राजस्थान",
+  "start": "jaipur",
+  "end": "udaipur",
+  "stops": [
+   [
+    "jaipur",
+    2
+   ],
+   [
+    "pushkar",
+    1
+   ],
+   [
+    "jodhpur",
+    2
+   ],
+   [
+    "jaisalmer",
+    2
+   ],
+   [
+    "udaipur",
+    2
+   ]
+  ],
+  "tags": [
+   "heritage",
+   "couple",
+   "desert",
+   "winter"
+  ]
+ },
+ {
+  "id": "udaipur-mountabu",
+  "cat": "rajasthan",
+  "name": "Udaipur – Kumbhalgarh – Mount Abu",
+  "hi": "उदयपुर – कुंभलगढ़ – माउंट आबू",
+  "start": "udaipur",
+  "end": "udaipur",
+  "stops": [
+   [
+    "udaipur",
+    2
+   ],
+   [
+    "kumbhalgarh",
+    1
+   ],
+   [
+    "mountabu",
+    2
+   ]
+  ],
+  "tags": [
+   "couple",
+   "heritage",
+   "hill"
+  ]
+ },
+ {
+  "id": "kumaon-kainchi",
+  "cat": "uttarakhand",
+  "name": "Kainchi Dham + Nainital + Mukteshwar (Kumaon)",
+  "hi": "कैंची धाम + नैनीताल + मुक्तेश्वर",
+  "start": "delhi",
+  "end": "delhi",
+  "stops": [
+   [
+    "kainchi",
+    0
+   ],
+   [
+    "nainital",
+    2
+   ],
+   [
+    "mukteshwar",
+    1
+   ],
+   [
+    "bhimtal",
+    1
+   ]
+  ],
+  "tags": [
+   "family",
+   "pilgrimage",
+   "weekend"
+  ]
+ },
+ {
+  "id": "kumaon-grand",
+  "cat": "uttarakhand",
+  "name": "Grand Kumaon — Almora, Kausani, Ranikhet, Nainital",
+  "hi": "ग्रैंड कुमाऊं",
+  "start": "kathgodam",
+  "end": "kathgodam",
+  "stops": [
+   [
+    "almora",
+    1
+   ],
+   [
+    "kausani",
+    2
+   ],
+   [
+    "ranikhet",
+    1
+   ],
+   [
+    "nainital",
+    2
+   ]
+  ],
+  "tags": [
+   "family",
+   "hill",
+   "himalaya-view"
+  ]
+ },
+ {
+  "id": "auli-chopta",
+  "cat": "uttarakhand",
+  "name": "Auli & Chopta — Himalayan meadows",
+  "hi": "औली और चोपता",
+  "start": "dehradun",
+  "end": "dehradun",
+  "stops": [
+   [
+    "rishikesh",
+    1
+   ],
+   [
+    "chopta",
+    1
+   ],
+   [
+    "auli",
+    2
+   ],
+   [
+    "rishikesh",
+    1
+   ]
+  ],
+  "tags": [
+   "trek",
+   "snow",
+   "couple"
+  ]
+ },
+ {
+  "id": "mussoorie-dhanaulti",
+  "cat": "uttarakhand",
+  "name": "Mussoorie – Dhanaulti – Rishikesh",
+  "hi": "मसूरी – धनोल्टी – ऋषिकेश",
+  "start": "dehradun",
+  "end": "dehradun",
+  "stops": [
+   [
+    "mussoorie",
+    2
+   ],
+   [
+    "dhanaulti",
+    1
+   ],
+   [
+    "rishikesh",
+    1
+   ]
+  ],
+  "tags": [
+   "family",
+   "weekend",
+   "couple"
+  ]
+ },
+ {
+  "id": "vaishno-patnitop",
+  "cat": "mata",
+  "name": "Vaishno Devi + Patnitop",
+  "hi": "वैष्णो देवी + पटनीटॉप",
+  "start": "jammu",
+  "end": "jammu",
+  "stops": [
+   [
+    "katra",
+    2
+   ],
+   [
+    "patnitop",
+    1
+   ]
+  ],
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
+ },
+ {
+  "id": "dalhousie-khajjiar",
+  "cat": "himachal",
+  "name": "Dalhousie – Khajjiar – Chamba",
+  "hi": "डलहौज़ी – खज्जियार – चंबा",
+  "start": "pathankot",
+  "end": "pathankot",
+  "stops": [
+   [
+    "dalhousie",
+    2
+   ],
+   [
+    "khajjiar",
+    1
+   ],
+   [
+    "chamba",
+    1
+   ]
+  ],
+  "tags": [
+   "family",
+   "couple",
+   "snow"
+  ]
+ },
+ {
+  "id": "ladakh-grand",
+  "cat": "ladakh",
+  "name": "Grand Ladakh — Leh, Nubra, Pangong, Tso Moriri (fly-in)",
+  "hi": "ग्रैंड लद्दाख",
+  "start": "leh",
+  "end": "leh",
+  "stops": [
+   [
+    "leh",
+    2
+   ],
+   [
+    "nubra",
+    1
+   ],
+   [
+    "pangong",
+    1
+   ],
+   [
+    "tsomoriri",
+    1
+   ],
+   [
+    "leh",
+    1
+   ]
+  ],
+  "tags": [
+   "adventure",
+   "lakes",
+   "summer"
+  ]
+ }
 ]

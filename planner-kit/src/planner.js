@@ -5,13 +5,23 @@
  */
 (function () {
   'use strict';
-  var VER = '0.4';
+  var VER = '0.5';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
   var PL = {}, IDX = {};
   DATA.places.forEach(function (p) { PL[p.id] = p; });
   ROADS.ids.forEach(function (id, i) { IDX[id] = i; });
+  if (!ROADS.geo) ROADS.geo = {};
+  /* road geometry arrives after first paint (roads-geo.json); until then legs draw as straight lines */
+  function loadGeo() {
+    if (ROADS.geoLoaded || !W.fetch) return;
+    var u = location.pathname.replace(/[^\/]*$/, '') + 'roads-geo.json?v=' + (DATA.geo_v || VER);
+    W.fetch(u, { credentials: 'same-origin' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (!d || !d.geo) return; ROADS.geo = d.geo; ROADS.geoLoaded = true; GC = {}; ADJ = null;
+      if (LAST) { renderMap(LAST, false); if (leafOn && W.L) drawLeaf(LAST); }
+    }).catch(function () {});
+  }
   var WA = '917087488961', PHONE = '+91 70874 88961';
   var LIVE = /(^|\.)suzutravels\.com$/.test(location.hostname);
   var ADDONS = [
@@ -30,8 +40,8 @@
     { id: 'photo', n: 'Trip photographer', at: [] },
     { id: 'cake', n: 'Honeymoon decor & cake', at: [] }
   ];
-  var CATS = [['all', 'All'], ['himachal', 'Himachal'], ['mata', 'Mata darshan'], ['pilgrim', 'Char Dham & yatra'], ['honeymoon', 'Honeymoon'], ['kashmir', 'Kashmir'], ['ladakh', 'Ladakh'], ['uttarakhand', 'Uttarakhand']];
-  var REGLBL = { himachal: 'Himachal', pilgrim: 'Mata darshan', kashmir: 'Kashmir', ladakh: 'Ladakh', uttarakhand: 'Uttarakhand', hub: 'City', punjab: 'Punjab' };
+  var CATS = [['all', 'All'], ['himachal', 'Himachal'], ['mata', 'Mata darshan'], ['pilgrim', 'Char Dham & yatra'], ['honeymoon', 'Honeymoon'], ['kashmir', 'Kashmir'], ['ladakh', 'Ladakh'], ['uttarakhand', 'Uttarakhand'], ['rajasthan', 'Rajasthan & Agra']];
+  var REGLBL = { himachal: 'Himachal', pilgrim: 'Mata darshan', kashmir: 'Kashmir', ladakh: 'Ladakh', uttarakhand: 'Uttarakhand', hub: 'City', punjab: 'Punjab', rajasthan: 'Rajasthan', up: 'Agra & Mathura' };
   var HILL = { himachal: 1, pilgrim: 1, kashmir: 1, ladakh: 1, uttarakhand: 1 };
 
   /* ---------------- helpers ---------------- */
@@ -249,6 +259,12 @@
       });
     });
 
+    /* Rajasthan / Agra heat (Apr–Jun) and Taj Friday closure */
+    (function () {
+      var hot = out.days.some(function (dy) { var m = dy.date.getMonth() + 1; return m >= 4 && m <= 6 && ['rajasthan', 'up'].indexOf(PL[dy.to].region) > -1; });
+      if (hot) out.warn.push({ k: 'heat', t: 'April–June is very hot in Rajasthan and Agra (40 °C+ afternoons). We schedule forts and the Taj for early morning; October–March is the comfortable season.' });
+      out.days.forEach(function (dy) { if ((dy.to === 'agra' || dy.stay === 'agra') && dy.date.getDay() === 5 && !out.warn.some(function (w) { return w.k === 'taj'; })) out.warn.push({ r: 1, k: 'taj', t: 'Taj Mahal is closed on Fridays and your Agra day falls on a Friday — shift the trip by a day or we plan the Taj for the next morning.' }); });
+    })();
     /* ---- cab ---- */
     var totalDays = out.days.length, nNights = nights.length;
     var av = autoVeh(out.route), v, cnt;
@@ -298,7 +314,7 @@
   }
 
   /* ---------------- search (destinations + ideas) ---------------- */
-  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri pilgrimage golden temple तीर्थ धाम', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett उत्तराखंड' };
+  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri pilgrimage golden temple तीर्थ धाम', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
   function search(q, onlyPlaces) {
     q = q.trim().toLowerCase();
     var res = [];
@@ -386,7 +402,7 @@
   function placeOptions(sel, val, filter) {
     var groups = {};
     DATA.places.forEach(function (p) { if (filter && !filter(p)) return; var g = p.kind === 'hub' ? 'Cities & airports' : (REGLBL[p.region] || 'Other'); (groups[g] = groups[g] || []).push(p); });
-    var order = ['Cities & airports', 'Himachal', 'Mata darshan', 'Kashmir', 'Ladakh', 'Uttarakhand', 'Punjab'];
+    var order = ['Cities & airports', 'Himachal', 'Mata darshan', 'Kashmir', 'Ladakh', 'Uttarakhand', 'Rajasthan', 'Agra & Mathura', 'Punjab'];
     sel.innerHTML = order.filter(function (g) { return groups[g]; }).map(function (g) {
       return '<optgroup label="' + g + '">' + groups[g].map(function (p) { return '<option value="' + p.id + '"' + (p.id === val ? ' selected' : '') + '>' + esc(p.name) + '</option>'; }).join('') + '</optgroup>';
     }).join('');
@@ -444,7 +460,7 @@
     var h = '<defs><pattern id="hx" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 11h22" stroke="#dfeae3" stroke-width="1"/></pattern>' +
       '<radialGradient id="glow"><stop offset="0" stop-color="#c9962b" stop-opacity=".5"/><stop offset="1" stop-color="#c9962b" stop-opacity="0"/></radialGradient></defs>' +
       '<rect width="100%" height="100%" fill="url(#hx)"/>';
-    [['HIMACHAL', 31.75, 77.3], ['JAMMU & KASHMIR', 33.55, 75.1], ['LADAKH', 34.35, 77.9], ['UTTARAKHAND', 30.15, 79.15], ['PUNJAB', 30.95, 75.35], ['HARYANA', 29.4, 76.4]].forEach(function (r) {
+    [['HIMACHAL', 31.75, 77.3], ['JAMMU & KASHMIR', 33.55, 75.1], ['LADAKH', 34.35, 77.9], ['UTTARAKHAND', 30.15, 79.15], ['PUNJAB', 30.95, 75.35], ['HARYANA', 29.4, 76.4], ['RAJASTHAN', 26.6, 73.6], ['UTTAR PRADESH', 27.4, 78.9]].forEach(function (r) {
       var q = P(r[1], r[2]), wR = r[0].length * 13; if (q[0] - wR / 2 > 8 && q[0] + wR / 2 < Wd - 8 && q[1] > 30 && q[1] < Ht - 40) h += '<text class="reg" x="' + q[0].toFixed(1) + '" y="' + q[1].toFixed(1) + '" text-anchor="middle">' + r[0] + '</text>';
     });
     var onRoute = {}; plan.route.forEach(function (id) { onRoute[id] = 1; });
@@ -718,7 +734,7 @@
   /* ---------------- hero search + tabs ---------------- */
   function selTab(t) { var tabs = $$('.tp-tabs [role=tab]'); tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; $('#' + x.getAttribute('aria-controls')).hidden = !on; }); ev('trip_planner', { step: 'tab', tab: t.id }); }
   function wireHero() {
-    placeOptions($('#q-from'), 'chandigarh', function (p) { return p.kind === 'hub' || ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu'].indexOf(p.id) > -1; });
+    placeOptions($('#q-from'), 'chandigarh', function (p) { return p.kind === 'hub' || ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu', 'agra', 'udaipur', 'jodhpur', 'nainital'].indexOf(p.id) > -1; });
     $('#q-date').value = S.d; $('#q-date').min = iso(today);
     var qd = function () { var d = parseD($('#q-date').value); $('#q-date-s').textContent = d ? WD[d.getDay()] + (isPeak(d) ? ' · peak season' : '') : ''; }; qd();
     $('#q-date').addEventListener('change', function (e) { if (e.target.value) S.d = e.target.value; qd(); });
@@ -738,7 +754,7 @@
       chosen = null;
     }
     $('#q-go').addEventListener('click', go);
-    var pop = ['shimla-manali', 'nau-devi', 'char-dham', 'kashmir-classic', 'spiti-circuit', 'dharamshala-dalhousie', 'vaishno-devi', 'ladakh-fly'];
+    var pop = ['shimla-manali', 'nau-devi', 'char-dham', 'kashmir-classic', 'golden-triangle', 'spiti-circuit', 'kumaon-kainchi', 'dharamshala-dalhousie', 'vaishno-devi', 'rajasthan-royal', 'ladakh-fly'];
     $('#q-quick').insertAdjacentHTML('beforeend', pop.map(function (id) { var t = TPL.filter(function (x) { return x.id === id; })[0]; return t ? '<button type="button" class="chip" data-tpl="' + id + '">' + esc(t.name.replace(' (summer)', '').replace(' (fly-in)', '')) + '</button>' : ''; }).join(''));
     D.addEventListener('click', function (e) {
       var b = e.target.closest('[data-tpl]'); if (b) { var t = TPL.filter(function (x) { return x.id === b.dataset.tpl; })[0]; if (t) loadTpl(t); return; }
@@ -925,8 +941,43 @@
   }
 
   /* ---------------- PDF (print) ---------------- */
+  var TIPS = {
+    himachal: ['Carry a warm layer even in summer — hill evenings are 10–15 °C cooler than the plains.', 'Hill roads: 30–40 km/h average; keep motion-sickness tablets handy for children.'],
+    kashmir: ['Sightseeing in Gulmarg, Pahalgam and Sonamarg runs on local union taxis / ponies — included in the estimate, but keep small change.', 'Book the Gulmarg Gondola online a few days ahead in peak season.', 'Carry a valid photo ID; mobile prepaid SIMs from other states may not work in J&K (postpaid works).'],
+    ladakh: ['Rest completely on day 1 in Leh (3,500 m): no sightseeing, lots of water, no alcohol. Consult your doctor about altitude medicine.', 'Inner Line Permits for Nubra, Pangong and Tso Moriri are arranged by us — carry 4 passport photos and ID copies.', 'Nights at Pangong / Tso Moriri drop below 0 °C even in summer; carry a down jacket.'],
+    uttarakhand: ['Char Dham: online yatra registration is mandatory; carry the printout and a photo ID.', 'Kedarnath / Yamunotri treks start early morning; ponies, palki and helicopters are on request.', 'Hill roads can close briefly after rain in July–August — keep one buffer day if possible.'],
+    pilgrim: ['Temples open early (5–6 AM) and close for 1–2 hours midday; plan darshan before 11 AM.', 'Navratri and weekends bring long queues — carry water, and leave leather items and cameras in the car.', 'Dress modestly; cover shoulders and knees at shrines.'],
+    rajasthan: ['Forts and palaces open ~9 AM–5 PM; start early to beat the heat.', 'October to March is the comfortable season; summer afternoons cross 40 °C — carry a cap, sunscreen and 2 litres of water per person.', 'Monument tickets are cheaper online; Taj Mahal is closed on Fridays.'],
+    up: ['Taj Mahal is closed on Fridays; sunrise entry has the shortest queues.', 'Mathura–Vrindavan temples close in the afternoon (approx. 12–4 PM); plan darshan morning and evening.'],
+    punjab: ['Cover your head and remove shoes at gurudwaras; the langar is open to everyone.']
+  };
+  function regionTips(plan) {
+    var out = [], seen = {};
+    plan.route.forEach(function (id) { var r = PL[id].region; if (seen[r]) return; seen[r] = 1; (TIPS[r] || []).forEach(function (t) { if (out.indexOf(t) < 0) out.push(t); }); });
+    var mo = plan.days[0].date.getMonth() + 1, hills = plan.route.some(function (id) { return HILL[PL[id].region]; });
+    if (plan.route.some(function (id) { return PL[id].cls === 'remote' && PL[id].region === 'himachal'; })) out.push('ATMs are scarce in Spiti, Kinnaur and Lahaul — carry cash; mobile network is patchy beyond Kaza.');
+    if (hills && (mo >= 11 || mo <= 2)) out.unshift('Winter trip: carry heavy woollens, gloves and waterproof shoes; snow can close high roads for a day — the driver will suggest alternatives.');
+    if (hills && mo >= 7 && mo <= 8) out.unshift('Monsoon season: landslides can delay hill roads; keep plans flexible and start drives early.');
+    return out.slice(0, 7);
+  }
+  function placeNotes(plan) {
+    var out = [], seen = {};
+    plan.route.forEach(function (id) { var p = PL[id]; if (seen[id] || !p.tip) return; seen[id] = 1; out.push([p.name.split(' (')[0], p.tip]); });
+    return out;
+  }
+  function qrInto(el, text, cb) {
+    var done = false, fin = function () { if (!done) { done = true; cb(); } };
+    function draw() { try { el.innerHTML = ''; new W.QRCode(el, { text: text, width: 96, height: 96, correctLevel: W.QRCode.CorrectLevel.M }); } catch (e) {} fin(); }
+    if (W.QRCode) { draw(); return; }
+    var s = D.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js'; s.onload = draw; s.onerror = fin; D.head.appendChild(s);
+    setTimeout(fin, 1800);
+  }
   function doPdf() {
     var plan = LAST; if (!plan) return;
+    if (EMBED && /iPhone|iPad|iPod/i.test(navigator.userAgent) && !Q.has('pdf')) {
+      var u = location.origin + location.pathname + '?pdf=1#t=' + encState(!!S.cv);
+      var wn = W.open(u, '_blank'); if (wn) { toast('Opening your itinerary in a new tab…'); return; }
+    }
     var cv = S.cv && S.g, ag = MODE === 'agent' && S.g && S.g.n ? S.g : null;
     var svg = $('#rm').cloneNode(true); svg.removeAttribute('id');
     $$('#rm-car,#rm-glow', svg).forEach(function (x) { x.remove(); });
@@ -934,21 +985,25 @@
     var who = ag ? '<b>' + esc(ag.n) + '</b><small>' + esc([ag.p, ag.e].filter(Boolean).join(' · ')) + '</small>' : '<b>Suzu Travels</b><small>DMC of India · +91 70874 88961 · info@suzutravels.com · HP Tourism Reg. No. DTO-MND-11-243/2022</small>';
     var price = cv || ag ? (plan.price.client || plan.price.total) : plan.price.total, pp = cv || ag ? (plan.price.clientPP || plan.price.pp) : plan.price.pp;
     var h = '<div class="dh"><div>' + who + '</div><div style="text-align:right"><small>Itinerary · ' + fmtLong(today) + '</small><small>Ref ' + (W.__tpLastLead ? W.__tpLastLead.ref : '—') + '</small></div></div>' +
-      '<h2>' + esc(plan.title) + ' — ' + plan.totalDays + ' Days / ' + plan.nights + ' Nights</h2>' +
+      '<h2>' + esc(plan.title) + ' — ' + plan.totalDays + ' Days / ' + plan.nights + ' Nights</h2><p class="tag">Your personalised itinerary · आपकी अपनी यात्रा योजना' + (plan.route.some(function (id) { return HILL[PL[id].region]; }) ? ' · Hill roads, realistic drive times' : '') + '</p>' +
       '<div class="sum"><span><b>Dates:</b> ' + fmtLong(plan.days[0].date) + ' – ' + fmtLong(plan.days[plan.days.length - 1].date) + '</span><span><b>Travellers:</b> ' + esc(paxText()) + '</span><span><b>Pickup:</b> ' + esc(PL[S.s].name) + '</span><span><b>Drop:</b> ' + esc(PL[S.e].name) + '</span><span><b>Car:</b> ' + esc(plan.cab.v.name) + (plan.cab.cnt > 1 ? ' × ' + plan.cab.cnt : '') + '</span><span><b>Hotels:</b> ' + esc(plan.hotel.tier.name) + ', ' + (S.m === 'MAP' ? 'breakfast + dinner' : 'breakfast') + '</span><span><b>Road distance:</b> ~' + plan.kmDrive.toLocaleString('en-IN') + ' km</span></div>' +
       '<div class="mp">' + svg.outerHTML + '</div>' +
       '<h3>Day-by-day plan</h3><table><tr><th style="width:15%">Day</th><th>Plan</th><th style="width:20%">Night stay</th></tr>' +
-      plan.days.map(function (d) { return '<tr><td><b>Day ' + d.no + '</b><br>' + fmtD(d.date) + (d.km ? '<br>' + d.km + ' km · ' + hrs(d.min) : '') + '</td><td><b>' + esc(dayTitle(d)) + '</b><ul>' + dayLines(d).map(function (l) { return '<li>' + esc(l) + '</li>'; }).join('') + '</ul></td><td>' + (d.stay ? esc(PL[d.stay].name) : '—') + '</td></tr>'; }).join('') + '</table>' +
+      plan.days.map(function (d) { return '<tr><td><b>Day ' + d.no + '</b><br>' + fmtD(d.date) + (d.km ? '<br>' + d.km + ' km · ' + hrs(d.min) : '') + '</td><td><b>' + esc(dayTitle(d)) + '</b><ul>' + dayLines(d).map(function (l) { return '<li>' + esc(l) + '</li>'; }).join('') + '</ul></td><td>' + (d.stay ? esc(PL[d.stay].name) + '<br><small class="dv">' + esc(PL[d.stay].hi) + '</small>' : '—') + '</td></tr>'; }).join('') + '</table>' +
+      (plan.warn.length ? '<div class="gk"><b>Please note</b><ul>' + plan.warn.map(function (w) { return '<li>' + esc(w.t) + '</li>'; }).join('') + '</ul></div>' : '') +
       '<h3>Hotels</h3><table><tr><th>Place</th><th>Nights</th><th>Category</th></tr>' + plan.hotel.rows.map(function (r) { return '<tr><td>' + esc(PL[r.id].name) + '</td><td>' + r.n + '</td><td>' + esc(plan.hotel.tier.name) + ' or similar</td></tr>'; }).join('') + '</table>' +
+      '<h3>Route at a glance</h3><table><tr><th>Leg</th><th style="width:18%">Road</th><th style="width:18%">Drive</th></tr>' + plan.days.filter(function (d) { return d.km; }).map(function (d) { return '<tr><td>Day ' + d.no + ' · ' + esc(PL[d.from].name.split(' (')[0]) + ' → ' + esc(PL[d.to].name.split(' (')[0]) + (d.via.length ? ' <small>via ' + esc(d.via.map(function (v) { return PL[v.id].name.split(' (')[0]; }).join(', ')) + '</small>' : '') + '</td><td>' + d.km + ' km</td><td>' + hrs(d.min) + '</td></tr>'; }).join('') + '<tr><td><b>Total</b></td><td><b>~' + plan.kmDrive.toLocaleString('en-IN') + ' km</b></td><td></td></tr></table>' +
       '<div class="pr"><b>' + (cv || ag ? 'Package price: ' : 'Estimated price: ') + inr(pp) + ' per adult</b> · total ' + inr(price) + ' for ' + esc(paxText()) + '<br><small>' + (cv || ag ? 'Subject to hotel and car availability on your dates.' : 'Estimate from 2026 market rates (higher side). Final price after availability check — usually at or below this estimate.') + '</small></div>' +
       '<h3>Included</h3><ul><li>Private ' + esc(plan.cab.v.name) + ' with driver for all transfers and sightseeing as per the plan; fuel, tolls, parking and driver allowance</li><li>' + plan.nights + ' nights in ' + esc(plan.hotel.tier.name) + ' hotels (' + plan.hotel.rooms.rooms + ' room' + (plan.hotel.rooms.rooms > 1 ? 's' : '') + ')' + (S.m === 'MAP' ? ' with breakfast and dinner' : ' with breakfast') + '</li><li>All applicable taxes</li></ul>' +
       '<h3>Not included</h3><ul><li>Flights / trains, entry tickets, ropeway, gondola and helicopter tickets</li><li>Adventure activities, Rohtang and other permits, pony / palki, local union taxis where mandatory</li><li>Personal expenses, room heaters, anything not listed as included</li>' + (S.x.length ? '<li>Add-ons requested (price on request): ' + esc(S.x.map(function (x) { return ADDONS.filter(function (a) { return a.id === x; })[0].n; }).join(', ')) + '</li>' : '') + '</ul>' +
       (ag ? '' : '<h3>How to book</h3><ul><li>A small token advance confirms the booking and locks the rate; the balance is paid before the trip starts.</li><li>The advance is non-refundable; instead of cancelling, the travel date can be changed once, to a date within 6 months.</li><li>Pay online via Razorpay, or by bank transfer / UPI.</li></ul>') +
-      '<div class="ft">' + (ag ? 'Prepared by ' + esc(ag.n) + '. Ground arrangements by Suzu Travels (DMC).' : 'Suzu Travels · NH 103, Ghumarwin, Bilaspur, HP 174021 · WhatsApp +91 70874 88961 · suzutravels.com') + ' · Your plan link: ' + esc(shareUrl(!!ag)) + '</div>';
+      (function () { var tips = regionTips(plan), notes = placeNotes(plan); return (tips.length ? '<h3>Good to know &amp; packing</h3><ul class="two">' + tips.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' : '') + (notes.length ? '<h3>Place notes</h3><ul class="two">' + notes.map(function (n) { return '<li><b>' + esc(n[0]) + ':</b> ' + esc(n[1]) + '</li>'; }).join('') + '</ul>' : ''); })() +
+      '<h3>On the trip — useful numbers</h3><p class="nums">' + (ag ? esc(ag.n) + (ag.p ? ' · ' + esc(ag.p) : '') : 'Suzu Travels 24×7 trip desk · WhatsApp / call <b>+91 70874 88961</b>') + ' · Emergency <b>112</b> · Ambulance <b>108</b> · India Tourist Helpline <b>1800-11-1363</b>' + '</p>' +
+      '<div class="ft"><div class="qr" id="doc-qr"></div><div>' + (ag ? 'Prepared by ' + esc(ag.n) + '. Ground arrangements by Suzu Travels (DMC).' : 'Suzu Travels · NH 103, Ghumarwin, Bilaspur, HP 174021 · WhatsApp +91 70874 88961 · suzutravels.com') + '<br>Your plan link (scan or open to edit): ' + esc(shareUrl(!!ag)) + '</div></div>';
     $('#doc').innerHTML = h;
     var t0 = D.title; D.title = (ag ? ag.n.replace(/[^\w]+/g, '-') : 'Suzu-Travels') + '-Itinerary-' + plan.title.replace(/[^\w]+/g, '-') + '-' + plan.totalDays + 'D';
     ev('trip_planner', { step: 'pdf' });
-    setTimeout(function () { W.print(); setTimeout(function () { D.title = t0; }, 800); }, 80);
+    qrInto($('#doc-qr'), shareUrl(!!ag), function () { setTimeout(function () { W.print(); setTimeout(function () { D.title = t0; }, 800); }, 80); });
   }
 
   /* ---------------- boot ---------------- */
@@ -995,8 +1050,9 @@
     if (MODE === 'agent') setMode('agent');
     renderTemplates();
     if (S.cv) { var md = $('.tp-mode'); if (md) md.hidden = true; }
-    if (fromLink) { openWs(); if (S.cv && S.g && S.g.n) toast('Itinerary prepared by ' + S.g.n); }
-    W.SuzuTripPlanner = { state: S, compute: compute, load: function (id) { var t = TPL.filter(function (x) { return x.id === id; })[0]; if (t) loadTpl(t); }, version: VER };
+    if (fromLink) { openWs(); if (S.cv && S.g && S.g.n) toast('Itinerary prepared by ' + S.g.n); if (Q.get('pdf') === '1') setTimeout(function () { if (LAST) doPdf(); }, 1200); }
+    W.SuzuTripPlanner = { state: S, compute: compute, geo: function () { return !!ROADS.geoLoaded; }, load: function (id) { var t = TPL.filter(function (x) { return x.id === id; })[0]; if (t) loadTpl(t); }, version: VER };
   }
   if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', boot); else boot();
+  if (W.requestIdleCallback) W.requestIdleCallback(loadGeo, { timeout: 1500 }); else setTimeout(loadGeo, 300);
 })();

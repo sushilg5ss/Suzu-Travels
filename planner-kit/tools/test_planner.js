@@ -19,6 +19,8 @@ const { chromium, devices } = require('playwright');
     r.days = await page.$$eval('.tl-day', x => x.length);
     r.price = await page.textContent('#price .big');
     r.title = await page.textContent('#m-title');
+    r.geoLoaded = await page.evaluate(() => SuzuTripPlanner.geo());
+    r.routePts = await page.evaluate(() => { const p = document.querySelector('#rm .route'); return p ? (p.getAttribute('d') || '').split('L').length : 0; });
     await page.screenshot({ path: `${out}/${name}-2-plan.png`, fullPage: false });
     await page.screenshot({ path: `${out}/${name}-2b-full.png`, fullPage: true });
     // add stop via suggestion
@@ -39,10 +41,21 @@ const { chromium, devices } = require('playwright');
     // spiti in Dec -> season warning
     await page.evaluate(() => { SuzuTripPlanner.load('spiti-circuit'); }); await page.waitForTimeout(800);
     r.spiti = { sub: await page.textContent('#m-sub'), warns: await page.$$eval('.warn', x => x.map(y => y.textContent)) };
+    // v0.5 templates: new regions price sanity
+    r.v05 = {};
+    for (const id of ['golden-triangle', 'rajasthan-royal', 'kumaon-kainchi', 'auli-chopta', 'ladakh-grand', 'agra-mathura']) {
+      await page.evaluate((x) => SuzuTripPlanner.load(x), id); await page.waitForTimeout(700);
+      r.v05[id] = { days: await page.$$eval('.tl-day', x => x.length), price: await page.textContent('#price .big'), km: await page.textContent('#m-sub'), warns: (await page.$$eval('.warn', x => x.map(y => y.textContent))).length };
+    }
+    await page.screenshot({ path: `${out}/${name}-4b-rajasthan.png`, fullPage: true });
+    await page.evaluate(() => SuzuTripPlanner.load('shimla-manali')); await page.waitForTimeout(800);
     // lead + pdf
     await page.click('#price [data-act="pdf"]'); await page.waitForTimeout(300);
     await page.fill('#ld-name', 'TEST Claude'); await page.fill('#ld-ph', '9876543210'); await page.click('#ld-go'); await page.waitForTimeout(600);
+    await page.waitForTimeout(2200);
     r.printed = await page.evaluate(() => window.__printed || 0);
+    r.doc = await page.evaluate(() => { const d = document.querySelector('#doc'); return { len: d.innerHTML.length, tips: /Good to know/.test(d.innerHTML), route: /Route at a glance/.test(d.innerHTML), qr: !!d.querySelector('#doc-qr img, #doc-qr canvas'), nums: /112/.test(d.innerHTML) }; });
+    await page.emulateMedia({ media: 'print' }); await page.screenshot({ path: `${out}/${name}-6-pdf.png`, fullPage: true }); await page.emulateMedia({ media: 'screen' });
     r.lead = await page.evaluate(() => window.__tpLastLead && window.__tpLastLead.destination);
     // share link round-trip
     await page.click('#price [data-act="share"]'); await page.waitForTimeout(400);

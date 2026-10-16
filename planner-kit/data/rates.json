@@ -1,5 +1,5 @@
 {
-  "version": "0.2 — 16 Oct 2026 (rate audit #1)",
+  "version": "0.3 — 16 Oct 2026 (rate audit #1 + Rajasthan class)",
   "note": "Estimator rates. Deliberately on the higher side of the 2026 market so the team can confirm at or below the estimate. Cab per-km rates and driver allowance are the same as the live /cabs/ fare engine (cab-kit/cabs_data.py). Hotel rates: per room per night incl. breakfast + dinner (MAP), double occupancy, off-peak. Sources: research/rates-sources.md.",
   "cab": {
     "min_km_per_day": 250,
@@ -13,7 +13,7 @@
       {"id": "urbania", "name": "Force Urbania (17 seats)",    "hi": "अर्बानिया",        "seats": 17, "rate": 36, "allow": 500}
     ],
     "suv_only_regions": ["remote_route"],
-    "suv_places": ["kaza", "tabo", "nako", "chandratal", "jispa", "sarchu", "leh", "nubra", "pangong", "kargil", "chitkul"],
+    "suv_places": ["kaza", "tabo", "nako", "chandratal", "jispa", "sarchu", "leh", "nubra", "pangong", "kargil", "chitkul", "tsomoriri", "lamayuru", "auli", "chopta"],
     "local_union_factor": {"kashmir": 1.25, "ladakh": 1.35},
     "local_union_note": "In Kashmir and Ladakh sightseeing runs on local union taxis; the estimate already includes their higher rates."
   },
@@ -26,7 +26,8 @@
       "pilgrim":      {"label": "Pilgrim town",            "deluxe": 2400},
       "pilgrim_city": {"label": "Pilgrim city (Katra / Haridwar)", "deluxe": 4000},
       "kashmir":      {"label": "Kashmir",                 "deluxe": 4400},
-      "ladakh":       {"label": "Ladakh",                  "deluxe": 3900}
+      "ladakh":       {"label": "Ladakh",                  "deluxe": 3900},
+      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 3600}
     },
     "tiers": [
       {"id": "standard", "name": "Standard (2★ / homestay)", "hi": "स्टैंडर्ड", "f": 0.7},

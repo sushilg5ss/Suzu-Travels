@@ -10,13 +10,17 @@ from places import PLACES
 
 def rd(p): return open(os.path.join(HERE, p), encoding='utf-8').read()
 data = {
-    'v': '0.4',
+    'v': '0.5',
     'built': time.strftime('%Y-%m-%d'),
     'places': PLACES,
     'roads': json.loads(rd('data/roads.json')),
     'rates': json.loads(rd('data/rates.json')),
     'templates': json.loads(rd('data/templates.json')),
 }
+# v0.5: road geometry (~460 KB) is served as a separate file loaded after first paint
+geo = data['roads'].pop('geo')
+geo_blob = json.dumps({'geo': geo}, ensure_ascii=False, separators=(',', ':'))
+data['geo_v'] = hashlib.sha256(geo_blob.encode('utf-8')).hexdigest()[:8]
 ids = {p['id'] for p in PLACES}
 assert data['roads']['ids'] == [p['id'] for p in PLACES], 'roads.json is stale: run tools/fetch_roads.py'
 for t in data['templates']:
@@ -32,6 +36,8 @@ src = src.replace('"@graph":[', '"@graph":[' + json.dumps({'@type': 'FAQPage', '
 html = src.replace('/*__CSS__*/', rd('src/planner.css')).replace('/*__JS__*/', rd('src/planner.js')).replace('/*__DATA__*/', blob)
 out = os.path.join(HERE, 'dist', 'plan-your-trip')
 os.makedirs(out, exist_ok=True)
+open(os.path.join(out, 'roads-geo.json'), 'w', encoding='utf-8').write(geo_blob)
+print(os.path.join(out, 'roads-geo.json'), len(geo_blob.encode('utf-8')), 'bytes, v', data['geo_v'])
 fn = os.path.join(out, 'index.html')
 open(fn, 'w', encoding='utf-8').write(html)
 b = html.encode('utf-8')

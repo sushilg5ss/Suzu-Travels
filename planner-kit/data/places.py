@@ -152,4 +152,87 @@ add("nainital", "Nainital", "नैनीताल", 29.3803, 79.4636, "uttarakh
 add("corbett", "Jim Corbett (Ramnagar)", "जिम कॉर्बेट", 29.3940, 79.1260, "uttarakhand", "stay", "hill",
     [("Jungle safari — Bijrani / Jhirna / Dhikala (book online)", 40), ("Garjiya Devi Temple", 15)])
 
+# ---------- v0.5 (16 Oct 2026): Agra & Mathura, Rajasthan, Kumaon & Garhwal extras, Himachal extras, J&K / Ladakh extras ----------
+# ---- Uttar Pradesh: Agra & Braj ----
+add("agra", "Agra", "आगरा", 27.1767, 78.0081, "up", "stay", "metro",
+    [("Taj Mahal at sunrise (closed Fridays)", 10, "Buy tickets online; closed on Fridays"), ("Agra Fort", 8), ("Mehtab Bagh sunset view", 15),
+     ("Fatehpur Sikri", 80), ("Itimad-ud-Daulah (Baby Taj)", 10)], tip="Agra Cantt railway / Yamuna Expressway from Delhi (~3.5 h)")
+add("mathura", "Mathura – Vrindavan", "मथुरा – वृंदावन", 27.4924, 77.6737, "up", "temple", "pilgrim_city",
+    [("Shri Krishna Janmabhoomi darshan", 5), ("Banke Bihari & Prem Mandir, Vrindavan", 25), ("ISKCON Vrindavan", 25),
+     ("Govardhan parikrama (21 km, optional)", 50), ("Barsana & Nandgaon", 110)], tip="Keep phones/leather items out at Janmabhoomi; evening Prem Mandir lights")
+# ---- Rajasthan ----
+add("jaipur", "Jaipur", "जयपुर", 26.9124, 75.7873, "rajasthan", "hub", "rajasthan",
+    [("Amber Fort & Jal Mahal", 30), ("Hawa Mahal, City Palace & Jantar Mantar", 10), ("Nahargarh sunset", 20),
+     ("Chokhi Dhani evening", 40), ("Birla Mandir & Albert Hall", 10)], tip="Jaipur airport / railway station pickup", local_km=70)
+add("pushkar", "Pushkar – Ajmer", "पुष्कर – अजमेर", 26.4897, 74.5511, "rajasthan", "temple", "pilgrim",
+    [("Brahma Temple & Pushkar Lake ghats", 3), ("Ajmer Sharif Dargah", 30), ("Savitri Mata ropeway", 5)],
+    tip="Camel fair in Kartik (Oct/Nov) — hotels fill up")
+add("ranthambore", "Ranthambore (Sawai Madhopur)", "रणथंभौर", 26.0173, 76.5026, "rajasthan", "stay", "rajasthan",
+    [("Jungle safari — morning / afternoon (book online, Get Quote)", 40), ("Ranthambore Fort & Trinetra Ganesh", 20)],
+    months=[10, 11, 12, 1, 2, 3, 4, 5, 6], tip="Park closed July–September for monsoon; safaris book out 30+ days ahead")
+add("bikaner", "Bikaner", "बीकानेर", 28.0229, 73.3119, "rajasthan", "stay", "rajasthan",
+    [("Junagarh Fort", 5), ("Karni Mata Temple, Deshnok", 65), ("Camel Research Centre", 20)])
+add("jaisalmer", "Jaisalmer", "जैसलमेर", 26.9157, 70.9083, "rajasthan", "stay", "rajasthan",
+    [("Golden Fort & Patwon ki Haveli", 5), ("Sam sand dunes — camel ride & desert camp", 90), ("Gadisar Lake sunrise", 5),
+     ("Kuldhara & Longewala war memorial", 250)], tip="Desert camp night at Sam is the highlight; very hot Apr–Jun", local_km=70)
+add("jodhpur", "Jodhpur", "जोधपुर", 26.2389, 73.0243, "rajasthan", "stay", "rajasthan",
+    [("Mehrangarh Fort & Jaswant Thada", 10), ("Blue City walk & Clock Tower market", 5), ("Umaid Bhawan Palace museum", 10),
+     ("Osian temples", 130)])
+add("kumbhalgarh", "Kumbhalgarh – Ranakpur", "कुंभलगढ़ – रणकपुर", 25.1528, 73.5872, "rajasthan", "stay", "remote",
+    [("Kumbhalgarh Fort — 36 km wall", 5), ("Ranakpur Jain Temple", 70)])
+add("udaipur", "Udaipur", "उदयपुर", 24.5854, 73.7125, "rajasthan", "stay", "rajasthan",
+    [("City Palace & Lake Pichola boat ride", 8), ("Jagdish Temple & Bagore ki Haveli dance show", 5), ("Sajjangarh (Monsoon Palace) sunset", 20),
+     ("Eklingji & Nathdwara (Shrinathji)", 100), ("Chittorgarh Fort", 240)], local_km=70)
+add("mountabu", "Mount Abu", "माउंट आबू", 24.5926, 72.7156, "rajasthan", "stay", "hill",
+    [("Dilwara Jain Temples", 5), ("Nakki Lake & Sunset Point", 5), ("Guru Shikhar", 30), ("Achalgarh", 20)])
+# ---- Uttarakhand: Kumaon & Garhwal extras ----
+add("kathgodam", "Kathgodam / Haldwani", "काठगोदाम", 29.2650, 79.5470, "uttarakhand", "hub", "metro", tip="Railhead for Nainital & Kumaon (Shatabdi / Ranikhet Express)")
+add("kainchi", "Kainchi Dham", "कैंची धाम", 29.4150, 79.5136, "uttarakhand", "temple", "pilgrim",
+    [("Neem Karoli Baba ashram darshan", 2, "No photography inside; big crowd on 15 June bhandara")], tip="Usually a stop on the way to Nainital / Almora; stays are limited")
+add("bhimtal", "Bhimtal – Sattal", "भीमताल – सातताल", 29.3445, 79.5631, "uttarakhand", "stay", "hill",
+    [("Bhimtal Lake & island aquarium", 3), ("Sattal birding & boating", 15), ("Naukuchiatal", 10)])
+add("mukteshwar", "Mukteshwar", "मुक्तेश्वर", 29.4722, 79.6479, "uttarakhand", "stay", "hill",
+    [("Mukteshwar Mahadev & Chauli ki Jali", 3), ("Himalayan sunrise view", 2), ("Fruit orchards & Bhalu Gaad waterfall", 15)])
+add("almora", "Almora", "अल्मोड़ा", 29.5971, 79.6591, "uttarakhand", "stay", "hill",
+    [("Kasar Devi Temple", 10), ("Jageshwar Dham (124 temples)", 70), ("Binsar Wildlife Sanctuary & Zero Point", 60), ("Chitai Golu Devta", 15)])
+add("kausani", "Kausani", "कौसानी", 29.8425, 79.6027, "uttarakhand", "stay", "hill",
+    [("300 km Himalayan panorama — Trishul, Nanda Devi", 2), ("Anasakti (Gandhi) Ashram", 2), ("Baijnath Temple, Garur", 40), ("Tea estate", 5)])
+add("ranikhet", "Ranikhet", "रानीखेत", 29.6434, 79.4322, "uttarakhand", "stay", "hill",
+    [("Jhula Devi Temple & Chaubatia Gardens", 15), ("Majkhali view point", 25), ("Golf course & KRC Museum", 5)])
+add("lansdowne", "Lansdowne", "लैंसडाउन", 29.8377, 78.6871, "uttarakhand", "stay", "hill",
+    [("Tip-n-Top & Bhulla Tal", 5), ("Tarkeshwar Mahadev", 70), ("St Mary's Church & War Memorial", 3)])
+add("dhanaulti", "Dhanaulti – Kanatal", "धनोल्टी – कानाताल", 30.4267, 78.2413, "uttarakhand", "stay", "hill",
+    [("Eco Park & Surkanda Devi (ropeway)", 15), ("Tehri Lake water sports (Get Quote)", 50), ("Camp evening", 0)])
+add("chopta", "Chopta – Tungnath", "चोपता – तुंगनाथ", 30.4895, 79.1927, "uttarakhand", "stay", "remote",
+    [("Tungnath Temple & Chandrashila trek (4 km, 3,680 m)", 5, "Trek starts at dawn; temple open ~May–Nov"), ("Deoria Tal", 25), ("Ukhimath Omkareshwar", 30)],
+    months=[3, 4, 5, 6, 9, 10, 11, 12], tip="Camps and small lodges; heavy snow Jan–Feb, road often shut")
+add("auli", "Auli", "औली", 30.5293, 79.5658, "uttarakhand", "stay", "remote",
+    [("Auli ropeway & Gorson Bugyal", 5), ("Skiing / snow play Jan–Mar (Get Quote)", 0), ("Joshimath Narsingh Temple", 15), ("Badrinath day trip (May–Oct)", 90, "", DHAM)],
+    tip="Via Joshimath; SUV advised. Snow Dec–Mar, meadows Apr–Jun")
+# ---- Himachal extras ----
+add("khajjiar", "Khajjiar", "खज्जियार", 32.5490, 76.0620, "himachal", "stay", "hill",
+    [("Khajjiar meadow & lake — Mini Switzerland", 2), ("Kalatop Wildlife Sanctuary", 15), ("Zorbing & horse ride (Get Quote)", 0)],
+    tip="Road from Dalhousie can close after heavy snow (Jan–Feb)")
+add("barot", "Barot", "बरोट", 32.0330, 76.8450, "himachal", "stay", "remote",
+    [("Uhl river & trout fishing", 3), ("Nargu Wildlife Sanctuary walk", 10), ("Lohardi & Rajgundha", 40)])
+add("rewalsar", "Rewalsar", "रिवालसर", 31.6340, 76.8330, "himachal", "temple", "pilgrim",
+    [("Rewalsar Lake — Padmasambhava statue, gurudwara & temples", 2), ("Naina Devi (Rewalsar) & seven lakes", 15)], stay=True)
+add("baijnath", "Baijnath", "बैजनाथ", 32.0523, 76.6487, "himachal", "temple", "pilgrim",
+    [("Baijnath Shiva Temple (1204 AD)", 2), ("Bir Tibetan colony", 15)], tip="Usually a 1-hour stop between Palampur and Bir/Mandi")
+add("shoja", "Shoja", "शोजा", 31.5560, 77.3650, "himachal", "stay", "hill",
+    [("Jalori Pass & Serolsar Lake (5 km walk)", 15), ("Raghupur Fort meadow", 15), ("Waterfall point", 5)],
+    months=[3, 4, 5, 6, 7, 8, 9, 10, 11, 12], tip="Jalori Pass closes in heavy snow (Jan–Feb)")
+# ---- Punjab ----
+add("anandpur", "Anandpur Sahib", "आनंदपुर साहिब", 31.2390, 76.5020, "punjab", "temple", "pilgrim",
+    [("Takht Sri Kesgarh Sahib", 2), ("Virasat-e-Khalsa museum (closed Mondays)", 3), ("Naina Devi (ropeway)", 20)])
+# ---- Jammu & Kashmir / Ladakh extras ----
+add("patnitop", "Patnitop", "पटनीटॉप", 33.0880, 75.3270, "kashmir", "stay", "hill",
+    [("Nathatop & Sanasar meadow (paragliding, Get Quote)", 30), ("Patnitop skyview gondola", 10), ("Naag Mandir & pine walks", 3)],
+    tip="2 h from Katra — a cool break after the Vaishno Devi trek")
+add("lamayuru", "Lamayuru", "लामायुरू", 34.2830, 76.7730, "ladakh", "stay", "ladakh",
+    [("Lamayuru Monastery & moonland", 3), ("Alchi Monastery", 60), ("Fotu La view", 15)])
+add("tsomoriri", "Tso Moriri (Korzok)", "त्सो मोरीरी", 32.9630, 78.2640, "ladakh", "stay", "remote",
+    [("Tso Moriri lakeside & Korzok Monastery", 3), ("Puga hot springs & Tso Kar", 60)],
+    months=[5, 6, 7, 8, 9, 10], tip="4,500 m — only after 2+ nights in Leh; Inner Line Permit")
+
 PLACES = P
