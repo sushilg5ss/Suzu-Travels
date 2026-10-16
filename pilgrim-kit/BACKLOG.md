@@ -25,8 +25,8 @@
 | 15 | media | `chamunda-devi` | hub | temple | chamunda devi temple (14,800) | devi | |
 | 16 | media | `kangra-devi` | hub | temple | kangra devi temple (6,600) | devi | Brajeshwari; ghee/butter Makar Sankranti |
 | 17 | media | `vaishno-devi-yatra` | hub | yatra | vaishno devi yatra (8,100; vaishno devi temple 60,500) | cave | RFID card rules; CTA 9367 |
-| 18 | todo | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
-| 19 | todo | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
+| 18 | researched | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
+| 19 | researched | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
 | 20 | todo | `rameshwaram` | 12-JL | temple | rameshwaram temple (246,000) | gopuram | 22 theerthams |
 | 21 | todo | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (135,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
 | 22 | todo | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |

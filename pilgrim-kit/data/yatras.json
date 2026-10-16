@@ -263,12 +263,14 @@
         "duration_days": 57,
         "pratham_puja": "2026-06-29 (Jyeshtha Purnima)",
         "advance_registration_opened": "2026-04-15",
-        "status": "concluded 2026-08-28; 4.8 lakh+ pilgrims"
+        "status": "concluded 2026-08-28 (Chhari Mubarak); 4.8 lakh+ pilgrims. Public yatra suspended indefinitely from 10 Aug 2026 (Baltal and Pahalgam tracks damaged, heavy-rain advisory; registration closed) after an earlier weather suspension from 19 Jul 2026; the formal conclusion with Chhari Mubarak via the Pahalgam route stayed on 28 Aug.",
+        "suspension_source": "https://telanganatoday.com/amarnath-yatra-suspended-indefinitely-as-tracks-damaged-in-adverse-weather-conditions (IANS 2026-08-10); https://ianslive.in/due-to-adverse-weather-advisory-sanjy-2026-to-remain-suspended-from-july-19--20260718222212",
+        "registration_2026": "Advance registration from 15 Apr 2026 at 554 branches of J&K Bank, PNB, SBI and Yes Bank + online; first-come-first-served daily route quotas; CHC issued on/after 8 Apr 2026; group accident insurance Rs 10 lakh per registered pilgrim (News On AIR 2026-04-15)"
       },
       "dates_2027": null,
       "source": "Kashmir Life 2026-04-12 (LG Manoj Sinha announcement: 3 Jul-28 Aug, 57 days); Organiser 2026-02-13 (pratham puja 29 Jun); News On AIR 2026-08-28 (concluded, 4.8 lakh+)",
-      "as_of": "2026-10-08",
-      "notes": "2027 dates: not yet announced (SASB usually announces in spring)."
+      "as_of": "2026-10-16",
+      "notes": "2027 dates: not yet announced as of 2026-10-16 (searched; SASB usually announces in spring, registration ~mid-April). Expected close on Raksha Bandhan / Shravan Purnima = 17 Aug 2027 per panchang (calendardate.com) - pattern only, not an announcement."
     },
     "registration": {
       "required": true,
@@ -305,7 +307,7 @@
     "transport_options": [
       "Road to Pahalgam/Baltal in SASB-escorted convoys from Jammu (Bhagwati Nagar base camp)",
       "Ponies, palkis, pithoos (registered service providers)",
-      "Helicopter: NOT available in 2026 - routes declared no-fly zone and services suspended (Zee News 2026-06-03); confirm for 2027"
+      "Helicopter: NOT available in 2026 - Baltal and Pahalgam routes declared no-fly zones and helicopter operations suspended (Zee News 2026-06-03; area beyond base camps no-fly per IANS 2026-08-10); confirm for 2027"
     ],
     "days_typical": "Baltal: 1-2 days on the trek (4-5 days from Jammu); Pahalgam: 3-5 days on the trek (6-7 days from Jammu)",
     "difficulty": {
@@ -360,7 +362,9 @@
       "https://newsonair.gov.in/all-arrangements-in-place-for-57-day-amarnath-yatra-beginning-july-3/",
       "https://zeenews.india.com/india/amarnath-yatra-2026-authorities-declare-baltal-pahalgam-routes-no-fly-zones-helicopter-services-suspended-3052599.html",
       "https://en.wikipedia.org/wiki/Amarnath_Temple",
-      "https://www.freepressjournal.in/lifestyle/did-muslim-shepherd-buta-malik-discover-amarnath-cave-heres-what-legend-says"
+      "https://www.freepressjournal.in/lifestyle/did-muslim-shepherd-buta-malik-discover-amarnath-cave-heres-what-legend-says",
+      "https://newsonair.gov.in/registration-for-shri-amarnath-yatra-begins-across-554-bank-branches/",
+      "https://telanganatoday.com/amarnath-yatra-suspended-indefinitely-as-tracks-damaged-in-adverse-weather-conditions"
     ]
   },
   {
