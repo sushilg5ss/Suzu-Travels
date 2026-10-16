@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; background: radial-gradient(ellipse at 70% 30%, #16324f 0%, #0b1f33 70%); }
+      .kick { position: absolute; left: 110px; top: 80px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .ttl { position: absolute; left: 110px; top: 128px; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 110px; top: 250px; width: 1700px; height: 720px; overflow: visible; }
+      .lab { font-family: "PJS"; font-weight: 800; font-size: 34px; fill: #fff; }
+      .sub { font-family: "PJS"; font-weight: 500; font-size: 26px; fill: rgba(255,255,255,0.8); }
+      .p2 { position: absolute; inset: 0; }
+      .step { position: absolute; top: 330px; width: 480px; height: 260px; border-radius: 26px; background: rgba(255,255,255,0.07); border: 2px solid rgba(212,162,76,0.55); }
+      .step .n { position: absolute; left: 34px; top: 30px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; }
+      .step .h { position: absolute; left: 34px; top: 82px; width: 420px; font-weight: 800; font-size: 50px; line-height: 1.1; }
+      .step .s { position: absolute; left: 34px; top: 196px; width: 420px; font-weight: 500; font-size: 28px; color: rgba(255,255,255,0.82); white-space: nowrap; }
+      .cnt { position: absolute; left: 110px; top: 660px; font-weight: 800; font-size: 170px; color: #d4a24c; letter-spacing: -0.03em; }
+      .cntl { position: absolute; left: 430px; top: 712px; width: 1300px; font-weight: 800; font-size: 50px; line-height: 1.15; }
+      .chips { position: absolute; left: 110px; top: 930px; width: 1700px; }
+      .chip { display: inline-block; margin-right: 18px; padding: 16px 30px; border-radius: 40px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 32px; }
+      .chip.o { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.6); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="p1" class="clip" data-start="0" data-duration="6.6" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick">WINTER · SPITI</div>
+        <div class="ttl">The only winter road to Kibber</div>
+        <svg class="map" viewBox="0 0 1700 720">
+          <path id="closed" d="M 330 330 C 520 250, 760 210, 1240 200" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="7" stroke-dasharray="14 14" stroke-linecap="round" />
+          <g id="xmark"><line x1="760" y1="200" x2="820" y2="260" stroke="#e35d5d" stroke-width="10" stroke-linecap="round"/><line x1="820" y1="200" x2="760" y2="260" stroke="#e35d5d" stroke-width="10" stroke-linecap="round"/>
+          <text x="790" y="170" text-anchor="middle" class="sub" style="fill:#f0a0a0">Manali – Kunzum: closed in winter</text></g>
+          <circle cx="330" cy="330" r="12" fill="rgba(255,255,255,0.6)"/><text x="315" y="300" text-anchor="end" class="sub">Manali</text>
+          <path d="M 120 640 C 260 620, 380 600, 520 590 S 760 560, 900 500 S 1080 420, 1160 360 S 1220 260, 1240 200 S 1320 120, 1420 90" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="12" stroke-linecap="round" />
+          <path id="road" d="M 120 640 C 260 620, 380 600, 520 590 S 760 560, 900 500 S 1080 420, 1160 360 S 1220 260, 1240 200 S 1320 120, 1420 90" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <g id="pins">
+            <g class="pin"><circle cx="120" cy="640" r="13" fill="#fff"/><text x="120" y="695" text-anchor="middle" class="lab">Shimla</text></g>
+            <g class="pin"><circle cx="300" cy="615" r="10" fill="#fff"/><text x="300" y="580" text-anchor="middle" class="sub">Narkanda</text></g>
+            <g class="pin"><circle cx="600" cy="582" r="10" fill="#fff"/><text x="600" y="630" text-anchor="middle" class="sub">Kalpa</text></g>
+            <g class="pin"><circle cx="880" cy="508" r="10" fill="#fff"/><text x="880" y="560" text-anchor="middle" class="sub">Nako</text></g>
+            <g class="pin"><circle cx="1110" cy="400" r="10" fill="#fff"/><text x="1140" y="440" class="sub">Tabo</text></g>
+            <g class="pin"><circle cx="1240" cy="200" r="13" fill="#fff"/><text x="1275" y="245" class="lab">Kaza</text><text x="1275" y="282" class="sub">~3,800 m</text></g>
+            <g class="pin"><circle cx="1420" cy="90" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/><text x="1460" y="80" class="lab">Kibber</text><text x="1460" y="118" class="sub">~4,270 m</text></g>
+          </g>
+          <circle id="car" cx="120" cy="640" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </div>
+      <div id="p2" class="clip p2" data-start="6.2" data-duration="5.8" data-track-index="1">
+        <div class="kick">IN KIBBER · DEC–FEB</div>
+        <div class="ttl">How a spotting day works</div>
+        <div class="step" id="s1" style="left:110px"><div class="n">01 · DAWN</div><div class="h">Ridge scan</div><div class="s">Village spotters glass the cliffs</div></div>
+        <div class="step" id="s2" style="left:720px"><div class="n">02 · CALL</div><div class="h">Spotter call</div><div class="s">A cat is seen, the team moves</div></div>
+        <div class="step" id="s3" style="left:1330px"><div class="n">03 · WAIT</div><div class="h">Scope view</div><div class="s">Short walk, then patience</div></div>
+        <div class="cnt" id="cnt">0</div>
+        <div class="cntl" id="cntl">snow leopards counted in Himachal<br/><span style="font-weight:500;font-size:36px;color:rgba(255,255,255,0.8)">2025 state survey · highest density in Spiti and Pin</span></div>
+        <div class="chips" id="chips"><span class="chip o">Kibber homestay + cab</span><span class="chip o">Sightings never guaranteed</span><span class="chip">Price: Get Quote</span></div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const road = document.getElementById("road"), car = document.getElementById("car");
+      const L = road.getTotalLength(); road.style.strokeDasharray = L + " " + L;
+      const st = { p: 0 };
+      function place() { const d = L * st.p; road.style.strokeDashoffset = (L - d).toFixed(2); const pt = road.getPointAtLength(Math.max(0.01, d)); car.setAttribute("cx", pt.x.toFixed(2)); car.setAttribute("cy", pt.y.toFixed(2)); }
+      tl.fromTo([".kick", ".ttl"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, 0.1);
+      tl.fromTo(".pin", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.35, stagger: 0.12 }, 0.4);
+      tl.to(st, { p: 1, duration: 3.6, ease: "sine.inOut", onUpdate: place }, 0.8);
+      tl.fromTo("#closed", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 2.6);
+      tl.fromTo("#xmark", { opacity: 0, scale: 0.4, transformOrigin: "790px 230px" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 3.2);
+      tl.to("#p1", { opacity: 0, duration: 0.4 }, 6.2);
+      tl.fromTo("#p2", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 6.2);
+      tl.fromTo(["#s1", "#s2", "#s3"], { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.35, ease: "power3.out" }, 6.5);
+      const c = { v: 0 }; const cnt = document.getElementById("cnt");
+      tl.fromTo("#cntl", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 7.9);
+      tl.to(c, { v: 83, duration: 1.6, ease: "power2.out", onUpdate: () => { cnt.textContent = Math.round(c.v); } }, 7.9);
+      tl.fromTo("#chips", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4 }, 9.6);
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
