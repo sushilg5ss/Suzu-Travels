@@ -8,6 +8,8 @@ Owner: the **Suzu Cab Experience Enhancer** agent (15:07 IST daily). Take the FI
 - [x] 2026-10-16 Real-photo fleet gallery (Wikimedia Commons CC photos, credits block) with 3D tilt + "View car" viewer (specs + per-tier fares + WhatsApp)
 - [x] 2026-10-16 Live route planner on the hub: any-to-any geocoding, real road route (OSRM) on a MapLibre/OpenFreeMap map, drive-through animation, distance/time, per-tier fares, WhatsApp lock-in, "Map" button on every route card
 
+- [x] 2026-10-17 Cinematic real-footage hero film on all 30 pages (replaces the drawn HyperFrames car loops), luxury hero styling (gradient, gold rule, glass chips)
+
 ## Next up (in order)
 | # | Enhancement | Why | Notes |
 |---|---|---|---|
@@ -23,7 +25,8 @@ Owner: the **Suzu Cab Experience Enhancer** agent (15:07 IST daily). Take the FI
 | 10 | [ ] **Speed pass**: inline-critical CSS trim, `content-visibility:auto` on below-fold sections, photo `srcset` | Keep PSI mobile ≥ 85 | Measure before/after |
 | 11 | [ ] **Compare 2–3 cars side by side** (tick cards → sticky compare bar) | Aggregators have it; ours ties into tiers | |
 | 12 | [ ] **Map labels outside India** (Islamabad/Lahore show at wide zoom on tall routes like Delhi→Manali): add a light mask polygon west of the border or bias `fitBounds` padding so the view stays over India | Sensitive for a Himachal brand | MapLibre fill layer over a hand-drawn polygon; keep boundaries hidden |
-| 13 | [ ] **Guest photo strip** (Suzu's own trip photos once Sushil shares a folder) | Trust | Only Suzu-owned images |
+| 13 | [ ] **Hero film v2** — add one clip with a clean modern SUV/Innova on a Himachal highway (Pexels/Suzu footage), light rain/night variant for monsoon months; keep ≤ 8 MB | Sushil wants it to feel luxury | ffmpeg recipe in LOG 17 Oct |
+| 14 | [ ] **Guest photo strip** (Suzu's own trip photos once Sushil shares a folder) | Trust | Only Suzu-owned images |
 
 ## Ideas parked (need Sushil)
 - Online token payment from the planner (Razorpay link) — Sushil decides when the booking engine (Trip Planner kit) is ready.

@@ -57,15 +57,17 @@ def video_tag(m, cls="", eager=False):
     if not m:
         return ""
     pre = "auto" if eager else "metadata"
+    mob = f'<source src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
     return (f'<video class="{cls}" autoplay muted loop playsinline preload="{pre}" poster="{m["poster"]}" width="{m.get("w",1600)}" height="{m.get("h",900)}">'
-            f'<source src="{m["webm"]}" type="video/webm"><source src="{m["mp4"]}" type="video/mp4"></video>')
+            f'{mob}<source src="{m["webm"]}" type="video/webm"><source src="{m["mp4"]}" type="video/mp4"></video>')
 
 # ---------------------------------------------------------------- blocks
 def hero(p, chips):
     trust = (f'<div class="szc-trust"><span><a href="/certificates/">{REG}</a></span><span>GST registered</span>'
              f'<span>{RATING}</span><span>24×7 WhatsApp {PHONE_TXT}</span></div>')
     chip_html = "".join(f"<li>{c}</li>" for c in chips)
-    return (f'<section class="szc-hero">{video_tag(MEDIA.get(p["slug"], {}).get("hero") or MEDIA.get("hero"), eager=True)}<div class="szc-hero-in">'
+    film = MEDIA.get("film") or MEDIA.get(p["slug"], {}).get("hero") or MEDIA.get("hero")   # 17 Oct 2026: one cinematic real-footage film on every cab page (Sushil: the drawn car loop looked cheap)
+    return (f'<section class="szc-hero">{video_tag(film, eager=True)}<div class="szc-hero-in">'
             f'<span class="szc-kicker">{p["kicker"]}</span><p class="szc-hero-tag">{p["tag"]}</p>'
             f'<p class="szc-hero-sub">{p["sub"]}</p><ul class="szc-chips">{chip_html}</ul>'
             f'<div class="szc-btns"><a class="szc-btn gold" href="{wa(p["wa"] + " (page: " + p["slug"] + ")")}" target="_blank" rel="noopener">Get fare on WhatsApp</a>'
@@ -133,6 +135,9 @@ def credits_block():
         ph = PHOTOS.get(v["id"])
         if ph and ph.get("credit"):
             items.append(f'<li>{v["name"]} - {ph["credit"]}, <a href="{ph["lic_url"]}" rel="license noopener" target="_blank">{ph["lic"]}</a>, via <a href="{ph["page"]}" rel="noopener" target="_blank">Wikimedia Commons</a>{" (cropped)" if ph.get("cropped") else ""}</li>')
+    film = MEDIA.get("film", {})
+    if film.get("credit"):
+        items.append(f'<li>Hero film - {film["credit"]}</li>')
     if not items:
         return ""
     return ('<details class="szc-credits"><summary>Photo credits (the cars shown are representative of each class, not the exact vehicle you will get)</summary><ul>'

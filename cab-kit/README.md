@@ -58,8 +58,9 @@ Hero (HyperFrames loop) → finder (From/To/date → planner) → sticky menu �
 Hero (per-page HyperFrames loop, title in video on the right) → sticky menu → `#overview` (answer-first 40–70 words + facts) → `#fares` (table for 7 vehicles + inclusions + calculator) → `#route` (route-map loop + stop-by-stop list) → `#cars` → `#tips` → `#booking` → `#quote` form (WhatsApp) + "Request a call back" (`#enquiry` opens the site-wide lead popup) → `#more` (route cards + related links) → `#faq` (+ FAQPage JSON-LD) + TaxiService JSON-LD (no prices/offers in schema).
 City pages add a local-rates table and outstation table; vehicle pages add per-km rate tables.
 
-## Media (HyperFrames)
-- Hero: `python3 gen_hero.py <slug>` (add a `VARIANTS` entry) → `cd heroes/<slug> && npx -y hyperframes@0.8.85 render -o out/master.mp4` → ffmpeg to 1600 px `hero.mp4` (crf 28) + `hero.webm` (VP9 crf 40) + `poster.webp` (frame 0).
+## Media (HyperFrames + film)
+- **Hero (all pages, since 17 Oct 2026):** one shared cinematic film `media.json → film` (`media/hub-film/hero.mp4` 8 MB 1600×900 24 fps, `hero.webm`, `hero-540.mp4` for phones via `<source media>`, `hero-poster.webp`), cut from four Pexels-licence clips (free for commercial use, no attribution required; credits kept in `media.json` and the page credits block). Sushil (17 Oct) rejected the drawn HyperFrames car loops ("20-year-old game"): keep heroes real-footage, cinematic, dark-emerald gradient, gold accents. Re-cut with ffmpeg (see LOG 17 Oct) if clips change; never AI renders of real car models.
+- (retired) per-page hero: `python3 gen_hero.py <slug>` → `cd heroes/<slug> && npx -y hyperframes@0.8.85 render -o out/master.mp4` → ffmpeg to 1600 px `hero.mp4` (crf 28) + `hero.webm` (VP9 crf 40) + `poster.webp` (frame 0).
 - Route map: add the page to `pages_content.py` with `map` (path + labels + ctx, or hub + spokes; every name must exist in `PLACES`) → `python3 gen_route.py <slug>` → snapshot (`npx hyperframes snapshot --at 6.5 --describe false`) and LOOK for label overlaps → render → 1280 px `route.mp4/.webm` + `route-poster.webp` (frame 6.5 s).
 - Commit to `cab-kit/media/<slug>/` on branch `cabs`, pin the new commit SHA in `media.json`. Sources of each composition go to `cab-kit/compositions/<slug>/`.
 

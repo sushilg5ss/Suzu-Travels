@@ -601,5 +601,20 @@
    "page": "https://commons.wikimedia.org/wiki/File:Scania_Metrolink_HD_14.5_M_Ashwamedh.jpg",
    "cropped": true
   }
+ },
+ "film": {
+  "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@cf324c3ea14d82a42c0a8315ae401376059af7e1/cab-kit/media/hub-film/hero.mp4",
+  "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@cf324c3ea14d82a42c0a8315ae401376059af7e1/cab-kit/media/hub-film/hero.webm",
+  "mobile": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@cf324c3ea14d82a42c0a8315ae401376059af7e1/cab-kit/media/hub-film/hero-540.mp4",
+  "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@cf324c3ea14d82a42c0a8315ae401376059af7e1/cab-kit/media/hub-film/hero-poster.webp",
+  "w": 1600,
+  "h": 900,
+  "credit": "real Himalayan road footage from Pexels (free licence): Vikash Singh (Solang Valley), Ex Route Adventures (snow pass), Vishal Kumar (Himachal hairpins), Nitin Khajotia (mountain road drone)",
+  "sources": [
+   "https://www.pexels.com/video/mountain-covered-with-snow-of-solang-valley-in-manali-26319337/",
+   "https://www.pexels.com/video/scenic-winter-drive-through-snowy-mountain-pass-35058293/",
+   "https://www.pexels.com/video/time-lapse-of-a-winding-road-in-mountains-himachal-pradesh-india-12718570/",
+   "https://www.pexels.com/video/drone-view-of-a-car-driving-on-a-mountain-road-15953000/"
+  ]
  }
 }

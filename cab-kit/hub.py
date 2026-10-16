@@ -10,7 +10,7 @@ HUB = dict(slug="cabs", title="Cab & Taxi Booking — Delhi, Chandigarh & Himach
     focus="himachal cab service",
     kicker="Suzu Cabs · North India",
     tag="Cabs and taxis for the hills, from a Himachal-based team",
-    sub="One-way drops, round trips and full tours from Delhi, Chandigarh, Pathankot and Jammu to Shimla, Manali, Dharamshala, Kashmir and Uttarakhand — hatchback to 17-seat Urbania.",
+    sub="One-way drops, round trips and full tours from Delhi, Chandigarh, Pathankot and Jammu to Shimla, Manali, Dharamshala, Kashmir and Uttarakhand — hatchback to 45-seat coach, in the fleet tier you choose.",
     wa="Hi Suzu Travels, I need a cab. From: ___ , to: ___ , date: ___ , people: ___")
 
 FAQS = [
