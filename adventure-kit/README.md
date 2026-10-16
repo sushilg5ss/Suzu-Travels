@@ -1,4 +1,4 @@
-# Suzu Adventure Kit v1.4 (4 Oct 2026)
+# Suzu Adventure Kit v1.7 (16 Oct 2026)
 
 Design system + build tool for every page under `suzutravels.com/adventure/`.
 Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Adventure …" agents.
@@ -13,6 +13,7 @@ Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Adventure …" a
 1. **No prices anywhere.** Every price slot says "Get Quote". Suzu sends today's rate for the customer's date on request (WhatsApp / quote form).
 2. **No operator names and no vendor-network claims.** Vendor onboarding is parked (Sushil, 29 Sep 2026): the pages exist to bring enquiries for Suzu's core packages. Suzu's sales team arranges each activity with a registered local operator on demand. Never write "our vendor network", "authorised/partner/verified vendors" or "2–3 options".
 3. Suzu Travels is a **registered Travel Agent with HP Tourism** — see "Business facts" below. Trust-row text: "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022", linked to `/certificates/`. Never "registered DMC".
+- **Card badges describe the option, never popularity.** No "Most booked", "Most asked", "Most popular", "Best seller", "Top pick" — Suzu has no published booking data and the rules forbid invented guest counts. Use descriptive badges ("Classic pick", "By the river", "Family pick", "Book early", "Day trip").
 4. Every page's CTAs: WhatsApp `https://wa.me/917087488961?text=<url-encoded: Hi Suzu Travels, I want a quote for <activity> in <place>. Travel date: ___ , people: ___>` and `/himachal-tour-packages-quote/`.
 5. Facts (seasons, closures, age/weight limits, rules) must be researched and current. Monsoon ban (Kullu, Kangra): 15 Jul – 15 Sep.
 
@@ -35,6 +36,7 @@ Each activity card has a unique id `act-<slug>` and a unique WhatsApp link; when
 Hero (montage video) → sticky menu of categories (Air · Water · Snow · Land & Rides · Treks & Camps · Ropeways & Parks · Rentals & Services · By destination) → `.sza-cats` category tiles → one `.sza-sec` per category with a `.sza-grid` of every activity in it (live pages link "Explore →", not-yet-built ones show only "Get Quote →") → "By destination" grid (Manali–Solang, Bir–Kangra, Kullu, Shimla–Kufri–Narkanda, Dharamshala, Bilaspur, Chamba–Dalhousie, Tirthan–Jibhi, Lahaul–Spiti) → safety band → how booking works → quote block → FAQ.
 
 ## Changelog
+- v1.7 (16 Oct 2026, QA): badge rule above; `template-activity.html` example badge "Most booked" → "Classic pick" (the template default had spread to 6 live pages). Live pages fixed by targeted replace the same day: 13162, 12711, 13491, 12167, 13389 ("Classic pick"), 13543 ("By the river"), 12250 ("Classic night"); khajjiar + bilaspur sources here updated. No CSS change — no re-inline needed.
 - v1.6 (15 Oct 2026, Visual Studio): hub `#services` gets `figure#services-explainer` (12 s "Where can your rental go this week?": scooty town / bike Solang–Sissu / Rohtang ✕ / Spiti multi-day / Leh ask first / after snow 4x4 only) between the services head and its cards; media `media/bike-rent-in-manali/explainer.*` @5adc702, poster WP 13414; `pages/adventure.py` generates it.
 - v1.5 (9 Oct 2026, Visual Studio): hub `#destinations` gets `figure#dest-explainer` (12 s "Where to go, and when": 9 regions + best months, facts from the hub's own destination cards) right after the lead line, media `media/adventure-hub/dest-explainer.*` @a3b1360, poster WP 12620; `pages/adventure.py` generates it.
 - v1.4 (30 Sep 2026, Page Builder; pushed by QA 4 Oct 2026): `.sza-media>p:empty{display:none}` — the theme leaves a stray empty `<p>` after the video/img in `.sza-media`, which dropped the text column under the media on desktop. Already live on 11632, 11776, 11945, 12099 (inlined); the Builder's own pushes were blocked, so this repo copy was behind the live pages until now. Page sources for kufri / solang / skiing are in Project docs `claude/adventure-pages/*.html|.patch`.

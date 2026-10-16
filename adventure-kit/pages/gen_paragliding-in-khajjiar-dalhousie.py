@@ -24,7 +24,7 @@ def card(src, w, h, alt, badge, title, meta, text, what, extra=""):
 cards = "".join([
     card(f"{UP}tandem-paragliding-pilot-and-passenger-in-flight-768x569.webp", 768, 569,
          "Tandem paragliding selfie: passenger in front and pilot behind, both in helmets, flying high above forested hills",
-         "Most booked", "Khajjiar tandem flight", "<b>Licensed tandem pilot</b>",
+         "Classic pick", "Khajjiar tandem flight", "<b>Licensed tandem pilot</b>",
          "A scenic flight over the meadow and the deodar forest around it. No licence or experience needed.",
          "a tandem paragliding flight in Khajjiar"),
     card(f"{UP}wide-meadow-edged-by-pine-forest-big-clouds-768x512.webp", 768, 512,

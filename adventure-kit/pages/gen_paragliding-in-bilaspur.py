@@ -25,7 +25,7 @@ def card(src, w, h, alt, badge, title, meta, text, what, extra="", cls=""):
 cards = "".join([
     card(f"{UP}tandem-paraglider-over-lake-hazy-mountains-768x1152.webp", 768, 1152,
          "Tandem paraglider with an orange wing flying high above a long lake between hazy blue mountains",
-         "Most asked", "Bandla tandem joyride", "<b>Bandla Dhar → Luhnu</b> · tandem",
+         "Classic pick", "Bandla tandem joyride", "<b>Bandla Dhar → Luhnu</b> · tandem",
          "A tandem flight from the ridge above Bilaspur town down to the Luhnu ground on the Gobind Sagar shore.",
          "a Bandla tandem joyride in Bilaspur"),
     card(f"{UP}tandem-paragliding-pilot-and-passenger-in-flight-768x569.webp", 768, 569,
