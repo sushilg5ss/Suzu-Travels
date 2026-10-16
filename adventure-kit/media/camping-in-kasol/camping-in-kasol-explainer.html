@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.22; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.7) 0%, rgba(11,31,51,0.92) 60%, #0b1f33 100%); }
+      .kick { position: absolute; left: 110px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 112px; width: 1700px; font-weight: 800; font-size: 72px; letter-spacing: -0.02em; }
+      svg.valley { position: absolute; left: 0; top: 230px; width: 1920px; height: 300px; overflow: visible; }
+      .node { position: absolute; top: 0; width: 260px; text-align: center; font-weight: 800; font-size: 32px; }
+      .nsub { display: block; font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.75); margin-top: 6px; }
+      .alt { position: absolute; left: 470px; top: 500px; width: 460px; color: #d4a24c; font-weight: 800; font-size: 46px; }
+      .higher { position: absolute; left: 1290px; top: 506px; width: 520px; text-align: right; color: rgba(255,255,255,0.9); font-weight: 800; font-size: 34px; }
+      .months { position: absolute; left: 110px; top: 588px; width: 1700px; height: 76px; }
+      .pill { position: absolute; top: 0; width: 400px; height: 76px; border-radius: 38px; border: 3px solid rgba(255,255,255,0.35); text-align: center; line-height: 70px; font-weight: 800; font-size: 34px; color: #fff; }
+      .fill { position: absolute; inset: -3px; border-radius: 38px; background: #d4a24c; }
+      .pt { position: relative; }
+      .pillon { position: absolute; top: 0; left: 0; width: 400px; height: 76px; border-radius: 38px; background: #d4a24c; text-align: center; line-height: 76px; font-weight: 800; font-size: 34px; color: #0b1f33; }
+      .card { position: absolute; top: 700px; width: 400px; height: 230px; border-radius: 22px; background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.18); }
+      .cname { position: absolute; left: 28px; top: 24px; width: 344px; font-weight: 800; font-size: 34px; }
+      .st { position: absolute; left: 28px; top: 92px; width: 344px; height: 120px; }
+      .stv { position: absolute; left: 0; top: 0; width: 344px; font-weight: 800; font-size: 30px; line-height: 1.25; }
+      .ic { display: block; font-size: 46px; line-height: 1.1; margin-bottom: 4px; }
+      .ok { color: #d4a24c; }
+      .wa { color: #ffffff; }
+      .no { color: #ff8a73; }
+      .foot { position: absolute; left: 110px; top: 968px; width: 1700px; height: 60px; font-weight: 800; font-size: 32px; }
+      .chip { position: absolute; top: 0; height: 60px; line-height: 56px; padding: 0 26px; border-radius: 30px; border: 2px solid rgba(255,255,255,0.5); white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">PARVATI VALLEY · KULLU</div>
+        <div class="title" id="title">Which Kasol camp for your month?</div>
+        <svg class="valley" viewBox="0 0 1920 300">
+          <path d="M 170 150 C 400 110, 560 190, 720 150 S 1050 110, 1200 150 S 1520 190, 1750 140" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="18" stroke-linecap="round" />
+          <path id="vline" d="M 170 150 C 400 110, 560 190, 720 150 S 1050 110, 1200 150 S 1520 190, 1750 140" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" />
+          <g id="dots">
+            <circle cx="170" cy="150" r="14" fill="#fff" />
+            <circle cx="500" cy="146" r="18" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+            <circle cx="720" cy="150" r="14" fill="#fff" />
+            <circle cx="960" cy="131" r="14" fill="#fff" />
+            <circle cx="1310" cy="160" r="14" fill="#fff" />
+            <circle cx="1750" cy="140" r="18" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          </g>
+        </svg>
+        <div id="labels">
+          <div class="node" style="left:40px;top:408px">Bhuntar<span class="nsub">airport</span></div>
+          <div class="node" style="left:370px;top:408px">Kasol<span class="nsub">~30 km</span></div>
+          <div class="node" style="left:590px;top:408px">Chalal<span class="nsub">walk across</span></div>
+          <div class="node" style="left:830px;top:408px">Manikaran<span class="nsub">~3.5 km</span></div>
+          <div class="node" style="left:1180px;top:408px">Barshaini<span class="nsub">road end</span></div>
+          <div class="node" style="left:1620px;top:408px">Tosh / Kalga<span class="nsub">high villages</span></div>
+        </div>
+        <div class="alt" id="alt">Kasol ~1,580 m</div>
+        <div class="higher" id="higher">higher &amp; colder →</div>
+        <div class="months">
+          <div class="pill" style="left:0"><div class="fill" id="f0"></div><span class="pt" id="t0">Mar–Jun</span></div>
+          <div class="pill" style="left:433px"><div class="fill" id="f1"></div><span class="pt" id="t1">Jul–Aug</span></div>
+          <div class="pill" style="left:866px"><div class="fill" id="f2"></div><span class="pt" id="t2">Sep–Nov</span></div>
+          <div class="pill" style="left:1300px"><div class="fill" id="f3"></div><span class="pt" id="t3">Dec–Feb</span></div>
+                  </div>
+        <div class="card" style="left:110px"><div class="cname">Kasol riverside</div><div class="st">
+          <div class="stv s0 ok"><span class="ic">✓</span>Best — book early</div>
+          <div class="stv s1 no"><span class="ic">✕</span>Avoid the riverbed</div>
+          <div class="stv s2 ok"><span class="ic">✓</span>Best, great value</div>
+          <div class="stv s3 wa"><span class="ic">⚠</span>Insulated tents only</div></div></div>
+        <div class="card" style="left:543px"><div class="cname">Chalal forest</div><div class="st">
+          <div class="stv s0 ok"><span class="ic">✓</span>Quiet nights</div>
+          <div class="stv s1 wa"><span class="ic">⚠</span>Monsoon — hotel safer</div>
+          <div class="stv s2 ok"><span class="ic">✓</span>Clear skies</div>
+          <div class="stv s3 wa"><span class="ic">⚠</span>Near-freezing nights</div></div></div>
+        <div class="card" style="left:976px"><div class="cname">Manikaran road</div><div class="st">
+          <div class="stv s0 ok"><span class="ic">✓</span>Family pick</div>
+          <div class="stv s1 wa"><span class="ic">⚠</span>Landslide-prone road</div>
+          <div class="stv s2 ok"><span class="ic">✓</span>Family pick</div>
+          <div class="stv s3 wa"><span class="ic">⚠</span>Heater + blankets</div></div></div>
+        <div class="card" style="left:1410px"><div class="cname">Tosh / Kalga</div><div class="st">
+          <div class="stv s0 ok"><span class="ic">✓</span>Apr–Jun views</div>
+          <div class="stv s1 wa"><span class="ic">⚠</span>Rain, road risk</div>
+          <div class="stv s2 ok"><span class="ic">✓</span>Best Sep–Oct</div>
+          <div class="stv s3 no"><span class="ic">✕</span>Skip in winter</div></div></div>
+        <div class="foot" id="foot">
+          <div class="chip" style="left:0">⚠ River can rise fast — stay off the riverbed</div>
+          <div class="chip" style="left:860px">Registered camps only</div>
+          <div class="chip" style="left:1290px;border-color:#d4a24c;color:#d4a24c">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      const vl = document.getElementById("vline");
+      const L = vl.getTotalLength();
+      vl.style.strokeDasharray = L + " " + L;
+      tl.fromTo(vl, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" }, 0.4);
+      tl.fromTo("#dots circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.35, stagger: 0.2, ease: "back.out(2)" }, 0.6);
+      tl.fromTo("#labels .node", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.2, ease: "power2.out" }, 0.7);
+      tl.fromTo(["#alt", "#higher"], { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, stagger: 0.3, ease: "power2.out" }, 1.8);
+      tl.fromTo(".card", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power3.out" }, 2.0);
+      tl.fromTo("#foot .chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 2.6);
+      // month states
+      const names = ["Mar–Jun", "Jul–Aug", "Sep–Nov", "Dec–Feb"];
+      const starts = [2.2, 4.6, 7.0, 9.4];
+      tl.set(".s1, .s2, .s3", { opacity: 0 }, 0);
+      tl.set(".s0", { opacity: 0 }, 0);
+      tl.fromTo(".s0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 2.3);
+      tl.set(".fill", { opacity: 0 }, 0);
+      tl.fromTo("#f0", { opacity: 0 }, { opacity: 1, duration: 0.3, immediateRender: false }, 2.2);
+      tl.fromTo("#t0", { color: "#ffffff" }, { color: "#0b1f33", duration: 0.3, immediateRender: false }, 2.2);
+      for (let i = 1; i < 4; i++) {
+        const t = starts[i];
+        tl.to(".s" + (i - 1), { opacity: 0, y: -14, duration: 0.25, ease: "power2.in" }, t);
+        tl.fromTo(".s" + i, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, t + 0.25);
+        tl.fromTo("#f" + (i - 1), { opacity: 1 }, { opacity: 0, duration: 0.3, immediateRender: false }, t);
+        tl.fromTo("#t" + (i - 1), { color: "#0b1f33" }, { color: "#ffffff", duration: 0.3, immediateRender: false }, t);
+        tl.fromTo("#f" + i, { opacity: 0 }, { opacity: 1, duration: 0.3, immediateRender: false }, t);
+        tl.fromTo("#t" + i, { color: "#ffffff" }, { color: "#0b1f33", duration: 0.3, immediateRender: false }, t);
+      }
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
