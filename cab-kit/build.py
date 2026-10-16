@@ -233,7 +233,26 @@ def route_card(r, page_slug):
 def related(rel):
     return '<div class="szc-links">' + "".join(f'<a href="{u}"><span>{l}{("<small>" + s + "</small>") if s else ""}</span></a>' for u, l, s in rel) + "</div>"
 
-JS = (ROOT / "kit.js").read_text()
+def js_safe(src):
+    """WordPress runs wpautop/lazy-load filters over the rendered page, so any literal '<p', '<div', '<img'... inside
+    the inline script gets <p>/<br />/fetchpriority injected and the script breaks. Replace every '<' inside
+    single-quoted JS string literals with the escape \x3c (identical at runtime)."""
+    out, i, n, instr = [], 0, len(src), False
+    while i < n:
+        c = src[i]
+        if instr:
+            if c == "\\":
+                out.append(src[i:i + 2]); i += 2; continue
+            if c == "'":
+                instr = False
+            elif c == "<":
+                out.append("\\x3c"); i += 1; continue
+        elif c == "'":
+            instr = True
+        out.append(c); i += 1
+    return "".join(out)
+
+JS = js_safe((ROOT / "kit.js").read_text())
 
 def wrap(body, p, faqs, area):
     return f'<div class="szc" data-szc="{p["slug"]}" data-tier="standard">{body}{modal_block()}{jsonld(p, faqs, area)}<script>{JS}</script></div>'
@@ -332,6 +351,9 @@ def finish(slug, h):
     m = f"<style>{min_css(KIT_CSS)}</style>" + min_html(h)
     if "&&" in m.split("<script>", 1)[-1]:
         sys.exit(f"BUILD REFUSED {slug}: '&&' in script would be mangled by WordPress convert_chars")
+    kitjs = m.rsplit("<script>", 1)[-1].split("</script>")[0]
+    if re.search(r"<(/|p\b|div\b|table\b|img\b|ul\b|ol\b|li\b|span\b|br\b|svg\b|button\b|details\b|summary\b|small\b|b\b|a\b|h[1-6]\b|t[rdh]\b|thead\b|tbody\b|circle\b|path\b)", kitjs):
+        sys.exit(f"BUILD REFUSED {slug}: HTML tag inside kit script (wpautop would inject <p>) — use \\x3c")
     (OUT / f"{slug}.min.html").write_text(m, encoding="utf-8")
     return len(m)
 

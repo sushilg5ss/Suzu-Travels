@@ -90,16 +90,16 @@ if(g){
  }
  var M=$('szc-modal');
  function fares(v){
-  if(v.quote){return '<p class="szc-mq">Priced per trip - tell us the dates and we send the all-in quote on WhatsApp.</p>';}
+  if(v.quote){return '\x3cp class="szc-mq">Priced per trip - tell us the dates and we send the all-in quote on WhatsApp.\x3c/p>';}
   var r=FL.ref;var base=Math.max(v.min,r99(r.km*v.ow*r.f));
-  var rows=Object.keys(TIERS).map(function(k){var a=TIERS[k]===1?base:r99(base*TIERS[k]);return '<tr class="'+(k===tier?'on':'')+'"><td><b>'+TNAME[k].split(' (')[0]+'</b><br><small>'+TNAME[k].split(' (')[1].replace(')','')+'</small></td><td class="num">'+inr(a)+'</td><td class="num">₹'+Math.round(v.hire*TIERS[k])+'/km</td></tr>';}).join('');
-  return '<p class="szc-mref">'+r.l+' one-way · '+r.km+' km</p><table class="szc-mt"><thead><tr><th>Fleet</th><th>One-way from</th><th>Round trip</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  var rows=Object.keys(TIERS).map(function(k){var a=TIERS[k]===1?base:r99(base*TIERS[k]);return '\x3ctr class="'+(k===tier?'on':'')+'">\x3ctd>\x3cb>'+TNAME[k].split(' (')[0]+'\x3c/b>\x3cbr>\x3csmall>'+TNAME[k].split(' (')[1].replace(')','')+'\x3c/small>\x3c/td>\x3ctd class="num">'+inr(a)+'\x3c/td>\x3ctd class="num">₹'+Math.round(v.hire*TIERS[k])+'/km\x3c/td>\x3c/tr>';}).join('');
+  return '\x3cp class="szc-mref">'+r.l+' one-way · '+r.km+' km\x3c/p>\x3ctable class="szc-mt">\x3cthead>\x3ctr>\x3cth>Fleet\x3c/th>\x3cth>One-way from\x3c/th>\x3cth>Round trip\x3c/th>\x3c/tr>\x3c/thead>\x3ctbody>'+rows+'\x3c/tbody>\x3c/table>';
  }
  function openV(id){
   var v=FB[id];if(!v||!M){return;}
-  var img=v.photo?'<img src="'+v.photo+'" alt="'+v.alt+'" width="1280" height="853" decoding="async">':'';
-  var specs=['<b>'+v.seats+'</b> seats','<b>'+v.bags+'</b>','AC · '+v.fuel,v.model];
-  M.querySelector('.szc-mbody').innerHTML='<div class="szc-mimg">'+img+'</div><div class="szc-minfo"><span class="szc-tag">'+v.model+'</span><h3 id="szc-mt">'+v.name+'</h3><ul class="szc-mspecs">'+specs.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul><p class="szc-mbest">Best for: '+v.best+'</p>'+fares(v)+'<div class="szc-btns"><a class="szc-btn wa" target="_blank" rel="noopener" href="'+wa('Hi Suzu Travels, I would like a '+v.name+' ('+TNAME[tier]+') for '+FL.ctx+'. Date: ___ , people: ___ (page: '+FL.s+')')+'">WhatsApp quote</a>'+(v.page?'<a class="szc-btn line" href="'+v.page+'">Rates page</a>':'')+'</div>'+(v.credit?'<p class="szc-mcredit">Photo: '+v.credit+'</p>':'')+'</div>';
+  var img=v.photo?'\x3cimg src="'+v.photo+'" alt="'+v.alt+'" width="1280" height="853" decoding="async">':'';
+  var specs=['\x3cb>'+v.seats+'\x3c/b> seats','\x3cb>'+v.bags+'\x3c/b>','AC · '+v.fuel,v.model];
+  M.querySelector('.szc-mbody').innerHTML='\x3cdiv class="szc-mimg">'+img+'\x3c/div>\x3cdiv class="szc-minfo">\x3cspan class="szc-tag">'+v.model+'\x3c/span>\x3ch3 id="szc-mt">'+v.name+'\x3c/h3>\x3cul class="szc-mspecs">'+specs.map(function(s){return '\x3cli>'+s+'\x3c/li>';}).join('')+'\x3c/ul>\x3cp class="szc-mbest">Best for: '+v.best+'\x3c/p>'+fares(v)+'\x3cdiv class="szc-btns">\x3ca class="szc-btn wa" target="_blank" rel="noopener" href="'+wa('Hi Suzu Travels, I would like a '+v.name+' ('+TNAME[tier]+') for '+FL.ctx+'. Date: ___ , people: ___ (page: '+FL.s+')')+'">WhatsApp quote\x3c/a>'+(v.page?'\x3ca class="szc-btn line" href="'+v.page+'">Rates page\x3c/a>':'')+'\x3c/div>'+(v.credit?'\x3cp class="szc-mcredit">Photo: '+v.credit+'\x3c/p>':'')+'\x3c/div>';
   M.hidden=false;document.body.style.overflow='hidden';M.querySelector('.szc-mclose').focus();
  }
  function closeV(){if(M){M.hidden=true;document.body.style.overflow='';}}
@@ -168,7 +168,7 @@ if(pl){
    });
   });
  }
- function pin(txt,cls){var d=document.createElement('div');d.className='szc-pin '+cls;d.innerHTML='<span>'+txt+'</span>';return d;}
+ function pin(txt,cls){var d=document.createElement('div');d.className='szc-pin '+cls;d.innerHTML='\x3cspan>'+txt+'\x3c/span>';return d;}
  var mks=[];
  function draw(res,a,b){
   mks.forEach(function(m){m.remove();});mks=[];
@@ -179,7 +179,7 @@ if(pl){
   map.fitBounds([[bb[0],bb[1]],[bb[2],bb[3]]],{padding:mob?{top:60,bottom:60,left:40,right:40}:{top:80,bottom:80,left:90,right:90},pitch:mob?30:45,bearing:0,duration:1200,maxZoom:11});
   mks.push(new maplibregl.Marker({element:pin(a.name.split(',')[0],'a'),anchor:'bottom'}).setLngLat(res.coords[0]).addTo(map));
   mks.push(new maplibregl.Marker({element:pin(b.name.split(',')[0],'b'),anchor:'bottom'}).setLngLat(res.coords[res.coords.length-1]).addTo(map));
-  if(!carEl){carEl=document.createElement('div');carEl.className='szc-car';carEl.innerHTML='<svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#122615"/><path d="M12 28l3-8c.4-1 1.3-1.6 2.3-1.6h13.4c1 0 1.9.6 2.3 1.6l3 8v7a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 31 35v-2H17v2a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 12 35z" fill="#d4af37"/><circle cx="17" cy="29" r="2" fill="#122615"/><circle cx="31" cy="29" r="2" fill="#122615"/><path d="M16.5 20.5h15l1.6 4.5H14.9z" fill="#122615" opacity=".55"/></svg>';}
+  if(!carEl){carEl=document.createElement('div');carEl.className='szc-car';carEl.innerHTML='\x3csvg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">\x3ccircle cx="24" cy="24" r="22" fill="#122615"/>\x3cpath d="M12 28l3-8c.4-1 1.3-1.6 2.3-1.6h13.4c1 0 1.9.6 2.3 1.6l3 8v7a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 31 35v-2H17v2a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 12 35z" fill="#d4af37"/>\x3ccircle cx="17" cy="29" r="2" fill="#122615"/>\x3ccircle cx="31" cy="29" r="2" fill="#122615"/>\x3cpath d="M16.5 20.5h15l1.6 4.5H14.9z" fill="#122615" opacity=".55"/>\x3c/svg>';}
   if(carMk){carMk.remove();}
   carMk=new maplibregl.Marker({element:carEl,rotationAlignment:'map'}).setLngLat(res.coords[0]).addTo(map);
   play(res);
@@ -217,16 +217,16 @@ if(pl){
    else{base=Math.max(vv.m,r99(km*vv.ow*fct));}
    return TIERS[k]===1?base:r99(base*TIERS[k]);
   }
-  var tiersHtml=Object.keys(TIERS).map(function(k){var a2=amtFor(v,k);return '<button type="button" class="szc-ptier'+(k===tier?' on':'')+'" data-tier="'+k+'"><span class="n">'+TNAME[k].split(' (')[0]+'</span><span class="s">'+TNAME[k].split(' (')[1].replace(')','')+'</span><span class="a">'+(a2===null?'On quote':inr(a2))+'</span></button>';}).join('');
-  var all=PC.v.filter(function(x){return !x.quote;}).map(function(x){var a3=amtFor(x,tier);return '<li'+(x.id===vid?' class="on"':'')+'><span>'+x.n+' <small>'+x.seats+' seats</small></span><b>'+inr(a3)+'</b></li>';}).join('');
+  var tiersHtml=Object.keys(TIERS).map(function(k){var a2=amtFor(v,k);return '\x3cbutton type="button" class="szc-ptier'+(k===tier?' on':'')+'" data-tier="'+k+'">\x3cspan class="n">'+TNAME[k].split(' (')[0]+'\x3c/span>\x3cspan class="s">'+TNAME[k].split(' (')[1].replace(')','')+'\x3c/span>\x3cspan class="a">'+(a2===null?'On quote':inr(a2))+'\x3c/span>\x3c/button>';}).join('');
+  var all=PC.v.filter(function(x){return !x.quote;}).map(function(x){var a3=amtFor(x,tier);return '\x3cli'+(x.id===vid?' class="on"':'')+'>\x3cspan>'+x.n+' \x3csmall>'+x.seats+' seats\x3c/small>\x3c/span>\x3cb>'+inr(a3)+'\x3c/b>\x3c/li>';}).join('');
   var est=amtFor(v,tier);
   var msg='Hi Suzu Travels, I planned a route on your site.\nFrom: '+a.name+'\nTo: '+b.name+'\nDistance: ~'+km+' km ('+(isRound?'round trip':'one-way')+')\nCar: '+v.n+' - '+TNAME[tier]+'\nEstimate shown: '+(est===null?'on quote':inr(est))+'\nDate: '+date+'\nPeople: '+ppl+'\n(page: cabs planner)';
-  var pageLink=kr?(kr.u?'<a class="szc-btn line" href="'+kr.u+'">Full '+kr.a+' → '+kr.b+' route page</a>':''):'';
-  out.innerHTML='<div class="szc-pres"><div class="szc-pfacts"><div><span class="k">Distance</span><span class="v">'+km+' km</span></div><div><span class="k">Drive time</span><span class="v">'+tm+'</span></div><div><span class="k">Car</span><span class="v">'+v.n+'</span></div><div><span class="k">Trip</span><span class="v">'+(isRound?'Round trip':'One-way drop')+'</span></div></div>'
-   +'<p class="szc-plbl">Choose your fleet - same route, three price points</p><div class="szc-ptiers">'+tiersHtml+'</div>'
-   +'<details class="szc-pall"><summary>Compare all cars at '+TNAME[tier].split(' (')[0]+' rates</summary><ul>'+all+'</ul></details>'
-   +'<p class="szc-pnote">Fuel, driver and driver allowance included. Tolls, parking and state entry tax extra at actuals. Indicative '+(isRound?'2-day round trip (250 km/day minimum)':'off-season fare')+' - your WhatsApp quote is the final price.</p>'
-   +'<div class="szc-btns"><a class="szc-btn gold" target="_blank" rel="noopener" href="'+wa(msg)+'">Lock this fare on WhatsApp</a><a class="szc-btn line" href="#enquiry">Request a call back</a>'+pageLink+'<button type="button" class="szc-btn line" id="szc-replay">Replay route</button></div></div>';
+  var pageLink=kr?(kr.u?'\x3ca class="szc-btn line" href="'+kr.u+'">Full '+kr.a+' → '+kr.b+' route page\x3c/a>':''):'';
+  out.innerHTML='\x3cdiv class="szc-pres">\x3cdiv class="szc-pfacts">\x3cdiv>\x3cspan class="k">Distance\x3c/span>\x3cspan class="v">'+km+' km\x3c/span>\x3c/div>\x3cdiv>\x3cspan class="k">Drive time\x3c/span>\x3cspan class="v">'+tm+'\x3c/span>\x3c/div>\x3cdiv>\x3cspan class="k">Car\x3c/span>\x3cspan class="v">'+v.n+'\x3c/span>\x3c/div>\x3cdiv>\x3cspan class="k">Trip\x3c/span>\x3cspan class="v">'+(isRound?'Round trip':'One-way drop')+'\x3c/span>\x3c/div>\x3c/div>'
+   +'\x3cp class="szc-plbl">Choose your fleet - same route, three price points\x3c/p>\x3cdiv class="szc-ptiers">'+tiersHtml+'\x3c/div>'
+   +'\x3cdetails class="szc-pall">\x3csummary>Compare all cars at '+TNAME[tier].split(' (')[0]+' rates\x3c/summary>\x3cul>'+all+'\x3c/ul>\x3c/details>'
+   +'\x3cp class="szc-pnote">Fuel, driver and driver allowance included. Tolls, parking and state entry tax extra at actuals. Indicative '+(isRound?'2-day round trip (250 km/day minimum)':'off-season fare')+' - your WhatsApp quote is the final price.\x3c/p>'
+   +'\x3cdiv class="szc-btns">\x3ca class="szc-btn gold" target="_blank" rel="noopener" href="'+wa(msg)+'">Lock this fare on WhatsApp\x3c/a>\x3ca class="szc-btn line" href="#enquiry">Request a call back\x3c/a>'+pageLink+'\x3cbutton type="button" class="szc-btn line" id="szc-replay">Replay route\x3c/button>\x3c/div>\x3c/div>';
   qa('.szc-ptier',out).forEach(function(b){b.addEventListener('click',function(){setTier(b.getAttribute('data-tier'));});});
   var rp=$('szc-replay');if(rp){rp.addEventListener('click',function(){if(last){play(last.res);}});}
  }
