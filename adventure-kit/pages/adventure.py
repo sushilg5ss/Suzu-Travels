@@ -121,7 +121,7 @@ CATS = [
      ]),
     ('treks', 'Treks & Camps', 'Walk', 'Treks and camps: day hikes to high passes',
      'Low treks run most of the year outside the monsoon; high passes open from mid-June to mid-October. Trekking in Himachal comes under the state’s adventure rules, with registered guides and insurance.',
-     '../10/hikers-uphill-snow-peaks-768x512.webp', 'Two hikers with backpacks walking uphill over grass and rock toward snow-capped peaks under a cloudy sky', [
+     '../10/treks-cathead-prashar-lake-768x480-1.webp', 'Prashar Lake with its round floating island and the pagoda temple on a green high meadow in Mandi district, Himachal, seen from the hilltop trail (Suzu Travels trip photo)', [
          ('Triund trek', 'McLeodganj, Dharamshala', 'Mar–Jun and Sep–Dec',
           'A short ridge trek with big Dhauladhar views; overnight camps on top.', 'Beginner friendly', 'Triund'),
          ('Kareri Lake trek', 'Kareri village, Dharamshala', 'May–Jun and Sep–Nov', 'A glacial lake below the Dhauladhars.', None, 'Kareri'),
