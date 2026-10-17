@@ -952,6 +952,11 @@
         "source": "https://www.outlookindia.com/amp/story/national/-bhimashankar-jyotirlinga-located-in-assam-s-kamrup-himanta-news-263538"
       },
       {
+        "date": "12-18 February 2026",
+        "fact": "Temple kept closed through Mahashivratri 2026 (within the Jan-Jun works closure) because of stone-masonry work for the new sabhamandap; old sabhamandap dismantled; Collector Jitendra Dudi appealed for cooperation. Works linked to Simhastha 2027 crowd planning.",
+        "source": "https://www.punekarnews.in/pune-bhimashankar-temple-to-remain-shut-during-mahashivratri-amid-redevelopment-push/"
+      },
+      {
         "date": "9 January - 14 June 2026",
         "fact": "Temple closed to devotees for construction of a new hall and stair improvements (linked to Simhastha 2027 preparations); reopened 15 June 2026 with mandatory online passes, 1,000 devotees/day, 7-11 AM until 30 June.",
         "source": "https://www.punekarnews.in/bhimashankar-darshan-resumes-from-june-15-online-registration-now-compulsory/"
@@ -963,15 +968,16 @@
       }
     ],
     "darshan": {
-      "as_of": "2026-10-08",
-      "source": "https://www.punekarnews.in/bhimashankar-darshan-resumes-from-june-15-online-registration-now-compulsory/ ; https://www.thebridgechronicle.com/pune/bhimashankar-temple-open-throughout-shravan-darshan-timings-extended-agn97",
+      "as_of": "2026-10-17",
+      "source": "https://shreebhimashankar.com/en/about-temple/ ; https://www.punekarnews.in/bhimashankar-darshan-resumes-from-june-15-online-registration-now-compulsory/ ; https://www.thebridgechronicle.com/pune/bhimashankar-temple-open-throughout-shravan-darshan-timings-extended-agn97",
       "temple_hours": null,
-      "temple_hours_note": "Post-Shravan (Sept-Oct 2026) timings and whether the online pass is still compulsory could NOT be verified; shreebhimashankar.com returned no readable timings. Last confirmed: 5:00-21:30 during Shravan 2026.",
+      "temple_hours_note": "Official temple site (About the Temple page, read 2026-10-17) says that, because of ongoing construction of the sabhamandap and stairs, the temple is open for darshan only from 7:00 AM to 11:00 AM (notice undated). During Shravan 2026 (from 11 Aug) darshan was extended to 5:00 AM-9:30 PM (Pune Collector's meeting). Whether the online pass (darshan-pass-booking page) is still compulsory could not be verified - booking page did not load on 2026-10-17. Page wording: '7-11 am while works continue (official site, Oct 2026) - confirm before you go'.",
       "aartis": null,
       "special": "Online darshan pass introduced June 2026 (1,000/day cap) - check https://shreebhimashankar.com/en/ for current status; carry photo ID.",
       "online_booking": "https://shreebhimashankar.com/en/",
       "dress_code": null,
-      "rules": "Valid photo ID required with online pass (June 2026 rules)."
+      "rules": "Valid photo ID required with online pass (June 2026 rules). VIP / recommendation / protocol entry discontinued from 15 Jun 2026; registered-devotee list published on the official site (Navbharat Live, 16 Jun 2026).",
+      "contact": "Phone 02135 222 880, office@shreebhimashankar.com (official site, 2026-10-17)"
     },
     "open_season": "All year (note: closed 9 Jan-14 Jun 2026 for works; development work continuing)",
     "best_months": "October-February (editorial); June-September monsoon is lush but ghat roads and trails are slippery and foggy.",
@@ -1043,6 +1049,14 @@
       {
         "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
         "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      },
+      {
+        "title": "Shree Bhimashankar temple - About the Temple (official, read 17 Oct 2026)",
+        "url": "https://shreebhimashankar.com/en/about-temple/"
+      },
+      {
+        "title": "Navbharat Live - Bhimashankar new darshan rules, VIP entry ban (16 Jun 2026)",
+        "url": "https://navbharatlive.com/maharashtra/pune/bhimashankar-jyotirlinga-darshan-new-rules-online-registration-mandatory-vip-entry-ban-1801366.html"
       }
     ],
     "disputes": {
