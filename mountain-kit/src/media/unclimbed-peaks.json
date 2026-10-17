@@ -1,0 +1,26 @@
+{
+ "hero": {
+  "kicker": "UNCLIMBED · INDIA",
+  "words": [["7,780 M.", "UNCLIMBED."], ["SACRED.", "LEFT ALONE."], ["SOME STAY", "CLOSED."], ["CLIMB IN", "HIMACHAL."]],
+  "scenes": [
+   {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": [0, 3.8], "from": {"y": 250}, "to": {"y": 1000}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [3.2, 7.0], "from": {"scale": 1.02, "x": 60, "y": 30}, "to": {"scale": 1.1, "x": -20, "y": 60}},
+   {"img": "px-20809686.jpg", "kind": "tilt", "h": 2560, "t": [6.4, 10.2], "from": {"y": 760}, "to": {"y": 920, "scale": 1.05}},
+   {"img": "px-10254837.jpg", "kind": "land", "h": 1408, "t": [9.6, 13.0], "from": {"scale": 1.02}, "to": {"scale": 1.08, "x": 30}}
+  ]
+ },
+ "ladder": {
+  "kicker": "NEVER CLIMBED",
+  "title": "India's unclimbed summits, side by side",
+  "peaks": ["manimahesh-kailash", "chombu", "parvati-parbat", "chiumo", "shudu-tsenpa", "zemu-gap-peak"],
+  "subs": {
+   "manimahesh-kailash": "Sacred · Himachal",
+   "chombu": "Sikkim",
+   "parvati-parbat": "Himachal · open",
+   "chiumo": "Arunachal Pradesh",
+   "shudu-tsenpa": "Sikkim",
+   "zemu-gap-peak": "No known attempts"
+  },
+  "end": "Climbed & open: Yunam 6,111 m"
+ }
+}
