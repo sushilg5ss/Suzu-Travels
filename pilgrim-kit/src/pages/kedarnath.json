@@ -1,0 +1,157 @@
+{
+ "path": "/pilgrimage-tours/kedarnath/",
+ "parent": 12541,
+ "kind": "yatra",
+ "title": "Kedarnath Yatra & Kedarnath Temple: Trek, Helicopter & Dates",
+ "seo_title": "Kedarnath Yatra: Temple, Trek, Helicopter & How to Reach",
+ "seo_desc": "Kedarnath Yatra guide: the legend of Kedarnath temple, the 16 km trek from Gaurikund, official helicopter booking, registration, dates and how to reach.",
+ "focus": "kedarnath yatra",
+ "label": "Kedarnath Yatra",
+ "blurb": "The Himalayan Jyotirlinga above the Mandakini",
+ "shrine": "kedarnath-jyotirlinga",
+ "kicker": "Jyotirlinga · Rudraprayag, Uttarakhand",
+ "deva": "श्री केदारनाथ धाम",
+ "tag": "Shiva's Himalayan home, at 3,583 m.",
+ "sub": "Shri Kedarnath Dham is the highest of the 12 Jyotirlingas, one of the Panch Kedar and one of Uttarakhand's Char Dham. The Pandava legend, the 16 km trek from Gaurikund, the only official helicopter booking, free registration, opening and closing dates and the easiest way to reach.",
+ "chips": [
+  ["~3,583 m", "altitude"],
+  ["~16 km", "trek from Gaurikund"],
+  ["Free", "registration, compulsory"],
+  ["22 Apr", "2026 opening"]
+ ],
+ "q": "Where is Kedarnath temple and how does the yatra work?",
+ "answer": "Kedarnath temple stands at about <b>3,583 m</b> at the head of the Mandakini valley in <b>Rudraprayag district, Uttarakhand</b>. It is one of the <a href=\"/pilgrimage-tours/12-jyotirlinga/\">12 Jyotirlingas</a>. Pilgrims register free, drive to Sonprayag, take a shuttle to Gaurikund and walk about 16 km — or fly from Guptkashi, Phata or Sersi, booked only on IRCTC HeliYatra. The temple is open from late April to around Bhai Dooj.",
+ "facts": [
+  ["~3,583 m", "the highest Jyotirlinga"],
+  ["~16 km", "Gaurikund to the temple, 6–8 h up"],
+  ["3 helipads", "Guptkashi, Phata, Sersi"],
+  ["15.57 lakh", "pilgrims by late Sep 2026 (DD India)"]
+ ],
+ "intro": [
+  "Kedarnath is the most demanding of the Jyotirlingas to reach, and for many families the most moving. The temple sits in a wide glacial bowl below snow peaks, with the Mandakini rising nearby. It is managed by the Shri Badarinath-Kedarnath Temple Committee (BKTC). The doors open each spring and close for winter around Bhai Dooj, when the deity's doli moves down to the Omkareshwar temple at Ukhimath.",
+  "Two things are easy to mix up: the <b>Omkareshwar temple at Ukhimath</b> is Kedarnath's winter seat, not the <a href=\"/pilgrimage-tours/12-jyotirlinga/omkareshwar/\">Omkareshwar Jyotirlinga on the Narmada</a>; and the highest Shiva temple in the world is Tungnath, while Kedarnath is the highest Jyotirlinga. Kedarnath is 5th in the Shiva Purana list and 11th in the popular smaranam stotra (\"हिमालये तु केदारं\")."
+ ],
+ "story": {
+  "h2": "The legend of Kedarnath",
+  "lead": "The Mahabharata cycle and the Shiva Purana tell how Shiva came to stay in the Garhwal Himalaya. This is how tradition tells it.",
+  "beats": [
+   ["The Pandavas seek forgiveness", "After the Kurukshetra war, the five brothers went looking for Shiva, hoping to be freed from the sin of killing their own kin."],
+   ["A bull among the herds", "Shiva did not wish to be found so easily. It is believed he hid in the Garhwal hills as a bull among grazing cattle."],
+   ["Bhima stands across the valley", "Bhima planted his feet on two hillsides so the herd had to pass beneath him. One bull refused — and the brothers knew it was the Lord."],
+   ["The hump remains", "As the bull sank into the earth, Bhima caught its hump. Tradition says it remained at Kedarnath, worshipped as a rock form rather than a carved idol."]
+  ],
+  "more": [
+   "Tradition places the other parts of the bull at the other four Panch Kedar shrines — Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar — though the lists of which part fell where vary by source. The Shiva Purana adds that Shiva chose to dwell here as a Jyotirlinga at the prayer of the sages Nara and Narayana. These are stories of faith, told as tradition rather than history."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "history",
+   "label": "History",
+   "kicker": "Shankaracharya to Bhim Shila",
+   "h2": "A short history of Kedarnath temple",
+   "html": "<p>According to tradition, <b>Adi Shankaracharya</b> revived the temple in the 8th century CE; the BKTC credits the present stone structure to him, beside an earlier Pandava-era shrine. His samadhi lies behind the temple, where a 12-ft statue of the saint was unveiled on <b>5 November 2021</b>.</p><p>In the floods of <b>16–17 June 2013</b> the town was devastated but the temple survived: a large boulder behind it diverted the debris. Pilgrims now worship it as <b>Bhim Shila</b>, believed to have shielded the shrine.</p>",
+   "cls": "alt"
+  }
+ ],
+ "dates": {
+  "h2": "Kedarnath opening and closing dates",
+  "rows": [
+   ["Doors opened 2026", "22 Apr 2026, about 8 am", "Announced on Mahashivratri, 15 Feb 2026"],
+   ["Closing muhurat 2026", "Not announced yet", "BKTC announces it on Vijayadashami, 20 Oct 2026; by custom the temple closes on Bhai Dooj"],
+   ["Opening 2027", "Not announced yet", "Fixed on Mahashivratri, 6 Mar 2027, at Ukhimath — usually late April or early May"],
+   ["Winter worship", "Omkareshwar Temple, Ukhimath", "From the closing until the spring reopening"]
+  ],
+  "note": "Kedarnath does not open on Akshaya Tritiya — that is Gangotri and Yamunotri. For the 2026 closing dates as they are announced, see our <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a> post."
+ },
+ "darshan": {
+  "h2": "Kedarnath darshan and puja",
+  "rows": [
+   ["Darshan hours", "The BKTC does not publish daily hours. Doors open early in the morning and close at night — confirm locally."],
+   ["Aarti times", "Confirm locally or with the BKTC"],
+   ["General darshan", "Free, no ticket — your yatra registration is what is checked"],
+   ["Pujas", "Mahabhishek, Rudrabhishek, Shodashopachar, evening aarti and others are booked <b>only on badrinath-kedarnath.gov.in</b> (Indian mobile number needed)"],
+   ["Dress", "No official dress code found; wear modest, warm clothing"]
+  ],
+  "note": "Phones and photography inside the sanctum: follow the temple staff's instructions."
+ },
+ "route": {
+  "h2": "The route from Haridwar to Kedarnath",
+  "lead": "Most pilgrims drive from Haridwar or Rishikesh to Sonprayag in a day or two, then cover the last stretch by shuttle and on foot. Distances are approximate.",
+  "stops": [
+   ["Start", "Haridwar / Rishikesh", "हरिद्वार / ऋषिकेश", "Registration counters, railheads and the start of the road journey."],
+   ["Road", "Rudraprayag", "रुद्रप्रयाग", "Where the Mandakini meets the Alaknanda; the road turns up the Mandakini valley."],
+   ["Road", "Guptkashi", "गुप्तकाशी", "Vishwanath temple; helipads at Guptkashi, Phata and Sersi lie along this stretch."],
+   ["Road", "Sonprayag", "सोनप्रयाग", "Parking; shared shuttles run about 5 km to Gaurikund."],
+   ["~5 km", "Gaurikund", "गौरीकुंड", "The last motorable point and the start of the trek."],
+   ["~16 km", "Kedarnath", "केदारनाथ", "About 6–8 hours uphill on foot, or by pony, palki or pithoo."]
+  ],
+  "note": "Old \"14 km\" trek figures are from before 2013; the present path is about 16 km (IRCTC). Weather or landslides can pause the yatra for a few hours even in October."
+ },
+ "reach": {
+  "h2": "How to reach Kedarnath",
+  "cards": [
+   ["By air", "Jolly Grant Airport, Dehradun, is the nearest — about 240 km by road to Gaurikund."],
+   ["By rail", "Yog Nagari Rishikesh station is about 215 km from Gaurikund; Haridwar has more trains."],
+   ["By road", "Haridwar or Rishikesh → Rudraprayag → Guptkashi → Sonprayag, then the shuttle to Gaurikund."],
+   ["By helicopter", "Shuttles fly from Guptkashi, Phata and Sersi. Book <b>only</b> on heliyatra.irctc.co.in, after Char Dham registration — up to 2 tickets per user ID, 6 pilgrims per ticket."]
+  ]
+ },
+ "tips": {
+  "h2": "Before you go",
+  "items": [
+   ["Register first — it is free", "Registration is compulsory and free on registrationandtouristcare.uk.gov.in, the Tourist Care Uttarakhand app or helpline 1364, with offline counters at Haridwar and Rishikesh. Any site charging a \"registration fee\" is fake."],
+   ["Helicopter: only IRCTC", "Book only on heliyatra.irctc.co.in. Police have warned about cloned helicopter sites and WhatsApp sellers offering \"confirmed seats\" — ignore them. Fares change each season; see the official notice."],
+   ["Health check for elders", "Uttarakhand advises a check-up for anyone over 50 or with heart, lung or blood-pressure conditions. Acclimatise on the way, use the health kiosks, and come down at the first signs of altitude sickness."],
+   ["Ponies, palki and pithoo", "Available from Gaurikund for those who cannot walk the full climb. Pay only the official rates at the counter."],
+   ["Best months", "May–June and mid-September to October. July–August brings landslides and weather pauses, though the temple itself stays open."],
+   ["Pack warm", "Nights are cold even in summer. Carry rain gear, warm layers and good walking shoes."]
+  ]
+ },
+ "itinerary": {
+  "h2": "A sample three-day Kedarnath yatra from Haridwar",
+  "days": [
+   ["1", "Haridwar to Guptkashi or Sonprayag", "Drive up via Rishikesh and Rudraprayag along the Alaknanda and Mandakini. Stop at Guptkashi's Vishwanath temple and rest early."],
+   ["2", "Trek to Kedarnath", "Start early from Sonprayag, shuttle to Gaurikund and walk about 16 km (or fly from your helipad). Evening darshan and a night near the temple."],
+   ["3", "Darshan and descent", "Early darshan, visit Bhairavnath temple and the Adi Shankaracharya Samadhi, then walk down to Gaurikund and drive back towards Guptkashi."]
+  ]
+ },
+ "packages": ["dodham", "chardham", "chardham-dates"],
+ "quote_h2": "Plan your Kedarnath yatra with Suzu",
+ "quote_text": "We plan Kedarnath and Do Dham trips from Haridwar or Delhi — cars, stays close to Sonprayag and Guptkashi, pony or palki help and a pace that suits elders. Helicopter tickets you book yourself on IRCTC HeliYatra; we plan the rest around them.",
+ "wa": "Namaste Suzu Travels, I want to plan a yatra to Kedarnath. From city: ___ , dates: ___ , people: ___",
+ "links": ["12-jyotirlinga", "omkareshwar", "kashi-vishwanath", "somnath"],
+ "trip_name": "Kedarnath Yatra",
+ "place": {
+  "type": "HinduTemple",
+  "name": "Shri Kedarnath Temple",
+  "alt": "श्री केदारनाथ धाम",
+  "town": "Kedarnath",
+  "state": "Uttarakhand",
+  "lat": 30.7352,
+  "lon": 79.0669,
+  "sameAs": ["https://en.wikipedia.org/wiki/Kedarnath_Temple"]
+ },
+ "faqs": [
+  ["When will Kedarnath close in 2026?", "Not announced yet. By custom the temple closes on Bhai Dooj (around 10–11 November); the BKTC announces the muhurat on Vijayadashami, 20 October 2026. See our Char Dham closing dates 2026 post."],
+  ["When will Kedarnath open in 2027?", "Not announced yet. The date is fixed on Mahashivratri, 6 March 2027, at Ukhimath — usually it falls in late April or early May."],
+  ["How do I book a Kedarnath helicopter?", "Register for the Char Dham yatra first, then book only on heliyatra.irctc.co.in for Guptkashi, Phata or Sersi. Ignore WhatsApp or agent offers of \"confirmed tickets\"."],
+  ["How long is the Kedarnath trek?", "About 16 km one way from Gaurikund, usually 6–8 hours uphill. Ponies, palki and pithoo are available for those who need them."],
+  ["Is registration compulsory for Kedarnath?", "Yes, and it is free — on registrationandtouristcare.uk.gov.in, the Tourist Care Uttarakhand app or helpline 1364."],
+  ["How do I reach Kedarnath from Haridwar or Delhi?", "Drive via Rishikesh, Rudraprayag and Guptkashi to Sonprayag, take the shuttle to Gaurikund, then trek or fly. The nearest airport is Dehradun and the railhead is Rishikesh."],
+  ["What are Kedarnath darshan timings?", "The BKTC does not publish daily hours: the doors open early in the morning and close at night, so confirm locally. Pujas are booked on the BKTC website."],
+  ["Where is Kedarnath worshipped in winter?", "At the Omkareshwar temple in Ukhimath, from the closing until the spring reopening."]
+ ],
+ "sources": [
+  ["Shri Badarinath-Kedarnath Temple Committee — Shri Kedarnath Dham", "https://www.badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"],
+  ["Uttarakhand Tourism — Char Dham registration", "https://registrationandtouristcare.uk.gov.in/"],
+  ["IRCTC HeliYatra — official helicopter booking", "https://www.heliyatra.irctc.co.in/"],
+  ["ETV Bharat — Kedarnath opening date announced (15 Feb 2026)", "https://www.etvbharat.com/en/state/mahashivratri-2026-kedarnath-temple-opening-announced-enn26021501713"],
+  ["News On AIR — Aadhaar-authenticated Char Dham registration (20 Mar 2025)", "https://www.newsonair.gov.in/aadhaar-authenticated-registration-for-char-dham-yatra-begins"],
+  ["DD India — Char Dham 2026 footfall (29 Sep 2026)", "https://ddindia.co.in/2026/09/char-dham-yatra-draws-record-pilgrims-badrinath-and-gangotri-set-new-highs/"],
+  ["The Tribune — warning on fake helicopter services", "https://www.tribuneindia.com/news/himachal/beware-of-fake-helicopter-services-warn-police-amid-char-dham-rush/"],
+  ["Wikipedia — Kedarnath Temple", "https://en.wikipedia.org/wiki/Kedarnath_Temple"]
+ ],
+ "verified": "17 Oct 2026",
+ "modified": "2026-10-17"
+}
