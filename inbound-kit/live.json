@@ -1,5 +1,38 @@
 {
-  "india-tours": {"id": 11411, "path": "/india-tours/", "kind": "hub", "label": "India tours for international travellers", "blurb": "Golden Triangle, Kashmir, Himalayas — private trips from US$299", "added": "2026-09-26", "hand_built": true},
-  "golden-triangle-tour": {"id": 11412, "path": "/golden-triangle-tour/", "kind": "itinerary", "label": "Golden Triangle tour", "blurb": "Delhi, Agra & Jaipur — private, from US$299", "added": "2026-09-26", "hand_built": true},
-  "char-dham-yatra-for-nri": {"id": 11413, "path": "/char-dham-yatra-for-nri/", "kind": "itinerary", "label": "Char Dham Yatra for NRIs & overseas pilgrims", "blurb": "Yamunotri, Gangotri, Kedarnath, Badrinath", "added": "2026-09-26", "hand_built": true}
+ "india-tours": {
+  "id": 11411,
+  "path": "/india-tours/",
+  "kind": "hub",
+  "label": "India tours for international travellers",
+  "blurb": "Golden Triangle, Kashmir, Himalayas — private trips from US$299",
+  "added": "2026-09-26",
+  "hand_built": true
+ },
+ "golden-triangle-tour": {
+  "id": 11412,
+  "path": "/golden-triangle-tour/",
+  "kind": "itinerary",
+  "label": "Golden Triangle tour",
+  "blurb": "Delhi, Agra & Jaipur — private, from US$299",
+  "added": "2026-09-26",
+  "hand_built": true
+ },
+ "char-dham-yatra-for-nri": {
+  "id": 11413,
+  "path": "/char-dham-yatra-for-nri/",
+  "kind": "itinerary",
+  "label": "Char Dham Yatra for NRIs & overseas pilgrims",
+  "blurb": "Yamunotri, Gangotri, Kedarnath, Badrinath",
+  "added": "2026-09-26",
+  "hand_built": true
+ },
+ "private-driver-india": {
+  "id": 14015,
+  "path": "/india-tours/private-driver-india/",
+  "kind": "product",
+  "label": "Private car + driver",
+  "blurb": "Your own car and English-speaking driver for the whole trip",
+  "added": "2026-10-17",
+  "focus": "private driver india"
+ }
 }

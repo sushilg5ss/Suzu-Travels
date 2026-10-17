@@ -37,9 +37,9 @@ def tokens(s):
 def render(slug, live):
     G.LIVE.clear()
     G.LIVE.update(live)
-    if slug not in G.PAGES and not (G.KIT / "src" / "pages" / f"{slug}.json").exists():
-        raise SystemExit(f"no generator for '{slug}' (base page function or src/pages/{slug}.json)")
-    return build.assemble(G.render(slug), slug)
+    if not (G.KIT / "src" / "pages" / f"{slug}.json").exists():
+        return None  # hand-built page (11411/11412/11413, Sep 2026): no generator — link blocks are added by hand (Page Builder, 17 Oct 2026)
+    return build.assemble(G.content_page(slug), slug)
 
 
 def plan(a, b):
@@ -81,6 +81,8 @@ def rebuild(slug):
     live = json.loads((KIT / "live.json").read_text())
     a = (KIT / "out" / f"{slug}.min.html").read_text(encoding="utf-8")
     b = render(slug, live)
+    if b is None:
+        raise SystemExit(f"'{slug}' is hand-built — nothing to rebuild")
     out = {"ops": [], "full": [], "unchanged": [], "expected_bytes": len(b.encode("utf-8"))}
     if a == b:
         out["unchanged"].append(slug)
@@ -104,9 +106,12 @@ def main():
         raise SystemExit(f"add '{new}' to live.json first (after it is published)")
     before = copy.deepcopy(live)
     before.pop(new)
-    out = {"ops": [], "full": [], "unchanged": []}
+    out = {"ops": [], "full": [], "unchanged": [], "hand_built": []}
     for slug, v in live.items():
         if only and slug != only:
+            continue
+        if v.get("hand_built") or not (KIT / "src" / "pages" / f"{slug}.json").exists():
+            out["hand_built"].append(slug)  # add a link tile/row by hand with wp_replace_in_page (shared-rules: ADD only, never rebuild)
             continue  # the new page itself is included too: it was built before live.json listed it, so its own
                       # self-links (e.g. its row in a peak table) need ops as well (fix 4 Oct 2026)
         a, b = render(slug, before), render(slug, live)

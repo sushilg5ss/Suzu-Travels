@@ -30,7 +30,8 @@ def shell():
 def main():
     slug = sys.argv[1]
     spec = KIT / "src" / "pages" / f"{slug}.json"
-    meta = json.loads((KIT / "src" / "meta.json").read_text(encoding="utf-8"))
+    mf = KIT / "src" / "meta.json"  # optional (pilgrim-kit legacy)
+    meta = json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else {}
     title = sys.argv[2] if len(sys.argv) > 2 else (json.loads(spec.read_text(encoding="utf-8"))["title"] if spec.exists() else meta.get(slug, {}).get("title", slug))
     h = shell()
     i = h.find('<div class="szi">')
@@ -39,8 +40,13 @@ def main():
     start = h.rfind("<style>", 0, i)                      # the kit CSS that opens the hub's content
     k = h.find("IntersectionObserver", i)                  # the kit JS that closes it
     end = h.find("</script>", k) + len("</script>")
-    if min(i, start, k) < 0:
-        raise SystemExit("could not find the kit block in the hub shell — delete /tmp/pk-prev/shell.html and retry")
+    if min(i, start, k) < 0:  # hand-built hub (11411, Sep 2026): swap the whole entry-content body instead (Page Builder, 17 Oct 2026)
+        ec = h.find('<div class="entry-content"')
+        m_ = h.rfind("</main>")
+        if ec < 0 or m_ < 0:
+            raise SystemExit("could not find the kit block or the entry-content in the hub shell — delete /tmp/pk-prev/shell.html and retry")
+        start = h.find(">", ec) + 1
+        end = h.rfind("</div>", 0, h.rfind("</div>", 0, m_))
     page = (KIT / "out" / f"{slug}.min.html").read_text(encoding="utf-8")
     out = h[:start] + "@@PAGE@@" + h[end:]
     out = re.sub(r"<script\b(?![^>]*application/ld\+json)[^>]*>.*?</script>", "", out, flags=re.S)  # theme scripts out

@@ -1,0 +1,133 @@
+{
+ "path": "/india-tours/private-driver-india/",
+ "parent": 11411,
+ "kind": "product",
+ "title": "Private Driver in India: Car + Driver for North India, How It Works",
+ "seo_title": "Private Driver in India: Car + Driver for North India Trips",
+ "seo_desc": "Hire a private car with an English-speaking driver for Delhi, Agra, Jaipur and the Himachal hills: inclusions, real road distances, seasons, 20% deposit.",
+ "focus": "private driver india",
+ "label": "Private car + driver",
+ "blurb": "Your own car and English-speaking driver for the whole trip",
+ "kicker": "North India · Private car with driver",
+ "tag": "One car, one driver, your whole trip.",
+ "sub": "The way most international visitors see North India: a dedicated car and an English-speaking driver from the day you land to the day you fly out — Delhi, Agra, Jaipur and the Himachal hills — arranged by a registered local company.",
+ "hero_alt": "Humayun's Tomb in Delhi, the Taj Mahal, Hawa Mahal in Jaipur and the Manali valley — the places a private-driver trip in North India links by road",
+ "cta1": "How it works",
+ "chips": [
+  ["Door to door", "airport to airport"],
+  ["Same driver", "for the whole route"],
+  ["Local office", "in Himachal, since 2019"],
+  ["20% deposit", "full refund within 48 h"]
+ ],
+ "q": "What does a private driver in India include?",
+ "answer": "A <b>private driver in India</b> means one car and one English-speaking driver for your whole route — airport pick-up, every transfer, sightseeing days and hill roads — with fuel, tolls, parking, state taxes and the driver's own stay in the price. You choose the route; Suzu Travels, a registered agent in Himachal, handles the car. Quote in US dollars; 20% deposit, refundable within 48 hours.",
+ "facts": [
+  ["Since 2019", "arranging North India road trips"],
+  ["Sedan · SUV · minibus", "2 to 12 travellers"],
+  ["Himachal", "home turf, real office"],
+  ["2 hours", "usual reply time, 9 am–9 pm IST"]
+ ],
+ "sections": [
+  {
+   "id": "how",
+   "nav": "How it works",
+   "h2": "How a private-driver trip works",
+   "kind": "steps",
+   "lead": "From your first message to the airport drop — five steps, no portal in between.",
+   "items": [
+    ["Tell us your route and dates", "Cities, nights, pace. We suggest changes only where a road, a pass or a season needs them (see <a href=\"#roads\">roads and seasons</a>)."],
+    ["Get a written quote", "Car type, what's included and excluded, and a day-by-day plan — in US dollars. No per-day rate is printed on this page: it depends on the car, the season and the nights."],
+    ["Lock it with a 20% deposit", "Card via Razorpay (international cards accepted) or PayPal. Full refund if you cancel within 48 hours of paying; the balance is due before the trip."],
+    ["Before the trip", "Your driver's name, photo and car number are shared with you, with our office number in Himachal that works for the whole trip."],
+    ["On the road", "Same car and driver throughout. Change the plan on the way if you like — extra nights or kilometres are quoted on the spot."]
+   ]
+  },
+  {
+   "id": "included",
+   "nav": "What's included",
+   "h2": "What's included — and what isn't",
+   "kind": "cards",
+   "video": "cost",
+   "video_caption": "What a private-driver quote covers, in words: car and driver all days, airport pick-up and drop; hotels and monument guides are optional add-ons; tickets, meals and tips are your own.",
+   "items": [
+    ["Included", "Car, fuel, tolls, parking, interstate taxes, the driver's food and stay, airport pick-up and drop. Tourist taxis carry an All India Tourist Vehicle permit, so one car can cross state lines for the whole route."],
+    ["Not included", "Hotels (we can add them to the same quote), monument tickets, licensed guides at monuments, meals, tips, flights and your visa."],
+    ["Cars", "Sedan for 2–3 travellers, SUV for 4–6, a 12-seat minibus for larger groups. We put hill routes in SUVs. Permit rules cap tourist cars at 12 years of age."],
+    ["Drivers", "English-speaking, experienced on hill roads. They are drivers, not guides — we add licensed local guides at the big monuments on request. Your driver's name, photo and car number are shared with you before the trip."]
+   ]
+  },
+  {
+   "id": "routes",
+   "nav": "Sample routes",
+   "h2": "Sample routes international travellers take",
+   "kind": "table",
+   "video": "route",
+   "video_caption": "A sample 12-day loop by private car: Delhi, Agra and Jaipur first, then back through Delhi to Shimla, Manali and Dharamshala.",
+   "head": ["Route", "Days", "Road notes"],
+   "rows": [
+    ["Delhi → Agra → Jaipur → Delhi", "5–6", "The Golden Triangle by road. Agra is 204 km (127 mi) from Delhi on the expressway and 232 km (144 mi) from Jaipur; Fatehpur Sikri and the Abhaneri step-well sit on the Agra–Jaipur leg. We never put the Taj on a Friday — it is closed that day."],
+    ["Delhi → Shimla → Manali → Dharamshala → Delhi", "8–10", "Shimla is 370 km (230 mi) from Delhi, Manali another 260 km (162 mi) on hill roads; Dharamshala has McLeod Ganj at 2,082 m (6,831 ft). Flights home from Delhi, or from Dharamshala's Gaggal airport 14 km away."],
+    ["Golden Triangle + Himachal hills", "12–14", "The loop in the video: cities first, then the hills. A popular plan for a first visit — a sample, not a fixed package; swap nights as you like."],
+    ["Manali → Atal Tunnel → Lahaul (day trip or onward)", "1+", "The 9.02 km (5.6 mi) Atal Tunnel keeps Manali connected to the Lahaul valley all year; the Rohtang Pass above it closes from late November until about May."]
+   ],
+   "note": "Distances are official road figures (sources below); hill days take longer than the map suggests. Prices depend on the car, the season and the nights — ask for a quote and we reply with a day-by-day plan."
+  },
+  {
+   "id": "roads",
+   "nav": "Roads & seasons",
+   "h2": "Roads, passes and seasons to know",
+   "kind": "callout",
+   "text": "In our experience hill roads average 30–40 km/h (20–25 mph), so we plan days around hours, not kilometres. The Rohtang Pass is closed from late November to around May; the Atal Tunnel below it stays open year-round. We avoid night driving and fog on hill roads — the UK Foreign Office advises the same for all of India — and we use well-maintained cars with working seat belts.",
+   "after": [
+    "<b>Kashmir:</b> several governments currently advise against travel to Jammu and Kashmir (UK FCDO, 7 October 2026; US State Department Level 4, except Ladakh). We plan Kashmir road trips only when your own government's advice and your travel insurance allow it — check both before you ask us."
+   ]
+  },
+  {
+   "id": "trust",
+   "nav": "Why a local company",
+   "h2": "Why book the driver through a local company",
+   "kind": "prose",
+   "paras": [
+    "We are a registered travel agent based in Himachal Pradesh, not a marketplace. The same small team that quotes your trip answers the phone while you travel, and the driver is accountable to us, not to an app.",
+    "You can drive yourself in India with an International Driving Permit and your home licence, but most visitors don't: traffic keeps left, livestock wander onto rural roads, and the hill roads reward someone who drives them every week. A good driver also handles the small things — parking, permits for the Rohtang road, where to stop for a clean lunch — so your days are about the places, not the logistics."
+   ]
+  }
+ ],
+ "faqs": [
+  ["How much does a private driver in India cost?", "It depends on the car, the season and how many nights you travel, so we don't print a per-day rate. Send us your route and dates and we reply with a day-by-day plan and a quote in US dollars; a 20% deposit locks it, refundable within 48 hours."],
+  ["Is it safe to hire a car and driver in India?", "A car with a professional driver is how most international visitors travel North India. We use well-maintained cars with seat belts, avoid night driving and fog on hill roads (the UK Foreign Office advises the same), share your driver's name, photo and car number before the trip, and our office number works for the whole trip."],
+  ["Can I drive myself in India instead?", "Yes — you need an International Driving Permit (the 1949 version for UK licence holders) plus your home licence, and rules on how long you may drive on it vary by state. Most visitors still choose a driver because of left-hand traffic, livestock on rural roads and the hill driving."],
+  ["Is the driver also a guide?", "No. Drivers drive and help with logistics. For the Taj Mahal, the Jaipur forts or Delhi's monuments we add licensed local guides on request — quoted separately, so you only pay for the days you want one."],
+  ["Where does the driver stay overnight?", "Near your hotel, at his own arrangement — his food and stay are included in the price. You never pay the driver directly for anything on the route; fuel, tolls and parking are in the quote."],
+  ["Do I tip the driver?", "Tips are optional and given at the end of the trip if you were happy. We never add a service charge."],
+  ["Can we change the route during the trip?", "Yes, within the same region and number of days. Extra nights or kilometres are quoted on the spot, and the same car and driver continue with you."],
+  ["Which day should we avoid for Agra?", "Friday — the Taj Mahal is closed to general visitors on Fridays (it opens 30 minutes before sunrise on other days). We plan the Agra day around it; foreign visitors buy a separate ticket on the spot or online."]
+ ],
+ "sources": [
+  ["Ministry of Road Transport & Highways — All India Tourist Vehicles (Permit) Rules, 2023 (SCC Online summary)", "https://www.scconline.com/blog/post/2023/04/20/ministry-of-road-transport-and-highways-notified-all-india-tourist-vehicles-permit-rules-legal-research-legal-update-legal-news/"],
+  ["UK FCDO — India travel advice: safety and security (driving, road safety)", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"],
+  ["UK FCDO — India travel advice: regional advice (Jammu and Kashmir)", "https://www.gov.uk/foreign-travel-advice/india"],
+  ["US Department of State — India Travel Advisory", "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"],
+  ["Taj Mahal official site — getting around Agra (road distances)", "https://tajmahal.gov.in/getting-around-taj-mahal.aspx"],
+  ["Taj Mahal official site — visiting hours and ticketing", "https://tajmahal.gov.in/visiting-hours.aspx"],
+  ["Himachal Pradesh Tourism — Manali (distances, Rohtang season)", "https://himachaltourism.gov.in/destination/manali/"],
+  ["Himachal Pradesh Tourism — Dharamshala (Gaggal airport, McLeod Ganj)", "https://himachaltourism.gov.in/destination/dharamshala/"],
+  ["Prime Minister's Office — Atal Tunnel inauguration, 3 October 2020", "https://pmindia.gov.in/?p=8160111"],
+  ["National Portal of India — Shimla, Manali and Keylong information (HPTDC)", "https://www.india.gov.in/information-manali-and-keylong"]
+ ],
+ "verified": "17 Oct 2026",
+ "cta": {
+  "h2": "Tell us your route — we'll send a plan and a quote",
+  "text": "Cities, dates, how many of you, and what kind of car. You get a day-by-day plan and a US-dollar quote, then decide.",
+  "wa": "Hello Suzu Travels, I'm planning a private car with driver trip in North India. Route: ___ , dates: ___ , travellers: ___ , country: ___"
+ },
+ "service": {
+  "name": "Private car with driver — North India",
+  "type": "Chauffeur-driven car hire for international travellers",
+  "area": "Delhi, Uttar Pradesh, Rajasthan, Himachal Pradesh, Punjab, Uttarakhand"
+ },
+ "links": [
+  "golden-triangle-tour",
+  "char-dham-yatra-for-nri"
+ ]
+}
