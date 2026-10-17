@@ -1,0 +1,24 @@
+{
+ "_note": "Media for /india-tours/taj-mahal-tour-from-delhi/ (product page). Existing licensed photos only (hf/photos/CREDITS.md), each captioned only with its allowed place. Route stops from research/pages/taj-mahal-tour-from-delhi.md 'Media notes'. No cost ladder (no day-trip rate in data/prices.json).",
+ "hero": {
+  "kicker": "TAJ MAHAL · FROM DELHI",
+  "scenes": [
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 1080}, "to": {"y": 640}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}}
+  ],
+  "steps": ["LEAVE DELHI EARLY", "TAJ MAHAL, AGRA", "OR ON TO JAIPUR"]
+ },
+ "route": {
+  "title": "DELHI → AGRA",
+  "sub": "Same day by car or train — or stay and go on to Jaipur",
+  "bounds": "auto",
+  "dur": 12,
+  "stops": [
+   {"name": "Delhi", "sub": "pick-up at your hotel", "day": "Start", "lat": 28.61, "lon": 77.21},
+   {"name": "Agra", "sub": "Taj Mahal · Agra Fort", "day": "204 km", "lat": 27.18, "lon": 78.02},
+   {"name": "Fatehpur Sikri", "sub": "on the Jaipur road", "day": "Optional", "lat": 27.09, "lon": 77.66},
+   {"name": "Jaipur", "sub": "Golden Triangle", "day": "Optional", "lat": 26.91, "lon": 75.79}
+  ]
+ }
+}
