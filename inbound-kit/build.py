@@ -35,6 +35,8 @@ FACT_TRAPS = [
     (r"\b(?:100%|completely|totally|absolutely) safe\b|\bsafest\b", "safety pages: balanced, sourced, no absolutes"),
     (r"guaranteed? (?:visa|approval)|visa (?:approval )?guaranteed?", "never promise visa approval — we are not a visa agency"),
     (r"(?<!not a )(?<!not an )\bvisa agency\b", "we are not a visa agency — the only allowed mention is 'we are not a visa agency'"),
+    # Reviewer addition, 17 Oct 2026: unsubstantiated market-share claims (ASCI: every claim must be substantiated) — say "many", not "most"
+    (r"\b(?:how |the way )?most (?:international |foreign |overseas )?(?:visitors|travellers|travelers|tourists|guests|first[- ]timers) (?:see|travel|choose|book|take|hire|prefer|do)\b", "unsubstantiated 'most visitors …' claim — write 'many' unless a cited source gives the share"),
 ]
 PHONE_OK = "7087488961"  # the ONLY Suzu number (all older numbers are dead)
 VISA_WORDS = r"\be-?visa\b|\bvisa\b"

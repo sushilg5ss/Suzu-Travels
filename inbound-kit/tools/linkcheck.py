@@ -40,7 +40,14 @@ def main():
     args = sys.argv[1:]
     if not args:
         raise SystemExit(__doc__)
-    slugs = list(json.loads((KIT / "live.json").read_text())) if args == ["--all"] else args
+    if args == ["--all"]:  # every kit-built page in live.json; hand-built pages (11411/11412/11413) have no out/ file
+        live = json.loads((KIT / "live.json").read_text())
+        slugs = [s for s, v in live.items() if not v.get("hand_built")]
+        skipped = [s for s in live if s not in slugs]
+        if skipped:
+            print(f"skipping hand-built (no out/ build): {', '.join(skipped)}")
+    else:
+        slugs = args
     pages = {}
     for s in slugs:
         for u in urls_of(s):
