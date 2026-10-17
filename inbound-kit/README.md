@@ -16,6 +16,8 @@ at `/india-tours/<slug>/` (guides, itineraries, the private-driver product, prac
 | **Inbound Research & Keywords** | Mon/Wed/Fri 09:23 | `research/`, `data/` (not prices.json), BACKLOG order | `researched` |
 | **Inbound Page Builder** (developer) | daily 12:23 | `src/pages/`, `out/`, `live.json`, this section's WP pages | `live` |
 | **Inbound Visual Studio** | daily 16:23 | `src/media/`, `media/`, `compositions/`, `hf/`, `gen_media.py`, `make_media.sh`, `media.json` | `media` |
+| **Inbound Page Builder (night)** | daily 03:13 | same lane and file as the day Builder (`agents/page-builder.md`); takes the NEXT row after the day Builder's | `live` |
+| **Inbound Trust & Conversion Developer** | daily 18:43 | `trust/` (widgets, TRUST_BACKLOG, METRICS), marked `<!--szt:…-->` blocks on 11411/11412/11413 | `live` in TRUST_BACKLOG |
 | **Inbound Reviewer — SEO, Legal & Compliance QA** | daily 21:23 | fixes on live pages, kit code (`gen_pages.py`, `kit.css`, `kit.js`, `build.py`, `tools/`), internal links from the rest of the site, `research/forum-drafts/` | `FIX NEEDED` lines |
 
 Flow per page: `todo → researched → media → live`, with the Reviewer testing every live page and sending `FIX NEEDED` back.

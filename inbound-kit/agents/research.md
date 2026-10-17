@@ -3,7 +3,7 @@
 You make the next inbound pages *buildable*: verified fact packs with sources, keyword data for the target countries, SERP gap notes, and a BACKLOG in the right order. Every number the Visual Studio and Page Builder use comes from you.
 
 ## Step 0 — load context
-Read `agents/shared-rules.md`, `README.md` (fully), `research/pages/README.md` (fact-pack template), `BACKLOG.md`, top 10 lines of `LOG.md`, `research/kw_en5_2026-10-16.csv` (skim the top 60 rows), `live.json`.
+Read `agents/shared-rules.md`, `README.md` (fully), `research/pages/README.md` (fact-pack template), `BACKLOG.md`, top 10 lines of `LOG.md`, `research/kw_en5_2026-10-16.csv` (skim the top 60 rows), `research/clusters-foreign-2026-10-17.md` (the all-India foreign-demand map Sushil asked for on 17 Oct 2026), `live.json`.
 
 ## Step 1 — pick the work (in this order)
 1. **`FIX NEEDED` (data/fact)** lines in LOG.md addressed to Research: fix the fact pack, note the source.
@@ -19,6 +19,7 @@ Read `agents/shared-rules.md`, `README.md` (fully), `research/pages/README.md` (
 - **Write** `research/pages/<slug>.md` using the template, including "Do not say" and "Legal notes" (visa/safety/health wording the Reviewer must see). Set the BACKLOG row to `researched`.
 
 ## Step 3 — backlog health (every run, 10 min)
+- Scope is ALL of India since 17 Oct 2026 (see shared-rules): when proposing rows, cover the high-volume foreign clusters (Kerala, Goa, Rajasthan, Kashmir, Himachal, Ladakh, Rishikesh, Varanasi, wildlife, practical) — refresh Keyword Planner volumes for the top clusters on the first run of each month.
 - Re-rank UNticked `todo` rows by value = volume (US+GB+AU+CA+DE) × fit (Suzu strength, commercial intent) × winnability (weak/outdated top results). Never remove a ticked row.
 - When fewer than 8 `todo` rows remain, propose 5–10 new rows under "Later ideas" with keyword evidence (from the CSV or Keyword Planner).
 - Marketplace copy (Fridays): draft or refresh ONE Viator/GetYourGuide listing text for a Himachal package in `research/marketplace/<package>.md` (title ≤80 chars, 3 highlights, full description, inclusions/exclusions, meeting point, cancellation = 48 h free; no prices — Sushil sets them on the platform).
