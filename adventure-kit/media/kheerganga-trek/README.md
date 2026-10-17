@@ -1,0 +1,11 @@
+# kheerganga-trek media (Visual Studio night, 18 Oct 2026 IST run)
+
+HyperFrames 0.8.85. Compositions: kheerganga-trek-{hero,explainer,reel}.html. Media commit: cc279ccd9b7e298a582443a61c14a0a3d8e1d945
+Base: https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@cc279ccd9b7e298a582443a61c14a0a3d8e1d945/adventure-kit/media/kheerganga-trek/
+
+- hero.mp4 1.21 MB / hero.webm 1.08 MB / poster.webp 93 KB (WP 14183) — 12 s seamless loop (first/last frame diff ~1.5/255). Parvati valley (Suzu photo) → hikers on a forest footbridge → mountain cascade → trekkers below a snow peak → back to the valley; right half "Kheerganga Trek", gold trail Barshaini road-head → Kheerganga, km counter 0 → ~12 km, "top at ~2,960 m", rotating facts (~12–13 km from Barshaini · Day trek only · Leave by 2 pm · Hot spring at the top · Open Apr–Jun · Sep–Oct).
+- explainer.mp4 0.23 MB / explainer.webm 0.23 MB / explainer-poster.webp (WP 14184) — 12 s "Your Kheerganga day": time × altitude line 5:30 am Barshaini (~2,000 m) → Nakthan → Rudranag (~2,700 m) → top by 10 am (hot spring) → red 2 pm turn-around → down 3–4 h; live clock + climb counter to ~1,000 m; chips "No camping at the top", "Sleep in Kasol · Tosh · Kalga", "Stay + cab in one quote", "Price: Get Quote".
+- reel-web.mp4 0.77 MB / reel-web.webm 0.70 MB / reel-web-poster.webp — 15 s 9:16; end card Get Quote + suzutravels.com/adventure/kheerganga-trek + HP Tourism reg. no.
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
+
+Photos (no Kheerganga-specific photo exists in the library or on Pexels; generic shots carry neutral alt text, never labelled Kheerganga): Pexels → WP 14178 hikers on a forest footbridge (trail card / hero), 14179 mountain cascade in autumn forest (waterfall / route card), 14180 trekkers in a meadow below a snow peak (season / beginners), 14181 mountain river in a forested valley (monsoon / safety row), 14182 stone hut in a pine forest (night-stay card). Suzu reuse: 12659 Parvati valley near Kasol (hero/overview), 13766 Tosh village houses (stay in Tosh/Kalga card), 13758 Parvati river bridge near Kasol (how to reach). No hot-spring photo available — none is shown; do not use tent-at-the-top photos (camping banned since Jul 2024).
