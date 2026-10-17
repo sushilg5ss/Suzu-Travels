@@ -109,6 +109,32 @@ def calculator(dests, slug, default_vehicle="sedan"):
             f'<ul><li>Tolls, parking & state entry fee extra at actuals</li><li>Final price confirmed on WhatsApp before you pay</li></ul>'
             f'<a class="szc-btn gold" id="szc-cw" href="{wa("Hi Suzu Travels")}" target="_blank" rel="noopener">Lock this fare on WhatsApp</a></div></div>')
 
+def route_planner(p, r):
+    """Compact live planner for a route page (17 Oct 2026, ENHANCEMENTS #3): fixed From/To, real road route on the map,
+    drive animation auto-plays when scrolled into view, per-tier fares for every car, WhatsApp lock-in. Same #szc-plan ids as the hub,
+    so kit.js runs unchanged; data-auto makes it run on scroll instead of waiting for the button."""
+    if r["a"] not in PLACES or r["b"] not in PLACES:
+        return ""
+    pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
+    cfg = dict(p={k: [round(PLACES[k][0], 3), round(PLACES[k][1], 3)] for k in (r["a"], r["b"])},
+               r=[dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u="")], v=pv, s=p["slug"],
+               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
+    vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
+    return (f'<section class="szc-sec" id="live"><span class="szc-kicker">Live road map</span><h2>Watch the {r["a"]} to {r["b"]} drive - with the fare</h2>'
+            f'<p class="szc-lead">The real {r["km"]} km road from OpenStreetMap, drawn live as the car drives it. Pick a car and trip type - the fare for every fleet tier updates below, then lock it on WhatsApp.</p>'
+            f'<form class="szc-plan c" id="szc-plan" data-plan=\'{esc(json.dumps(cfg, ensure_ascii=False, separators=(",", ":")))}\' data-auto="1" onsubmit="return false">'
+            f'<input id="szc-fa" type="hidden" value="{esc(r["a"])}"><input id="szc-fb" type="hidden" value="{esc(r["b"])}">'
+            f'<div class="szc-pform c"><div class="szc-proute"><span class="szc-pa">{r["a"]}</span><i>→</i><span class="szc-pb">{r["b"]}</span>'
+            f'<button type="button" class="szc-pswap" id="szc-pswap" aria-label="Reverse direction">⇄ Reverse</button></div>'
+            f'<div><label for="szc-pv">Car</label><select id="szc-pv">{vopts}</select></div>'
+            f'<div><label for="szc-pm">Trip</label><select id="szc-pm"><option value="one">One-way drop</option><option value="round">Round trip</option></select></div>'
+            f'<div><label for="szc-pd">Date</label><input id="szc-pd" type="date"></div>'
+            f'<div><label for="szc-pn">People</label><input id="szc-pn" type="number" min="1" max="45" value="2"></div>'
+            f'<button class="szc-btn gold" type="submit">Show route &amp; fare</button><p class="szc-pstat" id="szc-pstat"></p></div>'
+            f'<div class="szc-mapwrap"><div class="szc-map" id="szc-map" aria-label="Road map of {esc(r["a"])} to {esc(r["b"])}"></div><div class="szc-mapidle"><b>{r["a"]} → {r["b"]} on the map</b><span>Scroll here and the drive plays on real roads - hills, tunnels and all.</span></div></div>'
+            f'<div class="szc-pout" id="szc-pout"><div class="szc-pempty"><b>Fares for this road:</b> the map loads the real route and shows one-way or round-trip fares for Prime, Standard and Saver fleets - lock the price on WhatsApp in one tap.</div></div>'
+            f'</form><p class="szc-note">Map data © OpenStreetMap contributors · road routing by OSRM · map tiles by OpenFreeMap. Distances and times are road estimates for planning; your WhatsApp quote is the final price.</p></section>')
+
 def route_media(slug, stops, heading, lead):
     m = MEDIA.get(slug, {}).get("route")
     items = []
@@ -270,12 +296,13 @@ def build_route(p):
         sys.exit(f"FARE MISMATCH in {p['slug']}: seo_title vs engine {inr(sed)}")
     chips = [f'<b>{r["km"]} km</b> · {r["t"]}', f'Sedan from <b>{inr(sed)}</b>', f'Innova from <b>{inr(oneway("crysta", r["km"], r["f"]))}</b>', "Hatchback → Tempo Traveller", "One-way or round trip"]
     dests = [dict(l=f'{r["a"]} → {r["b"]}', km=r["km"], f=r["f"]), dict(l=f'{r["b"]} → {r["a"]}', km=r["km"], f=r["f"])]
-    body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Fares"), ("route", "Route"), ("cars", "Cars"), ("tips", "Tips"), ("faq", "FAQ")])
+    body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Fares"), ("live", "Live map"), ("route", "Route"), ("cars", "Cars"), ("tips", "Tips"), ("faq", "FAQ")])
     body += (f'<section class="szc-sec" id="overview"><span class="szc-kicker">At a glance</span><h2>{p["title"]}: distance, time and fare</h2>'
              f'<div class="szc-answer">{p["answer"]}</div>{facts(p["facts"])}</section>')
     body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Fares 2026</span><h2>{r["a"]} to {r["b"]} taxi fare</h2>'
              f'<p class="szc-lead">Indicative starting prices for off-season weekdays. Same fare for the return direction ({r["b"]} to {r["a"]}).</p>'
              f'{fare_table_route(r, p["slug"])}{includes()}<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
+    body += route_planner(p, r)
     body += route_media(p["slug"], p["stops"], f'{r["a"]} to {r["b"]} by road, stop by stop', f'The route our drivers take, with the stops worth making.')
     body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Choose your car for {r["b"]}</h2>{vehicle_cards(p["slug"], r["a"] + " to " + r["b"], dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Road tips for {r["a"]} to {r["b"]}</h2>{tips(p["tips"])}</section>'

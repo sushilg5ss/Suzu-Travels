@@ -220,7 +220,7 @@ if(pl){
   var tiersHtml=Object.keys(TIERS).map(function(k){var a2=amtFor(v,k);return '<button type="button" class="szc-ptier'+(k===tier?' on':'')+'" data-tier="'+k+'"><span class="n">'+TNAME[k].split(' (')[0]+'</span><span class="s">'+TNAME[k].split(' (')[1].replace(')','')+'</span><span class="a">'+(a2===null?'On quote':inr(a2))+'</span></button>';}).join('');
   var all=PC.v.filter(function(x){return !x.quote;}).map(function(x){var a3=amtFor(x,tier);return '<li'+(x.id===vid?' class="on"':'')+'><span>'+x.n+' <small>'+x.seats+' seats</small></span><b>'+inr(a3)+'</b></li>';}).join('');
   var est=amtFor(v,tier);
-  var msg='Hi Suzu Travels, I planned a route on your site.\nFrom: '+a.name+'\nTo: '+b.name+'\nDistance: ~'+km+' km ('+(isRound?'round trip':'one-way')+')\nCar: '+v.n+' - '+TNAME[tier]+'\nEstimate shown: '+(est===null?'on quote':inr(est))+'\nDate: '+date+'\nPeople: '+ppl+'\n(page: cabs planner)';
+  var msg='Hi Suzu Travels, I planned a route on your site.\nFrom: '+a.name+'\nTo: '+b.name+'\nDistance: ~'+km+' km ('+(isRound?'round trip':'one-way')+')\nCar: '+v.n+' - '+TNAME[tier]+'\nEstimate shown: '+(est===null?'on quote':inr(est))+'\nDate: '+date+'\nPeople: '+ppl+'\n(page: '+(PC.s||'cabs')+' planner)';
   var pageLink=kr?(kr.u?'<a class="szc-btn line" href="'+kr.u+'">Full '+kr.a+' → '+kr.b+' route page</a>':''):'';
   out.innerHTML='<div class="szc-pres"><div class="szc-pfacts"><div><span class="k">Distance</span><span class="v">'+km+' km</span></div><div><span class="k">Drive time</span><span class="v">'+tm+'</span></div><div><span class="k">Car</span><span class="v">'+v.n+'</span></div><div><span class="k">Trip</span><span class="v">'+(isRound?'Round trip':'One-way drop')+'</span></div></div>'
    +'<p class="szc-plbl">Choose your fleet - same route, three price points</p><div class="szc-ptiers">'+tiersHtml+'</div>'
@@ -231,12 +231,12 @@ if(pl){
   var rp=$('szc-replay');if(rp){rp.addEventListener('click',function(){if(last){play(last.res);}});}
  }
  window.szcPlanRefresh=function(){if(last){render(last.res,last.a,last.b);}};
- function run(){
+ function run(auto){
   var A=$('szc-fa').value,B=$('szc-fb').value;
   if(!A||!B){status('Type a pickup and a drop city.',true);return;}
   if(norm(A)===norm(B)){status('Pickup and drop are the same place.',true);return;}
   status('Finding the road route…');pl.classList.add('busy');
-  try{pl.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}
+  if(!auto){try{pl.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}}
   Promise.all([geocode(A),geocode(B)]).then(function(ab){
    var a=ab[0],b=ab[1];
    return route(a,b).catch(function(){var km=hav(a,b)*1.3;return {km:km,hrs:km/42,coords:[[a.lon,a.lat],[b.lon,b.lat]],fallback:true};}).then(function(res){
@@ -253,6 +253,9 @@ if(pl){
  var fd=$('szc-find');
  if(fd){fd.addEventListener('submit',function(e){e.preventDefault();$('szc-fa').value=$('szc-ha').value;$('szc-fb').value=$('szc-hb').value;if($('szc-hd').value){$('szc-pd').value=$('szc-hd').value;}run();});}
  qa('[data-plan-route]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();var r=el.getAttribute('data-plan-route').split('>');$('szc-fa').value=r[0];$('szc-fb').value=r[1];run();});});
- try{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){io.disconnect();ensureMap(function(){});}});},{rootMargin:'400px'});io.observe(mapBox);}catch(e){}
+ var sw=$('szc-pswap');
+ if(sw){sw.addEventListener('click',function(){var t=$('szc-fa').value;$('szc-fa').value=$('szc-fb').value;$('szc-fb').value=t;var pa=pl.querySelector('.szc-pa'),pb=pl.querySelector('.szc-pb');if(pa){if(pb){var u=pa.textContent;pa.textContent=pb.textContent;pb.textContent=u;}}run(true);});}
+ var autoRun=pl.getAttribute('data-auto')?true:false;
+ try{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){io.disconnect();if(autoRun){if(!last){run(true);return;}}ensureMap(function(){});}});},{rootMargin:autoRun?'120px':'400px'});io.observe(mapBox);}catch(e){}
 }
 })();
