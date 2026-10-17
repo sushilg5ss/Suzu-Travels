@@ -49,7 +49,7 @@ def planner():
             f'<div><label for="szc-pm">Trip</label><select id="szc-pm"><option value="one">One-way drop</option><option value="round">Round trip</option></select></div>'
             f'<div><label for="szc-pd">Date</label><input id="szc-pd" type="date"></div>'
             f'<div><label for="szc-pn">People</label><input id="szc-pn" type="number" min="1" max="45" value="2"></div>'
-            f'<button class="szc-btn gold" type="submit">Show route &amp; fare</button><p class="szc-pstat" id="szc-pstat"></p></div>'
+            f'<div class="szc-pgo"><button class="szc-btn gold" type="submit">Show route &amp; fare</button></div><p class="szc-pstat" id="szc-pstat"></p></div>'
             f'<div class="szc-mapwrap"><div class="szc-map" id="szc-map" aria-label="Road map of your route"></div><div class="szc-mapidle"><b>Your route appears here</b><span>Real roads, live distance and a drive-through animation - hills, tunnels and all.</span></div></div>'
             f'<div class="szc-pout" id="szc-pout"><div class="szc-pempty"><b>How it works:</b> pick From and To and press <b>Show route &amp; fare</b>. You get the distance, the driving time and the fare for Prime, Standard and Saver fleets - then lock the price on WhatsApp in one tap.</div></div>'
             f'</form><datalist id="szc-places">{dl}</datalist>'
