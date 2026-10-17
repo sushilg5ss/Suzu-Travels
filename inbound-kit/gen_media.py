@@ -367,7 +367,7 @@ def cost_ladder(slug):
     rungs, js = [], []
     t0, step = 1.6, min(1.5, 8.4 / n)
     for i, (it, y) in enumerate(zip(items, ys)):
-        price = f'<div class="pr">from <b>US${it["price"]:,}</b></div>' if "price" in it else '<div class="pr dim">included</div>'
+        price = f'<div class="pr">from <b>US${it["price"]:,}</b></div>' if "price" in it else f'<div class="pr dim">{esc(it.get("tag", "included"))}</div>'  # tag: "optional" / "your own" (Page Builder, 17 Oct 2026)
         rungs.append(f'<div class="rg" id="r{i}" style="top:{y:.0f}px"><div class="dot"></div><div class="lab"><div class="l">{esc(it["label"])}</div><div class="s">{esc(it.get("sub", ""))}</div></div>{price}</div>')
         t = t0 + i * step
         js.append(f'tl.fromTo("#r{i}",{{opacity:0,x:-26}},{{opacity:1,x:0,duration:.5,ease:"power2.out"}},{t:.2f});')
