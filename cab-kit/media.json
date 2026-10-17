@@ -616,5 +616,14 @@
    "https://www.pexels.com/video/time-lapse-of-a-winding-road-in-mountains-himachal-pradesh-india-12718570/",
    "https://www.pexels.com/video/drone-view-of-a-car-driving-on-a-mountain-road-15953000/"
   ]
+ },
+ "rishikesh-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@89a842047e0e71f6ccc6cc15d01a02002674c460/cab-kit/media/rishikesh-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@89a842047e0e71f6ccc6cc15d01a02002674c460/cab-kit/media/rishikesh-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@89a842047e0e71f6ccc6cc15d01a02002674c460/cab-kit/media/rishikesh-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
