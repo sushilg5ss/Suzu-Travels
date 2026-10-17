@@ -1,0 +1,387 @@
+{
+ "hero-abroad": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-hero-abroad.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-hero-abroad-768x512.webp",
+  "alt": "View of an aircraft wing above the clouds at sunset",
+  "cap": "Your trip abroad",
+  "credit": "Johny Goerend",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/white-and-black-airplane-wing-over-white-clouds-during-daytime-KB9r_hTzyeQ"
+ },
+ "hero-abroad-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-hero-abroad-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-hero-abroad-2-768x480.webp",
+  "alt": "Overwater villas around a turquoise lagoon in the Maldives, seen from the air",
+  "cap": "Maldives",
+  "credit": "Hawk Hassaan",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/overwater-bungalows-in-maldives-lagoon-bNNS4inRa38"
+ },
+ "nepal-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-nepal-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-nepal-1-768x441.webp",
+  "alt": "Colourful rowing boats on Phewa Lake, Pokhara, Nepal",
+  "cap": "Phewa Lake, Pokhara",
+  "credit": "Meera Pankhania",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/boats-on-body-of-water-during-daytime-7cENZhgyf7c"
+ },
+ "nepal-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-nepal-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-nepal-2-768x432.webp",
+  "alt": "Boudhanath Stupa with prayer flags, Kathmandu, Nepal",
+  "cap": "Boudhanath, Kathmandu",
+  "credit": "Aryan Bhattarai",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-large-white-and-gold-structure-in-the-middle-of-a-city-7VZDTZkzgV8"
+ },
+ "bhutan-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bhutan-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bhutan-1-768x512.webp",
+  "alt": "Paro Taktsang (Tiger's Nest) monastery on a cliff, Bhutan",
+  "cap": "Tiger's Nest, Paro",
+  "credit": "Vinay Potdar",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/MIJ8KLR1cr8"
+ },
+ "bhutan-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bhutan-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bhutan-2-768x512.webp",
+  "alt": "Punakha Dzong beside the river, Bhutan",
+  "cap": "Punakha Dzong",
+  "credit": "Raimond Klavins",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/white-and-brown-concrete-building-near-body-of-water-under-blue-and-white-cloudy-sky-during-aUq4yyB2yIs"
+ },
+ "srilanka-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-srilanka-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-srilanka-1-768x512.webp",
+  "alt": "Blue train crossing the Nine Arch Bridge, Ella, Sri Lanka",
+  "cap": "Nine Arch Bridge, Ella",
+  "credit": "Yves Alarie",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/blue-train-on-focus-photography-3R50kTNBKiE"
+ },
+ "srilanka-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-srilanka-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-srilanka-2-768x512.webp",
+  "alt": "Tea estates in the Sri Lankan hill country",
+  "cap": "Tea country, Sri Lanka",
+  "credit": "Egle Sidaraviciute",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/green-farm-on-mountain-slope-RA0ulK_q67w"
+ },
+ "maldives-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-maldives-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-maldives-1-768x480.webp",
+  "alt": "Overwater villas in a turquoise atoll, Maldives, from the air",
+  "cap": "Maldives",
+  "credit": "Ishan @seefromthesky",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/overwater-bungalows-in-noonu-atoll-DtWyp_4YEes"
+ },
+ "maldives-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-maldives-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-maldives-2-768x432.webp",
+  "alt": "Palm-fringed white beach and clear lagoon, Maldives",
+  "cap": "Maldives lagoon",
+  "credit": "Dion Tavenier",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/green-palm-trees-near-body-of-water-h-Qb-9H6Big"
+ },
+ "thailand-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-thailand-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-thailand-1-768x576.webp",
+  "alt": "Longtail boat on turquoise water below limestone cliffs, Phi Phi Islands, Thailand",
+  "cap": "Phi Phi Islands",
+  "credit": "David Gardiner",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-boat-floating-on-top-of-a-body-of-water-SE9IQfkN9IA"
+ },
+ "thailand-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-thailand-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-thailand-2-768x512.webp",
+  "alt": "Wat Arun temple at sunset on the Chao Phraya River, Bangkok",
+  "cap": "Wat Arun, Bangkok",
+  "credit": "Vasant Jain",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/two-boats-floating-on-the-water-in-front-of-a-tall-building-M5EYTUbmMgc"
+ },
+ "singapore-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-singapore-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-singapore-1-768x512.webp",
+  "alt": "Marina Bay Sands and the ArtScience Museum lit up at night, Singapore",
+  "cap": "Marina Bay, Singapore",
+  "credit": "Arul Kumaran",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/city-skyline-during-night-time-O_Kh4el_6H4"
+ },
+ "singapore-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-singapore-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-singapore-2-768x432.webp",
+  "alt": "Supertree Grove at Gardens by the Bay lit up at night, Singapore",
+  "cap": "Gardens by the Bay",
+  "credit": "Jan Folwarczny",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/blue-lighted-gardens-by-the-bay-during-night-YlPYR7DrsOE"
+ },
+ "malaysia-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-malaysia-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-malaysia-1-768x480.webp",
+  "alt": "Petronas Twin Towers at blue hour, Kuala Lumpur",
+  "cap": "Petronas Towers, KL",
+  "credit": "Ismail Bashiri",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/petronas-twin-towers-in-kuala-lumpur-GdjZs5JZwZA"
+ },
+ "malaysia-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-malaysia-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-malaysia-2-768x512.webp",
+  "alt": "Golden Murugan statue and rainbow steps at Batu Caves, Malaysia",
+  "cap": "Batu Caves",
+  "credit": "Abdelrahman Ismail",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-large-golden-statue-sitting-in-front-of-a-mountain-8zi5HhLk5vQ"
+ },
+ "vietnam-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-vietnam-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-vietnam-1-768x489.webp",
+  "alt": "Karst islands and boats in Ha Long Bay at sunset, Vietnam, from the air",
+  "cap": "Ha Long Bay",
+  "credit": "Vivu Vietnam",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/karst-islands-in-the-ocean-at-sunset-wTJQjCQm90k"
+ },
+ "vietnam-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-vietnam-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-vietnam-2-768x511.webp",
+  "alt": "Lantern-lit bridge over the river at night, Hoi An, Vietnam",
+  "cap": "Hoi An",
+  "credit": "Paul Macdonald",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/bridge-with-red-lanterns-in-hoi-an-H0W4aE-dy7Y"
+ },
+ "bali-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bali-1.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bali-1-768x512.webp",
+  "alt": "Tegallalang rice terraces and palm trees, Ubud, Bali",
+  "cap": "Tegallalang, Ubud",
+  "credit": "Niklas Weiss",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/rice-terraces-in-tegelalang-bali--2WlTWZLnRc"
+ },
+ "bali-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bali-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-bali-2-768x614.webp",
+  "alt": "Pura Ulun Danu Bratan temple on Lake Bratan, Bali",
+  "cap": "Ulun Danu Bratan",
+  "credit": "Guillaume Marques",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/brown-and-green-temple-near-body-of-water-under-blue-and-white-cloudy-sky-during-daytime-bnMPFPuSCI0"
+ },
+ "dubai": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-dubai.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-dubai-768x499.webp",
+  "alt": "Dubai skyline with the Burj Khalifa under a cloudy sky",
+  "cap": "Dubai",
+  "credit": "Ahmed Aldaie",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-city-with-tall-buildings-aKj9uDanF18"
+ },
+ "turkey": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-768x512.webp",
+  "alt": "Hot-air balloons over the valleys of Cappadocia, Turkey",
+  "cap": "Cappadocia",
+  "credit": "Ricky LK",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-group-of-hot-air-balloons-flying-over-a-valley-sqWpPdIU_ao"
+ },
+ "georgia": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-georgia.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-georgia-768x507.webp",
+  "alt": "Gergeti Trinity Church below the Caucasus mountains, Kazbegi, Georgia",
+  "cap": "Kazbegi, Georgia",
+  "credit": "Mike Swigunski",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/brown-brick-building-on-green-grass-field-near-mountain-during-daytime-oqWb_tOK7ns"
+ },
+ "azerbaijan": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-azerbaijan.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-azerbaijan-768x512.webp",
+  "alt": "Flame Towers seen from Upland Park, Baku, Azerbaijan",
+  "cap": "Baku",
+  "credit": "Gerhard Reus",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/vPZ7YvpK8Sc"
+ },
+ "armenia": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-armenia.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-armenia-768x512.webp",
+  "alt": "Khor Virap monastery with Mount Ararat behind, Armenia",
+  "cap": "Khor Virap",
+  "credit": "SnapSaga",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-castle-on-a-hill-with-a-snow-covered-mountain-in-the-background-nPDimBfQo6g"
+ },
+ "uzbekistan": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uzbekistan.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uzbekistan-768x432.webp",
+  "alt": "Registan madrasas in Samarkand, Uzbekistan, at dusk",
+  "cap": "Registan, Samarkand",
+  "credit": "Ozodbek Erkinov",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-large-ornate-building-with-a-dome-hvLu3ABC1n0"
+ },
+ "europe": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-768x512.webp",
+  "alt": "Eiffel Tower under a blue sky, Paris",
+  "cap": "Paris",
+  "credit": "Anthony DELANOIX",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/eiffel-tower-at-paris-france-QAwciFlS1g4"
+ },
+ "switzerland": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-768x545.webp",
+  "alt": "Lauterbrunnen valley and Staubbach Falls, Switzerland",
+  "cap": "Lauterbrunnen",
+  "credit": "Robin Ulrich",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/houses-on-green-grass-field-near-mountain-under-blue-sky-during-daytime-QuZ6kOAeW2o"
+ },
+ "uk": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-768x512.webp",
+  "alt": "Tower Bridge and the City of London skyline",
+  "cap": "London",
+  "credit": "Charles Postiaux",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/tower-bridge-and-london-skyscrapers-Q6UehpkBSnQ"
+ },
+ "japan": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-768x512.webp",
+  "alt": "Chureito Pagoda with Mount Fuji and cherry blossom, Japan",
+  "cap": "Mount Fuji, Japan",
+  "credit": "Fabio Montello",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/Y0A9rXbn4x0"
+ },
+ "mauritius": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-mauritius.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-mauritius-768x512.webp",
+  "alt": "Le Morne peninsula and lagoon, Mauritius, from the air",
+  "cap": "Le Morne, Mauritius",
+  "credit": "Xavier Coiffic",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/aerial-photography-of-island-beside-body-of-water-ByAHlRiTQjo"
+ },
+ "egypt": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-egypt.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-egypt-768x576.webp",
+  "alt": "Pyramids of Giza in the desert, Egypt",
+  "cap": "Giza",
+  "credit": "Abdelrhman Allam",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/the-pyramids-of-giza-are-in-the-desert-QWVRtZuRFhg"
+ },
+ "australia": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-australia.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-australia-768x512.webp",
+  "alt": "Sydney Opera House and harbour with ferries, Sydney",
+  "cap": "Sydney Harbour",
+  "credit": "Dan Freeman",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/sydney-opera-house-during-daytime-7Zb7kUyQg1E"
+ },
+ "kazakhstan": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-kazakhstan.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-kazakhstan-768x512.webp",
+  "alt": "Big Almaty Lake below snowy mountains, Kazakhstan",
+  "cap": "Big Almaty Lake",
+  "credit": "Patrick Rosenberger (Schneider)",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/calm-body-of-water-during-daytime-GHMS-uQC_Ow"
+ },
+ "india-hero": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-taj-mahal-sunrise.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-taj-mahal-sunrise-768x553.webp",
+  "alt": "Taj Mahal at sunrise reflected in the long pool, Agra",
+  "cap": "Taj Mahal, Agra",
+  "credit": "Shan Elahi",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/reflections-of-white-mosque-on-water-DDiLYt_F88w"
+ },
+ "india-jaipur": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-hawa-mahal-jaipur.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-hawa-mahal-jaipur-768x512.webp",
+  "alt": "Decorated horses passing Hawa Mahal, Jaipur",
+  "cap": "Hawa Mahal, Jaipur",
+  "credit": "Aditya Siva",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/men-riding-decorated-horses-past-hawa-mahal-6rDbvXzIVpQ"
+ },
+ "india-varanasi": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-varanasi-ghats.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-varanasi-ghats-768x512.webp",
+  "alt": "Boats on the Ganges below the ghats of Varanasi",
+  "cap": "Varanasi ghats",
+  "credit": "Martijn Vonk",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-river-wloNuC7qKf8"
+ },
+ "india-himalaya": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-manali-himalaya.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-manali-himalaya-768x412.webp",
+  "alt": "Manali town below snow-covered Himalayan peaks, Himachal Pradesh",
+  "cap": "Manali, Himachal",
+  "credit": "Naman jaswani",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/town-below-snow-covered-mountains-Xpwj1j1HX34"
+ },
+ "humayun": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-india-humayuns-tomb-delhi.webp",
+  "med": null,
+  "alt": "Humayun's Tomb in New Delhi under a blue sky",
+  "cap": "Humayun's Tomb, Delhi",
+  "credit": "shalender kumar",
+  "license": "Pexels License",
+  "src": "https://www.pexels.com/photo/humayun-s-tomb-under-blue-sky-3672388/"
+ },
+ "kashmir": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/kashmir-shikara-ride-dal-lake-srinagar-winter.webp",
+  "alt": "Shikara ride on Dal Lake, Srinagar, in winter — Suzu Travels guests",
+  "cap": "Dal Lake, Srinagar"
+ },
+ "goldentemple": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/04/Amritsar-by-suzu-Travels.webp",
+  "alt": "Golden Temple, Amritsar, lit up at night",
+  "cap": "Golden Temple, Amritsar"
+ },
+ "amer": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/07/Amer-fort-jaipur.webp",
+  "alt": "Amer Fort, Jaipur",
+  "cap": "Amer Fort, Jaipur"
+ },
+ "chardham": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/05/Char-Dham-Yatra-scaled.webp",
+  "alt": "Badrinath temple, Char Dham Yatra, Uttarakhand",
+  "cap": "Badrinath, Char Dham"
+ },
+ "rishikesh": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/04/Dashing-Rishikesh-scaled.webp",
+  "alt": "Rishikesh on the Ganges, Uttarakhand",
+  "cap": "Rishikesh"
+ },
+ "final": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-hero-abroad-2.webp",
+  "med": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-hero-abroad-2-768x480.webp",
+  "alt": "Overwater villas around a turquoise lagoon in the Maldives, seen from the air",
+  "cap": "Maldives",
+  "credit": "Hawk Hassaan",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/overwater-bungalows-in-maldives-lagoon-bNNS4inRa38"
+ }
+}
