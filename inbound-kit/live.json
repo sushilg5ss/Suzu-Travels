@@ -34,5 +34,14 @@
   "blurb": "Your own car and English-speaking driver for the whole trip",
   "added": "2026-10-17",
   "focus": "private driver india"
+ },
+ "india-e-visa-guide": {
+  "id": 14187,
+  "path": "/india-tours/india-e-visa-guide/",
+  "kind": "practical",
+  "label": "India e-Visa guide",
+  "blurb": "Step by step on indianvisaonline.gov.in — avoid look-alike sites",
+  "added": "2026-10-18",
+  "focus": "e tourist visa india"
  }
 }
