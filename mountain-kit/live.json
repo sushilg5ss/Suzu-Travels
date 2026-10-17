@@ -176,5 +176,15 @@
   "blurb": "The easiest 6,000ers and the path to one",
   "added": "2026-10-16",
   "commercial": true
+ },
+ "7000m-peaks": {
+  "id": 14162,
+  "path": "/mountains-of-india/7000m-peaks/",
+  "kind": "band",
+  "label": "7,000 m peaks of India",
+  "blurb": "48 seven-thousanders · which are open",
+  "added": "2026-10-17",
+  "band": "7000",
+  "commercial": false
  }
 }

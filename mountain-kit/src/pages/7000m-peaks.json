@@ -1,0 +1,195 @@
+{
+ "kind": "band",
+ "path": "/mountains-of-india/7000m-peaks/",
+ "band": "7000",
+ "title": "7,000 m Peaks in India: The Seven-Thousanders and Their Status",
+ "seo_title": "7000m Peaks in India: Complete List & Climbing Status",
+ "seo_desc": "India's 7000m peaks in one list: 48 summits from Nanda Devi (7,816 m) down, with state, first ascent and which are open to climbers in 2026.",
+ "focus": "7000m peaks",
+ "commercial": false,
+ "label": "7,000 m peaks of India",
+ "blurb": "48 seven-thousanders · which are open",
+ "verified": "17 Oct 2026",
+ "kicker": "7,000 m peaks · India · 2026 status",
+ "tag": "The 7,000 m peaks of India, and who can climb them.",
+ "sub": "Every Indian summit between 7,000 and 7,999 m (23,000–26,200 ft) in our dataset, from Nanda Devi down to Chong Kumdan Ri II, with its state, first ascent and climbing status, plus why most are off-limits and how the open ones are permitted.",
+ "chips": [
+  [
+   "7,816 m",
+   "Nanda Devi, closed"
+  ],
+  [
+   "48 peaks",
+   "in our dataset"
+  ],
+  [
+   "13",
+   "open to foreign teams"
+  ],
+  [
+   "1907",
+   "Trisul, the first 7,000er"
+  ],
+  [
+   "0",
+   "in Himachal"
+  ]
+ ],
+ "hero_alt": "Snow ridges, a summit push and a glacier (generic stock footage, not named peaks) with four statements: 48 peaks of 7,000 m, Trisul first in 1907, most are off-limits, start in Himachal",
+ "ladder_alt": "Animated chart of seven Indian 7,000 m peaks at their true heights: Satopanth, Trisul I, Nun, Nanda Devi East, Saser Kangri I, Kamet and Nanda Devi, with Reo Purgyil (6,816 m) as Himachal's highest",
+ "q": "How many 7000m peaks are there in India?",
+ "answer": "Our dataset counts <b>48 peaks between 7,000 and 7,999 m</b> in India, with Kangchenjunga (8,586 m) above them. The highest is <b>Nanda Devi</b> (7,816 m / 25,643 ft), closed since 1983. Ladakh holds 24, Uttarakhand 12 and Sikkim 9. Most are restricted: only 13 are open to IMF-permitted foreign teams. All are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  [
+   "Peaks of 7,000–7,999 m",
+   "48 (our dataset)"
+  ],
+  [
+   "Highest",
+   "Nanda Devi, 7,816 m / 25,643 ft (closed)"
+  ],
+  [
+   "Lowest in the band",
+   "Chong Kumdan Ri II, 7,004 m / 22,979 ft"
+  ],
+  [
+   "By state",
+   "Ladakh 24 · Uttarakhand 12 · Sikkim 9 · Arunachal 2 · J&K 1"
+  ],
+  [
+   "Status",
+   "27 climbed · 16 restricted · 4 unclimbed · 1 closed"
+  ],
+  [
+   "Himachal Pradesh",
+   "None: highest is Reo Purgyil, 6,816 m"
+  ]
+ ],
+ "intro": [
+  "Seven-thousanders are the great expedition peaks of the <a href=\"/mountains-of-india/\">Indian Himalaya</a>: three to four weeks on the mountain, big glaciers, long summit days and, for foreign teams, permission from the Indian Mountaineering Foundation (IMF). Exact national counts differ with how subsidiary summits are treated, so we say \"48 in our dataset\" rather than claim a single official number.",
+  "Half of them stand in Ladakh's East Karakoram, around the Siachen glacier and the Nubra valley. Uttarakhand's Garhwal and Kumaon hold the classic, historic peaks such as Trisul, Kamet and Nanda Devi; Sikkim's line the Kangchenjunga massif; and Arunachal Pradesh has two, including Kangto. Himachal Pradesh has none: its highest summit, Reo Purgyil, stops at 6,816 m (22,362 ft)."
+ ],
+ "table": {
+  "where": {
+   "band": "7000"
+  },
+  "h2": "All 48 seven-thousanders, highest first",
+  "label": "The list",
+  "text": [
+   "The animation draws seven of India's best-known 7,000 m peaks at their true heights, from Satopanth (7,075 m) to Nanda Devi (7,816 m), and ends on Himachal's highest, Reo Purgyil (6,816 m).",
+   "Search the table by name, or sort it by height or first ascent. The status column shows whether a peak has been climbed, is restricted, is closed or has no recorded ascent."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "status",
+   "label": "Why closed",
+   "kicker": "Access",
+   "h2": "Why most 7,000 m peaks in India are off-limits",
+   "html": "<p>Of the 48 peaks, 33 are restricted for foreign climbers in our dataset and two are not open to them at all. The reasons differ by region.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>State</th><th>7,000 m peaks</th><th>Open to foreign teams</th><th>Season</th></tr></thead><tbody><tr><td><b>Ladakh</b></td><td class=\"n\">24</td><td class=\"n\">1 (Kun)</td><td>Jun–Aug (Nun-Kun Jun–Sep)</td></tr><tr><td><b>Uttarakhand</b></td><td class=\"n\">12</td><td class=\"n\">11</td><td>May–Jun, Sep–Oct</td></tr><tr><td><b>Sikkim</b></td><td class=\"n\">9</td><td class=\"n\">0</td><td>Apr–May, Oct–Nov</td></tr><tr><td><b>Arunachal Pradesh</b></td><td class=\"n\">2</td><td class=\"n\">0</td><td>Oct–Nov</td></tr><tr><td><b>Jammu &amp; Kashmir</b></td><td class=\"n\">1 (Nun)</td><td class=\"n\">1</td><td>Jun–Sep</td></tr></tbody></table></div><div class=\"szm-cols\"><div class=\"szm-col\"><h3>Ladakh: a military frontier</h3><p><a href=\"#peak-saltoro-kangri\">Saltoro Kangri</a>, <a href=\"#peak-k12\">K12</a>, the <a href=\"#peak-teram-kangri-i\">Teram Kangri</a> group, <a href=\"#peak-ghent-kangri\">Ghent</a>, <a href=\"#peak-singhi-kangri\">Singhi</a>, the Apsarasas group and Padmanabh stand on or near the Siachen–Saltoro line, a military zone. The <a href=\"#peak-saser-kangri-i\">Saser</a>, <a href=\"#peak-mamostong-kangri\">Mamostong</a> and <a href=\"#peak-rimo-i\">Rimo</a> peaks lie in the inner-line Nubra area: the IMF permits them only with joint or army clearance, and East Karakoram climbs run as joint expeditions.</p></div><div class=\"szm-col\"><h3>Sikkim: sacred and restricted</h3><p>Sikkim restricts climbing on most of its high peaks, some of them sacred, and bans Kangchenjunga outright (Notification 70/HOME/2001). Peaks such as <a href=\"#peak-jongsong-peak\">Jongsong</a>, <a href=\"#peak-kabru-north\">Kabru North</a> and <a href=\"#peak-pauhunri\">Pauhunri</a> are restricted, and Zemu Gap Peak has never been climbed.</p></div><div class=\"szm-col\"><h3>Uttarakhand: closed sanctuary, open list</h3><p><a href=\"#peak-nanda-devi\">Nanda Devi</a>, India's highest seven-thousander, has been closed since 1983 with its sanctuary. Only <a href=\"#peak-nanda-devi-east\">Nanda Devi East</a> is on Uttarakhand's 2026 open list. Most other Garhwal and Kumaon 7,000ers are open through the IMF.</p></div><div class=\"szm-col\"><h3>Arunachal Pradesh: remote and new</h3><p><a href=\"#peak-kangto\">Kangto</a> (7,090 m), the state's highest, had its first recorded ascent on 26 November 2025 by an 18-member Indian Army team. <a href=\"#peak-nyegyi-kansang\">Nyegyi Kansang</a> (7,047 m) has no confirmed ascent; a 1995 Army claim is disputed.</p></div></div><p class=\"szm-note\">Status from our dataset, checked October 2026. Rules change: always confirm with the IMF before planning.</p>"
+  },
+  {
+   "id": "open",
+   "label": "Open in 2026",
+   "kicker": "Which you can climb",
+   "h2": "Which 7,000 m peaks are open to climbers in 2026?",
+   "html": "<p>Thirteen of India's 7,000 m peaks are marked open to IMF-permitted foreign teams in our dataset. Eleven are in Uttarakhand, one is in Ladakh, and Nun stands on the Jammu &amp; Kashmir–Ladakh boundary.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>Uttarakhand (11)</h3><ul><li><a href=\"#peak-kamet\">Kamet</a> (7,756 m)</li><li><a href=\"#peak-nanda-devi-east\">Nanda Devi East</a> (7,434 m)</li><li><a href=\"#peak-abi-gamin\">Abi Gamin</a> (7,355 m)</li><li><a href=\"#peak-mana-peak\">Mana Peak</a> (7,272 m)</li><li><a href=\"#peak-mukut-parbat\">Mukut Parbat</a> (7,242 m)</li><li><a href=\"#peak-hardeol\">Hardeol</a> (7,151 m)</li><li><a href=\"#peak-chaukhamba-i\">Chaukhamba I</a> (7,138 m)</li><li><a href=\"#peak-trisul-i\">Trisul I</a> (7,120 m)</li><li><a href=\"#peak-satopanth\">Satopanth</a> (7,075 m)</li><li><a href=\"#peak-tirsuli\">Tirsuli</a> (7,074 m)</li><li><a href=\"#peak-dunagiri\">Dunagiri</a> (7,066 m)</li></ul></div><div class=\"szm-col\"><h3>Ladakh and the J&amp;K boundary (2)</h3><ul><li><a href=\"#peak-nun\">Nun</a> (7,135 m): first climbed on 28 August 1953 by Pierre Vittoz and Claude Kogan</li><li><a href=\"#peak-kun\">Kun</a> (7,077 m): Nun's neighbour in the Nun-Kun massif</li></ul><p class=\"szm-note\">Season roughly June–September.</p></div></div><div class=\"szm-call\"><p><b>Uttarakhand's 2026 opening.</b> On 4 February 2026 Uttarakhand opened 83 peaks of 5,700–7,756 m, including Kamet, Nanda Devi East, the Chaukhamba and Trishul groups, Satopanth and Changabang. Indian climbers pay no state or government fees; foreign climbers pay the IMF fees only. Applications go through the state's UKMPS portal.</p></div>"
+  },
+  {
+   "id": "easiest",
+   "label": "Easiest",
+   "kicker": "An honest answer",
+   "h2": "What is the easiest 7000m peak in India?",
+   "html": "<p>No official body ranks India's 7,000ers by difficulty, so no peak is \"the easiest\" as a fact. Our dataset grades three of the open peaks <b>moderate</b>; every other seven-thousander is graded technical or extreme.</p><ul class=\"szm-steps\"><li><b>Satopanth (7,075 m / 23,212 ft)</b>Garhwal, Uttarakhand; first climbed in 1947. On the 2026 open list.</li><li><b>Trisul I (7,120 m / 23,360 ft)</b>Kumaon, Uttarakhand; the first 7,000 m summit ever climbed, in 1907.</li><li><b>Abi Gamin (7,355 m / 24,131 ft)</b>Garhwal, next to Kamet; first climbed in 1950.</li></ul><p>\"Moderate\" here still means a full expedition of about three to four weeks, IMF permission and earlier experience on a 6,000 m peak. The usual stepping stones are in Himachal: <a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m) and <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m). Our guide to <a href=\"/mountains-of-india/first-6000m-peak/\">climbing your first 6,000 m peak</a> sets out that path step by step.</p>"
+  },
+  {
+   "id": "permits",
+   "label": "Permits",
+   "kicker": "Permits and fees",
+   "h2": "Permits and IMF fees for a 7,000 m expedition",
+   "html": "<p><b>Foreign expeditions</b> need IMF permission, applied for at least 90 days ahead, a liaison officer and insurance. For a team of two the IMF base peak fee is <b>US$1,000 above 7,000 m</b> (US$700 for 6,501–7,000 m), plus US$500 for liaison-officer equipment; per-member charges apply (IMF, checked 1 October 2026). Our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fee guide</a> explains each charge.</p><p><b>Nationals of China, Pakistan, Bangladesh and Afghanistan</b> need central-government permission even for opened peaks (Foreigners (Amendment) Order 2019). <b>Indian teams</b> follow IMF rules too: the leader must hold an advanced-course certificate and have summited above 6,400 m, and at least half the members must have passed the Advanced Mountaineering Course.</p><p>Restricted peaks need extra clearances on top of the IMF permit, and several are not permitted at all. A tourist visa covers open areas; the X (mountaineering) visa is for restricted areas, so confirm with the Indian mission before you apply.</p>"
+  },
+  {
+   "id": "history",
+   "label": "History",
+   "kicker": "Firsts",
+   "h2": "Seven-thousander firsts in the Indian Himalaya",
+   "html": "<ol class=\"szm-steps\"><li><b>1907 · Trisul I</b>Tom Longstaff, Alexis and Henri Brocherel and Karbir reached the top on 12 June: the first 7,000 m summit climbed anywhere.</li><li><b>1911 · Pauhunri</b>Alexander Kellas and two Sherpas made it the highest summit climbed until 1928.</li><li><b>1930 · Jongsong</b>Hermann Hoerlin and Erwin Schneider set a new height record, held until the next year.</li><li><b>1931 · Kamet</b>Frank Smythe, Eric Shipton and party made the first ascent of a summit above 25,000 ft (not the first 7,000 m summit).</li><li><b>1936 · Nanda Devi</b>Bill Tilman and Noel Odell: the highest summit climbed until 1950.</li><li><b>1953 · Nun</b>Pierre Vittoz and Claude Kogan, on 28 August.</li><li><b>2025 · Kangto</b>First recorded ascent of Arunachal's highest peak, by an Indian Army team on 26 November.</li></ol><p>Four of India's 7,000 m peaks still have no recorded ascent in our dataset: Zemu Gap Peak (7,780 m), Apsarasas Kangri II (7,239 m), Nyegyi Kansang (7,047 m, a disputed 1995 claim) and Shudu Tsenpa (7,024 m).</p>"
+  }
+ ],
+ "quote_h2": "Training for a seven-thousander?",
+ "quote_text": "Build your altitude record on Himachal's 6,000 m peaks first. We pair you with a registered Himachal outfitter and certified guides for Yunam or Deo Tibba, and add permits, hotels and transfers: one plan, one quote.",
+ "faq_h2": "7,000 m peaks: your questions",
+ "faqs": [
+  [
+   "How many 7,000 m peaks are there in India?",
+   "About 48 between 7,000 and 7,999 m in our dataset, plus Kangchenjunga (8,586 m) above 8,000 m. Counts vary with how subsidiary summits are treated."
+  ],
+  [
+   "Which is the highest 7,000 m peak in India?",
+   "Nanda Devi, 7,816 m (25,643 ft), the highest peak wholly within India. It has been closed to climbers since 1983."
+  ],
+  [
+   "Which 7,000 m peaks can foreigners climb in India?",
+   "Thirteen are marked open in our dataset, always with IMF permission: Kamet, Nanda Devi East, Abi Gamin, Mana Peak, Mukut Parbat, Hardeol, Chaukhamba I, Trisul I, Satopanth, Tirsuli and Dunagiri in Uttarakhand, plus Nun and Kun."
+  ],
+  [
+   "What is the easiest 7,000 m peak in India?",
+   "There is no official ranking. Our dataset grades Satopanth, Trisul I and Abi Gamin moderate; the rest are technical or extreme. Even these need 6,000 m experience, about three to four weeks and IMF permission."
+  ],
+  [
+   "Is there a 7,000 m peak in Himachal Pradesh?",
+   "No. Himachal's highest peak is Reo Purgyil at 6,816 m. Its 6,000 m peaks, such as Yunam (6,111 m) and Deo Tibba (6,001 m), are common stepping stones."
+  ],
+  [
+   "What was the first 7,000 m peak ever climbed?",
+   "Trisul I (7,120 m) in Uttarakhand, on 12 June 1907, by Tom Longstaff, Alexis and Henri Brocherel and Karbir. Kamet (1931) was the first summit above 25,000 ft."
+  ],
+  [
+   "How much does the IMF charge for a 7,000 m peak?",
+   "For a foreign team of two, a base fee of US$1,000 above 7,000 m (US$700 for 6,501–7,000 m), plus US$500 for liaison-officer equipment and per-member charges (IMF, as of October 2026)."
+  ],
+  [
+   "Can you climb Nanda Devi or Kangchenjunga from India?",
+   "No. Nanda Devi has been closed since 1983, and Sikkim bans climbing Kangchenjunga (Notification 70/HOME/2001). Nanda Devi East is on Uttarakhand's 2026 open list."
+  ]
+ ],
+ "sources": [
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "ETV Bharat, Feb 2026 — Uttarakhand opens 83 Himalayan peaks, waives fees for Indian climbers",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "Raj Bhavan Arunachal Pradesh, Dec 2025 — Governor congratulates the Mount Kangto expedition team",
+   "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf"
+  ],
+  [
+   "SCC Online — Foreigners (Amendment) Order 2019 and mountaineering expeditions",
+   "https://www.scconline.com/blog/post/2019/12/21/foreigners-amendment-order-2019-amendment-to-restrictions-on-mountaineering-expeditions/"
+  ],
+  [
+   "Wikipedia — Trisul",
+   "https://en.wikipedia.org/wiki/Trisul"
+  ],
+  [
+   "Wikipedia — Kamet",
+   "https://en.wikipedia.org/wiki/Kamet"
+  ],
+  [
+   "Wikipedia — Nanda Devi",
+   "https://en.wikipedia.org/wiki/Nanda_Devi"
+  ],
+  [
+   "Wikipedia — Nun Kun",
+   "https://en.wikipedia.org/wiki/Nun_Kun"
+  ],
+  [
+   "Wikipedia — List of ultras of the Himalayas",
+   "https://en.wikipedia.org/wiki/List_of_ultras_of_the_Himalayas"
+  ]
+ ]
+}
