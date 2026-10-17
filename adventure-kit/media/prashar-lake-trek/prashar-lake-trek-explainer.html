@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.22; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.7) 0%, rgba(11,31,51,0.88) 60%, #0b1f33 100%); }
+      .kick { position: absolute; left: 110px; top: 66px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 108px; width: 900px; font-weight: 800; font-size: 80px; letter-spacing: -0.02em; }
+      .ctr { position: absolute; top: 76px; width: 250px; text-align: right; }
+      .cv { font-weight: 800; font-size: 64px; color: #d4a24c; letter-spacing: -0.02em; }
+      .cl { font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); }
+      svg.map { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .st { position: absolute; width: 260px; text-align: center; font-weight: 800; font-size: 30px; }
+      .st span { display: block; font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.8); margin-top: 2px; }
+      .tag { position: absolute; font-weight: 800; font-size: 30px; white-space: nowrap; padding: 8px 20px; border-radius: 26px; }
+      .cal { position: absolute; left: 110px; top: 870px; width: 1700px; height: 76px; }
+      .seg { position: absolute; top: 0; height: 76px; border-radius: 14px; padding: 8px 18px; font-weight: 800; font-size: 26px; line-height: 1.15; }
+      .seg span { display: block; font-weight: 500; font-size: 22px; }
+      .foot { position: absolute; left: 110px; top: 970px; width: 1700px; height: 60px; font-weight: 800; font-size: 30px; }
+      .chip { position: absolute; top: 0; height: 58px; line-height: 54px; padding: 0 26px; border-radius: 30px; border: 2px solid rgba(255,255,255,0.5); white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">PRASHAR LAKE · MANDI DISTRICT</div>
+        <div class="title" id="title">Trek or drive?</div>
+        <div class="ctr" style="left:1020px"><div class="cv" id="c1">2,730 m</div><div class="cl">lake altitude</div></div>
+        <div class="ctr" style="left:1290px"><div class="cv" id="c2">0 km</div><div class="cl">trek from Baggi</div></div>
+        <div class="ctr" style="left:1560px"><div class="cv" id="c3">4–5 h</div><div class="cl">walking up</div></div>
+        <svg class="map" viewBox="0 0 1920 1080">
+          <path id="drive" d="M 220 760 C 420 560, 760 420, 1080 400 S 1380 420, 1470 455" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="7" stroke-dasharray="2 16" stroke-linecap="round" />
+          <path id="road" d="M 220 760 L 580 740 L 930 700" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="trek" d="M 930 700 C 1080 690, 1160 640, 1250 600 S 1420 540, 1520 500" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <g id="lake"><ellipse cx="1600" cy="480" rx="120" ry="64" fill="#2f6f8f" stroke="#fff" stroke-width="5" /><ellipse cx="1590" cy="486" rx="40" ry="18" fill="#5aa05a" /></g>
+          <g id="nodes" fill="#fff"><circle cx="220" cy="760" r="13" /><circle cx="580" cy="740" r="13" /><circle cx="930" cy="700" r="13" /></g>
+          <circle id="dot" cx="930" cy="700" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <g id="snow" transform="translate(1080 400)"><circle r="34" fill="#0b1f33" stroke="#cfe3f2" stroke-width="4" /><g stroke="#cfe3f2" stroke-width="5" stroke-linecap="round"><line x1="0" y1="-20" x2="0" y2="20" /><line x1="-17" y1="-10" x2="17" y2="10" /><line x1="-17" y1="10" x2="17" y2="-10" /></g></g>
+        </svg>
+        <div id="labels">
+          <div class="st" style="left:90px;top:782px">Mandi</div>
+          <div class="st" style="left:450px;top:762px">Kataula</div>
+          <div class="st" style="left:800px;top:722px">Baggi<span>road-head</span></div>
+          <div class="st" style="left:1420px;top:556px;width:360px">Prashar Lake<span>temple + floating island</span></div>
+        </div>
+        <div class="tag" id="ttag" style="left:1010px;top:612px;background:#d4a24c;color:#0b1f33">Trek ~7.5–8 km</div>
+        <div class="tag" id="dtag" style="left:430px;top:500px;border:2px solid rgba(255,255,255,0.7)">Drive to the top · ~49 km from Mandi</div>
+        <div class="tag" id="stag" style="left:1130px;top:300px;background:#cfe3f2;color:#0b1f33">Dec–Feb: road may close</div>
+        <div class="cal" id="cal">
+          <div class="seg" style="left:0;width:410px;background:#d4a24c;color:#0b1f33">Mar–Jun<span>green, clear · best all-round</span></div>
+          <div class="seg" style="left:430px;width:410px;background:rgba(255,255,255,0.08);border:2px solid rgba(255,255,255,0.2)">Jul–Aug<span>monsoon · flexible dates only</span></div>
+          <div class="seg" style="left:860px;width:410px;background:#d4a24c;color:#0b1f33">Sep–Nov<span>crisp Dhauladhar views</span></div>
+          <div class="seg" style="left:1290px;width:410px;background:#cfe3f2;color:#0b1f33">Dec–Feb<span>snow trek with a guide</span></div>
+        </div>
+        <div class="foot" id="foot">
+          <div class="chip" style="left:0">Cab + stay + guide, one quote</div>
+          <div class="chip" style="left:580px;border-color:#d4a24c;color:#d4a24c">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      const road = document.getElementById("road");
+      const RL = road.getTotalLength();
+      tl.fromTo(road, { strokeDasharray: RL + " " + RL, strokeDashoffset: RL }, { strokeDashoffset: 0, duration: 1.4, ease: "power2.inOut" }, 0.5);
+      tl.fromTo("#nodes circle", { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.4 }, 0.5);
+      tl.fromTo("#labels .st", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.3, ease: "power2.out" }, 0.6);
+      tl.fromTo("#lake", { opacity: 0, scale: 0.7, transformOrigin: "1600px 480px" }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 1.6);
+      const trek = document.getElementById("trek");
+      const dot = document.getElementById("dot");
+      const c2 = document.getElementById("c2");
+      const L = trek.getTotalLength();
+      trek.style.strokeDasharray = L + " " + L;
+      const st = { p: 0 };
+      function place() {
+        const d = L * st.p;
+        trek.style.strokeDashoffset = (L - d).toFixed(2);
+        const pt = trek.getPointAtLength(Math.max(0.01, d));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+        c2.textContent = (st.p >= 0.999 ? "~8" : Math.round(8 * st.p)) + " km";
+      }
+      tl.to(st, { p: 1, duration: 2.8, ease: "sine.inOut", onUpdate: place }, 2.0);
+      tl.fromTo("#ttag", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 2.6);
+      const drive = document.getElementById("drive");
+      tl.fromTo(drive, { opacity: 0 }, { opacity: 1, duration: 0.6 }, 5.0);
+      tl.fromTo("#dtag", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 5.2);
+      tl.to(drive, { stroke: "rgba(140,150,160,0.5)", duration: 0.5 }, 7.0);
+      tl.fromTo("#snow", { opacity: 0, scale: 0.5, transformOrigin: "0px 0px" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 7.0);
+      tl.fromTo("#stag", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 7.2);
+      tl.fromTo("#cal .seg", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, stagger: 0.18, ease: "power2.out" }, 8.2);
+      tl.fromTo("#foot .chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 9.5);
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
