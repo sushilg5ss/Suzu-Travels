@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "dusk",
+  "deva": "श्री भीमाशंकर",
+  "kicker": "Jyotirlinga · Sahyadri hills, Pune",
+  "beats": [
+   "Kumbhakarna's son Bhima grew mighty",
+   "He jailed a devoted king",
+   "His sword struck the sacred linga",
+   "Shiva arose as Bhimashankar"
+  ]
+ },
+ "story": {
+  "title": "The legend of Bhimashankar",
+  "beats": [
+   {"arch": "hills", "sky": "night", "line": "A shadow of fear falls over the hills"},
+   {"arch": "pillar", "sky": "night", "line": "In his cell, a king keeps worshipping Shiva"},
+   {"arch": "pillar", "sky": "dawn", "line": "Shiva bursts forth from the linga as light"},
+   {"arch": "hills", "sky": "dawn", "line": "At the gods' request, Shiva stays as Bhimashankar"}
+  ]
+ }
+}

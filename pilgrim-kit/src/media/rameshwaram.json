@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "gopuram",
+  "sky": "dawn",
+  "deva": "श्री रामेश्वरम्",
+  "kicker": "Southernmost Jyotirlinga · Tamil Nadu",
+  "beats": [
+   "Rama prayed by the southern sea",
+   "Sita shaped a linga of sand",
+   "Hanuman's linga is worshipped first",
+   "Rameshwaram: Lord of Rama"
+  ]
+ },
+ "story": {
+  "title": "The legend of Rameshwaram",
+  "beats": [
+   {"arch": "ghats", "sky": "dawn", "line": "By the southern sea, Rama prays to Shiva"},
+   {"arch": "pillar", "sky": "night", "line": "Shiva blesses the prayer as a column of light"},
+   {"arch": "lake", "sky": "dusk", "line": "Hanuman goes to Kailash for a linga"},
+   {"arch": "gopuram", "sky": "dawn", "line": "Two lingas, and Hanuman's is worshipped first"}
+  ]
+ }
+}

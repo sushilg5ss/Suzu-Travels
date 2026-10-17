@@ -9,7 +9,7 @@
 
 Why illustrated: every visual is drawn here from SVG shapes, so there is no photo licence to worry about (Sushil, 8 Oct
 2026: "copyright claim na ho"). Temple drawings are stylised ARCHETYPES (himalaya, nagara, ghats, gopuram, cave, devi,
-pillar, gurudwara, pagoda, devi-cave, lake) — never captioned as an exact architectural likeness.
+pillar, gurudwara, pagoda, devi-cave, lake, hills) — never captioned as an exact architectural likeness.
 
 Rules (same as the mountain kit): 1920x1080, 30 fps, silent, seamless loop (last frame == first frame), deterministic
 (no Math.random at runtime — every random number is generated here with a fixed seed). Hero text stays in the RIGHT 55%
@@ -209,9 +209,14 @@ def arch_gopuram():
         y = 900 - 80 - i * 64
         tiers += f'<rect x="{450 - w / 2:.0f}" y="{y}" width="{w}" height="64" fill="{SIL}" stroke="{RIM}" stroke-width="2.4"/>'
         tiers += "".join(f'<rect x="{450 - w / 2 + 14 + k * 36:.0f}" y="{y + 18}" width="14" height="30" fill="#2e1736"/>' for k in range(int((w - 20) // 36)))
-    top_y = 900 - 80 - 7 * 64
-    vault = f'<path d="M{450 - 120} {top_y + 4} Q450 {top_y - 90} {450 + 120} {top_y + 4}Z" fill="{SIL}" stroke="{GOLD}" stroke-width="2.4"/>'
-    kal = "".join(kalash(x, top_y - 30 if x == 450 else top_y - 18, .8) for x in (370, 410, 450, 490, 530))
+    top_y = 900 - 80 - 6 * 64  # top of the highest tier (was 7*64: vault floated 64 px above the tower; fixed 17 Oct 2026)
+    # barrel-vault crown (shala) with a row of kalashas along its ridge — taller since 17 Oct 2026
+    vault = (f'<path d="M330 {top_y} L330 {top_y - 40} Q450 {top_y - 120} 570 {top_y - 40} L570 {top_y}Z" fill="{SIL}" stroke="{GOLD}" stroke-width="2.4"/>'
+             + "".join(f'<circle cx="{x}" cy="{top_y - 30}" r="9" fill="#2e1736" stroke="{RIM}" stroke-width="1.4"/>' for x in (380, 450, 520)))
+    def ridge_y(x):
+        t = (x - 330) / 240
+        return top_y - 40 - 160 * t * (1 - t)
+    kal = "".join(kalash(x, ridge_y(x) - 2, .8) for x in (370, 410, 450, 490, 530))
     base = '<rect x="200" y="820" width="500" height="120" fill="#1b0c1f" stroke="rgba(242,193,78,.55)" stroke-width="3"/>' + door(450, 940, 90, 150)
     return tiers + vault + kal + base + '<rect x="-40" y="940" width="2000" height="160" fill="#120714"/>'
 
@@ -308,15 +313,47 @@ def arch_lake():
             + back + lake + shore)
 
 
+def arch_hills():
+    """Stone nagara temple in forested monsoon hills (Sahyadri / Western Ghats type — Bhimashankar, Trimbakeshwar,
+    Grishneshwar; also fits Baijnath-type hill valleys): layered green-black ridges, a round-crowned forest, the temple
+    on a stone plinth, drifting mist bands and a thin stream falling from the hills — no sea. Added 17 Oct 2026.
+    Stylised archetype, not a likeness — caption it "a temple in the hills"."""
+    ridges = ('<path d="M-40 700 Q120 520 260 560 Q400 430 560 520 Q700 450 900 580 Q1300 520 1960 600 L1960 1080 L-40 1080Z" fill="#1f2a3a"/>'
+              '<path d="M-40 800 Q160 660 330 720 Q520 640 700 730 Q820 690 900 740 Q1400 700 1960 760 L1960 1080 L-40 1080Z" fill="#17202c"/>')
+    r = random.Random(17)
+    def canopy(x0, x1, base, rmin, rmax, col):
+        c = ""
+        x = x0
+        while x < x1:
+            rr = r.uniform(rmin, rmax)
+            c += f'<circle cx="{x:.0f}" cy="{base - rr * .5:.0f}" r="{rr:.0f}" fill="{col}"/>'
+            x += rr * 1.3
+        return c + f'<rect x="{x0 - 40}" y="{base - 4}" width="{x1 - x0 + 80}" height="{1080 - base + 4}" fill="{col}"/>'
+    forest = canopy(-40, 270, 900, 30, 52, "#0c1c19") + canopy(650, 1960, 900, 30, 52, "#0c1c19")
+    stream = ('<path d="M690 600 Q700 680 676 740 Q660 800 690 860 L700 900" stroke="#9fb6d8" stroke-opacity=".55" stroke-width="7" fill="none" stroke-linecap="round"/>'
+              '<path id="stm" d="M690 600 Q700 680 676 740 Q660 800 690 860 L700 900" stroke="#fff4c9" stroke-opacity=".85" stroke-width="3" fill="none" stroke-dasharray="14 26" stroke-linecap="round"/>')
+    t = ('<rect x="250" y="880" width="400" height="40" fill="#2a1630" stroke="rgba(242,193,78,.45)" stroke-width="2"/>'
+         '<rect x="290" y="760" width="320" height="120" fill="#1b0c1f" stroke="rgba(242,193,78,.55)" stroke-width="3"/>'
+         + "".join(f'<rect x="{x}" y="790" width="14" height="90" fill="#2b1532"/>' for x in range(312, 600, 48))
+         + '<path d="M270 760 Q330 700 390 760Z" fill="#1b0c1f" stroke="rgba(242,193,78,.55)" stroke-width="3"/>'
+         + nagara_shikhara(470, 760, 200, 330) + door(470, 880, 60, 100) + flag(470, 404, 66, "fg"))
+    mist = ('<defs><linearGradient id="msg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8e0f0" stop-opacity="0"/>'
+            '<stop offset=".25" stop-color="#d8e0f0"/><stop offset=".7" stop-color="#d8e0f0"/><stop offset="1" stop-color="#d8e0f0" stop-opacity="0"/></linearGradient>'
+            '<radialGradient id="msv" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>'
+            + "".join(f'<ellipse id="ms{i}" cx="{cx}" cy="{y}" rx="{rx}" ry="{h / 2:.0f}" fill="url(#msg)" opacity="{o}"/>'
+                      for i, (cx, y, rx, h, o) in enumerate([(380, 660, 520, 40, .12), (520, 840, 600, 54, .14), (300, 940, 560, 60, .16)])))
+    return ridges + stream + t + forest + mist + '<rect x="-40" y="960" width="2000" height="140" fill="#0e0b14"/>'
+
+
 ARCH = {"himalaya": arch_himalaya, "nagara": arch_nagara_sea, "ghats": arch_ghats, "devi": arch_devi,
         "gopuram": arch_gopuram, "cave": arch_cave, "pillar": arch_pillar, "gurudwara": arch_gurudwara,
-        "pagoda": arch_pagoda, "devi-cave": arch_devicave, "lake": arch_lake}
-SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk", "lake": "snow"}
+        "pagoda": arch_pagoda, "devi-cave": arch_devicave, "lake": arch_lake, "hills": arch_hills}
+SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk", "lake": "snow", "hills": "dawn"}
 
 
 def scene_svg(arch, uid, sky=None):
     sky = sky or SKY_FOR[arch]
-    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60), "lake": (760, 230, 60)}.get(arch, (470, 560, 140))
+    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60), "lake": (760, 230, 60), "hills": (760, 300, 80)}.get(arch, (470, 560, 140))
     return (sky_svg(uid, sky, sun) + (stars(uid, 80, 7) if sky in ("night", "snow", "dusk") else "")
             + mandala(sun[0], sun[1], 300, f"md{uid}", op=.18)
             + f'<svg class="lay" viewBox="0 0 {W} {H}">{DEFS}<g>{ARCH[arch]()}</g></svg>')
@@ -325,7 +362,7 @@ def scene_svg(arch, uid, sky=None):
 def arch_js(arch, uid_prefix, dur, start=0.0):
     """Small seamless secondary motion for an archetype (flag sway, waves, diya bob, pillar pulse)."""
     js = []
-    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave", "lake"):
+    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave", "lake", "hills"):
         js.append(f'tl.fromTo("{uid_prefix} #fg",{{rotation:-6}},{{rotation:6,duration:{dur / 8:.3f},ease:"sine.inOut",yoyo:true,repeat:7}},{start});')
     if arch == "nagara":
         for i in range(4):
@@ -336,6 +373,10 @@ def arch_js(arch, uid_prefix, dur, start=0.0):
     if arch == "lake":
         for i in range(3):
             js.append(f'tl.fromTo("{uid_prefix} #lk{i}",{{opacity:.25,x:0}},{{opacity:1,x:{18 - i * 12},duration:{dur / 4:.3f},ease:"sine.inOut",yoyo:true,repeat:3}},{start + i * .3:.2f});')
+    if arch == "hills":
+        for i in range(3):
+            js.append(f'tl.fromTo("{uid_prefix} #ms{i}",{{x:0}},{{x:{40 - i * 30},duration:{dur / 2:.3f},ease:"sine.inOut",yoyo:true,repeat:1}},{start});')
+        js.append(f'tl.fromTo("{uid_prefix} #stm",{{strokeDashoffset:0}},{{strokeDashoffset:-400,duration:{dur:.3f},ease:"none"}},{start});')
     if arch == "pillar":
         js.append(f'tl.fromTo("{uid_prefix} #pil",{{scaleX:.85,opacity:.85}},{{scaleX:1.12,opacity:1,duration:{dur / 4:.3f},ease:"sine.inOut",yoyo:true,repeat:3}},{start});')
         js.append(f'tl.fromTo("{uid_prefix} #ob1",{{y:0}},{{y:-640,duration:{dur / 2:.3f},ease:"sine.inOut",yoyo:true,repeat:1}},{start});')
