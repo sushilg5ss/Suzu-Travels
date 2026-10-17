@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/india-e-visa-guide/ (practical page). Existing licensed photos (hf/photos/CREDITS.md); captions carry no place names. Hero only.",
+ "hero": {
+  "kicker": "INDIA E-VISA · PLAIN ENGLISH",
+  "scenes": [
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}},
+   {"img": "px-36966954.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 420}}
+  ],
+  "steps": ["OFFICIAL SITE ONLY", "APPLY 4 DAYS AHEAD", "PRINT YOUR ETA", "THEN, INDIA"]
+ }
+}
