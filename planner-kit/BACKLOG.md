@@ -5,6 +5,8 @@
 00. [x] done 2026-10-16 18:05 (live dfbcaaa77cf38e3b + roads-geo 0eabc86d) **Deploy v0.5** (supersedes v0.4; TWO files: index.html + roads-geo.json) (rate audit; release in Project `claude/trip-planner/releases/2026-10-16/`) — Chrome tools absent on 16 Oct run.
 0. [x] done 2026-10-16 (live = 4c765ffa, uploaded during the 16 Oct ops sweep / by Sushil) **Deploy v0.3** (dist 4c765ffa28e2b0a9, release in Project `claude/trip-planner/releases/2026-10-15/`) — Chrome tools were absent on 15 Oct 11:53 run. Rebuild from branch if newer.
 
+0000. [ ] **Deploy v0.6** — upload `dist/plan-your-trip/index.html` only (079418509fd6f0af; roads-geo.json unchanged); backup index-previous.html = dfbcaaa7 first.
+
 ## Phase 1 — go live at /plan-your-trip/ (week 1)
 1. [x] done 2026-10-15 (live SHA 873f29f3c6f26826; real test lead skipped — send one only if leads look missing) **Deploy v0.1** to `public_html/plan-your-trip/index.html` (new folder). Verify 200, test live (stubbed lead), then ONE real test lead named "TEST Claude Trip Planner (ignore)" and confirm it reached the lead inbox / info@ email. Add Rank Math-independent sitemap note in LOG (static page: ask GSC URL inspection is human-only → "Sushil ke liye").
 2. [~] 2026-10-16: audit #1 done (Manali, Shimla, Dharamshala, Kasol, Katra, Haridwar, Srinagar, Leh; 2 dates) → hill_premium 3,800, hill 3,200, new pilgrim_city 4,000, kashmir 4,400 = v0.4. Next: metro, remote, small temple towns, Gulmarg/Pahalgam, Nubra. **Rate audit** — research 2026 hotel rates (MakeMyTrip/Agoda/Booking public listings, 3 dates) for the 7 classes and the 12 most-used places; cab rates already = /cabs/ engine. Write `research/rates-sources.md` (dated rows + URLs); move `rates.json` only if the estimate is BELOW market (it must stay on the higher side).
@@ -21,7 +23,7 @@
 
 ## Phase 3 — make it the best planner in India
 8. [~] 2026-10-16: Rajasthan (11), Agra/Mathura, Kumaon/Garhwal (11), Himachal extras (5), Patnitop, Lamayuru, Tso Moriri, Kainchi Dham, Anandpur Sahib done (v0.5, 87 places). Open: Kerala, Goa, Sikkim/North-East (fly-in circuits; hotel-only + local car), Amarnath, Adi Kailash, Varanasi. Re-run `tools/fetch_roads.py`.
-9. [~] 2026-10-15: Rohtang winter skip + Kedarnath 2-night warning built (v0.3). Rest open: Smarter day plans: opening hours/closed days of sights, Navratri crowd notes, sunrise/sunset slots, snow-season "Atal Tunnel only" logic for Rohtang, Kedarnath 2-night rule enforced.
+9. [~] 2026-10-17: Navratri crowd note for Mata temples (v0.6, dates to Oct 2027 — add 2028 next year). 2026-10-15: Rohtang winter skip + Kedarnath 2-night warning built (v0.3). Rest open: Smarter day plans: opening hours/closed days of sights, Navratri crowd notes, sunrise/sunset slots, snow-season "Atal Tunnel only" logic for Rohtang, Kedarnath 2-night rule enforced.
 10. [ ] Hotel-name suggestions per class (no prices, "or similar"), photos from Suzu's own media only.
 11. [ ] "Compare 2 plans" and "Budget slider → auto-pick tier/car".
 12. [ ] HyperFrames: render a shareable 15-s "trip film" of a plan (route + day titles) server-side later; for now an in-page animated preview.

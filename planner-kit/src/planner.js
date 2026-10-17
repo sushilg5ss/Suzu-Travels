@@ -265,6 +265,19 @@
       if (hot) out.warn.push({ k: 'heat', t: 'April–June is very hot in Rajasthan and Agra (40 °C+ afternoons). We schedule forts and the Taj for early morning; October–March is the comfortable season.' });
       out.days.forEach(function (dy) { if ((dy.to === 'agra' || dy.stay === 'agra') && dy.date.getDay() === 5 && !out.warn.some(function (w) { return w.k === 'taj'; })) out.warn.push({ r: 1, k: 'taj', t: 'Taj Mahal is closed on Fridays and your Agra day falls on a Friday — shift the trip by a day or we plan the Taj for the next morning.' }); });
     })();
+    /* Navratri crowds at Mata temples (dates: research/festivals.md) */
+    (function () {
+      var NAV = [['Sharad Navratri', '2026-10-11', '2026-10-20', '11–20 Oct 2026'], ['Chaitra Navratri', '2027-04-07', '2027-04-15', '7–15 Apr 2027'], ['Sharad Navratri', '2027-09-30', '2027-10-09', '30 Sep–9 Oct 2027']];
+      var MATA = ['nainadevi', 'chintpurni', 'jwalaji', 'kangra', 'chamunda', 'katra'];
+      out.days.some(function (dy) {
+        var ids = [dy.to, dy.stay].concat(dy.via.map(function (v) { return v.id; }));
+        var hit = ids.filter(function (id) { return MATA.indexOf(id) > -1; })[0]; if (!hit) return false;
+        var t = dy.date.getTime(), f = NAV.filter(function (n) { return t >= parseD(n[1]).getTime() && t < parseD(n[2]).getTime() + 864e5; })[0];
+        if (!f) return false;
+        out.warn.push({ r: 0, k: 'navratri', t: 'Your ' + PL[hit].name + ' darshan falls in ' + f[0] + ' (' + f[3] + '): very big crowds, long darshan queues and hotels fill early. We plan darshan for early morning and keep extra time on these days.' + (hit === 'katra' ? ' Vaishno Devi needs a Yatra registration (RFID card) — register early.' : '') + ' Our team confirms hotel availability before you book.' });
+        return true;
+      });
+    })();
     /* ---- cab ---- */
     var totalDays = out.days.length, nNights = nights.length;
     var av = autoVeh(out.route), v, cnt;

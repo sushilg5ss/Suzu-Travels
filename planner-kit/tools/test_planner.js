@@ -71,6 +71,11 @@ const { chromium, devices } = require('playwright');
     r.winter = { title: await p3.textContent('#m-title'), rohtangInPlan: (await p3.$$eval('.tl-day', x => x.map(y => y.textContent).join(' '))).includes('Rohtang'), warns: await p3.$$eval('.warn', x => x.map(y => y.textContent)) };
     await p3.goto(base + '?k=1#t=' + v1({ v: 1, s: 'dehradun', e: 'dehradun', d: '2027-05-20', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['guptkashi', 1], ['badrinath', 1]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
     r.kedar = (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Kedarnath'));
+    // v0.6: Navratri crowd note (Katra in Chaitra Navratri 2027) and none outside Navratri
+    await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1({ v: 1, s: 'jammu', e: 'jammu', d: '2027-04-08', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['katra', 2]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
+    r.navratri = (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Navratri'));
+    await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1({ v: 1, s: 'chandigarh', e: 'chandigarh', d: '2027-02-10', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['chintpurni', 1]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
+    r.noNavratri = { title: await p3.textContent('#m-title'), n: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Navratri')).length };
     await p3.close();
     // agent mode client link
     await p2.click('.tp-mode [data-mode="agent"]'); await p2.waitForTimeout(300);
