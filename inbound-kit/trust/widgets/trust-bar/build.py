@@ -66,6 +66,15 @@ HTML = ('<!--szt:trust-bar--><div class="szt" id="szt-trust"><style>' + CSS + '<
         'if(wa){if(c){wa.href=wa.href.replace("trip%20to%20India.","trip%20to%20India%20(I%27m%20in%20"+encodeURIComponent(c.replace("_"," "))+").");}}'
         '})();</script></div><!--/szt:trust-bar-->')
 
+# Gold/ink variant (v2 look, 17 Oct) for pages without the hub skin, e.g. 11412 — plus the mobile width fix for the
+# site-wide html{zoom:.9} (blank strip on the right of phones), scoped to that page id.
+GOLD = (".szt-row{border-color:#E8DFC8;box-shadow:0 10px 28px rgba(14,27,20,.08)}.szt-i{color:#0E1B14!important}a.szt-i:hover{background:#FBF8EF}"
+        ".szt-ic{background:#F4EEDD;color:#8A6A12}.szt-i b{color:#0E1B14}.szt-talk{background:#0E1B14}.szt-dot{background:#E2C158}")
+
+def variant(page_id):
+    fix = "@media(max-width:768px){body.page-id-%d{max-width:none!important}}" % page_id
+    return HTML.replace('</style>', GOLD + fix + '</style>', 1)
+
 if __name__ == '__main__':
     js = HTML[HTML.find('<script>'):]
     assert '&' not in js and '//' not in js, 'JS must not contain & or //'
@@ -73,3 +82,7 @@ if __name__ == '__main__':
     here = os.path.dirname(os.path.abspath(__file__))
     open(os.path.join(here, 'widget.html'), 'w').write(HTML)
     print('widget.html', len(HTML))
+    v = variant(11412)
+    assert '\n' not in v
+    open(os.path.join(here, 'widget-11412.html'), 'w').write(v)
+    print('widget-11412.html', len(v))
