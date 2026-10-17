@@ -89,6 +89,7 @@ def build():
              ("dehradun-taxi-service", "Dehradun taxi service", "Jolly Grant airport pickups, Mussoorie & Dhanaulti day trips; drops to Rishikesh, Haridwar, Delhi."),
              ("srinagar-taxi-service", "Srinagar taxi service", "Airport pickups, Gulmarg, Pahalgam & Sonamarg day trips; drops to Jammu."),
              ("haridwar-taxi-service", "Haridwar taxi service", "Station & ghat pickups, Rishikesh and Neelkanth trips; drops to Delhi, Sonprayag & Badrinath."),
+             ("rishikesh-taxi-service", "Rishikesh taxi service", "Jolly Grant airport, station & rafting-camp pickups, Neelkanth trips; drops to Chopta, Sonprayag, Badrinath & Delhi."),
              ("outstation-cab-delhi", "Outstation cab from Delhi", "One-way drops and round trips from all of Delhi NCR to the hills, Haridwar, Amritsar, Agra and Jaipur."),
              ("amritsar-taxi-service", "Amritsar taxi service", "Airport & Golden Temple pickups, Wagah border trips; drops to Dharamshala, Dalhousie, Jammu, Katra & Delhi."),
              ("nainital-taxi-service", "Nainital taxi service", "Kathgodam & Pantnagar pickups, lake tour, Kainchi Dham; drops to Mukteshwar, Almora, Ranikhet, Corbett & Delhi."),
