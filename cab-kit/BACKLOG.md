@@ -28,7 +28,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 15 | [x] chandigarh-airport-taxi — LIVE 2026-10-14 https://suzutravels.com/cabs/chandigarh-airport-taxi/ (ID 13343) | chandigarh airport taxi | 2,200 (cluster) | IXC pickups to Shimla, Manali, Kasauli, Dharamshala, Delhi |
 | 16 | [x] kalka-to-shimla-taxi — LIVE 2026-10-15 https://suzutravels.com/cabs/kalka-to-shimla-taxi/ (ID 13422) | kalka to shimla taxi | 1,600 | Kalka station pickup (toy-train alternative), Parwanoo, Timber Trail |
 | 17 | [x] dehradun-to-mussoorie-taxi — LIVE 2026-10-16 https://suzutravels.com/cabs/dehradun-to-mussoorie-taxi/ (ID 13529) | dehradun to mussoorie taxi | 1,600 (+ fare/price 1,000) | NEW 1 Oct. Short hill transfer; Kempty/Dhanaulti add-ons |
-| 18 | [ ] rishikesh-taxi-service | rishikesh taxi service | 2,400 (LOW comp.) | NEW 1 Oct. Local + Char Dham; links Delhi→Rishikesh page |
+| 18 | [x] rishikesh-taxi-service — LIVE 2026-10-17 https://suzutravels.com/cabs/rishikesh-taxi-service/ (ID 14001) | rishikesh taxi service | 2,400 (LOW comp.) | NEW 1 Oct. Local + Char Dham; links Delhi→Rishikesh page |
 | 19 | [ ] tempo-traveller-chandigarh | tempo traveller in chandigarh | 2,400 | NEW 1 Oct. Vehicle page (CHD pickup): Shimla/Manali/Dharamshala group trips |
 | 20 | [ ] jammu-taxi-service | cab service in jammu | 2,400 (+ jammu taxi service 1,600, jammu to katra fare 880) | NEW 1 Oct. Katra, Patnitop, Srinagar drops |
 | 21 | [ ] delhi-to-jammu-taxi | delhi to jammu taxi | 1,500 | Jammu Tawi, Katra onward |
