@@ -28,6 +28,11 @@ Load WordPress tools with ToolSearch (wp_get_page, wp_replace_in_page, wp_update
 - **Hub `/india-tours/` (11411)** and the hand-built `/golden-triangle-tour/` (11412), `/char-dham-yatra-for-nri/` (11413): insert with
   `wp_replace_in_page` before/after a unique anchor string (dry_run first, `expected_count` 1). Wrap every insert in
   `<!--szt:<name>-->…<!--/szt:<name>-->` so it can be found, updated or removed later. Never rebuild these pages.
+  The hub 11411 also carries the **v2 skin** (17 Oct, Sushil: "top still looks green"): `<!--szv:skin-->` (page-scoped CSS: full-photo hero = the
+  slideshow as background, dark/gold palette instead of green, planner card "Plan my India trip", mobile `html{zoom:.9}` width fix),
+  `<!--szv:currency-->` (US$/£/€/A$/C$ via api.frankfurter.dev, approx. only) and `<!--szv:dest-->` (12 photo destination cards).
+  Source: `trust/widgets/hub-v2/build.py`. Keep that look on every new widget (ink #0E1B14, gold #E2C158/#B8860B, sand #F4EEDD) — no new
+  green blocks. Class prefixes already used on the site — never reuse: `.szc` (a site-wide footer rule keys on it), `.sza`, `.szs`, `.szt`, `.szp`, `.szx`, `.szd`.
 - **Kit-generated child pages** (`/india-tours/<slug>/`): do NOT hand-edit them. Add a `FIX NEEDED: Reviewer — add trust widget <name> to the
   kit (gen_pages.py section kind "widget" reading trust/widgets/<name>/widget.html) and re-sync` line instead; the Reviewer owns kit code.
 - Never touch pages outside the section, menus, header/footer, theme, plugins, PHP, the static homepage.
