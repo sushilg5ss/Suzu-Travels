@@ -347,9 +347,15 @@ def build_city(p):
 
 def build_vehicle(p):
     v = FLEET_BY_ID[p["vehicle"]]
-    vs = [v] + ([FLEET_BY_ID["urbania"]] if v["id"] == "tempo" else [FLEET_BY_ID["ertiga"]])
-    chips = [f'From <b>₹{v["hire"]}/km</b>', "250 km / day minimum", f'{v["seats"]} seats · {v["bags"]}', "Driver included", "Delhi · Chandigarh pickup"]
-    top = [r for r in ROUTES if r["a"] in ("Delhi", "Chandigarh", "Pathankot", "Jammu")][:12]
+    if p.get("title_fare") and inr(oneway(*p["title_fare"])) not in p["seo_title"]:
+        sys.exit(f"FARE MISMATCH in {p['slug']}: seo_title vs engine {inr(oneway(*p['title_fare']))}")
+    # optional per-page overrides (18 Oct 2026, city-based vehicle pages e.g. tempo-traveller-chandigarh): vs, ow_routes, ow_h, chips, pick, trips_lead, area
+    vs = [FLEET_BY_ID[x] for x in p["vs"]] if p.get("vs") else [v] + ([FLEET_BY_ID["urbania"]] if v["id"] == "tempo" else [FLEET_BY_ID["ertiga"]])
+    chips = p.get("chips") or [f'From <b>₹{v["hire"]}/km</b>', "250 km / day minimum", f'{v["seats"]} seats · {v["bags"]}', "Driver included", "Delhi · Chandigarh pickup"]
+    if p.get("ow_routes"):
+        top = [dict(slug=next((r["slug"] for r in ROUTES if r["slug"] and {r["a"], r["b"]} == {a, b}), None), a=a, b=b, km=km, f=f) for a, b, km, f in p["ow_routes"]]
+    else:
+        top = [r for r in ROUTES if r["a"] in ("Delhi", "Chandigarh", "Pathankot", "Jammu")][:12]
     dests = [dict(l=f'{r["a"]} → {r["b"]}', km=r["km"], f=r["f"]) for r in top]
     rate_rows = "".join(f'<tr><td><b>{x["name"]}</b><br><small>{x["model"]}</small></td><td>{x["seats"]}</td><td class="num">{pkm(x["hire"])}</td><td>250 km/day</td><td class="num">₹{x["night"]}/night</td></tr>' for x in vs)
     rate_tbl = f'<div class="szc-scroll"><table class="szc-tbl"><thead><tr><th>Vehicle</th><th>Seats</th><th>Round trip rate</th><th>Minimum</th><th>Driver allowance</th></tr></thead><tbody>{rate_rows}</tbody></table></div>'
@@ -362,16 +368,16 @@ def build_vehicle(p):
     body += (f'<section class="szc-sec" id="overview"><span class="szc-kicker">At a glance</span><h2>{p["title"]}: rates and what you get</h2>'
              f'<div class="szc-answer">{p["answer"]}</div>{facts(p["facts"])}</section>')
     body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Rates 2026</span><h2>{v["name"]} rent per km and per day</h2>{rate_tbl}'
-             f'<h3 style="margin-top:34px">One-way drops from Delhi, Chandigarh, Pathankot & Jammu</h3>{ow_tbl}{includes()}'
+             f'<h3 style="margin-top:34px">{p.get("ow_h") or "One-way drops from Delhi, Chandigarh, Pathankot & Jammu"}</h3>{ow_tbl}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"], default_vehicle=v["id"])}</section>')
-    body += route_media(p["slug"], p["stops"], f"Where groups take our {v['name']}", "The trips this vehicle does most, from Delhi NCR and Chandigarh.")
+    body += route_media(p["slug"], p["stops"], f"Where groups take our {v['name']}", p.get("trips_lead") or "The trips this vehicle does most, from Delhi NCR and Chandigarh.")
     body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Compare every car we run</h2>{vehicle_cards(p["slug"], "my trip", dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know before you book</h2>{tips(p["tips"])}</section>'
     body += f'<section class="szc-sec alt" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'
-    body += quote_block(p, "Delhi", "")
+    body += quote_block(p, p.get("pick") or "Delhi", "")
     body += f'<section class="szc-sec" id="more"><span class="szc-kicker">Cab routes</span><h2>Popular routes for this vehicle</h2>{more_routes(p["slug"])}<h3 style="margin-top:30px">Plan the rest of the trip</h3>{related(p["related"])}</section>'
     body += faq_block(p["faqs"])
-    return wrap(body, p, p["faqs"], ["Delhi", "Chandigarh", "Himachal Pradesh", "Uttarakhand"])
+    return wrap(body, p, p["faqs"], p.get("area") or ["Delhi", "Chandigarh", "Himachal Pradesh", "Uttarakhand"])
 
 def finish(slug, h):
     h = re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")

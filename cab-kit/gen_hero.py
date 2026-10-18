@@ -182,6 +182,7 @@ VARIANTS = {
   "delhi-to-nainital-taxi": dict(routes=[("Delhi","Nainital")], kicker="NAINI LAKE · KAINCHI DHAM"),
   "shimla-to-manali-taxi": dict(routes=[("Shimla","Manali")], kicker="MANDI · KULLU VALLEY · BEAS"),
   "dehradun-to-mussoorie-taxi": dict(routes=[("Dehradun","Mussoorie")], kicker="QUEEN OF HILLS · 35 KM CLIMB"),
+  "tempo-traveller-chandigarh": dict(routes=[("Chandigarh","Manali")], kicker="12–17 SEATS · TRICITY PICKUP"),
   "kalka-to-shimla-taxi": dict(routes=[("Kalka","Shimla")], kicker="STATION PICKUP · NH5 HILLS"),
   "dehradun-taxi-service": dict(routes=[("Dehradun taxis",None)], kicker="JOLLY GRANT · MUSSOORIE"),
   "dharamshala-taxi-service": dict(routes=[("Dharamshala taxis",None)], kicker="MCLEODGANJ · BIR · GAGGAL"),

@@ -94,6 +94,7 @@ def build():
              ("amritsar-taxi-service", "Amritsar taxi service", "Airport & Golden Temple pickups, Wagah border trips; drops to Dharamshala, Dalhousie, Jammu, Katra & Delhi."),
              ("nainital-taxi-service", "Nainital taxi service", "Kathgodam & Pantnagar pickups, lake tour, Kainchi Dham; drops to Mukteshwar, Almora, Ranikhet, Corbett & Delhi."),
              ("tempo-traveller-hire-delhi", "Tempo Traveller hire in Delhi", "12–17 seats for hill trips, Char Dham and weddings."),
+             ("tempo-traveller-chandigarh", "Tempo Traveller in Chandigarh", "12-seater, 17-seater & Urbania from the Tricity and IXC to Shimla, Manali, Dharamshala, Amritsar & Rishikesh."),
              ("innova-crysta-on-rent", "Innova Crysta on rent", "With driver, from ₹19/km for tours; one-way hill drops.")]
     lc = "".join(f'<article class="szc-card"><div class="szc-card-b"><span class="szc-tag">Service</span><h3>{t}</h3><p>{d}</p><div class="acts">'
                  + (f'<a class="szc-btn sm em" href="{page_url(s)}">Rates & details</a>' if is_live(s) else "")
