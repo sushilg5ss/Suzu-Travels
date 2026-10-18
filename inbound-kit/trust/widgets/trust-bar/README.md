@@ -8,5 +8,6 @@ before that the clocks show "—" and the review tile reads "Read what our guest
 - `widget.html` — original (green) palette; live on hub 11411 (the hub skin recolours it).
 - `widget-11412.html` — gold/ink v2 palette + mobile width fix `body.page-id-11412{max-width:none}` (site-wide `html{zoom:.9}` strip);
   live on /golden-triangle-tour/ (11412) since 17 Oct 2026, inserted before `<nav aria-label="On this page" class="sx-toc">`.
-- Build: `python3 build.py` (writes both). `variant(<page id>)` makes the gold version for another page (11413 next).
+- `widget-11413.html` — same gold variant for /char-dham-yatra-for-nri/ (11413), live since 18 Oct 2026, inserted before `<nav aria-label="On this page" class="sx-toc">`.
+- Build: `python3 build.py` (writes all three). `variant(<page id>)` makes the gold version for another page.
 - Remove: `wp_replace_in_page` the whole `<!--szt:trust-bar-->…<!--/szt:trust-bar-->` block with an empty string.

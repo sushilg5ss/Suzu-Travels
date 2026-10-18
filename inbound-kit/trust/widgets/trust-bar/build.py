@@ -86,3 +86,7 @@ if __name__ == '__main__':
     assert '\n' not in v
     open(os.path.join(here, 'widget-11412.html'), 'w').write(v)
     print('widget-11412.html', len(v))
+    v3 = variant(11413)
+    assert '\n' not in v3
+    open(os.path.join(here, 'widget-11413.html'), 'w').write(v3)
+    print('widget-11413.html', len(v3))

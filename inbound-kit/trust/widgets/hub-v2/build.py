@@ -127,7 +127,7 @@ CUR_JS = ("(function(){var box=document.getElementById('szCur');if(!box){return;
 def block_currency():
     btns = ''.join(f'<button type="button" data-c="{c}" aria-pressed="{"true" if c == "USD" else "false"}">{s}</button>' for c, s in (('USD', 'US$'), ('GBP', '£ GBP'), ('EUR', '€ EUR'), ('AUD', 'A$ AUD'), ('CAD', 'C$ CAD')))
     return ('<!--szv:currency--><div class="szx" id="szCur"><style>' + CUR_CSS + '</style><span>Show prices in</span>' + btns +
-            '<em>Approximate conversions at today\'s European Central Bank rate. Quotes and payment are in US$.</em>'
+            '<em>Approximate conversions at today\'s European Central Bank rate (ECB rates via frankfurter.dev). Quotes and payment are in US$.</em>'
             '<script>' + CUR_JS + '</script></div><!--/szv:currency-->')
 
 # ---------- C: destinations
