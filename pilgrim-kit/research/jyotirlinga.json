@@ -1308,12 +1308,19 @@
       },
       {
         "date": "31 October 2026",
-        "fact": "Flag hoisting (Dhwajarohan) at Trimbakeshwar and Ramkund begins the Nashik-Trimbakeshwar Simhastha Kumbh; Amrit Snans 2 Aug, 31 Aug 2027 and 12 Sep 2027 at Trimbakeshwar (11 Sep in Nashik); ends 24 Jul 2028.",
-        "source": "https://www.theweek.in/wire-updates/national/2025/06/01/bom14-mh-ld-kumbh-mela.html"
+        "fact": "Flag hoisting (Dhwajarohan) on 31 Oct 2026 at 12:02 pm at Ramkund (Nashik) with rituals at Kushavarta Tirtha (Trimbakeshwar) begins the Nashik-Trimbakeshwar Simhastha Kumbh. Amrit Snans: 2 Aug 2027, 31 Aug 2027, then 11 Sep 2027 (Nashik) and 12 Sep 2027 (Trimbakeshwar); flag lowered 24 Jul 2028 (PTI). Wikipedia's infobox ends it 24 Jul 2027 - conflict, use PTI.",
+        "source": "https://www.theweek.in/wire-updates/national/2025/06/01/bom14-mh-ld-kumbh-mela.html ; https://www.freepressjournal.in/pune/nashik-president-likely-to-attend-simhastha-kumbh-flag-hoisting-ceremony-on-october-31",
+        "as_of": "2026-10-18"
+      },
+      {
+        "date": "1 July 2026",
+        "fact": "ASI reported a stone Shivling found at the bottom of the temple's Amrit Kund during desilting/conservation work.",
+        "source": "https://www.deccanherald.com/india/maharashtra/maharashtra-asi-discovers-shivling-from-amrit-kund-in-trimbakeshwar-4059651",
+        "as_of": "2026-10-18"
       }
     ],
     "darshan": {
-      "as_of": "2026-10-08",
+      "as_of": "2026-10-18",
       "source": "https://trimbakeshwartrust.com/ ; https://trimbakeshwartrust.com/daily_programme",
       "temple_hours": "05:30-21:00",
       "aartis": [
@@ -1331,10 +1338,11 @@
           "note": "Official page lists '7.00 AM to 8.30 AM' for the evening puja - an apparent error; evening time unverified."
         }
       ],
-      "special": "Donation Darshan Pass (paid, faster queue) via Online Services > Online Donation Darshan Bookings; Rudrabhishek and Laghurudra puja bookable online. Crown (mukut) display Mondays 16:00-17:00.",
+      "special": "Paid Donation Darshan (faster queue) online at trimbakeshwartrust.com/onlinevip or at the trust's counter (trimbakeshwartrust.com/vip-pass-counter); Rudrabhishek/Laghurudra booking at trimbakeshwartrust.com/online-puja-booking. Crown (mukut) display Mondays 16:00-17:00 (Wikipedia). VIP darshan suspended 13 Aug-13 Sep 2026 (Shravan), VVIP max 20/day (FPJ 11 Aug 2026). A 'break darshan' scheme was being planned (Navbharat Live 27 May 2026) - status unverified. No prices on our pages.",
       "online_booking": "https://trimbakeshwartrust.com",
       "dress_code": null,
-      "rules": "Timings change on festival days (Trust)."
+      "rules": "Timings change on festival days (Trust).",
+      "temple_hours_note": "Trust home page re-read 18 Oct 2026: 'open for Darshan from 05:30 AM to 09:00 PM'. Daily programme still prints the evening puja as 7:00-8:30 AM (typo)."
     },
     "open_season": "All year",
     "best_months": "July-February (editorial): monsoon greens Brahmagiri; Oct-Feb is pleasant. Expect very heavy crowds during Simhastha 2027 snan dates.",
@@ -1431,6 +1439,18 @@
         "q": "How far is Trimbakeshwar from Nashik?",
         "a": "About 28-30 km from Nashik city and 40 km from Nashik Road railway station."
       }
+    ],
+    "status_notes": [
+      {
+        "as_of": "2026-10-18",
+        "note": "Trimbakeshwar Purohits' Association complained to Trimbakeshwar police (2nd time in two months) about devotees cheated by online ads/apps offering cheap rituals (Kaal Sarp etc.) by unauthorised outside priests.",
+        "source": "https://www.freepressjournal.in/pune/nashik-trimbakeshwar-purohits-allege-devotees-being-cheated-through-online-ritual-advertisements"
+      },
+      {
+        "as_of": "2026-10-18",
+        "note": "VIP darshan suspended 13 Aug-13 Sep 2026 for Shravan; VVIP capped at 20/day.",
+        "source": "https://www.freepressjournal.in/pune/nashik-vip-darshan-suspended-at-trimbakeshwar-temple-during-shravan-vvip-access-also-restricted"
+      }
     ]
   },
   {
@@ -1475,6 +1495,12 @@
         "date": "Annual (Shravan)",
         "fact": "During the month-long Shravani Mela, kanwariyas walk about 105 km from Sultanganj (Bihar) carrying Ganga water to pour on the linga; 35-40 lakh devotees attend on average.",
         "source": "https://www.theweek.in/wire-updates/national/2025/07/10/ces5-jh-shravani-fair.html"
+      },
+      {
+        "date": "1596",
+        "fact": "Parts of the front portion are said to have been built by Puran Mal, an ancestor of the Maharaja of Giddhour (district administration).",
+        "source": "https://deoghar.nic.in/about-district/",
+        "as_of": "2026-10-18"
       }
     ],
     "darshan": {
@@ -1528,12 +1554,16 @@
       ],
       "railway": [
         {
+          "name": "Baidyanath Dham station (Deoghar town, branch line)",
+          "km": "in town"
+        },
+        {
           "name": "Jasidih Junction (Howrah-Delhi main line)",
           "km": 7
         }
       ],
-      "road": "Good road links from Ranchi, Patna, Kolkata, Bhagalpur; Sultanganj (Bihar) is the traditional start of the 105 km kanwar walk.",
-      "source": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+      "road": "Sultanganj (Bihar) about 105-108 km (kanwar route); Patna about 229 km; Kolkata about 315 km; Ranchi about 322 km (district administration).",
+      "source": "https://deoghar.nic.in/about-district/ ; https://en.wikipedia.org/wiki/Baidyanath_Temple"
     },
     "nearby": [
       {
@@ -1631,6 +1661,23 @@
       {
         "q": "Why is it called Vaidyanath?",
         "a": "Vaidya means physician; tradition says Shiva healed Ravana here, so he is worshipped as the Lord of Physicians."
+      }
+    ],
+    "status_notes": [
+      {
+        "as_of": "2026-10-18",
+        "note": "District administration: Baidyanath is counted as both a Jyotirlinga and one of the 51 Shakti Peeths (tradition: Sati's heart; Jaya Durga). Shravani Mela draws about 70-80 lakh (district site; PTI 2025: ~53 lakh kanwariyas).",
+        "source": "https://deoghar.nic.in/about-district/"
+      },
+      {
+        "as_of": "2026-10-18",
+        "note": "Shravani Mela 2026 began 30 Jul (Purnimanta Shravan); 2nd Monday 10 Aug 2026 >1 lakh by 7 am, ~4 lakh expected; doors opened after Mangala Aarti at 4 am (ETV Bharat). 2027 dates not announced.",
+        "source": "https://www.etvbharat.com/en/state/devotees-throng-baba-baidyanath-dham-on-second-monday-of-shravan-enn26081002089 ; https://patnapress.com/shravani-mela-2026-ajgaibinath-tech-tourism-bhagalpur/"
+      },
+      {
+        "as_of": "2026-10-18",
+        "note": "babadham.org timings page could not be fetched today (permission timeout); official status of babadham.org still unverified. Trikut Parvat ropeway: shut after the April 2022 accident; current status UNVERIFIED - say 'confirm locally'.",
+        "source": "https://www.etvbharat.com/english/bharat/trikut-hills-ropeway-accident-iaf-rescue-on/na20220411130316629"
       }
     ]
   },
