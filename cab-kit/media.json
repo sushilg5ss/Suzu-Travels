@@ -625,5 +625,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "tempo-traveller-chandigarh": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@9297d2d7bd496bcb5d8a91ff312243b001396771/cab-kit/media/tempo-traveller-chandigarh/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@9297d2d7bd496bcb5d8a91ff312243b001396771/cab-kit/media/tempo-traveller-chandigarh/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@9297d2d7bd496bcb5d8a91ff312243b001396771/cab-kit/media/tempo-traveller-chandigarh/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
