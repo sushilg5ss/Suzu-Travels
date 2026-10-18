@@ -10,7 +10,7 @@ from places import PLACES
 
 def rd(p): return open(os.path.join(HERE, p), encoding='utf-8').read()
 data = {
-    'v': '0.6',
+    'v': '0.7',
     'built': time.strftime('%Y-%m-%d'),
     'places': PLACES,
     'roads': json.loads(rd('data/roads.json')),

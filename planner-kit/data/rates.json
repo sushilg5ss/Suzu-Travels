@@ -1,5 +1,5 @@
 {
-  "version": "0.3 — 16 Oct 2026 (rate audit #1 + Rajasthan class)",
+  "version": "0.4 — 18 Oct 2026 (rate audit #2 + kashmir_resort class)",
   "note": "Estimator rates. Deliberately on the higher side of the 2026 market so the team can confirm at or below the estimate. Cab per-km rates and driver allowance are the same as the live /cabs/ fare engine (cab-kit/cabs_data.py). Hotel rates: per room per night incl. breakfast + dinner (MAP), double occupancy, off-peak. Sources: research/rates-sources.md.",
   "cab": {
     "min_km_per_day": 250,
@@ -19,15 +19,16 @@
   },
   "hotel": {
     "classes": {
-      "metro":        {"label": "City hotel",              "deluxe": 3200},
+      "metro":        {"label": "City hotel",              "deluxe": 3500},
       "hill_premium": {"label": "Popular hill station",    "deluxe": 3800},
       "hill":         {"label": "Hill town",               "deluxe": 3200},
       "remote":       {"label": "Remote valley / camp",    "deluxe": 3600},
-      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 2400},
+      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 2750},
       "pilgrim_city": {"label": "Pilgrim city (Katra / Haridwar)", "deluxe": 4000},
-      "kashmir":      {"label": "Kashmir",                 "deluxe": 4400},
-      "ladakh":       {"label": "Ladakh",                  "deluxe": 3900},
-      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 3600}
+      "kashmir":      {"label": "Kashmir (Srinagar)",      "deluxe": 5000},
+      "kashmir_resort": {"label": "Kashmir resort town (Gulmarg / Pahalgam / Sonamarg)", "deluxe": 6800},
+      "ladakh":       {"label": "Ladakh",                  "deluxe": 4300},
+      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 4100}
     },
     "tiers": [
       {"id": "standard", "name": "Standard (2★ / homestay)", "hi": "स्टैंडर्ड", "f": 0.7},

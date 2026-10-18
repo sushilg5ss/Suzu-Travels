@@ -35,3 +35,24 @@ Method: "public deluxe MAP" = median of the first ~6 priced 3★/4★ listings w
 
 Not sampled yet (unchanged): metro, remote, small pilgrim towns (Naina Devi, Chintpurni, Jwala Ji, Kangra, Chamunda, Char Dham towns), Gulmarg/Pahalgam, Nubra/Pangong. Next audit: these + MakeMyTrip package listings for the 3 top templates.
 Search URLs (re-open to re-check): https://slicktrip.com/hotels?key=Manali,-Himachal-Pradesh,-India%3B2026-11-18%3B2026-11-19%3B2%3B0&hotel_class=3,4,5 (swap place/dates).
+
+---
+# Rate audit #2 — 18 Oct 2026 (BACKLOG #2, classes not sampled in #1)
+
+Same source and method as audit #1 (live hotel metasearch via MCP, 2 adults · 1 room · 1 night, ≥3★, cheapest first, USD × ₹88; public deluxe MAP = median of first ~6 priced listings with rating ≥ 4.0 × 1.12 + ₹900; target base ≈ 0.87 × public; max +15 % per class per run unless a place is reclassified). Off-peak date 18 Nov 2026; remote/Ladakh on 10 Jun 2027 (peak ×1.25 compared).
+
+| Place (class) | Date | Priced listings (USD) | Median | Public deluxe MAP ₹ | Planner deluxe before → after |
+|---|---|---|---|---|---|
+| Gulmarg (kashmir) | 18 Nov 26 | 49, 66, 80, 112, 201 (3.8★ 118 excl.) | 80 | 8,790 | 4,400 → **6,800 new class `kashmir_resort`** (Gulmarg, Pahalgam, Sonamarg) |
+| Pahalgam (kashmir) | 18 Nov 26 | 33, 58, 75, 80, 92, 116 | 77.5 | 8,540 | ″ |
+| Srinagar (kashmir) | audit #1 | — | — | 7,330 (4★) | 4,400 → 5,000 (+14 %, cap; still below — re-check) |
+| Jaipur (rajasthan) | 18 Nov 26 | 28, 31, 61, 89, 110 (3–4★) | 61 | 6,910 | 3,600 → 4,100 (+14 %, cap) |
+| Udaipur (rajasthan) | 18 Nov 26 | 28, 30, 33, 37, 45, 55 | 35 | 4,350 | ″ |
+| New Delhi (metro) | 18 Nov 26 | 34, 106, 124, 133, 139, 170 (bimodal; cheapest 4★ 4.4 = 34) | — | 4,250 (cheapest good 4★) | 3,200 → 3,500 (+9 %) |
+| Amritsar (metro) | 18 Nov 26 | 11, 18, 22, 28, 31, 33 | 25 | 3,360 | ″ (now above market, OK) |
+| Kangra / Dharamshala side (pilgrim) | 18 Nov 26 | 32, 38, 52, 53, 71, 76 | 52.5 | 6,080 (3–5★ mix) | 2,400 → 2,750 (+15 %, cap; small temple towns have fewer listed 3★) |
+| Kaza (remote) | 10 Jun 27 | 26, 29, 32, 40, 50, 59 | 36 | 4,450 | 3,600 × 1.25 peak = 4,500 → unchanged (above) |
+| Nubra (ladakh) | 10 Jun 27 | 44, 49, 55, 56 (+ 5★ 206, 253) | 55.5 | 6,370 | 3,900 → 4,300 (+10 %; Leh was above market in #1) |
+
+Note: Rajasthan's real high season is Oct–Mar (our peak windows are hill-based); flagged for a Rajasthan-specific peak window in a later run.
+Next audit: Srinagar + Jaipur again (both still below target after the cap), small Mata towns (Chintpurni, Jwala Ji, Naina Devi), Char Dham towns, Manali luxury.

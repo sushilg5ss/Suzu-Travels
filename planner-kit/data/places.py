@@ -7,7 +7,7 @@ months (open months, None = all year), sights [(name, extra_km_round_trip, note[
 kind:  hub   = arrival / departure city (airport / railhead)
        stay  = overnight destination
        temple= shrine town (pilgrim circuits)
-cls (hotel class, see rates.json):  metro, hill_premium, hill, remote, pilgrim, pilgrim_city, kashmir, ladakh
+cls (hotel class, see rates.json):  metro, hill_premium, hill, remote, pilgrim, pilgrim_city, kashmir, kashmir_resort, ladakh, rajasthan
 """
 
 P = []
@@ -108,11 +108,11 @@ add("katra", "Katra (Vaishno Devi)", "कटरा (वैष्णो देव
 add("srinagar", "Srinagar", "श्रीनगर", 34.0837, 74.7973, "kashmir", "stay", "kashmir",
     [("Dal Lake shikara ride", 10), ("Mughal Gardens — Nishat, Shalimar, Chashme Shahi", 30), ("Shankaracharya Temple", 15),
      ("Doodhpathri", 90), ("Yusmarg", 100)], tip="One night on a houseboat is a classic")
-add("gulmarg", "Gulmarg", "गुलमर्ग", 34.0484, 74.3805, "kashmir", "stay", "kashmir",
+add("gulmarg", "Gulmarg", "गुलमर्ग", 34.0484, 74.3805, "kashmir", "stay", "kashmir_resort",
     [("Gulmarg Gondola (book online)", 5), ("Khilanmarg walk", 6), ("Strawberry valley", 10)])
-add("pahalgam", "Pahalgam", "पहलगाम", 34.0161, 75.3150, "kashmir", "stay", "kashmir",
+add("pahalgam", "Pahalgam", "पहलगाम", 34.0161, 75.3150, "kashmir", "stay", "kashmir_resort",
     [("Aru, Betaab & Chandanwari valleys (local union taxi)", 50), ("Baisaran meadow (pony)", 10)])
-add("sonamarg", "Sonamarg", "सोनमर्ग", 34.3030, 75.2930, "kashmir", "stay", "kashmir",
+add("sonamarg", "Sonamarg", "सोनमर्ग", 34.3030, 75.2930, "kashmir", "stay", "kashmir_resort",
     [("Thajiwas Glacier (pony)", 10), ("Zero Point, Zojila (local taxi)", 60)])
 
 # ---------- Ladakh ----------
