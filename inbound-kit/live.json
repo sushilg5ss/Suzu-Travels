@@ -52,5 +52,14 @@
   "blurb": "Same day by car or train, or overnight in Agra for sunrise",
   "added": "2026-10-18",
   "focus": "taj mahal tour from delhi"
+ },
+ "kerala-tour": {
+  "id": 14218,
+  "path": "/india-tours/kerala-tour/",
+  "kind": "itinerary",
+  "label": "Kerala tour — 8 days",
+  "blurb": "Fort Kochi, Munnar, Thekkady and a night on a houseboat",
+  "added": "2026-10-18",
+  "focus": "kerala tour packages"
  }
 }

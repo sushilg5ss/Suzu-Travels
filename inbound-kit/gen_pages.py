@@ -132,7 +132,8 @@ def table(rows, head=None):
 
 
 def days(items):
-    return '<ol class="szi-route">' + "".join(f'<li><b>Day {e(d)} · {e(t)}</b><span>{x}</span></li>' for d, t, x in items) + "</ol>"
+    # markup matches kit.css .szi-route (.d day label, .t title, p text) — fixed 18 Oct 2026 (first `days` page: kerala-tour)
+    return '<ol class="szi-route">' + "".join(f'<li><div class="d">DAY {e(d)}</div><div class="t">{e(t)}</div><p>{x}</p></li>' for d, t, x in items) + "</ol>"
 
 
 def stats(items):
