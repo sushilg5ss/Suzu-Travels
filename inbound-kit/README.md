@@ -58,7 +58,7 @@ Build: `python3 gen_pages.py <slug> && python3 build.py <slug>` → `out/<slug>.
 placeholders, ₹, banned claims, fact traps, links to unbuilt pages and pages without a hero video.
 
 ## 3. Media (Visual Studio)
-Hero = 16:9 + mobile loops (`hero.mp4`, `hero-m.mp4`, `hero-poster.webp`), ≤2.5 MB / ≤1 MB, built with HyperFrames (`npx -y hyperframes@0.8.85`),
+Hero = 16:9 + mobile loops (`hero.mp4`, `hero-m.mp4`, `hero-poster.webp`), ≤2.5 MB / ≤1 MB / poster ≤45 KB (LCP, 1280 px), built with HyperFrames (`npx -y hyperframes@0.8.85`),
 Chromium at `/opt/pw-browsers/chromium`. Three inbound compositions in `gen_media.py` (Sprint 0 done 16 Oct 2026), all read `src/media/<slug>.json`
 (fields: `src/media/_example-guide.json`): **`photo-hero`** (3–5 Pexels/Unsplash photos from `hf/photos/` + `CREDITS.md`, slow pans, 3–5 CAPITAL caption
 steps ≤18 chars, Suzu wordmark) → `hero*`; **`route-map`** (stops by lat/lon, English labels + day numbers, graticule only — no outline, no borders)
