@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "dawn",
+  "deva": "श्री त्र्यंबकेश्वर",
+  "kicker": "Jyotirlinga · Brahmagiri, Nashik",
+  "beats": [
+   "Jealous sages tricked Sage Gautama",
+   "A cow fell; he was blamed",
+   "Shiva freed Ganga as Godavari",
+   "Tryambaka stayed at Brahmagiri"
+  ]
+ },
+ "story": {
+  "title": "The legend of Trimbakeshwar",
+  "beats": [
+   {"arch": "hills", "sky": "dawn", "line": "On Brahmagiri, Gautama's pond never ran dry"},
+   {"arch": "lake", "sky": "dusk", "line": "Jealous sages blamed him when a cow fell"},
+   {"arch": "pillar", "sky": "night", "line": "Pleased by his penance, Shiva appears as light"},
+   {"arch": "ghats", "sky": "dawn", "line": "Ganga flows as Godavari; Shiva stays as Tryambaka"}
+  ]
+ }
+}

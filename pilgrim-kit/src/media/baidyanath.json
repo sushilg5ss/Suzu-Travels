@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "saffron",
+  "deva": "बाबा बैद्यनाथ धाम",
+  "kicker": "Jyotirlinga · Deoghar, Jharkhand",
+  "beats": [
+   "Ravana offered his heads to Shiva",
+   "Shiva healed him as Vaidyanath",
+   "A cowherd set the linga down",
+   "It stayed forever at Deoghar"
+  ]
+ },
+ "story": {
+  "title": "The legend of Baidyanath",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Ravana's penance rises like a flame to Shiva"},
+   {"arch": "pillar", "sky": "dawn", "line": "Shiva heals his devotee as Vaidyanath"},
+   {"arch": "hills", "sky": "dusk", "line": "On the way to Lanka, a cowherd sets the linga down"},
+   {"arch": "ghats", "sky": "saffron", "line": "At Deoghar it stays, and pilgrims bring Ganga water"}
+  ]
+ }
+}
