@@ -29,8 +29,8 @@
 | 19 | media | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
 | 20 | media | `rameshwaram` | 12-JL | temple | rameshwaram temple (246,000) | gopuram | 22 theerthams |
 | 21 | media | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
-| 22 | researched | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
-| 23 | researched | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
+| 22 | media | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
+| 23 | media | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
 | 24 | todo | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
 | 25 | todo | `grishneshwar` | 12-JL | temple | grishneshwar temple (49,500) | nagara | Ellora next door |
 | 26 | todo | `mallikarjuna` | 12-JL | temple | mallikarjuna jyotirlinga (74,000) | gopuram | Also Bhramaramba Shakti Peeth |
