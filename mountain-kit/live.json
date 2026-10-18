@@ -186,5 +186,14 @@
   "added": "2026-10-17",
   "band": "7000",
   "commercial": false
+ },
+ "mountaineering-in-india": {
+  "id": 14295,
+  "path": "/mountains-of-india/mountaineering-in-india/",
+  "kind": "guide",
+  "label": "Mountaineering in India",
+  "blurb": "How foreign climbers get a peak permit, step by step",
+  "added": "2026-10-18",
+  "commercial": true
  }
 }

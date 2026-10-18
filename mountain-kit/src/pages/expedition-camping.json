@@ -8,7 +8,7 @@
  "commercial": true,
  "label": "Expedition camping",
  "blurb": "Base camp to summit camp, explained",
- "verified": "13 Oct 2026",
+ "verified": "18 Oct 2026",
  "kicker": "Expedition camping · Climber's guide · 2026",
  "tag": "Base camp to summit camp.",
  "sub": "A plain-English guide for first-time climbers in the Indian Himalaya: what base camp, camp 1 and summit camp mean, why teams carry loads high and sleep low, how to read a sleeping-bag rating, and how water, toilets and rubbish are handled on a climb, with real camp altitudes from Himachal peaks.",
@@ -190,5 +190,13 @@
    "Ladakh Tourism — Advisory",
    "https://tourism.ladakh.gov.in/advisory"
   ]
+ ],
+ "profile_label": "Camp profile",
+ "profile_kicker": "Camp by camp",
+ "profile_h2": "Deo Tibba, camp by camp: the ladder in motion",
+ "profile_alt": "Animated altitude profile of a Deo Tibba expedition: Manali 2,050 m, Chhika approach camp 3,160 m, Tainta base camp 4,100 m, Duhangan Col camp 1 5,100 m, summit camp 5,500 m and the 6,001 m summit (camp heights approximate)",
+ "profile_text": [
+  "The animation follows one real camp ladder, <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m / 19,688 ft): from the road-head town of Manali (about 2,050 m) to an approach camp at Chhika, base camp at Tainta (about 4,100 m), camp 1 on the Duhangan Col (about 5,100 m) and a last tent at about 5,500 m before the summit.",
+  "Each step up is a few hundred metres to a thousand metres, which is why loads are carried high and the team sleeps lower until the body has adjusted. Camp heights are approximate and change with the team and the season."
  ]
 }
