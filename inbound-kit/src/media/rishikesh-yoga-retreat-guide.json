@@ -1,0 +1,62 @@
+{
+ "_note": "Media for /india-tours/rishikesh-yoga-retreat-guide/ (guide). Photos added 19 Oct 2026 (CREDITS.md) — px-37613726 is captioned only 'Rishikesh'/'Ganga', never 'Triveni Ghat'. Route map tried 19 Oct (stops too close together to read at Delhi scale) and dropped — guide page uses the hero only. No cost ladder (no Rishikesh rate in prices.json).",
+ "hero": {
+  "kicker": "RISHIKESH · YOGA & THE GANGA",
+  "scenes": [
+   {
+    "img": "px-38044216.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 400
+    },
+    "to": {
+     "y": 60
+    }
+   },
+   {
+    "img": "px-36123978.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-38236787.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   },
+   {
+    "img": "px-37613726.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.1,
+     "x": -30,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.03,
+     "x": 30,
+     "y": 0
+    }
+   }
+  ],
+  "steps": [
+   "RISHIKESH",
+   "LAXMAN JHULA",
+   "ON THE GANGA",
+   "228 KM FROM DELHI"
+  ]
+ }
+}
