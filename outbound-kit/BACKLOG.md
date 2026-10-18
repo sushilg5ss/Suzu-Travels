@@ -2,7 +2,7 @@
 
 | # | item | type | status | notes |
 |---|---|---|---|---|
-| 1 | Dubai & UAE tour packages from India — /dubai-tour-packages/ | new country page | todo | check slug is free (404) first; hub tile → page |
+| 1 | Dubai & UAE tour packages from India — /dubai-tour-packages/ | new country page | live | 2026-10-18 · page 14234 · `pages/gen_dubai.py` · hub tile + 9 "Explore more" grids link to it · visa checked 18 Oct 2026 (GDRFA Dubai) — re-check every ~3 months |
 | 2 | Turkey tour packages from India — /turkey-tour-packages/ | new country page | todo | |
 | 3 | Georgia tour packages from India — /georgia-tour-packages/ | new country page | todo | |
 | 4 | Azerbaijan (Baku) tour packages from India — /azerbaijan-tour-packages/ | new country page | todo | |
@@ -13,3 +13,5 @@
 | 9 | Hub: comparison table (flight time, entry type, typical trip, best season) for the 9 countries — facts copied from each page's fact box, with "checked <date>" | hub feature | todo | |
 | 10 | Switzerland, UK, Mauritius, Egypt, Australia/NZ, Uzbekistan, Kazakhstan/Kyrgyzstan, Armenia pages | new country pages | todo | one per run, demand order via Semrush (db `in`) |
 | 11 | Ask Technical SEO squad (hand-off) to confirm all outbound pages are in page-sitemap.xml | check | todo | known Rank Math sitemap under-report bug |
+| 12 | Dubai page: add a Suzu guest photo block once Sushil shares real Dubai trip photos | upgrade | todo | no guest photos for UAE yet |
+| 13 | Existing 9 country pages: add Dubai to the hub planner/related blocks consistently; consider moving `.sx` pages to the `.hx` look (Dubai page = template via `gen_dubai.py`) | upgrade | todo | |

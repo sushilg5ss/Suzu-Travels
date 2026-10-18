@@ -16,6 +16,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /malaysia-tour-packages/ | 11372 | same |
 | /vietnam-tour-packages/ | 11374 | same |
 | /bali-tour-packages/ | 11376 | same |
+| /dubai-tour-packages/ | 14234 | `.hx` country page (18 Oct 2026) — `pages/gen_dubai.py` (template for future country pages) |
 
 ## Files
 - `gen_hub.py` — builds the hub (`hub.html`, one line) from `photos/wp_map.json`. Edit copy here, rebuild, upload with `wp_update_page` (content), verify.

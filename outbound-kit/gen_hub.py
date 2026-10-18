@@ -233,7 +233,14 @@ def dcard(slug, eager=False, n=1):
             f'<span class="hx-best">Best: {html.escape(best)}</span>'
             f'<span class="hx-dt"><b>{html.escape(name)}</b><em>{html.escape(places)} · {days}</em><i>View {html.escape(name.split(",")[0])} trips {svg("arrow").replace("<svg ", "<svg width=\"15\" height=\"15\" ")}</i></span></a>')
 
+LIVE_PAGES = {'dubai': ('dubai-tour-packages', 'View Dubai trips →')}  # on-request tiles that now have their own page
+
 def mcard(slug, name):
+    if slug in LIVE_PAGES:
+        p, lab = LIVE_PAGES[slug]
+        return (f'<a class="hx-mc" href="https://suzutravels.com/{p}/">'
+                f'<img src="{m(slug)}" alt="{alt(slug)}" width="640" height="480" loading="lazy" decoding="async">'
+                f'<span><b>{html.escape(name)}</b><em>{lab}</em></span></a>')
     return (f'<a class="hx-mc" href="{wa("Hi Suzu Travels, I would like a custom quote for a " + name + " holiday.")}" target="_blank" rel="noopener">'
             f'<img src="{m(slug)}" alt="{alt(slug)}" width="640" height="480" loading="lazy" decoding="async">'
             f'<span><b>{html.escape(name)}</b><em>Quote on WhatsApp →</em></span></a>')
