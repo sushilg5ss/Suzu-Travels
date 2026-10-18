@@ -9,5 +9,6 @@
  "somnath": {"id": 13207, "path": "/pilgrimage-tours/12-jyotirlinga/somnath/", "kind": "temple", "label": "Somnath, Gujarat", "blurb": "The first Jyotirlinga, on the Arabian Sea", "added": "2026-10-13", "shrine": "somnath-jyotirlinga"},
  "kashi-vishwanath": {"id": 13352, "path": "/pilgrimage-tours/12-jyotirlinga/kashi-vishwanath/", "kind": "temple", "label": "Kashi Vishwanath, Varanasi", "blurb": "The Lord of the Universe, on the Ganga", "added": "2026-10-14", "shrine": "kashi-vishwanath-jyotirlinga"},
  "mahakaleshwar": {"id": 13457, "path": "/pilgrimage-tours/12-jyotirlinga/mahakaleshwar/", "kind": "temple", "label": "Mahakaleshwar, Ujjain", "blurb": "The south-facing Lord of Time, by the Shipra", "added": "2026-10-15", "shrine": "mahakaleshwar-jyotirlinga"},
- "omkareshwar": {"id": 13587, "path": "/pilgrimage-tours/12-jyotirlinga/omkareshwar/", "kind": "temple", "label": "Omkareshwar, Narmada", "blurb": "Lord of Om, on a Narmada island", "added": "2026-10-16", "shrine": "omkareshwar-jyotirlinga"}
+ "omkareshwar": {"id": 13587, "path": "/pilgrimage-tours/12-jyotirlinga/omkareshwar/", "kind": "temple", "label": "Omkareshwar, Narmada", "blurb": "Lord of Om, on a Narmada island", "added": "2026-10-16", "shrine": "omkareshwar-jyotirlinga"},
+ "kedarnath": {"id": 14324, "path": "/pilgrimage-tours/kedarnath/", "kind": "yatra", "label": "Kedarnath Yatra", "blurb": "The Himalayan Jyotirlinga above the Mandakini", "added": "2026-10-18", "shrine": "kedarnath-jyotirlinga"}
 }
