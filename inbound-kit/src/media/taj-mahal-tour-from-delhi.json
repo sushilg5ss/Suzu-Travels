@@ -1,13 +1,48 @@
 {
- "_note": "Media for /india-tours/taj-mahal-tour-from-delhi/ (product page). Existing licensed photos only (hf/photos/CREDITS.md), each captioned only with its allowed place. Route stops from research/pages/taj-mahal-tour-from-delhi.md 'Media notes'. No cost ladder (no day-trip rate in data/prices.json).",
+ "_note": "Media for /india-tours/taj-mahal-tour-from-delhi/ (product page). Existing licensed photos only (hf/photos/CREDITS.md), each captioned only with its allowed place. Route stops from research/pages/taj-mahal-tour-from-delhi.md 'Media notes'. Hero opens on the Taj (poster/LCP = the page's subject, 18 Oct). Cost ladder = the page's 'What's included — and what isn't' section in words; no price (no day-trip rate in data/prices.json).",
  "hero": {
   "kicker": "TAJ MAHAL · FROM DELHI",
   "scenes": [
-   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
-   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 1080}, "to": {"y": 640}},
-   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}}
+   {
+    "img": "px-33777272.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 1080
+    },
+    "to": {
+     "y": 640
+    }
+   },
+   {
+    "img": "px-3672388.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 60,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 40
+    }
+   },
+   {
+    "img": "px-29295304.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 620
+    },
+    "to": {
+     "y": 60
+    }
+   }
   ],
-  "steps": ["LEAVE DELHI EARLY", "TAJ MAHAL, AGRA", "OR ON TO JAIPUR"]
+  "steps": [
+   "TAJ MAHAL, AGRA",
+   "A DAY FROM DELHI",
+   "OR ON TO JAIPUR"
+  ]
  },
  "route": {
   "title": "DELHI → AGRA",
@@ -15,10 +50,69 @@
   "bounds": "auto",
   "dur": 12,
   "stops": [
-   {"name": "Delhi", "sub": "pick-up at your hotel", "day": "Start", "lat": 28.61, "lon": 77.21},
-   {"name": "Agra", "sub": "Taj Mahal · Agra Fort", "day": "204 km", "lat": 27.18, "lon": 78.02},
-   {"name": "Fatehpur Sikri", "sub": "on the Jaipur road", "day": "Optional", "lat": 27.09, "lon": 77.66},
-   {"name": "Jaipur", "sub": "Golden Triangle", "day": "Optional", "lat": 26.91, "lon": 75.79}
+   {
+    "name": "Delhi",
+    "sub": "pick-up at your hotel",
+    "day": "Start",
+    "lat": 28.61,
+    "lon": 77.21
+   },
+   {
+    "name": "Agra",
+    "sub": "Taj Mahal · Agra Fort",
+    "day": "204 km",
+    "lat": 27.18,
+    "lon": 78.02
+   },
+   {
+    "name": "Fatehpur Sikri",
+    "sub": "on the Jaipur road",
+    "day": "Optional",
+    "lat": 27.09,
+    "lon": 77.66
+   },
+   {
+    "name": "Jaipur",
+    "sub": "Golden Triangle",
+    "day": "Optional",
+    "lat": 26.91,
+    "lon": 75.79
+   }
   ]
+ },
+ "cost": {
+  "kicker": "THE AGRA DAY · WHAT'S COVERED",
+  "title": "One car, one driver, one clear quote",
+  "items": [
+   {
+    "label": "Car + driver, all day",
+    "sub": "air-conditioned car, fuel, tolls, parking, state taxes"
+   },
+   {
+    "label": "Delhi pick-up & drop",
+    "sub": "from your hotel or the airport, same car back"
+   },
+   {
+    "label": "Taj & Agra Fort tickets",
+    "sub": "optional — we book them in the same quote, or buy on the day",
+    "tag": "optional"
+   },
+   {
+    "label": "Licensed monument guide",
+    "sub": "optional — a local guide at the Taj and the Fort",
+    "tag": "optional"
+   },
+   {
+    "label": "Train option",
+    "sub": "optional — Gatimaan Express tickets instead of the car",
+    "tag": "optional"
+   },
+   {
+    "label": "Meals and tips",
+    "sub": "your own, paid on the spot",
+    "tag": "your own"
+   }
+  ],
+  "end": "Day trip quoted on request · Golden Triangle packages have published prices"
  }
 }
