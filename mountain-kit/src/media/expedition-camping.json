@@ -84,5 +84,41 @@
     }
    }
   ]
+ },
+ "profile": {
+  "title": "Deo Tibba, camp by camp",
+  "sub": "Road-head to the 6,001 m summit · camp heights are approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Road-head town"
+   },
+   {
+    "name": "Chhika",
+    "m": 3160,
+    "day": "Approach camp"
+   },
+   {
+    "name": "Tainta",
+    "m": 4100,
+    "day": "Base camp"
+   },
+   {
+    "name": "Duhangan Col",
+    "m": 5100,
+    "day": "Camp 1"
+   },
+   {
+    "name": "Summit camp",
+    "m": 5500,
+    "day": "Last tent"
+   },
+   {
+    "name": "Summit",
+    "m": 6001,
+    "day": "Top · back to camp"
+   }
+  ]
  }
 }
