@@ -1,0 +1,26 @@
+{
+ "_note": "Media for /india-tours/kerala-tour/ (itinerary). Photos from hf/photos/CREDITS.md (added 18 Oct 2026), each captioned only with its allowed place — px-5374231 is 'Kerala backwaters', not Alleppey. Route stops from research/pages/kerala-tour.md 'Media notes'. No cost ladder (no Kerala rate in data/prices.json).",
+ "hero": {
+  "kicker": "KERALA · 8 DAYS",
+  "scenes": [
+   {"img": "px-32054122.jpg", "kind": "tilt", "from": {"y": 560}, "to": {"y": 160}},
+   {"img": "px-1065753.jpg", "kind": "tilt", "from": {"y": 1320}, "to": {"y": 900}},
+   {"img": "px-30121290.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 420}},
+   {"img": "px-5374231.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}}
+  ],
+  "steps": ["FORT KOCHI", "MUNNAR TEA HILLS", "COOL AT 1,600 M", "A NIGHT AFLOAT"]
+ },
+ "route": {
+  "title": "KERALA · 8 DAYS",
+  "sub": "Kochi → Munnar → Thekkady → the backwaters → Kochi",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Kochi", "sub": "Fort Kochi · arrive", "day": "Day 1–2", "lat": 9.97, "lon": 76.28},
+   {"name": "Munnar", "sub": "tea hills · 1,600 m", "day": "Day 3–4", "lat": 10.09, "lon": 77.06},
+   {"name": "Thekkady", "sub": "Periyar · spices", "day": "Day 5–6", "lat": 9.6, "lon": 77.17},
+   {"name": "Alappuzha", "sub": "houseboat night", "day": "Day 7", "lat": 9.49, "lon": 76.33},
+   {"name": "Kochi airport", "sub": "fly out", "day": "Day 8", "lat": 10.15, "lon": 76.4}
+  ]
+ }
+}
