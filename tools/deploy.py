@@ -108,18 +108,19 @@ def api(method, path, body=None):
 
 def fetch_live(url, allow_absent=False):
     sep = "&" if "?" in url else "?"
-    u = f"{url}{sep}nc={int(time.time())}{random.randint(1000, 9999)}"
     last = None
-    for i in range(3):
-        st, _, body = http("GET", u, headers={"User-Agent": UA, "Cache-Control": "no-cache",
-                                              "Accept": "*/*"}, timeout=60)
+    # try a browser UA first, then curl's (some edges treat them differently)
+    for i, ua in enumerate([UA, API_UA, UA]):
+        u = f"{url}{sep}nc={int(time.time())}{random.randint(1000, 9999)}"
+        st, _, body = http("GET", u, headers={"User-Agent": ua, "Accept": "*/*"}, timeout=40)
         if st == 200:
             return body
         if st == 404 and allow_absent:
             return None
-        last = st
+        last = f"HTTP {st}" + (f" {body[:160]!r}" if st == 0 or st >= 400 else "")
+        log(f"  fetch {url} try {i + 1}: {last}")
         time.sleep(5 * (i + 1))
-    raise Temporary(f"could not fetch live {url} (HTTP {last})")
+    raise Temporary(f"could not fetch live {url} ({last})")
 
 
 def upload(rel, data):
