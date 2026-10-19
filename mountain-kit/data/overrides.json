@@ -147,5 +147,40 @@
    "https://publications.americanalpineclub.org/articles/12199125801/Asia-IndiaHimachal-Pradesh-Chau-Chau-Kang-Nilda-Southeast-Ridge",
    "https://en.wikipedia.org/wiki/Langza"
   ]
+ },
+ "Mulkila": {
+  "first_ascent_by": "Ludwig Krenek, Robey Johnson & Fritz Kolb (Anglo-Austrian expedition)",
+  "difficulty": "technical",
+  "difficulty_note": "Crevassed Milang Glacier and a narrow icefall to a high cwm; the summit is gained by the steep, loose rock of the south ridge (1939 route) or the south-west face",
+  "base": "Darcha (3,360 m) → Milang valley; base camp on the Milang Glacier moraine",
+  "notable": "Highest peak of Lahaul and an Ultra (prominence 1,586 m); also called M4, its name is translated as 'Silver God'. First climbed 7 Sep 1939; first Indian ascent 22 Aug 1989 (Goutam Dutta & R.S. Negi).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mulkila",
+   "https://www.summitpost.org/mulkila/727508",
+   "https://www.himalayanclub.org/hj/37/22/airmen-in-lahul/",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ },
+ "Indrasan": {
+  "first_ascent_by": "Kyoto University Alpine Club (Japan): Kojiro Tomita & Yasumasa Miyaki",
+  "difficulty_note": "Considered the hardest peak of the Pir Panjal: icefall, steep ice and a rock band on the final peak; later lines include the West and East ridges",
+  "base": "Manali → Jagatsukh / Duhangan valley (the 1962 team came up the Malana Glacier)",
+  "notable": "First climbed 13 Oct 1962 by Tomita and Miyaki of the Kyoto University Alpine Club, on the same day their teammates made the second ascent of Deo Tibba. Name: 'Indra' + 'Aasana', the seat of Lord Indra.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Indrasan",
+   "https://www.himalayanclub.org/hj/24/13/the-ascents-of-indrasan-and-deo-tibba/",
+   "https://www.himalayanclub.org/hj/33/23/the-a-m-a-route-on-indrasan-1973/",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ },
+ "Satopanth": {
+  "base": "Gangotri → Gaumukh → Nandanvan → Vasuki Tal (base camp)",
+  "notable": "First climbed 1 Aug 1947 by a Swiss team (Roch, Dittert, Graven, Sutter), 15 days before Indian independence; second-highest peak of Gangotri National Park. The usual line is the north-east ridge from Vasuki Tal, with a long corniced crest.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Satopanth",
+   "https://www.himalayanclub.org/hj/54/8/satopanth-the-mountain-of-good-faith/",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ]
  }
 }
