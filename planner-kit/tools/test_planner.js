@@ -87,6 +87,34 @@ const { chromium, devices } = require('playwright');
     r.cab = await page.textContent('#c-res .v');
     await page.click('#tab-hotel'); await page.click('#h-go'); r.hotel = await page.textContent('#h-res .v');
     r.overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    // v0.8: Hindi UI toggle (display only — price, lead and link data unchanged)
+    if (await page.$('#tp-lang')) {
+      const hp = await ctx.newPage(); hp.on('pageerror', e => errs.push('hi: ' + e));
+      await hp.route('**/admin-ajax.php', rr => rr.fulfill({ status: 200, body: '{}' }));
+      await hp.goto(base, { waitUntil: 'load' }); await hp.evaluate(() => SuzuTripPlanner.load('nau-devi')); await hp.waitForTimeout(900);
+      const enPrice = await hp.textContent('#price .big'), enH1 = await hp.textContent('#tp-h1');
+      await hp.click('#tp-lang'); await hp.waitForTimeout(400);
+      const deva = s => /[ऀ-ॿ]/.test(s || '');
+      const hi = { lang: await hp.evaluate(() => document.documentElement.lang), h1: deva(await hp.textContent('#tp-h1')), day1: await hp.textContent('.tl-day h4'),
+        warnHi: (await hp.$$eval('.warn', x => x.map(y => y.textContent))).every(deva), samePrice: (await hp.textContent('#price .big')).replace(/[^\d]/g, '') === enPrice.replace(/[^\d]/g, ''),
+        cta: await hp.textContent('#price [data-act="price"]') };
+      await hp.screenshot({ path: `${out}/${name}-7-hindi.png`, fullPage: true });
+      await hp.click('#price [data-act="pdf"]'); await hp.waitForTimeout(200); await hp.fill('#ld-name', 'TEST Claude'); await hp.fill('#ld-ph', '9876543210'); await hp.click('#ld-go'); await hp.waitForTimeout(2600);
+      const ld = await hp.evaluate(() => window.__tpLastLead);
+      hi.leadEnglish = !deva(ld.destination) && /Guest language: Hindi/.test(ld.message) && /D1 /.test(ld.message);
+      hi.pdfHi = await hp.evaluate(() => /दिन-ब-दिन/.test(document.querySelector('#doc').textContent));
+      await hp.emulateMedia({ media: 'print' }); await hp.screenshot({ path: `${out}/${name}-8-pdf-hindi.png`, fullPage: true }); await hp.emulateMedia({ media: 'screen' });
+      hi.linkHasL = await hp.evaluate(() => { const m = location.hash.match(/t=([\w-]+)/); return m ? JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g, '+').replace(/_/g, '/'))))).l === 'hi' : false; });
+      hi.overflow = await hp.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+      await hp.click('#tp-lang'); await hp.waitForTimeout(300);
+      hi.backToEn = (await hp.textContent('#tp-h1')) === enH1 && (await hp.evaluate(() => document.documentElement.lang)) === 'en-IN' && !deva(await hp.textContent('.tl-day h4'));
+      // a v:1 link carrying l:'hi' opens in Hindi in a fresh browser
+      const c2 = await browser.newContext(opts); const hp2 = await c2.newPage();
+      await hp2.goto(base + '#t=' + v1({ v: 1, s: 'jammu', e: 'jammu', d: '2027-02-10', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['katra', 2]], x: [], tp: '', l: 'hi' }), { waitUntil: 'load' }); await hp2.waitForTimeout(900);
+      hi.linkOpensHi = deva(await hp2.textContent('.tl-day h4'));
+      await c2.close(); await hp.close();
+      r.hindi = hi;
+    }
     r.errors = errs;
     res[name] = r; await ctx.close();
   }

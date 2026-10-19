@@ -32,6 +32,8 @@ Leads (only when the page runs on suzutravels.com): POST `/wp-admin/admin-ajax.p
 
 Share link: `#t=<base64url(JSON)>` — `{v:1,s,e,d,a,c,i,r,t,m,k,p:[[id,nights]],x,tp,g?,cv?}`. Nothing stored server-side. **Keep v:1 links working forever** (people save them); add `v:2` decoding if the format changes.
 
+**Hindi UI (v0.8, 19 Oct 2026)**: `src/i18n.js` — 'हिं / EN' toggle, display-only (dictionary + pattern rules on the DOM, re-applied by a MutationObserver). Data, prices and the lead message stay English. When you add a new English UI string or warning, add its Hindi to `EX` / `RX` in `i18n.js` (`tools/collect_strings.js <url> <tpl ids>` lists visible strings).
+
 ## 3. Pricing engine (data/rates.json) — "higher side" by design
 - **Car**: per-km rates and driver allowance identical to the live /cabs/ fare engine (`cab-kit/cabs_data.py` on branch `cabs`): sedan 12, Ertiga 14, Innova Crysta 19, Tempo 26, Urbania 36 ₹/km; ₹400/night (₹500 Tempo/Urbania). Billable km = max(actual drive + sightseeing km, 250 km × days; 150 km/day on Kashmir/Ladakh union days). Kashmir ×1.25 / Ladakh ×1.35 local-union factor. Tolls + parking ₹1.5/km.
 - **Hotels**: per room-night, double, MAP, off-peak, by place class: metro 3,200 · Rajasthan city/heritage 3,600 · popular hill 3,800 · hill town 3,200 · remote/camps 3,600 · pilgrim town 2,400 · pilgrim city (Katra/Haridwar) 4,000 · Kashmir 4,400 · Ladakh 3,900 (rate audit 16 Oct 2026, `research/rates-sources.md`). Tier ×0.7 / 1.0 / 1.45 / 2.6 (remote capped ×1.8). Extra adult 35 %, child bed 25 %, CP ×0.88. **Peak ×1.25** on Suzu's own windows: 15 Mar–30 Jun, all October, 20 Dec–5 Jan.

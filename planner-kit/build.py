@@ -10,7 +10,7 @@ from places import PLACES
 
 def rd(p): return open(os.path.join(HERE, p), encoding='utf-8').read()
 data = {
-    'v': '0.7',
+    'v': '0.8',
     'built': time.strftime('%Y-%m-%d'),
     'places': PLACES,
     'roads': json.loads(rd('data/roads.json')),
@@ -33,7 +33,7 @@ faq = [{'@type': 'Question', 'name': re.sub('<[^>]+>', '', q).strip(), 'accepted
        for q, a in re.findall(r'<details class="fq"><summary>(.*?)</summary><p>(.*?)</p></details>', src, re.S)]
 assert len(faq) >= 5, 'FAQ not found in src/index.html'
 src = src.replace('"@graph":[', '"@graph":[' + json.dumps({'@type': 'FAQPage', 'mainEntity': faq}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + ',', 1)
-html = src.replace('/*__CSS__*/', rd('src/planner.css')).replace('/*__JS__*/', rd('src/planner.js')).replace('/*__DATA__*/', blob)
+html = src.replace('/*__CSS__*/', rd('src/planner.css')).replace('/*__JS__*/', rd('src/planner.js') + '\n' + rd('src/i18n.js')).replace('/*__DATA__*/', blob)
 out = os.path.join(HERE, 'dist', 'plan-your-trip')
 os.makedirs(out, exist_ok=True)
 open(os.path.join(out, 'roads-geo.json'), 'w', encoding='utf-8').write(geo_blob)

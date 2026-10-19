@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '0.5';
+  var VER = '0.8';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -121,6 +121,7 @@
   function encState(clientView) {
     var o = { v: 1, s: S.s, e: S.e, d: S.d, a: S.a, c: S.c, i: S.i, r: S.r, t: S.t, m: S.m, k: S.k, p: S.p.map(function (x) { return [x.id, x.n]; }), x: S.x, tp: S.tp };
     if (MODE === 'agent' && S.g) { o.g = S.g; if (clientView) o.cv = 1; }
+    if (W.__tpLang === 'hi') o.l = 'hi'; /* v0.8: optional viewer language, still v:1 */
     return b64e(JSON.stringify(o));
   }
   function loadHash() {
@@ -138,6 +139,7 @@
       S.tp = typeof o.tp === 'string' ? o.tp.slice(0, 40) : '';
       if (o.g && typeof o.g === 'object') { S.g = { n: String(o.g.n || '').slice(0, 60), p: String(o.g.p || '').slice(0, 16), e: String(o.g.e || '').slice(0, 80), k: clamp(+o.g.k || 0, 0, 60) }; MODE = 'agent'; }
       S.cv = o.cv ? 1 : 0;
+      if (o.l === 'hi') W.__tpLinkLang = 'hi';
       return S.p.length > 0;
     } catch (e) { return false; }
   }
@@ -927,6 +929,7 @@
     L.push('Estimate: ' + inr(plan.price.total) + ' (' + inr(plan.price.pp) + '/adult), range to ' + inr(plan.price.high));
     if (S.x.length) L.push('Add-ons wanted: ' + S.x.map(function (x) { return ADDONS.filter(function (a) { return a.id === x; })[0].n; }).join(', '));
     if (plan.warn.length) L.push('Warnings shown: ' + plan.warn.map(function (w) { return w.t; }).join(' | '));
+    if (W.__tpLang === 'hi') L.push('Guest language: Hindi (हिंदी) — reply in Hindi');
     if (MODE === 'agent' && S.g) L.push('AGENT: ' + (S.g.n || '') + ' · ' + (S.g.p || '') + ' · ' + (S.g.e || '') + ' · markup ' + S.g.k + '%');
     L.push('Link: ' + shareUrl(false));
     return L.join('\n');
@@ -1064,7 +1067,7 @@
     renderTemplates();
     if (S.cv) { var md = $('.tp-mode'); if (md) md.hidden = true; }
     if (fromLink) { openWs(); if (S.cv && S.g && S.g.n) toast('Itinerary prepared by ' + S.g.n); if (Q.get('pdf') === '1') setTimeout(function () { if (LAST) doPdf(); }, 1200); }
-    W.SuzuTripPlanner = { state: S, compute: compute, geo: function () { return !!ROADS.geoLoaded; }, load: function (id) { var t = TPL.filter(function (x) { return x.id === id; })[0]; if (t) loadTpl(t); }, version: VER };
+    W.SuzuTripPlanner = { state: S, compute: compute, geo: function () { return !!ROADS.geoLoaded; }, data: DATA, pushHash: function () { if (S.p.length) pushHash(); }, load: function (id) { var t = TPL.filter(function (x) { return x.id === id; })[0]; if (t) loadTpl(t); }, version: VER };
   }
   if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', boot); else boot();
   if (W.requestIdleCallback) W.requestIdleCallback(loadGeo, { timeout: 1500 }); else setTimeout(loadGeo, 300);

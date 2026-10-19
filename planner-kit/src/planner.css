@@ -23,6 +23,8 @@ button{cursor:pointer}
 .tp-logo svg{width:34px;height:34px}
 .tp-logo small{display:block;font-size:11px;font-weight:700;color:var(--g);letter-spacing:.08em;text-transform:uppercase}
 .tp-sp{flex:1}
+.tp-lang{border:1.5px solid var(--f);background:#fff;color:var(--f);font-weight:800;font-size:14px;min-width:44px;min-height:38px;padding:0 10px;border-radius:999px;margin-right:8px;cursor:pointer;font-family:inherit}.tp-lang:hover{background:var(--m)}
+html[lang=hi-IN] body{font-family:'Plus Jakarta Sans','Tiro Devanagari Hindi',system-ui,sans-serif}
 .tp-mode{display:flex;padding:3px;background:var(--m);border-radius:999px}
 .tp-mode button{border:0;background:none;padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;color:var(--f);min-height:38px}
 .tp-mode button[aria-pressed=true]{background:var(--f);color:#fff}
@@ -316,7 +318,9 @@ details.fq p{margin:0 0 14px;color:#2c4637}
   .tp-logo small{display:none}
   .tp-mode button{padding:6px 9px;font-size:12px;white-space:nowrap;min-height:36px}
   .tp-call{padding:6px 9px}
+  .tp-lang{margin-right:0;min-width:40px;padding:0 8px;font-size:13px;min-height:36px}
 }
+@media(max-width:440px){.tp-logo span{display:none}.tp-top .in{gap:6px}}
 
 /* ---------- embedded in the homepage overlay ---------- */
 .tp-close{display:inline-flex;align-items:center;gap:4px;border:0;background:var(--m);color:var(--f);border-radius:999px;padding:0 14px 0 10px;min-height:40px;font-weight:800;font-size:14px}
