@@ -189,7 +189,12 @@ def photo_hero(slug):
             raise SystemExit("scene kind must be tilt or land")
         if sc["kind"] == "tilt" and sc["h"] < H + 200:
             raise SystemExit(f"{sc['img']}: tilt photos need ≥ {H + 200}px height")
-        sc["t"] = tuple(sc.get("t") or (round(i * (seg - XF), 2), round(i * (seg - XF) + seg, 2)))
+        if len(steps) == n:   # one caption per photo: cross-fade each photo while the previous caption fades out, so a place caption never sits on the previous photo
+            cs_ = DUR / n
+            auto = (0 if i == 0 else round(i * cs_ - .1, 2), DUR if i == n - 1 else round((i + 1) * cs_ - .1 + XF, 2))
+        else:
+            auto = (round(i * (seg - XF), 2), round(i * (seg - XF) + seg, 2))
+        sc["t"] = tuple(sc.get("t") or auto)
         if "from" not in sc or "to" not in sc:
             if sc["kind"] == "tilt":
                 room = min(sc["h"] - H, 620)
@@ -252,13 +257,15 @@ def route_map(slug):
          "bounds": "auto" | [lon0, lon1, lat0, lat1]   zoom to the stops / fixed window (omit for all-India),
          "dur": 13,
          "stops": [ {"name": "Delhi", "sub": "arrive", "day": "Day 1–2", "lat": 28.61, "lon": 77.21}, ... ] 3–9 stops,
-                   lat/lon from the fact pack only. }
+                   lat/lon from the fact pack only,
+         "line": false   (optional) region map for guides: numbered places, no route line between them; allows 3–12 stops. }
        Draws a graticule, the stops and the line between them — NO outline, NO state or national boundary lines."""
     global BOUNDS
     spec = spec_for(slug, "route")
     stops = spec["stops"]
-    if not 3 <= len(stops) <= 9:
-        raise SystemExit("route.stops needs 3-9 stops")
+    line = spec.get("line", True) is not False
+    if not 3 <= len(stops) <= (9 if line else 12):
+        raise SystemExit("route.stops needs 3-9 stops (3-12 with \"line\": false)")
     box = (200, 60, 1240, 1040)
     b = spec.get("bounds")
     if b == "auto":   # fit the stops with a margin, keeping the box's aspect (1° lon ≈ 0.87° lat at these latitudes)
@@ -312,21 +319,22 @@ def route_map(slug):
                   f'tl.to("#pb{i}",{{opacity:.35,duration:.6}},{t + .8:.2f});')
         js.append(f'tl.set("#l{i}",{{opacity:.28}},0);tl.to("#l{i}",{{opacity:1,x:-10,duration:.3}},{t:.2f});tl.to("#l{i}",{{x:0,duration:.3}},{t + .4:.2f});')
     tend = t0 + len(stops) * step
-    js.append(f'tl.fromTo("#route",{{strokeDashoffset:{plen:.0f}}},{{strokeDashoffset:0,duration:{tend - t0:.2f},ease:"none"}},{t0});')
     fo = dur - 1.1   # loop: fade back to the dim start state
-    js.append(f'tl.to("#route",{{opacity:0,duration:.8}},{fo:.2f});tl.set("#route",{{strokeDashoffset:{plen:.0f},opacity:.8}},{dur - .05:.2f});')
+    if line:
+        js.append(f'tl.fromTo("#route",{{strokeDashoffset:{plen:.0f}}},{{strokeDashoffset:0,duration:{tend - t0:.2f},ease:"none"}},{t0});')
+        js.append(f'tl.to("#route",{{opacity:0,duration:.8}},{fo:.2f});tl.set("#route",{{strokeDashoffset:{plen:.0f},opacity:.8}},{dur - .05:.2f});')
     for i in range(len(stops)):
         js.append(f'tl.to("#p{i}",{{opacity:.25,duration:.8}},{fo:.2f});tl.to("#l{i}",{{opacity:.28,duration:.8}},{fo:.2f});tl.set("#pb{i}",{{opacity:1,scaleY:0}},{dur - .05:.2f});')
     svg = (f'<svg class="lay" viewBox="0 0 {W} {H}"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a8" stop-opacity=".9"/><stop offset="1" stop-color="{SAFF}" stop-opacity="0"/></radialGradient>'
            f'<linearGradient id="pl2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#ffe2a0" stop-opacity=".9"/><stop offset="1" stop-color="#ffb347"/></linearGradient>'
            f'<radialGradient id="bgg" cx=".35" cy=".5" r=".75"><stop offset="0" stop-color="#143a5e"/><stop offset="1" stop-color="{NAVY2}"/></radialGradient></defs>'
            f'<rect width="{W}" height="{H}" fill="url(#bgg)"/>{stars()}{grat}'
-           f'<path id="route" d="{path}" fill="none" stroke="{GOLD2}" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="{plen:.0f}" stroke-dashoffset="{plen:.0f}"/>'
+           + (f'<path id="route" d="{path}" fill="none" stroke="{GOLD2}" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="{plen:.0f}" stroke-dashoffset="{plen:.0f}"/>' if line else '') +
            f'{"".join(dots)}</svg>')
     body = [f'<div class="lay clip" data-start="0" data-duration="{dur}" data-track-index="0">{svg}</div>',
             f'<div class="side clip" data-start="0" data-duration="{dur}" data-track-index="1"><div class="kick">{esc(spec["title"])}</div><div class="sub">{esc(spec.get("sub", ""))}</div>{"".join(labels)}</div>',
             wordmark(dur, 2)]
-    rowh = 70 if len(stops) <= 7 else 58
+    rowh = 70 if len(stops) <= 7 else 58 if len(stops) <= 9 else 54
     css = ('.side{position:absolute;right:70px;top:70px;width:600px}.sub{font:600 30px "CG",serif;color:#fff7e6;margin:8px 0 18px}'
            f'.lb{{display:flex;align-items:center;gap:14px;height:{rowh}px;border-bottom:1px solid rgba(242,193,78,.16);opacity:.28}}'
            '.lb b{font:800 18px "SZ",sans-serif;color:#f2c14e;width:30px}.lb .dy{font:700 20px "SZ",sans-serif;letter-spacing:.08em;color:#ffe3a3;min-width:150px}'

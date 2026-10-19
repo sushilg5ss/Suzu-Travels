@@ -1,0 +1,165 @@
+{
+ "_note": "Media for /india-tours/best-places-to-visit-in-india/ (guide). Hero photos: licensed set in hf/photos/CREDITS.md (1 new: px-16973143 Varanasi ghats), each captioned only with an allowed caption; 'PICK YOUR INDIA' names no place. Route = region map (\"line\": false, numbered places, no route line, no borders); lat/lon from research/pages/best-places-to-visit-in-india.md 'Media notes'. No cost ladder (fact pack: not needed).",
+ "hero": {
+  "kicker": "WHERE TO GO IN INDIA",
+  "scenes": [
+   {
+    "img": "px-33777272.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 1080
+    }
+   },
+   {
+    "img": "px-16973143.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.03,
+     "x": 40,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40,
+     "y": 30
+    }
+   },
+   {
+    "img": "px-36966954.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 800
+    }
+   },
+   {
+    "img": "px-5374231.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 50,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-29295304.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 620
+    },
+    "to": {
+     "y": 60
+    }
+   }
+  ],
+  "steps": [
+   "TAJ MAHAL",
+   "VARANASI GHATS",
+   "HIMALAYAN SUNSET",
+   "KERALA BACKWATERS",
+   "PICK YOUR INDIA"
+  ]
+ },
+ "route": {
+  "title": "WHERE TO GO · 12 PLACES",
+  "sub": "Classic north, the Himalaya, the Ganga, the coast",
+  "line": false,
+  "dur": 14,
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "capital · old city",
+    "day": "Classic",
+    "lat": 28.6139,
+    "lon": 77.209
+   },
+   {
+    "name": "Agra",
+    "sub": "Taj Mahal",
+    "day": "Classic",
+    "lat": 27.1751,
+    "lon": 78.0421
+   },
+   {
+    "name": "Jaipur",
+    "sub": "Pink City",
+    "day": "Classic",
+    "lat": 26.9124,
+    "lon": 75.7873
+   },
+   {
+    "name": "Amritsar",
+    "sub": "Golden Temple",
+    "day": "Punjab",
+    "lat": 31.62,
+    "lon": 74.8765
+   },
+   {
+    "name": "Dharamshala",
+    "sub": "McLeod Ganj",
+    "day": "Himalaya",
+    "lat": 32.219,
+    "lon": 76.3234
+   },
+   {
+    "name": "Shimla",
+    "sub": "hill town",
+    "day": "Himalaya",
+    "lat": 31.1048,
+    "lon": 77.1734
+   },
+   {
+    "name": "Manali",
+    "sub": "Kullu valley",
+    "day": "Himalaya",
+    "lat": 32.2432,
+    "lon": 77.1892
+   },
+   {
+    "name": "Leh",
+    "sub": "Ladakh",
+    "day": "Himalaya",
+    "lat": 34.1526,
+    "lon": 77.5771
+   },
+   {
+    "name": "Rishikesh",
+    "sub": "yoga · Ganga",
+    "day": "Ganga",
+    "lat": 30.0869,
+    "lon": 78.2676
+   },
+   {
+    "name": "Varanasi",
+    "sub": "ghats · evening aarti",
+    "day": "Ganga",
+    "lat": 25.3176,
+    "lon": 82.9739
+   },
+   {
+    "name": "Goa",
+    "sub": "beaches · Old Goa",
+    "day": "Coast",
+    "lat": 15.4909,
+    "lon": 73.8278
+   },
+   {
+    "name": "Kochi",
+    "sub": "Kerala backwaters",
+    "day": "Kerala",
+    "lat": 9.9312,
+    "lon": 76.2673
+   }
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 {
  "_note": "MODEL FILE for the Visual Studio (files starting with _ are never used on a real page; the Studio may render it to test the compositions). One file per page: src/media/<slug>.json with up to three blocks — hero (photo-hero), route (route-map), cost (cost-ladder). Photos: only files listed in hf/photos/CREDITS.md, captioned as a place only if that row allows it. Route lat/lon and day numbers come from research/pages/<slug>.md 'Media notes' (the figures below are the model's own, for shape). Prices: a 'price' prints 'from US$…' and must be in data/prices.json 'allowed'; everything else is words only.",
  "hero": {
-  "_fields": "kicker ≤ 28 chars, CAPITALS. scenes: 3–5 photos; kind = tilt (portrait, 1920 wide, vertical pan) | land (landscape, 2112 wide, scale + x pan); mirror only if CREDITS.md allows; t = [start, end] seconds (optional: scenes tile the 14 s loop with 0.6 s cross-fades); from/to = GSAP props (optional: gentle default pans). steps: 3–5 captions, CAPITALS, ≤ 18 characters, one per beat (14 s / n). The hero keeps all text in the right 55% of the frame; the Suzu wordmark sits bottom-right.",
+  "_fields": "kicker ≤ 28 chars, CAPITALS. scenes: 3–5 photos; kind = tilt (portrait, 1920 wide, vertical pan) | land (landscape, 2112 wide, scale + x pan); mirror only if CREDITS.md allows; t = [start, end] seconds (optional: scenes tile the 14 s loop with 0.6 s cross-fades); from/to = GSAP props (optional: gentle default pans). steps: 3–5 captions, CAPITALS, ≤ 18 characters, one per beat (14 s / n). The hero keeps all text in the right 55% of the frame; the Suzu wordmark sits bottom-right. When there is one caption per photo, scenes auto-time to the caption beats (each photo cross-fades in as the previous caption fades out).",
   "kicker": "NORTH INDIA · 14 DAYS",
   "scenes": [
    {
@@ -57,7 +57,7 @@
   ]
  },
  "route": {
-  "_fields": "title (CAPITALS, short), sub (one line), bounds = \"auto\" (zoom to the stops) or [lon0, lon1, lat0, lat1] (omit for all-India), dur (s), stops 3–9 in travel order: name, sub (one or two words), day ('Day 1–2'), lat, lon. The map has no outline and no boundary lines — graticule, stops and the route line only.",
+  "_fields": "title (CAPITALS, short), sub (one line), bounds = \"auto\" (zoom to the stops) or [lon0, lon1, lat0, lat1] (omit for all-India), dur (s), stops 3–9 in travel order: name, sub (one or two words), day ('Day 1–2'), lat, lon. The map has no outline and no boundary lines — graticule, stops and the route line only. Optional \"line\": false = region map for guides (numbered places, no route line), allows 3–12 stops.",
   "title": "INDIA · 14 DAYS",
   "sub": "Golden Triangle, then the Himachal hills",
   "bounds": "auto",
