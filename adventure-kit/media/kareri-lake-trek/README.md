@@ -1,0 +1,11 @@
+# kareri-lake-trek media (Visual Studio, 19 Oct 2026 morning)
+
+HyperFrames 0.8.85. Compositions: kareri-lake-trek-{hero,explainer,reel}.html. Media commit: 4a2847d597ed2cd31059ab649a57e9ad24c7319f
+Base: https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@4a2847d597ed2cd31059ab649a57e9ad24c7319f/adventure-kit/media/kareri-lake-trek/
+
+- hero.mp4 1.43 MB / hero.webm 1.48 MB / poster.webp 85 KB (WP 14399) — 12 s seamless loop (first/last frame diff ~1.5/255). Hikers on a forest footbridge → trek tents by a stream → clear rocky mountain lake → Dhauladhar at sunset → back; right half "Kareri Lake Trek", gold trail Kareri village → river camp → lake, altitude counter ~1,800 m → 2,934 m (village height unverified, shown as "~"), rotating facts (Lake at 2,934 m · ~13 km from Kareri village · 2 days · river camp on the way · Lake frozen Dec–Mar).
+- explainer.mp4 0.26 MB / explainer.webm 0.26 MB / explainer-poster.webp (WP 14400) — 12 s "Your two Kareri days": Day 1 drive + walk along the Nyund stream to the river camp (~4–5 h), Day 2 lake at 2,934 m + small hill temple + down; month ring (gold Apr–Jun & Sep–Nov, grey Jul–Aug monsoon, ice-blue Dec–Mar frozen · permission + guide); end chips "Kareri or Triund?" Triund 1-day ridge / Kareri 2-day lake / Price: Get Quote.
+- reel-web.mp4 0.67 MB / reel-web.webm 0.66 MB / reel-web-poster.webp — 15 s 9:16; end card Get Quote + suzutravels.com/adventure/kareri-lake-trek + HP Tourism reg. no.
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
+
+Photos (no Kareri photo in the library or on Pexels; all generic shots carry neutral alt text, never labelled Kareri): new WP 14395 clear rocky mountain lake below snow-streaked peaks (lake card / hero slot, Pexels 18846477), 14396 transparent high-altitude lake with the lakebed visible (gallery / "clear water" fact, Pexels 38930216), 14397 shallow mountain stream over stones (trail / Nyund stream card, Pexels 12960468), 14398 Dhauladhar range at sunset, Dharamshala side (overview / season, Pexels 36966954). Reuse 14178 hikers on a forest footbridge (trail / stream-crossing safety row), 13541 trek tents by a stream (river camp card), 13525 tent-door view over a mountain river (stay card), 12702 Dhauladhar peaks from Dharamshala (how to reach). No frozen-lake or hill-shrine photo found — none shown.
