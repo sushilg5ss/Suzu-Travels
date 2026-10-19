@@ -473,5 +473,113 @@
   "license": "Unsplash License",
   "src": "https://unsplash.com/photos/a-large-group-of-sand-dunes-under-a-blue-sky-RPkXbErNJow",
   "wp_id": 14233
+ },
+ "turkey-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-cappadocia-balloons-sunrise.webp",
+  "alt": "Hot-air balloons rising over the rock formations of Cappadocia, Turkey",
+  "cap": "Cappadocia",
+  "credit": "Timur Garifov",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/hot-air-balloons-on-the-sky-during-daytime-p2RbLnqWPVY",
+  "wp_id": 14601
+ },
+ "turkey-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-hagia-sophia-istanbul.webp",
+  "alt": "The Hagia Sophia with its dome and minarets seen from the gardens, Istanbul, Turkey",
+  "cap": "Hagia Sophia, Istanbul",
+  "credit": "Lewis J Goetz",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/hagia-sophia-in-istanbul-JbWg7W953LY",
+  "wp_id": 14604
+ },
+ "turkey-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-bosphorus-ferry-eminonu.webp",
+  "alt": "A ferry crossing the Bosphorus with the mosques and skyline of Eminönü, Istanbul, behind",
+  "cap": "The Bosphorus, Istanbul",
+  "credit": "Engin Yapici",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/ferry-crossing-bosphorus-in-istanbul-WA1u0scVLZU",
+  "wp_id": 14605
+ },
+ "turkey-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-pamukkale-travertine-pools.webp",
+  "alt": "Aerial view of the turquoise travertine pools of Pamukkale, Denizli, Turkey",
+  "cap": "Pamukkale",
+  "credit": "Rockwell branding agency",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-group-of-blue-and-white-rocks-in-the-water-ohQLlJkjjOI",
+  "wp_id": 14608
+ },
+ "turkey-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-ephesus-library-of-celsus.webp",
+  "alt": "Visitors in front of the Library of Celsus facade at the ancient city of Ephesus, Selçuk, Turkey",
+  "cap": "Ephesus",
+  "credit": "Mert Kahveci",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/people-walking-in-front-of-brown-concrete-building-during-daytime-Hk7rVLXGvbw",
+  "wp_id": 14611
+ },
+ "turkey-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-cappadocia-avanos-balloons.webp",
+  "alt": "Dozens of hot-air balloons at sunrise over Cappadocia near Avanos, Turkey",
+  "cap": "Sunrise, Cappadocia",
+  "credit": "yyzvic",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/hot-air-balloons-on-brown-field-during-daytime-f7oe3-tlm0I",
+  "wp_id": 14615
+ },
+ "turkey-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-galata-tower-istanbul.webp",
+  "alt": "The Galata Tower rising above the rooftops of Istanbul with seagulls overhead",
+  "cap": "Galata Tower",
+  "credit": "Anna Berdnik",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/galata-tower-cityscape-in-istanbul-0n0AHB1fgTQ",
+  "wp_id": 14616
+ },
+ "turkey-8": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-sultanahmet-mosque-dusk.webp",
+  "alt": "Domes and minarets of a mosque in Sultanahmet, Istanbul, under a pink dusk sky",
+  "cap": "Sultanahmet",
+  "credit": "Fatih Yürür",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/brown-and-blue-concrete-dome-building-kNSREmtaGOE",
+  "wp_id": 14619
+ },
+ "turkey-9": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-ortakoy-mosque-flag.webp",
+  "alt": "The Turkish flag waving in front of the Ortaköy Mosque on the Bosphorus, Istanbul, at sunset",
+  "cap": "Ortaköy, Istanbul",
+  "credit": "Michael Jerrard",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/turkish-flag-and-ortakoy-mosque-istanbul-JnLp1kus3Ks",
+  "wp_id": 14621
+ },
+ "turkey-10": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-cappadocia-rock-village.webp",
+  "alt": "A rock castle above the stone cave houses of a village in Cappadocia, Turkey",
+  "cap": "Cave village, Cappadocia",
+  "credit": "Mauro Lima",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-mountain-with-a-bunch-of-buildings-on-top-of-it-4btNI-3VdxE",
+  "wp_id": 14624
+ },
+ "turkey-11": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-pamukkale-cotton-castle.webp",
+  "alt": "White travertine terraces and blue pools of Pamukkale, the \"Cotton Castle\", Turkey",
+  "cap": "Pamukkale terraces",
+  "credit": "Kubilay Bal",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-group-of-people-standing-on-top-of-a-snow-covered-slope-Wage1_mWLt4",
+  "wp_id": 14626
+ },
+ "turkey-12": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-turkey-cappadocia-valley-balloons.webp",
+  "alt": "Hot-air balloons above the pale rock formations and green valley of Cappadocia, Turkey",
+  "cap": "Cappadocia valleys",
+  "credit": "Tony Lee",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/landscape-photography-of-brown-mountain-nZlaCQlYAnA",
+  "wp_id": 14628
  }
 }

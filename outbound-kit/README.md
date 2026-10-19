@@ -17,6 +17,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /vietnam-tour-packages/ | 11374 | same |
 | /bali-tour-packages/ | 11376 | same |
 | /dubai-tour-packages/ | 14234 | `.hx` country page (18 Oct 2026) — `pages/gen_dubai.py` (template for future country pages) |
+| /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
 - `gen_hub.py` — builds the hub (`hub.html`, one line) from `photos/wp_map.json`. Edit copy here, rebuild, upload with `wp_update_page` (content), verify.
@@ -26,6 +27,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 
 ## Design rules
 - One H1 = the theme title (`.page-header .entry-title`), restyled by page-scoped CSS (`body.page-id-N …`). On the hub it is absolutely positioned over the photo hero; the hero reserves `padding-top:236px` (desktop) / `206px` (≤700px) for it.
+- `gen_dubai.py`/`gen_turkey.py` prune hub CSS with `_DROP`; a hub rule that shares a selector with a dropped class (e.g. `.hx-steps,.hx-why`) is lost — re-add it in `EXTRA` (fixed 19 Oct for `.hx-steps` mobile columns).
 - Content must stay a single line (wpautop inserts `<p>`/`<br>` on new lines). Inline JS: no `&`, no `//`.
 - Real photos only (Unsplash free licence, Pexels, Wikimedia CC0/BY/BY-SA, Suzu guest photos). Drawn/animated map graphics were rejected by Sushil (17 Oct 2026) as cheap-looking.
 - Old green route-map media (`/wp-content/uploads/suzu-intl/*.mp4|webm|poster.webp`) are no longer referenced by the outbound pages; keep the files (other pages/links may use them).
