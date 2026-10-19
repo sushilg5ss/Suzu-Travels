@@ -634,5 +634,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "jammu-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b2567d19fceddbb1fef1e6bedb0347f568b73e24/cab-kit/media/jammu-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b2567d19fceddbb1fef1e6bedb0347f568b73e24/cab-kit/media/jammu-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b2567d19fceddbb1fef1e6bedb0347f568b73e24/cab-kit/media/jammu-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
