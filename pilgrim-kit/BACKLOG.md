@@ -20,7 +20,7 @@
 | 10 | live 2026-10-15 | `mahakaleshwar` | 12-JL | temple | mahakaleshwar temple (90,500) | nagara | Bhasma Aarti booking rules (90-day rule) |
 | 11 | live 2026-10-16 | `omkareshwar` | 12-JL | temple | omkareshwar jyotirlinga (673,000) | nagara | Mamleshwar on the south bank |
 | 12 | live 2026-10-18 | `kedarnath` | hub | yatra | kedarnath yatra (8,100; kedarnath temple 135,000) | himalaya | Link post 12021 for closing date; heli only via IRCTC |
-| 13 | media | `char-dham-yatra` | hub | yatra | char dham yatra (90,500) | himalaya + route-map | 2027 guide; registration 60,500; CTA 9905; live before Feb 2027. On go-live: edit Rank Math redirect `/char-dham-yatra/` (302 → hub#chardham) to 301 → this page |
+| 13 | live 2026-10-19 | `char-dham-yatra` | hub | yatra | char dham yatra (90,500) | himalaya + route-map | 2027 guide; registration 60,500; CTA 9905; live before Feb 2027. On go-live: edit Rank Math redirect `/char-dham-yatra/` (302 → hub#chardham) to 301 → this page |
 | 14 | media | `badrinath` | hub | temple | badrinath temple (90,500) | himalaya | Closing date fixed on Vijayadashami (20 Oct 2026). Moved up 12 Oct 2026: Oct demand peak 110,000 + Char Dham cluster support |
 | 15 | media | `chamunda-devi` | hub | temple | chamunda devi temple (14,800) | devi | |
 | 16 | media | `kangra-devi` | hub | temple | kangra devi temple (6,600) | devi | Brajeshwari; ghee/butter Makar Sankranti |
