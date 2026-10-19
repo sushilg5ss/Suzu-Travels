@@ -14,18 +14,42 @@
  "tag": "The Lord of Time.",
  "sub": "Shri Mahakaleshwar, the Jyotirlinga of Ujjain, is the only one of the twelve that faces south. The legend of Mahakal, the pre-dawn Bhasma Aarti and how to book it, the dress code, the phone rule, festival crowds and the easiest ways to reach.",
  "chips": [
-  ["~4 am", "Bhasma Aarti begins"],
-  ["90 days", "one booking per mobile"],
-  ["~55 km", "from Indore airport"],
-  ["6 Mar 2027", "Mahashivratri"]
+  [
+   "~4 am",
+   "Bhasma Aarti begins"
+  ],
+  [
+   "90 days",
+   "one booking per mobile"
+  ],
+  [
+   "~55 km",
+   "from Indore airport"
+  ],
+  [
+   "6 Mar 2027",
+   "Mahashivratri"
+  ]
  ],
  "q": "Where is Mahakaleshwar temple and why is it sacred?",
  "answer": "Shri Mahakaleshwar temple stands in <b>Ujjain, Madhya Pradesh</b>, near the Shipra river, about 55 km from Indore. It is one of the <a href=\"/pilgrimage-tours/12-jyotirlinga/\">12 Jyotirlingas</a>, where Shiva is worshipped as Mahakala, the lord of time — and the only one of the twelve that faces south. Its Bhasma Aarti begins at about 4 am and must be booked online.",
  "facts": [
-  ["~4 am", "Bhasma Aarti (MP Tourism)"],
-  ["South-facing", "the only one of the 12 Jyotirlingas"],
-  ["~2 km", "from Ujjain Junction"],
-  ["11 Oct 2022", "Shri Mahakal Lok corridor opened"]
+  [
+   "~4 am",
+   "Bhasma Aarti (MP Tourism)"
+  ],
+  [
+   "South-facing",
+   "the only one of the 12 Jyotirlingas"
+  ],
+  [
+   "~2 km",
+   "from Ujjain Junction"
+  ],
+  [
+   "11 Oct 2022",
+   "Shri Mahakal Lok corridor opened"
+  ]
  ],
  "intro": [
   "Ujjain — the ancient Avanti, or Avantika — is one of Hinduism's seven sacred cities, and Baba Mahakal is its guardian. Pilgrims usually bathe at Ram Ghat on the Shipra, walk through the Shri Mahakal Lok corridor and take darshan of the self-manifested (svayambhu) linga. Many also try to attend the Bhasma Aarti, the temple's famous pre-dawn ritual. The temple is open all year.",
@@ -35,10 +59,22 @@
   "h2": "The legend of Mahakaleshwar",
   "lead": "The Koti Rudra Samhita of the Shiva Purana tells how Shiva came to stay in Avanti as Mahakala. This is how tradition tells it.",
   "beats": [
-   ["A family of devotees", "In Avanti lived a learned Brahmin, Vedapriya, whose four sons worshipped an earthen linga every single day."],
-   ["The demon Dushana", "Strengthened by a boon from Brahma, the demon Dushana came down from the Ratnamala hills and set about stopping all prayer in the city. The family kept chanting Shiva's name."],
-   ["Mahakal rises", "As the demon rushed at them, it is believed the earth beside their linga split open and Shiva rose in his fearsome Mahakala form — with a single roar, Dushana was reduced to ash."],
-   ["The city's guardian", "The devotees begged him to stay and protect Avanti for ever. Tradition holds that he remained here as the self-born, south-facing Mahakaleshwar."]
+   [
+    "A family of devotees",
+    "In Avanti lived a learned Brahmin, Vedapriya, whose four sons worshipped an earthen linga every single day."
+   ],
+   [
+    "The demon Dushana",
+    "Strengthened by a boon from Brahma, the demon Dushana came down from the Ratnamala hills and set about stopping all prayer in the city. The family kept chanting Shiva's name."
+   ],
+   [
+    "Mahakal rises",
+    "As the demon rushed at them, it is believed the earth beside their linga split open and Shiva rose in his fearsome Mahakala form — with a single roar, Dushana was reduced to ash."
+   ],
+   [
+    "The city's guardian",
+    "The devotees begged him to stay and protect Avanti for ever. Tradition holds that he remained here as the self-born, south-facing Mahakaleshwar."
+   ]
   ],
   "more": [
    "The same tradition tells of King Chandrasena and a young cowherd, Shrikhar, whose devotion protected Ujjain. South is the direction of death, and as Mahakala — lord of time and death — Shiva here faces south. These are stories of faith, told as tradition rather than history. Mahakaleshwar is third in the Shiva Purana's list of the twelve Jyotirlingas and in the Dwadasha Jyotirlinga stotram (उज्जयिन्यां महाकालम्)."
@@ -65,59 +101,144 @@
  "darshan": {
   "h2": "Mahakaleshwar darshan and aarti timings",
   "rows": [
-   ["Temple hours", "From about 4 am until late night — exact hours are not published on an official source we could verify; confirm locally"],
-   ["Bhasma Aarti", "Starts about 4:00 am daily (MP Tourism) — prior online booking required; report at the time printed on your pass"],
-   ["Other aartis", "Morning, Bhog, Sandhya and Shayan aartis are held daily; times shift with the season — confirm locally"],
-   ["Bhasma Aarti booking", "Only on the temple's official website; one permission per mobile number every 90 days (since 22 Jun 2026)"],
-   ["Dress for sanctum worship", "Men dhoti, women saree (including the Bhasma Aarti); modest clothing for general darshan"],
-   ["Phones and cameras", "Not allowed inside — use the lockers"],
-   ["Garbhagriha entry", "Has at times been closed, with the ritual shown on screens — policy changes often, confirm locally"]
+   [
+    "Temple hours",
+    "From about 4 am until late night — exact hours are not published on an official source we could verify; confirm locally"
+   ],
+   [
+    "Bhasma Aarti",
+    "Starts about 4:00 am daily (MP Tourism) — prior online booking required; report at the time printed on your pass"
+   ],
+   [
+    "Other aartis",
+    "Morning, Bhog, Sandhya and Shayan aartis are held daily; times shift with the season — confirm locally"
+   ],
+   [
+    "Bhasma Aarti booking",
+    "Only on the temple's official website; one permission per mobile number every 90 days (since 22 Jun 2026)"
+   ],
+   [
+    "Dress for sanctum worship",
+    "Men dhoti, women saree (including the Bhasma Aarti); modest clothing for general darshan"
+   ],
+   [
+    "Phones and cameras",
+    "Not allowed inside — use the lockers"
+   ],
+   [
+    "Garbhagriha entry",
+    "Has at times been closed, with the ritual shown on screens — policy changes often, confirm locally"
+   ]
   ],
   "note": "Bhasma Aarti time, booking advice and dress code from MP Tourism (Govt of MP); the 90-day rule from the temple committee's order reported on 22 Jun 2026 (checked 12 Oct 2026). Darshan systems were changed during 2026 — confirm on the temple's official website before you travel."
  },
  "dates": {
   "h2": "Mahakaleshwar festivals and crowd days",
   "rows": [
-   ["Kartik Purnima", "24 Nov 2026 (per panchang)", "Confirm locally"],
-   ["Mahashivratri 2027", "6 Mar 2027", "Drik Panchang; Shiv Navratri is celebrated over the nine days before"],
-   ["Shravan Mondays · Mahakal Sawari 2027", "Not announced here yet", "Ujjain follows the Purnimanta calendar; the royal procession of Mahakal goes through the city on Shravan–Bhadrapad Mondays"],
-   ["Nag Panchami 2027", "Not checked yet", "Nagchandreshwar shrine opens for one day a year"],
-   ["Simhastha Kumbh, Ujjain", "2028 — dates not announced yet", "Planned by the MP government"]
+   [
+    "Kartik Purnima",
+    "24 Nov 2026 (per panchang)",
+    "Confirm locally"
+   ],
+   [
+    "Mahashivratri 2027",
+    "6 Mar 2027",
+    "Drik Panchang; Shiv Navratri is celebrated over the nine days before"
+   ],
+   [
+    "Shravan Mondays · Mahakal Sawari 2027",
+    "Not announced here yet",
+    "Ujjain follows the Purnimanta calendar; the royal procession of Mahakal goes through the city on Shravan–Bhadrapad Mondays"
+   ],
+   [
+    "Nag Panchami 2027",
+    "Not checked yet",
+    "Nagchandreshwar shrine opens for one day a year"
+   ],
+   [
+    "Simhastha Kumbh, Ujjain",
+    "2028 — dates not announced yet",
+    "Planned by the MP government"
+   ]
   ],
   "note": "The temple is open all year. October to March is the most comfortable season; Shravan Mondays, Mahashivratri and Nag Panchami bring the heaviest crowds."
  },
  "reach": {
   "h2": "How to reach Mahakaleshwar temple",
   "cards": [
-   ["By air", "Devi Ahilyabai Holkar Airport, Indore, is about 55 km away by road."],
-   ["By rail", "Ujjain Junction is about 2 km from the temple."],
-   ["By road", "Ujjain is about 55 km from Indore on the Indore–Ujjain highway; e-rickshaws and autos run to the temple from the station and bus stand."],
-   ["To Omkareshwar", "The Omkareshwar Jyotirlinga on the Narmada is about 140 km away via Indore — most pilgrims pair the two."]
+   [
+    "By air",
+    "Devi Ahilyabai Holkar Airport, Indore, is about 55 km away by road."
+   ],
+   [
+    "By rail",
+    "Ujjain Junction is about 2 km from the temple."
+   ],
+   [
+    "By road",
+    "Ujjain is about 55 km from Indore on the Indore–Ujjain highway; e-rickshaws and autos run to the temple from the station and bus stand."
+   ],
+   [
+    "To Omkareshwar",
+    "The Omkareshwar Jyotirlinga on the Narmada is about 140 km away via Indore — most pilgrims pair the two."
+   ]
   ]
  },
  "tips": {
   "h2": "Before you go",
   "items": [
-   ["Book only on the official site", "Bhasma Aarti and quick-darshan bookings are made only on the temple's official website. Agent sites that rank for \"bhasma aarti booking\" are not the temple — never pay them."],
-   ["Plan the 90-day rule", "Only one Bhasma Aarti permission is allowed per mobile number every 90 days — pick your date carefully and book well ahead."],
-   ["Carry the right clothes", "Pack a dhoti (men) and saree (women) for the Bhasma Aarti and sanctum worship."],
-   ["Leave the phone behind", "Mobiles and cameras are not allowed inside; use the lockers or leave them at your hotel."],
-   ["Elders and early starts", "The Bhasma Aarti means reporting in the small hours, and the Mahakal Lok walkways are long. Ask at the help desk about wheelchair help, and consider an ordinary daytime darshan instead."],
-   ["Don't miss nearby", "Harsiddhi Mata temple (counted as a Shakti Peeth in many traditions) about 0.5 km, Ram Ghat on the Shipra about 1 km, Kal Bhairav and Sandipani Ashram about 5 km each."]
+   [
+    "Book only on the official site",
+    "Bhasma Aarti and quick-darshan bookings are made only on the temple's official website. Agent sites that rank for \"bhasma aarti booking\" are not the temple — never pay them."
+   ],
+   [
+    "Plan the 90-day rule",
+    "Only one Bhasma Aarti permission is allowed per mobile number every 90 days — pick your date carefully and book well ahead."
+   ],
+   [
+    "Carry the right clothes",
+    "Pack a dhoti (men) and saree (women) for the Bhasma Aarti and sanctum worship."
+   ],
+   [
+    "Leave the phone behind",
+    "Mobiles and cameras are not allowed inside; use the lockers or leave them at your hotel."
+   ],
+   [
+    "Elders and early starts",
+    "The Bhasma Aarti means reporting in the small hours, and the Mahakal Lok walkways are long. Ask at the help desk about wheelchair help, and consider an ordinary daytime darshan instead."
+   ],
+   [
+    "Don't miss nearby",
+    "Harsiddhi Mata temple (counted as a Shakti Peeth in many traditions) about 0.5 km, Ram Ghat on the Shipra about 1 km, Kal Bhairav and Sandipani Ashram about 5 km each."
+   ]
   ]
  },
  "itinerary": {
   "h2": "A two-day Ujjain and Omkareshwar yatra",
   "days": [
-   ["1", "Ujjain · Mahakal darshan", "Reach Indore or Ujjain and check in. Darshan at Mahakaleshwar and a walk through Mahakal Lok, then Harsiddhi Mata and the evening aarti at Ram Ghat. Next morning: the Bhasma Aarti if you have a booking, then Kal Bhairav and Sandipani Ashram."],
-   ["2", "Omkareshwar on the Narmada", "Drive about 140 km to Omkareshwar for darshan of the fourth Jyotirlinga and Mamleshwar, then return to Indore for your onward journey."]
+   [
+    "1",
+    "Ujjain · Mahakal darshan",
+    "Reach Indore or Ujjain and check in. Darshan at Mahakaleshwar and a walk through Mahakal Lok, then Harsiddhi Mata and the evening aarti at Ram Ghat. Next morning: the Bhasma Aarti if you have a booking, then Kal Bhairav and Sandipani Ashram."
+   ],
+   [
+    "2",
+    "Omkareshwar on the Narmada",
+    "Drive about 140 km to Omkareshwar for darshan of the fourth Jyotirlinga and Mamleshwar, then return to Indore for your onward journey."
+   ]
   ]
  },
- "packages": ["jyotirlinga"],
+ "packages": [
+  "jyotirlinga"
+ ],
  "quote_h2": "Plan your Mahakal darshan with Suzu",
  "quote_text": "We plan Ujjain–Omkareshwar trips and the full 12 Jyotirlinga journey — flights or trains, cars from Indore, stays near the temple and Bhasma Aarti-friendly timings, with elders in mind.",
  "wa": "Namaste Suzu Travels, I want to plan a yatra to Mahakaleshwar. From city: ___ , dates: ___ , people: ___",
- "links": ["12-jyotirlinga", "kashi-vishwanath", "somnath"],
+ "links": [
+  "12-jyotirlinga",
+  "kashi-vishwanath",
+  "somnath"
+ ],
  "place": {
   "type": "HinduTemple",
   "name": "Shri Mahakaleshwar Temple",
@@ -126,28 +247,129 @@
   "state": "Madhya Pradesh",
   "lat": 23.1828,
   "lon": 75.7683,
-  "sameAs": ["https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"]
+  "sameAs": [
+   "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+  ]
  },
  "faqs": [
-  ["What time is the Mahakal Bhasma Aarti?", "It begins at about 4 am every day, according to MP Tourism. Devotees are asked to arrive an hour or more early — follow the reporting time printed on your pass."],
-  ["How do I book the Bhasma Aarti at Mahakaleshwar?", "Only online, on the temple's official website — MP Tourism advises about a month ahead. Since 22 June 2026 the temple allows one Bhasma Aarti permission per mobile number every 90 days."],
-  ["What is the dress code for the Bhasma Aarti?", "For worship in the sanctum, including the Bhasma Aarti, men wear a dhoti and women a saree. Modest clothing is expected for general darshan."],
-  ["Is the Bhasma Aarti ash from cremation pyres?", "Not today. MP Tourism says the ash used in the Bhasma Aarti is now prepared from cow dung, although tradition speaks of ash from a cremation pyre."],
-  ["What are Mahakaleshwar darshan timings?", "The temple opens for the Bhasma Aarti at about 4 am and stays open until late night. Exact hours are not published on an official source we could verify, so confirm locally."],
-  ["Why does Mahakaleshwar face south?", "South is the direction of death. As Mahakala, lord of time and death, Shiva here faces south — the only south-facing temple among the 12 Jyotirlingas."],
-  ["Are mobile phones allowed inside Mahakaleshwar temple?", "No. Mobiles and cameras are not allowed inside; lockers are available."],
-  ["How far is Omkareshwar from Ujjain?", "About 140 km by road via Indore, according to the Shri Omkareshwar Mandir Trust. Many pilgrims visit both Jyotirlingas in two days."]
+  [
+   "What time is the Mahakal Bhasma Aarti?",
+   "It begins at about 4 am every day, according to MP Tourism. Devotees are asked to arrive an hour or more early — follow the reporting time printed on your pass."
+  ],
+  [
+   "How do I book the Bhasma Aarti at Mahakaleshwar?",
+   "Only online, on the temple's official website — MP Tourism advises about a month ahead. Since 22 June 2026 the temple allows one Bhasma Aarti permission per mobile number every 90 days."
+  ],
+  [
+   "What is the dress code for the Bhasma Aarti?",
+   "For worship in the sanctum, including the Bhasma Aarti, men wear a dhoti and women a saree. Modest clothing is expected for general darshan."
+  ],
+  [
+   "Is the Bhasma Aarti ash from cremation pyres?",
+   "Not today. MP Tourism says the ash used in the Bhasma Aarti is now prepared from cow dung, although tradition speaks of ash from a cremation pyre."
+  ],
+  [
+   "What are Mahakaleshwar darshan timings?",
+   "The temple opens for the Bhasma Aarti at about 4 am and stays open until late night. Exact hours are not published on an official source we could verify, so confirm locally."
+  ],
+  [
+   "Why does Mahakaleshwar face south?",
+   "South is the direction of death. As Mahakala, lord of time and death, Shiva here faces south — the only south-facing temple among the 12 Jyotirlingas."
+  ],
+  [
+   "Are mobile phones allowed inside Mahakaleshwar temple?",
+   "No. Mobiles and cameras are not allowed inside; lockers are available."
+  ],
+  [
+   "How far is Omkareshwar from Ujjain?",
+   "About 140 km by road via Indore, according to the Shri Omkareshwar Mandir Trust. Many pilgrims visit both Jyotirlingas in two days."
+  ]
  ],
  "sources": [
-  ["MP Tourism (Govt of MP) — Bhasm Aarti at Mahakaleshwar", "https://www.mptourism.com/bhasm-aarti-at-mahakaleshwar-and-ujjain.html"],
-  ["Shri Mahakaleshwar Temple — official site", "https://shrimahakaleshwar.mp.gov.in"],
-  ["PM India — PM in Ujjain, 11 Oct 2022 (Shri Mahakal Lok)", "https://pmindia.gov.in/en/eventgallery/pm-in-ujjain-madhya-pradesh-october-11-2022"],
-  ["Navbharat Live — Bhasma Aarti 90-day rule (22 Jun 2026)", "https://navbharatlive.com/madhya-pradesh/ujjain/mahakal-temple-implements-new-booking-rule-for-bhasma-aarti-devotees-1815340.html"],
-  ["Shri Omkareshwar Mandir Trust — FAQ", "https://www.shriomkareshwar.org/FAQ.aspx"],
-  ["Shiva Mahapurana, Koti Rudra Samhita (Sanskrit)", "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"],
-  ["Wikipedia — Mahakaleshwar Jyotirlinga", "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"],
-  ["Drik Panchang — Mahashivratri 2027", "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-date-time.html?year=2027"]
+  [
+   "MP Tourism (Govt of MP) — Bhasm Aarti at Mahakaleshwar",
+   "https://www.mptourism.com/bhasm-aarti-at-mahakaleshwar-and-ujjain.html"
+  ],
+  [
+   "Shri Mahakaleshwar Temple — official site",
+   "https://shrimahakaleshwar.mp.gov.in"
+  ],
+  [
+   "PM India — PM in Ujjain, 11 Oct 2022 (Shri Mahakal Lok)",
+   "https://pmindia.gov.in/en/eventgallery/pm-in-ujjain-madhya-pradesh-october-11-2022"
+  ],
+  [
+   "Navbharat Live — Bhasma Aarti 90-day rule (22 Jun 2026)",
+   "https://navbharatlive.com/madhya-pradesh/ujjain/mahakal-temple-implements-new-booking-rule-for-bhasma-aarti-devotees-1815340.html"
+  ],
+  [
+   "Shri Omkareshwar Mandir Trust — FAQ",
+   "https://www.shriomkareshwar.org/FAQ.aspx"
+  ],
+  [
+   "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit)",
+   "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+  ],
+  [
+   "Wikipedia — Mahakaleshwar Jyotirlinga",
+   "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+  ],
+  [
+   "Drik Panchang — Mahashivratri 2027",
+   "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-date-time.html?year=2027"
+  ]
  ],
  "verified": "15 Oct 2026",
- "modified": "2026-10-15"
+ "modified": "2026-10-15",
+ "photos": {
+  "id": "our-pilgrims",
+  "cls": "alt",
+  "kicker": "From our pilgrim tours",
+  "h2": "Our guests in Ujjain",
+  "lead": "Real photos from Suzu Travels pilgrimage trips to Ujjain — taken by our guests and team, not stock images.",
+  "items": [
+   [
+    "https://suzutravels.com/wp-content/uploads/2026/10/ujjain-mahakal-family-pilgrimage.webp",
+    "Family on a Mahakal pilgrimage tour in Ujjain",
+    1600,
+    747,
+    "A family on our Mahakal pilgrimage tour"
+   ],
+   [
+    "https://suzutravels.com/wp-content/uploads/2026/10/harsiddhi-temple-deepstambh-ujjain.webp",
+    "Deepstambh lamp tower at Harsiddhi temple, Ujjain",
+    747,
+    1600,
+    "Harsiddhi temple deepstambh"
+   ],
+   [
+    "https://suzutravels.com/wp-content/uploads/2026/10/ram-ghat-shipra-river-ujjain.webp",
+    "Ram Ghat on the Shipra river in Ujjain",
+    1600,
+    747,
+    "Ram Ghat on the Shipra"
+   ],
+   [
+    "https://suzutravels.com/wp-content/uploads/2026/10/harsiddhi-deepmala-lit-night.webp",
+    "Lit deepmala lamp tower at night in Ujjain",
+    747,
+    1600,
+    "Harsiddhi deepmala lit at night"
+   ],
+   [
+    "https://suzutravels.com/wp-content/uploads/2026/10/ujjain-temple-shikhara-pilgrims.webp",
+    "Pilgrims walking to a temple shikhara in Ujjain",
+    747,
+    1600,
+    "Temple shikhara with pilgrims"
+   ],
+   [
+    "https://suzutravels.com/wp-content/uploads/2026/10/sandipani-ashram-ujjain.webp",
+    "Pilgrim at Sandipani Ashram in Ujjain",
+    747,
+    1600,
+    "Sandipani Ashram, Ujjain"
+   ]
+  ]
+ }
 }

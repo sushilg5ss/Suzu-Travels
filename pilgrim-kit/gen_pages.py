@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "16 Oct 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "19 Oct 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -404,7 +404,7 @@ def hub():
 <p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Pilgrimage Tours in India: Tirth Yatra Guide & Packages", "url": "https://suzutravels.com" + HUB,
-         "dateModified": "2026-10-16", "inLanguage": "en-IN",
+         "dateModified": "2026-10-19", "inLanguage": "en-IN",
          "about": [{"@type": "HinduTemple", "name": short_name(j) + " Jyotirlinga", "address": {"@type": "PostalAddress", "addressLocality": j["town"], "addressRegion": j["state"], "addressCountry": "IN"}} for j in J],
          "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961"}},
         {"@type": "ItemList", "name": "The 12 Jyotirlingas of India", "numberOfItems": 12,
@@ -575,6 +575,9 @@ SRC_JL = _src_jl()
 
 
 # ------------------------------------------------------------------------------------------------ content pages (agents)
+PHOTO_CSS = ".szp-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.szp-ph{margin:0;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 18px rgba(42,23,18,.08)}.szp-ph img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin:0}.szp-ph figcaption{padding:9px 12px;font-size:14px;line-height:1.4;font-weight:600;color:var(--ink)}@media(max-width:700px){.szp-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.szp-ph figcaption{font-size:12.5px;padding:7px 9px}}"
+
+
 def content_page(slug):
     """src/pages/<slug>.json -> page. See README "Page file schema"."""
     c = json.loads((KIT / "src" / "pages" / f"{slug}.json").read_text(encoding="utf-8"))
@@ -607,6 +610,10 @@ def content_page(slug):
         d = c["dates"]
         rows = "".join(f"<tr><td><b>{e(a)}</b></td><td>{b}</td><td class='szp-note'>{x}</td></tr>" for a, b, x in d["rows"])
         add("dates", "Dates", f'<span class="k">Season &amp; dates</span><h2>{e(d["h2"])}</h2><div class="szp-scroll"><table class="szp-tbl"><thead><tr><th>What</th><th>Date</th><th>Status / source</th></tr></thead><tbody>{rows}</tbody></table></div>' + (f'<div class="szp-call"><p>{d["note"]}</p></div>' if d.get("note") else ""))
+    if c.get("photos"):  # own photos (guests/team), licence/consent in hf/photos/CREDITS.md; no nav item
+        ph = c["photos"]
+        figs = "".join(f'<figure class="szp-ph"><img src="{src}" alt="{e(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async" /><figcaption>{e(cap)}</figcaption></figure>' for src, alt, w, h, cap in ph["items"])
+        secs.append(f'<section class="szp-sec{(" " + ph["cls"]) if ph.get("cls") else ""}" id="{ph.get("id", "our-pilgrims")}"><style>{PHOTO_CSS}</style><span class="k">{e(ph["kicker"])}</span><h2>{e(ph["h2"])}</h2><p>{ph["lead"]}</p><div class="szp-photos">{figs}</div></section>')
     if c.get("route"):
         r = c["route"]
         lis = "".join(f'<li><div class="d">{e(dd)}</div><div class="t">{e(t)}' + (f'<span class="dv">{e(dv)}</span>' if dv else "") + f'</div><p>{p}</p></li>' for dd, t, dv, p in r["stops"])
