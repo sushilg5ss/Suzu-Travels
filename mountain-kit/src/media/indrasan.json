@@ -1,0 +1,150 @@
+{
+ "hero": {
+  "kicker": "INDRASAN \u00b7 PIR PANJAL",
+  "scenes": [
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.08,
+     "x": 30
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 920,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "y": 250
+    },
+    "to": {
+     "y": 1000
+    }
+   }
+  ],
+  "steps": [
+   [
+    2050,
+    "MANALI"
+   ],
+   [
+    3800,
+    "SERI"
+   ],
+   [
+    4100,
+    "BASE CAMP"
+   ],
+   [
+    5500,
+    "HIGH CAMP"
+   ],
+   [
+    6220,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Indrasan, camp by camp",
+  "sub": "Manali to the 6,220 m summit \u00b7 camp heights are approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Road-head town"
+   },
+   {
+    "name": "Chikka",
+    "m": 3300,
+    "day": "Approach camp"
+   },
+   {
+    "name": "Seri",
+    "m": 3800,
+    "day": "Meadow"
+   },
+   {
+    "name": "Base camp",
+    "m": 4100,
+    "day": "Below the col"
+   },
+   {
+    "name": "Advance base",
+    "m": 4500,
+    "day": "Snow & ice"
+   },
+   {
+    "name": "High camp",
+    "m": 5500,
+    "day": "Plateau"
+   },
+   {
+    "name": "Summit",
+    "m": 6220,
+    "day": "West ridge"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "PIR PANJAL LADDER",
+  "title": "Indrasan and its Manali neighbours, side by side",
+  "peaks": [
+   "friendship-peak",
+   "hanuman-tibba",
+   "deo-tibba",
+   "indrasan"
+  ],
+  "subs": {
+   "friendship-peak": "Above Solang",
+   "hanuman-tibba": "Above Solang",
+   "deo-tibba": "First climbed 1952",
+   "indrasan": "First climbed 1962"
+  },
+  "end": "Indrasan: 6,220 m, the hardest in the Pir Panjal"
+ }
+}
