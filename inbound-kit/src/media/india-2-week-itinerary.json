@@ -1,0 +1,119 @@
+{
+ "_note": "Media for /india-tours/india-2-week-itinerary/ (itinerary). Photos: existing licensed set in hf/photos/CREDITS.md, each captioned only with its allowed place. Route stops (lat/lon + days) from research/pages/india-2-week-itinerary.md 'Media notes'. No cost ladder this run (14-day rate not in prices.json).",
+ "hero": {
+  "kicker": "NORTH INDIA · 14 DAYS",
+  "scenes": [
+   {
+    "img": "px-33777272.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 1080
+    }
+   },
+   {
+    "img": "px-29295304.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 620
+    },
+    "to": {
+     "y": 60
+    }
+   },
+   {
+    "img": "px-30550228.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 50,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-28206557.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 560
+    }
+   },
+   {
+    "img": "px-36966954.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 800
+    }
+   }
+  ],
+  "steps": [
+   "TAJ AT DAWN",
+   "PINK CITY JAIPUR",
+   "SHIMLA HILLS",
+   "MANALI",
+   "DHARAMSHALA"
+  ]
+ },
+ "route": {
+  "title": "NORTH INDIA · 14 DAYS",
+  "sub": "Delhi → Agra → Jaipur → Shimla → Manali → Dharamshala",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "arrive",
+    "day": "Day 1–2",
+    "lat": 28.61,
+    "lon": 77.21
+   },
+   {
+    "name": "Agra",
+    "sub": "Taj Mahal",
+    "day": "Day 3–4",
+    "lat": 27.18,
+    "lon": 78.04
+   },
+   {
+    "name": "Jaipur",
+    "sub": "Pink City",
+    "day": "Day 4–6",
+    "lat": 26.91,
+    "lon": 75.79
+   },
+   {
+    "name": "Shimla",
+    "sub": "toy train from Kalka",
+    "day": "Day 7–8",
+    "lat": 31.1,
+    "lon": 77.17
+   },
+   {
+    "name": "Manali",
+    "sub": "Kullu valley",
+    "day": "Day 9–11",
+    "lat": 32.24,
+    "lon": 77.19
+   },
+   {
+    "name": "Dharamshala",
+    "sub": "McLeod Ganj · fly out from Kangra",
+    "day": "Day 12–14",
+    "lat": 32.22,
+    "lon": 76.32
+   }
+  ]
+ }
+}
