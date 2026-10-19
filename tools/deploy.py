@@ -74,8 +74,13 @@ def allowed(target):
     return False
 
 
+API_UA = "curl/8.5.0"  # Hostinger's Cloudflare blocks Python-urllib (error 1010)
+
+
 def http(method, url, data=None, headers=None, timeout=60):
-    req = urllib.request.Request(url, data=data, method=method, headers=headers or {})
+    headers = dict(headers or {})
+    headers.setdefault("User-Agent", API_UA)
+    req = urllib.request.Request(url, data=data, method=method, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return r.status, dict(r.headers), r.read()
