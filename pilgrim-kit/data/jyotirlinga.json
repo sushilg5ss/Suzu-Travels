@@ -1728,7 +1728,7 @@
       "as_of": "2026-10-08",
       "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga (no official temple website found)",
       "temple_hours": null,
-      "temple_hours_note": "Incredible India says only 'dawn to dusk'. Thomas Cook's blog cites 6 AM-9 PM with puja 6:30 AM-5:30 PM and 8-9 PM - UNVERIFIED (travel company).",
+      "temple_hours_note": "Incredible India says only 'dawn to dusk'. Thomas Cook's blog cites 6 AM-9 PM with puja 6:30 AM-5:30 PM and 8-9 PM - UNVERIFIED (travel company). Re-checked 2026-10-19: still no official site; Gujarat Tourism says 'Dawn-dusk'; private guide devbhumidwarka.in (17 Aug 2026) gives 5:00-12:30 and 16:00-21:00 but also a conflicting table - UNVERIFIED, confirm locally.",
       "aartis": null,
       "special": null,
       "online_booking": null,
@@ -1760,7 +1760,17 @@
         }
       ],
       "road": "About 16-18 km from Dwarka town by road on the way to Okha/Bet Dwarka; usually combined with Dwarkadhish and Bet Dwarka.",
-      "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga ; distances from https://www.thomascook.in/blog/?p=161427 (unverified)"
+      "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/nageshwar-jyotirlinga ; distances from https://www.thomascook.in/blog/?p=161427 (unverified) ; https://gujarattourism.com/saurashtra/devbhoomi-dwarka/nageshwar-jyotirlinga.html (2026-10-19) ; https://devbhumidwarka.nic.in/tourist-place/nageshwar-temple/ (16 km by road, 2026-10-19)",
+      "air": [
+        {
+          "name": "Porbandar Airport",
+          "km": "107 (from Dwarka, Gujarat Tourism)"
+        },
+        {
+          "name": "Jamnagar Airport",
+          "km": "126 (from Dwarka, Gujarat Tourism)"
+        }
+      ]
     },
     "nearby": [
       {
@@ -1817,6 +1827,14 @@
       {
         "title": "Shiva Mahapurana, Koti Rudra Samhita (Sanskrit text, sanskritdocuments.org)",
         "url": "https://sanskritdocuments.org/doc_purana/shivapurANam4koTirudrasaMhitA.html"
+      },
+      {
+        "title": "Gujarat Tourism - Nageshwar Jyotirlinga (official)",
+        "url": "https://gujarattourism.com/saurashtra/devbhoomi-dwarka/nageshwar-jyotirlinga.html"
+      },
+      {
+        "title": "Devbhumi Dwarka district - Nageshwar Temple (official, NIC)",
+        "url": "https://devbhumidwarka.nic.in/tourist-place/nageshwar-temple/"
       }
     ],
     "disputes": {
@@ -1861,7 +1879,12 @@
         "q": "Which is the nearest airport to Nageshwar?",
         "a": "Jamnagar (roughly 130 km); Porbandar (about 107 km) is another option. Dwarka railway station is about 18 km away."
       }
-    ]
+    ],
+    "statue": {
+      "as_of": "2026-10-19",
+      "fact": "Seated Shiva statue, 25 m tall (district site); about 80 ft per Incredible India.",
+      "source": "https://devbhumidwarka.nic.in/tourist-place/nageshwar-temple/"
+    }
   },
   {
     "order": 11,
@@ -2057,6 +2080,11 @@
         "date": "Custom",
         "fact": "Men must be bare-chested to enter the garbhagriha, and devotees may touch the linga.",
         "source": "https://www.incredibleindia.gov.in/en/maharashtra/chhatrapati-sambhaji-nagar/grishneshwar-temple"
+      },
+      {
+        "date": "15 February 2026",
+        "fact": "For Mahashivratri 2026 the Shri Grishneshwar Devasthan Trust and district administration closed sanctum darshan for the first time (darshan from outside) and banned phones and cameras in the premises.",
+        "source": "https://www.etvbharat.com/mr/state/preparations-for-mahashivratri-in-ghrishneshwar-jyotirlinga-chhatrapati-sambhajinagar-temple-administration-took-big-decision-maharashtra-news-mhs26020401472"
       }
     ],
     "darshan": {
@@ -2175,6 +2203,15 @@
         "q": "How far is Grishneshwar from Chhatrapati Sambhajinagar (Aurangabad)?",
         "a": "About 30 km by road; the airport is roughly 30-37 km away."
       }
-    ]
+    ],
+    "status_note": {
+      "as_of": "2026-10-19",
+      "note": "Development works around the temple since Sep 2026 (underpass under the Kannad-Khuldabad road from 23 Sep 2026, covered ~650 m darshan queue, parking, Bhakta Niwas). A six-month closure 'from 1 Nov 2026' was reported (Pudhari; ETV Bharat 3 Oct 2026), but District Collector Vinay Gowda G.C. said the temple will not close for six months and any closure will be minimal (Sakal 2 Oct 2026). No final closure schedule published. Heavy vehicles restricted near the temple; cars/autos stopped at barricades on some days.",
+      "sources": [
+        "https://www.esakal.com/marathwada/aurangabad/grishneshwar-temple-development-verul-traffic-issue-six-month-closure-vss03",
+        "https://www.etvbharat.com/en/state/grishneshwar-temple-complex-in-ellora-to-be-developed-as-a-cluster-premises-will-be-shut-for-six-months-enn26100302803",
+        "https://www.esakal.com/marathwada/aurangabad/grishneshwar-temple-development-75-metre-underground-tunnel-30-minute-darshan-asi01"
+      ]
+    }
   }
 ]

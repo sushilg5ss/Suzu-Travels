@@ -31,18 +31,18 @@
 | 21 | media | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
 | 22 | media | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
 | 23 | media | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
-| 24 | todo | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
-| 25 | todo | `grishneshwar` | 12-JL | temple | grishneshwar temple (49,500) | nagara | Ellora next door |
+| 24 | researched | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500; nageshwar temple 33,100) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
+| 25 | researched | `grishneshwar` | 12-JL | temple | grishneshwar jyotirlinga (90,500; grishneshwar temple 49,500) | hills | Ellora next door. Works since Sep 2026 — closure status in fact pack |
 | 26 | todo | `mallikarjuna` | 12-JL | temple | mallikarjuna jyotirlinga (74,000) | gopuram | Also Bhramaramba Shakti Peeth |
-| 27 | todo | `mansa-devi` | hub | temple | mansa devi temple (22,200) | devi | Panchkula — disambiguate from Haridwar Mansa Devi |
-| 28 | todo | `baglamukhi` | hub | temple | baglamukhi mandir himachal (6,600) | devi | Bankhandi, Kangra |
-| 29 | todo | `hidimba-devi` | hub | temple | hidimba devi temple (165,000) | pagoda | Manali; pagoda temple (pagoda arch since 8 Oct, honest caption) |
-| 30 | todo | `baijnath` | hub | temple | baijnath temple (22,200) | nagara | Kangra, 13th c. |
-| 31 | todo | `kainchi-dham` | hub | temple | kainchi dham (201,000) | devi | Post 12444 owns registration — link it |
-| 32 | todo | `manimahesh-yatra` | hub | yatra | manimahesh yatra (2,900) | himalaya | Live by Jun 2027; e-pass rules |
-| 33 | todo | `panch-kedar` | hub | circuit | panch kedar (40,500) | himalaya + route-map | Tungnath highest Shiva temple |
-| 34 | todo | `jakhu-temple` | hub | temple | jakhu temple shimla (22,200) | devi | |
-| 35 | todo | `baba-balak-nath` | hub | temple | baba balak nath temple (12,100) | devi | Deotsidh, Hamirpur — near Suzu office |
+| 27 | todo | `kainchi-dham` | hub | temple | kainchi dham (301,000; Jun peak 1,000,000) | devi | Post 12444 owns registration — link it |
+| 28 | todo | `hidimba-devi` | hub | temple | hidimba devi temple (165,000; peak 368,000) | pagoda | Manali; pagoda temple (pagoda arch since 8 Oct, honest caption) |
+| 29 | todo | `mansa-devi` | hub | temple | mansa devi temple (22,200) | devi | Panchkula — disambiguate from Haridwar Mansa Devi |
+| 30 | todo | `baba-balak-nath` | hub | temple | baba balak nath temple (12,100; baba balak nath 33,100) | devi | Deotsidh, Hamirpur — near Suzu office |
+| 31 | todo | `baglamukhi` | hub | temple | baglamukhi mandir himachal (6,600; baglamukhi temple kangra 12,100) | devi | Bankhandi, Kangra |
+| 32 | todo | `baijnath` | hub | temple | baijnath temple (22,200) | nagara | Kangra, 13th c. |
+| 33 | todo | `jakhu-temple` | hub | temple | jakhu temple shimla (27,100) | devi | |
+| 34 | todo | `manimahesh-yatra` | hub | yatra | manimahesh yatra (3,600) | himalaya | Live by Jun 2027; e-pass rules |
+| 35 | todo | `panch-kedar` | hub | circuit | panch kedar (40,500) | himalaya + route-map | Tungnath highest Shiva temple |
 | 36 | todo | `bhimakali` | hub | temple | bhimakali temple sarahan (5,400) | pagoda | |
 | 37 | todo | `ayodhya-ram-mandir` | hub | temple | ayodhya tour package (2,900) | nagara | Commercial terms only for single-city Ayodhya; combo owned by 10584 |
 | 38 | todo | `adi-kailash-yatra` | hub | yatra | adi kailash yatra (2,900) | himalaya | ILP; status check |
@@ -50,3 +50,4 @@
 | 40 | todo | `golden-temple-amritsar` | hub | temple | golden temple amritsar (74,000) | gurudwara | Respectful Sikh context; Amritsar archive link |
 | 41 | todo | `himachal-temples` | hub | guide | temples in himachal pradesh (5,400) | devi | Becomes the parent hub of all HP temple pages (links only) |
 | 42 | todo | `shrikhand-mahadev-yatra` | hub | yatra | shrikhand mahadev yatra (880) | himalaya | 2026 suspended — status page |
+| 43 | todo | `dwarkadhish` | hub | temple | dwarkadhish temple (368,000; bet dwarka 246,000; bet dwarka temple 60,500) | nagara | Added 19 Oct 2026 (Research): Dwarka circuit — Dwarkadhish, Bet Dwarka via Sudarshan Setu, Rukmini; links Nageshwar + Somnath. Check keyword owners before building |
