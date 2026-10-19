@@ -10,8 +10,7 @@
    "url": "https://suzutravels.com/deploy-test.txt"
   }
  ],
- "attempts": 1,
- "finished_at": "2026-10-19T20:28:07Z",
- "status": "waiting",
- "last_error": "could not fetch live https://suzutravels.com/deploy-test.txt (HTTP 0)"
+ "attempts": 2,
+ "finished_at": "2026-10-19T20:35:06Z",
+ "status": "deployed"
 }
