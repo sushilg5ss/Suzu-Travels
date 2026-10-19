@@ -1,0 +1,17 @@
+{
+ "id": "2026-10-20-pipeline-test",
+ "agent": "Setup test",
+ "summary": "first real test: new harmless file deploy-test.txt",
+ "files": [
+  {
+   "target": "deploy-test.txt",
+   "source": "deploy-test.txt",
+   "sha256": "24cbd59605c2441b2433c3421ac52947056e89b904b776b7e7b412767ee405af",
+   "base_sha256": "absent",
+   "backup": null,
+   "url": "https://suzutravels.com/deploy-test.txt",
+   "bytes": 47
+  }
+ ],
+ "clear_cache": false
+}

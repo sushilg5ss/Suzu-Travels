@@ -101,7 +101,7 @@ def api(method, path, body=None):
     return json.loads(raw or b"{}")
 
 
-def fetch_live(url):
+def fetch_live(url, allow_absent=False):
     sep = "&" if "?" in url else "?"
     u = f"{url}{sep}nc={int(time.time())}{random.randint(1000, 9999)}"
     last = None
@@ -110,6 +110,8 @@ def fetch_live(url):
                                               "Accept": "*/*"}, timeout=60)
         if st == 200:
             return body
+        if st == 404 and allow_absent:
+            return None
         last = st
         time.sleep(5 * (i + 1))
     raise Temporary(f"could not fetch live {url} (HTTP {last})")
@@ -171,8 +173,9 @@ def deploy(mid, mdir, man):
         src = (mdir / f["source"]).read_bytes()
         if sha(src) != f["sha256"]:
             raise Fatal(f"{f['source']} SHA {sha(src)[:12]} != manifest {f['sha256'][:12]}")
-        live = fetch_live(f["url"])
-        lsha = sha(live)
+        absent_ok = f.get("base_sha256") == "absent"
+        live = fetch_live(f["url"], allow_absent=absent_ok)
+        lsha = sha(live) if live is not None else "absent"
         if lsha == f["sha256"]:
             log(f"  {t}: already live")
             plan.append((f, src, live, "same"))
@@ -192,11 +195,12 @@ def deploy(mid, mdir, man):
         for f, src, live, mode in plan:
             if mode == "same":
                 continue
-            if f.get("backup"):
+            if f.get("backup") and live is not None:
                 upload(f["backup"], live)
             upload(f["target"], src)
             done.append((f, live))
-        clear_cache()
+        if man.get("clear_cache", True):
+            clear_cache()
         bad = [f["target"] for f, _ in done if not wait_live(f["url"], f["sha256"])]
         if bad:
             raise Fatal(f"live SHA did not match after upload: {bad}")
@@ -205,6 +209,8 @@ def deploy(mid, mdir, man):
         if done:
             log(f"  ROLLBACK because: {e}")
             for f, live in done:
+                if live is None:
+                    continue
                 try:
                     upload(f["target"], live)
                 except Exception as e2:
