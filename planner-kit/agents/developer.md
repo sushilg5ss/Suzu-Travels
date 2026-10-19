@@ -25,22 +25,23 @@ Read `planner-kit/README.md` fully first (spec, pricing engine, business rules),
 ## Homepage engine data sync
 Whenever `data/places.py` or `data/templates.json` changes, the homepage card must be re-synced: fetch the LIVE homepage bytes, `python3 homepage/sync_engine.py live.html out.html`, `python3 homepage/parity.py live.html out.html` (PARITY PASS), `node tools/test_home.js`, then deploy with the homepage protocol below (backup `index-nz-previous.html`).
 
-## Deploy (Hostinger File Browser API through Sushil's Chrome)
-- Load the Claude-in-Chrome tools with ToolSearch in ONE call (tabs_context_mcp, tabs_create_mcp, navigate, javascript_tool, find, file_upload, tabs_close_mcp). If absent or Chrome does not answer: save the release as Project doc `claude/trip-planner/releases/YYYY-MM-DD/` (index.html + DEPLOY.md) and, if device tools exist, to `C:\Users\Sushil\OneDrive\Desktop\Claude-Work\Suzu-Travels\Trip-Planner\releases\YYYY-MM-DD\`; report "Needs Sushil: Chrome closed, release ready". Never retry in a loop.
-- Open `https://hpanel.hostinger.com/websites/suzutravels.com/files/file-manager`, click "Access files of suzutravels.com" → File Browser at `srv1000-files.hstgr.io/<id>/`. In that tab use `javascript_tool`; header `X-Auth: localStorage.getItem('jwt')`.
-  - read: `GET /<id>/api/raw/public_html/plan-your-trip/index.html?inline=true`
-  - write: `POST /<id>/api/resources/public_html/plan-your-trip/index.html?override=true` (body = bytes). First deploy: the folder is created by `POST /<id>/api/resources/public_html/plan-your-trip/` (trailing slash).
-  - Move bytes in with a hidden `<input type=file>` + `file_upload` (file must be inside the session working directory; < 10 MB per call); read it in JS and POST; then re-read and compare SHA-256.
-- Before overwriting: copy the current live bytes to `public_html/plan-your-trip/index-previous.html` (ONE rolling backup; never create dated backups, never delete server files).
-- After writing: `curl` the live URL twice (`?nc=` and plain) — 200, SHA matches, then the live headless test. Anything wrong → write `index-previous.html` back immediately and report the rollback.
-- Never type passwords. hPanel login prompt → stop, report "Needs Sushil: hPanel login". Close the tabs you opened.
+## Deploy (cloud — no laptop, no Chrome; since 20 Oct 2026)
+Deploy through the `deploy-static` branch of sushilg5ss/Suzu-Travels (GitHub Actions + Hostinger API). Never use Claude-in-Chrome or hPanel for deploys any more; never type passwords.
+- `git clone --depth 1 --single-branch -b deploy-static https://github.com/sushilg5ss/Suzu-Travels ~/ds && cd ~/ds && git config user.name "Suzu Trip Planner Agent" && git config user.email info@suzutravels.com`. Read `~/ds/README.md` once.
+- Backlog first: check `done/` on that branch. If a Project release `claude/trip-planner/releases/<date>/DEPLOY.md` says NOT deployed (Chrome) and live still equals its base SHA, queue that release first (rebuild from its git commit if needed) — or fold its changes into today's build.
+- Base SHA = SHA-256 of the live bytes you built on (fetch `https://suzutravels.com/plan-your-trip/?nc=<ts>` and `https://suzutravels.com/plan-your-trip/roads-geo.json?nc=<ts>`).
+- Queue (index.html and roads-geo.json together when both changed; one rolling backup, never dated backups):
+  `python3 tools/queue_release.py --id YYYY-MM-DD-planner --agent "Trip Planner" --summary "<vX.Y one line>" --file plan-your-trip/index.html=<dist index.html> --url plan-your-trip/index.html=https://suzutravels.com/plan-your-trip/ --base plan-your-trip/index.html=<live sha> --backup plan-your-trip/index.html=plan-your-trip/index-previous.html [--file plan-your-trip/roads-geo.json=<dist json> --url plan-your-trip/roads-geo.json=https://suzutravels.com/plan-your-trip/roads-geo.json --base plan-your-trip/roads-geo.json=<live sha>] --push --wait 900`
+- Exit 0 = live → run the live headless test. Broken → roll back by queuing `index-previous.html`'s bytes (fetch `https://suzutravels.com/plan-your-trip/index-previous.html?nc=<ts>`) as a new release for `plan-your-trip/index.html`, then report.
+- Exit 2 = deployer refused (live changed) or rolled back → read `done/<id>.json`, log FIX NEEDED.
+- Exit 3 = queued, not live yet (e.g. HOSTINGER_API_TOKEN secret not set) → it goes live automatically on the hourly retry; still save the release as Project doc `claude/trip-planner/releases/YYYY-MM-DD/` (index.html + DEPLOY.md) and report "Queued — goes live automatically". The next run checks `done/<id>.json` first and builds on the LIVE file.
 
 ## Lanes (hard)
 - Yours: `public_html/plan-your-trip/` (and later its data files), this kit, Project docs under `claude/trip-planner/`.
 - **Homepage (`public_html/index.html`) is the Homepage Enhancement Agent's file.** Since 15 Oct 2026 the hero booking engine is LIVE and yours: build homepage changes with `homepage/hero_engine.py` logic as reference but edit the LIVE file in place (never re-run the swap — it refuses when `tp-engine` exists). You may touch only these blocks: `<section id="tp-engine">…</section>`, `<style id="tp-engine-css">`, `<script id="tp-engine-js">`, `<script id="tpe-data">`, the `.tpx-bg` / `.tpx-snow` / `.tpx-cap` elements inside `#nz-hero` and the slide-1 preloads inside `<!--nz-perf-->`. When you do the swap:
   - Keep `#nz-hero`, its single H1 text, its 3 links (`/himachal-tour-packages/`, `#hero-search`, `/destinations/`) and every other link/heading/JSON-LD on the page (run the homepage `parity.py` from Project doc `claude/himachal-landing/tools/parity.py` → must print PARITY PASS).
   - Do not delete the film files on the server; just stop loading them. Keep `nz-sa-loader` (Suzu Assistant) and `nz-ap-loader` (Book a Call) untouched; keep the "Plan Your Trip" popup `#hero-search`.
-  - Same deploy + rollback protocol, but the homepage rolling backup is `public_html/index-nz-previous.html` (shared with the homepage agent — write it with the live bytes right before your write). Build on the LIVE homepage bytes only, re-check the SHA right before writing (another agent may have deployed).
+  - Same cloud deploy + rollback protocol with `--file index.html=<out.html> --url index.html=https://suzutravels.com/ --base index.html=<live homepage sha> --backup index.html=index-nz-previous.html` (backup shared with the homepage agent; the deployer writes it). Build on the LIVE homepage bytes only — the deployer refuses if another agent deployed in between; then rebuild on the new live file.
   - Post a line on the hand-off board (memory `/projects/01a0e32e-f6de-72e0-8d6a-144364e86cfd/areas/suzu-agent-handoffs.md`, if you can read/write it) and in LOG so the homepage agent knows.
 - WordPress (Royal MCP): only ONE contextual internal link per run to `/plan-your-trip/` from a relevant non-Elementor page (check `_elementor_edit_mode`), with the undo token in LOG. Never menus, theme, plugins, PHP, settings, or other agents' pages beyond that link.
 - Never touch: Google Ads, Meta, Instagram/social, `suzu-assistant.js`, the appointments plugin, cab-kit/mountain-kit/pilgrim-kit branches.
@@ -59,5 +60,5 @@ Sushil keeps 20–30 % of his Claude plan for himself. Work efficiently, avoid r
 - **Trip Planner me aaj kya naya / sudhara** (1–3 points, plain words) + full URL
 - **Live hua ya nahi** (SHA short) · test result
 - **Price check** (e.g. "Shimla–Manali 2 adults deluxe: ₹X/adult")
-- **Sushil ke liye**: only real decisions (e.g. hPanel login, approve hero swap date), else "kuch nahi"
+- **Sushil ke liye**: only real decisions (e.g. approve hero swap date, deployer token expired), else "kuch nahi"
 - **Kal ka plan** (one line)

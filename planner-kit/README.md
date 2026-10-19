@@ -55,7 +55,7 @@ npm i playwright@1.49.1 --no-save
 node tools/test_planner.js http://localhost:8765/plan-your-trip/ /tmp/tp   # desktop 1440 + Pixel 7, JSON report + screenshots
 ```
 The test stubs `sendBeacon`, admin-ajax and `print` — it never sends a real lead. Pass = 0 page errors (the local favicon 404 is fine), no horizontal overflow, share link round-trips, PDF + lead fire, prices sane.
-Deploy = Hostinger File Browser API from Sushil's Chrome (see `agents/developer.md` §Deploy). Rolling backup: `public_html/plan-your-trip/index-previous.html`.
+Deploy = cloud deployer on branch `deploy-static` (GitHub Actions + Hostinger API, no Chrome; see `agents/developer.md` §Deploy). Rolling backup: `public_html/plan-your-trip/index-previous.html`.
 
 ## 6. Hard business rules
 - Phone/WhatsApp **+91 70874 88961** only; info@suzutravels.com; "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022" (never "registered DMC").
