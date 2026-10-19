@@ -137,6 +137,7 @@ PLACES = {
     "Almora": (29.60, 79.66), "Mukteshwar": (29.47, 79.65),
     "Pantnagar": (29.03, 79.47), "Ranikhet": (29.64, 79.43), "Kausani": (29.84, 79.60), "Kainchi Dham": (29.42, 79.52),
     "Chandigarh Airport": (30.67, 76.79),
+    "Patnitop": (33.09, 75.33), "Sanasar": (33.13, 75.26), "Kud": (33.08, 75.29), "Reasi": (33.08, 74.84), "Shiv Khori": (33.17, 74.62), "Jammu Airport": (32.69, 74.84),
     "Neelkanth": (30.08, 78.34), "Chopta": (30.47, 79.21), "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
 }
 

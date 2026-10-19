@@ -187,6 +187,7 @@ VARIANTS = {
   "dehradun-taxi-service": dict(routes=[("Dehradun taxis",None)], kicker="JOLLY GRANT · MUSSOORIE"),
   "dharamshala-taxi-service": dict(routes=[("Dharamshala taxis",None)], kicker="MCLEODGANJ · BIR · GAGGAL"),
   "srinagar-taxi-service": dict(routes=[("Srinagar taxis",None)], kicker="GULMARG · PAHALGAM · DAL"),
+  "jammu-taxi-service": dict(routes=[("Jammu taxis",None)], kicker="KATRA · PATNITOP · SHIV KHORI"),
   "haridwar-taxi-service": dict(routes=[("Haridwar taxis",None)], kicker="HAR KI PAURI · CHAR DHAM"),
   "outstation-cab-delhi": dict(routes=[("Delhi outstation",None)], kicker="ONE-WAY FROM DELHI NCR"),
   "amritsar-taxi-service": dict(routes=[("Amritsar taxis",None)], kicker="GOLDEN TEMPLE · WAGAH"),

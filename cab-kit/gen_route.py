@@ -108,6 +108,8 @@ def build(p):
         if mode == "hub" and not end:
             hx0 = P(m["hub"])[0]
             anchor, dx = ("end", -16) if x < hx0 - 5 else ("start", 16)
+            if n in m.get("left", []):
+                anchor, dx = ("end", -16)
         if mode == "path" and end and x > 900:
             anchor, dx, dy = ("end", 0, -30)
         towns.append(f'<g class="{cls}" id="t{i}" data-x="{x:.1f}" data-y="{y:.1f}"><circle class="halo" cx="{x:.1f}" cy="{y:.1f}" r="{22 if end else 14}"/><circle class="dot" cx="{x:.1f}" cy="{y:.1f}" r="{9 if end else 6}"/>'
