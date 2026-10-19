@@ -1,0 +1,146 @@
+{
+ "hero": {
+  "kicker": "MULKILA \u00b7 LAHAUL",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 200
+    },
+    "to": {
+     "y": 600
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -170
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20,
+     "y": 60
+    }
+   }
+  ],
+  "steps": [
+   [
+    3360,
+    "DARCHA"
+   ],
+   [
+    4440,
+    "BASE CAMP"
+   ],
+   [
+    5000,
+    "CAMP 1"
+   ],
+   [
+    5800,
+    "CAMP 2"
+   ],
+   [
+    6517,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Mulkila, camp by camp",
+  "sub": "Darcha to the 6,517 m summit \u00b7 camp heights are approximate",
+  "camps": [
+   {
+    "name": "Darcha",
+    "m": 3360,
+    "day": "Road-head"
+   },
+   {
+    "name": "Base camp",
+    "m": 4440,
+    "day": "Milang Glacier"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5000,
+    "day": "Glacier edge"
+   },
+   {
+    "name": "Camp 2",
+    "m": 5800,
+    "day": "High cwm"
+   },
+   {
+    "name": "Summit",
+    "m": 6517,
+    "day": "South ridge"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "LAHAUL'S BIG PEAKS",
+  "title": "Mulkila and the Lahaul giants, side by side",
+  "peaks": [
+   "mount-yunam",
+   "shikar-beh",
+   "menthosa",
+   "mulkila"
+  ],
+  "subs": {
+   "mount-yunam": "Baralacha area",
+   "shikar-beh": "Pir Panjal",
+   "menthosa": "Miyar valley",
+   "mulkila": "Highest in Lahaul"
+  },
+  "end": "Mulkila: 6,517 m above Darcha"
+ }
+}
