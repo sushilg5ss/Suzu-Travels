@@ -1,0 +1,17 @@
+{
+ "id": "2026-10-20-pipeline-test",
+ "agent": "Setup test",
+ "summary": "first real test: new harmless file deploy-test.txt",
+ "files": [
+  {
+   "target": "deploy-test.txt",
+   "sha256": "24cbd59605c2441b2433c3421ac52947056e89b904b776b7e7b412767ee405af",
+   "base_sha256": "absent",
+   "url": "https://suzutravels.com/deploy-test.txt"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-10-19T20:27:23Z",
+ "status": "failed",
+ "error": "Hostinger API POST /api/hosting/v1/files/upload-urls -> 403: b'{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/\",\"title\":\"Error 1010: Access denied\",\"status\":403,\"detail\":\"The site owner has blocked access based on your browser\\'s signature.\",\"instance\":\"a4d285fe980e8236\",\"error_code\":1010,\"e'"
+}
