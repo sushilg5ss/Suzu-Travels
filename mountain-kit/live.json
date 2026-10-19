@@ -195,5 +195,16 @@
   "blurb": "How foreign climbers get a peak permit, step by step",
   "added": "2026-10-18",
   "commercial": true
+ },
+ "reo-purgyil": {
+  "id": 14706,
+  "path": "/mountains-of-india/reo-purgyil/",
+  "kind": "peak",
+  "peak_id": "reo-purgyil",
+  "state": "himachal-pradesh",
+  "label": "Reo Purgyil",
+  "blurb": "6,816 m · the highest peak in Himachal, above Nako",
+  "added": "2026-10-19",
+  "commercial": true
  }
 }
