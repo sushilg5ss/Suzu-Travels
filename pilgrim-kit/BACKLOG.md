@@ -31,8 +31,8 @@
 | 21 | media | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
 | 22 | media | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
 | 23 | media | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
-| 24 | researched | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500; nageshwar temple 33,100) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
-| 25 | researched | `grishneshwar` | 12-JL | temple | grishneshwar jyotirlinga (90,500; grishneshwar temple 49,500) | hills | Ellora next door. Works since Sep 2026 — closure status in fact pack |
+| 24 | media | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500; nageshwar temple 33,100) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
+| 25 | media | `grishneshwar` | 12-JL | temple | grishneshwar jyotirlinga (90,500; grishneshwar temple 49,500) | hills | Ellora next door. Works since Sep 2026 — closure status in fact pack |
 | 26 | todo | `mallikarjuna` | 12-JL | temple | mallikarjuna jyotirlinga (74,000) | gopuram | Also Bhramaramba Shakti Peeth |
 | 27 | todo | `kainchi-dham` | hub | temple | kainchi dham (301,000; Jun peak 1,000,000) | devi | Post 12444 owns registration — link it |
 | 28 | todo | `hidimba-devi` | hub | temple | hidimba devi temple (165,000; peak 368,000) | pagoda | Manali; pagoda temple (pagoda arch since 8 Oct, honest caption) |
