@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.2; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.7) 0%, rgba(11,31,51,0.88) 60%, #0b1f33 100%); }
+      .kick { position: absolute; left: 110px; top: 66px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 108px; width: 1000px; font-weight: 800; font-size: 80px; letter-spacing: -0.02em; }
+      .day { position: absolute; left: 110px; width: 820px; height: 170px; border-radius: 22px; background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.18); }
+      .dn { position: absolute; left: 28px; top: 26px; width: 118px; height: 118px; border-radius: 59px; background: #d4a24c; color: #0b1f33; text-align: center; font-weight: 800; font-size: 26px; line-height: 1.05; padding-top: 30px; }
+      .dn b { display: block; font-size: 46px; }
+      .dt { position: absolute; left: 176px; top: 30px; width: 620px; font-weight: 800; font-size: 40px; line-height: 1.15; }
+      .dd { position: absolute; left: 176px; top: 86px; width: 620px; font-weight: 500; font-size: 28px; color: rgba(255,255,255,0.85); line-height: 1.3; }
+      .vline { position: absolute; left: 196px; top: 430px; width: 6px; height: 50px; background: #d4a24c; border-radius: 3px; }
+      .leg { position: absolute; left: 110px; width: 820px; height: 50px; font-weight: 800; font-size: 32px; white-space: nowrap; }
+      .leg i { position: absolute; left: 0; top: 6px; width: 36px; height: 36px; border-radius: 10px; }
+      .leg span { position: absolute; left: 56px; top: 2px; }
+      .leg em { font-style: normal; font-weight: 500; color: rgba(255,255,255,0.8); font-size: 28px; }
+      svg.ring { position: absolute; left: 1080px; top: 190px; width: 720px; height: 720px; overflow: visible; }
+      .cen { position: absolute; left: 1290px; top: 480px; width: 300px; text-align: center; }
+      .cen .a { font-weight: 800; font-size: 34px; color: #d4a24c; }
+      .cen .b { font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); margin-top: 4px; }
+      .end { position: absolute; left: 110px; top: 950px; width: 1700px; height: 80px; }
+      .eq { position: absolute; left: 0; top: 8px; font-weight: 800; font-size: 40px; white-space: nowrap; }
+      .chip { position: absolute; top: 0; height: 66px; line-height: 62px; padding: 0 28px; border-radius: 34px; font-weight: 800; font-size: 32px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">KARERI LAKE · KANGRA</div>
+        <div class="title" id="title">Your two Kareri days</div>
+        <div class="day" id="d1" style="top:260px"><div class="dn">DAY<b>1</b></div><div class="dt">Drive to Kareri village, walk up</div><div class="dd">Along the Nyund stream to the river camp · about 4–5 h on foot</div></div>
+        <div class="vline" id="vl"></div>
+        <div class="day" id="d2" style="top:480px"><div class="dn">DAY<b>2</b></div><div class="dt">The lake at 2,934 m, then down</div><div class="dd">Clear snow-fed lake, the small hill temple, back to the village</div></div>
+        <div class="leg" id="l1" style="top:700px"><i style="background:#d4a24c"></i><span>Apr–Jun · Sep–Nov <em>best months</em></span></div>
+        <div class="leg" id="l2" style="top:762px"><i style="background:#7d8a96"></i><span>Jul–Aug <em>monsoon, streams rise</em></span></div>
+        <div class="leg" id="l3" style="top:824px"><i style="background:#cfe3f2"></i><span>Dec–Mar <em>lake frozen · permission + guide</em></span></div>
+        <svg class="ring" viewBox="-360 -360 720 720">
+          <g id="arcs"></g>
+          <g id="mlabels" font-family="PJS" font-weight="800" font-size="28" fill="#fff" text-anchor="middle"></g>
+        </svg>
+        <div class="cen" id="cen"><div class="a">Month by month</div><div class="b">when to go</div></div>
+        <div class="end" id="end">
+          <div class="eq" id="eq">Kareri or Triund?</div>
+          <div class="chip" id="ch1" style="left:420px;border:2px solid rgba(255,255,255,0.6)">Triund · 1-day ridge</div>
+          <div class="chip" id="ch2" style="left:840px;background:#d4a24c;color:#0b1f33">Kareri · 2-day lake</div>
+          <div class="chip" id="ch3" style="left:1300px;border:2px solid #d4a24c;color:#d4a24c">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const NS = "http://www.w3.org/2000/svg";
+      const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      const col = (i) => (i >= 3 && i <= 5) || (i >= 8 && i <= 10) ? "#d4a24c" : (i === 6 || i === 7) ? "#7d8a96" : "#cfe3f2";
+      const arcs = document.getElementById("arcs");
+      const lab = document.getElementById("mlabels");
+      const R = 230, W = 64;
+      for (let i = 0; i < 12; i++) {
+        const a0 = (i * 30 - 90 + 1.6) * Math.PI / 180, a1 = ((i + 1) * 30 - 90 - 1.6) * Math.PI / 180;
+        const p = document.createElementNS(NS, "path");
+        p.setAttribute("d", `M ${(R*Math.cos(a0)).toFixed(2)} ${(R*Math.sin(a0)).toFixed(2)} A ${R} ${R} 0 0 1 ${(R*Math.cos(a1)).toFixed(2)} ${(R*Math.sin(a1)).toFixed(2)}`);
+        p.setAttribute("fill", "none"); p.setAttribute("stroke", col(i)); p.setAttribute("stroke-width", W);
+        p.setAttribute("id", "arc" + i); arcs.appendChild(p);
+        const am = (i * 30 - 75) * Math.PI / 180;
+        const t = document.createElementNS(NS, "text");
+        t.setAttribute("x", (318 * Math.cos(am)).toFixed(1)); t.setAttribute("y", (318 * Math.sin(am) + 10).toFixed(1));
+        t.setAttribute("id", "ml" + i); t.textContent = months[i]; lab.appendChild(t);
+      }
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.fromTo("#d1", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.8);
+      tl.fromTo("#vl", { scaleY: 0, transformOrigin: "50% 0%" }, { scaleY: 1, duration: 0.5, ease: "power2.inOut" }, 1.8);
+      tl.fromTo("#d2", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 2.3);
+      tl.fromTo("#cen", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 3.4);
+      for (let i = 0; i < 12; i++) {
+        const p = document.getElementById("arc" + i); const L = p.getTotalLength();
+        tl.fromTo(p, { strokeDasharray: L + " " + L, strokeDashoffset: L }, { strokeDashoffset: 0, duration: 0.28, ease: "none" }, 3.6 + i * 0.26);
+        tl.fromTo("#ml" + i, { opacity: 0 }, { opacity: 1, duration: 0.25 }, 3.6 + i * 0.26);
+      }
+      tl.fromTo("#l1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 4.6);
+      tl.fromTo("#l2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 5.6);
+      tl.fromTo("#l3", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 6.6);
+      tl.fromTo("#eq", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 8.4);
+      tl.fromTo(["#ch1", "#ch2", "#ch3"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.35, ease: "power2.out" }, 8.9);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
