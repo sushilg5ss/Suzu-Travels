@@ -39,3 +39,29 @@ date,route,source_domain,url,sedan,crysta,note
 2026-10-12,Chandigarh to Shimla,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/chandigarh-to-shimla,3300,5400,300 km min billing; tolls extra; updated 14 Sep 2026
 2026-10-12,Chandigarh to Shimla,cabbazar.com,https://cabbazar.com/taxi/shimla-to-chandigarh,2400,3900,reverse direction page; Crysta ~3900 from FAQ
 2026-10-12,Chandigarh to Shimla,rajputanacabs.in,https://rajputanacabs.in/chandigarh/,2400,,one-side sedan; Crysta not priced; modified 9 Sep 2026
+2026-10-19,Delhi to Manali,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/delhi-to-manali,5940,9720,tolls/parking/state tax extra; GST conflict on page; updated 14 Sep 2026
+2026-10-19,Delhi to Manali,cabbazar.com,https://cabbazar.com/route/delhi-to-manali.html,4999,8100,+5% GST; Crysta toll+state tax incl (comparison table says 10800)
+2026-10-19,Delhi to Manali,hurryupcabs.com,https://hurryupcabs.com/cabs/outstation/delhi-to-manali-cab,12067,27036,listing (499 km incl, state tax 900); same page also says approx 5040/7100 - outlier
+2026-10-19,Chandigarh to Manali,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/chandigarh-to-manali,3410,5580,GST incl; tolls/parking/permits extra; updated 14 Sep 2026
+2026-10-19,Chandigarh to Manali,cabbazar.com,https://cabbazar.com/route/chandigarh-to-manali.html,2900,6749,Crysta toll+state tax incl; sedan inclusions not stated
+2026-10-19,Chandigarh to Manali,hurryupcabs.com,https://hurryupcabs.com/outstation/chandigarh-to-manali-cab,5821,13758,toll+state tax incl per description; parking extra
+2026-10-19,Delhi to Chandigarh,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/delhi-to-chandigarh,3300,5400,GST incl; tolls/parking/permits extra; updated 14 Sep 2026
+2026-10-19,Delhi to Chandigarh,cabbazar.com,https://cabbazar.com/route/delhi-to-chandigarh.html,2350,5800,+5% GST; Crysta toll+state tax incl
+2026-10-19,Delhi to Chandigarh,makemytrip.com,https://www.makemytrip.com/car-rental/sedan-cabs-from-chandigarh-to-delhi.html,1772,,reverse direction; FAQ figure, 249 km incl; no SUV figure
+2026-10-19,Delhi to Dehradun,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/delhi-to-dehradun,3300,5400,300 km min billing; tolls conflict; updated 14 Sep 2026
+2026-10-19,Delhi to Dehradun,easemytrip.com,https://www.easemytrip.com/cabs/delhi-to-dehradun-cab-booking/,3038,11615,after coupon incl taxes (2883+155 / 11042+573); live booking card
+2026-10-19,Delhi to Dehradun,quickride.in,https://quickride.in/delhi-to-dehradun-cabs.php,3716,4435,crysta col = 7-seater SUV; tolls/state tax in invoice
+2026-10-19,Delhi to Haridwar,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/delhi-to-haridwar,3300,5400,tolls/GST extra; updated 14 Sep 2026
+2026-10-19,Delhi to Haridwar,cabbazar.com,https://cabbazar.com/route/delhi-to-haridwar.html,1750,5290,+5% GST; sedan tolls extra; Innova toll+state tax incl (5380/5980 elsewhere)
+2026-10-19,Delhi to Haridwar,makemytrip.com,https://www.makemytrip.com/car-rental/sedan-cabs-from-haridwar-to-delhi.html,2893,,reverse direction; 2399 + 494 taxes (FAQ says 2453); no SUV figure
+2026-10-19,Chandigarh to Shimla,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/chandigarh-to-shimla,3300,5400,tolls/parking/inter-state tax extra; updated 14 Sep 2026
+2026-10-19,Chandigarh to Shimla,cabbazar.com,https://cabbazar.com/taxi/shimla-to-chandigarh,2400,3900,reverse direction; Innova approx; one-side toll
+2026-10-19,Chandigarh to Shimla,vargiskhan.com,https://vargiskhan.com/log/?p=16074,3000,4500,blog 'Shimla taxi rates 2024-2025' undated; SUV column (Innova); weak source
+2026-10-19,Chandigarh to Manali TEMPO-12,trivenicabs.in,https://www.trivenicabs.in/tempo-traveller/chandigarh-to-manali,13547,,12-seater one-way est (310 km billed both ways @23/km; calc 14260); updated 14 Sep 2026
+2026-10-19,Chandigarh to Manali TEMPO-12,chikucab.com,https://chikucab.com/chandigarh-to-manali-tempo-traveller.html,13340,,12-seater 23/km; one-way billed both ways (290x2x23) + driver 500 + HP tax 550
+2026-10-19,Chandigarh to Manali TEMPO-12,hpcab.com,https://hpcab.com/chandigarh-to-manali-one-way-tempo-traveler-service/,,,12-seater 23/km; no total
+2026-10-19,Delhi to Manali TEMPO-12,trivenicabs.in,https://www.trivenicabs.in/tempo-traveller/delhi-to-manali,23161,,calculator; 530 km both ways @23 = 24380
+2026-10-19,Delhi to Manali TEMPO-12,indiataxionline.co.in,https://indiataxionline.co.in/delhi-to-manali-12-seater-tempo-traveller/,20000,,range 18000-22000 standard 12-seater incl tolls/driver; updated 31 Jul 2026
+2026-10-19,Delhi to Shimla TEMPO-12,trivenicabs.in,https://www.trivenicabs.in/tempo-traveller/delhi-to-shimla,15295,,calculator; 23/km both ways (350 km)
+2026-10-19,Delhi to Shimla TEMPO-12,chikucab.com,https://chikucab.com/delhi-to-shimla-tempo-traveller.html,15686,,23/km; 'one way: per-km roughly doubles' -> 341x2x23
+2026-10-19,Chandigarh to Shimla TEMPO-12,trivenicabs.in,https://www.trivenicabs.in/tempo-traveller/chandigarh-to-shimla,6500,,FAQ 12-seater 6500 (calc 5290)
