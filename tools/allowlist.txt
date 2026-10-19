@@ -1,0 +1,8 @@
+# Files (relative to public_html) the deployer may overwrite. Nothing else — no PHP,
+# no .htaccess, no wp-* files. "dir/**" means anything inside that folder.
+index.html
+index-nz-previous.html
+suzu-assistant.js
+suzu-assistant-previous.js
+suzu-nz-trips.json
+plan-your-trip/**

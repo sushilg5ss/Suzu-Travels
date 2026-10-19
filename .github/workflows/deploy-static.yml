@@ -1,0 +1,50 @@
+name: Deploy static files to suzutravels.com
+
+# Agents push a release into queue/<id>/ on this branch -> this job deploys it to
+# Hostinger through the Hostinger API (no laptop / no Chrome needed).
+on:
+  push:
+    branches: [deploy-static]
+    paths: ["queue/**"]
+  schedule:
+    - cron: "17 * * * *"   # hourly retry for releases still waiting
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-static
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: deploy-static
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Deploy queued releases
+        id: run
+        env:
+          HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN }}
+          HOSTINGER_USERNAME: u263844788
+          HOSTINGER_DOMAIN: suzutravels.com
+        run: python3 tools/deploy.py
+      - name: Save results (done/ + queue/)
+        if: always()
+        run: |
+          git config user.name "Suzu Deploy Bot"
+          git config user.email info@suzutravels.com
+          git add -A queue done
+          if git diff --cached --quiet; then echo "nothing to record"; exit 0; fi
+          git commit -m "deploy results $(date -u +%FT%TZ) [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase origin deploy-static && git push origin HEAD:deploy-static && exit 0
+            sleep 5
+          done
+          exit 1
