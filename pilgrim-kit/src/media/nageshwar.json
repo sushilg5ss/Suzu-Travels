@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "saffron",
+  "deva": "श्री नागेश्वर",
+  "kicker": "Jyotirlinga · Dwarka, Gujarat",
+  "beats": [
+   "Demons ruled Darukavana by the sea",
+   "Supriya chanted Shiva's name in chains",
+   "Shiva blazed forth and freed them",
+   "Nageshwar, Lord of Serpents, stayed"
+  ]
+ },
+ "story": {
+  "title": "The legend of Nageshwar",
+  "beats": [
+   {"arch": "nagara", "sky": "dusk", "line": "By the western sea, demons ruled the Daruka forest"},
+   {"arch": "hills", "sky": "night", "line": "Held captive, Supriya kept chanting Shiva's name"},
+   {"arch": "pillar", "sky": "night", "line": "Shiva blazed forth as light and set his devotees free"},
+   {"arch": "nagara", "sky": "dawn", "line": "He stays by the sea as Nageshwar, Lord of Serpents"}
+  ]
+ }
+}

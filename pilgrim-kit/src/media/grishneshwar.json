@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "saffron",
+  "deva": "श्री घृष्णेश्वर",
+  "kicker": "12th Jyotirlinga · Ellora, Maharashtra",
+  "beats": [
+   "Ghushma worshipped 101 clay lingas",
+   "Jealousy took her son's life",
+   "Faith revived him; she forgave",
+   "Shiva stayed as Ghushmeshwar"
+  ]
+ },
+ "story": {
+  "title": "The legend of Grishneshwar",
+  "beats": [
+   {"arch": "ghats", "sky": "dawn", "line": "Each day Ghushma offered clay lingas to the pond"},
+   {"arch": "lake", "sky": "dusk", "line": "Struck by sorrow, she kept her worship unbroken"},
+   {"arch": "pillar", "sky": "night", "line": "Pleased, Shiva appeared and her son returned"},
+   {"arch": "hills", "sky": "saffron", "line": "She forgave, and Shiva stayed as Ghushmeshwar"}
+  ]
+ }
+}
