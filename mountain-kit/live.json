@@ -206,5 +206,15 @@
   "blurb": "6,816 m · the highest peak in Himachal, above Nako",
   "added": "2026-10-19",
   "commercial": true
+ },
+ "nanda-devi": {
+  "id": 14901,
+  "path": "/mountains-of-india/nanda-devi/",
+  "kind": "peak",
+  "label": "Nanda Devi",
+  "blurb": "7,816 m · India's highest wholly Indian peak, closed since 1983",
+  "added": "2026-10-20",
+  "peak_id": "nanda-devi",
+  "commercial": false
  }
 }
