@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; background: #0b1f33; }
+      .kick { position: absolute; left: 120px; top: 90px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; }
+      .h { position: absolute; left: 120px; top: 140px; font-weight: 800; font-size: 104px; letter-spacing: -0.02em; line-height: 1.05; }
+      svg.cab { position: absolute; left: 120px; top: 330px; width: 1680px; height: 200px; overflow: visible; }
+      .item { position: absolute; top: 580px; width: 380px; }
+      .item .n { font-weight: 800; font-size: 30px; color: #d4a24c; letter-spacing: 0.12em; }
+      .item .t { margin-top: 12px; font-weight: 800; font-size: 46px; line-height: 1.12; }
+      .item .s { margin-top: 14px; font-weight: 500; font-size: 28px; line-height: 1.35; color: rgba(255,255,255,0.82); }
+      .end { position: absolute; left: 120px; top: 930px; width: 1680px; display: flex; align-items: center; justify-content: space-between; }
+      .end .l { font-weight: 800; font-size: 50px; }
+      .end .b { padding: 22px 48px; border-radius: 48px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 44px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick" id="kick">ZIPLINE IN MANALI</div>
+        <div class="h" id="hh">Before you clip in</div>
+        <svg class="cab" viewBox="0 0 1680 200">
+          <path d="M 20 40 Q 840 190 1660 80" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="12" stroke-linecap="round" />
+          <path id="line" d="M 20 40 Q 840 190 1660 80" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" />
+          <g id="gates"></g>
+          <g id="trolley"><rect x="-28" y="-15" width="56" height="24" rx="11" fill="#fff" /><line x1="0" y1="9" x2="0" y2="52" stroke="#fff" stroke-width="5" /><circle cx="0" cy="68" r="17" fill="#d4a24c" stroke="#fff" stroke-width="5" /></g>
+        </svg>
+        <div class="item" id="i1" style="left:120px"><div class="n">CHECK 1</div><div class="t">Registered operator</div><div class="s">HP Tourism Department registration — ask to see it</div></div>
+        <div class="item" id="i2" style="left:540px"><div class="n">CHECK 2</div><div class="t">Site inspected this year</div><div class="s">Yearly check by the state Technical Committee</div></div>
+        <div class="item" id="i3" style="left:960px"><div class="n">CHECK 3</div><div class="t">Helmet + harness</div><div class="s">Staff check every clip before you ride</div></div>
+        <div class="item" id="i4" style="left:1380px"><div class="n">CHECK 4</div><div class="t">Weather calm</div><div class="s">Rain, storm or strong wind — the line pauses</div></div>
+        <div class="end" id="end"><div class="l">We check all four before we book.</div><div class="b">Get Quote on WhatsApp</div></div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const line = document.getElementById("line");
+      const L = line.getTotalLength();
+      line.setAttribute("stroke-dasharray", L + " " + L);
+      const NS = "http://www.w3.org/2000/svg";
+      const fr = [0.2, 0.43, 0.66, 0.89];
+      const g = document.getElementById("gates");
+      fr.forEach((f, i) => {
+        const p = line.getPointAtLength(f * L);
+        const c = document.createElementNS(NS, "circle"); c.setAttribute("cx", p.x); c.setAttribute("cy", p.y); c.setAttribute("r", 26); c.setAttribute("fill", "#0b1f33"); c.setAttribute("stroke", "rgba(255,255,255,0.5)"); c.setAttribute("stroke-width", 5); c.setAttribute("id", "g" + i); g.appendChild(c);
+        const k = document.createElementNS(NS, "path"); k.setAttribute("d", "M " + (p.x - 11) + " " + (p.y + 1) + " L " + (p.x - 3) + " " + (p.y + 9) + " L " + (p.x + 12) + " " + (p.y - 9)); k.setAttribute("fill", "none"); k.setAttribute("stroke", "#0b1f33"); k.setAttribute("stroke-width", 6); k.setAttribute("stroke-linecap", "round"); k.setAttribute("stroke-linejoin", "round"); k.setAttribute("id", "k" + i); k.setAttribute("opacity", 0); g.appendChild(k);
+      });
+      const tro = document.getElementById("trolley");
+      const st = { d: 0 };
+      const place = () => { const p = line.getPointAtLength(st.d * L); tro.setAttribute("transform", "translate(" + p.x.toFixed(2) + "," + p.y.toFixed(2) + ")"); line.setAttribute("stroke-dashoffset", (L * (1 - st.d)).toFixed(2)); };
+      tl.fromTo(["#kick", "#hh"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.set(["#i1", "#i2", "#i3", "#i4", "#end"], { opacity: 0 }, 0);
+      let t = 0.8, prev = 0;
+      fr.forEach((f, i) => {
+        tl.fromTo(st, { d: prev }, { d: f, duration: 1.2, ease: "power2.inOut", onUpdate: place, immediateRender: i === 0 }, t);
+        tl.to("#g" + i, { attr: { fill: "#d4a24c", stroke: "#fff" }, duration: 0.25 }, t + 1.2);
+        tl.to("#k" + i, { opacity: 1, duration: 0.25 }, t + 1.25);
+        tl.fromTo("#i" + (i + 1), { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out", immediateRender: false }, t + 1.2);
+        prev = f; t += 1.75;
+      });
+      tl.fromTo(st, { d: prev }, { d: 1, duration: 0.9, ease: "power2.in", onUpdate: place, immediateRender: false }, t);
+      tl.fromTo("#end", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out", immediateRender: false }, t + 0.5);
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

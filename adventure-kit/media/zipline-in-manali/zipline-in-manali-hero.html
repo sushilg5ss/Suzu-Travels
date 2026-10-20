@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .mirror { position: absolute; inset: 0; transform: scaleX(-1); }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 36%, rgba(11,31,51,0.8) 54%, rgba(11,31,51,0.93) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 840px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 90px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 150px; color: #fff; font-weight: 800; font-size: 136px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 298px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.cable { position: absolute; left: -20px; top: 430px; width: 880px; height: 260px; overflow: visible; }
+      .big { position: absolute; left: 0; top: 708px; color: #fff; font-weight: 800; font-size: 96px; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 400px; top: 728px; width: 440px; text-align: right; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 32px; line-height: 1.25; }
+      .bar { position: absolute; left: 0; top: 856px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 888px; width: 840px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 840px; color: #fff; font-weight: 800; font-size: 52px; white-space: nowrap; display: flex; align-items: center; gap: 22px; }
+      .fact svg { flex: 0 0 auto; width: 56px; height: 56px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><div class="mirror"><img id="im1" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s1.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><div class="mirror"><img id="im3" src="assets/s2.jpg" alt="" /></div></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div class="mirror"><img id="im5" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">AIR · MANALI</div>
+          <div class="t1">Zipline</div>
+          <div class="t2">in Manali</div>
+          <svg class="cable" viewBox="0 0 880 260">
+            <circle cx="40" cy="30" r="14" fill="#0b1f33" stroke="#d4a24c" stroke-width="5" />
+            <circle cx="840" cy="210" r="14" fill="#0b1f33" stroke="#d4a24c" stroke-width="5" />
+            <path id="line" d="M 40 30 Q 470 170 840 210" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" />
+            <g id="trolley">
+              <rect x="-26" y="-14" width="52" height="22" rx="10" fill="#fff" />
+              <line x1="0" y1="8" x2="0" y2="58" stroke="#fff" stroke-width="5" />
+              <circle cx="0" cy="74" r="18" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+            </g>
+          </svg>
+          <div class="big" id="bigv">1 / 4</div>
+          <div class="biglab">checks before you clip in</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="#d4a24c"/><path d="M16 29 L25 38 L41 19" fill="none" stroke="#0b1f33" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>Registered operator</div>
+            <div class="fact" id="f2"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="#d4a24c"/><path d="M16 29 L25 38 L41 19" fill="none" stroke="#0b1f33" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>Site inspected this year</div>
+            <div class="fact" id="f3"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="#d4a24c"/><path d="M16 29 L25 38 L41 19" fill="none" stroke="#0b1f33" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>Helmet + harness checked</div>
+            <div class="fact" id="f4"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="#d4a24c"/><path d="M16 29 L25 38 L41 19" fill="none" stroke="#0b1f33" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>Weather calm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+
+      // trolley: two rides down the gold cable; it is back at the start point (visible) at t=0 and at the loop point
+      const line = document.getElementById("line");
+      const L = line.getTotalLength();
+      const trolley = document.getElementById("trolley");
+      const r1 = { d: 0 }, r2 = { d: 0 };
+      const st = { k: 1 };
+      const place = () => { const d = st.k === 1 ? r1.d : r2.d; const p = line.getPointAtLength(d * L); trolley.setAttribute("transform", "translate(" + p.x.toFixed(2) + "," + p.y.toFixed(2) + ")"); };
+      tl.fromTo(r1, { d: 0 }, { d: 1, duration: 5.0, ease: "sine.inOut", onUpdate: place }, 0.4);
+      tl.to("#trolley", { opacity: 0, duration: 0.25 }, 5.5);
+      tl.fromTo(st, { k: 1 }, { k: 2, duration: 0.05, ease: "steps(1)", onUpdate: place }, 5.8);
+      tl.to("#trolley", { opacity: 1, duration: 0.25 }, 5.9);
+      tl.fromTo(r2, { d: 0 }, { d: 1, duration: 4.8, ease: "sine.inOut", onUpdate: place, immediateRender: false }, 6.2);
+      tl.to("#trolley", { opacity: 0, duration: 0.3 }, 11.05);
+      tl.fromTo(st, { k: 2 }, { k: 1, duration: 0.05, ease: "steps(1)", onUpdate: place, immediateRender: false }, 11.4);
+      tl.to(r1, { d: 0, duration: 0.05, onUpdate: place }, 11.42);
+      tl.to("#trolley", { opacity: 1, duration: 0.3 }, 11.55);
+      place();
+
+      // counter steps 1/4 → 4/4 with the check list, back to 1/4 at the loop
+      const big = document.getElementById("bigv");
+      const cnt = { n: 1 };
+      const showN = () => { big.textContent = Math.round(cnt.n) + " / 4"; };
+      tl.to(cnt, { n: 2, duration: 0.05, ease: "none", onUpdate: showN }, 2.95);
+      tl.to(cnt, { n: 3, duration: 0.05, ease: "none", onUpdate: showN }, 5.75);
+      tl.to(cnt, { n: 4, duration: 0.05, ease: "none", onUpdate: showN }, 8.55);
+      tl.to(cnt, { n: 1, duration: 0.05, ease: "none", onUpdate: showN }, 11.35);
+      showN();
+
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([x, y, t]) => {
+        tl.to(x, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(y, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
