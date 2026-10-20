@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/tiger-safari-india/ (guide). 4 photos added 21 Oct 2026 by the Page Builder (night) (CREDITS.md). Ranthambore tiger first = poster/LCP. px-31393397 captioned only as Rajasthan (Pexels gives no park name). Hero only (one render per run); no cost ladder (no safari rate in prices.json).",
+ "hero": {
+  "kicker": "INDIA · TIGER SAFARI",
+  "scenes": [
+   {"img": "px-27960753.jpg", "kind": "land", "from": {"scale": 1.04, "x": 20, "y": 0}, "to": {"scale": 1.12, "x": -20, "y": 10}},
+   {"img": "px-13613061.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-14278286.jpg", "kind": "tilt", "from": {"y": 650}, "to": {"y": 350}},
+   {"img": "px-31393397.jpg", "kind": "land", "from": {"scale": 1.03, "x": 30, "y": 0}, "to": {"scale": 1.1, "x": -20, "y": 10}}
+  ],
+  "steps": ["RANTHAMBORE", "SAMBAR AT DUSK", "CORBETT ELEPHANTS", "TIGERS, RAJASTHAN"]
+ }
+}
