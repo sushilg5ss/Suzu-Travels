@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "gopuram",
+  "sky": "dusk",
+  "deva": "श्री मल्लिकार्जुन",
+  "kicker": "Jyotirlinga & Shakti Peeth · Srisailam, Andhra Pradesh",
+  "beats": [
+   "Two brothers raced around the world",
+   "Ganesha circled his parents and won",
+   "Hurt Kartikeya left for Krauncha hill",
+   "Shiva and Parvati followed to Srisailam"
+  ]
+ },
+ "story": {
+  "title": "The legend of Mallikarjuna",
+  "beats": [
+   {"arch": "pillar", "sky": "dawn", "line": "Shiva and Parvati set their two sons a race"},
+   {"arch": "lake", "sky": "dusk", "line": "Kartikeya flew far; Ganesha circled his parents"},
+   {"arch": "hills", "sky": "night", "line": "Hurt, Kartikeya went alone to the Krauncha hills"},
+   {"arch": "gopuram", "sky": "dusk", "line": "Shiva and Parvati stay near him at Srisailam"}
+  ]
+ }
+}
