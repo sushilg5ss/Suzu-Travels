@@ -49,7 +49,7 @@ dict(slug="delhi-to-shimla-taxi", kind="route", route="delhi-to-shimla-taxi",
 # ------------------------------------------------------------------ DELHI -> MANALI
 dict(slug="delhi-to-manali-taxi", kind="route", route="delhi-to-manali-taxi",
  title="Delhi to Manali Taxi", seo_title="Delhi to Manali Taxi from ₹6,899 | One-Way Cab Booking",
- seo_desc="Delhi to Manali taxi: sedan from ₹5,899, Innova Crysta from ₹11,999 one-way. 540 km via the new Kiratpur–Mandi four-lane. Hill drivers, WhatsApp quote.",
+ seo_desc="Delhi to Manali taxi: sedan from " + _S(540, 0.85) + ", Innova Crysta from " + _O("crysta", 540, 0.85) + " one-way. 540 km via the new Kiratpur–Mandi four-lane. Hill drivers, WhatsApp quote.",
  focus="delhi to manali taxi",
  kicker="Delhi → Manali · Via the new four-lane",
  tag="Delhi to Manali by taxi, in one easy day",
@@ -530,7 +530,7 @@ dict(slug="pathankot-to-dharamshala-taxi", kind="route", route="pathankot-to-dha
 # ------------------------------------------------------------------ JAMMU -> SRINAGAR
 dict(slug="jammu-to-srinagar-taxi", kind="route", route="jammu-to-srinagar-taxi",
  title="Jammu to Srinagar Taxi", seo_title="Jammu to Srinagar Taxi from ₹6,399 | Fare 2026",
- seo_desc="Jammu to Srinagar taxi fare 2026: sedan from ₹5,999, Innova Crysta from ₹11,099. 250 km via Banihal tunnels, 6–8 hrs. Jammu Tawi & Katra pickup.",
+ seo_desc="Jammu to Srinagar taxi fare 2026: sedan from " + _S(250, 1.7) + ", Innova Crysta from " + _O("crysta", 250, 1.7) + ". 250 km via Banihal tunnels, 6–8 hrs. Jammu Tawi & Katra pickup.",
  focus="jammu to srinagar taxi",
  kicker="Jammu → Srinagar · Through the tunnels",
  tag="Jammu to Srinagar by taxi, through the Banihal tunnels",
