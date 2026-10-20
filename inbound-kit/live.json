@@ -88,5 +88,14 @@
   "blurb": "16 places in five regions — best months, days and how to combine them",
   "added": "2026-10-20",
   "focus": "places to visit in india"
+ },
+ "goa-holiday": {
+  "id": 14822,
+  "path": "/india-tours/goa-holiday/",
+  "kind": "guide",
+  "label": "Goa holiday guide",
+  "blurb": "North vs South Goa, the best months, beach safety and Old Goa",
+  "added": "2026-10-20",
+  "focus": "goa holiday"
  }
 }

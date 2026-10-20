@@ -14,18 +14,42 @@
  "hero_alt": "The Taj Mahal, the ghats of Varanasi on the Ganga, a Himalayan sunset above Dharamshala, the Kerala backwaters and Hawa Mahal in Jaipur",
  "cta1": "See the places",
  "chips": [
-  ["16 places", "in five regions"],
-  ["Oct–Mar", "best for the plains and the south"],
-  ["10–14 days", "for two regions"],
-  ["Checked", "20 Oct 2026"]
+  [
+   "16 places",
+   "in five regions"
+  ],
+  [
+   "Oct–Mar",
+   "best for the plains and the south"
+  ],
+  [
+   "10–14 days",
+   "for two regions"
+  ],
+  [
+   "Checked",
+   "20 Oct 2026"
+  ]
  ],
  "q": "What are the best places to visit in India?",
  "answer": "For a first trip, the best places to visit in India are <b>Delhi, Agra (Taj Mahal) and Jaipur</b>, then one more region: the Himalayan hill towns of <b>Shimla, Manali and Dharamshala</b>, the Ganga at <b>Rishikesh and Varanasi</b>, <b>Amritsar</b>'s Golden Temple, or <b>Kerala and Goa</b> in the south. October to March suits most of them; Ladakh is a summer trip. Allow 10–14 days for two regions.",
  "facts": [
-  ["Oct–Mar", "best months for the plains, Kerala and Goa"],
-  ["Jun–Oct", "monsoon season across India (UK FCDO)"],
-  ["3", "UNESCO World Heritage sites in Agra alone"],
-  ["Fridays", "the Taj Mahal is closed"]
+  [
+   "Oct–Mar",
+   "best months for the plains, Kerala and Goa"
+  ],
+  [
+   "Jun–Oct",
+   "monsoon season across India (UK FCDO)"
+  ],
+  [
+   "3",
+   "UNESCO World Heritage sites in Agra alone"
+  ],
+  [
+   "Fridays",
+   "the Taj Mahal is closed"
+  ]
  ],
  "sections": [
   {
@@ -37,10 +61,22 @@
    "video_caption": "Twelve of the places in this guide, numbered on a simple map: the classic north (Delhi, Agra, Jaipur), Amritsar, the Himalaya (Dharamshala, Shimla, Manali, Leh), the Ganga (Rishikesh, Varanasi) and the coast (Goa, Kochi in Kerala). Distances inside India are large — plan one or two regions per trip, not all of them.",
    "lead": "India is a country of very different regions. The best trip is rarely the longest list — it is two regions that suit the month you travel, joined by a short flight or a good drive.",
    "items": [
-    ["204 km", "127 mi — Delhi to Agra by road"],
-    ["232 km", "144 mi — Agra to Jaipur by road"],
-    ["260 km", "162 mi — Shimla to Manali, a full day's drive"],
-    ["900+ km", "560+ mi of Kerala backwaters"]
+    [
+     "204 km",
+     "127 mi — Delhi to Agra by road"
+    ],
+    [
+     "232 km",
+     "144 mi — Agra to Jaipur by road"
+    ],
+    [
+     "260 km",
+     "162 mi — Shimla to Manali, a full day's drive"
+    ],
+    [
+     "900+ km",
+     "560+ mi of Kerala backwaters"
+    ]
    ]
   },
   {
@@ -50,11 +86,26 @@
    "kind": "cards",
    "lead": "The places on almost every first-timer's list — and for good reason. Most are best from October to March.",
    "items": [
-    ["Delhi", "Your likely arrival city: Old Delhi's lanes, Mughal monuments and the start of the Golden Triangle. One or two days is enough for a first look."],
-    ["Agra — the Taj Mahal", "Agra has three UNESCO World Heritage sites: the Taj Mahal, Agra Fort and Fatehpur Sikri. The Taj opens 30 minutes before sunrise, closes 30 minutes before sunset and is <b>closed on Fridays</b>. 204 km (127 mi) from Delhi — see our <a href=\"/india-tours/taj-mahal-tour-from-delhi/\">Taj Mahal tour from Delhi</a>."],
-    ["Jaipur — the Pink City", "A UNESCO-listed walled city with forts, palaces and bazaars, 232 km (144 mi) from Agra. Delhi, Agra and Jaipur together make the <a href=\"/golden-triangle-tour/\">Golden Triangle</a>."],
-    ["Varanasi", "The evening Ganga Aarti at Dashashwamedh Ghat lasts about 45 minutes at dusk, with conch shells, bells and brass lamps. Dev Deepavali, 15 days after Diwali, fills the ghats with thousands of lamps. Fly in to Varanasi airport (VNS); allow two nights."],
-    ["Amritsar — the Golden Temple", "Sri Harmandir Sahib is the heart of Sikhism. Visitors can join the Langar, the free community meal, and see the Akal Takht inside the complex. One or two nights; it pairs well with Dharamshala."]
+    [
+     "Delhi",
+     "Your likely arrival city: Old Delhi's lanes, Mughal monuments and the start of the Golden Triangle. One or two days is enough for a first look."
+    ],
+    [
+     "Agra — the Taj Mahal",
+     "Agra has three UNESCO World Heritage sites: the Taj Mahal, Agra Fort and Fatehpur Sikri. The Taj opens 30 minutes before sunrise, closes 30 minutes before sunset and is <b>closed on Fridays</b>. 204 km (127 mi) from Delhi — see our <a href=\"/india-tours/taj-mahal-tour-from-delhi/\">Taj Mahal tour from Delhi</a>."
+    ],
+    [
+     "Jaipur — the Pink City",
+     "A UNESCO-listed walled city with forts, palaces and bazaars, 232 km (144 mi) from Agra. Delhi, Agra and Jaipur together make the <a href=\"/golden-triangle-tour/\">Golden Triangle</a>."
+    ],
+    [
+     "Varanasi",
+     "The evening Ganga Aarti at Dashashwamedh Ghat lasts about 45 minutes at dusk, with conch shells, bells and brass lamps. Dev Deepavali, 15 days after Diwali, fills the ghats with thousands of lamps. Fly in to Varanasi airport (VNS); allow two nights."
+    ],
+    [
+     "Amritsar — the Golden Temple",
+     "Sri Harmandir Sahib is the heart of Sikhism. Visitors can join the Langar, the free community meal, and see the Akal Takht inside the complex. One or two nights; it pairs well with Dharamshala."
+    ]
    ]
   },
   {
@@ -65,11 +116,26 @@
    "style": "alt",
    "lead": "This is our home region — Suzu Travels is based in Himachal Pradesh. Spring and autumn are the classic seasons; December to February brings snow to the hill towns.",
    "items": [
-    ["Rishikesh", "On the Ganga and often called the yoga capital of the world, with Haridwar 18 km (11 mi) away. An International Yoga Festival is held every February–March. See our <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh yoga retreat guide</a>."],
-    ["Shimla", "The old summer capital in the hills. The Kalka–Shimla railway is part of the UNESCO-listed Mountain Railways of India — a slow, scenic way up."],
-    ["Manali", "In the Kullu valley, 260 km (162 mi) from Shimla; Bhuntar airport is 50 km (31 mi) away. Solang valley is 13 km (8 mi) from town. Rohtang Pass (51 km / 32 mi) is closed by snow from late November until about May and needs a permit; the 9.02 km (5.6 mi) Atal Tunnel stays open all year to Lahaul."],
-    ["Dharamshala and McLeod Ganj", "McLeod Ganj (2,082 m / 6,831 ft) is the seat of the Tibetan Government in exile and the Dalai Lama's home since 1959 — Tsuglagkhang temple, Norbulingka and Kangra Fort are nearby. Kangra (Gaggal) airport is 14 km (9 mi) away; snow is common in winter."],
-    ["Ladakh (Leh)", "A high-altitude summer trip: Leh Palace, Shanti Stupa, Thiksey and Hemis monasteries, Pangong lake. The roads in from Manali and Srinagar are seasonal — we confirm them when we quote. The US State Department's 'Do not travel' advice for Jammu and Kashmir excludes eastern Ladakh and Leh."]
+    [
+     "Rishikesh",
+     "On the Ganga and often called the yoga capital of the world, with Haridwar 18 km (11 mi) away. An International Yoga Festival is held every February–March. See our <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh yoga retreat guide</a>."
+    ],
+    [
+     "Shimla",
+     "The old summer capital in the hills. The Kalka–Shimla railway is part of the UNESCO-listed Mountain Railways of India — a slow, scenic way up."
+    ],
+    [
+     "Manali",
+     "In the Kullu valley, 260 km (162 mi) from Shimla; Bhuntar airport is 50 km (31 mi) away. Solang valley is 13 km (8 mi) from town. Rohtang Pass (51 km / 32 mi) is closed by snow from late November until about May and needs a permit; the 9.02 km (5.6 mi) Atal Tunnel stays open all year to Lahaul."
+    ],
+    [
+     "Dharamshala and McLeod Ganj",
+     "McLeod Ganj (2,082 m / 6,831 ft) is the seat of the Tibetan Government in exile and the Dalai Lama's home since 1959 — Tsuglagkhang temple, Norbulingka and Kangra Fort are nearby. Kangra (Gaggal) airport is 14 km (9 mi) away; snow is common in winter."
+    ],
+    [
+     "Ladakh (Leh)",
+     "A high-altitude summer trip: Leh Palace, Shanti Stupa, Thiksey and Hemis monasteries, Pangong lake. The roads in from Manali and Srinagar are seasonal — we confirm them when we quote. The US State Department's 'Do not travel' advice for Jammu and Kashmir excludes eastern Ladakh and Leh."
+    ]
    ]
   },
   {
@@ -79,10 +145,22 @@
    "kind": "cards",
    "lead": "A different India: backwaters, tea hills and beaches. Best from about November to February or March. Suzu arranges Kerala and Goa with local teams; our own office plans the rest of your trip.",
    "items": [
-    ["Kerala backwaters", "More than 900 km (560 mi) of waterways around Alappuzha (Alleppey), seen from a kettuvallam houseboat. Kerala Tourism names October–February as the best time for houseboats. See our <a href=\"/india-tours/kerala-tour/\">8-day Kerala tour</a>."],
-    ["Munnar and Fort Kochi", "Munnar's tea hills sit at about 1,600 m (5,250 ft), planted since 1880. Fort Kochi's Chinese fishing nets have been on the waterfront for more than five centuries."],
-    ["Goa", "A coastline of about 125 km (78 mi) with at least 83 km (52 mi) of beaches, from Baga and Anjuna in the north to Palolem and Agonda in the south. The churches of Old Goa, including the Basilica of Bom Jesus and Se Cathedral, are a UNESCO World Heritage site. Foreign visitors mostly come in winter."],
-    ["Hill railways: Darjeeling and Ooty", "The Darjeeling Himalayan Railway (UNESCO, 1999) and the Nilgiri Mountain Railway to Ooty (added 2005) are the other two Mountain Railways of India — worth it if you are already in the east or the south."]
+    [
+     "Kerala backwaters",
+     "More than 900 km (560 mi) of waterways around Alappuzha (Alleppey), seen from a kettuvallam houseboat. Kerala Tourism names October–February as the best time for houseboats. See our <a href=\"/india-tours/kerala-tour/\">8-day Kerala tour</a>."
+    ],
+    [
+     "Munnar and Fort Kochi",
+     "Munnar's tea hills sit at about 1,600 m (5,250 ft), planted since 1880. Fort Kochi's Chinese fishing nets have been on the waterfront for more than five centuries."
+    ],
+    [
+     "Goa",
+     "A coastline of about 125 km (78 mi) with at least 83 km (52 mi) of beaches, from Baga and Anjuna in the north to Palolem and Agonda in the south. The churches of Old Goa, including the Basilica of Bom Jesus and Se Cathedral, are a UNESCO World Heritage site. Foreign visitors mostly come in winter."
+    ],
+    [
+     "Hill railways: Darjeeling and Ooty",
+     "The Darjeeling Himalayan Railway (UNESCO, 1999) and the Nilgiri Mountain Railway to Ooty (added 2005) are the other two Mountain Railways of India — worth it if you are already in the east or the south."
+    ]
    ]
   },
   {
@@ -90,17 +168,67 @@
    "nav": "Best months",
    "h2": "Best months, days needed and what each place pairs with",
    "kind": "table",
-   "head": ["Place", "Good months", "Days", "Pairs well with"],
+   "head": [
+    "Place",
+    "Good months",
+    "Days",
+    "Pairs well with"
+   ],
    "rows": [
-    ["Delhi · Agra · Jaipur", "Oct–Mar", "4–6", "Any region — the usual start"],
-    ["Varanasi", "Oct–Mar", "2", "Golden Triangle (fly from Delhi)"],
-    ["Amritsar", "Oct–Mar", "1–2", "Dharamshala, Delhi"],
-    ["Rishikesh", "Oct–Apr", "2–4", "Delhi, Haridwar, the Himachal hills"],
-    ["Shimla · Dharamshala", "Mar–Jun, Sep–Nov; Dec–Feb for snow", "2–3 each", "Manali, Amritsar, Golden Triangle"],
-    ["Manali", "Mar–Jun, Sep–Nov; Dec–Feb for snow", "3–4", "Shimla, Dharamshala"],
-    ["Ladakh (Leh)", "Summer — roads are seasonal, confirm", "6–8", "Manali (by road) or a flight from Delhi"],
-    ["Kerala", "Oct/Nov–Feb", "6–8", "Goa, or a flight from Delhi after the Golden Triangle"],
-    ["Goa", "Nov–Mar", "3–5", "Kerala, or a beach end to a North India trip"]
+    [
+     "Delhi · Agra · Jaipur",
+     "Oct–Mar",
+     "4–6",
+     "Any region — the usual start"
+    ],
+    [
+     "Varanasi",
+     "Oct–Mar",
+     "2",
+     "Golden Triangle (fly from Delhi)"
+    ],
+    [
+     "Amritsar",
+     "Oct–Mar",
+     "1–2",
+     "Dharamshala, Delhi"
+    ],
+    [
+     "Rishikesh",
+     "Oct–Apr",
+     "2–4",
+     "Delhi, Haridwar, the Himachal hills"
+    ],
+    [
+     "Shimla · Dharamshala",
+     "Mar–Jun, Sep–Nov; Dec–Feb for snow",
+     "2–3 each",
+     "Manali, Amritsar, Golden Triangle"
+    ],
+    [
+     "Manali",
+     "Mar–Jun, Sep–Nov; Dec–Feb for snow",
+     "3–4",
+     "Shimla, Dharamshala"
+    ],
+    [
+     "Ladakh (Leh)",
+     "Summer — roads are seasonal, confirm",
+     "6–8",
+     "Manali (by road) or a flight from Delhi"
+    ],
+    [
+     "Kerala",
+     "Oct/Nov–Feb",
+     "6–8",
+     "Goa, or a flight from Delhi after the Golden Triangle"
+    ],
+    [
+     "Goa",
+     "Nov–Mar",
+     "3–5",
+     "Kerala, or a beach end to a North India trip"
+    ]
    ],
    "note": "Months are based on the state tourism boards and government advisories listed below, and on our own planning where no official season is published (Amritsar, Ladakh); days are our planning advice. The monsoon usually runs June to October. Weather and road openings change from year to year — confirm before travel."
   },
@@ -111,10 +239,22 @@
    "kind": "steps",
    "lead": "Pick the month first, then the regions that are good in that month. Four combinations we plan often:",
    "items": [
-    ["Golden Triangle + Himalaya (Oct–Nov, Mar–Apr)", "Delhi, Agra and Jaipur, then Shimla, Manali and Dharamshala. Our day-by-day version is the <a href=\"/india-tours/india-2-week-itinerary/\">India 2-week itinerary</a>."],
-    ["Golden Triangle + the Ganga (Oct–Mar)", "Add Varanasi by air, or Rishikesh and Haridwar by road. Good for travellers who want India's spiritual side without long mountain drives."],
-    ["Golden Triangle + Kerala or Goa (Nov–Feb)", "The north's monuments, then a flight south for backwaters or beaches. North and south are very different trips — join them with a flight, not a drive."],
-    ["Himalaya + Amritsar (spring or autumn)", "Dharamshala and the Golden Temple sit close together; add Shimla and Manali for a hill-focused trip with fewer cities."]
+    [
+     "Golden Triangle + Himalaya (Oct–Nov, Mar–Apr)",
+     "Delhi, Agra and Jaipur, then Shimla, Manali and Dharamshala. Our day-by-day version is the <a href=\"/india-tours/india-2-week-itinerary/\">India 2-week itinerary</a>."
+    ],
+    [
+     "Golden Triangle + the Ganga (Oct–Mar)",
+     "Add Varanasi by air, or Rishikesh and Haridwar by road. Good for travellers who want India's spiritual side without long mountain drives."
+    ],
+    [
+     "Golden Triangle + Kerala or Goa (Nov–Feb)",
+     "The north's monuments, then a flight south for backwaters or beaches. North and south are very different trips — join them with a flight, not a drive."
+    ],
+    [
+     "Himalaya + Amritsar (spring or autumn)",
+     "Dharamshala and the Golden Temple sit close together; add Shimla and Manali for a hill-focused trip with fewer cities."
+    ]
    ]
   },
   {
@@ -131,10 +271,22 @@
    "kind": "cards",
    "style": "alt",
    "items": [
-    ["Visa", "Check whether your passport qualifies for India's e-Visa and apply yourself only at the official site <b>indianvisaonline.gov.in</b> — beware look-alike sites that charge extra. We are not a visa agency; see our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a>."],
-    ["Getting around", "Domestic flights for long hops (Delhi–Kerala, Delhi–Varanasi), trains on some routes, and a <a href=\"/india-tours/private-driver-india/\">private car with an English-speaking driver</a> for everything in between. Your driver's name, photo and car number are shared with you before the trip."],
-    ["Altitude and health", "Leh, McLeod Ganj and Manali are at altitude — consult your doctor; see CDC or NHS Fit for Travel."],
-    ["Monsoon and roads", "The UK FCDO notes that the monsoon usually runs from June to October, with flash floods and landslides, and advises avoiding driving at night and in fog. We plan drives in daylight."]
+    [
+     "Visa",
+     "Check whether your passport qualifies for India's e-Visa and apply yourself only at the official site <b>indianvisaonline.gov.in</b> — beware look-alike sites that charge extra. We are not a visa agency; see our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a>."
+    ],
+    [
+     "Getting around",
+     "Domestic flights for long hops (Delhi–Kerala, Delhi–Varanasi), trains on some routes, and a <a href=\"/india-tours/private-driver-india/\">private car with an English-speaking driver</a> for everything in between. Your driver's name, photo and car number are shared with you before the trip."
+    ],
+    [
+     "Altitude and health",
+     "Leh, McLeod Ganj and Manali are at altitude — consult your doctor; see CDC or NHS Fit for Travel."
+    ],
+    [
+     "Monsoon and roads",
+     "The UK FCDO notes that the monsoon usually runs from June to October, with flash floods and landslides, and advises avoiding driving at night and in fog. We plan drives in daylight."
+    ]
    ]
   }
  ],
@@ -142,34 +294,106 @@
   "h2": "Prices",
   "lead": "A trip across two regions is quoted on request — the places, hotel level, month and flights change the total. You get a day-by-day plan with a US-dollar total and what it covers before you pay anything. The Golden Triangle has published prices:",
   "rows": [
-   ["Your own India trip — any of the places above", "on request", "Private car and driver, hotels, transfers and any flights or guides you choose; Kerala and Goa arranged with our local teams"],
-   ["Golden Triangle — 4 days (Delhi, Agra, Jaipur)", "from US$299", "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"],
-   ["Golden Triangle — classic 6 days", "from US$449", "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"]
+   [
+    "Your own India trip — any of the places above",
+    "on request",
+    "Private car and driver, hotels, transfers and any flights or guides you choose; Kerala and Goa arranged with our local teams"
+   ],
+   [
+    "Golden Triangle — 4 days (Delhi, Agra, Jaipur)",
+    "from US$299",
+    "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"
+   ],
+   [
+    "Golden Triangle — classic 6 days",
+    "from US$449",
+    "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"
+   ]
   ]
  },
  "faqs": [
-  ["Where should I go in India for the first time?", "Start with the Golden Triangle — Delhi, Agra for the Taj Mahal, and Jaipur — then add one region that suits your month: the Himalayan hill towns of Himachal, the Ganga at Rishikesh or Varanasi, Amritsar, or Kerala and Goa in the south."],
-  ["What is the best month to visit India?", "For the plains (Delhi, Agra, Jaipur, Varanasi) and for Kerala and Goa, October to March. The Himachal hills are best in spring and autumn, with snow from December to February. Ladakh is a summer trip. The monsoon usually runs from June to October."],
-  ["How many days do I need in India?", "Allow 10–14 days for two regions — for example the Golden Triangle plus the Himalaya, as in our India 2-week itinerary. A week covers the Golden Triangle with one extra stop; three weeks lets you add the south by air."],
-  ["Is it better to visit North or South India?", "They are different trips. The north has the Taj Mahal, Rajasthan's forts, the Ganga and the Himalaya; the south has Kerala's backwaters and tea hills and Goa's beaches. With two weeks, many travellers pick one; with three, combine them with a domestic flight."],
-  ["Can I visit Kashmir?", "Check your government's advice first. The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says 'Do not travel' to J&K except eastern Ladakh and Leh (checked 19 Oct 2026). Ask us how the current advice affects your plans."],
-  ["How do I get around India?", "Domestic flights for long distances, trains on some routes, and a private car with a driver for road sections and day trips. Hill roads are slow, so each mountain drive usually takes a full day."],
-  ["Do I need a visa for India?", "Yes. Tourists from many countries, including the US, UK, Europe, Australia and Canada, can apply for an e-Visa online before travel — only at the official site indianvisaonline.gov.in. Beware look-alike sites that charge extra."],
-  ["Can Suzu Travels plan a trip across several regions?", "Yes. Our team in Himachal plans North India and the Himalaya directly, and we arrange Kerala and Goa with local teams. You get one plan, one US-dollar quote and one contact for the whole trip."]
+  [
+   "Where should I go in India for the first time?",
+   "Start with the Golden Triangle — Delhi, Agra for the Taj Mahal, and Jaipur — then add one region that suits your month: the Himalayan hill towns of Himachal, the Ganga at Rishikesh or Varanasi, Amritsar, or Kerala and Goa in the south."
+  ],
+  [
+   "What is the best month to visit India?",
+   "For the plains (Delhi, Agra, Jaipur, Varanasi) and for Kerala and Goa, October to March. The Himachal hills are best in spring and autumn, with snow from December to February. Ladakh is a summer trip. The monsoon usually runs from June to October."
+  ],
+  [
+   "How many days do I need in India?",
+   "Allow 10–14 days for two regions — for example the Golden Triangle plus the Himalaya, as in our India 2-week itinerary. A week covers the Golden Triangle with one extra stop; three weeks lets you add the south by air."
+  ],
+  [
+   "Is it better to visit North or South India?",
+   "They are different trips. The north has the Taj Mahal, Rajasthan's forts, the Ganga and the Himalaya; the south has Kerala's backwaters and tea hills and Goa's beaches. With two weeks, many travellers pick one; with three, combine them with a domestic flight."
+  ],
+  [
+   "Can I visit Kashmir?",
+   "Check your government's advice first. The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says 'Do not travel' to J&K except eastern Ladakh and Leh (checked 19 Oct 2026). Ask us how the current advice affects your plans."
+  ],
+  [
+   "How do I get around India?",
+   "Domestic flights for long distances, trains on some routes, and a private car with a driver for road sections and day trips. Hill roads are slow, so each mountain drive usually takes a full day."
+  ],
+  [
+   "Do I need a visa for India?",
+   "Yes. Tourists from many countries, including the US, UK, Europe, Australia and Canada, can apply for an e-Visa online before travel — only at the official site indianvisaonline.gov.in. Beware look-alike sites that charge extra."
+  ],
+  [
+   "Can Suzu Travels plan a trip across several regions?",
+   "Yes. Our team in Himachal plans North India and the Himalaya directly, and we arrange Kerala and Goa with local teams. You get one plan, one US-dollar quote and one contact for the whole trip."
+  ]
  ],
  "sources": [
-  ["Taj Mahal (Archaeological Survey of India) — visiting hours", "https://tajmahal.gov.in/visiting-hours.aspx"],
-  ["Taj Mahal — UNESCO World Heritage sites in Agra", "https://tajmahal.gov.in/uneso-world-heritage-site.aspx"],
-  ["Incredible India — Dashashwamedh Ghat, Varanasi", "https://incredibleindia.gov.in/en/uttar-pradesh/varanasi/dashashwamedh-ghat"],
-  ["Incredible India — Amritsar's Golden Getaway", "https://incredibleindia.gov.in/en/trips/trip-listing/amritsar-s-golden-getaway"],
-  ["Himachal Tourism — Manali", "https://himachaltourism.gov.in/destination/manali/"],
-  ["Himachal Tourism — Dharamshala", "https://himachaltourism.gov.in/destination/dharamshala/"],
-  ["Kerala Tourism — houseboats", "https://www.keralatourism.org/houseboat/"],
-  ["Government of Goa, Dept of Information & Publicity — monuments of Goa", "https://dip.goa.gov.in/monuments-structure-of-goa/"],
-  ["UNESCO — Mountain Railways of India", "https://whc.unesco.org/en/list/944/documents"],
-  ["UK FCDO — India travel advice (updated 7 Oct 2026)", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"],
-  ["US State Department — India travel advisory", "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"],
-  ["Government of India — e-Visa (official site)", "https://indianvisaonline.gov.in/"]
+  [
+   "Taj Mahal (Archaeological Survey of India) — visiting hours",
+   "https://tajmahal.gov.in/visiting-hours.aspx"
+  ],
+  [
+   "Taj Mahal — UNESCO World Heritage sites in Agra",
+   "https://tajmahal.gov.in/uneso-world-heritage-site.aspx"
+  ],
+  [
+   "Incredible India — Dashashwamedh Ghat, Varanasi",
+   "https://incredibleindia.gov.in/en/uttar-pradesh/varanasi/dashashwamedh-ghat"
+  ],
+  [
+   "Incredible India — Amritsar's Golden Getaway",
+   "https://incredibleindia.gov.in/en/trips/trip-listing/amritsar-s-golden-getaway"
+  ],
+  [
+   "Himachal Tourism — Manali",
+   "https://himachaltourism.gov.in/destination/manali/"
+  ],
+  [
+   "Himachal Tourism — Dharamshala",
+   "https://himachaltourism.gov.in/destination/dharamshala/"
+  ],
+  [
+   "Kerala Tourism — houseboats",
+   "https://www.keralatourism.org/houseboat/"
+  ],
+  [
+   "Government of Goa, Dept of Information & Publicity — monuments of Goa",
+   "https://dip.goa.gov.in/monuments-structure-of-goa/"
+  ],
+  [
+   "UNESCO — Mountain Railways of India",
+   "https://whc.unesco.org/en/list/944/documents"
+  ],
+  [
+   "UK FCDO — India travel advice (updated 7 Oct 2026)",
+   "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"
+  ],
+  [
+   "US State Department — India travel advisory",
+   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"
+  ],
+  [
+   "Government of India — e-Visa (official site)",
+   "https://indianvisaonline.gov.in/"
+  ]
  ],
  "verified": "20 Oct 2026",
  "cta": {
@@ -177,5 +401,11 @@
   "text": "Send your travel month, how many days you have and what you'd love to see. You get a route across one or two regions, a day-by-day plan and a US-dollar quote from our office in Himachal.",
   "wa": "Hello Suzu Travels, I'm planning a trip to India and choosing where to go. Dates: ___ , travellers: ___ , country: ___"
  },
- "links": ["india-2-week-itinerary", "golden-triangle-tour", "kerala-tour", "private-driver-india"]
+ "links": [
+  "india-2-week-itinerary",
+  "golden-triangle-tour",
+  "kerala-tour",
+  "goa-holiday",
+  "private-driver-india"
+ ]
 }
