@@ -138,6 +138,7 @@ PLACES = {
     "Pantnagar": (29.03, 79.47), "Ranikhet": (29.64, 79.43), "Kausani": (29.84, 79.60), "Kainchi Dham": (29.42, 79.52),
     "Chandigarh Airport": (30.67, 76.79),
     "Patnitop": (33.09, 75.33), "Sanasar": (33.13, 75.26), "Kud": (33.08, 75.29), "Reasi": (33.08, 74.84), "Shiv Khori": (33.17, 74.62), "Jammu Airport": (32.69, 74.84),
+    "Dasuya": (31.82, 75.65), "Mukerian": (31.95, 75.62), "Lakhanpur": (32.40, 75.60), "Kathua": (32.37, 75.52), "Samba": (32.56, 75.12),
     "Neelkanth": (30.08, 78.34), "Chopta": (30.47, 79.21), "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
 }
 
@@ -166,6 +167,7 @@ ROUTES = [
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
+    dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
 
