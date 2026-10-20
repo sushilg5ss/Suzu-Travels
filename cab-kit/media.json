@@ -643,5 +643,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-jammu-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@dddbcff4f5fcfc5c71450f1fa6b482eecd381fc3/cab-kit/media/delhi-to-jammu-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@dddbcff4f5fcfc5c71450f1fa6b482eecd381fc3/cab-kit/media/delhi-to-jammu-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@dddbcff4f5fcfc5c71450f1fa6b482eecd381fc3/cab-kit/media/delhi-to-jammu-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
