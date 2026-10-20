@@ -1,0 +1,11 @@
+# spiti-bike-trip media (Visual Studio morning, 20 Oct 2026)
+
+HyperFrames 0.8.85. Compositions: spiti-bike-trip-{hero,explainer,reel}.html. Media commit: a6b0e8b363f0adfc2607eef7672a8eeda07d93f6
+Base: https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@a6b0e8b363f0adfc2607eef7672a8eeda07d93f6/adventure-kit/media/spiti-bike-trip/
+
+- hero.mp4 1.31 MB / hero.webm 1.26 MB / poster.webp 148 KB (WP 14799) — 12 s seamless loop (first/last frame mean diff 1.6/255). Motorcycle above a braided river valley (WP 14792) → riders in helmets on a dry mountain road (14795) → adventure bike on a rocky high trail below snow (14793) → bike below a hillside monastery village (14794); right half: "Spiti Bike Trip", gold route loop Shimla → Reckong Peo → Nako → Kaza → Kunzum → Atal Tunnel → Manali drawn by a rider dot, altitude counter rising to 4,550 m at Kunzum (approx.), rotating facts. Map is schematic.
+- explainer.mp4 0.27 MB / explainer.webm 0.45 MB / explainer-poster.webp (WP 14800) — 12 s "Which road is open in your month?": 12-month bars for Kinnaur and Manali–Kunzum (green/amber/red from the brief's season table), markers 20 May 2026 Kunzum reopens (light 4x4) · 15 Oct 2026 closed by snow · late Nov winter order; playhead with verdict per month; end card "Full circuit: mid-Jun – Sep" + Get Quote.
+- reel-web.mp4 0.68 MB / reel-web.webm 0.62 MB / reel-web-poster.webp — 15 s 9:16; end card Get Quote + suzutravels.com/adventure/spiti-bike-trip + HP Tourism reg. no.
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
+
+Photos (WP, all generic — neutral alt, no place labels): 14792 motorcycle above a river winding through barren mountains (Pexels 5015221) · 14793 adventure motorcycle on a rocky high trail below snowy slopes (27816379) · 14794 motorcycle below a hillside monastery village (5015044) · 14795 riders in helmets on a dry mountain road (29303171) · 14796 lone rider on a high desert road (14095829, portrait) · 14797 prayer flags at a mountain-top shrine (14712672, portrait) · 14798 braided river in a bare valley (14052510, portrait). Reuse 11548 rider on a dry mountainside, 13409 rider gear close-up (helmet). No honest stream-crossing or support-vehicle photo found (Suzu's 9043/9053 SUV images look AI-made and wintry — not used).
