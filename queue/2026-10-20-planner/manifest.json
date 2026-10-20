@@ -1,0 +1,16 @@
+{
+ "id": "2026-10-20-planner",
+ "agent": "Trip Planner",
+ "summary": "v0.9: Hindi toggle (v0.8) + Hindi place tips, sight notes, packing tips; PDF footer link wraps",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "8e55b28e4a5d155bfeba38ca88299856e9ea85a6fc5e0e0e77e5f4400c354b7b",
+   "base_sha256": "c44eee3f24b2a74363eaaf8216bc0131ca39f8060465d803c49d271bbc0a2203",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 308947
+  }
+ ]
+}
