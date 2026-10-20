@@ -245,7 +245,23 @@
       "online_booking": "Sparsha darshan, sevas and accommodation: https://www.srisailadevasthanam.org",
       "dress_code": null,
       "dress_code_note": "Traditional attire is widely reported as mandatory for Sparsha Darshan, but this could not be verified on the official site.",
-      "rules": null
+      "rules": null,
+      "timings_conflict": {
+        "as_of": "2026-10-20",
+        "note": "Incredible India (Govt of India) lists 6:00 AM-3:30 PM and 6:00 PM-10:00 PM; Deccan Chronicle (Dec 2024) lists Alankara slots 04:30-07:30, 09:30-11:45, 13:30-16:00, 17:30-20:30. Official portal is JavaScript-only (unreadable 2026-10-20). Print 'darshan in slots from early morning to night - confirm on srisailadevasthanam.org'.",
+        "sources": [
+          "https://www.incredibleindia.gov.in/en/andhra-pradesh/kurnool/srisailam-temple",
+          "https://deccanchronicle.com/news/srisailam-temple-revises-darshan-timing-1845685"
+        ]
+      },
+      "sparsha_note_2026": {
+        "as_of": "2026-10-20",
+        "note": "Deccan Chronicle 3 Aug 2026 re-read: no Sparsha in morning/afternoon on Sat/Sun/Mon (night slot only); three slots on other days; in Shravan also Friday nights by special permission. Protocol/recommendation letters 2 days ahead on official letterhead. Past pattern: Sparsha suspended for general devotees on peak Kartika days (6-8 Dec 2025, Deccan Chronicle 3 Dec 2025) - expect similar in Kartika 2026.",
+        "sources": [
+          "https://www.deccanchronicle.com/amp/southern-states/andhra-pradesh/srisailam-revises-darshan-timings-to-ease-pilgrim-rush-1976246",
+          "https://www.deccanchronicle.com/southern-states/andhra-pradesh/sparsha-darshanam-for-general-devotees-suspended-at-srisailam-till-dec-8-1921417"
+        ]
+      }
     },
     "open_season": "All year",
     "best_months": "October-February (editorial); Kartika masam (Oct-Nov) and Mahashivratri bring heavy crowds.",
@@ -343,6 +359,19 @@
         "q": "What are Srisailam darshan timings?",
         "a": "General (Alankara) darshan has been reported in slots from 4:30 AM to 8:30 PM with breaks; timings are revised for crowds, so check srisailadevasthanam.org before travelling."
       }
+    ],
+    "festival_dates_2026_27": {
+      "as_of": "2026-10-20",
+      "karthika_masam_2026": "10 Nov - 8 Dec 2026 (Telugu amanta); Karthika Somavarams 16, 23, 30 Nov and 7 Dec; Karthika Pournami 24 Nov 2026 (HinduTone panchang article - tithi dates can shift by a day; Devasthanam schedule not yet read)",
+      "mahashivratri_2027": "6 Mar 2027 (Brahmotsavams around it; the 2026 Brahmotsavam was under way on 13 Feb 2026, AIR News)",
+      "sources": [
+        "https://hindutone.com/festivals/karthika-masam-2026/",
+        "https://www.newsonair.gov.in/andhra-pradesh-shivaratri-brahmotsavams-being-celebrated-at-sri-bhramaramba-mallikarjuna-swamy-temple"
+      ]
+    },
+    "fact_traps": [
+      "District: Srisailam is in Nandyal district (formed 2022); Incredible India still files it under Kurnool.",
+      "Incredible India adds Tandava-against-Tarakasura and Markandeya lines - not the Shiva Purana Mallikarjuna story; don't use."
     ]
   },
   {

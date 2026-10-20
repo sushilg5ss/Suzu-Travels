@@ -1301,12 +1301,18 @@
         "foundation_day_mela": "2027-06-15 (fixed date)"
       },
       "source": "Wikipedia (Hanuman temple consecrated 15 June 1964); India TV/Aaj Tak 2026-06 (fair arrangements)",
-      "as_of": "2026-10-08"
+      "as_of": "2026-10-20"
     },
     "registration": {
       "required": false,
-      "how": "No registration; follow police traffic/shuttle plans on peak days.",
-      "official_url": "https://nainital.nic.in/"
+      "as_of": "2026-10-20",
+      "how": "No registration needed as of 20 Oct 2026. PROPOSED (not in force): online registration like Char Dham with a daily cap of ~20,000-25,000; Kumaon Commissioner agreed in principle (7 Oct), Nainital DM/SSP to draft plan for state approval; ~1 month to build after approval, weekend trials first. Also proposed: opening at 4 am instead of 6 am (needs temple committee).",
+      "official_url": "https://nainital.nic.in/",
+      "sources": [
+        "https://www.indiatvnews.com/news/india/new-rules-for-tourists-going-to-neem-karoli-baba-ashram-kainchi-dham-nainital-no-entry-without-registration-advance-booking-2026-10-07-1056298",
+        "https://www.freepressjournal.in/india/uttarakhand-kainchi-dham-may-cap-daily-visitors-at-25000-plan-online-registration-to-ease-traffic-congestion",
+        "https://www.dynamitenews.com/national/kainchi-dham-new-rules-will-devotees-need-registration-for-darshan"
+      ]
     },
     "route": [
       {
@@ -1360,7 +1366,7 @@
       },
       {
         "q": "Is there an entry fee?",
-        "a": "No."
+        "a": "No entry fee. No registration either as of 20 Oct 2026 (online registration with a daily cap is proposed, not in force)."
       },
       {
         "q": "Nearest railway?",
@@ -1368,13 +1374,37 @@
       }
     ],
     "official_sites": [
+      "https://shreekainchimandirtrust.org/",
       "https://nainital.nic.in/"
     ],
     "sources": [
       "https://en.wikipedia.org/wiki/Kainchi_Dham",
       "https://www.indiatvnews.com/news/india/kainchi-dham-fair-2026-no-private-vehicle-entry-allowed-police-issue-major-traffic-advisory-check-details-here-2026-06-11-1044510",
-      "https://www.aajtak.in/india/uttarakhand/story/kainchi-dham-foundation-day-over-one-lakh-devotees-expected-nainital-lclcn-strc-2578747-2026-06-14"
-    ]
+      "https://www.aajtak.in/india/uttarakhand/story/kainchi-dham-foundation-day-over-one-lakh-devotees-expected-nainital-lclcn-strc-2578747-2026-06-14",
+      "https://www.incredibleindia.gov.in/en/uttarakhand/nainital/kainchi-dham-ashram",
+      "https://en.wikipedia.org/wiki/Neem_Karoli_Baba",
+      "https://www.freepressjournal.in/india/uttarakhand-kainchi-dham-may-cap-daily-visitors-at-25000-plan-online-registration-to-ease-traffic-congestion"
+    ],
+    "timings": {
+      "as_of": "2026-10-20",
+      "value": "About 6 am - 7 pm (Incredible India); 6 am opening also reported by FPJ 13 Oct 2026. Trust site unreadable (JS) - 'confirm locally'.",
+      "sources": [
+        "https://www.incredibleindia.gov.in/en/uttarakhand/nainital/kainchi-dham-ashram",
+        "https://www.freepressjournal.in/india/uttarakhand-kainchi-dham-may-cap-daily-visitors-at-25000-plan-online-registration-to-ease-traffic-congestion"
+      ]
+    },
+    "status_note": {
+      "as_of": "2026-10-20",
+      "note": "Crowds: 24.34 lakh visitors Jan-Jun 2026 vs ~8 lakh in all of 2025 (FPJ citing Indian Express); 35,000-50,000/day on the 2 Oct 2026 long weekend. In force (India TV 7 Oct): bathing in the Shipra banned, rate lists mandatory, highway to Almora kept clear, separate routes/shuttles on peak days. Ratighat bypass (18 km, 8 km surfaced) could open in 4-6 months if funded. Ashram not offering overnight stays (Taos ashram page).",
+      "sources": [
+        "https://www.freepressjournal.in/india/uttarakhand-kainchi-dham-may-cap-daily-visitors-at-25000-plan-online-registration-to-ease-traffic-congestion",
+        "https://www.indiatvnews.com/news/india/new-rules-for-tourists-going-to-neem-karoli-baba-ashram-kainchi-dham-nainital-no-entry-without-registration-advance-booking-2026-10-07-1056298",
+        "https://nkbashram.org/maharaj-ji-indian-ashrams/kainchi-dham"
+      ]
+    },
+    "lat": 29.4225,
+    "lon": 79.5125,
+    "coord_source": "https://en.wikipedia.org/wiki/Kainchi_Dham"
   },
   {
     "slug": "kailash-mansarovar-yatra",
