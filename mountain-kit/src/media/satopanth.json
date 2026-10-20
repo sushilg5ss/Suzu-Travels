@@ -1,0 +1,160 @@
+{
+ "hero": {
+  "kicker": "SATOPANTH · GARHWAL",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 80,
+     "scale": 1.12,
+     "x": -150
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.15,
+     "x": -190
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.09,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 700,
+     "scale": 1.1,
+     "x": -260
+    },
+    "to": {
+     "y": 880,
+     "scale": 1.14,
+     "x": -300
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    3415,
+    "GANGOTRI"
+   ],
+   [
+    4680,
+    "VASUKI TAL"
+   ],
+   [
+    5200,
+    "ADVANCE BASE"
+   ],
+   [
+    5920,
+    "CAMP 1"
+   ],
+   [
+    6400,
+    "CAMP 2"
+   ],
+   [
+    7075,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Satopanth, camp by camp",
+  "sub": "Gangotri to the 7,075 m summit · approach heights are approximate",
+  "camps": [
+   {
+    "name": "Gangotri",
+    "m": 3415,
+    "day": "Road-head town"
+   },
+   {
+    "name": "Bhojbasa",
+    "m": 3775,
+    "day": "Approach camp"
+   },
+   {
+    "name": "Vasuki Tal",
+    "m": 4680,
+    "day": "Base camp"
+   },
+   {
+    "name": "Advance base",
+    "m": 5200,
+    "day": "Moraine fork"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5920,
+    "day": "Ridge col"
+   },
+   {
+    "name": "Camp 2",
+    "m": 6400,
+    "day": "Ice platform"
+   },
+   {
+    "name": "Summit",
+    "m": 7075,
+    "day": "North-east ridge"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "GANGOTRI GIANTS",
+  "title": "Satopanth and its Garhwal neighbours, side by side",
+  "peaks": [
+   "shivling",
+   "vasuki-parbat",
+   "kedarnath",
+   "satopanth",
+   "chaukhamba-i"
+  ],
+  "subs": {
+   "satopanth": "First climbed 1947"
+  },
+  "end": "Satopanth: 7,075 m, second-highest in Gangotri National Park"
+ }
+}
