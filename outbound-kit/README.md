@@ -17,6 +17,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /vietnam-tour-packages/ | 11374 | same |
 | /bali-tour-packages/ | 11376 | same |
 | /dubai-tour-packages/ | 14234 | `.hx` country page (18 Oct 2026) — `pages/gen_dubai.py` (template for future country pages) |
+| /georgia-tour-packages/ | 14841 | `.hx` country page (20 Oct 2026) — `pages/gen_georgia.py` (6-day itinerary grid = 3 columns on desktop) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
