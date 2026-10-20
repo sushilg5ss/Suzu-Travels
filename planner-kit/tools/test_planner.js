@@ -103,6 +103,9 @@ const { chromium, devices } = require('playwright');
       const ld = await hp.evaluate(() => window.__tpLastLead);
       hi.leadEnglish = !deva(ld.destination) && /Guest language: Hindi/.test(ld.message) && /D1 /.test(ld.message);
       hi.pdfHi = await hp.evaluate(() => /दिन-ब-दिन/.test(document.querySelector('#doc').textContent));
+      // v0.9: region tips + place notes in the PDF are Hindi too (no English sentence left in those lists)
+      hi.pdfTipsHi = await hp.evaluate(() => { const li = [...document.querySelectorAll('#doc ul.two li')]; return li.length > 0 && li.every(x => /[ऀ-ॿ]/.test(x.textContent) && !/\b(the|and|for|with|carry|keep)\b/i.test(x.textContent.replace(/^[^:]*:/, ''))); });
+      hi.tipEnglishLeft = await hp.evaluate(() => [...document.querySelectorAll('#doc ul.two li')].map(x => x.textContent).filter(t => /\b(the|and|for|with|carry|keep)\b/i.test(t.replace(/^[^:]*:/, ''))));
       await hp.emulateMedia({ media: 'print' }); await hp.screenshot({ path: `${out}/${name}-8-pdf-hindi.png`, fullPage: true }); await hp.emulateMedia({ media: 'screen' });
       hi.linkHasL = await hp.evaluate(() => { const m = location.hash.match(/t=([\w-]+)/); return m ? JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g, '+').replace(/_/g, '/'))))).l === 'hi' : false; });
       hi.overflow = await hp.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);

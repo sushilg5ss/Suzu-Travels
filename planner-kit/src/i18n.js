@@ -3,7 +3,7 @@
    the data, the price engine or the lead message (the team always receives English).
    How: exact dictionary + pattern rules on text nodes and placeholder/aria-label/optgroup labels, re-applied
    by a MutationObserver after every render. Place and trip-idea names come from the data's own `hi` fields.
-   Sight names, notes and region tips stay in English for now (phase 2). */
+   v0.9 (20 Oct 2026): place tips, sight notes and region/season packing tips in Hindi too (TIPHI). Sight names stay English. */
 (function () {
   'use strict';
   var W = window, D = document, LANG = 'en', OBS = null, BUSY = false;
@@ -121,6 +121,68 @@
     var m = s.match(/^(\d+) adults?(, (\d+) child(?:ren)?)?(, (\d+) infants?)?$/); if (!m) return null;
     return m[1] + ' वयस्क' + (m[3] ? ', ' + m[3] + ' बच्चे' : '') + (m[5] ? ', ' + m[5] + ' शिशु' : '');
   }
+  /* phase 2 (v0.9, 20 Oct 2026): place tips, sight notes, region / season packing tips (PDF "Good to know") */
+  var TIPHI = {
+    'IGI Airport / NDLS railway station pickup': 'IGI एयरपोर्ट / नई दिल्ली रेलवे स्टेशन से पिकअप',
+    'Airport / railway station / ISBT pickup': 'एयरपोर्ट / रेलवे स्टेशन / ISBT से पिकअप',
+    'Railway station pickup': 'रेलवे स्टेशन से पिकअप',
+    'Jolly Grant airport pickup': 'जॉली ग्रांट एयरपोर्ट से पिकअप',
+    'SUV recommended. Altitude 3,800 m — take it slow on day 1': 'SUV बेहतर है। ऊँचाई 3,800 मी — पहले दिन आराम से रहें',
+    'Camps only, open about mid-June to mid-October': 'सिर्फ़ कैंप, लगभग मध्य जून से मध्य अक्टूबर तक खुले',
+    'Ropeway or 1.5 km climb to the shrine': 'मंदिर तक रोपवे या 1.5 किमी चढ़ाई',
+    'Navratri brings 2–4 hour queues': 'नवरात्रि में 2–4 घंटे की लाइनें लगती हैं',
+    'Keep a full day for the Bhawan trek': 'भवन यात्रा (ट्रेक) के लिए पूरा एक दिन रखें',
+    'One night on a houseboat is a classic': 'एक रात हाउसबोट में ठहरना ख़ास अनुभव है',
+    'Rest day on arrival (3,500 m) is a must': 'पहुँचने के दिन आराम ज़रूरी है (3,500 मी)',
+    'Camps/cottages, very cold nights': 'कैंप/कॉटेज, रातें बहुत ठंडी',
+    'Kedarnath needs 2 nights here: trek up, darshan, trek down': 'केदारनाथ के लिए यहाँ 2 रातें चाहिए: चढ़ाई, दर्शन, उतराई',
+    'Agra Cantt railway / Yamuna Expressway from Delhi (~3.5 h)': 'आगरा कैंट रेलवे / दिल्ली से यमुना एक्सप्रेसवे (~3.5 घंटे)',
+    'Keep phones/leather items out at Janmabhoomi; evening Prem Mandir lights': 'जन्मभूमि में फ़ोन/चमड़े का सामान न ले जाएँ; शाम को प्रेम मंदिर की रोशनी',
+    'Jaipur airport / railway station pickup': 'जयपुर एयरपोर्ट / रेलवे स्टेशन से पिकअप',
+    'Camel fair in Kartik (Oct/Nov) — hotels fill up': 'कार्तिक (अक्टूबर/नवंबर) में ऊँट मेला — होटल भर जाते हैं',
+    'Park closed July–September for monsoon; safaris book out 30+ days ahead': 'मानसून में जुलाई–सितंबर पार्क बंद; सफ़ारी 30+ दिन पहले बुक हो जाती है',
+    'Desert camp night at Sam is the highlight; very hot Apr–Jun': 'सम के डेज़र्ट कैंप की रात सबसे ख़ास; अप्रैल–जून बहुत गर्मी',
+    'Railhead for Nainital & Kumaon (Shatabdi / Ranikhet Express)': 'नैनीताल और कुमाऊँ का रेलवे स्टेशन (शताब्दी / रानीखेत एक्सप्रेस)',
+    'Usually a stop on the way to Nainital / Almora; stays are limited': 'आमतौर पर नैनीताल / अल्मोड़ा के रास्ते में रुकते हैं; ठहरने की जगहें कम हैं',
+    'Camps and small lodges; heavy snow Jan–Feb, road often shut': 'कैंप और छोटे लॉज; जनवरी–फ़रवरी भारी बर्फ़, सड़क अक्सर बंद',
+    'Via Joshimath; SUV advised. Snow Dec–Mar, meadows Apr–Jun': 'जोशीमठ होकर; SUV बेहतर। दिसंबर–मार्च बर्फ़, अप्रैल–जून हरे बुग्याल',
+    'Road from Dalhousie can close after heavy snow (Jan–Feb)': 'भारी बर्फ़ के बाद डलहौज़ी से सड़क बंद हो सकती है (जनवरी–फ़रवरी)',
+    'Usually a 1-hour stop between Palampur and Bir/Mandi': 'आमतौर पर पालमपुर और बीड़/मंडी के बीच 1 घंटे का पड़ाव',
+    'Jalori Pass closes in heavy snow (Jan–Feb)': 'भारी बर्फ़ में जलोड़ी दर्रा बंद हो जाता है (जनवरी–फ़रवरी)',
+    '2 h from Katra — a cool break after the Vaishno Devi trek': 'कटरा से 2 घंटे — वैष्णो देवी यात्रा के बाद ठंडी जगह पर आराम',
+    '4,500 m — only after 2+ nights in Leh; Inner Line Permit': '4,500 मी — लेह में 2+ रातों के बाद ही; इनर लाइन परमिट ज़रूरी',
+    'Online permit needed; closed in winter': 'ऑनलाइन परमिट ज़रूरी; सर्दियों में बंद',
+    'Yatra registration (RFID card) required': 'यात्रा पंजीकरण (RFID कार्ड) ज़रूरी',
+    'Char Dham registration required': 'चार धाम पंजीकरण ज़रूरी',
+    'Buy tickets online; closed on Fridays': 'टिकट ऑनलाइन लें; शुक्रवार को बंद',
+    'No photography inside; big crowd on 15 June bhandara': 'अंदर फ़ोटो मना है; 15 जून के भंडारे पर भारी भीड़',
+    'Trek starts at dawn; temple open ~May–Nov': 'ट्रेक सुबह-सवेरे शुरू; मंदिर लगभग मई–नवंबर खुला',
+    'Carry a warm layer even in summer — hill evenings are 10–15 °C cooler than the plains.': 'गर्मियों में भी एक गर्म कपड़ा साथ रखें — पहाड़ों की शाम मैदानों से 10–15 °C ठंडी होती है।',
+    'Hill roads: 30–40 km/h average; keep motion-sickness tablets handy for children.': 'पहाड़ी सड़कें: औसत 30–40 किमी/घंटा; बच्चों के लिए उल्टी (मोशन-सिकनेस) की गोली साथ रखें।',
+    'Sightseeing in Gulmarg, Pahalgam and Sonamarg runs on local union taxis / ponies — included in the estimate, but keep small change.': 'गुलमर्ग, पहलगाम और सोनमर्ग में घूमना लोकल यूनियन टैक्सी / घोड़ों से होता है — अनुमान में शामिल है, पर खुले पैसे साथ रखें।',
+    'Book the Gulmarg Gondola online a few days ahead in peak season.': 'पीक सीज़न में गुलमर्ग गोंडोला कुछ दिन पहले ऑनलाइन बुक करें।',
+    'Carry a valid photo ID; mobile prepaid SIMs from other states may not work in J&K (postpaid works).': 'वैध फ़ोटो ID साथ रखें; दूसरे राज्यों के प्रीपेड सिम J&K में शायद न चलें (पोस्टपेड चलता है)।',
+    'Rest completely on day 1 in Leh (3,500 m): no sightseeing, lots of water, no alcohol. Consult your doctor about altitude medicine.': 'लेह (3,500 मी) में पहले दिन पूरा आराम करें: घूमना नहीं, खूब पानी, शराब नहीं। ऊँचाई की दवा के बारे में अपने डॉक्टर से पूछें।',
+    'Inner Line Permits for Nubra, Pangong and Tso Moriri are arranged by us — carry 4 passport photos and ID copies.': 'नुब्रा, पैंगोंग और त्सो मोरीरी के इनर लाइन परमिट हम बनवाते हैं — 4 पासपोर्ट फ़ोटो और ID की कॉपी साथ रखें।',
+    'Nights at Pangong / Tso Moriri drop below 0 °C even in summer; carry a down jacket.': 'पैंगोंग / त्सो मोरीरी में गर्मियों में भी रात 0 °C से नीचे जाती है; डाउन जैकेट साथ रखें।',
+    'Char Dham: online yatra registration is mandatory; carry the printout and a photo ID.': 'चार धाम: ऑनलाइन यात्रा पंजीकरण अनिवार्य है; उसका प्रिंट और फ़ोटो ID साथ रखें।',
+    'Kedarnath / Yamunotri treks start early morning; ponies, palki and helicopters are on request.': 'केदारनाथ / यमुनोत्री की चढ़ाई सुबह जल्दी शुरू होती है; घोड़ा, पालकी और हेलिकॉप्टर अनुरोध पर।',
+    'Hill roads can close briefly after rain in July–August — keep one buffer day if possible.': 'जुलाई–अगस्त में बारिश के बाद पहाड़ी सड़कें कुछ देर बंद हो सकती हैं — हो सके तो एक दिन अतिरिक्त रखें।',
+    'Temples open early (5–6 AM) and close for 1–2 hours midday; plan darshan before 11 AM.': 'मंदिर सुबह जल्दी (5–6 बजे) खुलते हैं और दोपहर में 1–2 घंटे बंद रहते हैं; दर्शन 11 बजे से पहले करें।',
+    'Navratri and weekends bring long queues — carry water, and leave leather items and cameras in the car.': 'नवरात्रि और वीकेंड पर लंबी लाइनें लगती हैं — पानी साथ रखें, चमड़े का सामान और कैमरा गाड़ी में छोड़ें।',
+    'Dress modestly; cover shoulders and knees at shrines.': 'मंदिरों में शालीन कपड़े पहनें; कंधे और घुटने ढके रहें।',
+    'Forts and palaces open ~9 AM–5 PM; start early to beat the heat.': 'किले और महल लगभग सुबह 9 से शाम 5 बजे तक खुलते हैं; गर्मी से बचने के लिए जल्दी निकलें।',
+    'October to March is the comfortable season; summer afternoons cross 40 °C — carry a cap, sunscreen and 2 litres of water per person.': 'अक्टूबर से मार्च आरामदायक मौसम है; गर्मियों की दोपहर 40 °C से ऊपर — टोपी, सनस्क्रीन और हर व्यक्ति के लिए 2 लीटर पानी रखें।',
+    'Monument tickets are cheaper online; Taj Mahal is closed on Fridays.': 'स्मारकों के टिकट ऑनलाइन सस्ते मिलते हैं; ताजमहल शुक्रवार को बंद रहता है।',
+    'Taj Mahal is closed on Fridays; sunrise entry has the shortest queues.': 'ताजमहल शुक्रवार को बंद रहता है; सूर्योदय के समय सबसे छोटी लाइन होती है।',
+    'Mathura–Vrindavan temples close in the afternoon (approx. 12–4 PM); plan darshan morning and evening.': 'मथुरा–वृंदावन के मंदिर दोपहर (लगभग 12–4 बजे) बंद रहते हैं; दर्शन सुबह और शाम करें।',
+    'Cover your head and remove shoes at gurudwaras; the langar is open to everyone.': 'गुरुद्वारे में सिर ढकें और जूते उतारें; लंगर सबके लिए खुला है।',
+    'ATMs are scarce in Spiti, Kinnaur and Lahaul — carry cash; mobile network is patchy beyond Kaza.': 'स्पीति, किन्नौर और लाहौल में ATM कम हैं — नकद साथ रखें; काज़ा से आगे मोबाइल नेटवर्क कमज़ोर है।',
+    'Winter trip: carry heavy woollens, gloves and waterproof shoes; snow can close high roads for a day — the driver will suggest alternatives.': 'सर्दियों की यात्रा: भारी ऊनी कपड़े, दस्ताने और वाटरप्रूफ़ जूते रखें; बर्फ़ से ऊँची सड़कें एक दिन बंद हो सकती हैं — ड्राइवर दूसरा रास्ता/जगह सुझाएगा।',
+    'Monsoon season: landslides can delay hill roads; keep plans flexible and start drives early.': 'मानसून: भूस्खलन से पहाड़ी सड़कों पर देरी हो सकती है; प्लान लचीला रखें और सफ़र जल्दी शुरू करें।'
+  };
+  function tipT(s) { var d = /\.$/.test(s) && !TIPHI[s] ? '.' : '', k = d ? s.slice(0, -1) : s; return TIPHI[k] ? TIPHI[k] + (d ? '।' : '') : s; }
+  Object.keys(TIPHI).forEach(function (k) { if (EX[k] == null) EX[k] = TIPHI[k]; if (!/\.$/.test(k) && EX[k + '.'] == null) EX[k + '.'] = TIPHI[k] + '।'; });
   function cat(s) { return EX[s] || s; }
   function tier(s) { return EX[s] || EX[s.split(' (')[0]] && (EX[s.split(' (')[0]] + s.slice(s.split(' (')[0].length)) || s; }
   function noDot(s) { return s.replace(/\.$/, ''); }
@@ -153,12 +215,14 @@
     [/^(.+) is usually closed \/ snowbound in (\w+) \(open about (\w+)–(\w+)\)\. Pick other dates or swap this stop\.$/, function (m) { return pn(m[1]) + ' ' + dt(m[2]) + ' में आम तौर पर बंद / बर्फ़ से ढका रहता है (लगभग ' + dt(m[3]) + '–' + dt(m[4]) + ' खुला)। दूसरी तारीख चुनें या यह जगह बदलें।'; }],
     [/^(.+) is usually closed in (\w+) \(open about (\w+)–(\w+)\), so it is left out of your day plan\.(.*)$/, function (m) { return m[1] + ' ' + dt(m[2]) + ' में आम तौर पर बंद रहता है (लगभग ' + dt(m[3]) + '–' + dt(m[4]) + ' खुला), इसलिए इसे आपके प्लान से हटाया गया है।' + (/Solang/.test(m[5]) ? ' सर्दियों में बर्फ़ का मज़ा सोलंग वैली में; सड़क खुली हो तो अटल टनल और सिस्सू।' : m[5]); }],
     [/^Your (.+) darshan falls in (.+?) \((.+?)\): very big crowds, long darshan queues and hotels fill early\. We plan darshan for early morning and keep extra time on these days\.(.*)$/, function (m) { var rest = m[4].trim().replace(/[^.]+\./g, function (x) { x = x.trim(); return (EX[x] || x) + ' '; }).trim(); return 'आपका ' + pn(m[1]) + ' दर्शन ' + m[2].replace('Chaitra Navratri', 'चैत्र नवरात्रि').replace('Sharad Navratri', 'शारदीय नवरात्रि') + ' (' + dt(m[3]) + ') में पड़ रहा है: बहुत भीड़, दर्शन की लंबी लाइनें और होटल जल्दी भर जाते हैं। इन दिनों हम दर्शन सुबह जल्दी रखते हैं और ज़्यादा समय रखते हैं।' + (rest ? ' ' + rest : ''); }],
-    [/^Pickup in (.+?)( \((.+)\))?, then drive to (.+)\.$/, function (m) { return pn(m[1]) + ' से पिकअप' + (m[2] || '') + ', फिर ' + pn(m[4]) + ' के लिए रवाना।'; }],
+    [/^Pickup in (.+?)( \((.+)\))?, then drive to (.+)\.$/, function (m) { return pn(m[1]) + ' से पिकअप' + (m[3] ? ' (' + tipT(m[3]) + ')' : '') + ', फिर ' + pn(m[4]) + ' के लिए रवाना।'; }],
     [/^After breakfast, drive to (.+)\.$/, function (m) { return 'नाश्ते के बाद ' + pn(m[1]) + ' के लिए रवाना।'; }],
     [/^🛕 Darshan at (.+?)( — (.+))? on the way\.$/, function (m) { return '🛕 रास्ते में ' + pn(m[1]) + ' दर्शन' + (m[3] ? ' — ' + m[3] : '') + '।'; }],
     [/^Stop at (.+?)( — (.+))? on the way\.$/, function (m) { return 'रास्ते में ' + pn(m[1]) + ' पर रुकें' + (m[3] ? ' — ' + m[3] : '') + '।'; }],
+    [/^(Evening: )?(.+) \(([^()]+)\)\.$/, function (m) { return TIPHI[m[3]] ? (m[1] ? 'शाम: ' : '') + m[2] + ' (' + TIPHI[m[3]] + ')।' : null; }],
+    [/^([^:]+):$/, function (m) { return PN[m[1]] ? PN[m[1]] + ':' : null; }],
     [/^Evening: (.+)$/, function (m) { return 'शाम: ' + m[1]; }],
-    [/^Tip: (.+)$/, function (m) { return 'सुझाव: ' + m[1]; }],
+    [/^Tip: (.+)$/, function (m) { return 'सुझाव: ' + tipT(m[1]); }],
     [/^Also possible: (.+)$/, function (m) { return 'यह भी हो सकता है: ' + m[1]; }],
     [/^Drop at (.+) — journey ends with happy memories\.$/, function (m) { return pn(m[1]) + ' पर ड्रॉप — सुखद यादों के साथ यात्रा पूरी।'; }],
     [/^Arrive in (.+)$/, function (m) { return pn(m[1]) + ' पहुँचें'; }],
