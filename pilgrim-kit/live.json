@@ -11,5 +11,6 @@
  "mahakaleshwar": {"id": 13457, "path": "/pilgrimage-tours/12-jyotirlinga/mahakaleshwar/", "kind": "temple", "label": "Mahakaleshwar, Ujjain", "blurb": "The south-facing Lord of Time, by the Shipra", "added": "2026-10-15", "shrine": "mahakaleshwar-jyotirlinga"},
  "omkareshwar": {"id": 13587, "path": "/pilgrimage-tours/12-jyotirlinga/omkareshwar/", "kind": "temple", "label": "Omkareshwar, Narmada", "blurb": "Lord of Om, on a Narmada island", "added": "2026-10-16", "shrine": "omkareshwar-jyotirlinga"},
  "kedarnath": {"id": 14324, "path": "/pilgrimage-tours/kedarnath/", "kind": "yatra", "label": "Kedarnath Yatra", "blurb": "The Himalayan Jyotirlinga above the Mandakini", "added": "2026-10-18", "shrine": "kedarnath-jyotirlinga"},
- "char-dham-yatra": {"id": 14732, "path": "/pilgrimage-tours/char-dham-yatra/", "kind": "yatra", "label": "Char Dham Yatra", "blurb": "Yamunotri, Gangotri, Kedarnath and Badrinath", "added": "2026-10-19"}
+ "char-dham-yatra": {"id": 14732, "path": "/pilgrimage-tours/char-dham-yatra/", "kind": "yatra", "label": "Char Dham Yatra", "blurb": "Yamunotri, Gangotri, Kedarnath and Badrinath", "added": "2026-10-19"},
+ "badrinath": {"id": 14912, "path": "/pilgrimage-tours/badrinath/", "kind": "temple", "label": "Badrinath Dham", "blurb": "Badri Vishal, on the Alaknanda", "added": "2026-10-20"}
 }
