@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.2; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.72) 0%, rgba(11,31,51,0.93) 55%, #0b1f33 100%); }
+      .kick { position: absolute; left: 100px; top: 56px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 100px; top: 96px; width: 1720px; font-weight: 800; font-size: 80px; letter-spacing: -0.02em; }
+      .legend { position: absolute; left: 100px; top: 206px; width: 1720px; height: 40px; font-weight: 500; font-size: 32px; }
+      .lg { position: absolute; top: 0; white-space: nowrap; }
+      .sw { display: inline-block; width: 30px; height: 18px; border-radius: 9px; margin-right: 10px; vertical-align: 2px; }
+      .mlab { position: absolute; top: 278px; width: 116px; text-align: center; font-weight: 800; font-size: 30px; color: rgba(255,255,255,0.85); }
+      .lname { position: absolute; left: 100px; width: 310px; white-space: nowrap; font-weight: 800; font-size: 36px; line-height: 1.15; }
+      .lane { position: absolute; left: 420px; width: 1400px; height: 130px; border-radius: 18px; overflow: hidden; background: rgba(255,255,255,0.08); }
+      .seg { position: absolute; top: 0; height: 130px; }
+      .wipe { position: absolute; left: 0; top: 0; width: 1400px; height: 130px; background: #0b1f33; transform-origin: 100% 50%; }
+      .mk { position: absolute; width: 4px; background: #fff; }
+      .mkt { position: absolute; font-weight: 800; font-size: 34px; white-space: nowrap; text-align: right; }
+      .play { position: absolute; top: 322px; width: 6px; height: 316px; border-radius: 3px; background: #fff; box-shadow: 0 0 18px rgba(255,255,255,0.8); }
+      .vbox { position: absolute; left: 100px; top: 862px; width: 1720px; height: 150px; }
+      .vk { position: absolute; left: 0; top: 0; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.14em; }
+      .vt { position: absolute; left: 0; top: 52px; width: 1720px; font-weight: 800; font-size: 76px; white-space: nowrap; }
+      .end { position: absolute; inset: 0; background: rgba(11,31,51,0.95); }
+      .e1 { position: absolute; left: 100px; top: 300px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.16em; }
+      .e2 { position: absolute; left: 100px; top: 350px; width: 1720px; font-weight: 800; font-size: 120px; letter-spacing: -0.02em; line-height: 1.05; }
+      .e3 { position: absolute; left: 100px; top: 560px; width: 1720px; font-weight: 500; font-size: 40px; color: rgba(255,255,255,0.92); }
+      .ebtn { position: absolute; left: 100px; top: 680px; height: 96px; line-height: 96px; padding: 0 48px; border-radius: 48px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 46px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div id="chart" style="position:absolute;inset:0">
+        <div class="kick" id="kick">SPITI BIKE TRIP · 2 ROADS</div>
+        <div class="title" id="title">Which road is open in your month?</div>
+        <div class="legend" id="legend">
+          <div class="lg" style="left:0"><span class="sw" style="background:#4fb37e"></span>Open</div>
+          <div class="lg" style="left:200px"><span class="sw" style="background:#d4a24c"></span>Open with disruptions / light 4x4 only</div>
+          <div class="lg" style="left:860px"><span class="sw" style="background:#e0604f"></span>Closed</div>
+        </div>
+        <div id="months"></div>
+        <div class="lname" style="top:350px">Kinnaur</div>
+        <div class="lname" style="top:402px;font-size:26px;font-weight:500;color:rgba(255,255,255,0.8)">via Shimla, Reckong Peo</div>
+        <div class="lane" id="lane1" style="top:330px"></div>
+        <div class="lname" style="top:520px">Manali–Kunzum</div>
+        <div class="lname" style="top:572px;font-size:26px;font-weight:500;color:rgba(255,255,255,0.8)">via Atal Tunnel, Gramphu</div>
+        <div class="lane" id="lane2" style="top:500px"></div>
+        <div class="mk" id="mk1" style="left:961px;top:630px;height:96px"></div>
+        <div class="mkt" id="mkt1" style="right:971px;top:686px">20 May 2026: Kunzum reopens (light 4x4)</div>
+        <div class="mk" id="mk2" style="left:1525px;top:630px;height:148px"></div>
+        <div class="mkt" id="mkt2" style="right:407px;top:738px">15 Oct 2026: closed by snow</div>
+        <div class="mk" id="mk3" style="left:1680px;top:630px;height:200px"></div>
+        <div class="mkt" id="mkt3" style="right:252px;top:790px">late Nov: winter order</div>
+        <div class="play" id="play" style="left:420px"></div>
+        <div class="vbox" id="vbox">
+          <div class="vk" id="vk">BIKE TRIP IN <span id="vm">JAN</span>?</div>
+          <div class="vt" id="v0">No — go by 4x4 instead</div>
+          <div class="vt" id="v1">Kinnaur in-and-out only</div>
+          <div class="vt" id="v2" style="color:#4fb37e">Full circuit — best in September</div>
+          <div class="vt" id="v3">Kinnaur side only · check daily</div>
+          <div class="vt" id="v4">Not advised</div>
+          <div class="vt" id="v5">No — go by 4x4 instead</div>
+        </div>
+        </div>
+        <div class="end" id="end">
+          <div class="e1">YOUR WINDOW</div>
+          <div class="e2">Full circuit: mid-Jun – Sep</div>
+          <div class="e3">Kinnaur in, Kunzum out. We check both roads for your dates.</div>
+          <div class="ebtn">Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const NS = document;
+      const X0 = 420, W = 1400, MW = W / 12;
+      const G = "#4fb37e", A = "#d4a24c", R = "#e0604f";
+      const lanes = {
+        lane1: [[0, 3, A], [3, 6, G], [6, 8, A], [8, 10, G], [10, 12, A]],
+        lane2: [[0, 4.65, R], [4.65, 5.5, A], [5.5, 9.48, G], [9.48, 12, R]]
+      };
+      Object.keys(lanes).forEach((id) => {
+        const el = NS.getElementById(id);
+        lanes[id].forEach(([a, b, c]) => { const s = NS.createElement("div"); s.className = "seg"; s.style.left = (a * MW) + "px"; s.style.width = ((b - a) * MW + 1) + "px"; s.style.background = c; el.appendChild(s); });
+        for (let m = 1; m < 12; m++) { const d = NS.createElement("div"); d.style.cssText = "position:absolute;top:0;width:2px;height:130px;background:rgba(11,31,51,0.55);left:" + (m * MW - 1) + "px"; el.appendChild(d); }
+        const w = NS.createElement("div"); w.className = "wipe"; w.id = "w" + id; el.appendChild(w);
+      });
+      const ML = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const mh = NS.getElementById("months");
+      ML.forEach((m, i) => { const d = NS.createElement("div"); d.className = "mlab"; d.style.left = (X0 + i * MW) + "px"; d.textContent = m; mh.appendChild(d); });
+
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title", "#legend"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.fromTo(".mlab", { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.04 }, 0.6);
+      tl.fromTo(".lname", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.4, stagger: 0.08 }, 0.7);
+      tl.fromTo(["#wlane1", "#wlane2"], { scaleX: 1 }, { scaleX: 0, duration: 1.6, stagger: 0.25, ease: "power2.inOut" }, 1.0);
+      [1, 2, 3].forEach((i, k) => {
+        tl.fromTo("#mk" + i, { scaleY: 0, transformOrigin: "50% 0%" }, { scaleY: 1, duration: 0.3, ease: "power2.out" }, 2.5 + k * 0.3);
+        tl.fromTo("#mkt" + i, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 2.6 + k * 0.3);
+      });
+      // playhead sweeps Jan → Dec, verdict follows
+      const T0 = 3.6, SPM = 0.45;
+      tl.fromTo("#play", { opacity: 0 }, { opacity: 1, duration: 0.3 }, T0 - 0.3);
+      tl.fromTo("#vbox", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4 }, T0 - 0.3);
+      const ph = { m: 0 };
+      const vm = NS.getElementById("vm");
+      const upd = () => { NS.getElementById("play").style.left = (X0 + ph.m * MW - 3).toFixed(1) + "px"; vm.textContent = ML[Math.min(11, Math.floor(ph.m))].toUpperCase(); };
+      tl.fromTo(ph, { m: 0 }, { m: 11.99, duration: 11.99 * SPM, ease: "none", onUpdate: upd }, T0);
+      upd();
+      const cuts = [3, 5.5, 9, 10, 11];
+      tl.set(["#v1", "#v2", "#v3", "#v4", "#v5"], { opacity: 0 }, 0);
+      cuts.forEach((m, i) => {
+        const t = T0 + m * SPM;
+        tl.to("#v" + i, { opacity: 0, duration: 0.12 }, t);
+        tl.fromTo("#v" + (i + 1), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out", immediateRender: false }, t + 0.1);
+      });
+      tl.set("#end", { opacity: 0 }, 0);
+      tl.to("#chart", { opacity: 0, duration: 0.4, ease: "sine.in" }, 9.5);
+      tl.fromTo("#end", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out", immediateRender: false }, 9.5);
+      tl.fromTo([".e1", ".e2", ".e3", ".ebtn"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.15, ease: "power3.out" }, 9.7);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
