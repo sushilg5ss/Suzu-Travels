@@ -1,0 +1,112 @@
+{
+ "hero": {
+  "kicker": "CLIMBING RECORDS · INDIA",
+  "words": [
+   [
+    "FIRST 7,000",
+    "IN 1907."
+   ],
+   [
+    "1965: INDIA",
+    "ON EVEREST."
+   ],
+   [
+    "BACHENDRI",
+    "PAL, 1984."
+   ],
+   [
+    "118 YEARS",
+    "OF FIRSTS."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.09,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 700,
+     "scale": 1.14,
+     "x": -180
+    },
+    "to": {
+     "y": 880,
+     "scale": 1.18,
+     "x": -210
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "LANDMARK FIRST ASCENTS",
+  "title": "Landmark first ascents, at true height",
+  "peaks": [
+   "trisul-i",
+   "kangto",
+   "kamet",
+   "nanda-devi",
+   "kangchenjunga"
+  ],
+  "subs": {
+   "trisul-i": "First 7,000 m, 1907",
+   "kangto": "First climbed 2025",
+   "kamet": "Above 25,000 ft, 1931",
+   "nanda-devi": "First climbed 1936",
+   "kangchenjunga": "1955, from Nepal"
+  },
+  "end": "118 years of firsts: Trisul 1907 to Kangto 2025"
+ }
+}

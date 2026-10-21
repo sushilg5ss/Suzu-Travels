@@ -1,0 +1,144 @@
+{
+ "hero": {
+  "kicker": "SHIVLING · GARHWAL",
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 1050
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -180
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.16,
+     "x": -150
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.18,
+     "x": -160
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 30
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ],
+  "steps": [
+   [
+    3415,
+    "GANGOTRI"
+   ],
+   [
+    4023,
+    "GAUMUKH"
+   ],
+   [
+    4280,
+    "TAPOVAN"
+   ],
+   [
+    5060,
+    "ADVANCE BASE"
+   ],
+   [
+    5700,
+    "CAMP 1"
+   ],
+   [
+    6543,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Shivling, camp by camp",
+  "sub": "Gangotri to the 6,543 m summit · approach heights are approximate",
+  "camps": [
+   {
+    "name": "Gangotri",
+    "m": 3415,
+    "day": "Road-head town"
+   },
+   {
+    "name": "Bhojbasa",
+    "m": 3775,
+    "day": "Approach camp"
+   },
+   {
+    "name": "Gaumukh",
+    "m": 4023,
+    "day": "Glacier snout"
+   },
+   {
+    "name": "Tapovan",
+    "m": 4280,
+    "day": "Base camp meadow"
+   },
+   {
+    "name": "Advance base",
+    "m": 5060,
+    "day": "Moraine camp"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5700,
+    "day": "West ridge"
+   },
+   {
+    "name": "Summit",
+    "m": 6543,
+    "day": "West ridge"
+   }
+  ]
+ }
+}
