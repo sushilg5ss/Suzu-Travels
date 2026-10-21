@@ -216,5 +216,15 @@
   "added": "2026-10-20",
   "peak_id": "nanda-devi",
   "commercial": false
+ },
+ "kangchenjunga": {
+  "id": 15070,
+  "path": "/mountains-of-india/kangchenjunga/",
+  "kind": "peak",
+  "label": "Kangchenjunga",
+  "blurb": "8,586 m · India's highest, sacred and closed to climbers from Sikkim",
+  "added": "2026-10-21",
+  "peak_id": "kangchenjunga",
+  "commercial": false
  }
 }

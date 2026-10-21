@@ -1,0 +1,113 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/kangchenjunga/",
+ "peak_id": "kangchenjunga",
+ "title": "Kangchenjunga (8,586 m) from India: Facts, Views & Climbing Status",
+ "seo_title": "Kanchenjunga (8,586 m) from India: Facts, Views & Status",
+ "seo_desc": "Kanchenjunga (8,586 m / 28,169 ft) is the world's third-highest peak, on the Sikkim–Nepal border. Why India bans climbing it, and where to see it.",
+ "focus": "kanchenjunga",
+ "commercial": false,
+ "label": "Kangchenjunga",
+ "blurb": "8,586 m · India's highest, sacred and closed to climbers from Sikkim",
+ "verified": "21 Oct 2026",
+ "kicker": "Sikkim–Nepal border · Kangchenjunga Himal · 8,586 m · sacred, no permits",
+ "tag": "World number three. Sacred to Sikkim.",
+ "sub": "Kangchenjunga, also spelled Kanchenjunga or Khangchendzonga, is the highest mountain on ground India administers and the third-highest on Earth. Sikkim reveres it and has banned climbing it, so no expedition starts from India. Here are the facts, the five summits, the 1955 promise, the 1977 Indian Army ascent, the 2025 row, and the places in India where you can see it.",
+ "chips": [
+  ["8,586 m", "summit (28,169 ft)"],
+  ["No. 3", "highest in the world"],
+  ["Status", "no permits from India"],
+  ["1955", "first ascent, Brown & Band"],
+  ["See it", "Goecha La · Sandakphu"]
+ ],
+ "hero_alt": "Kangchenjunga at sunrise, followed by generic Himalayan scenes (not Kangchenjunga), with four statements: 8,586 m and world number three, sacred with no permits, see it from Goecha La, climb in Himachal",
+ "ladder_alt": "Animated chart of Kangchenjunga beside Jongsong Peak, Kabru North, Pauhunri, Siniolchu and Pandim, Sikkim's high peaks drawn at their true heights",
+ "q": "How high is Kanchenjunga, and can you climb it from India?",
+ "answer": "<b>Kangchenjunga (Kanchenjunga) is 8,586 m (28,169 ft) high</b>, the third-highest mountain in the world, on the border of Sikkim and Nepal. It is the highest peak on ground India administers. <b>You cannot climb it from India:</b> Sikkim treats it as sacred and has banned climbing since 2001, and expeditions go via Nepal. See where it sits in the <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  ["Height", "8,586 m / 28,169 ft (older surveys gave 8,598 m)"],
+  ["Rank", "3rd-highest in the world; highest on ground India administers"],
+  ["Location", "Sikkim (Mangan district) – Nepal (Taplejung district) border"],
+  ["Prominence", "3,922 m"],
+  ["Status", "No climbing from India: Sikkim ban (Notification 70/HOME/2001); unchanged as of 21 Oct 2026"],
+  ["First ascent", "25 May 1955, Joe Brown & George Band, from Nepal, stopping short of the top"],
+  ["First Indian on top", "Maj. Prem Chand, Indian Army, 31 May 1977, from Sikkim"],
+  ["Classic viewpoints", "Goecha La 4,940 m (Sikkim) · Sandakphu 3,636 m (West Bengal)"]
+ ],
+ "intro": [
+  "<b>Status, checked 21 October 2026: closed from India.</b> The Indian-side route has been closed since 2000, and Sikkim's Notification 70/HOME/2001 bans climbing Kangchenjunga and other sacred peaks under the Places of Worship (Special Provisions) Act, 1991. In August 2019 the Home Ministry's list of 137 opened peaks included Kangchenjunga, but after Sikkim protested, the Indian Mountaineering Foundation (IMF) decided not to issue permits for Sikkim's sacred peaks. No change has been found since.",
+  "<b>The name.</b> Kangchenjunga is usually explained as \"the five treasures of the high snow\", for its five summits. Indian maps and signs often use Kanchenjunga or Khangchendzonga. Until 1852 it was thought to be the highest mountain on Earth; in 1856 it was announced as third, after Everest and K2.",
+  "<b>Is it India's highest?</b> India's official map also shows <b>K2 (8,611 m / 28,251 ft)</b> inside Ladakh, but K2 stands in Gilgit-Baltistan, which Pakistan administers, and is climbed only from Pakistan. So Kangchenjunga is the highest peak on ground India controls, and <a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi (7,816 m)</a> is the highest wholly inside India. Both sit at the top of our <a href=\"/mountains-of-india/\">mountains of India</a> guide."
+ ],
+ "extra_sections": [
+  {
+   "id": "summits",
+   "label": "Five summits",
+   "kicker": "Five treasures",
+   "h2": "The five summits of Kangchenjunga",
+   "html": "<p>Kangchenjunga is a massif, not a single point. Three of its five summits, Main, Central and South, stand on the Sikkim–Nepal border. The West summit (Yalung Kang) and Kangbachen are in Nepal.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Summit</th><th>Height</th><th>Where</th></tr></thead><tbody><tr><td>Kangchenjunga Main</td><td class=\"n\">8,586 m / 28,169 ft</td><td>Sikkim–Nepal border</td></tr><tr><td>Yalung Kang (West)</td><td class=\"n\">8,505 m / 27,904 ft</td><td>Nepal</td></tr><tr><td>Kangchenjunga South</td><td class=\"n\">8,494 m / 27,867 ft</td><td>Sikkim–Nepal border</td></tr><tr><td>Kangchenjunga Central</td><td class=\"n\">8,482 m / 27,828 ft</td><td>Sikkim–Nepal border</td></tr><tr><td>Kangbachen</td><td class=\"n\">7,903 m / 25,928 ft</td><td>Nepal</td></tr></tbody></table></div><div class=\"szm-call\"><p><b>Why climbers stop below the top.</b> The 1955 British team promised the Chogyal of Sikkim to leave the summit itself untouched. Joe Brown and George Band stopped just short of it, and the custom continues on the Nepal side.</p></div>"
+  },
+  {
+   "id": "views",
+   "label": "Where to see it",
+   "kicker": "Viewpoints",
+   "h2": "Where to see Kanchenjunga in India",
+   "html": "<p>You cannot climb it from India, but you can stand face to face with it. Two treks are the classic Indian viewpoints:</p><div class=\"szm-cols\"><div><h3>Goecha La, Sikkim</h3><p>A <b>4,940 m (16,207 ft)</b> pass inside Khangchendzonga National Park. The trek starts at <b>Yuksom</b> and climbs through Sachen, Tshoka, Dzongri and Thansing. From the top you look straight at the south-east face of Kangchenjunga.</p></div><div><h3>Sandakphu, West Bengal</h3><p>At <b>3,636 m (11,929 ft)</b>, the highest point of West Bengal, on the Singalila Ridge. The trek starts at <b>Manebhanjan</b>. Singalila National Park is known for views of both Kangchenjunga and Everest.</p></div></div><div class=\"szm-call\"><p><b>Permits.</b> Goecha La needs Sikkim permits, and foreigners also need a Protected Area Permit, usually issued for groups of two or more through a registered Sikkim agent. Check the current rules with Sikkim Tourism. Base-camp treks to Kangchenjunga itself are in Nepal.</p></div><p>Khangchendzonga National Park, which protects the Indian side of the mountain, became a UNESCO World Heritage Site in 2016.</p>"
+  }
+ ],
+ "table": {
+  "ids": ["kangchenjunga", "jongsong-peak", "kabru-north", "pauhunri", "siniolchu", "pandim", "reo-purgyil", "mount-yunam", "deo-tibba"],
+  "label": "Alternatives",
+  "h2": "Kangchenjunga beside Sikkim's high peaks, and what you can climb instead",
+  "text": [
+   "Sikkim's other giants, <b>Jongsong Peak (7,462 m)</b>, <b>Kabru North (7,412 m)</b>, <b>Pauhunri (7,128 m)</b>, <b>Siniolchu (6,888 m)</b> and <b>Pandim (6,691 m)</b>, are restricted too: Sikkim limits climbing on most of its high peaks. Treat them as mountains to admire. More of them are in our <a href=\"/mountains-of-india/7000m-peaks/\">7000m peaks in India</a> list.",
+   "If you want a real Himalayan summit, look west to Himachal. <a href=\"/mountains-of-india/reo-purgyil/\">Reo Purgyil (6,816 m)</a> is the state's highest and a full expedition. <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba (6,001 m)</a> and <a href=\"/mountains-of-india/yunam-peak/\">Yunam (6,111 m)</a> are natural first 6,000ers. We pair you with a registered Himachal outfitter and certified guides."
+  ]
+ },
+ "difficulty_h2": "How hard is Kangchenjunga?",
+ "difficulty": [
+  "Our dataset grades Kangchenjunga <b>extreme</b>: an 8,000 m expedition with serious objective hazards, and every normal route today starts in Nepal. Wikipedia notes that since the 1990s more than 20% of people attempting the main summit have died.",
+  "The one Indian-side line is the north-east spur from Sikkim, the ridge that turned back German teams in 1929 and 1931 and that the Indian Army climbed in 1977. That route has been closed since 2000, so it is history, not an option."
+ ],
+ "permits_h2": "Permits: why India issues none for Kangchenjunga",
+ "permits": [
+  "No permit is issued from India. Sikkim's 2001 notification bans climbing Kangchenjunga and other peaks it holds sacred, and since 2019 the IMF has said it will not issue permits for Sikkim's sacred peaks. Any \"Kangchenjunga expedition\" sold from the Indian side has no legal basis.",
+  "Expeditions on the Nepal side follow Nepal's own permit system, which this page does not cover. In May 2025 Sikkim's Chief Minister asked the Union Home Minister to press Nepal to stop expeditions; that was a request, not a ban on the Nepal route. For how permits work on India's open peaks, read our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">mountaineering in India for foreign climbers</a>."
+ ],
+ "history_h2": "History of Kangchenjunga: 1852 to today",
+ "history": [
+  "<b>1852–1856:</b> long thought the world's highest mountain, Kangchenjunga is announced as third, after Everest and K2.",
+  "<b>1929 and 1931:</b> German expeditions try the north-east spur from Sikkim and fail.",
+  "<b>25 May 1955:</b> Joe Brown and George Band of a British expedition reach the top from Nepal, stopping just short of the summit as promised to the Chogyal of Sikkim. Norman Hardie and Tony Streather follow on 26 May.",
+  "<b>31 May 1977:</b> an Indian Army team led by Col. Narendra Kumar makes the second ascent, by the north-east spur from Sikkim. <b>Maj. Prem Chand</b> becomes the first Indian on top.",
+  "<b>11 January 1986:</b> Jerzy Kukuczka and Krzysztof Wielicki make the first winter ascent.",
+  "<b>2000–2001:</b> the Indian-side route closes, and Sikkim's Notification 70/HOME/2001 bans climbing its sacred peaks. <b>2019:</b> after Kangchenjunga appears on a list of opened peaks, the IMF says it will not issue permits for Sikkim's sacred peaks.",
+  "<b>May 2025:</b> Indian Army teams, including a joint Indo-Nepal Army team, summit from the Nepal side. The Sikkim Bhutia Lepcha Apex Committee protests, the Chief Minister writes to the Union Home Minister, and a sanctification ceremony follows in June 2025."
+ ],
+ "quote_h2": "Dreaming of Kangchenjunga? Start with a Himachal expedition",
+ "quote_text": "Kangchenjunga is sacred and closed from India, but the big-mountain experience is not. Tell us your dates, team size and experience, and we will suggest a Himachal peak that fits: Deo Tibba, Yunam or Reo Purgyil. We pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Kanchenjunga: questions people ask",
+ "faqs": [
+  ["What is the height of Kangchenjunga?", "8,586 m (28,169 ft). It is the third-highest mountain in the world, after Everest and K2. Older surveys gave 8,598 m."],
+  ["Is Kangchenjunga the highest peak in India?", "It is the highest peak on ground India administers. India's official map also shows K2 (8,611 m) in Ladakh, but K2 stands in Pakistan-administered Gilgit-Baltistan and is climbed from Pakistan. The highest peak wholly inside India is Nanda Devi (7,816 m)."],
+  ["Is Kangchenjunga open to climbers from India?", "No. Sikkim treats it as a sacred peak and has banned climbing it (route closed since 2000, Notification 70/HOME/2001), and since 2019 the IMF has said it will not issue permits for Sikkim's sacred peaks. Expeditions go via Nepal."],
+  ["Who first climbed Kangchenjunga?", "Joe Brown and George Band of a British expedition, on 25 May 1955, from Nepal. They stopped just short of the summit."],
+  ["Why do climbers stop below the summit of Kangchenjunga?", "In 1955 the British team promised the Chogyal of Sikkim to leave the summit untouched, and climbers have kept the custom since."],
+  ["Which Indian first climbed Kangchenjunga?", "Maj. Prem Chand, on an Indian Army expedition led by Col. Narendra Kumar, on 31 May 1977, by the north-east spur from Sikkim."],
+  ["Where can I see Kanchenjunga in India?", "Goecha La (4,940 m) in Sikkim, a trek from Yuksom, and Sandakphu (3,636 m) in West Bengal, a trek from Manebhanjan, are the classic viewpoints."],
+  ["Is Kanchenjunga in Nepal or India?", "Both: the main summit is on the border between Sikkim (Mangan district) and Nepal (Taplejung district). Two of its five summits lie wholly in Nepal."]
+ ],
+ "sources": [
+  ["Wikipedia — Kangchenjunga", "https://en.wikipedia.org/wiki/Kangchenjunga"],
+  ["Wikipedia — 1955 British Kangchenjunga expedition", "https://en.wikipedia.org/wiki/1955_British_Kangchenjunga_expedition"],
+  ["Himalayan Database — Indian Army Kangchenjunga expedition, 1977", "https://himalayan-database.climbing-history.org/expedition/KANG77101/1977"],
+  ["Scroll.in (Aug 2019) — IMF to deny permits for Kanchenjunga after Sikkim protests", "https://scroll.in/latest/935435/top-mountaineering-authority-to-deny-permits-to-climb-kanchenjunga-as-sikkim-protests-lifting-ban"],
+  ["ThePrint — SIBLAC urges government to uphold the ban on climbing Mt Kanchenjunga", "https://theprint.in/india/sikkim-bhutia-lepcha-apex-committee-urges-govt-to-uphold-ban-on-climbing-mt-kanchenjunga/2638144/"],
+  ["Nepal News — Why a Kanchenjunga expedition sparked outrage in Sikkim", "https://english.nepalnews.com/s/explainers/explained-why-a-kanchenjunga-expedition-sparked-outrage-in-indias-sikkim/"],
+  ["ANI (May 2025) — Joint Indian and Nepali Army team summits Mt Kanchenjunga", "https://www.aninews.in/news/world/asia/joint-team-of-indian-and-nepali-army-summits-mt-kanchenjunga20250519224123/"],
+  ["Wikipedia — Goecha La", "https://en.wikipedia.org/wiki/Goecha_La"],
+  ["Wikipedia — Singalila Ridge (Sandakphu)", "https://en.wikipedia.org/wiki/Singalila_Ridge"],
+  ["Wikipedia — K2", "https://en.wikipedia.org/wiki/K2"]
+ ],
+ "sameAs": ["https://en.wikipedia.org/wiki/Kangchenjunga"]
+}
