@@ -24,7 +24,7 @@ Peaks: Oct, Jan, Feb.
 | # | fact | source | as of |
 | --- | --- | --- | --- |
 | 1 | Rishikesh is "often called the yoga capital of the world" | Incredible India, Rishikesh destination page https://www.incredibleindia.gov.in/en/destinations/rishikesh (prod.incredibleindia.gov.in) | read 19 Oct 2026 |
-| 2 | Jolly Grant Airport (Dehradun) 30 km; Delhi 228 km by road; Haridwar 18 km; daily flights Delhi–Jolly Grant; buses from Delhi; trains to Rishikesh station | Incredible India Rishikesh | 19 Oct 2026 |
+| 2 | **Re-sourced 21 Oct 2026 (Research):** Jolly Grant Airport (Dehradun) is about **20 km** from Rishikesh (District Dehradun, Govt of Uttarakhand, Rishikesh page: "located 20 km away from the city center"). The old '30 km' and 'Delhi 228 km' (old Incredible India URL, now 404) are NOT confirmable on any live official page (uttarakhandtourism.gov.in and the new incredibleindia.gov.in/en/uttarakhand/rishikesh give no distances) → do not print a Delhi–Rishikesh km or drive time; wording: 'by private car from Delhi (a full day's drive)'. Haridwar 18 km also unconfirmed → drop. Daily flights Delhi–Jolly Grant; trains to Rishikesh station | https://dehradun.nic.in/tourist-place/rishikesh/ | checked 21 Oct 2026 |
 | 3 | Triveni Ghat = most popular bathing ghat; Ram Jhula (built 1986) and Lakshman Jhula are landmarks; Neelkanth Mahadev temple; Neer Garh waterfall; rafting, bungee, canoeing offered | Incredible India Rishikesh | 19 Oct 2026 |
 | 4 | The Beatles came to Maharishi Mahesh Yogi's ashram in Rishikesh in the 1960s | Incredible India Rishikesh | 19 Oct 2026 |
 | 5 | Rajaji National Park is around 20 km from Rishikesh | Incredible India Rishikesh | 19 Oct 2026 |
