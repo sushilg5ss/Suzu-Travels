@@ -1,0 +1,9 @@
+# ropeways-in-himachal media (Visual Studio night, 22 Oct 2026 IST)
+
+HyperFrames 0.8.85; compositions = ropeways-in-himachal-{hero,explainer,reel}.html.
+- hero.mp4 1.15 MB / hero.webm 1.07 MB / poster.webp 111 KB — 12 s seamless 1920x1080: gondolas over forested hills → hillside town in the Shimla hills at sunrise → gondola above a snowy top → back; right half "Ropeways in Himachal" with a gold cable from LOWER STATION to "TOP: UP TO ~3,200 M" and a gold cabin riding up and back; facts: 5 ropeways running · Longest: Skyway 1.8 km · Solang top ~3,200 m · Ride early: wind stops cables.
+- explainer.mp4 0.34 MB / explainer.webm 0.44 MB / explainer-poster.webp — 12 s "Five you can ride today": Dharamshala Skyway 1.8 km · ~5 min; Jakhu ~5 min ride; Solang to Fatru 1.3 km · ~700 m up; Timber Trail rises 485 m; Naina Devi pilgrim ride → "Coming next" (dotted): Palchan to Rohtang target Oct 2028; Chintpurni · Baba Balak Nath planned; Dhalpur to Peej planned; Bijli Mahadev work suspended; Shimla city ropeway being re-planned → end card "Ride early — wind stops the cables" · We re-check on the day · Price: Get Quote.
+- reel-web.mp4 0.84 MB / reel-web.webm 0.86 MB / reel-web-poster.webp — 15 s 9:16, gold cable + cabin; end card suzutravels.com/adventure/ropeways-in-himachal + HP Tourism reg. no.
+- reel-section.html — ready #reel section for the Page Builder.
+
+Photos are generic gondola photos (not Himachal ropeways) — neutral alt, never labelled as a named ropeway. WP 15163 gondolas over forested hills (Pexels 2131856; small text on cabin) · 15164 gondola over pine forest (Pexels 25515673; cabin carries a resort name — avoid as a big crop) · 15165 Shimla hills hillside town at sunrise (Pexels 30550231, titled Shimla by the photographer) · 15166 gondola above snowy top (Pexels 29952995) · 15167 ropeway tower in haze (Pexels 16574466; weather card) · 15168 red gondola over snowy pines (Pexels 286581).

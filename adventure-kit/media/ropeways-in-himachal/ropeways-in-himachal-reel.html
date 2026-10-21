@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .fd { position: absolute; inset: 0; }
+      .scene img { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+      .navy { position: absolute; inset: 0; background: #0b1f33; }
+      .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.55) 0%, rgba(11,31,51,0) 20%, rgba(11,31,51,0) 50%, rgba(11,31,51,0.88) 76%, rgba(11,31,51,0.96) 100%); }
+      .top { position: absolute; left: 50px; top: 100px; padding: 14px 22px; background: #0b1f33; border-radius: 12px; color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.16em; }
+      .cap { position: absolute; left: 70px; top: 1400px; width: 940px; color: #fff; font-weight: 800; font-size: 100px; line-height: 1.04; letter-spacing: -0.02em; }
+      .cap span { color: #d4a24c; }
+      .chip { position: absolute; left: 70px; top: 1740px; height: 84px; padding: 0 30px; line-height: 84px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 44px; border-radius: 42px; white-space: nowrap; }
+      svg.wave { position: absolute; left: 0; top: 1100px; width: 1080px; height: 200px; overflow: visible; }
+      .endbg { position: absolute; inset: 0; background: #0b1f33; }
+      .e1 { position: absolute; left: 70px; top: 520px; width: 940px; color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.16em; }
+      .e2 { position: absolute; left: 70px; top: 590px; width: 940px; color: #fff; font-weight: 800; font-size: 104px; line-height: 1.04; letter-spacing: -0.02em; }
+      .btn { position: absolute; left: 70px; top: 960px; width: 940px; height: 150px; border-radius: 75px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 60px; display: flex; align-items: center; justify-content: center; }
+      .url { position: absolute; left: 20px; top: 1170px; width: 1040px; color: #fff; font-weight: 800; font-size: 36px; white-space: nowrap; text-align: center; }
+      .reg { position: absolute; left: 70px; top: 1600px; width: 940px; color: rgba(255,255,255,0.88); font-weight: 500; font-size: 34px; text-align: center; line-height: 1.4; white-space: nowrap; }
+      .gl { position: absolute; left: 70px; top: 1320px; width: 940px; height: 6px; background: #d4a24c; border-radius: 3px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="s1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.6" data-track-index="0"><img id="i1" src="assets/r1.jpg" alt="" /></div>
+      <div id="s2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.6" data-track-index="1"><div id="fd2" class="fd"><img id="i2" src="assets/r2.jpg" alt="" /></div></div>
+      <div id="s3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.6" data-track-index="2"><div id="fd3" class="fd"><img id="i3" src="assets/r3.jpg" alt="" /></div></div>
+      <div id="s4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3.4" data-track-index="3"><div id="fd4" class="fd"><img id="i4" src="assets/r4.jpg" alt="" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12.4" data-track-index="4" style="position:absolute;inset:0">
+        <div class="grad" id="grad"></div>
+        <div class="top">ROPEWAYS · HIMACHAL</div>
+        <svg class="wave" viewBox="0 0 1080 200"><line x1="-20" y1="190" x2="1100" y2="40" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" /><g id="cab"><line x1="0" y1="0" x2="0" y2="26" stroke="#fff" stroke-width="5" /><circle cx="0" cy="0" r="8" fill="#fff" /><rect x="-40" y="26" width="80" height="62" rx="12" fill="#d4a24c" /><rect x="-30" y="36" width="26" height="24" rx="4" fill="#0b1f33" /><rect x="4" y="36" width="26" height="24" rx="4" fill="#0b1f33" /></g></svg>
+        <div id="c1" class="cap">Five ropeways, <span>one plan</span></div>
+        <div id="c2" class="cap">Skip the <span>hill traffic</span></div>
+        <div id="c3" class="cap">Snow views from <span>the top</span></div>
+        <div id="c4" class="cap">Wind stops cables: <span>ride early</span></div>
+        <div id="k1" class="chip">Shimla · Dharamshala · Manali</div>
+        <div id="k2" class="chip">Skyway 1.8 km, ~5 min</div>
+        <div id="k3" class="chip">Solang top ~3,200 m</div>
+        <div id="k4" class="chip">We re-check on the day</div>
+      </div>
+      <div id="end" class="clip" data-start="12" data-duration="3" data-track-index="5" style="position:absolute;inset:0">
+        <div id="endbg" class="endbg"></div>
+        <div id="e1" class="e1">ROPEWAYS · HIMACHAL</div>
+        <div id="e2" class="e2">Ropeway + hotel + cab, one quote</div>
+        <div id="btn" class="btn">Get Quote on WhatsApp</div>
+        <div id="url" class="url">suzutravels.com/adventure/ropeways-in-himachal</div>
+        <div id="gl" class="gl"></div>
+        <div id="reg" class="reg">HP Tourism registered travel agent</div><div id="reg2" class="reg" style="top:1650px">Reg. No. DTO-MND-11-243/2022</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#i1", { scale: 1 }, { scale: 1.08, duration: 3.6, ease: "none" }, 0);
+      tl.fromTo("#i2", { scale: 1.08, y: 0 }, { scale: 1, y: 40, duration: 3.6, ease: "none" }, 3);
+      tl.fromTo("#i3", { scale: 1, y: 0 }, { scale: 1.07, y: -30, duration: 3.6, ease: "none" }, 6);
+      tl.fromTo("#i4", { scale: 1.06 }, { scale: 1, duration: 3.4, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 9);
+      const cab = document.getElementById("cab"); const cs = { p: 0 };
+      const mv = () => { const x = -20 + 1120 * cs.p, y = 190 - 150 * cs.p; cab.setAttribute("transform", "translate(" + x.toFixed(2) + "," + y.toFixed(2) + ") rotate(" + (Math.sin(cs.p * Math.PI * 8) * 2).toFixed(2) + ")"); };
+      mv();
+      tl.fromTo(cs, { p: 0.12 }, { p: 0.95, duration: 12.4, ease: "none", immediateRender: false, onUpdate: mv }, 0);
+      tl.set(["#c2", "#c3", "#c4", "#k2", "#k3", "#k4"], { opacity: 0 }, 0);
+      tl.fromTo("#c1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+      tl.fromTo("#k1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.8);
+      tl.to("#k1", { opacity: 0, duration: 0.3 }, 3.0);
+      [["#c1", "#c2", 3.0], ["#c2", "#c3", 6.0], ["#c3", "#c4", 9.0]].forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out", immediateRender: false }, t + 0.3);
+      });
+      tl.fromTo("#k2", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, immediateRender: false }, 3.8);
+      tl.to("#k2", { opacity: 0, duration: 0.3 }, 6.0);
+      tl.fromTo("#k3", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, immediateRender: false }, 6.8);
+      tl.to("#k3", { opacity: 0, duration: 0.3 }, 9.0);
+      tl.fromTo("#k4", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, immediateRender: false }, 9.8);
+      tl.fromTo("#endbg", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 12);
+      tl.from(["#e1", "#e2"], { opacity: 0, y: 30, duration: 0.5, stagger: 0.12, ease: "power3.out" }, 12.3);
+      tl.from("#btn", { opacity: 0, scale: 0.9, duration: 0.5, ease: "back.out(1.6)" }, 12.7);
+      tl.from(["#url", "#gl", "#reg", "#reg2"], { opacity: 0, duration: 0.4, stagger: 0.1 }, 13.0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
