@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "19 Oct 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "21 Oct 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -356,7 +356,7 @@ def hub():
 <section class="szp-sec alt" id="naudevi"><span class="k">नौ देवी दर्शन · Nau Devi Yatra</span><h2>Nau Devi Yatra: nine Devis in nine days</h2>
 <p class="lead">The folk tradition of the "seven sisters" — Vaishno Devi, Jwala Ji, Naina Devi, Chintpurni, Kangra, Chamunda and Mansa Devi — grew to nine to match the nine nights of Navratri, adding Shakumbhari and Kalka. From Chandigarh you can do seven of them in about 7 days.</p>
 <ol class="szp-route">{nau_html}</ol>
-<p class="szp-note">Road distances are approximate (OpenStreetMap routing) — hill roads take longer than the map says. Sharad Navratri 2026 runs 11–19 October and Chaitra Navratri 2027 begins on 7 April: expect the biggest crowds then.</p></section>
+<p class="szp-note">Road distances are approximate (OpenStreetMap routing) — hill roads take longer than the map says. The next Navratri, Chaitra Navratri 2027, begins on 7 April (Sharad Navratri 2026 was 11–19 October): expect the biggest crowds then.</p></section>
 <section class="szp-sec" id="chardham"><span class="k">चार धाम · Char Dham Yatra</span><h2>Char Dham Yatra: 2026 season and 2027 planning</h2>
 <div class="szp-answer"><p>The 2026 yatra opened with <b>Yamunotri and Gangotri on 19 April</b>, <b>Kedarnath on 22 April</b> and <b>Badrinath on 23 April</b>. The 2026 closing dates, announced on Vijayadashami (20 October): <b>Gangotri on 10 November</b>, <b>Kedarnath and Yamunotri on 11 November</b> (Bhai Dooj) and <b>Badrinath on 16 November</b> at 9:37 pm. Registration on the Uttarakhand government portal is compulsory.</p></div>
 <ol class="szp-steps"><li><b>Register first</b>On registrationandtouristcare.uk.gov.in or the Tourist Care Uttarakhand app — for every pilgrim, before you travel.</li>
@@ -404,7 +404,7 @@ def hub():
 <p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Pilgrimage Tours in India: Tirth Yatra Guide & Packages", "url": "https://suzutravels.com" + HUB,
-         "dateModified": "2026-10-19", "inLanguage": "en-IN",
+         "dateModified": "2026-10-21", "inLanguage": "en-IN",
          "about": [{"@type": "HinduTemple", "name": short_name(j) + " Jyotirlinga", "address": {"@type": "PostalAddress", "addressLocality": j["town"], "addressRegion": j["state"], "addressCountry": "IN"}} for j in J],
          "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961"}},
         {"@type": "ItemList", "name": "The 12 Jyotirlingas of India", "numberOfItems": 12,
