@@ -652,5 +652,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-kasol-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@bfd8bdf210ae193fa5afd52b805a779c31c5f375/cab-kit/media/delhi-to-kasol-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@bfd8bdf210ae193fa5afd52b805a779c31c5f375/cab-kit/media/delhi-to-kasol-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@bfd8bdf210ae193fa5afd52b805a779c31c5f375/cab-kit/media/delhi-to-kasol-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
