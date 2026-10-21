@@ -186,7 +186,7 @@ def pdf_card(slug, c):
             'Day by day, what is included and what is not, prices and how booking works — 2 pages. No email or sign-up needed; '
             'print it or share it with whoever you travel with.</p>'
             f'<div class="szi-btns"><a class="szi-btn gold" href="{e(url)}" download target="_blank" rel="noopener">Download PDF</a>'
-            f'<a class="szi-btn ghost" href="{wa(text)}" target="_blank" rel="noopener">Ask about this plan</a></div></div></section>')
+            f'<a class="szi-btn line" href="{wa(text)}" target="_blank" rel="noopener">Ask about this plan</a></div></div></section>')
 
 
 def price_box(p):

@@ -1,4 +1,4 @@
-# Suzu Inbound Kit v0.2.1 — "India for international travellers" (16 Oct 2026; build.py traps + linkcheck fix 17 Oct)
+# Suzu Inbound Kit v0.2.2 — "India for international travellers" (16 Oct 2026; build.py traps + linkcheck fix 17 Oct; itinerary PDFs 21 Oct)
 
 **Goal (Sushil Kumar, 16 Oct 2026):** make suzutravels.com rank for what foreign visitors to India actually search, give them
 honest, complete answers, and turn that trust into enquiries (WhatsApp / email / 20% deposit). Foreign guests book 10–14 day
@@ -54,6 +54,7 @@ Required: `path` (`/india-tours/<slug>/`), `parent` (11411), `kind` (guide | iti
 `facts` (3–4 stats), `sections[]` (each: `id`, `h2`, `kind` = prose | steps | cards | table | days | stats | callout, optional `nav`, `lead`,
 `video` (explainer name in `media/<slug>/`), `note`, `style` = `alt`|`dark`), `faqs` (≥5), `sources` (≥3 `[title, url]`), `verified`, `cta` (`h2`, `text`, `wa`),
 optional `prices` (`h2`, `rows[[option, "from US$449", covers]]`), `trip` (TouristTrip schema), `service` (Service schema), `links` (live slugs), `media` (defaults to slug).
+Itinerary PDF (v0.2.2, 21 Oct): every `kind: itinerary` page with a `days` section gets a printable PDF — `python3 tools/itinerary_pdf.py <slug>` → `pdf/<slug>/`, commit + push, `python3 tools/itinerary_pdf.py --pin <slug> <sha>` → `pdf.json`; gen_pages.py then prints the download card (#itinerary-pdf) right after the days section. Re-render + re-pin when the days/included/prices text changes.
 Build: `python3 gen_pages.py <slug> && python3 build.py <slug>` → `out/<slug>.min.html` (one line, kit CSS/JS inlined). build.py refuses
 placeholders, ₹, banned claims, fact traps, links to unbuilt pages and pages without a hero video.
 
