@@ -1,0 +1,25 @@
+{
+ "id": "2026-10-21-homepage-assistant",
+ "agent": "Interactive sweep (Sushil approved in chat)",
+ "summary": "Homepage 19+20 Oct (Rohtang permit note, composited live dots, Explore-more scroll hint) + Suzu Assistant v1.1 (?v=1.1)",
+ "files": [
+  {
+   "target": "suzu-assistant.js",
+   "source": "suzu-assistant.js",
+   "sha256": "e73f61e564835d67b9ddd7f90d4fdd9dbfb0909fd3f37a9989a9b7dad19de13f",
+   "base_sha256": "5f8cff12853c92007fa9c8cc314efbe6c30f8e7eccbf41f8072c2d88f103c29f",
+   "backup": "suzu-assistant-previous.js",
+   "url": "https://suzutravels.com/suzu-assistant.js",
+   "bytes": 61072
+  },
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "090725a035466d97c9aa2848d94cef9355e7fdc0c62294f62a6f94d8bb08e805",
+   "base_sha256": "9bd26bbb36dfdb84b34f8a97d3f2585abeba0a20558351703bdcd47e2cffb477",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 967736
+  }
+ ]
+}
