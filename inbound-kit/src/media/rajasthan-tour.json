@@ -1,0 +1,27 @@
+{
+ "_note": "Media for /india-tours/rajasthan-tour/ (itinerary). Photos: Hawa Mahal px-29295304 (library) + 4 new Pexels photos (CREDITS 21 Oct 2026), each captioned only with its allowed place. Route stops (lat/lon + days) from research/pages/rajasthan-tour.md 'Media notes'. No cost ladder (no Rajasthan rate in prices.json; made by the Page Builder, one render).",
+ "hero": {
+  "kicker": "RAJASTHAN BY CAR",
+  "scenes": [
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}},
+   {"img": "px-797824.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": -20}},
+   {"img": "px-17374445.jpg", "kind": "tilt", "from": {"y": 900}, "to": {"y": 300}},
+   {"img": "px-5058588.jpg", "kind": "land", "from": {"scale": 1.0, "x": 0, "y": 0}, "to": {"scale": 1.08, "x": 30, "y": 10}},
+   {"img": "px-17831363.jpg", "kind": "land", "from": {"scale": 1.04, "x": -40, "y": 0}, "to": {"scale": 1.12, "x": 40, "y": 20}}
+  ],
+  "steps": ["PINK CITY JAIPUR", "BLUE CITY JODHPUR", "GOLDEN JAISALMER", "DESERT UNDER STARS", "UDAIPUR LAKES"]
+ },
+ "route": {
+  "title": "RAJASTHAN · 12 DAYS",
+  "sub": "Delhi → Jaipur → Jodhpur → Jaisalmer → Udaipur",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Delhi", "sub": "arrive", "day": "Day 1", "lat": 28.6139, "lon": 77.209},
+   {"name": "Jaipur", "sub": "Pink City", "day": "Day 2–3", "lat": 26.9124, "lon": 75.7873},
+   {"name": "Jodhpur", "sub": "Blue City · Mehrangarh", "day": "Day 4–5", "lat": 26.2389, "lon": 73.0243},
+   {"name": "Jaisalmer", "sub": "living fort · dunes", "day": "Day 6–7", "lat": 26.9157, "lon": 70.9083},
+   {"name": "Udaipur", "sub": "City of Lakes · Day 8 drive day", "day": "Day 9–12", "lat": 24.5854, "lon": 73.7125}
+  ]
+ }
+}
