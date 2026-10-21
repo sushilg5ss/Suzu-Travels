@@ -1,7 +1,0 @@
-{
- "attempts": 2,
- "errors": [
-  "2026-10-20T06:33:21Z Hostinger API POST /api/hosting/v1/files/upload-urls -> 500",
-  "2026-10-21T06:29:36Z could not fetch live https://suzutravels.com/plan-your-trip/ (HTTP 0 b'<urlopen error [Errno 101] Network is unreachable>')"
- ]
-}

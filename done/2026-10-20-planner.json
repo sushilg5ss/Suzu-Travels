@@ -12,6 +12,8 @@
  ],
  "attempts": 2,
  "finished_at": "2026-10-21T06:25:05Z",
- "status": "waiting",
- "last_error": "could not fetch live https://suzutravels.com/plan-your-trip/ (HTTP 0 b'<urlopen error [Errno 101] Network is unreachable>')"
+ "status": "superseded",
+ "last_error": "could not fetch live https://suzutravels.com/plan-your-trip/ (HTTP 0 b'<urlopen error [Errno 101] Network is unreachable>')",
+ "superseded_by": "2026-10-21-planner",
+ "note": "v0.9 folded into v1.0 (Trip Planner run 21 Oct 2026); never deployed"
 }
