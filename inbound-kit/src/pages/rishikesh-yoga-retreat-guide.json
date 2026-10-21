@@ -14,16 +14,15 @@
  "hero_alt": "Rishikesh on the Ganga at sunrise, the Laxman Jhula suspension bridge, and the river seen from above",
  "cta1": "How to choose",
  "chips": [
-  ["228 km", "142 miles from Delhi"],
-  ["30 km", "from Dehradun airport"],
+  ["On the Ganga", "the yoga capital of the world"],
+  ["About 20 km", "from Dehradun airport"],
   ["e-Tourist visa", "covers short yoga programmes"],
-  ["Checked", "19 Oct 2026"]
+  ["Checked", "21 Oct 2026"]
  ],
  "q": "How do I choose a yoga retreat in India?",
- "answer": "Start with <b>Rishikesh</b>, on the Ganga 228 km (142 miles) from Delhi and often called the yoga capital of the world. Decide between a short retreat, a 200-hour teacher training or a silent meditation course, then check the school's registration yourself (Yoga Alliance or India's Yoga Certification Board). Travel on an e-Tourist visa, which covers short yoga programmes, and book the car from Delhi separately.",
+ "answer": "Start with <b>Rishikesh</b>, on the Ganga and often called the yoga capital of the world. Decide between a short retreat, a 200-hour teacher training or a silent meditation course, then check the school's registration yourself (Yoga Alliance or India's Yoga Certification Board). Travel on an e-Tourist visa, which covers short yoga programmes, and book the car from Delhi separately (see our <a href=\"https://suzutravels.com/cabs/delhi-to-rishikesh-taxi/\">Delhi to Rishikesh taxi</a> fares).",
  "facts": [
-  ["228 km", "Delhi to Rishikesh by road (142 mi)"],
-  ["30 km", "Jolly Grant airport, Dehradun (19 mi)"],
+  ["~20 km", "Jolly Grant airport, Dehradun (12 mi)"],
   ["Feb–Mar", "International Yoga Festival week"],
   ["Jul–Aug", "monsoon: Ganga rafting usually paused"]
  ],
@@ -75,8 +74,8 @@
    "kind": "table",
    "head": ["Option", "Distance", "Good to know"],
    "rows": [
-    ["Private car from Delhi", "228 km (142 mi) by road", "Door to door from your Delhi hotel or the airport; Haridwar (18 km / 11 mi before Rishikesh) can be a stop on the way"],
-    ["Fly Delhi → Dehradun (Jolly Grant)", "Airport is 30 km (19 mi) from Rishikesh", "Daily flights from Delhi; taxis at the airport, or we meet you"],
+    ["Private car from Delhi", "By road, door to door", "From your Delhi hotel or the airport; Haridwar can be a stop on the way"],
+    ["Fly Delhi → Dehradun (Jolly Grant)", "Airport is about 20 km (12 mi) from Rishikesh", "Daily flights from Delhi; taxis at the airport, or we meet you"],
     ["Train", "To Rishikesh railway station", "Check current trains and book on IRCTC"],
     ["Bus", "Regular and luxury buses from Delhi", "Cheapest; more effort with luggage"]
    ],
@@ -117,7 +116,7 @@
  "faqs": [
   ["Do I need a special visa for a yoga retreat in India?", "For a short-term yoga programme, the e-Tourist Visa is enough — the official list of purposes includes attending a short-term yoga programme. Apply only at indianvisaonline.gov.in, at least 4 days before you arrive. Longer or formal study may need a different visa; check the official site."],
   ["Why Rishikesh for yoga?", "Incredible India, the Government of India's tourism site, describes Rishikesh as often called the yoga capital of the world. It sits on the Ganga, it is where the Beatles came to Maharishi Mahesh Yogi's ashram in the 1960s, and it hosts an International Yoga Festival every February–March."],
-  ["How do I get from Delhi to Rishikesh?", "By private car it is 228 km (142 miles). You can also fly from Delhi to Dehradun's Jolly Grant airport, 30 km (19 miles) from Rishikesh, take a train to Rishikesh station, or a bus from Delhi."],
+  ["How do I get from Delhi to Rishikesh?", "By private car, door to door from your Delhi hotel or the airport. You can also fly from Delhi to Dehradun's Jolly Grant airport, about 20 km (12 miles) from Rishikesh, take a train to Rishikesh station, or a bus from Delhi."],
   ["How do I check that a yoga teacher training is genuine?", "Look the school up yourself on yogaalliance.org if it claims Yoga Alliance registration, or ask whether it or its teachers hold Yoga Certification Board (Ministry of Ayush) accreditation. Read the syllabus, ask who the lead trainers are, and pay only against a written confirmation."],
   ["When is the best time for a retreat in Rishikesh?", "Check your retreat's own dates first. February–March brings the International Yoga Festival; July–August is monsoon, when rafting on the Ganga is usually suspended. Interest from abroad peaks around October, January and February, so book early for those months."],
   ["Is a Vipassana course free?", "Vipassana courses in the Goenka tradition, listed on dhamma.org, are run solely on a donation basis. You apply online and may wait up to two weeks for an acceptance email, so apply well before your flights."],
@@ -126,6 +125,7 @@
  ],
  "sources": [
   ["Incredible India (Government of India) — Rishikesh", "https://www.incredibleindia.gov.in/en/uttarakhand/rishikesh"],
+  ["Dehradun district (official) — Rishikesh and how to reach", "https://dehradun.nic.in/tourist-place/rishikesh/"],
   ["Government of India — e-Visa (official site)", "https://indianvisaonline.gov.in/evisa/tvoa.html"],
   ["Consulate General of India, Sydney — e-Visa purposes (updated 7 Oct 2026)", "https://cgisydney.gov.in/pages/Mjk3"],
   ["Yoga Certification Board, Ministry of Ayush — about YCB", "https://yogacertificationboard.nic.in/about-yoga-certification-board/"],
@@ -134,7 +134,7 @@
   ["Vipassana Meditation (dhamma.org) — course schedules", "https://www.dhamma.org/en/schedules/schmadhura"],
   ["Tribune India (PTI) — rafting suspended in Rishikesh, 25 Jun 2025", "https://www.tribuneindia.com/news/uttarakhand/river-rafting-suspended-in-rishikesh-as-ganga-nears-warning-level"]
  ],
- "verified": "19 Oct 2026",
+ "verified": "21 Oct 2026",
  "cta": {
   "h2": "Found your retreat? We'll get you there",
   "text": "Tell us the retreat dates, how many of you and where you land. You get a plan for the transfer, hotels before and after, and any extension — Taj Mahal, Himalayas or Char Dham — with a US-dollar quote from our office in Himachal.",
