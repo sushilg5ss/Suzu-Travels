@@ -84,7 +84,7 @@ def widget(url, size_kb):
            '.szq-c{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;'
            'background:#0E1B14;color:#F4EEDD;border-radius:18px;padding:18px 20px;box-shadow:0 10px 28px rgba(14,27,20,.12)}'
            '.szq-t{display:flex;gap:14px;align-items:center;min-width:0;flex:1 1 380px}'
-           '.szq-ic{flex:none;width:46px;height:46px;border-radius:12px;background:rgba(226,193,88,.16);color:#E2C158;display:flex;align-items:center;justify-content:center}'
+           '.szq-t .szq-ic{flex:none;width:46px;height:46px;border-radius:12px;background:rgba(226,193,88,.16);color:#E2C158;display:flex;align-items:center;justify-content:center}'
            '.szq-ic svg{width:24px;height:24px}.szq-t b{display:block;color:#fff;font-size:16px;line-height:1.3}'
            '.szq-t span{display:block;color:#DCD3BC;font-size:13px;line-height:1.45;margin-top:3px}'
            '.szq-b{display:flex;gap:10px;flex-wrap:wrap}.szq-b a{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:12px 16px;'
