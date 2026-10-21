@@ -106,5 +106,14 @@
   "blurb": "Ranthambore, Corbett or Central India — seasons and safe booking",
   "added": "2026-10-21",
   "focus": "tiger safari india"
+ },
+ "rajasthan-tour": {
+  "id": 14997,
+  "path": "/india-tours/rajasthan-tour/",
+  "kind": "itinerary",
+  "label": "Rajasthan tour — 12 days",
+  "blurb": "Jaipur, Jodhpur, Jaisalmer and Udaipur by private car in 12 days",
+  "added": "2026-10-21",
+  "focus": "rajasthan tour packages"
  }
 }

@@ -305,10 +305,5 @@
   "text": "Send your travel month, how many days you have and which part of India you are visiting. You get a day-by-day plan with the right park, the permits and a US-dollar quote from our office in Himachal.",
   "wa": "Hello Suzu Travels, I'm planning a tiger safari in India. Dates: ___ , travellers: ___ , country: ___"
  },
- "links": [
-  "golden-triangle-tour",
-  "taj-mahal-tour-from-delhi",
-  "private-driver-india",
-  "best-places-to-visit-in-india"
- ]
+ "links": ["golden-triangle-tour", "rajasthan-tour", "taj-mahal-tour-from-delhi", "private-driver-india", "best-places-to-visit-in-india"]
 }

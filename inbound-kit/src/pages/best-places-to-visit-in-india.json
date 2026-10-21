@@ -401,12 +401,5 @@
   "text": "Send your travel month, how many days you have and what you'd love to see. You get a route across one or two regions, a day-by-day plan and a US-dollar quote from our office in Himachal.",
   "wa": "Hello Suzu Travels, I'm planning a trip to India and choosing where to go. Dates: ___ , travellers: ___ , country: ___"
  },
- "links": [
-  "india-2-week-itinerary",
-  "golden-triangle-tour",
-  "kerala-tour",
-  "goa-holiday",
-  "private-driver-india",
-  "tiger-safari-india"
- ]
+ "links": ["india-2-week-itinerary", "golden-triangle-tour", "rajasthan-tour", "kerala-tour", "goa-holiday", "private-driver-india", "tiger-safari-india"]
 }
