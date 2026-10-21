@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "pagoda",
+  "sky": "snow",
+  "deva": "हिडिम्बा देवी",
+  "kicker": "Dhungri forest · Manali, Himachal Pradesh",
+  "beats": [
+   "Bhima met Hidimbi in the forest",
+   "Their son Ghatotkacha was born",
+   "She meditated on a forest rock",
+   "A pagoda rose over it, 1553"
+  ]
+ },
+ "story": {
+  "title": "The legend of Hidimba Devi",
+  "beats": [
+   {"arch": "pagoda", "sky": "night", "line": "In the deodar forest, Bhima met Hidimbi"},
+   {"arch": "hills", "sky": "dusk", "line": "Their son Ghatotkacha was born"},
+   {"arch": "pagoda", "sky": "snow", "line": "Hidimbi turned to penance on a forest rock"},
+   {"arch": "pagoda", "sky": "dawn", "line": "A temple rose over the rock in 1553"}
+  ]
+ }
+}
