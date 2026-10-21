@@ -1,0 +1,16 @@
+{
+ "id": "2026-10-21-planner",
+ "agent": "Trip Planner",
+ "summary": "v1.0: v0.9 Hindi tips + sight names in Hindi (day plan, titles, also-possible, PDF)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "f9bcfcca9101acd056426876f99b193b2ed181bfbc096feccf5cb8ce5ca501fb",
+   "base_sha256": "c44eee3f24b2a74363eaaf8216bc0131ca39f8060465d803c49d271bbc0a2203",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-10-21T06:37:23Z",
+ "status": "deployed"
+}
