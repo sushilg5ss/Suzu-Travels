@@ -32,7 +32,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 19 | [x] tempo-traveller-chandigarh — LIVE 2026-10-18 https://suzutravels.com/cabs/tempo-traveller-chandigarh/ (ID 14204) | tempo traveller in chandigarh | 2,400 | NEW 1 Oct. Vehicle page (CHD pickup): Shimla/Manali/Dharamshala group trips |
 | 20 | [x] jammu-taxi-service — LIVE 2026-10-19 https://suzutravels.com/cabs/jammu-taxi-service/ (ID 14408) | cab service in jammu | 2,400 (+ jammu taxi service 1,600, jammu to katra fare 880) | NEW 1 Oct. Katra, Patnitop, Srinagar drops |
 | 21 | [x] delhi-to-jammu-taxi — LIVE 2026-10-20 https://suzutravels.com/cabs/delhi-to-jammu-taxi/ (ID 14810) | delhi to jammu taxi | 1,500 | Jammu Tawi, Katra onward |
-| 22 | [ ] delhi-to-kasol-taxi | delhi to kasol taxi | 1,200 | Bhuntar, Manikaran, Tosh |
+| 22 | [x] delhi-to-kasol-taxi — LIVE 2026-10-21 https://suzutravels.com/cabs/delhi-to-kasol-taxi/ (ID 14974) | delhi to kasol taxi | 1,200 | Bhuntar, Manikaran, Tosh |
 | 23 | [ ] manali-to-leh-taxi | manali to leh taxi | 1,100 | Season Jun–Oct only, 2 days via Jispa/Sarchu, permits, AMS note |
 | 24 | [ ] delhi-to-agra-taxi | delhi to agra taxi | 730 | Yamuna Expressway, same-day Taj trip |
 | 25 | [ ] delhi-to-dharamshala-taxi | delhi to dharamshala taxi | 700 | McLeodganj, Bir; overnight bus alternative |
