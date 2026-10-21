@@ -49,7 +49,7 @@
    ["Yamunotri & Gangotri opened 2026", "19 Apr 2026 (Akshaya Tritiya)", "ETV Bharat"],
    ["Kedarnath opened 2026", "22 Apr 2026, about 8 am", "Date fixed on Mahashivratri"],
    ["Badrinath opened 2026", "23 Apr 2026, 6:15 am", "Date fixed on Basant Panchami at Narendranagar"],
-   ["Closing 2026", "Not announced yet", "By custom Gangotri closes on Annakut, Yamunotri and Kedarnath on Bhai Dooj (around 10–11 Nov); Badrinath's date is fixed on Vijayadashami, 20 Oct 2026"],
+   ["Closing 2026", "10–16 Nov 2026", "Announced 20 Oct 2026: Gangotri 10 Nov (Annakut), Yamunotri and Kedarnath 11 Nov (Bhai Dooj), Badrinath 16 Nov at 9:37 pm"],
    ["Opening 2027", "Not announced yet", "Gangotri and Yamunotri open on Akshaya Tritiya; Kedarnath's date is fixed on Mahashivratri (6 Mar 2027), Badrinath's on Basant Panchami (11 Feb 2027)"],
    ["Registration 2027", "Not announced yet", "It usually opens before the season — watch the official portal only"]
   ],
@@ -97,7 +97,7 @@
    ["Senior citizens", "No official age limit has been announced for Char Dham. Gangotri and Badrinath are drive-up; for Yamunotri and Kedarnath use a pony or palki, or the Kedarnath helicopter."],
    ["Helicopter: only IRCTC", "Book Kedarnath helicopter tickets only on heliyatra.irctc.co.in. Ignore WhatsApp sellers and cloned websites offering \"confirmed seats\"."],
    ["What to carry", "The QR registration letter and photo ID, warm layers, a rain jacket, trekking shoes, medicines and ORS, a torch, a power bank and some cash — ATMs and mobile network are patchy."],
-   ["Winter Char Dham", "From November to April the deities are worshipped at their winter seats — Kharsali (Yamuna), Mukhba near Harsil (Ganga), Omkareshwar temple at Ukhimath (Kedarnath) and Pandukeshwar / Jyotirmath (Badrinath) — all by road. 2026–27 winter dates are not announced yet."]
+   ["Winter Char Dham", "From November to April the deities are worshipped at their winter seats — Kharsali (Yamuna), Mukhba near Harsil (Ganga), Omkareshwar temple at Ukhimath (Kedarnath) and Pandukeshwar / Jyotirmath (Badrinath) — all by road. In 2026 the shrines close between 10 and 16 November, and winter worship then moves down."]
   ]
  },
  "itinerary": {
@@ -130,10 +130,11 @@
   ["What is the correct order of the Char Dham Yatra?", "Traditionally west to east: Yamunotri, then Gangotri, then Kedarnath and finally Badrinath."],
   ["How many days are needed for the Char Dham Yatra?", "About 10–12 days by road from Haridwar or Delhi. A Do Dham yatra to Kedarnath and Badrinath takes about 5–6 days."],
   ["Can senior citizens do the Char Dham Yatra?", "Yes, with a medical check-up and careful planning. Gangotri and Badrinath are drive-up; for Yamunotri and Kedarnath use a pony or palki, or the Kedarnath helicopter booked on IRCTC."],
-  ["When do the dhams close in 2026?", "Not announced yet. By custom Gangotri closes on Annakut, Yamunotri and Kedarnath on Bhai Dooj (around 10–11 November), and Badrinath's date is fixed on Vijayadashami, 20 October 2026. See our Char Dham closing dates post."],
+  ["When do the dhams close in 2026?", "The dates were announced on 20 October 2026: Gangotri closes on 10 November (Annakut), Yamunotri and Kedarnath on 11 November (Bhai Dooj), and Badrinath on 16 November at 9:37 pm. Times can shift slightly, so confirm locally. See our Char Dham closing dates post."],
   ["Can I do the Char Dham Yatra in winter?", "Not at the main shrines. In winter the deities are worshipped at Kharsali, Mukhba, Ukhimath and Pandukeshwar / Jyotirmath, which are reachable by road."]
  ],
  "sources": [
+  ["Live SKG News — 2026 Char Dham closing dates announced (20 Oct 2026)", "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/"],
   ["Uttarakhand Tourism — Char Dham registration portal", "https://registrationandtouristcare.uk.gov.in/"],
   ["Shri Badarinath-Kedarnath Temple Committee (BKTC)", "https://www.badrinath-kedarnath.gov.in/"],
   ["IRCTC HeliYatra — official Kedarnath helicopter booking", "https://www.heliyatra.irctc.co.in/"],
@@ -143,6 +144,6 @@
   ["The Daily Guardian — Badrinath opens on 23 April (23 Jan 2026)", "https://thedailyguardian.com/news/badrinath-dham-portals-to-reopen-on-april-23-691250/"],
   ["DD India — Char Dham 2026 footfall (29 Sep 2026)", "https://ddindia.co.in/2026/09/char-dham-yatra-draws-record-pilgrims-badrinath-and-gangotri-set-new-highs/"]
  ],
- "verified": "19 Oct 2026",
+ "verified": "21 Oct 2026",
  "modified": "2026-10-19"
 }

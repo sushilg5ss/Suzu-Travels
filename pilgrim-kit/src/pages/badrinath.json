@@ -57,11 +57,11 @@
   "h2": "Badrinath opening and closing dates",
   "rows": [
    ["Doors opened 2026", "23 Apr 2026, 6:15 am", "Announced on Basant Panchami, 23 Jan 2026, at Narendranagar"],
-   ["Closing 2026", "Not announced yet", "Fixed on Vijayadashami, 20 Oct 2026, at Badrinath; Badrinath usually closes a few weeks after Bhai Dooj (2025: 25 Nov)"],
+   ["Closing 2026", "16 Nov 2026, 9:37 pm", "Announced on Vijayadashami, 20 Oct 2026, at Badrinath; Panch Puja 12–16 Nov, Uddhav and Kubera doli to Pandukeshwar 17 Nov, Shankaracharya gaddi to Narsingh temple, Jyotirmath 18 Nov"],
    ["Opening 2027", "Not announced yet", "Fixed on Basant Panchami, 11 Feb 2027, at Narendranagar — usually late April or early May"],
    ["Winter worship", "Pandukeshwar & Jyotirmath", "Uddhav and Kuber go to Yogdhyan Badri, Pandukeshwar; Adi Shankaracharya's gaddi to Narsingh temple, Jyotirmath"]
   ],
-  "note": "The 2026 opening was 23 April (not 24 April, as some sites say), and \"25 November\" is 2025's closing date. Badrinath closes later than Kedarnath. For the 2026 closing dates as they are announced, see our <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a> post."
+  "note": "The 2026 opening was 23 April (not 24 April, as some sites say), and \"25 November\" is 2025's closing date. Badrinath closes later than Kedarnath (11 Nov 2026). For all the 2026 closing dates, see our <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a> post."
  },
  "darshan": {
   "h2": "Badrinath darshan timings and puja",
@@ -92,7 +92,7 @@
   "cards": [
    ["By air", "Jolly Grant Airport, Dehradun, is the nearest — about 315 km by road."],
    ["By rail", "Yog Nagari Rishikesh station is the nearest railhead; Haridwar has more trains."],
-   ["By road", "Rishikesh → Devprayag → Rudraprayag → Karnaprayag → Jyotirmath → Badrinath, about 298 km. Buses, shared taxis and cars run in season."],
+   ["By road", "Rishikesh → Devprayag → Rudraprayag → Karnaprayag → Jyotirmath → Badrinath, about 298 km. Buses, shared taxis and cars run in season; a <a href=\"https://suzutravels.com/cabs/rishikesh-taxi-service/\">Rishikesh taxi</a> can be booked for the whole run."],
    ["By helicopter", "There is <b>no IRCTC HeliYatra service for Badrinath</b>. Private charters from Dehradun exist — verify the operator yourself and never pay \"seat sellers\" on WhatsApp."]
   ]
  },
@@ -132,7 +132,7 @@
   "sameAs": ["https://en.wikipedia.org/wiki/Badrinath_Temple"]
  },
  "faqs": [
-  ["When will Badrinath close in 2026?", "Not announced yet. The date is fixed on Vijayadashami, 20 October 2026, at Badrinath; the temple usually closes a few weeks after Bhai Dooj, later than Kedarnath. See our Char Dham closing dates 2026 post."],
+  ["When will Badrinath close in 2026?", "On 16 November 2026 at 9:37 pm. The date was announced at Badrinath on Vijayadashami, 20 October 2026. The Panch Puja rituals run from 12 to 16 November; the next day Uddhav and Kubera go in procession to Pandukeshwar, and on 18 November the Shankaracharya gaddi reaches Narsingh temple, Jyotirmath."],
   ["When does Badrinath open in 2027?", "Not announced yet. The date is fixed on Basant Panchami, 11 February 2027, at Narendranagar — usually in late April or early May."],
   ["What is the altitude of Badrinath?", "About 3,100 m (Incredible India gives 3,133 m). It is cold even in June, so carry warm layers."],
   ["What are Badrinath darshan timings?", "Per Incredible India, about 4:30 am to 1 pm and 4:30 pm to 9 pm. Hours can change in peak season and on festival days — confirm locally."],
@@ -142,6 +142,7 @@
   ["Where is Badrinath worshipped in winter?", "At Yogdhyan Badri in Pandukeshwar (Uddhav and Kuber) and at Narsingh temple in Jyotirmath (Adi Shankaracharya's gaddi)."]
  ],
  "sources": [
+  ["Live SKG News — 2026 Char Dham closing dates announced (20 Oct 2026)", "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/"],
   ["Shri Badarinath-Kedarnath Temple Committee (official; puja booking)", "https://badrinath-kedarnath.gov.in/"],
   ["Incredible India — Badrinath Temple", "https://incredibleindia.gov.in/en/uttarakhand/badrinath/badrinath-temple"],
   ["Uttarakhand Tourism — Char Dham registration", "https://registrationandtouristcare.uk.gov.in/"],
@@ -151,5 +152,5 @@
   ["News On AIR — 2025 winter closing dates", "https://www.newsonair.gov.in/uttarakhand-announces-winter-closing-dates-for-kedarnath-badrinath-gangotri-and-yamunotri-temples/"],
   ["Wikipedia — Badrinath Temple", "https://en.wikipedia.org/wiki/Badrinath_Temple"]
  ],
- "verified": "20 Oct 2026"
+ "verified": "21 Oct 2026"
 }

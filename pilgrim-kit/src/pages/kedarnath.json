@@ -58,7 +58,7 @@
   "h2": "Kedarnath opening and closing dates",
   "rows": [
    ["Doors opened 2026", "22 Apr 2026, about 8 am", "Announced on Mahashivratri, 15 Feb 2026"],
-   ["Closing muhurat 2026", "Not announced yet", "BKTC announces it on Vijayadashami, 20 Oct 2026; by custom the temple closes on Bhai Dooj"],
+   ["Closing 2026", "11 Nov 2026 (Bhai Dooj), morning", "Announced on Vijayadashami, 20 Oct 2026 — confirm the exact time locally"],
    ["Opening 2027", "Not announced yet", "Fixed on Mahashivratri, 6 Mar 2027, at Ukhimath — usually late April or early May"],
    ["Winter worship", "Omkareshwar Temple, Ukhimath", "From the closing until the spring reopening"]
   ],
@@ -133,7 +133,7 @@
   "sameAs": ["https://en.wikipedia.org/wiki/Kedarnath_Temple"]
  },
  "faqs": [
-  ["When will Kedarnath close in 2026?", "Not announced yet. By custom the temple closes on Bhai Dooj (around 10–11 November); the BKTC announces the muhurat on Vijayadashami, 20 October 2026. See our Char Dham closing dates 2026 post."],
+  ["When will Kedarnath close in 2026?", "On 11 November 2026, Bhai Dooj, in the morning — the date was announced on Vijayadashami, 20 October 2026; confirm the exact time locally. The deity's doli then moves to the winter seat at Ukhimath. See our Char Dham closing dates 2026 post."],
   ["When will Kedarnath open in 2027?", "Not announced yet. The date is fixed on Mahashivratri, 6 March 2027, at Ukhimath — usually it falls in late April or early May."],
   ["How do I book a Kedarnath helicopter?", "Register for the Char Dham yatra first, then book only on heliyatra.irctc.co.in for Guptkashi, Phata or Sersi. Ignore WhatsApp or agent offers of \"confirmed tickets\"."],
   ["How long is the Kedarnath trek?", "About 16 km one way from Gaurikund, usually 6–8 hours uphill. Ponies, palki and pithoo are available for those who need them."],
@@ -143,6 +143,7 @@
   ["Where is Kedarnath worshipped in winter?", "At the Omkareshwar temple in Ukhimath, from the closing until the spring reopening."]
  ],
  "sources": [
+  ["Live SKG News — 2026 Char Dham closing dates announced (20 Oct 2026)", "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/"],
   ["Shri Badarinath-Kedarnath Temple Committee — Shri Kedarnath Dham", "https://www.badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"],
   ["Uttarakhand Tourism — Char Dham registration", "https://registrationandtouristcare.uk.gov.in/"],
   ["IRCTC HeliYatra — official helicopter booking", "https://www.heliyatra.irctc.co.in/"],
@@ -152,6 +153,6 @@
   ["The Tribune — warning on fake helicopter services", "https://www.tribuneindia.com/news/himachal/beware-of-fake-helicopter-services-warn-police-amid-char-dham-rush/"],
   ["Wikipedia — Kedarnath Temple", "https://en.wikipedia.org/wiki/Kedarnath_Temple"]
  ],
- "verified": "18 Oct 2026",
+ "verified": "21 Oct 2026",
  "modified": "2026-10-17"
 }
