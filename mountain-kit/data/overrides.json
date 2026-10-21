@@ -182,5 +182,32 @@
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
    "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
   ]
+ },
+ "Kang Yatse I": {
+  "first_ascent_year": 1977,
+  "first_ascent_by": "Simon Fraser, Mark Dravers & Mike Ritchie (British; 'probably the first ascent', AAJ 2023)",
+  "height_alternates_m": [
+   6401,
+   6496
+  ],
+  "base": "Chilling → Markha valley → Nimaling, or Shang Sumdo → Gongmaru La",
+  "notable": "True (east) summit of the Kang Yatse massif; 23 Aug 1977 via an east-side couloir and the south ridge. First traverse from Kang Yatse II by HMI instructors, 17 Aug 2018.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kang_Yatze",
+   "https://publications.americanalpineclub.org/articles/13201216466",
+   "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse"
+  ]
+ },
+ "Shivling": {
+  "first_ascent_by": "ITBP team led by Hukam Singh (3 Jun 1974, west ridge)",
+  "height_alternates_m": [],
+  "difficulty_note": "Steep twin-summited rock/ice peak; easiest line (west ridge, the 1974 route) is long, technical and threatened by a serac barrier",
+  "base": "Gangotri → Bhojbasa → Gaumukh → Tapovan",
+  "notable": "Iconic 'Matterhorn of the Himalaya' above Gaumukh; at least ten routes, incl. the 1981 East Ridge and 1993 North Pillar. SW summit 6,501 m.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Shivling_(mountain)",
+   "https://explorersweb.com/climbing-history-of-the-peaks-of-the-2024-cutting-edge-grants-part-1-shivling/",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ]
  }
 }

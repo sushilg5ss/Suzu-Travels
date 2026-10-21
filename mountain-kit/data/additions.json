@@ -1,0 +1,34 @@
+[
+ {
+  "name": "Kang Yatse II",
+  "alt_names": [
+   "Kang Yatze II"
+  ],
+  "height_m": 6250,
+  "band": "6000",
+  "state": "Ladakh",
+  "range": "Zanskar range (Markha)",
+  "district_or_area": "Hemis National Park, Leh",
+  "first_ascent_year": null,
+  "first_ascent_by": "",
+  "status": "climbed",
+  "status_note": "Climbed every summer (e.g. a 16-climber summit day on 1 Aug 2026, TelQuel). Inside Hemis National Park; confirm park entry and Leh district permits for foreigners before travel.",
+  "difficulty": "trekking peak",
+  "difficulty_note": "Alpine PD (Wikipedia): non-technical but glaciated - scree, then a steep snow slope; 6-8 h summit push starting around midnight",
+  "best_season": "mid-Jun–Sep",
+  "base": "Chilling → Markha valley → Nimaling, or Shang Sumdo → Gongmaru La",
+  "open_to_foreigners": "yes",
+  "india_rank": null,
+  "notable": "Lower western summit of the Kang Yatse massif and Ladakh's most-climbed 6,000er since Stok Kangri closed; published heights 6,175-6,250 m.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kang_Yatze",
+   "https://publications.americanalpineclub.org/articles/13201216466",
+   "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse",
+   "https://telquel.ma/instant-t/2026/08/04/alpinisme-a-15-ans-le-marocain-youssef-tazi-atteint-le-sommet-du-kang-yatse-ii_2001991/"
+  ],
+  "height_alternates_m": [
+   6175,
+   6200
+  ]
+ }
+]

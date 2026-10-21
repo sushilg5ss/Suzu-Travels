@@ -2715,18 +2715,19 @@
   "range": "Garhwal Himalaya (Gangotri group)",
   "area": "Uttarkashi",
   "fa": 1974,
-  "fa_by": "ITBP team led by Hukam Singh",
+  "fa_by": "ITBP team led by Hukam Singh (3 Jun 1974, west ridge)",
   "status": "climbed",
   "status_note": "Named in Uttarakhand's Feb 2026 opened-peaks list.",
   "grade": "extreme",
-  "grade_note": "Steep twin-summited rock/ice peak; no easy route",
+  "grade_note": "Steep twin-summited rock/ice peak; easiest line (west ridge, the 1974 route) is long, technical and threatened by a serac barrier",
   "season": "May–Jun & Sep–Oct",
-  "base": "Gangotri → Gaumukh → Tapovan",
+  "base": "Gangotri → Bhojbasa → Gaumukh → Tapovan",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Iconic 'Matterhorn of the Himalaya' above Gaumukh.",
+  "notable": "Iconic 'Matterhorn of the Himalaya' above Gaumukh; at least ten routes, incl. the 1981 East Ridge and 1993 North Pillar. SW summit 6,501 m.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Mount_Shivling",
+   "https://en.wikipedia.org/wiki/Shivling_(mountain)",
+   "https://explorersweb.com/climbing-history-of-the-peaks-of-the-2024-cutting-edge-grants-part-1-shivling/",
    "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
   ]
  },
@@ -3055,6 +3056,7 @@
   "m": 6400,
   "ft": 20997,
   "m_alt": [
+   6401,
    6496
   ],
   "band": "6000",
@@ -3063,19 +3065,21 @@
   "where": "Ladakh",
   "range": "Zanskar range (Markha)",
   "area": "Hemis National Park, Leh",
-  "fa": null,
-  "fa_by": "",
+  "fa": 1977,
+  "fa_by": "Simon Fraser, Mark Dravers & Mike Ritchie (British; 'probably the first ascent', AAJ 2023)",
   "status": "climbed",
   "status_note": "",
   "grade": "technical",
   "grade_note": "True (east) summit needs a knife-edge traverse / AD+ face",
   "season": "Jun–Sep",
-  "base": "Chilling → Markha valley, or Shang Sumdo",
+  "base": "Chilling → Markha valley → Nimaling, or Shang Sumdo → Gongmaru La",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "True (east) summit of the Kang Yatse massif; 23 Aug 1977 via an east-side couloir and the south ridge. First traverse from Kang Yatse II by HMI instructors, 17 Aug 2018.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Kang_Yatze"
+   "https://en.wikipedia.org/wiki/Kang_Yatze",
+   "https://publications.americanalpineclub.org/articles/13201216466",
+   "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse"
   ]
  },
  {
@@ -3367,6 +3371,42 @@
   "notable": "Mythical 'stairway to heaven' of the Pandavas.",
   "sources": [
    "https://en.wikipedia.org/wiki/Swargarohini"
+  ]
+ },
+ {
+  "id": "kang-yatse-ii",
+  "name": "Kang Yatse II",
+  "alt": [
+   "Kang Yatze II"
+  ],
+  "m": 6250,
+  "ft": 20505,
+  "m_alt": [
+   6175,
+   6200
+  ],
+  "band": "6000",
+  "state": "ladakh",
+  "state_label": "Ladakh",
+  "where": "Ladakh",
+  "range": "Zanskar range (Markha)",
+  "area": "Hemis National Park, Leh",
+  "fa": null,
+  "fa_by": "",
+  "status": "climbed",
+  "status_note": "Climbed every summer (e.g. a 16-climber summit day on 1 Aug 2026, TelQuel). Inside Hemis National Park; confirm park entry and Leh district permits for foreigners before travel.",
+  "grade": "trekking peak",
+  "grade_note": "Alpine PD (Wikipedia): non-technical but glaciated - scree, then a steep snow slope; 6-8 h summit push starting around midnight",
+  "season": "mid-Jun–Sep",
+  "base": "Chilling → Markha valley → Nimaling, or Shang Sumdo → Gongmaru La",
+  "foreigners": "yes",
+  "rank": null,
+  "notable": "Lower western summit of the Kang Yatse massif and Ladakh's most-climbed 6,000er since Stok Kangri closed; published heights 6,175-6,250 m.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kang_Yatze",
+   "https://publications.americanalpineclub.org/articles/13201216466",
+   "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse",
+   "https://telquel.ma/instant-t/2026/08/04/alpinisme-a-15-ans-le-marocain-youssef-tazi-atteint-le-sommet-du-kang-yatse-ii_2001991/"
   ]
  },
  {
