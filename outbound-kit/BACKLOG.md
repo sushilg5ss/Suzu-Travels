@@ -5,7 +5,7 @@
 | 1 | Dubai & UAE tour packages from India — /dubai-tour-packages/ | new country page | live | 2026-10-18 · page 14234 · `pages/gen_dubai.py` · hub tile + 9 "Explore more" grids link to it · visa checked 18 Oct 2026 (GDRFA Dubai) — re-check every ~3 months |
 | 2 | Turkey tour packages from India — /turkey-tour-packages/ | new country page | live | 2026-10-19 · page 14629 · `pages/gen_turkey.py` · hub tile + 9 country "Explore more" grids + Dubai page link to it · visa checked 19 Oct 2026 (MFA Türkiye + Turkish Embassy New Delhi) — re-check every ~3 months |
 | 3 | Georgia tour packages from India — /georgia-tour-packages/ | new country page | live | 2026-10-20 · page 14841 · `pages/gen_georgia.py` · published on Sushil's go-ahead · hub tile + credits, 9 country + Dubai + Turkey "Explore more" grids link to it · visa checked 20 Oct 2026 (evisa.gov.ge, MFA Georgia Ordinance 256, georgia.travel) — re-check every ~3 months |
-| 4 | Azerbaijan (Baku) tour packages from India — /azerbaijan-tour-packages/ | new country page | todo | |
+| 4 | Azerbaijan (Baku) tour packages from India — /azerbaijan-tour-packages/ | new country page | live | 2026-10-21 · page 15017 · `pages/gen_azerbaijan.py` · hub tile + credits, 9 country + Dubai + Turkey + Georgia "Explore more" grids link to it · visa checked 21 Oct 2026 (evisa.gov.az conditions + MFA Azerbaijan embassy pages: India eligible for ASAN e-visa, not visa-on-arrival) — re-check every ~3 months |
 | 5 | Japan tour packages from India — /japan-tour-packages/ | new country page | todo | long visa lead time — say so |
 | 6 | Europe multi-country tour packages — /europe-tour-packages/ | new country page | todo | Schengen appointment lead time |
 | 7 | Country pages: add 6-photo real gallery (Unsplash/Pexels) under "Why <country>" on the 8 pages without guest photos | upgrade | todo | Nepal already has Suzu guest photos |
@@ -17,3 +17,4 @@
 | 13 | Existing 9 country pages: add Dubai to the hub planner/related blocks consistently; consider moving `.sx` pages to the `.hx` look (Dubai page = template via `gen_dubai.py`) | upgrade | todo | |
 | 14 | Turkey page: add a Suzu guest photo block once Sushil shares real Turkey trip photos | upgrade | todo | no guest photos for Turkey yet |
 | 15 | Georgia page: add a Suzu guest photo block once Sushil shares real Georgia trip photos | upgrade | todo | no guest photos for Georgia yet |
+| 16 | Azerbaijan page: add Gobustan / Yanar Dag / Sheki photos when free real photos are found (none verified on Unsplash on 21 Oct) and a Suzu guest photo block once Sushil shares real trip photos | upgrade | todo | |
