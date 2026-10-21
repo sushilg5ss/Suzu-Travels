@@ -20,6 +20,7 @@ import html, json, os, pathlib, re, sys, urllib.parse
 KIT = pathlib.Path(__file__).resolve().parent
 LIVE = json.loads((KIT / "live.json").read_text(encoding="utf-8")) if (KIT / "live.json").exists() else {}
 MEDIA = json.loads((KIT / "media.json").read_text(encoding="utf-8")) if (KIT / "media.json").exists() else {}
+PDFS = json.loads((KIT / "pdf.json").read_text(encoding="utf-8")) if (KIT / "pdf.json").exists() else {}  # itinerary PDFs (tools/itinerary_pdf.py)
 PRICES = json.loads((KIT / "data" / "prices.json").read_text(encoding="utf-8")) if (KIT / "data" / "prices.json").exists() else {}
 REPO = "sushilg5ss/suzu-travels"
 WA = "https://wa.me/917087488961?text="
@@ -172,6 +173,22 @@ def section(s, slug):
     return f'<section class="{cls}" id="{e(s["id"])}">{body}</section>'
 
 
+def pdf_card(slug, c):
+    """Download card after the `days` section of an itinerary page whose PDF is pinned in pdf.json (Reviewer 21 Oct 2026)."""
+    sha = PDFS.get(slug)
+    if not sha:
+        return ""
+    fname = f"{slug}{'' if 'itinerary' in slug else '-itinerary'}-suzu-travels.pdf"
+    url = f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/inbound-kit/pdf/{slug}/{fname}"
+    n = len(next(s for s in c["sections"] if s.get("kind") == "days")["days"])
+    text = f"Hello Suzu Travels, I downloaded the {n}-day itinerary ({c['label']}). Country: ___ , travel dates: ___ , travellers: ___"
+    return (f'<section class="szi-sec" id="itinerary-pdf"><div class="szi-call"><p><b>Take this plan with you: {n}-day itinerary (PDF).</b> '
+            'Day by day, what is included and what is not, prices and how booking works — 2 pages. No email or sign-up needed; '
+            'print it or share it with whoever you travel with.</p>'
+            f'<div class="szi-btns"><a class="szi-btn gold" href="{e(url)}" download target="_blank" rel="noopener">Download PDF</a>'
+            f'<a class="szi-btn ghost" href="{wa(text)}" target="_blank" rel="noopener">Ask about this plan</a></div></div></section>')
+
+
 def price_box(p):
     rows = [[e(a), f"<b>{e(b)}</b>", c] for a, b, c in p["rows"]]
     return (f'<section class="szi-sec alt" id="prices"><span class="k">Prices</span><h2>{e(p["h2"])}</h2>'
@@ -206,7 +223,7 @@ def content_page(slug):
             + f'<div class="szi-btns"><a class="szi-btn gold" href="#overview">{e(c.get("cta1", "Read the guide"))}</a><a class="szi-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Ask a local on WhatsApp</a></div>{trust(c.get("verified"))}</div></section>')
     over = (f'<section class="szi-sec" id="overview"><div class="szi-answer"><span class="k">In short</span><h2>{e(c["q"])}</h2><p>{c["answer"]}</p></div>'
             + (stats(c["facts"]) if c.get("facts") else "") + "</section>")
-    secs = [section(s, m) for s in c["sections"]]
+    secs = [section(s, m) + (pdf_card(slug, c) if s.get("kind") == "days" and c.get("kind") == "itinerary" else "") for s in c["sections"]]
     pb = price_box(c["prices"]) if c.get("prices") else ""
     fq = f'<section class="szi-sec alt" id="faq"><span class="k">FAQ</span><h2>{e(c.get("faq_h2", "Questions travellers ask"))}</h2>{faq(c["faqs"])}</section>'
     links = "".join(tile(LIVE[s]) for s in c.get("links", []) if s in LIVE) + f'<a class="szi-link" href="{HUB}"><span class="n">All India tours for international travellers</span><span class="c">Golden Triangle, Himalayas, Kashmir, Char Dham &amp; private driver trips</span></a>'
