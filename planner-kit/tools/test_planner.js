@@ -98,6 +98,9 @@ const { chromium, devices } = require('playwright');
       const hi = { lang: await hp.evaluate(() => document.documentElement.lang), h1: deva(await hp.textContent('#tp-h1')), day1: await hp.textContent('.tl-day h4'),
         warnHi: (await hp.$$eval('.warn', x => x.map(y => y.textContent))).every(deva), samePrice: (await hp.textContent('#price .big')).replace(/[^\d]/g, '') === enPrice.replace(/[^\d]/g, ''),
         cta: await hp.textContent('#price [data-act="price"]') };
+      // v1.0: sight names in the day plan are Hindi too (none of the data's English sight names left on screen)
+      hi.sightEnglishLeft = await hp.evaluate(() => { const names = SuzuTripPlanner.data.places.flatMap(p => p.sights.map(s => s.n.split(' (')[0])).filter(n => n.length > 5 && !/^[A-Z]{2,}/.test(n)); const t = [...document.querySelectorAll('.tl-day')].map(x => x.textContent).join(' | '); return [...new Set(names.filter(n => t.includes(n)))]; });
+      hi.sightsHi = hi.sightEnglishLeft.length === 0;
       await hp.screenshot({ path: `${out}/${name}-7-hindi.png`, fullPage: true });
       await hp.click('#price [data-act="pdf"]'); await hp.waitForTimeout(200); await hp.fill('#ld-name', 'TEST Claude'); await hp.fill('#ld-ph', '9876543210'); await hp.click('#ld-go'); await hp.waitForTimeout(2600);
       const ld = await hp.evaluate(() => window.__tpLastLead);
