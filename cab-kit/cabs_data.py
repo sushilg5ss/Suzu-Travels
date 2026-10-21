@@ -139,6 +139,7 @@ PLACES = {
     "Chandigarh Airport": (30.67, 76.79),
     "Patnitop": (33.09, 75.33), "Sanasar": (33.13, 75.26), "Kud": (33.08, 75.29), "Reasi": (33.08, 74.84), "Shiv Khori": (33.17, 74.62), "Jammu Airport": (32.69, 74.84),
     "Dasuya": (31.82, 75.65), "Mukerian": (31.95, 75.62), "Lakhanpur": (32.40, 75.60), "Kathua": (32.37, 75.52), "Samba": (32.56, 75.12),
+    "Jari": (31.99, 77.24), "Manikaran": (32.03, 77.35),
     "Neelkanth": (30.08, 78.34), "Chopta": (30.47, 79.21), "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
 }
 
@@ -156,7 +157,7 @@ ROUTES = [
     dict(slug="shimla-to-manali-taxi", a="Shimla", b="Manali", km=250, t="7–8 hrs", f=1.3),
     dict(slug="kalka-to-shimla-taxi", a="Kalka", b="Shimla", km=85, t="2.5–3 hrs", f=1.1),
     dict(slug=None, a="Delhi", b="Dharamshala", km=475, t="9–10 hrs", f=1.0),
-    dict(slug=None, a="Delhi", b="Kasol", km=520, t="11–12 hrs", f=1.0),
+    dict(slug="delhi-to-kasol-taxi", a="Delhi", b="Kasol", km=520, t="11–12 hrs", f=1.0),
     dict(slug=None, a="Manali", b="Leh", km=430, t="2 days (Jun–Oct)", f=1.6),
     dict(slug=None, a="Chandigarh", b="Dharamshala", km=240, t="5.5–6.5 hrs", f=1.1),
     dict(slug=None, a="Pathankot", b="Dalhousie", km=80, t="2.5–3 hrs", f=1.1),
