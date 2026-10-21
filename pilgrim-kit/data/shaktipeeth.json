@@ -872,7 +872,7 @@
       },
       "bhog": "11:00-11:15",
       "note": "Per Shri Mata Mansa Devi Shrine Board website.",
-      "as_of": "2026-10-08",
+      "as_of": "2026-10-21",
       "source": "https://mansadevi.org.in/"
     },
     "festivals": [
@@ -917,12 +917,13 @@
       }
     ],
     "how_to_reach": {
-      "air": "Chandigarh airport - distance not verified",
-      "rail": "Chandigarh / Panchkula area stations - distance not verified",
-      "road": "Delhi ~272 km (OSRM); Kalka Kali Mata ~25 km (OSRM); Naina Devi ~110 km (OSRM); ~10 km from Chandi Mandir (Wikipedia)",
+      "air": "Chandigarh airport ~19 km (OSRM 2026-10-21)",
+      "rail": "Chandigarh railway station ~13 km (OSRM 2026-10-21); Kalka ~25 km",
+      "road": "Delhi ~272 km (OSRM); Kalka Kali Mata ~25 km (OSRM); Naina Devi ~110 km (OSRM); ~10 km from Chandi Mandir (Wikipedia); ~4 km from Panchkula bus stand, ~10 km from Chandigarh bus terminus (Wikipedia, read 2026-10-21)",
       "sources": [
         "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir",
-        "OSRM/OpenStreetMap router, computed 2026-10-08"
+        "OSRM/OpenStreetMap router, computed 2026-10-08",
+        "OSRM/OpenStreetMap router, computed 2026-10-21"
       ]
     },
     "nearby": [
@@ -956,10 +957,13 @@
         "a": "Maharaja Gopal Singh of Mani Majra, between 1811 and 1815."
       }
     ],
-    "unverified": [
-      "Air/rail distances"
-    ],
-    "as_of": "2026-10-08"
+    "unverified": [],
+    "as_of": "2026-10-21",
+    "shrine_act": {
+      "value": "Shri Mata Mansa Devi Shrine Act, Haryana Act No. 14 of 1991",
+      "source": "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir",
+      "as_of": "2026-10-21"
+    }
   },
   {
     "slug": "kali-mata-kalka",

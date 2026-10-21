@@ -12,32 +12,64 @@
         "yamunotri": {
           "opened": "2026-04-19",
           "opening_time": "12:35",
-          "closing": null,
-          "closing_status": "not yet announced; traditionally Bhai Dooj = 2026-11-11 per Delhi panchang"
+          "closing": "2026-11-11",
+          "closing_status": "announced 20 Oct 2026 by the Shri Gangotri & Yamunotri temple committee (Bhai Dooj); muhurat 10:28 am per Subkuz only",
+          "closing_time": "10:28",
+          "closing_sources": [
+            "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/",
+            "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177",
+            "https://subkuz.com/news/hindi/details/char-dham-yatra-2026-badrinath-kedarnath-yamunotri-closing-dates/225571"
+          ],
+          "closing_as_of": "2026-10-21"
         },
         "gangotri": {
           "opened": "2026-04-19",
           "opening_time": "12:15",
-          "closing": null,
-          "closing_status": "not yet announced; traditionally Annakut/Govardhan Puja = 2026-11-10 per Delhi panchang"
+          "closing": "2026-11-10",
+          "closing_status": "announced 20 Oct 2026 by the Shri Gangotri & Yamunotri temple committee (Annakut/Govardhan Puja); time not published yet",
+          "closing_sources": [
+            "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/",
+            "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177"
+          ],
+          "closing_as_of": "2026-10-21"
         },
         "kedarnath": {
           "opened": "2026-04-22",
           "opening_time": "08:00",
-          "closing": null,
-          "closing_status": "not yet announced; traditionally Bhai Dooj = 2026-11-11; formal date expected on Vijayadashami 2026-10-20"
+          "closing": "2026-11-11",
+          "closing_status": "announced on Vijayadashami 20 Oct 2026 (Bhai Dooj); 8:30 am per liveskgnews only - print 'morning' or 'confirm time'",
+          "closing_time": "08:30",
+          "closing_sources": [
+            "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/",
+            "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177",
+            "https://subkuz.com/news/hindi/details/char-dham-yatra-2026-badrinath-kedarnath-yamunotri-closing-dates/225571"
+          ],
+          "closing_as_of": "2026-10-21"
         },
         "badrinath": {
           "opened": "2026-04-23",
           "opening_time": "06:15",
-          "closing": null,
-          "closing_status": "not yet announced; to be fixed on Vijayadashami 2026-10-20 at Badrinath"
+          "closing": "2026-11-16",
+          "closing_status": "announced on Vijayadashami 20 Oct 2026 at Badrinath by Rawal Amarnath Namboodiri (BKTC ceremony); Panch Puja 12-16 Nov; Uddhav/Kubera doli to Pandukeshwar 17 Nov; Shankaracharya gaddi to Narsingh temple Jyotirmath 18 Nov",
+          "closing_time": "21:37",
+          "closing_sources": [
+            "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/",
+            "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177",
+            "https://subkuz.com/news/hindi/details/char-dham-yatra-2026-badrinath-kedarnath-yamunotri-closing-dates/225571"
+          ],
+          "closing_as_of": "2026-10-21"
         },
-        "season_footfall": "53,23,401 pilgrims across four dhams per DD India report of 2026-09-29 (Badrinath 18.10 lakh+, Kedarnath 15.57 lakh, Gangotri 8.41 lakh record, Yamunotri 7.5 lakh+)"
+        "season_footfall": "53,23,401 pilgrims across four dhams per DD India report of 2026-09-29 (Badrinath 18.10 lakh+, Kedarnath 15.57 lakh, Gangotri 8.41 lakh record, Yamunotri 7.5 lakh+)",
+        "madhyamaheshwar_closing": {
+          "closing": "2026-11-16",
+          "source": "https://subkuz.com/news/hindi/details/char-dham-yatra-2026-badrinath-kedarnath-yamunotri-closing-dates/225571",
+          "as_of": "2026-10-21",
+          "note": "one source only"
+        }
       },
       "dates_2027": null,
-      "source": "ETV Bharat 2026-04-19 (Gangotri/Yamunotri opening & times); Sunday Guardian 2026-02-15 (Kedarnath 22 Apr 8 AM, announced on Mahashivratri); The Daily Guardian 2026-01-23 (Badrinath 23 Apr 6:15 AM, announced Basant Panchami at Narendranagar); DD India 2026-09-29 (no closing date yet); festival dates: dekhopanchang.com (Dussehra 2026-10-20, Bhai Dooj 2026-11-11 Delhi), haindavam.org (Govardhan Puja 2026-11-10)",
-      "as_of": "2026-10-08",
+      "source": "ETV Bharat 2026-04-19 (Gangotri/Yamunotri opening & times); Sunday Guardian 2026-02-15 (Kedarnath 22 Apr 8 AM, announced on Mahashivratri); The Daily Guardian 2026-01-23 (Badrinath 23 Apr 6:15 AM, announced Basant Panchami at Narendranagar); DD India 2026-09-29 (no closing date yet); festival dates: dekhopanchang.com (Dussehra 2026-10-20, Bhai Dooj 2026-11-11 Delhi), haindavam.org (Govardhan Puja 2026-11-10); closing dates 2026: liveskgnews 2026-10-20, Times Now Hindi 2026-10-20, Subkuz 2026-10-21",
+      "as_of": "2026-10-21",
       "notes": "2027 opening dates: not yet announced (Kedarnath fixed on Mahashivratri 2027, Badrinath on Basant Panchami 2027, Gangotri/Yamunotri on Akshaya Tritiya 2027). Some calendars put Govardhan Puja 2026 on 9 Nov and Bhai Dooj on 10 Nov - treat temple committee announcements as final."
     },
     "registration": {
@@ -116,7 +148,7 @@
       },
       {
         "q": "When does Kedarnath close in 2026?",
-        "a": "Not officially announced as of 8 Oct 2026. Kedarnath traditionally closes on Bhai Dooj (11 Nov 2026 per panchang); the formal date is announced on Vijayadashami (20 Oct 2026)."
+        "a": "On Bhai Dooj, 11 November 2026 (announced on Vijayadashami, 20 Oct 2026). Badrinath closes on 16 November 2026 at 9:37 pm; Gangotri on 10 Nov and Yamunotri on 11 Nov."
       },
       {
         "q": "What is the correct order of the Char Dham?",
