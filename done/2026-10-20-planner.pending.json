@@ -10,8 +10,8 @@
    "url": "https://suzutravels.com/plan-your-trip/"
   }
  ],
- "attempts": 1,
- "finished_at": "2026-10-20T06:32:47Z",
+ "attempts": 2,
+ "finished_at": "2026-10-21T06:25:05Z",
  "status": "waiting",
- "last_error": "Hostinger API POST /api/hosting/v1/files/upload-urls -> 500"
+ "last_error": "could not fetch live https://suzutravels.com/plan-your-trip/ (HTTP 0 b'<urlopen error [Errno 101] Network is unreachable>')"
 }
