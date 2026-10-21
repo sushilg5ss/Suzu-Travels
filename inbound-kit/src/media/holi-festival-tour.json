@@ -1,0 +1,41 @@
+{
+ "_note": "Media for /india-tours/holi-festival-tour/ (guide). Photos: 4 new Pexels (CREDITS 21 Oct 2026): px-16228271 + px-16228306 Holi in Vrindavan (saikat ghosh), px-2635390 Holi crowd 'India' (Yogendra Singh — generic caption only), px-3906333 hands with gulal (Nishant Das) + library Taj px-33777272. No Barsana/Lathmar photo with a place credit → no Lathmar caption. Route stops from research/pages/holi-festival-tour.md 'Media notes'. Cost ladder words only (no Holi rate in prices.json).",
+ "hero": {
+  "kicker": "HOLI IN INDIA",
+  "scenes": [
+   {"img": "px-16228271.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 560}},
+   {"img": "px-16228306.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": -20}},
+   {"img": "px-3906333.jpg", "kind": "land", "from": {"scale": 1.12, "x": 60, "y": 0}, "to": {"scale": 1.04, "x": 100, "y": 10}},
+   {"img": "px-2635390.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 40, "y": 20}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}}
+  ],
+  "steps": ["HOLI · 23 MAR 2027", "COLOURS OF BRAJ", "A FISTFUL OF GULAL", "WATCH FROM ABOVE", "THEN THE TAJ"]
+ },
+ "route": {
+  "title": "HOLI IN BRAJ · 6 DAYS",
+  "sub": "Delhi → Mathura & Vrindavan → Barsana → Agra → Jaipur",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Delhi", "sub": "arrive", "day": "Day 1", "lat": 28.6139, "lon": 77.209},
+   {"name": "Vrindavan", "sub": "temples · Holi", "day": "Day 2–3", "lat": 27.565, "lon": 77.6593},
+   {"name": "Mathura", "sub": "Braj base", "day": "Day 2–3", "lat": 27.4924, "lon": 77.6737},
+   {"name": "Barsana", "sub": "Lathmar Holi", "day": "Day 3", "lat": 27.649, "lon": 77.379},
+   {"name": "Agra", "sub": "Taj Mahal", "day": "Day 4", "lat": 27.1751, "lon": 78.0421},
+   {"name": "Jaipur", "sub": "Pink City", "day": "Day 5–6", "lat": 26.9124, "lon": 75.7873}
+  ]
+ },
+ "cost": {
+  "kicker": "WHAT'S INCLUDED",
+  "title": "A Holi trip, planned for you",
+  "items": [
+   {"label": "Private car + driver", "sub": "every day of the trip, fuel, tolls and parking"},
+   {"label": "Local Braj guide", "sub": "with you on the Holi days"},
+   {"label": "Hotel nights", "sub": "with breakfast · Braj hotels fill early"},
+   {"label": "Rooftop viewpoints", "sub": "arranged where possible, to watch from above"},
+   {"label": "Taj & monument tickets", "sub": "booked for you if you like", "tag": "optional"},
+   {"label": "Flights, visa, tips", "sub": "e-Visa only at indianvisaonline.gov.in", "tag": "your own"}
+  ],
+  "end": "Quoted on request · plan + US$ total before you pay"
+ }
+}
