@@ -1,0 +1,85 @@
+/* [DA-2026-10-21] Plain guide pages on the default page template (e.g. /himachal-tour-package-from-delhi/, /himachal-tour-package-for-family/, /himachal-tour-package-5-nights-6-days/, /dharamshala-vs-dalhousie/): centred ~75-character reading column, brand fonts, readable text, visible links, brand tables that scroll on phones, Emerald & Gold callouts and quote/WhatsApp buttons — pages: body.page-template-default whose .entry-content starts with a plain <p> and holds no .szc / .sza / .pl wrapper (never /cabs/, /adventure/, legal/certificates, /contact/, quote page, intl or landing pages with their own <style>) */
+/* Why: these pages used the unloaded 'Inter' font, slate-grey text (~4:1), links the same grey as the text with no underline, 170-character lines on desktop, a 4-column table squeezed to 1–2 words per line on phones, and off-brand blue (#1b6ca8) table headers, callouts and buttons. Text, links, headings and order unchanged. */
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) {
+  max-width: 50rem !important; margin-left: auto !important; margin-right: auto !important;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .page-header .entry-title {
+  font-family: 'Sora', 'Plus Jakarta Sans', sans-serif; color: var(--dark, #122615);
+  font-size: clamp(1.9rem, 1.3rem + 2.4vw, 2.75rem); line-height: 1.18; letter-spacing: -0.02em;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.75;
+  color: var(--mid, #4A5D4E); overflow-wrap: break-word; max-width: 100%;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(p, li) { color: var(--mid, #4A5D4E); font-family: inherit; font-size: inherit; line-height: inherit; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(p, li) strong { color: var(--dark, #122615); }
+/* Headings: brand type scale, gold rule above each section */
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > h2 {
+  font-family: 'Sora', sans-serif; color: var(--dark, #122615); font-size: clamp(1.45rem, 1.15rem + 1.4vw, 1.95rem);
+  line-height: 1.25; letter-spacing: -0.01em; margin: 2.6rem 0 0.9rem; scroll-margin-top: 96px;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > h2::before {
+  content: ""; display: block; width: 40px; height: 3px; margin-bottom: 14px; border-radius: 2px; background: var(--amber, #D4AF37);
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > h3 {
+  font-family: 'Sora', sans-serif; color: var(--teal-deep, #1B5E20); font-size: clamp(1.15rem, 1.05rem + 0.6vw, 1.35rem);
+  line-height: 1.35; margin: 1.8rem 0 0.6rem; scroll-margin-top: 96px;
+}
+/* Links: visibly links (they were the same grey as the text) */
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a:not([style]) {
+  color: var(--teal-deep, #1B5E20); text-decoration: underline; text-decoration-thickness: 1px;
+  text-underline-offset: 3px; text-decoration-color: rgba(46, 125, 50, 0.45);
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a:not([style]):hover { color: var(--teal, #2E7D32); text-decoration-color: currentColor; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a:focus-visible { outline: 2px solid var(--amber, #D4AF37); outline-offset: 2px; border-radius: 3px; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(ul, ol) { padding-left: 1.3rem; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content li { margin-bottom: 0.45rem; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content li::marker { color: var(--amber-deep, #B8860B); font-weight: 700; }
+/* Tables: same brand style as blog tables (overrides the inline blue) */
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content table {
+  width: 100% !important; margin: 24px 0 28px !important; border-collapse: separate !important; border-spacing: 0;
+  border: 1px solid rgba(27, 94, 32, 0.18) !important; border-radius: 12px; overflow: hidden;
+  font-size: 0.95rem !important; line-height: 1.55; background: #fff; box-shadow: 0 2px 10px rgba(18, 38, 21, 0.06);
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(th, td) {
+  padding: 12px 14px !important; border: 0 !important; border-bottom: 1px solid rgba(27, 94, 32, 0.10) !important;
+  text-align: left !important; vertical-align: top; color: var(--mid, #4A5D4E);
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(thead th, table tr:first-child > th) {
+  background: var(--teal-deep, #1B5E20) !important; color: #fff !important; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.88rem;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(thead, thead tr) { background: var(--teal-deep, #1B5E20) !important; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content tbody tr { background: #fff !important; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content tbody tr:nth-child(even) { background: var(--cream, #F9FAF5) !important; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content tbody tr:last-child > td { border-bottom: 0 !important; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content td strong { color: var(--dark, #122615); }
+/* Callouts: "Quick answer" box and the quote box → Emerald & Gold */
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > p[style*="border-left"] {
+  background: #fff !important; border-left: 4px solid var(--amber, #D4AF37) !important; border-radius: 0 12px 12px 0;
+  padding: 16px 20px !important; box-shadow: 0 2px 10px rgba(18, 38, 21, 0.06);
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > div[style*="border-radius"] {
+  background: var(--dark, #122615) !important; border: 0 !important; border-radius: 16px !important; padding: 22px 24px !important;
+  box-shadow: 0 10px 30px rgba(18, 38, 21, 0.16);
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > div[style*="border-radius"] :is(p, strong) { color: #fff !important; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > div[style*="border-radius"] p { color: rgba(255, 255, 255, 0.88) !important; }
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a[style*="display:inline-block"] {
+  display: inline-flex !important; align-items: center; justify-content: center; min-height: 44px; box-sizing: border-box;
+  padding: 10px 22px !important; border-radius: 999px !important; font-weight: 700; text-decoration: none !important;
+  background: var(--amber, #D4AF37) !important; color: var(--dark, #122615) !important;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a[style*="display:inline-block"][href*="wa.me"] {
+  background: #fff !important; color: var(--teal-deep, #1B5E20) !important;
+}
+body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a[style*="display:inline-block"]:hover { filter: brightness(1.06); transform: translateY(-1px); }
+@media (max-width: 767px) {
+  body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content { font-size: 1rem; line-height: 1.7; }
+  /* Wide tables scroll sideways in their own box instead of squeezing to 1–2 words per line */
+  body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content table {
+    display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; font-size: 0.875rem !important;
+  }
+  body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content :is(th, td) { padding: 10px 12px !important; min-width: 140px; }
+  body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content > div[style*="border-radius"] { padding: 20px 18px !important; }
+  body.page-template-default .page-content:has(> .entry-content > p:first-child):not(:has(.szc, .sza, .pl)) > .entry-content a[style*="display:inline-block"] { width: 100%; margin: 6px 0 !important; }
+}
