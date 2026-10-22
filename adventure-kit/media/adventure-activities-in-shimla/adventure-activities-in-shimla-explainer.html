@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 70% 30%, #16324f 0%, #0b1f33 70%); }
+      .kick { position: absolute; left: 120px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.14em; white-space: nowrap; }
+      .title { position: absolute; left: 120px; top: 112px; color: #fff; font-weight: 800; font-size: 84px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.g { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; }
+      .mh { fill: rgba(255,255,255,0.85); font-size: 30px; letter-spacing: 0.06em; }
+      .rl { fill: #fff; font-size: 40px; }
+      .legend { position: absolute; left: 120px; top: 900px; width: 1700px; height: 120px; }
+      .lg { position: absolute; top: 0; height: 64px; line-height: 64px; color: #fff; font-weight: 800; font-size: 38px; white-space: nowrap; padding-left: 62px; }
+      .lg i { position: absolute; left: 0; top: 10px; width: 44px; height: 44px; border-radius: 10px; }
+      .pl { fill: #fff; font-size: 44px; }
+      .pd { fill: #d4a24c; font-size: 40px; }
+      .ms { position: absolute; left: 120px; top: 70px; }
+      .note { position: absolute; left: 1200px; top: 360px; width: 640px; color: #fff; font-weight: 800; font-size: 56px; line-height: 1.15; }
+      .note2 { position: absolute; left: 1200px; top: 610px; width: 640px; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 36px; line-height: 1.3; }
+      .end { position: absolute; inset: 0; background: #0b1f33; }
+      .e1 { position: absolute; left: 0; width: 1920px; top: 330px; text-align: center; color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.14em; }
+      .e2 { position: absolute; left: 0; width: 1920px; top: 400px; text-align: center; color: #fff; font-weight: 800; font-size: 100px; letter-spacing: -0.02em; }
+      .btn { position: absolute; left: 560px; width: 800px; top: 590px; height: 120px; border-radius: 60px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 50px; display: flex; align-items: center; justify-content: center; }
+      .e3 { position: absolute; left: 0; width: 1920px; top: 760px; text-align: center; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 36px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-start="0" data-duration="6.9" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick" id="kick">ADVENTURE AROUND SHIMLA · MONTH BY MONTH</div>
+        <div class="title" id="title">What's open in your Shimla month?</div>
+        <svg class="g" viewBox="0 0 1920 1080">
+          <text x="650" y="290" text-anchor="middle" class="mh">JAN</text><text x="750" y="290" text-anchor="middle" class="mh">FEB</text><text x="850" y="290" text-anchor="middle" class="mh">MAR</text><text x="950" y="290" text-anchor="middle" class="mh">APR</text><text x="1050" y="290" text-anchor="middle" class="mh">MAY</text><text x="1150" y="290" text-anchor="middle" class="mh">JUN</text><text x="1250" y="290" text-anchor="middle" class="mh">JUL</text><text x="1350" y="290" text-anchor="middle" class="mh">AUG</text><text x="1450" y="290" text-anchor="middle" class="mh">SEP</text><text x="1550" y="290" text-anchor="middle" class="mh">OCT</text><text x="1650" y="290" text-anchor="middle" class="mh">NOV</text><text x="1750" y="290" text-anchor="middle" class="mh">DEC</text><text x="560" y="365.0" text-anchor="end" class="rl">Paragliding</text><text x="560" y="453.0" text-anchor="end" class="rl">Rafting</text><text x="560" y="541.0" text-anchor="end" class="rl">Park rides</text><text x="560" y="629.0" text-anchor="end" class="rl">Ice skating</text><text x="560" y="717.0" text-anchor="end" class="rl">Skiing</text><text x="560" y="805.0" text-anchor="end" class="rl">Treks</text><rect x="604" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="704" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="804" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="904" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1004" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1104" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1204" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1304" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1404" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1504" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1604" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1704" y="316" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="604" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="704" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="804" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="904" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1004" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1104" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1204" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1304" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1404" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1504" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1604" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1704" y="404" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="604" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="704" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="804" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="904" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1004" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1104" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1204" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1304" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1404" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1504" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1604" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1704" y="492" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="604" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="704" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="804" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="904" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1004" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1104" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1204" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1304" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1404" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1504" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1604" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1704" y="580" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="604" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="704" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="804" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="904" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1004" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1104" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1204" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1304" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1404" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1504" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1604" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1704" y="668" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="604" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="704" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="804" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="904" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1004" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1104" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1204" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1304" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1404" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1504" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1604" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect x="1704" y="756" width="92" height="70" rx="10" fill="rgba(255,255,255,0.06)"/><rect class="c m0" x="604" y="316" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m1" x="704" y="316" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m2" x="804" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m3" x="904" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m4" x="1004" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m5" x="1104" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m6" x="1204" y="316" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m7" x="1304" y="316" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m8" x="1404" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m9" x="1504" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m10" x="1604" y="316" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m11" x="1704" y="316" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m2" x="804" y="404" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m3" x="904" y="404" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m4" x="1004" y="404" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m5" x="1104" y="404" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m6" x="1204" y="404" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m7" x="1304" y="404" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m8" x="1404" y="404" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m9" x="1504" y="404" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m10" x="1604" y="404" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m0" x="604" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m1" x="704" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m2" x="804" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m3" x="904" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m4" x="1004" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m5" x="1104" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m6" x="1204" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m7" x="1304" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m8" x="1404" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m9" x="1504" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m10" x="1604" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m11" x="1704" y="492" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m0" x="604" y="580" width="92" height="70" rx="10" fill="#e8f1fa"/><rect class="c m1" x="704" y="580" width="92" height="70" rx="10" fill="#e8f1fa"/><rect class="c m11" x="1704" y="580" width="92" height="70" rx="10" fill="#e8f1fa"/><rect class="c m0" x="604" y="668" width="92" height="70" rx="10" fill="#e8f1fa"/><rect class="c m1" x="704" y="668" width="92" height="70" rx="10" fill="#e8f1fa"/><rect class="c m11" x="1704" y="668" width="92" height="70" rx="10" fill="#e8f1fa"/><rect class="c m0" x="604" y="756" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m1" x="704" y="756" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m2" x="804" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m3" x="904" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m4" x="1004" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m5" x="1104" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m6" x="1204" y="756" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m7" x="1304" y="756" width="92" height="70" rx="10" fill="#6f8196"/><rect class="c m8" x="1404" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m9" x="1504" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m10" x="1604" y="756" width="92" height="70" rx="10" fill="#d4a24c"/><rect class="c m11" x="1704" y="756" width="92" height="70" rx="10" fill="#6f8196"/>
+          <rect id="cur" x="600" y="254" width="100" height="580" rx="14" fill="none" stroke="#fff" stroke-width="4" />
+        </svg>
+        <div class="legend" id="legend">
+          <div class="lg" style="left:0"><i style="background:#d4a24c"></i>Good months</div>
+          <div class="lg" style="left:420px"><i style="background:#6f8196"></i>Weather decides</div>
+          <div class="lg" style="left:900px"><i style="background:#e8f1fa"></i>Snow &amp; ice, when it holds</div>
+        </div>
+      </div>
+      <div id="mapc" class="clip" data-start="6.6" data-duration="3.8" data-track-index="1" style="position:absolute;inset:0">
+        <div class="end" id="mapbg" style="background: radial-gradient(ellipse at 30% 50%, #16324f 0%, #0b1f33 70%);"></div>
+        <div class="kick" id="mk">ONE AREA PER DAY</div>
+        <div class="title" id="mt">Four directions from Shimla</div>
+        <svg class="g" viewBox="0 0 1920 1080">
+          <g id="lines" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 16" fill="none">
+            <path id="l1" d="M 560 600 L 280 420"/>
+            <path id="l2" d="M 560 600 L 760 790"/>
+            <path id="l3" d="M 560 600 L 790 540"/>
+            <path id="l4" d="M 790 540 L 930 420"/>
+          </g>
+          <g id="pS"><circle cx="560" cy="600" r="30" fill="#d4a24c"/><circle cx="560" cy="600" r="12" fill="#0b1f33"/><text x="530" y="668" text-anchor="end" class="pl">Shimla</text></g>
+          <g id="p1"><circle cx="280" cy="420" r="20" fill="#fff"/><text x="280" y="380" text-anchor="middle" class="pl">Tattapani</text><text x="250" y="474" text-anchor="end" class="pd">Rafting</text></g>
+          <g id="p2"><circle cx="760" cy="790" r="20" fill="#fff"/><text x="760" y="850" text-anchor="middle" class="pl">Junga · ~25 km</text><text x="760" y="900" text-anchor="middle" class="pd">Paragliding</text></g>
+          <g id="p3"><circle cx="790" cy="540" r="20" fill="#fff"/><text x="768" y="514" text-anchor="end" class="pl">Kufri</text><text x="822" y="606" text-anchor="start" class="pd">Snow · park</text></g>
+          <g id="p4"><circle cx="930" cy="420" r="20" fill="#fff"/><text x="930" y="380" text-anchor="middle" class="pl">Narkanda</text><text x="970" y="434" text-anchor="start" class="pd">Skiing</text></g>
+        </svg>
+        <div class="note" id="note">Pick one per day — they sit in different directions.</div>
+        <div class="note2" id="note2">Map not to scale. We check weather, snow and river level for your week.</div>
+      </div>
+      <div id="endc" class="clip" data-start="10" data-duration="2" data-track-index="2" style="position:absolute;inset:0">
+        <div class="end" id="endbg"></div>
+        <div class="e1" id="e1">ADVENTURE AROUND SHIMLA</div>
+        <div class="e2" id="e2">Your dates → one quote</div>
+        <div class="btn" id="btn">Get Quote on WhatsApp</div>
+        <div class="e3" id="e3">Hotel + cab + activities · Price: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kick", "#title"], { opacity: 0, y: 30, duration: 0.5, stagger: 0.1, ease: "power3.out" }, 0.1);
+      tl.set(".c", { opacity: 0 }, 0);
+      tl.set("#legend .lg", { opacity: 0 }, 0);
+      tl.fromTo("#cur", { attr: { x: 600 }, opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.5);
+      for (let i = 0; i < 12; i++) {
+        const t = 0.7 + i * 0.38;
+        tl.to("#cur", { attr: { x: 600 + i * 100 }, duration: 0.2, ease: "power2.inOut" }, t - 0.2);
+        tl.to(".m" + i, { opacity: 1, duration: 0.25, ease: "power2.out" }, t);
+      }
+      tl.to("#cur", { opacity: 0, duration: 0.3 }, 5.1);
+      tl.to("#legend .lg", { opacity: 1, duration: 0.35, stagger: 0.2 }, 5.1);
+      tl.to(["#kick", "#title"], { opacity: 0, duration: 0.2 }, 6.6);
+      tl.to(["#mapc svg", "#note", "#note2", "#mk", "#mt"], { opacity: 0, duration: 0.2 }, 10);
+      tl.fromTo("#mapbg", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 6.6);
+      tl.from(["#mk", "#mt"], { opacity: 0, y: 30, duration: 0.45, stagger: 0.1, ease: "power3.out" }, 6.8);
+      tl.from("#pS", { opacity: 0, scale: 0.6, transformOrigin: "560px 600px", duration: 0.4, ease: "back.out(1.8)" }, 7.0);
+      ["#l1", "#l2", "#l3", "#l4"].forEach((l, i) => {
+        tl.fromTo(l, { opacity: 0 }, { opacity: 1, duration: 0.3 }, 7.3 + i * 0.35);
+      });
+      ["#p1", "#p2", "#p3", "#p4"].forEach((p, i) => {
+        tl.from(p, { opacity: 0, y: 16, duration: 0.35, ease: "power2.out" }, 7.5 + i * 0.35);
+      });
+      tl.to("#lines", { attr: { "stroke-dashoffset": -90 }, duration: 3.2, ease: "none" }, 7.2);
+      tl.from("#note", { opacity: 0, x: 30, duration: 0.45, ease: "power2.out" }, 8.6);
+      tl.from("#note2", { opacity: 0, duration: 0.4 }, 9.0);
+      tl.fromTo("#endbg", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 10);
+      tl.from(["#e1", "#e2"], { opacity: 0, y: 30, duration: 0.45, stagger: 0.1, ease: "power3.out" }, 10.15);
+      tl.from("#btn", { opacity: 0, scale: 0.9, duration: 0.45, ease: "back.out(1.6)" }, 10.5);
+      tl.from("#e3", { opacity: 0, duration: 0.35 }, 10.8);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
