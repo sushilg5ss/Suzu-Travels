@@ -1218,9 +1218,9 @@
     "town": "Bankhandi (near Dehra)",
     "district": "Kangra",
     "state": "Himachal Pradesh",
-    "lat": null,
-    "lon": null,
-    "coord_source": null,
+    "lat": 31.968,
+    "lon": 76.207,
+    "coord_source": "https://en.wikipedia.org/wiki/Bagalamukhi_Temple,_Bankhandi,_HP (2026-10-22)",
     "legend_summary": "Bagalamukhi, one of the ten Mahavidyas, is the yellow-clad goddess said to paralyse enemies and silence false speech. Kangra district's account says she rose from a lake of turmeric at Vishnu's request to still a cosmic storm, that the Pandavas raised this temple in a single night during their exile, and that Rama worshipped here before obtaining the Brahmastra. Everything is yellow: walls, robes, laddoos. Devotees come for night havans to win court cases and disputes. It is a frequent add-on in packaged Nau Devi tours between Jwalamukhi and Kangra.",
     "story_beats": [
       "Turmeric lake, a goddess rises",
@@ -1274,14 +1274,23 @@
         "note": "Crowded days per district page",
         "as_of": "2026-10-08",
         "source": "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/"
+      },
+      {
+        "name": "Baglamukhi Jayanti",
+        "start": null,
+        "end": null,
+        "note": "Vaishakh Shukla Ashtami, 3-day festival (2026: late April per Tribune 24 Apr 2026). 2027 date not checked.",
+        "as_of": "2026-10-22",
+        "source": "https://www.tribuneindia.com/news/himachal/tide-of-faith-sweeps-baglamukhi-shrine-on-jayanti-as-devotees-throng-temple/"
       }
     ],
     "how_to_reach": {
-      "air": "Gaggal ~40 km (district)",
-      "rail": "Kangra Mandir station ~40 km (district)",
-      "road": "On NH503 Chandigarh-Dharamshala highway, 30-40 km from Kangra town (district)",
+      "air": "Gaggal ~34 km by road (OSRM 2026-10-22; district says ~40 km)",
+      "rail": "Kangra Mandir (NG) ~23 km (OSRM; district ~40 km); Pathankot BG ~98 km (OSRM)",
+      "road": "On NH503; Dehra ~16 km, Kangra town ~23 km (OSRM; district 30-40 km)",
       "sources": [
-        "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/"
+        "https://hpkangra.nic.in/tourist-place/shri-bagalamukhi-mata-temple/",
+        "https://router.project-osrm.org (2026-10-22)"
       ]
     },
     "nearby": [
@@ -1314,11 +1323,24 @@
       }
     ],
     "unverified": [
-      "Coordinates",
-      "Exact timings",
-      "Distance from Jwalamukhi"
+      "Exact timings (district says generally 05:00-21:30)",
+      "Aarti times",
+      "Managing authority",
+      "Baglamukhi Jayanti 2027 date"
     ],
-    "as_of": "2026-10-08"
+    "as_of": "2026-10-22",
+    "history": {
+      "text": "Present shrine believed built in the early 19th century by the former rulers of Guler after they lost Kotla fort to Maharaja Ranjit Singh; Pandava origin is legend.",
+      "source": "https://www.tribuneindia.com/news/himachal/tide-of-faith-sweeps-baglamukhi-shrine-on-jayanti-as-devotees-throng-temple/",
+      "as_of": "2026-10-22"
+    },
+    "nearby_km_osrm": {
+      "jwalamukhi": 24,
+      "brajeshwari_kangra": 23,
+      "chintpurni": 36,
+      "pong_dam": 33,
+      "as_of": "2026-10-22"
+    }
   },
   {
     "slug": "kamakhya-guwahati",
