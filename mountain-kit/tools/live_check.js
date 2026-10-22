@@ -20,8 +20,14 @@ const { chromium } = require('playwright');
   const info = await p.evaluate(() => ({ sw: document.documentElement.scrollWidth, iw: innerWidth, h1: document.querySelectorAll('h1').length, lazyDone: [...document.querySelectorAll('video[data-lazy]')].map(v => v.getAttribute('data-done')) }));
   let tbl = null;
   if (table === '1') {
-    await p.click('.szm-filt button[data-k="state"][data-v="himachal-pradesh"]');
-    await p.waitForTimeout(500);
+    // Delay JS can bind the filter late on a slow load: retry the click up to 3 times (fix 22 Oct 2026)
+    const btn = '.szm-filt button[data-k="state"][data-v="himachal-pradesh"]';
+    for (let i = 0; i < 3; i++) {
+      await p.click(btn);
+      await p.waitForTimeout(500);
+      if (await p.$eval(btn, e => e.getAttribute('aria-pressed')) === 'true') break;
+      await p.waitForTimeout(3000);
+    }
     tbl = await p.$eval('#szm-count', e => e.textContent);
   }
   await p.evaluate(() => window.scrollTo(0, 0)); await p.waitForTimeout(800);
