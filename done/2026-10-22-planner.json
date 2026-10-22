@@ -1,0 +1,17 @@
+{
+ "id": "2026-10-22-planner",
+ "agent": "Trip Planner",
+ "summary": "v1.1 budget fit (Have a budget? -> picks hotel class + meals that fit, budget in lead)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "fc33facb30af8864eddb2bf81eea2c60540e0f43776d34a61dc6cbeeef4090d0",
+   "base_sha256": "f9bcfcca9101acd0",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-10-22T06:35:21Z",
+ "status": "failed",
+ "error": "plan-your-trip/index.html: live SHA f9bcfcca9101 != base f9bcfcca9101 \u2014 someone changed it; rebuild on the new live file and queue again"
+}
