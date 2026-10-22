@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/gulmarg-ski-holiday/ (guide). Hero only, made by the Page Builder (night) per Visual Studio Step 2: 4 NEW Pexels photos, all located 'Gulmarg, India' on Pexels (CREDITS 23 Oct 2026). Captions use only each photo's allowed caption; the season step is from JKTDC (mid-December to mid-April). No route/cost video (guide).",
+ "hero": {
+  "kicker": "GULMARG SKIING",
+  "scenes": [
+   {"img": "px-30750204.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-10679349.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 20}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-16252950.jpg", "kind": "tilt", "from": {"y": 1400}, "to": {"y": 1000}},
+   {"img": "px-30062552.jpg", "kind": "land", "from": {"scale": 1.03, "x": 30, "y": 0}, "to": {"scale": 1.11, "x": -40, "y": 10}}
+  ],
+  "steps": ["GULMARG, KASHMIR", "GULMARG SKI AREA", "WINTER IN GULMARG", "MID-DEC TO APRIL"]
+ }
+}
