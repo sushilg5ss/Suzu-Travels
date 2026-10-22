@@ -125,7 +125,7 @@ def build(p):
         r = ROUTE_BY_SLUG[p["route"]]
         via = [n for n in labels[1:-1]][:3]
         panel = (f'<div class="kick">ROUTE PLAN</div><div class="big">{r["a"]}</div><div class="arrow"><i></i></div><div class="big">{r["b"]}</div>'
-                 f'<div class="stats"><div><b>{r["km"]} km</b><span>distance</span></div><div><b>{r["t"]}</b><span>by road</span></div></div>'
+                 f'<div class="stats"><div><b>{r["km"]} km</b><span>distance</span></div><div><b>{m.get("t") or r["t"]}</b><span>{m.get("t_sub") or "by road"}</span></div></div>'
                  f'<div class="via">via {" · ".join(via)}</div>')
     else:
         panel = (f'<div class="kick">POPULAR TRIPS FROM</div><div class="big">{m["hub"]}</div>'
