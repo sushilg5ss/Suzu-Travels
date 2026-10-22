@@ -1,0 +1,176 @@
+{
+ "kind": "band",
+ "path": "/mountains-of-india/6000m-peaks/",
+ "band": "6000",
+ "title": "6,000 m Peaks in India: The Six-Thousanders by State and Grade",
+ "seo_title": "6000m Peaks in India: List by State, Grade & Season",
+ "seo_desc": "75 notable 6000m peaks in India in one sortable list: state, grade, first ascent, season and which are open to foreign climbers in 2026.",
+ "focus": "6000m peaks in india",
+ "commercial": false,
+ "label": "6,000 m peaks of India",
+ "blurb": "75 six-thousanders · grade, season, status",
+ "verified": "22 Oct 2026",
+ "kicker": "6,000 m peaks · India · 2026 status",
+ "tag": "India's six-thousanders, side by side.",
+ "sub": "Every notable Indian summit between 6,000 and 6,999 m (19,700–22,960 ft) in our dataset, with its state, grade, first ascent, season and climbing status, plus which ones are non-technical, which are closed, and how permits and fees work.",
+ "chips": [
+  [
+   "75 peaks",
+   "in our dataset"
+  ],
+  [
+   "6,940 m",
+   "Kedarnath & Saraswati Parbat I"
+  ],
+  [
+   "14",
+   "in Himachal"
+  ],
+  [
+   "6,001 m",
+   "Deo Tibba, the lowest"
+  ],
+  [
+   "1912",
+   "earliest first ascent"
+  ]
+ ],
+ "hero_alt": "Scree approach, a roped line on snow, a corniced ridge and a summit push (generic stock footage, not named peaks) with four statements about India's notable 6,000 m peaks, Himachal's fourteen, choosing the season and starting with Yunam",
+ "ladder_alt": "Animated chart of seven Himachal 6,000 m peaks at their true heights: Deo Tibba, Yunam, Chau Chau Kang Nilda, Menthosa, Mulkila, Manirang and Reo Purgyil",
+ "q": "How many 6000m peaks are there in India?",
+ "answer": "Our dataset lists <b>75 notable peaks between 6,000 and 6,999 m</b> in India, the largest height band in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>. The highest are <b>Kedarnath and Saraswati Parbat I</b> (6,940 m / 22,769 ft), the lowest is Deo Tibba (6,001 m). Uttarakhand holds 40, Himachal Pradesh 14 and Ladakh 10. Most are open to IMF-permitted climbers.",
+ "facts": [
+  [
+   "Peaks of 6,000–6,999 m",
+   "75 notable peaks (our dataset)"
+  ],
+  [
+   "Highest",
+   "Kedarnath & Saraswati Parbat I, 6,940 m / 22,769 ft"
+  ],
+  [
+   "Lowest in the band",
+   "Deo Tibba, 6,001 m / 19,688 ft (Himachal)"
+  ],
+  [
+   "By state",
+   "Uttarakhand 40 · Himachal 14 · Ladakh 10 · Sikkim 6 · Arunachal 3 · J&K 2"
+  ],
+  [
+   "Grade",
+   "47 technical · 13 moderate · 8 extreme · 7 non-technical"
+  ],
+  [
+   "Status",
+   "67 climbed · 4 restricted · 3 unclimbed · 1 closed"
+  ]
+ ],
+ "intro": [
+  "Six-thousanders are where many climbers in the <a href=\"/mountains-of-india/\">Indian Himalaya</a> first go properly high: usually with a high camp, a pre-dawn start and, on most peaks, rope and crampons. India has far more minor summits above 6,000 m than any list can hold, so we count only <b>notable peaks</b> and say \"75 in our dataset\" rather than claim an official total.",
+  "Uttarakhand's Garhwal and Kumaon hold more than half of them, including famous hard lines such as Shivling, Changabang and Thalay Sagar. Himachal Pradesh has 14, from Deo Tibba above Manali to Reo Purgyil on the Tibet border. Ladakh's six-thousanders include the non-technical Rupshu and Markha peaks; Sikkim's and Arunachal's are mostly restricted."
+ ],
+ "table": {
+  "where": {
+   "band": "6000"
+  },
+  "h2": "All 75 six-thousanders, highest first",
+  "label": "The list",
+  "text": [
+   "The animation draws Himachal's best-known 6,000 m peaks at their true heights, from Deo Tibba (6,001 m) to Reo Purgyil (6,816 m), the state's highest.",
+   "Search the table by name, or sort it by height or first ascent. The status column shows whether a peak has been climbed, is restricted, is closed or has no documented ascent."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "states",
+   "label": "By state",
+   "kicker": "Where they are",
+   "h2": "6,000 m peaks by state: count, access and season",
+   "html": "<p>The season follows the monsoon. South of the main Himalayan crest the climbing windows are before and after the rains; in the rain shadow of Lahaul, Spiti, Kinnaur and Ladakh the summer itself is the season.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>State</th><th>6,000 m peaks</th><th>Open to foreign teams</th><th>Season</th></tr></thead><tbody><tr><td><b>Uttarakhand</b></td><td class=\"n\">40</td><td class=\"n\">40</td><td>May–Jun, Sep–Oct</td></tr><tr><td><b>Himachal Pradesh</b></td><td class=\"n\">14</td><td class=\"n\">13</td><td>Kullu: May–Jun, Sep–Oct · Lahaul, Spiti, Kinnaur: Jun–Sep</td></tr><tr><td><b>Ladakh</b></td><td class=\"n\">10</td><td class=\"n\">7*</td><td>Jun–Sep (East Karakoram Jun–Aug)</td></tr><tr><td><b>Sikkim</b></td><td class=\"n\">6</td><td class=\"n\">1</td><td>Apr–May, Oct–Nov</td></tr><tr><td><b>Arunachal Pradesh</b></td><td class=\"n\">3</td><td class=\"n\">0</td><td>Oct–Nov</td></tr><tr><td><b>Jammu &amp; Kashmir</b></td><td class=\"n\">2</td><td class=\"n\">2</td><td>Jun–Sep</td></tr></tbody></table></div><p class=\"szm-note\">*Not counting Stok Kangri, which is closed to everyone. Counts from our dataset, checked October 2026; always confirm with the IMF before planning.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>Uttarakhand: 40 peaks, the 2026 open list</h3><p>Garhwal and Kumaon hold the band's highest summits, <a href=\"#peak-kedarnath\">Kedarnath</a> and <a href=\"#peak-saraswati-parbat-i\">Saraswati Parbat I</a> (both 6,940 m), and its most famous technical walls. On 4 February 2026 Uttarakhand opened 83 peaks of 5,700–7,756 m: Indian climbers pay no state or government fees, foreign climbers pay the IMF fees only, and applications go through the UKMPS portal.</p></div><div class=\"szm-col\"><h3>Himachal Pradesh: 14 peaks</h3><p>From <a href=\"#peak-deo-tibba\">Deo Tibba</a> (6,001 m) and <a href=\"#peak-mount-yunam\">Yunam</a> (6,111 m) up to <a href=\"/mountains-of-india/reo-purgyil/\">Reo Purgyil</a> (6,816 m). <a href=\"#peak-parvati-parbat\">Parvati Parbat</a> (6,633 m) has no documented ascent, and foreign climbers need a protected-area permit for the Kinnaur and Spiti border peaks. See all of the state's summits in our <a href=\"/mountains-of-india/himachal-pradesh/\">Himachal Pradesh peaks guide</a>.</p></div><div class=\"szm-col\"><h3>Ladakh: 10 peaks</h3><p>Home to most of the band's non-technical peaks: <a href=\"#peak-mentok-kangri\">Mentok Kangri</a>, <a href=\"#peak-dzo-jongo\">Dzo Jongo</a>, <a href=\"#peak-kang-yatse-ii\">Kang Yatse II</a>, <a href=\"#peak-chamser-kangri\">Chamser Kangri</a> and <a href=\"#peak-lungser-kangri\">Lungser Kangri</a>. <a href=\"/mountains-of-india/stok-kangri/\">Stok Kangri</a> has been closed since 2020, and <a href=\"#peak-shahi-kangri\">Shahi Kangri</a> and <a href=\"#peak-argan-kangri\">Argan Kangri</a> are restricted military-area peaks.</p></div><div class=\"szm-col\"><h3>Sikkim and Arunachal: mostly restricted</h3><p>Sikkim restricts climbing on most of its high peaks, some of them sacred: <a href=\"#peak-kangchenjau\">Kangchenjau</a>, <a href=\"#peak-siniolchu\">Siniolchu</a> and <a href=\"#peak-gurudongmar\">Gurudongmar</a> are restricted and <a href=\"#peak-pandim\">Pandim</a> is not open to foreigners. Arunachal's three, including the unclimbed <a href=\"#peak-chiumo\">Chiumo</a>, are restricted border peaks.</p></div></div>"
+  },
+  {
+   "id": "non-technical",
+   "label": "Non-technical",
+   "kicker": "Grades",
+   "h2": "Which 6,000 m peaks in India are non-technical?",
+   "html": "<p>No official body grades Indian peaks, so these are the grades in our dataset. Seven six-thousanders are graded <b>trekking peak</b>: high and tiring, but climbed on scree and snow without technical rock or ice. One of them, Stok Kangri, is closed.</p><ul class=\"szm-steps\"><li><b><a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m / 20,049 ft) · Himachal</b>Climbed from the Bharatpur camp on the Manali–Leh highway; steep scree and snow near the top, and altitude is the main challenge.</li><li><b>Mentok Kangri (6,250 m / 20,505 ft) · Ladakh</b>Rupshu, above Tso Moriri. Season June–September.</li><li><b>Kang Yatse II (6,250 m / 20,505 ft) · Ladakh</b>The lower western summit of the Kang Yatse massif, inside Hemis National Park; a steep snow slope on summit day. Published heights range from 6,175 to 6,250 m.</li><li><b>Dzo Jongo (6,280 m / 20,604 ft) · Ladakh</b>In Hemis National Park, approached from Shang Sumdo or the Markha valley. Season June–September.</li><li><b>Chamser Kangri (6,622 m) and Lungser Kangri (6,666 m) · Ladakh</b>The Tso Moriri pair; Lungser is the highest non-technical peak in the band.</li></ul><p>Thirteen more are graded <b>moderate</b>, including Deo Tibba, Shilla, Chau Chau Kang Nilda, Menthosa, Manirang and Leo Pargial in Himachal, and Bandarpunch, Jogin I and Kedar Dome in Uttarakhand. \"Moderate\" still means glacier travel, fixed rope and a full expedition. The other 55 are technical or extreme. For the step-by-step path from first summit to first six-thousander, read <a href=\"/mountains-of-india/first-6000m-peak/\">how to climb your first 6,000 m peak</a>, and compare the 5,000–6,000 m options in our <a href=\"/mountains-of-india/trekking-peaks/\">trekking peaks guide</a>.</p>"
+  },
+  {
+   "id": "permits",
+   "label": "Permits",
+   "kicker": "Permits and fees",
+   "h2": "Permits and IMF fees for a 6,000 m peak",
+   "html": "<p><b>Foreign expeditions</b> need Indian Mountaineering Foundation (IMF) permission, applied for at least 90 days ahead, a liaison officer and insurance. For a team of two the IMF base peak fee is <b>US$500 up to 6,500 m</b> and <b>US$700 for 6,501–7,000 m</b>, plus US$500 for liaison-officer equipment; per-member charges apply (IMF, checked 1 October 2026). In our dataset 30 six-thousanders fall in the lower fee band and 45 in the upper one. Our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fee guide</a> explains each charge.</p><p><b>Indian teams</b> follow IMF rules too: the leader needs an advanced-course certificate and a summit above 6,400 m, and at least half the members must have passed the Advanced Mountaineering Course. Our guide to <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses in India</a> covers the institutes.</p><p><b>In Himachal Pradesh</b>, adventure operators and guides must be registered with HP Tourism, and climbers register with the police before setting out. Foreigners need a protected-area permit beyond Jangi in Kinnaur and near the border in Spiti, which covers the approaches to Reo Purgyil, Leo Pargial and Manirang. A tourist visa covers open areas; the X (mountaineering) visa is for restricted areas, so confirm with the Indian mission before you apply.</p>"
+  },
+  {
+   "id": "history",
+   "label": "Firsts",
+   "kicker": "Firsts",
+   "h2": "Six-thousander firsts, from 1912 to 2024",
+   "html": "<ol class=\"szm-steps\"><li><b>1912 · Kangchenjau</b>Alexander Kellas and his Sherpa companions made the earliest first ascent of any peak in this band in our dataset.</li><li><b>1933 · Leo Pargial and the Bhagirathi peaks</b>Early climbs in Kinnaur and Garhwal: Leo Pargial, Bhagirathi Parbat II and III.</li><li><b>1952 · Deo Tibba and Manirang</b>Himachal's first six-thousanders above Manali and on the Spiti–Kinnaur divide.</li><li><b>1971 · Reo Purgyil</b>First ascent of Himachal's highest peak. On 16 September 2026 an ITBP team summited it again.</li><li><b>1974 · Shivling and Changabang</b>Two of the band's most famous technical summits, first climbed the same year.</li><li><b>2018 to 2024 · the latest firsts</b>Janhukut (6,805 m) in 2018, Shahi Kangri (6,934 m) in 2022 and Tsangyang Gyatso (6,383 m) in 2024.</li></ol><p>Three six-thousanders have no documented ascent in our dataset: Chiumo (6,890 m) in Arunachal, Parvati Parbat (6,633 m) in Kullu and Chombu (6,362 m) in Sikkim. India's higher band is covered in our list of <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks in India</a>.</p>"
+  }
+ ],
+ "quote_h2": "Planning your first six-thousander?",
+ "quote_text": "Start in Himachal: Yunam and Deo Tibba are the usual first 6,000 m summits. We pair you with a registered Himachal outfitter and certified guides, and add permits, hotels and transfers: one plan, one quote.",
+ "faq_h2": "6,000 m peaks: your questions",
+ "faqs": [
+  [
+   "How many 6,000 m peaks are there in India?",
+   "Our dataset lists 75 notable peaks of 6,000–6,999 m. India has many more minor summits above 6,000 m, and there is no official total."
+  ],
+  [
+   "Which is the highest 6,000 m peak in India?",
+   "Kedarnath and Saraswati Parbat I, both 6,940 m (22,769 ft), in Uttarakhand. Next is Shahi Kangri (6,934 m) in Ladakh."
+  ],
+  [
+   "Which 6,000 m peaks in India are non-technical?",
+   "In our dataset: Yunam (6,111 m) in Himachal, and Mentok Kangri, Kang Yatse II, Dzo Jongo, Chamser Kangri and Lungser Kangri in Ladakh. Stok Kangri is also non-technical but has been closed since 2020."
+  ],
+  [
+   "How many 6,000 m peaks are in Himachal Pradesh?",
+   "Fourteen in our dataset, from Deo Tibba (6,001 m) to Reo Purgyil (6,816 m), Himachal's highest peak."
+  ],
+  [
+   "Can foreigners climb 6,000 m peaks in India?",
+   "Yes, most of them, with IMF permission: 63 of the 75 in our dataset, not counting closed Stok Kangri. Sikkim, Arunachal and the military-area Ladakh peaks are restricted."
+  ],
+  [
+   "What is the IMF fee for a 6,000 m peak?",
+   "For a foreign team of two, a base fee of US$500 up to 6,500 m or US$700 for 6,501–7,000 m, plus US$500 for liaison-officer equipment and per-member charges (IMF, as of October 2026)."
+  ],
+  [
+   "When is the best time to climb a 6,000 m peak in India?",
+   "May–June and September–October in Uttarakhand and Kullu; June–September in Lahaul, Spiti, Kinnaur and Ladakh; April–May and October–November in Sikkim."
+  ],
+  [
+   "Which 6,000 m peaks in India are unclimbed?",
+   "Chiumo (Arunachal), Parvati Parbat (Kullu) and Chombu (Sikkim) have no documented ascent in our dataset."
+  ]
+ ],
+ "sources": [
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "ETV Bharat, Feb 2026 — Uttarakhand opens 83 Himalayan peaks, waives fees for Indian climbers",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "The Himalayan Club — Himalayan Journal: classification of the Himalaya",
+   "https://www.himalayanclub.org/hj/42/22/classification-of-the-himalaya1"
+  ],
+  [
+   "The Statesman — Ladakh administration bans expeditions to Stok Kangri",
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Uttarakhand",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ ]
+}

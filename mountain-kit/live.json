@@ -226,5 +226,15 @@
   "added": "2026-10-21",
   "peak_id": "kangchenjunga",
   "commercial": false
+ },
+ "6000m-peaks": {
+  "id": 15276,
+  "path": "/mountains-of-india/6000m-peaks/",
+  "kind": "band",
+  "label": "6,000 m peaks of India",
+  "blurb": "75 six-thousanders · grade, season, status",
+  "added": "2026-10-22",
+  "band": "6000",
+  "commercial": false
  }
 }
