@@ -133,5 +133,14 @@
   "blurb": "Month by month and region by region — monsoon, snow, heat and festivals",
   "added": "2026-10-22",
   "focus": "best time to visit india"
+ },
+ "gulmarg-ski-holiday": {
+  "id": 15422,
+  "path": "/india-tours/gulmarg-ski-holiday/",
+  "kind": "guide",
+  "label": "Gulmarg skiing",
+  "blurb": "Season, gondola, lifts and ski hire — with the UK and US travel advice first",
+  "added": "2026-10-23",
+  "focus": "gulmarg skiing"
  }
 }
