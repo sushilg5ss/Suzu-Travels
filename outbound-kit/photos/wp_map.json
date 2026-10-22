@@ -752,5 +752,95 @@
   "license": "Unsplash License",
   "src": "https://unsplash.com/photos/snow-covered-mountain-under-blue-sky-during-daytime-W5qB6BuD1Y8",
   "wp_id": 15016
+ },
+ "japan-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-fushimi-inari-torii.webp",
+  "alt": "Tunnel of orange torii gates at Fushimi Inari Taisha shrine, Kyoto, Japan",
+  "cap": "Fushimi Inari, Kyoto",
+  "credit": "Sarmat Batagov",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/rows-of-vibrant-orange-torii-gates-in-a-temple-VulPpt46fXk",
+  "wp_id": 15216
+ },
+ "japan-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-shibuya-crossing.webp",
+  "alt": "Crowds on the Shibuya scramble crossing at night, Tokyo, Japan",
+  "cap": "Shibuya Crossing, Tokyo",
+  "credit": "Timo Volz",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/shibuya-scramble-intersection-in-tokyo-DGsqL2j028E",
+  "wp_id": 15217
+ },
+ "japan-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-arashiyama-bamboo.webp",
+  "alt": "Visitors walking the path through Arashiyama Bamboo Forest, Kyoto, Japan",
+  "cap": "Arashiyama Bamboo Forest, Kyoto",
+  "credit": "Caleb Jack",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-group-of-people-walking-through-a-bamboo-forest--ZNBunXTdao",
+  "wp_id": 15218
+ },
+ "japan-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-dotonbori-osaka.webp",
+  "alt": "Dotonbori street gate and neon signs at night, Osaka, Japan",
+  "cap": "Dotonbori, Osaka",
+  "credit": "Joss Woodhead",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/dotonbori-street-at-night-with-neon-signs-and-people-walking-zrCRJ5gWdnc",
+  "wp_id": 15219
+ },
+ "japan-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-mount-fuji-lake-kawaguchi.webp",
+  "alt": "Mount Fuji at sunset over Lake Kawaguchi, Yamanashi, Japan",
+  "cap": "Mount Fuji from Lake Kawaguchi",
+  "credit": "Atul Vinayak",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/mount-fuji-reflecting-in-lake-kawaguchi-hZioHCEWSAE",
+  "wp_id": 15220
+ },
+ "japan-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-kinkakuji-golden-pavilion.webp",
+  "alt": "Kinkaku-ji Golden Pavilion beside its pond and pine trees, Kyoto, Japan",
+  "cap": "Kinkaku-ji, Kyoto",
+  "credit": "Steffen Triekels",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/brown-and-white-house-near-lake-and-trees-yB3085TiT3M",
+  "wp_id": 15221
+ },
+ "japan-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-nara-deer-torii.webp",
+  "alt": "A deer under a stone torii gate among autumn trees in Nara, Japan",
+  "cap": "Deer in Nara",
+  "credit": "Timo Volz",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/gray-deer-under-white-and-gray-arch-tEOhkLuqmUI",
+  "wp_id": 15222
+ },
+ "japan-8": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-tokyo-tower-night.webp",
+  "alt": "Tokyo Tower lit up at dusk above the city, Tokyo, Japan",
+  "cap": "Tokyo Tower",
+  "credit": "ZHENYU LUO",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/tokyo-tower-glows-brightly-among-city-buildings-xpburpKFWUs",
+  "wp_id": 15225
+ },
+ "japan-9": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-kiyomizu-dera-pagoda.webp",
+  "alt": "Pagoda at Kiyomizu-dera at sunset with blossom and autumn leaves, Kyoto, Japan",
+  "cap": "Kiyomizu-dera, Kyoto",
+  "credit": "Nathalie Lays",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/traditional-japanese-temple-with-cherry-blossoms-at-sunset-4Q-Rbu8Ipcg",
+  "wp_id": 15223
+ },
+ "japan-10": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-japan-shinkansen-bullet-train.webp",
+  "alt": "Shinkansen bullet train at a station platform, Japan",
+  "cap": "Shinkansen bullet train",
+  "credit": "Chris Bahr",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-high-speed-bullet-train-pulling-into-a-train-station-CyMmU_7DI64",
+  "wp_id": 15224
  }
 }
