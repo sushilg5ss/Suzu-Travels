@@ -1,0 +1,158 @@
+{
+ "hero": {
+  "kicker": "KANG YATSE · LADAKH",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 500,
+     "scale": 1.12,
+     "x": -140
+    },
+    "to": {
+     "y": 1000,
+     "scale": 1.14,
+     "x": -160
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.22,
+     "x": -180
+    },
+    "to": {
+     "y": 480,
+     "scale": 1.24,
+     "x": -200
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "y": 250,
+     "x": -140,
+     "scale": 1.18
+    },
+    "to": {
+     "y": 1250,
+     "x": -155,
+     "scale": 1.2
+    }
+   }
+  ],
+  "steps": [
+   [
+    3500,
+    "LEH"
+   ],
+   [
+    5019,
+    "NIMALING"
+   ],
+   [
+    5070,
+    "BASE CAMP"
+   ],
+   [
+    6250,
+    "SUMMIT II"
+   ],
+   [
+    6400,
+    "SUMMIT I"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Kang Yatse II, camp by camp",
+  "sub": "Leh to the 6,250 m summit · heights vary by source",
+  "camps": [
+   {
+    "name": "Leh",
+    "m": 3500,
+    "day": "Acclimatise"
+   },
+   {
+    "name": "Markha",
+    "m": 3800,
+    "day": "Valley (approx.)"
+   },
+   {
+    "name": "Nimaling",
+    "m": 5019,
+    "day": "Pasture"
+   },
+   {
+    "name": "Base camp",
+    "m": 5070,
+    "day": "Below the peak"
+   },
+   {
+    "name": "Kang Yatse II",
+    "m": 6250,
+    "day": "Snow slope"
+   },
+   {
+    "name": "Kang Yatse I",
+    "m": 6400,
+    "day": "Traverse"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "FIRST SIX-THOUSANDERS",
+  "title": "Kang Yatse and other first 6,000ers, at true height",
+  "peaks": [
+   "friendship-peak",
+   "mount-yunam",
+   "stok-kangri",
+   "kang-yatse-ii",
+   "mentok-kangri",
+   "kang-yatse-i"
+  ],
+  "subs": {
+   "stok-kangri": "Closed since 2020",
+   "kang-yatse-i": "First climbed 1977",
+   "friendship-peak": "Himachal",
+   "mount-yunam": "Himachal"
+  },
+  "end": "Kang Yatse II 6,250 m · Kang Yatse I 6,400 m"
+ }
+}
