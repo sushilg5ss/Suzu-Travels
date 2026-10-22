@@ -661,5 +661,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "manali-to-leh-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e7811caa5e56c3f04f9009c6a6fe1a829c1d296c/cab-kit/media/manali-to-leh-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e7811caa5e56c3f04f9009c6a6fe1a829c1d296c/cab-kit/media/manali-to-leh-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e7811caa5e56c3f04f9009c6a6fe1a829c1d296c/cab-kit/media/manali-to-leh-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
