@@ -49,6 +49,14 @@ const { chromium, devices } = require('playwright');
     }
     await page.screenshot({ path: `${out}/${name}-4b-rajasthan.png`, fullPage: true });
     await page.evaluate(() => SuzuTripPlanner.load('shimla-manali')); await page.waitForTimeout(800);
+    // v1.1 budget fit
+    r.budget = {};
+    for (const b of [16000, 30000, 200000, 2000]) {
+      await page.fill('#b-bud', String(b)); await page.click('#b-fit'); await page.waitForTimeout(400);
+      r.budget[b] = { tier: await page.$eval('#b-tiers [aria-pressed="true"]', x => x.dataset.t), meal: await page.inputValue('#b-meal'), price: await page.textContent('#price .big'), msg: await page.textContent('#b-bud-msg') };
+    }
+    await page.screenshot({ path: `${out}/${name}-4c-budget.png` });
+    await page.click('#b-tiers [data-t="deluxe"]'); await page.selectOption('#b-meal', 'MAP'); await page.waitForTimeout(300);
     // lead + pdf
     await page.click('#price [data-act="pdf"]'); await page.waitForTimeout(300);
     await page.fill('#ld-name', 'TEST Claude'); await page.fill('#ld-ph', '9876543210'); await page.click('#ld-go'); await page.waitForTimeout(600);
@@ -57,6 +65,7 @@ const { chromium, devices } = require('playwright');
     r.doc = await page.evaluate(() => { const d = document.querySelector('#doc'); return { len: d.innerHTML.length, tips: /Good to know/.test(d.innerHTML), route: /Route at a glance/.test(d.innerHTML), qr: !!d.querySelector('#doc-qr img, #doc-qr canvas'), nums: /112/.test(d.innerHTML) }; });
     await page.emulateMedia({ media: 'print' }); await page.screenshot({ path: `${out}/${name}-6-pdf.png`, fullPage: true }); await page.emulateMedia({ media: 'screen' });
     r.lead = await page.evaluate(() => window.__tpLastLead && window.__tpLastLead.destination);
+    r.budgetInLead = await page.evaluate(() => /Guest budget: ₹2,000 per adult/.test((window.__tpLastLead || {}).message || ''));
     // share link round-trip
     await page.click('#price [data-act="share"]'); await page.waitForTimeout(400);
     const link = await page.inputValue('#sh-url'); r.linkLen = link.length;

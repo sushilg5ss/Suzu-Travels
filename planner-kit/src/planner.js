@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.0';
+  var VER = '1.1';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -662,6 +662,29 @@
     $('#mb-pp').textContent = inr(cv ? p.clientPP : p.pp);
   }
 
+  /* ---------------- budget fit (v1.1) ---------------- */
+  var BUD = 0;
+  function budgetFit() {
+    var b = Math.round(+$('#b-bud').value || 0), msg = $('#b-bud-msg');
+    if (b < 1000) { msg.className = 'bud-m no'; msg.textContent = 'Enter your budget per adult in rupees, e.g. 20000.'; $('#b-bud').focus(); return; }
+    BUD = b;
+    var keepT = S.t, keepM = S.m, best = null, low = null, ag = MODE === 'agent' && S.g && S.g.k;
+    var tiers = R.hotel.tiers.slice().reverse();
+    tiers.forEach(function (t) { ['MAP', 'CP'].forEach(function (m) {
+      S.t = t.id; S.m = m; var pl = compute(); if (!pl) return;
+      var pp = ag ? pl.price.clientPP : pl.price.pp;
+      if (!best && pp <= b) best = { t: t, m: m, pp: pp };
+      if (!low || pp < low.pp) low = { t: t, m: m, pp: pp };
+    }); });
+    var pick = best || low; S.t = pick ? pick.t.id : keepT; S.m = pick ? pick.m : keepM;
+    if (!pick) { S.t = keepT; S.m = keepM; return; }
+    $('#b-meal').value = S.m;
+    var tn = pick.t.name.split(' (')[0], mn = pick.m === 'MAP' ? 'breakfast + dinner' : 'breakfast only';
+    if (best) { msg.className = 'bud-m'; msg.textContent = 'Fits your budget: ' + tn + ' hotels, ' + mn + ' — about ' + inr(pick.pp) + ' per adult.'; }
+    else { msg.className = 'bud-m no'; msg.textContent = 'Lowest estimate for this route is about ' + inr(pick.pp) + ' per adult (' + tn + ', ' + mn + '). Fewer nights, a shorter route or more people sharing the car brings it down — or ask us, the team often beats the estimate.'; }
+    change(false);
+  }
+
   var LAST = null;
   function renderAll(animate) {
     if (!S.p.length) {
@@ -714,6 +737,9 @@
     });
     $('#b-tiers').addEventListener('click', function (e) { var b = e.target.closest('[data-t]'); if (b) { S.t = b.dataset.t; change(false); } });
     $('#b-meal').addEventListener('change', function (e) { S.m = e.target.value; change(false); });
+    $('#b-fit').addEventListener('click', budgetFit);
+    $('#b-bud').addEventListener('input', function (e) { if (!e.target.value) { BUD = 0; $('#b-bud-msg').textContent = ''; } });
+    $('#b-bud').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); budgetFit(); } });
     $('#b-veh').addEventListener('change', function (e) { S.k = e.target.value; change(false); });
     $('#b-adds').addEventListener('click', function (e) { var b = e.target.closest('[data-x]'); if (!b) return; var i = S.x.indexOf(b.dataset.x); if (i > -1) S.x.splice(i, 1); else S.x.push(b.dataset.x); change(false); });
     ['ag-name', 'ag-phone', 'ag-email', 'ag-mk'].forEach(function (id) {
@@ -929,6 +955,7 @@
     L.push('Estimate: ' + inr(plan.price.total) + ' (' + inr(plan.price.pp) + '/adult), range to ' + inr(plan.price.high));
     if (S.x.length) L.push('Add-ons wanted: ' + S.x.map(function (x) { return ADDONS.filter(function (a) { return a.id === x; })[0].n; }).join(', '));
     if (plan.warn.length) L.push('Warnings shown: ' + plan.warn.map(function (w) { return w.t; }).join(' | '));
+    if (BUD) L.push('Guest budget: ' + inr(BUD) + ' per adult');
     if (W.__tpLang === 'hi') L.push('Guest language: Hindi (हिंदी) — reply in Hindi');
     if (MODE === 'agent' && S.g) L.push('AGENT: ' + (S.g.n || '') + ' · ' + (S.g.p || '') + ' · ' + (S.g.e || '') + ' · markup ' + S.g.k + '%');
     L.push('Link: ' + shareUrl(false));

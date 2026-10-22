@@ -74,6 +74,8 @@
     'Stops re-ordered for the shortest drive': 'सबसे छोटे सफ़र के लिए जगहों का क्रम बदला गया', 'Max 14 stops — call us for longer tours': 'ज़्यादा से ज़्यादा 14 जगहें — लंबे टूर के लिए हमें कॉल करें',
     'Opening your itinerary in a new tab…': 'आपका यात्रा कार्यक्रम नए टैब में खुल रहा है…', 'Real map could not load — showing the route sketch': 'असली नक्शा नहीं खुला — रूट का स्केच दिखा रहे हैं',
     'Agent mode: add your agency & markup in the builder': 'एजेंट मोड: बिल्डर में अपनी एजेंसी और मार्कअप जोड़ें',
+    'Have a budget?': 'बजट तय है?', 'per adult, optional': 'प्रति वयस्क, अपनी मर्ज़ी से', 'Fit my budget': 'मेरे बजट में बनाओ', 'e.g. 20000': 'जैसे 20000',
+    'Enter your budget per adult in rupees, e.g. 20000.': 'प्रति वयस्क अपना बजट रुपये में लिखें, जैसे 20000।',
     'Standard': 'स्टैंडर्ड', 'Deluxe': 'डीलक्स', 'Super Deluxe': 'सुपर डीलक्स', 'Luxury': 'लग्ज़री', '2★ / homestay': '2★ / होमस्टे',
     'Standard (2★ / homestay)': 'स्टैंडर्ड (2★ / होमस्टे)', 'Deluxe (3★)': 'डीलक्स (3★)', 'Super Deluxe (3★+ / 4★)': 'सुपर डीलक्स (3★+ / 4★)', 'Luxury (4★–5★)': 'लग्ज़री (4★–5★)',
     'Paragliding': 'पैराग्लाइडिंग', 'River rafting': 'रिवर राफ़्टिंग', 'Snow activities & gear': 'बर्फ़ की एक्टिविटी और सामान', 'Rohtang Pass permit': 'रोहतांग पास परमिट', 'Gulmarg Gondola tickets': 'गुलमर्ग गोंडोला टिकट',
@@ -196,6 +198,8 @@
 
   /* pattern rules: [regex, fn(match) -> hindi] — tried in order after the exact dictionary */
   var RX = [
+    [/^Fits your budget: (.+?) hotels, (breakfast \+ dinner|breakfast only) — about (₹[\d,]+) per adult\.$/, function (m) { return 'आपके बजट में: ' + (EX[m[1]] || m[1]) + ' होटल, ' + (m[2] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ' — लगभग ' + m[3] + ' प्रति वयस्क।'; }],
+    [/^Lowest estimate for this route is about (₹[\d,]+) per adult \((.+?), (breakfast \+ dinner|breakfast only)\)\. .+$/, function (m) { return 'इस रूट का सबसे कम अनुमान लगभग ' + m[1] + ' प्रति वयस्क है (' + (EX[m[2]] || m[2]) + ', ' + (m[3] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ')। कम रातें, छोटा रूट या ज़्यादा लोग एक गाड़ी में — इससे कीमत घटती है। या हमसे पूछें, टीम अक्सर इससे कम में कर देती है।'; }],
     [/^([+✓]) (.+)$/, function (m) { var x = EX[m[2]] || pn(m[2]); return x === m[2] ? null : m[1] + ' ' + x; }],
     [/^(\d+) Adults?$/, function (m) { return m[1] + ' वयस्क'; }],
     [/^(\d+) nights?$/, function (m) { return m[1] + ' रात'; }],
