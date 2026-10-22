@@ -1,0 +1,16 @@
+{
+ "id": "2026-10-22-planner",
+ "agent": "Trip Planner",
+ "summary": "v1.1 budget fit (Have a budget? -> picks hotel class + meals that fit, budget in lead)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "fc33facb30af8864eddb2bf81eea2c60540e0f43776d34a61dc6cbeeef4090d0",
+   "base_sha256": "f9bcfcca9101acd0",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 339470
+  }
+ ]
+}
