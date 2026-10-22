@@ -37,8 +37,8 @@
 | 27 | media | `kainchi-dham` | hub | temple | kainchi dham (301,000; Jun peak 1,000,000) | hills | Post 12444 owns registration — link it. Registration/daily cap only PROPOSED (20 Oct 2026). Arch devi→hills (Shipra valley); no portrait of Neem Karoli Baba |
 | 28 | media | `hidimba-devi` | hub | temple | hidimba devi temple (165,000; peak 368,000) | pagoda | Manali; pagoda temple (pagoda arch since 8 Oct, honest caption) |
 | 29 | media | `mansa-devi` | hub | temple | mansa devi panchkula (5,400; mansa devi temple 22,200 shared with Haridwar) | devi | Panchkula (Haryana, not HP) — disambiguate from Haridwar Mansa Devi. Focus changed 21 Oct 2026 (Research) |
-| 30 | researched | `baba-balak-nath` | hub | temple | baba balak nath temple (12,100; baba balak nath 33,100) | hills | Deotsidh, Hamirpur — ~33 km from Ghumarwin. Arch devi→hills (Siddha, not a Devi; cave arch draws an ice lingam). Women's darshan custom — neutral wording |
-| 31 | researched | `baglamukhi` | hub | temple | baglamukhi temple kangra (12,100; baglamukhi mandir himachal 6,600) | devi | Bankhandi, Kangra. Focus changed 22 Oct 2026 (Research); 'baglamukhi temple' 74,000 shared with Datia/Nalkheda |
+| 30 | media | `baba-balak-nath` | hub | temple | baba balak nath temple (12,100; baba balak nath 33,100) | hills | Deotsidh, Hamirpur — ~33 km from Ghumarwin. Arch devi→hills (Siddha, not a Devi; cave arch draws an ice lingam). Women's darshan custom — neutral wording |
+| 31 | media | `baglamukhi` | hub | temple | baglamukhi temple kangra (12,100; baglamukhi mandir himachal 6,600) | devi | Bankhandi, Kangra. Focus changed 22 Oct 2026 (Research); 'baglamukhi temple' 74,000 shared with Datia/Nalkheda |
 | 32 | todo | `baijnath` | hub | temple | baijnath temple (22,200) | nagara | Kangra, 13th c. |
 | 33 | todo | `jakhu-temple` | hub | temple | jakhu temple shimla (27,100) | devi | |
 | 34 | todo | `manimahesh-yatra` | hub | yatra | manimahesh yatra (3,600) | himalaya | Live by Jun 2027; e-pass rules |
