@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "dawn",
+  "deva": "बाबा बालक नाथ",
+  "kicker": "Deotsidh cave shrine · Hamirpur, Himachal Pradesh",
+  "beats": [
+   "A boy-yogi grazed an old woman's cows",
+   "He returned every roti and lassi",
+   "He met Gorakhnath's test with miracles",
+   "Sundays and Chaitra fill the hill"
+  ]
+ },
+ "story": {
+  "title": "The legend of Baba Balak Nath",
+  "beats": [
+   {"arch": "hills", "sky": "dawn", "line": "A boy-yogi grazed an old woman's cows"},
+   {"arch": "pillar", "sky": "night", "line": "He met Gorakhnath's test with miracles"},
+   {"arch": "lake", "sky": "dusk", "line": "He wandered on to the far hills"},
+   {"arch": "hills", "sky": "saffron", "line": "Red flags and lamps fill Deotsidh"}
+  ]
+ }
+}
