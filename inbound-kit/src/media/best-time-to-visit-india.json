@@ -1,0 +1,14 @@
+{
+ "_note": "Media for /india-tours/best-time-to-visit-india/ (guide). Hero only, made by the Page Builder (Visual Studio Step 2) from the licensed library in hf/photos/CREDITS.md — no new photos. Captions use only each photo's allowed caption; 'PLAN BY THE MONTH' names no place. No route/cost video (guide, fact pack: not needed).",
+ "hero": {
+  "kicker": "BEST TIME TO VISIT INDIA",
+  "scenes": [
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-15404469.jpg", "kind": "tilt", "from": {"y": 120}, "to": {"y": 520}},
+   {"img": "px-5374231.jpg", "kind": "land", "from": {"scale": 1.04, "x": 50, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}},
+   {"img": "px-32262463.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-36966954.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 800}}
+  ],
+  "steps": ["TAJ MAHAL", "SHIMLA IN SNOW", "KERALA BACKWATERS", "PALOLEM, SOUTH GOA", "PLAN BY THE MONTH"]
+ }
+}
