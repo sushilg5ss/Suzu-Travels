@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1600, height=900" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bg { position: absolute; inset: 0; background: url(assets/bg.jpg) center/cover; opacity: 0.16; }
+      .k { position: absolute; left: 90px; top: 60px; color: #d4a24c; font-weight: 800; font-size: 28px; letter-spacing: 0.16em; }
+      .h { position: absolute; left: 90px; top: 102px; color: #fff; font-weight: 800; font-size: 64px; letter-spacing: -0.01em; white-space: nowrap; }
+      svg { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; overflow: visible; }
+      .chips { position: absolute; left: 90px; top: 790px; display: flex; gap: 18px; }
+      .chip { padding: 14px 26px; border-radius: 40px; border: 3px solid #d4a24c; color: #fff; font-weight: 800; font-size: 28px; white-space: nowrap; }
+      .chip.g { background: #d4a24c; color: #0b1f33; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="13" data-width="1600" data-height="900">
+      <div class="clip" data-start="0" data-duration="13" data-track-index="0" style="position:absolute;inset:0">
+        <div class="bg"></div>
+        <div class="k">ANGLING · HIMACHAL PRADESH</div>
+        <div class="h" id="h1">Can I fish in my month?</div>
+        <div class="h" id="h2">Where the trout water is</div>
+        <svg viewBox="0 0 1600 900" id="sv"></svg>
+        <div class="chips" id="chips">
+          <div class="chip">Licence for each stream</div>
+          <div class="chip">Spoons &amp; flies only</div>
+          <div class="chip g">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const NS = "http://www.w3.org/2000/svg", sv = document.getElementById("sv");
+      const OPEN = "#3fae6a", SHUT = "#c8504a", IDLE = "rgba(255,255,255,0.1)";
+      function el(tag, a, txt) { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); if (txt) e.textContent = txt; sv.appendChild(e); return e; }
+      const g1 = document.createElementNS(NS, "g"); g1.id = "part1"; sv.appendChild(g1);
+      const g2 = document.createElementNS(NS, "g"); g2.id = "part2"; sv.appendChild(g2);
+      function add(g, tag, a, txt) { const e = el(tag, a, txt); g.appendChild(e); return e; }
+      const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      const X0 = 430, CW = 92;
+      M.forEach((m, i) => add(g1, "text", { x: X0 + i * CW + 41, y: 262, "text-anchor": "middle", "font-family": "PJS", "font-weight": 800, "font-size": 26, fill: "#fff" }, m));
+      const lanes = [
+        { y: 290, t1: "TROUT STREAMS", t2: "1 Mar – 31 Oct", st: m => (m >= 2 && m <= 9) ? [1, 1] : [0, 0] },
+        { y: 450, t1: "GENERAL WATERS", t2: "mahseer · closed 16 Jun – 15 Aug", st: m => m === 5 ? [1, 0] : m === 6 ? [0, 0] : m === 7 ? [0, 1] : [1, 1] }
+      ];
+      lanes.forEach((ln, li) => {
+        add(g1, "text", { x: 90, y: ln.y + 46, "font-family": "PJS", "font-weight": 800, "font-size": 32, fill: "#d4a24c" }, ln.t1);
+        add(g1, "text", { x: 90, y: ln.y + 86, "font-family": "PJS", "font-weight": 500, "font-size": 22, fill: "#fff" }, ln.t2);
+        M.forEach((m, i) => {
+          const s = ln.st(i);
+          [0, 1].forEach(h => {
+            const r = add(g1, "rect", { x: X0 + i * CW + h * 41, y: ln.y, width: 41, height: 110, rx: h === 0 ? 0 : 0, fill: IDLE });
+            tl.to(r, { attr: { fill: s[h] ? OPEN : SHUT }, duration: 0.2 }, 0.8 + li * 1.4 + i * 0.09 + h * 0.04);
+          });
+          add(g1, "rect", { x: X0 + i * CW, y: ln.y, width: 82, height: 110, rx: 10, fill: "none", stroke: "#0b1f33", "stroke-width": 6 });
+        });
+      });
+      add(g1, "rect", { x: 430, y: 620, width: 34, height: 34, rx: 6, fill: OPEN });
+      add(g1, "text", { x: 478, y: 648, "font-family": "PJS", "font-weight": 800, "font-size": 28, fill: "#fff" }, "Open");
+      add(g1, "rect", { x: 600, y: 620, width: 34, height: 34, rx: 6, fill: SHUT });
+      add(g1, "text", { x: 648, y: 648, "font-family": "PJS", "font-weight": 800, "font-size": 28, fill: "#fff" }, "Closed for breeding");
+      add(g1, "text", { x: 430, y: 712, "font-family": "PJS", "font-weight": 500, "font-size": 24, fill: "rgba(255,255,255,0.8)" }, "Trout farms are separate — natural rivers only");
+
+      // part 2: listed trout stretches
+      const beats = [["Sainj · Largi–Ropa", 22], ["Tirthan · Largi–Nagni", 20], ["Beas · Katrain–Manali", 18], ["Uhl · Barot–Kothikhad", 10], ["Lambadug · Barot–Lohardi", 6]];
+      const counters = [];
+      beats.forEach((b, i) => {
+        const y = 250 + i * 98;
+        add(g2, "text", { x: 90, y: y + 40, "font-family": "PJS", "font-weight": 800, "font-size": 32, fill: "#fff" }, b[0]);
+        add(g2, "rect", { x: 560, y: y + 8, width: 800, height: 44, rx: 22, fill: "rgba(255,255,255,0.08)" });
+        const bar = add(g2, "rect", { x: 560, y: y + 8, width: 0, height: 44, rx: 22, fill: "#d4a24c" });
+        const t = add(g2, "text", { x: 1380, y: y + 42, "font-family": "PJS", "font-weight": 800, "font-size": 32, fill: "#fff" }, "~0 km");
+        const o = { v: 0 };
+        tl.to(bar, { attr: { width: b[1] / 22 * 800 }, duration: 1.0, ease: "power2.out" }, 6.7 + i * 0.25);
+        tl.to(o, { v: b[1], duration: 1.0, ease: "power2.out", onUpdate: () => { t.textContent = "~" + Math.round(o.v) + " km"; } }, 6.7 + i * 0.25);
+      });
+      add(g2, "text", { x: 90, y: 760, "font-family": "PJS", "font-weight": 500, "font-size": 24, fill: "rgba(255,255,255,0.8)" }, "Also: Pabbar at Rohru and Baspa at Sangla · listed stretches, approx. lengths");
+
+      tl.set("#part2", { opacity: 0 }, 0);
+      tl.set("#h2", { opacity: 0 }, 0);
+      tl.set("#chips", { opacity: 0 }, 0);
+      tl.fromTo("#h1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 }, 0.1);
+      tl.fromTo("#part1", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.3);
+      tl.to(["#part1", "#h1"], { opacity: 0, duration: 0.4 }, 5.9);
+      tl.to(["#part2", "#h2"], { opacity: 1, duration: 0.4 }, 6.3);
+      tl.fromTo("#chips", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, immediateRender: false }, 9.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
