@@ -842,5 +842,68 @@
   "license": "Unsplash License",
   "src": "https://unsplash.com/photos/a-high-speed-bullet-train-pulling-into-a-train-station-CyMmU_7DI64",
   "wp_id": 15224
+ },
+ "europe-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-paris-louvre.webp",
+  "alt": "Louvre Museum and its glass pyramid with visitors in the courtyard, Paris, France",
+  "cap": "The Louvre, Paris",
+  "credit": "Mika Baumeister",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/people-gathering-near-louvre-museum-during-daytime-GCfE4fl7tIQ",
+  "wp_id": 15469
+ },
+ "europe-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-lucerne-chapel-bridge.webp",
+  "alt": "Chapel Bridge and the Water Tower on the Reuss River at sunrise, Lucerne, Switzerland",
+  "cap": "Chapel Bridge, Lucerne",
+  "credit": "Simon Infanger",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/brown-wooden-dock-on-river-under-blue-sky-and-white-clouds-during-daytime-vAvQ_IRdG6o",
+  "wp_id": 15470
+ },
+ "europe-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-jungfrau-region-alps.webp",
+  "alt": "Snow-capped peaks of the Jungfrau region above pine forest, Swiss Alps, Switzerland",
+  "cap": "Jungfrau region, Swiss Alps",
+  "credit": "visualsoflukas",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-mountain-range-with-snow-J7mFVQiZJKI",
+  "wp_id": 15471
+ },
+ "europe-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-jungfrau-railway-snow.webp",
+  "alt": "Red mountain train crossing snowfields near Kleine Scheidegg in the Jungfrau region, Switzerland",
+  "cap": "Mountain train, Kleine Scheidegg",
+  "credit": "Himmel S",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-train-traveling-down-a-snow-covered-mountain-side-dINw74vVy3A",
+  "wp_id": 15472
+ },
+ "europe-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-venice-grand-canal.webp",
+  "alt": "Grand Canal lined with old palazzi and boats, Venice, Italy",
+  "cap": "Grand Canal, Venice",
+  "credit": "Alicia Steels",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/grand-canal-venice-McH4ksbcCyE",
+  "wp_id": 15473
+ },
+ "europe-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-florence-duomo-campanile.webp",
+  "alt": "Giotto's bell tower and the marble walls of Florence Cathedral seen from a narrow street, Florence, Italy",
+  "cap": "Florence Cathedral",
+  "credit": "Thibault Lam Tran",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/florences-duomo-is-framed-by-buildings-47We_cJTwoU",
+  "wp_id": 15474
+ },
+ "europe-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-europe-rome-colosseum.webp",
+  "alt": "Arches of the Colosseum against a clear sky, Rome, Italy",
+  "cap": "Colosseum, Rome",
+  "credit": "Braden Collum",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/the-colosseum-rome-italy-during-daytime-75XHJzEIeUc",
+  "wp_id": 15475
  }
 }

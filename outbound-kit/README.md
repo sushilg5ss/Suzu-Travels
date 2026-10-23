@@ -20,6 +20,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /georgia-tour-packages/ | 14841 | `.hx` country page (20 Oct 2026) — `pages/gen_georgia.py` (6-day itinerary grid = 3 columns on desktop) |
 | /azerbaijan-tour-packages/ | 15017 | `.hx` country page (21 Oct 2026) — `pages/gen_azerbaijan.py` (6-day itinerary grid = 3 columns) |
 | /japan-tour-packages/ | 15226 | `.hx` country page (22 Oct 2026) — `pages/gen_japan.py` (8-day itinerary grid = 4 columns) |
+| /europe-tour-packages/ | 15476 | `.hx` multi-country page (23 Oct 2026) — `pages/gen_europe.py` (10-day itinerary grid = 5 columns) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
