@@ -916,7 +916,30 @@
       "https://en.wikipedia.org/wiki/Baijnath_Temple",
       "https://hpkangra.nic.in/",
       "https://himachaltourism.gov.in/"
-    ]
+    ],
+    "lat": 32.052,
+    "lon": 76.648,
+    "coords_note": "Town coords (OSRM snap; 17 km to Palampur). Wikipedia temple coords 32.0836/76.9664 are wrong. as_of 2026-10-23",
+    "history": "Present temple 1204 CE by merchants Ahuka and Manyuka (Sanskrit inscriptions, Sharada script, King Jaya Chandra; earlier shrine on site); repaired under Sansar Chand 1786; survived 1905 Kangra earthquake with minor damage; ASI protected. Sources: hpkangra.nic.in/tourist-place/shiv-temple-baijnath/, utsav.gov.in, Wikipedia. as_of 2026-10-23",
+    "festival_2027": {
+      "what": "Maha Shivratri state-level fair (SDM Baijnath)",
+      "date": "Mahashivratri 6 Mar 2027; fair programme not announced yet",
+      "source": "https://hpkangra.nic.in/?p=25713",
+      "as_of": "2026-10-23"
+    },
+    "reach_km": {
+      "palampur": 17,
+      "bir": 12,
+      "gaggal_airport": 54,
+      "dharamshala": 53,
+      "mandi": 75,
+      "chamunda_devi": 35,
+      "kangra_devi": 51,
+      "ghumarwin": 115,
+      "source": "OSRM router.project-osrm.org; district says Gaggal 56, Palampur 16",
+      "as_of": "2026-10-23"
+    },
+    "rail_note": "Baijnath Paprola (Kangra Valley NG) — service often suspended after monsoon; check NTES. as_of 2026-10-23"
   },
   {
     "slug": "bijli-mahadev-kullu",
