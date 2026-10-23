@@ -670,5 +670,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-agra-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e745b0fe6eeec662e2f03b077796916c34b3f952/cab-kit/media/delhi-to-agra-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e745b0fe6eeec662e2f03b077796916c34b3f952/cab-kit/media/delhi-to-agra-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e745b0fe6eeec662e2f03b077796916c34b3f952/cab-kit/media/delhi-to-agra-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
