@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1600, height=900">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"SuzuSans";src:url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2");font-weight:800}
+@font-face{font-family:"SuzuSans";src:url("assets/plus-jakarta-sans-latin-700-normal.woff2") format("woff2");font-weight:700}
+@font-face{font-family:"SuzuSans";src:url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2");font-weight:500}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{margin:0;width:1600px;height:900px;overflow:hidden;background:#0d1f12}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"SuzuSans",sans-serif}
+.scene{position:absolute;inset:0;width:100%;height:100%;background:radial-gradient(1200px 800px at 35% 55%,#1d3f27 0%,#122615 55%,#0b1a0e 100%)}
+svg.map{position:absolute;inset:0;width:100%;height:100%}
+.grid line{stroke:#ffffff;stroke-opacity:.05;stroke-width:1}
+.zone{fill:#26452e;fill-opacity:.55}
+.glyph path{fill:none;stroke:#8fb59a;stroke-opacity:.17;stroke-width:2;stroke-linejoin:round}
+.zlabel{font-size:22px;font-weight:800;letter-spacing:.5em;fill:#cfe3d4;fill-opacity:.35}
+.ctx circle{fill:#9fb7a6;fill-opacity:.55} .ctx text{font-size:20px;font-weight:500;fill:#cfe0d4;fill-opacity:.55}
+.town .dot{fill:#ffffff} .town .halo{fill:#d4af37;fill-opacity:.0}
+.town text{font-size:26px;font-weight:700;fill:#ffffff;paint-order:stroke;stroke:#0b1a0e;stroke-width:6px;stroke-linejoin:round}
+.town.end .dot{fill:#d4af37;stroke:#fff;stroke-width:3} .town.end text{font-size:32px;font-weight:800;fill:#f1d98a}
+.road{fill:none;stroke:#d4af37;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.roadglow{fill:none;stroke:#f1d98a;stroke-opacity:.25;stroke-width:22;stroke-linecap:round;stroke-linejoin:round}
+.base{fill:none;stroke:#ffffff;stroke-opacity:.12;stroke-width:4;stroke-dasharray:2 12;stroke-linecap:round}
+.cab{filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+.panel{position:absolute;left:1070px;top:70px;width:470px;height:760px;padding:44px 40px;border-radius:30px;background:rgba(9,22,12,.72);border:1px solid rgba(241,217,138,.28);display:flex;flex-direction:column;gap:10px;color:#fff}
+.kick{font-size:20px;font-weight:800;letter-spacing:.3em;color:#d4af37}
+.big{font-size:62px;font-weight:800;line-height:1.02;letter-spacing:-.01em}
+.arrow{display:block;width:140px;height:8px;margin:6px 0} .arrow i{display:block;width:100%;height:8px;border-radius:4px;background:#d4af37}
+.stats{display:flex;gap:18px;margin-top:22px}
+.stats div{flex:1;background:rgba(255,255,255,.07);border-radius:18px;padding:18px 18px}
+.stats b{display:block;white-space:nowrap;font-size:30px;font-weight:800;color:#f1d98a;line-height:1.1} .stats span{font-size:18px;color:#cfe0d4;font-weight:500}
+.via{font-size:22px;color:#e8efe9;margin-top:16px;line-height:1.4;font-weight:500}
+.list{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:14px}
+.list li{font-size:30px;font-weight:700;display:flex;align-items:center;gap:16px;color:#e8efe9;opacity:.45}
+.list li i{display:block;width:16px;height:16px;border-radius:50%;background:#d4af37;flex:0 0 16px}
+.brand{margin-top:auto;font-size:18px;font-weight:800;letter-spacing:.3em;color:#f1d98a;opacity:.85}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="9" data-width="1600" data-height="900">
+<div class="scene clip" id="scene" data-start="0" data-duration="9" data-track-index="0">
+<svg class="map" viewBox="0 0 1600 900" data-layout-allow-overflow>
+ <g class="grid"><line x1="0" y1="816" x2="1600" y2="816"/><line x1="0" y1="604" x2="1600" y2="604"/><line x1="0" y1="391" x2="1600" y2="391"/><line x1="0" y1="179" x2="1600" y2="179"/><line x1="124" y1="0" x2="124" y2="900"/><line x1="311" y1="0" x2="311" y2="900"/><line x1="499" y1="0" x2="499" y2="900"/><line x1="686" y1="0" x2="686" y2="900"/><line x1="874" y1="0" x2="874" y2="900"/><line x1="1061" y1="0" x2="1061" y2="900"/><line x1="1249" y1="0" x2="1249" y2="900"/><line x1="1436" y1="0" x2="1436" y2="900"/></g>
+ <path class="zone" d="M-2314 -1985 L-964 -1858 L-439 -1624 L-157 -1455 L11 -1327 L161 -1200 L255 -1030 L293 -882 L311 -818 L536 -691 L667 -606 L799 -500 L1024 -330 L1211 -182 L1624 -118 L2936 137 L7061 604 L7061 -2000 L-2314 -2000 Z"/>
+ <g class="glyph"></g>
+ <path class="base" d="M390.0 132.5 L391.6 133.1 L393.5 133.8 L395.6 134.6 L398.0 135.4 L400.6 136.3 L403.4 137.3 L406.4 138.3 L409.6 139.5 L412.9 140.8 L416.3 142.3 L419.9 143.8 L423.6 145.6 L427.4 147.4 L431.3 149.5 L435.4 151.5 L439.9 153.3 L444.8 155.0 L449.9 156.8 L455.3 158.6 L460.7 160.5 L466.2 162.7 L471.6 165.3 L476.9 168.2 L482.0 171.6 L486.8 175.6 L491.2 180.3 L495.3 185.7 L498.8 191.9 L501.8 199.3 L504.4 208.1 L506.8 218.0 L508.8 228.8 L510.6 240.3 L512.1 252.2 L513.5 264.3 L514.8 276.4 L515.9 288.3 L517.0 299.7 L518.0 310.4 L519.0 320.2 L520.1 328.9 L521.3 336.2 L522.4 341.7 L523.3 345.5 L524.1 347.9 L524.7 349.1 L525.3 349.6 L525.9 349.7 L526.4 349.7 L527.0 349.9 L527.6 350.7 L528.2 352.3 L529.1 355.2 L530.0 359.6 L531.1 365.9 L532.5 374.4 L533.8 385.3 L534.9 398.4 L535.9 413.3 L536.9 429.8 L537.8 447.5 L538.9 466.1 L540.2 485.2 L541.8 504.6 L543.8 523.9 L546.3 542.8 L549.3 561.0 L552.9 578.1 L557.3 593.8 L562.5 607.8 L568.9 620.6 L576.7 633.1 L585.7 645.1 L595.5 656.6 L606.1 667.7 L617.0 678.2 L628.1 688.1 L639.2 697.5 L649.9 706.2 L660.0 714.3 L669.4 721.7 L677.6 728.3 L684.6 734.2 L690.0 739.3"/>
+ <path class="roadglow" id="g0" d="M390.0 132.5 L391.6 133.1 L393.5 133.8 L395.6 134.6 L398.0 135.4 L400.6 136.3 L403.4 137.3 L406.4 138.3 L409.6 139.5 L412.9 140.8 L416.3 142.3 L419.9 143.8 L423.6 145.6 L427.4 147.4 L431.3 149.5 L435.4 151.5 L439.9 153.3 L444.8 155.0 L449.9 156.8 L455.3 158.6 L460.7 160.5 L466.2 162.7 L471.6 165.3 L476.9 168.2 L482.0 171.6 L486.8 175.6 L491.2 180.3 L495.3 185.7 L498.8 191.9 L501.8 199.3 L504.4 208.1 L506.8 218.0 L508.8 228.8 L510.6 240.3 L512.1 252.2 L513.5 264.3 L514.8 276.4 L515.9 288.3 L517.0 299.7 L518.0 310.4 L519.0 320.2 L520.1 328.9 L521.3 336.2 L522.4 341.7 L523.3 345.5 L524.1 347.9 L524.7 349.1 L525.3 349.6 L525.9 349.7 L526.4 349.7 L527.0 349.9 L527.6 350.7 L528.2 352.3 L529.1 355.2 L530.0 359.6 L531.1 365.9 L532.5 374.4 L533.8 385.3 L534.9 398.4 L535.9 413.3 L536.9 429.8 L537.8 447.5 L538.9 466.1 L540.2 485.2 L541.8 504.6 L543.8 523.9 L546.3 542.8 L549.3 561.0 L552.9 578.1 L557.3 593.8 L562.5 607.8 L568.9 620.6 L576.7 633.1 L585.7 645.1 L595.5 656.6 L606.1 667.7 L617.0 678.2 L628.1 688.1 L639.2 697.5 L649.9 706.2 L660.0 714.3 L669.4 721.7 L677.6 728.3 L684.6 734.2 L690.0 739.3"/><path class="road" id="r0" d="M390.0 132.5 L391.6 133.1 L393.5 133.8 L395.6 134.6 L398.0 135.4 L400.6 136.3 L403.4 137.3 L406.4 138.3 L409.6 139.5 L412.9 140.8 L416.3 142.3 L419.9 143.8 L423.6 145.6 L427.4 147.4 L431.3 149.5 L435.4 151.5 L439.9 153.3 L444.8 155.0 L449.9 156.8 L455.3 158.6 L460.7 160.5 L466.2 162.7 L471.6 165.3 L476.9 168.2 L482.0 171.6 L486.8 175.6 L491.2 180.3 L495.3 185.7 L498.8 191.9 L501.8 199.3 L504.4 208.1 L506.8 218.0 L508.8 228.8 L510.6 240.3 L512.1 252.2 L513.5 264.3 L514.8 276.4 L515.9 288.3 L517.0 299.7 L518.0 310.4 L519.0 320.2 L520.1 328.9 L521.3 336.2 L522.4 341.7 L523.3 345.5 L524.1 347.9 L524.7 349.1 L525.3 349.6 L525.9 349.7 L526.4 349.7 L527.0 349.9 L527.6 350.7 L528.2 352.3 L529.1 355.2 L530.0 359.6 L531.1 365.9 L532.5 374.4 L533.8 385.3 L534.9 398.4 L535.9 413.3 L536.9 429.8 L537.8 447.5 L538.9 466.1 L540.2 485.2 L541.8 504.6 L543.8 523.9 L546.3 542.8 L549.3 561.0 L552.9 578.1 L557.3 593.8 L562.5 607.8 L568.9 620.6 L576.7 633.1 L585.7 645.1 L595.5 656.6 L606.1 667.7 L617.0 678.2 L628.1 688.1 L639.2 697.5 L649.9 706.2 L660.0 714.3 L669.4 721.7 L677.6 728.3 L684.6 734.2 L690.0 739.3"/>
+ <g class="town end" id="t0" data-x="390.0" data-y="132.5"><circle class="halo" cx="390.0" cy="132.5" r="22"/><circle class="dot" cx="390.0" cy="132.5" r="9"/><text x="420.0" y="139.5" text-anchor="start">Delhi</text></g><g class="town end" id="t4" data-x="690.0" data-y="739.3"><circle class="halo" cx="690.0" cy="739.3" r="22"/><circle class="dot" cx="690.0" cy="739.3" r="9"/><text x="720.0" y="746.3" text-anchor="start">Agra</text></g><g class="town" id="t1" data-x="431.3" data-y="149.5"><circle class="halo" cx="431.3" cy="149.5" r="14"/><circle class="dot" cx="431.3" cy="149.5" r="6"/></g><g class="town" id="t2" data-x="521.3" data-y="336.2"><circle class="halo" cx="521.3" cy="336.2" r="14"/><circle class="dot" cx="521.3" cy="336.2" r="6"/><text x="537.3" y="343.2" text-anchor="start">Jewar</text></g><g class="town" id="t3" data-x="562.5" data-y="607.8"><circle class="halo" cx="562.5" cy="607.8" r="14"/><circle class="dot" cx="562.5" cy="607.8" r="6"/><text x="578.5" y="614.8" text-anchor="start">Mathura</text></g>
+ <g class="cab" id="cab"><circle r="20" fill="#d4af37"/><circle r="20" fill="none" stroke="#fff" stroke-width="4"/>
+   <path d="M-11 3 L-9 -4 L-4 -8 L6 -8 L10 -3 L12 3 L12 6 L-12 6 Z" fill="#122615"/><circle cx="-6" cy="7" r="3.2" fill="#fff"/><circle cx="7" cy="7" r="3.2" fill="#fff"/></g>
+</svg>
+<div class="panel" data-layout-allow-overflow><div class="kick">ROUTE PLAN</div><div class="big">Delhi</div><div class="arrow"><i></i></div><div class="big">Agra</div><div class="stats"><div><b>230 km</b><span>distance</span></div><div><b>3.5–4.5 hrs</b><span>by road</span></div></div><div class="via">via Noida · Jewar · Mathura</div><div class="brand">SUZU TRAVELS · CABS</div></div>
+</div></div>
+<script>
+const C={"mode": "path", "n": 1, "labels": 5};
+const tl=gsap.timeline({paused:true});
+const roads=[...Array(C.n).keys()].map(i=>document.getElementById("r"+i));
+const glows=[...Array(C.n).keys()].map(i=>document.getElementById("g"+i));
+const lens=roads.map(r=>r.getTotalLength());
+roads.forEach((r,i)=>{gsap.set([r,glows[i]],{strokeDasharray:lens[i],strokeDashoffset:lens[i]});});
+const cab=document.getElementById("cab");
+function place(i,t){const p=roads[i].getPointAtLength(lens[i]*t);cab.setAttribute("transform","translate("+p.x+" "+p.y+")");}
+place(0,0);
+gsap.set(cab,{opacity:0});
+const towns=[...Array(C.labels).keys()].map(i=>document.getElementById("t"+i));
+towns.forEach((t,i)=>{gsap.set(t,{opacity:(i===0?1:.5)});});
+if(C.mode==="path"){
+  const drawStart=0.6, drawDur=5.0;
+  tl.fromTo(cab,{opacity:0},{opacity:1,duration:0.3},drawStart-0.3);
+  tl.fromTo([roads[0],glows[0]],{strokeDashoffset:lens[0]},{strokeDashoffset:0,duration:drawDur,ease:"power1.inOut"},drawStart);
+  const prox={t:0};
+  tl.fromTo(prox,{t:0},{t:1,duration:drawDur,ease:"power1.inOut",onUpdate:()=>place(0,prox.t)},drawStart);
+  // light up towns in order of distance along the road
+  const samples=200;const pts=[...Array(samples+1).keys()].map(j=>roads[0].getPointAtLength(lens[0]*j/samples));
+  towns.forEach((t,i)=>{
+    if(i===0) return;
+    const x=+t.dataset.x,y=+t.dataset.y;let best=0,bd=1e9;
+    pts.forEach((p,j)=>{const d=(p.x-x)**2+(p.y-y)**2;if(d<bd){bd=d;best=j;}});
+    const f=best/samples;
+    tl.fromTo(t,{opacity:.5},{opacity:1,duration:0.3},drawStart+drawDur*f-0.1);
+  });
+  const last=towns[towns.length-1].querySelector(".halo");
+  tl.fromTo(last,{fillOpacity:0,scale:.6,transformOrigin:"50% 50%"},{fillOpacity:.45,scale:1.6,duration:0.9,ease:"power2.out",yoyo:true,repeat:1},drawStart+drawDur);
+  tl.to([roads[0],glows[0]],{opacity:0,duration:0.7},8.0);
+  tl.to(cab,{opacity:0,duration:0.5},8.0);
+  tl.to(towns.slice(1),{opacity:.5,duration:0.6},8.1);
+  tl.set([roads[0],glows[0]],{strokeDashoffset:lens[0]},8.85);
+  tl.set([roads[0],glows[0]],{opacity:1},8.9);
+} else {
+  const per=7.2/C.n;
+  const hubHalo=towns[0].querySelector(".halo");
+  tl.fromTo(hubHalo,{fillOpacity:0,scale:.6,transformOrigin:"50% 50%"},{fillOpacity:.4,scale:1.5,duration:0.6,yoyo:true,repeat:1},0.1);
+  roads.forEach((r,i)=>{
+    const t0=0.4+i*per, d=per*0.8; const prox={t:0};
+    tl.fromTo([r,glows[i]],{strokeDashoffset:lens[i]},{strokeDashoffset:0,duration:d,ease:"power1.inOut"},t0);
+    tl.fromTo(prox,{t:0},{t:1,duration:d,ease:"power1.inOut",onUpdate:()=>place(i,prox.t)},t0);
+    tl.fromTo(towns[i+1],{opacity:.5},{opacity:1,duration:0.3},t0+d-0.2);
+    const li=document.getElementById("li"+i); if(li) tl.fromTo(li,{opacity:.45},{opacity:1,duration:0.3},t0+d-0.2);
+  });
+  tl.fromTo(cab,{opacity:0},{opacity:1,duration:0.3},0.2);
+  tl.to(cab,{opacity:0,duration:0.4},8.0);
+  tl.to([...roads,...glows],{opacity:0,duration:0.6},8.1);
+  tl.to(towns.slice(1),{opacity:.5,duration:0.6},8.1);
+  tl.to([...document.querySelectorAll(".list li")],{opacity:.45,duration:0.6},8.1);
+  tl.set([...roads,...glows],{strokeDashoffset:(i,el)=>el.getTotalLength()},8.85);
+  tl.set([...roads,...glows],{opacity:1},8.9);
+}
+window.__timelines["main"]=tl;
+</script></body></html>

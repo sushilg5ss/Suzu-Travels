@@ -143,6 +143,8 @@ PLACES = {
     "Atal Tunnel": (32.40, 77.15), "Tandi": (32.56, 76.97), "Jispa": (32.64, 77.18), "Darcha": (32.67, 77.22), "Baralacha La": (32.76, 77.42),
     "Sarchu": (32.82, 77.53), "Gata Loops": (33.03, 77.60), "Pang": (33.13, 77.79), "Tanglang La": (33.51, 77.77), "Rumtse": (33.63, 77.76),
     "Upshi": (33.83, 77.81), "Karu": (33.93, 77.73),
+    "Noida": (28.57, 77.32), "Greater Noida": (28.47, 77.50), "Jewar": (28.13, 77.56), "Tappal": (28.04, 77.59),
+    "Mathura": (27.49, 77.67), "Vrindavan": (27.58, 77.70), "Fatehpur Sikri": (27.09, 77.66),
     "Neelkanth": (30.08, 78.34), "Chopta": (30.47, 79.21), "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
 }
 
@@ -172,6 +174,7 @@ ROUTES = [
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
+    dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
 
