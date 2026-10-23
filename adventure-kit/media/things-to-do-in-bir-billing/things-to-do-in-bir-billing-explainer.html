@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; color: #fff; }
+      .kicker { position: absolute; left: 120px; top: 64px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .h { position: absolute; left: 120px; top: 108px; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .card { position: absolute; top: 290px; width: 790px; height: 330px; border-radius: 28px; background: #12304d; border: 3px solid #d4a24c; padding: 40px 48px; }
+      .card .d { color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.1em; }
+      .card .t { margin-top: 14px; font-weight: 800; font-size: 50px; line-height: 1.12; }
+      .card .s { margin-top: 18px; font-weight: 500; font-size: 32px; line-height: 1.3; color: #d9e2ec; }
+      .months { position: absolute; left: 120px; top: 730px; width: 1680px; height: 230px; }
+      .m { position: absolute; top: 60px; width: 130px; height: 90px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 30px; }
+      .end { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="13" data-width="1920" data-height="1080">
+      <div id="pa" class="clip" data-start="0" data-duration="6.9" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker">BIR BILLING · HOW THE VALLEY WORKS</div>
+        <div class="h">One valley, <span style="color:#d4a24c">two levels</span></div>
+        <svg id="prof" style="position:absolute;left:100px;top:230px;width:1720px;height:780px;overflow:visible" viewBox="0 0 1720 780">
+          <path id="ground" d="M 0 780 L 0 150 C 120 120 200 112 280 128 C 520 190 820 520 1180 630 C 1380 690 1560 700 1720 700 L 1720 780 Z" fill="#163a5c" />
+          <path id="road" d="M 290 160 L 520 270 L 430 315 L 720 430 L 630 470 L 930 570 L 860 600 L 1160 655 L 1440 692" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="280" cy="128" r="14" fill="#d4a24c" />
+          <circle cx="1450" cy="690" r="14" fill="#d4a24c" />
+          <path id="air" d="M 280 100 C 700 40 1300 200 1450 660" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="10 16" />
+          <g id="glider">
+            <path d="M -34 -6 C -20 -26 20 -26 34 -6" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+            <line x1="-28" y1="-8" x2="0" y2="18" stroke="#fff" stroke-width="2.5" /><line x1="28" y1="-8" x2="0" y2="18" stroke="#fff" stroke-width="2.5" />
+            <circle cx="0" cy="22" r="6" fill="#fff" />
+          </g>
+          <g id="bl">
+            <text x="40" y="60" style="font-size:40px;fill:#d4a24c">BILLING ~2,400 m</text>
+            <text x="60" y="250" style="font-size:34px">Take-off</text>
+            <text x="60" y="305" style="font-size:34px">Rajgundha trail head</text>
+            <text x="60" y="360" style="font-size:34px">Snow possible Dec – Feb</text>
+          </g>
+          <text id="rl" x="1000" y="500" style="font-size:32px;fill:#d4a24c">14 km hill road</text>
+          <g id="br">
+            <text x="1720" y="250" text-anchor="end" style="font-size:40px;fill:#d4a24c">BIR ~1,400 m</text>
+            <text x="1720" y="305" text-anchor="end" style="font-size:34px">Landing fields</text>
+            <text x="1720" y="355" text-anchor="end" style="font-size:34px">Monasteries</text>
+            <text x="1720" y="405" text-anchor="end" style="font-size:34px">Bungee</text>
+            <text x="1720" y="455" text-anchor="end" style="font-size:34px">Waterfall walk</text>
+            <text x="1720" y="505" text-anchor="end" style="font-size:34px">Tea gardens</text>
+          </g>
+        </svg>
+      </div>
+      <div id="pb" class="clip" data-start="6.6" data-duration="4.3" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kicker">PLAN IT LIKE THIS</div>
+        <div class="h">Your <span style="color:#d4a24c">2 Bir days</span></div>
+        <div class="card" id="c1" style="left:120px"><div class="d">DAY 1</div><div class="t">Fly in the calm morning</div><div class="s">Jeep up to Billing, land in Bir, then monasteries and colony cafés</div></div>
+        <div class="card" id="c2" style="left:1010px"><div class="d">DAY 2</div><div class="t">Bungee, walk or cycle</div><div class="s">It is also your buffer morning if weather grounded day 1</div></div>
+        <div class="months" id="mo">
+          <div style="position:absolute;left:0;top:0;font-weight:800;font-size:30px;color:#d4a24c;letter-spacing:0.1em;white-space:nowrap">FLYING MONTHS</div>
+          <div id="mrow"></div>
+          <div id="nofly" style="position:absolute;left:910px;top:52px;width:280px;height:106px;border:4px solid #fff;border-radius:16px"></div>
+          <div style="position:absolute;left:0;top:172px;font-weight:500;font-size:28px;color:#d9e2ec;white-space:nowrap">Gold = best · Slate = cold, weather decides · Grey = no flying 15 Jul – 15 Sep</div>
+        </div>
+      </div>
+      <div id="pc" class="clip" data-start="10.6" data-duration="2.4" data-track-index="2" style="position:absolute;inset:0">
+        <div class="end">
+          <div style="font-weight:800;font-size:84px;letter-spacing:-0.02em">Plan your <span style="color:#d4a24c">Bir days</span></div>
+          <div style="margin-top:40px;background:#d4a24c;color:#0b1f33;font-weight:800;font-size:44px;padding:22px 56px;border-radius:999px">Get Quote on WhatsApp</div>
+          <div style="margin-top:36px;font-weight:500;font-size:32px;color:#d9e2ec">Hotel + cab + activities in one plan</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const M = ["J","F","M","A","M","J","J","A","S","O","N","D"];
+      const col = ["#5d7389","#5d7389","#d4a24c","#d4a24c","#d4a24c","#d4a24c","#d4a24c","#3a4a5a","#d4a24c","#d4a24c","#d4a24c","#5d7389"];
+      const row = document.getElementById("mrow");
+      M.forEach((m, i) => {
+        const d = document.createElement("div");
+        d.className = "m"; d.id = "m" + i;
+        d.style.left = (i * 140) + "px";
+        d.style.background = col[i];
+        d.style.color = col[i] === "#d4a24c" ? "#0b1f33" : "#ffffff";
+        if (i === 6) d.style.background = "linear-gradient(90deg,#d4a24c 50%,#3a4a5a 50%)";
+        if (i === 8) d.style.background = "linear-gradient(90deg,#3a4a5a 50%,#d4a24c 50%)";
+        d.textContent = m;
+        if (i === 6) { d.style.color = "#0b1f33"; d.style.justifyContent = "flex-start"; d.style.paddingLeft = "22px"; }
+        if (i === 8) { d.style.color = "#0b1f33"; d.style.justifyContent = "flex-end"; d.style.paddingRight = "22px"; }
+        row.appendChild(d);
+      });
+      const tl = gsap.timeline({ paused: true });
+      const road = document.getElementById("road");
+      const RL = road.getTotalLength();
+      road.setAttribute("stroke-dasharray", RL + " " + RL);
+      tl.fromTo(".kicker, .h", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo("#ground", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 0.3);
+      tl.fromTo("#bl", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.9);
+      tl.fromTo(road, { attr: { "stroke-dashoffset": RL } }, { attr: { "stroke-dashoffset": 0 }, duration: 2.2, ease: "power1.inOut" }, 1.4);
+      tl.fromTo("#rl", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 2.6);
+      const air = document.getElementById("air");
+      const AL = air.getTotalLength();
+      const g = document.getElementById("glider");
+      function put(t) { const a = air.getPointAtLength(AL * t); g.setAttribute("transform", "translate(" + a.x.toFixed(1) + "," + (a.y - 26).toFixed(1) + ")"); }
+      put(0);
+      tl.fromTo("#glider", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 3.4);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 2.4, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 3.5);
+      tl.fromTo("#br text", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.4, stagger: 0.18, ease: "power2.out" }, 4.4);
+      tl.to("#pa", { opacity: 0, duration: 0.3, ease: "power1.in" }, 6.55);
+      tl.fromTo("#pb", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 6.6);
+      tl.fromTo("#c1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 6.9);
+      tl.fromTo("#c2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 7.4);
+      tl.fromTo("#mrow .m", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.06, ease: "power2.out" }, 8.1);
+      tl.fromTo("#nofly", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 9.2);
+      tl.to("#pb", { opacity: 0, duration: 0.3, ease: "power1.in" }, 10.55);
+      tl.fromTo("#pc", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 10.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
