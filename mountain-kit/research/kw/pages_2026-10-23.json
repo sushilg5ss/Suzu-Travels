@@ -1,0 +1,44 @@
+{
+"pulled": "2026-10-23",
+"customer": "1172710099",
+"language": "English",
+"source": "Pipeboard get_google_ads_keyword_ideas, 12 months Oct 2025-Sep 2026, banded; values [worldwide, IN, US+GB+AU+IL+DE+FR]; null = not returned in that geo",
+"kamet": {
+"kamet": [27100, null, null],
+"kamet mountain": [5400, 5400, 140],
+"kamet peak": [5400, 5400, 140],
+"mount kamet": [5400, 5400, 140],
+"mt kamet": [5400, 5400, 140],
+"mountain kamet": [5400, 5400, 140],
+"kamet height": [210, 210, 10],
+"kamet expedition": [50, 50, 10],
+"mount kamet expedition": [40, 30, 10],
+"mt kamet expedition": [40, 40, 10],
+"mount kamet expedition cost": [40, 40, 10],
+"kamet range": [20, 20, 10],
+"kamet whisky": [880, null, null],
+"kamet single malt": [170, null, null],
+"note": "'kamet mountain/peak', 'mount/mt kamet', 'mountain kamet' = one close-variant group (5,400 ww, almost all India; Jan-Feb 2026 6,600). Bare 'kamet' 27,100 is mixed with Kamet whisky (whisky/single malt variants ~1,500 ww) - do not use 27,100 as page demand. Expedition terms tiny (40-50), Aug 2026 spike 110."
+},
+"changabang": {
+"changabang": [1000, 170, 590],
+"changabang mountain": [110, 20, 70],
+"changabang peak": [30, null, null],
+"changabang west wall": [50, 10, 40],
+"changabang west face": [20, 10, 10],
+"changabang north face": [20, 10, 10],
+"mountain equipment changabang": [320, null, 260],
+"mountain equipment changabang jacket": [170, null, 140],
+"changabang jacket": [140, null, 110],
+"note": "Bare 'changabang' 1,000 ww / 590 intl is shared with the Mountain Equipment 'Changabang' jacket (jacket/brand variants ~650 ww). True mountain demand is probably a few hundred a month, mostly UK/US climbers. India 170 (Jun 2026 spike 390). Low volume but strong global-authority entity."
+},
+"uttarakhand": {
+"highest peak in uttarakhand": [1900, 1900, 10],
+"peaks in uttarakhand": [1900, 1900, 90],
+"mountains in uttarakhand": [1900, null, null],
+"mountaineering in uttarakhand": [1900, null, null],
+"highest mountain in uttarakhand": [170, 170, 10],
+"uttarakhand peaks": [110, 110, 10],
+"note": "'highest peak / peaks / mountains / mountaineering in uttarakhand' = one close-variant group (1,900, India-only; May-Jun 2026 2,400-2,900). Intent: India GK ('which is the highest peak of Uttarakhand' = Nanda Devi) + a list. Hotel/resort names with 'peaks' (Peaks and Pine Lansdowne, The White Peaks Nainital) are noise."
+}
+}
