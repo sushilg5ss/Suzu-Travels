@@ -1,0 +1,25 @@
+{
+ "_note": "Media for /india-tours/agra-to-jaipur/ (practical). Photos: Taj + Hawa Mahal from the library; NEW Fatehpur Sikri (Diwan-i-Khas, px-9467617) and Chand Baori, Abhaneri (px-19195966) — both Pexels, located at those places per CREDITS.md. Route stops (lat/lon) from research/pages/agra-to-jaipur.md 'Media notes'. No cost ladder (fact pack).",
+ "hero": {
+  "kicker": "AGRA → JAIPUR · ROAD OR RAIL",
+  "scenes": [
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-9467617.jpg", "kind": "land", "from": {"scale": 1.04, "x": 50, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}},
+   {"img": "px-19195966.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 480}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}}
+  ],
+  "steps": ["LEAVE AGRA", "FATEHPUR SIKRI", "ABHANERI STEPWELL", "PINK CITY JAIPUR"]
+ },
+ "route": {
+  "title": "AGRA → JAIPUR · 232 KM",
+  "sub": "By road, via Fatehpur Sikri and Abhaneri",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Agra", "sub": "Taj Mahal", "day": "Start", "lat": 27.1767, "lon": 78.0081},
+   {"name": "Fatehpur Sikri", "sub": "Mughal city", "day": "Stop 1", "lat": 27.0945, "lon": 77.6679},
+   {"name": "Abhaneri", "sub": "Chand Baori", "day": "Stop 2", "lat": 27.0076, "lon": 76.6061},
+   {"name": "Jaipur", "sub": "Pink City", "day": "End", "lat": 26.9124, "lon": 75.7873}
+  ]
+ }
+}
