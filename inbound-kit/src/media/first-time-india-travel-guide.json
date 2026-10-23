@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/first-time-india-travel-guide/ (guide). Hero only, made by the Page Builder (Visual Studio Step 2) from the licensed library in hf/photos/CREDITS.md — no new photos. Captions name no place (honesty rule); fact pack's 'TAJ, NEVER FRIDAY' dropped to keep 4 scenes = 4 steps. No route/cost video (fact pack: no numbers, no route).",
+ "hero": {
+  "kicker": "FIRST TIME IN INDIA",
+  "scenes": [
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 200}, "to": {"y": 700}},
+   {"img": "px-36966954.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 800}}
+  ],
+  "steps": ["FIRST TIME, INDIA", "OFFICIAL E-VISA", "OCT TO MARCH", "PLAN WITH LOCALS"]
+ }
+}
