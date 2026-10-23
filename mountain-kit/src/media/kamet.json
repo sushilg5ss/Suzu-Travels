@@ -1,0 +1,142 @@
+{
+ "hero": {
+  "kicker": "KAMET · GARHWAL",
+  "steps": [
+   [
+    3350,
+    "GHAMSALI"
+   ],
+   [
+    4650,
+    "BASE CAMP"
+   ],
+   [
+    6050,
+    "CAMP 3"
+   ],
+   [
+    7100,
+    "MEADE'S COL"
+   ],
+   [
+    7756,
+    "SUMMIT"
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-92081.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.06,
+     "x": -120
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -170
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 800
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ]
+ },
+ "profile": {
+  "title": "Kamet, camp by camp",
+  "sub": "Ghamsali to the 7,756 m summit · 2003 Navy camp heights, vary by year",
+  "camps": [
+   {
+    "name": "Ghamsali",
+    "m": 3350,
+    "day": "Day 3 · road-head",
+    "dy": -50
+   },
+   {
+    "name": "Base camp",
+    "m": 4650,
+    "day": "Day 6 · Vasudhara",
+    "dx": 80
+   },
+   {
+    "name": "Camp 2",
+    "m": 5360,
+    "day": "Upper glacier",
+    "dy": -20
+   },
+   {
+    "name": "Camp 3",
+    "m": 6050,
+    "day": "Above the gully",
+    "dy": 15
+   },
+   {
+    "name": "Camp 4",
+    "m": 6650,
+    "day": "Above ice wall"
+   },
+   {
+    "name": "Meade's Col",
+    "m": 7100,
+    "day": "Summit camp"
+   },
+   {
+    "name": "Summit",
+    "m": 7756,
+    "day": "Summit day"
+   }
+  ]
+ }
+}

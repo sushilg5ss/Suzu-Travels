@@ -213,8 +213,10 @@ def expeditions_hero():
     return words_hero("expeditions-hero", scenes, words, "GUIDED PEAK CLIMBS")
 
 
-def words_hero(name, scenes, words, kicker, DUR=13, seed=11):
-    """Photo scenes + four big two-word lines (white word + gold word), one per scene. Keep each word <= 9 letters."""
+def words_hero(name, scenes, words, kicker, DUR=13, seed=11, size=150):
+    """Photo scenes + four big two-word lines (white word + gold word), one per scene. Keep each word <= 9 letters.
+    size = font px (default 150). Use ~110 when the page tagline is long: keeps every line inside the right ~40% at 1440 px."""
+    bar_top = 220 + round(2.04 * size) + 46
     n = len(words)
     wt = [0.25 + i * (DUR - 0.25) / n for i in range(n)]
     snow_html, snow_js = snow_layers(DUR, seed=seed)
@@ -234,9 +236,9 @@ def words_hero(name, scenes, words, kicker, DUR=13, seed=11):
 .shade{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,18,31,.28) 0%,rgba(6,18,31,.08) 38%,rgba(6,18,31,.55) 62%,rgba(6,18,31,.86) 100%)}}
 .snow{{position:absolute}}
 .kick{{position:absolute;right:150px;top:170px;font-size:27px;font-weight:800;letter-spacing:.32em;color:#f3d98f;opacity:0}}
-.w{{position:absolute;right:146px;top:220px;font-size:150px;font-weight:800;letter-spacing:-.02em;color:#fff;opacity:0;text-align:right;line-height:1.02;text-shadow:0 8px 40px rgba(0,0,0,.5)}}
+.w{{position:absolute;right:146px;top:220px;font-size:{size}px;font-weight:800;letter-spacing:-.02em;color:#fff;opacity:0;text-align:right;line-height:1.02;text-shadow:0 8px 40px rgba(0,0,0,.5)}}
 .w span{{display:block}} .w b{{display:block;color:#f3d98f}}
-.bar{{position:absolute;right:150px;top:572px;height:6px;width:420px;background:#d4a24c;border-radius:3px;transform-origin:100% 50%}}
+.bar{{position:absolute;right:150px;top:{bar_top}px;height:6px;width:420px;background:#d4a24c;border-radius:3px;transform-origin:100% 50%}}
 </style></head><body>
 <div id="root" data-composition-id="main" data-start="0" data-duration="{DUR}" data-width="{W}" data-height="{H}">
 {"".join(photo_scene_html(i, s, DUR) for i, s in enumerate(scenes))}
@@ -456,7 +458,8 @@ def peak_hero(slug):
          and EITHER "steps": [[altitude_m, "CAPTION"], ...]  3-7 steps, first = start (road-head / base camp), last = summit
                                                            -> rolling altitude read-out start -> summit -> start (peak pages)
          OR     "words": [["APPLY", "EARLY."], ["PAY THE", "PEAK FEE."], ...]  exactly 4 pairs, each word <= 9 letters
-                                                           -> four big two-line statements (guide pages) }
+                                                           -> four big two-line statements (guide pages)
+         optional "size": 110   words font px (default 150); smaller keeps long words clear of the page tagline }
     Scene times must tile the loop: first scene starts at 0, each next one starts ~0.6 s before the previous ends,
     the last ends at DUR (14 s for steps, 13 s for words)."""
     spec = page_spec(slug)["media"]["hero"]
@@ -464,7 +467,7 @@ def peak_hero(slug):
     kicker = esc(spec.get("kicker", "MOUNTAINS OF INDIA"))
     if spec.get("words"):
         words = [(esc(a), esc(b)) for a, b in spec["words"]]
-        return words_hero(f"{slug}-hero", scenes, words, kicker, DUR=round(max(sc["t"][1] for sc in scenes)))
+        return words_hero(f"{slug}-hero", scenes, words, kicker, DUR=round(max(sc["t"][1] for sc in scenes)), size=int(spec.get("size", 150)))
     if not 3 <= len(spec["steps"]) <= 7:
         raise SystemExit("media.hero.steps needs 3-7 [altitude, caption] pairs")
     steps = spec["steps"] + [spec["steps"][0]]
@@ -502,6 +505,7 @@ def route_profile(slug):
     """Altitude-profile explainer. spec["media"]["profile"] = {
          "title": "Friendship Peak route", "sub": "Manali to the 5,289 m summit",
          "camps": [ {"name": "Manali", "m": 2050, "day": "Day 1"}, ..., {"name": "Summit", "m": 5289, "day": "Day 6"} ] }
+       Optional per camp: "dx" / "dy" (px) nudge its label off a steep line segment (check the contact sheet).
        Every altitude must come from the page's fact pack (research), never guessed."""
     spec = page_spec(slug)["media"]["profile"]
     camps = spec["camps"]
@@ -523,10 +527,10 @@ def route_profile(slug):
     for i, ((x, yy), c) in enumerate(zip(pts, camps)):
         above = (i % 2 == 0) or i == len(camps) - 1
         top = yy - 136 if above else yy + 26
-        top = max(150, min(top, Y0 - 100))
+        top = max(150, min(top, Y0 - 100)) + c.get("dy", 0)   # optional per-camp nudge (px) when the line crosses a label
         last = " big" if i == len(camps) - 1 else ""
         labs += (f'<div class="dot{last}" id="d{i}" style="left:{x - 11:.0f}px;top:{yy - 11:.0f}px"></div>'
-                 f'<div class="lab{last}" id="l{i}" style="left:{x - 110:.0f}px;top:{top:.0f}px"><div class="h">{c["m"]:,} m</div><div class="n">{esc(c["name"])}</div><div class="s">{esc(c.get("day", ""))}</div></div>')
+                 f'<div class="lab{last}" id="l{i}" style="left:{x - 110 + c.get("dx", 0):.0f}px;top:{top:.0f}px"><div class="h">{c["m"]:,} m</div><div class="n">{esc(c["name"])}</div><div class="s">{esc(c.get("day", ""))}</div></div>')
         t = 1.6 + i * step
         js.append(f'tl.fromTo("#d{i}",{{scale:0,opacity:0}},{{scale:1,opacity:1,duration:.3,ease:"back.out(2)"}},{t:.2f});')
         js.append(f'tl.fromTo("#l{i}",{{opacity:0,y:12}},{{opacity:1,y:0,duration:.35}},{t + .05:.2f});')

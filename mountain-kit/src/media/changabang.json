@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "kicker": "CHANGABANG · GARHWAL",
+  "steps": [[2500, "JUMMA"], [3615, "DUNAGIRI VILLAGE"], [4550, "BASE CAMP"], [5150, "ADVANCE BASE"], [6864, "SUMMIT"]],
+  "scenes": [
+   {"img": "px-35905430.jpg", "kind": "tilt", "h": 2880, "t": [0, 4.0], "from": {"y": 0}, "to": {"y": 450}},
+   {"img": "px-28409954.jpg", "kind": "land", "h": 1399, "t": [3.4, 7.6], "from": {"scale": 1.04, "x": 40, "y": -190}, "to": {"scale": 1.1, "x": -30, "y": -180}},
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [7.0, 10.8], "from": {"scale": 1.02, "x": 30}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": [10.2, 14.0], "from": {"y": 250}, "to": {"y": 1320}}
+  ]
+ },
+ "profile": {
+  "title": "Changabang, the approach",
+  "sub": "Northern approach, 1997 heights (c.)",
+  "camps": [
+   {"name": "Jumma", "m": 2500, "day": "Road-head", "dy": -20},
+   {"name": "Dunagiri", "m": 3615, "day": "Village", "dy": 15},
+   {"name": "Base camp", "m": 4550, "day": "Bagini glacier (c.)"},
+   {"name": "Advance base", "m": 5150, "day": "Facing the N face (c.)"},
+   {"name": "Summit", "m": 6864, "day": "Every route is serious"}
+  ]
+ }
+}
