@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "snow",
+  "deva": "बैजनाथ",
+  "kicker": "Shiva as Vaidyanath · Kangra, Himachal Pradesh",
+  "beats": [
+   "Ravana bore the lingam towards Lanka",
+   "Here it was set down forever",
+   "Two merchants raised it in stone, 1204",
+   "No Ravana effigy burns here"
+  ]
+ },
+ "story": {
+  "title": "The legend of Baijnath",
+  "beats": [
+   {"arch": "himalaya", "sky": "dawn", "line": "Ravana did penance to Shiva on Kailash"},
+   {"arch": "hills", "sky": "dusk", "line": "On the way to Lanka, the lingam was set down"},
+   {"arch": "hills", "sky": "saffron", "line": "Two merchants raised a stone temple in 1204"},
+   {"arch": "pillar", "sky": "night", "line": "Pilgrims pray to Shiva as Vaidyanath, the healer"}
+  ]
+ }
+}

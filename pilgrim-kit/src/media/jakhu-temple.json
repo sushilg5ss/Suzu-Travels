@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "pagoda",
+  "sky": "dawn",
+  "deva": "जाखू मंदिर",
+  "kicker": "Hanuman on Shimla's highest hill",
+  "beats": [
+   "Hanuman flew north for the Sanjeevani",
+   "He paused where Yakku Rishi meditated",
+   "Footprints still shown on the hilltop",
+   "Shimla's highest peak, under deodars"
+  ]
+ },
+ "story": {
+  "title": "The legend of Jakhu",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Lakshmana lay wounded on the battlefield"},
+   {"arch": "himalaya", "sky": "dawn", "line": "Hanuman flew north for the Sanjeevani herb"},
+   {"arch": "pagoda", "sky": "dawn", "line": "He paused at Yakku Rishi's hilltop"},
+   {"arch": "pagoda", "sky": "snow", "line": "Deodars and lamps on Shimla's highest hill"}
+  ]
+ }
+}
