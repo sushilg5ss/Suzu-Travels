@@ -1,4 +1,4 @@
-/* Suzu Inbound Kit v0.2 (16 Oct 2026, Reviewer: focus rings, 44 px nav tap targets) — scoped to .szi. Inlined (minified) at the top of every /india-tours/ page.
+/* Suzu Inbound Kit v0.2.3 (23 Oct 2026, Reviewer: readable callout in dark sections; v0.2 16 Oct: focus rings, 44 px nav tap targets) — scoped to .szi. Inlined (minified) at the top of every /india-tours/ page.
    Palette "Himalaya sky": deep navy + glacier teal + saffron + gold on snow white (Suzu brand navy/gold). Never edit per page. */
 .page-content:has(.szi){padding-top:20px!important}
 .page-content:has(.szi) .page-header{margin-bottom:14px!important}
@@ -160,6 +160,7 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szi-call{background:#fff4e2;border:1px solid #f3d3a3;border-radius:16px;padding:16px 18px;margin:18px 0;font-size:16px}
 .szi-call.warn{background:#fff1f0;border-color:#f3c0bb}
 .szi-call p:last-child{margin:0}
+.szi-sec.dark .szi-call{color:var(--ink)}.szi-sec.dark .szi-call a{color:var(--maroon)}
 .szi-note{font-size:14px;color:var(--mid)}
 .szi-sec.dark .szi-note{color:rgba(247,234,214,.65)}
 /* QUOTE / FAQ / LINKS / SOURCES */
