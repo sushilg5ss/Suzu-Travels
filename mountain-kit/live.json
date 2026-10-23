@@ -12,7 +12,7 @@
   "path": "/mountains-of-india/highest-peaks-in-india/",
   "kind": "base",
   "label": "Highest peaks in India",
-  "blurb": "Full list of 156 peaks",
+  "blurb": "Full list of 157 peaks",
   "added": "2026-10-01"
  },
  "himalayan-peak-expeditions": {
@@ -235,6 +235,16 @@
   "blurb": "75 six-thousanders · grade, season, status",
   "added": "2026-10-22",
   "band": "6000",
+  "commercial": false
+ },
+ "kanamo-peak": {
+  "id": 15529,
+  "path": "/mountains-of-india/kanamo-peak/",
+  "kind": "peak",
+  "label": "Kanamo Peak",
+  "blurb": "5,964 m · Spiti walk-up above Kibber, access status unclear",
+  "added": "2026-10-23",
+  "peak_id": "kanamo",
   "commercial": false
  }
 }
