@@ -1,0 +1,22 @@
+{
+ "id": "2026-10-23-homepage-assistant",
+ "agent": "Interactive (Sushil online)",
+ "summary": "Homepage 22 Oct (non-blocking fonts + 5 dead-link repoint, 21 Oct exception) + Suzu Assistant v1.2 (?v=1.2)",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "7694ff2b3b3eb46317f178538e0a58db65704dcacaed6752ab92dc0d33af241c",
+   "base_sha256": "090725a035466d97c9aa2848d94cef9355e7fdc0c62294f62a6f94d8bb08e805",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "suzu-assistant.js",
+   "sha256": "454dedaf758dc0eb803128de9476fe449f3622aa571448e7e7675199413ad0d3",
+   "base_sha256": "e73f61e564835d67b9ddd7f90d4fdd9dbfb0909fd3f37a9989a9b7dad19de13f",
+   "url": "https://suzutravels.com/suzu-assistant.js"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-10-23T14:13:03Z",
+ "status": "deployed"
+}
