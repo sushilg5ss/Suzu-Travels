@@ -23,6 +23,9 @@ class P(HTMLParser):
             s.skip += 1
         for k, v in attrs:
             if k in KEEP and v:
+                # WP Rocket lazyload (cached copy only): ignore the blank SVG placeholder it puts in img.src
+                if tag == "img" and k == "src" and v.startswith("data:image/svg+xml"):
+                    continue
                 s.a.append(f"{tag}.{k}={v}")
 
     def handle_endtag(s, tag):
