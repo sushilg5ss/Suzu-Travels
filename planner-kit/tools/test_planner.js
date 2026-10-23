@@ -56,6 +56,13 @@ const { chromium, devices } = require('playwright');
       r.budget[b] = { tier: await page.$eval('#b-tiers [aria-pressed="true"]', x => x.dataset.t), meal: await page.inputValue('#b-meal'), price: await page.textContent('#price .big'), msg: await page.textContent('#b-bud-msg') };
     }
     await page.screenshot({ path: `${out}/${name}-4c-budget.png` });
+    // v1.2 budget fit with an oversized car -> switches to 'Best for group'
+    await page.selectOption('#b-veh', 'tempo'); await page.waitForTimeout(300);
+    const tempoPrice = await page.textContent('#price .big');
+    await page.fill('#b-bud', '25000'); await page.click('#b-fit'); await page.waitForTimeout(400);
+    r.budgetCar = { tempoPrice, veh: await page.inputValue('#b-veh'), tier: await page.$eval('#b-tiers [aria-pressed="true"]', x => x.dataset.t), meal: await page.inputValue('#b-meal'), price: await page.textContent('#price .big'), msg: await page.textContent('#b-bud-msg') };
+    await page.screenshot({ path: `${out}/${name}-4d-budget-car.png` });
+    await page.selectOption('#b-veh', 'auto'); await page.waitForTimeout(200);
     await page.click('#b-tiers [data-t="deluxe"]'); await page.selectOption('#b-meal', 'MAP'); await page.waitForTimeout(300);
     // lead + pdf
     await page.click('#price [data-act="pdf"]'); await page.waitForTimeout(300);
@@ -65,7 +72,7 @@ const { chromium, devices } = require('playwright');
     r.doc = await page.evaluate(() => { const d = document.querySelector('#doc'); return { len: d.innerHTML.length, tips: /Good to know/.test(d.innerHTML), route: /Route at a glance/.test(d.innerHTML), qr: !!d.querySelector('#doc-qr img, #doc-qr canvas'), nums: /112/.test(d.innerHTML) }; });
     await page.emulateMedia({ media: 'print' }); await page.screenshot({ path: `${out}/${name}-6-pdf.png`, fullPage: true }); await page.emulateMedia({ media: 'screen' });
     r.lead = await page.evaluate(() => window.__tpLastLead && window.__tpLastLead.destination);
-    r.budgetInLead = await page.evaluate(() => /Guest budget: ₹2,000 per adult/.test((window.__tpLastLead || {}).message || ''));
+    r.budgetInLead = await page.evaluate(() => /Guest budget: ₹25,000 per adult/.test((window.__tpLastLead || {}).message || ''));
     // share link round-trip
     await page.click('#price [data-act="share"]'); await page.waitForTimeout(400);
     const link = await page.inputValue('#sh-url'); r.linkLen = link.length;

@@ -199,6 +199,7 @@
   /* pattern rules: [regex, fn(match) -> hindi] — tried in order after the exact dictionary */
   var RX = [
     [/^Fits your budget: (.+?) hotels, (breakfast \+ dinner|breakfast only) — about (₹[\d,]+) per adult\.$/, function (m) { return 'आपके बजट में: ' + (EX[m[1]] || m[1]) + ' होटल, ' + (m[2] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ' — लगभग ' + m[3] + ' प्रति वयस्क।'; }],
+    [/^Car changed to (.+) \(right size for your group\) to bring the price down\.$/, function (m) { return 'कीमत कम करने के लिए गाड़ी बदलकर ' + (EX[m[1]] || m[1]) + ' की गई (आपके ग्रुप के हिसाब से सही साइज़)।'; }],
     [/^Lowest estimate for this route is about (₹[\d,]+) per adult \((.+?), (breakfast \+ dinner|breakfast only)\)\. .+$/, function (m) { return 'इस रूट का सबसे कम अनुमान लगभग ' + m[1] + ' प्रति वयस्क है (' + (EX[m[2]] || m[2]) + ', ' + (m[3] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ')। कम रातें, छोटा रूट या ज़्यादा लोग एक गाड़ी में — इससे कीमत घटती है। या हमसे पूछें, टीम अक्सर इससे कम में कर देती है।'; }],
     [/^([+✓]) (.+)$/, function (m) { var x = EX[m[2]] || pn(m[2]); return x === m[2] ? null : m[1] + ' ' + x; }],
     [/^(\d+) Adults?$/, function (m) { return m[1] + ' वयस्क'; }],

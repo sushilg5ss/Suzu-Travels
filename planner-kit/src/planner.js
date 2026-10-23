@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.1';
+  var VER = '1.2';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -668,20 +668,31 @@
     var b = Math.round(+$('#b-bud').value || 0), msg = $('#b-bud-msg');
     if (b < 1000) { msg.className = 'bud-m no'; msg.textContent = 'Enter your budget per adult in rupees, e.g. 20000.'; $('#b-bud').focus(); return; }
     BUD = b;
-    var keepT = S.t, keepM = S.m, best = null, low = null, ag = MODE === 'agent' && S.g && S.g.k;
+    var keepT = S.t, keepM = S.m, keepK = S.k, ag = MODE === 'agent' && S.g && S.g.k;
     var tiers = R.hotel.tiers.slice().reverse();
-    tiers.forEach(function (t) { ['MAP', 'CP'].forEach(function (m) {
-      S.t = t.id; S.m = m; var pl = compute(); if (!pl) return;
-      var pp = ag ? pl.price.clientPP : pl.price.pp;
-      if (!best && pp <= b) best = { t: t, m: m, pp: pp };
-      if (!low || pp < low.pp) low = { t: t, m: m, pp: pp };
-    }); });
-    var pick = best || low; S.t = pick ? pick.t.id : keepT; S.m = pick ? pick.m : keepM;
-    if (!pick) { S.t = keepT; S.m = keepM; return; }
-    $('#b-meal').value = S.m;
+    /* v1.2: try the chosen car first; if the guest picked a bigger car than the group needs, also try 'Best for group' */
+    function scan(k) {
+      var best = null, low = null; S.k = k;
+      tiers.forEach(function (t) { ['MAP', 'CP'].forEach(function (m) {
+        S.t = t.id; S.m = m; var pl = compute(); if (!pl) return;
+        var pp = ag ? pl.price.clientPP : pl.price.pp;
+        if (!best && pp <= b) best = { t: t, m: m, k: k, pp: pp, cab: pl.cab };
+        if (!low || pp < low.pp) low = { t: t, m: m, k: k, pp: pp, cab: pl.cab };
+      }); });
+      return { best: best, low: low };
+    }
+    var A = scan(keepK), B = keepK !== 'auto' ? scan('auto') : null;
+    var best = A.best || (B && B.best), low = A.low;
+    if (B && B.low && (!low || B.low.pp < low.pp)) low = B.low;
+    var pick = best || low;
+    if (!pick) { S.t = keepT; S.m = keepM; S.k = keepK; return; }
+    S.t = pick.t.id; S.m = pick.m; S.k = pick.k;
+    $('#b-meal').value = S.m; $('#b-veh').value = S.k;
     var tn = pick.t.name.split(' (')[0], mn = pick.m === 'MAP' ? 'breakfast + dinner' : 'breakfast only';
+    var carTxt = pick.k !== keepK ? 'Car changed to ' + (pick.cab.cnt > 1 ? pick.cab.cnt + ' × ' : '') + pick.cab.v.name.split(' (')[0] + ' (right size for your group) to bring the price down.' : '';
     if (best) { msg.className = 'bud-m'; msg.textContent = 'Fits your budget: ' + tn + ' hotels, ' + mn + ' — about ' + inr(pick.pp) + ' per adult.'; }
     else { msg.className = 'bud-m no'; msg.textContent = 'Lowest estimate for this route is about ' + inr(pick.pp) + ' per adult (' + tn + ', ' + mn + '). Fewer nights, a shorter route or more people sharing the car brings it down — or ask us, the team often beats the estimate.'; }
+    if (carTxt) { var cs = document.createElement('span'); cs.className = 'bud-car'; cs.textContent = carTxt; msg.appendChild(document.createTextNode(' ')); msg.appendChild(cs); }
     change(false);
   }
 

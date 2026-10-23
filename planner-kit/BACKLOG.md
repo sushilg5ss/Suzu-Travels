@@ -9,7 +9,7 @@
 
 00000. [x] done 2026-10-21 (folded into v1.0, live f9bcfcca via deploy-static `2026-10-21-planner`; old queue item 2026-10-20 marked superseded). 2026-10-20: folded into v0.9 (8e55b28e), QUEUED on deploy-static `2026-10-20-planner` (Hostinger API 500, hourly retry). **Deploy v0.8** (Hindi toggle; supersedes v0.7) — upload `dist/plan-your-trip/index.html` only (6f0f9c390b07d22f, 294,118 B; roads-geo.json unchanged); backup index-previous.html = c44eee3f first. No homepage re-sync needed (places/templates unchanged).
 
-000000. [ ] **Deploy v1.1** (budget fit) — dist fc33facb30af8864, base live f9bcfcca (FULL sha in --base), index.html only; 22 Oct queue blocked by sandbox permission check.
+000000. [x] done 2026-10-23 (folded into v1.2, live e12e1f0e via deploy-static `2026-10-23-planner`) **Deploy v1.1** (budget fit) — dist fc33facb30af8864, base live f9bcfcca (FULL sha in --base), index.html only; 22 Oct queue blocked by sandbox permission check.
 
 ## Phase 1 — go live at /plan-your-trip/ (week 1)
 1. [x] done 2026-10-15 (live SHA 873f29f3c6f26826; real test lead skipped — send one only if leads look missing) **Deploy v0.1** to `public_html/plan-your-trip/index.html` (new folder). Verify 200, test live (stubbed lead), then ONE real test lead named "TEST Claude Trip Planner (ignore)" and confirm it reached the lead inbox / info@ email. Add Rank Math-independent sitemap note in LOG (static page: ask GSC URL inspection is human-only → "Sushil ke liye").
@@ -29,7 +29,7 @@
 8. [~] 2026-10-16: Rajasthan (11), Agra/Mathura, Kumaon/Garhwal (11), Himachal extras (5), Patnitop, Lamayuru, Tso Moriri, Kainchi Dham, Anandpur Sahib done (v0.5, 87 places). Open: Kerala, Goa, Sikkim/North-East (fly-in circuits; hotel-only + local car), Amarnath, Adi Kailash, Varanasi. Re-run `tools/fetch_roads.py`.
 9. [~] 2026-10-17: Navratri crowd note for Mata temples (v0.6, dates to Oct 2027 — add 2028 next year). 2026-10-15: Rohtang winter skip + Kedarnath 2-night warning built (v0.3). Rest open: Smarter day plans: opening hours/closed days of sights, Navratri crowd notes, sunrise/sunset slots, snow-season "Atal Tunnel only" logic for Rohtang, Kedarnath 2-night rule enforced.
 10. [ ] Hotel-name suggestions per class (no prices, "or similar"), photos from Suzu's own media only.
-11. [~] 2026-10-22: budget fit built (v1.1, deploy pending): ₹/adult → best hotel class + meals; open: car downgrade suggestion, Compare 2 plans. "Compare 2 plans" and "Budget slider → auto-pick tier/car".
+11. [~] 2026-10-23: car right-size in budget fit (v1.2, live). Open: Compare 2 plans. 2026-10-22: budget fit built (v1.1): ₹/adult → best hotel class + meals; open: car downgrade suggestion, Compare 2 plans. "Compare 2 plans" and "Budget slider → auto-pick tier/car".
 12. [ ] HyperFrames: render a shareable 15-s "trip film" of a plan (route + day titles) server-side later; for now an in-page animated preview.
 13. [ ] Agent portal polish: agency logo upload (kept in the browser only, never uploaded), GST invoice note, B2B rate card request button.
 14. [ ] Suzu Assistant hand-off: when a chat mentions a route, offer "Open in Trip Planner" (coordinate via hand-off board — the assistant file is not ours).
