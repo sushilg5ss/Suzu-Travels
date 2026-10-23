@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; color: #fff; }
+      .kicker { position: absolute; left: 120px; top: 64px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .h { position: absolute; left: 120px; top: 108px; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .card { position: absolute; top: 290px; width: 790px; height: 340px; border-radius: 28px; background: #12304d; border: 3px solid #d4a24c; padding: 40px 48px; }
+      .card .d { color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.1em; }
+      .card .t { margin-top: 14px; font-weight: 800; font-size: 50px; line-height: 1.12; }
+      .card .s { margin-top: 18px; font-weight: 500; font-size: 32px; line-height: 1.3; color: #d9e2ec; }
+      .months { position: absolute; left: 120px; top: 730px; width: 1680px; height: 230px; }
+      .m { position: absolute; top: 60px; width: 130px; height: 90px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 30px; }
+      .end { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="13" data-width="1920" data-height="1080">
+      <div id="pa" class="clip" data-start="0" data-duration="6.9" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker">KULLU SIDE · ONE DAY, TWO ADVENTURES</div>
+        <div class="h">Fly, then <span style="color:#d4a24c">raft the Beas</span></div>
+        <svg id="map" style="position:absolute;left:100px;top:230px;width:1720px;height:780px;overflow:visible" viewBox="0 0 1720 780">
+          <path id="hills" d="M 0 560 L 0 300 C 140 230 260 250 380 300 C 520 360 640 210 800 230 C 960 250 1060 330 1200 290 C 1340 250 1480 190 1720 260 L 1720 560 Z" fill="#163a5c" />
+          <path id="river" d="M 40 600 C 260 560 420 660 640 620 C 860 580 1000 680 1220 640 C 1420 604 1560 660 1690 630" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <g id="towns">
+            <text x="40" y="700" style="font-size:40px;fill:#d4a24c">MANALI</text>
+            <text x="1690" y="720" text-anchor="end" style="font-size:40px;fill:#d4a24c">KULLU</text>
+          </g>
+          <g id="pts">
+            <g><circle cx="430" cy="632" r="16" fill="#fff" /><text x="430" y="712" text-anchor="middle" style="font-size:32px">Raisan</text><text x="430" y="752" text-anchor="middle" style="font-size:26px;fill:#d9e2ec;font-weight:500">nearest to Manali</text></g>
+            <g><circle cx="900" cy="610" r="16" fill="#fff" /><text x="900" y="690" text-anchor="middle" style="font-size:32px">Babeli</text><text x="900" y="730" text-anchor="middle" style="font-size:26px;fill:#d9e2ec;font-weight:500">popular stretch</text></g>
+            <g><circle cx="1340" cy="622" r="16" fill="#fff" /><text x="1340" y="702" text-anchor="middle" style="font-size:32px">Pirdi</text><text x="1340" y="742" text-anchor="middle" style="font-size:26px;fill:#d9e2ec;font-weight:500">longest, up to ~14 km</text></g>
+          </g>
+          <path id="air" d="M 1200 170 C 1060 200 1080 380 1150 540" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="10 16" />
+          <g id="fl">
+            <text x="1220" y="110" style="font-size:36px;fill:#d4a24c">FLY: Gadsa · Raisan · Peej</text>
+            <text x="1220" y="156" style="font-size:28px;fill:#d9e2ec;font-weight:500">registered sites near Kullu</text>
+          </g>
+          <g id="glider">
+            <path d="M -34 -6 C -20 -26 20 -26 34 -6" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+            <line x1="-28" y1="-8" x2="0" y2="18" stroke="#fff" stroke-width="2.5" /><line x1="28" y1="-8" x2="0" y2="18" stroke="#fff" stroke-width="2.5" />
+            <circle cx="0" cy="22" r="6" fill="#fff" />
+          </g>
+          <g id="raft">
+            <rect x="-34" y="-12" width="68" height="24" rx="12" fill="#d4a24c" stroke="#fff" stroke-width="3" />
+            <circle cx="-12" cy="-20" r="7" fill="#fff" /><circle cx="12" cy="-20" r="7" fill="#fff" />
+          </g>
+          <text id="rl" x="120" y="520" style="font-size:34px;fill:#d4a24c">RAFT: about 7 – 14 km on the Beas</text>
+        </svg>
+      </div>
+      <div id="pb" class="clip" data-start="6.6" data-duration="4.3" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kicker">PLAN IT LIKE THIS</div>
+        <div class="h">One <span style="color:#d4a24c">Kullu day</span></div>
+        <div class="card" id="c1" style="left:120px"><div class="d">1 · FLY</div><div class="t">Tandem with a registered pilot</div><div class="s">12 years and 30 kg and above · the pilot's wind call sets the slot</div></div>
+        <div class="card" id="c2" style="left:1010px"><div class="d">2 · RAFT</div><div class="t">Raft the Beas, guide in every raft</div><div class="s">Life jacket + helmet compulsory · carry dry clothes</div></div>
+        <div class="months" id="mo">
+          <div style="position:absolute;left:0;top:0;font-weight:800;font-size:30px;color:#d4a24c;letter-spacing:0.1em;white-space:nowrap">OPEN MONTHS (BOTH)</div>
+          <div id="mrow"></div>
+          <div id="nofly" style="position:absolute;left:910px;top:52px;width:280px;height:106px;border:4px solid #fff;border-radius:16px"></div>
+          <div style="position:absolute;left:0;top:172px;font-weight:500;font-size:28px;color:#d9e2ec;white-space:nowrap">Gold = open · Slate = cold, fair days only · Grey = both closed 15 Jul – 15 Sep</div>
+        </div>
+      </div>
+      <div id="pc" class="clip" data-start="10.6" data-duration="2.4" data-track-index="2" style="position:absolute;inset:0">
+        <div class="end">
+          <div style="font-weight:800;font-size:84px;letter-spacing:-0.02em">Fly + raft in <span style="color:#d4a24c">one Kullu day</span></div>
+          <div style="margin-top:40px;background:#d4a24c;color:#0b1f33;font-weight:800;font-size:44px;padding:22px 56px;border-radius:999px">Get Quote on WhatsApp</div>
+          <div style="margin-top:36px;font-weight:500;font-size:32px;color:#d9e2ec">Hotel + cab + activities in one plan</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const M = ["J","F","M","A","M","J","J","A","S","O","N","D"];
+      const col = ["#5d7389","#5d7389","#d4a24c","#d4a24c","#d4a24c","#d4a24c","#d4a24c","#3a4a5a","#d4a24c","#d4a24c","#d4a24c","#5d7389"];
+      const row = document.getElementById("mrow");
+      M.forEach((m, i) => {
+        const d = document.createElement("div");
+        d.className = "m"; d.id = "m" + i;
+        d.style.left = (i * 140) + "px";
+        d.style.background = col[i];
+        d.style.color = col[i] === "#d4a24c" ? "#0b1f33" : "#ffffff";
+        if (i === 6) d.style.background = "linear-gradient(90deg,#d4a24c 50%,#3a4a5a 50%)";
+        if (i === 8) d.style.background = "linear-gradient(90deg,#3a4a5a 50%,#d4a24c 50%)";
+        d.textContent = m;
+        if (i === 6) { d.style.color = "#0b1f33"; d.style.justifyContent = "flex-start"; d.style.paddingLeft = "22px"; }
+        if (i === 8) { d.style.color = "#0b1f33"; d.style.justifyContent = "flex-end"; d.style.paddingRight = "22px"; }
+        row.appendChild(d);
+      });
+      const tl = gsap.timeline({ paused: true });
+      const river = document.getElementById("river");
+      const RL = river.getTotalLength();
+      river.setAttribute("stroke-dasharray", RL + " " + RL);
+      tl.fromTo(".kicker, .h", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo("#hills", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 0.3);
+      tl.fromTo(river, { attr: { "stroke-dashoffset": RL } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.8, ease: "power1.inOut" }, 0.7);
+      tl.fromTo("#towns text", { opacity: 0 }, { opacity: 1, duration: 0.4, stagger: 0.3 }, 0.9);
+      tl.fromTo("#fl", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 1.6);
+      const air = document.getElementById("air");
+      const AL = air.getTotalLength();
+      const g = document.getElementById("glider");
+      function put(t) { const a = air.getPointAtLength(AL * t); g.setAttribute("transform", "translate(" + a.x.toFixed(1) + "," + (a.y - 26).toFixed(1) + ")"); }
+      put(0);
+      tl.fromTo("#glider", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 2.0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 2.0, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 2.1);
+      tl.fromTo("#pts > g", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.25, ease: "power2.out" }, 2.6);
+      const r = document.getElementById("raft");
+      function putR(t) { const a = river.getPointAtLength(RL * (0.22 + 0.58 * t)); r.setAttribute("transform", "translate(" + a.x.toFixed(1) + "," + (a.y - 4).toFixed(1) + ")"); }
+      putR(0);
+      tl.fromTo("#raft", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 3.9);
+      const sr = { t: 0 };
+      tl.fromTo(sr, { t: 0 }, { t: 1, duration: 2.4, ease: "sine.inOut", immediateRender: false, onUpdate: () => putR(sr.t) }, 4.0);
+      tl.fromTo("#rl", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 4.2);
+      tl.to("#pa", { opacity: 0, duration: 0.3, ease: "power1.in" }, 6.55);
+      tl.fromTo("#pb", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 6.6);
+      tl.fromTo("#c1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 6.9);
+      tl.fromTo("#c2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 7.4);
+      tl.fromTo("#mrow .m", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.06, ease: "power2.out" }, 8.1);
+      tl.fromTo("#nofly", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 9.2);
+      tl.to("#pb", { opacity: 0, duration: 0.25, ease: "power1.in" }, 10.3);
+      tl.fromTo("#pc", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 10.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
