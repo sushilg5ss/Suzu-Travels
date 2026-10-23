@@ -39,8 +39,8 @@
 | 29 | media | `mansa-devi` | hub | temple | mansa devi panchkula (5,400; mansa devi temple 22,200 shared with Haridwar) | devi | Panchkula (Haryana, not HP) — disambiguate from Haridwar Mansa Devi. Focus changed 21 Oct 2026 (Research) |
 | 30 | media | `baba-balak-nath` | hub | temple | baba balak nath temple (12,100; baba balak nath 33,100) | hills | Deotsidh, Hamirpur — ~33 km from Ghumarwin. Arch devi→hills (Siddha, not a Devi; cave arch draws an ice lingam). Women's darshan custom — neutral wording |
 | 31 | media | `baglamukhi` | hub | temple | baglamukhi temple kangra (12,100; baglamukhi mandir himachal 6,600) | devi | Bankhandi, Kangra. Focus changed 22 Oct 2026 (Research); 'baglamukhi temple' 74,000 shared with Datia/Nalkheda |
-| 32 | researched | `baijnath` | hub | temple | baijnath temple (22,200; baijnath himachal pradesh 60,500) | hills | Kangra, 1204 CE. Arch nagara→hills (no sea). Not Deoghar — don't target 'baijnath dham'. Wikipedia coords wrong — use town 32.052/76.648 (Research 23 Oct 2026) |
-| 33 | researched | `jakhu-temple` | hub | temple | jakhu temple shimla (27,100) | pagoda | Hanuman, 108-ft statue (no superlatives). Arch devi→pagoda. Ropeway/escalator status unverified (Research 23 Oct 2026) |
+| 32 | media | `baijnath` | hub | temple | baijnath temple (22,200; baijnath himachal pradesh 60,500) | hills | Kangra, 1204 CE. Arch nagara→hills (no sea). Not Deoghar — don't target 'baijnath dham'. Wikipedia coords wrong — use town 32.052/76.648 (Research 23 Oct 2026) |
+| 33 | media | `jakhu-temple` | hub | temple | jakhu temple shimla (27,100) | pagoda | Hanuman, 108-ft statue (no superlatives). Arch devi→pagoda. Ropeway/escalator status unverified (Research 23 Oct 2026) |
 | 34 | todo | `manimahesh-yatra` | hub | yatra | manimahesh yatra (3,600) | himalaya | Live by Jun 2027; e-pass rules |
 | 35 | todo | `panch-kedar` | hub | circuit | panch kedar (40,500) | himalaya + route-map | Tungnath highest Shiva temple |
 | 36 | todo | `bhimakali` | hub | temple | bhimakali temple sarahan (5,400) | pagoda | |
