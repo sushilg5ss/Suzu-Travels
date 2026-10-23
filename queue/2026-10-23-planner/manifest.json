@@ -1,0 +1,16 @@
+{
+ "id": "2026-10-23-planner",
+ "agent": "Trip Planner",
+ "summary": "v1.2 budget fit + car right-size (includes v1.1 Have a budget? box)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "e12e1f0e2066e9773eb1c29adaa2daf44c6d3bf59f56df974046115d4f15ad2f",
+   "base_sha256": "f9bcfcca9101acd056426876f99b193b2ed181bfbc096feccf5cb8ce5ca501fb",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 340664
+  }
+ ]
+}
