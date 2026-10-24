@@ -1,0 +1,23 @@
+{
+ "id": "2026-10-24-homepage-planner",
+ "agent": "Interactive (Sushil approved 24 Oct)",
+ "summary": "Homepage 2026-10-23 (month-by-month winter guides + 46 links) + Trip Planner v1.3 Compare 2 plans",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "cc24aa99fdc8d569983317a99245490de657d32987e47b1f41f28fd2ff9dd375",
+   "base_sha256": "7694ff2b3b3eb46317f178538e0a58db65704dcacaed6752ab92dc0d33af241c",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "a5037cbc2567a8a90e13582ad4fd45682c65f1c1aa917be6d1b0f682e691bd4e",
+   "base_sha256": "e12e1f0e2066e9773eb1c29adaa2daf44c6d3bf59f56df974046115d4f15ad2f",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-10-24T08:29:53Z",
+ "status": "waiting",
+ "last_error": "Hostinger API POST /api/hosting/v1/files/upload-urls -> 500"
+}
