@@ -35,7 +35,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 22 | [x] delhi-to-kasol-taxi — LIVE 2026-10-21 https://suzutravels.com/cabs/delhi-to-kasol-taxi/ (ID 14974) | delhi to kasol taxi | 1,200 | Bhuntar, Manikaran, Tosh |
 | 23 | [x] manali-to-leh-taxi — LIVE 2026-10-22 https://suzutravels.com/cabs/manali-to-leh-taxi/ (ID 15195) | manali to leh taxi | 1,100 | Season Jun–Oct only, 2 days via Jispa/Sarchu, permits, AMS note |
 | 24 | [x] delhi-to-agra-taxi — LIVE 2026-10-23 https://suzutravels.com/cabs/delhi-to-agra-taxi/ (ID 15443) | delhi to agra taxi | 730 | Yamuna Expressway, same-day Taj trip |
-| 25 | [ ] delhi-to-dharamshala-taxi | delhi to dharamshala taxi | 700 | McLeodganj, Bir; overnight bus alternative |
+| 25 | [x] delhi-to-dharamshala-taxi — LIVE 2026-10-24 https://suzutravels.com/cabs/delhi-to-dharamshala-taxi/ (ID 15651) | delhi to dharamshala taxi | 700 | McLeodganj, Bir; overnight bus alternative |
 | 26 | [ ] delhi-to-haldwani-taxi | delhi to haldwani taxi | 610 | Kathgodam station |
 | 27 | [ ] char-dham-yatra-taxi | char dham yatra taxi | — | Haridwar/Dehradun start, 10–12 days, registration, season May–Nov; link /char-dham-tour-packages/ |
 | 28 | [ ] chandigarh-to-dharamshala-taxi | chandigarh to dharamshala taxi | — | Via Una/Kangra |
