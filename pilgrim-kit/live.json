@@ -14,5 +14,6 @@
  "char-dham-yatra": {"id": 14732, "path": "/pilgrimage-tours/char-dham-yatra/", "kind": "yatra", "label": "Char Dham Yatra", "blurb": "Yamunotri, Gangotri, Kedarnath and Badrinath", "added": "2026-10-19"},
  "badrinath": {"id": 14912, "path": "/pilgrimage-tours/badrinath/", "kind": "temple", "label": "Badrinath Dham", "blurb": "Badri Vishal, on the Alaknanda", "added": "2026-10-20"},
  "chamunda-devi": {"id": 15108, "path": "/pilgrimage-tours/chamunda-devi/", "kind": "temple", "label": "Chamunda Devi, Kangra", "blurb": "Shiva and Shakti by the Baner river", "added": "2026-10-21", "shrine": "chamunda-nandikeshwar-dham-kangra"},
- "kangra-devi": {"id": 15543, "path": "/pilgrimage-tours/kangra-devi/", "kind": "temple", "label": "Kangra Devi (Brajeshwari)", "blurb": "Shakti Peeth of Nagarkot, clad in butter", "added": "2026-10-23", "shrine": "brajeshwari-kangra-devi"}
+ "kangra-devi": {"id": 15543, "path": "/pilgrimage-tours/kangra-devi/", "kind": "temple", "label": "Kangra Devi (Brajeshwari)", "blurb": "Shakti Peeth of Nagarkot, clad in butter", "added": "2026-10-23", "shrine": "brajeshwari-kangra-devi"},
+ "vaishno-devi-yatra": {"id": 15738, "path": "/pilgrimage-tours/vaishno-devi-yatra/", "kind": "yatra", "label": "Vaishno Devi Yatra", "blurb": "Trikuta cave shrine above Katra, J&K", "added": "2026-10-24", "shrine": "vaishno-devi-katra"}
 }

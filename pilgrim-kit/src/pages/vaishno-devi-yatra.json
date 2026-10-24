@@ -1,0 +1,159 @@
+{
+ "path": "/pilgrimage-tours/vaishno-devi-yatra/",
+ "parent": 12541,
+ "kind": "yatra",
+ "title": "Vaishno Devi Yatra 2026–27: Temple, Trek & RFID Guide",
+ "seo_title": "Vaishno Devi Yatra 2026–27: Temple, Trek & RFID Guide",
+ "seo_desc": "Vaishno Devi yatra guide: the 12–13 km trek from Katra, free RFID registration, official helicopter booking, aarti, best time and a 2-day plan.",
+ "focus": "vaishno devi yatra",
+ "label": "Vaishno Devi Yatra",
+ "blurb": "Trikuta cave shrine above Katra, J&K",
+ "shrine": "vaishno-devi-katra",
+ "kicker": "Yatra · Trikuta hills, Jammu & Kashmir",
+ "deva": "माता वैष्णो देवी यात्रा",
+ "tag": "Up the Trikuta hill to the Mother's cave.",
+ "sub": "The climb from Katra to the holy cave of Mata Vaishno Devi is one of India's most loved yatras. How the free RFID card works, the old and new tracks, the official helicopter, aarti, the best season, safety after recent monsoons and a simple 2-day plan.",
+ "chips": [
+  ["~12–13 km", "Katra to Bhawan, one way"],
+  ["Free RFID", "card for every pilgrim"],
+  ["Open all year", "Navratri is the busiest"],
+  ["Helicopter", "Katra to Sanjichhat, official portal only"]
+ ],
+ "q": "What is the Vaishno Devi Yatra and how does it work?",
+ "answer": "The Vaishno Devi Yatra is a walk of <b>about 12–13 km one way</b> from <b>Katra</b> to the holy cave (Bhawan) on the Trikuta hill in Jammu &amp; Kashmir, plus about 1.5 km more to Bhairon temple. Every pilgrim needs a <b>free RFID Yatra card</b>, checked at Banganga. The shrine is open all year; helicopter, battery car and ropeway tickets are sold only by the Shrine Board.",
+ "facts": [
+  ["~12–13 km", "Katra to Bhawan (plus ~1.5 km to Bhairon)"],
+  ["~1,585 m", "the Bhawan on the Trikuta hill (about)"],
+  ["3 pindis", "Mahakali, Mahalakshmi, Mahasaraswati"],
+  ["~50 km", "Jammu airport to Katra"]
+ ],
+ "intro": [
+  "Shri Mata Vaishno Devi is worshipped in a cave on the three-peaked <b>Trikuta</b> hill in the Reasi district of Jammu &amp; Kashmir. There is no idol: inside the cave are <b>three natural rock pindis</b> revered as Mahakali, Mahalakshmi and Mahasaraswati. The base town is <b>Katra</b>, and the shrine is run by the Shri Mata Vaishno Devi Shrine Board.",
+  "Vaishno Devi is not part of the classical lists of 51 Shakti Peeths, but it is one of the most visited Devi shrines in India and is remembered as the elder sister in the Himachal <a href=\"/pilgrimage-tours/nau-devi-yatra/\">Nau Devi yatra</a>. Many families combine it with the <a href=\"/pilgrimage-tours/shakti-peeth-himachal/\">Shakti Peeths of Himachal</a> — <a href=\"/pilgrimage-tours/chamunda-devi/\">Chamunda Devi</a> is about 241 km from Katra by road via Pathankot."
+ ],
+ "story": {
+  "h2": "The story of Mata Vaishno Devi",
+  "lead": "This is the popular tradition of the shrine, retold in our own words as devotees tell it — a story of faith, not history.",
+  "beats": [
+   ["Vaishnavi waits on Trikuta", "It is believed the Goddess was born as Vaishnavi, uniting the powers of Kali, Lakshmi and Saraswati, and that Rama asked her to wait for him in the Trikuta hills."],
+   ["Pandit Shridhar's feast", "A divine girl is said to have helped the devotee Pandit Shridhar of Hansali village at his feast. Searching for her afterwards, he was led to the holy cave."],
+   ["Banganga and Ardhkuwari", "When the tantric Bhairon Nath chased her up the hill, she struck the ground with an arrow to bring out the Banganga stream, rested at Charan Paduka and stayed nine months in the narrow Ardhkuwari (Garbh Joon) cave."],
+   ["Forgiveness at Bhairon", "At the holy cave she took the form of Mahakali and ended the chase. His head is said to have fallen where the Bhairon temple stands; she forgave him and declared the yatra complete only after visiting his shrine."]
+  ],
+  "more": [
+   "That is why pilgrims walk the same path the story follows — Banganga, Charan Paduka, Ardhkuwari, the Bhawan — and then climb on to Bhairon Nath before coming down."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "registration",
+   "label": "RFID card",
+   "kicker": "Free and compulsory",
+   "h2": "Vaishno Devi registration: the RFID Yatra card",
+   "html": "<p>Every pilgrim needs their own <b>RFID Yatra Access Card</b>. It is <b>free</b>. Get it at the <b>Yatri Registration Counter (YRC) near the Katra bus stand</b>, at <b>YRC-II</b> near the second bus stand on the Udhampur road (about 1 km away), or online on <b>online.maavaishnodevi.org</b>. The card is checked at the <b>Banganga</b> check post, about 1.5 km from the counter — without it you will be turned back.</p><ol><li>Register on the official portal or at a Katra counter with a photo ID.</li><li>Collect or activate your RFID card — one per person, children included.</li><li>Start the climb within the time limit printed on your card.</li><li>Under the December 2025 rules, plan to be back in Katra within 24 hours — check maavaishnodevi.org for the current rule.</li></ol><p>Sources give different start limits (6, 10 or 12 hours), so go by what is printed on your card. In heavy rush the Shrine Board can pause registration for the day; daily numbers are capped at roughly 30,000–35,000.</p>",
+   "cls": "alt"
+  },
+  {
+   "id": "helicopter",
+   "label": "Helicopter",
+   "kicker": "Book only with the Shrine Board",
+   "h2": "Vaishno Devi helicopter, battery car and ropeway",
+   "html": "<p>The <b>helicopter flies from the Katra (Serli) helipad to Sanjichhat</b> — not to the Bhawan. From Sanjichhat you walk about 2.5 km to the holy cave. <b>Battery cars</b> run between Ardhkuwari and the Bhawan, with priority for seniors and the disabled, and a <b>passenger ropeway</b> links the Bhawan with Bhairon temple, roughly 9 am to 5 pm. Ponies, palkis and pithoos are available on the track at rates fixed by the authorities.</p><p>Book helicopter, battery car and ropeway tickets <b>only</b> on <b>online.maavaishnodevi.org</b> or at Shrine Board counters. Look-alike websites and WhatsApp sellers offering \"confirmed helicopter tickets\" are not the Shrine Board — never pay them. Helpline <b>1800-180-7212</b>.</p>",
+   "cls": ""
+  }
+ ],
+ "darshan": {
+  "h2": "Vaishno Devi aarti and darshan timings",
+  "rows": [
+   ["Darshan", "Round the clock, in a continuously moving queue — there is no group darshan"],
+   ["Aarti", "Twice daily: just before sunrise and just after sunset; each takes nearly two hours"],
+   ["During aarti", "Darshan is paused while the aarti is performed"],
+   ["Atka Aarti", "Limited seats, bookable only on online.maavaishnodevi.org"],
+   ["Bhairon ropeway", "About 9 am – 5 pm"],
+   ["Helpline", "1800-180-7212 or 9906019494"]
+  ],
+  "note": "The Shrine Board does not publish clock times for the aarti, so times you see on blogs are guesses — confirm locally or with the helpline (Shrine Board, checked 15 Oct 2026)."
+ },
+ "dates": {
+  "h2": "When to go: Vaishno Devi dates and seasons",
+  "rows": [
+   ["Shrine open", "All year", "The track may close briefly for landslides or snow"],
+   ["Sharad Navratri 2026", "11–19 Oct 2026 (held)", "Over 95,000 pilgrims in the first two days (Kashmir Observer)"],
+   ["Chaitra Navratri 2027", "From 7 Apr 2027", "One of the year's busiest weeks"],
+   ["New Year and summer holidays", "Late Dec – 1 Jan; May–June", "Very crowded; registration can pause"],
+   ["Monsoon", "July – September", "Most suspensions happen now — check the Shrine Board before you leave"]
+  ],
+  "note": "The best weather is March–June and September–October. Winter (December–February) is cold and quieter, with occasional snow on the Bhairon ridge."
+ },
+ "route": {
+  "h2": "The Vaishno Devi trek route from Katra",
+  "lead": "Distances are approximate. The path is paved and lit, with shelters, water and langar along the way. Most walkers take several hours to climb — go at your own pace.",
+  "stops": [
+   ["0 km", "Katra", "कटरा", "Base town with the registration counters (YRC), the railway station and the helipad."],
+   ["~1.5 km", "Banganga", "बाणगंगा", "RFID check post. By tradition, the stream the Goddess brought out with her arrow."],
+   ["on the way", "Charan Paduka", "चरण पादुका", "Where she is believed to have rested; footprints are worshipped on a rock."],
+   ["~6 km", "Ardhkuwari", "अर्धकुंवारी", "The narrow Garbh Joon cave, roughly halfway. Battery cars start here for the Bhawan."],
+   ["~12–13 km", "Bhawan (holy cave)", "भवन", "Via the old track through Sanjichhat or the new track through Himkoti. Cloak rooms for bags and phones."],
+   ["~1.5 km more", "Bhairon temple", "भैरों मंदिर", "Ropeway or a 45–60 minute walk uphill. Then down via Sanjichhat to Katra."]
+  ],
+  "note": "After rains the new track or battery cars may be closed while the old track stays open, as in July 2026 — check the current status before you go."
+ },
+ "reach": {
+  "h2": "How to reach Katra for Vaishno Devi",
+  "cards": [
+   ["By train", "Shri Mata Vaishno Devi Katra (SVDK) station is on the Jammu–Udhampur–Katra line, with through trains from Delhi."],
+   ["By air", "Jammu airport is the nearest, about 50 km (around 2 hours) from Katra by bus or taxi."],
+   ["By road", "Katra is about 649 km from Delhi and about 241 km from Chamunda Devi in Himachal via Pathankot."],
+   ["Where to stay", "Katra has many stays; Shrine Board bhawans and rooms on the track are bookable on the official portal."]
+  ]
+ },
+ "tips": {
+  "h2": "Before you go",
+  "items": [
+   ["Carry", "Your RFID card and photo ID, comfortable walking shoes, light woollens (nights are cool), a water bottle and a rain jacket in the monsoon."],
+   ["Leave behind", "Leather items and large bags are restricted at the Bhawan; mobiles and cameras are deposited in the cloak rooms before darshan."],
+   ["Elders and heart patients", "No medical certificate is needed, but the climb is long. Use the helicopter, a battery car, a pony or a palki, and the seniors' help desks."],
+   ["Weather and safety", "Heavy rain has stopped the yatra before — a landslide near Ardhkuwari in August 2025 and a six-day halt in July 2026. Follow Shrine Board advisories and keep a spare day in the monsoon."],
+   ["Beware of fake sites", "The only official sites are maavaishnodevi.org and online.maavaishnodevi.org. Pages with names like \".live\" or \"devasthan\" are not the Shrine Board."],
+   ["Complete the yatra", "By tradition the yatra is complete only after darshan at Bhairon Nath, about 1.5 km above the Bhawan."]
+  ]
+ },
+ "itinerary": {
+  "h2": "A simple 2-day Vaishno Devi Yatra from Katra",
+  "days": [
+   ["1", "Arrive at Katra", "Reach Katra by train or from Jammu airport, collect your RFID cards at the YRC, rest and start the climb in the evening or early next morning."],
+   ["2", "Bhawan, Bhairon and back", "Walk via Banganga and Ardhkuwari to the Bhawan for darshan, take the ropeway or path to Bhairon temple, and come down via Sanjichhat to Katra."],
+   ["+1", "Optional", "Add Shiv Khori cave near Katra, or continue to Kashmir or to the Devi temples of Himachal."]
+  ]
+ },
+ "packages": ["vaishno"],
+ "quote_h2": "Plan your Vaishno Devi Yatra with Suzu",
+ "quote_text": "We plan Vaishno Devi yatras by train, flight or road — stays in Katra, cars from Jammu or Himachal, and a pace that suits elders. You take your RFID card and any helicopter ticket from the Shrine Board's official portal; we plan the rest. Want Kashmir or the Himachal Devi temples too? Ask us.",
+ "wa": "Namaste Suzu Travels, I want to plan a yatra to Vaishno Devi. From city: ___ , dates: ___ , people: ___",
+ "links": ["nau-devi-yatra", "shakti-peeth-himachal", "chamunda-devi", "kangra-devi", "naina-devi"],
+ "place": {"type": "HinduTemple", "name": "Shri Mata Vaishno Devi Bhawan", "alt": "श्री माता वैष्णो देवी", "town": "Katra", "state": "Jammu and Kashmir", "lat": 33.0299, "lon": 74.9482, "sameAs": ["https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"]},
+ "trip_name": "Mata Vaishno Devi Yatra from Katra",
+ "media_slug": "vaishno-devi-yatra",
+ "faqs": [
+  ["How long is the Vaishno Devi trek from Katra?", "About 12–13 km one way from Katra to the Bhawan, plus about 1.5 km more to Bhairon temple. The path is paved and lit, with shelters and langar."],
+  ["Is the RFID card mandatory for Vaishno Devi?", "Yes. Every pilgrim needs a free RFID Yatra card from the Katra counters or online.maavaishnodevi.org. It is checked at Banganga; start within the time limit printed on your card."],
+  ["Where can I book the Vaishno Devi helicopter?", "Only on online.maavaishnodevi.org or at Shrine Board counters. It flies from Katra to Sanjichhat, and you walk about 2.5 km to the Bhawan. Ignore other websites and WhatsApp sellers."],
+  ["What are the Vaishno Devi aarti timings?", "The aarti is held twice a day, just before sunrise and just after sunset, and takes nearly two hours; darshan pauses meanwhile. Exact clock times are not published — confirm locally."],
+  ["Is the Vaishno Devi yatra complete without Bhairon temple?", "By tradition, no. The Goddess is believed to have declared that the yatra is complete only after darshan at Bhairon Nath."],
+  ["Which is the nearest railway station and airport?", "Shri Mata Vaishno Devi Katra (SVDK) station is in Katra itself. Jammu airport is about 50 km away."],
+  ["Is Vaishno Devi open in winter?", "Yes, the shrine is open all year. Winter is cold and quieter; Navratri, New Year week and summer holidays are the busiest times."],
+  ["Is Vaishno Devi a Shakti Peeth?", "It is not in the classical lists of 51 Shakti Peeths, though some broader traditions include it. It is revered as one of India's great Devi shrines."]
+ ],
+ "sources": [
+  ["Shri Mata Vaishno Devi Shrine Board — Yatra registration", "https://maavaishnodevi.org/blog/yatra-registration"],
+  ["Shri Mata Vaishno Devi Shrine Board — Aarti", "https://www.maavaishnodevi.org/blog/aarti"],
+  ["Shrine Board online services (registration, helicopter, ropeway, battery car)", "https://online.maavaishnodevi.org/"],
+  ["AIR News — Yatra resumes after six-day suspension (25 Jul 2026)", "https://newsonair.gov.in/shri-mata-vaishno-devi-yatra-resumes-after-six-day-suspension/"],
+  ["Kashmir Observer — Over 95,000 pilgrims in two days (12 Oct 2026)", "https://kashmirobserver.net/2026/10/12/over-95000-pilgrims-visit-vaishnodevi-shrine-in-two-days"],
+  ["Daily Excelsior — Yatra resumes on the old track (25 Jul 2026)", "https://www.dailyexcelsior.com/despite-rain-devotees-resume-vaishno-devi-pilgrimage-along-old-track-after-6-day-break/"],
+  ["ETV Bharat — Registration guidelines (23 Dec 2025)", "https://www.etvbharat.com/en/bharat/vaishno-devi-shrine-board-updates-yatra-registration-guidelines-ahead-of-new-year-rush-enn25122305434"],
+  ["Wikipedia — Vaishno Devi Temple", "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"]
+ ],
+ "verified": "24 Oct 2026",
+ "modified": "2026-10-24"
+}
