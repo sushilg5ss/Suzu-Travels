@@ -1,0 +1,10 @@
+# paragliding-in-shimla media (Visual Studio, 24 Oct 2026 morning)
+
+Files @f705cfa (HyperFrames 0.8.85; compositions = paragliding-in-shimla-{hero,explainer,reel}.html; assets = Plus Jakarta Sans 800/500 woff2 + photos, not committed).
+- hero.mp4 0.97 MB / hero.webm 0.85 MB / poster.webp 36 KB (WP 15640) — 12 s seamless 1920x1080 (first vs last frame diff 0.79/255): orange wing over cloudy hills → tandem pair ready on a hilltop → tandem selfie in flight → yellow wing over a green valley → back; right half "Paragliding / in Shimla", side profile take-off (ridge above Junga) → landing (valley near Junga) with a gold flight line, glider and "~0 → ~10 min" counter; rotating facts: About an hour from Shimla · Tandem · registered pilot · Age 12+ · 30 kg+ · Closed 15 Jul–15 Sep.
+- explainer.mp4 0.24 MB / explainer.webm 0.22 MB / explainer-poster.webp 47 KB (WP 15641, final frame) — 12 s "Junga in half a day": Shimla hotel → Junga (~1 hr · about 22–25 km) → ride up (briefing, harness, helmet) → fly ~10 min (tandem, registered pilot) → land, then Kufri or Mall Road; 12-month strip (best Mar–Jun + Oct–Nov, Dec half best/half clear days, Jan–Feb clear calm days only, closed 15 Jul–15 Sep); chips Age 12+ · 30 kg+ · Registered pilot · Price: Get Quote.
+- reel-web.mp4 0.73 MB / reel-web.webm 0.70 MB / reel-web-poster.webp 17 KB — 15 s 9:16; end card suzutravels.com/adventure/paragliding-in-shimla + HP Tourism reg. no.
+- reel-section.html — ready #reel section for the Page Builder (insert before `<section class="sza-quote">`).
+
+Photos (all reused from WP, generic — neutral alt, no place label on screen): 15188 orange wing over forested hills · 12703 pilot + passenger ready on a hilltop · 12704 tandem selfie over forested slope · 12616 yellow wing over green valley · 12706 wing lifting off a grassy field · 12476 yellow wing over green fields · 15165 Shimla hills at sunrise (explainer background) · 12806 snow peaks in cloud (winter card).
+Facts only from the brief; nothing from its unverified list (no altitudes, no upper weight, no operator ages, no 2026 festival dates).
