@@ -1,6 +1,0 @@
-{
- "attempts": 1,
- "errors": [
-  "2026-10-24T08:30:18Z Hostinger API POST /api/hosting/v1/files/upload-urls -> 500"
- ]
-}

@@ -16,8 +16,7 @@
    "url": "https://suzutravels.com/plan-your-trip/"
   }
  ],
- "attempts": 1,
- "finished_at": "2026-10-24T08:29:53Z",
- "status": "waiting",
- "last_error": "Hostinger API POST /api/hosting/v1/files/upload-urls -> 500"
+ "attempts": 2,
+ "finished_at": "2026-10-24T08:31:57Z",
+ "status": "deployed"
 }
