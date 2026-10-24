@@ -160,5 +160,14 @@
   "blurb": "Train or private car — and the two stops worth making on the way",
   "added": "2026-10-24",
   "focus": "agra to jaipur"
+ },
+ "india-in-december": {
+  "id": 15660,
+  "path": "/india-tours/india-in-december/",
+  "kind": "guide",
+  "label": "India in December",
+  "blurb": "Sun in Goa, Kerala and Rajasthan or snow in Himachal — weather, crowds and plans",
+  "added": "2026-10-24",
+  "focus": "india in december"
  }
 }
