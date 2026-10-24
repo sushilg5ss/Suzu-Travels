@@ -1,0 +1,11 @@
+# camping-in-manali media (Visual Studio night, 24/25 Oct 2026)
+
+HyperFrames 0.8.85. Compositions: camping-in-manali-{hero,explainer,reel}.html. Media commit: e3f42f977ef7cd563c71c8caf9feded5a5cbc537
+Base: https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e3f42f977ef7cd563c71c8caf9feded5a5cbc537/adventure-kit/media/camping-in-manali/
+
+- hero.mp4 0.99 MB / hero.webm 0.84 MB / poster.webp 53 KB (WP 15763) — 12 s seamless loop (first/last frame mean diff 0.5/255). Tents under a starry sky (WP 13335) → tent-door view over a mountain river (13525) → dome tents on a hilltop meadow at sunrise (14765) → lit tents on snow (14767) → back. Right half: "Camping in Manali", schematic (not a map) of 5 camp areas — Solang, Kothi–Gulaba, Sethan, Hampta trek camps, Naggar road — round a Manali dot with a flowing gold river line; "5 areas · meadow · river · orchard"; rotating facts (Solang · Kothi · Sethan / Best Mar–Jun · mid-Sep–Nov / Winter: heated tent or igloo / Registered camps only).
+- explainer.mp4 0.29 MB / explainer.webm 0.37 MB / explainer-poster.webp 55 KB (WP 15764) — 12 s "Which Manali camp for your month?": schematic strip Naggar road → Manali → Sethan → Solang (~13 km) → Kothi–Gulaba, month pills Mar–Jun / Jul–mid-Sep / mid-Sep–Nov / Dec–Feb switching ✓/⚠/✕ on 4 area cards (from the brief's season table + spot cards); chips: Monsoon: no camps near the riverbed · Registered camps only · Price: Get Quote.
+- reel-web.mp4 0.47 MB / reel-web.webm 0.40 MB / reel-web-poster.webp — 15 s 9:16 (meadow tents → riverside → campfire → snow tents); end card Get Quote + suzutravels.com/adventure/camping-in-manali + HP Tourism reg. no.
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
+
+Photos (all reused from WP, all generic — neutral alt, never labelled a named Manali camp): 13335 tents under stars, 13525 tent-door river view, 14765 dome tents on meadow at sunrise, 14767 lit tents on snow, 13527 friends round a campfire. Suggested page slots: hero image 14765, Solang card 14765, riverside/Naggar card 13525, Sethan/orchard card 13336 (lit tents at dusk), trek camps card 13541 (trek tents by a stream), winter card 14767, campfire/FAQ 13527. No family-breakfast photo added (none needed for the media set).
