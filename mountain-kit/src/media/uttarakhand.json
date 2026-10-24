@@ -1,0 +1,117 @@
+{
+ "hero": {
+  "kicker": "UTTARAKHAND · GARHWAL & KUMAON",
+  "size": 110,
+  "words": [
+   [
+    "60 PEAKS,",
+    "ONE TABLE."
+   ],
+   [
+    "HIGHEST:",
+    "7,816 M."
+   ],
+   [
+    "12 ABOVE",
+    "7,000 M."
+   ],
+   [
+    "83 OPENED",
+    "IN 2026."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.0,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-10555794.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": -60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -140
+    }
+   },
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 1050
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.2,
+     "x": -180
+    },
+    "to": {
+     "y": 400,
+     "scale": 1.22,
+     "x": -190
+    }
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "UTTARAKHAND · TRUE HEIGHTS",
+  "title": "Uttarakhand's great peaks, side by side",
+  "peaks": [
+   "bandarpunch",
+   "shivling",
+   "changabang",
+   "satopanth",
+   "trisul-i",
+   "kamet",
+   "nanda-devi"
+  ],
+  "subs": {
+   "bandarpunch": "First climbed 1950",
+   "shivling": "First climbed 1974",
+   "changabang": "First climbed 1974",
+   "satopanth": "First climbed 1947",
+   "trisul-i": "First 7,000 m, 1907",
+   "kamet": "Above 25,000 ft, 1931",
+   "nanda-devi": "Closed since 1983"
+  },
+  "end": "Uttarakhand: 12 peaks above 7,000 m"
+ }
+}
