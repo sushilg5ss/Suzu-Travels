@@ -37,12 +37,13 @@
           "opened": "2026-04-22",
           "opening_time": "08:00",
           "closing": "2026-11-11",
-          "closing_status": "announced on Vijayadashami 20 Oct 2026 (Bhai Dooj); 8:30 am per liveskgnews only - print 'morning' or 'confirm time'",
+          "closing_status": "announced on Vijayadashami 20 Oct 2026 (Bhai Dooj); 8:30 am per liveskgnews only - print 'morning' or 'confirm time' | 24 Oct: 8:30 am now also in ETV Bharat 20 Oct 2026 (2 sources)",
           "closing_time": "08:30",
           "closing_sources": [
             "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/",
             "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177",
-            "https://subkuz.com/news/hindi/details/char-dham-yatra-2026-badrinath-kedarnath-yamunotri-closing-dates/225571"
+            "https://subkuz.com/news/hindi/details/char-dham-yatra-2026-badrinath-kedarnath-yamunotri-closing-dates/225571",
+            "https://www.etvbharat.com/hi/bharat/doors-of-kedarnath-shrine-in-uttarakhand-will-close-on-november-11-utn26102001912"
           ],
           "closing_as_of": "2026-10-21"
         },
@@ -535,11 +536,19 @@
         "end": "2026-09-19",
         "registration_opened": "2026-08-01/05 (online, phased slots)",
         "daily_cap": "about 5,000 pilgrims",
-        "status": "season over"
+        "status": "season over",
+        "official_window": "2026-08-25 to 2026-09-20 (Amar Ujala 2026-08-06)",
+        "chhota_nhaun": "2026-09-04 (Janmashtami)",
+        "bada_nhaun": "2026-09-19 (Radha Ashtami; yatra concluded)",
+        "pilgrims": "about 80,000 (Tribune 2026-09-20; final official figure not released)",
+        "cap_note": "5,000/day beyond Hadsar, not applied on the two Nhaun days"
       },
-      "dates_2027": null,
-      "source": "News Arena India 2026-07-18 & 2026-08-04; Amar Ujala 2026-08-04",
-      "as_of": "2026-10-08",
+      "dates_2027": {
+        "status": "not announced",
+        "pattern": "Janmashtami to Radha Ashtami; Radha Ashtami 2027-09-08 per Drik Panchang (New Delhi)"
+      },
+      "source": "News Arena India 2026-07-18 & 2026-08-04; Amar Ujala 2026-08-04; Amar Ujala 2026-08-06; Tribune 2026-09-20; Drik Panchang (Radha Ashtami 2027)",
+      "as_of": "2026-10-24",
       "notes": "2027 dates: not announced; will again follow Janmashtami-Radha Ashtami."
     },
     "registration": {
@@ -630,8 +639,31 @@
       "https://newsarenaindia.com/states/manimahesh-yatra-to-have-daily-pilgrim-cap-mandatory-e-pass/82705",
       "https://www.newsarenaindia.com/states/online-registration-for-manimahesh-yatra-opens-on-aug-5/83852",
       "https://www.amarujala.com/shimla/online-registration-for-manimahesh-yatra-to-begin-from-august-5-5-000-pilgrims-to-be-allowed-daily-2026-08-04",
-      "https://www.tribuneindia.com/news/himachal/manimahesh-yatra-concludes-without-final-rituals-at-sacred-lake"
-    ]
+      "https://www.tribuneindia.com/news/himachal/manimahesh-yatra-concludes-without-final-rituals-at-sacred-lake",
+      "https://www.amarujala.com/himachal-pradesh/chamba/online-registration-for-the-manimahesh-yatra-has-begun-chamba-news-c-88-1-ssml1004-192405-2026-08-06",
+      "https://www.tribuneindia.com/news/himachal/himanimahesh-yatra-culminates-with-2nd-royal-bath-draws-80k-pilgrims/",
+      "https://en.wikipedia.org/wiki/Manimahesh_Lake"
+    ],
+    "coords": {
+      "lake": [
+        32.395,
+        76.6372
+      ],
+      "bharmour": [
+        32.4428,
+        76.5329
+      ],
+      "source": "Wikipedia 2026-10-24"
+    },
+    "altitude_note": "lake ~4,080 m (Wikipedia text; infobox 4,190; Tribune 4,085); peak ~5,650 m (5,653/5,656)",
+    "reach_km": {
+      "chamba_bharmour": 59,
+      "pathankot_chamba": 125,
+      "pathankot_bharmour": 184,
+      "gaggal_bharmour": 203,
+      "bharmour_hadsar": 13,
+      "source": "OSRM 2026-10-24 (Hadsar from data)"
+    }
   },
   {
     "slug": "shrikhand-mahadev-yatra",
@@ -1040,15 +1072,22 @@
       "open": "April-May (BKTC announces each temple's date)",
       "close": "Oct-Nov (Kalpeshwar open year-round)",
       "dates_2026": {
-        "kedarnath": "opened 2026-04-22",
-        "tungnath": null,
-        "madhyamaheshwar": null,
-        "rudranath": null,
-        "kalpeshwar": "year-round"
+        "kedarnath": "opened 2026-04-22; closes 2026-11-11 08:30 (Bhai Dooj)",
+        "tungnath": "closes 2026-11-06; doli at Makkumath 2026-11-08 (opening 22 Apr per aggregator only)",
+        "madhyamaheshwar": "closes 2026-11-16; doli Gaundar 16, Ransi 17, Giriya 18, Omkareshwar Ukhimath 19 Nov (opening 21 May per aggregator only)",
+        "rudranath": "opened 2026-05-18 (Aaj Tak); closes by custom 17 Oct (2024, 2025); 2026 closing 17 Oct per aggregator only - unverified",
+        "kalpeshwar": "year-round",
+        "sources": [
+          "https://www.etvbharat.com/hi/bharat/doors-of-kedarnath-shrine-in-uttarakhand-will-close-on-november-11-utn26102001912",
+          "https://www.aajtak.in/religion/news/story/chardham-yatra-2026-rudranath-temple-gates-to-open-on-may-18-panch-kedar-tvisu-rptc-2554931-2026-05-17"
+        ]
       },
-      "dates_2027": null,
+      "dates_2027": {
+        "status": "not announced",
+        "pattern": "Kedarnath date fixed on Mahashivratri 2027-03-06 at Ukhimath; others announced in spring"
+      },
       "source": "BKTC; Indiahikes Panch Kedar guide",
-      "as_of": "2026-10-08",
+      "as_of": "2026-10-24",
       "notes": "Exact 2026 opening/closing dates for Tungnath, Madhyamaheshwar and Rudranath were not verified here - check BKTC."
     },
     "registration": {
@@ -1134,8 +1173,60 @@
     "sources": [
       "https://indiahikes.com/documented-trek/panch-kedar-trek",
       "https://badrinath-kedarnath.gov.in/other-temples/Other-Temples.aspx",
-      "https://en.wikipedia.org/wiki/Panch_Kedar"
-    ]
+      "https://en.wikipedia.org/wiki/Panch_Kedar",
+      "https://www.etvbharat.com/hi/bharat/doors-of-kedarnath-shrine-in-uttarakhand-will-close-on-november-11-utn26102001912"
+    ],
+    "temples": {
+      "kedarnath": {
+        "coords": [
+          30.7352,
+          79.0669
+        ],
+        "alt_m": 3583,
+        "winter": "Omkareshwar, Ukhimath"
+      },
+      "tungnath": {
+        "coords": [
+          30.4894,
+          79.2153
+        ],
+        "alt_m": 3680,
+        "winter": "Makkumath"
+      },
+      "rudranath": {
+        "coords": [
+          30.5194,
+          79.3183
+        ],
+        "alt_m": 3559,
+        "winter": "Gopinath temple, Gopeshwar"
+      },
+      "madhyamaheshwar": {
+        "coords": [
+          30.6369,
+          79.2161
+        ],
+        "alt_m": 3490,
+        "winter": "Omkareshwar, Ukhimath"
+      },
+      "kalpeshwar": {
+        "coords": [
+          30.577,
+          79.4229
+        ],
+        "alt_m": 2200,
+        "winter": "open year-round"
+      },
+      "source": "Wikipedia Panch Kedar 2026-10-24 (altitudes vary by source)"
+    },
+    "reach_km": {
+      "rishikesh_ukhimath": 216,
+      "ukhimath_chopta": 26,
+      "ukhimath_sonprayag": 42,
+      "chopta_gopeshwar": 44,
+      "gopeshwar_helang": 55,
+      "source": "OSRM 2026-10-24 (Chopta point approx.)"
+    }
   },
   {
     "slug": "adi-kailash-om-parvat",
