@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.2';
+  var VER = '1.3';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -657,9 +657,35 @@
         '<a class="btn w" href="' + waLink(plan) + '" target="_blank" rel="noopener" data-act="wa">Chat on WhatsApp</a>';
     }
     h += '</div>';
+    if (!cv) h += cmpHtml(plan);
     if (!cv) h += '<p class="fine"><b>Estimate, not a quote.</b> Built from 2026 market rates for private cars and ' + esc(ho.tier.name) + ' hotels, kept on the higher side. Final price after we check your dates — our team often beats it, and any discounts are added on top. Flights/trains, entry tickets, activities and permits are extra.</p>';
     $('#price').innerHTML = h;
     $('#mb-pp').textContent = inr(cv ? p.clientPP : p.pp);
+  }
+
+  /* ---------------- compare 2 plans (v1.3) — kept in this browser tab only ---------------- */
+  var CMP = null, CMPK = ['s', 'e', 'd', 'a', 'c', 'i', 'r', 't', 'm', 'k', 'x', 'tp'];
+  function snapS() { var o = {}; CMPK.forEach(function (k) { o[k] = Array.isArray(S[k]) ? S[k].slice() : S[k]; }); o.p = S.p.map(function (x) { return { id: x.id, n: x.n }; }); return o; }
+  function sumOf(plan) {
+    var ag = MODE === 'agent' && S.g && S.g.k;
+    return { title: plan.title, dn: plan.totalDays + 'D / ' + plan.nights + 'N', from: fmtD(plan.days[0].date), hotel: plan.hotel.tier.name.split(' (')[0], meal: S.m === 'MAP' ? 'Breakfast + dinner' : 'Breakfast only', car: (plan.cab.cnt > 1 ? plan.cab.cnt + ' × ' : '') + plan.cab.v.name.split(' (')[0], km: plan.kmTotal, pp: ag ? plan.price.clientPP : plan.price.pp, total: ag ? plan.price.client : plan.price.total, pax: paxText() };
+  }
+  function cmpHtml(plan) {
+    if (!CMP) return '<div class="cmp"><button type="button" class="chip" data-cmp="keep">📌 Keep this as Plan A &amp; compare</button><small>Change hotels, car, nights or places — see both prices side by side.</small></div>';
+    var a = CMP.sum, b = sumOf(plan), rows = [['Trip', a.title, b.title], ['Days', a.dn, b.dn], ['Start', a.from, b.from], ['Travellers', a.pax, b.pax], ['Hotels', a.hotel, b.hotel], ['Meals', a.meal, b.meal], ['Car', a.car, b.car], ['Road km', a.km.toLocaleString('en-IN'), b.km.toLocaleString('en-IN')], ['Per adult', inr(a.pp), inr(b.pp)], ['Total', inr(a.total), inr(b.total)]];
+    var d = b.pp - a.pp, dt = Math.abs(d) < 100 ? 'Both plans cost about the same per adult.' : 'This plan is ' + inr(Math.abs(d)) + ' per adult ' + (d < 0 ? 'cheaper' : 'costlier') + ' than Plan A.';
+    return '<div class="cmp on"><b class="cmp-h">Compare plans</b><table><tr><th></th><th>Plan A</th><th>This plan</th></tr>' + rows.map(function (r) { return '<tr' + (r[1] !== r[2] ? ' class="df"' : '') + '><td>' + r[0] + '</td><td>' + esc(r[1]) + '</td><td>' + esc(r[2]) + '</td></tr>'; }).join('') + '</table><p class="cmp-d' + (d < -99 ? ' lo' : '') + '">' + dt + '</p><div class="cmp-b"><button type="button" class="chip" data-cmp="swap">⇄ Go back to Plan A</button><button type="button" class="chip" data-cmp="keep">📌 Keep this as Plan A</button><button type="button" class="chip" data-cmp="clr">✕ Close compare</button></div></div>';
+  }
+  function cmpAct(a) {
+    if (!LAST) return;
+    if (a === 'keep') { CMP = { st: snapS(), sum: sumOf(LAST) }; toast('Saved as Plan A — now change anything to compare'); ev('trip_planner', { step: 'compare_keep' }); renderPrice(LAST); return; }
+    if (a === 'clr') { CMP = null; renderPrice(LAST); return; }
+    if (a === 'swap' && CMP) {
+      var cur = { st: snapS(), sum: sumOf(LAST) };
+      Object.keys(CMP.st).forEach(function (k) { S[k] = CMP.st[k]; });
+      CMP = cur; $('#b-veh').value = S.k; $('#b-meal').value = S.m;
+      toast('Back to Plan A — your other plan is now Plan A'); ev('trip_planner', { step: 'compare_swap' }); change(true);
+    }
   }
 
   /* ---------------- budget fit (v1.1) ---------------- */
@@ -749,6 +775,7 @@
     $('#b-tiers').addEventListener('click', function (e) { var b = e.target.closest('[data-t]'); if (b) { S.t = b.dataset.t; change(false); } });
     $('#b-meal').addEventListener('change', function (e) { S.m = e.target.value; change(false); });
     $('#b-fit').addEventListener('click', budgetFit);
+    $('#price').addEventListener('click', function (e) { var b = e.target.closest('[data-cmp]'); if (b) cmpAct(b.dataset.cmp); });
     $('#b-bud').addEventListener('input', function (e) { if (!e.target.value) { BUD = 0; $('#b-bud-msg').textContent = ''; } });
     $('#b-bud').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); budgetFit(); } });
     $('#b-veh').addEventListener('change', function (e) { S.k = e.target.value; change(false); });
@@ -967,6 +994,7 @@
     if (S.x.length) L.push('Add-ons wanted: ' + S.x.map(function (x) { return ADDONS.filter(function (a) { return a.id === x; })[0].n; }).join(', '));
     if (plan.warn.length) L.push('Warnings shown: ' + plan.warn.map(function (w) { return w.t; }).join(' | '));
     if (BUD) L.push('Guest budget: ' + inr(BUD) + ' per adult');
+    if (CMP) { var ca = CMP.sum; L.push('Also compared (Plan A): ' + ca.title + ' ' + ca.dn + ', ' + ca.hotel + ', ' + ca.meal + ', ' + ca.car + ' — est. ' + inr(ca.total) + ' (' + inr(ca.pp) + '/adult)'); }
     if (W.__tpLang === 'hi') L.push('Guest language: Hindi (हिंदी) — reply in Hindi');
     if (MODE === 'agent' && S.g) L.push('AGENT: ' + (S.g.n || '') + ' · ' + (S.g.p || '') + ' · ' + (S.g.e || '') + ' · markup ' + S.g.k + '%');
     L.push('Link: ' + shareUrl(false));

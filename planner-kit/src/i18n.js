@@ -101,6 +101,7 @@
     'Vaishno Devi needs a Yatra registration (RFID card) — register early.': 'वैष्णो देवी के लिए यात्रा रजिस्ट्रेशन (RFID कार्ड) ज़रूरी है — जल्दी रजिस्टर करें।',
     'Our team confirms hotel availability before you book.': 'बुकिंग से पहले हमारी टीम होटल की उपलब्धता कन्फ़र्म करती है।',
     'Your personalised itinerary · आपकी अपनी यात्रा योजना': 'आपकी अपनी यात्रा योजना', 'Your personalised itinerary · आपकी अपनी यात्रा योजना · Hill roads, realistic drive times': 'आपकी अपनी यात्रा योजना · पहाड़ी सड़कें, असली ड्राइव समय'
+    , '📌 Keep this as Plan A & compare': '📌 इसे Plan A रखें और तुलना करें', 'Change hotels, car, nights or places — see both prices side by side.': 'होटल, गाड़ी, रातें या जगहें बदलें — दोनों के दाम साथ-साथ देखें।', 'Compare plans': 'प्लान की तुलना', 'This plan': 'यह प्लान', 'Days': 'दिन', 'Start': 'शुरुआत', 'Travellers': 'यात्री', 'Road km': 'सड़क किमी', 'Per adult': 'प्रति वयस्क', '⇄ Go back to Plan A': '⇄ Plan A पर वापस जाएँ', '📌 Keep this as Plan A': '📌 इसे Plan A रखें', '✕ Close compare': '✕ तुलना बंद करें', 'Both plans cost about the same per adult.': 'दोनों प्लान का दाम प्रति वयस्क लगभग बराबर है।', 'Saved as Plan A — now change anything to compare': 'Plan A सेव हुआ — अब कुछ भी बदलकर तुलना करें', 'Back to Plan A — your other plan is now Plan A': 'Plan A पर वापस — आपका दूसरा प्लान अब Plan A है'
   };
   var MS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], MH = ['जन', 'फ़र', 'मार्च', 'अप्रै', 'मई', 'जून', 'जुला', 'अग', 'सित', 'अक्टू', 'नवं', 'दिस'];
   var WD = { Sun: 'रवि', Mon: 'सोम', Tue: 'मंगल', Wed: 'बुध', Thu: 'गुरु', Fri: 'शुक्र', Sat: 'शनि' };
@@ -269,7 +270,8 @@
     [/^Itinerary prepared by (.+)$/, function (m) { return 'यात्रा कार्यक्रम ' + m[1] + ' ने तैयार किया'; }],
     [/^(One-way drop|Round trip) · (.+?) · driver(?: night charges)?,? tolls & parking included \(estimate\)\. Final fare on WhatsApp in minutes\.$/, function (m) { return (m[1] === 'One-way drop' ? 'एक तरफ़ ड्रॉप' : 'राउंड ट्रिप') + ' · ' + hrs(m[2]).replace(/(\d+) days/, '$1 दिन').replace('+ local', '+ लोकल') + ' · ड्राइवर, टोल और पार्किंग शामिल (अनुमान)। फ़ाइनल किराया WhatsApp पर कुछ ही मिनटों में।'; }],
     [/^(.+) in (.+), breakfast \+ dinner, taxes \(estimate\)( · peak-season rate)?\. About (₹[\d,]+) per room-night\. We send 2–3 hotel options with photos\.$/, function (m) { return pn(m[2]) + ' में ' + tier(m[1]) + ', नाश्ता + रात का खाना, टैक्स (अनुमान)' + (m[3] ? ' · पीक-सीज़न रेट' : '') + '। लगभग ' + m[4] + ' प्रति कमरा-रात। हम फ़ोटो के साथ 2–3 होटल विकल्प भेजते हैं।'; }],
-    [/^(.+) · (\d+) seats$/, function (m) { return m[1] + ' · ' + m[2] + ' सीट'; }]
+    [/^(.+) · (\d+) seats$/, function (m) { return m[1] + ' · ' + m[2] + ' सीट'; }],
+    [/^This plan is (₹[\d,]+) per adult (cheaper|costlier) than Plan A\.$/, function (m) { return 'यह प्लान Plan A से ' + m[1] + ' प्रति वयस्क ' + (m[2] === 'cheaper' ? 'सस्ता' : 'महँगा') + ' है।'; }],
   ];
 
   function tr(t) {

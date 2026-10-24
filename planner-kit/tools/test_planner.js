@@ -64,6 +64,15 @@ const { chromium, devices } = require('playwright');
     await page.screenshot({ path: `${out}/${name}-4d-budget-car.png` });
     await page.selectOption('#b-veh', 'auto'); await page.waitForTimeout(200);
     await page.click('#b-tiers [data-t="deluxe"]'); await page.selectOption('#b-meal', 'MAP'); await page.waitForTimeout(300);
+    // v1.3 compare 2 plans
+    await page.click('#price [data-cmp="keep"]'); await page.waitForTimeout(300);
+    const aPrice = await page.textContent('#price .big');
+    await page.click('#b-tiers [data-t="luxury"]'); await page.waitForTimeout(400);
+    r.compare = { aPrice, bPrice: await page.textContent('#price .big'), rows: await page.$$eval('#price .cmp tr', x => x.length), diffRows: await page.$$eval('#price .cmp tr.df td:first-child', x => x.map(y => y.textContent)), msg: await page.textContent('#price .cmp-d') };
+    await page.screenshot({ path: `${out}/${name}-4e-compare.png` });
+    await page.$eval('#price .cmp', el => el.scrollIntoView()); await page.screenshot({ path: `${out}/${name}-4f-compare-card.png` });
+    await page.click('#price [data-cmp="swap"]'); await page.waitForTimeout(400);
+    r.compare.afterSwap = { tier: await page.$eval('#b-tiers [aria-pressed="true"]', x => x.dataset.t), price: await page.textContent('#price .big'), msg: await page.textContent('#price .cmp-d') };
     // lead + pdf
     await page.click('#price [data-act="pdf"]'); await page.waitForTimeout(300);
     await page.fill('#ld-name', 'TEST Claude'); await page.fill('#ld-ph', '9876543210'); await page.click('#ld-go'); await page.waitForTimeout(600);
@@ -72,6 +81,7 @@ const { chromium, devices } = require('playwright');
     r.doc = await page.evaluate(() => { const d = document.querySelector('#doc'); return { len: d.innerHTML.length, tips: /Good to know/.test(d.innerHTML), route: /Route at a glance/.test(d.innerHTML), qr: !!d.querySelector('#doc-qr img, #doc-qr canvas'), nums: /112/.test(d.innerHTML) }; });
     await page.emulateMedia({ media: 'print' }); await page.screenshot({ path: `${out}/${name}-6-pdf.png`, fullPage: true }); await page.emulateMedia({ media: 'screen' });
     r.lead = await page.evaluate(() => window.__tpLastLead && window.__tpLastLead.destination);
+    r.compareInLead = await page.evaluate(() => /Also compared \(Plan A\): .*Luxury/.test((window.__tpLastLead || {}).message || ''));
     r.budgetInLead = await page.evaluate(() => /Guest budget: ₹25,000 per adult/.test((window.__tpLastLead || {}).message || ''));
     // share link round-trip
     await page.click('#price [data-act="share"]'); await page.waitForTimeout(400);
@@ -127,6 +137,9 @@ const { chromium, devices } = require('playwright');
       hi.tipEnglishLeft = await hp.evaluate(() => [...document.querySelectorAll('#doc ul.two li')].map(x => x.textContent).filter(t => /\b(the|and|for|with|carry|keep)\b/i.test(t.replace(/^[^:]*:/, ''))));
       await hp.emulateMedia({ media: 'print' }); await hp.screenshot({ path: `${out}/${name}-8-pdf-hindi.png`, fullPage: true }); await hp.emulateMedia({ media: 'screen' });
       hi.linkHasL = await hp.evaluate(() => { const m = location.hash.match(/t=([\w-]+)/); return m ? JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g, '+').replace(/_/g, '/'))))).l === 'hi' : false; });
+      // v1.3: compare box in Hindi
+      if (await hp.$('#price [data-cmp="keep"]')) { await hp.click('#price [data-cmp="keep"]'); await hp.waitForTimeout(300); await hp.click('#b-tiers [data-t="standard"]'); await hp.waitForTimeout(500);
+        hi.compare = { head: await hp.textContent('#price .cmp-h'), msg: await hp.textContent('#price .cmp-d') }; await hp.$eval('#price .cmp', el => el.scrollIntoView()); await hp.screenshot({ path: `${out}/${name}-7b-compare-hindi.png` }); }
       hi.overflow = await hp.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
       await hp.click('#tp-lang'); await hp.waitForTimeout(300);
       hi.backToEn = (await hp.textContent('#tp-h1')) === enH1 && (await hp.evaluate(() => document.documentElement.lang)) === 'en-IN' && !deva(await hp.textContent('.tl-day h4'));

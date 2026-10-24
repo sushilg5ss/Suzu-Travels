@@ -336,3 +336,12 @@ details.fq p{margin:0 0 14px;color:#2c4637}
 .bud-r input{flex:1 1 0;width:0;min-width:0;min-height:44px;border:1.5px solid var(--l);border-radius:12px;padding:0 10px;background:#fff;font-weight:700;color:var(--f)}
 .bud-r input:focus{border-color:var(--e);outline:none}.bud-r .chip{min-height:44px;white-space:nowrap}
 .bud-m{margin:6px 0 0;font-size:12.5px;line-height:1.45;color:var(--f)}.bud-m:empty{display:none}.bud-m.no{color:#9a4a00}
+.cmp{margin:0 16px 12px;border:1.5px dashed var(--l);border-radius:12px;padding:8px 10px;background:#fbfdfb;display:grid;gap:4px}
+.cmp>small{font-size:11.5px;color:var(--mut);line-height:1.4}.cmp .chip{min-height:44px;justify-content:center}
+.cmp-h{font-size:13px;color:var(--f)}
+.cmp table{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed}
+.cmp th{text-align:left;font-size:11px;color:var(--mut);padding:2px 4px}.cmp th:first-child{width:24%}
+.cmp td,.cmp td:last-child{text-align:left;white-space:normal;font-weight:600;font-size:12px;padding:4px;border-top:1px solid var(--l);vertical-align:top;overflow-wrap:anywhere}.cmp td:first-child{color:var(--mut);font-weight:700}
+.cmp tr.df td:not(:first-child){font-weight:800;color:var(--f)}
+.cmp-d{margin:2px 0;font-size:12.5px;font-weight:700;color:#9a4a00}.cmp-d.lo{color:#1d7a3e}
+.cmp-b{display:flex;flex-wrap:wrap;gap:6px}.cmp-b .chip{flex:1 1 auto}
