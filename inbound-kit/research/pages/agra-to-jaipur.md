@@ -39,7 +39,7 @@ AI-answer shape: "Agra to Jaipur is about 232 km (144 mi) by road (official Taj 
 | # | fact | source | as of |
 | --- | --- | --- | --- |
 | 1 | Agra by road: **Jaipur 232 km (144 mi)**, Delhi 204 km (127 mi); Agra Fort and Fatehpur Sikri open sunrise to sunset every day | https://tajmahal.gov.in/getting-around-taj-mahal.aspx | checked 17–18 Oct 2026 (taj + 2-week packs); not re-opened today (fetch timed out) |
-| 2 | Fatehpur Sikri: UNESCO World Heritage Site **inscribed 1986**; built by Emperor Akbar in the second half of the 16th century; Mughal capital for only about 10 years; includes the Jama Masjid | https://whc.unesco.org/es/list/255 (UNESCO; English summary on the same entry) | 23 Oct 2026 |
+| 2 | Fatehpur Sikri: UNESCO World Heritage Site **inscribed 1986**; built by Emperor Akbar in the second half of the 16th century; Mughal capital for only about 10 years; includes the Jama Masjid | https://whc.unesco.org/en/list/255/ (UNESCO; English summary on the same entry) | 23 Oct 2026 |
 | 3 | Agra has three UNESCO sites: Taj Mahal, Agra Fort, Fatehpur Sikri | https://tajmahal.gov.in/uneso-world-heritage-site.aspx | 18 Oct 2026 (title only) |
 | 4 | Abhaneri (Dausa district, Rajasthan): **Chand Baori stepwell, 13 levels, about 20 m deep**; the village dates from the 9th century; **Harshat Mata temple, 10th century** | https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/jaipur/abhaneri.html (Incredible India, MoT) | 23 Oct 2026 |
 | 5 | Abhaneri Festival (Rajasthan Tourism event, Dausa): Chand Baori described with "about 3,500 symmetrical steps" and 13 storeys; festival held in late September in 2025 (26–27 Sep) | https://utsav.gov.in/view-event/abhaneri-festival-dausa (Utsav, MoT) | 23 Oct 2026 |
