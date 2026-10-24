@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.78) 56%, rgba(11,31,51,0.92) 100%); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 120px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 168px; color: #fff; font-weight: 800; font-size: 124px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 300px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.map { position: absolute; left: 0; top: 440px; width: 820px; height: 260px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; font-size: 26px; fill: #fff; }
+      .big { position: absolute; left: 0; top: 728px; color: #fff; font-weight: 800; font-size: 84px; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 380px; top: 744px; width: 440px; text-align: right; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 30px; line-height: 1.25; }
+      .facts { position: absolute; left: 0; top: 890px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 50px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 866px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s3.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s1.jpg" alt="" style="left:-560px;width:2640px;height:1485px;top:-300px" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s3.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">TREKS &amp; CAMPS · MANALI</div>
+          <div class="t1">Camping</div>
+          <div class="t2">in Manali</div>
+          <svg class="map" viewBox="0 0 820 260">
+            <path d="M 470 18 C 455 70, 430 110, 400 150 S 360 215, 372 250" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="16" stroke-linecap="round" />
+            <path id="ln1" d="M 470 18 C 455 70, 430 110, 400 150 S 360 215, 372 250" fill="none" stroke="#d4a24c" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 10" />
+            <path d="M 170 40 L 400 150 L 640 120 L 770 60" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 12" />
+            <g id="dots"></g>
+            <circle cx="400" cy="150" r="9" fill="#fff" />
+            <text x="170" y="92" text-anchor="middle">Solang</text>
+            <text x="500" y="30">Kothi–Gulaba</text>
+            <text x="340" y="160" text-anchor="end" style="fill:rgba(255,255,255,0.75)">Manali</text>
+            <text x="640" y="172" text-anchor="middle">Sethan</text>
+            <text x="770" y="34" text-anchor="middle">Hampta</text>
+            <text x="410" y="252">Naggar road</text>
+          </svg>
+          <div class="big">5 areas</div>
+          <div class="biglab">meadow · river · orchard</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Solang · Kothi · Sethan</div>
+            <div class="fact" id="f2">Best Mar–Jun · mid-Sep–Nov</div>
+            <div class="fact" id="f3">Winter: heated tent or igloo</div>
+            <div class="fact" id="f4">Registered camps only</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.05, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      // river trail: period 28 px, offset -336 = 12 whole periods -> seamless
+      tl.fromTo("#ln1", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -336 }, duration: 12, ease: "none" }, 0);
+      const pts = [[170, 40], [470, 18], [640, 120], [770, 60], [372, 232]];
+      const g = document.getElementById("dots");
+      const NS = "http://www.w3.org/2000/svg";
+      pts.forEach((p, i) => {
+        const halo = document.createElementNS(NS, "circle");
+        halo.setAttribute("cx", p[0]); halo.setAttribute("cy", p[1]); halo.setAttribute("fill", "rgba(212,162,76,0.35)");
+        const dot = document.createElementNS(NS, "circle");
+        dot.setAttribute("cx", p[0]); dot.setAttribute("cy", p[1]); dot.setAttribute("r", 12); dot.setAttribute("fill", "#d4a24c"); dot.setAttribute("stroke", "#fff"); dot.setAttribute("stroke-width", 4);
+        g.appendChild(halo); g.appendChild(dot);
+        const off = i / 5;
+        const st = { p: off };
+        const place = () => { const s = 0.5 + 0.5 * Math.sin(st.p * Math.PI * 2); halo.setAttribute("r", (14 + s * 22).toFixed(2)); halo.setAttribute("opacity", (0.25 + 0.75 * s).toFixed(3)); };
+        tl.fromTo(st, { p: off }, { p: off + 2, duration: 12, ease: "none", onUpdate: place }, 0);
+        place();
+      });
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
