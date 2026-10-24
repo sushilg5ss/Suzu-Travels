@@ -905,5 +905,68 @@
   "license": "Unsplash License",
   "src": "https://unsplash.com/photos/the-colosseum-rome-italy-during-daytime-75XHJzEIeUc",
   "wp_id": 15475
+ },
+ "switzerland-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-matterhorn-zermatt.webp",
+  "alt": "The Matterhorn rising above the forested valley near Zermatt, Switzerland",
+  "cap": "Matterhorn, Zermatt",
+  "credit": "Ilia Bronskiy",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/matterhorn-mountain-towering-over-zermatt-switzerland-iXCZlwpHkYc",
+  "wp_id": 15672
+ },
+ "switzerland-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-matterhorn-lake-sunrise.webp",
+  "alt": "The Matterhorn glowing at sunrise and reflected in a still alpine lake, Zermatt, Switzerland",
+  "cap": "Matterhorn at sunrise",
+  "credit": "Ilia Bronskiy",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/matterhorn-reflected-in-tranquil-lake-at-sunrise-zermatt-7bYsjkMTqpw",
+  "wp_id": 15673
+ },
+ "switzerland-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-red-train-snow.webp",
+  "alt": "Red train curving through snowy mountains, seen from a carriage window, Switzerland",
+  "cap": "Train through the snow",
+  "credit": "Hasmik Ghazaryan Olson",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-red-train-traveling-through-a-snow-covered-mountain-9_2bZr-fTjQ",
+  "wp_id": 15674
+ },
+ "switzerland-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-bernina-line-morteratsch.webp",
+  "alt": "Red train on the Bernina line near Morteratsch, with the glacier and snowy peaks behind and autumn larches, Graubünden, Switzerland",
+  "cap": "Bernina line, Morteratsch",
+  "credit": "Robin Ulrich",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-red-train-traveling-past-a-mountain-covered-in-snow-Dj6CSBMGZoM",
+  "wp_id": 15675
+ },
+ "switzerland-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-chillon-castle-montreux.webp",
+  "alt": "Chillon Castle on the shore of Lake Geneva with mountains behind, near Montreux, Switzerland",
+  "cap": "Chillon Castle, Montreux",
+  "credit": "SnapSaga",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-castle-sitting-on-top-of-a-lake-surrounded-by-mountains-pMdh4e93I0s",
+  "wp_id": 15676
+ },
+ "switzerland-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-grindelwald-valley.webp",
+  "alt": "Snow-capped peaks above the valley village of Grindelwald, Switzerland",
+  "cap": "Grindelwald",
+  "credit": "Alexander Kovalev",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/snow-capped-mountains-tower-over-a-valley-town-8cCaXu_Ju3M",
+  "wp_id": 15677
+ },
+ "switzerland-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-switzerland-rhine-falls.webp",
+  "alt": "Rhine Falls from above, with the rock in the middle of the falls and Laufen Castle on the wooded bank, Switzerland",
+  "cap": "Rhine Falls",
+  "credit": "Michaela Böhm (Římáková)",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-large-waterfall-with-a-house-on-top-of-it-MhvqemfxdFc",
+  "wp_id": 15678
  }
 }
