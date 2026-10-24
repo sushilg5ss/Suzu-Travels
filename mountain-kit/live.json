@@ -246,5 +246,15 @@
   "added": "2026-10-23",
   "peak_id": "kanamo",
   "commercial": false
+ },
+ "chau-chau-kang-nilda": {
+  "id": 15724,
+  "path": "/mountains-of-india/chau-chau-kang-nilda/",
+  "kind": "peak",
+  "label": "Chau Chau Kang Nilda",
+  "blurb": "6,303 m · Spiti's 'blue moon in the sky', above Langza",
+  "added": "2026-10-24",
+  "peak_id": "chau-chau-kang-nilda",
+  "commercial": true
  }
 }
