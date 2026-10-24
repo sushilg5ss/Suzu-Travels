@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/is-india-safe-for-solo-female-travellers/ (guide). Hero only, made by the Page Builder (night) (Visual Studio Step 2) from the licensed library in hf/photos/CREDITS.md — no new photos, no people as subject. Captions are advice lines, not place names. Poster = Humayun's Tomb, Delhi (where most first trips start). No route/cost video.",
+ "hero": {
+  "kicker": "SOLO WOMEN · INDIA",
+  "scenes": [
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 700}, "to": {"y": 1000}},
+   {"img": "px-38044216.jpg", "kind": "tilt", "from": {"y": 200}, "to": {"y": 560}},
+   {"img": "px-36966954.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 650}}
+  ],
+  "steps": ["TRAVEL SOLO, SMART", "DAYLIGHT DRIVES", "EMERGENCY: 112", "PLAN WITH LOCALS"]
+ }
+}
