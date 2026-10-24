@@ -679,5 +679,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-dharamshala-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@69fecdb57fbeaef7bbf3764fc590a179d4261a2c/cab-kit/media/delhi-to-dharamshala-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@69fecdb57fbeaef7bbf3764fc590a179d4261a2c/cab-kit/media/delhi-to-dharamshala-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@69fecdb57fbeaef7bbf3764fc590a179d4261a2c/cab-kit/media/delhi-to-dharamshala-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
