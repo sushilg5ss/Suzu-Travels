@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; object-fit: cover; }
+      #im1, #im5 { left: -600px; top: -1300px; width: 2600px; height: 3900px; }
+      #im2 { left: -130px; top: -330px; width: 2500px; height: 1875px; }
+      #im3 { left: -65px; top: -450px; width: 2700px; height: 2001px; }
+      #im4 { left: -60px; top: -1000px; width: 2000px; height: 3000px; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.08) 38%, rgba(11,31,51,0.8) 54%, rgba(11,31,51,0.94) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 860px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 100px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.16em; }
+      .t1 { position: absolute; left: 0; top: 148px; color: #fff; font-weight: 800; font-size: 108px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 258px; color: #d4a24c; font-weight: 800; font-size: 100px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.prof { position: absolute; left: 0; top: 400px; width: 840px; height: 460px; overflow: visible; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 32px; white-space: nowrap; }
+      .lab.sm { font-weight: 500; font-size: 28px; color: rgba(255,255,255,0.85); }
+      .ctr { position: absolute; left: 560px; top: 420px; color: #d4a24c; font-weight: 800; font-size: 64px; white-space: nowrap; }
+      .ctrl { position: absolute; left: 560px; top: 496px; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 28px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 896px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 922px; width: 860px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 860px; color: #fff; font-weight: 800; font-size: 48px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0;transform:scaleX(-1)"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0;transform:scaleX(-1)"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">AIR · SHIMLA (JUNGA)</div>
+          <div class="t1">Paragliding</div>
+          <div class="t2">in Shimla</div>
+          <svg class="prof" viewBox="0 0 840 460">
+            <path d="M 0 150 Q 60 70 130 60 Q 200 58 250 120 Q 330 230 420 300 Q 520 370 640 390 L 840 400 L 840 460 L 0 460 Z" fill="rgba(255,255,255,0.10)" stroke="none" />
+            <path d="M 0 150 Q 60 70 130 60 Q 200 58 250 120 Q 330 230 420 300 Q 520 370 640 390 L 840 400" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="3" />
+            <g fill="rgba(150,200,160,0.55)">
+              <path d="M 40 118 l 12 -34 l 12 34 z" /><path d="M 70 92 l 12 -34 l 12 34 z" /><path d="M 165 86 l 12 -34 l 12 34 z" /><path d="M 200 92 l 12 -34 l 12 34 z" /><path d="M 300 200 l 12 -34 l 12 34 z" /><path d="M 340 238 l 12 -34 l 12 34 z" />
+            </g>
+            <path id="route" d="M 130 56 C 260 10 330 90 420 150 C 520 220 560 330 690 388" fill="none" stroke="none" />
+            <circle id="pT" cx="130" cy="58" r="14" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <circle id="pL" cx="690" cy="390" r="14" fill="#d4a24c" stroke="#0b1f33" stroke-width="4" />
+            <g id="glider">
+              <path d="M -30 -12 Q 0 -34 30 -12" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" />
+              <line x1="-24" y1="-13" x2="0" y2="11" stroke="#fff" stroke-width="2.5" />
+              <line x1="24" y1="-13" x2="0" y2="11" stroke="#fff" stroke-width="2.5" />
+              <circle cx="-4" cy="13" r="6" fill="#d4a24c" />
+              <circle cx="5" cy="15" r="6" fill="#ffffff" />
+            </g>
+          </svg>
+          <div class="lab" style="left:40px; top:640px">Take-off</div>
+          <div class="lab sm" style="left:40px; top:680px">ridge above Junga</div>
+          <div class="lab sm" style="left:400px; top:830px"><b style="color:#fff;font-weight:800">Landing</b> · valley near Junga</div>
+          <div class="ctr" id="ctr">~0 min</div>
+          <div class="ctrl">tandem flight</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">About an hour from Shimla</div>
+            <div class="fact" id="f2">Tandem · registered pilot</div>
+            <div class="fact" id="f3">Age 12+ · 30 kg+</div>
+            <div class="fact" id="f4">Closed 15 Jul–15 Sep</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.07, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.06, y: 0 }, { scale: 1, y: -40, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, x: 10 }, { scale: 1, x: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+
+      const route = document.getElementById("route");
+      const L = route.getTotalLength();
+      const glider = document.getElementById("glider");
+      const ctr = document.getElementById("ctr");
+      const NS = "http://www.w3.org/2000/svg";
+      const trail = document.createElementNS(NS, "path");
+      trail.setAttribute("d", route.getAttribute("d"));
+      trail.setAttribute("fill", "none"); trail.setAttribute("stroke", "#d4a24c"); trail.setAttribute("stroke-width", "6"); trail.setAttribute("stroke-linecap", "round");
+      trail.style.strokeDasharray = L + " " + L; trail.style.strokeDashoffset = String(L);
+      route.parentNode.insertBefore(trail, route.nextSibling);
+      function put(t) {
+        const a = route.getPointAtLength(L * t);
+        const b = route.getPointAtLength(Math.min(L, L * t + 2));
+        const ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+        glider.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + (a.y - 26).toFixed(2) + ") rotate(" + (ang * 0.2).toFixed(2) + ")");
+        trail.style.strokeDashoffset = String(L * (1 - t));
+        ctr.textContent = "~" + Math.round(t * 10) + " min";
+      }
+      put(0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 9.6, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.6);
+      [["#pT", 0.7], ["#pL", 10.0]].forEach(([p, t]) => {
+        tl.fromTo(p, { attr: { r: 14 } }, { attr: { r: 22 }, duration: 0.3, ease: "power2.out", immediateRender: false }, t);
+        tl.to(p, { attr: { r: 14 }, duration: 0.4, ease: "power2.in" }, t + 0.3);
+      });
+      tl.to(["#glider"], { opacity: 0, duration: 0.4, ease: "power1.in" }, 10.7);
+      tl.to(trail, { opacity: 0, duration: 0.5 }, 10.8);
+      const rs = { t: 1 };
+      tl.fromTo(rs, { t: 1 }, { t: 0, duration: 0.01, immediateRender: false, onUpdate: () => put(rs.t) }, 11.3);
+      tl.set(trail, { opacity: 1 }, 11.35);
+      tl.to("#glider", { opacity: 1, duration: 0.55, ease: "power1.out" }, 11.4);
+
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
