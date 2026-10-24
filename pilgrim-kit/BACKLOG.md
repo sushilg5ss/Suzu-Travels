@@ -41,8 +41,8 @@
 | 31 | media | `baglamukhi` | hub | temple | baglamukhi temple kangra (12,100; baglamukhi mandir himachal 6,600) | devi | Bankhandi, Kangra. Focus changed 22 Oct 2026 (Research); 'baglamukhi temple' 74,000 shared with Datia/Nalkheda |
 | 32 | media | `baijnath` | hub | temple | baijnath temple (22,200; baijnath himachal pradesh 60,500) | hills | Kangra, 1204 CE. Arch nagara→hills (no sea). Not Deoghar — don't target 'baijnath dham'. Wikipedia coords wrong — use town 32.052/76.648 (Research 23 Oct 2026) |
 | 33 | media | `jakhu-temple` | hub | temple | jakhu temple shimla (27,100) | pagoda | Hanuman, 108-ft statue (no superlatives). Arch devi→pagoda. Ropeway/escalator status unverified (Research 23 Oct 2026) |
-| 34 | researched | `manimahesh-yatra` | hub | yatra | manimahesh yatra (3,600; peak 9,900; manimahesh kailash 12,100 → H1) | lake | Live by Jun 2027; e-pass since 2026 (5,000/day beyond Hadsar). Arch himalaya→lake (Research 24 Oct 2026) |
-| 35 | researched | `panch-kedar` | hub | circuit | panch kedar (40,500; peak 90,500; tungnath 165,000 in H2/FAQ) | himalaya + route-map | Tungnath highest Shiva temple. 2026 closings: Tungnath 6 Nov, Kedarnath 11 Nov, Madhyamaheshwar 16 Nov (Research 24 Oct 2026) |
+| 34 | media | `manimahesh-yatra` | hub | yatra | manimahesh yatra (3,600; peak 9,900; manimahesh kailash 12,100 → H1) | lake | Live by Jun 2027; e-pass since 2026 (5,000/day beyond Hadsar). Arch himalaya→lake (Research 24 Oct 2026) |
+| 35 | media | `panch-kedar` | hub | circuit | panch kedar (40,500; peak 90,500; tungnath 165,000 in H2/FAQ) | himalaya + route-map | Tungnath highest Shiva temple. 2026 closings: Tungnath 6 Nov, Kedarnath 11 Nov, Madhyamaheshwar 16 Nov (Research 24 Oct 2026) |
 | 36 | todo | `bhimakali` | hub | temple | bhimakali temple sarahan (5,400) | pagoda | |
 | 37 | todo | `ayodhya-ram-mandir` | hub | temple | ayodhya tour package (2,900) | nagara | Commercial terms only for single-city Ayodhya; combo owned by 10584 |
 | 38 | todo | `adi-kailash-yatra` | hub | yatra | adi kailash yatra (2,900) | himalaya | ILP; status check |
