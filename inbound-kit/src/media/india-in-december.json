@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/india-in-december/ (guide). Hero only, made by the Page Builder (Visual Studio Step 2) from the licensed library in hf/photos/CREDITS.md — no new photos. Captions use only each photo's allowed caption ('December snow' is allowed for px-15404469). Poster = Shimla in snow (the page's lead idea). No route/cost video.",
+ "hero": {
+  "kicker": "INDIA IN DECEMBER",
+  "scenes": [
+   {"img": "px-15404469.jpg", "kind": "tilt", "from": {"y": 120}, "to": {"y": 520}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-5374231.jpg", "kind": "land", "from": {"scale": 1.04, "x": 50, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}},
+   {"img": "px-32262463.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}}
+  ],
+  "steps": ["DECEMBER SNOW", "TAJ AT DAWN", "KERALA BACKWATERS", "SOUTH GOA"]
+ }
+}
