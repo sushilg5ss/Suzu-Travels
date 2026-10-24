@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "lake",
+  "sky": "dawn",
+  "deva": "मणिमहेश कैलाश",
+  "kicker": "Shiva's lake below Chamba Kailash",
+  "beats": [
+   "The Gaddis call this Shiv Bhumi",
+   "A lake from Shiva's matted hair",
+   "Dawn light, the jewel on the peak",
+   "Janmashtami to Radha Ashtami baths"
+  ]
+ },
+ "story": {
+  "title": "The Manimahesh yatra",
+  "beats": [
+   {"arch": "pagoda", "sky": "dawn", "line": "Pilgrims gather at the old temples of Bharmour"},
+   {"arch": "hills", "sky": "dusk", "line": "The path climbs past Dhancho's falling stream"},
+   {"arch": "lake", "sky": "night", "line": "At night, the peak glows like a jewel"},
+   {"arch": "lake", "sky": "dawn", "line": "At dawn, a holy dip in the sacred lake"}
+  ]
+ }
+}
