@@ -25,7 +25,7 @@
 | 15 | live 2026-10-21 | `chamunda-devi` | hub | temple | chamunda devi temple (14,800) | devi | |
 | 16 | live 2026-10-23 | `kangra-devi` | hub | temple | kangra devi temple (6,600) | devi | Brajeshwari; ghee/butter Makar Sankranti |
 | 17 | live 2026-10-24 | `vaishno-devi-yatra` | hub | yatra | vaishno devi yatra (8,100; vaishno devi temple 60,500) | cave | RFID card rules; CTA 9367 |
-| 18 | media | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
+| 18 | live 2026-10-25 | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
 | 19 | media | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
 | 20 | media | `rameshwaram` | 12-JL | temple | rameshwaram temple (246,000) | gopuram | 22 theerthams |
 | 21 | media | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
