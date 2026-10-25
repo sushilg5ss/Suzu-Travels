@@ -283,9 +283,16 @@ def js_safe(src):
     return "".join(out)
 
 JS = js_safe((ROOT / "kit.js").read_text())
+# Hub-only planner extension (multi-stop, 25 Oct 2026): kit_hub.js is inserted INSIDE the planner block of kit.js right after
+# the IntersectionObserver line, so it can reuse the planner's functions; kit_hub.css is appended to the hub's <style>.
+# Child pages keep plain kit.js/kit.css (no republish needed). Fold both into kit.js/kit.css at the next global kit change.
+_HUB_ANCHOR = "io.observe(mapBox);}catch(e){}\n"
+assert JS.count(_HUB_ANCHOR) == 1, "kit_hub.js anchor not found in kit.js"
+HUB_JS = JS.replace(_HUB_ANCHOR, _HUB_ANCHOR + js_safe(re.sub(r"/\*.*?\*/", "", (ROOT / "kit_hub.js").read_text(), flags=re.S)))
+HUB_CSS = (ROOT / "kit_hub.css").read_text()
 
-def wrap(body, p, faqs, area):
-    return f'<div class="szc" data-szc="{p["slug"]}" data-tier="standard">{body}{modal_block()}{jsonld(p, faqs, area)}<script>{JS}</script></div>'
+def wrap(body, p, faqs, area, js=None):
+    return f'<div class="szc" data-szc="{p["slug"]}" data-tier="standard">{body}{modal_block()}{jsonld(p, faqs, area)}<script>{js or JS}</script></div>'
 
 # ---------------------------------------------------------------- pages
 def build_route(p):
@@ -379,13 +386,13 @@ def build_vehicle(p):
     body += faq_block(p["faqs"])
     return wrap(body, p, p["faqs"], p.get("area") or ["Delhi", "Chandigarh", "Himachal Pradesh", "Uttarakhand"])
 
-def finish(slug, h):
+def finish(slug, h, css_extra=""):
     h = re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
     problems = re.findall(r"\{\{.*?\}\}|TODO|XXX", h)
     if problems:
         sys.exit(f"BUILD REFUSED {slug}: {problems}")
     (OUT / f"{slug}.html").write_text(h, encoding="utf-8")
-    m = f"<style>{min_css(KIT_CSS)}</style>" + min_html(h)
+    m = f"<style>{min_css(KIT_CSS + css_extra)}</style>" + min_html(h)
     if "&&" in m.split("<script>", 1)[-1]:
         sys.exit(f"BUILD REFUSED {slug}: '&&' in script would be mangled by WordPress convert_chars")
     if re.search(r'="[^"<]*>[^"<]*"', m.split("<script>", 1)[0]):
@@ -405,4 +412,4 @@ if __name__ == "__main__":
         h = {"route": build_route, "city": build_city, "vehicle": build_vehicle}[p["kind"]](p)
         print(p["slug"], finish(p["slug"], h))
     if not only or "cabs" in only:
-        print("cabs", finish("cabs", hub.build()))
+        print("cabs", finish("cabs", hub.build(), HUB_CSS))

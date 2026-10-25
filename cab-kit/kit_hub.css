@@ -1,0 +1,26 @@
+.szc-pvia{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px;border-top:1px dashed var(--line);padding-top:12px}
+.szc-pvlist{display:flex;flex-wrap:wrap;gap:10px;width:100%}
+.szc-pvlist:empty{display:none}
+.szc-vrow{display:flex;align-items:center;gap:8px;flex:1 1 240px;min-width:0;background:#f6f8f5;border:1px solid var(--line);border-radius:12px;padding:6px 8px}
+.szc-vn{flex:0 0 26px;height:26px;border-radius:50%;background:var(--gold);color:var(--em);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.szc-vrow input{flex:1;min-width:0;border:0;background:transparent;padding:8px 4px;font:inherit;font-size:15px}
+.szc-vrow input:focus{outline:2px solid var(--green);outline-offset:2px;border-radius:6px}
+.szc-vx{flex:0 0 32px;height:32px;border:0;border-radius:50%;background:#fff;color:#b23b3b;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.szc-padd{border:1.5px dashed var(--green);background:#fff;color:var(--green);font:inherit;font-weight:800;font-size:14px;padding:9px 16px;border-radius:999px;cursor:pointer}
+.szc-padd:hover{background:#eef6ee}
+.szc-padd[hidden]{display:none}
+.szc-phint{font-size:13px;color:#56675b;flex:1 1 260px}
+.szc-pvia.on .szc-phint{display:none}
+.szc-vdays{display:none;align-items:center;gap:8px;margin-left:auto}
+.szc-vdays label{margin:0;font-size:13px}
+.szc-vdays input{width:84px}
+.szc-plan.multi.round .szc-vdays{display:flex}
+.szc-plegs{list-style:none;margin:12px 0 4px;padding:0;display:grid;gap:6px}
+.szc-plegs li{display:grid;grid-template-columns:24px 1fr auto;gap:8px;align-items:center;font-size:14px;padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.06)}
+.szc-plegs .i{width:22px;height:22px;border-radius:50%;background:var(--gold);color:var(--em);font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center}
+.szc-plegs .r{font-weight:700;min-width:0}
+.szc-plegs .d{color:rgba(255,255,255,.75);font-size:13px;text-align:right}
+.szc-plegs li.bk{background:rgba(212,175,55,.14)}
+.szc-pin.v{background:var(--em);color:#fff;font-size:12px}
+.szc-pin.v:after{background:var(--em)}
+@media (max-width:640px){.szc-plegs li{grid-template-columns:24px 1fr}.szc-plegs .d{grid-column:2;text-align:left}.szc-vdays{margin-left:0;width:100%}.szc-padd{width:100%}}

@@ -49,7 +49,11 @@ def planner():
             f'<div><label for="szc-pm">Trip</label><select id="szc-pm"><option value="one">One-way drop</option><option value="round">Round trip</option></select></div>'
             f'<div><label for="szc-pd">Date</label><input id="szc-pd" type="date"></div>'
             f'<div><label for="szc-pn">People</label><input id="szc-pn" type="number" min="1" max="45" value="2"></div>'
-            f'<div class="szc-pgo"><button class="szc-btn gold" type="submit">Show route &amp; fare</button></div><p class="szc-pstat" id="szc-pstat"></p></div>'
+            f'<div class="szc-pgo"><button class="szc-btn gold" type="submit">Show route &amp; fare</button></div>'
+            f'<div class="szc-pvia" id="szc-pvias"><div class="szc-pvlist" id="szc-pvlist"></div><button type="button" class="szc-padd" id="szc-padd">+ Add a stop on the way</button>'
+            f'<span class="szc-phint">Himachal circuit? Add up to 3 stops (Kasol, Shimla, Dharamshala …) for total km, days and fare.</span>'
+            f'<div class="szc-vdays"><label for="szc-pdy">Trip days</label><input id="szc-pdy" type="number" min="1" max="20" placeholder="auto"></div></div>'
+            f'<p class="szc-pstat" id="szc-pstat"></p></div>'
             f'<div class="szc-mapwrap"><div class="szc-map" id="szc-map" aria-label="Road map of your route"></div><div class="szc-mapidle"><b>Your route appears here</b><span>Real roads, live distance and a drive-through animation - hills, tunnels and all.</span></div></div>'
             f'<div class="szc-pout" id="szc-pout"><div class="szc-pempty"><b>How it works:</b> pick From and To and press <b>Show route &amp; fare</b>. You get the distance, the driving time and the fare for Prime, Standard and Saver fleets - then lock the price on WhatsApp in one tap.</div></div>'
             f'</form><datalist id="szc-places">{dl}</datalist>'
@@ -130,4 +134,4 @@ def build():
            ("/himachal-entry-tax-permits-2026/", "Himachal entry tax & permits 2026", ""), ("/payment-booking/", "Payment & booking", "")]
     body += f'<section class="szc-sec" id="plan"><span class="szc-kicker">Plan the rest</span><h2>Hotels, packages and permits</h2>{related(rel)}</section>'
     body += faq_block(FAQS)
-    return wrap(body, p, FAQS, ["Delhi", "Chandigarh", "Himachal Pradesh", "Punjab", "Uttarakhand", "Jammu and Kashmir"])
+    return wrap(body, p, FAQS, ["Delhi", "Chandigarh", "Himachal Pradesh", "Punjab", "Uttarakhand", "Jammu and Kashmir"], js=HUB_JS)
