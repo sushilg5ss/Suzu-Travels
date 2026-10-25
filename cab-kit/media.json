@@ -688,5 +688,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-haldwani-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d62367776a86e21de7330797b5c8c5159a3c45cf/cab-kit/media/delhi-to-haldwani-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d62367776a86e21de7330797b5c8c5159a3c45cf/cab-kit/media/delhi-to-haldwani-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d62367776a86e21de7330797b5c8c5159a3c45cf/cab-kit/media/delhi-to-haldwani-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
