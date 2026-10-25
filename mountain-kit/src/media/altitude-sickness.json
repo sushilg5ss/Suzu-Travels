@@ -87,5 +87,38 @@
     }
    }
   ]
+ },
+ "profile": {
+  "title": "Yunam: rest days built in",
+  "sub": "Jispa to Bharatpur is ~1,500 m in one day, so an extra night follows · heights approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Day 1",
+    "dx": -40
+   },
+   {
+    "name": "Jispa",
+    "m": 3150,
+    "day": "Day 2",
+    "dy": 20
+   },
+   {
+    "name": "Bharatpur",
+    "m": 4650,
+    "day": "Day 3 + rest day"
+   },
+   {
+    "name": "Base camp",
+    "m": 5200,
+    "day": "Day 5 + rest day"
+   },
+   {
+    "name": "Summit",
+    "m": 6111,
+    "day": "Day 7 · back down"
+   }
+  ]
  }
 }
