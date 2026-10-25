@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "saffron",
+  "deva": "राम मंदिर, अयोध्या",
+  "kicker": "Ram Lalla's temple on the Saryu",
+  "beats": [
+   "Rama's birthplace in the Ramayana",
+   "Ram Lalla enshrined, January 2024",
+   "Hanuman keeps watch from Hanumangarhi",
+   "Lamps on the Saryu for Rama's return"
+  ]
+ },
+ "story": {
+  "title": "Ayodhya, city of Rama",
+  "beats": [
+   {"arch": "ghats", "sky": "dawn", "line": "On the Saryu, Rama was born in Ayodhya"},
+   {"arch": "pillar", "sky": "night", "line": "Fourteen years of exile, and the war at Lanka"},
+   {"arch": "ghats", "sky": "dusk", "line": "The city lit lamps for his return"},
+   {"arch": "ghats", "sky": "saffron", "line": "Deepotsav still lights the Saryu banks"}
+  ]
+ }
+}

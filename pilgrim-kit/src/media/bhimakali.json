@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "pagoda",
+  "sky": "dusk",
+  "deva": "भीमाकाली मंदिर",
+  "kicker": "Bushahr's goddess at Sarahan",
+  "beats": [
+   "Sati's ear is said to rest here",
+   "Banasura's hill, in Krishna's old tale",
+   "Kuldevi of the Bushahr kings",
+   "Wood-and-stone towers above the Satluj"
+  ]
+ },
+ "story": {
+  "title": "The story of Bhimakali",
+  "beats": [
+   {"arch": "devi", "sky": "dusk", "line": "Tradition says Sati's ear fell at Sarahan"},
+   {"arch": "pillar", "sky": "night", "line": "Krishna fought Banasura, king of this hill"},
+   {"arch": "pagoda", "sky": "dawn", "line": "The Bushahr kings made her their kuldevi"},
+   {"arch": "himalaya", "sky": "snow", "line": "Her towers face the Shrikhand snows"}
+  ]
+ }
+}
