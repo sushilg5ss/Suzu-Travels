@@ -180,7 +180,9 @@
      "Central India by flight",
      "Kanha and Bandhavgarh are deep in Madhya Pradesh. We arrange them with local teams as a dedicated wildlife leg of 5–6 days."
     ]
-   ]
+   ],
+   "video": "cost",
+   "video_caption": "What a safari quote covers, in words: a car with driver (name, photo and car number shared before you travel), park transfers, lodge nights in your chosen level and safari permits booked on the official forest-department portal. A tiger sighting is never guaranteed — plan more than one drive."
   },
   {
    "id": "rules",
@@ -305,5 +307,11 @@
   "text": "Send your travel month, how many days you have and which part of India you are visiting. You get a day-by-day plan with the right park, the permits and a US-dollar quote from our office in Himachal.",
   "wa": "Hello Suzu Travels, I'm planning a tiger safari in India. Dates: ___ , travellers: ___ , country: ___"
  },
- "links": ["golden-triangle-tour", "rajasthan-tour", "taj-mahal-tour-from-delhi", "private-driver-india", "best-places-to-visit-in-india"]
+ "links": [
+  "golden-triangle-tour",
+  "rajasthan-tour",
+  "taj-mahal-tour-from-delhi",
+  "private-driver-india",
+  "best-places-to-visit-in-india"
+ ]
 }
