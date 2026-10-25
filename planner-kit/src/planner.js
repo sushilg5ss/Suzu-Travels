@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.3';
+  var VER = '1.4';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -453,7 +453,7 @@
     $('#b-adds').innerHTML = ADDONS.filter(function (a) { return !a.at.length || a.at.some(function (id) { return near2.indexOf(id) > -1; }); })
       .map(function (a) { return '<button type="button" class="chip" data-x="' + a.id + '" aria-pressed="' + (S.x.indexOf(a.id) > -1) + '">' + (S.x.indexOf(a.id) > -1 ? '✓ ' : '+ ') + esc(a.n) + '</button>'; }).join('');
     var ab = $('#b-agent'); ab.hidden = MODE !== 'agent' || !!S.cv;
-    if (MODE === 'agent' && !S.cv) { S.g = S.g || { n: '', p: '', e: '', k: R.b2b.default_markup_pct }; $('#ag-name').value = S.g.n; $('#ag-phone').value = S.g.p; $('#ag-email').value = S.g.e; $('#ag-mk').value = S.g.k; }
+    if (MODE === 'agent' && !S.cv) { S.g = S.g || { n: '', p: '', e: '', k: R.b2b.default_markup_pct }; $('#ag-name').value = S.g.n; $('#ag-phone').value = S.g.p; $('#ag-email').value = S.g.e; $('#ag-mk').value = S.g.k; $('#ag-gst').value = AGX.gst || ''; agLogoUi(); }
   }
 
   /* ---------------- render: map (animated SVG) ---------------- */
@@ -654,7 +654,8 @@
       h += '<button type="button" class="btn p" data-act="price">' + (MODE === 'agent' ? 'Get B2B rates & availability' : 'Get best price & availability') + '</button>' +
         '<button type="button" class="btn d" data-act="pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download itinerary (PDF)</button>' +
         '<button type="button" class="btn s" data-act="share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>' + (MODE === 'agent' ? 'Client link (your branding)' : 'Share link') + '</button>' +
-        '<a class="btn w" href="' + waLink(plan) + '" target="_blank" rel="noopener" data-act="wa">Chat on WhatsApp</a>';
+        '<a class="btn w" href="' + waLink(plan) + '" target="_blank" rel="noopener" data-act="wa">Chat on WhatsApp</a>' +
+        (MODE === 'agent' ? '<button type="button" class="btn s" data-act="ratecard">Request Suzu B2B rate card</button>' : '');
     }
     h += '</div>';
     if (!cv) h += cmpHtml(plan);
@@ -781,7 +782,7 @@
     $('#b-veh').addEventListener('change', function (e) { S.k = e.target.value; change(false); });
     $('#b-adds').addEventListener('click', function (e) { var b = e.target.closest('[data-x]'); if (!b) return; var i = S.x.indexOf(b.dataset.x); if (i > -1) S.x.splice(i, 1); else S.x.push(b.dataset.x); change(false); });
     ['ag-name', 'ag-phone', 'ag-email', 'ag-mk'].forEach(function (id) {
-      $('#' + id).addEventListener('input', function () { S.g = S.g || {}; S.g.n = $('#ag-name').value.trim(); S.g.p = $('#ag-phone').value.trim(); S.g.e = $('#ag-email').value.trim(); S.g.k = clamp(+$('#ag-mk').value || 0, 0, 60); clearTimeout(rt); rt = setTimeout(function () { var plan = compute(); LAST = plan; renderPrice(plan); pushHash(); }, 200); });
+      $('#' + id).addEventListener('input', function () { S.g = S.g || {}; S.g.n = $('#ag-name').value.trim(); S.g.p = $('#ag-phone').value.trim(); S.g.e = $('#ag-email').value.trim(); S.g.k = clamp(+$('#ag-mk').value || 0, 0, 60); if (!S.cv) { AGX.g = { n: S.g.n, p: S.g.p, e: S.g.e, k: S.g.k }; agSave(); } clearTimeout(rt); rt = setTimeout(function () { var plan = compute(); LAST = plan; renderPrice(plan); pushHash(); }, 200); });
     });
     $('#m-play').addEventListener('click', play);
     $('#m-real').addEventListener('click', function () { leafToggle(!leafOn); });
@@ -848,10 +849,41 @@
     /* mode */
     $$('.tp-mode button').forEach(function (b) { b.addEventListener('click', function () { setMode(b.dataset.mode); }); });
   }
+  /* ---------------- agent extras (v1.4) — kept in this browser only, never in links or uploads ---------------- */
+  var AGK = 'suzuTpAgency';
+  function agLoad() { try { return JSON.parse(localStorage.getItem(AGK) || '{}') || {}; } catch (e) { return {}; } }
+  var AGX = agLoad();
+  function agSave() { try { localStorage.setItem(AGK, JSON.stringify(AGX)); } catch (e) { if (AGX.logo) toast('Logo too big to remember — it works until you close this tab'); } }
+  function agLogoUi() { var im = $('#ag-logo-img'); if (!im) return; if (AGX.logo) { im.src = AGX.logo; im.hidden = false; } else { im.removeAttribute('src'); im.hidden = true; } $('#ag-logo-x').hidden = !AGX.logo; $('#ag-logo-b').textContent = AGX.logo ? 'Change logo' : 'Add logo'; }
+  function agLogoFile(f) {
+    if (!f || !/^image\/(png|jpeg|webp)$/.test(f.type)) { toast('Please choose a PNG, JPG or WebP image'); return; }
+    if (f.size > 5e6) { toast('Logo file is over 5 MB — please choose a smaller one'); return; }
+    var rd = new FileReader();
+    rd.onload = function () {
+      var img = new Image();
+      img.onload = function () {
+        var sc = Math.min(1, 400 / img.width, 160 / img.height), cw = Math.max(1, Math.round(img.width * sc)), ch = Math.max(1, Math.round(img.height * sc));
+        var cv = D.createElement('canvas'); cv.width = cw; cv.height = ch; cv.getContext('2d').drawImage(img, 0, 0, cw, ch);
+        var u = cv.toDataURL('image/png'); if (u.length > 150000) u = cv.toDataURL('image/jpeg', 0.85);
+        AGX.logo = u; agSave(); agLogoUi(); toast('Logo added — it shows on your PDF');
+      };
+      img.onerror = function () { toast('Could not read this image'); };
+      img.src = rd.result;
+    };
+    rd.readAsDataURL(f);
+  }
+  function wireAgent() {
+    if (!$('#ag-logo')) return;
+    $('#ag-logo').addEventListener('change', function () { agLogoFile(this.files && this.files[0]); this.value = ''; });
+    $('#ag-logo-x').addEventListener('click', function () { delete AGX.logo; agSave(); agLogoUi(); toast('Logo removed'); });
+    $('#ag-gst').addEventListener('input', function () { AGX.gst = this.value.toUpperCase().replace(/[^0-9A-Z]/g, '').slice(0, 15); agSave(); });
+    agLogoUi();
+  }
+
   function setMode(m) {
     if (S.cv && m !== 'agent') return;
     MODE = m; $$('.tp-mode button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.mode === m); });
-    if (m === 'agent') { S.g = S.g || { n: '', p: '', e: '', k: R.b2b.default_markup_pct }; toast('Agent mode: add your agency & markup in the builder'); }
+    if (m === 'agent') { S.g = S.g || (AGX.g ? { n: AGX.g.n || '', p: AGX.g.p || '', e: AGX.g.e || '', k: clamp(+AGX.g.k || 0, 0, 60) } : { n: '', p: '', e: '', k: R.b2b.default_markup_pct }); toast('Agent mode: add your agency & markup in the builder'); }
     else { S.g = null; S.cv = 0; }
     ev('trip_planner', { step: 'mode', mode: m });
     if (S.p.length) change(false); else renderTemplates();
@@ -938,7 +970,7 @@
     openModal(act);
   }
   function openModal(act) {
-    var m = $('#mod'), t = { price: [MODE === 'agent' ? 'Get B2B rates & availability' : 'Get today\'s best price', 'Our team checks your dates and sends the best price on WhatsApp — usually within 30 minutes (10 AM – 9 PM).'], pdf: ['Download your itinerary', 'Free PDF with day plan, map and estimate. We may WhatsApp you a better price.'], share: ['Get your share link', 'Your plan lives in the link — nothing is stored. We may WhatsApp you a better price.'], cablead: ['Book this cab', 'We confirm the car and final fare on WhatsApp.'], hotlead: ['Get hotel options', 'We send 2–3 hotel options with photos and today\'s rate.'] }[act] || ['Your details', ''];
+    var m = $('#mod'), t = { price: [MODE === 'agent' ? 'Get B2B rates & availability' : 'Get today\'s best price', 'Our team checks your dates and sends the best price on WhatsApp — usually within 30 minutes (10 AM – 9 PM).'], pdf: ['Download your itinerary', 'Free PDF with day plan, map and estimate. We may WhatsApp you a better price.'], share: ['Get your share link', 'Your plan lives in the link — nothing is stored. We may WhatsApp you a better price.'], cablead: ['Book this cab', 'We confirm the car and final fare on WhatsApp.'], hotlead: ['Get hotel options', 'We send 2–3 hotel options with photos and today\'s rate.'], ratecard: ['Get the Suzu B2B rate card', 'Net rates for travel agents — hotels, cabs and packages in Himachal and North India. Our team sends it on WhatsApp / email.'] }[act] || ['Your details', ''];
     $('#mod-t').textContent = t[0]; $('#mod-s').textContent = t[1];
     $('#lead-f').hidden = false; $('#mod-ok').hidden = true; $('#ld-er').hidden = true;
     $('#ld-ag-w').hidden = MODE !== 'agent'; if (MODE === 'agent' && S.g) $('#ld-ag').value = S.g.n || '';
@@ -996,7 +1028,7 @@
     if (BUD) L.push('Guest budget: ' + inr(BUD) + ' per adult');
     if (CMP) { var ca = CMP.sum; L.push('Also compared (Plan A): ' + ca.title + ' ' + ca.dn + ', ' + ca.hotel + ', ' + ca.meal + ', ' + ca.car + ' — est. ' + inr(ca.total) + ' (' + inr(ca.pp) + '/adult)'); }
     if (W.__tpLang === 'hi') L.push('Guest language: Hindi (हिंदी) — reply in Hindi');
-    if (MODE === 'agent' && S.g) L.push('AGENT: ' + (S.g.n || '') + ' · ' + (S.g.p || '') + ' · ' + (S.g.e || '') + ' · markup ' + S.g.k + '%');
+    if (MODE === 'agent' && S.g) L.push('AGENT: ' + (S.g.n || '') + ' · ' + (S.g.p || '') + ' · ' + (S.g.e || '') + ' · markup ' + S.g.k + '%' + (AGX.gst && !S.cv ? ' · GSTIN ' + AGX.gst : ''));
     L.push('Link: ' + shareUrl(false));
     return L.join('\n');
   }
@@ -1004,6 +1036,7 @@
     var ref = 'TP-' + String(Date.now()).slice(-6), src = srcTag(), plan = LAST, dest, msg, tdate = '';
     if (act === 'cablead' && CABQ) { dest = 'CAB ' + PL[CABQ.a].name + ' → ' + PL[CABQ.b].name + ' · ' + CABQ.v + ' · ' + CABQ.type + ' · est ' + inr(CABQ.fare); msg = 'Trip Planner cab fare request\n' + dest; }
     else if (act === 'hotlead' && HOTQ) { dest = 'HOTEL ' + PL[HOTQ.id].name + ' · ' + HOTQ.n + 'N · ' + HOTQ.rooms + ' room · ' + tier(HOTQ.tier).name + ' · est ' + inr(HOTQ.total); msg = 'Trip Planner hotel request\n' + dest + '\nCheck-in ' + HOTQ.date; tdate = HOTQ.date; }
+    else if (act === 'ratecard') { dest = 'B2B RATE CARD request' + (ld.ag ? ' · ' + ld.ag : ''); msg = 'Travel agent requests the Suzu B2B rate card (hotels, cabs, packages)' + (AGX.gst ? '\nGSTIN: ' + AGX.gst : '') + (plan ? '\nCurrently planning: ' + plan.title + ' · ' + plan.totalDays + 'D · ' + (S.a + S.c) + ' pax · B2B est ' + inr(plan.price.total) + '\nLink: ' + shareUrl(false) : ''); }
     else { dest = plan ? plan.title + ' · ' + plan.totalDays + 'D · ' + (S.a + S.c) + ' pax · est ' + inr(plan.price.total) : 'Trip'; msg = itinText(plan); tdate = S.d; }
     msg = 'Suzu Trip Planner v' + VER + ' · action: ' + act + (ld.email ? '\nEmail: ' + ld.email : '') + (ld.ag ? '\nAgency: ' + ld.ag : '') + '\n' + msg + '\nSource: ' + src + ' | Page: ' + location.pathname + ' | Ref: ' + ref;
     var tag = (MODE === 'agent' ? 'B2B AGENT 🧳 ' : '') + 'TRIP PLANNER 🗺️ ';
@@ -1064,7 +1097,7 @@
     var svg = $('#rm').cloneNode(true); svg.removeAttribute('id');
     $$('#rm-car,#rm-glow', svg).forEach(function (x) { x.remove(); });
     var rtp = svg.querySelector('.route'); if (rtp) { rtp.removeAttribute('style'); rtp.removeAttribute('id'); }
-    var who = ag ? '<b>' + esc(ag.n) + '</b><small>' + esc([ag.p, ag.e].filter(Boolean).join(' · ')) + '</small>' : '<b>Suzu Travels</b><small>DMC of India · +91 70874 88961 · info@suzutravels.com · HP Tourism Reg. No. DTO-MND-11-243/2022</small>';
+    var who = ag ? (AGX.logo && !S.cv ? '<img class="lg" src="' + AGX.logo + '" alt="">' : '') + '<b>' + esc(ag.n) + '</b><small>' + esc([ag.p, ag.e].filter(Boolean).join(' · ')) + '</small>' : '<b>Suzu Travels</b><small>DMC of India · +91 70874 88961 · info@suzutravels.com · HP Tourism Reg. No. DTO-MND-11-243/2022</small>';
     var price = cv || ag ? (plan.price.client || plan.price.total) : plan.price.total, pp = cv || ag ? (plan.price.clientPP || plan.price.pp) : plan.price.pp;
     var h = '<div class="dh"><div>' + who + '</div><div style="text-align:right"><small>Itinerary · ' + fmtLong(today) + '</small><small>Ref ' + (W.__tpLastLead ? W.__tpLastLead.ref : '—') + '</small></div></div>' +
       '<h2>' + esc(plan.title) + ' — ' + plan.totalDays + ' Days / ' + plan.nights + ' Nights</h2><p class="tag">Your personalised itinerary · आपकी अपनी यात्रा योजना' + (plan.route.some(function (id) { return HILL[PL[id].region]; }) ? ' · Hill roads, realistic drive times' : '') + '</p>' +
@@ -1126,7 +1159,7 @@
   }
   function boot() {
     if (EMBED) setupEmbed();
-    wireHero(); wireTemplates(); wireBuilder(); wireCab(); wireHotel(); wireModal();
+    wireHero(); wireTemplates(); wireBuilder(); wireCab(); wireHotel(); wireModal(); wireAgent();
     var fromLink = loadHash();
     if (!fromLink && (EMBED || Q.has('tpl') || Q.has('place') || Q.has('tab'))) { $('#q-date').value = S.d; applyParams(); }
     if (MODE === 'agent') setMode('agent');

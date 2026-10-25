@@ -144,6 +144,14 @@ html[lang=hi-IN] body{font-family:'Plus Jakarta Sans','Tiro Devanagari Hindi',sy
 .agentbox{background:linear-gradient(135deg,#fff8e8,#fff);border:1.5px solid var(--gl);border-radius:14px;padding:12px;display:grid;gap:8px}
 .agentbox[hidden]{display:none}
 .agentbox .t{font-weight:800;color:#7a5a12;font-size:13px}
+.agentbox .lb{display:block;font-size:12.5px;font-weight:700;color:var(--mut);margin-bottom:4px}
+.aglogo{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.aglogo img{max-height:44px;max-width:140px;object-fit:contain;background:#fff;border:1px solid var(--gl);border-radius:8px;padding:3px}
+.aglogo .chip{cursor:pointer;min-height:44px}
+.aglogo input.vh{width:1px!important;height:1px!important;min-height:0!important;padding:0!important;border:0!important}
+.aglogo:focus-within label.chip{outline:3px solid var(--g,#1f7a45);outline-offset:2px}
+.agentbox .agnote{margin:0;font-size:12px;color:#7a5a12;line-height:1.45}
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
 /* ---------- map + timeline ---------- */
 .mapcard{position:relative;overflow:hidden}
@@ -286,6 +294,7 @@ details.fq p{margin:0 0 14px;color:#2c4637}
   .doc{display:block!important;color:#10261a}
   .doc .dh{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #1f7a45;padding-bottom:8px;margin-bottom:10px}
   .doc .dh b{font-size:18pt;color:#123d26}
+  .doc .dh img.lg{display:block;max-height:56px;max-width:200px;object-fit:contain;margin-bottom:4px}
   .doc .dh small{display:block;color:#5b6b62}
   .doc h2{font-size:15pt;margin:10px 0 4px;color:#123d26}
   .doc h3{font-size:12pt;margin:12px 0 4px;color:#123d26;border-bottom:1px solid #d9e6dd;padding-bottom:3px}

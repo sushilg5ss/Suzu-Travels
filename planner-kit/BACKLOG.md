@@ -11,7 +11,9 @@
 
 000000. [x] done 2026-10-23 (folded into v1.2, live e12e1f0e via deploy-static `2026-10-23-planner`) **Deploy v1.1** (budget fit) — dist fc33facb30af8864, base live f9bcfcca (FULL sha in --base), index.html only; 22 Oct queue blocked by sandbox permission check.
 
-0000000. [ ] **Deploy v1.3** (compare 2 plans) — dist a5037cbc2567a8a9, base live e12e1f0e (FULL sha), index.html only; 24 Oct queue blocked by sandbox permission check. Release: Project `claude/trip-planner/releases/2026-10-24/`.
+0000000. [x] done (live a5037cbc seen 2026-10-25) **Deploy v1.3** (compare 2 plans) — dist a5037cbc2567a8a9, base live e12e1f0e (FULL sha), index.html only; 24 Oct queue blocked by sandbox permission check. Release: Project `claude/trip-planner/releases/2026-10-24/`.
+
+00000000. [ ] **Deploy v1.4** (agent portal polish) — dist b9ebfed3bc2b7f9e, base live a5037cbc2567a8a90e13582ad4fd45682c65f1c1aa917be6d1b0f682e691bd4e, index.html only; 25 Oct queue blocked by sandbox permission check. Release: Project `claude/trip-planner/releases/2026-10-25/`.
 
 ## Phase 1 — go live at /plan-your-trip/ (week 1)
 1. [x] done 2026-10-15 (live SHA 873f29f3c6f26826; real test lead skipped — send one only if leads look missing) **Deploy v0.1** to `public_html/plan-your-trip/index.html` (new folder). Verify 200, test live (stubbed lead), then ONE real test lead named "TEST Claude Trip Planner (ignore)" and confirm it reached the lead inbox / info@ email. Add Rank Math-independent sitemap note in LOG (static page: ask GSC URL inspection is human-only → "Sushil ke liye").
@@ -33,6 +35,6 @@
 10. [ ] Hotel-name suggestions per class (no prices, "or similar"), photos from Suzu's own media only.
 11. [x] done 2026-10-24 (v1.3 Compare 2 plans, built; deploy blocked → Phase 0 item). 2026-10-23: car right-size in budget fit (v1.2, live). 2026-10-22: budget fit built (v1.1): ₹/adult → best hotel class + meals; open: car downgrade suggestion, Compare 2 plans. "Compare 2 plans" and "Budget slider → auto-pick tier/car".
 12. [ ] HyperFrames: render a shareable 15-s "trip film" of a plan (route + day titles) server-side later; for now an in-page animated preview.
-13. [ ] Agent portal polish: agency logo upload (kept in the browser only, never uploaded), GST invoice note, B2B rate card request button.
+13. [x] done 2026-10-25 (v1.4 built; deploy blocked → Phase 0 item) Agent portal polish: agency logo upload (kept in the browser only, never uploaded), GST invoice note, B2B rate card request button.
 14. [ ] Suzu Assistant hand-off: when a chat mentions a route, offer "Open in Trip Planner" (coordinate via hand-off board — the assistant file is not ours).
 15. [x] done 2026-10-15 (v0.3 build; live after deploy) Structured data: FAQPage for the FAQ block; WebApplication already present.

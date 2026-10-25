@@ -134,6 +134,10 @@
         <div class="fld"><label for="ag-name">Agency name</label><input id="ag-name" maxlength="60" placeholder="e.g. Shubh Yatra Holidays"></div>
         <div class="grid2"><div class="fld"><label for="ag-phone">Agency phone</label><input id="ag-phone" type="tel" maxlength="16"></div><div class="fld"><label for="ag-mk">Your markup %</label><input id="ag-mk" type="number" min="0" max="60" step="1" value="15"></div></div>
         <div class="fld"><label for="ag-email">Agency email</label><input id="ag-email" type="email" maxlength="80"></div>
+        <div class="fld"><label for="ag-gst">Agency GSTIN (optional)</label><input id="ag-gst" maxlength="15" autocomplete="off" placeholder="e.g. 02ABCDE1234F1Z5"></div>
+        <div class="fld"><span class="lb" id="ag-logo-l">Agency logo for your PDF (optional)</span>
+          <div class="aglogo"><img id="ag-logo-img" alt="Your agency logo" hidden><label class="chip" for="ag-logo" id="ag-logo-b">Add logo</label><input id="ag-logo" type="file" accept="image/png,image/jpeg,image/webp" class="vh" aria-labelledby="ag-logo-l"><button type="button" class="chip" id="ag-logo-x" hidden>Remove logo</button></div></div>
+        <p class="agnote">Your agency details and logo stay in this browser only — never uploaded. Suzu's B2B estimate already includes 5% GST; add your GSTIN and our team uses it for your agency's invoice.</p>
       </div>
     </div>
   </aside>

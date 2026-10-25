@@ -87,7 +87,7 @@ const { chromium, devices } = require('playwright');
     await page.click('#price [data-act="share"]'); await page.waitForTimeout(400);
     const link = await page.inputValue('#sh-url'); r.linkLen = link.length;
     await page.screenshot({ path: `${out}/${name}-5-share.png` });
-    const p2 = await ctx.newPage(); await p2.goto(link, { waitUntil: 'load' }); await p2.waitForTimeout(1200);
+    const p2 = await ctx.newPage(); await p2.route('**/admin-ajax.php', r => r.fulfill({ status: 200, body: '{}' })); await p2.addInitScript(() => { navigator.sendBeacon = () => true; window.print = () => { window.__printed = (window.__printed || 0) + 1; }; }); await p2.goto(link, { waitUntil: 'load' }); await p2.waitForTimeout(1200);
     r.roundTrip = await p2.textContent('#m-title');
     // v:1 link (old format) — winter Manali (Rohtang left out) + Kedarnath with 1 night (2-night warning)
     const v1 = (o) => Buffer.from(JSON.stringify(o)).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -107,6 +107,27 @@ const { chromium, devices } = require('playwright');
     await p2.click('.tp-mode [data-mode="agent"]'); await p2.waitForTimeout(300);
     await p2.fill('#ag-name', 'Shubh Yatra Holidays'); await p2.fill('#ag-phone', '9812345678'); await p2.fill('#ag-mk', '20'); await p2.waitForTimeout(500);
     r.agentBox = await p2.textContent('#price .agent');
+    // v1.4: agent portal polish — GSTIN, logo (browser only), B2B rate card request
+    {
+      const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAIAAAA8r+mnAAAAFklEQVR4nGP4z8Dwn4GBgYGB4T8DAwAvzAT8S0wLYAAAAABJRU5ErkJggg==', 'base64');
+      await p2.fill('#ag-gst', '02abcde1234f1z5');
+      await p2.setInputFiles('#ag-logo', { name: 'logo.png', mimeType: 'image/png', buffer: png }); await p2.waitForTimeout(600);
+      const ag = { logoShown: await p2.isVisible('#ag-logo-img'), stored: await p2.evaluate(() => { try { const o = JSON.parse(localStorage.getItem('suzuTpAgency')); return !!(o && o.logo && o.gst === '02ABCDE1234F1Z5' && o.g && o.g.n === 'Shubh Yatra Holidays'); } catch (e) { return false; } }) };
+      ag.rateBtn = await p2.isVisible('#price [data-act="ratecard"]');
+      await p2.click('#price [data-act="ratecard"]'); await p2.waitForTimeout(200);
+      ag.modTitle = await p2.textContent('#mod-t');
+      await p2.fill('#ld-name', 'TEST Claude'); await p2.fill('#ld-ph', '9876543210'); await p2.click('#ld-go'); await p2.waitForTimeout(400);
+      const l = await p2.evaluate(() => window.__tpLastLead);
+      ag.rateLead = /B2B AGENT .*B2B RATE CARD/.test(l.destination) && /GSTIN: 02ABCDE1234F1Z5/.test(l.message);
+      await p2.click('#mod .x');
+      await p2.click('#price [data-act="pdf"]'); await p2.waitForTimeout(2600);
+      ag.pdfLogo = await p2.evaluate(() => !!document.querySelector('#doc .dh img.lg'));
+      const link = await p2.evaluate(() => SuzuTripPlanner && location.origin + location.pathname + location.hash);
+      ag.linkClean = !/GSTIN|data:image|02ABCDE/.test(Buffer.from((link.split('#t=')[1] || '').replace(/-/g, '+').replace(/_/g, '/'), 'base64').toString());
+      ag.overflow = await p2.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+      await p2.screenshot({ path: `${out}/${name}-8-agent.png`, fullPage: false });
+      r.agentPolish = ag;
+    }
     await page.click('#mod .x');
     // cab tab
     await page.click('#tab-cab'); await page.selectOption('#c-from', 'delhi'); await page.selectOption('#c-to', 'shimla'); await page.click('#c-go');
