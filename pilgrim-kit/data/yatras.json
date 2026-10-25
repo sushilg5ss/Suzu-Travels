@@ -1660,7 +1660,7 @@
       "open": "Year-round",
       "close": "Year-round",
       "dates_2026": {
-        "ram_mandir": "Pran Pratishtha 2024-01-22; trust timings effective 2026-04-18: free darshan slots 7 AM-9 PM (break 12-1 PM); Mangala aarti 4 AM, Shringar 6 AM, Shayan 10 PM; free passes at online.srjbtkshetra.org",
+        "ram_mandir": "Pran Pratishtha 2024-01-22; Ram Darbar pran pratishtha 2025-06-05; construction complete per trust 2025-10-27; dhwajarohan 2025-11-25; trust timings effective 2026-04-18 (re-checked 2026-10-25): free darshan slots 7 AM-9 PM (break 12-1 PM); Mangala aarti 4 AM, Shringar 6 AM, Shayan 10 PM; free passes at online.srjbtkshetra.org; Ram Darbar separate pass abolished 2026-08-05 (go up after Ram Lalla darshan)",
         "kashi_vishwanath": "opens 2:30 AM; Mangala aarti 3-4 AM; darshan 4-11 AM and 12-7 PM; Bhog aarti 11:30-12; Saptarishi aarti 7-8:30 PM; Shringar/Bhog aarti ~9 PM; Shayan aarti 10:30 PM; closes 11 PM"
       },
       "dates_2027": {
@@ -1673,10 +1673,11 @@
           "mahashivratri": "2027-03-06",
           "status": "panchang-based; official Magh Mela 2027 schedule not yet published by UP govt - festival dates match those announced for Haridwar Ardh Kumbh 2027"
         },
-        "next_prayagraj_kumbh": "Ardh Kumbh 2031 (UP govt preparations reported; no official dates)"
+        "next_prayagraj_kumbh": "Ardh Kumbh 2031 (UP govt preparations reported; no official dates)",
+        "ram_navami_2027": "2027-04-15 (publicholidays.in; Chaitra Navratri from 2027-04-07)"
       },
-      "source": "srjbtkshetra.org (accessed 2026-10-08); shrikashivishwanath.org rituals page; HappyFares (Oct 2026) & The Week/PTI 2026-04-15 for 2027 festival dates; Dynamite News 2025-01-22 for Ardh Kumbh 2031",
-      "as_of": "2026-10-08"
+      "source": "srjbtkshetra.org (accessed 2026-10-08); shrikashivishwanath.org rituals page; HappyFares (Oct 2026) & The Week/PTI 2026-04-15 for 2027 festival dates; Dynamite News 2025-01-22 for Ardh Kumbh 2031; srjbtkshetra.org re-read 2026-10-25; Telangana Today/IANS 2026-08-05 (Ram Darbar pass); ETV Bharat 2025-10-27; Wikipedia Ram Mandir",
+      "as_of": "2026-10-25"
     },
     "registration": {
       "required": false,
