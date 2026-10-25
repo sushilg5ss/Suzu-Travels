@@ -185,6 +185,7 @@ VARIANTS = {
   "chandigarh-taxi-service": dict(routes=[("Chandigarh taxis",None)], kicker="AIRPORT · TRICITY · HILLS"),
   "delhi-to-mussoorie-taxi": dict(routes=[("Delhi","Mussoorie")], kicker="KEMPTY FALLS · LANDOUR"),
   "delhi-to-nainital-taxi": dict(routes=[("Delhi","Nainital")], kicker="NAINI LAKE · KAINCHI DHAM"),
+  "delhi-to-haldwani-taxi": dict(routes=[("Delhi","Haldwani")], kicker="KATHGODAM · GATEWAY TO KUMAON"),
   "shimla-to-manali-taxi": dict(routes=[("Shimla","Manali")], kicker="MANDI · KULLU VALLEY · BEAS"),
   "dehradun-to-mussoorie-taxi": dict(routes=[("Dehradun","Mussoorie")], kicker="QUEEN OF HILLS · 35 KM CLIMB"),
   "tempo-traveller-chandigarh": dict(routes=[("Chandigarh","Manali")], kicker="12–17 SEATS · TRICITY PICKUP"),

@@ -135,7 +135,7 @@ PLACES = {
     "Moradabad": (28.84, 78.77), "Rampur": (28.81, 79.03), "Rudrapur": (28.98, 79.40), "Haldwani": (29.22, 79.51),
     "Kathgodam": (29.27, 79.54), "Bhimtal": (29.35, 79.56), "Bhowali": (29.38, 79.51), "Ramnagar": (29.39, 79.13),
     "Almora": (29.60, 79.66), "Mukteshwar": (29.47, 79.65),
-    "Pantnagar": (29.03, 79.47), "Ranikhet": (29.64, 79.43), "Kausani": (29.84, 79.60), "Kainchi Dham": (29.42, 79.52),
+    "Pantnagar": (29.03, 79.47), "Lalkuan": (29.07, 79.52), "Ranikhet": (29.64, 79.43), "Kausani": (29.84, 79.60), "Kainchi Dham": (29.42, 79.52),
     "Chandigarh Airport": (30.67, 76.79),
     "Patnitop": (33.09, 75.33), "Sanasar": (33.13, 75.26), "Kud": (33.08, 75.29), "Reasi": (33.08, 74.84), "Shiv Khori": (33.17, 74.62), "Jammu Airport": (32.69, 74.84),
     "Dasuya": (31.82, 75.65), "Mukerian": (31.95, 75.62), "Lakhanpur": (32.40, 75.60), "Kathua": (32.37, 75.52), "Samba": (32.56, 75.12),
@@ -175,6 +175,7 @@ ROUTES = [
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
+    dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
     dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
 ]
