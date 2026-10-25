@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/best-time-to-visit-kashmir/ (guide). Hero only, made by the Page Builder (day) per Visual Studio Step 2: 3 NEW Pexels photos (CREDITS 25 Oct 2026) + library px-30750204 (Gulmarg winter). Captions are seasons/places only, no fact claims. No route/cost video (guide).",
+ "hero": {
+  "kicker": "KASHMIR · MONTH BY MONTH",
+  "scenes": [
+   {"img": "px-25786714.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-33801567.jpg", "kind": "tilt", "from": {"y": 1500}, "to": {"y": 1000}},
+   {"img": "px-15961864.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-30750204.jpg", "kind": "land", "from": {"scale": 1.03, "x": 30, "y": 0}, "to": {"scale": 1.11, "x": -40, "y": 10}}
+  ],
+  "steps": ["KASHMIR BY SEASON", "SPRING GARDENS", "DAL LAKE, SRINAGAR", "WINTER SNOW"]
+ }
+}
