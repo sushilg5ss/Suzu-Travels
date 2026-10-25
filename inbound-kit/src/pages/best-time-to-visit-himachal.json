@@ -1,0 +1,174 @@
+{
+ "path": "/india-tours/best-time-to-visit-himachal/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Best Time to Visit Himachal: Manali, Shimla and Spiti Month by Month",
+ "seo_title": "Best Time to Visit Manali, Shimla & Spiti (Himachal Guide)",
+ "seo_desc": "When to visit Himachal: Shimla weather and snow by month, Manali's Rohtang and Atal Tunnel seasons, Spiti's road window, monsoon advice and permits.",
+ "focus": "best time to visit manali",
+ "label": "Best time to visit Himachal",
+ "blurb": "Manali, Shimla, Dharamshala and Spiti by month — snow, green season, monsoon and open roads",
+ "kicker": "Guide · Himachal seasons",
+ "tag": "Snow, spring, monsoon green and clear autumn skies — month by month, from our home region.",
+ "sub": "Himachal Pradesh is where Suzu Travels is based. Here is each month with official Shimla climate numbers, when the high roads to Rohtang, Lahaul and Spiti are open, what the monsoon means for a trip, and the permit rule foreign visitors need for Kinnaur and Spiti.",
+ "hero_alt": "The green Manali valley below snow peaks, Shimla's hillside houses at sunrise, the snow-covered Dhauladhar range above Dharamshala at sunset and Shimla's roofs under snow in winter",
+ "cta1": "See the months",
+ "chips": [
+  ["Mar–Jun", "Shimla's main season, 15–25 °C (59–77 °F)"],
+  ["Oct–Nov", "the driest months — clear mountain views"],
+  ["Jan–Feb", "about 40 cm (16 in) of snow a month in Shimla"],
+  ["Checked", "26 Oct 2026"]
+ ],
+ "q": "When is the best time to visit Manali, Shimla and Himachal?",
+ "answer": "The <b>best time to visit Manali</b> and Shimla is <b>March–June</b> for mild days (Shimla district: 15–25 °C / 59–77 °F) and <b>October–November</b> for the driest, clearest weather. Come <b>December–February</b> for snow. July–August is monsoon, with Shimla's heaviest rain. Spiti's full road loop opens only from about mid-June to October. Ask us for a quote.",
+ "facts": [
+  ["346 mm", "July rain in Shimla (13.6 in) — the wettest month"],
+  ["18 mm", "November, the driest (0.7 in)"],
+  ["Year-round", "Atal Tunnel road from Manali to Lahaul"],
+  ["Mid-Jun–Oct", "usual window for Kunzum Pass to Spiti"]
+ ],
+ "sections": [
+  {
+   "id": "months",
+   "nav": "Month by month",
+   "h2": "Himachal month by month: Shimla weather and the high roads",
+   "kind": "table",
+   "lead": "Average daytime highs and night lows, rain and snow for Shimla (about 2,200 m / 7,200 ft) from the India Meteorological Department's station climatology. Manali is higher and colder in winter; Spiti and Lahaul are colder and much drier.",
+   "head": ["Month", "Shimla day / night", "Rain / snow", "What it means for a trip"],
+   "rows": [
+    ["<b>January</b>", "10.3 / 2.5 °C (51 / 36 °F)", "53 mm (2.1 in); about 40 cm snow", "Snow season in the hill towns. Rohtang Pass closed; the Atal Tunnel keeps Manali–Lahaul open. Spiti only via Kinnaur, and very cold."],
+    ["<b>February</b>", "11.5 / 3.3 °C (53 / 38 °F)", "65 mm (2.6 in); about 40 cm snow", "Still deep winter, snow on about four days in the month. Drive in daylight only."],
+    ["<b>March</b>", "15.7 / 6.9 °C (60 / 44 °F)", "70 mm (2.8 in); late snow possible", "Thaw and spring. Shimla's main season begins (March–June)."],
+    ["<b>April</b>", "20.6 / 11.5 °C (69 / 53 °F)", "56 mm (2.2 in)", "Mild, fresh days in Shimla, Manali and Dharamshala."],
+    ["<b>May</b>", "23.8 / 14.5 °C (75 / 58 °F)", "79 mm (3.1 in)", "Warm days in the hills while the plains are hot. Rohtang Pass usually reopens by May (permit needed)."],
+    ["<b>June</b>", "24.3 / 15.9 °C (76 / 61 °F)", "194 mm (7.6 in)", "Kunzum Pass road to Spiti is usually restored around mid-June. Monsoon rain normally reaches Delhi around 27 June."],
+    ["<b>July</b>", "22.1 / 15.5 °C (72 / 60 °F)", "346 mm (13.6 in), ~23 rainy days", "Wettest month: landslide and road-closure risk. Green valleys, few views. Flexible plans only."],
+    ["<b>August</b>", "21.5 / 15.1 °C (71 / 59 °F)", "314 mm (12.3 in), ~22 rainy days", "Monsoon continues. Spiti (rain-shadow) is drier but reached over long mountain roads."],
+    ["<b>September</b>", "21.5 / 13.7 °C (71 / 57 °F)", "159 mm (6.3 in)", "Rain eases through the month; the monsoon usually leaves Delhi around 25 September."],
+    ["<b>October</b>", "20.0 / 10.9 °C (68 / 52 °F)", "34 mm (1.3 in), ~5 rainy days", "Clear, dry autumn — some of the best mountain views of the year. Kunzum Pass can close from October/November."],
+    ["<b>November</b>", "16.4 / 7.6 °C (62 / 46 °F)", "18 mm (0.7 in)", "Driest month, cold nights. Rohtang Pass closes from late November."],
+    ["<b>December</b>", "13.1 / 4.8 °C (56 / 41 °F)", "27 mm (1.1 in); about 7 cm snow", "Winter starts; nights around freezing. Book early for Christmas and New Year."]
+   ],
+   "note": "Averages, not forecasts: snow and rain vary a lot from year to year, and passes can close for a few days after fresh snow. We check road and weather conditions for your dates before you pay."
+  },
+  {
+   "id": "places",
+   "nav": "By place",
+   "h2": "The best time for each part of Himachal",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "Himachal's regions sit at very different heights, so the right month depends on where you want to go.",
+   "items": [
+    ["Shimla", "March–June is the district's main season (15–25 °C / 59–77 °F), and October–November is dry and clear. December–February brings snow, with nights around 0 °C (32 °F). Shimla is 370 km (230 mi) from Delhi; the Kalka–Shimla toy train (96 km / 60 mi) is a UNESCO World Heritage railway."],
+    ["Manali", "Mild from April to June and again in late September to November. Rohtang Pass (51 km / 32 mi away) is usually open from May until late November and needs a permit; Solang, 13 km (8 mi) away, is the nearest snow in winter. Read <a href=\"/manali-in-january/\">Manali in January</a> for a winter trip."],
+    ["Dharamshala and McLeod Ganj", "McLeod Ganj sits at 2,082 m (6,831 ft) under the Dhauladhar range. Spring and autumn are the easy seasons; snowfall is common in winter. Kangra airport is 14 km (9 mi) away. See our <a href=\"/mcleod-ganj/\">McLeod Ganj guide</a>."],
+    ["Spiti and Lahaul", "The high desert behind the main range. Kunzum Pass, the road between Spiti and Manali, is closed for more than nine months a year — usually from October/November to June/July. The road from Shimla through Kinnaur stays open almost all year up to Kaza, but it is a long, slow drive (412 km / 256 mi, about 20 hours with a night halt)."]
+   ]
+  },
+  {
+   "id": "roads",
+   "nav": "Passes & roads",
+   "h2": "Which high roads are open when",
+   "kind": "table",
+   "lead": "Snow decides the season more than temperature. These are the official, usual patterns — exact opening dates change every year.",
+   "head": ["Road", "Usually open", "Notes"],
+   "rows": [
+    ["<b>Atal Tunnel</b> (Manali → Lahaul)", "All year", "9.02 km (5.6 mi) long at about 3,000 m (9,800 ft); keeps Manali connected to Lahaul in winter. Short closures after heavy snow happen."],
+    ["<b>Rohtang Pass</b> (from Manali)", "May to late November", "Closed by heavy snow from late November; a vehicle permit is needed."],
+    ["<b>Kunzum Pass</b> (Lahaul ↔ Spiti)", "About mid-June to October/November", "Closed more than nine months a year; the road is usually restored in mid-June."],
+    ["<b>Shimla → Kinnaur → Kaza</b>", "Almost all year", "412 km (256 mi), about 20 hours of driving with a night halt; slow in winter."]
+   ],
+   "note": "Sources: Lahaul & Spiti district administration, Himachal Tourism, PMO India (Atal Tunnel), The Tribune (Kunzum). We drive mountain roads in daylight only."
+  },
+  {
+   "id": "monsoon",
+   "nav": "Monsoon",
+   "h2": "The monsoon: what July and August really mean",
+   "kind": "callout",
+   "style": "dark",
+   "text": "The UK FCDO says: 'The monsoon season in India usually runs from June to October', with flash flooding and landslides that 'can often occur with limited warning', and advises: 'Avoid travelling at night and in fog as accidents are common due to low visibility' (checked 21 Oct 2026). In Shimla, July averages 346 mm (13.6 in) of rain over about 23 days. In July 2025, for example, the Shimla weather centre issued heavy-rain alerts and tourists were advised to stay away from rivers and streams and follow local authorities. If your only window is July or August, we plan short drives, buffer days and stays away from riverbanks — or suggest another season.",
+   "note": "We don't promise any month is safe or unsafe. We share the official advice with dates and plan around it with you."
+  },
+  {
+   "id": "pick",
+   "nav": "Which month for you",
+   "h2": "Which month suits which trip",
+   "kind": "steps",
+   "lead": "Four common reasons international travellers come to Himachal, and the months that fit each.",
+   "items": [
+    ["Snow and a white Christmas", "Mid-December to February. Shimla averages about 40 cm (16 in) of snow in each of January and February, but no year is guaranteed. Pair it with our <a href=\"/india-tours/india-in-december/\">India in December</a> guide."],
+    ["Mild weather and green valleys", "April to June. Combine Shimla, Manali and Dharamshala with the Golden Triangle — see our <a href=\"/india-tours/india-2-week-itinerary/\">India 2-week itinerary</a>."],
+    ["Clear views and quiet roads", "October and November, the driest months. Days are mild; nights get cold."],
+    ["Spiti Valley", "Mid-June to September for the full loop (in through Kinnaur, out over Kunzum Pass to Manali). Outside that window Spiti is reached only through Kinnaur."]
+   ]
+  },
+  {
+   "id": "permits",
+   "nav": "Permits",
+   "h2": "Permits for foreign visitors: Kinnaur and Spiti",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Protected areas", "Parts of upper Kinnaur and Spiti near the border are protected areas. The Kinnaur district guidelines say: 'No foreigner can enter or stay in the protected area of the State without obtaining a permit.' They cover around 40 villages of the Pooh block (for example Nako) and Spiti villages such as Tabo and Dhankar."],
+    ["Who can apply", "The official rule allows foreign tourists in groups of two or more, sponsored by a recognised Indian travel agency, to visit the listed places for up to 30 days. Kaza itself can be visited without the permit."],
+    ["How we handle it", "We arrange the Protected Area Permit with you through the official process before the trip. Rules can change, so we confirm them when we quote."],
+    ["Altitude", "Spiti and Lahaul are high. Consult your doctor before you travel, and see CDC or NHS Fit for Travel for altitude advice."]
+   ]
+  },
+  {
+   "id": "basics",
+   "nav": "Before you go",
+   "h2": "Practical basics",
+   "kind": "cards",
+   "items": [
+    ["Visa", "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through it."],
+    ["Your car and driver", "Hill roads are slow, so a private car with an experienced mountain driver makes the most sense — see our <a href=\"/india-tours/private-driver-india/\">private car with driver</a>. Your driver's name, photo and car number are shared with you before the trip."],
+    ["What to pack", "Layers all year. From December to February a warm jacket is a must — Shimla nights fall to around 0 °C (32 °F). A rain jacket from June to September."],
+    ["Kashmir or Himachal?", "Comparing the two? Read <a href=\"/manali-vs-kashmir/\">Manali vs Kashmir</a> and our <a href=\"/india-tours/best-time-to-visit-kashmir/\">best time to visit Kashmir</a> guide."]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Himachal trips are quoted on request — the season, the towns, the number of days and the hotel level change the total. You get a day-by-day plan and a US-dollar total before you pay anything.",
+  "rows": [
+   ["Himachal trip (Shimla, Manali, Dharamshala)", "on request", "Private car and driver, hotels with breakfast, planned around the season you want"],
+   ["Spiti Valley road trip", "on request", "Private car and mountain driver, guesthouses or hotels, the Protected Area Permit arranged with you"]
+  ],
+  "note": "Prices are quoted per trip in US dollars and confirmed in writing before you pay. International flights excluded."
+ },
+ "faqs": [
+  ["What is the best month to visit Manali?", "April to June for mild weather, late September to November for dry, clear days, and December to February for snow. Rohtang Pass, Manali's best-known high road, is usually open from May until late November and needs a permit."],
+  ["What is the best time to visit Shimla?", "The Shimla district calls March to June the best season, with temperatures of about 15–25 °C (59–77 °F). October and November are the driest months. December to February is cold and snowy, with nights around 0 °C (32 °F)."],
+  ["When does it snow in Himachal?", "Mainly December to February. Shimla averages about 7 cm of snow in December and about 40 cm in each of January and February (IMD, 1990–2010), with late snow possible in March. Amounts vary every year and are never guaranteed."],
+  ["When is the best time to visit Spiti Valley?", "Mid-June to September, when Kunzum Pass is usually open and you can drive the full loop through Kinnaur and back over to Manali. Kunzum is closed for more than nine months a year; outside the window Spiti is reached only through Kinnaur."],
+  ["Is it a good idea to visit Himachal in the monsoon?", "July and August are Shimla's wettest months (346 mm and 314 mm on average). The UK FCDO warns that monsoon flash floods and landslides can occur with limited warning. If you travel then, keep plans flexible, add buffer days and stay away from rivers."],
+  ["Do foreigners need a permit for Spiti?", "For parts of it. Foreign nationals need a Protected Area Permit for listed villages in upper Kinnaur (such as Nako) and Spiti (such as Tabo and Dhankar); Kaza itself does not need one. We arrange the permit with you through the official process."],
+  ["Is the Atal Tunnel open in winter?", "Yes — the 9.02 km Atal Tunnel keeps Manali connected to Lahaul throughout the year, though short closures after heavy snow can happen. The older road over Rohtang Pass is closed from late November until about May."],
+  ["How do I book a Himachal trip with Suzu Travels?", "Send your dates, how many of you and what you want to see. We reply with a day-by-day plan and a US-dollar quote; a 20% deposit locks your dates and price, fully refundable within 48 hours of paying."]
+ ],
+ "sources": [
+  ["India Meteorological Department — Shimla climatology", "https://mausamaudit.imd.gov.in/shimla/mcdata/cli_shimla.pdf"],
+  ["District Shimla (Govt of Himachal Pradesh) — General information", "https://hpshimla.nic.in/general-information/"],
+  ["District Lahaul & Spiti — How to reach", "https://hplahaulspiti.nic.in/how-to-reach/"],
+  ["District Kinnaur — Tourist guidelines (permits for foreigners)", "https://hpkinnaur.nic.in/?p=25980"],
+  ["Himachal Tourism — Manali", "https://himachaltourism.gov.in/destination/manali/"],
+  ["PMO India — Atal Tunnel", "https://pmindia.gov.in/?p=8160111"],
+  ["The Tribune — Spiti road reopening (22 Mar 2021)", "https://www.tribuneindia.com/news/himachal/strategic-spiti-road-to-reopen-2-months-earlier-228678"],
+  ["UK FCDO — India safety and security", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"],
+  ["All India Radio News — Himachal monsoon alerts (5 Jul 2025)", "https://www.newsonair.gov.in/monsoon-in-himachal-pradesh-69-dead-246-roads-blocked-alerts-issued-till-july-9"],
+  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"]
+ ],
+ "verified": "26 Oct 2026",
+ "cta": {
+  "h2": "Planning Himachal? Tell us your month",
+  "text": "Send your travel month, how many of you and what you'd love to see — snow, green valleys or Spiti. We reply from our office in Himachal with an honest plan for that season and a US-dollar quote.",
+  "wa": "Hello Suzu Travels, I'm planning a trip to Himachal (Manali / Shimla / Spiti). Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "india-2-week-itinerary",
+  "india-in-december",
+  "best-time-to-visit-india",
+  "best-time-to-visit-kashmir"
+ ]
+}
