@@ -256,5 +256,14 @@
   "added": "2026-10-24",
   "peak_id": "chau-chau-kang-nilda",
   "commercial": true
+ },
+ "unclimbed-peaks": {
+  "id": 15844,
+  "path": "/mountains-of-india/unclimbed-peaks/",
+  "kind": "guide",
+  "label": "Unclimbed peaks of India",
+  "blurb": "8 virgin summits · closed and sacred peaks",
+  "added": "2026-10-25",
+  "commercial": false
  }
 }

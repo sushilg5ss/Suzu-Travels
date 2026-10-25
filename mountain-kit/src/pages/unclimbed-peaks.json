@@ -1,0 +1,201 @@
+{
+ "kind": "guide",
+ "path": "/mountains-of-india/unclimbed-peaks/",
+ "title": "Unclimbed Peaks in India: Virgin, Sacred and Closed Summits",
+ "seo_title": "Unclimbed Peaks in India: Virgin & Closed Summits List",
+ "seo_desc": "India's unclimbed mountains in one sourced list: 8 virgin summits from Zemu Gap Peak (7,780 m) down, plus closed and sacred peaks and why.",
+ "focus": "unclimbed mountains in india",
+ "commercial": false,
+ "label": "Unclimbed peaks of India",
+ "blurb": "8 virgin summits · closed and sacred peaks",
+ "verified": "25 Oct 2026",
+ "kicker": "Unclimbed · closed · sacred · 2026",
+ "tag": "The summits nobody has stood on.",
+ "sub": "India's unclimbed mountains from our dataset of notable peaks: where they are, why they stay untouched, which peaks are closed or sacred instead, and which ones were climbed for the first time only recently.",
+ "chips": [
+  [
+   "8",
+   "unclimbed peaks in our dataset"
+  ],
+  [
+   "7,780 m",
+   "Zemu Gap Peak, Sikkim"
+  ],
+  [
+   "2",
+   "closed peaks"
+  ],
+  [
+   "25",
+   "restricted peaks"
+  ],
+  [
+   "2025",
+   "Kangto's first recorded ascent"
+  ]
+ ],
+ "hero_alt": "Glaciated ridges, a corniced crest and high snow slopes (generic stock footage, not named peaks) with four statements: 7,780 m unclimbed; sacred, left alone; some stay closed; climb in Himachal",
+ "ladder_alt": "Animated chart of six unclimbed Indian peaks at their true heights: Manimahesh Kailash 5,653 m, Chombu 6,362 m, Parvati Parbat 6,633 m, Chiumo 6,890 m, Shudu Tsenpa 7,024 m and Zemu Gap Peak 7,780 m, ending with Yunam 6,111 m as a climbed and open peak",
+ "q": "Which mountains in India are still unclimbed?",
+ "answer": "Our dataset of 157 notable Indian peaks has <b>8 with no documented summit</b>. The highest is <b>Zemu Gap Peak (7,780 m / 25,525 ft)</b> in Sikkim, one of the world's highest unclimbed named peaks. Most sit in sacred or border zones that are closed to climbers. Two more are <a href=\"/mountains-of-india/nanda-devi/\">closed</a> despite past ascents; see the <a href=\"/mountains-of-india/highest-peaks-in-india/\">full list</a>.",
+ "facts": [
+  [
+   "Unclimbed (our dataset)",
+   "8 notable peaks"
+  ],
+  [
+   "Highest unclimbed",
+   "Zemu Gap Peak, 7,780 m / 25,525 ft (Sikkim)"
+  ],
+  [
+   "Above 7,000 m",
+   "4: Zemu Gap Peak, Apsarasas Kangri II, Nyegyi Kansang, Shudu Tsenpa"
+  ],
+  [
+   "By state",
+   "Sikkim 3 · Arunachal 2 · Himachal 2 · Ladakh 1"
+  ],
+  [
+   "Closed / restricted",
+   "2 closed · 25 restricted"
+  ],
+  [
+   "Latest first ascent",
+   "Kangto, 7,090 m / 23,261 ft, 26 Nov 2025 (recorded)"
+  ]
+ ],
+ "intro": [
+  "India has far more unnamed and minor summits than anyone has counted, and many of them have never been climbed. This page covers the <b>notable</b> ones: the named peaks in our dataset with no documented ascent. That is why we always say \"8 in our dataset\" and never claim an official total.",
+  "In the <a href=\"/mountains-of-india/\">Indian Himalaya</a>, a peak usually stays unclimbed for one of four reasons: it is <b>sacred</b> (Sikkim's high peaks, Manimahesh Kailash), it sits in a <b>military zone</b> (Siachen), it lies on a <b>controlled border</b> (Chombu, the Arunachal peaks), or it is simply remote and hard. Only one of the eight, Parvati Parbat in Kullu, is open to foreign teams."
+ ],
+ "table": {
+  "where": {
+   "status": "unclimbed"
+  },
+  "h2": "India's unclimbed peaks: all 8 in our dataset",
+  "label": "The list",
+  "text": [
+   "The animation draws six of them at their true heights, from Manimahesh Kailash (5,653 m) to Zemu Gap Peak (7,780 m), and ends with Yunam (6,111 m), a peak you can actually climb.",
+   "Nyegyi Kansang (7,047 m) is listed as unclimbed with a note: a 1995 Indian Army team claimed it, but that claim is doubted. Parvati Parbat (6,633 m) has no documented summit; a 2004 attempt stopped in a whiteout."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "highest",
+   "label": "Highest",
+   "kicker": "India and the world",
+   "h2": "The highest unclimbed mountain in India, and in the world",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>India: Zemu Gap Peak, 7,780 m</h3><p>The highest unclimbed peak in our dataset is Zemu Gap Peak (7,780 m / 25,525 ft) in Sikkim. It is a low-prominence subsidiary summit of the <a href=\"/mountains-of-india/kangchenjunga/\">Kangchenjunga</a> massif, east of the south summit, rather than an independent mountain, and it has no known attempts. Wikipedia calls it one of the highest unclimbed named peaks of the world.</p></div><div class=\"szm-col\"><h3>World: Gangkhar Puensum, about 7,570 m</h3><p>The world's highest unclimbed mountain is usually given as Gangkhar Puensum (about 7,570 m) in Bhutan. Bhutan banned climbing on peaks above 6,000 m in 1994 and stopped all mountaineering in 2003, so it is likely to stay that way.</p></div><div class=\"szm-col\"><h3>The IMF's virgin peaks</h3><p>The Indian Mountaineering Foundation keeps its own list of unclimbed \"virgin peaks\", many of them above 7,000 m, and describes Peak 7160 in the Saltoro Muztagh as one of the highest unclimbed peaks of the world. Many of these are unnamed and do not appear in our dataset.</p></div></div>"
+  },
+  {
+   "id": "closed",
+   "label": "Closed & sacred",
+   "kicker": "Off limits",
+   "h2": "Closed, sacred and restricted peaks: why climbers can't go",
+   "html": "<p>Some famous Indian peaks were climbed long ago but are now off limits. Our dataset marks <b>2 as closed</b>: <a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi</a> (7,816 m), first climbed in 1936 and closed since 1983, and <a href=\"/mountains-of-india/stok-kangri/\">Stok Kangri</a> (6,153 m), closed since 2020, with a Ladakh administration ban in December 2023. Another <b>25 are restricted</b>: sacred, in a military zone or on a controlled border.</p><div class=\"szm-call\"><p><b>Kangchenjunga is not unclimbed.</b> It was first climbed in 1955 from Nepal. From the Indian side it is closed: Sikkim treats it as sacred and banned climbing in 2001.</p></div><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Height</th><th>State</th><th>First ascent</th><th>Why it is restricted</th></tr></thead><tbody><tr><td><b>Kangchenjunga</b></td><td class=\"n\">8,586 m / 28,169 ft</td><td>Sikkim</td><td class=\"n\">1955</td><td>Sacred; Sikkim ban since 2001</td></tr><tr><td><b>Saltoro Kangri</b></td><td class=\"n\">7,742 m / 25,400 ft</td><td>Ladakh</td><td class=\"n\">1962</td><td>Siachen military zone</td></tr><tr><td><b>Jongsong Peak</b></td><td class=\"n\">7,462 m / 24,482 ft</td><td>Sikkim</td><td class=\"n\">1930</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Teram Kangri I</b></td><td class=\"n\">7,462 m / 24,482 ft</td><td>Ladakh</td><td class=\"n\">1975</td><td>Siachen military zone</td></tr><tr><td><b>K12</b></td><td class=\"n\">7,428 m / 24,370 ft</td><td>Ladakh</td><td class=\"n\">1974</td><td>Siachen military zone</td></tr><tr><td><b>Kabru North</b></td><td class=\"n\">7,412 m / 24,318 ft</td><td>Sikkim</td><td class=\"n\">1994</td><td>Sikkim regards Kabru as sacred</td></tr><tr><td><b>Teram Kangri II</b></td><td class=\"n\">7,407 m / 24,301 ft</td><td>Ladakh</td><td class=\"n\">1975</td><td>Siachen military zone</td></tr><tr><td><b>Ghent Kangri</b></td><td class=\"n\">7,401 m / 24,281 ft</td><td>Ladakh</td><td class=\"n\">1961</td><td>Siachen military zone</td></tr><tr><td><b>Teram Kangri III</b></td><td class=\"n\">7,382 m / 24,219 ft</td><td>Ladakh</td><td class=\"n\">1979</td><td>Siachen military zone</td></tr><tr><td><b>Kirat Chuli</b></td><td class=\"n\">7,362 m / 24,154 ft</td><td>Sikkim</td><td class=\"n\">1939</td><td>Sacred in Nepal; Sikkim-side access restricted</td></tr><tr><td><b>Gimmigela Chuli</b></td><td class=\"n\">7,350 m / 24,114 ft</td><td>Sikkim</td><td class=\"n\">1994</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Talung</b></td><td class=\"n\">7,349 m / 24,111 ft</td><td>Sikkim</td><td class=\"n\">1964</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Apsarasas Kangri I</b></td><td class=\"n\">7,245 m / 23,770 ft</td><td>Ladakh</td><td class=\"n\">1976</td><td>Siachen military zone</td></tr><tr><td><b>Singhi Kangri</b></td><td class=\"n\">7,202 m / 23,629 ft</td><td>Ladakh</td><td class=\"n\">1976</td><td>Siachen military zone</td></tr><tr><td><b>Pauhunri</b></td><td class=\"n\">7,128 m / 23,386 ft</td><td>Sikkim</td><td class=\"n\">1911</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Pathibhara (Pyramid Peak)</b></td><td class=\"n\">7,123 m / 23,369 ft</td><td>Sikkim</td><td class=\"n\">1993</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Padmanabh</b></td><td class=\"n\">7,030 m / 23,064 ft</td><td>Ladakh</td><td class=\"n\">2002</td><td>Siachen area</td></tr><tr><td><b>Kangchenjau</b></td><td class=\"n\">6,889 m / 22,602 ft</td><td>Sikkim</td><td class=\"n\">1912</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Siniolchu</b></td><td class=\"n\">6,888 m / 22,598 ft</td><td>Sikkim</td><td class=\"n\">1936</td><td>Sikkim high-peak restrictions</td></tr><tr><td><b>Gurudongmar</b></td><td class=\"n\">6,715 m / 22,031 ft</td><td>Sikkim</td><td class=\"n\">1936</td><td>Border area; sacred lake below</td></tr><tr><td><b>Pandim</b></td><td class=\"n\">6,691 m / 21,952 ft</td><td>Sikkim</td><td class=\"n\">Not recorded</td><td>Sikkim high-peak restrictions (sacred)</td></tr><tr><td><b>Adi Kailash</b></td><td class=\"n\">5,945 m / 19,505 ft</td><td>Uttarakhand</td><td class=\"n\">2004</td><td>Sacred; Inner Line border zone</td></tr><tr><td><b>Om Parvat</b></td><td class=\"n\">5,590 m / 18,340 ft</td><td>Uttarakhand</td><td class=\"n\">Not recorded</td><td>Sacred; Inner Line border zone</td></tr><tr><td><b>Shrikhand Mahadev</b></td><td class=\"n\">5,227 m / 17,149 ft</td><td>Himachal Pradesh</td><td class=\"n\">Not recorded</td><td>Pilgrimage peak (Shrikhand yatra)</td></tr><tr><td><b>Amarnath Peak</b></td><td class=\"n\">5,186 m / 17,014 ft</td><td>Jammu &amp; Kashmir</td><td class=\"n\">Not recorded</td><td>Sacred; not traditionally climbed</td></tr></tbody></table></div><p class=\"szm-note\">Status and first-ascent years come from our peak dataset. Restrictions change; check with the IMF and the state before planning.</p>"
+  },
+  {
+   "id": "firsts",
+   "label": "First ascents",
+   "kicker": "Recently climbed",
+   "h2": "Peaks climbed for the first time only recently",
+   "html": "<p>Unclimbed lists change. The most recent big first ascent in India is <b>Kangto</b>, Arunachal Pradesh's highest peak, whose first recorded ascent came on 26 November 2025. We found no first ascents in India so far in 2026.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Height</th><th>State</th><th>First ascent</th></tr></thead><tbody><tr><td><b>Kangto</b></td><td class=\"n\">7,090 m / 23,261 ft</td><td>Arunachal Pradesh</td><td>26 Nov 2025: first recorded ascent, by an 18-member Indian Army team (Arunachal Governor’s press release, 8 Dec 2025)</td></tr><tr><td><b>Tsangyang Gyatso</b></td><td class=\"n\">6,383 m / 20,942 ft</td><td>Arunachal Pradesh</td><td>2024</td></tr><tr><td><b>Shahi Kangri</b></td><td class=\"n\">6,934 m / 22,749 ft</td><td>Ladakh</td><td>2022</td></tr><tr><td><b>Janhukut</b></td><td class=\"n\">6,805 m / 22,326 ft</td><td>Uttarakhand</td><td>2018</td></tr></tbody></table></div><p>For records and Indian climbing firsts, see our <a href=\"/mountains-of-india/mountaineering-in-india/\">guide to mountaineering in India</a>; for the other 7,000 m summits, the <a href=\"/mountains-of-india/7000m-peaks/\">7000m peaks list</a>.</p>"
+  },
+  {
+   "id": "climb",
+   "label": "Can you climb one?",
+   "kicker": "Permits",
+   "h2": "Can you climb an unclimbed peak in India?",
+   "html": "<ol class=\"szm-steps\"><li><b>IMF permission comes first.</b>Virgin peaks need Indian Mountaineering Foundation permission like any other peak. Foreign teams apply at least 90 days ahead and climb with a liaison officer; see our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and fees guide</a>.</li><li><b>Most are in restricted zones.</b>Peaks near the Siachen, Tibet and Arunachal borders also need defence and Home Ministry clearance, and are generally not available.</li><li><b>Sacred peaks stay sacred.</b>Sikkim's 2001 notification and the pilgrim mountains such as Manimahesh Kailash are not climbing objectives.</li><li><b>Parvati Parbat is the exception.</b>It is open to foreign teams, but it is a serious technical objective with no documented summit, not a first expedition.</li></ol><p>Want a Himalayan summit you can actually stand on? Climbed, open Himachal peaks such as <a href=\"/mountains-of-india/yunam-peak/\">Yunam Peak</a> (6,111 m), <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m) and <a href=\"/mountains-of-india/chau-chau-kang-nilda/\">Chau Chau Kang Nilda</a> (6,303 m) are where most climbers start.</p>"
+  }
+ ],
+ "quote_h2": "Want a summit you can actually climb?",
+ "quote_text": "Start in Himachal with Yunam, Deo Tibba or Chau Chau Kang Nilda. We pair you with a registered Himachal outfitter and certified guides, and add permits, hotels and transfers: one plan, one quote.",
+ "faq_h2": "Unclimbed mountains: your questions",
+ "faqs": [
+  [
+   "Which is the highest unclimbed mountain in India?",
+   "Zemu Gap Peak (7,780 m / 25,525 ft) in Sikkim is the highest unclimbed peak in our dataset. It is a subsidiary summit of the Kangchenjunga massif with no known attempts."
+  ],
+  [
+   "What is the highest unclimbed mountain in the world?",
+   "Gangkhar Puensum (about 7,570 m) in Bhutan. Bhutan has banned all mountaineering since 2003."
+  ],
+  [
+   "How many unclimbed peaks are there in India?",
+   "There is no official total. Our dataset of 157 notable peaks has 8 with no documented ascent, and the IMF keeps a longer list of virgin peaks, many of them unnamed."
+  ],
+  [
+   "Is Kangchenjunga unclimbed?",
+   "No. It was first climbed in 1955 from Nepal. It is closed from the Indian side, because Sikkim treats it as sacred and banned climbing in 2001."
+  ],
+  [
+   "Is Nanda Devi unclimbed?",
+   "No. Nanda Devi (7,816 m) was first climbed in 1936, but it has been closed to climbers since 1983."
+  ],
+  [
+   "Are there unclimbed peaks in Himachal Pradesh?",
+   "Yes, two in our dataset: Parvati Parbat (6,633 m) in Kullu has no documented summit, and Manimahesh Kailash (5,653 m) in Chamba is a sacred peak that has never been summited."
+  ],
+  [
+   "Can I climb an unclimbed peak in India?",
+   "Only with IMF permission, and many virgin peaks lie in restricted border or military zones that are generally closed. Parvati Parbat is the only one in our dataset open to foreign teams."
+  ],
+  [
+   "Which Indian peak was climbed for the first time most recently?",
+   "Kangto (7,090 m), Arunachal Pradesh's highest peak. Its first recorded ascent was on 26 November 2025, by an Indian Army team."
+  ]
+ ],
+ "links": [
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "Records, permits and training"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 157 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Deo Tibba"
+  ],
+  [
+   "/mountains-of-india/7000m-peaks/",
+   "7000m peaks in India",
+   "Every summit above 7,000 m"
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Zemu Gap Peak",
+   "https://en.wikipedia.org/wiki/Zemu_Gap_Peak"
+  ],
+  [
+   "Wikipedia — Gangkhar Puensum",
+   "https://en.wikipedia.org/wiki/Gangkhar_Puensum"
+  ],
+  [
+   "Indian Mountaineering Foundation — Apex newsletter vol. 10 (via UIAA): virgin peaks",
+   "https://www.theuiaa.org/documents/members/IMF_Apex_10.pdf"
+  ],
+  [
+   "Raj Bhavan Arunachal Pradesh — Governor congratulates the Mount Kangto expedition team (8 Dec 2025)",
+   "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf"
+  ],
+  [
+   "Wikipedia — Kangto",
+   "https://en.wikipedia.org/wiki/Kangto"
+  ],
+  [
+   "The Statesman — Ladakh administration bans expeditions to Stok Kangri",
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"
+  ],
+  [
+   "Explorersweb — first ascents",
+   "https://explorersweb.com/category/first-ascents/"
+  ]
+ ]
+}
