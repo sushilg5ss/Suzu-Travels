@@ -1,0 +1,154 @@
+{
+ "path": "/india-tours/best-time-to-visit-kashmir/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Best Time to Visit Kashmir: Month by Month, Seasons and Travel Advice",
+ "seo_title": "Best Time to Visit Kashmir: Month by Month + Travel Advice",
+ "seo_desc": "When to visit Kashmir: Srinagar temperatures and rain by month, tulip season, Chillai Kalan snow, Amarnath dates, and current UK and US travel advice.",
+ "focus": "best time to visit kashmir",
+ "label": "Best time to visit Kashmir",
+ "blurb": "Month by month: tulips, summer, autumn, snow — with the UK and US advice first",
+ "kicker": "Guide · Kashmir seasons",
+ "tag": "Four very different seasons — and the travel advice to read first.",
+ "sub": "Kashmir changes completely through the year: spring gardens, warm summers, dry autumn days and a hard, snowy winter. Here is each month with official climate numbers for Srinagar, the dates that shape a trip — starting with what the UK and US governments currently advise. Written by a travel company based in the Himalaya.",
+ "hero_alt": "Sunset over Dal Lake in Srinagar with a shikara in silhouette, the water channel of Nishat Bagh under mountains, shikaras moored on Dal Lake at night and snowfields above a forest at Gulmarg",
+ "cta1": "Read the advice first",
+ "chips": [
+  ["24.2 °C", "75.6 °F — July, Srinagar's warmest month"],
+  ["2.5 °C", "36.5 °F — January, the coldest"],
+  ["21 Dec–31 Jan", "Chillai Kalan, the hardest winter weeks"],
+  ["Checked", "25 Oct 2026"]
+ ],
+ "q": "When is the best time to visit Kashmir?",
+ "answer": "The <b>best time to visit Kashmir</b> depends on what you want: <b>March–April</b> for the Srinagar tulip garden, <b>May–June and September–October</b> for mild, drier days, and <b>mid-December to February</b> for snow. July is the warmest month (24.2 °C / 75.6 °F in Srinagar). <b>Read first:</b> the UK advises against all travel to Jammu and Kashmir and the US rates it Level 4. Ask us for a quote.",
+ "facts": [
+  ["Oct", "Srinagar's driest month — 23 mm (0.9 in)"],
+  ["Mar", "the wettest — 105 mm (4.1 in)"],
+  ["≈1.5 million", "tulip bulbs in the Srinagar garden"],
+  ["3 Jul–28 Aug", "Amarnath Yatra 2026 — busy roads"]
+ ],
+ "sections": [
+  {
+   "id": "advice",
+   "nav": "Travel advice",
+   "h2": "Before you choose a month: what governments advise about Kashmir",
+   "kind": "callout",
+   "text": "The UK FCDO advises against all travel to the Union Territory of Jammu and Kashmir, and names Pahalgam, Gulmarg, Sonamarg, the city of Srinagar and the Jammu–Srinagar national highway; the only exceptions are flying to and from Jammu city and travel within Jammu city (updated 7 Oct 2026, checked 25 Oct 2026). The US State Department rates Jammu and Kashmir 'Level 4: Do not travel', except visits to the eastern Ladakh region and Leh (checked 25 Oct 2026). The FCDO also warns: 'Your travel insurance could be invalidated if you travel against advice from the Foreign, Commonwealth & Development Office (FCDO).' Check your own government's latest advice and your insurer's terms before you book — if they rule Kashmir out, we will happily plan the same season in Himachal instead.",
+   "note": "We don't tell you the advice is wrong or out of date, and we don't promise any destination is safe. We share the official advice with dates, and we plan only what you decide is right for you."
+  },
+  {
+   "id": "months",
+   "nav": "Month by month",
+   "h2": "Kashmir month by month: Srinagar temperature and rain",
+   "kind": "table",
+   "lead": "Long-term monthly averages for Srinagar from the World Meteorological Organization normals published by the Japan Meteorological Agency. Days are warmer and nights colder than the average; Gulmarg and the mountain valleys are colder still.",
+   "head": ["Month", "Average temp.", "Rain / snow", "What it means for a trip"],
+   "rows": [
+    ["<b>January</b>", "2.5 °C (36.5 °F)", "61 mm (2.4 in)", "Coldest month; inside Chillai Kalan (21 Dec–31 Jan). Snow season in Gulmarg."],
+    ["<b>February</b>", "5.5 °C (41.9 °F)", "82 mm (3.2 in)", "Still deep winter; Gulmarg ski season continues."],
+    ["<b>March</b>", "10.0 °C (50.0 °F)", "105 mm (4.1 in)", "Wettest month; the tulip garden opened in March in 2026."],
+    ["<b>April</b>", "14.3 °C (57.7 °F)", "90 mm (3.5 in)", "Spring; tulip season, usually a few weeks — check opening dates. Gulmarg ski season usually ends mid-April."],
+    ["<b>May</b>", "18.0 °C (64.4 °F)", "62 mm (2.4 in)", "Mild days as spring turns to summer."],
+    ["<b>June</b>", "21.6 °C (70.9 °F)", "46 mm (1.8 in)", "Warm and drier."],
+    ["<b>July</b>", "24.2 °C (75.6 °F)", "59 mm (2.3 in)", "Warmest month; Amarnath Yatra (2026: 3 Jul–28 Aug) — busy roads around Sonamarg and Pahalgam."],
+    ["<b>August</b>", "23.7 °C (74.7 °F)", "68 mm (2.7 in)", "Warm; Yatra continues to Raksha Bandhan."],
+    ["<b>September</b>", "20.2 °C (68.4 °F)", "38 mm (1.5 in)", "Drier and mild."],
+    ["<b>October</b>", "14.4 °C (57.9 °F)", "23 mm (0.9 in)", "Driest month; cool, clear autumn."],
+    ["<b>November</b>", "8.3 °C (46.9 °F)", "28 mm (1.1 in)", "Cold nights; quiet before winter."],
+    ["<b>December</b>", "4.0 °C (39.2 °F)", "28 mm (1.1 in)", "Winter starts; Chillai Kalan from 21 Dec; ski season usually from mid-December."]
+   ],
+   "note": "Averages, not forecasts: snow and rain vary a lot from year to year. We check conditions for your dates before you pay."
+  },
+  {
+   "id": "seasons",
+   "nav": "Seasons",
+   "h2": "The four seasons, in short",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Spring (March–April)", "The Indira Gandhi Memorial Tulip Garden sits at the foot of the Zabarwan range above Dal Lake, with about 1.5–1.75 million bulbs of some 70–75 varieties; it opened for the 2026 season in March. March is also Srinagar's wettest month, so pack layers and a rain jacket."],
+    ["Summer (May–August)", "The warmest stretch: Srinagar averages 18–24 °C (64–76 °F). July and August overlap the Amarnath Yatra pilgrimage (2026: 3 July–28 August), when roads towards Sonamarg get busy — plan around it."],
+    ["Autumn (September–November)", "The driest months: October averages just 23 mm (0.9 in) of rain in Srinagar and 14.4 °C (57.9 °F). Nights turn cold by November."],
+    ["Winter (December–February)", "Chillai Kalan, the 40 hardest winter days, runs 21 December–31 January, followed by Chillai Khurd and Chillai Bachha to early March. Gulmarg's ski season usually runs mid-December to mid-April — see our <a href=\"/india-tours/gulmarg-ski-holiday/\">Gulmarg skiing guide</a>."]
+   ]
+  },
+  {
+   "id": "pick",
+   "nav": "Which month for you",
+   "h2": "Which month suits which trip",
+   "kind": "steps",
+   "lead": "Three common reasons people look at Kashmir, and the months that fit each.",
+   "items": [
+    ["Flowers and gardens", "Late March to April for the tulip garden. Confirm the garden's opening dates for your year before you fix flights."],
+    ["Mild weather and lakes", "May–June or September–October. September and October are drier; avoid July–August if you want quieter roads."],
+    ["Snow", "Mid-December to February, with Chillai Kalan (21 Dec–31 Jan) the coldest weeks. Skiers look at Gulmarg from mid-December to mid-April; read our <a href=\"/kashmir-in-december/\">Kashmir in December</a> notes too."]
+   ]
+  },
+  {
+   "id": "himachal",
+   "nav": "Himachal instead",
+   "h2": "If the advice rules Kashmir out: the same seasons in Himachal",
+   "kind": "cards",
+   "lead": "Himachal Pradesh is our home region, and it is not covered by the Kashmir advisories quoted above. It offers mountain scenery in every season, and the hill towns get snow from December to February.",
+   "items": [
+    ["Compare the two", "Read <a href=\"/manali-vs-kashmir/\">Manali vs Kashmir</a> for an honest side-by-side, or <a href=\"/manali-in-january/\">Manali in January</a> for winter snow."],
+    ["Month by month for all India", "Our <a href=\"/india-tours/best-time-to-visit-india/\">best time to visit India</a> guide covers every region, and <a href=\"/india-tours/india-in-december/\">India in December</a> compares snow and sun."],
+    ["Add the Golden Triangle", "Delhi, Agra and Jaipur pair well with the hills from October to March — see our <a href=\"/golden-triangle-tour/\">Golden Triangle tour</a>."]
+   ]
+  },
+  {
+   "id": "basics",
+   "nav": "Before you go",
+   "h2": "Practical basics",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Visa", "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through it."],
+    ["Cold and altitude", "Gulmarg sits at about 2,650 m (8,700 ft), and Srinagar's January average is just 2.5 °C (36.5 °F). Consult your doctor before you travel, and see CDC or NHS Fit for Travel."],
+    ["Your car and driver", "A private car with driver for the whole trip — see how our <a href=\"/india-tours/private-driver-india/\">private car with driver</a> works. Your driver's name, photo and car number are shared with you before the trip. In snow we drive in daylight only."],
+    ["First trip to India?", "Start with our <a href=\"/india-tours/first-time-india-travel-guide/\">first-time India travel guide</a> — then send us your dates."]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Kashmir hotel rates and availability change by season, so trips are quoted on request for your exact dates.",
+  "rows": [
+   ["Kashmir trip", "on request", "Airport pick-up and drop, private car and driver, hotel nights with breakfast — a day-by-day plan and US-dollar total before you pay"],
+   ["Himachal trip in the same season", "on request", "Private car and driver, hotels with breakfast in Shimla, Manali or Dharamshala, planned around the season you want"]
+  ],
+  "note": "Prices are quoted per trip in US dollars and confirmed in writing before you pay. International flights excluded."
+ },
+ "faqs": [
+  ["What is the best month to visit Kashmir?", "It depends on your goal: late March–April for the tulip garden, May–June or September–October for mild, drier days, and mid-December to February for snow. October is Srinagar's driest month (23 mm / 0.9 in) and July the warmest (24.2 °C / 75.6 °F)."],
+  ["When do the tulips bloom in Srinagar?", "The Indira Gandhi Memorial Tulip Garden opens each spring; in 2026 it opened in March. The display lasts a few weeks into April, so check the garden's opening dates for your year before you book flights."],
+  ["When does it snow in Kashmir?", "Winter runs roughly December to February. Chillai Kalan, the 40 hardest winter days, is 21 December to 31 January. Gulmarg's ski season usually runs from mid-December to mid-April (JKTDC). Snow amounts vary every year."],
+  ["What is Chillai Kalan?", "The local name for the 40 coldest days of the Kashmir winter, 21 December to 31 January. It is followed by Chillai Khurd (20 days) and Chillai Bachha (10 days), ending in early March."],
+  ["Is July or August a good time to visit Kashmir?", "They are the warmest months (about 24 °C / 75 °F average in Srinagar), but they overlap the Amarnath Yatra pilgrimage (2026: 3 July–28 August), when roads and stays near Sonamarg and Pahalgam are busy."],
+  ["Is it safe to visit Kashmir?", "We don't make safety promises. The UK FCDO advises against all travel to Jammu and Kashmir, naming Srinagar, Gulmarg, Pahalgam and Sonamarg (updated 7 Oct 2026), and the US State Department rates it Level 4: Do not travel (checked 25 Oct 2026). Read your own government's latest advice before deciding."],
+  ["Will my travel insurance cover Kashmir?", "Check with your insurer in writing. The UK FCDO says your travel insurance could be invalidated if you travel against its advice. We ask every guest to confirm cover before booking."],
+  ["How do I book a Kashmir trip with Suzu Travels?", "Send your dates, how many of you and what you want to see. We reply with a day-by-day plan and a US-dollar quote; a 20% deposit locks your dates and price, fully refundable within 48 hours of paying."]
+ ],
+ "sources": [
+  ["Japan Meteorological Agency (WMO normals) — Srinagar monthly climate", "https://ds.data.jma.go.jp/gmd/tcc/tcc/products/climate/normal/parts/NrmMonth_e.php?stn=42027"],
+  ["Kashmir Life — Chillai Kalan, the 40-day winter (20 Dec 2023)", "https://kashmirlife.net/chillai-kalan-kashmir-braces-for-40-day-winter-freeze-335833/"],
+  ["Drishti IAS — Srinagar tulip garden opens (19 Mar 2026)", "https://www.drishtiias.com/state-pcs-current-affairs/asias-largest-tulip-garden-opens-in-srinagar"],
+  ["All India Radio News — Amarnath Yatra 2026 dates", "https://www.newsonair.gov.in/annual-amarnath-yatra-to-commence-from-3rd-july"],
+  ["JKTDC — Skiing in Kashmir", "https://jktdc.co.in/info.aspx?id=82"],
+  ["UK FCDO — India travel advice (updated 7 Oct 2026)", "https://www.gov.uk/foreign-travel-advice/india"],
+  ["US State Department — India travel advisory", "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"],
+  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"]
+ ],
+ "verified": "25 Oct 2026",
+ "cta": {
+  "h2": "Planning Kashmir — or the same season somewhere else?",
+  "text": "Tell us your month, how many of you and where you're travelling from. We reply within two hours (9 am–9 pm IST) with an honest plan and a US-dollar quote — including a Himachal alternative if Kashmir doesn't work for you.",
+  "wa": "Hello Suzu Travels, I'm planning a trip to Kashmir. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "gulmarg-ski-holiday",
+  "best-time-to-visit-india",
+  "india-in-december",
+  "private-driver-india"
+ ]
+}

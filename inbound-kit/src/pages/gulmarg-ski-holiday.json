@@ -14,18 +14,42 @@
  "hero_alt": "Snowfields and forest below a white ridge at Gulmarg, the Gulmarg ski area from the air, a wooden house under snowy peaks and snow-laden conifers above a small hut",
  "cta1": "Read the advice first",
  "chips": [
-  ["Mid-Dec–mid-Apr", "usual ski season (JKTDC)"],
-  ["≈3,980 m", "13,000 ft — top of the gondola"],
-  ["52–56 km", "32–35 mi from Srinagar"],
-  ["Checked", "23 Oct 2026"]
+  [
+   "Mid-Dec–mid-Apr",
+   "usual ski season (JKTDC)"
+  ],
+  [
+   "≈3,980 m",
+   "13,000 ft — top of the gondola"
+  ],
+  [
+   "52–56 km",
+   "32–35 mi from Srinagar"
+  ],
+  [
+   "Checked",
+   "23 Oct 2026"
+  ]
  ],
  "q": "What do I need to know about skiing in Gulmarg?",
  "answer": "<b>Gulmarg skiing</b> runs from about <b>mid-December to mid-April</b>, 52–56 km (32–35 mi) from Srinagar in Kashmir. A two-stage gondola climbs to about 3,980 m (13,000 ft); there are beginner lifts, instructors and a government ski-hire shop. <b>Read first:</b> the UK FCDO advises against all travel to Jammu and Kashmir, including Gulmarg, and the US rates it Level 4. Ask us for a quote.",
  "facts": [
-  ["Mid-Dec", "to mid-April: the usual ski season"],
-  ["2 stages", "of gondola: Kongdoori, then Apharwat"],
-  ["≈3 km", "2 mi — the run down from the gondola top"],
-  ["1968", "Indian Institute of Skiing and Mountaineering founded"]
+  [
+   "Mid-Dec",
+   "to mid-April: the usual ski season"
+  ],
+  [
+   "2 stages",
+   "of gondola: Kongdoori, then Apharwat"
+  ],
+  [
+   "≈3 km",
+   "2 mi — the run down from the gondola top"
+  ],
+  [
+   "1968",
+   "Indian Institute of Skiing and Mountaineering founded"
+  ]
  ],
  "sections": [
   {
@@ -43,10 +67,22 @@
    "kind": "stats",
    "lead": "Jammu & Kashmir Tourism Development Corporation (JKTDC) says the ski season usually starts around mid-December and runs to mid-April. Snow varies year to year, so we confirm conditions before you pay.",
    "items": [
-    ["Mid-Dec", "season usually starts (JKTDC)"],
-    ["Mid-Apr", "season usually ends (JKTDC)"],
-    ["2,650 m", "8,700 ft — Gulmarg's meadow and golf course"],
-    ["≈3,980 m", "13,000 ft — Apharwat gondola station"]
+    [
+     "Mid-Dec",
+     "season usually starts (JKTDC)"
+    ],
+    [
+     "Mid-Apr",
+     "season usually ends (JKTDC)"
+    ],
+    [
+     "2,650 m",
+     "8,700 ft — Gulmarg's meadow and golf course"
+    ],
+    [
+     "≈3,980 m",
+     "13,000 ft — Apharwat gondola station"
+    ]
    ],
    "note": "Gulmarg has a long ski history: the Ski Club of India was set up here in 1927, and India's first National Winter Games were held here in 1998 (JKTDC)."
   },
@@ -56,10 +92,25 @@
    "h2": "The Gulmarg gondola: two stages up the mountain",
    "kind": "table",
    "lead": "The gondola is run by the J&K Cable Car Corporation (JKCCC), a government corporation, and opened in 1998. Heights and ride times below are from JKTDC and Incredible India; the two sources round slightly differently.",
-   "head": ["Stage", "From → to", "Top station", "Ride"],
+   "head": [
+    "Stage",
+    "From → to",
+    "Top station",
+    "Ride"
+   ],
    "rows": [
-    ["<b>Phase 1</b>", "Gulmarg → Kongdoori", "about 3,100 m (10,200 ft)", "about 9–10 minutes"],
-    ["<b>Phase 2</b>", "Kongdoori → Apharwat", "about 3,980 m (13,000 ft)", "about 12 minutes"]
+    [
+     "<b>Phase 1</b>",
+     "Gulmarg → Kongdoori",
+     "about 3,100 m (10,200 ft)",
+     "about 9–10 minutes"
+    ],
+    [
+     "<b>Phase 2</b>",
+     "Kongdoori → Apharwat",
+     "about 3,980 m (13,000 ft)",
+     "about 12 minutes"
+    ]
    ],
    "note": "Incredible India gives winter operating hours of 10 am to 5 pm and notes that the gondola can stop in snowstorms or bad weather — plan spare days. JKCCC added QR-based online ski-pass booking in January 2026; we help you book through the official channel only."
   },
@@ -70,11 +121,26 @@
    "kind": "cards",
    "style": "alt",
    "items": [
-    ["Beginners", "JKTDC lists three ski lifts suited to beginners and says trained instructors are available."],
-    ["Intermediates", "JKTDC lists one chair lift for intermediate skiers. From the top of the gondola there is a downhill run of about 3 km (2 mi); Incredible India also notes snowboarding down from Kongdoori."],
-    ["Ski hire", "Skis, boots, sticks, gloves and goggles can be hired on the spot from the government-run ski shop (JKTDC). Bring your own if you prefer — we'll make room in the car."],
-    ["Ski training", "The Indian Institute of Skiing and Mountaineering (IISM) was set up at Gulmarg in 1968 by India's Ministry of Tourism. Course places and eligibility are set by IISM — check with them directly."],
-    ["Off-piste", "Gulmarg is known for deep powder off the marked runs. We do not arrange off-piste or backcountry skiing; if you plan it, go only with a qualified local mountain guide and the right avalanche equipment."]
+    [
+     "Beginners",
+     "JKTDC lists three ski lifts suited to beginners and says trained instructors are available."
+    ],
+    [
+     "Intermediates",
+     "JKTDC lists one chair lift for intermediate skiers. From the top of the gondola there is a downhill run of about 3 km (2 mi); Incredible India also notes snowboarding down from Kongdoori."
+    ],
+    [
+     "Ski hire",
+     "Skis, boots, sticks, gloves and goggles can be hired on the spot from the government-run ski shop (JKTDC). Bring your own if you prefer — we'll make room in the car."
+    ],
+    [
+     "Ski training",
+     "The Indian Institute of Skiing and Mountaineering (IISM) was set up at Gulmarg in 1968 by India's Ministry of Tourism. Course places and eligibility are set by IISM — check with them directly."
+    ],
+    [
+     "Off-piste",
+     "Gulmarg is known for deep powder off the marked runs. We do not arrange off-piste or backcountry skiing; if you plan it, go only with a qualified local mountain guide and the right avalanche equipment."
+    ]
    ]
   },
   {
@@ -84,11 +150,26 @@
    "kind": "steps",
    "lead": "If you have read the advice and still want to go, this is how we plan it.",
    "items": [
-    ["Check advice and insurance", "Read your government's latest advice and confirm in writing that your travel insurance covers Kashmir and skiing. We plan nothing until you've done this."],
-    ["Send your dates", "Mid-December to mid-April, how many ski days, your level and whether you need equipment or lessons. Leave a day or two spare for weather."],
-    ["Get a written quote", "Airport pick-up, private car and driver, hotel nights with breakfast — a day-by-day plan with a US-dollar total before you pay."],
-    ["Lock it with a 20% deposit", "Card via Razorpay (international cards accepted) or PayPal. Full refund if you cancel within 48 hours of paying; balance before the trip."],
-    ["Travel", "Your driver's name, photo and car number are shared with you before the trip. The drive from Srinagar is about 52–56 km (32–35 mi); in snow we drive in daylight only."]
+    [
+     "Check advice and insurance",
+     "Read your government's latest advice and confirm in writing that your travel insurance covers Kashmir and skiing. We plan nothing until you've done this."
+    ],
+    [
+     "Send your dates",
+     "Mid-December to mid-April, how many ski days, your level and whether you need equipment or lessons. Leave a day or two spare for weather."
+    ],
+    [
+     "Get a written quote",
+     "Airport pick-up, private car and driver, hotel nights with breakfast — a day-by-day plan with a US-dollar total before you pay."
+    ],
+    [
+     "Lock it with a 20% deposit",
+     "Card via Razorpay (international cards accepted) or PayPal. Full refund if you cancel within 48 hours of paying; balance before the trip."
+    ],
+    [
+     "Travel",
+     "Your driver's name, photo and car number are shared with you before the trip. The drive from Srinagar is about 52–56 km (32–35 mi); in snow we drive in daylight only."
+    ]
    ]
   },
   {
@@ -98,9 +179,18 @@
    "kind": "cards",
    "lead": "Himachal Pradesh is our home region, and it is not covered by the Kashmir advisories quoted above. It is not a Gulmarg-style ski resort, but the hill towns get snow from December to February.",
    "items": [
-    ["Manali and Shimla in winter", "Snowy hill towns, deodar forests and mountain roads our drivers know well. Compare the two regions in <a href=\"/manali-vs-kashmir/\">Manali vs Kashmir</a>, or read <a href=\"/manali-in-january/\">Manali in January</a>."],
-    ["When to go", "December to February for snow; spring and autumn for clear roads. Our <a href=\"/india-tours/best-time-to-visit-india/\">best time to visit India</a> guide has the month-by-month view."],
-    ["Add the Golden Triangle", "You can pair the snow with Delhi, Agra and Jaipur, which are in season from October to March — see our <a href=\"/golden-triangle-tour/\">Golden Triangle tour</a>."]
+    [
+     "Manali and Shimla in winter",
+     "Snowy hill towns, deodar forests and mountain roads our drivers know well. Compare the two regions in <a href=\"/manali-vs-kashmir/\">Manali vs Kashmir</a>, or read <a href=\"/manali-in-january/\">Manali in January</a>."
+    ],
+    [
+     "When to go",
+     "December to February for snow; spring and autumn for clear roads. Our <a href=\"/india-tours/best-time-to-visit-india/\">best time to visit India</a> guide has the month-by-month view."
+    ],
+    [
+     "Add the Golden Triangle",
+     "You can pair the snow with Delhi, Agra and Jaipur, which are in season from October to March — see our <a href=\"/golden-triangle-tour/\">Golden Triangle tour</a>."
+    ]
    ]
   },
   {
@@ -110,10 +200,22 @@
    "kind": "cards",
    "style": "alt",
    "items": [
-    ["Visa", "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through it."],
-    ["Altitude and health", "Gulmarg sits at about 2,650 m (8,700 ft) and the gondola top near 4,000 m. Consult your doctor before you travel, and see CDC or NHS Fit for Travel for altitude guidance."],
-    ["Your car and driver", "A private car with driver for the whole trip — see how our <a href=\"/india-tours/private-driver-india/\">private car with driver</a> works. Your driver's name, photo and car number are shared with you before the trip."],
-    ["Who you deal with", "Suzu Travels, a small team with a real office in Himachal Pradesh — one WhatsApp chat and one US-dollar quote from the first message to the airport drop."]
+    [
+     "Visa",
+     "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through it."
+    ],
+    [
+     "Altitude and health",
+     "Gulmarg sits at about 2,650 m (8,700 ft) and the gondola top near 4,000 m. Consult your doctor before you travel, and see CDC or NHS Fit for Travel for altitude guidance."
+    ],
+    [
+     "Your car and driver",
+     "A private car with driver for the whole trip — see how our <a href=\"/india-tours/private-driver-india/\">private car with driver</a> works. Your driver's name, photo and car number are shared with you before the trip."
+    ],
+    [
+     "Who you deal with",
+     "Suzu Travels, a small team with a real office in Himachal Pradesh — one WhatsApp chat and one US-dollar quote from the first message to the airport drop."
+    ]
    ]
   }
  ],
@@ -121,29 +223,82 @@
   "h2": "Prices",
   "lead": "Ski-season hotel rates and availability change week to week, so Gulmarg trips are quoted on request for your exact dates.",
   "rows": [
-   ["Gulmarg ski trip", "on request", "Airport pick-up and drop, private car and driver, hotel nights with breakfast; gondola tickets, ski hire and lessons can be added — a day-by-day plan and US-dollar total before you pay"],
-   ["Winter snow trip in Himachal", "on request", "Private car and driver, hotels with breakfast in Shimla, Manali or Dharamshala, routed around the snow"]
+   [
+    "Gulmarg ski trip",
+    "on request",
+    "Airport pick-up and drop, private car and driver, hotel nights with breakfast; gondola tickets, ski hire and lessons can be added — a day-by-day plan and US-dollar total before you pay"
+   ],
+   [
+    "Winter snow trip in Himachal",
+    "on request",
+    "Private car and driver, hotels with breakfast in Shimla, Manali or Dharamshala, routed around the snow"
+   ]
   ],
   "note": "Prices are quoted per trip in US dollars and confirmed in writing before you pay. International flights excluded."
  },
  "faqs": [
-  ["When is the ski season in Gulmarg?", "JKTDC says the ski season usually starts around mid-December and runs to mid-April. Snow varies each winter, so we confirm conditions for your dates before you pay."],
-  ["Is Gulmarg good for beginners?", "Yes, it has a beginner area: JKTDC lists three ski lifts suited to beginners, one chair lift for intermediates, trained instructors and a government ski-hire shop. Experienced skiers come for the gondola and the powder."],
-  ["How high does the Gulmarg gondola go?", "Phase 1 runs from Gulmarg to Kongdoori at about 3,100 m (10,200 ft); Phase 2 continues to Apharwat at about 3,980 m (13,000 ft). Incredible India gives ride times of about 9 and 12 minutes and winter hours of 10 am to 5 pm, weather permitting."],
-  ["Can I hire ski equipment in Gulmarg?", "Yes. JKTDC says skis, boots, sticks, gloves and goggles can be hired on the spot from the government-run ski shop, and trained instructors are available."],
-  ["Is it safe to go skiing in Gulmarg?", "We don't make safety promises. The UK FCDO advises against all travel to Jammu and Kashmir, naming Gulmarg (updated 7 Oct 2026), and the US State Department rates it Level 4: Do Not Travel (checked 23 Oct 2026). Read your own government's latest advice before deciding."],
-  ["Will my travel insurance cover Gulmarg?", "Check with your insurer in writing. The UK FCDO says your travel insurance could be invalidated if you travel against its advice, and skiing is often an add-on. We ask every guest to confirm cover before booking."],
-  ["How do I get to Gulmarg?", "Gulmarg is about 52–56 km (32–35 mi) south-west of Srinagar (JKTDC). We meet you at the airport and drive you in a private car, in daylight when there is snow on the road."],
-  ["How do I book a Gulmarg ski trip?", "Send your dates, ski days, level and how many of you. We reply with a day-by-day plan and a US-dollar quote; a 20% deposit locks your dates and price, fully refundable within 48 hours of paying."]
+  [
+   "When is the ski season in Gulmarg?",
+   "JKTDC says the ski season usually starts around mid-December and runs to mid-April. Snow varies each winter, so we confirm conditions for your dates before you pay."
+  ],
+  [
+   "Is Gulmarg good for beginners?",
+   "Yes, it has a beginner area: JKTDC lists three ski lifts suited to beginners, one chair lift for intermediates, trained instructors and a government ski-hire shop. Experienced skiers come for the gondola and the powder."
+  ],
+  [
+   "How high does the Gulmarg gondola go?",
+   "Phase 1 runs from Gulmarg to Kongdoori at about 3,100 m (10,200 ft); Phase 2 continues to Apharwat at about 3,980 m (13,000 ft). Incredible India gives ride times of about 9 and 12 minutes and winter hours of 10 am to 5 pm, weather permitting."
+  ],
+  [
+   "Can I hire ski equipment in Gulmarg?",
+   "Yes. JKTDC says skis, boots, sticks, gloves and goggles can be hired on the spot from the government-run ski shop, and trained instructors are available."
+  ],
+  [
+   "Is it safe to go skiing in Gulmarg?",
+   "We don't make safety promises. The UK FCDO advises against all travel to Jammu and Kashmir, naming Gulmarg (updated 7 Oct 2026), and the US State Department rates it Level 4: Do Not Travel (checked 23 Oct 2026). Read your own government's latest advice before deciding."
+  ],
+  [
+   "Will my travel insurance cover Gulmarg?",
+   "Check with your insurer in writing. The UK FCDO says your travel insurance could be invalidated if you travel against its advice, and skiing is often an add-on. We ask every guest to confirm cover before booking."
+  ],
+  [
+   "How do I get to Gulmarg?",
+   "Gulmarg is about 52–56 km (32–35 mi) south-west of Srinagar (JKTDC). We meet you at the airport and drive you in a private car, in daylight when there is snow on the road."
+  ],
+  [
+   "How do I book a Gulmarg ski trip?",
+   "Send your dates, ski days, level and how many of you. We reply with a day-by-day plan and a US-dollar quote; a 20% deposit locks your dates and price, fully refundable within 48 hours of paying."
+  ]
  ],
  "sources": [
-  ["JKTDC — Skiing in Kashmir", "https://jktdc.co.in/info.aspx?id=82"],
-  ["JKTDC — About Gulmarg", "https://www.jktdc.co.in/info.aspx?id=10"],
-  ["Incredible India — Thrilling adventure experiences in Gulmarg", "https://www.incredibleindia.gov.in/en/jammu-and-kashmir/gulmarg/thrilling-adventure-experiences-in-gulmarg"],
-  ["Ministry of Tourism — Indian Institute of Skiing and Mountaineering", "https://adventure.tourism.gov.in/Indian-Institute-of-Skiing-Mountaineering-Institute.html"],
-  ["UK FCDO — India travel advice (updated 7 Oct 2026)", "https://www.gov.uk/foreign-travel-advice/india"],
-  ["US State Department — India travel advisory", "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"],
-  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"]
+  [
+   "JKTDC — Skiing in Kashmir",
+   "https://jktdc.co.in/info.aspx?id=82"
+  ],
+  [
+   "JKTDC — About Gulmarg",
+   "https://www.jktdc.co.in/info.aspx?id=10"
+  ],
+  [
+   "Incredible India — Thrilling adventure experiences in Gulmarg",
+   "https://www.incredibleindia.gov.in/en/jammu-and-kashmir/gulmarg/thrilling-adventure-experiences-in-gulmarg"
+  ],
+  [
+   "Ministry of Tourism — Indian Institute of Skiing and Mountaineering",
+   "https://adventure.tourism.gov.in/Indian-Institute-of-Skiing-Mountaineering-Institute.html"
+  ],
+  [
+   "UK FCDO — India travel advice (updated 7 Oct 2026)",
+   "https://www.gov.uk/foreign-travel-advice/india"
+  ],
+  [
+   "US State Department — India travel advisory",
+   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"
+  ],
+  [
+   "Indian e-Visa — official site",
+   "https://indianvisaonline.gov.in/"
+  ]
  ],
  "verified": "23 Oct 2026",
  "cta": {
@@ -155,6 +310,7 @@
   "best-time-to-visit-india",
   "private-driver-india",
   "india-e-visa-guide",
-  "best-places-to-visit-in-india"
+  "best-places-to-visit-in-india",
+  "best-time-to-visit-kashmir"
  ]
 }
