@@ -1,0 +1,27 @@
+{
+ "_note": "Media for /india-tours/india-travel-insurance/ (practical, information only). Hero + checklist ladder from the licensed library in hf/photos/CREDITS.md — no new photos, no hospitals/ambulances/injured people (fact pack Media notes). Captions are advice lines, never place names. Poster = Dhauladhar range (mountain trips are where cover questions start). Ladder = words only, no prices, no insurer names. No route map.",
+ "hero": {
+  "kicker": "INDIA TRAVEL INSURANCE",
+  "scenes": [
+   {"img": "px-36966954.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 650}},
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-38236787.jpg", "kind": "tilt", "from": {"y": 900}, "to": {"y": 500}},
+   {"img": "px-30750204.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}}
+  ],
+  "steps": ["COVERED FOR INDIA?", "HOSPITAL + EVAC", "ALTITUDE & SPORTS", "CHECK ADVISORIES", "TRAVEL WITH PEACE"]
+ },
+ "cost": {
+  "kicker": "TRAVEL INSURANCE · CHECKLIST",
+  "title": "What to check in your policy",
+  "items": [
+   {"label": "Medical treatment", "sub": "hospital care in India, paid or reimbursed", "tag": "check"},
+   {"label": "Medical evacuation", "sub": "transfer to a bigger hospital or flight home", "tag": "check"},
+   {"label": "Pre-existing conditions", "sub": "declared to the insurer before you buy", "tag": "check"},
+   {"label": "Altitude & activities", "sub": "Ladakh/Spiti heights, rafting, skiing, paragliding", "tag": "check"},
+   {"label": "Places under advisories", "sub": "some policies exclude areas your government warns on", "tag": "check"},
+   {"label": "Trip cancellation", "sub": "after our 48-hour full-refund window", "tag": "check"}
+  ],
+  "end": "Information only, not advice · read your policy wording before you buy"
+ }
+}
