@@ -16,5 +16,6 @@
  "chamunda-devi": {"id": 15108, "path": "/pilgrimage-tours/chamunda-devi/", "kind": "temple", "label": "Chamunda Devi, Kangra", "blurb": "Shiva and Shakti by the Baner river", "added": "2026-10-21", "shrine": "chamunda-nandikeshwar-dham-kangra"},
  "kangra-devi": {"id": 15543, "path": "/pilgrimage-tours/kangra-devi/", "kind": "temple", "label": "Kangra Devi (Brajeshwari)", "blurb": "Shakti Peeth of Nagarkot, clad in butter", "added": "2026-10-23", "shrine": "brajeshwari-kangra-devi"},
  "vaishno-devi-yatra": {"id": 15738, "path": "/pilgrimage-tours/vaishno-devi-yatra/", "kind": "yatra", "label": "Vaishno Devi Yatra", "blurb": "Trikuta cave shrine above Katra, J&K", "added": "2026-10-24", "shrine": "vaishno-devi-katra"},
- "amarnath-yatra": {"id": 15873, "path": "/pilgrimage-tours/amarnath-yatra/", "kind": "yatra", "label": "Amarnath Yatra", "blurb": "Ice lingam cave in the Kashmir Himalaya", "added": "2026-10-25"}
+ "amarnath-yatra": {"id": 15873, "path": "/pilgrimage-tours/amarnath-yatra/", "kind": "yatra", "label": "Amarnath Yatra", "blurb": "Ice lingam cave in the Kashmir Himalaya", "added": "2026-10-25"},
+ "51-shakti-peeth": {"id": 16007, "path": "/pilgrimage-tours/51-shakti-peeth/", "kind": "guide", "label": "51 Shakti Peeth", "blurb": "The list, the 18 Maha Peethas & Sati's story", "added": "2026-10-26"}
 }
