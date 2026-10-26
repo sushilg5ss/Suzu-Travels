@@ -1,0 +1,154 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/mulkila/",
+ "peak_id": "mulkila",
+ "title": "Mulkila (6,517 m), Lahaul: Route & Expedition Guide",
+ "seo_title": "Mulkila (6,517 m), Lahaul: Route & Expedition Guide",
+ "seo_desc": "Mulkila (M4, 6,517 m), the highest peak in Lahaul: the Milang Glacier route camp by camp, grade, season, IMF permits and the 1939 first ascent.",
+ "focus": "mulkila",
+ "commercial": true,
+ "label": "Mulkila",
+ "blurb": "6,517 m · highest peak in Lahaul, above the Milang Glacier",
+ "verified": "26 Oct 2026",
+ "kicker": "Lahaul · Great Himalaya · 6,517 m",
+ "tag": "The Silver God at the head of the Milang Glacier.",
+ "sub": "The highest peak in Lahaul, climbed from Darcha on the Manali–Leh highway by a crevassed glacier, a narrow icefall and a loose rock ridge. An advanced Himachal expedition for climbers who already have a 6,000er behind them.",
+ "chips": [
+  ["6,517 m", "summit (21,381 ft)"],
+  ["About 3 weeks", "from Delhi (estimate)"],
+  ["Jun–Sep", "season"],
+  ["Grade", "technical"],
+  ["Price", "Get Quote"]
+ ],
+ "hero_alt": "Climbers on high-desert scree, a roped snowfield, a glacier under seracs and a corniced ridge (stock footage, not Mulkila itself) with an altitude read-out rising from Darcha, 3,360 m, past base camp, Camp 1 and Camp 2 to the 6,517 m summit",
+ "profile_alt": "Animated altitude profile of the Mulkila route: Darcha 3,360 m, base camp about 4,440 m, Camp 1 about 5,000 m, Camp 2 about 5,800 m and the 6,517 m summit",
+ "ladder_alt": "Animated chart of four Lahaul peaks at their true heights: Yunam, Shikar Beh, Menthosa and Mulkila",
+ "ladder_label": "Lahaul peaks",
+ "ladder_kicker": "Lahaul's big peaks",
+ "ladder_h2": "Mulkila and the Lahaul giants, side by side",
+ "ladder_text": [
+  "Mulkila is the top of the Lahaul skyline. Below it stand <b>Menthosa</b> (6,443 m) above the Miyar valley, <b>Shikar Beh</b> (6,200 m) on the Pir Panjal, and <a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m) near Baralacha La, the easiest 6,000er of the four.",
+  "Compare every Himachal summit, with grade, season and status, in our <a href=\"/mountains-of-india/himachal-pradesh/\">guide to the peaks of Himachal Pradesh</a>, or see all the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks of India</a>."
+ ],
+ "q": "What is Mulkila, and how do you climb it?",
+ "answer": "<b>Mulkila</b> (6,517 m / 21,381 ft), also called M4, is the highest peak in Lahaul, Himachal Pradesh, at the head of the Milang Glacier between the Chandra and Bhaga rivers. From the road-head at Darcha, teams walk about 25 km to base camp, then climb a crevassed glacier, an icefall and the loose south ridge. It is a technical climb, best from June to September. See all the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks of India</a>.",
+ "facts": [
+  ["Height", "6,517 m / 21,381 ft (other sources: 6,507–6,518 m)"],
+  ["Other names", "M4, Mulkila IV; the name is translated as \"Silver God\""],
+  ["Location", "Lahaul, Lahaul & Spiti district, about 155 km north of Shimla"],
+  ["Range", "Great Himalaya (Lahaul)"],
+  ["Prominence", "1,586 m, an Ultra of the Himalaya"],
+  ["Glacier", "Milang Glacier, ringed by the \"M\" peaks"],
+  ["Start", "Darcha, 3,360 m, on the Manali–Leh highway"],
+  ["Duration", "About 3 weeks from Delhi (estimate)"],
+  ["Grade", "Technical: glacier, icefall, steep ice and loose rock"],
+  ["Best months", "Jun–Sep"],
+  ["First ascent", "7 Sep 1939, Krenek, Johnson & Kolb"],
+  ["Price", "Get Quote"]
+ ],
+ "intro": [
+  "Mulkila stands near the centre of a cirque of peaks that early surveyors simply numbered: M1, M2, M3 and so on around the head of the <b>Milang Glacier</b>. Mulkila is M4, and at 6,517 m it is the <b>highest peak in Lahaul</b>, the only summit over 6,500 m in that corner of Himachal. Its name is usually translated as <b>\"Silver God\"</b>. The waters it sheds run into the Chandra and the Bhaga, which join to become the Chenab.",
+  "This is not a trekking peak. The normal route crosses a crevassed glacier, threads a narrow icefall and finishes on a steep, loose rock ridge. This page sets out that route with camp altitudes, the honest difficulty, the season, the permits and the climbing history since 1939. For the wider picture, see our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a> and the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>."
+ ],
+ "route_h2": "Route from Darcha, camp by camp",
+ "route_text": [
+  "The road-head is <b>Darcha</b> (3,360 m) on the Manali–Leh highway, reached from Manali through the Atal Tunnel or over the Rohtang Pass, via Keylong. From there the walk-in follows the <b>Milang valley</b> past Yotse village, about 25 km and roughly 1,100 m of height gain, to a base camp on the moraine on the north bank of the Milang Glacier.",
+  "Above base camp the route keeps to the east edge of the glacier, past crevasses, to Camp 1. A narrow icefall with hidden crevasses, between about 5,300 m and 5,600 m, leads to a high cwm near the glacier's source, where the 1939 party placed its top camp. The summit is reached by the <b>south ridge</b> (loose rock and gendarmes) or, in early season or heavy snow, the south-west face. Camp heights differ from team to team, so the figures below are approximate."
+ ],
+ "route": [
+  {"name": "Darcha", "m": 3360, "note": "Road-head on the Manali–Leh highway"},
+  {"name": "Yotse camp", "m": 3450, "note": "First night of the walk-in, near Yotse village (about 3,450 m)"},
+  {"name": "Base camp", "m": 4440, "note": "Moraine on the north bank of the Milang Glacier (about 4,440 m; other teams 4,200–4,270 m)"},
+  {"name": "Camp 1", "m": 5000, "note": "East edge of the glacier, just under 5,000 m"},
+  {"name": "Camp 2 (high cwm)", "m": 5800, "note": "Above the icefall, near the glacier's source (about 5,800 m; 1979 team about 5,580 m)"},
+  {"name": "Mulkila summit", "m": 6517, "note": "By the south ridge; the 1939 party needed about nine hours from its high camp"}
+ ],
+ "itinerary_h2": "A typical plan (estimate, not a fixed schedule)",
+ "itinerary": [
+  ["Days 1–2", "Delhi to Manali", "Travel to Manali and sort permits and gear."],
+  ["Day 3", "Manali to Darcha", "Drive through the Atal Tunnel and Keylong to the road-head at 3,360 m."],
+  ["Days 4–6", "Walk-in to base camp", "Up the Milang valley past Yotse, with a night near the village, to base camp on the glacier moraine."],
+  ["Days 7–9", "Base camp and Camp 1", "Rest, training on the glacier and load ferries to Camp 1 at about 5,000 m."],
+  ["Days 10–12", "Through the icefall", "Fix the icefall and move up to Camp 2 in the high cwm, about 5,800 m."],
+  ["Day 13", "Summit day", "By the south ridge to the 6,517 m summit, then back to Camp 2."],
+  ["Days 14–17", "Spare days", "Kept for weather, a second attempt and a careful descent."],
+  ["Days 18–21", "Back to Delhi", "Walk out to Darcha, drive to Manali and travel on."]
+ ],
+ "difficulty_h2": "How hard is Mulkila?",
+ "difficulty": [
+  "Mulkila is graded <b>technical</b>. The Milang Glacier is crevassed, the icefall between about 5,300 m and 5,600 m is narrow and hides crevasses, and the upper mountain has steep, hard ice. The summit ridge is loose rock with gendarmes. In 1939 the first party described nine hours of difficult climbing on rock and ice from its high camp. It is <b>not</b> a beginner peak or a first 6,000er.",
+  "You should arrive with at least one 6,000 m summit and solid glacier skills. If you are not there yet, start with <a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> or <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a>, read our guide to <a href=\"/mountains-of-india/first-6000m-peak/\">choosing a first 6,000 m peak</a>, and take altitude seriously with our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a>."
+ ],
+ "skills": [
+  ["Experience", "At least one earlier 6,000 m summit and several high-altitude expeditions."],
+  ["Technique", "Crampons and ice axe on steep hard ice, crevasse rescue, fixed ropes and moving on loose rock."],
+  ["Fitness", "Long load carries between camps and a summit day of up to nine hours above 5,800 m."],
+  ["Acclimatisation", "A slow walk-in from Darcha and rest days at base camp before the icefall."],
+  ["Training", "A Basic and preferably an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."]
+ ],
+ "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "no", "May": "no", "Jun": "good", "Jul": "good", "Aug": "good", "Sep": "good", "Oct": "maybe", "Nov": "no", "Dec": "no"},
+ "season_h2": "Best time to climb Mulkila",
+ "season_text": [
+  "<b>June to September</b>, with early October possible. Lahaul lies in a rain shadow, so the monsoon rarely reaches the Milang valley in force, though stray monsoon weather does happen. The recorded ascents summited in late August, early September and October: 7 September 1939, 10 October 1977, 31 August 1979 and 22 August 1989.",
+  "Build in weather days: fresh snow makes the icefall and the summit ridge slower and more dangerous, and early-season snow may push teams onto the south-west face."
+ ],
+ "permits_h2": "Permits for Mulkila",
+ "permits": [
+  "<b>Indian climbers</b> need permission from the Indian Mountaineering Foundation (IMF) for an expedition, and IMF rules set team qualifications, such as the leader's course and summit record. In Himachal, climbs go through an HP Tourism-registered outfitter with registered guides, with pre-trek police registration and life and rescue insurance for every participant under the state's 2021 adventure rules.",
+  "<b>Foreign nationals</b> can climb Mulkila with IMF permission, applied for at least 90 days ahead, and a liaison officer. At 6,517 m it falls in the <b>6,501–7,000 m band</b>: a base fee of US$700 for a team of two, plus per-member charges and US$500 for liaison-officer equipment (IMF peak-fee page, checked Oct 2026). Darcha and the Milang valley are not in the Kinnaur–Spiti border belt. More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fee guide</a> and our <a href=\"/mountains-of-india/mountaineering-in-india/\">guide to mountaineering in India for foreign climbers</a>."
+ ],
+ "cost_h2": "What a guided Mulkila expedition includes",
+ "cost_text": [
+  "The price depends on your dates, group size, nationality and experience, so we quote each expedition. Tell us your dates and climbing record on WhatsApp and you get one plan and one quote. Foreign nationals also pay the IMF fee and liaison-officer charges, shown separately."
+ ],
+ "includes": [
+  "Certified mountaineering guides and support staff",
+  "Tents, camps and all meals on the mountain",
+  "Group climbing equipment (ropes, fixed lines, ice screws and anchors)",
+  "Help with IMF permission and permit paperwork",
+  "Transfers from Manali to Darcha and back",
+  "Acclimatisation and weather days in the plan"
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots that take crampons",
+  "Crampons, a technical ice axe and a jumar (ascender)",
+  "Climbing harness, helmet, carabiners, slings and a belay device",
+  "Expedition down jacket and a warm sleeping bag",
+  "Windproof and waterproof shell jacket and trousers",
+  "Summit mitts plus liner gloves",
+  "Glacier sunglasses (UV400), goggles and sunscreen",
+  "Headlamp with spare batteries",
+  "Trekking poles for the 25 km walk-in",
+  "Two water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "Climbing history of Mulkila",
+ "history": [
+  "The <b>first ascent</b> was made on <b>7 September 1939</b> by <b>Ludwig Krenek, Robey Johnson and Dr Fritz Kolb</b> of an Anglo-Austrian expedition. They climbed the south ridge from a high camp at about 5,800 m. The trip was marked by tragedy: Hilda Richmond was killed by a falling stone near base camp.",
+  "A Japanese team led by Y. Watanabe climbed the peak on 10 October 1977. In 1979 a joint Royal Air Force and Indian Air Force expedition put Ted Rogers on the summit on 31 August, and the Himalayan Journal lists a Pune Mountaineers ladies' expedition led by Usha Bhide as having climbed it the same year. Wikipedia records the first Indian ascent as 22 August 1989, by Goutam Dutta and R.S. Negi. Because the records disagree, we do not number the ascents."
+ ],
+ "faq_h2": "Mulkila: questions people ask",
+ "faqs": [
+  ["How high is Mulkila?", "6,517 m (21,381 ft). Some sources give between 6,507 m and 6,518 m."],
+  ["Where is Mulkila?", "In Lahaul, Himachal Pradesh, at the head of the Milang Glacier between the Chandra and Bhaga rivers. The road-head is Darcha, on the Manali–Leh highway."],
+  ["What is the highest peak in Lahaul?", "Mulkila, also called M4, at 6,517 m. It is the only peak above 6,500 m in that part of Lahaul."],
+  ["Who first climbed Mulkila?", "Ludwig Krenek, Robey Johnson and Fritz Kolb, on 7 September 1939, by the south ridge."],
+  ["How difficult is Mulkila?", "It is a technical climb: a crevassed glacier, a narrow icefall, steep ice and loose rock on the summit ridge. It is not a first 6,000er."],
+  ["What does Mulkila mean, and what is M4?", "The name is translated as \"Silver God\". M4 (Mulkila IV) is its survey label among the \"M\" peaks around the Milang Glacier."],
+  ["When is the best time to climb Mulkila?", "June to September, into early October. Lahaul is in the rain shadow, and the recorded ascents summited between late August and October."],
+  ["Can foreigners climb Mulkila?", "Yes, with IMF permission applied for at least 90 days ahead and a liaison officer. The base fee band for 6,501–7,000 m peaks is US$700 for a team of two (Oct 2026), plus other charges."],
+  ["Can Suzu Travels arrange a Mulkila expedition?", "Yes. We pair you with a registered Himachal outfitter and certified guides and help with the permits and transfers — one plan and one quote on WhatsApp at +91 70874 88961."]
+ ],
+ "sources": [
+  ["Wikipedia — Mulkila", "https://en.wikipedia.org/wiki/Mulkila"],
+  ["SummitPost — Mulkila", "https://www.summitpost.org/mulkila/727508"],
+  ["Himalayan Journal 37 — Airmen in Lahul", "https://www.himalayanclub.org/hj/37/22/airmen-in-lahul/"],
+  ["Himalayan Journal 36 — Expeditions 1976–1979", "https://www.himalayanclub.org/hj/36/35/expeditions-1976-1979/"],
+  ["Explorersweb — Indians on Mulkila, Himachal Pradesh", "https://explorersweb.com/indians-mulkila-himachal-pradesh/"],
+  ["Wikipedia — Darcha", "https://en.wikipedia.org/wiki/Darcha"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
+  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"]
+ ],
+ "sameAs": ["https://en.wikipedia.org/wiki/Mulkila"],
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Mulkila. Dates: ___ , people: ___ , nationality: ___"
+}

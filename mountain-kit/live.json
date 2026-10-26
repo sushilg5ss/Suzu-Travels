@@ -265,5 +265,15 @@
   "blurb": "8 virgin summits · closed and sacred peaks",
   "added": "2026-10-25",
   "commercial": false
+ },
+ "mulkila": {
+  "id": 15993,
+  "path": "/mountains-of-india/mulkila/",
+  "kind": "peak",
+  "label": "Mulkila",
+  "blurb": "6,517 m · highest peak in Lahaul, above the Milang Glacier",
+  "added": "2026-10-26",
+  "peak_id": "mulkila",
+  "commercial": true
  }
 }
