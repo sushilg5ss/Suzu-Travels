@@ -1052,7 +1052,7 @@ dict(slug="haridwar-taxi-service", kind="city", route=None,
  wa="Hi Suzu Travels, I need a taxi in Haridwar. Pickup (station/ghat/hotel): ___ , drop or trip: ___ , date: ___ , people: ___"),
 
 # ------------------------------------------------------------------ CHAR DHAM YATRA TAXI (26 Oct 2026)
-dict(slug="char-dham-yatra-taxi", kind="city", route=None, town="Haridwar",
+dict(slug="char-dham-yatra-taxi", kind="city", route=None, town="Haridwar", in_town="for the Char Dham yatra",
  title="Char Dham Yatra Taxi", seo_title=f"Char Dham Yatra Taxi from Haridwar | 10 Days from {_TOUR('sedan',1310,10)}",
  seo_desc=f"Char Dham yatra taxi from Haridwar: 10 days, ~1,310 km, one car and driver. Sedan from {_TOUR('sedan',1310,10)}, Innova Crysta {_TOUR('crysta',1310,10)}. Do Dham too. WhatsApp quote.",
  focus="char dham yatra taxi",
