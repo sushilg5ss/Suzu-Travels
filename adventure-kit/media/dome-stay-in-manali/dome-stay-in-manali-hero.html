@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.12) 38%, rgba(11,31,51,0.8) 56%, rgba(11,31,51,0.93) 100%); }
+      #snow { position: absolute; inset: 0; }
+      .fl { position: absolute; left: 0; top: 0; border-radius: 50%; background: #fff; }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 118px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; }
+      .t1 { position: absolute; left: 0; top: 166px; color: #fff; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t3 { position: absolute; left: 0; top: 392px; color: #fff; font-weight: 500; font-size: 52px; white-space: nowrap; }
+      .glow { position: absolute; left: 470px; top: 600px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(255,196,110,0.75) 0%, rgba(255,170,80,0.35) 35%, rgba(255,160,70,0) 70%); mix-blend-mode: screen; }
+      .star { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #fff; }
+      .t2 { position: absolute; left: 0; top: 280px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.prof { position: absolute; left: 0; top: 470px; width: 820px; height: 230px; overflow: visible; }
+      svg.prof text { font-family: "PJS", sans-serif; font-weight: 800; font-size: 26px; fill: #fff; }
+      .big { position: absolute; left: 0; top: 724px; color: #fff; font-weight: 800; font-size: 92px; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 420px; top: 748px; width: 400px; text-align: right; color: rgba(255,255,255,0.92); font-weight: 800; font-size: 40px; }
+      .bar { position: absolute; left: 0; top: 866px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 890px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 50px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><div style="position:absolute;inset:0;transform:scaleX(-1)"><img id="im1" src="assets/dome-blue.jpg" alt="" /></div><div class="glow" id="gl1"></div></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/domes2.jpg" alt="" style="object-position:50% 60%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/igloo.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/stars.jpg" alt="" style="object-position:50% 35%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div id="fd5" style="position:absolute;inset:0;transform:scaleX(-1)"><img id="im5" src="assets/dome-blue.jpg" alt="" /></div><div class="glow" id="gl5"></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div id="snow"></div>
+        <div class="panel">
+          <div class="kicker">SNOW · STAYS · MANALI</div>
+          <div class="t1">Sleep under</div>
+          <div class="t2">a dome</div>
+          <div class="t3">wake up to snow</div>
+          <svg class="prof" viewBox="0 0 820 230">
+            <path d="M 0 220 L 70 190 L 180 200 L 330 150 L 420 165 L 560 80 L 640 100 L 760 40 L 820 60" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round" />
+            <path id="ln1" d="M 70 190 L 330 150 L 450 120 L 520 104 L 600 70 L 690 56 L 760 40" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 10" />
+            <g id="dots"></g>
+            <text x="70" y="226" text-anchor="middle">Mall Road</text>
+            <text x="330" y="196" text-anchor="middle">Prini</text>
+            <text x="740" y="96" text-anchor="middle">Dome stays</text>
+          </svg>
+          <div class="big" id="alt">~2,050 m</div>
+          <div class="biglab" id="altlab">Manali town</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">12–15 km above Mall Road</div>
+            <div class="fact" id="f2">Heated, attached bath</div>
+            <div class="fact" id="f3">Open all year</div>
+            <div class="fact" id="f4">Snow usually late Dec–Feb</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const D = 12;
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#gl1", { opacity: 0.35, scale: 0.9 }, { opacity: 1, scale: 1.1, duration: 3.8, ease: "sine.inOut" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.05, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo(["#fd5", "#gl5"], { opacity: 0 }, { opacity: 0.35, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut", immediateRender: false }, 10.8);
+      tl.fromTo("#ln1", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -336 }, duration: D, ease: "none" }, 0);
+      const NS = "http://www.w3.org/2000/svg";
+      const g = document.getElementById("dots");
+      const stops = [[70, 190], [330, 150], [760, 40]];
+      const halos = stops.map((p) => {
+        const h = document.createElementNS(NS, "circle");
+        h.setAttribute("cx", p[0]); h.setAttribute("cy", p[1]); h.setAttribute("r", 0); h.setAttribute("fill", "rgba(212,162,76,0.4)");
+        const d = document.createElementNS(NS, "circle");
+        d.setAttribute("cx", p[0]); d.setAttribute("cy", p[1]); d.setAttribute("r", 12); d.setAttribute("fill", "#d4a24c"); d.setAttribute("stroke", "#fff"); d.setAttribute("stroke-width", 4);
+        g.appendChild(h); g.appendChild(d); return h;
+      });
+      // altitude: Manali ~2,050 -> (Prini, permit check) -> dome stays ~2,650; label-only at Prini
+      const altEl = document.getElementById("alt"), labEl = document.getElementById("altlab");
+      const labels = ["Manali town", "Up the Hamta road", "Dome stays"];
+      const st = { t: 0 };
+      const upd = () => {
+        let t = st.t; if (t >= 11.55) t = 0;
+        let k = (t - 3.8) / 3.6; k = Math.max(0, Math.min(1, k)); const e = k * k * (3 - 2 * k);
+        const v = 2050 + 600 * e;
+        const idx = t < 3.6 ? 0 : (t < 7.4 ? 1 : 2);
+        altEl.textContent = "~" + (Math.round(v / 10) * 10).toLocaleString("en-US") + " m";
+        labEl.textContent = labels[idx];
+        const s = 0.5 + 0.5 * Math.sin(st.t * Math.PI * 2 / 1.5);
+        halos.forEach((h, i) => { const on = i === idx; h.setAttribute("r", (on ? 18 + s * 18 : 0).toFixed(2)); h.setAttribute("opacity", on ? (0.4 + 0.6 * s).toFixed(3) : "0"); });
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+      tl.to(["#alt", "#altlab"], { opacity: 0, duration: 0.3, ease: "power1.in" }, 11.2);
+      tl.fromTo(["#alt", "#altlab"], { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out", immediateRender: false }, 11.55);
+      let seed = 11;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const snow = document.getElementById("snow");
+      const flakes = [];
+      for (let i = 0; i < 80; i++) {
+        const el = document.createElement("div"); el.className = "fl";
+        const s = 3 + rnd() * 6; el.style.width = s + "px"; el.style.height = s + "px"; el.style.opacity = (0.45 + rnd() * 0.5).toFixed(2);
+        snow.appendChild(el);
+        flakes.push({ el, x: rnd() * 1920, y: rnd() * 1140, c: 1 + Math.floor(rnd() * 2), w: 1 + Math.floor(rnd() * 3), a: 10 + rnd() * 30, ph: rnd() * 6.283 });
+      }
+      const snowSt = { t: 0 };
+      const snowUpd = () => {
+        const p = snowSt.t / D;
+        flakes.forEach((f) => {
+          const y = ((f.y + p * f.c * 1140) % 1140) - 40;
+          const x = f.x + Math.sin(p * f.w * 6.283 + f.ph) * f.a;
+          f.el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+        });
+      };
+      tl.fromTo(snowSt, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: snowUpd }, 0);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      upd(); snowUpd();
+    </script>
+  </body>
+</html>
