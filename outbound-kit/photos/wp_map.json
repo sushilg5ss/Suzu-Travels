@@ -1058,5 +1058,95 @@
   "license": "Unsplash License",
   "src": "https://unsplash.com/photos/a-large-green-mountain-xXLLNXHAv98",
   "wp_id": 15808
+ },
+ "uk-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-london-eye-westminster-thames.webp",
+  "alt": "The London Eye, Big Ben and the Houses of Parliament seen across the River Thames, London",
+  "cap": "London Eye & Westminster",
+  "credit": "Pietra Cruz",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/london-eye-and-houses-of-parliament-over-river-thames-xT2wTqt2v8o",
+  "wp_id": 15951
+ },
+ "uk-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-big-ben-underground-sign.webp",
+  "alt": "Big Ben clock tower with a London Underground sign in front, Westminster, London",
+  "cap": "Big Ben, Westminster",
+  "credit": "Nick Fewings",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/the-big-ben-clock-tower-towering-over-the-city-of-london-5WiAeNiRizY",
+  "wp_id": 15952
+ },
+ "uk-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-london-eye.webp",
+  "alt": "The London Eye wheel on the South Bank of the River Thames, London",
+  "cap": "London Eye",
+  "credit": "Xavier Coiffic",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/london-eye-london-Yh6kKxGyf_A",
+  "wp_id": 15953
+ },
+ "uk-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-stonehenge.webp",
+  "alt": "The standing stones of Stonehenge on Salisbury Plain, England",
+  "cap": "Stonehenge",
+  "credit": "K. Mitch Hodge",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/stonehenge-england-during-daytime-cR2nz7z9Fdk",
+  "wp_id": 15954
+ },
+ "uk-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-bath-river-avon.webp",
+  "alt": "Historic buildings of Bath reflected in the River Avon, Somerset, England",
+  "cap": "Bath & the River Avon",
+  "credit": "Zoltan Tasi",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/reflection-of-gray-building-on-body-of-water-during-daytime-XbjwESIFeo0",
+  "wp_id": 15955
+ },
+ "uk-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-bibury-cotswolds.webp",
+  "alt": "Honey-coloured stone cottages beside a stream in Bibury village, the Cotswolds, England",
+  "cap": "Bibury, Cotswolds",
+  "credit": "Magda Vrabetz",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/brown-concrete-houses-beside-river-dfsccHCRsZ4",
+  "wp_id": 15956
+ },
+ "uk-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-oxford-radcliffe-camera-scaled.webp",
+  "alt": "The domed Radcliffe Camera on a cobbled square, Oxford, England",
+  "cap": "Radcliffe Camera, Oxford",
+  "credit": "Tibi Isaiah",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/the-radcliffe-camera-oxford-england-on-a-sunny-day-3-CIJjbvkOI",
+  "wp_id": 15957
+ },
+ "uk-8": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-edinburgh-castle-vennel.webp",
+  "alt": "Edinburgh Castle on its rock seen from the Vennel above the Grassmarket, Edinburgh, Scotland",
+  "cap": "Edinburgh Castle",
+  "credit": "Bree Anne",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-view-of-a-city-with-a-castle-in-the-background-CmL4qgdXTsE",
+  "wp_id": 15958
+ },
+ "uk-9": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-glencoe-highlands.webp",
+  "alt": "Green mountains of Glencoe in the Scottish Highlands, Scotland",
+  "cap": "Glencoe, Highlands",
+  "credit": "Ryan Parker",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/a-grassy-valley-with-mountains-in-the-background-HYDdIcTtc8Y",
+  "wp_id": 15959
+ },
+ "uk-10": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/10/suzu-abroad-uk-eilean-donan-castle.webp",
+  "alt": "Eilean Donan Castle on its small island in the loch, seen from the air, Scottish Highlands",
+  "cap": "Eilean Donan Castle",
+  "credit": "Johnny Briggs",
+  "license": "Unsplash License",
+  "src": "https://unsplash.com/photos/an-aerial-view-of-a-castle-on-a-small-island-y00qKgHA9sE",
+  "wp_id": 15960
  }
 }
