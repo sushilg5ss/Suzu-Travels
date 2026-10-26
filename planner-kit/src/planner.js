@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.4';
+  var VER = '1.5';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -178,6 +178,7 @@
     var cur = S.s, dayNo = 0, date = d0, nights = [], kmDrive = 0, kmLocal = 0;
     var pending = { from: cur, via: [], km: 0, min: 0, path: [cur] };
     var visited = [cur];
+    var left = {};
     function sightsOf(id, dt) {
       var mo = dt.getMonth() + 1;
       return (PL[id].sights || []).filter(function (s) {
@@ -185,9 +186,21 @@
         var key = 'sight-' + s.n; if (!out.warn.some(function (w) { return w.k === key; }))
           out.warn.push({ r: 0, k: key, t: s.n.replace(/ \(.*\)$/, '') + ' is usually closed in ' + MS[mo - 1] + ' (open about ' + MS[s.m[0] - 1] + '–' + MS[s.m[s.m.length - 1] - 1] + '), so it is left out of your day plan.' + (id === 'manali' ? ' Snow fun in winter is at Solang Valley; Atal Tunnel & Sissu when the road is open.' : '') });
         return false;
-      }).map(function (s) { return { n: s.n, km: s.km, note: s.note }; });
+      }).map(function (s) { return { n: s.n, km: s.km, note: s.note, cl: s.cl }; });
     }
-    var left = {};
+    /* weekly closed days (e.g. Akshardham / Viceregal Lodge on Mondays): never schedule a sight on its closed day */
+    var DAYN = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    function shut(s, dt) { return !!(s && s.cl && s.cl.indexOf(dt.getDay()) > -1); }
+    var shutSkip = {};
+    function takeOpen(id, dt, test) {
+      var L = left[id];
+      for (var i = 0; i < L.length; i++) {
+        if (test && !test(L[i])) continue;
+        if (shut(L[i], dt)) { shutSkip[L[i].n] = { id: id, s: L[i], d: dt }; continue; }
+        return L.splice(i, 1)[0];
+      }
+      return null;
+    }
     stops.forEach(function (st, si) {
       var p = PL[st.id];
       var k = km(cur, st.id), m = mins(cur, st.id);
@@ -196,7 +209,7 @@
       cur = st.id; visited.push(st.id);
       if (!left[st.id]) left[st.id] = sightsOf(st.id, date);
       if (st.n === 0) {
-        var s0 = left[st.id].shift();
+        var s0 = takeOpen(st.id, date);
         pending.via.push({ id: st.id, sight: s0 });
         pending.km += s0 ? Math.min(s0.km, 20) : 0;
         return;
@@ -207,8 +220,8 @@
       if (dayNo === 1 && pending.km === 0) day.type = 'arrive';
       var lk = pending.km === 0 ? 25 : 10;
       if (pending.min <= 270 || pending.km === 0) {
-        var short = left[st.id].filter(function (s) { return s.km <= 15; })[0];
-        if (short) { day.sights.push(short); left[st.id].splice(left[st.id].indexOf(short), 1); lk += short.km; }
+        var short = takeOpen(st.id, date, function (s) { return s.km <= 15; });
+        if (short) { day.sights.push(short); lk += short.km; }
       }
       kmDrive += pending.km; kmLocal += lk; day.localKm = lk;
       if (pending.min > 600) out.warn.push({ r: 0, t: 'Day ' + dayNo + ': ' + PL[day.from].name + ' → ' + p.name + ' is a long drive (' + hrs(pending.min) + '). Consider a night halt on the way.' });
@@ -220,9 +233,11 @@
         var ld = { no: dayNo, date: date, type: 'local', from: st.id, to: st.id, via: [], km: 0, min: 0, path: [st.id], stay: st.id, sights: [], opt: [] };
         var budget = 0;
         while (left[st.id].length) {
-          var s = left[st.id][0];
+          var s = null;
+          for (var q = 0; q < left[st.id].length && !s; q++) { var x = left[st.id][q]; if (shut(x, date)) shutSkip[x.n] = { id: st.id, s: x, d: date }; else s = x; }
+          if (!s) break;
           if (ld.sights.length && (budget + s.km > 130 || s.km >= 80 || ld.sights.length >= 3)) break;
-          ld.sights.push(left[st.id].shift()); budget += s.km;
+          left[st.id].splice(left[st.id].indexOf(s), 1); ld.sights.push(s); budget += s.km;
           if (s.km >= 80) break;
         }
         if (!ld.sights.length) ld.sights.push({ n: 'Free day — relax, cafés, local markets', km: 15 });
@@ -231,7 +246,7 @@
         date = addD(date, 1);
       }
       var lastLocal = out.days[out.days.length - 1];
-      lastLocal.opt = left[st.id].slice(0, 3);
+      lastLocal.opt = left[st.id].filter(function (x) { return !shutSkip[x.n]; }).slice(0, 3);
       pending = { from: st.id, via: [], km: 0, min: 0, path: [st.id] };
     });
     /* departure day */
@@ -245,6 +260,12 @@
     out.days.push(dep);
     out.route = visited.concat([S.e]);
 
+    /* sights left out only because of their weekly closed day */
+    Object.keys(shutSkip).forEach(function (n) {
+      var o = shutSkip[n]; if (!left[o.id] || left[o.id].indexOf(o.s) < 0) return;
+      var dn = DAYN[o.d.getDay()];
+      out.warn.push({ r: 0, k: 'shut-' + n, t: n.replace(/ \(.*\)$/, '') + ' is closed on ' + dn + 's and your ' + PL[o.id].name + ' day falls on a ' + dn + ', so it is left out of your day plan — shift your dates by a day to include it.' });
+    });
     /* Kedarnath: trek up, darshan, trek down = 2 nights at Guptkashi / Sitapur */
     stops.forEach(function (st) {
       if (st.id === 'guptkashi' && st.n < 2 && !out.warn.some(function (w) { return w.k === 'kedar'; }))

@@ -102,6 +102,15 @@ const { chromium, devices } = require('playwright');
     r.navratri = (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Navratri'));
     await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1({ v: 1, s: 'chandigarh', e: 'chandigarh', d: '2027-02-10', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['chintpurni', 1]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
     r.noNavratri = { title: await p3.textContent('#m-title'), n: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Navratri')).length };
+    // v1.5: weekly closed days — Viceregal Lodge / Bhuri Singh Museum never on a Monday
+    r.closedDays = {};
+    for (const [nm, d, place, n, l] of [['shimlaMon', '2027-01-10', 'shimla', 3], ['shimlaTue', '2027-01-11', 'shimla', 3], ['chambaMon', '2027-01-10', 'chamba', 3], ['delhiMon', '2027-01-11', 'delhi', 3], ['shimla2Mon', '2027-01-10', 'shimla', 2], ['shimla2MonHi', '2027-01-10', 'shimla', 2, 'hi']]) {
+      const st = { v: 1, s: 'chandigarh', e: 'chandigarh', d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [[place, n]], x: [], tp: '' }; if (l) st.l = l;
+      await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+      const days = await p3.$$eval('.tl-day', x => x.map(y => y.textContent));
+      r.closedDays[nm] = { days: days.map(t => t.replace(/\s+/g, ' ').slice(0, 260)), warns: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => /closed on Mondays|सोमवार को बंद/.test(t)) };
+    }
+    await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.close();
     // agent mode client link
     await p2.click('.tp-mode [data-mode="agent"]'); await p2.waitForTimeout(300);

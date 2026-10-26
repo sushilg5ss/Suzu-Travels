@@ -10,3 +10,13 @@ Checked 17 Oct 2026. Pricing is NOT changed by these windows — Sharad Navratri
 
 Mata temples flagged: Naina Devi, Chintpurni, Jwala Ji, Kangra (Brajeshwari), Chamunda, Katra (Vaishno Devi; RFID yatra registration note).
 TODO next year: add Chaitra 2028 / Sharad 2028 from Drik Panchang; Shravan Ashtami melas (Naina Devi, Chintpurni) once verified.
+
+## Weekly closed days of sights (v1.5, checked 26 Oct 2026)
+The day planner never schedules these on their closed day (data: `CLOSED_DAYS` in `data/places.py`); if the stay has no other day, it warns.
+| Sight | Closed | Source |
+|---|---|---|
+| Akshardham, Delhi | Monday | https://akshardham.com/?p=9 (visitor information: closed every Monday) |
+| Viceregal Lodge (IIAS), Shimla | Monday + national holidays | https://iias.ac.in/for-tourists/ |
+| Bhuri Singh Museum, Chamba | Monday + gazetted holidays | https://www.bhurisinghmuseumchamba.in/visit/ |
+| Virasat-e-Khalsa, Anandpur Sahib | Monday | already in data name (closed Mondays) |
+Taj Mahal Friday keeps its own warning (unchanged).

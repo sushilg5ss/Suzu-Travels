@@ -127,6 +127,7 @@
   }
   /* phase 2 (v0.9, 20 Oct 2026): place tips, sight notes, region / season packing tips (PDF "Good to know") */
   var TIPHI = {
+    'closed Mondays': 'सोमवार बंद',
     'IGI Airport / NDLS railway station pickup': 'IGI एयरपोर्ट / नई दिल्ली रेलवे स्टेशन से पिकअप',
     'Airport / railway station / ISBT pickup': 'एयरपोर्ट / रेलवे स्टेशन / ISBT से पिकअप',
     'Railway station pickup': 'रेलवे स्टेशन से पिकअप',
@@ -199,6 +200,7 @@
 
   /* pattern rules: [regex, fn(match) -> hindi] — tried in order after the exact dictionary */
   var RX = [
+    [/^(.+) is closed on (\w+)s and your (.+) day falls on a \w+, so it is left out of your day plan — shift your dates by a day to include it\.$/, function (m) { var D = { Sunday: 'रविवार', Monday: 'सोमवार', Tuesday: 'मंगलवार', Wednesday: 'बुधवार', Thursday: 'गुरुवार', Friday: 'शुक्रवार', Saturday: 'शनिवार' }[m[2]] || m[2]; return sn(m[1]) + ' ' + D + ' को बंद रहता है और आपका ' + pn(m[3]) + ' वाला दिन ' + D + ' है, इसलिए इसे प्लान से हटाया गया है — इसे शामिल करने के लिए तारीख़ एक दिन आगे-पीछे करें।'; }],
     [/^Fits your budget: (.+?) hotels, (breakfast \+ dinner|breakfast only) — about (₹[\d,]+) per adult\.$/, function (m) { return 'आपके बजट में: ' + (EX[m[1]] || m[1]) + ' होटल, ' + (m[2] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ' — लगभग ' + m[3] + ' प्रति वयस्क।'; }],
     [/^Car changed to (.+) \(right size for your group\) to bring the price down\.$/, function (m) { return 'कीमत कम करने के लिए गाड़ी बदलकर ' + (EX[m[1]] || m[1]) + ' की गई (आपके ग्रुप के हिसाब से सही साइज़)।'; }],
     [/^Lowest estimate for this route is about (₹[\d,]+) per adult \((.+?), (breakfast \+ dinner|breakfast only)\)\. .+$/, function (m) { return 'इस रूट का सबसे कम अनुमान लगभग ' + m[1] + ' प्रति वयस्क है (' + (EX[m[2]] || m[2]) + ', ' + (m[3] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ')। कम रातें, छोटा रूट या ज़्यादा लोग एक गाड़ी में — इससे कीमत घटती है। या हमसे पूछें, टीम अक्सर इससे कम में कर देती है।'; }],

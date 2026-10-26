@@ -235,4 +235,20 @@ add("tsomoriri", "Tso Moriri (Korzok)", "त्सो मोरीरी", 32.96
     [("Tso Moriri lakeside & Korzok Monastery", 3), ("Puga hot springs & Tso Kar", 60)],
     months=[5, 6, 7, 8, 9, 10], tip="4,500 m — only after 2+ nights in Leh; Inner Line Permit")
 
+# Weekly closed days (JS getDay: 0 = Sunday, 1 = Monday ...) — official sources in research/festivals.md (26 Oct 2026).
+# The day planner never schedules these on their closed day; if every day at that place is a closed day it warns.
+CLOSED_DAYS = {
+    "Akshardham": [1],                                 # akshardham.com visitor info: closed every Monday
+    "Viceregal Lodge": [1],                            # iias.ac.in/for-tourists: closed Mondays & national holidays
+    "Bhuri Singh Museum": [1],                         # bhurisinghmuseumchamba.in/visit: closed Mondays & gazetted holidays
+    "Virasat-e-Khalsa museum (closed Mondays)": [1],   # already noted in the name
+}
+for _p in P:
+    for _s in _p["sights"]:
+        if _s["n"] in CLOSED_DAYS:
+            _s["cl"] = CLOSED_DAYS[_s["n"]]
+            if not _s["note"] and "closed" not in _s["n"]:
+                _s["note"] = "closed Mondays"
+assert sum(1 for _p in P for _s in _p["sights"] if "cl" in _s) == len(CLOSED_DAYS)
+
 PLACES = P
