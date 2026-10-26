@@ -148,6 +148,10 @@ PLACES = {
     "Anandpur Sahib": (31.23, 76.50), "Nangal": (31.38, 76.38), "Una": (31.48, 76.28), "Amb": (31.70, 76.12), "Mubarikpur": (31.71, 76.09),
     "Chintpurni": (31.81, 76.11), "Dehra": (31.88, 76.23), "Jawalamukhi": (31.84, 76.31), "Ranital": (32.00, 76.23),
     "Neelkanth": (30.08, 78.34), "Chopta": (30.47, 79.21), "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
+    # 26 Oct 2026 · Char Dham circuit (Photon/OSM coords, checked)
+    "Barkot": (30.81, 78.21), "Janki Chatti": (30.98, 78.44), "Yamunotri": (31.01, 78.46), "Uttarkashi": (30.73, 78.45), "Gangotri": (30.99, 78.94),
+    "Ghansali": (30.43, 78.66), "Tilwara": (30.35, 78.98), "Guptkashi": (30.52, 79.08), "Gaurikund": (30.65, 79.02), "Kedarnath": (30.73, 79.07),
+    "Ukhimath": (30.52, 79.10), "Chamoli": (30.40, 79.32), "Joshimath": (30.56, 79.56), "Karnaprayag": (30.26, 79.22),
 }
 
 # every route card shown anywhere (hub grid, "more routes"); page = slug when a page exists

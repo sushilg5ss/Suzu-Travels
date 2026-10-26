@@ -122,8 +122,8 @@ def build(p):
             kept.append((x, y))
     # panel
     if mode == "path":
-        r = ROUTE_BY_SLUG[p["route"]]
-        via = [n for n in labels[1:-1]][:3]
+        r = ROUTE_BY_SLUG[p["route"]] if p.get("route") else m["panel"]   # 26 Oct 2026: tour pages (no ROUTES row) pass panel=dict(a,b,km,t)
+        via = m.get("via") or [n for n in labels[1:-1]][:3]
         panel = (f'<div class="kick">ROUTE PLAN</div><div class="big">{r["a"]}</div><div class="arrow"><i></i></div><div class="big">{r["b"]}</div>'
                  f'<div class="stats"><div><b>{r["km"]} km</b><span>distance</span></div><div><b>{m.get("t") or r["t"]}</b><span>{m.get("t_sub") or "by road"}</span></div></div>'
                  f'<div class="via">via {" · ".join(via)}</div>')

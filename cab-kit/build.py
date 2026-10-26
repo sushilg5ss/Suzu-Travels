@@ -333,7 +333,7 @@ def outstation_table(outs, slug):
             + "".join(rows) + "</tbody></table></div>")
 
 def build_city(p):
-    town = p["map"]["hub"]
+    town = p.get("town") or p["map"]["hub"]   # 26 Oct 2026: city/tour pages may use a path map (e.g. char-dham-yatra-taxi) and set town
     outs = p["outstation"]
     chips = p.get("chips") or [f"Local sightseeing", f"Outstation drops", f'To {outs[0][1]} from <b>{inr(oneway("sedan", outs[0][2], outs[0][3]))}</b>', "Hatchback → Tempo Traveller", "24×7 WhatsApp"]
     dests = [dict(l=f"{a} → {b}", km=km, f=f) for a, b, km, f in outs]
@@ -341,9 +341,9 @@ def build_city(p):
     body += (f'<section class="szc-sec" id="overview"><span class="szc-kicker">At a glance</span><h2>{p["title"]}: rates and trips</h2>'
              f'<div class="szc-answer">{p["answer"]}</div>{facts(p["facts"])}</section>')
     body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Rates 2026</span><h2>{p.get("rates_h") or town + " local taxi rates"}</h2>{local_table(p["local_rates"])}'
-             f'<h3 style="margin-top:34px">Outstation taxi from {town}</h3>{outstation_table(outs, p["slug"])}{includes()}'
+             f'<h3 style="margin-top:34px">{p.get("out_h") or "Outstation taxi from " + town}</h3>{outstation_table(outs, p["slug"])}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
-    body += route_media(p["slug"], p["stops"], f"Popular taxi trips from {town}", f"Where our {town} cabs go most, and what each trip is known for.")
+    body += route_media(p["slug"], p["stops"], p.get("route_h") or f"Popular taxi trips from {town}", p.get("route_lead") or f"Where our {town} cabs go most, and what each trip is known for.")
     body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Cars available {p.get("in_town") or "in " + town}</h2>{vehicle_cards(p["slug"], town, dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know about taxis {p.get("in_town") or "in " + town}</h2>{tips(p["tips"])}</section>'
     body += f'<section class="szc-sec alt" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'

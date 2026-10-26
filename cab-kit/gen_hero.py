@@ -190,6 +190,7 @@ VARIANTS = {
   "dehradun-to-mussoorie-taxi": dict(routes=[("Dehradun","Mussoorie")], kicker="QUEEN OF HILLS · 35 KM CLIMB"),
   "tempo-traveller-chandigarh": dict(routes=[("Chandigarh","Manali")], kicker="12–17 SEATS · TRICITY PICKUP"),
   "kalka-to-shimla-taxi": dict(routes=[("Kalka","Shimla")], kicker="STATION PICKUP · NH5 HILLS"),
+  "char-dham-yatra-taxi": dict(routes=[("Haridwar","Char Dham")], kicker="YAMUNOTRI · GANGOTRI · KEDARNATH · BADRINATH"),
   "dehradun-taxi-service": dict(routes=[("Dehradun taxis",None)], kicker="JOLLY GRANT · MUSSOORIE"),
   "dharamshala-taxi-service": dict(routes=[("Dharamshala taxis",None)], kicker="MCLEODGANJ · BIR · GAGGAL"),
   "srinagar-taxi-service": dict(routes=[("Srinagar taxis",None)], kicker="GULMARG · PAHALGAM · DAL"),
