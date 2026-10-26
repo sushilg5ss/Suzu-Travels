@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; overflow: hidden; }
+      .bg img { position: absolute; left: -40px; top: -20px; width: 2000px; height: 1125px; object-fit: cover; opacity: 0.32; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.55) 0%, rgba(11,31,51,0.82) 55%, rgba(11,31,51,0.96) 100%); }
+      .kick { position: absolute; left: 120px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.16em; }
+      .title { position: absolute; left: 120px; top: 112px; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.ch { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      svg.ch text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .months { position: absolute; left: 160px; top: 812px; width: 1600px; height: 170px; }
+      .end { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      .chip { position: absolute; top: 990px; height: 64px; line-height: 64px; padding: 0 30px; border-radius: 32px; font-weight: 800; font-size: 32px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-layout-allow-overflow data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/range.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="1" data-layout-allow-overlap style="position:absolute;inset:0">
+        <div class="kick" id="kick">SNOW · SKIING · NARKANDA</div>
+        <div class="title" id="title">How high does your snow day go?</div>
+        <svg class="ch" viewBox="0 0 1920 1080">
+          <line x1="140" y1="700" x2="1780" y2="700" stroke="rgba(255,255,255,0.25)" stroke-width="3" />
+          <g id="bars"></g>
+          <path id="route" d="M 220 700 L 540 700 L 790 700 L 1310 700 L 1640 700" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" />
+          <g id="stops"></g>
+        </svg>
+        <svg class="months" viewBox="0 0 1600 170" id="msvg">
+          <g id="mcells"></g>
+          <rect id="snowband" x="570" y="64" width="566" height="50" rx="14" fill="rgba(255,255,255,0.92)" />
+          <text id="snowtxt" x="853" y="99" text-anchor="middle" style="font-family:PJS,sans-serif;font-weight:800;font-size:30px;fill:#0b1f33">Snow: usually late Dec – Feb</text>
+          <rect id="skiband" x="686" y="122" width="680" height="42" rx="12" fill="#d4a24c" />
+          <text id="skitxt" x="1026" y="152" text-anchor="middle" style="font-family:PJS,sans-serif;font-weight:800;font-size:26px;fill:#0b1f33">Ski lessons: Jan – Mar (when snow is deep)</text>
+        </svg>
+        <div class="end">
+          <div class="chip" id="c1" style="left:160px;background:#fff;color:#0b1f33">No permit needed</div>
+          <div class="chip" id="c2" style="left:520px;background:rgba(255,255,255,0.12);color:#fff;border:2px solid rgba(255,255,255,0.5)">Hotel + cab + ski day, one plan</div>
+          <div class="chip" id="c3" style="left:1100px;background:#d4a24c;color:#0b1f33">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const NS = "http://www.w3.org/2000/svg";
+      const mk = (tag, attrs, parent, text) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text) e.textContent = text; parent.appendChild(e); return e; };
+      tl.fromTo("#bgi", { scale: 1.06, x: 0 }, { scale: 1, x: -30, duration: 12, ease: "none" }, 0);
+      tl.from("#kick", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from("#title", { opacity: 0, y: 30, duration: 0.6, ease: "power3.out" }, 0.2);
+      // stops: x, name, km label, altitude (m) or null
+      const S = [
+        [220, "Shimla", "start", 2200],
+        [540, "Kufri", "~16–20 km", 2500],
+        [790, "Theog", "~30 km", null],
+        [1310, "Narkanda", "63–65 km", 2708],
+        [1640, "Hatu Peak", "+7–8 km", 3400],
+      ];
+      const bars = document.getElementById("bars"), stops = document.getElementById("stops");
+      const H = (a) => (a - 1800) * 0.24;
+      const route = document.getElementById("route");
+      const len = 1640 - 220;
+      route.setAttribute("stroke-dasharray", len); route.setAttribute("stroke-dashoffset", len);
+      tl.to(route, { attr: { "stroke-dashoffset": 0 }, duration: 4.6, ease: "none" }, 0.9);
+      S.forEach(([x, name, km, alt], i) => {
+        const t = 0.9 + 4.6 * (x - 220) / len;
+        const hl = name === "Narkanda";
+        if (alt) {
+          const h = H(alt);
+          const r = mk("rect", { x: x - 62, y: 700, width: 124, height: 0, rx: 14, fill: hl ? "#d4a24c" : "rgba(255,255,255,0.88)" }, bars);
+          tl.to(r, { attr: { y: 700 - h, height: h }, duration: 0.7, ease: "power3.out" }, t);
+          const at = mk("text", { x, y: 700 - h - 22, "text-anchor": "middle", "font-size": 40, opacity: 0 }, bars, "~" + alt.toLocaleString("en-US") + " m");
+          if (hl) at.setAttribute("fill", "#d4a24c");
+          tl.to(at, { attr: { opacity: 1 }, duration: 0.4 }, t + 0.35);
+        }
+        const dot = mk("circle", { cx: x, cy: 700, r: 0, fill: hl ? "#d4a24c" : "#fff", stroke: "#0b1f33", "stroke-width": 5 }, stops);
+        tl.to(dot, { attr: { r: hl ? 20 : 14 }, duration: 0.35, ease: "back.out(2)" }, t);
+        const nm = mk("text", { x, y: 756, "text-anchor": "middle", "font-size": 38, opacity: 0 }, stops, name);
+        const kt = mk("text", { x, y: 796, "text-anchor": "middle", "font-size": 28, opacity: 0, fill: "rgba(255,255,255,0.75)" }, stops, km);
+        tl.to([nm, kt], { attr: { opacity: 1 }, duration: 0.4 }, t + 0.1);
+      });
+      // month strip
+      const mc = document.getElementById("mcells");
+      const M = ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
+      M.forEach((m, i) => {
+        const x = i * 228 + 2;
+        const c = mk("rect", { x, y: 6, width: 220, height: 56, rx: 14, fill: "rgba(255,255,255,0.1)", stroke: "rgba(255,255,255,0.3)", "stroke-width": 2, opacity: 0 }, mc);
+        const tx = mk("text", { x: x + 110, y: 45, "text-anchor": "middle", style: "font-family:PJS,sans-serif;font-weight:800;font-size:30px;fill:#fff", opacity: 0 }, mc, m);
+        tl.to([c, tx], { attr: { opacity: 1 }, duration: 0.3 }, 6.0 + i * 0.08);
+      });
+      // snow band: late Dec (half cell) to end of Feb; ski band Jan to end of Mar
+      tl.fromTo("#snowband", { attr: { width: 0 } }, { attr: { width: 566 }, duration: 0.9, ease: "power2.out" }, 6.9);
+      tl.set("#snowband", { attr: { x: 570 } }, 0);
+      tl.set("#snowtxt", { attr: { x: 853 } }, 0);
+      tl.from("#snowtxt", { opacity: 0, duration: 0.4 }, 7.6);
+      tl.fromTo("#skiband", { attr: { width: 0 } }, { attr: { width: 680 }, duration: 0.9, ease: "power2.out" }, 8.0);
+      tl.set("#skiband", { attr: { x: 686 } }, 0);
+      tl.from("#skitxt", { opacity: 0, duration: 0.4 }, 8.7);
+      // end chips
+      ["#c1", "#c2", "#c3"].forEach((c, i) => tl.from(c, { opacity: 0, y: 30, duration: 0.45, ease: "power3.out" }, 9.6 + i * 0.25));
+      // gentle pulse on Narkanda bar label region via the route glow
+      tl.to("#route", { attr: { "stroke-width": 10 }, duration: 0.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 6.0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

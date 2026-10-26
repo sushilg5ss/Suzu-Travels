@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+      .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.55) 0%, rgba(11,31,51,0) 22%, rgba(11,31,51,0) 48%, rgba(11,31,51,0.88) 76%, rgba(11,31,51,0.95) 100%); }
+      .cap { position: absolute; left: 90px; width: 900px; top: 1240px; }
+      .k { color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.14em; }
+      .h { font-weight: 800; font-size: 96px; line-height: 1.04; letter-spacing: -0.02em; margin-top: 18px; }
+      .s { font-weight: 800; font-size: 50px; line-height: 1.2; margin-top: 26px; color: rgba(255,255,255,0.94); }
+      .gb { height: 10px; width: 0; background: #d4a24c; border-radius: 5px; margin-bottom: 28px; }
+      .tg { position: absolute; left: 0; top: 0; width: 1080px; height: 1000px; background: linear-gradient(180deg, rgba(11,31,51,0.92) 0%, rgba(11,31,51,0.8) 45%, rgba(11,31,51,0) 100%); }
+      #snow { position: absolute; inset: 0; }
+      .fl { position: absolute; left: 0; top: 0; border-radius: 50%; background: #fff; }
+      .brand { position: absolute; left: 70px; top: 96px; padding: 14px 26px; border-radius: 40px; background: rgba(11,31,51,0.82); font-weight: 800; font-size: 40px; letter-spacing: 0.04em; }
+      .brand b { color: #d4a24c; }
+      .endc { position: absolute; inset: 0; background: #0b1f33; }
+      .eh { position: absolute; left: 90px; top: 520px; width: 900px; font-weight: 800; font-size: 104px; line-height: 1.04; letter-spacing: -0.02em; }
+      .btn { position: absolute; left: 90px; top: 1010px; height: 130px; line-height: 130px; padding: 0 64px; border-radius: 65px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 64px; }
+      .url { position: absolute; left: 90px; top: 1220px; width: 900px; font-weight: 800; font-size: 46px; line-height: 1.3; }
+      .reg { position: absolute; left: 90px; top: 1560px; width: 900px; font-weight: 500; font-size: 36px; line-height: 1.4; color: rgba(255,255,255,0.88); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/forest.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3.4" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/ski.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6.8" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/sled.jpg" alt="" style="object-position:74% 50%" /><div class="tg"></div></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="10.2" data-duration="2.4" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/road.jpg" alt="" style="object-position:62% 50%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12.6" data-track-index="4" data-layout-allow-overlap style="position:absolute;inset:0">
+        <div class="grad"></div>
+        <div id="snow"></div>
+        <div class="brand">SUZU <b>TRAVELS</b></div>
+                <div class="cap" id="c1"><div class="gb"></div><div class="k">SNOW · NARKANDA</div><div class="h">Shimla's higher snow line</div><div class="s">About 2,708 m · 63–65 km beyond Shimla</div></div>
+        <div class="cap" id="c2"><div class="gb"></div><div class="k">FIRST SKI</div><div class="h">Beginner ski lessons</div><div class="s">Gentle slopes, about Jan–Mar when the snow is deep</div></div>
+        <div class="cap" id="c3" style="top:250px"><div class="gb"></div><div class="k">FAMILIES</div><div class="h">Snow play &amp; sledging</div><div class="s">Snow usually settles late Dec–Feb</div></div>
+        <div class="cap" id="c4"><div class="gb"></div><div class="k">THE DRIVE</div><div class="h">Timed to cleared roads</div><div class="s">Chains or a 4x4 after fresh snow</div></div>
+      </div>
+      <div id="end" class="clip" data-start="12.4" data-duration="2.6" data-track-index="5" style="position:absolute;inset:0">
+        <div class="endc" id="endbg">
+          <div class="brand">SUZU <b>TRAVELS</b></div>
+          <div class="eh" id="eh">Hotel + cab + <span style="color:#d4a24c">snow day</span> in Narkanda</div>
+          <div class="btn" id="btn">Get Quote</div>
+          <div class="url" id="url">suzutravels.com/adventure/<br />snow-and-skiing-in-narkanda</div>
+          <div class="reg" id="reg">HP Tourism registered travel agent<br />Reg. No. DTO-MND-11-243/2022</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, y: 0 }, { scale: 1.08, y: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.06, y: 0 }, { scale: 1, y: -24, duration: 3.8, ease: "none" }, 3.4);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: -30, duration: 3.8, ease: "none" }, 6.8);
+      tl.fromTo("#im4", { scale: 1.06, y: 0 }, { scale: 1, y: -20, duration: 2.4, ease: "none" }, 10.2);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 3.4);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 6.8);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 10.2);
+      tl.set(["#c2", "#c3", "#c4"], { opacity: 0 }, 0);
+      tl.to(".grad", { opacity: 0.3, duration: 0.5, ease: "sine.inOut" }, 6.8);
+      tl.to(".grad", { opacity: 1, duration: 0.5, ease: "sine.inOut" }, 10.0);
+      const caps = [["#c1", 0.2, 3.3], ["#c2", 3.6, 6.7], ["#c3", 7.0, 10.1], ["#c4", 10.4, 12.3]];
+      caps.forEach(([c, a, b]) => {
+        tl.fromTo(c, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out", immediateRender: false }, a);
+        tl.to(c, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, b);
+        tl.fromTo(c + " .gb", { width: 0 }, { width: 360, duration: 0.8, ease: "power2.out", immediateRender: false }, a);
+      });
+      let seed = 11;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const snow = document.getElementById("snow");
+      const flakes = [];
+      for (let i = 0; i < 70; i++) {
+        const el = document.createElement("div"); el.className = "fl";
+        const s = 4 + rnd() * 7; el.style.width = s + "px"; el.style.height = s + "px"; el.style.opacity = (0.45 + rnd() * 0.5).toFixed(2);
+        snow.appendChild(el);
+        flakes.push({ el, x: rnd() * 1080, y: rnd() * 1980, sp: 160 + rnd() * 160, a: 10 + rnd() * 25, w: 0.4 + rnd() * 0.6, ph: rnd() * 6.283 });
+      }
+      const st = { t: 0 };
+      const up = () => { flakes.forEach((f) => { const y = ((f.y + st.t * f.sp) % 1980) - 40; const x = f.x + Math.sin(st.t * f.w + f.ph) * f.a; f.el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`; }); };
+      tl.fromTo(st, { t: 0 }, { t: 12.6, duration: 12.6, ease: "none", onUpdate: up }, 0);
+      tl.fromTo("#endbg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 12.4);
+      tl.from("#eh", { opacity: 0, y: 40, duration: 0.5, ease: "power3.out" }, 12.6);
+      tl.from("#btn", { opacity: 0, scale: 0.9, duration: 0.45, ease: "back.out(2)" }, 12.9);
+      tl.from(["#url", "#reg"], { opacity: 0, y: 20, duration: 0.45, ease: "power2.out", stagger: 0.15 }, 13.1);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      up();
+    </script>
+  </body>
+</html>
