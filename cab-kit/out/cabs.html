@@ -258,7 +258,7 @@ if(pl){
  var autoRun=pl.getAttribute('data-auto')?true:false;
  try{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){io.disconnect();if(autoRun){if(!last){run(true);return;}}ensureMap(function(){});}});},{rootMargin:autoRun?'120px':'400px'});io.observe(mapBox);}catch(e){}
 
-var vbox=$('szc-pvias'),vadd=$('szc-padd');
+var vbox=$('szc-pvias'),vadd=$('szc-padd'),hubAddVia=null;
 if(vbox){if(vadd){
  var MAXV=3,run1=run,render1=render;
  var vlist=$('szc-pvlist');
@@ -379,8 +379,74 @@ if(vbox){if(vadd){
   qa('.szc-ptier',out).forEach(function(b2){b2.addEventListener('click',function(){setTier(b2.getAttribute('data-tier'));});});
   var rp=$('szc-replay');if(rp){rp.addEventListener('click',function(){if(last){play(last.res);}});}
  };
+ hubAddVia=addVia;
  relabel();
 }}
+
+
+var shRe=/^\d{4}-\d{2}-\d{2}$/;
+function shClean(x){return String(x||'').replace(/[<>"]/g,'').trim().slice(0,60);}
+function shLink(){
+ var q=[],dy2=$('szc-pdy');
+ function add(k,v){if(v){q.push(k+'='+encodeURIComponent(v));}}
+ add('from',shClean($('szc-fa').value));
+ var vs=qa('input.szc-vin').map(function(i){return shClean(i.value);}).filter(function(x){return x.length>0;});
+ if(vs.length){add('via',vs.join('|'));}
+ add('to',shClean($('szc-fb').value));
+ add('car',$('szc-pv').value);
+ add('trip',$('szc-pm').value);
+ if(dy2){if($('szc-pm').value==='round'){add('days',dy2.value);}}
+ add('tier',tier);
+ add('date',$('szc-pd').value);
+ add('ppl',$('szc-pn').value);
+ return location.origin+location.pathname+'?'+q.join(AMP)+'#planner';
+}
+function shText(){
+ var f=out.querySelector('.szc-pfacts'),km='';
+ if(f){var v1=f.querySelector('.v');if(v1){km=v1.textContent;}}
+ var on=out.querySelector('.szc-ptier.on .a'),amt=on?on.textContent:'';
+ var vs=qa('input.szc-vin').map(function(i){return shClean(i.value);}).filter(function(x){return x.length>0;});
+ var path=[shClean($('szc-fa').value)].concat(vs,[shClean($('szc-fb').value)]).join(' → ');
+ return 'Our road trip plan: '+path+(km?', '+km:'')+(amt?', '+PV[$('szc-pv').value].n+' '+amt+' ('+TNAME[tier].split(' (')[0]+')':'')+' - see the route on the map:';
+}
+function shDone(b,t){var o=b.textContent;b.textContent=t;b.classList.add('ok');setTimeout(function(){b.textContent=o;b.classList.remove('ok');},2200);}
+function shCopy(b,url){
+ function fb(){window.prompt('Copy this link',url);}
+ if(navigator.clipboard){if(navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(function(){shDone(b,'Link copied ✓');},fb);return;}}
+ fb();
+}
+function shAdd(){
+ var row=out.querySelector('.szc-btns');if(!row){return;}
+ if(row.querySelector('.szc-pshare')){return;}
+ var b=document.createElement('button');b.type='button';b.className='szc-btn line szc-pshare';b.textContent='Share this plan';
+ b.setAttribute('aria-label','Share or copy a link to this route plan');
+ b.addEventListener('click',function(){
+  var url=shLink();
+  if(navigator.share){navigator.share({title:'Road trip plan - Suzu Travels',text:shText(),url:url}).catch(function(){});return;}
+  shCopy(b,url);
+ });
+ row.appendChild(b);
+}
+var render2=render;
+render=function(res,a,b){render2(res,a,b);shAdd();};
+(function(){
+ var s=location.search;if(!s){return;}if(s.length<2){return;}
+ var Q={};
+ s.slice(1).split(AMP).forEach(function(kv){var i=kv.indexOf('=');if(i>0){try{Q[kv.slice(0,i)]=decodeURIComponent(kv.slice(i+1).replace(/\+/g,' '));}catch(e){}}});
+ var A=shClean(Q.from),B=shClean(Q.to);
+ if(!A){return;}if(!B){return;}
+ $('szc-fa').value=A;$('szc-fb').value=B;
+ if(PV[Q.car]){$('szc-pv').value=Q.car;}
+ if(Q.trip==='round'){$('szc-pm').value='round';}else{if(Q.trip==='one'){$('szc-pm').value='one';}}
+ try{$('szc-pm').dispatchEvent(new Event('change'));}catch(e){}
+ var d2=parseInt(Q.days,10),dy3=$('szc-pdy');if(dy3){if(d2>0){if(d2<21){dy3.value=d2+'';}}}
+ if(shRe.test(Q.date||'')){$('szc-pd').value=Q.date;}
+ var n2=parseInt(Q.ppl,10);if(n2>0){if(n2<46){$('szc-pn').value=n2+'';}}
+ if(Q.via){if(hubAddVia){Q.via.split('|').slice(0,3).forEach(function(v){v=shClean(v);if(v){hubAddVia(v);}});}}
+ PC.s='cabs shared';
+ if(TIERS[Q.tier]){if(Q.tier!==tier){setTier(Q.tier);}}
+ run();
+})();
 }
 })();
 </script></div>
