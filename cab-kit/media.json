@@ -697,5 +697,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "char-dham-yatra-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@4429857569428fb28ddfc3167fbee319dbbede47/cab-kit/media/char-dham-yatra-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@4429857569428fb28ddfc3167fbee319dbbede47/cab-kit/media/char-dham-yatra-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@4429857569428fb28ddfc3167fbee319dbbede47/cab-kit/media/char-dham-yatra-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
