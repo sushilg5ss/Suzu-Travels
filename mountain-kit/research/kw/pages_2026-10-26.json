@@ -1,0 +1,322 @@
+{
+ "pulled": "2026-10-26",
+ "customer": "1172710099",
+ "language": "English",
+ "source": "Pipeboard get_google_ads_keyword_ideas, 12 months Oct 2025-Sep 2026, banded; values [worldwide, IN, US+GB+AU+IL+DE+FR]; null = not pulled/returned in that geo",
+ "ladakh": {
+  "highest peak in ladakh": [
+   1600,
+   1600,
+   20
+  ],
+  "mountains in ladakh": [
+   2400,
+   1900,
+   170
+  ],
+  "mountaineering in ladakh": [
+   2400,
+   1900,
+   170
+  ],
+  "highest mountain in ladakh": [
+   140,
+   140,
+   10
+  ],
+  "ladakh peaks": [
+   110,
+   90,
+   10
+  ],
+  "highest peak in leh ladakh": [
+   70,
+   50,
+   10
+  ],
+  "peaks in ladakh": [
+   20,
+   null,
+   null
+  ],
+  "ladakh trekking peaks": [
+   20,
+   null,
+   null
+  ],
+  "trekking peaks in ladakh": [
+   10,
+   null,
+   null
+  ],
+  "ladakh himalaya": [
+   390,
+   170,
+   null
+  ],
+  "leh ladakh mountain": [
+   390,
+   null,
+   null
+  ],
+  "ladakh stok kangri": [
+   170,
+   null,
+   null
+  ],
+  "saltoro kangri": [
+   2400,
+   1600,
+   320
+  ],
+  "saser kangri": [
+   720,
+   590,
+   90
+  ],
+  "nun kun": [
+   3600,
+   2900,
+   90
+  ],
+  "nun peak": [
+   null,
+   1600,
+   170
+  ],
+  "nun kun expedition": [
+   90,
+   null,
+   null
+  ],
+  "nun peak expedition": [
+   90,
+   null,
+   null
+  ],
+  "saser kangri iii": [
+   40,
+   null,
+   null
+  ],
+  "khardung la (noise: road pass)": [
+   27100,
+   22200,
+   null
+  ]
+ },
+ "trisul": {
+  "trishul peak": [
+   2400,
+   2400,
+   90
+  ],
+  "trisul mountain": [
+   2400,
+   2400,
+   90
+  ],
+  "trishul parvat": [
+   1000,
+   1000,
+   10
+  ],
+  "trisul peak": [
+   210,
+   170,
+   10
+  ],
+  "mount trisul": [
+   50,
+   null,
+   null
+  ],
+  "trishul trek": [
+   90,
+   null,
+   null
+  ],
+  "trishul peak trek": [
+   40,
+   null,
+   null
+  ],
+  "trishul peak auli": [
+   50,
+   null,
+   null
+  ],
+  "trisul expedition": [
+   null,
+   null,
+   null
+  ]
+ },
+ "highest-peak-in-every-state": {
+  "highest peak in india state wise": [
+   40,
+   40,
+   10
+  ],
+  "state wise highest peak in india": [
+   40,
+   40,
+   null
+  ],
+  "highest peak in each state of india": [
+   10,
+   null,
+   null
+  ],
+  "highest peak of each state": [
+   10,
+   null,
+   null
+  ],
+  "highest peak in south india": [
+   null,
+   9900,
+   110
+  ],
+  "highest peak in karnataka": [
+   5400,
+   null,
+   null
+  ],
+  "highest peak in maharashtra": [
+   null,
+   5400,
+   50
+  ],
+  "highest mountain peak in maharashtra": [
+   null,
+   5400,
+   50
+  ],
+  "highest peak of maharashtra": [
+   null,
+   1300,
+   null
+  ],
+  "highest peak in kerala": [
+   null,
+   2400,
+   90
+  ],
+  "highest peak in jammu and kashmir": [
+   1300,
+   null,
+   null
+  ],
+  "highest peak in odisha": [
+   720,
+   null,
+   null
+  ],
+  "highest peak in meghalaya": [
+   590,
+   null,
+   null
+  ],
+  "highest peak in andhra pradesh": [
+   480,
+   null,
+   null
+  ],
+  "highest peak in gujarat": [
+   480,
+   null,
+   null
+  ],
+  "highest peak in nagaland": [
+   480,
+   null,
+   null
+  ],
+  "highest peak in west bengal": [
+   480,
+   null,
+   null
+  ],
+  "highest peak in arunachal pradesh": [
+   480,
+   null,
+   null
+  ],
+  "highest peak in tamil nadu": [
+   390,
+   null,
+   null
+  ],
+  "highest peak in munnar": [
+   null,
+   390,
+   null
+  ],
+  "highest peak in jharkhand": [
+   320,
+   null,
+   null
+  ],
+  "highest peak in manipur": [
+   320,
+   null,
+   null
+  ],
+  "highest peak in sikkim": [
+   null,
+   260,
+   10
+  ],
+  "highest peak in rajasthan": [
+   260,
+   null,
+   null
+  ],
+  "highest peak in mizoram": [
+   260,
+   null,
+   null
+  ],
+  "highest peak in telangana": [
+   260,
+   null,
+   null
+  ],
+  "highest peak in bihar": [
+   210,
+   null,
+   null
+  ],
+  "highest peak in madhya pradesh": [
+   170,
+   null,
+   null
+  ],
+  "highest peak in goa": [
+   140,
+   null,
+   null
+  ],
+  "highest peak in tripura": [
+   110,
+   null,
+   null
+  ],
+  "highest peak in haryana": [
+   null,
+   null,
+   null
+  ],
+  "guru shikhar mount abu (tourist)": [
+   22200,
+   null,
+   null
+  ],
+  "doddabetta (tourist, Ooty)": [
+   201000,
+   null,
+   null
+  ]
+ }
+}
