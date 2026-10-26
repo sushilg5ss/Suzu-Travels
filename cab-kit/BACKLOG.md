@@ -37,7 +37,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 24 | [x] delhi-to-agra-taxi — LIVE 2026-10-23 https://suzutravels.com/cabs/delhi-to-agra-taxi/ (ID 15443) | delhi to agra taxi | 730 | Yamuna Expressway, same-day Taj trip |
 | 25 | [x] delhi-to-dharamshala-taxi — LIVE 2026-10-24 https://suzutravels.com/cabs/delhi-to-dharamshala-taxi/ (ID 15651) | delhi to dharamshala taxi | 700 | McLeodganj, Bir; overnight bus alternative |
 | 26 | [x] delhi-to-haldwani-taxi — LIVE 2026-10-25 https://suzutravels.com/cabs/delhi-to-haldwani-taxi/ (ID 15782) | delhi to haldwani taxi | 590 (+ haldwani to delhi taxi 590, cab service 140) | Kathgodam station |
-| 27 | [ ] char-dham-yatra-taxi | char dham yatra taxi | — | Haridwar/Dehradun start, 10–12 days, registration, season May–Nov; link /char-dham-tour-packages/ |
+| 27 | [x] char-dham-yatra-taxi — LIVE 2026-10-26 https://suzutravels.com/cabs/char-dham-yatra-taxi/ (ID 15934) | char dham yatra taxi | — | Haridwar/Dehradun start, 10–12 days, registration, season May–Nov; link /char-dham-tour-packages/ |
 | 28 | [ ] chandigarh-to-dharamshala-taxi | chandigarh to dharamshala taxi | — | Via Una/Kangra |
 | 29 | [ ] pathankot-to-dalhousie-taxi | pathankot to dalhousie taxi | 480 (fare) / 390 | Khajjiar add-on (vol. updated 1 Oct) |
 | 30 | [ ] delhi-to-katra-taxi | delhi to katra taxi | 370 | Vaishno Devi |
