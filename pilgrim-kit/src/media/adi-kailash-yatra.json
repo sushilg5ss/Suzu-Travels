@@ -1,0 +1,69 @@
+{
+ "hero": {
+  "arch": "himalaya",
+  "sky": "dawn",
+  "deva": "आदि कैलाश · ॐ पर्वत",
+  "kicker": "Shiva's first Kailash, in Kumaon",
+  "beats": [
+   "Om written in snow",
+   "Shiva's first Kailash, devotees believe",
+   "A still lake mirrors the peak",
+   "Permit-only valley on the border"
+  ],
+  "deva_size": 96
+ },
+ "route": {
+  "title": "Adi Kailash & Om Parvat",
+  "sub": "Kathgodam to Jolingkong · Kumaon Himalaya",
+  "bounds": [
+   79.3,
+   81.3,
+   28.9,
+   30.5
+  ],
+  "stops": [
+   {
+    "name": "Kathgodam",
+    "deva": "काठगोदाम",
+    "state": "Uttarakhand",
+    "lat": 29.264,
+    "lon": 79.547
+   },
+   {
+    "name": "Pithoragarh",
+    "deva": "पिथौरागढ़",
+    "state": "Uttarakhand",
+    "lat": 29.583,
+    "lon": 80.218
+   },
+   {
+    "name": "Dharchula",
+    "deva": "धारचूला",
+    "state": "Uttarakhand",
+    "lat": 29.847,
+    "lon": 80.536
+   },
+   {
+    "name": "Gunji",
+    "deva": "गुंजी",
+    "state": "Uttarakhand",
+    "lat": 30.183,
+    "lon": 80.862
+   },
+   {
+    "name": "Nabhidhang",
+    "deva": "नाभीढांग",
+    "state": "Om Parvat view",
+    "lat": 30.19,
+    "lon": 81.0
+   },
+   {
+    "name": "Jolingkong",
+    "deva": "ज्योलिंगकांग",
+    "state": "Adi Kailash",
+    "lat": 30.32,
+    "lon": 80.63
+   }
+  ]
+ }
+}

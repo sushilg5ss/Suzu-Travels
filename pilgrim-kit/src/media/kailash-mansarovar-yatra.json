@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "lake",
+  "sky": "night",
+  "deva": "कैलाश मानसरोवर",
+  "kicker": "Shiva's throne, beyond the Himalaya",
+  "beats": [
+   "Shiva's throne in Tibet",
+   "A lake born in Brahma's mind",
+   "A draw decides who goes",
+   "Three weeks, one sacred circuit"
+  ]
+ },
+ "story": {
+  "title": "The Kailash Mansarovar yatra",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Tradition says Shiva sits on Kailash"},
+   {"arch": "lake", "sky": "dawn", "line": "Brahma willed a lake into being below it"},
+   {"arch": "himalaya", "sky": "snow", "line": "Pilgrims cross high passes to reach it"},
+   {"arch": "lake", "sky": "saffron", "line": "They walk the kora around the sacred peak"}
+  ]
+ }
+}
