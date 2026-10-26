@@ -196,5 +196,14 @@
   "blurb": "Manali, Shimla, Dharamshala and Spiti by month — snow, green season, monsoon and open roads",
   "added": "2026-10-26",
   "focus": "best time to visit manali"
+ },
+ "kumbh-mela-tour": {
+  "id": 15942,
+  "path": "/india-tours/kumbh-mela-tour/",
+  "kind": "guide",
+  "label": "Kumbh Mela 2027",
+  "blurb": "Haridwar and Nashik 2027 bathing dates, crowds and a Kumbh plan",
+  "added": "2026-10-26",
+  "focus": "kumbh mela"
  }
 }
