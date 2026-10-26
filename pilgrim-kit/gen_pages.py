@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "23 Oct 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "26 Oct 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -252,7 +252,7 @@ CAL = [  # (month, [(text, kind)]) — kind "x" = closing / ends ; verified in d
     ("Jul", [("Amarnath Yatra (2026: 3 Jul–28 Aug)", ""), ("Shravan — Shiva temples busiest", "")]),
     ("Aug", [("Manimahesh (2026: 25 Aug–19 Sep)", ""), ("Shravan Ashtami melas, Naina Devi &amp; Chintpurni", "")]),
     ("Sep", [("Post-monsoon Char Dham window opens", ""), ("Manimahesh ends on Radha Ashtami", "x")]),
-    ("Oct", [("Sharad Navratri (2026: 11–19 Oct)", ""), ("Dussehra: Badrinath closing date announced (2026: 20 Oct)", "x")]),
+    ("Oct", [("Sharad Navratri (2026: 11–19 Oct)", ""), ("Dussehra: Badrinath closing date announced (2026: 20 Oct)", "x"), ("Nashik–Trimbakeshwar Simhastha Kumbh flag-hoisting, 31 Oct 2026", "")]),
     ("Nov", [("Gangotri closes 10 Nov; Kedarnath &amp; Yamunotri 11 Nov (Bhai Dooj)", "x"), ("Badrinath closes 16 Nov 2026", "x")]),
     ("Dec", [("Winter Char Dham: Ukhimath, Joshimath seats", ""), ("12 Jyotirlinga circuits run all winter", "")]),
 ]
@@ -404,7 +404,7 @@ def hub():
 <p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Pilgrimage Tours in India: Tirth Yatra Guide & Packages", "url": "https://suzutravels.com" + HUB,
-         "dateModified": "2026-10-23", "inLanguage": "en-IN",
+         "dateModified": "2026-10-26", "inLanguage": "en-IN",
          "about": [{"@type": "HinduTemple", "name": short_name(j) + " Jyotirlinga", "address": {"@type": "PostalAddress", "addressLocality": j["town"], "addressRegion": j["state"], "addressCountry": "IN"}} for j in J],
          "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/", "telephone": "+91-7087488961"}},
         {"@type": "ItemList", "name": "The 12 Jyotirlingas of India", "numberOfItems": 12,
@@ -456,6 +456,17 @@ def months(j):
     return JD[j["slug"]]["best"]
 
 
+# Cross-section link added live by the Inbound Reviewer (26 Oct 2026, page 12542) — kept so re-syncs don't wipe it.
+XLINK = {"trimbakeshwar-jyotirlinga": (" (Trimbakeshwar and Nashik also host the Simhastha Kumbh \u2014 see our "
+                                       '<a href="/india-tours/kumbh-mela-tour/">Kumbh Mela 2027 guide</a> for the bathing dates).')}
+
+
+def legend_html(j):
+    t = e(j["legend_summary"])
+    x = XLINK.get(j["slug"])
+    return t[:-1] + x if x and t.endswith(".") else t
+
+
 def jyotirlinga_page():
     pts = jl_points()
     rows = ""
@@ -476,7 +487,7 @@ def jyotirlinga_page():
         details += (f'<article class="szp-sec{" alt" if i % 2 else ""}" id="jl-{j["slug"]}"><span class="k">Jyotirlinga {i + 1} of 12 · {e(j["state"])}</span>'
                     f'<h2>{e(short_name(j))} <span class="dv" style="color:var(--saff);font-size:.8em">{e(deva_short(j))}</span></h2>'
                     f'<p class="lead">{e(j["temple_name"])} · {e(j["town"])}, {e(j["district"])} district</p>'
-                    f'<p>{e(j["legend_summary"])}</p>'
+                    f'<p>{legend_html(j)}</p>'
                     f'<div class="szp-scroll"><table class="szp-tbl" style="min-width:520px"><tbody>'
                     f'<tr><td><b>Temple hours</b></td><td>{e(dash(hours(j)))}</td></tr>'
                     + (f'<tr><td><b>Aarti</b></td><td>{e(aart)}</td></tr>' if aart else "")
