@@ -1,0 +1,21 @@
+{
+ "_note": "Ladakh state page. Words + ladder from research/pages/ladakh.md 'Media notes'; counts checked against data/peaks.json 26 Oct 2026 (35 Ladakh peaks, 24 >= 7,000 m, highest 7,742). Generic photos only, no peak captions.",
+ "hero": {
+  "kicker": "LADAKH · KARAKORAM TO ZANSKAR",
+  "size": 110,
+  "words": [["35 PEAKS,", "ONE TABLE."], ["HIGHEST:", "7,742 M."], ["24 ABOVE", "7,000 M."], ["20 FIRSTS", "IN 2026."]],
+  "scenes": [
+   {"img": "px-17613105.jpg", "kind": "tilt", "h": 2880, "t": [0, 3.8], "from": {"y": 300}, "to": {"y": 850}},
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [3.2, 7.0], "from": {"scale": 1.02, "x": 30}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-35905430.jpg", "kind": "tilt", "h": 2880, "t": [6.4, 10.2], "from": {"y": 0}, "to": {"y": 450}},
+   {"img": "px-28409954.jpg", "kind": "land", "h": 1399, "t": [9.6, 13.0], "from": {"scale": 1.04, "x": 40, "y": -190}, "to": {"scale": 1.1, "x": -30, "y": -180}}
+  ]
+ },
+ "ladder": {
+  "kicker": "LADAKH'S PEAKS",
+  "title": "Ladakh's summits, side by side",
+  "peaks": ["stok-kangri", "kang-yatse-ii", "lungser-kangri", "kun", "mamostong-kangri", "saser-kangri-i", "saltoro-kangri"],
+  "subs": {"stok-kangri": "Closed since 2020", "kang-yatse-ii": "Walk-up 6,000er", "lungser-kangri": "Rupshu, 1995", "kun": "First climbed 1913", "saser-kangri-i": "ITBP, 1973", "saltoro-kangri": "Highest, on the AGPL"},
+  "end": "Ladakh: 24 peaks above 7,000 m"
+ }
+}

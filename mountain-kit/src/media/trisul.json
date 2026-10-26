@@ -1,0 +1,133 @@
+{
+ "_note": "Trisul I peak page. Steps + profile from research/pages/trisul.md route table (west ridge, HJ 69 / HJ 73; road-head altitude not published, so the climb starts at Hom Kund). Generic photos only, no Trisul caption.",
+ "hero": {
+  "kicker": "TRISUL · GARHWAL",
+  "scenes": [
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "y": 250
+    },
+    "to": {
+     "y": 1320
+    }
+   }
+  ],
+  "steps": [
+   [
+    4110,
+    "HOM KUND · BASE"
+   ],
+   [
+    5150,
+    "CAMP 1"
+   ],
+   [
+    5950,
+    "THE SHOULDER"
+   ],
+   [
+    6360,
+    "SUMMIT CAMP"
+   ],
+   [
+    7120,
+    "FIRST 7,000ER 1907"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Trisul, camp by camp",
+  "sub": "West-ridge route; heights approximate (HJ 69, HJ 73)",
+  "camps": [
+   {
+    "name": "Hom Kund",
+    "m": 4110,
+    "day": "Base camp · ~Day 7",
+    "dx": -60,
+    "dy": -30
+   },
+   {
+    "name": "Camp 1",
+    "m": 5150,
+    "day": "Ronti glacier",
+    "dx": 40
+   },
+   {
+    "name": "Camp 2, shoulder",
+    "m": 5950,
+    "day": "Upper icefield"
+   },
+   {
+    "name": "Summit camp",
+    "m": 6360,
+    "day": "Behind an ice cliff",
+    "dx": 40
+   },
+   {
+    "name": "Trisul I",
+    "m": 7120,
+    "day": "Summit"
+   }
+  ]
+ }
+}
