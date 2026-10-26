@@ -80,7 +80,7 @@ The temple committees set and announce the actual dates and times.
 
 - **Char Dham closing dates and times:** re-check after **20 Oct 2026** (BKTC, Gangotri and Yamunotri temple committees; Amar Ujala, Hindustan, TOI Dehradun).
 - **Panch Kedar 2026:** opening and closing dates for Tungnath, Madhyamaheshwar and Rudranath were not verified.
-- **Adi Kailash:** whether permits resumed after the 2026 monsoon is not verified.
+- **Adi Kailash:** permits resumed after the 2026 monsoon (second phase from ~20 Sep; PTI 14 Sep 2026); ILP break 19–26 Oct 2026 for the Parikrama Run; 2026 closing date not announced (checked 26 Oct 2026).
 - **Kinner Kailash:** the registration portal (logdest.com/kk/register) is only reported by Travel Trade Journal and is not a .gov.in domain. Verify with DC Kinnaur.
 - **Magh Mela 2027:** dates are panchang-derived (HappyFares blog). They are cross-checked against the officially announced Haridwar Ardh Kumbh 2027 bathing festivals, which share the same festival days. The official UP Mela schedule is still awaited.
 - **Puri Rath Yatra 2027:** 5 Jul 2027 is panchang-derived; the temple administration has not announced it yet.

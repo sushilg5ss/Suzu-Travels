@@ -1240,12 +1240,16 @@
       "dates_2026": {
         "start": "2026-05-01 (flag-off at Dharchula; Jolingkong Shiva-Parvati temple opened)",
         "permits_by_2026-06-02": 30016,
-        "monsoon_suspension": "permits stopped after 2026-07-01 (reported 2026-07-04) until further orders",
-        "post_monsoon_status": "resumption not verified as of 2026-10-08"
+        "monsoon_suspension": "permits stopped from 2026-07-02 (PTI 14 Sep 2026)",
+        "post_monsoon_status": "resumed (second phase from ~20 Sep 2026)",
+        "second_phase": "planned 15 Sep, postponed to 20 Sep 2026 (tentative) after Kulagad Bailey bridge washed away twice; pilgrims travelled after that",
+        "visitors_first_two_months": 52441,
+        "ilp_break": "no tourist ILPs 19-26 Oct 2026 for Adi Kailash Parikrama Run 2.0 (24-26 Oct); restart after 26 Oct expected, not confirmed",
+        "closing_2026": "not announced (searched 2026-10-26)"
       },
-      "dates_2027": null,
-      "source": "TripToTemples news 2026-06-06; The Pioneer 2026-07-04",
-      "as_of": "2026-10-08"
+      "dates_2027": "not announced; pattern ~1 May open, monsoon pause Jul-mid Sep",
+      "source": "TripToTemples news 2026-06-06; The Pioneer 2026-07-04; PTI/ThePrint 2026-09-14; IANS Hindi 2026-09-26; ETV Bharat 2026-10-20",
+      "as_of": "2026-10-26"
     },
     "registration": {
       "required": true,
@@ -1329,8 +1333,48 @@
     "sources": [
       "https://www.triptotemples.com/news/adi-kailash/adi-kailash-yatra-2026-surges-thirty-thousands-permits-issued-in-34-days",
       "https://dailypioneer.com/news/adi-kailash-yatra-suspended-due-to-monsoon",
-      "https://newsarenaindia.com/states/adi-kailash-yatra-put-on-hold-for-pilgrims-safety/81495"
-    ]
+      "https://newsarenaindia.com/states/adi-kailash-yatra-put-on-hold-for-pilgrims-safety/81495",
+      "https://theprint.in/india/ukahnd-second-phase-of-adi-kailash-yatra-in-pithoragarh-postponed-until-september-20/3042344/",
+      "https://hindi.ianslive.in/aadi-kailash-om-parvat-jane-wale-yatriyon-ke-liye-jaruri-khabar-19-se-26-october-tak-nahi-jari-hogi-inner-line-permit--20260926200048",
+      "https://www.etvbharat.com/hi/bharat/adi-kailash-yatra-tourist-permits-suspension-ultra-marathon-preparations-utn26102004173",
+      "https://en.wikipedia.org/wiki/Adi_Kailash",
+      "https://en.wikipedia.org/wiki/Om_Parvat"
+    ],
+    "coords": {
+      "adi_kailash": [
+        30.3192,
+        80.6325
+      ],
+      "adi_kailash_elev_m": 5945,
+      "om_parvat": [
+        30.1967,
+        81.0325
+      ],
+      "om_parvat_elev_m": 5590,
+      "source": "Wikipedia Adi Kailash / Om Parvat",
+      "as_of": "2026-10-26"
+    },
+    "road_km_osrm": {
+      "delhi_dharchula": 568,
+      "kathgodam_dharchula": 268,
+      "tanakpur_dharchula": 237,
+      "pithoragarh_dharchula": 91,
+      "dharchula_gunji": 79,
+      "gunji_jolingkong": 37,
+      "note": "OSRM 2026-10-26; Gunji-Nabhidhang keep 26 km (OSRM snap failed)"
+    },
+    "permit_stats": {
+      "2024": 29352,
+      "2025": 36526,
+      "2026_by_06_02": 30016
+    },
+    "history": {
+      "yatra_since": 1981,
+      "roads": "Dharchula-Gunji-Lipulekh May 2020; Jolingkong side Jul 2020",
+      "pm_visit": "2023-10-12",
+      "source": "PTI/ThePrint 2026-09-14; Wikipedia",
+      "as_of": "2026-10-26"
+    }
   },
   {
     "slug": "hemkund-sahib",
@@ -1568,11 +1612,13 @@
         "batches": "20 batches x 50 (10 via Lipulekh, 10 via Nathu La)",
         "first_nathu_la_batch": "2026-06-20",
         "first_lipulekh_batch_flag_off": "2026-07-05 (Tanakpur)",
-        "status": "season over"
+        "status": "season over",
+        "completed": "941 yatris (464 Nathu La, 477 Lipulekh incl. 154 women)",
+        "concluded": "Nathu La 2026-08-23 (Gangtok); Lipulekh 2026-08-24 (last batch of 44 to Dharchula)"
       },
-      "dates_2027": null,
-      "source": "Tribune/ANI 2026-05-01; The Statesman 2026-05-21; Amar Ujala/IANS 2026-06-20; IANS 2026-07-05",
-      "as_of": "2026-10-08",
+      "dates_2027": "not announced (searched 2026-10-26); pattern: MEA announces late Apr/May, batches Jun-Aug",
+      "source": "Tribune/ANI 2026-05-01; The Statesman 2026-05-21; Amar Ujala/IANS 2026-06-20; IANS 2026-07-05; DD News 2026-08-24; News On AIR 2026-08-24",
+      "as_of": "2026-10-26",
       "notes": "2027 not yet announced. INFO ONLY - Suzu Travels cannot sell this yatra (MEA-organised, in China)."
     },
     "registration": {
@@ -1647,8 +1693,31 @@
       "https://www.thestatesman.com/india/jaishankar-conducts-computerised-draw-for-selection-of-yatris-for-kailash-manasarovar-yatra-2026-1000-selected-1503596587.html",
       "https://www.outlooktraveller.com/News/kailash-mansarovar-yatra-2026-opens-dates-routes-costs-and-how-to-apply",
       "https://www.amarujala.com/india-news/kailash-mansarovar-yatra-reopens-after-seven-years-first-batch-to-depart-from-nathu-la-today-2026-06-20",
-      "https://ianslive.in/ukhand-cm-dhami-flags-off-first-batch-of-kailash-mansarovar-yatra-pilgrims-from-tanakpur--20260705112900"
-    ]
+      "https://ianslive.in/ukhand-cm-dhami-flags-off-first-batch-of-kailash-mansarovar-yatra-pilgrims-from-tanakpur--20260705112900",
+      "https://ddindia.co.in/2026/08/kailash-manasarovar-yatra-concludes-final-batch-of-pilgrims-returns-to-india-via-lipulekh-pass/",
+      "https://newsonair.gov.in/kailash-mansarovar-yatra-through-sikkims-nathu-la-route-concludes/",
+      "https://traveltradejournal.com/kailash-mansarovar-yatra-2026-to-take-place-between-june-and-august-mea/",
+      "https://en.wikipedia.org/wiki/Mount_Kailash",
+      "https://en.wikipedia.org/wiki/Lake_Manasarovar"
+    ],
+    "geo": {
+      "kailash": [
+        31.0667,
+        81.3125
+      ],
+      "kailash_elev_m": 6638,
+      "kora_km": "52-53",
+      "darchen_m": 4670,
+      "dolma_la_m": "5,630-5,650",
+      "manasarovar": [
+        30.65,
+        81.45
+      ],
+      "manasarovar_elev_m": 4600,
+      "manasarovar_km2": 320,
+      "source": "Wikipedia Mount Kailash / Lake Manasarovar",
+      "as_of": "2026-10-26"
+    }
   },
   {
     "slug": "kashi-ayodhya-prayagraj-circuit",
