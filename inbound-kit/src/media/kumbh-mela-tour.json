@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/kumbh-mela-tour/ (guide). Hero only, made by the Page Builder (day) per Visual Studio Step 2: 4 new Pexels photos of Haridwar (CREDITS.md 26 Oct 2026). Captions name only Haridwar/Har Ki Pauri (no Nashik caption — no Nashik photo). Poster = Har Ki Pauri ghats.",
+ "hero": {
+  "kicker": "KUMBH MELA 2027",
+  "scenes": [
+   {"img": "px-31770953.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-29495753.jpg", "kind": "land", "from": {"scale": 1.10, "x": -20, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-32197896.jpg", "kind": "tilt", "from": {"y": 700}, "to": {"y": 1050}},
+   {"img": "px-13545189.jpg", "kind": "tilt", "from": {"y": 250}, "to": {"y": 800}}
+  ],
+  "steps": ["HARIDWAR JAN–APR", "HAR KI PAURI", "AMRIT SNAN · 6 MAR", "PLAN WITH LOCALS"]
+ }
+}
