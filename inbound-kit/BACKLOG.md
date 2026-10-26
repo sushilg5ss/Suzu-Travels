@@ -58,6 +58,7 @@ Sprint 1 goal (by 30 Nov 2026): rows 1–20 live (two Builders/day). Research ke
 | 39 | manali-vs-kashmir-for-foreign-visitors | guide | (internal) | — | yes | todo | Only if /manali-vs-kashmir/ (13325) doesn't already cover foreigners; else skip |
 
 ## Later ideas (need keyword evidence before promotion)
+- why-book-a-local-indian-company (Trust row 12, 26 Oct 2026): 'Why book with a local Indian company' — registration proof (/certificates/, line exact), office address + photos, payment safety (booking line exact), how we plan drivers/hotels (no names, no 'verified'); team/office photos need Sushil. Research: pull KP for 'india tour operator', 'local tour operator india', 'is it safe to book a tour in india'.
 - kerala-for-international-travellers (kerala holiday packages 1,900 — high volume but outside Suzu's North India strength; decide after Sprint 1)
 - rajasthan-10-day-itinerary (rajasthan trip package 720)
 - india-packing-list-by-season · india-festivals-calendar-for-travellers · tipping-in-india · india-with-kids-north-india · luxury-north-india-tour (pull KP)
