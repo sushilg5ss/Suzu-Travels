@@ -1,0 +1,25 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "dusk",
+  "deva": "श्री द्वारकाधीश",
+  "kicker": "Char Dham · Dwarka, Gujarat",
+  "beats": [
+   "Krishna's golden city on the western sea",
+   "The sea took Dwarka, tradition remembers",
+   "Fifty-two yards of flag above the Gomti",
+   "Bet Dwarka across the Sudarshan bridge"
+  ]
+ },
+ "route": {
+  "title": "Dwarka in a day",
+  "sub": "Dwarkadhish to Bet Dwarka · Devbhumi Dwarka, Gujarat",
+  "bounds": [68.85, 69.20, 22.15, 22.55],
+  "stops": [
+   {"name": "Dwarkadhish", "deva": "द्वारकाधीश", "state": "Gomti ghat", "lat": 22.2379, "lon": 68.9676},
+   {"name": "Rukmini Temple", "deva": "रुक्मिणी मंदिर", "state": "2 km away", "lat": 22.2483, "lon": 68.9877},
+   {"name": "Nageshwar", "deva": "नागेश्वर", "state": "Jyotirlinga", "lat": 22.3359, "lon": 69.0869},
+   {"name": "Bet Dwarka", "deva": "बेट द्वारका", "state": "via Sudarshan Setu", "lat": 22.4519, "lon": 69.0847}
+  ]
+ }
+}
