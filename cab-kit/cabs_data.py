@@ -145,7 +145,7 @@ PLACES = {
     "Upshi": (33.83, 77.81), "Karu": (33.93, 77.73),
     "Noida": (28.57, 77.32), "Greater Noida": (28.47, 77.50), "Jewar": (28.13, 77.56), "Tappal": (28.04, 77.59),
     "Mathura": (27.49, 77.67), "Vrindavan": (27.58, 77.70), "Fatehpur Sikri": (27.09, 77.66),
-    "Anandpur Sahib": (31.23, 76.50), "Nangal": (31.38, 76.38), "Una": (31.48, 76.28), "Amb": (31.70, 76.12), "Mubarikpur": (31.71, 76.09),
+    "Kurali": (30.83, 76.58), "Anandpur Sahib": (31.23, 76.50), "Nangal": (31.38, 76.38), "Una": (31.48, 76.28), "Amb": (31.70, 76.12), "Mubarikpur": (31.71, 76.09),
     "Chintpurni": (31.81, 76.11), "Dehra": (31.88, 76.23), "Jawalamukhi": (31.84, 76.31), "Ranital": (32.00, 76.23),
     "Neelkanth": (30.08, 78.34), "Chopta": (30.47, 79.21), "Devprayag": (30.15, 78.60), "Rudraprayag": (30.28, 78.98), "Sonprayag": (30.63, 78.99), "Badrinath": (30.74, 79.49),
     # 26 Oct 2026 · Char Dham circuit (Photon/OSM coords, checked)
@@ -170,7 +170,7 @@ ROUTES = [
     dict(slug="delhi-to-dharamshala-taxi", a="Delhi", b="Dharamshala", km=475, t="9–10 hrs", f=1.0),   # 24 Oct 2026: page live; route via Kiratpur Sahib–Una–Amb–Dehra–Kangra (NH503)
     dict(slug="delhi-to-kasol-taxi", a="Delhi", b="Kasol", km=520, t="11–12 hrs", f=1.0),
     dict(slug="manali-to-leh-taxi", a="Manali", b="Leh", km=430, t="2 days (Jun–Oct)", f=1.6),
-    dict(slug=None, a="Chandigarh", b="Dharamshala", km=240, t="5.5–6.5 hrs", f=1.1),
+    dict(slug="chandigarh-to-dharamshala-taxi", a="Chandigarh", b="Dharamshala", km=240, t="5.5–6.5 hrs", f=1.1),   # 27 Oct 2026: page live; via Kharar–Ropar–Kiratpur–Anandpur Sahib–Una–Amb–Dehra–Kangra (NH503); Triveni/HurryUp/EMT 238–244 km
     dict(slug=None, a="Pathankot", b="Dalhousie", km=80, t="2.5–3 hrs", f=1.1),
     dict(slug="delhi-to-haridwar-taxi", a="Delhi", b="Haridwar", km=220, t="4.5–5.5 hrs", f=0.85),
     dict(slug="delhi-to-rishikesh-taxi", a="Delhi", b="Rishikesh", km=240, t="5–6 hrs", f=0.85),
