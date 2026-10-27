@@ -154,6 +154,22 @@ PLACES = {
     "Ukhimath": (30.52, 79.10), "Chamoli": (30.40, 79.32), "Joshimath": (30.56, 79.56), "Karnaprayag": (30.26, 79.22),
 }
 
+# Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
+# matchRoute (name before the comma) still prices a known route exactly like its route page; the map starts at the point.
+# Coordinates: OpenStreetMap via Photon / Nominatim, checked 27 Oct 2026. Hub only (not used by route maps).
+PICKUPS = {
+    "Delhi, IGI Airport T3": (28.555, 77.083), "Delhi, New Delhi Railway Station": (28.642, 77.221),
+    "Delhi, Hazrat Nizamuddin Station": (28.588, 77.253), "Delhi, ISBT Kashmere Gate": (28.669, 77.230),
+    "Delhi, ISBT Anand Vihar": (28.649, 77.318), "Chandigarh, IXC Airport": (30.674, 76.791),
+    "Chandigarh, Railway Station": (30.702, 76.821), "Chandigarh, ISBT Sector 43": (30.716, 76.745),
+    "Kalka, Railway Station": (30.839, 76.932), "Pathankot, Junction Station": (32.272, 75.648),
+    "Pathankot, Cantt Station (Chakki Bank)": (32.259, 75.637), "Jammu, Tawi Railway Station": (32.707, 74.881),
+    "Jammu, Airport": (32.688, 74.839), "Katra, SMVD Railway Station": (32.983, 74.935),
+    "Amritsar, Airport": (31.709, 74.800), "Amritsar, Junction Station": (31.633, 74.867),
+    "Haridwar, Railway Station": (29.946, 78.153), "Dehradun, Railway Station": (30.313, 78.034),
+    "Shimla, ISBT Tutikandi": (31.098, 77.151), "Dharamshala, Kangra Airport (Gaggal)": (32.165, 76.262),
+}
+
 # every route card shown anywhere (hub grid, "more routes"); page = slug when a page exists
 ROUTES = [
     # slug, from, to, km, time, factor

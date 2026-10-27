@@ -2,6 +2,9 @@
    build.py inserts this INSIDE the planner block of kit.js (after the IntersectionObserver line) for the hub only,
    so it can reuse geocode/route/draw/render and re-point run/render. Child pages keep plain kit.js.
    Same rules as kit.js: ES5, no ampersand character, no double-slash comments, HTML only in single-quoted strings. */
+/* Pickup presets + full place list (ENHANCEMENTS #6, 27 Oct 2026): the HTML datalist carries route cities + pickup points only; the other PLACES are appended here. */
+var dlp=$('szc-places');
+if(dlp){var dlHave={};qa('option',dlp).forEach(function(o){dlHave[o.value]=1;});Object.keys(PC.p).sort().forEach(function(k){if(!dlHave[k]){var o=document.createElement('option');o.value=k;dlp.appendChild(o);}});}
 var vbox=$('szc-pvias'),vadd=$('szc-padd'),hubAddVia=null;
 if(vbox){if(vadd){
  var MAXV=3,run1=run,render1=render;

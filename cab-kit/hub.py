@@ -2,7 +2,7 @@
 """The /cabs/ hub page (page ID 10080)."""
 import json
 from build import *
-from cabs_data import TIERS, PRICED, PLACES
+from cabs_data import TIERS, PRICED, PLACES, PICKUPS
 
 HUB = dict(slug="cabs", title="Cab & Taxi Booking — Delhi, Chandigarh & Himachal",
     seo_title="Himachal & North India Cab Booking | One-Way Taxi Fares",
@@ -36,10 +36,13 @@ TIER_COPY = {
 def planner():
     pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
     pr = [dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u=(page_url(r["slug"]) if r["slug"] and is_live(r["slug"]) else "")) for r in ROUTES]
-    cfg = dict(p={k: [round(v[0], 3), round(v[1], 3)] for k, v in PLACES.items()}, r=pr, v=pv, s="cabs",
+    pp = dict(PLACES, **PICKUPS)
+    cfg = dict(p={k: [round(v[0], 3), round(v[1], 3)] for k, v in pp.items()}, r=pr, v=pv, s="cabs",
                js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
-    dl = "".join(f"<option value=\"{esc(k)}\">" for k in sorted(PLACES))
+    # datalist HTML = route cities + pickup presets only (hub size budget); kit_hub.js appends the other PLACES on load
+    ends = sorted(set([r["a"] for r in ROUTES] + [r["b"] for r in ROUTES]))
+    dl = "".join(f"<option value=\"{esc(k)}\">" for k in ends + sorted(PICKUPS))
     return (f'<section class="szc-sec" id="planner"><span class="szc-kicker">Live route planner</span><h2>See your road trip on the map - with the fare</h2>'
             f'<p class="szc-lead">Type any two places in North India. We draw the real road route, play the drive, and show one-way or round-trip fares for every car and fleet tier.</p>'
             f'<form class="szc-plan" id="szc-plan" data-plan=\'{esc(json.dumps(cfg, ensure_ascii=False, separators=(",", ":")))}\' onsubmit="return false">'
