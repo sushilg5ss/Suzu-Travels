@@ -452,7 +452,7 @@ def list_page():
         alt = f' data-alt="{e(" ".join(p["alt"]).lower())}"' if p["alt"] else ""
         fa = str(p["fa"]) if p["fa"] else "—"
         note = p["notable"] or p["status_note"]
-        note = (note[:170].rsplit(" ", 1)[0] + "…") if len(note) > 175 else note
+        note = short_note(note)
         rows.append(
             f'<tr id="peak-{p["id"]}" data-band="{p["band"]}" data-state="{p["state"]}" data-status="{p["status"]}" data-m="{p["m"]}" data-fa="{p["fa"] or ""}" data-name="{e(p["name"].lower())}"{alt}>'
             f'<td class="rk">{i + 1}</td><td class="pk"><span class="pn">{peak_link(p["id"]) if peak_page(p["id"]) else e(p["name"])}</span>{"<small>" + e(note) + "</small>" if note else ""}</td>'
@@ -631,7 +631,7 @@ def data_table(rows_):
     for i, p in enumerate(rows_):
         fa = str(p["fa"]) if p["fa"] else "—"
         note = p["notable"] or p["status_note"]
-        note = (note[:170].rsplit(" ", 1)[0] + "…") if len(note) > 175 else note
+        note = short_note(note)
         alt = f' data-alt="{e(" ".join(p["alt"]).lower())}"' if p["alt"] else ""
         out.append(f'<tr id="peak-{p["id"]}" data-band="{p["band"]}" data-state="{p["state"]}" data-status="{p["status"]}" data-m="{p["m"]}" data-fa="{p["fa"] or ""}" data-name="{e(p["name"].lower())}"{alt}>'
                    f'<td class="rk">{i + 1}</td><td class="pk"><span class="pn">{peak_link(p["id"])}</span>{"<small>" + e(note) + "</small>" if note else ""}</td>'
@@ -658,6 +658,18 @@ def has_media(slug, name):
 def strip_tags(x):
     import re
     return html.unescape(re.sub(r"<[^>]+>", "", x))
+
+
+def short_note(x, k=175):
+    """Table-cell note: keep it whole if short, else cut at the last clause end
+    ('. ' or '; ') inside k chars (ends with a full stop), else at a word + '…'."""
+    if len(x) <= k:
+        return x
+    head = x[:k]
+    cut = max(head.rfind(". "), head.rfind("; "))
+    if cut >= 80:
+        return head[:cut].rstrip(" .;,") + "."
+    return x[:170].rsplit(" ", 1)[0] + "…"
 
 
 def clip(x, k=300):

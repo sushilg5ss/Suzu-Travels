@@ -1,4 +1,4 @@
-# Suzu Mountain Kit v1.2.4 (22 Oct 2026)
+# Suzu Mountain Kit v1.2.5 (27 Oct 2026)
 
 This kit is the design system, dataset, video pipeline and publishing toolkit for the **Mountains of India** section of suzutravels.com. It covers:
 - `/mountains-of-india/` and its child pages
