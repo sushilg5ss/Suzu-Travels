@@ -686,7 +686,7 @@ dict(slug="chandigarh-to-dharamshala-taxi", kind="route", route="chandigarh-to-d
  seo_desc="Chandigarh to Dharamshala & McLeodganj taxi from " + _S(240, 1.1) + ", Innova Crysta from " + _O("crysta", 240, 1.1) + ". 240 km via Una & Kangra, 5.5–6.5 hrs. IXC & Tricity pickup.",
  focus="chandigarh to dharamshala taxi",
  kicker="Chandigarh → Dharamshala · McLeodganj",
- tag="Chandigarh to Dharamshala taxi, Tricity to the Dhauladhars in a day",
+ tag="Chandigarh to Dharamshala by taxi, in one easy day",
  sub="Pickup at Chandigarh airport (IXC), the railway station, ISBT-43 or your door in Mohali, Panchkula or Zirakpur, and a drop at your hotel in Dharamshala, McLeodganj, Bhagsu or Dharamkot — with a driver who knows NH503 and the Kangra hill roads.",
  answer="A Chandigarh to Dharamshala taxi covers about <b>240 km in 5.5–6.5 hours</b> via Kharar, Ropar, Kiratpur Sahib, Anandpur Sahib, Una, Amb, Dehra and Kangra; McLeodganj is 10 km further up. One-way fares start around <b>" + _S(240, 1.1) + " for a sedan</b>, <b>" + _O("ertiga", 240, 1.1) + " for an Ertiga</b> and <b>" + _O("crysta", 240, 1.1) + " for an Innova Crysta</b>; tolls, parking and the Himachal entry fee are extra. Leave by 7 am.",
  facts=[("Distance","~240 km"),("Drive time","5.5–6.5 hrs"),("Route","Ropar → NH503 via Una"),("Altitude","~350 m → ~1,450 m"),("McLeodganj","+10 km · ~2,080 m"),("Sedan from",_S(240, 1.1) + " one-way")],
