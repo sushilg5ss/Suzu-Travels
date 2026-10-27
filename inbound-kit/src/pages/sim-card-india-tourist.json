@@ -1,0 +1,278 @@
+{
+ "path": "/india-tours/sim-card-india-tourist/",
+ "parent": 11411,
+ "kind": "practical",
+ "title": "SIM Card for Tourists in India: Local SIM, eSIM and What Works Where",
+ "seo_title": "SIM Card in India for Tourists: SIM, eSIM & Coverage",
+ "seo_desc": "Can tourists get a SIM card in India? Documents, how long activation takes, local SIM vs travel eSIM, and why Kashmir, Ladakh and the mountains differ.",
+ "focus": "sim card india tourist",
+ "label": "SIM cards & eSIM for visitors",
+ "blurb": "Documents, activation, eSIM vs local SIM, and signal in the mountains",
+ "kicker": "Practical guide · Phones & data",
+ "tag": "Stay connected.",
+ "sub": "A plain-English guide for visitors from the US, UK, Europe, Australia and Canada: who can get an Indian SIM, the documents the shop will ask for, how long activation takes, when a travel eSIM is easier — and the two things most guides miss: Kashmir and Ladakh rules, and no signal in the high mountains. Written by a travel company in Himachal that sells no SIM cards.",
+ "hero_alt": "Humayun's Tomb in Delhi, the rooftops of Jaisalmer, the Manali valley, a shikara on Dal Lake in Srinagar and the Taj Mahal — places where visitors need a working phone",
+ "cta1": "Read the guide",
+ "chips": [
+  [
+   "Passport + visa",
+   "what the shop asks for"
+  ],
+  [
+   "Max 3 months",
+   "tourist SIM validity"
+  ],
+  [
+   "Kashmir & Ladakh",
+   "postpaid only"
+  ],
+  [
+   "Checked",
+   "27 Oct 2026"
+  ]
+ ],
+ "q": "Can tourists buy a SIM card in India?",
+ "answer": "Yes. Foreign visitors can get an Indian prepaid SIM from an operator's store or counter with their passport, a valid Indian visa, a passport photo and a local address such as a hotel or tour operator. Activation can take from a few hours to a day or two, and a tourist connection runs for <b>up to 3 months</b>. For Kashmir and Ladakh, only postpaid connections from other states work.",
+ "facts": [
+  [
+   "3 months",
+   "longest a tourist SIM runs at a time (COAI)"
+  ],
+  [
+   "4 documents",
+   "photo, passport, visa, local address"
+  ],
+  [
+   "112",
+   "India's emergency number (FCDO)"
+  ],
+  [
+   "0 signal",
+   "what to expect high in the mountains (FCDO)"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "note",
+   "h2": "Before you read: what this page is",
+   "kind": "callout",
+   "nav": "This page",
+   "text": "This page is general information, checked 27 Oct 2026. We don't sell SIM cards or eSIMs and we don't recommend any provider. Rules and plans change — confirm with the operator before you buy."
+  },
+  {
+   "id": "options",
+   "nav": "Your options",
+   "h2": "Three ways to have a phone in India",
+   "kind": "table",
+   "lead": "Most visitors pick one of these. Which is best depends on how long you stay, where you go and whether you need an Indian number.",
+   "head": [
+    "Option",
+    "How it works",
+    "Good to know"
+   ],
+   "rows": [
+    [
+     "Indian prepaid SIM",
+     "Bought in India from an operator's own store or counter, with in-person ID checks",
+     "Gives you an Indian number for calls, messages and one-time passwords; activation is not instant; up to 3 months per connection"
+    ],
+    [
+     "Travel eSIM bought before you fly",
+     "A data plan from an international eSIM seller, installed on your phone at home",
+     "Works from landing if your phone supports eSIM; usually data only, no Indian number; check the plan covers India"
+    ],
+    [
+     "Roaming with your home SIM",
+     "Your own operator's international roaming",
+     "Simplest; check the daily cost with your operator before you go"
+    ]
+   ],
+   "note": "An Indian eSIM from an Indian operator usually still needs the same in-person ID check, and online self-activation generally needs an Indian number to receive a one-time password — so first-time visitors usually can't set one up from home."
+  },
+  {
+   "id": "documents",
+   "nav": "Documents",
+   "h2": "What the shop will ask for",
+   "kind": "steps",
+   "lead": "These are the documents listed by COAI, the association of India's mobile operators, for international visitors.",
+   "items": [
+    [
+     "Passport",
+     "The original, plus a photocopy of the passport pages with your valid Indian visa."
+    ],
+    [
+     "Indian visa",
+     "Your visa or e-Visa. Apply yourself at the official site indianvisaonline.gov.in; beware look-alike sites that charge extra. We are not a visa agency."
+    ],
+    [
+     "A passport-size colour photo",
+     "A printed photo, not a scan. Carry two in case."
+    ],
+    [
+     "A local address",
+     "The address of a local reference — it may be your tour operator — or, without one, where you're staying, such as your hotel. Keep your first hotel booking handy."
+    ],
+    [
+     "The application form",
+     "The shop gives you a form to fill in and sign. Keep the receipt it hands back — you may need its details to activate the SIM."
+    ]
+   ],
+   "note": "Since a Department of Telecommunications order of 31 July 2024, a one-time password on a local Indian number is optional for foreign nationals; operators may send it to your email instead."
+  },
+  {
+   "id": "activation",
+   "nav": "Activation",
+   "h2": "How long it takes, and how long it lasts",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    [
+     "Not instant",
+     "COAI explains that the SIM is issued first but can't make or receive calls until the operator finishes verification — a wait that can run from a few hours to a day or two. Buy it on day one, not on the morning you need it."
+    ],
+    [
+     "Up to 3 months",
+     "For foreign tourists a connection must not run past your visa, and cannot be longer than 3 months at a time, even if your visa is longer."
+    ],
+    [
+     "Buy from the operator",
+     "Use an operator's own store or counter. Some international airports have operator counters in the arrivals area; otherwise ask your hotel for the nearest official store. Avoid street stalls, which may sell SIMs registered to someone else."
+    ],
+    [
+     "Keep your home SIM",
+     "Many phones take two SIMs, or one SIM plus an eSIM — keep your home number for bank messages and use the Indian one for data and local calls."
+    ]
+   ]
+  },
+  {
+   "id": "kashmir",
+   "nav": "Kashmir & Ladakh",
+   "h2": "Kashmir and Ladakh: the prepaid rule",
+   "kind": "prose",
+   "style": "dark",
+   "paras": [
+    "Prepaid SIMs from other parts of India don't work in Jammu & Kashmir and Ladakh; postpaid connections do. Confirm with the operator before you go. This is a long-standing telecom licence condition for these border areas, so a prepaid SIM bought in Delhi will stop working when you arrive in Srinagar or Leh.",
+    "If your trip includes Kashmir or Ladakh, plan for it: a travel eSIM or roaming on your home SIM, or a connection issued inside the region. We tell you in your plan which days this affects. For Kashmir, also check current travel advice — the UK and US governments both advise against travel to most of Jammu & Kashmir; see our <a href=\"/india-tours/best-time-to-visit-kashmir/\">Kashmir seasons page</a> for the dated details."
+   ]
+  },
+  {
+   "id": "mountains",
+   "nav": "Mountains",
+   "h2": "No signal in the high mountains — and no satellite phones",
+   "kind": "cards",
+   "lead": "Himachal, Spiti, Ladakh and Uttarakhand are some of the best places in India — and some of the worst for phone signal.",
+   "items": [
+    [
+     "Expect gaps",
+     "The UK Foreign Office: \"You are extremely unlikely to have a phone signal in the mountains, so make sure your accommodation provider registers your whereabouts using the online C-form.\""
+    ],
+    [
+     "Satellite phones are illegal",
+     "\"It is illegal to possess and operate satellite phones and GPS devices in India without a licence.\" \"You can be fined or arrested for possession of these devices without permission\" (UK Foreign Office, advice updated 7 Oct 2026). Leave them at home."
+    ],
+    [
+     "Weather and protests",
+     "The same advice notes that mobile networks and internet may be disrupted during demonstrations, and that monsoon storms can cut telephone lines, internet and power."
+    ],
+    [
+     "Download before you go",
+     "Save offline maps, your hotel list and booking details on your phone before mountain days, so you aren't relying on signal."
+    ]
+   ]
+  },
+  {
+   "id": "how-we-help",
+   "nav": "How we help",
+   "h2": "How we keep you in touch on the road",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    [
+     "A plan that shows signal gaps",
+     "Your day-by-day plan tells you which road days and overnight stops are in the high mountains or in Kashmir and Ladakh, so you know when to expect no signal."
+    ],
+    [
+     "Your driver's details first",
+     "Your driver's name, photo and car number are shared with you before the trip, so you know who is meeting you even before your Indian SIM works."
+    ],
+    [
+     "Our office by WhatsApp",
+     "Reach us on +91 70874 88961 by call or WhatsApp before and during your trip — WhatsApp works on hotel Wi-Fi too."
+    ],
+    [
+     "In an emergency",
+     "Dial 112, India's national emergency number (UK Foreign Office). Save your embassy's number and your insurer's 24-hour line before you travel — see our <a href=\"/india-tours/india-travel-insurance/\">travel insurance checklist</a>."
+    ]
+   ]
+  }
+ ],
+ "faqs": [
+  [
+   "Can tourists buy a SIM card in India?",
+   "Yes. Foreign visitors can get an Indian connection from an operator's store or counter with a passport, valid Indian visa, a passport-size photo and a local address such as a hotel or tour operator (COAI)."
+  ],
+  [
+   "What documents do I need for an Indian SIM card?",
+   "Your original passport and a photocopy with the visa page, a printed passport-size colour photo, a local address (hotel or tour operator) and the signed application form the shop gives you."
+  ],
+  [
+   "Can I get an Indian eSIM as a tourist?",
+   "Indian operators offer eSIMs, but they usually need the same in-person ID check, and online self-activation generally needs an Indian number. A travel eSIM bought before you fly is the easier eSIM option for most visitors."
+  ],
+  [
+   "How long does SIM activation take in India?",
+   "It is not instant. The SIM can't make or receive calls until the operator finishes verification, which can take from a few hours to a day or two. Buy it on your first day."
+  ],
+  [
+   "How long is a tourist SIM card valid in India?",
+   "For foreign tourists a connection must not run past the visa and cannot be longer than 3 months at a time, even with a longer visa (COAI)."
+  ],
+  [
+   "Will my SIM work in Kashmir and Ladakh?",
+   "Prepaid SIMs from other parts of India don't work in Jammu & Kashmir and Ladakh; postpaid connections do. Confirm with the operator before you go. Roaming on your home SIM or a travel eSIM are alternatives."
+  ],
+  [
+   "Is there phone signal in the Himalaya?",
+   "Often not. The UK Foreign Office says you are extremely unlikely to have a phone signal in the mountains. Download offline maps and share your plan before mountain days."
+  ],
+  [
+   "Can I bring a satellite phone to India?",
+   "No, not without a licence. The UK Foreign Office says it is illegal to possess and operate satellite phones and GPS devices in India without a licence, and you can be fined or arrested."
+  ]
+ ],
+ "sources": [
+  [
+   "COAI — Subscriber verification for international visitors",
+   "https://coai.com/international-visitor-aquaring-connection-in-india"
+  ],
+  [
+   "UK FCDO — India: safety and security (updated 7 Oct 2026)",
+   "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"
+  ],
+  [
+   "YourStory — DoT makes OTP verification optional for foreign nationals (2 Aug 2024)",
+   "https://yourstory.com/2024/08/govt-otp-verification-optional-foreigners-mobile-connection"
+  ],
+  [
+   "TelecomTalk — Prepaid mobile services in J&K, North East and Assam (31 Mar 2015)",
+   "https://telecomtalk.info/?p=133206"
+  ],
+  [
+   "Government of India — e-Visa (official site)",
+   "https://indianvisaonline.gov.in/"
+  ]
+ ],
+ "verified": "27 Oct 2026",
+ "cta": {
+  "h2": "Planning a trip? Get a plan that shows where the signal drops",
+  "text": "Tell us your dates, how many of you and what you'd like to see. You get a day-by-day plan — including the mountain and Kashmir/Ladakh days where your phone may not work — and a US-dollar quote from our office in Himachal.",
+  "wa": "Hello Suzu Travels, I'm planning a trip to India (SIM card page). Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "first-time-india-travel-guide",
+  "india-travel-insurance",
+  "best-time-to-visit-himachal",
+  "india-e-visa-guide",
+  "private-driver-india"
+ ]
+}

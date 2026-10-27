@@ -214,5 +214,14 @@
   "blurb": "What your policy should cover for an India trip — information only",
   "added": "2026-10-27",
   "focus": "travel insurance india"
+ },
+ "sim-card-india-tourist": {
+  "id": 16085,
+  "path": "/india-tours/sim-card-india-tourist/",
+  "kind": "practical",
+  "label": "SIM cards & eSIM for visitors",
+  "blurb": "Documents, activation, eSIM vs local SIM, and signal in the mountains",
+  "added": "2026-10-27",
+  "focus": "sim card india tourist"
  }
 }
