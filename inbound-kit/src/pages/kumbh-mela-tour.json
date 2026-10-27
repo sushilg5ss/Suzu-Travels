@@ -13,101 +13,359 @@
  "sub": "Haridwar holds its Ardh Kumbh from 14 January to 20 April 2027, and the Nashik–Trimbakeshwar Simhastha has its main baths in August and September 2027. Here are the announced bathing dates, what an Amrit Snan is, an honest word on crowds, and how to plan a Kumbh visit from Delhi. Written by a travel company based in the Himalaya.",
  "hero_alt": "The ghats of Har Ki Pauri in Haridwar by day, temples on the ghat in the evening, a large evening gathering by the Ganga and the Har Ki Pauri clock tower",
  "cta1": "See the 2027 dates",
- "chips": [["14 Jan–20 Apr", "Haridwar Ardh Kumbh 2027"], ["3 Amrit Snan", "main bathing days, Haridwar"], ["Aug–Sep 2027", "Nashik main baths"], ["Checked", "26 Oct 2026"]],
+ "chips": [
+  [
+   "14 Jan–20 Apr",
+   "Haridwar Ardh Kumbh 2027"
+  ],
+  [
+   "3 Amrit Snan",
+   "main bathing days, Haridwar"
+  ],
+  [
+   "Aug–Sep 2027",
+   "Nashik main baths"
+  ],
+  [
+   "Checked",
+   "26 Oct 2026"
+  ]
+ ],
  "q": "When and where is the next Kumbh Mela?",
  "answer": "The next Kumbh Melas are in 2027. <b>Haridwar's Ardh Kumbh runs from 14 January to 20 April 2027</b>, with the main Amrit Snan bathing days on 6 March, 8 March and 14 April. The <b>Nashik–Trimbakeshwar Simhastha</b> opens on 31 October 2026, with its main baths on 2 August, 31 August and 11–12 September 2027. Foreigners are welcome; we plan Haridwar visits from Delhi with a private car and driver.",
- "facts": [["14 Jan–20 Apr", "Haridwar Ardh Kumbh 2027 — 10 bathing days"], ["6 Mar · 8 Mar · 14 Apr", "Amrit Snan days in Haridwar"], ["2 Aug · 31 Aug · 11–12 Sep", "Amrut Snan days, Nashik–Trimbakeshwar 2027"], ["2017", "UNESCO intangible cultural heritage"]],
+ "facts": [
+  [
+   "14 Jan–20 Apr",
+   "Haridwar Ardh Kumbh 2027 — 10 bathing days"
+  ],
+  [
+   "6 Mar · 8 Mar · 14 Apr",
+   "Amrit Snan days in Haridwar"
+  ],
+  [
+   "2 Aug · 31 Aug · 11–12 Sep",
+   "Amrut Snan days, Nashik–Trimbakeshwar 2027"
+  ],
+  [
+   "2017",
+   "UNESCO intangible cultural heritage"
+  ]
+ ],
  "sections": [
-  {"id": "dates", "nav": "Haridwar dates", "h2": "Haridwar Ardh Kumbh 2027: the bathing dates", "kind": "table",
+  {
+   "id": "dates",
+   "nav": "Haridwar dates",
+   "h2": "Haridwar Ardh Kumbh 2027: the bathing dates",
+   "kind": "table",
    "lead": "Haridwar's Mela Officer announced ten bathing festivals for the 2027 Ardh Kumbh (reported by PTI, 15 April 2026). The three marked Amrit Snan are the biggest days, when the akharas (orders of sadhus) bathe in procession.",
-   "head": ["Date (2027)", "Bathing festival", "What to expect"],
-   "rows": [
-    ["Thu 14 January", "Makar Sankranti", "The first bath of the Kumbh"],
-    ["6 February", "Mauni Amavasya", "A major bathing day"],
-    ["11 February", "Basant Panchami", "Bathing festival"],
-    ["20 February", "Magh Purnima", "Bathing festival"],
-    ["<b>6 March</b>", "<b>Mahashivratri — Amrit Snan</b>", "One of the three biggest days"],
-    ["<b>8 March</b>", "<b>Phalguna Amavasya — Amrit Snan</b>", "One of the three biggest days"],
-    ["7 April", "Nav Samvatsar", "Bathing festival"],
-    ["<b>14 April</b>", "<b>Mesh Sankranti — Amrit Snan</b>", "One of the three biggest days"],
-    ["15 April", "Bathing festival", "Listed in the announced schedule"],
-    ["20 April", "Chaitra Purnima", "The last bath of the Kumbh"]
+   "head": [
+    "Date (2027)",
+    "Bathing festival",
+    "What to expect"
    ],
-   "note": "Bathing dates are set by the mela authorities and can shift by a day — confirm on the official site haridwarkumbh.uk.gov.in (Haridwar) or the Maharashtra Government's Simhastha announcements (Nashik) before you book flights. Dates as announced, April 2026 (Haridwar) / June 2025 (Nashik)."},
-  {"id": "nashik", "nav": "Nashik 2027", "h2": "Nashik–Trimbakeshwar Simhastha: the other 2027 Kumbh", "kind": "cards", "style": "alt",
+   "rows": [
+    [
+     "Thu 14 January",
+     "Makar Sankranti",
+     "The first bath of the Kumbh"
+    ],
+    [
+     "6 February",
+     "Mauni Amavasya",
+     "A major bathing day"
+    ],
+    [
+     "11 February",
+     "Basant Panchami",
+     "Bathing festival"
+    ],
+    [
+     "20 February",
+     "Magh Purnima",
+     "Bathing festival"
+    ],
+    [
+     "<b>6 March</b>",
+     "<b>Mahashivratri — Amrit Snan</b>",
+     "One of the three biggest days"
+    ],
+    [
+     "<b>8 March</b>",
+     "<b>Phalguna Amavasya — Amrit Snan</b>",
+     "One of the three biggest days"
+    ],
+    [
+     "7 April",
+     "Nav Samvatsar",
+     "Bathing festival"
+    ],
+    [
+     "<b>14 April</b>",
+     "<b>Mesh Sankranti — Amrit Snan</b>",
+     "One of the three biggest days"
+    ],
+    [
+     "15 April",
+     "Bathing festival",
+     "Listed in the announced schedule"
+    ],
+    [
+     "20 April",
+     "Chaitra Purnima",
+     "The last bath of the Kumbh"
+    ]
+   ],
+   "note": "Bathing dates are set by the mela authorities and can shift by a day — confirm on the official site haridwarkumbh.uk.gov.in (Haridwar) or the Maharashtra Government's Simhastha announcements (Nashik) before you book flights. Dates as announced, April 2026 (Haridwar) / June 2025 (Nashik)."
+  },
+  {
+   "id": "nashik",
+   "nav": "Nashik 2027",
+   "h2": "Nashik–Trimbakeshwar Simhastha: the other 2027 Kumbh",
+   "kind": "cards",
+   "style": "alt",
    "lead": "Maharashtra's Simhastha Kumbh is held at Nashik and Trimbakeshwar, on the Godavari river. The Maharashtra Government announced its schedule in June 2025 (reported by PTI):",
    "items": [
-    ["Opening: 31 October 2026", "The Kumbh opens with flag hoisting (Dhwajarohan) at Trimbakeshwar and at Ramkund in Nashik."],
-    ["Nagar Pradakshina: 29 July 2027", "A procession around the town before the main bathing days."],
-    ["Amrut Snan: 2 Aug, 31 Aug, 11–12 Sep 2027", "The three main baths — the last on 11 September in Nashik and 12 September at Trimbakeshwar."],
-    ["Closing: 24 July 2028", "The flag is lowered and the Simhastha ends."],
-    ["How we help", "Nashik is in Maharashtra, in western India. We arrange Nashik trips on request — tell us your dates and we send a plan and a US-dollar quote."]
-   ]},
-  {"id": "what", "nav": "What is the Kumbh", "h2": "What is the Kumbh Mela?", "kind": "cards",
+    [
+     "Opening: 31 October 2026",
+     "The Kumbh opens with flag hoisting (Dhwajarohan) at Trimbakeshwar and at Ramkund in Nashik."
+    ],
+    [
+     "Nagar Pradakshina: 29 July 2027",
+     "A procession around the town before the main bathing days."
+    ],
+    [
+     "Amrut Snan: 2 Aug, 31 Aug, 11–12 Sep 2027",
+     "The three main baths — the last on 11 September in Nashik and 12 September at Trimbakeshwar."
+    ],
+    [
+     "Closing: 24 July 2028",
+     "The flag is lowered and the Simhastha ends."
+    ],
+    [
+     "How we help",
+     "Nashik is in Maharashtra, in western India. We arrange Nashik trips on request — tell us your dates and we send a plan and a US-dollar quote."
+    ]
+   ]
+  },
+  {
+   "id": "what",
+   "nav": "What is the Kumbh",
+   "h2": "What is the Kumbh Mela?",
+   "kind": "cards",
    "lead": "UNESCO added the Kumbh Mela to its Representative List of the Intangible Cultural Heritage of Humanity in December 2017, describing it as the largest peaceful congregation of pilgrims on earth. It is held in turn in Prayagraj (Allahabad), Haridwar, Ujjain and Nashik.",
    "items": [
-    ["The holy dip", "Hindus believe that bathing in the sacred river during the Kumbh brings spiritual merit. Pilgrims, families and sadhus come from all over India to bathe, pray and listen to teachers."],
-    ["Amrit Snan", "The most important bathing days, when the akharas — the orders of sadhus — go to the river in procession. In Haridwar in 2027 these are 6 March, 8 March and 14 April. They are also the most crowded days."],
-    ["Kumbh, Ardh Kumbh and Maha Kumbh", "Haridwar 2027 is an <b>Ardh Kumbh</b> — a 'half' Kumbh, held between the full Kumbhs. Uttarakhand's Chief Minister has said it will be held as grandly as a full Kumbh."],
-    ["Har Ki Pauri", "Haridwar's most famous ghat on the Ganga and the centre of the Kumbh. Haridwar railway station is the nearest station, and Jolly Grant airport at Dehradun has daily flights to Delhi."]
-   ]},
-  {"id": "safety", "nav": "Crowds & safety", "h2": "Crowds and safety: an honest answer", "kind": "callout", "style": "dark",
+    [
+     "The holy dip",
+     "Hindus believe that bathing in the sacred river during the Kumbh brings spiritual merit. Pilgrims, families and sadhus come from all over India to bathe, pray and listen to teachers."
+    ],
+    [
+     "Amrit Snan",
+     "The most important bathing days, when the akharas — the orders of sadhus — go to the river in procession. In Haridwar in 2027 these are 6 March, 8 March and 14 April. They are also the most crowded days."
+    ],
+    [
+     "Kumbh, Ardh Kumbh and Maha Kumbh",
+     "Haridwar 2027 is an <b>Ardh Kumbh</b> — a 'half' Kumbh, held between the full Kumbhs. Uttarakhand's Chief Minister has said it will be held as grandly as a full Kumbh."
+    ],
+    [
+     "Har Ki Pauri",
+     "Haridwar's most famous ghat on the Ganga and the centre of the Kumbh. Haridwar railway station is the nearest station, and Jolly Grant airport at Dehradun has daily flights to Delhi."
+    ]
+   ]
+  },
+  {
+   "id": "safety",
+   "nav": "Crowds & safety",
+   "h2": "Crowds and safety: an honest answer",
+   "kind": "callout",
+   "style": "dark",
    "text": "The UK Foreign Office (advice updated 7 October 2026) asks visitors to take particular care at times of religious significance and notes that stampedes have happened at large religious gatherings. NHS Fit for Travel's advice for the 2025 Kumbh said that accidents and injuries, such as slips, falls, stampedes and road accidents, are common. What we suggest: if crowds worry you, avoid the main Amrit Snan mornings and visit on a quieter bathing day; agree a meeting point with your group; keep copies of your passport and visa and a charged phone; follow police barriers and one-way routes; and stay outside the mela core.",
-   "note": "We don't promise any event is safe or unsafe. We share the official advice with dates and plan your visit around it with you."},
-  {"id": "trip", "nav": "A Kumbh trip", "h2": "A sample plan: Haridwar Kumbh and Rishikesh from Delhi", "kind": "steps",
+   "note": "We don't promise any event is safe or unsafe. We share the official advice with dates and plan your visit around it with you."
+  },
+  {
+   "id": "trip",
+   "nav": "A Kumbh trip",
+   "h2": "A sample plan: Haridwar Kumbh and Rishikesh from Delhi",
+   "kind": "steps",
    "lead": "Haridwar is the gateway to the Himalaya, so the Kumbh fits easily into a North India trip. Delhi to Haridwar is a long day by car or a few hours by train. A sample plan — we set the exact days around the bathing dates you choose:",
    "items": [
-    ["Day 1 — Delhi to Haridwar", "Your private car and driver collect you in Delhi. Your driver's name, photo and car number are shared with you before the trip. Check in to a stay outside the mela core."],
-    ["Day 2 — Kumbh day", "An early walk to the ghats with a local guide, the camps and processions of the day, and the evening Ganga aarti at Har Ki Pauri if crowds allow."],
-    ["Day 3 — Rishikesh", "Laxman Jhula, the riverside ashrams and an optional yoga class — see our <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh yoga retreat guide</a>."],
-    ["Add Holi or the Taj", "Holi 2027 falls on 23 March, inside the Haridwar Kumbh window — see our <a href=\"/india-tours/holi-festival-tour/\">Holi festival guide</a>. Many guests add Agra and Jaipur, or the <a href=\"/char-dham-yatra-for-nri/\">Char Dham Yatra</a> later in the year."]
-   ]},
-  {"id": "prepare", "nav": "What to bring", "h2": "What to wear, bring and know", "kind": "cards", "style": "alt",
+    [
+     "Day 1 — Delhi to Haridwar",
+     "Your private car and driver collect you in Delhi. Your driver's name, photo and car number are shared with you before the trip. Check in to a stay outside the mela core."
+    ],
+    [
+     "Day 2 — Kumbh day",
+     "An early walk to the ghats with a local guide, the camps and processions of the day, and the evening Ganga aarti at Har Ki Pauri if crowds allow."
+    ],
+    [
+     "Day 3 — Rishikesh",
+     "Laxman Jhula, the riverside ashrams and an optional yoga class — see our <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh yoga retreat guide</a>."
+    ],
+    [
+     "Add Holi or the Taj",
+     "Holi 2027 falls on 23 March, inside the Haridwar Kumbh window — see our <a href=\"/india-tours/holi-festival-tour/\">Holi festival guide</a>. Many guests add Agra and Jaipur, or the <a href=\"/char-dham-yatra-for-nri/\">Char Dham Yatra</a> later in the year."
+    ]
+   ]
+  },
+  {
+   "id": "prepare",
+   "nav": "What to bring",
+   "h2": "What to wear, bring and know",
+   "kind": "cards",
+   "style": "alt",
    "lead": "A Kumbh is a religious gathering first and a sight second. A few things make the day easier for you and the pilgrims around you:",
    "items": [
-    ["Clothes", "Modest clothing that covers shoulders and knees, closed shoes you don't mind getting wet, and warm layers for January and February nights."],
-    ["Food, water and health", "NHS Fit for Travel's advice for the 2025 Kumbh: take safe food and water precautions at all times. We're not doctors — consult your doctor or a travel-health clinic; see NHS Fit for Travel or CDC Travelers' Health."],
-    ["Photographs", "Ask before you photograph sadhus or pilgrims, and never photograph women bathing. Your guide will tell you where cameras are not welcome."],
-    ["Visa", "Most visitors need an Indian e-Visa. Apply yourself at the official site <b>indianvisaonline.gov.in</b>; beware look-alike sites that charge extra. We are not a visa agency — see our <a href=\"/india-tours/india-e-visa-guide/\">India e-Visa guide</a>."],
-    ["Registration", "Check the official site haridwarkumbh.uk.gov.in for any visitor registration or rules for 2027 before you travel."]
-   ]},
-  {"id": "included", "nav": "How we plan it", "h2": "How we plan your Kumbh visit", "kind": "cards",
+    [
+     "Clothes",
+     "Modest clothing that covers shoulders and knees, closed shoes you don't mind getting wet, and warm layers for January and February nights."
+    ],
+    [
+     "Food, water and health",
+     "NHS Fit for Travel's advice for the 2025 Kumbh: take safe food and water precautions at all times. We're not doctors — consult your doctor or a travel-health clinic; see NHS Fit for Travel or CDC Travelers' Health."
+    ],
+    [
+     "Photographs",
+     "Ask before you photograph sadhus or pilgrims, and never photograph women bathing. Your guide will tell you where cameras are not welcome."
+    ],
+    [
+     "Visa",
+     "Most visitors need an Indian e-Visa. Apply yourself at the official site <b>indianvisaonline.gov.in</b>; beware look-alike sites that charge extra. We are not a visa agency — see our <a href=\"/india-tours/india-e-visa-guide/\">India e-Visa guide</a>."
+    ],
+    [
+     "Registration",
+     "Check the official site haridwarkumbh.uk.gov.in for any visitor registration or rules for 2027 before you travel."
+    ]
+   ]
+  },
+  {
+   "id": "included",
+   "nav": "How we plan it",
+   "h2": "How we plan your Kumbh visit",
+   "kind": "cards",
    "lead": "Stays near Haridwar fill early and cost more on bathing days, so we quote Kumbh trips on request. A plan can include:",
    "items": [
-    ["Private car + driver", "From Delhi and back, with fuel, tolls and parking — see our <a href=\"/india-tours/private-driver-india/\">private car with driver</a>."],
-    ["Stays outside the mela core", "Hotels near Haridwar or in Rishikesh, chosen for your budget, so you can rest away from the crowds."],
-    ["A local guide on the Kumbh day", "An early-morning ghat walk with someone who knows the ghats, the timings and the crowds."],
-    ["Your choice of day", "A quieter bathing day or an Amrit Snan — we explain both and plan around the one you pick."],
-    ["Add-ons", "Rishikesh, Holi, the Golden Triangle or the Himalaya. Flights, visa and tips are your own."]
-   ]}
+    [
+     "Private car + driver",
+     "From Delhi and back, with fuel, tolls and parking — see our <a href=\"/india-tours/private-driver-india/\">private car with driver</a>."
+    ],
+    [
+     "Stays outside the mela core",
+     "Hotels near Haridwar or in Rishikesh, chosen for your budget, so you can rest away from the crowds."
+    ],
+    [
+     "A local guide on the Kumbh day",
+     "An early-morning ghat walk with someone who knows the ghats, the timings and the crowds."
+    ],
+    [
+     "Your choice of day",
+     "A quieter bathing day or an Amrit Snan — we explain both and plan around the one you pick."
+    ],
+    [
+     "Add-ons",
+     "Rishikesh, Holi, the Golden Triangle or the Himalaya. Flights, visa and tips are your own."
+    ]
+   ],
+   "video": "cost",
+   "video_caption": "What we arrange for a Kumbh visit: a car and driver from Delhi, a stay away from the crowds, a local guide on the day and your choice of bathing day."
+  }
  ],
- "prices": {"h2": "Prices", "lead": "A Kumbh visit is quoted on request — the bathing day, the number of nights, the hotel level and group size change the total, and stays near Haridwar cost more on bathing days. You get a day-by-day plan with a US-dollar total and what it covers before you pay anything. Our published trip that includes Haridwar:",
+ "prices": {
+  "h2": "Prices",
+  "lead": "A Kumbh visit is quoted on request — the bathing day, the number of nights, the hotel level and group size change the total, and stays near Haridwar cost more on bathing days. You get a day-by-day plan with a US-dollar total and what it covers before you pay anything. Our published trip that includes Haridwar:",
   "rows": [
-   ["Kumbh Mela visit — added to your India trip", "on request", "Car with driver from Delhi, stays outside the mela core, a local guide on the Kumbh day"],
-   ["Spiritual India — Golden Triangle + Rishikesh & Haridwar, 8 days / 7 nights", "from US$649", "Per person, two travellers sharing a room in 3-star hotels: private car and driver, daily breakfast; Delhi, Agra, Jaipur, Haridwar and Rishikesh. International flights not included. Final price confirmed on quote in US$."]
-  ]},
+   [
+    "Kumbh Mela visit — added to your India trip",
+    "on request",
+    "Car with driver from Delhi, stays outside the mela core, a local guide on the Kumbh day"
+   ],
+   [
+    "Spiritual India — Golden Triangle + Rishikesh & Haridwar, 8 days / 7 nights",
+    "from US$649",
+    "Per person, two travellers sharing a room in 3-star hotels: private car and driver, daily breakfast; Delhi, Agra, Jaipur, Haridwar and Rishikesh. International flights not included. Final price confirmed on quote in US$."
+   ]
+  ]
+ },
  "faqs": [
-  ["When is the next Kumbh Mela?", "In 2027 there are two. Haridwar's Ardh Kumbh runs from 14 January to 20 April 2027, with Amrit Snan days on 6 March, 8 March and 14 April. The Nashik–Trimbakeshwar Simhastha opens on 31 October 2026 and has its main baths on 2 August, 31 August and 11–12 September 2027. Confirm dates on the official sites before you book flights."],
-  ["Can foreigners attend the Kumbh Mela?", "Yes. The Kumbh is open to everyone, and many international visitors come to watch the bathing days and the processions. You need a valid Indian visa or e-Visa — apply yourself at the official site indianvisaonline.gov.in and beware look-alike sites that charge extra. Check haridwarkumbh.uk.gov.in for any visitor registration."],
-  ["What is an Amrit Snan?", "The most important bathing days of a Kumbh, when the akharas (orders of sadhus) go to the river in procession. In Haridwar in 2027 they fall on 6 March (Mahashivratri), 8 March (Phalguna Amavasya) and 14 April (Mesh Sankranti). They are also the most crowded days."],
-  ["Is the Kumbh Mela safe for tourists?", "The UK Foreign Office (advice updated 7 October 2026) asks visitors to take particular care at times of religious significance and notes that stampedes have happened at large religious gatherings. If crowds worry you, visit on a quieter bathing day, keep a meeting point, follow police barriers and stay outside the mela core."],
-  ["What is the difference between Kumbh, Ardh Kumbh and Maha Kumbh?", "An Ardh Kumbh is a 'half' Kumbh, held between the full Kumbhs. Haridwar 2027 is an Ardh Kumbh, though Uttarakhand's Chief Minister has said it will be held as grandly as a full Kumbh. The bathing days and rituals are the same kind in each."],
-  ["Where should I stay for the Kumbh Mela?", "Outside the mela core — hotels near Haridwar or in Rishikesh — so you can rest away from the crowds. Rooms fill early and cost more on bathing days, so book early. We quote stays on request and plan the drive to the ghats with you."],
-  ["Can I combine the Kumbh with Holi, Rishikesh or the Taj Mahal?", "Yes. Holi 2027 falls on 23 March, inside the Haridwar Kumbh window, Rishikesh is next door to Haridwar, and Agra and Jaipur fit before or after. Tell us your dates and we send a day-by-day plan with a private car and driver."],
-  ["What should I wear and bring?", "Modest clothing that covers shoulders and knees, closed shoes, warm layers for January and February nights, copies of your passport and visa and a charged phone. NHS Fit for Travel advises safe food and water precautions at all times; consult your doctor or a travel-health clinic before you go."]
+  [
+   "When is the next Kumbh Mela?",
+   "In 2027 there are two. Haridwar's Ardh Kumbh runs from 14 January to 20 April 2027, with Amrit Snan days on 6 March, 8 March and 14 April. The Nashik–Trimbakeshwar Simhastha opens on 31 October 2026 and has its main baths on 2 August, 31 August and 11–12 September 2027. Confirm dates on the official sites before you book flights."
+  ],
+  [
+   "Can foreigners attend the Kumbh Mela?",
+   "Yes. The Kumbh is open to everyone, and many international visitors come to watch the bathing days and the processions. You need a valid Indian visa or e-Visa — apply yourself at the official site indianvisaonline.gov.in and beware look-alike sites that charge extra. Check haridwarkumbh.uk.gov.in for any visitor registration."
+  ],
+  [
+   "What is an Amrit Snan?",
+   "The most important bathing days of a Kumbh, when the akharas (orders of sadhus) go to the river in procession. In Haridwar in 2027 they fall on 6 March (Mahashivratri), 8 March (Phalguna Amavasya) and 14 April (Mesh Sankranti). They are also the most crowded days."
+  ],
+  [
+   "Is the Kumbh Mela safe for tourists?",
+   "The UK Foreign Office (advice updated 7 October 2026) asks visitors to take particular care at times of religious significance and notes that stampedes have happened at large religious gatherings. If crowds worry you, visit on a quieter bathing day, keep a meeting point, follow police barriers and stay outside the mela core."
+  ],
+  [
+   "What is the difference between Kumbh, Ardh Kumbh and Maha Kumbh?",
+   "An Ardh Kumbh is a 'half' Kumbh, held between the full Kumbhs. Haridwar 2027 is an Ardh Kumbh, though Uttarakhand's Chief Minister has said it will be held as grandly as a full Kumbh. The bathing days and rituals are the same kind in each."
+  ],
+  [
+   "Where should I stay for the Kumbh Mela?",
+   "Outside the mela core — hotels near Haridwar or in Rishikesh — so you can rest away from the crowds. Rooms fill early and cost more on bathing days, so book early. We quote stays on request and plan the drive to the ghats with you."
+  ],
+  [
+   "Can I combine the Kumbh with Holi, Rishikesh or the Taj Mahal?",
+   "Yes. Holi 2027 falls on 23 March, inside the Haridwar Kumbh window, Rishikesh is next door to Haridwar, and Agra and Jaipur fit before or after. Tell us your dates and we send a day-by-day plan with a private car and driver."
+  ],
+  [
+   "What should I wear and bring?",
+   "Modest clothing that covers shoulders and knees, closed shoes, warm layers for January and February nights, copies of your passport and visa and a charged phone. NHS Fit for Travel advises safe food and water precautions at all times; consult your doctor or a travel-health clinic before you go."
+  ]
  ],
  "sources": [
-  ["Government of Uttarakhand — Haridwar Kumbh 2027 (official site)", "https://haridwarkumbh.uk.gov.in"],
-  ["PTI via The Week — Haridwar Ardh Kumbh bathing dates announced (15 Apr 2026)", "https://www.theweek.in/wire-updates/national/2026/04/15/dates-announced-for-bathing-festivals-during-ardh-kumbh-mela-in-haridwar.amp.html"],
-  ["PTI via The Week — Nashik–Trimbakeshwar Simhastha Kumbh dates (1 Jun 2025)", "https://www.theweek.in/wire-updates/national/2025/06/01/bom14-mh-ld-kumbh-mela.html"],
-  ["PTI via The Week — Haridwar Ardh Kumbh to be held like a Purna Kumbh (28 Nov 2025)", "https://www.theweek.in/wire-updates/national/2025/11/28/des89-ukd-ardh-kumbh-dhami.html"],
-  ["District Prayagraj (Govt of Uttar Pradesh) — UNESCO inscription of Kumbh Mela", "https://prayagraj.nic.in/inscription-of-kumbh-mela-on-the-representative-list-of-intangible-cultural-heritage-of-humanity/"],
-  ["District Haridwar (Govt of Uttarakhand) — Har Ki Pauri", "https://haridwar.nic.in/tourist-place/har-ki-pauri/"],
-  ["UK FCDO — India travel advice: safety and security", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"],
-  ["NHS Fit for Travel — Kumbh Mela", "https://fitfortravel.nhs.uk/news/newsdetail.aspx?id=24815"],
-  ["Government of India — e-Visa (official site)", "https://indianvisaonline.gov.in/"]
+  [
+   "Government of Uttarakhand — Haridwar Kumbh 2027 (official site)",
+   "https://haridwarkumbh.uk.gov.in"
+  ],
+  [
+   "PTI via The Week — Haridwar Ardh Kumbh bathing dates announced (15 Apr 2026)",
+   "https://www.theweek.in/wire-updates/national/2026/04/15/dates-announced-for-bathing-festivals-during-ardh-kumbh-mela-in-haridwar.amp.html"
+  ],
+  [
+   "PTI via The Week — Nashik–Trimbakeshwar Simhastha Kumbh dates (1 Jun 2025)",
+   "https://www.theweek.in/wire-updates/national/2025/06/01/bom14-mh-ld-kumbh-mela.html"
+  ],
+  [
+   "PTI via The Week — Haridwar Ardh Kumbh to be held like a Purna Kumbh (28 Nov 2025)",
+   "https://www.theweek.in/wire-updates/national/2025/11/28/des89-ukd-ardh-kumbh-dhami.html"
+  ],
+  [
+   "District Prayagraj (Govt of Uttar Pradesh) — UNESCO inscription of Kumbh Mela",
+   "https://prayagraj.nic.in/inscription-of-kumbh-mela-on-the-representative-list-of-intangible-cultural-heritage-of-humanity/"
+  ],
+  [
+   "District Haridwar (Govt of Uttarakhand) — Har Ki Pauri",
+   "https://haridwar.nic.in/tourist-place/har-ki-pauri/"
+  ],
+  [
+   "UK FCDO — India travel advice: safety and security",
+   "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"
+  ],
+  [
+   "NHS Fit for Travel — Kumbh Mela",
+   "https://fitfortravel.nhs.uk/news/newsdetail.aspx?id=24815"
+  ],
+  [
+   "Government of India — e-Visa (official site)",
+   "https://indianvisaonline.gov.in/"
+  ]
  ],
  "verified": "26 Oct 2026",
- "cta": {"h2": "Tell us your dates — we'll plan your Kumbh 2027 visit", "text": "Send the bathing day you have in mind, how many days you have and where else you want to go. You get a day-by-day plan with a private car and driver and a US-dollar quote from our office in Himachal.", "wa": "Hello Suzu Travels, I'm planning a Kumbh Mela 2027 trip. Dates: ___ , travellers: ___ , country: ___"},
- "links": ["rishikesh-yoga-retreat-guide", "holi-festival-tour", "private-driver-india", "best-time-to-visit-india"]
+ "cta": {
+  "h2": "Tell us your dates — we'll plan your Kumbh 2027 visit",
+  "text": "Send the bathing day you have in mind, how many days you have and where else you want to go. You get a day-by-day plan with a private car and driver and a US-dollar quote from our office in Himachal.",
+  "wa": "Hello Suzu Travels, I'm planning a Kumbh Mela 2027 trip. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "rishikesh-yoga-retreat-guide",
+  "holi-festival-tour",
+  "private-driver-india",
+  "best-time-to-visit-india"
+ ]
 }

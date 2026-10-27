@@ -14,18 +14,42 @@
  "hero_alt": "The Taj Mahal in Agra, the Diwan-i-Khas at Fatehpur Sikri, the Chand Baori stepwell at Abhaneri and Hawa Mahal in Jaipur — the stops of the Agra to Jaipur road",
  "cta1": "Compare the options",
  "chips": [
-  ["232 km", "144 mi by road"],
-  ["2 stops", "Fatehpur Sikri · Abhaneri"],
-  ["365 days", "train booking window for foreigners"],
-  ["20% deposit", "full refund within 48 h"]
+  [
+   "232 km",
+   "144 mi by road"
+  ],
+  [
+   "2 stops",
+   "Fatehpur Sikri · Abhaneri"
+  ],
+  [
+   "365 days",
+   "train booking window for foreigners"
+  ],
+  [
+   "20% deposit",
+   "full refund within 48 h"
+  ]
  ],
  "q": "What is the best way to get from Agra to Jaipur?",
  "answer": "Agra to Jaipur is <b>232 km (144 mi) by road</b>. Go by <b>private car</b> if you want to stop at Fatehpur Sikri (a UNESCO site) and the Abhaneri stepwell on the way — a full travel day. Or take one of several daily trains; check current timings on IRCTC, where foreigners can book up to 365 days ahead. Suzu Travels quotes cars on request.",
  "facts": [
-  ["232 km", "144 mi — Agra to Jaipur by road"],
-  ["UNESCO 1986", "Fatehpur Sikri, Akbar's city"],
-  ["13 levels", "Chand Baori stepwell, Abhaneri"],
-  ["365 days", "Foreign Tourist Quota booking window"]
+  [
+   "232 km",
+   "144 mi — Agra to Jaipur by road"
+  ],
+  [
+   "UNESCO 1986",
+   "Fatehpur Sikri, Akbar's city"
+  ],
+  [
+   "13 levels",
+   "Chand Baori stepwell, Abhaneri"
+  ],
+  [
+   "365 days",
+   "Foreign Tourist Quota booking window"
+  ]
  ],
  "sections": [
   {
@@ -36,7 +60,11 @@
    "video": "route",
    "video_caption": "Agra to Jaipur is 232 km (144 mi) by road. Fatehpur Sikri is close to the Agra end; the Abhaneri stepwell is a short detour off the highway, closer to Jaipur.",
    "lead": "Three honest ways to make the trip. Which one is right depends on whether you want to see anything on the way.",
-   "head": ["Option", "How it works", "Good for"],
+   "head": [
+    "Option",
+    "How it works",
+    "Good for"
+   ],
    "rows": [
     [
      "Private car with stops",
@@ -219,14 +247,38 @@
   ]
  ],
  "sources": [
-  ["Taj Mahal official site — getting around Agra (road distances, Fatehpur Sikri hours)", "https://tajmahal.gov.in/getting-around-taj-mahal.aspx"],
-  ["Taj Mahal official site — UNESCO World Heritage Sites in Agra", "https://tajmahal.gov.in/uneso-world-heritage-site.aspx"],
-  ["UNESCO World Heritage Centre — Fatehpur Sikri", "https://whc.unesco.org/en/list/255/"],
-  ["Incredible India (Ministry of Tourism) — Abhaneri", "https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/jaipur/abhaneri.html"],
-  ["Utsav (Ministry of Tourism) — Abhaneri Festival, Dausa", "https://utsav.gov.in/view-event/abhaneri-festival-dausa"],
-  ["High Commission of India, Kuala Lumpur — IRCTC Foreign Tourist Quota notice", "https://hcikl.gov.in/pdf/press/press_283749530.pdf"],
-  ["All India Radio — advance booking window cut to 60 days (foreign tourists unchanged)", "https://www.newsonair.gov.in/indian-railways-reduces-advance-ticket-booking-window-to-60-days-effective-from-november-1"],
-  ["UK FCDO — India travel advice: safety and security", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"]
+  [
+   "Taj Mahal official site — getting around Agra (road distances, Fatehpur Sikri hours)",
+   "https://tajmahal.gov.in/getting-around-taj-mahal.aspx"
+  ],
+  [
+   "Taj Mahal official site — UNESCO World Heritage Sites in Agra",
+   "https://tajmahal.gov.in/uneso-world-heritage-site.aspx"
+  ],
+  [
+   "UNESCO World Heritage Centre — Fatehpur Sikri",
+   "https://whc.unesco.org/en/list/255/"
+  ],
+  [
+   "Incredible India (Ministry of Tourism) — Abhaneri",
+   "https://prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/jaipur/abhaneri.html"
+  ],
+  [
+   "Utsav (Ministry of Tourism) — Abhaneri Festival, Dausa",
+   "https://utsav.gov.in/view-event/abhaneri-festival-dausa"
+  ],
+  [
+   "High Commission of India, Kuala Lumpur — IRCTC Foreign Tourist Quota notice",
+   "https://hcikl.gov.in/pdf/press/press_283749530.pdf"
+  ],
+  [
+   "All India Radio — advance booking window cut to 60 days (foreign tourists unchanged)",
+   "https://www.newsonair.gov.in/indian-railways-reduces-advance-ticket-booking-window-to-60-days-effective-from-november-1"
+  ],
+  [
+   "UK FCDO — India travel advice: safety and security",
+   "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"
+  ]
  ],
  "verified": "24 Oct 2026",
  "cta": {
@@ -239,5 +291,11 @@
   "type": "Private road transfer with sightseeing stops, Agra to Jaipur",
   "area": "Agra (Uttar Pradesh), Fatehpur Sikri, Abhaneri and Jaipur (Rajasthan)"
  },
- "links": ["golden-triangle-tour", "private-driver-india", "taj-mahal-tour-from-delhi", "rajasthan-tour"]
+ "links": [
+  "golden-triangle-tour",
+  "private-driver-india",
+  "taj-mahal-tour-from-delhi",
+  "delhi-tour",
+  "rajasthan-tour"
+ ]
 }

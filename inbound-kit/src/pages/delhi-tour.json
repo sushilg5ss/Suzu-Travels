@@ -1,0 +1,340 @@
+{
+ "path": "/india-tours/delhi-tour/",
+ "parent": 11411,
+ "kind": "product",
+ "title": "Delhi Tour: Old and New Delhi in One or Two Days by Private Car",
+ "seo_title": "Delhi Tour: Old & New Delhi in 1 or 2 Days by Private Car",
+ "seo_desc": "Plan a Delhi tour: Red Fort, Jama Masjid, Humayun's Tomb, Qutb Minar and India Gate in 1 or 2 days by private car, with Monday closures. 20% deposit.",
+ "focus": "delhi tour",
+ "label": "Delhi tour (1–2 days)",
+ "blurb": "Old and New Delhi by private car — a one-day and a two-day plan",
+ "kicker": "Old & New Delhi · Private car and driver",
+ "tag": "Delhi in one or two days, in the right order.",
+ "sub": "Most trips to India start in Delhi. Three UNESCO World Heritage Sites, a Mughal mosque for 25,000 worshippers and New Delhi's wide avenues fit into one long day or two easy ones — if you plan around Mondays, prayer times and the traffic. Our car and driver collect you at your hotel or the airport.",
+ "hero_alt": "Qutb Minar, the Red Fort at night, Humayun's Tomb, India Gate at dawn and a minaret of the Jama Masjid in Delhi",
+ "cta1": "See the plans",
+ "chips": [
+  [
+   "3 UNESCO sites",
+   "Red Fort, Humayun's Tomb, Qutb Minar"
+  ],
+  [
+   "Mondays",
+   "three big sights close — we plan around it"
+  ],
+  [
+   "Private car",
+   "hotel or airport pick-up"
+  ],
+  [
+   "20% deposit",
+   "full refund within 48 h"
+  ]
+ ],
+ "q": "What is the best way to do a Delhi tour?",
+ "answer": "A <b>Delhi tour</b> works best by private car with an English-speaking driver: Old Delhi (Jama Masjid, Chandni Chowk, the Red Fort) one morning, Humayun's Tomb, Qutb Minar and India Gate the next — or all in one long day. Avoid Mondays for the Red Fort, Akshardham and the Lotus Temple. Suzu Travels quotes in US dollars; 20% deposit.",
+ "facts": [
+  [
+   "3",
+   "UNESCO World Heritage Sites in Delhi"
+  ],
+  [
+   "72.5 m",
+   "Qutb Minar, India's tallest masonry tower"
+  ],
+  [
+   "25,000",
+   "worshippers fit in the Jama Masjid courtyard"
+  ],
+  [
+   "Monday",
+   "Red Fort, Akshardham and Lotus Temple closed"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "plans",
+   "nav": "1 or 2 days",
+   "h2": "A one-day and a two-day Delhi tour",
+   "kind": "table",
+   "lead": "Old Delhi is busiest and most atmospheric in the morning; the southern monuments are spread out, so they go together. Delhi Tourism's own one-day plan says the Red Fort alone needs at least two hours.",
+   "video": "route",
+   "video_caption": "Day 1: Red Fort and Jama Masjid in Old Delhi, then India Gate. Day 2: Humayun's Tomb, the Lotus Temple and the Qutb Minar complex in the south.",
+   "head": [
+    "Plan",
+    "Morning",
+    "Afternoon and evening"
+   ],
+   "rows": [
+    [
+     "One long day",
+     "Jama Masjid (foreign visitors from 8 am), a walk or rickshaw through Chandni Chowk, the Red Fort.",
+     "Humayun's Tomb, the Qutb Minar complex, then India Gate at dusk on the way back to your hotel."
+    ],
+    [
+     "Two days — day 1 (Old & New Delhi)",
+     "Jama Masjid, Chandni Chowk, the Red Fort with time for its pavilions and gardens.",
+     "New Delhi: Rashtrapati Bhavan and the government buildings from the road, India Gate, Connaught Place for lunch or shopping."
+    ],
+    [
+     "Two days — day 2 (south Delhi)",
+     "Humayun's Tomb in the soft morning light, then the Lotus Temple.",
+     "The Qutb Minar complex and the Iron Pillar; Akshardham in the late afternoon if you have the energy."
+    ],
+    [
+     "On a Monday",
+     "Jama Masjid and Chandni Chowk, India Gate.",
+     "Humayun's Tomb and the Qutb Minar complex — both are open every day. The Red Fort, Akshardham and the Lotus Temple are closed."
+    ]
+   ],
+   "note": "Opening days can change for state events and security; we confirm the next day's plan the evening before. The Red Fort is also closed to ordinary visitors from 15 July to 15 August each year."
+  },
+  {
+   "id": "sights",
+   "nav": "The sights",
+   "h2": "What you see on a Delhi tour",
+   "kind": "cards",
+   "items": [
+    [
+     "Red Fort (Lal Qila)",
+     "Shah Jahan's palace fort of Shahjahanabad, built in 1638, with red sandstone walls 33 m (108 ft) high. A UNESCO World Heritage Site; its gardens and pavilions inspired buildings across Rajasthan, Delhi and Agra. Closed on Mondays."
+    ],
+    [
+     "Jama Masjid",
+     "Begun by Shah Jahan in 1644; the courtyard holds about 25,000 worshippers. Foreign visitors can enter from 8 am to sunset outside prayer times; robes can be hired at the northern gate. Open every day."
+    ],
+    [
+     "Humayun's Tomb",
+     "Built in the 1560s under Emperor Akbar and finished in 1570 — the first garden-tomb in the Indian subcontinent and the model the Taj Mahal perfected about 80 years later. UNESCO-listed since 1993; open sunrise to sunset, every day."
+    ],
+    [
+     "Qutb Minar complex",
+     "The 72.5 m (238 ft) tower begun in 1199, the Alai Darwaza gate of 1311, the oldest mosque in northern India and the Iron Pillar. A UNESCO World Heritage Site, open from sunrise to 8 pm."
+    ],
+    [
+     "India Gate and New Delhi",
+     "The broad central avenue with India Gate at one end and Rashtrapati Bhavan at the other, best at dusk. Delhi Tourism's itinerary suggests lunch around Connaught Place."
+    ],
+    [
+     "Lotus Temple and Akshardham",
+     "The Bahá'í House of Worship (completed 1986; free; 9 am–5:30 pm) and Swaminarayan Akshardham (free entry, first entry 10 am, last 6:30 pm). Both are closed on Mondays."
+    ]
+   ]
+  },
+  {
+   "id": "rules",
+   "nav": "Dress & rules",
+   "h2": "What to wear and what to leave in the car",
+   "kind": "callout",
+   "text": "<b>Akshardham does not allow mobile phones, cameras or any electronics</b>, and no bags or food — there is a free cloakroom, or leave them in the car with your driver. Shoulders, upper arms and knees must be covered there. At the <b>Jama Masjid</b>, dress modestly and take off your shoes; robes can be hired at the northern gate, and tourists are not allowed in during prayers.",
+   "after": [
+    "Foreign visitors pay a separate, higher ticket than Indian visitors at the ASI monuments (Red Fort, Humayun's Tomb, Qutb Minar). We can buy them for you in the same quote, or you buy them on the spot. Photography for personal use is free at Humayun's Tomb."
+   ]
+  },
+  {
+   "id": "day",
+   "nav": "How it works",
+   "h2": "How the Delhi tour works with us",
+   "kind": "steps",
+   "lead": "One car and one English-speaking driver from your hotel door, for one or two days.",
+   "items": [
+    [
+     "Tell us your dates and hotel",
+     "Which days you are in Delhi, where you stay, and whether you arrive on a long layover or before a longer trip."
+    ],
+    [
+     "Get a written plan and quote",
+     "The order of the sights for your days (no Red Fort on a Monday), car type and what is included — in US dollars."
+    ],
+    [
+     "Before the trip",
+     "Your driver's name, photo and car number are shared with you before the trip, with our office number in Himachal."
+    ],
+    [
+     "On the day",
+     "Pick-up at your hotel or the airport; the driver waits near each monument. Add a licensed guide for the history — hire only approved guides who show an ID card."
+    ],
+    [
+     "Change on the go",
+     "Skip a sight, add a market or end early — the plan is yours, and changes are quoted on the spot."
+    ]
+   ]
+  },
+  {
+   "id": "included",
+   "nav": "What's included",
+   "h2": "What's included — and what isn't",
+   "kind": "cards",
+   "items": [
+    [
+     "Included",
+     "Private air-conditioned car and driver for the day, fuel, parking and taxes, hotel or airport pick-up and drop in Delhi."
+    ],
+    [
+     "Not included",
+     "Monument tickets, a licensed guide, meals, rickshaw rides in Chandni Chowk and tips. We can add the tickets and a guide to the same quote."
+    ],
+    [
+     "Cars",
+     "Sedan for 2–3 travellers, SUV for 4–6, a minibus for groups. Same car and driver all day."
+    ],
+    [
+     "Who you deal with",
+     "A registered travel agent with an office in Himachal Pradesh, not a marketplace. The person who quotes your trip answers the phone on the day."
+    ]
+   ]
+  },
+  {
+   "id": "layover",
+   "nav": "Layover & air",
+   "h2": "On a layover, and in the winter haze",
+   "kind": "prose",
+   "style": "alt",
+   "paras": [
+    "<b>Long layover:</b> the Airport Express metro links IGI Airport and New Delhi station in about 15 minutes (22.7 km / 14.1 mi), but a car from the terminal saves the changes and the luggage. Leaving the airport needs a valid Indian visa. Apply only at the official site <a href=\"https://indianvisaonline.gov.in/\" target=\"_blank\" rel=\"noopener\">indianvisaonline.gov.in</a> — beware of look-alike sites that charge extra. We are not a visa agency; our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks you through it.",
+    "<b>Winter air:</b> the UK Foreign Office says severe air pollution is a major health hazard, especially from October to February, and North Indian cities are most affected. If you have asthma or a heart or lung condition, ask your doctor before a winter trip and see NHS Fit for Travel or the CDC. On bad days we keep more of the day indoors (museums, Akshardham) and less time walking by the roads.",
+    "<b>Fog and night driving:</b> the Foreign Office also advises against travelling at night and in fog. That is one reason we suggest the <a href=\"/india-tours/taj-mahal-tour-from-delhi/\">Taj Mahal from Delhi</a> as a separate day or a night in Agra, not squeezed onto the end of a Delhi tour."
+   ]
+  },
+  {
+   "id": "next",
+   "nav": "After Delhi",
+   "h2": "Where most visitors go after Delhi",
+   "kind": "prose",
+   "paras": [
+    "Agra is 204 km (127 mi) away by road — a day trip by car or train, or the second stop of the <a href=\"/golden-triangle-tour/\">Golden Triangle</a> with Jaipur. The Taj Mahal is closed on Fridays, so we build the Delhi days around it.",
+    "Heading to the mountains? We are a Himachal company: the same car and driver can take you north to Shimla, Manali or Dharamshala. See <a href=\"/india-tours/private-driver-india/\">private car with driver</a> or our <a href=\"/india-tours/first-time-india-travel-guide/\">first-time India guide</a>."
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "The Delhi tour is quoted on request — it depends on one or two days, the car and whether you add tickets and a guide. If Delhi is the start of a longer trip, the Golden Triangle packages have published prices.",
+  "rows": [
+   [
+    "Delhi tour, 1 or 2 days (private car and driver)",
+    "on request",
+    "Car and driver for the day, fuel, parking, taxes, hotel or airport pick-up; tickets and guide on request"
+   ],
+   [
+    "Golden Triangle — 4 days (Delhi, Agra, Jaipur)",
+    "from US$299",
+    "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"
+   ],
+   [
+    "Golden Triangle — classic 6 days",
+    "from US$449",
+    "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "How many days do you need in Delhi?",
+   "Two days let you see Old Delhi, New Delhi and the southern monuments without rushing. One long day by private car covers the highlights — Jama Masjid, the Red Fort, Humayun's Tomb, the Qutb Minar and India Gate — if you start early."
+  ],
+  [
+   "Which Delhi monuments are closed on Monday?",
+   "The Red Fort, Swaminarayan Akshardham and the Lotus Temple are closed on Mondays. Humayun's Tomb, the Qutb Minar complex, the Jama Masjid and India Gate are open every day, so a Monday tour still works."
+  ],
+  [
+   "Can I visit Delhi on a long layover?",
+   "Yes, if you hold a valid Indian visa — you need one to leave the airport. Apply only at indianvisaonline.gov.in. The Airport Express metro reaches New Delhi in about 15 minutes, or our car collects you at the terminal."
+  ],
+  [
+   "What should I wear on a Delhi tour?",
+   "Clothes that cover shoulders and knees work everywhere and are required at Akshardham. At the Jama Masjid you take off your shoes, and robes can be hired at the northern gate. Comfortable shoes matter more than anything else."
+  ],
+  [
+   "Can I take my phone into Akshardham?",
+   "No. Mobile phones, cameras, electronics, bags and food are not allowed. Use the free cloakroom or leave them in the car with your driver."
+  ],
+  [
+   "Is Delhi's air bad in winter?",
+   "Often, yes. The UK Foreign Office says severe air pollution is a major health hazard from October to February, worst in North Indian cities. If you have a heart or lung condition, ask your doctor before you travel; we adjust the day on bad days."
+  ],
+  [
+   "Can I add the Taj Mahal to a Delhi tour?",
+   "As a separate day. Agra is 204 km (127 mi) from Delhi by road, and the Taj Mahal is closed on Fridays. See our Taj Mahal tour from Delhi page, or the Golden Triangle with Jaipur."
+  ],
+  [
+   "Do I need a guide as well as a driver?",
+   "Not necessarily — your driver handles the car and the route. A licensed guide brings the Red Fort, Humayun's Tomb and the Qutb Minar to life; hire only approved guides who show an ID card, or ask us to add one."
+  ]
+ ],
+ "sources": [
+  [
+   "UNESCO — Red Fort Complex",
+   "https://whc.unesco.org/en/list/231/"
+  ],
+  [
+   "UNESCO — Humayun's Tomb, Delhi",
+   "https://whc.unesco.org/en/list/232/"
+  ],
+  [
+   "UNESCO — Qutb Minar and its Monuments, Delhi",
+   "https://whc.unesco.org/en/list/233/"
+  ],
+  [
+   "Delhi Tourism — World Heritage monuments (Red Fort walls, 1638)",
+   "https://delhitourism.gov.in/heritage/world_heritage_monuments.html"
+  ],
+  [
+   "Delhi Tourism — Humayun's Tomb (timings)",
+   "https://delhitourism.gov.in/tourist_place/humayun_tomb.html"
+  ],
+  [
+   "Delhi Tourism — Qutab Minar (timings, history)",
+   "https://delhitourism.gov.in/tourist_place/qutab_minar.html"
+  ],
+  [
+   "Delhi Tourism — Jama Masjid (visiting hours)",
+   "https://delhitourism.gov.in/tourist_place/jama_masjid.html"
+  ],
+  [
+   "Delhi Tourism — Bahá'í (Lotus) Temple",
+   "https://delhitourism.gov.in/tourist_place/bahai_temple.html"
+  ],
+  [
+   "Delhi Tourism — one-day itinerary",
+   "https://delhitourism.gov.in/itinerary/one_day_itinerary.html"
+  ],
+  [
+   "Swaminarayan Akshardham — visitor information",
+   "https://akshardham.com/visitor-info/"
+  ],
+  [
+   "UK FCDO — India travel advice: health (air pollution)",
+   "https://www.gov.uk/foreign-travel-advice/india/health"
+  ],
+  [
+   "UK FCDO — India travel advice: safety and security",
+   "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"
+  ],
+  [
+   "ETV Bharat — Red Fort shut on Mondays (17 Nov 2025)",
+   "https://www.etvbharat.com/amp/en/state/visitors-throng-red-fort-ever-since-monument-reopens-after-delhi-blast-enn25111703889"
+  ],
+  [
+   "Business Today — Red Fort closed 15 July–15 August (15 Aug 2026)",
+   "https://www.businesstoday.in/latest/trends/photo/independence-day-2026-five-delhi-landmarks-that-tell-indias-freedom-political-and-military-history-549316-2026-08-15"
+  ]
+ ],
+ "verified": "28 Oct 2026",
+ "cta": {
+  "h2": "Tell us your Delhi dates — we'll plan the days",
+  "text": "Your dates in Delhi, your hotel or flight, how many of you and whether you want one day or two. You get a plan in the right order and a US-dollar quote, then decide.",
+  "wa": "Hello Suzu Travels, I'm planning a Delhi tour. Dates: ___ , travellers: ___ , country: ___ , one or two days: ___"
+ },
+ "service": {
+  "name": "Delhi tour — private car and driver, one or two days",
+  "type": "Private city tour by car, Old and New Delhi",
+  "area": "Delhi, India"
+ },
+ "links": [
+  "taj-mahal-tour-from-delhi",
+  "golden-triangle-tour",
+  "private-driver-india",
+  "first-time-india-travel-guide"
+ ]
+}

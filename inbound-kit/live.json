@@ -223,5 +223,14 @@
   "blurb": "Documents, activation, eSIM vs local SIM, and signal in the mountains",
   "added": "2026-10-27",
   "focus": "sim card india tourist"
+ },
+ "delhi-tour": {
+  "id": 16247,
+  "path": "/india-tours/delhi-tour/",
+  "kind": "product",
+  "label": "Delhi tour (1–2 days)",
+  "blurb": "Old and New Delhi by private car — a one-day and a two-day plan",
+  "added": "2026-10-28",
+  "focus": "delhi tour"
  }
 }
