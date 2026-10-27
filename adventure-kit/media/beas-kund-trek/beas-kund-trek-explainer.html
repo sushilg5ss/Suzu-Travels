@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.2; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.75) 0%, rgba(11,31,51,0.9) 60%, #0b1f33 100%); }
+      .kick { position: absolute; left: 110px; top: 66px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 108px; width: 1100px; font-weight: 800; font-size: 72px; letter-spacing: -0.02em; }
+      .ctr { position: absolute; top: 80px; width: 300px; text-align: right; }
+      .cv { font-weight: 800; font-size: 64px; color: #d4a24c; letter-spacing: -0.02em; }
+      .cl { font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); }
+      .tint { position: absolute; top: 300px; height: 520px; }
+      .side { position: absolute; top: 312px; font-weight: 800; font-size: 26px; letter-spacing: 0.14em; }
+      svg.prof { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .st { position: absolute; width: 240px; text-align: center; font-weight: 800; font-size: 28px; }
+      .st span { display: block; font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.8); margin-top: 2px; }
+      .day { position: absolute; top: 832px; width: 200px; text-align: center; font-weight: 800; font-size: 24px; color: #0b1f33; background: #d4a24c; border-radius: 18px; height: 36px; line-height: 36px; }
+      .cal { position: absolute; left: 110px; top: 884px; width: 1700px; height: 70px; }
+      .mm { background: rgba(212,162,76,0.25); color: #f0c987; border: 2px solid rgba(212,162,76,0.6); }
+      .mw { background: rgba(170,205,235,0.14); color: #cfe3f5; border: 2px solid rgba(170,205,235,0.35); }
+      .m { position: absolute; top: 0; width: 132px; height: 60px; border-radius: 12px; text-align: center; line-height: 60px; font-weight: 800; font-size: 28px; }
+      .mo { background: #d4a24c; color: #0b1f33; }
+      .ms { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.75); border: 2px solid rgba(255,255,255,0.18); }
+      .calk { position: absolute; left: 110px; top: 970px; width: 880px; font-weight: 500; font-size: 25px; color: rgba(255,255,255,0.88); }
+      .foot { position: absolute; left: 1000px; top: 958px; width: 810px; height: 60px; font-weight: 800; font-size: 32px; }
+      .chip { position: absolute; top: 0; height: 60px; line-height: 56px; padding: 0 26px; border-radius: 30px; border: 2px solid rgba(255,255,255,0.5); white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">BEAS KUND TREK · SOLANG, MANALI</div>
+        <div class="title" id="title">Source of the Beas in 3 days</div>
+        <div class="ctr" style="left:1140px"><div class="cv" id="km">0 km</div><div class="cl">on foot, one way</div></div>
+        <div class="ctr" style="left:1510px"><div class="cv" id="alt">2,840 m</div><div class="cl">altitude, about</div></div>
+        <svg class="prof" viewBox="0 0 1920 1080">
+          <path d="M 150 790 L 380 755 L 600 700" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-dasharray="10 12" />
+          <path d="M 600 700 L 1050 560 L 1600 340" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
+          <path id="trail" d="M 600 700 L 1050 560 L 1600 340" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+          <g id="dots" fill="#fff">
+            <circle cx="150" cy="790" r="11" /><circle cx="380" cy="755" r="11" /><circle cx="600" cy="700" r="11" /><circle cx="1050" cy="560" r="11" />
+          </g>
+          <g id="flag"><line x1="1600" y1="340" x2="1600" y2="280" stroke="#fff" stroke-width="4" /><path d="M 1600 280 L 1640 293 L 1600 306 Z" fill="#d4a24c" /><circle cx="1600" cy="340" r="14" fill="#d4a24c" stroke="#fff" stroke-width="4" /></g>
+          <circle id="dot" cx="600" cy="700" r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+        </svg>
+        <div id="labels">
+          <div class="st" style="left:30px;top:810px">Manali<span>your hotel</span></div>
+          <div class="st" style="left:260px;top:668px">Solang<span>by cab</span></div>
+          <div class="st" style="left:450px;top:722px;width:300px">Dhundi<span>~2,840 m · trek starts</span></div>
+          <div class="st" style="left:880px;top:584px;width:340px">Bakarthach camp<span>~3,290 m · ~4.5 km</span></div>
+          <div class="st" style="left:1600px;top:366px;width:300px">Beas Kund<span>~3,890 m · ~4 km more</span></div>
+        </div>
+        <div class="day" id="d1" style="left:720px;top:470px">Day 1 · camp</div>
+        <div class="day" id="d2" style="left:1240px;top:330px">Day 2 · lake</div>
+        <div class="day" id="d3" style="left:300px;top:832px;width:260px">Day 3 · back down</div>
+        <div class="cal" id="cal">
+          <div class="m mw" style="left:0">Jan</div><div class="m mw" style="left:142px">Feb</div><div class="m mw" style="left:284px">Mar</div><div class="m mw" style="left:426px">Apr</div><div class="m mo" style="left:568px">May</div>
+          <div class="m mo" style="left:710px">Jun</div><div class="m mm" style="left:852px">Jul</div><div class="m mm" style="left:994px">Aug</div><div class="m mo" style="left:1136px">Sep</div>
+          <div class="m mo" style="left:1278px">Oct</div><div class="m mw" style="left:1420px">Nov</div><div class="m mw" style="left:1562px">Dec</div>
+        </div>
+        <div class="calk" id="calk">Best mid-May–Jun, Sep–Oct · Jul–Aug monsoon · Nov–Apr snow</div>
+        <div class="foot" id="foot">
+          <div class="chip" style="left:0">Guide + camp + hotel + cab</div>
+          <div class="chip" style="left:490px;border-color:#d4a24c;color:#d4a24c">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.fromTo("#labels .st", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 0.6);
+      tl.fromTo("#dots circle", { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.12 }, 0.6);
+      const trail = document.getElementById("trail");
+      const dot = document.getElementById("dot");
+      const L = trail.getTotalLength();
+      trail.style.strokeDasharray = L + " " + L;
+      const pts = [[600, 700, 2840, 0], [1050, 560, 3290, 4.5], [1600, 340, 3890, 8.5]];
+      const seg = [];
+      let acc = 0;
+      for (let i = 1; i < pts.length; i++) { const d = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); seg.push([acc, acc + d, pts[i - 1], pts[i]]); acc += d; }
+      const st = { p: 0 };
+      const km = document.getElementById("km");
+      const alt = document.getElementById("alt");
+      function place() {
+        const d = L * st.p;
+        trail.style.strokeDashoffset = (L - d).toFixed(2);
+        const pt = trail.getPointAtLength(Math.max(0.01, d));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+        let a = 2840, k = 0;
+        for (const s of seg) { if (d >= s[0] && d <= s[1]) { const f = (d - s[0]) / (s[1] - s[0]); a = s[2][2] + (s[3][2] - s[2][2]) * f; k = s[2][3] + (s[3][3] - s[2][3]) * f; } }
+        if (st.p >= 0.999) { a = 3890; km.textContent = "~8 km"; } else { km.textContent = Math.round(k) + " km"; }
+        alt.textContent = (st.p >= 0.999 ? "~" : "") + (Math.round(a / 10) * 10).toLocaleString("en-US") + " m";
+      }
+      tl.to(st, { p: 1, duration: 6.0, ease: "sine.inOut", onUpdate: place }, 1.8);
+      tl.fromTo(["#d1", "#d2", "#d3"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, stagger: 2.1, ease: "power2.out" }, 3.2);
+      tl.fromTo("#flag", { opacity: 0, scale: 0.6, transformOrigin: "1600px 340px" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 7.6);
+      tl.fromTo("#cal .m", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.05, ease: "power2.out" }, 8.2);
+      tl.fromTo("#calk", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 9.0);
+      tl.fromTo("#foot .chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 9.6);
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
