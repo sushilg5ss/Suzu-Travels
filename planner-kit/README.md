@@ -43,9 +43,9 @@ Share link: `#t=<base64url(JSON)>` — `{v:1,s,e,d,a,c,i,r,t,m,k,p:[[id,nights]]
 - Activities are never priced (Suzu rule: "Get Quote" / "price on request").
 
 ## 4. Data
-- `data/places.py` — 87 places (hubs, Himachal, Mata temples, Kashmir, Ladakh, Uttarakhand/Kumaon, Rajasthan, Agra–Mathura, Punjab) with Hindi names, class, open months, sights (name, extra km, note), tips.
-- `data/roads.json` — OSRM road km + minutes for every pair, plus simplified road geometry (Google polyline) for 531 legs; missing pairs are drawn by chaining stored legs (Dijkstra) in the browser. Rebuild: `EXTRA_LEGS="a-b,..." python3 tools/fetch_roads.py` (OSRM demo server, polite; cache `data/.osrm_cache.json` is git-ignored).
-- `data/templates.json` — 31 ready ideas (cat himachal / mata / pilgrim / honeymoon / kashmir / ladakh / uttarakhand / rajasthan) with links to the live package pages.
+- `data/places.py` — 88 places (v1.6: + Baltal, Amarnath base camp) (hubs, Himachal, Mata temples, Kashmir, Ladakh, Uttarakhand/Kumaon, Rajasthan, Agra–Mathura, Punjab) with Hindi names, class, open months, sights (name, extra km, note), tips.
+- `data/roads.json` — OSRM road km + minutes for every pair, plus simplified road geometry (Google polyline) for 531 legs; missing pairs are drawn by chaining stored legs (Dijkstra) in the browser. To add ONE place without refetching everything: `python3 tools/patch_roads.py <id>` (v1.6). Homepage data re-sync: `python3 homepage/sync_data.py live.html out.html` (data-only, idempotent; `sync_engine.py` was a one-time patcher). Rebuild: `EXTRA_LEGS="a-b,..." python3 tools/fetch_roads.py` (OSRM demo server, polite; cache `data/.osrm_cache.json` is git-ignored).
+- `data/templates.json` — 32 ready ideas (v1.6: + Amarnath Yatra — Baltal route) (cat himachal / mata / pilgrim / honeymoon / kashmir / ladakh / uttarakhand / rajasthan) with links to the live package pages.
 
 ## 5. Build · test · deploy
 ```

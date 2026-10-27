@@ -23,7 +23,7 @@ Read `planner-kit/README.md` fully first (spec, pricing engine, business rules),
 7. **Report** (below).
 
 ## Homepage engine data sync
-Whenever `data/places.py` or `data/templates.json` changes, the homepage card must be re-synced: fetch the LIVE homepage bytes, `python3 homepage/sync_engine.py live.html out.html`, `python3 homepage/parity.py live.html out.html` (PARITY PASS), `node tools/test_home.js`, then deploy with the homepage protocol below (backup `index-nz-previous.html`).
+Whenever `data/places.py` or `data/templates.json` changes, the homepage card must be re-synced: fetch the LIVE homepage bytes, `python3 homepage/sync_data.py live.html out.html` (data-only; sync_engine.py no longer matches the live file), `python3 homepage/parity.py live.html out.html` (PARITY PASS), `node tools/test_home.js`, then deploy with the homepage protocol below (backup `index-nz-previous.html`).
 
 ## Deploy (cloud — no laptop, no Chrome; since 20 Oct 2026)
 Deploy through the `deploy-static` branch of sushilg5ss/Suzu-Travels (GitHub Actions + Hostinger API). Never use Claude-in-Chrome or hPanel for deploys any more; never type passwords.

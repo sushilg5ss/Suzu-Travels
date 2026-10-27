@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.5';
+  var VER = '1.6';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -271,6 +271,12 @@
       if (st.id === 'guptkashi' && st.n < 2 && !out.warn.some(function (w) { return w.k === 'kedar'; }))
         out.warn.push({ r: 1, k: 'kedar', t: 'Kedarnath needs 2 nights at ' + PL.guptkashi.name + ' (trek up, darshan, trek down — or helicopter, subject to tickets). You have ' + st.n + ' night' + (st.n === 1 ? '' : 's') + ' here; add a night for a relaxed darshan.' });
     });
+    /* Amarnath Yatra (Baltal): permit + health certificate; a full day for the cave darshan (SASB rules, research/festivals.md) */
+    stops.forEach(function (st) {
+      if (st.id !== 'baltal' || out.warn.some(function (w) { return w.k === 'amar'; })) return;
+      out.warn.push({ r: 1, k: 'amar', t: 'Amarnath Yatra: every yatri needs a Shri Amarnathji Shrine Board yatra permit for the Baltal route and date (advance registration with Aadhaar), a Compulsory Health Certificate from an authorised doctor, and must be 13–70 years old (no pregnancy beyond 6 weeks). The yatra runs only in its July–August window — 2027 dates are not announced yet. Helicopter is not assured; pony and palki are on request.' });
+      if (st.n < 2) out.warn.push({ r: 1, k: 'amar2', t: 'Keep 2 nights at ' + PL.baltal.name + ': arrive the day before, then a full day for the cave darshan (about 14 km steep trek each way). You have ' + st.n + ' night' + (st.n === 1 ? '' : 's') + ' here.' });
+    });
     /* seasons */
     out.days.forEach(function (dy) {
       [dy.to].concat(dy.via.map(function (v) { return v.id; })).forEach(function (id) {
@@ -350,7 +356,7 @@
   }
 
   /* ---------------- search (destinations + ideas) ---------------- */
-  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri pilgrimage golden temple तीर्थ धाम', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
+  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri amarnath baltal pilgrimage golden temple तीर्थ धाम अमरनाथ', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
   function search(q, onlyPlaces) {
     q = q.trim().toLowerCase();
     var res = [];

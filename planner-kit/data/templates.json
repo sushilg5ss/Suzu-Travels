@@ -414,6 +414,36 @@
   ]
  },
  {
+  "cat": "pilgrim",
+  "end": "jammu",
+  "hi": "अमरनाथ यात्रा — बालटाल रूट",
+  "id": "amarnath-baltal",
+  "months": [
+   7,
+   8
+  ],
+  "name": "Amarnath Yatra — Baltal route",
+  "pkg": "https://suzutravels.com/pilgrimage-tours/amarnath-yatra/",
+  "start": "jammu",
+  "stops": [
+   [
+    "srinagar",
+    1
+   ],
+   [
+    "baltal",
+    2
+   ],
+   [
+    "srinagar",
+    1
+   ]
+  ],
+  "tags": [
+   "pilgrimage"
+  ]
+ },
+ {
   "id": "do-dham",
   "cat": "pilgrim",
   "name": "Do Dham — Kedarnath & Badrinath",

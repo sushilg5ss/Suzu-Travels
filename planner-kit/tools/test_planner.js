@@ -110,6 +110,18 @@ const { chromium, devices } = require('playwright');
       const days = await p3.$$eval('.tl-day', x => x.map(y => y.textContent));
       r.closedDays[nm] = { days: days.map(t => t.replace(/\s+/g, ' ').slice(0, 260)), warns: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => /closed on Mondays|सोमवार को बंद/.test(t)) };
     }
+    // v1.6: Amarnath Yatra (Baltal) — template moves date into Jul–Aug, darshan on a full local day, permit warning; 1-night + Oct + Hindi warnings
+    r.amarnath = {};
+    await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+    await p3.goto('about:blank'); await p3.goto(base, { waitUntil: 'load' }); await p3.waitForTimeout(800);
+    await p3.evaluate(() => SuzuTripPlanner.load('amarnath-baltal')); await p3.waitForTimeout(1200);
+    r.amarnath.tpl = { title: await p3.textContent('#m-title'), sub: await p3.textContent('#m-sub'), price: await p3.textContent('#price .big'), days: (await p3.$$eval('.tl-day', x => x.map(y => y.textContent.replace(/\s+/g, ' ').slice(0, 200)))), warns: await p3.$$eval('.warn', x => x.map(y => y.textContent)) };
+    await p3.screenshot({ path: `${out}/${name}-4e-amarnath.png`, fullPage: true });
+    for (const [nm, d, n, l] of [['oneNight', '2027-07-12', 1], ['october', '2026-10-20', 2], ['hindi', '2027-07-12', 1, 'hi']]) {
+      const st = { v: 1, s: 'jammu', e: 'jammu', d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['srinagar', 1], ['baltal', n], ['srinagar', 1]], x: [], tp: '' }; if (l) st.l = l;
+      await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+      r.amarnath[nm] = { warns: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => /Amarnath|Baltal|अमरनाथ|बालटाल/.test(t)), overflow: await p3.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1) };
+    }
     await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.close();
     // agent mode client link

@@ -114,6 +114,10 @@ add("pahalgam", "Pahalgam", "पहलगाम", 34.0161, 75.3150, "kashmir", "
     [("Aru, Betaab & Chandanwari valleys (local union taxi)", 50), ("Baisaran meadow (pony)", 10)])
 add("sonamarg", "Sonamarg", "सोनमर्ग", 34.3030, 75.2930, "kashmir", "stay", "kashmir_resort",
     [("Thajiwas Glacier (pony)", 10), ("Zero Point, Zojila (local taxi)", 60)])
+add("baltal", "Baltal (Amarnath base camp)", "बालटाल (अमरनाथ बेस कैंप)", 34.2540, 75.4100, "kashmir", "temple", "remote",
+    [("Shri Amarnath cave darshan (trek, pony or palki on request)", 16, "start before dawn, back at camp by evening")],
+    months=[7, 8], local_km=20,
+    tip="Amarnath Yatra permit (route + date) and Compulsory Health Certificate needed; age 13–70")
 
 # ---------- Ladakh ----------
 add("kargil", "Kargil", "कारगिल", 34.5539, 76.1349, "ladakh", "stay", "ladakh",

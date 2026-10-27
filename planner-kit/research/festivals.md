@@ -20,3 +20,9 @@ The day planner never schedules these on their closed day (data: `CLOSED_DAYS` i
 | Bhuri Singh Museum, Chamba | Monday + gazetted holidays | https://www.bhurisinghmuseumchamba.in/visit/ |
 | Virasat-e-Khalsa, Anandpur Sahib | Monday | already in data name (closed Mondays) |
 Taj Mahal Friday keeps its own warning (unchanged).
+
+## Amarnath Yatra (added 27 Oct 2026, v1.6)
+- 2026 Yatra ran 3 Jul – 28 Aug 2026 (57 days) under the Shri Amarnathji Shrine Board (SASB): https://www.freepressjournal.in/lifestyle/amarnath-yatra-2026-when-will-the-holy-pilgrimage-begin-how-to-do-advance-registration-routes-dates-timings-everything-you-need-to-know
+- Registration (2026): from 15 Apr at 550+ bank branches, first-come per-route daily quota, Aadhaar biometric, permit names route + date; age 13–70; no pregnancy beyond 6 weeks; valid health certificate from an authorised institution — All India Radio News: https://www.newsonair.gov.in/advance-registration-for-amarnath-yatra-to-begin-from-april-15
+- Suzu's own guide https://suzutravels.com/pilgrimage-tours/amarnath-yatra/ (checked 25 Oct 2026): 2027 dates not announced, Baltal ~14 km short & steep, Pahalgam ~32 km 3–4 days, no helicopter in 2026 (no-fly zone) → planner never promises a helicopter.
+- Planner: place `baltal` (months Jul–Aug, class remote/camps), template `amarnath-baltal` (Jammu → Srinagar 1N → Baltal 2N → Srinagar 1N → Jammu). Update the 'July–August window / 2027 dates not announced' text in planner.js + i18n.js RX once SASB announces 2027 dates.
