@@ -1,13 +1,90 @@
 {
- "_note": "Media for /india-tours/goa-holiday/ (guide). 4 photos added 20 Oct 2026 by the Page Builder (CREDITS.md). Palolem first = poster/LCP. px-11439224 captioned only 'Panaji' (not Fontainhas). No route map (Goa is compact; no official km between beaches beyond Incredible India's few), no cost ladder (no Goa rate in prices.json).",
+ "_note": "Media for /india-tours/goa-holiday/ (guide). 4 photos added 20 Oct 2026 by the Page Builder (CREDITS.md). Palolem first = poster/LCP. px-11439224 captioned only 'Panaji' (not Fontainhas). No route map (Goa is compact; no official km between beaches beyond Incredible India's few), no cost ladder (no Goa rate in prices.json). Cost ladder added 27 Oct 2026 by Visual Studio (Step 1.3), words only — Goa is 'on request' in the page's Prices block — mirroring its Prices row 'Goa stay — added to your India trip' + 'How to add Goa' steps. Partner-run: 'we arrange', no partner names.",
  "hero": {
   "kicker": "GOA · BEACHES & OLD GOA",
   "scenes": [
-   {"img": "px-32262463.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 20}},
-   {"img": "px-28550376.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
-   {"img": "px-35299800.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 420}},
-   {"img": "px-11439224.jpg", "kind": "tilt", "from": {"y": 500}, "to": {"y": 80}}
+   {
+    "img": "px-32262463.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-28550376.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.1,
+     "x": -30,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.03,
+     "x": 30,
+     "y": 0
+    }
+   },
+   {
+    "img": "px-35299800.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   },
+   {
+    "img": "px-11439224.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 80
+    }
+   }
   ],
-  "steps": ["PALOLEM, SOUTH GOA", "NORTH GOA COAST", "OLD GOA CHURCHES", "PANAJI STREETS"]
+  "steps": [
+   "PALOLEM, SOUTH GOA",
+   "NORTH GOA COAST",
+   "OLD GOA CHURCHES",
+   "PANAJI STREETS"
+  ]
+ },
+ "cost": {
+  "kicker": "GOA · WHAT WE ARRANGE",
+  "title": "Added to your India trip",
+  "items": [
+   {
+    "label": "Airport transfers",
+    "sub": "from the Goa airport closer to your beach"
+   },
+   {
+    "label": "Hotel nights",
+    "sub": "north or south Goa, in the tier you choose"
+   },
+   {
+    "label": "Car + driver for day trips",
+    "sub": "Old Goa churches, forts and quieter beaches"
+   },
+   {
+    "label": "One plan, one contact",
+    "sub": "our Himachal office, on WhatsApp before and during"
+   },
+   {
+    "label": "Flights, visa and tips",
+    "sub": "e-Visa only at indianvisaonline.gov.in",
+    "tag": "your own"
+   }
+  ],
+  "end": "Quoted on request · day-by-day plan + US$ total before you pay"
  }
 }
