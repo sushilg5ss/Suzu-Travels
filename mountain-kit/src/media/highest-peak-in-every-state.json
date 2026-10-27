@@ -1,0 +1,21 @@
+{
+ "_note": "Highest peak in every state & UT (guide). Words + ladder from research/pages/highest-peak-in-every-state.md 'Media notes'; heights: Kangchenjunga 8,586 / Reo Purgyil 6,816 from data/peaks.json, Anamudi 2,695 from the fact pack (WP list + Eravikulam NP). Kangchenjunga photo (verified) only on the SIKKIM line; px-28617624 is a generic misty Western Ghats-style slope, no peak caption. Fact-pack 'KALSUBAI' / 'LAKSHADWEEP' lines swapped: LAKSHADWEEP is over 9 letters and a peak name over a generic photo breaks the photo rule; HIMACHAL keeps the CTA state on screen.",
+ "hero": {
+  "kicker": "36 STATES & UTs · ONE TABLE",
+  "size": 110,
+  "words": [["36 HIGH", "POINTS."], ["8,586 M:", "SIKKIM."], ["6,816 M:", "HIMACHAL."], ["2,695 M:", "KERALA."]],
+  "scenes": [
+   {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": [0, 3.8], "from": {"scale": 1.02, "x": 30}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-30701907.jpg", "kind": "land", "h": 1408, "t": [3.2, 7.0], "from": {"scale": 1.0}, "to": {"scale": 1.08, "x": -30}},
+   {"img": "px-32109154.jpg", "kind": "tilt", "h": 2560, "mirror": true, "t": [6.4, 10.2], "from": {"y": 300}, "to": {"y": 800}},
+   {"img": "px-28617624.jpg", "kind": "tilt", "h": 2560, "t": [9.6, 13.0], "from": {"y": 200}, "to": {"y": 650, "scale": 1.04}}
+  ]
+ },
+ "ladder": {
+  "kicker": "STATE BY STATE",
+  "title": "India's Himalayan high points, side by side",
+  "peaks": ["sandakphu", "reo-purgyil", "kangto", "nun", "saltoro-kangri", "nanda-devi", "kangchenjunga"],
+  "subs": {"sandakphu": "West Bengal", "reo-purgyil": "Himachal", "kangto": "Arunachal", "nun": "Jammu & Kashmir", "saltoro-kangri": "Ladakh", "nanda-devi": "Uttarakhand", "kangchenjunga": "Sikkim"},
+  "end": "State by state: India's 7 Himalayan high points"
+ }
+}
