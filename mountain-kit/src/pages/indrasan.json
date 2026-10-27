@@ -1,0 +1,151 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/indrasan/",
+ "peak_id": "indrasan",
+ "title": "Indrasan (6,220 m): Route, Grade & Climbing History",
+ "seo_title": "Indrasan Peak (6,220 m): Route, Grade & Climbing History",
+ "seo_desc": "Indrasan peak (6,220 m) above Manali, the hardest summit of the Pir Panjal: route camp by camp, grade, season, IMF permits and the 1962 first ascent.",
+ "focus": "indrasan peak",
+ "commercial": true,
+ "label": "Indrasan",
+ "blurb": "6,220 m · the hardest peak of the Pir Panjal, beside Deo Tibba",
+ "verified": "27 Oct 2026",
+ "kicker": "Kullu · Pir Panjal · 6,220 m",
+ "tag": "Indra's seat: the hardest summit of the Pir Panjal.",
+ "sub": "A steep rock-and-ice peak above Manali, reached by the same Duhangan valley and col as its snow-dome neighbour Deo Tibba. An expert-only Himachal expedition for climbers who already have technical 6,000 m climbs behind them.",
+ "chips": [
+  ["6,220 m", "summit (20,407 ft)"],
+  ["About 2 weeks+", "from Manali (estimate)"],
+  ["May–Jun · Sep–Oct", "season"],
+  ["Grade", "technical"],
+  ["Price", "Get Quote"]
+ ],
+ "hero_alt": "A Himalayan range, a roped team with ice axes, a tent at night and a steep snow ridge (stock footage, not Indrasan itself) with an altitude read-out rising from Manali, 2,050 m, past Seri, base camp and high camp to the 6,220 m summit",
+ "profile_alt": "Animated altitude profile of the Indrasan route: Manali 2,050 m, Chikka about 3,300 m, Seri about 3,800 m, base camp about 4,100 m, advance base about 4,500 m, high camp about 5,500 m and the 6,220 m summit",
+ "ladder_alt": "Animated chart of four Manali peaks at their true heights: Friendship Peak, Hanuman Tibba, Deo Tibba and Indrasan",
+ "ladder_label": "Manali peaks",
+ "ladder_kicker": "Pir Panjal ladder",
+ "ladder_h2": "Indrasan and its Manali neighbours, side by side",
+ "ladder_text": [
+  "Four summits above Manali make a natural ladder. <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m) is the classic first snow peak, <a href=\"/mountains-of-india/hanuman-tibba/\">Hanuman Tibba</a> (5,982 m) is a steep technical pyramid, <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m) is the snow dome next door, and Indrasan (6,220 m) is the hardest of them all.",
+  "Compare every Himachal summit, with grade, season and status, in our <a href=\"/mountains-of-india/himachal-pradesh/\">guide to the peaks of Himachal Pradesh</a>, or see all the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks of India</a>."
+ ],
+ "q": "What is Indrasan, and how do you climb it?",
+ "answer": "<b>Indrasan</b> (6,220 m / 20,407 ft) is a peak of the Pir Panjal range above Manali, in Kullu district, Himachal Pradesh, right beside Deo Tibba. It is called the hardest peak of the Pir Panjal: icefalls, steep ice and rock bands guard every side. Modern teams approach from Jagatsukh through the Duhangan valley; the best months are May–June and September–October. See all the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks of India</a>.",
+ "facts": [
+  ["Height", "6,220 m / 20,407 ft (Himalayan Journal and Wikipedia: 6,221 m)"],
+  ["Name", "\"Indra\" + \"Aasana\": the seat of Lord Indra"],
+  ["Location", "Kullu district, Himachal Pradesh, above Manali"],
+  ["Range", "Pir Panjal, beside Deo Tibba (6,001 m)"],
+  ["Start", "Manali → Jagatsukh / Khanol road-head, Duhangan valley"],
+  ["Duration", "About two weeks or more from Manali (estimate)"],
+  ["Grade", "Technical: icefall, steep ice and rock bands; expert-only"],
+  ["Best months", "May–Jun and Sep–Oct"],
+  ["First ascent", "13 Oct 1962, Kojiro Tomita & Yasumasa Miyaki (Kyoto University)"],
+  ["Foreigners", "Yes, with IMF permission and a liaison officer"],
+  ["Price", "Get Quote"]
+ ],
+ "intro": [
+  "Seen from the Kullu valley, Deo Tibba is the broad white dome and Indrasan the sharper summit beside it. The two peaks share a high snow plateau and the <b>Duhangan Col</b>, and for most of the approach their routes are the same. Above the plateau they part ways: Deo Tibba is a long snow plod to a flat top, while Indrasan rises in steep ice and rock on every side. Wikipedia calls it <b>the most difficult mountain to climb in the Pir Panjal range</b>, and its name means the royal seat of Lord Indra.",
+  "This page sets out the routes with approximate camp altitudes, the honest difficulty, the season, the permits and the history from the failed 1958 attempt to the 1962 first ascent and the ridge routes of the 1970s. For the wider picture, see our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a> and the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>."
+ ],
+ "route_h2": "Route from Manali, camp by camp",
+ "route_text": [
+  "Today most teams start like a Deo Tibba expedition: a short drive from Manali to <b>Jagatsukh</b> and the Khanol road-head, then a walk up the <b>Duhangan valley</b> past Chikka and the Seri meadow to a base camp at Tainta, below the Duhangan Col. Above an advance base, a couloir leads over the col to the snow plateau between Deo Tibba and Indrasan, at about 5,500 m (the \"18,000-ft plateau\" of the early accounts).",
+  "From the plateau the usual modern line is the <b>West Ridge</b>, first reached by a 1971 party. The first ascent in 1962 came from the other side: up the Parbati valley and the Malana glen to the <b>Malana Glacier</b>, through a 700 m icefall, and finally up the south face. Camp heights differ between sources and teams, so the figures below are approximate."
+ ],
+ "route": [
+  {"name": "Manali", "m": 2050, "note": "Town; gear check and briefing"},
+  {"name": "Chikka", "m": 3300, "note": "First camp above Jagatsukh and Khanol (sources give about 3,160–3,500 m)"},
+  {"name": "Seri", "m": 3800, "note": "Meadow camp in the upper Duhangan valley (about 3,800 m)"},
+  {"name": "Base camp (Tainta)", "m": 4100, "note": "Below the Duhangan Col (about 4,000–4,100 m)"},
+  {"name": "Advance base camp", "m": 4500, "note": "Snow and ice practice before the col (about 4,500 m)"},
+  {"name": "High camp (plateau)", "m": 5500, "note": "Snow plateau between Deo Tibba and Indrasan, reached by a couloir over the col (about 5,500 m)"},
+  {"name": "Indrasan summit", "m": 6220, "note": "By the West Ridge today; south face in 1962, East Ridge in 1973"}
+ ],
+ "itinerary_h2": "A typical plan (estimate, not a fixed schedule)",
+ "itinerary": [
+  ["Day 1", "Manali", "Arrive, check gear and paperwork, and settle in at 2,050 m."],
+  ["Days 2–4", "Walk-in to base camp", "Drive to the Jagatsukh / Khanol road-head and walk up the Duhangan valley via Chikka and Seri to Tainta base camp."],
+  ["Days 5–7", "Base camp and advance base", "Rest, snow and ice training, and load carries to advance base at about 4,500 m."],
+  ["Days 8–10", "Over the col", "Fix the couloir over the Duhangan Col and move up to high camp on the plateau, about 5,500 m."],
+  ["Day 11", "Summit day", "By the West Ridge to the 6,220 m summit, then back to high camp."],
+  ["Days 12–14+", "Spare days and walk-out", "Kept for weather, a second attempt and a careful descent to Manali."]
+ ],
+ "difficulty_h2": "How hard is Indrasan?",
+ "difficulty": [
+  "Indrasan is graded <b>technical</b> and is often called the hardest peak of the Pir Panjal. Every route meets serious ground: the 1962 party climbed a 700 m icefall and a steep final face, the 1973 East Ridge team climbed rock up to Very Severe on fixed ropes, and the modern West Ridge from the plateau is still a technical rope-and-ice climb. It is <b>not</b> a beginner peak or a first 6,000er.",
+  "You should arrive with earlier technical climbs and solid rope and ice skills. A sensible step before Indrasan is <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a>, on the same approach, or <a href=\"/mountains-of-india/hanuman-tibba/\">Hanuman Tibba</a>. If you are earlier in your climbing, start with our guide to <a href=\"/mountains-of-india/first-6000m-peak/\">choosing a first 6,000 m peak</a>, read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> and compare <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses in India</a>."
+ ],
+ "skills": [
+  ["Experience", "Earlier technical climbs, ideally a 6,000 m summit such as Deo Tibba or a peak like Hanuman Tibba."],
+  ["Technique", "Front-pointing on steep ice, moving on rock and mixed ground, fixed ropes, abseiling and crevasse rescue."],
+  ["Fitness", "Load carries over the Duhangan Col and a long summit day above 5,500 m."],
+  ["Acclimatisation", "A gradual walk-in through Chikka and Seri, and rest days at base camp before the col."],
+  ["Training", "A Basic and preferably an Advanced Mountaineering Course before an expedition like this."]
+ ],
+ "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "no", "May": "good", "Jun": "good", "Jul": "no", "Aug": "no", "Sep": "good", "Oct": "good", "Nov": "no", "Dec": "no"},
+ "season_h2": "Best time to climb Indrasan",
+ "season_text": [
+  "<b>May–June</b> before the monsoon and <b>September–October</b> after it. July and August, the monsoon months, are left out. The historic climbs fit this pattern: the first ascent was made in mid-October 1962, and the 1973 East Ridge climb in early June.",
+  "Build in weather days: fresh snow loads the couloir over the col and makes the upper ridge slower and more dangerous."
+ ],
+ "permits_h2": "Permits for Indrasan",
+ "permits": [
+  "<b>Indian climbers</b> need permission from the Indian Mountaineering Foundation (IMF) for an expedition. In Himachal, climbs go through an HP Tourism-registered outfitter with registered guides, with police registration and insurance for every participant under the state's adventure rules; difficult routes need a suitably qualified lead.",
+  "<b>Foreign nationals</b> can climb Indrasan with IMF permission, applied for at least 90 days ahead, and a liaison officer. At 6,220 m it falls in the <b>up to 6,500 m band</b>: a base fee of US$500 for a team of two, plus per-member charges and US$500 for liaison-officer equipment (IMF peak-fee page, checked Oct 2026). Indrasan is in Kullu district, not the border belt, so no protected-area permit is needed. More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fee guide</a> and our <a href=\"/mountains-of-india/mountaineering-in-india/\">guide to mountaineering in India for foreign climbers</a>."
+ ],
+ "cost_h2": "What a guided Indrasan expedition includes",
+ "cost_text": [
+  "Indrasan is arranged only for experienced climbers. The price depends on your dates, group size, nationality and climbing record, so we quote each expedition. Tell us your dates and past climbs on WhatsApp and you get one plan and one quote. Foreign nationals also pay the IMF fee and liaison-officer charges, shown separately."
+ ],
+ "includes": [
+  "Certified mountaineering guides and support staff",
+  "Tents, camps and all meals on the mountain",
+  "Group climbing equipment (ropes, fixed lines, ice screws and anchors)",
+  "Help with IMF permission and permit paperwork",
+  "Transfers from Manali to the road-head and back",
+  "Acclimatisation and weather days in the plan"
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots that take crampons",
+  "Crampons and a technical ice axe (a second tool for steep ice)",
+  "Climbing harness, helmet, carabiners, slings, a belay device and a jumar",
+  "Expedition down jacket and a warm sleeping bag",
+  "Windproof and waterproof shell jacket and trousers",
+  "Summit mitts plus liner gloves",
+  "Glacier sunglasses (UV400), goggles and sunscreen",
+  "Headlamp with spare batteries",
+  "Trekking poles for the walk-in",
+  "Two water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "Climbing history of Indrasan",
+ "history": [
+  "In <b>1958</b> Bob Pettigrew's party came up the Duhangan side to try Deo Tibba and Indrasan, but storms and illness stopped them well short of Indrasan. The <b>first ascent</b> came on <b>13 October 1962</b>, by <b>Kojiro Tomita and Yasumasa Miyaki</b> of the Kyoto University Alpine Club expedition led by Dr Konoshin Onodera. Coming up the Malana Glacier, they placed camps at about 4,500 m, 5,200 m and 5,500 m and a bivouac near 6,150 m, failed once on 11 October, then reached the top by the south face at about 4:30 pm. The same day their teammates Omori and Tanaka stood on Deo Tibba.",
+  "A 1971 party reached the <b>West Ridge</b>, now the usual line from the Duhangan side. In 1973 the British Army Mountaineering Association climbed the <b>East Ridge</b>, with rock up to Very Severe and fixed ropes; Owens, Anderson and Eskell reached the summit. Because the records are incomplete, we do not number the ascents."
+ ],
+ "faq_h2": "Indrasan: questions people ask",
+ "faqs": [
+  ["How high is Indrasan?", "6,220 m (20,407 ft) in our dataset. The Himalayan Journal and Wikipedia give 6,221 m."],
+  ["Where is Indrasan?", "In the Pir Panjal range above Manali, in Kullu district, Himachal Pradesh, right next to Deo Tibba."],
+  ["Why is Indrasan so hard?", "Icefalls, steep ice and rock bands guard every side. It is called the most difficult peak of the Pir Panjal range."],
+  ["Who first climbed Indrasan?", "Kojiro Tomita and Yasumasa Miyaki of the Kyoto University Alpine Club, on 13 October 1962, by the south face."],
+  ["What does Indrasan mean?", "\"Indra\" + \"Aasana\": the royal seat of Lord Indra."],
+  ["Indrasan or Deo Tibba: what is the difference?", "They share the Duhangan valley, the col and the high plateau. Deo Tibba (6,001 m) is a snow dome; Indrasan (6,220 m) is a technical rock-and-ice summit."],
+  ["When is the best time to climb Indrasan?", "May–June and September–October, either side of the monsoon."],
+  ["Can beginners climb Indrasan?", "No. It needs earlier technical climbs, such as Deo Tibba or Hanuman Tibba, and solid rope and ice skills."],
+  ["Can foreigners climb Indrasan?", "Yes, with IMF permission applied for at least 90 days ahead and a liaison officer. The base fee for peaks up to 6,500 m is US$500 for a team of two (Oct 2026), plus other charges."]
+ ],
+ "quote_text": "Indrasan is for experienced climbers. Tell us your dates and past climbs: we pair you with a registered Himachal outfitter and certified guides, help with the permits, and send one plan and one quote on WhatsApp. Not ready yet? Ask about Deo Tibba or Hanuman Tibba first.",
+ "sources": [
+  ["Wikipedia — Indrasan", "https://en.wikipedia.org/wiki/Indrasan"],
+  ["Himalayan Journal 24 — The ascents of Indrasan and Deo Tibba (1962)", "https://www.himalayanclub.org/hj/24/13/the-ascents-of-indrasan-and-deo-tibba/"],
+  ["Himalayan Journal 33 — The A.M.A. route on Indrasan, 1973", "https://www.himalayanclub.org/hj/33/23/the-a-m-a-route-on-indrasan-1973/"],
+  ["Himalayan Journal 21 — Deo Tibba and Indrasan, 1958", "https://www.himalayanclub.org/hj/21/11/deo-tibba-and-indrasan-1958/"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
+  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"]
+ ],
+ "sameAs": ["https://en.wikipedia.org/wiki/Indrasan"],
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Indrasan. Dates: ___ , people: ___ , nationality: ___"
+}

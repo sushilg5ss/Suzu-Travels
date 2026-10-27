@@ -275,5 +275,15 @@
   "added": "2026-10-26",
   "peak_id": "mulkila",
   "commercial": true
+ },
+ "indrasan": {
+  "id": 16146,
+  "path": "/mountains-of-india/indrasan/",
+  "kind": "peak",
+  "label": "Indrasan",
+  "blurb": "6,220 m · the hardest peak of the Pir Panjal, beside Deo Tibba",
+  "added": "2026-10-27",
+  "peak_id": "indrasan",
+  "commercial": true
  }
 }
