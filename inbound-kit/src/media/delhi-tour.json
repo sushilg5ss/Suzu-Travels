@@ -1,28 +1,128 @@
 {
- "_note": "Media for /india-tours/delhi-tour/ (product page, night Builder 28 Oct 2026). Licensed Pexels photos only (hf/photos/CREDITS.md), each captioned only with its allowed place. Hero opens on the Qutb Minar (poster/LCP = a Delhi monument). Route stops from research/pages/delhi-tour.md 'Media notes'. No cost ladder (no Delhi day rate in data/prices.json).",
+ "_note": "Media for /india-tours/delhi-tour/ (product page, night Builder 28 Oct 2026). Licensed Pexels photos only (hf/photos/CREDITS.md), each captioned only with its allowed place. Hero opens on the Red Fort (poster/LCP; subject sits left so the phone crop keeps it). Route stops from research/pages/delhi-tour.md 'Media notes'. No cost ladder (no Delhi day rate in data/prices.json).",
  "hero": {
   "kicker": "DELHI · 1 OR 2 DAYS",
   "scenes": [
-   {"img": "px-18567617.jpg", "kind": "tilt", "from": {"y": 1500}, "to": {"y": 900}},
-   {"img": "px-19926951.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}},
-   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
-   {"img": "px-13602922.jpg", "kind": "tilt", "from": {"y": 1000}, "to": {"y": 500}},
-   {"img": "px-13524595.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 1000}}
+   {
+    "img": "px-19926951.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-18567617.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 1500
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-3672388.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 60,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 40
+    }
+   },
+   {
+    "img": "px-13602922.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 1000
+    },
+    "to": {
+     "y": 500
+    }
+   },
+   {
+    "img": "px-13524595.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 1000
+    }
+   }
   ],
-  "steps": ["QUTB MINAR", "RED FORT", "HUMAYUN'S TOMB", "INDIA GATE", "DELHI IN 2 DAYS"]
+  "steps": [
+   "RED FORT",
+   "QUTB MINAR",
+   "HUMAYUN'S TOMB",
+   "INDIA GATE",
+   "DELHI IN 2 DAYS"
+  ]
  },
  "route": {
   "title": "DELHI IN TWO DAYS",
   "sub": "Old Delhi on day 1 · New Delhi and the south on day 2",
-  "bounds": [77.1, 77.34, 28.46, 28.72],
+  "bounds": [
+   77.1,
+   77.34,
+   28.46,
+   28.72
+  ],
   "dur": 12,
   "stops": [
-   {"name": "Red Fort", "sub": "closed Mondays", "day": "Day 1", "lat": 28.656, "lon": 77.241},
-   {"name": "Jama Masjid", "sub": "Chandni Chowk", "day": "Day 1", "lat": 28.651, "lon": 77.234},
-   {"name": "India Gate", "sub": "New Delhi", "day": "Day 1", "lat": 28.613, "lon": 77.229},
-   {"name": "Humayun's Tomb", "sub": "UNESCO 1993", "day": "Day 2", "lat": 28.593, "lon": 77.251},
-   {"name": "Lotus Temple", "sub": "closed Mondays", "day": "Day 2", "lat": 28.553, "lon": 77.259},
-   {"name": "Qutb Minar", "sub": "72.5 m tower", "day": "Day 2", "lat": 28.524, "lon": 77.185}
+   {
+    "name": "Red Fort",
+    "sub": "closed Mondays",
+    "day": "Day 1",
+    "lat": 28.656,
+    "lon": 77.241
+   },
+   {
+    "name": "Jama Masjid",
+    "sub": "Chandni Chowk",
+    "day": "Day 1",
+    "lat": 28.651,
+    "lon": 77.234
+   },
+   {
+    "name": "India Gate",
+    "sub": "New Delhi",
+    "day": "Day 1",
+    "lat": 28.613,
+    "lon": 77.229
+   },
+   {
+    "name": "Humayun's Tomb",
+    "sub": "UNESCO 1993",
+    "day": "Day 2",
+    "lat": 28.593,
+    "lon": 77.251
+   },
+   {
+    "name": "Lotus Temple",
+    "sub": "closed Mondays",
+    "day": "Day 2",
+    "lat": 28.553,
+    "lon": 77.259
+   },
+   {
+    "name": "Qutb Minar",
+    "sub": "72.5 m tower",
+    "day": "Day 2",
+    "lat": 28.524,
+    "lon": 77.185
+   }
   ]
  }
 }
