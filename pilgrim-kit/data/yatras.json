@@ -2215,7 +2215,8 @@
       "open": "Year-round",
       "close": "Year-round",
       "dates_2026": {
-        "note": "Gurpurabs, Baisakhi, Bandi Chhor Divas (Diwali) are peak"
+        "note": "Gurpurabs, Baisakhi, Bandi Chhor Divas (Diwali) are peak",
+        "gurpurab_guru_nanak": "2026-11-24 (officeholidays.com, as_of 2026-10-27)"
       },
       "dates_2027": null,
       "source": "SGPC; Wikipedia",
@@ -2229,8 +2230,9 @@
     "route": [
       {
         "step": "Amritsar airport to Golden Temple",
-        "km": 12,
-        "time": "30 min"
+        "km": "12-14",
+        "time": "30 min",
+        "note": "OSRM 14 km (2026-10-27); rail Amritsar Jn 3 km; Delhi 466, Chandigarh 229, Ghumarwin 246 km"
       },
       {
         "step": "Golden Temple to Attari-Wagah border (retreat ceremony)",
@@ -2292,7 +2294,39 @@
       "https://en.wikipedia.org/wiki/Golden_Temple",
       "https://sgpc.net/",
       "https://punjabtourism.punjab.gov.in/"
-    ]
+    ],
+    "geo": {
+      "lat": 31.62,
+      "lon": 74.8764,
+      "source": "https://en.wikipedia.org/wiki/Golden_Temple",
+      "as_of": "2026-10-27"
+    },
+    "management": {
+      "value": "SGPC under the Sikh Gurdwara Act 1925",
+      "source": "https://sgpc.net/sri-harmandir-sahib-2/",
+      "as_of": "2026-10-27"
+    },
+    "daily_routine_winter": {
+      "value": "18 Dec-17 Feb: doors open 3:00 am; Palki Sahib from Akal Takht 5:00 am; last Hukamnama 9:30 pm; Palki back at Akal Takht 10:00 pm. Summer: not published on the page (confirm locally)",
+      "source": "https://old.sgpc.net/time_eng.asp",
+      "as_of": "2026-10-27"
+    },
+    "rules": {
+      "value": "Head covered, modest dress, shoes/socks deposited, wash feet; tobacco/alcohol/intoxicants banned; videos prohibited, phone photos only as keepsake",
+      "source": "https://www.tribuneindia.com/news/amritsar/devotees-can-click-photos-for-memory-sake-cant-record-videos-in-golden-temple-complex-sgpc",
+      "as_of": "2026-10-27"
+    },
+    "stay_booking": {
+      "official_url": "https://www.sgpcsarai.com/",
+      "note": "SGPC: book only here; fake sites/QR payments reported (Jun & Sep 2024)",
+      "source": "https://tribuneindia.com/news/sgpc-gets-fake-web-portal-used-to-book-accommodation-blocked-632793",
+      "as_of": "2026-10-27"
+    },
+    "history_dated": {
+      "value": "Pool 1570-1577 (Guru Ram Das); foundation stone Dec 1588 by Mian Mir per SGPC (Wikipedia: tradition, construction 1581-1589); Adi Granth installed 1604; destroyed 1757/1762/1764 (Abdali) and rebuilt; marble/copper 1809, gold leaf 1830 (Ranjit Singh)",
+      "source": "https://sgpc.net/sri-harmandir-sahib-2/ ; https://en.wikipedia.org/wiki/Golden_Temple",
+      "as_of": "2026-10-27"
+    }
   },
   {
     "slug": "dwarka-somnath",
@@ -2381,7 +2415,51 @@
       "https://en.wikipedia.org/wiki/Somnath_temple",
       "https://en.wikipedia.org/wiki/Dwarkadhish_Temple",
       "https://somnath.org/"
-    ]
+    ],
+    "dwarkadhish": {
+      "geo": {
+        "lat": 22.2379,
+        "lon": 68.9676
+      },
+      "timings": {
+        "value": "6:30 am-1:00 pm and 5:00-9:30 pm (aarti times: confirm locally)",
+        "source": "https://www.incredibleindia.gov.in/en/gujarat/dwarka/dwarkadhish-temple",
+        "as_of": "2026-10-27"
+      },
+      "architecture": {
+        "value": "5 storeys, 72 pillars, Maru-Gurjara; spire 78 m per Wikipedia/Incredible India vs ~43 m per district site (print >40 m); Swarga Dwar + 56 steps to Gomti, Moksha Dwar; flag 52 yards, changed 4 (Wikipedia) or 5 (Incredible India) times a day",
+        "source": "https://devbhumidwarka.nic.in/tourist-place/dwarkadhish-temple/ ; https://en.wikipedia.org/wiki/Dwarkadhish_Temple",
+        "as_of": "2026-10-27"
+      },
+      "history": {
+        "value": "earliest temple c. 200 BCE (archaeology); destroyed 1473 (Mahmud Begada); rebuilt 15th-16th c.; present image 1559",
+        "source": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple",
+        "as_of": "2026-10-27"
+      },
+      "janmashtami": {
+        "2026": "2026-09-04",
+        "2027": "2027-08-25",
+        "source": "https://publicholidays.in/janmashtami/",
+        "as_of": "2026-10-27"
+      },
+      "sudarshan_setu": {
+        "value": "Okha-Beyt Dwarka cable-stayed bridge, 2,320 m, opened 25 Feb 2024",
+        "source": "https://en.wikipedia.org/wiki/Sudarshan_Setu",
+        "as_of": "2026-10-27"
+      },
+      "osrm_km": {
+        "Rukmini": 4,
+        "Nageshwar": 18,
+        "Okha": 31,
+        "Porbandar airport": 107,
+        "Jamnagar airport": 132,
+        "Rajkot": 225,
+        "Somnath": 237,
+        "Ahmedabad": 439,
+        "station": "~2 (district)",
+        "as_of": "2026-10-27"
+      }
+    }
   },
   {
     "slug": "rameshwaram-madurai-kanyakumari",
