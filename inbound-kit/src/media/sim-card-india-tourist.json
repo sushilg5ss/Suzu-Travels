@@ -1,0 +1,14 @@
+{
+ "_note": "Media for /india-tours/sim-card-india-tourist/ (practical, information only). Hero from the licensed library in hf/photos/CREDITS.md — no new photos. Captions are advice lines. Poster = Humayun's Tomb, Delhi (most visitors land in Delhi). No route map, no cost ladder.",
+ "hero": {
+  "kicker": "SIM CARDS FOR VISITORS",
+  "scenes": [
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-17374445.jpg", "kind": "tilt", "from": {"y": 900}, "to": {"y": 500}},
+   {"img": "px-28206557.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 750}},
+   {"img": "px-25786714.jpg", "kind": "land", "from": {"scale": 1.03, "x": 20, "y": 0}, "to": {"scale": 1.1, "x": -20, "y": 0}},
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}}
+  ],
+  "steps": ["SIM OR ESIM?", "BUY AT A STORE", "MOUNTAIN SIGNAL", "KASHMIR: POSTPAID", "STAY CONNECTED"]
+ }
+}
