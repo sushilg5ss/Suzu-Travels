@@ -1,0 +1,11 @@
+/* [DA-2026-10-27] Footer finish: no cream strip between the footer and the bottom Quote / WhatsApp / Call bar, Google-map slot reads as a card while it lazy-loads — pages: every WordPress page with the theme footer (.main-footer) and the #szcta bar, EXCEPT pages containing the Adventure (.sza) or Cab (.szc) kits; /contact/ (.page-id-11131, whose wrapper is also .szc) included explicitly, as in [DA-2026-10-17] */
+/* Before: body keeps 74px of bottom padding for the fixed bar, so at the very bottom of every page a 9px cream line (body background) showed between the dark footer and the dark bar, on phone and desktop. The lazy Google map in "Contact Information" was an invisible 120px dark hole until it loaded (looked like an empty gap on phones). No links, text or numbers change; box-shadow adds no scroll height (the map box only loses a 7px stray inline gap). */
+body:has(#szcta):not(:has(.sza, .szc)) .main-footer,
+body.page-id-11131:has(#szcta) .main-footer { box-shadow: 0 80px 0 0 #0D1F11; }
+body:not(:has(.sza, .szc)) .main-footer .footer-map,
+body.page-id-11131 .main-footer .footer-map { line-height: 0; }
+body:not(:has(.sza, .szc)) .main-footer .footer-map iframe,
+body.page-id-11131 .main-footer .footer-map iframe {
+  display: block; background: rgba(255, 255, 255, .06) !important;
+  outline: 1px solid rgba(255, 255, 255, .12); outline-offset: -1px;
+}
