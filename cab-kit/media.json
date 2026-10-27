@@ -706,5 +706,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "chandigarh-to-dharamshala-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2dc045822863357cbcde581f93dff0d2caa139ca/cab-kit/media/chandigarh-to-dharamshala-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2dc045822863357cbcde581f93dff0d2caa139ca/cab-kit/media/chandigarh-to-dharamshala-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2dc045822863357cbcde581f93dff0d2caa139ca/cab-kit/media/chandigarh-to-dharamshala-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
