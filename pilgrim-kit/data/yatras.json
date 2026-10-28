@@ -676,38 +676,54 @@
       "close": "Late July",
       "dates_2026": {
         "planned": "2026-07-10 to 2026-07-23",
-        "status": "SUSPENDED 'until further orders' by Kullu DC on 2026-06-29 after joint inspection found Bheem Dwar-Parvati Bagh stretch unsafe; no verified resumption found"
+        "status": "SUSPENDED 'until further notice' by DC Kullu on 2026-06-29 (BNSS s.163) after joint inspection (8 & 18 Jun) found Bheem Dwar-Parvati Bagh stretch unsafe; did not resume in 2026 (searched 2026-10-28)"
       },
-      "dates_2027": null,
+      "dates_2027": "not announced (portal: 'dates will be updated soon', 2026-10-28)",
       "source": "Free Press Journal (updated 2026-06-29); News Arena India 2026-06-29",
-      "as_of": "2026-10-08",
-      "notes": "Do not advertise 2026 departures. 2027 dates not announced."
+      "as_of": "2026-10-28",
+      "notes": "Do not advertise 2026 departures. 2027 dates not announced.",
+      "usual_pattern": "Notified by DC Kullu for ~10-14 days in mid-July (2024: 14-27 Jul)"
     },
     "registration": {
       "required": true,
-      "how": "Registration with Kullu district administration/Shrikhand Yatra Trust plus medical check at the base camp has been mandatory in past seasons; follow the DC Kullu notification for the year.",
-      "official_url": "https://hpkullu.nic.in/"
+      "how": "Online on the Shrikhand Mahadev Yatra Trust portal (offline at Singhgad in past seasons); medical check-up at base camp Singhgad; fee non-refundable if unfit or not travelling; unregistered pilgrims can be sent back from any base camp; under-18 and over-60 advised not to go. Small per-pilgrim fee shown on the portal (do not print amount).",
+      "official_url": "https://shrikhandyatra.hp.gov.in/",
+      "helplines": {
+        "SDM Nirmand": "01904-299139",
+        "Police Station Nirmand (emergency)": "01904-255126"
+      },
+      "source": "https://shrikhandyatra.hp.gov.in/",
+      "as_of": "2026-10-28"
     },
     "route": [
       {
-        "step": "Rampur/Nirmand to Jaon village (road head)",
-        "km": null,
-        "time": "drive"
+        "step": "Jaon (road head) - Singhgad (base camp 1)",
+        "km": 3
       },
       {
-        "step": "Jaon - Singhad - Barati Nala - Thachdu",
-        "km": 15,
-        "time": "1 day"
+        "step": "Singhgad - Thachru (~11,000 ft)",
+        "km": 12,
+        "time": "2-3 h"
       },
       {
-        "step": "Thachdu - Kali Ghati - Bheem Dwar",
-        "km": 9,
-        "time": "1 day"
+        "step": "Thachru - Kunsha (~12,500 ft)",
+        "km": 7,
+        "time": "3-4 h"
       },
       {
-        "step": "Bheem Dwar - Parvati Bagh - Nain Sarovar - Shrikhand rock lingam",
-        "km": 9,
-        "time": "1 day up and back to Bheem Dwar; total ~32-35 km one way"
+        "step": "Kunsha - Bheem Dwar",
+        "km": 3.5,
+        "time": "2-3 h"
+      },
+      {
+        "step": "Bheem Dwar - Parvati Bagh",
+        "km": 3,
+        "time": "~2 h"
+      },
+      {
+        "step": "Parvati Bagh - Nain Sarovar (~14,500 ft) - Shrikhand lingam",
+        "km": "6-7",
+        "time": "4+ h, hardest stretch"
       }
     ],
     "transport_options": [
@@ -760,10 +776,35 @@
       "https://hpkullu.nic.in/"
     ],
     "sources": [
+      "https://shrikhandyatra.hp.gov.in/",
+      "https://shrikhandyatra.hp.gov.in/more-info-shrikhand-yatra-trek",
+      "https://www.tribuneindia.com/news/himachal/uncertainty-surrounds-shrikhand-mahadev-yatra-as-experts-flag-high-risk-route/",
+      "https://www.tribuneindia.com/news/himachal/shrikhand-mahadev-yatra-to-begin-on-july-10-extensive-safety-arrangements-in-place/",
+      "https://www.tribuneindia.com/news/himachal/shrikhand-mahadev-yatra-begins-pilgrims-told-to-exercise-caution-639865",
       "https://www.freepressjournal.in/lifestyle/shrikhand-mahadev-yatra-2026-pilgrimage-suspended-till-further-notice-over-route-safety-concerns-in-himachal-pradesh-when-will-it-resume",
       "https://newsarenaindia.com/states/shrikhand-mahadev-kinnaur-kailash-yatras-suspended/81138",
       "https://www.tribuneindia.com/news/himachal/shrikhand-mahadev-yatra-begins-pilgrims-told-to-exercise-caution-639865/amp"
-    ]
+    ],
+    "organiser": "District Administration Kullu; managed by Shrikhand Mahadev Yatra Trust, Nirmand (DC Kullu = chairman)",
+    "route_source": "https://shrikhandyatra.hp.gov.in/more-info-shrikhand-yatra-trek (2026-10-28); total ~35 km one way (portal) vs 32 km (Tribune 2024/Wikipedia)",
+    "altitude_note": "Sources differ: portal ~17,000 ft; Tribune 18,570/18,750 ft; FPJ 5,227 m; Wikipedia 5,155 m -> print 'above 5,100 m'",
+    "lingam_height_ft": "72 (portal, Tribune); 75 (Wikipedia)",
+    "how_to_reach": {
+      "route": "Shimla-Rampur NH -> Duttnagar/Bajirbavli -> cross Satluj -> Nirmand -> Jaon",
+      "osrm_from_nirmand_km": {
+        "Rampur": 18,
+        "Shimla Ridge": 127,
+        "Shimla airport": 145,
+        "Bhuntar airport": 150,
+        "Kalka rly": 208,
+        "Chandigarh": 235,
+        "Delhi": 505,
+        "Ghumarwin": 220
+      },
+      "as_of": "2026-10-28"
+    },
+    "safety_history": "2024: 4 deaths en route by 15 Jul; about 35 in 13 years; 2023 largely suspended by weather (Tribune 2024-07-15)",
+    "as_of": "2026-10-28"
   },
   {
     "slug": "kinner-kailash-yatra",
