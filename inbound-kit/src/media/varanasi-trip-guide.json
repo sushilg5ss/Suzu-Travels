@@ -1,0 +1,102 @@
+{
+ "_note": "Media for /india-tours/varanasi-trip-guide/ (guide, Visual Studio 28 Oct 2026). Licensed Pexels photos only (hf/photos/CREDITS.md), each captioned only with its allowed caption; 3 new photos (px-34741296 Ganga sunrise boats, px-27670662 evening aarti, px-30984692 Dhamek Stupa Sarnath) + library px-16973143 Varanasi ghats (poster/LCP). Route stops + lat/lon (Sarnath folded into the Varanasi stop — 7 km apart, the dots overlapped) from research/pages/varanasi-trip-guide.md 'Media notes' (Delhi→Varanasi is a flight — said in the sub line; the kit has no dashed segment). No cost ladder (price on request).",
+ "hero": {
+  "kicker": "VARANASI · 2–3 DAYS",
+  "scenes": [
+   {
+    "img": "px-16973143.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 60,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-34741296.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": -40,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.12,
+     "x": 40,
+     "y": 30
+    }
+   },
+   {
+    "img": "px-27670662.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 50,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-30984692.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 1250
+    },
+    "to": {
+     "y": 950
+    }
+   }
+  ],
+  "steps": [
+   "VARANASI GHATS",
+   "GANGA AT SUNRISE",
+   "EVENING AARTI",
+   "SARNATH · UNESCO"
+  ]
+ },
+ "route": {
+  "title": "GOLDEN TRIANGLE + VARANASI",
+  "sub": "Delhi → Agra → Jaipur, then fly to Varanasi",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "arrive",
+    "day": "Start",
+    "lat": 28.6139,
+    "lon": 77.209
+   },
+   {
+    "name": "Agra",
+    "sub": "Taj Mahal",
+    "day": "Golden Triangle",
+    "lat": 27.1751,
+    "lon": 78.0421
+   },
+   {
+    "name": "Jaipur",
+    "sub": "Pink City",
+    "day": "Golden Triangle",
+    "lat": 26.9124,
+    "lon": 75.7873
+   },
+   {
+    "name": "Varanasi",
+    "sub": "ghats · aarti · Sarnath",
+    "day": "2–3 days",
+    "lat": 25.3176,
+    "lon": 82.9739
+   }
+  ]
+ }
+}
