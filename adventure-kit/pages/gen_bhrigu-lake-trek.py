@@ -25,7 +25,7 @@ def card(src, w, h, alt, badge, title, meta, text, what, extra=""):
 cards = "".join([
     card(f"{UP}trek-tents-meadow-stream-valley-768x1024.webp", 768, 1024,
          "Row of orange trek tents on a green meadow beside a stream in a steep mountain valley",
-         "Most booked", "Classic 3 days, Gulaba – Gulaba", "<b>Rola Kholi camp → lake → back</b>",
+         "Classic pick", "Classic 3 days, Gulaba – Gulaba", "<b>Rola Kholi camp → lake → back</b>",
          "Walk to the Rola Kholi camp (about 3,820 m) on day 1, climb to the lake and back on day 2, walk out the same way on day 3.",
          "the classic 3-day Bhrigu Lake trek from Gulaba, Manali"),
     card(f"{UP}trek-tents-grassy-mountain-bowl-768x1024.webp", 768, 1024,
