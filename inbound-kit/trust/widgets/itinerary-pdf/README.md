@@ -12,3 +12,4 @@
   `<section class="lp-sec" id="taj-mahal-tips-for-foreign-visitors"` (right after the 6-day itinerary + 'Get this tour in USD').
 - Child itinerary pages (kit-generated) need a kit hook — Reviewer: gen_pages.py should render a PDF per `itinerary` page and add this card.
 - Remove: `wp_replace_in_page` the whole `<!--szt:itinerary-pdf-->…<!--/szt:itinerary-pdf-->` block with ''.
+- **11413 (28 Oct 2026):** `build_chardham.py` → `cd-11-day.html` → `node render2.js cd-11-day.html char-dham-yatra-11-day-itinerary-suzu-travels.pdf` (3 pages A4, 105 KB). Text only from live 11413 (itinerary, 'What Our NRI Pilgrims Get' minus the oxygen/first-aid line, 'About our prices', Documents & Rules with README §1 visa + health lines), US$799 from prices.json. Pinned jsDelivr bc61aa787f9c445478f091cd6498207ef49a886b. `widget-11413.html` inserted before `<section class="lp-sec" id="trek-pony-palki-or-helicopter"` (right after the 11-day itinerary).
