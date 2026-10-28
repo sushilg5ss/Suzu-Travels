@@ -102,6 +102,17 @@ def trust(verified=None):
             f'<span>Sources listed below</span><span>Local office in Himachal, India · since 2019</span></div>')
 
 
+def talk(watxt):
+    """v0.2.4 (28 Oct 2026, Reviewer — TRUST_BACKLOG row 15): 'talk to a real person' strip under the short answer, opt-in per page with
+    "talk": true (backward-compatible: pages without the flag build byte-identical). Registration is already in the hero strip (trust()).
+    Inline script fills India time vs the visitor's time; no '&' or '//' (wpautop), no cookies, nothing stored; without JS the static hours show."""
+    js = ('<script>(function(){function f(z){try{return new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:z});}catch(e){return "";}}'
+          'var y="";try{y=Intl.DateTimeFormat().resolvedOptions().timeZone||"";}catch(e){}var n=document.getElementById("szi-now");if(!n){return;}'
+          'var a=f("Asia/Kolkata");if(!a){return;}var t="; it is "+a+" in India now";if(y){if(y!=="Asia/Kolkata"){if(y!=="Asia/Calcutta"){var b=f(y);if(b){t=t+" ("+b+" where you are)";}}}}n.textContent=t;})();</script>')
+    return (f'<p class="szi-note" id="szi-talk"><b>Talk to a real person:</b> our team in Himachal answers 9 am–9 pm IST (UTC+5:30), usually within 2 hours'
+            f'<span id="szi-now"></span>. Message us on <a href="{wa(watxt)}" target="_blank" rel="noopener">WhatsApp {PHONE}</a> or <a href="mailto:{EMAIL}">email {EMAIL}</a>.</p>' + js)
+
+
 def sources(items):
     return '<ol class="szi-src">' + "".join(f"<li>{ext(u, e(t))}</li>" for t, u in items) + "</ol>"
 
@@ -222,7 +233,7 @@ def content_page(slug):
             + ('<ul class="szi-chips">' + "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in c.get("chips", [])) + "</ul>" if c.get("chips") else "")
             + f'<div class="szi-btns"><a class="szi-btn gold" href="#overview">{e(c.get("cta1", "Read the guide"))}</a><a class="szi-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Ask a local on WhatsApp</a></div>{trust(c.get("verified"))}</div></section>')
     over = (f'<section class="szi-sec" id="overview"><div class="szi-answer"><span class="k">In short</span><h2>{e(c["q"])}</h2><p>{c["answer"]}</p></div>'
-            + (stats(c["facts"]) if c.get("facts") else "") + "</section>")
+            + (talk(watxt) if c.get("talk") else "") + (stats(c["facts"]) if c.get("facts") else "") + "</section>")
     secs = [section(s, m) + (pdf_card(slug, c) if s.get("kind") == "days" and c.get("kind") == "itinerary" else "") for s in c["sections"]]
     pb = price_box(c["prices"]) if c.get("prices") else ""
     fq = f'<section class="szi-sec alt" id="faq"><span class="k">FAQ</span><h2>{e(c.get("faq_h2", "Questions travellers ask"))}</h2>{faq(c["faqs"])}</section>'
