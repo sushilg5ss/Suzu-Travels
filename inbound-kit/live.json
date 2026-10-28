@@ -241,5 +241,14 @@
   "blurb": "Delhi, Agra and Jaipur day by day, in the order that keeps the Taj off a Friday",
   "added": "2026-10-28",
   "focus": "golden triangle itinerary"
+ },
+ "varanasi-trip-guide": {
+  "id": 16440,
+  "path": "/india-tours/varanasi-trip-guide/",
+  "kind": "guide",
+  "label": "Varanasi trip guide",
+  "blurb": "Ghats, Ganga Aarti, Sarnath and a 2- or 3-day plan",
+  "added": "2026-10-29",
+  "focus": "varanasi trip"
  }
 }
