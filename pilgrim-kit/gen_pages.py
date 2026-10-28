@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "26 Oct 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "28 Oct 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="

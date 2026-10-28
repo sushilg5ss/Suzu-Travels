@@ -782,7 +782,7 @@
       {
         "date": "8th century CE (tradition)",
         "fact": "Adi Shankaracharya is believed to have revived the temple; BKTC credits the present structure to him, beside the site of an earlier Pandava-era shrine.",
-        "source": "https://www.badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"
+        "source": "https://badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"
       },
       {
         "date": "16-17 June 2013",
@@ -807,12 +807,12 @@
     ],
     "darshan": {
       "as_of": "2026-10-08",
-      "source": "https://www.badrinath-kedarnath.gov.in (BKTC)",
+      "source": "https://badrinath-kedarnath.gov.in (BKTC)",
       "temple_hours": null,
       "temple_hours_note": "BKTC's site does not publish daily darshan hours. Travel sites commonly cite early-morning opening, an afternoon break and closing around 9 PM - UNVERIFIED, so left null.",
       "aartis": null,
       "special": "Pujas (Mahabhishek, Rudrabhishek, Laghurudrabhishek, Shodashopachar, evening aarti etc.) bookable online on BKTC; prior registration with an Indian mobile number mandatory for puja/aarti/bhog booking.",
-      "online_booking": "Puja: https://www.badrinath-kedarnath.gov.in ; Yatra registration (mandatory): https://registrationandtouristcare.uk.gov.in ; Helicopter: https://www.heliyatra.irctc.co.in (Char Dham registration required first)",
+      "online_booking": "Puja: https://badrinath-kedarnath.gov.in ; Yatra registration (mandatory): https://registrationandtouristcare.uk.gov.in ; Helicopter: https://www.heliyatra.irctc.co.in (Char Dham registration required first)",
       "dress_code": null,
       "rules": "Mandatory Uttarakhand Char Dham yatra registration. Weather-related yatra suspensions happen during monsoon alerts."
     },
@@ -885,11 +885,11 @@
       }
     ],
     "nearby_note": "Distances approximate (editorial).",
-    "official_site": "https://www.badrinath-kedarnath.gov.in",
+    "official_site": "https://badrinath-kedarnath.gov.in",
     "sources": [
       {
         "title": "BKTC - Shri Kedarnath Dham",
-        "url": "https://www.badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"
+        "url": "https://badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx"
       },
       {
         "title": "Kedarnath Temple - Wikipedia",
