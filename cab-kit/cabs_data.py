@@ -152,6 +152,8 @@ PLACES = {
     "Barkot": (30.81, 78.21), "Janki Chatti": (30.98, 78.44), "Yamunotri": (31.01, 78.46), "Uttarkashi": (30.73, 78.45), "Gangotri": (30.99, 78.94),
     "Ghansali": (30.43, 78.66), "Tilwara": (30.35, 78.98), "Guptkashi": (30.52, 79.08), "Gaurikund": (30.65, 79.02), "Kedarnath": (30.73, 79.07),
     "Ukhimath": (30.52, 79.10), "Chamoli": (30.40, 79.32), "Joshimath": (30.56, 79.56), "Karnaprayag": (30.26, 79.22),
+    # 28 Oct 2026 · Pathankot–Dalhousie (NH154A) + Chamba side (Photon/OSM coords, checked)
+    "Dunera": (32.44, 75.89), "Banikhet": (32.55, 75.94), "Khajjiar": (32.55, 76.06), "Chamba": (32.55, 76.13),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
@@ -187,7 +189,7 @@ ROUTES = [
     dict(slug="delhi-to-kasol-taxi", a="Delhi", b="Kasol", km=520, t="11–12 hrs", f=1.0),
     dict(slug="manali-to-leh-taxi", a="Manali", b="Leh", km=430, t="2 days (Jun–Oct)", f=1.6),
     dict(slug="chandigarh-to-dharamshala-taxi", a="Chandigarh", b="Dharamshala", km=240, t="5.5–6.5 hrs", f=1.1),   # 27 Oct 2026: page live; via Kharar–Ropar–Kiratpur–Anandpur Sahib–Una–Amb–Dehra–Kangra (NH503); Triveni/HurryUp/EMT 238–244 km
-    dict(slug=None, a="Pathankot", b="Dalhousie", km=80, t="2.5–3 hrs", f=1.1),
+    dict(slug="pathankot-to-dalhousie-taxi", a="Pathankot", b="Dalhousie", km=80, t="2.5–3 hrs", f=1.1),   # 28 Oct 2026: page live; via Dunera–Banikhet on NH154A (HurryUp/EMT 81 km, CabBazar 82, MMT 81–85, OSRM 84)
     dict(slug="delhi-to-haridwar-taxi", a="Delhi", b="Haridwar", km=220, t="4.5–5.5 hrs", f=0.85),
     dict(slug="delhi-to-rishikesh-taxi", a="Delhi", b="Rishikesh", km=240, t="5–6 hrs", f=0.85),
     dict(slug="delhi-to-mussoorie-taxi", a="Delhi", b="Mussoorie", km=280, t="5–6 hrs", f=0.95),
