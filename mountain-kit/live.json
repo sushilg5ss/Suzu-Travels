@@ -285,5 +285,15 @@
   "added": "2026-10-27",
   "peak_id": "indrasan",
   "commercial": true
+ },
+ "satopanth": {
+  "id": 16343,
+  "path": "/mountains-of-india/satopanth/",
+  "kind": "peak",
+  "label": "Satopanth",
+  "blurb": "7,075 m · Gangotri's classic 7,000er, first climbed in 1947",
+  "added": "2026-10-28",
+  "peak_id": "satopanth",
+  "commercial": false
  }
 }
