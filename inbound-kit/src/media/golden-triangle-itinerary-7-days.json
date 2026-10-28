@@ -1,0 +1,27 @@
+{
+ "_note": "Media for /india-tours/golden-triangle-itinerary-7-days/ (itinerary, day Builder 28 Oct 2026). Licensed Pexels photos only (hf/photos/CREDITS.md), each captioned only with its allowed place; 1 new photo (px-9179927 Amber Fort). Hero opens on the Taj (poster/LCP). Route stops from research/pages/golden-triangle-itinerary-7-days.md 'Media notes'. No cost ladder this run (prices printed in the Prices block).",
+ "hero": {
+  "kicker": "GOLDEN TRIANGLE · 5–7 DAYS",
+  "scenes": [
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
+   {"img": "px-9467617.jpg", "kind": "land", "from": {"scale": 1.04, "x": 50, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 20}},
+   {"img": "px-9179927.jpg", "kind": "land", "from": {"scale": 1.04, "x": -40, "y": 0}, "to": {"scale": 1.12, "x": 40, "y": 10}},
+   {"img": "px-29295304.jpg", "kind": "tilt", "from": {"y": 620}, "to": {"y": 60}}
+  ],
+  "steps": ["TAJ AT DAWN", "DELHI", "FATEHPUR SIKRI", "AMBER FORT", "7 DAYS, ONE CAR"]
+ },
+ "route": {
+  "title": "GOLDEN TRIANGLE · 7 DAYS",
+  "sub": "Delhi → Agra → Fatehpur Sikri → Jaipur → back to Delhi",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Delhi", "sub": "arrive · fly home on day 7", "day": "Day 1–2", "lat": 28.6139, "lon": 77.2090},
+   {"name": "Agra", "sub": "Taj Mahal · closed Fridays", "day": "Day 3–4", "lat": 27.1751, "lon": 78.0421},
+   {"name": "Fatehpur Sikri", "sub": "UNESCO 1986", "day": "Day 4", "lat": 27.0945, "lon": 77.6679},
+   {"name": "Abhaneri", "sub": "optional stepwell", "day": "Day 4", "lat": 27.0072, "lon": 76.6067},
+   {"name": "Jaipur", "sub": "Amber Fort · Pink City", "day": "Day 4–6", "lat": 26.9124, "lon": 75.7873}
+  ]
+ }
+}
