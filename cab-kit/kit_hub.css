@@ -25,3 +25,7 @@
 .szc-pin.v:after{background:var(--em)}
 @media (max-width:640px){.szc-plegs li{grid-template-columns:24px 1fr}.szc-plegs .d{grid-column:2;text-align:left}.szc-vdays{margin-left:0;width:100%}.szc-padd{width:100%}}
 .szc-pshare.ok{background:var(--green);color:#fff;border-color:var(--green)}
+.szc-psea{padding:12px 14px;border-radius:12px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.45)}
+.szc-psh{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);font-weight:800;margin-bottom:6px}
+.szc-psn{font-size:13.5px;line-height:1.5;margin:0 0 6px;color:#fff}
+.szc-psa{font-size:13px;font-weight:700;color:var(--gold2)!important;text-decoration:underline}

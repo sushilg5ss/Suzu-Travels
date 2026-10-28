@@ -397,6 +397,8 @@ def finish(slug, h, css_extra=""):
         sys.exit(f"BUILD REFUSED {slug}: '&&' in script would be mangled by WordPress convert_chars")
     if re.search(r'="[^"<]*>[^"<]*"', m.split("<script>", 1)[0]):
         sys.exit(f"BUILD REFUSED {slug}: literal '>' inside an attribute value (wptexturize breaks the closing quote) — use &gt;")
+    if slug == "cabs":  # 28 Oct 2026 hub size budget: '"' needs no escaping inside the single-quoted data-cfg/fleet/plan JSON (saves ~11 KB)
+        m = re.sub(r"data-(cfg|fleet|plan)='[^']*'", lambda x: x.group(0).replace("&quot;", '"'), m)
     kitjs = m.rsplit("<script>", 1)[-1].split("</script>")[0]
     if re.search(r"<(/|p\b|div\b|table\b|img\b|ul\b|ol\b|li\b|span\b|br\b|svg\b|button\b|details\b|summary\b|small\b|b\b|a\b|h[1-6]\b|t[rdh]\b|thead\b|tbody\b|circle\b|path\b)", kitjs):
         sys.exit(f"BUILD REFUSED {slug}: HTML tag inside kit script (wpautop would inject <p>) — use \\x3c")

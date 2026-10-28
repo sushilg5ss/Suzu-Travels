@@ -40,9 +40,7 @@ def planner():
     cfg = dict(p={k: [round(v[0], 3), round(v[1], 3)] for k, v in pp.items()}, r=pr, v=pv, s="cabs",
                js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
-    # datalist HTML = route cities + pickup presets only (hub size budget); kit_hub.js appends the other PLACES on load
-    ends = sorted(set([r["a"] for r in ROUTES] + [r["b"] for r in ROUTES]))
-    dl = "".join(f"<option value=\"{esc(k)}\">" for k in ends + sorted(PICKUPS))
+    dl = ""  # 28 Oct 2026 (size budget): kit_hub.js fills the whole datalist from cfg p on load
     return (f'<section class="szc-sec" id="planner"><span class="szc-kicker">Live route planner</span><h2>See your road trip on the map - with the fare</h2>'
             f'<p class="szc-lead">Type any two places in North India. We draw the real road route, play the drive, and show one-way or round-trip fares for every car and fleet tier.</p>'
             f'<form class="szc-plan" id="szc-plan" data-plan=\'{esc(json.dumps(cfg, ensure_ascii=False, separators=(",", ":")))}\' onsubmit="return false">'

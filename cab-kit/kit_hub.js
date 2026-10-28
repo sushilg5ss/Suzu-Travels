@@ -177,6 +177,50 @@ function shAdd(){
 }
 var render2=render;
 render=function(res,a,b){render2(res,a,b);shAdd();};
+/* Hill-season note (ENHANCEMENTS #7, 28 Oct 2026): month + places of the plan -> honest season/permit notes from the kit's road tips. Data only, no live road status. */
+var SNS=[
+ [32.75,36,75.75,80,'111110000111','Ladakh roads are seasonal','Snow shuts the Manali–Leh highway in winter; it usually runs from late May or June to mid-October, and Zojila (Srinagar–Leh) from about mid-April. Off season, fly to Leh; we book the Leh taxi.',1],
+ [32.75,36,75.75,80,'000001111000','Altitude comes first','Most of the drive is above 4,000 m. Halt a night in Manali or Kargil, carry cash and warm layers, and keep a spare day before your flight out of Leh.',0],
+ [31.8,32.5,77.6,79,'111111000111','Spiti via Kunzum','Snow shuts Kunzum Pass (Manali–Kaza) from about mid-October until it reopens in summer. We check the road report before we quote.',1],
+ [32.4,32.75,76.75,77.6,'111000000001','Lahaul in snow','After fresh snow the road beyond the Atal Tunnel can close for a day or two. We confirm the day before.',1],
+ [32.15,32.4,77,77.35,'111111111111','Rohtang permit','Rohtang needs an online permit, is closed on Tuesdays and is usually open about May to November. Local sightseeing runs in Manali union taxis; we book them.',0],
+ [30.55,31.1,78.15,79.6,'000011111000','Yatra rules','Every pilgrim must register, and yatra hill roads are closed to cars from 8 pm to 5 am, so days start at 5–6 am.',0],
+ [30.55,31.1,78.15,79.6,'111100000111','Char Dham winter closing','The dhams close for winter in November, after Diwali, and reopen on Akshaya Tritiya in late April or May.',1],
+ [33.2,35,73.5,75.75,'110000000001','Kashmir in snow','Heavy snow can close the Jammu–Srinagar highway for a day or more. Drivers carry chains; we check the advisory the evening before.',1]
+];
+var SNG=[
+ ['110000000001','Snow months','From mid-December to February hill roads can close for a day or two after fresh snow. Drivers carry chains; we confirm the day before.',1],
+ ['000000110000','Monsoon caution','Mid-July to August brings landslides on hill highways. We watch advisories and shift your start time or route at no extra charge.',0],
+ ['111111111111','No night driving in the hills','Our drivers do not run hill sections late at night. Leave early and reach before dark.',2]
+];
+function snHill(p){
+ var X=[74.5,75.8,77,78.1,79.5,81],Y=[32.9,32.4,30.95,30.2,29.33,28.8];
+ if(p.lon<73.5){return false;}if(p.lon>81.5){return false;}
+ var x=Math.max(74.5,Math.min(81,p.lon)),i=1;
+ while(i<5){if(x<=X[i]){break;}i++;}
+ return p.lat>Y[i-1]+(Y[i]-Y[i-1])*(x-X[i-1])/(X[i]-X[i-1]);
+}
+function snAdd(){
+ if(!last){return;}
+ var at=out.querySelector('.szc-pnote');if(!at){return;}
+ var P=last.pts||[last.a,last.b],dv=$('szc-pd').value||'',m=parseInt(dv.slice(5,7),10),own=m>0;
+ if(!own){m=new Date().getMonth()+1;}
+ var N=[],snow=0,hill=P.some(snHill);
+ SNS.forEach(function(r){
+  if(r[4].charAt(m-1)==='1'){if(P.some(function(p){return p.lat>=r[0]?(p.lat<=r[1]?(p.lon>=r[2]?p.lon<=r[3]:false):false):false;})){N.push(r.slice(5));if(r[7]){snow=1;}}}
+ });
+ if(hill){SNG.forEach(function(g){if(g[0].charAt(m-1)==='1'){if(g[3]===1){if(!snow){N.push(g.slice(1));}}else{if(g[3]===2){if(!N.length){N.push(g.slice(1));}}else{N.push(g.slice(1));}}}});}
+ if(!N.length){return;}
+ var mn=new Date(2026,m-1,1).toLocaleString('en-IN',{month:'long'});
+ var rt=P.map(function(p){return p.name.split(',')[0];}).join(' → ');
+ var msg='Hi Suzu Travels, how are the roads for '+rt+' in '+mn+(own?' ('+dv+')':'')+'?\n(page: cabs planner season)';
+ var d=document.createElement('div');d.className='szc-psea';d.setAttribute('role','note');
+ d.innerHTML='<span class="szc-psh">Season check · '+mn+(own?'':' (this month)')+'</span>'+N.slice(0,2).map(function(n){return '<p class="szc-psn"><b>'+n[0]+'.</b> '+n[1]+'</p>';}).join('')+'<a class="szc-psa" target="_blank" rel="noopener" href="'+wa(msg)+'">Ask us about the road on WhatsApp →</a>';
+ at.parentNode.insertBefore(d,at);
+}
+var render3=render;
+render=function(res,a,b){render3(res,a,b);snAdd();};
+var pdEl=$('szc-pd');if(pdEl){pdEl.addEventListener('change',function(){if(last){render(last.res,last.a,last.b);}});}
 (function(){
  var s=location.search;if(!s){return;}if(s.length<2){return;}
  var Q={};
