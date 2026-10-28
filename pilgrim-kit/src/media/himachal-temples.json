@@ -1,0 +1,31 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "saffron",
+  "deva": "देवभूमि हिमाचल",
+  "kicker": "Temples of Devbhoomi Himachal",
+  "beats": [
+   "Devbhoomi — the land of gods",
+   "Devi shrines on the Shivalik hills",
+   "Wooden temples under deodar and snow",
+   "High yatras when the passes open"
+  ]
+ },
+ "route": {
+  "title": "Temples of Himachal",
+  "sub": "9 famous temples of Devbhoomi",
+  "bounds": [75.9, 78.0, 30.9, 32.6],
+  "dur": 15,
+  "stops": [
+   {"name": "Naina Devi", "deva": "नैना देवी", "state": "Bilaspur", "lat": 31.306, "lon": 76.5364},
+   {"name": "Baba Balak Nath", "deva": "बाबा बालक नाथ", "state": "Hamirpur", "lat": 31.4551, "lon": 76.5411},
+   {"name": "Chintpurni", "deva": "चिंतपूर्णी", "state": "Una", "lat": 31.80862, "lon": 76.10287},
+   {"name": "Jwala Ji", "deva": "ज्वाला जी", "state": "Kangra", "lat": 31.8752, "lon": 76.3243},
+   {"name": "Kangra Devi", "deva": "कांगड़ा देवी", "state": "Kangra", "lat": 32.10183, "lon": 76.26987},
+   {"name": "Chamunda", "deva": "चामुंडा", "state": "Kangra", "lat": 32.1483, "lon": 76.4192},
+   {"name": "Baijnath", "deva": "बैजनाथ", "state": "Kangra", "lat": 32.052, "lon": 76.648},
+   {"name": "Hidimba Devi", "deva": "हिडिंबा देवी", "state": "Manali, Kullu", "lat": 32.2423, "lon": 77.1874},
+   {"name": "Jakhu", "deva": "जाखू", "state": "Shimla", "lat": 31.1012, "lon": 77.1818}
+  ]
+ }
+}
