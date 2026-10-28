@@ -118,6 +118,11 @@ add("baltal", "Baltal (Amarnath base camp)", "बालटाल (अमरन�
     [("Shri Amarnath cave darshan (trek, pony or palki on request)", 16, "start before dawn, back at camp by evening")],
     months=[7, 8], local_km=20,
     tip="Amarnath Yatra permit (route + date) and Compulsory Health Certificate needed; age 13–70")
+add("chandanwari", "Chandanwari (Amarnath trek, Pahalgam route)", "चंदनवाड़ी (अमरनाथ पैदल यात्रा, पहलगाम रूट)", 34.0760, 75.4280, "kashmir", "temple", "remote",
+    [("Trek Chandanwari → Pissu Top → Sheshnag camp", 0, "night in yatra tents"),
+     ("Trek Sheshnag → Mahagunas Pass (4,276 m) → Panchtarni camp", 0, "night in yatra tents")],
+    months=[7, 8], local_km=0,
+    tip="Car drops you at the Chandanwari road-head; nights in yatra tents at Sheshnag and Panchtarni")
 
 # ---------- Ladakh ----------
 add("kargil", "Kargil", "कारगिल", 34.5539, 76.1349, "ladakh", "stay", "ladakh",

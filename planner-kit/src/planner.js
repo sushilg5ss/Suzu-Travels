@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.6';
+  var VER = '1.7';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -218,19 +218,27 @@
       dayNo++;
       var day = { no: dayNo, date: date, type: pending.km > 0 ? 'travel' : 'arrive', from: pending.from, to: st.id, via: pending.via, km: pending.km, min: pending.min, path: pending.path.slice(), stay: st.id, sights: [], opt: [] };
       if (dayNo === 1 && pending.km === 0) day.type = 'arrive';
+      /* Amarnath Pahalgam route: Chandanwari trail nights end at Baltal — the yatri treks over the cave, the car goes round by road */
+      var amarTrek = st.id === 'baltal' && si > 0 && stops[si - 1].id === 'chandanwari' && stops[si - 1].n > 0;
+      if (amarTrek) {
+        day.trek = 1;
+        left.baltal = left.baltal.filter(function (x) { return x.n.indexOf('Amarnath cave darshan') < 0; });
+      }
+      if (st.id === 'chandanwari') day.camp = 'Sheshnag camp';
       var lk = pending.km === 0 ? 25 : 10;
       if (pending.min <= 270 || pending.km === 0) {
         var short = takeOpen(st.id, date, function (s) { return s.km <= 15; });
         if (short) { day.sights.push(short); lk += short.km; }
       }
       kmDrive += pending.km; kmLocal += lk; day.localKm = lk;
-      if (pending.min > 600) out.warn.push({ r: 0, t: 'Day ' + dayNo + ': ' + PL[day.from].name + ' → ' + p.name + ' is a long drive (' + hrs(pending.min) + '). Consider a night halt on the way.' });
+      if (pending.min > 600 && !amarTrek) out.warn.push({ r: 0, t: 'Day ' + dayNo + ': ' + PL[day.from].name + ' → ' + p.name + ' is a long drive (' + hrs(pending.min) + '). Consider a night halt on the way.' });
       out.days.push(day);
       nights.push({ id: st.id, date: date });
       date = addD(date, 1);
       for (var j = 1; j < st.n; j++) {
         dayNo++;
         var ld = { no: dayNo, date: date, type: 'local', from: st.id, to: st.id, via: [], km: 0, min: 0, path: [st.id], stay: st.id, sights: [], opt: [] };
+        if (st.id === 'chandanwari') ld.camp = j === 1 ? 'Panchtarni camp' : 'Panchtarni camp (rest day)';
         var budget = 0;
         while (left[st.id].length) {
           var s = null;
@@ -273,9 +281,15 @@
     });
     /* Amarnath Yatra (Baltal): permit + health certificate; a full day for the cave darshan (SASB rules, research/festivals.md) */
     stops.forEach(function (st) {
-      if (st.id !== 'baltal' || out.warn.some(function (w) { return w.k === 'amar'; })) return;
-      out.warn.push({ r: 1, k: 'amar', t: 'Amarnath Yatra: every yatri needs a Shri Amarnathji Shrine Board yatra permit for the Baltal route and date (advance registration with Aadhaar), a Compulsory Health Certificate from an authorised doctor, and must be 13–70 years old (no pregnancy beyond 6 weeks). The yatra runs only in its July–August window — 2027 dates are not announced yet. Helicopter is not assured; pony and palki are on request.' });
-      if (st.n < 2) out.warn.push({ r: 1, k: 'amar2', t: 'Keep 2 nights at ' + PL.baltal.name + ': arrive the day before, then a full day for the cave darshan (about 14 km steep trek each way). You have ' + st.n + ' night' + (st.n === 1 ? '' : 's') + ' here.' });
+      if (st.id !== 'baltal' && st.id !== 'chandanwari') return;
+      var si = stops.indexOf(st);
+      if (st.id === 'chandanwari' && st.n > 0) {
+        if (st.n < 2) out.warn.push({ r: 1, k: 'amarP', t: 'Pahalgam route: keep 2 nights on the trail — Sheshnag camp, then Panchtarni camp over Mahagunas Pass (4,276 m) — before the cave darshan. You have ' + st.n + ' night' + (st.n === 1 ? '' : 's') + ' here.' });
+        if (!stops[si + 1] || stops[si + 1].id !== 'baltal') out.warn.push({ r: 1, k: 'amarB', t: 'After the darshan, Pahalgam-route yatris walk down to Baltal — keep Baltal as the next stop so your car can meet you there.' });
+      }
+      if (out.warn.some(function (w) { return w.k === 'amar'; })) return;
+      out.warn.push({ r: 1, k: 'amar', t: 'Amarnath Yatra: every yatri needs a Shri Amarnathji Shrine Board yatra permit for the route (Baltal or Pahalgam) and date (advance registration with Aadhaar), a Compulsory Health Certificate from an authorised doctor, and must be 13–70 years old (no pregnancy beyond 6 weeks). The yatra runs only in its July–August window — 2027 dates are not announced yet. Helicopter is not assured; pony and palki are on request.' });
+      if (st.id === 'baltal' && st.n < 2 && !(si > 0 && stops[si - 1].id === 'chandanwari' && stops[si - 1].n > 0)) out.warn.push({ r: 1, k: 'amar2', t: 'Keep 2 nights at ' + PL.baltal.name + ': arrive the day before, then a full day for the cave darshan (about 14 km steep trek each way). You have ' + st.n + ' night' + (st.n === 1 ? '' : 's') + ' here.' });
     });
     /* seasons */
     out.days.forEach(function (dy) {
@@ -356,7 +370,7 @@
   }
 
   /* ---------------- search (destinations + ideas) ---------------- */
-  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri amarnath baltal pilgrimage golden temple तीर्थ धाम अमरनाथ', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
+  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri amarnath baltal chandanwari sheshnag pahalgam route pilgrimage golden temple तीर्थ धाम अमरनाथ', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
   function search(q, onlyPlaces) {
     q = q.trim().toLowerCase();
     var res = [];
@@ -621,20 +635,24 @@
   function dayTitle(dy) {
     var f = PL[dy.from], t = PL[dy.to];
     if (dy.type === 'arrive') return 'Arrive in ' + t.name;
+    if (dy.trek) return 'Panchtarni → Amarnath cave → ' + t.name.split(' (')[0];
     if (dy.type === 'local') return t.name.split(' (')[0] + ' — ' + (dy.sights[0] ? dy.sights[0].n.split(' (')[0] : 'sightseeing');
     if (dy.type === 'depart') return dy.km ? f.name.split(' (')[0] + ' → ' + t.name + ' · departure' : 'Departure from ' + t.name;
     return f.name.split(' (')[0] + ' → ' + t.name.split(' (')[0];
   }
   function dayLines(dy) {
     var L = [];
-    if (dy.type === 'travel' || (dy.type === 'depart' && dy.km)) {
+    if (dy.trek) {
+      L.push('🛕 Start before dawn: trek Panchtarni → Shri Amarnath cave (about 6 km) for darshan, then walk down to ' + PL[dy.to].name.split(' (')[0] + ' (about 14 km).');
+      L.push('Your car goes round by road via Srinagar and meets you at ' + PL[dy.to].name.split(' (')[0] + '.');
+    } else if (dy.type === 'travel' || (dy.type === 'depart' && dy.km)) {
       var pick = dy.no === 1 ? 'Pickup in ' + PL[dy.from].name + (PL[dy.from].tip ? ' (' + PL[dy.from].tip + ')' : '') + ', then drive' : 'After breakfast, drive';
       L.push(pick + ' to ' + PL[dy.to].name + '.');
     }
     dy.via.forEach(function (v) { L.push((PL[v.id].kind === 'temple' ? '🛕 Darshan at ' : 'Stop at ') + PL[v.id].name + (v.sight ? ' — ' + v.sight.n : '') + ' on the way.'); });
-    dy.sights.forEach(function (s, i) { L.push((dy.type === 'local' ? '' : 'Evening: ') + s.n + (s.note ? ' (' + s.note + ')' : '') + '.'); });
+    dy.sights.forEach(function (s, i) { L.push((dy.type === 'local' || dy.to === 'chandanwari' ? '' : 'Evening: ') + s.n + (s.note ? ' (' + s.note + ')' : '') + '.'); });
     if (dy.type === 'arrive' && PL[dy.to].tip) L.push(PL[dy.to].tip + '.');
-    if (dy.type === 'travel' && PL[dy.to].tip) L.push('Tip: ' + PL[dy.to].tip + '.');
+    if (dy.type === 'travel' && !dy.trek && PL[dy.to].tip) L.push('Tip: ' + PL[dy.to].tip + '.');
     if (dy.type === 'depart') L.push(dy.km ? 'Drop at ' + PL[dy.to].name + ' — journey ends with happy memories.' : 'Check out and drop at the airport / station.');
     if (dy.opt && dy.opt.length) L.push('Also possible: ' + dy.opt.map(function (s) { return s.n.split(' (')[0]; }).join(', ') + '.');
     return L;
@@ -643,9 +661,9 @@
     var h = '';
     plan.days.forEach(function (dy) {
       var meta = [];
-      if (dy.km) meta.push('<span>🛣 ' + dy.km + ' km · ' + hrs(dy.min) + '</span>');
-      if (dy.stay) meta.push('<span class="st">🏨 Night in ' + esc(PL[dy.stay].name.split(' (')[0]) + '</span>');
-      if (dy.min > 600) meta.push('<span class="w">Long drive</span>');
+      if (dy.km) meta.push('<span>' + (dy.trek ? '🚗 car ' : '🛣 ') + dy.km + ' km · ' + hrs(dy.min) + '</span>');
+      if (dy.stay) meta.push('<span class="st">🏨 Night in ' + esc(dy.camp || PL[dy.stay].name.split(' (')[0]) + '</span>');
+      if (dy.min > 600 && !dy.trek) meta.push('<span class="w">Long drive</span>');
       h += '<div class="tl-day" data-d="' + (dy.no - 1) + '"><div class="dn"><b><span>' + dy.no + '</span>DAY</b><small>' + fmtD(dy.date) + '</small></div><div><h4>' + esc(dayTitle(dy)) + '</h4><div class="meta">' + meta.join('') + '</div><ul>' + dayLines(dy).map(function (l) { return '<li>' + esc(l) + '</li>'; }).join('') + '</ul></div></div>';
     });
     $('#tl').innerHTML = h;
@@ -1048,7 +1066,7 @@
   function itinText(plan) {
     if (!plan) return '';
     var L = [plan.title + ' — ' + plan.totalDays + 'D/' + plan.nights + 'N', 'Dates: ' + fmtLong(plan.days[0].date) + ' to ' + fmtLong(plan.days[plan.days.length - 1].date), 'Travellers: ' + paxText() + ' · rooms ' + plan.hotel.rooms.rooms, 'Hotel: ' + plan.hotel.tier.name + ' · meals ' + S.m + ' · car ' + plan.cab.v.name + (plan.cab.cnt > 1 ? ' x' + plan.cab.cnt : ''), 'Pickup ' + PL[S.s].name + ' → drop ' + PL[S.e].name];
-    plan.days.forEach(function (d) { L.push('D' + d.no + ' ' + fmtD(d.date) + ': ' + dayTitle(d) + (d.km ? ' (' + d.km + ' km)' : '') + (d.stay ? ' · night ' + PL[d.stay].name : '')); });
+    plan.days.forEach(function (d) { L.push('D' + d.no + ' ' + fmtD(d.date) + ': ' + dayTitle(d) + (d.km ? ' (' + d.km + ' km)' : '') + (d.stay ? ' · night ' + (d.camp || PL[d.stay].name) : '')); });
     L.push('Estimate: ' + inr(plan.price.total) + ' (' + inr(plan.price.pp) + '/adult), range to ' + inr(plan.price.high));
     if (S.x.length) L.push('Add-ons wanted: ' + S.x.map(function (x) { return ADDONS.filter(function (a) { return a.id === x; })[0].n; }).join(', '));
     if (plan.warn.length) L.push('Warnings shown: ' + plan.warn.map(function (w) { return w.t; }).join(' | '));
