@@ -715,5 +715,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "pathankot-to-dalhousie-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e899e3226f0aa5a40e0f9b175202058f37ed92f7/cab-kit/media/pathankot-to-dalhousie-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e899e3226f0aa5a40e0f9b175202058f37ed92f7/cab-kit/media/pathankot-to-dalhousie-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e899e3226f0aa5a40e0f9b175202058f37ed92f7/cab-kit/media/pathankot-to-dalhousie-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
