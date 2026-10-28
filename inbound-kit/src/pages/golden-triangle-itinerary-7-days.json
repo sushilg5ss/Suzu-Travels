@@ -1,0 +1,190 @@
+{
+ "path": "/india-tours/golden-triangle-itinerary-7-days/",
+ "parent": 11411,
+ "kind": "itinerary",
+ "title": "Golden Triangle Itinerary: 5 and 7 Days, Day by Day — Delhi, Agra and Jaipur",
+ "seo_title": "Golden Triangle Itinerary: 5 & 7 Days, Day by Day",
+ "seo_desc": "A Golden Triangle itinerary for 5 or 7 days: Delhi, Agra and Jaipur in the right order, the Taj Friday rule, honest drive times and how to book.",
+ "focus": "golden triangle itinerary",
+ "label": "Golden Triangle itinerary — 5 & 7 days",
+ "blurb": "Delhi, Agra and Jaipur day by day, in the order that keeps the Taj off a Friday",
+ "kicker": "Delhi · Agra · Jaipur · 5 or 7 days",
+ "tag": "Three cities, one car, the right order.",
+ "sub": "Delhi, the Taj Mahal at sunrise, Akbar's red city at Fatehpur Sikri and the forts of Jaipur — the classic first trip to India. Here is how we plan it day by day in five or seven days: which day for the Taj, which days the Delhi monuments close, how long the drives really are, and what to change in the foggy months.",
+ "hero_alt": "The Taj Mahal reflected in its long pool, Humayun's Tomb in Delhi, the Diwan-i-Khas at Fatehpur Sikri, Amber Fort above the hills at sunset and the latticed facade of the Hawa Mahal in Jaipur",
+ "cta1": "See the 7 days",
+ "chips": [
+  ["5 or 7 days", "Delhi · Agra · Jaipur"],
+  ["Taj closed Fridays", "we plan around it"],
+  ["Private car", "one driver for the whole trip"],
+  ["20% deposit", "full refund within 48 h"]
+ ],
+ "q": "What is a good Golden Triangle itinerary?",
+ "answer": "A <b>Golden Triangle itinerary</b> needs 5 to 7 days: Delhi (1–2 days) → Agra, with the Taj Mahal at sunrise (closed on Fridays) → Fatehpur Sikri → Jaipur (2 days) → back to Delhi. Go between October and March, by private car with one driver. Suzu Travels' private <a href=\"/golden-triangle-tour/\">Golden Triangle tours</a> start from US$299 (4 days) or US$449 (6 days), with a 20% deposit.",
+ "facts": [
+  ["204 km", "Delhi to Agra by road (127 mi)"],
+  ["232 km", "Agra to Jaipur by road (144 mi)"],
+  ["Friday", "the one day the Taj Mahal is closed"],
+  ["3", "UNESCO listings on the way: Fatehpur Sikri, Jaipur city, Amber Fort"]
+ ],
+ "sections": [
+  {
+   "id": "route",
+   "nav": "The route",
+   "h2": "The route: Delhi, Agra, Fatehpur Sikri, Jaipur",
+   "kind": "stats",
+   "video": "route",
+   "video_caption": "Delhi → Agra → Fatehpur Sikri (and the optional Abhaneri stepwell) → Jaipur → back to Delhi for your flight home. Distances are the official ones from the Taj Mahal site; drive times are our own experience on these roads.",
+   "lead": "The three cities sit in a triangle a few hours apart, so the trip is mostly sightseeing, not driving. Most people go anticlockwise — Delhi, Agra, Jaipur — but the order matters less than one rule: your Taj Mahal day must not be a Friday.",
+   "items": [
+    ["204 km", "Delhi → Agra by road (127 mi) — about 3–4 hours on the expressway"],
+    ["232 km", "Agra → Jaipur by road (144 mi) — about 4–5 hours with Fatehpur Sikri"],
+    ["about 5 h", "Jaipur → Delhi, in our experience"],
+    ["165 km", "the six-lane Yamuna Expressway (103 mi), Greater Noida to Agra"]
+   ]
+  },
+  {
+   "id": "days",
+   "nav": "7 days",
+   "h2": "The Golden Triangle in 7 days, day by day",
+   "kind": "days",
+   "lead": "Our sample for a comfortable first trip — two nights in each city, nothing rushed. It is where we start, not a fixed package: days move to fit your flights and the weekday rules below.",
+   "days": [
+    ["1", "Arrive in Delhi", "Your driver meets you at the airport — name, photo and car number are shared with you before the trip. Check in and rest; many international flights land late at night."],
+    ["2", "Delhi: old and new", "Old Delhi in the morning, New Delhi in the afternoon. If today is a Monday, the Red Fort, Akshardham and the Lotus Temple are closed — we swap in Humayun's Tomb and the Qutb Minar, which open every day. Our <a href=\"/india-tours/delhi-tour/\">Delhi tour</a> has the full list."],
+    ["3", "Delhi → Agra", "Drive to Agra on the expressway, about 3–4 hours. Agra Fort in the afternoon (open sunrise to sunset every day), then the Taj seen from across the river at Mehtab Bagh as the light goes."],
+    ["4", "Taj Mahal at sunrise → Fatehpur Sikri → Jaipur", "The Taj opens 30 minutes before sunrise — the calmest hour. After breakfast, Fatehpur Sikri, the red-sandstone city Akbar built in the second half of the 16th century and left after only about ten years (UNESCO, 1986). Arrive in Jaipur in the evening; the Abhaneri stepwell can be added on the way."],
+    ["5", "Jaipur: Amber Fort and the old city", "Amber Fort in the morning — commissioned by Maharaja Man Singh I in 1592, about 11 km (7 mi) from the centre, with the Sheesh Mahal, its palace of mirrors. Afternoon in the walled city founded in 1727: the City Palace and the Hawa Mahal."],
+    ["6", "Jaipur at your pace", "Bazaars, a slow lunch, or back to Amber for the evening light show (English at 19:30). Or ask us to add Ranthambore for a tiger safari instead."],
+    ["7", "Jaipur → Delhi, fly home", "Drive back to Delhi, about 5 hours, timed for an evening flight. Your driver takes you straight to the airport."]
+   ]
+  },
+  {
+   "id": "five",
+   "nav": "5 days",
+   "h2": "Only 5 days? The short version",
+   "kind": "table",
+   "lead": "Five days work if you accept one long day. Here is the order we use:",
+   "head": ["Day", "Where", "What you see"],
+   "rows": [
+    ["1", "Delhi", "Arrive; Old and New Delhi highlights"],
+    ["2", "Delhi → Agra", "Expressway drive; Agra Fort; the Taj from Mehtab Bagh at sunset"],
+    ["3", "Agra → Jaipur", "Taj Mahal at sunrise, Fatehpur Sikri on the way, Jaipur in the evening"],
+    ["4", "Jaipur", "Amber Fort, the City Palace, the Hawa Mahal and the bazaars"],
+    ["5", "Jaipur → Delhi", "Drive to Delhi airport for your flight home"]
+   ],
+   "note": "Four days is possible — it is our shortest published tour — but you see Delhi only on the way in or out."
+  },
+  {
+   "id": "weekdays",
+   "nav": "Weekday rules",
+   "h2": "The weekday rules that shape the plan",
+   "kind": "table",
+   "style": "alt",
+   "lead": "The mistake we see most often: arriving in Agra on a Friday. Check your dates against this table before you book flights:",
+   "head": ["Place", "Closed", "What we do"],
+   "rows": [
+    ["Taj Mahal, Agra", "Every Friday", "Plan Agra on Saturday to Thursday. Land on a Thursday? We see Agra first and keep Delhi for the end."],
+    ["Red Fort, Delhi", "Mondays, and 15 July – 15 August for Independence Day", "Swap in Humayun's Tomb and the Qutb Minar, open every day"],
+    ["Akshardham and the Lotus Temple, Delhi", "Mondays", "Visit on another Delhi day"],
+    ["Agra Fort and Fatehpur Sikri", "Open every day, sunrise to sunset", "No change needed"]
+   ],
+   "note": "Opening days can change (security, state events) — confirm before travel; we re-check the day before."
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go — and what changes in the foggy months",
+   "kind": "cards",
+   "items": [
+    ["October to March: the season", "In our experience these are the best months for Delhi, Agra and Jaipur — the months most of our international guests choose."],
+    ["December and January: fog", "Thick morning fog is common on the North Indian plains. The UK Foreign Office (advice updated 7 October 2026) says: \"Avoid travelling at night and in fog as accidents are common due to low visibility.\" We don't drive at night or in thick fog — in December and January we may start later and that is normal."],
+    ["October to February: air quality", "The UK Foreign Office notes that severe air pollution is a major health hazard, especially from October to February, with North Indian cities most affected. If you have asthma or a heart or lung condition, ask your doctor before a winter trip and see NHS Fit for Travel or the CDC."],
+    ["Car or train?", "A fast train runs from Delhi (Hazrat Nizamuddin) to Agra Cantt, 188 km (117 mi), and is a good choice for a day trip — check current timings on IRCTC. For the full triangle a private car is simpler: it waits at every stop, carries your luggage and takes in Fatehpur Sikri on the way."]
+   ]
+  },
+  {
+   "id": "addons",
+   "nav": "Add more",
+   "h2": "Add Rishikesh, tigers or the Himalaya",
+   "kind": "cards",
+   "items": [
+    ["Rishikesh and the Ganges", "Our 8-day Golden Triangle with Rishikesh adds the yoga town on the Ganges — see the <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh guide</a> and the prices below."],
+    ["A tiger safari at Ranthambore", "Often added after Jaipur. Safari permits are booked only through the official portal — our <a href=\"/india-tours/tiger-safari-india/\">tiger safari guide</a> explains seasons and booking."],
+    ["More of Rajasthan", "Continue from Jaipur to Jodhpur, Jaisalmer and Udaipur — our <a href=\"/india-tours/rajasthan-tour/\">12-day Rajasthan tour</a>."],
+    ["The Himalaya, our home", "Pair the triangle with Shimla, Manali and Dharamshala in Himachal Pradesh, where our office is — the <a href=\"/india-tours/india-2-week-itinerary/\">2-week India itinerary</a>."]
+   ]
+  },
+  {
+   "id": "included",
+   "nav": "What's included",
+   "h2": "How we run it — and what's included",
+   "kind": "cards",
+   "items": [
+    ["Included", "Hotel nights with breakfast, a private air-conditioned car and the same English-speaking driver throughout, airport pick-up and drop, and local guides at the main monuments."],
+    ["Not included", "Flights, India visa fees, monument tickets (foreign visitors buy a separate, higher ticket at the Taj) and tips — unless they are in your quote."],
+    ["Your driver", "Your driver's name, photo and car number are shared with you before the trip. One driver for the whole route — see how our <a href=\"/india-tours/private-driver-india/\">private car with driver</a> works."],
+    ["Who you deal with", "Suzu Travels, a small team with a real office in Himachal Pradesh, from the first message to the airport drop. One WhatsApp chat, one US-dollar quote."]
+   ]
+  },
+  {
+   "id": "practical",
+   "nav": "Before you book",
+   "h2": "Before you book",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Visa", "You need an Indian visa before you fly. Apply only at the official site indianvisaonline.gov.in — beware of look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">India e-Visa guide</a> explains the steps."],
+    ["Plan the flights around the Taj", "Pick your arrival day first, then check that day 3 or 4 (day 2 or 3 on the short version) is not a Friday. We do this check for you with every quote."],
+    ["Pace", "Two nights per city is what we recommend. Agra in one afternoon and a sunrise is enough for most people; Jaipur deserves two full days."],
+    ["Season detail", "Want month-by-month detail for the rest of India? See our guide to the <a href=\"/india-tours/best-time-to-visit-india/\">best time to visit India</a>."]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Our published Golden Triangle tours, per person. The 7-day plan on this page is quoted on request — hotel tier, month and the number of travellers change the total. You receive a day-by-day plan with a US-dollar total and what it covers before you pay anything.",
+  "rows": [
+   ["Golden Triangle — 4 days / 3 nights", "from US$299", "Per person: accommodation, private car and driver, airport transfers, breakfast, local guides at the main monuments; flights, visa fees, monument tickets and tips separate unless in the quote"],
+   ["Golden Triangle — 6 days / 5 nights", "from US$449", "Per person: accommodation, private car and driver, airport transfers, breakfast, local guides at the main monuments; flights, visa fees, monument tickets and tips separate unless in the quote"],
+   ["Golden Triangle + Rishikesh — 8 days", "from US$649", "Per person: accommodation, private car and driver, airport transfers, breakfast, local guides at the main monuments; flights, visa fees, monument tickets and tips separate unless in the quote"],
+   ["Golden Triangle — 7 days (this itinerary)", "on request", "Private car and driver throughout, hotels with breakfast, airport transfers; tickets and extras on request"]
+  ]
+ },
+ "faqs": [
+  ["How many days do I need for the Golden Triangle?", "Five days is the minimum that feels like a trip; seven is comfortable, with two nights in each city. Our shortest published tour is four days."],
+  ["What order should I do the Golden Triangle in?", "Either direction works. Most people go Delhi → Agra → Jaipur → Delhi; choose the direction that keeps your Agra day off a Friday."],
+  ["Which day is the Taj Mahal closed?", "Every Friday. On other days it opens 30 minutes before sunrise and closes 30 minutes before sunset. Foreign visitors buy a separate, higher ticket."],
+  ["How long are the drives?", "Delhi to Agra is 204 km (127 miles), about 3–4 hours on the expressway; Agra to Jaipur is 232 km (144 miles), about 4–5 hours with the stop at Fatehpur Sikri; Jaipur back to Delhi takes about 5 hours. The times are our own experience, not official figures."],
+  ["Is it better to go by car or by train?", "A fast train from Delhi to Agra is a good day-trip option — check current timings on IRCTC. For the whole triangle, a private car is easier: it waits at every stop and covers Fatehpur Sikri on the way. Your driver's name, photo and car number are shared with you before the trip."],
+  ["What is the best time for the Golden Triangle?", "October to March, in our experience. In December and January expect morning fog — we don't drive at night or in thick fog, so some days start later — and the UK Foreign Office notes severe air pollution from October to February."],
+  ["Can I add Rishikesh, Ranthambore or the Himalaya?", "Yes. Our Golden Triangle with Rishikesh is 8 days from US$649 per person; Ranthambore fits after Jaipur; and Himachal Pradesh, where our office is, can follow for a two-week trip."],
+  ["What is included and how do I book?", "Accommodation, private car and driver, airport transfers, breakfast and local guides at the main monuments; flights, visa fees, monument tickets and tips are separate unless in the quote. A 20% deposit locks your dates and price, with a full refund if you cancel within 48 hours of paying."]
+ ],
+ "sources": [
+  ["Taj Mahal (official) — visiting hours and Friday closure", "https://tajmahal.gov.in/visiting-hours.aspx"],
+  ["Taj Mahal (official) — getting around Agra: road distances", "https://tajmahal.gov.in/getting-around-taj-mahal.aspx"],
+  ["UNESCO — Fatehpur Sikri (World Heritage, 1986)", "https://whc.unesco.org/en/list/255/"],
+  ["UNESCO — Jaipur City, Rajasthan (World Heritage, 2019)", "https://whc.unesco.org/en/list/1605/"],
+  ["UNESCO — Hill Forts of Rajasthan (decision, 2013)", "https://whc.unesco.org/en/decisions/5159/"],
+  ["Incredible India — Amber Fort", "https://www.incredibleindia.gov.in/en/rajasthan/jaipur/amber-fort"],
+  ["Delhi Tourism (Government of NCT of Delhi)", "https://delhitourism.gov.in/"],
+  ["NBM&CW — Yamuna Expressway, 165 km", "https://www.nbmcw.com/news/roads-highways/yeida-unveils-165-km-long-yamuna-expressway-widening.html"],
+  ["UK FCDO — India: safety and security", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"],
+  ["UK FCDO — India: health", "https://www.gov.uk/foreign-travel-advice/india/health"],
+  ["Government of India — e-Visa (official site)", "https://indianvisaonline.gov.in/"]
+ ],
+ "verified": "28 Oct 2026",
+ "cta": {
+  "h2": "Send us your flight dates — we'll fit the triangle around them",
+  "text": "Your arrival and departure days, how many of you, the hotel tier you like and whether you want Rishikesh, tigers or the Himalaya too. You get a day-by-day plan that keeps the Taj off a Friday and a US-dollar quote, then decide.",
+  "wa": "Hello Suzu Travels, I'm planning a Golden Triangle trip (Delhi, Agra, Jaipur). Dates: ___ , travellers: ___ , country: ___"
+ },
+ "trip": {
+  "name": "Golden Triangle in 7 days: Delhi, Agra and Jaipur",
+  "desc": "Private 5- or 7-day Golden Triangle itinerary for international travellers with car and driver: Old and New Delhi, the Taj Mahal at sunrise and Agra Fort, Fatehpur Sikri, and Amber Fort and the walled city of Jaipur.",
+  "type": ["International travellers", "Couples", "Families"],
+  "stops": ["Delhi", "Agra (Taj Mahal)", "Fatehpur Sikri", "Jaipur"]
+ },
+ "links": ["golden-triangle-tour", "taj-mahal-tour-from-delhi", "delhi-tour", "agra-to-jaipur", "private-driver-india"]
+}
