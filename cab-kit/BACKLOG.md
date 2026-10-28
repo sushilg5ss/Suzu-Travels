@@ -39,7 +39,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 26 | [x] delhi-to-haldwani-taxi — LIVE 2026-10-25 https://suzutravels.com/cabs/delhi-to-haldwani-taxi/ (ID 15782) | delhi to haldwani taxi | 590 (+ haldwani to delhi taxi 590, cab service 140) | Kathgodam station |
 | 27 | [x] char-dham-yatra-taxi — LIVE 2026-10-26 https://suzutravels.com/cabs/char-dham-yatra-taxi/ (ID 15934) | char dham yatra taxi | — | Haridwar/Dehradun start, 10–12 days, registration, season May–Nov; link /char-dham-tour-packages/ |
 | 28 | [x] chandigarh-to-dharamshala-taxi — LIVE 2026-10-27 https://suzutravels.com/cabs/chandigarh-to-dharamshala-taxi/ (ID 16078) | chandigarh to dharamshala taxi | 320 (+ cab 320, taxi/cab fare 110, return 90, to mcleodganj 50) | Via Una/Kangra |
-| 29 | [ ] pathankot-to-dalhousie-taxi | pathankot to dalhousie taxi | 480 (fare) / 390 | Khajjiar add-on (vol. updated 1 Oct) |
+| 29 | [x] pathankot-to-dalhousie-taxi — LIVE 2026-10-28 https://suzutravels.com/cabs/pathankot-to-dalhousie-taxi/ (ID 16274) | pathankot to dalhousie taxi | 480 (fare) / 390 | Khajjiar add-on (vol. updated 1 Oct) |
 | 30 | [ ] delhi-to-katra-taxi | delhi to katra taxi | 370 | Vaishno Devi |
 | 31 | [ ] one-way-taxi-delhi | one way taxi delhi | 420 | Service page: every one-way fare from Delhi, return-empty explanation |
 | 32 | [ ] haridwar-to-kedarnath-taxi | haridwar to kedarnath taxi | 390 (+ fare 320) | NEW 1 Oct. Season May–Nov only; verify current road-head and registration rules |
