@@ -1,0 +1,117 @@
+{
+ "hero": {
+  "kicker": "ARUNACHAL PRADESH · INDIA",
+  "words": [
+   [
+    "KANGTO:",
+    "7,090 M."
+   ],
+   [
+    "CLIMBED",
+    "IN 2025."
+   ],
+   [
+    "2 STILL",
+    "UNCLIMBED."
+   ],
+   [
+    "CLIMB IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 30
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -180
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.2,
+     "x": -180
+    },
+    "to": {
+     "y": 400,
+     "scale": 1.22,
+     "x": -190
+    }
+   },
+   {
+    "img": "px-10555794.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": -60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -140
+    }
+   }
+  ],
+  "size": 110
+ },
+ "ladder": {
+  "kicker": "ARUNACHAL'S HIGH PEAKS",
+  "title": "Arunachal's five, side by side",
+  "peaks": [
+   "tsangyang-gyatso",
+   "gorichen",
+   "chiumo",
+   "nyegyi-kansang",
+   "kangto"
+  ],
+  "subs": {
+   "tsangyang-gyatso": "First climbed 2024",
+   "gorichen": "Civilian first, 2024",
+   "chiumo": "No documented ascent",
+   "nyegyi-kansang": "1995 claim doubted",
+   "kangto": "Recorded ascent 2025"
+  },
+  "end": "Arunachal: India's newest 7,000 m summit"
+ }
+}

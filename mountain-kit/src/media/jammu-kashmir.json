@@ -1,0 +1,117 @@
+{
+ "hero": {
+  "kicker": "JAMMU & KASHMIR · INDIA",
+  "words": [
+   [
+    "10 PEAKS,",
+    "ONE TABLE."
+   ],
+   [
+    "HIGHEST:",
+    "7,135 M."
+   ],
+   [
+    "KOLAHOI:",
+    "5,425 M."
+   ],
+   [
+    "CLIMB IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 1050
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ],
+  "size": 110
+ },
+ "ladder": {
+  "kicker": "JAMMU & KASHMIR'S PEAKS",
+  "title": "Srinagar's skyline to the Nun summit",
+  "peaks": [
+   "mahadev",
+   "apharwat",
+   "sunset-peak",
+   "kolahoi",
+   "brammah-i",
+   "sickle-moon",
+   "nun"
+  ],
+  "subs": {
+   "mahadev": "Above Srinagar",
+   "apharwat": "Gulmarg gondola",
+   "sunset-peak": "Pir Panjal",
+   "kolahoi": "Kashmir Valley",
+   "brammah-i": "First climbed 1973",
+   "sickle-moon": "Kishtwar",
+   "nun": "Highest in J&K"
+  },
+  "end": "J&K: from Srinagar's skyline to 7,135 m"
+ }
+}
