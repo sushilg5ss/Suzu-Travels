@@ -18,5 +18,6 @@
  "vaishno-devi-yatra": {"id": 15738, "path": "/pilgrimage-tours/vaishno-devi-yatra/", "kind": "yatra", "label": "Vaishno Devi Yatra", "blurb": "Trikuta cave shrine above Katra, J&K", "added": "2026-10-24", "shrine": "vaishno-devi-katra"},
  "amarnath-yatra": {"id": 15873, "path": "/pilgrimage-tours/amarnath-yatra/", "kind": "yatra", "label": "Amarnath Yatra", "blurb": "Ice lingam cave in the Kashmir Himalaya", "added": "2026-10-25"},
  "51-shakti-peeth": {"id": 16007, "path": "/pilgrimage-tours/51-shakti-peeth/", "kind": "guide", "label": "51 Shakti Peeth", "blurb": "The list, the 18 Maha Peethas & Sati's story", "added": "2026-10-26"},
- "rameshwaram": {"id": 16162, "path": "/pilgrimage-tours/12-jyotirlinga/rameshwaram/", "kind": "temple", "label": "Rameshwaram, Tamil Nadu", "blurb": "The southernmost Jyotirlinga, by the sea", "added": "2026-10-27", "shrine": "rameshwaram-jyotirlinga"}
+ "rameshwaram": {"id": 16162, "path": "/pilgrimage-tours/12-jyotirlinga/rameshwaram/", "kind": "temple", "label": "Rameshwaram, Tamil Nadu", "blurb": "The southernmost Jyotirlinga, by the sea", "added": "2026-10-27", "shrine": "rameshwaram-jyotirlinga"},
+ "bhimashankar": {"id": 16358, "path": "/pilgrimage-tours/12-jyotirlinga/bhimashankar/", "kind": "temple", "label": "Bhimashankar, Maharashtra", "blurb": "Jyotirlinga in the Sahyadri forest, source of the Bhima", "added": "2026-10-28", "shrine": "bhimashankar-jyotirlinga"}
 }

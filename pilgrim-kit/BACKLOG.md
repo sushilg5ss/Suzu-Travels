@@ -28,7 +28,7 @@
 | 18 | live 2026-10-25 | `amarnath-yatra` | hub | yatra | amarnath yatra (74,000) | cave | 2027 guide; live by Jan 2027; CTA 9763 (no heli in 2026!) |
 | 19 | live 2026-10-26 | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
 | 20 | live 2026-10-27 | `rameshwaram` | 12-JL | temple | rameshwaram temple (246,000) | gopuram | 22 theerthams |
-| 21 | media | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
+| 21 | live 2026-10-28 | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
 | 22 | media | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
 | 23 | media | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
 | 24 | media | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500; nageshwar temple 33,100) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
