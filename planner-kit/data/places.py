@@ -244,6 +244,19 @@ add("tsomoriri", "Tso Moriri (Korzok)", "त्सो मोरीरी", 32.96
     [("Tso Moriri lakeside & Korzok Monastery", 3), ("Puga hot springs & Tso Kar", 60)],
     months=[5, 6, 7, 8, 9, 10], tip="4,500 m — only after 2+ nights in Leh; Inner Line Permit")
 
+# ---------- v1.8 (29 Oct 2026): Kashi – Prayagraj – Ayodhya (UP pilgrim circuit; fly-in / rail-in at Varanasi) ----------
+add("varanasi", "Varanasi (Kashi)", "वाराणसी (काशी)", 25.3176, 82.9739, "up", "hub", "pilgrim_city",
+    [("Kashi Vishwanath darshan & corridor", 5, "Phones, bags and leather items not allowed inside — lockers near the gates"),
+     ("Dashashwamedh Ghat Ganga Aarti", 5), ("Sunrise boat ride on the ghats", 5), ("Sarnath — Dhamek Stupa & Buddhist temples", 25),
+     ("Kaal Bhairav & Sankat Mochan temples", 10)], tip="Varanasi airport (Babatpur) / Varanasi Jn & Banaras railway station pickup; old-city lanes are walk-only — the car drops you at the nearest gate")
+add("prayagraj", "Prayagraj (Triveni Sangam)", "प्रयागराज (त्रिवेणी संगम)", 25.4358, 81.8463, "up", "temple", "metro",
+    [("Triveni Sangam boat ride & snan", 10), ("Bade (Lete) Hanuman Mandir & Akshayavat", 8), ("Anand Bhawan (closed Mondays)", 8),
+     ("Alopi Devi Shakti Peeth", 8)], tip="Magh Mela (Jan–Feb) brings huge crowds and road diversions near the Sangam — plan the boat ride early morning")
+add("ayodhya", "Ayodhya", "अयोध्या", 26.7922, 82.1998, "up", "temple", "pilgrim_city",
+    [("Shri Ram Janmabhoomi Mandir darshan", 5, "Phones, bags and electronics not allowed — free lockers at the entry"),
+     ("Hanuman Garhi & Kanak Bhawan", 5), ("Saryu Aarti at Ram ki Paidi / Naya Ghat", 5), ("Guptar Ghat & Dashrath Mahal", 15)],
+    tip="Ayodhya Dham Jn railway station / Maharishi Valmiki airport; Ram Navami and Deepotsav (Diwali) bring very large crowds")
+
 # Weekly closed days (JS getDay: 0 = Sunday, 1 = Monday ...) — official sources in research/festivals.md (26 Oct 2026).
 # The day planner never schedules these on their closed day; if every day at that place is a closed day it warns.
 CLOSED_DAYS = {
@@ -251,6 +264,7 @@ CLOSED_DAYS = {
     "Viceregal Lodge": [1],                            # iias.ac.in/for-tourists: closed Mondays & national holidays
     "Bhuri Singh Museum": [1],                         # bhurisinghmuseumchamba.in/visit: closed Mondays & gazetted holidays
     "Virasat-e-Khalsa museum (closed Mondays)": [1],   # already noted in the name
+    "Anand Bhawan (closed Mondays)": [1],              # incredibleindia.gov.in/en/uttar-pradesh/prayagraj/anand-bhawan: Tue–Sun
 }
 for _p in P:
     for _s in _p["sights"]:

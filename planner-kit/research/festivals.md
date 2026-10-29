@@ -29,3 +29,10 @@ Taj Mahal Friday keeps its own warning (unchanged).
 
 ## Amarnath Yatra — Pahalgam (traditional) route (added 2026-10-28, v1.7)
 - Shri Amarnathji Shrine Board, Traditional Route: https://www.jksasb.nic.in/traditional_route.html (read 28 Oct 2026) — Jammu–Pahalgam 315 km by road; Pahalgam → Chandanwari 16 km (mini buses); trek Chandanwari → Pissu Top → Sheshnag (night 2) → Mahagunas Pass 4,276 m (4.6 km climb) → Panchtarni 3,657 m (night 3) → Holy Cave; after early darshan return the same day. Planner: Pahalgam 1N, Chandanwari stop = 2 trail nights (Sheshnag, Panchtarni camps), cave darshan + walk down to Baltal (~14 km, Baltal route length) while the car goes round via Srinagar (OSRM Chandanwari–Baltal 203 km).
+
+## Kashi – Prayagraj – Ayodhya (added 2026-10-29, v1.8)
+- Places `varanasi` (hub, pilgrim_city), `prayagraj` (temple, metro class), `ayodhya` (temple, pilgrim_city); OSRM legs via `tools/patch_roads.py` (Varanasi–Prayagraj 123 km, Prayagraj–Ayodhya 167 km, Ayodhya–Varanasi 209 km).
+- Drive time: OSRM gives ~84 km/h on these highways — far too fast; planner uses ×1.6 for legs touching these three (→ ~2.5 h / ~3 h / ~4 h, in line with Google Maps typical times checked 29 Oct 2026).
+- Ram Mandir, Ayodhya: phones/bags/electronics not allowed inside, lockers at entry — https://www.outlooktraveller.com/News/planning-a-visit-to-the-ram-mandir-in-ayodhya-read-this-first
+- Anand Bhawan, Prayagraj: open Tue–Sun (closed Mondays) — https://www.incredibleindia.gov.in/en/uttar-pradesh/prayagraj/anand-bhawan (added to CLOSED_DAYS)
+- Kashi Vishwanath: phones/bags not allowed inside, lockers near gates (temple trust rule, shrikashivishwanath.org). Magh Mela at Sangam Jan–Feb (crowds, diversions).

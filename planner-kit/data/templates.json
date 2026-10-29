@@ -1007,5 +1007,31 @@
    "lakes",
    "summer"
   ]
+ },
+ {
+  "id": "kashi-ayodhya",
+  "cat": "pilgrim",
+  "name": "Kashi – Prayagraj – Ayodhya yatra",
+  "hi": "काशी – प्रयागराज – अयोध्या यात्रा",
+  "start": "varanasi",
+  "end": "varanasi",
+  "stops": [
+   [
+    "varanasi",
+    2
+   ],
+   [
+    "prayagraj",
+    1
+   ],
+   [
+    "ayodhya",
+    2
+   ]
+  ],
+  "tags": [
+   "pilgrimage",
+   "family"
+  ]
  }
 ]

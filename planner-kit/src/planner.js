@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.7';
+  var VER = '1.8';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -41,7 +41,7 @@
     { id: 'cake', n: 'Honeymoon decor & cake', at: [] }
   ];
   var CATS = [['all', 'All'], ['himachal', 'Himachal'], ['mata', 'Mata darshan'], ['pilgrim', 'Char Dham & yatra'], ['honeymoon', 'Honeymoon'], ['kashmir', 'Kashmir'], ['ladakh', 'Ladakh'], ['uttarakhand', 'Uttarakhand'], ['rajasthan', 'Rajasthan & Agra']];
-  var REGLBL = { himachal: 'Himachal', pilgrim: 'Mata darshan', kashmir: 'Kashmir', ladakh: 'Ladakh', uttarakhand: 'Uttarakhand', hub: 'City', punjab: 'Punjab', rajasthan: 'Rajasthan', up: 'Agra & Mathura' };
+  var REGLBL = { himachal: 'Himachal', pilgrim: 'Mata darshan', kashmir: 'Kashmir', ladakh: 'Ladakh', uttarakhand: 'Uttarakhand', hub: 'City', punjab: 'Punjab', rajasthan: 'Rajasthan', up: 'Uttar Pradesh' };
   var HILL = { himachal: 1, pilgrim: 1, kashmir: 1, ladakh: 1, uttarakhand: 1 };
 
   /* ---------------- helpers ---------------- */
@@ -65,7 +65,8 @@
 
   /* ---------------- roads ---------------- */
   function km(a, b) { if (a === b) return 0; return ROADS.km[IDX[a]][IDX[b]] || 0; }
-  function hillF(a, b) { return (HILL[PL[a].region] || HILL[PL[b].region]) ? 1.3 : 1.1; }
+  var EUP = { varanasi: 1, prayagraj: 1, ayodhya: 1 };  /* v1.8: east-UP highways run through towns — OSRM ~84 km/h is far too fast (Google ~45–50 km/h, 29 Oct 2026) */
+  function hillF(a, b) { return (HILL[PL[a].region] || HILL[PL[b].region]) ? 1.3 : (EUP[a] || EUP[b]) ? 1.6 : 1.1; }
   function mins(a, b) { if (a === b) return 0; return Math.round((ROADS.min[IDX[a]][IDX[b]] || 0) * hillF(a, b)); }
   function dec(s) {
     var pts = [], i = 0, lat = 0, lon = 0;
@@ -370,7 +371,7 @@
   }
 
   /* ---------------- search (destinations + ideas) ---------------- */
-  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri amarnath baltal chandanwari sheshnag pahalgam route pilgrimage golden temple तीर्थ धाम अमरनाथ', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
+  var KEYS = { mata: 'mata devi shakti peeth darshan naina chintpurni jwala kangra chamunda vaishno navratri माता देवी', pilgrim: 'yatra char dham kedarnath badrinath gangotri yamunotri amarnath baltal chandanwari sheshnag pahalgam route pilgrimage golden temple kashi varanasi banaras vishwanath ayodhya ram mandir prayagraj allahabad sangam तीर्थ धाम अमरनाथ काशी वाराणसी अयोध्या प्रयागराज', honeymoon: 'honeymoon couple romantic हनीमून', kashmir: 'kashmir srinagar gulmarg pahalgam कश्मीर', ladakh: 'ladakh leh pangong nubra bike लद्दाख', himachal: 'himachal shimla manali spiti kinnaur dharamshala हिमाचल', uttarakhand: 'uttarakhand rishikesh mussoorie nainital corbett kumaon auli chopta kainchi उत्तराखंड', rajasthan: 'rajasthan jaipur jodhpur jaisalmer udaipur agra taj mahal golden triangle mathura vrindavan desert heritage राजस्थान आगरा' };
   function search(q, onlyPlaces) {
     q = q.trim().toLowerCase();
     var res = [];
@@ -458,7 +459,7 @@
   function placeOptions(sel, val, filter) {
     var groups = {};
     DATA.places.forEach(function (p) { if (filter && !filter(p)) return; var g = p.kind === 'hub' ? 'Cities & airports' : (REGLBL[p.region] || 'Other'); (groups[g] = groups[g] || []).push(p); });
-    var order = ['Cities & airports', 'Himachal', 'Mata darshan', 'Kashmir', 'Ladakh', 'Uttarakhand', 'Rajasthan', 'Agra & Mathura', 'Punjab'];
+    var order = ['Cities & airports', 'Himachal', 'Mata darshan', 'Kashmir', 'Ladakh', 'Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Punjab'];
     sel.innerHTML = order.filter(function (g) { return groups[g]; }).map(function (g) {
       return '<optgroup label="' + g + '">' + groups[g].map(function (p) { return '<option value="' + p.id + '"' + (p.id === val ? ' selected' : '') + '>' + esc(p.name) + '</option>'; }).join('') + '</optgroup>';
     }).join('');
@@ -1108,7 +1109,7 @@
     uttarakhand: ['Char Dham: online yatra registration is mandatory; carry the printout and a photo ID.', 'Kedarnath / Yamunotri treks start early morning; ponies, palki and helicopters are on request.', 'Hill roads can close briefly after rain in July–August — keep one buffer day if possible.'],
     pilgrim: ['Temples open early (5–6 AM) and close for 1–2 hours midday; plan darshan before 11 AM.', 'Navratri and weekends bring long queues — carry water, and leave leather items and cameras in the car.', 'Dress modestly; cover shoulders and knees at shrines.'],
     rajasthan: ['Forts and palaces open ~9 AM–5 PM; start early to beat the heat.', 'October to March is the comfortable season; summer afternoons cross 40 °C — carry a cap, sunscreen and 2 litres of water per person.', 'Monument tickets are cheaper online; Taj Mahal is closed on Fridays.'],
-    up: ['Taj Mahal is closed on Fridays; sunrise entry has the shortest queues.', 'Mathura–Vrindavan temples close in the afternoon (approx. 12–4 PM); plan darshan morning and evening.'],
+    up: ['Taj Mahal is closed on Fridays; sunrise entry has the shortest queues.', 'Mathura–Vrindavan temples close in the afternoon (approx. 12–4 PM); plan darshan morning and evening.', 'Kashi Vishwanath and Ram Mandir, Ayodhya: phones, bags and electronics are not allowed inside — use the lockers at the gate; dress modestly.'],
     punjab: ['Cover your head and remove shoes at gurudwaras; the langar is open to everyone.']
   };
   function regionTips(plan) {

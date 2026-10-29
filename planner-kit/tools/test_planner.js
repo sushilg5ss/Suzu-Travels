@@ -136,6 +136,20 @@ const { chromium, devices } = require('playwright');
       r.amarnath[nm] = { warns: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => /Amarnath|Baltal|Pahalgam|अमरनाथ|बालटाल|पहलगाम/.test(t)), overflow: await p3.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1) };
       if (l) { r.amarnath[nm].days = await p3.$$eval('.tl-day', x => x.map(y => y.textContent.replace(/\s+/g, ' ').slice(0, 220))); r.amarnath[nm].englishLeft = r.amarnath[nm].days.join(' ').match(/Trek|Panchtarni camp|Sheshnag camp|car goes|Start before dawn|yatra tents/g) || []; await p3.screenshot({ path: `${out}/${name}-4g-amarnath-pahalgam-hi.png`, fullPage: true }); }
     }
+    // v1.8: Kashi – Prayagraj – Ayodhya (UP pilgrim circuit)
+    await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+    await p3.goto('about:blank'); await p3.goto(base, { waitUntil: 'load' }); await p3.waitForTimeout(800);
+    await p3.evaluate(() => SuzuTripPlanner.load('kashi-ayodhya')); await p3.waitForTimeout(1200);
+    r.kashi = { title: await p3.textContent('#m-title'), price: await p3.textContent('#price .big'), days: (await p3.$$eval('.tl-day', x => x.map(y => y.textContent.replace(/\s+/g, ' ').slice(0, 240)))), warns: await p3.$$eval('.warn', x => x.map(y => y.textContent)), overflow: await p3.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1) };
+    r.kashi.ok = r.kashi.days.length === 6 && /Kashi Vishwanath/.test(r.kashi.days.join(' ')) && /Ram Janmabhoomi/.test(r.kashi.days.join(' ')) && /Sangam/.test(r.kashi.days.join(' ')) && !r.kashi.overflow;
+    await p3.screenshot({ path: `${out}/${name}-4h-kashi.png`, fullPage: true });
+    { // Anand Bhawan never on a Monday; Hindi leaves no English sight name
+      const st = { v: 1, s: 'varanasi', e: 'varanasi', d: '2026-11-15', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['varanasi', 1], ['prayagraj', 1], ['ayodhya', 1]], x: [], tp: '', l: 'hi' };
+      await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+      r.kashi.hi = { days: await p3.$$eval('.tl-day', x => x.map(y => y.textContent.replace(/\s+/g, ' ').slice(0, 240))), overflow: await p3.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1) };
+      r.kashi.hi.englishLeft = r.kashi.hi.days.join(' ').match(/Kashi Vishwanath|Ganga Aarti|Sangam|Hanuman|Anand Bhawan|Ram Janmabhoomi|Saryu|Sarnath/g) || [];
+      await p3.screenshot({ path: `${out}/${name}-4i-kashi-hi.png`, fullPage: true });
+    }
     await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.close();
     // agent mode client link
