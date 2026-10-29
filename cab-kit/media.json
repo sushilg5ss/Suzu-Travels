@@ -724,5 +724,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-katra-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@6fa53d261011a244943864a9a9b09e0c9e745780/cab-kit/media/delhi-to-katra-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@6fa53d261011a244943864a9a9b09e0c9e745780/cab-kit/media/delhi-to-katra-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@6fa53d261011a244943864a9a9b09e0c9e745780/cab-kit/media/delhi-to-katra-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
