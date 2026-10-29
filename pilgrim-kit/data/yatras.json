@@ -1428,13 +1428,13 @@
       "close": "~10 October",
       "dates_2026": {
         "opened": "2026-05-23",
-        "closing": "2026-10-10",
-        "footfall": "2.38 lakh+ by 2026-08-10"
+        "closed": "2026-10-10 13:00",
+        "footfall": "3.84 lakh+ (season total, PTI 2026-10-10)"
       },
       "dates_2027": null,
-      "source": "Republic World 2026-08-10 (Trust president N.J.S. Bindra)",
-      "as_of": "2026-10-08",
-      "notes": "2027 opening not yet announced."
+      "source": "ThePrint/PTI 2026-10-10; Republic World 2026-08-10",
+      "as_of": "2026-10-29",
+      "notes": "2027 opening not announced (UK portal 'to be declared', 2026-10-29). Usually second half of May; closes ~10 Oct."
     },
     "registration": {
       "required": true,
@@ -1486,7 +1486,7 @@
     "faqs": [
       {
         "q": "When did Hemkund Sahib open/close in 2026?",
-        "a": "Opened 23 May 2026; closes 10 October 2026."
+        "a": "Opened 23 May 2026; closed 10 October 2026 at 1 pm (3.84 lakh+ pilgrims)."
       },
       {
         "q": "Is registration required?",
@@ -1513,8 +1513,30 @@
       "https://www.republicworld.com/india/hemkunt-sahib-yatra-to-conclude-on-october-10-over-238-lakh-devotees-visit-shrine-2026-08-10-134421",
       "https://newsable.asianetnews.com/india/hemkunt-sahib-yatra-to-end-oct-10-over-2-38-lakh-pilgrims-visit-articleshow-xpe9wsp",
       "https://registrationandtouristcare.uk.gov.in/",
-      "https://en.wikipedia.org/wiki/Hemkund"
-    ]
+      "https://en.wikipedia.org/wiki/Hemkund",
+      "https://theprint.in/india/uttarakhand-doors-of-hemkund-sahib-closed-for-winter-over-3-84-lakh-pilgrims-visited-this-year/3068040/",
+      "https://registrationandtouristcare.uk.gov.in/dham_detail.php?dham=NQ=="
+    ],
+    "altitude_note": "4,632 m (UK portal) vs 4,572 m (Wikipedia/Survey of India) -> print 'about 4,600 m (~15,000 ft)' (2026-10-29)",
+    "geo": {
+      "lat": 30.7002,
+      "lon": 79.616,
+      "source": "Wikipedia",
+      "as_of": "2026-10-29"
+    },
+    "road_km_from_govindghat": {
+      "Joshimath": 19,
+      "Badrinath": 25,
+      "Rishikesh": 270,
+      "Ghumarwin": 604,
+      "source": "OSRM",
+      "as_of": "2026-10-29"
+    },
+    "ropeway": {
+      "status": "Govindghat-Hemkund ropeway approved by Union Cabinet 5 Mar 2025; not operational",
+      "source": "https://www.businesstoday.in/amp/latest/economy/story/cabinet-approves-sonprayag-kedarnath-govindghat-hemkund-sahib-ji-ropeway-projects-for-rs-6811-crore-466796-2025-03-05",
+      "as_of": "2026-10-29"
+    }
   },
   {
     "slug": "kainchi-dham",
@@ -1988,10 +2010,10 @@
         "status": "held"
       },
       "dates_2027": {
-        "rath_yatra": "2027-07-05 (panchang-based; official Shree Jagannath Temple Administration notice not yet seen)"
+        "rath_yatra": "2027-07-05 (Mon; Ashadha Shukla Dwitiya 04:50 am 5 Jul - 01:13 am 6 Jul per Drik Panchang; SJTA schedule not announced)"
       },
-      "source": "Free Press Journal 2026 (Drik Panchang tithi); dekhopanchang.com Rath Yatra 2027",
-      "as_of": "2026-10-08"
+      "source": "Free Press Journal 2026; Drik Panchang Rath Yatra 2027 (checked 2026-10-29)",
+      "as_of": "2026-10-29"
     },
     "registration": {
       "required": false,
@@ -2038,7 +2060,7 @@
     "faqs": [
       {
         "q": "When is Rath Yatra 2027?",
-        "a": "Expected 5 July 2027 (Ashadha Shukla Dwitiya) per panchang; await temple notice."
+        "a": "Monday 5 July 2027 (Ashadha Shukla Dwitiya) per Drik Panchang; official SJTA schedule awaited."
       },
       {
         "q": "Can non-Hindus enter?",
@@ -2064,8 +2086,47 @@
     "sources": [
       "https://www.freepressjournal.in/lifestyle/when-is-rath-yatra-2026-july-15-or-july-16-heres-the-correct-date-and-everything-to-know-about-the-chariot-festival",
       "https://dekhopanchang.com/en/festivals/jagannath-rath-yatra/2027",
-      "https://en.wikipedia.org/wiki/Ratha_Yatra_(Puri)"
-    ]
+      "https://en.wikipedia.org/wiki/Ratha_Yatra_(Puri)",
+      "https://www.drikpanchang.com/festivals/ratha-yatra/jagannatha-rathayatra-date-time.html?year=2027",
+      "https://incredibleindia.gov.in/en/odisha/puri/sri-jagannath-temple"
+    ],
+    "geo": {
+      "lat": 19.80472,
+      "lon": 85.81833,
+      "source": "Wikipedia",
+      "as_of": "2026-10-29"
+    },
+    "darshan": {
+      "hours": "about 5:00 am - 10:00 pm (Incredible India); ritual times vary -> confirm locally",
+      "slot_booking": "announced (Apr 2026), not live as of 2026-10-29; Dhadi darshan trial on hold since 2 Jan 2026",
+      "source": "https://incredibleindia.gov.in/en/odisha/puri/sri-jagannath-temple ; Organiser 2026-01-03, 2026-04-16",
+      "as_of": "2026-10-29"
+    },
+    "rules": {
+      "phones": "banned inside since 2023-01-01 (deposit at Singhadwara/Dakshina Dwara)",
+      "dress": "dress code since 2024-01-01 (no shorts, torn jeans, revealing clothes)",
+      "entry": "Hindus only",
+      "source": "OdishaBytes 2022-12-15; The Tribune 2023",
+      "as_of": "2026-10-29"
+    },
+    "road_km_from_temple": {
+      "Puri station": 5,
+      "Bhubaneswar airport": 59,
+      "Bhubaneswar station": 59,
+      "Konark": 36,
+      "Gundicha temple": 3,
+      "source": "OSRM",
+      "as_of": "2026-10-29"
+    },
+    "history": {
+      "built": "12th c., Anantavarman Chodaganga (after 1112 CE; inscription 1134-35)",
+      "height_m": 65,
+      "heritage_corridor_opened": "2024-01-17",
+      "ratna_bhandar_reopened": "2024-07-14",
+      "nabakalebara_last": 2015,
+      "source": "Wikipedia; News On AIR",
+      "as_of": "2026-10-29"
+    }
   },
   {
     "slug": "tirupati-tirumala",
