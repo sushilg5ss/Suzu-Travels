@@ -195,7 +195,7 @@ ROUTES = [
     dict(slug="delhi-to-mussoorie-taxi", a="Delhi", b="Mussoorie", km=280, t="5–6 hrs", f=0.95),
     dict(slug="dehradun-to-mussoorie-taxi", a="Dehradun", b="Mussoorie", km=35, t="1–1.5 hrs", f=1.1),
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
-    dict(slug=None, a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),
+    dict(slug="delhi-to-katra-taxi", a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),   # 29 Oct 2026: page live; NH44 via Pathankot–Jammu, then Nagrota–Katra road (Triveni 630 km, HurryUp 618, EMT 654, OSRM 650)
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
     dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
