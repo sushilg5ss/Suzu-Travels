@@ -259,5 +259,14 @@
   "blurb": "How to check a centre, pick the season and the right visa",
   "added": "2026-10-29",
   "focus": "ayurveda retreat kerala"
+ },
+ "andaman-islands": {
+  "id": 16589,
+  "path": "/india-tours/andaman-islands/",
+  "kind": "guide",
+  "label": "Andaman Islands guide",
+  "blurb": "Permits for foreigners, which islands, diving rules and the monsoon",
+  "added": "2026-10-30",
+  "focus": "andaman islands"
  }
 }

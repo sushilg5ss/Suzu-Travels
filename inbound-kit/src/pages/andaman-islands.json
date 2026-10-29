@@ -1,0 +1,314 @@
+{
+ "path": "/india-tours/andaman-islands/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Andaman Islands for Foreign Visitors: Permits, Islands, When to Go",
+ "seo_title": "Andaman Islands: Permits, Islands & When to Go (Foreigners)",
+ "seo_desc": "Andaman Islands for foreign visitors: the current permit rules, Havelock (Swaraj Dweep) and Neil, the Cellular Jail, diving rules and the monsoon dates.",
+ "focus": "andaman islands",
+ "label": "Andaman Islands guide",
+ "blurb": "Permits for foreigners, which islands, diving rules and the monsoon",
+ "kicker": "Guide · Andaman & Nicobar Islands",
+ "tag": "White sand, clear water — and the rules first.",
+ "sub": "The Andaman Islands sit in the Bay of Bengal, far out from the Indian mainland: forest-backed beaches, coral reefs and the Cellular Jail. This guide is for travellers from the US, UK, Europe, Australia and Canada — the current permit rules for foreigners, the new island names, what you may and may not do, and when the monsoon arrives. We arrange Andaman trips with local partners, planned from our office in Himachal.",
+ "hero_alt": "Aerial view of Neil Island (Shaheed Dweep) with turquoise reef water, a forest-backed white-sand beach in the Andamans and the brick corridors of the Cellular Jail",
+ "cta1": "Permits first",
+ "chips": [
+  [
+   "No RAP",
+   "for most nationalities on the main islands"
+  ],
+  [
+   "Sri Vijaya Puram",
+   "the new name of Port Blair"
+  ],
+  [
+   "~22 May",
+   "normal monsoon arrival (IMD)"
+  ],
+  [
+   "Checked",
+   "30 Oct 2026"
+  ]
+ ],
+ "q": "Do foreigners need a permit for the Andaman Islands?",
+ "answer": "Most foreign visitors <b>no longer need a Restricted Area Permit</b>: the Andaman & Nicobar administration lists 29 islands excluded from the permit regime — including Swaraj Dweep (Havelock) and Shaheed Dweep (Neil) — plus 11 islands for day visits until 31 December 2027. Citizens of Afghanistan, China and Pakistan still need one in advance. Fly into Sri Vijaya Puram (Port Blair); we arrange the rest on request.",
+ "facts": [
+  [
+   "29 + 11",
+   "islands open without a RAP (day visits on 11, to 31 Dec 2027)"
+  ],
+  [
+   "1906",
+   "Cellular Jail completed — now a National Memorial"
+  ],
+  [
+   "16 May",
+   "monsoon reached the islands in 2026 (normal: 22 May)"
+  ]
+ ],
+ "talk": true,
+ "sections": [
+  {
+   "id": "permits",
+   "nav": "Permits",
+   "h2": "Permits for foreigners: what the rules say in 2026",
+   "kind": "steps",
+   "lead": "Older blogs still describe a permit stamped on arrival. The current notice from Andaman & Nicobar Tourism is simpler — read it in this order.",
+   "items": [
+    [
+     "Most islands you will visit need no RAP",
+     "The notice says foreign nationals 'are not required to obtain a Restricted Area Permit (RAP) for visiting the 29 islands' excluded from the permit regime. The official list includes South Andaman (with Sri Vijaya Puram), Swaraj Dweep (Havelock), Shaheed Dweep (Neil), Baratang, Long Island, Middle and North Andaman and Little Andaman."
+    ],
+    [
+     "Eleven more islands for day visits",
+     "A further 11 islands are exempt from the permit for day visits only. The notice says this exemption 'is valid up to 31/12/2027'."
+    ],
+    [
+     "Three nationalities still need a permit in advance",
+     "The relaxation does not apply to citizens of Afghanistan, China (including Hong Kong and Macau) and Pakistan, or to people of that origin. They need a RAP approved by India's Ministry of Home Affairs before arrival — without one, 'entry shall be refused'. Citizens of Myanmar need a RAP for Mayabunder and Diglipur."
+    ],
+    [
+     "Forests, sanctuaries and tribal reserves are separate",
+     "Reserved forests, wildlife sanctuaries and tribal reserves need their own approval, and so do islands that are not on the tourism list. Visits to tribal areas need a Tribal Pass from the Deputy Commissioner. Where a permit is needed, the application is made online at indianfrro.gov.in."
+    ],
+    [
+     "Check before you fly",
+     "Rules can change — check the Andaman & Nicobar Tourism notice before you travel. Your Indian visa is separate: apply yourself at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency."
+    ]
+   ]
+  },
+  {
+   "id": "names",
+   "nav": "Islands & names",
+   "h2": "The main islands — and their new names",
+   "kind": "table",
+   "lead": "Several places have been renamed. Ferry tickets, maps and hotel bookings may use either name, so it helps to know both.",
+   "head": [
+    "Official name",
+    "Also known as",
+    "Why people go"
+   ],
+   "rows": [
+    [
+     "Sri Vijaya Puram",
+     "Port Blair (renamed in September 2024)",
+     "The capital and the airport (Veer Savarkar International); the Cellular Jail; the start of every island trip"
+    ],
+    [
+     "Swaraj Dweep",
+     "Havelock Island",
+     "Radhanagar Beach — which holds the international Blue Flag certification — plus Elephant Beach and Kalapathar"
+    ],
+    [
+     "Shaheed Dweep",
+     "Neil Island",
+     "A small, quieter island: Laxmanpur and Bharatpur beaches, rock formations and tidal pools"
+    ],
+    [
+     "South Andaman",
+     "—",
+     "Chidiya Tapu, Wandoor and Corbyn's Cove beaches near the capital"
+    ],
+    [
+     "Long Island, Little Andaman",
+     "—",
+     "Further out: Lalaji Bay (Long Island), Butler Bay (Little Andaman) — for more time and fewer people"
+    ]
+   ],
+   "note": "Beach names are from the Andaman & Nicobar Tourism list of beaches. Ferries link Sri Vijaya Puram with Swaraj Dweep and Shaheed Dweep; timetables change with the season and the sea, so we book them as part of your plan."
+  },
+  {
+   "id": "rules",
+   "nav": "Island rules",
+   "h2": "Rules every visitor should know",
+   "kind": "cards",
+   "lead": "These come from the Andaman & Nicobar Tourism page for foreigners. Most protect the islands' reefs, forests and indigenous peoples.",
+   "items": [
+    [
+     "No photos of tribal people",
+     "'Taking photographs of the Aboriginal Tribes … in the Tribal Reserves is not permitted. It is an offence punishable under PAT Regulation 1956.' Tribal reserves are closed to visitors without a Tribal Pass."
+    ],
+    [
+     "Off the beach by sunset",
+     "'Camping on sea beaches and sleeping in the jungle is strictly prohibited', and 'no one should remain on the sea beach and jungle after sunset.' Plan sunset photos, then head back."
+    ],
+    [
+     "Leave the coral where it is",
+     "Scuba diving and underwater photography are allowed in identified areas, but nothing — coral, fish or shells — may be removed from the Marine Park. Marine Park visits are by small or glass-bottom boats."
+    ],
+    [
+     "Driving a scooter?",
+     "You need a valid International Driving Licence, and helmets are compulsory for the rider and the pillion. Or let a car and driver take you around the island."
+    ]
+   ]
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go: plan around the monsoon",
+   "kind": "table",
+   "lead": "The southwest monsoon reaches the islands before mainland India. India Meteorological Department (IMD) gives the normal date as 22 May (Kerala: 1 June); in 2026 it arrived on 16 May, six days early.",
+   "head": [
+    "Time of year",
+    "What to expect",
+    "For your trip"
+   ],
+   "rows": [
+    [
+     "Before mid-May",
+     "Before the southwest monsoon",
+     "Plan beach days, snorkelling and diving in this window; it combines well with North India in winter or spring"
+    ],
+    [
+     "From about 22 May (normal onset)",
+     "Southwest monsoon over the islands",
+     "Expect rain and rougher seas; ferry and boat plans can change at short notice"
+    ],
+    [
+     "Your exact month",
+     "Varies year to year",
+     "Tell us your dates — we check the current sea and ferry situation before we confirm a plan"
+    ]
+   ],
+   "note": "Check IMD (mausam.imd.gov.in) close to your trip, and your own government's travel advice before you go."
+  },
+  {
+   "id": "see",
+   "nav": "What to see",
+   "h2": "Beyond the beaches: the Cellular Jail",
+   "kind": "prose",
+   "paras": [
+    "In Sri Vijaya Puram, the Cellular Jail was built by the British as a colonial prison and completed in 1906. Today it is dedicated to the nation as a National Memorial to the freedom fighters held there, and an evening light-and-sound show tells their story. Check the show times locally — they differ by language and day.",
+    "A good plan spends a day in the capital for the jail and the nearby beaches, then takes the ferry to Swaraj Dweep and Shaheed Dweep. Diving and snorkelling are possible in identified areas; choose a dive centre that shows you its certification, and talk to your doctor before you dive — see CDC or NHS Fit for Travel for India."
+   ]
+  },
+  {
+   "id": "how",
+   "nav": "How we help",
+   "h2": "How we arrange an Andaman trip",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "Our team in Himachal plans the whole trip. On the islands we arrange it with local partners we have worked with — one plan, one contact.",
+   "items": [
+    [
+     "Flights and timing",
+     "Sri Vijaya Puram's airport is an approved e-Visa entry airport. We fit the island days into your India route — after the Golden Triangle, Kerala or Goa — and time them to the ferries."
+    ],
+    [
+     "Ferries and hotels",
+     "Island ferries and hotel nights on Swaraj Dweep and Shaheed Dweep, booked together so the connections work."
+    ],
+    [
+     "A car and driver on the islands",
+     "Your driver's name, photo and car number are shared with you before the trip."
+    ],
+    [
+     "Permit check for your passport",
+     "We tell you whether your nationality needs a RAP under the current notice — and if it does, we plan well ahead."
+    ]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Andaman trips are quoted on request — the number of nights, the islands, the month and the hotels change the total. You get a day-by-day plan with a US-dollar total before you pay anything. You can start with the Golden Triangle, which has published prices:",
+  "rows": [
+   [
+    "Andaman Islands — ferries, hotels, transfers and a car with driver",
+    "on request",
+    "Planned around your flights; flights, diving and entry tickets quoted separately"
+   ],
+   [
+    "Golden Triangle — 4 days (Delhi, Agra, Jaipur)",
+    "from US$299",
+    "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"
+   ],
+   [
+    "Golden Triangle — classic 6 days",
+    "from US$449",
+    "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "Do foreigners need a permit to visit the Andaman Islands?",
+   "Most don't. Under the current Andaman & Nicobar Tourism notice, foreign nationals need no Restricted Area Permit for 29 islands, including Swaraj Dweep (Havelock) and Shaheed Dweep (Neil), and 11 more islands are open for day visits until 31 December 2027. Check the notice before you travel — rules can change."
+  ],
+  [
+   "Which nationalities still need a Restricted Area Permit?",
+   "Citizens of Afghanistan, China (including Hong Kong and Macau) and Pakistan, and people of that origin, need a RAP approved by India's Ministry of Home Affairs before arrival. Citizens of Myanmar need one for Mayabunder and Diglipur. Applications are made online at indianfrro.gov.in."
+  ],
+  [
+   "Is Port Blair now called Sri Vijaya Puram?",
+   "Yes. The Government of India renamed Port Blair as Sri Vijaya Puram in September 2024. You will still see 'Port Blair' on older maps and some tickets — they are the same place, with the islands' airport."
+  ],
+  [
+   "What is the best time to visit the Andaman Islands?",
+   "Plan your beach days before the southwest monsoon, which normally reaches the islands around 22 May (IMD); in 2026 it arrived on 16 May. During the monsoon expect rain and rougher seas. Send us your dates and we check the current situation."
+  ],
+  [
+   "Can I use an Indian e-Visa for the Andamans?",
+   "Yes — Sri Vijaya Puram's Veer Savarkar International Airport is a designated e-Visa entry airport, and the main tourist islands need no separate permit for most nationalities. Apply yourself at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra."
+  ],
+  [
+   "Can I go scuba diving in the Andamans?",
+   "Yes, in identified areas. Taking coral, fish or anything else from the Marine Park is not allowed. Choose a dive centre that shows you its certification and talk to your doctor before you dive."
+  ],
+  [
+   "Can tourists visit tribal areas or North Sentinel?",
+   "No. Tribal reserves are closed without a Tribal Pass from the Deputy Commissioner, and photographing the islands' Aboriginal tribes in the reserves is an offence under the PAT Regulation 1956. We never include tribal areas in a plan."
+  ],
+  [
+   "Can I combine the Andamans with the rest of India?",
+   "Yes — you can add the islands to a Golden Triangle, Kerala or Goa trip. We plan the whole route, with one contact from start to finish."
+  ]
+ ],
+ "sources": [
+  [
+   "Andaman & Nicobar Tourism — Restricted Area Permit notice (PDF)",
+   "https://tourism.andamannicobar.gov.in/userpages/admin/whatsnewfile/2026030570Restricted%20Area%20Permit.pdf"
+  ],
+  [
+   "Andaman & Nicobar Tourism — Information for foreigners",
+   "https://www.andamantourism.gov.in/Foreigners.php"
+  ],
+  [
+   "Andaman & Nicobar Tourism — Beaches (PDF)",
+   "https://tourism.andamannicobar.gov.in/userpages/admin/docuploads/1762837528_Beaches.pdf"
+  ],
+  [
+   "India Meteorological Department — Southwest Monsoon 2026, salient features (PDF)",
+   "https://mausam.imd.gov.in/Forecast/marquee_data/Salient_Features_SW_MONSOON%20_2026_30_sep.pdf"
+  ],
+  [
+   "Incredible India — Cellular Jail, Sri Vijaya Puram",
+   "https://www.incredibleindia.gov.in/en/andaman-and-nicobar-islands/sri-vijaya-puram/cellular-jail"
+  ],
+  [
+   "News On Air — Port Blair to be renamed Sri Vijaya Puram (13 Sep 2024)",
+   "https://www.newsonair.gov.in/port-blair-to-be-renamed-as-sri-vijaya-puram-home-minister-amit-shah"
+  ],
+  [
+   "Government of India — e-Visa (official site)",
+   "https://indianvisaonline.gov.in/evisa/"
+  ],
+  [
+   "Indian FRRO — online RAP applications",
+   "https://indianfrro.gov.in"
+  ]
+ ],
+ "verified": "30 Oct 2026",
+ "cta": {
+  "h2": "Tell us your dates — we'll plan the islands and the rest of India",
+  "text": "Send your dates, your passport country and where else in India you want to go. You get a day-by-day plan — flights timed to the ferries, hotels, car and driver — and a US-dollar quote from our office in Himachal.",
+  "wa": "Hello Suzu Travels, I'm planning a trip to the Andaman Islands. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "kerala-tour",
+  "goa-holiday",
+  "india-e-visa-guide",
+  "best-time-to-visit-india"
+ ]
+}
