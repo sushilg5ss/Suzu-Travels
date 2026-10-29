@@ -1,0 +1,141 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/shivling-peak/",
+ "peak_id": "shivling",
+ "title": "Mount Shivling (6,543 m): Routes, Grade & Climbing History",
+ "seo_title": "Shivling Peak (6,543 m): Routes, Grade & Climbing History",
+ "seo_desc": "Shivling peak (6,543 m), the Matterhorn of the Himalaya above Gaumukh: the west ridge camp by camp, grade, season, 2026 permits and climbing history.",
+ "focus": "shivling peak",
+ "commercial": false,
+ "label": "Shivling",
+ "blurb": "6,543 m · the 'Matterhorn of the Himalaya' above Gaumukh",
+ "verified": "29 Oct 2026",
+ "kicker": "Uttarakhand · Gangotri group · 6,543 m",
+ "tag": "The sharp pyramid above the source of the Ganga.",
+ "sub": "Shivling is the peak every Gaumukh and Tapovan trekker photographs, and one of the most demanding 6,000 m climbs in India. Here is the west ridge camp by camp, the honest difficulty, the season, the 2026 permit rules and the climbing story since 1933.",
+ "chips": [
+  ["6,543 m", "summit (21,467 ft)"],
+  ["About 3 weeks", "from Gangotri (estimate)"],
+  ["May–Jun", "Sep–Oct"],
+  ["Grade", "extreme: no easy route"],
+  ["2026", "open (Uttarakhand list)"]
+ ],
+ "hero_alt": "A meadow camp, roped climbers on a glacier and on a snow slope, and a snowfield seen from the air (generic stock footage, not Shivling itself) with an altitude read-out rising from Gangotri, 3,415 m, past Gaumukh, Tapovan, advance base and Camp 1 to the 6,543 m summit",
+ "profile_alt": "Animated altitude profile of the Shivling west ridge route: Gangotri about 3,415 m, Bhojbasa about 3,775 m, Gaumukh 4,023 m, Tapovan base camp 4,280 m, advance base 5,060 m, Camp 1 5,700 m and the 6,543 m summit",
+ "q": "How high is Shivling peak, and how hard is it to climb?",
+ "answer": "<b>Shivling peak</b> (Mount Shivling) is 6,543 m (21,467 ft) high, in the Gangotri group of Uttarakhand, about 6 km south of Gaumukh above the Tapovan meadow. Its easiest line, the west ridge, was first climbed by an ITBP team on 3 June 1974 and is still technical, with a serac barrier and steep ice. It is open in 2026. Compare all <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks in India</a>.",
+ "facts": [
+  ["Height", "6,543 m / 21,467 ft (main north-east summit); the south-west summit is 6,501 m"],
+  ["Location", "Gangotri group, western Garhwal Himalaya, Uttarkashi district, Uttarakhand"],
+  ["Position", "About 6 km south of Gaumukh, the snout of the Gangotri Glacier"],
+  ["Prominence", "850 m"],
+  ["Name", "From \"Shiva Linga\"; early Europeans called it the \"Matterhorn Peak\""],
+  ["Base camp", "Tapovan meadow, about 4,300 m"],
+  ["Normal route", "West ridge (the 1974 line), technical mixed climbing"],
+  ["Routes", "At least ten, on all major ridges and most faces"],
+  ["Best months", "May–Jun, Sep–Oct"],
+  ["First ascent", "3 Jun 1974, ITBP team led by Hukam Singh"],
+  ["Status 2026", "Open: on Uttarakhand's Feb 2026 list of 83 peaks"]
+ ],
+ "intro": [
+  "<b>Status, checked 29 October 2026: open.</b> Shivling is named in the list of 83 peaks that Uttarakhand opened for climbing on 4 February 2026. Indian climbers apply on the state's UKMPS portal and pay no state fees in 2026; foreign teams pay only the IMF fees. The peak is sacred, but climbing it is not banned. We found no closure or route-closing accident for 2026.",
+  "<b>The mountain, not the shrine.</b> The name comes from the Shiva Linga, the Hindu sacred symbol, and locals also call it Mahadev ka Linga. This page is about the 6,543 m mountain in the Gangotri group, not the ice lingam of Amarnath that is sometimes called the \"snow Shivling\".",
+  "For trekkers, Shivling is the great view of the Gaumukh–Tapovan walk: it rises straight above the Tapovan meadow, opposite the Bhagirathi massif. For climbers it is a serious alpine objective with no easy side. For the wider picture, see our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a> and the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>."
+ ],
+ "route_h2": "The west ridge from Gangotri, camp by camp",
+ "route_text": [
+  "The road-head is the temple town of <b>Gangotri</b> (about 3,415 m). The trail follows the Bhagirathi up the valley to <b>Bhojbasa</b> (about 3,775 m, 14 km from Gangotri) and on to <b>Gaumukh</b> (4,023 m), the snout of the Gangotri Glacier, about 18 km from Gangotri. Base camp is the meadow of <b>Tapovan</b>, at the foot of Shivling: the Himalayan Journal gives 4,280 m, other sources go a little higher, so call it about 4,300 m.",
+  "Above Tapovan, a 1995 Mount Everest Foundation team placed advance base at 5,060 m below the west ridge and Camp 1 at 5,700 m. The objective hazard is a <b>serac barrier at about 6,100 m</b>, where some of that team turned back. The ridge leads to the col between the twin summits, then steep snow and a short ice wall reach the main summit. The approach heights are approximate; the upper camp heights are from the 1995 expedition report."
+ ],
+ "route": [
+  {"name": "Gangotri", "m": 3415, "note": "Road-head temple town (about 3,415 m); park permit check"},
+  {"name": "Bhojbasa", "m": 3775, "note": "Approach camp, 14 km from Gangotri (about 3,775 m)"},
+  {"name": "Gaumukh", "m": 4023, "note": "Snout of the Gangotri Glacier, source of the Bhagirathi"},
+  {"name": "Base camp, Tapovan", "m": 4280, "note": "Meadow at the foot of Shivling (4,280 m in the Himalayan Journal; about 4,300 m)"},
+  {"name": "Advance base", "m": 5060, "note": "Below the west ridge (1995 MEF report)"},
+  {"name": "Camp 1", "m": 5700, "note": "On the west ridge; the serac barrier is at about 6,100 m"},
+  {"name": "Shivling summit", "m": 6543, "note": "Via the col between the twin summits and a short ice wall"}
+ ],
+ "itinerary_h2": "A typical plan (estimate, not a fixed schedule)",
+ "itinerary": [
+  ["Day 1", "Gangotri", "Arrive in Gangotri, rest and start acclimatising; national park permit check."],
+  ["Days 2–3", "Walk-in to Bhojbasa", "Up the Bhagirathi valley to Bhojbasa, about 3,775 m."],
+  ["Days 3–4", "Gaumukh and Tapovan", "Past the glacier snout at Gaumukh to base camp on the Tapovan meadow."],
+  ["Following days", "Advance base and Camp 1", "Rest at base camp, then load carries to advance base (5,060 m) and Camp 1 (5,700 m), fixing rope on the ridge."],
+  ["Summit day", "Through the serac barrier", "Past the serac barrier at about 6,100 m, to the col and up the final ice to 6,543 m."],
+  ["Spare days", "Weather and descent", "In 1995 the team set up base camp on 7 September and first reached the top on 26 September: plan on about three weeks from Gangotri."]
+ ],
+ "difficulty_h2": "How hard is Shivling?",
+ "difficulty": [
+  "Our dataset grades Shivling <b>extreme</b>: there is no easy route. The west ridge is the lowest-angle line, but it still means serious mixed climbing, a serac barrier that can drop ice, and steep snow and ice above the col. The 1995 British team called it \"surprisingly technical and long\" and used fixed ropes. The Uttarakhand Forest Department puts it in its \"High Risk Group\".",
+  "This is a peak for experienced alpinists, not a first 6,000er. In Himachal, the natural steps are <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m), then technical peaks such as <a href=\"/mountains-of-india/indrasan/\">Indrasan</a> (6,220 m) or <a href=\"/mountains-of-india/mulkila/\">Mulkila</a> (6,517 m). Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before any climb above 6,000 m."
+ ],
+ "skills": [
+  ["Experience", "Several earlier 6,000 m summits, including technical snow and ice."],
+  ["Technique", "Mixed climbing on rock, snow and ice, leading and following on fixed ropes, and moving fast below seracs."],
+  ["Fitness", "Load carries above Tapovan and a long summit day from Camp 1."],
+  ["Acclimatisation", "A slow walk-in from Gangotri and rest days at Tapovan before the upper camps."],
+  ["Training", "A Basic and an Advanced Mountaineering Course at least; Indian teams also follow IMF rules on team qualifications."]
+ ],
+ "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "maybe", "May": "good", "Jun": "good", "Jul": "no", "Aug": "no", "Sep": "good", "Oct": "good", "Nov": "no", "Dec": "no"},
+ "season_h2": "Best time to climb Shivling",
+ "season_text": [
+  "<b>May to June and September to October.</b> The Uttarakhand Forest Department gives the climbing window as April to October and says the post-monsoon months are the best time to attempt the peak.",
+  "Gangotri National Park reopened on 1 April 2026 and closes on 30 November, so autumn teams must be out before the park shuts. Keep spare days for weather: fresh snow makes the ridge slower and the serac zone more dangerous."
+ ],
+ "permits_h2": "Permits for Shivling in 2026",
+ "permits": [
+  "<b>Indian climbers</b> apply on Uttarakhand's UKMPS portal. Shivling is on the state's February 2026 list of 83 open peaks, and state fees are waived for Indian climbers in 2026.",
+  "<b>Foreign nationals</b> need IMF permission, applied for at least 90 days ahead, with a liaison officer and insurance; they pay only the IMF fees. At 6,543 m Shivling falls in the <b>6,501–7,000 m band: US$700 for a team of two</b>, plus US$500 for liaison-officer equipment, and per-member charges apply (IMF peak-fee page, as of 1 Oct 2026). More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">mountaineering in India for foreign climbers</a>.",
+  "Everyone also needs a <b>Gangotri National Park</b> permit, online through the Pathik portal or from the forest office in Uttarkashi. The Gaumukh–Tapovan route is capped at <b>150 visitors a day</b>, and the Forest Department lists Kankhu as the check-post."
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots with crampons suited to steep ice",
+  "Two technical ice tools or a technical axe and hammer",
+  "Climbing harness, helmet, jumar (ascender), belay device, carabiners and slings",
+  "Down jacket and trousers and a very warm sleeping bag",
+  "Windproof and waterproof shell jacket and trousers",
+  "Summit mitts plus liner gloves",
+  "Glacier sunglasses (UV400), goggles and sunscreen",
+  "Headlamp with spare batteries for the early summit start",
+  "Trekking poles for the walk-in and moraine",
+  "Two water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "Climbing history of Shivling",
+ "history": [
+  "<b>1933 and 1938:</b> Marco Pallis considered the peak in 1933. In 1938 a German reconnaissance under R. Schwarzgruber found no feasible route because of the steep faces and falling seracs.",
+  "<b>3 June 1974:</b> the <b>first ascent</b>, by an Indo-Tibetan Border Police team led by Hukam Singh, on the west ridge, after two failed bids on 26 and 30 May. The west ridge is still the normal route.",
+  "<b>1980–1986:</b> a Japanese route on the north pillar (1980); the <b>East Ridge</b> by Bettembourg, Child, Scott and White (1981); the first ascent of the 6,501 m west summit by Bonington and Fotheringham (1983); and the north-east face by an Italian team (1986).",
+  "<b>1993 and 2000:</b> Hans Kammerlander and Christoph Hainz climbed the <b>North Pillar</b> in 1993. In 2000 Thomas Huber and Iwan Wolf added \"Shiva's Line\", a direct finish to the pillar.",
+  "<b>2005–2017:</b> Kazuya Hiraide and Kei Taniguchi climbed the north face to the north-west ridge (2005). On 25 May 2012 Valery Rozov made the first wingsuit BASE jump from the summit. In 2017 \"Shiva's Ice\" was added by Gietl and Messini.",
+  "<b>2023–2024:</b> new lines are still being tried. A 2023 team reached about 6,000 m on the east face, and a 2024 Indian-led attempt on the west face turned back from its Camp 2 at 5,800 m because of icefall and avalanches. ExplorersWeb counted about ten routes and 55 teams by 2024."
+ ],
+ "quote_h2": "Dreaming of Shivling? Build up in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Shivling. If it is your goal, Himachal is a good place to build the technical record it needs: Deo Tibba first, then Indrasan or Mulkila. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Shivling: questions people ask",
+ "faqs": [
+  ["How high is Shivling peak?", "6,543 m (21,467 ft) for the main north-east summit. The south-west summit is slightly lower at 6,501 m."],
+  ["Where is Mount Shivling?", "In the Gangotri group of the Garhwal Himalaya, in Uttarkashi district, Uttarakhand. It stands about 6 km south of Gaumukh, the snout of the Gangotri Glacier, above the Tapovan meadow."],
+  ["Who first climbed Shivling?", "An Indo-Tibetan Border Police team led by Hukam Singh, on 3 June 1974, by the west ridge."],
+  ["Why is Shivling called the Matterhorn of the Himalaya?", "Its steep, pointed pyramid reminded early European visitors of the Matterhorn in the Alps, and they called it the \"Matterhorn Peak\"."],
+  ["How hard is Shivling to climb?", "Very hard. Every route is technical: even the west ridge, the easiest line, has a serac barrier at about 6,100 m and steep ice below the summit. It is for experienced alpinists only."],
+  ["Can you see Shivling from Gaumukh and Tapovan?", "Yes. It is the most striking peak on the Gaumukh trek, and the Tapovan meadow lies at its foot. You need a Gangotri National Park permit, and the route is capped at 150 visitors a day."],
+  ["Is Shivling open for climbing in 2026?", "Yes. It is on the list of 83 peaks Uttarakhand opened on 4 February 2026. Indian climbers apply on the UKMPS portal; foreign teams need IMF permission."],
+  ["What is the best time to climb Shivling?", "May to June and September to October. The Uttarakhand Forest Department says the post-monsoon months are best, and Gangotri National Park closes on 30 November."],
+  ["What is the IMF fee for Shivling?", "For foreign teams it falls in the 6,501–7,000 m band: US$700 for two climbers plus US$500 for liaison-officer equipment, and per-member charges apply (as of October 2026). Indian teams pay no state fees in Uttarakhand in 2026."]
+ ],
+ "sources": [
+  ["Wikipedia — Shivling (mountain)", "https://en.wikipedia.org/wiki/Shivling_(mountain)"],
+  ["Uttarakhand Forest Department — Shivling", "https://forestonline.uk.gov.in/shivling"],
+  ["Mount Everest Foundation — 1995 Shivling west ridge report", "https://mef.org.uk/uploads/uploads/MEF-95-43.pdf"],
+  ["Himalayan Journal 40 — Shivling", "https://himalayanclub.org/hj/40/13/shivling/"],
+  ["ExplorersWeb (2024) — Climbing history of Shivling", "https://explorersweb.com/climbing-history-of-the-peaks-of-the-2024-cutting-edge-grants-part-1-shivling/"],
+  ["American Alpine Journal (2006) — Shivling north face and north-west ridge", "https://publications.americanalpineclub.org/articles/12200639300"],
+  ["ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
+  ["Outlook Traveller (2026) — Gangotri National Park reopens: dates and permits", "https://www.outlooktraveller.com/News/gangotri-national-park-reopens-for-trek-date-permits-and-what-travellers-need-to-know"],
+  ["Wikipedia — Gomukh", "https://en.wikipedia.org/wiki/Gomukh"]
+ ],
+ "sameAs": ["https://en.wikipedia.org/wiki/Shivling_(mountain)"]
+}

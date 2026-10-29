@@ -295,5 +295,15 @@
   "added": "2026-10-28",
   "peak_id": "satopanth",
   "commercial": false
+ },
+ "shivling-peak": {
+  "id": 16521,
+  "path": "/mountains-of-india/shivling-peak/",
+  "kind": "peak",
+  "label": "Shivling",
+  "blurb": "6,543 m · the 'Matterhorn of the Himalaya' above Gaumukh",
+  "added": "2026-10-29",
+  "peak_id": "shivling",
+  "commercial": false
  }
 }
