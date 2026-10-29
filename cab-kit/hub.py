@@ -60,6 +60,19 @@ def planner():
             f'</form><datalist id="szc-places">{dl}</datalist>'
             f'<p class="szc-note">Map data © OpenStreetMap contributors · road routing by OSRM · map tiles by OpenFreeMap. Distances and times are road estimates for planning; your WhatsApp quote is the final price.</p></section>')
 
+def car_helper():
+    """'Which car do I need?' helper (ENHANCEMENTS #8, 29 Oct 2026): people + big bags + road + priority (+ seniors/kids) -> class + fleet tier.
+    Logic in kit_hub.js (uses the fleet gallery data); every result ends in WhatsApp '(page: cabs car helper)'. Nothing stored."""
+    return ('<div class="szc-help" id="szc-help"><div class="szc-hhd"><span class="szc-hq">?</span><div><h3>Which car do I need?</h3>'
+            '<p class="szc-hsub">Tell us the group, the bags and the road - we suggest the car class and fleet tier, with the fare.</p></div></div>'
+            '<div class="szc-hform"><div><label for="szc-hp">People</label><input id="szc-hp" type="number" min="1" max="45" value="4"></div>'
+            '<div><label for="szc-hg">Big bags</label><input id="szc-hg" type="number" min="0" max="40" value="3"></div>'
+            '<div><label for="szc-hr">Road</label><select id="szc-hr"><option value="plain">Plains / city (Delhi, Agra, Amritsar)</option>'
+            '<option value="hill" selected>Hills (Shimla, Manali, Dharamshala, Uttarakhand)</option><option value="high">High passes (Leh, Spiti, Kashmir valleys)</option></select></div>'
+            '<div><label for="szc-hy">Priority</label><select id="szc-hy"><option value="saver">Lowest price</option><option value="standard" selected>Best value</option><option value="prime">Newest car, most comfort</option></select></div>'
+            '<div class="szc-hckw"><label class="szc-hck"><input id="szc-hs" type="checkbox"> Senior citizens or small kids with us</label></div></div>'
+            '<div class="szc-hout" id="szc-hout" aria-live="polite"></div></div>')
+
 def build():
     p = HUB
     chips = ["<b>20+</b> popular routes", "Sedan from <b>₹12/km</b>", f"<b>{len(FLEET)}</b> vehicle classes, hatchback → 45-seat coach", "Prime · Standard · Saver fleets", "Live route map", "24×7 WhatsApp"]
@@ -85,7 +98,7 @@ def build():
              f'<p class="szc-lead">Round trips and tours are billed per kilometre (minimum 250 km a day). One-way drops have fixed route fares — use the calculator.</p>{tbl}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, "cabs")}</section>')
     # fleet
-    body += f'<section class="szc-sec" id="fleet"><span class="szc-kicker">Our fleet</span><h2>Pick the right car</h2><p class="szc-lead">Every car is AC, comes with a driver who knows hill roads, and is sized honestly for people and bags.</p>{vehicle_cards("cabs", "my trip", dict(l="Delhi → Shimla", km=345, f=1.0))}</section>'
+    body += f'<section class="szc-sec" id="fleet"><span class="szc-kicker">Our fleet</span><h2>Pick the right car</h2><p class="szc-lead">Every car is AC, comes with a driver who knows hill roads, and is sized honestly for people and bags.</p>{car_helper()}{vehicle_cards("cabs", "my trip", dict(l="Delhi → Shimla", km=345, f=1.0))}</section>'
     # local taxis
     local = [("manali-taxi-service", "Manali taxi service", "Solang, Atal Tunnel–Sissu, Rohtang at union rates; drops to Chandigarh, Delhi, Leh."),
              ("shimla-taxi-service", "Shimla taxi service", "Kufri, Chail, Naldehra, Narkanda day trips; Kalka & airport transfers."),

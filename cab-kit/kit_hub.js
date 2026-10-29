@@ -239,3 +239,55 @@ var pdEl=$('szc-pd');if(pdEl){pdEl.addEventListener('change',function(){if(last)
  if(TIERS[Q.tier]){if(Q.tier!==tier){setTier(Q.tier);}}
  run();
 })();
+/* Which car do I need? (ENHANCEMENTS #8, 29 Oct 2026): people + big bags + road + priority (+ seniors/kids) -> class + tier.
+   Uses the fleet gallery data (FL/FB from the fleet block). Fares = same engine as the viewer. Ends in WhatsApp '(page: cabs car helper)'. */
+var hb=$('szc-help'),ho=$('szc-hout');
+if(hb){if(ho){if(FB){
+ var HL={saver:['hatch','sedan','ertiga','crysta','tempo','tempo17','minibus','bus35','bus45'],standard:['sedan','carens','crysta','tempo','tempo17','minibus','bus35','bus45'],prime:['hycross','urbania','minibus','bus45']};
+ var HH={saver:['crysta','tempo','tempo17'],standard:['crysta','tempo','tempo17'],prime:['fortuner','crysta','tempo17']};
+ var RDN={plain:'plains / city roads',hill:'hill roads',high:'high passes'};
+ function hcap(v){var n=parseInt(v.bags,10);return isNaN(n)?99:n;}
+ function hnum(id,lo,hi,dv){var n=parseInt($(id).value,10);if(isNaN(n)){n=dv;}if(n < lo){n=lo;}if(n > hi){n=hi;}return n;}
+ function hfare(v,k){if(v.quote){return null;}var r=FL.ref;var base=Math.max(v.min,r99(r.km*v.ow*r.f));return {ow:TIERS[k]===1?base:r99(base*TIERS[k]),km:Math.round(v.hire*TIERS[k])};}
+ function hpick(n,bg,rd,k,sn){
+  var L=(rd==='high'?HH[k]:HL[k]).slice();
+  L=L.filter(function(id){
+   if(rd!=='plain'){if(id==='hatch'){return false;}}
+   if(sn){if(id==='hatch'){return false;}if(id==='ertiga'){return false;}if(id==='carens'){return false;}if(id==='sedan'){if(n > 3){return false;}}}
+   return true;
+  });
+  var fit=L.filter(function(id){var v=FB[id];return v.seats >= n ? hcap(v) >= bg : false;});
+  if(fit.length){return fit;}
+  if(rd==='high'){return [];}
+  return FL.v.filter(function(v){return v.seats >= n ? hcap(v) >= bg : false;}).map(function(v){return v.id;});
+ }
+ function hcard(v,k,main){
+  var f=hfare(v,k);
+  var price=f?'\x3cdiv class="szc-hpr">\x3cspan>\x3cb>'+inr(f.ow)+'\x3c/b>'+FL.ref.l+' one-way\x3c/span>\x3cspan>\x3cb>₹'+f.km+'/km\x3c/b>round trip\x3c/span>\x3c/div>':'\x3cdiv class="szc-hpr">\x3cspan>\x3cb>On quote\x3c/b>per trip, all-in\x3c/span>\x3c/div>';
+  var img=v.photo?'\x3cimg src="'+v.photo+'" alt="'+v.alt+'" width="1280" height="853" loading="lazy" decoding="async">':'';
+  return '\x3cdiv class="szc-hcar'+(main?' main':'')+'">\x3cdiv class="szc-himg">'+img+'\x3c/div>\x3cdiv class="szc-hinfo">\x3cspan class="szc-tag">'+(main?'Our pick':'Also fits')+' · '+TNAME[k].split(' (')[0]+' fleet\x3c/span>\x3ch4>'+v.name+'\x3c/h4>\x3cp class="szc-hfit">'+v.seats+' seats · '+v.bags+' · AC · '+v.fuel+'\x3c/p>'+price+'\x3cbutton type="button" class="szc-hlink" data-hview="'+v.id+'">View photos and specs\x3c/button>\x3c/div>\x3c/div>';
+ }
+ var hLast='';
+ function hpaint(){
+  var n=hnum('szc-hp',1,45,4),bg=hnum('szc-hg',0,40,2),rd=$('szc-hr').value,k=$('szc-hy').value,sn=$('szc-hs').checked;
+  if(!TIERS[k]){k='standard';}
+  var hk=[n,bg,rd,k,sn,tier].join('|');if(hk===hLast){return;}hLast=hk;
+  var ids=hpick(n,bg,rd,k,sn);
+  var who=n+(n===1?' person':' people')+', '+bg+(bg===1?' big bag':' big bags')+', '+RDN[rd]+(sn?', seniors/kids':'');
+  if(!ids.length){
+   ho.innerHTML='\x3cdiv class="szc-hnone">\x3cb>No single vehicle fits '+who+'.\x3c/b> We split the group into two cars or a Tempo Traveller plus a car - tell us the plan and we send one all-in quote.\x3c/div>\x3cdiv class="szc-btns">\x3ca class="szc-btn wa" target="_blank" rel="noopener" href="'+wa('Hi Suzu Travels, which cars do we need? We are '+who+'. Date: ___ , route: ___ (page: cabs car helper)')+'">Ask on WhatsApp\x3c/a>\x3ca class="szc-btn line" href="#enquiry">Request a call back\x3c/a>\x3c/div>';
+   return;
+  }
+  var v=FB[ids[0]],alt=ids.length > 1 ? FB[ids[1]] : null;
+  var why=['Fits '+who+': '+v.seats+' seats, '+v.bags+'.','Best for: '+v.best+'.',TNAME[k]+' - '+(k==='prime'?'newest cars, about 15% above Standard.':(k==='saver'?'older, well-kept cars, about 8% below Standard.':'the fares shown on our route pages.'))];
+  if(rd==='high'){why.push('For high passes we suggest only our diesel SUVs and Tempo Travellers.');}
+  var msg='Hi Suzu Travels, which car fits us? We are '+who+'. Your helper suggests '+v.name+', '+TNAME[k].split(' (')[0]+' fleet. Date: ___ , route: ___ (page: cabs car helper)';
+  ho.innerHTML='\x3cdiv class="szc-hres">'+hcard(v,k,true)+(alt?hcard(alt,k,false):'')+'\x3c/div>\x3cul class="szc-hwhy">'+why.map(function(t){return '\x3cli>'+t+'\x3c/li>';}).join('')+'\x3c/ul>\x3cdiv class="szc-btns">\x3ca class="szc-btn wa" target="_blank" rel="noopener" href="'+wa(msg)+'">Get this car quoted on WhatsApp\x3c/a>\x3cbutton type="button" class="szc-btn line" data-hplan="'+v.id+'">Price my route in the planner\x3c/button>'+(k!==tier?'\x3cbutton type="button" class="szc-btn line" data-htier="'+k+'">Show all prices in '+TNAME[k].split(' (')[0]+'\x3c/button>':'')+'\x3c/div>\x3cp class="szc-hnote">Cars shown are representative of each class. Final car and fare are confirmed on the WhatsApp quote.\x3c/p>';
+  qa('[data-hview]',ho).forEach(function(b){b.addEventListener('click',function(){var t=g.querySelector('[data-view="'+b.getAttribute('data-hview')+'"]');if(t){t.click();}});});
+  qa('[data-hplan]',ho).forEach(function(b){b.addEventListener('click',function(){var s=$('szc-pv');if(s){s.value=b.getAttribute('data-hplan');}var pn=$('szc-pn');if(pn){pn.value=n+'';}var ps=$('planner');if(ps){ps.scrollIntoView({behavior:'smooth'});}var fb=$('szc-fb');if(fb){setTimeout(function(){try{fb.focus({preventScroll:true});}catch(e){}},600);}});});
+  qa('[data-htier]',ho).forEach(function(b){b.addEventListener('click',function(){setTier(b.getAttribute('data-htier'));hpaint();});});
+ }
+ if(TIERS[tier]){$('szc-hy').value=tier;}
+ ['szc-hp','szc-hg','szc-hr','szc-hy','szc-hs'].forEach(function(id){var el=$(id);el.addEventListener('input',hpaint);el.addEventListener('change',hpaint);});
+ hpaint();
+}}}
