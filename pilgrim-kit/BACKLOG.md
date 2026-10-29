@@ -29,7 +29,7 @@
 | 19 | live 2026-10-26 | `51-shakti-peeth` | hub | guide | 51 shakti peeth (27,100) | devi | Lists differ (4/18/51/52/108); India-only map |
 | 20 | live 2026-10-27 | `rameshwaram` | 12-JL | temple | rameshwaram temple (246,000) | gopuram | 22 theerthams |
 | 21 | live 2026-10-28 | `bhimashankar` | 12-JL | temple | bhimashankar jyotirlinga (165,000) | nagara | Closed Jan–Jun 2026; Dakini dispute |
-| 22 | media | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
+| 22 | live 2026-10-29 | `trimbakeshwar` | 12-JL | temple | trimbakeshwar temple (90,500) | nagara | Simhastha 2027 |
 | 23 | media | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
 | 24 | media | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500; nageshwar temple 33,100) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
 | 25 | media | `grishneshwar` | 12-JL | temple | grishneshwar jyotirlinga (90,500; grishneshwar temple 49,500) | hills | Ellora next door. Works since Sep 2026 — closure status in fact pack |
