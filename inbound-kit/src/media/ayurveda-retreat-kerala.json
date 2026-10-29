@@ -1,0 +1,58 @@
+{
+ "_note": "Media for /india-tours/ayurveda-retreat-kerala/ (guide). Library photos only (hf/photos/CREDITS.md, Kerala set added 18 Oct 2026); captions are generic, place names only where CREDITS allows ('Kerala backwaters' for px-5374231). Poster = backwaters. No route/cost this run (no stops; on-request page).",
+ "hero": {
+  "kicker": "KERALA · AYURVEDA",
+  "scenes": [
+   {
+    "img": "px-5374231.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-1065753.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 1320
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-32054122.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 560
+    },
+    "to": {
+     "y": 160
+    }
+   },
+   {
+    "img": "px-30121290.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   }
+  ],
+  "steps": [
+   "AYURVEDA, KERALA",
+   "CHOOSE WITH CARE",
+   "DOCTOR FIRST",
+   "WE PLAN THE ROAD"
+  ]
+ }
+}
