@@ -1,0 +1,113 @@
+{
+ "hero": {
+  "kicker": "SIKKIM · KANGCHENJUNGA HIMAL",
+  "words": [
+   [
+    "8,586 M.",
+    "WORLD NO. 3."
+   ],
+   [
+    "19 PEAKS,",
+    "ONE TABLE."
+   ],
+   [
+    "SACRED.",
+    "LEFT ALONE."
+   ],
+   [
+    "CLIMB IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-30701907.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   }
+  ],
+  "size": 110
+ },
+ "ladder": {
+  "kicker": "SIKKIM'S HIGH PEAKS",
+  "title": "Sikkim's summits, side by side",
+  "peaks": [
+   "frey-peak",
+   "tinchenkhang",
+   "siniolchu",
+   "pauhunri",
+   "kabru-north",
+   "jongsong-peak",
+   "kangchenjunga"
+  ],
+  "subs": {
+   "frey-peak": "Open, HMI training",
+   "tinchenkhang": "Open since 2005–07",
+   "siniolchu": "Freshfield's favourite",
+   "pauhunri": "Kellas, 1911",
+   "kabru-north": "Southernmost 7,000er",
+   "jongsong-peak": "1930 record",
+   "kangchenjunga": "Sacred, closed"
+  },
+  "end": "Sikkim: 10 peaks above 7,000 m"
+ }
+}
