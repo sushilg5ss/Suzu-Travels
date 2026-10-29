@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "dawn",
+  "deva": "श्री जगन्नाथ पुरी",
+  "kicker": "Char Dham · Puri, Odisha",
+  "beats": [
+   "A sacred log drifts to shore",
+   "The carver vanishes, images unfinished",
+   "Three chariots roll down Bada Danda",
+   "Mahaprasad shared by every devotee"
+  ]
+ },
+ "story": {
+  "title": "The legend of Jagannath",
+  "beats": [
+   {"arch": "nagara", "sky": "night", "line": "King Indradyumna's dream of the Lord"},
+   {"arch": "ghats", "sky": "dawn", "line": "A sacred log drifts to Puri's shore"},
+   {"arch": "pillar", "line": "Behind closed doors, a divine carver"},
+   {"arch": "nagara", "sky": "saffron", "line": "Jagannath rides out each Ashadha"}
+  ]
+ }
+}
