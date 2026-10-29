@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.2; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.7) 0%, rgba(11,31,51,0.9) 60%, #0b1f33 100%); }
+      .kick { position: absolute; left: 110px; top: 66px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 108px; width: 1100px; font-weight: 800; font-size: 66px; white-space: nowrap; letter-spacing: -0.02em; }
+      svg.map { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .tw { position: absolute; width: 260px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); white-space: nowrap; }
+      .th { position: absolute; width: 300px; font-weight: 800; font-size: 30px; color: #fff; white-space: nowrap; }
+      .pk { position: absolute; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .pk span { display: block; font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.8); }
+      .ctr { position: absolute; width: 420px; }
+      .cv { font-weight: 800; font-size: 64px; color: #d4a24c; letter-spacing: -0.02em; white-space: nowrap; }
+      .cl { font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.88); white-space: nowrap; }
+      .cal { position: absolute; left: 110px; top: 830px; width: 1700px; height: 70px; }
+      .m { position: absolute; top: 0; width: 132px; height: 60px; border-radius: 12px; text-align: center; line-height: 60px; font-weight: 800; font-size: 28px; }
+      .mo { background: #d4a24c; color: #0b1f33; }
+      .mc { background: rgba(214,72,72,0.28); color: #ffb3b3; border: 2px solid rgba(230,90,90,0.75); }
+      .mp { background: linear-gradient(90deg, rgba(214,72,72,0.3) 0%, rgba(214,72,72,0.3) 50%, rgba(212,162,76,0.4) 50%); color: #ffd9a8; border: 2px solid rgba(230,150,90,0.7); }
+      .ms { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.75); border: 2px solid rgba(255,255,255,0.18); }
+      .band { position: absolute; top: 790px; height: 30px; line-height: 30px; font-weight: 800; font-size: 22px; letter-spacing: 0.08em; color: #ffb3b3; white-space: nowrap; }
+      .calk { position: absolute; left: 110px; top: 912px; width: 1700px; font-weight: 500; font-size: 25px; color: rgba(255,255,255,0.88); white-space: nowrap; }
+      .foot { position: absolute; left: 110px; top: 976px; width: 1700px; height: 60px; font-weight: 800; font-size: 30px; }
+      .chip { position: absolute; top: 0; height: 58px; line-height: 54px; padding: 0 26px; border-radius: 30px; border: 2px solid rgba(255,255,255,0.5); white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">CHURDHAR TREK · SIRMAUR</div>
+        <div class="title" id="title">Two ways up to 3,647 m</div>
+        <svg class="map" viewBox="0 0 1920 1080">
+          <path id="roadL" d="M 200 700 L 420 640 L 600 590 L 760 540" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-dasharray="3 14" stroke-linecap="round" />
+          <path id="roadR" d="M 1720 700 L 1520 650 L 1330 600 L 1160 540" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-dasharray="3 14" stroke-linecap="round" />
+          <path d="M 760 540 C 800 460, 860 380, 960 300" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="14" stroke-linecap="round" />
+          <path d="M 1160 540 C 1090 450, 1020 380, 960 300" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="14" stroke-linecap="round" />
+          <path id="trekL" d="M 760 540 C 800 460, 860 380, 960 300" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+          <path id="trekR" d="M 1160 540 C 1090 450, 1020 380, 960 300" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+          <g id="townsL" fill="#fff"><circle cx="200" cy="700" r="9" /><circle cx="420" cy="640" r="8" /><circle cx="600" cy="590" r="8" /></g>
+          <g id="townsR" fill="#fff"><circle cx="1720" cy="700" r="9" /><circle cx="1520" cy="650" r="8" /><circle cx="1330" cy="600" r="8" /></g>
+          <circle id="headL" cx="760" cy="540" r="12" fill="#fff" />
+          <circle id="headR" cx="1160" cy="540" r="12" fill="#fff" />
+          <g id="peak"><path d="M 900 330 L 960 270 L 1020 330 Z" fill="rgba(255,255,255,0.9)" /><line x1="960" y1="270" x2="960" y2="222" stroke="#fff" stroke-width="4" /><path d="M 960 222 L 998 234 L 960 246 Z" fill="#d4a24c" /></g>
+          <circle id="dotL" cx="760" cy="540" r="14" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <circle id="dotR" cx="1160" cy="540" r="14" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+        </svg>
+        <div id="lblL">
+          <div class="tw" style="left:130px;top:718px">Chandigarh</div>
+          <div class="tw" style="left:385px;top:658px">Solan</div>
+          <div class="tw" style="left:560px;top:608px">Rajgarh</div>
+          <div class="th" style="left:440px;top:488px;text-align:right">Nohradhar</div>
+        </div>
+        <div id="lblR">
+          <div class="tw" style="left:1665px;top:718px">Shimla</div>
+          <div class="tw" style="left:1480px;top:668px">Theog</div>
+          <div class="tw" style="left:1280px;top:618px">Chaupal</div>
+          <div class="th" style="left:1185px;top:488px">Sarain</div>
+        </div>
+        <div class="pk" id="pk" style="left:1010px;top:206px">Churdhar 3,647 m<span>temple just below the top</span></div>
+        <div class="ctr" id="cL" style="left:110px;top:300px"><div class="cv" id="kmL">0 km</div><div class="cl">Nohradhar route, one way</div><div class="cl" id="dL" style="color:#d4a24c;font-weight:800">usually 2 days</div></div>
+        <div class="ctr" id="cR" style="left:1390px;top:300px;text-align:right"><div class="cv" id="kmR">0 km</div><div class="cl">Sarain route, one way</div><div class="cl" id="dR" style="color:#d4a24c;font-weight:800">fit walkers: one long day</div></div>
+        <div class="band" id="band" style="left:110px">CLOSED ~1 DEC → BAISAKHI</div>
+        <div class="cal" id="cal">
+          <div class="m mc" style="left:0">Jan</div><div class="m mc" style="left:142px">Feb</div><div class="m mc" style="left:284px">Mar</div><div class="m mp" style="left:426px">Apr</div><div class="m mo" style="left:568px">May</div>
+          <div class="m mo" style="left:710px">Jun</div><div class="m ms" style="left:852px">Jul</div><div class="m ms" style="left:994px">Aug</div><div class="m mo" style="left:1136px">Sep</div>
+          <div class="m mo" style="left:1278px">Oct</div><div class="m mo" style="left:1420px">Nov</div><div class="m mc" style="left:1562px">Dec</div>
+        </div>
+        <div class="calk" id="calk">Best May–Jun and Sep–Nov · Jul–Aug mud, leeches, slides · closed for winter, reopens on Baisakhi (mid-April)</div>
+        <div class="foot" id="foot">
+          <div class="chip" style="left:0">Schematic map, not to scale</div>
+          <div class="chip" style="left:500px;border-color:#d4a24c;color:#d4a24c">Get Quote · hotel + cab added</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.fromTo(["#peak", "#pk"], { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power2.out" }, 0.5);
+      tl.fromTo(["#roadL", "#townsL", "#lblL"], { opacity: 0 }, { opacity: 1, duration: 0.6, stagger: 0.15 }, 0.9);
+      tl.fromTo(["#headL", "#cL"], { opacity: 0 }, { opacity: 1, duration: 0.4 }, 1.3);
+      tl.fromTo(["#roadR", "#townsR", "#lblR"], { opacity: 0 }, { opacity: 1, duration: 0.6, stagger: 0.15 }, 1.2);
+      tl.fromTo(["#headR", "#cR"], { opacity: 0 }, { opacity: 1, duration: 0.4 }, 1.6);
+      function prep(id) { const p = document.getElementById(id); const L = p.getTotalLength(); p.style.strokeDasharray = L + " " + L; return [p, L]; }
+      const [tL, LL] = prep("trekL"); const [tR, LR] = prep("trekR");
+      const dotL = document.getElementById("dotL"), dotR = document.getElementById("dotR");
+      const kmL = document.getElementById("kmL"), kmR = document.getElementById("kmR");
+      const sL = { p: 0 }, sR = { p: 0 };
+      function pl() {
+        tL.style.strokeDashoffset = (LL - LL * sL.p).toFixed(2);
+        const a = tL.getPointAtLength(Math.max(0.01, LL * sL.p)); dotL.setAttribute("cx", a.x.toFixed(2)); dotL.setAttribute("cy", a.y.toFixed(2));
+        kmL.textContent = sL.p >= 0.999 ? "~14–18 km" : sL.p < 0.02 ? "0 km" : "~" + Math.round(16 * sL.p) + " km";
+        tR.style.strokeDashoffset = (LR - LR * sR.p).toFixed(2);
+        const b = tR.getPointAtLength(Math.max(0.01, LR * sR.p)); dotR.setAttribute("cx", b.x.toFixed(2)); dotR.setAttribute("cy", b.y.toFixed(2));
+        kmR.textContent = sR.p >= 0.999 ? "~7–10 km" : sR.p < 0.02 ? "0 km" : "~" + Math.round(8.5 * sR.p) + " km";
+      }
+      tl.to(sL, { p: 1, duration: 4.2, ease: "sine.inOut", onUpdate: pl }, 2.0);
+      tl.to(sR, { p: 1, duration: 2.4, ease: "sine.inOut", onUpdate: pl }, 2.0);
+      tl.fromTo("#dR", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 4.5);
+      tl.fromTo("#dL", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 6.3);
+      tl.fromTo("#cal .m", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.05, ease: "power2.out" }, 6.8);
+      tl.fromTo("#band", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 7.6);
+      tl.fromTo("#calk", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 8.0);
+      tl.fromTo("#foot .chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 8.6);
+      pl();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
