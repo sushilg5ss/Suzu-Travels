@@ -1,5 +1,5 @@
 {
- "_note": "Media for /india-tours/ayurveda-retreat-kerala/ (guide). Library photos only (hf/photos/CREDITS.md, Kerala set added 18 Oct 2026); captions are generic, place names only where CREDITS allows ('Kerala backwaters' for px-5374231). Poster = backwaters. No route/cost this run (no stops; on-request page).",
+ "_note": "Media for /india-tours/ayurveda-retreat-kerala/ (guide). Library photos only (hf/photos/CREDITS.md, Kerala set added 18 Oct 2026); captions are generic, place names only where CREDITS allows ('Kerala backwaters' for px-5374231). Poster = backwaters. No route/cost this run (no stops; on-request page). Cost ladder added 29 Oct 2026 by Visual Studio (Step 1.3), words only — Kerala is 'on request' in Prices — mirroring the page's 'How we arrange the rest of your trip' cards; no centre names.",
  "hero": {
   "kicker": "KERALA · AYURVEDA",
   "scenes": [
@@ -54,5 +54,38 @@
    "DOCTOR FIRST",
    "WE PLAN THE ROAD"
   ]
+ },
+ "cost": {
+  "kicker": "AYURVEDA · WHAT WE ARRANGE",
+  "title": "Around your Ayurveda stay",
+  "items": [
+   {
+    "label": "Airport to your centre",
+    "sub": "Kochi, Thiruvananthapuram or Kozhikode airport"
+   },
+   {
+    "label": "Private car + driver",
+    "sub": "name, photo and car number before the trip"
+   },
+   {
+    "label": "Hotels before and after",
+    "sub": "backwaters, Fort Kochi or the tea hills"
+   },
+   {
+    "label": "One plan, one contact",
+    "sub": "our team in Himachal plans the whole trip"
+   },
+   {
+    "label": "Treatment fees",
+    "sub": "paid to the centre you choose",
+    "tag": "your own"
+   },
+   {
+    "label": "Flights, visa and tips",
+    "sub": "e-Visa only at indianvisaonline.gov.in",
+    "tag": "your own"
+   }
+  ],
+  "end": "Quoted on request · day-by-day plan + US$ total before you pay"
  }
 }
