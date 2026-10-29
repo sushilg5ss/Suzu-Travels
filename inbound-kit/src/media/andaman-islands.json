@@ -1,0 +1,66 @@
+{
+ "_note": "Media for /india-tours/andaman-islands/ (guide). Made by the Page Builder (night) 30 Oct 2026 (Visual Studio Step 2): 3 new Pexels photos (CREDITS.md). Poster = Neil Island aerial (the page's subject). Generic beach caption — the beach is not named on Pexels. No route/cost this run (no sourced coordinates; prices on request).",
+ "hero": {
+  "kicker": "ANDAMAN ISLANDS",
+  "scenes": [
+   {
+    "img": "px-14313849.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-29175703.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.05,
+     "x": -30,
+     "y": 10
+    },
+    "to": {
+     "scale": 1.12,
+     "x": 40,
+     "y": -10
+    }
+   },
+   {
+    "img": "px-19756138.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 560
+    }
+   },
+   {
+    "img": "px-14313849.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.14,
+     "x": -60,
+     "y": 40
+    },
+    "to": {
+     "scale": 1.06,
+     "x": 20,
+     "y": 0
+    }
+   }
+  ],
+  "steps": [
+   "ANDAMAN ISLANDS",
+   "WHITE SAND BEACHES",
+   "CELLULAR JAIL",
+   "REEFS & DIVING"
+  ]
+ }
+}
