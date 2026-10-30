@@ -1,0 +1,190 @@
+{
+ "pulled": "2026-10-30",
+ "customer": "1172710099",
+ "language": "1000 (English)",
+ "source": "Google Ads Keyword Planner via Pipeboard get_google_ads_keyword_ideas (ww/IN/intl) + get_google_ads_keyword_historical_metrics (IN/intl, hardest set); 12 months Oct 2025-Sep 2026; banded volumes. Columns: [worldwide, India, US+GB+AU+IL+DE+FR]",
+ "menthosa": {
+  "menthosa": [
+   210,
+   110,
+   30
+  ],
+  "menthosa peak": [
+   140,
+   140,
+   10
+  ],
+  "menthosa expedition": [
+   null,
+   null,
+   null
+  ],
+  "menthosa height": [
+   null,
+   null,
+   null
+  ],
+  "menthosa base camp": [
+   null,
+   null,
+   null
+  ],
+  "miyar valley": [
+   4400,
+   4400,
+   70
+  ],
+  "miyar valley trek": [
+   3600,
+   3600,
+   40
+  ],
+  "udaipur lahaul spiti": [
+   1900,
+   1900,
+   20
+  ],
+  "udaipur lahaul": [
+   170,
+   null,
+   null
+  ],
+  "pangi valley": [
+   6600,
+   6600,
+   320
+  ],
+  "_note": "'menthosa peak' India spiked Aug 2026 (590) and Sep (260). Miyar valley demand is trek/travel intent (Adventure squad lane) \u2014 use as context wording only."
+ },
+ "manirang": {
+  "manirang": [
+   170,
+   110,
+   10
+  ],
+  "manirang peak": [
+   210,
+   170,
+   10
+  ],
+  "manirang pass": [
+   210,
+   210,
+   10
+  ],
+  "manirang expedition": [
+   20,
+   20,
+   10
+  ],
+  "manirang pass trek": [
+   10,
+   null,
+   null
+  ],
+  "manirang height": [
+   null,
+   null,
+   null
+  ],
+  "mane village spiti": [
+   260,
+   260,
+   10
+  ],
+  "highest peak in spiti": [
+   10,
+   null,
+   null
+  ],
+  "_note": "'manirang peak' India rising: Aug 2026 480, Sep 390. 'manirang pass' is the trek (shared page section, not a separate page)."
+ },
+ "hardest-peaks-in-india": {
+  "toughest mountain to climb in india": [
+   50,
+   40,
+   10
+  ],
+  "most dangerous mountain in india": [
+   50,
+   50,
+   10
+  ],
+  "most difficult mountain to climb in india": [
+   30,
+   30,
+   10
+  ],
+  "hardest mountains to climb in india": [
+   null,
+   null,
+   null
+  ],
+  "hardest peaks in india": [
+   null,
+   null,
+   null
+  ],
+  "difficult peaks in india": [
+   null,
+   null,
+   null
+  ],
+  "hardest mountain to climb": [
+   9900,
+   1300,
+   5400
+  ],
+  "most difficult mountain to climb": [
+   9900,
+   null,
+   null
+  ],
+  "hardest mountain to climb in the world": [
+   2900,
+   null,
+   null
+  ],
+  "top 10 hardest mountains to climb": [
+   140,
+   10,
+   90
+  ],
+  "most difficult trek in india": [
+   2400,
+   2400,
+   20
+  ],
+  "hardest trek in india": [
+   720,
+   720,
+   10
+  ],
+  "meru peak": [
+   2400,
+   390,
+   1000
+  ],
+  "changabang": [
+   1000,
+   170,
+   590
+  ],
+  "thalay sagar": [
+   320,
+   170,
+   70
+  ],
+  "climb mt meru": [
+   720,
+   null,
+   260
+  ],
+  "mount meru height": [
+   320,
+   null,
+   110
+  ],
+  "_note": "'meru peak'/'mount meru' volumes mix Mount Meru (Tanzania) \u2014 treat as an upper bound. 'hardest mountain to climb' = world SERP (K2/Annapurna/Eiger), H2/FAQ only. 'most difficult/hardest trek in india' = trek intent (Adventure squad lane), one linked FAQ at most."
+ }
+}

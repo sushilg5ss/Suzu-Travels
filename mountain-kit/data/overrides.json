@@ -225,5 +225,41 @@
  },
  "Sickle Moon": {
   "notable": "Highest summit of the Kishtwar Himalaya (also called Bharanzar); first climbed in 1975 by an Indian Army HAWS team."
+ },
+ "Menthosa": {
+  "range": "Great Himalaya (Lahaul)",
+  "district_or_area": "Lahaul (Miyar valley)",
+  "first_ascent_year": 1970,
+  "first_ascent_by": "British services team led by Capt S. Bembrose (summit: Lt S. Rae RM & Capt R. Cape)",
+  "difficulty_note": "Glaciated; Alpine AD — 40–55° snow and ice on the ENE ridge, crevassed flank",
+  "best_season": "Jun–Sep",
+  "notable": "Second-highest peak of Lahaul after Mulkila; normal route from Urgos over the Urgos pass and the east-northeast ridge.",
+  "sources": [
+   "https://www.summitpost.org/menthosa/718848",
+   "https://www.himalayanclub.org/hj/43/15/menthosa-almost/",
+   "https://publications.americanalpineclub.org/articles/13201215421",
+   "https://indiannavy.nic.in/node/21146",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ },
+ "Manirang": {
+  "first_ascent_by": "Dr J. de V. Graaff, Clare Graaff, Pasang Dawa Lama & Tashi Sherpa (12 Sep 1952)",
+  "notable": "An Ultra (prominence 1,727 m) on the Spiti–Kinnaur border; the Manirang Pass (5,550 m) below it was an old Spiti–Kinnaur trade route.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Manirang",
+   "https://himalayanclub.org/hj/51/11/manirang-a-mountain-of-surprises/",
+   "https://www.alpinejournal.org.uk/Contents/Contents_1995_files/AJ%201995%2065-70%20Nunn%20Manirang.pdf",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ },
+ "Thalay Sagar": {
+  "notable": "Steep on all sides; a band of rotten shale guards the summit. The direct Australian Route through it was awarded the Piolet d'Or in 1999.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thalay_Sagar",
+   "https://en.wikipedia.org/wiki/Gangotri_Group"
+  ]
+ },
+ "Meru Central (Shark's Fin)": {
+  "notable": "First summited by Valery Babanov in 2001; the Shark's Fin line was first climbed in October 2011 by Conrad Anker, Jimmy Chin and Renan Ozturk (the 2015 film 'Meru')."
  }
 }

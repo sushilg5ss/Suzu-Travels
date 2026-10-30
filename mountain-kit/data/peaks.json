@@ -1761,7 +1761,7 @@
   "base": "Gangotri → Kedar Tal",
   "foreigners": "yes",
   "rank": 40,
-  "notable": "Several routes have won the Piolet d'Or.",
+  "notable": "Steep on all sides; a band of rotten shale guards the summit. The direct Australian Route through it was awarded the Piolet d'Or in 1999.",
   "sources": [
    "https://en.wikipedia.org/wiki/Thalay_Sagar",
    "https://en.wikipedia.org/wiki/Gangotri_Group"
@@ -2632,7 +2632,7 @@
   "range": "Great Himalaya",
   "area": "Kinnaur / Spiti",
   "fa": 1952,
-  "fa_by": "Dr J. de V. Graaff and party",
+  "fa_by": "Dr J. de V. Graaff, Clare Graaff, Pasang Dawa Lama & Tashi Sherpa (12 Sep 1952)",
   "status": "climbed",
   "status_note": "",
   "grade": "moderate",
@@ -2641,9 +2641,11 @@
   "base": "Mane (Spiti) / Ropa (Kinnaur)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "An Ultra (prominence 1,727 m) on the Spiti–Kinnaur border; the Manirang Pass (5,550 m) below it was an old Spiti–Kinnaur trade route.",
   "sources": [
    "https://en.wikipedia.org/wiki/Manirang",
+   "https://himalayanclub.org/hj/51/11/manirang-a-mountain-of-surprises/",
+   "https://www.alpinejournal.org.uk/Contents/Contents_1995_files/AJ%201995%2065-70%20Nunn%20Manirang.pdf",
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
   ]
  },
@@ -3006,20 +3008,24 @@
   "state": "himachal-pradesh",
   "state_label": "Himachal Pradesh",
   "where": "Himachal Pradesh",
-  "range": "Great Himalaya (Pangi/Lahaul)",
-  "area": "Lahaul (Miyar valley) / Chamba",
-  "fa": null,
-  "fa_by": "",
+  "range": "Great Himalaya (Lahaul)",
+  "area": "Lahaul (Miyar valley)",
+  "fa": 1970,
+  "fa_by": "British services team led by Capt S. Bembrose (summit: Lt S. Rae RM & Capt R. Cape)",
   "status": "climbed",
   "status_note": "",
   "grade": "moderate",
-  "grade_note": "Glaciated expedition peak",
+  "grade_note": "Glaciated; Alpine AD — 40–55° snow and ice on the ENE ridge, crevassed flank",
   "season": "Jun–Sep",
   "base": "Udaipur (Lahaul) → Urgos",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Highest peak in the Pangi/Chamba area.",
+  "notable": "Second-highest peak of Lahaul after Mulkila; normal route from Urgos over the Urgos pass and the east-northeast ridge.",
   "sources": [
+   "https://www.summitpost.org/menthosa/718848",
+   "https://www.himalayanclub.org/hj/43/15/menthosa-almost/",
+   "https://publications.americanalpineclub.org/articles/13201215421",
+   "https://indiannavy.nic.in/node/21146",
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
   ]
  },
@@ -3280,7 +3286,7 @@
   "base": "Gangotri → Tapovan",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Subject of the 2015 film 'Meru'.",
+  "notable": "First summited by Valery Babanov in 2001; the Shark's Fin line was first climbed in October 2011 by Conrad Anker, Jimmy Chin and Renan Ozturk (the 2015 film 'Meru').",
   "sources": [
    "https://en.wikipedia.org/wiki/Meru_Peak",
    "https://publications.americanalpineclub.org/articles/12201204000/The-Sharks-Fin-Redux-Success-at-Last-on-Meru-Centrals-Spectacular-Sharks-Fin-India"
