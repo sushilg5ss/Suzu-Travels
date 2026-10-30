@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "gopuram",
+  "sky": "dusk",
+  "deva": "तिरुमला तिरुपति बालाजी",
+  "kicker": "Sri Venkateswara · Tirumala Hills",
+  "beats": [
+   "Lakshmi leaves Vaikuntha in sorrow",
+   "Vishnu waits on the seven hills",
+   "A wedding loan from Kubera",
+   "Pilgrims climb, offering their hair"
+  ]
+ },
+ "story": {
+  "title": "The legend of Tirupati Balaji",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Sage Bhrigu tests the gods"},
+   {"arch": "gopuram", "sky": "dawn", "line": "Srinivasa settles on the seven hills"},
+   {"arch": "ghats", "sky": "saffron", "line": "A wedding with Princess Padmavati"},
+   {"arch": "gopuram", "sky": "dusk", "line": "Devotees repay with offerings"}
+  ]
+ }
+}
