@@ -290,6 +290,19 @@ _HUB_ANCHOR = "io.observe(mapBox);}catch(e){}\n"
 assert JS.count(_HUB_ANCHOR) == 1, "kit_hub.js anchor not found in kit.js"
 HUB_JS = JS.replace(_HUB_ANCHOR, _HUB_ANCHOR + js_safe(re.sub(r"/\*.*?\*/", "", (ROOT / "kit_hub.js").read_text(), flags=re.S)))
 HUB_CSS = (ROOT / "kit_hub.css").read_text()
+HUB_JS = HUB_JS.replace("__SEATMAP_BASE__", MEDIA.get("seatmaps", {}).get("base", ""))
+# 30 Oct 2026 hub size budget: hub-only JS tighten - drop /* */ section comments and the indentation/line-join space after
+# a line ending in ; { } or , (line boundaries are never inside a string literal in the kit's ES5 code). Children unchanged.
+def _tight(js):
+    js = re.sub(r"/\*.*?\*/", "", js, flags=re.S)
+    out = ""
+    for ln in js.split("\n"):
+        ln = ln.strip()
+        if not ln:
+            continue
+        out += ln if (not out or out[-1] in ";{},") else "\n" + ln
+    return out
+# HUB_JS = _tight(HUB_JS)  # not applied yet: rewrites the whole script (61 diff ops) — use at the next full hub rewrite
 
 def wrap(body, p, faqs, area, js=None):
     return f'<div class="szc" data-szc="{p["slug"]}" data-tier="standard">{body}{modal_block()}{jsonld(p, faqs, area)}<script>{js or JS}</script></div>'
@@ -386,6 +399,43 @@ def build_vehicle(p):
     body += faq_block(p["faqs"])
     return wrap(body, p, p["faqs"], p.get("area") or ["Delhi", "Chandigarh", "Himachal Pradesh", "Uttarakhand"])
 
+def _css_rules(css):
+    """Split minified CSS into (selector, body, is_at_rule) at top level."""
+    i, out = 0, []
+    while i < len(css):
+        j = css.find("{", i)
+        if j < 0:
+            break
+        sel = css[i:j]
+        if sel.startswith("@"):
+            depth, k = 1, j + 1
+            while depth:
+                depth += {"{": 1, "}": -1}.get(css[k], 0)
+                k += 1
+            out.append((sel, css[j + 1:k - 1], True)); i = k
+        else:
+            k = css.find("}", j); out.append((sel, css[j + 1:k], False)); i = k + 1
+    return out
+
+def prune_css(css, used):
+    """30 Oct 2026 (hub size budget, hub only): drop rules whose every selector needs a .szc-* class that appears nowhere
+    in the page markup or script (route/city-page-only components such as .szc-stops, .szc-answer). Substring test = conservative."""
+    def dead(sel):
+        for s in sel.split(","):
+            cls = re.findall(r"\.(szc-[\w-]+)", s)
+            if not cls or all(c in used for c in cls):
+                return False
+        return True
+    out = ""
+    for sel, body, at in _css_rules(css):
+        if at:
+            inner = "".join(f"{s2}{{{b2}}}" for s2, b2, _ in _css_rules(body) if not dead(s2))
+            if inner or not sel.startswith("@media"):
+                out += f"{sel}{{{inner if sel.startswith('@media') else body}}}"
+        elif not dead(sel):
+            out += f"{sel}{{{body}}}"
+    return out
+
 def finish(slug, h, css_extra=""):
     h = re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
     problems = re.findall(r"\{\{.*?\}\}|TODO|XXX", h)
@@ -399,6 +449,9 @@ def finish(slug, h, css_extra=""):
         sys.exit(f"BUILD REFUSED {slug}: literal '>' inside an attribute value (wptexturize breaks the closing quote) — use &gt;")
     if slug == "cabs":  # 28 Oct 2026 hub size budget: '"' needs no escaping inside the single-quoted data-cfg/fleet/plan JSON (saves ~11 KB)
         m = re.sub(r"data-(cfg|fleet|plan)='[^']*'", lambda x: x.group(0).replace("&quot;", '"'), m)
+    if slug == "cabs":
+        st = m.split("<style>", 1)[1].split("</style>", 1)[0]
+        m = m.replace(f"<style>{st}</style>", f"<style>{prune_css(st, m.replace(st, ''))}</style>", 1)
     kitjs = m.rsplit("<script>", 1)[-1].split("</script>")[0]
     if re.search(r"<(/|p\b|div\b|table\b|img\b|ul\b|ol\b|li\b|span\b|br\b|svg\b|button\b|details\b|summary\b|small\b|b\b|a\b|h[1-6]\b|t[rdh]\b|thead\b|tbody\b|circle\b|path\b)", kitjs):
         sys.exit(f"BUILD REFUSED {slug}: HTML tag inside kit script (wpautop would inject <p>) — use \\x3c")

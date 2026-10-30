@@ -742,5 +742,9 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "seatmaps": {
+  "base": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@1aa64979c701f653500a35cb8589d44e8dc7b594/cab-kit/media/seatmaps/",
+  "note": "original top-view layouts by seatmap_svg.py (Suzu/Claude, 30 Oct 2026) - typical for the class"
  }
 }

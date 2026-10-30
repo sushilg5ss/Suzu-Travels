@@ -290,4 +290,19 @@ if(hb){if(ho){if(FB){
  if(TIERS[tier]){$('szc-hy').value=tier;}
  ['szc-hp','szc-hg','szc-hr','szc-hy','szc-hs'].forEach(function(id){var el=$(id);el.addEventListener('input',hpaint);el.addEventListener('change',hpaint);});
  hpaint();
-}}}
+}}
+/* Seat + luggage layout in the car viewer (ENHANCEMENTS #9, 30 Oct 2026): original SVGs from seatmap_svg.py on jsDelivr; added after kit.js fills the viewer. */
+var SMB='__SEATMAP_BASE__';
+var SMX=M?M.querySelector('.szc-mbody'):null;
+if(SMX){
+ new MutationObserver(function(){
+  var t=SMX.querySelector('#szc-mt');if(!t){return;}
+  if(SMX.querySelector('.szc-seat')){return;}
+  var v=null;Object.keys(FB).forEach(function(k){if(FB[k].name===t.textContent){v=FB[k];}});
+  if(!v){return;}
+  var f=document.createElement('figure');f.className='szc-seat';
+  f.innerHTML='\x3cimg src="'+SMB+v.id+'.svg" alt="Top view seat and luggage layout of a '+v.name+'" decoding="async">\x3cfigcaption>Seats and bags: '+v.seats+' passengers + driver, '+v.bags+'. Typical layout for the class - the exact car can differ.\x3c/figcaption>';
+  var b=SMX.querySelector('.szc-mbest');if(b){b.parentNode.insertBefore(f,b.nextSibling);}
+ }).observe(SMX,{childList:true});
+}
+}
