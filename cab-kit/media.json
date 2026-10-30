@@ -733,5 +733,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "jammu-to-katra-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@153a7fb6aafe2f3b849e2f30162ac1fc6fa8c56c/cab-kit/media/jammu-to-katra-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@153a7fb6aafe2f3b849e2f30162ac1fc6fa8c56c/cab-kit/media/jammu-to-katra-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@153a7fb6aafe2f3b849e2f30162ac1fc6fa8c56c/cab-kit/media/jammu-to-katra-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
