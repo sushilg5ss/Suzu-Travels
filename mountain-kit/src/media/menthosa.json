@@ -1,0 +1,25 @@
+{
+ "hero": {
+  "kicker": "MENTHOSA · LAHAUL",
+  "scenes": [
+   {"img": "px-17613105.jpg", "kind": "tilt", "h": 2880, "t": [0, 4.0], "from": {"y": 300}, "to": {"y": 820}},
+   {"img": "px-10254837.jpg", "kind": "land", "h": 1408, "t": [3.4, 7.6], "from": {"scale": 1.02, "x": 40}, "to": {"scale": 1.1, "x": -20, "y": 20}},
+   {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "t": [7.0, 10.8], "from": {"scale": 1.02, "x": 30}, "to": {"scale": 1.1, "x": -40, "y": 30}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [10.2, 14.0], "from": {"scale": 1.02, "x": 60, "y": 30}, "to": {"scale": 1.12, "x": -20, "y": 70}}
+  ],
+  "steps": [[2650, "UDAIPUR"], [3250, "URGOS"], [4400, "BASE CAMP"], [5100, "URGOS PASS"], [6000, "HIGH CAMP"], [6443, "SUMMIT"]]
+ },
+ "profile": {
+  "title": "Menthosa, camp by camp",
+  "sub": "Udaipur to the 6,443 m summit · camp heights are approximate",
+  "camps": [
+   {"name": "Udaipur", "m": 2650, "day": "Old road-head"},
+   {"name": "Urgos", "m": 3250, "day": "Jeep road-head"},
+   {"name": "Base camp", "m": 4400, "day": "Urgos nala"},
+   {"name": "Urgos pass", "m": 5100, "day": "Camp 1"},
+   {"name": "Camp 2", "m": 5650, "day": "NE flank"},
+   {"name": "High camp", "m": 6000, "day": "Below the ridge"},
+   {"name": "Summit", "m": 6443, "day": "East ridge"}
+  ]
+ }
+}
