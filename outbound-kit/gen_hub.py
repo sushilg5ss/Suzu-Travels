@@ -281,6 +281,61 @@ def months():
             mth = 1; y += 1
     return ''.join(opts)
 
+# Season planner (30 Oct 2026). Months come ONLY from the "Best season" fact on each live country page
+# (.hx pages: pages/gen_*.py facts; .sx pages: live fact box, read 30 Oct 2026). Vietnam ("varies by region") is not
+# placed in any month; Singapore ("year-round; Feb–Apr driest") shows Feb–Apr. Snow months marked separately.
+# Kept out of CSS so country generators that import G.CSS do not inherit it.
+WHEN = [  # slug, label, best months, snow months
+    ('nepal-tour-packages', 'Nepal', [3, 4, 10, 11], []),
+    ('bhutan-tour-packages', 'Bhutan', [3, 4, 5, 9, 10, 11], []),
+    ('sri-lanka-tour-packages', 'Sri Lanka', [12, 1, 2, 3], []),
+    ('maldives-tour-packages', 'Maldives', [11, 12, 1, 2, 3, 4], []),
+    ('thailand-tour-packages', 'Thailand', [11, 12, 1, 2], []),
+    ('singapore-tour-packages', 'Singapore', [2, 3, 4], []),
+    ('malaysia-tour-packages', 'Malaysia', [12, 1, 2, 3, 4], []),
+    ('bali-tour-packages', 'Bali', [4, 5, 6, 7, 8, 9, 10], []),
+    ('dubai-tour-packages', 'Dubai', [11, 12, 1, 2, 3], []),
+    ('turkey-tour-packages', 'Turkey', [4, 5, 6, 9, 10, 11], []),
+    ('georgia-tour-packages', 'Georgia', [5, 6, 9, 10], [12, 1, 2, 3]),
+    ('azerbaijan-tour-packages', 'Azerbaijan', [4, 5, 6, 9, 10], [12, 1, 2, 3]),
+    ('uzbekistan-tour-packages', 'Uzbekistan', [4, 5, 6, 9, 10], []),
+    ('egypt-tour-packages', 'Egypt', [10, 11, 12, 1, 2, 3, 4], []),
+    ('europe-tour-packages', 'Europe', [4, 5, 6, 9, 10], []),
+    ('switzerland-tour-packages', 'Switzerland', [6, 7, 8, 9], [12, 1, 2, 3]),
+    ('uk-tour-packages', 'UK', [5, 6, 7, 8, 9], []),
+    ('japan-tour-packages', 'Japan', [3, 4, 5, 10, 11], []),
+    ('mauritius-tour-packages', 'Mauritius', [4, 5, 6, 9, 10, 11], []),
+    ('australia-tour-packages', 'Australia &amp; NZ', [3, 4, 5, 9, 10, 11], []),
+]
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+WHEN_NOTE = {3: 'Japan: late March onwards', 5: 'UK: late May onwards', 6: 'Uzbekistan: early June', 9: 'UK: early September', 10: 'Europe: early October'}
+WHEN_CSS = ('.hx .hx-when{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}'
+            '.hx .hx-mo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 16px 14px;position:relative;overflow:hidden}'
+            '.hx .hx-mo:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--gold)}'
+            '.hx .hx-mo b{display:block;font-family:"Sora","Plus Jakarta Sans",sans-serif;color:var(--ink);font-size:17px;margin:2px 0 10px}'
+            '.hx .hx-mo a{display:inline-block;margin:0 6px 7px 0;padding:5px 10px;border-radius:999px;background:var(--cream);border:1px solid var(--line);color:var(--ink);font-size:13.5px;font-weight:700;text-decoration:none;line-height:1.3}'
+            '.hx .hx-mo a:hover{border-color:var(--gold);background:#FFF8E6}'
+            '.hx .hx-mo a.hx-snow{background:#EEF4FB;border-color:#C9DBEF}'
+            '.hx .hx-mo small{display:block;color:var(--mut);font-size:12px;line-height:1.45;margin-top:3px}'
+            '.hx .hx-wkey{font-size:13px;color:var(--mut);margin-top:12px}'
+            '.hx .hx-when p{margin:0}'
+            '@media(max-width:1100px){.hx .hx-when{grid-template-columns:repeat(3,minmax(0,1fr))}}'
+            '@media(max-width:700px){.hx .hx-when{grid-template-columns:1fr 1fr;gap:10px}.hx .hx-mo{padding:14px 12px 10px}.hx .hx-mo a{font-size:12.5px;padding:4px 8px;margin:0 4px 6px 0}}'
+            '@media(max-width:420px){.hx .hx-when{grid-template-columns:1fr}}')
+
+def when_block():
+    cards = []
+    for i, mname in enumerate(MONTHS, 1):
+        chips = ''.join(f'<a href="https://suzutravels.com/{p}/">{n}</a>' for p, n, best, snow in WHEN if i in best)
+        chips += ''.join(f'<a class="hx-snow" href="https://suzutravels.com/{p}/">{n} · snow</a>' for p, n, best, snow in WHEN if i in snow)
+        note = f'<small>{WHEN_NOTE[i]}</small>' if i in WHEN_NOTE else ''
+        cards.append(f'<div class="hx-mo" id="hx-m{i}"><b>{mname}</b>{chips}{note}</div>')
+    return ('<section id="where-to-go-by-month" class="hx-sec"><style>' + WHEN_CSS + '</style><span class="hx-eye">Season planner</span>'
+            '<h2>Where to go abroad, month by month</h2>'
+            '<p class="hx-sub">Picked from the best-season advice on each of our destination pages. A month that is not listed can still work — weather, festivals, school holidays and flight prices all matter, so we check them against your dates before we quote.</p>'
+            '<div class="hx-when">' + ''.join(cards) + '</div>'
+            '<p class="hx-wkey">Blue chips = the snow season. Vietnam has different seasons in the north, centre and south, so we suggest the best region for your month. Singapore can be visited all year; February to April is usually the driest.</p></section>')
+
 def build():
     h = []
     h.append(f'<div class="suzu-intl hx"><style>{" ".join(l.strip() for l in CSS.strip().splitlines() if not l.strip().startswith("/*"))}</style>')
@@ -320,7 +375,7 @@ def build():
              f'<div>{svg("chat")}<span><b>One team, start to finish</b><span>On WhatsApp while you travel</span></span></div>'
              '</div>')
     # TOC
-    h.append('<nav class="hx-toc" aria-label="On this page"><a href="#where-do-you-want-to-go">Destinations</a><a href="#trip-styles">Trip styles</a><a href="#real-trips">Real trips</a><a href="#how-booking-works">How booking works</a><a href="#why-book-your-international-trip-with-su">Why Suzu</a><a href="#common-questions">FAQ</a></nav>')
+    h.append('<nav class="hx-toc" aria-label="On this page"><a href="#where-do-you-want-to-go">Destinations</a><a href="#trip-styles">Trip styles</a><a href="#where-to-go-by-month">When to go</a><a href="#real-trips">Real trips</a><a href="#how-booking-works">How booking works</a><a href="#why-book-your-international-trip-with-su">Why Suzu</a><a href="#common-questions">FAQ</a></nav>')
     # DESTINATIONS
     h.append('<section id="where-do-you-want-to-go" class="hx-sec">'
              '<span class="hx-eye">Destinations</span><h2>Where do you want to go?</h2>'
@@ -352,6 +407,8 @@ def build():
              '<div class="hx-pane hx-p3">' + sc('singapore', 'Sentosa, Universal Studios and the zoo — easy days with children.', 1) + sc('malaysia', 'Kuala Lumpur, Genting Highlands and Langkawi — great value for families.') + sc('nepal', 'Add Chitwan for jeep safaris and canoe rides — children love it.') + '</div>'
              '<div class="hx-pane hx-p4">' + sc('thailand', 'Strong value, short flights and plenty of Indian food — easy for big groups.') + sc('srilanka', 'Beaches, tea country and ancient cities, a short flight from South India.') + sc('malaysia', 'Kuala Lumpur city plus Langkawi beaches for team trips.', 1) + '</div>'
              '</div></section>')
+    # WHERE TO GO, MONTH BY MONTH (added 30 Oct 2026) — built only from the "Best season" line of each live country page
+    h.append(when_block())
     # REAL TRIPS (Suzu guest photos, Nepal)
     G = [('https://suzutravels.com/wp-content/uploads/2026/10/patan-durbar-square-temples.webp', 'Patan Durbar Square, Lalitpur'),
          ('https://suzutravels.com/wp-content/uploads/2026/10/nepal-pagoda-group-tour.webp', 'Our group at a pagoda temple'),
