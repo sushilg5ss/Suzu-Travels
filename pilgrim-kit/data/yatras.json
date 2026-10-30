@@ -2138,7 +2138,17 @@
       "open": "Year-round",
       "close": "Year-round",
       "dates_2026": {
-        "note": "Srivari Brahmotsavams are held annually around Sept-Oct"
+        "note": "Srivari Brahmotsavams 2026 concluded (TTD EO, 27 Oct 2026); Tiruchanur Padmavathi Ammavari Brahmotsavams next (arrangements 27 Oct 2026)",
+        "november_2026": {
+          "deepavali_asthanam": "2026-11-08",
+          "nagula_chavithi_pedda_sesha_vahanam": "2026-11-13",
+          "srivari_pushpayagam": "2026-11-16",
+          "kaisika_dwadasi_chakra_theertha_mukkoti": "2026-11-21",
+          "karthika_deepotsavam": "2026-11-24"
+        },
+        "vaikunta_dwara_darshan": "not announced by TTD as of 2026-10-30 (Vaikuntha Ekadashi ~20 Dec 2026 per non-official calendars - UNVERIFIED)",
+        "source": "https://news.tirumala.org/",
+        "as_of": "2026-10-30"
       },
       "dates_2027": null,
       "source": "TTD; Wikipedia",
@@ -2216,7 +2226,29 @@
       "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala",
       "https://www.tirumala.org/",
       "https://ttdevasthanams.ap.gov.in/"
-    ]
+    ],
+    "geo": {
+      "lat": 13.68312,
+      "lon": 79.34685,
+      "source": "OpenStreetMap Nominatim",
+      "as_of": "2026-10-30"
+    },
+    "osrm_km_from_temple": {
+      "tirupati_railway_station": 23,
+      "tirupati_airport_renigunta": 40,
+      "alipiri_gate_by_road": 20,
+      "tiruchanur_padmavathi_temple": 29,
+      "source": "router.project-osrm.org",
+      "as_of": "2026-10-30"
+    },
+    "crowd_oct_2026": {
+      "pilgrims_per_day": "62,811-85,431 (19-29 Oct 2026)",
+      "sarva_darshan_wait_without_ssd": "6-18 h",
+      "tonsures_per_day": "19,499-34,018",
+      "laddus_sold_29_oct": "3.88 lakh",
+      "source": "https://news.tirumala.org/category/darshan/",
+      "as_of": "2026-10-30"
+    }
   },
   {
     "slug": "shirdi-sai-baba",
