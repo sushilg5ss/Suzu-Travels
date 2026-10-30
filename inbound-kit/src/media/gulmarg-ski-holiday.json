@@ -1,13 +1,95 @@
 {
- "_note": "Media for /india-tours/gulmarg-ski-holiday/ (guide). Hero only, made by the Page Builder (night) per Visual Studio Step 2: 4 NEW Pexels photos, all located 'Gulmarg, India' on Pexels (CREDITS 23 Oct 2026). Captions use only each photo's allowed caption; the season step is from JKTDC (mid-December to mid-April). No route/cost video (guide).",
+ "_note": "Media for /india-tours/gulmarg-ski-holiday/ (guide). Hero only, made by the Page Builder (night) per Visual Studio Step 2: 4 NEW Pexels photos, all located 'Gulmarg, India' on Pexels (CREDITS 23 Oct 2026). Captions use only each photo's allowed caption; the season step is from JKTDC (mid-December to mid-April). No route/cost video (guide). Cost ladder added 30 Oct 2026 by Visual Studio (Step 1.3), words only (Gulmarg = 'on request' in Prices), mirroring 'How a Gulmarg ski trip is arranged with us' + the Prices row.",
  "hero": {
   "kicker": "GULMARG SKIING",
   "scenes": [
-   {"img": "px-30750204.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
-   {"img": "px-10679349.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 20}, "to": {"scale": 1.03, "x": 30, "y": 0}},
-   {"img": "px-16252950.jpg", "kind": "tilt", "from": {"y": 1400}, "to": {"y": 1000}},
-   {"img": "px-30062552.jpg", "kind": "land", "from": {"scale": 1.03, "x": 30, "y": 0}, "to": {"scale": 1.11, "x": -40, "y": 10}}
+   {
+    "img": "px-30750204.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-10679349.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.1,
+     "x": -30,
+     "y": 20
+    },
+    "to": {
+     "scale": 1.03,
+     "x": 30,
+     "y": 0
+    }
+   },
+   {
+    "img": "px-16252950.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 1400
+    },
+    "to": {
+     "y": 1000
+    }
+   },
+   {
+    "img": "px-30062552.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.03,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.11,
+     "x": -40,
+     "y": 10
+    }
+   }
   ],
-  "steps": ["GULMARG, KASHMIR", "GULMARG SKI AREA", "WINTER IN GULMARG", "MID-DEC TO APRIL"]
+  "steps": [
+   "GULMARG, KASHMIR",
+   "GULMARG SKI AREA",
+   "WINTER IN GULMARG",
+   "MID-DEC TO APRIL"
+  ]
+ },
+ "cost": {
+  "kicker": "GULMARG · WHAT WE ARRANGE",
+  "title": "Your ski trip, in one quote",
+  "items": [
+   {
+    "label": "Airport pick-up + drop",
+    "sub": "the drive up from Srinagar, in daylight when it snows"
+   },
+   {
+    "label": "Private car + driver",
+    "sub": "name, photo and car number shared before the trip"
+   },
+   {
+    "label": "Hotel nights + breakfast",
+    "sub": "with a spare day or two for the weather"
+   },
+   {
+    "label": "Gondola, ski hire, lessons",
+    "sub": "can be added to the same quote",
+    "tag": "optional"
+   },
+   {
+    "label": "Insurance (Kashmir, ski)",
+    "sub": "confirm cover in writing before we plan anything",
+    "tag": "your own"
+   }
+  ],
+  "end": "Quoted on request · day-by-day plan + US$ total before you pay"
  }
 }
