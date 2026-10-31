@@ -27,6 +27,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /egypt-tour-packages/ | 16112 | `.hx` country page (27 Oct 2026) — `pages/gen_egypt.py` (Cairo + Nile cruise + Luxor; 8-day itinerary grid = 4 columns) |
 | /australia-tour-packages/ | 16306 | `.hx` country page (28 Oct 2026) — `pages/gen_australia.py` (Australia + New Zealand add-on; 8-day itinerary grid = 4 columns) |
 | /uzbekistan-tour-packages/ | 16490 | `.hx` country page (29 Oct 2026) — `pages/gen_uzbekistan.py` (Tashkent–Samarkand–Bukhara–Khiva; 8-day itinerary grid = 4 columns) |
+| /kazakhstan-tour-packages/ | 16997 | `.hx` country page (31 Oct 2026) — `pages/gen_kazakhstan.py` (Almaty + Kyrgyzstan add-on; 6-day itinerary grid = 3 columns; first page with Wikimedia Commons photos — per-photo licence in credits) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -41,6 +42,10 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 - Content must stay a single line (wpautop inserts `<p>`/`<br>` on new lines). Inline JS: no `&`, no `//`.
 - Real photos only (Unsplash free licence, Pexels, Wikimedia CC0/BY/BY-SA, Suzu guest photos). Drawn/animated map graphics were rejected by Sushil (17 Oct 2026) as cheap-looking.
 - Old green route-map media (`/wp-content/uploads/suzu-intl/*.mp4|webm|poster.webp`) are no longer referenced by the outbound pages; keep the files (other pages/links may use them).
+
+## Notes (31 Oct 2026)
+- Hostinger returned 503 on ~40–60% of requests (GET and MCP writes) during the 31 Oct run; writes that 503 were NOT applied (checked with dry_run) — retry sequentially with pauses, never in parallel, and check `kazakhstan-tour-packages` counts before re-inserting cards.
+- Commons photos: search via `commons.wikimedia.org/w/index.php?search=…&ns6=1` HTML (the API is rate-limited), licence/author from the File: page, upload the `upload.wikimedia.org/…/thumb/…/1920px-…` URL (or the original if <1920 px).
 
 ## Verification
 Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, live `?v=` and plain fetch. Hostinger bot-protection may show reCAPTCHA to headless Chromium after many requests — use curl or space the checks.
