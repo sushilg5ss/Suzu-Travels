@@ -1,0 +1,16 @@
+{
+ "id": "2026-10-31-homepage-widgets",
+ "agent": "Interactive (Sushil online)",
+ "summary": "Homepage clean-up + new widgets: removed legacy Trending Destinations carousel and Tour Planner filler section; fixed 24/7 and other unsupported claims; replaced invented bento prices with approved Suzu prices/price on request; honest cab-section copy; new 'New guides' tabbed block (78 links to the 118 Oct-2026 posts) + rupee converter (frankfurter.app with offline fallback); blog fallback cards refreshed to Oct 2026 posts",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "889c566c8698daa035a9a5764f3a650239342d48fcac5ca4e559c5574e828b99",
+   "base_sha256": "67bc93fd40ea779f478ba53d9b07e8e1b7034646501685035de5d1b64a75596b",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1012804
+  }
+ ]
+}
