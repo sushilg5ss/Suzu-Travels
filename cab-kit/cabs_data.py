@@ -202,6 +202,7 @@ ROUTES = [
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
     dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
+    dict(slug="delhi-to-vrindavan-taxi", a="Delhi", b="Vrindavan", km=180, t="3–4 hrs", f=0.9),   # 31 Oct 2026: page live; Yamuna Expressway via Noida–Jewar, Mathura–Vrindavan interchange (Triveni 160–185 km, HurryUp 160, Savaari 183 expwy / 191 NH-19); f 0.9 = delhi-to-agra (same road)
     dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
