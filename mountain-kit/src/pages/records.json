@@ -1,0 +1,216 @@
+{
+ "kind": "guide",
+ "path": "/mountains-of-india/records/",
+ "title": "Indian Mountaineers & Himalayan Records: A First-Ascents Timeline",
+ "seo_title": "Famous Indian Mountaineers & Himalayan First Ascents",
+ "seo_desc": "Famous Indian mountaineers and their records, plus a sourced timeline of Himalayan first ascents from Trisul (1907) to Kangto (2025).",
+ "focus": "famous indian mountaineers",
+ "commercial": false,
+ "label": "Records & first ascents",
+ "blurb": "Indian mountaineers and a 1907–2025 timeline",
+ "verified": "31 Oct 2026",
+ "kicker": "Records · first ascents · 1907–2025",
+ "tag": "118 years of firsts.",
+ "sub": "The famous Indian mountaineers, their verified records, and every landmark first ascent in the Indian Himalaya, from the first 7,000 m summit ever climbed to the newest one, with the common mistakes corrected.",
+ "chips": [
+  [
+   "1907",
+   "Trisul, the first 7,000 m summit"
+  ],
+  [
+   "1965",
+   "first Indians on Everest"
+  ],
+  [
+   "1984",
+   "Bachendri Pal"
+  ],
+  [
+   "2025",
+   "Kangto climbed"
+  ]
+ ],
+ "hero_alt": "Snow ridges, a night camp and high ranges (generic stock footage, not named peaks) with four statements: first 7,000 in 1907; 1965, India on Everest; Bachendri Pal, 1984; 118 years of firsts",
+ "ladder_alt": "Animated chart of five landmark first ascents at their true heights: Trisul I 7,120 m (1907), Kangto 7,090 m (2025), Kamet 7,756 m (1931), Nanda Devi 7,816 m (1936) and Kangchenjunga 8,586 m (1955, from Nepal)",
+ "q": "Who are India's most famous mountaineers, and which climbs made history?",
+ "answer": "The best-known Indian mountaineers include <b>Avtar Singh Cheema and Nawang Gombu</b>, the first Indians on Everest (1965), <b>Bachendri Pal</b>, the first Indian woman (1984), and <b>Gurdial Singh</b>, who led independent India's first expedition. The Indian Himalaya's landmark first ascent is <b>Trisul I (1907)</b>, the first 7,000 m summit ever climbed. Explore every peak in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">full list</a>.",
+ "facts": [
+  [
+   "First 7,000 m summit",
+   "Trisul I, 7,120 m / 23,360 ft, 12 Jun 1907"
+  ],
+  [
+   "First above 25,000 ft",
+   "Kamet, 7,756 m / 25,446 ft, 1931"
+  ],
+  [
+   "First Indians on Everest",
+   "Cheema & Gombu, 20 May 1965"
+  ],
+  [
+   "First Indian woman on Everest",
+   "Bachendri Pal, 23 May 1984"
+  ],
+  [
+   "Newest big first ascent",
+   "Kangto, 7,090 m / 23,261 ft, Nov 2025"
+  ],
+  [
+   "Most Everest summits (Indian)",
+   "Love Raj Singh Dharmshaktu, 7"
+  ]
+ ],
+ "intro": [
+  "Records in the <a href=\"/mountains-of-india/\">Indian Himalaya</a> fall into two kinds. The first is the mountains themselves: who first stood on each summit, starting with Trisul in 1907. The second is the people: the Indian climbers who opened Everest to India in 1965 and the women and young climbers who set new marks after them.",
+  "Both stories are full of half-remembered \"facts\". Quiz books often give the first 7,000 m summit as Kamet (it was Trisul), and Kangchenjunga is sometimes said to be climbable from India (it is not, today). Every date on this page comes from a named source listed at the bottom, and peak heights and years come from our dataset of 157 notable Indian peaks."
+ ],
+ "extra_sections": [
+  {
+   "id": "timeline",
+   "label": "Timeline",
+   "kicker": "1907 to 2025",
+   "h2": "First ascents in the Indian Himalaya: a timeline",
+   "html": "<p>Twenty-six dated moments, from the first 7,000 m summit in 1907 to Kangto in 2025. Heights and first-ascent years come from our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of the highest peaks in India</a>; Everest (in Nepal) and Mrigthuni are not in that dataset, so no height is given for them. Linked peaks have their own guides.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Date</th><th>Peak</th><th>Height</th><th>Who</th><th>Why it matters</th></tr></thead><tbody><tr><td class=\"n\"><b>12 Jun 1907</b></td><td>Trisul I</td><td class=\"n\">7,120 m / 23,360 ft</td><td>Tom Longstaff with Alexis and Henri Brocherel and Karbir</td><td><b>The first 7,000 m summit ever climbed</b></td></tr><tr><td class=\"n\"><b>1911</b></td><td>Pauhunri (Sikkim)</td><td class=\"n\">7,128 m / 23,386 ft</td><td>Alexander Kellas with two Sherpas</td><td>Highest summit climbed from 1911 to 1928</td></tr><tr><td class=\"n\"><b>21 Jun 1931</b></td><td>Kamet</td><td class=\"n\">7,756 m / 25,446 ft</td><td>Smythe, Shipton, Holdsworth and Lewa Sherpa (Greene and Birnie a day later)</td><td>First summit above 25,000 ft</td></tr><tr><td class=\"n\"><b>29 Aug 1936</b></td><td><a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi</a></td><td class=\"n\">7,816 m / 25,643 ft</td><td>Bill Tilman and Noel Odell</td><td>Highest summit climbed until 1950; closed since 1983</td></tr><tr><td class=\"n\"><b>1936</b></td><td>Nanda Kot</td><td class=\"n\">6,861 m / 22,510 ft</td><td>Rikkyo University team led by Yaichi Hotta</td><td>A Japanese first in the Indian Himalaya</td></tr><tr><td class=\"n\"><b>1 Aug 1947</b></td><td><a href=\"/mountains-of-india/satopanth/\">Satopanth</a></td><td class=\"n\">7,075 m / 23,212 ft</td><td>Roch, Dittert, Graven and Sutter (Swiss)</td><td>Same Swiss season as Kedarnath</td></tr><tr><td class=\"n\"><b>1947</b></td><td>Kedarnath</td><td class=\"n\">6,940 m / 22,769 ft</td><td>Swiss team led by André Roch</td><td>Garhwal's Gangotri peaks open up</td></tr><tr><td class=\"n\"><b>1951</b></td><td>Trisul</td><td class=\"n\">7,120 m / 23,360 ft</td><td>Expedition led by Gurdial Singh</td><td>First mountaineering expedition of independent India</td></tr><tr><td class=\"n\"><b>1952</b></td><td><a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> and Manirang</td><td class=\"n\">6,001 m and 6,593 m</td><td>J. de V. Graaff's party (Manirang on 12 Sep 1952)</td><td>Two Himachal firsts in one year</td></tr><tr><td class=\"n\"><b>25 May 1955</b></td><td><a href=\"/mountains-of-india/kangchenjunga/\">Kangchenjunga</a></td><td class=\"n\">8,586 m / 28,169 ft</td><td>George Band and Joe Brown, from Nepal</td><td>They stopped short of the top, as promised to Sikkim</td></tr><tr><td class=\"n\"><b>6 Jul 1955</b></td><td>Kamet (2nd ascent)</td><td class=\"n\">7,756 m / 25,446 ft</td><td>HMI team led by Nandu Jayal</td><td>First Indian ascent of Kamet</td></tr><tr><td class=\"n\"><b>1958</b></td><td>Mrigthuni</td><td class=\"n\">–</td><td>Team led by Gurdial Singh</td><td>First ascent</td></tr><tr><td class=\"n\"><b>1962</b></td><td><a href=\"/mountains-of-india/indrasan/\">Indrasan</a></td><td class=\"n\">6,220 m / 20,407 ft</td><td>Kyoto University Alpine Club: Kojiro Tomita and Yasumasa Miyaki</td><td>Hardest summit of the Pir Panjal</td></tr><tr><td class=\"n\"><b>1962</b></td><td>Saltoro Kangri</td><td class=\"n\">7,742 m / 25,400 ft</td><td>Japanese–Pakistani expedition</td><td>Now in the Siachen military zone</td></tr><tr><td class=\"n\"><b>20 May 1965</b></td><td>Everest</td><td class=\"n\">–</td><td>Avtar Singh Cheema and Nawang Gombu</td><td><b>First Indians on Everest</b></td></tr><tr><td class=\"n\"><b>1973</b></td><td>Saser Kangri I</td><td class=\"n\">7,672 m / 25,171 ft</td><td>Indo-Tibetan Border Police team</td><td>Highest peak of the Saser Muztagh</td></tr><tr><td class=\"n\"><b>3 Jun 1974</b></td><td><a href=\"/mountains-of-india/shivling-peak/\">Shivling</a></td><td class=\"n\">6,543 m / 21,467 ft</td><td>ITBP team led by Hukam Singh, west ridge</td><td>The 'Matterhorn of the Himalaya'</td></tr><tr><td class=\"n\"><b>4 Jun 1974</b></td><td>Changabang</td><td class=\"n\">6,864 m / 22,520 ft</td><td>Indo-British team led by Balwant Sandhu and Chris Bonington</td><td>1976 West Wall by Boardman and Tasker</td></tr><tr><td class=\"n\"><b>1977</b></td><td><a href=\"/mountains-of-india/kangchenjunga/\">Kangchenjunga</a> (2nd ascent)</td><td class=\"n\">8,586 m / 28,169 ft</td><td>Indian Army team led by Col. Narendra Kumar</td><td>NE spur from Sikkim; climbing is banned there today</td></tr><tr><td class=\"n\"><b>23 Aug 1977</b></td><td>Kang Yatse I</td><td class=\"n\">6,400 m / 20,997 ft</td><td>Simon Fraser, Mark Dravers and Mike Ritchie</td><td>Probably the first ascent</td></tr><tr><td class=\"n\"><b>23 May 1984</b></td><td>Everest</td><td class=\"n\">–</td><td>Bachendri Pal</td><td><b>First Indian woman on Everest</b></td></tr><tr><td class=\"n\"><b>2001</b></td><td>Meru Central</td><td class=\"n\">6,310 m / 20,702 ft</td><td>Valery Babanov, solo</td><td>The 'Shark's Fin' line followed in 2011 (film <i>Meru</i>)</td></tr><tr><td class=\"n\"><b>2011</b></td><td>Saser Kangri II East</td><td class=\"n\">7,513 m / 24,649 ft</td><td>Mark Richey, Steve Swenson and Freddie Wilkinson</td><td>Then the world's 2nd-highest unclimbed peak; 2012 Piolet d'Or</td></tr><tr><td class=\"n\"><b>2013</b></td><td>Chamshen Kangri</td><td class=\"n\">7,017 m / 23,022 ft</td><td>Divyesh and Vineeta Muni, Susan Jensen, Victor Saunders and Sherpas</td><td>An Indian-led first ascent above 7,000 m</td></tr><tr><td class=\"n\"><b>Jun 2022</b></td><td>Shahi Kangri</td><td class=\"n\">6,934 m / 22,749 ft</td><td>Indian Army team led by Brig. Saurabh Singh Shekhawat</td><td>First ascent</td></tr><tr><td class=\"n\"><b>26 Nov 2025</b></td><td>Kangto (Arunachal)</td><td class=\"n\">7,090 m / 23,261 ft</td><td>Indian Army Eastern Command team</td><td>First recorded ascent of Arunachal's highest peak</td></tr></tbody></table></div><p class=\"szm-note\">Many smaller first ascents are not listed here. For the peaks nobody has climbed yet, see <a href=\"/mountains-of-india/unclimbed-peaks/\">unclimbed peaks in India</a>; for the giants, see the <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks</a>.</p>"
+  },
+  {
+   "id": "mountaineers",
+   "label": "Mountaineers",
+   "kicker": "People and records",
+   "h2": "Famous Indian mountaineers and their records",
+   "html": "<p>These are the Indian climbers most often named in textbooks, quizzes and news, each with a record that can be checked. We list only records confirmed by a published source and keep the wording exact: \"first\", \"youngest\" and \"most\" claims change over time.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Mountaineer</th><th>What they are known for</th></tr></thead><tbody><tr><td><b>Gurdial Singh (1924–2023)</b></td><td>Led independent India's first expedition (Trisul, 1951); first ascent of Mrigthuni (1958); on the 1965 Everest team; first Indian member of the Alpine Club; Arjuna Award 1965, Padma Shri 1967</td></tr><tr><td><b>Avtar Singh Cheema</b></td><td>With Nawang Gombu, the first Indian on the summit of Everest, 20 May 1965</td></tr><tr><td><b>Nawang Gombu</b></td><td>First Indian on Everest (1965) and the first person to climb Everest twice (1963 and 1965)</td></tr><tr><td><b>M.S. Kohli</b></td><td>Led the 1965 Indian Everest Expedition: nine summiteers, a world record that stood for 13 years</td></tr><tr><td><b>Bachendri Pal</b></td><td>First Indian woman on Everest, 23 May 1984; Padma Shri 1984, Padma Bhushan 2019</td></tr><tr><td><b>Santosh Yadav</b></td><td>First woman in the world to climb Everest twice (1992 and 1993)</td></tr><tr><td><b>Arunima Sinha</b></td><td>First female amputee to climb Everest, 21 May 2013</td></tr><tr><td><b>Malavath Purna</b></td><td>Youngest female Everest summiter, at 13 years 11 months (25 May 2014)</td></tr><tr><td><b>Anshu Jamsenpa</b></td><td>First woman to summit Everest twice in one season (2017), five days apart</td></tr><tr><td><b>Baljeet Kaur (Solan, Himachal)</b></td><td>First Indian woman on Pumori and Dhaulagiri (2021); first Indian woman on Manaslu without supplemental oxygen (2022); now described as the first Indian woman with seven 8,000 m peaks</td></tr><tr><td><b>Priyanka Mohite</b></td><td>First Indian woman to climb five 8,000 m peaks (May 2022)</td></tr><tr><td><b>Arjun Vajpai</b></td><td>Youngest Indian on Everest at the time (2010); his eighth 8,000 m peak, Shishapangma, in October 2024</td></tr><tr><td><b>Kaamya Karthikeyan</b></td><td>Everest on 20 May 2024 at 16; the Seven Summits by 24 December 2024, at 17</td></tr><tr><td><b>Love Raj Singh Dharmshaktu</b></td><td>Most Everest summits by an Indian: seven</td></tr></tbody></table></div><div class=\"szm-call\"><p><b>A Himachal name to know.</b> Baljeet Kaur grew up in Solan district and trained on the same Himachal ranges where many climbers still begin, from <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> to <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a>.</p></div>"
+  },
+  {
+   "id": "everest",
+   "label": "Everest",
+   "kicker": "India on Everest",
+   "h2": "India on Everest: the milestones",
+   "html": "<p>Everest sits on the Nepal–China border, not in India, but India's Everest story is the backbone of its mountaineering records.</p><ol class=\"szm-steps\"><li><b>1965 · First Indians on top</b>Avtar Singh Cheema and Nawang Gombu summit on 20 May. Nine Indians reach the top on that expedition.</li><li><b>1984 · First Indian woman</b>Bachendri Pal summits on 23 May.</li><li><b>1992–93 · Twice on Everest</b>Santosh Yadav becomes the first woman in the world to climb it twice.</li><li><b>2010 · A teenage record</b>Arjun Vajpai, then the youngest Indian on Everest.</li><li><b>2013 · Beyond limits</b>Arunima Sinha, the first female amputee on the summit.</li><li><b>2014 · Youngest woman</b>Malavath Purna, aged 13 years 11 months.</li><li><b>2017 · Twice in one season</b>Anshu Jamsenpa summits twice within five days.</li><li><b>2026 · A crowded day</b>On 21 May 2026, 274 climbers summited from Nepal in one day, a Nepal-side record; three Indians were among them.</li></ol>"
+  },
+  {
+   "id": "myths",
+   "label": "Myths",
+   "kicker": "Set the record straight",
+   "h2": "Three records people get wrong",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>\"The first 7,000 m summit was Kamet\"</h3><p>Wrong. <b>Trisul I</b> was, in 1907. Kamet (1931) was the first summit above 25,000 ft, which is a different record.</p></div><div class=\"szm-col\"><h3>\"Kangchenjunga can be climbed from India\"</h3><p>Not today. Its 1977 second ascent came up from Sikkim, but Sikkim treats the mountain as sacred and banned climbing it in 2001. The 1955 first ascent was made from Nepal.</p></div><div class=\"szm-col\"><h3>\"The youngest Indian on Everest is…\"</h3><p>Sources disagree for men, so we name no overall record holder. Arjun Vajpai was the youngest Indian at the time (2010); Malavath Purna is the youngest female summiter.</p></div></div><div class=\"szm-call\"><p><b>Still waiting for a result.</b> The NDRF \"Shikhar\" expedition to Jongsong Peak (7,462 m) ran from 4 September to 11 October 2026. No summit result had been published when we checked on 31 October 2026, so we do not list one.</p></div>"
+  }
+ ],
+ "ladder_label": "Landmarks",
+ "ladder_kicker": "At true height",
+ "ladder_h2": "Landmark first ascents, drawn to scale",
+ "ladder_text": [
+  "Five summits that each set a milestone, drawn at their true heights: Trisul I (7,120 m, 1907), Kangto (7,090 m, 2025), Kamet (7,756 m, 1931), <a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi</a> (7,816 m, 1936) and <a href=\"/mountains-of-india/kangchenjunga/\">Kangchenjunga</a> (8,586 m, 1955, from Nepal).",
+  "Height was never the whole story. Trisul is lower than Kamet but set the older record, and Kangto waited until 2025 because it sits in a remote border state."
+ ],
+ "quote_h2": "Start your own story on a Himachal summit",
+ "quote_text": "Every name on this page began with a first climb. We plan guided climbs of Himachal peaks, from Friendship Peak to Deo Tibba, with registered local outfitters and certified guides: permits, stays and transfers in one quote.",
+ "faq_h2": "Questions people ask about Indian mountaineering records",
+ "faqs": [
+  [
+   "Who was the first Indian to climb Mount Everest?",
+   "Avtar Singh Cheema and Nawang Gombu, on 20 May 1965, on the Indian Everest Expedition led by M.S. Kohli. Nine members of that team reached the summit."
+  ],
+  [
+   "Who was the first Indian woman to climb Everest?",
+   "Bachendri Pal, on 23 May 1984."
+  ],
+  [
+   "Which was the first 7,000 m peak ever climbed?",
+   "Trisul I (7,120 m / 23,360 ft) in Uttarakhand, on 12 June 1907, by Tom Longstaff, Alexis and Henri Brocherel and Karbir. It is often wrongly given as Kamet, which in 1931 became the first summit above 25,000 ft."
+  ],
+  [
+   "Who are the famous Indian mountaineers?",
+   "Among the best known: Nawang Gombu, Avtar Singh Cheema, M.S. Kohli, Gurdial Singh, Bachendri Pal, Santosh Yadav, Arunima Sinha, Malavath Purna, Anshu Jamsenpa, Baljeet Kaur, Priyanka Mohite and Arjun Vajpai."
+  ],
+  [
+   "Who is the youngest Indian to climb Everest?",
+   "Sources disagree for men, so we name no overall record holder. Malavath Purna is the youngest female summiter (13 years 11 months, 2014), and Arjun Vajpai was the youngest Indian at the time of his 2010 climb."
+  ],
+  [
+   "Who first climbed Nanda Devi?",
+   "Bill Tilman and Noel Odell, on 29 August 1936. It was the highest summit climbed until 1950. Nanda Devi has been closed to climbers since 1983."
+  ],
+  [
+   "Has Kangchenjunga been climbed from India?",
+   "Yes, once: its 1977 second ascent, by an Indian Army team, used the north-east spur from Sikkim. Today Sikkim treats the mountain as sacred and has banned climbing it since 2001."
+  ],
+  [
+   "What is the most recent first ascent of a major Indian peak?",
+   "Kangto (7,090 m / 23,261 ft), the highest peak of Arunachal Pradesh, first climbed by an Indian Army Eastern Command team on 26 November 2025."
+  ],
+  [
+   "Which mountaineer from Himachal Pradesh holds records?",
+   "Baljeet Kaur of Solan: the first Indian woman on Manaslu without supplemental oxygen (2022), and now described as the first Indian woman with seven 8,000 m peaks."
+  ]
+ ],
+ "links": [
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "Records, permits and training"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 157 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Deo Tibba"
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Trisul",
+   "https://en.wikipedia.org/wiki/Trisul"
+  ],
+  [
+   "Wikipedia — Kamet",
+   "https://en.wikipedia.org/wiki/Kamet"
+  ],
+  [
+   "Wikipedia — Nanda Devi",
+   "https://en.wikipedia.org/wiki/Nanda_Devi"
+  ],
+  [
+   "Wikipedia — Pauhunri",
+   "https://en.wikipedia.org/wiki/Pauhunri"
+  ],
+  [
+   "Wikipedia — 1965 Indian Everest Expedition",
+   "https://en.wikipedia.org/wiki/1965_Indian_Everest_Expedition"
+  ],
+  [
+   "Wikipedia — Gurdial Singh (mountaineer)",
+   "https://en.wikipedia.org/wiki/Gurdial_Singh_(mountaineer)"
+  ],
+  [
+   "Wikipedia — Bachendri Pal",
+   "https://en.wikipedia.org/wiki/Bachendri_Pal"
+  ],
+  [
+   "Wikipedia — List of Mount Everest records of India",
+   "https://en.wikipedia.org/wiki/List_of_Mount_Everest_records_of_India"
+  ],
+  [
+   "Wikipedia — Arjun Vajpai",
+   "https://en.wikipedia.org/wiki/Arjun_Vajpai"
+  ],
+  [
+   "News On AIR — 274 climbers on Everest in one day, including three Indians (May 2026)",
+   "https://newsonair.gov.in/mount-everest-records-highest-single-day-summit-with-274-climbers-including-three-indians/"
+  ],
+  [
+   "Raj Bhavan Arunachal Pradesh — Governor congratulates the Mount Kangto expedition team (8 Dec 2025)",
+   "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf"
+  ],
+  [
+   "American Alpine Journal — Kang Yatse I, 1977",
+   "https://publications.americanalpineclub.org/articles/13201216466"
+  ],
+  [
+   "NDRF — Shikhar 2026 expedition",
+   "https://ndrf.gov.in/en/node/91221"
+  ]
+ ]
+}
