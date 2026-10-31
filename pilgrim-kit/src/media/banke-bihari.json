@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "saffron",
+  "deva": "श्री बांके बिहारी",
+  "kicker": "Vrindavan · Mathura, Uttar Pradesh",
+  "beats": [
+   "Swami Haridas sings in Nidhivan",
+   "Radha and Krishna become one image",
+   "A curtain veils his captivating gaze",
+   "Vrindavan's lanes ring with Radhe Radhe"
+  ]
+ },
+ "story": {
+  "title": "The legend of Banke Bihari",
+  "beats": [
+   {"arch": "ghats", "sky": "night", "line": "Haridas sings in the groves"},
+   {"arch": "pillar", "sky": "dawn", "line": "The divine couple appears"},
+   {"arch": "ghats", "sky": "saffron", "line": "Kunj Bihari, now Banke Bihari"},
+   {"arch": "ghats", "sky": "dusk", "line": "Holi of flowers and colour"}
+  ]
+ }
+}

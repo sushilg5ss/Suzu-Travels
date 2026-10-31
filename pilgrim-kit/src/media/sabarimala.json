@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "dawn",
+  "deva": "सबरीमला अय्यप्पा",
+  "kicker": "Sree Dharma Sastha · Sabarimala, Kerala",
+  "beats": [
+   "A baby found by the Pamba",
+   "Tigress's milk for the queen",
+   "Mahishi defeated, a shrine chosen",
+   "Pilgrims climb the eighteen holy steps"
+  ]
+ },
+ "story": {
+  "title": "The legend of Sabarimala",
+  "beats": [
+   {"arch": "ghats", "sky": "dawn", "line": "Found by the Pamba river"},
+   {"arch": "hills", "sky": "night", "line": "Into the forest for tigress milk"},
+   {"arch": "pillar", "sky": "saffron", "line": "Mahishi defeated"},
+   {"arch": "hills", "sky": "dusk", "line": "Harivarasanam closes the day"}
+  ]
+ }
+}
