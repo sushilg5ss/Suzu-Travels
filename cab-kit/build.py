@@ -449,6 +449,17 @@ def finish(slug, h, css_extra=""):
         sys.exit(f"BUILD REFUSED {slug}: literal '>' inside an attribute value (wptexturize breaks the closing quote) — use &gt;")
     if slug == "cabs":  # 28 Oct 2026 hub size budget: '"' needs no escaping inside the single-quoted data-cfg/fleet/plan JSON (saves ~11 KB)
         m = re.sub(r"data-(cfg|fleet|plan)='[^']*'", lambda x: x.group(0).replace("&quot;", '"'), m)
+    if slug == "cabs" and MEDIA.get("hub_speed"):  # 31 Oct 2026 speed pass: lighter photos/poster on the hub, 800w card photos (same URL length)
+        nsha = MEDIA["hub_speed"]["sha"]
+        swap = lambda u: re.sub(r"@[0-9a-f]{40}/", "@" + nsha + "/", u)
+        for ph in PHOTOS.values():
+            u = ph.get("src", "")
+            if "/fleet-photos/" in u and u.endswith(".webp"):
+                m = m.replace(f'<img src="{u}"', f'<img src="{swap(u)[:-5]}-800.webp"').replace(u, swap(u))
+        m = m.replace(' target="_blank" rel="noopener"', ' target="_blank"').replace(' loading="lazy" decoding="async"', ' loading="lazy"')  # hub size budget: target=_blank implies noopener in all current browsers; lazy imgs decode off-thread anyway
+        pu = MEDIA.get("film", {}).get("poster", "")
+        if pu:
+            m = m.replace(pu, swap(pu))
     if slug == "cabs":
         st = m.split("<style>", 1)[1].split("</style>", 1)[0]
         m = m.replace(f"<style>{st}</style>", f"<style>{prune_css(st, m.replace(st, ''))}</style>", 1)

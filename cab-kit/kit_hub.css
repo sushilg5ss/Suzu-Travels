@@ -58,3 +58,4 @@
 .szc-hnote{font-size:12px;color:#56675b;margin:10px 0 0}
 @media (max-width:760px){.szc-hform{grid-template-columns:1fr 1fr}.szc-hform>div:nth-child(3),.szc-hform>div:nth-child(4),.szc-hform>.szc-hckw{grid-column:1/-1}.szc-hres{grid-template-columns:1fr}.szc-help{padding:16px}}
 .szc-seat{margin:0;background:#fbfaf5;border:1px solid #ece6cf;border-radius:14px;padding:10px 12px}.szc-seat img{display:block;width:100%;max-width:300px;height:auto;margin:0 auto}.szc-seat figcaption{font-size:12px;color:#56675b;margin-top:6px;line-height:1.4}
+.szc #faq{content-visibility:auto;contain-intrinsic-size:auto 2400px}.szc .szc-ph{will-change:auto}
