@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.76) 56%, rgba(11,31,51,0.9) 100%); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 150px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 200px; color: #fff; font-weight: 800; font-size: 100px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 330px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; }
+      .big { position: absolute; left: 300px; top: 340px; width: 500px; text-align: left; color: #fff; font-weight: 800; font-size: 88px; line-height: 1; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 304px; top: 446px; width: 500px; white-space: nowrap; text-align: left; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 28px; }
+      svg.prof { position: absolute; left: 0; top: 500px; width: 820px; height: 330px; overflow: visible; }
+      .facts { position: absolute; left: 0; top: 890px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 52px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 870px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" style="object-position:50% 72%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">KULLU · TREKS &amp; CAMPS</div>
+          <div class="t1">Bijli Mahadev</div>
+          <div class="t2">Trek</div>
+          <div class="big" id="alt">0.0 km</div>
+          <div class="biglab">walked from Chansari</div>
+          <svg class="prof" viewBox="0 0 820 330">
+            <path d="M 10 300 L 140 274 L 260 226 L 380 206 L 500 153 L 620 129 L 740 81 L 800 70" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round" stroke-linejoin="round" />
+            <text x="10" y="340" fill="rgba(255,255,255,0.85)" font-size="26" font-weight="500" font-family="PJS">Chansari road-head</text>
+            <text x="800" y="32" text-anchor="end" fill="#fff" font-size="28" font-weight="800" font-family="PJS">Temple · 2,460 m</text>
+            <path id="trail" d="M 10 300 L 140 274 L 260 226 L 380 206 L 500 153 L 620 129 L 740 81 L 800 70" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="10" cy="300" r="9" fill="#fff" /><circle cx="800" cy="70" r="12" fill="#fff" />
+            <g id="g-dot"><circle id="dot" cx="10" cy="300" r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" /></g>
+          </svg>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">2,460 m · Kullu</div>
+            <div class="fact" id="f2">~3 km · 1.5–2 hrs up</div>
+            <div class="fact" id="f3">Best Apr–Jun · Sep–Nov</div>
+            <div class="fact" id="f4">Snow possible Dec–Feb</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, y: 20 }, { scale: 1, y: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: 30, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      const trail = document.getElementById("trail");
+      const dot = document.getElementById("dot");
+      const alt = document.getElementById("alt");
+      const L = trail.getTotalLength();
+      trail.style.strokeDasharray = L + " " + L;
+      const st = { p: 0 };
+      function place() {
+        const d = L * st.p;
+        trail.style.strokeDashoffset = (L - d).toFixed(2);
+        const pt = trail.getPointAtLength(Math.max(0.01, d));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+        alt.textContent = st.p >= 0.999 ? "~3 km" : (st.p * 3).toFixed(1) + " km";
+      }
+      tl.to(st, { p: 1, duration: 8.4, ease: "sine.inOut", onUpdate: place }, 0.6);
+      tl.to(["#trail", "#g-dot", "#alt"], { opacity: 0, duration: 0.4 }, 10.2);
+      tl.to(st, { p: 0, duration: 0.05, onUpdate: place }, 10.7);
+      tl.to(["#trail", "#g-dot", "#alt"], { opacity: 1, duration: 0.6 }, 11.2);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

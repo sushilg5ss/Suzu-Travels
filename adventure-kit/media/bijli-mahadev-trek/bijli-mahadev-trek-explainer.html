@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.16; }
+      .kick { position: absolute; left: 110px; top: 60px; color: #d4a24c; font-weight: 800; font-size: 28px; letter-spacing: 0.16em; }
+      .title { position: absolute; left: 110px; top: 100px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; }
+      .cnt { position: absolute; left: 110px; top: 200px; color: #d4a24c; font-weight: 800; font-size: 72px; text-align: left; white-space: nowrap; }
+      .cnt span { color: rgba(255,255,255,0.75); font-size: 36px; font-weight: 500; }
+      svg.map { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .legend { position: absolute; left: 110px; top: 860px; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 28px; white-space: nowrap; }
+      .legend b { display: inline-block; width: 40px; height: 22px; border-radius: 6px; vertical-align: middle; margin: 0 10px 0 0; }
+      .chip { position: absolute; right: 110px; top: 968px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 30px; padding: 14px 28px; border-radius: 40px; white-space: nowrap; }
+      .note { position: absolute; left: 110px; top: 984px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 24px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="10" data-width="1920" data-height="1080">
+      <img id="bgimg" class="bgimg clip" src="assets/s6.jpg" alt="" data-start="0" data-duration="10" data-track-index="0" />
+      <div id="ov" class="clip" data-start="0" data-duration="10" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">BIJLI MAHADEV TREK · KULLU</div>
+        <div class="title" id="title">A half day to Kullu's lightning temple</div>
+        <div class="cnt" id="cnt">0.0 km<span> on foot</span></div>
+        <svg class="map" viewBox="0 0 1920 1080">
+          <line x1="160" y1="470" x2="1760" y2="470" stroke="rgba(255,255,255,0.15)" stroke-width="6" stroke-linecap="round"/>
+          <path id="cab" d="M 160 470 L 820 470" pathLength="1" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>
+          <path id="walk" d="M 820 470 C 1060 470, 1300 330, 1760 300" pathLength="1" stroke="#d4a24c" stroke-width="11" fill="none" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>
+          <g class="st" id="st0"><circle cx="160" cy="470" r="14" fill="#fff" stroke="#0b1f33" stroke-width="4"/><text x="160" y="530" text-anchor="middle" fill="#fff" font-size="32" font-weight="800" font-family="PJS">Kullu / Manali</text><text x="160" y="566" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="24" font-weight="500" font-family="PJS">your hotel</text></g>
+          <g class="st" id="st1"><circle cx="820" cy="470" r="14" fill="#fff" stroke="#0b1f33" stroke-width="4"/><text x="820" y="530" text-anchor="middle" fill="#fff" font-size="32" font-weight="800" font-family="PJS">Chansari</text><text x="820" y="566" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="24" font-weight="500" font-family="PJS">last road point</text></g>
+          <g class="st" id="st2"><circle cx="1760" cy="300" r="20" fill="#d4a24c" stroke="#fff" stroke-width="5"/><text x="1760" y="250" text-anchor="end" fill="#fff" font-size="38" font-weight="800" font-family="PJS">Temple · 2,460 m</text></g>
+          <g id="lab-cab"><text x="490" y="440" text-anchor="middle" fill="#fff" font-size="30" font-weight="500" font-family="PJS">by cab</text></g>
+          <g id="lab-walk"><text x="1290" y="560" text-anchor="middle" fill="#d4a24c" font-size="32" font-weight="800" font-family="PJS">~3 km uphill · 1.5–2 hrs</text><text x="1290" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="26" font-weight="500" font-family="PJS">down in ~1 hr · same-day return</text></g>
+          <g id="g-dot"><circle id="dot" cx="820" cy="470" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/></g>
+          <text id="seasonlab" x="110" y="735" fill="rgba(255,255,255,0.8)" font-size="28" font-weight="500" font-family="PJS">When to go</text>
+          <g class="mo"><rect x="114" y="760" width="132" height="70" rx="12" fill="#a9d6f0"/><text x="180.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Jan</text></g><g class="mo"><rect x="254" y="760" width="132" height="70" rx="12" fill="#a9d6f0"/><text x="320.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Feb</text></g><g class="mo"><rect x="394" y="760" width="132" height="70" rx="12" fill="rgba(255,255,255,0.55)"/><text x="460.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Mar</text></g><g class="mo"><rect x="534" y="760" width="132" height="70" rx="12" fill="#d4a24c"/><text x="600.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Apr</text></g><g class="mo"><rect x="674" y="760" width="132" height="70" rx="12" fill="#d4a24c"/><text x="740.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">May</text></g><g class="mo"><rect x="814" y="760" width="132" height="70" rx="12" fill="#d4a24c"/><text x="880.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Jun</text></g><g class="mo"><rect x="954" y="760" width="132" height="70" rx="12" fill="#6b7f93"/><text x="1020.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Jul</text></g><g class="mo"><rect x="1094" y="760" width="132" height="70" rx="12" fill="#6b7f93"/><text x="1160.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Aug</text></g><g class="mo"><rect x="1234" y="760" width="132" height="70" rx="12" fill="#d4a24c"/><text x="1300.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Sep</text></g><g class="mo"><rect x="1374" y="760" width="132" height="70" rx="12" fill="#d4a24c"/><text x="1440.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Oct</text></g><g class="mo"><rect x="1514" y="760" width="132" height="70" rx="12" fill="#d4a24c"/><text x="1580.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Nov</text></g><g class="mo"><rect x="1654" y="760" width="132" height="70" rx="12" fill="#a9d6f0"/><text x="1720.0" y="805" text-anchor="middle" fill="#0b1f33" font-size="28" font-weight="800" font-family="PJS">Dec</text></g>
+        </svg>
+        <div class="legend" id="legend"><b style="background:#d4a24c"></b>best &nbsp;&nbsp; <b style="background:rgba(255,255,255,0.55)"></b>open &nbsp;&nbsp; <b style="background:#6b7f93"></b>Sawan crowds, rain &nbsp;&nbsp; <b style="background:#a9d6f0"></b>snow possible</div>
+        <div class="note" id="note">Skip thunderstorm days · schematic, not to scale</div>
+        <div class="chip" id="chip">Cab + hotel in one quote · Get Quote</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from("#kick", { opacity: 0, y: -16, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from("#title", { opacity: 0, y: 24, duration: 0.6, ease: "power2.out" }, 0.2);
+      tl.from(".st", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%", duration: 0.4, stagger: 0.12, ease: "back.out(2)" }, 0.5);
+      tl.from("#cnt", { opacity: 0, duration: 0.4 }, 0.6);
+      tl.to("#cab", { attr: { "stroke-dashoffset": 0 }, duration: 1.2, ease: "power1.inOut" }, 1.1);
+      tl.from("#lab-cab", { opacity: 0, y: 10, duration: 0.4 }, 1.4);
+      tl.to("#walk", { attr: { "stroke-dashoffset": 0 }, duration: 2.6, ease: "sine.inOut" }, 2.4);
+      tl.from("#g-dot", { opacity: 0, duration: 0.3 }, 2.3);
+      tl.from("#lab-walk", { opacity: 0, y: 10, duration: 0.4 }, 2.7);
+      const walk = document.getElementById("walk");
+      const dot = document.getElementById("dot");
+      const cnt = document.getElementById("cnt");
+      const L = walk.getTotalLength();
+      const st = { p: 0 };
+      function place() {
+        const pt = walk.getPointAtLength(Math.max(0.01, L * st.p));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+        cnt.firstChild.nodeValue = st.p >= 0.999 ? "~3 km" : (st.p * 3).toFixed(1) + " km";
+      }
+      tl.to(st, { p: 1, duration: 2.6, ease: "sine.inOut", onUpdate: place }, 2.4);
+      tl.from("#seasonlab", { opacity: 0, duration: 0.4 }, 5.0);
+      tl.from(".mo", { opacity: 0, y: 20, duration: 0.3, stagger: 0.07, ease: "power2.out" }, 5.1);
+      tl.from("#legend", { opacity: 0, duration: 0.5 }, 6.1);
+      tl.from("#note", { opacity: 0, duration: 0.5 }, 6.6);
+      tl.fromTo("#chip", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 7.2);
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
