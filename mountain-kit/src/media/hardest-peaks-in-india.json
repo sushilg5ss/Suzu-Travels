@@ -1,0 +1,111 @@
+{
+ "hero": {
+  "kicker": "HARDEST PEAKS · INDIA",
+  "words": [
+   [
+    "SHARK'S FIN:",
+    "2011."
+   ],
+   [
+    "SHALE BAND:",
+    "6,904 M."
+   ],
+   [
+    "GRANITE",
+    "WALLS."
+   ],
+   [
+    "START IN",
+    "HIMACHAL."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 1000
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": 0
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40
+    }
+   }
+  ],
+  "size": 110
+ },
+ "ladder": {
+  "kicker": "INDIA'S HARDEST PEAKS",
+  "title": "Hard summits, at their true heights",
+  "peaks": [
+   "indrasan",
+   "meru-central",
+   "shivling",
+   "changabang",
+   "thalay-sagar",
+   "saser-kangri-ii-east"
+  ],
+  "subs": {
+   "indrasan": "Himachal · Pir Panjal",
+   "meru-central": "Fin line climbed 2011",
+   "shivling": "Serac barrier",
+   "changabang": "Steep granite",
+   "thalay-sagar": "Piolet d'Or 1999",
+   "saser-kangri-ii-east": "Piolet d'Or 2012"
+  },
+  "end": "Difficulty depends on the route, not the height"
+ }
+}
