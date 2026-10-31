@@ -1581,3 +1581,23 @@ jammu to katra by road,1300,LOW,,,"[1000, 1000, 1000, 880, 1300, 1300, 1300, 160
 jammu to katra innova,0,,,,[]
 jammu to vaishno devi taxi,0,,,,[]
 jammu to katra one way taxi,0,,,,[]
+delhi to vrindavan taxi,1300,MEDIUM,14.78,49.06,"[1600, 1600, 1600, 1300, 1300, 1600, 1300, 880, 1000, 880, 1000, 1300]"
+delhi to vrindavan cab,1300,MEDIUM,14.78,49.06,"[1600, 1600, 1600, 1300, 1300, 1600, 1300, 880, 1000, 880, 1000, 1300]"
+delhi to vrindavan taxi fare,390,HIGH,10.51,33.72,"[390, 480, 480, 390, 390, 390, 320, 260, 320, 260, 260, 260]"
+delhi to vrindavan cab fare,390,HIGH,10.51,33.72,"[390, 480, 480, 390, 390, 390, 320, 260, 320, 260, 260, 260]"
+delhi to mathura taxi,590,MEDIUM,16.02,45.08,"[880, 590, 720, 720, 590, 590, 590, 480, 480, 390, 590, 720]"
+delhi to mathura cab,590,MEDIUM,16.02,45.08,"[880, 590, 720, 720, 590, 590, 590, 480, 480, 390, 590, 720]"
+delhi to mathura vrindavan taxi,10,HIGH,31.47,79.14,"[10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]"
+delhi to mathura vrindavan cab,10,HIGH,14.91,59.4,"[10, 10, 10, 10, 10, 20, 10, 20, 10, 20, 10, 10]"
+vrindavan to delhi taxi,90,LOW,24.78,79.34,"[70, 110, 50, 30, 50, 70, 40, 50, 70, 30, 90, 390]"
+mathura to delhi taxi,320,MEDIUM,14.36,56.0,"[480, 390, 390, 390, 390, 390, 390, 260, 320, 210, 260, 260]"
+delhi to vrindavan distance,40500,LOW,1.7,23.55,"[40500, 90500, 49500, 49500, 40500, 40500, 40500, 40500, 40500, 33100, 33100, 33100]"
+delhi to vrindavan by road,210,LOW,1.01,20.05,"[210, 480, 170, 210, 170, 210, 260, 170, 170, 170, 170, 210]"
+delhi to mathura distance,33100,LOW,2.29,30.79,"[33100, 40500, 40500, 33100, 27100, 33100, 27100, 33100, 33100, 22200, 27100, 27100]"
+delhi airport to vrindavan taxi,140,HIGH,16.25,41.39,"[260, 210, 140, 140, 140, 140, 110, 90, 70, 70, 70, 90]"
+mathura vrindavan tour from delhi,5400,LOW,3.37,19.35,"[5400, 5400, 6600, 5400, 5400, 5400, 4400, 5400, 6600, 5400, 5400, 5400]"
+delhi to vrindavan taxi one way,10,HIGH,11.87,29.35,"[20, 40, 30, 10, 20, 10, 10, 10, 10, 10, 10, 10]"
+noida to vrindavan taxi,110,HIGH,10.92,42.07,"[140, 140, 140, 110, 70, 110, 140, 110, 110, 90, 90, 90]"
+gurgaon to vrindavan taxi,110,HIGH,17.84,50.24,"[110, 170, 140, 110, 90, 90, 110, 110, 140, 90, 70, 110]"
+delhi to vrindavan one way taxi,0,,,,[]
+delhi to mathura vrindavan one day trip,0,,,,[]
