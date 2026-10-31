@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "28 Oct 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "1 Nov 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -252,7 +252,7 @@ CAL = [  # (month, [(text, kind)]) — kind "x" = closing / ends ; verified in d
     ("Jul", [("Amarnath Yatra (2026: 3 Jul–28 Aug)", ""), ("Shravan — Shiva temples busiest", "")]),
     ("Aug", [("Manimahesh (2026: 25 Aug–19 Sep)", ""), ("Shravan Ashtami melas, Naina Devi &amp; Chintpurni", "")]),
     ("Sep", [("Post-monsoon Char Dham window opens", ""), ("Manimahesh ends on Radha Ashtami", "x")]),
-    ("Oct", [("Sharad Navratri (2026: 11–19 Oct)", ""), ("Dussehra: Badrinath closing date announced (2026: 20 Oct)", "x"), ("Nashik–Trimbakeshwar Simhastha Kumbh flag-hoisting, 31 Oct 2026", "")]),
+    ("Oct", [("Sharad Navratri (2026: 11–19 Oct)", ""), ("Dussehra: Badrinath closing date announced (2026: 20 Oct)", "x"), ("Nashik–Trimbakeshwar Simhastha Kumbh began: flag hoisted 31 Oct 2026", "")]),
     ("Nov", [("Gangotri closes 10 Nov; Kedarnath &amp; Yamunotri 11 Nov (Bhai Dooj)", "x"), ("Badrinath closes 16 Nov 2026", "x")]),
     ("Dec", [("Winter Char Dham: Ukhimath, Joshimath seats", ""), ("12 Jyotirlinga circuits run all winter", "")]),
 ]
