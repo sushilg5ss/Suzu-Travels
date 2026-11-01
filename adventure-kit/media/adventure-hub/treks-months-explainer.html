@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.12; }
+      .kick { position: absolute; left: 110px; top: 56px; color: #d4a24c; font-weight: 800; font-size: 28px; letter-spacing: 0.16em; }
+      .title { position: absolute; left: 110px; top: 96px; color: #fff; font-weight: 800; font-size: 68px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.g { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .note { position: absolute; left: 110px; top: 880px; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 30px; white-space: nowrap; }
+      .note b { color: #d4a24c; }
+      .small { position: absolute; left: 110px; top: 990px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 24px; white-space: nowrap; }
+      .chip { position: absolute; right: 110px; top: 968px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 30px; padding: 14px 28px; border-radius: 40px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <img id="bgimg" class="bgimg clip" src="assets/bg.jpg" alt="" data-start="0" data-duration="12" data-track-index="0" />
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">MORE HIMACHAL TREKS · BEST MONTHS</div>
+        <div class="title" id="title">Higher trek, shorter window</div>
+        <svg class="g" viewBox="0 0 1920 1080"><rect x="702" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.06)"/><text class="mh" x="746.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">J</text><rect x="794" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.03)"/><text class="mh" x="838.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">F</text><rect x="886" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.06)"/><text class="mh" x="930.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">M</text><rect x="978" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.03)"/><text class="mh" x="1022.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">A</text><rect x="1070" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.06)"/><text class="mh" x="1114.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">M</text><rect x="1162" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.03)"/><text class="mh" x="1206.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">J</text><rect x="1254" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.06)"/><text class="mh" x="1298.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">J</text><rect x="1346" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.03)"/><text class="mh" x="1390.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">A</text><rect x="1438" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.06)"/><text class="mh" x="1482.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">S</text><rect x="1530" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.03)"/><text class="mh" x="1574.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">O</text><rect x="1622" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.06)"/><text class="mh" x="1666.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">N</text><rect x="1714" y="248" width="88" height="584" rx="8" fill="rgba(255,255,255,0.03)"/><text class="mh" x="1758.0" y="230" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="30" font-weight="800" font-family="PJS">D</text><g class="lab"><text x="110" y="300" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Bijli Mahadev</text><text x="676" y="300" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">2,460 m</text></g><rect id="b00" class="bar" x="980" y="272" width="268" height="46" rx="12" fill="#d4a24c"/><rect id="b01" class="bar" x="1440" y="272" width="268" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="372" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Serolsar Lake</text><text x="676" y="372" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">~3,100 m</text></g><rect id="b10" class="bar" x="888" y="344" width="820" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="444" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Churdhar</text><text x="676" y="444" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">3,647 m</text></g><rect id="b20" class="bar" x="980" y="416" width="728" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="516" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Beas Kund</text><text x="676" y="516" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">~3,890 m</text></g><rect id="b30" class="bar" x="1118" y="488" width="498" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="588" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Sar Pass</text><text x="676" y="588" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">~4,200 m</text></g><rect id="b40" class="bar" x="1072" y="560" width="176" height="46" rx="12" fill="#d4a24c"/><rect id="b41" class="bar" x="1440" y="560" width="176" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="660" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Bhrigu Lake</text><text x="676" y="660" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">~4,235 m</text></g><rect id="b50" class="bar" x="1164" y="632" width="406" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="732" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Indrahar Pass</text><text x="676" y="732" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">~4,342 m</text></g><rect id="b60" class="bar" x="1072" y="704" width="176" height="46" rx="12" fill="#d4a24c"/><rect id="b61" class="bar" x="1440" y="704" width="176" height="46" rx="12" fill="#d4a24c"/><g class="lab"><text x="110" y="804" fill="#fff" font-size="36" font-weight="800" font-family="PJS">Buran Ghati</text><text x="676" y="804" text-anchor="end" fill="#d4a24c" font-size="30" font-weight="800" font-family="PJS">~4,575 m</text></g><rect id="b70" class="bar" x="1072" y="776" width="176" height="46" rx="12" fill="#d4a24c"/><rect id="b71" class="bar" x="1440" y="776" width="176" height="46" rx="12" fill="#d4a24c"/></svg>
+        <div class="note" id="note">Low walks run spring to autumn. <b>High passes (Sar, Indrahar, Buran Ghati): May–Jun and Sep–Oct.</b></div>
+        <div class="small" id="small">Snow and rain decide each date · we check before you go</div>
+        <div class="chip" id="chip">Trek + cab + stay in one quote · Get Quote</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from("#kick", { opacity: 0, y: -16, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from("#title", { opacity: 0, y: 24, duration: 0.6, ease: "power2.out" }, 0.2);
+      tl.from(".mh", { opacity: 0, y: 12, duration: 0.3, stagger: 0.04, ease: "power2.out" }, 0.5);
+      tl.from(".lab", { opacity: 0, x: -30, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 0.9);
+      tl.from(".bar", { scaleX: 0, transformOrigin: "0% 50%", duration: 0.6, stagger: 0.18, ease: "power2.out" }, 1.5);
+      tl.from("#note", { opacity: 0, y: 16, duration: 0.5 }, 5.0);
+      tl.from("#small", { opacity: 0, duration: 0.5 }, 5.6);
+      tl.fromTo("#chip", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 6.2);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
