@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "gopuram",
+  "sky": "saffron",
+  "deva": "मीनाक्षी सुंदरेश्वर",
+  "kicker": "Meenakshi Amman · Madurai, Tamil Nadu",
+  "beats": [
+   "A princess rises from the fire",
+   "Queen Meenakshi conquers the worlds",
+   "On Kailash she meets Shiva",
+   "Sundareswarar weds her in Madurai"
+  ]
+ },
+ "story": {
+  "title": "The legend of Meenakshi",
+  "beats": [
+   {"arch": "pillar", "sky": "saffron", "line": "Born from the Pandya king's fire"},
+   {"arch": "gopuram", "sky": "dawn", "line": "Queen Meenakshi rules Madurai"},
+   {"arch": "himalaya", "sky": "snow", "line": "She meets Shiva on Kailash"},
+   {"arch": "ghats", "sky": "dusk", "line": "The wedding, and Azhagar at the Vaigai"}
+  ]
+ }
+}

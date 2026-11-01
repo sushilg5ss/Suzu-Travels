@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "dusk",
+  "deva": "माँ कामाख्या",
+  "kicker": "Adi Shakti Peeth · Nilachal, Guwahati",
+  "beats": [
+   "Shiva carries Sati across the worlds",
+   "Her yoni falls on Nilachal hill",
+   "A spring-fed stone, no idol",
+   "Ambubachi: doors close, then open"
+  ]
+ },
+ "story": {
+  "title": "The legend of Kamakhya",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Shiva's grief, Sati in his arms"},
+   {"arch": "devi", "sky": "dusk", "line": "The yoni falls on Nilachal"},
+   {"arch": "devi-cave", "sky": "night", "line": "A spring-fed stone in the dark"},
+   {"arch": "ghats", "sky": "dawn", "line": "Doors reopen after Ambubachi"}
+  ]
+ }
+}
