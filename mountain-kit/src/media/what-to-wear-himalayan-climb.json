@@ -86,5 +86,38 @@
     }
    }
   ]
+ },
+ "profile": {
+  "title": "Friendship Peak: what you wear",
+  "sub": "Typical layers, road-head to the 5,289 m summit · camp heights approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Base layer · sun hat",
+    "dx": -95
+   },
+   {
+    "name": "Bakarthach",
+    "m": 3300,
+    "day": "Walk-in · shell packed",
+    "dx": 75
+   },
+   {
+    "name": "Lady Leg",
+    "m": 3850,
+    "day": "Base camp · add down"
+   },
+   {
+    "name": "Summit camp",
+    "m": 4200,
+    "day": "Snow · glacier glasses"
+   },
+   {
+    "name": "Summit",
+    "m": 5289,
+    "day": "Pre-dawn · wear it all"
+   }
+  ]
  }
 }
