@@ -45,19 +45,28 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 31 | [x] jammu-to-katra-taxi — LIVE 2026-10-30 https://suzutravels.com/cabs/jammu-to-katra-taxi/ (ID 16606) | jammu to katra taxi fare | 880 (+ jammu to katra taxi 590, jammu airport taxi 260) | NEW 29 Oct. Vaishno Devi cluster (links from delhi-to-katra, delhi-to-jammu, jammu-taxi-service, vaishno-devi-yatra); Jammu airport/Tawi pickups, ~50 km |
 | 32 | [x] delhi-to-vrindavan-taxi — LIVE 2026-10-31 https://suzutravels.com/cabs/delhi-to-vrindavan-taxi/ (ID 16965) | delhi to vrindavan taxi | 1,300 (+ delhi to mathura taxi 590) | NEW 29 Oct. Mathura–Vrindavan same-day via Yamuna Expressway; links delhi-to-agra / outstation-cab-delhi; needs ROUTES row + PLACES |
 | 33 | [x] urbania-on-rent — LIVE 2026-11-01 https://suzutravels.com/cabs/urbania-on-rent/ (ID 17204) | urbania on rent | 5,400 (national) | NEW 29 Oct. Vehicle page (Delhi/Chandigarh pickup), engine Urbania rates; vehicle pages compete nationally |
+| — | Re-ranked 2026-11-01 by Cab SEO/QA (monthly; 5 unticked rows were left after urbania-on-rent). Keyword Planner IN/English 1 Nov, 49 keywords appended to research/kw_all.csv. Winnability unchanged: SERP log 1 Oct–1 Nov = aggregators (rome2rio, 12go, hurryupcabs, cabbazar, trivenicabs, easemytrip, makemytrip) + UGC spam, suzutravels.com in no top 10 yet; LOW-competition national vehicle terms and station/airport pages that sit in an existing cluster go first. | | | |
 | 34 | [ ] tempo-traveller-17-seater | 17 seater tempo traveller | 14,800 (LOW comp., national) | NEW 29 Oct. Vehicle page; engine tempo17 rates; links both tempo pages |
-| 35 | [ ] haridwar-to-kedarnath-taxi | haridwar to kedarnath taxi | 390 (peak 1,600 May; + haridwar to badrinath 390, rishikesh to kedarnath 140) | (was 32) Char Dham cluster; season May–Nov — build before Mar 2027; verify Sonprayag/Gaurikund road-head + registration rules |
-| 36 | [ ] delhi-to-jaipur-taxi | delhi to jaipur taxi | 1,900 (MEDIUM) | NEW 29 Oct. Outside the hill focus but big; NH48 / Delhi–Mumbai Expressway; needs ROUTES row |
-| 37 | [ ] ertiga-on-rent | ertiga on rent | 1,900 | NEW 29 Oct. Vehicle page |
-| 38 | [ ] chandigarh-to-amritsar-taxi | chandigarh to amritsar taxi | 480 | NEW 29 Oct. Links chandigarh-taxi-service, amritsar-taxi-service |
-| 39 | [ ] kathgodam-to-nainital-taxi | kathgodam to nainital taxi | 480 | NEW 29 Oct. Kumaon cluster (nainital-taxi-service, delhi-to-haldwani) |
-| 40 | [ ] chandigarh-to-kasauli-taxi | chandigarh to kasauli taxi | 390 (+ delhi to kasauli 140) | NEW 29 Oct. Short hill transfer, Kasauli PLACE exists (planner) |
-| 41 | [ ] delhi-to-jim-corbett-taxi | delhi to jim corbett taxi | 390 | NEW 29 Oct. Ramnagar |
-| 42 | [ ] amritsar-to-dharamshala-taxi | amritsar to dharamshala taxi | 260 (HIGH comp.) | (was 33) |
-| 43 | [ ] one-way-taxi-delhi | one way taxi delhi | 210 (HIGH; was 420 on 1 Oct) | (was 31) Service page: every one-way fare from Delhi, return-empty explanation |
-| 44 | [ ] srinagar-to-leh-taxi | srinagar to leh taxi | 210 | NEW 29 Oct. Season Jun–Oct, Zojila |
-| 45 | [ ] kashmir-taxi-package | kashmir taxi package | 170 | NEW 29 Oct. Multi-stop package page (per-day price) |
-| 46 | [ ] manali-to-spiti-taxi | manali to spiti taxi | 10 (was 120) | (was 34) Kunzum season, Kaza — low volume now |
+| 35 | [ ] tempo-traveller-12-seater | 12 seater tempo traveller | 22,200 (LOW comp., national) | NEW 1 Nov. Vehicle page; engine tempo rates; build right after the 17-seater page and cross-link both + tempo-traveller-hire-delhi / tempo-traveller-chandigarh (different intent: seat size vs city) |
+| 36 | [ ] kathgodam-to-nainital-taxi | kathgodam taxi | 1,300 (LOW) + kathgodam to nainital taxi 480 | (was 39) Station page for the Kumaon cluster: Kathgodam → Nainital/Bhimtal/Mukteshwar/Ranikhet; links nainital-taxi-service, delhi-to-haldwani-taxi, delhi-to-nainital-taxi |
+| 37 | [ ] ertiga-on-rent | ertiga on rent | 1,900 | NEW 29 Oct. Vehicle page (vol. 1,900 MEDIUM, 1 Nov) |
+| 38 | [ ] delhi-to-jaipur-taxi | delhi to jaipur taxi | 1,900 (MEDIUM) | NEW 29 Oct. Outside the hill focus but big; NH48 / Delhi–Mumbai Expressway; needs ROUTES row |
+| 39 | [ ] fortuner-on-rent | fortuner on rent | 1,600 (LOW) | NEW 1 Nov. Vehicle page; engine fortuner rates; Spiti/Leh/snow use cases |
+| 40 | [ ] dehradun-airport-taxi | dehradun airport taxi | 590 (LOW) | NEW 1 Nov. Jolly Grant pickups → Rishikesh/Mussoorie/Haridwar/Char Dham; links dehradun-taxi-service |
+| 41 | [ ] haridwar-to-kedarnath-taxi | haridwar to kedarnath taxi | 390 (peak 1,600 May; + haridwar to badrinath 390, rishikesh to kedarnath 140) | (was 32) Char Dham cluster; season May–Nov — build before Mar 2027; verify Sonprayag/Gaurikund road-head + registration rules |
+| 42 | [ ] haridwar-to-badrinath-taxi | haridwar to badrinath taxi | 390 (MEDIUM; peak 1,000 May) | NEW 1 Nov. Char Dham cluster; season May–Nov — build before Mar 2027 with 41 |
+| 43 | [ ] chandigarh-to-amritsar-taxi | chandigarh to amritsar taxi | 480 | NEW 29 Oct. Links chandigarh-taxi-service, amritsar-taxi-service |
+| 44 | [ ] chandigarh-to-kasauli-taxi | chandigarh to kasauli taxi | 390 (+ delhi to kasauli 140) | NEW 29 Oct. Short hill transfer, Kasauli PLACE exists (planner) |
+| 45 | [ ] delhi-to-jim-corbett-taxi | delhi to jim corbett taxi | 390 | NEW 29 Oct. Ramnagar |
+| 46 | [ ] delhi-airport-taxi | delhi airport taxi | 480 (LOW) | NEW 1 Nov. IGI T1/T2/T3 pickups to the hill routes (Shimla, Manali, Haridwar, Agra …); links outstation-cab-delhi |
+| 47 | [ ] amritsar-to-dalhousie-taxi | amritsar to dalhousie taxi | 320 (MEDIUM) | NEW 1 Nov. Via Pathankot; links amritsar-taxi-service, pathankot-to-dalhousie-taxi |
+| 48 | [ ] amritsar-to-dharamshala-taxi | amritsar to dharamshala taxi | 260 (HIGH comp.) | (was 33) |
+| 49 | [ ] manali-taxi-package | manali taxi package | 260 (LOW; peak 590 May) | NEW 1 Nov. Multi-stop package page (per-day price, Solang/Atal/Rohtang via union taxis) |
+| 50 | [ ] one-way-taxi-delhi | one way taxi delhi | 210 (HIGH; was 420 on 1 Oct) | (was 31) Service page: every one-way fare from Delhi, return-empty explanation |
+| 51 | [ ] srinagar-to-leh-taxi | srinagar to leh taxi | 210 | NEW 29 Oct. Season Jun–Oct, Zojila |
+| 52 | [ ] kashmir-taxi-package | kashmir taxi package | 170 | NEW 29 Oct. Multi-stop package page (per-day price) |
+| 53 | [ ] delhi-to-lansdowne-taxi | delhi to lansdowne taxi | 170 (MEDIUM) | NEW 1 Nov. Weekend hill drive, ~260 km |
+| 54 | [ ] manali-to-spiti-taxi | manali to spiti taxi | 10 (was 120) | (was 34) Kunzum season, Kaza — low volume now |
 
 ## Ideas (unranked — the SEO/QA agent re-ranks monthly from Keyword Planner)
 - Multi-stop itinerary cab pages: "Shimla Manali taxi package 6 days", "Himachal taxi tour from Delhi", "Dharamshala Dalhousie taxi package", "Kashmir taxi package" (price per day, route map with all stops).
