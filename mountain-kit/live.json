@@ -314,5 +314,15 @@
   "blurb": "Indian mountaineers and a 1907–2025 timeline",
   "added": "2026-10-31",
   "commercial": false
+ },
+ "kang-yatse": {
+  "id": 17279,
+  "path": "/mountains-of-india/kang-yatse/",
+  "kind": "peak",
+  "label": "Kang Yatse I & II",
+  "blurb": "6,250 m · Ladakh's open first 6,000er above the Markha Valley",
+  "added": "2026-11-01",
+  "peak_id": "kang-yatse-ii",
+  "commercial": false
  }
 }
