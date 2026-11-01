@@ -28,13 +28,13 @@ var css='.szc .szc-cmpbar{position:fixed;left:50%;bottom:14px;transform:translat
 '.szc-modal .szc-cmptb th,.szc-modal .szc-cmptb td{padding:8px 6px;border-bottom:1px solid #e2e6df;vertical-align:top;text-align:left;word-wrap:break-word}'+
 '.szc-modal .szc-cmptb tbody th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#56675b;font-weight:800;width:24%}'+
 '.szc-modal .szc-cmptb thead td{font-weight:800;color:#122615;font-size:14px}'+
-'.szc-modal .szc-cmptb thead img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block;margin-bottom:6px;background:#eef1ec}'+
+'.szc-modal .szc-cmptb thead img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block;margin-bottom:6px;background:#eef1ec}'+
 '.szc-modal .szc-cmptb .num{font-weight:800;color:#122615;white-space:nowrap}'+
 '.szc-modal .szc-cmpbest{display:inline-block;background:#d4af37;color:#122615;font-size:10px;font-weight:800;border-radius:999px;padding:2px 7px;margin-top:3px;letter-spacing:.04em;text-transform:uppercase}'+
 '.szc-modal .szc-cmptb a.szc-btn{padding:8px 10px;font-size:13px;width:100%;box-sizing:border-box}'+
 '.szc-modal .szc-cmpm .szc-btns{margin-top:14px}'+
 '.szc-modal .szc-cmpnote{font-size:12px;color:#56675b;margin:10px 0 0}'+
-'@media (max-width:600px){.szc-modal .szc-cmpm{padding:20px 12px 16px}.szc-modal .szc-cmptb{font-size:13px}.szc-modal .szc-cmptb tbody th{width:26%;font-size:10px}.szc .szc-cmpc span{max-width:96px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}';
+'@media (max-width:600px){.szc-modal .szc-cmpm{padding:20px 12px 16px}.szc-modal .szc-cmptb{font-size:13px}.szc-modal .szc-cmptb tbody th{width:26%;font-size:10px}.szc-modal .szc-cmptb thead img{height:72px}.szc .szc-cmpbar{flex-wrap:nowrap;gap:8px;padding:8px 10px;bottom:10px}.szc .szc-cmpch{flex-wrap:nowrap;gap:4px}.szc .szc-cmpc{padding:3px}.szc .szc-cmpc span,.szc .szc-cmphint{display:none}.szc .szc-cmpbar .szc-btn{padding:8px 10px;font-size:13px;white-space:nowrap}.szc .szc-cmpc img{width:28px;height:19px}.szc .szc-cmpc button{font-size:14px;padding:0 1px}.szc .szc-cmpx{font-size:12px}}';
 var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
 var bar=document.createElement('div');bar.className='szc-cmpbar';bar.hidden=true;bar.setAttribute('role','region');bar.setAttribute('aria-label','Compare cars');
 K.g.appendChild(bar);
@@ -53,7 +53,7 @@ function paint(){
  if(!C.length){bar.hidden=true;return;}
  bar.hidden=false;
  var ch=C.map(function(id){var v=FB[id];return '<span class="szc-cmpc">'+(v.photo?'<img src="'+v.photo.replace(/\.webp$/,'-800.webp')+'" alt="" width="34" height="23" loading="lazy">':'')+'<span>'+esc(v.name)+'</span><button type="button" data-cmprm="'+id+'" aria-label="Remove '+esc(v.name)+'">×</button></span>';}).join('');
- bar.innerHTML='<div class="szc-cmpch">'+ch+'</div>'+(C.length < 2?'<span class="szc-cmphint">Tick one more car to compare (max 3)</span>':'')+'<button type="button" class="szc-btn gold szc-cmpgo"'+(C.length < 2?' disabled':'')+'>Compare '+C.length+' cars</button><button type="button" class="szc-cmpx">Clear</button>';
+ bar.innerHTML='<div class="szc-cmpch">'+ch+'</div>'+(C.length < 2?'<span class="szc-cmphint">Tick one more car to compare (max 3)</span>':'')+'<button type="button" class="szc-btn gold szc-cmpgo"'+(C.length < 2?' disabled':'')+'>'+(C.length < 2?'Compare':'Compare '+C.length+' cars')+'</button><button type="button" class="szc-cmpx">Clear</button>';
 }
 function photo(v){return v.photo?v.photo.replace(/\.webp$/,'-800.webp'):'';}
 function open(){
