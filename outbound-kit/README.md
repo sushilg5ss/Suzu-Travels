@@ -28,6 +28,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /australia-tour-packages/ | 16306 | `.hx` country page (28 Oct 2026) — `pages/gen_australia.py` (Australia + New Zealand add-on; 8-day itinerary grid = 4 columns) |
 | /uzbekistan-tour-packages/ | 16490 | `.hx` country page (29 Oct 2026) — `pages/gen_uzbekistan.py` (Tashkent–Samarkand–Bukhara–Khiva; 8-day itinerary grid = 4 columns) |
 | /kazakhstan-tour-packages/ | 16997 | `.hx` country page (31 Oct 2026) — `pages/gen_kazakhstan.py` (Almaty + Kyrgyzstan add-on; 6-day itinerary grid = 3 columns; first page with Wikimedia Commons photos — per-photo licence in credits) |
+| /armenia-tour-packages/ | 17234 | `.hx` country page (1 Nov 2026) — `pages/gen_armenia.py` (Yerevan–Garni/Geghard–Sevan/Dilijan–Khor Virap/Noravank–Tatev; 6-day itinerary grid = 3 columns; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -46,6 +47,10 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 ## Notes (31 Oct 2026)
 - Hostinger returned 503 on ~40–60% of requests (GET and MCP writes) during the 31 Oct run; writes that 503 were NOT applied (checked with dry_run) — retry sequentially with pauses, never in parallel, and check `kazakhstan-tour-packages` counts before re-inserting cards.
 - Commons photos: search via `commons.wikimedia.org/w/index.php?search=…&ns6=1` HTML (the API is rate-limited), licence/author from the File: page, upload the `upload.wikimedia.org/…/thumb/…/1920px-…` URL (or the original if <1920 px).
+
+## Notes (1 Nov 2026)
+- Commons thumbnails from the sandbox: the robot policy returns 429 for fast/odd-size thumb requests — use standard widths (330/500/1920), ~10 s apart, descriptive UA; WordPress itself fetched the 1920px thumbs fine.
+- MFA Armenia visa-check tool: POST https://www.mfa.am/en/check-visa-needing with _token (from /en/visa/ page + cookie), country=IN, docutype=1 returns the official India text.
 
 ## Verification
 Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, live `?v=` and plain fetch. Hostinger bot-protection may show reCAPTCHA to headless Chromium after many requests — use curl or space the checks.
