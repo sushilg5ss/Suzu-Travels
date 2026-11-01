@@ -21,5 +21,6 @@
  "rameshwaram": {"id": 16162, "path": "/pilgrimage-tours/12-jyotirlinga/rameshwaram/", "kind": "temple", "label": "Rameshwaram, Tamil Nadu", "blurb": "The southernmost Jyotirlinga, by the sea", "added": "2026-10-27", "shrine": "rameshwaram-jyotirlinga"},
  "bhimashankar": {"id": 16358, "path": "/pilgrimage-tours/12-jyotirlinga/bhimashankar/", "kind": "temple", "label": "Bhimashankar, Maharashtra", "blurb": "Jyotirlinga in the Sahyadri forest, source of the Bhima", "added": "2026-10-28", "shrine": "bhimashankar-jyotirlinga"},
  "trimbakeshwar": {"id": 16534, "path": "/pilgrimage-tours/12-jyotirlinga/trimbakeshwar/", "kind": "temple", "label": "Trimbakeshwar, Maharashtra", "blurb": "Three-faced Jyotirlinga at the source of the Godavari", "added": "2026-10-29", "shrine": "trimbakeshwar-jyotirlinga"},
- "baidyanath": {"id": 17074, "path": "/pilgrimage-tours/12-jyotirlinga/baidyanath/", "kind": "temple", "label": "Baidyanath Dham, Jharkhand", "blurb": "Jyotirlinga and Shakti Peeth in Deoghar", "added": "2026-10-31", "shrine": "vaidyanath-jyotirlinga"}
+ "baidyanath": {"id": 17074, "path": "/pilgrimage-tours/12-jyotirlinga/baidyanath/", "kind": "temple", "label": "Baidyanath Dham, Jharkhand", "blurb": "Jyotirlinga and Shakti Peeth in Deoghar", "added": "2026-10-31", "shrine": "vaidyanath-jyotirlinga"},
+ "nageshwar": {"id": 17297, "path": "/pilgrimage-tours/12-jyotirlinga/nageshwar/", "kind": "temple", "label": "Nageshwar, Dwarka", "blurb": "Lord of the Serpents, by the western sea", "added": "2026-11-01", "shrine": "nageshwar-jyotirlinga"}
 }
