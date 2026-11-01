@@ -51,10 +51,11 @@ function sync(){
 function paint(){
  var C=K.C;sync();
  if(!C.length){bar.hidden=true;return;}
- bar.hidden=false;
+ bar.hidden=false;bar.style.bottom=(ctah()+12)+'px';
  var ch=C.map(function(id){var v=FB[id];return '<span class="szc-cmpc">'+(v.photo?'<img src="'+v.photo.replace(/\.webp$/,'-800.webp')+'" alt="" width="34" height="23" loading="lazy">':'')+'<span>'+esc(v.name)+'</span><button type="button" data-cmprm="'+id+'" aria-label="Remove '+esc(v.name)+'">×</button></span>';}).join('');
  bar.innerHTML='<div class="szc-cmpch">'+ch+'</div>'+(C.length < 2?'<span class="szc-cmphint">Tick one more car to compare (max 3)</span>':'')+'<button type="button" class="szc-btn gold szc-cmpgo"'+(C.length < 2?' disabled':'')+'>'+(C.length < 2?'Compare':'Compare '+C.length+' cars')+'</button><button type="button" class="szc-cmpx">Clear</button>';
 }
+function ctah(){var e=document.getElementById('szcta');if(!e){return 0;}var r=e.getBoundingClientRect();if(!r.height){return 0;}if(r.bottom < window.innerHeight-2){return 0;}return Math.round(r.height);}
 function photo(v){return v.photo?v.photo.replace(/\.webp$/,'-800.webp'):'';}
 function open(){
  var C=K.C;if(C.length < 2){return;}if(!M){return;}
@@ -80,6 +81,7 @@ function open(){
  var names=vs.map(function(v){return v.name;}).join(' vs ');
  var all=K.wa('Hi Suzu Travels, I am comparing '+names+' ('+K.TN[k]+') for '+FL.ctx+'. Please send the best all-in quote. Date: ___ , people: ___ (page: cabs compare)');
  M.querySelector('.szc-mbody').innerHTML='<div class="szc-cmpm"><h3 id="szc-mt">Compare cars</h3><p class="szc-cmpsub">'+esc(names)+' · '+K.TN[k]+'</p>'+tb+'<div class="szc-cmpw"><table class="szc-cmptb"><thead>'+head+'</thead><tbody>'+rows+'</tbody></table></div><p class="szc-cmpnote">Starting prices for off-season weekdays, '+esc(r.l)+' as the example route. Tolls, parking and state entry tax extra at actuals. Photos are representative of the class - the exact car can differ.</p><div class="szc-btns"><a class="szc-btn wa" target="_blank" rel="noopener" href="'+all+'">Get one quote for all on WhatsApp</a><a class="szc-btn line szc-cmpcb" href="#enquiry">Request a call back</a></div></div>';
+ var cm=M.querySelector('.szc-cmpm'),hh=ctah();if(cm){if(hh){cm.style.paddingBottom=(hh+16)+'px';}}
  M.hidden=false;document.body.style.overflow='hidden';
  var cl=M.querySelector('.szc-mclose');if(cl){cl.focus();}
 }
@@ -98,6 +100,7 @@ if(M){M.addEventListener('click',function(e){
  if(b){K.st(b.getAttribute('data-cmpt'));open();return;}
  if(t.closest('.szc-cmpcb')){M.hidden=true;document.body.style.overflow='';}
 });}
+window.addEventListener('scroll',function(){if(!bar.hidden){bar.style.bottom=(ctah()+12)+'px';}},{passive:true});
 window.szcCmp=paint;
 paint();
 })();
