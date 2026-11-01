@@ -759,5 +759,14 @@
  "hub_speed": {
   "sha": "390fad71386a5b02beaeb51b186fbe03a92fc717",
   "note": "31 Oct 2026 speed pass (hub only until the next global kit fold): fleet photos re-encoded <=120 KB + <id>-800.webp card variants + lighter hero-poster.webp at this commit; build.py finish() swaps the hub's photo/poster SHAs to it (same URL length), card <img> use -800"
+ },
+ "urbania-on-rent": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f517070d57c540404746819de8839031e660c510/cab-kit/media/urbania-on-rent/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f517070d57c540404746819de8839031e660c510/cab-kit/media/urbania-on-rent/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f517070d57c540404746819de8839031e660c510/cab-kit/media/urbania-on-rent/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
