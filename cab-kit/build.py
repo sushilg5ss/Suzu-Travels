@@ -291,6 +291,7 @@ assert JS.count(_HUB_ANCHOR) == 1, "kit_hub.js anchor not found in kit.js"
 HUB_JS = JS.replace(_HUB_ANCHOR, _HUB_ANCHOR + js_safe(re.sub(r"/\*.*?\*/", "", (ROOT / "kit_hub.js").read_text(), flags=re.S)))
 HUB_CSS = (ROOT / "kit_hub.css").read_text()
 HUB_JS = HUB_JS.replace("__SEATMAP_BASE__", MEDIA.get("seatmaps", {}).get("base", ""))
+HUB_JS = HUB_JS.replace("__COMPARE_JS__", MEDIA.get("compare", {}).get("js", ""))  # 1 Nov 2026: compare bar/table lazy-loaded (media/js/compare.js)
 # 30 Oct 2026 hub size budget: hub-only JS tighten - drop /* */ section comments and the indentation/line-join space after
 # a line ending in ; { } or , (line boundaries are never inside a string literal in the kit's ES5 code). Children unchanged.
 def _tight(js):
@@ -460,6 +461,8 @@ def finish(slug, h, css_extra=""):
         pu = MEDIA.get("film", {}).get("poster", "")
         if pu:
             m = m.replace(pu, swap(pu))
+    if slug == "cabs":  # 1 Nov 2026 hub size budget: wa.me hrefs keep , : ( ) / ? literal (valid in a query string, WhatsApp decodes the same)
+        m = re.sub(r'href="https://wa\.me/[^"]*"', lambda x: x.group(0).replace("%2C", ",").replace("%3A", ":").replace("%28", "(").replace("%29", ")").replace("%2F", "/").replace("%3F", "?"), m)
     if slug == "cabs":
         st = m.split("<style>", 1)[1].split("</style>", 1)[0]
         m = m.replace(f"<style>{st}</style>", f"<style>{prune_css(st, m.replace(st, ''))}</style>", 1)

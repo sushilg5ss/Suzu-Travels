@@ -768,5 +768,9 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "compare": {
+  "js": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5fd4aeb5033194168f023500e6ed4d4983e35606/cab-kit/media/js/compare.js",
+  "note": "compare bar + side-by-side table (hub, lazy-loaded on first Compare tick), ENHANCEMENTS #11, 1 Nov 2026"
  }
 }

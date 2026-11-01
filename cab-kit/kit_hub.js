@@ -306,3 +306,14 @@ if(SMX){
  }).observe(SMX,{childList:true});
 }
 }
+/* Compare 2-3 cars (ENHANCEMENTS #11, 1 Nov 2026): '+ Compare' on every gallery card; the bar + side-by-side table load from jsDelivr on the first tick (media/js/compare.js, hub size budget). */
+if(g){if(FB){
+ var CJ='__COMPARE_JS__',CL=0;
+ window.szcK={g:g,FL:FL,FB:FB,M:M,T:TIERS,TN:TNAME,C:[],inr:inr,wa:wa,r99:r99,qa:qa,tier:function(){return tier;},st:setTier,tog:ctog};
+ function ctog(id){var C=window.szcK.C,i=C.indexOf(id);if(i > -1){C.splice(i,1);}else{if(C.length > 2){C.shift();}C.push(id);}
+  if(window.szcCmp){window.szcCmp();return;}
+  if(CL){return;}CL=1;var s=document.createElement('script');s.src=CJ;s.async=true;s.onerror=function(){CL=0;};document.head.appendChild(s);}
+ qa('.szc-veh',g).forEach(function(cd){var a=cd.querySelector('.acts'),v=cd.querySelector('[data-view]');if(a){if(v){
+  var b=document.createElement('button');b.type='button';b.className='szc-btn sm line szc-cmpb';b.setAttribute('data-cmp',v.getAttribute('data-view'));b.textContent='+ Compare';
+  b.addEventListener('click',function(){ctog(b.getAttribute('data-cmp'));});a.appendChild(b);}}});
+}}

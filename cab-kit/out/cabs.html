@@ -560,6 +560,17 @@ if(SMX){
  }).observe(SMX,{childList:true});
 }
 }
+
+if(g){if(FB){
+ var CJ='https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5fd4aeb5033194168f023500e6ed4d4983e35606/cab-kit/media/js/compare.js',CL=0;
+ window.szcK={g:g,FL:FL,FB:FB,M:M,T:TIERS,TN:TNAME,C:[],inr:inr,wa:wa,r99:r99,qa:qa,tier:function(){return tier;},st:setTier,tog:ctog};
+ function ctog(id){var C=window.szcK.C,i=C.indexOf(id);if(i > -1){C.splice(i,1);}else{if(C.length > 2){C.shift();}C.push(id);}
+  if(window.szcCmp){window.szcCmp();return;}
+  if(CL){return;}CL=1;var s=document.createElement('script');s.src=CJ;s.async=true;s.onerror=function(){CL=0;};document.head.appendChild(s);}
+ qa('.szc-veh',g).forEach(function(cd){var a=cd.querySelector('.acts'),v=cd.querySelector('[data-view]');if(a){if(v){
+  var b=document.createElement('button');b.type='button';b.className='szc-btn sm line szc-cmpb';b.setAttribute('data-cmp',v.getAttribute('data-view'));b.textContent='+ Compare';
+  b.addEventListener('click',function(){ctog(b.getAttribute('data-cmp'));});a.appendChild(b);}}});
+}}
 }
 })();
 </script></div>
