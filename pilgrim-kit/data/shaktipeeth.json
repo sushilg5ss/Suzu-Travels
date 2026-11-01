@@ -1373,8 +1373,9 @@
       "open": "08:00-13:00, 14:30-17:15 (regular schedule)",
       "aarti": "19:30",
       "note": "Snana 05:30, nitya puja 06:00; temple closes 13:00 for bhog. A 'special schedule' opens 09:00. Footwear left at camps on approach road.",
-      "as_of": "2026-10-08",
-      "source": "https://maakamakhya.org/"
+      "as_of": "2026-11-01",
+      "source": "https://maakamakhya.org/",
+      "special": "Festival 'special' schedule: opens 09:00, bhog closure 13:00, closes at sunset, aarti 19:30"
     },
     "festivals": [
       {
@@ -1412,19 +1413,28 @@
         "name": "Ambubachi Mela 2026",
         "start": "2026-06-22",
         "end": "2026-06-26",
-        "note": "Closed to devotees 23-25 Jun, reopened 26 Jun morning",
-        "as_of": "2026-10-08",
+        "note": "Prabritti 22 Jun 2026 9:26 pm; doors closed 23-25 Jun; reopened 26 Jun morning (Nribritti). Official notice 17 Jun 2026 misprints '2022'.",
+        "as_of": "2026-11-01",
         "source": "https://maakamakhya.org/"
+      },
+      {
+        "name": "Ambubachi Mela 2027",
+        "start": null,
+        "end": null,
+        "note": "Not announced yet; usually ~22-26 June",
+        "as_of": "2026-11-01",
+        "source": "https://www.maakamakhya.org/festival"
       }
     ],
     "how_to_reach": {
-      "air": null,
-      "rail": null,
-      "road": null,
+      "air": "LGBI Guwahati airport ~24 km (OSRM 23.6 km, ~30 min)",
+      "rail": "Kamakhya Junction ~7 km (nearest); Guwahati station ~8 km",
+      "road": "Buses to Adabari, Paltan Bazar, ISBT; hill road to footwear camps, last stretch on foot",
       "sources": [
-        "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+        "https://www.maakamakhya.org/reach",
+        "OSRM 2026-11-01"
       ],
-      "note": "Distances not verified unless stated; null = not verified."
+      "as_of": "2026-11-01"
     },
     "nearby": [
       "Umananda island temple",
@@ -1456,9 +1466,35 @@
       }
     ],
     "unverified": [
-      "Airport/rail distances"
+      "Naranarayan 1565 rebuild (not on official site)",
+      "Hill altitude",
+      "Umananda distance"
     ],
-    "as_of": "2026-10-08"
+    "as_of": "2026-11-01",
+    "booking": {
+      "general_queue_free": "https://mkdonlinegenq.in",
+      "special_darshan": "https://www.mkdonline.co.in",
+      "defence": "https://defence.mkdonline.in",
+      "note": "Offline counter sale of special darshan discontinued from 15 Jun 2026 (notice 10 Jun 2026); 'Special Coupon Booking portal' under testing - not accepted. Use only links on maakamakhya.org.",
+      "source": "https://www.maakamakhya.org/",
+      "as_of": "2026-11-01"
+    },
+    "corridor": {
+      "name": "Maa Kamakhya Divyalok Pariyojana / Access Corridor (PM-DevINE)",
+      "status": "Gauhati HC allowed Feb 2026, works restricted to down-hill area (not temple premises); construction began after Ambubachi 2026, at least two years",
+      "sources": [
+        "https://assamtribune.com/guwahati/construction-starts-on-kamakhya-corridor-project-completion-likely-in-two-years-1613553",
+        "https://dailypioneer.com/news/guwahati-hc-clears-498-crore-ancillary-works-for-kamakhya-temple-corridor"
+      ],
+      "as_of": "2026-11-01"
+    },
+    "rules": {
+      "footwear": "Only at designated camps on the approach road",
+      "tobacco": "Banned on Nilachal since 1 Jan 2016",
+      "dress_phone_photo": "Not published officially - confirm locally",
+      "source": "https://www.maakamakhya.org/",
+      "as_of": "2026-11-01"
+    }
   },
   {
     "slug": "kalighat-kolkata",
@@ -3043,9 +3079,9 @@
     "town": "Madurai",
     "district": "Madurai",
     "state": "Tamil Nadu",
-    "lat": null,
-    "lon": null,
-    "coord_source": null,
+    "lat": 9.9195433,
+    "lon": 78.1188334,
+    "coord_source": "Nominatim/OSM 2026-11-01",
     "legend_summary": "Madurai's Meenakshi temple is often mentioned in Shakti Peetha listicles, but it does not appear in the compiled 51 or Ashtadasha tables; it is best presented as one of India's greatest Devi temples. In the Thiruvilaiyadal Puranam, King Malayadhwaja Pandya and Queen Kanchanamalai performed a fire sacrifice for a son, and instead a three-year-old girl with three breasts rose from the flames; a divine voice said the third would vanish when she met her husband. That husband was Shiva, as Sundareswarar. The temple's soaring painted gopurams and hall of a thousand pillars are icons of Tamil architecture.",
     "story_beats": [
       "Fish-eyed princess of Madurai",
@@ -3054,13 +3090,11 @@
       "Thousand-pillared hall stands proud"
     ],
     "darshan": {
-      "open": null,
+      "open": "06:00-12:30, 16:00-21:00",
       "aarti": null,
-      "note": "Official timings not published/verified; confirm locally.",
-      "as_of": "2026-10-08",
-      "source": [
-        "https://maduraimeenakshi.hrce.tn.gov.in/"
-      ]
+      "note": "TN Tourism (official) hours; blogs show 04:30/05:00-21:30 with pooja slots - confirm locally. HR&CE site unreachable 2026-11-01.",
+      "as_of": "2026-11-01",
+      "source": "https://www.tamilnadutourism.tn.gov.in/destinations/meenakshi-amman-temple"
     },
     "festivals": [
       {
@@ -3093,16 +3127,33 @@
           "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
           "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
         ]
+      },
+      {
+        "name": "Chithirai Thiruvizha / Meenakshi Thirukalyanam 2027",
+        "start": null,
+        "end": null,
+        "note": "Not announced yet; Tamil month Chithirai (Apr-May)",
+        "as_of": "2026-11-01",
+        "source": "https://www.tamilnadutourism.tn.gov.in/events/chithirai"
+      },
+      {
+        "name": "Kumbhabhishekam 2026",
+        "start": "2026-09-17",
+        "end": "2026-09-17",
+        "note": "Consecration held; ~7 lakh devotees expected",
+        "as_of": "2026-11-01",
+        "source": "https://curlytales.com/india/trending/madurai-temple-consecration-special-buses-extra-trains-announced-for-devotees/amp/"
       }
     ],
     "how_to_reach": {
-      "air": null,
-      "rail": null,
-      "road": null,
+      "air": "Madurai Airport ~11 km (OSRM 10.9 km, ~20 min)",
+      "rail": "Madurai Junction ~1.6 km (TN Tourism ~1 km)",
+      "road": "Bus stand ~1 km; Rameswaram ~175 km (OSRM)",
       "sources": [
-        "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+        "https://www.tamilnadutourism.tn.gov.in/destinations/meenakshi-amman-temple",
+        "OSRM 2026-11-01"
       ],
-      "note": "Distances not verified unless stated; null = not verified."
+      "as_of": "2026-11-01"
     },
     "nearby": [
       "Thirumalai Nayakkar Mahal",
@@ -3133,11 +3184,25 @@
       }
     ],
     "unverified": [
-      "Coordinates",
-      "Chithirai 2027 dates"
+      "HR&CE pooja schedule",
+      "Chithirai 2027 dates",
+      "Nayak rebuild details",
+      "985 pillars / tallest gopuram height"
     ],
     "classical_note": "Included because often mislabelled as a Shakti Peeth; not in classical lists.",
-    "as_of": "2026-10-08"
+    "as_of": "2026-11-01",
+    "rules": {
+      "phones": "Banned inside since 3 Mar 2018; Madras HC Dec 2022 direction for TN temples",
+      "dress": "Traditional modest dress expected; 2015 HC dress-code order stayed Jan 2016",
+      "as_of": "2026-11-01"
+    },
+    "architecture": {
+      "gopurams": 14,
+      "height": "about 45-50 m",
+      "note": "1000-pillar hall with musical pillars; Muthupillai Mandapam 1613; devastated 1310 and restored (TN Tourism)",
+      "source": "https://www.tamilnadutourism.tn.gov.in/destinations/meenakshi-amman-temple",
+      "as_of": "2026-11-01"
+    }
   },
   {
     "slug": "jayanti-nartiang",
