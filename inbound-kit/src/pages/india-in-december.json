@@ -217,7 +217,9 @@
      "Your driver",
      "With a private car, your driver's name, photo and car number are shared with you before the trip, and our Himachal office is a phone call away. See our <a href=\"/india-tours/private-driver-india/\">private car with driver</a>."
     ]
-   ]
+   ],
+   "video": "cost",
+   "video_caption": "What a December trip with us includes: the Golden Triangle from US$299 (4 days) or US$449 (6 days) per person, two sharing, or your own December route on request — airport pick-up and drop, a private car and driver, and a written US-dollar total before you pay."
   }
  ],
  "prices": {
@@ -333,5 +335,6 @@
   "kerala-tour",
   "goa-holiday",
   "best-time-to-visit-himachal"
- ]
+ ],
+ "talk": true
 }
