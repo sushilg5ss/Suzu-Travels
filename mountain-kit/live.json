@@ -324,5 +324,15 @@
   "added": "2026-11-01",
   "peak_id": "kang-yatse-ii",
   "commercial": false
+ },
+ "kamet": {
+  "id": 17398,
+  "path": "/mountains-of-india/kamet/",
+  "kind": "peak",
+  "label": "Kamet",
+  "blurb": "7,756 m · first summit above 25,000 ft, 1931",
+  "added": "2026-11-02",
+  "peak_id": "kamet",
+  "commercial": false
  }
 }
