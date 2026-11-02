@@ -772,5 +772,14 @@
  "compare": {
   "js": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5fd4aeb5033194168f023500e6ed4d4983e35606/cab-kit/media/js/compare.js",
   "note": "compare bar + side-by-side table (hub, lazy-loaded on first Compare tick), ENHANCEMENTS #11, 1 Nov 2026"
+ },
+ "tempo-traveller-17-seater": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@06c6b6ee623d574a6f4923a0cb9a088de8c47438/cab-kit/media/tempo-traveller-17-seater/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@06c6b6ee623d574a6f4923a0cb9a088de8c47438/cab-kit/media/tempo-traveller-17-seater/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@06c6b6ee623d574a6f4923a0cb9a088de8c47438/cab-kit/media/tempo-traveller-17-seater/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
