@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "nagara",
+  "sky": "dawn",
+  "deva": "श्री सिद्धिविनायक",
+  "kicker": "Ganapati · Prabhadevi, Mumbai",
+  "beats": [
+   "Parvati shapes a guardian from clay",
+   "Shiva gives him an elephant's head",
+   "First worshipped, remover of obstacles",
+   "Mumbai queues before dawn on Tuesdays"
+  ]
+ },
+ "story": {
+  "title": "The legend of Ganapati",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Parvati's guardian at the door"},
+   {"arch": "himalaya", "sky": "snow", "line": "Kailash: the elephant head"},
+   {"arch": "nagara", "sky": "dawn", "line": "Vighnaharta, honoured first"},
+   {"arch": "ghats", "sky": "dusk", "line": "Modaks and diyas for Siddhivinayak"}
+  ]
+ }
+}

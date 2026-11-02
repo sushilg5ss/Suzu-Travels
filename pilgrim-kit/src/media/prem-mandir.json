@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "dusk",
+  "deva": "प्रेम मन्दिर",
+  "kicker": "Radha Krishna · Vrindavan",
+  "beats": [
+   "Krishna's childhood in the forest of Vrindavan",
+   "Govardhan lifted, Kaliya tamed, the Raas",
+   "A temple of love in marble",
+   "Lights and fountains after sunset"
+  ]
+ },
+ "story": {
+  "title": "The leela of Vrindavan",
+  "beats": [
+   {"arch": "ghats", "sky": "dawn", "line": "Vrindavan, Krishna's forest"},
+   {"arch": "hills", "sky": "dusk", "line": "Govardhan lifted against the storm"},
+   {"arch": "ghats", "sky": "night", "line": "The Raas under the full moon"},
+   {"arch": "pillar", "sky": "dusk", "line": "Prem Mandir glows after dark"}
+  ]
+ }
+}
