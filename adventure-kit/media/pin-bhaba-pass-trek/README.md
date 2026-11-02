@@ -13,3 +13,4 @@ Photos (all generic, neutral alt — none is verified Bhaba or Pin Valley; no pl
 - s3 WP 14798 https://suzutravels.com/wp-content/uploads/2026/10/spiti-bike-trip-braided-river-valley-scaled.webp (cold-desert side)
 - s4 WP 16064 https://suzutravels.com/wp-content/uploads/2026/10/trek-tents-grassy-mountain-bowl.webp (camps)
 - also suitable for cards: WP 14797 prayer flags at a mountain-top shrine; WP 16065 trek tents on a meadow; WP 16063 clear stream below snow peaks (stream crossings)
+- Posters: WP 17464 hero, WP 17465 explainer. Base: https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b42ffe265d0e8c958c6e4b2b4d94849d740f9d3b/adventure-kit/media/pin-bhaba-pass-trek/
