@@ -1,0 +1,110 @@
+{
+ "hero": {
+  "kicker": "BEST TIME · INDIAN HIMALAYA",
+  "words": [
+   [
+    "MAY–JUNE:",
+    "BEFORE RAIN."
+   ],
+   [
+    "JULY:",
+    "RAIN SHADOW."
+   ],
+   [
+    "SEPT–OCT:",
+    "CLEAR SKIES."
+   ],
+   [
+    "WINTER:",
+    "SNOW TREKS."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-10555794.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": -60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -120
+    }
+   }
+  ],
+  "size": 110
+ },
+ "ladder": {
+  "kicker": "CLIMBING WINDOWS",
+  "title": "Each peak has its own season",
+  "peaks": [
+   "friendship-peak",
+   "deo-tibba",
+   "mount-yunam",
+   "kang-yatse-ii",
+   "chau-chau-kang-nilda"
+  ],
+  "subs": {
+   "friendship-peak": "May–Jun & Sep–Oct",
+   "deo-tibba": "May–Jun & Sep–Oct",
+   "mount-yunam": "Jun–Sep",
+   "kang-yatse-ii": "Mid-Jun–Sep",
+   "chau-chau-kang-nilda": "Jun–Sep"
+  },
+  "end": "Typical windows: check the forecast and local orders"
+ }
+}
