@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1600, height=900" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { margin:0; overflow:hidden; background:#0b1f33; }
+#root { position:relative; width:100%; height:100%; overflow:hidden; font-family:"PJS",sans-serif; color:#fff; background:#0b1f33; }
+.kick { position:absolute; left:80px; top:56px; color:#d4a24c; font-weight:800; font-size:26px; letter-spacing:0.18em; }
+.h { position:absolute; left:80px; top:96px; font-weight:800; font-size:60px; letter-spacing:-0.02em; }
+.km { position:absolute; right:80px; top:60px; width:420px; text-align:right; font-weight:800; font-size:76px; color:#fff; }
+.kml { position:absolute; right:80px; top:150px; width:420px; text-align:right; font-weight:500; font-size:24px; color:rgba(255,255,255,0.8); }
+svg.p { position:absolute; left:0; top:0; width:1600px; height:900px; overflow:visible; font-family:PJS; }
+.badge { position:absolute; left:640px; top:770px; height:64px; padding:0 30px; border-radius:32px; background:#c0392b; color:#fff; font-weight:800; font-size:28px; line-height:64px; white-space:nowrap; }
+.chip { position:absolute; left:80px; top:770px; height:64px; padding:0 30px; border-radius:32px; background:#d4a24c; color:#0b1f33; font-weight:800; font-size:28px; line-height:64px; white-space:nowrap; }
+.note { position:absolute; right:80px; top:858px; color:rgba(255,255,255,0.55); font-weight:500; font-size:18px; }
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1600" data-height="900">
+<div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="0" style="position:absolute;inset:0">
+<div class="kick">KINNAUR → SPITI · ON FOOT</div>
+<div class="h">Over the pass in 5–6 days</div>
+<div class="km" id="km">0 km</div><div class="kml">on foot from Kafnu</div>
+<svg class="p" viewBox="0 0 1600 900">
+<defs><linearGradient id="gr" x1="140" y1="0" x2="1460" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3fa34d"/><stop offset="0.45" stop-color="#7fbf6a"/><stop offset="0.7" stop-color="#ffffff"/><stop offset="0.82" stop-color="#ffffff"/><stop offset="1" stop-color="#c98b4a"/></linearGradient>
+<clipPath id="cp"><rect id="cr" x="0" y="0" width="0" height="900"/></clipPath></defs>
+<line x1="140" y1="700.0" x2="1460" y2="700.0" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+<path id="ghost" d="M 140 700.0 C 285.2 700.0 285.2 559.2 430.4 559.2 C 522.8 559.2 522.8 497.6 615.2 497.6 C 747.2 497.6 747.2 392.0 879.2 392.0 C 1024.4 392.0 1024.4 260.0 1169.6 260.0 C 1314.8 260.0 1314.8 453.6 1460 453.6" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+<path id="trail" d="M 140 700.0 C 285.2 700.0 285.2 559.2 430.4 559.2 C 522.8 559.2 522.8 497.6 615.2 497.6 C 747.2 497.6 747.2 392.0 879.2 392.0 C 1024.4 392.0 1024.4 260.0 1169.6 260.0 C 1314.8 260.0 1314.8 453.6 1460 453.6" clip-path="url(#cp)" fill="none" stroke="url(#gr)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="st" id="st0"><circle cx="140" cy="700.0" r="11" fill="#fff"/><text x="140" y="666.0" text-anchor="start" fill="#fff" font-size="30" font-weight="800">Kafnu</text><text x="140" y="750.0" text-anchor="start" fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">2,400 m</text></g><g class="st" id="st1"><circle cx="430.4" cy="559.2" r="11" fill="#fff"/><text x="430.4" y="525.2" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">Mulling</text><text x="430.4" y="609.2" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">~3,200 m</text></g><g class="st" id="st2"><circle cx="615.2" cy="497.6" r="11" fill="#fff"/><text x="615.2" y="463.6" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">Kara</text><text x="615.2" y="547.6" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">~3,550 m</text></g><g class="st" id="st3"><circle cx="879.2" cy="392.0" r="11" fill="#fff"/><text x="879.2" y="358.0" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">Phutsirang</text><text x="879.2" y="442.0" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">~4,150 m</text></g><g class="st" id="st4"><circle cx="1169.6" cy="260.0" r="11" fill="#fff"/><text x="1169.6" y="226.0" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">Pin Bhaba Pass</text><text x="1169.6" y="310.0" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">~4,900 m</text></g><g class="st" id="st5"><circle cx="1460" cy="453.6" r="11" fill="#fff"/><text x="1460" y="419.6" text-anchor="end" fill="#fff" font-size="30" font-weight="800">Mudh</text><text x="1460" y="503.6" text-anchor="end" fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">~3,800 m</text></g>
+<circle id="dot" cx="140" cy="700.0" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/>
+</svg>
+<div class="chip" id="chip">Late Jun–mid Sep · Get Quote</div>
+<div class="badge" id="badge">No bail-out after Phutsirang</div>
+<div class="note">Schematic, not to scale · altitudes approximate</div>
+</div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const trail = document.getElementById("trail"), dot = document.getElementById("dot"), cr = document.getElementById("cr"), km = document.getElementById("km");
+const L = trail.getTotalLength();
+function ptAtX(x) { let lo = 0, hi = L; for (let k = 0; k < 30; k++) { const m = (lo + hi) / 2; if (trail.getPointAtLength(m).x < x) lo = m; else hi = m; } return trail.getPointAtLength(lo); }
+const st = { p: 0 };
+function place() { const x = 140 + st.p * 1320; cr.setAttribute("width", (x + 8).toFixed(1)); const pt = ptAtX(x); dot.setAttribute("cx", pt.x.toFixed(2)); dot.setAttribute("cy", pt.y.toFixed(2)); km.textContent = (st.p >= 0.999 ? "~50" : Math.round(st.p * 50)) + " km"; }
+tl.set([".st", "#badge", "#chip"], { opacity: 0 }, 0);
+tl.to("#st0", { opacity: 1, duration: 0.4 }, 0.3);
+tl.to(st, { p: 1, duration: 7.2, ease: "none", onUpdate: place }, 0.8);
+[[1,0.22],[2,0.36],[3,0.56],[4,0.78],[5,1]].forEach(([i,f]) => tl.to("#st" + i, { opacity: 1, duration: 0.35 }, 0.8 + f * 7.2 - 0.15));
+tl.fromTo("#badge", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 0.8 + 0.56 * 7.2);
+tl.fromTo("#chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 8.3);
+tl.to("#root", { opacity: 1, duration: 2.7 }, 8.3);
+place();
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script></body></html>
