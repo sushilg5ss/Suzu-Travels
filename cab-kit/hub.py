@@ -115,7 +115,8 @@ def build():
              ("tempo-traveller-hire-delhi", "Tempo Traveller hire in Delhi", "12–17 seats for hill trips, Char Dham and weddings."),
              ("tempo-traveller-chandigarh", "Tempo Traveller in Chandigarh", "12-seater, 17-seater & Urbania from the Tricity and IXC to Shimla, Manali, Dharamshala, Amritsar & Rishikesh."),
              ("innova-crysta-on-rent", "Innova Crysta on rent", "With driver, from ₹19/km for tours; one-way hill drops."),
-             ("urbania-on-rent", "Force Urbania on rent", "Premium van, up to 17 reclining seats, from ₹36/km; Delhi NCR & Chandigarh pickup.")]
+             ("urbania-on-rent", "Force Urbania on rent", "Premium van, up to 17 reclining seats, from ₹36/km; Delhi NCR & Chandigarh pickup."),
+             ("tempo-traveller-17-seater", "17 seater Tempo Traveller", "Long-body Force Traveller for 13–17 people, from ₹30/km; Delhi NCR & Chandigarh pickup.")]
     lc = "".join(f'<article class="szc-card"><div class="szc-card-b"><span class="szc-tag">Service</span><h3>{t}</h3><p>{d}</p><div class="acts">'
                  + (f'<a class="szc-btn sm em" href="{page_url(s)}">Rates & details</a>' if is_live(s) else "")
                  + f'<a class="szc-btn sm wa" href="{wa("Hi Suzu Travels, I need " + t + ". Date: ___ , people: ___ (page: cabs)")}" target="_blank" rel="noopener">WhatsApp</a></div></div></article>' for s, t, d in local)
