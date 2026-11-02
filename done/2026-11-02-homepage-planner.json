@@ -1,0 +1,28 @@
+{
+ "id": "2026-11-02-homepage-planner",
+ "agent": "Interactive (Sushil online)",
+ "summary": "Homepage 31 Oct a11y contrast + 7 links, 1 Nov font-swap CLS fix, planner engine data sync; Trip Planner v1.8 (Kashi-Prayagraj-Ayodhya, Amarnath Pahalgam) + roads-geo",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "2eddde846eb866129ae7234b8e68de52e13c1c92af2ed59106225e5ae70942d9",
+   "base_sha256": "0c57cb12da225c053dc410f38d8cfb8e2401514abd996b7af91396998a23af80",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "fbf154601e34f0c6f3c46a669ca81d37c4a5677afffb50724f0369a6a37513d1",
+   "base_sha256": "53494198dfdf1a48db1300db8d7dcc09ce96861523f396c324794f16e0ff2025",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  },
+  {
+   "target": "plan-your-trip/roads-geo.json",
+   "sha256": "304bbfe2675024c9e68eceb5b7abe45ca82d07d72e17e0e8395aeaf489f49579",
+   "base_sha256": "f18bb38760780fa4642837e040a7b6473bc2117adcf8ad5ff5d6b713844fd109",
+   "url": "https://suzutravels.com/plan-your-trip/roads-geo.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-02T09:27:16Z",
+ "status": "deployed"
+}
