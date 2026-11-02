@@ -292,6 +292,7 @@ HUB_JS = JS.replace(_HUB_ANCHOR, _HUB_ANCHOR + js_safe(re.sub(r"/\*.*?\*/", "", 
 HUB_CSS = (ROOT / "kit_hub.css").read_text()
 HUB_JS = HUB_JS.replace("__SEATMAP_BASE__", MEDIA.get("seatmaps", {}).get("base", ""))
 HUB_JS = HUB_JS.replace("__COMPARE_JS__", MEDIA.get("compare", {}).get("js", ""))  # 1 Nov 2026: compare bar/table lazy-loaded (media/js/compare.js)
+HUB_JS = HUB_JS.replace("__INDIA_GEO__", MEDIA.get("india_labels", {}).get("json", ""))  # 2 Nov 2026: map labels only inside India (ENHANCEMENTS #12)
 # 30 Oct 2026 hub size budget: hub-only JS tighten - drop /* */ section comments and the indentation/line-join space after
 # a line ending in ; { } or , (line boundaries are never inside a string literal in the kit's ES5 code). Children unchanged.
 def _tight(js):

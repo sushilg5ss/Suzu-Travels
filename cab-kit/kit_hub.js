@@ -317,3 +317,8 @@ if(g){if(FB){
   var b=document.createElement('button');b.type='button';b.className='szc-btn sm line szc-cmpb';b.setAttribute('data-cmp',v.getAttribute('data-view'));b.textContent='+ Compare';
   b.addEventListener('click',function(){ctog(b.getAttribute('data-cmp'));});a.appendChild(b);}}});
 }}
+/* Map labels only inside India (ENHANCEMENTS #12, 2 Nov 2026): place/POI/airport labels get a 'within' filter with India's outline (Natural Earth 10m admin-0 India view, public domain, buffered 3 km) lazy-loaded from jsDelivr (media/geo/india-labels.json) when the map first loads. Nothing is drawn - boundaries stay hidden. If the file fails, labels stay as before. */
+var IGJ='__INDIA_GEO__',IG=null,IGL=0,IGS=['place','poi','aerodrome_label'];
+function inLbl(){if(map){if(IG){if(!map.szcIn){map.szcIn=1;try{map.getStyle().layers.forEach(function(L){if(L.type==='symbol'){if(IGS.indexOf(L['source-layer']) > -1){var f=map.getFilter(L.id),w=['within',IG];map.setFilter(L.id,f?['all',f,w]:w);}}});}catch(e){}}}}}
+var emO=ensureMap;
+ensureMap=function(cb){emO(function(){if(!IGL){IGL=1;try{fetch(IGJ).then(function(r){return r.json();}).then(function(j){IG=j;inLbl();})['catch'](function(){});}catch(e){}}inLbl();cb();});};

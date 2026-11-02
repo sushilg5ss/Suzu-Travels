@@ -571,6 +571,11 @@ if(g){if(FB){
   var b=document.createElement('button');b.type='button';b.className='szc-btn sm line szc-cmpb';b.setAttribute('data-cmp',v.getAttribute('data-view'));b.textContent='+ Compare';
   b.addEventListener('click',function(){ctog(b.getAttribute('data-cmp'));});a.appendChild(b);}}});
 }}
+
+var IGJ='https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@9cc472fbb493bb313c213c9860910490e42c5f10/cab-kit/media/geo/india-labels.json',IG=null,IGL=0,IGS=['place','poi','aerodrome_label'];
+function inLbl(){if(map){if(IG){if(!map.szcIn){map.szcIn=1;try{map.getStyle().layers.forEach(function(L){if(L.type==='symbol'){if(IGS.indexOf(L['source-layer']) > -1){var f=map.getFilter(L.id),w=['within',IG];map.setFilter(L.id,f?['all',f,w]:w);}}});}catch(e){}}}}}
+var emO=ensureMap;
+ensureMap=function(cb){emO(function(){if(!IGL){IGL=1;try{fetch(IGJ).then(function(r){return r.json();}).then(function(j){IG=j;inLbl();})['catch'](function(){});}catch(e){}}inLbl();cb();});};
 }
 })();
 </script></div>

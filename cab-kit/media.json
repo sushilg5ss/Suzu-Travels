@@ -781,5 +781,10 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "india_labels": {
+  "json": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@9cc472fbb493bb313c213c9860910490e42c5f10/cab-kit/media/geo/india-labels.json",
+  "note": "India outline used only as an invisible within-filter so map labels outside India are hidden (hub planner), ENHANCEMENTS #12, 2 Nov 2026",
+  "source": "Natural Earth 10m admin-0 countries, India point of view (ne_10m_admin_0_countries_ind), public domain; buffered 0.03 deg, simplified 0.012 deg"
  }
 }
