@@ -1,0 +1,110 @@
+{
+ "hero": {
+  "kicker": "SUMMITS UNDER 5,000 M · INDIA",
+  "words": [
+   [
+    "15 SUMMITS",
+    "UNDER 5,000."
+   ],
+   [
+    "LOWEST:",
+    "3,022 M."
+   ],
+   [
+    "HIGHEST:",
+    "4,745 M."
+   ],
+   [
+    "NEXT STEP:",
+    "5,289 M."
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 450
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     9.6,
+     13.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "y": -150
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40,
+     "y": -190
+    }
+   }
+  ],
+  "size": 110
+ },
+ "ladder": {
+  "kicker": "SUMMITS 3,000–4,999 m",
+  "title": "Summit treks, at their true heights",
+  "peaks": [
+   "nag-tibba",
+   "churdhar",
+   "kedarkantha",
+   "patalsu",
+   "pangarchulla",
+   "friendship-peak"
+  ],
+  "subs": {
+   "nag-tibba": "Uttarakhand",
+   "churdhar": "Himachal",
+   "kedarkantha": "Uttarakhand",
+   "patalsu": "Himachal",
+   "pangarchulla": "Uttarakhand",
+   "friendship-peak": "The next step"
+  },
+  "end": "The next step: a 5,000 m trekking peak"
+ }
+}
