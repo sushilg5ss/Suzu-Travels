@@ -54,3 +54,6 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 
 ## Verification
 Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, live `?v=` and plain fetch. Hostinger bot-protection may show reCAPTCHA to headless Chromium after many requests — use curl or space the checks.
+
+## Notes (2 Nov 2026)
+- Hub has a comparison table (`#compare-destinations`, `COMPARE` in `gen_hub.py`). When a new country page goes live, add a row to COMPARE (entry line + its official check date, typical trip, best season from the fact box) as well as to WHEN.

@@ -338,6 +338,73 @@ def when_block():
             '<div class="hx-when">' + ''.join(cards) + '</div>'
             '<p class="hx-wkey">Blue chips = the snow season. Vietnam has different seasons in the north, centre and south, so we suggest the best region for your month. Singapore can be visited all year; February to April is usually the driest.</p></section>')
 
+# Comparison table (2 Nov 2026, BACKLOG #9). Typical trip + best season copied from each live page's fact box
+# (.hx: pages/gen_*.py facts; .sx: live si-fact boxes read 2 Nov 2026). Entry lines: .hx pages = their own official
+# check (date shown); 9 .sx pages re-checked 2 Nov 2026 on official sources (immigration/MFA/embassy portals).
+COMPARE = [  # region, slug, label, entry, checked, typical trip, best season, has #visa-and-entry anchor
+    ('Himalayan Neighbours &amp; South Asia', None),
+    ('', 'nepal-tour-packages', 'Nepal', 'No visa — passport or original voter ID', '2 Nov 2026', '4 to 8 days', 'Oct–Nov, Mar–Apr', False),
+    ('', 'bhutan-tour-packages', 'Bhutan', 'No visa — entry permit at the border; passport or voter ID', '2 Nov 2026', '5 to 7 days', 'Mar–May, Sep–Nov', False),
+    ('', 'sri-lanka-tour-packages', 'Sri Lanka', 'Online ETA before travel (free for Indians, 30 days)', '2 Nov 2026', '5 to 8 days', 'Dec–Mar (west/south)', False),
+    ('', 'maldives-tour-packages', 'Maldives', 'Tourist visa on arrival; IMUGA form before you fly', '2 Nov 2026', '4 to 6 days', 'November to April', False),
+    ('Southeast Asia', None),
+    ('', 'thailand-tour-packages', 'Thailand', 'Visa exemption, up to 30 days', '2 Nov 2026', '5 to 8 days', 'November to February', False),
+    ('', 'singapore-tour-packages', 'Singapore', 'Visa needed before travel — via an authorised visa agent', '2 Nov 2026', '4 to 6 days', 'Year-round; Feb–Apr driest', False),
+    ('', 'malaysia-tour-packages', 'Malaysia', 'Visa-free up to 30 days (scheme valid until 31 Dec 2026); arrival card online', '2 Nov 2026', '5 to 7 days', 'December to April', False),
+    ('', 'vietnam-tour-packages', 'Vietnam', 'E-visa applied online before travel', '2 Nov 2026', '6 to 9 days', 'Varies by region', False),
+    ('', 'bali-tour-packages', 'Bali', 'Visa on arrival or e-VOA, 30 days', '2 Nov 2026', '5 to 8 days', 'April to October', False),
+    ('Middle East, Caucasus &amp; Central Asia', None),
+    ('', 'dubai-tour-packages', 'Dubai &amp; UAE', 'Visit visa before you fly (on arrival only for some, e.g. US green card / UK or EU residence)', '18 Oct 2026', '4 to 6 nights', 'November to March', True),
+    ('', 'turkey-tour-packages', 'Turkey', 'Visa needed; e-Visa only with a valid Schengen, US, UK or Ireland visa/permit', '19 Oct 2026', '7 to 9 nights', 'Apr–Jun, Sep–Nov', True),
+    ('', 'georgia-tour-packages', 'Georgia', 'Visa needed — official e-Visa; visa-free with certain other visas/permits', '20 Oct 2026', '5 to 7 nights', 'May–Jun, Sep–Oct; Dec–Mar snow', True),
+    ('', 'azerbaijan-tour-packages', 'Azerbaijan', 'ASAN e-visa online before travel', '21 Oct 2026', '4 to 6 nights', 'Apr–Jun, Sep–Oct; Dec–Mar snow', True),
+    ('', 'armenia-tour-packages', 'Armenia', 'Visa needed; e-visa recommended (about 3 working days)', '1 Nov 2026', '5 to 6 nights; 8 to 10 with Georgia', 'May–Jun, Sep–Oct; Dec–Mar snow', True),
+    ('', 'uzbekistan-tour-packages', 'Uzbekistan', 'E-visa online before travel', '29 Oct 2026', '7 to 9 nights', 'Apr–early Jun, Sep–Oct', True),
+    ('', 'kazakhstan-tour-packages', 'Kazakhstan &amp; Kyrgyzstan', 'Kazakhstan visa-free up to 14 days; Kyrgyzstan e-visa', '31 Oct 2026', '5 to 6 nights; 8 to 10 with Kyrgyzstan', 'May–Sep; Dec–Mar snow', True),
+    ('', 'egypt-tour-packages', 'Egypt', 'Tourist e-Visa before travel', '27 Oct 2026', '7 to 10 nights', 'October to April', True),
+    ('Europe, Far East &amp; Beyond', None),
+    ('', 'europe-tour-packages', 'Europe (multi-country)', 'Schengen short-stay visa', '23 Oct 2026', '9 to 14 nights', 'Apr–Jun, Sep–early Oct', True),
+    ('', 'switzerland-tour-packages', 'Switzerland', 'Schengen short-stay visa', '24 Oct 2026', '6 to 10 nights', 'Jun–Sep; Dec–Mar snow', True),
+    ('', 'uk-tour-packages', 'United Kingdom', 'Standard Visitor visa (separate from Schengen)', '26 Oct 2026', '6 to 10 nights', 'Late May–early Sep', True),
+    ('', 'japan-tour-packages', 'Japan', 'eVISA via Japan Visa Application Centres', '22 Oct 2026', '7 to 10 nights', 'Late Mar–May, Oct–Nov', True),
+    ('', 'mauritius-tour-packages', 'Mauritius', 'No visa required — entry conditions apply', '25 Oct 2026', '5 to 8 nights', 'Apr–Jun, Sep–Nov', True),
+    ('', 'australia-tour-packages', 'Australia &amp; NZ', 'Visitor visa for each country, applied separately', '28 Oct 2026', '8 to 10 nights; 12 to 16 with NZ', 'Sep–Nov, Mar–May', True),
+]
+COMP_CSS = ('.hx .hx-cmpw{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}'
+            '.hx table.hx-cmp{width:100%;border-collapse:collapse;font-size:14.5px;line-height:1.45;margin:0;border:0}'
+            '.hx table.hx-cmp th,.hx table.hx-cmp td{padding:11px 14px;text-align:left;vertical-align:top;border:0;border-bottom:1px solid var(--line);background:none}'
+            '.hx table.hx-cmp thead th{background:var(--ink);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}'
+            '.hx table.hx-cmp tr.hx-crg td{background:var(--cream);color:var(--ink);font-family:"Sora","Plus Jakarta Sans",sans-serif;font-weight:700;font-size:14px;border-left:4px solid var(--gold)}'
+            '.hx table.hx-cmp td a{color:var(--ink);font-weight:800;text-decoration:none;border-bottom:2px solid var(--gold)}'
+            '.hx table.hx-cmp td a:hover{color:#8a6d12}'
+            '.hx table.hx-cmp td small{display:block;color:var(--mut);font-size:12px;margin-top:2px}'
+            '.hx table.hx-cmp tbody tr:hover td{background:#FFFCF3}.hx table.hx-cmp tbody tr.hx-crg:hover td{background:var(--cream)}'
+            '.hx .hx-cmpw p{margin:0}.hx .hx-cnote{font-size:13px;color:var(--mut);margin-top:12px}'
+            '@media(max-width:800px){.hx table.hx-cmp thead{display:none}.hx table.hx-cmp,.hx table.hx-cmp tbody,.hx table.hx-cmp tr,.hx table.hx-cmp td{display:block;width:100%;box-sizing:border-box}'
+            '.hx table.hx-cmp tbody tr{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;padding:10px 14px;border-bottom:1px solid var(--line)}.hx table.hx-cmp td.hx-cd,.hx table.hx-cmp td.hx-ce,.hx table.hx-cmp tr.hx-crg td{grid-column:1/-1}.hx table.hx-cmp td{border:0;padding:3px 0}'
+            '.hx table.hx-cmp tr.hx-crg{padding:0}.hx table.hx-cmp tr.hx-crg td{padding:10px 14px}'
+            '.hx table.hx-cmp td[data-l]:before{content:attr(data-l);display:block;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-top:6px}'
+            '.hx table.hx-cmp td.hx-cd{font-size:16px;padding-top:2px}}')
+
+def compare_block():
+    rows = []
+    for r in COMPARE:
+        if r[1] is None:
+            rows.append(f'<tr class="hx-crg"><td colspan="4">{r[0]}</td></tr>')
+            continue
+        _, p, n, entry, chk, trip, season, anchor = r
+        url = f'https://suzutravels.com/{p}/'
+        vurl = url + ('#visa-and-entry' if anchor else '')
+        rows.append(f'<tr><td class="hx-cd"><a href="{url}">{n}</a></td>'
+                    f'<td class="hx-ce" data-l="Entry for Indian passports">{entry}<small>Checked {chk} · <a href="{vurl}">details</a></small></td>'
+                    f'<td data-l="Typical trip">{trip}</td><td data-l="Best season">{season}</td></tr>')
+    return ('<section id="compare-destinations" class="hx-sec"><style>' + COMP_CSS + '</style><span class="hx-eye">Compare at a glance</span>'
+            '<h2>Compare destinations: entry, trip length and season</h2>'
+            '<p class="hx-sub">The quick facts from each of our destination pages, side by side. Entry rules are for ordinary Indian passport holders, taken from official government sources on the date shown.</p>'
+            '<div class="hx-cmpw"><table class="hx-cmp"><thead><tr><th scope="col">Destination</th><th scope="col">Entry for Indian passports</th><th scope="col">Typical trip</th><th scope="col">Best season</th></tr></thead><tbody>'
+            + ''.join(rows) + '</tbody></table></div>'
+            '<p class="hx-cnote">Entry rules change, sometimes at short notice, so we re-check them against the official sources before you book. Visa or entry approval is always the decision of the country you are visiting — we guide you through the documents and timelines, but we never promise an outcome. Every trip gets its own costed quote, usually within 24 hours.</p></section>')
+
 def build():
     h = []
     h.append(f'<div class="suzu-intl hx"><style>{" ".join(l.strip() for l in CSS.strip().splitlines() if not l.strip().startswith("/*"))}</style>')
@@ -371,13 +438,13 @@ def build():
              '</form></section>')
     # TRUST
     h.append('<div class="hx-trust">'
-             f'<div>{svg("globe")}<span><b>9 country guides</b><span>30+ destinations on request</span></span></div>'
+             f'<div>{svg("globe")}<span><b>23 destination guides</b><span>More on request</span></span></div>'
              f'<div>{svg("clock")}<span><b>Quote in ~24 hours</b><span>Costed, day by day</span></span></div>'
              f'<div>{svg("shield")}<span><b>HP Tourism registered</b><span>Reg. DTO-MND-11-243/2022</span></span></div>'
              f'<div>{svg("chat")}<span><b>One team, start to finish</b><span>On WhatsApp while you travel</span></span></div>'
              '</div>')
     # TOC
-    h.append('<nav class="hx-toc" aria-label="On this page"><a href="#where-do-you-want-to-go">Destinations</a><a href="#trip-styles">Trip styles</a><a href="#where-to-go-by-month">When to go</a><a href="#real-trips">Real trips</a><a href="#how-booking-works">How booking works</a><a href="#why-book-your-international-trip-with-su">Why Suzu</a><a href="#common-questions">FAQ</a></nav>')
+    h.append('<nav class="hx-toc" aria-label="On this page"><a href="#where-do-you-want-to-go">Destinations</a><a href="#trip-styles">Trip styles</a><a href="#where-to-go-by-month">When to go</a><a href="#compare-destinations">Compare</a><a href="#real-trips">Real trips</a><a href="#how-booking-works">How booking works</a><a href="#why-book-your-international-trip-with-su">Why Suzu</a><a href="#common-questions">FAQ</a></nav>')
     # DESTINATIONS
     h.append('<section id="where-do-you-want-to-go" class="hx-sec">'
              '<span class="hx-eye">Destinations</span><h2>Where do you want to go?</h2>'
@@ -411,6 +478,8 @@ def build():
              '</div></section>')
     # WHERE TO GO, MONTH BY MONTH (added 30 Oct 2026) — built only from the "Best season" line of each live country page
     h.append(when_block())
+    # COMPARISON TABLE (added 2 Nov 2026, BACKLOG #9)
+    h.append(compare_block())
     # REAL TRIPS (Suzu guest photos, Nepal)
     G = [('https://suzutravels.com/wp-content/uploads/2026/10/patan-durbar-square-temples.webp', 'Patan Durbar Square, Lalitpur'),
          ('https://suzutravels.com/wp-content/uploads/2026/10/nepal-pagoda-group-tour.webp', 'Our group at a pagoda temple'),
