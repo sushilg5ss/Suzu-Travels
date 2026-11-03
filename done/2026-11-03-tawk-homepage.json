@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-03-tawk-homepage",
+ "agent": "Live Chat Setup",
+ "summary": "Homepage: add Tawk.to live chat widget + hide floating WhatsApp popup",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "0769d8ee83c506a1aac768bdc3d030a6d6765ab094014b8ef9888fbd9fd8d917",
+   "base_sha256": "2eddde846eb866129ae7234b8e68de52e13c1c92af2ed59106225e5ae70942d9",
+   "url": "https://suzutravels.com/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-03T11:47:48Z",
+ "status": "deployed"
+}
