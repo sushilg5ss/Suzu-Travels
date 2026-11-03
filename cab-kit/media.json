@@ -786,5 +786,14 @@
   "json": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@9cc472fbb493bb313c213c9860910490e42c5f10/cab-kit/media/geo/india-labels.json",
   "note": "India outline used only as an invisible within-filter so map labels outside India are hidden (hub planner), ENHANCEMENTS #12, 2 Nov 2026",
   "source": "Natural Earth 10m admin-0 countries, India point of view (ne_10m_admin_0_countries_ind), public domain; buffered 0.03 deg, simplified 0.012 deg"
+ },
+ "tempo-traveller-12-seater": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@85e8fd8e1201c329b95d24178ec05475955b135c/cab-kit/media/tempo-traveller-12-seater/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@85e8fd8e1201c329b95d24178ec05475955b135c/cab-kit/media/tempo-traveller-12-seater/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@85e8fd8e1201c329b95d24178ec05475955b135c/cab-kit/media/tempo-traveller-12-seater/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
