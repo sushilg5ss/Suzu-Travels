@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "saffron",
+  "deva": "श्री खाटू श्याम जी",
+  "kicker": "Baba Shyam · Khatu, Sikar, Rajasthan",
+  "beats": [
+   "Barbarika vows to aid the losing side",
+   "Krishna asks the archer for a gift",
+   "He gives his head: Sheesh ka Daan",
+   "Worshipped as Shyam in the Kali Yuga"
+  ]
+ },
+ "story": {
+  "title": "The legend of Baba Shyam",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "An archer with three arrows"},
+   {"arch": "himalaya", "sky": "snow", "line": "Krishna asks for a gift"},
+   {"arch": "devi", "sky": "saffron", "line": "The gift of the head"},
+   {"arch": "ghats", "sky": "dusk", "line": "Nishans and diyas for Shyam"}
+  ]
+ }
+}

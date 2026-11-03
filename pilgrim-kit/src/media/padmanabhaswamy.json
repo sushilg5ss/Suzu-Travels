@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "gopuram",
+  "sky": "dawn",
+  "deva": "श्री पद्मनाभस्वामी",
+  "kicker": "Vishnu · Thiruvananthapuram, Kerala",
+  "beats": [
+   "Vishnu rests on the serpent Anantha",
+   "A sage glimpses the endless Lord",
+   "Darshan through three sacred doors",
+   "A lakh lamps every six years"
+  ]
+ },
+ "story": {
+  "title": "The legend of Padmanabha",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "Vishnu rests on Anantha"},
+   {"arch": "lake", "sky": "dawn", "line": "Brahma's lotus from the navel"},
+   {"arch": "gopuram", "sky": "dawn", "line": "Three doors, one Lord"},
+   {"arch": "ghats", "sky": "dusk", "line": "One lakh lamps of Lakshadeepam"}
+  ]
+ }
+}
