@@ -95,6 +95,24 @@ const { chromium, devices } = require('playwright');
     const p3 = await ctx.newPage();
     await p3.goto(base + '#t=' + v1({ v: 1, s: 'chandigarh', e: 'chandigarh', d: '2027-01-12', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['manali', 3]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
     r.winter = { title: await p3.textContent('#m-title'), rohtangInPlan: (await p3.$$eval('.tl-day', x => x.map(y => y.textContent).join(' '))).includes('Rohtang'), warns: await p3.$$eval('.warn', x => x.map(y => y.textContent)) };
+    // v1.9: winter passes — Kunzum re-route via Kinnaur, Manali–Leh / Zojila fly-in warnings, no false alarm on the Kinnaur winter-Spiti road
+    r.passes = {};
+    for (const [key, st, l] of [
+      ['kunzumDec', { s: 'chandigarh', e: 'chandigarh', d: '2026-12-10', p: [['manali', 2], ['kaza', 2]] }],
+      ['kunzumJul', { s: 'chandigarh', e: 'chandigarh', d: '2027-07-10', p: [['manali', 2], ['kaza', 2]] }],
+      ['kinnaurDec', { s: 'chandigarh', e: 'chandigarh', d: '2026-12-10', p: [['shimla', 1], ['kalpa', 1], ['tabo', 1], ['kaza', 2], ['nako', 1]] }],
+      ['lehDec', { s: 'chandigarh', e: 'chandigarh', d: '2026-12-10', p: [['manali', 2], ['leh', 2]] }],
+      ['zojilaFeb', { s: 'jammu', e: 'jammu', d: '2027-02-10', p: [['srinagar', 2], ['kargil', 1], ['leh', 2]] }],
+      ['zojilaJun', { s: 'jammu', e: 'jammu', d: '2027-06-10', p: [['srinagar', 2], ['kargil', 1], ['leh', 2]] }],
+      ['kunzumDecHi', { s: 'chandigarh', e: 'chandigarh', d: '2026-12-10', p: [['manali', 2], ['kaza', 2]] }, 'hi'],
+    ]) {
+      const o = Object.assign({ v: 1, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', x: [], tp: '' }, st); if (l) o.l = l;
+      await p3.goto('about:blank'); await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+      await p3.goto(base + '#t=' + v1(o), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
+      const warns = await p3.$$eval('.warn', x => x.map(y => y.textContent));
+      r.passes[key] = { km: await p3.textContent('#m-stat'), pass: warns.filter(t => /Kunzum|Zojila|Manali – Leh|कुंज़ुम|ज़ोजिला|मनाली – लेह/.test(t)) };
+    }
+    await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.goto(base + '?k=1#t=' + v1({ v: 1, s: 'dehradun', e: 'dehradun', d: '2027-05-20', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['guptkashi', 1], ['badrinath', 1]], x: [], tp: '' }), { waitUntil: 'load' }); await p3.waitForTimeout(1200);
     r.kedar = (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => t.includes('Kedarnath'));
     // v0.6: Navratri crowd note (Katra in Chaitra Navratri 2027) and none outside Navratri

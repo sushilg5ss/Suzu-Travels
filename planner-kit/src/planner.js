@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  var VER = '1.8';
+  var VER = '1.9';
   var D = document, W = window;
   var DATA = JSON.parse(D.getElementById('tp-data').textContent);
   var R = DATA.rates, ROADS = DATA.roads, TPL = DATA.templates;
@@ -64,6 +64,7 @@
   function srcTag() { try { return localStorage.getItem('szl_src') || 'DR'; } catch (e) { return 'DR'; } }
 
   /* ---------------- roads ---------------- */
+  var WP = { summer: [6, 7, 8, 9, 10], zojilaShut: [1, 2, 3], zojilaRisk: [12, 4], spiti: { kaza: 1, tabo: 1 }, ladakh: { leh: 1, nubra: 1, pangong: 1, tsomoriri: 1, lamayuru: 1, kargil: 1 } };
   function km(a, b) { if (a === b) return 0; return ROADS.km[IDX[a]][IDX[b]] || 0; }
   var EUP = { varanasi: 1, prayagraj: 1, ayodhya: 1 };  /* v1.8: east-UP highways run through towns — OSRM ~84 km/h is far too fast (Google ~45–50 km/h, 29 Oct 2026) */
   function hillF(a, b) { return (HILL[PL[a].region] || HILL[PL[b].region]) ? 1.3 : (EUP[a] || EUP[b]) ? 1.6 : 1.1; }
@@ -177,6 +178,32 @@
     var stops = S.p.filter(function (x) { return PL[x.id]; });
     if (!stops.length) return null;
     var cur = S.s, dayNo = 0, date = d0, nights = [], kmDrive = 0, kmLocal = 0;
+    /* v1.9 winter passes: Kunzum (Manali/Lahaul ↔ Spiti) and the Manali–Leh highway are shut about Nov–May; Zojila (Srinagar ↔ Kargil/Leh) in deep winter.
+       Spiti legs that would cross Kunzum are re-routed via Kinnaur (Kalpa / Reckong Peo); Ladakh legs get a fly-in warning. Sources: research/winter-passes.md */
+    function wpush(r, key, t) { if (!out.warn.some(function (w) { return w.k === key; })) out.warn.push({ r: r, k: key, t: t }); }
+    function leg(a, b, dt) {
+      var res = { k: km(a, b), m: mins(a, b), via: null };
+      if (a === b) return res;
+      var mo = dt.getMonth() + 1, MON = MS[mo - 1], summer = WP.summer.indexOf(mo) > -1;
+      if (!summer && !!WP.spiti[a] !== !!WP.spiti[b]) {
+        var sp = WP.spiti[a] ? a : b, o = sp === a ? b : a;
+        /* the road enters Spiti through Kinnaur when it passes Nako; otherwise it crosses Kunzum */
+        var kinnaur = o === 'nako' || km(o, 'nako') + km('nako', sp) <= km(o, sp) + 15;
+        var alt = km(a, 'nako') + km('nako', b);
+        if (!kinnaur && o !== 'chandratal') {
+          res = { k: alt, m: mins(a, 'nako') + mins('nako', b), via: 'nako' };
+          wpush(1, 'pass-kunzum', 'Kunzum Pass (Manali – Spiti road) is closed in ' + MON + ' (open about Jun–Oct), so ' + PL[a].name + ' → ' + PL[b].name + ' goes round via Kinnaur (Reckong Peo): about ' + alt.toLocaleString('en-IN') + ' km. In winter Spiti is reached only through Kinnaur — add a night at Kalpa or Sangla on the way.');
+        }
+      }
+      if (!!WP.ladakh[a] !== !!WP.ladakh[b]) {
+        var viaSarchu = a === 'sarchu' || b === 'sarchu' || km(a, 'sarchu') + km('sarchu', b) <= km(a, b) + 10;
+        var zShut = WP.zojilaShut.indexOf(mo) > -1;
+        if (viaSarchu && !summer) wpush(1, 'pass-leh', 'The Manali – Leh highway is closed in ' + MON + ' (open about Jun–Oct). ' + (zShut ? 'Zojila Pass on the Srinagar road is snowbound too, so fly into Leh (flight quoted separately).' : 'Fly into Leh (flight quoted separately) or drive in via Srinagar and Zojila Pass.'));
+        else if (!viaSarchu && zShut) wpush(1, 'pass-zojila', 'Zojila Pass (Srinagar – Kargil – Leh road) is usually closed by snow in ' + MON + ' (reopens about Mar–Apr). For a winter Ladakh trip fly into Leh (flight quoted separately).');
+        else if (!viaSarchu && WP.zojilaRisk.indexOf(mo) > -1) wpush(0, 'pass-zojila', 'Zojila Pass (Srinagar – Kargil – Leh road) can close for a few days after snowfall in ' + MON + ' — keep a spare day, or fly into Leh.');
+      }
+      return res;
+    }
     var pending = { from: cur, via: [], km: 0, min: 0, path: [cur] };
     var visited = [cur];
     var left = {};
@@ -204,8 +231,8 @@
     }
     stops.forEach(function (st, si) {
       var p = PL[st.id];
-      var k = km(cur, st.id), m = mins(cur, st.id);
-      pending.km += k; pending.min += m; pending.path.push(st.id);
+      var L = leg(cur, st.id, date), k = L.k, m = L.m;
+      pending.km += k; pending.min += m; if (L.via) pending.path.push(L.via); pending.path.push(st.id);
       if (k > 0) out.legs.push([cur, st.id]);
       cur = st.id; visited.push(st.id);
       if (!left[st.id]) left[st.id] = sightsOf(st.id, date);
@@ -260,8 +287,8 @@
     });
     /* departure day */
     dayNo++;
-    var kE = km(cur, S.e), mE = mins(cur, S.e);
-    pending.km += kE; pending.min += mE; pending.path.push(S.e);
+    var LE = leg(cur, S.e, date), kE = LE.k, mE = LE.m;
+    pending.km += kE; pending.min += mE; if (LE.via) pending.path.push(LE.via); pending.path.push(S.e);
     if (kE > 0) out.legs.push([cur, S.e]);
     var dep = { no: dayNo, date: date, type: 'depart', from: pending.from, to: S.e, via: pending.via, km: pending.km, min: pending.min, path: pending.path, stay: null, sights: [], opt: [], localKm: 20 };
     kmDrive += pending.km; kmLocal += 20;
