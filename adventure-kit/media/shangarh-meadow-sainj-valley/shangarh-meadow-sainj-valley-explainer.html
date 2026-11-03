@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1600, height=900" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { margin:0; overflow:hidden; background:#0b1f33; }
+#root { position:relative; width:100%; height:100%; overflow:hidden; font-family:"PJS",sans-serif; color:#fff; background:#0b1f33; }
+.kick { position:absolute; left:80px; top:56px; color:#d4a24c; font-weight:800; font-size:26px; letter-spacing:0.18em; }
+.h { position:absolute; left:80px; top:96px; font-weight:800; font-size:60px; letter-spacing:-0.02em; }
+.tm { position:absolute; left:560px; top:640px; width:340px; text-align:left; font-weight:800; font-size:72px; color:#fff; }
+.tml { position:absolute; left:564px; top:728px; width:340px; font-weight:500; font-size:24px; color:rgba(255,255,255,0.8); }
+svg.p { position:absolute; left:0; top:0; width:1600px; height:900px; overflow:visible; font-family:PJS; }
+.wt { position:absolute; left:970px; top:200px; color:#d4a24c; font-weight:800; font-size:24px; letter-spacing:0.16em; }
+.card { position:absolute; left:970px; width:560px; height:128px; border-radius:20px; background:rgba(255,255,255,0.07); border:2px solid rgba(255,255,255,0.14); }
+.card .n { position:absolute; left:104px; top:22px; font-weight:800; font-size:34px; color:#fff; white-space:nowrap; }
+.card .d { position:absolute; left:104px; top:72px; font-weight:500; font-size:24px; color:rgba(255,255,255,0.82); white-space:nowrap; }
+.card .ic { position:absolute; left:22px; top:30px; width:68px; height:68px; border-radius:34px; background:#d4a24c; color:#0b1f33; font-weight:800; font-size:24px; line-height:68px; text-align:center; }
+.chip { position:absolute; left:970px; top:770px; height:64px; padding:0 30px; border-radius:32px; background:#d4a24c; color:#0b1f33; font-weight:800; font-size:28px; line-height:64px; white-space:nowrap; }
+.note { position:absolute; left:80px; top:858px; color:rgba(255,255,255,0.55); font-weight:500; font-size:18px; }
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1600" data-height="900">
+<div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="0" style="position:absolute;inset:0">
+<div class="kick">SAINJ VALLEY · HOW TO GET THERE</div>
+<div class="h">Aut to Shangarh in ~2 hours</div>
+<div class="tm" id="tm">0 min</div><div class="tml">by road from Aut</div>
+<svg class="p" viewBox="0 0 1600 900">
+<defs><clipPath id="cp"><rect id="cr" x="0" y="0" width="0" height="900"/></clipPath><clipPath id="cpb"><rect id="crb" x="0" y="0" width="0" height="900"/></clipPath></defs>
+<path id="ghost" d="M 120 760 C 220 760 240 640 330 610 C 420 580 470 640 560 560 C 640 490 600 400 700 360 C 780 330 820 300 860 250" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+<path id="road" d="M 120 760 C 220 760 240 640 330 610 C 420 580 470 640 560 560 C 640 490 600 400 700 360 C 780 330 820 300 860 250" clip-path="url(#cp)" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round"/>
+<path id="bghost" d="M 560 560 C 480 470 420 420 300 390" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="4" stroke-dasharray="4 10" stroke-linecap="round"/>
+<path id="branch" d="M 560 560 C 480 470 420 420 300 390" clip-path="url(#cpb)" fill="none" stroke="#7fbf6a" stroke-width="7" stroke-dasharray="14 10" stroke-linecap="round"/>
+<g class="st" id="st0"><circle cx="120" cy="760" r="11" fill="#fff"/><text x="120" y="812" text-anchor="start" fill="#fff" font-size="30" font-weight="800">Aut tunnel</text><text x="120" y="844" text-anchor="start" fill="rgba(255,255,255,0.75)" font-size="22" font-weight="500">Chandigarh–Manali highway</text></g>
+<g class="st" id="st1"><circle cx="330" cy="610" r="11" fill="#fff"/><text x="330" y="580" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">Sainj</text></g>
+<g class="st" id="st2"><circle cx="560" cy="560" r="11" fill="#fff"/><text x="585" y="600" text-anchor="start" fill="#fff" font-size="30" font-weight="800">Ropa</text></g>
+<g class="st" id="st3"><circle cx="860" cy="250" r="15" fill="#fff"/><text x="880" y="222" text-anchor="end" fill="#fff" font-size="34" font-weight="800">Shangarh <tspan fill="rgba(255,255,255,0.8)" font-size="26" font-weight="500">· ~2,080 m</tspan></text></g>
+<g class="st" id="stb"><circle cx="300" cy="390" r="10" fill="#7fbf6a"/><text x="300" y="340" text-anchor="middle" fill="#7fbf6a" font-size="28" font-weight="800">Neuli → GHNP treks</text><text x="300" y="368" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="22" font-weight="500">permit at Ropa + certified guide</text></g>
+<circle id="dot" cx="120" cy="760" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/>
+</svg>
+<div class="wt" id="wt">WALKS FROM THE MEADOW</div>
+<div class="card" id="c1" style="top:250px"><div class="n">Barshangarh waterfall</div><div class="d">Short walk · best after spring melt</div><div class="ic">1</div></div>
+<div class="card" id="c2" style="top:400px"><div class="n">Pundrik Rishi lake</div><div class="d">Uphill forest walk · go in the morning</div><div class="ic">2</div></div>
+<div class="card" id="c3" style="top:550px"><div class="n">Tindadhar ridge</div><div class="d">Longer walk · ~4–5 h · valley views</div><div class="ic">3</div></div>
+<div class="chip" id="chip">Easy walks, no hard trek · Get Quote</div>
+<div class="note">Schematic, not to scale · times approximate</div>
+</div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const road = document.getElementById("road"), dot = document.getElementById("dot"), cr = document.getElementById("cr"), crb = document.getElementById("crb"), tm = document.getElementById("tm");
+const L = road.getTotalLength();
+const st = { p: 0, b: 0 };
+function place() { const pt = road.getPointAtLength(st.p * L); cr.setAttribute("width", (st.p >= 0.999 ? 900 : pt.x + 10).toFixed(1)); dot.setAttribute("cx", pt.x.toFixed(2)); dot.setAttribute("cy", pt.y.toFixed(2)); const m = Math.round(st.p * 120 / 5) * 5; tm.textContent = st.p >= 0.999 ? "~2 h" : (m < 60 ? m + " min" : "1 h " + (m - 60) + " min"); }
+function placeB() { crb.setAttribute("x", (560 - st.b * 270).toFixed(1)); crb.setAttribute("width", (st.b * 280).toFixed(1)); }
+tl.set([".st", ".card", "#wt", "#chip"], { opacity: 0 }, 0);
+tl.to("#st0", { opacity: 1, duration: 0.4 }, 0.2);
+tl.to(st, { p: 1, duration: 4.6, ease: "sine.inOut", onUpdate: place }, 0.5);
+tl.to("#st1", { opacity: 1, duration: 0.35 }, 1.5);
+tl.to("#st2", { opacity: 1, duration: 0.35 }, 2.6);
+tl.to(st, { b: 1, duration: 1.2, ease: "power1.out", onUpdate: placeB }, 2.8);
+tl.to("#stb", { opacity: 1, duration: 0.4 }, 3.6);
+tl.to("#st3", { opacity: 1, duration: 0.4 }, 4.9);
+tl.to("#wt", { opacity: 1, duration: 0.4 }, 5.4);
+["#c1", "#c2", "#c3"].forEach((c, i) => tl.fromTo(c, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 5.7 + i * 0.6));
+tl.fromTo("#chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 7.8);
+tl.to("#root", { opacity: 1, duration: 2.8 }, 8.2);
+place(); placeB();
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body></html>
