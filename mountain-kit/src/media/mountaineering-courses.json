@@ -89,5 +89,22 @@
     }
    }
   ]
+ },
+ "ladder": {
+  "kicker": "AFTER THE COURSE · HIMACHAL",
+  "title": "Your next peaks, at their true heights",
+  "peaks": [
+   "friendship-peak",
+   "deo-tibba",
+   "mount-yunam",
+   "mulkila"
+  ],
+  "subs": {
+   "friendship-peak": "First snow climb",
+   "deo-tibba": "Kullu · Himachal",
+   "mount-yunam": "First 6,000er",
+   "mulkila": "Lahaul · over 6,400 m"
+  },
+  "end": "IMF team leaders need a summit above 6,400 m"
  }
 }
