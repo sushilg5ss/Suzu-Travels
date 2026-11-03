@@ -1689,3 +1689,23 @@ tempo traveller 17 seater rent per km,720,MEDIUM,5.84,19.82,"[1000, 880, 720, 72
 17 seater tempo traveller chandigarh,0,,,,[]
 17 seater tempo traveller delhi to manali,0,,,,[]
 17 seater tempo traveller fare,0,,,,[]
+12 seater tempo traveller,22200,LOW,9.15,25.14,"[22200, 22200, 27100, 22200, 18100, 22200, 22200, 27100, 22200, 18100, 22200, 18100]"
+tempo traveller 12 seater price,8100,LOW,4.22,23.99,"[8100, 9900, 9900, 8100, 5400, 6600, 8100, 9900, 8100, 8100, 8100, 8100]"
+12 seater traveller,3600,LOW,9.56,27.14,"[2900, 3600, 4400, 3600, 2900, 4400, 4400, 4400, 4400, 2900, 2900, 2900]"
+12 seater tempo traveller on rent,1600,MEDIUM,6.53,20.83,"[1300, 1300, 1600, 1600, 1300, 1300, 1900, 1900, 1600, 1300, 1300, 1300]"
+12 seater tempo traveller rent,1600,MEDIUM,6.53,20.83,"[1300, 1300, 1600, 1600, 1300, 1300, 1900, 1900, 1600, 1300, 1300, 1300]"
+tempo traveller 12 seater rent per km,880,MEDIUM,4.83,19.92,"[1000, 1000, 1300, 880, 590, 880, 1000, 1000, 720, 720, 880, 880]"
+12 seater force traveller,480,LOW,7.56,26.11,"[390, 480, 590, 590, 480, 480, 480, 480, 590, 590, 590, 590]"
+12 seater tempo,390,LOW,12.42,27.52,"[320, 480, 480, 480, 320, 390, 390, 480, 480, 390, 320, 390]"
+12 seater traveller price,320,LOW,1.02,21.38,"[320, 210, 390, 390, 210, 320, 320, 390, 390, 260, 260, 260]"
+12 seater tempo traveller per km rate,210,MEDIUM,9.27,27.08,"[210, 260, 320, 170, 110, 210, 260, 390, 390, 170, 90, 110]"
+luxury 12 seater tempo traveller price,210,LOW,12.19,27.31,"[210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210]"
+12 seater maharaja tempo traveller,210,LOW,10.43,20.09,"[210, 210, 260, 210, 170, 320, 260, 320, 260, 140, 110, 170]"
+12 seater tt,210,LOW,12.4,26.07,"[210, 260, 210, 210, 140, 140, 210, 260, 170, 170, 170, 170]"
+12 seater tempo traveller rate per km,170,MEDIUM,8.99,25.82,"[170, 210, 210, 170, 110, 170, 210, 260, 170, 110, 110, 170]"
+12 seater tempo traveller price per km,170,LOW,8.4,24.5,"[170, 140, 170, 170, 140, 170, 110, 210, 170, 140, 210, 170]"
+12 seater traveller on rent,170,MEDIUM,6.72,25.02,"[110, 140, 170, 210, 140, 140, 170, 260, 210, 140, 170, 110]"
+12 seater ac tempo traveller,140,LOW,8.06,22.61,"[110, 90, 70, 90, 70, 140, 170, 260, 210, 110, 140, 140]"
+ac tempo traveller 12 seater price,140,LOW,9.82,19.85,"[90, 40, 70, 70, 70, 50, 140, 390, 260, 140, 70, 70]"
+12 seater tempo traveller near me,140,MEDIUM,7.9,26.89,"[110, 140, 140, 90, 90, 140, 110, 140, 140, 70, 260, 140]"
+12 seater tempo traveller seating arrangement,50,LOW,,,"[70, 70, 50, 70, 40, 50, 50, 90, 40, 40, 30, 20]"
