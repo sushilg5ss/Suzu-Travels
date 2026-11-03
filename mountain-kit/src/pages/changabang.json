@@ -1,0 +1,261 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/changabang/",
+ "peak_id": "changabang",
+ "title": "Changabang (6,864 m): Climbing History, Routes & 2026 Status",
+ "seo_title": "Changabang (6,864 m): The Granite Fang of Garhwal",
+ "seo_desc": "Changabang (6,864 m), Garhwal: the 'shining mountain', its routes from the 1974 first ascent to the 2022 West Wall repeat, access, season and 2026 status.",
+ "focus": "changabang",
+ "commercial": false,
+ "label": "Changabang",
+ "blurb": "6,864 m · the granite fang, first climbed 1974",
+ "verified": "3 Nov 2026",
+ "kicker": "Uttarakhand · Garhwal Himalaya · 6,864 m",
+ "tag": "A fang of pale granite on the rim of the Sanctuary.",
+ "sub": "Changabang is one of the most admired big-wall peaks in the Himalaya. Here is where it stands, how climbers reach it today, why every route is serious, its 2026 permit status, and the story from the 1974 first ascent to the West Wall repeat of 2022.",
+ "chips": [
+  [
+   "6,864 m",
+   "summit (22,520 ft)"
+  ],
+  [
+   "Extreme",
+   "steep granite, no easy route"
+  ],
+  [
+   "May–Jun",
+   "Sep–Oct"
+  ],
+  [
+   "1974",
+   "first ascent"
+  ],
+  [
+   "2026",
+   "open (Uttarakhand list)"
+  ]
+ ],
+ "hero_alt": "Snow ridges, a night tent and a summit push by headlamp (generic stock footage, not Changabang itself) with an altitude read-out rising from Jumma, 2,500 m, past Dunagiri village, base camp and advance base to the 6,864 m summit",
+ "profile_alt": "Animated altitude profile of the northern approach to Changabang: Jumma road-head 2,500 m, Dunagiri village 3,615 m, base camp about 4,550 m on the Bagini glacier, advance base about 5,150 m facing the north face, and the 6,864 m summit",
+ "q": "How high is Changabang, and why is it so hard to climb?",
+ "answer": "<b>Changabang</b> is 6,864 m (22,520 ft) high, in the Garhwal Himalaya, Chamoli district, Uttarakhand, on the north-east rim of the Nanda Devi Sanctuary next to Kalanka. Its name means roughly \"shining mountain\", for its pale granite. Every route is steep rock, ice or mixed ground: there is no walk-up. It is open in 2026. Compare it with other <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks in India</a>.",
+ "facts": [
+  [
+   "Height",
+   "6,864 m / 22,520 ft"
+  ],
+  [
+   "Location",
+   "Garhwal Himalaya (Nanda Devi group), Chamoli district, Uttarakhand"
+  ],
+  [
+   "Neighbours",
+   "Kalanka (6,931 m), linked by a col; Changabang is its satellite, with about 300 m of prominence"
+  ],
+  [
+   "Name",
+   "Roughly \"shining mountain\", for its pale granite"
+  ],
+  [
+   "Grade",
+   "Extreme: steep granite, every route serious"
+  ],
+  [
+   "Approach today",
+   "Joshimath → Jumma → Dunagiri village → Bagini glacier base camp (about 4,550 m)"
+  ],
+  [
+   "Best months",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "First ascent",
+   "4 Jun 1974, Indo-British team led by Balwant Sandhu and Chris Bonington"
+  ],
+  [
+   "Status 2026",
+   "Open: on Uttarakhand's Feb 2026 list of 83 peaks"
+  ]
+ ],
+ "intro": [
+  "<b>Status, checked 3 November 2026: open.</b> Changabang is on the list of 83 peaks that Uttarakhand opened in February 2026. Indian climbers apply on the state's UKMPS portal and pay no state fees in 2026; foreign teams pay only the IMF charges. In 1997 the IMF still classed it as restricted, but that is history: today it needs the same permission as any open Garhwal peak.",
+  "<b>Who climbs it.</b> Changabang is a goal for experienced alpinists, not a first expedition. Its West Wall was climbed in 1976 and then turned back some 20 expeditions before its first repeat in 2022, and its north face is a landmark of modern alpinism. If you are building towards peaks like this, start with technical Himachal climbs such as <a href=\"/mountains-of-india/indrasan/\">Indrasan</a> or <a href=\"/mountains-of-india/mulkila/\">Mulkila</a>.",
+  "The peak stands on the wall of the <a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi</a> Sanctuary, which has been closed since 1983, so modern teams come in from the north. For the wider picture, see our guide to the <a href=\"/mountains-of-india/\">mountains of India</a> and the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>."
+ ],
+ "route_h2": "How climbers reach Changabang today",
+ "route_text": [
+  "The 1974 team walked in through the Rishi Gorge, the 1935 Tilman–Shipton line, and needed over ten days to cover twenty miles. That way leads into the Nanda Devi Sanctuary, closed since 1983, so it is no longer used.",
+  "Modern teams take the <b>northern approach</b>: by road from <b>Joshimath</b> to the road-head at <b>Jumma</b> (2,500 m, about 3 hours), a walk of about 5 hours to <b>Dunagiri village</b> (3,615 m), then 6–7 hours to base camp on the grassy meadows of the <b>Bagini glacier</b>, about 4,550 m. Advance base, about 5,150 m, faces the north face. These heights come from the 1997 Mount Everest Foundation report and are approximate. There is no normal route with fixed camps: from advance base, each line is a multi-day alpine or big-wall climb, so this page gives no day-by-day itinerary."
+ ],
+ "route": [
+  {
+   "name": "Joshimath",
+   "m": 1442,
+   "note": "Town and formalities (1997 report figure)"
+  },
+  {
+   "name": "Jumma",
+   "m": 2500,
+   "note": "Road-head, about 3 h by road"
+  },
+  {
+   "name": "Dunagiri village",
+   "m": 3615,
+   "note": "About 5 h on foot"
+  },
+  {
+   "name": "Base camp",
+   "m": 4550,
+   "note": "Bagini glacier meadows, 6–7 h (approximate)"
+  },
+  {
+   "name": "Advance base",
+   "m": 5150,
+   "note": "Opposite the north face (approximate)"
+  },
+  {
+   "name": "West Ridge bivouac",
+   "m": 5950,
+   "note": "Where the 2022 West Wall team spent a night"
+  },
+  {
+   "name": "Changabang summit",
+   "m": 6864,
+   "note": "By any route: all are serious"
+  }
+ ],
+ "difficulty_h2": "How hard is Changabang?",
+ "difficulty": [
+  "Our dataset grades Changabang <b>extreme</b>: steep granite, and every route is serious. Even the least difficult line, the 1974 route up the south-east face and east ridge, is a serious snow-and-ice climb: the first-ascent team made a night climb to the Changabang–Kalanka col and then followed a knife-edge ridge to the top.",
+  "The walls are a different game. The 1976 West Wall took Peter Boardman and Joe Tasker more than 25 days in big-wall style; the 1997 north face was graded ED over about 1,300–1,600 m. In 2022 ExplorersWeb noted that no team had climbed Changabang and returned to base camp for more than 24 years. Arrive with several technical Himalayan summits and solid rock, ice and mixed skills; read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> too."
+ ],
+ "skills": [
+  [
+   "Experience",
+   "Several technical Himalayan summits and alpine-style climbs on rock, ice and mixed ground."
+  ],
+  [
+   "Technique",
+   "Steep ice, granite crack climbing, aid on the big walls, rope work on a knife-edge ridge."
+  ],
+  [
+   "Self-reliance",
+   "Multi-day climbs from advance base with bivouacs or portaledges and no fixed camps."
+  ],
+  [
+   "Acclimatisation",
+   "Time around the Bagini glacier before any route; the 1974 team climbed Bagini Peak first."
+  ],
+  [
+   "Training",
+   "Basic and Advanced Mountaineering Courses as a minimum; Indian teams also follow IMF team rules."
+  ]
+ ],
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "maybe",
+  "May": "good",
+  "Jun": "good",
+  "Jul": "no",
+  "Aug": "no",
+  "Sep": "good",
+  "Oct": "good",
+  "Nov": "no",
+  "Dec": "no"
+ },
+ "season_h2": "Best time to climb Changabang",
+ "season_text": [
+  "<b>May to June and September to October.</b> The record fits that window: the first ascent was on 4 June 1974, the West Wall in autumn 1976, the south face on 27 September 1978, the north face on 1 June 1997, the French north-face line on 11–13 May 2018, and the 2022 West Wall repeat from 25 April to 2 May.",
+  "July and August are monsoon months and not climbing season here. Every route is a multi-day climb, so build spare days for weather into any plan."
+ ],
+ "permits_h2": "Permits for Changabang in 2026",
+ "permits": [
+  "<b>Indian climbers</b> apply on Uttarakhand's UKMPS portal. Changabang is on the state's February 2026 list of 83 open peaks, and all state fees are waived for Indian climbers in 2026. IMF rules for Indian teams still apply.",
+  "<b>Foreign nationals</b> need IMF permission, with a liaison officer and insurance. For peaks of 6,501–7,000 m the IMF base fee is <b>US$700 for a team of two</b>, plus US$500 for liaison-officer equipment, and per-member charges apply (IMF peak-fee page, as of 1 Oct 2026). More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">mountaineering in India for foreign climbers</a>.",
+  "The Dunagiri and Bagini glacier area was closed for military reasons until the rules were relaxed in 1994. Check the current access conditions with the Chamoli district administration when you apply."
+ ],
+ "history_h2": "Climbing history of Changabang",
+ "history": [
+  "<b>4 June 1974: first ascent.</b> An Indo-British team co-led by Lt Col Balwant Sandhu and Chris Bonington, with Martin Boysen, Dougal Haston, Doug Scott and Tashi Chewang, crossed Shipton's Col (about 5,950 m) to the upper Changabang glacier, climbed through the night to the col with Kalanka and finished up the knife-edge east ridge.",
+  "<b>1976:</b> Peter Boardman and Joe Tasker climbed the <b>West Wall</b> in big-wall style over more than 25 days; Boardman's book about it, <i>The Shining Mountain</i>, won the 1979 John Llewellyn Rhys Prize. The same year a Japanese Alpine Club team climbed the south-west ridge in 33 days.",
+  "<b>1978:</b> Wojciech Kurtyka, Krzysztof Żurek, Alex MacIntyre and John Porter climbed the direct South Face, summiting on 27 September. <b>1981:</b> Ugo Manera and Lino Castiglia climbed the South Ridge.",
+  "<b>1997:</b> Andy Cave and Brendan Murphy made the first ascent of the <b>North Face</b>, reaching the top on 1 June; Murphy was killed by an avalanche on the descent. <b>1998:</b> Carlos Buhler and a Russian team climbed the \"Lightning Route\" on the north face. <b>2006:</b> two Mexican climbers summited by a new route and were lost in a storm on the way down.",
+  "<b>2018:</b> the French GMHM team of Léo Billon, Sébastien Moatti and Sébastien Ratel climbed the north face in alpine style in three days. <b>2022:</b> Matthew Scholes, Kim Ladiges and Daniel Joll made the <b>first repeat of the West Wall</b>, 46 years on, in alpine style with portaledges. For more Himalayan landmarks, see our <a href=\"/mountains-of-india/records/\">timeline of first ascents</a>."
+ ],
+ "quote_h2": "Building towards a peak like Changabang? Start in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Changabang. If big technical peaks are your goal, Himachal expeditions are a good way to build the record they need: Deo Tibba first, then Indrasan or Mulkila. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Changabang: questions people ask",
+ "faqs": [
+  [
+   "How high is Changabang?",
+   "6,864 m (22,520 ft). It is a satellite of Kalanka (6,931 m), with about 300 m of prominence."
+  ],
+  [
+   "Where is Changabang?",
+   "In the Garhwal Himalaya, Chamoli district, Uttarakhand, on the north-east rim of the Nanda Devi Sanctuary, beside Kalanka."
+  ],
+  [
+   "What does Changabang mean?",
+   "Roughly \"shining mountain\", for its pale granite. Peter Boardman used the name for his book about the West Wall, <i>The Shining Mountain</i>."
+  ],
+  [
+   "Who first climbed Changabang?",
+   "An Indo-British team co-led by Lt Col Balwant Sandhu and Chris Bonington, with Martin Boysen, Dougal Haston, Doug Scott and Tashi Chewang, on 4 June 1974."
+  ],
+  [
+   "What is the Changabang West Wall?",
+   "A huge granite face first climbed by Peter Boardman and Joe Tasker in 1976 over more than 25 days. About 20 expeditions failed on it before its first repeat in 2022."
+  ],
+  [
+   "Why is Changabang so hard to climb?",
+   "Every route is steep granite, ice or mixed ground at high altitude. Even the least difficult line, the 1974 route, needed a night climb and a knife-edge ridge."
+  ],
+  [
+   "Can you climb Changabang in 2026?",
+   "Yes, with permission. It is on Uttarakhand's February 2026 list of 83 open peaks: Indian climbers apply on the UKMPS portal, foreign teams through the IMF. Only very experienced alpinists attempt it."
+  ],
+  [
+   "How do climbers reach Changabang now?",
+   "From Joshimath by road to Jumma, then on foot via Dunagiri village to a base camp near 4,550 m on the Bagini glacier. The old Rishi Gorge route enters the Nanda Devi Sanctuary, closed since 1983."
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Changabang",
+   "https://en.wikipedia.org/wiki/Changabang"
+  ],
+  [
+   "American Alpine Journal 1975 — Changabang, the first ascent",
+   "https://publications.americanalpineclub.org/articles/12197508100"
+  ],
+  [
+   "Mount Everest Foundation — 1997 Changabang north face report (MEF 97/14)",
+   "https://www.mef.org.uk/uploads/uploads/MEF-97-14.pdf"
+  ],
+  [
+   "ExplorersWeb — Changabang: first repeat of the Boardman–Tasker route (2022)",
+   "https://explorersweb.com/top-10-expeditions-of-2022-5-changabang-first-repeat-boardman-tasker-route/"
+  ],
+  [
+   "PlanetMountain — Changabang West Wall repeated after 46 years",
+   "https://planetmountain.com/en/news/alpinism/changabang-west-wall-repeated-after-46-years-daniel-joll-kim-ladiges-matthew-scholes.html"
+  ],
+  [
+   "British Mountaineering Council — Changabang's first ascensionist",
+   "https://thebmc.co.uk/changabangs-first-ascensionist-passes-away"
+  ],
+  [
+   "ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Changabang"
+ ]
+}

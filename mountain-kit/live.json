@@ -334,5 +334,15 @@
   "added": "2026-11-02",
   "peak_id": "kamet",
   "commercial": false
+ },
+ "changabang": {
+  "id": 17637,
+  "path": "/mountains-of-india/changabang/",
+  "kind": "peak",
+  "label": "Changabang",
+  "blurb": "6,864 m · the granite fang, first climbed 1974",
+  "added": "2026-11-03",
+  "peak_id": "changabang",
+  "commercial": false
  }
 }
