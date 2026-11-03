@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.08) 38%, rgba(11,31,51,0.8) 54%, rgba(11,31,51,0.94) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 860px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 100px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.14em; white-space: nowrap; }
+      .t1 { position: absolute; left: 0; top: 148px; color: #fff; font-weight: 800; font-size: 100px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 262px; color: #d4a24c; font-weight: 800; font-size: 96px; line-height: 1.02; letter-spacing: -0.02em; }
+      svg.sky { position: absolute; left: 0; top: 400px; width: 840px; height: 360px; overflow: visible; }
+      .count { position: absolute; left: 0; top: 760px; color: #fff; font-weight: 800; font-size: 76px; white-space: nowrap; }
+      .count span { color: #d4a24c; }
+      .cl { position: absolute; left: 0; top: 850px; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 32px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 912px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 936px; width: 860px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 860px; color: #fff; font-weight: 800; font-size: 50px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.6" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="2.9" data-duration="3.4" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="5.6" data-duration="3.4" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="8.3" data-duration="3.7" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" style="object-position:50% 38%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">MAHARANA PRATAP SAGAR · KANGRA</div>
+          <div class="t1">Pong Dam Lake</div>
+          <div class="t2">birds &amp; boats</div>
+          <svg class="sky" viewBox="0 0 840 360">
+            <path id="fp" d="M 10 300 C 180 120 360 330 520 170 S 760 40 830 70" fill="none" stroke="rgba(212,162,76,0.35)" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 14" />
+            <path id="fpg" d="M 10 300 C 180 120 360 330 520 170 S 760 40 830 70" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" />
+            <path d="M 0 340 Q 210 326 420 340 T 840 340" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="4" />
+            <g id="flock" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></g>
+          </svg>
+          <div class="count"><span id="cnt">420</span>+ bird species</div>
+          <div class="cl">recorded at the lake · Ramsar wetland</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Migratory birds Nov–Feb</div>
+            <div class="fact" id="f2">Boating &amp; kayaking</div>
+            <div class="fact" id="f3">Temples show Mar–Jun</div>
+                      </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.6, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 30 }, { scale: 1, x: -20, duration: 3.4, ease: "none" }, 2.9);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.07, y: -20, duration: 3.4, ease: "none" }, 5.6);
+      tl.fromTo("#im4", { scale: 1.07, y: -10 }, { scale: 1, y: 10, duration: 3.7, ease: "none" }, 8.3);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut" }, 2.9);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut" }, 5.6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.inOut" }, 8.3);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+
+      // V-formation of geese chevrons flying along the gold path (loops: off-path at 0 and 12)
+      const fp = document.getElementById("fp"); const L = fp.getTotalLength();
+      const fpg = document.getElementById("fpg");
+      const flock = document.getElementById("flock");
+      const NS = "http://www.w3.org/2000/svg";
+      const offs = [[0,0],[-32,-20],[-32,20],[-64,-40],[-64,40],[-96,-60],[-96,60]];
+      const birds = offs.map(() => { const p = document.createElementNS(NS, "path"); p.setAttribute("d", "M -14 -10 L 0 0 L -14 10"); flock.appendChild(p); return p; });
+      fpg.setAttribute("stroke-dasharray", L.toFixed(1) + " " + L.toFixed(1));
+      const st = { t: 0, w: 0 };
+      function put() {
+        const s = Math.max(0, Math.min(1, st.t));
+        fpg.setAttribute("stroke-dashoffset", (L * (1 - s)).toFixed(2));
+        const q = fp.getPointAtLength(L * s), q2 = fp.getPointAtLength(Math.min(L, L * s + 2));
+        const a = Math.atan2(q2.y - q.y, q2.x - q.x);
+        const op = Math.max(0, Math.min(1, Math.min(s / 0.06, (1 - s) / 0.06)));
+        birds.forEach((b, i) => {
+          const [ox, oy] = offs[i];
+          const flap = 1 + 0.35 * Math.sin(st.w * 6.283 + i * 0.9);
+          const x = q.x + ox * Math.cos(a) - oy * Math.sin(a), y = q.y + ox * Math.sin(a) + oy * Math.cos(a);
+          b.setAttribute("transform", "translate(" + x.toFixed(2) + "," + y.toFixed(2) + ") rotate(" + (a * 57.2958).toFixed(2) + ") scale(1," + flap.toFixed(3) + ")");
+          b.setAttribute("opacity", op.toFixed(3));
+        });
+      }
+      put();
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 10.6, ease: "sine.inOut", immediateRender: false, onUpdate: put }, 0.4);
+      tl.fromTo(st, { w: 0 }, { w: 14, duration: 12, ease: "none", immediateRender: false, onUpdate: put }, 0);
+      tl.to(fpg, { opacity: 0, duration: 0.8 }, 11.0);
+      tl.set(fpg, { opacity: 1 }, 0);
+
+      tl.set(["#f2", "#f3"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 5.4], ["#f2", "#f3", 8.1], ["#f3", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
