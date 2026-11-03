@@ -23,7 +23,7 @@ Read `agents/shared-rules.md`, `README.md` (fully, esp. §1 and §5), `live.json
 - `wp_get_seo_meta(id)`: title ≤60, description 110–155, focus set, no noindex. Canonical = own URL. Page in `https://suzutravels.com/page-sitemap.xml` within 24 h of publishing (else re-save the page, report).
 - Internal links: ≥3 in (hub 11411 + siblings), ≥3 out (live Suzu pages). Anchor hygiene: no two pages share an exact-match anchor to the same target.
 - ONE headless load per run, rotating page (`node tools/live_check.js <url> /tmp/qa.png 390 844`): hero plays, no overflow — **look at the screenshot**. Once a week run Lighthouse mobile on one page (`npx lighthouse`, Chromium `/opt/pw-browsers/chromium`): LCP/CLS/TBT in the LOG; ≥85 target; otherwise a kit fix (Step 2).
-- `python3 tools/linkcheck.py --all` once (exit 3 = bot challenge: retry later, log).
+- `python3 tools/linkcheck.py --all` once (v0.2.5: stops at `--budget` seconds, default 480, and skips URLs that answered 200 in the last 7 days — exit 4 = budget reached, nothing failed; exit 3 = bot challenge. `UNREACHABLE FROM THIS AGENT` = this container's TLS/network (many *.gov.in), **never** a reason to remove a source; confirm with WebFetch instead).
 - SERP spot-check: 2 focus keywords/run via WebSearch (US results if possible): our position or "-", top-3 domains → `research/serp-log.csv`. Never estimate positions.
 
 ## Step 2 — fix (in this order)
