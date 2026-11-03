@@ -33,7 +33,7 @@
 | 23 | live 2026-10-31 | `baidyanath` | 12-JL | temple | baidyanath temple (90,500) | nagara | Not Baijnath (HP); Shravan Kanwar |
 | 24 | live 2026-11-01 | `nageshwar` | 12-JL | temple | nageshwar jyotirlinga (60,500; nageshwar temple 33,100) | nagara | Aundha/Jageshwar traditions; Dwarkadhish secondaries |
 | 25 | live 2026-11-02 | `grishneshwar` | 12-JL | temple | grishneshwar jyotirlinga (90,500; grishneshwar temple 49,500) | hills | Ellora next door. Works since Sep 2026 — closure status in fact pack |
-| 26 | media | `mallikarjuna` | 12-JL | temple | srisailam temple (165,000; mallikarjuna jyotirlinga 74,000) | gopuram | Also Bhramaramba Shakti Peeth. Focus changed 20 Oct 2026 (Research) — srisailam temple 165,000 > plan's 74,000; Sparsha weekend rule (Aug 2026) |
+| 26 | live 2026-11-03 | `mallikarjuna` | 12-JL | temple | srisailam temple (165,000; mallikarjuna jyotirlinga 74,000) | gopuram | Also Bhramaramba Shakti Peeth. Focus changed 20 Oct 2026 (Research) — srisailam temple 165,000 > plan's 74,000; Sparsha weekend rule (Aug 2026) |
 | 27 | media | `kainchi-dham` | hub | temple | kainchi dham (301,000; Jun peak 1,000,000) | hills | Post 12444 owns registration — link it. Registration/daily cap only PROPOSED (20 Oct 2026). Arch devi→hills (Shipra valley); no portrait of Neem Karoli Baba |
 | 28 | media | `hidimba-devi` | hub | temple | hidimba devi temple (165,000; peak 368,000) | pagoda | Manali; pagoda temple (pagoda arch since 8 Oct, honest caption) |
 | 29 | media | `mansa-devi` | hub | temple | mansa devi panchkula (5,400; mansa devi temple 22,200 shared with Haridwar) | devi | Panchkula (Haryana, not HP) — disambiguate from Haridwar Mansa Devi. Focus changed 21 Oct 2026 (Research) |
