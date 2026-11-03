@@ -1,0 +1,9 @@
+# .sx visa/entry fix — 3 Nov 2026 (BACKLOG #45)
+Facts = official checks of 2 Nov 2026 (BACKLOG #9). Re-fetch on 3 Nov was not possible (WebFetch permission not available in the unattended run), so the pages say "Checked 2 Nov 2026".
+All edits via wp_replace_in_page with expected_count guards (literal find → replace):
+- Sri Lanka 11364: fact "Online ETA before travel" → "+ (free for Indians, 30 days)"; si-note fee-waiver sentence → checked line (eta.gov.lk: free since 25 May 2026, 30 days, double entry; approval = Dept of Immigration & Emigration); FAQ visa answer + JSON-LD (×2) gained the free/30-day sentence.
+- Maldives 11366: fact "Free on arrival, 30 days" → "On arrival + IMUGA form online"; badge "Free Visa on Arrival" → "Visa on Arrival"; lede "Free visa on arrival" → "Visa on arrival"; si-note rewritten (VOA for all nationalities, IMUGA, checked line immigration.gov.mv + foreign.gov.mv, stay decided on arrival); FAQ + JSON-LD (×2) "free … usually 30 days" removed; Rank Math description + OG description "Free visa on arrival" → "Visa on arrival" (146 chars).
+- Thailand 11368: fact "Visa exemption for Indians" → "Visa exemption, up to 30 days"; si-note duration sentence → checked line (Royal Thai Embassy New Delhi: up to 30 days from 15 Sep 2026; entry = Thai immigration).
+- Malaysia 11372: fact "Visa-free for Indians currently" → "Visa-free up to 30 days (until 31 Dec 2026)"; si-note checked line (Malaysia High Commission New Delhi: 30 days, valid to 31 Dec 2026, MDAC before arrival; entry = Malaysian immigration); FAQ + JSON-LD (×2) gained the 30-day/31 Dec note.
+Backups: backups/2026-11-03/<slug>-live-before.html / -live-after.html (rendered).
+Not touched (other lane / out of scope): Sri Lanka FAQ price figures (Sep 2026 indicative prices on an .sx page) — flagged in BACKLOG #47.
