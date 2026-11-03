@@ -1,5 +1,5 @@
 {
- "_note": "Media for /india-tours/india-2-week-itinerary/ (itinerary). Photos: existing licensed set in hf/photos/CREDITS.md, each captioned only with its allowed place. Route stops (lat/lon + days) from research/pages/india-2-week-itinerary.md 'Media notes'. No cost ladder this run (14-day rate not in prices.json).",
+ "_note": "Media for /india-tours/india-2-week-itinerary/ (itinerary). Photos: existing licensed set in hf/photos/CREDITS.md, each captioned only with its allowed place. Route stops (lat/lon + days) from research/pages/india-2-week-itinerary.md 'Media notes'. No cost ladder this run (14-day rate not in prices.json). Cost ladder added 3 Nov 2026 by Visual Studio (Step 1.3): US$299/449 from data/prices.json (the page's Prices rows), inclusions/exclusions from section 'included', everything else words only.",
  "hero": {
   "kicker": "NORTH INDIA · 14 DAYS",
   "scenes": [
@@ -115,5 +115,47 @@
     "lon": 76.32
    }
   ]
+ },
+ "cost": {
+  "kicker": "INDIA IN 2 WEEKS · WHAT IT COSTS",
+  "title": "Two weeks, one written quote",
+  "items": [
+   {
+    "label": "Golden Triangle, 4 days",
+    "sub": "Delhi, Agra, Jaipur · the first part of the trip",
+    "price": 299
+   },
+   {
+    "label": "Golden Triangle, 6 days",
+    "sub": "the classic route, before the Himalaya",
+    "price": 449
+   },
+   {
+    "label": "The full two weeks",
+    "sub": "hotel tier, car, month and flights set the total",
+    "tag": "on request"
+   },
+   {
+    "label": "One car, one driver",
+    "sub": "same driver throughout · fuel, tolls, parking, taxes",
+    "tag": "included"
+   },
+   {
+    "label": "Hotels + breakfast",
+    "sub": "in the hotel tier you choose, heritage included",
+    "tag": "included"
+   },
+   {
+    "label": "Delhi airport transfers",
+    "sub": "pick-up on arrival, drop for your flight home",
+    "tag": "included"
+   },
+   {
+    "label": "Tickets, guides, toy train",
+    "sub": "pre-booked in the same quote if you like",
+    "tag": "optional"
+   }
+  ],
+  "end": "Per person, two sharing · flights and e-Visa are your own"
  }
 }
