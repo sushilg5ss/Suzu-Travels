@@ -1,0 +1,9 @@
+# solang-valley-activities (WP 11945) — #treks section (Visual Studio, 4 Nov 2026)
+
+Inserted once, immediately before `<div class="sza-band" id="safety">` with wp_replace_in_page (expected_count 1). Solang page source lives in Project docs (claude/adventure-pages/), not in this repo — apply this on any rebuild. Undo: replace the section below with an empty string.
+
+```html
+<section class="sza-sec" id="treks"><span class="sza-kicker">Treks from Solang</span><h2>Walk on from the snow point</h2><div class="sza-media"><video autoplay muted loop playsinline preload="none" poster="https://suzutravels.com/wp-content/uploads/2026/10/beas-kund-trek-explainer-poster.webp" width="1600" height="900" style="aspect-ratio:16/9;height:auto" aria-label="Source of the Beas in 3 days: Manali hotel, cab via Solang to Dhundi at about 2,840 m, about 4.5 km to Bakarthach camp at about 3,290 m, about 4 km more to Beas Kund at about 3,890 m; best mid-May to June and September to October"><source src="https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@ebffa4b0dada1010ce958480750159594240bfe6/adventure-kit/media/beas-kund-trek/explainer.webm" type="video/webm"><source src="https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@ebffa4b0dada1010ce958480750159594240bfe6/adventure-kit/media/beas-kund-trek/explainer.mp4" type="video/mp4"></video><div><h3>Beas Kund: the source of the Beas</h3><p>A 2–3 day trek that starts just past Solang at Dhundi (~2,840 m) and climbs via the Bakarthach meadow to the glacial lake at ~3,890 m. Best mid-May to June and September to October.</p><p>We arrange the trek team, your Manali hotel and the cab in one quote.</p><div class="sza-btns"><a class="sza-btn" href="/adventure/beas-kund-trek/" style="background:#fff;color:#0b1f33;border:2px solid #0b1f33">See the Beas Kund trek</a></div></div></div></section>
+```
+
+When /adventure/patalsu-peak-trek/ goes live, the Page Builder can add a second card/link here (Patalsu also starts at Solang).
