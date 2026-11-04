@@ -11,4 +11,7 @@ Live on hub /india-tours/ (11411) since 31 Oct 2026, `<!--szt:call-time-->…<!-
   Without JS (or before WP Rocket's delayed JS runs) the day/slot grid is hidden and a static message + both buttons still work.
 - Build: `python3 build.py` → `widget.html` (asserts: no & or // in JS, banned words, no US$).
 - Remove: `wp_replace_in_page` the whole marked block with an empty string.
-- Next: same widget on 11412 / 11413 (change the slug in SRC + page-id rule), and a kit hook for child pages (Reviewer).
+- **Row 21 (4 Nov 2026):** also live on /golden-triangle-tour/ (11412, widget-11412.html) and /char-dham-yatra-for-nri/ (11413, widget-11413.html),
+  inserted right after `<!--/szt:share-trip-->`. build.py now has a PAGES dict (hello line, page path, 'bring your questions' list, page-id rule);
+  widget.html for the hub is byte-identical to before.
+- Next: a kit hook for child pages (Reviewer) if wanted.

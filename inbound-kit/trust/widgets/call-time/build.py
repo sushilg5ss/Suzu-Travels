@@ -41,14 +41,23 @@ CSS = (".szo{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',
 
 WA = ('<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.5 12.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.4 1 2.9.8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>')
 
-HELLO = 'Hi Suzu Travels, I am planning a trip to India and would like a call to talk it through.'
-STATIC = HELLO + ' A good time for me (please say it in IST too): '
-SRC = 'sent from the call-time picker on suzutravels.com/india-tours/'
+# Row 17 = hub 11411 (widget.html, unchanged); row 21 (4 Nov 2026) = the two product pages 11412 + 11413 (widget-<id>.html).
+PAGES = {
+    '11411': dict(out='widget.html', hello='Hi Suzu Travels, I am planning a trip to India and would like a call to talk it through.',
+                  path='suzutravels.com/india-tours/', ask='dates, routes, visas, hotels'),
+    '11412': dict(out='widget-11412.html', hello='Hi Suzu Travels, I am planning a Golden Triangle tour (Delhi, Agra, Jaipur) and would like a call to talk it through.',
+                  path='suzutravels.com/golden-triangle-tour/', ask='dates, which tour, add-ons like Rishikesh, hotels, visas'),
+    '11413': dict(out='widget-11413.html', hello='Hi Suzu Travels, I am planning a Char Dham Yatra and would like a call to talk it through.',
+                  path='suzutravels.com/char-dham-yatra-for-nri/', ask='dates, which yatra, elders in the group, helicopter or road, visas'),
+}
+HELLO = PAGES['11411']['hello']
+SRC = 'sent from the call-time picker on ' + PAGES['11411']['path']
 WA_BASE = 'https://wa.me/917087488961?text='
 EM_BASE = 'mailto:info@suzutravels.com?subject=' + quote('Call request - India trip')
 
 # JS: IST = UTC+5:30, no daylight saving. Slots 9:00-20:00 IST start times (team answers 9 am-9 pm IST).
-JS = ('(function(){var R=document.getElementById("szo");if(!R){return;}R.className=R.className.replace(" szo-nojs","");'
+def make_js(HELLO, SRC):
+  return ('(function(){var R=document.getElementById("szo");if(!R){return;}R.className=R.className.replace(" szo-nojs","");'
       'var H=' + json.dumps(HELLO) + ',S=' + json.dumps(SRC) + ',OFF=19800000,HR=3600000;'
       'var D=R.querySelector(".szo-d"),G=R.querySelector(".szo-g"),P=document.getElementById("szo-msg"),T=document.getElementById("szo-tzn");'
       'var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"";}catch(e){}'
@@ -79,13 +88,16 @@ JS = ('(function(){var R=document.getElementById("szo");if(!R){return;}R.classNa
       'var B=R.querySelectorAll(".szo-b a");for(var q=0;q<B.length;q++){B[q].addEventListener("click",upd,true);}'
       '})();')
 
-def build():
+def build(pid='11411'):
+    pg = PAGES[pid]; HELLO = pg['hello']; SRC = 'sent from the call-time picker on ' + pg['path']
+    STATIC = HELLO + ' A good time for me (please say it in IST too): '
+    JS = make_js(HELLO, SRC)
     static_msg = STATIC + '\n\n(' + SRC + ')'
     html = ('<!--szt:call-time--><section class="szo szo-nojs" id="szo" aria-label="Pick a call time in your time zone"><style>' + CSS +
-            '@media(max-width:768px){body.page-id-11411{max-width:none!important}}</style>'
+            '@media(max-width:768px){body.page-id-' + pid + '{max-width:none!important}}</style>'
             '<div class="szo-c"><div class="szo-h"><span class="szo-k">Talk to a real person</span><b>Pick a call time — shown in your own time zone</b>'
             '<span class="szo-s">Our team in Himachal answers 9 am–9 pm IST (UTC+5:30). Choose a time that suits you and send it to us; '
-            'we confirm by WhatsApp or email, usually within 2 hours, and call you on WhatsApp. Bring your questions about India — dates, routes, visas, hotels.</span></div>'
+            'we confirm by WhatsApp or email, usually within 2 hours, and call you on WhatsApp. Bring your questions about India — ' + pg['ask'] + '.</span></div>'
             '<p class="szo-tz">Times below are in <strong id="szo-tzn">your device time zone</strong>. India does not change its clocks for daylight saving.</p>'
             '<div class="szo-d" role="group" aria-label="Day"></div><div class="szo-g" role="group" aria-label="Call time"></div>'
             '<div class="szo-pv" aria-live="polite"><b>Your message</b><span id="szo-msg">' + static_msg.replace('&', '&amp;').replace('<', '&lt;') + '</span></div>'
@@ -97,8 +109,9 @@ def build():
             '<script>' + JS + '</script></div></section><!--/szt:call-time-->')
     return html.replace('\n', ' ') if False else html
 
-if __name__ == '__main__':
-    h = build()
+def check(pid):
+    h = build(pid)
+    SRC = 'sent from the call-time picker on ' + PAGES[pid]['path']
     js = h[h.find('<script>'):h.find('</script>')]
     assert '&' not in js and '//' not in js, 'JS must not contain & or //'
     # the static message carries newlines inside the encoded href only; the HTML itself must be one line
@@ -109,6 +122,10 @@ if __name__ == '__main__':
         assert bad not in low, bad
     assert body.count('<!--szt:call-time-->') == 1
     assert 'US$' not in body
-    out = os.path.join(HERE, 'widget.html')
+    out = os.path.join(HERE, PAGES[pid]['out'])
     open(out, 'w').write(body)
     print(out, len(body))
+
+if __name__ == '__main__':
+    for pid in PAGES:
+        check(pid)
