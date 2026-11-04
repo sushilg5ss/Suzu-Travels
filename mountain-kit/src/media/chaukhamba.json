@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "kicker": "CHAUKHAMBA · GARHWAL",
+  "steps": [[3300, "BADRINATH"], [4627, "BASE CAMP"], [5950, "HIGH CAMP"], [6350, "CAMP 3"], [7138, "SUMMIT"]],
+  "scenes": [
+   {"img": "px-28409954.jpg", "kind": "land", "h": 1399, "t": [0, 4.0], "from": {"scale": 1.04, "x": 40, "y": -190}, "to": {"scale": 1.1, "x": -30, "y": -180}},
+   {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": [3.4, 7.6], "from": {"y": 250}, "to": {"y": 1320}},
+   {"img": "px-92081.jpg", "kind": "land", "h": 1408, "t": [7.0, 10.8], "from": {"scale": 1.06, "x": -120}, "to": {"scale": 1.12, "x": -170}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [10.2, 14.0], "from": {"scale": 1.02, "x": 60, "y": 30}, "to": {"scale": 1.12, "x": -20, "y": 70}}
+  ]
+ },
+ "profile": {
+  "title": "Chaukhamba I, camp by camp",
+  "sub": "Camps from the 1952, 2001 and 2022 climbs · vary by year",
+  "camps": [
+   {"name": "Badrinath", "m": 3300, "day": "Road-head (c.)", "dy": -20},
+   {"name": "Base camp", "m": 4627, "day": "Bhagirathi Kharak"},
+   {"name": "High camp", "m": 5950, "day": "1952 summit camp"},
+   {"name": "Camp 3", "m": 6350, "day": "2001 line"},
+   {"name": "Summit", "m": 7138, "day": "NE ridge"}
+  ]
+ }
+}

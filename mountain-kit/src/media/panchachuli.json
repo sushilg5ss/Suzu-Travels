@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "kicker": "PANCHACHULI · KUMAON",
+  "steps": [[3100, "DUGTU"], [3700, "BASE CAMP"], [4650, "CAMP 1"], [5600, "CAMP 2"], [6904, "SUMMIT"]],
+  "scenes": [
+   {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": [0, 4.0], "from": {"scale": 1.0}, "to": {"scale": 1.08, "x": -30}},
+   {"img": "px-32109154.jpg", "kind": "tilt", "h": 2560, "t": [3.4, 7.6], "from": {"y": 0}, "to": {"y": 520}},
+   {"img": "px-10254837.jpg", "kind": "land", "h": 1408, "t": [7.0, 10.8], "from": {"scale": 1.02, "x": 40}, "to": {"scale": 1.1, "x": -30}},
+   {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "t": [10.2, 14.0], "from": {"scale": 1.02, "x": 40}, "to": {"scale": 1.1, "x": -40}}
+  ]
+ },
+ "profile": {
+  "title": "Panchachuli II, camp by camp",
+  "sub": "1991 Army route (HJ 48) · camp heights vary by year",
+  "camps": [
+   {"name": "Dugtu", "m": 3100, "day": "Road-head (c.)", "dy": -20},
+   {"name": "Base camp", "m": 3700, "day": "Nyulpa"},
+   {"name": "Camp 1", "m": 4650, "day": "Sona glacier"},
+   {"name": "Camp 2", "m": 5600, "day": "High camp"},
+   {"name": "Summit", "m": 6904, "day": "NE ridge"}
+  ]
+ }
+}
