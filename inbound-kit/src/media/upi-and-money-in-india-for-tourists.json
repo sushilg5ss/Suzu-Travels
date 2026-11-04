@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/upi-and-money-in-india-for-tourists/ (practical, information only). Hero from the licensed library in hf/photos/CREDITS.md — no new photos (no payment/QR photos: no brand logos, no faces). Captions are advice lines from the fact pack's Media notes. Poster = Jaisalmer street of textile shops (paying at small shops). No route map, no cost ladder (no prices on this page).",
+ "hero": {
+  "kicker": "PAYING IN INDIA",
+  "scenes": [
+   {"img": "px-17374445.jpg", "kind": "tilt", "from": {"y": 900}, "to": {"y": 500}},
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-5238342.jpg", "kind": "tilt", "from": {"y": 200}, "to": {"y": 600}},
+   {"img": "px-28206557.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 750}}
+  ],
+  "steps": ["SCAN & PAY", "UPI ONE WORLD", "CARDS & CASH", "PLAN AHEAD"]
+ }
+}
