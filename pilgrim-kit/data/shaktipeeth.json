@@ -1512,9 +1512,9 @@
     "town": "Kalighat",
     "district": "Kolkata",
     "state": "West Bengal",
-    "lat": 22.52,
-    "lon": 88.3419,
-    "coord_source": "https://en.wikipedia.org/wiki/Kalighat_Temple",
+    "lat": 22.52021,
+    "lon": 88.34206,
+    "coord_source": "https://nominatim.openstreetmap.org (OSM Kalighat Kali Temple, 2026-11-04)",
     "legend_summary": "On an old course of the Hooghly in south Kolkata, Kalighat marks the place where toes of Sati's right foot are believed to have fallen. Its striking black-stone image of Kali is among the most recognisable icons of Bengal, and the city's very name is often linked to this ghat of Kali; a gilded dome now crowns the shrine. Nakuleshwar Shiva is her guardian Bhairav nearby. Counted among the four Adi peethas in several lists, the shrine is busiest on Tuesdays, Saturdays and during Kali Puja and Durga Puja.",
     "story_beats": [
       "Sati's right toes fall here",
@@ -1523,12 +1523,13 @@
       "Kolkata's heart of Shakti"
     ],
     "darshan": {
-      "open": null,
-      "aarti": null,
-      "note": "Official timings not published/verified; confirm locally.",
-      "as_of": "2026-10-08",
+      "open": "about 5:00 am - 2:00 pm and 5:00 pm - 10:30 pm (later close ~11:30 pm Tue/Sat/Sun); closed ~2-5 pm for bhog",
+      "aarti": "Mangal aarti ~4:00 am; Sandhya aarti ~6:30-7:00 pm",
+      "note": "Secondary source (2023); no reachable official site - confirm locally.",
+      "as_of": "2026-11-04",
       "source": [
-        "https://www.kalighatkalitemple.com/"
+        "https://blog.yatradham.org/kalighat-temple-timings-pass/",
+        "https://www.incredibleindia.gov.in/en/west-bengal/kolkata/kalighat-temple"
       ]
     },
     "festivals": [
@@ -1562,16 +1563,24 @@
           "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
           "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
         ]
+      },
+      {
+        "name": "Kali Puja 2026",
+        "start": "2026-11-08",
+        "end": "2026-11-08",
+        "note": "Kartika Amavasya, Diwali night",
+        "as_of": "2026-11-04",
+        "source": "https://vedpanchang.com/festivals/kali-puja-2026"
       }
     ],
     "how_to_reach": {
-      "air": null,
-      "rail": null,
-      "road": null,
+      "air": "Kolkata airport (CCU) ~25 km by road",
+      "rail": "Sealdah ~7 km, Howrah Jn ~9 km; Kalighat Metro ~0.6 km",
+      "road": "Dakshineswar ~19 km",
       "sources": [
-        "https://en.wikipedia.org/wiki/Kalighat_Temple"
+        "https://router.project-osrm.org (OSRM, 2026-11-04)"
       ],
-      "note": "Distances not verified unless stated; null = not verified."
+      "note": "OSRM road distances from the OSM temple node, as_of 2026-11-04."
     },
     "nearby": [
       "Nakuleshwar Bhairav temple",
