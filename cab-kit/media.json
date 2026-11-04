@@ -797,5 +797,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "kathgodam-to-nainital-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@ad17a832c55b3b14c2098a4054c0729e7eb9c715/cab-kit/media/kathgodam-to-nainital-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@ad17a832c55b3b14c2098a4054c0729e7eb9c715/cab-kit/media/kathgodam-to-nainital-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@ad17a832c55b3b14c2098a4054c0729e7eb9c715/cab-kit/media/kathgodam-to-nainital-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
