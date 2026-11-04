@@ -1,6 +1,6 @@
-# how-to-choose-a-travel-agency-in-india — fact pack (PARTIAL, as of 30 Oct 2026, researched by Inbound Research)
+# how-to-choose-a-travel-agency-in-india — fact pack (as of 04 Nov 2026, researched by Inbound Research; keywords/SERP 30 Oct 2026)
 
-> **STATUS: keywords + SERP + brief done; FACTS PENDING.** WebFetch was not available in the 30 Oct 2026 run, so the official registration pages could not be read. BACKLOG row 33 stays `todo` — **do not build from this file yet.** Next Research run: fetch the URLs under "Facts to verify".
+> **STATUS (4 Nov 2026): facts filled from official pages (PIB, Ministry of Tourism, NIDHI, HP Tourism Trade Rules 2012, UK FCDO) — buildable.** Two kinds of registration exist and must not be mixed up: (a) the Ministry of Tourism's *voluntary* recognition scheme (searchable on NIDHI+) — Suzu is NOT shown as MoT-recognised; (b) state registration under a state Act — Suzu's is HP (line exact).
 
 ## Page brief
 - kind: guide (trust)
@@ -30,16 +30,23 @@ Cluster (tour intent) ≈ 2,000–2,500/mo; evergreen; top-of-page bids high (co
 Results: dontstopliving.net "5 practical tips for finding reliable tour operators in India"; travelindiasmart.com "tour operator select"; naturesafariindia.com "consider before choosing a tour operator in India" (operator blog); travelstride "Best India tour companies" (aggregator); tripcabinet checklist; consumeraffairs.nic.in "comparative test… vacation" PDF; trustpilot complaint pages. Gap confirmed: no page shows how to verify a registration on an official portal.
 PAA candidates: How do I know if an Indian tour operator is legitimate? · Is it safe to book a tour with a local Indian company? · Should I book with a company in my country or in India? · How much deposit is normal? · What is a DMC? · What does "Ministry of Tourism approved" mean? · How do I pay safely? · What should be in writing before I pay?
 
-## Facts to verify (official URLs found 30 Oct 2026 — fetch and fill)
-| # | fact to confirm | official source to read |
-| --- | --- | --- |
-| 1 | Ministry of Tourism recognition scheme for inbound / domestic tour operators and the public NIDHI+ listing (how a traveller searches it) | https://nidhi.tourism.gov.in/home/classified?categoryCode=02&subcategory=TO ; tourism.gov.in guidelines page |
-| 2 | State registration of travel agents in Himachal Pradesh (HP Registration of Tourist Trade Act) — what "HP Tourism registered" means | himachaltourism.gov.in / hptdc / HP e-Gazette (find the Act) |
-| 3 | Consumer protection for travellers: India CPA 2019 / National Consumer Helpline | consumeraffairs.nic.in ; consumerhelpline.gov.in |
-| 4 | Suzu's own registration line (internal, exact): "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022" — link /certificates/ | shared-rules.md (Sushil, 16 Oct 2026) |
-| 5 | Suzu booking line (internal, exact, printed by gen_pages.py) | README §1.3 |
-| 6 | Advisory line on scams/touts (UK FCDO India "scams" section) | gov.uk/foreign-travel-advice/india/safety-and-security |
-Until verified: no claims about what MoT recognition requires, no counts of registered operators.
+## Facts (each with source URL + as-of) — fetched 4 Nov 2026
+| # | fact | source | as of |
+| --- | --- | --- | --- |
+| 1 | "The Ministry of Tourism, Government of India through a voluntary scheme grants recognition/approval to different categories of service providers in the Travel Trade…" — MoT recognition is voluntary, not a licence to operate | https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2083795&reg=48&lang=2 | 12 Dec 2024 |
+| 2 | MoT inbound tour operator guidelines: "This is a voluntary scheme open to all bonafide tour operators"; approved operators must "prominently display the Certificate of approval" | https://tourism.gov.in/sites/default/files/2020-01/1._Inbound_Tour_Operator.pdf | rev. 18 Jul 2011 (confirm current) |
+| 3 | MoT recognition criteria (summary): ≥1 year in operation, minimum paid-up capital and foreign-exchange turnover, office of minimum size, ≥4 qualified staff (fewer in NE/remote areas), income-tax returns, licensed guides at protected monuments, approved agencies for adventure; recognition initially 5 years | same PDF, para 5, 8 | rev. 2011 |
+| 4 | Same guidelines warn of "the potential risk of availing services through the unapproved service providers" | same PDF, para 14 | rev. 2011 |
+| 5 | NIDHI+ (National Integrated Database of Hospitality Industry, Ministry of Tourism) lists registered units incl. travel agents and tour operators; public search by unit type, category, state, city | https://nidhi.tourism.gov.in/home/page/about-nidhi | no date shown (fetched 4 Nov 2026) |
+| 6 | NIDHI holds data on units "under the voluntary scheme of classification only and not a booking platform" | https://www.pib.gov.in/PressReleasePage.aspx?PRID=2155162&reg=48&lang=2 | 11 Aug 2025 |
+| 7 | Complaints about tourism service providers can go to the Ministry via CPGRAMS; they are sent "to the authority concerned" | PIB PRID 2083795 | 12 Dec 2024 |
+| 8 | Himachal Pradesh: travel agents register under the HP Tourism Development and Registration Act, 2002 and the HP Registration of Tourism Trade Rules, 2012; certificate (Form VIII) renewed "after a period of every 3 years"; a registered travel agent must display the Registration Certificate "in his office at a conspicuous place" | https://himachaltourism.gov.in/wp-content/uploads/2018/09/58e76f88225c2_H.P.-Tourism-Trade-Rules-2012.pdf ; Act: https://www.indiacode.nic.in/bitstream/123456789/5726/1/the_himachal_pradesh_tourism_development_and_registration_act,_2002.pdf | notif. 17 Aug 2012 |
+| 9 | Other states have their own rules — not verified state by state → page says "many states register travel agents; ask for the certificate and check it with that state's tourism department" | — | — |
+| 10 | UK FCDO: "Be cautious in tourist areas, where scammers, pickpockets and ticket touts target foreign nationals"; "avoid people at railway stations offering tickets and tours"; if a hotel driver collects you at the airport, "make sure they properly identify themselves" | https://www.gov.uk/foreign-travel-advice/india/safety-and-security | updated 7 Oct 2026, current 4 Nov 2026 |
+| 11 | UK FCDO: "card skimming and confidence scams are common"; scam/cybercrime helpline 1930 | same | same |
+| 12 | Suzu (internal, exact): "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022" → /certificates/; booking line fixed (gen_pages.py) | shared-rules.md / README §1.3 | 16 Oct 2026 |
+| 13 | HP Tourism public "registered units" lookup (himachaltourism.gov.in/counter/) — exists in search results but could not be read (robots) → do not describe how it works; link the Department of Tourism site only | — | — |
+| 14 | National Consumer Helpline details | not fetched this run → do not quote a number | — |
 
 ## Legal notes (verbatim lines the page must carry)
 - registration exact: "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022" (link /certificates/). Never "registered DMC", "government approved", "licensed by Ministry of Tourism" (Suzu is NOT shown as MoT-recognised).
@@ -49,7 +56,9 @@ Until verified: no claims about what MoT recognition requires, no counts of regi
 ## Do not say
 - "Best travel agency in India" (even though it's a keyword) — use it only as a question ("How to find the best…").
 - Any criticism of named companies; any review counts, ratings, customer numbers.
-- That MoT recognition is mandatory (unverified) — say "voluntary/optional" only if the source says so.
+- That MoT recognition is mandatory — it is voluntary (PIB 12 Dec 2024). Never imply Suzu is MoT-recognised.
+- Any ₹ capital/turnover figures from the MoT guidelines (no ₹ on inbound pages; also 2011 text).
+- That a state registration is a quality guarantee — it is a legal registration, say only that.
 
 ## Media notes (for the Visual Studio)
 - hero: kicker CHOOSING A TOUR COMPANY; captions: CHECK THE LICENCE · SEE THE OFFICE · PAY SAFELY · GET IT IN WRITING (all ≤18). Photos: Suzu's own office photos need Sushil (none in uploads confirmed) → Pexels "travel planning map laptop", "handshake india", "himalaya road car".
@@ -58,5 +67,9 @@ Until verified: no claims about what MoT recognition requires, no counts of regi
 ## FAQ candidates
 PAA list above (8).
 
-## Sources to list on the page (≥3, official) — after verification
-Ministry of Tourism NIDHI+ · HP Tourism / Act · National Consumer Helpline · UK FCDO India safety · suzutravels.com/certificates/
+## Sources to list on the page (≥3, official)
+- PIB — Registered and unregistered travel agents (12 Dec 2024): https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2083795&reg=48&lang=2
+- Ministry of Tourism — NIDHI+ search: https://nidhi.tourism.gov.in/home/page/about-nidhi
+- HP Registration of Tourism Trade Rules, 2012: https://himachaltourism.gov.in/wp-content/uploads/2018/09/58e76f88225c2_H.P.-Tourism-Trade-Rules-2012.pdf
+- UK FCDO — India safety and security: https://www.gov.uk/foreign-travel-advice/india/safety-and-security
+- Suzu certificates: https://suzutravels.com/certificates/
