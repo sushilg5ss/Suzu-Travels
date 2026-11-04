@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "devi",
+  "sky": "dusk",
+  "deva": "श्री सालासर बालाजी",
+  "kicker": "Hanuman · Salasar, Churu, Rajasthan",
+  "beats": [
+   "A plough strikes stone at Asota",
+   "Balaji appears in Mohandas's dream",
+   "The image comes home to Salasar",
+   "Coconuts and churma for bearded Balaji"
+  ]
+ },
+ "story": {
+  "title": "The legend of Salasar Balaji",
+  "beats": [
+   {"arch": "hills", "sky": "dawn", "line": "A farmer's plough finds Balaji"},
+   {"arch": "pillar", "sky": "night", "line": "A dream calls him to Salasar"},
+   {"arch": "devi", "sky": "dusk", "line": "Installed where the cart stopped"},
+   {"arch": "ghats", "sky": "dusk", "line": "Mohandas's fire still burns"}
+  ]
+ }
+}

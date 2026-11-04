@@ -1,0 +1,40 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "night",
+  "deva": "कालीघाट काली मंदिर",
+  "kicker": "Shakti Peeth · Kalighat, Kolkata",
+  "beats": [
+   "Sati's sacrifice at Daksha's fire",
+   "Her right toes fall by the Ganga",
+   "A beam of light reveals the stone",
+   "Kali, keeper of Kolkata's old ghat"
+  ],
+  "deva_size": 98
+ },
+ "story": {
+  "title": "The legend of Kalighat",
+  "beats": [
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Sati's sacrifice at Daksha's yajna"
+   },
+   {
+    "arch": "himalaya",
+    "sky": "snow",
+    "line": "Shiva wanders in grief"
+   },
+   {
+    "arch": "ghats",
+    "sky": "night",
+    "line": "Her toes fall by the Ganga"
+   },
+   {
+    "arch": "devi",
+    "sky": "dusk",
+    "line": "Nakuleshwar keeps watch"
+   }
+  ]
+ }
+}
