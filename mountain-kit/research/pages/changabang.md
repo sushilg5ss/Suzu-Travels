@@ -18,7 +18,7 @@ researched: 2026-10-23 · status: researched · Sell? **no** (Uttarakhand, extre
 | Prominence | ~300 m (a satellite of Kalanka, 6,931 m) | Wikipedia ; data/peaks.json (Kalanka) | 2026-10-23 |
 | Location | Garhwal Himalaya, Nanda Devi group, Chamoli district, Uttarakhand; on the north-east wall of the **Nanda Devi Sanctuary**, next to Kalanka | Wikipedia ; data/peaks.json | 2026-10-23 |
 | Name | "Shining mountain" (loosely, Hindi) — its pale granite; Boardman's book *The Shining Mountain* (1979 John Llewellyn Rhys Prize) | Wikipedia | 2026-10-23 |
-| First ascent | **4 Jun 1974**, Indo-British team co-led by **Lt Col Balwant Sandhu** and **Chris Bonington**, with Martin Boysen, Dougal Haston, Doug Scott and Tashi Chewang (Chewang Tachei in AAJ). Route: over Shipton's Col (~19,500 ft / ~5,950 m) to the upper Changabang glacier, a night climb to the Changabang–Kalanka col, then the **knife-edge east ridge** — SE face / E ridge, the easiest line (snow and ice) | data/peaks.json ; Wikipedia ; AAJ 1975 ; https://thebmc.co.uk/changabangs-first-ascensionist-passes-away | 2026-10-23 |
+| First ascent | **4 Jun 1974**, Indo-British team co-led by **Lt Col Balwant Sandhu** and **Chris Bonington**, with Martin Boysen, Dougal Haston, Doug Scott and Tashi Chewang (Chewang Tachei in AAJ). Route: over Shipton's Col (~19,500 ft / ~5,950 m) to the upper Changabang glacier, a night climb to the Changabang–Kalanka col, then the **knife-edge east ridge** — SE face / E ridge, the easiest line (snow and ice) | data/peaks.json ; Wikipedia ; AAJ 1975 ; https://services.thebmc.co.uk/changabangs-first-ascensionist-passes-away | 2026-10-23 |
 | 1974 approach | Road-head just below **Lata**; Rishi Gorge (Tilman–Shipton 1935 line); "over ten days to cover twenty miles"; BC 20 May on the Rhamani glacier side; Bagini Peak climbed 30 May | AAJ 1975 | 2026-10-23 |
 | Grade | Dataset **extreme**: "steep granite; all routes serious". Even the 1974 line needed a night climb up a steep face and a knife-edge ridge; the walls are big-wall/ED alpine terrain | data/peaks.json ; AAJ 1975 ; MEF 97/14 | 2026-10-23 |
 | Season | Dataset **May–Jun & Sep–Oct**. Record: 1974 summit 4 Jun; 1976 West Wall autumn; 1978 S face 27 Sep; 1997 N face 1 Jun; 2018 N face 11–13 May; 2022 West Wall 25 Apr–2 May | data/peaks.json ; Wikipedia ; MEF 97/14 ; montagna.tv ; ExplorersWeb | 2026-10-23 |
@@ -84,7 +84,7 @@ researched: 2026-10-23 · status: researched · Sell? **no** (Uttarakhand, extre
 5. https://explorersweb.com/top-10-expeditions-of-2022-5-changabang-first-repeat-boardman-tasker-route/
 6. https://planetmountain.com/en/news/alpinism/changabang-west-wall-repeated-after-46-years-daniel-joll-kim-ladiges-matthew-scholes.html
 7. https://www.montagna.tv/124092/la-nord-del-changabang-in-stile-alpino-in-soli-tre-giorni-per-i-francesi-billon-moatti-e-ratel-il-video/amp/ (2018 GMHM)
-8. https://thebmc.co.uk/changabangs-first-ascensionist-passes-away (Balwant Sandhu)
+8. https://services.thebmc.co.uk/changabangs-first-ascensionist-passes-away (Balwant Sandhu)
 9. https://www.euttaranchal.com/tourism/uttarakhand-opens-83-himalayan-peaks-for-mountaineering.php
 10. https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743
 11. https://www.indmount.org/IMF/peakfee
