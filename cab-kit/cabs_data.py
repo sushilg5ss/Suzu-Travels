@@ -156,6 +156,8 @@ PLACES = {
     "Dunera": (32.44, 75.89), "Banikhet": (32.55, 75.94), "Khajjiar": (32.55, 76.06), "Chamba": (32.55, 76.13),
     # 30 Oct 2026 · Jammu–Katra road (Photon/OSM coords, checked)
     "Domel": (32.89, 74.95), "Kunjwani": (32.67, 74.88),
+    # 4 Nov 2026 · Kathgodam–Nainital hill road (approx. OSM town centres)
+    "Ranibagh": (29.30, 79.55), "Jeolikote": (29.33, 79.50),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
@@ -199,6 +201,7 @@ ROUTES = [
     dict(slug="delhi-to-amritsar-taxi", a="Delhi", b="Amritsar", km=460, t="7–8 hrs", f=0.85),
     dict(slug="delhi-to-katra-taxi", a="Delhi", b="Katra", km=640, t="11–12 hrs", f=0.85),   # 29 Oct 2026: page live; NH44 via Pathankot–Jammu, then Nagrota–Katra road (Triveni 630 km, HurryUp 618, EMT 654, OSRM 650)
     dict(slug="jammu-to-katra-taxi", a="Jammu", b="Katra", km=48, t="1–1.5 hrs", f=1.0),   # 30 Oct 2026: page live; Nagrota–Domel road (SMVDSB ~50 km, EMT 45 km city / 49 km airport, OSRM 40–50); same km/f as the jammu-taxi-service Katra row
+    dict(slug="kathgodam-to-nainital-taxi", a="Kathgodam", b="Nainital", km=35, t="1–1.5 hrs", f=1.1),   # 4 Nov 2026: page live; Ranibagh–Jeolikote hill road (CabBazar/HurryUp 36 km, Bizare/Savaari/MMT ~35 km); same km/f as the nainital-taxi-service Kathgodam row
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
     dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
