@@ -1,0 +1,116 @@
+{
+ "kind": "state",
+ "path": "/mountains-of-india/uttarakhand/",
+ "state": "uttarakhand",
+ "title": "Highest Peaks in Uttarakhand: 60 Peaks, Listed & Explained",
+ "seo_title": "Highest Peaks in Uttarakhand: List & Climbing Guide",
+ "seo_desc": "Nanda Devi (7,816 m) heads Uttarakhand's 60 notable peaks: heights, districts, first ascents, the 2026 opening of 83 peaks, permits and seasons.",
+ "focus": "highest peak in uttarakhand",
+ "commercial": false,
+ "label": "Peaks of Uttarakhand",
+ "blurb": "60 peaks · Nanda Devi 7,816 m to Nag Tibba",
+ "verified": "4 Nov 2026",
+ "kicker": "Uttarakhand · Garhwal & Kumaon",
+ "tag": "Uttarakhand's mountains, from Gangotri to the Kumaon border.",
+ "sub": "Sixty notable summits, from 7,816 m Nanda Devi to the walking summits of the foothills, with their heights, districts, first ascents and 2026 status: what is open, what is still closed and how the permits work.",
+ "chips": [
+  ["7,816 m", "Nanda Devi (closed)"],
+  ["60 peaks", "in our table"],
+  ["12 peaks", "above 7,000 m"],
+  ["83 peaks", "opened in Feb 2026"],
+  ["May–Jun · Sep–Oct", "climbing seasons"]
+ ],
+ "hero_alt": "Himalayan ridges, a snow camp, a meadow base camp and a roped team (stock footage) with statements: 60 peaks in one table, highest 7,816 m, 12 above 7,000 m, 83 opened in 2026",
+ "ladder_alt": "Animated chart of seven Uttarakhand peaks at their true heights: Bandarpunch, Shivling, Changabang, Satopanth, Trisul I, Kamet and Nanda Devi",
+ "q": "Which is the highest peak in Uttarakhand?",
+ "answer": "<b>Nanda Devi</b> (7,816 m / 25,643 ft) is the highest peak in Uttarakhand and the highest mountain wholly within India, but it has been closed to climbers since 1983. Second is <a href=\"/mountains-of-india/kamet/\">Kamet</a> (7,756 m / 25,446 ft), which is open in 2026. Below are 60 Uttarakhand peaks, 12 of them above 7,000 m, from our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  ["Highest peak", "Nanda Devi, 7,816 m / 25,643 ft (closed since 1983)"],
+  ["Second highest", "Kamet, 7,756 m / 25,446 ft (Chamoli)"],
+  ["Peaks in this list", "60 (3,022–7,816 m)"],
+  ["Above 7,000 m", "12 peaks"],
+  ["Opened in 2026", "83 peaks, 5,700–7,756 m (3–4 Feb 2026)"],
+  ["Regions", "Garhwal and Kumaon"],
+  ["Climbing seasons", "May–Jun and Sep–Oct"]
+ ],
+ "intro": [
+  "Uttarakhand holds two Himalayan regions. <b>Garhwal</b>, in the west, carries the Gangotri glacier peaks above the source of the Ganga, the Badrinath and Kamet group near Tibet and most of the Nanda Devi group. <b>Kumaon</b>, in the east, holds Panchachuli, Nanda Kot and the Kuti valley on the Nepal and Tibet borders. Most of the big summits stand in four districts: Uttarkashi, Chamoli, Pithoragarh and Bageshwar.",
+  "There is no single official count of the state's peaks; Wikipedia's list has about 200 above 6,000 m. Our table covers the 60 notable ones in the dataset behind our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>, each with its height, district, first recorded ascent, grade and status. Where sources differ by a metre or two, as for Nanda Devi (7,816 m or 7,817 m), we use the most-cited figure.",
+  "Three climbing firsts happened here. <a href=\"#peak-trisul-i\">Trisul I</a> (7,120 m) in 1907 was the first 7,000 m summit ever climbed. Kamet in 1931 was the first summit above 25,000 ft. Nanda Devi in 1936 was the highest summit climbed until 1950. More in our <a href=\"/mountains-of-india/records/\">climbing records timeline</a>."
+ ],
+ "table": {
+  "where": {"state": "uttarakhand"},
+  "h2": "All 60 Uttarakhand peaks, highest first",
+  "label": "The list",
+  "text": [
+   "The animation sets seven of Uttarakhand's best-known peaks side by side at their true heights, from Bandarpunch (6,316 m) up to Nanda Devi (7,816 m).",
+   "Search the table by name, or sort it by height or first ascent. The status column shows whether a peak has been climbed, is restricted or is closed. Each peak links to its own guide where we have one, and otherwise to its row in the national list."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "regions",
+   "label": "By region",
+   "kicker": "Where they are",
+   "h2": "Uttarakhand's peaks, region by region",
+   "html": "<p>The peaks fall into four high groups, plus a handful of walking summits in the foothills.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>Gangotri group (Uttarkashi)</h3><ul><li><a href=\"/mountains-of-india/satopanth/\">Satopanth</a> (7,075 m): first climbed in 1947</li><li><a href=\"#peak-kedarnath\">Kedarnath</a> (6,940 m) and <a href=\"#peak-sri-kailash\">Sri Kailash</a> (6,932 m)</li><li><a href=\"#peak-thalay-sagar\">Thalay Sagar</a> (6,904 m): an extreme-grade objective</li><li><a href=\"#peak-bhagirathi-parbat-i\">Bhagirathi Parbat I</a> (6,856 m) and <a href=\"#peak-kedar-dome\">Kedar Dome</a> (6,831 m)</li><li><a href=\"/mountains-of-india/shivling-peak/\">Shivling</a> (6,543 m) and <a href=\"#peak-meru-central\">Meru Central</a> (6,310 m) above Tapovan</li></ul><p class=\"szm-note\">Inside Gangotri National Park: open 1 April–30 November 2026, with a cap of 150 people a day on the Gaumukh–Tapovan approach.</p></div><div class=\"szm-col\"><h3>Badrinath and Kamet (Chamoli)</h3><ul><li><a href=\"/mountains-of-india/kamet/\">Kamet</a> (7,756 m): second highest in the state</li><li><a href=\"#peak-abi-gamin\">Abi Gamin</a> (7,355 m) and <a href=\"#peak-mana-peak\">Mana Peak</a> (7,272 m)</li><li><a href=\"#peak-mukut-parbat\">Mukut Parbat</a> (7,242 m)</li><li><a href=\"#peak-chaukhamba-i\">Chaukhamba I</a> (7,138 m) above Badrinath</li><li><a href=\"#peak-nilkantha\">Nilkantha</a> (6,596 m)</li></ul><p class=\"szm-note\">Border valleys (Mana, Niti): Inner Line Permit for Indians, Protected Area Permit for foreigners.</p></div><div class=\"szm-col\"><h3>Nanda Devi group (Chamoli, Bageshwar)</h3><ul><li><a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi</a> (7,816 m): closed since 1983</li><li><a href=\"#peak-nanda-devi-east\">Nanda Devi East</a> (7,434 m): on the 2026 open list</li><li><a href=\"#peak-trisul-i\">Trisul I</a> (7,120 m): first 7,000 m summit, 1907</li><li><a href=\"#peak-dunagiri\">Dunagiri</a> (7,066 m) and <a href=\"#peak-kalanka\">Kalanka</a> (6,931 m)</li><li><a href=\"/mountains-of-india/changabang/\">Changabang</a> (6,864 m): the granite fang</li></ul><p class=\"szm-note\">The inner sanctuary stays closed; Nanda Devi East is approached from the Milam side, outside it.</p></div><div class=\"szm-col\"><h3>Kumaon (Pithoragarh, Bageshwar)</h3><ul><li><a href=\"#peak-hardeol\">Hardeol</a> (7,151 m)</li><li><a href=\"#peak-panchachuli-ii\">Panchachuli II</a> (6,904 m): highest of the five Panchachuli summits</li><li><a href=\"#peak-nanda-kot\">Nanda Kot</a> (6,861 m)</li><li><a href=\"#peak-chaudhara\">Chaudhara</a> (6,510 m)</li><li><a href=\"#peak-adi-kailash\">Adi Kailash</a> (5,945 m) and <a href=\"#peak-om-parvat\">Om Parvat</a> (5,590 m): sacred and restricted</li></ul><p class=\"szm-note\">Border belt on the Nepal and Tibet frontiers: permits apply.</p></div><div class=\"szm-col\"><h3>Walking summits</h3><ul><li><a href=\"#peak-pangarchulla\">Pangarchulla</a> (4,575 m)</li><li><a href=\"#peak-kedarkantha\">Kedarkantha</a> (3,810 m): a winter trek</li><li><a href=\"#peak-chandrashila\">Chandrashila</a> (3,690 m)</li><li><a href=\"#peak-nag-tibba\">Nag Tibba</a> (3,022 m): the lowest in our table</li></ul><p class=\"szm-note\">Hiking summits, not mountaineering peaks: no climbing permit or rope work.</p></div></div>"
+  },
+  {
+   "id": "rules-2026",
+   "label": "2026 rules",
+   "kicker": "What changed in 2026",
+   "h2": "Mountaineering in Uttarakhand: the 2026 opening",
+   "html": "<p>On 3–4 February 2026, on the direction of Chief Minister Pushkar Singh Dhami, the Uttarakhand Tourism Development Board and the Forest Department opened <b>83 peaks between 5,700 m and 7,756 m</b> across Garhwal and Kumaon. News reports named Kamet, Nanda Devi East, Chaukhamba, Trishul, Shivling, Satopanth, Changabang, Panchachuli and Neelkanth among them.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Who</th><th>What changed</th></tr></thead><tbody><tr><td><b>Indian climbers</b></td><td>No state expedition fees (peak, camping, environmental or trail fees): the state now covers them</td></tr><tr><td><b>Foreign climbers</b></td><td>State fees abolished; only the Indian Mountaineering Foundation (IMF) charges apply</td></tr><tr><td><b>Everyone</b></td><td>Applications on the online Uttarakhand Mountaineering Permission System (UKMPS); Leave No Trace is mandatory</td></tr></tbody></table></div><p>It builds on two earlier steps. In August 2019 the Ministry of Home Affairs opened 137 peaks to foreign climbers, 51 of them in Uttarakhand. In July 2022 the state ended the \"dual fee\" charged by both the IMF and the Forest Department since 2004, and opened 30 unclimbed peaks and 10 trekking peaks.</p><div class=\"szm-call\"><p><b>Still closed or restricted.</b> The main summit of <a href=\"/mountains-of-india/nanda-devi/\">Nanda Devi</a> and its inner sanctuary have been closed since 1983; only Nanda Devi East is on the 2026 list. Adi Kailash and Om Parvat in Pithoragarh are sacred summits in a restricted border zone.</p></div>"
+  },
+  {
+   "id": "season",
+   "label": "Season",
+   "kicker": "When to go",
+   "h2": "Best time to climb in Uttarakhand",
+   "html": "<p>Uttarakhand's big peaks sit on the monsoon side of the Himalaya, so climbers go before and after the rains. The Forest Department's own Kamet page gives April to October, with the post-monsoon weeks the best.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Months</th><th>What to expect</th></tr></thead><tbody><tr><td><b>May–June</b></td><td>Pre-monsoon window for every major peak in our dataset</td></tr><tr><td><b>July–August</b></td><td>Monsoon: landslides on the approach roads and poor visibility</td></tr><tr><td><b>September–October</b></td><td>Post-monsoon window, usually the clearest skies</td></tr><tr><td><b>Winter</b></td><td>High peaks snowbound; low summits such as Kedarkantha become snow treks</td></tr></tbody></table></div><p>Safety matters here. On 4 October 2022 an avalanche on Draupadi ka Danda II in Uttarkashi killed 29 people on a training course, India's worst mountaineering accident. Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before any high climb.</p>"
+  },
+  {
+   "id": "climb",
+   "label": "Where to start",
+   "kicker": "Your first Himalayan peak",
+   "h2": "Want to climb? Where to start",
+   "html": "<p>Uttarakhand's open peaks are mostly technical expeditions of 6,500–7,800 m: 12 in our table are above 7,000 m and 29 more are between 6,501 m and 7,000 m. Most climbers build up to them over several seasons.</p><ul class=\"szm-steps\"><li><b>Learn the basics</b>The Nehru Institute of Mountaineering in Uttarkashi runs 28-day basic and advanced courses, with 2026 batches in March–June and September–November. See our <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses guide</a>.</li><li><b>First summit</b><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m) above Manali in Himachal, the classic first snow climb.</li><li><b>First 6,000 m peak</b><a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m) in Lahaul, or <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m) for a glacier expedition.</li><li><b>Bigger objectives</b><a href=\"/mountains-of-india/reo-purgyil/\">Reo Purgyil</a> (6,816 m), Himachal's highest, before a 7,000 m peak like Kamet.</li></ul><div class=\"szm-call\"><p><b>Information only.</b> Suzu arranges climbs in Himachal Pradesh only, so we do not sell Uttarakhand peaks. Kedarkantha, Chandrashila and Nag Tibba are treks, not mountaineering climbs.</p></div>"
+  }
+ ],
+ "permits_h2": "Permits for climbing in Uttarakhand",
+ "permits": [
+  "<b>Indian climbers</b> apply on the state's UKMPS portal (mountaineering.uk.gov.in/ApplyPermit) and pay no state fees in 2026. The IMF rules for Indian teams, such as a qualified leader and members with basic or advanced mountaineering courses, still apply.",
+  "<b>Foreign nationals</b> need IMF permission, applied for at least 90 days ahead, with a liaison officer and insurance. The IMF base fee for a team of two is US$500 for peaks up to 6,500 m, US$700 for 6,501–7,000 m and US$1,000 above 7,000 m, plus US$500 for liaison-officer equipment; per-member charges apply (IMF, checked 1 Oct 2026). Details in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and fees guide</a>.",
+  "<b>Border areas.</b> The valleys near Tibet need an Inner Line Permit: in Chamoli this covers the Mana, Niti and Rimkhim areas (issued by the SDM Joshimath, with an online pass announced in February 2025), and Uttarkashi's Nelong valley and the Pithoragarh border areas need one too. Foreigners need a Protected Area Permit. <b>Gangotri National Park</b> needs its own permit, online or from the Uttarkashi forest office."
+ ],
+ "quote_h2": "Dreaming of Kamet or Satopanth? Build up in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Uttarakhand peaks. If one is your goal, Himachal is a good place to build the experience: Friendship Peak first, then Yunam or Deo Tibba, then Reo Purgyil. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Uttarakhand's peaks: your questions",
+ "faqs": [
+  ["Which is the highest peak in Uttarakhand?", "Nanda Devi, 7,816 m (25,643 ft; some lists give 7,817 m). It is also the highest mountain wholly within India, and it has been closed to climbers since 1983."],
+  ["Which is the second-highest peak in Uttarakhand?", "Kamet, 7,756 m (25,446 ft), in Chamoli district near the Tibet border. First climbed in 1931, it was the first summit above 25,000 ft."],
+  ["How many peaks are there in Uttarakhand?", "There is no single official count. Wikipedia lists about 200 peaks above 6,000 m; our table tracks 60 notable peaks, 12 of them above 7,000 m."],
+  ["How many peaks did Uttarakhand open in 2026?", "83 peaks between 5,700 m and 7,756 m, announced on 3–4 February 2026 across Garhwal and Kumaon. Applications go through the state's online UKMPS portal."],
+  ["Do Indian climbers pay fees in Uttarakhand?", "No state expedition fees in 2026: the state now covers peak, camping, environmental and trail fees. Foreign teams pay only the IMF charges."],
+  ["Is Nanda Devi open for climbing?", "No. The main summit and the inner sanctuary have been closed since 1983. Only Nanda Devi East (7,434 m) is on the 2026 open list."],
+  ["What is the best season for mountaineering in Uttarakhand?", "May–June and September–October. Avoid the July–August monsoon, which brings landslides and poor visibility."],
+  ["Which was the first 7,000 m peak ever climbed?", "Trisul I (7,120 m) in Uttarakhand, in 1907. Kamet, climbed in 1931, was the first summit above 25,000 ft."]
+ ],
+ "sources": [
+  ["Wikipedia — List of mountain peaks of Uttarakhand", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"],
+  ["Uttarakhand Forest Department — Mountaineering Permission System (UKMPS)", "https://mountaineering.uk.gov.in/ApplyPermit"],
+  ["Uttarakhand Forest Department — Kamet peak page", "https://mountaineering.uk.gov.in/kamet"],
+  ["ETV Bharat, Feb 2026 — Uttarakhand opens 83 Himalayan peaks, waives fees for Indian climbers", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
+  ["The News Mill, Feb 2026 — Uttarakhand opens 83 Himalayan peaks for mountaineering expeditions", "https://thenewsmill.com/2026/02/uttarakhand-opens-83-himalayan-peaks-for-mountaineering-expeditions/"],
+  ["eUttaranchal — Uttarakhand opens 83 Himalayan peaks for mountaineering", "https://www.euttaranchal.com/tourism/uttarakhand-opens-83-himalayan-peaks-for-mountaineering.php"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
+  ["PIB (Ministry of Home Affairs), Aug 2019 — 137 peaks opened to foreign expeditions", "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=192750&reg=48&lang=2"],
+  ["American Alpine Journal — Uttarakhand rule changes and the Draupadi ka Danda avalanche", "https://publications.americanalpineclub.org/articles/13201216469"],
+  ["Outlook Traveller — Gangotri National Park reopens: dates and permits", "https://www.outlooktraveller.com/News/gangotri-national-park-reopens-for-trek-date-permits-and-what-travellers-need-to-know"],
+  ["The Statesman — Online ILPs for tourist places on the Indo-China border in Uttarakhand", "https://www.thestatesman.com/india/now-online-ilps-for-tourist-places-on-indo-china-border-in-uttarakhand-1503398921.html"],
+  ["Nehru Institute of Mountaineering — 2026 course programme (PDF)", "https://www.nimindia.net/_files/ugd/25f551_b1475f92e2044590bfd35520b4b0115c.pdf"]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
+ ]
+}

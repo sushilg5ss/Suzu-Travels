@@ -344,5 +344,15 @@
   "added": "2026-11-03",
   "peak_id": "changabang",
   "commercial": false
+ },
+ "uttarakhand": {
+  "id": 17761,
+  "path": "/mountains-of-india/uttarakhand/",
+  "kind": "state",
+  "label": "Peaks of Uttarakhand",
+  "blurb": "60 peaks · Nanda Devi 7,816 m to Nag Tibba",
+  "added": "2026-11-04",
+  "state": "uttarakhand",
+  "commercial": false
  }
 }
