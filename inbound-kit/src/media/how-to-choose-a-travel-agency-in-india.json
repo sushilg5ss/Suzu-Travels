@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/how-to-choose-a-travel-agency-in-india/ (guide, trust). Captions from the fact pack's Media notes (advice lines, no place names). Poster = new px-35441447: a private SUV on a gravel mountain road in Spiti (Pexels: Marango Rangarik, Himachal), mirrored so the car sits left of the text; plate and badges blurred, so no mirrored lettering. Then Dhauladhar range, Shimla sunrise, Christ Church Shimla from the library. No route map, no cost ladder.",
+ "hero": {
+  "kicker": "CHOOSING A TOUR COMPANY",
+  "scenes": [
+   {"img": "px-35441447.jpg", "kind": "land", "mirror": true, "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-36966954.jpg", "kind": "tilt", "from": {"y": 200}, "to": {"y": 550}},
+   {"img": "px-30550228.jpg", "kind": "land", "from": {"scale": 1.04, "x": -40, "y": 0}, "to": {"scale": 1.12, "x": 30, "y": 10}},
+   {"img": "px-5238342.jpg", "kind": "tilt", "from": {"y": 200}, "to": {"y": 600}}
+  ],
+  "steps": ["CHECK THE LICENCE", "SEE THE OFFICE", "PAY SAFELY", "GET IT IN WRITING"]
+ }
+}
