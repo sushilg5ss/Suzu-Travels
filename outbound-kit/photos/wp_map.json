@@ -1795,5 +1795,65 @@
   "license": "CC BY-SA 4.0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Mount_Aragats_2020-05-11.jpg",
   "wp_id": 17233
+ },
+ "thailand-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-thailand-railay-krabi.webp",
+  "alt": "Limestone cliffs rising from the clear sea at Railay, Krabi, Thailand",
+  "cap": "Railay, Krabi",
+  "note": "Boat-only beaches below the cliffs",
+  "credit": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Railay,_Krabi,_Thailand.jpg",
+  "wp_id": 17745
+ },
+ "thailand-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-thailand-ko-tapu-phang-nga.webp",
+  "alt": "Ko Tapu (James Bond Island) rock pillar and a longtail boat in Phang Nga Bay, Thailand",
+  "cap": "Ko Tapu, Phang Nga Bay",
+  "note": "James Bond Island day trip from Phuket or Krabi",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Isla_Tapu,_Phuket,_Tailandia,_2013-08-20,_DD_36.JPG",
+  "wp_id": 17746
+ },
+ "thailand-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-thailand-wat-pho-reclining-buddha-scaled.webp",
+  "alt": "Golden Reclining Buddha statue inside Wat Pho, Bangkok, Thailand",
+  "cap": "Wat Pho, Bangkok",
+  "note": "The Reclining Buddha, on the Bangkok temples day",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Wat_Pho,_Bangkok,_Tailandia,_2013-08-22,_DD_02.jpg",
+  "wp_id": 17747
+ },
+ "thailand-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-thailand-grand-palace-roof-sunrise.webp",
+  "alt": "Roof of a building at the Grand Palace silhouetted at sunrise, Bangkok, Thailand",
+  "cap": "Grand Palace, Bangkok",
+  "note": "Go early, before the heat and the crowds",
+  "credit": "Bjørn Erik Pedersen",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:A_roof_of_a_building_at_the_Grand_Palace,_Bangkok,_sunrise,_2017.jpg",
+  "wp_id": 17748
+ },
+ "thailand-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-thailand-wat-rong-khun-chiang-rai.webp",
+  "alt": "Wat Rong Khun, the White Temple, under a blue sky in Chiang Rai, Thailand",
+  "cap": "Wat Rong Khun, Chiang Rai",
+  "note": "The White Temple, a day trip from Chiang Mai",
+  "credit": "Ddalbiez",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Wat_Rong_Khun-001.jpg",
+  "wp_id": 17749
+ },
+ "thailand-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-thailand-sanctuary-of-truth-pattaya.webp",
+  "alt": "Carved wooden interior of the Sanctuary of Truth, Pattaya, Thailand",
+  "cap": "Sanctuary of Truth, Pattaya",
+  "note": "Hand-carved wooden halls by the sea",
+  "credit": "Nvedi",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Sanctuary_of_Truth_Pattaya.jpg",
+  "wp_id": 17750
  }
 }

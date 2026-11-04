@@ -57,3 +57,7 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 
 ## Notes (2 Nov 2026)
 - Hub has a comparison table (`#compare-destinations`, `COMPARE` in `gen_hub.py`). When a new country page goes live, add a row to COMPARE (entry line + its official check date, typical trip, best season from the fact box) as well as to WHEN.
+
+## Notes (4 Nov 2026)
+- `.sx` galleries: `pages/gen_sx_gallery.py <country>` builds a one-line `<section id="<country>-in-photos" class="sx-sec sxg">` (own scoped CSS; credit `p` rule uses `.sx .sxg p.sxg-cr` to beat `.sx .sx-sec>p`). Insert it before the 2nd `<section` of the page and add a TOC link "Photos". Thumbs use WP sizes (`-1024x683` etc.) — check each size URL returns 200 before building.
+- Commons from the sandbox: File: pages escape `_` as `&#95;` in the licence markup; thumb requests often 429 — 960/1280 px worked when 330/500 did not.
