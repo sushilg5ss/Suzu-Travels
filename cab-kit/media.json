@@ -806,5 +806,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "ertiga-on-rent": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@30844dc0c76b556468d5a9b4ebad2ba2abbe5b10/cab-kit/media/ertiga-on-rent/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@30844dc0c76b556468d5a9b4ebad2ba2abbe5b10/cab-kit/media/ertiga-on-rent/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@30844dc0c76b556468d5a9b4ebad2ba2abbe5b10/cab-kit/media/ertiga-on-rent/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
