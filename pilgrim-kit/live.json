@@ -25,5 +25,6 @@
  "nageshwar": {"id": 17297, "path": "/pilgrimage-tours/12-jyotirlinga/nageshwar/", "kind": "temple", "label": "Nageshwar, Dwarka", "blurb": "Lord of the Serpents, by the western sea", "added": "2026-11-01", "shrine": "nageshwar-jyotirlinga"},
  "grishneshwar": {"id": 17423, "path": "/pilgrimage-tours/12-jyotirlinga/grishneshwar/", "kind": "temple", "label": "Grishneshwar, Ellora", "blurb": "The twelfth Jyotirlinga, beside the Ellora caves", "added": "2026-11-02", "shrine": "grishneshwar-jyotirlinga"},
  "mallikarjuna": {"id": 17658, "path": "/pilgrimage-tours/12-jyotirlinga/mallikarjuna/", "kind": "temple", "label": "Mallikarjuna, Srisailam", "blurb": "Jyotirlinga and Shakti Peeth in the Nallamala hills", "added": "2026-11-03", "shrine": "mallikarjuna-jyotirlinga"},
- "kainchi-dham": {"id": 17786, "path": "/pilgrimage-tours/kainchi-dham/", "kind": "temple", "label": "Kainchi Dham, Nainital", "blurb": "Neem Karoli Baba's Hanuman ashram by the Shipra", "added": "2026-11-04", "shrine": "kainchi-dham"}
+ "kainchi-dham": {"id": 17786, "path": "/pilgrimage-tours/kainchi-dham/", "kind": "temple", "label": "Kainchi Dham, Nainital", "blurb": "Neem Karoli Baba's Hanuman ashram by the Shipra", "added": "2026-11-04", "shrine": "kainchi-dham"},
+ "hidimba-devi": {"id": 18022, "path": "/pilgrimage-tours/hidimba-devi/", "kind": "temple", "label": "Hidimba Devi, Manali", "blurb": "Pagoda shrine of 1553 in the Dhungri deodar forest", "added": "2026-11-05", "shrine": "hidimba-devi"}
 }

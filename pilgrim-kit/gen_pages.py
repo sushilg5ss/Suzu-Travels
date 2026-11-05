@@ -36,6 +36,8 @@ PKG = {
     "vaishno": ("/tours/amazing-kashmir-vaishno-devi-package/", "Kashmir with Vaishno Devi", "7 days"),
     "kashi": ("/tours/spiritual-journey-varanasi-ayodhya-prayagraj-tour-package/", "Varanasi–Ayodhya–Prayagraj tour", "6 days"),
     "kainchi": ("/kainchi-dham-registration-2026-new-rules-and-crowd-cap/", "Kainchi Dham registration 2026", "Rules and daily cap"),
+    "manali": ("/tours/beautiful-shimla-manali-tour-package-from-delhi/", "Shimla Manali tour from Delhi", "6 days by road via Shimla"),
+    "manali-chd": ("/packages/himachal-tour-package-shimla-manali/", "Shimla Manali tour from Chandigarh", "6 days, Chandigarh to Manali"),
     "chardham-archive": ("/destination/chardham-tour-packages/", "All Char Dham trips", "Every Uttarakhand yatra we run"),
 }
 
