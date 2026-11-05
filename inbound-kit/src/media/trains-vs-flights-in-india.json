@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/trains-vs-flights-in-india/ (practical). Poster = NEW px-29528961 (Indian Railways passenger train on a curving track). Then NEW px-10005973 (plane wing over the Himalaya), NEW px-37414660 (high-speed train on a bridge over marigolds), library px-35441447 (private SUV on a Spiti road, mirrored as on the agency page). Captions are advice lines, no train or airline names. No route map, no cost ladder.",
+ "hero": {
+  "kicker": "GETTING AROUND INDIA",
+  "scenes": [
+   {"img": "px-29528961.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-10005973.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 30, "y": 10}},
+   {"img": "px-37414660.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-35441447.jpg", "kind": "land", "mirror": true, "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}}
+  ],
+  "steps": ["TRAIN OR FLIGHT?", "FLY THE LONG HOPS", "BOOK 365 DAYS OUT", "OR TAKE THE CAR"]
+ }
+}
