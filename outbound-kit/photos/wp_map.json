@@ -1855,5 +1855,65 @@
   "license": "CC BY-SA 4.0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Sanctuary_of_Truth_Pattaya.jpg",
   "wp_id": 17750
+ },
+ "bali-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bali-tanah-lot.webp",
+  "alt": "Pura Tanah Lot sea temple on its rock island with waves around it, Tabanan, Bali",
+  "cap": "Tanah Lot",
+  "note": "Sea temple on a rock off the west coast",
+  "credit": "Jakub Hałun",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Pura_Tanah_Lot,_Bali,_Indonesia,_20220827_1007_1147.jpg",
+  "wp_id": 17877
+ },
+ "bali-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bali-uluwatu-cliffs-scaled.webp",
+  "alt": "Sea cliffs of Uluwatu with Pura Luhur Uluwatu temple on the clifftop, Bali",
+  "cap": "Uluwatu cliffs",
+  "note": "Clifftop temple above the Indian Ocean",
+  "credit": "Jakub Hałun",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Cliffs_of_Uluwatu,_Bali,_Indonesia,_20220826_1006_1038.jpg",
+  "wp_id": 17878
+ },
+ "bali-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bali-kelingking-nusa-penida.webp",
+  "alt": "Kelingking Beach headland and white sand cove seen from the clifftop, Nusa Penida, Bali",
+  "cap": "Kelingking Beach, Nusa Penida",
+  "note": "The headland and cove from the clifftop",
+  "credit": "Chainwit.",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Kelingking_Beach_(T-Rex_Bay)_of_Nusa_Penida,_Bali_(2025)_-_img_01.jpg",
+  "wp_id": 17879
+ },
+ "bali-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bali-mount-batur-kintamani.webp",
+  "alt": "Mount Batur volcano and its dark lava fields seen from Kintamani, Bali",
+  "cap": "Mount Batur, Kintamani",
+  "note": "Volcano and old lava fields",
+  "credit": "Jorge Franganillo",
+  "license": "CC BY 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Kintamani_-_Gunung_Batur_-_49817610343.jpg",
+  "wp_id": 17880
+ },
+ "bali-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bali-ubud-monkey-forest-scaled.webp",
+  "alt": "Stone bridge wrapped in banyan tree roots over a stream in the Ubud Monkey Forest, Bali",
+  "cap": "Ubud Monkey Forest",
+  "note": "Banyan roots over the old stone bridge",
+  "credit": "Jakub Hałun",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Ubud_Monkey_Forest,_Bali,_20220822_1033_9999.jpg",
+  "wp_id": 17881
+ },
+ "bali-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bali-pura-lempuyang.webp",
+  "alt": "Front courtyard and split gate of Pura Penataran Agung Lempuyang looking out over east Bali",
+  "cap": "Pura Lempuyang",
+  "note": "Temple courtyard and split gate, east Bali",
+  "credit": "Slleong",
+  "license": "CC0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Lempuyang_1.jpg",
+  "wp_id": 17882
  }
 }

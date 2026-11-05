@@ -12,6 +12,11 @@ GAL = {
    sub='Six places that come up in almost every Thailand plan we write — from the Krabi coast to the temples of Bangkok and the far north. Tap any photo to open it full size.',
    slugs=[('thailand-g1','-1024x683'),('thailand-g2','-1024x673'),('thailand-g3','-683x1024'),
           ('thailand-g4','-1024x681'),('thailand-g5','-1024x683'),('thailand-g6','-768x960')]),
+ 'bali': dict(
+   title='Bali in real photos',
+   sub='Six places that feature in the Bali trips we plan — sea temples on the coast, the volcano at Kintamani, the forest in Ubud, a boat day to Nusa Penida and the temple gates of east Bali. Tap any photo to open it full size.',
+   slugs=[('bali-g1','-1024x684'),('bali-g2','-768x1150'),('bali-g3','-1024x768'),
+          ('bali-g4','-1024x512'),('bali-g5','-768x1150'),('bali-g6','-1024x768')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"
