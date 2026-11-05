@@ -1,0 +1,127 @@
+{
+ "hero": {
+  "kicker": "NUN · SURU VALLEY",
+  "steps": [
+   [
+    4600,
+    "BASE CAMP"
+   ],
+   [
+    5490,
+    "CAMP 1"
+   ],
+   [
+    5850,
+    "CAMP 2"
+   ],
+   [
+    6400,
+    "CAMP 3"
+   ],
+   [
+    7135,
+    "SUMMIT"
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 820
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 800
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 30
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ]
+ },
+ "profile": {
+  "title": "Nun, camp by camp",
+  "sub": "1953 first-ascent camps (AAJ 1954) · vary by year",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 4600,
+    "day": "Upper Sentik"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5490,
+    "day": "18,000 ft"
+   },
+   {
+    "name": "Camp 2",
+    "m": 5850,
+    "day": "19,200 ft"
+   },
+   {
+    "name": "Camp 3",
+    "m": 6400,
+    "day": "21,000 ft"
+   },
+   {
+    "name": "Summit",
+    "m": 7135,
+    "day": "West ridge"
+   }
+  ]
+ }
+}
