@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-05-assistant-v14",
+ "agent": "Interactive (Sushil approved in chat)",
+ "summary": "Suzu Assistant v1.4 (Delhi/Jammu-Katra + Pathankot-Dalhousie cab routes, Hindi->English switch-back, 49px lang buttons) + ?v=1.4 loader bump",
+ "files": [
+  {
+   "target": "suzu-assistant.js",
+   "sha256": "69ebba6ddd4f022cc997c2972ae195d299a3de703233a1e06b6f83f7e03895fb",
+   "base_sha256": "907b150fbcd518a6acfcf19427e7f6bb78c91ab761486364a55c949fb146ba0f",
+   "url": "https://suzutravels.com/suzu-assistant.js"
+  },
+  {
+   "target": "index.html",
+   "sha256": "b84512d796ef6ae379cec3f2a7eba9584ec387b28178726d5e3c2e7513ae6957",
+   "base_sha256": "45ef136ad1d98cff302ade325e645df52bb8930c7f0fa7706bc4c0e99b7ab979",
+   "url": "https://suzutravels.com/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-05T17:22:04Z",
+ "status": "deployed"
+}
