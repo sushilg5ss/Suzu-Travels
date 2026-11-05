@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-05b-homepage",
+ "agent": "Interactive (Sushil organic push)",
+ "summary": "Hero snow GPU drift (phone raster 4.4 s -> 0.02 s per 5 s) + 29 Explore links to tonight's Kashmir/Himachal guides + weather feed refresh",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "45ef136ad1d98cff302ade325e645df52bb8930c7f0fa7706bc4c0e99b7ab979",
+   "base_sha256": "cae285dfcc6a9e9b60cfe838054cf301ad4e15292d11ac29614307e5de5060a4",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "97efa18bfc6bb005edc41cd6177861320c25ae943ac9cbc1cc4a63c510c38905",
+   "base_sha256": "d78f683907df48d14dc225a0613c3e841cd4b7b2fabc8db8f43d23f39f0329d2",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-05T16:00:23Z",
+ "status": "deployed"
+}
