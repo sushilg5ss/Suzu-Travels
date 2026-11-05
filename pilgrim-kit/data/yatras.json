@@ -2273,14 +2273,24 @@
     },
     "route": [
       {
-        "step": "Shirdi airport / Sainagar Shirdi railway station to temple",
-        "km": 15,
-        "time": "30 min"
+        "step": "Shirdi airport (Kakadi) to temple",
+        "km": 14,
+        "time": "20-30 min"
       },
       {
-        "step": "Nashik to Shirdi",
-        "km": 90,
-        "time": "2 h"
+        "step": "Sainagar Shirdi railway station to temple",
+        "km": 2,
+        "time": "10 min"
+      },
+      {
+        "step": "Shirdi to Shani Shingnapur",
+        "km": 80,
+        "time": "1.5-2 h"
+      },
+      {
+        "step": "Shirdi to Trimbakeshwar",
+        "km": 122,
+        "time": "2.5-3 h"
       }
     ],
     "transport_options": [
@@ -2318,7 +2328,7 @@
       },
       {
         "q": "Nearest airport?",
-        "a": "Shirdi airport, about 15 km."
+        "a": "Shirdi airport at Kakadi, about 14 km."
       },
       {
         "q": "When did Sai Baba take Samadhi?",
@@ -2337,7 +2347,23 @@
       "https://en.wikipedia.org/wiki/Sai_Baba_of_Shirdi",
       "https://en.wikipedia.org/wiki/Shirdi",
       "https://www.sai.org.in/"
-    ]
+    ],
+    "route_source": {
+      "source": "OSRM road routing; Wikipedia Shirdi (airport 14 km)",
+      "as_of": "2026-11-05"
+    },
+    "darshan": {
+      "open": "about 4:45 am to about 11 pm; general darshan from ~6:25 am",
+      "aarti": "Kakad ~5:15 am, Madhyan 12 noon, Dhoop at sunset, Shej ~10 pm (sources differ by up to 45 min)",
+      "palkhi": "Thursdays (evening)",
+      "note": "sai.org.in unreachable from cloud; secondary sources - print 'about', confirm on official site.",
+      "as_of": "2026-11-05",
+      "source": [
+        "https://www.mandirtimings.com/shirdi-temple-darshan-timings/",
+        "https://blog.yatradham.org/shirdi-sai-baba-temple-timings/",
+        "https://en.wikipedia.org/wiki/Sai_Baba_of_Shirdi"
+      ]
+    }
   },
   {
     "slug": "golden-temple-amritsar",

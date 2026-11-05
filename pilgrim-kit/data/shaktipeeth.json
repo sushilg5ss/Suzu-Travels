@@ -1979,12 +1979,13 @@
       "Chalukya-era shrine of Ambabai"
     ],
     "darshan": {
-      "open": null,
-      "aarti": null,
-      "note": "Official timings not published/verified; confirm locally.",
-      "as_of": "2026-10-08",
+      "open": "about 4:30 am (Kakad aarti) to about 10:30 pm (after Shej aarti), short noon naivedya break",
+      "aarti": "Kakad ~4:30-6 am, Mahapuja ~8 am, evening/Dhoop ~8 pm, Shej ~10-10:15 pm (secondary sources disagree)",
+      "note": "Official site unreachable from cloud; secondary sources only - print 'about', confirm locally.",
+      "as_of": "2026-11-05",
       "source": [
-        "http://www.mahalaxmikolhapur.com/"
+        "https://thedevlok.com/temples/mahalaxmi-temple-kolhapur",
+        "https://blog.yatradham.org/kolhapur-mahalakshmi-temple-timings-and-live-darshan/"
       ]
     },
     "festivals": [
@@ -2018,16 +2019,26 @@
           "https://dekhopanchang.com/en/festivals/chaitra-navratri/2027",
           "https://www.drikpanchang.com/navratri/chaitra-vasant-navratri-dates.html?year=2027"
         ]
+      },
+      {
+        "name": "Kirnotsav (sun rays reach the idol)",
+        "window": "around 9-13 Nov and around 30 Jan-3 Feb every year (3-5 days; 2025 Nov began 8 Nov)",
+        "note": "Exact days not announced; depends on clear sky. Next: ~9-13 Nov 2026, ~30 Jan-3 Feb 2027.",
+        "as_of": "2026-11-05",
+        "source": [
+          "https://www.uniindia.com/five-day-long-kirnostav-begins-in-shree-mahalaxmi-temple-of-kolhapur/west/news/3637555.html",
+          "https://www.lokmattimes.com/maharashtra/kolhapur-ambabais-kirnotsav-begins-suns-rays-reach-goddesss-shoulders-on-first-day-a510"
+        ]
       }
     ],
     "how_to_reach": {
-      "air": null,
-      "rail": null,
-      "road": null,
+      "air": "Kolhapur airport (Chhatrapati Rajaram Maharaj Airport) ~13 km",
+      "rail": "Chhatrapati Shahu Maharaj Terminus, Kolhapur ~2 km",
+      "road": "Pune ~228 km, Mumbai ~370 km; Jyotiba ~16 km, Panhala ~20 km, Rankala ~2 km",
       "sources": [
-        "https://en.wikipedia.org/wiki/Mahalakshmi_Temple,_Kolhapur"
+        "OSRM road routing 2026-11-05"
       ],
-      "note": "Distances not verified unless stated; null = not verified."
+      "as_of": "2026-11-05"
     },
     "nearby": [
       "Jyotiba temple",
@@ -2059,10 +2070,29 @@
       }
     ],
     "unverified": [
-      "Timings",
-      "Body part (varies)"
+      "Official timings (site unreachable)",
+      "Body part (varies)",
+      "Kirnotsav exact days",
+      "Protected-monument notification status"
     ],
-    "as_of": "2026-10-08"
+    "as_of": "2026-10-08",
+    "recent": [
+      {
+        "what": "Main garbhagriha closed 14-17 Mar 2026 for chemical conservation of the idol (utsav murti darshan meanwhile)",
+        "source": "https://thecsrjournal.in/kolhapur-mahalaxmi-temple-closed-darshan-hindi/",
+        "as_of": "2026-11-05"
+      },
+      {
+        "what": "Temple development plan launched 20 Jun 2026 (pradakshina path, conservation; no closure stated)",
+        "source": "https://ianslive.in/hm-amit-shah-launches-rs-1445-crore-ambabai-temple-development-plan-in-kolhapur--20260620131815",
+        "as_of": "2026-11-05"
+      },
+      {
+        "what": "Manikarnika Kund restoration 95% complete (1 Nov 2026)",
+        "source": "https://www.gktoday.in/restoration-of-kolhapur-ambabai-temples-manikarnika-kund-is-95-complete/",
+        "as_of": "2026-11-05"
+      }
+    ]
   },
   {
     "slug": "tripura-sundari-udaipur",
