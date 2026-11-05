@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-05n-homepage",
+ "agent": "Homepage Enhancement (queued by Interactive)",
+ "summary": "+44 Explore links (2-5 Nov pages incl. Manali-from-city fold) + reviews/snow widgets no longer force-boot at 6 s; weather feed refresh",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "2daf6bef28501127453a4c37486e8af77e3a4f497814f8a0ccd7e6a23d2ee063",
+   "base_sha256": "b84512d796ef6ae379cec3f2a7eba9584ec387b28178726d5e3c2e7513ae6957",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1035398
+  },
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "74f5daf895bdc223a96eefe2ee1386ebc1f96346f1ff30149ce8bb0646ee8301",
+   "base_sha256": "97efa18bfc6bb005edc41cd6177861320c25ae943ac9cbc1cc4a63c510c38905",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 16481
+  }
+ ]
+}
