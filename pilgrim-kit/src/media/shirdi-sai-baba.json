@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "pillar",
+  "sky": "dawn",
+  "deva": "शिर्डी साईं बाबा",
+  "kicker": "Sai Baba · Shirdi, Maharashtra",
+  "beats": [
+   "A young fakir under the neem",
+   "Dwarkamai's dhuni, udi for all",
+   "Shraddha and saburi — faith, patience",
+   "Samadhi at Buti Wada, Vijayadashami 1918"
+  ]
+ },
+ "story": {
+  "title": "The story of Shirdi",
+  "beats": [
+   {"arch": "hills", "sky": "dawn", "line": "A young seeker under a neem tree"},
+   {"arch": "pillar", "sky": "night", "line": "A fire that never goes out"},
+   {"arch": "lake", "sky": "dusk", "line": "Faith and patience for everyone"},
+   {"arch": "pillar", "sky": "dawn", "line": "Rest in Buti Wada, 1918"}
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "dusk",
+  "deva": "श्री महालक्ष्मी अंबाबाई",
+  "kicker": "Shakti Peeth · Kolhapur, Maharashtra",
+  "beats": [
+   "Mahalakshmi comes to Karveer",
+   "Demon Kolhasur falls; the city remembers",
+   "Ambabai, Mother of Kolhapur",
+   "Sunset rays touch her feet"
+  ]
+ },
+ "story": {
+  "title": "The legend of Ambabai",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "The Goddess comes to Karveer"},
+   {"arch": "hills", "sky": "dawn", "line": "A demon named Kolhasur falls"},
+   {"arch": "devi", "sky": "saffron", "line": "Ambabai guards her city"},
+   {"arch": "devi", "sky": "dusk", "line": "Kirnotsav — the sun bows to her"}
+  ]
+ }
+}
