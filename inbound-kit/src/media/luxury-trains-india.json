@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/luxury-trains-india/ (guide, info only). Library photos only, no new downloads: px-29528961 (Indian Railways train on a curve, Karnataka — poster; generic train, not one of the luxury trains, so captions never name a train), City Palace Udaipur, Jaisalmer, Taj Mahal sunrise — all stops on the Rajasthan luxury-train routes. No route map, no cost ladder (we do not sell these tickets).",
+ "hero": {
+  "kicker": "INDIA'S LUXURY TRAINS",
+  "scenes": [
+   {"img": "px-29528961.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 30, "y": 10}},
+   {"img": "px-17831363.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-17374445.jpg", "kind": "land", "from": {"scale": 1.04, "x": -40, "y": 0}, "to": {"scale": 1.12, "x": 30, "y": 10}},
+   {"img": "px-33777272.jpg", "kind": "land", "from": {"scale": 1.04, "x": 20, "y": 0}, "to": {"scale": 1.12, "x": -20, "y": 10}}
+  ],
+  "steps": ["PALACES ON RAILS", "A WEEK ON BOARD", "BOOK OFFICIALLY", "WE PLAN AROUND IT"]
+ }
+}
