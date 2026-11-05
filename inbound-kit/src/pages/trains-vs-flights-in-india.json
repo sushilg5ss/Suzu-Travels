@@ -1,0 +1,311 @@
+{
+ "path": "/india-tours/trains-vs-flights-in-india/",
+ "parent": 11411,
+ "kind": "practical",
+ "title": "Trains vs Flights in India: How Foreign Visitors Get Around",
+ "seo_title": "India Train Travel or Flights? A Visitor's Guide",
+ "seo_desc": "India train travel for foreigners: book up to 365 days ahead, when a domestic flight or private car is smarter, winter fog delays and staying safe.",
+ "focus": "india train travel",
+ "label": "Trains vs flights in India",
+ "blurb": "Foreign Tourist Quota, when to fly, winter fog — and when a car wins",
+ "kicker": "Getting around · Train, plane or car",
+ "tag": "Train, plane or car?",
+ "sub": "India is big, and the right way to cross it changes with every leg of your trip. Here is how foreign visitors book Indian trains (up to 365 days ahead), when a domestic flight saves a day, what winter fog does to both — and the legs where a private car beats them.",
+ "hero_alt": "An Indian Railways passenger train on a curving track, a plane wing over the snow-covered Himalaya, a modern train crossing a bridge over marigold fields and a private car on a Himalayan mountain road",
+ "cta1": "Compare by leg",
+ "chips": [
+  [
+   "365 days",
+   "train booking window for foreigners"
+  ],
+  [
+   "7 classes",
+   "from sleeper to executive"
+  ],
+  [
+   "Passport",
+   "your ID on trains and planes"
+  ],
+  [
+   "20% deposit",
+   "full refund within 48 h"
+  ]
+ ],
+ "q": "Should I take trains or flights in India?",
+ "answer": "Use <b>trains</b> for short and medium legs such as Delhi–Agra or the Kalka–Shimla mountain railway: foreigners can book on IRCTC up to <b>365 days ahead</b> with a passport and an international card. <b>Fly</b> the long cross-country legs. Take a <b>private car</b> where you want stops or the mountains. Suzu Travels plans the mix and quotes cars on request.",
+ "facts": [
+  [
+   "365 days",
+   "Foreign Tourist Quota booking window (general: 60)"
+  ],
+  [
+   "1.5×",
+   "Foreign Tourist Quota fare vs normal fare"
+  ],
+  [
+   "50%",
+   "of the fare deducted if you cancel an FT ticket"
+  ],
+  [
+   "6 airports",
+   "certified for low-visibility landings (2024)"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "by-leg",
+   "nav": "By leg",
+   "h2": "Train, flight or car: what we suggest leg by leg",
+   "kind": "table",
+   "lead": "There is no single answer for India. These are the legs first-time visitors ask us about most, and how we usually plan them.",
+   "head": [
+    "Leg",
+    "Our usual pick",
+    "Why"
+   ],
+   "rows": [
+    [
+     "Delhi – Agra",
+     "Train or private car",
+     "Agra is 204 km (127 mi) from Delhi by road. A morning train is quick; a car is easier with luggage and lets you add stops. The Taj Mahal is closed on Fridays — plan the day around that."
+    ],
+    [
+     "Agra – Jaipur",
+     "Private car with stops",
+     "232 km (144 mi) by road, with Fatehpur Sikri and the Abhaneri stepwell on the way. Trains run too — see our <a href=\"/india-tours/agra-to-jaipur/\">Agra to Jaipur guide</a>."
+    ],
+    [
+     "Delhi – Shimla",
+     "Train, then the mountain railway — or a car",
+     "The Kalka–Shimla railway climbs 96 km (60 mi) into the hills and is part of the UNESCO-listed Mountain Railways of India. Slow and scenic; a car is faster door to door."
+    ],
+    [
+     "Delhi – Dharamshala / Manali",
+     "Fly, or a private car",
+     "Kangra (Gaggal) airport is about 14 km (9 mi) from Dharamshala; Bhuntar airport about 50 km (31 mi) from Manali. Small mountain airports — weather can delay flights, so keep a spare day or go by road."
+    ],
+    [
+     "Long cross-country legs",
+     "Fly",
+     "Delhi to Kerala, Goa, Varanasi or the Andaman Islands are long distances — a domestic flight saves one or two days compared with the train."
+    ],
+    [
+     "Inside the Himalaya",
+     "Private car",
+     "Shimla, Manali, Dharamshala, Spiti and Kinnaur are connected by road; the car is the only way to see the valleys between them."
+    ]
+   ],
+   "note": "Road distances: Taj Mahal official site and Himachal Tourism. Train timings and flights change — check IRCTC or the airline for the current schedule."
+  },
+  {
+   "id": "book-trains",
+   "nav": "Booking trains",
+   "h2": "How foreigners book Indian trains: the Foreign Tourist Quota",
+   "kind": "steps",
+   "lead": "Indian Railways keeps a quota of seats for foreign tourists, bookable online on IRCTC. These are the rules, from IRCTC's own terms.",
+   "items": [
+    [
+     "Register on IRCTC with an international mobile",
+     "Foreign users add and verify an international mobile number in their IRCTC profile, then use the Foreign Tourist ticket booking option."
+    ],
+    [
+     "Book up to 365 days ahead",
+     "Foreign tourists can book up to 365 days in advance. The general window for everyone else was cut to 60 days from 1 November 2024; the 365-day limit for foreign tourists stayed (PIB, 17 Oct 2024). If you book beyond the general window, your berth is allotted when that window opens."
+    ],
+    [
+     "Enter every passport",
+     "The passport number and nationality of each passenger are mandatory at booking. Names cannot be changed later."
+    ],
+    [
+     "Pay by international card",
+     "Payment is only by international debit or credit card. The quota fare is 1.5 times the normal fare, plus a service charge per ticket; there are no concessions."
+    ],
+    [
+     "Carry the original passport on board",
+     "Bring the passport you booked with, with your valid visa. Without it you are treated as travelling without a ticket and charged a penalty of three times the fare. No visa yet? Apply only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra (our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks you through it)."
+    ],
+    [
+     "Know the cancellation rule",
+     "If you cancel, a flat 50% of the fare is deducted on top of the cancellation charges — online only, up to 4 hours before departure, refunded to the card you paid with."
+    ]
+   ]
+  },
+  {
+   "id": "classes",
+   "nav": "Classes",
+   "h2": "Which train class to book",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "The Foreign Tourist Quota covers seven classes, depending on the train. For a first trip we suggest an air-conditioned class.",
+   "items": [
+    [
+     "EC and CC — day trains",
+     "Executive Chair Car (EC) and AC Chair Car (CC) are reclining seats on fast day trains — the usual choice for Delhi–Agra or Delhi–Kalka."
+    ],
+    [
+     "1A, 2A, 3A — overnight AC",
+     "First AC, AC 2-tier and AC 3-tier are sleeping berths in air-conditioned coaches, from the most private (1A) to the most shared (3A)."
+    ],
+    [
+     "SL and 2S — non-AC",
+     "Sleeper (SL) and Second Sitting (2S) are the cheapest and busiest. Fine for short hops if you travel light; not our pick for a first trip."
+    ],
+    [
+     "More detail",
+     "Our blog post <a href=\"/indian-train-classes-explained/\">Indian train classes explained</a> walks through each class with what to expect on board."
+    ]
+   ]
+  },
+  {
+   "id": "flights",
+   "nav": "Flights & fog",
+   "h2": "Domestic flights in India — and the winter fog",
+   "kind": "prose",
+   "paras": [
+    "For long legs a domestic flight is the time-saver. The UK Foreign Office's practical airport advice is to allow enough time to complete check-in and security procedures.",
+    "In winter, fog in North India delays both flights and trains. The Ministry of Civil Aviation tells airlines to warn passengers in advance about delays and cancellations caused by low visibility, and to cancel upcoming flights if the delay will be more than 3 hours (PIB, 1 Jan 2025). Delhi has runways equipped for low-visibility (CAT III) landings, and in 2024 six airports were certified for them: Delhi, Lucknow, Jaipur, Amritsar, Bengaluru and Kolkata.",
+    "What it means for your plan: in the fog season, avoid a tight connection on the same day as an international flight, keep the first morning flexible, and give your driver the flight number so pick-ups follow the real arrival time. The best months for each region are in our <a href=\"/india-tours/best-time-to-visit-india/\">best time to visit India</a> guide."
+   ]
+  },
+  {
+   "id": "safety",
+   "nav": "Safety",
+   "h2": "Is train travel in India safe?",
+   "kind": "callout",
+   "style": "dark",
+   "text": "The UK Foreign Office says: <b>\"Train travel in India is generally safe, however accidents happen and have previously resulted in death and serious injury. There are police or guards on trains and stations if you need help. You must carry valid ID.\"</b> It also advises: do not accept food or drinks from strangers, take care of your passport and valuables as thefts are common, and \"avoid people at railway stations offering tickets and tours as you may be scammed.\"",
+   "after": [
+    "On the road it warns that \"buses are often driven fast and recklessly\" and advises avoiding travel at night and in fog. That is why our cars drive in daylight, and why we suggest booking trains online on IRCTC rather than with anyone at the station.",
+    "Source: UK FCDO India safety and security, page updated 7 Oct 2026 — check before you travel."
+   ]
+  },
+  {
+   "id": "car",
+   "nav": "When a car wins",
+   "h2": "When a private car beats both",
+   "kind": "cards",
+   "items": [
+    [
+     "You want the stops",
+     "Fatehpur Sikri on the way to Jaipur, a temple or a viewpoint in the hills — a train or plane can't stop for them."
+    ],
+    [
+     "You're in the mountains",
+     "Himachal's valleys are linked by road. Airports are small and weather-dependent; a car with a driver who knows hill roads keeps the trip moving."
+    ],
+    [
+     "You have luggage or family",
+     "Hotel door to hotel door, bags stay in the car, no station transfers at either end."
+    ],
+    [
+     "You want to know who's driving",
+     "Your driver's name, photo and car number are shared with you before the trip. See how it works on our <a href=\"/india-tours/private-driver-india/\">private car with driver</a> page."
+    ]
+   ]
+  },
+  {
+   "id": "how-we-help",
+   "nav": "How we help",
+   "h2": "How Suzu Travels plans trains, flights and cars together",
+   "kind": "steps",
+   "style": "alt",
+   "items": [
+    [
+     "We plan the legs",
+     "Tell us your route and dates. We suggest which legs to do by train, by air and by car — in writing, before you pay anything."
+    ],
+    [
+     "You book the Foreign Tourist Quota tickets",
+     "IRCTC's terms say agents may not book Foreign Tourist Quota tickets, so you book those yourself on IRCTC — we tell you which train and class to look for."
+    ],
+    [
+     "We cover the road",
+     "Your car and English-speaking driver meet you at the station or airport and handle every road leg. Driver details reach you before the trip."
+    ],
+    [
+     "We watch the weather",
+     "In the fog season and in the mountains we keep a buffer day in the plan and re-time pick-ups to your real arrival."
+    ]
+   ]
+  }
+ ],
+ "faqs": [
+  [
+   "Can foreigners book Indian train tickets online?",
+   "Yes. Foreign tourists can book on IRCTC under the Foreign Tourist Quota after adding and verifying an international mobile number. You need each passenger's passport number and pay by international debit or credit card."
+  ],
+  [
+   "How far in advance can tourists book trains in India?",
+   "Up to 365 days ahead under the Foreign Tourist Quota. The general advance booking window has been 60 days since 1 November 2024, but Indian Railways kept the 365-day limit for foreign tourists (PIB, 17 Oct 2024)."
+  ],
+  [
+   "Is the Foreign Tourist Quota more expensive?",
+   "Yes — IRCTC charges 1.5 times the normal fare plus a service charge per ticket, with no concessions. Check the current fare on IRCTC when you book."
+  ],
+  [
+   "What ID do I need on Indian trains?",
+   "Your original passport — the one whose number you entered at booking — with your valid visa. Without it you are treated as travelling without a ticket and charged a penalty of three times the fare."
+  ],
+  [
+   "What if I cancel a Foreign Tourist Quota ticket?",
+   "IRCTC deducts a flat 50% of the fare plus the cancellation charges. You cancel online, up to 4 hours before departure, and the refund goes back to the card you paid with."
+  ],
+  [
+   "Is train travel in India safe for tourists?",
+   "The UK Foreign Office calls train travel in India generally safe, notes that accidents happen, and advises guarding your passport and valuables, not accepting food or drinks from strangers and avoiding people at stations offering tickets or tours (page updated 7 Oct 2026)."
+  ],
+  [
+   "Do winter flights in India get delayed by fog?",
+   "They can. In North India's winter fog season airlines are told to warn passengers of delays and cancellations and to cancel flights delayed by more than 3 hours. Keep a buffer before international connections."
+  ],
+  [
+   "Can Suzu Travels book our train tickets?",
+   "Foreign Tourist Quota tickets can't be booked by agents, so you book them yourself on IRCTC. We plan which trains and classes fit, and our car and driver cover the road legs and the station or airport pick-ups."
+  ]
+ ],
+ "sources": [
+  [
+   "IRCTC — Foreign Tourist Quota booking (international users, 365 days, passports, international cards)",
+   "https://contents.irctc.co.in/en/ForeignTouristQuotaBooking.pdf"
+  ],
+  [
+   "IRCTC — Foreign Tourist (FT) Quota general terms and conditions",
+   "https://contents.irctc.co.in/en/FtTermCondition.pdf"
+  ],
+  [
+   "PIB — Advance Reservation Period cut to 60 days from 1 Nov 2024; 365 days for foreign tourists unchanged (17 Oct 2024)",
+   "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2065879"
+  ],
+  [
+   "PIB — Ministry of Civil Aviation fog-season preparedness (1 Jan 2025)",
+   "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2089292"
+  ],
+  [
+   "PIB — Six airports certified for CAT III low-visibility operations (8 Feb 2024)",
+   "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2004056"
+  ],
+  [
+   "UK FCDO — India: safety and security (updated 7 Oct 2026)",
+   "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"
+  ],
+  [
+   "UNESCO — Mountain Railways of India (Kalka–Shimla extension)",
+   "https://whc.unesco.org/en/list/944/"
+  ]
+ ],
+ "verified": "5 Nov 2026",
+ "cta": {
+  "h2": "Send us your route — we'll plan train, flight and car legs",
+  "text": "Tell us your dates, how many of you and the places on your list. You get a leg-by-leg plan — which trains to book, which legs to fly, where the car makes sense — and a US-dollar quote for the road legs from our office in Himachal.",
+  "wa": "Hello Suzu Travels, I'm planning a trip around India (trains vs flights page). Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "private-driver-india",
+  "agra-to-jaipur",
+  "golden-triangle-itinerary-7-days",
+  "india-2-week-itinerary",
+  "best-time-to-visit-himachal",
+  "taj-mahal-tour-from-delhi"
+ ],
+ "talk": true
+}
