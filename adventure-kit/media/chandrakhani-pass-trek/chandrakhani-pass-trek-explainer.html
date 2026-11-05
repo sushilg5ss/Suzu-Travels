@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1600, height=900" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { margin:0; overflow:hidden; background:#0b1f33; }
+#root { position:relative; width:100%; height:100%; overflow:hidden; font-family:"PJS",sans-serif; color:#fff; background:#0b1f33; }
+.kick { position:absolute; left:80px; top:56px; color:#d4a24c; font-weight:800; font-size:26px; letter-spacing:0.18em; }
+.h { position:absolute; left:80px; top:96px; font-weight:800; font-size:60px; letter-spacing:-0.02em; white-space:nowrap; }
+svg.p { position:absolute; left:0; top:0; width:1600px; height:900px; overflow:visible; font-family:PJS; }
+.alt { position:absolute; left:1090px; top:220px; width:440px; font-weight:800; font-size:72px; letter-spacing:-0.02em; white-space:nowrap; }
+.altl { position:absolute; left:1094px; top:312px; width:440px; font-weight:500; font-size:24px; color:rgba(255,255,255,0.8); }
+.km { position:absolute; left:1090px; top:370px; width:440px; font-weight:800; font-size:40px; color:#d4a24c; white-space:nowrap; }
+.pk { position:absolute; left:1090px; top:452px; width:440px; height:262px; border-radius:20px; background:rgba(255,255,255,0.07); border:2px solid rgba(255,255,255,0.14); }
+.pkt { position:absolute; left:28px; top:22px; color:#d4a24c; font-weight:800; font-size:22px; letter-spacing:0.16em; }
+.pn { position:absolute; left:58px; font-weight:800; font-size:30px; white-space:nowrap; }
+.pd { position:absolute; left:30px; width:14px; height:14px; border-radius:7px; background:#d4a24c; }
+.chip { position:absolute; left:1090px; top:748px; height:60px; padding:0 28px; border-radius:30px; background:#d4a24c; color:#0b1f33; font-weight:800; font-size:26px; line-height:60px; white-space:nowrap; }
+.d4 { position:absolute; left:620px; top:770px; width:380px; font-weight:800; font-size:26px; color:#fff; white-space:nowrap; }
+.note { position:absolute; left:80px; top:862px; color:rgba(255,255,255,0.55); font-weight:500; font-size:18px; }
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1600" data-height="900">
+<div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+<div class="kick">NAGGAR · RUMSU · THE ROUTE</div>
+<div class="h">Chandrakhani Pass in 4–5 days</div>
+<svg class="p" viewBox="0 0 1600 900">
+<defs><clipPath id="cp"><rect id="cr" x="0" y="0" width="0" height="900"/></clipPath></defs>
+<line x1="100" y1="740" x2="1000" y2="740" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+<path id="ghost" d="M 120 720 C 240 712 320 420 420 393 C 520 368 600 330 680 315 C 790 296 880 272 960 260" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+<path id="trail" d="M 120 720 C 240 712 320 420 420 393 C 520 368 600 330 680 315 C 790 296 880 272 960 260" clip-path="url(#cp)" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round"/>
+<g class="st" id="st0"><circle cx="120" cy="720" r="11" fill="#fff"/><text x="100" y="778" text-anchor="start" fill="#fff" font-size="30" font-weight="800">Rumsu</text><text x="100" y="810" text-anchor="start" fill="rgba(255,255,255,0.75)" font-size="22" font-weight="500">~2,070 m · above Naggar</text></g>
+<g class="st" id="st1"><circle cx="420" cy="393" r="11" fill="#fff"/><text x="400" y="355" text-anchor="end" fill="#fff" font-size="28" font-weight="800">Naya Tapru</text><text x="440" y="436" text-anchor="start" fill="rgba(255,255,255,0.8)" font-size="22" font-weight="500">~3,200 m</text><rect x="440" y="452" width="120" height="38" rx="19" fill="#d4a24c"/><text x="500" y="478" text-anchor="middle" fill="#0b1f33" font-size="20" font-weight="800">DAY 2</text></g>
+<g class="st" id="st2"><circle cx="680" cy="315" r="11" fill="#fff"/><text x="660" y="283" text-anchor="end" fill="#fff" font-size="28" font-weight="800">Chaklani</text><text x="680" y="357" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="22" font-weight="500">~3,470 m</text><rect x="620" y="373" width="120" height="38" rx="19" fill="#d4a24c"/><text x="680" y="399" text-anchor="middle" fill="#0b1f33" font-size="20" font-weight="800">DAY 3</text></g>
+<g class="st" id="st3"><circle cx="960" cy="260" r="15" fill="#fff"/><text x="960" y="222" text-anchor="end" fill="#fff" font-size="32" font-weight="800">The pass <tspan fill="rgba(255,255,255,0.8)" font-size="24" font-weight="500">3,660 m</tspan></text><rect x="850" y="300" width="140" height="38" rx="19" fill="#d4a24c"/><text x="920" y="326" text-anchor="middle" fill="#0b1f33" font-size="20" font-weight="800">DAY 4</text></g>
+<circle id="dot" cx="120" cy="720" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/>
+</svg>
+<div class="d4" id="d4">Day 5 · back down, or via Malana</div>
+<div class="alt" id="alt">2,070 m</div><div class="altl">height on the trail</div>
+<div class="km" id="km">~20–26 km in total</div>
+<div class="pk" id="pk"><div class="pkt">GOOD TO KNOW</div>
+<div class="pd" id="pd1" style="top:84px"></div><div class="pn" id="p1" style="top:68px">Round trip to Rumsu</div>
+<div class="pd" id="pd2" style="top:130px"></div><div class="pn" id="p2" style="top:114px">Or over to Malana, Jari</div>
+<div class="pd" id="pd3" style="top:176px"></div><div class="pn" id="p3" style="top:160px">TMS registration + ID</div>
+<div class="pd" id="pd4" style="top:222px"></div><div class="pn" id="p4" style="top:206px">Hotel + cab by Suzu</div></div>
+<div class="chip" id="chip">Easy–moderate · Get Quote</div>
+<div class="note">Schematic, not to scale · camp heights approximate</div>
+</div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const trail = document.getElementById("trail"), dot = document.getElementById("dot"), cr = document.getElementById("cr"), alt = document.getElementById("alt");
+const L = trail.getTotalLength();
+const st = { p: 0 };
+function place() { const pt = trail.getPointAtLength(st.p * L); cr.setAttribute("width", (st.p >= 0.999 ? 1100 : pt.x + 10).toFixed(1)); dot.setAttribute("cx", pt.x.toFixed(2)); dot.setAttribute("cy", pt.y.toFixed(2)); const a = Math.round((2070 + (720 - pt.y) / 460 * 1590) / 50) * 50; alt.textContent = (st.p >= 0.999 || a >= 3660) ? "3,660 m" : a.toLocaleString("en-IN") + " m"; }
+tl.set([".st", "#km", "#pk", ".pn", ".pd", "#chip", "#d4"], { opacity: 0 }, 0);
+tl.to("#st0", { opacity: 1, duration: 0.4 }, 0.2);
+tl.to(st, { p: 1, duration: 5.4, ease: "sine.inOut", onUpdate: place }, 0.6);
+tl.fromTo("#st1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 2.0);
+tl.fromTo("#st2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 3.4);
+tl.fromTo("#st3", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(2)", immediateRender: false }, 5.9);
+tl.fromTo("#km", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, 6.3);
+tl.fromTo("#d4", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 6.6);
+tl.fromTo("#pk", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", immediateRender: false }, 7.0);
+[1,2,3,4].forEach(i => tl.fromTo(["#pd" + i, "#p" + i], { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 7.4 + (i - 1) * 0.4));
+tl.fromTo("#chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)", immediateRender: false }, 9.4);
+tl.to("#root", { opacity: 1, duration: 2.2 }, 9.8);
+place();
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body></html>
