@@ -354,5 +354,15 @@
   "added": "2026-11-04",
   "state": "uttarakhand",
   "commercial": false
+ },
+ "ladakh": {
+  "id": 17942,
+  "path": "/mountains-of-india/ladakh/",
+  "kind": "state",
+  "label": "Peaks of Ladakh",
+  "blurb": "35 peaks · Saltoro Kangri 7,742 m to Machoi",
+  "added": "2026-11-05",
+  "state": "ladakh",
+  "commercial": false
  }
 }

@@ -1,0 +1,124 @@
+{
+ "kind": "state",
+ "path": "/mountains-of-india/ladakh/",
+ "state": "ladakh",
+ "title": "Highest Peaks in Ladakh: 35 Peaks, Listed & Explained",
+ "seo_title": "Highest Peaks in Ladakh: List & Climbing Guide",
+ "seo_desc": "Saltoro Kangri (7,742 m) heads Ladakh's 35 notable peaks: heights, areas, first ascents, what is open to climb in 2026, permits and the best season.",
+ "focus": "highest peak in ladakh",
+ "commercial": false,
+ "label": "Peaks of Ladakh",
+ "blurb": "35 peaks · Saltoro Kangri 7,742 m to Machoi",
+ "verified": "5 Nov 2026",
+ "kicker": "Ladakh · Karakoram to Zanskar",
+ "tag": "Ladakh's mountains, from the Siachen giants to the Markha valley.",
+ "sub": "Thirty-five notable summits, from 7,742 m Saltoro Kangri on the Siachen front to the trekking peaks above Tso Moriri, with their heights, areas, first ascents and 2026 status: what you can climb, what is closed and how the permits work.",
+ "chips": [
+  ["7,742 m", "Saltoro Kangri"],
+  ["35 peaks", "in our table"],
+  ["24 peaks", "above 7,000 m"],
+  ["Stok Kangri", "closed since 2020"],
+  ["Jul–Sep", "climbing season"]
+ ],
+ "hero_alt": "High-desert ridges, a snowfield, a roped line and a glacier crossing (stock footage) with statements: 35 peaks in one table, highest 7,742 m, 24 above 7,000 m, 20 first ascents in 2026",
+ "ladder_alt": "Animated chart of seven Ladakh peaks at their true heights: Stok Kangri, Kang Yatse II, Lungser Kangri, Kun, Mamostong Kangri, Saser Kangri I and Saltoro Kangri",
+ "q": "Which is the highest peak in Ladakh?",
+ "answer": "<b>Saltoro Kangri</b> (7,742 m / 25,400 ft), on the Saltoro Ridge in the Siachen area, is the highest peak on ground India administers in Ladakh. India's official map also shows K2 (8,611 m / 28,251 ft) in Ladakh, but K2 stands in Pakistan-administered Gilgit-Baltistan. Second is Saser Kangri I (7,672 m). All 35 peaks are below, from our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  ["Highest peak", "Saltoro Kangri, 7,742 m / 25,400 ft (Siachen area, restricted)"],
+  ["Second highest", "Saser Kangri I, 7,672 m / 25,171 ft (Nubra)"],
+  ["Peaks in this list", "35 (5,458–7,742 m)"],
+  ["Above 7,000 m", "24 peaks, all but Kun in the Karakoram"],
+  ["Open to foreigners", "10 of 35; the other 25 are restricted"],
+  ["Closed", "Stok Kangri (no climbs since 2020)"],
+  ["Climbing season", "July–September"]
+ ],
+ "intro": [
+  "Ladakh is the high, dry corner of the Indian Himalaya. Five ranges cross it from south to north: the Great Himalaya, the Zanskar, the Ladakh Range, the Pangong range and the Karakoram. Its giants are in the far north, in the Saltoro, Saser, Rimo and Siachen groups of the <b>Karakoram</b>; its climbable summits are mostly in the Zanskar range around the Markha valley and the Rupshu plateau near Tso Moriri.",
+  "The \"highest peak in Ladakh\" has two answers. India's official map places <b>K2</b> (8,611 m) inside the Ladakh union territory, but K2 stands in Gilgit-Baltistan, which Pakistan administers, and is climbed only from Pakistan. On ground India administers, the highest is <b>Saltoro Kangri</b> (7,742 m / 25,400 ft) on the Actual Ground Position Line in the Siachen area, about the 31st-highest mountain in the world. It was first climbed on 24 July 1962 by a joint Japanese–Pakistani team.",
+  "Our table covers 35 notable Ladakh peaks from the dataset behind our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>: 24 above 7,000 m, 10 in the 6,000s and one in the 5,000s. Wikipedia's Ladakh list names a few more, such as Mt Hardinge, that are not in our dataset. As Wikipedia notes, a large number of Ladakh's peaks are still not open for climbing for security reasons."
+ ],
+ "table": {
+  "where": {"state": "ladakh"},
+  "h2": "Mountains in Ladakh by height: all 35 peaks",
+  "label": "The list",
+  "text": [
+   "The animation sets seven Ladakh peaks side by side at their true heights, from the now-closed Stok Kangri (6,153 m) up to Saltoro Kangri (7,742 m).",
+   "Search the table by name, or sort it by height or first ascent. The status column shows whether a peak has been climbed, is restricted or is closed. Each peak links to its own guide where we have one, and otherwise to its row in the national list. For the other 7,000 m peaks of India, see our <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks list</a>."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "areas",
+   "label": "By area",
+   "kicker": "Where they are",
+   "h2": "Ladakh's peaks, area by area",
+   "html": "<p>The peaks fall into six areas. The first two are military and border zones; the last four are where ordinary climbing happens.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>Siachen and Saltoro (restricted)</h3><ul><li><a href=\"#peak-saltoro-kangri\">Saltoro Kangri</a> (7,742 m): Ladakh's highest, on the AGPL</li><li><a href=\"#peak-teram-kangri-i\">Teram Kangri I</a> (7,462 m) and <a href=\"#peak-k12\">K12</a> (7,428 m)</li><li><a href=\"#peak-ghent-kangri\">Ghent Kangri</a> (7,401 m)</li><li><a href=\"#peak-apsarasas-kangri-i\">Apsarasas Kangri I</a> (7,245 m); its neighbour Apsarasas Kangri II is still unclimbed</li><li><a href=\"#peak-singhi-kangri\">Singhi Kangri</a> (7,202 m) and <a href=\"#peak-padmanabh\">Padmanabh</a> (7,030 m)</li></ul><p class=\"szm-note\">Closed to ordinary teams. The 2019 opening of Siachen was for Army-arranged tourist visits from Siachen Base Camp to Kumar Post, not for climbing.</p></div><div class=\"szm-col\"><h3>Nubra, Saser and Rimo (restricted)</h3><ul><li><a href=\"#peak-saser-kangri-i\">Saser Kangri I</a> (7,672 m): first climbed by the ITBP in 1973</li><li><a href=\"#peak-mamostong-kangri\">Mamostong Kangri</a> (7,516 m)</li><li><a href=\"#peak-saser-kangri-ii-east\">Saser Kangri II East</a> (7,513 m): climbed in 2011</li><li><a href=\"#peak-rimo-i\">Rimo I</a> (7,385 m) and <a href=\"#peak-plateau-peak\">Plateau Peak</a> (7,287 m)</li><li><a href=\"#peak-shahi-kangri\">Shahi Kangri</a> (6,934 m): first climbed in 2022</li></ul><p class=\"szm-note\">East Karakoram: the IMF allows only joint expeditions with Indian counterparts.</p></div><div class=\"szm-col\"><h3>Markha and Hemis (Leh)</h3><ul><li><a href=\"/mountains-of-india/kang-yatse/\">Kang Yatse</a>: II (6,250 m) is a walk-up, I (6,400 m) is technical</li><li><a href=\"#peak-dzo-jongo\">Dzo Jongo</a> (6,280 m)</li><li><a href=\"/mountains-of-india/stok-kangri/\">Stok Kangri</a> (6,153 m): closed since 2020</li></ul><p class=\"szm-note\">Inside Hemis National Park, which charges its own entry.</p></div><div class=\"szm-col\"><h3>Rupshu and Tso Moriri</h3><ul><li><a href=\"#peak-lungser-kangri\">Lungser Kangri</a> (6,666 m): Rupshu's highest, first climbed in 1995</li><li><a href=\"#peak-chamser-kangri\">Chamser Kangri</a> (6,622 m)</li><li><a href=\"#peak-mentok-kangri\">Mentok Kangri</a> (6,250 m)</li></ul><p class=\"szm-note\">Reached from Karzok on Tso Moriri. Foreigners need a Protected Area Permit for this area.</p></div><div class=\"szm-col\"><h3>Kargil and the Suru valley</h3><ul><li><a href=\"#peak-kun\">Kun</a> (7,077 m): first climbed by Mario Piacenza in 1913</li><li><a href=\"/mountains-of-india/highest-peaks-in-india/#peak-nun\">Nun</a> (7,135 m): on the Jammu &amp; Kashmir–Ladakh border</li><li><a href=\"#peak-chiling-i\">Chiling I</a> (6,349 m) on the Zanskar–Kishtwar side</li></ul><p class=\"szm-note\">Kun is in Ladakh and Nun is counted in Jammu &amp; Kashmir; both are approached from Kargil via the Suru valley road to Tangol.</p></div><div class=\"szm-col\"><h3>Drass</h3><ul><li><a href=\"#peak-machoi\">Machoi</a> (5,458 m): the only 5,000 m peak in our table, near the Zoji La</li></ul></div></div>"
+  },
+  {
+   "id": "open-2026",
+   "label": "What is open",
+   "kicker": "Status, as of October 2026",
+   "h2": "Mountaineering in Ladakh: what is open in 2026",
+   "html": "<p>Only a short list of Ladakh peaks is climbed by ordinary teams each summer. In our dataset, 10 of the 35 are open to foreigners; the other 25 sit in the restricted Siachen, Nubra and Shyok belt.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Status</th><th>Peaks</th></tr></thead><tbody><tr><td><b>Climbed every summer</b></td><td>Kang Yatse II (6,250 m) and I (6,400 m), Dzo Jongo (6,280 m) in the Markha valley; Lungser Kangri (6,666 m), Chamser Kangri (6,622 m) and Mentok Kangri (6,250 m) near Tso Moriri</td></tr><tr><td><b>Full expeditions</b></td><td>Kun (7,077 m) and Nun (7,135 m) from the Kargil side</td></tr><tr><td><b>Closed</b></td><td>Stok Kangri (6,153 m): climbs stopped in 2020 and the Ladakh administration banned expeditions on 21 December 2023 over the shrinking Stok glacier; no reopening found as of October 2026</td></tr><tr><td><b>Restricted</b></td><td>Siachen and East Karakoram peaks, such as Saltoro Kangri, Teram Kangri, Ghent Kangri, Apsarasas, Singhi Kangri, Padmanabh and K12: joint expeditions with Indian counterparts only</td></tr></tbody></table></div><div class=\"szm-call\"><p><b>A record year.</b> In September 2026 a 20-member team from NIMAS Dirang, led by Col Ranveer Singh Jamwal, made the first recorded ascents of 20 unclimbed peaks above 6,000 m in 23 days, in the Chamser–Lungser, Gyama Nala and Chokula areas of the Ladakh Range (PIB, 25 September 2026). The peaks' names and heights have not been published. More virgin summits in our <a href=\"/mountains-of-india/unclimbed-peaks/\">unclimbed peaks guide</a>.</p></div>"
+  },
+  {
+   "id": "history",
+   "label": "History",
+   "kicker": "Firsts",
+   "h2": "Climbing firsts in Ladakh",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Year</th><th>Ascent</th></tr></thead><tbody><tr><td><b>1913</b></td><td>Kun (7,077 m): Mario Piacenza, by the north-east ridge</td></tr><tr><td><b>1953</b></td><td>Nun (7,135 m): Pierre Vittoz and Claude Kogan, west ridge, on 28 August</td></tr><tr><td><b>1962</b></td><td>Saltoro Kangri (7,742 m): joint Japanese–Pakistani team, south-east ridge, on 24 July; an Indian Army team climbed it in 1981</td></tr><tr><td><b>1973</b></td><td>Saser Kangri I (7,672 m): an ITBP team from the south-east, on 5 June</td></tr><tr><td><b>1995</b></td><td>Lungser Kangri (6,666 m): Harish Kapadia</td></tr><tr><td><b>2011</b></td><td>Saser Kangri II East (7,513 m): Mark Richey, Steve Swenson and Freddie Wilkinson, later awarded a Piolet d'Or</td></tr><tr><td><b>2022</b></td><td>Shahi Kangri (6,934 m): first ascent</td></tr><tr><td><b>2026</b></td><td>NIMAS Dirang: 20 first ascents above 6,000 m in the Ladakh Range in 23 days</td></tr></tbody></table></div><p>The big Karakoram peaks are serious ground: in 2018 a climber died in a crevasse on Saser Kangri IV. More firsts across India in our <a href=\"/mountains-of-india/records/\">climbing records timeline</a>.</p>"
+  },
+  {
+   "id": "season",
+   "label": "Season",
+   "kicker": "When to go",
+   "h2": "Best time to climb in Ladakh",
+   "html": "<p>Ladakh lies in the rain shadow of the Great Himalaya; Leh gets only about 100 mm of precipitation a year. So the climbing season is high summer, when the monsoon soaks the rest of north India.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Months</th><th>What to expect</th></tr></thead><tbody><tr><td><b>June</b></td><td>Season opens; snow-melt rivers run high and crossings can be dangerous</td></tr><tr><td><b>July–September</b></td><td>The best window for Markha, Rupshu and Kargil peaks</td></tr><tr><td><b>June–August</b></td><td>The window given for the Karakoram peaks in our dataset</td></tr><tr><td><b>October–May</b></td><td>Cold and snowbound; high passes close</td></tr></tbody></table></div><p>Base camps here start high, so acclimatise in Leh first and read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a>.</p>"
+  },
+  {
+   "id": "climb",
+   "label": "Where to start",
+   "kicker": "Your first Himalayan peak",
+   "h2": "Want to climb? Start next door in Himachal",
+   "html": "<p>With Stok Kangri closed and most of the Karakoram restricted, many climbers who search for a Ladakh peak are really looking for a first 6,000 m summit. Himachal has those, without Ladakh's protected-area permits.</p><ul class=\"szm-steps\"><li><b>First summit</b><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m) above Manali, the classic first snow climb.</li><li><b>First 6,000 m peak</b><a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m) near the Baralacha La, on the Manali–Leh road itself.</li><li><b>Compare the options</b>Our <a href=\"/mountains-of-india/trekking-peaks/\">trekking peaks guide</a> and <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks list</a> set Kang Yatse beside Himachal's peaks.</li></ul><div class=\"szm-call\"><p><b>Information only.</b> Suzu arranges climbs in Himachal Pradesh only, so we do not sell Ladakh peaks.</p></div>"
+  }
+ ],
+ "permits_h2": "Permits for climbing in Ladakh",
+ "permits": [
+  "<b>Indian nationals</b> no longer need an Inner Line Permit for Ladakh's protected areas, such as Nubra, Pangong and Tso Moriri: the Ladakh administration removed it in August 2021. Local environment and wildlife fees still apply; the amounts change, so check them in Leh.",
+  "<b>Foreign nationals</b> still need a Protected Area Permit for Nubra, Pangong, Tso Moriri and Rupshu, Dha-Hanu and similar areas. The same 2021 order extended it from 7 to 15 days. It is issued to groups of two or more through a registered Leh travel agent. Leh town, the highways and Zanskar need none. A tourist visa covers open areas; confirm visa rules with the Indian mission.",
+  "<b>Every peak</b> needs Indian Mountaineering Foundation (IMF) permission; foreign teams apply at least 90 days ahead, with a liaison officer and insurance. The IMF base fee for a team of two is US$500 for peaks up to 6,500 m, US$700 for 6,501–7,000 m and US$1,000 above 7,000 m, plus US$500 for liaison-officer equipment; per-member charges apply (IMF, checked 1 Oct 2026). See our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">how to climb in India</a>. Markha peaks also need Hemis National Park entry."
+ ],
+ "quote_h2": "Dreaming of Kang Yatse or Stok? Climb in Himachal first",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Ladakh peaks. If a 6,000 m summit is your goal, Himachal is a good place to start: Friendship Peak first, then Yunam on the Manali–Leh road. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Ladakh's peaks: your questions",
+ "faqs": [
+  ["Which is the highest peak in Ladakh?", "Saltoro Kangri, 7,742 m (25,400 ft), on the Saltoro Ridge in the Siachen area: the highest on ground India administers. India's official map also places K2 (8,611 m) in Ladakh, but K2 is in Pakistan-administered Gilgit-Baltistan."],
+  ["Which is the second-highest peak in Ladakh?", "Saser Kangri I, 7,672 m (25,171 ft), in the Saser Muztagh above the Nubra valley. An ITBP team first climbed it on 5 June 1973."],
+  ["How many mountains in Ladakh are above 7,000 m?", "24 of the 35 Ladakh peaks in our dataset, almost all of them in the Karakoram. The only one outside it is Kun (7,077 m) in the Great Himalaya."],
+  ["Is Stok Kangri open for climbing?", "No. Climbs stopped in 2020 and the Ladakh administration banned expeditions on 21 December 2023 because of the shrinking Stok glacier. We found no reopening as of October 2026."],
+  ["Which peaks can I climb in Ladakh?", "Kang Yatse II (6,250 m) in the Markha valley and the Rupshu peaks near Tso Moriri, such as Lungser Kangri (6,666 m), are climbed every summer. Kun and Nun are full expeditions from the Kargil side."],
+  ["Is Nun Kun in Ladakh?", "The massif sits on the Jammu & Kashmir–Ladakh border. Kun (7,077 m) is in Ladakh and Nun (7,135 m) is counted in Jammu & Kashmir; both are approached from Kargil through the Suru valley."],
+  ["Do I need a permit to climb in Ladakh?", "Indians have not needed an Inner Line Permit since August 2021. Foreigners still need a Protected Area Permit for areas like Nubra, Pangong and Tso Moriri, and every peak needs IMF permission."],
+  ["When is the mountaineering season in Ladakh?", "July to September, because Ladakh lies in the Himalayan rain shadow. June brings high snow-melt rivers; the Karakoram peaks are climbed from June to August."]
+ ],
+ "sources": [
+  ["Wikipedia — List of mountain peaks of Ladakh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"],
+  ["Wikipedia — List of Indian states and union territories by elevation", "https://en.wikipedia.org/wiki/List_of_Indian_states_and_union_territories_by_elevation"],
+  ["Wikipedia — Saltoro Kangri", "https://en.wikipedia.org/wiki/Saltoro_Kangri"],
+  ["Wikipedia — Saser Kangri", "https://en.wikipedia.org/wiki/Saser_Kangri"],
+  ["Wikipedia — Nun Kun", "https://en.wikipedia.org/wiki/Nun_Kun"],
+  ["Wikipedia — Lungser Kangri", "https://en.wikipedia.org/wiki/Lungser_Kangri"],
+  ["PIB (Ministry of Defence), 25 Sep 2026 — NIMAS team's 20 first ascents in Ladakh", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2314793&reg=3&lang=1"],
+  ["Deccan Chronicle — Ladakh team scales 20 unclimbed peaks in 23 days", "https://www.deccanchronicle.com/amp/nation/ladakh-team-scales-20-unclimbed-peaks-in-23-days-1990635"],
+  ["Voice of Ladakh, Aug 2021 — Indian nationals no longer need a permit for protected areas", "https://voiceofladakh.in/2021/08/indian-nationals-no-longer-need-permit-to-visit-protected-areas-of-ladakh/"],
+  ["The Statesman — Ladakh administration bans expeditions to Stok Kangri", "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"],
+  ["The Tribune — Expeditions to Stok Kangri banned over depleting glaciers", "https://www.tribuneindia.com/news/j-k/trekking-expeditions-to-stok-kangri-banned-over-depleting-glaciers-574219/"],
+  ["GKToday — Siachen opened to tourists (2019)", "https://www.gktoday.in/siachen-worlds-highest-battlefield-now-open-to-tourists/"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
+ ]
+}
