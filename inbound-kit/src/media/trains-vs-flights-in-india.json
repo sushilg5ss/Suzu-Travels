@@ -1,13 +1,129 @@
 {
- "_note": "Media for /india-tours/trains-vs-flights-in-india/ (practical). Poster = NEW px-29528961 (Indian Railways passenger train on a curving track). Then NEW px-10005973 (plane wing over the Himalaya), NEW px-37414660 (high-speed train on a bridge over marigolds), library px-35441447 (private SUV on a Spiti road, mirrored as on the agency page). Captions are advice lines, no train or airline names. No route map, no cost ladder.",
+ "_note": "Media for /india-tours/trains-vs-flights-in-india/ (practical). Poster = NEW px-29528961 (Indian Railways passenger train on a curving track). Then NEW px-10005973 (plane wing over the Himalaya), NEW px-37414660 (high-speed train on a bridge over marigolds), library px-35441447 (private SUV on a Spiti road, mirrored as on the agency page). Captions are advice lines, no train or airline names. No route map, no cost ladder. Route map added 5 Nov 2026 by Visual Studio (Step 1.3): region map (line:false) of section 'by-leg' — each place with the page's usual pick; distances from fact pack facts 12–14; lat/lon from research/pages/india-2-week-itinerary.md (via its route) + varanasi-trip-guide.md Media notes. No fares, no train or airline names.",
  "hero": {
   "kicker": "GETTING AROUND INDIA",
   "scenes": [
-   {"img": "px-29528961.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
-   {"img": "px-10005973.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 30, "y": 10}},
-   {"img": "px-37414660.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
-   {"img": "px-35441447.jpg", "kind": "land", "mirror": true, "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}}
+   {
+    "img": "px-29528961.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-10005973.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": -30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": 30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-37414660.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-35441447.jpg",
+    "kind": "land",
+    "mirror": true,
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 10
+    }
+   }
   ],
-  "steps": ["TRAIN OR FLIGHT?", "FLY THE LONG HOPS", "BOOK 365 DAYS OUT", "OR TAKE THE CAR"]
+  "steps": [
+   "TRAIN OR FLIGHT?",
+   "FLY THE LONG HOPS",
+   "BOOK 365 DAYS OUT",
+   "OR TAKE THE CAR"
+  ]
+ },
+ "route": {
+  "title": "TRAIN, FLIGHT OR CAR",
+  "sub": "Our usual pick, leg by leg from Delhi",
+  "bounds": "auto",
+  "dur": 13,
+  "line": false,
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "where most trips start",
+    "day": "Start",
+    "lat": 28.61,
+    "lon": 77.21
+   },
+   {
+    "name": "Agra",
+    "sub": "204 km · Taj Mahal",
+    "day": "Train or car",
+    "lat": 27.18,
+    "lon": 78.04
+   },
+   {
+    "name": "Jaipur",
+    "sub": "232 km from Agra · stops",
+    "day": "Car",
+    "lat": 26.91,
+    "lon": 75.79
+   },
+   {
+    "name": "Shimla",
+    "sub": "Kalka–Shimla railway",
+    "day": "Train or car",
+    "lat": 31.1,
+    "lon": 77.17
+   },
+   {
+    "name": "Dharamshala",
+    "sub": "Kangra airport · 14 km",
+    "day": "Fly or car",
+    "lat": 32.22,
+    "lon": 76.32
+   },
+   {
+    "name": "Manali",
+    "sub": "Bhuntar airport · 50 km",
+    "day": "Fly or car",
+    "lat": 32.24,
+    "lon": 77.19
+   },
+   {
+    "name": "Varanasi",
+    "sub": "long leg — saves 1–2 days",
+    "day": "Fly",
+    "lat": 25.3176,
+    "lon": 82.9739
+   }
+  ]
  }
 }
