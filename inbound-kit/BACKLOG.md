@@ -61,7 +61,7 @@ Sprint 1 goal (by 30 Nov 2026): rows 1–20 live (two Builders/day). Research ke
 | 34 | india-trip-cost | guide | india trip cost (110) | 110 | yes | todo | Cost LEVELS without inventing numbers: only approved from-US$ rates + "what changes the price"; strong quote CTA |
 | 35 | kashmir-7-day-itinerary | itinerary | kashmir itinerary (30) / kashmir trip itinerary | 60 | yes | todo | Srinagar–Gulmarg–Pahalgam–Sonamarg; advisories dated |
 | 36 | himachal-10-day-itinerary | itinerary | himachal pradesh itinerary (20) | 20 (+ internal value) | yes | todo | The USP itinerary: Shimla–Manali–Dharamshala–Dalhousie with route-map |
-| 37 | luxury-trains-india | guide | maharaja express (6,600) + palace on wheels (2,900) + luxury trains india (1,900) | ≈12,700 5-mkt (KP 30 Oct; peaks Nov–Jan) | info only | todo | Later: comparison guide of luxury trains (official sites linked), we arrange pre/post tours only — never sell tickets we can't issue |
+| 37 | luxury-trains-india | guide | maharaja express (6,600) + palace on wheels (2,900) + luxury trains india (1,900) | ≈12,700 5-mkt (KP 30 Oct; peaks Nov–Jan) | info only | live 2026-11-06 | Later: comparison guide of luxury trains (official sites linked), we arrange pre/post tours only — never sell tickets we can't issue |
 | 38 | diwali-in-india-tour | guide | diwali in india | ≈4,700 A (spike-adjusted) | yes | todo | Target Diwali 2027 — build by Jul 2027 |
 | 39 | manali-vs-kashmir-for-foreign-visitors | guide | (internal) | — | yes | todo | Only if /manali-vs-kashmir/ (13325) doesn't already cover foreigners; else skip |
 

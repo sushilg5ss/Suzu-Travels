@@ -295,5 +295,14 @@
   "blurb": "Foreign Tourist Quota, when to fly, winter fog — and when a car wins",
   "added": "2026-11-05",
   "focus": "india train travel"
+ },
+ "luxury-trains-india": {
+  "id": 18322,
+  "path": "/india-tours/luxury-trains-india/",
+  "kind": "guide",
+  "label": "Luxury trains in India",
+  "blurb": "Maharajas' Express, Palace on Wheels, Golden Chariot, Deccan Odyssey — who runs them and how to book",
+  "added": "2026-11-06",
+  "focus": "luxury trains india"
  }
 }
