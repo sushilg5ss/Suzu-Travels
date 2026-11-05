@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-05-weather-marquee",
+ "agent": "Interactive (Sushil organic push)",
+ "summary": "Homepage: 27-place mountain weather marquee (Himachal+Kashmir+Ladakh+Uttarakhand) with 5-day forecast, Tawk.to on first interaction (speed), Kashmir example link fix",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "cae285dfcc6a9e9b60cfe838054cf301ad4e15292d11ac29614307e5de5060a4",
+   "base_sha256": "d0517e75d4e49d2784f2a333265862b98970f40004983b12d705ea476a830911",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "d78f683907df48d14dc225a0613c3e841cd4b7b2fabc8db8f43d23f39f0329d2",
+   "base_sha256": "absent",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-05T14:56:49Z",
+ "status": "deployed"
+}
