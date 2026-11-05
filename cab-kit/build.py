@@ -53,10 +53,19 @@ def tier_switch(note=True):
 
 PHOTOS = MEDIA.get("photos", {})
 
+FILM_JS = "<script>(function(){var v=document.querySelector('video[data-film]'),c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(!v){return}if(c){if(c.saveData){return}if(/(^|-)[23]g$/.test(c.effectiveType||'')){return}}if(window.matchMedia){if(matchMedia('(prefers-reduced-motion: reduce)').matches){return}}function go(){var s=v.querySelectorAll('source[data-src]'),i,p;for(i=0;s.length>i;i++){s[i].src=s[i].getAttribute('data-src');s[i].removeAttribute('data-src')}v.preload='auto';v.autoplay=true;v.load();p=v.play();if(p){if(p.catch){p.catch(function(){})}}}function idle(){if(window.requestIdleCallback){requestIdleCallback(go,{timeout:2500})}else{setTimeout(go,300)}}if(document.readyState==='complete'){idle()}else{window.addEventListener('load',idle)}})()</script>"
+
 def video_tag(m, cls="", eager=False):
     if not m:
         return ""
-    pre = "auto" if eager else "metadata"
+    if eager:
+        # ENHANCEMENTS #14 (5 Nov 2026): the hero film waits. Poster = first paint/LCP; the <source>s carry data-src and the
+        # inline FILM_JS attaches them only after window load + idle, and never on Save-Data, 2g/3g or reduced motion
+        # (poster stays). One inline script right after the video so a page updates with ONE replace op.
+        mob = f'<source data-src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
+        return (f'<video class="{cls}" data-film muted loop playsinline preload="none" poster="{m["poster"]}" width="{m.get("w",1600)}" height="{m.get("h",900)}">'
+                f'{mob}<source data-src="{m["webm"]}" type="video/webm"><source data-src="{m["mp4"]}" type="video/mp4"></video>{FILM_JS}')
+    pre = "metadata"
     mob = f'<source src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
     return (f'<video class="{cls}" autoplay muted loop playsinline preload="{pre}" poster="{m["poster"]}" width="{m.get("w",1600)}" height="{m.get("h",900)}">'
             f'{mob}<source src="{m["webm"]}" type="video/webm"><source src="{m["mp4"]}" type="video/mp4"></video>')
@@ -438,8 +447,12 @@ def prune_css(css, used):
             out += f"{sel}{{{body}}}"
     return out
 
+def _amp(h):
+    return re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
+
 def finish(slug, h, css_extra=""):
-    h = re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
+    # the hero FILM_JS (#14) is the first <script> now - escape the HTML on both sides of it exactly as before
+    h = FILM_JS.join(_amp(x) for x in h.split(FILM_JS, 1)) if FILM_JS in h else _amp(h)
     problems = re.findall(r"\{\{.*?\}\}|TODO|XXX", h)
     if problems:
         sys.exit(f"BUILD REFUSED {slug}: {problems}")
