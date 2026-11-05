@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1600, height=900" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { margin:0; overflow:hidden; background:#0b1f33; }
+#root { position:relative; width:100%; height:100%; overflow:hidden; font-family:"PJS",sans-serif; color:#fff; background:#0b1f33; }
+.kick { position:absolute; left:80px; top:56px; color:#d4a24c; font-weight:800; font-size:26px; letter-spacing:0.18em; }
+.h { position:absolute; left:80px; top:96px; font-weight:800; font-size:60px; letter-spacing:-0.02em; white-space:nowrap; }
+svg.p { position:absolute; left:0; top:0; width:1600px; height:900px; overflow:visible; font-family:PJS; }
+.box { position:absolute; left:1110px; width:420px; height:150px; border-radius:20px; background:rgba(255,255,255,0.07); border:2px solid rgba(255,255,255,0.14); }
+.bl { position:absolute; left:28px; top:20px; color:#d4a24c; font-weight:800; font-size:20px; letter-spacing:0.16em; }
+.bv { position:absolute; left:26px; top:52px; font-weight:800; font-size:64px; letter-spacing:-0.02em; white-space:nowrap; }
+.chip { position:absolute; left:1110px; top:570px; height:60px; padding:0 28px; border-radius:30px; background:#d4a24c; color:#0b1f33; font-weight:800; font-size:26px; line-height:60px; white-space:nowrap; }
+.tip { position:absolute; left:1110px; top:660px; width:440px; font-weight:500; font-size:24px; line-height:1.4; color:rgba(255,255,255,0.85); }
+.note { position:absolute; left:80px; top:862px; color:rgba(255,255,255,0.55); font-weight:500; font-size:18px; }
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1600" data-height="900">
+<div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+<div class="kick">VASHISHT · MANALI · THE WALK</div>
+<div class="h">Jogini Waterfall, step by step</div>
+<svg class="p" viewBox="0 0 1600 900">
+<defs><clipPath id="cpr"><rect id="crr" x="0" y="0" width="0" height="900"/></clipPath><clipPath id="cp"><rect id="cr" x="0" y="0" width="0" height="900"/></clipPath></defs>
+<line id="road0" x1="110" y1="720" x2="420" y2="720" stroke="rgba(255,255,255,0.22)" stroke-width="6" stroke-dasharray="4 12" stroke-linecap="round"/>
+<line id="road" x1="110" y1="720" x2="420" y2="720" clip-path="url(#cpr)" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+<path id="ghost" d="M 420 720 C 540 712 600 640 680 610 C 760 580 800 520 860 470" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+<path id="trail" d="M 420 720 C 540 712 600 640 680 610 C 760 580 800 520 860 470" clip-path="url(#cp)" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round"/>
+<path id="up0" d="M 860 470 C 900 440 920 380 960 330" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+<g class="st" id="st0"><circle cx="110" cy="720" r="11" fill="#fff"/><text x="90" y="778" fill="#fff" font-size="30" font-weight="800">Manali</text><text x="90" y="810" fill="rgba(255,255,255,0.75)" font-size="22" font-weight="500">town / Mall Road</text></g>
+<g class="st" id="stR"><text x="265" y="700" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="22" font-weight="500">~5–7 km by cab</text></g>
+<g class="st" id="st1"><circle cx="420" cy="720" r="12" fill="#fff"/><text x="430" y="778" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">Vashisht temple</text><text x="430" y="810" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="22" font-weight="500">walk starts · hot springs</text></g>
+<g class="st" id="st2"><circle cx="680" cy="610" r="10" fill="#fff"/><text x="700" y="660" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="24" font-weight="500">orchards &amp; pine</text></g>
+<g class="st" id="st3"><circle cx="860" cy="470" r="15" fill="#fff"/><text x="790" y="455" text-anchor="end" fill="#fff" font-size="28" font-weight="800">Jogini Mata shrine</text><text x="790" y="487" text-anchor="end" fill="rgba(255,255,255,0.8)" font-size="22" font-weight="500">+ lower fall · main view</text></g>
+<g class="st" id="st4"><circle cx="960" cy="330" r="11" fill="#fff"/><text x="960" y="292" text-anchor="middle" fill="#fff" font-size="26" font-weight="800">Upper fall</text><text x="960" y="262" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="22" font-weight="500">+15 min · dry weather only</text></g>
+<g id="fall"><path id="w1" d="M 815 320 L 815 430" stroke="#fff" stroke-width="5" stroke-dasharray="16 18" stroke-linecap="round" fill="none"/><path id="w2" d="M 830 320 L 830 430" stroke="#d4a24c" stroke-width="5" stroke-dasharray="22 16" stroke-linecap="round" fill="none"/></g>
+<circle id="dot" cx="110" cy="720" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/>
+</svg>
+<div class="box" id="b1" style="top:200px"><div class="bl">HEIGHT · APPROX.</div><div class="bv" id="alt">~2,000 m</div></div>
+<div class="box" id="b2" style="top:370px"><div class="bl">WALKING TIME UP</div><div class="bv" id="clk">0 min</div></div>
+<div class="chip" id="chip">3–4 km · Easy · Get Quote</div>
+<div class="tip" id="tip">Back the same way (~3 hr round trip) — then a soak at Vashisht hot springs.</div>
+<div class="note">Schematic, not to scale · heights and times approximate (sources differ)</div>
+</div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const trail = document.getElementById("trail"), dot = document.getElementById("dot"), cr = document.getElementById("cr"), crr = document.getElementById("crr"), alt = document.getElementById("alt"), clk = document.getElementById("clk");
+const L = trail.getTotalLength();
+const rd = { p: 0 }, st = { p: 0 };
+function road() { const x = 110 + rd.p * 310; crr.setAttribute("width", (x + 6).toFixed(1)); if (st.p === 0) { dot.setAttribute("cx", x.toFixed(2)); dot.setAttribute("cy", "720"); } }
+function place() { const pt = trail.getPointAtLength(st.p * L); cr.setAttribute("width", (st.p >= 0.999 ? 1000 : pt.x + 10).toFixed(1)); if (st.p > 0) { dot.setAttribute("cx", pt.x.toFixed(2)); dot.setAttribute("cy", pt.y.toFixed(2)); }
+  const a = Math.round((2000 + st.p * 300) / 50) * 50; alt.textContent = "~" + a.toLocaleString("en-IN") + " m";
+  const m = Math.round(st.p * 90 / 5) * 5; clk.textContent = st.p >= 0.999 ? "~1–1.5 hr" : (m < 60 ? m + " min" : "1 hr " + (m - 60) + " min"); }
+tl.set([".st", "#b1", "#b2", "#chip", "#tip", "#fall", "#up0"], { opacity: 0 }, 0);
+tl.to("#st0", { opacity: 1, duration: 0.4 }, 0.2);
+tl.to("#stR", { opacity: 1, duration: 0.4 }, 0.6);
+tl.to(rd, { p: 1, duration: 1.2, ease: "sine.inOut", onUpdate: road }, 0.6);
+tl.fromTo("#st1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 1.7);
+tl.fromTo(["#b1", "#b2"], { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.45, stagger: 0.15, ease: "power2.out", immediateRender: false }, 1.9);
+tl.to(st, { p: 1, duration: 4.4, ease: "sine.inOut", onUpdate: place }, 2.2);
+tl.fromTo("#st2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 3.8);
+tl.fromTo("#st3", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(2)", immediateRender: false }, 6.4);
+tl.to("#fall", { opacity: 1, duration: 0.5 }, 6.6);
+tl.to("#up0", { opacity: 1, duration: 0.5 }, 7.2);
+tl.fromTo("#st4", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 7.6);
+tl.fromTo("#chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)", immediateRender: false }, 8.4);
+tl.fromTo("#tip", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 8.9);
+tl.fromTo("#w1", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -340 }, duration: 12, ease: "none" }, 0);
+tl.fromTo("#w2", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -456 }, duration: 12, ease: "none" }, 0);
+tl.to("#root", { opacity: 1, duration: 2.6 }, 9.4);
+road(); place();
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body></html>
