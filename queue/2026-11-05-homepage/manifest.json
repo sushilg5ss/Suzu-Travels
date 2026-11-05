@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-05-homepage",
+ "agent": "Interactive (Sushil approved)",
+ "summary": "Homepage release 2026-11-04: Holidays abroad card, 38 Explore links, 5 newly published trip prices, cost-tool month fix (supersedes 11-02/11-03)",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "d0517e75d4e49d2784f2a333265862b98970f40004983b12d705ea476a830911",
+   "base_sha256": "9ef00eb97a4ffbfd7cec67d20e13ff36e81b11f2948b332aaffbb23f89e1980f",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1024742
+  }
+ ]
+}
