@@ -7,3 +7,4 @@ suzu-assistant-previous.js
 suzu-nz-trips.json
 plan-your-trip/**
 deploy-test.txt
+suzu-weather-feed.json

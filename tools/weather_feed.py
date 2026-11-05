@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+"""Mountain weather feed for the suzutravels.com homepage (added 2026-11-05).
+
+Fetches MET Norway Locationforecast 2.0 (free incl. commercial use, CC BY 4.0,
+identifying User-Agent required) for ~30 hill stations in Himachal, Kashmir,
+Ladakh and Uttarakhand, builds one compact JSON and uploads it to
+public_html/suzu-weather-feed.json with the Hostinger API (same upload as deploy.py).
+No site cache clear: the homepage asks for ?h=<UTC hour>, so each hour is a new key.
+
+Run hourly by .github/workflows/weather-feed.yml on the default branch.
+Local test without upload:  python3 tools/weather_feed.py --out feed.json
+"""
+import datetime as dt
+import json
+import sys
+import time
+import urllib.request
+
+sys.path.insert(0, __file__.rsplit("/", 1)[0])
+
+UA = "SuzuTravels-weather/1.0 (+https://suzutravels.com; info@suzutravels.com)"
+U = "https://suzutravels.com/"
+# id, name, hindi, region, lat, lon, altitude m, link
+PLACES = [
+    ("shimla", "Shimla", "शिमला", "Himachal", 31.1048, 77.1734, 2205, "shimla/"),
+    ("kufri", "Kufri", "कुफरी", "Himachal", 31.0979, 77.2678, 2510, "kufri-snowfall/"),
+    ("narkanda", "Narkanda", "नारकंडा", "Himachal", 31.2617, 77.4570, 2708, "narkanda/"),
+    ("chail", "Chail", "चायल", "Himachal", 30.9667, 77.2000, 2250, "chail/"),
+    ("kasauli", "Kasauli", "कसौली", "Himachal", 30.8988, 76.9660, 1800, "kasauli-snowfall/"),
+    ("manali", "Manali", "मनाली", "Himachal", 32.2432, 77.1892, 2050, "manali/"),
+    ("solang", "Solang Valley", "सोलंग", "Himachal", 32.3166, 77.1569, 2480, "solang-valley-guide/"),
+    ("sissu", "Sissu · Lahaul", "सिस्सू", "Himachal", 32.4800, 77.1260, 3120, "adventure/atal-tunnel-sissu-snow-trip/"),
+    ("kasol", "Kasol", "कसोल", "Himachal", 32.0099, 77.3150, 1580, "kasol-trip-plan/"),
+    ("jibhi", "Jibhi", "जीभी", "Himachal", 31.5900, 77.3650, 1900, "jibhi/"),
+    ("kaza", "Kaza · Spiti", "काज़ा", "Himachal", 32.2276, 78.0710, 3800, "destination/spiti-valley-tour-packages/"),
+    ("kalpa", "Kalpa", "कल्पा", "Himachal", 31.5370, 78.2553, 2960, "kalpa-himachal/"),
+    ("chitkul", "Chitkul", "छितकुल", "Himachal", 31.3513, 78.4370, 3450, "sangla-valley-and-chitkul-kinnaur-trip-guide/"),
+    ("dharamshala", "McLeod Ganj", "मैक्लोडगंज", "Himachal", 32.2396, 76.3239, 2080, "mcleod-ganj/"),
+    ("dalhousie", "Dalhousie", "डलहौज़ी", "Himachal", 32.5387, 75.9710, 1970, "dalhousie/"),
+    ("khajjiar", "Khajjiar", "खज्जियार", "Himachal", 32.5501, 76.0596, 1920, "dalhousie-khajjiar-trip-guide/"),
+    ("bir", "Bir Billing", "बीड़", "Himachal", 32.0440, 76.7180, 1525, "adventure/paragliding-in-bir-billing/"),
+    ("srinagar", "Srinagar", "श्रीनगर", "Kashmir", 34.0837, 74.7973, 1585, "destination/kashmir-tour-packages/"),
+    ("gulmarg", "Gulmarg", "गुलमर्ग", "Kashmir", 34.0484, 74.3805, 2650, "india-tours/gulmarg-ski-holiday/"),
+    ("pahalgam", "Pahalgam", "पहलगाम", "Kashmir", 34.0161, 75.3150, 2200, "destination/kashmir-tour-packages/"),
+    ("sonamarg", "Sonamarg", "सोनमर्ग", "Kashmir", 34.3036, 75.2930, 2740, "destination/kashmir-tour-packages/"),
+    ("doodhpathri", "Doodhpathri", "दूधपथरी", "Kashmir", 33.8800, 74.5700, 2730, "best-kashmir-tour-package/"),
+    ("gurez", "Gurez", "गुरेज़", "Kashmir", 34.6340, 74.8480, 2400, "best-kashmir-tour-package/"),
+    ("leh", "Leh", "लेह", "Ladakh", 34.1526, 77.5771, 3500, "destination/leh-ladakh-tour-packages/"),
+    ("auli", "Auli", "औली", "Uttarakhand", 30.5286, 79.5675, 2800, "auli-in-december/"),
+    ("mussoorie", "Mussoorie", "मसूरी", "Uttarakhand", 30.4598, 78.0644, 2005, "mussoorie-in-december/"),
+    ("nainital", "Nainital", "नैनीताल", "Uttarakhand", 29.3803, 79.4636, 2084, "nainital-in-december/"),
+]
+IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+
+
+def get(lat, lon, alt):
+    url = (f"https://api.met.no/weatherapi/locationforecast/2.0/compact?"
+           f"lat={lat:.4f}&lon={lon:.4f}&altitude={alt}")
+    for i in range(3):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read())
+        except Exception as e:  # noqa: BLE001
+            print("  retry", url, e, flush=True)
+            time.sleep(3 * (i + 1))
+    return None
+
+
+def build_place(p, raw):
+    pid, name, hi, region, lat, lon, alt, link = p
+    ts = raw["properties"]["timeseries"]
+    first = ts[0]
+    det = first["data"]["instant"]["details"]
+    nxt = first["data"].get("next_1_hours") or first["data"].get("next_6_hours") or {}
+    now = {
+        "t": round(det.get("air_temperature", 0), 1),
+        "rh": round(det.get("relative_humidity", 0)),
+        "ws": round(det.get("wind_speed", 0) * 3.6, 1),  # m/s -> km/h
+        "sym": nxt.get("summary", {}).get("symbol_code", "cloudy"),
+        "pr": nxt.get("details", {}).get("precipitation_amount", 0),
+    }
+    days = {}
+    for t in ts:
+        when = dt.datetime.fromisoformat(t["time"].replace("Z", "+00:00")).astimezone(IST)
+        d = when.date().isoformat()
+        x = days.setdefault(d, {"d": d, "lo": 99, "hi": -99, "pr": 0.0, "sym": None, "symh": 99, "snow": False})
+        temp = t["data"]["instant"]["details"].get("air_temperature")
+        if temp is not None:
+            x["lo"] = min(x["lo"], temp)
+            x["hi"] = max(x["hi"], temp)
+        n1 = t["data"].get("next_1_hours")
+        n6 = t["data"].get("next_6_hours")
+        blk = n1 or n6
+        if blk:
+            sym = blk.get("summary", {}).get("symbol_code", "")
+            amt = blk.get("details", {}).get("precipitation_amount", 0) or 0
+            # avoid double counting: hourly blocks when present, else 6-hourly
+            if n1:
+                x["pr"] += amt
+            elif n6 and when.hour in (0, 6, 12, 18):
+                x["pr"] += amt
+            if "snow" in sym or ("sleet" in sym):
+                x["snow"] = True
+            elif amt > 0.2 and temp is not None and temp <= 0.5:
+                x["snow"] = True
+            # representative symbol: closest to 13:00 IST
+            dist = abs(when.hour - 13)
+            if dist < x["symh"]:
+                x["sym"], x["symh"] = sym, dist
+    out = []
+    for d in sorted(days)[:6]:
+        x = days[d]
+        if x["lo"] == 99:
+            continue
+        out.append({"d": d, "lo": round(x["lo"]), "hi": round(x["hi"]), "pr": round(x["pr"], 1),
+                    "sym": x["sym"] or "cloudy", "snow": x["snow"]})
+    return {"id": pid, "name": name, "hi": hi, "region": region, "alt": alt,
+            "url": U + link, "now": now, "days": out[:5]}
+
+
+def main():
+    out_path = None
+    if "--out" in sys.argv:
+        out_path = sys.argv[sys.argv.index("--out") + 1]
+    places = []
+    for p in PLACES:
+        raw = get(p[4], p[5], p[6])
+        if not raw:
+            print("  skip", p[0], flush=True)
+            continue
+        try:
+            places.append(build_place(p, raw))
+        except Exception as e:  # noqa: BLE001
+            print("  bad", p[0], e, flush=True)
+        time.sleep(0.4)
+    if len(places) < len(PLACES) * 0.7:
+        print(f"only {len(places)} of {len(PLACES)} places — not uploading", flush=True)
+        sys.exit(1)
+    feed = {"updated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
+            "source": "MET Norway", "license": "CC BY 4.0", "places": places}
+    data = json.dumps(feed, ensure_ascii=False, separators=(",", ":")).encode()
+    print(f"feed {len(places)} places, {len(data)} B", flush=True)
+    if out_path:
+        open(out_path, "wb").write(data)
+        return
+    import deploy  # tools/deploy.py — Hostinger API helpers
+    if not deploy.TOKEN:
+        print("HOSTINGER_API_TOKEN missing", flush=True)
+        sys.exit(1)
+    deploy.upload("suzu-weather-feed.json", data)
+
+
+if __name__ == "__main__":
+    main()
