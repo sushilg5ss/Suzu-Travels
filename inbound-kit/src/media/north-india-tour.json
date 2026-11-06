@@ -1,0 +1,27 @@
+{
+ "_note": "Media for /india-tours/north-india-tour/ (product, choose-your-route). Hero: library photos (Taj px-33777272 first = poster, Humayun's Tomb px-3672388, Manali px-28206557, Spiti road px-35441447) + 1 new Pexels photo px-5458388 Golden Temple (CREDITS 6 Nov 2026); each captioned only with its allowed caption. Cost ladder: the five hub routes with prices exactly as in data/prices.json allowed + fact pack fact 1 (Visual Studio, 6 Nov 2026). No route map (optional in the fact pack).",
+ "hero": {
+  "kicker": "PRIVATE NORTH INDIA TOURS",
+  "scenes": [
+   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
+   {"img": "px-3672388.jpg", "kind": "land", "from": {"scale": 1.04, "x": 60, "y": 10}, "to": {"scale": 1.12, "x": -30, "y": 40}},
+   {"img": "px-5458388.jpg", "kind": "land", "from": {"scale": 1.04, "x": -40, "y": 0}, "to": {"scale": 1.12, "x": 40, "y": -20}},
+   {"img": "px-28206557.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 560}},
+   {"img": "px-35441447.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 10}}
+  ],
+  "steps": ["TAJ AT DAWN", "DELHI", "GOLDEN TEMPLE", "MANALI", "YOUR OWN DRIVER"]
+ },
+ "cost": {
+  "kicker": "NORTH INDIA · FIVE ROUTES",
+  "title": "Pick the route, then the days",
+  "items": [
+   {"label": "Golden Triangle, 4 days", "sub": "Delhi · Agra · Jaipur", "price": 299},
+   {"label": "Golden Triangle, 6 days", "sub": "the classic route, unhurried", "price": 449},
+   {"label": "+ Rishikesh, 8 days", "sub": "Ganga Aarti · Laxman Jhula", "price": 649},
+   {"label": "+ Kashmir, 10 days", "sub": "read UK / US travel advice first", "price": 899},
+   {"label": "Golden Temple + Himalayas", "sub": "10 days · Delhi · Amritsar · Dharamshala · Manali", "price": 949},
+   {"label": "Golden Triangle, 12 days", "sub": "+ Himalayas: Shimla · Manali", "price": 1099}
+  ],
+  "end": "Per person, indicative · private car + driver on every route"
+ }
+}
