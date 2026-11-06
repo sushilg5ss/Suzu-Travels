@@ -313,5 +313,14 @@
   "blurb": "The UNESCO Kalka–Shimla railway — how to book from abroad, which train, winter and monsoon",
   "added": "2026-11-06",
   "focus": "shimla toy train"
+ },
+ "north-india-tour": {
+  "id": 18565,
+  "path": "/india-tours/north-india-tour/",
+  "kind": "product",
+  "label": "North India tour packages",
+  "blurb": "Five private routes side by side — Golden Triangle, Rishikesh, Kashmir, Amritsar and the Himalayas — in US dollars",
+  "added": "2026-11-07",
+  "focus": "north india tour packages"
  }
 }

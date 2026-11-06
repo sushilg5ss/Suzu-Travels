@@ -40,9 +40,9 @@
     ["<b>Maharajas' Express</b>", "IRCTC, the Indian Railways' tourism company", "Three 6-night journeys (Delhi or Mumbai start, mostly Rajasthan + Agra; one via Khajuraho and Varanasi) and a 3-night Delhi–Agra–Ranthambore–Jaipur loop", "Departures October to April"],
     ["<b>Palace on Wheels</b>", "Rajasthan Tourism (RTDC)", "One week from New Delhi: Jaipur, Sawai Madhopur (Ranthambore), Chittorgarh, Udaipur, Jaisalmer, Jodhpur, Bharatpur, Agra, back to Delhi", "Wednesday-night departures; ask RTDC for this season's dates"],
     ["<b>Golden Chariot</b>", "Karnataka State Tourism (KSTDC) with IRCTC", "Pride of Karnataka (Bengaluru, Mysore, Hampi, Goa), Jewels of South (adds Mahabalipuram, Thanjavur, Kochi, Kumarakom), a 3-night Glimpses of Karnataka", "Fixed departure dates — see the official site"],
-    ["<b>Deccan Odyssey</b>", "Maharashtra Tourism (MTDC)", "Historically 7 nights from Mumbai: Konkan coast, Goa, Kolhapur, Pune, Ellora, Ajanta, Nashik", "Historically October to March — check MTDC for current routes and dates"]
+    ["<b>Deccan Odyssey</b>", "Maharashtra Tourism (MTDC)", "Maharashtra; MTDC's page lists no current route", "Check MTDC for current routes and dates"]
    ],
-   "note": "Sources: the-maharajas.com (IRCTC), Rajasthan Tourism and RTDC, Karnataka Tourism, goldenchariot.org, Indian Railways and MTDC — listed at the end of this page."
+   "note": "Sources: the-maharajas.com (IRCTC), Rajasthan Tourism and RTDC, Karnataka Tourism, goldenchariot.org and MTDC — listed at the end of this page."
   },
   {
    "id": "maharajas",
@@ -81,7 +81,7 @@
    "items": [
     ["Golden Chariot — Karnataka and the south", "Presented by Karnataka State Tourism and IRCTC. Pride of Karnataka runs Bengaluru – Bandipur – Mysore – Halebidu – Chikmagaluru – Hampi – Pattadakal and Aihole – Goa – Bengaluru; Jewels of South adds Mahabalipuram, Thanjavur and Chettinad, Kochi and Kumarakom; Glimpses of Karnataka is a 3-night loop."],
     ["Golden Chariot — cabins and booking", "Karnataka Tourism lists 13 double cabins, 30 twin cabins and one cabin for guests with disabilities. Book on goldenchariot.org, at IRCTC offices or through an authorised IRCTC agent; the site asks for a 20% advance. The official pages differ on whether the long journeys are 6 or 7 nights — check the current itinerary."],
-    ["Deccan Odyssey — Maharashtra", "Run in association with Maharashtra Tourism (MTDC). The Indian Railways page describes a 7-night loop from Mumbai along the Konkan coast to Goa, then Kolhapur, Pune, Ellora, Ajanta and Nashik, running October to March. That page is old, and MTDC's current page lists no dates — ask MTDC what runs this season."]
+    ["Deccan Odyssey — Maharashtra", "Operated in association with Maharashtra Tourism (MTDC). MTDC's current page lists no route or departure dates, so ask MTDC directly what runs this season before you plan around it."]
    ]
   },
   {
@@ -124,7 +124,7 @@
   ["Which is the most famous luxury train in India?", "The Maharajas' Express (run by IRCTC) and the Palace on Wheels (Rajasthan Tourism) are the two names most visitors know. Both focus on Rajasthan and Agra; the Golden Chariot covers Karnataka and the south, and the Deccan Odyssey Maharashtra."],
   ["What is the difference between the Maharajas' Express and the Palace on Wheels?", "The Maharajas' Express is IRCTC's train with three week-long journeys (via Mumbai, or Khajuraho and Varanasi) and a 3-night loop, departing October to April. The Palace on Wheels is Rajasthan Tourism's train: one week-long Rajasthan circuit from New Delhi, leaving on Wednesday nights."],
   ["How do I book a luxury train in India from abroad?", "Book on the operator's official website, at IRCTC offices or through an authorised IRCTC agent. The official sites take an advance online and the balance 30 days before departure (60 days through an agent). Watch for look-alike websites that use the train's name."],
-  ["When do India's luxury trains run?", "In the cooler months. The Maharajas' Express lists departures from October to April; the Deccan Odyssey has historically run October to March. Departure dates are fixed and published by each operator — check them before booking flights."],
+  ["When do India's luxury trains run?", "In the cooler months. The Maharajas' Express lists departures from October to April; for the Deccan Odyssey, ask MTDC. Departure dates are fixed and published by each operator — check them before booking flights."],
   ["How long is a luxury train journey in India?", "Most journeys are about a week (6 or 7 nights). The Maharajas' Express also has a 3-night Treasures of India loop, and the Golden Chariot a 3-night Glimpses of Karnataka."],
   ["What is included on India's luxury trains?", "Your cabin, meals and sightseeing on the route. The Maharajas' Express site also lists house drinks, entrance fees, a tour director, transfers and a paramedic on board. Check each operator's current list before you book."],
   ["Can Suzu Travels book the train for me?", "No — we do not sell luxury-train tickets. Book with the operator or an authorised IRCTC agent. We plan everything around it: airport pick-up, hotels before and after, and a private car and driver for the rest of your trip."]
@@ -136,7 +136,6 @@
   ["RTDC — Palace on Wheels itinerary", "https://rtdc.tourism.rajasthan.gov.in/Palaceonwheels/PalaceOnWheels/Itinarary"],
   ["Karnataka Tourism — Golden Chariot (operators, journeys, cabins; reviewed 4 Nov 2026)", "https://karnatakatourism.org/en/experiences/golden-chariot/"],
   ["Golden Chariot — official booking site", "https://www.goldenchariot.org/"],
-  ["Indian Railways — Deccan Odyssey tour details (older page)", "https://indianrailways.gov.in/railwayboard/uploads/s_services/tdo.jsp"],
   ["MTDC — Deccan Odyssey", "https://www.mtdc.co/deccan-odyssey"]
  ],
  "verified": "6 Nov 2026",
