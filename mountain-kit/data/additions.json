@@ -30,5 +30,62 @@
    6175,
    6200
   ]
+ },
+ {
+  "band": "6000",
+  "state": "Uttarakhand",
+  "range": "Garhwal Himalaya (Gangotri group)",
+  "district_or_area": "Uttarkashi",
+  "status": "climbed",
+  "best_season": "May–Jun & Sep–Oct",
+  "base": "Gangotri → Tapovan",
+  "open_to_foreigners": "yes",
+  "india_rank": null,
+  "alt_names": [],
+  "name": "Meru South",
+  "height_m": 6660,
+  "first_ascent_year": 1980,
+  "first_ascent_by": "Japanese expedition led by Kenshiro Ohtaki (south-east ridge)",
+  "status_note": "",
+  "difficulty": "extreme",
+  "difficulty_note": "Highest of Meru's summits; the 1980 south-east ridge was a long, hard line, and the east ridge was still unclimbed in 2025",
+  "notable": "First Indian ascent 2 Sep 2023 by a new west-face route (team led by Umesh Zirpe).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Meru_Peak",
+   "https://publications.americanalpineclub.org/articles/12198225200",
+   "https://explorersweb.com/indian-expedition-targets-unclimbed-east-ridge-of-meru/"
+  ],
+  "height_alternates_m": []
+ },
+ {
+  "band": "6000",
+  "state": "Uttarakhand",
+  "range": "Garhwal Himalaya (Gangotri group)",
+  "district_or_area": "Uttarkashi",
+  "status": "climbed",
+  "best_season": "May–Jun & Sep–Oct",
+  "base": "Gangotri → Tapovan",
+  "open_to_foreigners": "yes",
+  "india_rank": null,
+  "alt_names": [],
+  "name": "Meru North",
+  "height_m": 6450,
+  "first_ascent_year": 1980,
+  "first_ascent_by": "Osamu Shimada & Tamotsu Iwashima (Hida Alpine Club, Japan), 4 Oct 1980",
+  "status_note": "",
+  "difficulty": "technical",
+  "difficulty_note": "Steep north side and 800 m faces; avalanche deaths in 1986 and 1990",
+  "notable": "Published heights 6,400-6,672 m; first Indian ascent 1986 (Indo-Swedish team).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Meru_Peak",
+   "https://publications.americanalpineclub.org/articles/12198225200",
+   "https://publications.americanalpineclub.org/articles/12198726402/Asia-India-Garhwal-Meru-North",
+   "https://explorersweb.com/indian-expedition-targets-unclimbed-east-ridge-of-meru/"
+  ],
+  "height_alternates_m": [
+   6400,
+   6460,
+   6672
+  ]
  }
 ]

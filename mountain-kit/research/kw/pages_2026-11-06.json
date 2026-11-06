@@ -1,0 +1,289 @@
+{
+ "pulled": "2026-11-06",
+ "customer": "1172710099",
+ "language": "1000 (English)",
+ "source": "Google Ads Keyword Planner via Pipeboard get_google_ads_keyword_historical_metrics; 12 months Oct 2025-Sep 2026; banded. Columns: [worldwide, India, US+GB+AU+IL+DE+FR]; null = no data. 'shark's fin meru' is a close variant of 'meru shark fin' (no data); 'meru film' = 'meru documentary'; 'mountaineering terms' = 'glossary' = 'terminology' (one group).",
+ "mountaineering-glossary": {
+  "mountaineering terms": [
+   720,
+   110,
+   480
+  ],
+  "mountaineering glossary": [
+   720,
+   110,
+   480
+  ],
+  "mountaineering terminology": [
+   720,
+   110,
+   480
+  ],
+  "climbing terms": [
+   2400,
+   70,
+   1900
+  ],
+  "climbing glossary": [
+   30,
+   10,
+   20
+  ],
+  "what is a col": [
+   3600,
+   480,
+   1900
+  ],
+  "col mountain": [
+   590,
+   50,
+   320
+  ],
+  "what is a serac": [
+   1000,
+   50,
+   720
+  ],
+  "bergschrund": [
+   5400,
+   1600,
+   2400
+  ],
+  "serac": [
+   33100,
+   590,
+   18100
+  ],
+  "moraine": [
+   60500,
+   14800,
+   33100
+  ],
+  "crevasse": [
+   49500,
+   2900,
+   27100
+  ],
+  "cornice snow": [
+   1900,
+   110,
+   1300
+  ],
+  "couloir": [
+   22200,
+   210,
+   12100
+  ],
+  "arete": [
+   90500,
+   4400,
+   33100
+  ],
+  "alpine style climbing": [
+   480,
+   90,
+   210
+  ],
+  "fixed rope": [
+   390,
+   50,
+   110
+  ],
+  "base camp meaning": [
+   880,
+   210,
+   390
+  ],
+  "summit push": [
+   390,
+   30,
+   140
+  ],
+  "acclimatization": [
+   49500,
+   18100,
+   14800
+  ]
+ },
+ "meru-peak": {
+  "meru peak": [
+   2400,
+   390,
+   1000
+  ],
+  "mount meru india": [
+   1000,
+   390,
+   590
+  ],
+  "meru mountain": [
+   33100,
+   5400,
+   14800
+  ],
+  "meru documentary": [
+   9900,
+   590,
+   6600
+  ],
+  "meru film": [
+   9900,
+   590,
+   6600
+  ],
+  "meru central": [
+   170,
+   10,
+   30
+  ],
+  "meru peak height": [
+   40,
+   10,
+   20
+  ],
+  "shark's fin meru": [
+   null,
+   null,
+   null
+  ],
+  "meru shark fin": [
+   null,
+   null,
+   null
+  ],
+  "meru peak climbing": [
+   null,
+   null,
+   null
+  ]
+ },
+ "shilla": {
+  "shilla peak": [
+   390,
+   390,
+   10
+  ],
+  "shilla": [
+   18100,
+   880,
+   5400
+  ],
+  "shilla mountain": [
+   40,
+   30,
+   10
+  ],
+  "shilla peak height": [
+   110,
+   110,
+   10
+  ],
+  "shilla peak spiti": [
+   null,
+   null,
+   null
+  ],
+  "shilla peak expedition": [
+   null,
+   null,
+   null
+  ],
+  "shilla spiti": [
+   null,
+   null,
+   null
+  ],
+  "shilla peak trek": [
+   10,
+   10,
+   10
+  ]
+ },
+ "proposals": {
+  "kedar dome": [
+   2900,
+   1900,
+   480
+  ],
+  "neelkanth peak": [
+   880,
+   880,
+   30
+  ],
+  "saser kangri": [
+   720,
+   590,
+   90
+  ],
+  "papsura": [
+   590,
+   140,
+   210
+  ],
+  "mentok kangri": [
+   390,
+   320,
+   40
+  ],
+  "swargarohini peak": [
+   320,
+   260,
+   10
+  ],
+  "kolahoi peak": [
+   320,
+   320,
+   10
+  ],
+  "thalay sagar": [
+   320,
+   170,
+   70
+  ],
+  "shitidhar peak": [
+   110,
+   110,
+   10
+  ],
+  "ladakhi peak": [
+   110,
+   90,
+   10
+  ],
+  "bhagirathi peak": [
+   210,
+   170,
+   10
+  ],
+  "bandarpunch peak": [
+   210,
+   170,
+   10
+  ],
+  "kinner kailash peak": [
+   74000,
+   74000,
+   720
+  ],
+  "gya peak": [
+   70,
+   70,
+   10
+  ],
+  "machoi peak": [
+   90,
+   90,
+   10
+  ],
+  "jogin peak": [
+   30,
+   30,
+   10
+  ],
+  "black peak kalanag": [
+   20,
+   10,
+   10
+  ]
+ }
+}

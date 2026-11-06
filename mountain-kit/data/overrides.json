@@ -261,5 +261,17 @@
  },
  "Meru Central (Shark's Fin)": {
   "notable": "First summited by Valery Babanov in 2001; the Shark's Fin line was first climbed in October 2011 by Conrad Anker, Jimmy Chin and Renan Ozturk (the 2015 film 'Meru')."
+ },
+ "Shilla": {
+  "first_ascent_year": 1966,
+  "first_ascent_by": "Indian expedition (team not named in our sources)",
+  "status_note": "An 1860 ascent by an unnamed Survey of India khalasi was reported only in 1910 (Synoptical Volume XXXV, as peak 'Parang La No. 2') and is doubted: the 1966 Indian team found no survey pole.",
+  "base": "Kaza → Langza (Shilla nala) → Shilla jot, or the Lingti valley",
+  "notable": "Old survey sheets showed it at 23,064 ft (about 7,030 m), so for decades it was listed as a 7,000er; the modern survey fixed it at 6,132 m.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Shilla_(mountain)",
+   "https://harishkapadia.com/?p=7787",
+   "https://himalayanclub.org/hj/40/28/correspondence-39/"
+  ]
  }
 }

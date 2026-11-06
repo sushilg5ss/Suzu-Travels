@@ -2446,6 +2446,36 @@
   ]
  },
  {
+  "id": "meru-south",
+  "name": "Meru South",
+  "alt": [],
+  "m": 6660,
+  "ft": 21850,
+  "m_alt": [],
+  "band": "6000",
+  "state": "uttarakhand",
+  "state_label": "Uttarakhand",
+  "where": "Uttarakhand",
+  "range": "Garhwal Himalaya (Gangotri group)",
+  "area": "Uttarkashi",
+  "fa": 1980,
+  "fa_by": "Japanese expedition led by Kenshiro Ohtaki (south-east ridge)",
+  "status": "climbed",
+  "status_note": "",
+  "grade": "extreme",
+  "grade_note": "Highest of Meru's summits; the 1980 south-east ridge was a long, hard line, and the east ridge was still unclimbed in 2025",
+  "season": "May–Jun & Sep–Oct",
+  "base": "Gangotri → Tapovan",
+  "foreigners": "yes",
+  "rank": null,
+  "notable": "First Indian ascent 2 Sep 2023 by a new west-face route (team led by Umesh Zirpe).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Meru_Peak",
+   "https://publications.americanalpineclub.org/articles/12198225200",
+   "https://explorersweb.com/indian-expedition-targets-unclimbed-east-ridge-of-meru/"
+  ]
+ },
+ {
   "id": "parvati-parbat",
   "name": "Parvati Parbat",
   "alt": [],
@@ -2995,6 +3025,41 @@
   "notable": "",
   "sources": [
    "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_III"
+  ]
+ },
+ {
+  "id": "meru-north",
+  "name": "Meru North",
+  "alt": [],
+  "m": 6450,
+  "ft": 21161,
+  "m_alt": [
+   6400,
+   6460,
+   6672
+  ],
+  "band": "6000",
+  "state": "uttarakhand",
+  "state_label": "Uttarakhand",
+  "where": "Uttarakhand",
+  "range": "Garhwal Himalaya (Gangotri group)",
+  "area": "Uttarkashi",
+  "fa": 1980,
+  "fa_by": "Osamu Shimada & Tamotsu Iwashima (Hida Alpine Club, Japan), 4 Oct 1980",
+  "status": "climbed",
+  "status_note": "",
+  "grade": "technical",
+  "grade_note": "Steep north side and 800 m faces; avalanche deaths in 1986 and 1990",
+  "season": "May–Jun & Sep–Oct",
+  "base": "Gangotri → Tapovan",
+  "foreigners": "yes",
+  "rank": null,
+  "notable": "Published heights 6,400-6,672 m; first Indian ascent 1986 (Indo-Swedish team).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Meru_Peak",
+   "https://publications.americanalpineclub.org/articles/12198225200",
+   "https://publications.americanalpineclub.org/articles/12198726402/Asia-India-Garhwal-Meru-North",
+   "https://explorersweb.com/indian-expedition-targets-unclimbed-east-ridge-of-meru/"
   ]
  },
  {
@@ -3642,19 +3707,21 @@
   "where": "Himachal Pradesh",
   "range": "Great Himalaya (Spiti)",
   "area": "Spiti",
-  "fa": null,
-  "fa_by": "",
+  "fa": 1966,
+  "fa_by": "Indian expedition (team not named in our sources)",
   "status": "climbed",
-  "status_note": "Often cited as climbed in 1860 by a Survey of India surveyor when it was believed to be 7,026 m – not verified in our sources.",
+  "status_note": "An 1860 ascent by an unnamed Survey of India khalasi was reported only in 1910 (Synoptical Volume XXXV, as peak 'Parang La No. 2') and is doubted: the 1966 Indian team found no survey pole.",
   "grade": "moderate",
   "grade_note": "Glaciated peak",
   "season": "Jun–Sep",
-  "base": "Kaza (Lingti/Shilla nala)",
+  "base": "Kaza → Langza (Shilla nala) → Shilla jot, or the Lingti valley",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Once mis-measured as over 7,000 m.",
+  "notable": "Old survey sheets showed it at 23,064 ft (about 7,030 m), so for decades it was listed as a 7,000er; the modern survey fixed it at 6,132 m.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Shilla_(mountain)"
+   "https://en.wikipedia.org/wiki/Shilla_(mountain)",
+   "https://harishkapadia.com/?p=7787",
+   "https://himalayanclub.org/hj/40/28/correspondence-39/"
   ]
  },
  {
