@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-06-homepage-cleanup",
+ "agent": "Interactive (Sushil asked in chat, 6 Nov 18:29 IST)",
+ "summary": "Remove 3D map, swipe planner, festival strip, Top Destinations, winter months, 118-guides block (links moved); add Himachal vs Kashmir compare; trips moved up; no auto popup; currency tab; phone page 35k->24k px; fresh weather feed",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "66fb966268c58a2a0db7e8f83ac3a113e9e218dc87f3236a1c3a6e62fe864a04",
+   "base_sha256": "2daf6bef28501127453a4c37486e8af77e3a4f497814f8a0ccd7e6a23d2ee063",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "be82427114a1c3b0c3a36aff64d3414f6711ace115ae98629c9df568f090d120",
+   "base_sha256": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-06T13:19:16Z",
+ "status": "deployed"
+}
