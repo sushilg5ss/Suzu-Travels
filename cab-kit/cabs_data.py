@@ -144,6 +144,7 @@ PLACES = {
     "Sarchu": (32.82, 77.53), "Gata Loops": (33.03, 77.60), "Pang": (33.13, 77.79), "Tanglang La": (33.51, 77.77), "Rumtse": (33.63, 77.76),
     "Upshi": (33.83, 77.81), "Karu": (33.93, 77.73),
     "Noida": (28.57, 77.32), "Greater Noida": (28.47, 77.50), "Jewar": (28.13, 77.56), "Tappal": (28.04, 77.59),
+    "Gurugram": (28.46, 77.03), "Sohna": (28.25, 77.07), "Bandikui": (27.05, 76.57), "Dausa": (26.89, 76.34), "Manesar": (28.36, 76.94), "Neemrana": (27.99, 76.38), "Kotputli": (27.70, 76.20), "Shahpura": (27.39, 75.96), "Amer": (26.99, 75.85), "Alwar": (27.55, 76.61),
     "Mathura": (27.49, 77.67), "Vrindavan": (27.58, 77.70), "Fatehpur Sikri": (27.09, 77.66),
     "Kurali": (30.83, 76.58), "Anandpur Sahib": (31.23, 76.50), "Nangal": (31.38, 76.38), "Una": (31.48, 76.28), "Amb": (31.70, 76.12), "Mubarikpur": (31.71, 76.09),
     "Chintpurni": (31.81, 76.11), "Dehra": (31.88, 76.23), "Jawalamukhi": (31.84, 76.31), "Ranital": (32.00, 76.23),
@@ -206,6 +207,7 @@ ROUTES = [
     dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
     dict(slug="delhi-to-vrindavan-taxi", a="Delhi", b="Vrindavan", km=180, t="3–4 hrs", f=0.9),   # 31 Oct 2026: page live; Yamuna Expressway via Noida–Jewar, Mathura–Vrindavan interchange (Triveni 160–185 km, HurryUp 160, Savaari 183 expwy / 191 NH-19); f 0.9 = delhi-to-agra (same road)
+    dict(slug="delhi-to-jaipur-taxi", a="Delhi", b="Jaipur", km=280, t="4–5 hrs", f=0.85),   # 6 Nov 2026: page live; Delhi–Mumbai Expressway via Sohna + Bandikui–Jaipur link (open 15 Jul 2025) or NH48 via Neemrana–Kotputli (CabBazar/Triveni/Suri 280 km); same km/f as outstation-cab-delhi Jaipur row; sedan ₹3,599 vs market median ₹3,300 (+9%), Crysta ₹6,199 vs ₹6,000
     dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}

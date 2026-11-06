@@ -112,6 +112,8 @@ def build(p):
                 anchor, dx = ("end", -16)
         if mode == "path" and end and x > 900:
             anchor, dx, dy = ("end", 0, -30)
+        if n in m.get("below", []):   # 6 Nov 2026: label under the dot when the line arrives from the right
+            anchor, dx, dy = ("middle", 0, 58 if end else 40)
         towns.append(f'<g class="{cls}" id="t{i}" data-x="{x:.1f}" data-y="{y:.1f}"><circle class="halo" cx="{x:.1f}" cy="{y:.1f}" r="{22 if end else 14}"/><circle class="dot" cx="{x:.1f}" cy="{y:.1f}" r="{9 if end else 6}"/>'
                      f'<text x="{x+dx:.1f}" y="{y+dy:.1f}" text-anchor="{anchor}">{n}</text></g>')
     for n in dict.fromkeys(ctx):
