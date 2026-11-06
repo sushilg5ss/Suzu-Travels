@@ -1,0 +1,13 @@
+{
+ "_note": "Visual Studio 2026-11-06. Words illustrate the photo shown (moraine, seracs, crampons, night start); no peak named. Terms from research/pages/mountaineering-glossary.md.",
+ "hero": {
+  "kicker": "MOUNTAINEERING GLOSSARY",
+  "words": [["THAT'S A", "MORAINE."], ["THOSE ARE", "SERACS."], ["THOSE ARE", "CRAMPONS."], ["ALPINE", "START."]],
+  "scenes": [
+   {"img": "px-35905430.jpg", "kind": "tilt", "h": 2880, "t": [0, 3.8], "from": {"y": 0}, "to": {"y": 450}},
+   {"img": "px-28409954.jpg", "kind": "land", "h": 1399, "t": [3.2, 7.0], "from": {"scale": 1.04, "y": -190}, "to": {"scale": 1.1, "x": -40, "y": -170}},
+   {"img": "px-37016841.jpg", "kind": "tilt", "h": 2880, "t": [6.4, 10.2], "from": {"y": 600}, "to": {"y": 900}},
+   {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "t": [9.6, 13.0], "from": {"scale": 1.02, "x": 40}, "to": {"scale": 1.1, "x": -30}}
+  ]
+ }
+}

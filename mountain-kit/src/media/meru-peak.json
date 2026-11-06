@@ -1,0 +1,152 @@
+{
+ "_note": "Visual Studio 2026-11-06. Hero = Shark's Fin line (Gangotri ~3,415, Tapovan ~4,300, headwall starts ~5,900, Meru Central 6,310). Profile = 1980 Meru South camps (AAJ 1982). Ladder = Meru's three summits + neighbours (data/peaks.json). All from research/pages/meru-peak.md. No photo is Meru.",
+ "hero": {
+  "kicker": "MERU CENTRAL · GANGOTRI",
+  "steps": [
+   [
+    3415,
+    "GANGOTRI"
+   ],
+   [
+    4300,
+    "TAPOVAN"
+   ],
+   [
+    5900,
+    "THE HEADWALL"
+   ],
+   [
+    6310,
+    "SUMMIT"
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-92081.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.06,
+     "x": -120
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -170
+    }
+   },
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 400
+    },
+    "to": {
+     "y": 800
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 350,
+     "scale": 1.15,
+     "x": -180
+    },
+    "to": {
+     "y": 1150,
+     "scale": 1.2,
+     "x": -200
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   }
+  ]
+ },
+ "profile": {
+  "title": "Meru South, camp by camp",
+  "sub": "1980 first-ascent camps (AAJ 1982) · vary by year",
+  "camps": [
+   {
+    "name": "Tapovan",
+    "m": 4300,
+    "day": "Base camp"
+   },
+   {
+    "name": "Kirti Bamak",
+    "m": 4700,
+    "day": "Advance base"
+   },
+   {
+    "name": "Camp 1",
+    "m": 4900,
+    "day": ""
+   },
+   {
+    "name": "Camp 2",
+    "m": 5400,
+    "day": ""
+   },
+   {
+    "name": "Camp 3",
+    "m": 5950,
+    "day": ""
+   },
+   {
+    "name": "Camp 4",
+    "m": 6370,
+    "day": ""
+   },
+   {
+    "name": "Meru South",
+    "m": 6660,
+    "day": "10 Oct 1980"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "MERU · TRUE HEIGHTS",
+  "title": "Meru's three summits and its neighbours",
+  "peaks": [
+   "meru-central",
+   "shivling",
+   "meru-north",
+   "meru-south",
+   "kedar-dome",
+   "thalay-sagar"
+  ],
+  "subs": {
+   "meru-central": "First climbed 2001",
+   "meru-north": "First climbed 1980",
+   "meru-south": "First climbed 1980"
+  }
+ }
+}
