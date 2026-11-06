@@ -1,0 +1,24 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "dusk",
+  "deva": "दक्षिणेश्वर काली मंदिर",
+  "kicker": "Bhavatarini Kali · Kolkata, West Bengal",
+  "beats": [
+   "A queen's dream on the Ganga",
+   "Nine spires rise by the river, 1855",
+   "A young priest's devotion: Ramakrishna",
+   "Lamps on the ghats at dusk"
+  ],
+  "deva_size": 90
+ },
+ "story": {
+  "title": "The story of Dakshineswar",
+  "beats": [
+   {"arch": "ghats", "sky": "night", "line": "A dream before a pilgrimage"},
+   {"arch": "ghats", "sky": "dawn", "line": "A temple on the riverbank"},
+   {"arch": "hills", "sky": "dusk", "line": "A grove where a priest meditates"},
+   {"arch": "ghats", "sky": "dusk", "line": "Aarti lamps on the Hooghly"}
+  ]
+ }
+}

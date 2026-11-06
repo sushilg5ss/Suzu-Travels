@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "pillar",
+  "sky": "night",
+  "deva": "शनि शिंगणापूर",
+  "kicker": "Shani Dev · Ahilyanagar, Maharashtra",
+  "beats": [
+   "A black stone comes to the village",
+   "No roof — the sky is his canopy",
+   "Houses with frames, but no doors",
+   "Oil abhishek under the open sky"
+  ]
+ },
+ "story": {
+  "title": "The story of Shani Shingnapur",
+  "beats": [
+   {"arch": "lake", "sky": "night", "line": "A stone rests by the stream"},
+   {"arch": "pillar", "sky": "night", "line": "No roof — only open sky"},
+   {"arch": "hills", "sky": "dawn", "line": "A village of open doorways"},
+   {"arch": "pillar", "sky": "dusk", "line": "Oil poured, prayers rise"}
+  ]
+ }
+}
