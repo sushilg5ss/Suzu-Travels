@@ -3,6 +3,8 @@
    so it can reuse geocode/route/draw/render and re-point run/render. Child pages keep plain kit.js.
    Same rules as kit.js: ES5, no ampersand character, no double-slash comments, HTML only in single-quoted strings. */
 /* Pickup presets + full place list (ENHANCEMENTS #6, 27 Oct 2026): the HTML datalist carries route cities + pickup points only; the other PLACES are appended here. */
+/* Hub size trim (ENHANCEMENTS #19, 6 Nov 2026): hub.py sends the places as one 'Name;lat;lon|...' string - expand it to the {name:[lat,lon]} object the planner uses. */
+if(typeof PC.p==='string'){var pcp={};PC.p.split('|').forEach(function(x){var a=x.split(';');if(a.length===3){pcp[a[0]]=[+a[1],+a[2]];}});PC.p=pcp;}
 var dlp=$('szc-places');
 if(dlp){var dlHave={};qa('option',dlp).forEach(function(o){dlHave[o.value]=1;});Object.keys(PC.p).sort().forEach(function(k){if(!dlHave[k]){var o=document.createElement('option');o.value=k;dlp.appendChild(o);}});}
 var vbox=$('szc-pvias'),vadd=$('szc-padd'),hubAddVia=null;

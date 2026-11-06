@@ -37,7 +37,9 @@ def planner():
     pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
     pr = [dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u=(page_url(r["slug"]) if r["slug"] and is_live(r["slug"]) else "")) for r in ROUTES]
     pp = dict(PLACES, **PICKUPS)
-    cfg = dict(p={k: [round(v[0], 3), round(v[1], 3)] for k, v in pp.items()}, r=pr, v=pv, s="cabs",
+    assert not any(c in k for k in pp for c in ";|'<>"), "place names must not contain ; | ' < >"
+    # 6 Nov 2026 hub size trim (ENHANCEMENTS #19): places as one "Name;lat;lon|..." string (~1.2 KB less than the JSON object); kit_hub.js expands it back to PC.p
+    cfg = dict(p="|".join(f"{k};{round(v[0], 3):g};{round(v[1], 3):g}" for k, v in pp.items()), r=pr, v=pv, s="cabs",
                js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
     dl = ""  # 28 Oct 2026 (size budget): kit_hub.js fills the whole datalist from cfg p on load

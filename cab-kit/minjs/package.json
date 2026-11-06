@@ -1,0 +1,9 @@
+{
+  "name": "suzu-cab-minjs",
+  "private": true,
+  "description": "Build-time only (never shipped): minifies the hub kit script for cab-kit/build.py - ENHANCEMENTS #19",
+  "dependencies": {
+    "acorn": "8.18.0",
+    "terser": "5.51.2"
+  }
+}

@@ -450,6 +450,34 @@ def prune_css(css, used):
 def _amp(h):
     return re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
 
+MINJS = ROOT / "minjs"
+
+def hub_min_js(js):
+    """6 Nov 2026 hub size trim (ENHANCEMENTS #19): the hub kit script (kit.js + kit_hub.js) is mangled + whitespace-stripped
+    by terser (compress off except join_vars, so no '&&' and nested ifs stay), then '&'/'<' inside strings re-escaped as \\x26/\\x3c.
+    Result cached in minjs/cache/<sha1>.js (committed) so the Route Builder/QA get byte-identical output without node.
+    Cache miss -> node minjs/minjs.js (npm install in minjs/ if needed); any failure -> unminified script + WARNING (page still works)."""
+    import hashlib, subprocess
+    key = hashlib.sha1(js.encode("utf-8")).hexdigest()
+    cf = MINJS / "cache" / f"{key}.js"
+    if cf.exists():
+        return cf.read_text(encoding="utf-8")
+    try:
+        if not (MINJS / "node_modules" / "terser").exists():
+            subprocess.run(["npm", "install", "--no-audit", "--no-fund", "--silent"], cwd=MINJS, check=True, timeout=300, capture_output=True)
+        r = subprocess.run(["node", str(MINJS / "minjs.js")], input=js.encode("utf-8"), capture_output=True, timeout=120, check=True)
+        out = r.stdout.decode("utf-8")
+        if not out.startswith("(function(){") or "&" in out or "//" in re.sub(r"'(?:[^'\\]|\\.)*'", "''", out):
+            raise ValueError("unexpected minifier output")
+    except Exception as e:  # never block a build on the minifier
+        print(f"WARNING hub JS not minified ({e}) - hub ~5 KB bigger; run the Experience Enhancer", file=sys.stderr)
+        return js
+    cf.parent.mkdir(exist_ok=True)
+    for old in cf.parent.glob("*.js"):  # keep only the current one (old ones are in git history)
+        old.unlink()
+    cf.write_text(out, encoding="utf-8")
+    return out
+
 def finish(slug, h, css_extra=""):
     # the hero FILM_JS (#14) is the first <script> now - escape the HTML on both sides of it exactly as before
     h = FILM_JS.join(_amp(x) for x in h.split(FILM_JS, 1)) if FILM_JS in h else _amp(h)
@@ -480,7 +508,14 @@ def finish(slug, h, css_extra=""):
     if slug == "cabs":
         st = m.split("<style>", 1)[1].split("</style>", 1)[0]
         m = m.replace(f"<style>{st}</style>", f"<style>{prune_css(st, m.replace(st, ''))}</style>", 1)
+    if slug == "cabs":  # 6 Nov 2026 hub size trim (#19): credits links - target=_blank already implies noopener
+        m = m.replace(' rel="noopener" target="_blank"', ' target="_blank"').replace(' rel="license noopener"', ' rel="license"')
+        js0 = m.rsplit("<script>", 1)[-1].split("</script>")[0]
+        js1 = hub_min_js(js0)
+        m = m[: m.rfind(js0)] + js1 + m[m.rfind(js0) + len(js0):]
     kitjs = m.rsplit("<script>", 1)[-1].split("</script>")[0]
+    if "&" in kitjs and slug == "cabs":
+        sys.exit(f"BUILD REFUSED {slug}: '&' in the minified kit script")
     if re.search(r"<(/|p\b|div\b|table\b|img\b|ul\b|ol\b|li\b|span\b|br\b|svg\b|button\b|details\b|summary\b|small\b|b\b|a\b|h[1-6]\b|t[rdh]\b|thead\b|tbody\b|circle\b|path\b)", kitjs):
         sys.exit(f"BUILD REFUSED {slug}: HTML tag inside kit script (wpautop would inject <p>) — use \\x3c")
     (OUT / f"{slug}.min.html").write_text(m, encoding="utf-8")
