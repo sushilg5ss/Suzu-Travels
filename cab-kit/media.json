@@ -815,5 +815,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-jaipur-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e4a228cb50c44e36b2e497a7d2b314cb5dddbdb0/cab-kit/media/delhi-to-jaipur-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e4a228cb50c44e36b2e497a7d2b314cb5dddbdb0/cab-kit/media/delhi-to-jaipur-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e4a228cb50c44e36b2e497a7d2b314cb5dddbdb0/cab-kit/media/delhi-to-jaipur-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
