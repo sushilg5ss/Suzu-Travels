@@ -17,6 +17,11 @@ GAL = {
    sub='Six places that feature in the Bali trips we plan — sea temples on the coast, the volcano at Kintamani, the forest in Ubud, a boat day to Nusa Penida and the temple gates of east Bali. Tap any photo to open it full size.',
    slugs=[('bali-g1','-1024x684'),('bali-g2','-768x1150'),('bali-g3','-1024x768'),
           ('bali-g4','-1024x512'),('bali-g5','-768x1150'),('bali-g6','-1024x768')]),
+ 'maldives': dict(
+   title='The Maldives in real photos',
+   sub='What a Maldives trip actually looks like on the way in and once you arrive — the capital island, the seaplane jetty, a resort island from the air, water villas, a sandbank and a manta on the reef. Tap any photo to open it full size.',
+   slugs=[('maldives-g1','-1024x577'),('maldives-g2','-1024x547'),('maldives-g3','-1024x638'),
+          ('maldives-g4','-1024x522'),('maldives-g5','-1024x768'),('maldives-g6','-1024x683')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"

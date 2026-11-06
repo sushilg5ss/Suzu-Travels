@@ -1915,5 +1915,65 @@
   "license": "CC0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Lempuyang_1.jpg",
   "wp_id": 17882
+ },
+ "maldives-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-maldives-male-aerial.webp",
+  "alt": "Malé, the capital island of the Maldives, packed with buildings, and nearby small islands seen from the air",
+  "cap": "Malé from the air",
+  "note": "The crowded capital island and its small neighbours",
+  "credit": "╚ DD╔ from Male, Maldives",
+  "license": "CC BY-SA 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Male,_Maldives_(6031845750).jpg",
+  "wp_id": 18373
+ },
+ "maldives-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-maldives-seaplane-terminal.webp",
+  "alt": "Floating jetty of the seaplane terminal at Malé with Twin Otter seaplanes moored on both sides, Maldives",
+  "cap": "Seaplane terminal, Malé",
+  "note": "Twin Otter seaplanes moored along the floating jetty",
+  "credit": "StromBer",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Sea_plane_terminal_in_Male_(main_island_of_the_Maldives)_with_five_sea_planes_of_type_Twin_Otter.jpg",
+  "wp_id": 18372
+ },
+ "maldives-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-maldives-komandoo-aerial.webp",
+  "alt": "Komandoo resort island with its reef, lagoon and a row of water villas seen from the air, Lhaviyani Atoll, Maldives",
+  "cap": "Komandoo, Lhaviyani Atoll",
+  "note": "One small island, its reef and a row of water villas from the air",
+  "credit": "eNil from Portsmouth, UK",
+  "license": "CC BY 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Komandoo_(Lhaviyani_Atoll).jpg",
+  "wp_id": 18368
+ },
+ "maldives-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-maldives-water-villas-ari.webp",
+  "alt": "Row of thatched water villas on stilts over a turquoise lagoon with a small boat in front, Thudufushi, Ari Atoll, Maldives",
+  "cap": "Water villas, Ari Atoll",
+  "note": "Thatched villas on stilts over the lagoon at Thudufushi",
+  "credit": "Martin Falbisoner",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-05.jpg",
+  "wp_id": 18369
+ },
+ "maldives-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-maldives-kuramathi-sandbank.webp",
+  "alt": "Long white sandbank stretching into shallow turquoise water, Kuramathi, Maldives",
+  "cap": "Sandbank, Kuramathi",
+  "note": "A long strip of white sand in shallow turquoise water",
+  "credit": "MBraun Germany",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Kuramathi_Sandbank_001.jpg",
+  "wp_id": 18370
+ },
+ "maldives-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-maldives-manta-ray.webp",
+  "alt": "Reef manta ray swimming over the reef with a snorkeller at the surface behind it, Maldives",
+  "cap": "Manta ray",
+  "note": "A reef manta passing below a snorkeller",
+  "credit": "Tchami",
+  "license": "CC BY-SA 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Manta_Ray_Maldives.jpg",
+  "wp_id": 18371
  }
 }
