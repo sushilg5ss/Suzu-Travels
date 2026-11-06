@@ -364,5 +364,15 @@
   "added": "2026-11-05",
   "state": "ladakh",
   "commercial": false
+ },
+ "trisul": {
+  "id": 18414,
+  "path": "/mountains-of-india/trisul/",
+  "kind": "peak",
+  "label": "Trisul",
+  "blurb": "7,120 m · first 7,000 m summit, 1907",
+  "added": "2026-11-06",
+  "peak_id": "trisul-i",
+  "commercial": false
  }
 }
