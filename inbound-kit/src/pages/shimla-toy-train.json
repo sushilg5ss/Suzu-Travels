@@ -1,0 +1,297 @@
+{
+ "path": "/india-tours/shimla-toy-train/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Shimla Toy Train: The Kalka–Shimla Railway for Visitors from Abroad",
+ "seo_title": "Shimla Toy Train: Kalka–Shimla Railway Guide for Visitors",
+ "seo_desc": "The UNESCO Kalka–Shimla toy train: 96 km, 102 tunnels, about 4½–6 hours. How to book from abroad, which train to pick, winter and monsoon tips.",
+ "focus": "shimla toy train",
+ "label": "Shimla toy train",
+ "blurb": "The UNESCO Kalka–Shimla railway — how to book from abroad, which train, winter and monsoon",
+ "kicker": "Guide · Kalka–Shimla Railway",
+ "tag": "The toy train to Shimla.",
+ "sub": "A narrow-gauge railway climbs from the plains at Kalka to the old summer capital, Shimla, through 102 tunnels and across 988 bridges and viaducts. This guide explains what the ride is like, which train to choose, how to book a seat from outside India, and what to do when the weather closes the line.",
+ "hero_alt": "Narrow-gauge locomotives in the yard at Kalka station, the portal of Barog tunnel no. 33, Barog station in the pine hills and Shimla's houses under snow",
+ "cta1": "Plan the ride",
+ "talk": true,
+ "chips": [
+  [
+   "96 km",
+   "(60 miles) of narrow-gauge track"
+  ],
+  [
+   "4½–6 hours",
+   "Kalka to Shimla, depending on the train"
+  ],
+  [
+   "UNESCO",
+   "World Heritage since 2008"
+  ],
+  [
+   "Checked",
+   "6 Nov 2026"
+  ]
+ ],
+ "q": "What is the Shimla toy train, and how do you ride it?",
+ "answer": "The Shimla “toy train” is the <b>Kalka–Shimla Railway</b>, a 96 km (60 mile) narrow-gauge line, a UNESCO World Heritage Site since 2008. It climbs from Kalka (656 m) to Shimla (2,075 m) through 102 tunnels in about 4½ to 6 hours. Book seats on IRCTC; landslides can suspend it in the monsoon. We arrange a private car to meet you in Shimla.",
+ "facts": [
+  [
+   "102",
+   "tunnels on the line today (107 when it was built)"
+  ],
+  [
+   "988",
+   "bridges and viaducts, and 917 curves"
+  ],
+  [
+   "1903",
+   "opened to the public on 9 November 1903"
+  ],
+  [
+   "656 → 2,075 m",
+   "Kalka to Shimla (2,152 → 6,808 ft)"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "the-line",
+   "nav": "The line in numbers",
+   "h2": "The Kalka–Shimla Railway in numbers",
+   "kind": "table",
+   "lead": "Every figure here comes from UNESCO and its advisory body ICOMOS (2008), not from guidebooks — you will see other numbers online, such as 103 tunnels or 864 bridges.",
+   "head": [
+    "What",
+    "Figure",
+    "Why it matters to you"
+   ],
+   "rows": [
+    [
+     "Length",
+     "96.6 km (60 miles), single track",
+     "A slow, full-day ride rather than a transfer"
+    ],
+    [
+     "Gauge",
+     "0.762 m (2 ft 6 in) narrow gauge",
+     "Small coaches — the reason for the name “toy train”"
+    ],
+    [
+     "Climb",
+     "Kalka 656 m (2,152 ft) → Shimla 2,075 m (6,808 ft)",
+     "Expect it to be noticeably cooler in Shimla"
+    ],
+    [
+     "Tunnels",
+     "102 today (107 originally; some lost to landslides)",
+     "The longest, no. 33 at Barog, is just over 1 km (0.6 mi)"
+    ],
+    [
+     "Bridges and curves",
+     "988 bridges and viaducts; 917 curves, about 70% of the line",
+     "Sit by a window — the views change at every bend"
+    ],
+    [
+     "History",
+     "Built 1899–1903; opened to the public on 9 November 1903",
+     "UNESCO added it in 2008 to the “Mountain Railways of India”, with the Darjeeling and Nilgiri lines"
+    ]
+   ],
+   "note": "Sources: UNESCO World Heritage Centre list 944 and 2008 inscription news; ICOMOS evaluation of the Kalka Shimla Railway (2008); District Shimla, Government of Himachal Pradesh."
+  },
+  {
+   "id": "which-train",
+   "nav": "Which train",
+   "h2": "Which toy train should you take?",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "District Shimla lists several trains a day in each direction. Their names, numbers and timings change from season to season, so check the current list on IRCTC — but these are the types you will see:",
+   "items": [
+    [
+     "Vistadome",
+     "Coaches with a glass roof and large windows for an all-round view. The pick for most first-time visitors who come for the scenery."
+    ],
+    [
+     "Rail Motor",
+     "A small heritage railcar. District Shimla gives the journey as about 4 hours 20 minutes, among the quicker options."
+    ],
+    [
+     "Himalayan Queen",
+     "A regular named train; District Shimla gives about 5½ hours from Kalka to Shimla."
+    ],
+    [
+     "Mail and Shivalik Express",
+     "Other daily services. The Shivalik Express is listed with one halt, at Barog."
+    ],
+    [
+     "Steam?",
+     "UNESCO noted in 2008 that a restored steam locomotive could be chartered. We cannot confirm current steam runs, so please don't plan a trip around one."
+    ],
+    [
+     "Which way?",
+     "You can ride uphill, Kalka to Shimla, and continue by car into the hills — or ride down at the end of a Himachal trip. Either way our car carries your bags by road."
+    ]
+   ]
+  },
+  {
+   "id": "book-from-abroad",
+   "nav": "Book from abroad",
+   "h2": "How to book the toy train from outside India",
+   "kind": "steps",
+   "lead": "You book Indian train seats yourself on IRCTC, the Indian Railways booking site. Foreign passport holders have their own quota:",
+   "items": [
+    [
+     "Look for Foreign Tourist (FT) quota",
+     "IRCTC's Foreign Tourist quota lets foreign passport holders book online up to 365 days ahead, paying 1.5 times the normal fare with an international debit or credit card. It is not confirmed that FT seats are offered on these narrow-gauge trains — check your train."
+    ],
+    [
+     "If there is no FT quota, use the general quota",
+     "General bookings open 60 days before the journey (Indian Railways rule since 1 November 2024)."
+    ],
+    [
+     "Carry your original passport",
+     "FT tickets are checked against the original passport on board."
+    ],
+    [
+     "Keep a plan B",
+     "We cannot book Foreign Tourist quota seats for you — IRCTC allows only the traveller to book them. We help you choose the train and plan the car on either side."
+    ]
+   ]
+  },
+  {
+   "id": "getting-to-kalka",
+   "nav": "Getting to Kalka",
+   "h2": "Getting to Kalka — and on from Shimla",
+   "kind": "prose",
+   "paras": [
+    "Kalka sits at the foot of the hills, close to Chandigarh. By road, Shimla is about 370 km (230 miles) from Delhi and 119 km (74 miles) from Chandigarh; by rail you change to the narrow gauge at Kalka. You can reach Kalka by train from Delhi, or by private car.",
+    "Many toy trains leave early, so it is easier to spend the night before near Kalka or in Chandigarh than to travel from Delhi the same morning. Our usual plan: your private car takes you to Kalka, carries your big bags up to Shimla by road while you ride the train, and meets you at the station. From Shimla the same car continues to Manali, Dharamshala or wherever your trip goes next — see <a href=\"/india-tours/best-time-to-visit-himachal/\">the best time to visit Himachal</a>.",
+    "Not sure about a whole day on a slow train? Ride one way and drive the other, or take the toy train only for a short stretch — we will suggest the best fit for your dates. Our <a href=\"/india-tours/trains-vs-flights-in-india/\">trains vs flights guide</a> covers the rest of India's rail network."
+   ]
+  },
+  {
+   "id": "seasons",
+   "nav": "Winter & monsoon",
+   "h2": "Winter snow and monsoon landslides",
+   "kind": "table",
+   "lead": "The line runs all year, but weather matters more here than on most Indian railways:",
+   "head": [
+    "Season",
+    "What to expect",
+    "Our advice"
+   ],
+   "rows": [
+    [
+     "Dec – Feb (winter)",
+     "Shimla gets snow: IMD normals are about 40 cm (16 in) in each of January and February, with about 4 snow days a month; nights near 0 °C (32 °F)",
+     "A beautiful ride, but snow and weather can delay trains. Pack warm layers and keep a buffer day."
+    ],
+    [
+     "Mar – Jun and Oct – Nov",
+     "Outside the snow months and the monsoon",
+     "The easiest time to combine the toy train with Shimla and Manali"
+    ],
+    [
+     "Jul – Sep (monsoon)",
+     "In the monsoon (roughly July–September) landslides have suspended the line for days at a time (for example 31 Aug–6 Sep 2025). We keep a road plan ready.",
+     "Book flexibly; your car can always take the road instead"
+    ]
+   ],
+   "note": "Train timings, coaches and fares change, and services are sometimes suspended after landslides — check the current timetable on IRCTC / Indian Railways before you travel."
+  },
+  {
+   "id": "how-we-do-it",
+   "nav": "How we do it",
+   "h2": "How we fit the toy train into your trip",
+   "kind": "callout",
+   "style": "dark",
+   "text": "We are a small company based in Himachal Pradesh, the state the railway climbs into. We plan the toy train as one day of a private trip: the car to Kalka, your luggage by road, the car waiting in Shimla, and a road plan if the line is closed. <b>Your driver's name, photo and car number are shared with you before the trip.</b>",
+   "after": [
+    "Toy-train seat booking help is on request. The full Golden Triangle + Himalayas trip has a published price, below.",
+    "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022 — see <a href=\"/certificates/\">our certificates</a>."
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Price",
+  "lead": "The toy train is part of our 12-day Golden Triangle + Himalayas trip. Shorter Shimla trips and toy-train-only days are quoted on request.",
+  "rows": [
+   [
+    "Golden Triangle + Himalayas — 12 days / 11 nights (Delhi · Agra · Jaipur · Shimla · Manali)",
+    "from US$1,099",
+    "Per person, two sharing, comfortable 3-star hotels with breakfast, private car and driver; UNESCO toy train to Shimla (seasonal, where running). International flights, monument tickets, most meals and tips not included."
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "Is the Shimla toy train worth it?",
+   "For most visitors, yes — if you enjoy a slow scenic day. The 96 km line takes about 4½ to 6 hours through 102 tunnels and pine-covered hills. If a long train ride sounds tiring, ride one way and go the other way by car: Shimla is 119 km (74 miles) from Chandigarh by road."
+  ],
+  [
+   "How long does the Kalka to Shimla toy train take?",
+   "About 4½ to 6 hours, depending on the train. District Shimla gives around 4 hours 20 minutes for the Rail Motor, about 5½ hours for the Himalayan Queen and up to about 6 hours for other trains. Check current timings on IRCTC."
+  ],
+  [
+   "How do I book the toy train from outside India?",
+   "On IRCTC. Foreign passport holders can book Foreign Tourist (FT) quota seats up to 365 days ahead with an international card, at 1.5 times the normal fare, where the train offers FT seats. If yours does not, book the general quota, which opens 60 days ahead. Only you can book FT seats — travel agents cannot."
+  ],
+  [
+   "Which toy train is best for views?",
+   "The Vistadome, with its glass roof and large windows, is the usual choice for scenery. The Rail Motor heritage railcar is among the quicker options. Train names and timings change, so check the current list on IRCTC."
+  ],
+  [
+   "Does the toy train run in winter and in snow?",
+   "It runs through the winter, and a snowy ride can be beautiful — Shimla averages about 40 cm (16 in) of snow in each of January and February. Snow and weather can delay or stop trains, so keep a buffer day and warm clothes."
+  ],
+  [
+   "Does the toy train run in the monsoon?",
+   "Usually, but in the monsoon (roughly July–September) landslides have suspended the line for days at a time — for example from 31 August to 6 September 2025. We keep a road plan ready so your trip continues by car."
+  ],
+  [
+   "How do I get from Delhi to Kalka?",
+   "By train from Delhi to Kalka, or by private car. Many toy trains leave early, so we suggest a night near Kalka or in Chandigarh first. Our car can drive you there, carry your bags up to Shimla by road and meet you at Shimla station."
+  ],
+  [
+   "How many tunnels are there on the Kalka–Shimla line?",
+   "102. The line was built with 107 tunnels, and landslides have reduced the number since. The longest, tunnel no. 33 at Barog, is just over 1 km long. There are also 988 bridges and viaducts and 917 curves (UNESCO/ICOMOS, 2008)."
+  ]
+ ],
+ "sources": [
+  [
+   "UNESCO World Heritage Centre — Mountain Railways of India",
+   "https://whc.unesco.org/en/list/944/"
+  ],
+  [
+   "UNESCO — 2008 inscription of the Kalka Shimla Railway",
+   "https://whc.unesco.org/en/news/450"
+  ],
+  [
+   "ICOMOS evaluation — Kalka Shimla Railway (2008)",
+   "https://whc.unesco.org/document/154654"
+  ],
+  [
+   "District Shimla, Government of Himachal Pradesh — How to reach",
+   "https://hpshimla.nic.in/how-to-reach/"
+  ],
+  [
+   "IRCTC — Foreign Tourist quota booking",
+   "https://contents.irctc.co.in/en/ForeignTouristQuotaBooking.pdf"
+  ],
+  [
+   "The Tribune — Kalka–Shimla train services resume after 5-day disruption (7 Sep 2025)",
+   "https://www.tribuneindia.com/news/himachal/kalka-shimla-train-services-resume-after-5-day-disruption"
+  ]
+ ],
+ "verified": "6 Nov 2026",
+ "cta": {
+  "h2": "Want the toy train in your India trip? We'll plan the day around it",
+  "text": "Tell us your dates, how many of you and where else you want to go. You get a day-by-day plan — the car to Kalka, which train to book, your bags by road and the car waiting in Shimla — with a US-dollar quote from our office in Himachal.",
+  "wa": "Hello Suzu Travels, I'm planning a trip with the Shimla toy train. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "india-2-week-itinerary",
+  "best-time-to-visit-himachal",
+  "trains-vs-flights-in-india",
+  "private-driver-india"
+ ]
+}

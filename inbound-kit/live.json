@@ -304,5 +304,14 @@
   "blurb": "Maharajas' Express, Palace on Wheels, Golden Chariot, Deccan Odyssey — who runs them and how to book",
   "added": "2026-11-06",
   "focus": "luxury trains india"
+ },
+ "shimla-toy-train": {
+  "id": 18359,
+  "path": "/india-tours/shimla-toy-train/",
+  "kind": "guide",
+  "label": "Shimla toy train",
+  "blurb": "The UNESCO Kalka–Shimla railway — how to book from abroad, which train, winter and monsoon",
+  "added": "2026-11-06",
+  "focus": "shimla toy train"
  }
 }
