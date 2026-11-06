@@ -1,0 +1,23 @@
+{
+ "id": "2026-11-06b-homepage-packages",
+ "agent": "Interactive (Sushil asked in chat, 6 Nov 18:29 IST)",
+ "summary": "nz-hk: Packages link lines to 17 new package landing pages (9 Himachal, 8 Kashmir) + weather feed refresh",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "becb2ca7744a1326d671288e008691fa0870b1d52425f6903d08bdc56837afa7",
+   "base_sha256": "66fb966268c58a2a0db7e8f83ac3a113e9e218dc87f3236a1c3a6e62fe864a04",
+   "url": "https://suzutravels.com/"
+  },
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "cf7248da0937708cd1a1ae77e6b48ab37cbe5224570a31a676ab189ac9439581",
+   "base_sha256": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-06T14:57:00Z",
+ "status": "waiting",
+ "last_error": "could not fetch live https://suzutravels.com/ (HTTP 0 b'<urlopen error [Errno 101] Network is unreachable>')"
+}

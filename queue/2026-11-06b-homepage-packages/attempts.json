@@ -1,0 +1,6 @@
+{
+ "attempts": 1,
+ "errors": [
+  "2026-11-06T15:01:30Z could not fetch live https://suzutravels.com/ (HTTP 0 b'<urlopen error [Errno 101] Network is unreachable>')"
+ ]
+}
