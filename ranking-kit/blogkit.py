@@ -205,17 +205,17 @@ def role(items, r):
 
 WXJS = """(function(){var d=document;var B=d.querySelectorAll('.szb-wx[data-id]');if(!B.length)return;
 function el(t,c,x){var n=d.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
-var HI={w:['रवि','सोम','मंगल','बुध','गुरु','शुक्र','शनि'],loc:'hi-IN',now:'अभी',today:'आज',snow:' cm बर्फ',snowy:'बर्फ',rain:' mm बारिश',rh:'नमी ',ws:'हवा ',k:{thunder:'गरज-चमक',snow:'बर्फबारी',sleet:'बर्फ-बारिश',rain:'बारिश',fog:'कोहरा',cloudy:'बादल',partly:'आंशिक बादल',fair:'ज़्यादातर साफ़',clear:'साफ़ आसमान'}};
-var EN={w:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],loc:'en-IN',now:'Now',today:'Today',snow:' cm snow',snowy:'Snow',rain:' mm rain',rh:'Humidity ',ws:'Wind ',k:{thunder:'Thunderstorm',snow:'Snow',sleet:'Sleet',rain:'Rain',fog:'Fog',cloudy:'Cloudy',partly:'Partly cloudy',fair:'Mostly clear',clear:'Clear sky'}};
+var HI={w:['रवि','सोम','मंगल','बुध','गुरु','शुक्र','शनि'],loc:'hi-IN',now:'अभी',fc:'आज का पूर्वानुमान',today:'आज',snow:' cm बर्फ',snowy:'बर्फ',rain:' mm बारिश',rh:'नमी ',ws:'हवा ',k:{thunder:'गरज-चमक',snow:'बर्फबारी',sleet:'बर्फ-बारिश',rain:'बारिश',fog:'कोहरा',cloudy:'बादल',partly:'आंशिक बादल',fair:'ज़्यादातर साफ़',clear:'साफ़ आसमान'}};
+var EN={w:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],loc:'en-IN',now:'Now',fc:'Forecast today',today:'Today',snow:' cm snow',snowy:'Snow',rain:' mm rain',rh:'Humidity ',ws:'Wind ',k:{thunder:'Thunderstorm',snow:'Snow',sleet:'Sleet',rain:'Rain',fog:'Fog',cloudy:'Cloudy',partly:'Partly cloudy',fair:'Mostly clear',clear:'Clear sky'}};
 function kind(s){s=s||'';return /thunder/.test(s)?'thunder':/sleet/.test(s)?'sleet':/snow/.test(s)?'snow':/rain|shower/.test(s)?'rain':/fog/.test(s)?'fog':/partly/.test(s)?'partly':/fair/.test(s)?'fair':/cloudy/.test(s)?'cloudy':'clear'}
 function icon(k,night){return {thunder:'⛈️',sleet:'🌨️',snow:'❄️',rain:'🌧️',fog:'🌫️',cloudy:'☁️',partly:night?'☁️':'⛅',fair:night?'🌙':'🌤️',clear:night?'🌙':'☀️'}[k]}
 var cache={};function get(u){if(!cache[u])cache[u]=fetch(u).then(function(r){return r.json()});return cache[u]}
 Array.prototype.forEach.call(B,function(b){var T=b.getAttribute('data-lang')==='hi'?HI:EN;var src=b.getAttribute('data-src')||'/suzu-snow.php';
 get(src).then(function(j){var p=null;j.places.forEach(function(q){if(q.id===b.getAttribute('data-id'))p=q});if(!p)throw 0;
 var nm=b.getAttribute('data-name')||(T===HI&&p.hi?p.hi:p.name)||'';var alt=b.getAttribute('data-alt')||p.alt;
-var nw=b.querySelector('.now');nw.textContent='';var k=kind(p.now.sym),night=/night/.test(p.now.sym||'');nw.appendChild(el('span','ic',icon(k,night)));nw.appendChild(el('span','t',Math.round(p.now.t)+'°C'));var l=el('span','l');l.appendChild(el('b',null,T.now+' · '+T.k[k]));
-var ex=[nm];if(alt)ex.push(Number(alt).toLocaleString('en-IN')+' m');if(p.now.rh!=null)ex.push(T.rh+Math.round(p.now.rh)+'%');if(p.now.ws!=null)ex.push(T.ws+Math.round(p.now.ws*3.6)+' km/h');l.appendChild(d.createTextNode(ex.join(' · ')));nw.appendChild(l);
-var ds=b.querySelector('.days');ds.textContent='';p.days.forEach(function(x,i){var sn=(x.snow_cm>0)||x.snow===true;var kk=sn?'snow':kind(x.sym);var c=el('div','dy'+(sn?' sn':''));c.style.animationDelay=(i*0.07)+'s';var dt=new Date(x.d+'T00:00:00');c.appendChild(el('div','d',i===0?T.today:T.w[dt.getDay()]));c.appendChild(el('div','i',icon(kk,false)));c.appendChild(el('div','h',Math.round(x.hi)+'°'));c.appendChild(el('div','lo',Math.round(x.lo)+'°'));c.appendChild(el('div','x',x.snow_cm>0?x.snow_cm+T.snow:(sn?T.snowy:(x.pr>=1?Math.round(x.pr)+T.rain:''))));c.title=T.k[kk];ds.appendChild(c)});
+var td=new Date();var tds=td.getFullYear()+'-'+('0'+(td.getMonth()+1)).slice(-2)+'-'+('0'+td.getDate()).slice(-2);var dd=p.days.filter(function(x){return x.d>=tds});if(!dd.length)throw 0;var old=j.updated&&(Date.now()-new Date(j.updated).getTime()>6*3600e3);var nw=b.querySelector('.now');nw.textContent='';var l=el('span','l');if(old){var k=kind(dd[0].sym);nw.appendChild(el('span','ic',icon(k,false)));nw.appendChild(el('span','t',Math.round(dd[0].hi)+'° / '+Math.round(dd[0].lo)+'°'));l.appendChild(el('b',null,T.fc+' · '+T.k[k]));}else{var k=kind(p.now.sym),night=/night/.test(p.now.sym||'');nw.appendChild(el('span','ic',icon(k,night)));nw.appendChild(el('span','t',Math.round(p.now.t)+'°C'));l.appendChild(el('b',null,T.now+' · '+T.k[k]));}
+var ex=[nm];if(alt)ex.push(Number(alt).toLocaleString('en-IN')+' m');if(!old&&p.now.rh!=null)ex.push(T.rh+Math.round(p.now.rh)+'%');if(!old&&p.now.ws!=null)ex.push(T.ws+Math.round(p.now.ws*3.6)+' km/h');l.appendChild(d.createTextNode(ex.join(' · ')));nw.appendChild(l);
+var ds=b.querySelector('.days');ds.textContent='';dd.forEach(function(x,i){var sn=(x.snow_cm>0)||x.snow===true;var kk=sn?'snow':kind(x.sym);var c=el('div','dy'+(sn?' sn':''));c.style.animationDelay=(i*0.07)+'s';var dt=new Date(x.d+'T00:00:00');c.appendChild(el('div','d',i===0?T.today:T.w[dt.getDay()]));c.appendChild(el('div','i',icon(kk,false)));c.appendChild(el('div','h',Math.round(x.hi)+'°'));c.appendChild(el('div','lo',Math.round(x.lo)+'°'));c.appendChild(el('div','x',x.snow_cm>0?x.snow_cm+T.snow:(sn?T.snowy:(x.pr>=1?Math.round(x.pr)+T.rain:''))));c.title=T.k[kk];ds.appendChild(c)});
 var u=b.querySelector('.upd')||d.querySelector('.szb-wxnote .upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString(T.loc,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}).catch(function(){var s=b.closest('section')||b;s.style.display='none'})})})();"""
 
 
@@ -255,8 +255,11 @@ def render(s):
         out.append('<ul class="szb-qa">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in s["quick"]) + "</ul>")
     if s.get("wx"):
         wx = s["wx"]
+        daily = bool(wx.get("daily"))
         note = ('Forecast data: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), refreshed through the day — last update <span class="upd">—</span>.' if LANG == "en" else
                 'पूर्वानुमान डेटा: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), दिन भर अपडेट होता है — आख़िरी अपडेट <span class="upd">—</span>।')
+        if daily:
+            note = note.replace("refreshed through the day", "refreshed about once a day").replace("दिन भर अपडेट होता है", "लगभग रोज़ अपडेट होता है")
         def box(w, mini=False, with_note=True):
             return (f'<div class="szb-wx{" mini" if mini else ""}" data-id="{w["id"]}"' + (f' data-src="{w["src"]}"' if w.get("src") else "") + (f' data-name="{e(w["name"])}"' if w.get("name") else "")
                     + (f' data-alt="{w["alt"]}"' if w.get("alt") else "") + (' data-lang="hi"' if LANG == "hi" else "")

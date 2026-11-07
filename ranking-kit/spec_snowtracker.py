@@ -17,7 +17,7 @@ GUIDES = [("Shimla snowfall", "/shimla-snowfall/"), ("Kufri snowfall", "/kufri-s
           ("Himachal snowfall 2026-27", "/himachal-snowfall-winter-2026-27/"), ("Gulmarg snowfall", "/gulmarg-snowfall/"), ("Sonmarg snowfall", "/sonmarg-snowfall/"),
           ("Pahalgam snowfall", "/pahalgam-snowfall/"), ("Kashmir snowfall", "/kashmir-snowfall/"), ("Auli snowfall", "/auli-snowfall/"),
           ("Mussoorie snowfall", "/mussoorie-snowfall/"), ("Winter Spiti", "/winter-spiti-valley-guide-2026-27/"),
-          ("बर्फबारी (हिंदी)", "/barfbari/"), ("हिमाचल का मौसम", "/himachal-ka-mausam/"), ("शिमला का मौसम", "/shimla-ka-mausam/"), ("धर्मशाला का मौसम", "/dharamshala-ka-mausam/"), ("कश्मीर का मौसम", "/kashmir-ka-mausam/")]
+          ("बर्फबारी (हिंदी)", "/barfbari/"), ("हिमाचल का मौसम", "/himachal-ka-mausam/"), ("शिमला का मौसम", "/shimla-ka-mausam/"), ("मनाली का मौसम", "/manali-ka-mausam/"), ("धर्मशाला का मौसम", "/dharamshala-ka-mausam/"), ("कश्मीर का मौसम", "/kashmir-ka-mausam/")]
 GUIDE_HTML = '<div class="szb-chiplinks">' + "".join(f'<a href="{h}">❄ {t}</a>' for t, h in GUIDES) + '</div>'
 
 SPEC = dict(
