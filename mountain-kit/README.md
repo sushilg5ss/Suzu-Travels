@@ -164,6 +164,17 @@ Also: `sameAs` (Wikipedia/Wikidata URLs for the Mountain schema), `verified` (da
 - Scenes must tile the loop: the first starts at 0, each next one starts about 0.6 s before the previous ends, and the last ends at 14 s (steps) or 13 s (words).
 - **Hosting:** videos are served from jsDelivr pinned to a commit, e.g. `https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@<sha>/mountain-kit/media/<slug>/hero.mp4`. The WordPress media library is for images only. Hero videos autoplay (preload=metadata, mobile gets the 960 w file); every other video lazy-loads.
 
+### 6b. Real photographs — PHOTO LAYER (added 7 Nov 2026, Sushil: "real images, no generic visuals, no empty gaps")
+Same system as the Pilgrim kit (pilgrimage branch, README §6b there). A page's `src/pages/<slug>.json` may carry `"gallery"`
+`{"kicker","h2","lead","items":[{role, src, srcset, w, h, alt, cap, by, lic, file, thumb, wp_id}]}` written by
+`tools/wp_gallery.py <slug> "<h2>" "<lead>"` from WordPress uploads named `suzu-<slug>-<role>-<n>` (role hero | fig | g | bg).
+`hero` replaces the hero video (Ken Burns + light snow motion), `fig` = sticky 4:5 photo beside the overview, `g` = bento #photos
+section; peak cards (`.szm-peak`) and "Keep exploring" tiles show the linked page's hero photo; the hub and the expeditions page
+get a 3–5 photo slideshow once enough pages have galleries. Credits: beside each photo + "Photo credits" under Sources.
+Rules: Wikimedia Commons, CC BY / CC BY-SA / CC0 / public domain only; the photo must show the named peak (check the file title
+and description — two different "Hanuman Tibba"s exist: Manali 5,982 m vs the Dhauladhar one); no summit-selfie portraits.
+**Agents: keep `gallery` when you edit a page JSON.**
+
 ## 7. Build, preview and publish
 1. **Generate and build:**
    - `python3 gen_pages.py <slug>` → `out/<slug>.html`.

@@ -97,8 +97,95 @@ def children(pred=lambda slug, v: True):
     return sorted(items, key=lambda kv: (kv[1].get("added", ""), kv[0]), reverse=True)
 
 
+
+# ------------------------------------------------------------------ PHOTO LAYER (7 Nov 2026): real, credited Commons photos (README §6b)
+LIC_URL = {"CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/", "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+           "CC BY-SA 2.5": "https://creativecommons.org/licenses/by-sa/2.5/", "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+           "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/", "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+           "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/", "CC BY 2.5": "https://creativecommons.org/licenses/by/2.5/",
+           "CC0": "https://creativecommons.org/publicdomain/zero/1.0/"}
+USED = []
+
+
+def used(it):
+    if it and all(u["file"] != it["file"] for u in USED):
+        USED.append(it)
+    return it
+
+
+def credit(it):
+    by = e(it["by"]) if it.get("by") else "Wikimedia Commons"
+    lic = it.get("lic", "")
+    licl = f'<a href="{LIC_URL[lic]}" target="_blank" rel="noopener license">{e(lic)}</a>' if lic in LIC_URL else e(lic)
+    return f'Photo: <a href="{e(it["file"])}" target="_blank" rel="noopener">{by}</a>, {licl}'
+
+
+def ph_img(it, cls="", eager=False, sizes="100vw", thumb=False):
+    src = it.get("thumb") if thumb and it.get("thumb") else it["src"]
+    ss = f' srcset="{e(it["srcset"])}" sizes="{sizes}"' if it.get("srcset") and not thumb else ""
+    pos = f' style="object-position:{e(it["pos"])}"' if it.get("pos") else ""
+    load = ' fetchpriority="high" data-no-lazy="1"' if eager else ' loading="lazy"'
+    return (f'<img{(" class=" + chr(34) + cls + chr(34)) if cls else ""} src="{e(src)}"{ss} alt="{e(it["alt"])}" width="{it["w"]}" height="{it["h"]}"'
+            f'{load} decoding="async"{pos} />')
+
+
+def page_gallery(slug):
+    f = KIT / "src" / "pages" / f"{slug}.json"
+    if not f.exists():
+        return []
+    try:
+        return json.loads(f.read_text(encoding="utf-8")).get("gallery", {}).get("items", [])
+    except Exception:
+        return []
+
+
+def gal_role(items, role):
+    return next((it for it in items if it.get("role") == role), None)
+
+
+def thumb_for_path(path):
+    for k, v in LIVE.items():
+        if v.get("path") == path:
+            its = page_gallery(k)
+            return gal_role(its, "hero") or gal_role(its, "fig")
+    return None
+
+
+def gallery_html(g, items):
+    n = len(items)
+    rest = max(n - 5, 0)
+    tail = {0: [], 1: ["f"], 2: ["w", "w"], 3: ["", "", "w"], 4: ["", "", "", ""]}.get(rest, [""] * rest)
+    cls = {1: ["f"], 2: ["big", "big2"], 3: ["big", "w", "w"], 4: ["big", "", "", "w"]}.get(n) or (["big"] + [""] * 4 + tail)
+    figs = "".join(f'<figure{(" class=" + chr(34) + k + chr(34)) if k and k != "big" else ""}>{ph_img(it, sizes="(max-width:900px) 50vw, 25vw" if k != "big" else "(max-width:900px) 100vw, 50vw")}'
+                   f'<figcaption>{e(it["cap"])}<span class="szm-cr">{credit(it)}</span></figcaption></figure>' for it, k in zip(items, cls))
+    return (f'<span class="k">{e(g.get("kicker", "In pictures"))}</span><h2>{e(g["h2"])}</h2>' + (f'<p class="lead">{g["lead"]}</p>' if g.get("lead") else "")
+            + f'<div class="szm-gal">{figs}</div>')
+
+
+def photo_credits(items):
+    its, seen, out = list(items) + [u for u in USED if u not in items], set(), []
+    for it in its:
+        if it["file"] in seen:
+            continue
+        seen.add(it["file"])
+        out.append(f'{e(it["cap"])} — {credit(it)}')
+    return ('<h3 style="margin-top:26px">Photo credits</h3><p class="szm-credits">' + " · ".join(out) + "</p>") if out else ""
+
+
+def hero_slides(slugs):
+    its = [x for x in ((gal_role(page_gallery(s_), "hero")) for s_ in slugs) if x][:5]
+    if len(its) < 3:
+        return None
+    for it in its:
+        used(it)
+    n_ = len(its)
+    imgs = "".join(ph_img(it, "szm-slide", eager=(i == 0)).replace("<img ", f'<img style="animation-delay:{i * 7}s;--n:{n_}" ', 1) for i, it in enumerate(its))
+    return f'<div class="szm-slides n{n_}">{imgs}</div><span class="szm-hero-cr">' + " · ".join(f'{e(it["cap"])} — {credit(it)}' for it in its) + "</span>"
+
 def tile(v):
-    return f'<a class="szm-link" href="{v["path"]}"><span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
+    th = used(thumb_for_path(v["path"]))
+    img = f'<img class="th" src="{e(th.get("thumb") or th["src"])}" alt="{e(th["alt"])}" width="400" height="140" loading="lazy" decoding="async" />' if th else ""
+    return f'<a class="szm-link{" has-th" if th else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
 
 
 def guides_block(kinds=("peak", "band", "state", "guide"), exclude=()):
@@ -187,7 +274,9 @@ def peak_card(p, badge, extra=""):
     fa = f"First ascent <b>{p['fa']}</b>" if p["fa"] else "First ascent <b>not recorded</b>"
     lp = peak_page(p["id"])
     go = f'<a href="{lp}">Read the guide →</a>' if lp else f'<a href="{LIST}#peak-{p["id"]}">In the full list →</a>'
-    return (f'<li class="szm-peak"><div class="top"><span class="rk">{badge}</span><div class="h num">{n(p["m"])} m<small>{n(p["ft"])} ft</small></div>{ridge(p["id"], p["m"])}</div>'
+    th = used(thumb_for_path(lp)) if lp else None
+    phi = (f'<img class="pk-ph" src="{e(th.get("thumb") or th["src"])}" alt="{e(th["alt"])}" width="400" height="142" loading="lazy" decoding="async" />') if th else ""
+    return (f'<li class="szm-peak{" has-ph" if th else ""}"><div class="top">{phi}<span class="rk">{badge}</span><div class="h num">{n(p["m"])} m<small>{n(p["ft"])} ft</small></div>{ridge(p["id"], p["m"])}</div>'
             f'<div class="body"><h3>{e(p["name"])}</h3><div class="meta">{e(p["where"])}</div><div class="meta">{fa} · {pill(p["status"])}</div>'
             f'{extra}<div class="go">{go}</div></div></li>')
 
@@ -250,6 +339,8 @@ SRC_CORE = [
 
 # ------------------------------------------------------------------------------------------------ HUB
 def hub():
+    USED.clear()
+    HS = hero_slides(["kangchenjunga", "nanda-devi", "kamet", "trisul", "shivling-peak"])
     kc, nd, kt, rp = pk("kangchenjunga"), pk("nanda-devi"), pk("kamet"), pk("reo-purgyil")
     faqs = [
         ("What is the highest mountain in India?",
@@ -353,7 +444,7 @@ def hub():
     if hub_guides:
         hub_guides += '<h3 class="szm-gh">More from Suzu Travels</h3>'
     body = f'''
-<section class="szm-hero">{hero_video("mountains-of-india", "mountains-hero", "Climbers on Himalayan snow slopes, with an altitude read-out rising from 3,000 m to 8,586 m")}
+<section class="szm-hero{" ph" if HS else ""}">{HS or hero_video("mountains-of-india", "mountains-hero", "Climbers on Himalayan snow slopes, with an altitude read-out rising from 3,000 m to 8,586 m")}
 <div class="szm-hero-in"><span class="k">Mountains of India · 3,000 m to {n(kc['m'])} m</span>
 <p class="szm-tag">India's Himalaya, peak by peak.</p>
 <p class="szm-sub">{TOTAL} summits across seven states, from Churdhar to Kangchenjunga — how high they are, who climbed them first, which ones are open, and how permits work. Ready to climb one? We plan it with you from Himachal.</p>
@@ -427,11 +518,14 @@ def hub():
         {"@type": "ItemList", "name": "The 10 highest mountains in India", "itemListOrder": "https://schema.org/ItemListOrderDescending", "numberOfItems": len(TOP10),
          "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": {"@type": "Mountain", "name": p["name"], "description": f"{n(p['m'])} m ({n(p['ft'])} ft), {p['where']}"}} for i, p in enumerate(TOP10)]},
         faq_ld(faqs))
+    if USED:
+        body += f'<section class="szm-sec"><div class="szm-credits">{photo_credits([])}</div></section>'
     return page(body + schema)
 
 
 # ------------------------------------------------------------------------------------------------ LIST
 def list_page():
+    USED.clear()
     kc = pk("kangchenjunga")
     faqs = [
         ("What are the 10 highest mountains in India?",
@@ -515,6 +609,8 @@ def list_page():
         {"@type": "ItemList", "name": "Highest mountains in India", "itemListOrder": "https://schema.org/ItemListOrderDescending", "numberOfItems": 20,
          "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"https://suzutravels.com{peak_url(p['id'])}", "name": f"{p['name']} ({n(p['m'])} m)"} for i, p in enumerate(P[:20])]},
         faq_ld(faqs))
+    if USED:
+        body += f'<section class="szm-sec"><div class="szm-credits">{photo_credits([])}</div></section>'
     return page(body + schema)
 
 
@@ -534,6 +630,8 @@ CLIMBS = [  # id, typical days, start, level, what it takes, season  (research/r
 
 
 def expeditions():
+    USED.clear()
+    HS2 = hero_slides(["hanuman-tibba", "stok-kangri", "kanamo-peak", "chau-chau-kang-nilda", "reo-purgyil"])
     faqs = [
         ("Do I need climbing experience for Friendship Peak?",
          f"Not formal training — good fitness and some high-altitude trekking are enough for Friendship Peak ({hm('friendship-peak')}). Guides teach ice-axe, crampon and rope basics on the way. Technical peaks like Deo Tibba or Hanuman Tibba need previous summits or a Basic Mountaineering Course."),
@@ -564,7 +662,7 @@ def expeditions():
             f'<div class="go"><a style="color:#1a7f37!important" href="{wa("Hi Suzu Travels, I want a quote for a guided climb of " + p["name"] + ". Dates: ___ , people: ___ , nationality: ___")}" target="_blank" rel="noopener">Get Quote →</a> · {facts_link}</div></div></li>')
     watxt = "Hi Suzu Travels, I want to plan a guided peak climb in Himachal. Peak: ___ , dates: ___ , people: ___ , nationality: ___"
     body = f'''
-<section class="szm-hero">{hero_video("himalayan-peak-expeditions", "expeditions-hero", "Guided climbers roped up on snow, a tent at high camp and a summit ridge")}
+<section class="szm-hero{" ph" if HS2 else ""}">{HS2 or hero_video("himalayan-peak-expeditions", "expeditions-hero", "Guided climbers roped up on snow, a tent at high camp and a summit ridge")}
 <div class="szm-hero-in"><span class="k">Peak climbing · Himachal Pradesh</span>
 <p class="szm-tag">Your first 5,000er. Your first 6,000er. Planned properly.</p>
 <p class="szm-sub">Tell us the peak and your dates. We pair you with a registered Himachal mountaineering outfitter and certified guides, sort the permits, and add hotel, transfers and acclimatisation days — one plan, one quote.</p>
@@ -617,6 +715,8 @@ def expeditions():
               "description": f"{what} Typical duration: {days}. Season: {season}.", "provider": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/"}}
              for pid, days, start, level, what, season in CLIMBS]
     schema = ld({"@type": "ItemList", "name": "Guided Himalayan peak climbs from Himachal", "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": t} for i, t in enumerate(trips)]}, faq_ld(faqs))
+    if USED:
+        body += f'<section class="szm-sec"><div class="szm-credits">{photo_credits([])}</div></section>'
     return page(body + schema)
 
 
@@ -699,6 +799,9 @@ def content_page(slug):
     wa_text = c.get("wa") or (f"Hi Suzu Travels, I read your {short} page and want to plan this climb. Dates: ___ , people: ___ , nationality: ___" if commercial
                               else f"Hi Suzu Travels, I read your {short} page and want to plan a guided climb in Himachal. Dates: ___ , people: ___")
     sec, navi = [], []
+    USED.clear()
+    G = c.get("gallery", {})
+    GI = G.get("items", [])
 
     def add(sid, label, html_):
         sec.append(f'<section class="szm-sec{" alt" if len(sec) % 2 else ""}" id="{sid}">{html_}</section>')
@@ -712,7 +815,11 @@ def content_page(slug):
             f'<a class="szm-btn ghost" href="{EXP if commercial else LIST}">{"Guided peak climbs" if commercial else "All Indian peaks"}</a></div>')
     head = (f'<span class="k">{e(c["kicker"])}</span><p class="szm-tag">{e(c["tag"])}</p><p class="szm-sub">{e(c["sub"])}</p>'
             f'<ul class="szm-chips">{chips}</ul>{ctas}{trust(verified=c.get("verified"))}')
-    if "hero" in media:
+    hph = gal_role(GI, "hero")
+    if hph:
+        hero = (f'<section class="szm-hero ph">{ph_img(hph, "szm-hero-img", eager=True)}<span class="szm-hero-cr">{credit(hph)}</span>'
+                f'<div class="szm-hero-in">{head}</div></section>')
+    elif "hero" in media:
         hero = f'<section class="szm-hero">{hero_video(slug, "hero", c.get("hero_alt", c["title"]))}<div class="szm-hero-in">{head}</div></section>'
         used.add("hero")
     else:
@@ -731,8 +838,15 @@ def content_page(slug):
         facts_ = [["Height", f"{n(pk_['m'])} m / {n(pk_['ft'])} ft"], ["State", pk_["state_label"]], ["Range", pk_["range"]],
                   ["First ascent", str(pk_["fa"]) if pk_["fa"] else "Not recorded"], ["Status", STATUS_LABEL[pk_["status"]]], ["Grade", GRADE_LABEL[pk_["grade"]]]]
     facts = "".join(f'<div class="szm-fact"><span class="k2">{e(a)}</span><span class="v">{e(b)}</span></div>' for a, b in (facts_ or []))
-    add("overview", "Overview", f'<p class="szm-crumbs">{" › ".join(crumbs)}</p><span class="szm-verified">Last verified {e(c.get("verified", VERIFIED))}</span><h2>{e(c.get("q", "Overview"))}</h2>'
-        f'<div class="szm-answer"><p>{c["answer"]}</p></div>' + (f'<div class="szm-facts">{facts}</div>' if facts else "") + "".join(f"<p>{x}</p>" for x in c.get("intro", [])))
+    ovb = f'<div class="szm-answer"><p>{c["answer"]}</p></div>' + (f'<div class="szm-facts">{facts}</div>' if facts else "") + "".join(f"<p>{x}</p>" for x in c.get("intro", []))
+    fig = gal_role(GI, "fig")
+    if fig:
+        ovb = (f'<div class="szm-ov"><div>{ovb}</div><figure class="szm-fig"><div class="im">{ph_img(fig, sizes="(max-width:900px) 100vw, 40vw")}</div>'
+               f'<figcaption><b>{e(fig["cap"])}</b><span class="szm-cr">{credit(fig)}</span></figcaption></figure></div>')
+    add("overview", "Overview", f'<p class="szm-crumbs">{" › ".join(crumbs)}</p><span class="szm-verified">Last verified {e(c.get("verified", VERIFIED))}</span><h2>{e(c.get("q", "Overview"))}</h2>' + ovb)
+    gis = [it for it in GI if it.get("role", "g") == "g"]
+    if gis:
+        add("photos", "Photos", gallery_html(G, gis))
     if c.get("route"):
         rows = "".join(f'<tr><td><b>{e(r["name"])}</b></td><td class="n">{n(r["m"])} m / {n(round(r["m"] * 3.28084))} ft</td><td>{e(r.get("note", ""))}</td></tr>' for r in c["route"])
         txt = "".join(f"<p>{x}</p>" for x in c.get("route_text", []))
@@ -797,7 +911,7 @@ def content_page(slug):
     links = c.get("links", base_links)
     rel = "".join(tile(v) for _, v in related(slug, c))
     more = ('<section class="szm-sec" id="more"><h2>Keep exploring</h2><div class="szm-links">' + rel + "".join(f'<a class="szm-link" href="{a}"><span class="n">{e(b)}</span><span class="c">{e(d)}</span></a>' for a, b, d in links)
-            + f'</div><h3 style="margin-top:30px">Sources</h3>{sources([tuple(x) for x in c.get("sources", [])])}</section>')
+            + f'</div><h3 style="margin-top:30px">Sources</h3>{sources([tuple(x) for x in c.get("sources", [])])}{photo_credits(GI)}</section>')
     body = hero + nav(navi[:9], wa(wa_text)) + "".join(sec) + f'<section class="szm-sec">{quote}</section>' + more
     graph = []
     if pk_:

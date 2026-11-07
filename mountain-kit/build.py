@@ -89,7 +89,7 @@ def check(slug, body, allowed=None):
             problems.append(f"link to a page that is not live: {m.group(1)}")
     if "file://" in body:
         problems.append("local media URLs (file://) — this build was made with MK_LOCAL_MEDIA=1 for preview; rebuild without it")
-    if "<video" not in body:
+    if "<video" not in body and "szm-hero-img" not in body:
         problems.append("no HyperFrames video on the page (render media first: make_media.sh, push, pin_media.py)")
     spec = KIT / "src" / "pages" / f"{slug}.json"
     if spec.exists():
@@ -134,7 +134,7 @@ def prune_css(css, body):
     def keep_rule(rule):
         sel = rule[:rule.find("{")]
         for part in sel.split(","):
-            classes = re.findall(r"\.([A-Za-z0-9_-]+)", re.sub(r":has\([^)]*\)", "", part))
+            classes = re.findall(r"\.([A-Za-z0-9_-]+)", re.sub(r":(?:has|not)\([^)]*\)", "", part))
             if all(c in used for c in classes):
                 return True
         return False
