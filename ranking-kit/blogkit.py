@@ -32,7 +32,7 @@ CSS = """
 @keyframes szbSnow{from{background-position:0 0}to{background-position:-60px 420px}}
 .szb-hero-in{padding:36px 36px 30px;max-width:760px}
 .szb-hero .k{color:var(--gold2)}
-.szb-tag{font-size:clamp(30px,4vw,48px);line-height:1.08;font-weight:800;margin:0 0 12px;letter-spacing:-.02em;color:#fff}.szb .szb-hero p.szb-tag,.szb .szb-hero .szb-chips li{color:#fff!important}.szb .szb-hero p.szb-sub{color:rgba(255,255,255,.9)!important}.szb .szb-quote p{color:rgba(255,255,255,.86)!important}
+.szb-tag{font-size:clamp(30px,4vw,48px);line-height:1.08;font-weight:800;margin:0 0 12px;letter-spacing:-.02em;color:#fff}.szb .szb-hero p.szb-tag,.szb .szb-hero .szb-chips li{color:#fff!important}.szb .szb-hero p.szb-sub{color:rgba(255,255,255,.9)!important}.szb .szb-hero-in p a,.szb .szb-quote p a,.szb .szb-snow p a,.szb .szb-lad a{color:#f3d98f!important;text-decoration:underline;text-underline-offset:3px}.szb .szb-quote p{color:rgba(255,255,255,.86)!important}
 .szb-sub{font-size:17px;color:rgba(255,255,255,.88);margin:0 0 16px}
 .szb-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px!important;padding:0!important;list-style:none}
 .szb-chips li{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px);border-radius:99px;padding:6px 12px;font-size:14px;margin:0}
