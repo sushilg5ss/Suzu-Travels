@@ -14,27 +14,72 @@
  "tag": "The trident that opened the 7,000 m era.",
  "sub": "Trisul I was the first peak above 7,000 m that anyone ever climbed, in June 1907. Here are its three summits, the modern west-ridge route from Hom Kund camp by camp, how hard it really is, the season, the 2026 permit rules and its story from Longstaff to today.",
  "chips": [
-  ["7,120 m", "Trisul I (23,360 ft)"],
-  ["12 Jun 1907", "first 7,000 m summit"],
-  ["May–Jun", "Sep–Oct"],
-  ["4 camps", "Hom Kund to the top"],
-  ["2026", "open (Uttarakhand list)"]
+  [
+   "7,120 m",
+   "Trisul I (23,360 ft)"
+  ],
+  [
+   "12 Jun 1907",
+   "first 7,000 m summit"
+  ],
+  [
+   "May–Jun",
+   "Sep–Oct"
+  ],
+  [
+   "4 camps",
+   "Hom Kund to the top"
+  ],
+  [
+   "2026",
+   "open (Uttarakhand list)"
+  ]
  ],
  "hero_alt": "A roped team, a summit push by headlamp, a corniced ridge and a steep ice slope (generic stock footage, not Trisul itself) with an altitude read-out rising from Hom Kund base camp, 4,110 m, past Camp 1, the shoulder and the summit camp to the 7,120 m summit",
  "profile_alt": "Animated altitude profile of the Trisul west-ridge route: Hom Kund base camp 4,110 m, Camp 1 on the Ronti glacier 5,150 m, Camp 2 on the shoulder 5,950 m, the summit camp 6,360 m and the 7,120 m summit of Trisul I",
  "q": "How high is Trishul peak, and how do you climb it?",
  "answer": "<b>Trishul peak</b> (Trisul I, also called Trishul Parvat) is 7,120 m (23,360 ft) high, in Chamoli district, Uttarakhand, on the south-west rim of the Nanda Devi Sanctuary. On 12 June 1907 it became the first 7,000 m summit ever climbed. Today teams start from Sutol, camp at Hom Kund and climb the west ridge. It is open in 2026. See all <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks in India</a>.",
  "facts": [
-  ["Height", "Trisul I 7,120 m / 23,360 ft"],
-  ["Other summits", "Trisul II about 6,690 m; Trisul III about 6,000 m"],
-  ["Location", "Chamoli district, Uttarakhand, on the south-west rim of the Nanda Devi Sanctuary, about 15 km from Nanda Devi"],
-  ["Rank", "9th-highest in Uttarakhand and 27th-highest in India in our dataset"],
-  ["Name", "Trishul means trident, the weapon of Shiva: the three summits look like one"],
-  ["Base camp", "About 4,110 m near Hom Kund (modern route)"],
-  ["Usual route", "Today: Ronti glacier and the west ridge. In 1907: the north-east flank and north ridge"],
-  ["Best months", "May–Jun, Sep–Oct"],
-  ["First ascent", "12 Jun 1907: Tom Longstaff, Alexis and Henri Brocherel and Karbir"],
-  ["Status 2026", "Open: the Trishul group is on Uttarakhand's Feb 2026 list of 83 peaks"]
+  [
+   "Height",
+   "Trisul I 7,120 m / 23,360 ft"
+  ],
+  [
+   "Other summits",
+   "Trisul II about 6,690 m; Trisul III about 6,000 m"
+  ],
+  [
+   "Location",
+   "Chamoli district, Uttarakhand, on the south-west rim of the Nanda Devi Sanctuary, about 15 km from Nanda Devi"
+  ],
+  [
+   "Rank",
+   "9th-highest in Uttarakhand and 27th-highest in India in our dataset"
+  ],
+  [
+   "Name",
+   "Trishul means trident, the weapon of Shiva: the three summits look like one"
+  ],
+  [
+   "Base camp",
+   "About 4,110 m near Hom Kund (modern route)"
+  ],
+  [
+   "Usual route",
+   "Today: Ronti glacier and the west ridge. In 1907: the north-east flank and north ridge"
+  ],
+  [
+   "Best months",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "First ascent",
+   "12 Jun 1907: Tom Longstaff, Alexis and Henri Brocherel and Karbir"
+  ],
+  [
+   "Status 2026",
+   "Open: the Trishul group is on Uttarakhand's Feb 2026 list of 83 peaks"
+  ]
  ],
  "intro": [
   "<b>Status, checked 6 November 2026: open.</b> The Trishul group is named in the list of 83 peaks that Uttarakhand opened in February 2026. Indian climbers apply on the state's UKMPS portal and pay no state fees in 2026; foreign teams pay only the IMF fees.",
@@ -48,11 +93,31 @@
   "<b>The historic route.</b> Longstaff's team in 1907, and the 1970 women's team, came from the north: up the Rishi Ganga valley, onto the Trisul glacier and up the north-east flank to the north ridge. That approach runs through the Nanda Devi National Park, so we do not present it as an open route today."
  ],
  "route": [
-  {"name": "Hom Kund base camp", "m": 4110, "note": "Near the lake, reached by a steep couloir (4,385 m in 2017)"},
-  {"name": "Camp 1", "m": 5150, "note": "Ronti glacier, below Trisul I's west face (about 5,120–5,150 m)"},
-  {"name": "Camp 2", "m": 5950, "note": "The shoulder on the upper Ronti icefield"},
-  {"name": "Summit camp", "m": 6360, "note": "Small niche behind an ice cliff (6,420 m in 2013)"},
-  {"name": "Trisul I summit", "m": 7120, "note": "West ridge: fixed rope to about 6,750 m, a steep step near the top"}
+  {
+   "name": "Hom Kund base camp",
+   "m": 4110,
+   "note": "Near the lake, reached by a steep couloir (4,385 m in 2017)"
+  },
+  {
+   "name": "Camp 1",
+   "m": 5150,
+   "note": "Ronti glacier, below Trisul I's west face (about 5,120–5,150 m)"
+  },
+  {
+   "name": "Camp 2",
+   "m": 5950,
+   "note": "The shoulder on the upper Ronti icefield"
+  },
+  {
+   "name": "Summit camp",
+   "m": 6360,
+   "note": "Small niche behind an ice cliff (6,420 m in 2013)"
+  },
+  {
+   "name": "Trisul I summit",
+   "m": 7120,
+   "note": "West ridge: fixed rope to about 6,750 m, a steep step near the top"
+  }
  ],
  "difficulty_h2": "How hard is Trishul peak?",
  "difficulty": [
@@ -60,13 +125,41 @@
   "The upper slopes also carry real avalanche risk. On 1 October 2021 an avalanche at about 6,700 m hit an Indian Navy summit team; four Navy climbers were confirmed dead and six people were initially missing. Arrive with at least one solid 6,000 m summit and good fixed-rope skills. In Himachal, the natural steps are <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m), then <a href=\"/mountains-of-india/mulkila/\">Mulkila</a> (6,517 m) and <a href=\"/mountains-of-india/reo-purgyil/\">Reo Purgyil</a> (6,816 m). Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before you go higher."
  ],
  "skills": [
-  ["Experience", "An earlier summit above 6,000 m and time on crevassed glaciers."],
-  ["Technique", "Crampons and ice axe on steep snow and ice, fixed ropes, jumaring and crevasse rescue."],
-  ["Fitness", "Load carries between four camps and a long summit day of about 750 m from the top camp."],
-  ["Judgement", "Reading fresh snow and avalanche slopes, and the discipline to turn back."],
-  ["Training", "A Basic and an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."]
+  [
+   "Experience",
+   "An earlier summit above 6,000 m and time on crevassed glaciers."
+  ],
+  [
+   "Technique",
+   "Crampons and ice axe on steep snow and ice, fixed ropes, jumaring and crevasse rescue."
+  ],
+  [
+   "Fitness",
+   "Load carries between four camps and a long summit day of about 750 m from the top camp."
+  ],
+  [
+   "Judgement",
+   "Reading fresh snow and avalanche slopes, and the discipline to turn back."
+  ],
+  [
+   "Training",
+   "A Basic and an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."
+  ]
  ],
- "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "maybe", "May": "good", "Jun": "good", "Jul": "no", "Aug": "no", "Sep": "good", "Oct": "good", "Nov": "no", "Dec": "no"},
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "maybe",
+  "May": "good",
+  "Jun": "good",
+  "Jul": "no",
+  "Aug": "no",
+  "Sep": "good",
+  "Oct": "good",
+  "Nov": "no",
+  "Dec": "no"
+ },
  "season_h2": "Best time to climb Trisul",
  "season_text": [
   "<b>May to June and September to October.</b> Recorded summits fit those windows: 12 June 1907, 23–24 June 1951, 4 June 1970, an attempt from 30 May to 3 June 2013, and 6 October 2017.",
@@ -105,28 +198,167 @@
  "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Trisul. If it is your goal, Himachal climbs build the record it needs: Friendship Peak or Yunam first, then Deo Tibba, Mulkila or Reo Purgyil. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Trishul peak: questions people ask",
  "faqs": [
-  ["How high is Trishul peak?", "Trisul I, the main summit, is 7,120 m (23,360 ft). Trisul II is about 6,690 m and Trisul III about 6,000 m."],
-  ["Where is Trishul Parvat?", "In Chamoli district, Uttarakhand, on the south-west rim of the Nanda Devi Sanctuary, about 15 km from Nanda Devi."],
-  ["Why is it called Trishul?", "Its three summits look like a trident, the trishula of Lord Shiva."],
-  ["Who first climbed Trishul?", "Tom Longstaff with the guides Alexis and Henri Brocherel and the Gurkha Karbir, on 12 June 1907."],
-  ["Which was the first 7,000 m peak ever climbed?", "Trisul I, in 1907. Kamet, climbed in 1931, was the first summit above 25,000 ft, which is a different record."],
-  ["Can you climb Trishul in 2026?", "Yes. The Trishul group is on Uttarakhand's February 2026 list of 83 opened peaks. Indian climbers apply on the state's UKMPS portal; foreign teams apply through the IMF."],
-  ["How difficult is Trisul?", "It is a long snow-and-glacier climb to 7,120 m. The classic north side is technically easy for its height, but the modern west ridge has fixed-rope sections and a steep final step, and the upper slopes carry avalanche risk."],
-  ["What happened on Trishul in 2021?", "On 1 October 2021 an avalanche at about 6,700 m hit an Indian Navy summit team. Four Navy climbers were confirmed dead and six people were initially missing."],
-  ["What is the best season to climb Trisul?", "May to June and September to October."]
+  [
+   "How high is Trishul peak?",
+   "Trisul I, the main summit, is 7,120 m (23,360 ft). Trisul II is about 6,690 m and Trisul III about 6,000 m."
+  ],
+  [
+   "Where is Trishul Parvat?",
+   "In Chamoli district, Uttarakhand, on the south-west rim of the Nanda Devi Sanctuary, about 15 km from Nanda Devi."
+  ],
+  [
+   "Why is it called Trishul?",
+   "Its three summits look like a trident, the trishula of Lord Shiva."
+  ],
+  [
+   "Who first climbed Trishul?",
+   "Tom Longstaff with the guides Alexis and Henri Brocherel and the Gurkha Karbir, on 12 June 1907."
+  ],
+  [
+   "Which was the first 7,000 m peak ever climbed?",
+   "Trisul I, in 1907. Kamet, climbed in 1931, was the first summit above 25,000 ft, which is a different record."
+  ],
+  [
+   "Can you climb Trishul in 2026?",
+   "Yes. The Trishul group is on Uttarakhand's February 2026 list of 83 opened peaks. Indian climbers apply on the state's UKMPS portal; foreign teams apply through the IMF."
+  ],
+  [
+   "How difficult is Trisul?",
+   "It is a long snow-and-glacier climb to 7,120 m. The classic north side is technically easy for its height, but the modern west ridge has fixed-rope sections and a steep final step, and the upper slopes carry avalanche risk."
+  ],
+  [
+   "What happened on Trishul in 2021?",
+   "On 1 October 2021 an avalanche at about 6,700 m hit an Indian Navy summit team. Four Navy climbers were confirmed dead and six people were initially missing."
+  ],
+  [
+   "What is the best season to climb Trisul?",
+   "May to June and September to October."
+  ]
  ],
  "sources": [
-  ["Wikipedia — Trisul", "https://en.wikipedia.org/wiki/Trisul"],
-  ["Alpine Journal 2007 — One hundred years ago (Trisul 1907)", "https://www.alpinejournal.org.uk/Contents/Contents_2007_files/AJ%202007%20256-260%20Russell%20100YrsAgo.pdf"],
-  ["Himalayan Journal 30 — The ascent of Trisul, 1970", "https://himalayanclub.org/hj/30/17/the-ascent-of-trisul-1970/"],
-  ["Himalayan Journal 69 — Trisul, the west ridge (2013)", "https://www.himalayanclub.org/hj/69/5/trisul-the-west-ridge/"],
-  ["Himalayan Journal 73 — Expeditions and explorations (Trisul 2017)", "https://www.himalayanclub.org/hj/73/17/expeditions-explorations/"],
-  ["Indian Navy — Mount Trishul expedition (2021)", "https://indiannavy.nic.in/node/29931"],
-  ["The Quint — Navy mountaineers missing after avalanche on Mount Trishul", "https://www.thequint.com/amp/story/news/india/uttarakhand-5-navy-mountaineers-1-porter-missing-after-avalanche-in-mount-trishul"],
-  ["ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
-  ["Uttarakhand UKMPS — apply for a mountaineering permit", "https://mountaineering.uk.gov.in/ApplyPermit"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["Wikipedia — Pauhunri", "https://en.wikipedia.org/wiki/Pauhunri"]
+  [
+   "Wikipedia — Trisul",
+   "https://en.wikipedia.org/wiki/Trisul"
+  ],
+  [
+   "Alpine Journal 2007 — One hundred years ago (Trisul 1907)",
+   "https://www.alpinejournal.org.uk/Contents/Contents_2007_files/AJ%202007%20256-260%20Russell%20100YrsAgo.pdf"
+  ],
+  [
+   "Himalayan Journal 30 — The ascent of Trisul, 1970",
+   "https://himalayanclub.org/hj/30/17/the-ascent-of-trisul-1970/"
+  ],
+  [
+   "Himalayan Journal 69 — Trisul, the west ridge (2013)",
+   "https://www.himalayanclub.org/hj/69/5/trisul-the-west-ridge/"
+  ],
+  [
+   "Himalayan Journal 73 — Expeditions and explorations (Trisul 2017)",
+   "https://www.himalayanclub.org/hj/73/17/expeditions-explorations/"
+  ],
+  [
+   "Indian Navy — Mount Trishul expedition (2021)",
+   "https://indiannavy.nic.in/node/29931"
+  ],
+  [
+   "The Quint — Navy mountaineers missing after avalanche on Mount Trishul",
+   "https://www.thequint.com/amp/story/news/india/uttarakhand-5-navy-mountaineers-1-porter-missing-after-avalanche-in-mount-trishul"
+  ],
+  [
+   "ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "Uttarakhand UKMPS — apply for a mountaineering permit",
+   "https://mountaineering.uk.gov.in/ApplyPermit"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Wikipedia — Pauhunri",
+   "https://en.wikipedia.org/wiki/Pauhunri"
+  ]
  ],
- "sameAs": ["https://en.wikipedia.org/wiki/Trisul"]
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Trisul"
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Trisul in pictures",
+  "lead": "The trident massif of Garhwal from Bedni Bugyal, from Kausani and in the golden hour — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-768x418.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-1024x557.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-1536x835.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1044,
+    "alt": "Trisul massif above golden autumn slopes in Garhwal",
+    "cap": "Trisul above autumn slopes",
+    "by": "Shaswat Nimesh",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trisul_Himalayan_mountain_peaks.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-768x418.webp",
+    "wp_id": 18788
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-768x513.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-1024x684.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-1536x1026.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1283,
+    "alt": "Trishul peak in golden hour light",
+    "cap": "Trishul in the golden hour",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trishul_Peak_in_the_Golden_Hour.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-768x513.webp",
+    "wp_id": 18790
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-768x324.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-1024x432.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-1536x648.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3.webp 1920w",
+    "w": 1920,
+    "h": 810,
+    "alt": "Panorama of the Trisul massif",
+    "cap": "The Trisul massif",
+    "by": "Calcurabbie",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trisul_peak_panorama.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-768x324.webp",
+    "wp_id": 18794
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-4-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-4-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-4-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Trisul before sunset seen from Kausani",
+    "cap": "Trisul from Kausani",
+    "by": "Aru10491",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Pre-Sunset_Trisul,_Kausani.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-4-768x576.webp",
+    "wp_id": 18799
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-5.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-5-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-5-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-5-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-5.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Trisul peak seen from Bedni Bugyal",
+    "cap": "Trisul from Bedni Bugyal",
+    "by": "Yash Soorma",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trisul_peak_from_bedni_bugyal.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-5-768x512.webp",
+    "wp_id": 18803
+   }
+  ]
+ }
 }
