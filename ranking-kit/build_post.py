@@ -7,7 +7,11 @@ import blogkit as K
 mod = importlib.import_module(sys.argv[1])
 S = mod.SPEC
 if S.get("photo_pick"):
-    pool = {p["id"]: p for sl in S["photo_pick"]["slugs"] for p in K.wp_items(sl)}
+    pool = {}
+    for sl in S["photo_pick"]["slugs"]:
+        for p in K.wp_items(sl):
+            pool[p["id"]] = p
+            pool[f'{sl}:{p["role"]}-{p["n"]}'] = p  # also addressable as "slug:role-n"
     S["photos"] = [dict(pool[t[0]], role=t[1], **({"cap": t[2], "alt": t[3] if len(t) > 3 else t[2]} if len(t) > 2 else {})) for t in S["photo_pick"]["ids"]]
 else:
     S["photos"] = K.wp_items(S.get("photo_slug", S["slug"]))
