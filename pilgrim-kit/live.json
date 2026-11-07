@@ -27,5 +27,6 @@
  "mallikarjuna": {"id": 17658, "path": "/pilgrimage-tours/12-jyotirlinga/mallikarjuna/", "kind": "temple", "label": "Mallikarjuna, Srisailam", "blurb": "Jyotirlinga and Shakti Peeth in the Nallamala hills", "added": "2026-11-03", "shrine": "mallikarjuna-jyotirlinga"},
  "kainchi-dham": {"id": 17786, "path": "/pilgrimage-tours/kainchi-dham/", "kind": "temple", "label": "Kainchi Dham, Nainital", "blurb": "Neem Karoli Baba's Hanuman ashram by the Shipra", "added": "2026-11-04", "shrine": "kainchi-dham"},
  "hidimba-devi": {"id": 18022, "path": "/pilgrimage-tours/hidimba-devi/", "kind": "temple", "label": "Hidimba Devi, Manali", "blurb": "Pagoda shrine of 1553 in the Dhungri deodar forest", "added": "2026-11-05", "shrine": "hidimba-devi"},
- "mansa-devi": {"id": 18479, "path": "/pilgrimage-tours/mansa-devi/", "kind": "temple", "label": "Mansa Devi, Panchkula", "blurb": "Shivalik shrine of the three pindis, near Chandigarh", "added": "2026-11-06", "shrine": "mansa-devi-panchkula"}
+ "mansa-devi": {"id": 18479, "path": "/pilgrimage-tours/mansa-devi/", "kind": "temple", "label": "Mansa Devi, Panchkula", "blurb": "Shivalik shrine of the three pindis, near Chandigarh", "added": "2026-11-06", "shrine": "mansa-devi-panchkula"},
+ "baba-balak-nath": {"id": 19046, "path": "/pilgrimage-tours/baba-balak-nath/", "kind": "temple", "label": "Baba Balak Nath, Deotsidh", "blurb": "The child-yogi's hilltop cave shrine in Hamirpur", "added": "2026-11-07"}
 }
