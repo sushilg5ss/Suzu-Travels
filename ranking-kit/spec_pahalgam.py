@@ -6,8 +6,8 @@ SPEC = dict(
     focus="pahalgam snowfall",
     kicker="Pahalgam · Betaab · Aru · Lidder valley · Winter 2026-27",
     tag="Pahalgam in winter: pine forest, river and snow.",
-    sub="Pahalgam sits in the Lidder valley at about 2,700 m, and in winter the pine forests, the river banks and the meadows around it fill with snow. Here is when it usually comes, what is open, and how to plan around it.",
-    chips=[("~2,700 m", "Pahalgam"), ("Dec–Feb", "snow on the ground"), ("~95 km", "from Srinagar"), ("Open", "Betaab & Aru reopened 2025")],
+    sub="Pahalgam sits in the Lidder valley at about 2,200 m, and in winter the pine forests, the river banks and the meadows around it fill with snow. Here is when it usually comes, what is open, and how to plan around it.",
+    chips=[("~2,200 m", "Pahalgam"), ("Dec–Feb", "snow on the ground"), ("~95 km", "from Srinagar"), ("Open", "Betaab & Aru reopened 2025")],
     flakes=True,
     updated="November 2026",
     wa="Hi Suzu Travels, I want to see snow in Pahalgam. Dates: ___ , people: ___ , from city: ___",
@@ -22,7 +22,7 @@ SPEC = dict(
     ],
     sections=[
         dict(id="when", kicker="When it snows", h2="When does it snow in Pahalgam?", fig=True, ps=[
-            "Pahalgam lies where the East and West Lidder rivers meet, at about 2,700 m, with Betaab Valley and Aru further up the valley. Winter snow comes with western disturbances from the west: the peaks above the town catch the first snow in autumn, and the town and forests are usually white from late December.",
+            "Pahalgam lies where the East and West Lidder rivers meet, at about 2,200 m, with Betaab Valley and Aru further up the valley. Winter snow comes with western disturbances from the west: the peaks above the town catch the first snow in autumn, and the town and forests are usually white from late December.",
             "Last season began early. On <b>5 November 2025</b>, the Srinagar weather office recorded 2.1 cm of snow at Pahalgam and 7.6 cm at Gulmarg in 24 hours, and the Srinagar–Leh highway was closed by snow. Chillai Kalan, the 40 coldest days of the Kashmir winter, then ran from <b>21 December 2025</b> to about 30 January.",
             "In most winters, January is when Pahalgam is deepest in snow and coldest — nights well below freezing — while February keeps the snow with slightly milder days.",
         ]),
@@ -33,7 +33,7 @@ SPEC = dict(
             ["Pahalgam town & Lidder river", "Open", "Snow in town from late December in most years"],
             ["Betaab Valley", "Reopened June 2025; road can be snow-blocked", "Deep snow in January–February"],
             ["Aru Valley", "Reopened September 2025; road can be snow-blocked", "Deep snow; often the snowiest spot you can drive to"],
-            ["Chandanwari", "Access has varied — check before you go", "Snowbound in winter"],
+            ["Chandanwari", "Reopened by June 2026 (vehicles stop at Lower Chandanwari); check in winter", "Snowbound in winter"],
             ["Baisaran", "On the district's closed list in 2026", "—"],
         ])),
         dict(id="months", kicker="Month by month", h2="Pahalgam snowfall by month", ps=[
