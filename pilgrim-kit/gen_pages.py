@@ -819,7 +819,7 @@ def content_page(slug):
             f'<p class="szp-tag"><span class="dv">{e(c["deva"])}</span>{e(c["tag"])}</p><p class="szp-sub">{c["sub"]}</p>'
             + ('<ul class="szp-chips">' + "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in c.get("chips", [])) + "</ul>" if c.get("chips") else "")
             + f'<div class="szp-btns"><a class="szp-btn gold" href="#{navi[1][0] if len(navi) > 1 else "overview"}">{e(c.get("cta1", "Read the guide"))}</a><a class="szp-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Plan on WhatsApp</a></div>{trust(c.get("verified"))}</div></section>')
-    body = hero + nav(navi, wa(watxt)) + "".join(secs)
+    body = hero + nav(navi if len(navi) <= 10 else [x for x in navi if x[0] != "photos"], wa(watxt)) + "".join(secs)
     graph = [{"@type": "Article", "headline": c["title"], "inLanguage": "en-IN", "dateModified": c.get("modified", "2026-10-08"),
               "author": {"@type": "Organization", "name": "Suzu Travels"}, "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/"}}]
     if c.get("place"):
