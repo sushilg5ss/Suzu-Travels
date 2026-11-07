@@ -75,6 +75,19 @@ CSS = """
 .szb .szb-snow .note,.szb .szb-snow .rows>p{font-size:12.5px;color:rgba(234,244,251,.78)!important;margin:12px 0 0}
 .szb-snow .note a{color:var(--gold2)}
 .szb-chiplinks{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.szb .szb-chiplinks a{display:inline-block;padding:9px 14px;border-radius:99px;background:var(--ice);border:1px solid var(--line);color:var(--navy)!important;font-weight:700;font-size:14.5px;text-decoration:none!important;transition:transform .15s,background .15s}.szb .szb-chiplinks a:hover{background:#fff;transform:translateY(-2px)}
+.szb-wx{background:radial-gradient(ellipse at 85% 0%,#2a6aa0,var(--navy) 60%,#06121f);color:#eaf4fb;border-radius:24px;padding:24px;margin:18px 0;position:relative;overflow:hidden}
+.szb-wx .now{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+.szb-wx .now .ic{font-size:56px;line-height:1;animation:szbFloat 4s ease-in-out infinite}
+@keyframes szbFloat{50%{transform:translateY(-6px)}}
+.szb-wx .now .t{font-size:52px;font-weight:800;color:#fff;line-height:1}
+.szb-wx .now .l{font-size:15px;color:rgba(234,244,251,.85)}.szb-wx .now .l b{display:block;color:#fff;font-size:18px}
+.szb-wx .days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+.szb-wx .dy{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px 6px;text-align:center;opacity:0;transform:translateY(8px);animation:szbIn .5s ease forwards}
+.szb-wx .dy.sn{border-color:var(--gold2);box-shadow:0 0 18px rgba(243,217,143,.35)}
+@keyframes szbIn{to{opacity:1;transform:none}}
+.szb-wx .dy .d{font-size:13px;font-weight:800;color:#fff}.szb-wx .dy .i{font-size:28px;margin:6px 0}.szb-wx .dy .h{font-size:17px;font-weight:800;color:#fff}.szb-wx .dy .lo{font-size:13px;color:rgba(234,244,251,.7)}.szb-wx .dy .x{font-size:11.5px;color:var(--gold2);margin-top:4px;min-height:14px}
+.szb .szb-wx p.note{font-size:12.5px;color:rgba(234,244,251,.78)!important;margin:14px 0 0}.szb .szb-wx p a{color:#f3d98f!important}
+@media(max-width:640px){.szb-wx .days{grid-template-columns:repeat(4,minmax(0,1fr))}.szb-wx .now .t{font-size:44px}}
 .szb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
 .szb-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
 .szb-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px rgba(11,31,51,.35)}
@@ -185,6 +198,18 @@ def role(items, r):
     return next((x for x in items if x["role"] == r), None)
 
 
+WXJS = """(function(){var d=document;var B=d.querySelectorAll('.szb-wx[data-id]');if(!B.length)return;
+function el(t,c,x){var n=d.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
+var HI={w:['रवि','सोम','मंगल','बुध','गुरु','शुक्र','शनि'],loc:'hi-IN',now:'अभी',today:'आज',snow:' cm बर्फ',rain:' mm बारिश',k:{thunder:'गरज-चमक',snow:'बर्फबारी',sleet:'बर्फ-बारिश',rain:'बारिश',fog:'कोहरा',cloudy:'बादल',partly:'आंशिक बादल',fair:'ज़्यादातर साफ़',clear:'साफ़ आसमान'}};
+var EN={w:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],loc:'en-IN',now:'Now',today:'Today',snow:' cm snow',rain:' mm rain',k:{thunder:'Thunderstorm',snow:'Snow',sleet:'Sleet',rain:'Rain',fog:'Fog',cloudy:'Cloudy',partly:'Partly cloudy',fair:'Mostly clear',clear:'Clear sky'}};
+function kind(s){s=s||'';return /thunder/.test(s)?'thunder':/sleet/.test(s)?'sleet':/snow/.test(s)?'snow':/rain|shower/.test(s)?'rain':/fog/.test(s)?'fog':/partly/.test(s)?'partly':/fair/.test(s)?'fair':/cloudy/.test(s)?'cloudy':'clear'}
+function icon(k,night){return {thunder:'⛈️',sleet:'🌨️',snow:'❄️',rain:'🌧️',fog:'🌫️',cloudy:'☁️',partly:night?'☁️':'⛅',fair:night?'🌙':'🌤️',clear:night?'🌙':'☀️'}[k]}
+fetch('/suzu-snow.php').then(function(r){return r.json()}).then(function(j){Array.prototype.forEach.call(B,function(b){var T=b.getAttribute('data-lang')==='hi'?HI:EN;var p=null;j.places.forEach(function(q){if(q.id===b.getAttribute('data-id'))p=q});if(!p)return;
+var nw=b.querySelector('.now');nw.textContent='';var k=kind(p.now.sym),night=/night/.test(p.now.sym||'');nw.appendChild(el('span','ic',icon(k,night)));nw.appendChild(el('span','t',Math.round(p.now.t)+'°C'));var l=el('span','l');l.appendChild(el('b',null,T.now+' · '+T.k[k]));l.appendChild(d.createTextNode((T===HI&&p.hi?p.hi:p.name)+' · '+p.alt.toLocaleString('en-IN')+' m'));nw.appendChild(l);
+var ds=b.querySelector('.days');ds.textContent='';p.days.forEach(function(x,i){var kk=x.snow_cm>0?'snow':kind(x.sym);var c=el('div','dy'+(x.snow_cm>0?' sn':''));c.style.animationDelay=(i*0.07)+'s';var dt=new Date(x.d+'T00:00:00');c.appendChild(el('div','d',i===0?T.today:T.w[dt.getDay()]));c.appendChild(el('div','i',icon(kk,false)));c.appendChild(el('div','h',Math.round(x.hi)+'°'));c.appendChild(el('div','lo',Math.round(x.lo)+'°'));c.appendChild(el('div','x',x.snow_cm>0?x.snow_cm+T.snow:(x.pr>=1?Math.round(x.pr)+T.rain:'')));c.title=T.k[kk];ds.appendChild(c)});
+var u=b.querySelector('.upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString(T.loc,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})})}).catch(function(){Array.prototype.forEach.call(B,function(b){var s=b.closest('section')||b;s.style.display='none'})})})();"""
+
+
 SNOW_LINKS = {"manali": "/snowfall-in-manali/", "solang": "/adventure/snow-activities-manali/", "sissu": "/adventure/atal-tunnel-sissu-snow-trip/",
               "shimla": "/shimla-snowfall/", "kufri": "/kufri-snowfall/", "narkanda": "/adventure/snow-and-skiing-in-narkanda/",
               "gulmarg": "/gulmarg-snowfall/", "auli": "/auli-in-december/"}
@@ -219,6 +244,12 @@ def render(s):
     out.append(f'<div class="szb-answer"><p>{s["answer"]}</p></div>')
     if s.get("quick"):
         out.append('<ul class="szb-qa">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in s["quick"]) + "</ul>")
+    if s.get("wx"):
+        wx = s["wx"]
+        note = ('Forecast data: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), refreshed through the day — last update <span class="upd">—</span>.' if LANG == "en" else
+                'पूर्वानुमान डेटा: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), दिन भर अपडेट होता है — आख़िरी अपडेट <span class="upd">—</span>।')
+        out.append(f'<section class="szb-sec" id="weather"><span class="k">{e(wx.get("kicker", T("Live forecast")))}</span><h2>{e(wx["h2"])}</h2><p>{wx["lead"]}</p>'
+                   f'<div class="szb-wx" data-id="{wx["id"]}"{' data-lang="hi"' if LANG == "hi" else ""}><div class="now"><span class="l">{T("Loading the latest forecast…")}</span></div><div class="days"></div><p class="note">{note}</p></div></section>')
     snow_html = ""
     if s.get("snow"):
         sn = s["snow"]
@@ -265,6 +296,8 @@ def render(s):
     out.append('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
     if s.get("snow"):
         out.append(f"<script>{JS}</script>")
+    if s.get("wx"):
+        out.append(f"<script>{WXJS}</script>")
     h = "".join(out)
     h = re.sub(r">\s+<", "><", h)
     return re.sub(r"\s+", " ", h).strip()
