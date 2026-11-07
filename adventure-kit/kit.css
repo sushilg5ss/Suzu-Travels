@@ -111,3 +111,31 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 /* v1.4 (30 Sep 2026, Page Builder; pushed by QA 4 Oct 2026): the theme leaves a stray empty <p> inside .sza-media, which pushed the text column under the media on desktop */
 .sza .sza-media>p:empty{display:none}
 .sza-cathead>p:empty,.sza-cathead>br{display:none}
+
+/* BEGIN SUZU-MEDIA-ALIGN v1.1 (7 Nov 2026) — one size and one rhythm for every in-page video/photo row on the
+   Adventure (.sza), Devotional (.szp) and Mountains (.szm) pages. Media left 7/12, text right 5/12, edges on the
+   content column, same 16:9 frame, same gap. Stand-alone explainer figures use the same row (caption on the right). */
+@media (min-width:901px){
+html body .sza .sza-media,html body .szp .szp-media,html body .szm .szm-media{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:center;margin:40px 0}
+html body .sza [style*="max-width:880px"]:has(>video){display:grid!important;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:center;max-width:none!important;width:100%;margin:40px 0!important}
+html body .sza [style*="max-width:880px"]:has(>video)>:is(figcaption,span){margin:0!important;text-align:left!important;font-size:16.5px!important;line-height:1.6!important;padding-left:20px;border-left:3px solid #d4a24c}
+}
+html body .sza .sza-media>video,html body .sza .sza-media>img,html body .sza .sza-media>picture img,
+html body .szp .szp-media>video,html body .szp .szp-media>img,
+html body .szm .szm-media>video,html body .szm .szm-media>img,
+html body .sza [style*="max-width:880px"]>video{width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:cover;border-radius:20px!important;display:block;margin:0!important;box-shadow:0 22px 50px -22px rgba(11,31,51,.55)!important}
+html body .sza .sza-media>div,html body .szp .szp-media>div,html body .szm .szm-media>div{min-width:0}
+html body .sza .sza-media>div>:first-child,html body .szp .szp-media>div>:first-child,html body .szm .szm-media>div>:first-child{margin-top:0}
+html body .sza .sza-media>div>:last-child,html body .szp .szp-media>div>:last-child,html body .szm .szm-media>div>:last-child{margin-bottom:0}
+html body .szp .szp-story+.szp-media{margin-top:36px}
+/* 15-second reel: a framed card, reel and text side by side on the content column */
+html body .sza #reel>div[style*="display:flex"]{display:grid!important;grid-template-columns:300px minmax(0,1fr);gap:48px!important;align-items:center;background:linear-gradient(135deg,rgba(212,162,76,.10),rgba(11,31,51,.04));border:1px solid rgba(212,162,76,.25);border-radius:24px;padding:32px 40px}
+html body .sza #reel>div[style*="display:flex"]>div:first-child{margin:0!important;width:300px!important}
+@media (max-width:900px){
+html body .sza .sza-media,html body .szp .szp-media,html body .szm .szm-media{grid-template-columns:1fr;gap:18px;margin:28px 0}
+html body .sza [style*="max-width:880px"]:has(>video){margin:28px 0!important;max-width:none!important}
+html body .sza [style*="max-width:880px"]:has(>video)>:is(figcaption,span){text-align:left!important}
+html body .sza #reel>div[style*="display:flex"]{grid-template-columns:1fr;padding:20px;gap:20px!important;justify-items:center}
+html body .sza #reel>div[style*="display:flex"]>div:first-child{width:min(280px,100%)!important}
+}
+/* END SUZU-MEDIA-ALIGN v1.1 */
