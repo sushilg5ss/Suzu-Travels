@@ -9,6 +9,7 @@ SPEC = dict(
     sub="At about 2,650 m, with a Gondola that climbs towards 4,000 m, Gulmarg holds snow longer than almost anywhere you can reach by road in India. Here is how the season runs, a live forecast, and how to plan around it.",
     chips=[("~2,650 m", "Gulmarg meadow"), ("Dec–Mar", "snow on the ground"), ("14 Oct 2026", "fresh snow at Apharwat"), ("Live", "7-day snow forecast")],
     flakes=True,
+    alt_lang=("/kashmir-ka-mausam/", "हिंदी में: कश्मीर का मौसम"),
     updated="November 2026",
     wa="Hi Suzu Travels, I want to see snow in Gulmarg. Dates: ___ , people: ___ , from city: ___",
     cta2=("/kashmir-tour-packages-quote/", "Get a free quote"),

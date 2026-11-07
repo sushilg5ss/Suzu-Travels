@@ -9,6 +9,7 @@ SPEC = dict(
     sub="The snow-capped Dhauladhar stands right behind Dharamshala all winter, but the town itself sees snow only now and then. Here is where the snow actually is, when it usually comes, and how to plan a snow day from McLeod Ganj.",
     chips=[("~2,080 m", "McLeod Ganj"), ("~2,850 m", "Triund ridge"), ("Jan–Feb", "best chance of snow"), ("23 Jan 2026", "snow at Triund last winter")],
     flakes=True,
+    alt_lang=("/dharamshala-ka-mausam/", "हिंदी में: धर्मशाला का मौसम"),
     updated="November 2026",
     wa="Hi Suzu Travels, I want to see snow around Dharamshala / McLeod Ganj. Dates: ___ , people: ___ , from city: ___",
     cta2=("/himachal-tour-packages-quote/", "Get a free quote"),

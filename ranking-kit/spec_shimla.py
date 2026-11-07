@@ -9,6 +9,7 @@ SPEC = dict(
     sub="Shimla town gets snow in some winters and not in others. Kufri, Fagu and Narkanda — 30 minutes to 2 hours higher up — get it far more often. Here is how the season usually runs, a live forecast, and how to plan around it.",
     chips=[("2,205 m", "Shimla town"), ("Late Dec–Feb", "usual snow window"), ("23 Jan 2026", "last season's first snow"), ("Live", "7-day snow forecast")],
     flakes=True,
+    alt_lang=("/shimla-ka-mausam/", "हिंदी में: शिमला का मौसम और बर्फ"),
     updated="November 2026",
     wa="Hi Suzu Travels, I want to see snow in Shimla. Dates: ___ , people: ___ , from city: ___",
     cta2=("/himachal-tour-packages-quote/", "Get a free quote"),

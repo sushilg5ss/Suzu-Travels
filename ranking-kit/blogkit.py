@@ -92,6 +92,7 @@ CSS = """
 .szb-wx.mini{margin:0;padding:16px}.szb-wx.mini .now{gap:12px;margin-bottom:10px}.szb-wx.mini .now .ic{font-size:36px}.szb-wx.mini .now .t{font-size:34px}.szb-wx.mini .now .l{font-size:13px}.szb-wx.mini .now .l b{font-size:15px}
 .szb-wx.mini .days{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.szb-wx.mini .dy{padding:8px 2px;border-radius:12px}.szb-wx.mini .dy .i{font-size:20px;margin:3px 0}.szb-wx.mini .dy .h{font-size:14px}.szb-wx.mini .dy .lo,.szb-wx.mini .dy .x{font-size:11px}
 .szb .szb-wxnote{font-size:12.5px;color:var(--mid)}
+.szb .szb-alt{display:inline-block;padding:2px 10px;border-radius:99px;background:var(--ice);border:1px solid var(--line);font-weight:700;text-decoration:none!important}
 .szb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
 .szb-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
 .szb-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px rgba(11,31,51,.35)}
@@ -248,7 +249,7 @@ def render(s):
                f'<p class="szb-tag">{e(s["tag"])}</p><p class="szb-sub">{s["sub"]}</p><ul class="szb-chips">{chips}</ul>'
                f'<div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">WhatsApp +91 70874 88961</a><a class="szb-btn ghost" href="{s.get("cta2", ("/himachal-tour-packages-quote/", T("Get a free quote")))[0]}">{e(s.get("cta2", ("", T("Get a free quote")))[1])}</a></div></div>'
                f'<span class="szb-cr">{credit(hero)}</span></section>')
-    out.append(f'<p class="szb-upd">{T("Updated")} {e(s["updated"])} · {reg} · <a href="/certificates/">{T("certificates")}</a></p>')
+    out.append(f'<p class="szb-upd">{T("Updated")} {e(s["updated"])} · {reg} · <a href="/certificates/">{T("certificates")}</a>' + (f' · <a class="szb-alt" href="{s["alt_lang"][0]}" lang="{"en" if LANG == "hi" else "hi"}">{e(s["alt_lang"][1])}</a>' if s.get("alt_lang") else "") + '</p>')
     out.append(f'<div class="szb-answer"><p>{s["answer"]}</p></div>')
     if s.get("quick"):
         out.append('<ul class="szb-qa">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in s["quick"]) + "</ul>")

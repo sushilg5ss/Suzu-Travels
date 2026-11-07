@@ -16,7 +16,8 @@ GUIDES = [("Shimla snowfall", "/shimla-snowfall/"), ("Kufri snowfall", "/kufri-s
           ("Narkanda snow & skiing", "/adventure/snow-and-skiing-in-narkanda/"), ("Sissu & Atal Tunnel", "/adventure/atal-tunnel-sissu-snow-trip/"),
           ("Himachal snowfall 2026-27", "/himachal-snowfall-winter-2026-27/"), ("Gulmarg snowfall", "/gulmarg-snowfall/"), ("Sonmarg snowfall", "/sonmarg-snowfall/"),
           ("Pahalgam snowfall", "/pahalgam-snowfall/"), ("Kashmir snowfall", "/kashmir-snowfall/"), ("Auli snowfall", "/auli-snowfall/"),
-          ("Mussoorie snowfall", "/mussoorie-snowfall/"), ("Winter Spiti", "/winter-spiti-valley-guide-2026-27/")]
+          ("Mussoorie snowfall", "/mussoorie-snowfall/"), ("Winter Spiti", "/winter-spiti-valley-guide-2026-27/"),
+          ("बर्फबारी (हिंदी)", "/barfbari/"), ("हिमाचल का मौसम", "/himachal-ka-mausam/"), ("शिमला का मौसम", "/shimla-ka-mausam/"), ("धर्मशाला का मौसम", "/dharamshala-ka-mausam/"), ("कश्मीर का मौसम", "/kashmir-ka-mausam/")]
 GUIDE_HTML = '<div class="szb-chiplinks">' + "".join(f'<a href="{h}">❄ {t}</a>' for t, h in GUIDES) + '</div>'
 
 SPEC = dict(
@@ -32,6 +33,7 @@ SPEC = dict(
     sub="One live board for the snow points travellers ask us about most — from Manali and Shimla to Gulmarg and Auli. It reads the latest forecast through the day, so you can see where snow is likely before you book.",
     chips=[("8", "snow points"), ("7 days", "forecast"), ("Updated", "through the day"), ("Free", "no sign-up")],
     flakes=True,
+    alt_lang=("/barfbari/", "हिंदी में: बर्फबारी ट्रैकर"),
     updated="November 2026",
     wa="Hi Suzu Travels, I want to see snow. Dates: ___ , people: ___ , from city: ___ . Which snow point is best for us?",
     cta2=("#forecast", "See the live board"),
