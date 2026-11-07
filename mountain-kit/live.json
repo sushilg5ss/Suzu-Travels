@@ -12,7 +12,7 @@
   "path": "/mountains-of-india/highest-peaks-in-india/",
   "kind": "base",
   "label": "Highest peaks in India",
-  "blurb": "Full list of 157 peaks",
+  "blurb": "Full list of 159 peaks",
   "added": "2026-10-01"
  },
  "himalayan-peak-expeditions": {
@@ -232,7 +232,7 @@
   "path": "/mountains-of-india/6000m-peaks/",
   "kind": "band",
   "label": "6,000 m peaks of India",
-  "blurb": "75 six-thousanders · grade, season, status",
+  "blurb": "77 six-thousanders · grade, season, status",
   "added": "2026-10-22",
   "band": "6000",
   "commercial": false
@@ -350,7 +350,7 @@
   "path": "/mountains-of-india/uttarakhand/",
   "kind": "state",
   "label": "Peaks of Uttarakhand",
-  "blurb": "60 peaks · Nanda Devi 7,816 m to Nag Tibba",
+  "blurb": "62 peaks · Nanda Devi 7,816 m to Nag Tibba",
   "added": "2026-11-04",
   "state": "uttarakhand",
   "commercial": false
