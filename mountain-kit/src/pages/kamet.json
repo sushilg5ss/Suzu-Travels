@@ -14,27 +14,72 @@
  "tag": "The giant that broke the 25,000 ft barrier.",
  "sub": "Kamet is the second-highest peak in Uttarakhand and the third-highest in India in our dataset. Here is the Meade's Col route camp by camp, the honest difficulty, the season, the 2026 permit and Inner Line rules, and the story from 1855 to the first ascent of 1931 and beyond.",
  "chips": [
-  ["7,756 m", "summit (25,446 ft)"],
-  ["About 4 weeks", "from Joshimath (estimate)"],
-  ["May–Jun", "Sep–Oct"],
-  ["5 camps", "via Meade's Col"],
-  ["2026", "open (Uttarakhand list)"]
+  [
+   "7,756 m",
+   "summit (25,446 ft)"
+  ],
+  [
+   "About 4 weeks",
+   "from Joshimath (estimate)"
+  ],
+  [
+   "May–Jun",
+   "Sep–Oct"
+  ],
+  [
+   "5 camps",
+   "via Meade's Col"
+  ],
+  [
+   "2026",
+   "open (Uttarakhand list)"
+  ]
  ],
  "hero_alt": "Mountain landscapes, a night tent, a summit push by headlamp and a corniced ridge (generic stock footage, not Kamet itself) with an altitude read-out rising from Ghamsali, 3,350 m, past base camp, Camp 3 and Meade's Col to the 7,756 m summit",
  "profile_alt": "Animated altitude profile of the Kamet route: Ghamsali road-head 3,350 m, base camp 4,650 m, Camp 2 5,360 m, Camp 3 6,050 m, Camp 4 6,650 m, Meade's Col about 7,100 m and the 7,756 m summit",
  "q": "How high is Mount Kamet, and how do you climb it?",
  "answer": "<b>Mount Kamet</b> is 7,756 m (25,446 ft) high, in the Zanskar range of the Garhwal Himalaya, Chamoli district, Uttarakhand, near the Tibet border. It is the second-highest peak in Uttarakhand after Nanda Devi. Teams drive to Ghamsali in the Niti valley, then climb the East Kamet glacier to Meade's Col and the north-east face. It is open in 2026. See all <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks in India</a>.",
  "facts": [
-  ["Height", "7,756 m / 25,446 ft"],
-  ["Location", "Zanskar range, Garhwal Himalaya, Chamoli district, Uttarakhand, near the Tibet border"],
-  ["Rank", "2nd-highest in Uttarakhand (after Nanda Devi); 3rd-highest in India in our dataset"],
-  ["Prominence", "2,825 m"],
-  ["Name", "From Tibetan, \"the lower snows\"; also called \"glacier fire\" for its evening glow"],
-  ["Base camp", "About 4,650 m near Vasudhara (\"Dobla Tal\" in state data)"],
-  ["Usual route", "East Kamet glacier, Meade's Col (about 7,100 m), north-east face"],
-  ["Best months", "May–Jun, Sep–Oct"],
-  ["First ascent", "21 Jun 1931, Frank Smythe's British team"],
-  ["Status 2026", "Open: on Uttarakhand's Feb 2026 list of 83 peaks"]
+  [
+   "Height",
+   "7,756 m / 25,446 ft"
+  ],
+  [
+   "Location",
+   "Zanskar range, Garhwal Himalaya, Chamoli district, Uttarakhand, near the Tibet border"
+  ],
+  [
+   "Rank",
+   "2nd-highest in Uttarakhand (after Nanda Devi); 3rd-highest in India in our dataset"
+  ],
+  [
+   "Prominence",
+   "2,825 m"
+  ],
+  [
+   "Name",
+   "From Tibetan, \"the lower snows\"; also called \"glacier fire\" for its evening glow"
+  ],
+  [
+   "Base camp",
+   "About 4,650 m near Vasudhara (\"Dobla Tal\" in state data)"
+  ],
+  [
+   "Usual route",
+   "East Kamet glacier, Meade's Col (about 7,100 m), north-east face"
+  ],
+  [
+   "Best months",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "First ascent",
+   "21 Jun 1931, Frank Smythe's British team"
+  ],
+  [
+   "Status 2026",
+   "Open: on Uttarakhand's Feb 2026 list of 83 peaks"
+  ]
  ],
  "intro": [
   "<b>Status, checked 2 November 2026: open.</b> Kamet is the highest of the 83 peaks (5,700–7,756 m) that Uttarakhand opened in February 2026. Indian climbers apply on the state's UKMPS portal and pay no state fees in 2026; foreign teams pay only the IMF fees. An ITBP expedition to Kamet and Abi Gamin was flagged off in August 2026; no result has been published.",
@@ -47,28 +92,104 @@
   "Above base camp, the route climbs the <b>East (Purbi) Kamet glacier</b>: Camp 1 (about 4,960 m), Camp 2 (5,360 m) on the upper glacier, Camp 3 (about 6,050 m) above a rockfall gully, and Camp 4 (about 6,650 m) above a rock-and-ice wall. A crevassed icefield leads to <b>Meade's Col</b> (about 7,100 m), the summit camp, from where the last section goes up the north-east edge of the north face on steep, often icy snow. Camp heights are from the 2003 Indian Navy expedition in the Himalayan Journal and vary from year to year."
  ],
  "route": [
-  {"name": "Joshimath", "m": 1875, "note": "Check-post town and formalities (height approximate)"},
-  {"name": "Ghamsali", "m": 3350, "note": "Road-head and ITBP post, via Malari"},
-  {"name": "Sepuk", "m": 3700, "note": "River camp on the Dhauliganga"},
-  {"name": "Raikana", "m": 4200, "note": "Acclimatisation camp"},
-  {"name": "Base camp", "m": 4650, "note": "Near Vasudhara (\"Dobla Tal\" in state data)"},
-  {"name": "Camp 1", "m": 4960, "note": "Lower East Kamet glacier (5,040 m in 2006)"},
-  {"name": "Camp 2", "m": 5360, "note": "Upper East Kamet glacier"},
-  {"name": "Camp 3", "m": 6050, "note": "Above the rockfall gully and ice wall"},
-  {"name": "Camp 4", "m": 6650, "note": "Above a rock-and-ice wall"},
-  {"name": "Meade's Col", "m": 7100, "note": "Summit camp after a crevassed icefield (about 7,100 m)"},
-  {"name": "Kamet summit", "m": 7756, "note": "North-east edge of the north face"}
+  {
+   "name": "Joshimath",
+   "m": 1875,
+   "note": "Check-post town and formalities (height approximate)"
+  },
+  {
+   "name": "Ghamsali",
+   "m": 3350,
+   "note": "Road-head and ITBP post, via Malari"
+  },
+  {
+   "name": "Sepuk",
+   "m": 3700,
+   "note": "River camp on the Dhauliganga"
+  },
+  {
+   "name": "Raikana",
+   "m": 4200,
+   "note": "Acclimatisation camp"
+  },
+  {
+   "name": "Base camp",
+   "m": 4650,
+   "note": "Near Vasudhara (\"Dobla Tal\" in state data)"
+  },
+  {
+   "name": "Camp 1",
+   "m": 4960,
+   "note": "Lower East Kamet glacier (5,040 m in 2006)"
+  },
+  {
+   "name": "Camp 2",
+   "m": 5360,
+   "note": "Upper East Kamet glacier"
+  },
+  {
+   "name": "Camp 3",
+   "m": 6050,
+   "note": "Above the rockfall gully and ice wall"
+  },
+  {
+   "name": "Camp 4",
+   "m": 6650,
+   "note": "Above a rock-and-ice wall"
+  },
+  {
+   "name": "Meade's Col",
+   "m": 7100,
+   "note": "Summit camp after a crevassed icefield (about 7,100 m)"
+  },
+  {
+   "name": "Kamet summit",
+   "m": 7756,
+   "note": "North-east edge of the north face"
+  }
  ],
  "itinerary_h2": "A typical plan (estimate, not a fixed schedule)",
  "itinerary": [
-  ["Days 1–2", "Joshimath", "Formalities at the check-post, Inner Line paperwork and a first night at height."],
-  ["Day 3", "Drive to Ghamsali", "Up the Dhauliganga via Malari to the road-head at 3,350 m."],
-  ["Days 4–5", "Sepuk and Raikana", "Walk-in along the river to 3,700 m and 4,200 m, with time to acclimatise."],
-  ["Day 6", "Base camp", "Base camp at about 4,650 m near Vasudhara."],
-  ["Days 7–12", "Camps 1 and 2", "Load carries up the East Kamet glacier to about 4,960 m and 5,360 m."],
-  ["Days 13–20", "Camps 3, 4 and Meade's Col", "Fix rope through the gully and the ice wall, then move up to the col at about 7,100 m."],
-  ["Days 21–26", "Summit window", "Summit day from Meade's Col to 7,756 m, with spare days for weather."],
-  ["Days 27–30", "Down and out", "Clear the camps, walk out to Ghamsali and drive back to Joshimath."]
+  [
+   "Days 1–2",
+   "Joshimath",
+   "Formalities at the check-post, Inner Line paperwork and a first night at height."
+  ],
+  [
+   "Day 3",
+   "Drive to Ghamsali",
+   "Up the Dhauliganga via Malari to the road-head at 3,350 m."
+  ],
+  [
+   "Days 4–5",
+   "Sepuk and Raikana",
+   "Walk-in along the river to 3,700 m and 4,200 m, with time to acclimatise."
+  ],
+  [
+   "Day 6",
+   "Base camp",
+   "Base camp at about 4,650 m near Vasudhara."
+  ],
+  [
+   "Days 7–12",
+   "Camps 1 and 2",
+   "Load carries up the East Kamet glacier to about 4,960 m and 5,360 m."
+  ],
+  [
+   "Days 13–20",
+   "Camps 3, 4 and Meade's Col",
+   "Fix rope through the gully and the ice wall, then move up to the col at about 7,100 m."
+  ],
+  [
+   "Days 21–26",
+   "Summit window",
+   "Summit day from Meade's Col to 7,756 m, with spare days for weather."
+  ],
+  [
+   "Days 27–30",
+   "Down and out",
+   "Clear the camps, walk out to Ghamsali and drive back to Joshimath."
+  ]
  ],
  "difficulty_h2": "How hard is Kamet?",
  "difficulty": [
@@ -76,13 +197,41 @@
   "You should arrive with an earlier 7,000 m summit or at least a solid 6,000 m record, and good glacier and fixed-rope skills. In Himachal, the natural steps are <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m), then <a href=\"/mountains-of-india/mulkila/\">Mulkila</a> (6,517 m) and <a href=\"/mountains-of-india/reo-purgyil/\">Reo Purgyil</a> (6,816 m). Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before you go higher."
  ],
  "skills": [
-  ["Experience", "Earlier high-altitude summits, ideally above 6,500 m, and time on big crevassed glaciers."],
-  ["Technique", "Crampons and ice axe on steep icy snow, fixed ropes, jumaring and crevasse rescue."],
-  ["Fitness", "Weeks of load carries between five camps and a summit day from about 7,100 m."],
-  ["Acclimatisation", "A slow walk-in from Ghamsali and staged rotations to the upper camps."],
-  ["Training", "A Basic and an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."]
+  [
+   "Experience",
+   "Earlier high-altitude summits, ideally above 6,500 m, and time on big crevassed glaciers."
+  ],
+  [
+   "Technique",
+   "Crampons and ice axe on steep icy snow, fixed ropes, jumaring and crevasse rescue."
+  ],
+  [
+   "Fitness",
+   "Weeks of load carries between five camps and a summit day from about 7,100 m."
+  ],
+  [
+   "Acclimatisation",
+   "A slow walk-in from Ghamsali and staged rotations to the upper camps."
+  ],
+  [
+   "Training",
+   "A Basic and an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."
+  ]
  ],
- "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "maybe", "May": "good", "Jun": "good", "Jul": "maybe", "Aug": "maybe", "Sep": "good", "Oct": "good", "Nov": "no", "Dec": "no"},
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "maybe",
+  "May": "good",
+  "Jun": "good",
+  "Jul": "maybe",
+  "Aug": "maybe",
+  "Sep": "good",
+  "Oct": "good",
+  "Nov": "no",
+  "Dec": "no"
+ },
  "season_h2": "Best time to climb Kamet",
  "season_text": [
   "<b>May to June and September to October.</b> Uttarakhand's peak page gives a wider window of April to October and calls the post-monsoon months the best. Recorded summits cluster in mid to late June: 12 June 2003 and 24 June 2006.",
@@ -121,28 +270,167 @@
  "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Kamet. If it is your goal, Himachal expeditions are a good way to build the record it needs: Deo Tibba first, then Mulkila or Reo Purgyil. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Kamet: questions people ask",
  "faqs": [
-  ["What is the height of Kamet?", "7,756 m (25,446 ft). Its prominence is 2,825 m."],
-  ["Where is Mount Kamet?", "In the Zanskar range of the Garhwal Himalaya, in Chamoli district, Uttarakhand, close to the Tibet border. The road-head is Ghamsali in the Niti valley, reached from Joshimath via Malari."],
-  ["Is Kamet the highest peak in Uttarakhand?", "No. It is the second-highest, after Nanda Devi (7,816 m), and the third-highest peak in India in our dataset."],
-  ["Who first climbed Kamet?", "Frank Smythe's British team on 21 June 1931: Smythe, Eric Shipton, R.L. Holdsworth and Lewa Sherpa first, then Raymond Greene and Bill Birnie two days later."],
-  ["Which was the first 7,000 m summit ever climbed: Trisul or Kamet?", "Trisul, in 1907. Kamet's record, set in 1931, is the first summit above 25,000 ft (7,620 m)."],
-  ["Who were the first Indians to climb Kamet?", "A Himalayan Mountaineering Institute team led by Nandu Jayal, which made the second ascent on 6 July 1955."],
-  ["Is Kamet open for climbing in 2026?", "Yes. It is on Uttarakhand's February 2026 list of 83 open peaks. Indian climbers apply on the UKMPS portal; foreign teams need IMF permission."],
-  ["How hard is Kamet to climb?", "The normal route is not a steep technical face, but it is a full 7,700 m expedition: five camps, a crevassed glacier, a rockfall gully and steep icy snow above Meade's Col."],
-  ["What is the IMF fee for Kamet?", "For foreign teams, peaks above 7,000 m carry an IMF base fee of US$1,000 for two climbers plus US$500 for liaison-officer equipment, and per-member charges apply (as of October 2026). Indian climbers pay no state fees in Uttarakhand in 2026."],
-  ["Which rivers rise from Kamet's glaciers?", "The East Kamet glacier feeds the Dhauliganga and the West Kamet glacier the Saraswati; both flow into the Alaknanda."]
+  [
+   "What is the height of Kamet?",
+   "7,756 m (25,446 ft). Its prominence is 2,825 m."
+  ],
+  [
+   "Where is Mount Kamet?",
+   "In the Zanskar range of the Garhwal Himalaya, in Chamoli district, Uttarakhand, close to the Tibet border. The road-head is Ghamsali in the Niti valley, reached from Joshimath via Malari."
+  ],
+  [
+   "Is Kamet the highest peak in Uttarakhand?",
+   "No. It is the second-highest, after Nanda Devi (7,816 m), and the third-highest peak in India in our dataset."
+  ],
+  [
+   "Who first climbed Kamet?",
+   "Frank Smythe's British team on 21 June 1931: Smythe, Eric Shipton, R.L. Holdsworth and Lewa Sherpa first, then Raymond Greene and Bill Birnie two days later."
+  ],
+  [
+   "Which was the first 7,000 m summit ever climbed: Trisul or Kamet?",
+   "Trisul, in 1907. Kamet's record, set in 1931, is the first summit above 25,000 ft (7,620 m)."
+  ],
+  [
+   "Who were the first Indians to climb Kamet?",
+   "A Himalayan Mountaineering Institute team led by Nandu Jayal, which made the second ascent on 6 July 1955."
+  ],
+  [
+   "Is Kamet open for climbing in 2026?",
+   "Yes. It is on Uttarakhand's February 2026 list of 83 open peaks. Indian climbers apply on the UKMPS portal; foreign teams need IMF permission."
+  ],
+  [
+   "How hard is Kamet to climb?",
+   "The normal route is not a steep technical face, but it is a full 7,700 m expedition: five camps, a crevassed glacier, a rockfall gully and steep icy snow above Meade's Col."
+  ],
+  [
+   "What is the IMF fee for Kamet?",
+   "For foreign teams, peaks above 7,000 m carry an IMF base fee of US$1,000 for two climbers plus US$500 for liaison-officer equipment, and per-member charges apply (as of October 2026). Indian climbers pay no state fees in Uttarakhand in 2026."
+  ],
+  [
+   "Which rivers rise from Kamet's glaciers?",
+   "The East Kamet glacier feeds the Dhauliganga and the West Kamet glacier the Saraswati; both flow into the Alaknanda."
+  ]
  ],
  "sources": [
-  ["Wikipedia — Kamet", "https://en.wikipedia.org/wiki/Kamet"],
-  ["Uttarakhand Forest Department — Kamet (mountaineering site)", "https://mountaineering.uk.gov.in/kamet"],
-  ["Uttarakhand UKMPS — apply for a mountaineering permit", "https://mountaineering.uk.gov.in/ApplyPermit"],
-  ["Himalayan Journal 60 — Kamet and Abi Gamin, the twin challenges", "https://himalayanclub.org/hj/60/11/kamet-and-abi-gamin-the-twin-challenges"],
-  ["Himalayan Journal 63 — Kamet 2006", "https://himalayanclub.org/hj/63/9/kamet-2006/"],
-  ["American Alpine Journal 2009 — Samurai Direct, Kamet south-east face", "https://publications.americanalpineclub.org/articles/12200901600"],
-  ["ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["The Statesman — online ILPs for Indo-China border areas in Uttarakhand", "https://www.thestatesman.com/india/now-online-ilps-for-tourist-places-on-indo-china-border-in-uttarakhand-1503398921.html"],
-  ["The Pioneer (Aug 2026) — ITBP flags off Kamet and Abi Gamin expedition", "https://dailypioneer.com/news/dg-itbp-flags-off-force-level-mountaineering-expedition-2026"]
+  [
+   "Wikipedia — Kamet",
+   "https://en.wikipedia.org/wiki/Kamet"
+  ],
+  [
+   "Uttarakhand Forest Department — Kamet (mountaineering site)",
+   "https://mountaineering.uk.gov.in/kamet"
+  ],
+  [
+   "Uttarakhand UKMPS — apply for a mountaineering permit",
+   "https://mountaineering.uk.gov.in/ApplyPermit"
+  ],
+  [
+   "Himalayan Journal 60 — Kamet and Abi Gamin, the twin challenges",
+   "https://himalayanclub.org/hj/60/11/kamet-and-abi-gamin-the-twin-challenges"
+  ],
+  [
+   "Himalayan Journal 63 — Kamet 2006",
+   "https://himalayanclub.org/hj/63/9/kamet-2006/"
+  ],
+  [
+   "American Alpine Journal 2009 — Samurai Direct, Kamet south-east face",
+   "https://publications.americanalpineclub.org/articles/12200901600"
+  ],
+  [
+   "ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "The Statesman — online ILPs for Indo-China border areas in Uttarakhand",
+   "https://www.thestatesman.com/india/now-online-ilps-for-tourist-places-on-indo-china-border-in-uttarakhand-1503398921.html"
+  ],
+  [
+   "The Pioneer (Aug 2026) — ITBP flags off Kamet and Abi Gamin expedition",
+   "https://dailypioneer.com/news/dg-itbp-flags-off-force-level-mountaineering-expedition-2026"
+  ]
  ],
- "sameAs": ["https://en.wikipedia.org/wiki/Kamet"]
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Kamet"
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Kamet in pictures",
+  "lead": "Kamet across the Garhwal ridges, its neighbours at sunset and climbers on its slopes — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kamet seen across forested ridges in Garhwal",
+    "cap": "Kamet across the Garhwal ridges",
+    "by": "Rohit Gosain",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_Closeup.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-768x576.webp",
+    "wp_id": 18773
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-768x526.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-1024x701.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-1536x1051.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1314,
+    "alt": "Climbers on the slopes of Kamet",
+    "cap": "Climbers on Kamet",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_GMHM.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-768x526.webp",
+    "wp_id": 18775
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-3-768x510.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-3-1024x680.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-3-1536x1020.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1275,
+    "alt": "Kamet and four neighbouring peaks at sunset",
+    "cap": "Kamet with its neighbours at sunset",
+    "by": "Sumodm",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_with_four_others.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-3-768x510.webp",
+    "wp_id": 18778
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1024x694.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1536x1042.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1302,
+    "alt": "A climber in bad weather high on Kamet",
+    "cap": "Bad weather high on the mountain",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_mauvais.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp",
+    "wp_id": 18782
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-5.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-5-768x510.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-5-1024x680.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-5-1536x1020.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-5.webp 1920w",
+    "w": 1920,
+    "h": 1275,
+    "alt": "Kamet and the Garhwal peaks in morning light",
+    "cap": "Kamet and the Garhwal peaks",
+    "by": "Sumodm",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_with_four_others_2.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-5-768x510.webp",
+    "wp_id": 18784
+   }
+  ]
+ }
 }

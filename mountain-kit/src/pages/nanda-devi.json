@@ -14,23 +14,56 @@
  "tag": "India's own giant. Closed since 1983.",
  "sub": "Nanda Devi is the highest mountain standing entirely inside India and its second-highest overall. The main summit and the sanctuary around it have been closed to climbers since 1983. Here are the facts, the twin summits, the history from 1936 to the 2021 flood, the dated status, and the peaks you can climb instead.",
  "chips": [
-  ["7,816 m", "summit (25,643 ft)"],
-  ["Status", "closed since 1983"],
-  ["1936", "first ascent, Tilman & Odell"],
-  ["Open twin", "Nanda Devi East 7,434 m"]
+  [
+   "7,816 m",
+   "summit (25,643 ft)"
+  ],
+  [
+   "Status",
+   "closed since 1983"
+  ],
+  [
+   "1936",
+   "first ascent, Tilman & Odell"
+  ],
+  [
+   "Open twin",
+   "Nanda Devi East 7,434 m"
+  ]
  ],
  "hero_alt": "Climbers on snow and a Himalayan ridge (generic stock footage, not Nanda Devi) with four statements: 7,816 m and India's second-highest, climbed in 1936, closed since 1983, climb in Himachal",
  "ladder_alt": "Animated chart of Nanda Devi beside Kamet, Nanda Devi East, Trisul I, Dunagiri and Changabang, drawn at their true heights",
  "q": "How high is Nanda Devi, and can you climb it?",
  "answer": "<b>Nanda Devi is 7,816 m (25,643 ft) high</b> and stands in Chamoli district, Uttarakhand. It is India's second-highest peak after Kangchenjunga and the highest wholly inside India. <b>You cannot climb it:</b> the main summit and its sanctuary have been closed since 1983. Only its lower twin, Nanda Devi East (7,434 m), is open. See more <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks in India</a>.",
  "facts": [
-  ["Height", "7,816 m / 25,643 ft (some sources give 7,817 m)"],
-  ["Rank", "2nd-highest in India after Kangchenjunga; highest wholly inside India; 23rd in the world"],
-  ["Location", "Chamoli district, Uttarakhand; Garhwal Himalaya (Nanda Devi group)"],
-  ["Prominence", "3,139 m"],
-  ["Status", "Closed to climbers since 1983; no reopening order found as of 20 Oct 2026"],
-  ["First ascent", "29 August 1936, Bill Tilman & Noel Odell"],
-  ["Twin summit", "Nanda Devi East (Sunanda Devi), 7,434 m: open"]
+  [
+   "Height",
+   "7,816 m / 25,643 ft (some sources give 7,817 m)"
+  ],
+  [
+   "Rank",
+   "2nd-highest in India after Kangchenjunga; highest wholly inside India; 23rd in the world"
+  ],
+  [
+   "Location",
+   "Chamoli district, Uttarakhand; Garhwal Himalaya (Nanda Devi group)"
+  ],
+  [
+   "Prominence",
+   "3,139 m"
+  ],
+  [
+   "Status",
+   "Closed to climbers since 1983; no reopening order found as of 20 Oct 2026"
+  ],
+  [
+   "First ascent",
+   "29 August 1936, Bill Tilman & Noel Odell"
+  ],
+  [
+   "Twin summit",
+   "Nanda Devi East (Sunanda Devi), 7,434 m: open"
+  ]
  ],
  "intro": [
   "<b>Status, checked 20 October 2026: closed.</b> The main summit and the inner Nanda Devi Sanctuary have been closed to climbers since 1983. On 17 July 2025 Uttarakhand tourism officials and the Indian Mountaineering Foundation (IMF) met in Dehradun on an IMF proposal to reopen the peak; it was described as under careful evaluation, and no reopening order has been found since. Blogs that say \"Nanda Devi has reopened\" are ahead of the facts.",
@@ -54,7 +87,17 @@
   }
  ],
  "table": {
-  "ids": ["nanda-devi", "kamet", "nanda-devi-east", "trisul-i", "dunagiri", "changabang", "reo-purgyil", "mount-yunam", "deo-tibba"],
+  "ids": [
+   "nanda-devi",
+   "kamet",
+   "nanda-devi-east",
+   "trisul-i",
+   "dunagiri",
+   "changabang",
+   "reo-purgyil",
+   "mount-yunam",
+   "deo-tibba"
+  ],
   "label": "Alternatives",
   "h2": "Nanda Devi's neighbours, and what you can climb instead",
   "text": [
@@ -86,24 +129,165 @@
  "quote_text": "Nanda Devi is closed, but the big-mountain experience is not. Tell us your dates, team size and experience, and we will suggest a Himachal peak that fits: Deo Tibba, Yunam or Reo Purgyil. We pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Nanda Devi: questions people ask",
  "faqs": [
-  ["What is the height of Nanda Devi?", "7,816 m (25,643 ft). Some sources, including Wikipedia, give 7,817 m."],
-  ["Is Nanda Devi the highest peak in India?", "It is the highest peak wholly inside India and India's second-highest after Kangchenjunga, which sits on the Sikkim–Nepal border. Until Sikkim joined India in 1975 it was India's highest."],
-  ["Can you climb Nanda Devi?", "No. The main peak and the inner sanctuary have been closed since 1983. A reopening proposal was discussed in July 2025, but no decision had been found as of October 2026. Nanda Devi East (7,434 m) is open through Uttarakhand's UKMPS portal and, for foreigners, the IMF."],
-  ["Who first climbed Nanda Devi?", "Bill Tilman and Noel Odell, on 29 August 1936, by the south (Coxcomb) ridge."],
-  ["Why is Nanda Devi closed?", "The sanctuary was closed in 1983 over environmental damage and the mountain's religious significance. Nanda Devi National Park is a UNESCO World Heritage Site (1988)."],
-  ["What is the Nanda Devi plutonium story?", "In October 1965 a CIA and Indian Intelligence Bureau team left a plutonium-powered sensor near Camp IV in a blizzard. It was never recovered, and the mission became public in 1978."],
-  ["What happened to Nanda Devi Unsoeld?", "She died on the 1976 Indo-American expedition after illness at high altitude. Her father, Willi Unsoeld, was the expedition's co-leader."],
-  ["Where is Nanda Devi?", "In Chamoli district, Uttarakhand, in the Garhwal Himalaya. Nanda Devi East is reached from Munsiyari and the Milam valley."]
+  [
+   "What is the height of Nanda Devi?",
+   "7,816 m (25,643 ft). Some sources, including Wikipedia, give 7,817 m."
+  ],
+  [
+   "Is Nanda Devi the highest peak in India?",
+   "It is the highest peak wholly inside India and India's second-highest after Kangchenjunga, which sits on the Sikkim–Nepal border. Until Sikkim joined India in 1975 it was India's highest."
+  ],
+  [
+   "Can you climb Nanda Devi?",
+   "No. The main peak and the inner sanctuary have been closed since 1983. A reopening proposal was discussed in July 2025, but no decision had been found as of October 2026. Nanda Devi East (7,434 m) is open through Uttarakhand's UKMPS portal and, for foreigners, the IMF."
+  ],
+  [
+   "Who first climbed Nanda Devi?",
+   "Bill Tilman and Noel Odell, on 29 August 1936, by the south (Coxcomb) ridge."
+  ],
+  [
+   "Why is Nanda Devi closed?",
+   "The sanctuary was closed in 1983 over environmental damage and the mountain's religious significance. Nanda Devi National Park is a UNESCO World Heritage Site (1988)."
+  ],
+  [
+   "What is the Nanda Devi plutonium story?",
+   "In October 1965 a CIA and Indian Intelligence Bureau team left a plutonium-powered sensor near Camp IV in a blizzard. It was never recovered, and the mission became public in 1978."
+  ],
+  [
+   "What happened to Nanda Devi Unsoeld?",
+   "She died on the 1976 Indo-American expedition after illness at high altitude. Her father, Willi Unsoeld, was the expedition's co-leader."
+  ],
+  [
+   "Where is Nanda Devi?",
+   "In Chamoli district, Uttarakhand, in the Garhwal Himalaya. Nanda Devi East is reached from Munsiyari and the Milam valley."
+  ]
  ],
  "sources": [
-  ["Wikipedia — Nanda Devi", "https://en.wikipedia.org/wiki/Nanda_Devi"],
-  ["American Alpine Journal (1937) — The Ascent of Nanda Devi", "https://publications.americanalpineclub.org/articles/12193700100"],
-  ["Wikipedia — Nanda Devi Plutonium Mission", "https://en.wikipedia.org/wiki/Nanda_Devi_Plutonium_Mission"],
-  ["Wikipedia — Sunanda Devi (Nanda Devi East)", "https://en.wikipedia.org/wiki/Sunanda_Devi"],
-  ["ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
-  ["Travel and Tour World (Jul 2025) — Uttarakhand in talks to reopen Nanda Devi", "https://www.travelandtourworld.com/news/article/uttarakhand-state-in-talks-to-reopen-nanda-devi-peak-for-climbers-after-40-year-environmental-and-security-lockdown/"],
-  ["ThePrint (Jan 2026) — Nanda Devi Raj Jat yatra postponed to 2027", "https://theprint.in/india/ukhand-nanda-devi-raj-jat-yatra-postponed-to-2027/2830531/"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"]
+  [
+   "Wikipedia — Nanda Devi",
+   "https://en.wikipedia.org/wiki/Nanda_Devi"
+  ],
+  [
+   "American Alpine Journal (1937) — The Ascent of Nanda Devi",
+   "https://publications.americanalpineclub.org/articles/12193700100"
+  ],
+  [
+   "Wikipedia — Nanda Devi Plutonium Mission",
+   "https://en.wikipedia.org/wiki/Nanda_Devi_Plutonium_Mission"
+  ],
+  [
+   "Wikipedia — Sunanda Devi (Nanda Devi East)",
+   "https://en.wikipedia.org/wiki/Sunanda_Devi"
+  ],
+  [
+   "ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "Travel and Tour World (Jul 2025) — Uttarakhand in talks to reopen Nanda Devi",
+   "https://www.travelandtourworld.com/news/article/uttarakhand-state-in-talks-to-reopen-nanda-devi-peak-for-climbers-after-40-year-environmental-and-security-lockdown/"
+  ],
+  [
+   "ThePrint (Jan 2026) — Nanda Devi Raj Jat yatra postponed to 2027",
+   "https://theprint.in/india/ukhand-nanda-devi-raj-jat-yatra-postponed-to-2027/2830531/"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ]
  ],
- "sameAs": ["https://en.wikipedia.org/wiki/Nanda_Devi"]
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Nanda_Devi"
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Nanda Devi in pictures",
+  "lead": "The twin-summited goddess of Garhwal at dawn, under a lenticular cloud and above the forests — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Nanda Devi rising above the forested ridges of Garhwal",
+    "cap": "Nanda Devi above the Garhwal ridges",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_in_bright_sunlight.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-768x432.webp",
+    "wp_id": 18756
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-fig-2-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-fig-2-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-fig-2-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "The twin summits of Nanda Devi",
+    "cap": "Nanda Devi in the evening light",
+    "by": "Michael Scalet from India",
+    "lic": "CC BY-SA 2.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-fig-2-768x512.webp",
+    "wp_id": 18759
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Nanda Devi peak and the Garhwal Himalaya",
+    "cap": "Nanda Devi and the Garhwal range",
+    "by": "Ashwani Kumar",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_peak.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-768x512.webp",
+    "wp_id": 18761
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Nanda Devi silhouetted before sunrise",
+    "cap": "Before sunrise",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_before_sunrise.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-768x432.webp",
+    "wp_id": 18763
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-5.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-5-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-5-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-5-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-5.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Lenticular cloud over Nanda Devi",
+    "cap": "A lenticular cloud over the peak",
+    "by": "Ashutosh Mohan",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_Peak.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-5-768x512.webp",
+    "wp_id": 18766
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-6.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-6-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-6-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-6-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-6.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Nanda Devi with clouds on its flanks",
+    "cap": "Clouds on the flanks",
+    "by": "No machine-readable author provided. Amir85~commonswiki assumed (based on copyright claims).",
+    "lic": "CC BY 2.5",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_2006.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-6-768x576.webp",
+    "wp_id": 18769
+   }
+  ]
+ }
 }

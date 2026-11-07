@@ -279,3 +279,5 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szm-slides.n5 .szm-slide{animation-name:szmSlide5}
 @keyframes szmSlide5{0%{opacity:0;transform:scale(1.04)}3%{opacity:1}18%{opacity:1}23%{opacity:0;transform:scale(1.16)}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.szm-slide{animation:none!important}.szm-slide:first-child{opacity:1}}
+.szm-media>p:empty,.szm-split-in>p:empty,.szm-media>br{display:none}
+.szm-ov .szm-facts{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:900px){.szm-ov .szm-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
