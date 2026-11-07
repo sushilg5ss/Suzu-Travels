@@ -10,7 +10,7 @@ collapses the page to ONE line (WordPress wpautop cannot break it). REFUSES to b
   * a partner/vendor name or network claim appears (see BANNED), or a link to a competitor operator (COMPETITORS)
   * a known wrong "fact" appears (FACT_TRAPS — see README "Facts to avoid")
   * a link points to a /pilgrimage-tours/ URL that is not in live.json (no links to unbuilt pages)
-  * the page has no HyperFrames video
+  * the page has neither a HyperFrames video nor a credited hero photograph (szp-hero-img)
   * (pages from src/pages/*.json) the SEO title is over 60 characters or the description over 155, or the focus keyword is missing
 --force skips the refusal (only for local previews — never publish a forced build).
 """
@@ -92,7 +92,7 @@ def check(slug, body, allowed=None):
             problems.append(f"link to a page that is not live: {m.group(1)}")
     if "file://" in body:
         problems.append("local media URLs (file://) — this build was made with PK_LOCAL_MEDIA=1 for preview; rebuild without it")
-    if "<video" not in body:
+    if "<video" not in body and "szp-hero-img" not in body:
         problems.append("no HyperFrames video on the page (render media first: make_media.sh, push, pin_media.py)")
     spec = KIT / "src" / "pages" / f"{slug}.json"
     base_meta = json.loads((KIT / "src" / "meta.json").read_text(encoding="utf-8")) if (KIT / "src" / "meta.json").exists() else {}
@@ -112,7 +112,7 @@ def check(slug, body, allowed=None):
 
 
 BASE = ("pilgrimage-tours",)  # full kit CSS; every other page gets only the CSS rules it uses
-KEEP_CLASSES = {"hl", "page-content", "page-header", "entry-title"}  # added by kit.js, or the theme's own wrappers
+KEEP_CLASSES = {"hl", "in", "on", "page-content", "page-header", "entry-title"}  # added by kit.js, or the theme's own wrappers
 
 
 def css_rules(css):

@@ -129,8 +129,10 @@ def pkg_link(key, cls="szp-link pkg"):
     return f'<a class="{cls}" href="{p}"><span class="n">{e(n)}</span><span class="c">{e(c)}</span></a>'
 
 
-def tile(v):
-    return f'<a class="szp-link" href="{v["path"]}"><span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
+def tile(v, thumb=True):
+    th = globals().get("THUMBS", {}).get(v["path"]) if thumb else None
+    img = f'<img class="th" src="{e(th[0])}" alt="{e(th[1])}" width="400" height="140" loading="lazy" decoding="async" />' if th else ""
+    return f'<a class="szp-link{" has-th" if th else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
 
 
 BASE = ("pilgrimage-tours", "12-jyotirlinga")
@@ -147,7 +149,7 @@ def guides_block(exclude=()):
     for kind in ("circuit", "yatra", "temple", "guide"):
         items = children(kind, exclude)
         if items:
-            out.append(f'<h3 class="szp-gh">{KIND_LABEL[kind]}</h3><div class="szp-links">' + "".join(tile(v) for _, v in items) + "</div>")
+            out.append(f'<h3 class="szp-gh">{KIND_LABEL[kind]}</h3><div class="szp-links">' + "".join(tile(v, False) for _, v in items) + "</div>")
     return "".join(out)
 
 
@@ -591,6 +593,77 @@ SRC_JL = _src_jl()
 PHOTO_CSS = ".szp-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.szp-ph{margin:0;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 18px rgba(42,23,18,.08)}.szp-ph img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin:0}.szp-ph figcaption{padding:9px 12px;font-size:14px;line-height:1.4;font-weight:600;color:var(--ink)}@media(max-width:700px){.szp-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.szp-ph figcaption{font-size:12.5px;padding:7px 9px}}"
 
 
+LIC_URL = {"CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/", "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+           "CC BY-SA 2.5": "https://creativecommons.org/licenses/by-sa/2.5/", "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+           "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/", "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+           "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/", "CC BY 2.5": "https://creativecommons.org/licenses/by/2.5/",
+           "CC0": "https://creativecommons.org/publicdomain/zero/1.0/"}
+
+
+def credit(it, short=False):
+    """Photo credit line for a gallery item (README §6b): author linked to the Commons file page + licence linked to its deed."""
+    by = e(it["by"]) if it.get("by") else "Wikimedia Commons"
+    lic = it.get("lic", "")
+    licl = f'<a href="{LIC_URL[lic]}" target="_blank" rel="noopener license">{e(lic)}</a>' if lic in LIC_URL else e(lic)
+    return f'Photo: <a href="{e(it["file"])}" target="_blank" rel="noopener">{by}</a>, {licl}'
+
+
+def ph_img(it, cls="", eager=False, sizes="100vw"):
+    ss = f' srcset="{e(it["srcset"])}" sizes="{sizes}"' if it.get("srcset") else ""
+    pos = f' style="object-position:{e(it["pos"])}"' if it.get("pos") else ""
+    load = ' fetchpriority="high"' if eager else ' loading="lazy"'
+    return (f'<img{(" class=" + chr(34) + cls + chr(34)) if cls else ""} src="{e(it["src"])}"{ss} alt="{e(it["alt"])}" width="{it["w"]}" height="{it["h"]}"'
+            f'{load} decoding="async"{pos} />')
+
+
+def gal_role(c, role):
+    return next((it for it in c.get("gallery", {}).get("items", []) if it.get("role") == role), None)
+
+
+def gallery_html(c):
+    """Bento grid of the 'g' items: first one big (2x2), then singles; the leftovers fill the last row (w = 2 cols, f = full row)."""
+    g = c["gallery"]
+    items = [it for it in g["items"] if it.get("role", "g") == "g"]
+    n, cls = len(items), []
+    rest = max(n - 5, 0)
+    tail = {0: [], 1: ["f"], 2: ["w", "w"], 3: ["", "", "w"], 4: ["", "", "", ""]}.get(rest, [""] * rest)
+    cls = {1: ["f"], 2: ["big", "big2"], 3: ["big", "w", "w"], 4: ["big", "", "", "w"]}.get(n) or (["big"] + [""] * 4 + tail)
+    figs = "".join(f'<figure{(" class=" + chr(34) + k + chr(34)) if k and k != "big" else ""}>{ph_img(it, sizes="(max-width:900px) 50vw, 25vw" if k != "big" else "(max-width:900px) 100vw, 50vw")}'
+                   f'<figcaption>{e(it["cap"])}<span class="szp-cr">{credit(it)}</span></figcaption></figure>' for it, k in zip(items, cls))
+    return (f'<span class="k">{e(g.get("kicker", "In pictures"))}</span><h2>{e(g["h2"])}</h2>' + (f'<p class="lead">{g["lead"]}</p>' if g.get("lead") else "")
+            + f'<div class="szp-gal">{figs}</div>')
+
+
+def photo_credits(c):
+    its = c.get("gallery", {}).get("items", [])
+    if not its:
+        return ""
+    seen, out = set(), []
+    for it in its:
+        if it["file"] in seen:
+            continue
+        seen.add(it["file"])
+        out.append(f'{e(it["cap"])} — {credit(it)}')
+    return '<h3 class="szp-gh">Photo credits</h3><p class="szp-credits">' + " · ".join(out) + "</p>"
+
+
+def _thumbs():
+    out = {}
+    for f in (KIT / "src" / "pages").glob("*.json"):
+        try:
+            c = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        h = gal_role(c, "hero") or gal_role(c, "fig")
+        p = LIVE.get(f.stem, {}).get("path")
+        if h and p:
+            out[p] = (h.get("thumb") or h["src"], h["alt"])
+    return out
+
+
+THUMBS = _thumbs()
+
+
 def content_page(slug):
     """src/pages/<slug>.json -> page. See README "Page file schema"."""
     c = json.loads((KIT / "src" / "pages" / f"{slug}.json").read_text(encoding="utf-8"))
@@ -606,7 +679,13 @@ def content_page(slug):
         ov += '<div class="szp-stats">' + "".join(f'<div class="szp-stat"><b>{e(a)}</b><span>{e(b)}</span></div>' for a, b in c["facts"][:4]) + "</div>"
     if c.get("intro"):
         ov += "".join(f"<p>{p}</p>" for p in c["intro"])
+    fig = gal_role(c, "fig")
+    if fig:
+        ov = (f'<div class="szp-ov"><div>{ov}</div><figure class="szp-fig"><div class="im">{ph_img(fig, sizes="(max-width:900px) 100vw, 40vw")}</div>'
+              f'<figcaption><b>{e(fig["cap"])}</b><span class="szp-cr">{credit(fig)}</span></figcaption></figure></div>')
     add("overview", "Overview", ov)
+    if c.get("gallery") and any(it.get("role", "g") == "g" for it in c["gallery"]["items"]):
+        add("photos", "Photos", gallery_html(c), "gal-sec alt")
     if c.get("story"):
         s = c["story"]
         st = f'<span class="k">The legend</span><h2>{e(s["h2"])}</h2><p class="lead">{s["lead"]}</p><ol class="szp-story">' + "".join(f"<li><b>{e(t)}</b><span>{x}</span></li>" for t, x in s["beats"]) + "</ol>"
@@ -614,7 +693,13 @@ def content_page(slug):
             st += f'<div class="szp-media">{lazy_video(m, "story", s["h2"])}<div>' + "".join(f'<p style="color:rgba(247,234,214,.85)">{p}</p>' for p in s.get("more", [])) + "</div></div>"
         else:
             st += "".join(f'<p style="color:rgba(247,234,214,.85)">{p}</p>' for p in s.get("more", []))
-        add("story", "The legend", st, "dark")
+        bg = gal_role(c, "bg")
+        if bg:
+            secs_n = len(secs)
+            add("story", "The legend", st, "dark has-bg")
+            secs[secs_n] = secs[secs_n].replace('<section class="szp-sec dark has-bg" id="story">', f'<section class="szp-sec dark has-bg" id="story" style="--ph-bg:url({e(bg["src"])})">', 1)
+        else:
+            add("story", "The legend", st, "dark")
     if c.get("darshan"):
         d = c["darshan"]
         rows = "".join(f"<tr><td><b>{e(a)}</b></td><td>{b}</td></tr>" for a, b in d["rows"])
@@ -638,7 +723,12 @@ def content_page(slug):
     if c.get("itinerary"):
         it = c["itinerary"]
         lis = "".join(f'<li><div class="d">Day {e(dd)}</div><div class="t">{e(t)}</div><p>{p}</p></li>' for dd, t, p in it["days"])
-        add("itinerary", "Itinerary", f'<span class="k">Sample itinerary</span><h2>{e(it["h2"])}</h2><ol class="szp-route">{lis}</ol><p class="szp-note">Every yatra is planned for your dates, group and pace — Price: Get Quote.</p>', "alt")
+        side = gal_role(c, "side")
+        route = f'<ol class="szp-route">{lis}</ol>'
+        if side:  # the day list and a photo side by side, so a short itinerary does not leave half the row empty
+            route = (f'<div class="szp-it">{route}<figure class="szp-side">{ph_img(side, sizes="(max-width:900px) 100vw, 40vw")}'
+                     f'<figcaption>{e(side["cap"])}<span class="szp-cr">{credit(side)}</span></figcaption></figure></div>')
+        add("itinerary", "Itinerary", f'<span class="k">Sample itinerary</span><h2>{e(it["h2"])}</h2>{route}<p class="szp-note">Every yatra is planned for your dates, group and pace — Price: Get Quote.</p>', "alt")
     if c.get("tips"):
         t = c["tips"]
         add("tips", "Rules &amp; tips", f'<span class="k">Before you go</span><h2>{e(t["h2"])}</h2><ol class="szp-steps">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in t["items"]) + "</ol>")
@@ -649,9 +739,11 @@ def content_page(slug):
                 + (f'<div class="szp-links" style="margin-top:18px">{pk}</div>' if pk else "") + "</section>")
     add("faq", "FAQ", f'<span class="k">FAQ</span><h2>{e(c.get("faq_h2", "Questions pilgrims ask"))}</h2>{faq(c["faqs"])}', "alt")
     links = "".join(tile(LIVE[s]) for s in c.get("links", []) if s in LIVE) + f'<a class="szp-link" href="{HUB}"><span class="n">All pilgrimage tours</span><span class="c">Jyotirlingas, Shakti Peeths, Char Dham &amp; more</span></a>'
-    secs.append(f'<section class="szp-sec" id="more"><h2>Keep exploring</h2><div class="szp-links">{links}</div>{guides_block(exclude=(slug,))}<h3 class="szp-gh">Sources</h3>{sources([(a, b) for a, b in c["sources"]])}'
-                f'<p class="szp-note">Legends are retold in our own words as traditions. Animations are original artwork by Suzu Travels.</p></section>')
-    hero = (f'<section class="szp-hero">{hero_video(m, "hero", c.get("hero_alt", c["title"]))}<div class="szp-hero-in"><span class="k">{e(c["kicker"])}</span>'
+    secs.append(f'<section class="szp-sec" id="more"><h2>Keep exploring</h2><div class="szp-links">{links}</div>{guides_block(exclude=(slug,))}<h3 class="szp-gh">Sources</h3>{sources([(a, b) for a, b in c["sources"]])}{photo_credits(c)}'
+                f'<p class="szp-note">Legends are retold in our own words as traditions. ' + ("Photographs are by the Wikimedia Commons contributors credited above, used under their licences; illustrated animations" if c.get("gallery") else "Animations") + ' are original artwork by Suzu Travels.</p></section>')
+    hph = gal_role(c, "hero")
+    hmedia = (ph_img(hph, "szp-hero-img", eager=True) + f'<span class="szp-hero-cr">{credit(hph)}</span>') if hph else hero_video(m, "hero", c.get("hero_alt", c["title"]))
+    hero = (f'<section class="szp-hero{" ph" if hph else ""}">{hmedia}<div class="szp-hero-in"><span class="k">{e(c["kicker"])}</span>'
             f'<p class="szp-tag"><span class="dv">{e(c["deva"])}</span>{e(c["tag"])}</p><p class="szp-sub">{c["sub"]}</p>'
             + ('<ul class="szp-chips">' + "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in c.get("chips", [])) + "</ul>" if c.get("chips") else "")
             + f'<div class="szp-btns"><a class="szp-btn gold" href="#{navi[1][0] if len(navi) > 1 else "overview"}">{e(c.get("cta1", "Read the guide"))}</a><a class="szp-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Plan on WhatsApp</a></div>{trust(c.get("verified"))}</div></section>')

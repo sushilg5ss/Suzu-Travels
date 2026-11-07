@@ -82,6 +82,20 @@ Commands: `SNAP_ONLY=1 bash make_media.sh temple-hero <slug> hero` (contact shee
 Story-strip captions use `text-wrap:balance` (since 9 Oct 2026) so two-line captions break evenly — no orphan last word.
 Budgets: hero < 2.5 MB desktop / < 1 MB mobile; explainers < 2 MB. Text stays in the right 55% of the frame; phones crop the hero to the left (temple art).
 
+### 6b. Real photographs — PHOTO LAYER (added 7 Nov 2026, Sushil's request: "real images, no generic visuals, no empty gaps")
+Every content page gets a `"gallery"` block in `src/pages/<slug>.json` (written by `tools/wp_gallery.py`, never by hand):
+`{"kicker","h2","lead","items":[{role, src, srcset, w, h, alt, cap, by, lic, file, thumb, wp_id}]}`. Roles:
+`hero` (replaces the hero video — Ken Burns zoom + ember motion), `fig` (sticky 4:5 photo beside the overview — no empty right side),
+`g` (bento gallery, section `#photos`, 3–8 photos), `bg` (darkened parallax background of the legend section),
+`side` (photo beside a short itinerary). Tiles in "Keep exploring" show the linked page's hero as a thumbnail.
+* Source: Wikimedia Commons only, licence **CC BY / CC BY-SA / CC0 / public domain** (no NC, no ND, no "fair use"). No close-up
+  portraits of identifiable people / children, no public figures, no photos of paintings or murals.
+* Upload to WordPress as `suzu-<slug>-<role>-<n>.jpg` (alt text; caption "<cap> — Photo: <author>, <licence> (Wikimedia Commons)";
+  description = JSON {file, by, lic, licurl, role, slug, cap}). Then `python3 tools/wp_gallery.py <slug> "<h2>" "<lead>"`.
+* The page credits each photo beside it and again under "Photo credits" (author → Commons file page, licence → deed).
+* Pages without `gallery` keep the HyperFrames hero video. The legend animation stays (illustrated tradition, not a photo).
+* build.py keeps JS-added classes (`in`, `on`) when pruning CSS — before 7 Nov the legend beats were invisible on every page.
+
 ## 7. Build, preview and publish
 1. `python3 gen_pages.py <slug> && python3 build.py <slug>` (never publish a `--force` build).
 2. Preview: `python3 tools/preview.py <slug> && node tools/shots.js /tmp/pk-prev/<slug>.html <slug>` — **Read the slices** (desktop + phone): `overflow:false`, `h1:1`, videos present.
