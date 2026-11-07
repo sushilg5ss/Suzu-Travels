@@ -88,6 +88,10 @@ CSS = """
 .szb-wx .dy .d{font-size:13px;font-weight:800;color:#fff}.szb-wx .dy .i{font-size:28px;margin:6px 0}.szb-wx .dy .h{font-size:17px;font-weight:800;color:#fff}.szb-wx .dy .lo{font-size:13px;color:rgba(234,244,251,.7)}.szb-wx .dy .x{font-size:11.5px;color:var(--gold2);margin-top:4px;min-height:14px}
 .szb .szb-wx p.note{font-size:12.5px;color:rgba(234,244,251,.78)!important;margin:14px 0 0}.szb .szb-wx p a{color:#f3d98f!important}
 @media(max-width:640px){.szb-wx .days{grid-template-columns:repeat(4,minmax(0,1fr))}.szb-wx .now .t{font-size:44px}}
+.szb-wxgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:18px 0 6px}
+.szb-wx.mini{margin:0;padding:16px}.szb-wx.mini .now{gap:12px;margin-bottom:10px}.szb-wx.mini .now .ic{font-size:36px}.szb-wx.mini .now .t{font-size:34px}.szb-wx.mini .now .l{font-size:13px}.szb-wx.mini .now .l b{font-size:15px}
+.szb-wx.mini .days{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.szb-wx.mini .dy{padding:8px 2px;border-radius:12px}.szb-wx.mini .dy .i{font-size:20px;margin:3px 0}.szb-wx.mini .dy .h{font-size:14px}.szb-wx.mini .dy .lo,.szb-wx.mini .dy .x{font-size:11px}
+.szb .szb-wxnote{font-size:12.5px;color:var(--mid)}
 .szb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
 .szb-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
 .szb-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px rgba(11,31,51,.35)}
@@ -211,7 +215,7 @@ var nm=b.getAttribute('data-name')||(T===HI&&p.hi?p.hi:p.name)||'';var alt=b.get
 var nw=b.querySelector('.now');nw.textContent='';var k=kind(p.now.sym),night=/night/.test(p.now.sym||'');nw.appendChild(el('span','ic',icon(k,night)));nw.appendChild(el('span','t',Math.round(p.now.t)+'°C'));var l=el('span','l');l.appendChild(el('b',null,T.now+' · '+T.k[k]));
 var ex=[nm];if(alt)ex.push(Number(alt).toLocaleString('en-IN')+' m');if(p.now.rh!=null)ex.push(T.rh+Math.round(p.now.rh)+'%');if(p.now.ws!=null)ex.push(T.ws+Math.round(p.now.ws*3.6)+' km/h');l.appendChild(d.createTextNode(ex.join(' · ')));nw.appendChild(l);
 var ds=b.querySelector('.days');ds.textContent='';p.days.forEach(function(x,i){var sn=(x.snow_cm>0)||x.snow===true;var kk=sn?'snow':kind(x.sym);var c=el('div','dy'+(sn?' sn':''));c.style.animationDelay=(i*0.07)+'s';var dt=new Date(x.d+'T00:00:00');c.appendChild(el('div','d',i===0?T.today:T.w[dt.getDay()]));c.appendChild(el('div','i',icon(kk,false)));c.appendChild(el('div','h',Math.round(x.hi)+'°'));c.appendChild(el('div','lo',Math.round(x.lo)+'°'));c.appendChild(el('div','x',x.snow_cm>0?x.snow_cm+T.snow:(sn?T.snowy:(x.pr>=1?Math.round(x.pr)+T.rain:''))));c.title=T.k[kk];ds.appendChild(c)});
-var u=b.querySelector('.upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString(T.loc,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}).catch(function(){var s=b.closest('section')||b;s.style.display='none'})})})();"""
+var u=b.querySelector('.upd')||d.querySelector('.szb-wxnote .upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString(T.loc,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}).catch(function(){var s=b.closest('section')||b;s.style.display='none'})})})();"""
 
 
 SNOW_LINKS = {"manali": "/snowfall-in-manali/", "solang": "/adventure/snow-activities-manali/", "sissu": "/adventure/atal-tunnel-sissu-snow-trip/",
@@ -252,8 +256,15 @@ def render(s):
         wx = s["wx"]
         note = ('Forecast data: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), refreshed through the day — last update <span class="upd">—</span>.' if LANG == "en" else
                 'पूर्वानुमान डेटा: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), दिन भर अपडेट होता है — आख़िरी अपडेट <span class="upd">—</span>।')
-        out.append(f'<section class="szb-sec" id="weather"><span class="k">{e(wx.get("kicker", T("Live forecast")))}</span><h2>{e(wx["h2"])}</h2><p>{wx["lead"]}</p>'
-                   f'<div class="szb-wx" data-id="{wx["id"]}"' + (f' data-src="{wx["src"]}"' if wx.get("src") else "") + (f' data-name="{e(wx["name"])}"' if wx.get("name") else "") + (f' data-alt="{wx["alt"]}"' if wx.get("alt") else "") + f'{" data-lang=\"hi\"" if LANG == "hi" else ""}><div class="now"><span class="l">{T("Loading the latest forecast…")}</span></div><div class="days"></div><p class="note">{note}</p></div></section>')
+        def box(w, mini=False, with_note=True):
+            return (f'<div class="szb-wx{" mini" if mini else ""}" data-id="{w["id"]}"' + (f' data-src="{w["src"]}"' if w.get("src") else "") + (f' data-name="{e(w["name"])}"' if w.get("name") else "")
+                    + (f' data-alt="{w["alt"]}"' if w.get("alt") else "") + (' data-lang="hi"' if LANG == "hi" else "")
+                    + f'><div class="now"><span class="l">{T("Loading the latest forecast…")}</span></div><div class="days"></div>' + (f'<p class="note">{note}</p>' if with_note else "") + '</div>')
+        if wx.get("places"):
+            body = '<div class="szb-wxgrid">' + "".join(box(dict(w, src=wx.get("src")), True, False) for w in wx["places"]) + f'</div><p class="szb-wxnote">{note}</p>'
+        else:
+            body = box(wx)
+        out.append(f'<section class="szb-sec" id="weather"><span class="k">{e(wx.get("kicker", T("Live forecast")))}</span><h2>{e(wx["h2"])}</h2><p>{wx["lead"]}</p>{body}</section>')
     snow_html = ""
     if s.get("snow"):
         sn = s["snow"]
