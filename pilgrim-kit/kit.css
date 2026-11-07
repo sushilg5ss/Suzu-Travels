@@ -261,3 +261,5 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 @media(prefers-reduced-motion:reduce){.szp-slide{animation:none!important}.szp-slide:first-child{opacity:1}}
 .szp-links:has(.has-th) .szp-link:not(.has-th):not(.pkg){padding-top:0;overflow:hidden}
 .szp-links:has(.has-th) .szp-link:not(.has-th):not(.pkg):before{content:"ॐ";display:grid;place-items:center;height:140px;margin:0 -16px 12px;font-size:46px;color:rgba(242,193,78,.55);background:radial-gradient(circle at 50% 60%,rgba(232,115,31,.35),transparent 60%),linear-gradient(135deg,var(--plum),var(--maroon))}
+.szp-shrines:has(.szp-shrine-ph) .szp-shrine:not(:has(.szp-shrine-ph)){padding-top:204px;background-image:radial-gradient(circle at 50% 95px,rgba(232,115,31,.35),transparent 90px),linear-gradient(135deg,var(--plum),var(--maroon));background-size:100% 190px;background-repeat:no-repeat}
+.szp-media>p:empty,.szp-map>p:empty,.szp-media>br,.szp-map>br{display:none}
