@@ -14,11 +14,26 @@
  "tag": "The Silver God at the head of the Milang Glacier.",
  "sub": "The highest peak in Lahaul, climbed from Darcha on the Manali–Leh highway by a crevassed glacier, a narrow icefall and a loose rock ridge. An advanced Himachal expedition for climbers who already have a 6,000er behind them.",
  "chips": [
-  ["6,517 m", "summit (21,381 ft)"],
-  ["About 3 weeks", "from Delhi (estimate)"],
-  ["Jun–Sep", "season"],
-  ["Grade", "technical"],
-  ["Price", "Get Quote"]
+  [
+   "6,517 m",
+   "summit (21,381 ft)"
+  ],
+  [
+   "About 3 weeks",
+   "from Delhi (estimate)"
+  ],
+  [
+   "Jun–Sep",
+   "season"
+  ],
+  [
+   "Grade",
+   "technical"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
  ],
  "hero_alt": "Climbers on high-desert scree, a roped snowfield, a glacier under seracs and a corniced ridge (stock footage, not Mulkila itself) with an altitude read-out rising from Darcha, 3,360 m, past base camp, Camp 1 and Camp 2 to the 6,517 m summit",
  "profile_alt": "Animated altitude profile of the Mulkila route: Darcha 3,360 m, base camp about 4,440 m, Camp 1 about 5,000 m, Camp 2 about 5,800 m and the 6,517 m summit",
@@ -33,18 +48,54 @@
  "q": "What is Mulkila, and how do you climb it?",
  "answer": "<b>Mulkila</b> (6,517 m / 21,381 ft), also called M4, is the highest peak in Lahaul, Himachal Pradesh, at the head of the Milang Glacier between the Chandra and Bhaga rivers. From the road-head at Darcha, teams walk about 25 km to base camp, then climb a crevassed glacier, an icefall and the loose south ridge. It is a technical climb, best from June to September. See all the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks of India</a>.",
  "facts": [
-  ["Height", "6,517 m / 21,381 ft (other sources: 6,507–6,518 m)"],
-  ["Other names", "M4, Mulkila IV; the name is translated as \"Silver God\""],
-  ["Location", "Lahaul, Lahaul & Spiti district, about 155 km north of Shimla"],
-  ["Range", "Great Himalaya (Lahaul)"],
-  ["Prominence", "1,586 m, an Ultra of the Himalaya"],
-  ["Glacier", "Milang Glacier, ringed by the \"M\" peaks"],
-  ["Start", "Darcha, 3,360 m, on the Manali–Leh highway"],
-  ["Duration", "About 3 weeks from Delhi (estimate)"],
-  ["Grade", "Technical: glacier, icefall, steep ice and loose rock"],
-  ["Best months", "Jun–Sep"],
-  ["First ascent", "7 Sep 1939, Krenek, Johnson & Kolb"],
-  ["Price", "Get Quote"]
+  [
+   "Height",
+   "6,517 m / 21,381 ft (other sources: 6,507–6,518 m)"
+  ],
+  [
+   "Other names",
+   "M4, Mulkila IV; the name is translated as \"Silver God\""
+  ],
+  [
+   "Location",
+   "Lahaul, Lahaul & Spiti district, about 155 km north of Shimla"
+  ],
+  [
+   "Range",
+   "Great Himalaya (Lahaul)"
+  ],
+  [
+   "Prominence",
+   "1,586 m, an Ultra of the Himalaya"
+  ],
+  [
+   "Glacier",
+   "Milang Glacier, ringed by the \"M\" peaks"
+  ],
+  [
+   "Start",
+   "Darcha, 3,360 m, on the Manali–Leh highway"
+  ],
+  [
+   "Duration",
+   "About 3 weeks from Delhi (estimate)"
+  ],
+  [
+   "Grade",
+   "Technical: glacier, icefall, steep ice and loose rock"
+  ],
+  [
+   "Best months",
+   "Jun–Sep"
+  ],
+  [
+   "First ascent",
+   "7 Sep 1939, Krenek, Johnson & Kolb"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
  ],
  "intro": [
   "Mulkila stands near the centre of a cirque of peaks that early surveyors simply numbered: M1, M2, M3 and so on around the head of the <b>Milang Glacier</b>. Mulkila is M4, and at 6,517 m it is the <b>highest peak in Lahaul</b>, the only summit over 6,500 m in that corner of Himachal. Its name is usually translated as <b>\"Silver God\"</b>. The waters it sheds run into the Chandra and the Bhaga, which join to become the Chenab.",
@@ -56,23 +107,79 @@
   "Above base camp the route keeps to the east edge of the glacier, past crevasses, to Camp 1. A narrow icefall with hidden crevasses, between about 5,300 m and 5,600 m, leads to a high cwm near the glacier's source, where the 1939 party placed its top camp. The summit is reached by the <b>south ridge</b> (loose rock and gendarmes) or, in early season or heavy snow, the south-west face. Camp heights differ from team to team, so the figures below are approximate."
  ],
  "route": [
-  {"name": "Darcha", "m": 3360, "note": "Road-head on the Manali–Leh highway"},
-  {"name": "Yotse camp", "m": 3450, "note": "First night of the walk-in, near Yotse village (about 3,450 m)"},
-  {"name": "Base camp", "m": 4440, "note": "Moraine on the north bank of the Milang Glacier (about 4,440 m; other teams 4,200–4,270 m)"},
-  {"name": "Camp 1", "m": 5000, "note": "East edge of the glacier, just under 5,000 m"},
-  {"name": "Camp 2 (high cwm)", "m": 5800, "note": "Above the icefall, near the glacier's source (about 5,800 m; 1979 team about 5,580 m)"},
-  {"name": "Mulkila summit", "m": 6517, "note": "By the south ridge; the 1939 party needed about nine hours from its high camp"}
+  {
+   "name": "Darcha",
+   "m": 3360,
+   "note": "Road-head on the Manali–Leh highway"
+  },
+  {
+   "name": "Yotse camp",
+   "m": 3450,
+   "note": "First night of the walk-in, near Yotse village (about 3,450 m)"
+  },
+  {
+   "name": "Base camp",
+   "m": 4440,
+   "note": "Moraine on the north bank of the Milang Glacier (about 4,440 m; other teams 4,200–4,270 m)"
+  },
+  {
+   "name": "Camp 1",
+   "m": 5000,
+   "note": "East edge of the glacier, just under 5,000 m"
+  },
+  {
+   "name": "Camp 2 (high cwm)",
+   "m": 5800,
+   "note": "Above the icefall, near the glacier's source (about 5,800 m; 1979 team about 5,580 m)"
+  },
+  {
+   "name": "Mulkila summit",
+   "m": 6517,
+   "note": "By the south ridge; the 1939 party needed about nine hours from its high camp"
+  }
  ],
  "itinerary_h2": "A typical plan (estimate, not a fixed schedule)",
  "itinerary": [
-  ["Days 1–2", "Delhi to Manali", "Travel to Manali and sort permits and gear."],
-  ["Day 3", "Manali to Darcha", "Drive through the Atal Tunnel and Keylong to the road-head at 3,360 m."],
-  ["Days 4–6", "Walk-in to base camp", "Up the Milang valley past Yotse, with a night near the village, to base camp on the glacier moraine."],
-  ["Days 7–9", "Base camp and Camp 1", "Rest, training on the glacier and load ferries to Camp 1 at about 5,000 m."],
-  ["Days 10–12", "Through the icefall", "Fix the icefall and move up to Camp 2 in the high cwm, about 5,800 m."],
-  ["Day 13", "Summit day", "By the south ridge to the 6,517 m summit, then back to Camp 2."],
-  ["Days 14–17", "Spare days", "Kept for weather, a second attempt and a careful descent."],
-  ["Days 18–21", "Back to Delhi", "Walk out to Darcha, drive to Manali and travel on."]
+  [
+   "Days 1–2",
+   "Delhi to Manali",
+   "Travel to Manali and sort permits and gear."
+  ],
+  [
+   "Day 3",
+   "Manali to Darcha",
+   "Drive through the Atal Tunnel and Keylong to the road-head at 3,360 m."
+  ],
+  [
+   "Days 4–6",
+   "Walk-in to base camp",
+   "Up the Milang valley past Yotse, with a night near the village, to base camp on the glacier moraine."
+  ],
+  [
+   "Days 7–9",
+   "Base camp and Camp 1",
+   "Rest, training on the glacier and load ferries to Camp 1 at about 5,000 m."
+  ],
+  [
+   "Days 10–12",
+   "Through the icefall",
+   "Fix the icefall and move up to Camp 2 in the high cwm, about 5,800 m."
+  ],
+  [
+   "Day 13",
+   "Summit day",
+   "By the south ridge to the 6,517 m summit, then back to Camp 2."
+  ],
+  [
+   "Days 14–17",
+   "Spare days",
+   "Kept for weather, a second attempt and a careful descent."
+  ],
+  [
+   "Days 18–21",
+   "Back to Delhi",
+   "Walk out to Darcha, drive to Manali and travel on."
+  ]
  ],
  "difficulty_h2": "How hard is Mulkila?",
  "difficulty": [
@@ -80,13 +187,41 @@
   "You should arrive with at least one 6,000 m summit and solid glacier skills. If you are not there yet, start with <a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> or <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a>, read our guide to <a href=\"/mountains-of-india/first-6000m-peak/\">choosing a first 6,000 m peak</a>, and take altitude seriously with our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a>."
  ],
  "skills": [
-  ["Experience", "At least one earlier 6,000 m summit and several high-altitude expeditions."],
-  ["Technique", "Crampons and ice axe on steep hard ice, crevasse rescue, fixed ropes and moving on loose rock."],
-  ["Fitness", "Long load carries between camps and a summit day of up to nine hours above 5,800 m."],
-  ["Acclimatisation", "A slow walk-in from Darcha and rest days at base camp before the icefall."],
-  ["Training", "A Basic and preferably an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."]
+  [
+   "Experience",
+   "At least one earlier 6,000 m summit and several high-altitude expeditions."
+  ],
+  [
+   "Technique",
+   "Crampons and ice axe on steep hard ice, crevasse rescue, fixed ropes and moving on loose rock."
+  ],
+  [
+   "Fitness",
+   "Long load carries between camps and a summit day of up to nine hours above 5,800 m."
+  ],
+  [
+   "Acclimatisation",
+   "A slow walk-in from Darcha and rest days at base camp before the icefall."
+  ],
+  [
+   "Training",
+   "A Basic and preferably an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."
+  ]
  ],
- "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "no", "May": "no", "Jun": "good", "Jul": "good", "Aug": "good", "Sep": "good", "Oct": "maybe", "Nov": "no", "Dec": "no"},
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "no",
+  "May": "no",
+  "Jun": "good",
+  "Jul": "good",
+  "Aug": "good",
+  "Sep": "good",
+  "Oct": "maybe",
+  "Nov": "no",
+  "Dec": "no"
+ },
  "season_h2": "Best time to climb Mulkila",
  "season_text": [
   "<b>June to September</b>, with early October possible. Lahaul lies in a rain shadow, so the monsoon rarely reaches the Milang valley in force, though stray monsoon weather does happen. The recorded ascents summited in late August, early September and October: 7 September 1939, 10 October 1977, 31 August 1979 and 22 August 1989.",
@@ -129,26 +264,114 @@
  ],
  "faq_h2": "Mulkila: questions people ask",
  "faqs": [
-  ["How high is Mulkila?", "6,517 m (21,381 ft). Some sources give between 6,507 m and 6,518 m."],
-  ["Where is Mulkila?", "In Lahaul, Himachal Pradesh, at the head of the Milang Glacier between the Chandra and Bhaga rivers. The road-head is Darcha, on the Manali–Leh highway."],
-  ["What is the highest peak in Lahaul?", "Mulkila, also called M4, at 6,517 m. It is the only peak above 6,500 m in that part of Lahaul."],
-  ["Who first climbed Mulkila?", "Ludwig Krenek, Robey Johnson and Fritz Kolb, on 7 September 1939, by the south ridge."],
-  ["How difficult is Mulkila?", "It is a technical climb: a crevassed glacier, a narrow icefall, steep ice and loose rock on the summit ridge. It is not a first 6,000er."],
-  ["What does Mulkila mean, and what is M4?", "The name is translated as \"Silver God\". M4 (Mulkila IV) is its survey label among the \"M\" peaks around the Milang Glacier."],
-  ["When is the best time to climb Mulkila?", "June to September, into early October. Lahaul is in the rain shadow, and the recorded ascents summited between late August and October."],
-  ["Can foreigners climb Mulkila?", "Yes, with IMF permission applied for at least 90 days ahead and a liaison officer. The base fee band for 6,501–7,000 m peaks is US$700 for a team of two (Oct 2026), plus other charges."],
-  ["Can Suzu Travels arrange a Mulkila expedition?", "Yes. We pair you with a registered Himachal outfitter and certified guides and help with the permits and transfers — one plan and one quote on WhatsApp at +91 70874 88961."]
+  [
+   "How high is Mulkila?",
+   "6,517 m (21,381 ft). Some sources give between 6,507 m and 6,518 m."
+  ],
+  [
+   "Where is Mulkila?",
+   "In Lahaul, Himachal Pradesh, at the head of the Milang Glacier between the Chandra and Bhaga rivers. The road-head is Darcha, on the Manali–Leh highway."
+  ],
+  [
+   "What is the highest peak in Lahaul?",
+   "Mulkila, also called M4, at 6,517 m. It is the only peak above 6,500 m in that part of Lahaul."
+  ],
+  [
+   "Who first climbed Mulkila?",
+   "Ludwig Krenek, Robey Johnson and Fritz Kolb, on 7 September 1939, by the south ridge."
+  ],
+  [
+   "How difficult is Mulkila?",
+   "It is a technical climb: a crevassed glacier, a narrow icefall, steep ice and loose rock on the summit ridge. It is not a first 6,000er."
+  ],
+  [
+   "What does Mulkila mean, and what is M4?",
+   "The name is translated as \"Silver God\". M4 (Mulkila IV) is its survey label among the \"M\" peaks around the Milang Glacier."
+  ],
+  [
+   "When is the best time to climb Mulkila?",
+   "June to September, into early October. Lahaul is in the rain shadow, and the recorded ascents summited between late August and October."
+  ],
+  [
+   "Can foreigners climb Mulkila?",
+   "Yes, with IMF permission applied for at least 90 days ahead and a liaison officer. The base fee band for 6,501–7,000 m peaks is US$700 for a team of two (Oct 2026), plus other charges."
+  ],
+  [
+   "Can Suzu Travels arrange a Mulkila expedition?",
+   "Yes. We pair you with a registered Himachal outfitter and certified guides and help with the permits and transfers — one plan and one quote on WhatsApp at +91 70874 88961."
+  ]
  ],
  "sources": [
-  ["Wikipedia — Mulkila", "https://en.wikipedia.org/wiki/Mulkila"],
-  ["SummitPost — Mulkila", "https://www.summitpost.org/mulkila/727508"],
-  ["Himalayan Journal 37 — Airmen in Lahul", "https://www.himalayanclub.org/hj/37/22/airmen-in-lahul/"],
-  ["Himalayan Journal 36 — Expeditions 1976–1979", "https://www.himalayanclub.org/hj/36/35/expeditions-1976-1979/"],
-  ["Explorersweb — Indians on Mulkila, Himachal Pradesh", "https://explorersweb.com/indians-mulkila-himachal-pradesh/"],
-  ["Wikipedia — Darcha", "https://en.wikipedia.org/wiki/Darcha"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"]
+  [
+   "Wikipedia — Mulkila",
+   "https://en.wikipedia.org/wiki/Mulkila"
+  ],
+  [
+   "SummitPost — Mulkila",
+   "https://www.summitpost.org/mulkila/727508"
+  ],
+  [
+   "Himalayan Journal 37 — Airmen in Lahul",
+   "https://www.himalayanclub.org/hj/37/22/airmen-in-lahul/"
+  ],
+  [
+   "Himalayan Journal 36 — Expeditions 1976–1979",
+   "https://www.himalayanclub.org/hj/36/35/expeditions-1976-1979/"
+  ],
+  [
+   "Explorersweb — Indians on Mulkila, Himachal Pradesh",
+   "https://explorersweb.com/indians-mulkila-himachal-pradesh/"
+  ],
+  [
+   "Wikipedia — Darcha",
+   "https://en.wikipedia.org/wiki/Darcha"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
  ],
- "sameAs": ["https://en.wikipedia.org/wiki/Mulkila"],
- "wa": "Hi Suzu Travels, I want to plan a guided climb of Mulkila. Dates: ___ , people: ___ , nationality: ___"
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Mulkila"
+ ],
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Mulkila. Dates: ___ , people: ___ , nationality: ___",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Mulkila in pictures",
+  "lead": "Lahaul's highest summit and its glacier, from the Darcha side — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-hero-1-768x460.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-hero-1-1024x614.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-hero-1-1536x921.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1151,
+    "alt": "Mulkila peak and its glacier in Lahaul",
+    "cap": "Mulkila and its glacier",
+    "by": "Bharatkaistha",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mulkila.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-hero-1-768x460.webp",
+    "wp_id": 18840
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Mulkila range seen from the Darcha side, Lahaul",
+    "cap": "Mulkila from the Darcha side",
+    "by": "Mr. Subhas Chattopadhyay",
+    "lic": "CC0",
+    "file": "https://commons.wikimedia.org/wiki/File:DSC09917-01jpg_Mulkila_from_Darcha.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-768x432.webp",
+    "wp_id": 18844
+   }
+  ]
+ }
 }

@@ -14,11 +14,26 @@
  "tag": "Two summits at the head of the Markha Valley.",
  "sub": "Kang Yatse 2 is the 6,000 m peak most Ladakh climbers aim for now that Stok Kangri is closed. Here is which summit is which, the route from Leh camp by camp, how hard it really is, the season, the permits and the climbing story since 1977.",
  "chips": [
-  ["6,250 m", "Kang Yatse II (20,505 ft)"],
-  ["6,400 m", "Kang Yatse I, the true summit"],
-  ["Grade PD", "non-technical, glaciated"],
-  ["Mid-Jun–Sep", "Ladakh rain-shadow"],
-  ["10–12 days", "from Leh (estimate)"]
+  [
+   "6,250 m",
+   "Kang Yatse II (20,505 ft)"
+  ],
+  [
+   "6,400 m",
+   "Kang Yatse I, the true summit"
+  ],
+  [
+   "Grade PD",
+   "non-technical, glaciated"
+  ],
+  [
+   "Mid-Jun–Sep",
+   "Ladakh rain-shadow"
+  ],
+  [
+   "10–12 days",
+   "from Leh (estimate)"
+  ]
  ],
  "hero_alt": "Scree on a high approach, a boulder moraine, a roped line of climbers on snow and a steep ice ridge (generic stock footage, not Kang Yatse itself) with an altitude read-out rising from Leh, 3,500 m, past Nimaling and base camp to the 6,250 m summit of Kang Yatse II and the 6,400 m summit of Kang Yatse I",
  "profile_alt": "Animated altitude profile of the Kang Yatse route: Leh about 3,500 m to acclimatise, the Markha Valley at about 3,800 m, the Nimaling pasture at 5,019 m, base camp at 5,070 m, the 6,250 m summit of Kang Yatse II on a snow slope and the 6,400 m summit of Kang Yatse I by the traverse",
@@ -33,16 +48,46 @@
  "q": "How high is Kang Yatse 2, and how hard is it to climb?",
  "answer": "<b>Kang Yatse 2</b> (Kang Yatse II) is 6,250 m (20,505 ft) high, the lower western summit of the Kang Yatse massif at the head of the Markha Valley in Ladakh's Hemis National Park. It is graded Alpine PD: no technical climbing, but a glaciated 6,000 m peak with a midnight start. The true summit, Kang Yatse I, is 6,400 m. Compare the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks in India</a>.",
  "facts": [
-  ["Kang Yatse II", "6,250 m / 20,505 ft (sources give 6,175–6,250 m)"],
-  ["Kang Yatse I", "6,400 m / 20,997 ft, the true (eastern) summit"],
-  ["Location", "Head of the Markha Valley, Hemis National Park, Leh district, Ladakh"],
-  ["Range", "Zanskar range"],
-  ["Prominence", "1,450 m (the massif)"],
-  ["Grade", "II: Alpine PD, non-technical · I: AD+/D- with fixed ropes"],
-  ["Base camp", "About 5,000–5,070 m, above the Nimaling pasture"],
-  ["Best months", "Mid-June to September"],
-  ["First ascent", "Kang Yatse I: 23 Aug 1977 (British party) · Kang Yatse II: not documented"],
-  ["Status 2026", "Open and climbed; no closure order found"]
+  [
+   "Kang Yatse II",
+   "6,250 m / 20,505 ft (sources give 6,175–6,250 m)"
+  ],
+  [
+   "Kang Yatse I",
+   "6,400 m / 20,997 ft, the true (eastern) summit"
+  ],
+  [
+   "Location",
+   "Head of the Markha Valley, Hemis National Park, Leh district, Ladakh"
+  ],
+  [
+   "Range",
+   "Zanskar range"
+  ],
+  [
+   "Prominence",
+   "1,450 m (the massif)"
+  ],
+  [
+   "Grade",
+   "II: Alpine PD, non-technical · I: AD+/D- with fixed ropes"
+  ],
+  [
+   "Base camp",
+   "About 5,000–5,070 m, above the Nimaling pasture"
+  ],
+  [
+   "Best months",
+   "Mid-June to September"
+  ],
+  [
+   "First ascent",
+   "Kang Yatse I: 23 Aug 1977 (British party) · Kang Yatse II: not documented"
+  ],
+  [
+   "Status 2026",
+   "Open and climbed; no closure order found"
+  ]
  ],
  "intro": [
   "<b>Status, checked 1 November 2026: open.</b> Kang Yatse was climbed through summer 2026; on 1 August 2026, for example, a team of 16 reached the top of Kang Yatse II from a 5,070 m base camp. We found no official closure. That is the big difference from Stok Kangri, which the Ladakh administration closed to all expeditions on 21 December 2023.",
@@ -55,23 +100,79 @@
   "The high pasture of <b>Nimaling</b> (5,019 m / 16,467 ft) is where teams take a rest day. Base camp is a little higher, on scree below the glacier at about 5,000–5,070 m. Some teams add a high camp about 300 m above it. Summit day starts between midnight and 2 am: scree, then a steep snow slope, 6–8 hours up. Kang Yatse I needs a Camp 1 at about 5,908 m. The approach heights are approximate."
  ],
  "route": [
-  {"name": "Leh", "m": 3500, "note": "Arrive by air or road; at least 2 nights to acclimatise (about 3,500 m)"},
-  {"name": "Markha Valley", "m": 3800, "note": "Chilling, Skiu, Markha and Hankar, about 3,200–4,000 m"},
-  {"name": "Nimaling", "m": 5019, "note": "High pasture; rest day to acclimatise (not the base camp)"},
-  {"name": "Base camp", "m": 5070, "note": "Scree below the glacier (about 5,000–5,070 m)"},
-  {"name": "Kang Yatse II summit", "m": 6250, "note": "Scree, then a steep snow slope; start midnight to 2 am, 6–8 h up"},
-  {"name": "Camp 1 (for Kang Yatse I)", "m": 5908, "note": "Where the north-east ridge meets the north ridge (2018 HMI report)"},
-  {"name": "Kang Yatse I summit", "m": 6400, "note": "Knife-edge traverse from II, or the north-east ridge and a steep snow face"}
+  {
+   "name": "Leh",
+   "m": 3500,
+   "note": "Arrive by air or road; at least 2 nights to acclimatise (about 3,500 m)"
+  },
+  {
+   "name": "Markha Valley",
+   "m": 3800,
+   "note": "Chilling, Skiu, Markha and Hankar, about 3,200–4,000 m"
+  },
+  {
+   "name": "Nimaling",
+   "m": 5019,
+   "note": "High pasture; rest day to acclimatise (not the base camp)"
+  },
+  {
+   "name": "Base camp",
+   "m": 5070,
+   "note": "Scree below the glacier (about 5,000–5,070 m)"
+  },
+  {
+   "name": "Kang Yatse II summit",
+   "m": 6250,
+   "note": "Scree, then a steep snow slope; start midnight to 2 am, 6–8 h up"
+  },
+  {
+   "name": "Camp 1 (for Kang Yatse I)",
+   "m": 5908,
+   "note": "Where the north-east ridge meets the north ridge (2018 HMI report)"
+  },
+  {
+   "name": "Kang Yatse I summit",
+   "m": 6400,
+   "note": "Knife-edge traverse from II, or the north-east ridge and a steep snow face"
+  }
  ],
  "itinerary_h2": "A typical Kang Yatse 2 plan (estimate, not a fixed schedule)",
  "itinerary": [
-  ["Days 1–2", "Leh", "Arrive and rest. Short walks only; the body needs time at 3,500 m."],
-  ["Day 3", "Into the Markha Valley", "Drive to Chilling and start walking up the valley via Skiu."],
-  ["Days 4–5", "Markha and Hankar", "Village to village up the Markha Valley, gaining height slowly."],
-  ["Day 6", "Nimaling", "Up to the high pasture at 5,019 m."],
-  ["Day 7", "Rest, then base camp", "An acclimatisation day at Nimaling, then the short move to base camp."],
-  ["Summit day", "Kang Yatse II", "Start between midnight and 2 am; 6–8 hours to the 6,250 m summit, then down to base camp."],
-  ["Last days", "Out over the Gongmaru La", "A spare day for weather, then out over the pass to Shang Sumdo and back to Leh: about 10–12 days in all."]
+  [
+   "Days 1–2",
+   "Leh",
+   "Arrive and rest. Short walks only; the body needs time at 3,500 m."
+  ],
+  [
+   "Day 3",
+   "Into the Markha Valley",
+   "Drive to Chilling and start walking up the valley via Skiu."
+  ],
+  [
+   "Days 4–5",
+   "Markha and Hankar",
+   "Village to village up the Markha Valley, gaining height slowly."
+  ],
+  [
+   "Day 6",
+   "Nimaling",
+   "Up to the high pasture at 5,019 m."
+  ],
+  [
+   "Day 7",
+   "Rest, then base camp",
+   "An acclimatisation day at Nimaling, then the short move to base camp."
+  ],
+  [
+   "Summit day",
+   "Kang Yatse II",
+   "Start between midnight and 2 am; 6–8 hours to the 6,250 m summit, then down to base camp."
+  ],
+  [
+   "Last days",
+   "Out over the Gongmaru La",
+   "A spare day for weather, then out over the pass to Shang Sumdo and back to Leh: about 10–12 days in all."
+  ]
  ],
  "difficulty_h2": "How hard is Kang Yatse 2?",
  "difficulty": [
@@ -79,13 +180,41 @@
   "Kang Yatse I is a different climb. It is reached by a knife-edge traverse from II or by the north-east ridge and a steep snow face, graded <b>AD+ to D-</b>, with fixed ropes on the last 500 m or so. Read <a href=\"/mountains-of-india/first-6000m-peak/\">how to climb your first 6,000 m peak</a>, our <a href=\"/mountains-of-india/trekking-peaks/\">trekking peaks guide</a> and the <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before you go."
  ],
  "skills": [
-  ["Experience", "Earlier high treks, ideally a 5,000 m summit such as Friendship Peak."],
-  ["Technique", "Walking in crampons, using an ice axe and moving roped on snow."],
-  ["Fitness", "Several days of trekking above 4,000 m, then a 6–8 hour climb and the descent."],
-  ["Acclimatisation", "Two nights in Leh, a slow walk up the Markha Valley and a rest day at Nimaling."],
-  ["For Kang Yatse I", "Steep snow and ice on fixed ropes, and a Camp 1 at about 5,908 m."]
+  [
+   "Experience",
+   "Earlier high treks, ideally a 5,000 m summit such as Friendship Peak."
+  ],
+  [
+   "Technique",
+   "Walking in crampons, using an ice axe and moving roped on snow."
+  ],
+  [
+   "Fitness",
+   "Several days of trekking above 4,000 m, then a 6–8 hour climb and the descent."
+  ],
+  [
+   "Acclimatisation",
+   "Two nights in Leh, a slow walk up the Markha Valley and a rest day at Nimaling."
+  ],
+  [
+   "For Kang Yatse I",
+   "Steep snow and ice on fixed ropes, and a Camp 1 at about 5,908 m."
+  ]
  ],
- "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "no", "May": "no", "Jun": "maybe", "Jul": "good", "Aug": "good", "Sep": "good", "Oct": "no", "Nov": "no", "Dec": "no"},
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "no",
+  "May": "no",
+  "Jun": "maybe",
+  "Jul": "good",
+  "Aug": "good",
+  "Sep": "good",
+  "Oct": "no",
+  "Nov": "no",
+  "Dec": "no"
+ },
  "season_h2": "Best time to climb Kang Yatse 2",
  "season_text": [
   "<b>Mid-June to the end of September.</b> Ladakh lies in the rain shadow of the Great Himalaya, so the monsoon that closes many Himachal and Uttarakhand peaks barely reaches it, and July to September is the most reliable window.",
@@ -121,23 +250,105 @@
  "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Kang Yatse. The nearest Himachal match is Yunam Peak (6,111 m) near Baralacha La, and Friendship Peak (5,289 m) above Manali is a good first snow summit before it. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Kang Yatse: questions people ask",
  "faqs": [
-  ["How high is Kang Yatse 2?", "6,250 m (20,505 ft). Sources give between 6,175 m and 6,250 m. The main summit, Kang Yatse I, is 6,400 m (20,997 ft)."],
-  ["What is the difference between Kang Yatse 1 and Kang Yatse 2?", "Kang Yatse II is the lower western summit, a non-technical snow climb graded PD. Kang Yatse I is the true eastern summit, reached by a knife-edge traverse from II or a steep snow face graded AD+ to D-, with fixed ropes."],
-  ["Is Kang Yatse 2 good for beginners?", "It needs no technical climbing, but it is a glaciated 6,000 m peak with a long night-time summit push. It suits fit trekkers with altitude experience and basic crampon and rope skills, ideally after a 5,000 m summit."],
-  ["Is Kang Yatse a good alternative to Stok Kangri?", "Yes. Stok Kangri has been closed since 2020, and Kang Yatse II is the Ladakh 6,000er most climbers now choose. In Himachal, Yunam Peak (6,111 m) is the closest match."],
-  ["What is the best time to climb Kang Yatse 2?", "Mid-June to the end of September. Ladakh is in the rain shadow, so July to September is the most reliable; June can still have snow at base camp."],
-  ["How many days does Kang Yatse 2 take?", "About 10 to 12 days from Leh, including two nights in Leh to acclimatise, the Markha Valley walk-in, a rest day at Nimaling and a spare day for weather. This is an estimate; plans vary."],
-  ["Where is Kang Yatse?", "At the head of the Markha Valley in Hemis National Park, Leh district, Ladakh, in the Zanskar range. Base camp is above the Nimaling pasture."],
-  ["Who first climbed Kang Yatse?", "Kang Yatse I was probably first climbed by a British party, Simon Fraser, Mark Dravers and Mike Ritchie, on 23 August 1977. The first ascent of Kang Yatse II is not documented."],
-  ["Do I need a permit to climb Kang Yatse?", "Yes. Everyone pays Hemis National Park entry and Ladakh fees; Indians pay the Ladakh environment fee online. Foreign climbers need IMF permission and should confirm Protected Area Permit rules with the District Leh office."]
+  [
+   "How high is Kang Yatse 2?",
+   "6,250 m (20,505 ft). Sources give between 6,175 m and 6,250 m. The main summit, Kang Yatse I, is 6,400 m (20,997 ft)."
+  ],
+  [
+   "What is the difference between Kang Yatse 1 and Kang Yatse 2?",
+   "Kang Yatse II is the lower western summit, a non-technical snow climb graded PD. Kang Yatse I is the true eastern summit, reached by a knife-edge traverse from II or a steep snow face graded AD+ to D-, with fixed ropes."
+  ],
+  [
+   "Is Kang Yatse 2 good for beginners?",
+   "It needs no technical climbing, but it is a glaciated 6,000 m peak with a long night-time summit push. It suits fit trekkers with altitude experience and basic crampon and rope skills, ideally after a 5,000 m summit."
+  ],
+  [
+   "Is Kang Yatse a good alternative to Stok Kangri?",
+   "Yes. Stok Kangri has been closed since 2020, and Kang Yatse II is the Ladakh 6,000er most climbers now choose. In Himachal, Yunam Peak (6,111 m) is the closest match."
+  ],
+  [
+   "What is the best time to climb Kang Yatse 2?",
+   "Mid-June to the end of September. Ladakh is in the rain shadow, so July to September is the most reliable; June can still have snow at base camp."
+  ],
+  [
+   "How many days does Kang Yatse 2 take?",
+   "About 10 to 12 days from Leh, including two nights in Leh to acclimatise, the Markha Valley walk-in, a rest day at Nimaling and a spare day for weather. This is an estimate; plans vary."
+  ],
+  [
+   "Where is Kang Yatse?",
+   "At the head of the Markha Valley in Hemis National Park, Leh district, Ladakh, in the Zanskar range. Base camp is above the Nimaling pasture."
+  ],
+  [
+   "Who first climbed Kang Yatse?",
+   "Kang Yatse I was probably first climbed by a British party, Simon Fraser, Mark Dravers and Mike Ritchie, on 23 August 1977. The first ascent of Kang Yatse II is not documented."
+  ],
+  [
+   "Do I need a permit to climb Kang Yatse?",
+   "Yes. Everyone pays Hemis National Park entry and Ladakh fees; Indians pay the Ladakh environment fee online. Foreign climbers need IMF permission and should confirm Protected Area Permit rules with the District Leh office."
+  ]
  ],
  "sources": [
-  ["Wikipedia — Kang Yatze", "https://en.wikipedia.org/wiki/Kang_Yatze"],
-  ["American Alpine Journal (2023) — Kang Yatze group, historical ascents", "https://publications.americanalpineclub.org/articles/13201216466"],
-  ["Dream Wanderlust — Team HMI on Kang Yatse: alpine-style ascent and first traverse (2018)", "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse"],
-  ["TelQuel (Aug 2026) — Kang Yatse II summit report", "https://telquel.ma/instant-t/2026/08/04/alpinisme-a-15-ans-le-marocain-youssef-tazi-atteint-le-sommet-du-kang-yatse-ii_2001991/"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["The Statesman — Ladakh administration bans expeditions to Stok Kangri", "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"]
+  [
+   "Wikipedia — Kang Yatze",
+   "https://en.wikipedia.org/wiki/Kang_Yatze"
+  ],
+  [
+   "American Alpine Journal (2023) — Kang Yatze group, historical ascents",
+   "https://publications.americanalpineclub.org/articles/13201216466"
+  ],
+  [
+   "Dream Wanderlust — Team HMI on Kang Yatse: alpine-style ascent and first traverse (2018)",
+   "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse"
+  ],
+  [
+   "TelQuel (Aug 2026) — Kang Yatse II summit report",
+   "https://telquel.ma/instant-t/2026/08/04/alpinisme-a-15-ans-le-marocain-youssef-tazi-atteint-le-sommet-du-kang-yatse-ii_2001991/"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "The Statesman — Ladakh administration bans expeditions to Stok Kangri",
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"
+  ]
  ],
- "sameAs": ["https://en.wikipedia.org/wiki/Kang_Yatze"]
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Kang_Yatze"
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Kang Yatse in pictures",
+  "lead": "Kang Yatse above the Markha valley — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kang Yatse reflected in a lake near the Markha valley, Ladakh",
+    "cap": "Kang Yatse above the Markha valley",
+    "by": "SlartibErtfass der bertige",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:A_lake_near_Kang_Yatze,_Markha_Valley_trek,_Ladakh,_India_(2006).jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp",
+    "wp_id": 18833
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-768x409.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-1024x545.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-1536x818.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2.webp 1920w",
+    "w": 1920,
+    "h": 1022,
+    "alt": "Kang Yatse seen from the Kongmaru La side",
+    "cap": "From the Kongmaru La side",
+    "by": "Chris Hunkeler from Carlsbad, California, USA",
+    "lic": "CC BY-SA 2.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kongmaru_La_Pass_View_(49043449806).jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-768x409.webp",
+    "wp_id": 18835
+   }
+  ]
+ }
 }
