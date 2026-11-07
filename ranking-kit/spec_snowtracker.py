@@ -11,6 +11,14 @@ PTS = [
     ("sissu", "Sissu · Atal Tunnel", 3130, "Himachal", "/adventure/atal-tunnel-sissu-snow-trip/"),
 ]
 
+GUIDES = [("Shimla snowfall", "/shimla-snowfall/"), ("Kufri snowfall", "/kufri-snowfall/"), ("Snowfall in Manali", "/snowfall-in-manali/"),
+          ("Dharamshala snowfall", "/dharamshala-snowfall/"), ("Dalhousie snowfall", "/dalhousie-snowfall/"), ("Kasauli snowfall", "/kasauli-snowfall/"),
+          ("Narkanda snow & skiing", "/adventure/snow-and-skiing-in-narkanda/"), ("Sissu & Atal Tunnel", "/adventure/atal-tunnel-sissu-snow-trip/"),
+          ("Himachal snowfall 2026-27", "/himachal-snowfall-winter-2026-27/"), ("Gulmarg snowfall", "/gulmarg-snowfall/"), ("Sonmarg snowfall", "/sonmarg-snowfall/"),
+          ("Pahalgam snowfall", "/pahalgam-snowfall/"), ("Kashmir snowfall", "/kashmir-snowfall/"), ("Auli snowfall", "/auli-snowfall/"),
+          ("Mussoorie snowfall", "/mussoorie-snowfall/"), ("Winter Spiti", "/winter-spiti-valley-guide-2026-27/")]
+GUIDE_HTML = '<div class="szb-chiplinks">' + "".join(f'<a href="{h}">❄ {t}</a>' for t, h in GUIDES) + '</div>'
+
 SPEC = dict(
     slug="snow-tracker",
     title="Snow Tracker 2026-27: Where Is It Snowing in India This Week?",
@@ -67,6 +75,9 @@ SPEC = dict(
         ("No snow on your dates?", "Snow Kingdom, Kufri", "An indoor snow park with real snow all year — see <a href=\"/adventure/snow-kingdom-kufri/\">Snow Kingdom Kufri</a>."),
     ]),
     sections2=[
+        dict(id="guides", kicker="Snow guides", h2="Snowfall guides for every snow point", ps=[
+            "Month-by-month snow patterns, last winter's dates, the best snow spots and road tips for each place.",
+        ], html=GUIDE_HTML),
         dict(id="how", kicker="How it works", h2="How this snow tracker works", ps=[
             "<b>Data:</b> the board reads the 7-day Locationforecast from MET Norway (the Norwegian Meteorological Institute, shared under CC BY 4.0) for each place's exact coordinates and height, refreshed through the day.",
             "<b>Snow amounts:</b> when the forecast says precipitation will fall as snow, we show it as centimetres using the simple rule 1 mm of water ≈ 1 cm of snow. Real snow depth varies with temperature and wind, so read it as a guide.",

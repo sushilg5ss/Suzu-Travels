@@ -74,6 +74,7 @@ CSS = """
 .szb-sp.yes{border-color:rgba(243,217,143,.6);box-shadow:0 0 0 1px rgba(243,217,143,.25) inset}
 .szb .szb-snow .note,.szb .szb-snow .rows>p{font-size:12.5px;color:rgba(234,244,251,.78)!important;margin:12px 0 0}
 .szb-snow .note a{color:var(--gold2)}
+.szb-chiplinks{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.szb .szb-chiplinks a{display:inline-block;padding:9px 14px;border-radius:99px;background:var(--ice);border:1px solid var(--line);color:var(--navy)!important;font-weight:700;font-size:14.5px;text-decoration:none!important;transition:transform .15s,background .15s}.szb .szb-chiplinks a:hover{background:#fff;transform:translateY(-2px)}
 .szb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
 .szb-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
 .szb-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px rgba(11,31,51,.35)}
