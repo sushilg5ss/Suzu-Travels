@@ -107,21 +107,24 @@ CSS = """
 """
 
 JS = """(function(){var d=document;function el(t,c,x){var n=d.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
-var W=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 var boxes=d.querySelectorAll('.szb-snow[data-ids]');if(!boxes.length)return;
+var EN={w:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],loc:'en-IN',now:'°C now',no:'No snow',n7:'next 7 days',nx:'next: ',sum:'Snow in the forecast this week: ',from:', from ',none:'No snow in the 7-day forecast at any of these places yet — check back, it updates through the day.',wk:' cm this week'};
+var HI={w:['रवि','सोम','मंगल','बुध','गुरु','शुक्र','शनि'],loc:'hi-IN',now:'°C अभी',no:'बर्फ नहीं',n7:'अगले 7 दिन',nx:'अगली: ',sum:'इस हफ़्ते के पूर्वानुमान में बर्फ: ',from:', ',none:'अभी इनमें से किसी जगह के 7 दिन के पूर्वानुमान में बर्फ नहीं है — दिन में फिर देखें, यह अपडेट होता रहता है।',wk:' cm इस हफ़्ते'};
+function fd(x,T){return new Date(x+'T00:00:00').toLocaleDateString(T.loc,{weekday:'short',day:'numeric',month:'short'})}
 fetch('/suzu-snow.php').then(function(r){return r.json()}).then(function(j){
-Array.prototype.forEach.call(boxes,function(b){var ids=b.getAttribute('data-ids').split(','),rows=b.querySelector('.rows');if(!rows)return;rows.textContent='';
+Array.prototype.forEach.call(boxes,function(b){var T=b.getAttribute('data-lang')==='hi'?HI:EN;function nmOf(p){return T===HI&&p.hi?p.hi:p.name}
+var ids=b.getAttribute('data-ids').split(','),rows=b.querySelector('.rows');if(!rows)return;rows.textContent='';
 var max=1;j.places.forEach(function(p){p.days.forEach(function(x){if(x.snow_cm>max)max=x.snow_cm})});
 var L={};(b.getAttribute('data-links')||'').split(',').forEach(function(x){var k=x.split('=');if(k[1])L[k[0]]=k[1]});
 var P=[];ids.forEach(function(id){j.places.forEach(function(q){if(q.id===id)P.push(q)})});
 if(b.getAttribute('data-sort')==='snow')P.sort(function(a,c){return c.week_cm-a.week_cm||c.alt-a.alt});
-var sm=b.querySelector('.sum');if(sm){var yes=P.filter(function(p){return p.week_cm>0});sm.textContent=yes.length?'Snow in the forecast this week: '+yes.map(function(p){return p.name+' ('+p.week_cm+' cm'+(p.next?', from '+new Date(p.next.d+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'}):'')+')'}).join(' · '):'No snow in the 7-day forecast at any of these places yet — check back, it updates through the day.'}
+var sm=b.querySelector('.sum');if(sm){var yes=P.filter(function(p){return p.week_cm>0});sm.textContent=yes.length?T.sum+yes.map(function(p){return nmOf(p)+' ('+p.week_cm+' cm'+(p.next?T.from+fd(p.next.d,T):'')+')'}).join(' · '):T.none}
 P.forEach(function(p){
-var r=el('div','szb-sp'+(p.week_cm>0?' yes':''));var nm=el('div','nm');if(L[p.id]){var a=el('a',null,p.name);a.href=L[p.id];nm.appendChild(a)}else nm.appendChild(d.createTextNode(p.name));nm.appendChild(el('small',null,p.alt.toLocaleString('en-IN')+' m · '+(p.now&&p.now.t!=null?Math.round(p.now.t)+'°C now':'')));r.appendChild(nm);
-var bars=el('div','bars');p.days.forEach(function(x){var bar=el('div','bar');var i=el('i');i.style.height='2px';bar.appendChild(i);var dt=new Date(x.d+'T00:00:00');bar.appendChild(el('span',null,W[dt.getDay()]));bar.title=x.d+': '+x.snow_cm+' cm snow, '+x.lo+' to '+x.hi+'°C';bars.appendChild(bar);setTimeout(function(){i.style.height=Math.max(2,Math.round(100*x.snow_cm/max))+'%'},120)});r.appendChild(bars);
-var wk=el('div','wk',p.week_cm>0?p.week_cm+' cm':'No snow');wk.appendChild(el('small',null,p.next?'next: '+new Date(p.next.d+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'}):'next 7 days'));r.appendChild(wk);rows.appendChild(r)});
-Array.prototype.forEach.call(d.querySelectorAll('[data-sid]'),function(c){j.places.forEach(function(p){if(p.id===c.getAttribute('data-sid')&&p.week_cm>0){c.classList.add('on');var t=c.querySelector('.s');if(t)t.textContent='❄ '+p.week_cm+' cm this week'}})});
-var u=b.querySelector('.upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString('en-IN',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})});
+var r=el('div','szb-sp'+(p.week_cm>0?' yes':''));var nm=el('div','nm');if(L[p.id]){var a=el('a',null,nmOf(p));a.href=L[p.id];nm.appendChild(a)}else nm.appendChild(d.createTextNode(nmOf(p)));nm.appendChild(el('small',null,p.alt.toLocaleString('en-IN')+' m · '+(p.now&&p.now.t!=null?Math.round(p.now.t)+T.now:'')));r.appendChild(nm);
+var bars=el('div','bars');p.days.forEach(function(x){var bar=el('div','bar');var i=el('i');i.style.height='2px';bar.appendChild(i);var dt=new Date(x.d+'T00:00:00');bar.appendChild(el('span',null,T.w[dt.getDay()]));bar.title=x.d+': '+x.snow_cm+' cm, '+x.lo+'…'+x.hi+'°C';bars.appendChild(bar);setTimeout(function(){i.style.height=Math.max(2,Math.round(100*x.snow_cm/max))+'%'},120)});r.appendChild(bars);
+var wk=el('div','wk',p.week_cm>0?p.week_cm+' cm':T.no);wk.appendChild(el('small',null,p.next?T.nx+fd(p.next.d,T):T.n7));r.appendChild(wk);rows.appendChild(r)});
+Array.prototype.forEach.call(d.querySelectorAll('[data-sid]'),function(c){j.places.forEach(function(p){if(p.id===c.getAttribute('data-sid')&&p.week_cm>0){c.classList.add('on');var t=c.querySelector('.s');if(t)t.textContent='❄ '+p.week_cm+T.wk}})});
+var u=b.querySelector('.upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString(T.loc,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})});
 }).catch(function(){Array.prototype.forEach.call(boxes,function(b){var s=b.closest('section')||b;s.style.display='none'})})})();"""
 
 
@@ -129,10 +132,21 @@ def e(s):
     return html.escape(str(s), quote=True)
 
 
+HI = {"Get a free quote": "मुफ़्त कोटेशन लें", "Updated": "अपडेट", "certificates": "प्रमाणपत्र", "Live forecast": "लाइव पूर्वानुमान",
+      "Snow in the next 7 days": "अगले 7 दिन में बर्फ", "Checking the forecast…": "पूर्वानुमान देख रहे हैं…", "Loading the latest forecast…": "ताज़ा पूर्वानुमान लोड हो रहा है…",
+      "In pictures": "तस्वीरों में", "Where to go": "कहाँ जाएँ", "See the plan →": "प्लान देखें →", "Plan it with Suzu": "Suzu के साथ प्लान करें", "WhatsApp us": "WhatsApp करें",
+      "Call +91 70874 88961": "कॉल करें +91 70874 88961", "FAQ": "सवाल-जवाब", "Questions travellers ask": "यात्रियों के सवाल", "Sources": "स्रोत", "Photo credits": "फ़ोटो क्रेडिट", "Photo:": "फ़ोटो:"}
+LANG = "en"
+
+
+def T(x):
+    return HI.get(x, x) if LANG == "hi" else x
+
+
 def credit(it):
     lic = it.get("lic", "")
     licl = f'<a href="{LIC_URL[lic]}" target="_blank" rel="noopener license">{e(lic)}</a>' if lic in LIC_URL else e(lic)
-    return f'Photo: <a href="{e(it["file"])}" target="_blank" rel="noopener">{e(it["by"] or "Wikimedia Commons")}</a>, {licl}'
+    return f'{T("Photo:")} <a href="{e(it["file"])}" target="_blank" rel="noopener">{e(it["by"] or "Wikimedia Commons")}</a>, {licl}'
 
 
 def img(it, eager=False, sizes="100vw"):
@@ -188,17 +202,20 @@ def ladder(points, lo=1600, hi=3300):
 
 
 def render(s):
+    global LANG
+    LANG = s.get("lang", "en")
+    reg = REG if LANG == "en" else "HP Tourism में पंजीकृत ट्रैवल एजेंट · पंजीकरण सं. DTO-MND-11-243/2022"
     P = s["photos"]
     hero, fig = role(P, "hero"), role(P, "fig")
     gal = [x for x in P if x["role"] == "g"]
     wa = WA + urllib.parse.quote(s["wa"])
-    out = [f"<style>{min_css(CSS)}</style><div class=\"szb\">"]
+    out = [f"<style>{min_css(CSS)}</style><div class=\"szb\"" + (' lang="hi"' if LANG == "hi" else "") + ">"]
     chips = "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in s.get("chips", []))
     out.append(f'<section class="szb-hero">{img(hero, True)}{"<div class=szb-flakes></div>" if s.get("flakes") else ""}<div class="szb-hero-in"><span class="k">{e(s["kicker"])}</span>'
                f'<p class="szb-tag">{e(s["tag"])}</p><p class="szb-sub">{s["sub"]}</p><ul class="szb-chips">{chips}</ul>'
-               f'<div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">WhatsApp +91 70874 88961</a><a class="szb-btn ghost" href="{s.get("cta2", ("/himachal-tour-packages-quote/", "Get a free quote"))[0]}">{e(s.get("cta2", ("", "Get a free quote"))[1])}</a></div></div>'
+               f'<div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">WhatsApp +91 70874 88961</a><a class="szb-btn ghost" href="{s.get("cta2", ("/himachal-tour-packages-quote/", T("Get a free quote")))[0]}">{e(s.get("cta2", ("", T("Get a free quote")))[1])}</a></div></div>'
                f'<span class="szb-cr">{credit(hero)}</span></section>')
-    out.append(f'<p class="szb-upd">Updated {e(s["updated"])} · {REG} · <a href="/certificates/">certificates</a></p>')
+    out.append(f'<p class="szb-upd">{T("Updated")} {e(s["updated"])} · {reg} · <a href="/certificates/">{T("certificates")}</a></p>')
     out.append(f'<div class="szb-answer"><p>{s["answer"]}</p></div>')
     if s.get("quick"):
         out.append('<ul class="szb-qa">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in s["quick"]) + "</ul>")
@@ -207,9 +224,10 @@ def render(s):
         sn = s["snow"]
         lk = {k: v for k, v in sn.get("links", SNOW_LINKS).items() if v.strip("/") != s["slug"]}
         attrs = (f' data-links="{e(",".join(k + "=" + v for k, v in lk.items()))}"' if lk else "") + (' data-sort="snow"' if sn.get("sort") else "")
-        snow_html = (f'<section class="szb-sec" id="forecast"><span class="k">Live forecast</span><h2>{e(sn["h2"])}</h2><p>{sn["lead"]}</p>'
-                   f'<div class="szb-snow" data-ids="{e(",".join(sn["ids"]))}"{attrs}><h3>{e(sn.get("h3", "Snow in the next 7 days"))}</h3>' + ('<p class="sum">Checking the forecast…</p>' if sn.get("summary") else '') + '<div class="rows"><p>Loading the latest forecast…</p></div>'
-                   f'<p class="note">Forecast data: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), refreshed through the day — last update <span class="upd">—</span>. Snow in cm is estimated from forecast precipitation (1 mm ≈ 1 cm) when it falls as snow; treat it as a guide, not a promise.</p></div></section>')
+        snow_html = (f'<section class="szb-sec" id="forecast"><span class="k">{T("Live forecast")}</span><h2>{e(sn["h2"])}</h2><p>{sn["lead"]}</p>'
+                   f'<div class="szb-snow" data-ids="{e(",".join(sn["ids"]))}"{attrs}{' data-lang="hi"' if LANG == "hi" else ""}><h3>{e(sn.get("h3", T("Snow in the next 7 days")))}</h3>' + (f'<p class="sum">{T("Checking the forecast…")}</p>' if sn.get("summary") else '') + f'<div class="rows"><p>{T("Loading the latest forecast…")}</p></div>'
+                   + (f'<p class="note">Forecast data: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), refreshed through the day — last update <span class="upd">—</span>. Snow in cm is estimated from forecast precipitation (1 mm ≈ 1 cm) when it falls as snow; treat it as a guide, not a promise.</p></div></section>' if LANG == "en" else
+                     '<p class="note">पूर्वानुमान डेटा: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), दिन भर अपडेट होता है — आख़िरी अपडेट <span class="upd">—</span>। बर्फ (cm) का अंदाज़ा पूर्वानुमानित वर्षा से लगाया गया है (1 mm ≈ 1 cm, जब वह बर्फ बनकर गिरे); इसे गाइड मानें, गारंटी नहीं।</p></div></section>'))
     if s.get("snow", {}).get("first"):
         out.append(snow_html)
     for sec in s["sections"]:
@@ -221,19 +239,19 @@ def render(s):
         figs = "".join(f'<figure{" class=w" if k == "w" else ""}>{img(it, sizes="(max-width:900px) 50vw, 25vw")}<figcaption>{e(it["cap"])}<span class="szb-cr">{credit(it)}</span></figcaption></figure>'
                        for it, k in zip(gal, cls))
         g = s["gallery"]
-        out.append(f'<section class="szb-sec" id="photos"><span class="k">In pictures</span><h2>{e(g["h2"])}</h2><p>{g["lead"]}</p><div class="szb-gal">{figs}</div></section>')
+        out.append(f'<section class="szb-sec" id="photos"><span class="k">{T("In pictures")}</span><h2>{e(g["h2"])}</h2><p>{g["lead"]}</p><div class="szb-gal">{figs}</div></section>')
     if s.get("spots"):
         sp = s["spots"]
         cards = "".join(f'<div class="szb-spot"><h3>{e(n)}</h3><div class="m">{e(m)}</div><p>{t}</p></div>' for n, m, t in sp["items"])
-        out.append(f'<section class="szb-sec" id="spots"><span class="k">{e(sp.get("kicker", "Where to go"))}</span><h2>{e(sp["h2"])}</h2><p>{sp["lead"]}</p><div class="szb-spots">{cards}</div></section>')
+        out.append(f'<section class="szb-sec" id="spots"><span class="k">{e(sp.get("kicker", T("Where to go")))}</span><h2>{e(sp["h2"])}</h2><p>{sp["lead"]}</p><div class="szb-spots">{cards}</div></section>')
     for sec in s.get("sections2", []):
         out.append(section(sec, None, s))
     c = s["ctas"]
-    cards = "".join(f'<div class="szb-card"><span class="b">{e(b)}</span><a class="t" href="{h}">{e(t)}</a><span class="c">{x}</span><span class="go">See the plan →</span></div>' for h, t, x, b in c["items"])
-    out.append(f'<section class="szb-sec" id="plan"><span class="k">Plan it with Suzu</span><h2>{e(c["h2"])}</h2><p>{c["lead"]}</p><div class="szb-cards">{cards}</div></section>')
-    out.append(f'<div class="szb-quote"><div><h2>{e(s["quote_h2"])}</h2><p>{s["quote_text"]}</p></div><div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">WhatsApp us</a>'
-               f'<a class="szb-btn ghost" href="tel:+917087488961">Call +91 70874 88961</a></div></div>')
-    out.append('<section class="szb-sec szb-faq" id="faq"><span class="k">FAQ</span><h2>' + e(s.get("faq_h2", "Questions travellers ask")) + "</h2>"
+    cards = "".join(f'<div class="szb-card"><span class="b">{e(b)}</span><a class="t" href="{h}">{e(t)}</a><span class="c">{x}</span><span class="go">{T("See the plan →")}</span></div>' for h, t, x, b in c["items"])
+    out.append(f'<section class="szb-sec" id="plan"><span class="k">{T("Plan it with Suzu")}</span><h2>{e(c["h2"])}</h2><p>{c["lead"]}</p><div class="szb-cards">{cards}</div></section>')
+    out.append(f'<div class="szb-quote"><div><h2>{e(s["quote_h2"])}</h2><p>{s["quote_text"]}</p></div><div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">{T("WhatsApp us")}</a>'
+               f'<a class="szb-btn ghost" href="tel:+917087488961">{T("Call +91 70874 88961")}</a></div></div>')
+    out.append('<section class="szb-sec szb-faq" id="faq"><span class="k">' + T("FAQ") + '</span><h2>' + e(s.get("faq_h2", T("Questions travellers ask"))) + "</h2>"
                + "".join(f"<details><summary>{e(q)}</summary><p>{a}</p></details>" for q, a in s["faqs"]) + "</section>")
     src = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(t)}</a></li>' for t, u in s["sources"])
     seen, cr = set(), []
@@ -241,7 +259,7 @@ def render(s):
         if it["file"] in seen:
             continue
         seen.add(it["file"]); cr.append(f'{e(it["cap"])} — {credit(it)}')
-    out.append(f'<section class="szb-sec szb-src"><h3>Sources</h3><ol>{src}</ol><h3>Photo credits</h3><p>{" · ".join(cr)}</p></section>')
+    out.append(f'<section class="szb-sec szb-src"><h3>{T("Sources")}</h3><ol>{src}</ol><h3>{T("Photo credits")}</h3><p>{" · ".join(cr)}</p></section>')
     out.append("</div>")
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": html.unescape(re.sub(r"<[^>]+>", "", a))}} for q, a in s["faqs"]]}
     out.append('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")

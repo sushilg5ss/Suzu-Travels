@@ -8,7 +8,7 @@ mod = importlib.import_module(sys.argv[1])
 S = mod.SPEC
 if S.get("photo_pick"):
     pool = {p["id"]: p for sl in S["photo_pick"]["slugs"] for p in K.wp_items(sl)}
-    S["photos"] = [dict(pool[i], role=r) for i, r in S["photo_pick"]["ids"]]
+    S["photos"] = [dict(pool[t[0]], role=t[1], **({"cap": t[2], "alt": t[3] if len(t) > 3 else t[2]} if len(t) > 2 else {})) for t in S["photo_pick"]["ids"]]
 else:
     S["photos"] = K.wp_items(S.get("photo_slug", S["slug"]))
 h = K.render(S)
