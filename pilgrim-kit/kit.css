@@ -241,3 +241,4 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 @media(prefers-reduced-motion:reduce){.szp-hero-img,.szp-hero.ph:before,.szp-gal figure,.szp-fig .im,.szp-rv,.szp-sec.has-bg:before{animation:none!important}}
 .szp h3.szp-gh{margin:34px 0 6px}
 @media(max-width:520px){.szp-gal figure:not(:first-child) .szp-cr{display:none}}
+@media(min-width:901px){.szp-steps:has(>li:nth-child(6):last-child){grid-template-columns:repeat(3,1fr)}.szp-steps:has(>li:nth-child(7)){grid-template-columns:repeat(4,1fr)}.szp-steps:has(>li:nth-child(8):last-child){grid-template-columns:repeat(4,1fr)}}

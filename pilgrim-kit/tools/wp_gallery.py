@@ -39,6 +39,8 @@ def main():
         role = OVR.get(m["id"], role)
         cap_raw = html.unescape(re.sub(r"<[^>]+>", "", m["caption"]["rendered"])).strip()
         desc = html.unescape(re.sub(r"<[^>]+>", "", m["description"]["rendered"])).strip()
+        for a, b in (("\u201c", '"'), ("\u201d", '"'), ("\u2033", '"'), ("\u2032", "'"), ("\u2019", "'"), ("\u2018", "'"), ("\u2013", "-"), ("\u2014", "—")):
+            desc = desc.replace(a, b)  # wptexturize curls the JSON quotes in description.rendered
         meta = {}
         try:
             meta = json.loads(desc[desc.find("{"):desc.rfind("}") + 1]) if "{" in desc else {}

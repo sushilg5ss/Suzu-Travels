@@ -620,10 +620,26 @@ def gal_role(c, role):
     return next((it for it in c.get("gallery", {}).get("items", []) if it.get("role") == role), None)
 
 
+def side_photo(c):
+    """Photo beside a short itinerary: explicit 'side', else the last gallery photo when there are 6+, else the legend background."""
+    s = gal_role(c, "side")
+    if s or not c.get("gallery"):
+        return s
+    gs = [it for it in c["gallery"]["items"] if it.get("role", "g") == "g"]
+    return gs[-1] if len(gs) >= 6 else gal_role(c, "bg")
+
+
+def gallery_items(c):
+    gs = [it for it in c["gallery"]["items"] if it.get("role", "g") == "g"]
+    if not gal_role(c, "side") and len(gs) >= 6 and c.get("itinerary"):
+        gs = gs[:-1]  # the last one sits beside the itinerary instead
+    return gs
+
+
 def gallery_html(c):
     """Bento grid of the 'g' items: first one big (2x2), then singles; the leftovers fill the last row (w = 2 cols, f = full row)."""
     g = c["gallery"]
-    items = [it for it in g["items"] if it.get("role", "g") == "g"]
+    items = gallery_items(c)
     n, cls = len(items), []
     rest = max(n - 5, 0)
     tail = {0: [], 1: ["f"], 2: ["w", "w"], 3: ["", "", "w"], 4: ["", "", "", ""]}.get(rest, [""] * rest)
@@ -723,7 +739,7 @@ def content_page(slug):
     if c.get("itinerary"):
         it = c["itinerary"]
         lis = "".join(f'<li><div class="d">Day {e(dd)}</div><div class="t">{e(t)}</div><p>{p}</p></li>' for dd, t, p in it["days"])
-        side = gal_role(c, "side")
+        side = side_photo(c)
         route = f'<ol class="szp-route">{lis}</ol>'
         if side:  # the day list and a photo side by side, so a short itinerary does not leave half the row empty
             route = (f'<div class="szp-it">{route}<figure class="szp-side">{ph_img(side, sizes="(max-width:900px) 100vw, 40vw")}'
