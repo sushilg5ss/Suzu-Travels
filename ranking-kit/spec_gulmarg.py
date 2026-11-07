@@ -39,7 +39,7 @@ SPEC = dict(
             "Recent dates are real; the month guide is a pattern, not a promise. For the rest of the valley see <a href=\"/kashmir-snowfall/\">Kashmir snowfall by month</a>, and our <a href=\"/kashmir-in-december/\">Kashmir in December</a> and <a href=\"/kashmir-in-january/\">Kashmir in January</a> guides.",
         ]),
     ],
-    snow=dict(ids=["gulmarg", "solang", "sissu", "manali", "auli", "narkanda"], h2="Will it snow in Gulmarg this week?",
+    snow=dict(summary=True, ids=["gulmarg", "solang", "sissu", "manali", "auli", "narkanda"], h2="Will it snow in Gulmarg this week?",
               lead="Snow expected in the next 7 days at Gulmarg — with Solang, Sissu, Manali, Auli and Narkanda for comparison, in case you are choosing between Kashmir, Himachal and Uttarakhand. Bars show forecast snow per day; a gold outline means snow is in this week's forecast."),
     gallery=dict(h2="Gulmarg in the snow", lead="The Gondola, the snowed-in huts of the meadow and the slopes towards Kongdoori — real photographs, each credited to its photographer."),
     spots=dict(kicker="Where to see snow", h2="Best snow points in and around Gulmarg", lead="From the meadow you can walk to, up to the top of the Gondola — listed from lowest to highest.", items=[

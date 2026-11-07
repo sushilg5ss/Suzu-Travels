@@ -6,7 +6,11 @@ import blogkit as K
 
 mod = importlib.import_module(sys.argv[1])
 S = mod.SPEC
-S["photos"] = K.wp_items(S.get("photo_slug", S["slug"]))
+if S.get("photo_pick"):
+    pool = {p["id"]: p for sl in S["photo_pick"]["slugs"] for p in K.wp_items(sl)}
+    S["photos"] = [dict(pool[i], role=r) for i, r in S["photo_pick"]["ids"]]
+else:
+    S["photos"] = K.wp_items(S.get("photo_slug", S["slug"]))
 h = K.render(S)
 for bad in ["24/7", "24x7", "24×7", "most trusted", "best DMC", "verified driver", "vetted driver", "No.1", "guaranteed", "Most asked", "Most booked"]:
     assert bad.lower() not in re.sub(r"<[^>]+>", " ", h).lower(), bad

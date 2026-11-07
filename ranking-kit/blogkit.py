@@ -34,7 +34,7 @@ CSS = """
 .szb-hero .k{color:var(--gold2)}
 .szb-tag{font-size:clamp(30px,4vw,48px);line-height:1.08;font-weight:800;margin:0 0 12px;letter-spacing:-.02em;color:#fff}.szb .szb-hero p.szb-tag,.szb .szb-hero .szb-chips li{color:#fff!important}.szb .szb-hero p.szb-sub{color:rgba(255,255,255,.9)!important}.szb .szb-quote p{color:rgba(255,255,255,.86)!important}
 .szb-sub{font-size:17px;color:rgba(255,255,255,.88);margin:0 0 16px}
-.szb-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+.szb-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px!important;padding:0!important;list-style:none}
 .szb-chips li{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px);border-radius:99px;padding:6px 12px;font-size:14px;margin:0}
 .szb-chips b{color:var(--gold2)}
 .szb-btns{display:flex;flex-wrap:wrap;gap:10px}
@@ -63,7 +63,7 @@ CSS = """
 .szb-gal figcaption .szb-cr{color:rgba(255,255,255,.75)}
 .szb-snow{background:radial-gradient(ellipse at 80% 0%,#1d4a74,var(--navy) 55%,#06121f);color:#eaf4fb;border-radius:24px;padding:26px;margin:18px 0;position:relative;overflow:hidden;isolation:isolate}
 .szb-snow h3{color:#fff;margin-top:0}
-.szb-snow .rows{display:grid;gap:12px}
+.szb-snow .rows{display:grid;gap:12px}.szb .szb-snow .sum{font-size:16px;font-weight:700;color:#fff!important;background:rgba(255,255,255,.08);border:1px solid rgba(243,217,143,.4);border-radius:14px;padding:10px 14px;margin:0 0 14px}.szb-snow .nm a{color:#fff!important;text-decoration:underline;text-decoration-color:rgba(243,217,143,.6);text-underline-offset:3px}
 .szb-sp{display:grid;grid-template-columns:200px minmax(0,1fr) 120px;gap:16px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px 16px}
 .szb-sp .nm{font-weight:800;color:#fff;line-height:1.2}.szb-sp .nm small{display:block;font-weight:500;color:rgba(234,244,251,.7);font-size:12.5px}
 .szb-sp .bars{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;align-items:end;height:64px}
@@ -90,6 +90,18 @@ CSS = """
 .szb-faq summary{cursor:pointer;font-weight:800;color:var(--navy)}.szb-faq details p{margin:10px 0 0}
 .szb-src{font-size:14px;color:var(--mid)}.szb-src li{margin:0 0 4px}
 @media(max-width:900px){.szb-row,.szb-quote{grid-template-columns:1fr;gap:20px}.szb-quote .szb-btns{justify-content:flex-start}.szb-gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:160px}.szb-sp{grid-template-columns:1fr;gap:8px}.szb-sp .wk{text-align:left}.szb-hero-in{padding:26px 20px 34px}.szb-hero:after{background:linear-gradient(180deg,rgba(6,18,31,.55),rgba(6,18,31,.72) 35%,rgba(6,18,31,.95))}.szb-hero-in{text-shadow:0 1px 12px rgba(0,0,0,.45)}.szb-hero .szb-cr{max-width:90%}}
+.szb-lad{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;align-items:stretch;height:380px;background:radial-gradient(ellipse at 70% 0%,#1d4a74,var(--navy) 60%,#06121f);border-radius:24px;padding:26px 16px 18px;margin:18px 0;position:relative;overflow:hidden;isolation:isolate}
+.szb-lad:before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(180deg,rgba(255,255,255,.06) 0 1px,transparent 1px 25%)}
+.szb-lad .c{display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;text-align:center;min-width:0}
+.szb-lad .c i{display:block;height:var(--h);border-radius:14px 14px 4px 4px;background:linear-gradient(180deg,#fff 0,#e4f1fa 14%,#6f97b9 15%,#2c5378);animation:szbGrow 1.3s cubic-bezier(.2,.8,.2,1) var(--d) both;box-shadow:inset 0 -30px 40px rgba(6,18,31,.35)}
+@keyframes szbGrow{from{height:0}}
+.szb-lad .c b{display:block;color:#fff;font-size:14px;line-height:1.2;margin-top:8px}.szb-lad .c b a{color:#fff!important;text-decoration:none}
+.szb-lad .c small{display:block;color:rgba(234,244,251,.72);font-size:11.5px;line-height:1.3;margin-top:2px}
+.szb-lad .c .s{min-height:20px;font-size:11.5px;font-weight:800;color:var(--gold2);margin-bottom:6px}
+.szb-lad .c.on i{box-shadow:0 0 0 2px var(--gold2),0 0 28px rgba(243,217,143,.55);animation:szbGrow 1.3s cubic-bezier(.2,.8,.2,1) var(--d) both,szbGlow 2.4s ease-in-out 1.4s infinite alternate}
+@keyframes szbGlow{to{box-shadow:0 0 0 2px var(--gold2),0 0 6px rgba(243,217,143,.2)}}
+@media(max-width:640px){.szb-lad{grid-template-columns:1fr;height:auto;gap:12px;padding:18px}.szb-lad .c{display:grid;grid-template-columns:96px minmax(0,1fr);grid-template-areas:"b i" "m i" "s s";text-align:left;column-gap:12px;align-items:center}.szb-lad .c i{grid-area:i;height:16px;width:var(--h);border-radius:4px 10px 10px 4px;animation-name:szbGrowW;background:linear-gradient(90deg,#2c5378,#6f97b9 82%,#e4f1fa 83%,#fff);box-shadow:none}.szb-lad .c b{grid-area:b;margin:0}.szb-lad .c small{grid-area:m}.szb-lad .c .s{grid-area:s;min-height:0;margin:0}}
+@keyframes szbGrowW{from{width:0}}
 @media(max-width:640px){.szb-tbl,.szb-tbl tbody,.szb-tbl tr,.szb-tbl td{display:block;width:100%}.szb-tbl thead{display:none}.szb-tbl{border:0;border-radius:0}.szb-tbl tr{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 10px;background:#fff}.szb-tbl td{border-top:1px solid var(--line);padding:8px 14px;background:#fff!important}.szb-tbl td:first-child{border-top:0;background:var(--navy)!important;color:#fff;font-weight:800}.szb-tbl td:not(:first-child):before{content:attr(data-l);display:block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2px}}\n@media(prefers-reduced-motion:reduce){.szb-hero>img,.szb-flakes{animation:none}}
 """
 
@@ -99,10 +111,15 @@ var boxes=d.querySelectorAll('.szb-snow[data-ids]');if(!boxes.length)return;
 fetch('/suzu-snow.php').then(function(r){return r.json()}).then(function(j){
 Array.prototype.forEach.call(boxes,function(b){var ids=b.getAttribute('data-ids').split(','),rows=b.querySelector('.rows');if(!rows)return;rows.textContent='';
 var max=1;j.places.forEach(function(p){p.days.forEach(function(x){if(x.snow_cm>max)max=x.snow_cm})});
-ids.forEach(function(id){var p=null;j.places.forEach(function(q){if(q.id===id)p=q});if(!p)return;
-var r=el('div','szb-sp'+(p.week_cm>0?' yes':''));var nm=el('div','nm',p.name);nm.appendChild(el('small',null,p.alt.toLocaleString('en-IN')+' m · '+(p.now&&p.now.t!=null?Math.round(p.now.t)+'°C now':'')));r.appendChild(nm);
+var L={};(b.getAttribute('data-links')||'').split(',').forEach(function(x){var k=x.split('=');if(k[1])L[k[0]]=k[1]});
+var P=[];ids.forEach(function(id){j.places.forEach(function(q){if(q.id===id)P.push(q)})});
+if(b.getAttribute('data-sort')==='snow')P.sort(function(a,c){return c.week_cm-a.week_cm||c.alt-a.alt});
+var sm=b.querySelector('.sum');if(sm){var yes=P.filter(function(p){return p.week_cm>0});sm.textContent=yes.length?'Snow in the forecast this week: '+yes.map(function(p){return p.name+' ('+p.week_cm+' cm'+(p.next?', from '+new Date(p.next.d+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'}):'')+')'}).join(' · '):'No snow in the 7-day forecast at any of these places yet — check back, it updates through the day.'}
+P.forEach(function(p){
+var r=el('div','szb-sp'+(p.week_cm>0?' yes':''));var nm=el('div','nm');if(L[p.id]){var a=el('a',null,p.name);a.href=L[p.id];nm.appendChild(a)}else nm.appendChild(d.createTextNode(p.name));nm.appendChild(el('small',null,p.alt.toLocaleString('en-IN')+' m · '+(p.now&&p.now.t!=null?Math.round(p.now.t)+'°C now':'')));r.appendChild(nm);
 var bars=el('div','bars');p.days.forEach(function(x){var bar=el('div','bar');var i=el('i');i.style.height='2px';bar.appendChild(i);var dt=new Date(x.d+'T00:00:00');bar.appendChild(el('span',null,W[dt.getDay()]));bar.title=x.d+': '+x.snow_cm+' cm snow, '+x.lo+' to '+x.hi+'°C';bars.appendChild(bar);setTimeout(function(){i.style.height=Math.max(2,Math.round(100*x.snow_cm/max))+'%'},120)});r.appendChild(bars);
 var wk=el('div','wk',p.week_cm>0?p.week_cm+' cm':'No snow');wk.appendChild(el('small',null,p.next?'next: '+new Date(p.next.d+'T00:00:00').toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short'}):'next 7 days'));r.appendChild(wk);rows.appendChild(r)});
+Array.prototype.forEach.call(d.querySelectorAll('[data-sid]'),function(c){j.places.forEach(function(p){if(p.id===c.getAttribute('data-sid')&&p.week_cm>0){c.classList.add('on');var t=c.querySelector('.s');if(t)t.textContent='❄ '+p.week_cm+' cm this week'}})});
 var u=b.querySelector('.upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString('en-IN',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})});
 }).catch(function(){Array.prototype.forEach.call(boxes,function(b){var s=b.closest('section')||b;s.style.display='none'})})})();"""
 
@@ -153,6 +170,22 @@ def role(items, r):
     return next((x for x in items if x["role"] == r), None)
 
 
+SNOW_LINKS = {"manali": "/snowfall-in-manali/", "solang": "/adventure/snow-activities-manali/", "sissu": "/adventure/atal-tunnel-sissu-snow-trip/",
+              "shimla": "/shimla-snowfall/", "kufri": "/kufri-snowfall/", "narkanda": "/adventure/snow-and-skiing-in-narkanda/",
+              "gulmarg": "/gulmarg-snowfall/", "auli": "/auli-in-december/"}
+
+
+def ladder(points, lo=1600, hi=3300):
+    """points: [(id, name, alt, region, href)] -> animated altitude ladder (CSS only; JS marks places with snow this week)."""
+    cols = ""
+    for k, (pid, name, alt, region, href) in enumerate(sorted(points, key=lambda x: x[2])):
+        pct = round(100 * (alt - lo) / (hi - lo))
+        nm = f'<a href="{href}">{e(name)}</a>' if href else e(name)
+        cols += (f'<div class="c" data-sid="{pid}" style="--h:{pct}%;--d:{k * 0.12:.2f}s"><span class="s"></span><i></i>'
+                 f'<b>{nm}</b><small>{alt:,} m · {e(region)}</small></div>')
+    return f'<div class="szb-lad" role="img" aria-label="Snow points by altitude">{cols}</div>'
+
+
 def render(s):
     P = s["photos"]
     hero, fig = role(P, "hero"), role(P, "fig")
@@ -168,13 +201,20 @@ def render(s):
     out.append(f'<div class="szb-answer"><p>{s["answer"]}</p></div>')
     if s.get("quick"):
         out.append('<ul class="szb-qa">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in s["quick"]) + "</ul>")
-    for sec in s["sections"]:
-        out.append(section(sec, fig if sec.get("fig") else None, s))
+    snow_html = ""
     if s.get("snow"):
         sn = s["snow"]
-        out.append(f'<section class="szb-sec" id="forecast"><span class="k">Live forecast</span><h2>{e(sn["h2"])}</h2><p>{sn["lead"]}</p>'
-                   f'<div class="szb-snow" data-ids="{e(",".join(sn["ids"]))}"><h3>Snow in the next 7 days</h3><div class="rows"><p>Loading the latest forecast…</p></div>'
+        lk = {k: v for k, v in sn.get("links", SNOW_LINKS).items() if v.strip("/") != s["slug"]}
+        attrs = (f' data-links="{e(",".join(k + "=" + v for k, v in lk.items()))}"' if lk else "") + (' data-sort="snow"' if sn.get("sort") else "")
+        snow_html = (f'<section class="szb-sec" id="forecast"><span class="k">Live forecast</span><h2>{e(sn["h2"])}</h2><p>{sn["lead"]}</p>'
+                   f'<div class="szb-snow" data-ids="{e(",".join(sn["ids"]))}"{attrs}><h3>{e(sn.get("h3", "Snow in the next 7 days"))}</h3>' + ('<p class="sum">Checking the forecast…</p>' if sn.get("summary") else '') + '<div class="rows"><p>Loading the latest forecast…</p></div>'
                    f'<p class="note">Forecast data: <a href="https://api.met.no/" target="_blank" rel="noopener">MET Norway</a> (CC BY 4.0), refreshed through the day — last update <span class="upd">—</span>. Snow in cm is estimated from forecast precipitation (1 mm ≈ 1 cm) when it falls as snow; treat it as a guide, not a promise.</p></div></section>')
+    if s.get("snow", {}).get("first"):
+        out.append(snow_html)
+    for sec in s["sections"]:
+        out.append(section(sec, fig if sec.get("fig") else None, s))
+    if snow_html and not s["snow"].get("first"):
+        out.append(snow_html)
     if gal:
         cls = ["big"] + [""] * 4 + ["w", "w", "", ""]
         figs = "".join(f'<figure{" class=w" if k == "w" else ""}>{img(it, sizes="(max-width:900px) 50vw, 25vw")}<figcaption>{e(it["cap"])}<span class="szb-cr">{credit(it)}</span></figcaption></figure>'
@@ -217,6 +257,7 @@ def section(sec, fig, s):
         hd, rows = sec["table"]
         body += '<div class="szb-scroll"><table class="szb-tbl"><thead><tr>' + "".join(f"<th>{e(x)}</th>" for x in hd) + "</tr></thead><tbody>" + \
                 "".join("<tr>" + "".join(f'<td data-l="{e(hd[i])}">{x}</td>' for i, x in enumerate(r)) + "</tr>" for r in rows) + "</tbody></table></div>"
+    body += sec.get("html", "")
     body += "".join(f"<p>{p}</p>" for p in sec.get("after", []))
     head = f'<span class="k">{e(sec.get("kicker", ""))}</span><h2>{e(sec["h2"])}</h2>'
     if fig:

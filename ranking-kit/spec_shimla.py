@@ -38,7 +38,7 @@ SPEC = dict(
             "Last season's dates are real; the month guide is a pattern, not a promise. See also our <a href=\"/shimla-in-december/\">Shimla in December</a> and <a href=\"/weather/shimla/\">Shimla weather by month</a> guides.",
         ]),
     ],
-    snow=dict(ids=["shimla", "kufri", "narkanda", "manali", "solang", "sissu"], h2="Will it snow in Shimla this week?",
+    snow=dict(summary=True, ids=["shimla", "kufri", "narkanda", "manali", "solang", "sissu"], h2="Will it snow in Shimla this week?",
               lead="Snow expected in the next 7 days at Shimla, Kufri and Narkanda — with Manali, Solang and Sissu for comparison. Bars show forecast snow per day; a gold outline means snow is in this week's forecast."),
     gallery=dict(h2="Shimla in the snow", lead="The Ridge, Mall Road and deodar slopes after snowfall, and the higher snow points of Kufri and Narkanda — real photographs, each credited to its photographer."),
     spots=dict(kicker="Where to see snow", h2="Best places to see snow near Shimla", lead="When Shimla itself is bare, these are where the snow usually is — listed from nearest to farthest.", items=[
