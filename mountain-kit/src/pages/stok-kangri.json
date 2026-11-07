@@ -14,22 +14,52 @@
  "tag": "India's favourite first 6,000er is closed. Here is what to climb instead.",
  "sub": "Climbs on Stok Kangri stopped in 2020, and a Ladakh administration order of December 2023 keeps all expeditions closed, with no reopening date. This page gives the dated status, the reasons, the former route for context, and the closest 6,000 m peaks you can still climb, led by Yunam in Himachal.",
  "chips": [
-  ["Status", "closed since 2020"],
-  ["6,153 m", "summit (20,187 ft)"],
-  ["Dec 2023", "Ladakh closure order"],
-  ["Closest match", "Yunam 6,111 m"]
+  [
+   "Status",
+   "closed since 2020"
+  ],
+  [
+   "6,153 m",
+   "summit (20,187 ft)"
+  ],
+  [
+   "Dec 2023",
+   "Ladakh closure order"
+  ],
+  [
+   "Closest match",
+   "Yunam 6,111 m"
+  ]
  ],
  "hero_alt": "Climbers on snow under a Himalayan range (generic stock footage, not Stok Kangri) with four statements: closed in 2020, banned in December 2023, no date to reopen, try Yunam at 6,111 m",
  "ladder_alt": "Animated chart of Stok Kangri (closed) beside Yunam, Mentok Kangri, Dzo Jongo, Deo Tibba and Friendship Peak, drawn at their true heights",
  "q": "Is Stok Kangri open in 2026?",
  "answer": "<b>No.</b> Stok Kangri (6,153 m / 20,187 ft), near Leh in Ladakh, has been closed to climbers since 2020. On 21 December 2023 the Ladakh administration closed \"all kinds of expeditions\" to the peak over the depletion of the Stok glacier, and no reopening had been found as of October 2026. The closest open alternative is <b>Yunam (6,111 m)</b> in Himachal; see our <a href=\"/mountains-of-india/highest-peaks-in-india/#band-6000\">list of India's 6,000 m peaks</a>.",
  "facts": [
-  ["Status", "Closed since 2020; Ladakh order of 21 Dec 2023, no reopening date"],
-  ["Height", "6,153 m / 20,187 ft (other figures 6,136 m and 6,155 m)"],
-  ["Location", "Stok range of the Zanskar mountains, Ladakh; about 15 km south-west of Leh, in Hemis National Park"],
-  ["Grade (when open)", "Trekking peak: non-technical but very high"],
-  ["Former season", "June–September"],
-  ["First ascent", "1951"]
+  [
+   "Status",
+   "Closed since 2020; Ladakh order of 21 Dec 2023, no reopening date"
+  ],
+  [
+   "Height",
+   "6,153 m / 20,187 ft (other figures 6,136 m and 6,155 m)"
+  ],
+  [
+   "Location",
+   "Stok range of the Zanskar mountains, Ladakh; about 15 km south-west of Leh, in Hemis National Park"
+  ],
+  [
+   "Grade (when open)",
+   "Trekking peak: non-technical but very high"
+  ],
+  [
+   "Former season",
+   "June–September"
+  ],
+  [
+   "First ascent",
+   "1951"
+  ]
  ],
  "intro": [
   "<b>Status, checked 4 October 2026: closed.</b> No reopening order has been found in news or official sources. Any trip still sold as a \"Stok Kangri expedition\" runs against the Ladakh order, so there is no legitimate trek or climb to book and no honest trip cost to quote.",
@@ -43,14 +73,42 @@
   "Summit day was the hard part: more than 1,000 m of ascent and 8–14 hours on the move, at an altitude where many first-time climbers turned back. The table shows the former camps; the route is closed, and the 2023 order covers \"all kinds of expeditions to the region\", so treat the base-camp trek as closed too."
  ],
  "route": [
-  {"name": "Stok village", "m": 3500, "note": "About 3,500 m; former road-head near Leh"},
-  {"name": "Chang Ma", "m": 4000, "note": "About 4,000 m; camp in the Stok valley"},
-  {"name": "Mankorma", "m": 4400, "note": "About 4,400 m; camp"},
-  {"name": "Base camp", "m": 4969, "note": "Two days from Stok village"},
-  {"name": "Stok Kangri summit", "m": 6153, "note": "8–14 hour summit day, over 1,000 m of ascent"}
+  {
+   "name": "Stok village",
+   "m": 3500,
+   "note": "About 3,500 m; former road-head near Leh"
+  },
+  {
+   "name": "Chang Ma",
+   "m": 4000,
+   "note": "About 4,000 m; camp in the Stok valley"
+  },
+  {
+   "name": "Mankorma",
+   "m": 4400,
+   "note": "About 4,400 m; camp"
+  },
+  {
+   "name": "Base camp",
+   "m": 4969,
+   "note": "Two days from Stok village"
+  },
+  {
+   "name": "Stok Kangri summit",
+   "m": 6153,
+   "note": "8–14 hour summit day, over 1,000 m of ascent"
+  }
  ],
  "table": {
-  "ids": ["stok-kangri", "mount-yunam", "friendship-peak", "deo-tibba", "chau-chau-kang-nilda", "mentok-kangri", "dzo-jongo"],
+  "ids": [
+   "stok-kangri",
+   "mount-yunam",
+   "friendship-peak",
+   "deo-tibba",
+   "chau-chau-kang-nilda",
+   "mentok-kangri",
+   "dzo-jongo"
+  ],
   "label": "Alternatives",
   "h2": "The best alternatives to Stok Kangri",
   "text": [
@@ -78,22 +136,115 @@
  "quote_h2": "Planned Stok Kangri? Climb a Himachal 6,000er instead",
  "faq_h2": "Stok Kangri: questions climbers ask",
  "faqs": [
-  ["Is Stok Kangri open in 2026?", "No. Climbs stopped in 2020, and a Ladakh administration order of 21 December 2023 keeps all expeditions closed. No reopening had been found as of October 2026."],
-  ["Why was Stok Kangri closed?", "Glacier depletion, pressure on the Stok village water source and over-tourism. The 2023 order cites the \"depletion of Stok mountain glacier and environmental issues\"."],
-  ["When will Stok Kangri reopen?", "No date has been announced. We will update this page if an official reopening order appears."],
-  ["Can I still trek to Stok Kangri base camp?", "Treat it as closed. The 2023 order covers \"all kinds of expeditions to the region\"."],
-  ["How high is Stok Kangri?", "6,153 m (20,187 ft) in our dataset and on Wikipedia. Other sources give 6,136 m or 6,155 m."],
-  ["What is the best alternative to Stok Kangri?", "Yunam (6,111 m) in Himachal is the closest match: a non-technical 6,000er with a long summit day. Friendship Peak (5,289 m) suits a first snow summit; Mentok Kangri and Dzo Jongo are Ladakh options."],
-  ["How difficult was Stok Kangri?", "A trekking peak: non-technical but very high, with more than 1,000 m of ascent and an 8–14 hour summit day."],
-  ["When was Stok Kangri first climbed?", "Its official first ascent was in 1951. The first official winter ascent was made by a British team in March 2002."]
+  [
+   "Is Stok Kangri open in 2026?",
+   "No. Climbs stopped in 2020, and a Ladakh administration order of 21 December 2023 keeps all expeditions closed. No reopening had been found as of October 2026."
+  ],
+  [
+   "Why was Stok Kangri closed?",
+   "Glacier depletion, pressure on the Stok village water source and over-tourism. The 2023 order cites the \"depletion of Stok mountain glacier and environmental issues\"."
+  ],
+  [
+   "When will Stok Kangri reopen?",
+   "No date has been announced. We will update this page if an official reopening order appears."
+  ],
+  [
+   "Can I still trek to Stok Kangri base camp?",
+   "Treat it as closed. The 2023 order covers \"all kinds of expeditions to the region\"."
+  ],
+  [
+   "How high is Stok Kangri?",
+   "6,153 m (20,187 ft) in our dataset and on Wikipedia. Other sources give 6,136 m or 6,155 m."
+  ],
+  [
+   "What is the best alternative to Stok Kangri?",
+   "Yunam (6,111 m) in Himachal is the closest match: a non-technical 6,000er with a long summit day. Friendship Peak (5,289 m) suits a first snow summit; Mentok Kangri and Dzo Jongo are Ladakh options."
+  ],
+  [
+   "How difficult was Stok Kangri?",
+   "A trekking peak: non-technical but very high, with more than 1,000 m of ascent and an 8–14 hour summit day."
+  ],
+  [
+   "When was Stok Kangri first climbed?",
+   "Its official first ascent was in 1951. The first official winter ascent was made by a British team in March 2002."
+  ]
  ],
  "sources": [
-  ["The Statesman (21 Dec 2023) — Ladakh admin bans expeditions to Stok Kangri", "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"],
-  ["The Outdoor Journal (23 Dec 2019) — Why climbing was banned on Stok Kangri", "https://www.outdoorjournal.com/exclusive-why-climbing-was-banned-on-indias-most-popular-trans-himalayan-trekking-peak/"],
-  ["Wikipedia — Stok Kangri", "https://en.wikipedia.org/wiki/Stok_Kangri"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"],
-  ["Wikipedia — Tso Moriri (peaks incl. Mentok Kangri)", "https://en.wikipedia.org/wiki/Tso_Moriri"]
+  [
+   "The Statesman (21 Dec 2023) — Ladakh admin bans expeditions to Stok Kangri",
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"
+  ],
+  [
+   "The Outdoor Journal (23 Dec 2019) — Why climbing was banned on Stok Kangri",
+   "https://www.outdoorjournal.com/exclusive-why-climbing-was-banned-on-indias-most-popular-trans-himalayan-trekking-peak/"
+  ],
+  [
+   "Wikipedia — Stok Kangri",
+   "https://en.wikipedia.org/wiki/Stok_Kangri"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ],
+  [
+   "Wikipedia — Tso Moriri (peaks incl. Mentok Kangri)",
+   "https://en.wikipedia.org/wiki/Tso_Moriri"
+  ]
  ],
- "sameAs": ["https://en.wikipedia.org/wiki/Stok_Kangri"]
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Stok_Kangri"
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Stok Kangri in pictures",
+  "lead": "Stok Kangri above the Stok valley, closed to climbers since 2020 — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-768x431.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-1024x574.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-1536x862.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1077,
+    "alt": "Western flank of Stok Kangri, Ladakh",
+    "cap": "The western flank of Stok Kangri",
+    "by": "James Edward Ball",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_western_flank.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-768x431.webp",
+    "wp_id": 18880
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Stok Kangri above the Stok valley",
+    "cap": "Stok Kangri above its valley",
+    "by": "Maverick34 at English Wikipedia",
+    "lic": "Public domain",
+    "file": "https://commons.wikimedia.org/wiki/File:StokKangri.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-768x576.webp",
+    "wp_id": 18883
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3.webp 1600w",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Stok Kangri catching the last light",
+    "cap": "Stok Kangri at last light",
+    "by": "Aksveer",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-768x512.webp",
+    "wp_id": 18886
+   }
+  ]
+ }
 }

@@ -339,5 +339,40 @@
  "sameAs": [
   "https://en.wikipedia.org/wiki/Hanuman_Tibba"
  ],
- "wa": "Hi Suzu Travels, I want to plan a guided climb of Hanuman Tibba. Dates: ___ , people: ___ , nationality: ___"
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Hanuman Tibba. Dates: ___ , people: ___ , nationality: ___",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Hanuman Tibba in pictures",
+  "lead": "The peak above the Solang valley, Manali — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-hero-1-768x511.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-hero-1-1024x681.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-hero-1-1536x1022.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1277,
+    "alt": "Hanuman Tibba above the Solang valley, Manali",
+    "cap": "Hanuman Tibba above Solang",
+    "by": "Biswarup Ganguly",
+    "lic": "CC BY 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mount_Hanuman_Tibba_-_Solang_Valley_-_Kullu_2014-05-10_2596.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-hero-1-768x511.webp",
+    "wp_id": 18875
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-fig-2-768x511.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-fig-2-1024x681.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-fig-2-1536x1022.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1277,
+    "alt": "Hanuman Tibba and its ridges from the Solang valley",
+    "cap": "Hanuman Tibba from the Solang valley",
+    "by": "Biswarup Ganguly",
+    "lic": "CC BY 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mount_Hanuman_Tibba_-_Solang_Valley_-_Kullu_2014-05-10_2594.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-hanuman-tibba-fig-2-768x511.webp",
+    "wp_id": 18878
+   }
+  ]
+ }
 }

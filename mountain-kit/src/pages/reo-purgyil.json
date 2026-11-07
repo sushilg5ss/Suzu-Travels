@@ -334,5 +334,40 @@
  "sameAs": [
   "https://en.wikipedia.org/wiki/Reo_Purgyil"
  ],
- "wa": "Hi Suzu Travels, I want to plan a guided climb of Reo Purgyil. Dates: ___ , people: ___ , nationality: ___"
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Reo Purgyil. Dates: ___ , people: ___ , nationality: ___",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Reo Purgyil in pictures",
+  "lead": "Leo Pargial and Reo Purgyil on the Kinnaur–Tibet border — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-hero-1-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-hero-1-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-hero-1-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Leo Pargial and Reo Purgyil peaks on the Kinnaur border",
+    "cap": "Leo Pargial and Reo Purgyil",
+    "by": "Arashdeep",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Peaks_of_Mt_Leo_Purgyil_and_Reo_Purgyil.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-hero-1-768x432.webp",
+    "wp_id": 18870
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-fig-2-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-fig-2-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-fig-2-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Leo Pargial massif in Kinnaur",
+    "cap": "The Leo Pargial massif",
+    "by": "Sumita Roy Dutta",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:LeoPargial.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-reo-purgyil-fig-2-768x512.webp",
+    "wp_id": 18873
+   }
+  ]
+ }
 }
