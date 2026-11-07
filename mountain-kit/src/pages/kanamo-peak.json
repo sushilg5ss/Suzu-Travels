@@ -14,25 +14,64 @@
  "tag": "A high Spiti walk-up with an open question: can you go?",
  "sub": "Kanamo rises above Kibber, a Spiti village at about 4,270 m, and is climbed as a long, non-technical walk-up. Since a 2019 village restriction its access has been unclear. This page gives the dated status, the normal route from Kibber, the season and the Himachal peaks whose access is clear.",
  "chips": [
-  ["Status", "unclear in 2026"],
-  ["5,964 m", "summit (19,567 ft)"],
-  ["Kibber", "road-head, about 4,270 m"],
-  ["Jun–Sep", "Spiti season"],
-  ["Clear access", "Yunam 6,111 m"]
+  [
+   "Status",
+   "unclear in 2026"
+  ],
+  [
+   "5,964 m",
+   "summit (19,567 ft)"
+  ],
+  [
+   "Kibber",
+   "road-head, about 4,270 m"
+  ],
+  [
+   "Jun–Sep",
+   "Spiti season"
+  ],
+  [
+   "Clear access",
+   "Yunam 6,111 m"
+  ]
  ],
  "hero_alt": "Generic high-desert scree, a base camp and a summit push (stock footage, not Kanamo) with a rolling altitude read-out from Kibber at 4,270 m to base camp at about 4,800 m and the 5,964 m summit",
  "profile_alt": "Animated altitude profile of the Kanamo route: Kibber 4,270 m, base camp about 4,800 m, summit 5,964 m",
  "q": "Is Kanamo Peak open, and how hard is it to climb?",
  "answer": "<b>Unclear.</b> Kanamo Peak (5,964 m / 19,567 ft) above Kibber in Spiti, Himachal Pradesh, has had no published reopening order since a 2019 village restriction, although climbers reached the summit in 2026. It is a non-technical walk-up where altitude is the challenge, usually 7–9 days from Manali, climbed June–September. For clear access, look at <a href=\"/mountains-of-india/yunam-peak/\">Yunam in Lahaul</a> or our <a href=\"/mountains-of-india/highest-peaks-in-india/\">full list of Indian peaks</a>.",
  "facts": [
-  ["Status", "Access unclear: 2019 village restriction, no published reopening order found (checked 23 Oct 2026)"],
-  ["Height", "5,964 m / 19,567 ft (also quoted 5,970 m and 5,974 m)"],
-  ["Location", "Spiti, Lahaul & Spiti district, Himachal Pradesh (Great Himalaya)"],
-  ["Road-head", "Kibber, about 4,270 m / 14,009 ft"],
-  ["Grade", "Trekking peak: non-technical high walk-up"],
-  ["Season", "June–September"],
-  ["Duration", "About 7–9 days from Manali and back"],
-  ["First ascent", "Not documented in our sources"]
+  [
+   "Status",
+   "Access unclear: 2019 village restriction, no published reopening order found (checked 23 Oct 2026)"
+  ],
+  [
+   "Height",
+   "5,964 m / 19,567 ft (also quoted 5,970 m and 5,974 m)"
+  ],
+  [
+   "Location",
+   "Spiti, Lahaul & Spiti district, Himachal Pradesh (Great Himalaya)"
+  ],
+  [
+   "Road-head",
+   "Kibber, about 4,270 m / 14,009 ft"
+  ],
+  [
+   "Grade",
+   "Trekking peak: non-technical high walk-up"
+  ],
+  [
+   "Season",
+   "June–September"
+  ],
+  [
+   "Duration",
+   "About 7–9 days from Manali and back"
+  ],
+  [
+   "First ascent",
+   "Not documented in our sources"
+  ]
  ],
  "intro": [
   "<b>Status, checked 23 October 2026: unclear.</b> We have found no Lahaul–Spiti district, HP Tourism, forest-department or panchayat order that reopens Kanamo to trekking groups. Climbers did reach the summit in 2026, and trips are advertised, but neither of those is an official go-ahead.",
@@ -46,17 +85,49 @@
   "From Kibber the trail climbs to a base camp at about 4,800 m below the peak. Summit day is a long single push over scree and patches of snow to 5,964 m and back down to camp. Base-camp heights vary by source, so treat the table as approximate."
  ],
  "route": [
-  {"name": "Kibber", "m": 4270, "note": "Road-head village, about 4,270 m; acclimatise"},
-  {"name": "Base camp", "m": 4800, "note": "About 4,800 m, below the peak"},
-  {"name": "Kanamo summit", "m": 5964, "note": "Long single summit push: scree and snow patches"}
+  {
+   "name": "Kibber",
+   "m": 4270,
+   "note": "Road-head village, about 4,270 m; acclimatise"
+  },
+  {
+   "name": "Base camp",
+   "m": 4800,
+   "note": "About 4,800 m, below the peak"
+  },
+  {
+   "name": "Kanamo summit",
+   "m": 5964,
+   "note": "Long single summit push: scree and snow patches"
+  }
  ],
  "itinerary_h2": "How the trip usually runs (for planning, once access is clear)",
  "itinerary": [
-  ["Day 1–2", "Manali to Kaza", "Drive into Spiti and rest in Kaza to start acclimatising."],
-  ["Day 2–3", "Kibber", "Move up to the road-head at about 4,270 m; short walk above the village."],
-  ["Day 4", "Base camp", "Trek to base camp at about 4,800 m."],
-  ["Day 5–6", "Summit day", "Early start, long push to 5,964 m and back to base camp; a spare day covers bad weather."],
-  ["Day 6–7", "Back to Kibber", "Descend to Kibber, then drive out towards Kaza and Manali."]
+  [
+   "Day 1–2",
+   "Manali to Kaza",
+   "Drive into Spiti and rest in Kaza to start acclimatising."
+  ],
+  [
+   "Day 2–3",
+   "Kibber",
+   "Move up to the road-head at about 4,270 m; short walk above the village."
+  ],
+  [
+   "Day 4",
+   "Base camp",
+   "Trek to base camp at about 4,800 m."
+  ],
+  [
+   "Day 5–6",
+   "Summit day",
+   "Early start, long push to 5,964 m and back to base camp; a spare day covers bad weather."
+  ],
+  [
+   "Day 6–7",
+   "Back to Kibber",
+   "Descend to Kibber, then drive out towards Kaza and Manali."
+  ]
  ],
  "difficulty_h2": "How hard is Kanamo?",
  "difficulty": [
@@ -64,11 +135,33 @@
   "That makes acclimatisation the deciding factor. Plan rest days in Kaza and Kibber, turn back if symptoms build, and read our guide to <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness on Indian peaks</a> before you go."
  ],
  "skills": [
-  ["Fitness", "Strong hiking fitness for a long day on scree at altitude"],
-  ["Skills", "No technical climbing in normal conditions; basic snow walking helps"],
-  ["Altitude", "The main risk: sleeping above 4,200 m and summiting near 6,000 m"]
+  [
+   "Fitness",
+   "Strong hiking fitness for a long day on scree at altitude"
+  ],
+  [
+   "Skills",
+   "No technical climbing in normal conditions; basic snow walking helps"
+  ],
+  [
+   "Altitude",
+   "The main risk: sleeping above 4,200 m and summiting near 6,000 m"
+  ]
  ],
- "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "no", "May": "no", "Jun": "good", "Jul": "good", "Aug": "good", "Sep": "good", "Oct": "maybe", "Nov": "no", "Dec": "no"},
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "no",
+  "May": "no",
+  "Jun": "good",
+  "Jul": "good",
+  "Aug": "good",
+  "Sep": "good",
+  "Oct": "maybe",
+  "Nov": "no",
+  "Dec": "no"
+ },
  "season_text": [
   "Spiti lies in the rain shadow of the Great Himalaya, so June to September, when the monsoon soaks Kullu and Manali, is the climbing season here. Some trips run into the first half of October, when nights are colder."
  ],
@@ -87,21 +180,112 @@
  "quote_text": "We do not arrange Kanamo while its access is unclear. Tell us your dates, team size and experience, and we will suggest a Himachal peak that fits: Yunam (6,111 m) for a non-technical high summit, or Friendship Peak (5,289 m) for a first snow climb. We pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Kanamo Peak: questions climbers ask",
  "faqs": [
-  ["Is Kanamo Peak open in 2026?", "Unclear. A 2019 village restriction was never matched by a published reopening order, although climbers reached the summit in 2026. Check with the Kibber panchayat and the Kaza administration before planning."],
-  ["Why was Kanamo closed to trekkers?", "On 20 July 2019 village leaders above Kibber barred trekking groups after a water source was contaminated and litter was left near a river campsite."],
-  ["How high is Kanamo Peak?", "5,964 m (19,567 ft) in our dataset. Other sources quote 5,970 m or 5,974 m, so it sits just under 6,000 m."],
-  ["Is Kanamo a 6,000 m peak?", "No. It is a high 5,000 m peak. For a 6,000 m summit with clear access in Himachal, Yunam (6,111 m) in Lahaul is the closest match."],
-  ["Where does the Kanamo trek start?", "At Kibber, a village of about 4,270 m above Kaza in Spiti. Base camp is at about 4,800 m."],
-  ["How many days does Kanamo take?", "About 7–9 days from Manali and back, including acclimatisation in Kaza and Kibber and a long single summit push from base camp."],
-  ["Is Kanamo difficult?", "It is non-technical in normal conditions, with no roped climbing, but very high. Acclimatisation, not the terrain, decides most attempts."],
-  ["When is the best time to climb Kanamo?", "June to September. Spiti is in the rain shadow, so the monsoon matters much less here than in Manali."]
+  [
+   "Is Kanamo Peak open in 2026?",
+   "Unclear. A 2019 village restriction was never matched by a published reopening order, although climbers reached the summit in 2026. Check with the Kibber panchayat and the Kaza administration before planning."
+  ],
+  [
+   "Why was Kanamo closed to trekkers?",
+   "On 20 July 2019 village leaders above Kibber barred trekking groups after a water source was contaminated and litter was left near a river campsite."
+  ],
+  [
+   "How high is Kanamo Peak?",
+   "5,964 m (19,567 ft) in our dataset. Other sources quote 5,970 m or 5,974 m, so it sits just under 6,000 m."
+  ],
+  [
+   "Is Kanamo a 6,000 m peak?",
+   "No. It is a high 5,000 m peak. For a 6,000 m summit with clear access in Himachal, Yunam (6,111 m) in Lahaul is the closest match."
+  ],
+  [
+   "Where does the Kanamo trek start?",
+   "At Kibber, a village of about 4,270 m above Kaza in Spiti. Base camp is at about 4,800 m."
+  ],
+  [
+   "How many days does Kanamo take?",
+   "About 7–9 days from Manali and back, including acclimatisation in Kaza and Kibber and a long single summit push from base camp."
+  ],
+  [
+   "Is Kanamo difficult?",
+   "It is non-technical in normal conditions, with no roped climbing, but very high. Acclimatisation, not the terrain, decides most attempts."
+  ],
+  [
+   "When is the best time to climb Kanamo?",
+   "June to September. Spiti is in the rain shadow, so the monsoon matters much less here than in Manali."
+  ]
  ],
  "sources": [
-  ["The Tribune (4 Jul 2026) — Spiti teen Tenzin Norden becomes first woman from the valley to scale Kanamo", "https://www.tribuneindia.com/news/himachal/spiti-teen-tenzin-norden-scripts-history-becomes-1st-woman-from-valley-to-scale-kanamo-peak/"],
-  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"],
-  ["Wikipedia — Kibber", "https://en.wikipedia.org/wiki/Kibber"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["Himachal Pradesh Miscellaneous Adventure Activities (Amendment) Rules 2021", "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"],
-  ["CDC Yellow Book — High-altitude travel and altitude illness", "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"]
- ]
+  [
+   "The Tribune (4 Jul 2026) — Spiti teen Tenzin Norden becomes first woman from the valley to scale Kanamo",
+   "https://www.tribuneindia.com/news/himachal/spiti-teen-tenzin-norden-scripts-history-becomes-1st-woman-from-valley-to-scale-kanamo-peak/"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ],
+  [
+   "Wikipedia — Kibber",
+   "https://en.wikipedia.org/wiki/Kibber"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Himachal Pradesh Miscellaneous Adventure Activities (Amendment) Rules 2021",
+   "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"
+  ],
+  [
+   "CDC Yellow Book — High-altitude travel and altitude illness",
+   "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"
+  ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Kanamo in pictures",
+  "lead": "The snow pyramid above Kibber in Spiti — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-hero-1-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-hero-1-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-hero-1-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kanamo peak above Kibber, Spiti",
+    "cap": "Kanamo above Kibber",
+    "by": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kanamo_Peak_South_Kibber_Spiti_Jun18_D72_7534.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-hero-1-768x512.webp",
+    "wp_id": 18846
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Kanamo peaks seen from south of Kibber",
+    "cap": "Kanamo from south of Kibber",
+    "by": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kanamo_Peaks_South_Kibber_Spiti_Jun18_D72_7523.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-768x432.webp",
+    "wp_id": 18849
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kanamo peaks from the southwest of Kibber",
+    "cap": "From the southwest of Kibber",
+    "by": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kanamo_Peaks_Southwest_Kibber_Spiti_Jun18_D72_7743.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-768x512.webp",
+    "wp_id": 18851
+   }
+  ]
+ }
 }
