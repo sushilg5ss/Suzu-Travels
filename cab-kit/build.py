@@ -199,6 +199,14 @@ def vehicle_cards(slug, ctx_label, ref=None):
              photo=(PHOTOS.get(v["id"], {}).get("src", "")), alt=v["photo_alt"], credit=(PHOTOS.get(v["id"], {}).get("credit", ""))) for v in FLEET])
     types = '<span class="lbl">Type</span><button type="button" class="szc-chip on" data-ft="all">All</button>' + "".join(f'<button type="button" class="szc-chip" data-ft="{k}">{l}</button>' for k, l in VTYPES)
     seats = '<span class="lbl">Seats</span><button type="button" class="szc-chip on" data-fs="all">Any</button><button type="button" class="szc-chip" data-fs="1-4">Up to 4</button><button type="button" class="szc-chip" data-fs="5-7">5–7</button><button type="button" class="szc-chip" data-fs="8-17">8–17</button><button type="button" class="szc-chip" data-fs="18-99">18+</button><span class="szc-fcount" id="szc-fcount"></span>'
+    if slug == "cabs":
+        # 7 Nov 2026 hub size trim (ENHANCEMENTS #15): photo URLs share one base - send it once as "pb"; kit_hub.js (hub only) re-joins pb + file.
+        srcs = [x["photo"] for x in fl["v"] if x["photo"]]
+        pb = srcs[0].rsplit("/", 1)[0] + "/" if srcs else ""
+        if pb and all(x.startswith(pb) for x in srcs):
+            fl["pb"] = pb
+            for x in fl["v"]:
+                x["photo"] = x["photo"][len(pb):]
     return (f'<div id="szc-fleet" data-fleet=\'{esc(json.dumps(fl, ensure_ascii=False, separators=(",", ":")))}\'>{tier_switch()}'
             f'<div class="szc-filters">{types}</div><div class="szc-filters" style="margin-top:8px">{seats}</div>'
             f'<div class="szc-grid">{"".join(cards)}</div>{credits_block()}</div>')
@@ -499,6 +507,8 @@ def finish(slug, h, css_extra=""):
             u = ph.get("src", "")
             if "/fleet-photos/" in u and u.endswith(".webp"):
                 m = m.replace(f'<img src="{u}"', f'<img src="{swap(u)[:-5]}-800.webp"').replace(u, swap(u))
+                pbu = u.rsplit("/", 1)[0] + "/"
+                m = m.replace(f'"pb":"{pbu}"', f'"pb":"{swap(pbu)}"')  # 7 Nov 2026: data-fleet photo base (ENHANCEMENTS #15 trim) gets the same lighter-photo SHA
         m = m.replace(' target="_blank" rel="noopener"', ' target="_blank"').replace(' loading="lazy" decoding="async"', ' loading="lazy"')  # hub size budget: target=_blank implies noopener in all current browsers; lazy imgs decode off-thread anyway
         pu = MEDIA.get("film", {}).get("poster", "")
         if pu:

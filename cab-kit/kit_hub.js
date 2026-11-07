@@ -4,6 +4,8 @@
    Same rules as kit.js: ES5, no ampersand character, no double-slash comments, HTML only in single-quoted strings. */
 /* Pickup presets + full place list (ENHANCEMENTS #6, 27 Oct 2026): the HTML datalist carries route cities + pickup points only; the other PLACES are appended here. */
 /* Hub size trim (ENHANCEMENTS #19, 6 Nov 2026): hub.py sends the places as one 'Name;lat;lon|...' string - expand it to the {name:[lat,lon]} object the planner uses. */
+/* Hub size trim (ENHANCEMENTS #15, 7 Nov 2026): build.py sends the fleet photo base once as FL.pb - re-join it to each file name (FB holds the same objects). */
+if(typeof FL==='object'){if(FL){if(FL.pb){FL.v.forEach(function(v){if(v.photo){v.photo=FL.pb+v.photo;}});FL.pb='';}}}
 if(typeof PC.p==='string'){var pcp={};PC.p.split('|').forEach(function(x){var a=x.split(';');if(a.length===3){pcp[a[0]]=[+a[1],+a[2]];}});PC.p=pcp;}
 var dlp=$('szc-places');
 if(dlp){var dlHave={};qa('option',dlp).forEach(function(o){dlHave[o.value]=1;});Object.keys(PC.p).sort().forEach(function(k){if(!dlHave[k]){var o=document.createElement('option');o.value=k;dlp.appendChild(o);}});}
