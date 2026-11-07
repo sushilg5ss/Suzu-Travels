@@ -212,5 +212,82 @@
    "NDRF — Shikhar 2026 expedition",
    "https://ndrf.gov.in/en/node/91221"
   ]
- ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "The record-setting mountains",
+  "lead": "Kangchenjunga, Nanda Devi, Trisul and Kamet — the summits behind India's mountaineering records, in real photographs each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kangchenjunga glowing at sunrise above the Sikkim hills",
+    "cap": "Kangchenjunga at sunrise",
+    "by": "Johannes Bahrdt",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kangchenjunga-from-Gangtok.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-768x576.webp",
+    "wp_id": 18745
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-768x513.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-1024x684.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-1536x1026.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1283,
+    "alt": "Trishul peak in golden hour light",
+    "cap": "Trishul in the golden hour",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trishul_Peak_in_the_Golden_Hour.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-fig-2-768x513.webp",
+    "wp_id": 18790
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Nanda Devi rising above the forested ridges of Garhwal",
+    "cap": "Nanda Devi above the Garhwal ridges",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_in_bright_sunlight.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-768x432.webp",
+    "wp_id": 18756
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1024x694.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1536x1042.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1302,
+    "alt": "A climber in bad weather high on Kamet",
+    "cap": "Kamet: bad weather high on the mountain",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_mauvais.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp",
+    "wp_id": 18782
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-768x324.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-1024x432.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-1536x648.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3.webp 1920w",
+    "w": 1920,
+    "h": 810,
+    "alt": "Panorama of the Trisul massif",
+    "cap": "The Trisul massif",
+    "by": "Calcurabbie",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trisul_peak_panorama.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-g-3-768x324.webp",
+    "wp_id": 18794
+   }
+  ]
+ }
 }

@@ -14,24 +14,60 @@
  "tag": "Uttarakhand's mountains, from Gangotri to the Kumaon border.",
  "sub": "Sixty notable summits, from 7,816 m Nanda Devi to the walking summits of the foothills, with their heights, districts, first ascents and 2026 status: what is open, what is still closed and how the permits work.",
  "chips": [
-  ["7,816 m", "Nanda Devi (closed)"],
-  ["60 peaks", "in our table"],
-  ["12 peaks", "above 7,000 m"],
-  ["83 peaks", "opened in Feb 2026"],
-  ["May–Jun · Sep–Oct", "climbing seasons"]
+  [
+   "7,816 m",
+   "Nanda Devi (closed)"
+  ],
+  [
+   "60 peaks",
+   "in our table"
+  ],
+  [
+   "12 peaks",
+   "above 7,000 m"
+  ],
+  [
+   "83 peaks",
+   "opened in Feb 2026"
+  ],
+  [
+   "May–Jun · Sep–Oct",
+   "climbing seasons"
+  ]
  ],
  "hero_alt": "Himalayan ridges, a snow camp, a meadow base camp and a roped team (stock footage) with statements: 60 peaks in one table, highest 7,816 m, 12 above 7,000 m, 83 opened in 2026",
  "ladder_alt": "Animated chart of seven Uttarakhand peaks at their true heights: Bandarpunch, Shivling, Changabang, Satopanth, Trisul I, Kamet and Nanda Devi",
  "q": "Which is the highest peak in Uttarakhand?",
  "answer": "<b>Nanda Devi</b> (7,816 m / 25,643 ft) is the highest peak in Uttarakhand and the highest mountain wholly within India, but it has been closed to climbers since 1983. Second is <a href=\"/mountains-of-india/kamet/\">Kamet</a> (7,756 m / 25,446 ft), which is open in 2026. Below are 60 Uttarakhand peaks, 12 of them above 7,000 m, from our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
  "facts": [
-  ["Highest peak", "Nanda Devi, 7,816 m / 25,643 ft (closed since 1983)"],
-  ["Second highest", "Kamet, 7,756 m / 25,446 ft (Chamoli)"],
-  ["Peaks in this list", "60 (3,022–7,816 m)"],
-  ["Above 7,000 m", "12 peaks"],
-  ["Opened in 2026", "83 peaks, 5,700–7,756 m (3–4 Feb 2026)"],
-  ["Regions", "Garhwal and Kumaon"],
-  ["Climbing seasons", "May–Jun and Sep–Oct"]
+  [
+   "Highest peak",
+   "Nanda Devi, 7,816 m / 25,643 ft (closed since 1983)"
+  ],
+  [
+   "Second highest",
+   "Kamet, 7,756 m / 25,446 ft (Chamoli)"
+  ],
+  [
+   "Peaks in this list",
+   "60 (3,022–7,816 m)"
+  ],
+  [
+   "Above 7,000 m",
+   "12 peaks"
+  ],
+  [
+   "Opened in 2026",
+   "83 peaks, 5,700–7,756 m (3–4 Feb 2026)"
+  ],
+  [
+   "Regions",
+   "Garhwal and Kumaon"
+  ],
+  [
+   "Climbing seasons",
+   "May–Jun and Sep–Oct"
+  ]
  ],
  "intro": [
   "Uttarakhand holds two Himalayan regions. <b>Garhwal</b>, in the west, carries the Gangotri glacier peaks above the source of the Ganga, the Badrinath and Kamet group near Tibet and most of the Nanda Devi group. <b>Kumaon</b>, in the east, holds Panchachuli, Nanda Kot and the Kuti valley on the Nepal and Tibet borders. Most of the big summits stand in four districts: Uttarkashi, Chamoli, Pithoragarh and Bageshwar.",
@@ -39,7 +75,9 @@
   "Three climbing firsts happened here. <a href=\"#peak-trisul-i\">Trisul I</a> (7,120 m) in 1907 was the first 7,000 m summit ever climbed. Kamet in 1931 was the first summit above 25,000 ft. Nanda Devi in 1936 was the highest summit climbed until 1950. More in our <a href=\"/mountains-of-india/records/\">climbing records timeline</a>."
  ],
  "table": {
-  "where": {"state": "uttarakhand"},
+  "where": {
+   "state": "uttarakhand"
+  },
   "h2": "All 60 Uttarakhand peaks, highest first",
   "label": "The list",
   "text": [
@@ -87,29 +125,191 @@
  "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Uttarakhand peaks. If one is your goal, Himachal is a good place to build the experience: Friendship Peak first, then Yunam or Deo Tibba, then Reo Purgyil. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Uttarakhand's peaks: your questions",
  "faqs": [
-  ["Which is the highest peak in Uttarakhand?", "Nanda Devi, 7,816 m (25,643 ft; some lists give 7,817 m). It is also the highest mountain wholly within India, and it has been closed to climbers since 1983."],
-  ["Which is the second-highest peak in Uttarakhand?", "Kamet, 7,756 m (25,446 ft), in Chamoli district near the Tibet border. First climbed in 1931, it was the first summit above 25,000 ft."],
-  ["How many peaks are there in Uttarakhand?", "There is no single official count. Wikipedia lists about 200 peaks above 6,000 m; our table tracks 60 notable peaks, 12 of them above 7,000 m."],
-  ["How many peaks did Uttarakhand open in 2026?", "83 peaks between 5,700 m and 7,756 m, announced on 3–4 February 2026 across Garhwal and Kumaon. Applications go through the state's online UKMPS portal."],
-  ["Do Indian climbers pay fees in Uttarakhand?", "No state expedition fees in 2026: the state now covers peak, camping, environmental and trail fees. Foreign teams pay only the IMF charges."],
-  ["Is Nanda Devi open for climbing?", "No. The main summit and the inner sanctuary have been closed since 1983. Only Nanda Devi East (7,434 m) is on the 2026 open list."],
-  ["What is the best season for mountaineering in Uttarakhand?", "May–June and September–October. Avoid the July–August monsoon, which brings landslides and poor visibility."],
-  ["Which was the first 7,000 m peak ever climbed?", "Trisul I (7,120 m) in Uttarakhand, in 1907. Kamet, climbed in 1931, was the first summit above 25,000 ft."]
+  [
+   "Which is the highest peak in Uttarakhand?",
+   "Nanda Devi, 7,816 m (25,643 ft; some lists give 7,817 m). It is also the highest mountain wholly within India, and it has been closed to climbers since 1983."
+  ],
+  [
+   "Which is the second-highest peak in Uttarakhand?",
+   "Kamet, 7,756 m (25,446 ft), in Chamoli district near the Tibet border. First climbed in 1931, it was the first summit above 25,000 ft."
+  ],
+  [
+   "How many peaks are there in Uttarakhand?",
+   "There is no single official count. Wikipedia lists about 200 peaks above 6,000 m; our table tracks 60 notable peaks, 12 of them above 7,000 m."
+  ],
+  [
+   "How many peaks did Uttarakhand open in 2026?",
+   "83 peaks between 5,700 m and 7,756 m, announced on 3–4 February 2026 across Garhwal and Kumaon. Applications go through the state's online UKMPS portal."
+  ],
+  [
+   "Do Indian climbers pay fees in Uttarakhand?",
+   "No state expedition fees in 2026: the state now covers peak, camping, environmental and trail fees. Foreign teams pay only the IMF charges."
+  ],
+  [
+   "Is Nanda Devi open for climbing?",
+   "No. The main summit and the inner sanctuary have been closed since 1983. Only Nanda Devi East (7,434 m) is on the 2026 open list."
+  ],
+  [
+   "What is the best season for mountaineering in Uttarakhand?",
+   "May–June and September–October. Avoid the July–August monsoon, which brings landslides and poor visibility."
+  ],
+  [
+   "Which was the first 7,000 m peak ever climbed?",
+   "Trisul I (7,120 m) in Uttarakhand, in 1907. Kamet, climbed in 1931, was the first summit above 25,000 ft."
+  ]
  ],
  "sources": [
-  ["Wikipedia — List of mountain peaks of Uttarakhand", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"],
-  ["Uttarakhand Forest Department — Mountaineering Permission System (UKMPS)", "https://mountaineering.uk.gov.in/ApplyPermit"],
-  ["Uttarakhand Forest Department — Kamet peak page", "https://mountaineering.uk.gov.in/kamet"],
-  ["ETV Bharat, Feb 2026 — Uttarakhand opens 83 Himalayan peaks, waives fees for Indian climbers", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
-  ["The News Mill, Feb 2026 — Uttarakhand opens 83 Himalayan peaks for mountaineering expeditions", "https://thenewsmill.com/2026/02/uttarakhand-opens-83-himalayan-peaks-for-mountaineering-expeditions/"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
-  ["PIB (Ministry of Home Affairs), Aug 2019 — 137 peaks opened to foreign expeditions", "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=192750&reg=48&lang=2"],
-  ["American Alpine Journal — Uttarakhand rule changes and the Draupadi ka Danda avalanche", "https://publications.americanalpineclub.org/articles/13201216469"],
-  ["Outlook Traveller — Gangotri National Park reopens: dates and permits", "https://www.outlooktraveller.com/News/gangotri-national-park-reopens-for-trek-date-permits-and-what-travellers-need-to-know"],
-  ["The Statesman — Online ILPs for tourist places on the Indo-China border in Uttarakhand", "https://www.thestatesman.com/india/now-online-ilps-for-tourist-places-on-indo-china-border-in-uttarakhand-1503398921.html"],
-  ["Nehru Institute of Mountaineering — 2026 course programme (PDF)", "https://www.nimindia.net/_files/ugd/25f551_b1475f92e2044590bfd35520b4b0115c.pdf"]
+  [
+   "Wikipedia — List of mountain peaks of Uttarakhand",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
+  ],
+  [
+   "Uttarakhand Forest Department — Mountaineering Permission System (UKMPS)",
+   "https://mountaineering.uk.gov.in/ApplyPermit"
+  ],
+  [
+   "Uttarakhand Forest Department — Kamet peak page",
+   "https://mountaineering.uk.gov.in/kamet"
+  ],
+  [
+   "ETV Bharat, Feb 2026 — Uttarakhand opens 83 Himalayan peaks, waives fees for Indian climbers",
+   "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ],
+  [
+   "The News Mill, Feb 2026 — Uttarakhand opens 83 Himalayan peaks for mountaineering expeditions",
+   "https://thenewsmill.com/2026/02/uttarakhand-opens-83-himalayan-peaks-for-mountaineering-expeditions/"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "PIB (Ministry of Home Affairs), Aug 2019 — 137 peaks opened to foreign expeditions",
+   "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=192750&reg=48&lang=2"
+  ],
+  [
+   "American Alpine Journal — Uttarakhand rule changes and the Draupadi ka Danda avalanche",
+   "https://publications.americanalpineclub.org/articles/13201216469"
+  ],
+  [
+   "Outlook Traveller — Gangotri National Park reopens: dates and permits",
+   "https://www.outlooktraveller.com/News/gangotri-national-park-reopens-for-trek-date-permits-and-what-travellers-need-to-know"
+  ],
+  [
+   "The Statesman — Online ILPs for tourist places on the Indo-China border in Uttarakhand",
+   "https://www.thestatesman.com/india/now-online-ilps-for-tourist-places-on-indo-china-border-in-uttarakhand-1503398921.html"
+  ],
+  [
+   "Nehru Institute of Mountaineering — 2026 course programme (PDF)",
+   "https://www.nimindia.net/_files/ugd/25f551_b1475f92e2044590bfd35520b4b0115c.pdf"
+  ]
  ],
  "sameAs": [
   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
- ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Uttarakhand's peaks in pictures",
+  "lead": "Nanda Devi, Kamet, Trisul, Shivling, Satopanth and Changabang — the Garhwal and Kumaon giants in real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Nanda Devi rising above the forested ridges of Garhwal",
+    "cap": "Nanda Devi above the Garhwal ridges",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_in_bright_sunlight.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-hero-1-768x432.webp",
+    "wp_id": 18756
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-1152x1536.webp 1152w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 2560,
+    "alt": "Mt Shivling above the Gangotri glacier",
+    "cap": "Shivling above the Gangotri glacier",
+    "by": "DipankarSen68",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mt_Shivling_WTK_IMG_0598_150917.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-768x1024.webp",
+    "wp_id": 18811
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kamet seen across forested ridges in Garhwal",
+    "cap": "Kamet across the Garhwal ridges",
+    "by": "Rohit Gosain",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_Closeup.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-768x576.webp",
+    "wp_id": 18773
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-768x418.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-1024x557.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-1536x835.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1044,
+    "alt": "Trisul massif above golden autumn slopes in Garhwal",
+    "cap": "Trisul above autumn slopes",
+    "by": "Shaswat Nimesh",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Trisul_Himalayan_mountain_peaks.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-trisul-hero-1-768x418.webp",
+    "wp_id": 18788
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Satopanth peak above the moraines of the Gangotri glacier",
+    "cap": "Satopanth above the Gangotri moraines",
+    "by": "Asish Das75",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mt_Satopanth_WTK20150921-IMG_2832.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-768x576.webp",
+    "wp_id": 18818
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-768x400.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-1024x533.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-1536x799.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 999,
+    "alt": "Kalanka and Changabang peaks in the Nanda Devi sanctuary rim",
+    "cap": "Kalanka and Changabang",
+    "by": "Mechsourav",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kalanka_and_Changabang_peaks_from_Bagini_glacier_DSCN0066.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-768x400.webp",
+    "wp_id": 18806
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Nanda Devi silhouetted before sunrise",
+    "cap": "Nanda Devi: before sunrise",
+    "by": "Harshit SR",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_before_sunrise.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-4-768x432.webp",
+    "wp_id": 18763
+   }
+  ]
+ }
 }
