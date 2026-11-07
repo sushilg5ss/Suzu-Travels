@@ -498,8 +498,14 @@ def jyotirlinga_page():
         disp = ""
         if isinstance(j.get("disputes"), dict) and j["disputes"].get("note"):
             disp = f'<p class="szp-note"><b>Other traditions:</b> {e(first_sentences(j["disputes"]["note"], 2))}</p>'
+        own = jl_page(j["slug"])
+        pslug = next((k for k, v in LIVE.items() if v.get("path") == own), None) if own else None
+        fph = used(page_photo(pslug, "fig")) if pslug else None
+        figh = (f'<figure class="szp-fig"><div class="im">{ph_img(fph, sizes="(max-width:900px) 100vw, 40vw")}</div><figcaption><b>{e(fph["cap"])}</b>'
+                f'<span class="szp-cr">{credit(fph)}</span></figcaption></figure></div>') if fph else ""
         details += (f'<article class="szp-sec{" alt" if i % 2 else ""}" id="jl-{j["slug"]}"><span class="k">Jyotirlinga {i + 1} of 12 · {e(j["state"])}</span>'
                     f'<h2>{e(short_name(j))} <span class="dv" style="color:var(--saff);font-size:.8em">{e(deva_short(j))}</span></h2>'
+                    + ('<div class="szp-ov"><div>' if fph else "") +
                     f'<p class="lead">{e(j["temple_name"])} · {e(j["town"])}, {e(j["district"])} district</p>'
                     f'<p>{legend_html(j)}</p>'
                     f'<div class="szp-scroll"><table class="szp-tbl" style="min-width:520px"><tbody>'
@@ -509,7 +515,7 @@ def jyotirlinga_page():
                     + f'<tr><td><b>Best months</b></td><td>{e(dash(months(j)))}</td></tr><tr><td><b>Good to know</b></td><td>{e(dd_["tip"])}</td></tr>'
                     f'<tr><td><b>Nearest airport</b></td><td>{e(dash(airport(j)))}</td></tr><tr><td><b>Nearest railway</b></td><td>{e(dash(rail(j)))}</td></tr>'
                     + (f'<tr><td><b>Official site</b></td><td>{ext(j["official_site"].split()[0], e(urllib.parse.urlparse(j["official_site"].split()[0]).netloc))}</td></tr>' if j.get("official_site") else "")
-                    + f'</tbody></table></div>{disp}<p class="szp-note">Timings as published by the temple or state tourism (checked {VERIFIED}); they change on festivals — confirm before you go.</p></article>')
+                    + f'</tbody></table></div>{disp}<p class="szp-note">Timings as published by the temple or state tourism (checked {VERIFIED}); they change on festivals — confirm before you go.</p>' + ("</div>" + figh if fph else "") + '</article>')
     faqs = [
         ("What are the names of the 12 Jyotirlingas?", "Somnath, Mallikarjuna, Mahakaleshwar, Omkareshwar, Kedarnath, Bhimashankar, Kashi Vishwanath, Trimbakeshwar, Vaidyanath, Nageshwar, Rameshwaram and Grishneshwar — the order of the Shiva Purana."),
         ("Which is the first Jyotirlinga?", "Somnath, at Prabhas Patan on the Gujarat coast, is traditionally counted first. Its legend tells of the Moon (Soma), cursed to fade, who regained his light by worshipping Shiva here."),
@@ -524,8 +530,9 @@ def jyotirlinga_page():
     stotra = ("सौराष्ट्रे सोमनाथं च श्रीशैले मल्लिकार्जुनम् ।<br>उज्जयिन्यां महाकालम् ओंकारम् अमलेश्वरम् ॥<br>"
               "परल्यां वैद्यनाथं च डाकिन्यां भीमशंकरम् ।<br>सेतुबन्धे तु रामेशं नागेशं दारुकावने ॥<br>"
               "वाराणस्यां तु विश्वेशं त्र्यम्बकं गौतमीतटे ।<br>हिमालये तु केदारं घुश्मेशं च शिवालये ॥")
+    HS = hero_slides(["somnath", "kedarnath", "mahakaleshwar", "kashi-vishwanath", "rameshwaram"], "")
     body = f'''
-<section class="szp-hero">{hero_video("12-jyotirlinga", "hero", "Animation: a pillar of light splits earth and sky — the Shiva Purana story of the first Jyotirlinga")}
+<section class="szp-hero{" ph" if HS else ""}">{HS or hero_video("12-jyotirlinga", "hero", "Animation: a pillar of light splits earth and sky — the Shiva Purana story of the first Jyotirlinga")}
 <div class="szp-hero-in"><span class="k">Pilgrimage tours · 12 Jyotirlinga</span>
 <p class="szp-tag"><span class="dv">द्वादश ज्योतिर्लिंग</span>Twelve pillars of light, one yatra.</p>
 <p class="szp-sub">The names and places of all 12 Jyotirlingas, an interactive map, the legend behind each temple, darshan timings, how to reach — and a realistic route for the full circuit.</p>
@@ -572,7 +579,7 @@ def jyotirlinga_page():
 <section class="szp-sec alt" id="faq"><span class="k">FAQ</span><h2>12 Jyotirlinga: questions people ask</h2>{faq(faqs)}</section>
 <section class="szp-sec" id="more"><h2>More pilgrimage guides</h2>{guides_block(exclude=("12-jyotirlinga",))}<div class="szp-links"><a class="szp-link" href="{HUB}"><span class="n">All pilgrimage tours</span><span class="c">Shakti Peeths, Char Dham, Amarnath &amp; more</span></a>{pkg_link("jyotirlinga")}{pkg_link("kashi")}{pkg_link("chardham")}</div>
 <h3 class="szp-gh">Sources</h3>{sources(SRC_JL)}
-<p class="szp-note">Legends are retold in our own words from the Shiva Purana and temple traditions. The animations are original artwork by Suzu Travels.</p></section>'''
+{photo_credits({})}<p class="szp-note">Legends are retold in our own words from the Shiva Purana and temple traditions. Photographs are by the Wikimedia Commons contributors credited above; the animations are original artwork by Suzu Travels.</p></section>'''
     faq_schema = faq_ld(faqs)
     schema = ld(
         {"@type": "Article", "@id": "https://suzutravels.com/pilgrimage-tours/12-jyotirlinga/#article", "headline": "12 Jyotirlinga: Names, Places, Map & Yatra Route",

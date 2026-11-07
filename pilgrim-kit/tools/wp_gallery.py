@@ -32,7 +32,7 @@ def main():
     items = []
     for m in media:
         fn = m["source_url"].rsplit("/", 1)[-1]
-        mm = re.match(rf"suzu-{re.escape(slug)}-(hero|fig|g|bg)-(\d+)\.", fn)
+        mm = re.match(rf"suzu-{re.escape(slug)}-(hero|fig|g|bg|side)-(\d+)(?:-scaled)?\.", fn)
         if not mm:
             continue
         role, n = mm.group(1), int(mm.group(2))
