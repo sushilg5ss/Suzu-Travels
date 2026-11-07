@@ -24,7 +24,7 @@
   - **Hidimba Devi's birthday fair / Dhungri Mela — 14 May** each year (CPREEC gives 14 May; Incredible India "annual fair in May"; Lonely Planet "several days in mid-May"; devtas come on palanquins; local women dance) → page: "Dhungri Mela, around 14 May (next: May 2027 — confirm the dates locally)".
   - **Bahadur Singh Re Jatar** — fair in **Shravan (Jul–Aug)** in memory of Raja Bahadur Singh — Incredible India, CPREEC.
   - **Navratri** — locally the focus shifts to Hidimba Devi — Incredible India, Wikipedia.
-  - **Kullu Dussehra** — International Kullu Dussehra **2026: 21–27 Oct** (DD India, 19 Oct 2026 https://ddindia.co.in/2026/10/kullu-dussehra-a-congregation-of-deities-celebrating-faith-community-and-himachal-heritage/); Hidimba Devi's **arrival from Manali with her retinue is an important part of the festival** (DD India). The popular claim that the Raghunath rath cannot move until she arrives / that she is "grandmother of the Kullu royal family" is **UNVERIFIED** today — don't print. (Some sites give 20–26 Oct for 2026 — DD India's 21–27 Oct wins.)
+  - **Kullu Dussehra** — International Kullu Dussehra **2026: 21–27 Oct** (News On AIR, 21 Oct 2026 https://newsonair.gov.in/week-long-international-kullu-dussehra-to-begin-today-in-himachal-pradesh/ — DD India source of 19 Oct went 404 (SEO & QA 6 Nov), replaced by Research 7 Nov); Hidimba Devi's **arrival from Manali with her retinue is an important part of the festival** (DD India). The popular claim that the Raghunath rath cannot move until she arrives / that she is "grandmother of the Kullu royal family" is **UNVERIFIED** today — don't print. (Some sites give 20–26 Oct for 2026 — DD India's 21–27 Oct wins.)
 - Season: open all year (Incredible India hours, no closure noted); Manali is cold Dec–Feb (Jan −6 to 16 °C per Incredible India climate table); snow can make the forest path icy. Best: **Mar–Jun and Sep–Nov** (editorial) — mid-May for the mela; Navratri/Dussehra for festive mood. Summer weekends and Christmas–New Year: long queues (Lonely Planet notes crowds of selfie-takers).
 - How to reach (OSRM 2026-10-21 unless noted):
   - Road — **~2 km from central Manali** (Lonely Planet): walk up through the deodar forest or take a taxi/auto to the temple lane.
@@ -67,7 +67,7 @@
 1. Incredible India (Govt of India) — Hidimba Temple https://www.incredibleindia.gov.in/en/himachal-pradesh/manali/hidimba-temple (read 2026-10-21)
 2. National Culture Fund (Ministry of Culture) — Improving Tourist Amenities at Hidimba Devi Temple https://ncf.nic.in/projects/ongoing-projects/himachal-pradesh
 3. CPREEC Eco-heritage — Dhoongri Temple https://ecoheritage.cpreec.org/dhoongri-temple/
-4. DD India — Kullu Dussehra 2026 (19 Oct 2026) https://ddindia.co.in/2026/10/kullu-dussehra-a-congregation-of-deities-celebrating-faith-community-and-himachal-heritage/
+4. News On AIR — Week-long International Kullu Dussehra to begin today (21 Oct 2026) https://newsonair.gov.in/week-long-international-kullu-dussehra-to-begin-today-in-himachal-pradesh/ (replaces dead DD India link, 7 Nov 2026)
 5. Wikipedia — Hidimba Devi Temple https://en.wikipedia.org/wiki/Hidimba_Devi_Temple
 6. Lonely Planet — Hidimba Devi Temple https://www.lonelyplanet.com/points-of-interest/hidimba-devi-temple/1292087
 7. Kullu district (official, for local notices) https://hpkullu.nic.in/ · Keyword Planner (1172710099, India-EN, 21 Oct 2026) · OSRM router (2026-10-21)
