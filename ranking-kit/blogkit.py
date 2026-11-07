@@ -75,10 +75,10 @@ CSS = """
 .szb-snow .note{font-size:12.5px;color:rgba(234,244,251,.7);margin:12px 0 0}
 .szb-snow .note a{color:var(--gold2)}
 .szb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
-.szb-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
+.szb-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
 .szb-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px rgba(11,31,51,.35)}
 .szb-card .b{align-self:flex-start;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);background:var(--ice);padding:3px 9px;border-radius:99px;margin-bottom:8px}
-.szb-card .t{font-weight:800;color:var(--navy);font-size:17px;line-height:1.3}.szb-card .c{font-size:14.5px;color:var(--mid);margin-top:6px}
+.szb-card .t{font-weight:800;color:var(--navy)!important;font-size:17px;line-height:1.3;text-decoration:none!important}.szb-card .t:after{content:"";position:absolute;inset:0;border-radius:18px;z-index:2}.szb-card .c{font-size:14.5px;color:var(--mid);margin-top:6px}
 .szb-card .go{margin-top:auto;padding-top:10px;font-weight:800;color:var(--sky);font-size:14px}
 .szb-spots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:16px}
 .szb-spot{background:var(--ice2);border:1px solid var(--line);border-radius:18px;padding:18px;position:relative;overflow:hidden}
@@ -89,8 +89,8 @@ CSS = """
 .szb-faq details{border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:0 0 10px;background:#fff}
 .szb-faq summary{cursor:pointer;font-weight:800;color:var(--navy)}.szb-faq details p{margin:10px 0 0}
 .szb-src{font-size:14px;color:var(--mid)}.szb-src li{margin:0 0 4px}
-@media(max-width:900px){.szb-row,.szb-quote{grid-template-columns:1fr;gap:20px}.szb-quote .szb-btns{justify-content:flex-start}.szb-gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:160px}.szb-sp{grid-template-columns:1fr;gap:8px}.szb-sp .wk{text-align:left}.szb-hero-in{padding:26px 20px 34px}.szb-hero .szb-cr{max-width:90%}}
-@media(prefers-reduced-motion:reduce){.szb-hero>img,.szb-flakes{animation:none}}
+@media(max-width:900px){.szb-row,.szb-quote{grid-template-columns:1fr;gap:20px}.szb-quote .szb-btns{justify-content:flex-start}.szb-gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:160px}.szb-sp{grid-template-columns:1fr;gap:8px}.szb-sp .wk{text-align:left}.szb-hero-in{padding:26px 20px 34px}.szb-hero:after{background:linear-gradient(180deg,rgba(6,18,31,.25),rgba(6,18,31,.55) 30%,rgba(6,18,31,.94))}.szb-hero .szb-cr{max-width:90%}}
+@media(max-width:640px){.szb-tbl,.szb-tbl tbody,.szb-tbl tr,.szb-tbl td{display:block;width:100%}.szb-tbl thead{display:none}.szb-tbl{border:0;border-radius:0}.szb-tbl tr{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 10px;background:#fff}.szb-tbl td{border-top:1px solid var(--line);padding:8px 14px;background:#fff!important}.szb-tbl td:first-child{border-top:0;background:var(--navy)!important;color:#fff;font-weight:800}.szb-tbl td:not(:first-child):before{content:attr(data-l);display:block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2px}}\n@media(prefers-reduced-motion:reduce){.szb-hero>img,.szb-flakes{animation:none}}
 """
 
 JS = """(function(){var d=document;function el(t,c,x){var n=d.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
@@ -188,7 +188,7 @@ def render(s):
     for sec in s.get("sections2", []):
         out.append(section(sec, None, s))
     c = s["ctas"]
-    cards = "".join(f'<a class="szb-card" href="{h}"><span class="b">{e(b)}</span><span class="t">{e(t)}</span><span class="c">{x}</span><span class="go">See the plan →</span></a>' for h, t, x, b in c["items"])
+    cards = "".join(f'<div class="szb-card"><span class="b">{e(b)}</span><a class="t" href="{h}">{e(t)}</a><span class="c">{x}</span><span class="go">See the plan →</span></div>' for h, t, x, b in c["items"])
     out.append(f'<section class="szb-sec" id="plan"><span class="k">Plan it with Suzu</span><h2>{e(c["h2"])}</h2><p>{c["lead"]}</p><div class="szb-cards">{cards}</div></section>')
     out.append(f'<div class="szb-quote"><div><h2>{e(s["quote_h2"])}</h2><p>{s["quote_text"]}</p></div><div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">WhatsApp us</a>'
                f'<a class="szb-btn ghost" href="tel:+917087488961">Call +91 70874 88961</a></div></div>')
@@ -216,7 +216,7 @@ def section(sec, fig, s):
     if sec.get("table"):
         hd, rows = sec["table"]
         body += '<div class="szb-scroll"><table class="szb-tbl"><thead><tr>' + "".join(f"<th>{e(x)}</th>" for x in hd) + "</tr></thead><tbody>" + \
-                "".join("<tr>" + "".join(f"<td>{x}</td>" for x in r) + "</tr>" for r in rows) + "</tbody></table></div>"
+                "".join("<tr>" + "".join(f'<td data-l="{e(hd[i])}">{x}</td>' for i, x in enumerate(r)) + "</tr>" for r in rows) + "</tbody></table></div>"
     body += "".join(f"<p>{p}</p>" for p in sec.get("after", []))
     head = f'<span class="k">{e(sec.get("kicker", ""))}</span><h2>{e(sec["h2"])}</h2>'
     if fig:
