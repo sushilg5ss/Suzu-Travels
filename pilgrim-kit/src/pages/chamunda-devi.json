@@ -14,18 +14,42 @@
  "tag": "Mata Chamunda, below the Dhauladhar.",
  "sub": "Shri Chamunda Nandikeshwar Dham, on the Baner river near Dharamshala, honours the fierce Devi who defeated Chanda and Munda — with Shiva as Nandikeshwar in a cave behind her shrine. The legend, official darshan and aarti times, the Aadi Himani trek and how to reach.",
  "chips": [
-  ["5 am–10 pm", "summer darshan"],
-  ["~15 km", "from Dharamshala"],
-  ["Free langar", "twice a day"],
-  ["7 Apr 2027", "Chaitra Navratri begins"]
+  [
+   "5 am–10 pm",
+   "summer darshan"
+  ],
+  [
+   "~15 km",
+   "from Dharamshala"
+  ],
+  [
+   "Free langar",
+   "twice a day"
+  ],
+  [
+   "7 Apr 2027",
+   "Chaitra Navratri begins"
+  ]
  ],
  "q": "Where is Chamunda Devi temple and why is it sacred?",
  "answer": "Chamunda Devi temple (Shri Chamunda Nandikeshwar Dham) stands at Padar on the Baner river in <b>Kangra district, Himachal Pradesh</b>, about <b>15 km from Dharamshala</b> on the Palampur road. It honours Chamunda, the fierce form of the Devi who slew Chanda and Munda, with Shiva as Nandikeshwar in a cave behind. It is one of Himachal's five great Devi shrines.",
  "facts": [
-  ["5 am–10 pm", "summer darshan (winter 6 am–9 pm)"],
-  ["~15 km", "by road from Dharamshala"],
-  ["~25 km", "to Kangra (Gaggal) airport"],
-  ["~3,000 m", "Aadi Himani, the original hilltop shrine"]
+  [
+   "5 am–10 pm",
+   "summer darshan (winter 6 am–9 pm)"
+  ],
+  [
+   "~15 km",
+   "by road from Dharamshala"
+  ],
+  [
+   "~25 km",
+   "to Kangra (Gaggal) airport"
+  ],
+  [
+   "~3,000 m",
+   "Aadi Himani, the original hilltop shrine"
+  ]
  ],
  "intro": [
   "Mata Chamunda's temple sits low in the valley, beside the rushing Baner river, with the snow wall of the Dhauladhar rising behind it. The sanctum holds the Devi, draped mostly in red, with Hanuman and Bhairav on either side of the door. Behind the temple, a short flight of marble steps leads down to a cave where Shiva is worshipped as <b>Nandikeshwar</b> in a natural linga — which is why the shrine is called Chamunda Nandikeshwar Dham, a place where Shiva and Shakti are honoured together.",
@@ -35,31 +59,76 @@
   "h2": "The story of Chamunda Devi",
   "lead": "The Devi Mahatmya tells how the Goddess got her name, and Kangra remembers how she came down from the snows. This is how the stories are told.",
   "beats": [
-   ["A power from the brow", "In the Devi's war against the asuras Shumbha and Nishumbha, their generals Chanda and Munda marched against her. It is said that from her frowning brow sprang a dark, fearsome warrior goddess."],
-   ["Chanda and Munda fall", "The warrior goddess overcame both generals, and the Devi named her Chamunda after them. Some retellings link this fierce form with Kali."],
-   ["A priest's dream", "In Kangra, tradition says that about four centuries ago a king and a priest prayed for leave to bring the Devi down from her remote, snowbound hilltop shrine. She showed the priest in a dream where her old image lay buried."],
-   ["Down to the river", "The king's men could not move the image, but the priest, after bathing and coming in clean clothes with reverence, lifted it alone — and the shrine was set up here by the Baner river."]
+   [
+    "A power from the brow",
+    "In the Devi's war against the asuras Shumbha and Nishumbha, their generals Chanda and Munda marched against her. It is said that from her frowning brow sprang a dark, fearsome warrior goddess."
+   ],
+   [
+    "Chanda and Munda fall",
+    "The warrior goddess overcame both generals, and the Devi named her Chamunda after them. Some retellings link this fierce form with Kali."
+   ],
+   [
+    "A priest's dream",
+    "In Kangra, tradition says that about four centuries ago a king and a priest prayed for leave to bring the Devi down from her remote, snowbound hilltop shrine. She showed the priest in a dream where her old image lay buried."
+   ],
+   [
+    "Down to the river",
+    "The king's men could not move the image, but the priest, after bathing and coming in clean clothes with reverence, lifted it alone — and the shrine was set up here by the Baner river."
+   ]
   ],
-  "more": ["The story comes from the Devi Mahatmya (Durga Saptashati, chapter 7) in the Markandeya Purana, and from Kangra's own temple tradition. We retell it in our own words, as faith and tradition rather than history."]
+  "more": [
+   "The story comes from the Devi Mahatmya (Durga Saptashati, chapter 7) in the Markandeya Purana, and from Kangra's own temple tradition. We retell it in our own words, as faith and tradition rather than history."
+  ]
  },
  "darshan": {
   "h2": "Chamunda Devi temple timings",
   "rows": [
-   ["Summer", "5:00 am – 12 noon and 1:00 pm – 10:00 pm (closed 12–1 pm for bhog)"],
-   ["Winter", "6:00 am – 12 noon and 1:00 pm – 9:00 pm (closed 12–1 pm for bhog)"],
-   ["Aarti", "Morning about 8:00–8:45 am; evening about 7:10–7:50 pm"],
-   ["Langar", "Free, daily 12–2 pm and 7–9 pm (all day in Navratri); donations are voluntary"],
-   ["Online services", "Darshan slips and prasad only on the official kangratemples.hp.gov.in site"]
+   [
+    "Summer",
+    "5:00 am – 12 noon and 1:00 pm – 10:00 pm (closed 12–1 pm for bhog)"
+   ],
+   [
+    "Winter",
+    "6:00 am – 12 noon and 1:00 pm – 9:00 pm (closed 12–1 pm for bhog)"
+   ],
+   [
+    "Aarti",
+    "Morning about 8:00–8:45 am; evening about 7:10–7:50 pm"
+   ],
+   [
+    "Langar",
+    "Free, daily 12–2 pm and 7–9 pm (all day in Navratri); donations are voluntary"
+   ],
+   [
+    "Online services",
+    "Darshan slips and prasad only on the official kangratemples.hp.gov.in site"
+   ]
   ],
   "note": "Timings from the official temple trust page (checked 14 Oct 2026). The exact date the summer and winter timings change over is not published — confirm locally. Hours can change on festival days."
  },
  "dates": {
   "h2": "Chamunda Devi festivals and Navratri dates",
   "rows": [
-   ["Sharad Navratri 2026", "11–19 Oct 2026 (held)", "Panchang — the biggest crowds of the autumn"],
-   ["Mahashivratri 2027", "6 Mar 2027", "On the temple trust's festival list"],
-   ["Chaitra Navratri 2027", "From 7 Apr 2027", "Panchang; the trust also hoists flags for the Hindu New Year that day"],
-   ["Aadi Himani season", "About 15 Mar – 15 Nov", "Kangra district; closed in winter snow"]
+   [
+    "Sharad Navratri 2026",
+    "11–19 Oct 2026 (held)",
+    "Panchang — the biggest crowds of the autumn"
+   ],
+   [
+    "Mahashivratri 2027",
+    "6 Mar 2027",
+    "On the temple trust's festival list"
+   ],
+   [
+    "Chaitra Navratri 2027",
+    "From 7 Apr 2027",
+    "Panchang; the trust also hoists flags for the Hindu New Year that day"
+   ],
+   [
+    "Aadi Himani season",
+    "About 15 Mar – 15 Nov",
+    "Kangra district; closed in winter snow"
+   ]
   ],
   "note": "The temple is open all year. March–June and September–November are the most pleasant months; Dharamshala gets very heavy rain in the monsoon."
  },
@@ -76,35 +145,81 @@
  "reach": {
   "h2": "How to reach Chamunda Devi temple",
   "cards": [
-   ["By air", "Kangra Airport at Gaggal (Dharamshala) is about 25 km away, with flights to Delhi and Chandigarh."],
-   ["By rail", "The narrow-gauge Kangra Valley Railway stops at Kangra, about 14 km away. The nearest broad-gauge station is Pathankot, about 90 km."],
-   ["By road", "The temple is on the Dharamshala–Palampur road: about 15 km from Dharamshala, 19 km from Palampur and 24 km from McLeod Ganj. HRTC and private buses and <a href=\"https://suzutravels.com/cabs/dharamshala-taxi-service/\">Dharamshala taxis</a> run from all three. From our office at Ghumarwin it is about 113 km."],
-   ["At the temple", "The road reaches the gate and the temple stands on level ground by the river; the steps down to the Nandikeshwar cave are short marble stairs."]
+   [
+    "By air",
+    "Kangra Airport at Gaggal (Dharamshala) is about 25 km away, with flights to Delhi and Chandigarh."
+   ],
+   [
+    "By rail",
+    "The narrow-gauge Kangra Valley Railway stops at Kangra, about 14 km away. The nearest broad-gauge station is Pathankot, about 90 km."
+   ],
+   [
+    "By road",
+    "The temple is on the Dharamshala–Palampur road: about 15 km from Dharamshala, 19 km from Palampur and 24 km from McLeod Ganj. HRTC and private buses and <a href=\"https://suzutravels.com/cabs/dharamshala-taxi-service/\">Dharamshala taxis</a> run from all three. From our office at Ghumarwin it is about 113 km."
+   ],
+   [
+    "At the temple",
+    "The road reaches the gate and the temple stands on level ground by the river; the steps down to the Nandikeshwar cave are short marble stairs."
+   ]
   ]
  },
  "tips": {
   "h2": "Before you go",
   "items": [
-   ["Go early in Navratri", "Queues build from early morning during the Navratri fairs. Keep bags small and children close."],
-   ["Plan around bhog", "The sanctum closes from 12 noon to 1 pm for bhog. The 8 am and 7:10 pm aartis are the loveliest times to be there."],
-   ["Respect the shrine", "Modest clothes, shoes off at the gate, and follow the temple staff on photography."],
-   ["Good for elders", "Road to the gate, parking and a level temple by the river make Chamunda one of the easier Devi darshans. Save the Aadi Himani trek for the fit."],
-   ["Book only on the official site", "Darshan slips and prasad are offered online only on kangratemples.hp.gov.in. Don't pay agents who claim special darshan."],
-   ["Combine the Devis", "Brajeshwari (Kangra Devi) is about 22 km away; Dharamshala, McLeod Ganj and the Palampur tea gardens are close by."]
+   [
+    "Go early in Navratri",
+    "Queues build from early morning during the Navratri fairs. Keep bags small and children close."
+   ],
+   [
+    "Plan around bhog",
+    "The sanctum closes from 12 noon to 1 pm for bhog. The 8 am and 7:10 pm aartis are the loveliest times to be there."
+   ],
+   [
+    "Respect the shrine",
+    "Modest clothes, shoes off at the gate, and follow the temple staff on photography."
+   ],
+   [
+    "Good for elders",
+    "Road to the gate, parking and a level temple by the river make Chamunda one of the easier Devi darshans. Save the Aadi Himani trek for the fit."
+   ],
+   [
+    "Book only on the official site",
+    "Darshan slips and prasad are offered online only on kangratemples.hp.gov.in. Don't pay agents who claim special darshan."
+   ],
+   [
+    "Combine the Devis",
+    "Brajeshwari (Kangra Devi) is about 22 km away; Dharamshala, McLeod Ganj and the Palampur tea gardens are close by."
+   ]
   ]
  },
  "itinerary": {
   "h2": "A two-day Kangra Devi and Chamunda trip",
   "days": [
-   ["1", "Brajeshwari → Chamunda", "Morning darshan at Brajeshwari (Kangra Devi), then about 22 km to Chamunda. Langar at noon, rest, and the evening aarti by the Baner river. Overnight in Dharamshala or Palampur."],
-   ["2", "Dharamshala or Aadi Himani", "Early darshan at Chamunda, then a gentle day in McLeod Ganj or the Palampur tea gardens — or, for fit walkers between mid-March and mid-November, the long day trek to Aadi Himani Chamunda from Jia."]
+   [
+    "1",
+    "Brajeshwari → Chamunda",
+    "Morning darshan at Brajeshwari (Kangra Devi), then about 22 km to Chamunda. Langar at noon, rest, and the evening aarti by the Baner river. Overnight in Dharamshala or Palampur."
+   ],
+   [
+    "2",
+    "Dharamshala or Aadi Himani",
+    "Early darshan at Chamunda, then a gentle day in McLeod Ganj or the Palampur tea gardens — or, for fit walkers between mid-March and mid-November, the long day trek to Aadi Himani Chamunda from Jia."
+   ]
   ]
  },
- "packages": ["shakti5"],
+ "packages": [
+  "shakti5"
+ ],
  "quote_h2": "Plan your Chamunda Devi darshan with Suzu",
  "quote_text": "Chamunda is about 113 km from our office in Ghumarwin, Bilaspur. We plan Chamunda and Kangra Devi trips, the five Shakti Peeth circuit and the Nau Devi yatra — cars, stays in Dharamshala or Palampur, and timings that avoid the worst Navratri crowds.",
  "wa": "Namaste Suzu Travels, I want to plan a yatra to Chamunda Devi. From city: ___ , dates: ___ , people: ___",
- "links": ["shakti-peeth-himachal", "jwala-ji", "chintpurni", "naina-devi", "nau-devi-yatra"],
+ "links": [
+  "shakti-peeth-himachal",
+  "jwala-ji",
+  "chintpurni",
+  "naina-devi",
+  "nau-devi-yatra"
+ ],
  "place": {
   "type": "HinduTemple",
   "name": "Shri Chamunda Nandikeshwar Dham",
@@ -113,28 +228,194 @@
   "state": "Himachal Pradesh",
   "lat": 32.1483,
   "lon": 76.4192,
-  "sameAs": ["https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir"]
+  "sameAs": [
+   "https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir"
+  ]
  },
  "trip_name": "Chamunda Devi Darshan, Kangra",
  "faqs": [
-  ["What are Chamunda Devi temple timings?", "In summer 5 am to 10 pm and in winter 6 am to 9 pm, closed from 12 noon to 1 pm for bhog. Aarti is at about 8 am and 7:10 pm. These are the official trust timings; confirm the seasonal changeover locally."],
-  ["How far is Chamunda Devi from Dharamshala?", "About 15 km on the Dharamshala–Palampur road. Palampur is about 19 km and McLeod Ganj about 24 km away."],
-  ["Is Chamunda Devi a Shakti Peeth?", "It is not in the classical 51 or 52 Shakti Peeth lists, though local lore counts it as one. It is revered as one of Himachal's five great Devi shrines, with Naina Devi, Chintpurni, Jwala Ji and Brajeshwari."],
-  ["Why is the Goddess called Chamunda?", "In the Devi Mahatmya, a fierce form of the Devi slew the asura generals Chanda and Munda, and the Goddess named her Chamunda after them."],
-  ["Why is it called Nandikeshwar Dham?", "Because Shiva is worshipped as Nandikeshwar in a cave shrine with a natural linga behind the temple — Shiva and Shakti are honoured together."],
-  ["What is Aadi Himani Chamunda?", "The original hilltop shrine at about 3,000 m on the Chandar Bhan ridge, reached by a 9–13 km trek from Jia village or Jadrangal. It is open from about mid-March to mid-November."],
-  ["What is the nearest airport and railway station?", "Kangra (Gaggal) airport is about 25 km away. Kangra station on the narrow-gauge line is about 14 km; Pathankot, about 90 km, is the nearest broad-gauge station."],
-  ["Is there free food at Chamunda temple?", "Yes. The temple trust runs a free langar every day from 12 to 2 pm and 7 to 9 pm, and all day during Navratri."]
+  [
+   "What are Chamunda Devi temple timings?",
+   "In summer 5 am to 10 pm and in winter 6 am to 9 pm, closed from 12 noon to 1 pm for bhog. Aarti is at about 8 am and 7:10 pm. These are the official trust timings; confirm the seasonal changeover locally."
+  ],
+  [
+   "How far is Chamunda Devi from Dharamshala?",
+   "About 15 km on the Dharamshala–Palampur road. Palampur is about 19 km and McLeod Ganj about 24 km away."
+  ],
+  [
+   "Is Chamunda Devi a Shakti Peeth?",
+   "It is not in the classical 51 or 52 Shakti Peeth lists, though local lore counts it as one. It is revered as one of Himachal's five great Devi shrines, with Naina Devi, Chintpurni, Jwala Ji and Brajeshwari."
+  ],
+  [
+   "Why is the Goddess called Chamunda?",
+   "In the Devi Mahatmya, a fierce form of the Devi slew the asura generals Chanda and Munda, and the Goddess named her Chamunda after them."
+  ],
+  [
+   "Why is it called Nandikeshwar Dham?",
+   "Because Shiva is worshipped as Nandikeshwar in a cave shrine with a natural linga behind the temple — Shiva and Shakti are honoured together."
+  ],
+  [
+   "What is Aadi Himani Chamunda?",
+   "The original hilltop shrine at about 3,000 m on the Chandar Bhan ridge, reached by a 9–13 km trek from Jia village or Jadrangal. It is open from about mid-March to mid-November."
+  ],
+  [
+   "What is the nearest airport and railway station?",
+   "Kangra (Gaggal) airport is about 25 km away. Kangra station on the narrow-gauge line is about 14 km; Pathankot, about 90 km, is the nearest broad-gauge station."
+  ],
+  [
+   "Is there free food at Chamunda temple?",
+   "Yes. The temple trust runs a free langar every day from 12 to 2 pm and 7 to 9 pm, and all day during Navratri."
+  ]
  ],
  "sources": [
-  ["Shri Chamunda Mata Temple Trust (official, HP temples portal)", "https://kangratemples.hp.gov.in/shri-chamunda-mata-temple/"],
-  ["HP Kangra district — Shri Chamunda Nandikeshwar Dham", "https://hpkangra.nic.in/tourist-place/shri-chamunda-nandikeshwar-dham/"],
-  ["HP Kangra district — Shri Aadi Himani Chamunda Temple", "https://hpkangra.nic.in/tourist-place/shri-aadi-himani-chamunda-temple/"],
-  ["HP Trekking — Jia to Himani Chamunda", "https://trekking.hp.gov.in/trekdetail/60"],
-  ["HP Kangra district — distances from Dharamshala", "https://hpkangra.nic.in/tourist-places-distance-from-dharamshala/"],
-  ["Wikipedia — Shri Chamunda Devi Mandir", "https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir"],
-  ["Wikipedia — Saat Behna", "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"]
+  [
+   "Shri Chamunda Mata Temple Trust (official, HP temples portal)",
+   "https://kangratemples.hp.gov.in/shri-chamunda-mata-temple/"
+  ],
+  [
+   "HP Kangra district — Shri Chamunda Nandikeshwar Dham",
+   "https://hpkangra.nic.in/tourist-place/shri-chamunda-nandikeshwar-dham/"
+  ],
+  [
+   "HP Kangra district — Shri Aadi Himani Chamunda Temple",
+   "https://hpkangra.nic.in/tourist-place/shri-aadi-himani-chamunda-temple/"
+  ],
+  [
+   "HP Trekking — Jia to Himani Chamunda",
+   "https://trekking.hp.gov.in/trekdetail/60"
+  ],
+  [
+   "HP Kangra district — distances from Dharamshala",
+   "https://hpkangra.nic.in/tourist-places-distance-from-dharamshala/"
+  ],
+  [
+   "Wikipedia — Shri Chamunda Devi Mandir",
+   "https://en.wikipedia.org/wiki/Shri_Chamunda_Devi_Mandir"
+  ],
+  [
+   "Wikipedia — Saat Behna",
+   "https://en.wikipedia.org/wiki/Saat_Behna_(seven_sister_goddesses)"
+  ]
  ],
  "verified": "21 Oct 2026",
- "modified": "2026-10-21"
+ "modified": "2026-10-21",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Chamunda Devi in pictures",
+  "lead": "The temple above the Baner river, its ghats and footbridge, the gardens and the red flags on the spire — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Chamunda Devi temple and the ghats on the Baner river near Dharamshala",
+    "cap": "Chamunda Devi temple above the Baner river ghats",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_30.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-hero-1-768x576.webp",
+    "wp_id": 18694
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-7.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-7-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-7-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-7-1152x1536.webp 1152w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-7.webp 1920w",
+    "w": 1920,
+    "h": 2560,
+    "alt": "Hanuman statue in the Chamunda Devi temple complex",
+    "cap": "Hanuman statue in the complex",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_20.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-7-768x1024.webp",
+    "wp_id": 18711
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-3-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-3-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-3-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Pilgrims at the Baner river below the Chamunda Devi temple",
+    "cap": "Pilgrims at the Baner river below the temple",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_14.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-3-768x576.webp",
+    "wp_id": 18698
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-4-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-4-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-4-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Footbridge over the Baner river at Chamunda Devi",
+    "cap": "The footbridge over the Baner",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_13.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-4-768x576.webp",
+    "wp_id": 18709
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-5.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-5-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-5-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-5-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-5.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Gardens and the temple complex at Chamunda Devi, Kangra",
+    "cap": "Gardens of the temple complex",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_09.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-5-768x576.webp",
+    "wp_id": 18712
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-6.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-6-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-6-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-6-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-6.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Covered queue corridor at the Chamunda Devi temple",
+    "cap": "The covered queue corridor",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_08.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-g-6-768x576.webp",
+    "wp_id": 18708
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-fig-2-768x469.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-fig-2-1024x625.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-fig-2-1536x938.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1172,
+    "alt": "Red flags on the spire of the Chamunda Devi temple, Kangra",
+    "cap": "Red flags on the temple spire",
+    "by": "Guptaele",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-fig-2-768x469.webp",
+    "wp_id": 18696
+   },
+   {
+    "role": "bg",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-bg-8.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-bg-8-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-bg-8-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-bg-8-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-bg-8.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Entrance to the Chamunda Devi shrine",
+    "cap": "Entrance to the shrine",
+    "by": "Ashish3724",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chamunda_Devi_Temple_03.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chamunda-devi-bg-8-768x576.webp",
+    "wp_id": 18714
+   }
+  ]
+ }
 }
