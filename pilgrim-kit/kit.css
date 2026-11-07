@@ -242,3 +242,22 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 .szp h3.szp-gh{margin:34px 0 6px}
 @media(max-width:520px){.szp-gal figure:not(:first-child) .szp-cr{display:none}}
 @media(min-width:901px){.szp-steps:has(>li:nth-child(6):last-child){grid-template-columns:repeat(3,1fr)}.szp-steps:has(>li:nth-child(7)){grid-template-columns:repeat(4,1fr)}.szp-steps:has(>li:nth-child(8):last-child){grid-template-columns:repeat(4,1fr)}}
+/* hub & card photos (PHOTO LAYER) */
+.szp-slides{position:absolute;inset:0;z-index:0;overflow:hidden}
+.szp-slide{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;margin:0;opacity:0;animation:szpSlide calc(var(--n,4) * 7s) linear infinite}
+@keyframes szpSlide{0%{opacity:0;transform:scale(1.04)}4%{opacity:1}22%{opacity:1}28%{opacity:0;transform:scale(1.16)}100%{opacity:0}}
+.szp-slides.n3 .szp-slide{animation-name:szpSlide3}
+@keyframes szpSlide3{0%{opacity:0;transform:scale(1.04)}6%{opacity:1}30%{opacity:1}38%{opacity:0;transform:scale(1.16)}100%{opacity:0}}
+.szp-slides.n5 .szp-slide{animation-name:szpSlide5}
+@keyframes szpSlide5{0%{opacity:0;transform:scale(1.04)}3%{opacity:1}18%{opacity:1}23%{opacity:0;transform:scale(1.16)}100%{opacity:0}}
+.szp-circ.has-ph{background:#140a1c}
+.szp-circ.has-ph .ph{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;margin:0;z-index:-2;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.szp-circ.has-ph:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,10,28,.15) 0%,rgba(20,10,28,.55) 45%,rgba(20,10,28,.92) 100%)}
+.szp-circ.has-ph:hover .ph{transform:scale(1.08)}
+.szp-circ.has-ph .c{max-width:none}
+.szp-circ.has-ph .dv{text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.szp-shrine-ph{display:block;width:calc(100% + 40px);max-width:none;height:170px;object-fit:cover;margin:-20px -20px 14px;transition:transform 1s}
+.szp-shrine:hover .szp-shrine-ph{transform:scale(1.05)}
+@media(prefers-reduced-motion:reduce){.szp-slide{animation:none!important}.szp-slide:first-child{opacity:1}}
+.szp-links:has(.has-th) .szp-link:not(.has-th):not(.pkg){padding-top:0;overflow:hidden}
+.szp-links:has(.has-th) .szp-link:not(.has-th):not(.pkg):before{content:"ॐ";display:grid;place-items:center;height:140px;margin:0 -16px 12px;font-size:46px;color:rgba(242,193,78,.55);background:radial-gradient(circle at 50% 60%,rgba(232,115,31,.35),transparent 60%),linear-gradient(135deg,var(--plum),var(--maroon))}

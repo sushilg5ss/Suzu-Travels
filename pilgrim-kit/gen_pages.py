@@ -131,6 +131,8 @@ def pkg_link(key, cls="szp-link pkg"):
 
 def tile(v, thumb=True):
     th = globals().get("THUMBS", {}).get(v["path"]) if thumb else None
+    if th:
+        used(th[2])
     img = f'<img class="th" src="{e(th[0])}" alt="{e(th[1])}" width="400" height="140" loading="lazy" decoding="async" />' if th else ""
     return f'<a class="szp-link{" has-th" if th else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
 
@@ -178,7 +180,12 @@ def art(kind):
     return f'<svg class="art" viewBox="0 0 200 160" aria-hidden="true">{g}{shapes[kind]}</svg>'
 
 
-def circuit(href, deva, title, text, meta, kind):
+def circuit(href, deva, title, text, meta, kind, photo=None):
+    ph = (globals().get("page_photo") or (lambda *_: None))(photo) if photo else None
+    if ph:
+        used(ph)
+        img = f'<img class="ph" src="{e(ph.get("thumb") or ph["src"])}" alt="{e(ph["alt"])}" width="768" height="512" loading="lazy" decoding="async" />'
+        return f'<a class="szp-circ has-ph" href="{href}">{img}<span class="dv">{e(deva)}</span><span class="t">{e(title)}</span><span class="c">{text}</span><span class="m">{meta} →</span></a>'
     return f'<a class="szp-circ" href="{href}"><span class="dv">{e(deva)}</span><span class="t">{e(title)}</span><span class="c">{text}</span><span class="m">{meta} →</span>{art(kind)}</a>'
 
 
@@ -288,7 +295,7 @@ def hub():
     jl_cards = ""
     for i, j in enumerate(J):
         own = jl_page(j["slug"])
-        jl_cards += (f'<li class="szp-shrine"><span class="no">{i + 1:02d} · {e(j["state"]).upper()}</span><span class="dv">{e(deva_short(j))}</span><h3>{e(short_name(j))}</h3>'
+        jl_cards += (f'<li class="szp-shrine">{shrine_ph(own)}<span class="no">{i + 1:02d} · {e(j["state"]).upper()}</span><span class="dv">{e(deva_short(j))}</span><h3>{e(short_name(j))}</h3>'
                      f'<div class="meta">{e(j["town"])}</div><ol class="szp-beats">{"".join(f"<li>{e(b)}</li>" for b in j["story_beats"])}</ol>'
                      f'<div class="go"><a href="{own or (jl_live + "#jl-" + j["slug"] if jl_live else "#jyotirlinga")}">{"Temple guide" if own else "Timings, route &amp; story"} →</a></div></li>')
     pts = jl_points()
@@ -301,7 +308,9 @@ def hub():
         bp = {"naina-devi-bilaspur": "Sati's eyes, by tradition", "jwalamukhi-jwala-ji-kangra": "Sati's tongue — the eternal flames",
               "chintpurni-una": "Chhinnamasta, the Devi who ends worry", "brajeshwari-kangra-devi": "Sati's left breast, by tradition",
               "chamunda-nandikeshwar-dham-kangra": "Where the Devi slew Chanda and Munda"}[s]
-        devi_cards += (f'<li class="szp-shrine"><span class="no">{e(x["district"]).upper()} · HIMACHAL</span><span class="dv">{e(x["name_hi"].split(",")[0].replace("श्री ", ""))}</span><h3>{nm}</h3>'
+        dslug = {"naina-devi-bilaspur": "naina-devi", "jwalamukhi-jwala-ji-kangra": "jwala-ji", "chintpurni-una": "chintpurni",
+                 "brajeshwari-kangra-devi": "kangra-devi", "chamunda-nandikeshwar-dham-kangra": "chamunda-devi"}[s]
+        devi_cards += (f'<li class="szp-shrine">{shrine_ph(live_path(dslug))}<span class="no">{e(x["district"]).upper()} · HIMACHAL</span><span class="dv">{e(x["name_hi"].split(",")[0].replace("श्री ", ""))}</span><h3>{nm}</h3>'
                        f'<div class="meta">{bp}</div><ol class="szp-beats">{"".join(f"<li>{e(b)}</li>" for b in x["story_beats"])}</ol></li>')
     nau = [("Shakumbhari Devi", "शाकुम्भरी देवी", "Behat, Saharanpur (UP)", "Day 1 · 210 km from Delhi", "Start the circuit with the Devi of greens and grain, after a stop at Bhura Dev."),
            ("Mansa Devi &amp; Kali Mata", "मनसा देवी · काली माता", "Panchkula &amp; Kalka (Haryana)", "Day 2 · 156 + 25 km", "Both temples are run by the Mansa Devi Shrine Board; summer darshan 4 am–10 pm."),
@@ -314,8 +323,9 @@ def hub():
     cal_html = "".join(f'<div class="mo"><b>{m}</b>' + "".join(f'<span class="{k}">{t}</span>' for t, k in items) + "</div>" for m, items in CAL)
     watxt = "Namaste Suzu Travels, I want to plan a yatra. Which temples: ___ , from city: ___ , dates: ___ , people: ___"
     more = guides_block()
+    HS = hero_slides(["kedarnath", "somnath", "kashi-vishwanath", "naina-devi", "vaishno-devi-yatra"], "")
     body = f'''
-<section class="szp-hero">{hero_video("pilgrimage-tours", "pilgrim-hero", "Illustrated temples of India at dusk — Kedarnath in the snows, Somnath by the sea, the ghats of Kashi and a Devi shrine on a Himachal hill")}
+<section class="szp-hero{" ph" if HS else ""}">{HS or hero_video("pilgrimage-tours", "pilgrim-hero", "Illustrated temples of India at dusk — Kedarnath in the snows, Somnath by the sea, the ghats of Kashi and a Devi shrine on a Himachal hill")}
 <div class="szp-hero-in"><span class="k">Tirth Yatra · Pilgrimage tours of India</span>
 <p class="szp-tag"><span class="dv">तीर्थ यात्रा</span>Every temple has a story. Walk it with us.</p>
 <p class="szp-sub">The 12 Jyotirlingas, the Shakti Peeths and Nau Devi temples of Himachal, the Char Dham, Amarnath and Kashi — with the legends behind them, this season's dates, darshan timings and an honest route plan from a Himachal travel agency.</p>
@@ -331,14 +341,14 @@ def hub():
 <section class="szp-sec alt" id="circuits"><span class="k">Choose your yatra</span><h2>Eight journeys of faith</h2>
 <p class="lead">Each card opens the guide below — the story, the season, the route and how we plan it. Prices depend on dates, hotels and group size, so every yatra is quoted for you.</p>
 <div class="szp-circuits">
-{circuit(jl_href, "द्वादश ज्योतिर्लिंग", "12 Jyotirlingas", "Somnath to Rameshwaram — Shiva's twelve pillars of light.", "7 states · all year", "shikhara")}
-{circuit("#shakti", "शक्तिपीठ", "Shakti Peeths of Himachal", "Naina Devi, Jwala Ji, Chintpurni, Kangra and Chamunda.", "5 shrines · 5 days", "devi")}
-{circuit("#naudevi", "नौ देवी दर्शन", "Nau Devi Yatra", "Nine Devi temples from Saharanpur to Vaishno Devi.", "9 days from Delhi", "devi")}
-{circuit("#chardham", "चार धाम", "Char Dham Yatra", "Yamunotri, Gangotri, Kedarnath and Badrinath.", "Apr–Nov · 10–12 days", "himalaya")}
-{circuit("#amarnath", "अमरनाथ", "Amarnath Yatra", "The ice lingam in a Himalayan cave at 3,888 m.", "Jul–Aug · registration", "cave")}
-{circuit("#vaishno", "वैष्णो देवी", "Vaishno Devi", "The Trikuta cave shrine above Katra.", "All year · 12 km trek", "cave")}
-{circuit("#kashi", "काशी · अयोध्या", "Kashi, Ayodhya & Prayagraj", "Ganga aarti, Ram Mandir and the Sangam.", "All year · 6 days", "ghats")}
-{circuit("#himachal", "देवभूमि", "Himachal yatras", "Manimahesh, Kinner Kailash, Baijnath and more.", "Seasonal · Dev Bhoomi", "lake")}
+{circuit(jl_href, "द्वादश ज्योतिर्लिंग", "12 Jyotirlingas", "Somnath to Rameshwaram — Shiva's twelve pillars of light.", "7 states · all year", "shikhara", "somnath")}
+{circuit("#shakti", "शक्तिपीठ", "Shakti Peeths of Himachal", "Naina Devi, Jwala Ji, Chintpurni, Kangra and Chamunda.", "5 shrines · 5 days", "devi", "naina-devi")}
+{circuit("#naudevi", "नौ देवी दर्शन", "Nau Devi Yatra", "Nine Devi temples from Saharanpur to Vaishno Devi.", "9 days from Delhi", "devi", "chintpurni")}
+{circuit("#chardham", "चार धाम", "Char Dham Yatra", "Yamunotri, Gangotri, Kedarnath and Badrinath.", "Apr–Nov · 10–12 days", "himalaya", "kedarnath")}
+{circuit("#amarnath", "अमरनाथ", "Amarnath Yatra", "The ice lingam in a Himalayan cave at 3,888 m.", "Jul–Aug · registration", "cave", "amarnath-yatra")}
+{circuit("#vaishno", "वैष्णो देवी", "Vaishno Devi", "The Trikuta cave shrine above Katra.", "All year · 12 km trek", "cave", "vaishno-devi-yatra")}
+{circuit("#kashi", "काशी · अयोध्या", "Kashi, Ayodhya & Prayagraj", "Ganga aarti, Ram Mandir and the Sangam.", "All year · 6 days", "ghats", "kashi-vishwanath")}
+{circuit("#himachal", "देवभूमि", "Himachal yatras", "Manimahesh, Kinner Kailash, Baijnath and more.", "Seasonal · Dev Bhoomi", "lake", "hidimba-devi")}
 </div></section>
 <section class="szp-sec dark" id="jyotirlinga"><span class="k">द्वादश ज्योतिर्लिंग · 12 Jyotirlingas</span><h2>Twelve pillars of light across India</h2>
 <p class="lead">The Shiva Purana tells how Brahma and Vishnu argued over who was greater — until an endless column of light split the worlds. Neither could find its top or its base, and Shiva emerged from it. The twelve Jyotirlingas mark where that light is worshipped. Tap a light on the map to read its story.</p>
@@ -405,7 +415,7 @@ def hub():
 <section class="szp-sec alt" id="faq"><span class="k">FAQ</span><h2>Questions pilgrims ask us</h2>{faq(faqs)}</section>
 <section class="szp-sec" id="more"><h2>Keep exploring</h2>{more}<h3 class="szp-gh">Bookable yatras on Suzu Travels</h3><div class="szp-links">{"".join(pkg_link(k) for k in ("jyotirlinga", "shakti5", "chardham", "dodham", "amarnath", "vaishno", "kashi", "chardham-archive"))}</div>
 <h3 class="szp-gh">Sources</h3>{sources(SRC_HUB)}
-<p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
+{photo_credits({})}<p class="szp-note">Legends are retold in our own words as traditions, not historical claims. Photographs are by the Wikimedia Commons contributors credited above. Illustrations and animations are original artwork by Suzu Travels and show stylised temples, not exact likenesses.</p></section>'''
     schema = ld(
         {"@type": "CollectionPage", "@id": "https://suzutravels.com" + HUB + "#page", "name": "Pilgrimage Tours in India: Tirth Yatra Guide & Packages", "url": "https://suzutravels.com" + HUB,
          "dateModified": "2026-10-26", "inLanguage": "en-IN",
@@ -651,7 +661,7 @@ def gallery_html(c):
 
 
 def photo_credits(c):
-    its = c.get("gallery", {}).get("items", [])
+    its = list(c.get("gallery", {}).get("items", [])) + [u for u in USED if u not in c.get("gallery", {}).get("items", [])]
     if not its:
         return ""
     seen, out = set(), []
@@ -673,11 +683,50 @@ def _thumbs():
         h = gal_role(c, "hero") or gal_role(c, "fig")
         p = LIVE.get(f.stem, {}).get("path")
         if h and p:
-            out[p] = (h.get("thumb") or h["src"], h["alt"])
+            out[p] = (h.get("thumb") or h["src"], h["alt"], h)
     return out
 
 
+USED = []  # photos borrowed from other pages (tiles, hub cards) — credited at the bottom of the page that shows them
+
+
+def used(it):
+    if it and all(u["file"] != it["file"] for u in USED):
+        USED.append(it)
+    return it
+
+
 THUMBS = _thumbs()
+
+
+def page_photo(slug, role="hero"):
+    """A photo from another page's gallery (hub cards, slideshow). None until that page has a gallery."""
+    f = KIT / "src" / "pages" / f"{slug}.json"
+    if not f.exists():
+        return None
+    c = json.loads(f.read_text(encoding="utf-8"))
+    return gal_role(c, role) or gal_role(c, "hero")
+
+
+def shrine_ph(path):
+    th = THUMBS.get(path) if path else None
+    if th:
+        used(th[2])
+    return f'<img class="szp-shrine-ph" src="{e(th[0])}" alt="{e(th[1])}" width="400" height="170" loading="lazy" decoding="async" />' if th else ""
+
+
+def hero_slides(slugs, alt_fallback):
+    """Cross-fading Ken Burns slideshow of real photos (3-5). Falls back to None if fewer than 3 pages have galleries."""
+    its = [x for x in (page_photo(s) for s in slugs) if x]
+    if len(its) < 3:
+        return None
+    its = its[:5]
+    for it in its:
+        used(it)
+    n = len(its)
+    imgs = "".join(ph_img(it, "szp-slide", eager=(i == 0)).replace("<img ", f'<img style="animation-delay:{i * 7}s;--n:{n}" ', 1) for i, it in enumerate(its))
+    cr = " · ".join(f'{e(it["cap"])} — {credit(it)}' for it in its)
+    return f'<div class="szp-slides n{n}">{imgs}</div><span class="szp-hero-cr">{cr}</span>'
 
 
 def content_page(slug):
@@ -782,6 +831,7 @@ PAGES = {"pilgrimage-tours": hub, "12-jyotirlinga": jyotirlinga_page}
 
 
 def render(slug):
+    USED.clear()
     fn = PAGES.get(slug)
     return fn() if fn else content_page(slug)
 

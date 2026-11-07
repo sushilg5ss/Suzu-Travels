@@ -138,7 +138,7 @@ def prune_css(css, body):
     def keep_rule(rule):
         sel = rule[:rule.find("{")]
         for part in sel.split(","):
-            classes = re.findall(r"\.([A-Za-z0-9_-]+)", re.sub(r":has\([^)]*\)", "", part))
+            classes = re.findall(r"\.([A-Za-z0-9_-]+)", re.sub(r":(?:has|not)\([^)]*\)", "", part))
             if all(c in used for c in classes):
                 return True
         return False
