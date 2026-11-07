@@ -205,5 +205,68 @@
    "American Alpine Journal — Derbyshire Himalayan Expedition (1961)",
    "https://publications.americanalpineclub.org/articles/12196227503"
   ]
- ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Axes, crampons and ice",
+  "lead": "Climbers on Kamet and crampon points on ice — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-768x526.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-1024x701.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-1536x1051.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1314,
+    "alt": "Climbers on the slopes of Kamet",
+    "cap": "Climbers on Kamet",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_GMHM.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-768x526.webp",
+    "wp_id": 18775
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-768x532.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-1024x709.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-1536x1064.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1330,
+    "alt": "Mountaineering boot fitted with a crampon",
+    "cap": "A boot fitted with a crampon",
+    "by": "Johnny.m76",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mointain_Boot_with_Crampons.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-768x532.webp",
+    "wp_id": 18891
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Crampon points biting into ice under a mountaineering boot",
+    "cap": "Crampon points on ice",
+    "by": "Dbaisley at English Wikipedia",
+    "lic": "Public domain",
+    "file": "https://commons.wikimedia.org/wiki/File:Crampon.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-768x576.webp",
+    "wp_id": 18889
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1024x694.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1536x1042.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1302,
+    "alt": "A climber in bad weather high on Kamet",
+    "cap": "Kamet: bad weather high on the mountain",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_mauvais.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp",
+    "wp_id": 18782
+   }
+  ]
+ }
 }

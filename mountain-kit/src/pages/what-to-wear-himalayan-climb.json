@@ -13,21 +13,51 @@
  "tag": "Layer up. Stay dry.",
  "sub": "A plain-English, brand-free guide for first-time climbers in the Indian Himalaya: how the three-layer system works, which materials keep you warm and which to leave at home, how to protect hands, head and feet, and what you actually wear from the hot valley walk to the cold pre-dawn summit push.",
  "chips": [
-  ["3 layers", "base, mid, shell"],
-  ["No cotton", "it stays wet and cold"],
-  ["Mitts", "warmer than gloves up high"],
-  ["Summit day", "you wear it all"]
+  [
+   "3 layers",
+   "base, mid, shell"
+  ],
+  [
+   "No cotton",
+   "it stays wet and cold"
+  ],
+  [
+   "Mitts",
+   "warmer than gloves up high"
+  ],
+  [
+   "Summit day",
+   "you wear it all"
+  ]
  ],
  "hero_alt": "A roped team in red jackets on snow, a snowy ridge, mountain light and climbers starting by headlamp at night (generic stock footage) with four statements: layer up, peel off; ditch cotton; up high, mitts win; summit: wear it all",
  "q": "What is the layering system?",
  "answer": "The layering system means wearing three layers you can add or remove as you heat up or cool down: a close-fitting base layer that moves sweat off your skin, an insulating mid-layer (fleece, then down or synthetic) that holds warmth, and a windproof, waterproof shell. Skip cotton. On summit day you wear them all. Pair it with our <a href=\"/mountains-of-india/mountaineering-gear-list/\">mountaineering gear list</a>.",
  "facts": [
-  ["Base layer", "Merino wool or synthetic, close-fitting"],
-  ["Mid layer", "Fleece; down or synthetic for warmth"],
-  ["Shell", "Windproof, waterproof, breathable, with a hood"],
-  ["Avoid", "Cotton: it holds moisture"],
-  ["Hands up high", "Mitts over gloves"],
-  ["Summit day", "Wear every layer"]
+  [
+   "Base layer",
+   "Merino wool or synthetic, close-fitting"
+  ],
+  [
+   "Mid layer",
+   "Fleece; down or synthetic for warmth"
+  ],
+  [
+   "Shell",
+   "Windproof, waterproof, breathable, with a hood"
+  ],
+  [
+   "Avoid",
+   "Cotton: it holds moisture"
+  ],
+  [
+   "Hands up high",
+   "Mitts over gloves"
+  ],
+  [
+   "Summit day",
+   "Wear every layer"
+  ]
  ],
  "intro": [
   "On a Himalayan climb the temperature can swing more in one day than in a season at home. You may walk up from a warm valley road-head in the afternoon, sleep in a camp well below freezing at night, and leave for the summit in the dark. On Hanuman Tibba, for example, summit pushes have started at 2:30 am. No single jacket covers all of that, so climbers dress in layers.",
@@ -88,30 +118,147 @@
  "profile_kicker": "Camp by camp",
  "profile_h2": "Friendship Peak, camp by camp: what you wear",
  "profile_alt": "Animated altitude profile of a Friendship Peak climb with the layers worn at each stage: Manali 2,050 m base layer and sun hat, Bakarthach 3,300 m walk-in with the shell packed, Lady Leg base camp 3,850 m add down, summit camp 4,200 m snow and glacier glasses, and the 5,289 m summit pre-dawn wearing every layer (camp heights approximate)",
- "profile_text": ["The animation follows one real climb, <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m / 17,352 ft) above Manali. You leave the road-head at about 2,050 m (6,700 ft) in a base layer and sun hat, walk in to Bakarthach at about 3,300 m (10,800 ft) with the shell still in the pack, and add the down jacket at Lady Leg base camp, about 3,850 m (12,600 ft).", "From summit camp, about 4,200 m (13,800 ft), the route is on snow, so glacier glasses go on. The summit push starts before dawn, the coldest hours of the climb, and you wear every layer you carried. Camp heights are approximate."],
+ "profile_text": [
+  "The animation follows one real climb, <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m / 17,352 ft) above Manali. You leave the road-head at about 2,050 m (6,700 ft) in a base layer and sun hat, walk in to Bakarthach at about 3,300 m (10,800 ft) with the shell still in the pack, and add the down jacket at Lady Leg base camp, about 3,850 m (12,600 ft).",
+  "From summit camp, about 4,200 m (13,800 ft), the route is on snow, so glacier glasses go on. The summit push starts before dawn, the coldest hours of the climb, and you wear every layer you carried. Camp heights are approximate."
+ ],
  "quote_h2": "Plan a guided Himachal climb with Suzu",
  "quote_text": "Tell us your peak and dates. We pair you with a registered Himachal outfitter and certified guides, share the kit list for your peak and season, and add hotels and transfers: one plan, one quote.",
  "faq_h2": "Layering questions climbers ask",
  "faqs": [
-  ["What is the layering system?", "Wearing a base layer to manage sweat, a mid-layer to hold warmth and a shell to block wind and rain, and adding or removing layers as you heat up or cool down."],
-  ["Why should I avoid cotton on a climb?", "Cotton holds moisture. Once you stop moving, the damp fabric makes you cold. Wear merino wool or synthetic base layers instead."],
-  ["Down or synthetic jacket for the Himalaya?", "Down is the warmest for its weight but stops insulating when wet; synthetic keeps you warm when damp. Many climbers move in fleece and keep a down jacket for camp and the summit."],
-  ["What should I wear on summit day?", "Everything: base layer, fleece, down or synthetic jacket, shell, warm hat, balaclava or buff, mitts and goggles, with a headlamp for the pre-dawn start."],
-  ["Gloves or mittens at high altitude?", "Carry both. Mitts are warmer, and changing from gloves to mitts is one of the ways the Wilderness Medical Society suggests to prevent frostbite."],
-  ["What should I wear for a snow trek in Manali in winter?", "A thermal base layer, a fleece, a warm jacket, a waterproof outer, warm socks and waterproof shoes. Leave jeans and cotton at home."],
-  ["Can I rent winter clothing in Manali?", "Yes, down jackets and other snow wear are commonly rented in Manali and Solang. Check the fit and condition before you go."],
-  ["How cold is it at high camp?", "Well below freezing at night on camps at 5,000–6,000 m, even in September. Plan your sleeping layers for that."]
+  [
+   "What is the layering system?",
+   "Wearing a base layer to manage sweat, a mid-layer to hold warmth and a shell to block wind and rain, and adding or removing layers as you heat up or cool down."
+  ],
+  [
+   "Why should I avoid cotton on a climb?",
+   "Cotton holds moisture. Once you stop moving, the damp fabric makes you cold. Wear merino wool or synthetic base layers instead."
+  ],
+  [
+   "Down or synthetic jacket for the Himalaya?",
+   "Down is the warmest for its weight but stops insulating when wet; synthetic keeps you warm when damp. Many climbers move in fleece and keep a down jacket for camp and the summit."
+  ],
+  [
+   "What should I wear on summit day?",
+   "Everything: base layer, fleece, down or synthetic jacket, shell, warm hat, balaclava or buff, mitts and goggles, with a headlamp for the pre-dawn start."
+  ],
+  [
+   "Gloves or mittens at high altitude?",
+   "Carry both. Mitts are warmer, and changing from gloves to mitts is one of the ways the Wilderness Medical Society suggests to prevent frostbite."
+  ],
+  [
+   "What should I wear for a snow trek in Manali in winter?",
+   "A thermal base layer, a fleece, a warm jacket, a waterproof outer, warm socks and waterproof shoes. Leave jeans and cotton at home."
+  ],
+  [
+   "Can I rent winter clothing in Manali?",
+   "Yes, down jackets and other snow wear are commonly rented in Manali and Solang. Check the fit and condition before you go."
+  ],
+  [
+   "How cold is it at high camp?",
+   "Well below freezing at night on camps at 5,000–6,000 m, even in September. Plan your sleeping layers for that."
+  ]
  ],
  "links": [
-  ["/mountains-of-india/", "Mountains of India", "Records, permits and training"],
-  ["/mountains-of-india/highest-peaks-in-india/", "Highest peaks in India", "Full list of 157 peaks"],
-  ["/adventure/himalayan-peak-expeditions/", "Guided peak climbs", "Friendship Peak to Deo Tibba"]
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "Records, permits and training"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 157 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Deo Tibba"
+  ]
  ],
  "sources": [
-  ["British Mountaineering Council — A guide to hill walking clothing layers", "https://thebmc.co.uk/cy/a-guide-to-hill-walking-clothing-layers"],
-  ["Wilderness Medical Society — Clinical Practice Guidelines for Frostbite: 2024 Update (McIntosh et al.)", "https://journals.sagepub.com/doi/10.1177/10806032231222359"],
-  ["Nehru Institute of Mountaineering — brochure (PDF, 2023)", "https://www.nimindia.net/_files/ugd/25f551_0536aef95dba40dab0207f89a84667b0.pdf"],
-  ["CDC Yellow Book — High-altitude travel and altitude illness", "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"],
-  ["Outlook Traveller — Climbing Hanuman Tibba (2016)", "https://www.outlooktraveller.com/experiences/adventure/himachal-pradesh-climbing-hanuman-tibba"]
- ]
+  [
+   "British Mountaineering Council — A guide to hill walking clothing layers",
+   "https://thebmc.co.uk/cy/a-guide-to-hill-walking-clothing-layers"
+  ],
+  [
+   "Wilderness Medical Society — Clinical Practice Guidelines for Frostbite: 2024 Update (McIntosh et al.)",
+   "https://journals.sagepub.com/doi/10.1177/10806032231222359"
+  ],
+  [
+   "Nehru Institute of Mountaineering — brochure (PDF, 2023)",
+   "https://www.nimindia.net/_files/ugd/25f551_0536aef95dba40dab0207f89a84667b0.pdf"
+  ],
+  [
+   "CDC Yellow Book — High-altitude travel and altitude illness",
+   "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"
+  ],
+  [
+   "Outlook Traveller — Climbing Hanuman Tibba (2016)",
+   "https://www.outlooktraveller.com/experiences/adventure/himachal-pradesh-climbing-hanuman-tibba"
+  ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Clothing that gets tested",
+  "lead": "Wind, snow and cold high on a Himalayan peak — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1024x694.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1536x1042.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1302,
+    "alt": "A climber in bad weather high on Kamet",
+    "cap": "Kamet: bad weather high on the mountain",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_mauvais.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp",
+    "wp_id": 18782
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-768x526.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-1024x701.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-1536x1051.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1314,
+    "alt": "Climbers on the slopes of Kamet",
+    "cap": "Climbers on Kamet",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_GMHM.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-fig-2-768x526.webp",
+    "wp_id": 18775
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Trekkers on the moraine below Satopanth",
+    "cap": "On the moraine below Satopanth",
+    "by": "Asish Das75",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Satopanth_Peak_WTK20150921-IMG_2833.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-768x576.webp",
+    "wp_id": 18826
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Crampon points biting into ice under a mountaineering boot",
+    "cap": "Crampon points on ice",
+    "by": "Dbaisley at English Wikipedia",
+    "lic": "Public domain",
+    "file": "https://commons.wikimedia.org/wiki/File:Crampon.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-768x576.webp",
+    "wp_id": 18889
+   }
+  ]
+ }
 }

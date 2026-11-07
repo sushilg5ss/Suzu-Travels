@@ -190,5 +190,82 @@
   ]
  ],
  "quote_h2": "Plan a guided Himachal climb with Suzu",
- "quote_text": "Pick your peak and dates. We pair you with a registered Himachal outfitter and certified guides, help with the IMF paperwork for foreign teams, and add hotels and transfers: one plan, one quote."
+ "quote_text": "Pick your peak and dates. We pair you with a registered Himachal outfitter and certified guides, help with the IMF paperwork for foreign teams, and add hotels and transfers: one plan, one quote.",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Peaks that need a permit",
+  "lead": "Kamet, Satopanth, Shivling and Chau Chau Kang Nilda — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Nanda Devi peak and the Garhwal Himalaya",
+    "cap": "Nanda Devi and the Garhwal range",
+    "by": "Ashwani Kumar",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Nanda_Devi_peak.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-nanda-devi-g-3-768x512.webp",
+    "wp_id": 18761
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-1152x1536.webp 1152w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 2560,
+    "alt": "Mt Shivling above the Gangotri glacier",
+    "cap": "Shivling above the Gangotri glacier",
+    "by": "DipankarSen68",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mt_Shivling_WTK_IMG_0598_150917.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-shivling-peak-hero-1-768x1024.webp",
+    "wp_id": 18811
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kamet seen across forested ridges in Garhwal",
+    "cap": "Kamet across the Garhwal ridges",
+    "by": "Rohit Gosain",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_Closeup.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-hero-1-768x576.webp",
+    "wp_id": 18773
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Satopanth peak above the moraines of the Gangotri glacier",
+    "cap": "Satopanth above the Gangotri moraines",
+    "by": "Asish Das75",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mt_Satopanth_WTK20150921-IMG_2832.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-hero-1-768x576.webp",
+    "wp_id": 18818
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-hero-1-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-hero-1-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-hero-1-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Chau Chau Kang Nilda peak above the Spiti high plateau",
+    "cap": "Chau Chau Kang Nilda above the plateau",
+    "by": "Sumita Roy Dutta",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Chau_Chau_Kang_Nilda(CCKN)_peak_of_Spiti_Himachal_Pradesh_from_Komic_village_to_Demul_Vllage.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-hero-1-768x512.webp",
+    "wp_id": 18853
+   }
+  ]
+ }
 }

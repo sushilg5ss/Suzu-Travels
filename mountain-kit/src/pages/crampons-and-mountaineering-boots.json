@@ -205,5 +205,68 @@
   "The animation draws Friendship Peak (5,289 m / 17,352 ft), Hanuman Tibba (5,982 m / 19,626 ft), Deo Tibba (6,001 m / 19,688 ft) and Yunam (6,111 m / 20,049 ft) at their true heights, with the boot and crampon pairing that is <b>typical</b> on each.",
   "Height alone does not set the grade: steep snow, ice and fixed ropes do. Treat these pairings as a starting point and follow the gear list your outfitter and guide give you."
  ],
- "ladder_alt": "Animated chart of Friendship Peak, Hanuman Tibba, Deo Tibba and Yunam at their true heights, with typical boot and crampon grades for each"
+ "ladder_alt": "Animated chart of Friendship Peak, Hanuman Tibba, Deo Tibba and Yunam at their true heights, with typical boot and crampon grades for each",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Crampons and boots in pictures",
+  "lead": "Front points on ice, a boot fitted with a crampon and the parts that matter — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Crampon points biting into ice under a mountaineering boot",
+    "cap": "Crampon points on ice",
+    "by": "Dbaisley at English Wikipedia",
+    "lic": "Public domain",
+    "file": "https://commons.wikimedia.org/wiki/File:Crampon.JPG",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-hero-1-768x576.webp",
+    "wp_id": 18889
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-768x532.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-1024x709.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-1536x1064.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1330,
+    "alt": "Mountaineering boot fitted with a crampon",
+    "cap": "A boot fitted with a crampon",
+    "by": "Johnny.m76",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Mointain_Boot_with_Crampons.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-fig-2-768x532.webp",
+    "wp_id": 18891
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-3-768x464.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-3-1024x619.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-3-1536x929.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1161,
+    "alt": "Parts of a crampon: toe bail, heel lever and front points",
+    "cap": "Crampon parts",
+    "by": "Amada44",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Harscheisen_-_0867.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-3-768x464.webp",
+    "wp_id": 18893
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-4-768x545.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-4-1024x727.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-4-1536x1090.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-4.webp 1688w",
+    "w": 1688,
+    "h": 1198,
+    "alt": "Old leather mountaineering boot with tricouni nails",
+    "cap": "An old nailed mountaineering boot",
+    "by": "Springginggelar",
+    "lic": "Public domain",
+    "file": "https://commons.wikimedia.org/wiki/File:Bergschuh_Tricouni.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-crampons-and-mountaineering-boots-g-4-768x545.webp",
+    "wp_id": 18895
+   }
+  ]
+ }
 }

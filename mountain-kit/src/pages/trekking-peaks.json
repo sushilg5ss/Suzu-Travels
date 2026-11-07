@@ -13,30 +13,73 @@
  "tag": "Your first Himalayan summit, chosen well.",
  "sub": "\"Trekking peak\" sounds easy, but these are real snow summits that ask for crampons, an ice axe and rope work. Here are the open first climbs in India side by side, with heights, bases, seasons, 2026 access status and the permits behind them. Dated and sourced.",
  "chips": [
-  ["5,289 m", "first summits"],
-  ["6,111 m", "the next step"],
-  ["About 8 days", "from Manali"],
-  ["May–Oct", "by region"],
-  ["Price", "Get Quote"]
+  [
+   "5,289 m",
+   "first summits"
+  ],
+  [
+   "6,111 m",
+   "the next step"
+  ],
+  [
+   "About 8 days",
+   "from Manali"
+  ],
+  [
+   "May–Oct",
+   "by region"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
  ],
  "hero_alt": "Roped climbers on snow, a corniced ridge and scree slopes (generic stock footage) with four statements: first 5,289 m, rope and ice axe, next 6,111 m, train then climb",
  "ladder_alt": "Animated chart of Friendship Peak, Shitidhar, Ladakhi, Yunam, Mentok Kangri and Dzo Jongo drawn at their true heights",
  "q": "What is a trekking peak, and which one should you climb first in India?",
  "answer": "A <b>trekking peak</b> is a loose label for a summit that needs little technical climbing but still calls for crampons, an ice axe and rope work. India has no single official list. The usual first climbs are Friendship Peak (5,289 m / 17,352 ft) and Shitidhar (5,294 m) above Manali, then Yunam (6,111 m / 20,049 ft) in Lahaul. Compare them below or in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
  "facts": [
-  ["Lowest here", "Friendship Peak 5,289 m / 17,352 ft"],
-  ["First 6,000er", "Yunam 6,111 m / 20,049 ft"],
-  ["Kullu peaks", "May–Jun, Sep–Oct"],
-  ["Lahaul & Ladakh", "Jun–Sep"],
-  ["Closed", "Stok Kangri (since 2020)"],
-  ["Price", "Get Quote"]
+  [
+   "Lowest here",
+   "Friendship Peak 5,289 m / 17,352 ft"
+  ],
+  [
+   "First 6,000er",
+   "Yunam 6,111 m / 20,049 ft"
+  ],
+  [
+   "Kullu peaks",
+   "May–Jun, Sep–Oct"
+  ],
+  [
+   "Lahaul & Ladakh",
+   "Jun–Sep"
+  ],
+  [
+   "Closed",
+   "Stok Kangri (since 2020)"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
  ],
  "intro": [
   "The term comes from Nepal, where the Nepal Mountaineering Association designates about 30 \"NMA peaks\", all under 7,000 m. Nepal's list and its rules do not apply in India. Here \"trekking peak\" is a colloquial word that guidebooks and operators use loosely, and it covers summits of very different difficulty: some are long snow walks, others end on a narrow, exposed ridge.",
   "There is one place where the label matters in India: the Indian Mountaineering Foundation charges a lower base fee (US$200 for a foreign team of two) only for peaks on its own trekking-peak list. A peak that a guidebook calls a trekking peak is not automatically on that list, so ask for the peak's IMF category when you apply. For where these summits sit in the wider range, start with our guide to the <a href=\"/mountains-of-india/\">mountains of India</a>."
  ],
  "table": {
-  "ids": ["friendship-peak", "shitidhar", "ladakhi-peak", "mount-yunam", "mentok-kangri", "dzo-jongo", "stok-kangri", "chamser-kangri", "lungser-kangri"],
+  "ids": [
+   "friendship-peak",
+   "shitidhar",
+   "ladakhi-peak",
+   "mount-yunam",
+   "mentok-kangri",
+   "dzo-jongo",
+   "stok-kangri",
+   "chamser-kangri",
+   "lungser-kangri"
+  ],
   "label": "The peaks",
   "h2": "Nine trekking peaks in India, from 5,289 m to 6,666 m",
   "text": [
@@ -83,32 +126,183 @@
  ],
  "faq_h2": "Trekking peaks in India: questions climbers ask",
  "faqs": [
-  ["What is a trekking peak?", "A loose label for a summit that needs limited technical climbing but still asks for crampons, an ice axe and rope skills. The term comes from Nepal's list of NMA peaks; India has no single official list of trekking peaks."],
-  ["Which is the easiest peak to climb in India?", "Among Himachal summits, Friendship Peak (5,289 m) and Shitidhar (5,294 m) above Solang near Manali are the usual first snow climbs. Easy still means high altitude, steep snow near the top and a pre-dawn start."],
-  ["What is the highest trekking peak in India?", "There is no official ranking. Popular non-technical summits above 6,000 m include Lungser Kangri (6,666 m), Dzo Jongo (6,280 m) and Mentok Kangri (6,250 m) in Ladakh, and Yunam (6,111 m) in Himachal."],
-  ["Do I need a mountaineering course to climb a trekking peak?", "Most guided trekking-peak climbs do not ask for a Basic Mountaineering Course; the outfitter asks about your high-altitude trekking experience. Indian teams applying to the IMF on their own must meet the IMF's course rules."],
-  ["Can foreigners climb trekking peaks in India?", "Yes, with an IMF permit: a base fee of US$200 for a team of two where the peak is on the IMF's trekking-peak list, otherwise US$500 up to 6,500 m, plus a liaison officer. Border areas such as Tso Moriri also need a protected-area permit."],
-  ["Is Stok Kangri open in 2026?", "No. Climbs stopped in 2020, and on 21 Dec 2023 the Ladakh administration closed all expeditions to the peak. No reopening had been announced as of Oct 2026."],
-  ["Is Kanamo open in 2026?", "Sources conflict and no official order was found as of Oct 2026. Ask before planning; an open Himachal peak such as Yunam is the safer choice until the status is clear."],
-  ["When is the best time to climb a trekking peak in India?", "May–June and September–October for the Kullu peaks above Manali, which get monsoon rain in July and August. June–September for Lahaul, Spiti and Ladakh, which lie in the rain-shadow."]
+  [
+   "What is a trekking peak?",
+   "A loose label for a summit that needs limited technical climbing but still asks for crampons, an ice axe and rope skills. The term comes from Nepal's list of NMA peaks; India has no single official list of trekking peaks."
+  ],
+  [
+   "Which is the easiest peak to climb in India?",
+   "Among Himachal summits, Friendship Peak (5,289 m) and Shitidhar (5,294 m) above Solang near Manali are the usual first snow climbs. Easy still means high altitude, steep snow near the top and a pre-dawn start."
+  ],
+  [
+   "What is the highest trekking peak in India?",
+   "There is no official ranking. Popular non-technical summits above 6,000 m include Lungser Kangri (6,666 m), Dzo Jongo (6,280 m) and Mentok Kangri (6,250 m) in Ladakh, and Yunam (6,111 m) in Himachal."
+  ],
+  [
+   "Do I need a mountaineering course to climb a trekking peak?",
+   "Most guided trekking-peak climbs do not ask for a Basic Mountaineering Course; the outfitter asks about your high-altitude trekking experience. Indian teams applying to the IMF on their own must meet the IMF's course rules."
+  ],
+  [
+   "Can foreigners climb trekking peaks in India?",
+   "Yes, with an IMF permit: a base fee of US$200 for a team of two where the peak is on the IMF's trekking-peak list, otherwise US$500 up to 6,500 m, plus a liaison officer. Border areas such as Tso Moriri also need a protected-area permit."
+  ],
+  [
+   "Is Stok Kangri open in 2026?",
+   "No. Climbs stopped in 2020, and on 21 Dec 2023 the Ladakh administration closed all expeditions to the peak. No reopening had been announced as of Oct 2026."
+  ],
+  [
+   "Is Kanamo open in 2026?",
+   "Sources conflict and no official order was found as of Oct 2026. Ask before planning; an open Himachal peak such as Yunam is the safer choice until the status is clear."
+  ],
+  [
+   "When is the best time to climb a trekking peak in India?",
+   "May–June and September–October for the Kullu peaks above Manali, which get monsoon rain in July and August. June–September for Lahaul, Spiti and Ladakh, which lie in the rain-shadow."
+  ]
  ],
  "links": [
-  ["/mountains-of-india/", "Mountains of India", "Records, permits and training"],
-  ["/mountains-of-india/highest-peaks-in-india/", "Highest peaks in India", "Full list of 157 peaks"],
-  ["/adventure/himalayan-peak-expeditions/", "Guided peak climbs", "Friendship Peak to Deo Tibba"],
-  ["/mountains-of-india/friendship-peak/", "Friendship Peak", "5,289 m · the classic first summit above Manali"],
-  ["/mountains-of-india/yunam-peak/", "Yunam Peak", "6,111 m · a road-head 6,000er in Lahaul"]
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "Records, permits and training"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 157 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Deo Tibba"
+  ],
+  [
+   "/mountains-of-india/friendship-peak/",
+   "Friendship Peak",
+   "5,289 m · the classic first summit above Manali"
+  ],
+  [
+   "/mountains-of-india/yunam-peak/",
+   "Yunam Peak",
+   "6,111 m · a road-head 6,000er in Lahaul"
+  ]
  ],
  "sources": [
-  ["Wikipedia — Trekking peak", "https://en.wikipedia.org/wiki/Trekking_peak"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions (checked 1 Oct 2026)", "https://www.indmount.org/IMF/peakfee"],
-  ["Ministry of Tourism — Rajya Sabha unstarred question 2386, 16 Mar 2021 (peaks opened to foreigners)", "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"],
-  ["Wikipedia — List of mountain peaks of Himachal Pradesh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"],
-  ["Wikipedia — List of mountain peaks of Ladakh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"],
-  ["Wikipedia — Tso Moriri", "https://en.wikipedia.org/wiki/Tso_Moriri"],
-  ["Wikipedia — Stok Kangri", "https://en.wikipedia.org/wiki/Stok_Kangri"],
-  ["Outlook Traveller — A hard climb up to Ladakhi", "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi"],
-  ["HP Miscellaneous Adventure Activities (Amendment) Rules 2021", "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"],
-  ["CDC Yellow Book — High-altitude travel and altitude illness", "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"]
- ]
+  [
+   "Wikipedia — Trekking peak",
+   "https://en.wikipedia.org/wiki/Trekking_peak"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions (checked 1 Oct 2026)",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Ministry of Tourism — Rajya Sabha unstarred question 2386, 16 Mar 2021 (peaks opened to foreigners)",
+   "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Ladakh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
+  ],
+  [
+   "Wikipedia — Tso Moriri",
+   "https://en.wikipedia.org/wiki/Tso_Moriri"
+  ],
+  [
+   "Wikipedia — Stok Kangri",
+   "https://en.wikipedia.org/wiki/Stok_Kangri"
+  ],
+  [
+   "Outlook Traveller — A hard climb up to Ladakhi",
+   "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi"
+  ],
+  [
+   "HP Miscellaneous Adventure Activities (Amendment) Rules 2021",
+   "https://www.legitquest.com/act/himachal-pradesh-miscellaneous-adventure-activities-amendment-rules-2021/A36F"
+  ],
+  [
+   "CDC Yellow Book — High-altitude travel and altitude illness",
+   "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"
+  ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Trekking peaks in pictures",
+  "lead": "Kang Yatse, Kanamo, Chau Chau Kang Nilda and Mulkila — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kang Yatse reflected in a lake near the Markha valley, Ladakh",
+    "cap": "Kang Yatse above the Markha valley",
+    "by": "SlartibErtfass der bertige",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:A_lake_near_Kang_Yatze,_Markha_Valley_trek,_Ladakh,_India_(2006).jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp",
+    "wp_id": 18833
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Kanamo peaks seen from south of Kibber",
+    "cap": "Kanamo from south of Kibber",
+    "by": "Timothy A. Gonsalves",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kanamo_Peaks_South_Kibber_Spiti_Jun18_D72_7523.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-fig-2-768x432.webp",
+    "wp_id": 18849
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-4-768x523.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-4-1024x697.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-4-1536x1046.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1307,
+    "alt": "View of Chau Chau Kang Nilda peak",
+    "cap": "Chau Chau Kang Nilda: the peak in afternoon light",
+    "by": "Sumita Roy Dutta",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:View_of_CHAU_CHAU_kANG_NILDA_peak_near_Demul_village.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-4-768x523.webp",
+    "wp_id": 18864
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-768x431.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-1024x574.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-1536x862.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1077,
+    "alt": "Western flank of Stok Kangri, Ladakh",
+    "cap": "The western flank of Stok Kangri",
+    "by": "James Edward Ball",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_western_flank.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-768x431.webp",
+    "wp_id": 18880
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Mulkila range seen from the Darcha side, Lahaul",
+    "cap": "Mulkila from the Darcha side",
+    "by": "Mr. Subhas Chattopadhyay",
+    "lic": "CC0",
+    "file": "https://commons.wikimedia.org/wiki/File:DSC09917-01jpg_Mulkila_from_Darcha.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-mulkila-fig-2-768x432.webp",
+    "wp_id": 18844
+   }
+  ]
+ }
 }

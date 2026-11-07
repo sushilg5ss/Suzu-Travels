@@ -187,5 +187,82 @@
    "Indian Mountaineering Foundation — Expedition application",
    "https://www.indmount.org/IMF/expeapp"
   ]
- ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "High places in pictures",
+  "lead": "The altitudes this guide is about: the Gangotri moraines, the Spiti plateau and the Garhwal giants — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Trekkers on the moraine below Satopanth",
+    "cap": "On the moraine below Satopanth",
+    "by": "Asish Das75",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Satopanth_Peak_WTK20150921-IMG_2833.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-satopanth-g-3-768x576.webp",
+    "wp_id": 18826
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kanamo peaks from the southwest of Kibber",
+    "cap": "Kanamo: from the southwest of Kibber",
+    "by": "Timothy A. Gonsalves",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kanamo_Peaks_Southwest_Kibber_Spiti_Jun18_D72_7743.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kanamo-peak-g-3-768x512.webp",
+    "wp_id": 18851
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-5.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-5-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-5-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-5-1536x1025.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-5.webp 1920w",
+    "w": 1920,
+    "h": 1281,
+    "alt": "Langza village below the peaks, Spiti",
+    "cap": "Chau Chau Kang Nilda: Langza village",
+    "by": "Madhumita Das",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Langza_Village,_Himachal_Pradesh.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-chau-chau-kang-nilda-g-5-768x512.webp",
+    "wp_id": 18867
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1024x694.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-1536x1042.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1302,
+    "alt": "A climber in bad weather high on Kamet",
+    "cap": "Kamet: bad weather high on the mountain",
+    "by": "Groupe militaire de haute montagne",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kamet_mauvais.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kamet-g-4-768x521.webp",
+    "wp_id": 18782
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kang Yatse reflected in a lake near the Markha valley, Ladakh",
+    "cap": "Kang Yatse above the Markha valley",
+    "by": "SlartibErtfass der bertige",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:A_lake_near_Kang_Yatze,_Markha_Valley_trek,_Ladakh,_India_(2006).jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp",
+    "wp_id": 18833
+   }
+  ]
+ }
 }

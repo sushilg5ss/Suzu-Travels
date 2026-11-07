@@ -14,24 +14,60 @@
  "tag": "Ladakh's mountains, from the Siachen giants to the Markha valley.",
  "sub": "Thirty-five notable summits, from 7,742 m Saltoro Kangri on the Siachen front to the trekking peaks above Tso Moriri, with their heights, areas, first ascents and 2026 status: what you can climb, what is closed and how the permits work.",
  "chips": [
-  ["7,742 m", "Saltoro Kangri"],
-  ["35 peaks", "in our table"],
-  ["24 peaks", "above 7,000 m"],
-  ["Stok Kangri", "closed since 2020"],
-  ["Jul–Sep", "climbing season"]
+  [
+   "7,742 m",
+   "Saltoro Kangri"
+  ],
+  [
+   "35 peaks",
+   "in our table"
+  ],
+  [
+   "24 peaks",
+   "above 7,000 m"
+  ],
+  [
+   "Stok Kangri",
+   "closed since 2020"
+  ],
+  [
+   "Jul–Sep",
+   "climbing season"
+  ]
  ],
  "hero_alt": "High-desert ridges, a snowfield, a roped line and a glacier crossing (stock footage) with statements: 35 peaks in one table, highest 7,742 m, 24 above 7,000 m, 20 first ascents in 2026",
  "ladder_alt": "Animated chart of seven Ladakh peaks at their true heights: Stok Kangri, Kang Yatse II, Lungser Kangri, Kun, Mamostong Kangri, Saser Kangri I and Saltoro Kangri",
  "q": "Which is the highest peak in Ladakh?",
  "answer": "<b>Saltoro Kangri</b> (7,742 m / 25,400 ft), on the Saltoro Ridge in the Siachen area, is the highest peak on ground India administers in Ladakh. India's official map also shows K2 (8,611 m / 28,251 ft) in Ladakh, but K2 stands in Pakistan-administered Gilgit-Baltistan. Second is Saser Kangri I (7,672 m). All 35 peaks are below, from our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
  "facts": [
-  ["Highest peak", "Saltoro Kangri, 7,742 m / 25,400 ft (Siachen area, restricted)"],
-  ["Second highest", "Saser Kangri I, 7,672 m / 25,171 ft (Nubra)"],
-  ["Peaks in this list", "35 (5,458–7,742 m)"],
-  ["Above 7,000 m", "24 peaks, all but Kun in the Karakoram"],
-  ["Open to foreigners", "10 of 35; the other 25 are restricted"],
-  ["Closed", "Stok Kangri (no climbs since 2020)"],
-  ["Climbing season", "July–September"]
+  [
+   "Highest peak",
+   "Saltoro Kangri, 7,742 m / 25,400 ft (Siachen area, restricted)"
+  ],
+  [
+   "Second highest",
+   "Saser Kangri I, 7,672 m / 25,171 ft (Nubra)"
+  ],
+  [
+   "Peaks in this list",
+   "35 (5,458–7,742 m)"
+  ],
+  [
+   "Above 7,000 m",
+   "24 peaks, all but Kun in the Karakoram"
+  ],
+  [
+   "Open to foreigners",
+   "10 of 35; the other 25 are restricted"
+  ],
+  [
+   "Closed",
+   "Stok Kangri (no climbs since 2020)"
+  ],
+  [
+   "Climbing season",
+   "July–September"
+  ]
  ],
  "intro": [
   "Ladakh is the high, dry corner of the Indian Himalaya. Five ranges cross it from south to north: the Great Himalaya, the Zanskar, the Ladakh Range, the Pangong range and the Karakoram. Its giants are in the far north, in the Saltoro, Saser, Rimo and Siachen groups of the <b>Karakoram</b>; its climbable summits are mostly in the Zanskar range around the Markha valley and the Rupshu plateau near Tso Moriri.",
@@ -39,7 +75,9 @@
   "Our table covers 35 notable Ladakh peaks from the dataset behind our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>: 24 above 7,000 m, 10 in the 6,000s and one in the 5,000s. Wikipedia's Ladakh list names a few more, such as Mt Hardinge, that are not in our dataset. As Wikipedia notes, a large number of Ladakh's peaks are still not open for climbing for security reasons."
  ],
  "table": {
-  "where": {"state": "ladakh"},
+  "where": {
+   "state": "ladakh"
+  },
   "h2": "Mountains in Ladakh by height: all 35 peaks",
   "label": "The list",
   "text": [
@@ -94,31 +132,171 @@
  "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Ladakh peaks. If a 6,000 m summit is your goal, Himachal is a good place to start: Friendship Peak first, then Yunam on the Manali–Leh road. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
  "faq_h2": "Ladakh's peaks: your questions",
  "faqs": [
-  ["Which is the highest peak in Ladakh?", "Saltoro Kangri, 7,742 m (25,400 ft), on the Saltoro Ridge in the Siachen area: the highest on ground India administers. India's official map also places K2 (8,611 m) in Ladakh, but K2 is in Pakistan-administered Gilgit-Baltistan."],
-  ["Which is the second-highest peak in Ladakh?", "Saser Kangri I, 7,672 m (25,171 ft), in the Saser Muztagh above the Nubra valley. An ITBP team first climbed it on 5 June 1973."],
-  ["How many mountains in Ladakh are above 7,000 m?", "24 of the 35 Ladakh peaks in our dataset, almost all of them in the Karakoram. The only one outside it is Kun (7,077 m) in the Great Himalaya."],
-  ["Is Stok Kangri open for climbing?", "No. Climbs stopped in 2020 and the Ladakh administration banned expeditions on 21 December 2023 because of the shrinking Stok glacier. We found no reopening as of October 2026."],
-  ["Which peaks can I climb in Ladakh?", "Kang Yatse II (6,250 m) in the Markha valley and the Rupshu peaks near Tso Moriri, such as Lungser Kangri (6,666 m), are climbed every summer. Kun and Nun are full expeditions from the Kargil side."],
-  ["Is Nun Kun in Ladakh?", "The massif sits on the Jammu & Kashmir–Ladakh border. Kun (7,077 m) is in Ladakh and Nun (7,135 m) is counted in Jammu & Kashmir; both are approached from Kargil through the Suru valley."],
-  ["Do I need a permit to climb in Ladakh?", "Indians have not needed an Inner Line Permit since August 2021. Foreigners still need a Protected Area Permit for areas like Nubra, Pangong and Tso Moriri, and every peak needs IMF permission."],
-  ["When is the mountaineering season in Ladakh?", "July to September, because Ladakh lies in the Himalayan rain shadow. June brings high snow-melt rivers; the Karakoram peaks are climbed from June to August."]
+  [
+   "Which is the highest peak in Ladakh?",
+   "Saltoro Kangri, 7,742 m (25,400 ft), on the Saltoro Ridge in the Siachen area: the highest on ground India administers. India's official map also places K2 (8,611 m) in Ladakh, but K2 is in Pakistan-administered Gilgit-Baltistan."
+  ],
+  [
+   "Which is the second-highest peak in Ladakh?",
+   "Saser Kangri I, 7,672 m (25,171 ft), in the Saser Muztagh above the Nubra valley. An ITBP team first climbed it on 5 June 1973."
+  ],
+  [
+   "How many mountains in Ladakh are above 7,000 m?",
+   "24 of the 35 Ladakh peaks in our dataset, almost all of them in the Karakoram. The only one outside it is Kun (7,077 m) in the Great Himalaya."
+  ],
+  [
+   "Is Stok Kangri open for climbing?",
+   "No. Climbs stopped in 2020 and the Ladakh administration banned expeditions on 21 December 2023 because of the shrinking Stok glacier. We found no reopening as of October 2026."
+  ],
+  [
+   "Which peaks can I climb in Ladakh?",
+   "Kang Yatse II (6,250 m) in the Markha valley and the Rupshu peaks near Tso Moriri, such as Lungser Kangri (6,666 m), are climbed every summer. Kun and Nun are full expeditions from the Kargil side."
+  ],
+  [
+   "Is Nun Kun in Ladakh?",
+   "The massif sits on the Jammu & Kashmir–Ladakh border. Kun (7,077 m) is in Ladakh and Nun (7,135 m) is counted in Jammu & Kashmir; both are approached from Kargil through the Suru valley."
+  ],
+  [
+   "Do I need a permit to climb in Ladakh?",
+   "Indians have not needed an Inner Line Permit since August 2021. Foreigners still need a Protected Area Permit for areas like Nubra, Pangong and Tso Moriri, and every peak needs IMF permission."
+  ],
+  [
+   "When is the mountaineering season in Ladakh?",
+   "July to September, because Ladakh lies in the Himalayan rain shadow. June brings high snow-melt rivers; the Karakoram peaks are climbed from June to August."
+  ]
  ],
  "sources": [
-  ["Wikipedia — List of mountain peaks of Ladakh", "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"],
-  ["Wikipedia — List of Indian states and union territories by elevation", "https://en.wikipedia.org/wiki/List_of_Indian_states_and_union_territories_by_elevation"],
-  ["Wikipedia — Saltoro Kangri", "https://en.wikipedia.org/wiki/Saltoro_Kangri"],
-  ["Wikipedia — Saser Kangri", "https://en.wikipedia.org/wiki/Saser_Kangri"],
-  ["Wikipedia — Nun Kun", "https://en.wikipedia.org/wiki/Nun_Kun"],
-  ["Wikipedia — Lungser Kangri", "https://en.wikipedia.org/wiki/Lungser_Kangri"],
-  ["PIB (Ministry of Defence), 25 Sep 2026 — NIMAS team's 20 first ascents in Ladakh", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2314793&reg=3&lang=1"],
-  ["Deccan Chronicle — Ladakh team scales 20 unclimbed peaks in 23 days", "https://www.deccanchronicle.com/amp/nation/ladakh-team-scales-20-unclimbed-peaks-in-23-days-1990635"],
-  ["Voice of Ladakh, Aug 2021 — Indian nationals no longer need a permit for protected areas", "https://voiceofladakh.in/2021/08/indian-nationals-no-longer-need-permit-to-visit-protected-areas-of-ladakh/"],
-  ["The Statesman — Ladakh administration bans expeditions to Stok Kangri", "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"],
-  ["The Tribune — Expeditions to Stok Kangri banned over depleting glaciers", "https://www.tribuneindia.com/news/j-k/trekking-expeditions-to-stok-kangri-banned-over-depleting-glaciers-574219/"],
-  ["GKToday — Siachen opened to tourists (2019)", "https://www.gktoday.in/siachen-worlds-highest-battlefield-now-open-to-tourists/"],
-  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"]
+  [
+   "Wikipedia — List of mountain peaks of Ladakh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
+  ],
+  [
+   "Wikipedia — List of Indian states and union territories by elevation",
+   "https://en.wikipedia.org/wiki/List_of_Indian_states_and_union_territories_by_elevation"
+  ],
+  [
+   "Wikipedia — Saltoro Kangri",
+   "https://en.wikipedia.org/wiki/Saltoro_Kangri"
+  ],
+  [
+   "Wikipedia — Saser Kangri",
+   "https://en.wikipedia.org/wiki/Saser_Kangri"
+  ],
+  [
+   "Wikipedia — Nun Kun",
+   "https://en.wikipedia.org/wiki/Nun_Kun"
+  ],
+  [
+   "Wikipedia — Lungser Kangri",
+   "https://en.wikipedia.org/wiki/Lungser_Kangri"
+  ],
+  [
+   "PIB (Ministry of Defence), 25 Sep 2026 — NIMAS team's 20 first ascents in Ladakh",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2314793&reg=3&lang=1"
+  ],
+  [
+   "Deccan Chronicle — Ladakh team scales 20 unclimbed peaks in 23 days",
+   "https://www.deccanchronicle.com/amp/nation/ladakh-team-scales-20-unclimbed-peaks-in-23-days-1990635"
+  ],
+  [
+   "Voice of Ladakh, Aug 2021 — Indian nationals no longer need a permit for protected areas",
+   "https://voiceofladakh.in/2021/08/indian-nationals-no-longer-need-permit-to-visit-protected-areas-of-ladakh/"
+  ],
+  [
+   "The Statesman — Ladakh administration bans expeditions to Stok Kangri",
+   "https://www.thestatesman.com/india/ladakh-admin-bans-expeditions-to-stok-kangri-over-depleting-glacier-1503251948.html"
+  ],
+  [
+   "The Tribune — Expeditions to Stok Kangri banned over depleting glaciers",
+   "https://www.tribuneindia.com/news/j-k/trekking-expeditions-to-stok-kangri-banned-over-depleting-glaciers-574219/"
+  ],
+  [
+   "GKToday — Siachen opened to tourists (2019)",
+   "https://www.gktoday.in/siachen-worlds-highest-battlefield-now-open-to-tourists/"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ]
  ],
  "sameAs": [
   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
- ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Ladakh's peaks in pictures",
+  "lead": "Kang Yatse above the Markha valley and Stok Kangri above Leh — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kang Yatse reflected in a lake near the Markha valley, Ladakh",
+    "cap": "Kang Yatse above the Markha valley",
+    "by": "SlartibErtfass der bertige",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:A_lake_near_Kang_Yatze,_Markha_Valley_trek,_Ladakh,_India_(2006).jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-hero-1-768x576.webp",
+    "wp_id": 18833
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Stok Kangri above the Stok valley",
+    "cap": "Stok Kangri above its valley",
+    "by": "Maverick34 at English Wikipedia",
+    "lic": "Public domain",
+    "file": "https://commons.wikimedia.org/wiki/File:StokKangri.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-fig-2-768x576.webp",
+    "wp_id": 18883
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-768x431.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-1024x574.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-1536x862.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1077,
+    "alt": "Western flank of Stok Kangri, Ladakh",
+    "cap": "The western flank of Stok Kangri",
+    "by": "James Edward Ball",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_western_flank.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-hero-1-768x431.webp",
+    "wp_id": 18880
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-768x409.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-1024x545.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-1536x818.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2.webp 1920w",
+    "w": 1920,
+    "h": 1022,
+    "alt": "Kang Yatse seen from the Kongmaru La side",
+    "cap": "Kang Yatse: from the Kongmaru La side",
+    "by": "Chris Hunkeler from Carlsbad, California, USA",
+    "lic": "CC BY-SA 2.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kongmaru_La_Pass_View_(49043449806).jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kang-yatse-g-2-768x409.webp",
+    "wp_id": 18835
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-1024x683.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-1536x1024.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3.webp 1600w",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Stok Kangri catching the last light",
+    "cap": "Stok Kangri at last light",
+    "by": "Aksveer",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Stok_Kangri_.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-stok-kangri-g-3-768x512.webp",
+    "wp_id": 18886
+   }
+  ]
+ }
 }
