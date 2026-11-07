@@ -611,7 +611,7 @@ def credit(it, short=False):
 def ph_img(it, cls="", eager=False, sizes="100vw"):
     ss = f' srcset="{e(it["srcset"])}" sizes="{sizes}"' if it.get("srcset") else ""
     pos = f' style="object-position:{e(it["pos"])}"' if it.get("pos") else ""
-    load = ' fetchpriority="high"' if eager else ' loading="lazy"'
+    load = ' fetchpriority="high" data-no-lazy="1"' if eager else ' loading="lazy"'
     return (f'<img{(" class=" + chr(34) + cls + chr(34)) if cls else ""} src="{e(it["src"])}"{ss} alt="{e(it["alt"])}" width="{it["w"]}" height="{it["h"]}"'
             f'{load} decoding="async"{pos} />')
 
