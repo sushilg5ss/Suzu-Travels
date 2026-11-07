@@ -257,5 +257,26 @@
  ],
  "sameAs": [
   "https://en.wikipedia.org/wiki/Changabang"
- ]
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Changabang in pictures",
+  "lead": "Changabang and Kalanka on the rim of the Nanda Devi Sanctuary — a real photograph, credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-768x400.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-1024x533.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-1536x799.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 999,
+    "alt": "Kalanka and Changabang peaks in the Nanda Devi sanctuary rim",
+    "cap": "Kalanka and Changabang",
+    "by": "Mechsourav",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kalanka_and_Changabang_peaks_from_Bagini_glacier_DSCN0066.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-changabang-hero-1-768x400.webp",
+    "wp_id": 18806
+   }
+  ]
+ }
 }

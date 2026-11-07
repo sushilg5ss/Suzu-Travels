@@ -281,3 +281,4 @@ font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;color:v
 @media(prefers-reduced-motion:reduce){.szm-slide{animation:none!important}.szm-slide:first-child{opacity:1}}
 .szm-media>p:empty,.szm-split-in>p:empty,.szm-media>br{display:none}
 .szm-ov .szm-facts{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:900px){.szm-ov .szm-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.szm-gal figure.f:first-child{grid-row:span 1}.szm-gal:has(>figure.f:only-child){grid-auto-rows:300px}
