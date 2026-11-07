@@ -374,5 +374,14 @@
   "added": "2026-11-06",
   "peak_id": "trisul-i",
   "commercial": false
+ },
+ "highest-peak-in-every-state": {
+  "id": 18998,
+  "path": "/mountains-of-india/highest-peak-in-every-state/",
+  "kind": "guide",
+  "label": "Highest peak in every state",
+  "blurb": "All 28 states and 8 UTs in one table",
+  "added": "2026-11-07",
+  "commercial": false
  }
 }
