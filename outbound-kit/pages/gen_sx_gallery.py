@@ -22,6 +22,11 @@ GAL = {
    sub='What a Maldives trip actually looks like on the way in and once you arrive — the capital island, the seaplane jetty, a resort island from the air, water villas, a sandbank and a manta on the reef. Tap any photo to open it full size.',
    slugs=[('maldives-g1','-1024x577'),('maldives-g2','-1024x547'),('maldives-g3','-1024x638'),
           ('maldives-g4','-1024x522'),('maldives-g5','-1024x768'),('maldives-g6','-1024x683')]),
+ 'srilanka': dict(
+   title='Sri Lanka in real photos',
+   sub='Six stops from the classic first-time Sri Lanka loop — the rock fortress at Sigiriya, the Dambulla cave temple, the Temple of the Tooth in Kandy, Galle Fort, an elephant safari at Udawalawe and the beaches of the south coast. Tap any photo to open it full size.',
+   slugs=[('srilanka-g1','-1024x683'),('srilanka-g2','-1024x734'),('srilanka-g3','-686x1024'),
+          ('srilanka-g4','-957x1024'),('srilanka-g5','-1024x576'),('srilanka-g6','-1024x683')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"

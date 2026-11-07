@@ -1975,5 +1975,65 @@
   "license": "CC BY-SA 2.0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Manta_Ray_Maldives.jpg",
   "wp_id": 18371
+ },
+ "srilanka-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-srilanka-sigiriya-from-pidurangala.webp",
+  "alt": "Sigiriya rock fortress rising above green forest with hills behind, seen from Pidurangala Rock, Sri Lanka",
+  "cap": "Sigiriya from Pidurangala",
+  "note": "The rock fortress above the forest, seen from the neighbouring rock",
+  "credit": "Gayomiw",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Sigiriya_Rock_Fortress_View_from_Pidurangala_Rock.jpg",
+  "wp_id": 18606
+ },
+ "srilanka-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-srilanka-dambulla-stupa.webp",
+  "alt": "Golden stupa with Buddhist flags at the Dambulla cave temple, Sri Lanka",
+  "cap": "Dambulla cave temple",
+  "note": "The golden stupa and prayer flags at the temple",
+  "credit": "Pierre André Leclercq",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Golden_dagoba_at_Dambulla_(Sri_Lanka)_2015.jpg",
+  "wp_id": 18607
+ },
+ "srilanka-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-srilanka-kandy-tooth-temple.webp",
+  "alt": "Pilgrims walking through the painted entrance passage of the Temple of the Sacred Tooth Relic, Kandy, Sri Lanka",
+  "cap": "Temple of the Tooth, Kandy",
+  "note": "Pilgrims in the painted entrance passage",
+  "credit": "Philip Nalangan",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Tooth_Relic_Temple_Kandy_Sri_Lanka.jpg",
+  "wp_id": 18608
+ },
+ "srilanka-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-srilanka-galle-fort-lighthouse.webp",
+  "alt": "White lighthouse among coconut palms on the ramparts of Galle Fort, Sri Lanka",
+  "cap": "Galle Fort lighthouse",
+  "note": "The lighthouse and palms on the fort ramparts",
+  "credit": "Michael Gunther",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Lighthouse,_Galle_Fort_0735.jpg",
+  "wp_id": 18609
+ },
+ "srilanka-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-srilanka-udawalawe-elephants.webp",
+  "alt": "Two elephants grazing on open grassland beside the reservoir, Udawalawe, Sri Lanka",
+  "cap": "Elephants at Udawalawe",
+  "note": "Two elephants grazing on the grassland by the reservoir",
+  "credit": "Sanduweragoda",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Udawalawe_Elephants_Sri_Lanka.jpg",
+  "wp_id": 18610
+ },
+ "srilanka-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-srilanka-mirissa-coast.webp",
+  "alt": "Turquoise sea, rocky shore and a curving sandy bay at Mirissa on the south coast of Sri Lanka",
+  "cap": "Mirissa, south coast",
+  "note": "Rocky shore and the curve of the bay",
+  "credit": "Abishek Palraj",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Mirissa_beach,_Srilanka.jpg",
+  "wp_id": 18611
  }
 }
