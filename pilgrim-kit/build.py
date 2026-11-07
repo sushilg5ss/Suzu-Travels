@@ -92,7 +92,7 @@ def check(slug, body, allowed=None):
             problems.append(f"link to a page that is not live: {m.group(1)}")
     if "file://" in body:
         problems.append("local media URLs (file://) — this build was made with PK_LOCAL_MEDIA=1 for preview; rebuild without it")
-    if "<video" not in body and "szp-hero-img" not in body:
+    if "<video" not in body and "szp-hero-img" not in body and "szp-slide" not in body:
         problems.append("no HyperFrames video on the page (render media first: make_media.sh, push, pin_media.py)")
     spec = KIT / "src" / "pages" / f"{slug}.json"
     base_meta = json.loads((KIT / "src" / "meta.json").read_text(encoding="utf-8")) if (KIT / "src" / "meta.json").exists() else {}

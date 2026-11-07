@@ -15,6 +15,19 @@ OVR = {}
 OK_LIC = re.compile(r"^(CC BY(-SA)? [0-9.]+|CC0|Public domain)$", re.I)
 
 
+def clean_by(by):
+    by = re.sub(r"\s+", " ", by).strip()
+    if len(by) <= 60:
+        return by
+    m = re.search(r"(?:taken|photographed|shot|uploaded) by ([A-Z][a-z'-]+(?: [A-Z]\.)*(?: [A-Z][a-z'-]+){0,3})", by)
+    if m:
+        return m.group(1).strip().rstrip(".")
+    m = re.search(r"No machine-readable author provided\. (\S+?)(?:~commonswiki)? assumed", by)
+    if m:
+        return m.group(1)
+    return re.split(r"[;(]|\. ", by)[0][:60].strip()
+
+
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": "SuzuPilgrimKit/1.0"})
     return json.loads(urllib.request.urlopen(req, timeout=40).read())
@@ -63,7 +76,7 @@ def main():
                 ss.append(f'{sz[k]["source_url"]} {sz[k]["width"]}w')
         ss.append(f'{m["source_url"]} {md["width"]}w')
         it = {"role": role, "n": n, "src": m["source_url"], "srcset": ", ".join(ss), "w": md["width"], "h": md["height"],
-              "alt": m["alt_text"], "cap": cap, "by": re.sub(r"\s+", " ", by).strip(), "lic": lic.strip(), "file": file,
+              "alt": m["alt_text"], "cap": cap, "by": clean_by(by), "lic": lic.strip(), "file": file,
               "thumb": sz.get("medium_large", sz.get("large", {"source_url": m["source_url"]}))["source_url"], "wp_id": m["id"]}
         items.append(it)
     items.sort(key=lambda x: x["n"])

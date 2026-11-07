@@ -14,19 +14,46 @@
  "tag": "A quiet bend of the Shipra, where a saint asked for a Hanuman temple.",
  "sub": "Kainchi Dham — the Shri Kainchi Hanuman Mandir and Ashram of Neem Karoli Baba — sits on the Nainital–Almora road in Kumaon. Its story, darshan hours, the crowd and proposed registration rules as they stand today, the 15 June foundation day, and the easiest way to reach it from Kathgodam, Bhowali and Nainital.",
  "chips": [
-  ["~6 am–7 pm", "darshan (confirm locally)"],
-  ["9 km", "from Bhowali"],
-  ["~17 km", "from Nainital"],
-  ["15 June", "foundation day fair"],
-  ["Free", "no registration needed today"]
+  [
+   "~6 am–7 pm",
+   "darshan (confirm locally)"
+  ],
+  [
+   "9 km",
+   "from Bhowali"
+  ],
+  [
+   "~17 km",
+   "from Nainital"
+  ],
+  [
+   "15 June",
+   "foundation day fair"
+  ],
+  [
+   "Free",
+   "no registration needed today"
+  ]
  ],
  "q": "Where is Kainchi Dham and what are its timings?",
  "answer": "Kainchi Dham is Neem Karoli Baba's Hanuman temple and ashram on the <b>Nainital–Almora road in Nainital district, Uttarakhand</b> — 9 km from Bhowali and about 17 km from Nainital. Darshan is open from <b>about 6 am to 7 pm</b> (confirm locally). Entry is free and, as of early November 2026, no registration is needed; a daily cap is only proposed.",
  "facts": [
-  ["~6 am–7 pm", "darshan hours (Incredible India)"],
-  ["June 1964", "Hanuman temple consecrated"],
-  ["9 km", "from Bhowali on the Almora road"],
-  ["~38–40 km", "from Kathgodam railway station"]
+  [
+   "~6 am–7 pm",
+   "darshan hours (Incredible India)"
+  ],
+  [
+   "June 1964",
+   "Hanuman temple consecrated"
+  ],
+  [
+   "9 km",
+   "from Bhowali on the Almora road"
+  ],
+  [
+   "~38–40 km",
+   "from Kathgodam railway station"
+  ]
  ],
  "intro": [
   "Kainchi Dham — कैंची धाम — is the ashram of <b>Neem Karoli Baba</b>, lovingly called Maharaj-ji, built around a temple of <b>Hanuman</b> beside the small Shipra stream in the Kumaon hills. The place is said to take its name from the two hairpin bends of the road here, shaped like a pair of scissors (kainchi). It is run by the Shri Kainchi Hanuman Mandir and Asram Trust.",
@@ -36,10 +63,22 @@
   "h2": "The story of Kainchi Dham",
   "lead": "This is how devotees remember the ashram's beginning — a story of a saint, a riverbend and a temple for Hanuman.",
   "beats": [
-   ["A pause by the Shipra", "In 1962 Neem Karoli Baba stopped at this bend of the Shipra, where sadhus are said to have performed yagyas long before, and asked for a simple platform to be built."],
-   ["A temple for Hanuman", "Two years later, in June 1964, a Hanuman temple was consecrated here. 15 June is still kept as the ashram's foundation day."],
-   ["Love, serve, remember", "Devotees sum up his teaching in a few words: love everyone, serve everyone, remember God — and feed people."],
-   ["Seekers from afar", "He spent much of his last decade at Kainchi. Western seekers such as Ram Dass, who met him in 1967, carried his name abroad, and visitors from around the world still come."]
+   [
+    "A pause by the Shipra",
+    "In 1962 Neem Karoli Baba stopped at this bend of the Shipra, where sadhus are said to have performed yagyas long before, and asked for a simple platform to be built."
+   ],
+   [
+    "A temple for Hanuman",
+    "Two years later, in June 1964, a Hanuman temple was consecrated here. 15 June is still kept as the ashram's foundation day."
+   ],
+   [
+    "Love, serve, remember",
+    "Devotees sum up his teaching in a few words: love everyone, serve everyone, remember God — and feed people."
+   ],
+   [
+    "Seekers from afar",
+    "He spent much of his last decade at Kainchi. Western seekers such as Ram Dass, who met him in 1967, carried his name abroad, and visitors from around the world still come."
+   ]
   ],
   "more": [
    "Neem Karoli Baba passed away in <b>September 1973 in Vrindavan</b>, where his samadhi stands; Kainchi keeps an urn of his ashes. Devotees share many stories of his grace — we tell them as faith, not as claims."
@@ -48,12 +87,30 @@
  "darshan": {
   "h2": "Kainchi Dham timings and darshan",
   "rows": [
-   ["Darshan hours", "About <b>6 am to 7 pm</b> (Incredible India) — confirm locally, especially on weekends and festival days"],
-   ["Earlier opening", "A proposal to open at 4 am on rush days needs the temple committee's approval — not in force"],
-   ["Aarti times", "Not published officially — confirm at the ashram"],
-   ["Entry", "Free. No ticket, no darshan pass"],
-   ["Registration", "Not needed as of early November 2026 — see the note below"],
-   ["Stay", "The ashram does not offer rooms to visitors — stay in Bhowali, Bhimtal or Nainital"]
+   [
+    "Darshan hours",
+    "About <b>6 am to 7 pm</b> (Incredible India) — confirm locally, especially on weekends and festival days"
+   ],
+   [
+    "Earlier opening",
+    "A proposal to open at 4 am on rush days needs the temple committee's approval — not in force"
+   ],
+   [
+    "Aarti times",
+    "Not published officially — confirm at the ashram"
+   ],
+   [
+    "Entry",
+    "Free. No ticket, no darshan pass"
+   ],
+   [
+    "Registration",
+    "Not needed as of early November 2026 — see the note below"
+   ],
+   [
+    "Stay",
+    "The ashram does not offer rooms to visitors — stay in Bhowali, Bhimtal or Nainital"
+   ]
   ],
   "note": "Hours as published by Incredible India (checked October 2026). Beware of websites selling \"Kainchi Dham darshan passes\" or ashram room bookings — no such public booking exists."
  },
@@ -77,43 +134,98 @@
  "dates": {
   "h2": "Foundation day and busy dates",
   "rows": [
-   ["Foundation day mela 2027", "15 Jun 2027", "Fixed date every year; in 2026 private vehicles were stopped 13–16 Jun and shuttles ran from Bhimtal, Nainital and Haldwani"],
-   ["Weekends and long weekends", "Weekly", "Very heavy traffic — 35,000–50,000 visitors a day on the 2 Oct 2026 long weekend"],
-   ["Registration system", "Not announced yet", "Proposed daily cap of about 20,000–25,000, awaiting state approval"]
+   [
+    "Foundation day mela 2027",
+    "15 Jun 2027",
+    "Fixed date every year; in 2026 private vehicles were stopped 13–16 Jun and shuttles ran from Bhimtal, Nainital and Haldwani"
+   ],
+   [
+    "Weekends and long weekends",
+    "Weekly",
+    "Very heavy traffic — 35,000–50,000 visitors a day on the 2 Oct 2026 long weekend"
+   ],
+   [
+    "Registration system",
+    "Not announced yet",
+    "Proposed daily cap of about 20,000–25,000, awaiting state approval"
+   ]
   ],
   "note": "The ashram is open all year for darshan. Around 15 June, park where the police direct you and take the shuttle."
  },
  "reach": {
   "h2": "How to reach Kainchi Dham",
   "cards": [
-   ["By rail", "Kathgodam is the nearest railway station, about 38–40 km away — roughly 30 km to Bhowali and 9 km more on the Almora road."],
-   ["By air", "Pantnagar is the nearest airport; Bareilly is another option. From either, continue by road via Haldwani and Kathgodam."],
-   ["By road", "Kainchi is on the Nainital–Almora highway: 9 km from Bhowali and about 17 km from Nainital. Taxis run from Kathgodam, Haldwani, Bhimtal and Nainital."],
-   ["At the ashram", "A short, flat walk across the Shipra bridge — no climb, ropeway or pony. On rush days, park where the police direct and use the shuttle."]
+   [
+    "By rail",
+    "Kathgodam is the nearest railway station, about 38–40 km away — roughly 30 km to Bhowali and 9 km more on the Almora road."
+   ],
+   [
+    "By air",
+    "Pantnagar is the nearest airport; Bareilly is another option. From either, continue by road via Haldwani and Kathgodam."
+   ],
+   [
+    "By road",
+    "Kainchi is on the Nainital–Almora highway: 9 km from Bhowali and about 17 km from Nainital. Taxis run from Kathgodam, Haldwani, Bhimtal and Nainital."
+   ],
+   [
+    "At the ashram",
+    "A short, flat walk across the Shipra bridge — no climb, ropeway or pony. On rush days, park where the police direct and use the shuttle."
+   ]
   ]
  },
  "tips": {
   "h2": "Before you go",
   "items": [
-   ["Pick a weekday morning", "Best months are March–June and September–November. Avoid long weekends and 13–16 June unless you are coming for the fair."],
-   ["Stay nearby", "The ashram does not host visitors overnight. Bhowali, Bhimtal and Nainital have plenty of stays — book early for holidays."],
-   ["Respect the ashram", "Dress modestly, keep silence inside, don't bathe in the Shipra, and follow the volunteers' instructions on photography."],
-   ["Avoid fake bookings", "There is no paid darshan pass or room booking. Rely only on notices from the trust and Nainital district."]
+   [
+    "Pick a weekday morning",
+    "Best months are March–June and September–November. Avoid long weekends and 13–16 June unless you are coming for the fair."
+   ],
+   [
+    "Stay nearby",
+    "The ashram does not host visitors overnight. Bhowali, Bhimtal and Nainital have plenty of stays — book early for holidays."
+   ],
+   [
+    "Respect the ashram",
+    "Dress modestly, keep silence inside, don't bathe in the Shipra, and follow the volunteers' instructions on photography."
+   ],
+   [
+    "Avoid fake bookings",
+    "There is no paid darshan pass or room booking. Rely only on notices from the trust and Nainital district."
+   ]
   ]
  },
  "itinerary": {
   "h2": "A simple Kainchi Dham and Nainital trip",
   "days": [
-   ["1", "Kathgodam → Kainchi Dham", "Arrive at Kathgodam by train, drive about 38–40 km via Bhowali. Afternoon darshan at Kainchi Dham, then stay in Bhowali or Bhimtal."],
-   ["2", "Nainital", "Drive about 17 km to Nainital — the lake and the Naina Devi temple of Nainital. Return to Kathgodam by evening, or stay another night."],
-   ["3", "Bhimtal or Mukteshwar (optional)", "A quiet day at Bhimtal and Naukuchiatal, or a drive to Mukteshwar, before heading home."]
+   [
+    "1",
+    "Kathgodam → Kainchi Dham",
+    "Arrive at Kathgodam by train, drive about 38–40 km via Bhowali. Afternoon darshan at Kainchi Dham, then stay in Bhowali or Bhimtal."
+   ],
+   [
+    "2",
+    "Nainital",
+    "Drive about 17 km to Nainital — the lake and the Naina Devi temple of Nainital. Return to Kathgodam by evening, or stay another night."
+   ],
+   [
+    "3",
+    "Bhimtal or Mukteshwar (optional)",
+    "A quiet day at Bhimtal and Naukuchiatal, or a drive to Mukteshwar, before heading home."
+   ]
   ]
  },
- "packages": ["kainchi"],
+ "packages": [
+  "kainchi"
+ ],
  "quote_h2": "Plan your Kainchi Dham yatra with Suzu",
  "quote_text": "We plan Kainchi Dham trips from Delhi, Kathgodam or your city — the car, a stay in Bhowali, Bhimtal or Nainital, and darshan timed for a quiet weekday morning, with elders in mind. Add Nainital, Mukteshwar or an Uttarakhand yatra.",
  "wa": "Namaste Suzu Travels, I want to plan a yatra to Kainchi Dham. From city: ___ , dates: ___ , people: ___",
- "links": ["kedarnath", "badrinath", "char-dham-yatra", "naina-devi"],
+ "links": [
+  "kedarnath",
+  "badrinath",
+  "char-dham-yatra",
+  "naina-devi"
+ ],
  "place": {
   "type": "HinduTemple",
   "name": "Shri Kainchi Hanuman Mandir and Ashram (Kainchi Dham)",
@@ -122,29 +234,145 @@
   "state": "Uttarakhand",
   "lat": 29.4225,
   "lon": 79.5125,
-  "sameAs": ["https://en.wikipedia.org/wiki/Kainchi_Dham"]
+  "sameAs": [
+   "https://en.wikipedia.org/wiki/Kainchi_Dham"
+  ]
  },
  "faqs": [
-  ["What are Kainchi Dham timings?", "About 6 am to 7 pm (Incredible India). Confirm locally, especially on weekends and festival days; aarti times are not published officially."],
-  ["Is registration required for Kainchi Dham?", "Not as of early November 2026. Online registration with a daily limit of about 20,000–25,000 visitors has been proposed and awaits state government approval."],
-  ["How to reach Kainchi Dham?", "By road on the Nainital–Almora highway: 9 km from Bhowali and about 17 km from Nainital. The nearest railway station is Kathgodam (about 38–40 km) and the nearest airport is Pantnagar."],
-  ["When is Kainchi Dham foundation day?", "Every 15 June — the Hanuman temple was consecrated in June 1964. Around the fair, private vehicles may be stopped and shuttles run from Bhimtal, Nainital and Haldwani."],
-  ["Who was Neem Karoli Baba?", "A Hanuman devotee and saint (about 1900–1973) who founded the Kainchi ashram. He taught love, service and remembering God; his samadhi is in Vrindavan."],
-  ["Can we stay at Kainchi Dham ashram?", "The ashram does not offer overnight stays to visitors. Most people stay in Bhowali, Bhimtal or Nainital."],
-  ["Is there an entry fee at Kainchi Dham?", "No. Darshan is free, and there is no paid darshan pass — avoid websites that sell one."],
-  ["What is the best time to visit Kainchi Dham?", "March–June and September–November, on a weekday morning. Avoid long weekends and 13–16 June unless you are coming for the foundation day fair."]
+  [
+   "What are Kainchi Dham timings?",
+   "About 6 am to 7 pm (Incredible India). Confirm locally, especially on weekends and festival days; aarti times are not published officially."
+  ],
+  [
+   "Is registration required for Kainchi Dham?",
+   "Not as of early November 2026. Online registration with a daily limit of about 20,000–25,000 visitors has been proposed and awaits state government approval."
+  ],
+  [
+   "How to reach Kainchi Dham?",
+   "By road on the Nainital–Almora highway: 9 km from Bhowali and about 17 km from Nainital. The nearest railway station is Kathgodam (about 38–40 km) and the nearest airport is Pantnagar."
+  ],
+  [
+   "When is Kainchi Dham foundation day?",
+   "Every 15 June — the Hanuman temple was consecrated in June 1964. Around the fair, private vehicles may be stopped and shuttles run from Bhimtal, Nainital and Haldwani."
+  ],
+  [
+   "Who was Neem Karoli Baba?",
+   "A Hanuman devotee and saint (about 1900–1973) who founded the Kainchi ashram. He taught love, service and remembering God; his samadhi is in Vrindavan."
+  ],
+  [
+   "Can we stay at Kainchi Dham ashram?",
+   "The ashram does not offer overnight stays to visitors. Most people stay in Bhowali, Bhimtal or Nainital."
+  ],
+  [
+   "Is there an entry fee at Kainchi Dham?",
+   "No. Darshan is free, and there is no paid darshan pass — avoid websites that sell one."
+  ],
+  [
+   "What is the best time to visit Kainchi Dham?",
+   "March–June and September–November, on a weekday morning. Avoid long weekends and 13–16 June unless you are coming for the foundation day fair."
+  ]
  ],
  "sources": [
-  ["Shri Kainchi Hanuman Mandir and Asram Trust (official)", "https://shreekainchimandirtrust.org/"],
-  ["Nainital district (official)", "https://nainital.nic.in/"],
-  ["Incredible India — Kainchi Dham Ashram", "https://www.incredibleindia.gov.in/en/uttarakhand/nainital/kainchi-dham-ashram"],
-  ["Free Press Journal — Kainchi Dham may cap daily visitors at 25,000 (13 Oct 2026)", "https://www.freepressjournal.in/india/uttarakhand-kainchi-dham-may-cap-daily-visitors-at-25000-plan-online-registration-to-ease-traffic-congestion"],
-  ["India TV — New rules for tourists going to Kainchi Dham (7 Oct 2026)", "https://www.indiatvnews.com/news/india/new-rules-for-tourists-going-to-neem-karoli-baba-ashram-kainchi-dham-nainital-no-entry-without-registration-advance-booking-2026-10-07-1056298"],
-  ["Dynamite News — Will devotees need registration? (7 Oct 2026)", "https://www.dynamitenews.com/national/kainchi-dham-new-rules-will-devotees-need-registration-for-darshan"],
-  ["Curly Tales — new routes and registration planned (12 Oct 2026)", "https://curlytales.com/kainchi-dham-new-routes-early-darshan-registration-planned-to-manage-crowd-traffic/"],
-  ["Wikipedia — Kainchi Dham", "https://en.wikipedia.org/wiki/Kainchi_Dham"],
-  ["Wikipedia — Neem Karoli Baba", "https://en.wikipedia.org/wiki/Neem_Karoli_Baba"]
+  [
+   "Shri Kainchi Hanuman Mandir and Asram Trust (official)",
+   "https://shreekainchimandirtrust.org/"
+  ],
+  [
+   "Nainital district (official)",
+   "https://nainital.nic.in/"
+  ],
+  [
+   "Incredible India — Kainchi Dham Ashram",
+   "https://www.incredibleindia.gov.in/en/uttarakhand/nainital/kainchi-dham-ashram"
+  ],
+  [
+   "Free Press Journal — Kainchi Dham may cap daily visitors at 25,000 (13 Oct 2026)",
+   "https://www.freepressjournal.in/india/uttarakhand-kainchi-dham-may-cap-daily-visitors-at-25000-plan-online-registration-to-ease-traffic-congestion"
+  ],
+  [
+   "India TV — New rules for tourists going to Kainchi Dham (7 Oct 2026)",
+   "https://www.indiatvnews.com/news/india/new-rules-for-tourists-going-to-neem-karoli-baba-ashram-kainchi-dham-nainital-no-entry-without-registration-advance-booking-2026-10-07-1056298"
+  ],
+  [
+   "Dynamite News — Will devotees need registration? (7 Oct 2026)",
+   "https://www.dynamitenews.com/national/kainchi-dham-new-rules-will-devotees-need-registration-for-darshan"
+  ],
+  [
+   "Curly Tales — new routes and registration planned (12 Oct 2026)",
+   "https://curlytales.com/kainchi-dham-new-routes-early-darshan-registration-planned-to-manage-crowd-traffic/"
+  ],
+  [
+   "Wikipedia — Kainchi Dham",
+   "https://en.wikipedia.org/wiki/Kainchi_Dham"
+  ],
+  [
+   "Wikipedia — Neem Karoli Baba",
+   "https://en.wikipedia.org/wiki/Neem_Karoli_Baba"
+  ]
  ],
  "verified": "4 Nov 2026",
- "modified": "2026-11-04"
+ "modified": "2026-11-04",
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Kainchi Dham in pictures",
+  "lead": "The ashram's red and white temples in the pine forest beside the Shipra stream — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-hero-1-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-hero-1-1024x576.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-hero-1-1536x864.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1080,
+    "alt": "Kainchi Dham ashram and temple in the pine forest near Nainital",
+    "cap": "Kainchi Dham in the pine forest",
+    "by": "Lalit.bhandari86",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kaichi_dham.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-hero-1-768x432.webp",
+    "wp_id": 18908
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-fig-2-768x768.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-fig-2-1024x1024.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-fig-2-1536x1536.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 1920,
+    "alt": "Red and white temples of Kainchi Dham, Neem Karoli Baba ashram",
+    "cap": "The temples of Kainchi Dham",
+    "by": "Nickk Bisht",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kainchi_Dhaam_Neem_Karoli_Temple.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-fig-2-768x768.webp",
+    "wp_id": 18909
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-3-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-3-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-3-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-3.webp 1899w",
+    "w": 1899,
+    "h": 1424,
+    "alt": "Early morning at Kainchi Dham beside the Shipra stream",
+    "cap": "Early morning at Kainchi Dham",
+    "by": "25 Cents FC",
+    "lic": "CC BY-SA 3.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Early_morning_Glimpse_of_Kainchi_Dham_Nainital_2023.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-3-768x576.webp",
+    "wp_id": 18910
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-4-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-4-768x1024.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-4.webp 960w",
+    "w": 960,
+    "h": 1280,
+    "alt": "Kainchi Dham below the forested hills of Nainital district",
+    "cap": "Below the forested hills",
+    "by": "Manvikesarwani09",
+    "lic": "CC BY 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kainchi_Dham_Nainital.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kainchi-dham-g-4-768x1024.webp",
+    "wp_id": 18911
+   }
+  ]
+ }
 }
