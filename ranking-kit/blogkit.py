@@ -32,7 +32,7 @@ CSS = """
 @keyframes szbSnow{from{background-position:0 0}to{background-position:-60px 420px}}
 .szb-hero-in{padding:36px 36px 30px;max-width:760px}
 .szb-hero .k{color:var(--gold2)}
-.szb-tag{font-size:clamp(30px,4vw,48px);line-height:1.08;font-weight:800;margin:0 0 12px;letter-spacing:-.02em;color:#fff}
+.szb-tag{font-size:clamp(30px,4vw,48px);line-height:1.08;font-weight:800;margin:0 0 12px;letter-spacing:-.02em;color:#fff}.szb .szb-hero p.szb-tag,.szb .szb-hero .szb-chips li{color:#fff!important}.szb .szb-hero p.szb-sub{color:rgba(255,255,255,.9)!important}.szb .szb-quote p{color:rgba(255,255,255,.86)!important}
 .szb-sub{font-size:17px;color:rgba(255,255,255,.88);margin:0 0 16px}
 .szb-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
 .szb-chips li{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px);border-radius:99px;padding:6px 12px;font-size:14px;margin:0}
@@ -72,7 +72,7 @@ CSS = """
 .szb-sp .bar span{position:absolute;left:0;right:0;top:3px;text-align:center;font-size:10.5px;color:rgba(234,244,251,.75)}
 .szb-sp .wk{text-align:right;font-weight:800;font-size:22px;color:#fff;line-height:1}.szb-sp .wk small{display:block;font-size:11.5px;font-weight:600;color:rgba(234,244,251,.7);margin-top:4px}
 .szb-sp.yes{border-color:rgba(243,217,143,.6);box-shadow:0 0 0 1px rgba(243,217,143,.25) inset}
-.szb-snow .note{font-size:12.5px;color:rgba(234,244,251,.7);margin:12px 0 0}
+.szb .szb-snow .note,.szb .szb-snow .rows>p{font-size:12.5px;color:rgba(234,244,251,.78)!important;margin:12px 0 0}
 .szb-snow .note a{color:var(--gold2)}
 .szb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
 .szb-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none!important;color:var(--ink)!important;transition:transform .2s,box-shadow .2s;font-weight:400!important}
