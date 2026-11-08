@@ -85,6 +85,10 @@ MORE = [
     ("sarahan", "Sarahan", "सराहन", "Himachal", 31.5078, 77.7944, 2165, "rampur-weather/"),
     ("manikaran", "Manikaran", "मणिकर्ण", "Himachal", 32.0270, 77.3480, 1760, "parvati-valley-weather/"),
     ("tosh", "Tosh", "तोष", "Himachal", 32.0150, 77.4500, 2400, "parvati-valley-weather/"),
+    ("banihal", "Banihal", "बनिहाल", "Jammu", 33.4364, 75.1946, 1624, "banihal-weather/"),
+    ("ramban", "Ramban", "रामबन", "Jammu", 33.2425, 75.2386, 747, "banihal-weather/"),
+    ("qazigund", "Qazigund", "काज़ीगुंड", "Kashmir", 33.5922, 75.1656, 1670, "banihal-weather/"),
+    ("bharmour", "Bharmour", "भरमौर", "Himachal", 32.4415, 76.5340, 2195, "bharmour-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
