@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2332",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Kulgam, Aharbal, Shopian, Peer Ki Gali",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "da3723a4c1c113d60134b6307fea9f1dd9065d6c4ddfd52a8dc6af76150b6017",
+   "base_sha256": "194bf2ff6b816bf8ca4b3803b6ec761a31523d3032cb0420505bf1fa3a46784e",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-08T17:32:53Z",
+ "status": "deployed"
+}
