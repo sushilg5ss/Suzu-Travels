@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2125",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Keylong, Tirthan, Billing",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "a25d3a0788bcba6bacfb87c2bc600ac16153c3f9a9bba78ee404f0b11a150767",
+   "base_sha256": "9b60fb729f923aac093834d8338c7c0992bd5ccd5256270a88b065eaf21fd3f0",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 26092
+  }
+ ]
+}
