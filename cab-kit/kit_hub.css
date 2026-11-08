@@ -64,3 +64,8 @@
 .szc-pchips b{font-size:13px;color:var(--mid)}
 .szc-pchips button{flex:none;font-family:inherit;font-weight:600;font-size:13px;line-height:1;padding:9px 13px;border:1px solid var(--gold);border-radius:99px;background:#fffaf0;color:var(--em);cursor:pointer}
 .szc-pchips button:hover{background:var(--em);color:#fff}
+/* Call-back time slot (ENHANCEMENTS #16, 8 Nov 2026) */
+.szc-slot div{display:flex;gap:8px}
+.szc-slot button{flex:1;font-family:inherit;font-weight:700;font-size:14px;padding:9px 4px;border:1px solid rgba(255,255,255,.3);border-radius:12px;background:none;color:#fff;cursor:pointer}
+.szc-slot small{display:block;font-weight:500;font-size:12px;opacity:.8}
+.szc-slot [aria-pressed=true]{background:var(--gold);color:var(--em)}

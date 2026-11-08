@@ -38,6 +38,11 @@ POPULAR = [("Delhi", "Shimla"), ("Delhi", "Manali"), ("Chandigarh", "Manali"), (
 def planner():
     pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
     pr = [dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u=(page_url(r["slug"]) if r["slug"] and is_live(r["slug"]) else "")) for r in ROUTES]
+    # 8 Nov 2026 hub size trim (ENHANCEMENTS #16): drop "u" when the route page URL is the usual /cabs/<a>-to-<b>-taxi/ -
+    # kit_hub.js rebuilds it with the same rule (lower case, spaces -> '-'); a route without a live page keeps "u":"".
+    for r in pr:
+        if r["u"] == "/cabs/" + (r["a"] + "-to-" + r["b"]).lower().replace(" ", "-") + "-taxi/":
+            del r["u"]
     pp = dict(PLACES, **PICKUPS)
     assert not any(c in k for k in pp for c in ";|'<>"), "place names must not contain ; | ' < >"
     # 6 Nov 2026 hub size trim (ENHANCEMENTS #19): places as one "Name;lat;lon|..." string (~1.2 KB less than the JSON object); kit_hub.js expands it back to PC.p

@@ -515,6 +515,10 @@ def finish(slug, h, css_extra=""):
             m = m.replace(pu, swap(pu))
     if slug == "cabs":  # 1 Nov 2026 hub size budget: wa.me hrefs keep , : ( ) / ? literal (valid in a query string, WhatsApp decodes the same)
         m = re.sub(r'href="https://wa\.me/[^"]*"', lambda x: x.group(0).replace("%2C", ",").replace("%3A", ":").replace("%28", "(").replace("%29", ")").replace("%2F", "/").replace("%3F", "?"), m)
+    if slug == "cabs":  # 8 Nov 2026 (ENHANCEMENTS #16): kit_hub_pre.js as its own small <script> right before the kit script (kit script stays byte-identical; inserted before prune_css so .szc-slot CSS is kept)
+        pre = re.sub(r"\s*\n\s*", "", js_safe(re.sub(r"/\*.*?\*/", "", (ROOT / "kit_hub_pre.js").read_text(), flags=re.S)))
+        k = m.rfind("<script>")
+        m = m[:k] + "<script>" + pre + "</script>" + m[k:]
     if slug == "cabs":
         st = m.split("<style>", 1)[1].split("</style>", 1)[0]
         m = m.replace(f"<style>{st}</style>", f"<style>{prune_css(st, m.replace(st, ''))}</style>", 1)
