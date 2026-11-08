@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2210",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Pangong, Nubra",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "dca5f1ad7e00b178b6ecc9a0c08beaad50cc18fedd6104901e968e5a420ca6ff",
+   "base_sha256": "a43f90083c099ed9b22ac6049f70f2f124a25998e3b4dbab48d1c9c5fe117df2",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-08T16:31:00Z",
+ "status": "deployed"
+}
