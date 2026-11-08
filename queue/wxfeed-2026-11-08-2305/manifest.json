@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2305",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Banihal, Ramban, Qazigund, Bharmour",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "194bf2ff6b816bf8ca4b3803b6ec761a31523d3032cb0420505bf1fa3a46784e",
+   "base_sha256": "d8caa010245f691d968cf4677605c62fbcd2c963d38891be1b38ad0b99ae7f40",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 38162
+  }
+ ]
+}
