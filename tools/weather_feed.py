@@ -66,6 +66,9 @@ MORE = [
     ("katra", "Katra", "कटरा", "Jammu", 32.9916, 74.9318, 875, "katra-ka-mausam/"),
     ("bhawan", "Vaishno Devi Bhawan", "वैष्णो देवी भवन", "Jammu", 33.0308, 74.9490, 1585, "katra-ka-mausam/"),
     ("patnitop", "Patnitop", "पटनीटॉप", "Jammu", 33.0870, 75.3290, 2024, "patnitop-weather/"),
+    ("keylong", "Keylong", "केलांग", "Himachal", 32.5717, 77.0322, 3080, "sissu-weather/"),
+    ("tirthan", "Tirthan valley (Gushaini)", "तीर्थन घाटी", "Himachal", 31.6290, 77.4450, 1600, "jibhi-weather/"),
+    ("billing", "Billing", "बिलिंग", "Himachal", 32.0790, 76.7230, 2400, "bir-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
