@@ -62,7 +62,7 @@ SPEC = dict(
             "<b>शांत घाटियाँ:</b> जिभी और तीर्थन (बंजार, कुल्लू) — नदी किनारे होमस्टे, जलोड़ी पास; मंडी ज़िले में बरोट। अंग्रेज़ी में: <a href=\"/jibhi/\">Jibhi</a>, <a href=\"/tirthan-valley/\">Tirthan</a>, <a href=\"/barot-valley/\">Barot</a>।",
             "<b>ऊँचा हिमालय:</b> किन्नौर में सांगला, चितकुल और कल्पा; और स्पीति (काज़ा) — 7–9 दिन चाहिए। अंग्रेज़ी में: <a href=\"/sangla-valley-and-chitkul-kinnaur-trip-guide/\">Sangla & Chitkul</a>, <a href=\"/best-time-to-visit-spiti-valley/\">Best time for Spiti</a>।",
         ]),
-        dict(id="routes", kicker="कितने दिन", h2="कितने दिन में क्या देखें", ps=[], table=(["दिन", "रूट"], [
+        dict(id="routes", kicker="कितने दिन", h2="कितने दिन में क्या देखें", ps=["<b>बजट और जगहें:</b> <a href=\"/manali-trip-ka-kharcha/\">मनाली ट्रिप का खर्चा</a> · <a href=\"/kasol-ghumne-ki-jagah/\">कसोल घूमने की जगह</a> · <a href=\"/kufri-ka-mausam/\">कुफरी का मौसम</a>।"], table=(["दिन", "रूट"], [
             ["3–4 दिन", "सिर्फ़ शिमला + कुफरी, या सिर्फ़ मनाली + सोलंग, या धर्मशाला + मैक्लोडगंज।"],
             ["5–6 दिन", "शिमला + मनाली, या धर्मशाला + डलहौज़ी।"],
             ["7–8 दिन", "शिमला + मनाली + कसोल, या धर्मशाला + डलहौज़ी + बीर।"],
