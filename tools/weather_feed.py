@@ -50,6 +50,21 @@ PLACES = [
     ("mussoorie", "Mussoorie", "मसूरी", "Uttarakhand", 30.4598, 78.0644, 2005, "mussoorie-in-december/"),
     ("nainital", "Nainital", "नैनीताल", "Uttarakhand", 29.3803, 79.4636, 2084, "nainital-in-december/"),
 ]
+# Extra places for the Hindi/English weather pages (8 Nov 2026). Kept under "more" so the
+# homepage marquee (reads only "places") stays the 27 hill stations.
+MORE = [
+    ("kullu", "Kullu", "कुल्लू", "Himachal", 31.9578, 77.1095, 1220, "kullu-ka-mausam/"),
+    ("palampur", "Palampur", "पालमपुर", "Himachal", 32.1109, 76.5363, 1220, "palampur-ka-mausam/"),
+    ("kangra", "Kangra", "कांगड़ा", "Himachal", 32.0998, 76.2691, 733, "kangra-ka-mausam/"),
+    ("mandi", "Mandi", "मंडी", "Himachal", 31.7088, 76.9320, 760, "mandi-ka-mausam/"),
+    ("solan", "Solan", "सोलन", "Himachal", 30.9045, 77.0967, 1500, "solan-ka-mausam/"),
+    ("chamba", "Chamba", "चंबा", "Himachal", 32.5534, 76.1258, 996, "chamba-ka-mausam/"),
+    ("bilaspur", "Bilaspur", "बिलासपुर", "Himachal", 31.3407, 76.7627, 670, "bilaspur-ka-mausam/"),
+    ("hamirpur", "Hamirpur", "हमीरपुर", "Himachal", 31.6862, 76.5213, 785, "hamirpur-ka-mausam/"),
+    ("jammu", "Jammu", "जम्मू", "Jammu", 32.7266, 74.8570, 327, "jammu-ka-mausam/"),
+    ("katra", "Katra", "कटरा", "Jammu", 32.9916, 74.9318, 875, "katra-ka-mausam/"),
+    ("bhawan", "Vaishno Devi Bhawan", "वैष्णो देवी भवन", "Jammu", 33.0308, 74.9490, 1585, "katra-ka-mausam/"),
+]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
 
@@ -134,13 +149,24 @@ def main():
         except Exception as e:  # noqa: BLE001
             print("  bad", p[0], e, flush=True)
         time.sleep(0.4)
+    more = []
+    for p in MORE:
+        raw = get(p[4], p[5], p[6])
+        if not raw:
+            print("  skip", p[0], flush=True)
+            continue
+        try:
+            more.append(build_place(p, raw))
+        except Exception as e:  # noqa: BLE001
+            print("  bad", p[0], e, flush=True)
+        time.sleep(0.4)
     if len(places) < len(PLACES) * 0.7:
         print(f"only {len(places)} of {len(PLACES)} places — not uploading", flush=True)
         sys.exit(1)
     feed = {"updated": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
-            "source": "MET Norway", "license": "CC BY 4.0", "places": places}
+            "source": "MET Norway", "license": "CC BY 4.0", "places": places, "more": more}
     data = json.dumps(feed, ensure_ascii=False, separators=(",", ":")).encode()
-    print(f"feed {len(places)} places, {len(data)} B", flush=True)
+    print(f"feed {len(places)}+{len(more)} places, {len(data)} B", flush=True)
     if out_path:
         open(out_path, "wb").write(data)
         return
