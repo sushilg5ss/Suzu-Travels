@@ -76,6 +76,7 @@ MORE = [
     ("baramulla", "Baramulla", "बारामूला", "Kashmir", 34.2090, 74.3436, 1590, "baramulla-weather/"),
     ("kokernag", "Kokernag", "कोकरनाग", "Kashmir", 33.5840, 75.3050, 2000, "anantnag-weather/"),
     ("bhaderwah", "Bhaderwah", "भद्रवाह", "Jammu", 32.9800, 75.7130, 1613, "bhaderwah-weather/"),
+    ("kupwara", "Kupwara", "कुपवाड़ा", "Kashmir", 34.5260, 74.2546, 1615, "kupwara-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
