@@ -87,7 +87,7 @@ CSS = """
 @keyframes szbIn{to{opacity:1;transform:none}}
 .szb-wx .dy .d{font-size:13px;font-weight:800;color:#fff}.szb-wx .dy .i{font-size:28px;margin:6px 0}.szb-wx .dy .h{font-size:17px;font-weight:800;color:#fff}.szb-wx .dy .lo{font-size:13px;color:rgba(234,244,251,.7)}.szb-wx .dy .x{font-size:11.5px;color:var(--gold2);margin-top:4px;min-height:14px}
 .szb .szb-wx p.note{font-size:12.5px;color:rgba(234,244,251,.78)!important;margin:14px 0 0}.szb .szb-wx p a{color:#f3d98f!important}
-@media(max-width:640px){.szb-wx .days{grid-template-columns:repeat(4,minmax(0,1fr))}.szb-wx .now .t{font-size:44px}}
+@media(max-width:640px){.szb-wx .days{grid-template-columns:repeat(4,minmax(0,1fr))}.szb-wx .days.n5{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.szb-wx .days.n5 .dy{padding:10px 2px}.szb-wx .now .t{font-size:44px}}
 .szb-wxgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:18px 0 6px}
 .szb-wx.mini{margin:0;padding:16px}.szb-wx.mini .now{gap:12px;margin-bottom:10px}.szb-wx.mini .now .ic{font-size:36px}.szb-wx.mini .now .t{font-size:34px}.szb-wx.mini .now .l{font-size:13px}.szb-wx.mini .now .l b{font-size:15px}
 .szb-wx.mini .days{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.szb-wx.mini .dy{padding:8px 2px;border-radius:12px}.szb-wx.mini .dy .i{font-size:20px;margin:3px 0}.szb-wx.mini .dy .h{font-size:14px}.szb-wx.mini .dy .lo,.szb-wx.mini .dy .x{font-size:11px}
@@ -175,7 +175,7 @@ def img(it, eager=False, sizes="100vw"):
 
 def wp_items(slug):
     """Photos uploaded as suzu-<slug>-<role>-<n> with JSON description {file,by,lic,cap}."""
-    q = urllib.parse.urlencode({"search": f"suzu-{slug}-", "per_page": 50, "_fields": "id,source_url,alt_text,media_details,description"})
+    q = urllib.parse.urlencode({"search": f"suzu-{slug}-", "per_page": 50, "_fields": "id,source_url,alt_text,media_details,description,caption"})
     d = json.loads(urllib.request.urlopen(urllib.request.Request(f"https://suzutravels.com/wp-json/wp/v2/media?{q}", headers={"User-Agent": "SuzuKit/1.0"}), timeout=60).read())
     out = []
     for m in d:
@@ -186,7 +186,14 @@ def wp_items(slug):
         desc = html.unescape(re.sub(r"<[^>]+>", "", m["description"]["rendered"]))
         for a, b in (("“", '"'), ("”", '"'), ("″", '"'), ("′", "'"), ("’", "'"), ("‘", "'")):
             desc = desc.replace(a, b)
-        meta = json.loads(desc[desc.find("{"):desc.rfind("}") + 1])
+        try:
+            meta = json.loads(desc[desc.find("{"):desc.rfind("}") + 1])
+        except ValueError:
+            capt = html.unescape(re.sub(r"<[^>]+>", "", (m.get("caption") or {}).get("rendered", ""))).strip()
+            mc = re.match(r"(.*?)\s+—\s+Photo:\s+(.+),\s+([^,(]+?)\s*(?:\(Wikimedia Commons\))?$", capt)
+            if not mc:
+                continue
+            meta = {"cap": mc.group(1), "by": mc.group(2), "lic": mc.group(3).strip()}
         by = re.sub(r"\s+", " ", meta.get("by", "")).strip()
         by = re.sub(r"^(.+?)\1$", r"\1", by)
         if len(by) > 60:
@@ -216,7 +223,7 @@ if(/\\.json$/.test(src))src+='?h='+new Date().toISOString().slice(0,13).replace(
 var nm=b.getAttribute('data-name')||(T===HI&&p.hi?p.hi:p.name)||'';var alt=b.getAttribute('data-alt')||p.alt;
 var td=new Date();var tds=td.getFullYear()+'-'+('0'+(td.getMonth()+1)).slice(-2)+'-'+('0'+td.getDate()).slice(-2);var dd=p.days.filter(function(x){return x.d>=tds});if(!dd.length)throw 0;var old=j.updated&&(Date.now()-new Date(j.updated).getTime()>6*3600e3);var nw=b.querySelector('.now');nw.textContent='';var l=el('span','l');if(old){var k=kind(dd[0].sym);nw.appendChild(el('span','ic',icon(k,false)));nw.appendChild(el('span','t',Math.round(dd[0].hi)+'° / '+Math.round(dd[0].lo)+'°'));l.appendChild(el('b',null,T.fc+' · '+T.k[k]));}else{var k=kind(p.now.sym),night=/night/.test(p.now.sym||'');nw.appendChild(el('span','ic',icon(k,night)));nw.appendChild(el('span','t',Math.round(p.now.t)+'°C'));l.appendChild(el('b',null,T.now+' · '+T.k[k]));}
 var ex=[nm];if(alt)ex.push(Number(alt).toLocaleString('en-IN')+' m');if(!old&&p.now.rh!=null)ex.push(T.rh+Math.round(p.now.rh)+'%');if(!old&&p.now.ws!=null)ex.push(T.ws+Math.round(p.now.ws*3.6)+' km/h');l.appendChild(d.createTextNode(ex.join(' · ')));nw.appendChild(l);
-var ds=b.querySelector('.days');ds.textContent='';dd.forEach(function(x,i){var sn=(x.snow_cm>0)||x.snow===true;var kk=sn?'snow':kind(x.sym);var c=el('div','dy'+(sn?' sn':''));c.style.animationDelay=(i*0.07)+'s';var dt=new Date(x.d+'T00:00:00');c.appendChild(el('div','d',i===0?T.today:T.w[dt.getDay()]));c.appendChild(el('div','i',icon(kk,false)));c.appendChild(el('div','h',Math.round(x.hi)+'°'));c.appendChild(el('div','lo',Math.round(x.lo)+'°'));c.appendChild(el('div','x',x.snow_cm>0?x.snow_cm+T.snow:(sn?T.snowy:(x.pr>=1?Math.round(x.pr)+T.rain:''))));c.title=T.k[kk];ds.appendChild(c)});
+var ds=b.querySelector('.days');ds.textContent='';ds.className='days n'+dd.length;dd.forEach(function(x,i){var sn=(x.snow_cm>0)||x.snow===true;var kk=sn?'snow':kind(x.sym);var c=el('div','dy'+(sn?' sn':''));c.style.animationDelay=(i*0.07)+'s';var dt=new Date(x.d+'T00:00:00');c.appendChild(el('div','d',i===0?T.today:T.w[dt.getDay()]));c.appendChild(el('div','i',icon(kk,false)));c.appendChild(el('div','h',Math.round(x.hi)+'°'));c.appendChild(el('div','lo',Math.round(x.lo)+'°'));c.appendChild(el('div','x',x.snow_cm>0?x.snow_cm+T.snow:(sn?T.snowy:(x.pr>=1?Math.round(x.pr)+T.rain:''))));c.title=T.k[kk];ds.appendChild(c)});
 var u=b.querySelector('.upd')||d.querySelector('.szb-wxnote .upd');if(u&&j.updated)u.textContent=new Date(j.updated).toLocaleString(T.loc,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}).catch(function(){var s=b.closest('section')||b;s.style.display='none'})})})();"""
 
 
