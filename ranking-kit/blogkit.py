@@ -188,6 +188,7 @@ def wp_items(slug):
             desc = desc.replace(a, b)
         meta = json.loads(desc[desc.find("{"):desc.rfind("}") + 1])
         by = re.sub(r"\s+", " ", meta.get("by", "")).strip()
+        by = re.sub(r"^(.+?)\1$", r"\1", by)
         if len(by) > 60:
             mt = re.search(r"(?:taken|photographed|shot|uploaded) by ([A-Z][a-z'-]+(?: [A-Z]\.)*(?: [A-Z][a-z'-]+){0,3})", by)
             by = mt.group(1) if mt else re.split(r"[;(]|\. ", by)[0][:60]
@@ -211,7 +212,7 @@ function kind(s){s=s||'';return /thunder/.test(s)?'thunder':/sleet/.test(s)?'sle
 function icon(k,night){return {thunder:'⛈️',sleet:'🌨️',snow:'❄️',rain:'🌧️',fog:'🌫️',cloudy:'☁️',partly:night?'☁️':'⛅',fair:night?'🌙':'🌤️',clear:night?'🌙':'☀️'}[k]}
 var cache={};function get(u){if(!cache[u])cache[u]=fetch(u).then(function(r){return r.json()});return cache[u]}
 Array.prototype.forEach.call(B,function(b){var T=b.getAttribute('data-lang')==='hi'?HI:EN;var src=b.getAttribute('data-src')||'/suzu-snow.php';
-get(src).then(function(j){var p=null;j.places.forEach(function(q){if(q.id===b.getAttribute('data-id'))p=q});if(!p)throw 0;
+if(/\\.json$/.test(src))src+='?h='+new Date().toISOString().slice(0,13).replace(/\\D/g,'');get(src).then(function(j){var p=null;(j.places||[]).concat(j.more||[]).forEach(function(q){if(q.id===b.getAttribute('data-id'))p=q});if(!p)throw 0;
 var nm=b.getAttribute('data-name')||(T===HI&&p.hi?p.hi:p.name)||'';var alt=b.getAttribute('data-alt')||p.alt;
 var td=new Date();var tds=td.getFullYear()+'-'+('0'+(td.getMonth()+1)).slice(-2)+'-'+('0'+td.getDate()).slice(-2);var dd=p.days.filter(function(x){return x.d>=tds});if(!dd.length)throw 0;var old=j.updated&&(Date.now()-new Date(j.updated).getTime()>6*3600e3);var nw=b.querySelector('.now');nw.textContent='';var l=el('span','l');if(old){var k=kind(dd[0].sym);nw.appendChild(el('span','ic',icon(k,false)));nw.appendChild(el('span','t',Math.round(dd[0].hi)+'° / '+Math.round(dd[0].lo)+'°'));l.appendChild(el('b',null,T.fc+' · '+T.k[k]));}else{var k=kind(p.now.sym),night=/night/.test(p.now.sym||'');nw.appendChild(el('span','ic',icon(k,night)));nw.appendChild(el('span','t',Math.round(p.now.t)+'°C'));l.appendChild(el('b',null,T.now+' · '+T.k[k]));}
 var ex=[nm];if(alt)ex.push(Number(alt).toLocaleString('en-IN')+' m');if(!old&&p.now.rh!=null)ex.push(T.rh+Math.round(p.now.rh)+'%');if(!old&&p.now.ws!=null)ex.push(T.ws+Math.round(p.now.ws*3.6)+' km/h');l.appendChild(d.createTextNode(ex.join(' · ')));nw.appendChild(l);
