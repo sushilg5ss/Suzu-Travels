@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="meadows", kicker="Doodhpathri and Yusmarg", h2="Doodhpathri and Yusmarg: when to go", fig=True, ps=[
             "<b>Doodhpathri</b>, about 42 km from Srinagar, is a wide meadow cut by the cold, fast Shaliganga stream — best from April to October, at its greenest in May–June. <b>Yusmarg</b>, about 47 km from Srinagar, has pine-edged meadows and the short walk to <b>Nilnag lake</b>.",
             "Both are easy day trips from Srinagar in summer; in winter they are snowbound, and the last stretch of road can close after heavy snow. Carry a warm layer even in July — afternoons can turn cold and wet.",
-            "Nearby weather: <a href=\"/weather/srinagar/\">Srinagar weather</a>, <a href=\"/weather/gulmarg/\">Gulmarg weather</a> and <a href=\"/baramulla-weather/\">Baramulla weather</a>.",
+            "Full trip guide: <a href=\"/doodhpathri-yusmarg/\">Doodhpathri and Yusmarg</a>. Nearby weather: <a href=\"/weather/srinagar/\">Srinagar weather</a>, <a href=\"/weather/gulmarg/\">Gulmarg weather</a> and <a href=\"/baramulla-weather/\">Baramulla weather</a>.",
         ]),
     ],
     gallery=dict(h2="Doodhpathri and Yusmarg in pictures", lead="Doodhpathri's meadows, Yusmarg and Nilnag lake — real photographs, each credited to its photographer."),
@@ -79,7 +79,7 @@ SPEC = dict(
     ctas=dict(h2="Our Kashmir trips", lead="Hotels, meals and a private car in one quote.", items=[
         ("/best-kashmir-tour-package/", "Kashmir tour package", "From ₹16,999 per person.", "Kashmir"),
         ("/cabs/srinagar-taxi-service/", "Srinagar taxi", "Day trips to Doodhpathri and Yusmarg.", "Cab"),
-        ("/weather/gulmarg/", "Gulmarg weather", "Snow and skiing month by month.", "Weather"),
+        ("/doodhpathri-yusmarg/", "Doodhpathri and Yusmarg guide", "Day trips from Srinagar, what to see, how to get there.", "Guide"),
         ("/weather/srinagar/", "Srinagar weather by month", "Full Srinagar figures.", "Weather"),
     ]),
     quote_h2="Planning Kashmir with Doodhpathri or Yusmarg?",

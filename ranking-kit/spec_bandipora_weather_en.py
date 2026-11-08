@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="gurez", kicker="Gurez and Wular", h2="Gurez valley and Wular lake: when to go", fig=True, ps=[
             "<b>Gurez</b> lies on the Kishanganga below the pyramid-shaped <b>Habba Khatoon</b> peak, about 123 km from Srinagar. The road crosses the Razdan Pass, which closes with heavy snow in winter — the valley is cut off for about six months a year, so plan Gurez between roughly May and October and check the J&K Traffic Police advisory first.",
             "<b>Wular lake</b>, one of the largest freshwater lakes in South Asia, spreads beside Bandipora at about 1,580 m; its area changes a lot with the seasons. Spring and autumn are the clearest times for the lake.",
-            "Nearby weather: <a href=\"/kupwara-weather/\">Kupwara weather</a>, <a href=\"/baramulla-weather/\">Baramulla weather</a> and <a href=\"/weather/sonmarg/\">Sonamarg weather</a>.",
+            "Full trip guide: <a href=\"/gurez-valley/\">Gurez valley</a>. Nearby weather: <a href=\"/kupwara-weather/\">Kupwara weather</a>, <a href=\"/baramulla-weather/\">Baramulla weather</a> and <a href=\"/weather/sonmarg/\">Sonamarg weather</a>.",
         ]),
     ],
     gallery=dict(h2="Gurez and Wular lake in pictures", lead="Habba Khatoon, the Kishanganga, Gurez villages and Wular lake — real photographs, each credited to its photographer."),
@@ -79,7 +79,7 @@ SPEC = dict(
     ctas=dict(h2="Our Kashmir trips", lead="Hotels, meals and a private car in one quote.", items=[
         ("/best-kashmir-tour-package/", "Kashmir tour package", "From ₹16,999 per person.", "Kashmir"),
         ("/cabs/srinagar-taxi-service/", "Srinagar taxi", "Private car with a driver used to mountain roads.", "Cab"),
-        ("/kupwara-weather/", "Kupwara weather", "Lolab and Bangus live forecast.", "Weather"),
+        ("/gurez-valley/", "Gurez valley guide", "Habba Khatoon, Dawar, permits and how to get there.", "Guide"),
         ("/weather/srinagar/", "Srinagar weather by month", "Full Srinagar figures.", "Weather"),
     ]),
     quote_h2="Planning Kashmir with Gurez?",

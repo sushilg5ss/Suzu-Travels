@@ -56,7 +56,7 @@ SPEC = dict(
             "*Estimated from Bhuntar's IMD normals (1991–2020) adjusted for height — not official Rohru records.",
         ]),
         dict(id="chanshal", kicker="Chanshal and Hatkoti", h2="Chanshal pass and Hatkoti: when to go", fig=True, ps=[
-            "<b>Chanshal</b>, the high pass above Larot on the road to Dodra Kwar, is snowbound in winter and is usually open from about May to November. Its meadows and Himalayan views are best in June and September–October; snow can arrive early, so check before you go.",
+            "<b>Chanshal</b>, the high pass above Larot on the road to Dodra Kwar, is snowbound in winter and is usually open from about May to November. Its meadows and Himalayan views are best in June and September–October; snow can arrive early, so check before you go. Trip details: <a href=\"/adventure/chanshal-pass/\">Chanshal pass trip</a>.",
             "<b>Hatkoti</b>, with its old temples on the Pabbar, is a short drive down the valley and can be visited all year; the Pabbar valley is at its greenest after the monsoon and clearest in October–November.",
             "Nearby weather: <a href=\"/theog-weather/\">Theog weather</a>, <a href=\"/weather/narkanda/\">Narkanda weather</a> and <a href=\"/weather/shimla/\">Shimla weather</a>.",
         ]),
@@ -78,7 +78,7 @@ SPEC = dict(
     ],
     ctas=dict(h2="Our Shimla trips", lead="Hotels, meals and a private car in one quote.", items=[
         ("/destination/shimla-tour-packages/", "Shimla tour packages", "Shimla, Kufri and Narkanda.", "Shimla"),
-        ("/weather/narkanda/", "Narkanda weather", "Snow and the road month by month.", "Weather"),
+        ("/adventure/chanshal-pass/", "Chanshal pass trip", "Rohru–Larot road, season and stays.", "Trip"),
         ("/kinnaur-tour-package/", "Kinnaur tour package", "Sangla, Chitkul and Kalpa — from ₹24,999.", "Kinnaur"),
         ("/himachal-tour-packages/", "All Himachal tour packages", "Shimla, Manali, Dharamshala, Spiti.", "Himachal"),
     ]),

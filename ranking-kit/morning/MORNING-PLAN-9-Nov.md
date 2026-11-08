@@ -15,11 +15,17 @@ Steps for each:
    - theog — 31.1200, 77.3500, 2100 m, link theog-weather/
    - rohru — 31.2020, 77.7520, 1525 m, link rohru-weather/
    - karsog — 31.3800, 77.2000, 1400 m, link karsog-weather/
-   - shikaridevi — VERIFY coordinates first (temple ~3,300 m); if unsure, swap the Karsog page's middle place to "mandi"/"jibhi".
+   - shikaridevi — 31.4787, 77.1656 (Wikipedia infobox), 3300 m, link karsog-weather/
 2. Upload the queue with runQ (one writer, ≥40 s gaps, health check < 4 s). Uploads count as writes — only after 02:45.
 3. `python3 build_post.py spec_<x>`; link check; preview hero + gallery (look for dark heroes, children close-ups, wrong captions).
 4. Commit + push to ranking branch, `rkCreate(sha, slug, [77])`, then Rank Math title / description / focus from the spec.
-5. Internal links: /weather/narkanda (18262) → Theog, Rohru; /weather/shimla (18242) → Theog; mandi-weather → Karsog; rampur-weather (19883) → Rohru.
+5. Low priority: night-page meta descriptions run 200–250 characters; trim to ~155 when convenient.
+6. Internal links: /weather/narkanda (18262) → Theog, Rohru; /weather/shimla (18242) → Theog; mandi-weather → Karsog; rampur-weather (19883) → Rohru.
+
+## 1b. Small updates to live pages (rebuilt HTML already committed on the ranking branch)
+- rkPush(sha, 'budgam-weather', 19935) — adds links to the existing /doodhpathri-yusmarg/ guide.
+- rkPush(sha, 'bandipora-weather', 19947) — adds links to the existing /gurez-valley/ guide.
+- Reverse links (wp_replace_in_post, one at a time): /gurez-valley/ → bandipora-weather; /doodhpathri-yusmarg/ → budgam-weather; /adventure/kheerganga-trek/ → parvati-valley-weather; /adventure/chanshal-pass/ → rohru-weather (after Rohru is live).
 
 ## 2. Indexing (Google quota resets ~13:30 IST)
 Google Indexing API (Rank Math Instant Indexing → Publish/update) or GSC "Request indexing" for the 24 night pages:
