@@ -74,7 +74,7 @@ SPEC = dict(
     sections2=[
         dict(id="tips", kicker="Plan the trip", h2="Patnitop weather tips", ps=[
             "<b>What to pack:</b> in winter, thermals, a down jacket, cap, gloves and waterproof boots with grip; in summer, a warm layer for the evenings, which are cool even in June.",
-            "<b>Getting there:</b> Patnitop is about 112 km from Jammu. See <a href=\"/cabs/jammu-taxi-service/\">Jammu taxi service</a> for a private car, and <a href=\"/vaishno-devi-weather/\">Vaishno Devi weather</a> if you are combining it with darshan.",
+            "<b>Getting there:</b> Patnitop is about 112 km from Jammu. See <a href=\"/cabs/jammu-taxi-service/\">Jammu taxi service</a> for a private car, and <a href=\"/vaishno-devi-weather/\">Vaishno Devi weather</a> if you are combining it with darshan. Further east in Doda district, see <a href=\"/bhaderwah-weather/\">Bhaderwah weather</a>.",
             "<b>Hindi:</b> <a href=\"/jammu-ka-mausam/\" lang=\"hi\">जम्मू, कटरा और वैष्णो देवी भवन का मौसम</a>.",
         ]),
     ],
