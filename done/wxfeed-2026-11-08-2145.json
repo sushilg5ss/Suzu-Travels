@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2145",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Bhaderwah",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "83faf018c14787ac135d50cc38d33e4f2f9429d77f3f01718204384b297e96de",
+   "base_sha256": "0b079a058960d891f0e406ca7fd6b6098211d2baa636f9daf36af5d45aeb7410",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-08T16:06:27Z",
+ "status": "deployed"
+}
