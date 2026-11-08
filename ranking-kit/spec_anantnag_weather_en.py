@@ -75,7 +75,7 @@ SPEC = dict(
     sections2=[
         dict(id="tips", kicker="Before you go", h2="Anantnag trip: what the weather means for you", ps=[
             "<b>Clothing:</b> thermals, a down jacket and waterproof boots from December to February; warm layers in March–April and October–November; light layers in summer with a jacket for evenings.",
-            "<b>Nearby weather:</b> <a href=\"/weather/srinagar/\">Srinagar weather</a>, <a href=\"/weather/pahalgam/\">Pahalgam weather</a>, <a href=\"/weather/gulmarg/\">Gulmarg weather</a> and <a href=\"/kashmir-ka-mausam/\">Kashmir weather (Hindi)</a>.",
+            "<b>Nearby weather:</b> <a href=\"/banihal-weather/\">Banihal and Qazigund (Jammu–Srinagar highway)</a>, <a href=\"/kishtwar-weather/\">Kishtwar and Sinthan Top</a>, <a href=\"/weather/srinagar/\">Srinagar weather</a>, <a href=\"/weather/pahalgam/\">Pahalgam weather</a>, <a href=\"/weather/gulmarg/\">Gulmarg weather</a> and <a href=\"/kashmir-ka-mausam/\">Kashmir weather (Hindi)</a>.",
         ]),
     ],
     ctas=dict(h2="Our Kashmir trips", lead="Hotels, breakfast and dinner, and a private car from Srinagar.", items=[
