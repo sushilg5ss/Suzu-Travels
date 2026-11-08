@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2347",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Budgam, Yusmarg",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "aa4be63a5d249f4d211e15c591d7238e369f194ac43039695ac3cf428d192f1d",
+   "base_sha256": "da3723a4c1c113d60134b6307fea9f1dd9065d6c4ddfd52a8dc6af76150b6017",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 41739
+  }
+ ]
+}
