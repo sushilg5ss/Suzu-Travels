@@ -2035,5 +2035,65 @@
   "license": "CC BY-SA 4.0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Mirissa_beach,_Srilanka.jpg",
   "wp_id": 18611
+ },
+ "vietnam-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-vietnam-hanoi-huc-bridge.webp",
+  "alt": "Red wooden The Huc Bridge reflected in Hoan Kiem Lake among trees, Hanoi, Vietnam",
+  "cap": "The Huc Bridge, Hanoi",
+  "note": "The red bridge over Hoan Kiem Lake in the old quarter",
+  "credit": "Rolf Müller (User:Rolfmueller)",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Hoan_kiem_lake_huc_bridge_hanoi_2007_01.jpg",
+  "wp_id": 19435
+ },
+ "vietnam-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-vietnam-sapa-rice-terraces.webp",
+  "alt": "Terraced rice fields after harvest on the hillsides below the mountains, Sapa, northern Vietnam",
+  "cap": "Rice terraces, Sapa",
+  "note": "Hillside terraces after harvest, with the mountains behind",
+  "credit": "Eerin25",
+  "license": "CC0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Rice_terraces_in_Sapa,_Vietnam.jpg",
+  "wp_id": 19436
+ },
+ "vietnam-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-vietnam-hue-meridian-gate.webp",
+  "alt": "Meridian Gate (Ngo Mon) of the Imperial City with its tiered pavilion roofs above the moat, Hue, Vietnam",
+  "cap": "Meridian Gate, Hue",
+  "note": "The main gate of the Imperial City, seen across the moat",
+  "credit": "Chainwit.",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Hu%E1%BA%BF_(2024)_-_Meridian_Gate_-_Ng%E1%BB%8D_M%C3%B4n_(Ho%C3%A0ng_th%C3%A0nh_Hu%E1%BA%BF)_-_img_02.jpg",
+  "wp_id": 19437
+ },
+ "vietnam-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-vietnam-hoi-an-covered-bridge.webp",
+  "alt": "The Japanese Covered Bridge (Chua Cau) on stone piers over a canal, Hoi An Ancient Town, Vietnam",
+  "cap": "Japanese Covered Bridge, Hoi An",
+  "note": "The old covered bridge on stone piers in the ancient town",
+  "credit": "Avi Alpert",
+  "license": "CC BY-SA 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Japanese_Covered_Bridge_Hoi_An_(16538751410).jpg",
+  "wp_id": 19438
+ },
+ "vietnam-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-vietnam-golden-bridge-ba-na.webp",
+  "alt": "The Golden Bridge held up by two giant stone hands above a sea of clouds, Ba Na Hills, Da Nang, Vietnam",
+  "cap": "Golden Bridge, Ba Na Hills",
+  "note": "The bridge held by two stone hands, above the clouds near Da Nang",
+  "credit": "Vivu Vietnam",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Golden_Bridge_above_the_clouds_Ba_Na_Hills_Da_Nang_Vietnam.jpg",
+  "wp_id": 19439
+ },
+ "vietnam-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-vietnam-saigon-post-office.webp",
+  "alt": "Yellow colonial facade and clock of the Saigon Central Post Office under a blue sky, Ho Chi Minh City, Vietnam",
+  "cap": "Central Post Office, Saigon",
+  "note": "The colonial-era post office in Ho Chi Minh City",
+  "credit": "Yesvn123",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Saigon_Central_Post_Office_2022.jpg",
+  "wp_id": 19440
  }
 }

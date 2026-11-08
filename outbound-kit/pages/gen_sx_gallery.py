@@ -27,6 +27,11 @@ GAL = {
    sub='Six stops from the classic first-time Sri Lanka loop — the rock fortress at Sigiriya, the Dambulla cave temple, the Temple of the Tooth in Kandy, Galle Fort, an elephant safari at Udawalawe and the beaches of the south coast. Tap any photo to open it full size.',
    slugs=[('srilanka-g1','-1024x683'),('srilanka-g2','-1024x734'),('srilanka-g3','-686x1024'),
           ('srilanka-g4','-957x1024'),('srilanka-g5','-1024x576'),('srilanka-g6','-1024x683')]),
+ 'vietnam': dict(
+   title='Vietnam in real photos',
+   sub='Six stops from north to south — the lake in Hanoi\u2019s old quarter, the rice terraces of Sapa, the imperial gate at Hue, the old covered bridge in Hoi An, the Golden Bridge above Da Nang and colonial Saigon. Tap any photo to open it full size.',
+   slugs=[('vietnam-g1','-1024x683'),('vietnam-g2','-1024x683'),('vietnam-g3','-1024x768'),
+          ('vietnam-g4','-1024x768'),('vietnam-g5','-1024x683'),('vietnam-g6','-1024x683')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"
