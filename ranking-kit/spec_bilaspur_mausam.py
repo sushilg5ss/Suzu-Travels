@@ -51,7 +51,7 @@ SPEC = dict(
         ]),
         dict(id="temples", kicker="मंदिर और मेले", h2="नैना देवी और बाबा बालक नाथ: दर्शन का मौसम", ps=[
             "<b>श्री नैना देवी जी</b> बिलासपुर से लगभग 60 km दूर, ऊँची पहाड़ी पर है — शहर से कुछ डिग्री ठंडा और हवादार। नवरात्रि (चैत्र और आश्विन) में सबसे ज़्यादा भीड़ होती है — <a href=\"/pilgrimage-tours/naina-devi/\">Naina Devi darshan guide</a> और <a href=\"/navratri-mela-2026-in-himachal-chintpurni-naina-devi-jwala-ji/\">Navratri mela 2026</a>।",
-            "<b>बाबा बालक नाथ (दियोटसिद्ध)</b> हमीरपुर ज़िले में है; मार्च–अप्रैल के चैत्र मेले में भीड़ रहती है — <a href=\"/pilgrimage-tours/baba-balak-nath/\">Baba Balak Nath guide</a>।",
+            "<b>बाबा बालक नाथ (दियोटसिद्ध)</b> हमीरपुर ज़िले में है (<a href=\"/hamirpur-ka-mausam/\">हमीरपुर का मौसम</a>); मार्च–अप्रैल के चैत्र मेले में भीड़ रहती है — <a href=\"/pilgrimage-tours/baba-balak-nath/\">Baba Balak Nath guide</a>।",
             "गर्मियों में दर्शन सुबह जल्दी या शाम को करें; मानसून में पहाड़ी सड़कों पर भूस्खलन की ख़बर देखकर निकलें।",
         ]),
     ],
