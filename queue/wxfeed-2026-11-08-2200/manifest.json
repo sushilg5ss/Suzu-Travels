@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2200",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Kupwara",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "a43f90083c099ed9b22ac6049f70f2f124a25998e3b4dbab48d1c9c5fe117df2",
+   "base_sha256": "83faf018c14787ac135d50cc38d33e4f2f9429d77f3f01718204384b297e96de",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 30918
+  }
+ ]
+}
