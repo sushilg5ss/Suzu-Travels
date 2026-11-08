@@ -56,7 +56,7 @@ SPEC = dict(
             "*Estimated from Bhuntar's IMD normals (1991–2020) adjusted for height — not an official Jibhi record. Full Kullu valley figures: <a href=\"/kullu-weather/\">Kullu weather</a>.",
         ]),
         dict(id="snow", kicker="Snow and roads", h2="Snow at Jibhi and Jalori Pass, and the roads in winter", fig=True, ps=[
-            "Jibhi gets snow in many winters, usually between late December and February, but it melts quickly in the sun. <b>Jalori Pass</b>, about 12 km above Jibhi, is far snowier; after heavy snow the road over the pass is closed for days or weeks, so Jibhi is then reached only from the Aut side.",
+            "Jibhi gets snow in many winters, usually between late December and February, but it melts quickly in the sun. <b><a href=\"/jalori-pass/\">Jalori Pass</a></b>, about 12 km above Jibhi, is far snowier; after heavy snow the road over the pass is closed for days or weeks, so Jibhi is then reached only from the Aut side.",
             "The <b>Tirthan valley</b> (Gushaini, Nagini, Sai Ropa) is a little lower and milder; it is the gateway to the Great Himalayan National Park, a UNESCO World Heritage Site. Treks to Serolsar lake and Raghupur Fort from Jalori are best from April to June and September to November.",
             "More on the area: <a href=\"/jibhi/\">Jibhi travel guide</a>, <a href=\"/tirthan-valley/\">Tirthan valley guide</a> and the <a href=\"/jibhi-and-tirthan-valley-itinerary/\">Jibhi and Tirthan itinerary</a>.",
         ]),

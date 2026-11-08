@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="roads", kicker="Roads and planning", h2="Chang La, Khardung La and planning your days", fig=True, ps=[
             "Both trips cross passes well above 5,000 m — <b>Chang La</b> to Pangong and <b>Khardung La</b> to Nubra — so spend at least two nights in Leh to acclimatise first, start early, and carry warm layers even in July.",
             "Snow can close a pass for hours or days, even in May–June and September–October. In winter, Pangong is visited mainly for the frozen lake by well-prepared travellers with a local winter driver.",
-            "Check the current permit and environment-fee rules on the Ladakh administration's portal before you go. More: <a href=\"/ladakh-ka-mausam/\">Ladakh weather (Hindi)</a> and <a href=\"/ladakh-in-winter/\">Ladakh in winter</a>.",
+            "Check the current permit and environment-fee rules on the Ladakh administration's portal before you go. More: <a href=\"/leh-to-pangong-lake/\">Leh to Pangong Lake by road</a>, <a href=\"/ladakh-ka-mausam/\">Ladakh weather (Hindi)</a> and <a href=\"/ladakh-in-winter/\">Ladakh in winter</a>.",
         ]),
     ],
     gallery=dict(h2="Pangong and Nubra in pictures", lead="Pangong's blue water, Nubra's dunes and camels, and Leh Palace — real photographs, each credited to its photographer."),

@@ -25,6 +25,8 @@ Steps for each:
 ## 1b. Small updates to live pages (rebuilt HTML already committed on the ranking branch)
 - rkPush(sha, 'budgam-weather', 19935) — adds links to the existing /doodhpathri-yusmarg/ guide.
 - rkPush(sha, 'bandipora-weather', 19947) — adds links to the existing /gurez-valley/ guide.
+- rkPush(sha, 'jibhi-weather', 19748) → /jalori-pass/; rkPush(sha, 'pangong-weather', 19785) → /leh-to-pangong-lake/; rkPush(sha, 'parvati-valley-weather', 19856) → /manikaran-sahib/, /tosh-village/.
+- NOTE: patnitop-weather (19539), anantnag-weather (19773), chamba-weather (19573), kinnaur-weather (19663) and bhaderwah-weather (19831) had night link edits made directly in WP; their specs on the ranking branch already include them, so a future rkPush keeps the links.
 - Reverse links (wp_replace_in_post, one at a time): /gurez-valley/ → bandipora-weather; /doodhpathri-yusmarg/ → budgam-weather; /adventure/kheerganga-trek/ → parvati-valley-weather; /adventure/chanshal-pass/ → rohru-weather (after Rohru is live).
 
 ## 2. Indexing (Google quota resets ~13:30 IST)

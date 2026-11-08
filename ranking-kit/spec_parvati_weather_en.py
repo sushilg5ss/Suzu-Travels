@@ -57,8 +57,8 @@ SPEC = dict(
             "*Estimated from Bhuntar's IMD normals (1991–2020) adjusted for height — not official Kasol records. Month-by-month Kasol page: <a href=\"/weather/kasol/\">Kasol weather</a>.",
         ]),
         dict(id="places", kicker="Up the valley", h2="Manikaran, Tosh and Kheerganga: weather and timing", fig=True, ps=[
-            "<b>Manikaran</b>, about 4 km beyond Kasol, is known for the Manikaran Sahib gurdwara and its hot springs — steam rises from the pools all year, most visibly on cold winter mornings.",
-            "<b>Tosh</b> sits above Barshaini at the end of the road, at about 2,400 m; it gets regular snow in winter and is cold at night even in spring and autumn. <b>Kheerganga</b>, a trek from Barshaini to a hot-spring pool at about 2,960 m, is best from April to June and September to November.",
+            "<b>Manikaran</b>, about 4 km beyond Kasol, is known for the <a href=\"/manikaran-sahib/\">Manikaran Sahib</a> gurdwara and its hot springs — steam rises from the pools all year, most visibly on cold winter mornings.",
+            "<b><a href=\"/tosh-village/\">Tosh</a></b> sits above Barshaini at the end of the road, at about 2,400 m; it gets regular snow in winter and is cold at night even in spring and autumn. <b>Kheerganga</b>, a trek from Barshaini to a hot-spring pool at about 2,960 m, is best from April to June and September to November.",
             "In winter, snow can block the upper road and trails for days. More: <a href=\"/parvati-valley-guide/\">Parvati valley guide</a>, <a href=\"/adventure/kheerganga-trek/\">Kheerganga trek</a> and <a href=\"/kasol-ghumne-ki-jagah/\">Kasol (Hindi guide)</a>.",
         ]),
     ],
