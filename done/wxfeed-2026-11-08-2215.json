@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2215",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Kishtwar, Sinthan Top",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "0d9be4cb79b795494eefe2a834bb0624fbf811ab62fad97675b712238c1a7125",
+   "base_sha256": "dca5f1ad7e00b178b6ecc9a0c08beaad50cc18fedd6104901e968e5a420ca6ff",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-08T16:42:12Z",
+ "status": "deployed"
+}
