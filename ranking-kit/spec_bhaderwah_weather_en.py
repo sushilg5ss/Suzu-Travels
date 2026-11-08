@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="around", kicker="Around Bhaderwah", h2="Jai valley, Padri and the high meadows: when to go", fig=True, ps=[
             "<b>Jai valley</b> and the meadows around <b>Padri</b> are green from May to September and snow-covered in winter; the high road over Padri usually closes after the winter snows. <b>Kailash Kund</b>, a high-altitude lake above Bhaderwah, is reached only in summer.",
             "From Jammu the road runs via Udhampur, Batote and Pul Doda (Udhampur–Batote about 55 km, Batote–Pul Doda about 50 km, Pul Doda–Bhaderwah about 30 km). Monsoon rain (July–August) can bring landslides on this route; check the traffic advisory before setting out.",
-            "Nearby weather pages: <a href=\"/patnitop-weather/\">Patnitop weather</a>, <a href=\"/jammu-weather/\">Jammu weather</a> and <a href=\"/vaishno-devi-weather/\">Vaishno Devi weather</a>.",
+            "Nearby weather pages: <a href=\"/kishtwar-weather/\">Kishtwar weather</a>, <a href=\"/patnitop-weather/\">Patnitop weather</a>, <a href=\"/jammu-weather/\">Jammu weather</a> and <a href=\"/vaishno-devi-weather/\">Vaishno Devi weather</a>.",
         ]),
     ],
     gallery=dict(h2="Bhaderwah in pictures", lead="The valley, Jai meadows, Kailash Kund and winter snow — real photographs, each credited to its photographer."),
