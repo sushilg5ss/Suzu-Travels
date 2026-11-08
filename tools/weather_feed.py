@@ -69,6 +69,12 @@ MORE = [
     ("keylong", "Keylong", "केलांग", "Himachal", 32.5717, 77.0322, 3080, "sissu-weather/"),
     ("tirthan", "Tirthan valley (Gushaini)", "तीर्थन घाटी", "Himachal", 31.6290, 77.4450, 1600, "jibhi-weather/"),
     ("billing", "Billing", "बिलिंग", "Himachal", 32.0790, 76.7230, 2400, "bir-weather/"),
+    ("rohtang", "Rohtang Pass", "रोहतांग पास", "Himachal", 32.3716, 77.2466, 3978, "rohtang-weather/"),
+    ("kargil", "Kargil", "कारगिल", "Ladakh", 34.5539, 76.1349, 2676, "kargil-weather/"),
+    ("drass", "Drass", "द्रास", "Ladakh", 34.4285, 75.7586, 3280, "kargil-weather/"),
+    ("anantnag", "Anantnag", "अनंतनाग", "Kashmir", 33.7311, 75.1487, 1601, "anantnag-weather/"),
+    ("baramulla", "Baramulla", "बारामूला", "Kashmir", 34.2090, 74.3436, 1590, "baramulla-weather/"),
+    ("kokernag", "Kokernag", "कोकरनाग", "Kashmir", 33.5840, 75.3050, 2000, "anantnag-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
