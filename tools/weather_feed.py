@@ -61,6 +61,7 @@ MORE = [
     ("chamba", "Chamba", "चंबा", "Himachal", 32.5534, 76.1258, 996, "chamba-ka-mausam/"),
     ("bilaspur", "Bilaspur", "बिलासपुर", "Himachal", 31.3407, 76.7627, 670, "bilaspur-ka-mausam/"),
     ("hamirpur", "Hamirpur", "हमीरपुर", "Himachal", 31.6862, 76.5213, 785, "hamirpur-ka-mausam/"),
+    ("una", "Una", "ऊना", "Himachal", 31.4685, 76.2708, 369, "una-ka-mausam/"),
     ("jammu", "Jammu", "जम्मू", "Jammu", 32.7266, 74.8570, 327, "jammu-ka-mausam/"),
     ("katra", "Katra", "कटरा", "Jammu", 32.9916, 74.9318, 875, "katra-ka-mausam/"),
     ("bhawan", "Vaishno Devi Bhawan", "वैष्णो देवी भवन", "Jammu", 33.0308, 74.9490, 1585, "katra-ka-mausam/"),
