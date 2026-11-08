@@ -54,7 +54,7 @@ PLACES = [
 # homepage marquee (reads only "places") stays the 27 hill stations.
 MORE = [
     ("kullu", "Kullu", "कुल्लू", "Himachal", 31.9578, 77.1095, 1220, "kullu-ka-mausam/"),
-    ("palampur", "Palampur", "पालमपुर", "Himachal", 32.1109, 76.5363, 1220, "palampur-ka-mausam/"),
+    ("palampur", "Palampur", "पालमपुर", "Himachal", 32.1109, 76.5363, 1470, "palampur-ka-mausam/"),
     ("kangra", "Kangra", "कांगड़ा", "Himachal", 32.0998, 76.2691, 733, "kangra-ka-mausam/"),
     ("mandi", "Mandi", "मंडी", "Himachal", 31.7088, 76.9320, 760, "mandi-ka-mausam/"),
     ("solan", "Solan", "सोलन", "Himachal", 30.9045, 77.0967, 1500, "solan-ka-mausam/"),
@@ -64,6 +64,7 @@ MORE = [
     ("jammu", "Jammu", "जम्मू", "Jammu", 32.7266, 74.8570, 327, "jammu-ka-mausam/"),
     ("katra", "Katra", "कटरा", "Jammu", 32.9916, 74.9318, 875, "katra-ka-mausam/"),
     ("bhawan", "Vaishno Devi Bhawan", "वैष्णो देवी भवन", "Jammu", 33.0308, 74.9490, 1585, "katra-ka-mausam/"),
+    ("patnitop", "Patnitop", "पटनीटॉप", "Jammu", 33.0870, 75.3290, 2024, "patnitop-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
