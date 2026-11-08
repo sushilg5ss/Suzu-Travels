@@ -1,0 +1,14 @@
+{
+ "_note": "Media for /india-tours/india-festivals-calendar/ (guide). Library photos only (no new downloads, CREDITS rows already exist): px-16228271 Holi in Vrindavan (poster, frame 0), px-29495753 Har Ki Pauri Haridwar evening, px-16973143 Varanasi ghats evening, px-5458388 Golden Temple Amritsar sunset, px-5058588 camel in the Thar at night. Captions = allowed captions + dates from research/pages/india-festivals-calendar.md (DoPT 2027 list). Built by Page Builder (night) 9 Nov 2026, Step 1.4.",
+ "hero": {
+  "kicker": "INDIA FESTIVALS 2027",
+  "scenes": [
+   {"img": "px-16228271.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 560}},
+   {"img": "px-29495753.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": -20}},
+   {"img": "px-16973143.jpg", "kind": "land", "from": {"scale": 1.12, "x": 60, "y": 0}, "to": {"scale": 1.04, "x": 100, "y": 10}},
+   {"img": "px-5458388.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 40, "y": 20}},
+   {"img": "px-5058588.jpg", "kind": "land", "from": {"scale": 1.10, "x": 40, "y": 0}, "to": {"scale": 1.03, "x": -20, "y": 10}}
+  ],
+  "steps": ["HOLI · 23 MAR 2027", "HARIDWAR", "VARANASI GHATS", "GOLDEN TEMPLE", "THAR DESERT"]
+ }
+}
