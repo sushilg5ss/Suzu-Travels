@@ -9,9 +9,9 @@ SPEC = dict(
     seo_desc="Baramulla weather today: live five-day forecast for Baramulla, Gulmarg and Srinagar, month-by-month temperatures and rain, winter snow and Chillai Kalan, and what the weather means for Gulmarg and the Uri road.",
     focus="baramulla weather, baramulla weather today",
     photo_pick=dict(slugs=[P, G, Q], ids=[
-        (P + ":hero-1", "hero", "Baramulla", "Baramulla and the Jhelum valley"),
+        (G + ":g-8", "hero", "Kongdoori, Gulmarg (Baramulla district), in winter", "The Kongdoori gondola station area at Gulmarg in winter"),
+        (P + ":hero-1", "g", "Baramulla", "Baramulla and the Jhelum valley"),
         (P + ":fig-1", "fig", "Baba Reshi shrine", "Baba Reshi shrine near Tangmarg, Baramulla district"),
-        (G + ":g-8", "g", "Kongdoori, Gulmarg, in winter", "The Kongdoori gondola station area at Gulmarg in winter"),
         (P + ":g-1", "g", "Towards Uri", "The Jhelum valley towards Uri, Baramulla district"),
         (Q + ":g-1", "g", "Gulmarg meadows in summer", "The green meadows of Gulmarg in summer"),
         (P + ":g-2", "g", "The Jhelum at Uri", "The Jhelum at Uri"),
