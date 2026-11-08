@@ -322,5 +322,14 @@
   "blurb": "Five private routes side by side — Golden Triangle, Rishikesh, Kashmir, Amritsar and the Himalayas — in US dollars",
   "added": "2026-11-07",
   "focus": "north india tour packages"
+ },
+ "india-festivals-calendar": {
+  "id": 19963,
+  "path": "/india-tours/india-festivals-calendar/",
+  "kind": "guide",
+  "label": "India festivals calendar 2027",
+  "blurb": "2027 festival dates from the official list, month by month, and the trip that fits each",
+  "added": "2026-11-09",
+  "focus": "india festivals calendar"
  }
 }
