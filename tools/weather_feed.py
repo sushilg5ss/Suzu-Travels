@@ -93,6 +93,8 @@ MORE = [
     ("aharbal", "Aharbal", "अहरबल", "Kashmir", 33.6440, 74.7870, 2266, "kulgam-weather/"),
     ("shopian", "Shopian", "शोपियां", "Kashmir", 33.7200, 74.8300, 2057, "shopian-weather/"),
     ("peerkigali", "Peer Ki Gali", "पीर की गली", "Kashmir", 33.6386, 74.5465, 3490, "shopian-weather/"),
+    ("budgam", "Budgam", "बडगाम", "Kashmir", 34.0198, 74.7194, 1610, "budgam-weather/"),
+    ("yusmarg", "Yusmarg", "यूसमर्ग", "Kashmir", 33.8330, 74.6640, 2396, "budgam-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
