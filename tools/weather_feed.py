@@ -95,6 +95,7 @@ MORE = [
     ("peerkigali", "Peer Ki Gali", "पीर की गली", "Kashmir", 33.6386, 74.5465, 3490, "shopian-weather/"),
     ("budgam", "Budgam", "बडगाम", "Kashmir", 34.0198, 74.7194, 1610, "budgam-weather/"),
     ("yusmarg", "Yusmarg", "यूसमर्ग", "Kashmir", 33.8330, 74.6640, 2396, "budgam-weather/"),
+    ("bandipora", "Bandipora", "बांदीपोरा", "Kashmir", 34.4170, 74.6430, 1580, "bandipora-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
