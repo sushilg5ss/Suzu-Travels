@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2135",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Rohtang, Kargil, Drass, Anantnag, Baramulla, Kokernag",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "0b079a058960d891f0e406ca7fd6b6098211d2baa636f9daf36af5d45aeb7410",
+   "base_sha256": "a25d3a0788bcba6bacfb87c2bc600ac16153c3f9a9bba78ee404f0b11a150767",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-08T15:56:17Z",
+ "status": "deployed"
+}
