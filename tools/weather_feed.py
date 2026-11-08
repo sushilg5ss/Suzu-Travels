@@ -77,6 +77,8 @@ MORE = [
     ("kokernag", "Kokernag", "कोकरनाग", "Kashmir", 33.5840, 75.3050, 2000, "anantnag-weather/"),
     ("bhaderwah", "Bhaderwah", "भद्रवाह", "Jammu", 32.9800, 75.7130, 1613, "bhaderwah-weather/"),
     ("kupwara", "Kupwara", "कुपवाड़ा", "Kashmir", 34.5260, 74.2546, 1615, "kupwara-weather/"),
+    ("pangong", "Pangong Tso (Lukung)", "पैंगोंग", "Ladakh", 34.0300, 78.4600, 4250, "pangong-weather/"),
+    ("nubra", "Nubra (Diskit)", "नुब्रा", "Ladakh", 34.5476, 77.5594, 3144, "pangong-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
