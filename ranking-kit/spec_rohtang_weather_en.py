@@ -12,7 +12,7 @@ SPEC = dict(
         (P + ":g-1", "g", "Rainbow on the Rohtang road", "A rainbow over the Rohtang Pass road"),
         (P + ":g-2", "g", "Chandra river from Rohtang", "The Chandra river seen from Rohtang"),
         (P + ":g-3", "g", "Below Rohtang, Lahaul side", "A Chandra tributary below Rohtang, Lahaul"),
-        (P + ":g-4", "g", "Manali to Rohtang road", "On the road from Manali to Rohtang Pass"),
+        (P + ":g-4", "g", "Atal Tunnel north portal", "The Atal Tunnel north portal sign on the Lahaul side"),
         (P + ":g-5", "g", "Manali to Rohtang road", "On the road from Manali to Rohtang Pass"),
         (P + ":g-6", "g", "Manali to Rohtang road", "On the road from Manali to Rohtang Pass"),
         (P + ":g-7", "g", "Manali to Rohtang road", "On the road from Manali to Rohtang Pass"),
