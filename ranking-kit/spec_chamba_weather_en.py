@@ -59,7 +59,7 @@ SPEC = dict(
         dict(id="snow", kicker="Snow", h2="Where to find snow near Chamba", fig=True, ps=[
             "Chamba sits low in the Ravi valley, so snow rarely settles in town. Higher up:",
             "<b>Khajjiar (~1,920 m) and Dalhousie (~1,970 m):</b> late December to February, mostly January; the Khajjiar road is the first to close after snow — <a href=\"/weather/dalhousie/\">Dalhousie weather by month</a>.",
-            "<b>Bharmour (~2,195 m):</b> about 65 km from Chamba; heavy winter snow and frequent road closures. In summer, the base for the Manimahesh yatra.",
+            "<b>Bharmour (~2,195 m):</b> about 65 km from Chamba; heavy winter snow and frequent road closures. In summer, the base for the Manimahesh yatra — <a href=\"/bharmour-weather/\">Bharmour weather</a>.",
             "<b>Sach Pass:</b> the high pass to Pangi is snowbound in winter and usually opens only in summer.",
         ]),
         dict(id="minjar", kicker="Fairs and seasons", h2="The Minjar fair and Chamba's monsoon", ps=[
