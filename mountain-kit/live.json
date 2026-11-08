@@ -383,5 +383,15 @@
   "blurb": "All 28 states and 8 UTs in one table",
   "added": "2026-11-07",
   "commercial": false
+ },
+ "jammu-kashmir": {
+  "id": 19576,
+  "path": "/mountains-of-india/jammu-kashmir/",
+  "kind": "state",
+  "label": "Peaks of Jammu & Kashmir",
+  "blurb": "10 peaks · Nun 7,135 m to Mahadev above Srinagar",
+  "added": "2026-11-08",
+  "state": "jammu-kashmir",
+  "commercial": false
  }
 }
