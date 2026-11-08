@@ -75,7 +75,7 @@ SPEC = dict(
         dict(id="tips", kicker="Before you go", h2="Kinnaur trip: what the weather means for you", ps=[
             "<b>Clothing:</b> a down jacket, thermals, snow boots and gloves from December to March; a warm jacket and layers in April–June and September–November, because nights stay cold.",
             "<b>Permits:</b> none for Indian citizens. Foreign nationals need an Inner Line Permit beyond Jangi (Pooh block, towards Spiti) — not for Kalpa, Sangla or Chitkul.",
-            "<b>Nearby weather:</b> <a href=\"/weather/kaza/\">Kaza (Spiti)</a>, <a href=\"/weather/shimla/\">Shimla</a>, <a href=\"/weather/narkanda/\">Narkanda</a> and <a href=\"/weather/\">all mountain weather</a>.",
+            "<b>Nearby weather:</b> <a href=\"/weather/kaza/\">Kaza (Spiti)</a>, <a href=\"/weather/shimla/\">Shimla</a>, <a href=\"/weather/narkanda/\">Narkanda</a>, <a href=\"/rampur-weather/\">Rampur and Sarahan</a> and <a href=\"/weather/\">all mountain weather</a>.",
         ]),
     ],
     ctas=dict(h2="Our Kinnaur trips", lead="Hotels, meals and a private car in one quote.", items=[
