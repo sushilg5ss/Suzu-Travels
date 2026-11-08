@@ -64,7 +64,7 @@ SPEC = dict(
         ]),
         dict(id="snow", kicker="Snow nearby", h2="Does it snow in Jammu? The nearest snow", ps=[
             "Jammu city does not get snow — even January nights average around 7 °C. For snow you need to go higher:",
-            "<b>Patnitop (~2,000 m):</b> about 112 km from Jammu on NH-44. Snow usually lies from late December to February; Nathatop and Sanasar are close by.",
+            "<b>Patnitop (~2,000 m):</b> about 112 km from Jammu. Snow usually lies from late December to February; Nathatop and Sanasar are close by — <a href=\"/patnitop-weather/\">Patnitop weather</a>.",
             "<b>Vaishno Devi — Bhairon Ghati:</b> light snow falls in some winters above the Bhawan. See <a href=\"/vaishno-devi-in-december/\">Vaishno Devi in December</a>.",
             "<b>Kashmir:</b> for sure snow, go to Gulmarg, Sonamarg or Pahalgam — <a href=\"/weather/kashmir/\">Kashmir weather by month</a> and <a href=\"/gulmarg-snowfall/\">Gulmarg snowfall</a>.",
         ]),
