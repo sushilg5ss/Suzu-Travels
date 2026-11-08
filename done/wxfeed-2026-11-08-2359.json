@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-08-2359",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: + Bandipora",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "sha256": "1bdb82480452a35b9407291c84b3838d120f7e92d4d6499c638cbcfd6568311e",
+   "base_sha256": "aa4be63a5d249f4d211e15c591d7238e369f194ac43039695ac3cf428d192f1d",
+   "url": "https://suzutravels.com/suzu-weather-feed.json"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-08T18:01:09Z",
+ "status": "deployed"
+}
