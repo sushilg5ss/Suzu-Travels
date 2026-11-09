@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Ramnagar, Dhikala and Nainital, month-by-month temperatures and rain, which zones are open when, and the best time for a safari.",
     chips=[("~350 m", "Ramnagar"), ("15 Nov", "Dhikala opens"), ("Nov–Jun", "main season"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/ramnagar-ka-mausam/", "हिंदी में पढ़ें: रामनगर (जिम कॉर्बेट) का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning a Jim Corbett safari. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),
