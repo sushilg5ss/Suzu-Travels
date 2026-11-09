@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Haridwar, Rishikesh and Dehradun, month-by-month temperatures and rain, the weather on the Ardh Kumbh 2027 bathing dates, and the best time to go.",
     chips=[("~315 m", "Haridwar"), ("Jan–Apr 2027", "Ardh Kumbh"), ("Oct–Mar", "best weather"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/haridwar-ka-mausam/", "हिंदी में पढ़ें: हरिद्वार का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Haridwar / Rishikesh. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),

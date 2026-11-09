@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Dehradun, Mussoorie and Rishikesh, IMD 1991–2020 monthly temperatures, rainfall and rainy days, records, and the best time to visit.",
     chips=[("~640 m", "Dehradun"), ("20° / 7 °C", "January avg"), ("715 mm", "August rain"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/dehradun-ka-mausam/", "हिंदी में पढ़ें: देहरादून का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Dehradun / Mussoorie. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),
