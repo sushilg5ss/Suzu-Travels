@@ -5,7 +5,7 @@ SPEC = dict(
     title="Pangong Lake and Nubra Valley Weather Today: Live Forecast, Frozen Months and Best Time",
     seo_title="Pangong Lake Weather Today: Nubra Valley Live Forecast & Best Time",
     seo_desc="Pangong Lake weather today with Nubra Valley and Leh: live five-day forecast, how cold Pangong gets, when the lake freezes, month-by-month conditions on the Chang La and Khardung La roads, and the best time to visit.",
-    focus="pangong lake weather, nubra valley weather",
+    focus="pangong lake weather, pangong temperature, pangong lake temperature",
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero", "Pangong Tso", "Pangong Tso — deep blue water and bare mountains"),
         (P + ":g-2", "fig", "Nubra valley", "The Nubra valley, Ladakh"),
@@ -53,7 +53,7 @@ SPEC = dict(
             ["November", "10.6° / −7.2 °C", "Very cold; edges freezing", "Cold"],
             ["December", "4.5° / −11.7 °C", "Freezing over", "Very cold"],
         ]), after=[
-            "Leh IMD normals (1991–2020) shown as a regional reference, not lake records. Full Leh figures: <a href=\"/weather/leh/\">Leh weather by month</a>.",
+            "Leh IMD normals (1991–2020) shown as a regional reference, not lake records. Full Leh figures: <a href=\"/weather/leh/\">Leh weather by month</a>. For Diskit, Hunder and Turtuk: <a href=\"/nubra-valley-weather/\">Nubra valley weather</a>.",
         ]),
         dict(id="roads", kicker="Roads and planning", h2="Chang La, Khardung La and planning your days", fig=True, ps=[
             "Both trips cross passes well above 5,000 m — <b>Chang La</b> to Pangong and <b>Khardung La</b> to Nubra — so spend at least two nights in Leh to acclimatise first, start early, and carry warm layers even in July.",
