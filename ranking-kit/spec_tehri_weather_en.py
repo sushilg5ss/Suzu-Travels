@@ -13,7 +13,7 @@ SPEC = dict(
         (P + ":g-2", "g", "Monsoon over the lake", "Cloud over Tehri lake in the monsoon"),
         (P + ":g-3", "g", "View from Pipaldali", "Tehri lake seen from Pipaldali"),
         (P + ":g-4", "g", "The reservoir valley", "The long reservoir of Tehri between the hills"),
-        (P + ":g-5", "g", "Sunrise on the lake", "Sunrise light on Tehri dam lake"),
+        (P + ":g-8", "g", "The lake and its reflections", "Tehri lake reflecting the forested hills"),
         (P + ":g-6", "g", "A clear day at Tehri", "Tehri lake under a clear sky"),
         (P + ":g-7", "g", "Peaks above the lake", "Distant snow peaks above Tehri lake"),
     ]),
