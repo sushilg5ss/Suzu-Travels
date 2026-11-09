@@ -3,9 +3,9 @@ SPEC = dict(
     lang="en",
     slug="dhanaulti-weather",
     title="Dhanaulti Weather Today: Live Forecast, Snowfall and Best Time",
-    seo_title="Dhanaulti Weather Today: Live Forecast & Snowfall Guide",
-    seo_desc="Dhanaulti weather today with Mussoorie and Dehradun: live forecast, monthly temperatures, when it snows at Dhanaulti and Surkanda Devi, and the best time to visit.",
-    focus="dhanaulti weather, dhanaulti snowfall",
+    seo_title="Dhanaulti (Dhanolti) Weather Today: Forecast & Snowfall",
+    seo_desc="Dhanaulti (Dhanolti) weather today with Mussoorie and Dehradun: live forecast, monthly temperatures, when it snows at Dhanaulti and Surkanda Devi, and the best time to visit.",
+    focus="dhanaulti weather, dhanolti weather, dhanaulti snowfall",
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero", "The Himalaya from Dhanaulti", "Snow-capped Himalayan peaks seen from Dhanaulti"),
         (P + ":fig-1", "fig", "The view from Surkanda Devi", "Hills seen from the Surkanda Devi temple near Dhanaulti"),

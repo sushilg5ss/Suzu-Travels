@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="lakes", kicker="The lake district", h2="Bhimtal, Naukuchiatal and Sattal: weather and what to do", fig=True, ps=[
             "Bhimtal is the largest lake in the Nainital hills, with a small island in the middle. <b>Naukuchiatal</b> is about 4 km away and <b>Sattal</b>, a cluster of forest lakes known for birdwatching, about 10 km. Boating and lake-side walks are best in <b>March–June</b> and <b>September–November</b>.",
             "In winter (December–February) the days are sunny and mild, but mornings by the water are misty and cold, and the lakes are much quieter. In the monsoon, heavy rain and fog are common and the hill roads can be blocked by landslides. Bhimtal is also a convenient stop on the way to <b>Corbett</b> or onwards to <b>Mukteshwar</b> and <b>Almora</b>.",
-            "Weather nearby: <a href=\"/nainital-weather/\">Nainital</a> · <a href=\"/mukteshwar-weather/\">Mukteshwar</a> · <a href=\"/almora-weather/\">Almora</a> · <a href=\"/jim-corbett-weather/\">Jim Corbett</a>.",
+            "Weather nearby: <a href=\"/haldwani-weather/\">Haldwani</a> · <a href=\"/nainital-weather/\">Nainital</a> · <a href=\"/mukteshwar-weather/\">Mukteshwar</a> · <a href=\"/almora-weather/\">Almora</a> · <a href=\"/jim-corbett-weather/\">Jim Corbett</a>.",
         ]),
     ],
     gallery=dict(h2="Bhimtal in pictures", lead="Bhimtal lake by day and night, boats in the morning mist and the hills around — real photographs, each credited to its photographer."),

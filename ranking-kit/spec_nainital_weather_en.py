@@ -59,7 +59,7 @@ SPEC = dict(
         dict(id="snow", kicker="Snow and the lakes", h2="Does it snow in Nainital?", fig=True, ps=[
             "Yes, lightly, on a few days in most winters — usually in <b>January and February</b>, when western disturbances bring a cold, wet spell. The town around the lake gets the least; <b>Snow View, China Peak (Naina Peak)</b> and the road to Kilbury catch more. <b>Mukteshwar, 51 km away at 2,171 m</b>, is colder and snowier still — its record low is −7.8 °C.",
             "<b>Bhimtal</b>, about 22 km away and some 700 m lower, is several degrees warmer and rarely sees snow — a good base when Nainital is crowded in May and June.",
-            "Nearby weather: <a href=\"/bhimtal-weather/\">Bhimtal weather</a>, <a href=\"/mukteshwar-weather/\">Mukteshwar weather</a>, <a href=\"/ranikhet-weather/\">Ranikhet weather</a>, <a href=\"/jim-corbett-weather/\">Jim Corbett weather</a>, <a href=\"/munsiyari-weather/\">Munsiyari weather</a> and <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
+            "Nearby weather: <a href=\"/haldwani-weather/\">Haldwani weather</a>, <a href=\"/bhimtal-weather/\">Bhimtal weather</a>, <a href=\"/mukteshwar-weather/\">Mukteshwar weather</a>, <a href=\"/ranikhet-weather/\">Ranikhet weather</a>, <a href=\"/jim-corbett-weather/\">Jim Corbett weather</a>, <a href=\"/munsiyari-weather/\">Munsiyari weather</a> and <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
         ]),
     ],
     gallery=dict(h2="Nainital in pictures", lead="Naini lake, Snow View and the Himalaya from Nainital — real photographs, each credited to its photographer."),

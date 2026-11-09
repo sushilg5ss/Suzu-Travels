@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="views", kicker="Peaks and day trips", h2="Almora weather and the Himalayan views", fig=True, ps=[
             "On clear days the snow peaks of the central Himalaya — Trishul, Nanda Devi and Panchachuli among them — line the northern horizon. The air is clearest from <b>October to February</b>, especially after rain; from April to June the views are often lost in haze, and in the monsoon in cloud.",
             "The best viewpoints are on the ridges around the town: <b>Kasar Devi</b>, about 8 km away, and <b>Binsar</b>, about 30 km. <b>Jageshwar</b>'s temple complex is about 35 km, in a deodar valley that is noticeably cooler in winter. In the monsoon, landslides can close the hill roads for hours.",
-            "Weather nearby: <a href=\"/ranikhet-weather/\">Ranikhet</a> · <a href=\"/mukteshwar-weather/\">Mukteshwar</a> · <a href=\"/nainital-weather/\">Nainital</a> · <a href=\"/pithoragarh-weather/\">Pithoragarh</a> · <a href=\"/munsiyari-weather/\">Munsiyari</a>.",
+            "Weather nearby: <a href=\"/ranikhet-weather/\">Ranikhet</a> · <a href=\"/kausani-weather/\">Kausani</a> · <a href=\"/mukteshwar-weather/\">Mukteshwar</a> · <a href=\"/nainital-weather/\">Nainital</a> · <a href=\"/pithoragarh-weather/\">Pithoragarh</a> · <a href=\"/munsiyari-weather/\">Munsiyari</a>.",
         ]),
     ],
     gallery=dict(h2="Almora in pictures", lead="Almora on its ridge, the Himalaya behind it, Kasar Devi and the old bazaar — real photographs, each credited to its photographer."),

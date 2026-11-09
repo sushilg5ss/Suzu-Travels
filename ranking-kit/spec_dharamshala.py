@@ -46,7 +46,7 @@ SPEC = dict(
         ("McLeod Ganj", "~2,080 m · in town", "Snow on the rooftops and lanes around the Tsuglagkhang in a cold spell — and the Dhauladhar view every clear day."),
         ("Naddi viewpoint", "~3 km above McLeod Ganj", "The best snow-peak view from a road, and one of the first places in town to whiten in a cold spell."),
         ("Dharamkot & Bhagsu", "Just above McLeod Ganj", "Quieter village lanes and cafés; the trail to Triund starts here."),
-        ("Triund", "~2,850 m · about 9 km trek", "The ridge below the Dhauladhar — often snowy from late December. See our <a href=\"/adventure/triund-trek/\">Triund trek</a> guide."),
+        ("Triund", "~2,850 m · about 9 km trek", "The ridge below the Dhauladhar — often snowy from late December. See our <a href=\"/adventure/triund-trek/\">Triund trek</a> guide and the live <a href=\"/triund-weather/\">Triund weather</a>."),
         ("Snowline", "Above Triund · ~3,200 m", "Usually under snow in winter; only with a guide and when the trail is safe."),
         ("Dalhousie & Khajjiar", "About 3–4 h away", "Another snow option in the same region — see <a href=\"/dalhousie-snowfall/\">Dalhousie snowfall</a>."),
     ]),

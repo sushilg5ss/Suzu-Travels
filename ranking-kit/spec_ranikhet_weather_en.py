@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="views", kicker="Peaks, orchards and golf", h2="Ranikhet weather and what to see", fig=True, ps=[
             "On clear mornings the Himalayan range — Trishul, Nanda Devi, Nanda Ghunti and their neighbours — stretches across the northern horizon. The air is clearest from <b>October to February</b>, especially after rain; from April to June haze often hides the peaks.",
             "Around the town, the <b>Chaubatia</b> orchards (about 10 km) blossom in spring and fruit in late summer, the golf course at <b>Upat</b> (about 5 km) is green after the monsoon, and <b>Bhalu Dam</b> is an easy walk from Chaubatia. <b>Kausani</b>, with an even wider view of the range, is a few hours' drive away.",
-            "Weather nearby: <a href=\"/almora-weather/\">Almora</a> · <a href=\"/nainital-weather/\">Nainital</a> · <a href=\"/mukteshwar-weather/\">Mukteshwar</a>.",
+            "Weather nearby: <a href=\"/kausani-weather/\">Kausani</a> · <a href=\"/almora-weather/\">Almora</a> · <a href=\"/nainital-weather/\">Nainital</a> · <a href=\"/mukteshwar-weather/\">Mukteshwar</a>.",
         ]),
     ],
     gallery=dict(h2="Ranikhet in pictures", lead="The Himalayan panorama, the town on its ridge, Chaubatia's orchards and the pine forest — real photographs, each credited to its photographer."),

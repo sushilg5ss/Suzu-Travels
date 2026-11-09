@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="around", kicker="Base for the high valleys", h2="Joshimath as a base: Auli, Badrinath and the Valley of Flowers", fig=True, ps=[
             "Joshimath is where the Badrinath road, the Auli road and the trail heads of the upper Alaknanda meet. <b>Auli</b> is about 16 km up the hill by road and is the place for snow and skiing from about January to March. <b>Badrinath</b> is about 45 km up the valley; its doors close for winter on 16 November 2026, and through the winter worship moves to the <b>Narsingh temple</b> in Joshimath and to Pandukeshwar.",
             "<b>Govindghat</b>, about 20 km beyond Joshimath, is the start of the walk to the <b>Valley of Flowers</b> and Hemkund Sahib, both open only in the warmer months (the valley is at its best in July–August, in the monsoon). In the monsoon, landslides often close the highway between Joshimath and Badrinath for hours.",
-            "Weather nearby: <a href=\"/weather/auli/\">Auli</a> · <a href=\"/badrinath-weather/\">Badrinath</a> · <a href=\"/chopta-weather/\">Chopta</a> · <a href=\"/kedarnath-weather/\">Kedarnath</a>.",
+            "Weather nearby: <a href=\"/hemkund-sahib-weather/\">Hemkund Sahib</a> · <a href=\"/weather/auli/\">Auli</a> · <a href=\"/badrinath-weather/\">Badrinath</a> · <a href=\"/chopta-weather/\">Chopta</a> · <a href=\"/kedarnath-weather/\">Kedarnath</a>.",
         ]),
     ],
     gallery=dict(h2="Joshimath in pictures", lead="Joshimath on its slope, the Narsingh temple, the ropeway and the Garhwal peaks — real photographs, each credited to its photographer."),
