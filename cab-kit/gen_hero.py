@@ -168,6 +168,7 @@ VARIANTS = {
   "delhi-to-manali-taxi": dict(routes=[("Delhi","Manali")], kicker="ONE-WAY · ROUND TRIP"),
   "tempo-traveller-12-seater": dict(routes=[("Delhi","Rishikesh")], kicker="12 SEATS · WITH DRIVER"),
   "ertiga-on-rent": dict(routes=[("Delhi","Haridwar")], kicker="6 SEATS · WITH DRIVER"),
+  "fortuner-on-rent": dict(routes=[("Delhi","Shimla")], kicker="PREMIUM SUV · WITH DRIVER"),
   "tempo-traveller-17-seater": dict(routes=[("Delhi","Haridwar")], kicker="17 SEATS · WITH DRIVER"),
   "chandigarh-to-manali-taxi": dict(routes=[("Chandigarh","Manali")], kicker="ONE-WAY · ROUND TRIP"),
   "chandigarh-to-shimla-taxi": dict(routes=[("Chandigarh","Shimla")], kicker="ONE-WAY · ROUND TRIP"),
