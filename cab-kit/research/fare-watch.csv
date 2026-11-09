@@ -83,3 +83,9 @@ date,route,source_domain,url,sedan,crysta,note
 2026-10-26,Chandigarh to Shimla,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/chandigarh-to-shimla,3300,5400,120 km billed on 300 km min; tolls extra; updated 14 Sep 2026
 2026-10-26,Chandigarh to Shimla,cabbazar.com,https://cabbazar.com/taxi/shimla-to-chandigarh,2400,3900,reverse direction; Innova approx (FAQ); one-side toll; city page shows 1499 one-way no car type
 2026-10-26,Chandigarh to Shimla,vargiskhan.com,https://vargiskhan.com/log/?p=16074,3000,4500,blog published 8 Dec 2022 mod 26 Feb 2024; approximate; weak source
+2026-11-09,Delhi to Agra (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/vehicles/fortuner,,,FORTUNER ₹5750 (₹25/km; min 300 km/day); engine ₹8699; page updated 14 Sep 2026
+2026-11-09,Delhi to Shimla (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/vehicles/fortuner,,,FORTUNER ₹8750; engine ₹14499
+2026-11-09,Delhi to Manali (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/fortuner-hire/delhi-to-manali,,,FORTUNER ₹11660 all-incl (₹22/km x 530; vehicle page says ₹13250); engine ₹19299
+2026-11-09,Chandigarh to Manali (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/fortuner-hire/chandigarh-to-manali,,,FORTUNER ₹6820 all-incl (₹22/km x 310); engine ₹11599
+2026-11-09,Delhi to Rishikesh (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/fortuner-hire/delhi-to-rishikesh,,,FORTUNER ₹6600 all-incl (300 km min x ₹22); engine ₹8599
+2026-11-09,Chandigarh (Fortuner per km),rajputanacabs.in,https://rajputanacabs.in/chandigarh/cab-rates/,,,FORTUNER ₹23/km; outstation ₹5500-6000/day; no date (2025-07); engine hire ₹32/km
