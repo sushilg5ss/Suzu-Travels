@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="snow", kicker="Snow at Dhanaulti and Surkanda Devi", h2="When does it snow in Dhanaulti?", fig=True, ps=[
             "Dhanaulti is one of the most reliable places for snow near Delhi. Snow usually comes with western disturbances between <b>late December and February</b>, and the deodar and pine forests can stay white for days afterwards. After fresh snow, the road from Mussoorie can be closed or slow at Buranskhanda and Kaddukhal — check before you set out.",
             "<b>Surkanda Devi</b>, reached by a short, steep walk from Kaddukhal, about 8 km from Dhanaulti, stands at about 2,750 m and holds snow longer. On clear days from October to February its top looks out over the Garhwal Himalaya.",
-            "Snow guides: <a href=\"/mussoorie-snowfall/\">Mussoorie snowfall</a> · nearby weather: <a href=\"/chakrata-weather/\">Chakrata weather</a>, <a href=\"/rishikesh-weather/\">Rishikesh weather</a>.",
+            "Snow guides: <a href=\"/mussoorie-snowfall/\">Mussoorie snowfall</a> · nearby weather: <a href=\"/tehri-weather/\">Tehri weather</a>, <a href=\"/chakrata-weather/\">Chakrata weather</a>, <a href=\"/rishikesh-weather/\">Rishikesh weather</a>.",
         ]),
     ],
     gallery=dict(h2="Dhanaulti in pictures", lead="The Himalaya from Dhanaulti, Surkanda Devi, the deodar forests and the Eco Park — real photographs, each credited to its photographer."),
