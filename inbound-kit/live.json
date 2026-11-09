@@ -331,5 +331,14 @@
   "blurb": "2027 festival dates from the official list, month by month, and the trip that fits each",
   "added": "2026-11-09",
   "focus": "india festivals calendar"
+ },
+ "tours-to-india-from-uk": {
+  "id": 20054,
+  "path": "/india-tours/tours-to-india-from-uk/",
+  "kind": "product",
+  "label": "Tours to India from the UK",
+  "blurb": "For British travellers: flights, entry rules, ATOL in plain English, the time difference and paying by UK card — booked direct with a local team",
+  "added": "2026-11-09",
+  "focus": "tours to india from uk"
  }
 }

@@ -1,0 +1,348 @@
+{
+ "path": "/india-tours/tours-to-india-from-uk/",
+ "parent": 11411,
+ "kind": "product",
+ "title": "Tours to India from the UK: Private Trips with a Local Indian Team",
+ "seo_title": "Tours to India from the UK: Private, Local, from US$299",
+ "seo_desc": "Private tours to India from the UK with a local Himalayan team: flights from Heathrow, Gatwick and Birmingham, e-Visa, ATOL facts and card payment.",
+ "focus": "tours to india from uk",
+ "label": "Tours to India from the UK",
+ "blurb": "For British travellers: flights, entry rules, ATOL in plain English, the time difference and paying by UK card — booked direct with a local team",
+ "kicker": "India from the UK · Private car and driver",
+ "tag": "Fly in from the UK. We take it from there.",
+ "sub": "Most UK brochures sell India as a coach group with flights in pounds. We are the other option: a small, local company in Himachal Pradesh that plans a private trip with your own car and driver, while you book your own flight from Heathrow, Gatwick or Birmingham. Here is what that means for a British traveller — visas, flights, protection, paying and the time difference.",
+ "hero_alt": "A plane wing over the snowy Himalaya, the Taj Mahal at dawn, a private SUV on a mountain road in Spiti and Shimla in winter snow",
+ "cta1": "See the routes",
+ "talk": true,
+ "chips": [
+  [
+   "Private trips",
+   "your own car and driver — not a coach"
+  ],
+  [
+   "from US$299",
+   "per person, land only"
+  ],
+  [
+   "LHR · LGW · BHX",
+   "non-stop flights to India"
+  ],
+  [
+   "20% deposit",
+   "full refund within 48 h"
+  ]
+ ],
+ "q": "How do I book a tour to India from the UK?",
+ "answer": "Book your flight from Heathrow, Gatwick or Birmingham, apply for your own e-Visa at <b>indianvisaonline.gov.in</b>, and book the India part direct with a local company. Suzu Travels, based in Himachal, runs <b>private car-and-driver tours</b> from <b>US$299</b> to <b>US$1,099</b> per person (land only). A 20% deposit by UK card or PayPal locks your dates.",
+ "facts": [
+  [
+   "5 h 30 min",
+   "India is ahead of the UK in winter (GMT); 4 h 30 min in summer (BST)"
+  ],
+  [
+   "3 UK airports",
+   "Heathrow, Gatwick and Birmingham have non-stop Air India flights"
+  ],
+  [
+   "6 months",
+   "passport validity after arrival, with 2 blank pages (FCDO)"
+  ],
+  [
+   "US$299–1,099",
+   "our published routes per person, land only"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "uk-vs-local",
+   "nav": "UK brochure or local?",
+   "h2": "A UK group tour or a private trip with a local company?",
+   "kind": "cards",
+   "lead": "Both are reasonable choices. They are simply different products, and it helps to know which one you are comparing.",
+   "items": [
+    [
+     "UK escorted group tour",
+     "Usually a coach group on fixed dates, with flights included and priced in pounds. Sold in the UK, so the flight-inclusive package is ATOL protected (see below)."
+    ],
+    [
+     "Private trip with us",
+     "Your own car and driver, your own dates and pace, no strangers on the bus. We arrange the India part — car and driver, stays and guides — and you book the flight yourself."
+    ],
+    [
+     "Small group tours?",
+     "We do not run group tours. If you were searching for “small group tours to India from the UK”, a private trip for two is the smallest group there is — and you set the start date."
+    ],
+    [
+     "Who plans it",
+     "Our own team in Himachal Pradesh, in the Himalaya north of Delhi. You talk to the people who plan the trip, before and during it."
+    ]
+   ]
+  },
+  {
+   "id": "routes",
+   "nav": "Routes & prices",
+   "h2": "Our routes for travellers from the UK",
+   "kind": "table",
+   "style": "alt",
+   "lead": "These are the same published routes as on our <a href=\"/india-tours/\">India tours page</a>, shown in US dollars. For the full side-by-side comparison of places and seasons, see <a href=\"/india-tours/north-india-tour/\">North India tour packages</a>.",
+   "head": [
+    "Route",
+    "Days",
+    "From (per person, land only)"
+   ],
+   "rows": [
+    [
+     "<b>Golden Triangle</b> — Delhi · Agra · Jaipur",
+     "4 days",
+     "US$299"
+    ],
+    [
+     "<b>Classic Golden Triangle</b>",
+     "6 days",
+     "US$449"
+    ],
+    [
+     "<b>Golden Triangle + Rishikesh</b>",
+     "8 days",
+     "US$649"
+    ],
+    [
+     "<b>Golden Triangle + Kashmir</b> — read the FCDO advice below first",
+     "10 days",
+     "US$899"
+    ],
+    [
+     "<b>Golden Temple & Himalayas</b>",
+     "10 days",
+     "US$949"
+    ],
+    [
+     "<b>Golden Triangle + Himalayas</b>",
+     "12 days",
+     "US$1,099"
+    ],
+    [
+     "<b>Char Dham Yatra</b> — see <a href=\"/char-dham-yatra-for-nri/\">Char Dham for NRIs</a>",
+     "varies",
+     "US$799"
+    ]
+   ],
+   "note": "Every “from” price is per person and land only: it excludes international flights, the visa fee, travel insurance and entry tickets unless your quote says otherwise. Prices are quoted in US dollars; your UK card is charged in your own currency by your bank."
+  },
+  {
+   "id": "kashmir-advice",
+   "nav": "Kashmir advice",
+   "h2": "UK travel advice on Kashmir",
+   "kind": "callout",
+   "text": "The UK FCDO advises against all travel to the Union Territory of Jammu & Kashmir — including Srinagar, Gulmarg, Pahalgam and Sonamarg — except air travel to and within Jammu city (FCDO advice updated 7 Oct 2026, checked 7 Nov 2026). Travel insurance may not cover you where the FCDO advises against travel.",
+   "after": [
+    "Want snow and mountain valleys instead? The Golden Temple & Himalayas and Golden Triangle + Himalayas routes stay in Himachal Pradesh, our home state. Always check <a href=\"https://www.gov.uk/foreign-travel-advice/india\" rel=\"noopener\">gov.uk/foreign-travel-advice/india</a> before you travel."
+   ]
+  },
+  {
+   "id": "entry",
+   "nav": "Visa & passport",
+   "h2": "Visa, passport and arrival card for British travellers",
+   "kind": "steps",
+   "lead": "Entry rules as summarised by the UK FCDO (checked 9 Nov 2026); confirm before you travel.",
+   "items": [
+    [
+     "You need a visa",
+     "The FCDO says you must have a visa to visit India unless you are an Overseas Citizen of India (OCI). Most visitors use the e-Visa."
+    ],
+    [
+     "Apply yourself, on the official site",
+     "We are not a visa agency. Apply yourself, only at the official site <b>indianvisaonline.gov.in</b> — beware look-alike sites that charge extra. Apply at least 4 days before you arrive; the fee depends on your nationality, so check the official fee table. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through the form."
+    ],
+    [
+     "Check your passport",
+     "It must expire at least 6 months after the date you arrive and have at least 2 blank pages (FCDO)."
+    ],
+    [
+     "Fill in the e-Arrival card",
+     "Foreign nationals must complete an e-arrival card online before reaching immigration; you can do it up to 72 hours before arrival. It is not a visa."
+    ],
+    [
+     "Health",
+     "Consult your doctor; see TravelHealthPro or NHS Fit for Travel well before you go."
+    ]
+   ]
+  },
+  {
+   "id": "flights",
+   "nav": "Flights",
+   "h2": "Flights from the UK",
+   "kind": "prose",
+   "paras": [
+    "Air India flies non-stop to India from <b>London Heathrow</b>, <b>London Gatwick</b> and <b>Birmingham</b>, connecting Delhi, Mumbai, Bengaluru, Ahmedabad and Amritsar (Air India, October 2025). Schedules change each season, so check the airline for this season's timetable before you plan.",
+    "All our routes begin in <b>Delhi</b>, so Delhi is the natural arrival airport; for the Golden Temple & Himalayas route, Amritsar works too. Tell us your flight times and your driver meets you at arrivals.",
+    "We do not sell flights. Book them with the airline or a UK agent, then send us the times — we build the days around them."
+   ]
+  },
+  {
+   "id": "atol",
+   "nav": "ATOL & protection",
+   "h2": "ATOL, in plain English",
+   "kind": "callout",
+   "text": "We arrange the India part of your trip (car and driver, stays, guides) and do not sell flights. ATOL protection (UK Civil Aviation Authority) applies to flight-inclusive package holidays sold in the UK, so it does not apply to our land arrangements. Your protection with us is the booking terms below — and we recommend travel insurance from the day you book.",
+   "after": [
+    "The CAA describes ATOL as a scheme that protects travellers and their money if the travel operator they booked with ceases trading — and notes that ATOL does not cover situations such as cancelled flights. Our <a href=\"/india-tours/india-travel-insurance/\">India travel insurance guide</a> explains what to look for in a policy."
+   ]
+  },
+  {
+   "id": "how-to-book",
+   "nav": "How booking works",
+   "h2": "How booking from the UK works",
+   "kind": "steps",
+   "lead": "You deal with the same small team from the first message to the last day.",
+   "items": [
+    [
+     "Message us with your dates",
+     "On WhatsApp or by email: when you land, how many of you, and the route (or “not sure”). Our office works on India time — see the clock above."
+    ],
+    [
+     "Get a day-by-day plan and a US-dollar quote",
+     "What is included and excluded is written down. Change anything — nothing is paid yet."
+    ],
+    [
+     "Pay the 20% deposit by card or PayPal",
+     "Pay with your UK card through Razorpay (international cards accepted) or PayPal; your bank converts the US-dollar amount to pounds."
+    ],
+    [
+     "Before the trip",
+     "Your driver's name, photo and car number are shared with you before the trip, with our office number in Himachal."
+    ],
+    [
+     "On arrival",
+     "Your driver meets you at arrivals and the trip begins. Our office is a phone call away the whole time."
+    ]
+   ]
+  },
+  {
+   "id": "why-us",
+   "nav": "Who we are",
+   "h2": "Who you are booking with",
+   "kind": "callout",
+   "style": "dark",
+   "text": "We are a small travel company based in Himachal Pradesh, in the Himalaya north of Delhi, founded in 2019 — not a UK brochure brand. We plan every trip ourselves and answer the phone ourselves. <b>Your driver's name, photo and car number are shared with you before the trip.</b>",
+   "after": [
+    "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022 — see <a href=\"/certificates/\">our certificates</a>.",
+    "Comparing companies? Our guide on <a href=\"/india-tours/how-to-choose-a-travel-agency-in-india/\">how to choose a travel agency in India</a> lists the checks to make — with us or anyone else. Cities can be busy: the FCDO says to be cautious in tourist areas, where scammers, pickpockets and ticket touts target foreign nationals."
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Our published routes, in US dollars. Every price is per person, indicative, and confirmed on your quote.",
+  "rows": [
+   [
+    "Golden Triangle — 4 days",
+    "from US$299",
+    "Per person, land only: private car and driver. Excludes international flights, visa fee, insurance and entry tickets unless stated."
+   ],
+   [
+    "Classic Golden Triangle — 6 days",
+    "from US$449",
+    "Per person, land only. Excludes international flights, visa fee, insurance and entry tickets unless stated."
+   ],
+   [
+    "Golden Triangle + Rishikesh — 8 days",
+    "from US$649",
+    "Per person, land only. Excludes international flights, visa fee, insurance and entry tickets unless stated."
+   ],
+   [
+    "Golden Triangle + Kashmir — 10 days",
+    "from US$899",
+    "Per person, land only. Read the FCDO advice above first. Excludes international and domestic flights, visa fee, insurance and entry tickets unless stated."
+   ],
+   [
+    "Golden Temple & Himalayas — 10 days",
+    "from US$949",
+    "Per person, land only. Excludes international flights, visa fee, insurance and entry tickets unless stated."
+   ],
+   [
+    "Golden Triangle + Himalayas — 12 days",
+    "from US$1,099",
+    "Per person, land only. Excludes international flights, visa fee, insurance and entry tickets unless stated."
+   ],
+   [
+    "Longer trips, other regions, upgraded stays",
+    "on request",
+    "Quoted in US dollars with a day-by-day plan"
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "Do British citizens need a visa for India?",
+   "Yes, unless you are an Overseas Citizen of India (OCI), says the UK FCDO. Most visitors apply for the e-Visa themselves at the official site indianvisaonline.gov.in, at least 4 days before arrival — beware look-alike sites that charge extra. We are not a visa agency."
+  ],
+  [
+   "What passport validity do I need for India?",
+   "The FCDO says your passport must expire at least 6 months after the date you arrive and have at least 2 blank pages. You also fill in an online e-arrival card within 72 hours before landing; it is not a visa."
+  ],
+  [
+   "Which UK airports fly non-stop to India?",
+   "Air India flies non-stop from London Heathrow, London Gatwick and Birmingham to cities including Delhi, Mumbai, Bengaluru, Ahmedabad and Amritsar. Schedules change each season, so check the airline for this season's timetable."
+  ],
+  [
+   "Is my India tour ATOL protected?",
+   "Not with us. ATOL applies to flight-inclusive package holidays sold in the UK. We arrange only the India part (car and driver, stays, guides) and do not sell flights, so ATOL does not apply. Your protection is our booking terms — 20% deposit, full refund within 48 hours — and we recommend travel insurance from the day you book."
+  ],
+  [
+   "What is the time difference between the UK and India?",
+   "India Standard Time is UTC+5:30 with no daylight saving, so India is 5 hours 30 minutes ahead of the UK in winter (GMT) and 4 hours 30 minutes ahead in summer (BST)."
+  ],
+  [
+   "Can I pay from the UK?",
+   "Yes. Prices are quoted in US dollars and you pay by card through Razorpay (international cards accepted) or PayPal; your bank charges your UK card in pounds. A 20% deposit locks your dates and price, with a full refund if you cancel within 48 hours of paying."
+  ],
+  [
+   "Why book with a local company instead of a UK tour operator?",
+   "It is a different product: a private trip with your own car and driver, your own dates and pace, planned by the team that runs it. A UK escorted tour gives you a group, fixed dates and flights in one package. Our guide on how to choose a travel agency in India lists the checks to make with anyone."
+  ],
+  [
+   "When is the best time to visit India from the UK?",
+   "October to March suits Delhi, Agra and Rajasthan. The FCDO notes severe air pollution in North Indian cities, especially from October to February, so check air quality if you have breathing problems. Our best time to visit India guide goes month by month."
+  ]
+ ],
+ "sources": [
+  [
+   "GOV.UK — India entry requirements (FCDO, updated 30 Oct 2026)",
+   "https://www.gov.uk/foreign-travel-advice/india/entry-requirements"
+  ],
+  [
+   "GOV.UK — India travel advice (FCDO)",
+   "https://www.gov.uk/foreign-travel-advice/india"
+  ],
+  [
+   "Official Indian e-Visa portal",
+   "https://indianvisaonline.gov.in/evisa/"
+  ],
+  [
+   "UK Civil Aviation Authority — What is ATOL?",
+   "https://www.caa.co.uk/newsroom/blogs/what-is-atol/"
+  ],
+  [
+   "Air India — UK connectivity this winter (press release, 9 Oct 2025)",
+   "https://www.airindia.com/in/en/newsroom/press-release/Air-India-expands-UK-connectivity-this-winter-with-fourth-daily-flight.html"
+  ]
+ ],
+ "verified": "9 Nov 2026",
+ "cta": {
+  "h2": "Flying from the UK? Tell us your dates",
+  "text": "When you land, how many of you, and what you most want to see. You get a day-by-day plan and a US-dollar quote from our office in Himachal, then decide.",
+  "wa": "Hello Suzu Travels, I'm planning a trip to India from the UK. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "service": {
+  "name": "Private tours to India for UK travellers — car and driver, land only",
+  "type": "Private tour package by car with driver",
+  "area": "North India: Delhi, Agra, Jaipur, Rishikesh, Amritsar, Himachal Pradesh"
+ },
+ "links": [
+  "north-india-tour",
+  "india-e-visa-guide",
+  "india-travel-insurance",
+  "how-to-choose-a-travel-agency-in-india"
+ ]
+}
