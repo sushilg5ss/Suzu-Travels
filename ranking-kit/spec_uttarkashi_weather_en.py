@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Uttarkashi, Harsil and Gangotri, approximate month-by-month temperatures, the monsoon, and the best time to go.",
     chips=[("~1,160 m", "Uttarkashi"), ("~145 km", "from Rishikesh"), ("Jul–Aug", "wettest"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/uttarkashi-ka-mausam/", "हिंदी में पढ़ें: उत्तरकाशी का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Uttarkashi / Gangotri. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),

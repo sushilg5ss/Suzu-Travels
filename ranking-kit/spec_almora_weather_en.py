@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Almora, Mukteshwar and Nainital, approximate month-by-month temperatures and rain, when the Himalayan views are clearest, and the best time to go.",
     chips=[("~1,640 m", "Almora"), ("Oct–Feb", "clearest views"), ("Jul–Aug", "wettest"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/almora-ka-mausam/", "हिंदी में पढ़ें: अल्मोड़ा का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Almora / Kumaon. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),

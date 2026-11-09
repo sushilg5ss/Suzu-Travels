@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Pithoragarh, Munsiyari and Almora, approximate month-by-month temperatures and rain, the monsoon roads, and the best time to go.",
     chips=[("~1,600 m", "Pithoragarh"), ("Jul–Aug", "wettest"), ("Oct–Feb", "clearest skies"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/pithoragarh-ka-mausam/", "हिंदी में पढ़ें: पिथौरागढ़ का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Pithoragarh / Munsiyari. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),
