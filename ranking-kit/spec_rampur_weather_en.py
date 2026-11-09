@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="road", kicker="On the road to Kinnaur", h2="Sarahan, NH-5 and the road to Kinnaur", fig=True, ps=[
             "Rampur is the gateway to <b>Kinnaur</b> on NH-5. Beyond Rampur the highway has single-lane, rockfall-prone stretches between Wangtu and Karcham, worst in the monsoon; in winter it stays open on most days and is the only route to Spiti.",
             "<b>Sarahan</b> and its Bhimakali temple are a short climb off the highway — cooler than Rampur all year and snowy in winter.",
-            "Plan with: <a href=\"/kinnaur-weather/\">Kinnaur weather</a>, <a href=\"/narkanda-ka-mausam/\">Narkanda weather (Hindi)</a> and the <a href=\"/kinnaur-valley-travel-guide/\">Kinnaur valley travel guide</a>.",
+            "Plan with: <a href=\"/kinnaur-weather/\">Kinnaur weather</a>, <a href=\"/rohru-weather/\">Rohru weather</a>, <a href=\"/narkanda-ka-mausam/\">Narkanda weather (Hindi)</a> and the <a href=\"/kinnaur-valley-travel-guide/\">Kinnaur valley travel guide</a>.",
         ]),
     ],
     gallery=dict(h2="Rampur and Sarahan in pictures", lead="Rampur on the Sutlej, Padam Palace and Sarahan's Bhimakali temple — real photographs, each credited to its photographer."),

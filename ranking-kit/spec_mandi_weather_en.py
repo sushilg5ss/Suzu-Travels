@@ -78,7 +78,7 @@ SPEC = dict(
     sections2=[
         dict(id="tips", kicker="Plan the trip", h2="Mandi weather tips", ps=[
             "<b>What to pack:</b> light clothes from April to September; a sweater by day and a jacket at night from December to February. For Prashar, full winter wear, gloves and shoes with grip.",
-            "<b>More weather:</b> <a href=\"/kullu-weather/\">Kullu weather</a>, <a href=\"/weather/manali/\">Manali weather</a> and <a href=\"/weather/himachal/\">Himachal weather</a>.",
+            "<b>More weather:</b> <a href=\"/kullu-weather/\">Kullu weather</a>, <a href=\"/karsog-weather/\">Karsog and Shikari Devi weather</a>, <a href=\"/weather/manali/\">Manali weather</a> and <a href=\"/weather/himachal/\">Himachal weather</a>.",
         ]),
     ],
     ctas=dict(h2="Our trips through Mandi", lead="Fixed-rate packages with hotels, breakfast and dinner, and a private car.", items=[
