@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Rishikesh, Haridwar and Dehradun, month-by-month temperatures and rain, the rafting season, and the best time to go.",
     chips=[("~340 m", "Rishikesh"), ("Sep–Jun", "rafting season"), ("Oct–Mar", "best weather"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/rishikesh-ka-mausam/", "हिंदी में पढ़ें: ऋषिकेश का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Rishikesh. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),

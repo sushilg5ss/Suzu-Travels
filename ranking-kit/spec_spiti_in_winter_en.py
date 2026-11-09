@@ -98,7 +98,7 @@ SPEC = dict(
         ("How cold is Spiti in December?", "Days are around freezing to single digits and nights well below −10 °C; January nights can reach −15 to −25 °C."),
         ("Is it safe to visit Spiti in winter?", "With preparation, yes: a local winter driver, a suitable vehicle, warm clothing, slow acclimatisation and at least one buffer day for snow on the road."),
         ("When is the best time to see snow in Spiti?", "Late December to February; February often has the heaviest snow spells."),
-        ("Can you see snow leopards in Spiti?", "January to March is the season, around Kibber, with local spotters — sightings are never guaranteed."),
+        ("Can you see snow leopards in Spiti?", "January to March is the season, around Kibber, with local spotters — a sighting is never certain."),
         ("How many days do you need for Spiti in winter?", "Seven days from Shimla is the minimum for a comfortable trip, plus one or two buffer days."),
         ("Can you go to Chandratal in winter?", "No — Chandratal and the Kunzum road are closed in winter."),
     ],
