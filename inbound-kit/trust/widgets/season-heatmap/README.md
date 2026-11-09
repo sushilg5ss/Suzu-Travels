@@ -1,6 +1,6 @@
 # season-heatmap (TRUST_BACKLOG row 6)
 "India Season Chart: Where to Go Each Month" — month × region grid (Delhi·Agra·Jaipur, Varanasi, Amritsar, Rishikesh·Haridwar,
-Shimla·Dharamshala, Manali, Ladakh/Leh, Kerala, Goa) with 4 states: ★ Best · ❄ Snow season · ☔ Monsoon · "Possible — ask us"
+Char Dham, Shimla·Dharamshala, Manali, Ladakh/Leh, Kerala, Goa) with 5 states (incl. ✕ Temples closed, Char Dham only): ★ Best · ❄ Snow season · ☔ Monsoon · "Possible — ask us"
 (never "avoid" without a source). Kashmir has no colours, only the dated FCDO + State Dept line. Month buttons (default = visitor's
 current month) highlight the column and show a summary + WhatsApp link prefilled with the month and the 'best' regions. Nothing stored,
 no third-party, no cookies. JS off (or WP Rocket delayed JS before first interaction): full grid + notes visible, buttons hidden.
@@ -15,3 +15,4 @@ no official month source — confirm".
 - **Lesson (20 Oct):** wpautop rewrote `"<div>"` inside a JS string (→ syntax error), and `<` escapes sent through the MCP were
   stored with a doubled backslash. Build DOM nodes with `createElement` — never HTML strings in inline JS.
 - Remove: `wp_replace_in_page` the whole `<!--szt:season-heatmap-->…<!--/szt:season-heatmap-->` block with ''.
+- **9 Nov 2026 (row 26):** Char Dham row added (code `cccobbmmbboc`, from 11413's own season FAQ — same facts as season-strip-cd, no year dates). Applied as 9 small `wp_replace_in_page` ops (dry run 1 → replaced 1 each; 233,890→235,154 = widget +1,264 B), so the stored block equals widget.html again. Revert = restore the previous widget.html block from git (parent of commit 'trust: char-dham row…').
