@@ -137,7 +137,7 @@ MORE = [
     ("tehrilake", "Tehri Lake (Koti)", "टिहरी झील", "Uttarakhand", 30.3930, 78.4710, 850, "tehri-weather/"),
     ("champawat", "Champawat", "चंपावत", "Uttarakhand", 29.3364, 80.0910, 1615, "champawat-weather/"),
     ("lohaghat", "Lohaghat", "लोहाघाट", "Uttarakhand", 29.4040, 80.0890, 1706, "champawat-weather/"),
-    ("hemkund", "Hemkund Sahib", "हेमकुंड साहिब", "Uttarakhand", 30.7085, 79.6134, 4160, "hemkund-sahib-weather/"),
+    ("hemkund", "Hemkund Sahib", "हेमकुंड साहिब", "Uttarakhand", 30.7085, 79.6134, 4632, "hemkund-sahib-weather/"),
     ("ghangaria", "Ghangaria", "घांघरिया", "Uttarakhand", 30.6950, 79.5867, 3050, "hemkund-sahib-weather/"),
     ("govindghat", "Govindghat", "गोविंदघाट", "Uttarakhand", 30.6149, 79.5609, 1830, "hemkund-sahib-weather/"),
     ("triund", "Triund", "त्रिउंड", "Himachal", 32.2586, 76.3458, 2850, "triund-weather/"),
