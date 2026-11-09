@@ -26,6 +26,7 @@ SPEC = dict(
     sub="The high shrines already have snow. Here is when the hill stations usually turn white, a live 7-day snow forecast for six snow places, and where to go for a sure snow trip.",
     chips=[("Late Dec–Feb", "usual snow window"), ("23 Jan 2026", "last season's first snow in the hill stations"), ("Live", "6 snow places"), ("~2,000–3,800 m", "Mussoorie to Kedarkantha")],
     flakes=True,
+    alt_lang=("/uttarakhand-mein-barfbari/", "हिंदी में पढ़ें: उत्तराखंड में बर्फबारी"),
     updated="November 2026",
     wa="Hello Suzu Travels, I want to see snow in Uttarakhand. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See the snow forecast"),
