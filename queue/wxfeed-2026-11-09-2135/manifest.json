@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-09-2135",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: add Gangotri, Harsil, Uttarkashi, Yamunotri, Barkot",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "3e53f3a4de64f4740732e685914d3565729ced9ca479c92d865e0808cf358b27",
+   "base_sha256": "ce2fb717be64498f3ccea0d957765e0df48f2ce29f7a7eebc94cbdb32010c726",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 62504
+  }
+ ]
+}
