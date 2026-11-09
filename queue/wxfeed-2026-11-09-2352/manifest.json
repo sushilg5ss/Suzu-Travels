@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-09-2352",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: add Hemkund Sahib, Ghangaria, Govindghat, Triund, McLeodganj",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "94ccace607075f602a816abdd9a6a5256467bd9463361c42bdb34dfc3ec45b98",
+   "base_sha256": "2630b50c11a9e6a497ec7e88b3ebe23ed334ad40c22d789dbd9e23b1b06ac1e0",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 70828
+  }
+ ]
+}
