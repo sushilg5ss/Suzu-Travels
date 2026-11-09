@@ -29,5 +29,6 @@
  "hidimba-devi": {"id": 18022, "path": "/pilgrimage-tours/hidimba-devi/", "kind": "temple", "label": "Hidimba Devi, Manali", "blurb": "Pagoda shrine of 1553 in the Dhungri deodar forest", "added": "2026-11-05", "shrine": "hidimba-devi"},
  "mansa-devi": {"id": 18479, "path": "/pilgrimage-tours/mansa-devi/", "kind": "temple", "label": "Mansa Devi, Panchkula", "blurb": "Shivalik shrine of the three pindis, near Chandigarh", "added": "2026-11-06", "shrine": "mansa-devi-panchkula"},
  "baba-balak-nath": {"id": 19046, "path": "/pilgrimage-tours/baba-balak-nath/", "kind": "temple", "label": "Baba Balak Nath, Deotsidh", "blurb": "The child-yogi's hilltop cave shrine in Hamirpur", "added": "2026-11-07"},
- "baglamukhi": {"id": 19678, "path": "/pilgrimage-tours/baglamukhi/", "kind": "temple", "label": "Baglamukhi Temple, Kangra", "blurb": "The yellow-robed Mahavidya shrine at Bankhandi", "added": "2026-11-08", "shrine": "baglamukhi-bankhandi-kangra"}
+ "baglamukhi": {"id": 19678, "path": "/pilgrimage-tours/baglamukhi/", "kind": "temple", "label": "Baglamukhi Temple, Kangra", "blurb": "The yellow-robed Mahavidya shrine at Bankhandi", "added": "2026-11-08", "shrine": "baglamukhi-bankhandi-kangra"},
+ "baijnath": {"id": 20310, "path": "/pilgrimage-tours/baijnath/", "kind": "temple", "label": "Baijnath Temple, Kangra", "blurb": "Shiva as Vaidyanath in a 1204 CE stone temple", "added": "2026-11-09", "shrine": "baijnath-temple-kangra"}
 }
