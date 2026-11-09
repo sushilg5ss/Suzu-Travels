@@ -393,5 +393,15 @@
   "added": "2026-11-08",
   "state": "jammu-kashmir",
   "commercial": false
+ },
+ "arunachal-pradesh": {
+  "id": 20190,
+  "path": "/mountains-of-india/arunachal-pradesh/",
+  "kind": "state",
+  "label": "Peaks of Arunachal Pradesh",
+  "blurb": "5 peaks · Kangto 7,090 m, first climbed in 2025",
+  "added": "2026-11-09",
+  "state": "arunachal-pradesh",
+  "commercial": false
  }
 }

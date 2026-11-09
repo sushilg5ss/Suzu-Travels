@@ -1,0 +1,225 @@
+{
+ "kind": "state",
+ "path": "/mountains-of-india/arunachal-pradesh/",
+ "state": "arunachal-pradesh",
+ "title": "Highest Peaks in Arunachal Pradesh: Kangto & More, All 5 Listed",
+ "seo_title": "Highest Peak in Arunachal Pradesh: Kangto & More",
+ "seo_desc": "Kangto (7,090 m) is the highest peak in Arunachal Pradesh, first climbed in Nov 2025. All 5 high peaks: heights, climbing record, permits and season.",
+ "focus": "highest peak in arunachal pradesh",
+ "commercial": false,
+ "label": "Peaks of Arunachal Pradesh",
+ "blurb": "5 peaks · Kangto 7,090 m, first climbed in 2025",
+ "verified": "9 Nov 2026",
+ "kicker": "Arunachal Pradesh · Eastern Himalaya",
+ "tag": "Arunachal's high peaks: India's newest 7,000 m summit, and two still unclimbed.",
+ "sub": "Five big summits on the India–Tibet border, from 6,383 m Tsangyang Gyatso above Tawang to 7,090 m Kangto, with their heights, who climbed them and when, and the permits you need to get anywhere near them.",
+ "chips": [
+  [
+   "7,090 m",
+   "Kangto"
+  ],
+  [
+   "26 Nov 2025",
+   "first recorded ascent"
+  ],
+  [
+   "5 peaks",
+   "in our table"
+  ],
+  [
+   "2 unclimbed",
+   "Nyegyi Kansang, Chiumo"
+  ],
+  [
+   "Late Sep–Nov",
+   "recent climbs"
+  ]
+ ],
+ "hero_alt": "A roped line on a snowfield, a glacier crossing, a high ridge and tents at night (stock footage, not Arunachal) with statements: Kangto 7,090 m, climbed in 2025, 2 still unclimbed, climb in Himachal",
+ "ladder_alt": "Animated chart of Arunachal Pradesh's five high peaks at their true heights: Tsangyang Gyatso, Gorichen, Chiumo, Nyegyi Kansang and Kangto",
+ "q": "Which is the highest peak in Arunachal Pradesh?",
+ "answer": "<b>Kangto</b> (7,090 m / 23,261 ft; also given as 7,042–7,060 m) is the highest peak in Arunachal Pradesh, on the India–Tibet border in Bichom district. It stayed unclimbed until 26 November 2025, when an 18-member Indian Army team reached the top by the southern route. Second is <b>Nyegyi Kansang</b> (7,047 m), still unclimbed. All five are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  [
+   "Highest peak",
+   "Kangto, 7,090 m / 23,261 ft (also given as 7,042–7,060 m)"
+  ],
+  [
+   "First recorded ascent",
+   "26 Nov 2025, Indian Army Eastern Command team, southern route"
+  ],
+  [
+   "Second-highest",
+   "Nyegyi Kansang, 7,047 m / 23,120 ft, still unclimbed"
+  ],
+  [
+   "Peaks in this list",
+   "5 (6,383–7,090 m)"
+  ],
+  [
+   "Climbed",
+   "3 of 5; Nyegyi Kansang and Chiumo have no accepted ascent"
+  ],
+  [
+   "Recent climbs",
+   "Late September to November, after the monsoon"
+  ]
+ ],
+ "intro": [
+  "Arunachal Pradesh is India's north-eastern corner, and its high peaks stand on the border with Tibet in the <b>Eastern (Assam) Himalaya</b>. They are some of the least-visited big mountains in the country: remote, deep in border districts such as Tawang, West and East Kameng and Bichom, and reached through forested valleys rather than the high, dry approaches of Ladakh or Spiti.",
+  "The highest is <b>Kangto</b> (7,090 m), one of three major peaks of the Kangto massif and the source of the Pachuk river, a tributary of the Kameng. Its height is published as 7,090, 7,060 and 7,042 m, the last being the Indian Army's figure. Its neighbour <b>Nyegyi Kansang</b> (7,047 m) is the state's only other 7,000er, and both appear in our <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks list</a>.",
+  "Our table holds the five Arunachal peaks in the dataset behind our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>: two above 7,000 m and three in the 6,000s. Three have been climbed and two have no accepted ascent. All five are technical climbs in restricted border areas, and every recent ascent was made by the Army, the national mountaineering institute or a club expedition, not a commercial team."
+ ],
+ "table": {
+  "where": {
+   "state": "arunachal-pradesh"
+  },
+  "h2": "Mountains in Arunachal Pradesh by height: all 5 peaks",
+  "label": "The list",
+  "text": [
+   "The animation sets all five Arunachal peaks side by side at their true heights, from Tsangyang Gyatso (6,383 m) up to Kangto (7,090 m).",
+   "Sort the table by height or first ascent; the status column shows which peaks have been climbed. For the rest of the country's giants, see our <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks list</a> and our guide to <a href=\"/mountains-of-india/unclimbed-peaks/\">India's unclimbed peaks</a>."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "kangto",
+   "label": "Kangto",
+   "kicker": "The highest",
+   "h2": "Kangto peak: Arunachal's highest, first climbed in 2025",
+   "html": "<p>For decades Kangto was out of reach. Earlier attempts could not even reach its base; on <b>21 October 2017</b> a joint ITBP–IMF team set up a base camp at about 9,920 ft (3,024 m) on the Pachuk river.</p><ul class=\"szm-steps\"><li><b>3 November 2025</b>An 18-member Indian Army Eastern Command team (4 Corps) is flagged off from a forward base.</li><li><b>26 November 2025</b>The team reaches the summit by the \"extremely challenging\" southern route: the first recorded ascent of Kangto.</li><li><b>5 and 8 December 2025</b>The Army calls the peak \"hitherto unconquered\", and the Governor of Arunachal Pradesh congratulates the team.</li></ul><div class=\"szm-call\"><p><b>Why \"recorded\"?</b> No earlier ascent of Kangto is documented, so the 2025 climb is the first recorded one. Summit details such as camp heights and day counts have not been published.</p></div>"
+  },
+  {
+   "id": "areas",
+   "label": "By area",
+   "kicker": "Where they are",
+   "h2": "Arunachal's peaks, area by area",
+   "html": "<p>The five peaks sit in two groups along the border.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>The Kangto massif (Bichom, East Kameng)</h3><ul><li><a href=\"#peak-kangto\">Kangto</a> (7,090 m): the state's highest, first recorded ascent 2025</li><li><a href=\"#peak-nyegyi-kansang\">Nyegyi Kansang</a> (7,047 m, also 7,050 m): a 1995 Indian team led by M.P. Yadav claimed it by the north-east ridge on 23 October, but was later found to have stopped about 600 m below the main summit, so it is still counted as unclimbed</li><li><a href=\"#peak-chiumo\">Chiumo</a> (6,890 m): no documented ascent</li></ul></div><div class=\"szm-col\"><h3>Tawang and West Kameng</h3><ul><li><a href=\"#peak-gorichen\">Gorichen</a> (6,488 m): used by the Army for training; on 21 October 2024 the Mountaineers' Association of Krishnanagar (West Bengal) made what was reported as the first civilian ascent</li><li><a href=\"#peak-tsangyang-gyatso\">Tsangyang Gyatso</a> (6,383 m): first climbed on 25 September 2024 by NIMAS Dirang, and named after the 6th Dalai Lama</li></ul><p class=\"szm-note\">NIMAS, the National Institute of Mountaineering and Adventure Sports, is based at Dirang in West Kameng; see our <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses guide</a>.</p></div></div>"
+  },
+  {
+   "id": "history",
+   "label": "Record",
+   "kicker": "Climbing record",
+   "h2": "Climbing record: three ascents in 14 months",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody><tr><td><b>23 Oct 1995</b></td><td>Nyegyi Kansang: first-ascent claim by an Indian team (Himalayan Journal 52); the team stopped about 600 m below the main summit</td></tr><tr><td><b>21 Oct 2017</b></td><td>Kangto: ITBP–IMF team sets up a base camp at about 9,920 ft on the Pachuk</td></tr><tr><td><b>25 Sep 2024</b></td><td>Tsangyang Gyatso (6,383 m): first ascent by NIMAS Dirang</td></tr><tr><td><b>21 Oct 2024</b></td><td>Gorichen (6,488 m): first civilian ascent, Mountaineers' Association of Krishnanagar</td></tr><tr><td><b>26 Nov 2025</b></td><td>Kangto (7,090 m): first recorded ascent, Indian Army Eastern Command team</td></tr></tbody></table></div><p>Compare the other states in our <a href=\"/mountains-of-india/highest-peak-in-every-state/\">highest peak in every state</a> guide.</p>"
+  },
+  {
+   "id": "season",
+   "label": "Season",
+   "kicker": "When to go",
+   "h2": "When are Arunachal's peaks climbed?",
+   "html": "<p>There is no official climbing season for Arunachal Pradesh. The recent ascents give the pattern: <b>late September</b> (Tsangyang Gyatso), <b>October</b> (Gorichen) and <b>November</b> (Kangto), all after the monsoon. Our dataset lists October–November for all five peaks.</p><p>Base camps and summits here are high and remote, so read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before any Himalayan trip.</p>"
+  },
+  {
+   "id": "climb",
+   "label": "Where to start",
+   "kicker": "A 6,000 m summit you can book",
+   "h2": "Want a 6,000 m summit you can actually climb? Try Himachal",
+   "html": "<p>Arunachal's peaks are Army, institute and expedition climbs in restricted border areas. If you want a big Himalayan summit you can plan for next season, Himachal Pradesh has open peaks with established routes.</p><ul class=\"szm-steps\"><li><b>A first snow summit</b><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m) above Manali.</li><li><b>A first 6,000 m peak</b><a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m) near the Baralacha La.</li><li><b>A step up</b><a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m) above the Kullu valley.</li></ul><div class=\"szm-call\"><p><b>Information only.</b> Suzu arranges climbs in Himachal Pradesh only, so we do not sell Arunachal peaks. For every option, see our <a href=\"/mountains-of-india/himachal-pradesh/\">Himachal peaks guide</a>.</p></div>"
+  }
+ ],
+ "permits_h2": "Permits for Arunachal Pradesh: Indians and foreigners",
+ "permits": [
+  "<b>Indian citizens</b> need an Inner Line Permit, applied for online as an eILP on the state's portal. A tourist eILP covers stays of up to 14 days; longer stays need a provisional ILP. Children under 14 need no individual eILP but must be accompanied.",
+  "<b>Foreign visitors</b> need a Protected Area Permit (PAP), applied for through an approved local tour operator only, plus a royalty of US$30 per person to the Government of Arunachal Pradesh (as listed on the state tourism site, Oct 2026). A tourist visa covers open areas; confirm visa rules with the Indian mission.",
+  "<b>Any peak expedition</b> by foreigners also needs permission from the Indian Mountaineering Foundation (IMF). The IMF base fee for a foreign team of two is US$500 for peaks up to 6,500 m, US$700 for 6,501–7,000 m and US$1,000 above 7,000 m, plus US$500 for liaison-officer equipment; per-member charges apply (IMF, checked 1 Oct 2026). Arunachal was not on the Home Ministry's 2019 list of 137 peaks opened to foreigners. See our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">how to climb in India</a>."
+ ],
+ "quote_h2": "Inspired by Kangto? Climb your first big peak in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Arunachal peaks. If a first snow summit or a 6,000 m peak is your goal, Himachal is the place to start: Friendship Peak first, then Yunam or Deo Tibba. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Arunachal Pradesh's peaks: your questions",
+ "faqs": [
+  [
+   "Which is the highest peak in Arunachal Pradesh?",
+   "Kangto, 7,090 m (23,261 ft); some sources give 7,042–7,060 m. It stands on the India–Tibet border in Bichom district."
+  ],
+  [
+   "Has Kangto been climbed?",
+   "Yes. An 18-member Indian Army Eastern Command team made the first recorded ascent on 26 November 2025, by the southern route."
+  ],
+  [
+   "Which is the second-highest peak in Arunachal Pradesh?",
+   "Nyegyi Kansang, 7,047 m. An Indian team claimed it in 1995, but it stopped about 600 m below the main summit, so the peak is still counted as unclimbed."
+  ],
+  [
+   "What is Gorichen peak?",
+   "A 6,488 m peak in the Tawang–West Kameng area, used by the Army for training. A West Bengal club made the first civilian ascent on 21 October 2024."
+  ],
+  [
+   "Which Arunachal peak is named after the 6th Dalai Lama?",
+   "Tsangyang Gyatso (6,383 m) in Tawang, first climbed by NIMAS Dirang on 25 September 2024."
+  ],
+  [
+   "Do I need a permit to visit Arunachal Pradesh?",
+   "Yes. Indians need an eILP (online, up to 14 days for tourists). Foreigners need a Protected Area Permit through an approved tour operator, with a US$30 royalty."
+  ],
+  [
+   "Can foreigners climb in Arunachal Pradesh?",
+   "Only with a Protected Area Permit plus IMF permission. All the state's big peaks are in restricted border areas, and recent ascents have been Army or institute expeditions."
+  ],
+  [
+   "When is the best time to climb in Arunachal Pradesh?",
+   "There is no official season, but recent ascents were made from late September to November, after the monsoon."
+  ]
+ ],
+ "sources": [
+  [
+   "Governor of Arunachal Pradesh, press release 8 Dec 2025 — Mount Kangto expedition",
+   "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf"
+  ],
+  [
+   "ETV Bharat, Dec 2025 — Indian Army scales Arunachal's highest peak Kangto",
+   "https://www.etvbharat.com/en/state/indian-army-scales-arunachals-highest-peak-kangto-enn25120506852"
+  ],
+  [
+   "The Pioneer, Dec 2025 — Army's first-ever successful ascent of Mount Kangto",
+   "https://www.dailypioneer.com/2025/india/army-s-first-ever-successful-ascent-of-mount-kangto.html"
+  ],
+  [
+   "Wikipedia — Kangto",
+   "https://en.wikipedia.org/wiki/Kangto"
+  ],
+  [
+   "Assam Tribune — ITBP-IMF team first to scale Mt Kangto base",
+   "https://assamtribune.com/itbp-imf-team-first-to-scale-mt-kangto-base"
+  ],
+  [
+   "Wikipedia — Nyegyi Kansang",
+   "https://en.wikipedia.org/wiki/Nyegyi_Kansang"
+  ],
+  [
+   "Himalayan Journal 52 — First ascent of Nyegi Kangsang",
+   "https://www.himalayanclub.org/hj/52/3/first-ascent-of-nyegi-kangsang/"
+  ],
+  [
+   "Wikipedia — Chiumo",
+   "https://en.wikipedia.org/wiki/Chiumo"
+  ],
+  [
+   "Wikipedia — Gori Chen",
+   "https://en.wikipedia.org/wiki/Gori_Chen"
+  ],
+  [
+   "The Telegraph t2, Oct 2024 — Historic civilian ascent of Mt Gorichen",
+   "https://t2online.in/goodlife/travel/historic-civilian-ascent-mak-team-conquers-mt-gorichen/1211814"
+  ],
+  [
+   "ETV Bharat, Sep 2024 — Arunachal peak named after the 6th Dalai Lama",
+   "https://etvbharat.com/en/!bharat/arunachal-peak-gets-its-name-after-6th-dalai-lama-tsangyang-gyatso-enn24092507145"
+  ],
+  [
+   "Arunachal Tourism — Protected Area Permit",
+   "https://arunachaltourism.com/protected-area-permit/"
+  ],
+  [
+   "Arunachal Pradesh Police — Inner Line Permit",
+   "https://arunpol.nic.in/ilp.html"
+  ],
+  [
+   "Indian Mountaineering Foundation — Peak fees",
+   "https://www.indmount.org/IMF/peakfee"
+  ]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Kangto"
+ ]
+}
