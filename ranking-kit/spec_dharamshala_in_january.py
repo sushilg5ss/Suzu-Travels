@@ -6,7 +6,7 @@ SPEC = dict(
     seo_title="Dharamshala in January 2027: Weather, Snow & Things to Do",
     seo_desc="Dharamshala in January: IMD temperatures (about 16° / 6 °C below, 12° / 2 °C in McLeod Ganj), snow chances at McLeod Ganj, Naddi and Triund, what to do, and a live forecast.",
     focus="dharamshala in january",
-    photo_pick=dict(slugs=[D], ids=[
+    photo_pick=dict(slugs=[D, "triund-weather"], ids=[
         (D + ":g-3", "hero", "Dhauladhar alpenglow above Dharamshala", "Evening light on the snowy Dhauladhar range above Dharamshala"),
         (D + ":fig-2", "fig", "Hanuman ji ka Tibba from Triund", "The snow peak of Hanuman ji ka Tibba seen from Triund"),
         (D + ":g-4", "g", "A snow-laden street in McLeod Ganj", "A street in McLeod Ganj after a snowfall"),
@@ -15,6 +15,7 @@ SPEC = dict(
         (D + ":g-7", "g", "The Triund ridge in winter", "The Triund ridge under winter snow"),
         (D + ":hero-1", "g", "Camp at Triund", "A camp at Triund below the Dhauladhar"),
         (D + ":g-8", "g", "The Dhauladhar from Triund", "The Dhauladhar range seen from Triund"),
+        ("triund-weather:g-1", "g", "Late snow above Triund", "Winter snow on the slope above Triund"),
     ]),
     kicker="Dharamshala · McLeod Ganj · Triund · January 2027",
     tag="Dharamshala in January: sunny days, freezing nights and snow up high",
@@ -52,7 +53,7 @@ SPEC = dict(
         ("McLeod Ganj", "~2,080 m", "The Tsuglagkhang temple complex, cafés and bookshops; beautiful on a sunny winter day."),
         ("Bhagsunag and Dharamkot", "Above McLeod Ganj", "Short walks with Dhauladhar views; Dharamkot can whiten in a cold spell."),
         ("Naddi viewpoint", "~2,200 m", "A close view of the snowy Dhauladhar; one of the first places to get snow."),
-        ("Triund", "~2,850 m ridge", "Often snowy in January — go only with a local guide, in settled weather, and turn back early if it closes in."),
+        ("Triund", "~2,850 m ridge", "Often snowy in January — go only with a local guide, in settled weather, and turn back early if it closes in. <a href=\"/triund-weather/\">Triund weather →</a>"),
         ("Kangra valley", "~730 m", "Milder days for the Kangra fort and the Masroor rock-cut temples."),
         ("Palampur", "About 35 km", "Tea gardens below the Dhauladhar; quiet in winter. <a href=\"/kangra-weather/\">Kangra and Palampur weather →</a>"),
     ]),
