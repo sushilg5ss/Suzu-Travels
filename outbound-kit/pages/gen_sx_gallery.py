@@ -32,6 +32,11 @@ GAL = {
    sub='Six stops from north to south — the lake in Hanoi\u2019s old quarter, the rice terraces of Sapa, the imperial gate at Hue, the old covered bridge in Hoi An, the Golden Bridge above Da Nang and colonial Saigon. Tap any photo to open it full size.',
    slugs=[('vietnam-g1','-1024x683'),('vietnam-g2','-1024x683'),('vietnam-g3','-1024x768'),
           ('vietnam-g4','-1024x768'),('vietnam-g5','-1024x683'),('vietnam-g6','-1024x683')]),
+ 'singapore': dict(
+   title='Singapore in real photos',
+   sub='Six places most Singapore trips we plan include \u2014 the Merlion and Marina Bay, the Cloud Forest at Gardens by the Bay, a beach afternoon on Sentosa, Little India and Chinatown, and the indoor waterfall at Changi before the flight home. Tap any photo to open it full size.',
+   slugs=[('singapore-g1','-1024x576'),('singapore-g2','-1024x1024'),('singapore-g3','-1024x781'),
+          ('singapore-g4','-731x1024'),('singapore-g5','-1024x673'),('singapore-g6','-1024x683')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"

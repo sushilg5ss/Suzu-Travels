@@ -2095,5 +2095,65 @@
   "license": "CC BY-SA 4.0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Saigon_Central_Post_Office_2022.jpg",
   "wp_id": 19440
+ },
+ "singapore-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-singapore-merlion-marina-bay.webp",
+  "alt": "Merlion statue spouting water at Merlion Park with Marina Bay Sands and the ArtScience Museum across the bay under a cloudy sky, Singapore",
+  "cap": "The Merlion and Marina Bay Sands",
+  "note": "Merlion Park, looking across the bay",
+  "credit": "ProjectManhattan",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_and_Merlion.jpg",
+  "wp_id": 19991
+ },
+ "singapore-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-singapore-cloud-forest.webp",
+  "alt": "Plant-covered mountain with waterfalls under the glass dome of the Cloud Forest, Gardens by the Bay, Singapore",
+  "cap": "Cloud Forest, Gardens by the Bay",
+  "note": "The indoor waterfall mountain under the glass dome",
+  "credit": "Basile Morin",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Cloud_Forest,_Gardens_by_the_Bay,_Singapore.jpg",
+  "wp_id": 19992
+ },
+ "singapore-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-singapore-sentosa-palawan-beach.webp",
+  "alt": "Calm turquoise water and a palm-covered islet with a wooden lookout tower at Palawan Beach, Sentosa, Singapore",
+  "cap": "Palawan Beach, Sentosa",
+  "note": "Calm water and a palm-covered islet with a lookout tower",
+  "credit": "Nkon21",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Palawan_Beach_Sentosa_230504_(1).jpg",
+  "wp_id": 19994
+ },
+ "singapore-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-singapore-little-india-tan-teng-niah-scaled.webp",
+  "alt": "Brightly painted former House of Tan Teng Niah lit up at night, Little India, Singapore",
+  "cap": "House of Tan Teng Niah, Little India",
+  "note": "The brightly painted old villa, lit up at night",
+  "credit": "Rosanazareth",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:HouseOfTanTengNiah.jpg",
+  "wp_id": 19995
+ },
+ "singapore-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-singapore-buddha-tooth-relic-temple.webp",
+  "alt": "Red multi-storey Buddha Tooth Relic Temple with tiered roofs under a blue sky, Chinatown, Singapore",
+  "cap": "Buddha Tooth Relic Temple, Chinatown",
+  "note": "The red temple with its tiered roofs",
+  "credit": "Jakub Hałun",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Buddha_Tooth_Relic_Temple,_Singapore,_20240122_0810_2924_01.jpg",
+  "wp_id": 19996
+ },
+ "singapore-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-singapore-jewel-changi-rain-vortex.webp",
+  "alt": "Rain Vortex indoor waterfall falling from the glass roof through tropical greenery at Jewel Changi Airport, Singapore",
+  "cap": "Rain Vortex, Jewel Changi Airport",
+  "note": "The indoor waterfall at the airport — good for a last stop",
+  "credit": "Mike Peel",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:At_Jewel_Changi,_Singapore_2023_01.jpg",
+  "wp_id": 19993
  }
 }
