@@ -56,7 +56,7 @@ SPEC = dict(
             ["February", "Deep snow", "Possible; likely in a cold year", "Fewer crowds; Auli ski season"],
             ["March", "Snow on the ground; melting late", "Uncommon", "Spring begins lower down"],
         ]), after=[
-            "Live temperatures for every Uttarakhand hill station: <a href=\"/uttarakhand-weather/\">Uttarakhand weather</a>. Across Himachal, Kashmir and Uttarakhand: <a href=\"/snow-tracker/\">live snow tracker</a>.",
+            "Live temperatures for every Uttarakhand hill station: <a href=\"/uttarakhand-weather/\">Uttarakhand weather</a>. Across Himachal, Kashmir and Uttarakhand: <a href=\"/snow-tracker/\">live snow tracker</a>. Planning a December trip? <a href=\"/uttarakhand-in-december/\">Uttarakhand in December</a>.",
         ]),
     ],
     gallery=dict(h2="Uttarakhand in the snow", lead="Auli, Mussoorie, Dhanaulti, Tungnath and the Kedarkantha trail — real photographs, each credited to its photographer."),
