@@ -144,6 +144,9 @@ MORE = [
     ("mcleodganj", "McLeodganj", "मैक्लोडगंज", "Himachal", 32.2427, 76.3213, 2082, "weather/dharamshala/"),
     ("haldwani", "Haldwani", "हल्द्वानी", "Uttarakhand", 29.2183, 79.5130, 424, "haldwani-weather/"),
     ("kathgodam", "Kathgodam", "काठगोदाम", "Uttarakhand", 29.2660, 79.5440, 554, "haldwani-weather/"),
+    ("pauri", "Pauri", "पौड़ी", "Uttarakhand", 30.1520, 78.7790, 1814, "pauri-weather/"),
+    ("khirsu", "Khirsu", "खिर्सू", "Uttarakhand", 30.1740, 78.8650, 1700, "pauri-weather/"),
+    ("kotdwar", "Kotdwar", "कोटद्वार", "Uttarakhand", 29.7460, 78.5230, 400, "kotdwar-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
