@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-09-2356",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: Hemkund altitude fix",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "7308fb15daf5f8f0aa8f50458252a020f123b749a234cb31e7a0e5c0b1b1971c",
+   "base_sha256": "94ccace607075f602a816abdd9a6a5256467bd9463361c42bdb34dfc3ec45b98",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 70831
+  }
+ ]
+}
