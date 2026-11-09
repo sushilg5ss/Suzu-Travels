@@ -15,7 +15,7 @@ SPEC = dict(
         (P + ":g-4", "g", "Pine forest at Dhanaulti", "Pine and deodar forest at Dhanaulti"),
         (P + ":g-5", "g", "Dhanaulti Eco Park", "The walking paths of Dhanaulti Eco Park"),
         (P + ":g-6", "g", "Hills around Surkanda Devi", "Forested hills around Surkanda Devi"),
-        (P + ":g-7", "g", "Snow above Dhanaulti", "A dog resting on winter snow above Dhanaulti"),
+        (P + ":g-7", "g", "Winter snow in the hills", "A dog resting on winter snow in the hills"),
     ]),
     kicker="Dhanaulti · Surkanda Devi · Mussoorie · live weather",
     tag="Dhanaulti weather: today, this week and through the year",
