@@ -1,0 +1,16 @@
+{
+ "id": "feed-0408-1794263874",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed refresh (static snapshot) after new Uttarakhand pages",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "0d86063bc01b8698317654f11d99b5422748fc6ebc4adc2c0e7871f816809d50",
+   "base_sha256": "47f376265ebb2dbf522ae2c83e6279f68135266b6bf51ca77b71b75aec798e31",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 73770
+  }
+ ]
+}
