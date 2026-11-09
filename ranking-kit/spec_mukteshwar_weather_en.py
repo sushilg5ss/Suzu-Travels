@@ -53,7 +53,7 @@ SPEC = dict(
             ["November", "17.2° / 6.1 °C", "8 mm", "Driest; crisp, clear"],
             ["December", "14.4° / 3.6 °C", "18 mm", "Cold, sunny days"],
         ]), after=[
-            "Source: India Meteorological Department climatological normals 1991–2020 for Mukteshwar. Nearby: <a href=\"/nainital-weather/\">Nainital weather</a>.",
+            "Source: India Meteorological Department climatological normals 1991–2020 for Mukteshwar. Nearby: <a href=\"/nainital-weather/\">Nainital weather</a> · <a href=\"/almora-weather/\">Almora weather</a>.",
         ]),
         dict(id="views", kicker="Snow and the Himalayan view", h2="Snow and Himalayan views at Mukteshwar", fig=True, ps=[
             "From Mukteshwar's ridge, the snow peaks of the Kumaon and Garhwal Himalaya — including Nanda Devi and Trishul — stretch along the northern horizon. They are clearest from <b>October to February</b>, best in the early morning; in the monsoon they are usually hidden in cloud.",
