@@ -16,7 +16,7 @@ SPEC = dict(
         (P + ":g-4", "g", "The monastery and the plain", "Hanle monastery and the green plain below"),
         (P + ":g-5", "g", "A house in Hanle", "A whitewashed house against snow-capped mountains in Hanle"),
         (P + ":g-6", "g", "Black-necked crane", "A black-necked crane at Hanle"),
-        (P + ":g-7", "g", "Tibetan gazelle", "A Tibetan gazelle on the Changthang plateau"),
+        (P + ":g-7", "g", "Tibetan gazelles", "Tibetan gazelles on the Changthang plateau"),
     ]),
     kicker="Hanle · Changthang · Dark Sky Reserve · live weather",
     tag="Hanle weather: today, this week and through the year",
