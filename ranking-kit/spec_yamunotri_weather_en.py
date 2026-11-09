@@ -8,13 +8,12 @@ SPEC = dict(
     focus="yamunotri weather, yamunotri temperature",
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero", "Yamunotri below the snow peaks", "Yamunotri temple in its gorge below snow-covered peaks"),
-        (P + ":fig-1", "fig", "Yamunotri temple and ashram", "Yamunotri temple and ashram buildings above the stream"),
+        (P + ":fig-1", "g", "Yamunotri temple and ashram", "Yamunotri temple and ashram buildings above the stream"),
         (P + ":g-1", "g", "Yamunotri shrine", "The Yamunotri shrine and buildings in the gorge"),
         (P + ":g-2", "g", "The Yamunotri temple", "The painted roof and spire of Yamunotri temple"),
         (P + ":g-3", "g", "The Yamuna at Yamunotri", "The young Yamuna rushing over rocks at Yamunotri"),
         (P + ":g-4", "g", "The stream below the shrine", "The Yamuna in its rocky gorge at Yamunotri"),
         (P + ":g-5", "g", "The ranges above Yamunotri", "Forested ridges and snow above Yamunotri"),
-        (P + ":g-6", "g", "The temple from the path", "Yamunotri temple seen across the gorge"),
         (P + ":g-7", "g", "The Yamuna valley", "The Yamuna valley on the road towards Yamunotri"),
     ]),
     kicker="Yamunotri · Barkot · Uttarkashi · live weather",
@@ -55,7 +54,7 @@ SPEC = dict(
         ]), after=[
             "*Estimated from Joshimath's IMD normals (1971–2000) adjusted for height — not official Yamunotri records. Closing dates: <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a>.",
         ]),
-        dict(id="season", kicker="Opening, closing and the walk", h2="When Yamunotri opens and closes, and the walk up", fig=True, ps=[
+        dict(id="season", kicker="Opening, closing and the walk", h2="When Yamunotri opens and closes, and the walk up", ps=[
             "The doors of Yamunotri open each year on <b>Akshaya Tritiya</b>, usually in late April or May, and close on <b>Bhai Dooj</b> in the Diwali festival days; <b>in 2026 that is 11 November at 10:28 am</b>. Through the winter the goddess is worshipped at <b>Kharsali</b>, a village across the river from Janki Chatti.",
             "Most people sleep at <b>Barkot</b>, drive about 45 km to <b>Janki Chatti</b> early in the morning, and walk the last 6 km — steep and stony in places — or go by pony or palki. Beside the temple is the hot spring of <b>Surya Kund</b>. In the monsoon the path is slippery and landslides can block the road below; in winter the path is under snow.",
             "Plan: <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham yatra</a> · nearby weather: <a href=\"/gangotri-weather/\">Gangotri weather</a>, <a href=\"/kedarkantha-weather/\">Kedarkantha weather</a>, <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
