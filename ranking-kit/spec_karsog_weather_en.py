@@ -13,7 +13,7 @@ SPEC = dict(
         (P + ":g-2", "g", "Shikari Devi temple", "The Shikari Devi temple on its ridge"),
         (P + ":g-3", "g", "Shikari Devi ridge in snow", "Snowy slopes on the Shikari Devi ridge"),
         (P + ":g-4", "g", "Shikari Devi in winter", "Deep snow at Shikari Devi in winter"),
-        (P + ":g-5", "g", "Mamleshwar Mahadev temple, Mamel", "Mamleshwar Mahadev temple near Karsog"),
+        (P + ":g-5", "g", "A temple in the Karsog valley", "A pagoda-roofed temple in the Karsog valley"),
         (P + ":g-6", "g", "Kamru Nag lake and temple", "Kamru Nag temple and lake, Mandi district"),
         (P + ":g-7", "g", "Snow on the trees near Shikari Devi", "Snow-laden trees near Shikari Devi"),
     ]),
