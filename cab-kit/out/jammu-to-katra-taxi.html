@@ -154,8 +154,9 @@ if(pl){
  function ensureMap(cb){
   loadMap(function(){
    if(map){if(mapReady){cb();}else{map.once('load',cb);}return;}
-   map=new maplibregl.Map({container:'szc-map',style:'https://tiles.openfreemap.org/styles/liberty',center:[77.2,30.9],zoom:6,pitch:0,attributionControl:{compact:true},cooperativeGestures:true,maxBounds:[[66,16],[92,38]]});
+   map=new maplibregl.Map({container:'szc-map',style:'https://tiles.openfreemap.org/styles/liberty',center:[77.2,30.9],zoom:6,pitch:0,attributionControl:false,cooperativeGestures:true,maxBounds:[[66,16],[92,38]]});
    map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+   map.getContainer().insertAdjacentHTML('beforeend','\x3cdiv class="szc-attr" style="position:absolute;right:0;bottom:0;z-index:2;font:11px/1.5 sans-serif;color:#333;background:rgba(255,255,255,.82);padding:1px 7px;border-radius:6px 0 0 0">\x3ca href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap\x3c/a> \xa9 \x3ca href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles\x3c/a> Data from \x3ca href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap\x3c/a>\x3c/div>');
    map.on('load',function(){
     try{map.getStyle().layers.forEach(function(L){if(L['source-layer']==='boundary'){map.setLayoutProperty(L.id,'visibility','none');}});}catch(e){}
     map.addSource('rt',{type:'geojson',data:{type:'FeatureCollection',features:[]}});
