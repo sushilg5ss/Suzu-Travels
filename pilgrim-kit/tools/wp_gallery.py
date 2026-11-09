@@ -66,6 +66,7 @@ def main():
         file = meta.get("file") or titles.get(fn.rsplit(".", 1)[0], "")
         if not file:
             sys.exit(f"no Commons file URL for {fn} (pass --titles)")
+        file = file.replace("\u2026", "...")  # WP texturizes "..." in the media description -> broken Commons link (fixed 9 Nov 2026)
         if not OK_LIC.match(lic.strip()):
             sys.exit(f"licence not allowed for {fn}: {lic}")
         md = m["media_details"]

@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "6 Nov 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "9 Nov 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -791,7 +791,7 @@ def content_page(slug):
     if c.get("reach"):
         r = c["reach"]
         cards = "".join(f'<div class="szp-card"><h3>{e(a)}</h3><p>{b}</p></div>' for a, b in r["cards"])
-        add("reach", "How to reach", f'<span class="k">How to reach</span><h2>{e(r["h2"])}</h2><div class="szp-cards">{cards}</div>')
+        add("reach", "How to reach", f'<span class="k">How to reach</span><h2>{e(r["h2"])}</h2>' + r.get("pre", "") + f'<div class="szp-cards">{cards}</div>')
     if c.get("itinerary"):
         it = c["itinerary"]
         lis = "".join(f'<li><div class="d">Day {e(dd)}</div><div class="t">{e(t)}</div><p>{p}</p></li>' for dd, t, p in it["days"])
