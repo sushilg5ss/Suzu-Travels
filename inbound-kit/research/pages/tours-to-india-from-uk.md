@@ -85,3 +85,7 @@ AI-answer shape: "From the UK you need an Indian visa (most visitors use the e-V
 - Official e-Visa portal · https://indianvisaonline.gov.in/evisa/
 - UK Civil Aviation Authority — What is ATOL? · https://www.caa.co.uk/newsroom/blogs/what-is-atol/
 - Air India — UK connectivity release · https://www.airindia.com/in/en/newsroom/press-release/Air-India-expands-UK-connectivity-this-winter-with-fourth-daily-flight.html
+
+## Reviewer update 9 Nov 2026 — Air India UK winter 2026–27 (supersedes the LHR/LGW/BHX line)
+- Air India ended Amritsar–London Gatwick (3x weekly) from 25 Oct 2026 and Delhi–Birmingham (3x weekly) from 4 Nov 2026; Amritsar–Birmingham reportedly at risk of a temporary winter suspension (unconfirmed). Sources: AirHelp UK, "Air India to end 4 European routes from 25 October 2026" (updated 19 Oct 2026) https://www.airhelp.co.uk/flight-disruptions/air-india-four-european-route-cuts-15102026/ ; Live From A Lounge, 24 Oct 2026 https://livefromalounge.com/air-india-cuts-four-european-routes-as-winter-schedule-changes-take-effect/ ; Air India consolidating London ops at Heathrow (LFAL). As of 9 Nov 2026.
+- Page wording: Air India non-stop Heathrow ↔ Delhi only; Gatwick/Birmingham cut for winter 2026–27; "check the airline for this season's timetable".

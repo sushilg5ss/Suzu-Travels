@@ -4,13 +4,13 @@
  "kind": "product",
  "title": "Tours to India from the UK: Private Trips with a Local Indian Team",
  "seo_title": "Tours to India from the UK: Private, Local, from US$299",
- "seo_desc": "Private tours to India from the UK with a local Himalayan team: flights from Heathrow, Gatwick and Birmingham, e-Visa, ATOL facts and card payment.",
+ "seo_desc": "Private tours to India from the UK with a local Himalayan team: non-stop Heathrow flights, e-Visa, ATOL facts, card payment, time difference.",
  "focus": "tours to india from uk",
  "label": "Tours to India from the UK",
  "blurb": "For British travellers: flights, entry rules, ATOL in plain English, the time difference and paying by UK card — booked direct with a local team",
  "kicker": "India from the UK · Private car and driver",
  "tag": "Fly in from the UK. We take it from there.",
- "sub": "Most UK brochures sell India as a coach group with flights in pounds. We are the other option: a small, local company in Himachal Pradesh that plans a private trip with your own car and driver, while you book your own flight from Heathrow, Gatwick or Birmingham. Here is what that means for a British traveller — visas, flights, protection, paying and the time difference.",
+ "sub": "Most UK brochures sell India as a coach group with flights in pounds. We are the other option: a small, local company in Himachal Pradesh that plans a private trip with your own car and driver, while you book your own flight from the UK. Here is what that means for a British traveller — visas, flights, protection, paying and the time difference.",
  "hero_alt": "A plane wing over the snowy Himalaya, the Taj Mahal at dawn, a private SUV on a mountain road in Spiti and Shimla in winter snow",
  "cta1": "See the routes",
  "talk": true,
@@ -24,8 +24,8 @@
    "per person, land only"
   ],
   [
-   "LHR · LGW · BHX",
-   "non-stop flights to India"
+   "LHR → Delhi",
+   "non-stop flights on Air India"
   ],
   [
    "20% deposit",
@@ -33,15 +33,15 @@
   ]
  ],
  "q": "How do I book a tour to India from the UK?",
- "answer": "Book your flight from Heathrow, Gatwick or Birmingham, apply for your own e-Visa at <b>indianvisaonline.gov.in</b>, and book the India part direct with a local company. Suzu Travels, based in Himachal, runs <b>private car-and-driver tours</b> from <b>US$299</b> to <b>US$1,099</b> per person (land only). A 20% deposit by UK card or PayPal locks your dates.",
+ "answer": "Book your flight to Delhi (non-stop from Heathrow), apply for your own e-Visa at <b>indianvisaonline.gov.in</b>, and book the India part direct with a local company. Suzu Travels, based in Himachal, runs <b>private car-and-driver tours</b> from <b>US$299</b> to <b>US$1,099</b> per person (land only). A 20% deposit by UK card or PayPal locks your dates.",
  "facts": [
   [
    "5 h 30 min",
    "India is ahead of the UK in winter (GMT); 4 h 30 min in summer (BST)"
   ],
   [
-   "3 UK airports",
-   "Heathrow, Gatwick and Birmingham have non-stop Air India flights"
+   "Heathrow",
+   "non-stop Air India flights to Delhi; Gatwick and Birmingham routes cut for winter 2026–27"
   ],
   [
    "6 months",
@@ -174,7 +174,7 @@
    "h2": "Flights from the UK",
    "kind": "prose",
    "paras": [
-    "Air India flies non-stop to India from <b>London Heathrow</b>, <b>London Gatwick</b> and <b>Birmingham</b>, connecting Delhi, Mumbai, Bengaluru, Ahmedabad and Amritsar (Air India, October 2025). Schedules change each season, so check the airline for this season's timetable before you plan.",
+    "Air India flies non-stop between <b>London Heathrow</b> and <b>Delhi</b>. For winter 2026–27 it ended its Amritsar–London Gatwick flights (from 25 Oct 2026) and Delhi–Birmingham flights (from 4 Nov 2026), and Amritsar–Birmingham may be paused (schedule changes reported October 2026). Schedules change each season, so check the airline for this season's timetable before you plan.",
     "All our routes begin in <b>Delhi</b>, so Delhi is the natural arrival airport; for the Golden Temple & Himalayas route, Amritsar works too. Tell us your flight times and your driver meets you at arrivals.",
     "We do not sell flights. Book them with the airline or a UK agent, then send us the times — we build the days around them."
    ]
@@ -282,8 +282,8 @@
    "The FCDO says your passport must expire at least 6 months after the date you arrive and have at least 2 blank pages. You also fill in an online e-arrival card within 72 hours before landing; it is not a visa."
   ],
   [
-   "Which UK airports fly non-stop to India?",
-   "Air India flies non-stop from London Heathrow, London Gatwick and Birmingham to cities including Delhi, Mumbai, Bengaluru, Ahmedabad and Amritsar. Schedules change each season, so check the airline for this season's timetable."
+   "Which UK airports have non-stop Air India flights to India?",
+   "London Heathrow, to Delhi. Other airlines also fly from the UK, so compare options. For winter 2026–27 Air India ended its Amritsar–Gatwick (25 Oct 2026) and Delhi–Birmingham (4 Nov 2026) flights, and Amritsar–Birmingham may be paused. Schedules change each season, so check the airline for this season's timetable."
   ],
   [
    "Is my India tour ATOL protected?",
@@ -326,6 +326,10 @@
   [
    "Air India — UK connectivity this winter (press release, 9 Oct 2025)",
    "https://www.airindia.com/in/en/newsroom/press-release/Air-India-expands-UK-connectivity-this-winter-with-fourth-daily-flight.html"
+  ],
+  [
+   "AirHelp — Air India to end 4 European routes from 25 October 2026 (updated 19 Oct 2026)",
+   "https://www.airhelp.co.uk/flight-disruptions/air-india-four-european-route-cuts-15102026/"
   ]
  ],
  "verified": "9 Nov 2026",
