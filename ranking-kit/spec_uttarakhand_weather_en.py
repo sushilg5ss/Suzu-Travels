@@ -7,9 +7,9 @@ SPEC = dict(
     lang="en",
     slug="uttarakhand-weather",
     title="Uttarakhand Weather Today: Live Forecast, Snow and Temperatures for Every Hill Station",
-    seo_title="Uttarakhand Weather Today: Temperature, Snow & Hill Stations",
+    seo_title="Uttarakhand Weather Today & Forecast: Temperature, Snow",
     seo_desc="Uttarakhand weather today: live forecast for Dehradun, Mussoorie, Nainital and Auli, winter temperatures for every hill station, where and when it snows, Char Dham closing dates and the best time to visit.",
-    focus="uttarakhand weather, uttarakhand temperature",
+    focus="uttarakhand weather, uttarakhand temperature, uttarakhand weather forecast",
     photo_pick=dict(slugs=[A, B, C, D, E], ids=[
         (A + ":hero-1", "hero", "Mussoorie's ridge in snow", "Mussoorie's ridge and houses under winter snow"),
         (C + ":hero-1", "fig", "Kedarnath below the snow peaks", "Kedarnath temple below the snow-covered Himalaya"),
@@ -80,7 +80,7 @@ SPEC = dict(
         ]),
         dict(id="snow", kicker="Snow", h2="Where and when does it snow in Uttarakhand?", fig=True, ps=[
             "<b>The most reliable snow</b> falls on the high places — Auli, Chopta–Tungnath, Kedarkantha and Harsil — usually from late December to March. <b>Closest to Delhi</b>, Dhanaulti, Mussoorie's Lal Tibba and the ridges above Chakrata are the best bets in January–February, along with Mukteshwar in Kumaon.",
-            "Nainital town and Lansdowne get snow only on a few days in some winters; Haridwar, Rishikesh, Dehradun, Haldwani and Kotdwar never do. Snow comes with western disturbances — check the live forecast above a few days before you travel.",
+            "Nainital town and Lansdowne get snow only on a few days in some winters; Haridwar, Rishikesh, Dehradun, Haldwani and Kotdwar never do. Snow comes with western disturbances — check the live forecast above a few days before you travel. More: <a href=\"/uttarakhand-snowfall/\">Uttarakhand snowfall 2026-27</a>.",
             "Char Dham: Kedarnath closes on 11 November 2026 and Badrinath on 16 November — <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a>.",
         ]),
     ],
