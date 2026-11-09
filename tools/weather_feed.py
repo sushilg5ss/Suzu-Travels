@@ -133,6 +133,10 @@ MORE = [
     ("pithoragarh", "Pithoragarh", "पिथौरागढ़", "Uttarakhand", 29.5829, 80.2182, 1627, "pithoragarh-weather/"),
     ("ramnagar", "Ramnagar (Corbett)", "रामनगर", "Uttarakhand", 29.3949, 79.1265, 345, "jim-corbett-weather/"),
     ("dhikala", "Dhikala (Corbett)", "ढिकाला", "Uttarakhand", 29.5300, 78.8600, 400, "jim-corbett-weather/"),
+    ("newtehri", "New Tehri", "नई टिहरी", "Uttarakhand", 30.3780, 78.4320, 1750, "tehri-weather/"),
+    ("tehrilake", "Tehri Lake (Koti)", "टिहरी झील", "Uttarakhand", 30.3930, 78.4710, 850, "tehri-weather/"),
+    ("champawat", "Champawat", "चंपावत", "Uttarakhand", 29.3364, 80.0910, 1615, "champawat-weather/"),
+    ("lohaghat", "Lohaghat", "लोहाघाट", "Uttarakhand", 29.4040, 80.0890, 1706, "champawat-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
