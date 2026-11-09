@@ -8,13 +8,12 @@ SPEC = dict(
     focus="badrinath weather, badrinath temperature",
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero", "Badrinath temple below the mountains", "The painted façade of Badrinath temple below the mountains"),
-        (P + ":fig-1", "fig", "A snowy morning at Badrinath", "Badrinath on the banks of the Alaknanda on a snowy morning"),
+        (P + ":fig-1", "g", "A snowy morning at Badrinath", "Badrinath on the banks of the Alaknanda on a snowy morning"),
         (P + ":g-1", "g", "Badrinath temple", "Badrinath temple under a blue sky"),
         (P + ":g-2", "g", "Badrinath at night", "Badrinath temple lit up at night"),
         (P + ":g-3", "g", "The Alaknanda at Badrinath", "The Alaknanda river and the Badrinath temple area"),
         (P + ":g-4", "g", "Mana village", "Mana village near Badrinath"),
         (P + ":g-5", "g", "Mana and the valley", "Mana village and the valley above Badrinath"),
-        (P + ":g-6", "g", "Mana panorama", "A panoramic view of Mana near Badrinath"),
         (P + ":g-7", "g", "The temple entrance at night", "The lit entrance of Badrinath temple"),
     ]),
     kicker="Badrinath · Mana · Joshimath · live weather",
@@ -55,7 +54,7 @@ SPEC = dict(
         ]), after=[
             "*Estimated from Joshimath's IMD normals (1971–2000) adjusted for height — not official Badrinath records. Closing dates: <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a>.",
         ]),
-        dict(id="season", kicker="Opening, closing and Mana", h2="When Badrinath opens and closes, and the road", fig=True, ps=[
+        dict(id="season", kicker="Opening, closing and Mana", h2="When Badrinath opens and closes, and the road", ps=[
             "The doors of Badrinath open each year in late April or May, on a date announced on Basant Panchami, and close in November; <b>in 2026 they close on 16 November at 9:37 pm</b>. Through the winter, worship moves down the valley to Pandukeshwar and Joshimath, and Badrinath and the villages above it are snowbound.",
             "The road from Rishikesh runs through Devprayag, Rudraprayag, Karnaprayag and Joshimath — around 295 km, usually two days. In the monsoon, landslides often stop traffic for hours; late in the season, the first snow can arrive in October. <b>Mana</b>, about 3 km beyond Badrinath, is open in the yatra season.",
             "Plan: <a href=\"/pilgrimage-tours/badrinath/\">Badrinath yatra</a> · <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham yatra</a> · nearby weather: <a href=\"/weather/auli/\">Auli weather</a>, <a href=\"/kedarnath-weather/\">Kedarnath weather</a>.",
