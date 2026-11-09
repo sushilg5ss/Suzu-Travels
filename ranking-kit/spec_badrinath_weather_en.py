@@ -21,6 +21,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Badrinath, Joshimath and Auli, approximate month-by-month temperatures, winter snow, and when the temple opens and closes.",
     chips=[("~3,300 m", "Badrinath"), ("16 Nov 2026", "doors close"), ("~45 km", "from Joshimath"), ("Live", "3 places")],
     flakes=True,
+    alt_lang=("/badrinath-ka-mausam/", "हिंदी में पढ़ें: बद्रीनाथ का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning the Badrinath yatra. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),
