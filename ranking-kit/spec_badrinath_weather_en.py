@@ -57,7 +57,7 @@ SPEC = dict(
         dict(id="season", kicker="Opening, closing and Mana", h2="When Badrinath opens and closes, and the road", ps=[
             "The doors of Badrinath open each year in late April or May, on a date announced on Basant Panchami, and close in November; <b>in 2026 they close on 16 November at 9:37 pm</b>. Through the winter, worship moves down the valley to Pandukeshwar and Joshimath, and Badrinath and the villages above it are snowbound.",
             "The road from Rishikesh runs through Devprayag, Rudraprayag, Karnaprayag and Joshimath — around 295 km, usually two days. In the monsoon, landslides often stop traffic for hours; late in the season, the first snow can arrive in October. <b>Mana</b>, about 3 km beyond Badrinath, is open in the yatra season.",
-            "Plan: <a href=\"/pilgrimage-tours/badrinath/\">Badrinath yatra</a> · <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham yatra</a> · nearby weather: <a href=\"/weather/auli/\">Auli weather</a>, <a href=\"/kedarnath-weather/\">Kedarnath weather</a>.",
+            "Plan: <a href=\"/pilgrimage-tours/badrinath/\">Badrinath yatra</a> · <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham yatra</a> · nearby weather: <a href=\"/joshimath-weather/\">Joshimath weather</a>, <a href=\"/weather/auli/\">Auli weather</a>, <a href=\"/kedarnath-weather/\">Kedarnath weather</a>, <a href=\"/gangotri-weather/\">Gangotri weather</a>.",
         ]),
     ],
     gallery=dict(h2="Badrinath in pictures", lead="Badrinath temple by day, at night and in snow, the Alaknanda and Mana village — real photographs, each credited to its photographer."),
