@@ -36,10 +36,10 @@
    "lead": "Companies in India often describe themselves as officially approved or registered. That can mean two different things, and neither is a quality rating. Here is what each one is, and how to check it yourself:",
    "head": ["Type", "What it is", "How to check it"],
    "rows": [
-    ["<b>Ministry of Tourism recognition</b> (national)", "The Ministry of Tourism \"through a voluntary scheme grants recognition/approval to different categories of service providers in the Travel Trade\" (PIB, 12 Dec 2024). Its inbound tour operator guidelines call it \"a voluntary scheme open to all bonafide tour operators\". A company without it is not illegal.", "Search the Ministry's <b>NIDHI+</b> database (nidhi.tourism.gov.in) by unit type, state and city. NIDHI holds units under the voluntary scheme and is \"not a booking platform\" (PIB, 11 Aug 2025)."],
+    ["<b>Ministry of Tourism recognition</b> (national)", "The Ministry of Tourism \"through a voluntary scheme grants recognition/approval to different categories of service providers in the Travel Trade\" (PIB, 12 Dec 2024). A company without it is not illegal.", "Search the Ministry's <b>NIDHI+</b> database (nidhi.tourism.gov.in) by unit type, state and city. NIDHI holds units under the voluntary scheme and is \"not a booking platform\" (PIB, 11 Aug 2025)."],
     ["<b>State registration</b> (e.g. Himachal Pradesh)", "Many states register travel agents under their own law. In Himachal Pradesh it is the HP Tourism Development and Registration Act, 2002 and the HP Registration of Tourism Trade Rules, 2012. The certificate is renewed every 3 years.", "Ask for the certificate number and the state that issued it, then check it with that state's tourism department. In Himachal, a registered travel agent must display the certificate \"in his office at a conspicuous place\"."]
    ],
-   "note": "Recognised operators under the Ministry scheme must \"prominently display the Certificate of approval\". The Ministry's own guidelines mention \"the potential risk of availing services through the unapproved service providers\". A registration tells you a company exists legally and can be traced. It is not a promise about the quality of your trip."
+   "note": "If a company says it is recognised by the Ministry, ask for its approval certificate and look the company up on NIDHI+ yourself. A registration tells you a company exists legally and can be traced. It is not a promise about the quality of your trip."
   },
   {
    "id": "checklist",
@@ -122,7 +122,6 @@
  ],
  "sources": [
   ["PIB — Ministry of Tourism: registered and unregistered travel agents (12 Dec 2024)", "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2083795&reg=48&lang=2"],
-  ["Ministry of Tourism — guidelines for recognition of inbound tour operators", "https://tourism.gov.in/sites/default/files/2020-01/1._Inbound_Tour_Operator.pdf"],
   ["Ministry of Tourism — NIDHI+ (National Integrated Database of Hospitality Industry)", "https://nidhi.tourism.gov.in/home/page/about-nidhi"],
   ["PIB — NIDHI is not a booking platform (11 Aug 2025)", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2155162&reg=48&lang=2"],
   ["HP Registration of Tourism Trade Rules, 2012", "https://himachaltourism.gov.in/wp-content/uploads/2018/09/58e76f88225c2_H.P.-Tourism-Trade-Rules-2012.pdf"],
