@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Haldwani, Kathgodam and Nainital, month-by-month temperatures and rain, and what the weather means for the drive up into the hills.",
     chips=[("~425 m", "Haldwani"), ("~38 °C", "May afternoons"), ("Jul–Aug", "wettest"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/haldwani-ka-mausam/", "हिंदी में पढ़ें: हल्द्वानी का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am travelling via Haldwani / Kathgodam. Dates: ___ , people: ___ , going to: ___",
     cta2=("#weather", "See today's weather"),
