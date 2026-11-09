@@ -54,7 +54,7 @@ SPEC = dict(
             ["November", "25.5° / 11.4 °C", "5 mm", "Driest; pleasant"],
             ["December", "21.7° / 7.6 °C", "13 mm", "Cool; foggy mornings"],
         ]), after=[
-            "Source: India Meteorological Department climatological normals 1991–2020 for Dehradun, shown as a reference for Rishikesh. Month guide: <a href=\"/rishikesh-in-december/\">Rishikesh in December</a> · full guide: <a href=\"/rishikesh-travel-guide/\">Rishikesh travel guide</a>.",
+            "Source: India Meteorological Department climatological normals 1991–2020 for Dehradun, shown as a reference for Rishikesh. Month guide: <a href=\"/rishikesh-in-december/\">Rishikesh in December</a> · full guide: <a href=\"/rishikesh-travel-guide/\">Rishikesh travel guide</a>. Nearby: <a href=\"/haridwar-weather/\">Haridwar weather</a> · <a href=\"/dehradun-weather/\">Dehradun weather</a>.",
         ]),
         dict(id="rafting", kicker="Rafting, yoga and the river", h2="Rafting season and the river through the year", fig=True, ps=[
             "<b>White-water rafting</b> on the Ganga above Rishikesh usually runs from about <b>mid-September to June</b> and is closed through the monsoon, when the river is high and fast. October–November and March–April are the most comfortable months on the water; in January the water is very cold but the rapids are calmer.",

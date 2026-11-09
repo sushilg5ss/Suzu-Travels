@@ -74,7 +74,7 @@ SPEC = dict(
     sections2=[
         dict(id="tips", kicker="Before you go", h2="Mussoorie trip: what the weather means for you", ps=[
             "<b>Clothing:</b> a light jacket from March to June; full winter wear — down jacket, cap, gloves — from December to February; a rain jacket and good shoes in July–August.",
-            "<b>Getting there:</b> Mussoorie is 35 km from Dehradun, about 1 hour 30 minutes by road; Dehradun has the nearest railway station and airport. In winter, start back down before dark — the hairpins can be icy.",
+            "<b>Getting there:</b> Mussoorie is 35 km from Dehradun, about 1 hour 30 minutes by road; Dehradun has the nearest railway station and airport (<a href=\"/dehradun-weather/\">Dehradun weather</a>). In winter, start back down before dark — the hairpins can be icy.",
             "Cabs: <a href=\"/cabs/dehradun-to-mussoorie-taxi/\">Dehradun to Mussoorie taxi</a> · <a href=\"/cabs/delhi-to-mussoorie-taxi/\">Delhi to Mussoorie taxi</a>.",
         ]),
     ],

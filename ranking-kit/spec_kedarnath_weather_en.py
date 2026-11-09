@@ -59,7 +59,7 @@ SPEC = dict(
         dict(id="season", kicker="Opening, closing and snow", h2="When Kedarnath opens and closes", fig=True, ps=[
             "The doors of Kedarnath open each year in late April or May, on a date announced on Mahashivratri, and close on <b>Bhai Dooj</b> after Diwali. In 2026 they close on <b>11 November at 8:30 am</b>. Through the winter the deity is carried down to the <b>Omkareshwar temple at Ukhimath</b>, where it is worshipped until the spring opening.",
             "Snow can fall at Kedarnath in any month, and heavy falls are common from November. In May, walls of old snow still line parts of the trek; by October the sky is at its clearest and the nights are freezing. In July and August, rain, cloud and landslides on the road to Sonprayag and on the trek cause frequent delays.",
-            "Plan: <a href=\"/pilgrimage-tours/kedarnath/\">Kedarnath yatra</a> · <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham yatra</a> · nearby weather: <a href=\"/chopta-weather/\">Chopta weather</a>, <a href=\"/weather/auli/\">Auli weather</a>.",
+            "Plan: <a href=\"/pilgrimage-tours/kedarnath/\">Kedarnath yatra</a> · <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham yatra</a> · nearby weather: <a href=\"/chopta-weather/\">Chopta weather</a>, <a href=\"/weather/auli/\">Auli weather</a>, <a href=\"/badrinath-weather/\">Badrinath weather</a>.",
         ]),
     ],
     gallery=dict(h2="Kedarnath in pictures", lead="The temple below the Kedarnath range, at dawn, in the rainy season and in snow — real photographs, each credited to its photographer."),
