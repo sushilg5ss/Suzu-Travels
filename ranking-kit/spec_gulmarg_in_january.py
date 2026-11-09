@@ -6,7 +6,7 @@ SPEC = dict(
     seo_title="Gulmarg in January 2027: Snow, Skiing, Weather & Gondola",
     seo_desc="Gulmarg in January: deep snow and the coldest weeks (IMD about 1° / −8 °C), Chillai Kalan, skiing, Gondola Phase 1 and 2, the road from Tangmarg, packing tips and a live forecast.",
     focus="gulmarg in january",
-    photo_pick=dict(slugs=[G], ids=[
+    photo_pick=dict(slugs=[G, "gulmarg-gondola"], ids=[
         (G + ":g-4", "hero", "The Gulmarg meadow under snow", "The Gulmarg meadow under deep winter snow"),
         (G + ":fig-2", "fig", "The Gondola base station in winter", "The Gulmarg Gondola base station in snow"),
         (G + ":hero-1", "g", "The Gondola over snowed-in huts", "A Gulmarg Gondola cabin above snowed-in huts"),
@@ -15,6 +15,7 @@ SPEC = dict(
         (G + ":g-7", "g", "Snow on an old hotel", "Snow on the roof of an old Gulmarg hotel"),
         (G + ":g-8", "g", "Kongdoori in winter", "Kongdoori, the Gondola Phase 1 station, in winter"),
         (G + ":g-6", "g", "Gulmarg in early winter", "Gulmarg's meadow and forest at the start of winter"),
+        ("gulmarg-gondola:g-5", "g", "Apharwat peak", "Apharwat peak above Gulmarg in winter"),
     ]),
     kicker="Gulmarg · Kongdoori · Apharwat · January 2027",
     tag="Gulmarg in January: deep snow, the coldest weeks and the ski season",
