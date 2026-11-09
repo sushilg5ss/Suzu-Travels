@@ -1,0 +1,9 @@
+{"pulled":"2026-11-09","source":"Google Ads Keyword Planner via Pipeboard (historical metrics), customer 1172710099, English, 12 months Oct 2025-Sep 2026; banded",
+ "geos":["worldwide","IN","intl = US+GB+AU+IL+DE+FR"],
+ "kedar-dome":{"kedar dome (= kedardome)":[2900,1900,480],"kedarnath dome":[140,110,10],"kedar dome peak":[90,70,10],"kedar dome expedition":[30,30,10],"kedar dome height":[20,null,null],"kedar dome trek":[10,null,null],"kedar dome base camp / ski / climbing":"no data",
+   "trend":"ww Mar 2026 spike 9,900 (intl 2,900) - one-off; IN steady 1,300-2,900"},
+ "nilkantha":{"neelkanth peak":[880,880,30],"nilkantha peak":[880,null,null],"neelkanth mountain":[880,null,null],"nilkantha mountain":[140,140,10],"neelkanth peak badrinath":[140,140,10],"neelkanth parvat badrinath":[70,70,10],"nilkanth parvat":[40,null,null],"neelkanth peak height":[40,null,null],"queen of garhwal":[20,null,null],"neelkanth peak trek":[20,null,null],
+   "note":"'neelkanth peak' = 'nilkantha peak' = 'neelkanth mountain' share one figure (close-variant group); IN May-Jun yatra season peaks 1,300; part may be Neelkanth Mahadev / Kashmir Neelkanth"},
+ "papsura":{"papsura":[590,140,210],"papsura peak":[110,70,20],"papsura mountain":[50,10,20],"dharamsura":[40,30,10],"peak of evil":[20,null,null],"papsura expedition":[10,null,null],"papsura height":[10,null,null],"papsura peak height / white sail peak / tos glacier":"no data",
+   "note":"good intl share (210 of 590); intl peaks Oct-Jan 390"}
+}

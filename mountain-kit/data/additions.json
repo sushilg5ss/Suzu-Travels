@@ -87,5 +87,69 @@
    6460,
    6672
   ]
+ },
+ {
+  "band": "6000",
+  "state": "Himachal Pradesh",
+  "range": "Great Himalaya (Kullu–Lahaul divide)",
+  "district_or_area": "Kullu",
+  "status": "climbed",
+  "best_season": "May–Jun & Sep",
+  "base": "Bhuntar → Manikaran → Barshaini → Tosh → Tos glacier (Kuta Thach base camp ~4,260 m)",
+  "open_to_foreigners": "yes",
+  "india_rank": null,
+  "alt_names": [
+   "Peak of Evil"
+  ],
+  "name": "Papsura",
+  "height_m": 6451,
+  "first_ascent_year": 1967,
+  "first_ascent_by": "Geoffrey Hill & Colin Pritchard (Robert Pettigrew's British expedition), 3 Jun 1967, south-face couloir",
+  "status_note": "",
+  "difficulty": "technical",
+  "difficulty_note": "Avalanche-prone south-face couloirs, an icefall and steep rock high on the peak",
+  "notable": "Local belief pairs it with Dharamsura, the 'Peak of Good': whichever looks higher shows whether evil or good prevails. A government list gives 6,440 m. First ski descent (west couloir) 2017.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/28/15/papsura-climbed/",
+   "https://himalayanclub.org/hj/31/28/papsura-1971",
+   "https://publications.americanalpineclub.org/articles/13201214725",
+   "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"
+  ],
+  "height_alternates_m": [
+   6440,
+   6456,
+   6461
+  ]
+ },
+ {
+  "band": "6000",
+  "state": "Himachal Pradesh",
+  "range": "Great Himalaya (Kullu–Lahaul divide)",
+  "district_or_area": "Kullu",
+  "status": "climbed",
+  "best_season": "May–Jun & Sep",
+  "base": "Barshaini → Tosh → Tos glacier",
+  "open_to_foreigners": "yes",
+  "india_rank": null,
+  "alt_names": [
+   "White Sail",
+   "Dharansura"
+  ],
+  "name": "Dharamsura",
+  "height_m": 6446,
+  "first_ascent_year": 1941,
+  "first_ascent_by": "J.O.M. Roberts' party (SSE ridge)",
+  "status_note": "",
+  "difficulty": "technical",
+  "difficulty_note": "Glaciated twin of Papsura; SW ridge climbed in 1977 (UIAA V+/VI)",
+  "notable": "Called the 'Peak of Good' opposite Papsura; a government list gives 6,420 m.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/28/15/papsura-climbed/",
+   "https://publications.americanalpineclub.org/articles/12197860602/Asia-India-Himachal-Pradesh-Dharamsura-White-Sail-Southwest-Ridge-P-20300-and-Papsura-Southwest-Ridge-Kulu",
+   "https://publications.americanalpineclub.org/articles/13201214725"
+  ],
+  "height_alternates_m": [
+   6420
+  ]
  }
 ]

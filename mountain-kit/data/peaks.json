@@ -1989,19 +1989,21 @@
   "range": "Garhwal Himalaya (Gangotri group)",
   "area": "Uttarkashi",
   "fa": 1947,
-  "fa_by": "Swiss team led by André Roch",
+  "fa_by": "André Roch's Swiss expedition (crossed the dome on the way to Kedarnath's first ascent, 11 Jul 1947)",
   "status": "climbed",
   "status_note": "",
   "grade": "moderate",
-  "grade_note": "NW flank is low-angle snow – a popular ski/first 6,800er",
+  "grade_note": "NW flank is a glacier and snow climb – the easiest big line of the Gangotri group, but with crevasses, avalanche-prone slopes and a steep top section",
   "season": "May–Jun & Sep–Oct",
   "base": "Gangotri → Tapovan",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "NW subpeak of Kedarnath (6,940 m). An Indian Air Force team skied from the summit to advanced base on 7 May 1978.",
   "sources": [
    "https://en.wikipedia.org/wiki/Kedarnath_(mountain)",
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
+   "https://www.himalayanclub.org/hj/15/3/the-swiss-garhwal-expedition-of-1947/",
+   "https://www.himalayanclub.org/hj/36/17/kedarnath-massif/",
+   "https://www.himalayanclub.org/hj/51/8/british-ski-expedition-to-kedar-dome/"
   ]
  },
  {
@@ -2633,18 +2635,21 @@
   "range": "Garhwal Himalaya",
   "area": "Chamoli",
   "fa": 1974,
-  "fa_by": "Sonam Pulzor, Kanhiya Lal, Dilip Singh & Nima Dorje (ITBP)",
+  "fa_by": "ITBP expedition led by S.P. Chamoli, 3 Jun 1974, north face",
   "status": "climbed",
-  "status_note": "1961 claim is discredited.",
+  "status_note": "A 1961 summit claim (north face) is disputed: the IMF asked for a repeat ascent and the Himalayan Club does not accept it.",
   "grade": "technical",
-  "grade_note": "North face; west ridge repeatedly failed",
+  "grade_note": "North face (1974), NE ridge (1993), west ridge first climbed in 2000; knife-edge ridges, cornices and serac fall",
   "season": "May–Jun & Sep–Oct",
   "base": "Badrinath",
   "foreigners": "yes",
   "rank": null,
-  "notable": "'Queen of the Garhwal' towering 3,474 m above Badrinath.",
+  "notable": "'Queen of the Garhwal' (Smythe, 1931): the snow pyramid behind Badrinath temple, about 10 km to its west.",
   "sources": [
    "https://en.wikipedia.org/wiki/Nilkantha_(mountain)",
+   "https://www.himalayanclub.org/hj/45/21/climbs-of-indo-tibet-border-police/",
+   "https://www.himalayanclub.org/hj/57/6/nilkanth-west-ridge/",
+   "https://forestonline.uk.gov.in/nilkantha",
    "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
   ]
  },
@@ -3028,6 +3033,43 @@
   ]
  },
  {
+  "id": "papsura",
+  "name": "Papsura",
+  "alt": [
+   "Peak of Evil"
+  ],
+  "m": 6451,
+  "ft": 21165,
+  "m_alt": [
+   6440,
+   6456,
+   6461
+  ],
+  "band": "6000",
+  "state": "himachal-pradesh",
+  "state_label": "Himachal Pradesh",
+  "where": "Himachal Pradesh",
+  "range": "Great Himalaya (Kullu–Lahaul divide)",
+  "area": "Kullu",
+  "fa": 1967,
+  "fa_by": "Geoffrey Hill & Colin Pritchard (Robert Pettigrew's British expedition), 3 Jun 1967, south-face couloir",
+  "status": "climbed",
+  "status_note": "",
+  "grade": "technical",
+  "grade_note": "Avalanche-prone south-face couloirs, an icefall and steep rock high on the peak",
+  "season": "May–Jun & Sep",
+  "base": "Bhuntar → Manikaran → Barshaini → Tosh → Tos glacier (Kuta Thach base camp ~4,260 m)",
+  "foreigners": "yes",
+  "rank": null,
+  "notable": "Local belief pairs it with Dharamsura, the 'Peak of Good': whichever looks higher shows whether evil or good prevails. A government list gives 6,440 m. First ski descent (west couloir) 2017.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/28/15/papsura-climbed/",
+   "https://himalayanclub.org/hj/31/28/papsura-1971",
+   "https://publications.americanalpineclub.org/articles/13201214725",
+   "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"
+  ]
+ },
+ {
   "id": "meru-north",
   "name": "Meru North",
   "alt": [],
@@ -3060,6 +3102,41 @@
    "https://publications.americanalpineclub.org/articles/12198225200",
    "https://publications.americanalpineclub.org/articles/12198726402/Asia-India-Garhwal-Meru-North",
    "https://explorersweb.com/indian-expedition-targets-unclimbed-east-ridge-of-meru/"
+  ]
+ },
+ {
+  "id": "dharamsura",
+  "name": "Dharamsura",
+  "alt": [
+   "White Sail",
+   "Dharansura"
+  ],
+  "m": 6446,
+  "ft": 21148,
+  "m_alt": [
+   6420
+  ],
+  "band": "6000",
+  "state": "himachal-pradesh",
+  "state_label": "Himachal Pradesh",
+  "where": "Himachal Pradesh",
+  "range": "Great Himalaya (Kullu–Lahaul divide)",
+  "area": "Kullu",
+  "fa": 1941,
+  "fa_by": "J.O.M. Roberts' party (SSE ridge)",
+  "status": "climbed",
+  "status_note": "",
+  "grade": "technical",
+  "grade_note": "Glaciated twin of Papsura; SW ridge climbed in 1977 (UIAA V+/VI)",
+  "season": "May–Jun & Sep",
+  "base": "Barshaini → Tosh → Tos glacier",
+  "foreigners": "yes",
+  "rank": null,
+  "notable": "Called the 'Peak of Good' opposite Papsura; a government list gives 6,420 m.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/28/15/papsura-climbed/",
+   "https://publications.americanalpineclub.org/articles/12197860602/Asia-India-Himachal-Pradesh-Dharamsura-White-Sail-Southwest-Ridge-P-20300-and-Papsura-Southwest-Ridge-Kulu",
+   "https://publications.americanalpineclub.org/articles/13201214725"
   ]
  },
  {
