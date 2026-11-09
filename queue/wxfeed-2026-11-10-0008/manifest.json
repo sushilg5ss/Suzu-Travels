@@ -1,0 +1,16 @@
+{
+ "id": "wxfeed-2026-11-10-0008",
+ "agent": "Suzu Ranking (Claude)",
+ "summary": "Weather feed: add Pauri, Khirsu, Kotdwar",
+ "files": [
+  {
+   "target": "suzu-weather-feed.json",
+   "source": "suzu-weather-feed.json",
+   "sha256": "47f376265ebb2dbf522ae2c83e6279f68135266b6bf51ca77b71b75aec798e31",
+   "base_sha256": "d7e37786e3b612756c3792b915fbfa668a251a95c53a85c40a43049cb5534142",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-weather-feed.json",
+   "bytes": 73863
+  }
+ ]
+}
