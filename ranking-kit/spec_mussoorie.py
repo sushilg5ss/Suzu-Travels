@@ -35,7 +35,7 @@ SPEC = dict(
             ["February", "Possible", "Likely in a cold year", "Fewer crowds"],
             ["March", "Uncommon", "Possible early in the month", "Spring begins"],
         ]), after=[
-            "Going in December? See our <a href=\"/mussoorie-in-december/\">Mussoorie in December</a> guide for weather, Winterline sunsets and what is open.",
+            "Going in December? See our <a href=\"/mussoorie-in-december/\">Mussoorie in December</a> guide for weather, Winterline sunsets and what is open. Month-by-month IMD averages and the live forecast: <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
         ]),
     ],
     snow=dict(summary=True, ids=["auli", "kufri", "narkanda", "shimla", "solang", "gulmarg"], h2="Where is it snowing in the hills this week?",
