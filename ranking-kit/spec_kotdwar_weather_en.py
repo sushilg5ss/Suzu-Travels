@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Kotdwar, Lansdowne and Pauri, month-by-month temperatures and rain, and what the weather means for the drive into the Garhwal hills.",
     chips=[("~400 m", "Kotdwar"), ("~40 km", "to Lansdowne"), ("~38 °C", "May afternoons"), ("Live", "3 places")],
     flakes=False,
+    alt_lang=("/kotdwar-ka-mausam/", "हिंदी में पढ़ें: कोटद्वार का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am travelling via Kotdwar. Dates: ___ , people: ___ , going to: ___",
     cta2=("#weather", "See today's weather"),
