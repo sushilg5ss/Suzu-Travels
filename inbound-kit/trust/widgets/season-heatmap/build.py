@@ -6,12 +6,12 @@ Months not covered by a source are 'possible — ask us' (never 'avoid' without 
 dated advisory line. Inline JS: no ampersand, no double slash; works with JS off (full grid, toolbar hidden)."""
 import os, json
 
-B, S, M, O = 'b', 's', 'm', 'o'   # best / snow season / monsoon / possible — ask us
+B, S, M, O, C = 'b', 's', 'm', 'o', 'c'   # best / snow season / monsoon / possible — ask us / temples closed (Char Dham only)
 MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 FULL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-def row(best=(), snow=(), mon=()):
-    return ''.join(B if m in best else S if m in snow else M if m in mon else O for m in range(1, 13))
+def row(best=(), snow=(), mon=(), closed=()):
+    return ''.join(B if m in best else S if m in snow else M if m in mon else C if m in closed else O for m in range(1, 13))
 
 ROWS = [
  ('Delhi · Agra · Jaipur', 'Golden Triangle plains', row(best=(10, 11, 12, 1, 2, 3), mon=(7, 8, 9)),
@@ -22,6 +22,9 @@ ROWS = [
   'Our planning experience — we found no official season for Amritsar.'),
  ('Rishikesh · Haridwar', 'Yoga and the Ganga', row(best=(10, 11, 12, 1, 2, 3, 4), mon=(7, 8)),
   'International Yoga Festival each February–March. Rafting usually pauses in July and August.'),
+ ('Char Dham', 'Uttarakhand temples', row(best=(5, 6, 9, 10), mon=(7, 8), closed=(12, 1, 2, 3)),
+  'The four temples usually open in late April or May and close in October or November; the temple committees announce the dates each year — '
+  'confirm before travel. July–August brings monsoon landslides. See <a href="/char-dham-yatra-for-nri/">our Char Dham Yatra page</a>.'),
  ('Shimla · Dharamshala', 'Himachal hills', row(best=(3, 4, 5, 6, 9, 10, 11), snow=(12, 1, 2), mon=(7, 8)),
   'Winter snowfall is common in Dharamshala. Our home region — our own team plans it.'),
  ('Manali', 'Himachal high valley', row(best=(3, 4, 5, 6, 9, 10, 11), snow=(12, 1, 2), mon=(7, 8)),
@@ -36,9 +39,9 @@ ROWS = [
 KASHMIR = ('The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says '
            '‘Do not travel’ to J&amp;K except eastern Ladakh and Leh (advice checked 19 Oct 2026). Check the latest before you book.')
 SRC = ('Sources: IMD monsoon normals; tajmahal.gov.in; Incredible India (Varanasi, Dharamshala, Leh); HP Tourism (Manali); '
-       'Kerala Tourism; Govt of Goa and Goa Tourism; UK FCDO (updated 7 Oct 2026); US State Department. Checked 17–20 Oct 2026. '
+       'Kerala Tourism; Govt of Goa and Goa Tourism; Char Dham: our Char Dham Yatra page (temple dates announced each year); UK FCDO (updated 7 Oct 2026); US State Department. Checked 17–20 Oct 2026. '
        'Weather varies year to year — confirm before travel.')
-LBL = {B: 'Best', S: 'Snow season', M: 'Monsoon', O: 'Possible — ask us'}
+LBL = {B: 'Best', S: 'Snow season', M: 'Monsoon', O: 'Possible — ask us', C: 'Temples closed'}
 WA = 'https://wa.me/917087488961?text='
 WA_DEFAULT = 'Hello%20Suzu%20Travels%2C%20I%20would%20like%20help%20choosing%20the%20best%20months%20for%20my%20India%20trip.'
 
@@ -59,7 +62,7 @@ CSS = (".szt-sh{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe U
        ".szt-sh tbody th{text-align:left;padding:6px 8px 6px 6px;min-width:150px;position:sticky;left:0;background:#fff;z-index:1;font-size:13.5px;line-height:1.25}"
        ".szt-sh tbody th small{display:block;font-weight:500;color:#6B776E;font-size:11.5px}"
        ".szt-sh tbody td{height:30px;border-radius:7px;font-size:11px;font-weight:800;line-height:30px}"
-       ".szt-sh td.b,.szt-sh-leg .b{background:#E2C158;color:#3d2e00}.szt-sh td.s,.szt-sh-leg .s{background:#C9D8E8;color:#1d3550}.szt-sh td.m,.szt-sh-leg .m{background:#8F9C94;color:#fff}.szt-sh td.o,.szt-sh-leg .o{background:#F4EEDD;color:#8a826c}"
+       ".szt-sh td.b,.szt-sh-leg .b{background:#E2C158;color:#3d2e00}.szt-sh td.s,.szt-sh-leg .s{background:#C9D8E8;color:#1d3550}.szt-sh td.m,.szt-sh-leg .m{background:#8F9C94;color:#fff}.szt-sh td.o,.szt-sh-leg .o{background:#F4EEDD;color:#8a826c}.szt-sh td.c,.szt-sh-leg .c{background:#E4DFD3;color:#5f5a4c}"
        ".szt-sh td.on,.szt-sh thead th.on{box-shadow:inset 0 0 0 2px #0E1B14}.szt-sh thead th.on{border-radius:7px;color:#0E1B14}"
        ".szt-sh-k td{padding:8px 6px!important;text-align:left!important;font-size:12.5px;line-height:1.45;color:#46524A;background:#FBF8EF!important;border-radius:8px}"
        ".szt-sh-leg{display:flex;flex-wrap:wrap;gap:8px 16px;margin:12px 0 0;padding:0;list-style:none;font-size:13px;color:#46524A}"
@@ -71,7 +74,7 @@ CSS = (".szt-sh{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe U
        "@media(max-width:700px){.szt-sh-notes{grid-template-columns:1fr}.szt-sh tbody th{min-width:118px;font-size:12.5px}.szt-sh table{min-width:560px}.szt-sh-bar button{min-width:0;flex:1 0 14%;padding:8px 4px}}")
 
 def cell(c, m):
-    return '<td class="%s" data-m="%d" title="%s">%s</td>' % (c, m, LBL[c], {B: '\u2605', S: '\u2744', M: '\u2614', O: '\u00b7'}[c])
+    return '<td class="%s" data-m="%d" title="%s">%s</td>' % (c, m, LBL[c], {B: '\u2605', S: '\u2744', M: '\u2614', O: '\u00b7', C: '\u2715'}[c])
 
 def html():
     head = '<thead><tr><th scope="col"><span class="szt-sh-vh">Region</span></th>' + ''.join(
@@ -85,18 +88,18 @@ def html():
     summ = ('<div class="szt-sh-sum" id="szt-sh-sum" aria-live="polite" hidden></div>'
             '<a id="szt-sh-wa" hidden href="' + WA + WA_DEFAULT + '" target="_blank" rel="noopener" data-base="' + WA + '">Plan my trip on WhatsApp</a>')
     leg = ('<ul class="szt-sh-leg"><li><i class="b"></i>★ Best months</li><li><i class="s"></i>❄ Snow season (Himalaya)</li>'
-           '<li><i class="m"></i>☔ Monsoon rain</li><li><i class="o"></i>Possible — ask us</li></ul>')
+           '<li><i class="m"></i>☔ Monsoon rain</li><li><i class="c"></i>✕ Temples closed (Char Dham)</li><li><i class="o"></i>Possible — ask us</li></ul>')
     notes = '<ul class="szt-sh-notes">' + ''.join('<li><b>%s:</b> %s</li>' % (n, t) for n, _, _, t in ROWS) + '<li><b>Kashmir:</b> ' + KASHMIR + '</li></ul>'
     data = json.dumps({n: r for n, _, r, _ in ROWS}, ensure_ascii=False, separators=(',', ':'))
     js = ('<script>(function(){var D=' + data + ';var F=' + json.dumps(FULL, separators=(',', ':')) + ';'
-          'var L={b:"Best",s:"Snow season",m:"Monsoon",o:"Possible — ask us"};'
+          'var L={b:"Best",s:"Snow season",m:"Monsoon",o:"Possible — ask us",c:"Temples closed"};'
           'var R=document.getElementById("szt-season");if(!R){return;}'
           'var bar=R.querySelector(".szt-sh-bar"),sum=document.getElementById("szt-sh-sum"),wa=document.getElementById("szt-sh-wa");'
           'if(!bar){return;}if(!sum){return;}'
           'function pick(m){var bs=bar.querySelectorAll("button");for(var i=0;i<bs.length;i++){bs[i].setAttribute("aria-pressed",String(i===m));}'
           'var cs=R.querySelectorAll("[data-m]");for(var j=0;j<cs.length;j++){if(cs[j].tagName!=="BUTTON"){cs[j].classList.toggle("on",cs[j].getAttribute("data-m")===String(m));}}'
-          'var g={b:[],s:[],m:[],o:[]};for(var k in D){if(D.hasOwnProperty(k)){g[D[k].charAt(m)].push(k);}}'
-          'sum.textContent="";var hd=document.createElement("strong");hd.textContent=F[m]+" in India";sum.appendChild(hd);var o=["b","s","m","o"];'
+          'var g={b:[],s:[],m:[],c:[],o:[]};for(var k in D){if(D.hasOwnProperty(k)){g[D[k].charAt(m)].push(k);}}'
+          'sum.textContent="";var hd=document.createElement("strong");hd.textContent=F[m]+" in India";sum.appendChild(hd);var o=["b","s","m","c","o"];'
           'for(var x=0;x<o.length;x++){if(g[o[x]].length){var dv=document.createElement("div"),bb=document.createElement("b");bb.textContent=L[o[x]]+": ";dv.appendChild(bb);dv.appendChild(document.createTextNode(g[o[x]].join(", ")));sum.appendChild(dv);}}'
           'if(wa){var t="Hello Suzu Travels, I am thinking of travelling to India in "+F[m]+". Best for that month on your chart: "+(g.b.join(", ")||"none")+". Can you suggest a plan?";'
           'wa.href=wa.getAttribute("data-base")+encodeURIComponent(t);wa.textContent="Plan a "+F[m]+" trip on WhatsApp";sum.appendChild(wa);wa.hidden=false;}}'
