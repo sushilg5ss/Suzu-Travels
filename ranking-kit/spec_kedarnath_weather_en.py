@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Kedarnath, Gaurikund and Joshimath, approximate month-by-month temperatures, winter snow, and when the temple opens and closes.",
     chips=[("~3,583 m", "Kedarnath"), ("11 Nov 2026", "doors close"), ("~16 km", "trek from Gaurikund"), ("Live", "3 places")],
     flakes=True,
+    alt_lang=("/kedarnath-ka-mausam/", "हिंदी में पढ़ें: केदारनाथ का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning the Kedarnath yatra. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),

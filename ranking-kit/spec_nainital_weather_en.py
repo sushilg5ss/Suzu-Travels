@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Live temperature and a five-day forecast for Nainital, Bhimtal and Mukteshwar, month-by-month temperatures and rain from the India Meteorological Department, when it snows, and the best time to go.",
     chips=[("~2,084 m", "Nainital"), ("11° / 2 °C", "January avg"), ("Jan–Feb", "snow chance"), ("Live", "3 places")],
     flakes=True,
+    alt_lang=("/nainital-ka-mausam/", "हिंदी में पढ़ें: नैनीताल का मौसम"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Nainital. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "See today's weather"),
