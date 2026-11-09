@@ -53,7 +53,7 @@ SPEC = dict(
             ["November", "20.0° / 7.3 °C", "6 mm", "Driest; crisp days"],
             ["December", "17.1° / 4.5 °C", "20 mm", "Cool, sunny days, cold nights"],
         ]), after=[
-            "Tehri IMD normals (1991–2020) shown as a reference for Lansdowne. Nearby: <a href=\"/rishikesh-weather/\">Rishikesh weather</a> · <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
+            "Tehri IMD normals (1991–2020) shown as a reference for Lansdowne. Nearby: <a href=\"/kotdwar-weather/\">Kotdwar weather</a> · <a href=\"/pauri-weather/\">Pauri weather</a> · <a href=\"/rishikesh-weather/\">Rishikesh weather</a> · <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
         ]),
         dict(id="season", kicker="Fog, snow and views", h2="Does it snow in Lansdowne?", fig=True, ps=[
             "Only rarely. Lansdowne is lower than Mussoorie or Nainital, and in most winters it sees frost and cold, clear days rather than snow; a light snowfall comes on some winters, usually in January, and seldom lasts. For more reliable snow within reach of Delhi, look at <a href=\"/dhanaulti-weather/\">Dhanaulti</a> or <a href=\"/chopta-weather/\">Chopta</a>.",
