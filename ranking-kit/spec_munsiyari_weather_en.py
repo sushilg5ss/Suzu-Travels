@@ -53,7 +53,7 @@ SPEC = dict(
             ["November", "17.2° / 6.1 °C", "8 mm", "Driest; sharp mountain views"],
             ["December", "14.4° / 3.6 °C", "18 mm", "Cold; first snow"],
         ]), after=[
-            "Mukteshwar IMD normals (1991–2020) shown as a reference for Munsiyari; Munsiyari's own rainfall is higher. Nearby: <a href=\"/nainital-weather/\">Nainital weather</a>.",
+            "Mukteshwar IMD normals (1991–2020) shown as a reference for Munsiyari; Munsiyari's own rainfall is higher. Nearby: <a href=\"/pithoragarh-weather/\">Pithoragarh weather</a> · <a href=\"/nainital-weather/\">Nainital weather</a>.",
         ]),
         dict(id="panchachuli", kicker="Panchachuli and Khaliya Top", h2="Panchachuli views, Khaliya Top and snow", fig=True, ps=[
             "The <b>Panchachuli</b> peaks rise straight across the valley from Munsiyari, and their sunrise and sunset glow is the reason most people come. They are clearest from <b>October to early December</b> and on crisp mornings in spring; from July to September they are usually hidden in cloud.",
