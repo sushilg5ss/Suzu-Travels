@@ -123,6 +123,11 @@ MORE = [
     ("nako", "Nako", "नाको", "Himachal", 31.8810, 78.6270, 3660, "spiti-in-winter/"),
     ("hanle", "Hanle", "हानले", "Ladakh", 32.7794, 78.9763, 4500, "weather/leh/"),
     ("padum", "Padum (Zanskar)", "पदुम", "Ladakh", 33.4667, 76.8833, 3657, "weather/leh/"),
+    ("gangotri", "Gangotri", "गंगोत्री", "Uttarakhand", 30.9947, 78.9398, 3100, "gangotri-weather/"),
+    ("harsil", "Harsil", "हर्षिल", "Uttarakhand", 31.0386, 78.7400, 2620, "gangotri-weather/"),
+    ("uttarkashi", "Uttarkashi", "उत्तरकाशी", "Uttarakhand", 30.7268, 78.4354, 1158, "gangotri-weather/"),
+    ("yamunotri", "Yamunotri", "यमुनोत्री", "Uttarakhand", 31.0141, 78.4600, 3290, "yamunotri-weather/"),
+    ("barkot", "Barkot", "बड़कोट", "Uttarakhand", 30.8094, 78.2056, 1220, "yamunotri-weather/"),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
