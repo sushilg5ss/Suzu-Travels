@@ -1,0 +1,92 @@
+A = "auli-snowfall"
+J = "joshimath-weather"
+C = "chopta-weather"
+SPEC = dict(
+    lang="en",
+    slug="auli-in-january",
+    title="Auli in January 2027: Snow, Skiing, Weather and How to Get There",
+    seo_title="Auli in January 2027: Snow, Skiing & Weather Guide",
+    seo_desc="Auli in January: the most reliable month for snow, the start of the ski season, how cold it gets, the 16 km road from Joshimath (the cable car is closed), packing tips and a live snow forecast.",
+    focus="auli in january",
+    photo_pick=dict(slugs=[A, J, C], ids=[
+        (A + ":hero-1", "hero", "Auli under snow", "Auli's slopes under deep winter snow"),
+        (A + ":g-6", "fig", "The mountains around Auli", "The snow mountains around Auli in winter"),
+        (A + ":g-3", "g", "Snow on the Auli slopes", "Skiers' slopes at Auli covered in snow"),
+        (A + ":g-4", "g", "Himalayan peaks from Auli", "Snow peaks seen from Auli"),
+        (A + ":g-5", "g", "A temple in deep snow", "A small temple in deep snow at Auli"),
+        (J + ":g-3", "g", "Joshimath and the peaks", "Joshimath town below the Garhwal peaks"),
+        (J + ":hero-1", "g", "Garhwal peaks from Joshimath", "The Garhwal peaks above Joshimath"),
+        (J + ":g-5", "g", "Evening light on the peaks", "Evening light on the peaks above Joshimath"),
+        (C + ":g-1", "g", "Tungnath in winter", "Snow on the way to Tungnath on a winter morning"),
+    ]),
+    kicker="Auli · Joshimath · Chamoli · January 2027",
+    tag="Auli in January: deep snow and the start of the ski season",
+    sub="How much snow to expect, how cold it gets, skiing, the road up from Joshimath and what to pack — with a live forecast for Auli and Joshimath.",
+    chips=[("~2,500–3,050 m", "Auli slopes"), ("Most reliable", "month for snow"), ("16 km", "road from Joshimath"), ("Closed", "cable car since Jan 2023")],
+    flakes=True,
+    updated="November 2026",
+    wa="Hello Suzu Travels, I am planning Auli in January. Dates: ___ , people: ___ , starting from: ___",
+    cta2=("#weather", "See the snow forecast"),
+    answer="<b>January is the most reliable month for snow in Auli, and the ski season usually starts once the base is deep enough.</b> The slopes, at about 2,500–3,050 m above Joshimath, are normally white from late December; nights fall well below freezing, and days hover around freezing to a few degrees above. Last winter Auli had <b>heavy snowfall on 23 January 2026</b>, which closed the Joshimath–Auli road for a time. The <b>Joshimath–Auli cable car has been closed since January 2023</b>, so you reach Auli by the 16 km road from Joshimath. Book early for weekends and keep a spare day for the road.",
+    quick=[
+        ("Snow", "Most reliable month; deep snow builds through January."),
+        ("Skiing", "Usually from January, once the base is deep enough."),
+        ("Temperature", "Nights well below freezing; Joshimath below averages 11° / 2 °C (IMD)."),
+        ("Getting up", "16 km by road from Joshimath; the cable car is closed."),
+        ("After heavy snow", "The Joshimath–Auli road can close until cleared."),
+    ],
+    wx=dict(src="/suzu-weather-feed.json", daily=True, kicker="Live forecast", h2="Auli, Joshimath and Chopta weather today",
+            lead="Auli (about 2,800 m), Joshimath (about 1,875 m) below it, and Chopta (about 2,680 m) for comparison — current temperature and the next days' high, low and snow.",
+            places=[dict(id="auli", name="Auli", alt="2800"), dict(id="joshimath", name="Joshimath", alt="1875"), dict(id="chopta", name="Chopta", alt="2680")]),
+    sections=[
+        dict(id="weather", kicker="January weather", h2="What is the weather like in Auli in January?", fig=True, ps=[
+            "There are no published IMD averages for Auli. <b>Joshimath</b>, 16 km below at about 1,875 m, averages <b>11.0 °C by day and 2.0 °C at night</b> in January (IMD 1971–2000); Auli, roughly 1,000 m higher, is usually about 6 °C colder — so expect <b>days around 3–6 °C and nights of −4 °C or lower</b>, colder in wind and after fresh snow. These are estimates; use the live forecast above for your dates.",
+            "Western disturbances bring the heavy falls: a single spell can add a good depth of snow in a day or two, followed by clear, very cold days with sharp views of Nanda Devi, Dronagiri and the Garhwal peaks.",
+        ], table=(["Month", "Snow on the slopes", "Skiing", "What to expect"], [
+            ["December", "Snow usually arrives late in the month", "Rarely", "Christmas–New Year visitors; cold nights"],
+            ["January", "Most reliable month", "Yes, once the base builds", "Coldest; the road can shut after heavy snow"],
+            ["February", "Deep snow most years", "Peak season", "Best month for ski courses"],
+        ]), after=[
+            "Snow guide: <a href=\"/auli-snowfall/\">Auli snowfall 2026-27</a> · December: <a href=\"/auli-in-december/\">Auli in December</a> · monthly weather: <a href=\"/weather/auli/\">Auli weather</a> · base town: <a href=\"/joshimath-weather/\">Joshimath weather</a>.",
+        ]),
+    ],
+    gallery=dict(h2="Auli in the snow", lead="Auli's snow slopes, the peaks above them and the Garhwal range from Joshimath — real photographs, each credited to its photographer."),
+    spots=dict(kicker="What to do", h2="Things to do in Auli in January", lead="On the slopes and around them.", items=[
+        ("Ski slopes", "~2,500–3,000 m", "Snow play, beginner lessons and longer runs at the National Skiing Centre once the base is deep enough."),
+        ("The chairlift", "Upper Auli", "An 800 m chairlift on the slopes, separate from the closed cable car — confirm it is running on the day."),
+        ("Gorson Bugyal", "About 3 km walk from upper Auli", "A high meadow with wide snow-peak views; deep snow in mid-winter, so go with a local guide."),
+        ("Auli artificial lake", "Upper Auli", "Built to feed snow-making on the slopes; frozen or snow-covered in January."),
+        ("Joshimath", "~1,875 m · 16 km below", "The base town for hotels, food and supplies; the Narsingh temple is here."),
+        ("Chopta–Tungnath", "A long day's drive away", "Another snow destination for a longer winter trip. <a href=\"/chopta-in-winter/\">Chopta in winter →</a>"),
+    ]),
+    sections2=[
+        dict(id="plan", kicker="Plan your trip", h2="Auli in January: getting there, roads and packing", ps=[
+            "<b>Getting there:</b> most travellers drive from Delhi, Dehradun, Haridwar or Rishikesh to Joshimath along the Alaknanda valley — a long mountain day of roughly 250 km from Rishikesh — then up the 16 km road to Auli. Break the journey in Rudraprayag or Joshimath.",
+            "<b>Roads:</b> after heavy snow the Joshimath–Auli road can close until it is cleared, and the highway below can be slow; travel in daylight with a driver used to winter roads, and keep a spare day.",
+            "<b>Cable car:</b> the Joshimath–Auli cable car has been closed since January 2023 and remained closed in 2026, so plan on the road.",
+            "<b>Packing:</b> thermals, a down jacket, waterproof gloves, a cap, sunglasses and snow boots. Nights at Auli fall well below freezing in January.",
+        ]),
+    ],
+    ctas=dict(h2="Our Uttarakhand snow trips", lead="Hotels in Joshimath or Auli, meals and a private car with a winter-road driver, in one quote.", items=[
+        ("/uttarakhand-winter-packages-travel-agents/", "Uttarakhand in winter", "Snow trips for 2026–27.", "Winter"),
+        ("/auli-snowfall/", "Auli snowfall 2026-27", "When it snows and the best snow spots.", "Snow"),
+        ("/uttarakhand-snowfall/", "Uttarakhand snowfall", "Every snow place in the state.", "Snow"),
+        ("/snow-tracker/", "Live snow tracker", "Where snow is in the forecast this week.", "Live"),
+    ]),
+    quote_h2="Planning Auli in January?",
+    quote_text="Tell us your dates, where you are starting from and how many of you are travelling. We watch the forecast and the road, and send one written quote with hotels in Joshimath or Auli, meals and a private car. Suzu Travels is a travel agent registered with HP Tourism, based in Bilaspur, Himachal Pradesh, and plans trips across north India.",
+    faq_h2="Auli in January: frequently asked questions",
+    faqs=[
+        ("Is there snow in Auli in January?", "Yes, in a normal winter — January is the most reliable month for snow on the Auli slopes."),
+        ("Can I ski in Auli in January?", "Usually yes, once the snow base is deep enough; lessons and equipment hire are available in season."),
+        ("How cold is Auli in January?", "Nights fall well below freezing and days hover around 3–6 °C (an estimate from Joshimath's IMD normals); colder after fresh snow."),
+        ("Is the Auli cable car open?", "No — the Joshimath–Auli cable car has been closed since January 2023 and remained closed in 2026. The 16 km road from Joshimath is the way up."),
+        ("Can the road to Auli close in January?", "Yes, after heavy snow, until it is cleared — keep a spare day."),
+        ("When did Auli last get heavy snow?", "On 23 January 2026, when heavy snowfall closed the Joshimath–Auli road for a time."),
+    ],
+    sources=[
+        ("India Meteorological Department — Joshimath normals 1971–2000 (used to estimate Auli)", "https://mausam.imd.gov.in/"),
+        ("The Week (PTI): Uttarakhand sees first snowfall of 2026 — 24 Jan 2026", "https://www.theweek.in/wire-updates/national/2026/01/24/uttarakhand-sees-first-snowfall-of-2026-thick-blanket-of-snow-covers-high-altitude-areas.html"),
+        ("MET Norway Locationforecast (CC BY 4.0) — live forecast data", "https://api.met.no/"),
+    ],
+)

@@ -56,12 +56,12 @@ SPEC = dict(
             ["February", "Deep snow", "Possible; likely in a cold year", "Fewer crowds; Auli ski season"],
             ["March", "Snow on the ground; melting late", "Uncommon", "Spring begins lower down"],
         ]), after=[
-            "Live temperatures for every Uttarakhand hill station: <a href=\"/uttarakhand-weather/\">Uttarakhand weather</a>. Across Himachal, Kashmir and Uttarakhand: <a href=\"/snow-tracker/\">live snow tracker</a>. Planning a December trip? <a href=\"/uttarakhand-in-december/\">Uttarakhand in December</a>.",
+            "Live temperatures for every Uttarakhand hill station: <a href=\"/uttarakhand-weather/\">Uttarakhand weather</a>. Across Himachal, Kashmir and Uttarakhand: <a href=\"/snow-tracker/\">live snow tracker</a>. Month guides: <a href=\"/uttarakhand-in-december/\">Uttarakhand in December</a> · <a href=\"/auli-in-january/\">Auli in January</a> · <a href=\"/mussoorie-in-january/\">Mussoorie in January</a> · <a href=\"/nainital-in-january/\">Nainital in January</a>.",
         ]),
     ],
     gallery=dict(h2="Uttarakhand in the snow", lead="Auli, Mussoorie, Dhanaulti, Tungnath and the Kedarkantha trail — real photographs, each credited to its photographer."),
     spots=dict(kicker="Where to see snow", h2="Best snowfall places in Uttarakhand", lead="From the surest snow to the easiest trip from Delhi.", items=[
-        ("Auli", "Chamoli · ~2,500–3,050 m", "Uttarakhand's ski slopes, with a ropeway from Joshimath; the surest snow from late December to March. <a href=\"/auli-snowfall/\">Auli snowfall →</a>"),
+        ("Auli", "Chamoli · ~2,500–3,050 m", "Uttarakhand's ski slopes, 16 km by road above Joshimath (the cable car has been closed since January 2023); the surest snow from late December to March. <a href=\"/auli-snowfall/\">Auli snowfall →</a>"),
         ("Chopta–Tungnath", "Rudraprayag · ~2,680 m", "Snowbound meadows and the walk towards Tungnath; the road can close beyond Chopta after heavy snow. <a href=\"/chopta-in-winter/\">Chopta in winter →</a>"),
         ("Kedarkantha trek", "Uttarkashi · ~3,800 m summit", "India's best-known winter snow trek, from Sankri; snow on the trail from December to March. <a href=\"/kedarkantha-weather/\">Kedarkantha weather →</a>"),
         ("Harsil", "Uttarkashi · ~2,620 m", "A quiet apple valley on the Bhagirathi that turns white in January. <a href=\"/harsil-weather/\">Harsil weather →</a>"),
@@ -80,7 +80,7 @@ SPEC = dict(
     ],
     ctas=dict(h2="Our Uttarakhand snow trips", lead="Hotels, meals and a private car in one quote.", items=[
         ("/uttarakhand-winter-packages-travel-agents/", "Uttarakhand in winter", "Snow trips for 2026–27.", "Winter"),
-        ("/auli-in-december/", "Auli in December", "Ski slopes, the ropeway and what to expect.", "Auli"),
+        ("/auli-in-december/", "Auli in December", "Ski slopes, snow odds and what to expect.", "Auli"),
         ("/uttarakhand/", "Uttarakhand tour packages", "Nainital, Corbett, Rishikesh and Mussoorie.", "Uttarakhand"),
         ("/snow-tracker/", "Live snow tracker", "Where snow is in the forecast this week.", "Live"),
     ]),
@@ -90,7 +90,7 @@ SPEC = dict(
     faqs=[
         ("When does it snow in Uttarakhand?", "In the hill stations, usually between late December and February, with January the most likely month. The high places — Auli, Chopta, Harsil, Kedarkantha — get snow from December to March."),
         ("Has it snowed in Uttarakhand this season?", "Yes, on the heights: Kedarnath had its first heavy snow at the end of October 2026 and Badrinath had fresh snow on 1–2 November. The hill stations usually get their first snow later, in December or January."),
-        ("Which is the best place to see snow in Uttarakhand?", "Auli is the surest, with ski slopes and a ropeway; Chopta–Tungnath and the Kedarkantha trek are also reliable from late December to March."),
+        ("Which is the best place to see snow in Uttarakhand?", "Auli is the surest, with its ski slopes 16 km by road above Joshimath; Chopta–Tungnath and the Kedarkantha trek are also reliable from late December to March."),
         ("Where can I see snow near Delhi in Uttarakhand?", "Dhanaulti and Mussoorie's Landour and Lal Tibba, about 7–8 hours' drive from Delhi, give the best chance in January–February."),
         ("Does it snow in Nainital?", "Only on a few days in some winters, usually in January; Mukteshwar, about 50 km away, gets snow more often."),
         ("When did it last snow in Mussoorie?", "Last season the first snow reached Mussoorie, Dhanaulti, Chakrata, Auli and Munsiyari on 23 January 2026."),

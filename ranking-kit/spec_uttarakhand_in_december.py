@@ -65,7 +65,7 @@ SPEC = dict(
     ],
     gallery=dict(h2="Uttarakhand in winter", lead="Auli, Mussoorie, Nainital, Rishikesh, Corbett and the Kedarkantha trail — real photographs, each credited to its photographer."),
     spots=dict(kicker="Where to go", h2="Best places to visit in Uttarakhand in December", lead="From snow slopes to a mild river town.", items=[
-        ("Auli", "Snow and skiing · ~2,500–3,050 m", "The surest snow in Uttarakhand, with the ropeway from Joshimath. <a href=\"/auli-in-december/\">Auli in December →</a>"),
+        ("Auli", "Snow and skiing · ~2,500–3,050 m", "The surest snow in Uttarakhand, 16 km by road above Joshimath; the cable car has been closed since January 2023. <a href=\"/auli-in-december/\">Auli in December →</a>"),
         ("Mussoorie and Landour", "Hill station · ~2,000 m", "Cold, sunny days and Winterline sunsets; snow possible late in the month. <a href=\"/mussoorie-in-december/\">Mussoorie in December →</a>"),
         ("Nainital", "Lake town · ~2,084 m", "Crisp days, clear Himalayan views from Snow View and Tiffin Top. <a href=\"/nainital-in-december/\">Nainital in December →</a>"),
         ("Rishikesh", "River town · ~340 m", "The mildest choice: Ganga aarti, yoga and day-time walks by the river. <a href=\"/rishikesh-in-december/\">Rishikesh in December →</a>"),
@@ -79,7 +79,7 @@ SPEC = dict(
             "<b>Crowds:</b> the first half of December is quiet. From about Christmas to New Year, Mussoorie, Nainital, Dhanaulti and Auli fill up, hotels sell out and traffic queues build on the hill roads — book early and travel up on weekdays where you can.",
             "<b>Roads:</b> after a snow spell, roads to Auli, Chopta, Dhanaulti and Munsiyari can close for hours. Travel in daylight with a driver used to hill roads and keep a spare day. On the plains, morning fog can delay trains to Dehradun, Haridwar and Kathgodam late in the month.",
             "<b>Packing:</b> a padded jacket, thermals, gloves and a cap for the hill stations; proper winter boots for Auli, Chopta and Kedarkantha; a warm layer even for Rishikesh evenings.",
-            "<b>Shrines:</b> the Char Dham temples are closed for winter — see <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a>. For Himachal or Kashmir instead: <a href=\"/himachal-in-december/\">Himachal in December</a> · <a href=\"/kashmir-in-december/\">Kashmir in December</a>.",
+            "<b>Shrines:</b> the Char Dham temples are closed for winter — see <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a>. Going in January instead: <a href=\"/auli-in-january/\">Auli</a> · <a href=\"/mussoorie-in-january/\">Mussoorie</a> · <a href=\"/nainital-in-january/\">Nainital</a>. For Himachal or Kashmir instead: <a href=\"/himachal-in-december/\">Himachal in December</a> · <a href=\"/kashmir-in-december/\">Kashmir in December</a>.",
         ]),
     ],
     ctas=dict(h2="Our Uttarakhand trips", lead="Hotels, meals and a private car in one quote.", items=[

@@ -1,0 +1,92 @@
+M = "mussoorie-snowfall"
+W = "mussoorie-weather"
+D = "dhanaulti-weather"
+SPEC = dict(
+    lang="en",
+    slug="mussoorie-in-january",
+    title="Mussoorie in January 2027: Snow Chances, Weather and What to Do",
+    seo_title="Mussoorie in January 2027: Snow, Weather & Things to Do",
+    seo_desc="Mussoorie in January: IMD temperatures (about 10° / 3 °C), the best month for snow, where to find it — Landour, Lal Tibba, Dhanaulti, Surkanda Devi — road and packing tips, and a live forecast.",
+    focus="mussoorie in january",
+    photo_pick=dict(slugs=[M, W, D], ids=[
+        (W + ":hero-1", "hero", "The Mussoorie ridge in snow", "Mussoorie's ridge covered in winter snow"),
+        (M + ":fig-2", "fig", "A Mussoorie church after snowfall", "A church in Mussoorie after a snowfall"),
+        (M + ":g-3", "g", "Mussoorie rooftops in snow", "Snow on the rooftops of Mussoorie"),
+        (W + ":g-1", "g", "A church in the Mussoorie snow", "A church among snow-covered trees in Mussoorie"),
+        (M + ":g-5", "g", "Fresh snow in Mussoorie", "Fresh snow on a Mussoorie street"),
+        (W + ":g-2", "g", "The Himalaya at dusk", "The Himalayan peaks at dusk seen from Mussoorie"),
+        (D + ":g-7", "g", "Snow above Dhanaulti", "Snow on the hills above Dhanaulti"),
+        (M + ":g-6", "g", "Dusk over the Doon valley after snow", "Dusk over the Doon valley after a snowfall"),
+        (W + ":g-7", "g", "Deodars and snow peaks", "Deodar trees with the snow peaks behind"),
+    ]),
+    kicker="Mussoorie · Landour · Dhanaulti · January 2027",
+    tag="Mussoorie in January: the coldest month, and the best chance of snow",
+    sub="How cold it gets, how likely snow is, where to go when it falls, and how to plan the drive up — with a live forecast for Mussoorie, Dhanaulti and Dehradun.",
+    chips=[("10.3° / 2.8 °C", "January average (IMD)"), ("Most likely", "month for snow"), ("23 Jan 2026", "last season's first snow"), ("~35 km", "from Dehradun")],
+    flakes=True,
+    updated="November 2026",
+    wa="Hello Suzu Travels, I am planning Mussoorie in January. Dates: ___ , people: ___ , starting from: ___",
+    cta2=("#weather", "See today's weather"),
+    answer="<b>January is Mussoorie's coldest month and its best chance of snow.</b> Days average about <b>10 °C and nights about 3 °C</b> (IMD normals), with around four days of rain or snow in the month. Snow in town is likely at some point in most Januaries, but it cannot be pinned to a date: last season the first snow came on <b>23 January 2026</b>. Landour and Lal Tibba, a little higher, turn white first, and <b>Dhanaulti and Surkanda Devi</b> (about 25–35 km away) get snow more often. Outside the New Year week, January is quieter than December, but the first snow brings big weekend crowds from Dehradun and Delhi.",
+    quick=[
+        ("Weather", "About 10.3° / 2.8 °C, ~50 mm in ~4 days (IMD normals)."),
+        ("Snow", "Most likely month; Landour and Lal Tibba whiten first."),
+        ("Surer snow nearby", "Dhanaulti (~25 km) and Surkanda Devi (~35 km)."),
+        ("Crowds", "Busy over New Year and on weekends after a snowfall."),
+        ("Pack", "Padded jacket, thermals, gloves, cap and shoes with grip."),
+    ],
+    wx=dict(src="/suzu-weather-feed.json", daily=True, kicker="Live forecast", h2="Mussoorie, Dhanaulti and Dehradun weather today",
+            lead="Mussoorie (about 2,005 m), Dhanaulti (about 2,290 m) and Dehradun (about 640 m) below — current temperature and the next days' high, low, rain and snow.",
+            places=[dict(id="mussoorie", name="Mussoorie", alt="2005"), dict(id="dhanaulti", name="Dhanaulti", alt="2286"), dict(id="dehradun", name="Dehradun", alt="640")]),
+    sections=[
+        dict(id="weather", kicker="January weather", h2="What is the weather like in Mussoorie in January?", fig=True, ps=[
+            "January brings Mussoorie's lowest temperatures: about <b>10.3 °C by day and 2.8 °C at night</b> on average, and colder on clear nights after a snowfall. Most days are sunny and crisp; western disturbances bring a few cloudy days with rain or snow, about four in an average January.",
+            "Mussoorie sits at about 2,000 m, which makes it a borderline snow town — a few hundred metres of height decide whether it snows or rains. That is why <b>Landour and Lal Tibba</b> (about 2,270 m) often turn white when the Mall Road stays wet, and why Dhanaulti and Surkanda Devi are the reliable backups.",
+        ], table=(["Month", "Mussoorie day / night (IMD)", "Mussoorie rain", "Dehradun day / night (IMD)"], [
+            ["December", "12.7° / 4.5 °C", "10 mm", "21.7° / 7.6 °C"],
+            ["January", "10.3° / 2.8 °C", "50 mm (~4 days)", "19.7° / 6.6 °C"],
+            ["February", "11.2° / 3.4 °C", "65 mm (~5 days)", "22.5° / 9.2 °C"],
+        ]), after=[
+            "Full month-by-month figures: <a href=\"/mussoorie-weather/\">Mussoorie weather</a> · snow guide: <a href=\"/mussoorie-snowfall/\">Mussoorie snowfall 2026-27</a> · December: <a href=\"/mussoorie-in-december/\">Mussoorie in December</a>.",
+        ]),
+    ],
+    gallery=dict(h2="Mussoorie in winter", lead="Snow on the ridge, Landour's churches, Dhanaulti and the Doon valley at dusk — real photographs, each credited to its photographer."),
+    spots=dict(kicker="Where to go", h2="Things to do in Mussoorie in January", lead="Listed from the town outwards.", items=[
+        ("Mall Road and Gun Hill", "In town", "The classic snow sight when a spell reaches the town; sunny winter walks on clear days."),
+        ("Landour and Lal Tibba", "Above the Mall · ~2,270 m", "Higher and quieter; often the first part of Mussoorie to whiten, with views of the snow peaks."),
+        ("Char Dukan and Sisters' Bazaar", "Landour", "Old cafés and churches under deodars — beautiful after fresh snow."),
+        ("George Everest's House", "About 6 km west", "An open ridge with wide views over the Doon valley and the peaks."),
+        ("Dhanaulti", "About 25 km · ~2,280 m", "Deodar forest and eco-parks — the most popular snow day trip. <a href=\"/dhanaulti-weather/\">Dhanaulti weather →</a>"),
+        ("Surkanda Devi", "About 35 km · ~2,750 m", "The highest point nearby, a steep walk up from Kaddukhal; the surest snow in the area."),
+    ]),
+    sections2=[
+        dict(id="plan", kicker="Plan your trip", h2="Mussoorie in January: roads, crowds and packing", ps=[
+            "<b>Getting there:</b> Mussoorie is about 35 km (1–1.5 hours) above Dehradun and roughly 290 km from Delhi. Morning fog on the plains can slow trains and the drive to Dehradun. Cab: <a href=\"/cabs/delhi-to-mussoorie-taxi/\">Delhi to Mussoorie taxi</a> · <a href=\"/cabs/dehradun-to-mussoorie-taxi/\">Dehradun to Mussoorie taxi</a>.",
+            "<b>Roads:</b> the Dehradun–Mussoorie road usually stays open, but after heavy snow the stretches to Landour, Dhanaulti and Kempty can freeze or close for hours. Travel up in daylight with a driver used to hill roads, and keep a spare day.",
+            "<b>Crowds:</b> the New Year week and the weekends after a snowfall are the busiest; weekdays in mid-January are calm.",
+            "<b>Packing:</b> a padded jacket, thermals, gloves, a woollen cap and shoes with grip — Mussoorie's lanes are steep and slippery in snow.",
+        ]),
+    ],
+    ctas=dict(h2="Mussoorie trips we plan", lead="Every trip is quoted for your dates — hotel, meals and a private car with a hill driver.", items=[
+        ("/tours/queen-of-hills-mussoorie/", "Mussoorie tour from Dehradun", "Mussoorie, Kempty and Landour.", "Mussoorie"),
+        ("/tours/the-exotic-uttarakhand/", "Nainital, Corbett and Mussoorie", "Two hill stations and a jungle in one trip.", "Uttarakhand"),
+        ("/uttarakhand-snowfall/", "Uttarakhand snowfall 2026-27", "Where and when it snows across the state.", "Snow"),
+        ("/snow-tracker/", "Live snow tracker", "Where snow is in the forecast this week.", "Live"),
+    ]),
+    quote_h2="Planning Mussoorie in January?",
+    quote_text="Tell us your dates and group. We watch the forecast, suggest whether to stay in Mussoorie or Landour and when to head to Dhanaulti, and send one written quote with hotel, meals and a private car. Suzu Travels is a travel agent registered with HP Tourism, based in Bilaspur, Himachal Pradesh, and plans trips across north India.",
+    faq_h2="Mussoorie in January: frequently asked questions",
+    faqs=[
+        ("Does it snow in Mussoorie in January?", "January is the most likely month for snow, but it does not snow every January and not on fixed dates. Last season the first snow came on 23 January 2026."),
+        ("How cold is Mussoorie in January?", "About 10.3 °C by day and 2.8 °C at night on average (IMD normals), colder on clear nights after snow."),
+        ("Is January a good time to visit Mussoorie?", "Yes, if you want cold, clear days and a chance of snow. Pack warm clothes and keep a spare day for the roads."),
+        ("Where can I see snow near Mussoorie if there is none in town?", "Go up to Landour and Lal Tibba, or take a day trip to Dhanaulti (about 25 km) or Surkanda Devi (about 35 km)."),
+        ("Is Mussoorie crowded in January?", "Over New Year and on weekends after a snowfall, yes; mid-January weekdays are quiet."),
+        ("How far is Mussoorie from Delhi?", "About 290 km by road, via Dehradun; about 35 km from Dehradun."),
+    ],
+    sources=[
+        ("India Meteorological Department — Mussoorie and Dehradun climatological normals", "https://mausam.imd.gov.in/"),
+        ("The Statesman: Mussoorie gets its first snowfall of the season — 23 Jan 2026", "https://www.thestatesman.com/india/mussoorie-gets-its-first-snowfall-of-the-season-along-with-uttarakhands-high-altitude-areas-1503545592.html"),
+        ("MET Norway Locationforecast (CC BY 4.0) — live forecast data", "https://api.met.no/"),
+    ],
+)

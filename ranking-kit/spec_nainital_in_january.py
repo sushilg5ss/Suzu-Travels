@@ -1,0 +1,91 @@
+N = "nainital-weather"
+K = "mukteshwar-weather"
+B = "bhimtal-weather"
+SPEC = dict(
+    lang="en",
+    slug="nainital-in-january",
+    title="Nainital in January 2027: Weather, Snow Chances and What to Do",
+    seo_title="Nainital in January 2027: Weather, Snow & Things to Do",
+    seo_desc="Nainital in January: IMD temperatures (about 11° / 2 °C), how likely snow is, where to find it — Snow View, Naina Peak, Kilbury, Mukteshwar — road and packing tips, and a live forecast.",
+    focus="nainital in january",
+    photo_pick=dict(slugs=[N, K, B], ids=[
+        (N + ":hero-1", "hero", "Nainital around its lake", "Nainital town around Naini lake on a clear day"),
+        (N + ":fig-1", "fig", "The Himalaya from Nainital", "The snow peaks of the Himalaya seen from Nainital"),
+        (N + ":g-1", "g", "Naini lake from Snow View", "Naini lake seen from Snow View"),
+        (N + ":g-2", "g", "Snow View Point", "The ridge at Snow View Point above Nainital"),
+        (N + ":g-4", "g", "Boats on Naini lake", "Boats moored on Naini lake"),
+        (K + ":hero-1", "g", "The Himalaya from Mukteshwar", "The Himalayan range seen from Mukteshwar"),
+        (N + ":g-7", "g", "Nainital from the hills above", "Nainital and its lake from the hills above"),
+        (K + ":g-1", "g", "Sunset at Mukteshwar", "Sunset over the ridges at Mukteshwar"),
+        (N + ":g-6", "g", "Naini lake through the trees", "Naini lake seen through the trees"),
+    ]),
+    kicker="Nainital · Mukteshwar · Bhimtal · January 2027",
+    tag="Nainital in January: cold, clear days and a chance of snow",
+    sub="How cold it gets, how likely snow is, where to see it, and how to plan the drive up from Kathgodam — with a live forecast for Nainital, Mukteshwar and Bhimtal.",
+    chips=[("10.9° / 1.7 °C", "January average (IMD)"), ("A few days", "of light snow most winters"), ("~50 km", "to Mukteshwar"), ("~35 km", "from Kathgodam")],
+    flakes=True,
+    updated="November 2026",
+    wa="Hello Suzu Travels, I am planning Nainital in January. Dates: ___ , people: ___ , starting from: ___",
+    cta2=("#weather", "See today's weather"),
+    answer="<b>January is Nainital's coldest month.</b> Days average about <b>11 °C and nights about 2 °C</b> (IMD normals), with frost on clear mornings. The town gets <b>light snow on a few days in most winters</b>, usually in January–February, but not on dates you can plan around; the higher points — <b>Snow View, Naina (China) Peak and the road to Kilbury</b> — catch more, and <b>Mukteshwar</b>, about 50 km away, gets snow more often. Clear January days also bring some of the year's best views of the Himalayan peaks. Outside the New Year week, January is quiet and good value.",
+    quick=[
+        ("Weather", "About 10.9° / 1.7 °C; ~82 mm of rain or snow in the month (IMD normals)."),
+        ("Snow", "Light snow on a few days in most winters; Snow View and Naina Peak catch more."),
+        ("Surer snow nearby", "Mukteshwar (~50 km)."),
+        ("Views", "Clear days bring the Himalayan peaks from Snow View and Tiffin Top."),
+        ("Pack", "Padded jacket, thermals, gloves, cap and shoes with grip."),
+    ],
+    wx=dict(src="/suzu-weather-feed.json", daily=True, kicker="Live forecast", h2="Nainital, Mukteshwar and Bhimtal weather today",
+            lead="Nainital (about 2,084 m), Mukteshwar (about 2,170 m) and Bhimtal (about 1,370 m) — current temperature and the next days' high, low, rain and snow.",
+            places=[dict(id="nainital", name="Nainital", alt="2084"), dict(id="mukteshwar", name="Mukteshwar", alt="2286"), dict(id="bhimtal", name="Bhimtal", alt="1370")]),
+    sections=[
+        dict(id="weather", kicker="January weather", h2="What is the weather like in Nainital in January?", fig=True, ps=[
+            "January brings Nainital's lowest temperatures: about <b>10.9 °C by day and 1.7 °C at night</b> on average, colder on clear nights. Most days are sunny and crisp, with the Himalayan peaks often visible from Snow View; western disturbances bring a few grey days with rain in the bowl and snow on the ridges.",
+            "Snow in Nainital itself is usually light and short-lived. For a better chance, stay higher — near Snow View or on the Kilbury road — or plan a night in <b>Mukteshwar</b>, which is a little higher and more open to the cold.",
+        ], table=(["Month", "Nainital day / night (IMD)", "Nainital rain", "What to expect"], [
+            ["December", "12.8° / 2.9 °C", "24 mm", "Cold, sunny days"],
+            ["January", "10.9° / 1.7 °C", "82 mm", "Coldest; chance of snow"],
+            ["February", "11.9° / 3.3 °C", "66 mm", "Cold; snow spells possible"],
+        ]), after=[
+            "Full month-by-month figures: <a href=\"/nainital-weather/\">Nainital weather</a> · in Hindi: <a href=\"/nainital-ka-mausam/\">नैनीताल का मौसम</a> · December: <a href=\"/nainital-in-december/\">Nainital in December</a>.",
+        ]),
+    ],
+    gallery=dict(h2="Nainital in winter", lead="Naini lake, Snow View, the Himalaya from Nainital and Mukteshwar — real photographs, each credited to its photographer."),
+    spots=dict(kicker="Where to go", h2="Things to do in Nainital in January", lead="From the lake up to the ridges.", items=[
+        ("Naini lake and the Mall", "In town · ~2,084 m", "Sunny winter walks around the lake; quiet on weekdays."),
+        ("Snow View", "Above the town", "The best close view of the Himalayan peaks on clear days, and one of the first places to whiten."),
+        ("Naina (China) Peak", "Highest point · ~2,600 m", "A walk to the top of the ridge; snow lingers here after a spell."),
+        ("Tiffin Top and Kilbury road", "West and north of the lake", "Forest walks and viewpoints that catch more snow than the town."),
+        ("Mukteshwar", "About 50 km", "Higher, open ridges with wide Himalayan views and better snow chances. <a href=\"/mukteshwar-weather/\">Mukteshwar weather →</a>"),
+        ("Bhimtal", "About 22 km · ~1,370 m", "Milder and calmer, a good base when Nainital is busy. <a href=\"/bhimtal-weather/\">Bhimtal weather →</a>"),
+    ]),
+    sections2=[
+        dict(id="plan", kicker="Plan your trip", h2="Nainital in January: roads, crowds and packing", ps=[
+            "<b>Getting there:</b> Kathgodam, the nearest railway station, is about 35 km (roughly 1 hour 15 minutes) below Nainital. Morning fog on the plains can delay trains in January. Cab: <a href=\"/cabs/kathgodam-to-nainital-taxi/\">Kathgodam to Nainital taxi</a> · <a href=\"/cabs/nainital-taxi-service/\">Nainital taxi service</a>.",
+            "<b>Roads:</b> the Kathgodam–Nainital road usually stays open; after snow, the higher roads to Kilbury, Snow View and Mukteshwar can be icy or closed for a few hours. Travel in daylight with a driver used to hill roads.",
+            "<b>Crowds:</b> busy over New Year and on weekends after a snowfall; quiet the rest of the month.",
+            "<b>Packing:</b> a padded jacket, thermals, gloves, a woollen cap and shoes with grip for icy lanes.",
+        ]),
+    ],
+    ctas=dict(h2="Nainital trips we plan", lead="Every trip is quoted for your dates — hotel, meals and a private car with a hill driver.", items=[
+        ("/tours/the-exotic-uttarakhand/", "Nainital, Corbett and Mussoorie", "Two hill stations and a jungle in one trip.", "Uttarakhand"),
+        ("/tours/uttarakhand-bhimtal-corbett/", "Bhimtal and Corbett", "Lakes and a jungle in Kumaon.", "Kumaon"),
+        ("/uttarakhand-snowfall/", "Uttarakhand snowfall 2026-27", "Where and when it snows across the state.", "Snow"),
+        ("/cabs/kathgodam-to-nainital-taxi/", "Kathgodam to Nainital taxi", "Private car from the station.", "Cab"),
+    ]),
+    quote_h2="Planning Nainital in January?",
+    quote_text="Tell us your dates and group. We watch the forecast, suggest where to stay for the best views and snow chances, and send one written quote with hotel, meals and a private car. Suzu Travels is a travel agent registered with HP Tourism, based in Bilaspur, Himachal Pradesh, and plans trips across north India.",
+    faq_h2="Nainital in January: frequently asked questions",
+    faqs=[
+        ("Does it snow in Nainital in January?", "Lightly, on a few days in most winters, usually in January–February. Snow View, Naina Peak and Mukteshwar get more."),
+        ("How cold is Nainital in January?", "About 10.9 °C by day and 1.7 °C at night on average (IMD normals), with frosty mornings."),
+        ("Is January a good time to visit Nainital?", "Yes, for cold, clear days, Himalayan views and a chance of snow. Pack warm clothes and keep some time in hand."),
+        ("Where can I see snow near Nainital?", "On the higher points above the town — Snow View, Naina Peak, the Kilbury road — and at Mukteshwar, about 50 km away."),
+        ("How far is Nainital from Kathgodam?", "About 35 km, roughly 1 hour 15 minutes by road."),
+        ("Is Nainital crowded in January?", "Over New Year and on weekends after snow; the rest of January is quiet."),
+    ],
+    sources=[
+        ("India Meteorological Department — Nainital climatological normals", "https://mausam.imd.gov.in/"),
+        ("MET Norway Locationforecast (CC BY 4.0) — live forecast data", "https://api.met.no/"),
+    ],
+)
