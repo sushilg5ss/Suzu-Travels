@@ -824,5 +824,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "fortuner-on-rent": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@38f4069c9152443a3db8d4043c2c0bc1a6857273/cab-kit/media/fortuner-on-rent/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@38f4069c9152443a3db8d4043c2c0bc1a6857273/cab-kit/media/fortuner-on-rent/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@38f4069c9152443a3db8d4043c2c0bc1a6857273/cab-kit/media/fortuner-on-rent/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
