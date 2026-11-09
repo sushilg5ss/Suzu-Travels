@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-08n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "nz-hk lazy boot + snow-watch tracker link + weather links (11-07) + chip 1-pass/hk contrast (11-06) \u2014 queued interactively 9 Nov (Sushil OK)",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "a1f79450870ef3f1f9302fae6d60c44c9199a7a3dd301184eda744c467527a9e",
+   "base_sha256": "2027a75d287d739d564f74391d5e60f400faea5e47cdfdc9e84da82405a4d621",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 991097
+  }
+ ]
+}
