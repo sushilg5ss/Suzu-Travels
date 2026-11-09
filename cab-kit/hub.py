@@ -131,6 +131,7 @@ def build():
              ("tempo-traveller-chandigarh", "Tempo Traveller in Chandigarh", "12-seater, 17-seater & Urbania from the Tricity and IXC to Shimla, Manali, Dharamshala, Amritsar & Rishikesh."),
              ("innova-crysta-on-rent", "Innova Crysta on rent", "With driver, from ₹19/km for tours; one-way hill drops."),
              ("ertiga-on-rent", "Maruti Ertiga on rent", "6-seater family car with driver, from ₹14/km; Delhi NCR & Chandigarh pickup."),
+             ("fortuner-on-rent", "Toyota Fortuner on rent", "Premium SUV with driver, from ₹32/km; weddings & Leh."),
              ("urbania-on-rent", "Force Urbania on rent", "Premium van, up to 17 reclining seats, from ₹36/km; Delhi NCR & Chandigarh pickup."),
              ("tempo-traveller-12-seater", "12 seater Tempo Traveller", "For groups of 8–12, from ₹26/km."),
              ("tempo-traveller-17-seater", "17 seater Tempo Traveller", "For groups of 13–17, from ₹30/km.")]
