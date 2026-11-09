@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="rafting", kicker="Rafting, yoga and the river", h2="Rafting season and the river through the year", fig=True, ps=[
             "<b>White-water rafting</b> on the Ganga above Rishikesh usually runs from about <b>mid-September to June</b> and is closed through the monsoon, when the river is high and fast. October–November and March–April are the most comfortable months on the water; in January the water is very cold but the rapids are calmer.",
             "<b>Yoga and the evening aarti</b> run all year. Late February to early March is the season of the International Yoga Festival, and winter mornings by the river are cool and misty — carry a warm layer for the aarti at Parmarth Niketan or Triveni Ghat.",
-            "More: <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh yoga retreat guide</a> · nearby weather: <a href=\"/mussoorie-weather/\">Mussoorie weather</a>.",
+            "More: <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh yoga retreat guide</a> · nearby weather: <a href=\"/mussoorie-weather/\">Mussoorie weather</a>, <a href=\"/lansdowne-weather/\">Lansdowne weather</a> and <a href=\"/kedarnath-weather/\">Kedarnath weather</a>.",
         ]),
     ],
     gallery=dict(h2="Rishikesh in pictures", lead="The Ganga, Lakshman Jhula, the ghats and the evening aarti — real photographs, each credited to its photographer."),

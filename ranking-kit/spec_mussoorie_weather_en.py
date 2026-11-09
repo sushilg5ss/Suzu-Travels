@@ -58,7 +58,7 @@ SPEC = dict(
         dict(id="snow", kicker="Snow and the ridge", h2="Does it snow in Mussoorie?", fig=True, ps=[
             "Yes, but not every week of winter. Mussoorie usually gets a few snowy days between late December and February, most often in <b>January and February</b> when western disturbances bring cold rain to Dehradun and snow to the ridge. The higher points — <b>Lal Tibba (about 2,275 m)</b>, Landour and the road to <b>Dhanaulti, 24 km away</b> — catch snow more often and keep it longer.",
             "On clear winter mornings, the snow peaks of the Garhwal Himalaya line the northern horizon. Nights below freezing are common in January, even without snow, so the roads can be icy in the shade.",
-            "Nearby weather: <a href=\"/weather/auli/\">Auli weather</a> and <a href=\"/chopta-in-winter/\">Chopta in winter</a>.",
+            "Nearby weather: <a href=\"/dhanaulti-weather/\">Dhanaulti weather</a>, <a href=\"/chakrata-weather/\">Chakrata weather</a>, <a href=\"/rishikesh-weather/\">Rishikesh weather</a> and <a href=\"/chopta-weather/\">Chopta weather</a>.",
         ]),
     ],
     gallery=dict(h2="Mussoorie in pictures", lead="The ridge in snow, the Himalaya from Mussoorie, Dhanaulti and Company Bagh — real photographs, each credited to its photographer."),
