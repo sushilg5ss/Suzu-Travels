@@ -120,6 +120,7 @@ def build():
              ("chandigarh-taxi-service", "Chandigarh taxi service", "IXC airport & Tricity pickups; drops to Shimla, Kasauli, Manali, Amritsar, Delhi."),
              ("chandigarh-airport-taxi", "Chandigarh airport taxi", "IXC arrivals pickup with flight tracking; drops to Shimla, Kasauli, Manali, Dharamshala, Amritsar & Delhi."),
              ("dehradun-taxi-service", "Dehradun taxi service", "Jolly Grant airport pickups, Mussoorie & Dhanaulti day trips; drops to Rishikesh, Haridwar, Delhi."),
+             ("dehradun-airport-taxi", "Dehradun airport taxi", "Jolly Grant (DED) arrivals pickup; drops to Rishikesh, Haridwar, Mussoorie, Char Dham & Delhi."),
              ("srinagar-taxi-service", "Srinagar taxi service", "Airport pickups, Gulmarg, Pahalgam & Sonamarg day trips; drops to Jammu."),
              ("jammu-taxi-service", "Jammu taxi service", "Airport & Jammu Tawi pickups, Vaishno Devi drops at Katra, Patnitop & Shiv Khori; drops to Srinagar, Amritsar & Delhi."),
              ("haridwar-taxi-service", "Haridwar taxi service", "Station & ghat pickups, Rishikesh and Neelkanth trips; drops to Delhi, Sonprayag & Badrinath."),

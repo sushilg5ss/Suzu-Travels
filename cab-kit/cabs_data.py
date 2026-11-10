@@ -159,6 +159,8 @@ PLACES = {
     "Domel": (32.89, 74.95), "Kunjwani": (32.67, 74.88),
     # 4 Nov 2026 · Kathgodam–Nainital hill road (approx. OSM town centres)
     "Ranibagh": (29.30, 79.55), "Jeolikote": (29.33, 79.50),
+    # 10 Nov 2026 · Dehradun (Jolly Grant, DED) airport terminal (OSM)
+    "Dehradun Airport": (30.19, 78.18), "Bhaniyawala": (30.17, 78.15), "Raiwala": (30.03, 78.21),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's

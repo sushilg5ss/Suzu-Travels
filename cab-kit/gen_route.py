@@ -27,7 +27,7 @@ def build(p):
     else:
         seq = [m["hub"]] + m["spokes"]; labels = seq
     ctx = [c for c in m.get("ctx", []) if c in PLACES]
-    names = list(dict.fromkeys(seq + labels + ctx + (["Chandigarh"] if "Chandigarh" in labels else [])))
+    names = list(dict.fromkeys(seq + labels + ctx + (["Chandigarh"] if "Chandigarh" in labels else []) + [n for n in m.get("pad", []) if n in PLACES]))   # pad: framing only, not drawn (10 Nov 2026)
     lats = [PLACES[n][0] for n in names]; lons = [PLACES[n][1] for n in names]
     latc = math.radians(sum(lats) / len(lats))
     # map area: left part of frame, panel on the right
@@ -112,6 +112,8 @@ def build(p):
                 anchor, dx = ("end", -16)
         if mode == "path" and end and x > 900:
             anchor, dx, dy = ("end", 0, -30)
+        if mode == "hub" and end and m.get("hub_left"):   # 10 Nov 2026: hub label left of the dot when spokes leave to the right
+            anchor, dx = ("end", -32)
         if n in m.get("below", []):   # 6 Nov 2026: label under the dot when the line arrives from the right
             anchor, dx, dy = ("middle", 0, 58 if end else 40)
         towns.append(f'<g class="{cls}" id="t{i}" data-x="{x:.1f}" data-y="{y:.1f}"><circle class="halo" cx="{x:.1f}" cy="{y:.1f}" r="{22 if end else 14}"/><circle class="dot" cx="{x:.1f}" cy="{y:.1f}" r="{9 if end else 6}"/>'
