@@ -52,7 +52,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 37 | [x] ertiga-on-rent — LIVE 2026-11-05 https://suzutravels.com/cabs/ertiga-on-rent/ (ID 17856) | ertiga on rent | 1,900 | NEW 29 Oct. Vehicle page (vol. 1,900 MEDIUM, 1 Nov) |
 | 38 | [x] delhi-to-jaipur-taxi — LIVE 2026-11-06 https://suzutravels.com/cabs/delhi-to-jaipur-taxi/ (ID 18344) | delhi to jaipur taxi | 1,900 (MEDIUM) | NEW 29 Oct. Outside the hill focus but big; NH48 / Delhi–Mumbai Expressway; needs ROUTES row |
 | 39 | [x] fortuner-on-rent — LIVE 2026-11-09 https://suzutravels.com/cabs/fortuner-on-rent/ (ID 20055) | fortuner on rent | 1,600 (LOW) | NEW 1 Nov. Vehicle page; engine fortuner rates; Spiti/Leh/snow use cases |
-| 40 | [ ] dehradun-airport-taxi | dehradun airport taxi | 590 (LOW) | NEW 1 Nov. Jolly Grant pickups → Rishikesh/Mussoorie/Haridwar/Char Dham; links dehradun-taxi-service |
+| 40 | [x] dehradun-airport-taxi — LIVE 2026-11-10 https://suzutravels.com/cabs/dehradun-airport-taxi/ (ID 20683) | dehradun airport taxi | 590 (LOW) | NEW 1 Nov. Jolly Grant pickups → Rishikesh/Mussoorie/Haridwar/Char Dham; links dehradun-taxi-service |
 | 41 | [ ] haridwar-to-kedarnath-taxi | haridwar to kedarnath taxi | 390 (peak 1,600 May; + haridwar to badrinath 390, rishikesh to kedarnath 140) | (was 32) Char Dham cluster; season May–Nov — build before Mar 2027; verify Sonprayag/Gaurikund road-head + registration rules |
 | 42 | [ ] haridwar-to-badrinath-taxi | haridwar to badrinath taxi | 390 (MEDIUM; peak 1,000 May) | NEW 1 Nov. Char Dham cluster; season May–Nov — build before Mar 2027 with 41 |
 | 43 | [ ] chandigarh-to-amritsar-taxi | chandigarh to amritsar taxi | 480 | NEW 29 Oct. Links chandigarh-taxi-service, amritsar-taxi-service |
