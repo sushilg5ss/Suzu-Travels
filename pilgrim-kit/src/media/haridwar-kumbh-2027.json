@@ -1,0 +1,24 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "dawn",
+  "deva": "हरिद्वार कुंभ 2027",
+  "kicker": "Kumbh Mela · Haridwar, Uttarakhand",
+  "beats": [
+   "Amrit drops fall at four tirthas",
+   "Ganga meets the plains at Haridwar",
+   "Sadhus lead the Amrit Snan",
+   "Ten snan days, Jan to April"
+  ],
+  "deva_size": 90
+ },
+ "story": {
+  "title": "The story of the Kumbh",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "The ocean is churned for amrit"},
+   {"arch": "ghats", "sky": "dawn", "line": "Drops of amrit fall on four tirthas"},
+   {"arch": "lake", "sky": "dusk", "line": "Ganga flows down from the hills"},
+   {"arch": "ghats", "sky": "saffron", "line": "Pilgrims bathe on the snan days"}
+  ]
+ }
+}
