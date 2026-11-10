@@ -73,6 +73,10 @@ def live_paths():
 def check(slug, body, allowed=None):
     problems = []
     visible = re.sub(r'href="https://wa\.me/[^"]*"', "", body)  # WhatsApp prefill text may contain ___
+    ap = KIT / "data" / "approved-prices.json"  # owner-approved "Starting from" prices (README §1)
+    if ap.exists():
+        for price in [k for k in json.loads(ap.read_text(encoding="utf-8")) if k.startswith("₹")]:
+            visible = visible.replace(price, "")
     for pat, why in [(r"\{\{.*?\}\}", "placeholder"), (r"\bTODO\b|\blorem\b", "placeholder"), (r"___", "placeholder"),
                      (r"₹|\bRs\.?\s?\d|\bINR\s?\d", "rupee price")]:
         for m in re.finditer(pat, visible, flags=re.I):
