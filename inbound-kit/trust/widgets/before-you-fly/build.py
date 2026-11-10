@@ -15,6 +15,9 @@ SLUGS = ['india-e-visa-guide', 'india-travel-insurance', 'sim-card-india-tourist
 PAGES = {
     '11412': dict(trip='Golden Triangle tour', k='Before you fly to Delhi'),
     '11413': dict(trip='Char Dham Yatra', k='Before you fly for the yatra'),
+    # row 27 (10 Nov 2026): hub. The hub already uses .szy/.szy-a for the pdf-hub-cards links, so the hub copy is
+    # re-prefixed .szb (free on the hub + kit, checked 10 Nov 2026) — CSS, ids and JS ids together.
+    '11411': dict(trip='India trip', k='Before you fly to India', prefix='szb'),
 }
 
 CSS = (".szy{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;margin:0;padding:30px 16px;background:#F4EEDD}"
@@ -73,6 +76,8 @@ def build(pid):
             '<p class="szy-d">Information only — rules change, so confirm visa, insurance and money rules on the official sites before you travel. '
             'Your ticks stay on this screen only: nothing is saved or sent.</p>'
             '<script>' + JS + '</script></div></section><!--/szt:before-you-fly-->')
+    if p.get('prefix'):
+        html = html.replace('szy', p['prefix'])
     return html
 
 if __name__ == '__main__':
@@ -82,6 +87,7 @@ if __name__ == '__main__':
         low = body.lower()
         for bad in ['verified', '24/7', '₹', 'cheapest', 'guarantee', 'government approved', 'dmc', 'online now', 'seats left', 'us$']:
             assert bad not in low, (pid, bad)
+        assert ('szy' not in body) if pid == '11411' else True
         assert body.count('<!--szt:before-you-fly-->') == 1 and body.count('indianvisaonline.gov.in') >= 1 and 'look-alike' in body
         out = os.path.join(HERE, 'widget-' + pid + '.html')
         open(out, 'w').write(body)

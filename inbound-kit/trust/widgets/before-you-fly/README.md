@@ -2,6 +2,8 @@
 Live since 7 Nov 2026, `<!--szt:before-you-fly-->…<!--/szt:before-you-fly-->`, right after `<!--/szt:call-time-->` on:
 - /golden-triangle-tour/ (11412) — widget-11412.html (kicker "Before you fly to Delhi")
 - /char-dham-yatra-for-nri/ (11413) — widget-11413.html (kicker "Before you fly for the yatra")
+- hub /india-tours/ (11411) — widget-11411.html (kicker "Before you fly to India"), since 10 Nov 2026 (row 27), right after `<!--/szt:share-trip-->`.
+  **Hub copy uses prefix `.szb`** (ids szb, szb-n, szb-r, szb-1..6): the hub already carries `.szy`/`.szy-a` (pdf-hub-cards links), and `.szy{padding…}` would have restyled them. build.py re-prefixes via PAGES['11411']['prefix'].
 
 What it does: 6 tick-box cards linking the live practical guides (e-Visa, travel insurance, SIM/eSIM, UPI & money, trains vs flights,
 first time in India). Text = each guide's own label + blurb from live.json (no new facts) + "Apply yourself on the official site; we are
