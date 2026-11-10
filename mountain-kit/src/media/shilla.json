@@ -1,0 +1,19 @@
+{
+ "hero": {
+  "kicker": "SHILLA · SPITI",
+  "scenes": [
+   {"img": "px-17613105.jpg", "kind": "tilt", "h": 2880, "t": [0, 4.0], "from": {"y": 300}, "to": {"y": 900}},
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [3.4, 7.6], "from": {"scale": 1.02}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-32109154.jpg", "kind": "tilt", "h": 2560, "t": [7.0, 10.8], "from": {"y": 0}, "to": {"y": 520}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [10.2, 14.0], "from": {"scale": 1.02, "x": 60, "y": 30}, "to": {"scale": 1.12, "x": -20, "y": 70}}
+  ],
+  "steps": [[3650, "KAZA"], [4420, "LANGZA"], [5670, "SHILLA JOT"], [6132, "SUMMIT"]]
+ },
+ "ladder": {
+  "kicker": "SHILLA IN CONTEXT",
+  "title": "Shilla beside its high neighbours",
+  "peaks": ["shilla", "chau-chau-kang-nilda", "manirang", "mount-gya", "reo-purgyil"],
+  "subs": {"shilla": "Old maps: 23,064 ft", "chau-chau-kang-nilda": "Same Langza base", "reo-purgyil": "Himachal's highest"},
+  "end": "Shilla is not Himachal's highest peak"
+ }
+}
