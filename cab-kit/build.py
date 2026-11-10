@@ -486,6 +486,48 @@ def hub_min_js(js):
     cf.write_text(out, encoding="utf-8")
     return out
 
+def hub_trim(m):
+    """10 Nov 2026 hub size trim (ENHANCEMENTS #20) - hub only, every removed value is put back by kit_hub_pre.js before the kit
+    script parses it (kit script itself stays byte-identical). A value is only dropped when the page holds the exact same text
+    elsewhere (checked here), so the restore is lossless:
+    - "quote":false / "page":"" (the kit only tests them for truth);
+    - data-fleet alt / model / best = the gallery card's img alt / .szc-tag / 'Best for:' line, night 400 = the default;
+    - data-plan-route on route-card Map links and planner chips = the card's From/To text (chip text 'A → B')."""
+    def fleet(x):
+        f = json.loads(x.group(1))
+        for v in f.get("v", []):
+            card = re.search(r'<article class="szc-card szc-veh"[^>]*>(?:(?!</article>).)*?data-view="' + re.escape(v["id"]) + r'".*?</article>', m)
+            if v.get("night") == 400:
+                del v["night"]
+            if v.get("quote") is False:
+                del v["quote"]
+            if v.get("page") == "":
+                del v["page"]
+            if not card:
+                continue
+            c = card.group(0)
+            a = re.search(r'<img [^>]*alt="([^"]*)"', c)
+            if a and a.group(1) == v.get("alt"):
+                del v["alt"]
+            t = re.search(r'<span class="szc-tag">([^<]*)</span>', c)
+            if t and t.group(1) == v.get("model"):
+                del v["model"]
+            b = re.search(r'<div class="szc-card-b">.*?<p>Best for: ([^<]*)</p>', c)
+            if b and b.group(1) == v.get("best"):
+                del v["best"]
+        return "data-fleet='" + json.dumps(f, ensure_ascii=False, separators=(",", ":")) + "'"
+    m = re.sub(r"data-fleet='([^']*)'", fleet, m, count=1)
+    m = re.sub(r"data-plan='[^']*'", lambda x: x.group(0).replace(',"quote":false', "").replace('"quote":false,', ""), m, count=1)
+    def card(x):
+        c = x.group(0)
+        ab = re.search(r'<div class="from">([^<]*)</div><div class="to">→ ([^<]*)</div>', c)
+        if ab:
+            c = c.replace(f' data-plan-route="{ab.group(1)}&gt;{ab.group(2)}">Map</a>', '>Map</a>')
+        return c
+    m = re.sub(r'<article class="szc-card szc-route-card".*?</article>', card, m)
+    m = re.sub(r'<button data-plan-route="([^"]*)&gt;([^"]*)">\1 → \2</button>', r"<button>\1 → \2</button>", m)
+    return m
+
 def finish(slug, h, css_extra=""):
     # the hero FILM_JS (#14) is the first <script> now - escape the HTML on both sides of it exactly as before
     h = FILM_JS.join(_amp(x) for x in h.split(FILM_JS, 1)) if FILM_JS in h else _amp(h)
@@ -515,6 +557,8 @@ def finish(slug, h, css_extra=""):
             m = m.replace(pu, swap(pu))
     if slug == "cabs":  # 1 Nov 2026 hub size budget: wa.me hrefs keep , : ( ) / ? literal (valid in a query string, WhatsApp decodes the same)
         m = re.sub(r'href="https://wa\.me/[^"]*"', lambda x: x.group(0).replace("%2C", ",").replace("%3A", ":").replace("%28", "(").replace("%29", ")").replace("%2F", "/").replace("%3F", "?"), m)
+    if slug == "cabs":  # 10 Nov 2026 (ENHANCEMENTS #20): hub size headroom - see hub_trim(); kit_hub_pre.js restores every dropped value
+        m = hub_trim(m)
     if slug == "cabs":  # 8 Nov 2026 (ENHANCEMENTS #16): kit_hub_pre.js as its own small <script> right before the kit script (kit script stays byte-identical; inserted before prune_css so .szc-slot CSS is kept)
         pre = re.sub(r"\s*\n\s*", "", js_safe(re.sub(r"/\*.*?\*/", "", (ROOT / "kit_hub_pre.js").read_text(), flags=re.S)))
         k = m.rfind("<script>")
