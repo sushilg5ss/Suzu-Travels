@@ -349,5 +349,14 @@
   "blurb": "Our published private-tour prices in US dollars, what they include, what you pay separately and what changes the total",
   "added": "2026-11-10",
   "focus": "india trip cost"
+ },
+ "south-india-tour": {
+  "id": 21175,
+  "path": "/india-tours/south-india-tour/",
+  "kind": "itinerary",
+  "label": "South India tour — 12 days",
+  "blurb": "Tamil Nadu's great temples, then Kerala's spice hills and a houseboat night",
+  "added": "2026-11-11",
+  "focus": "south india tour"
  }
 }
