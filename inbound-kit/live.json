@@ -340,5 +340,14 @@
   "blurb": "For British travellers: flights, entry rules, ATOL in plain English, the time difference and paying by UK card — booked direct with a local team",
   "added": "2026-11-09",
   "focus": "tours to india from uk"
+ },
+ "india-trip-cost": {
+  "id": 20694,
+  "path": "/india-tours/india-trip-cost/",
+  "kind": "guide",
+  "label": "India trip cost",
+  "blurb": "Our published private-tour prices in US dollars, what they include, what you pay separately and what changes the total",
+  "added": "2026-11-10",
+  "focus": "india trip cost"
  }
 }
