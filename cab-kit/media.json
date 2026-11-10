@@ -833,5 +833,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "dehradun-airport-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@0656f2194a0a42d6f00b6b3f293b4398b91e188c/cab-kit/media/dehradun-airport-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@0656f2194a0a42d6f00b6b3f293b4398b91e188c/cab-kit/media/dehradun-airport-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@0656f2194a0a42d6f00b6b3f293b4398b91e188c/cab-kit/media/dehradun-airport-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
