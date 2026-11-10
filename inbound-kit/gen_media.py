@@ -287,7 +287,7 @@ def route_map(slug):
         l0, l1, a0, a1 = BOUNDS
         lons = [l0 + (l1 - l0) * k / 6 for k in range(1, 6)]
         lats = [a0 + (a1 - a0) * k / 6 for k in range(1, 6)]
-        lbl = lambda v: f"{v:.1f}°N"
+        lbl = (lambda v: f"{v:.2f}°N") if (a1 - a0) < 1.2 else (lambda v: f"{v:.1f}°N")   # small windows (one valley/rail line) need 2 decimals
     else:
         lons, lats, lbl = range(70, 98, 5), range(10, 37, 5), (lambda v: f"{v}°N")
     for lon in lons:

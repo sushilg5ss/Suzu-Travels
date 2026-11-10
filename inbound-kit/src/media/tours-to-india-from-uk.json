@@ -1,13 +1,99 @@
 {
- "_note": "Media for /india-tours/tours-to-india-from-uk/ (product, UK buyer). Hero only (no route map — north-india-tour has it; cost ladder skipped: one render per Builder run). Library photos only: plane window over the Himalaya px-10005973 first (= poster; caption is an advice line, no place, no airline), Taj px-33777272, Spiti SUV px-35441447 (plate blurred), Shimla px-15404469; each captioned only with an allowed caption (Page Builder day run, 9 Nov 2026).",
+ "_note": "Media for /india-tours/tours-to-india-from-uk/ (product, UK buyer). Hero only (no route map — north-india-tour has it; cost ladder skipped: one render per Builder run). Library photos only: plane window over the Himalaya px-10005973 first (= poster; caption is an advice line, no place, no airline), Taj px-33777272, Spiti SUV px-35441447 (plate blurred), Shimla px-15404469; each captioned only with an allowed caption (Page Builder day run, 9 Nov 2026). Cost ladder added by Visual Studio 10 Nov 2026 (Step 1.3 upgrade): the six hub routes exactly as on the page's routes table / data/prices.json allowed (fact pack Media notes: 'six hub cards ... land only — you book the flight'); Kashmir rung carries the FCDO pointer (fact 9). Char Dham US$799 left out (not in prices.json allowed).",
  "hero": {
   "kicker": "INDIA FROM THE UK",
   "scenes": [
-   {"img": "px-10005973.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
-   {"img": "px-33777272.jpg", "kind": "tilt", "from": {"y": 760}, "to": {"y": 1080}},
-   {"img": "px-35441447.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 10}},
-   {"img": "px-15404469.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 480}}
+   {
+    "img": "px-10005973.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-33777272.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 1080
+    }
+   },
+   {
+    "img": "px-35441447.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -40,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-15404469.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 480
+    }
+   }
   ],
-  "steps": ["FLY IN FROM THE UK", "TAJ AT DAWN", "PRIVATE, NO COACH", "HIMACHAL, OUR HOME"]
+  "steps": [
+   "FLY IN FROM THE UK",
+   "TAJ AT DAWN",
+   "PRIVATE, NO COACH",
+   "HIMACHAL, OUR HOME"
+  ]
+ },
+ "cost": {
+  "kicker": "FROM THE UK · SIX ROUTES",
+  "title": "Land only — you book the flight",
+  "items": [
+   {
+    "label": "Golden Triangle, 4 days",
+    "sub": "Delhi · Agra · Jaipur",
+    "price": 299
+   },
+   {
+    "label": "Golden Triangle, 6 days",
+    "sub": "the classic route, unhurried",
+    "price": 449
+   },
+   {
+    "label": "+ Rishikesh, 8 days",
+    "sub": "Ganga Aarti · Laxman Jhula",
+    "price": 649
+   },
+   {
+    "label": "+ Kashmir, 10 days",
+    "sub": "read the FCDO travel advice first",
+    "price": 899
+   },
+   {
+    "label": "Golden Temple + Himalayas",
+    "sub": "10 days · Amritsar · Dharamshala · Manali",
+    "price": 949
+   },
+   {
+    "label": "Golden Triangle, 12 days",
+    "sub": "+ Himalayas: Shimla · Manali",
+    "price": 1099
+   }
+  ],
+  "end": "Per person, indicative · private car + driver · quoted in US$"
  }
 }
