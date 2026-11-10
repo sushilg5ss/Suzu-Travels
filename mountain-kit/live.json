@@ -12,7 +12,7 @@
   "path": "/mountains-of-india/highest-peaks-in-india/",
   "kind": "base",
   "label": "Highest peaks in India",
-  "blurb": "Full list of 159 peaks",
+  "blurb": "Full list of 161 peaks",
   "added": "2026-10-01"
  },
  "himalayan-peak-expeditions": {
@@ -39,7 +39,7 @@
   "path": "/mountains-of-india/himachal-pradesh/",
   "kind": "state",
   "label": "Peaks of Himachal Pradesh",
-  "blurb": "26 peaks · Reo Purgyil 6,816 m to Churdhar",
+  "blurb": "28 peaks · Reo Purgyil 6,816 m to Churdhar",
   "added": "2026-10-01",
   "state": "himachal-pradesh",
   "commercial": true
@@ -232,7 +232,7 @@
   "path": "/mountains-of-india/6000m-peaks/",
   "kind": "band",
   "label": "6,000 m peaks of India",
-  "blurb": "77 six-thousanders · grade, season, status",
+  "blurb": "79 six-thousanders · grade, season, status",
   "added": "2026-10-22",
   "band": "6000",
   "commercial": false

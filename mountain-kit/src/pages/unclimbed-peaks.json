@@ -37,7 +37,7 @@
  "hero_alt": "Glaciated ridges, a corniced crest and high snow slopes (generic stock footage, not named peaks) with four statements: 7,780 m unclimbed; sacred, left alone; some stay closed; climb in Himachal",
  "ladder_alt": "Animated chart of six unclimbed Indian peaks at their true heights: Manimahesh Kailash 5,653 m, Chombu 6,362 m, Parvati Parbat 6,633 m, Chiumo 6,890 m, Shudu Tsenpa 7,024 m and Zemu Gap Peak 7,780 m, ending with Yunam 6,111 m as a climbed and open peak",
  "q": "Which mountains in India are still unclimbed?",
- "answer": "Our dataset of 159 notable Indian peaks has <b>8 with no documented summit</b>. The highest is <b>Zemu Gap Peak (7,780 m / 25,525 ft)</b> in Sikkim, one of the world's highest unclimbed named peaks. Most sit in sacred or border zones that are closed to climbers. Two more are <a href=\"/mountains-of-india/nanda-devi/\">closed</a> despite past ascents; see the <a href=\"/mountains-of-india/highest-peaks-in-india/\">full list</a>.",
+ "answer": "Our dataset of 161 notable Indian peaks has <b>8 with no documented summit</b>. The highest is <b>Zemu Gap Peak (7,780 m / 25,525 ft)</b> in Sikkim, one of the world's highest unclimbed named peaks. Most sit in sacred or border zones that are closed to climbers. Two more are <a href=\"/mountains-of-india/nanda-devi/\">closed</a> despite past ascents; see the <a href=\"/mountains-of-india/highest-peaks-in-india/\">full list</a>.",
  "facts": [
   [
    "Unclimbed (our dataset)",
@@ -123,7 +123,7 @@
   ],
   [
    "How many unclimbed peaks are there in India?",
-   "There is no official total. Our dataset of 159 notable peaks has 8 with no documented ascent, and the IMF keeps a longer list of virgin peaks, many of them unnamed."
+   "There is no official total. Our dataset of 161 notable peaks has 8 with no documented ascent, and the IMF keeps a longer list of virgin peaks, many of them unnamed."
   ],
   [
    "Is Kangchenjunga unclimbed?",
@@ -155,7 +155,7 @@
   [
    "/mountains-of-india/highest-peaks-in-india/",
    "Highest peaks in India",
-   "Full list of 159 peaks"
+   "Full list of 161 peaks"
   ],
   [
    "/adventure/himalayan-peak-expeditions/",
