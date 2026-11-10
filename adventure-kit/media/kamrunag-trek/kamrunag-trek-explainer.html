@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 70% 20%, #16365a 0%, #0b1f33 65%); color: #fff; }
+      .kicker { position: absolute; left: 110px; top: 74px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.16em; line-height: 1.1; }
+      .title { position: absolute; left: 110px; top: 122px; font-weight: 800; font-size: 80px; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; }
+      .nts { position: absolute; left: 110px; top: 226px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.6); }
+      svg.map { position: absolute; left: 70px; top: 270px; width: 1150px; height: 650px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .side { position: absolute; left: 1360px; top: 290px; width: 460px; }
+      .lab { color: rgba(255,255,255,0.75); font-weight: 800; font-size: 28px; letter-spacing: 0.08em; }
+      .num { font-weight: 800; font-size: 96px; letter-spacing: -0.02em; margin: 4px 0 18px; white-space: nowrap; }
+      .altbar { position: relative; width: 440px; height: 26px; border-radius: 13px; background: rgba(255,255,255,0.15); margin: 0 0 40px; overflow: hidden; }
+      .altfill { position: absolute; left: 0; top: 0; height: 26px; width: 0; border-radius: 13px; background: #d4a24c; }
+      .stat { display: flex; align-items: baseline; gap: 18px; margin-bottom: 22px; opacity: 0.3; }
+      .stat b { font-weight: 800; font-size: 54px; color: #d4a24c; white-space: nowrap; }
+      .stat span { font-weight: 800; font-size: 30px; white-space: nowrap; }
+      .steps { position: absolute; left: 110px; top: 960px; display: flex; gap: 22px; }
+      .step { display: flex; align-items: center; gap: 14px; height: 76px; padding: 0 30px 0 12px; border-radius: 38px; background: rgba(255,255,255,0.1); font-weight: 800; font-size: 32px; color: rgba(255,255,255,0.55); white-space: nowrap; }
+      .step i { font-style: normal; width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,0.18); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+      .end { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; background: #0b1f33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; opacity: 0; }
+      .etitle { font-size: 64px; font-weight: 800; }
+      .mrow { display: flex; gap: 10px; }
+      .m { width: 118px; height: 96px; border-radius: 14px; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.6); font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
+      .m.on { background: #d4a24c; color: #0b1f33; }
+      .m.fair { background: #fff; color: #0b1f33; box-shadow: 0 0 0 6px #d4a24c; }
+      .legend { display: flex; gap: 40px; font-size: 32px; font-weight: 800; }
+      .legend span { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+      .legend i { width: 30px; height: 30px; border-radius: 8px; display: inline-block; }
+      .endnote { font-size: 36px; font-weight: 500; color: rgba(255,255,255,0.9); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker">KAMRUNAG · MANDI</div>
+        <div class="title">Two ways up to Kamrunag</div>
+        <div class="nts">Schematic map, not to scale</div>
+        <svg class="map" viewBox="0 0 1240 700">
+          <path d="M 60 600 C 160 600 230 590 320 590" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="22" stroke-linecap="round" />
+          <path d="M 320 590 C 430 590 500 560 600 520" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="22" stroke-linecap="round" />
+          <path d="M 600 520 C 700 470 740 360 800 300 S 900 210 960 190" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="16" stroke-linecap="round" />
+          <path d="M 1170 640 C 1180 540 1160 440 1170 360" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="18" stroke-linecap="round" />
+          <path id="drive" d="M 60 600 C 160 600 230 590 320 590 C 430 590 500 560 600 520" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" />
+          <path id="gold" d="M 600 520 C 700 470 740 360 800 300 S 900 210 960 190" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <path id="r2road" d="M 1170 640 C 1180 540 1160 440 1170 360" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12" />
+          <path id="r2foot" d="M 1170 360 C 1120 290 1040 220 960 190" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12" />
+          <circle cx="60" cy="600" r="14" fill="#fff" />
+          <text x="60" y="656" font-size="32" text-anchor="middle">Mandi</text>
+          <circle cx="320" cy="590" r="14" fill="#fff" />
+          <text x="320" y="646" font-size="32" text-anchor="middle">Sundernagar</text>
+          <text x="470" y="530" font-size="28" text-anchor="middle" style="fill:rgba(255,255,255,0.8)">35 km</text>
+          <circle cx="600" cy="520" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <text x="600" y="584" font-size="34" text-anchor="middle">Rohanda</text>
+          <text x="640" y="350" font-size="28" text-anchor="end" style="fill:rgba(255,255,255,0.85)">about 6–7 km on foot</text>
+          <g id="r2lab" opacity="0.25">
+            <circle cx="1170" cy="640" r="12" fill="#fff" />
+            <text x="1170" y="690" font-size="28" text-anchor="middle">Chail Chowk</text>
+            <circle cx="1170" cy="360" r="12" fill="#fff" />
+            <text x="1200" y="420" font-size="28" text-anchor="start">Jhor</text>
+            <text x="1200" y="510" font-size="26" text-anchor="start" style="fill:rgba(255,255,255,0.8)">20 km</text>
+            <text x="1100" y="250" font-size="26" text-anchor="start" style="fill:rgba(255,255,255,0.8)">4 km</text>
+          </g>
+          <g id="lake">
+            <ellipse cx="960" cy="200" rx="86" ry="26" fill="#3d7ea6" />
+            <path d="M 930 150 L 960 118 L 990 150 Z" fill="#fff" />
+            <path d="M 938 150 L 960 132 L 982 150" fill="none" stroke="#d4a24c" stroke-width="4" />
+            <rect x="942" y="150" width="36" height="26" fill="#fff" />
+            <text x="960" y="96" font-size="34" text-anchor="middle">Kamrunag lake &amp; temple</text>
+          </g>
+          <g id="car" transform="translate(60,600)"><rect x="-34" y="-30" width="68" height="26" rx="10" fill="#fff" /><rect x="-22" y="-46" width="40" height="20" rx="6" fill="#fff" /><circle cx="-20" cy="-2" r="9" fill="#d4a24c" /><circle cx="20" cy="-2" r="9" fill="#d4a24c" /></g>
+          <g id="walker" transform="translate(600,520)" opacity="0"><circle r="22" fill="#d4a24c" stroke="#fff" stroke-width="5" /><circle cx="0" cy="-6" r="5" fill="#0b1f33" /><rect x="-4" y="0" width="8" height="12" rx="3" fill="#0b1f33" /></g>
+        </svg>
+        <div class="steps">
+          <div class="step" id="s1"><i>1</i>Night in Mandi</div>
+          <div class="step" id="s2"><i>2</i>Drive to Rohanda</div>
+          <div class="step" id="s3"><i>3</i>Climb with a guide</div>
+          <div class="step" id="s4"><i>4</i>Darshan, back by afternoon</div>
+        </div>
+        <div class="side">
+          <div class="lab">LAKE &amp; TEMPLE HEIGHT</div>
+          <div class="num" id="alt">0 m</div>
+          <div class="altbar"><div class="altfill" id="af"></div></div>
+          <div class="stat" id="k1"><b>3–4 hrs</b><span>up from Rohanda</span></div>
+          <div class="stat" id="k2"><b>~4 months</b><span>winter closure</span></div>
+          <div class="stat" id="k3"><b>Mid-June</b><span>Saranahuli fair</span></div>
+        </div>
+      </div>
+      <div class="end clip" id="end" data-start="9" data-duration="3" data-track-index="1">
+        <div class="etitle">When the temple is open</div>
+        <div class="mrow"><div class="m">Jan</div><div class="m">Feb</div><div class="m">Mar</div><div class="m on">Apr</div><div class="m on">May</div><div class="m fair">Jun</div><div class="m on">Jul</div><div class="m on">Aug</div><div class="m on">Sep</div><div class="m on">Oct</div><div class="m on">Nov</div><div class="m on">Dec</div></div>
+        <div class="legend"><span><i style="background:#d4a24c"></i>Open (Jul–Aug: clear days only)</span><span><i style="background:#fff"></i>Mid-June fair</span><span><i style="background:rgba(255,255,255,0.18)"></i>Deep winter: closed</span></div>
+        <div class="endnote">Cab + Mandi stay + local guide in one plan · Price: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const drive = document.getElementById("drive"), gold = document.getElementById("gold");
+      const L1 = drive.getTotalLength(), L2 = gold.getTotalLength();
+      drive.style.strokeDasharray = L1; gold.style.strokeDasharray = L2;
+      const car = document.getElementById("car"), walker = document.getElementById("walker");
+      const altEl = document.getElementById("alt"), af = document.getElementById("af");
+      const st = { a: 0, b: 0 };
+      const upd = () => {
+        drive.style.strokeDashoffset = (L1 * (1 - st.a)).toFixed(1);
+        const p1 = drive.getPointAtLength(L1 * st.a);
+        car.setAttribute("transform", `translate(${p1.x.toFixed(1)},${p1.y.toFixed(1)})`);
+        gold.style.strokeDashoffset = (L2 * (1 - st.b)).toFixed(1);
+        const p2 = gold.getPointAtLength(L2 * st.b);
+        walker.setAttribute("transform", `translate(${p2.x.toFixed(1)},${p2.y.toFixed(1)})`);
+        altEl.textContent = Math.round(3334 * st.b).toLocaleString("en-IN") + " m";
+        af.style.width = (440 * st.b).toFixed(1) + "px";
+      };
+      tl.fromTo(st, { a: 0 }, { a: 1, duration: 2.0, ease: "power1.inOut", onUpdate: upd }, 0.5);
+      tl.to(walker, { opacity: 1, duration: 0.3 }, 2.5);
+      tl.to(car, { opacity: 0.35, duration: 0.3 }, 2.5);
+      tl.fromTo(st, { b: 0 }, { b: 1, duration: 3.0, ease: "power1.inOut", onUpdate: upd, immediateRender: false }, 2.7);
+      tl.fromTo("#lake", { scale: 0.9, transformOrigin: "960px 170px" }, { scale: 1, duration: 0.6, ease: "back.out(2)" }, 5.7);
+      tl.fromTo("#r2lab", { opacity: 0.25 }, { opacity: 1, duration: 0.5 }, 6.4);
+      tl.fromTo("#r2road", { opacity: 0.2 }, { opacity: 1, duration: 0.5 }, 6.4);
+      tl.fromTo("#r2foot", { opacity: 0.2 }, { opacity: 1, duration: 0.5 }, 6.9);
+      [["#k1", 4.2], ["#k2", 6.4], ["#k3", 7.4]].forEach(([id, t]) => {
+        tl.to(id, { opacity: 1, duration: 0.35 }, t);
+      });
+      [["#s2", 0.9], ["#s3", 2.7], ["#s4", 5.7]].forEach(([id, t]) => {
+        tl.to(id, { backgroundColor: "#d4a24c", color: "#0b1f33", duration: 0.35, ease: "power1.out" }, t);
+        tl.to(id + " i", { backgroundColor: "#0b1f33", duration: 0.35 }, t);
+      });
+      tl.to("#main", { opacity: 0, duration: 0.5 }, 9);
+      tl.to("#end", { opacity: 1, duration: 0.5, ease: "power1.out" }, 9);
+      tl.from(".end .m", { y: 30, opacity: 0, duration: 0.35, stagger: 0.05, ease: "power2.out" }, 9.1);
+      tl.from(".legend span", { y: 20, opacity: 0, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 9.8);
+      tl.set("#s1", { backgroundColor: "#d4a24c", color: "#0b1f33" }, 0.2); tl.set("#s1 i", { backgroundColor: "#0b1f33" }, 0.2);
+      window.__timelines["main"] = tl;
+      tl.seek(0); upd();
+    </script>
+  </body>
+</html>
