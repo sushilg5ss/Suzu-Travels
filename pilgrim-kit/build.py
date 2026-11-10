@@ -112,7 +112,7 @@ def check(slug, body, allowed=None):
 
 
 BASE = ("pilgrimage-tours",)  # full kit CSS; every other page gets only the CSS rules it uses
-KEEP_CLASSES = {"hl", "in", "on", "page-content", "page-header", "entry-title"}  # added by kit.js, or the theme's own wrappers
+KEEP_CLASSES = {"hl", "in", "on", "sent", "bad", "page-content", "page-header", "entry-title"}  # added by kit.js, or the theme's own wrappers
 
 
 def css_rules(css):
@@ -160,7 +160,10 @@ def assemble(body_html, slug=None):
     body = min_html(body_html)
     css = min_css((KIT / "kit.css").read_text(encoding="utf-8"))
     if slug and slug not in BASE:
-        css = prune_css(css, body)
+        # kit-conv.css (10 Nov 2026): lead forms, package cards, plan box. Content pages only, pruned like the rest,
+        # so pages that do not use those classes build byte-identical; the hub keeps the plain kit CSS.
+        conv = KIT / "kit-conv.css"
+        css = prune_css(css + (min_css(conv.read_text(encoding="utf-8")) if conv.exists() else ""), body)
     media = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
     if "FONTSHA" in css:
         if not media.get("fonts"):
@@ -168,6 +171,12 @@ def assemble(body_html, slug=None):
         css = css.replace("FONTSHA", media["fonts"])
     js = min_js((KIT / "kit.js").read_text(encoding="utf-8"))
     body = body.replace("<script>/*KITJS*/</script>", f"<script>{js}</script>")
+    if "<script>/*CONVJS*/</script>" in body:  # pages with "conv": true in src/pages/<slug>.json
+        cj = min_js((KIT / 'kit-conv.js').read_text(encoding='utf-8'))
+        # wptexturize loses track of <script> once it meets a "<" and then turns && into &#038;&#038; (JS breaks live)
+        if "<" in cj:
+            raise SystemExit("kit-conv.js: no '<' allowed in the minified script (write 12 > i, not i < 12)")
+        body = body.replace("<script>/*CONVJS*/</script>", f"<script>{cj}</script>")
     return f"<style>{css}</style>{body}"
 
 

@@ -67,6 +67,8 @@ Owner: Suzu Travels (Sushil Kumar). Built by Claude with Sushil on 8 Oct 2026; r
 
 **Schema output:** Article + HinduTemple/PlaceOfWorship (if `place`) + TouristTrip (if `trip_name`) + FAQPage.
 
+**Conversion add-on (10 Nov 2026, first used on `51-shakti-peeth`; optional, other pages build byte-identical):** `conv: true` inlines `kit-conv.js` (lead forms → `admin-ajax.php` action `suzu_submit_landing_form`, GA4 `form_submit`/`click_call`/`click_whatsapp`/`package_card_click`/`brochure_download` + Ads conversion, sticky "Get Free Quote" → `#plan-form` instead of the site pop-up, live Google rating from `/suzu-reviews.json`) and `kit-conv.css` (pruned per page). Extra optional fields: `hero_cta` [[text, href]×2] · `byline` (html above the hero) · `planbox_html` (between hero and nav) · `plan_html` (appended inside #plan) · `post_faq` [sections after the FAQ] · `more_unique` [slugs → one "Keep exploring" grid] · `extra_sections[].nav: false` · `story.html_after` · `published` / `author_ld` (Article LD). Lead forms: never print prices (build.py ₹ rule still applies — cards say "Price: Get Quote").
+
 ## 6. Media (every page has a HyperFrames hero; build.py refuses a page without a video)
 | Composition | Spec | What it shows |
 |---|---|---|
@@ -109,6 +111,7 @@ Every content page gets a `"gallery"` block in `src/pages/<slug>.json` (written 
 ## 8. WordPress traps (same server as the mountain section)
 **wpautop inside scripts:** WordPress inserts line breaks and `</p>` before block-level tags (`<div>`, `<h3>`, `<p>`…) even inside `<script>` — never write block-level HTML inside JS strings (kit.js builds DOM with `createElement`). `build.py`'s JS check: `node --check` the inline script of every new build.
 **wptexturize:** " - " becomes " – " on output; `gen_pages.e()` already does this so cmp_live shows 0 diffs.
+**wptexturize and `<` in inline JS:** once an inline script contains a `<` (e.g. `i < 12`), wptexturize stops treating the rest as script and turns `&&` into `&#038;&#038;` on output, so the script fails with "Invalid or unexpected token" (seen live on 51-shakti-peeth, 10 Nov). Write comparisons the other way round (`12 > i`). build.py refuses a `<` in kit-conv.js; after publishing, `node --check` the live inline scripts.
 One-line content only (wpautop). WP Rocket: meta-only changes don't purge — re-save the title. Every Royal MCP write returns a 72-h undo token → LOG.md. Hostinger bot protection: space requests ≥ 1 s, a 403 "Checking your browser" is not a broken page. **Never**: delete content, change existing URLs/slugs, touch the static homepage, menus, theme, plugins, PHP, .htaccess, or bookable package/product pages (only link to them).
 
 ## 9. Keyword owners (avoid cannibalisation — research/site-inventory.md)

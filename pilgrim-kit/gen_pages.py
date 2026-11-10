@@ -137,6 +137,16 @@ def tile(v, thumb=True):
     return f'<a class="szp-link{" has-th" if th else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
 
 
+def more_tile(x):
+    """One "Keep exploring" tile: a live slug (string) or {path, label, blurb}. Thumbnail declared 4:3, as the files are."""
+    v = LIVE[x] if isinstance(x, str) else x
+    th = globals().get("THUMBS", {}).get(v["path"])
+    if th:
+        used(th[2])
+    img = f'<img class="th" src="{e(th[0])}" alt="{e(th[1])}" width="400" height="300" loading="lazy" decoding="async" />' if th else ""
+    return f'<a class="szp-link{" has-th" if th else ""}{" pkg" if v.get("pkg") else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
+
+
 BASE = ("pilgrimage-tours", "12-jyotirlinga")
 KIND_LABEL = {"circuit": "Yatras &amp; circuits", "temple": "Temple guides", "guide": "Planning guides", "yatra": "Seasonal yatras"}
 
@@ -358,7 +368,7 @@ def hub():
 <div class="szp-btns"><a class="szp-btn gold" href="{jl_href}">Open the 12 Jyotirlinga guide</a><a class="szp-btn ghost" href="{PKG["jyotirlinga"][0]}">See our 12 Jyotirlinga tour</a></div></div></div>
 <ul class="szp-shrines" style="color:var(--ink)">{jl_cards}</ul></section>
 <section class="szp-sec" id="shakti"><span class="k">शक्तिपीठ · Shakti Peeths</span><h2>Where Sati fell: the Shakti Peeths of Himachal</h2>
-<p class="lead">When Sati gave up her body at her father Daksha's yagna, Shiva carried her through the worlds in grief. Vishnu's Sudarshan Chakra freed him — and wherever a part of her fell, a seat of the Goddess arose. Five of the most visited are a day's drive from our office in Bilaspur.</p>
+<p class="lead">When Sati gave up her body at her father Daksha's yagna, Shiva carried her through the worlds in grief. Vishnu's Sudarshan Chakra freed him — and wherever a part of her fell, <a href="/pilgrimage-tours/51-shakti-peeth/">a seat of the Goddess</a> arose. Five of the most visited are a day's drive from our office in Bilaspur.</p>
 <ol class="szp-story" style="background:var(--night);border-radius:22px;padding:18px">
 <li><b>Daksha's yagna</b><span>Daksha invites every god but Shiva. Sati goes anyway — and is humiliated.</span></li>
 <li><b>Sati's sacrifice</b><span>Unable to bear the insult to her husband, she gives up her body.</span></li>
@@ -765,6 +775,7 @@ def content_page(slug):
             st += f'<div class="szp-media">{lazy_video(m, "story", s["h2"])}<div>' + "".join(f'<p style="color:rgba(247,234,214,.85)">{p}</p>' for p in s.get("more", [])) + "</div></div>"
         else:
             st += "".join(f'<p style="color:rgba(247,234,214,.85)">{p}</p>' for p in s.get("more", []))
+        st += s.get("html_after", "")  # optional (10 Nov 2026): e.g. an H3 question block at the end of the legend
         bg = gal_role(c, "bg")
         if bg:
             secs_n = len(secs)
@@ -805,23 +816,37 @@ def content_page(slug):
         t = c["tips"]
         add("tips", "Rules &amp; tips", f'<span class="k">Before you go</span><h2>{e(t["h2"])}</h2><ol class="szp-steps">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in t["items"]) + "</ol>")
     for x in c.get("extra_sections", []):
-        add(x["id"], x["label"], f'<span class="k">{e(x.get("kicker", ""))}</span><h2>{e(x["h2"])}</h2>{x["html"]}', x.get("cls", ""))
+        xh = f'<span class="k">{e(x.get("kicker", ""))}</span><h2>{e(x["h2"])}</h2>{x["html"]}'
+        if x.get("nav", True):
+            add(x["id"], x["label"], xh, x.get("cls", ""))
+        else:  # optional (10 Nov 2026): a section without an in-page menu item, so the menu stays short
+            secs.append(f'<section class="szp-sec{(" " + x["cls"]) if x.get("cls") else ""}" id="{x["id"]}">{xh}</section>')
     pk = "".join(pkg_link(k) for k in c.get("packages", []) if k in PKG)
     secs.append(f'<section class="szp-sec" id="plan">{quote_block(c.get("quote_h2", "Plan this yatra with Suzu"), c.get("quote_text", "Suzu Travels is an HP Tourism-registered travel agent based in Bilaspur, Himachal Pradesh. Tell us your dates and group and we will plan the route, the stays and the pace around you."), watxt)}'
-                + (f'<div class="szp-links" style="margin-top:18px">{pk}</div>' if pk else "") + "</section>")
+                + (f'<div class="szp-links" style="margin-top:18px">{pk}</div>' if pk else "") + c.get("plan_html", "") + "</section>")
     add("faq", "FAQ", f'<span class="k">FAQ</span><h2>{e(c.get("faq_h2", "Questions pilgrims ask"))}</h2>{faq(c["faqs"])}', "alt")
-    links = "".join(tile(LIVE[s]) for s in c.get("links", []) if s in LIVE) + f'<a class="szp-link" href="{HUB}"><span class="n">All pilgrimage tours</span><span class="c">Jyotirlingas, Shakti Peeths, Char Dham &amp; more</span></a>'
-    secs.append(f'<section class="szp-sec" id="more"><h2>Keep exploring</h2><div class="szp-links">{links}</div>{guides_block(exclude=(slug,))}<h3 class="szp-gh">Sources</h3>{sources([(a, b) for a, b in c["sources"]])}{photo_credits(c)}'
+    for x in c.get("post_faq", []):  # optional (10 Nov 2026): e.g. a free checklist offer; no menu item
+        secs.append(f'<section class="szp-sec{(" " + x["cls"]) if x.get("cls") else ""}" id="{x["id"]}">{x["html"]}</section>')
+    if c.get("more_unique"):  # optional (10 Nov 2026): ONE grid of hand-picked unique links instead of the repeated guide grids
+        more = "".join(more_tile(x) for x in c["more_unique"])
+    else:
+        links = "".join(tile(LIVE[s]) for s in c.get("links", []) if s in LIVE) + f'<a class="szp-link" href="{HUB}"><span class="n">All pilgrimage tours</span><span class="c">Jyotirlingas, Shakti Peeths, Char Dham &amp; more</span></a>'
+        more = f'<div class="szp-links">{links}</div>{guides_block(exclude=(slug,))}'
+    secs.append(f'<section class="szp-sec" id="more"><h2>Keep exploring</h2>{"<div class=" + chr(34) + "szp-links" + chr(34) + ">" + more + "</div>" if c.get("more_unique") else more}<h3 class="szp-gh">Sources</h3>{sources([(a, b) for a, b in c["sources"]])}{photo_credits(c)}'
                 f'<p class="szp-note">Legends are retold in our own words as traditions. ' + ("Photographs are by the Wikimedia Commons contributors credited above, used under their licences; illustrated animations" if c.get("gallery") else "Animations") + ' are original artwork by Suzu Travels.</p></section>')
     hph = gal_role(c, "hero")
     hmedia = (ph_img(hph, "szp-hero-img", eager=True) + f'<span class="szp-hero-cr">{credit(hph)}</span>') if hph else hero_video(m, "hero", c.get("hero_alt", c["title"]))
     hero = (f'<section class="szp-hero{" ph" if hph else ""}">{hmedia}<div class="szp-hero-in"><span class="k">{e(c["kicker"])}</span>'
             f'<p class="szp-tag"><span class="dv">{e(c["deva"])}</span>{e(c["tag"])}</p><p class="szp-sub">{c["sub"]}</p>'
             + ('<ul class="szp-chips">' + "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in c.get("chips", [])) + "</ul>" if c.get("chips") else "")
-            + f'<div class="szp-btns"><a class="szp-btn gold" href="#{navi[1][0] if len(navi) > 1 else "overview"}">{e(c.get("cta1", "Read the guide"))}</a><a class="szp-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Plan on WhatsApp</a></div>{trust(c.get("verified"))}</div></section>')
-    body = hero + nav(navi if len(navi) <= 10 else [x for x in navi if x[0] != "photos"], wa(watxt)) + "".join(secs)
-    graph = [{"@type": "Article", "headline": c["title"], "inLanguage": "en-IN", "dateModified": c.get("modified", "2026-10-08"),
-              "author": {"@type": "Organization", "name": "Suzu Travels"}, "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/"}}]
+            + (f'<div class="szp-btns"><a class="szp-btn gold" href="{c["hero_cta"][0][1]}">{e(c["hero_cta"][0][0])}</a><a class="szp-btn ghost" href="{c["hero_cta"][1][1]}">{e(c["hero_cta"][1][0])}</a></div>'
+               if c.get("hero_cta") else
+               f'<div class="szp-btns"><a class="szp-btn gold" href="#{navi[1][0] if len(navi) > 1 else "overview"}">{e(c.get("cta1", "Read the guide"))}</a><a class="szp-btn ghost" href="{wa(watxt)}" target="_blank" rel="noopener">Plan on WhatsApp</a></div>')
+            + f'{trust(c.get("verified"))}</div></section>')
+    byline = f'<p class="szp-byline">{c["byline"]}</p>' if c.get("byline") else ""  # optional (10 Nov 2026): last updated / written by, under the H1
+    body = byline + hero + c.get("planbox_html", "") + nav(navi if len(navi) <= 10 else [x for x in navi if x[0] != "photos"], wa(watxt)) + "".join(secs)
+    graph = [{"@type": "Article", "headline": c["title"], "inLanguage": "en-IN", **({"datePublished": c["published"]} if c.get("published") else {}), "dateModified": c.get("modified", "2026-10-08"),
+              "author": c.get("author_ld", {"@type": "Organization", "name": "Suzu Travels"}), "publisher": {"@type": "TravelAgency", "name": "Suzu Travels", "url": "https://suzutravels.com/"}}]
     if c.get("place"):
         p = c["place"]
         graph.append({"@type": p.get("type", "HinduTemple"), "name": p["name"], "alternateName": p.get("alt"),
@@ -831,7 +856,10 @@ def content_page(slug):
     if c.get("trip_name"):
         graph.append({"@type": "TouristTrip", "name": c["trip_name"], "provider": {"@type": "TravelAgency", "name": "Suzu Travels", "telephone": "+91-7087488961"}})
     graph.append(faq_ld(c["faqs"]))
-    return page(body + ld(*graph))
+    out = page(body + ld(*graph))
+    if c.get("conv"):  # optional (10 Nov 2026): lead forms / package cards / sticky-bar retarget (kit-conv.js, inlined by build.py)
+        out += "<script>/*CONVJS*/</script>"
+    return out
 
 
 PAGES = {"pilgrimage-tours": hub, "12-jyotirlinga": jyotirlinga_page}

@@ -1,0 +1,78 @@
+/* Suzu Pilgrim Kit — conversion add-on (10 Nov 2026). Plan box, trust line, package cards, short lead form, checklist offer,
+   wide shrine table extras. Inlined by build.py for content pages only and pruned per page (unused rules are dropped),
+   so pages without these classes build exactly as before. Same "diya & dusk" palette as kit.css. */
+.szp-byline{font-size:14px;color:var(--mid);margin:0 0 14px;line-height:1.5}
+.szp-byline b{color:var(--maroon)}
+/* plan box directly under the hero */
+.szp-planbox{margin:22px 0 6px;background:#fff7ea;border:1px solid #f3d3a3;border-radius:22px;padding:22px 24px;display:grid;grid-template-columns:1.5fr 1fr;gap:18px;align-items:center}
+.szp-planbox .t{font-family:"SZPS","Cormorant Garamond",Georgia,serif;font-size:clamp(24px,2.6vw,32px);line-height:1.15;color:var(--maroon);font-weight:700;margin:0 0 8px}
+.szp-planbox p{margin:0 0 10px;font-size:16px}
+.szp-planbox .szp-btns{justify-content:flex-end}
+.szp-planbox .szp-btn.line{background:#fff}
+.szp-trustline{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 10px;margin:4px 0 0;padding:12px 0 0;border-top:1px dashed #f0cf9c;list-style:none;font-size:14px;color:var(--mid)}
+.szp-trustline li{margin:0;padding:0 0 0 18px;position:relative}
+.szp-trustline li:before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+.szp-trustline a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--saff)}
+@media(max-width:800px){.szp-planbox{grid-template-columns:1fr;padding:18px}.szp-planbox .szp-btns{justify-content:flex-start}}
+/* package cards */
+.szp-pk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:22px 0 4px}
+.szp-pkc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 10px 26px rgba(90,15,30,.06)}
+.szp-pkc .tg{display:inline-block;align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#3d0d18;background:var(--gold3);border-radius:999px;padding:4px 10px;margin-bottom:10px}
+.szp-pkc h3{margin:0 0 6px;font-size:20px}
+.szp-pkc .rt{font-size:15px;color:var(--mid);margin:0 0 8px}
+.szp-pkc .mt{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;padding:0;list-style:none}
+.szp-pkc .mt li{font-size:13px;font-weight:700;background:var(--ivory);border:1px solid var(--line);border-radius:999px;padding:4px 10px;margin:0}
+.szp-pkc .pr{font-weight:800;color:var(--maroon);margin:0 0 8px}
+.szp-pkc .inc{margin:0 0 14px;padding:0 0 0 18px;font-size:15px}
+.szp-pkc .inc li{margin:0 0 4px}
+.szp-pkc .nt{font-size:13px;color:var(--mid);margin:0 0 12px}
+.szp-pkc .szp-btns{margin-top:auto;gap:10px}
+.szp-pkc .szp-btn{padding:12px 18px;font-size:15px}
+.szp-pkc .go{font-weight:700;font-size:15px;align-self:center;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--saff)}
+@media(max-width:980px){.szp-pk{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.szp-pk{grid-template-columns:1fr}}
+/* short lead form */
+.szp-lf{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin:22px 0 0;box-shadow:0 12px 30px rgba(90,15,30,.07);scroll-margin-top:150px}
+.szp-quote+.szp-lf{margin-top:18px}
+.szp-lf .t{font-family:"SZPS","Cormorant Garamond",Georgia,serif;font-size:clamp(22px,2.4vw,30px);line-height:1.15;color:var(--maroon);font-weight:700;margin:0 0 4px}
+.szp-lf .s{font-size:15px;color:var(--mid);margin:0 0 14px}
+.szp-lf .fl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.szp-lf label{display:block;font-size:13px;font-weight:800;color:var(--maroon);margin:0}
+.szp-lf label span{display:block;margin-bottom:5px}
+.szp-lf input,.szp-lf select{width:100%;font:inherit;font-size:16px;padding:12px 12px;border:1.5px solid #e2cfae;border-radius:12px;background:#fffdf8;color:var(--ink);min-height:48px}
+.szp-lf input:focus,.szp-lf select:focus{outline:none;border-color:var(--saff);box-shadow:0 0 0 3px rgba(232,115,31,.18)}
+.szp-lf input.bad{border-color:var(--no)}
+.szp-lf .er{display:none;color:var(--no);font-size:13px;font-weight:700;margin-top:4px}
+.szp-lf .bad+.er{display:block}
+.szp-lf .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.szp-lf .ft{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px}
+.szp-lf .ft .szp-btn{border:0;cursor:pointer;font-family:inherit}
+.szp-lf .ft p{margin:0;font-size:14px;color:var(--mid);flex:1 1 220px}
+.szp-lf .pk{display:none;font-size:14px;font-weight:700;color:var(--maroon);background:#fff4e2;border:1px solid #f3d3a3;border-radius:10px;padding:8px 12px;margin:0 0 12px}
+.szp-lf .pk.on{display:block}
+.szp-lf .ok{display:none;text-align:left}
+.szp-lf.sent .fl,.szp-lf.sent .ft,.szp-lf.sent .pk,.szp-lf.sent .s{display:none}
+.szp-lf.sent .ok{display:block}
+.szp-lf.sent>.t{display:none}
+.szp-lf .ok p{margin:0 0 10px}
+.szp-lf.compact{background:#fffaf2}
+@media(max-width:900px){.szp-lf .fl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.szp-lf{padding:18px}.szp-lf .fl{grid-template-columns:1fr}.szp-lf .ft .szp-btn{width:100%;justify-content:center}}
+/* free checklist offer */
+.szp-mag{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:center;background:linear-gradient(135deg,#fff7ea,#fdebd0);border:1px solid #f3d3a3;border-radius:22px;padding:24px}
+.szp-mag .t{font-family:"SZPS","Cormorant Garamond",Georgia,serif;font-size:clamp(22px,2.4vw,30px);color:var(--maroon);font-weight:700;margin:0 0 6px;line-height:1.15}
+.szp-mag p{margin:0 0 8px;font-size:16px}
+.szp-mag .szp-lf{margin:0;box-shadow:none}
+.szp-mag .szp-lf .fl{grid-template-columns:1fr}
+@media(max-width:800px){.szp-mag{grid-template-columns:1fr;padding:18px}}
+/* wide shrine table: Devi, Bhairava, flag; "Named in" is a column on desktop and a tap-to-expand note on phones */
+.szp-tbl.wide{min-width:980px}
+.szp-tbl .flag{font-size:13px;color:var(--warn);font-weight:700}
+.szp-tbl .szp-mx{display:none;margin-top:4px;font-size:13px;color:var(--mid)}
+.szp-tbl .szp-mx summary{cursor:pointer;font-weight:700;color:var(--maroon2)}
+@media(max-width:700px){.szp-tbl.wide{min-width:760px}.szp-tbl .dtc{display:none}.szp-tbl .szp-mx{display:block}}
+/* region cards with counts */
+.szp-reg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:16px 0 0}
+.szp-reg .szp-card h3 b{color:var(--saff)}
+.szp-about{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:16px 18px;margin:18px 0 0;font-size:15px}
+.szp-about p{margin:0}
