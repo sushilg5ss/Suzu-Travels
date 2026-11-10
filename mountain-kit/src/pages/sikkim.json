@@ -1,0 +1,280 @@
+{
+ "kind": "state",
+ "path": "/mountains-of-india/sikkim/",
+ "state": "sikkim",
+ "title": "Mountains in Sikkim: All 19 High Peaks, Their Status & Viewpoints",
+ "seo_title": "Mountains in Sikkim: Highest Peaks, Status & Viewpoints",
+ "seo_desc": "Kangchenjunga (8,586 m) leads Sikkim's 19 high peaks, but it is sacred and closed. Heights, first ascents, which peaks are open, permits and viewpoints.",
+ "focus": "mountains in sikkim",
+ "commercial": false,
+ "label": "Mountains of Sikkim",
+ "blurb": "19 peaks · Kangchenjunga 8,586 m, sacred and closed",
+ "verified": "10 Nov 2026",
+ "kicker": "Sikkim · Kangchenjunga Himal",
+ "tag": "Sikkim's mountains: India's highest summit, nine more 7,000ers, and most of them left alone.",
+ "sub": "All 19 high peaks of Sikkim in one sourced table, from 5,830 m Frey Peak to 8,586 m Kangchenjunga, with who climbed them, which are sacred or restricted, the short official list of peaks open to small expeditions, and where you can see the giants without climbing.",
+ "chips": [
+  [
+   "8,586 m",
+   "Kangchenjunga"
+  ],
+  [
+   "10 peaks",
+   "above 7,000 m"
+  ],
+  [
+   "19 peaks",
+   "in our table"
+  ],
+  [
+   "Since 2001",
+   "Kangchenjunga closed"
+  ],
+  [
+   "May–Oct",
+   "state season"
+  ]
+ ],
+ "hero_alt": "Kangchenjunga at sunrise seen from Gangtok, Sikkim",
+ "ladder_alt": "Animated chart of seven Sikkim peaks at their true heights: Frey Peak, Tinchenkhang, Siniolchu, Pauhunri, Kabru North, Jongsong and Kangchenjunga",
+ "q": "Which is the highest peak in Sikkim?",
+ "answer": "<b>Kangchenjunga</b> (8,586 m / 28,169 ft) is the highest peak in Sikkim and India, but it is sacred and cannot be climbed from Sikkim. Nine more top 7,000 m, led by <b>Jongsong</b> (7,462 m) and <b>Kabru North</b> (7,412 m). Only a few smaller peaks, such as Frey Peak (5,830 m), are open to small expeditions. All 19 are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  [
+   "Highest peak",
+   "Kangchenjunga, 8,586 m / 28,169 ft: India's highest, the world's third"
+  ],
+  [
+   "Climbing status",
+   "Sacred; closed to climbers by Sikkim since 2001"
+  ],
+  [
+   "Highest climbed from Sikkim",
+   "Jongsong, 7,462 m / 24,482 ft (first ascent 1930)"
+  ],
+  [
+   "Peaks in this list",
+   "19 (5,830–8,586 m), 10 of them above 7,000 m"
+  ],
+  [
+   "Status",
+   "12 restricted or sacred, 3 unclimbed, 4 open"
+  ],
+  [
+   "Season",
+   "May–October (state); April–May and October–November in practice"
+  ]
+ ],
+ "intro": [
+  "Sikkim is a small state with some of the biggest mountains on Earth. Its northern and western borders run along the <b>Kangchenjunga Himal</b> and the <b>Janak Himal</b>, where India meets Nepal and Tibet, and the Singalila ridge runs south along the Nepal border. From Gangtok and Pelling you look straight at peaks above 7,000 m.",
+  "The mountains in Sikkim are also among the most protected in the country. Kangchenjunga and several other summits are sacred to the people of Sikkim, most of the North Sikkim giants sit in restricted border areas, and recent ascents have been made by the Army, the Himalayan Mountaineering Institute (HMI) and other government teams. Only a handful of lower peaks are on the state's official list for small expeditions.",
+  "Our table holds the 19 Sikkim peaks in the dataset behind our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>: one eight-thousander, nine more above 7,000 m, six in the 6,000s and three in the 5,000s. Twelve are restricted or sacred, three have never been climbed, and four are open."
+ ],
+ "table": {
+  "where": {
+   "state": "sikkim"
+  },
+  "h2": "Mountains in Sikkim by height: all 19 peaks",
+  "label": "The list",
+  "text": [
+   "The animation sets seven Sikkim peaks side by side at their true heights, from Frey Peak (5,830 m), an HMI training peak, up to Kangchenjunga (8,586 m).",
+   "Sort the table by height or first ascent; the status column shows which peaks are restricted, unclimbed or open. Ten of them also appear in our <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks list</a>, six in our <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks list</a>, and the three virgin summits in our guide to <a href=\"/mountains-of-india/unclimbed-peaks/\">India's unclimbed peaks</a>."
+  ]
+ },
+ "permits_h2": "Permits for Sikkim's mountains: Indians and foreigners",
+ "permits": [
+  "<b>Foreign visitors</b> need a Protected Area Permit or Restricted Area Permit for Sikkim's high areas. These are usually issued for groups of two or more through a registered Sikkim travel agent, and a 2026 trade report says Sikkim now handles foreigners' permits online. Rules change, so confirm with Sikkim Tourism before you plan. A tourist visa covers open areas; confirm visa rules with the Indian mission.",
+  "<b>Indian visitors</b> do not need an Inner Line Permit to enter Sikkim, but North Sikkim and the high lakes need area permits, arranged locally through registered operators.",
+  "<b>Any peak expedition</b> needs permission from the Indian Mountaineering Foundation (IMF) plus the state's royalty. The IMF base fee for a foreign team of two is US$500 for peaks up to 6,500 m, US$700 for 6,501–7,000 m and US$1,000 above 7,000 m, plus US$500 for liaison-officer equipment; per-member charges apply (IMF, checked 1 Oct 2026). Since 2019 the IMF has not issued permits for Sikkim's sacred peaks. See our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">how to climb in India</a>."
+ ],
+ "extra_sections": [
+  {
+   "id": "sacred",
+   "label": "Sacred peaks",
+   "kicker": "Why most are closed",
+   "h2": "Sacred peaks and the 2001 ban",
+   "html": "<p><b>Kangchenjunga</b> is sacred to the people of Sikkim. In 2001 the state banned climbing it under Notification <b>70/HOME/2001</b>, and the route from Sikkim has been closed since about 2000. Kangchenjunga was first climbed in 1955 by Joe Brown and George Band, from Nepal; the Indian Army climbed it from Sikkim by the north-east spur in 1977. Modern ascents, including the Indian Army's in 2025, go from Nepal. The full story is on our <a href=\"/mountains-of-india/kangchenjunga/\">Kangchenjunga page</a>.</p><div class=\"szm-call\"><p><b>The 2019 row.</b> On 21 August 2019 the Home Ministry's list of 137 peaks opened to foreigners included 24 in Sikkim, Kangchenjunga among them. After protests in Sikkim, the IMF's governing council decided on 28 August 2019 not to issue permits for Sikkim's sacred peaks. Kabru, Pandim and other summits are also regarded as sacred.</p></div>"
+  },
+  {
+   "id": "open",
+   "label": "What is open",
+   "kicker": "Mountaineering in Sikkim",
+   "h2": "Mountaineering in Sikkim: which peaks are open?",
+   "html": "<p>After the 2001 blanket ban, Sikkim re-opened a short list of lower peaks to small expeditions through orders in 2005–07. These are still the only official list we have found, so confirm the current list with Sikkim's Home Department before you plan.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Height</th><th>Area</th></tr></thead><tbody><tr><td><a href=\"#peak-tinchenkhang\">Tinchenkhang</a></td><td>6,010 m / 19,718 ft</td><td>West Sikkim (Thansing valley)</td></tr><tr><td><a href=\"#peak-jopuno\">Jopuno</a></td><td>5,936 m / 19,475 ft</td><td>West Sikkim (Thansing valley)</td></tr><tr><td><a href=\"#peak-lamo-angden\">Lama Wangden (Lamo Angden)</a></td><td>5,868 m / 19,252 ft</td><td>North Sikkim (Lachen)</td></tr><tr><td><a href=\"#peak-frey-peak\">Frey Peak</a></td><td>5,830 m / 19,127 ft</td><td>West Sikkim (Chaunrikiang valley)</td></tr><tr><td>Brumkhangse</td><td>5,635 m / 18,488 ft</td><td>North Sikkim (Yumthang)</td></tr></tbody></table></div><p>The state tourism page, based on a 2005 order, lists a royalty of US$350 for a team of up to four, US$500 for up to eight and US$75 for each extra member, with at most ten expeditions a year. These are 2005–07 figures: confirm them with the state. Frey Peak is also used by HMI Darjeeling for training; see our <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses guide</a>.</p><p><b>Season.</b> The Sikkim government names <b>May to October</b> as the mountaineering season. Our dataset gives <b>April–May and October–November</b>, the months either side of the eastern monsoon. Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before any trip this high.</p>"
+  },
+  {
+   "id": "history",
+   "label": "Record",
+   "kicker": "Climbing record",
+   "h2": "Sikkim's climbing record, 1911 to 2026",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Year</th><th>Event</th></tr></thead><tbody><tr><td><b>1911</b></td><td><a href=\"#peak-pauhunri\">Pauhunri</a> (7,128 m), the source of the Teesta: Alexander Kellas with two Sherpas. It was later recognised as the highest climbed summit on Earth from 1911 to 1928</td></tr><tr><td><b>1930</b></td><td><a href=\"#peak-jongsong-peak\">Jongsong</a> (7,462 m): Hermann Hoerlin and Erwin Schneider. The highest climbed summit in the world until Kamet in 1931</td></tr><tr><td><b>1935</b></td><td>Kabru (7,338 m): C.R. Cooke climbs it solo</td></tr><tr><td><b>1936</b></td><td><a href=\"#peak-siniolchu\">Siniolchu</a> (6,888 m): Karl Wien and Adolf Göttner. Douglas Freshfield had called it \"the most beautiful snow mountain in the world\"</td></tr><tr><td><b>1955</b></td><td><a href=\"#peak-kangchenjunga\">Kangchenjunga</a> (8,586 m): Joe Brown and George Band, from Nepal</td></tr><tr><td><b>1994</b></td><td><a href=\"#peak-kabru-north\">Kabru North</a> (7,412 m), the southernmost 7,000 m peak on Earth: Indian Army, 12 summiters on 10 May</td></tr><tr><td><b>2022</b></td><td>Domekhang (7,264 m; ITBP gives 7,250 m) climbed on 22 September by an ITBP team and the same day by a joint Army–HMI team; Jongsong's third ascent on 23 September by the joint team</td></tr><tr><td><b>2026</b></td><td>The NDRF \"Shikhar\" expedition (41 members) is flagged off for Jongsong on 4 September; no summit result had been published when we checked</td></tr></tbody></table></div><p>Compare the other states in our <a href=\"/mountains-of-india/highest-peak-in-every-state/\">highest peak in every state</a> guide, or Sikkim's eastern neighbour in our <a href=\"/mountains-of-india/arunachal-pradesh/\">Arunachal Pradesh peaks guide</a>.</p>"
+  },
+  {
+   "id": "views",
+   "label": "Viewpoints",
+   "kicker": "See them without climbing",
+   "h2": "Where to see Sikkim's big peaks",
+   "html": "<p><b>Goecha La</b> (4,940 m / 16,207 ft), on the trek from Yuksom, looks up at Pandim and the south-east face of Kangchenjunga. <b>Sandakphu</b> (3,636 m / 11,929 ft), on the Singalila ridge just across the border in West Bengal, looks across the whole range. <b>Khangchendzonga National Park</b> (1,784 km², in Mangan and Gyalshing districts) was listed by UNESCO in July 2016 as India's first mixed natural and cultural World Heritage Site. More viewpoints are on our <a href=\"/mountains-of-india/kangchenjunga/\">Kangchenjunga guide</a>.</p>"
+  },
+  {
+   "id": "climb",
+   "label": "Where to start",
+   "kicker": "A summit you can book",
+   "h2": "Want to stand on a summit, not just look at one? Try Himachal",
+   "html": "<p>Sikkim's big peaks are sacred, restricted or institute climbs. If you want a Himalayan summit you can plan for next season, Himachal Pradesh has open peaks with established routes.</p><ul class=\"szm-steps\"><li><b>A first snow summit</b><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m) above Manali.</li><li><b>A first 6,000 m peak</b><a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m) near the Baralacha La.</li><li><b>A step up</b><a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m) above the Kullu valley.</li></ul><div class=\"szm-call\"><p><b>Information only.</b> Suzu arranges climbs in Himachal Pradesh only, so we do not sell Sikkim peaks. For every option, see our <a href=\"/mountains-of-india/himachal-pradesh/\">Himachal peaks guide</a>.</p></div>"
+  }
+ ],
+ "quote_h2": "Inspired by Kangchenjunga? Climb your first big peak in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Sikkim peaks. If a first snow summit or a 6,000 m peak is your goal, Himachal is the place to start: Friendship Peak first, then Yunam or Deo Tibba. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Sikkim's mountains: your questions",
+ "faqs": [
+  [
+   "Which is the highest peak in Sikkim?",
+   "Kangchenjunga, 8,586 m (28,169 ft), on the Sikkim–Nepal border. It is the highest peak in India and the third-highest in the world."
+  ],
+  [
+   "Is Kangchenjunga open to climbers in Sikkim?",
+   "No. Sikkim banned climbing it in 2001 because it is sacred. Modern ascents, including the Indian Army's in 2025, go from Nepal."
+  ],
+  [
+   "How many peaks in Sikkim are above 7,000 m?",
+   "Ten in our dataset, Kangchenjunga included: nine more besides it, such as Jongsong (7,462 m), Kabru North (7,412 m) and Pauhunri (7,128 m)."
+  ],
+  [
+   "Which peaks are open for mountaineering in Sikkim?",
+   "Sikkim's official list for small expeditions (2005–07 orders) names Frey Peak, Tinchenkhang, Jopuno, Lama Wangden and Brumkhangse. Confirm the current list with the state."
+  ],
+  [
+   "What is the second-highest mountain in Sikkim?",
+   "Zemu Gap Peak (7,780 m) is higher but is a subsidiary summit of Kangchenjunga. The second-highest independent peak is Jongsong, 7,462 m."
+  ],
+  [
+   "Which mountain is the source of the Teesta?",
+   "Pauhunri (7,128 m) on the Sikkim–Tibet border, first climbed by Alexander Kellas in 1911."
+  ],
+  [
+   "When is the mountaineering season in Sikkim?",
+   "The state names May to October. In practice April–May and October–November avoid the monsoon."
+  ],
+  [
+   "Where can I see Sikkim's big peaks?",
+   "From Goecha La (4,940 m) on the trek from Yuksom, and from Sandakphu (3,636 m) in West Bengal. Both look across to Kangchenjunga."
+  ]
+ ],
+ "sources": [
+  [
+   "Sikkim Government — Tourism & Civil Aviation: adventure tourism",
+   "https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fadventure-tourism"
+  ],
+  [
+   "British Mountaineering Council, 19 Sep 2007 — New trekking peaks open in Sikkim",
+   "https://services.thebmc.co.uk/new-trekking-peaks-open-in-sikkim"
+  ],
+  [
+   "Scroll.in, Aug 2019 — IMF will not issue permits for Sikkim's sacred peaks",
+   "https://amp.scroll.in/latest/935435/scroll_in"
+  ],
+  [
+   "The Wire, Aug 2019 — Sikkim and the Centre's move to open sacred peaks",
+   "https://thewire.in/government/sikkim-centre-open-sacred-peaks-kanchenjunga-trekking"
+  ],
+  [
+   "Aviation & Defence Universe, Sep 2022 — Joint expedition summits Jonsang and Domekhang",
+   "https://www.aviation-defence-universe.com/joint-military-civil-expedition-successfully-summits-mount-jonsang-7462m-and-mount-domekhang-7264m-in-north-sikkim/"
+  ],
+  [
+   "EastMojo, 24 Sep 2022 — ITBP team summits Sikkim peak",
+   "https://eastmojo.com/sikkim/2022/09/24/itbp-team-undertakes-first-successful-summit-of-sikkim-peak/"
+  ],
+  [
+   "Raj Bhavan Sikkim, Sep 2025 — Expedition flag-off",
+   "https://rajbhavansikkim.gov.in/?p=17086"
+  ],
+  [
+   "NDRF, Sep 2026 — Shikhar expedition to Mount Jongsong",
+   "https://ndrf.gov.in/en/node/91221"
+  ],
+  [
+   "Wikipedia — Pauhunri",
+   "https://en.wikipedia.org/wiki/Pauhunri"
+  ],
+  [
+   "Wikipedia — Khangchendzonga National Park",
+   "https://en.wikipedia.org/wiki/Khangchendzonga_National_Park"
+  ],
+  [
+   "Travel Trade Journal — Sikkim moves foreigners' permits online",
+   "https://traveltradejournal.com/sikkim-ends-physical-permits-for-foreign-tourists-online-clearance-mandatory/"
+  ],
+  [
+   "Indian Mountaineering Foundation — Peak fees",
+   "https://www.indmount.org/IMF/peakfee"
+  ]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Kangchenjunga"
+ ],
+ "gallery": {
+  "kicker": "In pictures",
+  "h2": "Kangchenjunga, Sikkim's sacred summit",
+  "lead": "Sikkim's highest mountain from Gangtok, from Darjeeling, at night and from the Teesta — real photographs, each credited to its photographer.",
+  "items": [
+   {
+    "role": "hero",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kangchenjunga glowing at sunrise above the Sikkim hills",
+    "cap": "Kangchenjunga at sunrise",
+    "by": "Johannes Bahrdt",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kangchenjunga-from-Gangtok.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-hero-1-768x576.webp",
+    "wp_id": 18745
+   },
+   {
+    "role": "fig",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-fig-2.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-fig-2-768x366.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-fig-2-1024x488.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-fig-2-1536x732.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-fig-2.webp 1920w",
+    "w": 1920,
+    "h": 915,
+    "alt": "The Kangchenjunga massif seen from Darjeeling",
+    "cap": "Kangchenjunga from Darjeeling",
+    "by": "Istiakuddin Ahmed",
+    "lic": "CC BY 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:The_Kangchenjunga_from_darjeeling.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-fig-2-768x366.webp",
+    "wp_id": 18748
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-3.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-3-768x511.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-3-1024x681.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-3-1536x1022.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-3.webp 1920w",
+    "w": 1920,
+    "h": 1277,
+    "alt": "Kangchenjunga at night above the lights of the hills",
+    "cap": "Kangchenjunga at night",
+    "by": "Sudipto2cool",
+    "lic": "CC BY 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kangchenjunga_at_Night.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-3-768x511.webp",
+    "wp_id": 18750
+   },
+   {
+    "role": "g",
+    "src": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-4.webp",
+    "srcset": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-4-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-4-1024x768.webp 1024w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-4-1536x1152.webp 1536w, https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-4.webp 1920w",
+    "w": 1920,
+    "h": 1440,
+    "alt": "Kangchenjunga on the horizon beyond the Teesta barrage",
+    "cap": "From the Teesta barrage",
+    "by": "Nasif05",
+    "lic": "CC BY-SA 4.0",
+    "file": "https://commons.wikimedia.org/wiki/File:Kangchenjunga_From_Teesta_Barrage.jpg",
+    "thumb": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-kangchenjunga-g-4-768x576.webp",
+    "wp_id": 18753
+   }
+  ]
+ }
+}

@@ -403,5 +403,15 @@
   "added": "2026-11-09",
   "state": "arunachal-pradesh",
   "commercial": false
+ },
+ "sikkim": {
+  "id": 20833,
+  "path": "/mountains-of-india/sikkim/",
+  "kind": "state",
+  "label": "Mountains of Sikkim",
+  "blurb": "19 peaks · Kangchenjunga 8,586 m, sacred and closed",
+  "added": "2026-11-10",
+  "state": "sikkim",
+  "commercial": false
  }
 }
