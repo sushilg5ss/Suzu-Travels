@@ -37,6 +37,11 @@ GAL = {
    sub='Six places most Singapore trips we plan include \u2014 the Merlion and Marina Bay, the Cloud Forest at Gardens by the Bay, a beach afternoon on Sentosa, Little India and Chinatown, and the indoor waterfall at Changi before the flight home. Tap any photo to open it full size.',
    slugs=[('singapore-g1','-1024x576'),('singapore-g2','-1024x1024'),('singapore-g3','-1024x781'),
           ('singapore-g4','-731x1024'),('singapore-g5','-1024x673'),('singapore-g6','-1024x683')]),
+ 'malaysia': dict(
+   title='Malaysia in real photos',
+   sub='Six stops from the classic Malaysia loop \u2014 the Petronas Towers and Batu Caves in Kuala Lumpur, the cable car up to Genting Highlands, the Sky Bridge on Langkawi and the heritage of George Town and Kek Lok Si on Penang. Tap any photo to open it full size.',
+   slugs=[('malaysia-g1','-768x1616','50% 12%'),('malaysia-g2','-768x1152','50% 18%'),('malaysia-g3','-1024x768'),
+          ('malaysia-g4','-768x1152'),('malaysia-g5','-1024x819'),('malaysia-g6','-1024x778')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"
@@ -56,13 +61,15 @@ CSS = (".sxg{margin:22px 0 0}"
 def build(country):
     g = GAL[country]
     figs, cr = [], []
-    for slug, size in g['slugs']:
+    for t in g['slugs']:
+        slug, size = t[0], t[1]
+        pos = (' style="object-position:%s"' % t[2]) if len(t) > 2 else ''
         v = M[slug]
         full = v['url']; base, ext = full.rsplit('.', 1)
         base = base.replace('-scaled', '')
         thumb = base + size + '.' + ext
-        figs.append('<figure><a href="%s" target="_blank" rel="noopener"><img src="%s" alt="%s" width="1024" height="768" loading="lazy" decoding="async"></a><figcaption><b>%s</b><span>%s</span></figcaption></figure>'
-                    % (full, thumb, html.escape(v['alt'], quote=True), html.escape(v['cap']), html.escape(v['note'])))
+        figs.append('<figure><a href="%s" target="_blank" rel="noopener"><img src="%s" alt="%s" width="1024" height="768" loading="lazy" decoding="async"%s></a><figcaption><b>%s</b><span>%s</span></figcaption></figure>'
+                    % (full, thumb, html.escape(v['alt'], quote=True), pos, html.escape(v['cap']), html.escape(v['note'])))
         cr.append('%s — <a href="%s" target="_blank" rel="noopener nofollow">%s</a>, %s' % (html.escape(v['cap']), v['src'], html.escape(v['credit']), html.escape(v['license'])))
     return ('<section id="%s-in-photos" class="sx-sec sxg"><style>%s</style><span class="sx-eyebrow">Real photos</span><h2>%s</h2><p class="si-sub">%s</p><div class="sxg-grid">%s</div><p class="sxg-cr">Photos: %s.</p></section>'
             % (country, CSS, html.escape(g['title']), html.escape(g['sub']), ''.join(figs), ' · '.join(cr)))
