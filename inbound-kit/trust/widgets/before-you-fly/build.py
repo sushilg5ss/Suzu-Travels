@@ -11,7 +11,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 KIT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 LIVE = json.load(open(os.path.join(KIT, 'live.json')))
 SLUGS = ['india-e-visa-guide', 'india-travel-insurance', 'sim-card-india-tourist',
-         'upi-and-money-in-india-for-tourists', 'trains-vs-flights-in-india', 'first-time-india-travel-guide']
+         'upi-and-money-in-india-for-tourists', 'trains-vs-flights-in-india', 'first-time-india-travel-guide',
+         # row 28 (11 Nov 2026): india-trip-cost (20694) added as 7th card — 'is India expensive?' is a pre-booking job.
+         # india-festivals-calendar (19963) NOT added: it is trip planning, not a before-you-fly task.
+         'india-trip-cost']
+WORDS = {6: 'Six', 7: 'Seven', 8: 'Eight'}
 PAGES = {
     '11412': dict(trip='Golden Triangle tour', k='Before you fly to Delhi'),
     '11413': dict(trip='Char Dham Yatra', k='Before you fly for the yatra'),
@@ -68,7 +72,7 @@ def build(pid):
     html = ('<!--szt:before-you-fly--><section class="szy szy-nojs" id="szy" aria-label="Before you fly: checklist">'
             '<style>' + CSS + '</style><div class="szy-c"><span class="szy-k">' + p['k'] + '</span>'
             '<span class="szy-h">Your before-you-fly checklist</span>'
-            '<span class="szy-s">Six things foreign visitors sort out before an India trip. Each links to our free guide; tick them off as you go.</span>'
+            '<span class="szy-s">' + WORDS[len(SLUGS)] + ' things foreign visitors sort out before an India trip. Each links to our free guide; tick them off as you go.</span>'
             '<ul class="szy-l">' + ''.join(items) + '</ul>'
             '<div class="szy-f"><span class="szy-n szy-js" id="szy-n" aria-live="polite"></span>'
             '<button type="button" class="szy-r szy-js" id="szy-r">Clear ticks</button>'
