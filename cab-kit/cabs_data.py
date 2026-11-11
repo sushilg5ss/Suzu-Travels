@@ -161,6 +161,8 @@ PLACES = {
     "Ranibagh": (29.30, 79.55), "Jeolikote": (29.33, 79.50),
     # 10 Nov 2026 · Dehradun (Jolly Grant, DED) airport terminal (OSM)
     "Dehradun Airport": (30.19, 78.18), "Bhaniyawala": (30.17, 78.15), "Raiwala": (30.03, 78.21),
+    # 11 Nov 2026 · Haridwar–Sonprayag (NH7 + NH107) waypoints (OSM town centres)
+    "Srinagar Garhwal": (30.22, 78.78), "Agastyamuni": (30.39, 79.03), "Phata": (30.58, 79.03),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
@@ -210,6 +212,7 @@ ROUTES = [
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
     dict(slug="delhi-to-vrindavan-taxi", a="Delhi", b="Vrindavan", km=180, t="3–4 hrs", f=0.9),   # 31 Oct 2026: page live; Yamuna Expressway via Noida–Jewar, Mathura–Vrindavan interchange (Triveni 160–185 km, HurryUp 160, Savaari 183 expwy / 191 NH-19); f 0.9 = delhi-to-agra (same road)
     dict(slug="delhi-to-jaipur-taxi", a="Delhi", b="Jaipur", km=280, t="4–5 hrs", f=0.85),   # 6 Nov 2026: page live; Delhi–Mumbai Expressway via Sohna + Bandikui–Jaipur link (open 15 Jul 2025) or NH48 via Neemrana–Kotputli (CabBazar/Triveni/Suri 280 km); same km/f as outstation-cab-delhi Jaipur row; sedan ₹3,599 vs market median ₹3,300 (+9%), Crysta ₹6,199 vs ₹6,000
+    dict(slug="haridwar-to-kedarnath-taxi", a="Haridwar", b="Kedarnath", km=235, t="7–9 hrs", f=1.1),   # 11 Nov 2026: page live; car to Sonprayag (road-head) via Rishikesh–Devprayag–Rudraprayag (NH7) + Guptkashi (NH107); same km/f as haridwar-taxi-service + char-dham-yatra-taxi Sonprayag rows (HurryUp 226 km, Triveni 230, Rajputana 232, Chiku 235, chardhamtour 247)
     dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
