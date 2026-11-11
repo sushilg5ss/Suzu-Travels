@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.12) 38%, rgba(11,31,51,0.8) 56%, rgba(11,31,51,0.93) 100%); }
+      #mist, #snow { position: absolute; inset: 0; }
+      .wv { position: absolute; left: 0; top: 0; width: 420px; height: 3px; border-radius: 2px; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.22) 50%, rgba(255,255,255,0) 100%); }
+      .fl { position: absolute; left: 0; top: 0; border-radius: 50%; background: #fff; }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 96px; line-height: 1.1; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; }
+      .t1 { position: absolute; left: 0; top: 160px; color: #fff; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 280px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t3 { position: absolute; left: 0; top: 400px; color: #fff; font-weight: 500; font-size: 46px; white-space: nowrap; }
+      svg.prof { position: absolute; left: 0; top: 470px; width: 820px; height: 240px; overflow: visible; }
+      svg.prof text { font-family: "PJS", sans-serif; font-weight: 800; font-size: 26px; fill: #fff; }
+      .big { position: absolute; left: 0; top: 724px; color: #fff; font-weight: 800; font-size: 92px; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 420px; top: 748px; width: 400px; text-align: right; color: rgba(255,255,255,0.92); font-weight: 800; font-size: 36px; line-height: 1.15; }
+      .bar { position: absolute; left: 0; top: 866px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 890px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 50px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><div style="position:absolute;inset:0"><img id="im1" src="assets/lake.jpg" alt="" style="object-position:20% 60%" /></div></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/jetski_c.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/banana.jpg" alt="" style="object-position:30% 70%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/cruise_c.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div id="fd5" style="position:absolute;inset:0"><img id="im5" src="assets/lake.jpg" alt="" style="object-position:20% 60%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div id="mist" data-layout-allow-overflow></div>
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">WATER · MANDI–BILASPUR</div>
+          <div class="t1">Kol Dam</div>
+          <div class="t2">lake rides</div>
+          <div class="t3">jet ski · speedboat · mini cruise</div>
+          <svg class="prof" viewBox="0 0 820 240">
+            <path d="M 0 150 C 120 120 200 190 330 160 S 540 90 660 130 S 780 170 820 150" fill="none" stroke="rgba(120,200,230,0.35)" stroke-width="34" stroke-linejoin="round" stroke-linecap="round" />
+            <path id="ln1" d="M 70 142 C 160 132 220 185 330 160 S 540 90 660 130 S 730 152 760 150" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 10" />
+            <g id="dots"></g>
+            <text x="80" y="214" text-anchor="middle">Aehan</text>
+            <text x="430" y="78" text-anchor="middle">Sutlej reservoir</text>
+            <text x="740" y="214" text-anchor="middle">Tattapani</text>
+          </svg>
+          <div class="big" id="alt">0 km</div>
+          <div class="biglab">Aehan → Tattapani<br />boating stretch</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Opened 24 Oct 2026 at Aehan</div>
+            <div class="fact" id="f2">A lake about 40 km long</div>
+            <div class="fact" id="f3">20-seat mini cruise</div>
+            <div class="fact" id="f4">Life jacket for every rider</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const D = 12;
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, x: 20 }, { scale: 1, x: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, y: 0 }, { scale: 1.06, y: -20, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, x: 10 }, { scale: 1, x: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      tl.fromTo("#ln1", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -336 }, duration: D, ease: "none" }, 0);
+      const NS = "http://www.w3.org/2000/svg";
+      const g = document.getElementById("dots");
+      const stops = [[70, 142], [430, 128], [760, 150]];
+      const halos = stops.map((p) => {
+        const h = document.createElementNS(NS, "circle");
+        h.setAttribute("cx", p[0]); h.setAttribute("cy", p[1]); h.setAttribute("r", 0); h.setAttribute("fill", "rgba(212,162,76,0.4)");
+        const d = document.createElementNS(NS, "circle");
+        d.setAttribute("cx", p[0]); d.setAttribute("cy", p[1]); d.setAttribute("r", 12); d.setAttribute("fill", "#d4a24c"); d.setAttribute("stroke", "#fff"); d.setAttribute("stroke-width", 4);
+        g.appendChild(h); g.appendChild(d); return h;
+      });
+      const altEl = document.getElementById("alt");
+      const st = { t: 0 };
+      const upd = () => {
+        let t = st.t; if (t >= 11.55) t = 0;
+        let k = (t - 1.0) / 3.2; k = Math.max(0, Math.min(1, k)); const e = k * k * (3 - 2 * k);
+        const v = e >= 1 ? 35 : Math.round(35 * e);
+        altEl.textContent = (e >= 1 ? "~35" : v) + " km";
+        const idx = st.t < 3.4 ? 0 : (st.t < 6.4 ? 1 : (st.t < 9.4 ? 2 : 0));
+        const s = 0.5 + 0.5 * Math.sin(st.t * Math.PI * 2 / 1.5);
+        halos.forEach((h, i) => { const on = i === idx; h.setAttribute("r", (on ? 18 + s * 18 : 0).toFixed(2)); h.setAttribute("opacity", on ? (0.4 + 0.6 * s).toFixed(3) : "0"); });
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+      tl.to("#alt", { opacity: 0, duration: 0.3, ease: "power1.in" }, 11.2);
+      tl.fromTo("#alt", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out", immediateRender: false }, 11.55);
+      let seed = 53;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const mist = document.getElementById("mist");
+      const blobs = [];
+      for (let i = 0; i < 16; i++) {
+        const el = document.createElement("div"); el.className = "wv"; mist.appendChild(el);
+        blobs.push({ el, x: rnd() * 2800, y: 640 + rnd() * 420, c: 1 + Math.floor(rnd() * 2), sc: 0.6 + rnd() * 0.9 });
+      }
+      const fx = { t: 0 };
+      const fxUpd = () => {
+        const p = fx.t / D;
+        blobs.forEach((b) => {
+          const x = ((b.x + p * b.c * 2800) % 2800) - 600;
+          b.el.style.transform = `translate(${x.toFixed(1)}px, ${b.y.toFixed(1)}px) scaleX(${b.sc.toFixed(2)})`;
+        });
+      };
+      tl.fromTo(fx, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: fxUpd }, 0);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      upd(); fxUpd();
+    </script>
+  </body>
+</html>
