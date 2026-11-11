@@ -1,0 +1,150 @@
+{
+ "_note": "Visual Studio 2026-11-11. Hero + profile = Tos glacier approach (HJ 31 1971 feet converted, AAJ 2018 Korean BC): Barshaini ~2,195 → Kuta Thach BC ~4,260 → ABC ~4,420 → C1 ~5,180 → C2 ~5,490 → summit 6,451. Ladder = Kullu/Lahaul hard peaks (data/peaks.json); Papsura 6,451 vs Dharamsura 6,446. All from research/pages/papsura.md. No photo is Papsura.",
+ "hero": {
+  "kicker": "PAPSURA · KULLU",
+  "steps": [
+   [
+    2195,
+    "BARSHAINI"
+   ],
+   [
+    4260,
+    "KUTA THACH"
+   ],
+   [
+    5180,
+    "CAMP 1"
+   ],
+   [
+    5490,
+    "CAMP 2"
+   ],
+   [
+    6451,
+    "SUMMIT"
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 1000
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ]
+ },
+ "profile": {
+  "title": "Papsura, camp by camp",
+  "sub": "Tos glacier approach · camps from the 1971 and 2017 climbs · vary by year",
+  "camps": [
+   {
+    "name": "Barshaini",
+    "m": 2195,
+    "day": "Road-head"
+   },
+   {
+    "name": "Kuta Thach",
+    "m": 4260,
+    "day": "Base camp"
+   },
+   {
+    "name": "ABC",
+    "m": 4420,
+    "day": "Below the icefall"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5180,
+    "day": ""
+   },
+   {
+    "name": "Camp 2",
+    "m": 5490,
+    "day": ""
+   },
+   {
+    "name": "Papsura",
+    "m": 6451,
+    "day": "Summit"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "KULLU'S HARD PEAKS",
+  "title": "Papsura and Dharamsura: a few metres apart",
+  "peaks": [
+   "deo-tibba",
+   "indrasan",
+   "dharamsura",
+   "papsura",
+   "mulkila"
+  ],
+  "subs": {
+   "deo-tibba": "First climbed 1952",
+   "indrasan": "First climbed 1962",
+   "dharamsura": "'Peak of Good'",
+   "papsura": "'Peak of Evil'",
+   "mulkila": "Lahaul · for scale"
+  },
+  "end": "Papsura stands 5 m above Dharamsura"
+ }
+}

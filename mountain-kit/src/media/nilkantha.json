@@ -1,0 +1,147 @@
+{
+ "_note": "Visual Studio 2026-11-11. Hero + profile = west ridge (2000 line): BC ~4,100 (Panpatia side) → C1 5,100 → ridge gained ~5,550 → ridge bivouacs ~6,100 → summit 6,596. Ladder = Badrinath skyline (data/peaks.json). All from research/pages/nilkantha.md. No photo is Nilkantha.",
+ "hero": {
+  "kicker": "NEELKANTH · BADRINATH",
+  "steps": [
+   [
+    4100,
+    "BASE CAMP"
+   ],
+   [
+    5100,
+    "CAMP 1"
+   ],
+   [
+    5550,
+    "WEST RIDGE"
+   ],
+   [
+    6100,
+    "RIDGE BIVOUAC"
+   ],
+   [
+    6596,
+    "SUMMIT"
+   ]
+  ],
+  "scenes": [
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 20
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 460
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 350,
+     "scale": 1.15,
+     "x": -260
+    },
+    "to": {
+     "y": 1150,
+     "scale": 1.2,
+     "x": -280
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   }
+  ]
+ },
+ "profile": {
+  "title": "Neelkanth, camp by camp",
+  "sub": "West ridge (2000) · camps vary by year",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 4100,
+    "day": "Day 3–4"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5100,
+    "day": ""
+   },
+   {
+    "name": "West ridge",
+    "m": 5550,
+    "day": "Ridge gained"
+   },
+   {
+    "name": "Ridge bivouac",
+    "m": 6100,
+    "day": ""
+   },
+   {
+    "name": "Neelkanth",
+    "m": 6596,
+    "day": "Summit"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "AROUND BADRINATH",
+  "title": "Neelkanth and its high neighbours",
+  "peaks": [
+   "nilkantha",
+   "satopanth",
+   "chaukhamba-i",
+   "mana-peak",
+   "kamet"
+  ],
+  "subs": {
+   "nilkantha": "First climbed 1974",
+   "satopanth": "First climbed 1947",
+   "chaukhamba-i": "First climbed 1952",
+   "mana-peak": "First climbed 1937",
+   "kamet": "First climbed 1931"
+  }
+ }
+}
