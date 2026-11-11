@@ -607,6 +607,7 @@
   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@3b3ee6cae67b05cbec6a0f94a6c6c2f02ab71769/cab-kit/media/hub-film/hero.webm",
   "mobile": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@3b3ee6cae67b05cbec6a0f94a6c6c2f02ab71769/cab-kit/media/hub-film/hero-540.mp4",
   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@3b3ee6cae67b05cbec6a0f94a6c6c2f02ab71769/cab-kit/media/hub-film/hero-poster.webp",
+  "poster_m": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d721450ef019dce45ecb01e3f5d682acc6253427/cab-kit/media/hub-film/hero-poster-phone.webp",
   "w": 1600,
   "h": 900,
   "credit": "real Himalayan road footage from Pexels (free licence): Vikash Singh (Solang Valley), Ex Route Adventures (snow pass), Vishal Kumar (Himachal hairpins), Nitin Khajotia (mountain road drone), viresh studio (Manali highway on the Beas)",
@@ -617,7 +618,8 @@
    "https://www.pexels.com/video/drone-view-of-a-car-driving-on-a-mountain-road-15953000/",
    "https://www.pexels.com/video/vehicles-traveling-on-a-hillside-road-4199842/"
   ],
-  "v2": "2026-11-03: +5th clip (Pexels 4199842, Pexels licence, 5.5-12.3 s, Kullu-Manali highway along the Beas), 30.8 s; mp4 7.2 MB, webm 6.6 MB, 540p 2.2 MB; clips 1-4 re-encoded from the v1 film"
+  "v2": "2026-11-03: +5th clip (Pexels 4199842, Pexels licence, 5.5-12.3 s, Kullu-Manali highway along the Beas), 30.8 s; mp4 7.2 MB, webm 6.6 MB, 540p 2.2 MB; clips 1-4 re-encoded from the v1 film",
+  "poster_m_note": "2026-11-11 ENHANCEMENTS #21: 540x675 centre crop (720x900 of the 1600x900 poster, Lanczos, WebP q72, 42.7 KB) for <=640 px screens"
  },
  "rishikesh-taxi-service": {
   "route": {

@@ -53,7 +53,7 @@ def tier_switch(note=True):
 
 PHOTOS = MEDIA.get("photos", {})
 
-FILM_JS = "<script>(function(){var v=document.querySelector('video[data-film]'),c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(!v){return}if(c){if(c.saveData){return}if(/(^|-)[23]g$/.test(c.effectiveType||'')){return}}if(window.matchMedia){if(matchMedia('(prefers-reduced-motion: reduce)').matches){return}}function go(){var s=v.querySelectorAll('source[data-src]'),i,p;for(i=0;s.length>i;i++){s[i].src=s[i].getAttribute('data-src');s[i].removeAttribute('data-src')}v.preload='auto';v.autoplay=true;v.load();p=v.play();if(p){if(p.catch){p.catch(function(){})}}}function idle(){if(window.requestIdleCallback){requestIdleCallback(go,{timeout:2500})}else{setTimeout(go,300)}}if(document.readyState==='complete'){idle()}else{window.addEventListener('load',idle)}})()</script>"
+FILM_JS = "<script>(function(){var v=document.querySelector('video[data-film]'),c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(!v){return}var pu=v.getAttribute('data-poster'),pm=v.getAttribute('data-poster-m');if(pm){if(window.matchMedia){if(matchMedia('(max-width: 640px)').matches){pu=pm}}}v.poster=pu;if(c){if(c.saveData){return}if(/(^|-)[23]g$/.test(c.effectiveType||'')){return}}if(window.matchMedia){if(matchMedia('(prefers-reduced-motion: reduce)').matches){return}}function go(){var s=v.querySelectorAll('source[data-src]'),i,p;for(i=0;s.length>i;i++){s[i].src=s[i].getAttribute('data-src');s[i].removeAttribute('data-src')}v.preload='auto';v.autoplay=true;v.load();p=v.play();if(p){if(p.catch){p.catch(function(){})}}}function idle(){if(window.requestIdleCallback){requestIdleCallback(go,{timeout:2500})}else{setTimeout(go,300)}}if(document.readyState==='complete'){idle()}else{window.addEventListener('load',idle)}})()</script>"
 
 def video_tag(m, cls="", eager=False):
     if not m:
@@ -62,8 +62,12 @@ def video_tag(m, cls="", eager=False):
         # ENHANCEMENTS #14 (5 Nov 2026): the hero film waits. Poster = first paint/LCP; the <source>s carry data-src and the
         # inline FILM_JS attaches them only after window load + idle, and never on Save-Data, 2g/3g or reduced motion
         # (poster stays). One inline script right after the video so a page updates with ONE replace op.
+        # ENHANCEMENTS #21 (11 Nov 2026): phone poster. data-poster = 1600x900, data-poster-m = 540x675 phone crop (43 KB vs 95 KB);
+        # FILM_JS (inline, right after the video, runs during parsing) sets v.poster to the phone file on <=640 px screens.
+        # A <link rel=preload fetchpriority=high> variant was tested in Lighthouse (11 Nov) and NOT shipped: it delayed FCP ~0.3 s.
         mob = f'<source data-src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
-        return (f'<video class="{cls}" data-film muted loop playsinline preload="none" poster="{m["poster"]}" width="{m.get("w",1600)}" height="{m.get("h",900)}">'
+        pm = f' data-poster-m="{m["poster_m"]}"' if m.get("poster_m") else ""
+        return (f'<video class="{cls}" data-film muted loop playsinline preload="none" data-poster="{m["poster"]}"{pm} width="{m.get("w",1600)}" height="{m.get("h",900)}">'
                 f'{mob}<source data-src="{m["webm"]}" type="video/webm"><source data-src="{m["mp4"]}" type="video/mp4"></video>{FILM_JS}')
     pre = "metadata"
     mob = f'<source src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
