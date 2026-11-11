@@ -842,5 +842,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "haridwar-to-kedarnath-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@dedfff61a63a12a06980aef3e64eddbfe057919f/cab-kit/media/haridwar-to-kedarnath-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@dedfff61a63a12a06980aef3e64eddbfe057919f/cab-kit/media/haridwar-to-kedarnath-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@dedfff61a63a12a06980aef3e64eddbfe057919f/cab-kit/media/haridwar-to-kedarnath-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
