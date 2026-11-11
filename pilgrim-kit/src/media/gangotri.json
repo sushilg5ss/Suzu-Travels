@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "himalaya",
+  "sky": "dawn",
+  "deva": "गंगोत्री धाम",
+  "kicker": "Char Dham · Uttarkashi, Uttarakhand",
+  "beats": [
+   "Bhagiratha prays for the heavenly river",
+   "Shiva catches Ganga in his hair",
+   "Bhagirathi flows from Gaumukh's glacier",
+   "Winter: Ganga rests at Mukhba"
+  ]
+ },
+ "story": {
+  "title": "The legend of Gangotri",
+  "beats": [
+   {"arch": "pillar", "sky": "night", "line": "King Bhagiratha's long penance"},
+   {"arch": "himalaya", "sky": "snow", "line": "Shiva catches Ganga in his matted hair"},
+   {"arch": "lake", "sky": "dawn", "line": "The river is born at a glacier"},
+   {"arch": "ghats", "sky": "saffron", "line": "In winter the goddess goes to Mukhba"}
+  ]
+ }
+}

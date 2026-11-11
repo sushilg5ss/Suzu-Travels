@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "ghats",
+  "sky": "saffron",
+  "deva": "बेलूड़ मठ",
+  "kicker": "Ramakrishna Math · Howrah, West Bengal",
+  "beats": [
+   "Vivekananda buys land by the Ganga",
+   "Relics installed, December 1898",
+   "A temple of many faiths, 1938",
+   "Evening arati at sunset"
+  ]
+ },
+ "story": {
+  "title": "The story of Belur Math",
+  "beats": [
+   {"arch": "ghats", "sky": "dawn", "line": "A plot of land beside the Ganga"},
+   {"arch": "pillar", "sky": "night", "line": "Sri Ramakrishna's relics are enshrined"},
+   {"arch": "ghats", "sky": "dusk", "line": "A temple that echoes many faiths"},
+   {"arch": "ghats", "sky": "saffron", "line": "Durga Puja and the Kumari Puja"}
+  ]
+ }
+}
