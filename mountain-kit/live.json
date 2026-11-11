@@ -413,5 +413,15 @@
   "added": "2026-11-10",
   "state": "sikkim",
   "commercial": false
+ },
+ "menthosa": {
+  "id": 21338,
+  "path": "/mountains-of-india/menthosa/",
+  "kind": "peak",
+  "label": "Menthosa",
+  "blurb": "6,443 m · Lahaul's second-highest, above the Miyar valley",
+  "added": "2026-11-11",
+  "peak_id": "menthosa",
+  "commercial": true
  }
 }

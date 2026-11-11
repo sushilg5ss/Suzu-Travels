@@ -1,0 +1,339 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/menthosa/",
+ "peak_id": "menthosa",
+ "title": "Menthosa (6,443 m), Lahaul: Route & Expedition Guide",
+ "seo_title": "Menthosa (6,443 m), Lahaul: Expedition Guide",
+ "seo_desc": "Menthosa (6,443 m), Lahaul's second-highest peak: the Urgos route camp by camp, Alpine AD grade, June–September season, IMF permits and 1970 history.",
+ "focus": "menthosa",
+ "commercial": true,
+ "label": "Menthosa",
+ "blurb": "6,443 m · Lahaul's second-highest, above the Miyar valley",
+ "verified": "11 Nov 2026",
+ "kicker": "Lahaul · Miyar valley · 6,443 m",
+ "tag": "A long snow ridge above the Miyar valley.",
+ "sub": "Lahaul's second-highest summit, climbed from Urgos village over the Urgos pass and up a long east-northeast ridge of snow and ice. A serious glaciated 6,000er in the Himachal rain shadow, for climbers who want more than a trekking peak.",
+ "chips": [
+  [
+   "6,443 m",
+   "summit (21,138 ft)"
+  ],
+  [
+   "About 3 weeks",
+   "from Manali (estimate)"
+  ],
+  [
+   "Jun–Sep",
+   "season"
+  ],
+  [
+   "Alpine AD",
+   "snow and ice ridge"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "hero_alt": "Climbers on scree, a roped snow line, headlamps at a high camp and a corniced ridge (stock footage, not Menthosa itself) with an altitude read-out rising from Udaipur, 2,650 m, past Urgos, base camp, the Urgos pass and high camp to the 6,443 m summit",
+ "profile_alt": "Animated altitude profile of the Menthosa route: Udaipur 2,650 m, Urgos 3,250 m, base camp about 4,400 m, Urgos pass about 5,100 m, Camp 2 about 5,650 m, high camp about 6,000 m and the 6,443 m summit",
+ "q": "What is Menthosa, and how do you climb it?",
+ "answer": "<b>Menthosa</b> (6,443 m / 21,138 ft) is the second-highest peak in Lahaul, Himachal Pradesh, after <a href=\"/mountains-of-india/mulkila/\">Mulkila</a>. It rises above Urgos village and the Miyar valley. The normal route crosses the Urgos pass and follows the long east-northeast ridge, graded about Alpine AD with 40–50° snow and ice. Climb it from June to September. See all the <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks of India</a>.",
+ "facts": [
+  [
+   "Height",
+   "6,443 m / 21,138 ft (other sources: 6,440–6,444 m)"
+  ],
+  [
+   "Location",
+   "Lahaul, Lahaul & Spiti district, above the Miyar valley and Urgos village"
+  ],
+  [
+   "Range",
+   "Great Himalaya (Lahaul)"
+  ],
+  [
+   "Rank",
+   "Second-highest peak in Lahaul, after Mulkila (6,517 m)"
+  ],
+  [
+   "Start",
+   "Udaipur, about 2,650 m; jeeps now reach Urgos, about 3,250 m"
+  ],
+  [
+   "Normal route",
+   "Urgos pass and the east-northeast ridge"
+  ],
+  [
+   "Grade",
+   "Alpine AD: 40–55° snow and ice, crevassed flank"
+  ],
+  [
+   "Best months",
+   "Jun–Sep"
+  ],
+  [
+   "Duration",
+   "About 3 weeks from Manali (estimate)"
+  ],
+  [
+   "First ascent",
+   "1970, British services team (summit: Lt S. Rae & Capt R. Cape)"
+  ],
+  [
+   "Protected-area permit",
+   "Not needed for Lahaul"
+  ],
+  [
+   "Price",
+   "Get Quote"
+  ]
+ ],
+ "intro": [
+  "Menthosa stands on the east side of the <b>Miyar valley</b> in Lahaul, above the village of Urgos (also spelled Urgus). At 6,443 m it is the <b>second-highest peak in Lahaul</b>: the Himalayan Journal noted that only Mulkila is higher in that part of the region. Published heights run from 6,440 m to 6,444 m; we use 6,443 m, the figure in the Indian Navy, American Alpine Journal and Mount Everest Foundation records.",
+  "It is not a trekking peak. The normal route is a long glaciated climb with sustained snow and ice slopes, crevasses and real cold above 6,000 m. This page sets out the route with approximate camp altitudes, the honest grade, the season, the permits and the climbing history from 1970 to the 2019 south-ridge traverse. For the wider picture, see our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>, the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a> and our guide to the <a href=\"/mountains-of-india/himachal-pradesh/\">peaks of Himachal Pradesh</a>."
+ ],
+ "route_h2": "Route from Udaipur and Urgos, camp by camp",
+ "route_text": [
+  "From Manali the drive goes through the Atal Tunnel (or over the Rohtang Pass) and down the Chandra valley to <b>Udaipur</b> (about 2,650 m), the old road-head near the mouth of the Miyar valley. Jeeps now reach <b>Urgos</b> (about 3,250 m); the Indian Navy team in 2018 started its climb from the village. The walk-in follows the Urgos nala to a grassy base camp beside a stream, about 4,400 m.",
+  "Camp 1 sits on the <b>Urgos pass</b>, at the foot of the east-northeast ridge. Above it the route climbs the north-east flank to Camp 2, then to a high camp about 200 m below the crest of the east ridge. Summit day follows the long east ridge over a broad hump near 6,200 m to the top. Teams place camps at different heights (base camp is recorded from about 4,400 m to 4,570 m), so the figures below are approximate."
+ ],
+ "route": [
+  {
+   "name": "Udaipur",
+   "m": 2650,
+   "note": "Old road-head in the Chandra valley, near the Miyar confluence"
+  },
+  {
+   "name": "Urgos",
+   "m": 3250,
+   "note": "Village and today's jeep road-head; the walk-in starts here"
+  },
+  {
+   "name": "Base camp",
+   "m": 4400,
+   "note": "Grass by a stream up the Urgos nala (about 4,400 m; other teams 4,470–4,570 m)"
+  },
+  {
+   "name": "Camp 1 (Urgos pass)",
+   "m": 5100,
+   "note": "Pass at the foot of the east-northeast ridge (about 5,100 m; other teams 4,880–5,030 m)"
+  },
+  {
+   "name": "Camp 2",
+   "m": 5650,
+   "note": "On the north-east flank, sheltered by an ice shelf (about 5,650 m; 1973 team about 5,590 m)"
+  },
+  {
+   "name": "High camp",
+   "m": 6000,
+   "note": "About 200 m below the east-ridge crest (1973 team about 6,190 m)"
+  },
+  {
+   "name": "Menthosa summit",
+   "m": 6443,
+   "note": "Along the long east ridge; the 2018 Navy team took about 8.5 hours up from its top camp"
+  }
+ ],
+ "itinerary_h2": "A typical plan (estimate, not a fixed schedule)",
+ "itinerary": [
+  [
+   "Days 1–2",
+   "Manali",
+   "Arrive, sort permits, police registration and gear, and rest."
+  ],
+  [
+   "Day 3",
+   "Manali to Urgos",
+   "Drive through the Atal Tunnel and the Chandra valley via Udaipur to the road-head at about 3,250 m."
+  ],
+  [
+   "Days 4–6",
+   "Walk-in to base camp",
+   "Up the Urgos nala in short stages to base camp at about 4,400 m, with an acclimatisation day."
+  ],
+  [
+   "Days 7–9",
+   "Camp 1 on the Urgos pass",
+   "Rest, snow and ice training and load ferries to the pass at about 5,100 m."
+  ],
+  [
+   "Days 10–13",
+   "Camp 2 and high camp",
+   "Up the north-east flank to Camp 2, then to high camp at about 6,000 m."
+  ],
+  [
+   "Day 14",
+   "Summit day",
+   "An early start along the east ridge to the 6,443 m summit, then down to a lower camp."
+  ],
+  [
+   "Days 15–18",
+   "Spare days",
+   "Kept for weather, a second attempt and a careful descent."
+  ],
+  [
+   "Days 19–21",
+   "Back to Manali",
+   "Walk out to Urgos and drive back to Manali."
+  ]
+ ],
+ "difficulty_h2": "How hard is Menthosa?",
+ "difficulty": [
+  "The normal route is graded about <b>Alpine AD (assez difficile)</b>. Expect long, sustained snow and ice slopes of 40–50°, short steeper steps, up to 50–55° on the north-east flank, crevasses and temperatures around −20 °C above 6,000 m. The Indian Navy team in 2018 reported −25 °C on its summit push. Several strong teams have turned back below the top, in 1983, 1986 and 1994.",
+  "Arrive with an earlier 6,000 m summit and good crampon and rope skills. If you are not there yet, start with <a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> or <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a>, read our guide to <a href=\"/mountains-of-india/first-6000m-peak/\">climbing your first 6,000 m peak</a>, and plan your acclimatisation with our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a>."
+ ],
+ "skills": [
+  [
+   "Experience",
+   "At least one earlier 6,000 m summit, or a solid record on glaciated peaks."
+  ],
+  [
+   "Technique",
+   "Crampons and ice axe on 40–55° snow and ice, moving roped on a glacier and crevasse rescue."
+  ],
+  [
+   "Fitness",
+   "Load carries between four camps and a long summit day above 6,000 m."
+  ],
+  [
+   "Acclimatisation",
+   "A gradual walk-in from Urgos and rest days at base camp and Camp 1."
+  ],
+  [
+   "Training",
+   "A Basic Mountaineering Course; Indian teams also follow IMF rules on team qualifications."
+  ]
+ ],
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "no",
+  "May": "maybe",
+  "Jun": "good",
+  "Jul": "good",
+  "Aug": "good",
+  "Sep": "good",
+  "Oct": "maybe",
+  "Nov": "no",
+  "Dec": "no"
+ },
+ "season_h2": "Best time to climb Menthosa",
+ "season_text": [
+  "<b>June to September.</b> Lahaul lies in the Himalayan rain shadow, so the Miyar valley gets little monsoon rain. May and October are colder but possible. The recorded climbs show the spread: the 1973 team summited from 3 June, the 2019 south-ridge pair on 26 August, and the Indian Navy team on 16 October 2018.",
+  "Keep spare days for weather. Fresh snow makes the ridge slow and the flank prone to avalanche, and cold in October is severe."
+ ],
+ "permits_h2": "Permits for Menthosa",
+ "permits": [
+  "<b>Indian climbers</b> need permission from the Indian Mountaineering Foundation (IMF) for an expedition. In Himachal, climbs go through an HP Tourism-registered outfitter with registered guides, with pre-trek police registration and insurance for every member under the state's 2021 adventure rules.",
+  "<b>Foreign nationals</b> can climb Menthosa with IMF permission, applied for at least 90 days ahead, and a liaison officer. At 6,443 m it falls in the <b>up-to-6,500 m band</b>: a base fee of US$500 for a team of two, plus per-member charges and US$500 for liaison-officer equipment (IMF peak-fee page, checked Oct 2026). Lahaul is not on Himachal's protected-area list, so <b>no protected-area permit</b> is needed. Visa rules can change, so confirm with the Indian mission. More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fee guide</a> and our <a href=\"/mountains-of-india/mountaineering-in-india/\">guide to mountaineering in India for foreign climbers</a>."
+ ],
+ "cost_h2": "What a guided Menthosa expedition includes",
+ "cost_text": [
+  "The price depends on your dates, group size, nationality and experience, so we quote each expedition. Tell us your dates and climbing record on WhatsApp and you get one plan and one quote. Foreign nationals also pay the IMF fee and liaison-officer charges, shown separately."
+ ],
+ "includes": [
+  "Certified mountaineering guides and support staff",
+  "Tents, camps and all meals on the mountain",
+  "Group climbing equipment (ropes, fixed lines and anchors)",
+  "Help with IMF permission and permit paperwork",
+  "Transfers from Manali to Urgos and back",
+  "Acclimatisation and weather days in the plan"
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots that take crampons",
+  "Crampons, an ice axe and a jumar (ascender)",
+  "Climbing harness, helmet, carabiners, slings and a belay device",
+  "Expedition down jacket and a sleeping bag rated well below −20 °C",
+  "Windproof and waterproof shell jacket and trousers",
+  "Summit mitts plus liner gloves",
+  "Glacier sunglasses (UV400), goggles and sunscreen",
+  "Headlamp with spare batteries",
+  "Trekking poles for the walk-in",
+  "Two water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "Climbing history of Menthosa",
+ "history": [
+  "The <b>first ascent</b> was made in <b>1970</b> by a British services expedition led by <b>Capt S. Bembrose</b>. <b>Lt S. Rae</b> (Royal Marines) and <b>Capt R. Cape</b> (REME) reached the summit by the east-northeast ridge. The trip had a close call: a member, Bob Steward, was hit by falling ice and flown out by helicopter from base camp. In 1973 the Army Mountaineering Association (UK), led by Maj J. W. Fleming, put its first pair on top on <b>3 June 1973</b>, and all 18 members summited over the next six days.",
+  "Not every team got up. Dave Challis and Aloke Surin turned back at about 6,250 m in 1983, Surin returned in 1986 and wrote 'Menthosa; Almost', and a Royal Air Force team reached 6,257 m in 1994. On <b>16 October 2018</b> a ten-member Indian Navy team led by Lt Cdr Shivesh Kumar Sanam summited after leaving its top camp at 2 a.m. On <b>26 August 2019</b> Spencer Gray and Sachin Nanavatty made the first ascent of the <b>south ridge</b> and the first traverse of the mountain, more than 8 km, graded ED2 WI4 M6."
+ ],
+ "faq_h2": "Menthosa: questions people ask",
+ "faqs": [
+  [
+   "How high is Menthosa?",
+   "6,443 m (21,138 ft). Published figures range from 6,440 m to 6,444 m."
+  ],
+  [
+   "Where is Menthosa?",
+   "In Lahaul, Himachal Pradesh, above Urgos village and the Miyar valley. Udaipur is the old road-head; jeeps now reach Urgos."
+  ],
+  [
+   "Who first climbed Menthosa?",
+   "A British services team led by Capt S. Bembrose, in 1970. Lt S. Rae and Capt R. Cape reached the summit by the east-northeast ridge."
+  ],
+  [
+   "How difficult is Menthosa?",
+   "It is a glaciated climb graded about Alpine AD: long 40–50° snow and ice slopes on the east-northeast ridge, crevasses and strong cold. An earlier 6,000 m summit is wise."
+  ],
+  [
+   "Is Menthosa higher than Mulkila?",
+   "No. Mulkila (6,517 m) is higher; Menthosa is the second-highest peak in Lahaul."
+  ],
+  [
+   "What is the best time to climb Menthosa?",
+   "June to September. Lahaul lies in the rain shadow, so the monsoon is weak there; May and October are possible but colder."
+  ],
+  [
+   "Do foreigners need a permit for Menthosa?",
+   "Yes: IMF permission applied for at least 90 days ahead and a liaison officer. The up-to-6,500 m band is US$500 for a team of two (Oct 2026), plus other charges. No protected-area permit is needed for Lahaul."
+  ],
+  [
+   "How many days does a Menthosa expedition take?",
+   "There is no official figure. About three weeks from Manali is a common estimate, including weather days."
+  ]
+ ],
+ "sources": [
+  [
+   "SummitPost — Menthosa (1983 account and approach)",
+   "https://www.summitpost.org/menthosa/718848"
+  ],
+  [
+   "American Alpine Journal 2020 — Menthosa, South Ridge and Traverse",
+   "https://publications.americanalpineclub.org/articles/13201215421"
+  ],
+  [
+   "Himalayan Journal 43 — Menthosa; Almost",
+   "https://www.himalayanclub.org/hj/43/15/menthosa-almost/"
+  ],
+  [
+   "Himalayan Journal 33 — Army Mountaineering Association Himachal Pradesh Expedition 1973",
+   "https://himalayanclub.org/hj/33/22/the-army-mountaineering-association-himachal-pradesh-expedition-1973/"
+  ],
+  [
+   "Mount Everest Foundation — RAF Menthosa 1994",
+   "https://www.mef.org.uk/expeditions/raf-menthosa-1994"
+  ],
+  [
+   "Indian Navy — SNC mountaineering team summits Mt Menthosa (2018)",
+   "https://indiannavy.nic.in/node/21146"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "HP Kinnaur district — tourism guide (protected areas)",
+   "https://hpkinnaur.nic.in/tourism-guide/"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ ],
+ "sameAs": [
+  "https://www.wikidata.org/wiki/Q26816285"
+ ],
+ "wa": "Hi Suzu Travels, I want to plan a guided climb of Menthosa. Dates: ___ , people: ___ , nationality: ___"
+}
