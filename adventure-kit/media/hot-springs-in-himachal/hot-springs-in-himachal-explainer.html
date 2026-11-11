@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 50% 15%, #16365a 0%, #0b1f33 65%); color: #fff; }
+      .kicker { position: absolute; left: 130px; top: 76px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; }
+      .title { position: absolute; left: 130px; top: 124px; font-weight: 800; font-size: 92px; letter-spacing: -0.02em; line-height: 1.05; white-space: nowrap; }
+      .col { position: absolute; top: 300px; width: 500px; height: 700px; }
+      .base { display: flex; align-items: center; gap: 22px; font-weight: 800; font-size: 66px; letter-spacing: -0.01em; }
+      .pin { width: 38px; height: 38px; border-radius: 50%; background: #d4a24c; border: 6px solid #fff; flex: 0 0 auto; }
+      .from { margin: 6px 0 0 60px; font-weight: 500; font-size: 30px; color: rgba(255,255,255,0.7); }
+      svg.lk { position: absolute; left: 0; top: 150px; width: 80px; height: 520px; overflow: visible; }
+      .chip { position: absolute; left: 90px; width: 410px; padding: 22px 26px; border-radius: 22px; background: rgba(255,255,255,0.1); border: 2px solid rgba(212,162,76,0.55); }
+      .chip b { display: block; font-weight: 800; font-size: 54px; line-height: 1.1; }
+      .chip span { display: block; margin-top: 8px; font-weight: 800; font-size: 36px; color: #d4a24c; line-height: 1.2; }
+      .chip em { display: block; margin-top: 6px; font-style: normal; font-weight: 500; font-size: 30px; color: rgba(255,255,255,0.88); line-height: 1.25; }
+      .wisp { position: absolute; left: 0; top: 0; width: 26px; height: 70px; border-radius: 13px; background: radial-gradient(ellipse at center, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0) 70%); }
+      .end { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; background: #0b1f33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; opacity: 0; }
+      .etitle { font-size: 68px; font-weight: 800; }
+      .mrow { display: flex; gap: 10px; }
+      .m { width: 118px; height: 100px; border-radius: 14px; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.75); font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
+      .m.on { background: #d4a24c; color: #0b1f33; }
+      .m.risk { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.4); border: 2px dashed rgba(255,255,255,0.35); }
+      .legend { display: flex; gap: 44px; font-size: 32px; font-weight: 800; }
+      .legend span { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+      .legend i { width: 30px; height: 30px; border-radius: 8px; display: inline-block; }
+      .endnote { font-size: 38px; font-weight: 500; color: rgba(255,255,255,0.92); }
+      .pq { font-size: 42px; font-weight: 800; color: #d4a24c; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div id="top">
+          <div class="kicker">HOT SPRINGS OF HIMACHAL</div>
+          <div class="title">5 springs, 3 bases</div>
+        </div>
+        <div class="col" id="k1" style="left:130px">
+          <div class="base"><i class="pin"></i>Manali</div><div class="from">easiest springs</div>
+          <svg class="lk"><path class="ln" pathLength="1" d="M 19 0 L 19 105 Q 19 135 70 135" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" /><path class="ln" pathLength="1" d="M 19 0 L 19 365 Q 19 395 70 395" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" /></svg>
+          <div class="chip" style="top:210px"><b>Vashisht</b><span>~3 km · ~2,050 m</span><em>Temple baths</em></div>
+          <div class="chip" style="top:470px"><b>Kalath</b><span>~6 km</span><em>Small springs, Beas bank</em></div>
+        </div>
+        <div class="col" id="k2" style="left:710px">
+          <div class="base"><i class="pin"></i>Kasol</div><div class="from">Parvati valley</div>
+          <svg class="lk"><path class="ln" pathLength="1" d="M 19 0 L 19 105 Q 19 135 70 135" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" /><path class="ln" pathLength="1" d="M 19 0 L 19 365 Q 19 395 70 395" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" /></svg>
+          <div class="chip" style="top:210px"><b>Manikaran</b><span>~4 km · ~1,760 m</span><em>Near boiling: tanks only</em></div>
+          <div class="chip" style="top:470px"><b>Kheerganga</b><span>12–13 km trek</span><em>Day visit, no camping</em></div>
+        </div>
+        <div class="col" id="k3" style="left:1290px">
+          <div class="base"><i class="pin"></i>Shimla</div><div class="from">a day trip by cab</div>
+          <svg class="lk"><path class="ln" pathLength="1" d="M 19 0 L 19 105 Q 19 135 70 135" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" /></svg>
+          <div class="chip" style="top:210px"><b>Tattapani</b><span>~52 km</span><em>Kol Dam lake · fair mid-Jan</em></div>
+        </div>
+        <div id="steam"></div>
+        <div class="end" id="end">
+          <div class="etitle">When to soak</div>
+          <div class="mrow">
+            <div class="m on">Jan</div><div class="m on">Feb</div><div class="m">Mar</div><div class="m">Apr</div><div class="m">May</div><div class="m">Jun</div><div class="m risk">Jul</div><div class="m risk">Aug</div><div class="m risk">Sep</div><div class="m">Oct</div><div class="m">Nov</div><div class="m on">Dec</div>
+          </div>
+          <div class="legend"><span><i style="background:#d4a24c"></i>Best: steaming water</span><span><i style="background:rgba(255,255,255,0.12)"></i>Good</span><span><i style="border:2px dashed rgba(255,255,255,0.5)"></i>Monsoon: road risk</span></div>
+          <div class="endnote">Hotel + cab around the springs, in one plan</div>
+          <div class="pq">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from(".kicker", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from(".title", { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" }, 0.25);
+      ["#k1", "#k2", "#k3"].forEach((k, i) => {
+        const t = 0.9 + i * 1.6;
+        tl.from(k + " .base", { opacity: 0, x: -30, duration: 0.5, ease: "power3.out" }, t);
+        tl.from(k + " .from", { opacity: 0, duration: 0.4 }, t + 0.2);
+        tl.to(k + " .ln", { attr: { "stroke-dashoffset": 0 }, duration: 0.7, ease: "power2.out", stagger: 0.25 }, t + 0.35);
+        tl.from(k + " .chip", { opacity: 0, x: 30, duration: 0.45, ease: "power2.out", stagger: 0.3 }, t + 0.7);
+      });
+      // deterministic steam wisps above each chip
+      const steam = document.getElementById("steam");
+      const spots = [[580, 515], [580, 775], [1160, 515], [1160, 775], [1740, 515]];
+      let seed = 29; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const ws = [];
+      spots.forEach((p, si) => { for (let j = 0; j < 3; j++) { const el = document.createElement("div"); el.className = "wisp"; steam.appendChild(el); ws.push({ el, x: p[0] + j * 22 - 22, y: p[1], ph: rnd(), sp: 0.55 + rnd() * 0.3, si }); } });
+      const st = { t: 0 };
+      const up = () => {
+        ws.forEach((w) => {
+          const appear = 1.6 + Math.floor(w.si / 2) * 1.6 + (w.si % 2) * 0.3 + (w.si === 4 ? -1.6 * 0 : 0);
+          const vis = st.t < appear ? 0 : Math.min(1, (st.t - appear) / 0.5);
+          const k = (st.ph = ((st.t * w.sp + w.ph) % 1));
+          const y = w.y - k * 90; const x = w.x + Math.sin((k + w.ph) * 6.283) * 8;
+          const o = vis * Math.sin(k * Math.PI) * 0.9;
+          w.el.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`; w.el.style.opacity = o.toFixed(3);
+        });
+      };
+      tl.fromTo(st, { t: 0 }, { t: 12, duration: 12, ease: "none", onUpdate: up }, 0);
+      tl.to(["#top", "#k1", "#k2", "#k3", "#steam"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 7.9);
+      tl.to("#end", { opacity: 1, duration: 0.5, ease: "sine.inOut" }, 8.1);
+      tl.from(".m", { opacity: 0, y: 24, duration: 0.3, stagger: 0.05, ease: "power2.out" }, 8.4);
+      tl.from([".legend", ".endnote", ".pq"], { opacity: 0, y: 20, duration: 0.4, stagger: 0.2 }, 9.3);
+      window.__timelines["main"] = tl;
+      tl.seek(0); up();
+    </script>
+  </body>
+</html>
