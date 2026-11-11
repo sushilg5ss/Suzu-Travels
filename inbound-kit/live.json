@@ -358,5 +358,14 @@
   "blurb": "Tamil Nadu's great temples, then Kerala's spice hills and a houseboat night",
   "added": "2026-11-11",
   "focus": "south india tour"
+ },
+ "amritsar-golden-temple-tour": {
+  "id": 21208,
+  "path": "/india-tours/amritsar-golden-temple-tour/",
+  "kind": "product",
+  "label": "Amritsar Golden Temple tour",
+  "blurb": "The Golden Temple, the langar and the Wagah ceremony — then on to Dharamshala and Manali by private car",
+  "added": "2026-11-11",
+  "focus": "amritsar golden temple tour"
  }
 }

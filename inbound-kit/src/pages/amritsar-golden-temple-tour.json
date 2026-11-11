@@ -1,0 +1,170 @@
+{
+ "path": "/india-tours/amritsar-golden-temple-tour/",
+ "parent": 11411,
+ "kind": "product",
+ "title": "Amritsar Golden Temple Tour: A Private Trip with Wagah and the Himalaya",
+ "seo_title": "Amritsar Golden Temple Tour: Private, with Wagah",
+ "seo_desc": "A private Amritsar Golden Temple tour: temple etiquette, the free langar, the Wagah ceremony, getting there from Delhi and on to Dharamshala and Manali.",
+ "focus": "amritsar golden temple tour",
+ "label": "Amritsar Golden Temple tour",
+ "blurb": "The Golden Temple, the langar and the Wagah ceremony — then on to Dharamshala and Manali by private car",
+ "kicker": "Amritsar · Punjab · Private car and driver",
+ "tag": "The Golden Temple, the way it deserves to be seen.",
+ "sub": "Amritsar is home to the Golden Temple (Sri Harmandir Sahib), the holiest shrine of the Sikh faith, and it sits only a day's drive from the Himalaya. Here is how to visit respectfully — what to wear, the free community kitchen, the evening ceremony at the Attari–Wagah border — and how we turn Amritsar into the start of a private trip into the mountains.",
+ "hero_alt": "The Golden Temple in Amritsar at sunset and at dusk, reflected in its sacred pool, then the Dhauladhar range above Dharamshala and the Manali valley",
+ "cta1": "Plan the visit",
+ "talk": true,
+ "chips": [
+  ["2 nights", "enough for the temple, langar and Wagah"],
+  ["from US$949", "10-day Golden Temple & Himalayas, per person"],
+  ["Private car", "your own driver, your own pace"],
+  ["20% deposit", "full refund within 48 h"]
+ ],
+ "q": "How do I do an Amritsar Golden Temple tour?",
+ "answer": "Plan two nights in Amritsar: see the Golden Temple by day and lit up at night, eat at the free langar, visit Jallianwala Bagh and watch the evening ceremony at the Attari–Wagah border. Cover your head and remove your shoes. Suzu Travels' private 10-day <b>Golden Temple &amp; Himalayas</b> tour (Delhi, Amritsar, Dharamshala, Manali) starts from <b>US$949</b> per person.",
+ "facts": [
+  ["400 kg", "of gold leaf on the upper half of the temple (about 880 lb), added under Maharaja Ranjit Singh"],
+  ["20,000", "free meals a day at the Guru Ka Langar — up to 100,000 on special occasions"],
+  ["32 km", "(20 miles) from Amritsar bus stand to the Attari–Wagah border ceremony"],
+  ["13 km", "(8 miles) from the Golden Temple to Amritsar's international airport"]
+ ],
+ "sections": [
+  {
+   "id": "temple",
+   "nav": "The Golden Temple",
+   "h2": "What you will see at the Golden Temple",
+   "kind": "cards",
+   "lead": "The temple is open to visitors of every faith. It is a working place of worship, so the best visits are slow ones.",
+   "items": [
+    ["Sri Harmandir Sahib", "Guru Ram Das, the fourth Sikh Guru, built the first pool here and founded Amritsar around it. The temple stands on a 67-ft (20 m) square of marble, two storeys high; Maharaja Ranjit Singh had the upper half covered with about 400 kg of gold leaf."],
+    ["The Amrit Sarovar", "The sacred pool — the “Pool of Nectar” — that surrounds the temple. You walk the marble path (the parikrama) around it, barefoot, with the gold reflected in the water."],
+    ["The Akal Takht", "Facing the temple across the walkway: established by Guru Hargobind and one of the five seats of authority in Sikhism."],
+    ["Guru Ka Langar", "The community kitchen serves free food to around 20,000 people every day, and up to 100,000 on special occasions. Visitors can join the community meal."]
+   ]
+  },
+  {
+   "id": "etiquette",
+   "nav": "What to wear",
+   "h2": "How to visit respectfully",
+   "kind": "steps",
+   "style": "alt",
+   "lead": "The official rule is short; the rest is common courtesy that the temple volunteers will happily help with.",
+   "items": [
+    ["Remove your shoes and cover your head", "Remove your shoes and cover your head before entering the temple complex (Punjab Tourism). A scarf or bandana works for everyone; we tell you where to leave your shoes."],
+    ["Dress modestly", "Dress modestly; follow the instructions of temple volunteers (sevadars). Shoulders and knees covered is a good rule for everyone."],
+    ["Go early, then come back at night", "Punjab Tourism notes the temple is less crowded in the early mornings on weekends. It is open from early morning until late evening — confirm the hours locally — and many visitors return after dark to see it lit up."],
+    ["Eat at the langar", "Visitors can join the free community meal. Sit where the volunteers show you and take only what you will eat."],
+    ["Photos", "Be discreet, and ask before you photograph people. Follow any signs or volunteer instructions about where cameras are not welcome."]
+   ]
+  },
+  {
+   "id": "wagah",
+   "nav": "Wagah ceremony",
+   "h2": "The Beating Retreat at the Attari–Wagah border",
+   "kind": "callout",
+   "text": "Every evening India's Border Security Force (BSF) and the Pakistan Rangers lower their flags in a drill ceremony at the Attari–Wagah joint check post, near Border Pillar No. 102 on the Grand Trunk Road. It starts in the late afternoon — about 4:15 pm in winter and 5:15 pm in summer (Incredible India); the time moves with sunset, so arrive early. <b>The Attari–Wagah ceremony is run by the Border Security Force; timings and access rules can change at short notice (security, weather, official decisions). Carry your passport, keep bags to a minimum, and confirm on the day.</b>",
+   "after": [
+    "The border is 32 km (20 miles) from Amritsar bus stand and 36 km (22 miles) from the airport; your driver takes you there and back, so you can do it on the same day as a morning at the temple.",
+    "UK travellers: the FCDO advises against all travel within 10 km of the India–Pakistan border, except for the Wagah–Attari border crossing; it says that while the crossing is currently closed, visitors can still attend the daily border retreat ceremony (FCDO advice updated 7 Oct 2026, checked 11 Nov 2026). Always read <a href=\"https://www.gov.uk/foreign-travel-advice/india\" rel=\"noopener\">gov.uk/foreign-travel-advice/india</a> or your own government's advice before you travel."
+   ]
+  },
+  {
+   "id": "amritsar-plan",
+   "nav": "Two days in Amritsar",
+   "h2": "How we plan two days in Amritsar",
+   "kind": "table",
+   "lead": "Two nights is enough for most visitors. This is how we usually shape them — your quote follows your own pace. For a longer list of sights, see our <a href=\"/things-to-do-in-amritsar/\">things to do in Amritsar</a> guide.",
+   "head": ["When", "What", "Why then"],
+   "rows": [
+    ["Day 1, afternoon", "Arrive; first visit to the Golden Temple", "Get your bearings, then see the temple lit up after dark"],
+    ["Day 2, early morning", "The temple again, then breakfast at the langar", "Quieter early in the day; the langar is part of the visit"],
+    ["Day 2, late morning", "Jallianwala Bagh", "A short walk from the temple (see below)"],
+    ["Day 2, afternoon", "Drive to the Attari–Wagah border for the evening ceremony", "Starts late afternoon; arrive early"],
+    ["Day 3", "Drive on into the Himalaya — Dharamshala or Dalhousie", "Or fly home from Amritsar"]
+   ],
+   "note": "Jallianwala Bagh is the memorial garden where Indians were shot by British troops on 13 April 1919; it commemorates the 2,000 Indians who were killed or wounded. You can see the Martyrs' Gallery, the bullet-marked wall and the memorial well. Please check its opening hours locally."
+  },
+  {
+   "id": "getting-there",
+   "nav": "From Delhi",
+   "h2": "Getting to Amritsar from Delhi",
+   "kind": "cards",
+   "lead": "There are fast trains and short flights from Delhi, or a full-day drive. We help you pick by your dates — see <a href=\"/india-tours/trains-vs-flights-in-india/\">trains vs flights in India</a>.",
+   "items": [
+    ["By train", "Fast trains run from Delhi to Amritsar. The railway station is 2 km (1.2 miles) from the Golden Temple. We tell you which train fits your day and your driver meets you at the station."],
+    ["By air", "Short flights from Delhi land at Sri Guru Ramdass International Airport, 13 km (8 miles) from the temple. Amritsar is also one of India's e-Visa entry airports, so some travellers fly in here directly."],
+    ["By private car", "A full day on the road from Delhi, with stops where you like. It is the easiest way if you plan to continue into the hills by car anyway."],
+    ["Your e-Visa", "Apply only at the official site <b>indianvisaonline.gov.in</b>; beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through the form."]
+   ]
+  },
+  {
+   "id": "himalayas",
+   "nav": "On to the hills",
+   "h2": "From Amritsar into the Himalaya",
+   "kind": "prose",
+   "style": "alt",
+   "video": "route",
+   "video_caption": "Golden Temple & Himalayas, 10 days: Delhi → Amritsar → Attari–Wagah → Dharamshala → Manali → Delhi. Town positions are approximate.",
+   "paras": [
+    "Amritsar is the natural gateway to Himachal Pradesh, our home state. From the plains of Punjab the road climbs to <b>Dharamshala</b> and <b>McLeod Ganj</b> (2,082 m / 6,831 ft), the seat of the Tibetan Government in exile, under the snowy Dhauladhar range. Kangra (Gaggal) airport is 14 km (9 miles) away if you would rather fly out from there. Our <a href=\"/mcleod-ganj/\">McLeod Ganj guide</a> covers the town.",
+    "Next comes <b>Manali</b>, in the Kullu valley. In winter the Rohtang Pass is closed (late November to May), but the Atal Tunnel is open all year, so the high valley beyond stays within reach on most days.",
+    "Prefer a quieter hill town? Dalhousie is 199 km (124 miles) from Amritsar. Either way, our <a href=\"/india-tours/best-time-to-visit-himachal/\">best time to visit Himachal</a> guide explains what each month is like."
+   ]
+  },
+  {
+   "id": "why-us",
+   "nav": "Who we are",
+   "h2": "Who you are booking with",
+   "kind": "callout",
+   "style": "dark",
+   "text": "We are a small travel company based in Himachal Pradesh, a day's drive from Amritsar, founded in 2019. We plan every trip ourselves and answer the phone ourselves. <b>Your driver's name, photo and car number are shared with you before the trip.</b>",
+   "after": [
+    "HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022 — see <a href=\"/certificates/\">our certificates</a>.",
+    "Comparing companies? Our guide on <a href=\"/india-tours/how-to-choose-a-travel-agency-in-india/\">how to choose a travel agency in India</a> lists the questions to ask any of them — us included."
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Our published Golden Temple route, in US dollars. Shorter Amritsar-only trips are quoted on request.",
+  "rows": [
+   ["Golden Temple & Himalayas — 10 days / 9 nights (Delhi · Amritsar · Dharamshala · Manali)", "from US$949", "Per person: private car and driver; the Golden Temple and the Wagah border ceremony, McLeod Ganj and Manali; Agra on request. Excludes international flights, visa fee, travel insurance and entry tickets unless your quote says otherwise."],
+   ["Amritsar only — 2 or 3 days", "on request", "Private car and driver from Delhi or from Amritsar station or airport. Ask us for current rates."]
+  ],
+  "note": "Prices are per person in US dollars, indicative, and confirmed on your quote. International flights are excluded."
+ },
+ "faqs": [
+  ["How many days do you need in Amritsar?", "Two nights is enough for most visitors: the Golden Temple by day and after dark, a meal at the langar, Jallianwala Bagh and the evening ceremony at the Attari–Wagah border. Add a day if you want to slow down."],
+  ["Can tourists and non-Sikhs visit the Golden Temple?", "Yes. Visitors of every faith are welcome. Remove your shoes and cover your head before entering the temple complex (Punjab Tourism), dress modestly and follow the instructions of the temple volunteers (sevadars)."],
+  ["What should I wear to the Golden Temple?", "Modest clothes that cover shoulders and knees, and a scarf or bandana to cover your head. You leave your shoes outside before you enter."],
+  ["Is the langar free, and can visitors eat there?", "Yes. The Guru Ka Langar serves free food to around 20,000 people every day, and up to 100,000 on special occasions (Punjab Tourism). Visitors can join the community meal."],
+  ["What time is the Wagah border ceremony?", "It starts in the late afternoon — about 4:15 pm in winter and 5:15 pm in summer (Incredible India) — and moves with sunset, so arrive early. The ceremony is run by the Border Security Force; timings and access rules can change at short notice. Carry your passport and confirm on the day."],
+  ["How far is the Wagah border from Amritsar?", "About 32 km (20 miles) from Amritsar bus stand and 36 km (22 miles) from the airport (District Amritsar). With a private car it fits easily into an afternoon."],
+  ["How do I get from Delhi to Amritsar?", "By fast train (the station is 2 km from the temple), by a short flight (the airport is 13 km from the temple), or a full day by private car. We help you choose by your dates and the rest of your route."],
+  ["Can we continue from Amritsar to Dharamshala and Manali?", "Yes — that is our 10-day Golden Temple & Himalayas route (Delhi, Amritsar, Dharamshala, Manali), from US$949 per person. Your quote lists exactly what is included."]
+ ],
+ "sources": [
+  ["Punjab Tourism — Sri Harmandir Sahib (Golden Temple)", "https://punjabtourism.punjab.gov.in/sri-harmandir-sahib.php"],
+  ["Incredible India — Sri Harmandir Sahib (Golden Temple)", "https://www.incredibleindia.gov.in/en/punjab/amritsar/sri-harmandir-sahib-golden-temple"],
+  ["Incredible India — Attari–Wagah border", "https://www.incredibleindia.gov.in/en/punjab/amritsar/attari-wagah-border"],
+  ["District Amritsar — Wagah Border", "https://amritsar.nic.in/tourist-place/wagah-border/"],
+  ["District Amritsar — Jallianwala Bagh", "https://amritsar.nic.in/tourist-place/jallian-wala-bagh/"],
+  ["Border Security Force — Attari", "https://attari.bsf.gov.in/"],
+  ["GOV.UK — India travel advice (FCDO, updated 7 Oct 2026)", "https://www.gov.uk/foreign-travel-advice/india/warnings-and-insurance"],
+  ["Himachal Tourism — Dalhousie", "https://himachaltourism.gov.in/destination/dalhousie/"],
+  ["Official Indian e-Visa portal", "https://indianvisaonline.gov.in/evisa/"]
+ ],
+ "verified": "11 Nov 2026",
+ "cta": {
+  "h2": "Planning Amritsar? Tell us your dates",
+  "text": "When you arrive, how many of you, and whether you want Amritsar on its own or as the start of the Himalaya. You get a day-by-day plan and a US-dollar quote from our office in Himachal, then decide.",
+  "wa": "Hello Suzu Travels, I'm planning an Amritsar Golden Temple tour. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "trip": {
+  "name": "Golden Temple & Himalayas — 10 days, private car and driver",
+  "desc": "Private tour: Delhi, Amritsar (Golden Temple, langar, Attari–Wagah ceremony), Dharamshala and McLeod Ganj, Manali, Delhi. From US$949 per person.",
+  "type": ["International travellers", "Cultural travellers"],
+  "stops": ["Delhi", "Amritsar — Golden Temple", "Attari–Wagah border ceremony", "Dharamshala and McLeod Ganj", "Manali", "Delhi"]
+ },
+ "links": ["north-india-tour", "private-driver-india", "best-time-to-visit-himachal", "tours-to-india-from-uk"]
+}
