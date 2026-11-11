@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 30% 25%, #16365a 0%, #0b1f33 65%); color: #fff; }
+      .kicker { position: absolute; left: 110px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.16em; line-height: 1.1; }
+      .title { position: absolute; left: 110px; top: 118px; font-weight: 800; font-size: 78px; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; }
+      .nts { position: absolute; left: 112px; top: 220px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.6); }
+      svg.map { position: absolute; left: 60px; top: 280px; width: 1180px; height: 666px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .card { position: absolute; left: 1320px; top: 300px; width: 540px; opacity: 0; }
+      .cn { font-weight: 800; font-size: 84px; letter-spacing: -0.02em; line-height: 1.05; white-space: nowrap; }
+      .ck { margin-top: 18px; font-weight: 800; font-size: 40px; color: #d4a24c; line-height: 1.2; }
+      .cb { display: inline-block; margin-top: 26px; padding: 12px 26px; border-radius: 34px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 32px; white-space: nowrap; }
+      .cnote { margin-top: 26px; font-weight: 500; font-size: 32px; line-height: 1.3; color: rgba(255,255,255,0.92); }
+      .ef { margin-top: 30px; font-weight: 800; font-size: 30px; letter-spacing: 0.08em; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 14px; }
+      .ef i { width: 30px; height: 30px; border-radius: 50%; background: rgba(255,255,255,0.18); display: inline-block; }
+      .ef i.on { background: #d4a24c; }
+      .end { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; background: #0b1f33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 34px; opacity: 0; }
+      .etitle { font-size: 66px; font-weight: 800; }
+      .rib { display: flex; gap: 14px; }
+      .seg { width: 360px; height: 150px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; font-weight: 800; }
+      .seg b { font-size: 44px; }
+      .seg span { font-size: 28px; }
+      .g { background: #d4a24c; color: #0b1f33; }
+      .w { background: #fff; color: #0b1f33; }
+      .d { background: rgba(255,255,255,0.12); color: #fff; }
+      .endnote { font-size: 38px; font-weight: 500; color: rgba(255,255,255,0.92); }
+      .pq { font-size: 40px; font-weight: 800; color: #d4a24c; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker">TREKS NEAR KASOL · PARVATI VALLEY</div>
+        <div class="title">Which Kasol trek fits your day?</div>
+        <div class="nts">Schematic map, not to scale</div>
+        <svg class="map" viewBox="0 0 1240 700">
+          <path d="M 20 560 C 200 540 330 500 520 470 S 820 420 1000 370 S 1150 330 1230 310" fill="none" stroke="#2f6f8f" stroke-width="20" stroke-linecap="round" opacity="0.7" />
+          <text x="300" y="570" font-size="24" fill="#7fb5cf" style="fill:#7fb5cf">Parvati river</text>
+          <path id="road" pathLength="1" d="M 60 500 C 200 480 280 460 330 450 S 470 425 560 420 S 720 400 800 390 S 980 350 1080 330" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <path id="t1" pathLength="1" d="M 560 420 C 580 460 610 490 650 505" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <path id="t2" pathLength="1" d="M 650 505 C 680 560 700 600 740 640" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <path id="t3" pathLength="1" d="M 560 420 C 540 360 580 300 540 250 S 520 180 540 140" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <path id="t4" pathLength="1" d="M 330 450 C 320 390 280 330 270 270 S 250 190 240 160" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <path id="t5" pathLength="1" d="M 1080 330 C 1090 290 1100 250 1110 200" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <path id="t6" pathLength="1" d="M 1080 330 C 1120 360 1150 400 1170 440 S 1200 500 1210 540" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" />
+          <circle cx="60" cy="500" r="12" fill="#fff" /><text x="60" y="455" font-size="30" text-anchor="middle">Bhuntar</text>
+          <circle cx="330" cy="450" r="12" fill="#fff" /><text x="350" y="500" font-size="30" text-anchor="start">Jari</text>
+          <circle cx="560" cy="420" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5" /><text x="585" y="398" font-size="36" text-anchor="start">Kasol</text>
+          <circle cx="800" cy="390" r="12" fill="#fff" /><text x="800" y="350" font-size="30" text-anchor="middle">Manikaran</text>
+          <circle cx="1080" cy="330" r="12" fill="#fff" /><text x="1060" y="300" font-size="30" text-anchor="end">Barshaini</text>
+          <g id="p1" opacity="0.35"><circle cx="650" cy="505" r="11" fill="#d4a24c" /><text x="670" y="500" font-size="28" text-anchor="start">Chalal</text></g>
+          <g id="p2" opacity="0.35"><circle cx="740" cy="640" r="11" fill="#d4a24c" /><text x="762" y="650" font-size="28" text-anchor="start">Rasol</text></g>
+          <g id="p3" opacity="0.35"><circle cx="540" cy="140" r="11" fill="#d4a24c" /><text x="562" y="148" font-size="28" text-anchor="start">Grahan</text></g>
+          <g id="p4" opacity="0.35"><circle cx="240" cy="160" r="11" fill="#d4a24c" /><text x="262" y="168" font-size="28" text-anchor="start">Malana</text></g>
+          <g id="p5" opacity="0.35"><circle cx="1110" cy="200" r="11" fill="#d4a24c" /><text x="1110" y="168" font-size="28" text-anchor="middle">Tosh</text></g>
+          <g id="p6" opacity="0.35"><circle cx="1210" cy="540" r="11" fill="#d4a24c" /><text x="1200" y="590" font-size="28" text-anchor="end">Kheerganga</text></g>
+        </svg>
+        <div class="card" id="c1"><div class="cn">Chalal</div><div class="ck">About 2 km · 30–45 min</div><div class="cb">Easiest · year-round</div><div class="cnote">Cross the Kasol bridge, walk along the Parvati</div><div class="ef">EFFORT <i class="on"></i><i></i><i></i></div></div>
+        <div class="card" id="c2"><div class="cn">Rasol</div><div class="ck">Steep forest climb · half to full day</div><div class="cb">Fit walkers</div><div class="cnote">High village above Chalal; temple seen from outside only</div><div class="ef">EFFORT <i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+        <div class="card" id="c3"><div class="cn">Grahan</div><div class="ck">About 9–10 km · 4–6 hrs up</div><div class="cb">Best day trek</div><div class="cnote">2,347 m village with no road; no alcohol, carry cash</div><div class="ef">EFFORT <i class="on"></i><i class="on"></i><i></i></div></div>
+        <div class="card" id="c4"><div class="cn">Malana</div><div class="ck">Road via Jari + short steep walk</div><div class="cb">Culture · day visit</div><div class="cnote">Strict no-touch village rules; liquor banned</div><div class="ef">EFFORT <i class="on"></i><i class="on"></i><i></i></div></div>
+        <div class="card" id="c5"><div class="cn">Tosh</div><div class="ck">Short climb above Barshaini</div><div class="cb">Snow pick · Dec–Feb</div><div class="cnote">Village at about 2,400 m; guide and microspikes in winter</div><div class="ef">EFFORT <i class="on"></i><i class="on"></i><i></i></div></div>
+        <div class="card" id="c6"><div class="cn">Kheerganga</div><div class="ck">12–13 km from Barshaini</div><div class="cb">Full day · no camping</div><div class="cnote">Top by 10 am, down by 2 pm; sleep in Kasol or Tosh</div><div class="ef">EFFORT <i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+        <div class="end" id="end">
+          <div class="etitle">When to trek near Kasol</div>
+          <div class="rib">
+            <div class="seg g"><b>Mar–Jun</b><span>Best for all treks</span></div>
+            <div class="seg d"><b>Jul–Aug</b><span>Monsoon: Chalal only</span></div>
+            <div class="seg g"><b>Sep–Nov</b><span>Very good</span></div>
+            <div class="seg w"><b>Dec–Feb</b><span>Snow higher up: guide</span></div>
+          </div>
+          <div class="endnote">Kasol stay + cab + local guide in one plan</div>
+          <div class="pq">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from(".kicker", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from(".title", { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" }, 0.2);
+      tl.from(".nts", { opacity: 0, duration: 0.5 }, 0.5);
+      tl.to("#road", { attr: { "stroke-dashoffset": 0 }, duration: 1.1, ease: "power1.inOut" }, 0.3);
+      const T = [1.4, 2.65, 3.9, 5.15, 6.4, 7.65];
+      T.forEach((t, i) => {
+        const n = i + 1;
+        tl.to("#t" + n, { attr: { "stroke-dashoffset": 0 }, duration: 0.7, ease: "power2.out" }, t);
+        tl.to("#p" + n, { opacity: 1, duration: 0.3 }, t + 0.4);
+        tl.fromTo("#c" + n, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, t);
+        tl.to("#c" + n, { opacity: 0, x: -30, duration: 0.3, ease: "power2.in" }, t + 1.0);
+      });
+      tl.to([".kicker", ".title", ".nts", "svg.map"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 8.75);
+      tl.to("#end", { opacity: 1, duration: 0.5, ease: "sine.inOut" }, 9.0);
+      tl.from(".seg", { opacity: 0, y: 30, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 9.3);
+      tl.from([".endnote", ".pq"], { opacity: 0, y: 20, duration: 0.4, stagger: 0.15 }, 10.0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
