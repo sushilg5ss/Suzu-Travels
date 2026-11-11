@@ -26,12 +26,14 @@
           "opened": "2026-04-19",
           "opening_time": "12:15",
           "closing": "2026-11-10",
-          "closing_status": "announced 20 Oct 2026 by the Shri Gangotri & Yamunotri temple committee (Annakut/Govardhan Puja); time not published yet",
+          "closing_status": "announced 20 Oct 2026 (Annakut); 12:05 pm per Free Press Journal 22 Oct 2026 (one source; NewsDrum undated report says 12:01 pm) - print 'around noon'",
           "closing_sources": [
             "https://liveskgnews.com/uttarakhand/dates-for-the-closure-of-the-uttarakhand-char-dham-shrines-have-been-announced-the-portals-of-shri-badrinath-dham-will-close-on-november-16/",
-            "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177"
+            "https://www.timesnowhindi.com/spirituality/badrinath-dham-closing-date-2026-16-november-kapat-band-time-badrivishal-bhagwan-kapat-kab-band-honge-article-156374177",
+            "https://www.freepressjournal.in/lifestyle/gangotri-dham-to-shut-its-doors-on-november-10-as-winter-approaches-heres-what-you-should-know"
           ],
-          "closing_as_of": "2026-10-21"
+          "closing_as_of": "2026-11-11",
+          "closing_time": "12:05"
         },
         "kedarnath": {
           "opened": "2026-04-22",
