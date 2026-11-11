@@ -32,7 +32,7 @@
    "https://en.wikipedia.org/wiki/Kangchenjunga",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
    "https://scroll.in/latest/935435/top-mountaineering-authority-to-deny-permits-to-climb-kanchenjunga-as-sikkim-protests-lifting-ban",
-   "https://himalayan-database.climbing-history.org/expedition/KANG77101/1977",
+   "https://publications.americanalpineclub.org/articles/12197844700/Kanchenjunga-from-the-East",
    "https://english.nepalnews.com/s/explainers/explained-why-a-kanchenjunga-expedition-sparked-outrage-in-indias-sikkim/"
   ]
  },
@@ -184,13 +184,47 @@
   "grade": "technical",
   "grade_note": "High snow/ice climb; western approaches repeatedly defeated climbers 1922–70",
   "season": "Jun–Aug",
-  "base": "Leh → Nubra (Sasoma / Tiggur)",
+  "base": "Leh → Shyok (east side) or Nubra / Panamik (west side)",
   "foreigners": "restricted",
   "rank": 5,
-  "notable": "Highest peak entirely within Ladakh (Indian-administered).",
+  "notable": "Highest summit of the Saser Muztagh, the easternmost subrange of the Karakoram; first climbed 5 June 1973 by an ITBP team from the east (Shukpa Kunchang) side.",
   "sources": [
    "https://en.wikipedia.org/wiki/Saser_Kangri",
+   "https://himalayanclub.org/hj/33/21/homage-to-saser-kangri-the-yellow-mountain-1973/",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
+  ]
+ },
+ {
+  "id": "saser-kangri-ii-east",
+  "name": "Saser Kangri II East",
+  "alt": [],
+  "m": 7518,
+  "ft": 24665,
+  "m_alt": [
+   7513
+  ],
+  "band": "7000",
+  "state": "ladakh",
+  "state_label": "Ladakh",
+  "where": "Ladakh",
+  "range": "Karakoram (Saser Muztagh)",
+  "area": "Nubra, Leh district",
+  "fa": 2011,
+  "fa_by": "Mark Richey, Steve Swenson & Freddie Wilkinson (USA)",
+  "status": "climbed",
+  "status_note": "",
+  "grade": "extreme",
+  "grade_note": "Steep alpine-style ice face; won the 2012 Piolet d'Or",
+  "season": "Jun–Aug",
+  "base": "Leh → Nubra (Sakang Lungpa glacier)",
+  "foreigners": "restricted",
+  "rank": 6,
+  "notable": "Was the world's 2nd-highest unclimbed peak until 24 Aug 2011 (alpine style, SW face); the lower West summit was climbed on 7 Sep 1985 by an Indo-Japanese team.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Saser_Kangri",
+   "https://publications.americanalpineclub.org/articles/12201228002",
+   "https://himalayanclub.org/hj/42/15/indo-japanese-expedition-to-saser-kangri-ii/",
+   "https://www.himalayanclub.org/hj/67/13/the-first-ascent-of-saser-kangri-ii/"
   ]
  },
  {
@@ -218,40 +252,11 @@
   "season": "Jun–Aug",
   "base": "Leh → Nubra/Shyok (Sasoma)",
   "foreigners": "restricted",
-  "rank": 6,
+  "rank": 7,
   "notable": "Highest peak of the Rimo Muztagh.",
   "sources": [
    "https://en.wikipedia.org/wiki/Mamostong_Kangri",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
-  ]
- },
- {
-  "id": "saser-kangri-ii-east",
-  "name": "Saser Kangri II East",
-  "alt": [],
-  "m": 7513,
-  "ft": 24649,
-  "m_alt": [],
-  "band": "7000",
-  "state": "ladakh",
-  "state_label": "Ladakh",
-  "where": "Ladakh",
-  "range": "Karakoram (Saser Muztagh)",
-  "area": "Nubra, Leh district",
-  "fa": 2011,
-  "fa_by": "Mark Richey, Steve Swenson & Freddie Wilkinson (USA)",
-  "status": "climbed",
-  "status_note": "",
-  "grade": "extreme",
-  "grade_note": "Steep alpine-style ice face; won the 2012 Piolet d'Or",
-  "season": "Jun–Aug",
-  "base": "Leh → Nubra (Sasoma)",
-  "foreigners": "restricted",
-  "rank": 7,
-  "notable": "Was the world's 2nd-highest unclimbed peak until 2011; lower West summit climbed 1984.",
-  "sources": [
-   "https://en.wikipedia.org/wiki/Saser_Kangri",
-   "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth"
   ]
  },
  {
@@ -274,13 +279,13 @@
   "grade": "technical",
   "grade_note": "Eastern approach over glaciated terrain",
   "season": "Jun–Aug",
-  "base": "Leh → Nubra / Shyok",
+  "base": "Leh → Shyok (North Shukpa Kunchang glacier)",
   "foreigners": "restricted",
   "rank": 8,
   "notable": "",
   "sources": [
    "https://en.wikipedia.org/wiki/Saser_Kangri",
-   "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
+   "https://www.himalayanclub.org/hj/43/17/saser-kangri-iii-1986/"
   ]
  },
  {
@@ -410,7 +415,8 @@
   "m": 7415,
   "ft": 24327,
   "m_alt": [
-   7416
+   7416,
+   7410
   ],
   "band": "7000",
   "state": "ladakh",
@@ -425,13 +431,13 @@
   "grade": "technical",
   "grade_note": "Western-side glacier approach",
   "season": "Jun–Aug",
-  "base": "Leh → Nubra (Sasoma)",
+  "base": "Leh → Nubra / Panamik (Phukpoche glacier)",
   "foreigners": "restricted",
   "rank": null,
   "notable": "",
   "sources": [
    "https://en.wikipedia.org/wiki/Saser_Kangri",
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
+   "https://publications.americanalpineclub.org/articles/12198824001"
   ]
  },
  {
@@ -3565,7 +3571,7 @@
   "id": "mentok-kangri",
   "name": "Mentok Kangri",
   "alt": [
-   "Mentok II"
+   "Mentok I"
   ],
   "m": 6250,
   "ft": 20505,
@@ -4268,8 +4274,8 @@
   "where": "Himachal Pradesh",
   "range": "Pir Panjal (Solang)",
   "area": "Kullu",
-  "fa": null,
-  "fa_by": "",
+  "fa": 1963,
+  "fa_by": "Robert Pettigrew, Bob Menzies & Wangyal (October 1963)",
   "status": "climbed",
   "status_note": "",
   "grade": "trekking peak",
@@ -4280,16 +4286,20 @@
   "rank": null,
   "notable": "Climbed from Beas Kund above Solang; the final ridge is narrow and exposed, so it 'can feel like a mountain' despite the trekking-peak label. Published heights vary (about 5,257–5,345 m).",
   "sources": [
-   "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi"
+   "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi",
+   "https://www.himalayanclub.org/hj/26/18/expeditions-and-notes-26/"
   ]
  },
  {
   "id": "shitidhar",
   "name": "Shitidhar",
-  "alt": [],
-  "m": 5294,
-  "ft": 17369,
+  "alt": [
+   "Shitindhar"
+  ],
+  "m": 5290,
+  "ft": 17356,
   "m_alt": [
+   5294,
    5250
   ],
   "band": "5000",
@@ -4308,7 +4318,7 @@
   "base": "Manali → Solang",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "Snow peak above Solang near Manali, approached via Dhundi, Bakarthach and Lady Leg. Wikipedia lists it at 5,290 m; other published figures run 5,250–5,294 m.",
   "sources": [
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
   ]

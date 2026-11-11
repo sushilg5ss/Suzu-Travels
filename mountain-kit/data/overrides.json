@@ -56,13 +56,19 @@
   "sources": [
    "https://en.wikipedia.org/wiki/Tso_Moriri",
    "https://www.summitpost.org/mentok-kangri-2/993166"
+  ],
+  "alt_names": [
+   "Mentok I"
   ]
  },
  "Ladakhi Peak": {
   "notable": "Climbed from Beas Kund above Solang; the final ridge is narrow and exposed, so it 'can feel like a mountain' despite the trekking-peak label. Published heights vary (about 5,257–5,345 m).",
   "sources": [
-   "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi"
-  ]
+   "https://www.outlooktraveller.com/experiences/adventure/a-hard-climb-up-to-ladakhi",
+   "https://www.himalayanclub.org/hj/26/18/expeditions-and-notes-26/"
+  ],
+  "first_ascent_year": 1963,
+  "first_ascent_by": "Robert Pettigrew, Bob Menzies & Wangyal (October 1963)"
  },
  "Chamser Kangri": {
   "sources": [
@@ -118,7 +124,7 @@
    "https://en.wikipedia.org/wiki/Kangchenjunga",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
    "https://scroll.in/latest/935435/top-mountaineering-authority-to-deny-permits-to-climb-kanchenjunga-as-sikkim-protests-lifting-ban",
-   "https://himalayan-database.climbing-history.org/expedition/KANG77101/1977",
+   "https://publications.americanalpineclub.org/articles/12197844700/Kanchenjunga-from-the-East",
    "https://english.nepalnews.com/s/explainers/explained-why-a-kanchenjunga-expedition-sparked-outrage-in-indias-sikkim/"
   ]
  },
@@ -296,6 +302,65 @@
    "https://www.himalayanclub.org/hj/57/6/nilkanth-west-ridge/",
    "https://forestonline.uk.gov.in/nilkantha",
    "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"
+  ]
+ },
+ "Shitidhar": {
+  "height_m": 5290,
+  "height_alternates_m": [
+   5294,
+   5250
+  ],
+  "alt_names": [
+   "Shitindhar"
+  ],
+  "notable": "Snow peak above Solang near Manali, approached via Dhundi, Bakarthach and Lady Leg. Wikipedia lists it at 5,290 m; other published figures run 5,250–5,294 m.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ]
+ },
+ "Saser Kangri I": {
+  "notable": "Highest summit of the Saser Muztagh, the easternmost subrange of the Karakoram; first climbed 5 June 1973 by an ITBP team from the east (Shukpa Kunchang) side.",
+  "base": "Leh → Shyok (east side) or Nubra / Panamik (west side)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Saser_Kangri",
+   "https://himalayanclub.org/hj/33/21/homage-to-saser-kangri-the-yellow-mountain-1973/",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
+  ]
+ },
+ "Saser Kangri II East": {
+  "height_m": 7518,
+  "height_alternates_m": [
+   7513
+  ],
+  "india_rank": 6,
+  "base": "Leh → Nubra (Sakang Lungpa glacier)",
+  "notable": "Was the world's 2nd-highest unclimbed peak until 24 Aug 2011 (alpine style, SW face); the lower West summit was climbed on 7 Sep 1985 by an Indo-Japanese team.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Saser_Kangri",
+   "https://publications.americanalpineclub.org/articles/12201228002",
+   "https://himalayanclub.org/hj/42/15/indo-japanese-expedition-to-saser-kangri-ii/",
+   "https://www.himalayanclub.org/hj/67/13/the-first-ascent-of-saser-kangri-ii/"
+  ]
+ },
+ "Mamostong Kangri": {
+  "india_rank": 7
+ },
+ "Saser Kangri IV": {
+  "height_alternates_m": [
+   7416,
+   7410
+  ],
+  "base": "Leh → Nubra / Panamik (Phukpoche glacier)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Saser_Kangri",
+   "https://publications.americanalpineclub.org/articles/12198824001"
+  ]
+ },
+ "Saser Kangri III": {
+  "base": "Leh → Shyok (North Shukpa Kunchang glacier)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Saser_Kangri",
+   "https://www.himalayanclub.org/hj/43/17/saser-kangri-iii-1986/"
   ]
  }
 }
