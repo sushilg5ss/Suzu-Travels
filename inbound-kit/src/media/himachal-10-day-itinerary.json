@@ -1,0 +1,141 @@
+{
+ "_note": "Media for /india-tours/himachal-10-day-itinerary/ (itinerary). Hero order = route order: library Shimla sunrise px-30550228 (= poster), library Kalka toy-train locos px-31180796, NEW px-17521689 paraglider over Solang valley, library Dhauladhar above Dharamshala px-36966954, NEW px-2573549 Khajjiar meadow (CREDITS 11 Nov 2026). Captions from fact-pack Media notes, checked against CREDITS allowed captions: 'MCLEOD GANJ' replaced by 'DHARAMSHALA' (no licensed McLeod Ganj photo found) and 'OUR HOME HILLS' dropped (5 photos, 5 beats). Route: fact pack Media notes coords (Dalhousie/Khajjiar/Pathankot approximate town centres). No cost ladder (price on request). Visual Studio 11 Nov 2026.",
+ "hero": {
+  "kicker": "HIMACHAL IN 10 DAYS",
+  "scenes": [
+   {
+    "img": "px-30550228.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-31180796.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": -30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": 30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-17521689.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 200
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-36966954.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   },
+   {
+    "img": "px-2573549.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": -10
+    }
+   }
+  ],
+  "steps": [
+   "SHIMLA HILLS",
+   "SHIMLA TOY TRAIN",
+   "MANALI & SOLANG",
+   "DHARAMSHALA",
+   "KHAJJIAR MEADOWS"
+  ]
+ },
+ "route": {
+  "title": "HIMACHAL · 10 DAYS",
+  "sub": "Shimla → Manali → Dharamshala → Dalhousie",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "arrive",
+    "day": "Day 1",
+    "lat": 28.6139,
+    "lon": 77.209
+   },
+   {
+    "name": "Kalka",
+    "sub": "toy train",
+    "day": "Day 2",
+    "lat": 30.8381,
+    "lon": 76.9381
+   },
+   {
+    "name": "Shimla",
+    "sub": "the Ridge",
+    "day": "Day 2",
+    "lat": 31.1048,
+    "lon": 77.1734
+   },
+   {
+    "name": "Manali",
+    "sub": "Solang · Kullu",
+    "day": "Day 4",
+    "lat": 32.2432,
+    "lon": 77.1892
+   },
+   {
+    "name": "Dharamshala",
+    "sub": "McLeod Ganj",
+    "day": "Day 7",
+    "lat": 32.219,
+    "lon": 76.3234
+   },
+   {
+    "name": "Dalhousie",
+    "sub": "hill town",
+    "day": "Day 9",
+    "lat": 32.5387,
+    "lon": 75.971
+   },
+   {
+    "name": "Khajjiar",
+    "sub": "meadow",
+    "day": "Day 9",
+    "lat": 32.553,
+    "lon": 76.0607
+   },
+   {
+    "name": "Pathankot",
+    "sub": "train onward",
+    "day": "Day 10",
+    "lat": 32.2643,
+    "lon": 75.6421
+   }
+  ]
+ }
+}
