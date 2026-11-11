@@ -1,0 +1,112 @@
+{
+ "_note": "Media for /india-tours/amritsar-golden-temple-tour/ (product). Hero: library Golden Temple sunset px-5458388 first (= poster), new Pexels px-28905554 Golden Temple at dusk (CREDITS 11 Nov 2026), library Dharamshala px-36966954 + Manali px-28206557; captions only from allowed captions. No Wagah/langar photo found under licence this run, so those captions are not used. Route: fact pack Media notes (town centres, approximate). Built by the Page Builder (day) 11 Nov 2026 per page-builder.md Step 1.3.",
+ "hero": {
+  "kicker": "AMRITSAR · PUNJAB",
+  "scenes": [
+   {
+    "img": "px-5458388.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": -40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": 40,
+     "y": -20
+    }
+   },
+   {
+    "img": "px-28905554.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": 20
+    }
+   },
+   {
+    "img": "px-36966954.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 420
+    }
+   },
+   {
+    "img": "px-28206557.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 560
+    }
+   }
+  ],
+  "steps": [
+   "THE GOLDEN TEMPLE",
+   "AMRITSAR AT DUSK",
+   "DHARAMSHALA",
+   "ON TO THE HILLS"
+  ]
+ },
+ "route": {
+  "title": "GOLDEN TEMPLE & HIMALAYAS · 10 DAYS",
+  "sub": "Delhi → Amritsar → Dharamshala → Manali → Delhi",
+  "bounds": "auto",
+  "dur": 12,
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "arrive",
+    "day": "Day 1",
+    "lat": 28.61,
+    "lon": 77.21
+   },
+   {
+    "name": "Amritsar",
+    "sub": "Golden Temple",
+    "day": "Day 2",
+    "lat": 31.62,
+    "lon": 74.88
+   },
+   {
+    "name": "Attari–Wagah",
+    "sub": "evening ceremony",
+    "day": "Day 3",
+    "lat": 31.6,
+    "lon": 74.57
+   },
+   {
+    "name": "Dharamshala",
+    "sub": "McLeod Ganj",
+    "day": "Day 4",
+    "lat": 32.22,
+    "lon": 76.32
+   },
+   {
+    "name": "Manali",
+    "sub": "Himalayan valley",
+    "day": "Day 7",
+    "lat": 32.24,
+    "lon": 77.19
+   },
+   {
+    "name": "Delhi",
+    "sub": "fly home",
+    "day": "Day 10",
+    "lat": 28.61,
+    "lon": 77.21
+   }
+  ]
+ }
+}
