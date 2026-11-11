@@ -2215,5 +2215,65 @@
   "license": "CC BY-SA 3.0, Wikimedia Commons",
   "src": "https://commons.wikimedia.org/wiki/File:Penang_Malaysia_Kek-Lok-Si-Temple-03.jpg",
   "wp_id": 20753
+ },
+ "bhutan-g1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bhutan-paro-rinpung-dzong-bridge.webp",
+  "alt": "Rinpung Dzong on the hillside above the Paro Chhu river, with a covered wooden cantilever bridge across the river in front, Paro, Bhutan",
+  "cap": "Rinpung Dzong and its covered bridge",
+  "note": "Paro",
+  "credit": "Christopher Fynn",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Rinpung_Dzong_Paro_2007-11-11_CJF.JPG",
+  "wp_id": 21218
+ },
+ "bhutan-g2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bhutan-thimphu-tashichho-dzong.webp",
+  "alt": "Central tower of Tashichho Dzong with red roofs and white walls, the Bhutanese flag on a pole and forested hillside behind, Thimphu, Bhutan",
+  "cap": "Tashichho Dzong",
+  "note": "Thimphu",
+  "credit": "Bernard Gagnon",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Tashichho_Dzong,_Bhutan_03.jpg",
+  "wp_id": 21219
+ },
+ "bhutan-g3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bhutan-thimphu-buddha-dordenma.webp",
+  "alt": "The giant seated Buddha Dordenma statue rising above a pine forest under big white clouds, Thimphu, Bhutan",
+  "cap": "Buddha Dordenma above the forest",
+  "note": "Thimphu",
+  "credit": "Gerd Eichmann",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Thimphu-Buddha_Dordenma-02-2015-gje.jpg",
+  "wp_id": 21223
+ },
+ "bhutan-g4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bhutan-dochula-108-chortens.webp",
+  "alt": "Rows of white Druk Wangyal chortens with red bands and golden tops on a grassy slope among tall trees, Dochula pass on the Thimphu–Punakha road, Bhutan",
+  "cap": "The 108 chortens at Dochula",
+  "note": "On the road from Thimphu to Punakha",
+  "credit": "David Broad",
+  "license": "CC BY 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Druk_Wangyal_-_108_Chortens_at_Dochula_on_Thimphu-Punakha_Highway_-_Bhutan_-_panoramio.jpg",
+  "wp_id": 21220
+ },
+ "bhutan-g5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bhutan-punakha-suspension-bridge.webp",
+  "alt": "Long suspension bridge strung across a wide turquoise river with a gravel bar, village houses and forested hills of the Punakha valley behind, Bhutan",
+  "cap": "The Punakha suspension bridge",
+  "note": "Punakha valley",
+  "credit": "Doug Knuth",
+  "license": "CC BY-SA 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Punakha_3-69,_suspension_bridge.jpg",
+  "wp_id": 21221
+ },
+ "bhutan-g6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/suzu-abroad-bhutan-phobjikha-valley.webp",
+  "alt": "Green fields and a few farmhouses on the floor of the Phobjikha valley seen past a rustic wooden fence, with pine-covered hills behind, Bhutan",
+  "cap": "Phobjikha valley",
+  "note": "Central Bhutan",
+  "credit": "stull17",
+  "license": "CC BY 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Phobjika_Valley_view,_Bhutan.jpg",
+  "wp_id": 21222
  }
 }

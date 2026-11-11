@@ -42,6 +42,11 @@ GAL = {
    sub='Six stops from the classic Malaysia loop \u2014 the Petronas Towers and Batu Caves in Kuala Lumpur, the cable car up to Genting Highlands, the Sky Bridge on Langkawi and the heritage of George Town and Kek Lok Si on Penang. Tap any photo to open it full size.',
    slugs=[('malaysia-g1','-768x1616','50% 12%'),('malaysia-g2','-768x1152','50% 18%'),('malaysia-g3','-1024x768'),
           ('malaysia-g4','-768x1152'),('malaysia-g5','-1024x819'),('malaysia-g6','-1024x778')]),
+ 'bhutan': dict(
+   title='Bhutan in real photos',
+   sub='Six stops from the classic Paro\u2013Thimphu\u2013Punakha loop \u2014 the dzong and covered bridge in Paro, Tashichho Dzong and the Buddha Dordenma in Thimphu, the 108 chortens at Dochula, the suspension bridge in Punakha and the open Phobjikha valley. Tap any photo to open it full size.',
+   slugs=[('bhutan-g1','-1024x768'),('bhutan-g2','-1024x683'),('bhutan-g3','-1024x683','62% 50%'),
+          ('bhutan-g4','-1024x680'),('bhutan-g5','-1024x568'),('bhutan-g6','-1024x768')]),
 }
 
 CSS = (".sxg{margin:22px 0 0}"
