@@ -3,7 +3,8 @@
 
     python3 tools/cmp_live.py <slug> [--url https://suzutravels.com/...]      (URL defaults to live.json path)
 
-Prints TEXT DIFFS / ATTR DIFFS (expect 0 and 0) and the JSON-LD types found. Fetches with a cache-busting ?v= so WP Rocket's
+Prints TEXT DIFFS / ATTR DIFFS (expect 0 and 0) and the JSON-LD types found. v0.2.6: marked blocks other lanes add on
+purpose (EXTERNAL, e.g. sz-snowlink) are ignored and listed separately. Fetches with a cache-busting ?v= so WP Rocket's
 cached copy is bypassed; run once more without it (--plain) to confirm the cache was purged too.
 """
 import difflib, html, json, pathlib, random, re, sys, time, urllib.error, urllib.request
@@ -47,7 +48,21 @@ def region(h):
     if i < 0:
         raise SystemExit("no .szi block found on the live page")
     k = h.find("application/ld+json", i)
-    return h[i:(h.find("</script>", k) + 9) if k > 0 else len(h)]
+    return strip_external(h[i:(h.find("</script>", k) + 9) if k > 0 else len(h)])
+
+
+# Marked blocks that OTHER Suzu lanes add to section pages on purpose (accepted by the Reviewer, 12 Nov 2026).
+# They are not drift: removed before comparing and counted separately. Add a class here only after a Reviewer decision.
+EXTERNAL = ("sz-snowlink",)  # snow-tracker lane: '<!--sz-snowlink--><div class="sz-snowlink">…</div>' (no nested divs)
+EXT_SEEN = {}
+
+
+def strip_external(h):
+    for c in EXTERNAL:
+        pat = re.compile(r'(?:<!--%s-->\s*(?:</p>\s*)?)?<div class="%s"[^>]*>.*?</div>' % (c, c), re.S)
+        EXT_SEEN[c] = len(pat.findall(h))
+        h = pat.sub("", h)
+    return h
 
 
 CHALLENGE = "Checking your browser"
@@ -95,6 +110,8 @@ def main():
     d2 = [l for l in difflib.unified_diff(aa, al, lineterm="", n=0) if not l.startswith(("---", "+++", "@@"))]
     print("ATTR DIFFS:", len(d2))
     print("\n".join(d2[:40]))
+    if any(EXT_SEEN.values()):
+        print("external marked blocks ignored (accepted, not drift):", {k: v for k, v in EXT_SEEN.items() if v})
     print("H1 count:", len(re.findall(r"<h1[\s>]", lh)), "| robots:", (re.search(r'<meta name="robots" content="([^"]*)"', lh) or [None, "?"])[1],
           "| title:", (re.search(r"<title>(.*?)</title>", lh, re.S) or [None, "?"])[1].strip()[:90])
     for m in re.finditer(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', region(lh), re.S):

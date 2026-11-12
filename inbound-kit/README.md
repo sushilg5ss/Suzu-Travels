@@ -1,4 +1,4 @@
-# Suzu Inbound Kit v0.2.5 — "India for international travellers" (16 Oct 2026; build.py traps + linkcheck fix 17 Oct; itinerary PDFs 21 Oct; dark-section callout readable 23 Oct; "talk to a real person" strip 28 Oct; linkcheck time budget + 7-day cache + "unreachable from this agent" 3 Nov — tools only, page output unchanged, kit.css still v0.2.4, no re-sync needed)
+# Suzu Inbound Kit v0.2.5 — "India for international travellers" (16 Oct 2026; build.py traps + linkcheck fix 17 Oct; itinerary PDFs 21 Oct; dark-section callout readable 23 Oct; "talk to a real person" strip 28 Oct; linkcheck time budget + 7-day cache + "unreachable from this agent" 3 Nov — tools only, page output unchanged, kit.css still v0.2.4, no re-sync needed; cmp_live ignores accepted external marked blocks (sz-snowlink) 12 Nov)
 
 **Goal (Sushil Kumar, 16 Oct 2026):** make suzutravels.com rank for what foreign visitors to India actually search, give them
 honest, complete answers, and turn that trust into enquiries (WhatsApp / email / 20% deposit). Foreign guests book 10–14 day
