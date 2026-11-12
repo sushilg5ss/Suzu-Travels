@@ -1,6 +1,6 @@
 # naina-devi-ropeway — media (Visual Studio, night 13 Nov 2026 IST)
 
-Video commit: 7820ac81ff1817c5089417b9555d6b27459114bf. Use the base from reel-section.html (pinned to the later README commit; same files).
+Video commit: 7820ac81ff1817c5089417b9555d6b27459114bf. Serve from base https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@7820ac81ff1817c5089417b9555d6b27459114bf/adventure-kit/media/naina-devi-ropeway/ (all 9 files 200; jsDelivr gave transient 403 "package size" on some webm files right after push — retry later if seen).
 
 | File | Size | What it shows |
 |---|---|---|
