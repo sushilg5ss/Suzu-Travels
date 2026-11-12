@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1600, height=900" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1600px; height: 900px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; background: radial-gradient(circle at 30% 55%, #13304d 0%, #0b1f33 60%); }
+      .kick { position: absolute; left: 80px; top: 54px; color: #d4a24c; font-weight: 800; font-size: 26px; letter-spacing: 0.16em; }
+      .ttl { position: absolute; left: 80px; top: 92px; font-weight: 800; font-size: 54px; letter-spacing: -0.01em; white-space: nowrap; }
+      svg text { font-family: "PJS", sans-serif; }
+      .leg { position: absolute; left: 80px; top: 806px; display: flex; gap: 34px; font-weight: 800; font-size: 24px; }
+      .leg span { display: inline-block; width: 26px; height: 26px; border-radius: 6px; vertical-align: -5px; margin-right: 10px; }
+      .foot { position: absolute; left: 860px; top: 790px; width: 680px; font-weight: 800; font-size: 26px; line-height: 1.35; color: rgba(255,255,255,0.92); }
+      .foot b { color: #d4a24c; }
+      .rt { position: absolute; left: 860px; top: 200px; font-weight: 800; font-size: 36px; }
+      .fact { position: absolute; left: 1240px; font-weight: 800; font-size: 28px; line-height: 1.25; width: 320px; }
+      .fact i { display: block; font-style: normal; color: #d4a24c; font-size: 22px; letter-spacing: 0.12em; margin-bottom: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="10" data-width="1600" data-height="900">
+      <div id="ov" class="clip" data-start="0" data-duration="10" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick" id="kk">LAND RIDES · SOLANG VALLEY, MANALI</div>
+        <div class="ttl" id="tt">When zorbing &amp; ATV rides run</div>
+        <svg id="ring" viewBox="0 0 800 640" style="position:absolute;left:40px;top:170px;width:800px;height:640px;overflow:visible">
+          <g id="segs"></g>
+          <g id="mlab"></g>
+          <text x="400" y="300" text-anchor="middle" font-size="30" font-weight="800" fill="#fff" id="c1">Outer ring</text>
+          <text x="400" y="340" text-anchor="middle" font-size="30" font-weight="800" fill="#d4a24c" id="c2">Zorbing</text>
+          <text x="400" y="390" text-anchor="middle" font-size="24" font-weight="500" fill="#fff" id="c3">Inner ring · ATV</text>
+        </svg>
+        <div class="leg" id="leg"><div><span style="background:#d4a24c"></span>Running</div><div><span style="background:#8fc3e8"></span>Snow-dependent</div><div><span style="background:#5d6d7e"></span>Patchy (monsoon)</div></div>
+        <div class="rt" id="rt">Inside the ball</div>
+        <svg id="zb" viewBox="0 0 400 400" style="position:absolute;left:840px;top:260px;width:400px;height:400px;overflow:visible">
+          <circle id="o1" cx="200" cy="200" r="170" fill="rgba(255,255,255,0.08)" stroke="#fff" stroke-width="6" />
+          <circle id="o2" cx="200" cy="200" r="110" fill="rgba(212,162,76,0.14)" stroke="#d4a24c" stroke-width="6" />
+          <g id="ties" stroke="rgba(255,255,255,0.7)" stroke-width="3">
+            <line x1="200" y1="30" x2="200" y2="90" /><line x1="200" y1="310" x2="200" y2="370" /><line x1="30" y1="200" x2="90" y2="200" /><line x1="310" y1="200" x2="370" y2="200" />
+            <line x1="80" y1="80" x2="122" y2="122" /><line x1="320" y1="80" x2="278" y2="122" /><line x1="80" y1="320" x2="122" y2="278" /><line x1="320" y1="320" x2="278" y2="278" />
+          </g>
+          <g id="rider" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="200" cy="140" r="20" fill="#fff" stroke="none" />
+            <path d="M 200 165 L 200 232 M 200 182 L 160 150 M 200 182 L 240 150 M 200 232 L 172 282 M 200 232 L 228 282" />
+          </g>
+          <g id="hns" stroke="#d4a24c" stroke-width="7" stroke-linecap="round"><line x1="160" y1="150" x2="112" y2="118" /><line x1="240" y1="150" x2="288" y2="118" /><line x1="172" y1="282" x2="130" y2="300" /><line x1="228" y1="282" x2="270" y2="300" /></g>
+        </svg>
+        <div class="fact" id="fa1" style="top:270px"><i>OUTER BALL</i>Big transparent shell that rolls</div>
+        <div class="fact" id="fa2" style="top:400px"><i>INNER CHAMBER</i>The second layer you ride inside</div>
+        <div class="fact" id="fa3" style="top:530px"><i>HARNESS</i>Strapped in for the roll</div>
+        <div class="fact" id="fa4" style="top:660px"><i>RIDE</i>About 10 min with the walk up</div>
+        <div class="foot" id="ft">Heavy snow can stop rides and the Solang road. <b>Price: Get Quote</b></div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const NS = "http://www.w3.org/2000/svg";
+      const months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+      // R = running, S = snow-dependent, P = patchy (from the brief's season table)
+      const zorb = ["S","S","R","R","R","R","P","P","P","R","R","S"];
+      const atv  = ["S","S","R","R","R","R","P","P","P","R","R","S"];
+      const col = { R: "#d4a24c", S: "#8fc3e8", P: "#5d6d7e" };
+      const cx = 400, cy = 330;
+      const arc = (r, a0, a1) => {
+        const p = (a) => [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+        const [x0, y0] = p(a0), [x1, y1] = p(a1);
+        return `M ${x0.toFixed(1)} ${y0.toFixed(1)} A ${r} ${r} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`;
+      };
+      const segs = document.getElementById("segs"), mlab = document.getElementById("mlab");
+      const els = [];
+      months.forEach((m, i) => {
+        const a0 = -Math.PI / 2 + i * Math.PI / 6 + 0.035, a1 = a0 + Math.PI / 6 - 0.07;
+        [[250, zorb[i], 46], [182, atv[i], 40]].forEach(([r, k, w], j) => {
+          const p = document.createElementNS(NS, "path");
+          p.setAttribute("d", arc(r, a0, a1)); p.setAttribute("fill", "none"); p.setAttribute("stroke", col[k]); p.setAttribute("stroke-width", w);
+          const len = r * (a1 - a0) + 2; p.setAttribute("stroke-dasharray", len); p.setAttribute("stroke-dashoffset", len);
+          segs.appendChild(p); els.push([p, i, j, len]);
+        });
+        const am = (a0 + a1) / 2, lr = 302;
+        const t = document.createElementNS(NS, "text");
+        t.setAttribute("x", (cx + lr * Math.cos(am)).toFixed(1)); t.setAttribute("y", (cy + lr * Math.sin(am) + 9).toFixed(1));
+        t.setAttribute("text-anchor", "middle"); t.setAttribute("font-size", "24"); t.setAttribute("font-weight", "800"); t.setAttribute("fill", "#fff"); t.setAttribute("opacity", "0");
+        t.textContent = m; mlab.appendChild(t);
+      });
+      tl.from(["#kk", "#tt"], { opacity: 0, y: 24, duration: 0.5, ease: "power3.out", stagger: 0.12 }, 0.1);
+      els.forEach(([p, i, j, len]) => {
+        tl.to(p, { attr: { "stroke-dashoffset": 0 }, duration: 0.32, ease: "power2.out" }, 0.6 + i * 0.13 + j * 0.25);
+      });
+      tl.to("#mlab text", { opacity: 1, duration: 0.3, stagger: 0.08, ease: "power1.out" }, 0.7);
+      tl.from(["#c1", "#c2", "#c3"], { opacity: 0, duration: 0.4, stagger: 0.12, ease: "power1.out" }, 1.4);
+      tl.from("#leg > div", { opacity: 0, y: 16, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 2.6);
+      tl.from("#rt", { opacity: 0, x: 30, duration: 0.45, ease: "power3.out" }, 3.4);
+      tl.from("#o1", { attr: { r: 0 }, duration: 0.7, ease: "back.out(1.6)" }, 3.6);
+      tl.from("#o2", { attr: { r: 0 }, duration: 0.6, ease: "back.out(1.6)" }, 4.0);
+      tl.from("#ties line", { opacity: 0, duration: 0.3, stagger: 0.05 }, 4.3);
+      tl.from("#rider", { opacity: 0, scale: 0.6, transformOrigin: "200px 210px", duration: 0.5, ease: "back.out(2)" }, 4.6);
+      tl.from("#hns line", { opacity: 0, duration: 0.3, stagger: 0.1 }, 5.1);
+      tl.from(["#fa1", "#fa2", "#fa3", "#fa4"], { opacity: 0, x: 30, duration: 0.45, stagger: 0.45, ease: "power3.out" }, 4.0);
+      tl.from("#ft", { opacity: 0, y: 16, duration: 0.5, ease: "power2.out" }, 6.4);
+      tl.to("#zb", { rotation: 360, transformOrigin: "50% 50%", duration: 3.2, ease: "power1.inOut" }, 6.6);
+      tl.to({}, { duration: 0.1 }, 9.9);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
