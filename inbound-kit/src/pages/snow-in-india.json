@@ -14,18 +14,42 @@
  "hero_alt": "Snow on the roofs of Shimla's hillside houses, snow peaks above the deodar forest at Solang near Manali, the Dhauladhar range at sunset above Dharamshala, and the winter snowfield of Gulmarg",
  "cta1": "Where to see snow",
  "chips": [
-  ["Dec–Feb", "the snow months"],
-  ["Shimla · Manali", "by car from Delhi"],
-  ["Ski", "Solang, Auli, Gulmarg"],
-  ["Checked", "12 Nov 2026"]
+  [
+   "Dec–Feb",
+   "the snow months"
+  ],
+  [
+   "Shimla · Manali",
+   "by car from Delhi"
+  ],
+  [
+   "Ski",
+   "Solang, Auli, Gulmarg"
+  ],
+  [
+   "Checked",
+   "12 Nov 2026"
+  ]
  ],
  "q": "Where can you see snow in India?",
  "answer": "In the Himalayan north, mostly <b>from December to February</b>. The easiest places to reach are the Himachal hill towns — Shimla, Manali with Solang valley, and Dharamshala — by car from Delhi. Auli in Uttarakhand and Gulmarg in Kashmir are ski areas; check government travel advice for Kashmir. Snow is likely but never guaranteed. Send us your dates for a quote.",
  "facts": [
-  ["≈40 cm", "16 in — Shimla's average snowfall in each of January and February (IMD)"],
-  ["2.5–10.3 °C", "37–51 °F — Shimla's January average (IMD)"],
-  ["13 km", "8 mi — Manali to the Solang ski slopes"],
-  ["Dec–Mar", "Auli's ski season (GMVN)"]
+  [
+   "≈40 cm",
+   "16 in — Shimla's average snowfall in each of January and February (IMD)"
+  ],
+  [
+   "2.5–10.3 °C",
+   "37–51 °F — Shimla's January average (IMD)"
+  ],
+  [
+   "13 km",
+   "8 mi — Manali to the Solang ski slopes"
+  ],
+  [
+   "Dec–Mar",
+   "Auli's ski season (GMVN)"
+  ]
  ],
  "sections": [
   {
@@ -34,14 +58,42 @@
    "h2": "Where to see snow in India",
    "kind": "table",
    "lead": "All of India's reliable winter snow is in the Himalaya. These are the places a visitor can actually reach and stay in:",
-   "head": ["Place", "Snow and winter", "Good to know"],
+   "head": [
+    "Place",
+    "Snow and winter",
+    "Good to know"
+   ],
    "rows": [
-    ["<b>Shimla</b>, Himachal", "Snowy season December–January and on into February; about 40 cm (16 in) of snow on average in each of January and February", "370 km (230 mi) from Delhi, or the last stretch by the UNESCO <a href=\"/india-tours/shimla-toy-train/\">toy train</a>"],
-    ["<b>Manali and Solang valley</b>, Himachal", "Plentiful snow in deep winter; Manali can fall below −5 °C (23 °F) in December–January", "Solang is 13 km (8 mi) from Manali: winter ski slopes and a gondola. Manali is 260 km (162 mi) beyond Shimla"],
-    ["<b>Dharamshala and McLeod Ganj</b>, Himachal", "Snowfall is common in winter, under the Dhauladhar range", "McLeod Ganj sits at 2,082 m (6,831 ft); Kangra airport is 14 km (9 mi) away"],
-    ["<b>Auli</b>, Uttarakhand", "Ski season starts in December; the snowy season runs to March", "2,500–3,050 m (8,200–10,000 ft) above Joshimath; chair lift and ski lift; about 270 km (170 mi) from Dehradun airport"],
-    ["<b>Gulmarg</b>, Kashmir", "Ski season usually mid-December to mid-April", "UK and US governments advise against travel to Jammu and Kashmir — read the <a href=\"#basics\">advice below</a> first"],
-    ["<b>Rohtang Pass</b>, above Manali", "Closed by heavy snow from late November until about May", "In winter we go through the Atal Tunnel to the Lahaul side instead, when the road is open"]
+    [
+     "<b>Shimla</b>, Himachal",
+     "Snowy season December–January and on into February; about 40 cm (16 in) of snow on average in each of January and February",
+     "370 km (230 mi) from Delhi, or the last stretch by the UNESCO <a href=\"/india-tours/shimla-toy-train/\">toy train</a>"
+    ],
+    [
+     "<b>Manali and Solang valley</b>, Himachal",
+     "Plentiful snow in deep winter; Manali can fall below −5 °C (23 °F) in December–January",
+     "Solang is 13 km (8 mi) from Manali: winter ski slopes and a gondola. Manali is 260 km (162 mi) beyond Shimla"
+    ],
+    [
+     "<b>Dharamshala and McLeod Ganj</b>, Himachal",
+     "Snowfall is common in winter, under the Dhauladhar range",
+     "McLeod Ganj sits at 2,082 m (6,831 ft); Kangra airport is 14 km (9 mi) away"
+    ],
+    [
+     "<b>Auli</b>, Uttarakhand",
+     "Ski season starts in December; the snowy season runs to March",
+     "2,500–3,050 m (8,200–10,000 ft) above Joshimath; chair lift and ski lift; about 270 km (170 mi) from Dehradun airport"
+    ],
+    [
+     "<b>Gulmarg</b>, Kashmir",
+     "Ski season usually mid-December to mid-April",
+     "UK and US governments advise against travel to Jammu and Kashmir — read the <a href=\"#basics\">advice below</a> first"
+    ],
+    [
+     "<b>Rohtang Pass</b>, above Manali",
+     "Closed by heavy snow from late November until about May",
+     "In winter we go through the Atal Tunnel to the Lahaul side instead, when the road is open"
+    ]
    ],
    "note": "From the India Meteorological Department, District Shimla, Himachal Pradesh Tourism, the Prime Minister's Office (Atal Tunnel), GMVN and the J&K Tourism Development Corporation. Snow varies from year to year — confirm before travel. Checked 12 Nov 2026."
   },
@@ -53,10 +105,22 @@
    "style": "alt",
    "lead": "January and February are the snowiest months in the Himachal hills. December can bring snow but usually less of it. The India Meteorological Department's long-term figures for Shimla:",
    "items": [
-    ["7 cm", "3 in — average snowfall in December"],
-    ["≈40 cm", "16 in — in January, and again in February"],
-    ["≈4 days", "of snow a month in January and February"],
-    ["2.5 °C", "36.5 °F — average January low (high 10.3 °C / 50.5 °F)"]
+    [
+     "7 cm",
+     "3 in — average snowfall in December"
+    ],
+    [
+     "≈40 cm",
+     "16 in — in January, and again in February"
+    ],
+    [
+     "≈4 days",
+     "of snow a month in January and February"
+    ],
+    [
+     "2.5 °C",
+     "36.5 °F — average January low (high 10.3 °C / 50.5 °F)"
+    ]
    ],
    "note": "Shimla's district administration says nights in December–January fall to about 0 °C (32 °F) and that warm clothing and a jacket are a must. March can still bring a little snow (about 7 cm on average). Manali, higher up, is colder. More detail in our <a href=\"/india-tours/best-time-to-visit-himachal/\">best time to visit Himachal</a> guide."
   },
@@ -67,10 +131,22 @@
    "kind": "cards",
    "lead": "India has a few real ski areas. They suit beginners and a holiday day on the snow more than a European-style ski week:",
    "items": [
-    ["Solang valley, near Manali", "Himachal Pradesh Tourism says that in winter the snow-packed slopes become a ski arena where state and national championships are held. There is a gondola (ropeway). It is a day trip from Manali, 13 km (8 mi) away."],
-    ["Auli, Uttarakhand", "Run by the state's GMVN: a chair lift and a ski lift, with the ski season starting in December and snow until March. Auli lies at 2,500–3,050 m (8,200–10,000 ft) — a long mountain drive from Dehradun airport."],
-    ["Gulmarg, Kashmir", "India's best-known ski area: a gondola up to about 3,980 m and a government-run ski shop. Read the government advice first — see our <a href=\"/india-tours/gulmarg-ski-holiday/\">Gulmarg guide</a>."],
-    ["Just want to touch the snow?", "Shimla, Manali and McLeod Ganj in January and February are the easy answer: snow-covered towns and forests, cosy hotels and mountain views, without needing to ski."]
+    [
+     "Solang valley, near Manali",
+     "Himachal Pradesh Tourism says that in winter the snow-packed slopes become a ski arena where state and national championships are held. There is a gondola (ropeway). It is a day trip from Manali, 13 km (8 mi) away."
+    ],
+    [
+     "Auli, Uttarakhand",
+     "Run by the state's GMVN: a chair lift and a ski lift, with the ski season starting in December and snow until March. Auli lies at 2,500–3,050 m (8,200–10,000 ft) — a long mountain drive from Dehradun airport."
+    ],
+    [
+     "Gulmarg, Kashmir",
+     "India's best-known ski area: a gondola up to about 3,980 m and a government-run ski shop. Read the government advice first — see our <a href=\"/india-tours/gulmarg-ski-holiday/\">Gulmarg guide</a>."
+    ],
+    [
+     "Just want to touch the snow?",
+     "Shimla, Manali and McLeod Ganj in January and February are the easy answer: snow-covered towns and forests, cosy hotels and mountain views, without needing to ski."
+    ]
    ]
   },
   {
@@ -88,11 +164,26 @@
    "kind": "steps",
    "lead": "Many travellers add the snow to the Golden Triangle or start their India trip with it. A typical shape:",
    "items": [
-    ["Delhi to Shimla", "By private car (370 km / 230 mi, a full day) or by train to Kalka and the UNESCO toy train up the hill. First snow views from the Ridge."],
-    ["Shimla to Manali", "A full day's drive (260 km / 162 mi) through the Kullu valley. Stay two or three nights."],
-    ["Solang and the Atal Tunnel", "A day on the snow at Solang, 13 km (8 mi) away; when the road is open, through the 9 km (5.6 mi) Atal Tunnel to the snowfields of the Lahaul side."],
-    ["Dharamshala, then home", "Optional: McLeod Ganj under the white Dhauladhar range, then back to Delhi or on to Amritsar. Our <a href=\"/india-tours/himachal-10-day-itinerary/\">10-day Himachal itinerary</a> shows the full route."],
-    ["Tell us your dates", "We reply with a winter route, a day-by-day plan and a US-dollar quote. A 20% deposit locks your dates and price."]
+    [
+     "Delhi to Shimla",
+     "By private car (370 km / 230 mi, a full day) or by train to Kalka and the UNESCO toy train up the hill. First snow views from the Ridge."
+    ],
+    [
+     "Shimla to Manali",
+     "A full day's drive (260 km / 162 mi) through the Kullu valley. Stay two or three nights."
+    ],
+    [
+     "Solang and the Atal Tunnel",
+     "A day on the snow at Solang, 13 km (8 mi) away; when the road is open, through the 9 km (5.6 mi) Atal Tunnel to the snowfields of the Lahaul side."
+    ],
+    [
+     "Dharamshala, then home",
+     "Optional: McLeod Ganj under the white Dhauladhar range, then back to Delhi or on to Amritsar. Our <a href=\"/india-tours/himachal-10-day-itinerary/\">10-day Himachal itinerary</a> shows the full route."
+    ],
+    [
+     "Tell us your dates",
+     "We reply with a winter route, a day-by-day plan and a US-dollar quote. A 20% deposit locks your dates and price."
+    ]
    ]
   },
   {
@@ -102,11 +193,26 @@
    "kind": "cards",
    "style": "alt",
    "items": [
-    ["Kashmir and government advice", "The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says 'Do not travel' to J&K except eastern Ladakh and Leh (advice checked 23 Oct 2026). The FCDO warns that your travel insurance could be invalidated if you travel against its advice. Check the latest before you book."],
-    ["Cold, altitude and health", "Cold and altitude affect people differently. If you have heart or breathing conditions, consult your doctor; see CDC or NHS Fit for Travel. Pack proper layers, a warm jacket, gloves, a hat and shoes with grip."],
-    ["Visa", "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> explains the steps."],
-    ["Christmas and New Year", "The hill towns are very busy over Christmas and New Year — Shimla's district administration advises booking early. January and February are quieter and snowier."],
-    ["Your car and driver", "A private car with an experienced hill driver is the easiest way to reach the snow. Your driver's name, photo and car number are shared with you before the trip. See <a href=\"/india-tours/private-driver-india/\">private driver in India</a>."]
+    [
+     "Kashmir and government advice",
+     "The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says 'Do not travel' to J&K except eastern Ladakh and Leh (advice checked 23 Oct 2026). The FCDO warns that your travel insurance could be invalidated if you travel against its advice. Check the latest before you book."
+    ],
+    [
+     "Cold, altitude and health",
+     "Cold and altitude affect people differently. If you have heart or breathing conditions, consult your doctor; see CDC or NHS Fit for Travel. Pack proper layers, a warm jacket, gloves, a hat and shoes with grip."
+    ],
+    [
+     "Visa",
+     "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> explains the steps."
+    ],
+    [
+     "Christmas and New Year",
+     "The hill towns are very busy over Christmas and New Year — Shimla's district administration advises booking early. January and February are quieter and snowier."
+    ],
+    [
+     "Your car and driver",
+     "A private car with an experienced hill driver is the easiest way to reach the snow. Your driver's name, photo and car number are shared with you before the trip. See <a href=\"/india-tours/private-driver-india/\">private driver in India</a>."
+    ]
    ]
   }
  ],
@@ -114,33 +220,102 @@
   "h2": "Prices",
   "lead": "A snow trip is quoted on request: it depends on the month, the hotel tier, the car and how many of you travel. You receive a day-by-day plan with a US-dollar total and what it covers before you pay anything. Two of our published routes include the Himachal hills:",
   "rows": [
-   ["Your snow trip in Himachal", "on request", "Private car and driver throughout, hotels with breakfast, airport pick-up in Delhi and final drop; ski lessons, ropeway tickets and guides on request"],
-   ["Golden Temple & Himalayas — 10 days / 9 nights (Delhi · Amritsar · Dharamshala · Manali)", "from US$949", "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver. International flights not included."],
-   ["Golden Triangle + Himalayas — 12 days / 11 nights (Delhi · Agra · Jaipur · Shimla · Manali)", "from US$1,099", "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver; UNESCO toy train to Shimla (seasonal, where running). International flights not included."]
+   [
+    "Your snow trip in Himachal",
+    "on request",
+    "Private car and driver throughout, hotels with breakfast, airport pick-up in Delhi and final drop; ski lessons, ropeway tickets and guides on request"
+   ],
+   [
+    "Golden Temple & Himalayas — 10 days / 9 nights (Delhi · Amritsar · Dharamshala · Manali)",
+    "from US$949",
+    "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver. International flights not included."
+   ],
+   [
+    "Golden Triangle + Himalayas — 12 days / 11 nights (Delhi · Agra · Jaipur · Shimla · Manali)",
+    "from US$1,099",
+    "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver; UNESCO toy train to Shimla (seasonal, where running). International flights not included."
+   ]
   ]
  },
  "faqs": [
-  ["Where can I see snow in India?", "In the Himalayan north. The easiest places for a visitor are the Himachal hill towns — Shimla, Manali with Solang valley, and Dharamshala/McLeod Ganj — all reachable by car from Delhi. Auli in Uttarakhand and Gulmarg in Kashmir are ski areas."],
-  ["Which month does it snow in India?", "Mostly December to February. In Shimla the India Meteorological Department's averages are about 7 cm in December and about 40 cm in each of January and February, with roughly four snow days a month. Snow is never guaranteed on a given date."],
-  ["Does it snow in Shimla and Manali in December?", "It can. December snowfall in Shimla averages about 7 cm, so a white Christmas is possible but not certain. January and February are the better bet. Manali is colder, and in winter the Solang slopes near Manali become a ski area."],
-  ["Can you ski in India?", "Yes — at Solang near Manali, at Auli in Uttarakhand (chair lift and ski lift, season from December) and at Gulmarg in Kashmir. They suit beginners and snow days more than a long ski holiday. For Gulmarg, read the UK and US government advice first."],
-  ["Is it safe to go to Gulmarg for snow?", "The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says 'Do not travel' to J&K except eastern Ladakh and Leh (checked 23 Oct 2026). Travel insurance may not cover you against FCDO advice. Himachal is our suggested alternative."],
-  ["Is Rohtang Pass open in winter?", "No. Heavy snow closes Rohtang Pass from late November until about May, according to Himachal Pradesh Tourism. In winter the Atal Tunnel keeps the road from Manali to Lahaul open, and Solang is the usual snow day."],
-  ["How cold is it, and what should I pack?", "Shimla averages 2.5–10.3 °C (37–51 °F) in January and nights fall to about 0 °C (32 °F); Manali can drop below −5 °C (23 °F). Bring warm layers, a jacket, gloves, a hat and shoes with grip. If you have health concerns, consult your doctor."],
-  ["How do I book a snow trip?", "Send your dates, how many of you and where you'd like to go. We reply with a route, a day-by-day plan and a US-dollar quote. A 20% deposit locks your dates and price."]
+  [
+   "Where can I see snow in India?",
+   "In the Himalayan north. The easiest places for a visitor are the Himachal hill towns — Shimla, Manali with Solang valley, and Dharamshala/McLeod Ganj — all reachable by car from Delhi. Auli in Uttarakhand and Gulmarg in Kashmir are ski areas."
+  ],
+  [
+   "Which month does it snow in India?",
+   "Mostly December to February. In Shimla the India Meteorological Department's averages are about 7 cm in December and about 40 cm in each of January and February, with roughly four snow days a month. Snow is never guaranteed on a given date."
+  ],
+  [
+   "Does it snow in Shimla and Manali in December?",
+   "It can. December snowfall in Shimla averages about 7 cm, so a white Christmas is possible but not certain. January and February are the better bet. Manali is colder, and in winter the Solang slopes near Manali become a ski area."
+  ],
+  [
+   "Can you ski in India?",
+   "Yes — at Solang near Manali, at Auli in Uttarakhand (chair lift and ski lift, season from December) and at Gulmarg in Kashmir. They suit beginners and snow days more than a long ski holiday. For Gulmarg, read the UK and US government advice first."
+  ],
+  [
+   "Is it safe to go to Gulmarg for snow?",
+   "The UK FCDO advises against all travel to Jammu and Kashmir except Jammu city, and the US State Department says 'Do not travel' to J&K except eastern Ladakh and Leh (checked 23 Oct 2026). Travel insurance may not cover you against FCDO advice. Himachal is our suggested alternative."
+  ],
+  [
+   "Is Rohtang Pass open in winter?",
+   "No. Heavy snow closes Rohtang Pass from late November until about May, according to Himachal Pradesh Tourism. In winter the Atal Tunnel keeps the road from Manali to Lahaul open, and Solang is the usual snow day."
+  ],
+  [
+   "How cold is it, and what should I pack?",
+   "Shimla averages 2.5–10.3 °C (37–51 °F) in January and nights fall to about 0 °C (32 °F); Manali can drop below −5 °C (23 °F). Bring warm layers, a jacket, gloves, a hat and shoes with grip. If you have health concerns, consult your doctor."
+  ],
+  [
+   "How do I book a snow trip?",
+   "Send your dates, how many of you and where you'd like to go. We reply with a route, a day-by-day plan and a US-dollar quote. A 20% deposit locks your dates and price."
+  ]
  ],
  "sources": [
-  ["India Meteorological Department — climate of Shimla", "https://mausamaudit.imd.gov.in/shimla/mcdata/cli_shimla.pdf"],
-  ["District Shimla (Government of Himachal Pradesh) — general information", "https://hpshimla.nic.in/general-information/"],
-  ["Himachal Pradesh Tourism — Manali, Solang and Rohtang", "https://himachaltourism.gov.in/destination/manali/"],
-  ["Prime Minister's Office — Atal Tunnel", "https://pmindia.gov.in/?p=8160111"],
-  ["District Lahaul & Spiti — how to reach", "https://hplahaulspiti.nic.in/how-to-reach/"],
-  ["GMVN (Uttarakhand) — skiing in Auli", "https://gmvnonline.com/skiing"],
-  ["Utsav (Government of India) — Auli ski championship", "https://utsav.gov.in/view-event/auli-national-ski-and-snowboard-championship"],
-  ["J&K Tourism Development Corporation — skiing in Kashmir", "https://jktdc.co.in/info.aspx?id=82"],
-  ["UK FCDO — India travel advice", "https://www.gov.uk/foreign-travel-advice/india"],
-  ["US State Department — India travel advisory", "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"],
-  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"]
+  [
+   "India Meteorological Department — climate of Shimla",
+   "https://mausamaudit.imd.gov.in/shimla/mcdata/cli_shimla.pdf"
+  ],
+  [
+   "District Shimla (Government of Himachal Pradesh) — general information",
+   "https://hpshimla.nic.in/general-information/"
+  ],
+  [
+   "Himachal Pradesh Tourism — Manali, Solang and Rohtang",
+   "https://himachaltourism.gov.in/destination/manali/"
+  ],
+  [
+   "Prime Minister's Office — Atal Tunnel",
+   "https://pmindia.gov.in/?p=8160111"
+  ],
+  [
+   "District Lahaul & Spiti — how to reach",
+   "https://hplahaulspiti.nic.in/how-to-reach/"
+  ],
+  [
+   "GMVN (Uttarakhand) — skiing in Auli",
+   "https://gmvnonline.com/skiing"
+  ],
+  [
+   "Utsav (Government of India) — Auli ski championship",
+   "https://utsav.gov.in/view-event/auli-national-ski-and-snowboard-championship"
+  ],
+  [
+   "J&K Tourism Development Corporation — skiing in Kashmir",
+   "https://jktdc.co.in/info.aspx?id=82"
+  ],
+  [
+   "UK FCDO — India travel advice",
+   "https://www.gov.uk/foreign-travel-advice/india"
+  ],
+  [
+   "US State Department — India travel advisory",
+   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html"
+  ],
+  [
+   "Indian e-Visa — official site",
+   "https://indianvisaonline.gov.in/"
+  ]
  ],
  "verified": "12 Nov 2026",
  "cta": {
@@ -148,6 +323,12 @@
   "text": "Your dates, how many of you and whether you want snow only or snow plus the Golden Triangle. We reply within two hours (9 am–9 pm IST) with a route and a US-dollar quote.",
   "wa": "Hello Suzu Travels, I'm planning a trip to see snow in India. Dates: ___ , travellers: ___ , country: ___"
  },
- "links": ["best-time-to-visit-himachal", "gulmarg-ski-holiday", "india-in-december", "himachal-10-day-itinerary"],
+ "links": [
+  "best-time-to-visit-himachal",
+  "gulmarg-ski-holiday",
+  "india-in-december",
+  "himachal-10-day-itinerary",
+  "india-in-january"
+ ],
  "talk": true
 }
