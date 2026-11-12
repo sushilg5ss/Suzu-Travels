@@ -376,5 +376,14 @@
   "blurb": "Toy train to Shimla, Manali, McLeod Ganj and Dalhousie — planned from our home state",
   "added": "2026-11-12",
   "focus": "himachal pradesh itinerary"
+ },
+ "snow-in-india": {
+  "id": 21489,
+  "path": "/india-tours/snow-in-india/",
+  "kind": "guide",
+  "label": "Snow in India",
+  "blurb": "Where and when to see snow — Shimla, Manali, Solang, Auli, Gulmarg — with official figures",
+  "added": "2026-11-12",
+  "focus": "snow in india"
  }
 }
