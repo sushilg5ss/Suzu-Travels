@@ -1,0 +1,155 @@
+{
+ "_note": "Saser Kangri I (7,672 m) - 1973 ITBP eastern route camps from research/pages/saser-kangri.md (feet converted in source). Heights in the ladder from data/peaks.json. Generic photos only.",
+ "hero": {
+  "kicker": "SASER KANGRI · LADAKH",
+  "scenes": [
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40,
+     "y": -190
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 820
+    },
+    "to": {
+     "y": 940,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    4570,
+    "BASE CAMP"
+   ],
+   [
+    5360,
+    "CAMP III · ICEFALL"
+   ],
+   [
+    6310,
+    "CAMP IV"
+   ],
+   [
+    7190,
+    "CAMP VI · COL"
+   ],
+   [
+    7672,
+    "SUMMIT · 1973"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Saser Kangri I, camp by camp",
+  "sub": "1973 eastern route (North Shukpa Kunchang glacier)",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 4570,
+    "day": "7 May 1973"
+   },
+   {
+    "name": "Camp I",
+    "m": 5120,
+    "day": ""
+   },
+   {
+    "name": "Camp III",
+    "m": 5360,
+    "day": "Icefall"
+   },
+   {
+    "name": "Camp IV",
+    "m": 6310,
+    "day": ""
+   },
+   {
+    "name": "Camp VI",
+    "m": 7190,
+    "day": "Col · ~4 Jun"
+   },
+   {
+    "name": "Saser Kangri I",
+    "m": 7672,
+    "day": "Summit · 5 Jun 1973"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "EAST KARAKORAM · LADAKH",
+  "title": "Saser Kangri and Mamostong, side by side",
+  "peaks": [
+   "saser-kangri-iv",
+   "saser-kangri-iii",
+   "mamostong-kangri",
+   "saser-kangri-ii-east",
+   "saser-kangri-i"
+  ],
+  "subs": {
+   "saser-kangri-iv": "First climbed 1987",
+   "saser-kangri-iii": "First climbed 1986",
+   "mamostong-kangri": "First climbed 1984",
+   "saser-kangri-ii-east": "First climbed 2011",
+   "saser-kangri-i": "First climbed 1973"
+  },
+  "end": "SK II East 7,518 m · Mamostong 7,516 m"
+ }
+}

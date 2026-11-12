@@ -1,0 +1,158 @@
+{
+ "_note": "Shitidhar (5,290 m dataset; published 5,250-5,294 m) - Solang valley, Manali. Altitudes from research/pages/shitidhar-peak.md route table; summit from data/peaks.json. Generic photos only (no Shitidhar photo exists).",
+ "hero": {
+  "kicker": "SHITIDHAR · MANALI",
+  "scenes": [
+   {
+    "img": "px-92081.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.06,
+     "x": -120
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -180
+    }
+   },
+   {
+    "img": "px-10555794.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": -60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -140
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 520
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    2050,
+    "MANALI"
+   ],
+   [
+    3300,
+    "BAKARTHACH"
+   ],
+   [
+    3586,
+    "BEAS KUND"
+   ],
+   [
+    3840,
+    "LADY LEG BASE CAMP"
+   ],
+   [
+    4650,
+    "SUMMIT CAMP"
+   ],
+   [
+    5290,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Shitidhar, camp by camp",
+  "sub": "Solang valley route · camps vary by year",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Day 1"
+   },
+   {
+    "name": "Dhundi",
+    "m": 2700,
+    "day": "Road-head · Day 2"
+   },
+   {
+    "name": "Bakarthach",
+    "m": 3300,
+    "day": "Day 2"
+   },
+   {
+    "name": "Beas Kund",
+    "m": 3586,
+    "day": "Day 2–3"
+   },
+   {
+    "name": "Lady Leg",
+    "m": 3840,
+    "day": "Base camp · Day 3"
+   },
+   {
+    "name": "Summit camp",
+    "m": 4650,
+    "day": "Day 4–5"
+   },
+   {
+    "name": "Shitidhar",
+    "m": 5290,
+    "day": "Summit · Day 6"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "ABOVE THE SOLANG VALLEY",
+  "title": "Shitidhar and its Manali neighbours",
+  "peaks": [
+   "friendship-peak",
+   "shitidhar",
+   "ladakhi-peak",
+   "hanuman-tibba"
+  ],
+  "subs": {
+   "friendship-peak": "North of Beas Kund",
+   "shitidhar": "Same ridge as Ladakhi",
+   "ladakhi-peak": "First climbed 1963",
+   "hanuman-tibba": "First climbed 1912"
+  },
+  "end": "Shitidhar: 5,250–5,294 m in published sources"
+ }
+}
