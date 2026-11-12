@@ -54,7 +54,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 39 | [x] fortuner-on-rent — LIVE 2026-11-09 https://suzutravels.com/cabs/fortuner-on-rent/ (ID 20055) | fortuner on rent | 1,600 (LOW) | NEW 1 Nov. Vehicle page; engine fortuner rates; Spiti/Leh/snow use cases |
 | 40 | [x] dehradun-airport-taxi — LIVE 2026-11-10 https://suzutravels.com/cabs/dehradun-airport-taxi/ (ID 20683) | dehradun airport taxi | 590 (LOW) | NEW 1 Nov. Jolly Grant pickups → Rishikesh/Mussoorie/Haridwar/Char Dham; links dehradun-taxi-service |
 | 41 | [x] haridwar-to-kedarnath-taxi — LIVE 2026-11-11 https://suzutravels.com/cabs/haridwar-to-kedarnath-taxi/ (ID 21197) | haridwar to kedarnath taxi | 390 (peak 1,600 May; + haridwar to badrinath 390, rishikesh to kedarnath 140) | (was 32) Char Dham cluster; season May–Nov — build before Mar 2027; verify Sonprayag/Gaurikund road-head + registration rules |
-| 42 | [ ] haridwar-to-badrinath-taxi | haridwar to badrinath taxi | 390 (MEDIUM; peak 1,000 May) | NEW 1 Nov. Char Dham cluster; season May–Nov — build before Mar 2027 with 41 |
+| 42 | [x] haridwar-to-badrinath-taxi — LIVE 2026-11-12 https://suzutravels.com/cabs/haridwar-to-badrinath-taxi/ (ID 21467) | haridwar to badrinath taxi | 390 (MEDIUM; peak 1,000 May) | NEW 1 Nov. Char Dham cluster; season May–Nov — build before Mar 2027 with 41 |
 | 43 | [ ] chandigarh-to-amritsar-taxi | chandigarh to amritsar taxi | 480 | NEW 29 Oct. Links chandigarh-taxi-service, amritsar-taxi-service |
 | 44 | [ ] chandigarh-to-kasauli-taxi | chandigarh to kasauli taxi | 390 (+ delhi to kasauli 140) | NEW 29 Oct. Short hill transfer, Kasauli PLACE exists (planner) |
 | 45 | [ ] delhi-to-jim-corbett-taxi | delhi to jim corbett taxi | 390 | NEW 29 Oct. Ramnagar |
