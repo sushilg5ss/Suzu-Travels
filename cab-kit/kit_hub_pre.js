@@ -10,10 +10,12 @@
       before the kit parses: data-fleet alt / model / best from the gallery card (img alt, .szc-tag, the p that starts 'Best for: ' - wpautop
       leaves an empty p before it on the live page; the
       browser decodes entities in both places, so the values come back identical), night 400 (the default); data-plan-route on route-card Map links (card From / To) and
-      on the planner chips (chip text 'A - B' with the arrow). quote:false / page:'' need no restore (the kit only tests them). */
+      on the planner chips (chip text 'A - B' with the arrow). quote:false / page:'' need no restore (the kit only tests them).
+   4) Hub size budget (ENHANCEMENTS #22, 12 Nov 2026): the calculator's data-cfg v / d are left out when they equal data-plan v
+      (minus seats and on-quote buses) / data-plan r as {l:'A → B', km, f} - rebuilt here after the r.u restore, same keys and order. */
 (function(){
 var d=document,P=d.getElementById('szc-plan'),F=d.getElementById('szc-qf');
-if(P){try{var c=JSON.parse(P.getAttribute('data-plan'));c.r.forEach(function(r){if(!('u' in r)){r.u='/cabs/'+(r.a+'-to-'+r.b).toLowerCase().split(' ').join('-')+'-taxi/';}});P.setAttribute('data-plan',JSON.stringify(c));}catch(e){}}
+if(P){try{var c=JSON.parse(P.getAttribute('data-plan'));c.r.forEach(function(r){if(!('u' in r)){r.u='/cabs/'+(r.a+'-to-'+r.b).toLowerCase().split(' ').join('-')+'-taxi/';}});P.setAttribute('data-plan',JSON.stringify(c));var Q=d.querySelector('[data-cfg]'),o,g;if(Q){o=JSON.parse(Q.getAttribute('data-cfg'));if(!('v' in o)){g={v:c.v.filter(function(v){return !v.quote;}).map(function(v){var x={},k;for(k in v){if(k!=='seats'){x[k]=v[k];}}return x;}),d:c.r.map(function(r){return {l:r.a+' → '+r.b,km:r.km,f:r.f};})};for(var k in o){g[k]=o[k];}Q.setAttribute('data-cfg',JSON.stringify(g));}}}catch(e){}}
 var T=function(e){return e?e.textContent:'';};
 var W=d.getElementById('szc-fleet');
 if(W){try{var L=JSON.parse(W.getAttribute('data-fleet'));(L.v||[]).forEach(function(v){var b=d.querySelector('.szc-veh [data-view="'+v.id+'"]'),a=b?b.closest('.szc-veh'):null,im,ps,pi;if(!('night' in v)){v.night=400;}if(a){im=a.querySelector('img');if(!('alt' in v)){v.alt=im?im.getAttribute('alt'):v.name;}if(!('model' in v)){v.model=T(a.querySelector('.szc-tag'));}if(!('best' in v)){v.best='';ps=a.querySelectorAll('.szc-card-b p');for(pi=0;pi < ps.length;pi++){if(T(ps[pi]).indexOf('Best for: ')===0){v.best=T(ps[pi]).slice(10);}}}}});W.setAttribute('data-fleet',JSON.stringify(L));}catch(e){}}

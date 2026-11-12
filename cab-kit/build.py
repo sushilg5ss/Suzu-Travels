@@ -459,6 +459,28 @@ def prune_css(css, used):
             out += f"{sel}{{{body}}}"
     return out
 
+
+LEAD_JS_FILE = ROOT / "kit_lead.js"
+
+def lead_js():
+    """12 Nov 2026 (ENHANCEMENTS #22): enquiry-source counter as its own small inline <script> (kit script stays byte-identical)."""
+    js = re.sub(r"\s*\n\s*", "", js_safe(re.sub(r"/\*.*?\*/", "", LEAD_JS_FILE.read_text(), flags=re.S)))
+    if "&" in js or "//" in re.sub(r"'(?:[^'\\]|\\.)*'", "''", js) or "<" in js:
+        sys.exit("BUILD REFUSED: kit_lead.js must have no '&', no '//' and no '<'")
+    return "<script>" + js + "</script>"
+
+def lead_loader():
+    """Hub size budget: the hub loads the same counter from jsDelivr (media.json -> lead.js, pinned SHA) with a ~200 B async
+    loader - only when the pinned file equals the current kit_lead.js build; otherwise inline + WARNING (never blocks a build)."""
+    js = lead_js()[8:-9]
+    f = ROOT / "media" / "js" / "lead.js"
+    u = MEDIA.get("lead", {}).get("js", "")
+    if u and f.exists() and f.read_text(encoding="utf-8") == js:
+        return "<script>(function(){var s=document.createElement('script');s.src='" + u + "';s.async=true;document.head.appendChild(s);})();</script>"
+    f.write_text(js, encoding="utf-8")
+    print("WARNING: media/js/lead.js changed - commit it, pin media.json lead.js to the new SHA, rebuild (hub uses the inline counter meanwhile)")
+    return lead_js()
+
 def _amp(h):
     return re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
 
@@ -522,6 +544,16 @@ def hub_trim(m):
         return "data-fleet='" + json.dumps(f, ensure_ascii=False, separators=(",", ":")) + "'"
     m = re.sub(r"data-fleet='([^']*)'", fleet, m, count=1)
     m = re.sub(r"data-plan='[^']*'", lambda x: x.group(0).replace(',"quote":false', "").replace('"quote":false,', ""), m, count=1)
+    # 12 Nov 2026 (#22): calculator data-cfg v/d = data-plan v (minus seats, minus on-quote buses) / data-plan r as
+    # {l:'A → B', km, f} - drop them when exactly equal; kit_hub_pre.js rebuilds them (same keys, same order)
+    cfg = re.search(r"data-cfg='([^']*)'", m)
+    pln = re.search(r"data-plan='([^']*)'", m)
+    if cfg and pln:
+        c, p = json.loads(cfg.group(1)), json.loads(pln.group(1))
+        dv = [{k: x for k, x in v.items() if k != "seats"} for v in p.get("v", []) if not v.get("quote")]
+        dd = [{"l": r["a"] + " → " + r["b"], "km": r["km"], "f": r["f"]} for r in p.get("r", [])]
+        if list(c) == ["v", "d", "s"] and c["v"] == dv and c["d"] == dd and all(list(a) == list(b) for a, b in zip(c["v"], dv)) and all(list(a) == ["l", "km", "f"] for a in c["d"]):
+            m = m.replace(cfg.group(0), "data-cfg='" + json.dumps({"s": c["s"]}, ensure_ascii=False, separators=(",", ":")) + "'", 1)
     def card(x):
         c = x.group(0)
         ab = re.search(r'<div class="from">([^<]*)</div><div class="to">→ ([^<]*)</div>', c)
@@ -567,6 +599,8 @@ def finish(slug, h, css_extra=""):
         pre = re.sub(r"\s*\n\s*", "", js_safe(re.sub(r"/\*.*?\*/", "", (ROOT / "kit_hub_pre.js").read_text(), flags=re.S)))
         k = m.rfind("<script>")
         m = m[:k] + "<script>" + pre + "</script>" + m[k:]
+    k = m.rfind("<script>")  # 12 Nov 2026 (#22): lead counter right before the kit script on every page (hub: async loader of the pinned copy)
+    m = m[:k] + (lead_loader() if slug == "cabs" else lead_js()) + m[k:]
     if slug == "cabs":
         st = m.split("<style>", 1)[1].split("</style>", 1)[0]
         m = m.replace(f"<style>{st}</style>", f"<style>{prune_css(st, m.replace(st, ''))}</style>", 1)
