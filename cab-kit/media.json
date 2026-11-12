@@ -853,5 +853,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "haridwar-to-badrinath-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b9d84f140c143ddb26f1c61617ba62873147618d/cab-kit/media/haridwar-to-badrinath-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b9d84f140c143ddb26f1c61617ba62873147618d/cab-kit/media/haridwar-to-badrinath-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@b9d84f140c143ddb26f1c61617ba62873147618d/cab-kit/media/haridwar-to-badrinath-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
