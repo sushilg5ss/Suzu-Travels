@@ -1,0 +1,23 @@
+{
+ "hero": {
+  "arch": "himalaya",
+  "sky": "dusk",
+  "deva": "यमुनोत्री धाम",
+  "kicker": "Char Dham · Uttarkashi, Uttarakhand",
+  "beats": [
+   "Yamuna, daughter of the Sun",
+   "Sister of Yama, lord of death",
+   "Rice cooked in Surya Kund",
+   "Winter: the goddess rests at Kharsali"
+  ]
+ },
+ "story": {
+  "title": "The legend of Yamunotri",
+  "beats": [
+   {"arch": "pillar", "sky": "dawn", "line": "Yamuna is born of Surya, the Sun"},
+   {"arch": "himalaya", "sky": "night", "line": "Sister of Yama, remembered on Bhai Dooj"},
+   {"arch": "lake", "sky": "dawn", "line": "Hot springs where pilgrims cook rice"},
+   {"arch": "devi", "sky": "saffron", "line": "In winter the goddess goes to Kharsali"}
+  ]
+ }
+}
