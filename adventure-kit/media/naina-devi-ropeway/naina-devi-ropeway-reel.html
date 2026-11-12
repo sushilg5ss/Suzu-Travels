@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+      .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.55) 0%, rgba(11,31,51,0) 22%, rgba(11,31,51,0) 40%, rgba(11,31,51,0.7) 58%, rgba(11,31,51,0.9) 74%, rgba(11,31,51,0.95) 100%); }
+      .cap { position: absolute; left: 90px; width: 900px; top: 1240px; }
+      .k { color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.14em; }
+      .h { font-weight: 800; font-size: 92px; line-height: 1.04; letter-spacing: -0.02em; margin-top: 18px; }
+      .s { font-weight: 800; font-size: 50px; line-height: 1.2; margin-top: 26px; color: rgba(255,255,255,0.94); }
+      .gb { height: 10px; width: 0; background: #d4a24c; border-radius: 5px; margin-bottom: 28px; }
+      .tg { position: absolute; left: 0; top: 0; width: 1080px; height: 1000px; background: linear-gradient(180deg, rgba(11,31,51,0.92) 0%, rgba(11,31,51,0.8) 45%, rgba(11,31,51,0) 100%); }
+      #snow { position: absolute; inset: 0; }
+      .fl { position: absolute; left: 0; top: 0; border-radius: 50%; background: #fff; }
+      .brand { position: absolute; left: 70px; top: 96px; padding: 14px 26px; border-radius: 40px; background: rgba(11,31,51,0.82); font-weight: 800; font-size: 40px; letter-spacing: 0.04em; }
+      .brand b { color: #d4a24c; }
+      .endc { position: absolute; inset: 0; background: #0b1f33; }
+      .eh { position: absolute; left: 90px; top: 520px; width: 900px; font-weight: 800; font-size: 104px; line-height: 1.04; letter-spacing: -0.02em; }
+      .btn { position: absolute; left: 90px; top: 1010px; height: 130px; line-height: 130px; padding: 0 64px; border-radius: 65px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 64px; }
+      .url { position: absolute; left: 90px; top: 1220px; width: 900px; font-weight: 800; font-size: 46px; line-height: 1.3; }
+      .reg { position: absolute; left: 90px; top: 1560px; width: 900px; font-weight: 500; font-size: 36px; line-height: 1.4; color: rgba(255,255,255,0.88); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/ridge.jpg" alt="" style="object-position:62% 50%" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3.4" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/gondola.jpg" alt="" style="object-position:36% 50%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6.8" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/lake.jpg" alt="" style="object-position:55% 50%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="10.2" data-duration="2.4" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/shikhara.jpg" alt="" style="object-position:45% 50%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12.6" data-track-index="4" data-layout-allow-overlap style="position:absolute;inset:0">
+        <div class="grad"></div>
+        <svg id="slope" viewBox="0 0 1080 200" style="position:absolute;left:0;top:1030px;width:1080px;height:200px;overflow:visible"><path id="wp" d="M -40 196 L 1120 10" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" stroke-dasharray="26 14" /><g id="ball"><line x1="0" y1="0" x2="0" y2="26" stroke="#fff" stroke-width="4" /><rect x="-32" y="26" width="64" height="52" rx="12" fill="#d4a24c" stroke="#fff" stroke-width="4" /><rect x="-22" y="35" width="44" height="18" rx="4" fill="#0b1f33" /><circle cx="0" cy="0" r="7" fill="#fff" /><g id="spin"></g></g></svg>
+        <div class="brand">SUZU <b>TRAVELS</b></div>
+        <div class="cap" id="c1"><div class="gb"></div><div class="k">BILASPUR · HIMACHAL</div><div class="h">Maa Naina Devi on her hilltop</div><div class="s">A Shivalik ridge above Gobind Sagar</div></div>
+        <div class="cap" id="c2"><div class="gb"></div><div class="k">PILGRIM ROPEWAY</div><div class="h">Ride up, skip the steep climb</div><div class="s">Cable car from the base to the temple</div></div>
+        <div class="cap" id="c3"><div class="gb"></div><div class="k">FROM THE TOP</div><div class="h">Gobind Sagar below you</div><div class="s">Wide views from the temple area</div></div>
+        <div class="cap" id="c4"><div class="gb"></div><div class="k">NAVRATRI TIP</div><div class="h">Go early, beat the queues</div><div class="s">We time the ride into your cab plan</div></div>
+      </div>
+      <div id="end" class="clip" data-start="12.4" data-duration="2.6" data-track-index="5" style="position:absolute;inset:0">
+        <div class="endc" id="endbg">
+          <div class="brand">SUZU <b>TRAVELS</b></div>
+          <div class="eh" id="eh">Darshan + ropeway + <span style="color:#d4a24c">cab</span></div>
+          <div class="btn" id="btn">Get Quote</div>
+          <div class="url" id="url">suzutravels.com/adventure/<br />naina-devi-ropeway</div>
+          <div class="reg" id="reg">HP Tourism registered travel agent<br />Reg. No. DTO-MND-11-243/2022</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, y: 0 }, { scale: 1.08, y: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.06, y: 0 }, { scale: 1, y: -24, duration: 3.8, ease: "none" }, 3.4);
+      tl.fromTo("#im3", { scale: 1.06, y: 0 }, { scale: 1, y: -24, duration: 3.8, ease: "none" }, 6.8);
+      tl.fromTo("#im4", { scale: 1.06, y: 0 }, { scale: 1, y: -20, duration: 2.4, ease: "none" }, 10.2);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 3.4);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 6.8);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 10.2);
+      tl.set(["#c2", "#c3", "#c4"], { opacity: 0 }, 0);
+                  const caps = [["#c1", 0.2, 3.3], ["#c2", 3.6, 6.7], ["#c3", 7.0, 10.1], ["#c4", 10.4, 12.3]];
+      caps.forEach(([c, a, b]) => {
+        tl.fromTo(c, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out", immediateRender: false }, a);
+        tl.to(c, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, b);
+        tl.fromTo(c + " .gb", { width: 0 }, { width: 360, duration: 0.8, ease: "power2.out", immediateRender: false }, a);
+      });
+      tl.fromTo("#wp", { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -400 }, duration: 12.6, ease: "none" }, 0);
+      const wpath = document.getElementById("wp"), WL = wpath.getTotalLength();
+      const ball = document.getElementById("ball"), spin = document.getElementById("spin");
+      const bs = { t: 0 };
+      const bupd = () => { const ph = (bs.t % 3.15) / 3.15; const e = ph < 0.5 ? 2 * ph * ph : 1 - 2 * (1 - ph) * (1 - ph); const d = 60 + e * (WL - 120); const p = wpath.getPointAtLength(d);
+        ball.setAttribute("transform", `translate(${p.x.toFixed(1)},${p.y.toFixed(1)})`); 
+        ball.setAttribute("opacity", Math.max(0, Math.min(1, ph / 0.08, (1 - ph) / 0.1)).toFixed(3)); };
+      tl.fromTo(bs, { t: 0 }, { t: 12.6, duration: 12.6, ease: "none", onUpdate: bupd }, 0);
+      tl.fromTo("#endbg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, 12.4);
+      tl.from("#eh", { opacity: 0, y: 40, duration: 0.5, ease: "power3.out" }, 12.6);
+      tl.from("#btn", { opacity: 0, scale: 0.9, duration: 0.45, ease: "back.out(2)" }, 12.9);
+      tl.from(["#url", "#reg"], { opacity: 0, y: 20, duration: 0.45, ease: "power2.out", stagger: 0.15 }, 13.1);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      bupd();
+    </script>
+  </body>
+</html>
