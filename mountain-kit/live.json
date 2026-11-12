@@ -423,5 +423,15 @@
   "added": "2026-11-11",
   "peak_id": "menthosa",
   "commercial": true
+ },
+ "manirang": {
+  "id": 21563,
+  "path": "/mountains-of-india/manirang/",
+  "kind": "peak",
+  "label": "Manirang",
+  "blurb": "6,593 m · an Ultra on the Spiti–Kinnaur border, above Mane",
+  "added": "2026-11-12",
+  "peak_id": "manirang",
+  "commercial": true
  }
 }
