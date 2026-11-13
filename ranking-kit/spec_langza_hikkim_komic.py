@@ -34,7 +34,7 @@ SPEC = dict(
         ("Best time", "June – October; winter only with a local driver and a clear forecast."),
     ],
     wx=dict(src="/suzu-weather-feed.json", daily=True, kicker="Live forecast", h2="Kaza and Tabo weather today",
-            lead="Kaza (about 3,800 m) is the base for the loop; the villages above are 600–800 m higher and noticeably colder. Current temperature and the next days' high, low and snow.",
+            lead="Kaza (about 3,650 m) is the base for the loop; the villages above are 700–900 m higher and noticeably colder. Current temperature and the next days' high, low and snow.",
             places=[dict(id="kaza", name="Kaza", alt="3800"), dict(id="tabo", name="Tabo", alt="3280")]),
     sections=[
         dict(id="villages", kicker="The three villages", h2="What to see in Langza, Hikkim and Komic", fig=True, ps=[
@@ -45,7 +45,7 @@ SPEC = dict(
         dict(id="loop", kicker="Plan the loop", h2="How to visit: route, time and distances", ps=[
             "Most people drive the loop from <b>Kaza</b> as a half-day trip: up to Langza, across to Hikkim and Komic, and back down to Kaza (or the other way round). Allow 3–5 hours with stops. Distances are approximate and the road is narrow, partly unpaved and steep in places.",
         ], table=(["Stop", "Approx. height", "What to do", "Time to allow"], [
-            ["Kaza", "~3,800 m", "Base town: hotels, fuel, ATM", "—"],
+            ["Kaza", "~3,650 m", "Base town: hotels, fuel, ATM. <a href=\"/kaza-spiti/\">Kaza guide</a>", "—"],
             ["Langza", "~4,400 m", "Buddha statue, fossil slopes, views of Chau Chau Kang Nilda", "45–60 min"],
             ["Hikkim", "~4,400 m", "Post office (PIN 172114), village walk", "30–45 min"],
             ["Komic", "~4,500+ m", "Tangyud Monastery, canyon views", "45 min"],
