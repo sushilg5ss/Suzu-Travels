@@ -593,6 +593,13 @@ def finish(slug, h, css_extra=""):
             m = m.replace(pu, swap(pu))
     if slug == "cabs":  # 1 Nov 2026 hub size budget: wa.me hrefs keep , : ( ) / ? literal (valid in a query string, WhatsApp decodes the same)
         m = re.sub(r'href="https://wa\.me/[^"]*"', lambda x: x.group(0).replace("%2C", ",").replace("%3A", ":").replace("%28", "(").replace("%29", ")").replace("%2F", "/").replace("%3F", "?"), m)
+    if slug == "cabs":  # 13 Nov 2026 (ENHANCEMENTS #23): hub headroom - literal spaces in wa.me hrefs (the browser's URL parser percent-encodes a
+        # query-string space back to %20, so the tapped URL is byte-identical and works before any JS runs; ~2.2 KB). Only when no
+        # href would start/end with a space (browsers strip those) and no double space (some minifiers collapse them).
+        def _sp(x):
+            u = x.group(0)
+            return u if ("%20%20" in u or '%20"' in u) else u.replace("%20", " ")
+        m = re.sub(r'href="https://wa\.me/[^"]*"', _sp, m)
     if slug == "cabs":  # 10 Nov 2026 (ENHANCEMENTS #20): hub size headroom - see hub_trim(); kit_hub_pre.js restores every dropped value
         m = hub_trim(m)
     if slug == "cabs":  # 8 Nov 2026 (ENHANCEMENTS #16): kit_hub_pre.js as its own small <script> right before the kit script (kit script stays byte-identical; inserted before prune_css so .szc-slot CSS is kept)
