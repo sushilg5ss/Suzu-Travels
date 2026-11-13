@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Spiti's only real town — hotels, homestays, cafés, a fuel pump and ATMs — on a wide bend of the Spiti river, with Key, Kibber, Langza and Dhankar all within an hour or so.",
     chips=[("~3,650 m", "Kaza"), ("~420 km", "from Shimla via Kinnaur"), ("~200 km", "from Manali (summer)"), ("−20 °C", "winter nights")],
     flakes=True,
+    alt_lang=("/kaza-spiti-kaise-jaye/", "हिंदी में पढ़ें: काज़ा स्पीति कैसे जाएँ"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am planning Spiti with a stay in Kaza. Dates: ___ , people: ___ , via Shimla or Manali: ___",
     cta2=("#weather", "Kaza weather today"),
