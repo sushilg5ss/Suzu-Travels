@@ -1,16 +1,16 @@
-# Himachal places and inbound run — 13 Nov 2026 (19:24–23:10 IST)
+# Himachal places and inbound run — 13 Nov 2026 (19:24–23:20 IST)
 
 Owner: Claude (head of marketing/SEO). Reviewer: Sushil.
 
 **Brief:** content for every Himachal place, so the site ranks on Google and brings genuine enquiries, for both inbound (abroad) and domestic travellers. It uses the snow season now and early booking for summer.
 
-**Result:** 32 new posts are live, all in category 77 Himachal. Every post has:
+**Result:** 34 new posts are live, all in category 77 Himachal. Every post has:
 - the Rank Math title, description and focus keyword, set via REST
 - credited CC photos from Wikimedia
 - a live-weather or snow-forecast widget
 - tables, a FAQ with FAQPage schema, and WhatsApp and quote CTAs
 
-All 32 return 200, are set to index and carry a self-canonical.
+All 34 return 200, are set to index and carry a self-canonical.
 
 ## Place guides (21)
 | URL | ID | Focus |
@@ -37,7 +37,7 @@ All 32 return 200, are set to index and carry a self-canonical.
 | /renuka-lake/ | 22026 | renuka lake, renuka ji |
 | /bilaspur-gobind-sagar/ | 22071 | bilaspur himachal, gobind sagar, submerged temples |
 
-## Traffic, season and Hindi pages (5)
+## Traffic, season and Hindi pages (6)
 | URL | ID | Why |
 |---|---|---|
 | /himachal-distance-chart/ | 21837 | "X to Y distance" queries sit at position 9–10 in GSC; km, drive time and winter closures in one place |
@@ -45,8 +45,9 @@ All 32 return 200, are set to index and carry a self-canonical.
 | /himachal-summer-vacation-2027/ | 21847 | Early booking for May–June 2027 |
 | /himachal-mein-barfbari/ | 22029 | Hindi "हिमाचल में बर्फबारी" (matches the existing /uttarakhand-mein-barfbari/) |
 | /sissu-kaise-jaye/ | 22062 | Hindi Sissu page; linked both ways with /sissu/ |
+| /kaza-spiti-kaise-jaye/ | 22076 | Hindi Kaza page; linked both ways with /kaza-spiti/ |
 
-## Inbound (international) pages (6)
+## Inbound (international) pages (7)
 GSC (28 days): India is about 97% of impressions. Abroad: US 2,943, UAE 1,567, UK 1,400, Pakistan 955, Bangladesh 795, Singapore 731, Nepal 538, Canada 530.
 
 | URL | ID | Angle |
@@ -57,6 +58,7 @@ GSC (28 days): India is about 97% of impressions. Abroad: US 2,943, UAE 1,567, U
 | /himachal-tour-from-singapore/ | 21945 | December holidays for snow, June for Spiti. |
 | /himachal-tour-from-uk/ | 22047 | Colonial Shimla and the toy train. e-Visa for UK passport holders. |
 | /himachal-tour-from-usa/ | 22060 | Winter break, spring break and summer Spiti. e-Visa; OCI holders need no visa. |
+| /himachal-tour-from-canada/ | 22074 | Holidays, March break and summer. e-Visa restored for Canadians. |
 
 ## Internal linking
 - **Hub /places-to-visit-in-himachal/ (18182):** an "In-depth guides to more Himachal places" block, placed before "How many days do you need".
@@ -65,22 +67,22 @@ GSC (28 days): India is about 97% of impressions. Abroad: US 2,943, UAE 1,567, U
 - **Other links:** Sarahan links to Hatu Peak. Distance chart ↔ Hindi distance page, and Sissu ↔ Hindi Sissu.
 
 ## Indexing
-39 URLs were submitted via IndexNow (Rank Math Instant Indexing REST): all new posts, the updated posts and both hubs.
+42 URLs were submitted via IndexNow (Rank Math Instant Indexing REST): all new posts, the updated posts and both hubs.
 
 ## Method and constraints
 - **Pipeline:** kit /home/claude/s8/build_post.py → repo branch `ranking` (ranking-kit/) → published via browser REST. The WordPress MCP was down all session.
 - **Photos:** about 190 new Wikimedia Commons uploads (9 per place guide), CC BY / BY-SA / CC0 / PD only, all credited. No close-ups of identifiable people; politician images were filtered out.
 - **Prices:** only "From ₹14,499 per person (four sharing the car)" from the live Shimla–Manali 5N/6D tour page.
 - **Banned-word check:** the kit asserts on every build.
-- **Timing:** writes were spaced ≥40 s apart and the health check stayed under 4 s. All WordPress writes stopped at about 23:10, well before the 00:10 quiet window.
+- **Timing:** writes were spaced ≥40 s apart and the health check stayed under 4 s. All WordPress writes stopped at about 23:20, well before the 00:10 quiet window.
 
 ## Issues for Sushil
 - **Weather feed is stale.** /suzu-weather-feed.json was last updated on 2026-11-09 22:37 UTC, so every live-weather widget site-wide is showing an old forecast. The weather workflow needs your OK.
-- **MCP outage.** WordPress, Google Ads, Semrush, Gmail and remote-devices (laptop sync) were all unreachable. Files are staged in outputs/Ranking-2026-11-13 (32 HTML, 32 specs, this doc) and still need copying to the laptop.
+- **MCP outage.** WordPress, Google Ads, Semrush, Gmail and remote-devices (laptop sync) were all unreachable. Files are staged in outputs/Ranking-2026-11-13 (34 HTML, 34 specs, this doc) and still need copying to the laptop.
 
 ## Next ideas
 - Chitkul as its own guide (check cannibalisation with /sangla-valley-and-chitkul-kinnaur-trip-guide/ first).
 - Karsog, Rohru–Hatkoti, Kotgarh–Thanedar (Commons photos were thin).
-- Canada and Australia inbound pages.
-- Hindi versions of Kaza and Hatu Peak.
+- An Australia inbound page.
+- A Hindi version of Hatu Peak.
 - Review GSC impressions for the new URLs after 7 and 14 days.
