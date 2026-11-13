@@ -1,0 +1,4 @@
+# camping-near-shimla-kasauli media
+
+- hero / reel: see camping-near-shimla-kasauli-{hero,reel}.html and reel-section.html (earlier runs).
+- explainer.mp4 0.16 MB / explainer.webm 0.22 MB / explainer-poster.webp (WP see progress log) — 12 s "From Chandigarh to your tent" (Visual Studio website upgrade, 13 Nov 2026): schematic road Chandigarh → Kalka → Dharampur → Solan → Shoghi → Shimla → Narkanda with gold tent pins Kasauli · Dharampur, Sadhupul (Chail side), Shoghi, Mashobra, Junga, Narkanda; cards Kasauli side about 58 km / Shimla side about 115 km · 3–3.5 h / Narkanda for snow about 60 km beyond Shimla · ~9,000 ft; chip "Camp night + cab both ways · Get Quote". All facts from the live page's own #spots and #experience text. Placed live in #experience .sza-media (replaces the static road photo) on page /adventure/camping-near-shimla-kasauli/.
