@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.76) 56%, rgba(11,31,51,0.9) 100%); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 100px; color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.18em; }
+      .t1 { position: absolute; left: 0; top: 150px; color: #fff; font-weight: 800; font-size: 84px; line-height: 1.02; letter-spacing: -0.02em; }
+      .t2 { position: absolute; left: 0; top: 240px; color: #d4a24c; font-weight: 800; font-size: 84px; line-height: 1.02; letter-spacing: -0.02em; }
+      .big { position: absolute; left: 300px; top: 350px; width: 500px; text-align: left; color: #fff; font-weight: 800; font-size: 88px; line-height: 1; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 304px; top: 452px; width: 500px; white-space: nowrap; text-align: left; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 28px; }
+      svg.prof { position: absolute; left: 0; top: 500px; width: 820px; height: 330px; overflow: visible; }
+      .facts { position: absolute; left: 0; top: 890px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 50px; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 870px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/s3.jpg" alt="" style="object-position:50% 55%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/s2.jpg" alt="" style="object-position:50% 40%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="3" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" style="object-position:50% 60%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><img id="im5" src="assets/s1.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">KULLU → SPITI · TREK</div>
+          <div class="t1">Pin Parvati</div>
+          <div class="t2">Pass Trek</div>
+          <div class="big" id="alt">2,400 m</div>
+          <div class="biglab">altitude on the trail</div>
+          <svg class="prof" viewBox="0 0 820 330">
+            <path id="ghost" d="M 10.0 300.0 C 57.4 300.0 57.4 258.9 104.8 258.9 C 175.9 258.9 175.9 201.3 247.0 201.3 C 326.0 201.3 326.0 160.2 405.0 160.2 C 468.2 160.2 468.2 102.7 531.4 102.7 C 578.8 102.7 578.8 60.0 626.2 60.0 C 713.1 60.0 713.1 184.9 800.0 184.9" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round" stroke-linejoin="round" />
+            <text x="10" y="345" fill="rgba(255,255,255,0.85)" font-size="26" font-weight="500" font-family="PJS">Barshaini · ~2,400 m</text>
+            <text x="620" y="30" text-anchor="middle" fill="#fff" font-size="28" font-weight="800" font-family="PJS">Pass 5,319 m</text>
+            <text x="810" y="244" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="26" font-weight="500" font-family="PJS">Mudh</text>
+            <defs><clipPath id="cp"><rect id="cr" x="0" y="-40" width="0" height="420" /></clipPath></defs>
+            <path id="trail" d="M 10.0 300.0 C 57.4 300.0 57.4 258.9 104.8 258.9 C 175.9 258.9 175.9 201.3 247.0 201.3 C 326.0 201.3 326.0 160.2 405.0 160.2 C 468.2 160.2 468.2 102.7 531.4 102.7 C 578.8 102.7 578.8 60.0 626.2 60.0 C 713.1 60.0 713.1 184.9 800.0 184.9" clip-path="url(#cp)" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="10" cy="300" r="9" fill="#fff" /><circle id="pk" cx="626" cy="60" r="12" fill="#fff" />
+            <g id="g-dot"><circle id="dot" cx="10" cy="300" r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" /></g>
+          </svg>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Barshaini → Mudh · 82–110 km</div>
+            <div class="fact" id="f2">9–12 days, glacier crossing</div>
+            <div class="fact" id="f3">Green Parvati → Spiti desert</div>
+            <div class="fact" id="f4">Open late Jun–mid Sep</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, y: 20 }, { scale: 1, y: -20, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: 30, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3, ease: "none" }, 9);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#im5", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.inOut" }, 10.8);
+      const S = [[0,2400],[0.12,2900],[0.3,3600],[0.5,4100],[0.66,4800],[0.78,5319],[1,3800]];
+      const X = f => 10 + f * 790, Y = a => 300 - (a - 2400) / 2919 * 240;
+      document.getElementById("pk").setAttribute("cy", Y(5319)); document.getElementById("pk").setAttribute("cx", X(0.78));
+      const trail = document.getElementById("trail"), dot = document.getElementById("dot"), alt = document.getElementById("alt"), cr = document.getElementById("cr");
+      const L = trail.getTotalLength();
+      function altAt(p) { for (let i = 1; i < S.length; i++) if (p <= S[i][0]) { const [f0,a0] = S[i-1], [f1,a1] = S[i]; const t = (p - f0) / (f1 - f0); const s = t * t * (3 - 2 * t); return a0 + (a1 - a0) * s; } return 3800; }
+      function ptAtX(x) { let lo = 0, hi = L; for (let k = 0; k < 30; k++) { const m = (lo + hi) / 2; if (trail.getPointAtLength(m).x < x) lo = m; else hi = m; } return trail.getPointAtLength(lo); }
+      const st = { p: 0 };
+      function place() {
+        const x = X(st.p); cr.setAttribute("width", (x + 6).toFixed(1));
+        const pt = ptAtX(x); dot.setAttribute("cx", pt.x.toFixed(2)); dot.setAttribute("cy", pt.y.toFixed(2));
+        const a = altAt(st.p); alt.textContent = (Math.abs(st.p - 0.78) < 0.012 ? 5319 : st.p >= 0.999 ? 3800 : Math.round(a / 50) * 50).toLocaleString("en-IN") + " m";
+      }
+      tl.to(st, { p: 1, duration: 8.4, ease: "none", onUpdate: place }, 0.6);
+      tl.to(["#trail", "#g-dot", "#alt"], { opacity: 0, duration: 0.4 }, 10.2);
+      tl.to(st, { p: 0, duration: 0.05, onUpdate: place }, 10.7);
+      tl.to(["#trail", "#g-dot", "#alt"], { opacity: 1, duration: 0.6 }, 11.2);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.6], ["#f2", "#f3", 5.4], ["#f3", "#f4", 8.2], ["#f4", "#f1", 11.0]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

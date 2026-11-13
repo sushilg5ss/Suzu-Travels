@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1600, height=900" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { margin:0; overflow:hidden; background:#0b1f33; }
+#root { position:relative; width:100%; height:100%; overflow:hidden; font-family:"PJS",sans-serif; color:#fff; background:#0b1f33; }
+.kick { position:absolute; left:80px; top:56px; color:#d4a24c; font-weight:800; font-size:26px; letter-spacing:0.18em; }
+.h { position:absolute; left:80px; top:96px; font-weight:800; font-size:58px; letter-spacing:-0.02em; }
+.km { position:absolute; right:80px; top:60px; width:420px; text-align:right; font-weight:800; font-size:76px; line-height:1; color:#fff; }
+.kml { position:absolute; right:80px; top:150px; width:420px; text-align:right; font-weight:500; font-size:24px; color:rgba(255,255,255,0.8); }
+svg.p { position:absolute; left:0; top:0; width:1600px; height:900px; overflow:visible; font-family:PJS; }
+.badge { position:absolute; left:640px; top:790px; height:60px; padding:0 28px; border-radius:30px; background:#ffffff; color:#0b1f33; font-weight:800; font-size:26px; line-height:60px; white-space:nowrap; }
+.chip { position:absolute; left:80px; top:790px; height:60px; padding:0 28px; border-radius:30px; background:#d4a24c; color:#0b1f33; font-weight:800; font-size:26px; line-height:60px; white-space:nowrap; }
+.note { position:absolute; right:80px; top:866px; color:rgba(255,255,255,0.6); font-weight:500; font-size:18px; }
+.kaza { position:absolute; right:80px; top:610px; color:rgba(255,255,255,0.85); font-weight:500; font-size:24px; }
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1600" data-height="900">
+<div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+<div class="kick">KULLU → SPITI · ON FOOT</div>
+<div class="h">Over a 5,319 m glacier pass</div>
+<div class="km" id="km">Day 1</div><div class="kml">of about 9–12 days</div>
+<svg class="p" viewBox="0 0 1600 900">
+<defs><linearGradient id="gr" x1="140" y1="0" x2="1460" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3fa34d"/><stop offset="0.45" stop-color="#7fbf6a"/><stop offset="0.62" stop-color="#ffffff"/><stop offset="0.84" stop-color="#ffffff"/><stop offset="1" stop-color="#c98b4a"/></linearGradient>
+<clipPath id="cp"><rect id="cr" x="0" y="0" width="0" height="900"/></clipPath></defs>
+<line x1="140" y1="660.0" x2="1460" y2="660.0" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+<path id="ghost" d="M 140.0 660.0 C 212.6 660.0 212.6 596.6 285.2 596.6 C 364.4 596.6 364.4 545.9 443.6 545.9 C 516.2 545.9 516.2 507.9 588.8 507.9 C 661.4 507.9 661.4 482.5 734.0 482.5 C 806.6 482.5 806.6 444.5 879.2 444.5 C 951.8 444.5 951.8 355.8 1024.4 355.8 C 1097.0 355.8 1097.0 290.0 1169.6 290.0 C 1314.8 290.0 1314.8 482.5 1460.0 482.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+<path id="trail" d="M 140.0 660.0 C 212.6 660.0 212.6 596.6 285.2 596.6 C 364.4 596.6 364.4 545.9 443.6 545.9 C 516.2 545.9 516.2 507.9 588.8 507.9 C 661.4 507.9 661.4 482.5 734.0 482.5 C 806.6 482.5 806.6 444.5 879.2 444.5 C 951.8 444.5 951.8 355.8 1024.4 355.8 C 1097.0 355.8 1097.0 290.0 1169.6 290.0 C 1314.8 290.0 1314.8 482.5 1460.0 482.5" clip-path="url(#cp)" fill="none" stroke="url(#gr)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="st" id="st0"><circle cx="140.0" cy="660.0" r="10" fill="#fff"/><text x="140.0" y="710.0" text-anchor="start" fill="#fff" font-size="25" font-weight="800">Barshaini</text><text x="140.0" y="738.0" text-anchor="start" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~2,400 m</text></g><g class="st" id="st1"><circle cx="285.2" cy="596.6" r="10" fill="#fff"/><text x="285.2" y="540.6" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">Kheerganga</text><text x="285.2" y="570.6" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~2,900 m</text></g><g class="st" id="st2"><circle cx="443.6" cy="545.9" r="10" fill="#fff"/><text x="443.6" y="595.9" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">Tunda Bhuj</text><text x="443.6" y="623.9" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~3,300 m</text></g><g class="st" id="st3"><circle cx="588.8" cy="507.9" r="10" fill="#fff"/><text x="588.8" y="451.9" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">Thakur Kuan</text><text x="588.8" y="481.9" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~3,600 m</text></g><g class="st" id="st4"><circle cx="734.0" cy="482.5" r="10" fill="#fff"/><text x="734.0" y="532.5" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">Odi Thach</text><text x="734.0" y="560.5" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~3,800 m</text></g><g class="st" id="st5"><circle cx="879.2" cy="444.5" r="10" fill="#fff"/><text x="879.2" y="388.5" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">Mantalai</text><text x="879.2" y="418.5" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~4,100 m</text></g><g class="st" id="st6"><circle cx="1024.4" cy="355.8" r="10" fill="#fff"/><text x="1042.4" y="405.8" text-anchor="start" fill="#fff" font-size="25" font-weight="800">Base camp</text><text x="1042.4" y="433.8" text-anchor="start" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~4,800 m</text></g><g class="st" id="st7"><circle cx="1169.6" cy="290.0" r="14" fill="#d4a24c"/><text x="1169.6" y="234.0" text-anchor="middle" fill="#d4a24c" font-size="34" font-weight="800">Pin Parvati Pass</text><text x="1169.6" y="264.0" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">5,319 m</text></g><g class="st" id="st8"><circle cx="1460.0" cy="482.5" r="10" fill="#fff"/><text x="1460.0" y="532.5" text-anchor="end" fill="#fff" font-size="25" font-weight="800">Mudh</text><text x="1460.0" y="560.5" text-anchor="end" fill="rgba(255,255,255,0.82)" font-size="22" font-weight="500">~3,800 m</text></g>
+<circle id="dot" cx="140" cy="660.0" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/>
+</svg>
+<div class="kaza" id="kaza">then by road → Kaza → Manali</div>
+<div class="chip" id="chip">Late Jun–mid Sep · Get Quote</div>
+<div class="badge" id="badge">Rest day at Mantalai</div>
+<div class="note">Schematic, not to scale · altitudes approximate</div>
+</div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const trail = document.getElementById("trail"), dot = document.getElementById("dot"), cr = document.getElementById("cr"), km = document.getElementById("km");
+const L = trail.getTotalLength();
+function ptAtX(x) { let lo = 0, hi = L; for (let k = 0; k < 30; k++) { const m = (lo + hi) / 2; if (trail.getPointAtLength(m).x < x) lo = m; else hi = m; } return trail.getPointAtLength(lo); }
+const st = { p: 0 };
+function place() { const x = 140 + st.p * 1320; cr.setAttribute("width", (x + 8).toFixed(1)); const pt = ptAtX(x); dot.setAttribute("cx", pt.x.toFixed(2)); dot.setAttribute("cy", pt.y.toFixed(2)); km.textContent = "Day " + Math.min(11, 1 + Math.floor(st.p * 10.999)); }
+tl.set([".st", "#badge", "#chip", "#kaza"], { opacity: 0 }, 0);
+tl.to("#st0", { opacity: 1, duration: 0.4 }, 0.3);
+tl.to(st, { p: 1, duration: 7.6, ease: "none", onUpdate: place }, 0.8);
+[[1,0.11],[2,0.23],[3,0.34],[4,0.45],[5,0.56],[6,0.67],[7,0.78],[8,1]].forEach(([i,f]) => tl.to("#st" + i, { opacity: 1, duration: 0.35 }, 0.8 + f * 7.6 - 0.15));
+tl.fromTo("#badge", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 0.8 + 0.56 * 7.6);
+tl.fromTo("#kaza", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 8.5);
+tl.fromTo("#chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 8.8);
+tl.to("#root", { opacity: 1, duration: 3.1 }, 8.9);
+place();
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script></body></html>
