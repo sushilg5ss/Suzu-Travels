@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-13-assistant-v16",
+ "agent": "Interactive (Sushil online)",
+ "summary": "Suzu Assistant v1.6 (pending since 6/10 Nov): 9 new cab pages incl. Fortuner, Dehradun airport, Tempo 12/17-seater",
+ "files": [
+  {
+   "target": "suzu-assistant.js",
+   "source": "suzu-assistant.js",
+   "sha256": "ed8382d59a145c0c3c29da511fc32bf34f4d0e823eff542469f2ff61e8e97e99",
+   "base_sha256": "69ebba6ddd4f022cc997c2972ae195d299a3de703233a1e06b6f83f7e03895fb",
+   "backup": "suzu-assistant-previous.js",
+   "url": "https://suzutravels.com/suzu-assistant.js",
+   "bytes": 82914
+  },
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "34a8de0fc64c4b22d0888056b069971b6708b6ebab4ad2409a51eeea5f8f4677",
+   "base_sha256": "72794f4da2378f1ec00321fb3e15f2ac4bfa6da3f8a06c860b2504ae9e815ccc",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1003978
+  }
+ ]
+}
