@@ -866,5 +866,14 @@
  "lead": {
   "js": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@87ff90afb70fdf90669bf2d38e536309b9a05d51/cab-kit/media/js/lead.js",
   "note": "enquiry-source counter (GA4 event szc_lead, no personal data) - hub loads it async, child pages inline; ENHANCEMENTS #22, 12 Nov 2026"
+ },
+ "chandigarh-to-amritsar-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d9b53d5b7d2c76817d9236add4afc4df781c9c0a/cab-kit/media/chandigarh-to-amritsar-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d9b53d5b7d2c76817d9236add4afc4df781c9c0a/cab-kit/media/chandigarh-to-amritsar-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d9b53d5b7d2c76817d9236add4afc4df781c9c0a/cab-kit/media/chandigarh-to-amritsar-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
