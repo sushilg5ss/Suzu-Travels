@@ -9,7 +9,7 @@ SPEC = dict(
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero", "The Spiti river at Kaza", "The braided Spiti river and the mountains around Kaza"),
         (P + ":fig-1", "fig", "The monastery in Kaza", "The colourful monastery in Kaza town"),
-        (P + ":g-1", "g", "Kaza in its valley", "Kaza on the flat bank of the Spiti river"),
+        (P + ":g-1", "g", "The riverbed below Kaza", "The wide stony bed of the Spiti river below Kaza"),
         (P + ":g-2", "g", "Chortens at Kaza", "A row of white chortens at Kaza"),
         (P + ":g-3", "g", "Old Kaza", "Whitewashed houses in the old part of Kaza"),
         (P + ":g-4", "g", "A Spiti house", "A traditional Spiti house in Kaza"),

@@ -61,10 +61,10 @@ SPEC = dict(
     gallery=dict(h2="Langza, Hikkim and Komic in pictures", lead="The Langza Buddha, the Hikkim post office, Komic's monastery and the plateau above Kaza — real photographs, each credited to its photographer."),
     spots=dict(kicker="Nearby", h2="More to see around Kaza", lead="Easy to add to the same trip.", items=[
         ("Key Monastery", "~14 km from Kaza", "Spiti's best-known monastery on its cone-shaped hill. <a href=\"/key-monastery/\">Key Monastery guide →</a>"),
-        ("Kibber and Chicham", "Beyond Key", "A high village and the gorge bridge on the way to Chicham."),
+        ("Kibber and Chicham", "Beyond Key", "A high village and the gorge bridge on the way to Chicham. <a href=\"/kibber-chicham/\">Kibber guide →</a>"),
         ("Tabo Monastery", "~47 km from Kaza", "Over a thousand years old, with famous murals. <a href=\"/tabo-monastery/\">Tabo guide →</a>"),
-        ("Dhankar", "~32 km from Kaza", "A fort-monastery on a crumbling ridge above the river confluence."),
-        ("Pin Valley", "South of Kaza", "Greener side valley and snow-leopard country in winter."),
+        ("Dhankar", "~32 km from Kaza", "A fort-monastery on a crumbling ridge above the river confluence. <a href=\"/dhankar-monastery/\">Dhankar guide →</a>"),
+        ("Pin Valley", "South of Kaza", "Greener side valley and snow-leopard country in winter. <a href=\"/pin-valley/\">Pin valley guide →</a>"),
         ("Chandratal", "Over Kunzum (summer)", "Crescent lake on the Manali side. <a href=\"/adventure/chandratal-lake-trek-and-camps/\">Chandratal →</a>"),
     ]),
     sections2=[

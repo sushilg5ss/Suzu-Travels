@@ -61,10 +61,10 @@ SPEC = dict(
     ],
     gallery=dict(h2="Key Monastery in pictures", lead="The monastery on its hill in summer and under snow, its courtyards and the view from the roof — real photographs, each credited to its photographer."),
     spots=dict(kicker="Nearby", h2="Around Key Monastery", lead="Add these to the same day or the next.", items=[
-        ("Kibber", "About 8 km beyond Key", "One of the high villages of Spiti, gateway to snow-leopard country in winter."),
+        ("Kibber", "About 8 km beyond Key", "One of the high villages of Spiti, gateway to snow-leopard country in winter. <a href=\"/kibber-chicham/\">Kibber guide →</a>"),
         ("Chicham bridge", "Beyond Kibber", "A bridge high over a deep gorge on the road to Chicham."),
         ("Langza, Hikkim and Komic", "Plateau above Kaza", "Buddha statue, fossils and the high post office. <a href=\"/langza-hikkim-komic/\">Guide →</a>"),
-        ("Kaza", "Base town", "Hotels, cafés, fuel and the market. <a href=\"/weather/kaza/\">Kaza weather →</a>"),
+        ("Kaza", "Base town", "Hotels, cafés, fuel and the market. <a href=\"/kaza-spiti/\">Kaza guide →</a>"),
         ("Tabo Monastery", "About 47 km from Kaza", "Founded in 996 CE, with famous murals. <a href=\"/tabo-monastery/\">Guide →</a>"),
         ("Snow leopard trips", "Winter, Kibber area", "Guided winter wildlife trips. <a href=\"/adventure/snow-leopard-safari-spiti/\">Snow leopard safari →</a>"),
     ]),

@@ -60,9 +60,9 @@ SPEC = dict(
     ],
     gallery=dict(h2="Tabo in pictures", lead="The old mud complex, its stupas, the new gompa, the meditation caves and the village — real photographs, each credited to its photographer."),
     spots=dict(kicker="Nearby", h2="Around Tabo", lead="On the same road through Spiti.", items=[
-        ("Dhankar", "About 30 km towards Kaza", "A fort-monastery on a crumbling ridge, with a high lake above."),
-        ("Pin Valley", "Turn-off near Attargo", "Green side valley and national park."),
-        ("Kaza", "About 47 km", "Base town for the high villages. <a href=\"/weather/kaza/\">Kaza weather →</a>"),
+        ("Dhankar", "About 30 km towards Kaza", "A fort-monastery on a crumbling ridge, with a high lake above. <a href=\"/dhankar-monastery/\">Dhankar guide →</a>"),
+        ("Pin Valley", "Turn-off near Attargo", "Green side valley and national park. <a href=\"/pin-valley/\">Pin valley guide →</a>"),
+        ("Kaza", "About 47 km", "Base town for the high villages. <a href=\"/kaza-spiti/\">Kaza guide →</a>"),
         ("Key Monastery", "Beyond Kaza", "The cone-shaped monastery on its hill. <a href=\"/key-monastery/\">Guide →</a>"),
         ("Nako", "About 60 km back towards Kinnaur", "Lake village at about 3,660 m. <a href=\"/nako/\">Guide →</a>"),
         ("Gue mummy", "Side road near Sumdo", "A naturally preserved monk's body in a small shrine."),

@@ -59,7 +59,7 @@ SPEC = dict(
     ],
     gallery=dict(h2="Sarahan and Bhimakali in pictures", lead="The temple towers, the courtyard, the silver doors and Sarahan in winter — real photographs, each credited to its photographer."),
     spots=dict(kicker="On the road", h2="Shimla to Kinnaur: stops along the way", lead="Break the drive into the high valleys.", items=[
-        ("Narkanda", "~65 km from Shimla", "Apple orchards and Hatu Peak. <a href=\"/narkanda/\">Narkanda guide →</a>"),
+        ("Narkanda", "~65 km from Shimla", "Apple orchards and Hatu Peak. <a href=\"/hatu-peak-narkanda/\">Hatu Peak guide →</a>"),
         ("Rampur", "Sutlej valley", "Old Bushahr town; Lavi fair in November."),
         ("Jeori", "Turn-off", "Start of the 17 km climb to Sarahan."),
         ("Sangla and Chitkul", "Baspa valley", "The prettiest valley in Kinnaur. <a href=\"/sangla-valley-and-chitkul-kinnaur-trip-guide/\">Guide →</a>"),
