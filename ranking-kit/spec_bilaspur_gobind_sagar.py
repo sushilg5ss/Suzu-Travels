@@ -9,11 +9,11 @@ SPEC = dict(
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero", "Gobind Sagar lake in summer", "The blue water of Gobind Sagar lake among the hills of Bilaspur"),
         (P + ":fig-1", "fig", "The submerged temples", "Old stone temples rising from Gobind Sagar at Bilaspur when the water is low"),
-        (P + ":g-1", "g", "Gobind Sagar lake", "The wide reservoir of Gobind Sagar"),
+        (P + ":g-5", "g", "The lake and the hills", "Gobind Sagar framed by the green hills of Bilaspur"),
         (P + ":g-2", "g", "Sunset over the lake", "Sunset over Gobind Sagar and the Bilaspur hills"),
         (P + ":g-3", "g", "Boats on the reservoir", "Boats moored on Gobind Sagar reservoir"),
         (P + ":g-4", "g", "An island in the lake", "A wooded island in Gobind Sagar"),
-        (P + ":g-5", "g", "The lake and the hills", "Gobind Sagar framed by the green hills of Bilaspur"),
+        (P + ":g-1", "g", "Gobind Sagar on a hazy day", "Gobind Sagar reservoir under a hazy sky"),
         (P + ":g-6", "g", "Bilaspur town", "The town of Bilaspur above Gobind Sagar"),
         (P + ":g-7", "g", "Bhakra dam", "The Bhakra dam on the Sutlej, which holds back Gobind Sagar"),
     ]),
