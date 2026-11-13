@@ -45,7 +45,7 @@ researched: 2026-11-11 · status: researched
 | Piolet d'Or | 2012, for the SK-II ascent | https://alpinist.com/newswire/piolets-dor-2012/ | 2026-11-11 |
 | SK-III first ascent | 15 May 1986, ITBP (leader S.P. Chamoli), via N Shukpa Kunchang | https://www.himalayanclub.org/hj/43/17/saser-kangri-iii-1986/ | 2026-11-11 |
 | SK-IV first ascent | 6 Jun 1987, Indo-British Army: Bazire, Howie (W face); Thakur Dass, Devi Singh, Lalit Negi (S ridge) | https://publications.americanalpineclub.org/articles/12198824001 | 2026-11-11 |
-| Mamostong Kangri (nearby) | 7,516 m; fa 12 Sep 1984, Indo-Japanese (Col Balwant Sandhu) | https://himalayanclub.org/hj/41/16/first-ascent-of-mamostong-7516-m | 2026-11-11 |
+| Mamostong Kangri (nearby) | 7,516 m; fa 13 Sep 1984, Indo-Japanese (Col Balwant Sandhu) — AAJ 1985 + Wikipedia; HJ 41 reads 12 Sep in places (corrected 13 Nov, see mamostong-kangri.md) | https://himalayanclub.org/hj/41/16/first-ascent-of-mamostong-7516-m | 2026-11-11 |
 
 ## Route and camps
 SK-I, 1973 ITBP eastern route (feet in source, metres converted):

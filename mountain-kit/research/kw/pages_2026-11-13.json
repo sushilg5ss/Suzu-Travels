@@ -1,0 +1,132 @@
+{
+ "source": "Google Ads Keyword Planner via Pipeboard, customer 1172710099, English, pulled 2026-11-13. avg monthly searches (banded). ww = no geo; IN = India; intl = US+GB+AU+IL+DE+FR",
+ "mamostong-kangri": {
+  "mamostong kangri": {
+   "ww": 1000,
+   "IN": 590,
+   "intl": 210,
+   "trend_ww": "880-1,600 (Aug 2026 peak 1,600)"
+  },
+  "mamostong kangri height": {
+   "ww": 10
+  },
+  "mamostong kangri expedition": {
+   "ww": null
+  },
+  "rimo muztagh": {
+   "ww": 20
+  },
+  "rimo peak": {
+   "ww": 30,
+   "IN": 30,
+   "intl": 10
+  },
+  "rimo mountain": {
+   "ww": 40,
+   "IN": 30,
+   "intl": 10
+  },
+  "saser kangri": {
+   "ww": 720,
+   "note": "owned by /saser-kangri/"
+  }
+ },
+ "thalay-sagar": {
+  "thalay sagar": {
+   "ww": 390,
+   "IN": 170,
+   "intl": 90,
+   "trend_ww": "Oct 2026 spike 880 (Kedartal avalanche news)"
+  },
+  "thalay sagar peak": {
+   "ww": 70,
+   "IN": 50,
+   "intl": 10
+  },
+  "thalay sagar expedition": {
+   "ww": 10
+  },
+  "thalay sagar height": {
+   "ww": null
+  },
+  "kedartal trek": {
+   "ww": 2400,
+   "IN": 2400,
+   "intl": 50,
+   "note": "trek intent - Adventure lane, H2/link only"
+  },
+  "bhrigupanth": {
+   "ww": 260,
+   "IN": 210,
+   "intl": 30
+  },
+  "jogin peak": {
+   "ww": 30
+  }
+ },
+ "swargarohini": {
+  "swargarohini peak": {
+   "ww": 320,
+   "IN": 260,
+   "intl": 10
+  },
+  "swargarohini": {
+   "ww": 3600,
+   "IN": 3600,
+   "intl": 90,
+   "note": "mixed: Mahabharata myth, GMVN/hotels, homestays"
+  },
+  "swargarohini trek": {
+   "ww": 880,
+   "IN": 880,
+   "intl": 10,
+   "note": "trek intent, ~1,300 Jun 2026; mostly the Satopanth/Swargarohini (Badrinath) trek - see fact pack"
+  },
+  "swargarohini height": {
+   "ww": 50
+  },
+  "swargarohini mountain": {
+   "ww": 50
+  },
+  "swargarohini base camp trek": {
+   "ww": 20,
+   "IN": 20,
+   "intl": 10
+  },
+  "swargarohini peak expedition": {
+   "ww": 10
+  },
+  "bandarpunch peak": {
+   "ww": 210
+  },
+  "bandarpunch trek": {
+   "ww": 90
+  },
+  "ruinsara tal": {
+   "ww": 260
+  },
+  "gmvn swargarohini": {
+   "ww": 50
+  }
+ },
+ "later_ideas_ww": {
+  "bandarpunch peak": 210,
+  "bandarpunch trek": 90,
+  "bhagirathi peak": 210,
+  "bhagirathi 2 expedition": 30,
+  "apsarasas kangri": 170,
+  "dunagiri peak": 140,
+  "hardeol peak": 110,
+  "cb 13 peak": 90,
+  "teram kangri": 90,
+  "kalanag peak": 70,
+  "kalanag trek": 70,
+  "rudugaira": 40,
+  "jogin peak": 30,
+  "bhrigupanth peak": 20,
+  "sri kailash peak": 10,
+  "nanda kot": null,
+  "nanda devi east": "49,500 = same Keyword Planner group as 'nanda devi' (owned by /nanda-devi/) - do not target",
+  "nanda devi east expedition": 40
+ }
+}

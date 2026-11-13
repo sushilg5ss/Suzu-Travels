@@ -259,11 +259,18 @@
   ]
  },
  "Thalay Sagar": {
-  "notable": "Steep on all sides; a band of rotten shale guards the summit. The direct Australian Route through it was awarded the Piolet d'Or in 1999.",
+  "notable": "Steep on all sides; a band of rotten shale guards the summit. The direct Australian route through it (Lindblade & Whimp, 1997) won the 1999 Piolet d'Or, and the Russian 'Moveable Feast' (2016) was honoured at the 2017 Piolets d'Or.",
   "sources": [
    "https://en.wikipedia.org/wiki/Thalay_Sagar",
-   "https://en.wikipedia.org/wiki/Gangotri_Group"
-  ]
+   "https://en.wikipedia.org/wiki/Gangotri_Group",
+   "https://publications.americanalpineclub.org/articles/12198045700",
+   "https://pioletsdor.net/index.php/en/archives/home-2/2017-honoured-ascents/82-thalay-sagar-6-904m-india",
+   "https://himalayanclub.org/hj/42/8/thalay-sagar-northeast-pillar/"
+  ],
+  "height_alternates_m": [],
+  "first_ascent_by": "Roy Kligfield, John Thackray & Pete Thexton (Anglo-American), 24 Jun 1979, NW couloir and ridge",
+  "difficulty_note": "Steep rock spire with a notorious rotten shale band; 'perhaps the most difficult summit to attain in the entire Gangotri group'",
+  "base": "Gangotri → Bhoj Kharak → Kedar Kharak → Kedar Tal (base camp ~4,750 m)"
  },
  "Meru Central (Shark's Fin)": {
   "notable": "First summited by Valery Babanov in 2001; the Shark's Fin line was first climbed in October 2011 by Conrad Anker, Jimmy Chin and Renan Ozturk (the 2015 film 'Meru')."
@@ -343,7 +350,18 @@
   ]
  },
  "Mamostong Kangri": {
-  "india_rank": 7
+  "india_rank": 7,
+  "first_ascent_by": "Indo-Japanese expedition led by Col Balwant Sandhu (deputy Yoshio Ogata); summit 13 Sep 1984",
+  "difficulty_note": "Long glacier approach over the Mamostong Col to the Thangman glacier, then the NE/E ridge with long sections of fixed rope",
+  "best_season": "Jul–Sep",
+  "status_note": "Near Siachen in the East Karakoram: the IMF permits foreign teams only on joint expeditions with Indian partners; most ascents are by Indian Army/paramilitary teams.",
+  "base": "Leh → Sasoma (Nubra)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mamostong_Kangri",
+   "https://aac-publications.s3.amazonaws.com/documents/aaj/1985/PDF/AAJ_1985_27_59_306c.pdf",
+   "https://www.himalayanclub.org/hj/46/13/the-ladakh-scouts-mamostong-kangri-expedition/",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
+  ]
  },
  "Saser Kangri IV": {
   "height_alternates_m": [
@@ -361,6 +379,19 @@
   "sources": [
    "https://en.wikipedia.org/wiki/Saser_Kangri",
    "https://www.himalayanclub.org/hj/43/17/saser-kangri-iii-1986/"
+  ]
+ },
+ "Swargarohini I": {
+  "first_ascent_by": "NIM team led by Sqn Ldr A.K. Singh, 3 May 1990 (claimed; disputed — first undisputed ascent 7 Jun 1993, Swedish team, south face)",
+  "status_note": "First ascent disputed: a 1974 team climbed the west summit; the 1990 NIM claim is reported as a few metres short; the 1993 Swedish ascent is undisputed. Listed as an 'Open Peak' by the Uttarakhand Forest Department.",
+  "base": "Sankri/Taluka → Osla → Ruinsara Tal → Kiarkoti base camp (4,100–4,300 m)",
+  "notable": "In local legend the Pandavas' 'stairway to heaven'; other traditions place that ascent near Badrinath.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Swargarohini",
+   "https://www.himalayanclub.org/hj/47/8/the-first-ascent-of-swargarohini-i/",
+   "https://publications.americanalpineclub.org/articles/12199423601",
+   "https://publications.americanalpineclub.org/articles/12197652703",
+   "https://forestonline.uk.gov.in/swargarohini"
   ]
  }
 }

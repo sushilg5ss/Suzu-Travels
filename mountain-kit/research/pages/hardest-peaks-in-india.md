@@ -37,7 +37,7 @@ researched: 2026-10-30 · status: researched · Sell? **no** (information; most 
 5. **Is India's highest peak the hardest?** No — Kangchenjunga can't be climbed from India (Sikkim ban); difficulty depends on route, not height.
 6. **How do India's hardest peaks compare with K2?** They are lower (6,300–7,500 m) but many are steeper and more technical; don't rank them against K2 numerically.
 7. **Can beginners climb any of these?** No — start with a trekking peak (Friendship, Yunam) and a basic course.
-8. **What is the Piolet d'Or?** An annual mountaineering award; Indian winners include Thalay Sagar (1999) and Saser Kangri II East (2012).
+8. **What is the Piolet d'Or?** An annual mountaineering award; Climbs in India it has honoured include Thalay Sagar (1999 and 2017) and Saser Kangri II East (2012).
 
 ## Media notes for the Visual Studio
 - Hero **words** (guide, facts only — no hype lines): "SHARK'S FIN: / 2011." · "SHALE BAND: / 6,904 M." · "GRANITE: / CHANGABANG." · "START IN / HIMACHAL." — kicker "HARDEST PEAKS · INDIA".
@@ -46,7 +46,7 @@ researched: 2026-10-30 · status: researched · Sell? **no** (information; most 
 
 ## Do not say
 - "Meru Central first climbed in 2011" — 2001 Babanov; 2011 = Shark's Fin line.
-- "Several routes on Thalay Sagar won the Piolet d'Or" (old dataset note, fixed 30 Oct) — one: the Australian Route, 1999.
+- "Only one Thalay Sagar route won the Piolet d'Or" — corrected 13 Nov: **two** — the Australian Route (Lindblade & Whimp 1997) won in 1999, and the Russian 'Moveable Feast' (2016) was honoured in 2017 (https://pioletsdor.net/index.php/en/archives/home-2/2017-honoured-ascents/82-thalay-sagar-6-904m-india). Never write 'several' without naming them.
 - Piolet d'Or years for Changabang north face, Kishtwar Shivling, Kamet SE face — not verified this run.
 - "Most dangerous/deadliest mountain in India" — no fatality data.
 - That any of these is "open" without the dated Uttarakhand list check; never sell them.

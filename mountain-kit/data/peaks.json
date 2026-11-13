@@ -244,18 +244,20 @@
   "range": "Karakoram (Rimo Muztagh)",
   "area": "Nubra/Shyok, Leh district",
   "fa": 1984,
-  "fa_by": "Indo-Japanese expedition",
+  "fa_by": "Indo-Japanese expedition led by Col Balwant Sandhu (deputy Yoshio Ogata); summit 13 Sep 1984",
   "status": "climbed",
-  "status_note": "Near Siachen; permits via IMF with joint/army clearance.",
+  "status_note": "Near Siachen in the East Karakoram: the IMF permits foreign teams only on joint expeditions with Indian partners; most ascents are by Indian Army/paramilitary teams.",
   "grade": "technical",
-  "grade_note": "Long glacier approach; northeast ridge",
-  "season": "Jun–Aug",
-  "base": "Leh → Nubra/Shyok (Sasoma)",
+  "grade_note": "Long glacier approach over the Mamostong Col to the Thangman glacier, then the NE/E ridge with long sections of fixed rope",
+  "season": "Jul–Sep",
+  "base": "Leh → Sasoma (Nubra)",
   "foreigners": "restricted",
   "rank": 7,
   "notable": "Highest peak of the Rimo Muztagh.",
   "sources": [
    "https://en.wikipedia.org/wiki/Mamostong_Kangri",
+   "https://aac-publications.s3.amazonaws.com/documents/aaj/1985/PDF/AAJ_1985_27_59_306c.pdf",
+   "https://www.himalayanclub.org/hj/46/13/the-ladakh-scouts-mamostong-kangri-expedition/",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
   ]
  },
@@ -1748,9 +1750,7 @@
   "alt": [],
   "m": 6904,
   "ft": 22651,
-  "m_alt": [
-   6984
-  ],
+  "m_alt": [],
   "band": "6000",
   "state": "uttarakhand",
   "state_label": "Uttarakhand",
@@ -1758,19 +1758,22 @@
   "range": "Garhwal Himalaya (Gangotri group)",
   "area": "Uttarkashi–Tehri",
   "fa": 1979,
-  "fa_by": "Roy Kligfield, John Thackray & Pete Thexton (Anglo-American)",
+  "fa_by": "Roy Kligfield, John Thackray & Pete Thexton (Anglo-American), 24 Jun 1979, NW couloir and ridge",
   "status": "climbed",
   "status_note": "",
   "grade": "extreme",
-  "grade_note": "Steep rock spire with a notorious rotten shale band; considered the hardest summit in the Gangotri group",
+  "grade_note": "Steep rock spire with a notorious rotten shale band; 'perhaps the most difficult summit to attain in the entire Gangotri group'",
   "season": "May–Jun & Sep–Oct",
-  "base": "Gangotri → Kedar Tal",
+  "base": "Gangotri → Bhoj Kharak → Kedar Kharak → Kedar Tal (base camp ~4,750 m)",
   "foreigners": "yes",
   "rank": 40,
-  "notable": "Steep on all sides; a band of rotten shale guards the summit. The direct Australian Route through it was awarded the Piolet d'Or in 1999.",
+  "notable": "Steep on all sides; a band of rotten shale guards the summit. The direct Australian route through it (Lindblade & Whimp, 1997) won the 1999 Piolet d'Or, and the Russian 'Moveable Feast' (2016) was honoured at the 2017 Piolets d'Or.",
   "sources": [
    "https://en.wikipedia.org/wiki/Thalay_Sagar",
-   "https://en.wikipedia.org/wiki/Gangotri_Group"
+   "https://en.wikipedia.org/wiki/Gangotri_Group",
+   "https://publications.americanalpineclub.org/articles/12198045700",
+   "https://pioletsdor.net/index.php/en/archives/home-2/2017-honoured-ascents/82-thalay-sagar-6-904m-india",
+   "https://himalayanclub.org/hj/42/8/thalay-sagar-northeast-pillar/"
   ]
  },
  {
@@ -3517,18 +3520,22 @@
   "range": "Garhwal Himalaya (Bandarpunch range)",
   "area": "Uttarkashi",
   "fa": 1990,
-  "fa_by": "Nehru Institute of Mountaineering team",
+  "fa_by": "NIM team led by Sqn Ldr A.K. Singh, 3 May 1990 (claimed; disputed — first undisputed ascent 7 Jun 1993, Swedish team, south face)",
   "status": "climbed",
-  "status_note": "",
+  "status_note": "First ascent disputed: a 1974 team climbed the west summit; the 1990 NIM claim is reported as a few metres short; the 1993 Swedish ascent is undisputed. Listed as an 'Open Peak' by the Uttarakhand Forest Department.",
   "grade": "extreme",
   "grade_note": "Technical rock/snow/ice with huge local relief",
   "season": "May–Jun & Sep–Oct",
-  "base": "Sankri → Ruinsara",
+  "base": "Sankri/Taluka → Osla → Ruinsara Tal → Kiarkoti base camp (4,100–4,300 m)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Mythical 'stairway to heaven' of the Pandavas.",
+  "notable": "In local legend the Pandavas' 'stairway to heaven'; other traditions place that ascent near Badrinath.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Swargarohini"
+   "https://en.wikipedia.org/wiki/Swargarohini",
+   "https://www.himalayanclub.org/hj/47/8/the-first-ascent-of-swargarohini-i/",
+   "https://publications.americanalpineclub.org/articles/12199423601",
+   "https://publications.americanalpineclub.org/articles/12197652703",
+   "https://forestonline.uk.gov.in/swargarohini"
   ]
  },
  {
