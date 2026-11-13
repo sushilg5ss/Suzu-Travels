@@ -21,6 +21,7 @@ SPEC = dict(
     sub="Hill roads are slow, so kilometres alone mislead. Here are the usual road distances and realistic driving times to Himachal's main places from the five cities most trips start in — with the passes that close in winter.",
     chips=[("~345 km", "Delhi → Shimla"), ("~540 km", "Delhi → Manali"), ("~250 km", "Shimla → Manali"), ("25–35 km/h", "average on hill roads")],
     flakes=False,
+    alt_lang=("/delhi-se-manali-shimla-kitne-km/", "हिंदी में पढ़ें: दिल्ली से मनाली, शिमला कितने किलोमीटर"),
     updated="November 2026",
     wa="Hello Suzu Travels, please plan a Himachal route for me. Starting from: ___ , places: ___ , days: ___ , people: ___",
     cta2=("#delhi", "Distances from Delhi"),
