@@ -29,6 +29,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /uzbekistan-tour-packages/ | 16490 | `.hx` country page (29 Oct 2026) — `pages/gen_uzbekistan.py` (Tashkent–Samarkand–Bukhara–Khiva; 8-day itinerary grid = 4 columns) |
 | /kazakhstan-tour-packages/ | 16997 | `.hx` country page (31 Oct 2026) — `pages/gen_kazakhstan.py` (Almaty + Kyrgyzstan add-on; 6-day itinerary grid = 3 columns; first page with Wikimedia Commons photos — per-photo licence in credits) |
 | /armenia-tour-packages/ | 17234 | `.hx` country page (1 Nov 2026) — `pages/gen_armenia.py` (Yerevan–Garni/Geghard–Sevan/Dilijan–Khor Virap/Noravank–Tatev; 6-day itinerary grid = 3 columns; Wikimedia Commons photos) |
+| /hong-kong-tour-packages/ | 21727 | `.hx` country page (13 Nov 2026) — `pages/gen_hongkong.py` (Hong Kong + Macau; 6-day itinerary grid = 3 columns; Wikimedia Commons photos; extra phone hero padding for the 3-line title) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -61,3 +62,8 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 ## Notes (4 Nov 2026)
 - `.sx` galleries: `pages/gen_sx_gallery.py <country>` builds a one-line `<section id="<country>-in-photos" class="sx-sec sxg">` (own scoped CSS; credit `p` rule uses `.sx .sxg p.sxg-cr` to beat `.sx .sx-sec>p`). Insert it before the 2nd `<section` of the page and add a TOC link "Photos". Thumbs use WP sizes (`-1024x683` etc.) — check each size URL returns 200 before building.
 - Commons from the sandbox: File: pages escape `_` as `&#95;` in the licence markup; thumb requests often 429 — 960/1280 px worked when 330/500 did not.
+
+## Notes (13 Nov 2026)
+- Commons thumbnails from the sandbox returned 429 for every request this run; WordPress `wp_upload_media_from_url` fetched the 1920px thumbs fine, so photos were uploaded first and then viewed from the WP copy (dropped ones stay unused in the library: 21712 B&W crowded Ruins of St. Paul's, 21720 tram with an ad showing people).
+- `wp_create_preview_link` URL redirected headless Chromium to the homepage — use a local render (theme-less wrapper) before publishing, then test live.
+- Long page titles (3 lines on phones) need extra `.hx-hero` top padding on that page (see gen_hongkong.py).
