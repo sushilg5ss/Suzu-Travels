@@ -403,5 +403,14 @@
   "blurb": "Our private routes with upgraded hotels, car and guide — what luxury changes and what it doesn't",
   "added": "2026-11-13",
   "focus": "india luxury tour"
+ },
+ "kashmir-7-day-itinerary": {
+  "id": 22149,
+  "path": "/india-tours/kashmir-7-day-itinerary/",
+  "kind": "itinerary",
+  "label": "Kashmir in 7 days",
+  "blurb": "Srinagar, Gulmarg, Pahalgam and Sonamarg — with your government's travel advice first",
+  "added": "2026-11-14",
+  "focus": "kashmir itinerary"
  }
 }
