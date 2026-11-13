@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-13-homepage-catchup",
+ "agent": "Interactive (Sushil online)",
+ "summary": "Catch-up of night releases 11-09n..11-12n: season banner #nz-sb + 57 Explore links + nz-pause idle (push 403 since 9 Nov)",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "72794f4da2378f1ec00321fb3e15f2ac4bfa6da3f8a06c860b2504ae9e815ccc",
+   "base_sha256": "1062861f39d8e1b8772311eeecf9d00671125cef386ebcf18103eb3c37f74868",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1003978
+  }
+ ]
+}
