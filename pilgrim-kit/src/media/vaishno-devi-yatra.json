@@ -10,5 +10,30 @@
    "Nine months in the Ardhkuwari cave",
    "Yatra completes at Bhairon Nath"
   ]
+ },
+ "story": {
+  "title": "The legend of Vaishno Devi",
+  "beats": [
+   {
+    "arch": "hills",
+    "sky": "dawn",
+    "line": "Vaishnavi waits in the Trikuta hills"
+   },
+   {
+    "arch": "ghats",
+    "sky": "dusk",
+    "line": "An arrow brings forth the Banganga"
+   },
+   {
+    "arch": "devi-cave",
+    "sky": "night",
+    "line": "Nine months in the Ardhkuwari cave"
+   },
+   {
+    "arch": "devi",
+    "sky": "saffron",
+    "line": "Forgiven — the yatra ends at Bhairon"
+   }
+  ]
  }
 }
