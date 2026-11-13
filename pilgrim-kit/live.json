@@ -33,5 +33,6 @@
  "baijnath": {"id": 20310, "path": "/pilgrimage-tours/baijnath/", "kind": "temple", "label": "Baijnath Temple, Kangra", "blurb": "Shiva as Vaidyanath in a 1204 CE stone temple", "added": "2026-11-09", "shrine": "baijnath-temple-kangra"},
  "haridwar-kumbh-2027": {"id": 20860, "path": "/pilgrimage-tours/haridwar-kumbh-2027/", "kind": "yatra", "label": "Haridwar Kumbh 2027", "blurb": "10 snan days on the Ganga, 14 Jan – 20 Apr", "added": "2026-11-10"},
  "jakhu-temple": {"id": 21374, "path": "/pilgrimage-tours/jakhu-temple/", "kind": "temple", "label": "Jakhu Temple, Shimla", "blurb": "Hanuman on Shimla's highest hill, under deodars", "added": "2026-11-11"},
- "sabarimala": {"id": 21598, "path": "/pilgrimage-tours/sabarimala/", "kind": "temple", "label": "Sabarimala, Kerala", "blurb": "Ayyappa's forest hill shrine and its 41-day vow", "added": "2026-11-12"}
+ "sabarimala": {"id": 21598, "path": "/pilgrimage-tours/sabarimala/", "kind": "temple", "label": "Sabarimala, Kerala", "blurb": "Ayyappa's forest hill shrine and its 41-day vow", "added": "2026-11-12"},
+ "khatu-shyam": {"id": 21862, "path": "/pilgrimage-tours/khatu-shyam/", "kind": "temple", "label": "Khatu Shyam Ji, Rajasthan", "blurb": "Baba Shyam of Khatu, Sikar — Sheesh ke Daani", "added": "2026-11-13"}
 }
