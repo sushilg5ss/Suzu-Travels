@@ -1,0 +1,173 @@
+{
+ "path": "/india-tours/india-luxury-tour/",
+ "parent": 11411,
+ "kind": "product",
+ "title": "India Luxury Tour: Private Routes with Upgraded Hotels, Car and Guide",
+ "seo_title": "India Luxury Tour: Private Trips with Upgraded Hotels",
+ "seo_desc": "A private India luxury tour: start from a known route, upgrade hotels, car and guide. What changes, what doesn't, seasons, luxury trains, how to book.",
+ "focus": "india luxury tour",
+ "label": "India luxury tour",
+ "blurb": "Our private routes with upgraded hotels, car and guide — what luxury changes and what it doesn't",
+ "kicker": "Private India · Upgraded hotels, car and guide",
+ "tag": "Your route, upgraded.",
+ "sub": "A luxury trip to India is mostly about comfort, privacy and a known person to call. We take one of our published private routes — the Golden Triangle, Rajasthan, the Himalaya — and upgrade the hotels, the car and the guiding to the level you want. Here is what that changes, what it can't change, and how to start.",
+ "hero_alt": "The Taj Mahal reflected in its long pool, Amber Fort above Jaipur at sunset, the City Palace of Udaipur on Lake Pichola and the hills of Shimla",
+ "cta1": "See what an upgrade changes",
+ "talk": true,
+ "chips": [
+  ["Private only", "your own car, driver and plan"],
+  ["Upgraded hotels", "heritage or 5-star deluxe category"],
+  ["Known routes", "standard versions from US$299"],
+  ["20% deposit", "full refund within 48 h"]
+ ],
+ "q": "What is an India luxury tour, and what does it cost?",
+ "answer": "An <b>India luxury tour</b> is usually a private 10–14-day trip — the Golden Triangle plus Rajasthan or the Himalaya — with upgraded hotels (heritage or 5-star deluxe category), your own car and English-speaking driver, guided visits and an unhurried pace. Suzu Travels upgrades its published routes: standard versions from <b>US$299</b> to <b>US$1,099</b> per person, upgrades priced on request. A 20% deposit books your dates.",
+ "facts": [
+  ["5-Star Deluxe", "an official hotel category of India's Ministry of Tourism"],
+  ["Oct – Mar", "the comfortable months for Delhi, Agra and Rajasthan"],
+  ["204 km", "Delhi to Agra (127 miles); Jaipur is 232 km (144 mi) further"],
+  ["Private only", "no group departures, no shared coach"]
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Prices shown are for the standard version of each route, per person, indicative and confirmed on quote. Hotel and car upgrades are priced on request.",
+  "rows": [
+   ["Golden Triangle — 4 days (Delhi · Agra · Jaipur)", "from US$299", "Standard version, per person, two sharing. Upgraded hotels, car and guide: on request."],
+   ["Classic Golden Triangle — 6 days / 5 nights", "from US$449", "Standard version, per person, two sharing. Upgraded hotels, car and guide: on request."],
+   ["Golden Triangle + Rishikesh — 8 days", "from US$649", "Standard version, per person, two sharing. Upgraded hotels, car and guide: on request."],
+   ["Golden Temple & Himalayas — 10 days / 9 nights (Delhi · Amritsar · Dharamshala · Manali)", "from US$949", "Standard version, per person, two sharing. Upgraded hotels, car and guide: on request."],
+   ["Golden Triangle + Himalayas — 12 days / 11 nights (Delhi · Agra · Jaipur · Shimla · Manali)", "from US$1,099", "Standard version, per person, two sharing. Upgraded hotels, car and guide: on request."],
+   ["Upgraded version of any route, longer trips, Rajasthan, Kerala and the south", "on request", "Quoted in US dollars with a day-by-day plan and the hotel category for each night"]
+  ]
+ },
+ "sections": [
+  {
+   "id": "what-changes",
+   "nav": "What changes",
+   "h2": "What “luxury” changes on a private India trip",
+   "kind": "cards",
+   "lead": "Every Suzu trip is already private. An upgrade changes four things — you choose how far to take each one.",
+   "items": [
+    ["Hotels", "Heritage hotels (old palaces, forts and havelis converted to hotels) or hotels in the 5-star deluxe category, as classified by India's Ministry of Tourism, where available on your route. You see the category for every night on the quote."],
+    ["The car", "An upgraded car class for the whole trip, with the same English-speaking driver from the airport to the airport."],
+    ["Guiding", "A private licensed guide at the big monuments — the Taj Mahal, Amber Fort, the old city of Delhi — booked for your timing, not a group's."],
+    ["Pace", "Fewer hours on the road each day, more nights in the places you like, early starts where they matter (the Taj opens 30 minutes before sunrise) and free afternoons."]
+   ]
+  },
+  {
+   "id": "what-doesnt",
+   "nav": "What doesn't",
+   "h2": "What an upgrade can't change",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "Honest expectations make a better trip. Money buys comfort; it doesn't move the weather or the roads.",
+   "items": [
+    ["Roads and distances", "Delhi to Agra is 204 km (127 miles) and Agra to Jaipur 232 km (144 miles). Hill roads in Himachal are slower still. We plan days around driving time, not the map."],
+    ["Weather", "Rajasthan reaches 43–46 °C (109–115 °F) in May. Delhi's monsoon normally arrives around 27 June and withdraws around 25 September."],
+    ["Closures", "The Taj Mahal is closed on Fridays. Rohtang Pass above Manali is closed from late November to May; the Atal Tunnel (9.02 km / 5.6 miles) keeps the Lahaul side reachable."],
+    ["Travel advice", "Government advisories apply to every budget. Read your government's advice for India before you choose a route, and avoid driving at night or in fog."]
+   ]
+  },
+  {
+   "id": "routes",
+   "nav": "Routes",
+   "h2": "Routes to start from",
+   "kind": "table",
+   "lead": "Pick the route closest to what you want, then tell us what to upgrade and where to slow down.",
+   "head": ["Route", "Days", "Why travellers upgrade it"],
+   "rows": [
+    ["Golden Triangle (Delhi · Agra · Jaipur)", "4–6", "Heritage stays in Jaipur, a private guide at the Taj Mahal and Amber Fort"],
+    ["Golden Triangle + Rishikesh", "8", "A quiet riverside stay after the cities; the Ganga Aarti at Har Ki Pauri"],
+    ["Golden Temple & Himalayas", "10", "Amritsar, Dharamshala and Manali at an easier pace, with more nights in the hills"],
+    ["Golden Triangle + Himalayas", "12", "Cities first, then Shimla and Manali — the Kalka–Shimla toy train (seasonal) on the way up"],
+    ["Rajasthan (Jaipur · Jodhpur · Udaipur · Jaisalmer)", "on request", "Palace and fort cities, best November to March"],
+    ["Kerala and the south", "on request", "We arrange it with trusted local partners: backwaters, hills, Ayurveda"]
+   ],
+   "note": "Prices for upgraded versions depend on the hotel category, car, season and nights — ask for a quote; we reply with a day-by-day plan."
+  },
+  {
+   "id": "hotels",
+   "nav": "Hotels",
+   "h2": "What “heritage” and “5-star deluxe” mean in India",
+   "kind": "prose",
+   "paras": [
+    "India's Ministry of Tourism classifies operational hotels from 1-Star to 5-Star and 5-Star Deluxe, and approves hotel projects in a separate Heritage category. So when a quote says “5-star deluxe” or “heritage”, those are official labels, not marketing words — ask any company which category each hotel holds.",
+    "In practice, a heritage hotel in Rajasthan is often an old palace, fort or haveli converted into a hotel. Rooms differ a lot inside one property, so we tell you the category and the room type for each night before you pay a deposit. We don't publish hotel names on this page; you get them on your quote."
+   ]
+  },
+  {
+   "id": "trains",
+   "nav": "Luxury trains",
+   "h2": "Adding a luxury train",
+   "kind": "callout",
+   "text": "India's best-known luxury trains are IRCTC's Maharajas' Express (departures October to April) and Rajasthan's Palace on Wheels, which leaves Safdarjung station in New Delhi on Wednesdays for a week-long Rajasthan circuit. <b>We don't sell luxury-train tickets; they are booked on the official sites or authorised IRCTC agents. We can plan your days before and after.</b>",
+   "after": ["Our <a href=\"/india-tours/luxury-trains-india/\">luxury trains guide</a> compares the trains, routes and seasons."]
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go",
+   "kind": "table",
+   "head": ["Region", "Best months", "Why"],
+   "rows": [
+    ["Delhi, Agra, Jaipur", "October – March", "The comfortable, dry months for sightseeing"],
+    ["Jodhpur, Udaipur, Jaisalmer", "November – March", "May highs reach 43–46 °C (109–115 °F)"],
+    ["Shimla and Manali", "March – June, September – November", "Clear mountain days; Rohtang Pass closed late November to May"],
+    ["Monsoon (Delhi)", "late June – late September", "Green but wet; plan for rain"]
+   ]
+  },
+  {
+   "id": "how-to-book",
+   "nav": "How to book",
+   "h2": "How booking works",
+   "kind": "steps",
+   "items": [
+    ["Tell us the route and the level", "Dates, how many of you, the route you like, and which upgrades matter most — hotels, car, guide, pace."],
+    ["Get a written quote", "Day-by-day plan in US dollars, with the hotel category and room type for every night."],
+    ["Lock it with a 20% deposit", "Card via Razorpay (international cards) or PayPal. Full refund if you cancel within 48 hours."],
+    ["Before the trip", "Your driver's name, photo and car number are shared with you, plus our office number in Himachal."],
+    ["On the road", "Same car and driver throughout; adjust the plan with us as you go."]
+   ]
+  },
+  {
+   "id": "why-us",
+   "nav": "Who we are",
+   "h2": "Who you are booking with",
+   "kind": "callout",
+   "style": "dark",
+   "text": "We are a small travel company based in Himachal Pradesh, founded in 2019. We plan every trip ourselves and answer the phone ourselves. <b>Your driver's name, photo and car number are shared with you before the trip.</b>",
+   "after": ["HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022 — see <a href=\"/certificates/\">our certificates</a>.", "Comparing companies? Our guide on <a href=\"/india-tours/how-to-choose-a-travel-agency-in-india/\">how to choose a travel agency in India</a> lists the checks to make — with us or anyone else."]
+  }
+ ],
+ "faqs": [
+  ["What makes an India tour “luxury” with Suzu Travels?", "Four things you choose: the hotel category (heritage or 5-star deluxe, where available), the car, a private licensed guide at the main monuments, and a slower pace with more nights. The trip is private either way — your own car, driver and plan."],
+  ["How much does a luxury trip to India cost?", "Our standard routes start from US$299 (Golden Triangle, 4 days) to US$1,099 (Golden Triangle + Himalayas, 12 days) per person. Upgraded hotels, car and guide are priced on request, because they depend on the category, season and nights. You get a US-dollar quote with a day-by-day plan."],
+  ["Is it a private tour or a small group?", "Private only. We don't run group departures: it is you, your own car and driver, and a plan made for your dates."],
+  ["When is the best time for a luxury India trip?", "October to March for Delhi, Agra and Rajasthan (November to March for Jodhpur, Udaipur and Jaisalmer). For Shimla and Manali, March to June and September to November."],
+  ["Can I add a luxury train like the Maharajas' Express?", "Yes, as part of your plan — but we don't sell luxury-train tickets. They are booked on the official sites or through authorised IRCTC agents. We plan your days before and after the train."],
+  ["Can I add Kerala or South India?", "Yes. We arrange Kerala and the south with trusted local partners and quote it together with the rest of your trip."],
+  ["Is it safe, and do I need a visa?", "Read your government's travel advice before you choose a route — the UK FCDO advises against all travel to Jammu and Kashmir (still current on 11 Nov 2026), and your travel insurance may not cover you against that advice. Apply for a visa only at the official site indianvisaonline.gov.in — beware of look-alike sites. We are not a visa agency. For health, consult your doctor; see CDC or NHS Fit for Travel."],
+  ["How do I pay from abroad?", "A 20% deposit locks your dates and price, with a full refund if you cancel within 48 hours. Pay by card via Razorpay (international cards accepted) or PayPal; the balance is due before the trip."]
+ ],
+ "sources": [
+  ["Ministry of Tourism — guidelines for hotel project approval and star classification", "https://nidhi.tourism.gov.in/uploads/gallery/1667476361.pdf"],
+  ["Taj Mahal — official site (timings, Friday closure)", "https://www.tajmahal.gov.in/"],
+  ["The Maharajas' Express (IRCTC)", "https://www.the-maharajas.com/"],
+  ["Rajasthan Tourism — Palace on Wheels", "https://tourism.rajasthan.gov.in/"],
+  ["UK FCDO — India regional risks", "https://www.gov.uk/foreign-travel-advice/india/regional-risks"],
+  ["US State Department — India travel advisory", "https://travel.state.gov/"],
+  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"]
+ ],
+ "verified": "13 Nov 2026",
+ "cta": {
+  "h2": "Tell us the route and the level — we'll send a plan and a quote",
+  "text": "Your dates, how many of you, the route you like and what to upgrade. You get a day-by-day plan with the hotel category for every night and a US-dollar quote from our office in Himachal.",
+  "wa": "Hello Suzu Travels, I'm planning a private luxury trip to India. Dates: ___ , travellers: ___ , country: ___ , route: ___"
+ },
+ "service": {
+  "name": "Private India luxury tour — upgraded hotels, car and guide",
+  "type": "Private tour package by car with driver",
+  "area": "North India: Delhi, Agra, Jaipur, Rajasthan, Rishikesh, Amritsar, Himachal Pradesh; Kerala and South India arranged"
+ },
+ "links": ["north-india-tour", "golden-triangle-tour", "luxury-trains-india", "private-driver-india", "rajasthan-tour", "himachal-10-day-itinerary", "india-trip-cost", "kerala-tour"]
+}

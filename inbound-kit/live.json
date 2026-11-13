@@ -394,5 +394,14 @@
   "blurb": "Sun in Kerala, Goa and Rajasthan, snow in Himachal, Republic Day and January 2027 festival dates",
   "added": "2026-11-13",
   "focus": "india in january"
+ },
+ "india-luxury-tour": {
+  "id": 21701,
+  "path": "/india-tours/india-luxury-tour/",
+  "kind": "product",
+  "label": "India luxury tour",
+  "blurb": "Our private routes with upgraded hotels, car and guide — what luxury changes and what it doesn't",
+  "added": "2026-11-13",
+  "focus": "india luxury tour"
  }
 }
