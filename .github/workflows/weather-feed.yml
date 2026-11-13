@@ -1,0 +1,35 @@
+name: Weather feed (hourly)
+
+# Refreshes public_html/suzu-weather-feed.json (MET Norway, CC BY 4.0) every hour.
+# Scheduled workflows only run from the default branch, so this file lives here and
+# runs tools/weather_feed.py from the deploy-static branch.
+# Approved by Sushil on 13 Nov 2026 ("weather workflow OK").
+on:
+  schedule:
+    - cron: "41 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weather-feed
+  cancel-in-progress: true
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: deploy-static
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build and upload weather feed
+        env:
+          HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN }}
+          HOSTINGER_USERNAME: u263844788
+          HOSTINGER_DOMAIN: suzutravels.com
+        run: python3 tools/weather_feed.py
