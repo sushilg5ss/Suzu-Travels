@@ -1,0 +1,140 @@
+{
+ "_note": "Mentok Kangri I (6,250 m; sources 6,250-6,270) - Tso Moriri, Ladakh. Altitudes from research/pages/mentok-kangri.md route table; ladder heights from data/peaks.json. Generic photos only (no Mentok photo exists). Info page; Stok shown as closed.",
+ "hero": {
+  "kicker": "MENTOK KANGRI · LADAKH",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 200
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 200
+    },
+    "to": {
+     "y": 800
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 250
+    },
+    "to": {
+     "y": 1100
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    3500,
+    "LEH · ACCLIMATISE"
+   ],
+   [
+    4527,
+    "KORZOK · ROAD-HEAD"
+   ],
+   [
+    5300,
+    "BASE CAMP"
+   ],
+   [
+    6250,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Mentok Kangri I, camp by camp",
+  "sub": "Korzok route, Tso Moriri · days vary",
+  "camps": [
+   {
+    "name": "Leh",
+    "m": 3500,
+    "day": "Acclimatise · Day 1–3",
+    "dy": 162
+   },
+   {
+    "name": "Korzok",
+    "m": 4527,
+    "day": "Road-head · Day 3",
+    "dx": 80
+   },
+   {
+    "name": "Base camp",
+    "m": 5300,
+    "day": "Day 5"
+   },
+   {
+    "name": "High camp",
+    "m": 5450,
+    "day": "Optional"
+   },
+   {
+    "name": "Mentok I",
+    "m": 6250,
+    "day": "Summit · Day 7"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "LADAKH & HIMACHAL",
+  "title": "Mentok Kangri and nearby six-thousanders",
+  "peaks": [
+   "friendship-peak",
+   "mount-yunam",
+   "stok-kangri",
+   "mentok-kangri",
+   "lungser-kangri"
+  ],
+  "subs": {
+   "friendship-peak": "Himachal",
+   "mount-yunam": "Himachal",
+   "stok-kangri": "Closed since 2020",
+   "mentok-kangri": "Above Tso Moriri",
+   "lungser-kangri": "First climbed 1995"
+  },
+  "end": "Mentok I 6,250 m · Mentok II about 6,210 m"
+ }
+}

@@ -1,0 +1,156 @@
+{
+ "_note": "Mamostong Kangri (7,516 m) - Rimo Muztagh, East Karakoram. 1984 first-ascent route altitudes from research/pages/mamostong-kangri.md (AAJ 1985 feet converted; HJ 41; C3 ~6,500 is the 2010 figure, HJ 67). Ladder heights from data/peaks.json. Generic photos only.",
+ "hero": {
+  "kicker": "MAMOSTONG KANGRI · LADAKH",
+  "scenes": [
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    4600,
+    "BASE CAMP"
+   ],
+   [
+    5885,
+    "MAMOSTONG COL"
+   ],
+   [
+    6100,
+    "CAMP 2"
+   ],
+   [
+    7200,
+    "FIXED ROPES END"
+   ],
+   [
+    7516,
+    "SUMMIT · 1984"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Mamostong Kangri, camp by camp",
+  "sub": "1984 first-ascent route (Mamostong glacier, east/northeast ridge)",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 4600,
+    "day": "15 Aug 1984"
+   },
+   {
+    "name": "Advance base",
+    "m": 4900,
+    "day": "18 Aug"
+   },
+   {
+    "name": "Mamostong Col",
+    "m": 5885,
+    "day": ""
+   },
+   {
+    "name": "Camp 2",
+    "m": 6100,
+    "day": "Thangman side"
+   },
+   {
+    "name": "Camp 3",
+    "m": 6500,
+    "day": "About (2010)"
+   },
+   {
+    "name": "Mamostong Kangri",
+    "m": 7516,
+    "day": "Summit · 13 Sep 1984"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "THE EAST KARAKORAM'S GIANTS",
+  "title": "Mamostong and its high neighbours",
+  "peaks": [
+   "rimo-iii",
+   "rimo-i",
+   "mamostong-kangri",
+   "saser-kangri-ii-east",
+   "saser-kangri-i",
+   "saltoro-kangri"
+  ],
+  "subs": {
+   "rimo-iii": "First climbed 1985",
+   "rimo-i": "First climbed 1988",
+   "mamostong-kangri": "First climbed 1984",
+   "saser-kangri-ii-east": "First climbed 2011",
+   "saser-kangri-i": "First climbed 1973",
+   "saltoro-kangri": "First climbed 1962"
+  },
+  "end": "Mamostong 7,516 m · highest of the Rimo Muztagh"
+ }
+}
