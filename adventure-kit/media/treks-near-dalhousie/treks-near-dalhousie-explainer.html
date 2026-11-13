@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 70% 20%, #16365a 0%, #0b1f33 65%); color: #fff; }
+      .kicker { position: absolute; left: 110px; top: 74px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.16em; line-height: 1.1; }
+      .title { position: absolute; left: 110px; top: 122px; font-weight: 800; font-size: 80px; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; }
+      .nts { position: absolute; left: 110px; top: 226px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.6); }
+      svg.map { position: absolute; left: 70px; top: 270px; width: 1150px; height: 650px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      
+      .side { position: absolute; left: 1250px; top: 280px; width: 600px; }
+      .card { position: relative; height: 128px; margin-bottom: 18px; padding: 18px 26px; border-radius: 22px; background: rgba(255,255,255,0.08); opacity: 0.25; }
+      .card h3 { font-weight: 800; font-size: 40px; white-space: nowrap; }
+      .card p { font-weight: 500; font-size: 27px; color: rgba(255,255,255,0.85); margin-top: 6px; white-space: nowrap; }
+      .card .dots { position: absolute; right: 26px; top: 26px; display: flex; gap: 8px; }
+      .card .dots i { width: 22px; height: 22px; border-radius: 50%; background: rgba(255,255,255,0.2); display: inline-block; }
+      .card .dots i.on { background: #d4a24c; }
+      .card .dl { position: absolute; right: 26px; top: 62px; font-weight: 800; font-size: 22px; color: #d4a24c; letter-spacing: 0.06em; }
+      .steps { position: absolute; left: 110px; top: 960px; display: flex; gap: 18px; }
+      .step { display: flex; align-items: center; gap: 14px; height: 76px; padding: 0 26px 0 12px; border-radius: 38px; background: rgba(255,255,255,0.1); font-weight: 800; font-size: 29px; color: rgba(255,255,255,0.55); white-space: nowrap; }
+      .step i { font-style: normal; width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,0.18); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+      .end { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; background: #0b1f33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; opacity: 0; }
+      .etitle { font-size: 64px; font-weight: 800; }
+      .mrow { display: flex; gap: 10px; }
+      .m { width: 118px; height: 96px; border-radius: 14px; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.6); font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
+      .m.on { background: #d4a24c; color: #0b1f33; }
+      .m.fair { background: #fff; color: #0b1f33; box-shadow: 0 0 0 6px #d4a24c; }
+      .legend { display: flex; gap: 40px; font-size: 32px; font-weight: 800; }
+      .legend span { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+      .legend i { width: 30px; height: 30px; border-radius: 8px; display: inline-block; }
+      .endnote { font-size: 36px; font-weight: 500; color: rgba(255,255,255,0.9); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker">TREKS NEAR DALHOUSIE</div>
+        <div class="title">Four day hikes, two roads</div>
+        <div class="nts">Schematic map, not to scale</div>
+        <svg class="map" viewBox="0 0 1240 700">
+          <path d="M 520 470 C 420 460 320 420 250 360 C 190 310 150 240 130 170" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="20" stroke-linecap="round" />
+          <path d="M 520 470 C 620 470 700 430 780 380 C 860 330 920 260 980 180 M 780 380 C 880 420 980 460 1110 480" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="20" stroke-linecap="round" />
+          <path id="a1" d="M 520 470 C 420 460 320 420 250 360 C 190 310 150 240 130 170" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+          <path id="a2" d="M 520 470 C 620 470 700 430 780 380 C 860 330 920 260 980 180" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+          <path id="a3" d="M 780 380 C 880 420 980 460 1110 480" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+          <path id="a4" d="M 1110 480 C 1130 540 1120 590 1080 630" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12" />
+          <g id="town"><circle cx="520" cy="470" r="30" fill="#fff" /><circle cx="520" cy="470" r="14" fill="#0b1f33" /><text x="520" y="540" font-size="38" text-anchor="middle">Dalhousie</text></g>
+          <g id="p1" opacity="0"><circle cx="250" cy="360" r="13" fill="#fff" /><text x="226" y="398" font-size="28" text-anchor="end">Panchpula</text></g>
+          <g id="p2" opacity="0"><path d="M 80 180 L 130 120 L 180 180 Z" fill="#7d8f5a" stroke="#fff" stroke-width="4" /><text x="130" y="96" font-size="32" text-anchor="middle">Ganji Pahari</text><text x="112" y="230" font-size="24" text-anchor="end" style="fill:rgba(255,255,255,0.8)">the “bald hill”</text></g>
+          <g id="p3" opacity="0"><circle cx="780" cy="380" r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" /><text x="760" y="344" font-size="28" text-anchor="end">Lakkar Mandi</text></g>
+          <g id="p4" opacity="0"><path d="M 930 190 L 980 120 L 1030 190 Z" fill="#e8eef4" stroke="#fff" stroke-width="4" /><text x="980" y="96" font-size="32" text-anchor="middle">Dainkund Peak</text></g>
+          <g id="p5" opacity="0"><circle cx="1110" cy="480" r="14" fill="#fff" /><text x="1110" y="452" font-size="30" text-anchor="middle">Kalatop</text><text x="950" y="510" font-size="24" text-anchor="middle" style="fill:rgba(255,255,255,0.85)">3 km forest walk</text></g>
+          <g id="p6" opacity="0"><circle cx="1080" cy="630" r="14" fill="#fff" /><text x="1060" y="680" font-size="30" text-anchor="middle">Khajjiar</text></g>
+          <text x="380" y="480" font-size="24" text-anchor="middle" style="fill:rgba(255,255,255,0.85)">~5 km</text>
+          <g id="flake" opacity="0" transform="translate(400,190)">
+            <circle r="58" fill="rgba(255,255,255,0.12)" stroke="#d4a24c" stroke-width="4" />
+            <g id="fl2"><path d="M 0 -36 L 0 36 M -31 -18 L 31 18 M -31 18 L 31 -18" stroke="#fff" stroke-width="6" stroke-linecap="round" /></g>
+            <text y="98" font-size="28" text-anchor="middle">Snow usually Dec–Feb</text>
+          </g>
+        </svg>
+        <div class="side">
+          <div class="card" id="c1"><h3>Ganji Pahari</h3><p>Tree-less hilltop · half day</p><div class="dots"><i class="on"></i><i></i><i></i></div><div class="dl">EASY</div></div>
+          <div class="card" id="c2"><h3>Dainkund Peak</h3><p>Highest point near Dalhousie</p><div class="dots"><i class="on"></i><i class="on"></i><i></i></div><div class="dl">MODERATE</div></div>
+          <div class="card" id="c3"><h3>Kalatop walk</h3><p>3 km level forest road</p><div class="dots"><i class="on"></i><i></i><i></i></div><div class="dl">EASY</div></div>
+          <div class="card" id="c4"><h3>Kalatop → Khajjiar</h3><p>Full-day trail with a guide</p><div class="dots"><i class="on"></i><i class="on"></i><i></i></div><div class="dl">MODERATE</div></div>
+        </div>
+        <div class="steps">
+          <div class="step" id="s1"><i>1</i>Breakfast at your hotel</div>
+          <div class="step" id="s2"><i>2</i>Cab to the trailhead</div>
+          <div class="step" id="s3"><i>3</i>Hike, back before dark</div>
+          <div class="step" id="s4"><i>4</i>Evening in Khajjiar</div>
+        </div>
+      </div>
+      <div class="end clip" id="end" data-start="9" data-duration="3" data-track-index="1">
+        <div class="etitle">Dalhousie hikes through the year</div>
+        <div class="mrow"><div class="m fair">Jan</div><div class="m fair">Feb</div><div class="m on">Mar</div><div class="m on">Apr</div><div class="m on">May</div><div class="m on">Jun</div><div class="m">Jul</div><div class="m">Aug</div><div class="m">Sep</div><div class="m on">Oct</div><div class="m on">Nov</div><div class="m fair">Dec</div></div>
+        <div class="legend"><span><i style="background:#fff"></i>Snow walks (check roads)</span><span><i style="background:#d4a24c"></i>Clear hiking days</span><span><i style="background:rgba(255,255,255,0.18)"></i>Monsoon: short town walks</span></div>
+        <div class="endnote">Dalhousie hotel + cab + guided hikes in one plan · Price: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      ["#a1", "#a2", "#a3", "#a4"].forEach((id) => {
+        const p = document.querySelector(id); const L = p.getTotalLength();
+        if (id === "#a4") { tl.fromTo(p, { opacity: 0 }, { opacity: 1, duration: 0.5 }, 7.0); return; }
+        p.style.strokeDasharray = L; p.style.strokeDashoffset = L;
+        const t0 = id === "#a1" ? 0.6 : (id === "#a2" ? 3.0 : 5.0);
+        tl.fromTo(p, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 1.6, ease: "power1.inOut" }, t0);
+      });
+      tl.from("#town", { scale: 0.6, opacity: 0, transformOrigin: "520px 470px", duration: 0.5, ease: "back.out(2)" }, 0.1);
+      [["#p1", 1.3], ["#p2", 2.1], ["#p3", 3.8], ["#p4", 4.5], ["#p5", 6.4], ["#p6", 7.3]].forEach(([id, t]) => tl.to(id, { opacity: 1, duration: 0.4 }, t));
+      [["#c1", 2.1], ["#c2", 4.5], ["#c3", 6.4], ["#c4", 7.3]].forEach(([id, t]) => tl.to(id, { opacity: 1, backgroundColor: "rgba(212,162,76,0.18)", duration: 0.4 }, t));
+      tl.to("#flake", { opacity: 1, duration: 0.5 }, 7.8);
+      tl.fromTo("#fl2", { rotation: -20 }, { rotation: 20, duration: 1.2, ease: "sine.inOut" }, 7.8);
+      [["#s2", 0.6], ["#s3", 2.1], ["#s4", 7.3]].forEach(([id, t]) => {
+        tl.to(id, { backgroundColor: "#d4a24c", color: "#0b1f33", duration: 0.35, ease: "power1.out" }, t);
+        tl.to(id + " i", { backgroundColor: "#0b1f33", duration: 0.35 }, t);
+      });
+      tl.set("#s1", { backgroundColor: "#d4a24c", color: "#0b1f33" }, 0.2); tl.set("#s1 i", { backgroundColor: "#0b1f33" }, 0.2);
+      tl.to("#main", { opacity: 0, duration: 0.5 }, 9);
+      tl.to("#end", { opacity: 1, duration: 0.5, ease: "power1.out" }, 9);
+      tl.from(".end .m", { y: 30, opacity: 0, duration: 0.35, stagger: 0.05, ease: "power2.out" }, 9.1);
+      tl.from(".legend span", { y: 20, opacity: 0, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 9.8);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
