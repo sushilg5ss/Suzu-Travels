@@ -73,6 +73,8 @@
    "nav": "Routes",
    "h2": "Routes to start from",
    "kind": "table",
+   "video": "cost",
+   "video_caption": "The cost ladder: five standard routes from US$299 (4 days) to US$1,099 (12 days) per person, two sharing. Upgraded hotels, car and guide are priced on request, in US dollars, with the hotel category for each night.",
    "lead": "Pick the route closest to what you want, then tell us what to upgrade and where to slow down.",
    "head": ["Route", "Days", "Why travellers upgrade it"],
    "rows": [
