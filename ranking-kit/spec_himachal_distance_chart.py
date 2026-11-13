@@ -89,7 +89,7 @@ SPEC = dict(
             ["Kullu", "~40 km", "1.5 h", "All year"],
             ["Kasol", "~75 km", "2.5–3 h", "All year"],
             ["Jibhi", "~100 km", "3–3.5 h", "All year"],
-            ["Kaza (via Kunzum)", "~200 km", "7–9 h", "About June – October only"],
+            ["Kaza (via Kunzum)", "~200 km", "7–9 h", "About late May/June – October only"],
             ["Leh", "~430 km", "2 days", "About June – October only"],
         ]), after=[
             "More: <a href=\"/atal-tunnel-kahan-hai/\">Atal Tunnel guide (Hindi)</a> · <a href=\"/cabs/manali-to-leh-taxi/\">Manali–Leh taxi</a> · <a href=\"/jibhi/\">Jibhi</a> · <a href=\"/shoja/\">Shoja</a>.",
@@ -109,7 +109,7 @@ SPEC = dict(
     gallery=dict(h2="On the road in Himachal", lead="Tunnels, passes, snow towns and temples along the main routes — real photographs, each credited to its photographer."),
     spots=dict(kicker="Winter roads", h2="Passes and roads that close in winter", lead="Opening and closing dates change every year with the snow; check before you travel.", items=[
         ("Rohtang Pass", "~3,980 m · Manali", "Usually closed from about November to May/June; Solang and the Atal Tunnel stay open on most days."),
-        ("Kunzum Pass", "~4,590 m · Spiti", "Usually closed from about November to June; in winter reach Kaza via Shimla and Kinnaur."),
+        ("Kunzum Pass", "~4,590 m · Spiti", "Usually closed from about November to late May or June; in winter reach Kaza via Shimla and Kinnaur."),
         ("Jalori Pass", "~3,120 m · Banjar", "Often closed after snowfall from about late December to March. <a href=\"/jalori-pass/\">Jalori Pass →</a>"),
         ("Atal Tunnel", "Manali – Lahaul", "Open most days of the year; closed for a few hours or days after heavy snow."),
         ("Narkanda / Kufri", "Shimla – Rampur road", "Can close for a day or two after heavy snowfall; usually cleared quickly."),
