@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Since the Atal Tunnel opened, Sissu has become Manali's winter snow trip — a wide white valley, a frozen lake and a frozen waterfall about an hour from the hotel, even when Rohtang is closed.",
     chips=[("~40 km", "from Manali"), ("~13 km", "beyond the Atal Tunnel"), ("~3,100 m", "Sissu"), ("Dec–Mar", "snow season")],
     flakes=True,
+    alt_lang=("/sissu-kaise-jaye/", "हिंदी में पढ़ें: सिस्सू कैसे जाएँ"),
     updated="November 2026",
     wa="Hello Suzu Travels, I want a Manali trip with snow at Sissu. Dates: ___ , people: ___ , starting from: ___",
     cta2=("#weather", "Sissu and Manali weather"),
