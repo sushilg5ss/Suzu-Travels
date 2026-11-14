@@ -1,0 +1,8 @@
+# trekking-in-himachal media (Visual Studio morning, 14 Nov 2026 IST)
+
+HyperFrames 0.8.85. Compositions: trekking-in-himachal-{hero,explainer,reel}.html (assets/ not committed: Plus Jakarta Sans 800/500 woff2 + photos below, all from the Suzu WP library).
+
+- hero.mp4 / hero.webm / poster.webp — 12 s seamless loop (seam diff 0.6/255): misty pine-forest trail (WP 17711) → canvas tents on a meadow (17351) → roped line on a snow ridge (16597, snowfall overlay) → walkers on the Triund ridge (19194, real place) → back. Right half: "Trekking in / Himachal / forest day walks to 5,000 m passes", schematic gold trail lighting region by region (Chamba → Kangra → Mandi → Kullu → Parvati → Shimla / Kinnaur·Spiti; not to scale), counter 0 → "25+ treks" (28 live pages); facts: Forest day walks from ~2,000 m / Meadow camps on 2–5 day treks / High passes up to 5,319 m / Best Mar–Jun & Sep–Nov.
+- explainer.mp4 / explainer.webm / explainer-poster.webp — 12 s "Forest walks to 5,319 m passes": bars to scale (heights from live Suzu pages) Jogini Waterfall ~2,300 m, Triund ~2,850 m, Kareri Lake 2,934 m, Chandrakhani 3,660 m, Hampta Pass ~4,270 m, Pin Parvati 5,319 m; month strip Low / Mid / High-pass windows from the brief's season table; "Price: Get Quote".
+- reel-web.mp4 / reel-web.webm / reel-web-poster.webp — 15 s 9:16: trekkers below a snow peak (14180) → tents in a valley meadow (13541) → roped line on snow (16597) → Triund ridge (19194); end card suzutravels.com/adventure/trekking-in-himachal + HP Tourism reg. no.
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
