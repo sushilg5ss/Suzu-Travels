@@ -1,4 +1,4 @@
-# cd-guides (TRUST_BACKLOG row 30) — built 2026-11-13 18:55 IST, placement pending
+# cd-guides (TRUST_BACKLOG row 30) — built 2026-11-13 18:55 IST, live 2026-11-14
 
 **What:** "Plan the rest of your trip — Free guides for your Char Dham yatra" for /char-dham-yatra-for-nri/ (11413):
 5 pilgrim-journey link cards in two groups (More of sacred India · Add to your yatra) + the same dark trust line
@@ -16,3 +16,5 @@ run. Placement + live verify (dry_run expected_count 1 after `<!--/szt:itinerary
 + curl ×2) is the first step for the next Trust run once the WP connector is back.
 **Undo (once placed):** wp_replace_in_page 11413, replace the marked block with ''.
 **Rebuild:** `python3 build.py` → widget.html (asserts: no US$, ₹, verified, 24/7, DMC, script; 1 marker; reg line present).
+
+**LIVE 2026-11-14 18:46 IST:** wp_replace_in_page 11413 after `<!--/szt:itinerary-pdf-->` (dry run 1 → replaced 1, verified; 145,600→149,822). Live checks: curl `?v=` + plain → marker ×2, 1 .szw, 1 H1, no noindex; Playwright 1440 + 390 px → block visible, 7 links, scrollWidth = clientWidth, 0 console errors, 1 H1; 7 link targets 200. No undo token returned — undo = replace the marked block with ''.
