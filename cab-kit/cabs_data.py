@@ -167,6 +167,8 @@ PLACES = {
     "Gauchar": (30.28, 79.16), "Nandprayag": (30.33, 79.33), "Pipalkoti": (30.43, 79.43), "Govindghat": (30.62, 79.56),
     # 13 Nov 2026 · Kharar–Ludhiana road (NH5) + Jalandhar–Beas (NH44) waypoints (OSM town centres)
     "Morinda": (30.79, 76.50), "Samrala": (30.84, 76.19), "Kartarpur": (31.44, 75.50),
+    # 14 Nov 2026 · Chandigarh–Kasauli (NH5 + Dharampur–Garkhal road) waypoints (OSM town centres)
+    "Pinjore": (30.80, 76.92), "Garkhal": (30.89, 76.98),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
@@ -219,6 +221,7 @@ ROUTES = [
     dict(slug="haridwar-to-kedarnath-taxi", a="Haridwar", b="Kedarnath", km=235, t="7–9 hrs", f=1.1),   # 11 Nov 2026: page live; car to Sonprayag (road-head) via Rishikesh–Devprayag–Rudraprayag (NH7) + Guptkashi (NH107); same km/f as haridwar-taxi-service + char-dham-yatra-taxi Sonprayag rows (HurryUp 226 km, Triveni 230, Rajputana 232, Chiku 235, chardhamtour 247)
     dict(slug="haridwar-to-badrinath-taxi", a="Haridwar", b="Badrinath", km=320, t="9–11 hrs", f=1.1),   # 12 Nov 2026: page live; NH7 via Rishikesh–Devprayag–Rudraprayag–Karnaprayag–Chamoli–Jyotirmath; same km/f as haridwar-taxi-service + char-dham-yatra-taxi Badrinath rows (CabBazar 312 km, Rajputana 313, Chiku 315, Bizare 316, Triveni ~320)
     dict(slug="chandigarh-to-amritsar-taxi", a="Chandigarh", b="Amritsar", km=230, t="4–5 hrs", f=0.85),   # 13 Nov 2026: page live; Kharar–Morinda–Samrala–Ludhiana (NH5), then NH44 via Phagwara–Jalandhar–Beas (Triveni upd. 14 Sep 2026 230 km, CabBazar 230, TaxiBazaar ~230, Revv 225–240, Savaari 228 via NH344A); same km/f as chandigarh-taxi-service + amritsar-taxi-service + chandigarh-airport-taxi rows
+    dict(slug="chandigarh-to-kasauli-taxi", a="Chandigarh", b="Kasauli", km=60, t="1.5–2 hrs", f=1.1),   # 14 Nov 2026: page live; NH5 via Panchkula–Pinjore–Parwanoo–Dharampur, then Dharampur–Garkhal–Kasauli road (Triveni upd. 14 Sep 2026 57–65 km, HurryUp 57–60, EMT 58, Savaari 57–60 via NH5 / ~72 via Kurali); same km/f as chandigarh-taxi-service Kasauli row; all classes at their minimum fare
     dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
