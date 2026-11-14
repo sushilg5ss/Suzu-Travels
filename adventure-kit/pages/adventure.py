@@ -257,6 +257,12 @@ def act_card(cat, name, where, season, line, badge, place):
             f'<div class="go"><a class="q" href="{wa(name, place)}" target="_blank" rel="noopener">Get Quote →</a></div></div></article>')
 
 
+# Sharper category photos for hi-DPI screens (Visual Studio, 14 Nov 2026)
+SRCSET = {
+    'treks': ' srcset="https://suzutravels.com/wp-content/uploads/2026/10/treks-cathead-prashar-lake-768x480-1.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/treks-cathead-prashar-lake-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 560px"',
+}
+
+
 def build():
     n_acts = sum(len(c[7]) for c in CATS)
     wa_hub = wa('adventure activities', 'Himachal')
@@ -299,7 +305,7 @@ def build():
         after = RAFTING_POINT_EXPLAINER if cid == 'water' else (KASOL_CAMPS_EXPLAINER if cid == 'treks' else '')
         secs.append(
             f'<section class="sza-sec{alt_cls}" id="{cid}"><div class="sza-cathead">'
-            f'<img src="{(U + "/wp-content/uploads/2026/10/" + img[6:]) if img.startswith("../10/") else MEDIA + img}" alt="{e(alt)}" loading="lazy" decoding="async" width="768" height="480">'
+            f'<img src="{(U + "/wp-content/uploads/2026/10/" + img[6:]) if img.startswith("../10/") else MEDIA + img}" alt="{e(alt)}"{SRCSET.get(cid, "")} loading="lazy" decoding="async" width="768" height="480">'
             f'<div><span class="sza-kicker">{e(kicker)}</span><h2>{e(h2)}</h2><p class="sza-lead">{e(lead)}</p>'
             f'<span class="sza-count">{icon(cid, "")}{len(acts)} {word} · price on request</span></div></div>'
             f'{extra}<div class="sza-grid sza-acts">{cards}</div>{after}</section>')
