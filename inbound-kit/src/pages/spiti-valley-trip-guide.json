@@ -1,0 +1,168 @@
+{
+ "path": "/india-tours/spiti-valley-trip-guide/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Spiti Valley Trip Guide for Foreign Travellers: Routes, Permits, Seasons",
+ "seo_title": "Spiti Valley Trip: A Guide for Foreign Travellers",
+ "seo_desc": "Plan a Spiti Valley trip from abroad: the Shimla and Manali routes, the permit foreigners need, best months, altitude, monasteries and how to book a car.",
+ "focus": "spiti valley trip",
+ "label": "Spiti Valley trip guide",
+ "blurb": "Routes, the foreigners' permit, seasons and altitude for Himachal's high desert",
+ "kicker": "Guide · Spiti Valley",
+ "tag": "Himachal's high desert, by car with a driver.",
+ "sub": "Spiti is a high, dry mountain valley in Himachal Pradesh, close to the Tibetan border: thousand-year-old monasteries, villages above 4,000 m and lakes like Chandratal. Here is how a visitor from abroad actually gets there — the two roads and when each is open, the permit foreigners need, the altitudes in metres and feet, and how many days to allow. Written by a travel company based in Himachal.",
+ "hero_alt": "Key monastery stacked on a snowy hill in Spiti, an aerial view of a Spiti town in a red-brown gorge, the still water of Chandratal lake reflecting bare mountains, the high Spiti valley under big clouds, and a private SUV on a gravel mountain road",
+ "cta1": "Plan the route",
+ "chips": [
+  ["Jun–Oct", "full circuit open"],
+  ["Permit", "needed by foreigners"],
+  ["3,000–4,600 m", "10,000–15,000 ft"],
+  ["Checked", "14 Nov 2026"]
+ ],
+ "q": "How do you plan a Spiti Valley trip as a foreign visitor?",
+ "answer": "Allow about 9–10 days from Shimla or Manali by private car with a driver. The Shimla–Kinnaur road reaches Kaza almost all year; the Manali side over Kunzum Pass usually opens only from mid-June. <b>Foreigners need a Protected Area Permit</b> for parts of the Kinnaur–Spiti route. Best months are June to October. Send us your dates for a quote.",
+ "facts": [
+  ["≈410 km", "255 mi — Shimla to Kaza via Kinnaur (district + HP Tourism)"],
+  ["4,590 m", "15,060 ft — Kunzum Pass, the Manali-side gateway"],
+  ["996 AD", "Tabo monastery founded"],
+  ["−20 °C", "−4 °F — winter lows in parts of Spiti (HP Tourism)"]
+ ],
+ "sections": [
+  {
+   "id": "routes",
+   "nav": "Routes",
+   "h2": "Two roads into Spiti — and when each is open",
+   "kind": "table",
+   "lead": "There are only two ways in by road. Most visitors drive one in and the other out, which is only possible in summer:",
+   "head": ["Road", "Season", "Good to know"],
+   "rows": [
+    ["<b>Shimla → Kinnaur → Kaza</b>", "Almost all year — the district calls it an \"almost all weather road upto Kaza\"", "About 410 km (255 mi) from Shimla; the district says about 20 hours of driving with a night halt — we split it over two or three days. Passes through the protected area where foreigners need a permit"],
+   ["<b>Manali → Atal Tunnel → Kunzum Pass → Kaza</b>", "Usually from mid-June to October/November; closed in winter for more than nine months a year", "Keylong to Kaza is 185 km (115 mi) over Kunzum Pass at about 4,590 m (15,060 ft). The Atal Tunnel keeps Manali connected to Lahaul all year, but the road on to Spiti does not stay open"],
+    ["<b>Circuit (in on one road, out on the other)</b>", "Roughly mid-June to early October", "The classic trip: Shimla → Kinnaur → Spiti → Chandratal → Manali. Both roads must be open, so we confirm the Kunzum road before you travel"]
+   ],
+   "note": "From the District Lahaul & Spiti \"how to reach\" page and Himachal Pradesh Tourism; Kunzum reopening from the Border Roads Organisation's usual schedule as reported by The Tribune. Opening dates change with the snow every year — confirm before travel. Checked 14 Nov 2026."
+  },
+  {
+   "id": "circuit",
+   "nav": "Sample circuit",
+   "h2": "A sample 9-day Spiti circuit by car",
+   "kind": "steps",
+   "video": "route",
+   "video_caption": "Summer circuit: Shimla (Day 1) → Reckong Peo in Kinnaur (Day 2) → Nako (Day 3) → Tabo (Day 4) → Kaza (Days 5–7) → Chandratal (Day 8, June–October) → over Kunzum Pass and through the Atal Tunnel to Manali (Day 9).",
+   "lead": "Going in from the Shimla side means the road climbs over several days, which is gentler than driving straight up from Manali. A typical summer shape:",
+   "items": [
+    ["Days 1–2: Shimla to Kinnaur", "Start in Shimla (370 km / 230 mi from Delhi, or by the UNESCO <a href=\"/india-tours/shimla-toy-train/\">toy train</a> from Kalka) and follow the Sutlej valley into Kinnaur. This is where your permit is checked."],
+    ["Days 3–4: Nako and Tabo", "Nako is one of the protected villages on the way. Tabo, at about 3,050 m (10,000 ft), has the monastery founded in 996 AD — about 46–48 km (29–30 mi) before Kaza."],
+    ["Days 5–7: Kaza and around", "Kaza is the valley's main town. Day trips: Key monastery (12 km / 7.5 mi, about 4,115 m / 13,500 ft), Kibber, Langza and Komic villages (16–18 km), Dhankar (32 km / 20 mi downstream, about 3,870 m / 12,700 ft) and the Pin valley."],
+    ["Day 8: Chandratal (summer only)", "Over Losar (4,085 m / 13,400 ft) and Kunzum Pass to Chandratal lake, about 4,270 m (14,000 ft). Tented camps open from June to October; the lake freezes in winter."],
+    ["Day 9: Manali", "Down to Batal, through Lahaul and the Atal Tunnel to Manali. Continue to Dharamshala or back to Delhi — our <a href=\"/india-tours/himachal-10-day-itinerary/\">10-day Himachal itinerary</a> covers the rest of the state."]
+   ]
+  },
+  {
+   "id": "permits",
+   "nav": "Permits",
+   "kind": "callout",
+   "style": "dark",
+   "h2": "The permit foreign visitors need",
+   "text": "Indian citizens need no permit for Spiti, but foreigners do for part of the way. <b>Foreign nationals need a Protected Area Permit for parts of the Kinnaur–Spiti route (for example Nako, Tabo and Dhankar).</b> The Kinnaur district's guidelines say permits are for groups of two or more sponsored by a recognised Indian travel agency, for up to 30 days, and that Kaza itself can be visited without one; Himachal Pradesh Tourism names the inner-line permit office at Reckong Peo. We arrange it with you through the official process; rules can change, so we confirm when we quote. (District Kinnaur, checked 26 Oct 2026; HP Tourism, 14 Nov 2026.)"
+  },
+  {
+   "id": "when",
+   "nav": "When",
+   "h2": "Best time for a Spiti Valley trip",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "Himachal Pradesh Tourism says April to October is a good time to visit; the district says mid-May to mid-October. What each part of the year means on the ground:",
+   "items": [
+    ["May to mid-June", "Days around 15–20 °C (59–68 °F). The Shimla–Kinnaur road is open and the state's buses run from May; the Manali side over Kunzum is usually still closed, so you go in and out the same way."],
+    ["Mid-June to September", "The full circuit is possible and Chandratal camps are open. This is also India's monsoon: the roads to Spiti through Kinnaur and Kullu can be cut by landslides. The UK Foreign Office warns of flash flooding and landslides in the monsoon — we keep spare days in every summer plan."],
+    ["October", "Clear, cold and quiet. Camps at Chandratal close and Kunzum can shut with the first heavy snow from October or November, so late-season trips usually return via Kinnaur."],
+    ["November to April", "A winter Spiti trip is possible only via Kinnaur. HP Tourism says temperatures can fall to around −20 °C (−4 °F) from December to February, and heavy snow can close the road for days. It suits experienced cold-weather travellers with flexible dates — ask us honestly whether it fits you."]
+   ]
+  },
+  {
+   "id": "altitude",
+   "nav": "Altitude",
+   "h2": "Altitude: how high is Spiti?",
+   "kind": "stats",
+   "lead": "Spiti is high: much of the trip is above 3,000 m (about 10,000 ft) and the passes and lakes above 4,000 m (13,000 ft). Official figures from the district and HP Tourism:",
+   "items": [
+    ["3,050 m", "10,004 ft — Tabo"],
+    ["≈4,115 m", "13,500 ft — Key monastery above Kaza"],
+    ["≈4,270 m", "14,000 ft — Chandratal lake"],
+    ["4,590 m", "15,060 ft — Kunzum Pass"]
+   ],
+   "note": "Altitude affects people differently — consult your doctor before you book and see CDC or NHS Fit for Travel. We plan the route to go up gradually from the Shimla side, and check that your travel insurance covers travel at these heights (see our <a href=\"/india-tours/india-travel-insurance/\">travel insurance guide</a>). Kibber is listed at about 4,205–4,330 m (13,800–14,200 ft), one of the highest inhabited villages in the valley."
+  },
+  {
+   "id": "see",
+   "nav": "What to see",
+   "h2": "What to see in Spiti",
+   "kind": "cards",
+   "items": [
+    ["Tabo monastery", "Founded in 996 AD, in a village at about 3,050 m (10,000 ft), 46–48 km (29–30 mi) before Kaza on the Kinnaur road."],
+    ["Key monastery", "The white monastery stacked on a hill above Kaza, about 4,115 m (13,500 ft), 12 km (7.5 mi) by road. It hosted the Kalachakra in August 2000."],
+    ["Dhankar", "A monastery village at about 3,870 m (12,700 ft), 32 km (20 mi) downstream from Kaza, between Tabo and Kaza."],
+    ["High villages", "Kibber, Langza, Hikkim and Komic, 16–18 km from Kaza — some of the highest inhabited villages in the valley."],
+    ["Pin valley", "A side valley with the Kungri monastery, built around 1330 AD."],
+    ["Chandratal", "The high lake on the Lahaul side, about 9 km from Kunzum Pass, at about 4,270 m (14,000 ft) — reachable only in summer; it freezes in winter."]
+   ]
+  },
+  {
+   "id": "basics",
+   "nav": "Before you go",
+   "h2": "Before you go",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Visa", "Apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> explains the steps. The e-Visa does not replace the Spiti permit."],
+    ["Phones and money", "HP Tourism notes that only the BSNL mobile network works well in Spiti — expect long stretches with no signal or data. Carry enough cash for the remote stretches."],
+    ["The car and the roads", "HP Tourism recommends sturdy off-road vehicles. We use an SUV with a driver who knows mountain roads, and drive only in daylight — the UK Foreign Office advises avoiding night and fog driving. Your driver's name, photo and car number are shared with you before the trip. See <a href=\"/india-tours/private-driver-india/\">private driver in India</a>."],
+    ["Festivals", "The Losar festival lasts three days in February; the Ladarcha fair is held in Kaza in July or August."],
+    ["Health", "If you have heart or breathing conditions, consult your doctor before you book; see CDC or NHS Fit for Travel. Bring warm layers even in summer — nights are cold."]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "A Spiti trip is quoted on request: it depends on the month, the route (circuit or in-and-out via Kinnaur), the hotel or homestay level, the car and how many of you travel. You receive a day-by-day plan with a US-dollar total and what it covers before you pay anything.",
+  "rows": [
+   ["Your Spiti Valley trip (Shimla or Manali start)", "on request", "Private SUV and mountain driver throughout, stays with breakfast and dinner where meals are only available there, help with the Protected Area Permit; Delhi pick-up and Golden Triangle add-ons on request. International flights not included."]
+  ]
+ },
+ "faqs": [
+  ["Do foreigners need a permit for Spiti Valley?", "Yes, for part of the way. Foreign nationals need a Protected Area Permit for parts of the Kinnaur–Spiti route, for example Nako, Tabo and Dhankar. District Kinnaur's guidelines say permits go to groups of two or more sponsored by a recognised Indian travel agency, for up to 30 days. We arrange it with you; rules can change, so we confirm when we quote."],
+  ["What is the best time for a Spiti Valley trip?", "June to October. Himachal Pradesh Tourism says April to October is a good time; the full circuit through Manali is usually possible only from mid-June, when the Kunzum Pass road reopens. From November to April you can reach Spiti only via Kinnaur, in temperatures that can fall to −20 °C (−4 °F)."],
+  ["How many days do I need for Spiti?", "About 9–10 days from Shimla to Manali, or 8–10 days in and out via Kinnaur. The road is long and slow, and going up gradually from the Shimla side is gentler on the body. Add travel days from Delhi."],
+  ["Should I start from Shimla or Manali?", "Start from Shimla when you can. The Shimla–Kinnaur road climbs over several days and is open almost all year. The Manali side over Kunzum Pass at 4,590 m (15,060 ft) is usually open only from mid-June and reaches high altitude quickly."],
+  ["Can I visit Spiti in winter?", "Yes, but only via Kinnaur — the Manali side is closed for more than nine months a year. Expect temperatures down to around −20 °C (−4 °F), frozen lakes, closed camps and roads that snow can block for days. It suits experienced cold-weather travellers with flexible dates."],
+  ["Is altitude sickness a risk in Spiti?", "Spiti is high: Tabo is at about 3,050 m (10,000 ft), Key monastery about 4,115 m (13,500 ft) and Kunzum Pass 4,590 m (15,060 ft). Altitude affects people differently — consult your doctor before you book and see CDC or NHS Fit for Travel. Check your insurance covers these heights."],
+  ["Is there phone signal and internet in Spiti?", "Only patchy. Himachal Pradesh Tourism notes that only the BSNL network works well in Spiti; most foreign SIMs and many Indian ones will have no signal for long stretches. We share your driver's details and our office number before the trip."],
+  ["How do I book a Spiti trip with Suzu Travels?", "Send your dates, how many of you and your starting point. We reply with a route, a day-by-day plan and a US-dollar quote. A 20% deposit locks your dates and price, with a full refund if you cancel within 48 hours of paying."]
+ ],
+ "sources": [
+  ["District Lahaul & Spiti (Government of Himachal Pradesh) — how to reach", "https://hplahaulspiti.nic.in/how-to-reach/"],
+  ["District Lahaul & Spiti — monasteries in Spiti", "https://hplahaulspiti.nic.in/monasteries-in-spiti/"],
+  ["District Lahaul & Spiti — tourist places in Spiti", "https://hplahaulspiti.nic.in/tourist-places-in-spiti/"],
+  ["District Lahaul & Spiti — tourist places in Lahaul (Chandratal)", "https://hplahaulspiti.nic.in/tourist-places-in-lahaul/"],
+  ["District Lahaul & Spiti — geographical conditions", "https://hplahaulspiti.nic.in/geographical-conditions/"],
+  ["Himachal Pradesh Tourism — Spiti Valley", "https://himachaltourism.gov.in/destination/spiti-valley/"],
+  ["District Kinnaur — tourist guidelines (protected areas)", "https://hpkinnaur.nic.in/?p=25980"],
+  ["Prime Minister's Office — Atal Tunnel", "https://pmindia.gov.in/?p=8160111"],
+  ["UK FCDO — India travel advice", "https://www.gov.uk/foreign-travel-advice/india"],
+  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"]
+ ],
+ "verified": "14 Nov 2026",
+ "cta": {
+  "h2": "Planning a Spiti Valley trip?",
+  "text": "Your dates, how many of you and whether you'd start from Shimla or Manali. We reply within two hours (9 am–9 pm IST) with a route, the permit steps and a US-dollar quote.",
+  "wa": "Hello Suzu Travels, I'm planning a Spiti Valley trip. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "best-time-to-visit-himachal",
+  "himachal-10-day-itinerary",
+  "private-driver-india",
+  "india-travel-insurance"
+ ],
+ "talk": true
+}

@@ -412,5 +412,14 @@
   "blurb": "Srinagar, Gulmarg, Pahalgam and Sonamarg — with your government's travel advice first",
   "added": "2026-11-14",
   "focus": "kashmir itinerary"
+ },
+ "spiti-valley-trip-guide": {
+  "id": 22250,
+  "path": "/india-tours/spiti-valley-trip-guide/",
+  "kind": "guide",
+  "label": "Spiti Valley trip guide",
+  "blurb": "Routes, the foreigners' permit, seasons and altitude for Himachal's high desert",
+  "added": "2026-11-14",
+  "focus": "spiti valley trip"
  }
 }
