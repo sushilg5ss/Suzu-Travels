@@ -875,5 +875,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "chandigarh-to-kasauli-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@fb6fc81e30255581f195ff9f7bb61f5babee94e8/cab-kit/media/chandigarh-to-kasauli-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@fb6fc81e30255581f195ff9f7bb61f5babee94e8/cab-kit/media/chandigarh-to-kasauli-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@fb6fc81e30255581f195ff9f7bb61f5babee94e8/cab-kit/media/chandigarh-to-kasauli-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
