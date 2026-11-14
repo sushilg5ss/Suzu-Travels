@@ -1,0 +1,149 @@
+{
+ "_note": "Swargarohini I (6,252 m) - Ruinsara valley, Uttarkashi. Altitudes from research/pages/swargarohini.md (Taluka 1,900 (1992); Ruinsara Tal ~3,650 (HJ 42); BC Kiarkoti 4,300 (NIM 1990); ABC 5,000). No Osla / E-col altitude. First ascent disputed (1990 claim; first undisputed 1993). Ladder heights from data/peaks.json. Generic photos only - never captioned as Swargarohini.",
+ "hero": {
+  "kicker": "SWARGAROHINI · UTTARKASHI",
+  "scenes": [
+   {
+    "img": "px-92081.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.06,
+     "x": -120
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -180
+    }
+   },
+   {
+    "img": "px-10555794.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": -60
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -140
+    }
+   },
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ],
+  "steps": [
+   [
+    1900,
+    "TALUKA · ROAD-HEAD"
+   ],
+   [
+    3650,
+    "RUINSARA TAL"
+   ],
+   [
+    4300,
+    "KIARKOTI BASE"
+   ],
+   [
+    5000,
+    "ADVANCE BASE"
+   ],
+   [
+    6252,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Swargarohini I, camp by camp",
+  "sub": "Ruinsara valley · NIM 1990 and Swedish 1993 lines",
+  "camps": [
+   {
+    "name": "Taluka",
+    "m": 1900,
+    "day": "Road-head · Day 1–2",
+    "dy": -50
+   },
+   {
+    "name": "Ruinsara Tal",
+    "m": 3650,
+    "day": "Day 3–4",
+    "dx": 40,
+    "dy": 28
+   },
+   {
+    "name": "Kiarkoti base camp",
+    "m": 4300,
+    "day": "About Day 5"
+   },
+   {
+    "name": "Advance base",
+    "m": 5000,
+    "day": "Below the seracs"
+   },
+   {
+    "name": "Swargarohini I",
+    "m": 6252,
+    "day": "Summit day"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "GARHWAL HIMALAYA",
+  "title": "Swargarohini I and its neighbours",
+  "peaks": [
+   "kedarkantha",
+   "swargarohini-i",
+   "bandarpunch",
+   "shivling",
+   "satopanth"
+  ],
+  "subs": {
+   "kedarkantha": "Uttarakhand",
+   "swargarohini-i": "First undisputed 1993",
+   "bandarpunch": "First climbed 1950",
+   "shivling": "First climbed 1974",
+   "satopanth": "First climbed 1947"
+  },
+  "end": "Swargarohini I 6,252 m · one of four summits"
+ }
+}

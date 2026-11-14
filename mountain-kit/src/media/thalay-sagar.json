@@ -1,0 +1,154 @@
+{
+ "_note": "Thalay Sagar (6,904 m) - Gangotri group, Uttarakhand. Altitudes from research/pages/thalay-sagar.md route table (Gangotri 3,415; Kedar Kharak ~4,280; Kedartal BC ~4,750 (HJ 42); ABC ~5,300; 1979 high camp ~6,250). Ladder heights from data/peaks.json. Generic photos only - never captioned as Thalay Sagar. No avalanche/rescue imagery.",
+ "hero": {
+  "kicker": "THALAY SAGAR · GANGOTRI",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 500
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -180
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 920,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "y": 560
+    },
+    "to": {
+     "y": 860
+    }
+   }
+  ],
+  "steps": [
+   [
+    3415,
+    "GANGOTRI"
+   ],
+   [
+    4280,
+    "KEDAR KHARAK"
+   ],
+   [
+    4750,
+    "KEDARTAL BASE"
+   ],
+   [
+    5300,
+    "ADVANCED BASE"
+   ],
+   [
+    6904,
+    "SUMMIT · 1979"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Thalay Sagar, camp by camp",
+  "sub": "NW couloir/ridge (1979) · camps vary by route",
+  "camps": [
+   {
+    "name": "Gangotri",
+    "m": 3415,
+    "day": "Road-head · Day 0",
+    "dy": -28
+   },
+   {
+    "name": "Kedar Kharak",
+    "m": 4280,
+    "day": "Day 2",
+    "dy": 24
+   },
+   {
+    "name": "Kedartal BC",
+    "m": 4750,
+    "day": "Day 3"
+   },
+   {
+    "name": "Advanced base",
+    "m": 5300,
+    "day": "+1–2 days"
+   },
+   {
+    "name": "High camp (1979)",
+    "m": 6250,
+    "day": "Route-dependent"
+   },
+   {
+    "name": "Thalay Sagar",
+    "m": 6904,
+    "day": "Summit · 24 Jun 1979"
+   }
+  ]
+ },
+ "ladder": {
+  "kicker": "GANGOTRI'S SKYLINE",
+  "title": "Thalay Sagar and its Gangotri neighbours",
+  "peaks": [
+   "jogin-i",
+   "shivling",
+   "bhrigupanth",
+   "kedar-dome",
+   "thalay-sagar",
+   "kedarnath"
+  ],
+  "subs": {
+   "jogin-i": "First climbed 1970",
+   "shivling": "First climbed 1974",
+   "bhrigupanth": "First climbed 1980",
+   "kedar-dome": "First climbed 1947",
+   "thalay-sagar": "First climbed 1979",
+   "kedarnath": "First climbed 1947"
+  },
+  "end": "Thalay Sagar 6,904 m · Piolets d'Or 1999 and 2017"
+ }
+}
