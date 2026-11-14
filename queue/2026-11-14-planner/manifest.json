@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-14-planner",
+ "agent": "Trip Planner",
+ "summary": "v1.9 winter passes (Kunzum re-route, Manali-Leh/Zojila warnings)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "d61242b1d6c0197d3ef875d40003a31d703524536a21e27ca9649771cb5271c8",
+   "base_sha256": "fbf154601e34f0c6f3c46a669ca81d37c4a5677afffb50724f0369a6a37513d1",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 387574
+  }
+ ]
+}
