@@ -30,6 +30,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /kazakhstan-tour-packages/ | 16997 | `.hx` country page (31 Oct 2026) — `pages/gen_kazakhstan.py` (Almaty + Kyrgyzstan add-on; 6-day itinerary grid = 3 columns; first page with Wikimedia Commons photos — per-photo licence in credits) |
 | /armenia-tour-packages/ | 17234 | `.hx` country page (1 Nov 2026) — `pages/gen_armenia.py` (Yerevan–Garni/Geghard–Sevan/Dilijan–Khor Virap/Noravank–Tatev; 6-day itinerary grid = 3 columns; Wikimedia Commons photos) |
 | /hong-kong-tour-packages/ | 21727 | `.hx` country page (13 Nov 2026) — `pages/gen_hongkong.py` (Hong Kong + Macau; 6-day itinerary grid = 3 columns; Wikimedia Commons photos; extra phone hero padding for the 3-line title) |
+| /china-tour-packages/ | 22271 | `.hx` country page (14 Nov 2026) — `pages/gen_china.py` (Beijing–Xi'an–Shanghai + Zhangjiajie/Guilin add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery = first photo spans 2 columns, 1 row; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -67,3 +68,8 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Commons thumbnails from the sandbox returned 429 for every request this run; WordPress `wp_upload_media_from_url` fetched the 1920px thumbs fine, so photos were uploaded first and then viewed from the WP copy (dropped ones stay unused in the library: 21712 B&W crowded Ruins of St. Paul's, 21720 tram with an ad showing people).
 - `wp_create_preview_link` URL redirected headless Chromium to the homepage — use a local render (theme-less wrapper) before publishing, then test live.
 - Long page titles (3 lines on phones) need extra `.hx-hero` top padding on that page (see gen_hongkong.py).
+
+## Notes (14 Nov 2026)
+- Commons API (commons.wikimedia.org/w/api.php) and api.wikimedia.org returned 429 after 1–3 requests; spacing 20–45 s worked slowly. `api.wikimedia.org/core/v1/commons/search/page?q=…` (search) and `/core/v1/commons/page/<File:…>` (wikitext → licence template + author) were the usable routes. WebFetch was blocked (permission prompt unanswered).
+- Big page bodies: create the page as a draft, then send content in ~13–18 KB chunks — `wp_update_page` with a marker at the end, then `wp_replace_in_page` marker → next chunk + next marker (expected_count 1). `content_length` returned by the tool is UTF-8 bytes — compare with `len(s.encode())` of the local build.
+- Hub: local `hub.html` is 22 bytes longer than the live hub content (pre-existing drift before this run; all 8 China edits applied cleanly with expected_count 1).
