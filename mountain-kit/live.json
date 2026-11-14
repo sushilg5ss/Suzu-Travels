@@ -433,5 +433,14 @@
   "added": "2026-11-12",
   "peak_id": "manirang",
   "commercial": true
+ },
+ "hardest-peaks-in-india": {
+  "id": 22314,
+  "path": "/mountains-of-india/hardest-peaks-in-india/",
+  "kind": "guide",
+  "label": "Hardest peaks to climb in India",
+  "blurb": "Shark's Fin, shale bands and granite walls",
+  "added": "2026-11-14",
+  "commercial": false
  }
 }
