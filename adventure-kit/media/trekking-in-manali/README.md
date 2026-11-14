@@ -1,0 +1,10 @@
+# trekking-in-manali media (Visual Studio night, 15 Nov 2026 IST)
+
+HyperFrames 0.8.85. Compositions: trekking-in-manali-{hero,explainer,reel}.html (assets/ not committed: Plus Jakarta Sans 800/500 woff2 + photos below, all from the Suzu WP library).
+
+- hero.mp4 (1.23 MB) / hero.webm (1.20 MB) / poster.webp — 12 s seamless loop (first/last diff 2.0/255): waterfall over a rock ledge (WP 17846) → clear lake below snow peaks (14395) → trekkers on a snowfield (13537, mirrored, snowfall) → snowy hamlet (18330) → back. Right half "Trekking in / Manali / a waterfall walk to a 4,270 m pass"; schematic star map (not to scale): MANALI hub, 6 gold trails draw out to Jogini, Beas Kund, Patalsu, Bhrigu, Hampta, Chandrakhani; day counter ½ day → 5 days → "½–5 days"; facts: Jogini Waterfall · half day / Lake treks in 2–4 days · May–Oct / Hampta Pass ~4,270 m · 4–5 days / Winter now: Jogini + Sethan snow.
+- explainer.mp4 (0.20 MB) / explainer.webm (0.25 MB) / explainer-poster.webp — 12 s "Waterfall walks to a 4,270 m pass": bars to scale, top heights from live Suzu pages: Jogini ~2,300 m (½ day), Sethan ~2,700 m (day trip), Chandrakhani 3,660 m (4–5 days), Beas Kund ~3,890 m (2–3 days), Patalsu ~4,200 m+ (3–4 days), Bhrigu ~4,235 m (3–4 days), Hampta ~4,270 m (4–5 days); "WINTER NOW" pills on Jogini + Sethan; month strip Day hikes / Lake & peak treks / Passes from the brief's season table; "Price: Get Quote". Lamadugh left out (unverified).
+- reel-web.mp4 (0.92 MB) / reel-web.webm (0.87 MB) / reel-web-poster.webp — 15 s 9:16: tiered waterfall (17845) "8 treks from one base" → lake below peaks (14395) "Alpine lake treks" → line of trekkers on snow (13538) "Hampta Pass ~4,270 m" → sunlit snowy lane (18331) "Jogini + Sethan snow walks"; end card Get Quote + suzutravels.com/adventure/trekking-in-manali + HP Tourism reg. no.
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
+
+Photos (all generic, neutral alt — none is a verified Manali spot photo; 13537/13538 are captioned Hampta by the photographer only). No new uploads this run.
