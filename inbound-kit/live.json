@@ -421,5 +421,14 @@
   "blurb": "Routes, the foreigners' permit, seasons and altitude for Himachal's high desert",
   "added": "2026-11-14",
   "focus": "spiti valley trip"
+ },
+ "ladakh-trip-guide": {
+  "id": 22425,
+  "path": "/india-tours/ladakh-trip-guide/",
+  "kind": "guide",
+  "label": "Ladakh trip guide",
+  "blurb": "Flights or the Manali road, the foreigners' permit, altitude and seasons for Leh, Nubra and Pangong",
+  "added": "2026-11-15",
+  "focus": "ladakh trip"
  }
 }
