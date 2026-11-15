@@ -260,6 +260,13 @@ def act_card(cat, name, where, season, line, badge, place):
 # Sharper category photos for hi-DPI screens (Visual Studio, 14 Nov 2026)
 SRCSET = {
     'treks': ' srcset="https://suzutravels.com/wp-content/uploads/2026/10/treks-cathead-prashar-lake-768x480-1.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/treks-cathead-prashar-lake-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 560px"',
+    # Visual Studio 15 Nov 2026: 1200w versions for the other six category heads (WP 22436-22441)
+    'air': ' srcset="https://suzutravels.com/wp-content/uploads/2026/09/paragliding-over-mountains-768x549.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/hub-cathead-paragliding-over-mountains-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 560px"',
+    'water': ' srcset="https://suzutravels.com/wp-content/uploads/2026/09/river-rafting-white-water-768x513.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/hub-cathead-river-rafting-white-water-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 560px"',
+    'snow': ' srcset="https://suzutravels.com/wp-content/uploads/2026/09/snow-covered-himalayan-valley-768x432.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/hub-cathead-snow-covered-himalayan-valley-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 560px"',
+    'land': ' srcset="https://suzutravels.com/wp-content/uploads/2026/09/motorbike-mountain-road-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/hub-cathead-motorbike-mountain-road-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 560px"',
+    'ropeways': ' srcset="https://suzutravels.com/wp-content/uploads/2026/09/ropeway-cable-car-snow-768x512.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/hub-cathead-ropeway-cable-car-snow-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 560px"',
+    'services': ' srcset="https://suzutravels.com/wp-content/uploads/2026/09/adventure-motorbike-rental-768x576.webp 768w, https://suzutravels.com/wp-content/uploads/2026/11/hub-cathead-adventure-motorbike-rental-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 560px"',
 }
 
 
