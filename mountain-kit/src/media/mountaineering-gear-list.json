@@ -85,5 +85,47 @@
     }
    }
   ]
+ },
+ "profile": {
+  "title": "Hanuman Tibba: gear by stage",
+  "sub": "Typical kit on the way to 5,982 m · your outfitter confirms the list · heights approximate",
+  "camps": [
+   {
+    "name": "Manali",
+    "m": 2050,
+    "day": "Rent & check kit",
+    "dx": -40,
+    "dy": 140
+   },
+   {
+    "name": "Bakarthach",
+    "m": 3300,
+    "day": "Trek shoes · poles",
+    "dx": 70
+   },
+   {
+    "name": "Beas Kund",
+    "m": 3600,
+    "day": "Snow-craft day",
+    "dx": -55
+   },
+   {
+    "name": "Tentu Pass",
+    "m": 4750,
+    "day": "Boots · crampons · axe",
+    "dx": 60
+   },
+   {
+    "name": "Summit camp",
+    "m": 5050,
+    "day": "Glacier · rope up",
+    "dx": -70
+   },
+   {
+    "name": "Summit",
+    "m": 5982,
+    "day": "Jumar · all layers"
+   }
+  ]
  }
 }
