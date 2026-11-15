@@ -169,6 +169,8 @@ PLACES = {
     "Morinda": (30.79, 76.50), "Samrala": (30.84, 76.19), "Kartarpur": (31.44, 75.50),
     # 14 Nov 2026 · Chandigarh–Kasauli (NH5 + Dharampur–Garkhal road) waypoints (OSM town centres)
     "Pinjore": (30.80, 76.92), "Garkhal": (30.89, 76.98),
+    # 15 Nov 2026 · Delhi–Ramnagar (NH9 + Moradabad–Kashipur–Ramnagar road) waypoints (Photon/OSM); "Jim Corbett" = Ramnagar, the park's gateway town
+    "Kashipur": (29.21, 78.96), "Thakurdwara": (29.10, 78.82), "Jim Corbett": (29.39, 79.13),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
@@ -214,7 +216,8 @@ ROUTES = [
     dict(slug="jammu-to-katra-taxi", a="Jammu", b="Katra", km=48, t="1–1.5 hrs", f=1.0),   # 30 Oct 2026: page live; Nagrota–Domel road (SMVDSB ~50 km, EMT 45 km city / 49 km airport, OSRM 40–50); same km/f as the jammu-taxi-service Katra row
     dict(slug="kathgodam-to-nainital-taxi", a="Kathgodam", b="Nainital", km=35, t="1–1.5 hrs", f=1.1),   # 4 Nov 2026: page live; Ranibagh–Jeolikote hill road (CabBazar/HurryUp 36 km, Bizare/Savaari/MMT ~35 km); same km/f as the nainital-taxi-service Kathgodam row
     dict(slug="delhi-to-nainital-taxi", a="Delhi", b="Nainital", km=310, t="7–8 hrs", f=0.9),
-    dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
+    dict(slug="delhi-to-haldwani-taxi", a="Delhi", b="Haldwani", km=285, t="6–7 hrs", f=0.85),
+    dict(slug="delhi-to-jim-corbett-taxi", a="Delhi", b="Jim Corbett", km=250, t="5.5–6.5 hrs", f=0.85),   # 15 Nov 2026: page live; NH9 via Hapur–Garhmukteshwar–Moradabad, then Thakurdwara–Kashipur–Ramnagar (Triveni upd. 14 Sep 2026 250–260 km, CabBazar 230, oneway.cab 228, MMT 237, OSRM 250); all-plains f 0.85 = delhi-to-haldwani   # 25 Oct 2026: all-plains NH-9 + NH-109 (MMT 284 km, HurryUp 302, CabBazar 300)
     dict(slug="delhi-to-jammu-taxi", a="Delhi", b="Jammu", km=590, t="10–11 hrs", f=0.85),
     dict(slug="delhi-to-vrindavan-taxi", a="Delhi", b="Vrindavan", km=180, t="3–4 hrs", f=0.9),   # 31 Oct 2026: page live; Yamuna Expressway via Noida–Jewar, Mathura–Vrindavan interchange (Triveni 160–185 km, HurryUp 160, Savaari 183 expwy / 191 NH-19); f 0.9 = delhi-to-agra (same road)
     dict(slug="delhi-to-jaipur-taxi", a="Delhi", b="Jaipur", km=280, t="4–5 hrs", f=0.85),   # 6 Nov 2026: page live; Delhi–Mumbai Expressway via Sohna + Bandikui–Jaipur link (open 15 Jul 2025) or NH48 via Neemrana–Kotputli (CabBazar/Triveni/Suri 280 km); same km/f as outstation-cab-delhi Jaipur row; sedan ₹3,599 vs market median ₹3,300 (+9%), Crysta ₹6,199 vs ₹6,000
