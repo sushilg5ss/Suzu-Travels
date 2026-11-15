@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.16; }
+      .veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0.55), rgba(11,31,51,0.92) 60%); }
+      svg.map { position: absolute; left: 60px; top: 90px; width: 1000px; height: 900px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; font-size: 30px; }
+      svg.map text.sm { font-size: 24px; font-weight: 500; fill: rgba(255,255,255,0.85); }
+      svg.map text.km { fill: #0b1f33; font-size: 28px; }
+      .panel { position: absolute; left: 1120px; top: 0; width: 740px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 96px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; white-space: nowrap; }
+      .h { position: absolute; left: 0; top: 150px; color: #fff; font-weight: 800; font-size: 96px; letter-spacing: -0.02em; white-space: nowrap; }
+      .alt { position: absolute; left: 0; top: 276px; color: #d4a24c; font-weight: 800; font-size: 120px; letter-spacing: -0.02em; white-space: nowrap; }
+      .altlab { position: absolute; left: 0; top: 420px; color: #fff; font-weight: 500; font-size: 36px; white-space: nowrap; }
+      .leg { position: absolute; left: 0; width: 740px; height: 50px; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .leg i { position: absolute; left: 0; top: 22px; width: 64px; height: 0; }
+      .leg span { position: absolute; left: 88px; top: 0; }
+      .cal { position: absolute; left: 0; top: 760px; width: 740px; height: 200px; }
+      .m { position: absolute; top: 0; width: 56px; height: 76px; border-radius: 10px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 26px; text-align: center; line-height: 76px; }
+      .m.off { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.75); }
+      .caltxt { position: absolute; left: 0; top: 92px; width: 740px; line-height: 1.25; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .caltxt b { color: #d4a24c; }
+      .note { position: absolute; left: 60px; top: 1010px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 22px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bg" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <img class="bgimg" id="bgim" src="assets/ridge.jpg" alt="" />
+        <div class="veil"></div>
+      </div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <svg class="map" viewBox="0 0 1000 900">
+          <path id="rdJ" d="M840 640 C 780 560, 720 560, 690 500 C 650 430, 600 420, 520 330" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <path id="rdK" d="M200 760 C 260 680, 300 640, 360 600 C 430 550, 420 430, 500 330" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <path id="tkJ" d="M840 640 C 860 520, 760 420, 700 380 C 640 340, 590 300, 520 320" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="4 18" stroke-linecap="round" />
+          <path id="tkB" d="M300 700 C 300 600, 330 470, 400 400 C 440 360, 470 330, 500 320" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="4 18" stroke-linecap="round" />
+          <path id="rdg" d="M500 320 C 440 260, 340 230, 300 200 C 260 170, 220 150, 170 140" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="5" stroke-dasharray="20 14" stroke-linecap="round" />
+          <circle id="walk1" cx="840" cy="640" r="12" fill="#fff" />
+          <circle id="walk2" cx="300" cy="700" r="12" fill="#fff" />
+          <circle id="halo" cx="510" cy="325" r="0" fill="rgba(212,162,76,0.45)" />
+          <circle cx="510" cy="325" r="22" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <text x="548" y="232">Shikari Devi</text>
+          <text class="sm" x="548" y="266">3,359 m · roofless temple</text>
+          <circle cx="840" cy="640" r="14" fill="#fff" /><text x="760" y="700">Janjehli</text>
+          <circle cx="200" cy="760" r="14" fill="#fff" /><text x="120" y="818">Karsog</text>
+          <circle cx="300" cy="700" r="10" fill="#fff" /><text class="sm" x="322" y="708">Bakhrot</text>
+          <circle cx="700" cy="380" r="10" fill="#fff" /><text class="sm" x="722" y="388">Budha Kedar</text>
+          <circle cx="170" cy="140" r="14" fill="#fff" /><text x="40" y="100">Kamrunag</text>
+          <g id="kmJ"><rect x="676" y="452" width="120" height="48" rx="24" fill="#d4a24c" /><text class="km" id="kmJt" x="736" y="486" text-anchor="middle">0 km</text></g>
+          <g id="kmK"><rect x="360" y="552" width="120" height="48" rx="24" fill="#d4a24c" /><text class="km" id="kmKt" x="420" y="586" text-anchor="middle">0 km</text></g>
+          <g id="kmR"><rect x="200" y="196" width="190" height="48" rx="24" fill="#fff" /><text class="km" x="295" y="230" text-anchor="middle">16 km ridge</text></g>
+        </svg>
+        <div class="note">Schematic, not to scale · trek routes as listed on the HP trekking portal</div>
+        <div class="panel">
+          <div class="kicker">3 WAYS UP · SERAJ, MANDI</div>
+          <div class="h">Shikari Devi</div>
+          <div class="alt" id="alt">0 m</div>
+          <div class="altlab">highest point of Mandi district</div>
+          <div class="leg" id="lg1" style="top:510px"><i style="border-top:10px solid #d4a24c;top:18px"></i><span>Forest road · drive + stairs</span></div>
+          <div class="leg" id="lg2" style="top:580px"><i style="border-top:6px dotted #fff"></i><span>Trek · 2 days return</span></div>
+          <div class="leg" id="lg3" style="top:650px"><i style="border-top:5px dashed rgba(255,255,255,0.8)"></i><span>Ridge to Kamrunag · summer</span></div>
+          <div class="cal" id="cal"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const D = 12;
+      tl.fromTo("#bgim", { scale: 1 }, { scale: 1.06, duration: D, ease: "none" }, 0);
+      tl.from([".kicker", ".h"], { opacity: 0, y: 30, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0.1);
+      tl.from(".altlab", { opacity: 0, duration: 0.4 }, 0.6);
+
+      const prep = (id) => { const p = document.getElementById(id); const L = Math.ceil(p.getTotalLength()); p.setAttribute("stroke-dasharray", L + " " + L); p.setAttribute("stroke-dashoffset", L); return { p, L }; };
+      const J = prep("rdJ"), K = prep("rdK");
+      tl.to(J.p, { attr: { "stroke-dashoffset": 0 }, duration: 2, ease: "power1.inOut" }, 0.8);
+      tl.to(K.p, { attr: { "stroke-dashoffset": 0 }, duration: 2, ease: "power1.inOut" }, 2.9);
+      tl.from("#kmJ", { opacity: 0, scale: 0.6, transformOrigin: "736px 476px", duration: 0.3 }, 0.9);
+      tl.from("#kmK", { opacity: 0, scale: 0.6, transformOrigin: "420px 576px", duration: 0.3 }, 3.0);
+      tl.from("#lg1", { opacity: 0, x: -20, duration: 0.4 }, 1.0);
+
+      tl.from(["#tkJ", "#tkB"], { opacity: 0, duration: 0.6, ease: "power1.out" }, 5);
+      tl.from("#lg2", { opacity: 0, x: -20, duration: 0.4 }, 5.1);
+      tl.from("#rdg", { opacity: 0, duration: 0.6 }, 7.2);
+      tl.from("#kmR", { opacity: 0, scale: 0.6, transformOrigin: "295px 220px", duration: 0.35 }, 7.4);
+      tl.from("#lg3", { opacity: 0, x: -20, duration: 0.4 }, 7.4);
+      tl.fromTo("#halo", { attr: { r: 0 }, opacity: 0.9 }, { attr: { r: 60 }, opacity: 0, duration: 1.2, ease: "power1.out" }, 4.9);
+
+      const tJ = document.getElementById("tkJ"), tB = document.getElementById("tkB");
+      const LJ = tJ.getTotalLength(), LB = tB.getTotalLength();
+      const w1 = document.getElementById("walk1"), w2 = document.getElementById("walk2");
+      const kJ = document.getElementById("kmJt"), kK = document.getElementById("kmKt");
+      const altEl = document.getElementById("alt");
+      const st = { t: 0 };
+      const ss = (a, b, t) => { let k = (t - a) / (b - a); k = Math.max(0, Math.min(1, k)); return k * k * (3 - 2 * k); };
+      const upd = () => {
+        const t = st.t;
+        kJ.textContent = Math.round(ss(0.8, 2.8, t) * 18) + " km";
+        kK.textContent = Math.round(ss(2.9, 4.9, t) * 21) + " km";
+        altEl.textContent = (Math.round(ss(0.6, 8, t) * 3359 / 10) * 10 >= 3350 ? 3359 : Math.round(ss(0.6, 8, t) * 3359 / 10) * 10).toLocaleString("en-US") + " m";
+        const k = ss(5.2, 7.4, t);
+        const p1 = tJ.getPointAtLength(k * LJ), p2 = tB.getPointAtLength(k * LB);
+        w1.setAttribute("cx", p1.x.toFixed(1)); w1.setAttribute("cy", p1.y.toFixed(1));
+        w2.setAttribute("cx", p2.x.toFixed(1)); w2.setAttribute("cy", p2.y.toFixed(1));
+        const o = t < 5.1 ? 0 : 1; w1.setAttribute("opacity", o); w2.setAttribute("opacity", o);
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+
+      const cal = document.getElementById("cal");
+      const M = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+      const boxes = M.map((m, i) => {
+        const b = document.createElement("div"); b.className = "m"; b.textContent = m; b.style.left = (i * 62) + "px"; cal.appendChild(b); return b;
+      });
+      const tx = document.createElement("div"); tx.className = "caltxt"; tx.innerHTML = "Open Apr – mid-Nov<br /><b>Closed for snow</b> mid-Nov – Mar"; cal.appendChild(tx);
+      tl.from(boxes, { opacity: 0, y: 20, duration: 0.3, stagger: 0.04, ease: "power2.out" }, 8.3);
+      [0, 1, 2, 11].forEach((i, n) => { tl.to(boxes[i], { backgroundColor: "rgba(255,255,255,0.18)", color: "rgba(255,255,255,0.75)", duration: 0.3 }, 9.2 + n * 0.08); });
+      tl.to(boxes[10], { background: "linear-gradient(90deg, #d4a24c 50%, rgba(255,255,255,0.18) 50%)", duration: 0.01 }, 9.2);
+      tl.from(tx, { opacity: 0, y: 16, duration: 0.4 }, 9.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
