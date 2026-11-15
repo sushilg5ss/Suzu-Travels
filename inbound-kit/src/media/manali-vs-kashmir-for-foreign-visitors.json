@@ -1,0 +1,13 @@
+{
+ "_note": "Media for /india-tours/manali-vs-kashmir-for-foreign-visitors/ (guide). Hero only, made by the Page Builder (night) 16 Nov 2026 per Visual Studio Step 2 — library photos only (all in CREDITS.md): Manali valley, Dal Lake, Solang (Manali), Gulmarg winter. Captions are places only, no fact claims. No route/cost video (comparison guide).",
+ "hero": {
+  "kicker": "HIMACHAL · KASHMIR",
+  "scenes": [
+   {"img": "px-28206557.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 750}},
+   {"img": "px-25786714.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-17521689.jpg", "kind": "tilt", "from": {"y": 200}, "to": {"y": 700}},
+   {"img": "px-30750204.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 30, "y": 10}}
+  ],
+  "steps": ["MANALI OR KASHMIR?", "DAL LAKE, SRINAGAR", "SOLANG, MANALI", "GULMARG IN WINTER"]
+ }
+}
