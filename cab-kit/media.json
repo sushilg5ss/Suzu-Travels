@@ -884,5 +884,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-to-jim-corbett-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d26ed49e6f0b3fc4136eba49f9ce7cb1ae606b1b/cab-kit/media/delhi-to-jim-corbett-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d26ed49e6f0b3fc4136eba49f9ce7cb1ae606b1b/cab-kit/media/delhi-to-jim-corbett-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@d26ed49e6f0b3fc4136eba49f9ce7cb1ae606b1b/cab-kit/media/delhi-to-jim-corbett-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
