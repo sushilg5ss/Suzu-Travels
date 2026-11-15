@@ -1,0 +1,14 @@
+{
+ "_note": "Media for /india-tours/diwali-in-india-tour/ (guide). Hero only, made by the Page Builder (day) (Visual Studio Step 2). 2 new Pexels diya photos (CREDITS 15 Nov 2026: px-4078516 = poster, px-4094847) + library Varanasi aarti px-27670662, Golden Temple dusk px-28905554, Udaipur City Palace px-17831363 — places all listed by Incredible India as Diwali venues (Golden Temple via Bandi Chhor Divas). Captions use only each photo's allowed caption. No route/cost video.",
+ "hero": {
+  "kicker": "DIWALI IN INDIA",
+  "scenes": [
+   {"img": "px-4078516.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": -20}},
+   {"img": "px-27670662.jpg", "kind": "land", "from": {"scale": 1.1, "x": -30, "y": 10}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-28905554.jpg", "kind": "land", "from": {"scale": 1.04, "x": -30, "y": 0}, "to": {"scale": 1.12, "x": 40, "y": 20}},
+   {"img": "px-17831363.jpg", "kind": "land", "from": {"scale": 1.12, "x": 60, "y": 0}, "to": {"scale": 1.04, "x": 100, "y": 10}},
+   {"img": "px-4094847.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 700}}
+  ],
+  "steps": ["FRI 29 OCT 2027", "EVENING AARTI", "GOLDEN TEMPLE", "UDAIPUR LAKES", "FESTIVAL OF LIGHTS"]
+ }
+}
