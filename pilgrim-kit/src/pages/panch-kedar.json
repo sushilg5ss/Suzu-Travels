@@ -1,0 +1,372 @@
+{
+ "path": "/pilgrimage-tours/panch-kedar/",
+ "parent": 12541,
+ "kind": "circuit",
+ "title": "Panch Kedar Yatra: The Five Shiva Temples, Story, Treks & Dates",
+ "seo_title": "Panch Kedar Yatra: 5 Temples, Story, Treks & Best Time",
+ "seo_desc": "Panch Kedar guide: Kedarnath, Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar — the Pandava legend, treks, 2026 closing dates, route and a sample plan.",
+ "focus": "panch kedar",
+ "label": "Panch Kedar",
+ "blurb": "Five Shiva shrines of the Garhwal Himalaya",
+ "kicker": "Circuit · Garhwal Himalaya, Uttarakhand",
+ "deva": "पंच केदार",
+ "tag": "Five shrines, one Pandava legend.",
+ "sub": "Kedarnath, Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar — the five Shiva temples of Garhwal joined by one Pandava legend. Which is which, how hard each walk is, the 2026 closing dates, where the deities sit in winter and a sample plan to see all five.",
+ "chips": [
+  [
+   "5 temples",
+   "Rudraprayag and Chamoli"
+  ],
+  [
+   "~3,680 m",
+   "Tungnath, the highest"
+  ],
+  [
+   "12–16 days",
+   "all five from Rishikesh"
+  ],
+  [
+   "Kalpeshwar",
+   "open all year"
+  ],
+  [
+   "May–Jun · Sep–Oct",
+   "best months"
+  ]
+ ],
+ "q": "What is the Panch Kedar and which five temples are in it?",
+ "answer": "The <b>Panch Kedar</b> are five Shiva temples in the Garhwal Himalaya of Uttarakhand: <b>Kedarnath, Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar</b>. By tradition, parts of Shiva's bull form appeared at each after he hid from the Pandavas. Four close for winter; <b>Kalpeshwar stays open all year</b>. Seeing all five takes about <b>12–16 days</b> from Rishikesh, with several mountain treks.",
+ "facts": [
+  [
+   "5",
+   "Shiva temples in Rudraprayag and Chamoli districts"
+  ],
+  [
+   "~3,680 m",
+   "Tungnath — widely called the highest Shiva temple"
+  ],
+  [
+   "~18–20 km",
+   "Rudranath walk, the toughest of the five"
+  ],
+  [
+   "12–16 days",
+   "to see all five from Rishikesh"
+  ]
+ ],
+ "intro": [
+  "Kedarnath is the best known of the five and a Jyotirlinga — read our full <a href=\"/pilgrimage-tours/kedarnath/\">Kedarnath Yatra guide</a>. The other four sit in quieter valleys: <b>Tungnath</b> above the meadows of Chopta, <b>Madhyamaheshwar</b> at the end of a long walk from Ransi, <b>Rudranath</b> in high alpine grassland above Gopeshwar, and <b>Kalpeshwar</b> in the green Urgam valley. Three are in Rudraprayag district (Kedarnath, Tungnath, Madhyamaheshwar) and two in Chamoli (Rudranath, Kalpeshwar).",
+  "The Panch Kedar are a different circuit from the Panch Badri and the Panch Prayag, though many pilgrims combine them with <a href=\"/pilgrimage-tours/badrinath/\">Badrinath</a> or the full <a href=\"/pilgrimage-tours/char-dham-yatra/\">Char Dham Yatra</a>. Note that the <b>Omkareshwar temple at Ukhimath</b>, where Kedarnath is worshipped in winter, is not the <a href=\"/pilgrimage-tours/12-jyotirlinga/omkareshwar/\">Omkareshwar Jyotirlinga</a> on the Narmada in Madhya Pradesh. See all our guides on the <a href=\"/pilgrimage-tours/#chardham\">pilgrimage tours</a> page."
+ ],
+ "story": {
+  "h2": "The Panch Kedar legend: Shiva and the Pandavas",
+  "lead": "This is the tradition of the Mahabharata cycle and the Kedar Khand of the Skanda Purana, retold in our own words — a belief held with love, not history.",
+  "beats": [
+   [
+    "Seeking pardon",
+    "After the Kurukshetra war, the Pandavas set out to ask Shiva's forgiveness for the killing of their own kin."
+   ],
+   [
+    "Hidden Kashi",
+    "Shiva did not wish to be found so easily. He left Kashi and hid in the Garhwal hills as a bull — the place near which he hid is called Guptkashi, the hidden Kashi."
+   ],
+   [
+    "Bhima holds on",
+    "The brothers recognised him in a herd. Bhima stood astride two hills so the cattle had to pass below, and as the bull sank into the earth he caught hold of its back."
+   ],
+   [
+    "Five shrines",
+    "The hump stayed at Kedarnath. It is believed the arms appeared at Tungnath, the face at Rudranath, the navel at Madhyamaheshwar and the matted hair at Kalpeshwar — and the Pandavas built a shrine at each."
+   ]
+  ],
+  "more": [
+   "One tradition adds that the head appeared at Pashupatinath in Nepal. Lists of the parts differ a little from one telling to another — Madhyamaheshwar is sometimes called the middle or belly — so read them as tradition, not a fixed record."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "temples",
+   "label": "The five",
+   "kicker": "At a glance",
+   "h2": "The five Panch Kedar temples",
+   "html": "<div class=\"szp-scroll\"><table class=\"szp-tbl\" style=\"min-width:760px\"><thead><tr><th>#</th><th>Temple</th><th>Part of Shiva (tradition)</th><th>Altitude (about)</th><th>Walk from</th><th>Winter seat</th></tr></thead><tbody><tr><td class='n'>1</td><td>Kedarnath <span class='dv'>केदारनाथ</span></td><td>Hump</td><td>3,583 m</td><td>Gaurikund, about 16 km (pony, palki or helicopter)</td><td>Omkareshwar temple, Ukhimath</td></tr><tr><td class='n'>2</td><td>Tungnath <span class='dv'>तुंगनाथ</span></td><td>Arms</td><td>3,680 m</td><td>Chopta, about 3.5 km (Chandrashila about 1.5 km more)</td><td>Makkumath (Markateshwar temple)</td></tr><tr><td class='n'>3</td><td>Rudranath <span class='dv'>रुद्रनाथ</span></td><td>Face</td><td>3,559 m</td><td>Sagar near Gopeshwar, about 18–20 km</td><td>Gopinath temple, Gopeshwar</td></tr><tr><td class='n'>4</td><td>Madhyamaheshwar <span class='dv'>मध्यमहेश्वर</span></td><td>Navel (middle)</td><td>3,490 m</td><td>Ransi, about 16 km via Gaundar</td><td>Omkareshwar temple, Ukhimath</td></tr><tr><td class='n'>5</td><td>Kalpeshwar <span class='dv'>कल्पेश्वर</span></td><td>Matted hair (jata)</td><td>2,200 m</td><td>A short walk from the road head in the Urgam valley</td><td>Open all year</td></tr></tbody></table></div><p class=\"szp-note\">Altitudes and trail lengths differ from source to source (Madhyamaheshwar is quoted anywhere from 8 to 16 km), so treat them as approximate and ask locally about the current trail. The spellings Madhmaheshwar and Madmaheshwar mean the same temple.</p>",
+   "cls": "alt"
+  }
+ ],
+ "dates": {
+  "h2": "Panch Kedar opening and closing dates 2026–27",
+  "rows": [
+   [
+    "Kedarnath 2026",
+    "Opened 22 Apr · closed 11 Nov 2026",
+    "Closed on Bhai Dooj; winter worship at Omkareshwar temple, Ukhimath"
+   ],
+   [
+    "Tungnath 2026",
+    "Closed 6 Nov 2026",
+    "The doli reached Makkumath on 8 Nov (ETV Bharat)"
+   ],
+   [
+    "Madhyamaheshwar 2026",
+    "Closes 16 Nov 2026",
+    "The doli reaches Omkareshwar temple, Ukhimath on 19 Nov via Gaundar, Ransi and Giriya"
+   ],
+   [
+    "Rudranath 2026",
+    "Opened 18 May · closed mid-October",
+    "Now worshipped at Gopinath temple, Gopeshwar"
+   ],
+   [
+    "Kalpeshwar",
+    "Open all year",
+    "The only Panch Kedar temple that does not close for winter"
+   ],
+   [
+    "2027 openings",
+    "Not announced yet",
+    "Kedarnath's date is announced at Ukhimath on Mahashivratri (6 Mar 2027); the other three are usually announced in spring for Apr–May"
+   ]
+  ],
+  "note": "Dates are fixed each year by the temple committee by panchang. We will update this page when the 2027 dates are announced (checked 15 Nov 2026). For the Char Dham dates see our <a href=\"/char-dham-closing-dates-2026/\">Char Dham closing dates 2026</a> post."
+ },
+ "route": {
+  "h2": "The Panch Kedar route by road and on foot",
+  "lead": "Road distances are approximate and hill roads are slow. Traditionally the order is Kedarnath, Tungnath, Rudranath, Madhyamaheshwar, Kalpeshwar; many pilgrims follow the road order below instead.",
+  "stops": [
+   [
+    "~216 km",
+    "Rishikesh to Ukhimath",
+    "ऊखीमठ",
+    "Five to six hours of hill driving up the Alaknanda and Mandakini valleys. Ukhimath is the base and the winter seat of Kedarnath and Madhyamaheshwar."
+   ],
+   [
+    "~42 km",
+    "Ukhimath to Sonprayag",
+    "केदारनाथ",
+    "Shuttle to Gaurikund, then about 16 km on foot to Kedarnath (pony, palki or IRCTC helicopter)."
+   ],
+   [
+    "Ransi",
+    "Madhyamaheshwar",
+    "मध्यमहेश्वर",
+    "Drive from Ukhimath to the road head at Ransi and walk about 16 km via Gaundar to the temple."
+   ],
+   [
+    "~26 km",
+    "Ukhimath to Chopta",
+    "तुंगनाथ",
+    "About 3.5 km on a short but steep path to Tungnath; Chandrashila peak is about 1.5 km further."
+   ],
+   [
+    "~44 km",
+    "Chopta to Gopeshwar",
+    "रुद्रनाथ",
+    "From Sagar near Gopeshwar, about 18–20 km up through forest and high meadows to Rudranath — the hardest walk."
+   ],
+   [
+    "~55 km",
+    "Gopeshwar to Helang",
+    "कल्पेश्वर",
+    "Turn into the Urgam valley; Kalpeshwar is a short walk from the road head."
+   ]
+  ],
+  "note": "Rudranath and Madhyamaheshwar are multi-day treks for fit walkers with a guide. Avoid the monsoon (July–August), when landslides often block these roads."
+ },
+ "reach": {
+  "h2": "How to reach the Panch Kedar",
+  "cards": [
+   [
+    "By air",
+    "Jolly Grant airport, Dehradun, is the nearest. Rishikesh is a short drive away, and the hill journey to Ukhimath starts there."
+   ],
+   [
+    "By train",
+    "Rishikesh and Haridwar stations (Haridwar–Rishikesh about 24 km). Most trips start from either town early in the morning."
+   ],
+   [
+    "By road",
+    "Rishikesh to Ukhimath is about 216 km. Chopta, Sonprayag, Ransi and Gopeshwar are all reached from there — see the route above. For a car, our <a href=\"/cabs/rishikesh-taxi-service/\">Rishikesh taxi</a> page has options."
+   ],
+   [
+    "Helicopter and ponies",
+    "A helicopter runs only for Kedarnath — book it only on heliyatra.irctc.co.in. Ponies and porters work on most of the trails; confirm rates at the counters."
+   ]
+  ]
+ },
+ "tips": {
+  "h2": "Before you go",
+  "items": [
+   [
+    "Registration",
+    "Kedarnath needs the Uttarakhand Char Dham registration on registrationandtouristcare.uk.gov.in. No separate registration is reported for the other four — check the Uttarakhand portal and temple committee notices before you go. Ignore anyone selling \"confirmed\" passes or helicopter tickets."
+   ],
+   [
+    "Which ones suit elders",
+    "Kedarnath (with pony or helicopter), Tungnath (short but steep) and Kalpeshwar (a short walk) are realistic for most families. Rudranath and Madhyamaheshwar are for fit trekkers."
+   ],
+   [
+    "Altitude",
+    "Four of the five temples are above about 3,400 m. Walk slowly, drink water and see a doctor first if you have heart, breathing or blood-pressure problems."
+   ],
+   [
+    "Best time",
+    "May–June and September–October. In winter you can still pray at the winter seats — Ukhimath, Makkumath, Gopeshwar — and at Kalpeshwar, all by road."
+   ],
+   [
+    "Carry",
+    "Photo ID and your Kedarnath registration; warm layers, a rain shell, grippy shoes and a stick; a torch, personal medicines and some cash, as networks are patchy."
+   ]
+  ]
+ },
+ "itinerary": {
+  "h2": "A sample 13-day Panch Kedar plan from Rishikesh",
+  "days": [
+   [
+    "1",
+    "Rishikesh → Ukhimath",
+    "About 216 km. Evening darshan at the Omkareshwar temple."
+   ],
+   [
+    "2",
+    "Ukhimath → Gaurikund → Kedarnath",
+    "Drive to Sonprayag, shuttle to Gaurikund and walk about 16 km to Kedarnath."
+   ],
+   [
+    "3",
+    "Kedarnath → Sonprayag",
+    "Morning darshan, walk down and drive back towards Ukhimath."
+   ],
+   [
+    "4",
+    "Ransi → Gaundar",
+    "Drive to Ransi and walk to the halt at Gaundar."
+   ],
+   [
+    "5",
+    "Madhyamaheshwar",
+    "Walk up to the temple for darshan and stay the night."
+   ],
+   [
+    "6",
+    "Madhyamaheshwar → Ukhimath",
+    "Walk back to Ransi and drive to Ukhimath or Chopta."
+   ],
+   [
+    "7",
+    "Tungnath and Chandrashila",
+    "Early walk from Chopta to Tungnath, on to Chandrashila for the sunrise peaks, and back."
+   ],
+   [
+    "8",
+    "Chopta → Gopeshwar",
+    "About 44 km. Darshan at the Gopinath temple."
+   ],
+   [
+    "9",
+    "Sagar → Rudranath trail",
+    "Start the long walk from Sagar with a guide and halt on the way."
+   ],
+   [
+    "10",
+    "Rudranath",
+    "Darshan at Rudranath, where Shiva is worshipped as the face."
+   ],
+   [
+    "11",
+    "Rudranath → Gopeshwar",
+    "Walk down to Sagar and drive back to Gopeshwar."
+   ],
+   [
+    "12",
+    "Kalpeshwar",
+    "Drive about 55 km to Helang, into the Urgam valley, and walk to Kalpeshwar."
+   ],
+   [
+    "13",
+    "Return",
+    "Long drive back towards Rishikesh, or keep it as a spare day for weather."
+   ]
+  ]
+ },
+ "packages": [
+  "dodham",
+  "chardham"
+ ],
+ "quote_h2": "Plan your Panch Kedar Yatra with Suzu",
+ "quote_text": "We are a Himachal travel agent based in Bilaspur who plan Uttarakhand yatras by road. Tell us how many of the five you want to see and your group's fitness — we plan cars, stays, guides and spare days for weather, and can combine Panch Kedar with Kedarnath, Badrinath or the Char Dham. You do the official registration; we plan the rest.",
+ "wa": "Namaste Suzu Travels, I want to plan a yatra to Panch Kedar. From city: ___ , dates: ___ , people: ___",
+ "links": [
+  "kedarnath",
+  "badrinath",
+  "char-dham-yatra",
+  "12-jyotirlinga"
+ ],
+ "trip_name": "Panch Kedar Yatra (Kedarnath, Tungnath, Rudranath, Madhyamaheshwar, Kalpeshwar)",
+ "media_slug": "panch-kedar",
+ "faqs": [
+  [
+   "What are the Panch Kedar temples?",
+   "Five Shiva temples in the Garhwal Himalaya: Kedarnath, Tungnath, Rudranath, Madhyamaheshwar and Kalpeshwar. By tradition, parts of Shiva's bull form appeared at each."
+  ],
+  [
+   "What is the Panch Kedar story?",
+   "According to tradition, the Pandavas sought Shiva's pardon after the Kurukshetra war. He hid from them as a bull, sank into the earth when found, and parts of his body appeared at five places."
+  ],
+  [
+   "Which Panch Kedar temple is open all year?",
+   "Kalpeshwar, in the Urgam valley of Chamoli district. The other four close for winter."
+  ],
+  [
+   "Which is the highest Panch Kedar temple?",
+   "Tungnath, at about 3,680 m — widely regarded as the highest Shiva temple in the world. The walk from Chopta is about 3.5 km."
+  ],
+  [
+   "Which Panch Kedar trek is the hardest?",
+   "Rudranath, about 18–20 km from Sagar near Gopeshwar, followed by Madhyamaheshwar, about 16 km from Ransi."
+  ],
+  [
+   "When did the Panch Kedar temples close in 2026?",
+   "Rudranath closed in mid-October, Tungnath on 6 November and Kedarnath on 11 November; Madhyamaheshwar closes on 16 November 2026. Kalpeshwar stays open."
+  ],
+  [
+   "How many days does the Panch Kedar Yatra take?",
+   "About 12–16 days from Rishikesh for all five, depending on weather, fitness and the order you choose."
+  ],
+  [
+   "Where are the Panch Kedar deities worshipped in winter?",
+   "Kedarnath and Madhyamaheshwar at the Omkareshwar temple, Ukhimath; Tungnath at Makkumath; Rudranath at the Gopinath temple, Gopeshwar."
+  ]
+ ],
+ "sources": [
+  [
+   "Badrinath-Kedarnath Temple Committee — other temples (official)",
+   "https://badrinath-kedarnath.gov.in/other-temples/Other-Temples.aspx"
+  ],
+  [
+   "Uttarakhand tourist registration portal (official)",
+   "https://registrationandtouristcare.uk.gov.in/"
+  ],
+  [
+   "ETV Bharat — Kedarnath, Tungnath and Madhmaheshwar closing dates (20 Oct 2026)",
+   "https://www.etvbharat.com/hi/bharat/doors-of-kedarnath-shrine-in-uttarakhand-will-close-on-november-11-utn26102001912"
+  ],
+  [
+   "Aaj Tak — Rudranath doors open on 18 May (17 May 2026)",
+   "https://www.aajtak.in/religion/news/story/chardham-yatra-2026-rudranath-temple-gates-to-open-on-may-18-panch-kedar-tvisu-rptc-2554931-2026-05-17"
+  ],
+  [
+   "Amar Ujala — Rudranath doors close for winter (2025)",
+   "https://www.amarujala.com/dehradun/fourth-kedar-rudranath-temple-doors-will-be-closed-for-winter-season-on-17-october-2025-09-28"
+  ],
+  [
+   "Wikipedia — Panch Kedar",
+   "https://en.wikipedia.org/wiki/Panch_Kedar"
+  ],
+  [
+   "Indiahikes — Panch Kedar trek",
+   "https://indiahikes.com/documented-trek/panch-kedar-trek"
+  ]
+ ],
+ "verified": "15 Nov 2026",
+ "modified": "2026-11-15"
+}
