@@ -442,5 +442,14 @@
   "blurb": "Shark's Fin, shale bands and granite walls",
   "added": "2026-11-14",
   "commercial": false
+ },
+ "best-time-for-mountaineering-in-india": {
+  "id": 22538,
+  "path": "/mountains-of-india/best-time-for-mountaineering-in-india/",
+  "kind": "guide",
+  "label": "Best time for mountaineering in India",
+  "blurb": "Month-by-month windows, region by region",
+  "added": "2026-11-15",
+  "commercial": true
  }
 }
