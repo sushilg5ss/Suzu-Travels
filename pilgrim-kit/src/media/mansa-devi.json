@@ -10,5 +10,30 @@
    "Raja Gopal Singh built it, 1815",
    "Two Navratri melas fill the hill"
   ]
+ },
+ "story": {
+  "title": "The legend of Mansa Devi",
+  "beats": [
+   {
+    "arch": "hills",
+    "sky": "dawn",
+    "line": "Milk flows over three hill stones"
+   },
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "The stones honoured as Sati's forehead"
+   },
+   {
+    "arch": "devi",
+    "sky": "dusk",
+    "line": "A devoted raja builds the temple"
+   },
+   {
+    "arch": "devi",
+    "sky": "saffron",
+    "line": "Navratri lamps light up the hill"
+   }
+  ]
  }
 }

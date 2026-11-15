@@ -10,5 +10,30 @@
    "Rama prayed here for the Brahmastra",
    "Yellow offerings and night havans"
   ]
+ },
+ "story": {
+  "title": "The legend of Baglamukhi",
+  "beats": [
+   {
+    "arch": "lake",
+    "sky": "night",
+    "line": "A storm rises to swallow all creation"
+   },
+   {
+    "arch": "lake",
+    "sky": "saffron",
+    "line": "She rises from a lake of turmeric"
+   },
+   {
+    "arch": "pillar",
+    "sky": "dusk",
+    "line": "Rama prays here for the Brahmastra"
+   },
+   {
+    "arch": "devi",
+    "sky": "dawn",
+    "line": "Yellow flags, night havans, quiet faith"
+   }
+  ]
  }
 }
