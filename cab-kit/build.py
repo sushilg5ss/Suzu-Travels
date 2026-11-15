@@ -564,6 +564,30 @@ def hub_trim(m):
     m = re.sub(r'<button data-plan-route="([^"]*)&gt;([^"]*)">\1 → \2</button>', r"<button>\1 → \2</button>", m)
     return m
 
+# 15 Nov 2026 (ENHANCEMENTS #24): hub size headroom lever #2. A FIXED list of literal attribute strings that are written
+# without quotes on the hub (valid HTML5: the value is one token with no space, quote, =, <, >, backtick, &, /, [ or ]).
+# Never ids, hrefs/srcs, img/video/source tags, data-inr, the .szc wrapper or style. A pair is applied only when EVERY
+# occurrence in the page sits outside <script>/<style> (so the kit script stays byte-identical) - this also makes each pair
+# one literal wp_replace_in_page (find -> replace, all occurrences) on the stored hub. Add new pairs at the END only.
+HUB_UNQ = ['class="szc-card-b"', 'class="acts"', 'class="rc-top"', 'class="from"', 'class="to"', 'class="line"', 'class="price"',
+           'class="szc-card"', 'class="szc-kicker"', 'class="szc-ph"', 'class="szc-seats"', 'class="szc-view"', 'class="meta"',
+           'class="rate"', 'class="szc-chip"', 'class="szc-tip"', 'class="b"', 'class="szc-sec"', 'type="number"', 'class="szc-lead"',
+           'min="1"', 'data-tier="standard"', 'data-type="muv"', 'class="szc-step"', 'type="date"', 'type="submit"', 'value="2"',
+           'class="szc-grid"', 'class="szc-tier"', 'data-tier="prime"', 'aria-pressed="true"', 'data-tier="saver"',
+           'class="full"', 'value="3"', 'class="lbl"', 'data-seats="6"', 'data-type="bus"']
+HUB_UNQ_CTX = [('<button type="button"', '<button type=button')]  # NOT target=_blank: a site the_content filter (adds rel=noopener)
+# mangles an unquoted target into '=_blank target="_blank"' (live test 15 Nov 2026) - keep every <a> attribute quoted
+
+def hub_unquote_pairs():
+    return [(" " + a, " " + a.replace('"', "")) for a in HUB_UNQ] + HUB_UNQ_CTX
+
+def hub_unquote(m):
+    for f, r in hub_unquote_pairs():
+        code = "".join(re.findall(r"<script\b.*?</script>|<style\b.*?</style>", m, flags=re.S))
+        if f in m and f not in code:
+            m = m.replace(f, r)
+    return m
+
 def finish(slug, h, css_extra=""):
     # the hero FILM_JS (#14) is the first <script> now - escape the HTML on both sides of it exactly as before
     h = FILM_JS.join(_amp(x) for x in h.split(FILM_JS, 1)) if FILM_JS in h else _amp(h)
@@ -616,6 +640,8 @@ def finish(slug, h, css_extra=""):
         js0 = m.rsplit("<script>", 1)[-1].split("</script>")[0]
         js1 = hub_min_js(js0)
         m = m[: m.rfind(js0)] + js1 + m[m.rfind(js0) + len(js0):]
+    if slug == "cabs":  # 15 Nov 2026 (ENHANCEMENTS #24): hub headroom lever #2 - HTML5 unquoted attribute values (see hub_unquote())
+        m = hub_unquote(m)
     kitjs = m.rsplit("<script>", 1)[-1].split("</script>")[0]
     if "&" in kitjs and slug == "cabs":
         sys.exit(f"BUILD REFUSED {slug}: '&' in the minified kit script")
