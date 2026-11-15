@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-15-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.0 golden-hour slots: sunrise/sunset times in day plan + Taj Friday-sunrise warning",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "c627bcdb9b3d0f85da20e0e69d552ff6a8b446ca3a41851e5cd25a80793d60a5",
+   "base_sha256": "d61242b1d6c0197d3ef875d40003a31d703524536a21e27ca9649771cb5271c8",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 391048
+  }
+ ]
+}
