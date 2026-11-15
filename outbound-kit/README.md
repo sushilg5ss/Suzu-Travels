@@ -31,6 +31,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /armenia-tour-packages/ | 17234 | `.hx` country page (1 Nov 2026) — `pages/gen_armenia.py` (Yerevan–Garni/Geghard–Sevan/Dilijan–Khor Virap/Noravank–Tatev; 6-day itinerary grid = 3 columns; Wikimedia Commons photos) |
 | /hong-kong-tour-packages/ | 21727 | `.hx` country page (13 Nov 2026) — `pages/gen_hongkong.py` (Hong Kong + Macau; 6-day itinerary grid = 3 columns; Wikimedia Commons photos; extra phone hero padding for the 3-line title) |
 | /china-tour-packages/ | 22271 | `.hx` country page (14 Nov 2026) — `pages/gen_china.py` (Beijing–Xi'an–Shanghai + Zhangjiajie/Guilin add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery = first photo spans 2 columns, 1 row; Wikimedia Commons photos) |
+| /russia-tour-packages/ | 22487 | `.hx` country page (15 Nov 2026) — `pages/gen_russia.py` (Moscow + Saint Petersburg + Kazan/Sergiev Posad add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery like China; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -73,3 +74,9 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Commons API (commons.wikimedia.org/w/api.php) and api.wikimedia.org returned 429 after 1–3 requests; spacing 20–45 s worked slowly. `api.wikimedia.org/core/v1/commons/search/page?q=…` (search) and `/core/v1/commons/page/<File:…>` (wikitext → licence template + author) were the usable routes. WebFetch was blocked (permission prompt unanswered).
 - Big page bodies: create the page as a draft, then send content in ~13–18 KB chunks — `wp_update_page` with a marker at the end, then `wp_replace_in_page` marker → next chunk + next marker (expected_count 1). `content_length` returned by the tool is UTF-8 bytes — compare with `len(s.encode())` of the local build.
 - Hub: local `hub.html` is 22 bytes longer than the live hub content (pre-existing drift before this run; all 8 China edits applied cleanly with expected_count 1).
+
+## Notes (15 Nov 2026)
+- Commons worked today via the HTML search (`commons.wikimedia.org/w/index.php?search=…&ns6=1`, ~4 s apart) and the raw wikitext (`index.php?title=File:…&action=raw`) for licence/author; api.wikimedia.org returned 429 at once. Thumb URL = `upload.wikimedia.org/wikipedia/commons/thumb/<md5[0]>/<md5[:2]>/<name>/1920px-<name>` (md5 of the underscored file name); WordPress fetched them fine.
+- User templates: `{{User:Argenberg/License}}` = CC BY 4.0 (Vyacheslav Argenberg); `{{User:Moroder/Template:Credits}}` = Diego Delso, delso.photo, CC BY-SA. A file with only `{{User:Florstein/Inf…}}` showed no licence in raw text — skipped.
+- Hub edits: build old hub from `git show HEAD:` files, tokenise both builds on `>` and diff with difflib (plain char difflib on 135 KB times out).
+- Never chain `rm` after a generator with `&&` in the same shell line as a heredoc that may fail (lost a temp file on 15 Nov; china html restored with git checkout).

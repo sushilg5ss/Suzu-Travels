@@ -2560,5 +2560,145 @@
   "src": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
   "wp_id": 22258,
   "med": "https://suzutravels.com/wp-content/uploads/2026/11/china-great-wall-mutianyu-768x575.webp"
+ },
+ "russia-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-saint-basils-cathedral-red-square.webp",
+  "alt": "Saint Basil's Cathedral on Red Square in Moscow, with snow on the square",
+  "cap": "Saint Basil's Cathedral, Red Square",
+  "credit": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Saint_Basil's_Cathedral,_Red_Square,_Moscow,_Russia.jpg",
+  "wp_id": 22470,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-saint-basils-cathedral-red-square-768x512.webp"
+ },
+ "russia-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-kremlin-embankment-sunset.webp",
+  "alt": "The Kremlin walls, towers and cathedrals above the Moskva River at sunset, with a river boat, Moscow",
+  "cap": "Kremlin from the Moskva River",
+  "credit": "Юрий Д.К.",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Moscow_-_2025_-_The_Kremlin_Embankment_at_sunset.jpg",
+  "wp_id": 22471,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-kremlin-embankment-sunset-768x512.webp"
+ },
+ "russia-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-church-of-the-savior-on-blood-griboedov-canal.webp",
+  "alt": "Church of the Savior on Spilled Blood seen along the Griboedov Canal, Saint Petersburg",
+  "cap": "Church of the Savior on Blood",
+  "credit": "Diego Delso, delso.photo",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:View_of_the_Church_of_the_Savior_on_Blood_from_the_Griboedov_Canal.jpg",
+  "wp_id": 22472,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-church-of-the-savior-on-blood-griboedov-canal-768x512.webp"
+ },
+ "russia-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-peterhof-grand-cascade-samson-fountain.webp",
+  "alt": "Grand Cascade and Samson Fountain in front of the Grand Peterhof Palace",
+  "cap": "Peterhof Grand Cascade",
+  "credit": "Malena Cora",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Grand_Cascade_Peterhof.jpg",
+  "wp_id": 22473,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-peterhof-grand-cascade-samson-fountain-768x509.webp"
+ },
+ "russia-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-winter-palace-summer-morning.webp",
+  "alt": "The Winter Palace (State Hermitage Museum) on a sunny morning, Saint Petersburg",
+  "cap": "Winter Palace, Hermitage",
+  "credit": "Никонико962",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Зимний_дворец_лето_утро_Санкт-Петербург_2026_01.jpg",
+  "wp_id": 22484,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-winter-palace-summer-morning-768x509.webp"
+ },
+ "russia-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-skyline-from-new-arbat.webp",
+  "alt": "Moscow skyline with the Moscow City towers, seen from New Arbat",
+  "cap": "Moscow skyline and Moscow City",
+  "credit": "Александр Сигачёв",
+  "license": "CC0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Moscow_-_Skyline_-_2026-09_-_p02.jpg",
+  "wp_id": 22475,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-skyline-from-new-arbat-768x385.webp"
+ },
+ "russia-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-metro-komsomolskaya-station.webp",
+  "alt": "Chandeliers and yellow ceiling mosaics in Komsomolskaya metro station, Moscow",
+  "cap": "Komsomolskaya metro station",
+  "credit": "Jorge Láscar",
+  "license": "CC BY 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Komsomolskaya_(Koltsevaya_Line)_(19972776411).jpg",
+  "wp_id": 22476,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-metro-komsomolskaya-station-768x512.webp"
+ },
+ "russia-8": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-bolshoi-theatre-facade.webp",
+  "alt": "Pediment and Apollo chariot sculpture on the facade of the Bolshoi Theatre, Moscow",
+  "cap": "Bolshoi Theatre",
+  "credit": "Юрий Д.К.",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Moscow_-_2026_-_Facade_of_the_Bolshoi_Theatre.jpg",
+  "wp_id": 22477,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-bolshoi-theatre-facade-768x519.webp"
+ },
+ "russia-9": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-tsarskoye-selo-catherine-palace.webp",
+  "alt": "Catherine Palace at Tsarskoye Selo (Pushkin), near Saint Petersburg",
+  "cap": "Catherine Palace, Pushkin",
+  "credit": "Andrey Korchagin",
+  "license": "CC BY-SA 2.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Ekaterininsky_Palace._Tsarskoe_Selo._(34760026411).jpg",
+  "wp_id": 22478,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-tsarskoye-selo-catherine-palace-768x509.webp"
+ },
+ "russia-10": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-moyka-river-saint-isaacs-dome.webp",
+  "alt": "Moyka River with the dome of Saint Isaac's Cathedral in the distance, Saint Petersburg",
+  "cap": "Moyka River, Saint Petersburg",
+  "credit": "Diego Delso, delso.photo",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Saint_Isaacs_cathedral_from_Moyca_river.jpg",
+  "wp_id": 22479,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-moyka-river-saint-isaacs-dome-768x512.webp"
+ },
+ "russia-11": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-sergiev-posad-trinity-lavra-assumption-cathedral.webp",
+  "alt": "Assumption Cathedral with blue and gold domes at the Trinity Lavra of St. Sergius, Sergiev Posad",
+  "cap": "Trinity Lavra, Sergiev Posad",
+  "credit": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Sergiev_Posad,_Russia,_The_Trinity_Lavra,_The_Assumption_Cathedral.jpg",
+  "wp_id": 22485,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-sergiev-posad-trinity-lavra-assumption-cathedral-768x510.webp"
+ },
+ "russia-12": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-kazan-kremlin-kul-sharif-mosque.webp",
+  "alt": "Kul Sharif Mosque inside the Kazan Kremlin",
+  "cap": "Kul Sharif Mosque, Kazan",
+  "credit": "Mike1979 Russia",
+  "license": "CC BY-SA 3.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Kazan_Kul_Sharif_Mosque_2024-07-13_1341.jpg",
+  "wp_id": 22482,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-kazan-kremlin-kul-sharif-mosque-768x512.webp"
+ },
+ "russia-13": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-winter-palace-palace-square-aerial.webp",
+  "alt": "Aerial view of the Winter Palace and Palace Square, Saint Petersburg",
+  "cap": "Winter Palace from the air",
+  "credit": "Godot13",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:RUS-2016-Aerial-SPB-Winter_Palace.jpg",
+  "wp_id": 22483,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-st-petersburg-winter-palace-palace-square-aerial-768x512.webp"
+ },
+ "russia": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-saint-basils-cathedral-red-square.webp",
+  "alt": "Saint Basil's Cathedral on Red Square in Moscow, with snow on the square",
+  "cap": "Saint Basil's Cathedral, Red Square",
+  "credit": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Saint_Basil's_Cathedral,_Red_Square,_Moscow,_Russia.jpg",
+  "wp_id": 22470,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/russia-moscow-saint-basils-cathedral-red-square-768x512.webp"
  }
 }
