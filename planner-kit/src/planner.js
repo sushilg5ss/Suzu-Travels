@@ -58,6 +58,18 @@
   var WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   function fmtD(d) { return WD[d.getDay()] + ', ' + d.getDate() + ' ' + MS[d.getMonth()]; }
   function fmtLong(d) { return d.getDate() + ' ' + MS[d.getMonth()] + ' ' + d.getFullYear(); }
+  /* v2.0 golden-hour slots: NOAA sunrise/sunset (zenith 90.833), minutes after midnight IST; ±5 min, hills hide the horizon a bit */
+  function sunIST(lat, lon, d) {
+    var R = Math.PI / 180, N = Math.round((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 0)) / 864e5), g = 2 * Math.PI / 365 * (N - 1);
+    var eq = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g));
+    var dec = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g) - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g) - 0.002697 * Math.cos(3 * g) + 0.00148 * Math.sin(3 * g);
+    var c = (Math.cos(90.833 * R) - Math.sin(lat * R) * Math.sin(dec)) / (Math.cos(lat * R) * Math.cos(dec));
+    if (c > 1 || c < -1) return null;
+    var ha = Math.acos(c) / R;
+    return { rise: 720 - 4 * (lon + ha) - eq + 330, set: 720 - 4 * (lon - ha) - eq + 330 };
+  }
+  function clk(m) { m = Math.round(m / 5) * 5; var h = Math.floor(m / 60), mm = m % 60; return (h > 12 ? h - 12 : h) + ':' + (mm < 10 ? '0' : '') + mm + (h >= 12 ? ' PM' : ' AM'); }
+  function slotOf(s) { return /sunrise/i.test(s.n) ? 1 : /sunset|aarti|Wagah Border/i.test(s.n) ? 3 : 2; }
   function hrs(m) { if (m < 50) return Math.max(10, Math.round(m / 5) * 5) + ' min'; var h = m / 60; return '~' + (h < 10 ? Math.round(h * 2) / 2 : Math.round(h)) + ' h'; }
   function ev(n, p) { try { if (typeof gtag === 'function') gtag('event', n, p || {}); } catch (e) {} }
   function toast(t) { var x = $('#toast'); x.textContent = t; x.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { x.classList.remove('on'); }, 2600); }
@@ -277,6 +289,7 @@
           if (s.km >= 80) break;
         }
         if (!ld.sights.length) ld.sights.push({ n: 'Free day — relax, cafés, local markets', km: 15 });
+        ld.sights.sort(function (a, b) { return slotOf(a) - slotOf(b); });
         ld.localKm = Math.max(budget, 20); kmLocal += ld.localKm;
         out.days.push(ld); nights.push({ id: st.id, date: date });
         date = addD(date, 1);
@@ -335,6 +348,7 @@
       var hot = out.days.some(function (dy) { var m = dy.date.getMonth() + 1; return m >= 4 && m <= 6 && ['rajasthan', 'up'].indexOf(PL[dy.to].region) > -1; });
       if (hot) out.warn.push({ k: 'heat', t: 'April–June is very hot in Rajasthan and Agra (40 °C+ afternoons). We schedule forts and the Taj for early morning; October–March is the comfortable season.' });
       out.days.forEach(function (dy) { if ((dy.to === 'agra' || dy.stay === 'agra') && dy.date.getDay() === 5 && !out.warn.some(function (w) { return w.k === 'taj'; })) out.warn.push({ r: 1, k: 'taj', t: 'Taj Mahal is closed on Fridays and your Agra day falls on a Friday — shift the trip by a day or we plan the Taj for the next morning.' }); });
+      out.days.forEach(function (dy) { var tj = dy.sights.some(function (x) { return /^Taj Mahal/.test(x.n); }); if (tj && addD(dy.date, dy.type === 'local' ? 0 : 1).getDay() === 5 && !out.warn.some(function (w) { return w.k === 'taj'; })) out.warn.push({ r: 1, k: 'taj', t: 'Taj Mahal is closed on Fridays and your Taj sunrise falls on a Friday morning — shift the trip by a day or we plan the Taj for the evening before (Mehtab Bagh view) instead.' }); });
     })();
     /* Navratri crowds at Mata temples (dates: research/festivals.md) */
     (function () {
@@ -678,7 +692,13 @@
       L.push(pick + ' to ' + PL[dy.to].name + '.');
     }
     dy.via.forEach(function (v) { L.push((PL[v.id].kind === 'temple' ? '🛕 Darshan at ' : 'Stop at ') + PL[v.id].name + (v.sight ? ' — ' + v.sight.n : '') + ' on the way.'); });
-    dy.sights.forEach(function (s, i) { L.push((dy.type === 'local' || dy.to === 'chandanwari' ? '' : 'Evening: ') + s.n + (s.note ? ' (' + s.note + ')' : '') + '.'); });
+    var sun = dy.sights.length ? sunIST(PL[dy.to].lat, PL[dy.to].lon, dy.date) : null, nxt = sun ? sunIST(PL[dy.to].lat, PL[dy.to].lon, addD(dy.date, 1)) : null;
+    dy.sights.forEach(function (s, i) {
+      var sl = sun ? slotOf(s) : 2, local = dy.type === 'local' || dy.to === 'chandanwari', txt = s.n + (s.note ? ' (' + s.note + ')' : '') + '.';
+      if (sl === 1) L.push(local ? '🌅 Sunrise about ' + clk(sun.rise) + ': ' + txt : '🌅 Next morning, sunrise about ' + clk(nxt.rise) + ': ' + txt);
+      else if (sl === 3) L.push('🌇 Sunset about ' + clk(sun.set) + ': ' + txt);
+      else L.push((local ? '' : 'Evening: ') + txt);
+    });
     if (dy.type === 'arrive' && PL[dy.to].tip) L.push(PL[dy.to].tip + '.');
     if (dy.type === 'travel' && !dy.trek && PL[dy.to].tip) L.push('Tip: ' + PL[dy.to].tip + '.');
     if (dy.type === 'depart') L.push(dy.km ? 'Drop at ' + PL[dy.to].name + ' — journey ends with happy memories.' : 'Check out and drop at the airport / station.');

@@ -168,6 +168,17 @@ const { chromium, devices } = require('playwright');
       r.kashi.hi.englishLeft = r.kashi.hi.days.join(' ').match(/Kashi Vishwanath|Ganga Aarti|Sangam|Hanuman|Anand Bhawan|Ram Janmabhoomi|Saryu|Sarnath/g) || [];
       await p3.screenshot({ path: `${out}/${name}-4i-kashi-hi.png`, fullPage: true });
     }
+    { // v2.0 golden-hour slots: sunrise sights first, sunset/aarti last, with IST times (EN + HI)
+      const gl = async (l) => { const st = { v: 1, s: 'delhi', e: 'delhi', d: '2026-12-10', a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['agra', 1], ['jaipur', 2]], x: [], tp: '' }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return p3.$$eval('.tl-day li', x => x.map(y => y.textContent)); };
+      const en = await gl(''), hi = await gl('hi');
+      const sr = en.filter(t => /^🌅/.test(t)), ss = en.filter(t => /^🌇/.test(t));
+      r.golden = { sunrise: sr, sunset: ss, hiSun: hi.filter(t => /^🌅|^🌇/.test(t)), tajWarn: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).length > 0 };
+      r.golden.ok = sr.some(t => /about [67]:\d\d AM/.test(t)) && ss.some(t => /about 5:\d\d PM/.test(t)) && r.golden.hiSun.length === sr.length + ss.length && r.golden.hiSun.every(t => /सूर्योदय लगभग|सूर्यास्त लगभग/.test(t) && !/Sunrise|Sunset|Taj Mahal|Nahargarh|Mehtab/.test(t));
+      await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+    }
     await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.close();
     // agent mode client link
