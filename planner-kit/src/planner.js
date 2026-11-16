@@ -363,6 +363,18 @@
         return true;
       });
     })();
+    /* Christmas – New Year rush in the popular hill towns (24 Dec – 1 Jan) */
+    (function () {
+      var RUSH = { manali: 'Solang Valley and the Atal Tunnel road', shimla: 'Kufri, the Mall Road and the Shimla bypass', kasauli: 'the Kasauli – Dharampur road', dharamshala: 'McLeod Ganj', dalhousie: 'Khajjiar and the Dalhousie Mall', mussoorie: 'Kempty Falls and the Mall Road', nainital: 'the Nainital town entry and Mall Road', gulmarg: 'the Tangmarg – Gulmarg road', auli: 'the Joshimath – Auli road' };
+      out.days.some(function (dy) {
+        var ids = [dy.to, dy.stay].concat(dy.via.map(function (v) { return v.id; }));
+        var hit = ids.filter(function (id) { return RUSH[id]; })[0]; if (!hit) return false;
+        var m = dy.date.getMonth() + 1, d = dy.date.getDate();
+        if (!((m === 12 && d >= 24) || (m === 1 && d <= 1))) return false;
+        out.warn.push({ r: 0, k: 'xmas', t: 'Your ' + PL[hit].name + ' days fall in the Christmas – New Year rush (24 Dec – 1 Jan): hotels sell out early and traffic near ' + RUSH[hit] + ' can stand still for hours. Confirm early; we start sightseeing by 8 AM. After fresh snow, police may stop cars short of the snow points — the driver then takes you as far as allowed.' });
+        return true;
+      });
+    })();
     /* ---- cab ---- */
     var totalDays = out.days.length, nNights = nights.length;
     var av = autoVeh(out.route), v, cnt;

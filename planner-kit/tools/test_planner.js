@@ -179,6 +179,16 @@ const { chromium, devices } = require('playwright');
       r.golden.ok = sr.some(t => /about [67]:\d\d AM/.test(t)) && ss.some(t => /about 5:\d\d PM/.test(t)) && r.golden.hiSun.length === sr.length + ss.length && r.golden.hiSun.every(t => /सूर्योदय लगभग|सूर्यास्त लगभग/.test(t) && !/Sunrise|Sunset|Taj Mahal|Nahargarh|Mehtab/.test(t));
       await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     }
+    { // v2.1 Christmas – New Year rush note (Manali 26 Dec; not on 10 Dec) EN + HI
+      const xm = async (d, l) => { const st = { v: 1, s: 'chandigarh', e: 'chandigarh', d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: [['shimla', 2], ['manali', 3]], x: [], tp: '' }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return p3.$$eval('.warn', x => x.map(y => y.textContent)); };
+      const on = await xm('2026-12-26', ''), off = await xm('2026-12-05', ''), hi = await xm('2026-12-26', 'hi');
+      r.xmas = { on: on.filter(t => /New Year rush/.test(t)), offHit: off.some(t => /New Year rush/.test(t)), hi: hi.filter(t => /नए साल की भीड़/.test(t)) };
+      r.xmas.ok = r.xmas.on.length === 1 && /Shimla/.test(r.xmas.on[0]) && !r.xmas.offHit && r.xmas.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.xmas.hi[0].replace(/Shimla|शिमला/g, ''));
+      await p3.screenshot({ path: `${out}/${name}-4j-xmas-hi.png`, fullPage: true });
+    }
     await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.close();
     // agent mode client link
