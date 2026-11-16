@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-16-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.1 Christmas-New Year rush note for hill towns (EN+HI)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "6a8f4105b6e31a0027cf948a47271bc9f73ca79bdf31540034e3a2c8175b44cd",
+   "base_sha256": "c627bcdb9b3d0f85da20e0e69d552ff6a8b446ca3a41851e5cd25a80793d60a5",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 394404
+  }
+ ]
+}
