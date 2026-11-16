@@ -58,7 +58,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 43 | [x] chandigarh-to-amritsar-taxi — LIVE 2026-11-13 https://suzutravels.com/cabs/chandigarh-to-amritsar-taxi/ (ID 21688) | chandigarh to amritsar taxi | 480 | NEW 29 Oct. Links chandigarh-taxi-service, amritsar-taxi-service |
 | 44 | [x] chandigarh-to-kasauli-taxi — LIVE 2026-11-14 https://suzutravels.com/cabs/chandigarh-to-kasauli-taxi/ (ID 22239) | chandigarh to kasauli taxi | 390 (+ delhi to kasauli 140) | NEW 29 Oct. Short hill transfer, Kasauli PLACE exists (planner) |
 | 45 | [x] delhi-to-jim-corbett-taxi — LIVE 2026-11-15 https://suzutravels.com/cabs/delhi-to-jim-corbett-taxi/ (ID 22455) | delhi to jim corbett taxi | 390 | NEW 29 Oct. Ramnagar |
-| 46 | [ ] delhi-airport-taxi | delhi airport taxi | 480 (LOW) | NEW 1 Nov. IGI T1/T2/T3 pickups to the hill routes (Shimla, Manali, Haridwar, Agra …); links outstation-cab-delhi |
+| 46 | [x] delhi-airport-taxi — LIVE 2026-11-16 https://suzutravels.com/cabs/delhi-airport-taxi/ (ID 22650) | delhi airport taxi | 480 (LOW) | NEW 1 Nov. IGI T1/T2/T3 pickups to the hill routes (Shimla, Manali, Haridwar, Agra …); links outstation-cab-delhi |
 | 47 | [ ] amritsar-to-dalhousie-taxi | amritsar to dalhousie taxi | 320 (MEDIUM) | NEW 1 Nov. Via Pathankot; links amritsar-taxi-service, pathankot-to-dalhousie-taxi |
 | 48 | [ ] amritsar-to-dharamshala-taxi | amritsar to dharamshala taxi | 260 (HIGH comp.) | (was 33) |
 | 49 | [ ] manali-taxi-package | manali taxi package | 260 (LOW; peak 590 May) | NEW 1 Nov. Multi-stop package page (per-day price, Solang/Atal/Rohtang via union taxis) |
