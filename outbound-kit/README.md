@@ -32,6 +32,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /hong-kong-tour-packages/ | 21727 | `.hx` country page (13 Nov 2026) — `pages/gen_hongkong.py` (Hong Kong + Macau; 6-day itinerary grid = 3 columns; Wikimedia Commons photos; extra phone hero padding for the 3-line title) |
 | /china-tour-packages/ | 22271 | `.hx` country page (14 Nov 2026) — `pages/gen_china.py` (Beijing–Xi'an–Shanghai + Zhangjiajie/Guilin add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery = first photo spans 2 columns, 1 row; Wikimedia Commons photos) |
 | /russia-tour-packages/ | 22487 | `.hx` country page (15 Nov 2026) — `pages/gen_russia.py` (Moscow + Saint Petersburg + Kazan/Sergiev Posad add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery like China; Wikimedia Commons photos) |
+| /new-zealand-tour-packages/ | 22678 | `.hx` country page (16 Nov 2026) — built by the 13:43 run that crashed before pushing its generator; rendered copy `pages/new-zealand-tour-packages.live-2026-11-16.html` (BACKLOG #68) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
