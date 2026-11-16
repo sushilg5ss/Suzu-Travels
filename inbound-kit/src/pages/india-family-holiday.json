@@ -1,0 +1,348 @@
+{
+ "path": "/india-tours/india-family-holiday/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "India Family Holiday: Private Routes for Families with Kids",
+ "seo_title": "India Family Holiday: Routes, Prices & Visa Facts for Kids",
+ "seo_desc": "Plan an India family holiday: four private routes with prices, when to go, visas for children, health notes from official sources, and how we run it.",
+ "focus": "india family holiday",
+ "label": "India family holiday",
+ "blurb": "Private routes for families with kids",
+ "kicker": "Family holidays · Private car + driver",
+ "tag": "The Taj, the forts and the snow — at a pace that works for children.",
+ "sub": "For parents in the US, UK, Europe, Australia and Canada: which of our North India routes work with kids, when to go, what the official sites say about visas and health, and what a private family trip costs.",
+ "hero_alt": "The Taj Mahal seen through its gateway arch, with visitors in silhouette",
+ "cta1": "See the family routes",
+ "chips": [
+  [
+   "4 routes",
+   "4 to 12 days, all private"
+  ],
+  [
+   "Oct–Mar",
+   "the best months"
+  ],
+  [
+   "Under 15",
+   "free at ASI monuments"
+  ],
+  [
+   "1 visa each",
+   "every child, own passport"
+  ]
+ ],
+ "q": "Is India a good family holiday destination?",
+ "answer": "Yes — India works well for families who travel by private car at a slower pace. The Golden Triangle (Delhi, Agra, Jaipur) suits a first trip; add Shimla and Manali for the UNESCO toy train and winter snow. Go between October and March. Each child needs their own passport and visa. Our published routes start from US$299 per person; child prices on request.",
+ "facts": [
+  [
+   "From US$299",
+   "per person, 4-day Golden Triangle"
+  ],
+  [
+   "Oct–Mar",
+   "best months for the plains"
+  ],
+  [
+   "~40 cm",
+   "average Shimla snow in Jan and Feb (IMD)"
+  ],
+  [
+   "Under 15",
+   "free entry at ASI World Heritage sites"
+  ]
+ ],
+ "talk": true,
+ "sections": [
+  {
+   "id": "routes",
+   "nav": "Family routes",
+   "h2": "Four family routes we run — and who each one suits",
+   "kind": "table",
+   "lead": "Every route is private: your own car and driver, your own hotels, your own pace. For a wider look at regions by age, pacing, food and packing, read our <a href=\"/india-family-holiday-guide/\">India with kids guide</a>; this page is about the routes we run and what they cost.",
+   "video": "cost",
+   "video_caption": "Our published family routes, from four days to twelve — per person, private car and driver on every route; child prices on request.",
+   "head": [
+    "Route",
+    "Days",
+    "Why it works with kids"
+   ],
+   "rows": [
+    [
+     "Golden Triangle (Delhi · Agra · Jaipur)",
+     "4",
+     "A short first taste of India: the Taj Mahal and Jaipur's forts without long weeks on the road"
+    ],
+    [
+     "Classic Golden Triangle",
+     "6",
+     "The same three cities, unhurried — more rest time between sights"
+    ],
+    [
+     "Golden Triangle + Rishikesh & Haridwar",
+     "8",
+     "Adds the Ganga and the green foothills after the big cities"
+    ],
+    [
+     "Golden Triangle + Himalayas (Shimla · Manali)",
+     "12",
+     "The family favourite: the UNESCO toy train, hill towns and, in winter, snow"
+    ]
+   ],
+   "note": "Prices for each route are in the price table below. Child prices are on request — tell us your children's ages."
+  },
+  {
+   "id": "sample",
+   "nav": "12-day route",
+   "h2": "A sample 12-day family route: Delhi to the Himalayas",
+   "kind": "table",
+   "style": "alt",
+   "lead": "This is the shape of our Golden Triangle + Himalayas route. Two nights in most places means fewer hotel changes and fewer packing mornings.",
+   "video": "route",
+   "video_caption": "Delhi, Agra and Jaipur first, then north to Kalka for the toy train, Shimla, and on to Manali.",
+   "head": [
+    "Day",
+    "Where",
+    "What you do"
+   ],
+   "rows": [
+    [
+     "Day 1–2",
+     "Delhi",
+     "Arrive, airport pick-up by your driver, settle in; one easy day of sights"
+    ],
+    [
+     "Day 3",
+     "Agra",
+     "The Taj Mahal"
+    ],
+    [
+     "Day 4–5",
+     "Jaipur",
+     "Forts and bazaars"
+    ],
+    [
+     "Day 6",
+     "On the road",
+     "A long road day north — we plan stops and breaks"
+    ],
+    [
+     "Day 7",
+     "Kalka → Shimla",
+     "The Kalka–Shimla toy train (seasonal, where running) up to Shimla"
+    ],
+    [
+     "Day 8–9",
+     "Shimla",
+     "The hill town; snow is possible from December to February"
+    ],
+    [
+     "Day 10–12",
+     "Manali",
+     "The Kullu valley; snow in winter; then back by road for your flight home"
+    ]
+   ],
+   "note": "Road times depend on traffic, weather and stops — we plan each day around breaks for children, not a map distance. The toy train can be suspended in the monsoon or delayed by snow; book it on IRCTC (foreign tourist quota) or ask us."
+  },
+  {
+   "id": "car",
+   "nav": "Private car",
+   "h2": "Why a private car works for families",
+   "kind": "cards",
+   "items": [
+    [
+     "Door to door",
+     "No platforms, no luggage on and off trains: the car takes you from hotel to hotel."
+    ],
+    [
+     "Stop when you need to",
+     "Toilet breaks, snack stops, a nap in the back seat — the day bends around the children, not a timetable."
+    ],
+    [
+     "Same car, same driver",
+     "One car and driver for the whole route, so your bags and the children's things stay in one place."
+    ],
+    [
+     "Child seats",
+     "Tell us your children's ages — we'll confirm what child seats are available for your car."
+    ],
+    [
+     "Know who is driving",
+     "Your driver's name, photo and car number are shared with you before the trip."
+    ]
+   ]
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go with children",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    [
+     "October to March",
+     "The best months for Delhi, Agra and Rajasthan. The monsoon runs roughly June to September."
+    ],
+    [
+     "Snow in the hills",
+     "December to February in Shimla and Manali. Shimla averages about 40 cm (16 in) of snow in January and in February (IMD normals). Snow is never guaranteed on a given day."
+    ],
+    [
+     "School holidays",
+     "Christmas–New Year and the February half-term fall in the best months — book early for those weeks."
+    ],
+    [
+     "Winter air in the plains",
+     "The UK FCDO says: “Severe air pollution is a major health hazard, especially during the winter months from October to February,” and “children, the elderly and those with pre-existing medical conditions may be especially affected.” Many families spend fewer days in Delhi and more in the hills."
+    ]
+   ]
+  },
+  {
+   "id": "health",
+   "nav": "Visa & health",
+   "h2": "Visas, health and safety: what the official sources say",
+   "kind": "callout",
+   "style": "dark",
+   "text": "<b>Each child needs their own passport and their own visa. Apply only at the official site indianvisaonline.gov.in — look-alike sites charge extra. We are not a visa agency.</b> The official e-Visa page says it is not available to people endorsed on a parent's passport, and passports should be valid for at least six months from arrival. In November 2026 the Government of India announced that the Tourist Visa is being renamed the Visitor Visa (PIB, 11 Nov 2026); until the official site changes, apply for the visa it shows there. <b>We're a travel company, not doctors: see your GP or a travel clinic 6–8 weeks before you go, and read NHS Fit for Travel / TravelHealthPro or CDC for India.</b> TravelHealthPro (NaTHNaC) asks parents to consider early MMR vaccination for infants and children, and notes that children are at higher risk of rabies because they are less likely to avoid animals. On safety, the UK FCDO advises against all travel to Jammu & Kashmir (except air travel to and within Jammu city), within 10 km of the India–Pakistan border, and against all but essential travel to Manipur (still current at 15 Nov 2026); Delhi, Agra, Rajasthan and Himachal are not on that list. Children under 15 enter ASI World Heritage monuments free. Rules change — check the official sites before you travel (as of Nov 2026)."
+  },
+  {
+   "id": "how",
+   "nav": "How we plan it",
+   "h2": "How we plan a family trip",
+   "kind": "steps",
+   "lead": "Suzu Travels plans every trip from our office in Himachal Pradesh, and we stay your single point of contact from the first message to the drive back to the airport.",
+   "items": [
+    [
+     "Tell us about your family",
+     "Dates, where you fly in, and your children's ages."
+    ],
+    [
+     "Get a day-by-day plan",
+     "Short driving days, two nights where we can, and a US-dollar quote including child prices."
+    ],
+    [
+     "Lock it with a 20% deposit",
+     "Full refund if you cancel within 48 hours of paying; the balance is due before the trip."
+    ],
+    [
+     "Before the trip",
+     "Your driver's name, photo and car number are shared with you, along with our office number in Himachal."
+    ],
+    [
+     "On the road",
+     "The same car and driver throughout; we adjust the plan if the children need a slower day."
+    ]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Our published routes. Every price is per person, two sharing, indicative, and confirmed on your quote. Child prices are on request — they depend on ages and room sharing.",
+  "rows": [
+   [
+    "Golden Triangle — 4 days (Delhi · Agra · Jaipur)",
+    "from US$299",
+    "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver. International flights not included."
+   ],
+   [
+    "Classic Golden Triangle — 6 days / 5 nights",
+    "from US$449",
+    "Per person, two sharing: comfortable 3-star hotels with breakfast, private car, driver and local guides. International flights not included."
+   ],
+   [
+    "Golden Triangle + Rishikesh & Haridwar — 8 days / 7 nights",
+    "from US$649",
+    "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver. International flights not included."
+   ],
+   [
+    "Golden Triangle + Himalayas — 12 days / 11 nights (Delhi · Agra · Jaipur · Shimla · Manali)",
+    "from US$1,099",
+    "Per person, two sharing: comfortable 3-star hotels with breakfast, private car and driver; UNESCO toy train to Shimla (seasonal, where running). International flights not included."
+   ],
+   [
+    "Children",
+    "on request",
+    "Tell us their ages — we quote the exact total for your family"
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "Is India a good family holiday destination?",
+   "Yes, for families who travel by private car at a slower pace. The Golden Triangle suits a first trip; adding Shimla and Manali gives children the toy train and, in winter, snow. Our full India with kids guide covers regions by age, food and packing."
+  ],
+  [
+   "Do children need their own visa for India?",
+   "Yes. Each child needs their own passport and their own visa — the official e-Visa page says it is not available to people endorsed on a parent's passport. Apply only at indianvisaonline.gov.in; look-alike sites charge extra. We are not a visa agency."
+  ],
+  [
+   "What vaccinations do children need for India?",
+   "We're a travel company, not doctors: see your GP or a travel clinic 6–8 weeks before you go. TravelHealthPro (NaTHNaC) suggests considering early MMR vaccination for infants and children; NHS Fit for Travel and CDC also have India pages."
+  ],
+  [
+   "Is the air pollution a problem for children in winter?",
+   "The UK FCDO says severe air pollution is a major health hazard especially from October to February, and that children may be especially affected. Many families keep Delhi short and spend more days in the hills."
+  ],
+  [
+   "What is the best time for a family holiday in India?",
+   "October to March for Delhi, Agra and Rajasthan. For snow in Shimla and Manali, December to February. Avoid the June–September monsoon for a first trip."
+  ],
+  [
+   "How long should a family trip to India be?",
+   "Ten to fourteen days works well: fewer hotel changes and time to rest. Our 12-day Golden Triangle + Himalayas route is built that way; the 4- and 6-day Golden Triangle routes suit shorter school breaks."
+  ],
+  [
+   "Is a car or the train better with kids?",
+   "For most families, a private car: door to door, stops when the children need them, and one place for your luggage. The Shimla toy train is the exception worth doing — as a ride, not as transport."
+  ],
+  [
+   "How much does a family holiday in India cost?",
+   "Our published routes start from US$299 per person (4-day Golden Triangle) up to US$1,099 per person (12 days with the Himalayas), two sharing. Child prices are on request — tell us their ages."
+  ]
+ ],
+ "sources": [
+  [
+   "Government of India — e-Visa (official site)",
+   "https://indianvisaonline.gov.in/evisa/tvoa.html"
+  ],
+  [
+   "PIB — visa rationalisation, 11 Nov 2026",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2335182&reg=48&lang=2"
+  ],
+  [
+   "GOV.UK — India travel advice (FCDO)",
+   "https://www.gov.uk/foreign-travel-advice/india"
+  ],
+  [
+   "GOV.UK — India travel advice: health",
+   "https://www.gov.uk/foreign-travel-advice/india/health"
+  ],
+  [
+   "TravelHealthPro (NaTHNaC) — India",
+   "https://travelhealthpro.org.uk/countries/india"
+  ],
+  [
+   "Archaeological Survey of India — World Heritage: Khajuraho (free entry under 15)",
+   "https://asi.nic.in/pages/WorldHeritageKhajuraho"
+  ],
+  [
+   "UNESCO — Mountain Railways of India (Kalka–Shimla)",
+   "https://whc.unesco.org/en/list/944/"
+  ],
+  [
+   "NHS Fit for Travel",
+   "https://www.fitfortravel.nhs.uk/"
+  ]
+ ],
+ "verified": "17 Nov 2026",
+ "cta": {
+  "h2": "Plan your family holiday in India",
+  "text": "Tell us your dates, where you fly in and your children's ages. We reply with a day-by-day plan and a US-dollar quote, usually within two hours (9 am–9 pm IST).",
+  "wa": "Hello Suzu Travels, I'm planning a family holiday in India. Dates: ___ , travellers: ___ , children's ages: ___ , country: ___"
+ },
+ "links": [
+  "golden-triangle-itinerary-7-days",
+  "shimla-toy-train",
+  "snow-in-india",
+  "private-driver-india"
+ ]
+}

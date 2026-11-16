@@ -457,5 +457,14 @@
   "blurb": "UNESCO temples between Agra and Varanasi",
   "added": "2026-11-16",
   "focus": "khajuraho temples"
+ },
+ "india-family-holiday": {
+  "id": 23121,
+  "path": "/india-tours/india-family-holiday/",
+  "kind": "guide",
+  "label": "India family holiday",
+  "blurb": "Private routes for families with kids",
+  "added": "2026-11-17",
+  "focus": "india family holiday"
  }
 }
