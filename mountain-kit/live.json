@@ -451,5 +451,15 @@
   "blurb": "Month-by-month windows, region by region",
   "added": "2026-11-15",
   "commercial": true
+ },
+ "3000m-4000m-summits": {
+  "id": 22905,
+  "path": "/mountains-of-india/3000m-4000m-summits/",
+  "kind": "band",
+  "label": "Easy summits, 3,000–4,999 m",
+  "blurb": "15 summit treks · heights, seasons, road-heads",
+  "added": "2026-11-16",
+  "band": "3000",
+  "commercial": false
  }
 }

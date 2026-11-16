@@ -1,0 +1,195 @@
+{
+ "kind": "band",
+ "path": "/mountains-of-india/3000m-4000m-summits/",
+ "band": "3000",
+ "title": "Easy Himalayan Summits in India (3,000–4,999 m)",
+ "seo_title": "Summit Treks in India: Heights of 15 Easy Himalayan Peaks",
+ "seo_desc": "Summit treks in India from 3,022 to 4,745 m: Chandrashila, Kedarkantha, Sandakphu, Churdhar and 11 more, with exact heights, seasons and road-heads.",
+ "focus": "summit treks in india",
+ "commercial": false,
+ "label": "Easy summits, 3,000–4,999 m",
+ "blurb": "15 summit treks · heights, seasons, road-heads",
+ "verified": "16 Nov 2026",
+ "kicker": "Summit treks · 3,000–4,999 m · India",
+ "tag": "Real summits, no ropes needed (mostly).",
+ "sub": "Fifteen Himalayan summits between 3,000 and 4,999 m (9,800–16,400 ft), from Nag Tibba to Sunset Peak, with exact heights in metres and feet, state, road-head, season and grade, the heights that sources disagree on, and the next step up to a 5,000 m trekking peak.",
+ "chips": [
+  [
+   "15 summits",
+   "in our dataset"
+  ],
+  [
+   "3,022 m",
+   "Nag Tibba, the lowest"
+  ],
+  [
+   "4,745 m",
+   "Sunset Peak, the highest"
+  ],
+  [
+   "5 in Himachal",
+   "Churdhar to Chanshal"
+  ],
+  [
+   "No IMF permit",
+   "for trek summits"
+  ]
+ ],
+ "hero_alt": "A meadow camp under cloud, a boulder moraine, tents on snow at night and a glacier (generic stock footage, not named peaks) with four statements: 15 summits under 5,000 m, the lowest 3,022 m, the highest 4,745 m, the next step 5,289 m",
+ "ladder_alt": "Animated chart of six summits at their true heights: Nag Tibba 3,022 m, Churdhar 3,647 m, Kedarkantha 3,810 m, Patalsu 4,470 m, Pangarchulla 4,575 m and, as the next step, Friendship Peak 5,289 m",
+ "q": "Which are the easy Himalayan summits in India?",
+ "answer": "Our dataset lists <b>15 summits between 3,000 and 4,999 m</b>, from <b>Nag Tibba</b> (3,022 m / 9,915 ft) to <b>Sunset Peak</b> (4,745 m / 15,568 ft). The best known are <b>Chandrashila</b> (3,690 m), <b>Kedarkantha</b> (3,810 m), <b>Sandakphu</b> (3,636 m) and <b>Churdhar</b> (3,647 m). Thirteen are graded trekking summits; Tatakooti and Sunset Peak need glacier skills. All 15 are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "facts": [
+  [
+   "Summits of 3,000–4,999 m",
+   "15 in our dataset"
+  ],
+  [
+   "Lowest",
+   "Nag Tibba, 3,022 m / 9,915 ft (Uttarakhand)"
+  ],
+  [
+   "Highest",
+   "Sunset Peak, 4,745 m / 15,568 ft (J&K)"
+  ],
+  [
+   "By state",
+   "Himachal 5 · Uttarakhand 4 · J&K 4 · West Bengal 2"
+  ],
+  [
+   "Grade",
+   "13 trekking summits · 2 moderate (glacier)"
+  ],
+  [
+   "Permit",
+   "No IMF climbing permit; park and local rules apply"
+  ]
+ ],
+ "intro": [
+  "Not every Himalayan summit needs a high camp, a rope and an IMF permit. Below 5,000 m the <a href=\"/mountains-of-india/\">Indian Himalaya</a> is full of real tops that a fit walker can stand on: a temple summit above Narkanda, a snow dome above Sankri, a ridge in Darjeeling with Everest and Kangchenjunga on the horizon.",
+  "We keep only <b>notable summits</b> in our dataset, so this page lists 15 rather than claim a full count. Every height, season and road-head below comes from our dataset, with metres and feet side by side, and where sources give a different height we say so once. Treks and itineraries are not covered here; this page is about the summits themselves."
+ ],
+ "table": {
+  "min_m": 3000,
+  "max_m": 4999,
+  "h2": "All 15 summits from 3,000 to 4,999 m, highest first",
+  "label": "The list",
+  "text": [
+   "The animation draws five of these summits at their true heights, from Nag Tibba (3,022 m) to Pangarchulla (4,575 m), then the next step: Friendship Peak (5,289 m) above Manali.",
+   "Search the table by name or sort it by height. Thirteen are graded trekking summits; Tatakooti and Sunset Peak in Kashmir are graded moderate because their routes cross glacier and snow ridges."
+  ]
+ },
+ "extra_sections": [
+  {
+   "id": "heights",
+   "label": "Heights",
+   "kicker": "Heights",
+   "h2": "Heights of the best-known summit treks",
+   "html": "<p>These are the heights people search for most. Each comes from our dataset; the second column shows the other figures in circulation.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Summit</th><th>Height (our dataset)</th><th>Other figures you will see</th><th>State</th></tr></thead><tbody><tr><td><b>Chandrashila</b></td><td class=\"n\">3,690 m / 12,106 ft</td><td>About 4,000 m on some tourism sites; the Wikipedia figure is tagged as needing a citation</td><td>Uttarakhand</td></tr><tr><td><b>Kedarkantha</b></td><td class=\"n\">3,810 m / 12,500 ft</td><td>3,800 m</td><td>Uttarakhand</td></tr><tr><td><b>Sandakphu</b></td><td class=\"n\">3,636 m / 11,929 ft</td><td>Highest point of West Bengal</td><td>West Bengal</td></tr><tr><td><b>Churdhar</b></td><td class=\"n\">3,647 m / 11,965 ft</td><td>11,965 ft also given by The Tribune</td><td>Himachal Pradesh</td></tr><tr><td><b>Pangarchulla</b></td><td class=\"n\">4,575 m / 15,010 ft</td><td>4,590 m</td><td>Uttarakhand</td></tr><tr><td><b>Patalsu</b></td><td class=\"n\">4,470 m / 14,665 ft</td><td>4,250 m</td><td>Himachal Pradesh</td></tr><tr><td><b>Tatakooti</b></td><td class=\"n\">4,725 m / 15,502 ft</td><td>4,760 m</td><td>Jammu &amp; Kashmir</td></tr></tbody></table></div><p class=\"szm-note\">Many trek listings round these heights up. If a figure looks too neat, check it against the table above.</p>"
+  },
+  {
+   "id": "states",
+   "label": "By state",
+   "kicker": "Where they are",
+   "h2": "Summit treks by state",
+   "html": "<div class=\"szm-cols\"><div class=\"szm-col\"><h3>Himachal Pradesh (5)</h3><ul><li><b>Shikari Devi</b> 3,359 m, Mandi: temple summit from Janjehli, Apr–Nov</li><li><b>Hatu Peak</b> 3,400 m, above Narkanda: road or short walk, Mar–Dec</li><li><b>Churdhar</b> 3,647 m, Sirmaur: pilgrim trek from Nohradhar or Sarain, Apr–Nov</li><li><b>Patalsu</b> 4,470 m, above Solang near Manali, May–Oct</li><li><b>Chanshal</b> 4,520 m, Rohru: pass area and short hike, May–Oct</li></ul><p class=\"szm-note\">All five in <a href=\"/mountains-of-india/himachal-pradesh/\">Himachal's peak list</a>.</p></div><div class=\"szm-col\"><h3>Uttarakhand (4)</h3><ul><li><b>Nag Tibba</b> 3,022 m, Tehri Garhwal: from Pantwari, year-round</li><li><b>Chandrashila</b> 3,690 m, above Chopta and Tungnath, Mar–Jun and Sep–Dec</li><li><b>Kedarkantha</b> 3,810 m, from Sankri, Dec–Apr</li><li><b>Pangarchulla</b> 4,575 m, from Joshimath, Mar–May</li></ul><p class=\"szm-note\">More in <a href=\"/mountains-of-india/uttarakhand/\">Uttarakhand's peaks</a>.</p></div><div class=\"szm-col\"><h3>Jammu &amp; Kashmir (4)</h3><ul><li><b>Mahadev</b> 3,966 m, above Srinagar, Jun–Sep</li><li><b>Apharwat</b> 4,390 m, above Gulmarg, Jun–Sep</li><li><b>Tatakooti</b> 4,725 m, Budgam–Poonch, Jun–Sep (moderate)</li><li><b>Sunset Peak</b> 4,745 m, Shopian–Poonch, Jun–Sep (moderate)</li></ul><p class=\"szm-note\">Apharwat and Sunset Peak lie near the Line of Control: check local security advisories. See <a href=\"/mountains-of-india/jammu-kashmir/\">J&amp;K's peaks</a>.</p></div><div class=\"szm-col\"><h3>West Bengal (2)</h3><ul><li><b>Phalut</b> 3,600 m, Singalila Ridge, Mar–May and Oct–Dec</li><li><b>Sandakphu</b> 3,636 m, from Manebhanjan, Mar–May and Oct–Dec</li></ul><p class=\"szm-note\">Sandakphu is West Bengal's highest point, one of the tops in our <a href=\"/mountains-of-india/highest-peak-in-every-state/\">highest peak in every state</a> guide.</p></div></div>"
+  },
+  {
+   "id": "easiest",
+   "label": "Easiest",
+   "kicker": "From easy to harder",
+   "h2": "Which summit trek is the easiest?",
+   "html": "<p>Grades below come from our dataset and the routes as described by our sources. None of these needs technical climbing, except where noted.</p><ul class=\"szm-steps\"><li><b>Road or a short walk</b>Hatu Peak above Narkanda, Shikari Devi from Janjehli and the Chanshal pass area above Rohru. Good for families; the altitude is still real.</li><li><b>Short summit treks</b>Nag Tibba from Pantwari, and Chandrashila: about 3.5 km from Chopta to Tungnath, then about 1.5 km more to the summit.</li><li><b>Longer treks, one or more nights out</b>Kedarkantha from Sankri, Sandakphu and Phalut on the Singalila Ridge, Churdhar, Patalsu above Solang, Mahadev above Srinagar and Apharwat above the Gulmarg gondola.</li><li><b>Snow summit with an exposed finish</b>Pangarchulla (4,575 m): a spring snow trek with a boulder ridge near the top.</li><li><b>Not a hike</b>Tatakooti (4,725 m) and Sunset Peak (4,745 m) are graded moderate: their routes cross glacier, snow and rock ridges.</li></ul><div class=\"szm-call\"><p><b>Altitude still counts.</b> Most of these tops are above 3,500 m, where headaches and breathlessness are common. Our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> explains the warning signs.</p></div>"
+  },
+  {
+   "id": "seasons",
+   "label": "Seasons",
+   "kicker": "When to go",
+   "h2": "Best season for each summit trek",
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>When</th><th>Summits</th></tr></thead><tbody><tr><td><b>Winter snow (Dec–Mar/Apr)</b></td><td>Kedarkantha (Dec–Apr); Nag Tibba year-round, with snow Dec–Mar</td></tr><tr><td><b>Spring snow (Mar–May)</b></td><td>Pangarchulla</td></tr><tr><td><b>Spring and autumn</b></td><td>Chandrashila (Mar–Jun, Sep–Dec); Sandakphu and Phalut (Mar–May, Oct–Dec)</td></tr><tr><td><b>Most of the year</b></td><td>Hatu Peak (Mar–Dec); Shikari Devi and Churdhar (Apr–Nov)</td></tr><tr><td><b>Summer (May/Jun–Sep/Oct)</b></td><td>Patalsu and Chanshal (May–Oct); Mahadev, Apharwat, Tatakooti and Sunset Peak (Jun–Sep)</td></tr></tbody></table></div><p>Winter access changes year to year. The road to Chopta closes in heavy snow, and Sirmaur district suspended the Churdhar trek for six months after a death in bad weather in November 2019, so check before a November–March trip. Our <a href=\"/mountains-of-india/best-time-for-mountaineering-in-india/\">best time for mountaineering guide</a> explains the monsoon pattern behind these windows.</p>"
+  },
+  {
+   "id": "next",
+   "label": "Next step",
+   "kicker": "Going higher",
+   "h2": "After a summit trek: your first 5,000 m peak",
+   "html": "<p>The highest Himachal summit in this list is Chanshal (4,520 m). The natural next step is a trekking peak above 5,000 m, where you learn crampons, an ice axe and an early summit start with a guide.</p><ul class=\"szm-steps\"><li><b>Summit trek</b>Churdhar, Patalsu or Kedarkantha: learn how your body handles 3,500–4,500 m.</li><li><b>First trekking peak</b><a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m / 17,352 ft) above Manali, the classic first snow climb in Himachal.</li><li><b>Compare the options</b>Our <a href=\"/mountains-of-india/trekking-peaks/\">trekking peaks guide</a> compares the usual first 5,000–6,000 m climbs.</li></ul>"
+  }
+ ],
+ "permits_h2": "Permits and access",
+ "permits": [
+  "No Indian Mountaineering Foundation (IMF) climbing permit is needed for these trek summits; IMF permission is for peak expeditions. Protected-area entry fees and local rules still apply, for example in Govind Wildlife Sanctuary (Kedarkantha), on the Singalila Ridge (Sandakphu and Phalut) and in the Churdhar Sanctuary: check with the forest department before you go.",
+  "In Kashmir, Apharwat and Sunset Peak are close to the Line of Control, so check local security advisories. For guided treks to these summits, see our <a href=\"/adventure/\">adventure section</a>."
+ ],
+ "quote_h2": "Ready for a real summit? Start with Friendship Peak",
+ "quote_text": "Done Kedarkantha or Churdhar? Friendship Peak (5,289 m) above Manali is the usual next step. We pair you with a registered Himachal outfitter and certified guides, and add permits, stays and transfers. One plan, one quote.",
+ "faq_h2": "Summit treks: your questions",
+ "faqs": [
+  [
+   "What is the height of Chandrashila?",
+   "About 3,690 m (12,106 ft), above Tungnath in Rudraprayag district, Uttarakhand. Some tourism sites say 4,000 m, which is too high."
+  ],
+  [
+   "How high is Kedarkantha?",
+   "3,810 m (12,500 ft) in our dataset; some sources give 3,800 m. It is climbed from Sankri in Uttarkashi district, mostly in winter (December to April)."
+  ],
+  [
+   "What is the height of Sandakphu?",
+   "3,636 m (11,929 ft). It is the highest point of West Bengal, on the Singalila Ridge, with views of Everest, Kangchenjunga, Lhotse and Makalu."
+  ],
+  [
+   "How high is Churdhar?",
+   "3,647 m (11,965 ft), in Sirmaur district of Himachal Pradesh. It is the highest peak of the outer Himalaya and sacred to Shirgul Maharaj."
+  ],
+  [
+   "Which is the easiest Himalayan summit in India?",
+   "Hatu Peak above Narkanda and Shikari Devi in Mandi can be reached by road or a short walk. Among real treks, Nag Tibba and Chandrashila are short."
+  ],
+  [
+   "Do I need a permit for a summit trek?",
+   "Not an IMF climbing permit. Wildlife sanctuary or national park entry and local rules apply, so check with the forest department."
+  ],
+  [
+   "Can beginners climb a 4,000 m summit?",
+   "Patalsu, Chanshal and Pangarchulla are trek summits, though Pangarchulla has an exposed boulder ridge. Tatakooti and Sunset Peak are graded moderate, with glacier and ridge sections."
+  ],
+  [
+   "What should I climb after a summit trek?",
+   "A 5,000 m trekking peak with a guide, such as Friendship Peak (5,289 m) above Manali."
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Chandrashila",
+   "https://en.wikipedia.org/wiki/Chandrashila"
+  ],
+  [
+   "Wikipedia — Kedarkantha",
+   "https://en.wikipedia.org/wiki/Kedarkantha"
+  ],
+  [
+   "Wikipedia — Sandakphu",
+   "https://en.wikipedia.org/wiki/Sandakphu"
+  ],
+  [
+   "Wikipedia — List of Indian states and territories by highest point",
+   "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point"
+  ],
+  [
+   "Wikipedia — Churdhar Sanctuary",
+   "https://en.wikipedia.org/wiki/Churdhar_Sanctuary"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Himachal Pradesh",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Himachal_Pradesh"
+  ],
+  [
+   "Wikipedia — List of mountain peaks of Uttarakhand",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
+  ],
+  [
+   "The Tribune — Churdhar trekking banned for six months (27 Nov 2019)",
+   "https://www.tribuneindia.com/news/himachal/churdhar-trekking-banned-for-six-months-5282/amp"
+  ]
+ ]
+}
