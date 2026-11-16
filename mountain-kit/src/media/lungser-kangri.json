@@ -1,0 +1,134 @@
+{
+ "hero": {
+  "kicker": "LUNGSER KANGRI · LADAKH",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 500
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -180
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 920,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     9.6,
+     14.0
+    ],
+    "from": {
+     "y": 560
+    },
+    "to": {
+     "y": 860
+    }
+   }
+  ],
+  "steps": [
+   [
+    3500,
+    "LEH · ACCLIMATISE"
+   ],
+   [
+    4527,
+    "KORZOK ROAD-HEAD"
+   ],
+   [
+    4915,
+    "BASE CAMP"
+   ],
+   [
+    5720,
+    "ADVANCE BASE"
+   ],
+   [
+    6240,
+    "HIGH CAMP"
+   ],
+   [
+    6666,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Lungser Kangri, camp by camp",
+  "sub": "Korzok · Kurchyu base camp · Rungyado phu plateau · 1995 camps, approximate",
+  "camps": [
+   {
+    "name": "Korzok",
+    "m": 4527,
+    "day": "Road-head · Day 3–4"
+   },
+   {
+    "name": "Kurchyu base camp",
+    "m": 4915,
+    "day": "Day 5"
+   },
+   {
+    "name": "Advance base",
+    "m": 5720,
+    "day": "Day 7–8"
+   },
+   {
+    "name": "High camp",
+    "m": 6240,
+    "day": "Day 9–10"
+   },
+   {
+    "name": "Chamser Kangri",
+    "m": 6622,
+    "day": "Side peak · Day 9–11"
+   },
+   {
+    "name": "Lungser Kangri",
+    "m": 6666,
+    "day": "Summit · Day 10–12"
+   }
+  ]
+ }
+}
