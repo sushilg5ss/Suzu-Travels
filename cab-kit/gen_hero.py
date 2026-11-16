@@ -212,6 +212,7 @@ VARIANTS = {
   "nainital-taxi-service": dict(routes=[("Nainital taxis",None)], kicker="KATHGODAM · LAKES · KAINCHI"),
   "chandigarh-airport-taxi": dict(routes=[("Chandigarh Airport",None)], kicker="IXC · SHIMLA · MANALI"),
   "dehradun-airport-taxi": dict(routes=[("Dehradun Airport",None)], kicker="JOLLY GRANT · RISHIKESH · MUSSOORIE"),
+  "delhi-airport-taxi": dict(routes=[("Delhi Airport",None)], kicker="IGI T1 · T2 · T3 · AGRA · HILLS"),
   "haridwar-to-kedarnath-taxi": dict(routes=[("Haridwar","Kedarnath")], kicker="SONPRAYAG · KEDARNATH YATRA"),
   "haridwar-to-badrinath-taxi": dict(routes=[("Haridwar","Badrinath")], kicker="JYOTIRMATH · BADRINATH DHAM"),
   "chandigarh-to-amritsar-taxi": dict(routes=[("Chandigarh","Amritsar")], kicker="GOLDEN TEMPLE · WAGAH BORDER"),

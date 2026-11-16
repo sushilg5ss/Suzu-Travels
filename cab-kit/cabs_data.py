@@ -160,7 +160,7 @@ PLACES = {
     # 4 Nov 2026 · Kathgodam–Nainital hill road (approx. OSM town centres)
     "Ranibagh": (29.30, 79.55), "Jeolikote": (29.33, 79.50),
     # 10 Nov 2026 · Dehradun (Jolly Grant, DED) airport terminal (OSM)
-    "Dehradun Airport": (30.19, 78.18), "Bhaniyawala": (30.17, 78.15), "Raiwala": (30.03, 78.21),
+    "Dehradun Airport": (30.19, 78.18), "Delhi Airport": (28.56, 77.10), "Bhaniyawala": (30.17, 78.15), "Raiwala": (30.03, 78.21),
     # 11 Nov 2026 · Haridwar–Sonprayag (NH7 + NH107) waypoints (OSM town centres)
     "Srinagar Garhwal": (30.22, 78.78), "Agastyamuni": (30.39, 79.03), "Phata": (30.58, 79.03),
     # 12 Nov 2026 · Rudraprayag–Badrinath (NH7) waypoints (OSM town centres)
