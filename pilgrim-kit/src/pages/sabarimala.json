@@ -31,11 +31,11 @@
   ]
  ],
  "q": "What is Sabarimala and when is it open?",
- "answer": "Sabarimala is the hill temple of <b>Lord Ayyappa (Sree Dharma Sastha)</b> in Pathanamthitta district, Kerala, inside the Periyar Tiger Reserve. It opens only for the <b>Mandala–Makaravilakku season</b> (mid-November to January), the first five days of every Malayalam month and a few festivals. For 2026-27 the nada is <b>expected to open on 16 November 2026</b>. Darshan needs a free <b>virtual queue</b> booking.",
+ "answer": "Sabarimala is the hill temple of <b>Lord Ayyappa (Sree Dharma Sastha)</b> in Pathanamthitta district, Kerala, inside the Periyar Tiger Reserve. It opens only for the <b>Mandala–Makaravilakku season</b> (mid-November to January), the first five days of every Malayalam month and a few festivals. For 2026-27 the nada <b>opened on 16 November 2026</b> for the Mandala season. Darshan needs a free <b>virtual queue</b> booking.",
  "facts": [
   [
    "16 Nov 2026",
-   "nada expected to open (Mandala)"
+   "nada opened for Mandala"
   ],
   [
    "80,000",
@@ -121,8 +121,8 @@
    ],
    [
     "Nada opens for Mandala",
-    "Evening of 16 Nov 2026 (expected)",
-    "Mandala season from 17 Nov — confirm on TDB"
+    "Opened evening of 16 Nov 2026",
+    "Mandala season from 17 Nov · new Melsanthis took charge (ETV Bharat)"
    ],
    [
     "Mandala Pooja",
@@ -140,7 +140,7 @@
     "Follows the usual pattern"
    ]
   ],
-  "note": "The Travancore Devaswom Board fixes the dates by the Malayalam calendar. Lines marked \"expected\" follow the fixed pattern of earlier seasons; we will mark them confirmed once the Board announces them."
+  "note": "The Travancore Devaswom Board fixes the dates by the Malayalam calendar. The nada opened on 16 November 2026 as expected. Lines still marked \"expected\" follow the fixed pattern of earlier seasons; we will mark them confirmed once the Board announces them."
  },
  "extra_sections": [
   {
@@ -249,8 +249,8 @@
  },
  "faqs": [
   [
-   "When does Sabarimala open for Mandala 2026?",
-   "The nada is expected to open on the evening of 16 November 2026, with the Mandala season from 17 November. Confirm on the Travancore Devaswom Board's notice."
+   "When did Sabarimala open for Mandala 2026?",
+   "The nada opened on the evening of 16 November 2026, and the Mandala season runs from 17 November. Book your free virtual-queue slot before you travel."
   ],
   [
    "How do I book the Sabarimala virtual queue?",
@@ -282,6 +282,10 @@
   ]
  ],
  "sources": [
+  [
+   "ETV Bharat — Sabarimala sanctum opens, new Melsanthis take charge (16 Nov 2026)",
+   "https://www.etvbharat.com/en/bharat/sabarimala-sanctum-open-amid-heavy-pilgrim-rush-new-melshanthis-assume-charge-enn26111605901"
+  ],
   [
    "Kerala Tourism (official) — Sabarimala pilgrimage season",
    "https://www.keralatourism.org/sabarimala/pilgrimage-season"
@@ -319,5 +323,5 @@
    "https://en.wikipedia.org/wiki/Sabarimala"
   ]
  ],
- "verified": "12 Nov 2026"
+ "verified": "16 Nov 2026"
 }

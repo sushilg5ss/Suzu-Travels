@@ -18,7 +18,7 @@ Y = {x["slug"]: x for x in json.loads((KIT / "data" / "yatras.json").read_text(e
 MEDIA = json.loads((KIT / "media.json").read_text()) if (KIT / "media.json").exists() else {}
 LIVE = json.loads((KIT / "live.json").read_text()) if (KIT / "live.json").exists() else {}
 VERIFIED = "8 Oct 2026"
-HUB_VERIFIED = "11 Nov 2026"  # hub calendar re-checked by SEO & QA
+HUB_VERIFIED = "16 Nov 2026"  # hub calendar re-checked by SEO & QA
 REPO = "sushilg5ss/suzu-travels"
 HUB = "/pilgrimage-tours/"
 WA = "https://wa.me/917087488961?text="
@@ -274,7 +274,7 @@ CAL = [  # (month, [(text, kind)]) — kind "x" = closing / ends ; verified in d
     ("Aug", [("Manimahesh (2026: 25 Aug–19 Sep)", ""), ("Shravan Ashtami melas, Naina Devi &amp; Chintpurni", "")]),
     ("Sep", [("Post-monsoon Char Dham window opens", ""), ("Manimahesh ends on Radha Ashtami", "x")]),
     ("Oct", [("Sharad Navratri (2026: 11–19 Oct)", ""), ("Dussehra: Badrinath closing date announced (2026: 20 Oct)", "x"), ("Nashik–Trimbakeshwar Simhastha Kumbh began: flag hoisted 31 Oct 2026", "")]),
-    ("Nov", [("Gangotri closed 10 Nov; Kedarnath &amp; Yamunotri closed 11 Nov (Bhai Dooj)", "x"), ("Badrinath closes 16 Nov 2026", "x")]),
+    ("Nov", [("Gangotri closed 10 Nov; Kedarnath &amp; Yamunotri closed 11 Nov (Bhai Dooj)", "x"), ("Badrinath closed 16 Nov 2026 — all four dhams shut for winter", "x")]),
     ("Dec", [("Winter Char Dham: Ukhimath, Joshimath seats", ""), ("12 Jyotirlinga circuits run all winter", "")]),
 ]
 
@@ -294,7 +294,7 @@ def hub():
         ("Which nine temples make up the Nau Devi Yatra?",
          "The traditional nine are Vaishno Devi, Mansa Devi (Panchkula), Kali Mata (Kalka), Shakumbhari Devi (Saharanpur), Naina Devi, Chintpurni, Jwala Ji, Brajeshwari and Chamunda. Many packages swap Kalka and Shakumbhari for Baglamukhi (Kangra). Allow about 9 days from Delhi, or 7 days from Chandigarh."),
         ("When does the Char Dham Yatra 2026 close?",
-         "The 2026 closing dates were announced on Vijayadashami, 20 October 2026: Gangotri closed on 10 November (Annakut) and Kedarnath and Yamunotri on 11 November (Bhai Dooj); Badrinath closes on 16 November at 9:37 pm. Exact times can shift, so confirm locally. See our <a href=\"/char-dham-closing-dates-2026/\">closing-dates post</a> for the ceremonies."),
+         "The 2026 closing dates were announced on Vijayadashami, 20 October 2026: Gangotri closed on 10 November (Annakut) and Kedarnath and Yamunotri on 11 November (Bhai Dooj); Badrinath closed on 16 November at 9:37 pm, so all four dhams are now shut for winter. The 2027 opening dates are not announced yet. See our <a href=\"/char-dham-closing-dates-2026/\">closing-dates post</a> for the ceremonies."),
         ("When is the Amarnath Yatra 2027?",
          "The 2027 dates have not been announced yet. The Shri Amarnathji Shrine Board usually announces them in spring and opens registration around mid-April. In 2026 the yatra ran from 3 July to 28 August (57 days). Pilgrims must be 13–70 years old, carry a compulsory health certificate and collect an RFID card."),
         ("Is registration needed for Char Dham and Vaishno Devi?",
@@ -382,7 +382,7 @@ def hub():
 <ol class="szp-route">{nau_html}</ol>
 <p class="szp-note">Road distances are approximate (OpenStreetMap routing) — hill roads take longer than the map says. The next Navratri, Chaitra Navratri 2027, begins on 7 April (Sharad Navratri 2026 was 11–19 October): expect the biggest crowds then.</p></section>
 <section class="szp-sec" id="chardham"><span class="k">चार धाम · Char Dham Yatra</span><h2>Char Dham Yatra: 2026 season and 2027 planning</h2>
-<div class="szp-answer"><p>The 2026 yatra opened with <b>Yamunotri and Gangotri on 19 April</b>, <b>Kedarnath on 22 April</b> and <b>Badrinath on 23 April</b>. The 2026 closing dates, announced on Vijayadashami (20 October): <b>Gangotri on 10 November</b>, <b>Kedarnath and Yamunotri on 11 November</b> (Bhai Dooj) and <b>Badrinath on 16 November</b> at 9:37 pm. Registration on the Uttarakhand government portal is compulsory.</p></div>
+<div class="szp-answer"><p>The 2026 yatra opened with <b>Yamunotri and Gangotri on 19 April</b>, <b>Kedarnath on 22 April</b> and <b>Badrinath on 23 April</b>. The 2026 closing dates, announced on Vijayadashami (20 October): <b>Gangotri on 10 November</b>, <b>Kedarnath and Yamunotri on 11 November</b> (Bhai Dooj) and <b>Badrinath on 16 November</b> at 9:37 pm — all four are now closed for winter, and the 2027 opening dates are not announced yet. Registration on the Uttarakhand government portal is compulsory.</p></div>
 <ol class="szp-steps"><li><b>Register first</b>On registrationandtouristcare.uk.gov.in or the Tourist Care Uttarakhand app — for every pilgrim, before you travel.</li>
 <li><b>Go west to east</b>Yamunotri → Gangotri → Kedarnath → Badrinath; allow 10–12 days from Haridwar or Rishikesh.</li>
 <li><b>Know the walks</b>About 6 km from Janki Chatti to Yamunotri and about 16 km from Gaurikund to Kedarnath; ponies, palkis and helicopters are available.</li>

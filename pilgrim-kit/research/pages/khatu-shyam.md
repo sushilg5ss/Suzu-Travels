@@ -52,7 +52,7 @@
 - No route-map (optional Ringas → Khatu nishan walk only if Visual Studio wants: Ringas 27.364/75.564, Khatu 27.371/75.404).
 
 ## 6. Sources
-1. Patrika — committee, 24-h opening, VIP suspended, 14 queues (30 Dec 2025) https://develop.patrika.com/en/sikar-news/khatu-shyamji-temple-committee-announces-24-hour-opening-and-suspension-of-vip-darshan-on-ny-20217369
+1. Patrika — committee, 24-h opening, VIP suspended, 14 queues (30 Dec 2025) https://www.patrika.com/en/sikar-news/khatu-shyamji-temple-committee-announces-24-hour-opening-and-suspension-of-vip-darshan-on-ny-20217369
 2. Patrika — annual tilak shringar closure, Barbarika (23 Jul 2025) https://beta.patrika.com/en/sikar-news/khatu-shyam-temple-no-darshan-of-baba-shyam-for-2-days-temple-administration-shares-reason-19800608
 3. Patrika — Dec 2025 fair, no-vehicle zone (24 Dec 2025) https://www.patrika.com/en/sikar-news/khatu-shyam-fair-5-day-khatu-shyamji-fair-from-december-29-major-change-in-darshan-system-20200699
 4. Daily Jagran — Phalgun Mela 2026 dates, Nishan from Ringas (22 Feb 2026) https://www.thedailyjagran.com/spiritual/khatu-shyam-falgun-mela-2026-start-and-end-date-check-significance-and-lakkhi-mela-celebrations-10300043
