@@ -1,0 +1,27 @@
+{
+ "_note": "Media for /india-tours/khajuraho-temples/ (guide). Made by the Page Builder (day) 16 Nov 2026 per page-builder.md Step 1.3 (no media row). Hero: 4 NEW photos (Unsplash Kandariya Mahadeva = poster; Pexels Lakshmana-group temple, Khajuraho temple in greenery, Dulhadev) + library SUV px-35441447 (captioned without a place). Route: fact-pack Media notes coords (approximate, map only), labels only, no km.",
+ "hero": {
+  "kicker": "KHAJURAHO TEMPLES",
+  "scenes": [
+   {"img": "us-AZ4y6Bc3qeI.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 10}},
+   {"img": "px-39636443.jpg", "kind": "tilt", "from": {"y": 1400}, "to": {"y": 700}},
+   {"img": "px-29517659.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 900}},
+   {"img": "px-15340996.jpg", "kind": "tilt", "from": {"y": 900}, "to": {"y": 300}},
+   {"img": "px-35441447.jpg", "kind": "land", "from": {"scale": 1.04, "x": 20, "y": 0}, "to": {"scale": 1.12, "x": -20, "y": 10}}
+  ],
+  "steps": ["KHAJURAHO", "UNESCO SINCE 1986", "CHANDELLA STONE", "DANCE FEST · FEB", "ADD TO YOUR TRIP"]
+ },
+ "route": {
+  "title": "DELHI → KHAJURAHO → VARANASI · 7 DAYS",
+  "sub": "Agra and Orchha on the way, by private car",
+  "bounds": "auto",
+  "dur": 13,
+  "stops": [
+   {"name": "Delhi", "sub": "arrive", "day": "Day 1", "lat": 28.61, "lon": 77.21},
+   {"name": "Agra", "sub": "Taj Mahal", "day": "Day 2", "lat": 27.18, "lon": 78.01},
+   {"name": "Orchha", "sub": "on the way", "day": "Day 3", "lat": 25.35, "lon": 78.64},
+   {"name": "Khajuraho", "sub": "temples · show", "day": "Day 4–5", "lat": 24.85, "lon": 79.92},
+   {"name": "Varanasi", "sub": "the Ganga", "day": "Day 6–7", "lat": 25.32, "lon": 83.01}
+  ]
+ }
+}
