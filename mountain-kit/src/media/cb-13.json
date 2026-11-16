@@ -1,0 +1,24 @@
+{
+ "hero": {
+  "kicker": "CB-13 · LAHAUL",
+  "scenes": [
+   {"img": "px-17613105.jpg", "kind": "tilt", "h": 2880, "t": [0, 3.8], "from": {"y": 550}, "to": {"y": 250, "scale": 1.05}},
+   {"img": "px-38468349.jpg", "kind": "land", "h": 1406, "t": [3.2, 7.0], "from": {"scale": 1.02, "x": 40}, "to": {"scale": 1.1, "x": -20}},
+   {"img": "px-37358046.jpg", "kind": "tilt", "h": 2880, "t": [6.4, 10.2], "from": {"y": 250}, "to": {"y": 1320}},
+   {"img": "px-38930225.jpg", "kind": "land", "h": 1188, "t": [9.6, 14.0], "from": {"scale": 1.0}, "to": {"scale": 1.08, "x": -40}}
+  ],
+  "steps": [[2050, "MANALI"], [4050, "BATAL"], [4300, "BASE CAMP"], [5000, "CAMP 1"], [5500, "NORTH-RIDGE COL"], [6264, "SUMMIT"]]
+ },
+ "profile": {
+  "title": "CB-13, camp by camp",
+  "sub": "South Dakka glacier · north ridge · camps from the 1989 and 2017 climbs · vary by year",
+  "camps": [
+   {"name": "Manali", "m": 2050, "day": "Day 1"},
+   {"name": "Batal", "m": 4050, "day": "Road-head · Day 2"},
+   {"name": "Base camp", "m": 4300, "day": "Day 3"},
+   {"name": "Camp 1", "m": 5000, "day": "~Day 5"},
+   {"name": "North-ridge col", "m": 5500, "day": "Fixed ropes"},
+   {"name": "CB-13", "m": 6264, "day": "Summit"}
+  ]
+ }
+}

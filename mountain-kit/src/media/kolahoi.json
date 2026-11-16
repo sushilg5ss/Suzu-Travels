@@ -1,0 +1,24 @@
+{
+ "hero": {
+  "kicker": "KOLAHOI · KASHMIR VALLEY",
+  "scenes": [
+   {"img": "px-14100743.jpg", "kind": "tilt", "h": 2560, "t": [0, 3.8], "from": {"y": 300}, "to": {"y": 700}},
+   {"img": "px-10254837.jpg", "kind": "land", "h": 1408, "t": [3.2, 7.0], "from": {"scale": 1.02, "x": 40}, "to": {"scale": 1.1, "x": -20}},
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [6.4, 10.2], "from": {"scale": 1.02, "x": 30}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-9683997.jpg", "kind": "land", "h": 1408, "t": [9.6, 14.0], "from": {"scale": 1.04}, "to": {"scale": 1.1, "x": -40}}
+  ],
+  "steps": [[2414, "ARU"], [2780, "LIDDERWAT"], [3750, "BASE CAMP"], [4700, "GLACIER CAMP"], [5425, "SUMMIT"]]
+ },
+ "profile": {
+  "title": "Kolahoi, camp by camp",
+  "sub": "Aru approach · camps from the 2023 ascent · approximate",
+  "camps": [
+   {"name": "Aru", "m": 2414, "day": "Road-head · Day 1"},
+   {"name": "Lidderwat", "m": 2780, "day": "Day 1"},
+   {"name": "Satlanjan", "m": 3300, "day": "Day 1–2"},
+   {"name": "Dudhsar BC", "m": 3750, "day": "Day 2–3"},
+   {"name": "Glacier ABC", "m": 4700, "day": "Day 3–4"},
+   {"name": "Kolahoi", "m": 5425, "day": "Summit · Day 4–5"}
+  ]
+ }
+}
