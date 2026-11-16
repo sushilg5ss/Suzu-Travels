@@ -151,5 +151,36 @@
   "height_alternates_m": [
    6420
   ]
+ },
+ {
+  "band": "6000",
+  "state": "Himachal Pradesh",
+  "range": "Chandra Bhaga (CB) group, Central Lahaul",
+  "district_or_area": "Lahaul (Chandra valley, near Batal)",
+  "status": "climbed",
+  "best_season": "Jul–Sep",
+  "base": "Manali → Batal (~4,000 m) → base camp at the end of the South Dakka glacier (~4,300 m)",
+  "open_to_foreigners": "unknown",
+  "india_rank": null,
+  "alt_names": [
+   "CB13",
+   "Chandra Bhaga 13",
+   "Chandrabhaga-13"
+  ],
+  "name": "CB-13",
+  "height_m": 6264,
+  "first_ascent_year": 1981,
+  "first_ascent_by": "Japanese 'Tampopo' party, north ridge from the South Dakka glacier (HJ 66; a 1989 HJ note credits a 1960 Austrian party, whose own report describes CB 12)",
+  "status_note": "Climbed by Indian and Japanese teams (1982, 1989, 2017). Not to be confused with CB-13A (6,240 m). Foreign-team open-list status not verified (Nov 2026).",
+  "difficulty": "technical",
+  "difficulty_note": "Crevassed South Dakka glacier, fixed ropes to the north-ridge col (~5,500 m), loose rock and scree on the upper ridge",
+  "notable": "Often described as the highest of the Chandra Bhaga (CB) peaks. The 1968 IAF An-12 wreck was found on the Dhaka glacier near CB-13.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/46/22/expeditions-and-notes-46/",
+   "https://www.himalayanclub.org/hj/66/13/polish-expeditions-to-the-lahaul-himalaya-in-1973-and-2008/",
+   "https://himalayanclub.org/hj/39/24/expeditions-1980-1982/",
+   "https://publications.americanalpineclub.org/articles/12198326201"
+  ],
+  "height_alternates_m": []
  }
 ]

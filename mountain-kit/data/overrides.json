@@ -73,8 +73,21 @@
  "Chamser Kangri": {
   "sources": [
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
-   "https://en.wikipedia.org/wiki/Tso_Moriri"
-  ]
+   "https://en.wikipedia.org/wiki/Tso_Moriri",
+   "https://news.ssbcrack.com/indian-armys-corps-of-signals-completes-high-altitude-expedition-summits-three-peaks-in-ladakh/",
+   "https://www.himalayanclub.org/hj/52/12/nangpas-are-flying-changpas-are-smiling/"
+  ],
+  "alt_names": [
+   "Chhamser Kangri"
+  ],
+  "height_alternates_m": [
+   6630
+  ],
+  "first_ascent_by": "Unrecorded: a Survey of India cairn was already on the summit when Harish Kapadia's team climbed the southwest ridge on 14 July 1995 (logged as the second ascent, Himalayan Journal 52)",
+  "difficulty_note": "Glaciated, non-technical by Himalayan standards: steep moraine, then a snow slope with ice patches to the southwest ridge; often combined with Lungser from the same advance camp",
+  "status_note": "Climbed by JIM&WS (25 Jul 2024) and an Indian Army Corps of Signals team (Aug 2026). Civilian access to the Lungser–Chamser area was reported blocked in 2014–2016, and the peak is not named in the 2021 list of peaks open to foreigners; confirm current status with the IMF and DC Leh (checked Nov 2026).",
+  "notable": "Second recorded ascent 14 July 1995 by the southwest ridge (Kapadia's team); on 15 July 1995 Divyesh and Vineeta Muni climbed the northeast ridge.",
+  "open_to_foreigners": "unknown"
  },
  "Dzo Jongo": {
   "sources": [
@@ -393,5 +406,40 @@
    "https://publications.americanalpineclub.org/articles/12197652703",
    "https://forestonline.uk.gov.in/swargarohini"
   ]
+ },
+ "Kolahoi": {
+  "alt_names": [
+   "Gashibrar",
+   "Gashe-braed",
+   "Kolhoi"
+  ],
+  "first_ascent_by": "Dr Ernest Neve & Kenneth Mason (28 June 1912, by Neve's couloir and the east ridge)",
+  "difficulty_note": "Rock-and-ice pyramid above a crevassed glacier and icefalls; snow couloir and corniced east ridge; rockfall on warm afternoons killed two descending climbers on 7 Sep 2018",
+  "status_note": "Trails beyond Aru to the Kolahoi glacier closed to trekkers after the April 2025 Pahalgam attack; Aru Valley reopened 29 Sep 2025, but the Kolahoi Glacier trek was still reported closed on 4 Jun 2026 and no reopening order was found as of Nov 2026.",
+  "notable": "Highest peak of the Kashmir Valley (Nun, 7,135 m, is higher in J&K overall); Ernest Neve called it 'the Matterhorn of Kashmir' in 1910; its shrinking glacier feeds the Lidder river.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mount_Kolahoi",
+   "https://www.himalayanclub.org/hj/8/11/kolahoi-by-the-south-face/",
+   "https://www.himalayanclub.org/hj/16/8/expeditions-16/",
+   "https://www.outlookindia.com/national/fatal-attraction-popular-local-trekking-scene-in-valley-witnesses-tragedy-news-300735",
+   "https://kashmirlife.net/reopen-great-lakes-routes-trekking-community-raises-livelihood-concerns-438790/"
+  ]
+ },
+ "Lungser Kangri": {
+  "first_ascent_by": "Harish Kapadia, Kaivan Mistry, Harsinh Sr. and Harsinh Jr. (16 July 1995, north ridge; Himalayan Journal 52)",
+  "height_alternates_m": [
+   6662
+  ],
+  "difficulty_note": "Non-technical by Himalayan standards but glaciated: the 1995 first ascent met crevasses and a ~150 m ice slope and rappelled on descent, so crampons, ice axe and rope are expected",
+  "status_note": "Climbed by a JIM&WS team on 27 Jul 2024. Civilian expeditions were reported blocked by the Indian Army in 2014–2016, and the peak is not named in the 2021 list of peaks open to foreigners (Rajya Sabha USQ 2386); no 2025–26 opening order found. Confirm current status with the IMF and DC Leh (checked Nov 2026).",
+  "notable": "Highest peak of Rupshu, above the east shore of Tso Moriri; first climbed in 1995 by Harish Kapadia's South East Ladakh Expedition, which also climbed neighbouring Chamser Kangri.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lungser_Kangri",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
+   "https://www.himalayanclub.org/hj/52/12/nangpas-are-flying-changpas-are-smiling/",
+   "https://kashmirreader.com/2024/07/30/jimws-team-scales-two-high-peaks-in-ladakh-creates-history-after-14-years/",
+   "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"
+  ],
+  "open_to_foreigners": "unknown"
  }
 }

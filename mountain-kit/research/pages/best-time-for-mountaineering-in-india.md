@@ -16,19 +16,19 @@ researched: 2026-11-02 · status: researched · Sell? **yes** (guide; CTA = Hima
 ## Verified facts
 | Fact | Value (as the page will state it) | Source (URL) | Checked |
 |---|---|---|---|
-| Monsoon onset, Shimla (HP) — IMD new normal | **24 June** (old 23 Jun); withdrawal **24 Sep** | https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf (IMD, 2020 new normals; onset base 1961–2019, withdrawal 1971–2019) | 2026-11-02 |
-| Monsoon onset, Pithoragarh (Uttarakhand) | **20 June**; withdrawal **28 Sep** (Dehradun not listed) | same IMD PDF | 2026-11-02 |
-| Monsoon, "Ladakh" station | onset 23 Jun, withdrawal 23 Sep (IMD lists it, but Ladakh gets very little rain — see Leh row) | same IMD PDF | 2026-11-02 |
-| Monsoon, Jammu | onset 28 Jun; withdrawal 21 Sep | same IMD PDF | 2026-11-02 |
-| Monsoon, Gangtok (Sikkim) | onset **10 June**; withdrawal **9 Oct** | same IMD PDF | 2026-11-02 |
-| Monsoon, Itanagar (Arunachal) | onset 5 Jun; withdrawal 14 Oct | same IMD PDF | 2026-11-02 |
-| Monsoon reaches extreme NW India (normal) | **8 July** (earlier normal 15 July) | same IMD PDF | 2026-11-02 |
+| Monsoon onset, Shimla (HP) — IMD new normal | **22 June** (old 1901–40 normal 23 Jun); withdrawal **24 September** (old 21 Sep) | IMD Research Report CRS RR 3/2020 'Normal dates of onset/progress and withdrawal of southwest monsoon over India' (Pai et al., released with IMD press release 15 May 2020), Table-2, new-normal columns: https://internal.imd.gov.in/press_release/20200515_pr_804.pdf | 2026-11-16 (re-checked; old press-release URL now 404) |
+| Monsoon onset, Dehradun (Uttarakhand) — replaces Pithoragarh (not in Table-2) | **20 June**; withdrawal **27 September** | same IMD report, Table-2 | 2026-11-16 |
+| Monsoon, "Ladakh" station | onset **24 June**, withdrawal **22 September** (IMD lists it, but Ladakh gets very little rain — see Leh row) | same IMD report, Table-2 | 2026-11-16 |
+| Monsoon, Jammu | onset 28 June; withdrawal 21 September (unchanged) | same IMD report, Table-2 | 2026-11-16 |
+| Monsoon, Gangtok (Sikkim) | onset **8 June**; withdrawal **12 October** | same IMD report, Table-2 | 2026-11-16 |
+| Monsoon, Arunachal Pradesh (Hayuliang station; Itanagar not in Table-2) | onset 5 June; withdrawal 14 October | same IMD report, Table-2 | 2026-11-16 |
+| Monsoon covers extreme NW India (normal) | **8 July** (one week before the old 15 July) | same IMD report, conclusions (ix) | 2026-11-16 |
 | HP monsoon 2026 (what actually happened) | entered HP **30 Jun 2026**, whole state 1 Jul (normal 25 Jun); withdrew **3 Oct 2026** (normal 25 Sep); season rain 652.3 mm vs 734.4 mm normal = **−11%** ("normal"). Use as "in 2026 the monsoon left Himachal on 3 October, about a week late" | https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/HP%20Monsoon%20Report%202026.pdf ; https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/Press%20release%20for%20withdrawal%20of%20Monsoon%202026.pdf (IMD Shimla, 3 Oct 2026) | 2026-11-02 |
 | Leh / Ladakh rain shadow | "Ladakh lies on the rain shadow side of the Himalaya"; annual precipitation ~**10 cm (≈100 mm), mainly as snow**; "cold desert"; −40 °C winter to +35 °C summer | https://www.cgwb.gov.in/old_website/District_Profile/JandK/Leh.pdf (CGWB, 2011 data) | 2026-11-02 |
 | Kullu / Pir Panjal / Uttarakhand climbing windows | **pre-monsoon May–June, post-monsoon September–October**; Jul–Aug monsoon brings landslides, flash floods, poor visibility | research/rules-records.md §3 (operator itineraries — page cites IMD + dataset instead) ; data/peaks.json `season` (Friendship, Deo Tibba, Hanuman Tibba, Satopanth = "May–Jun & Sep–Oct") | 2026-11-02 |
 | Lahaul / Spiti / Ladakh windows | **June/July–September** (dataset: Yunam Jun–Sep, CCKN Jun–Sep, Kang Yatse II mid-Jun–Sep); June brings high snowmelt river crossings | data/peaks.json ; research/rules-records.md §3 | 2026-11-02 |
 | Sikkim (official) | Sikkim tourism page: "May to October is the ideal season for mountaineering in Sikkim" — page based on a 2005 order **[VERIFY / dated]**; dataset Frey Peak "Apr–May & Oct–Nov" | https://www.sikkim.gov.in/department/departmentmenudetails?url=Menu%3Dtourism-civil-aviation-department%2Fadventure-tourism ; data/peaks.json | 2026-11-02 (via rules-records §1.8) |
-| Arunachal | no authoritative season source → generic only ("monsoon arrives early June, leaves mid-October per IMD") | IMD PDF above | 2026-11-02 |
+| Arunachal | no authoritative season source → generic only ("monsoon arrives early June, leaves mid-October per IMD (Hayuliang 5 Jun / 14 Oct)") | IMD PDF above | 2026-11-02 |
 | Winter summits (Dec–Apr) | Kedarkantha dataset season "Dec–Apr (winter)"; Pangarchulla "Mar–May"; Nag Tibba "year-round (snow Dec–Mar)" — link to 3000m-4000m-summits page | data/peaks.json | 2026-11-02 |
 | Kangra winter rule (precedent) | Kangra DDMA banned all trekking above 3,000 m in winter (Nov 2024 DC order; again Tribune 6 Jan 2026); Kareri/Triund/Adi Himani Chamunda need SP permission. **No 2026–27 order found as of 2 Nov 2026** | https://www.tribuneindia.com/news/himachal/kangra-administration-bans-trekking-above-3000-m-to-ensure-tourist-safety/ ; https://himachalheadlines.com/news/trekking-above-3000-meters-banned-in-kangra-new-guidelines-issued/ (27 Nov 2024) | 2026-11-02 |
 | Kangra monsoon registration | 8 Jul–15 Oct 2026, ten Dhauladhar routes — **past tense now** | rules-records §1.6 (Tribune 8 Jul 2026) | 2026-11-02 |
@@ -48,12 +48,12 @@ Basis: IMD onset/withdrawal + dataset `season`. Mark Jul/Aug "no" for monsoon si
 ## Questions people ask
 1. When is the best time for mountaineering in India? → May–June and September–October on the monsoon side (Kullu, Garhwal); July–September in the rain shadow (Lahaul, Spiti, Ladakh).
 2. Can you climb in the Himalaya during the monsoon? → Yes, in Lahaul, Spiti and Ladakh, which get very little rain (Leh ~100 mm a year, CGWB); avoid Kullu/Garhwal approaches in Jul–Aug.
-3. When does the monsoon reach and leave Himachal? → Normal onset ~24 Jun (Shimla), withdrawal ~24–25 Sep (IMD); in 2026 it left on 3 Oct.
+3. When does the monsoon reach and leave Himachal? → Normal onset 22 Jun at Shimla, withdrawal 24 Sep (IMD new normals, CRS RR 3/2020); in 2026 it left on 3 Oct.
 4. Is October too late? → Early–mid October is often clear and stable on the monsoon side; late October can bring the first heavy snow (e.g. 31 Oct 2026 Kedartal avalanche) — plan buffers.
 5. Can I climb in winter? → Not the 5,000–6,000 m expedition peaks in practice; winter is for snow summit treks such as Kedarkantha (dataset Dec–Apr). In Kangra, winter orders have banned trekking above 3,000 m.
 6. Best month for Friendship Peak? → May–June or September–October (dataset).
 7. Best month for a first 6,000 m peak? → Yunam: July–September (dataset Jun–Sep).
-8. What about Sikkim/the East? → Monsoon arrives ~10 June and leaves ~9 October at Gangtok (IMD); spring (Apr–May) and autumn (Oct–Nov) windows.
+8. What about Sikkim/the East? → Monsoon normally arrives ~8 June and leaves ~12 October at Gangtok (IMD new normals); spring (Apr–May) and autumn (Oct–Nov) windows.
 
 ## Media notes for the Visual Studio
 - Hero "words" (4 two-line statements, ≤9 letters per word line):
@@ -63,6 +63,7 @@ Basis: IMD onset/withdrawal + dataset `season`. Mark Jul/Aug "no" for monsoon si
 - Photos: px-15148510 (snowfield scale), px-38468349 (night headlamps — "pre-dawn start"), px-17613105 (brown scree = rain-shadow look), px-10555794 (tents on snow at night = winter), px-14100743 (green meadow camp = monsoon-side summer). No named-peak photo needed; no new photos required.
 
 ## Do not say
+- 2026-11-16 fix: do not use the old press-release station figures (Shimla 24 Jun, Gangtok 10 Jun / 9 Oct, Ladakh 23 Jun / 23 Sep, Pithoragarh, Itanagar) — the URL is dead and the surviving IMD report (Table-2) gives Shimla 22 Jun / 24 Sep, Gangtok 8 Jun / 12 Oct, Ladakh 24 Jun / 22 Sep. Use the report's values only.
 - No "best time" claim for Arunachal beyond IMD dates (no authoritative climbing-season source).
 - Do not present the Sikkim "May to October" line as current without "the state's adventure page says" (2005-based).
 - Do not say "the monsoon never reaches Ladakh" — IMD lists normal onset/withdrawal dates for Ladakh; say "very little rain".
@@ -74,7 +75,7 @@ Basis: IMD onset/withdrawal + dataset `season`. Mark Jul/Aug "no" for monsoon si
 - Leh 102 mm figure: write "about 100 mm (CGWB)".
 
 ## Sources
-1. IMD — New normal dates of onset/withdrawal of SW monsoon (2020): https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf
+1. IMD — Research Report CRS RR 3/2020, Normal dates of onset/progress and withdrawal of SW monsoon over India (with press release 15 May 2020): https://internal.imd.gov.in/press_release/20200515_pr_804.pdf (replaces the mausam.imd.gov.in press-release PDF, 404 since Nov 2026)
 2. IMD Meteorological Centre Shimla — HP Monsoon Report 2026 (3 Oct 2026): https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/HP%20Monsoon%20Report%202026.pdf
 3. IMD Shimla — press release, withdrawal of monsoon 2026: https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/Press%20release%20for%20withdrawal%20of%20Monsoon%202026.pdf
 4. CGWB — Leh district groundwater brochure (climate, rain shadow): https://www.cgwb.gov.in/old_website/District_Profile/JandK/Leh.pdf

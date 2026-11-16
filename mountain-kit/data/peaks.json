@@ -2433,7 +2433,9 @@
   "alt": [],
   "m": 6666,
   "ft": 21870,
-  "m_alt": [],
+  "m_alt": [
+   6662
+  ],
   "band": "6000",
   "state": "ladakh",
   "state_label": "Ladakh",
@@ -2441,19 +2443,22 @@
   "range": "Zanskar/Rupshu",
   "area": "Rupshu (near Tso Moriri)",
   "fa": 1995,
-  "fa_by": "Harish Kapadia (per Wikipedia infobox)",
+  "fa_by": "Harish Kapadia, Kaivan Mistry, Harsinh Sr. and Harsinh Jr. (16 July 1995, north ridge; Himalayan Journal 52)",
   "status": "climbed",
-  "status_note": "",
+  "status_note": "Climbed by a JIM&WS team on 27 Jul 2024. Civilian expeditions were reported blocked by the Indian Army in 2014–2016, and the peak is not named in the 2021 list of peaks open to foreigners (Rajya Sabha USQ 2386); no 2025–26 opening order found. Confirm current status with the IMF and DC Leh (checked Nov 2026).",
   "grade": "trekking peak",
-  "grade_note": "Non-technical; no crampons needed in good conditions (per Wikipedia)",
+  "grade_note": "Non-technical by Himalayan standards but glaciated: the 1995 first ascent met crevasses and a ~150 m ice slope and rappelled on descent, so crampons, ice axe and rope are expected",
   "season": "Jun–Sep",
   "base": "Korzok (Tso Moriri)",
-  "foreigners": "yes",
+  "foreigners": "unknown",
   "rank": null,
-  "notable": "Highest peak of Rupshu.",
+  "notable": "Highest peak of Rupshu, above the east shore of Tso Moriri; first climbed in 1995 by Harish Kapadia's South East Ladakh Expedition, which also climbed neighbouring Chamser Kangri.",
   "sources": [
    "https://en.wikipedia.org/wiki/Lungser_Kangri",
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
+   "https://www.himalayanclub.org/hj/52/12/nangpas-are-flying-changpas-are-smiling/",
+   "https://kashmirreader.com/2024/07/30/jimws-team-scales-two-high-peaks-in-ladakh-creates-history-after-14-years/",
+   "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"
   ]
  },
  {
@@ -2546,10 +2551,14 @@
  {
   "id": "chamser-kangri",
   "name": "Chamser Kangri",
-  "alt": [],
+  "alt": [
+   "Chhamser Kangri"
+  ],
   "m": 6622,
   "ft": 21726,
-  "m_alt": [],
+  "m_alt": [
+   6630
+  ],
   "band": "6000",
   "state": "ladakh",
   "state_label": "Ladakh",
@@ -2557,19 +2566,21 @@
   "range": "Zanskar/Rupshu",
   "area": "Rupshu (near Tso Moriri)",
   "fa": null,
-  "fa_by": "",
+  "fa_by": "Unrecorded: a Survey of India cairn was already on the summit when Harish Kapadia's team climbed the southwest ridge on 14 July 1995 (logged as the second ascent, Himalayan Journal 52)",
   "status": "climbed",
-  "status_note": "",
+  "status_note": "Climbed by JIM&WS (25 Jul 2024) and an Indian Army Corps of Signals team (Aug 2026). Civilian access to the Lungser–Chamser area was reported blocked in 2014–2016, and the peak is not named in the 2021 list of peaks open to foreigners; confirm current status with the IMF and DC Leh (checked Nov 2026).",
   "grade": "trekking peak",
-  "grade_note": "Non-technical high walk-up often combined with Lungser",
+  "grade_note": "Glaciated, non-technical by Himalayan standards: steep moraine, then a snow slope with ice patches to the southwest ridge; often combined with Lungser from the same advance camp",
   "season": "Jun–Sep",
   "base": "Korzok (Tso Moriri)",
-  "foreigners": "yes",
+  "foreigners": "unknown",
   "rank": null,
-  "notable": "",
+  "notable": "Second recorded ascent 14 July 1995 by the southwest ridge (Kapadia's team); on 15 July 1995 Divyesh and Vineeta Muni climbed the northeast ridge.",
   "sources": [
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
-   "https://en.wikipedia.org/wiki/Tso_Moriri"
+   "https://en.wikipedia.org/wiki/Tso_Moriri",
+   "https://news.ssbcrack.com/indian-armys-corps-of-signals-completes-high-altitude-expedition-summits-three-peaks-in-ladakh/",
+   "https://www.himalayanclub.org/hj/52/12/nangpas-are-flying-changpas-are-smiling/"
   ]
  },
  {
@@ -3507,6 +3518,41 @@
   ]
  },
  {
+  "id": "cb-13",
+  "name": "CB-13",
+  "alt": [
+   "CB13",
+   "Chandra Bhaga 13",
+   "Chandrabhaga-13"
+  ],
+  "m": 6264,
+  "ft": 20551,
+  "m_alt": [],
+  "band": "6000",
+  "state": "himachal-pradesh",
+  "state_label": "Himachal Pradesh",
+  "where": "Himachal Pradesh",
+  "range": "Chandra Bhaga (CB) group, Central Lahaul",
+  "area": "Lahaul (Chandra valley, near Batal)",
+  "fa": 1981,
+  "fa_by": "Japanese 'Tampopo' party, north ridge from the South Dakka glacier (HJ 66; a 1989 HJ note credits a 1960 Austrian party, whose own report describes CB 12)",
+  "status": "climbed",
+  "status_note": "Climbed by Indian and Japanese teams (1982, 1989, 2017). Not to be confused with CB-13A (6,240 m). Foreign-team open-list status not verified (Nov 2026).",
+  "grade": "technical",
+  "grade_note": "Crevassed South Dakka glacier, fixed ropes to the north-ridge col (~5,500 m), loose rock and scree on the upper ridge",
+  "season": "Jul–Sep",
+  "base": "Manali → Batal (~4,000 m) → base camp at the end of the South Dakka glacier (~4,300 m)",
+  "foreigners": "unknown",
+  "rank": null,
+  "notable": "Often described as the highest of the Chandra Bhaga (CB) peaks. The 1968 IAF An-12 wreck was found on the Dhaka glacier near CB-13.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/46/22/expeditions-and-notes-46/",
+   "https://www.himalayanclub.org/hj/66/13/polish-expeditions-to-the-lahaul-himalaya-in-1973-and-2008/",
+   "https://himalayanclub.org/hj/39/24/expeditions-1980-1982/",
+   "https://publications.americanalpineclub.org/articles/12198326201"
+  ]
+ },
+ {
   "id": "swargarohini-i",
   "name": "Swargarohini I",
   "alt": [],
@@ -4242,7 +4288,9 @@
   "id": "kolahoi",
   "name": "Kolahoi",
   "alt": [
-   "Gashe-braer"
+   "Gashibrar",
+   "Gashe-braed",
+   "Kolhoi"
   ],
   "m": 5425,
   "ft": 17799,
@@ -4254,18 +4302,22 @@
   "range": "Great Himalaya (Lidder)",
   "area": "Anantnag (Pahalgam)",
   "fa": 1912,
-  "fa_by": "Dr Ernest Neve & Kenneth Mason",
+  "fa_by": "Dr Ernest Neve & Kenneth Mason (28 June 1912, by Neve's couloir and the east ridge)",
   "status": "climbed",
-  "status_note": "",
+  "status_note": "Trails beyond Aru to the Kolahoi glacier closed to trekkers after the April 2025 Pahalgam attack; Aru Valley reopened 29 Sep 2025, but the Kolahoi Glacier trek was still reported closed on 4 Jun 2026 and no reopening order was found as of Nov 2026.",
   "grade": "technical",
-  "grade_note": "Rock/ice pyramid; fatal rockfall 2018",
+  "grade_note": "Rock-and-ice pyramid above a crevassed glacier and icefalls; snow couloir and corniced east ridge; rockfall on warm afternoons killed two descending climbers on 7 Sep 2018",
   "season": "Jun–Sep",
   "base": "Pahalgam → Aru",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Highest peak of the Kashmir Valley; the 'Matterhorn of Kashmir'.",
+  "notable": "Highest peak of the Kashmir Valley (Nun, 7,135 m, is higher in J&K overall); Ernest Neve called it 'the Matterhorn of Kashmir' in 1910; its shrinking glacier feeds the Lidder river.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Mount_Kolahoi"
+   "https://en.wikipedia.org/wiki/Mount_Kolahoi",
+   "https://www.himalayanclub.org/hj/8/11/kolahoi-by-the-south-face/",
+   "https://www.himalayanclub.org/hj/16/8/expeditions-16/",
+   "https://www.outlookindia.com/national/fatal-attraction-popular-local-trekking-scene-in-valley-witnesses-tragedy-news-300735",
+   "https://kashmirlife.net/reopen-great-lakes-routes-trekking-community-raises-livelihood-concerns-438790/"
   ]
  },
  {
