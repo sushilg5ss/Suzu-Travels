@@ -12,3 +12,9 @@ Footer button → the full guide (8-point checklist + red flags).
 
 No JS, no prices, no reviews/counts, nothing stored. Prefix `.szq` (unused on 11411). Gold/ink/sand palette.
 Build: `python3 build.py` → widget.html. Remove: `wp_replace_in_page` 11411 the whole `<!--szt:check-us-->…<!--/szt:check-us-->` with ''.
+
+## Product pages (TRUST_BACKLOG row 32) — live 16 Nov 2026
+`python3 build_product.py` → `widget-11412.html` (/golden-triangle-tour/) + `widget-11413.html` (/char-dham-yatra-for-nri/), each placed right after
+`<!--/szt:before-you-fly-->`. Same 4 checks/answers as the hub (imports build.py). Prefix **.szk** (.szq is already used on 11412/11413 by
+itinerary-pdf). Check 3 links only that page's own PDF; check 4 links `#booking-protected` on 11412 and the hub's panel on 11413 (11413 has no panel).
+Remove: `wp_replace_in_page` the whole `<!--szt:check-us-->…<!--/szt:check-us-->` block with ''.
