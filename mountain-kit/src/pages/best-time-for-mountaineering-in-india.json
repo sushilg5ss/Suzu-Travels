@@ -8,7 +8,7 @@
  "commercial": true,
  "label": "Best time for mountaineering in India",
  "blurb": "Month-by-month windows, region by region",
- "verified": "15 Nov 2026",
+ "verified": "16 Nov 2026",
  "kicker": "Best time · Indian Himalaya · month by month",
  "tag": "Pick the month, then the peak.",
  "sub": "When to climb in the Indian Himalaya, region by region: the monsoon side in May–June and September–October, the rain shadow of Lahaul, Spiti and Ladakh in July–September, with IMD monsoon dates and each peak's typical window.",
@@ -22,7 +22,7 @@
    "in the Lahaul, Spiti and Ladakh rain shadow"
   ],
   [
-   "24 Jun",
+   "22 Jun",
    "normal monsoon onset at Shimla (IMD)"
   ],
   [
@@ -52,11 +52,11 @@
   ],
   [
    "Monsoon at Shimla",
-   "Normal onset 24 Jun, withdrawal 24 Sep (IMD)"
+   "Normal onset 22 Jun, withdrawal 24 Sep (IMD)"
   ],
   [
    "Monsoon at Gangtok",
-   "Normal onset 10 Jun, withdrawal 9 Oct (IMD)"
+   "Normal onset 8 Jun, withdrawal 12 Oct (IMD)"
   ],
   [
    "Leh's yearly precipitation",
@@ -84,7 +84,7 @@
    "label": "Monsoon dates",
    "kicker": "IMD normals",
    "h2": "When the monsoon arrives and leaves the Himalaya",
-   "html": "<p>The IMD publishes normal dates for the onset and withdrawal of the south-west monsoon at each station (new normals from 2020). They explain the climbing calendar better than any rule of thumb: the monsoon side has its windows before the onset and after the withdrawal.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>IMD station</th><th>Normal monsoon onset</th><th>Normal withdrawal</th></tr></thead><tbody><tr><td><b>Gangtok (Sikkim)</b></td><td>10 June</td><td>9 October</td></tr><tr><td><b>Pithoragarh (Kumaon, Uttarakhand)</b></td><td>20 June</td><td>28 September</td></tr><tr><td><b>Ladakh</b></td><td>23 June</td><td>23 September</td></tr><tr><td><b>Shimla (Himachal Pradesh)</b></td><td>24 June</td><td>24 September</td></tr><tr><td><b>Jammu</b></td><td>28 June</td><td>21 September</td></tr><tr><td><b>Itanagar (Arunachal Pradesh)</b></td><td>5 June</td><td>14 October</td></tr></tbody></table></div><p>Across extreme north-west India the monsoon normally covers the whole region by 8 July. Real years differ from the normals. In 2026 the monsoon entered Himachal Pradesh on 30 June and left on 3 October, about a week later than normal, with season rainfall 11% below normal (IMD Shimla).</p>"
+   "html": "<p>The IMD publishes normal dates for the onset and withdrawal of the south-west monsoon at each station (new normals, IMD research report of 2020). They explain the climbing calendar better than any rule of thumb: the monsoon side has its windows before the onset and after the withdrawal.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>IMD station</th><th>Normal monsoon onset</th><th>Normal withdrawal</th></tr></thead><tbody><tr><td><b>Hayuliang (Arunachal Pradesh)</b></td><td>5 June</td><td>14 October</td></tr><tr><td><b>Gangtok (Sikkim)</b></td><td>8 June</td><td>12 October</td></tr><tr><td><b>Dehradun (Uttarakhand)</b></td><td>20 June</td><td>27 September</td></tr><tr><td><b>Shimla (Himachal Pradesh)</b></td><td>22 June</td><td>24 September</td></tr><tr><td><b>Ladakh</b></td><td>24 June</td><td>22 September</td></tr><tr><td><b>Jammu</b></td><td>28 June</td><td>21 September</td></tr></tbody></table></div><p>Across extreme north-west India the monsoon normally covers the whole region by 8 July. Real years differ from the normals. In 2026 the monsoon entered Himachal Pradesh on 30 June and left on 3 October, about a week later than normal, with season rainfall 11% below normal (IMD Shimla).</p>"
   },
   {
    "id": "rain-shadow",
@@ -105,7 +105,7 @@
    "label": "Late season",
    "kicker": "September to November",
    "h2": "Is October too late to climb?",
-   "html": "<p>Early and mid-October often bring the clearest, most stable weather of the year on the monsoon side, which is why autumn is the main expedition season in Garhwal and Kullu. Days are shorter and nights colder, and the first heavy snow can come before the end of the month.</p><div class=\"szm-call\"><p><b>Plan a buffer.</b> On 31 October 2026 an avalanche struck a trekking party beyond Bhojkharak on the Kedartal route above Gangotri, and the district administration launched an NDRF and SDRF rescue. Late-season snow is a reason to keep spare days and follow local advisories.</p></div><p>In Sikkim the autumn window runs later: the IMD normal withdrawal at Gangtok is 9 October, and our dataset gives Frey Peak April–May and October–November. The state's adventure tourism page says May to October is the ideal season for mountaineering in Sikkim; that page draws on an older order, so confirm the current rules. See our <a href=\"/mountains-of-india/sikkim/\">Sikkim peaks guide</a>.</p>"
+   "html": "<p>Early and mid-October often bring the clearest, most stable weather of the year on the monsoon side, which is why autumn is the main expedition season in Garhwal and Kullu. Days are shorter and nights colder, and the first heavy snow can come before the end of the month.</p><div class=\"szm-call\"><p><b>Plan a buffer.</b> On 31 October 2026 an avalanche struck a trekking party beyond Bhojkharak on the Kedartal route above Gangotri, and the district administration launched an NDRF and SDRF rescue. Late-season snow is a reason to keep spare days and follow local advisories.</p></div><p>In Sikkim the autumn window runs later: the IMD normal withdrawal at Gangtok is 12 October, and our dataset gives Frey Peak April–May and October–November. The state's adventure tourism page says May to October is the ideal season for mountaineering in Sikkim; that page draws on an older order, so confirm the current rules. See our <a href=\"/mountains-of-india/sikkim/\">Sikkim peaks guide</a>.</p>"
   },
   {
    "id": "winter",
@@ -136,7 +136,7 @@
   ],
   [
    "When does the monsoon reach and leave Himachal Pradesh?",
-   "The IMD normal onset at Shimla is 24 June and the normal withdrawal is 24 September. In 2026 the monsoon entered the state on 30 June and left on 3 October, about a week late."
+   "The IMD normal onset at Shimla is 22 June and the normal withdrawal is 24 September. In 2026 the monsoon entered the state on 30 June and left on 3 October, about a week late."
   ],
   [
    "Is October too late to climb in the Himalaya?",
@@ -156,7 +156,7 @@
   ],
   [
    "When is the best time to climb in Sikkim?",
-   "The IMD normal monsoon onset at Gangtok is 10 June and the withdrawal is 9 October, so spring (April–May) and autumn (October–November) are the usual windows, as for Frey Peak."
+   "The IMD normal monsoon onset at Gangtok is 8 June and the withdrawal is 12 October, so spring (April–May) and autumn (October–November) are the usual windows, as for Frey Peak."
   ]
  ],
  "links": [
@@ -178,8 +178,8 @@
  ],
  "sources": [
   [
-   "India Meteorological Department — New normal dates of onset and withdrawal of the south-west monsoon (2020)",
-   "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf"
+   "India Meteorological Department — Research Report CRS RR 3/2020: normal dates of onset and withdrawal of the south-west monsoon",
+   "https://internal.imd.gov.in/press_release/20200515_pr_804.pdf"
   ],
   [
    "IMD Meteorological Centre Shimla — Himachal Pradesh Monsoon Report 2026",

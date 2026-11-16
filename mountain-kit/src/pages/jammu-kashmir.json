@@ -9,7 +9,7 @@
  "commercial": false,
  "label": "Peaks of Jammu & Kashmir",
  "blurb": "10 peaks · Nun 7,135 m to Mahadev above Srinagar",
- "verified": "8 Nov 2026",
+ "verified": "16 Nov 2026",
  "kicker": "Jammu & Kashmir · Kashmir to Kishtwar",
  "tag": "Jammu & Kashmir's mountains, from Srinagar's skyline to the Nun summit.",
  "sub": "Ten notable summits, from 7,135 m Nun on the Ladakh border to Mahadev above Srinagar, with their heights, ranges, first ascents and what you can actually do on each: climb it, walk it, or admire it as a sacred peak.",
@@ -94,7 +94,7 @@
    "label": "History",
    "kicker": "Firsts",
    "h2": "Climbing firsts in Jammu & Kashmir",
-   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Year</th><th>Ascent</th></tr></thead><tbody><tr><td><b>1856</b></td><td>Station Peak (4,698 m) on the Harmukh massif: climbed by the Great Trigonometrical Survey under Montgomerie</td></tr><tr><td><b>1899</b></td><td>Harmukh: Dr Ernest Neve and Geoffrey Millais</td></tr><tr><td><b>1901</b></td><td>Sunset Peak (Arthur and Ernest Neve) and Tatakooti (C.E. Barton and Ernest Neve) in the Pir Panjal</td></tr><tr><td><b>1912</b></td><td>Kolahoi (5,425 m): Dr Ernest Neve and Kenneth Mason</td></tr><tr><td><b>1953</b></td><td>Nun (7,135 m): Pierre Vittoz and Claude Kogan, west ridge, on 28 August, with a French–Swiss–Indian team led by Bernard Pierre; Kogan set a women's altitude record</td></tr><tr><td><b>1973</b></td><td>Brammah I (6,416 m): Chris Bonington and Nick Estcourt, south-east ridge</td></tr><tr><td><b>1975</b></td><td>Sickle Moon (6,574 m): an Indian Army High Altitude Warfare School team led by Lt Col D.N. Tankha</td></tr><tr><td><b>2023</b></td><td>First Indian ascent of Brammah I, on 18 July, by the Sonarpur Aarohi Club of West Bengal; in September the first traverse of \"Kolahoi Greater\", by a team led by Inayat Ullah Bhat</td></tr></tbody></table></div><p>Kolahoi is loose ground: rockfall killed two descending climbers on 7 September 2018, and its glacier shrank from 13.57 km² in 1963 to 10.69 km² in 2005. More firsts across India in our <a href=\"/mountains-of-india/highest-peak-in-every-state/\">highest peak in every state</a> guide.</p>"
+   "html": "<div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Year</th><th>Ascent</th></tr></thead><tbody><tr><td><b>1856</b></td><td>Station Peak (4,698 m) on the Harmukh massif: climbed by the Great Trigonometrical Survey under Montgomerie</td></tr><tr><td><b>1899</b></td><td>Harmukh: Dr Ernest Neve and Geoffrey Millais</td></tr><tr><td><b>1901</b></td><td>Sunset Peak (Arthur and Ernest Neve) and Tatakooti (C.E. Barton and Ernest Neve) in the Pir Panjal</td></tr><tr><td><b>1912</b></td><td>Kolahoi (5,425 m): Dr Ernest Neve and Kenneth Mason</td></tr><tr><td><b>1953</b></td><td>Nun (7,135 m): Pierre Vittoz and Claude Kogan, west ridge, on 28 August, with a French–Swiss–Indian team led by Bernard Pierre; Kogan set a women's altitude record</td></tr><tr><td><b>1973</b></td><td>Brammah I (6,416 m): Chris Bonington and Nick Estcourt, south-east ridge</td></tr><tr><td><b>1975</b></td><td>Sickle Moon (6,574 m): an Indian Army High Altitude Warfare School team led by Lt Col D.N. Tankha</td></tr><tr><td><b>2023</b></td><td>First Indian ascent of Brammah I, on 18 July, by the Sonarpur Aarohi Club of West Bengal; on 6 September a joint JIM&WS–AJKMF team summited Kolahoi by the east ridge</td></tr></tbody></table></div><p>Kolahoi is loose ground: rockfall killed two descending climbers on 7 September 2018, and its glacier shrank from 13.57 km² in 1963 to 10.69 km² in 2005. More firsts across India in our <a href=\"/mountains-of-india/highest-peak-in-every-state/\">highest peak in every state</a> guide.</p>"
   },
   {
    "id": "season",
@@ -135,7 +135,7 @@
   ],
   [
    "Can you climb Kolahoi?",
-   "Yes. It was first climbed in 1912, and the usual route is the south face from Aru near Pahalgam. It is a technical climb with rockfall risk: two climbers died on the descent in 2018."
+   "Yes. It was first climbed in 1912, and the usual route is the south face from Aru near Pahalgam. It is a technical climb with rockfall risk: two climbers died on the descent in 2018. As of November 2026 the trails beyond Aru to the Kolahoi glacier had been closed to trekkers since the 2025 Pahalgam attack, while Aru itself reopened in September 2025, so check the J&K administration's current advisory first."
   ],
   [
    "Which is the highest peak of the Pir Panjal in Kashmir?",
@@ -214,6 +214,14 @@
   [
    "Kashmir Life, Jul 2025 — Trekkers call for reopening of Great Lakes",
    "https://kashmirlife.net/trekkers-call-for-lg-cm-intervention-to-reopen-great-lakes-396253/"
+  ],
+  [
+   "Greater Kashmir — Joint team of AJKMF, JIM&WS summit Mt Kolahoi (11 Sep 2023)",
+   "https://greaterkashmir.com/uncategorized/joint-team-of-ajkmf-jimws-summit-mt-kolahoi"
+  ],
+  [
+   "Deccan Herald — J&K L-G orders reopening of more tourist spots shut since Pahalgam attack (26 Sep 2025)",
+   "https://www.deccanherald.com/amp/story/india%2Fjammu-and-kashmir%2Fjammu-kashmir-l-g-orders-reopening-of-more-tourist-spots-shut-since-pahalgam-attack-in-april-3744474"
   ]
  ],
  "sameAs": [
