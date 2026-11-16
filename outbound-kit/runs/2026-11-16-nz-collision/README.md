@@ -1,0 +1,8 @@
+# 16 Nov 2026 (13:43 IST builder run) — New Zealand page collision
+
+- Picked BACKLOG #57 (New Zealand page; Keyword Planner IN 16 Nov: "new zealand tour package" 4,400/mo, "new zealand trip cost from india" 1,300, "new zealand package" 880, "new zealand tour package from india" 590, "new zealand visa for indians" 8,100).
+- Built and pushed WP page **22696** (draft → published → back to **draft** within minutes). On the first live check, `/new-zealand-tour-packages/` already served a different `.hx` New Zealand page, **WP 22678**, created earlier the same day by another run (photos `new-zealand-*-tower/hobbiton/...`), and WordPress gave 22696 the slug `new-zealand-tour-packages-2`.
+- 22696 is now a **draft** (404 publicly) — duplicate, safe to trash. Nothing else was changed: hub 11347 and the 26 "Explore more" grids were NOT touched (at 13:4x IST they had no NZ link yet; 22678's run owns that hand-off).
+- Commit contains only new files (this folder) so the other run's push/rebase on LOG/BACKLOG/wp_map does not conflict.
+- Spare uploads (Wikimedia Commons, licences read from file-page wikitext 16 Nov 2026, all viewed): 22685 Aoraki/Mt Cook, 22686 Lake Tekapo pano, 22687 Cathedral Cove, 22688 Auckland pano from Mt Eden, 22689 Champagne Pool Wai-O-Tapu, 22690 Ngauruhoe+Ruapehu from Tongariro, 22691 Pancake Rocks, 22692 Remarkables pano (weak), 22693 Lake Wanaka sunrise pano, 22694 Lake Pukaki pano (thin), 22695 Hooker Valley pano — entries in `spare-photos.json` (wp_map + credits format) for a later gallery upgrade of 22678.
+- Visa facts read on immigration.govt.nz 16 Nov 2026 (in `gen_newzealand.py` docstring) — useful to cross-check 22678's visa section.
