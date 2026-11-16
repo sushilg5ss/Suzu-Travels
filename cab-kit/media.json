@@ -893,5 +893,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "delhi-airport-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f5d904ec0eb473cb6bda09e44521120448694299/cab-kit/media/delhi-airport-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f5d904ec0eb473cb6bda09e44521120448694299/cab-kit/media/delhi-airport-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f5d904ec0eb473cb6bda09e44521120448694299/cab-kit/media/delhi-airport-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
