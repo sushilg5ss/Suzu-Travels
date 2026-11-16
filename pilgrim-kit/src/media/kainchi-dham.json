@@ -10,5 +10,30 @@
    "Love all, serve all, remember God",
    "Every 15 June, devotees gather"
   ]
+ },
+ "story": {
+  "title": "The story of Kainchi Dham",
+  "beats": [
+   {
+    "arch": "hills",
+    "sky": "dawn",
+    "line": "A saint stops at the Shipra bend"
+   },
+   {
+    "arch": "ghats",
+    "sky": "dusk",
+    "line": "A Hanuman temple rises, June 1964"
+   },
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Love all, serve all, remember God"
+   },
+   {
+    "arch": "hills",
+    "sky": "saffron",
+    "line": "Each 15 June, lamps fill the valley"
+   }
+  ]
  }
 }
