@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 70% 0%, #17395c 0%, #0b1f33 60%); }
+      .kicker { position: absolute; left: 120px; top: 56px; color: #d4a24c; font-weight: 800; font-size: 28px; letter-spacing: 0.16em; white-space: nowrap; }
+      .title { position: absolute; left: 120px; top: 96px; color: #fff; font-weight: 800; font-size: 64px; letter-spacing: -0.01em; white-space: nowrap; }
+      .legend { position: absolute; right: 120px; top: 70px; display: flex; gap: 28px; }
+      .lg { color: #fff; font-weight: 800; font-size: 26px; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
+      .sw { width: 22px; height: 22px; border-radius: 6px; }
+      svg.ch { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      svg.ch text { font-family: "PJS", sans-serif; font-weight: 800; }
+      .months { position: absolute; left: 120px; top: 968px; width: 1680px; height: 64px; }
+      .mo { position: absolute; top: 0; width: 160px; height: 64px; border-radius: 12px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); font-weight: 800; font-size: 28px; line-height: 64px; text-align: center; }
+      .mo.snow { background: #d4a24c; color: #0b1f33; }
+      .snowlab { position: absolute; left: 1010px; top: 968px; height: 64px; color: #fff; font-weight: 800; font-size: 32px; line-height: 64px; white-space: nowrap; }
+      .chip { position: absolute; right: 120px; top: 968px; height: 64px; padding: 0 26px; border-radius: 32px; background: #fff; color: #0b1f33; font-weight: 800; font-size: 30px; line-height: 64px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker" id="kick">WINTER TREKS IN HIMACHAL</div>
+        <div class="title" id="ttl">How high, and is it open in winter?</div>
+        <div class="legend" id="leg">
+          <div class="lg"><div class="sw" style="background:#3fbf6f"></div>Open</div>
+          <div class="lg"><div class="sw" style="background:#d4a24c"></div>Permission first</div>
+          <div class="lg"><div class="sw" style="background:#7d8a97"></div>Closed in winter</div>
+        </div>
+        <svg class="ch" viewBox="0 0 1920 1080">
+          <g id="grid"></g>
+          <line id="lim" x1="140" y1="0" x2="1800" y2="0" stroke="#e5484d" stroke-width="5" stroke-dasharray="18 12" />
+          <g id="limlab"><rect id="limrect" x="190" y="0" width="420" height="44" rx="10" fill="#e5484d" /><text id="limtxt" x="400" y="0" text-anchor="middle" font-size="24" fill="#fff">3,000 m · Kangra winter limit</text></g>
+          <g id="bars"></g>
+        </svg>
+        <div class="months" id="months"></div>
+        <div class="snowlab" id="snowlab">Snow usually Dec → Feb</div>
+        <div class="chip" id="chip">Price: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const NS = "http://www.w3.org/2000/svg";
+      const Y0 = 860, YT = 250, M0 = 2000, M1 = 3800;
+      const y = (m) => Y0 - (m - M0) * (Y0 - YT) / (M1 - M0);
+      const data = [
+        ["Kalatop walk", 2400, "~2,400", "#3fbf6f"],
+        ["Bijli Mahadev", 2460, "2,460", "#3fbf6f"],
+        ["Prashar Lake", 2730, "2,730", "#3fbf6f"],
+        ["Dainkund", 2755, "2,755", "#3fbf6f"],
+        ["Triund", 2850, "~2,850", "#d4a24c"],
+        ["Kareri Lake", 2934, "2,934", "#d4a24c"],
+        ["Shikari Devi", 3359, "3,359", "#7d8a97"],
+        ["Churdhar", 3647, "3,647", "#7d8a97"]
+      ];
+      const el = (tag, at, parent) => { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); parent.appendChild(e); return e; };
+      const grid = document.getElementById("grid"), bars = document.getElementById("bars");
+      [2000, 2500, 3500].forEach((m) => {
+        el("line", { x1: 140, y1: y(m), x2: 1800, y2: y(m), stroke: "rgba(255,255,255,0.12)", "stroke-width": 2 }, grid);
+        const t = el("text", { x: 128, y: y(m) + 9, "text-anchor": "end", "font-size": 24, fill: "rgba(255,255,255,0.55)" }, grid); t.textContent = m.toLocaleString("en-US") + " m";
+      });
+      const W = 132, GAP = 70, X0 = 190;
+      data.forEach((d, i) => {
+        const x = X0 + i * (W + GAP);
+        const r = el("rect", { id: "b" + i, x: x, y: Y0, width: W, height: 0, rx: 10, fill: "rgba(255,255,255,0.85)" }, bars);
+        const v = el("text", { id: "v" + i, x: x + W / 2, y: y(d[1]) - 16, "text-anchor": "middle", "font-size": 30, fill: "#fff", stroke: "#0b1f33", "stroke-width": 8, "paint-order": "stroke", opacity: 0 }, bars); v.textContent = d[2] + " m";
+        const n = el("text", { id: "n" + i, x: x + W / 2, y: Y0 + 44, "text-anchor": "middle", "font-size": 26, fill: "#fff", opacity: 0 }, bars); n.textContent = d[0];
+        tl.to(r, { attr: { y: y(d[1]), height: Y0 - y(d[1]) }, duration: 0.7, ease: "power2.out" }, 0.9 + i * 0.25);
+        tl.to([v, n], { opacity: 1, duration: 0.3 }, 1.3 + i * 0.25);
+        tl.to(r, { attr: { fill: d[3] }, duration: 0.4, ease: "sine.inOut" }, 5.6 + i * 0.12);
+      });
+      // limit line
+      const ly = y(3000);
+      document.getElementById("lim").setAttribute("y1", ly); document.getElementById("lim").setAttribute("y2", ly);
+      document.getElementById("limrect").setAttribute("y", ly - 62);
+      document.getElementById("limtxt").setAttribute("y", ly - 31);
+      const lim = document.getElementById("lim");
+      gsap.set(lim, { attr: { x2: 140 } });
+      gsap.set("#limlab", { opacity: 0 });
+      tl.to(lim, { attr: { x2: 1800 }, duration: 1, ease: "power2.inOut" }, 3.9);
+      tl.to("#limlab", { opacity: 1, duration: 0.4 }, 4.7);
+
+      gsap.set(["#kick", "#ttl", "#leg"], { opacity: 0, y: 20 });
+      tl.to(["#kick", "#ttl"], { opacity: 1, y: 0, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0.1);
+      tl.to("#leg", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 5.4);
+
+      // month strip
+      const months = document.getElementById("months");
+      const ms = ["Nov", "Dec", "Jan", "Feb", "Mar"];
+      ms.forEach((m, i) => {
+        const d = document.createElement("div"); d.className = "mo"; d.id = "m" + i; d.style.left = (i * 172) + "px"; d.textContent = m; months.appendChild(d);
+      });
+      gsap.set(["#months", "#snowlab", "#chip"], { opacity: 0, y: 16 });
+      tl.to("#months", { opacity: 1, y: 0, duration: 0.4 }, 7.6);
+      ["#m1", "#m2", "#m3"].forEach((id, i) => tl.to(id, { backgroundColor: "#d4a24c", color: "#0b1f33", duration: 0.3 }, 8.2 + i * 0.3));
+      tl.to("#snowlab", { opacity: 1, y: 0, duration: 0.4 }, 9.2);
+      tl.to("#chip", { opacity: 1, y: 0, duration: 0.4 }, 10.2);
+      tl.to({}, { duration: 0.01 }, 11.99);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

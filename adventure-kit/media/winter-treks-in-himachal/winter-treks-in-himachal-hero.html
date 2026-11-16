@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.82) 55%, rgba(11,31,51,0.94) 100%); }
+      #snow { position: absolute; inset: 0; }
+      .fl { position: absolute; left: 0; top: 0; border-radius: 50%; background: rgba(255,255,255,0.9); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 92px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; white-space: nowrap; }
+      .t1 { position: absolute; left: 0; top: 152px; color: #fff; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 268px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t3 { position: absolute; left: 0; top: 392px; color: #fff; font-weight: 500; font-size: 42px; white-space: nowrap; }
+      .board { position: absolute; left: 0; top: 476px; width: 820px; }
+      .row { position: absolute; left: 0; width: 820px; height: 54px; }
+      .dot { position: absolute; left: 0; top: 13px; width: 28px; height: 28px; border-radius: 50%; }
+      .nm { position: absolute; left: 46px; top: 6px; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .tag { position: absolute; right: 0; top: 8px; height: 40px; padding: 0 18px; border-radius: 20px; font-weight: 800; font-size: 24px; line-height: 40px; letter-spacing: 0.06em; white-space: nowrap; }
+      .open .dot { background: #3fbf6f; box-shadow: 0 0 0 6px rgba(63,191,111,0.28); }
+      .open .tag { background: #3fbf6f; color: #0b1f33; }
+      .shut .dot { background: #7d8a97; }
+      .shut .nm { color: rgba(255,255,255,0.55); }
+      .shut .tag { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.75); }
+      .bar { position: absolute; left: 0; top: 836px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 862px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 44px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><div style="position:absolute;inset:0"><img id="im1" src="assets/kalatop.jpg" alt="" style="object-position:30% 70%" /></div></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/path.jpg" alt="" style="object-position:40% 72%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/dainkund.jpg" alt="" style="object-position:20% 60%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="2.75" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/hamlet.jpg" alt="" style="object-position:25% 60%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div id="fd5" style="position:absolute;inset:0"><img id="im5" src="assets/kalatop.jpg" alt="" style="object-position:30% 70%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div id="snow" data-layout-allow-overflow></div>
+        <div class="panel">
+          <div class="kicker">TREKS &amp; CAMPS · WINTER 2026–27</div>
+          <div class="t1">Winter Treks</div>
+          <div class="t2">in Himachal</div>
+          <div class="t3">snow trails that are open — and closed</div>
+          <div class="board">
+            <div class="row open" id="r1" style="top:0px"><div class="dot"></div><div class="nm">Prashar Lake</div><div class="tag">OPEN</div></div>
+            <div class="row open" id="r2" style="top:56px"><div class="dot"></div><div class="nm">Dainkund &amp; Kalatop</div><div class="tag">OPEN</div></div>
+            <div class="row open" id="r3" style="top:112px"><div class="dot"></div><div class="nm">Sethan &amp; Jogini</div><div class="tag">OPEN</div></div>
+            <div class="row shut" id="r4" style="top:168px"><div class="dot"></div><div class="nm">Churdhar</div><div class="tag">CLOSED</div></div>
+            <div class="row shut" id="r5" style="top:224px"><div class="dot"></div><div class="nm">High passes</div><div class="tag">CLOSED</div></div>
+            <div class="row shut" id="r6" style="top:280px"><div class="dot"></div><div class="nm">Lahaul-Spiti treks</div><div class="tag">CLOSED</div></div>
+          </div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Snow usually Dec–Feb</div>
+            <div class="fact" id="f2">Beginner walks 2,400–2,800 m</div>
+            <div class="fact" id="f3">Kangra: no treks above 3,000 m</div>
+            <div class="fact" id="f4">Best snow Jan–Feb</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const D = 12;
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, y: 10 }, { scale: 1, y: -10, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: -24, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 2.75, ease: "none" }, 9);
+      tl.fromTo("#im5", { scale: 1, x: 0 }, { scale: 1, x: 0, duration: 1.2, ease: "none" }, 10.8);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.inOut" }, 10.8);
+
+      // board: final state at 0 (seam), dims at 0.3, rows light up one by one, hold to the end
+      const rows = ["#r1", "#r2", "#r3", "#r4", "#r5", "#r6"];
+      tl.to(rows, { opacity: 0.18, duration: 0.3, ease: "power1.in" }, 0.3);
+      rows.forEach((id, i) => {
+        tl.fromTo(id, { opacity: 0.18, x: 30 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, 0.9 + i * 0.6);
+      });
+      ["#r1", "#r2", "#r3"].forEach((id, i) => {
+        tl.fromTo(id + " .dot", { scale: 1 }, { scale: 1.35, duration: 0.25, yoyo: true, repeat: 1, ease: "sine.inOut", immediateRender: false }, 1.2 + i * 0.6);
+      });
+
+      const fx = [["#f1", 0, 2.6], ["#f2", 2.9, 5.5], ["#f3", 5.8, 8.4], ["#f4", 8.7, 11.3]];
+      gsap.set(["#f2", "#f3", "#f4"], { opacity: 0 });
+      fx.forEach(([id, a, b], i) => {
+        if (i > 0) tl.fromTo(id, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, a);
+        tl.to(id, { opacity: 0, y: -18, duration: 0.3, ease: "power2.in" }, b);
+      });
+      tl.fromTo("#f1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 11.6);
+
+      // periodic snowfall (whole cycles over D -> seamless)
+      let seed = 29;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const snow = document.getElementById("snow");
+      const fls = [];
+      for (let i = 0; i < 90; i++) {
+        const el = document.createElement("div"); el.className = "fl";
+        const s = 3 + rnd() * 7; el.style.width = s + "px"; el.style.height = s + "px"; el.style.opacity = (0.45 + rnd() * 0.5).toFixed(2);
+        snow.appendChild(el);
+        fls.push({ el, x: rnd() * 1920, ph: rnd(), cyc: 1 + Math.floor(rnd() * 3), sw: 10 + rnd() * 30, swc: 1 + Math.floor(rnd() * 3) });
+      }
+      const st = { t: 0 };
+      const upd = () => {
+        const u = st.t / D;
+        fls.forEach((f) => {
+          const p = (u * f.cyc + f.ph) % 1;
+          const y = -20 + p * 1120;
+          const x = f.x + f.sw * Math.sin(6.283 * (u * f.swc + f.ph));
+          f.el.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+        });
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
