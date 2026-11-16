@@ -55,6 +55,8 @@ PHOTOS = MEDIA.get("photos", {})
 
 FILM_JS = "<script>(function(){var v=document.querySelector('video[data-film]'),c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(!v){return}var pu=v.getAttribute('data-poster'),pm=v.getAttribute('data-poster-m');if(pm){if(window.matchMedia){if(matchMedia('(max-width: 640px)').matches){pu=pm}}}v.poster=pu;if(c){if(c.saveData){return}if(/(^|-)[23]g$/.test(c.effectiveType||'')){return}}if(window.matchMedia){if(matchMedia('(prefers-reduced-motion: reduce)').matches){return}}function go(){var s=v.querySelectorAll('source[data-src]'),i,p;for(i=0;s.length>i;i++){s[i].src=s[i].getAttribute('data-src');s[i].removeAttribute('data-src')}v.preload='auto';v.autoplay=true;v.load();p=v.play();if(p){if(p.catch){p.catch(function(){})}}}function idle(){if(window.requestIdleCallback){requestIdleCallback(go,{timeout:2500})}else{setTimeout(go,300)}}if(document.readyState==='complete'){idle()}else{window.addEventListener('load',idle)}})()</script>"
 
+ROUTE_JS = "<script>(function(){var v=document.querySelector('video[data-lazy]'),c=navigator.connection||navigator.mozConnection||navigator.webkitConnection,o;if(!v){return}if(c){if(c.saveData){return}}function go(){var s=v.querySelectorAll('source[data-src]'),i,p;for(i=0;s.length>i;i++){s[i].src=s[i].getAttribute('data-src');s[i].removeAttribute('data-src')}v.preload='auto';v.load();p=v.play();if(p){if(p.catch){p.catch(function(){})}}}if(window.IntersectionObserver){o=new IntersectionObserver(function(e){var k;for(k=0;e.length>k;k++){if(e[k].isIntersecting){o.disconnect();go();return}}},{rootMargin:'300px'});o.observe(v)}else{go()}})()</script>"
+
 def video_tag(m, cls="", eager=False):
     if not m:
         return ""
@@ -69,10 +71,12 @@ def video_tag(m, cls="", eager=False):
         pm = f' data-poster-m="{m["poster_m"]}"' if m.get("poster_m") else ""
         return (f'<video class="{cls}" data-film muted loop playsinline preload="none" data-poster="{m["poster"]}"{pm} width="{m.get("w",1600)}" height="{m.get("h",900)}">'
                 f'{mob}<source data-src="{m["webm"]}" type="video/webm"><source data-src="{m["mp4"]}" type="video/mp4"></video>{FILM_JS}')
-    pre = "metadata"
-    mob = f'<source src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
-    return (f'<video class="{cls}" autoplay muted loop playsinline preload="{pre}" poster="{m["poster"]}" width="{m.get("w",1600)}" height="{m.get("h",900)}">'
-            f'{mob}<source src="{m["webm"]}" type="video/webm"><source src="{m["mp4"]}" type="video/mp4"></video>')
+    # ENHANCEMENTS #25 (16 Nov 2026): the below-fold route-map video no longer downloads on first load. Poster stays as the
+    # first paint; the <source>s carry data-src and the inline ROUTE_JS (right after the video, one replace op per page)
+    # attaches them when the video comes within 300 px of the viewport (IntersectionObserver; no IO -> at once; Save-Data -> poster only).
+    mob = f'<source data-src="{m["mobile"]}" type="video/mp4" media="(max-width: 640px)">' if m.get("mobile") else ""
+    return (f'<video class="{cls}" data-lazy autoplay muted loop playsinline preload="none" poster="{m["poster"]}" width="{m.get("w",1600)}" height="{m.get("h",900)}">'
+            f'{mob}<source data-src="{m["webm"]}" type="video/webm"><source data-src="{m["mp4"]}" type="video/mp4"></video>{ROUTE_JS}')
 
 # ---------------------------------------------------------------- blocks
 def hero(p, chips):
@@ -590,7 +594,7 @@ def hub_unquote(m):
 
 def finish(slug, h, css_extra=""):
     # the hero FILM_JS (#14) is the first <script> now - escape the HTML on both sides of it exactly as before
-    h = FILM_JS.join(_amp(x) for x in h.split(FILM_JS, 1)) if FILM_JS in h else _amp(h)
+    h = FILM_JS.join(ROUTE_JS.join(_amp(y) for y in x.split(ROUTE_JS, 1)) for x in h.split(FILM_JS, 1))   # #25: the inline ROUTE_JS (route section) is skipped like FILM_JS
     problems = re.findall(r"\{\{.*?\}\}|TODO|XXX", h)
     if problems:
         sys.exit(f"BUILD REFUSED {slug}: {problems}")
