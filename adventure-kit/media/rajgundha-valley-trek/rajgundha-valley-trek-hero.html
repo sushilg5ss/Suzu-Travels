@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.8) 56%, rgba(11,31,51,0.93) 100%); }
+      #mist { position: absolute; inset: 0; }
+      .ms { position: absolute; left: 0; top: 0; width: 1000px; height: 280px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(235,240,245,0.22) 0%, rgba(235,240,245,0.09) 45%, rgba(235,240,245,0) 70%); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 96px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; white-space: nowrap; }
+      .t1 { position: absolute; left: 0; top: 160px; color: #fff; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 280px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t3 { position: absolute; left: 0; top: 404px; color: #fff; font-weight: 500; font-size: 44px; white-space: nowrap; }
+      svg.prof { position: absolute; left: 0; top: 500px; width: 820px; height: 210px; overflow: visible; }
+      svg.prof text { font-family: "PJS", sans-serif; font-weight: 800; font-size: 26px; fill: #fff; }
+      .big { position: absolute; left: 0; top: 724px; color: #fff; font-weight: 800; font-size: 88px; letter-spacing: -0.02em; white-space: nowrap; }
+      .biglab { position: absolute; left: 440px; top: 744px; width: 380px; text-align: right; color: rgba(255,255,255,0.92); font-weight: 800; font-size: 32px; line-height: 1.15; white-space: nowrap; }
+      .bar { position: absolute; left: 0; top: 866px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 890px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 46px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><div style="position:absolute;inset:0"><img id="im1" src="assets/takeoff.jpg" alt="" style="object-position:20% 60%" /></div></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><img id="im2" src="assets/trail.jpg" alt="" style="object-position:35% 60%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/meadow.jpg" alt="" style="object-position:62% 70%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="2.75" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/night.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div id="fd5" style="position:absolute;inset:0"><img id="im5" src="assets/takeoff.jpg" alt="" style="object-position:20% 60%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div id="mist" data-layout-allow-overflow></div>
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">TREKS &amp; CAMPS · BIR BILLING, KANGRA</div>
+          <div class="t1">Rajgundha</div>
+          <div class="t2">Valley Trek</div>
+          <div class="t3">the quiet valley behind Billing</div>
+          <svg class="prof" viewBox="0 0 820 210">
+            <path d="M0 200 L120 186 L230 120 L330 96 L420 108 L520 62 L600 76 L680 40 L760 70 L820 96" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path id="gold" d="M0 200 L120 186 L230 120 L330 96 L420 108 L520 62 L600 76 L680 40" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+            <circle id="halo" cx="680" cy="40" r="0" fill="rgba(212,162,76,0.45)" />
+            <circle cx="680" cy="40" r="14" fill="#d4a24c" stroke="#fff" stroke-width="4" />
+            <circle cx="0" cy="200" r="10" fill="#fff" />
+            <text x="22" y="194" text-anchor="start">Bir</text><circle cx="330" cy="96" r="10" fill="#fff" /><text x="330" y="148" text-anchor="middle">Billing</text>
+            <text x="680" y="4" text-anchor="middle" style="fill:#d4a24c">RAJGUNDHA</text>
+          </svg>
+          <div class="big" id="alt">~2,700 m</div>
+          <div class="biglab">Chhota Bhangal<br />village, Kangra</div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">12–14 km walk from Billing</div>
+            <div class="fact" id="f2">5–6 hours one way</div>
+            <div class="fact" id="f3">Short way in from Barot side</div>
+            <div class="fact" id="f4">Best Mar–Jun &amp; Sep–Oct</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const D = 12;
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, y: 10 }, { scale: 1, y: -10, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: -24, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 2.75, ease: "none" }, 9);
+      tl.fromTo("#im5", { scale: 1, x: 0 }, { scale: 1, x: 0, duration: 1.2, ease: "none" }, 10.8);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.inOut" }, 10.8);
+
+      // gold climb line: full at 0 (poster/seam), fades, redraws Janjehli -> summit, stays full to the end
+      const gold = document.getElementById("gold");
+      const L = Math.ceil(gold.getTotalLength());
+      gold.setAttribute("stroke-dasharray", L + " " + L);
+      gold.setAttribute("stroke-dashoffset", 0);
+      tl.to(gold, { opacity: 0, duration: 0.3, ease: "power1.in" }, 0.35);
+      tl.fromTo(gold, { attr: { "stroke-dashoffset": L } }, { attr: { "stroke-dashoffset": 0 }, duration: 7, ease: "power1.inOut", immediateRender: false }, 0.8);
+      tl.to(gold, { opacity: 1, duration: 0.01 }, 0.8);
+      tl.fromTo("#halo", { attr: { r: 0 }, opacity: 0.9 }, { attr: { r: 46 }, opacity: 0, duration: 1.2, ease: "power1.out", immediateRender: false }, 7.8);
+
+      // altitude counter: 3,359 at 0 (seam), fades, counts 0 -> 3,359 with the line, holds to the end
+      const altEl = document.getElementById("alt");
+      const st = { t: 0 };
+      const upd = () => {
+        const t = st.t;
+        let v = 2700;
+        if (t >= 0.7 && t < 7.8) { let k = (t - 0.8) / 7; k = Math.max(0, Math.min(1, k)); const e = k * k * (3 - 2 * k); v = Math.round((1400 + e * 1300) / 10) * 10; }
+        altEl.textContent = "~" + v.toLocaleString("en-US") + " m";
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+      tl.to("#alt", { opacity: 0, duration: 0.3, ease: "power1.in" }, 0.35);
+      tl.to("#alt", { opacity: 1, duration: 0.3, ease: "power1.out" }, 0.75);
+
+      const fx = [["#f1", 0, 2.6], ["#f2", 2.9, 5.5], ["#f3", 5.8, 8.4], ["#f4", 8.7, 11.3]];
+      gsap.set(["#f2", "#f3", "#f4"], { opacity: 0 });
+      fx.forEach(([id, a, b], i) => {
+        if (i > 0) tl.fromTo(id, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, a);
+        tl.to(id, { opacity: 0, y: -18, duration: 0.3, ease: "power2.in" }, b);
+      });
+      tl.fromTo("#f1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 11.6);
+
+      let seed = 61;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const mist = document.getElementById("mist");
+      const blobs = [];
+      for (let i = 0; i < 7; i++) {
+        const el = document.createElement("div"); el.className = "ms"; mist.appendChild(el);
+        blobs.push({ el, x: -300 + rnd() * 1500, y: 300 + rnd() * 650, a: 120 + rnd() * 160, p: rnd() * 6.283, sc: 0.8 + rnd() * 0.8 });
+      }
+      const mst = { t: 0 };
+      const mupd = () => {
+        const w = (mst.t / D) * 6.283;
+        blobs.forEach((b) => { b.el.style.transform = "translate(" + (b.x + b.a * Math.sin(w + b.p)).toFixed(1) + "px," + (b.y + 30 * Math.cos(w + b.p)).toFixed(1) + "px) scale(" + b.sc.toFixed(2) + ")"; });
+      };
+      tl.fromTo(mst, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: mupd }, 0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
