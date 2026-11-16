@@ -89,3 +89,5 @@ date,route,source_domain,url,sedan,crysta,note
 2026-11-09,Chandigarh to Manali (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/fortuner-hire/chandigarh-to-manali,,,FORTUNER ₹6820 all-incl (₹22/km x 310); engine ₹11599
 2026-11-09,Delhi to Rishikesh (Fortuner one-way),trivenicabs.in,https://www.trivenicabs.in/fortuner-hire/delhi-to-rishikesh,,,FORTUNER ₹6600 all-incl (300 km min x ₹22); engine ₹8599
 2026-11-09,Chandigarh (Fortuner per km),rajputanacabs.in,https://rajputanacabs.in/chandigarh/cab-rates/,,,FORTUNER ₹23/km; outstation ₹5500-6000/day; no date (2025-07); engine hire ₹32/km
+2026-11-16,Chandigarh to Manali,rajputanacabs.in,https://rajputanacabs.in/chandigarh/manali-taxi/fare/,4400,10500,midpoints of ranges sedan 4000-4800 / Toyota Crysta 9999-11000; one-way inclusions not stated; page modified 17 Apr 2026; engine sedan 4199 (-5%) crysta 7199 (single source - no question)
+2026-11-16,FARE WATCH INCOMPLETE,-,-,,,17 of 18 competitor URLs (trivenicabs/cabbazar/easemytrip/quickride/makemytrip/oneway.cab; 6 routes) not fetched: fetch permission not approved in unattended run (3rd Monday) + 1 cabbazar client error; not fetched any other way
