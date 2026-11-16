@@ -448,5 +448,14 @@
   "blurb": "Travel advice, insurance, snow and seasons compared — for visitors from abroad",
   "added": "2026-11-16",
   "focus": "manali or kashmir"
+ },
+ "khajuraho-temples": {
+  "id": 22657,
+  "path": "/india-tours/khajuraho-temples/",
+  "kind": "guide",
+  "label": "Khajuraho temples",
+  "blurb": "UNESCO temples between Agra and Varanasi",
+  "added": "2026-11-16",
+  "focus": "khajuraho temples"
  }
 }
