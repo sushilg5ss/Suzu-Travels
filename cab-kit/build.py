@@ -558,6 +558,24 @@ def hub_trim(m):
         dd = [{"l": r["a"] + " → " + r["b"], "km": r["km"], "f": r["f"]} for r in p.get("r", [])]
         if list(c) == ["v", "d", "s"] and c["v"] == dv and c["d"] == dd and all(list(a) == list(b) for a, b in zip(c["v"], dv)) and all(list(a) == ["l", "km", "f"] for a in c["d"]):
             m = m.replace(cfg.group(0), "data-cfg='" + json.dumps({"s": c["s"]}, ensure_ascii=False, separators=(",", ":")) + "'", 1)
+    # 17 Nov 2026 (ENHANCEMENTS #27): hub headroom lever #3 - data-plan r[i] a / b / km / t equal the i-th route card's From /
+    # To / '<km> km' / time text (same order, checked here; done after the data-cfg step above, which needs the full r) -
+    # keep only the other keys (f); kit_hub_pre.js puts a, b, km, t back first (same key order a, b, km, f, t)
+    pln = re.search(r"data-plan='([^']*)'", m)
+    rc = re.findall(r'<article class="szc-card szc-route-card"[^>]*><div class="rc-top"><div class="from">([^<]*)</div><div class="to">→ ([^<]*)</div><div class="line"><span>([^<]*)</span><i></i><span>([^<]*)</span>', m)
+    if pln:
+        p = json.loads(pln.group(1))
+        rr = p.get("r", [])
+        if json.dumps(p, ensure_ascii=False, separators=(",", ":")) == pln.group(1) and len(rc) == len(rr) and rr:
+            out = []
+            for r, (a, b, km, t) in zip(rr, rc):
+                ok = list(r)[:5] == ["a", "b", "km", "f", "t"] and isinstance(r["km"], int) and bool(t)
+                if ok and (r["a"], r["b"], f'{r["km"]} km', r["t"]) == (a, b, km, t) and not re.search(r"[&<>\"']", a + b + t):
+                    out.append({k: v for k, v in r.items() if k not in ("a", "b", "km", "t")})
+                else:
+                    out.append(r)
+            p["r"] = out
+            m = m.replace(pln.group(0), "data-plan='" + json.dumps(p, ensure_ascii=False, separators=(",", ":")) + "'", 1)
     def card(x):
         c = x.group(0)
         ab = re.search(r'<div class="from">([^<]*)</div><div class="to">→ ([^<]*)</div>', c)
@@ -579,7 +597,10 @@ HUB_UNQ = ['class="szc-card-b"', 'class="acts"', 'class="rc-top"', 'class="from"
            'min="1"', 'data-tier="standard"', 'data-type="muv"', 'class="szc-step"', 'type="date"', 'type="submit"', 'value="2"',
            'class="szc-grid"', 'class="szc-tier"', 'data-tier="prime"', 'aria-pressed="true"', 'data-tier="saver"',
            'class="full"', 'value="3"', 'class="lbl"', 'data-seats="6"', 'data-type="bus"']
-HUB_UNQ_CTX = [('<button type="button"', '<button type=button')]  # NOT target=_blank: a site the_content filter (adds rel=noopener)
+HUB_UNQ_CTX = [('<button type="button"', '<button type=button'),
+               # 17 Nov 2026 (ENHANCEMENTS #27): tag-prefixed pairs - the kit script writes these as '\x3ctd ...' so the literal never occurs in it
+               ('<td class="num"', '<td class=num'), ('<span class="szc-tag"', '<span class=szc-tag'), ('<span class="n"', '<span class=n'),
+               ('<span class="s"', '<span class=s'), ('<div class="szc-btns"', '<div class=szc-btns')]  # NOT target=_blank: a site the_content filter (adds rel=noopener)
 # mangles an unquoted target into '=_blank target="_blank"' (live test 15 Nov 2026) - keep every <a> attribute quoted
 
 def hub_unquote_pairs():
