@@ -14,8 +14,8 @@
  "sub": "The Shri Ram Janmabhoomi Mandir in Ayodhya is where devotees come to see Ram Lalla — Lord Rama as a child — and, on the floor above, the Ram Darbar. Here is the story of Ayodhya as tradition tells it, the trust's free darshan slots and aarti times, the phone rule, how to reach from Lucknow, Varanasi or Delhi, and a simple 1–2 day Ayodhya darshan plan.",
  "chips": [
   [
-   "7 am – 9 pm",
-   "free darshan, closed 12–1 pm"
+   "7 am – 9:15 pm",
+   "winter darshan, short bhog breaks"
   ],
   [
    "No fee",
@@ -31,7 +31,7 @@
   ]
  ],
  "q": "What are the Ayodhya Ram Mandir darshan timings, and do you need a pass?",
- "answer": "According to the <b>Shri Ram Janmabhoomi Teerth Kshetra</b> trust (schedule from 18 Apr 2026), free darshan runs <b>7 am to 9 pm with a break from 12 to 1 pm</b>. Aartis are at <b>4 am (Mangala), 6 am (Shringar) and 10 pm (Shayan)</b>. General darshan needs no pass; optional slot and aarti passes are <b>free</b> on the trust's own site. Since 5 Aug 2026 the first-floor Ram Darbar needs no separate pass.",
+ "answer": "From <b>1 Nov 2026</b> the temple follows a <b>winter schedule</b>: free darshan about <b>7 to 11:30 am and 1:35 to about 9:15 pm</b>, with short bhog breaks. Aartis: <b>Mangala 4:30 am, Shringar 6:30 am, Raj Bhog 12 noon, Sandhya 7 pm, Shayan 9:30 pm</b>. General darshan needs no pass; optional passes are <b>free</b> on the trust's own site — confirm winter timings there.",
  "facts": [
   [
    "22 Jan 2024",
@@ -83,24 +83,24 @@
   "h2": "Ram Mandir darshan timings and aarti",
   "rows": [
    [
-    "Free darshan",
-    "<b>7 am to 9 pm</b>, closed 12–1 pm — slots 7–9, 9–11, 11–12 am and 1–3, 3–5, 5–7, 7–9 pm"
+    "Winter darshan (from 1 Nov 2026)",
+    "<b>About 7 am – 11:30 am and 1:35 pm – about 9:15 pm</b>, with short bhog breaks (8–8:10 am, 4–4:10 pm, 8–8:30 pm). Gates open 4 am – 10 pm; arriving at 4 am does not get you darshan before 7 am"
    ],
    [
     "Mangala aarti",
-    "<b>4:00 am</b>"
+    "<b>4:30 am</b> (doors then closed till 6:30 am)"
    ],
    [
     "Shringar aarti",
-    "<b>6:00 am</b>"
+    "<b>6:30 am</b>"
    ],
    [
-    "Shayan aarti",
-    "<b>10:00 pm</b>"
+    "Raj Bhog aarti",
+    "<b>12 noon</b> — rest 12:30–1:30 pm, darshan resumes 1:35 pm"
    ],
    [
-    "Other aartis",
-    "Bhog and Sandhya aarti times are not published on the trust site — <b>confirm locally</b>"
+    "Sandhya and Shayan aarti",
+    "Sandhya <b>7 pm</b> · Shayan <b>9:30 pm</b> · doors close 10 pm"
    ],
    [
     "Passes",
@@ -111,7 +111,7 @@
     "No separate pass since <b>5 Aug 2026</b> — after Ram Lalla's darshan you go straight up to the first floor"
    ]
   ],
-  "note": "Schedule effective 18 Apr 2026, read on the official Shri Ram Janmabhoomi Teerth Kshetra site on 25 Oct 2026. Timings change on festivals and in heavy rush — check the trust site before you go. Many websites still print the old January 2024 timings."
+  "note": "Winter schedule from 1 Nov 2026 as reported by Business Today and News18 (27 Oct 2026); not yet posted on the official Shri Ram Janmabhoomi Teerth Kshetra site — <b>confirm winter timings on the trust site</b> before you go. In summer (from 18 Apr 2026) darshan ran 7 am – 9 pm with a 12–1 pm break. Timings change on festivals and in heavy rush."
  },
  "dates": {
   "h2": "Festivals at Ram Mandir",
@@ -223,7 +223,7 @@
  "faqs": [
   [
    "What are Ayodhya Ram Mandir darshan timings?",
-   "According to the trust's schedule from 18 Apr 2026, free darshan runs from 7 am to 9 pm with a break from 12 to 1 pm. Mangala aarti is at 4 am, Shringar at 6 am and Shayan at 10 pm."
+   "Winter timings from 1 Nov 2026: free darshan about 7 to 11:30 am and 1:35 to about 9:15 pm, with short bhog breaks. Mangala aarti is at 4:30 am, Shringar 6:30 am, Raj Bhog 12 noon, Sandhya 7 pm and Shayan 9:30 pm. Confirm on the trust site, srjbtkshetra.org."
   ],
   [
    "Is a pass needed for Ram Mandir darshan?",
@@ -282,7 +282,15 @@
   [
    "Public Holidays India — Ram Navami 2027",
    "https://publicholidays.in/ram-navami/"
+  ],
+  [
+   "Business Today — Ram Mandir winter schedule (27 Oct 2026)",
+   "https://www.businesstoday.in/latest/photo/ram-mandirs-winter-schedule-is-here-why-arriving-at-4-am-may-not-get-you-darshan-563996-2026-10-27"
+  ],
+  [
+   "Curly Tales / News18 — revised darshan timings from November",
+   "https://curlytales.com/india/trending/ayodhya-ram-mandir-revises-darshan-timings-from-november-check-complete-schedule/"
   ]
  ],
- "verified": "16 Nov 2026"
+ "verified": "17 Nov 2026"
 }
