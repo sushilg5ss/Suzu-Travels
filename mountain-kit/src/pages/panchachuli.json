@@ -1,0 +1,150 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/panchachuli/",
+ "peak_id": "panchachuli-ii",
+ "title": "Panchachuli (6,904 m): The Five Peaks of Kumaon",
+ "seo_title": "Panchachuli (6,904 m): The Five Peaks, Height & Route",
+ "seo_desc": "Panchachuli, Kumaon: all five summits with heights, where they stand above Munsiyari, the routes camp by camp, first ascents and the 2026 permit status.",
+ "focus": "panchachuli",
+ "commercial": false,
+ "label": "Panchachuli",
+ "blurb": "6,904 m · the five peaks of Kumaon",
+ "verified": "17 Nov 2026",
+ "kicker": "Uttarakhand · Kumaon · Pithoragarh · 6,904 m",
+ "tag": "Five hearths of snow above the Gori and Darma valleys.",
+ "sub": "Panchachuli is a group of five summits in Kumaon, and Panchachuli II at 6,904 m is the highest. Here are all five with their heights, where they stand, the two ways in, the route camp by camp, how hard the climb is, the 2026 permit status and the story from 1973 to the still-unclimbed Panchachuli III.",
+ "chips": [
+  ["6,904 m", "Panchachuli II (22,651 ft)"],
+  ["5 summits", "6,312–6,904 m"],
+  ["26 May 1973", "first ascent of II"],
+  ["May–Jun", "Sep–Oct"],
+  ["2026", "open (Uttarakhand list)"]
+ ],
+ "hero_alt": "A wide Himalayan range under cloud, a steep snow slope, a roped team and a night summit push by headlamp (generic stock footage, not Panchachuli itself) with an altitude read-out rising from Dugtu, about 3,100 m, past base camp, Camp 1 and Camp 2 to the 6,904 m summit of Panchachuli II",
+ "profile_alt": "Animated altitude profile of the eastern route on Panchachuli II: Dugtu road-head about 3,100 m, Nyulpa base camp 3,700 m, Camp 1 on the Sona glacier side 4,650 m, Camp 2 at 5,600 m and the 6,904 m summit by the north-east ridge",
+ "q": "How high is Panchachuli, and where is it?",
+ "answer": "<b>Panchachuli</b> (Panch Chuli) is a group of five snow peaks in Pithoragarh district, Kumaon, Uttarakhand. The highest, <b>Panchachuli II</b>, is 6,904 m (22,651 ft); the other four stand between 6,312 m and 6,437 m. The group divides the Gori Ganga valley of Munsiyari from the Darma valley. Panchachuli II was first climbed on 26 May 1973. See all <a href=\"/mountains-of-india/6000m-peaks/\">6,000 m peaks in India</a>.",
+ "facts": [
+  ["Height", "Panchachuli II 6,904 m / 22,651 ft"],
+  ["The five", "I 6,355 m · II 6,904 m · III 6,312 m · IV 6,334 m · V 6,437 m"],
+  ["Location", "Pithoragarh district, Kumaon, Uttarakhand, between the Gori Ganga (Munsiyari) and Darma valleys"],
+  ["Rank", "Highest peak lying entirely in Kumaon; 50th-highest in India in our dataset"],
+  ["Prominence", "1,614 m (an ultra-prominent peak)"],
+  ["Glaciers", "Uttari and Dakshini Balati (west), Sona and Meola (east)"],
+  ["First ascent", "26 May 1973: ITBP team led by Mahendra Singh, south-west ridge"],
+  ["Best months", "May–Jun, Sep–Oct"],
+  ["Status 2026", "Open: on Uttarakhand's Feb 2026 list of 83 peaks"]
+ ],
+ "intro": [
+  "<b>Status, checked 17 November 2026: open.</b> Panchachuli is named in the list of 83 peaks that Uttarakhand opened in February 2026. Indian climbers apply on the state's UKMPS portal and pay no state fees in 2026; foreign teams pay only the IMF fees. We found no closure order since.",
+  "<b>Five peaks, one name.</b> Panchachuli means \"five hearths\" or five cooking pots. One local legend says the five Pandava brothers cooked their last meal here before they set out for heaven. The five summits stand in a row on the ridge between the Gori Ganga valley, the side that faces Munsiyari, and the Darma (Dhauliganga) valley near Dugtu village to the east. The heights of all five are in the <a href=\"#five-peaks\">five peaks table</a> below.",
+  "Panchachuli II is the highest peak lying wholly in Kumaon, and it rises 1,614 m above the nearest col, which makes it an ultra-prominent peak. Named neighbours nearby include Rajrambha (6,537 m), Nagalaphu (6,410 m) and Telkot (6,102 m). For the wider picture, read our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a>, the <a href=\"/mountains-of-india/uttarakhand/\">highest peaks in Uttarakhand</a> and the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>."
+ ],
+ "route_h2": "Routes to Panchachuli II, camp by camp",
+ "route_text": [
+  "<b>Two sides, two approaches.</b> The first ascent in 1973 came from the <b>west</b>: from the Munsiyari side up the Uttari Balati glacier to the Balati plateau, then along the <b>south-west ridge</b>. In 1992 the Indo-British team used the same side, with a base camp at the snout of the Uttari Balati at about 3,270 m, a glacier camp at about 3,900 m and an advance base at about 4,840 m.",
+  "The table follows the <b>eastern Darma approach</b> used by the Indian Army for the second ascent in August 1991. In 1991 the road ended at Sobla and the walk to base camp took three days; today the road reaches <b>Dugtu</b> village, at about 3,100 m. Base camp at <b>Nyulpa</b> sits at about 3,650–3,700 m. Camp 1 was at about 4,650 m on the Sona glacier side and Camp 2 at about 5,600 m, below the north-east and north ridge to the top.",
+  "Camp heights come from the 1991 and 2025 accounts and change from year to year. No official itinerary exists; an expedition of three to four weeks from the road-head is a fair estimate."
+ ],
+ "route": [
+  {"name": "Dugtu village", "m": 3100, "note": "Road-head today, Darma valley (about 3,050–3,200 m by source)"},
+  {"name": "Nyulpa base camp", "m": 3700, "note": "East side; about 3,650 m in 2025, 3,660–3,700 m in 1991"},
+  {"name": "Camp 1", "m": 4650, "note": "Sona glacier side (1991)"},
+  {"name": "Camp 2", "m": 5600, "note": "High camp below the ridge (1991)"},
+  {"name": "Panchachuli II summit", "m": 6904, "note": "North-east and north ridge (1991 Army route)"}
+ ],
+ "itinerary_h2": "How a Panchachuli expedition unfolds",
+ "itinerary": [
+  ["Stage 1", "Road to the valley", "Pithoragarh to Dharchula, about 90 km, then on up the Darma valley road to Dugtu village."],
+  ["Stage 2", "Walk to base camp", "A short walk from Dugtu to Nyulpa base camp at about 3,650 m, with time to acclimatise below the peaks."],
+  ["Stage 3", "Stock the camps", "Load carries and fixed rope to Camp 1 (about 4,650 m) and Camp 2 (about 5,600 m), sleeping high and coming back down."],
+  ["Stage 4", "Summit push", "From Camp 2 up the north-east and north ridge to 6,904 m, then down the fixed lines."],
+  ["Stage 5", "Weather days and the walk out", "Spare days for snow and wind, then clearing the camps and the road back to Dharchula."]
+ ],
+ "difficulty_h2": "How hard is it to climb Panchachuli?",
+ "difficulty": [
+  "Our dataset grades Panchachuli II <b>technical</b>. It is a full expedition, not a trekking peak. The first ascent team fixed about 3,000 m of rope on the south-west ridge, and the eastern routes cross icefalls and avalanche-prone faces. The other four summits are no easier: Panchachuli III has never had a verified ascent.",
+  "The 1992 Indo-British expedition shows how serious it is. After the first ascent of Panchachuli V, Stephen Venables fell about 100 m on the descent when an anchor pulled; an Indian Air Force helicopter lifted him out four days later. Arrive with an earlier summit above 6,000 m and solid fixed-rope skills. In Himachal, good steps towards a peak like this are <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m), <a href=\"/mountains-of-india/mulkila/\">Mulkila</a> (6,517 m) and <a href=\"/mountains-of-india/menthosa/\">Menthosa</a> (6,443 m). Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before you go high."
+ ],
+ "skills": [
+  ["Experience", "At least one summit above 6,000 m and days on crevassed glaciers."],
+  ["Technique", "Crampons and ice axe on steep snow and ice, fixed ropes, jumaring, abseiling and crevasse rescue."],
+  ["Fitness", "Repeated load carries between camps and a summit day of about 1,300 m from Camp 2."],
+  ["Judgement", "Reading fresh snow, avalanche slopes and anchors, and the discipline to turn back."],
+  ["Training", "A Basic and an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."]
+ ],
+ "months": {"Jan": "no", "Feb": "no", "Mar": "no", "Apr": "maybe", "May": "good", "Jun": "good", "Jul": "no", "Aug": "maybe", "Sep": "good", "Oct": "good", "Nov": "no", "Dec": "no"},
+ "season_h2": "Best time to climb Panchachuli",
+ "season_text": [
+  "<b>May to June and September to October.</b> The recorded summits fit those windows: the first ascent on 26 May 1973, the Indo-British ascents in June 1992, and the Army ascents on 21 August and 17 September 1991.",
+  "August is marked possible only because the 1991 team reached the top then; it is still monsoon time in Kumaon. Our <a href=\"/mountains-of-india/best-time-for-mountaineering-in-india/\">best time for mountaineering in India</a> guide compares the seasons region by region."
+ ],
+ "permits_h2": "Permits for Panchachuli in 2026",
+ "permits": [
+  "<b>Indian climbers</b> apply on Uttarakhand's UKMPS portal. Panchachuli is on the state's February 2026 list of 83 open peaks, and all state fees are waived for Indian climbers in 2026. IMF rules for Indian teams still apply.",
+  "<b>Foreign nationals</b> need IMF permission, with a liaison officer and insurance. For peaks of 6,501–7,000 m the IMF base fee is <b>US$700 for a team of two</b>, plus US$500 for liaison-officer equipment, and per-member charges apply (IMF peak-fee page, as of 1 Oct 2026). More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">mountaineering in India for foreign climbers</a>.",
+  "The Darma valley is a border valley. Border-area permits are arranged with the expedition; confirm the current rules with the Pithoragarh district administration before you plan dates."
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots rated for 7,000 m, with crampons",
+  "A mountaineering ice axe, a jumar (ascender) and a descender",
+  "Climbing harness, helmet, carabiners and slings",
+  "Down jacket or down suit, and a sleeping bag for −20 °C or colder",
+  "Windproof and waterproof shell jacket and trousers",
+  "Summit mitts plus liner gloves",
+  "Glacier sunglasses (UV400), goggles and sunscreen",
+  "Headlamp with spare batteries for the pre-dawn start",
+  "Trekking poles for the walk-in to base camp",
+  "Two insulated water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "Climbing history of Panchachuli",
+ "history": [
+  "<b>1929 to 1951:</b> Hugh Ruttledge looked at the group in 1929. Attempts followed in 1950 and 1951; in 1951 Heinrich Harrer and Thomas tried from the Uttari Balati glacier.",
+  "<b>1972:</b> an ITBP team led by Hukam Singh made the first ascent of <b>Panchachuli I</b> from the Balati plateau. <b>26 May 1973:</b> an ITBP expedition led by <b>Mahendra Singh</b> made the <b>first ascent of Panchachuli II</b>, fixing about 3,000 m of rope on the south-west ridge.",
+  "<b>1991:</b> two Indian Army teams climbed Panchachuli II from the east. A Gorkha Rifles team under Capt N.B. Gurung made the second ascent on 21 August by the Sona glacier and the north-east and north ridge; a Kumaon and Naga Regiment team under Lt Col Suraj Dalal made the third on 17 September by the east face and east ridge.",
+  "<b>1992:</b> an Indo-British expedition co-led by Chris Bonington and Harish Kapadia climbed Panchachuli II on 7 June, and on 8 June Bonington and Graham Little opened a new west spur. On 20 June Stephen Venables, Dick Renshaw, Victor Saunders and Skip Sustad made the <b>first ascent of Panchachuli V</b> by the south ridge, before Venables' fall and helicopter rescue.",
+  "<b>1995:</b> a New Zealand team led by John Nankervis made the first ascent of <b>Panchachuli IV</b>.",
+  "<b>Panchachuli III</b> still has no verified ascent. Teams tried in 1996, 1998 and 2001, and in May 2025 an alpine-style attempt from the Meola glacier turned back at about 5,900 m. <b>February 2026:</b> Panchachuli was named in Uttarakhand's list of 83 opened peaks."
+ ],
+ "extra_sections": [
+  {
+   "id": "five-peaks",
+   "label": "Five peaks",
+   "kicker": "The group",
+   "h2": "The five Panchachuli peaks and their heights",
+   "html": "<p>The numbers I to V are names, not a ranking: Panchachuli II is the highest, and III is the lowest. Heights below are the commonly published figures.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\" style=\"min-width:600px\"><thead><tr><th>Peak</th><th>Height</th><th>First ascent</th></tr></thead><tbody><tr><td><b>Panchachuli I</b></td><td class=\"n\">6,355 m / 20,850 ft</td><td>1972, ITBP (Hukam Singh), from the Balati plateau</td></tr><tr><td><b>Panchachuli II</b></td><td class=\"n\">6,904 m / 22,651 ft</td><td>26 May 1973, ITBP (Mahendra Singh), south-west ridge</td></tr><tr><td><b>Panchachuli III</b></td><td class=\"n\">6,312 m / 20,709 ft</td><td>No verified ascent (2025 attempt turned back at about 5,900 m)</td></tr><tr><td><b>Panchachuli IV</b></td><td class=\"n\">6,334 m / 20,781 ft</td><td>1995, New Zealand team (John Nankervis)</td></tr><tr><td><b>Panchachuli V</b></td><td class=\"n\">6,437 m / 21,119 ft</td><td>20 Jun 1992, Indo-British team, south ridge</td></tr></tbody></table></div>"
+  },
+  {
+   "id": "base-camp",
+   "label": "Base camp",
+   "kicker": "For trekkers",
+   "h2": "Panchachuli base camp: where it is",
+   "html": "<p>When people search for the <b>Panchachuli base camp</b>, they usually mean the eastern base camp in the Darma valley. The road now reaches Dugtu village, at about 3,100 m, and the base camp at Nyulpa, about 3,650 m (11,975 ft), sits a short walk above it, right below the east faces of the group. On the western side, the 1992 climbers camped at the snout of the Uttari Balati glacier, at about 3,270 m, above Munsiyari.</p><p>The Darma valley is a border area, so check the current permit rules with the Pithoragarh district administration before you go. Suzu plans climbs in Himachal only; if a first summit is your goal, start with <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> near Manali.</p>"
+  }
+ ],
+ "quote_h2": "Dreaming of peaks like Panchachuli? Start in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Panchachuli. If it is your goal, Himachal climbs build the record it needs: Friendship Peak or Yunam first, then Deo Tibba, Mulkila or Menthosa. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Panchachuli: questions people ask",
+ "faqs": [
+  ["What is the height of Panchachuli?", "Panchachuli II, the highest of the five peaks, is 6,904 m (22,651 ft). The five summits range from 6,312 m (Panchachuli III) to 6,904 m."],
+  ["Where is Panchachuli?", "In Pithoragarh district, Kumaon, Uttarakhand, on the ridge between the Gori Ganga valley on the Munsiyari side and the Darma valley to the east."],
+  ["Why is it called Panchachuli?", "The name means \"five hearths\" or five cooking pots. One legend says the five Pandavas cooked their last meal here before going to heaven."],
+  ["Who first climbed Panchachuli?", "An ITBP expedition led by Mahendra Singh made the first ascent of Panchachuli II, the highest summit, on 26 May 1973, by the south-west ridge. Panchachuli I had been climbed by an ITBP team in 1972."],
+  ["Has Panchachuli III been climbed?", "There is no verified ascent of Panchachuli III. Attempts in 1996, 1998 and 2001 failed, and a May 2025 attempt turned back at about 5,900 m."],
+  ["Is Panchachuli open for climbing in 2026?", "Yes. Panchachuli is on Uttarakhand's February 2026 list of 83 opened peaks. Indian climbers apply on the UKMPS portal with no state fees; foreign teams apply through the IMF."],
+  ["How hard is it to climb Panchachuli?", "It is a technical expedition peak: fixed-rope ridges, icefalls and avalanche-prone faces. Climbers need an earlier 6,000 m summit and mountaineering training."],
+  ["Where is the Panchachuli base camp?", "The usual base camp is at Nyulpa in the Darma valley, at about 3,650 m, a short walk above the road-head at Dugtu village."]
+ ],
+ "sources": [
+  ["Wikipedia — Panchachuli", "https://en.wikipedia.org/wiki/Panchachuli"],
+  ["Himalayan Journal 48 — Ascents of Panch Chuli II (1991)", "https://www.himalayanclub.org/hj/48/7/ascents-of-panch-chuli-ii/"],
+  ["ExplorersWeb (Nov 2023) — Great tales in mountaineering history: Panch Chuli", "https://explorersweb.com/great-tales-in-mountaineering-history-panch-chuli/"],
+  ["NOLS (May 2026) — Panchachuli III peak climb", "https://www.nols.edu/blog/panchachuli-iii-peak-climb/"],
+  ["ETV Bharat (Feb 2026) — Uttarakhand opens 83 Himalayan peaks", "https://www.etvbharat.com/en/state/uttarakhand-opens-83-himalayan-peaks-for-montaineering-waives-fees-for-indian-climbers-enn26020304743"],
+  ["Uttarakhand UKMPS — apply for a mountaineering permit", "https://mountaineering.uk.gov.in/ApplyPermit"],
+  ["Indian Mountaineering Foundation — peak fees for foreign expeditions", "https://www.indmount.org/IMF/peakfee"],
+  ["CPREEC Eco-heritage — Panchachuli", "https://ecoheritage.cpreec.org/panchachuli/"]
+ ],
+ "sameAs": ["https://en.wikipedia.org/wiki/Panchachuli"]
+}

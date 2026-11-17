@@ -461,5 +461,15 @@
   "added": "2026-11-16",
   "band": "3000",
   "commercial": false
+ },
+ "panchachuli": {
+  "id": 23220,
+  "path": "/mountains-of-india/panchachuli/",
+  "kind": "peak",
+  "label": "Panchachuli",
+  "blurb": "6,904 m · the five peaks of Kumaon",
+  "added": "2026-11-17",
+  "peak_id": "panchachuli-ii",
+  "commercial": false
  }
 }
