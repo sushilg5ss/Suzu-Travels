@@ -1,0 +1,11 @@
+# camping-in-bir-billing media (Visual Studio night, 18 Nov 2026 IST)
+
+HyperFrames 0.8.85. Compositions: camping-in-bir-billing-{hero,explainer,reel}.html (assets/ not committed: Plus Jakarta Sans 800/500 woff2 + photos from the Suzu WP library). Media commit @60c8596551cfb2bd2b7c6db02c962e7f87dc985c.
+
+- hero.mp4 (0.90 MB) / hero.webm (0.74 MB) / poster.webp (51 KB, WP 23385) — 12 s seamless loop (first/last diff 1.2/255): lit tents at dusk (WP 13336, generic) → bonfire under pines (13528, generic) → Billing take-off with a glider (19795, real) → tents under stars (13335, generic) → back. Right half "Camping in / Bir Billing / a tent under the Dhauladhars"; gold line Bir → Billing → Rajgundha + counter ~1,450 → ~2,700 m; facts Bir village fields · year-round / Billing ridge · sunset & stars / Rajgundha · 12–14 km walk in / Best Oct–Nov & Mar–Jun.
+- explainer.mp4 (0.22 MB) / explainer.webm (0.24 MB) / explainer-poster.webp (WP 23386) — 11 s "Which camp for your month?": schematic Bir ~1,450–1,500 m → 14 km road → Billing ~2,400 m → 12–14 km walk → Rajgundha ~2,700 m; 12-month chips per zone (green good, blue snow/freezing Dec–Feb, Rajgundha Dec–Mar; grey monsoon Jul–Aug, no flying 15 Jul–15 Sep); CTA "Camp + cab + hotel: Get Quote".
+- reel-web.mp4 (0.60 MB) / reel-web.webm (0.54 MB) / reel-web-poster.webp (WP 23387) — 17.5 s 9:16: dusk tents → bonfire "Bir village ~1,450–1,500 m" → Billing take-off "Fly from Billing next morning · no flying 15 Jul – 15 Sep" → stars "~2,400 m, Billing ridge or Rajgundha · winter: stay low at Bir" → end card (Get Quote, suzutravels.com/adventure/camping-in-bir-billing/, HP Tourism reg. no.).
+- reel-section.html = ready-made #reel section (one line) for the Page Builder; second button → /adventure/paragliding-in-bir-billing/.
+
+Photo slots (all already in WP, no new uploads): hero/answer-first 13336 · Bir village card 14765 (dome tents sunrise, generic) · Billing ridge card 19795 (real take-off) · Rajgundha card 17351 (reuse rajgundha page) · Fly + camp card 19802 (paragliders over Bir Billing, real) · bonfire/steps 13528 · stars/season 13335 · winter safety 14767 (lit tents on snow, generic).
+Facts only from the 17 Nov 2026 brief. No prices, no operators; generic photos carry no place label.
