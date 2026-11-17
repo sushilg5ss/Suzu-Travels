@@ -13,6 +13,10 @@ Sources: README §1 (booking line, registration line, driver wording), /terms-an
   inserted before `<section class="lp-sec" id="do-you-need-a-visa-for-india"` (i.e. right after the 4-steps section).
 - `widget-11412.html` — /golden-triangle-tour/ with the 4 steps; live 19 Oct 2026, inserted before
   `<section class="lp-sec" id="golden-triangle-tour-frequently-asked-qu"` (after the guests section, before the FAQ).
+- `widget-11413.html` — /char-dham-yatra-for-nri/ with the 4 steps (TRUST_BACKLOG row 33); live 17 Nov 2026, inserted before
+  `<section class="lp-sec alt" id="char-dham-yatra-for-nris-frequently-aske"` (after 'Families and Pilgrims We Have Hosted', before the FAQ).
+  Only differences: WhatsApp prefill 'booking a Char Dham Yatra' and the road question 'A road is closed or the yatra is stopped on the day'
+  (same terms text). The check-us strip on 11413 now links `#booking-protected` on the page itself.
 - Build: `python3 build.py` (asserts: one line, no script, booking line once, registration exact, banned words absent).
 - Remove: `wp_replace_in_page` the whole `<!--szt:booking-protected-->…<!--/szt:booking-protected-->` block with ''.
 - Note: on the plain (WP Rocket) copy the very first click on the page loads the delayed site JS; summaries then toggle normally.

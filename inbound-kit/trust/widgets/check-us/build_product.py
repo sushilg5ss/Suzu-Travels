@@ -2,14 +2,14 @@
 """check-us on the product pages (TRUST_BACKLOG row 32): same four checks/answers as the hub strip (build.py, row 31),
 placed on /golden-triangle-tour/ (11412) and /char-dham-yatra-for-nri/ (11413) right after <!--/szt:before-you-fly-->.
 Differences from the hub: prefix .szk (.szq is already used on 11412/11413 by itinerary-pdf — 16 Nov 2026 curl; .szk 0 hits),
-check 3 links only the page's OWN itinerary PDF, check 4 links #booking-protected on 11412 (panel lives there) and the hub's
-panel on 11413 (no panel on 11413). No JS, no prices, no reviews, nothing stored."""
+check 3 links only the page's OWN itinerary PDF, check 4 links #booking-protected on both pages (11413 got its own panel 17 Nov 2026, row 33; was the hub's
+panel before). No JS, no prices, no reviews, nothing stored."""
 import os, re
 import build as B
 
 PAGES = {
     11412: {'pdf': (B.PDF_GT, 'Sample: Golden Triangle 6 days (PDF)'), 'book': '#booking-protected'},
-    11413: {'pdf': (B.PDF_CD, 'Sample: Char Dham Yatra 11 days (PDF)'), 'book': 'https://suzutravels.com/india-tours/#booking-protected'},
+    11413: {'pdf': (B.PDF_CD, 'Sample: Char Dham Yatra 11 days (PDF)'), 'book': '#booking-protected'},
 }
 
 def make(pid):

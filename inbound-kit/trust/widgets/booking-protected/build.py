@@ -3,7 +3,9 @@
 Facts only from: README §1 booking line (exact), registration line (exact), approved driver wording, and the site's own
 published policies (/terms-and-conditions/ §01/§08, /cancellation-and-refund-policy/ §01/§04, last updated 28 Sep 2026).
 hub 11411  -> protection panel + 'what if' answers (the hub already has its own '4 easy steps' block, so no steps here)
-gt  11412  -> 4 steps + protection panel + 'what if' answers"""
+gt  11412  -> 4 steps + protection panel + 'what if' answers
+cd  11413  -> same as 11412 (row 33, 17 Nov 2026); Char Dham wording only in the WhatsApp prefill and the road-closure question
+             (same terms text, no new claims)"""
 import os
 
 BOOKING = ("20% deposit locks your dates and price; full refund if cancelled within 48 hours of paying; balance before the trip; "
@@ -71,18 +73,26 @@ QA = [("My flight is delayed — what happens?",
        "Pay only on our <a href=\"https://suzutravels.com/payment/\">Payment page</a> or by a payment request we send you from info@suzutravels.com. We never ask you to pay into a personal account. Our registration certificate is on the "
        "<a href=\"https://suzutravels.com/certificates/\">certificates page</a>.")]
 
-def qa():
-    return '<div class="szt-bk-q">' + ''.join('<details><summary>%s</summary><p class="a">%s</p></details>' % q for q in QA) + '</div>'
+WA_CD = 'https://wa.me/917087488961?text=Hello%20Suzu%20Travels%2C%20I%20have%20a%20question%20about%20booking%20a%20Char%20Dham%20Yatra.'
+QA_CD = [QA[0],
+         ("A road is closed or the yatra is stopped on the day.",
+          "We may re-order the days, for example when a road is closed on a given day, and we talk the options through with you. "
+          "As our <a href=\"https://suzutravels.com/terms-and-conditions/\">terms</a> say, we are not responsible for delays or changes caused by events beyond our control "
+          "(bad weather, landslides, road closures, strikes, government orders), and extra costs from such events are paid by the guest. Travel insurance is worth considering."),
+         QA[2], QA[3], QA[4]]
 
-def block(steps, sec_cls):
+def qa(items=None):
+    return '<div class="szt-bk-q">' + ''.join('<details><summary>%s</summary><p class="a">%s</p></details>' % q for q in (items or QA)) + '</div>'
+
+def block(steps, sec_cls, wa=WA, items=None):
     return ('<!--szt:booking-protected--><section class="' + sec_cls + ' szt-bk" id="booking-protected" style="scroll-margin-top:90px"><style>' + CSS + '</style>'
             '<div class="lp-wrap"><span class="lp-eyebrow">Booking and payment</span>'
             '<h2>How Your Booking Is Protected</h2>'
             '<p class="szt-bk-lead">Booking a trip with a company on the other side of the world takes trust. Here is exactly what happens after you enquire, and how your money is handled.</p>'
             + (STEPS if steps else '') +
             '<div class="szt-bk-line"><strong>Booking terms</strong><span>' + BOOKING + '</span></div>'
-            + CARDS + qa() +
-            '<div class="szt-bk-cta"><a class="szt-bk-wa" href="' + WA + '" target="_blank" rel="noopener">Ask us on WhatsApp</a>'
+            + CARDS + qa(items) +
+            '<div class="szt-bk-cta"><a class="szt-bk-wa" href="' + wa + '" target="_blank" rel="noopener">Ask us on WhatsApp</a>'
             '<a class="szt-bk-em" href="mailto:info@suzutravels.com?subject=Question%20about%20booking%20an%20India%20trip">Email us</a>'
             '<small>Your message goes only to our team and is used only to answer it.</small></div>'
             '</div></section><!--/szt:booking-protected-->')
@@ -91,8 +101,9 @@ BANNED = ['verified', 'background-checked', 'government approved', 'registered D
 
 if __name__ == '__main__':
     here = os.path.dirname(os.path.abspath(__file__))
-    for name, steps, cls in [('widget-11411.html', False, 'lp-sec'), ('widget-11412.html', True, 'lp-sec alt')]:
-        h = block(steps, cls)
+    for name, steps, cls, wa, items in [('widget-11411.html', False, 'lp-sec', WA, None), ('widget-11412.html', True, 'lp-sec alt', WA, None),
+                                        ('widget-11413.html', True, 'lp-sec alt', WA_CD, QA_CD)]:
+        h = block(steps, cls, wa, items)
         assert '\n' not in h and '<script' not in h
         assert h.count(BOOKING) == 1 and REG in h
         low = h.lower()
