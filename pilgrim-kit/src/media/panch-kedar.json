@@ -14,13 +14,73 @@
  "route": {
   "title": "Panch Kedar",
   "sub": "Five Shiva shrines · Garhwal Himalaya",
-  "bounds": [78.9, 79.6, 30.35, 30.88],
+  "bounds": [
+   78.9,
+   79.6,
+   30.35,
+   30.88
+  ],
   "stops": [
-   {"name": "Kedarnath", "deva": "केदारनाथ", "state": "Uttarakhand", "lat": 30.7352, "lon": 79.0669},
-   {"name": "Madhyamaheshwar", "deva": "मध्यमहेश्वर", "state": "Uttarakhand", "lat": 30.6369, "lon": 79.2161},
-   {"name": "Tungnath", "deva": "तुंगनाथ", "state": "Uttarakhand", "lat": 30.4894, "lon": 79.2153},
-   {"name": "Rudranath", "deva": "रुद्रनाथ", "state": "Uttarakhand", "lat": 30.5194, "lon": 79.3183},
-   {"name": "Kalpeshwar", "deva": "कल्पेश्वर", "state": "Uttarakhand", "lat": 30.5770, "lon": 79.4229}
+   {
+    "name": "Kedarnath",
+    "deva": "केदारनाथ",
+    "state": "Uttarakhand",
+    "lat": 30.7352,
+    "lon": 79.0669
+   },
+   {
+    "name": "Madhyamaheshwar",
+    "deva": "मध्यमहेश्वर",
+    "state": "Uttarakhand",
+    "lat": 30.6369,
+    "lon": 79.2161
+   },
+   {
+    "name": "Tungnath",
+    "deva": "तुंगनाथ",
+    "state": "Uttarakhand",
+    "lat": 30.4894,
+    "lon": 79.2153
+   },
+   {
+    "name": "Rudranath",
+    "deva": "रुद्रनाथ",
+    "state": "Uttarakhand",
+    "lat": 30.5194,
+    "lon": 79.3183
+   },
+   {
+    "name": "Kalpeshwar",
+    "deva": "कल्पेश्वर",
+    "state": "Uttarakhand",
+    "lat": 30.577,
+    "lon": 79.4229
+   }
+  ]
+ },
+ "story": {
+  "title": "The Panch Kedar legend",
+  "beats": [
+   {
+    "arch": "himalaya",
+    "sky": "night",
+    "line": "After the war, the Pandavas seek Shiva's pardon"
+   },
+   {
+    "arch": "hills",
+    "sky": "dusk",
+    "line": "Shiva hides in the Garhwal hills as a bull"
+   },
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Bhima holds on as the bull sinks"
+   },
+   {
+    "arch": "himalaya",
+    "sky": "snow",
+    "line": "Five parts rise as five Himalayan shrines"
+   }
   ]
  }
 }
