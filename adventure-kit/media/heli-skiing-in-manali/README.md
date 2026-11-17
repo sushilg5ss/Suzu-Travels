@@ -1,0 +1,10 @@
+# heli-skiing-in-manali media (Visual Studio morning, 17 Nov 2026)
+
+HyperFrames 0.8.85. Pin all URLs to @32f077c0ebefa4c2e097ad102a3fe936d6371bcd. Compositions: heli-skiing-in-manali-{hero,explainer,reel}.html (assets/ not committed: Plus Jakarta Sans 800/500 woff2 + photos below).
+
+- hero.mp4 (0.85 MB) / hero.webm (0.68 MB) / poster.webp (50 KB, WP 23132) — 12 s seamless loop (seam 1.3/255), light powder drift: helicopter in cloud (WP 23135, operator markings removed) → skier in powder on a ridge (23127, flipped) → lone skier on an untracked face (23128) → powder burst in trees (23131) → back. Right half "Heli-Skiing / in Manali / untracked powder, reached by helicopter" + gold altitude ladder (Manali 2,050 m → ~2,500 m Solang → 3,500 m+ drop zone → ~5,000 m top landing) with a rising counter; facts: Season mid-Jan – March / Runs 800–1,200 m vertical / Strong intermediate+ only / 7-night ski weeks.
+- explainer.mp4 (0.21 MB) / explainer.webm (0.25 MB) / explainer-poster.webp (WP 23133) — 11 s "How high you go, and how a ski week runs": altitude ladder with flight path and one run (≈800–1,200 m vertical) + 5 cards (arrive early 1–2 nights · safety briefing · up to 6 heli days in a 7-night week · cloud = no flying → Solang/Sethan/Sissu · buffer night, cab back); chip "Season mid-Jan – March · Price: Get Quote".
+- reel-web.mp4 (0.59 MB) / reel-web.webm (0.52 MB) / reel-web-poster.webp (WP 23134) — 16 s 9:16: helicopter "Heli-skiing above Manali" → ridge skier "Above 3,500 m" → untracked face "Strong skiers, mid-Jan – March / beginners: ski course first" → Suzu families in Manali snow (13874) "Family snow days in Manali" → end card (Get Quote, suzutravels.com/adventure/heli-skiing-in-manali/, HP Tourism reg. no.).
+- reel-section.html = ready-made #reel section (one line) for the Page Builder.
+
+Facts only from the 17 Nov 2026 brief. No prices, no operators (helicopter photo markings removed; WP 23126 = original with markings, renamed DO NOT USE). Generic Pexels photos carry no place label.
