@@ -33,6 +33,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /china-tour-packages/ | 22271 | `.hx` country page (14 Nov 2026) — `pages/gen_china.py` (Beijing–Xi'an–Shanghai + Zhangjiajie/Guilin add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery = first photo spans 2 columns, 1 row; Wikimedia Commons photos) |
 | /russia-tour-packages/ | 22487 | `.hx` country page (15 Nov 2026) — `pages/gen_russia.py` (Moscow + Saint Petersburg + Kazan/Sergiev Posad add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery like China; Wikimedia Commons photos) |
 | /new-zealand-tour-packages/ | 22678 | `.hx` country page (16 Nov 2026) — built by the 13:43 run that crashed before pushing its generator; rendered copy `pages/new-zealand-tour-packages.live-2026-11-16.html` (BACKLOG #68) |
+| /philippines-tour-packages/ | 23167 | `.hx` country page (17 Nov 2026) — `pages/gen_philippines.py` (Manila–Bohol–Boracay + Palawan/Cebu options; 8-day itinerary grid = 4 columns; 7-photo gallery like Russia; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -81,3 +82,8 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - User templates: `{{User:Argenberg/License}}` = CC BY 4.0 (Vyacheslav Argenberg); `{{User:Moroder/Template:Credits}}` = Diego Delso, delso.photo, CC BY-SA. A file with only `{{User:Florstein/Inf…}}` showed no licence in raw text — skipped.
 - Hub edits: build old hub from `git show HEAD:` files, tokenise both builds on `>` and diff with difflib (plain char difflib on 135 KB times out).
 - Never chain `rm` after a generator with `&&` in the same shell line as a heredoc that may fail (lost a temp file on 15 Nov; china html restored with git checkout).
+
+## Notes (17 Nov 2026)
+- Grid cards for a new page: inserted before the Vietnam card (`<a class="sx-rc|hx-mc" href=".../vietnam-tour-packages/">`, expected_count 1) on all pages; on the Vietnam page before the Bali card. Mauritius 15809 ended up with the card twice after one call (likely a silent retry in the MCP layer) — always re-count the new link on every page after inserting (fixed the same run).
+- dfa.gov.ph and newdelhipe.dfa.gov.ph return 403 to curl from the sandbox (bot filter) but the web-fetch agent reads them; link checks will show these two as 403 — not broken for users.
+- Commons HTML search worked with 4–10 s spacing (one 429, retry after a pause); raw wikitext gave licence + author.
