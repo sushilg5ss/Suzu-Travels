@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-17-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.2 faster first paint: Google Fonts CSS no longer render-blocking",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "b0b7ce6dee0f9625691d655b71364c02722a16e0b31a4f438e11f1eaa00fa3ee",
+   "base_sha256": "6a8f4105b6e31a0027cf948a47271bc9f73ca79bdf31540034e3a2c8175b44cd",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 394649
+  }
+ ]
+}
