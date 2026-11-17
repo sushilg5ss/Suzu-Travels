@@ -171,6 +171,8 @@ PLACES = {
     "Pinjore": (30.80, 76.92), "Garkhal": (30.89, 76.98),
     # 15 Nov 2026 · Delhi–Ramnagar (NH9 + Moradabad–Kashipur–Ramnagar road) waypoints (Photon/OSM); "Jim Corbett" = Ramnagar, the park's gateway town
     "Kashipur": (29.21, 78.96), "Thakurdwara": (29.10, 78.82), "Jim Corbett": (29.39, 79.13),
+    # 17 Nov 2026 · Amritsar–Pathankot (NH54) waypoint (OSM town centre)
+    "Dinanagar": (32.14, 75.47),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
@@ -207,6 +209,7 @@ ROUTES = [
     dict(slug="manali-to-leh-taxi", a="Manali", b="Leh", km=430, t="2 days (Jun–Oct)", f=1.6),
     dict(slug="chandigarh-to-dharamshala-taxi", a="Chandigarh", b="Dharamshala", km=240, t="5.5–6.5 hrs", f=1.1),   # 27 Oct 2026: page live; via Kharar–Ropar–Kiratpur–Anandpur Sahib–Una–Amb–Dehra–Kangra (NH503); Triveni/HurryUp/EMT 238–244 km
     dict(slug="pathankot-to-dalhousie-taxi", a="Pathankot", b="Dalhousie", km=80, t="2.5–3 hrs", f=1.1),   # 28 Oct 2026: page live; via Dunera–Banikhet on NH154A (HurryUp/EMT 81 km, CabBazar 82, MMT 81–85, OSRM 84)
+    dict(slug="amritsar-to-dalhousie-taxi", a="Amritsar", b="Dalhousie", km=195, t="4.5–5 hrs", f=1.0),   # 17 Nov 2026: page live; NH54 via Batala–Gurdaspur–Dinanagar–Pathankot, then NH154A via Dunera–Banikhet (cabbazar 199 km, hurryupcabs 196, Triveni upd. 14 Sep 2026 200, EMT 198, OSRM 197); same km/f as the amritsar-taxi-service Dalhousie row
     dict(slug="delhi-to-haridwar-taxi", a="Delhi", b="Haridwar", km=220, t="4.5–5.5 hrs", f=0.85),
     dict(slug="delhi-to-rishikesh-taxi", a="Delhi", b="Rishikesh", km=240, t="5–6 hrs", f=0.85),
     dict(slug="delhi-to-mussoorie-taxi", a="Delhi", b="Mussoorie", km=280, t="5–6 hrs", f=0.95),

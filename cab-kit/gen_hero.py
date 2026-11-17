@@ -176,6 +176,7 @@ VARIANTS = {
   "delhi-to-dehradun-taxi": dict(routes=[("Delhi","Dehradun")], kicker="VIA THE NEW EXPRESSWAY"),
   "pathankot-to-dharamshala-taxi": dict(routes=[("Pathankot","Dharamshala")], kicker="STATION · AIRPORT PICKUP"),
   "pathankot-to-dalhousie-taxi": dict(routes=[("Pathankot","Dalhousie")], kicker="CHAKKI BANK PICKUP · KHAJJIAR"),
+  "amritsar-to-dalhousie-taxi": dict(routes=[("Amritsar","Dalhousie")], kicker="GOLDEN TEMPLE TO THE PINES · KHAJJIAR"),
   "jammu-to-srinagar-taxi": dict(routes=[("Jammu","Srinagar")], kicker="THROUGH THE BANIHAL TUNNELS"),
   "delhi-to-haridwar-taxi": dict(routes=[("Delhi","Haridwar")], kicker="HAR KI PAURI · GANGA AARTI"),
   "delhi-to-rishikesh-taxi": dict(routes=[("Delhi","Rishikesh")], kicker="TAPOVAN · SHIVPURI CAMPS"),
