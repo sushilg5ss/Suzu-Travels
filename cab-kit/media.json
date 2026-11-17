@@ -902,5 +902,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "amritsar-to-dalhousie-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@696cb578b101eeb6f028a482f4802409f39b3c74/cab-kit/media/amritsar-to-dalhousie-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@696cb578b101eeb6f028a482f4802409f39b3c74/cab-kit/media/amritsar-to-dalhousie-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@696cb578b101eeb6f028a482f4802409f39b3c74/cab-kit/media/amritsar-to-dalhousie-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
