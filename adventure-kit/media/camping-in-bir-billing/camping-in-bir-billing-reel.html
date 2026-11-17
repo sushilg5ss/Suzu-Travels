@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -60px; top: -100px; width: 1200px; height: 2120px; object-fit: cover; }
+      .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.75) 0%, rgba(11,31,51,0.1) 34%, rgba(11,31,51,0.1) 55%, rgba(11,31,51,0.88) 82%); }
+      .cap { position: absolute; left: 110px; width: 880px; color: #fff; font-weight: 800; font-size: 92px; line-height: 1.06; letter-spacing: -0.02em; }
+      .cap b { color: #d4a24c; font-weight: 800; }
+      .sub { position: absolute; left: 110px; width: 880px; color: #fff; font-weight: 500; font-size: 46px; line-height: 1.25; }
+      .kick { position: absolute; left: 96px; top: 190px; padding: 10px 16px; border-radius: 10px; background: rgba(11,31,51,0.78); color: #d4a24c; font-weight: 800; font-size: 36px; letter-spacing: 0.14em; white-space: nowrap; }
+      .rail { position: absolute; left: 52px; top: 300px; width: 8px; height: 1300px; border-radius: 4px; background: rgba(255,255,255,0.25); }
+      .railg { position: absolute; left: 52px; top: 300px; width: 8px; height: 1300px; border-radius: 4px; background: #d4a24c; transform-origin: 50% 100%; }
+      .dot { position: absolute; left: 40px; top: 1588px; width: 32px; height: 32px; border-radius: 50%; background: #d4a24c; border: 5px solid #fff; }
+      .end { position: absolute; inset: 0; background: #0b1f33; }
+      .btn { position: absolute; left: 110px; top: 1110px; width: 860px; height: 130px; border-radius: 65px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 60px; text-align: center; line-height: 130px; }
+      .url { position: absolute; left: 110px; top: 1290px; width: 860px; color: #fff; font-weight: 800; font-size: 36px; text-align: center; white-space: nowrap; }
+      .reg { position: absolute; left: 110px; top: 1600px; width: 860px; color: rgba(255,255,255,0.85); font-weight: 500; font-size: 30px; line-height: 1.35; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="17.5" data-width="1080" data-height="1920">
+      <div class="scene clip" data-start="0" data-duration="4" data-track-index="0"><img id="i1" src="assets/dusk.jpg" alt="" style="object-position:22% 50%" /></div>
+      <div class="scene clip" data-start="3.6" data-duration="4" data-track-index="1"><div id="f2" style="position:absolute;inset:0"><img id="i2" src="assets/bonfire.jpg" alt="" style="object-position:40% 55%" /></div></div>
+      <div class="scene clip" data-start="7.2" data-duration="4" data-track-index="2"><div id="f3" style="position:absolute;inset:0"><img id="i3" src="assets/takeoff.jpg" alt="" style="object-position:38% 50%" /></div></div>
+      <div class="scene clip" data-start="10.8" data-duration="3.8" data-track-index="5"><div id="f4" style="position:absolute;inset:0"><img id="i4" src="assets/stars.jpg" alt="" style="object-position:40% 50%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="14.4" data-track-index="3" style="position:absolute;inset:0">
+        <div class="grad"></div>
+        <div class="kick">CAMPING · BIR BILLING, HP</div>
+        <div class="rail"></div>
+        <div class="railg" id="railg"></div>
+        <div class="dot" id="dot"></div>
+        <div class="cap" id="c1" style="top:1300px">A tent under the <b>Dhauladhars</b></div>
+        <div class="cap" id="c2" style="top:1300px">Bonfire night in <b>Bir village</b></div>
+        <div class="sub" id="s2" style="top:1520px">~1,450–1,500 m · open most of the year</div>
+        <div class="cap" id="c3" style="top:1300px">Fly from <b>Billing</b> next morning</div>
+        <div class="sub" id="s3" style="top:1520px">tandem add-on · no flying 15 Jul – 15 Sep</div>
+        <div class="cap" id="c4" style="top:1300px">Stars at <b>~2,400 m</b></div>
+        <div class="sub" id="s4" style="top:1520px">Billing ridge or Rajgundha · winter: stay low at Bir</div>
+      </div>
+      <div id="endc" class="clip end" data-start="14" data-duration="3.5" data-track-index="4">
+        <div class="kick" style="top:420px;background:none">TREKS &amp; CAMPS · BIR BILLING</div>
+        <div class="cap" id="e1" style="top:500px">Camping in <b>Bir Billing</b></div>
+        <div class="sub" id="e2" style="top:800px">Best Oct–Nov &amp; Mar–Jun · camp + flight + cab, one quote</div>
+        <div class="btn" id="e3">Get Quote</div>
+        <div class="url" id="e4">suzutravels.com/adventure/camping-in-bir-billing/</div>
+        <div class="reg" id="e5">HP Tourism registered travel agent<br />Reg. No. DTO-MND-11-243/2022</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#i1", { scale: 1.1 }, { scale: 1, duration: 4, ease: "none" }, 0);
+      tl.fromTo("#i2", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 4, ease: "none" }, 3.6);
+      tl.fromTo("#i3", { scale: 1.08, y: 0 }, { scale: 1, y: -30, duration: 4, ease: "none" }, 7.2);
+      tl.fromTo("#i4", { scale: 1 }, { scale: 1.08, duration: 3.8, ease: "none" }, 10.8);
+      tl.fromTo("#f4", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 10.8);
+      tl.fromTo("#f2", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 3.6);
+      tl.fromTo("#f3", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 7.2);
+      tl.fromTo("#railg", { scaleY: 0 }, { scaleY: 1, duration: 13.6, ease: "none" }, 0.3);
+      tl.fromTo("#dot", { y: 0 }, { y: -1300, duration: 13.6, ease: "none" }, 0.3);
+      
+      const cap = (c, s, a, b) => {
+        tl.fromTo(c, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, a);
+        if (s) tl.fromTo(s, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, a + 0.2);
+        if (b) tl.to(s ? [c, s] : c, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, b);
+      };
+      tl.to("#c1", { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 3.3);
+      cap("#c2", "#s2", 3.9, 6.9);
+      cap("#c3", "#s3", 7.5, 10.5);
+      cap("#c4", "#s4", 11.1, 13.7);
+      tl.fromTo("#endc", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 14);
+      tl.from(["#e1", "#e2", "#e3", "#e4", "#e5"], { opacity: 0, y: 30, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 14.2);
+      tl.fromTo("#e3", { scale: 1 }, { scale: 1.04, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 16);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

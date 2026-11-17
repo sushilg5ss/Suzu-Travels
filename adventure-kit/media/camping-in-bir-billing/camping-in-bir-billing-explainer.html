@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.14; }
+      .veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0.6), rgba(11,31,51,0.93) 62%); }
+      svg.prof { position: absolute; left: 70px; top: 70px; width: 1040px; height: 420px; overflow: visible; }
+      svg.prof text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; font-size: 32px; }
+      svg.prof text.sm { font-size: 24px; font-weight: 500; fill: rgba(255,255,255,0.85); }
+      svg.prof text.km { fill: #0b1f33; font-size: 26px; }
+      .rows { position: absolute; left: 70px; top: 520px; width: 1040px; height: 480px; }
+      .row { position: absolute; left: 0; width: 1040px; height: 140px; }
+      .rl { position: absolute; left: 0; top: 0; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .rs { position: absolute; left: 380px; top: 8px; color: rgba(255,255,255,0.8); font-weight: 500; font-size: 24px; white-space: nowrap; }
+      .chips { position: absolute; left: 0; top: 64px; width: 710px; height: 56px; }
+      .m { position: absolute; top: 0; width: 52px; height: 52px; border-radius: 10px; color: #0b1f33; font-weight: 800; font-size: 24px; text-align: center; line-height: 52px; }
+      .g { background: #4caf7a; } .s { background: #9cc8ec; } .r { background: #3d4f63; color: #fff; }
+      .panel { position: absolute; left: 1200px; top: 0; width: 660px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 96px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .h { position: absolute; left: 0; top: 150px; color: #fff; font-weight: 800; font-size: 84px; line-height: 1.06; letter-spacing: -0.02em; white-space: nowrap; }
+      .h b { color: #d4a24c; }
+      .leg { position: absolute; left: 0; width: 660px; height: 60px; color: #fff; font-weight: 800; font-size: 32px; white-space: nowrap; }
+      .leg i { position: absolute; left: 0; top: 2px; width: 44px; height: 44px; border-radius: 8px; }
+      .leg span { position: absolute; left: 64px; top: 4px; }
+      .leg small { position: absolute; left: 64px; top: 46px; font-weight: 500; font-size: 22px; color: rgba(255,255,255,0.8); }
+      .cta { position: absolute; left: 0; top: 900px; height: 76px; padding: 0 34px; border-radius: 38px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 32px; line-height: 76px; white-space: nowrap; }
+      .note { position: absolute; left: 70px; top: 1020px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 22px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div id="bg" class="clip" data-start="0" data-duration="11" data-track-index="0" style="position:absolute;inset:0">
+        <img class="bgimg" id="bgim" src="assets/sunrise.jpg" alt="" />
+        <div class="veil"></div>
+      </div>
+      <div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="1" style="position:absolute;inset:0">
+        <svg class="prof" viewBox="0 0 1040 420">
+          <path d="M0 400 L1040 400" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+          <path id="rd" d="M80 340 C 180 330, 230 260, 300 230 C 360 205, 400 170, 440 150" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <path id="tk" d="M440 150 C 540 130, 600 140, 700 100 C 780 70, 840 80, 900 60" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="4 18" stroke-linecap="round" />
+          <circle id="dot" cx="80" cy="340" r="12" fill="#fff" />
+          <g id="p1"><circle cx="80" cy="340" r="16" fill="#d4a24c" stroke="#fff" stroke-width="4" /><text x="40" y="396">Bir village</text></g>
+          <g id="p2"><circle cx="440" cy="150" r="16" fill="#d4a24c" stroke="#fff" stroke-width="4" /><text x="380" y="210">Billing ridge</text></g>
+          <g id="p3"><circle cx="900" cy="60" r="16" fill="#d4a24c" stroke="#fff" stroke-width="4" /><text x="820" y="120">Rajgundha</text></g>
+          <g id="k1"><rect x="190" y="290" width="170" height="46" rx="23" fill="#d4a24c" /><text class="km" x="275" y="322" text-anchor="middle">14 km road</text></g>
+          <g id="k2"><rect x="650" y="150" width="250" height="46" rx="23" fill="#fff" /><text class="km" x="775" y="182" text-anchor="middle">12–14 km walk</text></g>
+        </svg>
+        <div class="rows">
+          <div class="row" id="r1" style="top:0"><div class="rl">Bir ~1,450–1,500 m</div><div class="rs">open all year · cold nights Dec–Feb</div><div class="chips" id="c1"></div></div>
+          <div class="row" id="r2" style="top:150px"><div class="rl">Billing ~2,400 m</div><div class="rs">snow &amp; icy road Dec–Feb</div><div class="chips" id="c2"></div></div>
+          <div class="row" id="r3" style="top:300px"><div class="rl">Rajgundha ~2,700 m</div><div class="rs">snowed in Dec–Mar · check post</div><div class="chips" id="c3"></div></div>
+        </div>
+        <div class="note">Schematic, not to scale · heights approximate</div>
+        <div class="panel">
+          <div class="kicker">3 CAMP ZONES · BIR BILLING</div>
+          <div class="h">Which camp<br /><b>for your month?</b></div>
+          <div class="leg" id="l1" style="top:420px"><i class="g"></i><span>Good to camp</span><small>best Oct–Nov &amp; Mar–Jun</small></div>
+          <div class="leg" id="l2" style="top:540px"><i class="s"></i><span>Snow / freezing nights</span><small>winter: stay low at Bir</small></div>
+          <div class="leg" id="l3" style="top:660px"><i class="r"></i><span>Monsoon · skip the heights</span><small>no flying 15 Jul – 15 Sep</small></div>
+          <div class="cta" id="cta">Camp + cab + hotel: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const D = 11;
+      tl.fromTo("#bgim", { scale: 1 }, { scale: 1.06, duration: D, ease: "none" }, 0);
+      tl.from([".kicker", ".h"], { opacity: 0, y: 30, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0.1);
+      const prep = (id) => { const p = document.getElementById(id); const L = Math.ceil(p.getTotalLength()); p.setAttribute("stroke-dasharray", L + " " + L); p.setAttribute("stroke-dashoffset", L); return { p, L }; };
+      const R = prep("rd");
+      tl.from("#p1", { opacity: 0, duration: 0.3 }, 0.4);
+      tl.to(R.p, { attr: { "stroke-dashoffset": 0 }, duration: 1.4, ease: "power1.inOut" }, 0.7);
+      tl.from("#k1", { opacity: 0, scale: 0.6, transformOrigin: "275px 313px", duration: 0.3 }, 1.0);
+      tl.from("#p2", { opacity: 0, duration: 0.3 }, 2.0);
+      tl.from("#tk", { opacity: 0, duration: 0.4 }, 2.3);
+      tl.from("#k2", { opacity: 0, scale: 0.6, transformOrigin: "775px 173px", duration: 0.3 }, 2.6);
+      tl.from("#p3", { opacity: 0, duration: 0.3 }, 3.9);
+      const rd = document.getElementById("rd"), tk = document.getElementById("tk");
+      const L1 = rd.getTotalLength(), L2 = tk.getTotalLength();
+      const dot = document.getElementById("dot");
+      const st = { t: 0 };
+      const ss = (a, b, t) => { let k = (t - a) / (b - a); k = Math.max(0, Math.min(1, k)); return k * k * (3 - 2 * k); };
+      const upd = () => {
+        const t = st.t;
+        const p = t < 2.3 ? rd.getPointAtLength(ss(0.7, 2.1, t) * L1) : tk.getPointAtLength(ss(2.5, 4.0, t) * L2);
+        dot.setAttribute("cx", p.x.toFixed(1)); dot.setAttribute("cy", p.y.toFixed(1));
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+      const M = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+      const P = ["ssggggrrgggs", "ssggggrrgggs", "sssgggrrgggs"];
+      const all = [];
+      ["c1", "c2", "c3"].forEach((cid, r) => {
+        const c = document.getElementById(cid);
+        M.forEach((m, i) => { const b = document.createElement("div"); b.className = "m " + (P[r][i] === "g" ? "g" : P[r][i] === "s" ? "s" : "r"); b.textContent = m; b.style.left = (i * 59) + "px"; c.appendChild(b); all.push([r, b]); });
+      });
+      [0, 1, 2].forEach((r) => {
+        tl.from("#r" + (r + 1) + " .rl, #r" + (r + 1) + " .rs", { opacity: 0, x: -20, duration: 0.35 }, 4.3 + r * 0.9);
+        tl.from(all.filter((a) => a[0] === r).map((a) => a[1]), { opacity: 0, y: 16, duration: 0.18, stagger: 0.03, ease: "power2.out" }, 4.5 + r * 0.9);
+      });
+      tl.from("#l1", { opacity: 0, x: 20, duration: 0.35 }, 7.4);
+      tl.from("#l2", { opacity: 0, x: 20, duration: 0.35 }, 7.7);
+      tl.from("#l3", { opacity: 0, x: 20, duration: 0.35 }, 8.0);
+      tl.from("#cta", { opacity: 0, scale: 0.85, transformOrigin: "0 38px", duration: 0.4, ease: "back.out(2)" }, 8.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
