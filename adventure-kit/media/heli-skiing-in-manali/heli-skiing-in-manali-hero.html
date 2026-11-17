@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.82) 55%, rgba(11,31,51,0.94) 100%); }
+      #snow { position: absolute; inset: 0; }
+      .fl { position: absolute; left: 0; top: 0; border-radius: 50%; background: rgba(255,255,255,0.85); }
+      .panel { position: absolute; left: 1040px; top: 0; width: 820px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 92px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; white-space: nowrap; }
+      .t1 { position: absolute; left: 0; top: 152px; color: #fff; font-weight: 800; font-size: 112px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 268px; color: #d4a24c; font-weight: 800; font-size: 104px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t3 { position: absolute; left: 0; top: 392px; color: #fff; font-weight: 500; font-size: 40px; white-space: nowrap; }
+      .lad { position: absolute; left: 0; top: 0; width: 820px; height: 1080px; }
+      .rail { position: absolute; left: 18px; top: 490px; width: 6px; height: 320px; background: rgba(255,255,255,0.25); border-radius: 3px; }
+      .zone { position: absolute; left: 10px; top: 490px; width: 22px; height: 163px; background: rgba(212,162,76,0.35); border-radius: 6px; }
+      .tick { position: absolute; left: 6px; width: 30px; height: 4px; background: #fff; border-radius: 2px; }
+      .lb { position: absolute; left: 56px; color: #fff; font-weight: 800; font-size: 30px; white-space: nowrap; }
+      .lb span { color: rgba(255,255,255,0.7); font-weight: 500; }
+      .lb.g { color: #d4a24c; }
+      #heli { position: absolute; left: 4px; top: 796px; width: 34px; height: 34px; border-radius: 50%; background: #d4a24c; box-shadow: 0 0 0 8px rgba(212,162,76,0.3); }
+      #cnt { position: absolute; right: 0; top: 552px; line-height: 1.1; color: #d4a24c; font-weight: 800; font-size: 96px; letter-spacing: -0.02em; white-space: nowrap; text-align: right; }
+      #cntl { position: absolute; right: 0; top: 694px; color: rgba(255,255,255,0.8); font-weight: 500; font-size: 28px; white-space: nowrap; text-align: right; }
+      .bar { position: absolute; left: 0; top: 846px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 872px; width: 820px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 820px; color: #fff; font-weight: 800; font-size: 44px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.8" data-track-index="0"><div style="position:absolute;inset:0"><img id="im1" src="assets/heli.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="3" data-duration="3.8" data-track-index="1"><div id="fd2" style="position:absolute;inset:0;transform:scaleX(-1)"><img id="im2" src="assets/ridge.jpg" alt="" style="object-position:40% 50%" /></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="6" data-duration="3.8" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><img id="im3" src="assets/face.jpg" alt="" style="object-position:20% 50%" /></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="9" data-duration="2.75" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/spray.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.8" data-duration="1.2" data-track-index="4"><div id="fd5" style="position:absolute;inset:0"><img id="im5" src="assets/heli.jpg" alt="" style="object-position:30% 50%" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div id="snow" data-layout-allow-overflow></div>
+        <div class="panel">
+          <div class="kicker">SNOW · MANALI, KULLU</div>
+          <div class="t1">Heli-Skiing</div>
+          <div class="t2">in Manali</div>
+          <div class="t3">untracked powder, reached by helicopter</div>
+          <div class="lad">
+            <div class="zone"></div>
+            <div class="rail"></div>
+            <div class="tick" style="top:488px"></div>
+            <div class="tick" style="top:651px"></div>
+            <div class="tick" style="top:759px"></div>
+            <div class="tick" style="top:808px"></div>
+            <div class="lb" style="top:470px">~5,000 m <span>top landing</span></div>
+            <div class="lb g" style="top:633px">3,500 m+ <span>drop zone</span></div>
+            <div class="lb" style="top:722px">~2,500 m <span>Solang</span></div>
+            <div class="lb" style="top:790px">2,050 m <span>Manali</span></div>
+            <div id="heli"></div>
+            <div id="cnt">2,050 m</div>
+            <div id="cntl">altitude</div>
+          </div>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Season mid-Jan – March</div>
+            <div class="fact" id="f2">Runs 800–1,200 m vertical</div>
+            <div class="fact" id="f3">Strong intermediate+ only</div>
+            <div class="fact" id="f4">7-night ski weeks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const D = 12;
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.08, x: -30, duration: 3.8, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.08, y: 10 }, { scale: 1, y: -10, duration: 3.8, ease: "none" }, 3);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: -24, duration: 3.8, ease: "none" }, 6);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 2.75, ease: "none" }, 9);
+      tl.fromTo("#im5", { scale: 1, x: 0 }, { scale: 1, x: 0, duration: 1.2, ease: "none" }, 10.8);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 3);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 6);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 9);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.inOut" }, 10.8);
+
+      // altitude ladder: gold dot = helicopter. Manali at t=0 and t=12 (seamless).
+      const yOf = (a) => 810 - (a - 2050) / (5000 - 2050) * 320;
+      const alt = { a: 2050 };
+      const cnt = document.getElementById("cnt");
+      const heli = document.getElementById("heli");
+      const draw = () => {
+        heli.style.transform = "translateY(" + (yOf(alt.a) - 810).toFixed(1) + "px)";
+        const v = Math.round(alt.a / 50) * 50;
+        cnt.textContent = v.toLocaleString("en-IN") + " m";
+      };
+      tl.fromTo(alt, { a: 2050 }, { a: 3500, immediateRender: false, duration: 3.2, ease: "power2.inOut", onUpdate: draw }, 0.6);
+      tl.fromTo(alt, { a: 3500 }, { a: 5000, immediateRender: false, duration: 2.2, ease: "power2.inOut", onUpdate: draw }, 4.6);
+      tl.fromTo(alt, { a: 5000 }, { a: 2050, immediateRender: false, duration: 3.6, ease: "power2.inOut", onUpdate: draw }, 8.0);
+
+      const fx = [["#f1", 0, 2.6], ["#f2", 2.9, 5.5], ["#f3", 5.8, 8.4], ["#f4", 8.7, 11.3]];
+      gsap.set(["#f2", "#f3", "#f4"], { opacity: 0 });
+      fx.forEach(([id, a, b], i) => {
+        if (i > 0) tl.fromTo(id, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, a);
+        tl.to(id, { opacity: 0, y: -18, duration: 0.3, ease: "power2.in" }, b);
+      });
+      tl.fromTo("#f1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, 11.6);
+
+      // light powder drift (whole cycles over D -> seamless)
+      let seed = 41;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const snow = document.getElementById("snow");
+      const fls = [];
+      for (let i = 0; i < 60; i++) {
+        const el = document.createElement("div"); el.className = "fl";
+        const s = 3 + rnd() * 6; el.style.width = s + "px"; el.style.height = s + "px"; el.style.opacity = (0.4 + rnd() * 0.5).toFixed(2);
+        snow.appendChild(el);
+        fls.push({ el, x: rnd() * 1920, ph: rnd(), cyc: 1 + Math.floor(rnd() * 3), sw: 10 + rnd() * 30, swc: 1 + Math.floor(rnd() * 3) });
+      }
+      const st = { t: 0 };
+      const upd = () => {
+        const u = st.t / D;
+        fls.forEach((f) => {
+          const p = (u * f.cyc + f.ph) % 1;
+          const y = -20 + p * 1120;
+          const x = f.x + f.sw * Math.sin(6.283 * (u * f.swc + f.ph));
+          f.el.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+        });
+      };
+      tl.fromTo(st, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: upd }, 0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      draw();
+    </script>
+  </body>
+</html>

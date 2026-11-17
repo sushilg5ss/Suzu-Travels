@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 20% 100%, #16324f 0%, #0b1f33 60%); }
+      .kick { position: absolute; left: 100px; top: 60px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.16em; white-space: nowrap; }
+      .ttl { position: absolute; left: 100px; top: 104px; color: #fff; font-weight: 800; font-size: 72px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg { position: absolute; left: 0; top: 0; }
+      .al { position: absolute; left: 100px; color: #fff; font-weight: 800; font-size: 30px; white-space: nowrap; }
+      .al span { color: rgba(255,255,255,0.65); font-weight: 500; }
+      .al.g { color: #d4a24c; }
+      .runlb { position: absolute; left: 740px; top: 460px; width: 280px; color: #fff; font-weight: 800; font-size: 34px; line-height: 1.2; }
+      .runlb span { display: block; color: #d4a24c; font-size: 26px; }
+      .col { position: absolute; left: 1040px; top: 250px; width: 780px; }
+      .card { position: absolute; left: 0; width: 780px; height: 118px; border-radius: 18px; background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.12); }
+      .num { position: absolute; left: 22px; top: 27px; width: 60px; height: 60px; border-radius: 50%; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 30px; line-height: 60px; text-align: center; }
+      .h { position: absolute; left: 104px; top: 16px; color: #fff; font-weight: 800; font-size: 36px; white-space: nowrap; }
+      .s { position: absolute; left: 104px; top: 66px; color: rgba(255,255,255,0.8); font-weight: 500; font-size: 26px; white-space: nowrap; }
+      .days { position: absolute; left: 470px; top: 22px; }
+      .d { position: absolute; top: 0; width: 42px; height: 42px; border-radius: 10px; background: #d4a24c; }
+      .d.w { background: rgba(255,255,255,0.18); }
+      .chip { position: absolute; left: 100px; top: 966px; height: 56px; padding: 0 26px; border-radius: 28px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 28px; line-height: 56px; white-space: nowrap; }
+      .note { position: absolute; left: 1040px; top: 976px; color: rgba(255,255,255,0.75); font-weight: 500; font-size: 26px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick" id="k">HELI-SKIING · MANALI</div>
+        <div class="ttl" id="t">How high you go, and how a ski week runs</div>
+        <svg width="1920" height="1080" viewBox="0 0 1920 1080">
+          <path id="mtn" d="M 60 930 L 230 760 L 330 820 L 520 330 L 600 420 L 700 300 L 820 520 L 900 470 L 960 930 Z" fill="rgba(255,255,255,0.08)" />
+          <g stroke="rgba(255,255,255,0.28)" stroke-width="2" stroke-dasharray="8 10">
+            <line x1="60" y1="319" x2="960" y2="319" />
+            <line x1="60" y1="609" x2="960" y2="609" />
+            <line x1="60" y1="803" x2="960" y2="803" />
+            <line x1="60" y1="890" x2="960" y2="890" />
+          </g>
+          <rect id="zone" x="60" y="319" width="900" height="290" fill="rgba(212,162,76,0.12)" />
+          <path id="fly" d="M 480 890 C 530 760, 560 520, 610 400" fill="none" stroke="#d4a24c" stroke-width="5" stroke-dasharray="14 12" />
+          <circle id="hd" cx="480" cy="890" r="14" fill="#d4a24c" />
+          <path id="run" d="M 610 400 Q 560 440 620 470 Q 680 500 610 530 Q 550 560 620 590 L 600 609" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" />
+          <g id="brk" stroke="#d4a24c" stroke-width="4" fill="none"><path d="M 700 400 L 718 400 L 718 609 L 700 609" /></g>
+        </svg>
+        <div class="al" style="top:278px">~5,000 m <span>top landing</span></div>
+        <div class="al g" style="top:568px">3,500 m+ <span>drop zone starts</span></div>
+        <div class="al" style="top:762px">~2,500 m <span>Solang</span></div>
+        <div class="al" style="top:900px">2,050 m <span>Manali</span></div>
+        <div class="runlb" id="rl">One run<span>≈ 800–1,200 m</span><span>vertical</span></div>
+        <div class="col">
+          <div class="card" id="c1" style="top:0px"><div class="num">1</div><div class="h">Arrive Manali early</div><div class="s">1–2 nights at 2,050 m for the altitude</div></div>
+          <div class="card" id="c2" style="top:136px"><div class="num">2</div><div class="h">Safety briefing</div><div class="s">avalanche transceiver drill + helicopter safety</div></div>
+          <div class="card" id="c3" style="top:272px"><div class="num">3</div><div class="h">Heli days</div><div class="s">up to 6 in a 7-night week</div>
+            <div class="days"><div class="d" style="left:0"></div><div class="d" style="left:50px"></div><div class="d" id="wd" style="left:100px"></div><div class="d" style="left:150px"></div><div class="d" style="left:200px"></div><div class="d" style="left:250px"></div></div></div>
+          <div class="card" id="c4" style="top:408px"><div class="num">4</div><div class="h">Cloud? No flying</div><div class="s">snow day at Solang, Sethan or Sissu instead</div></div>
+          <div class="card" id="c5" style="top:544px"><div class="num">5</div><div class="h">Buffer night, cab back</div><div class="s">we plan hotel + transfers around your week</div></div>
+        </div>
+        <div class="chip" id="ch">Season mid-Jan – March · Price: Get Quote</div>
+        <div class="note" id="nt">Strong intermediate to expert skiers only</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const fly = document.getElementById("fly");
+      const run = document.getElementById("run");
+      const fl = fly.getTotalLength(), rl = run.getTotalLength();
+      tl.fromTo(["#k", "#t"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0.1);
+      tl.fromTo(".al", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.4, stagger: { each: 0.12, from: "end" }, ease: "power2.out" }, 0.4);
+      tl.fromTo("#zone", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 1.0);
+      tl.fromTo(fly, { strokeDashoffset: fl, strokeDasharray: fl + " " + fl }, { strokeDashoffset: 0, duration: 1.8, ease: "power1.inOut" }, 1.1);
+      const pos = { p: 0 };
+      const hd = document.getElementById("hd");
+      tl.fromTo(pos, { p: 0 }, { p: 1, duration: 1.8, ease: "power1.inOut", onUpdate: () => { const pt = fly.getPointAtLength(pos.p * fl); hd.setAttribute("cx", pt.x.toFixed(1)); hd.setAttribute("cy", pt.y.toFixed(1)); } }, 1.1);
+      tl.fromTo(run, { strokeDashoffset: rl, strokeDasharray: rl + " " + rl }, { strokeDashoffset: 0, duration: 1.2, ease: "power1.in" }, 3.0);
+      tl.fromTo("#brk", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 3.6);
+      tl.fromTo("#rl", { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 3.8);
+      ["#c1", "#c2", "#c3", "#c4", "#c5"].forEach((id, i) => {
+        tl.fromTo(id, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out" }, 4.4 + i * 0.75);
+      });
+      tl.fromTo("#c3 .d", { scale: 0 }, { scale: 1, duration: 0.25, stagger: 0.08, ease: "back.out(2)" }, 6.0);
+      tl.fromTo("#wd", { backgroundColor: "#d4a24c" }, { backgroundColor: "rgba(255,255,255,0.18)", duration: 0.4, ease: "none" }, 6.9);
+      tl.fromTo("#ch", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 8.2);
+      tl.fromTo("#nt", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 8.5);
+      tl.to({}, { duration: 0.01 }, 10.99);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

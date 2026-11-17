@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+      .grad { position: absolute; left: 0; right: 0; bottom: 0; height: 1150px; background: linear-gradient(180deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.85) 38%, rgba(11,31,51,0.95) 100%); }
+      .cap { position: absolute; left: 90px; right: 90px; bottom: 360px; }
+      .kk { color: #d4a24c; font-weight: 800; font-size: 40px; letter-spacing: 0.14em; white-space: nowrap; }
+      .big { margin-top: 18px; color: #fff; font-weight: 800; font-size: 104px; line-height: 1.04; letter-spacing: -0.02em; }
+      .big b { color: #d4a24c; }
+      .sm { margin-top: 26px; color: rgba(255,255,255,0.92); font-weight: 500; font-size: 46px; line-height: 1.25; }
+      #rail { position: absolute; left: 50px; top: 250px; width: 10px; height: 900px; border-radius: 5px; background: rgba(255,255,255,0.22); }
+      #fill { position: absolute; left: 0; bottom: 0; width: 10px; height: 900px; border-radius: 5px; background: #d4a24c; transform-origin: 50% 100%; }
+      #alt { position: absolute; left: 30px; top: 150px; height: 76px; padding: 0 26px; border-radius: 38px; background: rgba(11,31,51,0.88); color: #d4a24c; font-weight: 800; font-size: 50px; line-height: 76px; white-space: nowrap; }
+      .end { position: absolute; inset: 0; background: #0b1f33; }
+      .end img { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; opacity: 0.32; }
+      .eb { position: absolute; left: 90px; right: 90px; top: 520px; }
+      .gq { display: inline-block; margin-top: 60px; height: 120px; padding: 0 60px; border-radius: 60px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 56px; line-height: 120px; white-space: nowrap; }
+      .url { margin-top: 50px; color: #fff; font-weight: 800; font-size: 38px; line-height: 1.3; word-break: break-all; }
+      .reg { margin-top: 36px; color: rgba(255,255,255,0.8); font-weight: 500; font-size: 30px; line-height: 1.35; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="16" data-width="1080" data-height="1920">
+      <div id="s1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.4" data-track-index="0"><img id="i1" src="assets/heli.jpg" alt="" style="object-position:30% 50%" />
+        <div class="grad"></div>
+        <div class="cap"><div class="kk">SNOW · MANALI</div><div class="big">Heli-skiing <b>above Manali</b></div><div class="sm">Untracked Himalayan powder, reached by helicopter</div></div></div>
+      <div id="s2" class="scene clip" data-layout-allow-overflow data-start="3.2" data-duration="3.4" data-track-index="1"><img id="i2" src="assets/ridge.jpg" alt="" style="object-position:64% 50%" />
+        <div class="grad"></div>
+        <div class="cap"><div class="kk">THE DROP</div><div class="big">Above <b>3,500 m</b></div><div class="sm">Guided runs of about 800–1,200 m vertical</div></div></div>
+      <div id="s3" class="scene clip" data-layout-allow-overflow data-start="6.4" data-duration="3.4" data-track-index="2"><img id="i3" src="assets/face.jpg" alt="" style="object-position:46% 50%" />
+        <div class="grad"></div>
+        <div class="cap"><div class="kk">WHO &amp; WHEN</div><div class="big">Strong skiers, <b>mid-Jan – March</b></div><div class="sm">Beginners: a ski course at Solang or Narkanda first</div></div></div>
+      <div id="s4" class="scene clip" data-layout-allow-overflow data-start="9.6" data-duration="3.0" data-track-index="3"><img id="i4" src="assets/family.jpg" alt="" style="object-position:50% 50%" />
+        <div class="grad"></div>
+        <div class="cap"><div class="kk">NOT SKIING?</div><div class="big">Family snow days <b>in Manali</b></div><div class="sm">Solang, Sethan or Sissu while you fly</div></div></div>
+      <div id="s5" class="scene clip" data-layout-allow-overflow data-start="12.4" data-duration="3.6" data-track-index="4"><div class="end"><img src="assets/manali.jpg" alt="" />
+        <div class="eb"><div class="kk">WE PLAN THE WEEK AROUND IT</div><div class="big" style="font-size:92px">Hotel + transfers + cab, <b>one quote</b></div><div class="gq">Get Quote</div><div class="url">suzutravels.com/adventure/<br>heli-skiing-in-manali/</div><div class="reg">HP Tourism registered travel agent<br>Reg. No. DTO-MND-11-243/2022</div></div></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12.4" data-track-index="5" style="position:absolute;inset:0;pointer-events:none">
+        <div id="rail"><div id="fill"></div></div>
+        <div id="alt">2,050 m</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#i1", { scale: 1, y: 0 }, { scale: 1.08, y: -30, duration: 3.4, ease: "none" }, 0);
+      tl.fromTo("#i2", { scale: 1.08 }, { scale: 1, duration: 3.4, ease: "none" }, 3.2);
+      tl.fromTo("#i3", { scale: 1, x: 0 }, { scale: 1.07, x: -20, duration: 3.4, ease: "none" }, 6.4);
+      tl.fromTo("#i4", { scale: 1.06 }, { scale: 1, duration: 3.0, ease: "none" }, 9.6);
+      [["#s2", 3.2], ["#s3", 6.4], ["#s4", 9.6], ["#s5", 12.4]].forEach(([id, t]) => tl.fromTo(id, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.inOut" }, t));
+      [["#s1", 0.2], ["#s2", 3.5], ["#s3", 6.7], ["#s4", 9.9]].forEach(([id, t]) => tl.fromTo(id + " .cap > *", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.15, ease: "power2.out" }, t));
+      tl.fromTo("#s5 .eb > *", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.15, ease: "power2.out" }, 12.7);
+      // gold altitude rail: Manali 2,050 -> 3,500 -> ~5,000, then back down
+      const A = { a: 2050 };
+      const altEl = document.getElementById("alt"), fill = document.getElementById("fill");
+      const draw = () => { const f = 0.08 + 0.92 * (A.a - 2050) / (5000 - 2050); fill.style.transform = "scaleY(" + f.toFixed(3) + ")"; altEl.textContent = (A.a >= 4950 ? "~" : "") + (Math.round(A.a / 50) * 50).toLocaleString("en-IN") + " m"; };
+      tl.fromTo(A, { a: 2050 }, { a: 5000, duration: 2.6, ease: "power2.inOut", onUpdate: draw, immediateRender: false }, 0.6);
+      tl.fromTo(A, { a: 5000 }, { a: 3500, duration: 2.2, ease: "power2.inOut", onUpdate: draw, immediateRender: false }, 3.6);
+      tl.fromTo(A, { a: 3500 }, { a: 2050, duration: 2.4, ease: "power2.inOut", onUpdate: draw, immediateRender: false }, 9.6);
+      tl.to({}, { duration: 0.01 }, 15.99);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      draw();
+    </script>
+  </body>
+</html>
