@@ -39,7 +39,7 @@
   "path": "/mountains-of-india/himachal-pradesh/",
   "kind": "state",
   "label": "Peaks of Himachal Pradesh",
-  "blurb": "28 peaks · Reo Purgyil 6,816 m to Churdhar",
+  "blurb": "29 peaks · Reo Purgyil 6,816 m to Churdhar",
   "added": "2026-10-01",
   "state": "himachal-pradesh",
   "commercial": true
@@ -232,7 +232,7 @@
   "path": "/mountains-of-india/6000m-peaks/",
   "kind": "band",
   "label": "6,000 m peaks of India",
-  "blurb": "79 six-thousanders · grade, season, status",
+  "blurb": "80 six-thousanders · grade, season, status",
   "added": "2026-10-22",
   "band": "6000",
   "commercial": false
@@ -460,7 +460,11 @@
   "blurb": "15 summit treks · heights, seasons, road-heads",
   "added": "2026-11-16",
   "band": "3000",
-  "commercial": false
+  "commercial": false,
+  "bands": [
+   "3000",
+   "4000"
+  ]
  },
  "panchachuli": {
   "id": 23220,

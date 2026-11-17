@@ -11,7 +11,7 @@ adding it to live.json is enough for the hub, list, band/state pages and sibling
 (tools/sync_plan.py turns those changes into small find/replace edits on the live pages).
 Copy is original English; facts must trace to research/pages/<slug>.md or research/*.md and to a source listed on the page.
 """
-import html, json, os, pathlib, random, sys, urllib.parse
+import html, json, os, pathlib, random, re, sys, urllib.parse
 
 KIT = pathlib.Path(__file__).resolve().parent
 P = json.loads((KIT / "data" / "peaks.json").read_text(encoding="utf-8"))
@@ -185,7 +185,19 @@ def hero_slides(slugs):
 def tile(v):
     th = used(thumb_for_path(v["path"]))
     img = f'<img class="th" src="{e(th.get("thumb") or th["src"])}" alt="{e(th["alt"])}" width="400" height="140" loading="lazy" decoding="async" />' if th else ""
-    return f'<a class="szm-link{" has-th" if th else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(v.get("blurb", ""))}</span></a>'
+    return f'<a class="szm-link{" has-th" if th else ""}" href="{v["path"]}">{img}<span class="n">{e(v["label"])}</span><span class="c">{e(fresh_blurb(v))}</span></a>'
+
+
+def fresh_blurb(v):
+    """v1.2.6: the leading count of a state/band tile blurb follows the dataset ('28 peaks · …' → current count)."""
+    bl = v.get("blurb", "")
+    if v.get("kind") == "state" and v.get("state"):
+        n_ = BS.get(v["state"])
+    elif v.get("kind") == "band" and v.get("band"):
+        n_ = sum(BB.get(x, 0) for x in (v.get("bands") or [v["band"]]))
+    else:
+        n_ = None
+    return re.sub(r"^\d+(?= )", str(n_), bl) if n_ else bl
 
 
 def guides_block(kinds=("peak", "band", "state", "guide"), exclude=()):
@@ -198,7 +210,8 @@ def guides_block(kinds=("peak", "band", "state", "guide"), exclude=()):
 
 
 def band_page(b):
-    return next((v["path"] for k, v in LIVE.items() if k not in BASE and v.get("kind") == "band" and v.get("band") == b), None)
+    # v1.2.6: a band page may cover several bands (live.json "bands": ["3000", "4000"]); "band" stays its main band
+    return next((v["path"] for k, v in LIVE.items() if k not in BASE and v.get("kind") == "band" and (v.get("band") == b or b in v.get("bands", []))), None)
 
 
 def state_page(s):
@@ -910,7 +923,7 @@ def content_page(slug):
     base_links = [[HUB, "Mountains of India", "Records, permits and training"], [LIST, "Highest peaks in India", f"Full list of {TOTAL} peaks"], [EXP, "Guided peak climbs", "Friendship Peak to Deo Tibba"]]
     links = c.get("links", base_links)
     rel = "".join(tile(v) for _, v in related(slug, c))
-    more = ('<section class="szm-sec" id="more"><h2>Keep exploring</h2><div class="szm-links">' + rel + "".join(f'<a class="szm-link" href="{a}"><span class="n">{e(b)}</span><span class="c">{e(d)}</span></a>' for a, b, d in links)
+    more = ('<section class="szm-sec" id="more"><h2>Keep exploring</h2><div class="szm-links">' + rel + "".join(f'<a class="szm-link" href="{a}"><span class="n">{e(b)}</span><span class="c">{e(re.sub(r"Full list of \\d+ peaks", f"Full list of {TOTAL} peaks", d))}</span></a>' for a, b, d in links)
             + f'</div><h3 style="margin-top:30px">Sources</h3>{sources([tuple(x) for x in c.get("sources", [])])}{photo_credits(GI)}</section>')
     body = hero + nav(navi[:9], wa(wa_text)) + "".join(sec) + f'<section class="szm-sec">{quote}</section>' + more
     graph = []

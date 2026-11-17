@@ -1,4 +1,4 @@
-# Suzu Mountain Kit v1.2.5 (27 Oct 2026)
+# Suzu Mountain Kit v1.2.6 (17 Nov 2026)
 
 This kit is the design system, dataset, video pipeline and publishing toolkit for the **Mountains of India** section of suzutravels.com. It covers:
 - `/mountains-of-india/` and its child pages
@@ -64,7 +64,7 @@ Owner: Suzu Travels (Sushil Kumar). The kit is built and run by the scheduled Su
 | `research/` | Background research: `rules-records.md` (permits, rules, records, costs, safety, facts to avoid), `seo-plan.md` (keywords, URL plan, linking, schema), `kw/*.json` (Keyword Planner pulls), `pages/<slug>.md` (fact packs) |
 | `BACKLOG.md` | Which page is next and its status (`todo → researched → media → live`) |
 | `LOG.md` | One line per agent run, newest first: what changed, IDs, undo tokens, `FIX NEEDED` items |
-| `live.json` | Every published page: `{slug: {id, path, kind, label, blurb, added, peak_id?, peak_ids?, state?, band?, commercial?}}` — drives all internal links |
+| `live.json` | Every published page: `{slug: {id, path, kind, label, blurb, added, peak_id?, peak_ids?, state?, band?, bands?, commercial?}}` (v1.2.6: `bands` lets one band page cover several bands; state/band tile counts and "Full list of N peaks" follow the dataset automatically) — drives all internal links |
 | `media.json` | Pinned commit per media folder (and `data`) for jsDelivr URLs |
 | `src/pages/<slug>.json` | One file per page (copy + structure). `_example-peak.json` = schema example (files starting `_` are never built) |
 | `src/media/<slug>.json` | The page's video spec (hero / profile / ladder). Examples: `_example-peak.json`, `_example-guide.json` |
