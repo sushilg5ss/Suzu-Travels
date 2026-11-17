@@ -79,3 +79,10 @@
 6. Organiser — Pran Pratistha of Ram Darbar on 5 June (31 May 2025) https://organiser.org/2025/05/31/294722/bharat/uttar-pradesh-ayodhya-is-all-set-for-pran-pratistha-of-ram-darbar-know-all-about-grand-ceremony-to-be-held-on-june-5/
 7. Public Holidays India — Ram Navami 2027 (15 Apr 2027) https://publicholidays.in/ram-navami/
 8. data/yatras.json `kashi-ayodhya-prayagraj-circuit` (as_of 2026-10-08) · Keyword Planner (1172710099, India-EN, 25 Oct 2026) · OSRM (2026-10-25)
+
+## Update 17 Nov 2026 (Research & Data) — WINTER SCHEDULE
+- From **1 Nov 2026** the temple runs a winter schedule (no end date given; summer slots above are now out of season) — https://www.businesstoday.in/latest/photo/ram-mandirs-winter-schedule-is-here-why-arriving-at-4-am-may-not-get-you-darshan-563996-2026-10-27 (as_of 2026-11-17); full evening times per News18 via https://curlytales.com/india/trending/ayodhya-ram-mandir-revises-darshan-timings-from-november-check-complete-schedule/ (as_of 2026-11-17). Not yet confirmed on srjbtkshetra.org → page should say "winter timings, confirm on the trust site".
+- Gates **4 am – 10 pm** (was 3:45 am – 10:30 pm). Mangala aarti **4:30 am**, doors then closed till 6:30 am; Shringar aarti **6:30 am**; general darshan from **7 am** (arriving at 4 am does not give darshan before 7).
+- Darshan 7 – 11:30 am (closed 8–8:10 am for Bal Bhog); 11:30 am – 12 noon Raj Bhog, **Raj Bhog aarti 12 noon**; rest 12:30 – 1:30 pm, darshan resumes **1:35 pm**.
+- Evening: closed 4–4:10 pm (Bal Bhog); 6:45–7 pm dhoop-deep/naivedya; **Sandhya aarti 7 pm**; closed 8–8:30 pm and 9:15–9:30 pm; **Shayan aarti 9:30 pm**; doors close 10 pm.
+- Simple page wording: "Winter (from 1 Nov): darshan about 7 am – 11:30 am and 1:35 pm – about 9:15 pm with short bhog breaks; Mangala 4:30 am, Shringar 6:30 am, Raj Bhog 12 noon, Sandhya 7 pm, Shayan 9:30 pm." No pass/slot changes reported.
