@@ -34,6 +34,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /russia-tour-packages/ | 22487 | `.hx` country page (15 Nov 2026) — `pages/gen_russia.py` (Moscow + Saint Petersburg + Kazan/Sergiev Posad add-ons; 8-day itinerary grid = 4 columns; 7-photo gallery like China; Wikimedia Commons photos) |
 | /new-zealand-tour-packages/ | 22678 | `.hx` country page (16 Nov 2026) — built by the 13:43 run that crashed before pushing its generator; rendered copy `pages/new-zealand-tour-packages.live-2026-11-16.html` (BACKLOG #68) |
 | /philippines-tour-packages/ | 23167 | `.hx` country page (17 Nov 2026) — `pages/gen_philippines.py` (Manila–Bohol–Boracay + Palawan/Cebu options; 8-day itinerary grid = 4 columns; 7-photo gallery like Russia; Wikimedia Commons photos) |
+| /south-korea-tour-packages/ | 23452 | `.hx` country page (18 Nov 2026) — `pages/gen_southkorea.py` (Seoul–Nami–Busan–Gyeongju + Jeju add-on; 8-day itinerary grid = 4 columns; 7-photo gallery like Philippines; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -87,3 +88,8 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Grid cards for a new page: inserted before the Vietnam card (`<a class="sx-rc|hx-mc" href=".../vietnam-tour-packages/">`, expected_count 1) on all pages; on the Vietnam page before the Bali card. Mauritius 15809 ended up with the card twice after one call (likely a silent retry in the MCP layer) — always re-count the new link on every page after inserting (fixed the same run).
 - dfa.gov.ph and newdelhipe.dfa.gov.ph return 403 to curl from the sandbox (bot filter) but the web-fetch agent reads them; link checks will show these two as 403 — not broken for users.
 - Commons HTML search worked with 4–10 s spacing (one 429, retry after a pause); raw wikitext gave licence + author.
+
+## Notes (18 Nov 2026)
+- Korean official sites from the sandbox: overseas.mofa.go.kr / ind-chennai.mofa.go.kr do not answer curl (the web-fetch agent read the Chennai consulate guide); visa.go.kr and e-arrivalcard.go.kr answer curl but are JS-heavy (e-arrivalcard text is in Korean: 수수료 없이 = no fee, 도착 3일 전부터 = from 3 days before arrival). k-eta.go.kr redirects to /portal/newapply/index.do — 신청대상 = nationals who can enter without a visa.
+- Hub diff via `>`-token difflib: extend the anchor with BOTH preceding and following tokens until it is unique, then simulate the sequential replaces locally (result must equal the new build) before sending.
+- Grid cards for a new page were inserted before the Philippines card (Vietnam card on the Philippines page).
