@@ -38,5 +38,6 @@
  "manimahesh-yatra": {"id": 22366, "path": "/pilgrimage-tours/manimahesh-yatra/", "kind": "yatra", "label": "Manimahesh Kailash Yatra", "blurb": "Shiva's sacred lake above Bharmour, Chamba", "added": "2026-11-14"},
  "panch-kedar": {"id": 22584, "path": "/pilgrimage-tours/panch-kedar/", "kind": "circuit", "label": "Panch Kedar", "blurb": "Five Shiva shrines of the Garhwal Himalaya", "added": "2026-11-15"},
  "ayodhya-ram-mandir": {"id": 22978, "path": "/pilgrimage-tours/ayodhya-ram-mandir/", "kind": "temple", "label": "Ram Mandir, Ayodhya", "blurb": "Ram Lalla's temple at Ram Janmabhoomi, on the Saryu", "added": "2026-11-16"},
- "adi-kailash-yatra": {"id": 23264, "path": "/pilgrimage-tours/adi-kailash-yatra/", "kind": "yatra", "label": "Adi Kailash & Om Parvat", "blurb": "Shiva's 'first Kailash' in the Kumaon Himalaya", "added": "2026-11-17"}
+ "adi-kailash-yatra": {"id": 23264, "path": "/pilgrimage-tours/adi-kailash-yatra/", "kind": "yatra", "label": "Adi Kailash & Om Parvat", "blurb": "Shiva's 'first Kailash' in the Kumaon Himalaya", "added": "2026-11-17"},
+ "prem-mandir": {"id": 23571, "path": "/pilgrimage-tours/prem-mandir/", "kind": "temple", "label": "Prem Mandir, Vrindavan", "blurb": "Radha Krishna and Sita Ram in white marble, lit up after dark", "added": "2026-11-18"}
 }
