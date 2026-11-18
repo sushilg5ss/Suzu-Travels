@@ -1,0 +1,320 @@
+{
+ "path": "/india-tours/hampi/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Hampi: A Guide for International Travellers",
+ "seo_title": "Hampi Travel Guide: How to Reach, When to Go, 3-Day Plan",
+ "seo_desc": "Hampi for first-time visitors: why it is a UNESCO site, how to get there from Bengaluru or Goa, best months, a 3-day plan and the new Hampi Utsav dates.",
+ "focus": "hampi",
+ "label": "Hampi",
+ "blurb": "UNESCO ruins of Vijayanagara, from Goa or Bengaluru",
+ "kicker": "Karnataka · UNESCO World Heritage",
+ "tag": "The ruined capital of an empire, among the boulders.",
+ "sub": "An honest guide to Hampi for travellers from the US, UK, Europe, Australia and Canada: what it is, how far it is, how many days to stay, when to go, and how to add it to a Goa or South India trip by private car.",
+ "hero_alt": "The Virupaksha Temple gateway and smaller stone shrines of Hampi among boulder hills in Karnataka, India",
+ "cta1": "See the 3-day plan",
+ "chips": [
+  [
+   "UNESCO",
+   "World Heritage since 1986"
+  ],
+  [
+   "3 days",
+   "the suggested stay"
+  ],
+  [
+   "Oct–Feb",
+   "the best months"
+  ],
+  [
+   "3–5 Nov",
+   "Hampi Utsav, every year"
+  ]
+ ],
+ "q": "Is Hampi worth visiting, and how do I get there?",
+ "answer": "Hampi in Karnataka is the ruined capital of the Vijayanagara Empire (14th–16th century) and a UNESCO World Heritage Site since 1986. It lies about 340 km (211 miles) from Bengaluru; the nearest railway station, Hosapete Junction, is about 13 km (8 miles) away. Go October–February and allow three days. We arrange it by private car with driver — price on request.",
+ "facts": [
+  [
+   "1986",
+   "UNESCO World Heritage listing"
+  ],
+  [
+   "4,188 ha",
+   "of ruins in the Tungabhadra basin"
+  ],
+  [
+   "About 340 km",
+   "(211 mi) from Bengaluru"
+  ],
+  [
+   "3–5 Nov",
+   "Hampi Utsav, yearly from 2026"
+  ]
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "nav": "What it is",
+   "h2": "What Hampi is — and why it is worth the journey",
+   "kind": "prose",
+   "paras": [
+    "The Group of Monuments at Hampi was inscribed on the UNESCO World Heritage list in 1986. In the words of the Archaeological Survey of India, it holds the remnants of the capital city of the last great Hindu kingdom of Vijayanagara, from the 14th to the 16th century.",
+    "The site is huge: about 4,188 hectares (roughly 10,350 acres) in the basin of the Tungabhadra river, in what is now Vijayanagara district (formerly part of Ballari). Temples, halls, gateways and royal buildings sit among hills of piled granite boulders — a landscape that looks like nowhere else in India.",
+    "Hampi is far from India's big cities, and that is both the challenge and the reward. You need to plan the journey, but once you are there the pace is slow: early walks, temple courtyards, river views and sunsets over the boulders."
+   ]
+  },
+  {
+   "id": "see",
+   "nav": "What to see",
+   "h2": "What to see in Hampi",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    [
+     "Virupaksha Temple",
+     "Its entrance gateway rises about 50 m (160 ft) in nine tiers — the landmark you see from all around."
+    ],
+    [
+     "Vijaya Vittala Temple",
+     "Famous for the 56 musical pillars of its Ranga Mantapa and the Stone Chariot in the courtyard — the same chariot shown on India's 50-rupee note."
+    ],
+    [
+     "Lotus Mahal",
+     "An elegant pavilion with lotus-shaped arches, one of Hampi's best-known royal buildings."
+    ],
+    [
+     "Hemakuta and Matanga hills",
+     "Hemakuta Hill has groups of small temples above Virupaksha; Matanga Hill is the classic sunrise viewpoint — go with care, and no climbing in the dark."
+    ],
+    [
+     "The giant Ganeshas and Lakshmi Narasimha",
+     "Kadalekalu and Sasivekalu Ganesha, and the monolithic Lakshmi Narasimha, carved from single boulders."
+    ],
+    [
+     "Coracle rides",
+     "Karnataka Tourism lists round coracle boat rides on the river. Follow local guidance on river levels."
+    ]
+   ]
+  },
+  {
+   "id": "three-days",
+   "nav": "3-day plan",
+   "h2": "A sample 3-day plan for Hampi",
+   "kind": "table",
+   "lead": "Karnataka Tourism suggests about three days. Most of our guests reach Hampi from Goa or Bengaluru and continue to the other — a natural loop through South India.",
+   "video": "route",
+   "video_caption": "Start on the Goa coast, three days among Hampi's temples and boulders, then on to Bengaluru for your flight.",
+   "head": [
+    "Day",
+    "Where",
+    "What you do"
+   ],
+   "rows": [
+    [
+     "Arrival",
+     "Goa or Bengaluru → Hampi",
+     "A long day by private car, or an overnight train from Bengaluru to Hosapete Junction and a short transfer"
+    ],
+    [
+     "Day 1",
+     "Hampi Bazaar area",
+     "Virupaksha Temple, Hemakuta Hill, the Kadalekalu and Sasivekalu Ganeshas; sunset over the boulders"
+    ],
+    [
+     "Day 2",
+     "Vittala Temple",
+     "The Vijaya Vittala Temple and the Stone Chariot in the cooler morning; a coracle ride if local guidance allows"
+    ],
+    [
+     "Day 3",
+     "Royal buildings",
+     "Lotus Mahal and Lakshmi Narasimha; an early, careful walk up Matanga Hill for sunrise if you like"
+    ],
+    [
+     "Onward",
+     "Bengaluru or Goa",
+     "Drive on, or take a train from Hosapete Junction"
+    ]
+   ],
+   "note": "Road times depend on traffic and stops — we plan each day around breaks, not a map distance. Train schedules change: check IRCTC, or ask us when you plan."
+  },
+  {
+   "id": "reach",
+   "nav": "Getting there",
+   "h2": "How to get to Hampi",
+   "kind": "table",
+   "head": [
+    "Way in",
+    "What to know"
+   ],
+   "rows": [
+    [
+     "From Bengaluru by road",
+     "Hampi is about 340 km (211 miles) from Bengaluru — a full day by private car, with breaks."
+    ],
+    [
+     "By train",
+     "The nearest station is Hosapete Junction, about 13 km (8 miles) from Hampi. Many visitors take an overnight train from Bengaluru; check current trains on IRCTC."
+    ],
+    [
+     "From Goa",
+     "Many travellers add Hampi after a Goa stay, by private car. It is a long day — we plan the stops."
+    ],
+    [
+     "By air",
+     "The nearest airports are small regional ones with few flights; most visitors come by overnight train or by road from Bengaluru or Goa."
+    ]
+   ]
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go: season and Hampi Utsav",
+   "kind": "cards",
+   "items": [
+    [
+     "October to February",
+     "The best months, as Karnataka Tourism advises. Hampi gets very hot outside October–February."
+    ],
+    [
+     "Hampi Utsav (Hampi festival)",
+     "From 2026 the festival is held every year on 3, 4 and 5 November instead of February (Government of Karnataka, Feb 2026). The 2027 edition is expected on 3–5 November — confirm before you plan around it."
+    ],
+    [
+     "Walk early and late",
+     "Start at sunrise, rest in the middle of the day, and go out again for the late-afternoon light. Carry water."
+    ],
+    [
+     "Health",
+     "Hampi gets very hot outside October–February; walk early and late, carry water, and consult your doctor or CDC / NHS Fit for Travel."
+    ]
+   ]
+  },
+  {
+   "id": "practical",
+   "nav": "Tickets & visa",
+   "h2": "Tickets, timings and your visa",
+   "kind": "callout",
+   "style": "dark",
+   "text": "Monuments with a ticket charge foreign visitors a separate rate; buy at the counter or on the ASI site. <b>Opening hours and fees change — confirm before travel</b> (as of Nov 2026). For your visa: <b>apply yourself only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency.</b> In November 2026 the Government of India announced that the Tourist Visa is being renamed the Visitor Visa (PIB, 11 Nov 2026); until the official site changes, apply for the visa it shows there."
+  },
+  {
+   "id": "how",
+   "nav": "How we arrange it",
+   "h2": "How we arrange your Hampi trip",
+   "kind": "steps",
+   "lead": "South India trips are arranged by us with trusted local operators. Suzu Travels plans the whole trip from our office in Himachal and stays your single point of contact.",
+   "items": [
+    [
+     "Tell us your plan",
+     "Where you start (Goa, Bengaluru or elsewhere), your dates, how many of you, and what else you want to see in India."
+    ],
+    [
+     "Get a day-by-day plan",
+     "With a US-dollar quote for the car, driver, hotels and any trains between cities."
+    ],
+    [
+     "Lock it with a 20% deposit",
+     "Full refund if you cancel within 48 hours of paying; the balance is due before the trip."
+    ],
+    [
+     "Before the trip",
+     "Your driver's name, photo and car number are shared with you before the trip, along with our office number in Himachal."
+    ],
+    [
+     "On the road",
+     "A private car with driver for the transfers and the sights; licensed local guides at the monuments on request."
+    ]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "Hampi is quoted on request — the number of days, hotel level, the month and where you start change the total. You get a day-by-day plan with a US-dollar total and what it covers before you pay anything.",
+  "rows": [
+   [
+    "Hampi, 3 days — added to your Goa or South India trip",
+    "on request",
+    "Private car and driver from Goa or Bengaluru, hotels, a monument guide on request; trains quoted with it"
+   ],
+   [
+    "Hampi as part of a South India tour",
+    "on request",
+    "Combined with Kerala, Karnataka or Tamil Nadu — see our South India tour for a full itinerary"
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "Is Hampi worth visiting?",
+   "For travellers who love history and landscapes, yes. It is a UNESCO World Heritage Site — the ruined capital of the Vijayanagara Empire (14th–16th century), spread over about 4,188 hectares among granite boulders. It is far from the big cities, so plan about three days to make the journey worth it."
+  ],
+  [
+   "How many days do I need in Hampi?",
+   "About three days, as Karnataka Tourism suggests. One day is not enough for a site this large; three days lets you see the main temples in the cooler hours."
+  ],
+  [
+   "How do I get to Hampi from Bengaluru or Goa?",
+   "Hampi is about 340 km (211 miles) from Bengaluru — a full day by private car, or an overnight train to Hosapete Junction, about 13 km (8 miles) from Hampi. From Goa, most travellers go by private car. We plan the stops."
+  ],
+  [
+   "What is the nearest railway station to Hampi?",
+   "Hosapete Junction, about 13 km (8 miles) away. Check current trains on IRCTC."
+  ],
+  [
+   "What is the best time to visit Hampi?",
+   "October to February. Hampi gets very hot outside those months, so walk early and late and carry water."
+  ],
+  [
+   "When is Hampi Utsav?",
+   "From 2026 the Hampi festival is held every year on 3–5 November instead of February, as announced by the Government of Karnataka in February 2026. Confirm the 2027 dates before you travel."
+  ],
+  [
+   "Why is Hampi a UNESCO site?",
+   "The Group of Monuments at Hampi was listed in 1986 as the remnants of the capital of Vijayanagara, the last great Hindu kingdom of South India, from the 14th to the 16th century."
+  ],
+  [
+   "Can Suzu Travels arrange a Hampi trip?",
+   "Yes. We plan it from our office in Himachal and arrange it on the ground with trusted local operators — private car and driver, hotels and guides on request. Send us your dates for a day-by-day plan and a quote."
+  ]
+ ],
+ "sources": [
+  [
+   "Archaeological Survey of India — Group of Monuments at Hampi",
+   "https://asimustsee.nic.in/group-of-monuments-hampi.php"
+  ],
+  [
+   "Karnataka Tourism — Hampi",
+   "https://karnatakatourism.org/tour-item/hampi/"
+  ],
+  [
+   "Deccan Chronicle — Hampi Utsav to return to November schedule (13 Feb 2026)",
+   "https://www.deccanchronicle.com/southern-states/karnataka/hampi-utsav-to-return-to-november-schedule-from-this-year-chief-minister-1937101"
+  ],
+  [
+   "The Hans India — Hampi festival to be held annually from November 3–5 (15 Feb 2026)",
+   "https://www.thehansindia.com/karnataka/hampi-festival-to-be-held-annually-from-november-35-1048640"
+  ],
+  [
+   "Government of India — e-Visa (official site)",
+   "https://indianvisaonline.gov.in/"
+  ],
+  [
+   "PIB — visa rationalisation, 11 Nov 2026",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2335182&reg=48&lang=2"
+  ]
+ ],
+ "verified": "18 Nov 2026",
+ "cta": {
+  "h2": "Add Hampi to your India trip",
+  "text": "Tell us your dates, where you start and how many of you. We reply with a day-by-day plan and a US-dollar quote, usually within two hours (9 am–9 pm IST).",
+  "wa": "Hello Suzu Travels, I'm planning a trip with Hampi. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "south-india-tour",
+  "goa-holiday",
+  "khajuraho-temples",
+  "private-driver-india"
+ ],
+ "talk": true
+}
