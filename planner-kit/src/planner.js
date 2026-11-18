@@ -375,6 +375,19 @@
         return true;
       });
     })();
+    /* v2.3 short winter daylight: a hill drive day (Nov–Feb) that would still be on the road at sunset with a 7:30 AM start and ~1 h of meal/tea stops.
+       Sunset from sunIST() at the destination; long drives (> 10 h) already get their own warning. */
+    (function () {
+      var n = 0;
+      out.days.forEach(function (dy) {
+        if (n >= 2 || !dy.min || dy.min > 600 || dy.trek) return;
+        var m = dy.date.getMonth() + 1; if (m > 2 && m < 11) return;
+        var p = PL[dy.to]; if (!p || !HILL[p.region]) return;
+        var sn = sunIST(p.lat, p.lon, dy.date); if (!sn || 450 + dy.min + 60 <= sn.set) return;
+        n++;
+        out.warn.push({ r: 0, k: 'dark-' + dy.no, t: 'Short winter daylight: on Day ' + dy.no + ' (' + PL[dy.from].name + ' → ' + p.name + ', ' + hrs(dy.min) + ' drive) the sun sets about ' + clk(sn.set) + ', so the last part would be after dark on hill roads, where frost and black ice can form. We start such days by 7 AM with short stops; for daylight-only driving, add a night halt on the way.' });
+      });
+    })();
     /* ---- cab ---- */
     var totalDays = out.days.length, nNights = nights.length;
     var av = autoVeh(out.route), v, cnt;

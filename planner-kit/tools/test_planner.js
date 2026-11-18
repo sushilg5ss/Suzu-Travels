@@ -189,6 +189,17 @@ const { chromium, devices } = require('playwright');
       r.xmas.ok = r.xmas.on.length === 1 && /Shimla/.test(r.xmas.on[0]) && !r.xmas.offHit && r.xmas.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.xmas.hi[0].replace(/Shimla|शिमला/g, ''));
       await p3.screenshot({ path: `${out}/${name}-4j-xmas-hi.png`, fullPage: true });
     }
+    { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
+      const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
+      const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return p3.$$eval('.warn', x => x.map(y => y.textContent)); };
+      const on = await dk('2026-12-10', ''), off = await dk('2026-06-10', ''), hi = await dk('2026-12-10', 'hi');
+      r.dark = { on: on.filter(t => /winter daylight/.test(t)), offHit: off.some(t => /winter daylight/.test(t)), hi: hi.filter(t => /सर्दियों में छोटे दिन/.test(t)) };
+      r.dark.ok = r.dark.on.length === 1 && /sets about 5:\d\d PM/.test(r.dark.on[0]) && !r.dark.offHit && r.dark.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.dark.hi[0].replace(/PM/g, ''));
+      await p3.screenshot({ path: `${out}/${name}-4k-dark-hi.png`, fullPage: true });
+    }
     await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
     await p3.close();
     // agent mode client link
