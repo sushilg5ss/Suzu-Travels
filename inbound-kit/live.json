@@ -475,5 +475,14 @@
   "blurb": "UNESCO ruins of Vijayanagara, from Goa or Bengaluru",
   "added": "2026-11-18",
   "focus": "hampi"
+ },
+ "india-in-march": {
+  "id": 23641,
+  "path": "/india-tours/india-in-march/",
+  "kind": "guide",
+  "label": "India in March",
+  "blurb": "Weather by region, the heat warning, Holi on 23 March 2027 and where to go in spring",
+  "added": "2026-11-19",
+  "focus": "india in march"
  }
 }
