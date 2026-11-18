@@ -1,0 +1,135 @@
+{
+ "hero": {
+  "kicker": "BHAGIRATHI PEAKS · GANGOTRI",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 80,
+     "scale": 1.12,
+     "x": -150
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.15,
+     "x": -190
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     9.6,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    3415,
+    "GANGOTRI ROAD-HEAD"
+   ],
+   [
+    4023,
+    "GAUMUKH"
+   ],
+   [
+    4400,
+    "NANDANVAN BC"
+   ],
+   [
+    5900,
+    "HIGH CAMP"
+   ],
+   [
+    6512,
+    "BHAGIRATHI II"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Bhagirathi II, camp by camp",
+  "sub": "Gangotri · Nandanvan · east face · approach heights approximate",
+  "camps": [
+   {
+    "name": "Gangotri",
+    "m": 3415,
+    "day": "Road-head · Day 1–2"
+   },
+   {
+    "name": "Bhojbasa",
+    "m": 3775,
+    "day": "Day 3"
+   },
+   {
+    "name": "Gaumukh",
+    "m": 4023,
+    "day": "Day 4"
+   },
+   {
+    "name": "Nandanvan BC",
+    "m": 4400,
+    "day": "Day 4–5"
+   },
+   {
+    "name": "High camp",
+    "m": 5900,
+    "day": "~Day 12"
+   },
+   {
+    "name": "Bhagirathi II",
+    "m": 6512,
+    "day": "Summit"
+   }
+  ]
+ }
+}

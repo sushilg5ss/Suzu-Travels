@@ -1,0 +1,141 @@
+{
+ "hero": {
+  "kicker": "BANDARPUNCH · UTTARKASHI",
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 700
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": -190
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30,
+     "y": -180
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     9.6,
+     14.0
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -40
+    }
+   }
+  ],
+  "steps": [
+   [
+    2487,
+    "SUKI · ROAD-HEAD"
+   ],
+   [
+    3420,
+    "KHAGI PASS"
+   ],
+   [
+    3620,
+    "BASE CAMP"
+   ],
+   [
+    4700,
+    "CAMP 1"
+   ],
+   [
+    5400,
+    "CAMP 2"
+   ],
+   [
+    6316,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Bandarpunch, camp by camp",
+  "sub": "SE route · Suki · Khagi Pass · Chhaiyan Gad · 1975 camps, vary by year",
+  "camps": [
+   {
+    "name": "Suki",
+    "m": 2487,
+    "day": "Road-head · Day 2"
+   },
+   {
+    "name": "Khagi Pass",
+    "m": 3420,
+    "day": "Day 2–3"
+   },
+   {
+    "name": "Base camp",
+    "m": 3620,
+    "day": "Day 4"
+   },
+   {
+    "name": "Camp 1",
+    "m": 4700,
+    "day": "~Day 6–8"
+   },
+   {
+    "name": "Camp 2",
+    "m": 5400,
+    "day": "~Day 9–11"
+   },
+   {
+    "name": "High camp",
+    "m": 5700,
+    "day": "1975 only"
+   },
+   {
+    "name": "Bandarpunch",
+    "m": 6316,
+    "day": "Summit"
+   }
+  ]
+ }
+}
