@@ -475,5 +475,15 @@
   "added": "2026-11-17",
   "peak_id": "panchachuli-ii",
   "commercial": false
+ },
+ "chaukhamba": {
+  "id": 23540,
+  "path": "/mountains-of-india/chaukhamba/",
+  "kind": "peak",
+  "label": "Chaukhamba",
+  "blurb": "7,138 m · the four pillars above the Gangotri glacier",
+  "added": "2026-11-18",
+  "peak_id": "chaukhamba-i",
+  "commercial": false
  }
 }
