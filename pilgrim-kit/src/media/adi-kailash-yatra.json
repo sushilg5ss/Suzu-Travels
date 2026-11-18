@@ -65,5 +65,30 @@
     "lon": 80.63
    }
   ]
+ },
+ "story": {
+  "title": "The legend of Adi Kailash",
+  "beats": [
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Devotees believe it is Shiva's first Kailash"
+   },
+   {
+    "arch": "lake",
+    "sky": "dawn",
+    "line": "A still lake mirrors the sacred peak"
+   },
+   {
+    "arch": "himalaya",
+    "sky": "snow",
+    "line": "On Om Parvat, snow settles as Om"
+   },
+   {
+    "arch": "himalaya",
+    "sky": "saffron",
+    "line": "The valley of Vyas, the old pilgrim path"
+   }
+  ]
  }
 }
