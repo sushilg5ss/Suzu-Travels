@@ -334,7 +334,7 @@
   "range": "Karakoram (Siachen Muztagh)",
   "area": "Siachen Glacier",
   "fa": 1975,
-  "fa_by": "K. Kodaka & Y. Kobayashi (Japanese, approached from Pakistan)",
+  "fa_by": "Kazuo Kodaka & Yasunori Kobayashi, 12 Aug 1975 (Shizuoka University, leader Hajime Katayama; approached over the Bilafond La)",
   "status": "restricted",
   "status_note": "Siachen military zone on the border with Chinese-held Shaksgam/Trans-Karakoram Tract.",
   "grade": "technical",
@@ -343,10 +343,12 @@
   "base": "Siachen Glacier (army access)",
   "foreigners": "restricted",
   "rank": 9,
-  "notable": "Highest of the Siachen Muztagh.",
+  "notable": "Highest of the Siachen Muztagh. Second ascent by the Indian Army in 1992.",
   "sources": [
    "https://en.wikipedia.org/wiki/Teram_Kangri",
-   "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
+   "https://publications.americanalpineclub.org/articles/12197654203",
+   "https://www.harishkapadia.com/?p=8424"
   ]
  },
  {
@@ -798,20 +800,24 @@
   "range": "Karakoram (Siachen Muztagh)",
   "area": "Siachen",
   "fa": 1976,
-  "fa_by": "Yoshio Inagaki, Katsuhisa Yabuta & Takamasa Miyomoto (Osaka University)",
+  "fa_by": "Yoshio Inagaki, Katsuhisa Yabuta & Takamasa Miyomoto (Osaka University, leader Hideo Misawa), 7 Aug 1976, west ridge via the Bilafond La and Teram Shehr glacier",
   "status": "restricted",
-  "status_note": "Siachen military zone.",
+  "status_note": "Siachen military zone on the line with China-held territory. Climbed 1976, 1980 and 1988 (the last two by the Indian Army); no later ascent found. The 2019 Siachen tourism opening (Base Camp → Kumar Post) does not cover it.",
   "grade": "technical",
   "grade_note": "West ridge snow/ice",
-  "season": "Jun–Aug",
-  "base": "Siachen (army access)",
+  "season": "Jul–Sep",
+  "base": "Teram Shehr glacier, Siachen (army access)",
   "foreigners": "restricted",
   "rank": 18,
-  "notable": "Only the western summit has been climbed; sources disagree which Apsarasas summit is highest.",
+  "notable": "Only the western summit has been climbed. Most sources call it the highest; Jurgalski's data puts the unclimbed eastern summit a few metres higher (7,243 vs 7,241 m).",
   "sources": [
    "https://en.wikipedia.org/wiki/Apsarasas_Kangri",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
-   "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth"
+   "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth",
+   "http://c498469.r69.cf2.rackcdn.com/1977/asia1977_236-284.pdf",
+   "https://www.himalayanclub.org/hj/38/19/the-ascent-of-apsarasas-i-in-the-karakoram/",
+   "https://www.harishkapadia.com/?p=8424",
+   "https://explorersweb.com/five-highest-unclimbed-mountains-apsarasas-kangri-i/"
   ]
  },
  {
@@ -866,11 +872,12 @@
   "base": "Siachen (army access)",
   "foreigners": "restricted",
   "rank": null,
-  "notable": "Among the highest unclimbed summits in the world. Apsarasas III is c.6,882 m.",
+  "notable": "Among the highest unclimbed summits in the world. HJ 38 (1982) gives II 7,240 m and III 7,230 m; PeakBook gives III 7,236 m.",
   "sources": [
    "https://en.wikipedia.org/wiki/Apsarasas_Kangri",
    "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth",
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh"
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
+   "https://www.himalayanclub.org/hj/38/19/the-ascent-of-apsarasas-i-in-the-karakoram/"
   ]
  },
  {
@@ -1946,12 +1953,13 @@
   "grade": "technical",
   "grade_note": "Needed c.2,000 m of fixed rope on first ascent",
   "season": "May–Jun & Sep–Oct",
-  "base": "Gangotri → Nandanvan",
+  "base": "Gangotri → Gaumukh → Nandanvan (base camp)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "Highest of the Bhagirathi group. West ridge climbed alpine-style on 21 Aug 1983 by Martin Moran and Charlie Heard; Heard died abseiling the next day.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_I"
+   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_I",
+   "https://www.himalayanclub.org/hj/40/16/bhagirathi-i-expedition-1983"
   ]
  },
  {
@@ -2838,19 +2846,22 @@
   "where": "Uttarakhand",
   "range": "Garhwal Himalaya (Gangotri group)",
   "area": "Uttarkashi",
-  "fa": 1933,
-  "fa_by": "Edi Ellmauthaler & Toni Messner (Austria)",
+  "fa": 1938,
+  "fa_by": "Edi Ellmauthaler & Toni Messner (German–Austrian expedition led by R. Schwarzgruber), 9 Sep 1938",
   "status": "climbed",
   "status_note": "",
   "grade": "moderate",
-  "grade_note": "Popular Gangotri expedition peak",
+  "grade_note": "East-face snow/ice route from Nandanvan with ~60° pitches and a rock band; the usual Gangotri expedition peak",
   "season": "May–Jun & Sep–Oct",
-  "base": "Gangotri → Nandanvan",
+  "base": "Gangotri → Bhojbasa → Gaumukh → Nandanvan (base camp)",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "First Indian ascent 20 Oct 1966; three of the four summiters died in a fall on the descent.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_II"
+   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_II",
+   "https://www.himalayanclub.org/hj/11/11/the-german-expedition-to-the-gangotri-glacier-1938/",
+   "https://www.himalayanclub.org/hj/27/17/chaturangi-expedition-1966/",
+   "https://aac-publications.s3.amazonaws.com/documents/aaj/1991/PDF/AAJ_1991_33_65_249c.pdf"
   ]
  },
  {
@@ -3038,18 +3049,21 @@
   "range": "Garhwal Himalaya (Gangotri group)",
   "area": "Uttarkashi",
   "fa": 1933,
-  "fa_by": "Colin Kirkus & Charles Warren (UK)",
+  "fa_by": "Colin Kirkus & Charles Warren (UK), 18 Jun 1933, as 'Central Satopanth'",
   "status": "climbed",
   "status_note": "",
   "grade": "extreme",
-  "grade_note": "Overhanging 1,300 m west face is a big-wall test piece (normal SE ridge easier)",
+  "grade_note": "1,300 m granite west face is a big-wall test piece; the east/north snow side is the easier line",
   "season": "May–Jun & Sep–Oct",
   "base": "Gangotri → Nandanvan",
   "foreigners": "yes",
   "rank": null,
-  "notable": "",
+  "notable": "Climbed in 1933 as 'Central Satopanth'. West face first climbed by the SW pillar (Allen Fyffe and Bob Barton, 1982).",
   "sources": [
-   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_III"
+   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_III",
+   "https://www.himalayanclub.org/hj/6/10/gangotri-and-leo-pargial-1933",
+   "https://www.himalayanclub.org/hj/47/12/bhagirathi-hi-west-face/",
+   "https://www.himalayanclub.org/hj/40/16/bhagirathi-i-expedition-1983"
   ]
  },
  {
@@ -3411,18 +3425,22 @@
   "range": "Garhwal Himalaya (Bandarpunch range)",
   "area": "Uttarkashi",
   "fa": 1950,
-  "fa_by": "Tenzing Norgay, Sgt Roy Greenwood & Kin Chok Tshering (expedition led by Maj Gen Harold Williams)",
+  "fa_by": "Tenzing Norgay, Sgt Roy Greenwood & Kin Chok Tshering, 20 Jun 1950 (Doon School party organised by J.T.M. Gibson, with Maj Gen Harold Williams)",
   "status": "climbed",
   "status_note": "",
   "grade": "moderate",
-  "grade_note": "Glaciated peak above Yamunotri",
+  "grade_note": "Glaciated; icefalls, crevasses and a fixed-rope ice spur on the SE ridge",
   "season": "May–Jun & Sep–Oct",
-  "base": "Sankri / Hanuman Chatti",
+  "base": "Suki (Gangotri road) / Hanuman Chatti",
   "foreigners": "yes",
   "rank": null,
   "notable": "'Monkey's tail'; the 'Doon School mountain'.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Bandarpunch"
+   "https://en.wikipedia.org/wiki/Bandarpunch",
+   "https://publications.americanalpineclub.org/articles/12195120401/Asia-India-Bandar-Punch",
+   "https://himalayanclub.org/hj/16/13/club-proceedings-17",
+   "https://www.himalayanclub.org/hj/34/13/ascents-of-bandarpunch-6316-m-1975/",
+   "https://www.himalayanclub.org/hj/36/19/bandarpunch-and-hanuman-climbed-1978/"
   ]
  },
  {
@@ -4737,7 +4755,7 @@
   "base": "Sankri",
   "foreigners": "yes",
   "rank": null,
-  "notable": "India's most popular winter summit trek.",
+  "notable": "One of the most popular winter summit treks in India.",
   "sources": [
    "https://en.wikipedia.org/wiki/Kedarkantha"
   ]
@@ -4765,7 +4783,7 @@
   "base": "Chopta",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Summit above Tungnath, the world's highest Shiva temple; panorama of Nanda Devi, Trisul and Chaukhamba.",
+  "notable": "Summit above Tungnath, often described as the world's highest Shiva temple; panorama of Nanda Devi, Trisul and Chaukhamba.",
   "sources": [
    "https://en.wikipedia.org/wiki/Chandrashila"
   ]

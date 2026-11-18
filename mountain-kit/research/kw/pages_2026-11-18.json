@@ -1,0 +1,17 @@
+{"pulled":"2026-11-18","customer":"1172710099","language":"English","source":"Pipeboard get_google_ads_keyword_ideas (banded)",
+"geos":{"ww":"no geo","in":"IN","intl":"US+GB+AU+IL+DE+FR"},
+"keywords":{
+"bandarpunch":{"ww":1300,"in":1300,"intl":90,"peak_month":"May 2026 1,900 ww"},
+"bandarpunch peak":{"ww":210,"in":210,"intl":10},
+"bandarpunch trek":{"ww":90,"in":70,"intl":10},
+"bandarpunch height":{"ww":70,"in":70,"intl":null},
+"bandarpunch expedition":{"ww":30,"in":null,"intl":null},
+"kalanag peak":{"ww":70},"kalanag trek":{"ww":70},
+"bhagirathi peak":{"ww":210,"in":170,"intl":10,"close_variants":["bhagirathi peaks"],"peak_month":"Jun 2026 390 ww"},
+"bhagirathi 3":{"ww":40,"in":10,"intl":10},
+"bhagirathi 2 expedition":{"ww":30,"in":30,"intl":10,"peak_month":"Sep 2026 90"},
+"bhagirathi parbat":{"ww":10},
+"apsarasas kangri":{"ww":170,"in":40,"intl":50,"peak_month":"Aug 2026 260 ww"},
+"teram kangri":{"ww":90,"in":50,"intl":10},
+"siachen peaks":{"ww":null}
+}}

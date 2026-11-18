@@ -441,5 +441,90 @@
    "https://tourism.gov.in/sites/default/files/2021-03/usq%202386%20for%2016032021.pdf"
   ],
   "open_to_foreigners": "unknown"
+ },
+ "Kedarkantha": {
+  "notable": "One of the most popular winter summit treks in India."
+ },
+ "Chandrashila": {
+  "notable": "Summit above Tungnath, often described as the world's highest Shiva temple; panorama of Nanda Devi, Trisul and Chaukhamba."
+ },
+ "Bandarpunch": {
+  "base": "Suki (Gangotri road) / Hanuman Chatti",
+  "first_ascent_by": "Tenzing Norgay, Sgt Roy Greenwood & Kin Chok Tshering, 20 Jun 1950 (Doon School party organised by J.T.M. Gibson, with Maj Gen Harold Williams)",
+  "difficulty_note": "Glaciated; icefalls, crevasses and a fixed-rope ice spur on the SE ridge",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bandarpunch",
+   "https://publications.americanalpineclub.org/articles/12195120401/Asia-India-Bandar-Punch",
+   "https://himalayanclub.org/hj/16/13/club-proceedings-17",
+   "https://www.himalayanclub.org/hj/34/13/ascents-of-bandarpunch-6316-m-1975/",
+   "https://www.himalayanclub.org/hj/36/19/bandarpunch-and-hanuman-climbed-1978/"
+  ]
+ },
+ "Bhagirathi Parbat II": {
+  "first_ascent_year": 1938,
+  "first_ascent_by": "Edi Ellmauthaler & Toni Messner (German–Austrian expedition led by R. Schwarzgruber), 9 Sep 1938",
+  "difficulty_note": "East-face snow/ice route from Nandanvan with ~60° pitches and a rock band; the usual Gangotri expedition peak",
+  "base": "Gangotri → Bhojbasa → Gaumukh → Nandanvan (base camp)",
+  "notable": "First Indian ascent 20 Oct 1966; three of the four summiters died in a fall on the descent.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_II",
+   "https://www.himalayanclub.org/hj/11/11/the-german-expedition-to-the-gangotri-glacier-1938/",
+   "https://www.himalayanclub.org/hj/27/17/chaturangi-expedition-1966/",
+   "https://aac-publications.s3.amazonaws.com/documents/aaj/1991/PDF/AAJ_1991_33_65_249c.pdf"
+  ]
+ },
+ "Bhagirathi Parbat I": {
+  "base": "Gangotri → Gaumukh → Nandanvan (base camp)",
+  "notable": "Highest of the Bhagirathi group. West ridge climbed alpine-style on 21 Aug 1983 by Martin Moran and Charlie Heard; Heard died abseiling the next day.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_I",
+   "https://www.himalayanclub.org/hj/40/16/bhagirathi-i-expedition-1983"
+  ]
+ },
+ "Bhagirathi Parbat III": {
+  "first_ascent_by": "Colin Kirkus & Charles Warren (UK), 18 Jun 1933, as 'Central Satopanth'",
+  "difficulty_note": "1,300 m granite west face is a big-wall test piece; the east/north snow side is the easier line",
+  "notable": "Climbed in 1933 as 'Central Satopanth'. West face first climbed by the SW pillar (Allen Fyffe and Bob Barton, 1982).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bhagirathi_Parbat_III",
+   "https://www.himalayanclub.org/hj/6/10/gangotri-and-leo-pargial-1933",
+   "https://www.himalayanclub.org/hj/47/12/bhagirathi-hi-west-face/",
+   "https://www.himalayanclub.org/hj/40/16/bhagirathi-i-expedition-1983"
+  ]
+ },
+ "Apsarasas Kangri I": {
+  "first_ascent_by": "Yoshio Inagaki, Katsuhisa Yabuta & Takamasa Miyomoto (Osaka University, leader Hideo Misawa), 7 Aug 1976, west ridge via the Bilafond La and Teram Shehr glacier",
+  "best_season": "Jul–Sep",
+  "base": "Teram Shehr glacier, Siachen (army access)",
+  "status_note": "Siachen military zone on the line with China-held territory. Climbed 1976, 1980 and 1988 (the last two by the Indian Army); no later ascent found. The 2019 Siachen tourism opening (Base Camp → Kumar Post) does not cover it.",
+  "notable": "Only the western summit has been climbed. Most sources call it the highest; Jurgalski's data puts the unclimbed eastern summit a few metres higher (7,243 vs 7,241 m).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Apsarasas_Kangri",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
+   "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth",
+   "http://c498469.r69.cf2.rackcdn.com/1977/asia1977_236-284.pdf",
+   "https://www.himalayanclub.org/hj/38/19/the-ascent-of-apsarasas-i-in-the-karakoram/",
+   "https://www.harishkapadia.com/?p=8424",
+   "https://explorersweb.com/five-highest-unclimbed-mountains-apsarasas-kangri-i/"
+  ]
+ },
+ "Apsarasas Kangri II (and III)": {
+  "notable": "Among the highest unclimbed summits in the world. HJ 38 (1982) gives II 7,240 m and III 7,230 m; PeakBook gives III 7,236 m.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Apsarasas_Kangri",
+   "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth",
+   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Ladakh",
+   "https://www.himalayanclub.org/hj/38/19/the-ascent-of-apsarasas-i-in-the-karakoram/"
+  ]
+ },
+ "Teram Kangri I": {
+  "first_ascent_by": "Kazuo Kodaka & Yasunori Kobayashi, 12 Aug 1975 (Shizuoka University, leader Hajime Katayama; approached over the Bilafond La)",
+  "notable": "Highest of the Siachen Muztagh. Second ascent by the Indian Army in 1992.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Teram_Kangri",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
+   "https://publications.americanalpineclub.org/articles/12197654203",
+   "https://www.harishkapadia.com/?p=8424"
+  ]
  }
 }
