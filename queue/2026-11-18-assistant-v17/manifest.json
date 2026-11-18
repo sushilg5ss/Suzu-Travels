@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-18-assistant-v17",
+ "agent": "Suzu Assistant",
+ "summary": "Suzu v1.7: 7 new cab pages + cab lead tag (interactive deploy of 17 Nov release)",
+ "files": [
+  {
+   "target": "suzu-assistant.js",
+   "source": "suzu-assistant.js",
+   "sha256": "f77e6ede50824dd4fc5c6e6cf6f829cb83419a8620316947f3ac587b0b7e16ff",
+   "base_sha256": "ed8382d59a145c0c3c29da511fc32bf34f4d0e823eff542469f2ff61e8e97e99",
+   "backup": "suzu-assistant-previous.js",
+   "url": "https://suzutravels.com/suzu-assistant.js",
+   "bytes": 84287
+  },
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "195b5249f8e48d82b891628437114743669fdd848e37ce6201aff10113f32d1e",
+   "base_sha256": "da7bc91cae87270afb220188a6b1dc269ce95cb4cdd1a90efe04dfb14a8a936d",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1017880
+  }
+ ]
+}
