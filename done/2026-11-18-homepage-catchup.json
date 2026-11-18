@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-18-homepage-catchup",
+ "agent": "Homepage Enhancement",
+ "summary": "13n-17n catch-up: month strip + 41 Explore links + saving line + group total + price-on-request helper (rebuilt on live 5577fe5f, interactive deploy)",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "da7bc91cae87270afb220188a6b1dc269ce95cb4cdd1a90efe04dfb14a8a936d",
+   "base_sha256": "5577fe5f81fcc9e00398aea8bdcb9b9eff3ea96c4fb0f0116c8653375a3491b9",
+   "url": "https://suzutravels.com/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-18T16:24:26Z",
+ "status": "deployed"
+}
