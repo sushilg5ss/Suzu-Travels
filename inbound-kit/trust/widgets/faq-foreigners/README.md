@@ -14,3 +14,14 @@ Links to live pages: first-time guide 15453, e-Visa 14187, private driver 14015,
   (= right after the hand-built FAQ). Build: `python3 build.py` (asserts booking + registration lines, banned words, prices).
 - Lesson: no backslash escapes in CSS sent through the MCP — the open-state icon uses a literal '−'.
 - Remove: `wp_replace_in_page` the whole marked block with ''.
+
+## Product pages (row 34) — live 2026-11-18 on /golden-triangle-tour/ (11412) + /char-dham-yatra-for-nri/ (11413)
+- `python3 build_product.py` → `widget-11412.html` / `widget-11413.html` (imports build.py; hub widget.html stays byte-identical).
+- 7 Qs each; questions the page's own FAQ already answers are dropped (11412: car-or-train, monsoon; 11413: first-trip, car-or-train).
+- Changes vs hub text: FCDO answer complete (J&K except Jammu city air/within; 10 km border except Wagah–Attari; Manipur all but essential;
+  updated 7 Oct 2026, checked 18 Nov 2026 via gov.uk content API), US line adds J&K Level 4 (checked 14 Nov 2026, fact pack
+  manali-vs-kashmir), dated Visitor Visa note (PIB 2335182), OCI/Indian-passport line on 11413, links to live UPI / SIM / insurance /
+  choose-an-agency / solo-female guides, page-specific WhatsApp prefill. e-Visa facts re-checked on tvoa page 18 Nov 2026.
+- Prefix `.szu` (`.szk` is used on these pages by check-us). No JS, no schema, nothing stored.
+- Placement: inserted directly before `<section class="lp-sec" id="more-tours">`. Remove: replace the marked block with ''.
+- Verified live 18 Nov 2026: `?v=` + plain, 1440 + 390, 7 details, toggle works, scrollWidth = viewport, 1 H1, index, 0 console errors.
