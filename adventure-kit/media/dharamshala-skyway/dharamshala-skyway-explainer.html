@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; overflow: hidden; }
+      .bgimg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.18; }
+      .kick { position: absolute; left: 96px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; white-space: nowrap; }
+      .title { position: absolute; left: 96px; top: 118px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 60px; top: 250px; width: 1080px; height: 640px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .card { position: absolute; left: 1190px; width: 640px; height: 150px; border-radius: 20px; background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.18); }
+      .card .h { position: absolute; left: 32px; top: 22px; color: #fff; font-weight: 800; font-size: 44px; white-space: nowrap; }
+      .card .s { position: absolute; left: 32px; top: 88px; color: rgba(255,255,255,0.88); font-weight: 500; font-size: 32px; white-space: nowrap; }
+      .card .sw { position: absolute; right: 30px; top: 30px; width: 18px; height: 90px; border-radius: 9px; }
+      .badge { position: absolute; left: 96px; top: 912px; height: 84px; padding: 0 32px; border-radius: 42px; background: #fff; color: #0b1f33; font-weight: 800; font-size: 36px; line-height: 84px; white-space: nowrap; }
+      .end { position: absolute; left: 1190px; top: 912px; width: 640px; height: 84px; border-radius: 42px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 36px; line-height: 84px; text-align: center; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div class="bgimg clip" data-start="0" data-duration="11" data-track-index="0"><img src="assets/valley.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="k">DHARAMSHALA SKYWAY</div>
+        <div class="title" id="tt">Skyway or the hill road?</div>
+        <svg class="map" viewBox="0 0 1080 640">
+          <path id="ground" d="M40 560 C 200 545, 300 520, 420 470 S 640 330, 760 250 S 940 120, 1020 110 L 1080 120" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="10" stroke-linecap="round" />
+          <path id="road" d="M40 560 C 260 600, 520 590, 560 520 S 420 430, 600 380 S 900 380, 860 290 S 820 190, 980 140" fill="none" stroke="#8fb8de" stroke-width="7" stroke-dasharray="4 18" stroke-linecap="round" />
+          <g id="tw"><line x1="145" y1="433" x2="145" y2="479" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="231" y1="396" x2="231" y2="442" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="316" y1="359" x2="316" y2="405" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="402" y1="322" x2="402" y2="368" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="487" y1="285" x2="487" y2="331" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="573" y1="249" x2="573" y2="295" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="658" y1="212" x2="658" y2="258" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="744" y1="175" x2="744" y2="221" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="829" y1="138" x2="829" y2="184" stroke="rgba(255,255,255,0.55)" stroke-width="5" /><line x1="915" y1="101" x2="915" y2="147" stroke="rgba(255,255,255,0.55)" stroke-width="5" /></g>
+          <path id="rope" d="M60 470 L 1000 64" fill="none" stroke="#d4a24c" stroke-width="9" stroke-linecap="round" />
+          <line x1="60" y1="548" x2="60" y2="470" stroke="#fff" stroke-width="6" /><circle cx="60" cy="548" r="16" fill="#fff" />
+          <line x1="1000" y1="64" x2="1000" y2="104" stroke="#fff" stroke-width="6" /><circle cx="1000" cy="104" r="18" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <text x="40" y="620" font-size="34">Kotwali Bazaar · lower Dharamshala</text>
+          <text x="1060" y="40" font-size="34" text-anchor="end" style="fill:#d4a24c">Temple Road · McLeodganj</text>
+          <g id="cab"><line x1="0" y1="0" x2="0" y2="22" stroke="#fff" stroke-width="5" /><rect x="-26" y="20" width="52" height="40" rx="10" fill="#d4a24c" stroke="#fff" stroke-width="4" /><rect x="-16" y="28" width="32" height="12" rx="3" fill="#0b1f33" /></g>
+        </svg>
+        <div class="card" id="c1" style="top:260px"><div class="h">Skyway <span style="color:#d4a24c" id="m1">~5 min</span></div><div class="s">1.8 km · 18 gondolas on 10 towers</div><div class="sw" style="background:#d4a24c"></div></div>
+        <div class="card" id="c2" style="top:440px"><div class="h">Cab <span style="color:#8fb8de" id="m2">~9 km</span></div><div class="s">winding hill road, our backup slot</div><div class="sw" style="background:#8fb8de"></div></div>
+        <div class="card" id="c3" style="top:620px"><div class="h">Status for your date</div><div class="s">we check weather &amp; notices first</div><div class="sw" style="background:#fff"></div></div>
+        <div class="badge" id="bd">Jul–Sep monsoon: pauses possible</div>
+        <div class="end" id="en">Skyway + cab + hotel: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const dash = (id) => { const p = document.getElementById(id); const L = p.getTotalLength(); return { p, L }; };
+      tl.from(["#k", "#tt"], { opacity: 0, y: 30, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0);
+      const g = dash("ground");
+      g.p.style.strokeDasharray = g.L + " " + g.L;
+      tl.fromTo(g.p, { strokeDashoffset: g.L }, { strokeDashoffset: 0, duration: 1.4, ease: "power1.inOut" }, 0.5);
+      const r = dash("rope");
+      r.p.style.strokeDasharray = r.L + " " + r.L;
+      tl.fromTo(r.p, { strokeDashoffset: r.L }, { strokeDashoffset: 0, duration: 1.6, ease: "power1.inOut" }, 2.0);
+      const cab = document.getElementById("cab");
+      const cs = { k: 0 };
+      const cu = () => { const pt = r.p.getPointAtLength(cs.k * r.L); cab.setAttribute("transform", "translate(" + pt.x.toFixed(1) + "," + pt.y.toFixed(1) + ")"); };
+      tl.fromTo(cs, { k: 0 }, { k: 1, duration: 8.6, ease: "sine.inOut", onUpdate: cu }, 2.0);
+      tl.from("#cab", { opacity: 0, duration: 0.3 }, 2.0);
+      tl.from("#c1", { opacity: 0, x: 40, duration: 0.45, ease: "power2.out" }, 2.4);
+      // walk: dashed path revealed by a mask-like clip using opacity sweep
+      tl.from("#tw line", { opacity: 0, duration: 0.3, stagger: 0.08, ease: "sine.out" }, 2.2);
+      tl.from("#c2", { opacity: 0, x: 40, duration: 0.45, ease: "power2.out" }, 4.4);
+      tl.from("#road", { opacity: 0, duration: 0.8, ease: "sine.inOut" }, 4.2);
+      tl.from("#c3", { opacity: 0, x: 40, duration: 0.45, ease: "power2.out" }, 6.2);
+      tl.from("#bd", { opacity: 0, y: 30, duration: 0.45, ease: "power2.out" }, 7.8);
+      tl.from("#en", { opacity: 0, y: 30, duration: 0.45, ease: "power2.out" }, 9.0);
+      tl.fromTo("#en", { scale: 1 }, { scale: 1.04, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 9.7);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      cu();
+    </script>
+  </body>
+</html>
