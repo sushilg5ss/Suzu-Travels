@@ -35,6 +35,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /new-zealand-tour-packages/ | 22678 | `.hx` country page (16 Nov 2026) — built by the 13:43 run that crashed before pushing its generator; rendered copy `pages/new-zealand-tour-packages.live-2026-11-16.html` (BACKLOG #68) |
 | /philippines-tour-packages/ | 23167 | `.hx` country page (17 Nov 2026) — `pages/gen_philippines.py` (Manila–Bohol–Boracay + Palawan/Cebu options; 8-day itinerary grid = 4 columns; 7-photo gallery like Russia; Wikimedia Commons photos) |
 | /south-korea-tour-packages/ | 23452 | `.hx` country page (18 Nov 2026) — `pages/gen_southkorea.py` (Seoul–Nami–Busan–Gyeongju + Jeju add-on; 8-day itinerary grid = 4 columns; 7-photo gallery like Philippines; Wikimedia Commons photos) |
+| /cambodia-tour-packages/ | 23680 | `.hx` country page (19 Nov 2026) — `pages/gen_cambodia.py` (Siem Reap/Angkor + Phnom Penh, Vietnam/Thailand add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like South Korea; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -93,3 +94,7 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Korean official sites from the sandbox: overseas.mofa.go.kr / ind-chennai.mofa.go.kr do not answer curl (the web-fetch agent read the Chennai consulate guide); visa.go.kr and e-arrivalcard.go.kr answer curl but are JS-heavy (e-arrivalcard text is in Korean: 수수료 없이 = no fee, 도착 3일 전부터 = from 3 days before arrival). k-eta.go.kr redirects to /portal/newapply/index.do — 신청대상 = nationals who can enter without a visa.
 - Hub diff via `>`-token difflib: extend the anchor with BOTH preceding and following tokens until it is unique, then simulate the sequential replaces locally (result must equal the new build) before sending.
 - Grid cards for a new page were inserted before the Philippines card (Vietnam card on the Philippines page).
+
+## Notes (19 Nov 2026)
+- evisa.gov.kh (Cambodia e-Visa) sits behind a Nexusguard JS challenge: curl gets a 302 loop / "Authentication challenge" page; headless Chromium (Playwright, ~9 s wait) reads it fine. Link checks will show it as 302 — not broken for users. Useful pages: /information/visa_type/4 (fees, validity, exemption list), home (open e-Visa checkpoints), /news.
+- Grid cards for a new page were inserted before the Vietnam card (Bali card on the Vietnam page); `.sx` raw card = `<a class="sx-rc" …><img … alt="<photo description>" width="640" height="360" loading="lazy" decoding="async"><span><b>…</b><em>…</em></span></a>`.
