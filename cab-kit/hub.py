@@ -139,6 +139,7 @@ def build():
              ("tempo-traveller-17-seater", "17 seater Tempo Traveller", "For groups of 13–17, from ₹30/km.")]
     lc = "".join(f'<article class="szc-card"><div class="szc-card-b"><span class="szc-tag">Service</span><h3>{t}</h3><p>{d}</p><div class="acts">'
                  + (f'<a class="szc-btn sm em" href="{page_url(s)}">Rates & details</a>' if is_live(s) else "")
+                 + (f'<a class="szc-btn sm line" href="{page_url("manali-taxi-package")}">Packages</a>' if s == "manali-taxi-service" and is_live("manali-taxi-package") else "")   # 19 Nov 2026: package page via a button on the Manali card (hub size budget, no new card)
                  + f'<a class="szc-btn sm wa" href="{wa("Hi Suzu Travels, I need " + t + ". Date: ___ , people: ___ (page: cabs)")}" target="_blank" rel="noopener">WhatsApp</a></div></div></article>' for s, t, d in local)
     lc += (f'<article class="szc-card"><div class="szc-card-b"><span class="szc-tag">Service</span><h3>Dharamshala & Kangra taxis</h3><p>McLeodganj, Bir, Palampur and Gaggal airport transfers.</p>'
            f'<div class="acts">' + (f'<a class="szc-btn sm em" href="{page_url("dharamshala-taxi-service")}">Rates & details</a>' if is_live("dharamshala-taxi-service") else "") + f'<a class="szc-btn sm wa" href="{wa("Hi Suzu Travels, I need a taxi in Dharamshala. Date: ___ (page: cabs)")}" target="_blank" rel="noopener">WhatsApp</a></div></div></article>'
