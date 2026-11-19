@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bgimg { position: absolute; inset: 0; overflow: hidden; }
+      .bgimg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.18; }
+      .kick { position: absolute; left: 96px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.16em; white-space: nowrap; }
+      .title { position: absolute; left: 96px; top: 118px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 60px; top: 250px; width: 1080px; height: 640px; overflow: visible; }
+      svg.map text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .card { position: absolute; left: 1190px; width: 640px; height: 150px; border-radius: 20px; background: rgba(255,255,255,0.07); border: 2px solid rgba(255,255,255,0.18); }
+      .card .h { position: absolute; left: 32px; top: 22px; color: #fff; font-weight: 800; font-size: 44px; white-space: nowrap; }
+      .card .s { position: absolute; left: 32px; top: 88px; color: rgba(255,255,255,0.88); font-weight: 500; font-size: 32px; white-space: nowrap; }
+      .card .sw { position: absolute; right: 30px; top: 30px; width: 18px; height: 90px; border-radius: 9px; }
+      .badge { position: absolute; left: 96px; top: 912px; height: 84px; padding: 0 32px; border-radius: 42px; background: #fff; color: #0b1f33; font-weight: 800; font-size: 36px; line-height: 84px; white-space: nowrap; }
+      .end { position: absolute; left: 1190px; top: 912px; width: 640px; height: 84px; border-radius: 42px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 36px; line-height: 84px; text-align: center; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11" data-width="1920" data-height="1080">
+      <div class="bgimg clip" data-start="0" data-duration="11" data-track-index="0"><img src="assets/peaks.jpg" alt="" /></div>
+      <div id="ov" class="clip" data-start="0" data-duration="11" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="k">SOLANG ROPEWAY · MANALI</div>
+        <div class="title" id="tt">How high does it take you?</div>
+        <svg class="map" viewBox="0 0 1080 640">
+          <g id="grid" style="opacity:0.9">
+            <line x1="40" y1="560" x2="1060" y2="560" stroke="rgba(255,255,255,0.14)" stroke-width="2" />
+            <line x1="40" y1="368" x2="1060" y2="368" stroke="rgba(255,255,255,0.14)" stroke-width="2" stroke-dasharray="8 10" />
+            <line x1="40" y1="175" x2="1060" y2="175" stroke="rgba(255,255,255,0.14)" stroke-width="2" stroke-dasharray="8 10" />
+          </g>
+          <path id="ground" d="M40 600 L40 548 C 200 540, 420 470, 640 392 C 760 340, 900 190, 1000 118 L 1060 128 L 1060 600 Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="4" />
+          <path id="road" d="M40 541 C 220 530, 420 440, 640 368" fill="none" stroke="#8fb8de" stroke-width="8" stroke-dasharray="4 18" stroke-linecap="round" />
+          <path id="rope" d="M640 368 L 1000 98" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <circle cx="40" cy="541" r="14" fill="#fff" />
+          <circle cx="640" cy="368" r="16" fill="#fff" />
+          <circle cx="1000" cy="98" r="18" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <text id="l1" x="40" y="468" font-size="34">Manali ~2,050 m</text>
+          <text id="l2" x="610" y="330" font-size="34" text-anchor="end">Solang floor ~2,500 m</text>
+          <text id="l3" x="1000" y="44" font-size="38" text-anchor="end" style="fill:#d4a24c">Fatru ~3,200 m</text>
+          <text id="r1" x="80" y="596" font-size="30" style="fill:#8fb8de">13–14 km by cab · 30–45 min</text>
+          <text id="r2" x="760" y="200" font-size="30" text-anchor="end" style="fill:#d4a24c">1.3 km cable</text>
+          <g id="cab"><line x1="0" y1="0" x2="0" y2="22" stroke="#fff" stroke-width="5" /><rect x="-26" y="20" width="52" height="40" rx="10" fill="#d4a24c" stroke="#fff" stroke-width="4" /><rect x="-16" y="28" width="32" height="12" rx="3" fill="#0b1f33" /></g>
+        </svg>
+        <div class="card" id="c1" style="top:260px"><div class="h">Ride <span style="color:#d4a24c">~5–10 min</span></div><div class="s">each way · about 8 per cabin</div><svg class="sw" viewBox="0 0 90 90" style="width:90px;height:90px;top:30px;right:30px"><circle cx="45" cy="45" r="38" fill="none" stroke="#d4a24c" stroke-width="7" /><line id="hand" x1="45" y1="45" x2="45" y2="16" stroke="#fff" stroke-width="7" stroke-linecap="round" style="transform-origin:45px 45px" /></svg></div>
+        <div class="card" id="c2" style="top:440px"><div class="h"><span style="color:#d4a24c">+700 m</span> up top</div><div class="s">colder: layers, gloves, sunglasses</div><div class="sw" style="background:#d4a24c"></div></div>
+        <div class="card" id="c3" style="top:620px"><div class="h">Stops in wind &amp; snow</div><div class="s">so we plan it first in the day</div><div class="sw" style="background:#fff"></div></div>
+        <div class="badge" id="bd">Runs year-round · best Oct–Nov · busiest May–Jun</div>
+        <div class="end" id="en">Ropeway + cab + hotel: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const dash = (id) => { const p = document.getElementById(id); const L = p.getTotalLength(); return { p, L }; };
+      tl.from(["#k", "#tt"], { opacity: 0, y: 30, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0);
+      tl.from("#grid", { opacity: 0, duration: 0.6, ease: "sine.out" }, 0.3);
+      tl.from("#ground", { opacity: 0, duration: 0.8, ease: "sine.out" }, 0.4);
+      tl.from("#l1", { opacity: 0, y: 16, duration: 0.4, ease: "power2.out" }, 0.8);
+      tl.from("#road", { opacity: 0, duration: 0.9, ease: "sine.inOut" }, 1.0);
+      tl.from(["#r1", "#l2"], { opacity: 0, y: 16, duration: 0.4, stagger: 0.2, ease: "power2.out" }, 1.4);
+      const r = dash("rope");
+      r.p.style.strokeDasharray = r.L + " " + r.L;
+      tl.fromTo(r.p, { strokeDashoffset: r.L }, { strokeDashoffset: 0, duration: 1.2, ease: "power1.inOut" }, 2.3);
+      tl.from(["#r2", "#l3"], { opacity: 0, y: 16, duration: 0.4, stagger: 0.2, ease: "power2.out" }, 2.9);
+      const cab = document.getElementById("cab");
+      const cs = { k: 0 };
+      const cu = () => { const pt = r.p.getPointAtLength(cs.k * r.L); cab.setAttribute("transform", "translate(" + pt.x.toFixed(1) + "," + pt.y.toFixed(1) + ")"); };
+      tl.fromTo(cs, { k: 0 }, { k: 1, duration: 7.4, ease: "sine.inOut", onUpdate: cu }, 2.6);
+      tl.from("#cab", { opacity: 0, duration: 0.3 }, 2.6);
+      tl.from("#c1", { opacity: 0, x: 40, duration: 0.45, ease: "power2.out" }, 3.4);
+      tl.fromTo("#hand", { rotation: 0 }, { rotation: 360, duration: 6.6, ease: "none" }, 3.4);
+      tl.from("#c2", { opacity: 0, x: 40, duration: 0.45, ease: "power2.out" }, 5.0);
+      tl.from("#c3", { opacity: 0, x: 40, duration: 0.45, ease: "power2.out" }, 6.5);
+      tl.from("#bd", { opacity: 0, y: 30, duration: 0.45, ease: "power2.out" }, 7.8);
+      tl.from("#en", { opacity: 0, y: 30, duration: 0.45, ease: "power2.out" }, 9.0);
+      tl.fromTo("#en", { scale: 1 }, { scale: 1.04, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 9.7);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+      cu();
+    </script>
+  </body>
+</html>
