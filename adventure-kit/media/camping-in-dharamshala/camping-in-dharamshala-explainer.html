@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .bg { position: absolute; inset: 0; background: url("assets/bg.jpg") center/cover; opacity: 0.12; }
+      .kick { position: absolute; left: 110px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 116px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; }
+      svg.ch { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      .lab { position: absolute; color: #fff; font-weight: 800; font-size: 34px; white-space: nowrap; }
+      .sub { display: block; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); margin-top: 4px; }
+      .ctr { position: absolute; top: 60px; width: 280px; height: 130px; border: 3px solid rgba(212,162,76,0.7); border-radius: 22px; }
+      .cv { position: absolute; left: 0; top: 14px; width: 274px; text-align: center; color: #fff; font-weight: 800; font-size: 60px; white-space: nowrap; }
+      .cl { position: absolute; left: 0; top: 86px; width: 274px; text-align: center; color: #d4a24c; font-weight: 800; font-size: 22px; letter-spacing: 0.16em; }
+      .wl { position: absolute; left: 140px; top: 340px; color: rgba(255,255,255,0.9); font-weight: 800; font-size: 26px; white-space: nowrap; }
+      .chipX { position: absolute; left: 560px; top: 900px; width: 800px; height: 92px; line-height: 92px; text-align: center; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 44px; border-radius: 46px; white-space: nowrap; }
+      .note { position: absolute; left: 110px; bottom: 30px; color: rgba(255,255,255,0.72); font-weight: 500; font-size: 22px; }
+          .mo { position: absolute; top: 880px; width: 136px; height: 64px; line-height: 64px; text-align: center; font-weight: 800; font-size: 28px; border-radius: 12px; }
+      .leg { position: absolute; top: 960px; font-weight: 800; font-size: 26px; white-space: nowrap; }
+      .badge { display: inline-block; margin-left: 10px; padding: 2px 12px; border-radius: 14px; background: #d4a24c; color: #0b1f33; font-size: 22px; vertical-align: middle; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="bg"></div>
+        <div class="kick" id="kick">CAMPING · DHARAMSHALA &amp; McLEODGANJ</div>
+        <div class="title" id="title">Where you can camp</div>
+        <svg class="ch" viewBox="0 0 1920 1080">
+          <path id="base" d="M 140 800 L 1800 800" stroke="rgba(255,255,255,0.25)" stroke-width="3" />
+          <path id="ext" d="M 1020 560 C 1100 470, 1150 380, 1230 300" fill="none" stroke="#8a97a5" stroke-width="7" stroke-dasharray="12 12" stroke-linecap="round" />
+          <path id="trail" d="M 170 760 C 260 750, 300 735, 380 725 C 470 712, 520 705, 600 690 C 700 670, 820 640, 880 620 C 940 600, 990 580, 1020 560" fill="none" stroke="#d4a24c" stroke-width="10" stroke-linecap="round" />
+          <path id="kar" d="M 1450 790 C 1520 760, 1560 700, 1600 670 C 1660 625, 1720 580, 1760 545" fill="none" stroke="#f1d39b" stroke-width="8" stroke-dasharray="2 14" stroke-linecap="round" />
+          <circle id="dot" cx="170" cy="760" r="16" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+          <g id="m0"><circle cx="170" cy="760" r="11" fill="#fff" /></g>
+          <g id="m1"><circle cx="380" cy="725" r="14" fill="#fff" /><path d="M 371 731 L 380 715 L 389 731 Z" fill="#0b1f33" /></g>
+          <g id="m2"><circle cx="600" cy="690" r="14" fill="#fff" /><rect x="586" y="683" width="28" height="18" rx="3" fill="#0b1f33" /><line x1="592" y1="689" x2="608" y2="689" stroke="#fff" stroke-width="3" /><line x1="592" y1="695" x2="602" y2="695" stroke="#fff" stroke-width="3" /></g>
+          <g id="m3"><circle cx="1020" cy="560" r="20" fill="#d4a24c" stroke="#fff" stroke-width="5" /><path d="M 1010 568 L 1020 550 L 1030 568 Z" fill="#0b1f33" /></g>
+          <g id="m4"><circle cx="1230" cy="300" r="12" fill="#8a97a5" /></g>
+          <g id="m5"><circle cx="1450" cy="790" r="11" fill="#fff" /></g>
+          <g id="m6"><circle cx="1600" cy="670" r="14" fill="#fff" /><path d="M 1591 676 L 1600 660 L 1609 676 Z" fill="#0b1f33" /></g>
+          <g id="m7"><circle cx="1760" cy="545" r="18" fill="#f1d39b" stroke="#fff" stroke-width="5" /></g>
+        </svg>
+        <div class="lab" id="l0" style="left:110px; top:775px;">McLeodganj<span class="sub">about 1,750–2,000 m</span></div>
+        <div class="lab" id="l1" style="left:240px; top:555px;">Dharamkot · Naddi<span class="sub">drive-in forest camps</span><span class="sub">2–4 km above McLeodganj</span></div>
+        <div class="lab" id="l2" style="left:520px; top:715px;">Gallu Devi check post<span class="sub">register with ID</span></div>
+        <div class="lab" id="l3" style="left:610px; top:385px; color:#d4a24c; font-size:44px;">Triund ridge<span class="sub">about 2,850 m · ~9 km, 4–5 h</span><span class="sub">regulated tents, capped</span></div>
+        <div class="lab" id="l4" style="left:1260px; top:270px; color:#c3ccd5;">Indrahar Pass 4,342 m<span class="sub">guided, summer only</span></div>
+        <div class="lab" id="l5" style="left:1300px; top:810px; font-size:28px;">Kareri village · ~25 km by road</div>
+        <div class="lab" id="l6" style="left:1635px; top:680px; font-size:30px;">River camp</div>
+        <div class="lab" id="l7" style="left:1560px; top:440px; color:#f1d39b;">Kareri Lake<span class="sub">2,934 m</span></div>
+        <div class="mo" id="mo0" style="left:110px;background:#c3ccd5;color:#0b1f33">J</div><div class="mo" id="mo1" style="left:252px;background:#c3ccd5;color:#0b1f33">F</div><div class="mo" id="mo2" style="left:394px;background:#d4a24c;color:#0b1f33">M</div><div class="mo" id="mo3" style="left:536px;background:#d4a24c;color:#0b1f33">A</div><div class="mo" id="mo4" style="left:678px;background:#d4a24c;color:#0b1f33">M</div><div class="mo" id="mo5" style="left:820px;background:#d4a24c;color:#0b1f33">J</div><div class="mo" id="mo6" style="left:962px;background:#2c5680;color:#fff">J</div><div class="mo" id="mo7" style="left:1104px;background:#2c5680;color:#fff">A</div><div class="mo" id="mo8" style="left:1246px;background:#d4a24c;color:#0b1f33">S</div><div class="mo" id="mo9" style="left:1388px;background:#d4a24c;color:#0b1f33">O</div><div class="mo" id="mo10" style="left:1530px;background:#d4a24c;color:#0b1f33">N</div><div class="mo" id="mo11" style="left:1672px;background:#c3ccd5;color:#0b1f33">D</div>
+        <div class="leg" id="lg1" style="left:110px; color:#d4a24c;">■ Best: Mar–Jun · Sep–Nov</div>
+        <div class="leg" id="lg2" style="left:640px; color:#7fa8cf;">■ Jul–Aug: monsoon, slippery</div>
+        <div class="leg" id="lg3" style="left:1150px; color:#c3ccd5;">■ Dec–Feb: snow up high · order-dependent</div>
+        <div class="note" id="note">Heights and distances are approximate · schematic, not to scale · Kangra district orders decide trek camps · Price: Get Quote</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kick", "#title"], { opacity: 0, y: 30, duration: 0.6, stagger: 0.15, ease: "power2.out" }, 0.1);
+      tl.from(["#m0", "#l0"], { opacity: 0, duration: 0.4 }, 0.5);
+      const trail = document.getElementById("trail");
+      const dot = document.getElementById("dot");
+      const L = trail.getTotalLength();
+      trail.style.strokeDasharray = L + " " + L;
+      const st = { p: 0 };
+      function place() {
+        const d = L * st.p;
+        trail.style.strokeDashoffset = (L - d).toFixed(2);
+        const pt = trail.getPointAtLength(Math.max(0.01, d));
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+      }
+      place();
+      tl.to(st, { p: 1, duration: 4.2, ease: "sine.inOut", onUpdate: place }, 0.8);
+      const pops = [["#m1", "#l1", 1.5], ["#m2", "#l2", 2.5], ["#m3", "#l3", 4.6]];
+      pops.forEach(([m, l, t]) => {
+        tl.from(m, { opacity: 0, scale: 0.3, transformOrigin: "50% 50%", duration: 0.4, ease: "back.out(2)" }, t);
+        tl.from(l, { opacity: 0, y: 16, duration: 0.4, ease: "power2.out" }, t + 0.1);
+      });
+      tl.fromTo("#ext", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 5.3);
+      tl.from(["#m4", "#l4"], { opacity: 0, duration: 0.4 }, 5.6);
+      tl.fromTo("#kar", { opacity: 0 }, { opacity: 1, duration: 0.8 }, 6.2);
+      tl.from(["#m5", "#l5"], { opacity: 0, duration: 0.4 }, 6.2);
+      tl.from(["#m6", "#l6"], { opacity: 0, duration: 0.4 }, 6.7);
+      tl.from(["#m7", "#l7"], { opacity: 0, scale: 0.6, duration: 0.5, ease: "back.out(2)" }, 7.2);
+      tl.from(".mo", { opacity: 0, y: 20, duration: 0.3, stagger: 0.07, ease: "power2.out" }, 8.0);
+      tl.from(["#lg1", "#lg2", "#lg3"], { opacity: 0, duration: 0.4, stagger: 0.2 }, 9.0);
+      tl.from("#note", { opacity: 0, duration: 0.5 }, 9.8);
+      tl.to({}, { duration: 0.1 }, 11.9);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
