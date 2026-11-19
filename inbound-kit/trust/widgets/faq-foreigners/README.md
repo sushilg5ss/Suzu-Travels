@@ -25,3 +25,12 @@ Links to live pages: first-time guide 15453, e-Visa 14187, private driver 14015,
 - Prefix `.szu` (`.szk` is used on these pages by check-us). No JS, no schema, nothing stored.
 - Placement: inserted directly before `<section class="lp-sec" id="more-tours">`. Remove: replace the marked block with ''.
 - Verified live 18 Nov 2026: `?v=` + plain, 1440 + 390, 7 details, toggle works, scrollWidth = viewport, 1 H1, index, 0 console errors.
+
+## Hub refresh (row 35) — live 2026-11-19 on /india-tours/ (11411)
+- `python3 build_hub.py` → `widget-11411.html` (= current live hub block) + `ops-11411.json` (8 literal replace ops from the old `widget.html`;
+  the script asserts the ops reproduce widget-11411.html exactly). `widget.html` stays = the 23 Oct original (the ops' 'find' base).
+- Changes: visa checked 18 Nov + dated Visitor Visa note; e-Arrival re-checked 18 Nov; FCDO line complete (Jammu city air/within, 10 km border
+  except Wagah–Attari, Manipur all but essential — gov.uk content API, updated 7 Oct 2026, text re-checked 19 Nov 2026); links to solo-female
+  safety, choose-an-agency, UPI, SIM, insurance guides; sources line updated. US line unchanged (checked 23 Oct 2026; curl 403).
+- Verified 19 Nov 2026: hub content +988 bytes (= file delta), `?v=` + plain curl 200 with new text, 1 H1, index; Playwright 1440 + 390 + iPhone 13:
+  9 details, toggles open, 0 overflowing elements, scrollWidth = viewport, 0 console errors. All 5 new links 200.
