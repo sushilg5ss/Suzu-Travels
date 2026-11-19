@@ -39,5 +39,6 @@
  "panch-kedar": {"id": 22584, "path": "/pilgrimage-tours/panch-kedar/", "kind": "circuit", "label": "Panch Kedar", "blurb": "Five Shiva shrines of the Garhwal Himalaya", "added": "2026-11-15"},
  "ayodhya-ram-mandir": {"id": 22978, "path": "/pilgrimage-tours/ayodhya-ram-mandir/", "kind": "temple", "label": "Ram Mandir, Ayodhya", "blurb": "Ram Lalla's temple at Ram Janmabhoomi, on the Saryu", "added": "2026-11-16"},
  "adi-kailash-yatra": {"id": 23264, "path": "/pilgrimage-tours/adi-kailash-yatra/", "kind": "yatra", "label": "Adi Kailash & Om Parvat", "blurb": "Shiva's 'first Kailash' in the Kumaon Himalaya", "added": "2026-11-17"},
- "prem-mandir": {"id": 23571, "path": "/pilgrimage-tours/prem-mandir/", "kind": "temple", "label": "Prem Mandir, Vrindavan", "blurb": "Radha Krishna and Sita Ram in white marble, lit up after dark", "added": "2026-11-18"}
+ "prem-mandir": {"id": 23571, "path": "/pilgrimage-tours/prem-mandir/", "kind": "temple", "label": "Prem Mandir, Vrindavan", "blurb": "Radha Krishna and Sita Ram in white marble, lit up after dark", "added": "2026-11-18"},
+ "shirdi-sai-baba": {"id": 23773, "path": "/pilgrimage-tours/shirdi-sai-baba/", "kind": "temple", "label": "Shirdi Sai Baba, Maharashtra", "blurb": "Sai Baba's Samadhi Mandir, Dwarkamai and the dhuni that still burns", "added": "2026-11-19"}
 }
