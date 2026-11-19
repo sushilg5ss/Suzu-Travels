@@ -485,5 +485,18 @@
   "added": "2026-11-18",
   "peak_id": "chaukhamba-i",
   "commercial": false
+ },
+ "nun-kun": {
+  "id": 23737,
+  "path": "/mountains-of-india/nun-kun/",
+  "kind": "peak",
+  "label": "Nun Kun",
+  "blurb": "7,135 m · the twin giants above Kargil's Suru valley",
+  "added": "2026-11-19",
+  "peak_id": "nun",
+  "peak_ids": [
+   "kun"
+  ],
+  "commercial": false
  }
 }

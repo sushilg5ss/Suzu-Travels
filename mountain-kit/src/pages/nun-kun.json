@@ -1,0 +1,309 @@
+{
+ "kind": "peak",
+ "path": "/mountains-of-india/nun-kun/",
+ "peak_id": "nun",
+ "title": "Nun Kun (7,135 m): The Twin Giants of the Suru Valley",
+ "seo_title": "Nun Kun Peak (7,135 m): Height, Route & Climbing History",
+ "seo_desc": "Nun Kun above the Suru valley: heights of Nun, Kun and Pinnacle Peak, the west-ridge route camp by camp, IMF permits and the 1953 first ascent.",
+ "focus": "nun kun",
+ "commercial": false,
+ "label": "Nun Kun",
+ "blurb": "7,135 m · the twin giants above Kargil's Suru valley",
+ "verified": "19 Nov 2026",
+ "kicker": "Jammu & Kashmir – Ladakh boundary · Suru valley · 7,135 m",
+ "tag": "Two snow giants on the edge of Ladakh.",
+ "sub": "Nun Kun is the great massif above the Suru valley near Kargil. Nun, at 7,135 m, is the highest point of Jammu & Kashmir, and Kun, at 7,077 m, stands just across the boundary in Ladakh. Here are all four tops with their heights, the west-ridge route camp by camp, how hard the climb is, the months, the permits and the story from the 1913 first ascent of Kun to the helicopter rescues of 2022 and 2023.",
+ "chips": [
+  [
+   "7,135 m",
+   "Nun (23,409 ft)"
+  ],
+  [
+   "7,077 m",
+   "Kun (23,219 ft)"
+  ],
+  [
+   "28 Aug 1953",
+   "first ascent of Nun"
+  ],
+  [
+   "Jun–Sep",
+   "climbing season"
+  ],
+  [
+   "US$1,000",
+   "IMF base fee, team of two"
+  ]
+ ],
+ "hero_alt": "Brown scree slopes, a tent on snow at night, a wide aerial snowfield and a corniced snow ridge (generic stock footage, not Nun Kun itself) with an altitude read-out rising from base camp at 4,600 m past Camps 1, 2 and 3 to the 7,135 m summit of Nun",
+ "profile_alt": "Animated altitude profile of the west ridge of Nun: base camp about 4,600 m in the upper Sentik valley, Camp 1 at 5,490 m, Camp 2 at 5,850 m, Camp 3 at 6,400 m and the 7,135 m summit, following the 1953 first-ascent camps",
+ "q": "How high is Nun Kun, and where is it?",
+ "answer": "<b>Nun Kun</b> is a massif of the Great Himalaya on the Jammu & Kashmir–Ladakh boundary, above the Suru valley in Kargil district, about 250 km east of Srinagar. Its highest top, <b>Nun</b>, is 7,135 m (23,409 ft); <b>Kun</b> is 7,077 m (23,219 ft). Nun was first climbed on 28 August 1953 by the west ridge. See all <a href=\"/mountains-of-india/7000m-peaks/\">7,000 m peaks in India</a>.",
+ "facts": [
+  [
+   "Height",
+   "Nun 7,135 m / 23,409 ft · Kun 7,077 m / 23,219 ft"
+  ],
+  [
+   "Other tops",
+   "Pinnacle Peak 6,930 m · White Needle about 6,600 m"
+  ],
+  [
+   "Location",
+   "Great Himalaya, on the Jammu & Kashmir–Ladakh boundary, above the Suru valley (Kargil district)"
+  ],
+  [
+   "Rank",
+   "Nun is the 24th-highest peak in India in our dataset and the highest point of Jammu & Kashmir"
+  ],
+  [
+   "Prominence",
+   "Nun 2,404 m"
+  ],
+  [
+   "Road-head",
+   "Tangol, about 2 hours from Kargil via Sankoo and Panikhar"
+  ],
+  [
+   "First ascents",
+   "Kun 1913 (Mario Piacenza) · Nun 28 Aug 1953 (Pierre Vittoz and Claude Kogan)"
+  ],
+  [
+   "Best months",
+   "June to September"
+  ],
+  [
+   "Status 2026",
+   "Open to IMF-permitted expeditions; no closure found"
+  ]
+ ],
+ "intro": [
+  "<b>Status, checked November 2026: open.</b> Nun and Kun are climbed by expeditions with Indian Mountaineering Foundation (IMF) permission, and we found no closure order. Nun is a regular expedition objective in 2026. Suzu does not sell this climb; see the Himachal alternatives in the <a href=\"#difficulty\">difficulty section</a>.",
+  "<b>One massif, two territories.</b> Nun Kun straddles the boundary between the union territories of Jammu & Kashmir and Ladakh. The Suru valley lies to the north and the Pensi La (4,400 m), the pass into Zanskar, to the east. <b>Nun</b>, the higher top, is counted as the highest point of Jammu & Kashmir; <b>Kun</b> lies in Ladakh. Our <a href=\"/mountains-of-india/jammu-kashmir/\">highest peaks in Jammu & Kashmir</a> and <a href=\"/mountains-of-india/ladakh/\">peaks of Ladakh</a> pages show both in context.",
+  "<b>Four tops.</b> Besides Nun and Kun, the massif carries Pinnacle Peak (6,930 m) and White Needle (about 6,600 m); the heights are in the <a href=\"#four-tops\">four tops table</a> below. Kun's height varies by source, from 7,035 m to 7,086 m; we use 7,077 m. For the wider picture, read our <a href=\"/mountains-of-india/\">Indian Himalaya guide</a> and the full <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>."
+ ],
+ "route_h2": "The west ridge of Nun, camp by camp",
+ "route_text": [
+  "<b>From Kargil up the Suru valley.</b> The road runs from Kargil through Sankoo and Panikhar to Tangol, about two hours' drive. From there teams walk to base camp at about 4,600 m in the upper Sentik valley.",
+  "The normal route is the <b>west ridge</b>, the line of the 1953 first ascent: glacier, snow and ice, with the snow wall of the west face leading up to the ridge. The 1953 team put base camp a little higher, at about 4,730 m (15,500 ft), and three camps above it, at 18,000, 19,200 and 21,000 ft. The table converts those heights to metres; camp heights change from year to year.",
+  "The 1953 expedition reached base camp on 30 July and the summit on 28 August, so about four weeks from base camp is a fair estimate. No official itinerary exists."
+ ],
+ "route": [
+  {
+   "name": "Base camp",
+   "m": 4600,
+   "note": "Upper Sentik valley (about 4,730 m in 1953)"
+  },
+  {
+   "name": "Camp 1",
+   "m": 5490,
+   "note": "18,000 ft in 1953"
+  },
+  {
+   "name": "Camp 2",
+   "m": 5850,
+   "note": "19,200 ft in 1953"
+  },
+  {
+   "name": "Camp 3",
+   "m": 6400,
+   "note": "21,000 ft in 1953"
+  },
+  {
+   "name": "Nun summit",
+   "m": 7135,
+   "note": "By the west ridge; reached at 2:50 p.m. on 28 Aug 1953"
+  }
+ ],
+ "itinerary_h2": "How a Nun expedition unfolds",
+ "itinerary": [
+  [
+   "Stage 1",
+   "Kargil and the Suru valley",
+   "The drive from Kargil through Sankoo and Panikhar to the road-head at Tangol, with time to acclimatise."
+  ],
+  [
+   "Stage 2",
+   "Walk to base camp",
+   "Up to base camp at about 4,600 m in the upper Sentik valley."
+  ],
+  [
+   "Stage 3",
+   "Stock the camps",
+   "Load carries up the snow wall of the west face to camps near 5,500, 5,850 and 6,400 m, sleeping high and coming back down."
+  ],
+  [
+   "Stage 4",
+   "Summit push",
+   "From the top camp along the west ridge to the 7,135 m summit, then down the same line."
+  ],
+  [
+   "Stage 5",
+   "Weather days and the walk out",
+   "Spare days for snow and wind, then clearing the camps and the walk back to Tangol."
+  ]
+ ],
+ "difficulty_h2": "How hard is it to climb Nun?",
+ "difficulty": [
+  "Our dataset grades Nun <b>technical</b>: a glacier, snow and ice route with serious avalanche terrain. On 23 August 1953, five days before the summit, an avalanche carried one rope of the first-ascent team about 300 m. Rescues still happen: the Indian Air Force flew out an Italian climber with acute mountain sickness on 20 August 2022, and an injured climber from the Nun base camp area in August 2023.",
+  "Arrive with at least one earlier summit above 6,000 m and solid glacier and fixed-rope skills. In Himachal, good steps towards a peak like this are <a href=\"/mountains-of-india/menthosa/\">Menthosa</a> (6,443 m), <a href=\"/mountains-of-india/mulkila/\">Mulkila</a> (6,517 m) and <a href=\"/mountains-of-india/reo-purgyil/\">Reo Purgyil</a> (6,816 m). Read our <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a> before you go high."
+ ],
+ "skills": [
+  [
+   "Experience",
+   "At least one summit above 6,000 m and days on crevassed glaciers."
+  ],
+  [
+   "Technique",
+   "Crampons and ice axe on steep snow and ice, fixed ropes, jumaring, abseiling and crevasse rescue."
+  ],
+  [
+   "Fitness",
+   "Repeated load carries between camps and a long summit day above 7,000 m."
+  ],
+  [
+   "Judgement",
+   "Reading avalanche slopes and fresh snow, and the discipline to turn back."
+  ],
+  [
+   "Training",
+   "A Basic and an Advanced Mountaineering Course; Indian teams also follow IMF rules on team qualifications."
+  ]
+ ],
+ "months": {
+  "Jan": "no",
+  "Feb": "no",
+  "Mar": "no",
+  "Apr": "no",
+  "May": "no",
+  "Jun": "good",
+  "Jul": "good",
+  "Aug": "good",
+  "Sep": "good",
+  "Oct": "no",
+  "Nov": "no",
+  "Dec": "no"
+ },
+ "season_h2": "Best time to climb Nun Kun",
+ "season_text": [
+  "<b>June to September.</b> Nun Kun stands on the Ladakh side of the Great Himalaya, and climbs happen in the summer months. The 1953 first ascent fits that window: base camp on 30 July and the summit on 28 August.",
+  "Our <a href=\"/mountains-of-india/best-time-for-mountaineering-in-india/\">best time for mountaineering in India</a> guide compares the seasons region by region."
+ ],
+ "permits_h2": "Permits for Nun Kun",
+ "permits": [
+  "<b>IMF permission.</b> Nun (7,135 m) and Kun (7,077 m) are both above 7,000 m. For foreign teams the IMF base fee in that band is <b>US$1,000 for a team of two</b>, plus US$500 for liaison-officer equipment, and per-member charges apply (IMF peak-fee page, as of 1 Oct 2026). More in our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit and peak fees guide</a> and <a href=\"/mountains-of-india/mountaineering-in-india/\">mountaineering in India for foreign climbers</a>.",
+  "<b>Area permits.</b> The Suru valley is not on Ladakh's list of protected areas, which covers Nubra, Pangong, Tso Moriri and Hanle–Chushul, and Indian citizens have needed no inner line permit in Ladakh since August 2021. No protected-area permit is listed for the Suru valley: confirm with the Kargil district administration before you travel."
+ ],
+ "gear_h2": "What to pack",
+ "gear": [
+  "Insulated mountaineering boots rated for 7,000 m, with crampons",
+  "A mountaineering ice axe, a jumar (ascender) and a descender",
+  "Climbing harness, helmet, carabiners and slings",
+  "Down suit or heavy down jacket, and a sleeping bag for −25 °C or colder",
+  "Windproof and waterproof shell jacket and trousers",
+  "Summit mitts plus liner gloves",
+  "Glacier sunglasses (UV400), goggles and sunscreen",
+  "Headlamp with spare batteries for the pre-dawn start",
+  "Trekking poles for the walk to base camp",
+  "Two insulated water bottles and a personal first-aid kit"
+ ],
+ "history_h2": "Climbing history of Nun Kun",
+ "history": [
+  "<b>1906:</b> Fanny Bullock Workman, with the guide Cyprien Savoye, <b>claimed</b> an ascent of Pinnacle Peak (6,930 m). Workman's claims were disputed.",
+  "<b>1913:</b> the Italian Mario Piacenza, with Lorenzo Borelli, made the <b>first ascent of Kun</b> by the north-east ridge.",
+  "<b>28 August 1953:</b> Pierre Vittoz and Claude Kogan, of a French-Swiss-Indian expedition led by Bernard Pierre, made the <b>first ascent of Nun</b> by the west ridge, reaching the top at 2:50 p.m. It gave Claude Kogan the record for the highest summit reached by a woman at that time.",
+  "<b>27–28 October 1976:</b> a Czech team led by F. Čejka climbed the north-west face of Nun. <b>1981:</b> the first British ascent, by the east ridge, with Steve Berry.",
+  "<b>July 2021:</b> an Indian Army team from 26 Punjab, with NIMAS, climbed <b>Kun</b> for Kargil Vijay Diwas.",
+  "<b>20 August 2022</b> and <b>August 2023:</b> two separate Indian Air Force rescues, first of an Italian climber with acute mountain sickness, then of an injured climber from the Nun base camp area (114 Helicopter Unit, Leh)."
+ ],
+ "extra_sections": [
+  {
+   "id": "four-tops",
+   "label": "Four tops",
+   "kicker": "The massif",
+   "h2": "The four tops of Nun Kun and their heights",
+   "html": "<p>Nun and Kun are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">dataset of India's peaks</a>; the other two heights are the commonly published figures.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\" style=\"min-width:600px\"><thead><tr><th>Top</th><th>Height</th><th>What we know</th></tr></thead><tbody><tr><td><b>Nun</b></td><td class=\"n\">7,135 m / 23,409 ft</td><td>Highest point of Jammu &amp; Kashmir. First ascent 28 Aug 1953, Vittoz and Kogan, west ridge</td></tr><tr><td><b>Kun</b></td><td class=\"n\">7,077 m / 23,219 ft</td><td>In Ladakh; sources give 7,035–7,086 m. First ascent 1913, Piacenza and Borelli, north-east ridge</td></tr><tr><td><b>Pinnacle Peak</b></td><td class=\"n\">6,930 m / 22,736 ft</td><td>Ascent claimed in 1906 by Fanny Bullock Workman with Cyprien Savoye</td></tr><tr><td><b>White Needle</b></td><td class=\"n\">about 6,600 m / 21,650 ft</td><td>The fourth top of the massif</td></tr></tbody></table></div>"
+  },
+  {
+   "id": "ladakh-or-kashmir",
+   "label": "Ladakh or Kashmir?",
+   "kicker": "Geography",
+   "h2": "Is Nun Kun in Ladakh or Kashmir?",
+   "html": "<p>Both. The massif straddles the boundary between the two union territories. <b>Nun</b> is listed as the highest point of Jammu &amp; Kashmir, and <b>Kun</b> lies in Ladakh. Yet the way in is from the Ladakh side: from Kargil, the road climbs the Suru valley through Sankoo and Panikhar to Tangol, about two hours' drive, and base camp sits in the upper Sentik valley.</p><p>For more of India's seven-thousanders, see <a href=\"/mountains-of-india/kamet/\">Kamet</a> (7,756 m) and <a href=\"/mountains-of-india/chaukhamba/\">Chaukhamba</a> (7,138 m).</p>"
+  }
+ ],
+ "quote_h2": "Dreaming of peaks like Nun? Start in Himachal",
+ "quote_text": "Suzu arranges climbs in Himachal only, so we do not sell Nun or Kun. If a 7,000 m peak is your goal, Himachal climbs build the record it needs: Friendship Peak or Yunam first, then Menthosa, Mulkila or Reo Purgyil. Tell us your dates, team size and experience, and we pair you with a registered Himachal outfitter and certified guides. Price: Get Quote.",
+ "faq_h2": "Nun Kun: questions people ask",
+ "faqs": [
+  [
+   "What is the height of Nun Kun?",
+   "Nun, the highest top, is 7,135 m (23,409 ft). Kun is 7,077 m (23,219 ft), though sources give 7,035–7,086 m. The massif also has Pinnacle Peak (6,930 m) and White Needle (about 6,600 m)."
+  ],
+  [
+   "Where is Nun Kun?",
+   "On the Jammu & Kashmir–Ladakh boundary, above the Suru valley in Kargil district, about 250 km east of Srinagar."
+  ],
+  [
+   "Is Nun Kun in Ladakh or Kashmir?",
+   "It straddles the boundary. Nun is counted as the highest point of Jammu & Kashmir, and Kun lies in Ladakh. Both are approached from Kargil."
+  ],
+  [
+   "Who first climbed Nun?",
+   "Pierre Vittoz and Claude Kogan, of a French-Swiss-Indian expedition led by Bernard Pierre, on 28 August 1953 by the west ridge."
+  ],
+  [
+   "Who first climbed Kun?",
+   "The Italian Mario Piacenza, with Lorenzo Borelli, in 1913 by the north-east ridge."
+  ],
+  [
+   "How difficult is Mount Nun?",
+   "It is a technical 7,000 m expedition on glacier, snow and ice, with serious avalanche terrain. Climbers usually come with earlier experience above 6,000 m and mountaineering training."
+  ],
+  [
+   "What is the best time to climb Nun Kun?",
+   "June to September."
+  ],
+  [
+   "How do you reach Nun Kun?",
+   "Drive from Kargil through Sankoo and Panikhar to the road-head at Tangol, about two hours, then walk to base camp at about 4,600 m in the upper Sentik valley."
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Nun Kun",
+   "https://en.wikipedia.org/wiki/Nun_Kun"
+  ],
+  [
+   "Wikipedia — Claude Kogan",
+   "https://en.wikipedia.org/wiki/Claude_Kogan"
+  ],
+  [
+   "American Alpine Journal 1954 — Nun Kun, by Bernard Pierre",
+   "https://publications.americanalpineclub.org/articles/12195402900"
+  ],
+  [
+   "Pierre Vittoz archive — the 1953 Nun expedition",
+   "https://riseofthewest.net/dcmiscell/pv30_alpin/1953_nun.htm"
+  ],
+  [
+   "The Tribune (Jul 2021) — Army team scales Mt Kun near Kargil",
+   "https://www.tribuneindia.com/news/j-k/as-part-of-vijay-diwas-celebrations-army-team-scales-mt-kun-near-kargil-289029"
+  ],
+  [
+   "The Tribune (Aug 2023) — IAF rescues injured mountaineer in Ladakh",
+   "https://www.tribuneindia.com/news/j-k/body-of-missing-italian-trekker-found-in-ladakh-iaf-rescues-injured-mountaineer-534766/amp"
+  ],
+  [
+   "Wikipedia — Indian states and territories by highest point",
+   "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point"
+  ],
+  [
+   "Indian Mountaineering Foundation — peak fees for foreign expeditions",
+   "https://www.indmount.org/IMF/peakfee"
+  ]
+ ],
+ "sameAs": [
+  "https://en.wikipedia.org/wiki/Nun_Kun"
+ ]
+}
