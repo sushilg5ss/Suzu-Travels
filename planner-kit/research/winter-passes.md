@@ -9,3 +9,8 @@ Used by `WP` + `leg()` in `src/planner.js`. Rule of thumb, always phrased "about
 | Zojila Pass (Srinagar – Kargil – Leh) | closed Jan–Mar (reopened 28 Feb–mid Apr in recent years) → fly-in warning; Dec & Apr → "can close a few days" | https://www.tribuneindia.com/news/j-k/srinagar-leh-road-reopens-after-73-days-378993 · https://www.tribuneindia.com/news/j-k/srinagar-leh-road-reopens-after-2-months-218791 · https://www.drishtiias.com/daily-updates/daily-news-analysis/zojila-pass-and-razdan-pass-reopen-after-short-winter-closure/print_manually |
 
 Detection uses the OSRM km matrix: a Spiti leg (Kaza/Tabo ↔ X) "enters through Kinnaur" when km(X,Nako)+km(Nako,Spiti) ≤ km(X,Spiti)+15; otherwise it crosses Kunzum (25 pairs: Manali, Sissu, Jispa, Sarchu, Ladakh, Sonamarg/Baltal). Chandratal is skipped (already "closed" by its own months).
+
+## Atal Tunnel / Lahaul in winter (v2.4, 19 Nov 2026)
+| Rule | Planner behaviour | Sources |
+|---|---|---|
+| Dec–Mar: after fresh snow the Manali – Atal Tunnel – Lahaul road is closed beyond Solang Nala to tourist vehicles, sometimes for weeks (only locals / 4x4 let through) | One note per plan: Sissu stay (r:1, Manali back-up night) or the "Atal Tunnel & Sissu" sight day (r:0, Solang Valley fallback). Prices unchanged. | https://www.tribuneindia.com/news/himachal/atal-tunnel-opened-to-tourists-after-24-days-205596 · https://www.tribuneindia.com/news/himachal/manali-leh-highway-restored-only-locals-allowed-via-atal-tunnel-469903 · https://www.tribuneindia.com/news/himachal/manali-leh-nh-restored-for-locals-tourist-throng-solang-470736 · https://www.tribuneindia.com/news/himachal/250-tourist-vehicles-sent-back-from-atal-tunnel-after-snow-192950 · https://discoverkullumanali.in/manali-atal-tunnel-highway-status/ |

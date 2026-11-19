@@ -189,6 +189,18 @@ const { chromium, devices } = require('playwright');
       r.xmas.ok = r.xmas.on.length === 1 && /Shimla/.test(r.xmas.on[0]) && !r.xmas.offHit && r.xmas.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.xmas.hi[0].replace(/Shimla|शिमला/g, ''));
       await p3.screenshot({ path: `${out}/${name}-4j-xmas-hi.png`, fullPage: true });
     }
+    { // v2.4 Lahaul in winter (Atal Tunnel day / Sissu stay in Jan; none in May) EN + HI
+      const lh = async (d, p, l) => { const st = { v: 1, s: 'chandigarh', e: 'chandigarh', d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: p, x: [], tp: '' }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return (await p3.$$eval('.warn', x => x.map(y => y.textContent))); };
+      const P1 = [['manali', 3]], P2 = [['manali', 2], ['sissu', 1]];
+      const day = await lh('2027-01-10', P1, ''), stay = await lh('2027-01-10', P2, ''), off = await lh('2027-05-10', P2, ''), hi = await lh('2027-01-10', P2, 'hi');
+      const f = a => a.filter(t => /Atal Tunnel & Lahaul in/.test(t));
+      r.lahaul = { day: f(day), stay: f(stay), offHit: f(off).length, hi: hi.filter(t => /अटल टनल और लाहौल/.test(t)) };
+      r.lahaul.ok = r.lahaul.day.length === 1 && /Solang Valley\.$/.test(r.lahaul.day[0]) && r.lahaul.stay.length === 1 && /Sissu stay/.test(r.lahaul.stay[0]) && !r.lahaul.offHit && r.lahaul.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.lahaul.hi[0]);
+      await p3.screenshot({ path: `${out}/${name}-4l-lahaul-hi.png`, fullPage: true });
+    }
     { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
       const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
       const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;

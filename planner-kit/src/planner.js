@@ -375,6 +375,18 @@
         return true;
       });
     })();
+    /* v2.4 Lahaul in winter (Dec–Mar): after fresh snow the road beyond Solang Nala (Atal Tunnel, Sissu) is shut to tourist cars,
+       sometimes for weeks (locals / 4x4 only). Sources: research/winter-passes.md */
+    (function () {
+      var hit = null;
+      out.days.forEach(function (dy) {
+        var m = dy.date.getMonth() + 1; if (m > 3 && m < 12) return;
+        var ids = [dy.to, dy.stay].concat(dy.via.map(function (v) { return v.id; }));
+        var stay = ids.indexOf('sissu') > -1, trip = dy.sights.some(function (x) { return /^Atal Tunnel/.test(x.n); });
+        if ((stay && (!hit || !hit.stay)) || (trip && !hit)) hit = { stay: stay, m: m };
+      });
+      if (hit) out.warn.push({ r: hit.stay ? 1 : 0, k: 'lahaul', t: 'Atal Tunnel & Lahaul in ' + MS[hit.m - 1] + ': after fresh snow, police close the road beyond Solang Nala to tourist cars — sometimes for days or weeks — and only local / 4×4 vehicles go through. ' + (hit.stay ? 'Your Sissu stay depends on the road being open; we keep Manali as the back-up night and confirm a day before.' : 'We go to Atal Tunnel & Sissu only when the road is open; otherwise that day is snow fun at Solang Valley.') });
+    })();
     /* v2.3 short winter daylight: a hill drive day (Nov–Feb) that would still be on the road at sunset with a 7:30 AM start and ~1 h of meal/tea stops.
        Sunset from sunIST() at the destination; long drives (> 10 h) already get their own warning. */
     (function () {
