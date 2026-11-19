@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-19-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.4 Atal Tunnel / Lahaul winter snow-closure note",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "bbdf6094adebee2e49bce3da494b2c7cf12bef8eac11de6fe0bcc41489079f0d",
+   "base_sha256": "f5bd39160178413f8074b3f2f3827ca98920785e9085e4dfc8cca2e8a38ed935",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-19T06:32:38Z",
+ "status": "deployed"
+}
