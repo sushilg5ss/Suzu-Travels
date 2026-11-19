@@ -61,7 +61,7 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 46 | [x] delhi-airport-taxi — LIVE 2026-11-16 https://suzutravels.com/cabs/delhi-airport-taxi/ (ID 22650) | delhi airport taxi | 480 (LOW) | NEW 1 Nov. IGI T1/T2/T3 pickups to the hill routes (Shimla, Manali, Haridwar, Agra …); links outstation-cab-delhi |
 | 47 | [x] amritsar-to-dalhousie-taxi — LIVE 2026-11-17 https://suzutravels.com/cabs/amritsar-to-dalhousie-taxi/ (ID 23141) | amritsar to dalhousie taxi | 320 (MEDIUM) | NEW 1 Nov. Via Pathankot; links amritsar-taxi-service, pathankot-to-dalhousie-taxi |
 | 48 | [x] amritsar-to-dharamshala-taxi — LIVE 2026-11-18 https://suzutravels.com/cabs/amritsar-to-dharamshala-taxi/ (ID 23409) | amritsar to dharamshala taxi | 260 (HIGH comp.) | (was 33) |
-| 49 | [ ] manali-taxi-package | manali taxi package | 260 (LOW; peak 590 May) | NEW 1 Nov. Multi-stop package page (per-day price, Solang/Atal/Rohtang via union taxis) |
+| 49 | [x] manali-taxi-package — LIVE 2026-11-19 https://suzutravels.com/cabs/manali-taxi-package/ (ID 23656) | manali taxi package | 260 (LOW; peak 590 May) | NEW 1 Nov. Multi-stop package page (per-day price, Solang/Atal/Rohtang via union taxis) |
 | 50 | [ ] one-way-taxi-delhi | one way taxi delhi | 210 (HIGH; was 420 on 1 Oct) | (was 31) Service page: every one-way fare from Delhi, return-empty explanation |
 | 51 | [ ] srinagar-to-leh-taxi | srinagar to leh taxi | 210 | NEW 29 Oct. Season Jun–Oct, Zojila |
 | 52 | [ ] kashmir-taxi-package | kashmir taxi package | 170 | NEW 29 Oct. Multi-stop package page (per-day price) |
