@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """The /cabs/ hub page (page ID 10080)."""
 import json
+import hashlib
 from build import *
 from cabs_data import TIERS, PRICED, PLACES, PICKUPS
 
@@ -35,6 +36,35 @@ TIER_COPY = {
 
 POPULAR = [("Delhi", "Shimla"), ("Delhi", "Manali"), ("Chandigarh", "Manali"), ("Chandigarh", "Shimla"), ("Delhi", "Dharamshala"), ("Jammu", "Srinagar"), ("Delhi", "Haridwar"), ("Kathgodam", "Nainital")]
 
+def places_tokens(pp):
+    return [f"{k};{round(v[0], 3):g};{round(v[1], 3):g}" for k, v in pp.items()]
+
+PLACES_FILE = ROOT / "media" / "plan" / "places.txt"
+
+def places_inline(pp):
+    """19 Nov 2026 hub headroom lever #4 (ENHANCEMENTS #28): the planner place list (PLACES + PICKUPS, 'Name;lat;lon|...')
+    is served from jsDelivr pinned to a commit SHA (media.json -> plan.places, file media/plan/places.txt) and kit_hub.js
+    fetches it only when the planner is used / scrolled near / a place box gets focus. Inline data-plan p keeps ONLY the
+    places that are not byte-identical in the pinned file (e.g. a place the Route Builder added after the pin), so a new
+    place never needs a re-pin to work - kit_hub.js merges inline over fetched. If the pin is missing or the local file's
+    sha1 differs from media.json plan.sha1, the whole list stays inline (WARNING) - the page works exactly as before."""
+    toks = places_tokens(pp)
+    pin = MEDIA.get("plan", {})
+    if not pin.get("places"):
+        return "|".join(toks)
+    try:
+        txt = PLACES_FILE.read_text(encoding="utf-8").strip()
+    except OSError:
+        txt = None
+    if txt is None or hashlib.sha1(txt.encode("utf-8")).hexdigest() != pin.get("sha1"):
+        print("WARNING: media/plan/places.txt missing or differs from media.json plan.sha1 - hub keeps the full place list inline")
+        return "|".join(toks)
+    have = set(txt.split("|"))
+    delta = [t for t in toks if t not in have]
+    if delta:
+        print(f"NOTE: {len(delta)} planner place(s) not in the pinned places.txt - kept inline on the hub (re-pin later): " + ", ".join(t.split(";")[0] for t in delta))
+    return "|".join(delta)
+
 def planner():
     pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
     pr = [dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u=(page_url(r["slug"]) if r["slug"] and is_live(r["slug"]) else "")) for r in ROUTES]
@@ -46,7 +76,7 @@ def planner():
     pp = dict(PLACES, **PICKUPS)
     assert not any(c in k for k in pp for c in ";|'<>"), "place names must not contain ; | ' < >"
     # 6 Nov 2026 hub size trim (ENHANCEMENTS #19): places as one "Name;lat;lon|..." string (~1.2 KB less than the JSON object); kit_hub.js expands it back to PC.p
-    cfg = dict(p="|".join(f"{k};{round(v[0], 3):g};{round(v[1], 3):g}" for k, v in pp.items()), r=pr, v=pv, s="cabs",
+    cfg = dict(p=places_inline(pp), r=pr, v=pv, s="cabs",
                js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
     # 7 Nov 2026 (ENHANCEMENTS #15): one-tap popular route chips - tap = fill From/To + run (kit.js data-plan-route handler; kit_hub.js clears stops).

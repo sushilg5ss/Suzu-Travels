@@ -7,8 +7,25 @@
 /* Hub size trim (ENHANCEMENTS #15, 7 Nov 2026): build.py sends the fleet photo base once as FL.pb - re-join it to each file name (FB holds the same objects). */
 if(typeof FL==='object'){if(FL){if(FL.pb){FL.v.forEach(function(v){if(v.photo){v.photo=FL.pb+v.photo;}});FL.pb='';}}}
 if(typeof PC.p==='string'){var pcp={};PC.p.split('|').forEach(function(x){var a=x.split(';');if(a.length===3){pcp[a[0]]=[+a[1],+a[2]];}});PC.p=pcp;}
-var dlp=$('szc-places');
-if(dlp){var dlHave={};qa('option',dlp).forEach(function(o){dlHave[o.value]=1;});Object.keys(PC.p).sort().forEach(function(k){if(!dlHave[k]){var o=document.createElement('option');o.value=k;dlp.appendChild(o);}});}
+var dlp=$('szc-places'),dlHave={};
+function dlFill(){if(dlp){qa('option',dlp).forEach(function(o){dlHave[o.value]=1;});Object.keys(PC.p).sort().forEach(function(k){if(!dlHave[k]){dlHave[k]=1;var o=document.createElement('option');o.value=k;dlp.appendChild(o);}});}}
+dlFill();
+/* Hub headroom lever #4 (ENHANCEMENTS #28, 19 Nov 2026): the place list lives in a pinned jsDelivr file (media/plan/places.txt, same 'Name;lat;lon|...' string);
+   inline PC.p holds only places added after the pin. Loaded once - when a place box gets focus, the map is prepared (planner scrolled near / used) or a place is looked up.
+   Inline entries win over fetched ones. geocode waits for it at most 4 s; if the file fails, unknown names still go to Photon. */
+var PLU='__PLACES__',PLP=null;
+function plLoad(){
+ if(!PLP){
+  if(PLU){
+   PLP=Promise.race([fetch(PLU).then(function(r){if(!r.ok){throw new Error('places');}return r.text();}).then(function(t){var o={},k;t.trim().split('|').forEach(function(x){var a=x.split(';');if(a.length===3){o[a[0]]=[+a[1],+a[2]];}});for(k in PC.p){o[k]=PC.p[k];}PC.p=o;dlFill();})['catch'](function(){}),new Promise(function(ok){setTimeout(ok,4000);})]);
+  }else{PLP=Promise.resolve();}
+ }
+ return PLP;
+}
+var gcO=geocode,emP=ensureMap;
+geocode=function(name){return plLoad().then(function(){return gcO(name);});};
+ensureMap=function(cb){plLoad();emP(cb);};
+document.addEventListener('focusin',function(e){var t=e.target;if(t){if(t.getAttribute){if(t.getAttribute('list')==='szc-places'){plLoad();}}}},true);
 var vbox=$('szc-pvias'),vadd=$('szc-padd'),hubAddVia=null;
 if(vbox){if(vadd){
  var MAXV=3,run1=run,render1=render;
