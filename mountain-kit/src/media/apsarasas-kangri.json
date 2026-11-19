@@ -1,0 +1,136 @@
+{
+ "hero": {
+  "kicker": "APSARASAS KANGRI · SIACHEN",
+  "scenes": [
+   {
+    "img": "px-15148510.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     0,
+     3.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.2,
+     7.0
+    ],
+    "from": {
+     "y": 760
+    },
+    "to": {
+     "y": 920,
+     "scale": 1.05
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     6.4,
+     10.2
+    ],
+    "from": {
+     "y": 0,
+     "scale": 1.22,
+     "x": -200
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.24,
+     "x": -210
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     9.6,
+     14.0
+    ],
+    "from": {
+     "y": 350,
+     "scale": 1.2,
+     "x": -160
+    },
+    "to": {
+     "y": 1150,
+     "scale": 1.24,
+     "x": -170
+    }
+   }
+  ],
+  "steps": [
+   [
+    5200,
+    "TERAM SHEHR BC"
+   ],
+   [
+    5700,
+    "CAMP 1 · W RIDGE"
+   ],
+   [
+    6700,
+    "CAMP 3"
+   ],
+   [
+    7120,
+    "SOUTH PEAK"
+   ],
+   [
+    7245,
+    "SUMMIT · 1976"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Apsarasas Kangri, camp by camp",
+  "sub": "1976 first-ascent camps (approximate) · west ridge · AAJ 1977",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 5200,
+    "day": "26 Jun"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5700,
+    "day": "3 Jul"
+   },
+   {
+    "name": "Camp 2",
+    "m": 6200,
+    "day": "20 Jul"
+   },
+   {
+    "name": "Camp 3",
+    "m": 6700,
+    "day": "26 Jul"
+   },
+   {
+    "name": "Camp 4",
+    "m": 7010,
+    "day": "4 Aug"
+   },
+   {
+    "name": "Apsarasas I",
+    "m": 7245,
+    "day": "Summit · 7 Aug 1976"
+   }
+  ]
+ }
+}
