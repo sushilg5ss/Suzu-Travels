@@ -154,11 +154,14 @@ HI = {"Get a free quote": "मुफ़्त कोटेशन लें", "Up
       "Snow in the next 7 days": "अगले 7 दिन में बर्फ", "Checking the forecast…": "पूर्वानुमान देख रहे हैं…", "Loading the latest forecast…": "ताज़ा पूर्वानुमान लोड हो रहा है…",
       "In pictures": "तस्वीरों में", "Where to go": "कहाँ जाएँ", "See the plan →": "प्लान देखें →", "Plan it with Suzu": "Suzu के साथ प्लान करें", "WhatsApp us": "WhatsApp करें",
       "Call +91 70874 88961": "कॉल करें +91 70874 88961", "FAQ": "सवाल-जवाब", "Questions travellers ask": "यात्रियों के सवाल", "Sources": "स्रोत", "Photo credits": "फ़ोटो क्रेडिट", "Photo:": "फ़ोटो:"}
+DE = {"Get a free quote": "Kostenloses Angebot", "Updated": "Aktualisiert", "certificates": "Zertifikate", "Live forecast": "Live-Wetter",
+      "In pictures": "In Bildern", "Where to go": "Wohin reisen", "See the plan →": "Zum Angebot →", "Plan it with Suzu": "Mit Suzu planen", "WhatsApp us": "WhatsApp schreiben",
+      "Call +91 70874 88961": "Anrufen +91 70874 88961", "FAQ": "Häufige Fragen", "Questions travellers ask": "Häufige Fragen", "Sources": "Quellen", "Photo credits": "Bildnachweise", "Photo:": "Foto:"}
 LANG = "en"
 
 
 def T(x):
-    return HI.get(x, x) if LANG == "hi" else x
+    return HI.get(x, x) if LANG == "hi" else (DE.get(x, x) if LANG == "de" else x)
 
 
 def credit(it):
@@ -246,18 +249,18 @@ def ladder(points, lo=1600, hi=3300):
 def render(s):
     global LANG
     LANG = s.get("lang", "en")
-    reg = REG if LANG == "en" else "HP Tourism में पंजीकृत ट्रैवल एजेंट · पंजीकरण सं. DTO-MND-11-243/2022"
+    reg = {"en": REG, "de": "Bei HP Tourism registriertes Reisebüro · Reg.-Nr. DTO-MND-11-243/2022"}.get(LANG, "HP Tourism में पंजीकृत ट्रैवल एजेंट · पंजीकरण सं. DTO-MND-11-243/2022")
     P = s["photos"]
     hero, fig = role(P, "hero"), role(P, "fig")
     gal = [x for x in P if x["role"] == "g"]
     wa = WA + urllib.parse.quote(s["wa"])
-    out = [f"<style>{min_css(CSS)}</style><div class=\"szb\"" + (' lang="hi"' if LANG == "hi" else "") + ">"]
+    out = [f"<style>{min_css(CSS)}</style><div class=\"szb\"" + (f' lang="{LANG}"' if LANG in ("hi", "de") else "") + ">"]
     chips = "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in s.get("chips", []))
     out.append(f'<section class="szb-hero">{img(hero, True)}{"<div class=szb-flakes></div>" if s.get("flakes") else ""}<div class="szb-hero-in"><span class="k">{e(s["kicker"])}</span>'
                f'<p class="szb-tag">{e(s["tag"])}</p><p class="szb-sub">{s["sub"]}</p><ul class="szb-chips">{chips}</ul>'
                f'<div class="szb-btns"><a class="szb-btn gold" href="{wa}" target="_blank" rel="noopener">WhatsApp +91 70874 88961</a><a class="szb-btn ghost" href="{s.get("cta2", ("/himachal-tour-packages-quote/", T("Get a free quote")))[0]}">{e(s.get("cta2", ("", T("Get a free quote")))[1])}</a></div></div>'
                f'<span class="szb-cr">{credit(hero)}</span></section>')
-    out.append(f'<p class="szb-upd">{T("Updated")} {e(s["updated"])} · {reg} · <a href="/certificates/">{T("certificates")}</a>' + (f' · <a class="szb-alt" href="{s["alt_lang"][0]}" lang="{"en" if LANG == "hi" else "hi"}">{e(s["alt_lang"][1])}</a>' if s.get("alt_lang") else "") + '</p>')
+    out.append(f'<p class="szb-upd">{T("Updated")} {e(s["updated"])} · {reg} · <a href="/certificates/">{T("certificates")}</a>' + (f' · <a class="szb-alt" href="{s["alt_lang"][0]}" lang="{s["alt_lang"][2] if len(s["alt_lang"]) > 2 else ("en" if LANG == "hi" else "hi")}">{e(s["alt_lang"][1])}</a>' if s.get("alt_lang") else "") + '</p>')
     out.append(f'<div class="szb-answer"><p>{s["answer"]}</p></div>')
     if s.get("quick"):
         out.append('<ul class="szb-qa">' + "".join(f"<li><b>{e(a)}</b>{b}</li>" for a, b in s["quick"]) + "</ul>")
