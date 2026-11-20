@@ -40,7 +40,7 @@ Your driver's name, photo and car number are shared with you before the trip. Su
 - Private air-conditioned car with English-speaking driver for all 8 days (fuel, tolls, parking, driver's stay and meals)
 - Hotel stays for 7 nights (category agreed at booking)
 - Pick-up in Chandigarh/Kalka and drop at Kangra airport or Chandigarh
-- Trip planning and 24/7 phone support from our Himachal office
+- Trip planning and phone/WhatsApp support from our Himachal office before and during your trip
 
 ## Exclusions
 - Flights and train tickets (Kalka–Shimla toy train seat can be booked on request)

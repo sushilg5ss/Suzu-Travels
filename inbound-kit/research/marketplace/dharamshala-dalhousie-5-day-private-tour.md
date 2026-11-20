@@ -35,7 +35,7 @@ Your driver's name, photo and car number are shared with you before the trip. Su
 ## Inclusions
 - Private air-conditioned car with English-speaking driver for all days (fuel, tolls, parking, driver's food and stay)
 - Hotel nights as quoted (category of your choice)
-- Planning and 24×7 contact with our Himachal office (+91 70874 88961)
+- Planning, plus phone/WhatsApp contact with our Himachal office before and during your trip (+91 70874 88961)
 
 ## Exclusions
 - Flights and trains; meals unless stated; entry tickets; activities (paragliding, treks); tips; travel insurance

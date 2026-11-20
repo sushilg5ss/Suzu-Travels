@@ -36,7 +36,7 @@ Your driver's name, photo and car number are shared with you before the trip. Su
 - Private car (sedan or SUV by group size) with English-speaking driver for all 3 days, fuel, tolls, parking, driver's costs
 - 2 nights' hotel in Shimla (category as booked)
 - Help choosing the train and coach; luggage transfer by road on the train day
-- 24-hour phone/WhatsApp support from our Himachal team: +91 70874 88961
+- Phone/WhatsApp support from our Himachal team before and during your trip: +91 70874 88961
 
 ## Exclusions
 - Toy train ticket (booked on IRCTC — see "Important")
