@@ -30,7 +30,7 @@ SPEC = dict(
         ("Delhi →", "Chandigarh ~250 km · Shimla ~345 km · Dharamshala ~475 km · Manali ~540 km."),
         ("Chandigarh →", "Shimla ~115 km · Dharamshala ~240 km · Manali ~290 km."),
         ("Shimla →", "Kufri ~16 km · Narkanda ~60 km · Sarahan ~175 km · Manali ~250 km."),
-        ("Manali →", "Solang ~14 km · Sissu ~40 km · Kasol ~75 km · Kaza ~200 km (summer only)."),
+        ("Manali →", "Solang ~14 km · Sissu ~40 km · <a href=\"/manali-to-kasol/\">Kasol ~75–80 km</a> · Kaza ~200 km (summer only)."),
         ("Rule of thumb", "25–35 km/h on hill roads; never plan more than 8–9 hours' driving a day."),
     ],
     sections=[
