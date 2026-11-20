@@ -484,5 +484,14 @@
   "blurb": "Weather by region, the heat warning, Holi on 23 March 2027 and where to go in spring",
   "added": "2026-11-19",
   "focus": "india in march"
+ },
+ "india-solo-travel": {
+  "id": 23848,
+  "path": "/india-tours/india-solo-travel/",
+  "kind": "guide",
+  "label": "India solo travel",
+  "blurb": "A first route, getting around alone and the numbers to save",
+  "added": "2026-11-20",
+  "focus": "india solo travel"
  }
 }

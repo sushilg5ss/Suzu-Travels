@@ -1,0 +1,162 @@
+{
+ "path": "/india-tours/india-solo-travel/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "India Solo Travel: How to Plan Your First Trip Alone",
+ "seo_title": "India Solo Travel: How to Plan Your First Trip Alone",
+ "seo_desc": "Planning India solo travel? A first route, trains vs a private driver, what the official advisories say, the numbers to save, and how a solo quote works.",
+ "focus": "india solo travel",
+ "label": "India solo travel",
+ "blurb": "A first route, getting around alone and the numbers to save",
+ "kicker": "Solo travel · First trip alone",
+ "tag": "Travelling alone in India is very doable — with a plan, a local SIM and the right numbers saved.",
+ "sub": "For travellers from the US, UK, Europe, Australia and Canada going to India on their own: where to start, how to move between cities alone, what your government's advice says, and how a private car and driver fits a solo trip.",
+ "hero_alt": "India Gate in New Delhi silhouetted against an orange dawn sky",
+ "cta1": "See a first solo route",
+ "chips": [
+  ["3 ways", "trains, flights or a private car"],
+  ["112", "India's emergency number"],
+  ["1363", "Tourism Ministry 24×7 helpline"],
+  ["Quote", "solo prices on request"]
+ ],
+ "q": "Can you travel India alone?",
+ "answer": "Yes — many people travel India alone. Start on a well-trodden route (Delhi, Agra, Jaipur, then Rishikesh or the Himalayan foothills), book your first night and airport transfer before you land, move by train, flight or a private car with driver, and carry a local SIM. Save 112 and the tourist helpline 1363, and read your government's advice first. Solo prices are on request.",
+ "facts": [
+  ["112", "national emergency number (UK FCDO, Smartraveller)"],
+  ["1800-11-1363", "Ministry of Tourism 24×7 multilingual tourist helpline (short code 1363)"],
+  ["365 days", "how far ahead foreign passport holders can book IRCTC's Foreign Tourist quota"],
+  ["Level 2", "US State Dept advisory for India: exercise increased caution"]
+ ],
+ "talk": true,
+ "sections": [
+  {
+   "id": "route",
+   "nav": "First route",
+   "h2": "A first solo route: Delhi, Agra, Jaipur, then the hills",
+   "kind": "table",
+   "lead": "Most first-time solo travellers start on the busiest tourist circuit, where trains, cars and hotels are easiest to arrange, and then slow down in the foothills. This is the shape we suggest; shorten or stretch it to your dates.",
+   "head": ["Days", "Where", "Why it works alone"],
+   "rows": [
+    ["Day 1–2", "Delhi", "Arrive, rest, and get your SIM and money sorted before you move on. See our <a href=\"/india-tours/delhi-tour/\">Delhi guide</a>."],
+    ["Day 3–4", "Agra", "The Taj Mahal — an easy hop from Delhi by train or car."],
+    ["Day 5–7", "Jaipur", "Forts and bazaars; the classic <a href=\"/india-tours/golden-triangle-itinerary-7-days/\">Golden Triangle</a> ends here."],
+    ["Day 8–10", "Rishikesh", "The Ganga, yoga and a slower pace — popular with people travelling alone. See our <a href=\"/india-tours/rishikesh-yoga-retreat-guide/\">Rishikesh guide</a>."],
+    ["Day 11+", "McLeod Ganj (Dharamshala)", "Tibetan culture and Himalayan views in Himachal, our home state."]
+   ],
+   "note": "One week? Stop after Jaipur. Two weeks? Add Rishikesh and the hills — our <a href=\"/india-tours/india-2-week-itinerary/\">2-week itinerary</a> has the full plan. Avoid long road journeys at night: the UK FCDO advises “avoid travelling at night and in fog as accidents are common due to low visibility.”"
+  },
+  {
+   "id": "around",
+   "nav": "Getting around",
+   "h2": "How to get around India alone",
+   "kind": "cards",
+   "style": "alt",
+   "lead": "Three ways to move between cities, plus the short hops in between. Many solo travellers mix them. Our <a href=\"/india-tours/trains-vs-flights-in-india/\">trains vs flights guide</a> compares the first two in detail.",
+   "items": [
+    ["Trains", "You can book IRCTC's Foreign Tourist quota yourself with a foreign passport — up to 365 days ahead, paying by international card. Carry your original passport on board. Travel agents cannot book that quota for you."],
+    ["Flights", "For long distances — Delhi to Goa, Kerala or Ladakh — a domestic flight saves a day of travel. Book directly with the airline."],
+    ["A private car and driver", "Your own car and English-speaking driver from city to city: door to door, stops when you want them, and one place for your luggage. <b>Your driver's name, photo and car number are shared with you before the trip.</b> See <a href=\"/india-tours/private-driver-india/\">private car with driver</a>."],
+    ["Taxis in town", "The UK FCDO says app-based taxis like Uber and Ola are widely available, including in all airport terminal buildings, and that pre-paid taxis and hotel transfers are also available. It advises: “Avoid travelling alone and hailing taxis on the street, especially at night.”"],
+    ["Arriving", "Australia's Smartraveller says: “Use a pre-paid taxi service when you arrive at the airport.” Easiest of all on a first trip: book your first night's hotel with an airport transfer before you fly."]
+   ]
+  },
+  {
+   "id": "before",
+   "nav": "Before you go",
+   "h2": "What to sort out before you land",
+   "kind": "steps",
+   "items": [
+    ["Your visa — on the official site only", "Apply only at the official site indianvisaonline.gov.in — beware look-alike sites that charge extra. We are not a visa agency. In November 2026 the Government of India announced that the Tourist Visa is being renamed the Visitor Visa (PIB, 11 Nov 2026); until the official site changes, apply for the visa it shows there. Our <a href=\"/india-tours/india-e-visa-guide/\">e-Visa guide</a> walks through it."],
+    ["Travel insurance", "Alone, there is no one else to pay a hospital bill or rebook a flight — read our <a href=\"/india-tours/india-travel-insurance/\">India travel insurance guide</a>."],
+    ["A local SIM or eSIM", "Maps, app taxis and staying in touch all depend on data. Our <a href=\"/india-tours/sim-card-india-tourist/\">SIM card guide</a> explains the options for foreigners."],
+    ["Money", "Plan on cards and some cash as your main way to pay. UPI for foreign visitors is still a pilot — check NPCI before you rely on it. See <a href=\"/india-tours/upi-and-money-in-india-for-tourists/\">UPI and money in India</a>."],
+    ["Your health", "We're a travel company, not doctors: consult your doctor or a travel clinic, and see CDC or NHS Fit for Travel."],
+    ["Your first night", "Book your first hotel and airport transfer in advance, and share your plan with someone at home."]
+   ]
+  },
+  {
+   "id": "safety",
+   "nav": "Safety",
+   "h2": "Is it safe to travel India alone? What the governments say",
+   "kind": "callout",
+   "style": "dark",
+   "text": "<b>Read your own government's advice before you book — this is a short summary, not a promise.</b> The US State Department rates India Level 2: “Exercise increased caution in India due to crime and terrorism. Some areas have increased risk.” (issued 16 Jun 2025). Its country page adds: “The U.S. government advises against women traveling alone in India.” The UK FCDO (advice checked 19 Nov 2026) says: “Avoid travelling alone and hailing taxis on the street, especially at night” and “Be wary of accepting drinks or food from strangers or leaving drinks unattended.” Australia's Smartraveller asks you to “exercise a high degree of caution in India overall” and “don't hail taxis on the street.” <b>Travelling alone as a woman? Read our dedicated guide: <a href=\"/india-tours/is-india-safe-for-solo-female-travellers/\">Is India safe for solo female travellers?</a></b> Staying at an ashram or retreat? Choose retreats and hosts carefully and read recent independent reviews — Australia's Smartraveller warns of misconduct allegations involving some religious groups."
+  },
+  {
+   "id": "numbers",
+   "nav": "Numbers to save",
+   "h2": "Numbers to save in your phone on day one",
+   "kind": "stats",
+   "lead": "Emergency (police, fire, ambulance): 112 · Police: 100 · Women's helpline: 1091 · Ministry of Tourism 24×7 tourist helpline (multilingual): 1800-11-1363 or 1363. Sources: UK FCDO and PIB, 5 Feb 2026.",
+   "items": [
+    ["112", "emergency: police, fire, ambulance"],
+    ["100", "police"],
+    ["1091", "women's helpline"],
+    ["1800-11-1363", "Ministry of Tourism 24×7 tourist helpline, for domestic and foreign tourists — or short code 1363"]
+   ],
+   "note": "Also save your own embassy's number from your government's travel advice page. Travelling with us? Call or WhatsApp our office on <b>+91 70874 88961</b> before and during your trip."
+  },
+  {
+   "id": "group",
+   "nav": "Group or alone?",
+   "h2": "Group tour, fully independent, or a private driver?",
+   "kind": "table",
+   "style": "alt",
+   "lead": "All three work. The right one depends on how much company, freedom and planning you want.",
+   "head": ["", "Group tour", "Fully independent", "Private car + driver"],
+   "rows": [
+    ["Company", "Built in — a group and a tour leader", "You meet people in hostels and on trains", "Your own time; your driver and our office are a call away"],
+    ["Freedom", "Fixed dates and route", "Total", "Your route and your pace, planned with us"],
+    ["Planning", "Done for you", "All yours: trains, hotels, transfers", "We plan the route and hotels; you decide the days"],
+    ["Getting between cities", "Group coach", "Trains, flights, buses", "Door to door in one car"],
+    ["Price", "Set per seat", "Usually the lowest", "On request for one traveller — see below"]
+   ]
+  },
+  {
+   "id": "how",
+   "nav": "How we plan it",
+   "h2": "How we plan a solo trip — and what it costs",
+   "kind": "steps",
+   "lead": "Suzu Travels plans every trip from our office in Himachal Pradesh, and we stay your single point of contact from the first message to the drive back to the airport. Our hub routes start from US$299 per person; for one traveller we quote the private car and a single room separately — ask for a solo quote.",
+   "items": [
+    ["Tell us your trip", "Your dates, where you fly in, and what you want to see. Mention if you'd rather have more company (a guide in the cities) or more time on your own."],
+    ["Get a day-by-day plan and a solo quote", "A route with short driving days, travel in daylight and hotels on your route, and a US-dollar price for one person."],
+    ["Lock it with a 20% deposit", "Full refund if you cancel within 48 hours of paying; the balance is due before the trip."],
+    ["Before the trip", "Your driver's name, photo and car number are shared with you, along with our office number in Himachal."],
+    ["On the road", "Call or WhatsApp our office on +91 70874 88961 before and during your trip; we change the plan if you want a slower day."]
+   ]
+  }
+ ],
+ "faqs": [
+  ["Is India good for a first solo trip?", "Yes, if you start on the main tourist circuit — Delhi, Agra and Jaipur — where transport and hotels are easiest, then slow down in Rishikesh or the Himalayan foothills. Book your first night and airport transfer before you land."],
+  ["Is it safe to travel India alone?", "Read your own government's advice first. The US State Department rates India Level 2 (exercise increased caution, issued 16 Jun 2025); the UK FCDO advises avoiding travelling alone and hailing taxis on the street, especially at night. Women travelling alone should read our dedicated guide, Is India safe for solo female travellers?"],
+  ["Where should I go on my first solo trip to India?", "Delhi, Agra (the Taj Mahal) and Jaipur for a week; add Rishikesh and McLeod Ganj in the Himalayan foothills for two weeks. All are on the main tourist circuit, so trains, cars and hotels are easy to arrange."],
+  ["How do I get around India alone?", "Trains (book IRCTC's Foreign Tourist quota yourself with your passport, up to 365 days ahead), domestic flights for long distances, or a private car with driver. In cities, the UK FCDO says app taxis like Uber and Ola are widely available."],
+  ["Can I hire a private car and driver just for myself?", "Yes — a private car with an English-speaking driver works for one traveller just as for a group. Your driver's name, photo and car number are shared with you before the trip. Ask us for a solo quote."],
+  ["What phone numbers should I save in India?", "112 for emergencies, 100 for police, 1091 for the women's helpline, and the Ministry of Tourism's 24×7 multilingual tourist helpline 1800-11-1363 (short code 1363). Also save your embassy's number."],
+  ["Should I join a group tour or travel alone?", "Both work. A group gives company and a fixed plan; going fully independent gives total freedom and more planning. A private car and driver sits in between: your own route and pace, with someone local on call."],
+  ["How much does a solo trip to India cost?", "It depends on your route, hotel level, how you travel and the season. Our hub routes start from US$299 per person; for one traveller we quote the private car and a single room separately — ask for a solo quote."]
+ ],
+ "sources": [
+  ["UK FCDO — India travel advice: safety and security", "https://www.gov.uk/foreign-travel-advice/india/safety-and-security"],
+  ["US Department of State — India travel advisory", "https://travel.state.gov/en/international-travel/travel-advisories/destination.ind.html"],
+  ["US Department of State — India country information", "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/India.html"],
+  ["Australian Government Smartraveller — India", "https://www.smartraveller.gov.au/destinations/asia/india"],
+  ["Ministry of Tourism / PIB — 24x7 multilingual tourist helpline (5 Feb 2026)", "https://tourism.gov.in/sites/default/files/2026-02/Ministry%20of%20Tourism%20has%20set%20up%20a%2024x7%20Multi-Lingual%20Tourist%20Helpline.pdf"],
+  ["Indian e-Visa — official site", "https://indianvisaonline.gov.in/"],
+  ["PIB — visa rationalisation, 11 Nov 2026", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2335182&reg=48&lang=2"],
+  ["IRCTC — Indian Railways booking", "https://www.irctc.co.in/"]
+ ],
+ "verified": "20 Nov 2026",
+ "cta": {
+  "h2": "Plan your solo trip to India",
+  "text": "Tell us your dates, where you fly in and what you'd like to see. We reply with a day-by-day plan and a solo quote in US dollars, usually within two hours (9 am–9 pm IST).",
+  "wa": "Hello Suzu Travels, I'm planning a solo trip to India. Dates: ___ , travellers: 1 , country: ___"
+ },
+ "links": [
+  "is-india-safe-for-solo-female-travellers",
+  "private-driver-india",
+  "first-time-india-travel-guide",
+  "trains-vs-flights-in-india"
+ ]
+}
