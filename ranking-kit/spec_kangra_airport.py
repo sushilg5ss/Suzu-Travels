@@ -47,7 +47,7 @@ SPEC = dict(
             ["Pathankot (railway station)", "~90 km", "2.5–3 h"],
         ])),
         dict(id="flights", kicker="Flights", h2="Flights to Kangra airport", ps=[
-            "<b>Delhi</b> is the main route, with several flights a day. <b>Chandigarh</b> has a direct service on some days of the week (IndiGo resumed it in September 2026), and <b>Shimla</b> has a small regional service on some days. Schedules change by season — check the airline websites or a flight search before you plan.",
+            "<b>Delhi</b> is the main route, with several flights a day. <b>Chandigarh</b> has a direct service on some days of the week (IndiGo resumed it in September 2026), and Alliance Air's small regional service to <b>Shimla</b> resumed in May 2026 on most days of the week. Schedules change by season — check the airline websites or a flight search before you plan.",
             "<b>Why flights get cancelled:</b> the runway is about 1,370 m long, so only small aircraft can use it, and landings depend on visibility in the hills. Winter fog and snow (December–February) and monsoon cloud (July–August) cause most delays. A runway extension to about 3,110 m has been proposed but not yet built. If you have an onward international flight from Delhi, keep a buffer day.",
         ]),
         dict(id="taxi", kicker="Getting into town", h2="Taxi from Kangra airport", ps=[
@@ -94,5 +94,6 @@ SPEC = dict(
         ("Airports Authority of India", "https://www.aai.aero/"),
         ("The Tribune: Gaggal airport flights (April 2025)", "https://www.tribuneindia.com/news/himachal/gaggal-airport-sees-flight-expansion-total-seven-now"),
         ("Outlook Business: IndiGo resumes Dharamshala–Chandigarh (Sept 2026)", "https://www.outlookbusiness.com/corporate/indigo-resumes-dharamshala-chandigarh-direct-flight-service"),
+        ("ch-aviation: Alliance Air resumes Shimla operations (May 2026)", "https://www.ch-aviation.com/news/167240-indias-alliance-air-resumes-shimla-ops-in-mid-2q26"),
     ],
 )
