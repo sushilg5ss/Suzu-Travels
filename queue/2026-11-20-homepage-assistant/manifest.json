@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-20-homepage-assistant",
+ "agent": "Interactive (Sushil approved)",
+ "summary": "Homepage 18n+19n (Hindi guides 70, +50 links, 3 published prices, Hindi jump chip) + Suzu Assistant v1.8",
+ "files": [
+  {
+   "target": "suzu-assistant.js",
+   "source": "suzu-assistant.js",
+   "sha256": "7577ad83fe5d4920d3b6bc90c2da29ef6e3ecf98bf3c0af72b0996cadf1bf664",
+   "base_sha256": "f77e6ede50824dd4fc5c6e6cf6f829cb83419a8620316947f3ac587b0b7e16ff",
+   "backup": "suzu-assistant-previous.js",
+   "url": "https://suzutravels.com/suzu-assistant.js",
+   "bytes": 84964
+  },
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "fce24e9b0df0b0e371cee39e34f86205e7e0bb8e36e4d1a185739da8e245e0da",
+   "base_sha256": "82e68d260d80f37c7c5cc193ecaf70ac3f13b8052a56d71b46f3a84ba8e92d4f",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1033100
+  }
+ ]
+}
