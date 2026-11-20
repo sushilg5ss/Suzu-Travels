@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-20n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "Weather links for 74 places + Full forecast for 13 live-widget places + 55 Explore/Hindi links to 10-20 Nov pages",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "fc84e5d10bfcefea24a6d30668b28c0e7cb7ab26907a14cd75fae2c58b09c5c5",
+   "base_sha256": "242e5f604c7f4f89334ccb45ab0877d488955ef0b5933adffb808bffe1fe45d2",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1046536
+  }
+ ]
+}
