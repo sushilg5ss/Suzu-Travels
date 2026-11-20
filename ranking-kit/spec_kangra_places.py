@@ -1,0 +1,116 @@
+KD = "kangra-devi"
+MS = "masroor-rock-cut-temple"
+DG = "dharamshala-ghumne-ki-jagah"
+SPEC = dict(
+    lang="en",
+    slug="kangra-tourist-places",
+    title="Kangra Tourist Places: Kangra Fort, Kangra Devi, Masroor, Jwala Ji, Pong Dam and the Kangra Valley (2026)",
+    seo_title="Kangra Tourist Places: Fort, Temples, Masroor & Valley",
+    seo_desc="Kangra tourist places: Kangra Fort, Kangra Devi, Masroor rock-cut temples, Chamunda, Jwala Ji and Pong Dam, with distances, a 2-day plan and how to reach.",
+    focus="kangra tourist places",
+    photo_pick=dict(slugs=[KD, MS, DG], ids=[
+        (KD + ":side-8", "hero", "Kangra Fort on its cliff above the river", "Kangra Fort on a steep cliff above the river at Kangra"),
+        (KD + ":hero-1", "fig", "The Dhauladhar above the Kangra valley", "Snow-covered Dhauladhar range above the green Kangra valley"),
+        (KD + ":g-6", "g", "Kangra Fort, on the edge of Kangra town", "The walls of Kangra Fort"),
+        (KD + ":g-7", "g", "The stairway inside Kangra Fort", "Stone stairway inside Kangra Fort"),
+        (KD + ":fig-2", "g", "The shikhara of the Kangra Devi (Brajeshwari) temple", "Shikhara of the Brajeshwari Devi temple in Kangra town"),
+        (MS + ":hero-1", "g", "The Masroor rock-cut temples and their tank", "Masroor rock-cut temples reflected in their water tank"),
+        (MS + ":g-5", "g", "Masroor from above", "The Masroor temple complex seen from above"),
+        (MS + ":g-2", "g", "Carving on the rock at Masroor", "Stone carving at the Masroor rock-cut temples"),
+        (DG + ":g-5", "g", "Dharamshala and the Kangra valley from the slopes below Triund", "Dharamshala and the Kangra valley seen from the hills below Triund"),
+    ]),
+    kicker="Kangra · Kangra district · ~740 m",
+    tag="Kangra: the fort, the Devi and the valley below the Dhauladhar",
+    sub="The old town of the Katoch kings, 20 km below Dharamshala — with the great Kangra Fort, the Kangra Devi temple, the rock-cut temples of Masroor and the Jwala Ji and Chamunda shrines all within an hour.",
+    chips=[("~20 km", "from Dharamshala"), ("~8 km", "from Gaggal airport"), ("2 days", "to see it well"), ("Oct–Mar", "clearest views")],
+    flakes=False,
+    updated="November 2026",
+    wa="Hello Suzu Travels, I want to plan a Kangra / Dharamshala trip. Dates: ___ , people: ___ , starting from: ___",
+    cta2=("#see", "Places to visit"),
+    answer="<b>Kangra is the old town of the Katoch kings at about 740 m, about 20 km below Dharamshala and 8 km from Gaggal (Kangra) airport.</b> In town, see <a href=\"/kangra-fort/\">Kangra Fort</a> on its ridge above the Manjhi and Banganga rivers and the <a href=\"/pilgrimage-tours/kangra-devi/\">Kangra Devi (Brajeshwari) temple</a> in the bazaar. Within an hour are the 8th-century <a href=\"/masroor-rock-cut-temple/\">Masroor rock-cut temples</a> (about 35 km), <a href=\"/pilgrimage-tours/chamunda-devi/\">Chamunda Devi</a> (about 22 km), <a href=\"/pilgrimage-tours/jwala-ji/\">Jwala Ji</a> (about 30–35 km) and the tea town of <a href=\"/palampur-tourist-places/\">Palampur</a> (about 35 km). Kangra town itself rarely sees snow; <b>October–March</b> gives the clearest views of the snowy Dhauladhar.",
+    quick=[
+        ("Where", "Kangra district, on the Pathankot–Mandi highway, about 20 km from Dharamshala."),
+        ("Must see", "Kangra Fort, Kangra Devi temple, Masroor rock-cut temples."),
+        ("Days", "1 day for Kangra and Masroor; 2 days with Chamunda, Jwala Ji or Palampur."),
+        ("Getting there", "Gaggal airport ~8 km; Pathankot railway station ~90 km; narrow-gauge Kangra Valley Railway."),
+        ("Snow", "Rare in Kangra town; the Dhauladhar above is white in winter."),
+    ],
+    wx=dict(src="/suzu-weather-feed.json", daily=True, kicker="Live forecast", h2="Dharamshala and Bir weather today",
+            lead="Live readings from the two ends of the Kangra valley — Kangra town is lower and usually a few degrees warmer than Dharamshala.",
+            places=[dict(id="dharamshala", name="Dharamshala", alt="1460"), dict(id="bir", name="Bir", alt="1500")]),
+    sections=[
+        dict(id="see", kicker="In Kangra", h2="Places to visit in Kangra town", fig=True, ps=[
+            "The fort and the temple are about 3 km apart — together they take half a day.",
+        ], table=(["Place", "What it is", "Tip"], [
+            ["<a href=\"/kangra-fort/\">Kangra Fort</a>", "Fort of the Katoch kings on a ridge between the Manjhi and Banganga rivers, often called the largest fort in the Indian Himalayas; attacked by Mahmud of Ghazni in 1009 and badly damaged in the 1905 earthquake", "ASI monument — tickets can be booked online; a small museum near the gate shows Katoch royal items and Kangra miniatures"],
+            ["<a href=\"/pilgrimage-tours/kangra-devi/\">Kangra Devi (Brajeshwari) temple</a>", "Shakti Peeth in the Nagarkot area of the bazaar", "Darshan about 5 am–9 pm in summer; busiest at Navratri and Makar Sankranti"],
+            ["The old bazaar", "Lanes leading up to the temple, with prasad and brass shops", "Walk it on the way to the temple; parking is easier lower down"],
+        ])),
+        dict(id="around", kicker="Day trips", h2="Places to visit around Kangra", table=(["Place", "From Kangra", "Why go"], [
+            ["<a href=\"/masroor-rock-cut-temple/\">Masroor rock-cut temples</a>", "~35 km", "8th-century temples carved out of a single rock ridge, with a water tank in front"],
+            ["<a href=\"/pilgrimage-tours/chamunda-devi/\">Chamunda Devi</a>", "~22 km", "Temple on the Baner river on the Dharamshala–Palampur road; evening aarti"],
+            ["<a href=\"/pilgrimage-tours/jwala-ji/\">Jwala Ji (Jwalamukhi)</a>", "~30–35 km", "The Devi worshipped as natural flames — no idol"],
+            ["<a href=\"/dharamshala-tourist-places/\">Dharamshala & McLeodganj</a>", "~20 km", "Tibetan town, the Dalai Lama temple, Bhagsu and the Triund trail"],
+            ["<a href=\"/palampur-tourist-places/\">Palampur</a>", "~35 km", "Tea gardens, Andretta artists' village and the Baijnath temple beyond"],
+            ["<a href=\"/adventure/pong-dam-bird-watching-water-sports/\">Pong Dam lake</a>", "~55–65 km from Dharamshala", "Winter bird-watching and water sports on a large reservoir"],
+        ]), ps=[]),
+        dict(id="valley", kicker="The valley", h2="The Kangra valley at a glance", ps=[
+            "The Kangra valley runs along the foot of the Dhauladhar range, from Kangra and Dharamshala in the west through Palampur and Baijnath to Bir in the east. Each town has its own guide:",
+        ], table=(["Town", "Known for", "Our guide"], [
+            ["Dharamshala & McLeodganj", "Tibetan culture, cricket stadium, treks", "<a href=\"/dharamshala-tourist-places/\">Dharamshala tourist places</a>"],
+            ["Kangra", "Fort, Kangra Devi, Masroor", "This page"],
+            ["Palampur", "Tea gardens, Andretta, Baijnath", "<a href=\"/palampur-tourist-places/\">Palampur tourist places</a>"],
+            ["Bir & Billing", "Paragliding, monasteries", "<a href=\"/bir-billing-ghumne-ki-jagah/\">Bir Billing (Hindi)</a>"],
+        ])),
+        dict(id="reach", kicker="Getting there", h2="How to reach Kangra", ps=[
+            "<b>By air:</b> Gaggal (Kangra) airport is about 8 km from Kangra town. <b>By rail:</b> the nearest broad-gauge station is Pathankot, about 90 km away; the narrow-gauge Kangra Valley Railway (Pathankot–Jogindernagar) also stops at Kangra. <b>By road:</b> Kangra is on the Pathankot–Mandi highway, about 20 km from Dharamshala and about 35 km from Palampur. Coming from Delhi, the road route runs via Una and Kangra — see <a href=\"/delhi-to-dharamshala/\">Delhi to Dharamshala</a>.",
+        ]),
+        dict(id="taxi", kicker="By taxi", h2="A Kangra day by taxi", table=(["Day trip", "Sedan", "Ertiga", "Innova Crysta"], [
+            ["Kangra Fort + Masroor temples, full day (up to 250 km)", "₹3,000", "₹3,500", "₹4,750"],
+        ]), ps=[], after=[
+            "Our own full-day rates from Dharamshala; tolls and parking extra. See <a href=\"/cabs/dharamshala-taxi-service/\">Dharamshala taxi service</a> for drops and other routes.",
+        ]),
+        dict(id="plan", kicker="Plan", h2="A 2-day Kangra plan", ps=[
+            "<b>Day 1:</b> Kangra Fort in the morning, before the midday sun; Kangra Devi temple and the bazaar; afternoon drive to Masroor for the rock-cut temples in late light. <b>Day 2:</b> Chamunda Devi in the morning and on to Palampur's tea gardens — or, for a temple circuit, Jwala Ji instead. Stay in Dharamshala or McLeodganj, about 20–30 km away.",
+        ]),
+        dict(id="weather", kicker="Weather", h2="Kangra weather by season", table=(["Season", "Typical", "Notes"], [
+            ["October – November", "Clear and pleasant", "Best views of the Dhauladhar"],
+            ["December – February", "Cool days, cold nights", "Snow on the Dhauladhar above; see <a href=\"/dharamshala-snowfall/\">Dharamshala snowfall</a>"],
+            ["March – June", "Warm to hot in May–June", "Visit the fort early in the day"],
+            ["July – September", "Heavy monsoon rain", "Check road and landslide alerts"],
+        ]), ps=[]),
+    ],
+    gallery=dict(h2="Kangra in pictures", lead="Kangra Fort, the Kangra Devi temple, Masroor and the valley under the Dhauladhar — real photographs, each credited to its photographer."),
+    spots=dict(kicker="Read next", h2="More in the Kangra valley", lead="Our guides for the places around Kangra.", items=[
+        ("Kangra Fort", "History, timings, tickets", "<a href=\"/kangra-fort/\">Read →</a>"),
+        ("Masroor rock-cut temples", "The 'Himalayan Ellora'", "<a href=\"/masroor-rock-cut-temple/\">Read →</a>"),
+        ("Kangra Devi temple", "Darshan timings and story", "<a href=\"/pilgrimage-tours/kangra-devi/\">Read →</a>"),
+        ("Dharamshala tourist places", "McLeodganj, Bhagsu, Triund", "<a href=\"/dharamshala-tourist-places/\">Read →</a>"),
+        ("Palampur tourist places", "Tea gardens and Andretta", "<a href=\"/palampur-tourist-places/\">Read →</a>"),
+        ("Delhi to Dharamshala", "Flights, trains, Volvo", "<a href=\"/delhi-to-dharamshala/\">Read →</a>"),
+    ]),
+    sections2=[],
+    ctas=dict(h2="Plan Kangra and Dharamshala with us", lead="Hotels, meals and a private car for the fort, the temples and the valley — one written quote.", items=[
+        ("/destination/dharamshala-tour-packages/", "Dharamshala tour packages", "Dharamshala, McLeodganj, Kangra.", "Packages"),
+        ("/cabs/dharamshala-taxi-service/", "Dharamshala taxi service", "Full day from ₹3,000 in a sedan.", "Cab"),
+        ("/tours/dharamshala-dalhousie-tour-package-from-delhi/", "Dharamshala–Dalhousie from Delhi", "From ₹16,499 per person.", "Package"),
+        ("/himachal-tour-packages-quote/", "Get a free quote", "Tell us your dates and group size.", "Quote"),
+    ]),
+    quote_h2="Planning Kangra?",
+    quote_text="Tell us your dates and group size. We plan the fort, the temples and the valley with stays in Dharamshala or McLeodganj and send one written quote with hotels, meals and a private car. Suzu Travels is a travel agent registered with Himachal Pradesh Tourism, based in Bilaspur, Himachal Pradesh.",
+    faq_h2="Kangra tourist places: common questions",
+    faqs=[
+        ("What are the main tourist places in Kangra?", "Kangra Fort, the Kangra Devi (Brajeshwari) temple and, nearby, the Masroor rock-cut temples, Chamunda Devi, Jwala Ji and Palampur."),
+        ("How far is Kangra from Dharamshala?", "About 20 km by road."),
+        ("How far is Masroor from Kangra?", "About 35 km; most people combine Kangra Fort and Masroor in one day."),
+        ("What is the nearest airport to Kangra?", "Gaggal (Kangra) airport, about 8 km from Kangra town."),
+        ("Which is the nearest railway station to Kangra?", "Pathankot is the nearest broad-gauge station, about 90 km away; the narrow-gauge Kangra Valley Railway also stops at Kangra."),
+        ("Does it snow in Kangra?", "Kangra town rarely gets snow, but the Dhauladhar range above the valley is snow-covered in winter."),
+        ("How many days are enough for Kangra?", "One day for Kangra Fort, the Kangra Devi temple and Masroor; two days to add Chamunda, Jwala Ji or Palampur."),
+    ],
+    sources=[
+        ("Himachal Pradesh Tourism", "https://himachaltourism.gov.in/"),
+        ("Archaeological Survey of India", "https://asi.nic.in/"),
+        ("Suzu Travels: Dharamshala taxi rates", "https://suzutravels.com/cabs/dharamshala-taxi-service/"),
+    ],
+)
