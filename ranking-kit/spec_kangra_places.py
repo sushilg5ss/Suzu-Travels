@@ -63,7 +63,7 @@ SPEC = dict(
             ["Bir & Billing", "Paragliding, monasteries", "<a href=\"/bir-billing-ghumne-ki-jagah/\">Bir Billing (Hindi)</a>"],
         ])),
         dict(id="reach", kicker="Getting there", h2="How to reach Kangra", ps=[
-            "<b>By air:</b> <a href=\"/kangra-airport/\">Gaggal (Kangra) airport</a> is about 8 km from Kangra town. <b>By rail:</b> the nearest broad-gauge station is Pathankot, about 90 km away; the narrow-gauge Kangra Valley Railway (Pathankot–Jogindernagar) also stops at Kangra. <b>By road:</b> Kangra is on the Pathankot–Mandi highway, about 20 km from Dharamshala and about 35 km from Palampur. Coming from Delhi, the road route runs via Una and Kangra — see <a href=\"/delhi-to-dharamshala/\">Delhi to Dharamshala</a>.",
+            "<b>By air:</b> <a href=\"/kangra-airport/\">Gaggal (Kangra) airport</a> is about 8 km from Kangra town. <b>By rail:</b> the nearest broad-gauge station is Pathankot, about 90 km away; the narrow-gauge <a href=\"/kangra-valley-railway/\">Kangra Valley Railway</a> (Pathankot–Jogindernagar) also stops at Kangra. <b>By road:</b> Kangra is on the Pathankot–Mandi highway, about 20 km from Dharamshala and about 35 km from Palampur. Coming from Delhi, the road route runs via Una and Kangra — see <a href=\"/delhi-to-dharamshala/\">Delhi to Dharamshala</a>.",
         ]),
         dict(id="taxi", kicker="By taxi", h2="A Kangra day by taxi", table=(["Day trip", "Sedan", "Ertiga", "Innova Crysta"], [
             ["Kangra Fort + Masroor temples, full day (up to 250 km)", "₹3,000", "₹3,500", "₹4,750"],

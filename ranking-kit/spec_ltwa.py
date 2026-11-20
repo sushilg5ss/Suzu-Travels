@@ -1,0 +1,88 @@
+L = "library-of-tibetan-works-and-archives"
+SPEC = dict(
+    lang="en",
+    slug="library-of-tibetan-works-and-archives",
+    title="Library of Tibetan Works and Archives, Dharamsala: Buddhist Philosophy Classes for Visitors, Location and Tips (2026–27)",
+    seo_title="Library of Tibetan Works & Archives: Classes and Visits",
+    seo_desc="Library of Tibetan Works and Archives, Dharamsala: weekday Buddhist philosophy classes with English translation, terms, breaks and how to get there.",
+    focus="library of tibetan works and archives",
+    photo_pick=dict(slugs=[L, "dharamshala-snowfall", "dharamshala-ghumne-ki-jagah"], ids=[
+        (L + ":hero-1", "hero"),
+        (L + ":fig-1", "fig"),
+        (L + ":g-1", "g"),
+        (L + ":g-2", "g"),
+        (L + ":g-3", "g"),
+        ("dharamshala-ghumne-ki-jagah:g-3", "g", "McLeod Ganj, about 20 minutes' walk up the hill", "Tibetan temple and bazaar in McLeod Ganj"),
+        ("dharamshala-snowfall:g-3", "g", "The Dhauladhar above Dharamsala", "Alpenglow on the snowy Dhauladhar range above Dharamsala"),
+        ("dharamshala-ghumne-ki-jagah:g-5", "g", "Dharamsala and the Kangra valley from the hills", "Dharamsala town and the Kangra valley from the hills above"),
+    ]),
+    kicker="Gangchen Kyishong · Dharamsala · founded 1970",
+    tag="The Tibetan Library: sit in on a Buddhist philosophy class",
+    sub="Founded by the Dalai Lama in 1970, the Library of Tibetan Works and Archives keeps Tibetan books, manuscripts and art safe in exile — and runs weekday classes in Buddhist philosophy, taught by geshes with English translation, that visitors can join.",
+    chips=[("1970", "founded"), ("Mon–Fri", "classes"), ("English", "translation"), ("~20 min", "walk from McLeod Ganj")],
+    flakes=False,
+    updated="November 2026",
+    wa="Hello Suzu Travels, I am coming to Dharamsala to study / attend classes. Dates: ___ , arriving from: ___",
+    cta2=("#classes", "Classes"),
+    answer="<b>The Library of Tibetan Works and Archives (LTWA) is a Tibetan library and study centre founded by the Dalai Lama in 1970, in the Gangchen Kyishong compound between lower Dharamsala and McLeod Ganj</b> — about 20 minutes' walk down Jogibara Road from McLeod Ganj. It holds Tibetan books, manuscripts and artefacts, and runs <b>Buddhist philosophy classes for the public</b>: taught by qualified geshes in Tibetan with <b>English translation</b>, on weekdays (Wednesday is logic and debate), each with a short meditation. The 2026 year opened on 11 March, with a <b>summer break from 14 to 31 July</b> and a <b>winter break from 11 December</b>. Timings change around the Dalai Lama's teachings, so confirm with the library before you go.",
+    quick=[
+        ("Where", "Gangchen Kyishong, between lower Dharamsala and McLeod Ganj."),
+        ("Classes", "Weekdays (not Sat, Sun or holidays); English translation."),
+        ("Wednesdays", "Buddhist logic and debate."),
+        ("Breaks", "14–31 July; winter break from 11 December."),
+        ("Certificate", "For 80% attendance on a semester's topic."),
+    ],
+    sections=[
+        dict(id="classes", kicker="Classes", h2="Buddhist philosophy classes for visitors", fig=True, ps=[
+            "The library's own course page sets out how the classes work:",
+        ], table=(["What", "Details"], [
+            ["Teachers", "Qualified geshes, with English translators"],
+            ["Days", "Monday to Friday; no classes on Saturdays, Sundays and official holidays"],
+            ["Wednesdays", "Buddhist logic and debate"],
+            ["Format", "Each class covers a text or topic of Indian or Tibetan Buddhist philosophy, with 15 minutes of meditation"],
+            ["Terms", "2026 opened on 11 March; summer break 14–31 July; winter break from 11 December"],
+            ["Certificate", "Given for a semester's topic with at least 80% attendance"],
+        ]), after=[
+            "Classes have usually been held mid-morning, in two one-hour sessions, but the schedule moves around the Dalai Lama's public teachings — check with the library on arrival.",
+        ]),
+        dict(id="visit", kicker="Visiting", h2="Visiting the library", ps=[
+            "The library sits inside <b>Gangchen Kyishong</b>, the compound of the Central Tibetan Administration, on the road between lower Dharamsala and McLeod Ganj. Alongside the reading rooms and archives it keeps Tibetan manuscripts, thangkas and other artefacts. Dress modestly, keep voices low, and ask before taking photographs inside.",
+        ]),
+        dict(id="reach", kicker="Getting there", h2="How to get there", ps=[
+            "<b>On foot:</b> about 20 minutes downhill from McLeod Ganj on Jogibara Road; the walk back is uphill. <b>By taxi or auto-rickshaw:</b> a few minutes from McLeod Ganj or the lower town. <b>From further away:</b> fly into <a href=\"/kangra-airport/\">Kangra (Gaggal) airport</a> or take the overnight bus from Delhi — see <a href=\"/delhi-to-dharamshala-for-foreigners/\">Delhi to Dharamshala for foreign visitors</a>.",
+        ]),
+        dict(id="more", kicker="More study", h2="Other places to learn in Dharamsala", ps=[
+            "For a residential course, see <a href=\"/tushita-meditation-centre/\">Tushita Meditation Centre</a> above McLeod Ganj and the Vipassana centre next to it. For Tibetan arts, visit the studios at <a href=\"/norbulingka-institute/\">Norbulingka Institute</a>. The Dalai Lama's public teachings are held at the <a href=\"/dalai-lama-temple/\">main temple in McLeod Ganj</a> a few times a year.",
+        ]),
+    ],
+    gallery=dict(h2="The Tibetan Library and Gangchen Kyishong", lead="The library building, the compound and Tibetan scriptures — real photographs, each credited to its photographer."),
+    spots=dict(kicker="Read next", h2="Tibetan Dharamsala", lead="Our guides for the area.", items=[
+        ("Tushita Meditation Centre", "10-day Buddhism course", "<a href=\"/tushita-meditation-centre/\">Read →</a>"),
+        ("Norbulingka Institute", "Tibetan arts", "<a href=\"/norbulingka-institute/\">Read →</a>"),
+        ("Dalai Lama Temple", "Timings and teachings", "<a href=\"/dalai-lama-temple/\">Read →</a>"),
+        ("McLeod Ganj", "Little Lhasa", "<a href=\"/mcleod-ganj/\">Read →</a>"),
+        ("Dharamshala for international travellers", "Planning your stay", "<a href=\"/dharamshala-for-international-travellers/\">Read →</a>"),
+        ("Kangra airport", "Flights and distances", "<a href=\"/kangra-airport/\">Read →</a>"),
+    ]),
+    sections2=[],
+    ctas=dict(h2="Staying in Dharamsala to study?", lead="Airport pickup, a room near McLeod Ganj and weekend trips in the Kangra valley — one written quote.", items=[
+        ("/cabs/dharamshala-taxi-service/", "Dharamshala taxi service", "Pickups from Gaggal airport and Pathankot.", "Cab"),
+        ("/dharamshala-for-international-travellers/", "Dharamshala for international travellers", "Where to stay, what to see.", "Guide"),
+        ("/himachal-tour-packages-for-international-travellers/", "Himachal for international travellers", "Add a trip after your studies.", "Guide"),
+        ("/himachal-tour-packages-quote/", "Get a free quote", "Tell us your dates.", "Quote"),
+    ]),
+    quote_h2="Coming to Dharamsala for a while?",
+    quote_text="We are not part of the library — contact it directly about classes. We can meet you at the airport, find a room for your stay and plan weekend trips around the Kangra valley, with one written quote. Suzu Travels is a travel agent registered with Himachal Pradesh Tourism, based in Bilaspur, Himachal Pradesh.",
+    faq_h2="Library of Tibetan Works and Archives: common questions",
+    faqs=[
+        ("Where is the Library of Tibetan Works and Archives?", "In Gangchen Kyishong, the Central Tibetan Administration compound between lower Dharamsala and McLeod Ganj, about 20 minutes' walk from McLeod Ganj."),
+        ("Can tourists attend classes at the Tibetan Library?", "Yes, the Buddhist philosophy classes are open to the public, with English translation; confirm the current schedule with the library."),
+        ("When are classes held?", "On weekdays, except official holidays; the 2026 year opened on 11 March, with breaks from 14 to 31 July and from 11 December."),
+        ("Who founded the Library of Tibetan Works and Archives?", "The 14th Dalai Lama, in 1970."),
+        ("Is there a certificate?", "Yes, for completing a semester's topic with at least 80% attendance."),
+    ],
+    sources=[
+        ("LTWA: Buddhist philosophy courses", "https://tibetanlibrary.org/buddhist-philosophy-courses/"),
+        ("Tushita: Buddhism in Dharamsala", "https://tushita.info/being-here/buddhism-in-dharamsala/"),
+    ],
+)

@@ -55,6 +55,9 @@ SPEC = dict(
         dict(id="plan", kicker="Plan", h2="Combine Norbulingka with", ps=[
             "<b>Morning:</b> Norbulingka when the studios are busy. <b>Afternoon:</b> south to <a href=\"/kangra-fort/\">Kangra Fort</a> and the <a href=\"/pilgrimage-tours/kangra-devi/\">Kangra Devi temple</a>, or east to <a href=\"/pilgrimage-tours/chamunda-devi/\">Chamunda Devi</a> and on to the tea gardens of <a href=\"/palampur-tourist-places/\">Palampur</a>. Staying in McLeod Ganj? Pair it with the <a href=\"/dalai-lama-temple/\">Dalai Lama Temple</a> the day before — see <a href=\"/kangra-tourist-places/\">Kangra tourist places</a> for more.",
         ]),
+        dict(id="gyuto", kicker="Next door", h2="Gyuto Monastery, a short drive away", ps=[
+            "The large <b>Gyuto Tantric Monastery</b> stands at Sidhbari, about 6–7 km from Dharamshala on the Palampur road, close to Norbulingka — easy to combine in one morning. It is the modern home in exile of the Gyuto tantric tradition, founded in Tibet in 1474, and its monks are known for their deep, resonant chanting. It is also associated with the 17th Karmapa, Ogyen Trinley Dorje, who lived here after arriving from Tibet in 2000. Visitors can see the main hall and the grounds; check locally for any public audience or ceremony, and expect security checks if one is held.",
+        ]),
         dict(id="etiquette", kicker="Good to know", h2="Visiting respectfully", ps=[
             "Dress modestly (shoulders and knees covered), take your shoes off in the temple, walk around shrines clockwise, and ask before photographing artists at work. Sundays and some Tibetan festival days are closed, so check the day before you set out.",
         ]),
@@ -65,7 +68,7 @@ SPEC = dict(
         ("Dalai Lama Temple", "Timings and teachings", "<a href=\"/dalai-lama-temple/\">Read →</a>"),
         ("Tushita Meditation Centre", "Buddhism courses above McLeod Ganj", "<a href=\"/tushita-meditation-centre/\">Read →</a>"),
         ("Kangra airport", "Flights and distances", "<a href=\"/kangra-airport/\">Read →</a>"),
-        ("Dharamshala for international travellers", "Planning your stay", "<a href=\"/dharamshala-for-international-travellers/\">Read →</a>"),
+        ("Library of Tibetan Works and Archives", "Buddhist philosophy classes", "<a href=\"/library-of-tibetan-works-and-archives/\">Read →</a>"),
         ("Kangra tourist places", "Fort, temples, valley", "<a href=\"/kangra-tourist-places/\">Read →</a>"),
     ]),
     sections2=[],
