@@ -59,7 +59,7 @@ SPEC = dict(
         ]),
         dict(id="others", kicker="Other options", h2="Other meditation and Buddhism courses in Dharamsala", table=(["Place", "What", "Good to know"], [
             ["Dhamma Sikhara (Himachal Vipassana Centre)", "10-day Vipassana courses in the S.N. Goenka tradition", "Next to Tushita; donation-based; apply online; courses usually start on the 1st and 15th of each month from March to November (next listed: 15 March 2027)"],
-            ["Library of Tibetan Works & Archives", "Daily Buddhist philosophy classes in Tibetan with English translation", "About 20 minutes' walk down Jogibara Road from McLeod Ganj; March/April to December, weekdays"],
+            ["<a href=\"/library-of-tibetan-works-and-archives/\">Library of Tibetan Works & Archives</a>", "Daily Buddhist philosophy classes in Tibetan with English translation", "About 20 minutes' walk down Jogibara Road from McLeod Ganj; March/April to December, weekdays"],
             ["<a href=\"/dalai-lama-temple/\">Dalai Lama Temple</a>", "Public teachings a few times a year", "Dates on the official schedule; register with your passport"],
         ]), ps=[]),
         dict(id="reach", kicker="Getting there", h2="Getting to Tushita", ps=[
