@@ -98,6 +98,11 @@ Each page was checked live: 200, index, self-canonical, 1 H1, FAQPage, credited 
 - **Norbulingka:** dharamshala-for-international-travellers, mcleod-ganj, dharamshala-tourist-places.
 - **Kangra Valley Railway:** kangra-tourist-places.
 - **LTWA and Gyuto:** norbulingka-institute.
+- **EN hub /places-to-visit-in-himachal/ (18182):**
+  - Next to Kangra tourist places: Norbulingka, Tushita, Tibetan Library.
+  - In the "Getting there" line: Kangra airport, Shimla airport, Kangra Valley Railway.
+
+All WordPress writes finished by 23:56 IST. All internal links on the 6 pages return 200.
 
 ## 4. Skipped or handed off (no duplicates)
 
