@@ -65,7 +65,7 @@ Owner: Suzu Travels (Sushil Kumar). Used by the scheduled "Suzu Cab …" agents.
 ## Business facts to use (never invent others)
 - HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022 (link `/certificates/`), GST registered. Office NH 103, Kulahru, Tehsil Ghumarwin, Bilaspur HP. WhatsApp/phone +91 70874 88961.
 - Rating phrase must be exactly `★ 4.7 · 377 Google reviews` (the Suzu Live Reviews plugin rewrites it site-wide).
-- Manali (Solang/Atal/Rohtang) and Kashmir local sightseeing = locally registered union taxis; Suzu books them. Rohtang: online permit, closed Tuesdays. Himachal entry fee for non-HP vehicles (₹100/day up to 12 seats, 2026–27).
+- Manali (Solang/Atal/Rohtang) and Kashmir local sightseeing = locally registered union taxis; Suzu books them. Rohtang: online permit for a set date (no Tuesday-closure claim: Tribune 25 May 2025 says Tuesdays opened; no 2026 order found — QA 20 Nov 2026). Himachal entry fee for non-HP vehicles (₹100/day up to 12 seats, 2026–27).
 - Never claim fleet size, "verified/insured drivers", customer counts, awards or reviews that are not proven. Vehicle photos are "representative of the class" (credits block says so) — never promise a specific car/colour/number plate.
 
 ## Page anatomy (hub, v2)

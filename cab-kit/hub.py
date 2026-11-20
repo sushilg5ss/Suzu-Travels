@@ -194,7 +194,7 @@ def build():
              f'<p style="margin:22px 0 0"><a class="szc-btn gold" href="/certificates/">See our certificates</a></p></div></section>')
     # tips
     from pages_content import HP_ENTRY, NIGHT, WINTER, MONSOON
-    body += f'<section class="szc-sec alt" id="tips"><span class="szc-kicker">Road guide</span><h2>Driving to the hills: what to know</h2>{tips([HP_ENTRY, NIGHT, WINTER, MONSOON, ("Local union taxis", "In Manali and Kashmir, local sightseeing is done in locally registered taxis as per union practice. We book them for you at local rates."), ("Snow & permits", "Rohtang needs an online permit and is closed on Tuesdays; Atal Tunnel needs none. We handle permits with your booking.")])}</section>'
+    body += f'<section class="szc-sec alt" id="tips"><span class="szc-kicker">Road guide</span><h2>Driving to the hills: what to know</h2>{tips([HP_ENTRY, NIGHT, WINTER, MONSOON, ("Local union taxis", "In Manali and Kashmir, local sightseeing is done in locally registered taxis as per union practice. We book them for you at local rates."), ("Snow & permits", "Rohtang needs an online permit for a set date; Atal Tunnel needs none. We handle permits with your booking.")])}</section>'
     body += f'<section class="szc-sec" id="booking"><span class="szc-kicker">How booking works</span><h2>Booked in four simple steps</h2>{steps()}</section>'
     body += quote_block(p, "", "")
     rel = [("/himachal-tour-packages/", "Himachal tour packages", "Hotel + cab"), ("/destination/kashmir-tour-packages/", "Kashmir tour packages", ""),

@@ -63,10 +63,23 @@ Re-ranked 2026-10-01 by Cab SEO/QA (Keyword Planner IN/English, 1 Oct; head-term
 | 48 | [x] amritsar-to-dharamshala-taxi — LIVE 2026-11-18 https://suzutravels.com/cabs/amritsar-to-dharamshala-taxi/ (ID 23409) | amritsar to dharamshala taxi | 260 (HIGH comp.) | (was 33) |
 | 49 | [x] manali-taxi-package — LIVE 2026-11-19 https://suzutravels.com/cabs/manali-taxi-package/ (ID 23656) | manali taxi package | 260 (LOW; peak 590 May) | NEW 1 Nov. Multi-stop package page (per-day price, Solang/Atal/Rohtang via union taxis) |
 | 50 | [x] one-way-taxi-delhi — LIVE 2026-11-20 https://suzutravels.com/cabs/one-way-taxi-delhi/ (ID 23842) | one way taxi delhi | 210 (HIGH; was 420 on 1 Oct) | (was 31) Service page: every one-way fare from Delhi, return-empty explanation |
-| 51 | [ ] srinagar-to-leh-taxi | srinagar to leh taxi | 210 | NEW 29 Oct. Season Jun–Oct, Zojila |
-| 52 | [ ] kashmir-taxi-package | kashmir taxi package | 170 | NEW 29 Oct. Multi-stop package page (per-day price) |
-| 53 | [ ] delhi-to-lansdowne-taxi | delhi to lansdowne taxi | 170 (MEDIUM) | NEW 1 Nov. Weekend hill drive, ~260 km |
-| 54 | [ ] manali-to-spiti-taxi | manali to spiti taxi | 10 (was 120) | (was 34) Kunzum season, Kaza — low volume now |
+| 51 | [ ] chandigarh-to-delhi-taxi | chandigarh to delhi taxi | 2,900 (LOW; peak 4,400 Mar) | NEW 20 Nov. Reverse of delhi-to-chandigarh (own pickup-city intent); same ROUTES km/f so fares agree; + shimla to delhi 260, manali to delhi 480 as FAQ/links |
+| 52 | [ ] pathankot-taxi-service | pathankot taxi service | 2,900 (MEDIUM; peak 3,600 May) | NEW 20 Nov. City page: Pathankot Cantt/Jn station + airport pickups → Dalhousie, Dharamshala, Katra, Amritsar, Jammu; links pathankot-to-dalhousie/-dharamshala |
+| 53 | [ ] mussoorie-taxi-service | mussoorie taxi service | 2,400 (MEDIUM) | NEW 20 Nov. City page: Kempty/Dhanaulti/Landour locals + drops to Dehradun, Rishikesh, Delhi; links dehradun-to-mussoorie, delhi-to-mussoorie |
+| 54 | [ ] dalhousie-taxi-service | dalhousie taxi service | 1,300 (LOW; peak 2,900 Sep) | NEW 20 Nov. City page: Khajjiar/Chamba locals + Pathankot/Amritsar/Dharamshala drops |
+| 55 | [ ] haldwani-taxi-service | haldwani taxi service | 1,000 (LOW; peak 1,600 Dec) | NEW 20 Nov. City page: Haldwani/Kathgodam pickups → Nainital, Bhimtal, Almora, Kainchi Dham, Corbett; links kathgodam-to-nainital, delhi-to-haldwani |
+| 56 | [ ] katra-taxi-service | katra taxi service | 880 (LOW) | NEW 20 Nov. City page: Katra pickups → Jammu, Srinagar, Patnitop, Shiv Khori; links jammu-to-katra, delhi-to-katra |
+| 57 | [ ] leh-taxi-service | leh taxi service | 880 (LOW; peak 1,600 Jun) | NEW 20 Nov. Ladakh local sightseeing runs in Leh union taxis — page must say so (like srinagar-taxi-service); season May–Oct |
+| 58 | [ ] haridwar-to-rishikesh-taxi | haridwar to rishikesh taxi | 720 (MEDIUM; peak 1,300 May) | NEW 20 Nov. Short transfer ~25 km; + dehradun to rishikesh 390 |
+| 59 | [ ] kalka-taxi-service | kalka taxi service | 590 (LOW) | NEW 20 Nov. Kalka station pickups (toy-train disruption 2026) → Shimla, Kasauli, Chail; links kalka-to-shimla |
+| 60 | [ ] chandigarh-to-kasol-taxi | chandigarh to kasol taxi | 590 (MEDIUM) | NEW 20 Nov. Via Mandi–Bhuntar; links delhi-to-kasol |
+| 61 | [ ] manali-to-delhi-taxi | manali to delhi taxi | 480 (LOW; peak 880 Jun) | NEW 20 Nov. Reverse of delhi-to-manali; same km/f |
+| 62 | [ ] srinagar-to-leh-taxi | srinagar to leh taxi | 210 (LOW; peak 390 May–Jun) | NEW 29 Oct. Season Jun–Oct, Zojila — build before spring |
+| 63 | [ ] kashmir-taxi-package | kashmir taxi package | 210 (MEDIUM) | NEW 29 Oct. Multi-stop package page (per-day price) |
+| 64 | [ ] delhi-to-lansdowne-taxi | delhi to lansdowne taxi | 170 (MEDIUM) | NEW 1 Nov. Weekend hill drive, ~260 km |
+| 65 | [ ] manali-to-spiti-taxi | manali to spiti taxi | 10 (HIGH) | (was 34) Kunzum season, Kaza — low volume now |
+
+<!-- Re-ranked 2026-11-20 by Cab SEO/QA: Keyword Planner IN/EN 52 kw (research/kw_all.csv); value = volume × winnability (LOW comp ×1.2; every cab SERP so far = aggregators, so low-competition city/reverse pages first). Not added: delhi to ludhiana 880 (plains, off-focus), delhi to mathura 590 (covered by delhi-to-vrindavan). -->
 
 ## Ideas (unranked — the SEO/QA agent re-ranks monthly from Keyword Planner)
 - Multi-stop itinerary cab pages: "Shimla Manali taxi package 6 days", "Himachal taxi tour from Delhi", "Dharamshala Dalhousie taxi package", "Kashmir taxi package" (price per day, route map with all stops).

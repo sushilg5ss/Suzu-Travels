@@ -204,7 +204,7 @@ var SNS=[
  [32.75,36,75.75,80,'000001111000','Altitude comes first','Most of the drive is above 4,000 m. Halt a night in Manali or Kargil, carry cash and warm layers, and keep a spare day before your flight out of Leh.',0],
  [31.8,32.5,77.6,79,'111111000111','Spiti via Kunzum','Snow shuts Kunzum Pass (Manali–Kaza) from about mid-October until it reopens in summer. We check the road report before we quote.',1],
  [32.4,32.75,76.75,77.6,'111000000001','Lahaul in snow','After fresh snow the road beyond the Atal Tunnel can close for a day or two. We confirm the day before.',1],
- [32.15,32.4,77,77.35,'111111111111','Rohtang permit','Rohtang needs an online permit, is closed on Tuesdays and is usually open about May to November. Local sightseeing runs in Manali union taxis; we book them.',0],
+ [32.15,32.4,77,77.35,'111111111111','Rohtang permit','Rohtang needs an online permit and is usually open about May to November. Local sightseeing runs in Manali union taxis; we book them.',0],
  [30.55,31.1,78.15,79.6,'000011111000','Yatra rules','Every pilgrim must register, and yatra hill roads are closed to cars from 8 pm to 5 am, so days start at 5–6 am.',0],
  [30.55,31.1,78.15,79.6,'111100000111','Char Dham winter closing','The dhams close for winter in November, after Diwali, and reopen on Akshaya Tritiya in late April or May.',1],
  [33.2,35,73.5,75.75,'110000000001','Kashmir in snow','Heavy snow can close the Jammu–Srinagar highway for a day or more. Drivers carry chains; we check the advisory the evening before.',1]
