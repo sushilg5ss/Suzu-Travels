@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; color: #fff; }
+      .kicker { position: absolute; left: 120px; top: 64px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .h { position: absolute; left: 120px; top: 108px; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .cardx { position: absolute; top: 290px; width: 790px; height: 330px; border-radius: 28px; background: #12304d; border: 3px solid #d4a24c; padding: 40px 48px; }
+      .card .d { color: #d4a24c; font-weight: 800; font-size: 34px; letter-spacing: 0.1em; }
+      .card .t { margin-top: 14px; font-weight: 800; font-size: 50px; line-height: 1.12; }
+      .card .s { margin-top: 18px; font-weight: 500; font-size: 32px; line-height: 1.3; color: #d9e2ec; }
+      .months { position: absolute; left: 120px; top: 730px; width: 1680px; height: 230px; }
+      .m { position: absolute; top: 60px; width: 130px; height: 90px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 30px; }
+      .end { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+          .chip { position:absolute; top:0; height:84px; border-radius:999px; background:#12304d; border:3px solid #d4a24c; padding:0 34px; display:flex; align-items:center; font-weight:800; font-size:34px; white-space:nowrap; }
+      .rl { position:absolute; left:0; font-weight:800; font-size:34px; white-space:nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="pa" class="clip" data-start="0" data-duration="6.4" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker">KHAJJIAR · HOW THE DAY WORKS</div>
+        <div class="h">Dalhousie to the meadow, <span style="color:#d4a24c">~24 km</span></div>
+        <svg style="position:absolute;left:100px;top:240px;width:1720px;height:560px;overflow:visible" viewBox="0 0 1720 560">
+          <path id="road" d="M 60 120 C 260 120 300 330 520 330 C 720 330 760 170 960 170 C 1100 170 1140 300 1230 300" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" />
+          <circle cx="60" cy="120" r="16" fill="#d4a24c" />
+          <text x="60" y="70" text-anchor="middle" style="font-size:40px;fill:#d4a24c">Dalhousie</text>
+          <g id="lm"><circle cx="520" cy="330" r="11" fill="#fff" /><text x="520" y="390" text-anchor="middle" style="font-size:32px">Lakkar Mandi</text></g>
+          <g id="kt"><circle cx="960" cy="170" r="11" fill="#fff" /><text x="960" y="120" text-anchor="middle" style="font-size:32px">Kalatop forest</text><text x="960" y="80" text-anchor="middle" style="font-size:26px;fill:#d4a24c">3 km walk</text></g>
+          <text id="cab" x="200" y="250" text-anchor="middle" style="font-size:30px;fill:#d9e2ec">cab · about 1 hr</text>
+          <g id="mead">
+            <ellipse cx="1440" cy="300" rx="250" ry="170" fill="#2f6b34" stroke="#d4a24c" stroke-width="6" />
+            <ellipse cx="1450" cy="320" rx="62" ry="32" fill="#3d6e8f" />
+            <text x="1440" y="520" text-anchor="middle" style="font-size:40px;fill:#d4a24c">KHAJJIAR ~1,920 m</text>
+          </g>
+          <g id="p1"><circle cx="1330" cy="200" r="30" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><path d="M 1314 200 C 1320 188 1340 188 1346 200" fill="none" stroke="#d4a24c" stroke-width="5" stroke-linecap="round"/><text x="1330" y="150" text-anchor="middle" style="font-size:28px">Paragliding</text></g>
+          <g id="p2"><circle cx="1570" cy="220" r="30" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><circle cx="1570" cy="220" r="14" fill="none" stroke="#fff" stroke-width="4"/><text x="1640" y="170" text-anchor="middle" style="font-size:28px">Zorbing</text></g>
+          <g id="p3"><circle cx="1310" cy="380" r="30" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><text x="1310" y="390" text-anchor="middle" style="font-size:28px;fill:#d4a24c">H</text><text x="1250" y="450" text-anchor="middle" style="font-size:28px">Horse ride</text></g>
+          <g id="p4"><circle cx="1600" cy="390" r="30" fill="#0b1f33" stroke="#d4a24c" stroke-width="5"/><path d="M 1586 396 L 1600 380 L 1614 396 Z" fill="#d4a24c"/><text x="1650" y="460" text-anchor="middle" style="font-size:28px">Khajji Nag temple</text></g>
+          <circle id="dot" r="15" fill="#fff" stroke="#d4a24c" stroke-width="5" />
+        </svg>
+        <div id="chips" style="position:absolute;left:120px;top:880px;width:1680px;height:90px">
+          <div class="chip" id="k1" style="left:0">9 am · leave Dalhousie</div>
+          <div class="chip" id="k2" style="left:520px">~10 am · fly first, then play</div>
+          <div class="chip" id="k3" style="left:1160px">3–4 pm · head back</div>
+        </div>
+      </div>
+      <div id="pb" class="clip" data-start="6.2" data-duration="3.9" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kicker">WHEN TO GO</div>
+        <div class="h">Two seasons, <span style="color:#d4a24c">one meadow</span></div>
+        <div class="months" style="top:340px;height:520px">
+          <div class="rl" style="top:0;color:#d4a24c">PARAGLIDING</div>
+          <div id="row1" style="position:absolute;left:0;top:0;width:1680px;height:160px"></div>
+          <div class="rl" style="top:250px;color:#d4a24c">SNOW ON THE MEADOW</div>
+          <div id="row2" style="position:absolute;left:0;top:250px;width:1680px;height:160px"></div>
+          <div style="position:absolute;left:0;top:450px;font-weight:500;font-size:30px;color:#d9e2ec;white-space:nowrap">Gold = flying · Slate = clear days only · Grey = no flying in monsoon · White = snow on some days</div>
+        </div>
+      </div>
+      <div id="pc" class="clip" data-start="9.8" data-duration="2.2" data-track-index="2" style="position:absolute;inset:0">
+        <div class="end">
+          <div style="font-weight:800;font-size:84px;letter-spacing:-0.02em">Plan your <span style="color:#d4a24c">Khajjiar day</span></div>
+          <div style="margin-top:40px;background:#d4a24c;color:#0b1f33;font-weight:800;font-size:44px;padding:22px 56px;border-radius:999px">Get Quote on WhatsApp</div>
+          <div style="margin-top:36px;font-weight:500;font-size:32px;color:#d9e2ec">Hotel + cab + activities in one plan</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const M = ["J","F","M","A","M","J","J","A","S","O","N","D"];
+      const fly = ["#5d7389","#5d7389","#d4a24c","#d4a24c","#d4a24c","#d4a24c","#3a4a5a","#3a4a5a","split","#d4a24c","#d4a24c","#5d7389"];
+      const snow = ["#ffffff","#ffffff","#22384f","#22384f","#22384f","#22384f","#22384f","#22384f","#22384f","#22384f","#22384f","#ffffff"];
+      function mk(rowId, cols, pre) {
+        const row = document.getElementById(rowId);
+        M.forEach((m, i) => {
+          const d = document.createElement("div");
+          d.className = "m " + pre; d.style.left = (i * 140) + "px";
+          const c = cols[i];
+          if (c === "split") { d.style.background = "linear-gradient(90deg,#3a4a5a 50%,#d4a24c 50%)"; d.style.color = "#0b1f33"; d.style.justifyContent = "flex-end"; d.style.paddingRight = "22px"; }
+          else { d.style.background = c; d.style.color = (c === "#d4a24c" || c === "#ffffff") ? "#0b1f33" : "#ffffff"; }
+          d.textContent = m; row.appendChild(d);
+        });
+      }
+      mk("row1", fly, "ma"); mk("row2", snow, "mb");
+      const tl = gsap.timeline({ paused: true });
+      const road = document.getElementById("road");
+      const RL = road.getTotalLength();
+      road.setAttribute("stroke-dasharray", RL + " " + RL);
+      tl.fromTo("#pa .kicker, #pa .h", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo(road, { attr: { "stroke-dashoffset": RL } }, { attr: { "stroke-dashoffset": 0 }, duration: 2.4, ease: "power1.inOut" }, 0.6);
+      const dot = document.getElementById("dot");
+      function put(t) { const a = road.getPointAtLength(RL * t); dot.setAttribute("cx", a.x.toFixed(1)); dot.setAttribute("cy", a.y.toFixed(1)); }
+      put(0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 2.4, ease: "power1.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.6);
+      tl.fromTo("#cab", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.9);
+      tl.fromTo("#lm", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 1.4);
+      tl.fromTo("#kt", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 2.2);
+      tl.fromTo("#mead", { opacity: 0, scale: 0.9, transformOrigin: "1440px 300px" }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, 2.9);
+      tl.fromTo("#p1, #p2, #p3, #p4", { opacity: 0 }, { opacity: 1, duration: 0.35, stagger: 0.3, ease: "power2.out" }, 3.5);
+      tl.fromTo("#k1, #k2, #k3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.35, ease: "power2.out" }, 4.4);
+      tl.to("#pa", { opacity: 0, duration: 0.3, ease: "power1.in" }, 6.1);
+      tl.fromTo("#pb", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 6.2);
+      tl.fromTo(".ma", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.05, ease: "power2.out" }, 6.5);
+      tl.fromTo(".mb", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.05, ease: "power2.out" }, 7.4);
+      tl.to("#pb", { opacity: 0, duration: 0.3, ease: "power1.in" }, 9.75);
+      tl.fromTo("#pc", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 9.8);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
