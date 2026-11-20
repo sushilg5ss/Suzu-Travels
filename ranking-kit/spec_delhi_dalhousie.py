@@ -4,7 +4,7 @@ SPEC = dict(
     slug="delhi-to-dalhousie",
     title="Delhi to Dalhousie: Distance 560 km, Night Train to Pathankot, Route, Taxi — and from Pathankot and Amritsar (2026)",
     seo_title="Delhi to Dalhousie: Distance 560 km, Train, Bus & Taxi",
-    seo_desc="Delhi to Dalhousie is about 560 km, 10–11 hours by road via Pathankot. Night trains to Pathankot (80 km, 2.5–3 h by taxi from ₹2,499), Amritsar to Dalhousie 195 km, Volvo buses and winter road tips.",
+    seo_desc="Delhi to Dalhousie: about 560 km by road, or a night train to Pathankot and 80 km by taxi (from ₹2,499). Amritsar route and winter tips.",
     focus="delhi to dalhousie distance",
     photo_pick=dict(slugs=[M, "chamba-ka-mausam"], ids=[
         (M + ":hero-1", "hero", "The snow ranges seen from Dalhousie on a clear day", "Snow-covered Dhauladhar and Pir Panjal ranges seen from Dalhousie"),

@@ -3,7 +3,7 @@ SPEC = dict(
     slug="chandigarh-to-shimla",
     title="Chandigarh to Shimla: Distance 115 km, Route via Parwanoo and Solan, Bus, Taxi, Toy Train and Winter Road (2026)",
     seo_title="Chandigarh to Shimla: Distance 115 km, Route, Bus & Taxi",
-    seo_desc="Chandigarh to Shimla is about 115 km, 3–3.5 hours by car on the four-lane via Parwanoo and Solan. HRTC buses, taxi fares from ₹2,499, the toy train status and winter tips.",
+    seo_desc="Chandigarh to Shimla: about 115 km, 3–3.5 hours via Parwanoo and Solan. HRTC buses, taxi from ₹2,499, toy train status and winter tips.",
     focus="chandigarh to shimla distance",
     photo_pick=dict(slugs=["mall-road-shimla", "solan-tourist-places", "barog-dagshai"], ids=[
         ("mall-road-shimla:hero-1", "hero", "The Ridge, Shimla — the end of the drive", "The Ridge in Shimla with Christ Church and the State Library"),
@@ -62,7 +62,7 @@ SPEC = dict(
     gallery=dict(h2="On the road from Chandigarh to Shimla", lead="Dharampur, Barog, Solan and the Ridge at the end of the drive — real photographs, each credited to its photographer."),
     spots=dict(kicker="Read next", h2="Shimla and the road up", lead="Our guides for this route.", items=[
         ("Mall Road Shimla", "The Ridge, Scandal Point, food", "<a href=\"/mall-road-shimla/\">Read →</a>"),
-        ("Where to stay in Shimla", "Mall, Chotta Shimla, Mashobra", "<a href=\"/where-to-stay-in-shimla/\">Read →</a>"),
+        ("Where to stay in Shimla", "Mall, Chhota Shimla, Mashobra", "<a href=\"/where-to-stay-in-shimla/\">Read →</a>"),
         ("Kufri tourist places", "Snow above Shimla", "<a href=\"/kufri-tourist-places/\">Read →</a>"),
         ("Solan tourist places", "Halfway up", "<a href=\"/solan-tourist-places/\">Read →</a>"),
         ("Shimla kaise jaye", "Delhi se Shimla (Hindi)", "<a href=\"/shimla-kaise-jaye/\">Read →</a>"),

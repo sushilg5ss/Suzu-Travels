@@ -3,7 +3,7 @@ SPEC = dict(
     slug="delhi-to-shimla",
     title="Delhi to Shimla: Distance 345 km, Route, Train to Kalka, Toy Train, Volvo Bus, Taxi and Winter Tips (2026)",
     seo_title="Delhi to Shimla: Distance 345 km, Train, Bus & Taxi",
-    seo_desc="Delhi to Shimla is about 345 km, 7–9 hours by road via Ambala, Zirakpur and Solan. Train to Kalka plus the toy train (status to 31 Dec 2026), overnight Volvo, taxi fares from ₹5,199 and winter tips.",
+    seo_desc="Delhi to Shimla: about 345 km, 7–9 hours by road. Train to Kalka and the toy train (status to 31 Dec), overnight Volvo and taxi from ₹5,199.",
     focus="delhi to shimla distance",
     photo_pick=dict(slugs=["mall-road-shimla", "barog-dagshai", "solan-tourist-places"], ids=[
         ("mall-road-shimla:g-6", "hero", "Sunset on the Ridge, Shimla", "Sunset behind the flag on the Ridge, Shimla"),
@@ -64,7 +64,7 @@ SPEC = dict(
     gallery=dict(h2="On the way from Delhi to Shimla", lead="The toy-train line at Barog, the hills at Dharampur, Solan and the Ridge — real photographs, each credited to its photographer."),
     spots=dict(kicker="Read next", h2="Shimla trip planning", lead="Our guides for Shimla.", items=[
         ("Mall Road Shimla", "The Ridge, Scandal Point, food", "<a href=\"/mall-road-shimla/\">Read →</a>"),
-        ("Where to stay in Shimla", "Mall, Chotta Shimla, Mashobra", "<a href=\"/where-to-stay-in-shimla/\">Read →</a>"),
+        ("Where to stay in Shimla", "Mall, Chhota Shimla, Mashobra", "<a href=\"/where-to-stay-in-shimla/\">Read →</a>"),
         ("Kufri tourist places", "Snow above Shimla", "<a href=\"/kufri-tourist-places/\">Read →</a>"),
         ("Shimla trip ka kharcha", "Budget (Hindi)", "<a href=\"/shimla-trip-ka-kharcha/\">Read →</a>"),
         ("Himachal distance chart", "Kilometres and hours", "<a href=\"/himachal-distance-chart/\">Read →</a>"),

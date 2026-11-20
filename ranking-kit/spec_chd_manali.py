@@ -3,7 +3,7 @@ SPEC = dict(
     slug="chandigarh-to-manali",
     title="Chandigarh to Manali: Distance 290 km, Route via Kiratpur, Bilaspur and Mandi, Bus, Taxi and Winter Road (2026)",
     seo_title="Chandigarh to Manali: Distance 290 km, Route, Bus & Taxi",
-    seo_desc="Chandigarh to Manali is about 290 km, 7–8 hours by car on the Kiratpur–Mandi four-lane via Bilaspur, Mandi and Kullu. Volvo buses, taxi fares from ₹4,199, stops and winter tips.",
+    seo_desc="Chandigarh to Manali: about 290 km, 7–8 hours via Bilaspur, Mandi and Kullu. Volvo buses, taxi from ₹4,199, best stops and winter tips.",
     focus="chandigarh to manali distance",
     photo_pick=dict(slugs=["kullu-ka-mausam", "bilaspur-gobind-sagar", "manali-ka-mausam", "mall-road-manali"], ids=[
         ("kullu-ka-mausam:hero-1", "hero", "The Kullu valley, the last stretch before Manali", "The Kullu valley with snow-covered peaks behind"),

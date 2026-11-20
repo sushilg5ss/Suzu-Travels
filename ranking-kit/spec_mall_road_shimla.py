@@ -4,7 +4,7 @@ SPEC = dict(
     slug="mall-road-shimla",
     title="Mall Road Shimla: The Ridge, Scandal Point, Christ Church, Lakkar Bazaar, Food and Winter Carnival (2026)",
     seo_title="Mall Road Shimla: Ridge, Scandal Point, Shopping & Food",
-    seo_desc="Mall Road Shimla guide: the Ridge, Scandal Point, Christ Church, Gaiety Theatre, Lakkar Bazaar, where to eat and shop, the lift from Cart Road, the Winter Carnival and walking rules.",
+    seo_desc="Mall Road Shimla guide: the Ridge, Scandal Point, Christ Church, Lakkar Bazaar, food, shopping, the Cart Road lift and the Winter Carnival (24 Dec–1 Jan).",
     focus="mall road shimla",
     photo_pick=dict(slugs=[P, "shimla-ghumne-ki-jagah", "shimla-snowfall"], ids=[
         (P + ":hero-1", "hero"),

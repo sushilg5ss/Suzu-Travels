@@ -3,7 +3,7 @@ SPEC = dict(
     slug="what-to-wear-in-manali-in-winter",
     title="What to Wear in Manali in Winter: Packing List for December, January and February (2026–27)",
     seo_title="What to Wear in Manali in Winter: Dec–Feb Packing List",
-    seo_desc="What to wear in Manali in December, January and February: how to layer for −1 °C nights, which jacket and shoes, what to rent for snow at Solang and Sissu, kids' kit and a printable checklist.",
+    seo_desc="What to wear in Manali in winter: layers for −1 °C nights, jackets and shoes, snow gear to hire at Solang and Sissu, and a packing checklist.",
     focus="what to wear in manali in winter",
     photo_pick=dict(slugs=["manali-ka-mausam", "solang-valley-weather", "sissu", "manali-ghumne-ki-jagah"], ids=[
         ("solang-valley-weather:hero-1", "hero", "Solang valley under snow", "Snow-covered slopes at Solang valley near Manali"),

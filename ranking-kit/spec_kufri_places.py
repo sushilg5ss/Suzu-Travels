@@ -4,7 +4,7 @@ SPEC = dict(
     slug="kufri-tourist-places",
     title="Kufri Tourist Places: Mahasu Peak, Himalayan Nature Park, Fagu, Snow and a Half-Day Plan (2026)",
     seo_title="Kufri Tourist Places: Mahasu Peak, Nature Park, Fagu & Snow",
-    seo_desc="Kufri tourist places near Shimla: Mahasu Peak by pony or yak, Himalayan Nature Park, Kufri Fun World, Green Valley, Fagu, Chini Bungalow, Snow Kingdom and when the snow comes.",
+    seo_desc="Kufri tourist places: Mahasu Peak, Himalayan Nature Park, Fun World, Fagu and Chini Bungalow — distance from Shimla and when the snow comes.",
     focus="kufri tourist places",
     photo_pick=dict(slugs=[P, "shimla-snowfall"], ids=[
         (P + ":hero-1", "hero"),

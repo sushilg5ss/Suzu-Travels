@@ -4,7 +4,7 @@ SPEC = dict(
     slug="manali-to-kasol",
     title="Manali to Kasol: Distance, Route via Kullu and Bhuntar, Bus, Taxi and Winter Road Tips (2026)",
     seo_title="Manali to Kasol: Distance 80 km, Route, Bus & Taxi",
-    seo_desc="Manali to Kasol is about 80 km, 2.5–3.5 hours by road via Kullu and Bhuntar. Bus changes, taxi options, the Parvati valley road in winter, and stops at Malana, Manikaran and Tosh.",
+    seo_desc="Manali to Kasol: about 80 km, 2.5–3.5 hours via Kullu and Bhuntar. Bus change, taxi, winter road tips and stops at Malana, Manikaran and Tosh.",
     focus="manali to kasol",
     photo_pick=dict(slugs=[K, "malana-village", "manali-ghumne-ki-jagah"], ids=[
         (K + ":hero-1", "hero", "The Parvati river near Kasol", "The Parvati river flowing between deodar forest and high mountains near Kasol"),

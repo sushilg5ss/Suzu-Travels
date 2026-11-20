@@ -4,7 +4,7 @@ SPEC = dict(
     slug="delhi-to-kasauli",
     title="Delhi to Kasauli: Distance 300 km, Route via Chandigarh and Dharampur, Train to Kalka, Bus and Taxi (2026)",
     seo_title="Delhi to Kasauli: Distance 300 km, Route, Bus & Taxi",
-    seo_desc="Delhi to Kasauli is about 300 km, 6–7 hours by road via Chandigarh and Dharampur; Chandigarh to Kasauli about 60 km, 1.5–2 hours (taxi from ₹2,499). Trains to Kalka, buses and winter tips.",
+    seo_desc="Delhi to Kasauli: about 300 km, 6–7 hours via Chandigarh and Dharampur; 60 km from Chandigarh (taxi from ₹2,499). Trains, buses and tips.",
     focus="delhi to kasauli distance",
     photo_pick=dict(slugs=[P, "barog-dagshai"], ids=[
         (P + ":hero-1", "hero", "Kasauli and its pine ridges", "Kasauli on a pine-covered ridge"),

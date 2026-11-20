@@ -3,7 +3,7 @@ SPEC = dict(
     slug="where-to-stay-in-manali",
     title="Where to Stay in Manali: Best Areas for Families, Couples, Budget and Snow (Winter 2026–27)",
     seo_title="Where to Stay in Manali: Best Areas for Every Trip (2026)",
-    seo_desc="Where to stay in Manali: Mall Road, Old Manali, Vashisht, Hadimba, the left bank, Solang and Naggar compared — who each suits, winter access, heating, parking and typical room rates.",
+    seo_desc="Where to stay in Manali: Mall Road, Old Manali, Aleo, Vashisht or Solang — which area suits families, couples and snow trips, with budget ranges.",
     focus="where to stay in manali",
     photo_pick=dict(slugs=["manali-ghumne-ki-jagah", "hidimba-devi", "manali-ka-mausam", "kullu-ka-mausam", "solang-valley-weather"], ids=[
         ("manali-ka-mausam:fig-2", "hero", "Manali after a winter snowfall", "Manali town and the forest after a winter snowfall"),

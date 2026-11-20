@@ -4,7 +4,7 @@ SPEC = dict(
     slug="chitkul",
     title="Chitkul, Kinnaur: India's Last Village on the Baspa — How to Reach, Winter Road, Stay and Best Time (2026)",
     seo_title="Chitkul, Kinnaur: How to Reach, Winter Road & Best Time",
-    seo_desc="Chitkul (3,450 m) at the head of the Baspa valley: distance from Shimla and Sangla, HRTC buses, the Mathi Devi temple, the winter road closure, where to stay and the best months.",
+    seo_desc="Chitkul (3,450 m), the last village on the Baspa: distance from Shimla and Sangla, buses, the winter road closure, where to stay and best months.",
     focus="chitkul",
     photo_pick=dict(slugs=[P], ids=[
         (P + ":hero-1", "hero"),

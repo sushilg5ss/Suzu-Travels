@@ -3,7 +3,7 @@ SPEC = dict(
     slug="where-to-stay-in-shimla",
     title="Where to Stay in Shimla: Mall Road, Chhota Shimla, Kufri, Mashobra and More Compared (2026)",
     seo_title="Where to Stay in Shimla: Best Areas Compared (2026)",
-    seo_desc="Where to stay in Shimla: Mall Road and the Ridge, Lakkar Bazaar, Chhota Shimla, Cart Road, Shoghi, Kufri and Mashobra compared — car access, winter snow, parking and room rates.",
+    seo_desc="Where to stay in Shimla: Mall Road, Chhota Shimla, Cart Road, Kufri or Mashobra — which area suits families, couples and snow trips, with budgets.",
     focus="where to stay in shimla",
     photo_pick=dict(slugs=["mall-road-shimla", "shimla-ghumne-ki-jagah", "kufri-tourist-places", "naldehra-mashobra", "shimla-snowfall"], ids=[
         ("shimla-ghumne-ki-jagah:hero-1", "hero", "Shimla spread across its hillsides", "Shimla town spread across its forested hillsides"),

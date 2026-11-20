@@ -4,7 +4,7 @@ SPEC = dict(
     slug="delhi-to-kasol",
     title="Delhi to Kasol: Distance 520 km, Route via Chandigarh, Mandi and Bhuntar, Volvo Bus, Taxi — and from Chandigarh (2026)",
     seo_title="Delhi to Kasol: Distance 520 km, Volvo, Taxi & Route",
-    seo_desc="Delhi to Kasol is about 520 km, 11–12 hours by road via Chandigarh, Bilaspur, Mandi and Bhuntar; Chandigarh to Kasol about 265 km. Overnight Volvos, taxi fares from ₹7,799 and winter tips.",
+    seo_desc="Delhi to Kasol: about 520 km, 11–12 hours via Chandigarh, Mandi and Bhuntar; 265 km from Chandigarh. Overnight Volvo and taxi from ₹7,799.",
     focus="delhi to kasol distance",
     photo_pick=dict(slugs=[K, "bilaspur-gobind-sagar", "kullu-ka-mausam", "malana-village"], ids=[
         (K + ":fig-2", "hero", "The bridge at Kasol, end of the long drive", "Footbridge over the Parvati at Kasol leading towards Chalal"),
