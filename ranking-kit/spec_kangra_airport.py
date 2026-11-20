@@ -69,7 +69,7 @@ SPEC = dict(
         ("Tushita Meditation Centre", "Courses above McLeod Ganj", "<a href=\"/tushita-meditation-centre/\">Read →</a>"),
         ("Norbulingka Institute", "Tibetan arts near Dharamshala", "<a href=\"/norbulingka-institute/\">Read →</a>"),
         ("Delhi to Dharamshala", "Flights, trains, Volvo", "<a href=\"/delhi-to-dharamshala/\">Read →</a>"),
-        ("Kullu–Manali airport", "Bhuntar, for Manali", "<a href=\"/kullu-manali-airport/\">Read →</a>"),
+        ("Kullu–Manali airport", "Bhuntar, for Manali", "<a href=\"/kullu-manali-airport/\">Read →</a> · <a href=\"/shimla-airport/\">Shimla airport →</a>"),
     ]),
     sections2=[],
     ctas=dict(h2="Book your pickup or the whole trip", lead="Airport pickup, hotels in Dharamshala or McLeod Ganj and day trips — one written quote.", items=[
