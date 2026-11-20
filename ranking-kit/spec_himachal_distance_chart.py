@@ -55,11 +55,11 @@ SPEC = dict(
             "Chandigarh is the gateway for most Himachal road trips — the airport and railway station are 1–2 hours from the hills.",
         ], table=(["Chandigarh to", "Distance", "Drive time"], [
             ["Kasauli", "~60 km", "1.5–2 h"],
-            ["Shimla", "~115 km", "3–3.5 h"],
+            ["<a href=\"/chandigarh-to-shimla/\">Shimla</a>", "~115 km", "3–3.5 h"],
             ["Bilaspur (HP)", "~110 km", "2.5–3 h"],
             ["Dharamshala", "~240 km", "5–6 h"],
             ["Kasol", "~265 km", "6–7 h"],
-            ["Manali", "~290 km", "7–8 h"],
+            ["<a href=\"/chandigarh-to-manali/\">Manali</a>", "~290 km", "7–8 h"],
             ["Dalhousie", "~300 km", "7 h"],
         ]), after=[
             "Cabs: <a href=\"/cabs/chandigarh-to-shimla-taxi/\">Chandigarh–Shimla</a> · <a href=\"/cabs/chandigarh-to-manali-taxi/\">Chandigarh–Manali</a> · <a href=\"/cabs/chandigarh-to-dharamshala-taxi/\">Chandigarh–Dharamshala</a>. Planning a loop? See our <a href=\"/himachal-road-trip-from-chandigarh-guide/\">Himachal road trip from Chandigarh</a>.",
