@@ -8,7 +8,7 @@
 - **Duplicate check:** every candidate was matched against the 1,090 live URLs and checked with WP search on the day of publishing.
 - **Cannibalisation rule:** one intent per URL. Hindi and English twins are linked with alt_lang.
 
-## 2. New pages (17 live)
+## 2. New pages (18 live)
 
 | # | URL | Focus | Dec searches (IN) | Lang |
 |---|-----|-------|-------------------|------|
@@ -28,7 +28,8 @@
 | 14 | /bilaspur-ghumne-ki-jagah/ (24294) | बिलासपुर घूमने की जगह | 1,000 | HI |
 | 15 | /nahan/ (24302) | nahan | 49,500 | EN |
 | 16 | /manali-to-kasol/ (24307) | manali to kasol | 22,200 (distance) | EN |
-| 17 | /solan-tourist-places/ | solan tourist places | 5,400 | EN |
+| 17 | /solan-tourist-places/ (24317) | solan tourist places | 5,400 | EN |
+| 18 | /chitkul/ | chitkul | 90,500 (we had only 55 impressions/28 days) | EN |
 
 Every page has:
 - Credited Commons photos: CC BY, CC BY-SA, CC0 or public domain only.
@@ -64,6 +65,8 @@ Kasauli and himachal-in-january had been edited by another agent. For those two 
 - Barog & Dagshai → Solan (this replaces the stale "toy train shut till 30 Nov" link)
 - मनाली घूमने की जगह → Mall Road Manali
 - Bilaspur EN ↔ HI
+- किन्नौर घूमने की जगह → Chitkul
+- EN hub "Quieter corners" line → Chitkul
 
 ## 4. Early results (Google Search Console, last 7 days)
 
@@ -87,6 +90,15 @@ Top pages:
 
 - **Pilgrim agents:** there is no page yet for Hidimba Temple (~246k Dec), Tara Devi (~33k) or Paonta Sahib (~165k).
 - **Adventure:** spare Jogini media is available (see section 2).
+- **Optimiser (watch):** "narkanda" queries (135k Dec) are split across 5 pages over the last 28 days. We sit around position 10. Linking them better should help:
+
+  | Page | Impressions | Position |
+  |---|---|---|
+  | /narkanda/ | 1,003 | 10.2 |
+  | /adventure/snow-and-skiing-in-narkanda/ | 466 | 7.8 |
+  | /hatu-peak-narkanda/ | 366 | 13.4 |
+  | /narkanda-ghumne-ki-jagah/ | 108 | 12.9 |
+  | /weather/narkanda/ | 107 | 8.5 |
 
 ## 6. Pending for Sushil
 
