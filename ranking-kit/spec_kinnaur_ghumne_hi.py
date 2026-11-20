@@ -71,7 +71,7 @@ SPEC = dict(
         ("स्पीति घूमने की जगह", "किन्नौर के आगे", "<a href=\"/spiti-ghumne-ki-jagah/\">पढ़ें →</a>"),
         ("नारकंडा और हाटू पीक", "रास्ते में", "<a href=\"/hatu-peak-narkanda/\">पढ़ें →</a>"),
         ("किन्नौर टूर पैकेज", "पूरा प्लान", "<a href=\"/kinnaur-tour-package/\">देखें →</a>"),
-        ("शिमला घूमने की जगह", "शुरुआत", "<a href=\"/shimla-ghumne-ki-jagah/\">पढ़ें →</a>"),
+        ("चितकुल", "बास्पा घाटी का आख़िरी गाँव", "<a href=\"/chitkul/\">Read in English →</a>"),
         ("हिमाचल घूमने की जगह", "पूरे राज्य की गाइड", "<a href=\"/himachal-ghumne-ki-jagah/\">पढ़ें →</a>"),
     ]),
     sections2=[],
