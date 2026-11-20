@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-20",
+ "customer": "1172710099",
+ "language": "en",
+ "source": "Pipeboard get_google_ads_keyword_ideas (banded)",
+ "note": "ww = no geo; IN = 2356; intl = US+GB+AU+DE+FR+IL",
+ "rows": {
+  "dunagiri peak": [
+   140,
+   140,
+   10
+  ],
+  "dunagiri": [
+   2400,
+   1900,
+   90
+  ],
+  "dunagiri mountain": [
+   390,
+   320,
+   40
+  ],
+  "dunagiri height": [
+   40,
+   40,
+   10
+  ],
+  "dunagiri temple": [
+   null,
+   5400,
+   40
+  ],
+  "dunagiri retreat": [
+   590,
+   480,
+   40
+  ],
+  "dronagiri parvat": [
+   9900,
+   9900,
+   170
+  ],
+  "dronagiri village trek": [
+   null,
+   20,
+   10
+  ],
+  "hardeol peak": [
+   110,
+   110,
+   10
+  ],
+  "hardeol": [
+   260,
+   210,
+   20
+  ],
+  "hardeol mountain": [
+   40,
+   30,
+   10
+  ],
+  "kalanag peak": [
+   70,
+   70,
+   10
+  ],
+  "kalanag": [
+   880,
+   210,
+   390
+  ],
+  "kalanag trek": [
+   70,
+   70,
+   10
+  ],
+  "kala nag peak": [
+   50,
+   50,
+   10
+  ],
+  "black peak uttarakhand": [
+   40,
+   40,
+   10
+  ],
+  "kala nag": [
+   null,
+   1900,
+   210
+  ]
+ },
+ "trends": {
+  "dunagiri peak ww": "Jun 2026 210",
+  "dunagiri ww": "Jun 2026 5400 (temple season)",
+  "kalanag peak ww": "Oct 2026 110"
+ },
+ "proposals_ww": {
+  "patalsu peak": 1300,
+  "kangto peak": 1600,
+  "gorichen peak": 1000,
+  "siniolchu": 1300,
+  "hotel siniolchu": 880,
+  "kedarnath peak": 2900,
+  "hathi parvat": 1300,
+  "nanda ghunti": 480,
+  "pauhunri": 590,
+  "tirsuli": 40500,
+  "kabru peak": 140,
+  "gangotri peak": 140,
+  "gauri parbat": 50,
+  "pandim peak": 50,
+  "rudugaira peak": 50,
+  "jogin peak": 30,
+  "rimo peak": 30
+ },
+ "proposal_trends": {
+  "tirsuli": "Aug 2026 301,000, Sep 90,500, Oct 9,900, else 5,400-6,600 (news spike; non-peak intent likely)",
+  "kangto peak": "Aug-Oct 2026 2,900-4,400 rising",
+  "kedarnath peak": "Mar 2026 9,900 (temple season, mixed)",
+  "patalsu peak": "Oct 2026 2,400"
+ }
+}

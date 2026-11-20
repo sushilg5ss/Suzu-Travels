@@ -182,5 +182,36 @@
    "https://publications.americanalpineclub.org/articles/12198326201"
   ],
   "height_alternates_m": []
+ },
+ {
+  "band": "6000",
+  "state": "Uttarakhand",
+  "range": "Garhwal Himalaya (Bandarpunch range)",
+  "district_or_area": "Uttarkashi (Govind National Park)",
+  "status": "climbed",
+  "best_season": "May–Jun & Sep–Oct",
+  "base": "Sankri → Taluka → Seema/Osla → Ruinsara Tal → Kiarkoti base camp",
+  "open_to_foreigners": "unknown",
+  "india_rank": null,
+  "alt_names": [
+   "Black Peak",
+   "Kala Nag",
+   "Bandarpunch I (old Survey name)"
+  ],
+  "name": "Kalanag",
+  "height_m": 6387,
+  "first_ascent_year": 1955,
+  "first_ascent_by": "J.T.M. (Jack) Gibson with two Sherpas, 7 Jun 1955, from the Osla/Tons side (a 1953 Gibson party turned back about 100 ft short)",
+  "status_note": "Approached by Indian teams via Ruinsara Tal; the 1955 and 1960 ascents came from the Osla/Tons side. Not named in the Feb 2026 Uttarakhand peak-opening reports; foreign-team status not verified (Nov 2026).",
+  "difficulty": "moderate",
+  "difficulty_note": "Glaciated; crevassed glacier between the camps and a steep, narrow summit ridge — ice axe, crampons and rope work",
+  "notable": "'Black Serpent'; the highest summit of the Bandarpunch massif. Older maps called it Bandarpunch I. Indian Army (Regiment of Artillery) ascent 7–8 Jun 1960.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/44/14/kalanag-east-face-expedition-1986/",
+   "https://publications.americanalpineclub.org/articles/12195614202/Asia-India-Banderpunch-Black-Peak",
+   "https://publications.americanalpineclub.org/articles/12196015804",
+   "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Kalanag"
+  ],
+  "height_alternates_m": []
  }
 ]

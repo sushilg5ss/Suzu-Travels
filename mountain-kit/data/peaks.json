@@ -987,7 +987,7 @@
   "range": "Kumaon Himalaya (Nanda Devi group)",
   "area": "Pithoragarh",
   "fa": 1978,
-  "fa_by": "Indo-Tibetan Border Police team led by S.P. Mulasi",
+  "fa_by": "Indo-Tibetan Border Police team led by S.P. Mulasi, 31 May 1978 (six summiters, via the Ikualari glacier and the Tirsuli ridge)",
   "status": "climbed",
   "status_note": "Opened to foreigners in the 2019 MHA/IMF list.",
   "grade": "technical",
@@ -996,7 +996,7 @@
   "base": "Munsiyari → Milam",
   "foreigners": "yes",
   "rank": 22,
-  "notable": "Highest peak on the northern sanctuary rim; only one further ascent (1991) recorded.",
+  "notable": "'Temple of God'; highest peak on the northern rim of the Nanda Devi Sanctuary. Only one further ascent recorded (Border Security Force, 24 Sep 1991).",
   "sources": [
    "https://en.wikipedia.org/wiki/Hardeol",
    "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand",
@@ -1338,7 +1338,7 @@
   "range": "Garhwal Himalaya (Nanda Devi group)",
   "area": "Chamoli",
   "fa": 1939,
-  "fa_by": "André Roch, Fritz Steuri & David Zogg (Swiss)",
+  "fa_by": "André Roch, Fritz Steuri & David Zogg (Swiss), 5 Jul 1939, via the SW ridge from the Rhamani glacier",
   "status": "climbed",
   "status_note": "Opened to foreigners in the 2019 list.",
   "grade": "technical",
@@ -1347,7 +1347,7 @@
   "base": "Joshimath → Jumma (Bagini glacier)",
   "foreigners": "yes",
   "rank": 31,
-  "notable": "Linked in legend with the Sanjeevani herb of the Ramayana.",
+  "notable": "On the NW corner of the Nanda Devi Sanctuary wall. Attempted from 1883 (Graham) and by Shipton in 1936; Tasker & Renshaw's 1975 alpine-style south route is a landmark. Not the Dunagiri temple hill near Dwarahat (Almora).",
   "sources": [
    "https://en.wikipedia.org/wiki/Dunagiri_(mountain)",
    "https://en.wikipedia.org/wiki/List_of_mountains_in_India"
@@ -3266,6 +3266,41 @@
    "https://en.wikipedia.org/wiki/Kang_Yatze",
    "https://publications.americanalpineclub.org/articles/13201216466",
    "https://dreamwanderlust.com/news/team-hmi-on-kang-yatse-alpine-style-ascent-and-first-traverse"
+  ]
+ },
+ {
+  "id": "kalanag",
+  "name": "Kalanag",
+  "alt": [
+   "Black Peak",
+   "Kala Nag",
+   "Bandarpunch I (old Survey name)"
+  ],
+  "m": 6387,
+  "ft": 20955,
+  "m_alt": [],
+  "band": "6000",
+  "state": "uttarakhand",
+  "state_label": "Uttarakhand",
+  "where": "Uttarakhand",
+  "range": "Garhwal Himalaya (Bandarpunch range)",
+  "area": "Uttarkashi (Govind National Park)",
+  "fa": 1955,
+  "fa_by": "J.T.M. (Jack) Gibson with two Sherpas, 7 Jun 1955, from the Osla/Tons side (a 1953 Gibson party turned back about 100 ft short)",
+  "status": "climbed",
+  "status_note": "Approached by Indian teams via Ruinsara Tal; the 1955 and 1960 ascents came from the Osla/Tons side. Not named in the Feb 2026 Uttarakhand peak-opening reports; foreign-team status not verified (Nov 2026).",
+  "grade": "moderate",
+  "grade_note": "Glaciated; crevassed glacier between the camps and a steep, narrow summit ridge — ice axe, crampons and rope work",
+  "season": "May–Jun & Sep–Oct",
+  "base": "Sankri → Taluka → Seema/Osla → Ruinsara Tal → Kiarkoti base camp",
+  "foreigners": "unknown",
+  "rank": null,
+  "notable": "'Black Serpent'; the highest summit of the Bandarpunch massif. Older maps called it Bandarpunch I. Indian Army (Regiment of Artillery) ascent 7–8 Jun 1960.",
+  "sources": [
+   "https://www.himalayanclub.org/hj/44/14/kalanag-east-face-expedition-1986/",
+   "https://publications.americanalpineclub.org/articles/12195614202/Asia-India-Banderpunch-Black-Peak",
+   "https://publications.americanalpineclub.org/articles/12196015804",
+   "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Kalanag"
   ]
  },
  {
