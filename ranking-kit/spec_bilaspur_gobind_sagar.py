@@ -22,6 +22,7 @@ SPEC = dict(
     sub="Where the Sutlej becomes the long Gobind Sagar reservoir — with temples that rise from the water in spring, boating and paragliding, and the first proper hill views on the drive from Chandigarh to Manali. It is also our home town.",
     chips=[("~670 m", "Bilaspur"), ("~110 km", "from Chandigarh"), ("Mar–Jun", "submerged temples visible"), ("On NH", "Kiratpur–Manali highway")],
     flakes=False,
+    alt_lang=("/bilaspur-ghumne-ki-jagah/", "हिंदी में पढ़ें: बिलासपुर घूमने की जगह"),
     updated="November 2026",
     wa="Hello Suzu Travels, I am driving to Manali and want to stop in Bilaspur. Dates: ___ , people: ___",
     cta2=("#see", "Things to do"),

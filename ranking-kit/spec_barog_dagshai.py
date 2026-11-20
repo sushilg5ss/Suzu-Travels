@@ -61,7 +61,7 @@ SPEC = dict(
         ("Chail", "~40 km", "Palace and old cricket ground. <a href=\"/chail/\">Chail guide →</a>"),
         ("Shimla", "~55 km", "<a href=\"/shimla-tourist-places/\">Shimla tourist places →</a>"),
         ("Naldehra & Mashobra", "Beyond Shimla", "<a href=\"/naldehra-mashobra/\">Guide →</a>"),
-        ("Toy train", "Kalka – Shimla", "<a href=\"/kalka-shimla-toy-train-status-kalka-section-shut-till-30-nov/\">Status →</a>"),
+        ("Solan", "Next town up the highway", "Temples, Menri monastery, Arki. <a href=\"/solan-tourist-places/\">Solan tourist places →</a>"),
         ("Shimla in winter", "Snow guide", "<a href=\"/shimla-snowfall/\">Shimla snowfall →</a>"),
     ]),
     sections2=[],

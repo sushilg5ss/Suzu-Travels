@@ -54,7 +54,7 @@ SPEC = dict(
     ],
     gallery=dict(h2="Renuka lake in pictures", lead="The lake and its temples, Parshuram tal and the lotus on the water — real photographs, each credited to its photographer."),
     spots=dict(kicker="Nearby", h2="Around Sirmaur", lead="Combine Renuka with these.", items=[
-        ("Nahan", "~38 km", "Sirmaur's old capital on a ridge."),
+        ("Nahan", "~38 km", "Sirmaur's old capital on a ridge. <a href=\"/nahan/\">Nahan guide →</a>"),
         ("Paonta Sahib", "~60 km", "Gurdwara on the Yamuna."),
         ("Churdhar", "Sirmaur's highest peak", "<a href=\"/adventure/churdhar-trek/\">Churdhar trek →</a>"),
         ("Barog & Dagshai", "Solan side", "<a href=\"/barog-dagshai/\">Guide →</a>"),
