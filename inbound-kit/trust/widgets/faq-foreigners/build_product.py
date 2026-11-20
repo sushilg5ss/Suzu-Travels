@@ -27,7 +27,7 @@ VISITOR = ('<p>Coming change: India is renaming the Tourist Visa the Visitor Vis
 OCI = '<p>Holders of an OCI card need no visa. Travelling on an Indian passport? No visa is needed either.</p>'
 GOV = ('<p>The US State Department rates India <strong>Level 2 – Exercise increased caution</strong> “due to crime and terrorism. Some '
        'areas have increased risk.” It rates Jammu and Kashmir Level 4: Do not travel, except eastern Ladakh and Leh (advisory issued '
-       '16 Jun 2025; Kashmir line checked 14 Nov 2026).</p><p>The UK FCDO advises against all travel to Jammu and Kashmir except air '
+       '16 Jun 2025, still the current advisory when checked 20 Nov 2026).</p><p>The UK FCDO advises against all travel to Jammu and Kashmir except air '
        'travel to and from, and travel within, the city of Jammu; against all travel within 10 km (6 mi) of the India–Pakistan border '
        'except the Wagah–Attari crossing; and against all but essential travel to Manipur (page updated 7 Oct 2026, checked 18 Nov 2026).'
        '</p><p><em>What this means for you:</em> read the current advice for your passport before you book, and ask your insurer whether '
@@ -70,7 +70,7 @@ WA = {
     11413: B.WA.replace('travelling%20in%20India%3A%20', 'my%20Char%20Dham%20Yatra%3A%20'),
 }
 SRC = ('Sources: indianvisaonline.gov.in (e-Visa page and e-Arrival notice, checked 18 Nov 2026); PIB press release 2335182 (11 Nov 2026); '
-       'US Department of State India travel advisory (issued 16 Jun 2025); UK FCDO India travel advice (updated 7 Oct 2026, checked '
+       'US Department of State India travel advisory (issued 16 Jun 2025, checked 20 Nov 2026); UK FCDO India travel advice (updated 7 Oct 2026, checked '
        '18 Nov 2026); India Meteorological Department (PR 804). Rules change — confirm before travel.')
 
 def make(pid):

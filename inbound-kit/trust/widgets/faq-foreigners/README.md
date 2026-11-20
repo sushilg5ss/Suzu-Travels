@@ -34,3 +34,14 @@ Links to live pages: first-time guide 15453, e-Visa 14187, private driver 14015,
   safety, choose-an-agency, UPI, SIM, insurance guides; sources line updated. US line unchanged (checked 23 Oct 2026; curl 403).
 - Verified 19 Nov 2026: hub content +988 bytes (= file delta), `?v=` + plain curl 200 with new text, 1 H1, index; Playwright 1440 + 390 + iPhone 13:
   9 details, toggles open, 0 overflowing elements, scrollWidth = viewport, 0 console errors. All 5 new links 200.
+
+## US advisory re-check (row 38) — live 2026-11-20 on 11411 + 11412 + 11413
+- travel.state.gov HTML is Cloudflare-blocked (403 to curl AND headless Chromium). Use the State Dept's own data feeds instead:
+  `https://cadataapi.state.gov/api/TravelAdvisories` (JSON; India entry 'India - Level 2: Exercise Increased Caution', Published/Updated
+  2025-06-15T20:00-04:00 = 16 Jun 2025) and `https://travel.state.gov/_res/rss/TAsTWs.xml` (pubDate Mon, 16 Jun 2025). Both 200 by curl.
+  The feed summary no longer lists the Level 4 areas, but the advisory version is unchanged, so the Level 4 lines of that 16 Jun 2025 issue stand.
+- Wording now: '(issued 16 Jun 2025, still the current advisory when checked 20 Nov 2026)' on the hub; '(advisory issued 16 Jun 2025, still the
+  current advisory when checked 20 Nov 2026)' on 11412/11413; sources lines '(issued 16 Jun 2025, checked 20 Nov 2026)'; hub footer 'US advisory checked 20 Nov 2026'.
+- Ops: `ops-row38-2026-11-20.json` (revert = swap find/replace). build_hub.py / build_product.py regenerate the same text.
+- Verified: curl `?v=` + plain 200 on all 3 (new text, no old dates, 1 H1, no noindex); Playwright 1440 + 390: block found, opens, scrollWidth = viewport, 0 page errors.
+- Next re-check: when the feed's 'Updated' changes (monthly glance is enough).

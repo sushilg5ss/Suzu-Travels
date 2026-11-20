@@ -24,6 +24,8 @@ new_fcdo = ('<p>The UK FCDO advises against all travel to Jammu and Kashmir exce
             'all but essential travel to Manipur (page updated 7 Oct 2026, checked 19 Nov 2026).</p>')
 GOV = GOV.replace(old_fcdo, new_fcdo).replace('We plan around it with you.</p>',
       'We plan around it with you. More: ' + B.a('/india-tours/is-india-safe-for-solo-female-travellers/', 'is India safe for solo female travellers?') + '</p>')
+# row 38 (20 Nov 2026): US advisory re-checked via the State Dept's official feeds (cadataapi.state.gov + travel.state.gov RSS): still Level 2, issued 16 Jun 2025
+GOV = GOV.replace('(issued 16 Jun 2025, checked 23 Oct 2026)', '(issued 16 Jun 2025, still the current advisory when checked 20 Nov 2026)')
 NEW = {
   P.K_VISA: P.visa_ans(),
   P.K_ARR: Q[P.K_ARR].replace('checked 18 Oct 2026', 'official site re-checked 18 Nov 2026'),
@@ -35,9 +37,9 @@ NEW = {
 SRC_OLD = B.SRC
 SRC_NEW = ('Sources: indianvisaonline.gov.in (e-Visa page and e-Arrival notice, checked 18 Nov 2026); Embassy of India e-Arrival card notice; '
            'PIB press release 2335182 (11 Nov 2026); '
-           'US Department of State India travel advisory (issued 16 Jun 2025); UK FCDO India travel advice (updated 7 Oct 2026, checked '
+           'US Department of State India travel advisory (issued 16 Jun 2025, checked 20 Nov 2026); UK FCDO India travel advice (updated 7 Oct 2026, checked '
            '19 Nov 2026); IRCTC Foreign Tourist Quota (High Commission of India); India Meteorological Department (PR 804). '
-           'US advisory checked 23 Oct 2026 — rules change, confirm before travel.')
+           'US advisory checked 20 Nov 2026 — rules change, confirm before travel.')
 old = B.html()
 out = old
 for q, ans in B.QA:
@@ -74,6 +76,7 @@ OPS = [
  ('or PayPal.</p>' + nxt(K[7]), 'or PayPal.' + P.PAY_MORE + nxt(K[7])),
  ('We do not give medical advice.</p>' + nxt(K[8]), 'We do not give medical advice.' + P.VAX_MORE + nxt(K[8])),
  (SRC_OLD, SRC_NEW),
+ ('(issued 16 Jun 2025, checked 23 Oct 2026)', '(issued 16 Jun 2025, still the current advisory when checked 20 Nov 2026)'),  # row 38, 20 Nov 2026
 ]
 chk = old
 for f, r in OPS:

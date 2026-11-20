@@ -1,0 +1,7 @@
+{"_note": "Row 38 us-advisory-recheck, applied 20 Nov 2026 with wp_replace_in_page (expected_count 1). Revert = swap find/replace.",
+ "11411": [["and Manipur (issued 16 Jun 2025, checked 23 Oct 2026).", "and Manipur (issued 16 Jun 2025, still the current advisory when checked 20 Nov 2026)."],
+           ["US Department of State India travel advisory (issued 16 Jun 2025); UK FCDO India travel advice (updated 7 Oct 2026, checked 19 Nov 2026)", "US Department of State India travel advisory (issued 16 Jun 2025, checked 20 Nov 2026); UK FCDO India travel advice (updated 7 Oct 2026, checked 19 Nov 2026)"],
+           ["US advisory checked 23 Oct 2026 — rules change", "US advisory checked 20 Nov 2026 — rules change"]],
+ "11412": [["(advisory issued 16 Jun 2025; Kashmir line checked 14 Nov 2026).", "(advisory issued 16 Jun 2025, still the current advisory when checked 20 Nov 2026)."],
+           ["US Department of State India travel advisory (issued 16 Jun 2025); UK FCDO", "US Department of State India travel advisory (issued 16 Jun 2025, checked 20 Nov 2026); UK FCDO"]],
+ "11413": "same 2 ops as 11412"}
