@@ -223,7 +223,7 @@ DEST = [
 D = {d[0]: d for d in DEST}
 
 ONREQ_ME = [('dubai', 'Dubai & UAE'), ('turkey', 'Turkey'), ('georgia', 'Georgia'), ('azerbaijan', 'Azerbaijan'), ('armenia', 'Armenia'), ('uzbekistan', 'Uzbekistan')]
-ONREQ_EU = [('europe', 'Europe (Multi-Country)'), ('switzerland', 'Switzerland'), ('uk', 'United Kingdom'), ('japan', 'Japan'), ('southkorea', 'South Korea'), ('hongkong', 'Hong Kong & Macau'), ('philippines', 'Philippines'), ('cambodia', 'Cambodia'), ('china', 'China'), ('russia', 'Russia'), ('mauritius', 'Mauritius'), ('egypt', 'Egypt'), ('australia', 'Australia & New Zealand'), ('newzealand', 'New Zealand'), ('kazakhstan', 'Kazakhstan & Kyrgyzstan')]
+ONREQ_EU = [('europe', 'Europe (Multi-Country)'), ('switzerland', 'Switzerland'), ('uk', 'United Kingdom'), ('iceland', 'Iceland'), ('japan', 'Japan'), ('southkorea', 'South Korea'), ('hongkong', 'Hong Kong & Macau'), ('philippines', 'Philippines'), ('cambodia', 'Cambodia'), ('china', 'China'), ('russia', 'Russia'), ('mauritius', 'Mauritius'), ('egypt', 'Egypt'), ('australia', 'Australia & New Zealand'), ('newzealand', 'New Zealand'), ('kazakhstan', 'Kazakhstan & Kyrgyzstan')]
 
 def dcard(slug, eager=False, n=1):
     s, page, name, places, days, best = D[slug]
@@ -233,7 +233,7 @@ def dcard(slug, eager=False, n=1):
             f'<span class="hx-best">Best: {html.escape(best)}</span>'
             f'<span class="hx-dt"><b>{html.escape(name)}</b><em>{html.escape(places)} · {days}</em><i>View {html.escape(name.split(",")[0])} trips {svg("arrow").replace("<svg ", "<svg width=\"15\" height=\"15\" ")}</i></span></a>')
 
-LIVE_PAGES = {'dubai': ('dubai-tour-packages', 'View Dubai trips →'), 'turkey': ('turkey-tour-packages', 'View Turkey trips →'), 'georgia': ('georgia-tour-packages', 'View Georgia trips →'), 'azerbaijan': ('azerbaijan-tour-packages', 'View Azerbaijan trips →'), 'japan': ('japan-tour-packages', 'View Japan trips →'), 'europe': ('europe-tour-packages', 'View Europe trips →'), 'switzerland': ('switzerland-tour-packages', 'View Switzerland trips →'), 'mauritius': ('mauritius-tour-packages', 'View Mauritius trips →'), 'uk': ('uk-tour-packages', 'View UK trips →'), 'egypt': ('egypt-tour-packages', 'View Egypt trips →'), 'australia': ('australia-tour-packages', 'View Australia trips →'), 'uzbekistan': ('uzbekistan-tour-packages', 'View Uzbekistan trips →'), 'kazakhstan': ('kazakhstan-tour-packages', 'View Kazakhstan trips →'), 'armenia': ('armenia-tour-packages', 'View Armenia trips →'), 'hongkong': ('hong-kong-tour-packages', 'View Hong Kong trips →'), 'china': ('china-tour-packages', 'View China trips →'), 'russia': ('russia-tour-packages', 'View Russia trips →'), 'newzealand': ('new-zealand-tour-packages', 'View New Zealand trips →'), 'philippines': ('philippines-tour-packages', 'View Philippines trips →'), 'southkorea': ('south-korea-tour-packages', 'View South Korea trips →'), 'cambodia': ('cambodia-tour-packages', 'View Cambodia trips →')}  # on-request tiles that now have their own page
+LIVE_PAGES = {'dubai': ('dubai-tour-packages', 'View Dubai trips →'), 'turkey': ('turkey-tour-packages', 'View Turkey trips →'), 'georgia': ('georgia-tour-packages', 'View Georgia trips →'), 'azerbaijan': ('azerbaijan-tour-packages', 'View Azerbaijan trips →'), 'japan': ('japan-tour-packages', 'View Japan trips →'), 'europe': ('europe-tour-packages', 'View Europe trips →'), 'switzerland': ('switzerland-tour-packages', 'View Switzerland trips →'), 'mauritius': ('mauritius-tour-packages', 'View Mauritius trips →'), 'uk': ('uk-tour-packages', 'View UK trips →'), 'egypt': ('egypt-tour-packages', 'View Egypt trips →'), 'australia': ('australia-tour-packages', 'View Australia trips →'), 'uzbekistan': ('uzbekistan-tour-packages', 'View Uzbekistan trips →'), 'kazakhstan': ('kazakhstan-tour-packages', 'View Kazakhstan trips →'), 'armenia': ('armenia-tour-packages', 'View Armenia trips →'), 'hongkong': ('hong-kong-tour-packages', 'View Hong Kong trips →'), 'china': ('china-tour-packages', 'View China trips →'), 'russia': ('russia-tour-packages', 'View Russia trips →'), 'newzealand': ('new-zealand-tour-packages', 'View New Zealand trips →'), 'philippines': ('philippines-tour-packages', 'View Philippines trips →'), 'southkorea': ('south-korea-tour-packages', 'View South Korea trips →'), 'cambodia': ('cambodia-tour-packages', 'View Cambodia trips →'), 'iceland': ('iceland-tour-packages', 'View Iceland trips →')}  # on-request tiles that now have their own page
 
 def mcard(slug, name):
     if slug in LIVE_PAGES:
@@ -315,6 +315,7 @@ WHEN = [  # slug, label, best months, snow months
     ('mauritius-tour-packages', 'Mauritius', [4, 5, 6, 9, 10, 11], []),
     ('australia-tour-packages', 'Australia &amp; NZ', [3, 4, 5, 9, 10, 11], []),
     ('new-zealand-tour-packages', 'New Zealand', [12, 1, 2, 3, 4], [6, 7, 8]),
+    ('iceland-tour-packages', 'Iceland', [6, 7, 8], [11, 12, 1, 2, 3]),
 ]
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 WHEN_NOTE = {3: 'Japan: late March onwards', 5: 'UK: late May onwards', 6: 'Uzbekistan: early June', 9: 'UK: early September', 10: 'Europe: early October'}
@@ -375,6 +376,7 @@ COMPARE = [  # region, slug, label, entry, checked, typical trip, best season, h
     ('', 'europe-tour-packages', 'Europe (multi-country)', 'Schengen short-stay visa', '23 Oct 2026', '9 to 14 nights', 'Apr–Jun, Sep–early Oct', True),
     ('', 'switzerland-tour-packages', 'Switzerland', 'Schengen short-stay visa', '24 Oct 2026', '6 to 10 nights', 'Jun–Sep; Dec–Mar snow', True),
     ('', 'uk-tour-packages', 'United Kingdom', 'Standard Visitor visa (separate from Schengen)', '26 Oct 2026', '6 to 10 nights', 'Late May–early Sep', True),
+    ('', 'iceland-tour-packages', 'Iceland', 'Schengen short-stay visa — apply via VFS Global in India', '20 Nov 2026', '6 to 8 nights; 10 to 12 for the Ring Road', 'Jun–Aug; Sep–Mar for northern lights', True),
     ('', 'japan-tour-packages', 'Japan', 'eVISA via Japan Visa Application Centres', '22 Oct 2026', '7 to 10 nights', 'Late Mar–May, Oct–Nov', True),
     ('', 'south-korea-tour-packages', 'South Korea', 'Visa needed; apply via the Korea Visa Portal and a Korea Visa Application Centre (KVAC) in India', '18 Nov 2026', '6 to 8 nights; 9 to 10 with Jeju', 'Mar–May, Sep–Nov', True),
     ('', 'hong-kong-tour-packages', 'Hong Kong &amp; Macau', 'Hong Kong: free online pre-arrival registration, up to 14 days; Macau: no visa, up to 30 days', '13 Nov 2026', '4 to 6 nights, including Macau', 'Oct–Dec; Mar–Apr', True),
@@ -452,7 +454,7 @@ def build():
              '</form></section>')
     # TRUST
     h.append('<div class="hx-trust">'
-             f'<div>{svg("globe")}<span><b>30 destination guides</b><span>More on request</span></span></div>'
+             f'<div>{svg("globe")}<span><b>31 destination guides</b><span>More on request</span></span></div>'
              f'<div>{svg("clock")}<span><b>Quote in ~24 hours</b><span>Costed, day by day</span></span></div>'
              f'<div>{svg("shield")}<span><b>HP Tourism registered</b><span>Reg. DTO-MND-11-243/2022</span></span></div>'
              f'<div>{svg("chat")}<span><b>One team, start to finish</b><span>On WhatsApp while you travel</span></span></div>'

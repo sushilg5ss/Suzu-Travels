@@ -36,6 +36,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /philippines-tour-packages/ | 23167 | `.hx` country page (17 Nov 2026) — `pages/gen_philippines.py` (Manila–Bohol–Boracay + Palawan/Cebu options; 8-day itinerary grid = 4 columns; 7-photo gallery like Russia; Wikimedia Commons photos) |
 | /south-korea-tour-packages/ | 23452 | `.hx` country page (18 Nov 2026) — `pages/gen_southkorea.py` (Seoul–Nami–Busan–Gyeongju + Jeju add-on; 8-day itinerary grid = 4 columns; 7-photo gallery like Philippines; Wikimedia Commons photos) |
 | /cambodia-tour-packages/ | 23680 | `.hx` country page (19 Nov 2026) — `pages/gen_cambodia.py` (Siem Reap/Angkor + Phnom Penh, Vietnam/Thailand add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like South Korea; Wikimedia Commons photos) |
+| /iceland-tour-packages/ | 23880 | `.hx` country page (20 Nov 2026) — `pages/gen_iceland.py` (Golden Circle + south coast to Jökulsárlón, Snæfellsnes option; 8-day itinerary grid = 4 columns; 7-photo gallery like Cambodia, gallery thumbs use the 768px `med` size; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -98,3 +99,9 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 ## Notes (19 Nov 2026)
 - evisa.gov.kh (Cambodia e-Visa) sits behind a Nexusguard JS challenge: curl gets a 302 loop / "Authentication challenge" page; headless Chromium (Playwright, ~9 s wait) reads it fine. Link checks will show it as 302 — not broken for users. Useful pages: /information/visa_type/4 (fees, validity, exemption list), home (open e-Visa checkpoints), /news.
 - Grid cards for a new page were inserted before the Vietnam card (Bali card on the Vietnam page); `.sx` raw card = `<a class="sx-rc" …><img … alt="<photo description>" width="640" height="360" loading="lazy" decoding="async"><span><b>…</b><em>…</em></span></a>`.
+
+## Notes (20 Nov 2026)
+- Iceland official sources answer plain curl: government.is Embassy New Delhi consular page (`/ministries/diplomatic-missions/new-delhi-india/consular-services/`), island.is `/en/get-a-visa` (fee, 90 days, processing ~2 weeks, passport rule) and `/en/entry-requirements-to-iceland`. The old embassy `visa-to-iceland` URL redirects to the embassy home page.
+- Commons quality-image search worked (`search=<place>+incategory:Quality_images&ns6=1`, URL-encode non-ASCII names, ~5 s apart); raw wikitext gave licence + author; WordPress fetched all 1920px thumbs. Portrait uploads get `-scaled` (2560 px tall) — use the `med` 768px size in galleries.
+- Grid cards for a new page were inserted before the Switzerland card (UK card on the Switzerland page) on all 30 country pages; hub snow/best chips for Iceland were appended at the end of each month list (WHEN row placed last in `gen_hub.py`).
+
