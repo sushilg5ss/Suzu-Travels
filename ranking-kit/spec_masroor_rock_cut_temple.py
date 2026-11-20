@@ -55,7 +55,7 @@ SPEC = dict(
     ],
     gallery=dict(h2="The Masroor temples in pictures", lead="The temples and their tank, the carving, the friezes and the main shrine — real photographs, each credited to its photographer."),
     spots=dict(kicker="Nearby", h2="Around Kangra", lead="Pair Masroor with these.", items=[
-        ("Kangra Fort", "~35 km", "An old fort of the Katoch kings. <a href=\"/kangra-fort/\">Kangra Fort guide →</a>"),
+        ("Kangra Fort", "~35 km", "An old fort of the Katoch kings. <a href=\"/kangra-fort/\">Kangra Fort guide →</a> · <a href=\"/kangra-tourist-places/\">All Kangra places →</a>"),
         ("Dharamshala & McLeod", "~40 km", "<a href=\"/mcleod-ganj/\">McLeod Ganj guide →</a>"),
         ("Bhagsu & Dharamkot", "Above McLeod", "Waterfall and café village. <a href=\"/bhagsu-dharamkot/\">Bhagsu guide →</a>"),
         ("Dharamshala sights", "Stadium, war memorial, Norbulingka", "<a href=\"/dharamshala-tourist-places/\">Dharamshala tourist places →</a>"),

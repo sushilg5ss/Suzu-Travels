@@ -52,7 +52,7 @@ SPEC = dict(
             ["Delhi → Ambala → Kharar (~250 km)", "Six-lane NH-44; leave early"],
             ["Kharar → Ropar → Kiratpur Sahib → Anandpur Sahib", "Plains road, slow through towns"],
             ["Una → Amb → Dehra", "Low Himachal hills, good road"],
-            ["Dehra → Kangra → Dharamshala", "Last stretch, with the Dhauladhar ahead"],
+            ["Dehra → Kangra → Dharamshala", "Last stretch, with the Dhauladhar ahead — see <a href=\"/kangra-tourist-places/\">Kangra tourist places</a>"],
             ["Dharamshala → McLeodganj (~10 km)", "Steep climb; crowds and tight parking on holidays"],
         ]), ps=[]),
         dict(id="air", kicker="Airport and station", h2="Gaggal airport and Pathankot station", ps=[
