@@ -1,0 +1,113 @@
+{
+ "hero": {
+  "kicker": "DUNAGIRI · CHAMOLI",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 950
+    }
+   },
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 350
+    },
+    "to": {
+     "y": 750
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     10.0,
+     14.0
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -40
+    }
+   }
+  ],
+  "steps": [
+   [
+    2500,
+    "JUMMA · ROAD-HEAD"
+   ],
+   [
+    3615,
+    "DRONAGIRI VILLAGE"
+   ],
+   [
+    4550,
+    "BAGINI BASE"
+   ],
+   [
+    5940,
+    "1939 ARÊTE CAMP"
+   ],
+   [
+    7066,
+    "SUMMIT · 1939"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Dunagiri, the 1939 line",
+  "sub": "1939 Swiss route (approximate, from feet) · HJ 12",
+  "camps": [
+   {
+    "name": "Rhamani base",
+    "m": 5000,
+    "day": "1939"
+   },
+   {
+    "name": "SW-arête camp",
+    "m": 5940,
+    "day": "1939"
+   },
+   {
+    "name": "Summit",
+    "m": 7066,
+    "day": "5 Jul 1939"
+   }
+  ]
+ }
+}

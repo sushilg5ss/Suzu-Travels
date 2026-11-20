@@ -1,0 +1,135 @@
+{
+ "hero": {
+  "kicker": "HARDEOL · MILAM VALLEY",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 80,
+     "scale": 1.12,
+     "x": -150
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.15,
+     "x": -190
+    }
+   },
+   {
+    "img": "px-35319376.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 800
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     7.0,
+     10.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -30
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.0,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    4720,
+    "CAMP 1 · IKUALARI"
+   ],
+   [
+    5180,
+    "CAMP 2"
+   ],
+   [
+    5880,
+    "CAMP 4"
+   ],
+   [
+    6550,
+    "CAMP 7"
+   ],
+   [
+    7151,
+    "SUMMIT · 1978"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Hardeol, camp by camp",
+  "sub": "1978 ITBP first ascent · HJ 45",
+  "camps": [
+   {
+    "name": "Camp 1",
+    "m": 4720,
+    "day": "12 May"
+   },
+   {
+    "name": "Camp 2",
+    "m": 5180,
+    "day": "13 May"
+   },
+   {
+    "name": "Camp 4",
+    "m": 5880,
+    "day": "23 May"
+   },
+   {
+    "name": "Camp 6",
+    "m": 6250,
+    "day": "29 May"
+   },
+   {
+    "name": "Camp 7",
+    "m": 6550,
+    "day": "30 May"
+   },
+   {
+    "name": "Summit",
+    "m": 7151,
+    "day": "31 May 1978"
+   }
+  ]
+ }
+}
