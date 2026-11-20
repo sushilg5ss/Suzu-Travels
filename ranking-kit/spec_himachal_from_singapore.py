@@ -56,7 +56,7 @@ SPEC = dict(
         ("Manali & Solang", "Snow and adventure", "<a href=\"/solang-valley-guide/\">Solang guide →</a>"),
         ("Sissu & Keylong", "Beyond the Atal Tunnel", "<a href=\"/sissu/\">Sissu guide →</a>"),
         ("Spiti monasteries", "June – September", "<a href=\"/key-monastery/\">Key</a> · <a href=\"/tabo-monastery/\">Tabo</a> · <a href=\"/langza-hikkim-komic/\">Langza</a>"),
-        ("Dharamshala", "Tibetan culture", "<a href=\"/dharamshala-for-international-travellers/\">Dharamshala for visitors →</a>"),
+        ("From Malaysia", "Snow trips from Kuala Lumpur", "<a href=\"/himachal-tour-from-malaysia/\">Malaysia page →</a>"),
     ]),
     sections2=[
         dict(id="plan", kicker="Sample plans", h2="Two sample itineraries", ps=[

@@ -37,10 +37,10 @@ SPEC = dict(
         dict(id="regionen", kicker="Die Regionen", h2="Was Sie in Himachal Pradesh erwartet", fig=True, ps=[
             "Himachal ist groß und die Straßen sind kurvig – planen Sie lieber weniger Orte und mehr Zeit. Die wichtigsten Regionen im Überblick:",
         ], table=(["Region", "Was sie besonders macht", "Unser Tipp"], [
-            ["Dharamsala & McLeod Ganj", "Sitz des Dalai Lama und der tibetischen Exilregierung, Klöster, Meditation, Wanderung nach Triund", "<a href=\"/tushita-meditation-centre/\">Tushita</a>, <a href=\"/norbulingka-institute/\">Norbulingka</a>, <a href=\"/library-of-tibetan-works-and-archives/\">Tibetische Bibliothek</a>"],
+            ["Dharamsala & McLeod Ganj", "Sitz des Dalai Lama und der tibetischen Exilregierung, Klöster, Meditation, Wanderung nach Triund", "<a href=\"/dharamsala-reisefuehrer/\">Dharamsala-Reiseführer</a> · <a href=\"/tushita-meditation-centre/\">Tushita</a> · <a href=\"/norbulingka-institute/\">Norbulingka</a>"],
             ["Kangra-Tal", "Teegärten von Palampur, das Fort von Kangra, Felsentempel von Masroor, Paragliding in Bir", "<a href=\"/kangra-tourist-places/\">Kangra</a> und die <a href=\"/kangra-valley-railway/\">Kangra-Talbahn</a>"],
             ["Shimla", "Britische Sommerhauptstadt mit Mall, Ridge und Kolonialbauten; Bergbahn Kalka–Shimla (UNESCO-Welterbe)", "<a href=\"/india-tours/shimla-toy-train/\">Kalka–Shimla-Bahn</a>"],
-            ["Manali & Kullu-Tal", "Apfelplantagen, Old Manali, Holztempel, Naggar; im Winter Schnee im Solang-Tal", "<a href=\"/manali-for-international-travellers/\">Manali-Guide</a>"],
+            ["Manali & Kullu-Tal", "Apfelplantagen, Old Manali, Holztempel, Naggar; im Winter Schnee im Solang-Tal", "<a href=\"/manali-reisefuehrer/\">Manali-Reiseführer</a>"],
             ["Spiti", "Hochwüste über 3.500 m, die Klöster Key und Tabo, Dörfer wie Langza – nur im Sommer gut erreichbar", "<a href=\"/spiti-valley-for-international-travellers/\">Spiti-Guide</a>"],
             ["Dalhousie & Chamba", "Ruhige Kolonialstation und die Wiese von Khajjiar", "<a href=\"/dalhousie-for-international-travellers/\">Dalhousie-Guide</a>"],
         ])),
@@ -71,13 +71,13 @@ SPEC = dict(
         ]),
     ],
     gallery=dict(h2="Himachal Pradesh in Bildern", lead="Die Dhauladhar-Kette, das Kullu-Tal, McLeod Ganj, Norbulingka, Shimla, Old Manali, Spiti und die Kangra-Talbahn – echte Fotos, jeweils mit Bildnachweis."),
-    spots=dict(kicker="Weiterlesen", h2="Unsere Reiseführer (auf Englisch)", lead="Ausführliche Seiten zu den einzelnen Orten.", items=[
-        ("Dharamsala", "Für internationale Reisende", "<a href=\"/dharamshala-for-international-travellers/\">Lesen →</a>"),
+    spots=dict(kicker="Weiterlesen", h2="Unsere Reiseführer", lead="Dharamsala und Manali auf Deutsch, die übrigen Seiten auf Englisch.", items=[
+        ("Dharamsala Reiseführer", "Auf Deutsch", "<a href=\"/dharamsala-reisefuehrer/\">Lesen →</a>"),
         ("Tushita", "Meditationskurse über McLeod Ganj", "<a href=\"/tushita-meditation-centre/\">Lesen →</a>"),
         ("Norbulingka", "Tibetische Kunst", "<a href=\"/norbulingka-institute/\">Lesen →</a>"),
         ("Spiti", "Hochwüste und Klöster", "<a href=\"/spiti-valley-for-international-travellers/\">Lesen →</a>"),
         ("Shimla", "Kolonialstadt und Bergbahn", "<a href=\"/shimla-for-international-travellers/\">Lesen →</a>"),
-        ("Flughafen Kangra", "Flüge nach Dharamsala", "<a href=\"/kangra-airport/\">Lesen →</a>"),
+        ("Manali Reiseführer", "Auf Deutsch", "<a href=\"/manali-reisefuehrer/\">Lesen →</a>"),
     ]),
     sections2=[],
     ctas=dict(h2="Ihre private Rundreise durch Himachal", lead="Hotels, Mahlzeiten, Abholung am Flughafen und ein privates Auto mit erfahrenem Bergfahrer – in einem schriftlichen Angebot.", items=[
