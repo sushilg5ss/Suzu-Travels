@@ -8,7 +8,7 @@
 - **Duplicate check:** every candidate was matched against the 1,090 live URLs and checked with WP search on the day of publishing.
 - **Cannibalisation rule:** one intent per URL. Hindi and English twins are linked with alt_lang.
 
-## 2. New pages (28 live)
+## 2. New pages (30 live)
 
 | # | URL | Focus | Dec searches (IN) | Lang |
 |---|-----|-------|-------------------|------|
@@ -40,6 +40,8 @@
 | 26 | /delhi-to-kasauli/ | delhi to kasauli distance (+ chandigarh to kasauli) | 9,900 + 14,800 | EN |
 | 27 | /manali-to-dharamshala/ | manali to dharamshala distance | 8,100 | EN |
 | 28 | /kullu-to-manali/ | kullu to manali distance | 12,100 | EN |
+| 29 | /kangra-tourist-places/ | kangra tourist places / places to visit in kangra (+ kangra valley 12,100) | 2,400 + 2,400 | EN |
+| 30 | /mandi-tourist-places/ | mandi tourist places / places to visit in mandi | 1,300 + 1,300 | EN (twin of mandi-ghumne-ki-jagah) |
 
 Every page has:
 - Credited Commons photos: CC BY, CC BY-SA, CC0 or public domain only.
@@ -106,6 +108,14 @@ Kasauli and himachal-in-january had been edited by another agent. For those two 
 
 These need a verified source or the Suzu team's own route data before we build them.
 
+**Added after the review (23:00–00:05):**
+- **/kangra-tourist-places/** (post 24372). GSC showed no page of ours for "kangra tourist places"; Kangra queries were landing on the Kangra Devi and Kangra Fort pages. The new page covers the town and valley and sends temple and fort intent to the Pilgrim and Kangra Fort pages. Facts and distances come from our own live pages; the taxi rates come from /cabs/dharamshala-taxi-service/. Linked from: the EN hub, Delhi to Dharamshala, and Masroor.
+- **/mandi-tourist-places/** (post 24385). This is the English twin of मंडी घूमने की जगह. The Hindi page's "Read in English" link pointed to Rewalsar Lake; it now points to the new page. Also linked from the EN hub.
+- **Checked and skipped (an existing page already covers it):**
+  - Kullu tourist places (5.4k) → /kullu-valley-travel-guide/ (EN) already exists. This is the Optimiser's snippet lane.
+  - Kasol tourist places (8.1k) → /parvati-valley-guide/ and kasol-ghumne-ki-jagah.
+  - Khajjiar (110k) → Adventure published things-to-do-in-khajjiar today.
+
 ## 4. Early results (Google Search Console, last 7 days)
 
 Our 51 pages from 13 and 14 Nov:
@@ -130,6 +140,7 @@ Top pages:
 
 - **Pilgrim agents:** there is no page yet for Hidimba Temple (~246k Dec), Tara Devi (~33k) or Paonta Sahib (~165k).
 - **Adventure:** spare Jogini media is available (see section 2).
+- **Cab squad:** /cabs/dharamshala-taxi-service/ still shows "24×7" in its hero line. This is a banned word, and the page is in your lane.
 - **Optimiser (watch):** "narkanda" queries (135k Dec) are split across 5 pages over the last 28 days. We sit around position 10. Linking them better should help:
 
   | Page | Impressions | Position |
@@ -149,7 +160,7 @@ Top pages:
 ## 7. Next shift backlog
 
 1. **Re-check in GSC around 27 Nov:**
-   - The 26 pages published today.
+   - The 30 pages published today.
    - The 13/14 Nov pages. Target: the 30k impressions per week climbing, and positions 8–10 moving into the top 5.
 2. **Optimiser lane (not ours):** snippet/CTR work on high-impression, low-CTR pages:
 
@@ -161,7 +172,6 @@ Top pages:
 
 3. **Possible new pages** (each checked for no existing URL):
    - Karsog valley (~8k)
-   - Kangra tourist places (~2.4k)
    - Kasol New Year party (~1.3k, December only)
 4. **Lane hand-offs:**
    - Tattapani (~22k in January, around the Makar Sankranti dip) → Adventure/Pilgrim. /adventure/rafting-in-shimla-tattapani/ exists.
