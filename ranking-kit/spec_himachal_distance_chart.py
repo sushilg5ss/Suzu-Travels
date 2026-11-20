@@ -39,11 +39,11 @@ SPEC = dict(
         ], table=(["Delhi to", "Distance", "Drive time", "Route"], [
             ["Chandigarh", "~250 km", "4–5 h", "NH44 via Karnal, Ambala"],
             ["Kasauli", "~290 km", "6 h", "Via Chandigarh, Dharampur"],
-            ["Shimla", "~345 km", "7–8 h", "Via Chandigarh, Solan"],
+            ["<a href=\"/delhi-to-shimla/\">Shimla</a>", "~345 km", "7–8 h", "Via Chandigarh, Solan"],
             ["Bilaspur (HP)", "~330 km", "6–7 h", "Via Kiratpur Sahib"],
             ["Dharamshala / McLeod Ganj", "~475 / 485 km", "9–10 h", "Via Una, Kangra"],
             ["Jibhi / Tirthan", "~490 km", "10–11 h", "Via Mandi, Aut, Banjar"],
-            ["Kasol", "~520 km", "11–12 h", "Via Mandi, Bhuntar"],
+            ["<a href=\"/delhi-to-kasol/\">Kasol</a>", "~520 km", "11–12 h", "Via Mandi, Bhuntar"],
             ["Manali", "~540 km", "11–13 h", "Via Kiratpur–Mandi four-lane, Kullu"],
             ["Dalhousie", "~560 km", "10–11 h", "Via Pathankot"],
             ["Kalpa (Kinnaur)", "~580 km", "2 days", "Via Shimla, Narkanda, Rampur"],
@@ -58,7 +58,7 @@ SPEC = dict(
             ["<a href=\"/chandigarh-to-shimla/\">Shimla</a>", "~115 km", "3–3.5 h"],
             ["Bilaspur (HP)", "~110 km", "2.5–3 h"],
             ["Dharamshala", "~240 km", "5–6 h"],
-            ["Kasol", "~265 km", "6–7 h"],
+            ["<a href=\"/delhi-to-kasol/\">Kasol</a>", "~265 km", "6–7 h"],
             ["<a href=\"/chandigarh-to-manali/\">Manali</a>", "~290 km", "7–8 h"],
             ["Dalhousie", "~300 km", "7 h"],
         ]), after=[
