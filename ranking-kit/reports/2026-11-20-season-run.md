@@ -8,7 +8,7 @@
 - **Duplicate check:** every candidate was matched against the 1,090 live URLs and checked with WP search on the day of publishing.
 - **Cannibalisation rule:** one intent per URL. Hindi and English twins are linked with alt_lang.
 
-## 2. New pages (27 live)
+## 2. New pages (28 live)
 
 | # | URL | Focus | Dec searches (IN) | Lang |
 |---|-----|-------|-------------------|------|
@@ -39,6 +39,7 @@
 | 25 | /delhi-to-dalhousie/ | delhi to dalhousie distance (+ Pathankot, Amritsar) | 9,900 + 9,900 + 9,900 | EN |
 | 26 | /delhi-to-kasauli/ | delhi to kasauli distance (+ chandigarh to kasauli) | 9,900 + 14,800 | EN |
 | 27 | /manali-to-dharamshala/ | manali to dharamshala distance | 8,100 | EN |
+| 28 | /kullu-to-manali/ | kullu to manali distance | 12,100 | EN |
 
 Every page has:
 - Credited Commons photos: CC BY, CC BY-SA, CC0 or public domain only.
