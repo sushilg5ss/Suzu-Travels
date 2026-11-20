@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-20-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.5 winter Char Dham seats note",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "17df21b9ec7ecf6d497d6c9103219125b547c5448ced7c6e55ade322afe73aa6",
+   "base_sha256": "bbdf6094adebee2e49bce3da494b2c7cf12bef8eac11de6fe0bcc41489079f0d",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 403310
+  }
+ ]
+}
