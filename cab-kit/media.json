@@ -934,5 +934,14 @@
   "places": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@2a599305f54d3eaf13bc3f361498498e5c1a0f37/cab-kit/media/plan/places.txt",
   "sha1": "e78471ddf45f1d9fbb400b104c2b4a44696189da",
   "note": "hub planner place list (PLACES + PICKUPS as 'Name;lat;lon|...', 255 places) lazy-loaded by kit_hub.js when the planner is used/scrolled near or a place box gets focus; places added later stay inline in data-plan p until re-pinned. ENHANCEMENTS #28, 19 Nov 2026"
+ },
+ "one-way-taxi-delhi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f822ee22061e19169066dddca85af50112aa53d8/cab-kit/media/one-way-taxi-delhi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f822ee22061e19169066dddca85af50112aa53d8/cab-kit/media/one-way-taxi-delhi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@f822ee22061e19169066dddca85af50112aa53d8/cab-kit/media/one-way-taxi-delhi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
