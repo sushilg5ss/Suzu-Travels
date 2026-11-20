@@ -1,0 +1,201 @@
+{
+ "kind": "guide",
+ "path": "/mountains-of-india/mountaineering-glossary/",
+ "title": "Mountaineering Glossary: 52 Himalayan Climbing Terms Explained",
+ "seo_title": "Mountaineering Terms: A–Z Glossary for Himalayan Climbers",
+ "seo_desc": "Mountaineering terms in plain English: col, serac, bergschrund, cornice, fixed rope, F to ED grades and India's permit words (IMF, LO, PAP).",
+ "focus": "mountaineering terms",
+ "commercial": true,
+ "label": "Mountaineering glossary",
+ "blurb": "Col, serac, bergschrund and F to ED, explained",
+ "verified": "20 Nov 2026",
+ "kicker": "Mountaineering terms · A to Z",
+ "tag": "Learn the words of the mountain.",
+ "sub": "52 mountaineering terms in plain English, from moraine to summit push, with the alpine grades F to ED and the Indian permit words (IMF, LO, PAP, UKMPS, HAP) explained, with real peaks of the Indian Himalaya as examples.",
+ "chips": [
+  [
+   "52",
+   "terms in six groups"
+  ],
+  [
+   "F → ED",
+   "alpine grades, with Indian examples"
+  ],
+  [
+   "5",
+   "Indian permit words decoded"
+  ],
+  [
+   "30 m+",
+   "how deep some crevasses go (100 ft)"
+  ]
+ ],
+ "hero_alt": "A boulder moraine, a roped team on a glacier under seracs, crampons on snow and headlamps on a night climb (generic stock footage, not named peaks) with four captions: that's a moraine; those are seracs; those are crampons; alpine start",
+ "q": "What do the main mountaineering terms mean?",
+ "answer": "Mountaineering terms describe the ground, the gear and the plan. A <b>col</b> is a pass between two summits, a <b>serac</b> a tower of glacier ice, a <b>bergschrund</b> the crevasse at a glacier's head. <b>Alpine style</b> means carrying everything yourself; grades run from <b>F</b> (easy) to <b>ED</b>. Below: 52 terms, with examples from our <a href=\"/mountains-of-india/\">mountains of India</a> guide.",
+ "facts": [
+  [
+   "Terms explained",
+   "52, in six groups"
+  ],
+  [
+   "Grades",
+   "F, PD, AD, D, TD, ED (French alpine scale)"
+  ],
+  [
+   "Indian permit words",
+   "IMF, LO, PAP, UKMPS, HAP, trekking peak"
+  ],
+  [
+   "Most searched",
+   "Bergschrund, col, cornice, serac"
+  ],
+  [
+   "Where to learn them",
+   "A guided trekking peak in Himachal"
+  ]
+ ],
+ "intro": [
+  "Expedition itineraries are full of words like <i>col</i>, <i>summit push</i>, <i>fixed rope</i> and <i>LO</i>. This glossary explains them in one or two plain sentences each, grouped the way you meet them: the glacier, the shape of the mountain, the rope work, the style of the climb, the grades and the Indian permit system.",
+  "Where a term has its own guide, the card links there instead of repeating it. Where a term shows up on a peak in the <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of the highest peaks in India</a>, the card names it, so you can see the word in place."
+ ],
+ "extra_sections": [
+  {
+   "id": "glacier",
+   "label": "Glacier",
+   "kicker": "Ice and snow",
+   "h2": "Glacier and snow terms: moraine to cornice",
+   "html": "<div class=\"szm-cards\"><div class=\"szm-card\" id=\"t-glacier\"><div class=\"h\">Glacier</div><p>A long-lived mass of ice and snow that flows slowly downhill under its own weight. Most Himalayan climbs cross one before the real climbing starts.</p></div><div class=\"szm-card\" id=\"t-moraine\"><div class=\"h\">Moraine</div><p>Rock debris a glacier carries and dumps. <b>Lateral</b> moraine lines its sides, <b>medial</b> moraine runs down the middle where two glaciers join, and <b>terminal</b> moraine marks the furthest reach of its snout. Expect hours of boulder-hopping on it.</p></div><div class=\"szm-card\" id=\"t-crevasse\"><div class=\"h\">Crevasse</div><p>A crack in the surface of a moving glacier. Some are more than 30 m (100 ft) deep, which is why glacier teams travel roped together.</p></div><div class=\"szm-card\" id=\"t-snow-bridge\"><div class=\"h\">Snow bridge</div><p>Snow lying across a crevasse. It can hide the crack completely, and it may not hold your weight.</p></div><div class=\"szm-card\" id=\"t-bergschrund\"><div class=\"h\">Bergschrund</div><p>The crevasse at the head of a glacier, where moving ice pulls away from the ice or rock above it. It is often the first real obstacle below a face, can be very deep, and is usually most open and dangerous in summer and autumn.</p></div><div class=\"szm-card\" id=\"t-serac\"><div class=\"h\">Serac</div><p>A tower or block of glacier ice, formed in icefalls and where crevasses meet. Seracs can collapse without warning. On <a href=\"/mountains-of-india/shivling-peak/\">Shivling</a> the west ridge passes a serac barrier at about 6,100 m (20,000 ft).</p></div><div class=\"szm-card\" id=\"t-icefall\"><div class=\"h\">Icefall</div><p>The place where a glacier drops over a steep bed and breaks up into crevasses and seracs: slow, careful ground.</p></div><div class=\"szm-card\" id=\"t-neve\"><div class=\"h\">Névé</div><p>Granular snow-ice in the upper part of a glacier, the zone where snow builds up.</p></div><div class=\"szm-card\" id=\"t-firn\"><div class=\"h\">Firn</div><p>Old, compacted snow on its way to becoming glacier ice.</p></div><div class=\"szm-card\" id=\"t-cornice\"><div class=\"h\">Cornice</div><p>An overhanging lip of wind-blown snow on a ridge. It can break off under a climber, so walk well back from the edge, on the side it does not overhang.</p></div><div class=\"szm-card\" id=\"t-verglas\"><div class=\"h\">Verglas</div><p>A thin, clear glaze of ice on rock. Hard to see and very slippery.</p></div></div>"
+  },
+  {
+   "id": "terrain",
+   "label": "Terrain",
+   "kicker": "The shape of a mountain",
+   "h2": "Mountain features: col, arête, couloir and more",
+   "html": "<div class=\"szm-cards\"><div class=\"szm-card\" id=\"t-arete\"><div class=\"h\">Arête</div><p>A narrow, sharp ridge, often between two glacier valleys or bowls.</p></div><div class=\"szm-card\" id=\"t-ridge\"><div class=\"h\">Ridge</div><p>A high crest running out from a summit. Many normal routes follow one to the top.</p></div><div class=\"szm-card\" id=\"t-col\"><div class=\"h\">Col</div><p>A high pass or saddle between two summits. Teams often camp or cross there: the Duhangan Col is the crux of <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a>.</p></div><div class=\"szm-card\" id=\"t-couloir\"><div class=\"h\">Couloir</div><p>A steep gully that holds snow or ice, often a natural line up a face.</p></div><div class=\"szm-card\" id=\"t-gully\"><div class=\"h\">Gully</div><p>A wide, shallow ravine on a mountainside.</p></div><div class=\"szm-card\" id=\"t-cirque\"><div class=\"h\">Cirque</div><p>A bowl-shaped hollow at the head of a glacier valley, carved by the ice.</p></div><div class=\"szm-card\" id=\"t-horn\"><div class=\"h\">Horn</div><p>A pointed peak carved by three or more cirques eating into it from different sides.</p></div><div class=\"szm-card\" id=\"t-buttress\"><div class=\"h\">Buttress</div><p>A prominent rock feature jutting out from a mountain face.</p></div><div class=\"szm-card\" id=\"t-gendarme\"><div class=\"h\">Gendarme</div><p>A rock tower standing on a ridge.</p></div><div class=\"szm-card\" id=\"t-headwall\"><div class=\"h\">Headwall</div><p>The part of a face where it steepens sharply near the top. Meru Central (6,310 m / 20,702 ft) has an overhanging headwall from about 5,900 m.</p></div><div class=\"szm-card\" id=\"t-scree\"><div class=\"h\">Scree and talus</div><p>Scree is small loose stones that slide underfoot; talus is bigger blocks.</p></div></div>"
+  },
+  {
+   "id": "rope",
+   "label": "Rope work",
+   "kicker": "Rope, gear and technique",
+   "h2": "Climbing terms for rope, gear and technique",
+   "html": "<div class=\"szm-cards\"><div class=\"szm-card\" id=\"t-anchor\"><div class=\"h\">Anchor</div><p>A fixed set of protection that holds a belay, a top rope or an abseil.</p></div><div class=\"szm-card\" id=\"t-belay\"><div class=\"h\">Belay</div><p>Protecting a roped climber by controlling the rope, usually through a belay device, so a fall is held.</p></div><div class=\"szm-card\" id=\"t-pitch\"><div class=\"h\">Pitch</div><p>One rope-length section of a climb between two belays, typically up to about 50 m (165 ft).</p></div><div class=\"szm-card\" id=\"t-fixed-rope\"><div class=\"h\">Fixed rope</div><p>A rope anchored in place on a slope. Climbers clip into it for safety, go up it with an ascender, or abseil down it.</p></div><div class=\"szm-card\" id=\"t-ascender\"><div class=\"h\">Ascender (jumar)</div><p>A mechanical clamp for climbing up a fixed rope. Climbers often call it a jumar, after one type.</p></div><div class=\"szm-card\" id=\"t-abseil\"><div class=\"h\">Abseil / rappel</div><p>Going down a rope fixed to an anchor, with a descender device that controls your speed.</p></div><div class=\"szm-card\" id=\"t-prusik\"><div class=\"h\">Prusik</div><p>A friction knot that grips a rope when loaded and slides when not. Named after Karl Prusik (1931).</p></div><div class=\"szm-card\" id=\"t-aid\"><div class=\"h\">Aid climbing</div><p>Using gear to pull on or stand on for upward progress, not only as protection. The opposite of free climbing. Meru's Shark's Fin needed aid up to grade A4.</p></div><div class=\"szm-card\" id=\"t-crampons\"><div class=\"h\">Crampons</div><p>Spiked frames fixed to boots for snow and ice. Which crampon fits which boot is in our <a href=\"/mountains-of-india/crampons-and-mountaineering-boots/\">guide to crampons and mountaineering boots</a>.</p></div><div class=\"szm-card\" id=\"t-ice-axe\"><div class=\"h\">Ice axe</div><p>The climber's tool with a pick, an adze and a spike: walking stick, anchor and brake in one. See the <a href=\"/mountains-of-india/ice-axe-guide/\">ice axe guide</a>.</p></div><div class=\"szm-card\" id=\"t-self-arrest\"><div class=\"h\">Self-arrest</div><p>Stopping a slide on snow by driving the pick of the ice axe into the slope. Practise it before you need it.</p></div></div>"
+  },
+  {
+   "id": "style",
+   "label": "Style",
+   "kicker": "How the climb is run",
+   "h2": "Alpine style, expedition style and summit day",
+   "html": "<div class=\"szm-cards\"><div class=\"szm-card\" id=\"t-alpine-style\"><div class=\"h\">Alpine style</div><p>The team carries everything itself and climbs in one push, with no fixed ropes and no stocked camps.</p></div><div class=\"szm-card\" id=\"t-expedition-style\"><div class=\"h\">Expedition (siege) style</div><p>Stocked camps, fixed ropes and support staff move climbers up the mountain step by step. The opposite of alpine style.</p></div><div class=\"szm-card\" id=\"t-alpine-start\"><div class=\"h\">Alpine start</div><p>Leaving very early, often before 5 a.m., while the snow is firm and less rock is falling.</p></div><div class=\"szm-card\" id=\"t-summit-push\"><div class=\"h\">Summit push</div><p>The final climb from the top camp to the summit and back down, usually begun in the dark with an alpine start.</p></div><div class=\"szm-card\" id=\"t-base-camp\"><div class=\"h\">Base camp</div><p>The main camp at the foot of the climb. What it looks like on an Indian peak is in our <a href=\"/mountains-of-india/expedition-camping/\">guide to expedition camping</a>.</p></div><div class=\"szm-card\" id=\"t-bivouac\"><div class=\"h\">Bivouac (bivvy)</div><p>A rough overnight stop on the route without a full camp; on big walls sometimes on a hanging portaledge.</p></div><div class=\"szm-card\" id=\"t-acclimatisation\"><div class=\"h\">Acclimatisation</div><p>The body's gradual adjustment to thinner air. Altitude illness becomes a risk from a sleeping height of about 2,450 m (8,000 ft); read the <a href=\"/mountains-of-india/altitude-sickness/\">altitude sickness guide</a>.</p></div></div>"
+  },
+  {
+   "id": "grades",
+   "label": "Grades",
+   "kicker": "F to ED",
+   "h2": "Alpine grades: what F, PD, AD, D, TD and ED mean",
+   "html": "<p>Alpine routes are graded with French words, from easy to extremely difficult. The grade describes the route, not the mountain: one peak can have a moderate route and an extreme one, as Menthosa shows.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\" style=\"min-width:560px\"><thead><tr><th>Grade</th><th>French</th><th>In plain English</th><th>Indian example</th></tr></thead><tbody><tr><td class=\"n\"><b>F</b></td><td><i>facile</i></td><td>Easy</td><td>–</td></tr><tr><td class=\"n\"><b>PD</b></td><td><i>peu difficile</i></td><td>A little difficult</td><td>Kang Yatse II, <a href=\"/mountains-of-india/kang-yatse/\">Ladakh</a> (6,250 m / 20,505 ft)</td></tr><tr><td class=\"n\"><b>AD</b></td><td><i>assez difficile</i></td><td>Fairly difficult</td><td>Menthosa normal route, <a href=\"/mountains-of-india/menthosa/\">Lahaul</a> (6,443 m / 21,138 ft)</td></tr><tr><td class=\"n\"><b>D</b></td><td><i>difficile</i></td><td>Difficult</td><td>–</td></tr><tr><td class=\"n\"><b>TD</b></td><td><i>très difficile</i></td><td>Very difficult</td><td>–</td></tr><tr><td class=\"n\"><b>ED</b></td><td><i>extrêmement difficile</i></td><td>Extremely difficult (ED1, ED2…)</td><td>Menthosa south ridge, ED2 (2019)</td></tr></tbody></table></div><p>Our <a href=\"/mountains-of-india/hardest-peaks-in-india/\">hardest peaks in India</a> sit at the top of this scale. A first Himalayan summit is usually at the easy end.</p>"
+  },
+  {
+   "id": "india",
+   "label": "India",
+   "kicker": "Permit words",
+   "h2": "Indian mountaineering terminology: IMF, LO, PAP, UKMPS, HAP",
+   "html": "<div class=\"szm-cards\"><div class=\"szm-card\" id=\"t-imf\"><div class=\"h\">IMF</div><p>The Indian Mountaineering Foundation, the national body that permits foreign expeditions to Indian peaks. Fees are explained on our <a href=\"/mountains-of-india/imf-permit-fees/\">IMF permit fees page</a>.</p></div><div class=\"szm-card\" id=\"t-lo\"><div class=\"h\">LO</div><p>Liaison Officer: the officer the IMF appoints to every foreign expedition. Teams pay a US$500 LO equipment hire on top of the peak fee (IMF, checked 1 Oct 2026).</p></div><div class=\"szm-card\" id=\"t-pap\"><div class=\"h\">PAP</div><p>Protected Area Permit, needed by foreigners in some border belts, for example the Pooh block of Kinnaur on the far side of <a href=\"/mountains-of-india/manirang/\">Manirang</a>.</p></div><div class=\"szm-card\" id=\"t-ukmps\"><div class=\"h\">UKMPS</div><p>The Uttarakhand Mountaineering Permission System: the state's online permit portal, new in 2026.</p></div><div class=\"szm-card\" id=\"t-hap\"><div class=\"h\">HAP</div><p>High-altitude porter: support staff on the mountain, whom the IMF requires to be insured.</p></div><div class=\"szm-card\" id=\"t-trekking-peak\"><div class=\"h\">Trekking peak</div><p>The IMF's lower-fee category (US$200 base for a team of two), for peaks on the IMF's own list only. More on our <a href=\"/mountains-of-india/trekking-peaks/\">trekking peaks page</a>.</p></div></div>"
+  },
+  {
+   "id": "learn",
+   "label": "Learn",
+   "kicker": "On a real peak",
+   "h2": "Learn the words on a real Himalayan peak",
+   "html": "<p>The fastest way to learn these words is to use them. This is the usual order in Himachal:</p><ol class=\"szm-steps\"><li><b>1 · A trekking peak</b>Moraine, scree, crampons and an alpine start on <a href=\"/mountains-of-india/friendship-peak/\">Friendship Peak</a> (5,289 m / 17,352 ft).</li><li><b>2 · A basic course</b>Rope work, belays and ice-axe and crampon skills on a <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering course</a>.</li><li><b>3 · A glaciated 6,000er</b>Fixed ropes and a long summit push on <a href=\"/mountains-of-india/yunam-peak/\">Yunam</a> (6,111 m / 20,049 ft) or <a href=\"/mountains-of-india/deo-tibba/\">Deo Tibba</a> (6,001 m / 19,688 ft).</li></ol><div class=\"szm-call\"><p>We pair you with a registered Himachal outfitter and certified guides, and add permits, stays and transfers. Price: Get Quote.</p></div>"
+  }
+ ],
+ "quote_h2": "Learn these words on a real peak",
+ "quote_text": "Friendship Peak, Yunam or Deo Tibba with certified guides: tell us your dates and experience. We pair you with a registered Himachal outfitter and certified guides, and add permits, stays and transfers. One plan, one quote.",
+ "faq_h2": "Questions people ask about mountaineering terms",
+ "faqs": [
+  [
+   "What is a col in mountaineering?",
+   "A col is a high pass or saddle between two summits. Climbers often camp on a col or cross it; on Deo Tibba in Himachal, the Duhangan Col is the crux of the climb."
+  ],
+  [
+   "What is a bergschrund?",
+   "A bergschrund is the crevasse at the head of a glacier, where moving ice tears away from the ice or rock above. It is often the first obstacle before a face and is usually most open in summer and autumn."
+  ],
+  [
+   "What is a serac?",
+   "A serac is a tower or block of glacier ice, formed in icefalls and where crevasses cross. Seracs can collapse at any time of day, so routes avoid lingering below them."
+  ],
+  [
+   "What is the difference between alpine style and expedition style?",
+   "Alpine style means the team carries everything and climbs in one push, without fixed ropes or stocked camps. Expedition style uses stocked camps, fixed ropes and support staff."
+  ],
+  [
+   "What does summit push mean?",
+   "The summit push is the final climb from the top camp to the summit and back, usually started in the dark with an alpine start, while the snow is still firm."
+  ],
+  [
+   "What do the grades F, PD, AD, D, TD and ED mean?",
+   "They are French alpine grades: facile (easy), peu difficile, assez difficile, difficile, très difficile and extrêmement difficile. Kang Yatse II in Ladakh is PD; Menthosa's normal route in Lahaul is about AD."
+  ],
+  [
+   "What is a cornice?",
+   "A cornice is an overhanging lip of wind-blown snow on a ridge. It can break off under a climber's weight, so stay well back from the edge."
+  ],
+  [
+   "What is an LO on an Indian expedition?",
+   "An LO is the liaison officer the Indian Mountaineering Foundation appoints to every foreign expedition. Teams also pay a US$500 LO equipment hire."
+  ]
+ ],
+ "links": [
+  [
+   "/mountains-of-india/",
+   "Mountains of India",
+   "The Indian Himalaya guide"
+  ],
+  [
+   "/mountains-of-india/highest-peaks-in-india/",
+   "Highest peaks in India",
+   "Full list of 163 peaks"
+  ],
+  [
+   "/adventure/himalayan-peak-expeditions/",
+   "Guided peak climbs",
+   "Friendship Peak to Indrasan"
+  ]
+ ],
+ "sources": [
+  [
+   "Wikipedia — Glossary of climbing terms",
+   "https://en.wikipedia.org/wiki/Glossary_of_climbing_terms"
+  ],
+  [
+   "Wikipedia — Bergschrund",
+   "https://en.wikipedia.org/wiki/Bergschrund"
+  ],
+  [
+   "U.S. Geological Survey — Glacier and landscape glossary (Open-File Report 2004-1216)",
+   "https://pubs.usgs.gov/of/2004/1216/text.html"
+  ],
+  [
+   "R.J. Secor — A Climber's Glossary (climber.org)",
+   "https://climber.org/data/glossary.html"
+  ],
+  [
+   "Avalanche Center — Glossary: Bergschrund",
+   "https://www.avalanche-center.org/Education/glossary/bergschrund.php"
+  ],
+  [
+   "CDC Yellow Book — High-altitude travel and altitude illness",
+   "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html"
+  ],
+  [
+   "Indian Mountaineering Foundation — Peak fees",
+   "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Indian Mountaineering Foundation — Expedition application and rules",
+   "https://www.indmount.org/IMF/expeapp"
+  ]
+ ]
+}
