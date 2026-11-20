@@ -42,7 +42,7 @@ SPEC = dict(
             "From the temple a paved path of about 1 km leads to the <b>waterfall</b>, past cafés and painted stones. It is an easy walk of 20–30 minutes; the rocks near the falls are slippery, especially in the monsoon, when the flow is strongest. In winter the falls are much smaller but the path is quiet.",
         ]),
         dict(id="dharamkot", kicker="Dharamkot", h2="Dharamkot: cafés, courses and the start of Triund", ps=[
-            "Dharamkot is a small village on the ridge above McLeod and Bhagsu, popular with backpackers and long-stay travellers for its cafés, guesthouses and yoga, meditation and Buddhist courses. Cars can reach it by road from McLeod; on foot, a steep path climbs from Bhagsu.",
+            "Dharamkot is a small village on the ridge above McLeod and Bhagsu, popular with backpackers and long-stay travellers for its cafés, guesthouses and yoga, meditation and Buddhist courses — including the <a href=\"/tushita-meditation-centre/\">Tushita</a> and Vipassana centres, a few minutes' walk away. Cars can reach it by road from McLeod; on foot, a steep path climbs from Bhagsu.",
             "From the upper end of Dharamkot, the trail to <b>Triund</b> climbs about 9 km through forest via the Galu Devi temple to a grassy ridge at about 2,850 m facing the Dhauladhar. Most people do it as a long day walk; many stay overnight in season. See <a href=\"/triund-weather/\">Triund weather</a> before you go, and avoid the climb after fresh snow without a local guide.",
         ], table=(["Walk", "Distance", "Time", "Level"], [
             ["McLeod → Bhagsunag temple", "~2 km", "30–40 min", "Easy"],

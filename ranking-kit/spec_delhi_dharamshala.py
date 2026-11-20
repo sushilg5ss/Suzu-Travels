@@ -25,7 +25,7 @@ SPEC = dict(
     updated="November 2026",
     wa="Hello Suzu Travels, I need a car to Dharamshala. From: ___ , date: ___ , people: ___",
     cta2=("#ways", "All the ways"),
-    answer="<b>Delhi to Dharamshala is about 475 km by road and takes 9–10 hours by car</b> via Ambala, Kharar, Ropar, Una, Dehra and Kangra. <b>From Chandigarh it is about 240 km, 5.5–6.5 hours</b>, and from Pathankot about 90 km, 2.5–3 hours. The quickest way is a <b>flight to Gaggal (Kangra) airport</b>, about 13 km from Dharamshala; the classic budget way is an <b>overnight AC Volvo</b> to Dharamshala or McLeodganj (10–12 hours), or a night train to Pathankot and a taxi up. A one-way taxi from Delhi with us starts at <b>₹7,199 for a sedan</b> (Ertiga ₹9,099, Innova Crysta ₹12,399).",
+    answer="<b>Delhi to Dharamshala is about 475 km by road and takes 9–10 hours by car</b> via Ambala, Kharar, Ropar, Una, Dehra and Kangra. <b>From Chandigarh it is about 240 km, 5.5–6.5 hours</b>, and from Pathankot about 90 km, 2.5–3 hours. The quickest way is a <b>flight to <a href=\"/kangra-airport/\">Gaggal (Kangra) airport</a></b>, about 13 km from Dharamshala; the classic budget way is an <b>overnight AC Volvo</b> to Dharamshala or McLeodganj (10–12 hours), or a night train to Pathankot and a taxi up. A one-way taxi from Delhi with us starts at <b>₹7,199 for a sedan</b> (Ertiga ₹9,099, Innova Crysta ₹12,399).",
     quick=[
         ("Distance", "Delhi ~475 km · Chandigarh ~240 km · Pathankot ~90 km."),
         ("By car", "9–10 h from Delhi; 5.5–6.5 h from Chandigarh; 2.5–3 h from Pathankot."),
