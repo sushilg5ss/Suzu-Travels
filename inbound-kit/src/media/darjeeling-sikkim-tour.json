@@ -1,0 +1,23 @@
+{
+ "_note": "Media for /india-tours/darjeeling-sikkim-tour/ (guide, 'we arrange'). Visual Studio 20 Nov 2026. 3 NEW Pexels photos: tea garden + ropeway, Darjeeling px-33718524 (= poster, fact pack: poster tea garden), Kanchenjunga at sunrise px-28635442, Gangtok hillside px-14916663. No licensed Darjeeling Himalayan Railway photo found (Pexels 'train' result px-33519108 is a Nilgiri-livery diesel, NOT DHR — rejected), so no toy-train caption. Route map from fact-pack lat/lon. No cost ladder (price on request).",
+ "hero": {
+  "kicker": "DARJEELING & SIKKIM",
+  "scenes": [
+   {"img": "px-33718524.jpg", "kind": "tilt", "from": {"y": 0}, "to": {"y": 520}},
+   {"img": "px-28635442.jpg", "kind": "tilt", "from": {"y": 300}, "to": {"y": 620}},
+   {"img": "px-14916663.jpg", "kind": "land", "from": {"scale": 1.04, "x": 40, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 10}}
+  ],
+  "steps": ["DARJEELING TEA", "KANCHENJUNGA DAWN", "GANGTOK, SIKKIM"]
+ },
+ "route": {
+  "title": "DARJEELING & SIKKIM",
+  "sub": "A 7-day loop from Bagdogra airport",
+  "bounds": "auto",
+  "stops": [
+   {"name": "Bagdogra", "sub": "Airport", "day": "Start", "lat": 26.68, "lon": 88.33},
+   {"name": "Darjeeling", "sub": "Tea hills", "day": "Day 1–3", "lat": 27.04, "lon": 88.26},
+   {"name": "Gangtok", "sub": "Sikkim", "day": "Day 4–6", "lat": 27.33, "lon": 88.61},
+   {"name": "Bagdogra", "sub": "Fly out", "day": "Day 7", "lat": 26.68, "lon": 88.33}
+  ]
+ }
+}
