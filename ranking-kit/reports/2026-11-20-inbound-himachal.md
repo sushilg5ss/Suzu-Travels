@@ -172,4 +172,9 @@ Low-competition terms we target:
 - The three German pages link to each other.
 - English → German "Auf Deutsch lesen" lines go on himachal-pradesh-, dharamshala- and manali-for-international-travellers.
 - Singapore page → Malaysia page.
-- All of these were written to the site after 02:50 IST (quiet window 00:10–02:45).
+
+**Status (21 Nov)**
+- 00:40 IST, Sushil asked to publish now: the 4 NEW pages went live (new posts only, no edits to existing posts, health check 43–112 ms, 40 s apart). Post IDs 24436 himachal-pradesh-reise, 24437 dharamsala-reisefuehrer, 24438 manali-reisefuehrer, 24439 himachal-tour-from-malaysia. All 200, index, self-canonical, 1 H1, FAQPage, lang="de" on the German pages, Rank Math title/description/focus set, IndexNow submitted.
+- PENDING: the edits to existing posts (3 "Auf Deutsch lesen" lines + Singapore card swap) were held for the quiet window. At 02:50 IST Chrome was not reachable and the WordPress connector needed a fresh sign-in, so they are not done yet.
+  - Browser script: /tmp/claude-0/n21/pub_links_250.js (run from a wp-admin tab).
+  - Connector route: wp_replace_in_post on himachal-tour-from-singapore, find `<h3>Dharamshala</h3><div class="m">Tibetan culture</div><p><a href="/dharamshala-for-international-travellers/">Dharamshala for visitors →</a>` (1 match) → `<h3>From Malaysia</h3><div class="m">Snow trips from Kuala Lumpur</div><p><a href="/himachal-tour-from-malaysia/">Malaysia page →</a>`; then insert `<p lang="de"><em>Auf Deutsch lesen: <a href="/…/" hreflang="de">…</a></em></p>` after the first paragraph of the three *-for-international-travellers posts.
