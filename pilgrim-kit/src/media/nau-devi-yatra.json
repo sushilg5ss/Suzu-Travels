@@ -86,5 +86,30 @@
     "lon": 74.9482
    }
   ]
+ },
+ "story": {
+  "title": "The nine Devis and their stories",
+  "beats": [
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Sati falls — her eyes, tongue and more rest here"
+   },
+   {
+    "arch": "devi-cave",
+    "sky": "dusk",
+    "line": "Seven sister Devis, Mata Vaishno the eldest"
+   },
+   {
+    "arch": "hills",
+    "sky": "dawn",
+    "line": "Shakumbhari's tears end a hundred-year famine"
+   },
+   {
+    "arch": "devi",
+    "sky": "saffron",
+    "line": "Kalka, Chamunda, Chintpurni — each keeps her story"
+   }
+  ]
  }
 }
