@@ -8,7 +8,7 @@
 - **Duplicate check:** every candidate was matched against the 1,090 live URLs and checked with WP search on the day of publishing.
 - **Cannibalisation rule:** one intent per URL. Hindi and English twins are linked with alt_lang.
 
-## 2. New pages (26 live)
+## 2. New pages (27 live)
 
 | # | URL | Focus | Dec searches (IN) | Lang |
 |---|-----|-------|-------------------|------|
@@ -38,6 +38,7 @@
 | 24 | /delhi-to-dharamshala/ | delhi to dharamshala distance | 14,800–18,100 (EN twin of dharamshala-kaise-jaye) | EN |
 | 25 | /delhi-to-dalhousie/ | delhi to dalhousie distance (+ Pathankot, Amritsar) | 9,900 + 9,900 + 9,900 | EN |
 | 26 | /delhi-to-kasauli/ | delhi to kasauli distance (+ chandigarh to kasauli) | 9,900 + 14,800 | EN |
+| 27 | /manali-to-dharamshala/ | manali to dharamshala distance | 8,100 | EN |
 
 Every page has:
 - Credited Commons photos: CC BY, CC BY-SA, CC0 or public domain only.
@@ -79,6 +80,30 @@ Kasauli and himachal-in-january had been edited by another agent. For those two 
 - Distance chart Delhi/Chandigarh rows → Delhi to Shimla, Delhi to Kasol, Chandigarh to Shimla/Manali
 - EN hub "Getting there" line → all 7 route pages
 - Top GSC pages → new pages: himachal-distance-chart → Manali to Kasol + Chandigarh rows; delhi-se-manali-shimla-kitne-km → शिमला से मनाली; himachal-mein-barfbari → कुफरी / नारकंडा / सोलंग (Hindi)
+
+## 3b. Late-shift review (22:30–00:05)
+
+**Automated QA of all 26 pages: no problems found.**
+- No banned words.
+- Only +91 70874 88961 appears as the phone number.
+- Every photo is credited.
+- All 167 internal links return 200.
+- Every SEO title is ≤59 characters.
+
+**Fixes made:**
+- **Meta descriptions:** 20 were longer than 160 characters. All were shortened to ≤155 and updated in Rank Math.
+- **Spelling:** "Chhota Shimla" corrected in two route pages.
+- **Return-direction FAQs:** added to the Chandigarh–Shimla, Chandigarh–Manali and Delhi–Shimla pages. They cover Manali to Chandigarh (~14,800 searches/month), Shimla to Chandigarh (~12,100) and Shimla to Delhi.
+
+**Skipped on purpose:**
+
+| Candidate | Reason |
+|---|---|
+| Amritsar to Manali | Sources disagree on the distance (399 vs 460 km). |
+| Dharamshala to Dalhousie | Two routes with conflicting distances. |
+| Karsog valley | Too few reliable sources, and the content is mostly temples (Pilgrim lane). |
+
+These need a verified source or the Suzu team's own route data before we build them.
 
 ## 4. Early results (Google Search Console, last 7 days)
 
