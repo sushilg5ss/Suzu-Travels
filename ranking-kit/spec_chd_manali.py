@@ -83,6 +83,7 @@ SPEC = dict(
         ("What is the taxi fare from Chandigarh to Manali?", "With us, one-way from ₹4,199 for a sedan, ₹5,299 for an Ertiga and ₹7,199 for an Innova Crysta."),
         ("Is the Chandigarh–Manali road open in winter?", "Yes; the road to Manali stays open. Snow points are above Manali, at Solang and beyond the Atal Tunnel."),
         ("Where should I stop between Chandigarh and Manali?", "Bilaspur for Gobind Sagar or Mandi for lunch; both break the drive roughly in half."),
+        ("What is the distance from Manali to Chandigarh?", "About 290 km on the same road via Kullu, Mandi and Bilaspur; 7–8 hours by car, or an overnight Volvo of 8–9 hours."),
         ("Which is better, bus or taxi, from Chandigarh to Manali?", "The overnight Volvo is cheapest; a taxi lets you start early, stop on the way and arrive in daylight."),
     ],
     sources=[

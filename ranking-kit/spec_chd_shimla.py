@@ -84,6 +84,7 @@ SPEC = dict(
         ("What is the taxi fare from Chandigarh to Shimla?", "With us, one-way from ₹2,499 for a sedan, ₹3,299 for an Ertiga and ₹4,499 for an Innova Crysta."),
         ("Is the Kalka–Shimla toy train running?", "In late 2026 no trains run on the Kalka section until 31 December; check the latest status before planning."),
         ("Is the Chandigarh–Shimla road open in winter?", "Yes; snow is rare below Solan, but the last stretch from Shoghi into Shimla can be icy after a snowfall."),
+        ("What is the distance from Shimla to Chandigarh?", "The same road, about 115 km; the drive down takes about 3 hours, longer on Sunday evenings when weekend traffic returns to the plains."),
         ("Which places can I visit on the way?", "Kasauli from Dharampur, Barog and Dagshai near Solan, Solan itself, and Chail from Kandaghat."),
     ],
     sources=[

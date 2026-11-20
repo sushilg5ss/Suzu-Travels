@@ -86,6 +86,7 @@ SPEC = dict(
         ("What is the best way to go from Delhi to Shimla?", "For comfort, a private car; for the experience, the train to Kalka and the toy train (when the Kalka section is running); for budget, the overnight Volvo."),
         ("Is the Kalka–Shimla toy train running now?", "Until 31 December 2026 the Kalka section is closed and only Dharampur–Shimla trains run; check the latest status before booking."),
         ("What is the taxi fare from Delhi to Shimla?", "With us, one-way from ₹5,199 for a sedan, ₹6,599 for an Ertiga and ₹8,999 for an Innova Crysta, plus tolls and the Himachal entry fee."),
+        ("What is the distance from Shimla to Delhi?", "About 345 km by the same road via Solan, Chandigarh and Ambala; 7–9 hours by car, or an overnight Volvo of about 8–9 hours."),
         ("Is there a flight from Delhi to Shimla?", "Shimla's Jubbarhatti airport, about 22 km from town, has only a few flights; many travellers fly to Chandigarh and drive about 3 hours."),
     ],
     sources=[
