@@ -8,7 +8,7 @@
 - **Duplicate check:** every candidate was matched against the 1,090 live URLs and checked with WP search on the day of publishing.
 - **Cannibalisation rule:** one intent per URL. Hindi and English twins are linked with alt_lang.
 
-## 2. New pages (18 live)
+## 2. New pages (26 live)
 
 | # | URL | Focus | Dec searches (IN) | Lang |
 |---|-----|-------|-------------------|------|
@@ -29,7 +29,15 @@
 | 15 | /nahan/ (24302) | nahan | 49,500 | EN |
 | 16 | /manali-to-kasol/ (24307) | manali to kasol | 22,200 (distance) | EN |
 | 17 | /solan-tourist-places/ (24317) | solan tourist places | 5,400 | EN |
-| 18 | /chitkul/ | chitkul | 90,500 (we had only 55 impressions/28 days) | EN |
+| 18 | /chitkul/ (24328) | chitkul | 90,500 (we had only 55 impressions/28 days) | EN |
+| 19 | /pabbar-valley/ | pabbar valley / rohru | rohru 14.8–22k, pabbar 2.4k, kharapathar | EN |
+| 20 | /chandigarh-to-shimla/ | chandigarh to shimla distance | 74,000 (we had ~500 impressions/28 days, cab page at pos 49) | EN |
+| 21 | /chandigarh-to-manali/ | chandigarh to manali distance | 90,500 (cab page at pos 51) | EN |
+| 22 | /delhi-to-shimla/ | delhi to shimla distance | 74,000 (Hindi twin shimla-kaise-jaye was at pos 9.4) | EN |
+| 23 | /delhi-to-kasol/ | delhi to kasol distance (+ chandigarh to kasol) | 22,200 + 14,800 | EN |
+| 24 | /delhi-to-dharamshala/ | delhi to dharamshala distance | 14,800–18,100 (EN twin of dharamshala-kaise-jaye) | EN |
+| 25 | /delhi-to-dalhousie/ | delhi to dalhousie distance (+ Pathankot, Amritsar) | 9,900 + 9,900 + 9,900 | EN |
+| 26 | /delhi-to-kasauli/ | delhi to kasauli distance (+ chandigarh to kasauli) | 9,900 + 14,800 | EN |
 
 Every page has:
 - Credited Commons photos: CC BY, CC BY-SA, CC0 or public domain only.
@@ -66,7 +74,11 @@ Kasauli and himachal-in-january had been edited by another agent. For those two 
 - मनाली घूमने की जगह → Mall Road Manali
 - Bilaspur EN ↔ HI
 - किन्नौर घूमने की जगह → Chitkul
-- EN hub "Quieter corners" line → Chitkul
+- EN hub "Quieter corners" line → Chitkul, Pabbar valley; new "Getting there" line → Chandigarh to Shimla / Manali
+- Hindi "kaise jaye" pages now point "Read in English" to the new EN route twins (were cab pages): शिमला → /delhi-to-shimla/, धर्मशाला → /delhi-to-dharamshala/, डलहौज़ी → /delhi-to-dalhousie/
+- Distance chart Delhi/Chandigarh rows → Delhi to Shimla, Delhi to Kasol, Chandigarh to Shimla/Manali
+- EN hub "Getting there" line → all 7 route pages
+- Top GSC pages → new pages: himachal-distance-chart → Manali to Kasol + Chandigarh rows; delhi-se-manali-shimla-kitne-km → शिमला से मनाली; himachal-mein-barfbari → कुफरी / नारकंडा / सोलंग (Hindi)
 
 ## 4. Early results (Google Search Console, last 7 days)
 
@@ -88,6 +100,8 @@ Top pages:
 
 ## 5. Hand-offs
 
+- **Cab squad (info):** the 7 new route pages (chandigarh-to-shimla/-manali, delhi-to-shimla/-kasol/-dharamshala/-dalhousie/-kasauli) target "distance / how to reach" queries and link to your taxi pages using your live fares. They do not target "taxi" keywords.
+
 - **Pilgrim agents:** there is no page yet for Hidimba Temple (~246k Dec), Tara Devi (~33k) or Paonta Sahib (~165k).
 - **Adventure:** spare Jogini media is available (see section 2).
 - **Optimiser (watch):** "narkanda" queries (135k Dec) are split across 5 pages over the last 28 days. We sit around position 10. Linking them better should help:
@@ -105,3 +119,25 @@ Top pages:
 1. hPanel login is needed to edit the theme's "24/7" badge and the "most trusted" line.
 2. Explicit "OK homepage 13n".
 3. Design keeps the "7+ years, since 2019" CSS trust strip unless you say remove it.
+
+## 7. Next shift backlog
+
+1. **Re-check in GSC around 27 Nov:**
+   - The 26 pages published today.
+   - The 13/14 Nov pages. Target: the 30k impressions per week climbing, and positions 8–10 moving into the top 5.
+2. **Optimiser lane (not ours):** snippet/CTR work on high-impression, low-CTR pages:
+
+   | Page | Impressions | Clicks | Position |
+   |---|---|---|---|
+   | himachal-distance-chart | 3,166 | 7 | 7.5 |
+   | delhi-se-manali-shimla-kitne-km | 2,238 | 4 | 8.1 |
+   | sarahan-bhimakali-temple | 1,521 | 1 | 8.3 |
+
+3. **Possible new pages** (each checked for no existing URL):
+   - Karsog valley (~8k)
+   - Kangra tourist places (~2.4k)
+   - Kasol New Year party (~1.3k, December only)
+4. **Lane hand-offs:**
+   - Tattapani (~22k in January, around the Makar Sankranti dip) → Adventure/Pilgrim. /adventure/rafting-in-shimla-tattapani/ exists.
+   - Kheerganga (~18k) → Adventure.
+   - Hidimba Temple, Tara Devi, Paonta Sahib → Pilgrim.
