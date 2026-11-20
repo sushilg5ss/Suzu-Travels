@@ -80,7 +80,7 @@ SPEC = dict(
         ("Manali in January", "Snow, roads, dates to avoid", "<a href=\"/manali-in-january/\">Read →</a>"),
         ("Dharamshala in January", "McLeod Ganj and Triund", "<a href=\"/dharamshala-in-january/\">Read →</a>"),
         ("Spiti in winter", "Kaza at −20 °C", "<a href=\"/spiti-in-winter/\">Read →</a>"),
-        ("India in January", "Beyond Himachal", "<a href=\"/india-tours/india-in-january/\">Read →</a>"),
+        ("What to wear in Manali in winter", "Packing checklist", "<a href=\"/what-to-wear-in-manali-in-winter/\">Read →</a>"),
     ]),
     sections2=[],
     ctas=dict(h2="Plan a January snow trip with us", lead="Hotels, meals and a private car with a driver used to snow roads — in one written quote.", items=[
