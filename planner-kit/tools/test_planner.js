@@ -201,6 +201,17 @@ const { chromium, devices } = require('playwright');
       r.lahaul.ok = r.lahaul.day.length === 1 && /Solang Valley\.$/.test(r.lahaul.day[0]) && r.lahaul.stay.length === 1 && /Sissu stay/.test(r.lahaul.stay[0]) && !r.lahaul.offHit && r.lahaul.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.lahaul.hi[0]);
       await p3.screenshot({ path: `${out}/${name}-4l-lahaul-hi.png`, fullPage: true });
     }
+    { // v2.5 winter Char Dham seats (char-dham in Dec → 1 note, 4 seats; June → none) EN + HI
+      const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'char-dham');
+      const ws = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return p3.$$eval('.warn', x => x.map(y => y.textContent)); };
+      const on = await ws('2026-12-10', ''), off = await ws('2027-06-10', ''), hi = await ws('2026-12-10', 'hi');
+      r.wseat = { on: on.filter(t => /Winter Char Dham/.test(t)), offHit: off.some(t => /Winter Char Dham/.test(t)), hi: hi.filter(t => /शीतकालीन गद्दी/.test(t)) };
+      r.wseat.ok = r.wseat.on.length === 1 && (r.wseat.on[0].match(/ for (Maa|Baba|Badri)/g) || []).length === 4 && !r.wseat.offHit && r.wseat.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.wseat.hi[0]);
+      await p3.screenshot({ path: `${out}/${name}-4m-wseat-hi.png`, fullPage: true });
+    }
     { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
       const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
       const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;

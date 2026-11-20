@@ -387,6 +387,19 @@
       });
       if (hit) out.warn.push({ r: hit.stay ? 1 : 0, k: 'lahaul', t: 'Atal Tunnel & Lahaul in ' + MS[hit.m - 1] + ': after fresh snow, police close the road beyond Solang Nala to tourist cars — sometimes for days or weeks — and only local / 4×4 vehicles go through. ' + (hit.stay ? 'Your Sissu stay depends on the road being open; we keep Manali as the back-up night and confirm a day before.' : 'We go to Atal Tunnel & Sissu only when the road is open; otherwise that day is snow fun at Solang Valley.') });
     })();
+    /* v2.5 winter Char Dham: Nov–Apr the Dham portals are shut; darshan continues at the winter seats (gaddi sthal).
+       Sources: research/winter-passes.md (Char Dham winter seats) */
+    (function () {
+      var WS = { barkot: ['Yamunotri', 'Kharsali (Khushimath) for Maa Yamuna'], uttarkashi: ['Gangotri', 'Mukhba for Maa Ganga'], guptkashi: ['Kedarnath', 'Omkareshwar Temple, Ukhimath for Baba Kedar'], badrinath: ['Badrinath', 'Yogdhyan Badri, Pandukeshwar and Narsingh Temple, Jyotirmath for Badri Vishal'], chopta: ['Tungnath', 'Markandeya Temple, Makkumath for Tungnath ji'] };
+      var got = [];
+      out.days.forEach(function (dy) {
+        var m = dy.date.getMonth() + 1; if (m > 4 && m < 11) return;
+        [dy.to, dy.stay].concat(dy.via.map(function (v) { return v.id; })).forEach(function (id) { if (WS[id] && got.indexOf(id) < 0) got.push(id); });
+      });
+      if (!got.length) return;
+      var nm = got.map(function (id) { return WS[id][0]; }), lst = nm.length > 1 ? nm.slice(0, -1).join(', ') + ' and ' + nm[nm.length - 1] : nm[0];
+      out.warn.push({ r: 0, k: 'wseat', t: 'Winter Char Dham (Nov – Apr): the ' + lst + (nm.length > 1 ? ' temples are' : ' temple is') + ' closed for winter and the deities are worshipped at their winter seats — ' + got.map(function (id) { return WS[id][1]; }).join('; ') + '. Ask us to plan a winter darshan yatra to them; the main shrines reopen around late April – May.' });
+    })();
     /* v2.3 short winter daylight: a hill drive day (Nov–Feb) that would still be on the road at sunset with a 7:30 AM start and ~1 h of meal/tea stops.
        Sunset from sunIST() at the destination; long drives (> 10 h) already get their own warning. */
     (function () {
