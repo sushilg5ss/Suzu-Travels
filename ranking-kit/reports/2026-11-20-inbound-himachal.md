@@ -126,3 +126,50 @@ All WordPress writes finished by 23:56 IST. All internal links on the 6 pages re
 4. **For Sushil:**
    - Approve a Malaysia country page and a German-language pilot page.
    - Confirm approved prices for the motorcycle tours.
+
+## 6. Country-language pages (Sushil approved 21 Nov, 00:14)
+
+**German market (DE / AT / CH, German-language searches, Keyword Planner)**
+
+Low-competition terms we target:
+
+| Keyword | Searches/month |
+|---|---|
+| dharamsala | 3,600 |
+| shimla | 2,400 |
+| himachal pradesh | 1,900 |
+| manali indien | 1,900 |
+| spiti valley | 880 |
+| nordindien | 720 |
+| mcleod ganj | 480 |
+| himalaya indien | 260 |
+
+"indien rundreise" (1,600) and "indien reise" (1,300) are HIGH competition, so we do not target them directly. Germany sent 2.7 lakh visitors to India in 2025 (#7 source market).
+
+**Malaysia**
+- Malaysia sent 3.4 lakh visitors in 2025 (#6 source market).
+- Malaysians search in **English**; Malay "pakej" searches are close to zero.
+- Relevant English searches (MY / SG / ID / TH): "india tour package from malaysia" 140; "manali snow" 140 (480 in December); "manali tour package" 110.
+
+**Builder change:** blogkit now supports `lang="de"`.
+- German UI strings, a German registration line, a `lang` attribute on the page block, and an alt_lang language parameter.
+- English output was checked byte-for-byte unchanged.
+
+| URL | Language | Focus |
+|---|---|---|
+| /himachal-pradesh-reise/ | DE | himachal pradesh reise / himachal pradesh |
+| /dharamsala-reisefuehrer/ | DE | dharamsala / mcleod ganj |
+| /manali-reisefuehrer/ | DE | manali indien |
+| /himachal-tour-from-malaysia/ | EN + Bahasa Melayu summary | manali trip from malaysia / india tour package from malaysia |
+
+**Facts used**
+- **German pages:** Frankfurt–Delhi nonstop with Lufthansa and Air India, about 7 h 45 min (FlightConnections). e-Visa at least 4 days before arrival, passport valid 6 months, E-Arrival Card 72 h before arrival (ADAC). Dalai Lama away 7 Dec 2026 – end Jan 2027 (our /dalai-lama-temple/, checked 20 Nov).
+- **Malaysia page:** KL–Delhi nonstop with Malaysia Airlines, Batik Air and Air India, about 5 h 50 min. Free 30-day double-entry e-Tourist visa until 31 Dec 2026 (High Commission of India, KL).
+- **Prices:** only live rupee prices (₹14,499 / ₹12,999 / ₹16,499 / ₹18,999). No currency conversions were invented.
+- **Language:** every page states that the team replies in English.
+
+**Cross-links**
+- The three German pages link to each other.
+- English → German "Auf Deutsch lesen" lines go on himachal-pradesh-, dharamshala- and manali-for-international-travellers.
+- Singapore page → Malaysia page.
+- All of these were written to the site after 02:50 IST (quiet window 00:10–02:45).
