@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 30% 25%, #16365a 0%, #0b1f33 65%); color: #fff; }
+      .kicker { position: absolute; left: 100px; top: 62px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.16em; }
+      .title { position: absolute; left: 100px; top: 108px; font-weight: 800; font-size: 72px; letter-spacing: -0.02em; white-space: nowrap; }
+      .nts { position: absolute; left: 102px; top: 200px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.65); }
+      .legend { position: absolute; right: 100px; top: 74px; display: flex; flex-direction: column; gap: 10px; align-items: flex-end; font-weight: 800; font-size: 24px; }
+      .legend div { display: flex; gap: 12px; align-items: center; }
+      .st { position: absolute; width: 200px; border-radius: 14px 14px 0 0; background: linear-gradient(180deg, #d4a24c 0%, rgba(212,162,76,0.55) 100%); transform-origin: 50% 100%; }
+      .st span { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; font-weight: 800; font-size: 44px; color: #0b1f33; }
+      .ground { position: absolute; left: 80px; top: 960px; width: 1760px; height: 6px; background: rgba(255,255,255,0.35); border-radius: 3px; }
+      .lb { position: absolute; width: 204px; }
+      .ln { font-weight: 800; font-size: 27px; line-height: 1.1; height: 60px; display: flex; align-items: flex-end; }
+      .lf { margin-top: 6px; font-weight: 500; font-size: 20px; color: rgba(255,255,255,0.9); white-space: nowrap; }
+      .chip { display: inline-block; margin-top: 10px; padding: 5px 14px; border-radius: 20px; font-weight: 800; font-size: 20px; white-space: nowrap; }
+      .chip.o { background: #fff; color: #0b1f33; }
+      .chip.p { background: #d4a24c; color: #0b1f33; }
+      .chip.c { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.8); }
+      .foot { position: absolute; left: 100px; top: 990px; font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.8); }
+      .cp { position: absolute; inset: 0; background: #0b1f33; display: flex; align-items: center; justify-content: center; gap: 70px; opacity: 0; }
+      .cpt { display: flex; flex-direction: column; gap: 22px; }
+      .cpt .a { font-weight: 800; font-size: 34px; letter-spacing: 0.14em; color: #d4a24c; }
+      .cpt .b { font-weight: 800; font-size: 76px; line-height: 1.05; }
+      .cpt .c { font-weight: 500; font-size: 36px; line-height: 1.35; color: rgba(255,255,255,0.92); }
+      .end { position: absolute; inset: 0; background: #0b1f33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 34px; opacity: 0; }
+      .etitle { font-size: 64px; font-weight: 800; }
+      .rib { display: flex; gap: 14px; }
+      .seg { width: 380px; height: 150px; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; font-weight: 800; text-align: center; }
+      .seg b { font-size: 44px; }
+      .seg span { font-size: 26px; }
+      .g { background: #d4a24c; color: #0b1f33; }
+      .w { background: #fff; color: #0b1f33; }
+      .d { background: rgba(255,255,255,0.12); color: #fff; }
+      .endnote { font-size: 38px; font-weight: 500; color: rgba(255,255,255,0.92); }
+      .pq { font-size: 40px; font-weight: 800; color: #d4a24c; }
+      .reg { font-size: 26px; font-weight: 500; color: rgba(255,255,255,0.75); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div id="lad" style="position:absolute;inset:0"><div class="kicker">TREKS NEAR MCLEODGANJ · DHAULADHAR</div>
+        <div class="title">Eight trails, easiest to hardest</div>
+        <div class="nts">Steps show effort, not to scale · winter status under Kangra orders, Dec–Feb</div>
+        <div class="legend"><div><span class="chip o">Open</span> in winter</div><div><span class="chip p">Permission</span> clear days only</div><div><span class="chip c">Closed</span> above 3,000 m / frozen</div></div>
+        <div class="ground"></div>
+        <div class="st" id="s0" style="left:96px;top:850px;height:110px"><span>1</span></div>
+        <div class="st" id="s1" style="left:312px;top:810px;height:150px"><span>2</span></div>
+        <div class="st" id="s2" style="left:528px;top:770px;height:190px"><span>3</span></div>
+        <div class="st" id="s3" style="left:744px;top:720px;height:240px"><span>4</span></div>
+        <div class="st" id="s4" style="left:960px;top:660px;height:300px"><span>5</span></div>
+        <div class="st" id="s5" style="left:1176px;top:600px;height:360px"><span>6</span></div>
+        <div class="st" id="s6" style="left:1392px;top:530px;height:430px"><span>7</span></div>
+        <div class="st" id="s7" style="left:1608px;top:450px;height:510px"><span>8</span></div>
+        <div class="lb" id="l0" style="left:96px;top:700px"><div class="ln">Bhagsu waterfall</div><div class="lf">~3 km · 2–3 hrs</div><div class="chip o">Open</div></div>
+        <div class="lb" id="l1" style="left:312px;top:660px"><div class="ln">Gallu Devi walk</div><div class="lf">~2 km · Dharamkot</div><div class="chip o">Open</div></div>
+        <div class="lb" id="l2" style="left:528px;top:620px"><div class="ln">Naddi &amp; Dal Lake</div><div class="lf">~4 km · family walk</div><div class="chip o">Open</div></div>
+        <div class="lb" id="l3" style="left:744px;top:570px"><div class="ln">Guna Devi temple</div><div class="lf">7–8 km · ~2,300 m</div><div class="chip o">Open</div></div>
+        <div class="lb" id="l4" style="left:960px;top:510px"><div class="ln">Triund ridge</div><div class="lf">~9 km · ~2,850 m</div><div class="chip p">Permission</div></div>
+        <div class="lb" id="l5" style="left:1176px;top:450px"><div class="ln">Thatharana Top</div><div class="lf">3–5 hrs up · 1 night</div><div class="chip p">Clear days</div></div>
+        <div class="lb" id="l6" style="left:1392px;top:380px"><div class="ln">Kareri Lake</div><div class="lf">2 days · 2,934 m</div><div class="chip c">Closed</div></div>
+        <div class="lb" id="l7" style="left:1608px;top:300px"><div class="ln">Indrahar Pass</div><div class="lf">3–4 days · ~4,342 m</div><div class="chip c">Closed</div></div>
+        </div>
+        <div class="cp" id="cp">
+          <svg width="300" height="300" viewBox="0 0 300 300"><rect x="40" y="60" width="26" height="220" rx="6" fill="#d4a24c"/><rect x="234" y="60" width="26" height="220" rx="6" fill="#d4a24c"/><rect id="bar" x="66" y="110" width="168" height="22" rx="8" fill="#fff"/><rect x="95" y="160" width="110" height="80" rx="12" fill="none" stroke="#fff" stroke-width="8"/><circle cx="125" cy="192" r="14" fill="#fff"/><rect x="150" y="182" width="42" height="8" rx="4" fill="#fff"/><rect x="150" y="200" width="30" height="8" rx="4" fill="#fff"/></svg>
+          <div class="cpt"><div class="a">BEFORE YOU START</div><div class="b">Register with your ID<br/>at the check post</div><div class="c">Gallu for Triund · Khadota for Thatharana<br/>Kangra has 10 trek check posts</div></div>
+        </div>
+        <div class="end" id="end">
+          <div class="etitle">When to trek near McLeodganj</div>
+          <div class="rib">
+            <div class="seg g"><b>Mar–Jun</b><span>Best for all trails</span></div>
+            <div class="seg d"><b>Jul–Aug</b><span>Monsoon: short walks only</span></div>
+            <div class="seg g"><b>Sep–Nov</b><span>Best again</span></div>
+            <div class="seg w"><b>Dec–Feb</b><span>Below 3,000 m only</span></div>
+          </div>
+          <div class="endnote">Hotel + cab + trek in one plan</div>
+          <div class="pq">Price: Get Quote</div>
+          <div class="reg">HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from(".kicker", { opacity: 0, y: 20, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from(".title", { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" }, 0.2);
+      tl.from([".nts", ".legend", ".ground"], { opacity: 0, duration: 0.5 }, 0.5);
+      for (let i = 0; i < 8; i++) {
+        const t = 0.9 + i * 0.62;
+        tl.fromTo("#s" + i, { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: "power2.out", immediateRender: true }, t);
+        tl.fromTo("#l" + i, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", immediateRender: true }, t + 0.25);
+      }
+      tl.to("#lad", { opacity: 0, duration: 0.35, ease: "sine.in" }, 6.3);
+      tl.to("#cp", { opacity: 1, duration: 0.45, ease: "sine.inOut" }, 6.6);
+      tl.to("#cp", { opacity: 0, duration: 0.3, ease: "sine.in" }, 8.7);
+      tl.from(".cpt > div", { opacity: 0, x: 30, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 6.8);
+      tl.fromTo("#bar", { rotation: 0, svgOrigin: "66 121" }, { rotation: -55, svgOrigin: "66 121", duration: 0.6, ease: "power2.inOut" }, 7.6);
+      tl.to("#end", { opacity: 1, duration: 0.5, ease: "sine.inOut" }, 9.0);
+      tl.from(".seg", { opacity: 0, y: 30, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 9.3);
+      tl.from([".endnote", ".pq", ".reg"], { opacity: 0, y: 20, duration: 0.4, stagger: 0.15 }, 10.0);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
