@@ -105,3 +105,6 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Commons quality-image search worked (`search=<place>+incategory:Quality_images&ns6=1`, URL-encode non-ASCII names, ~5 s apart); raw wikitext gave licence + author; WordPress fetched all 1920px thumbs. Portrait uploads get `-scaled` (2560 px tall) — use the `med` 768px size in galleries.
 - Grid cards for a new page were inserted before the Switzerland card (UK card on the Switzerland page) on all 30 country pages; hub snow/best chips for Iceland were appended at the end of each month list (WHEN row placed last in `gen_hub.py`).
 
+## Notes (21 Nov 2026)
+- Two WordPress connectors exist: **Suzu Travels WordPress** (suzutravels.com — the only one for this lane) and **SuzuCart WordPress** (suzucart.com, another site). Tool descriptions end with "(site: …)" — check it before any write. If the Suzu Travels connector is missing, prepare the build offline and stop; never write via SuzuCart.
+- UDI (udi.no) answers curl; the country guide personalises with `?c=ind`. norway.no (Embassy pages) returns a Cloudflare JS challenge to curl.
