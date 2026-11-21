@@ -31,6 +31,8 @@
  "sections": [
   {
    "id": "route",
+   "video": "route",
+   "video_caption": "A first solo loop: Delhi → Agra → Jaipur → Rishikesh → McLeod Ganj, about 11 days or more. Town positions are approximate; shorten or stretch it to your dates.",
    "nav": "First route",
    "h2": "A first solo route: Delhi, Agra, Jaipur, then the hills",
    "kind": "table",
