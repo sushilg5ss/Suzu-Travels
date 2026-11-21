@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-21-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.6 Best-for-month chip + season badges on ready ideas",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "880bb678c36de8bd486ee56e2eb0f00aa1b4f5b5e59b8f8ca934d7537cb69441",
+   "base_sha256": "17df21b9ec7ecf6d497d6c9103219125b547c5448ced7c6e55ade322afe73aa6",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 406679
+  }
+ ]
+}
