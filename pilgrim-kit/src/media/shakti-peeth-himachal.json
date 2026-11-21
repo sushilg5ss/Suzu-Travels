@@ -58,5 +58,30 @@
     "lon": 76.4192
    }
   ]
+ },
+ "story": {
+  "title": "Five Devis, five stories",
+  "beats": [
+   {
+    "arch": "devi",
+    "sky": "dawn",
+    "line": "Naina Devi: a herd boy finds the Devi's pindi"
+   },
+   {
+    "arch": "hills",
+    "sky": "dusk",
+    "line": "Chintpurni: the Devi frees Mai Das of worry"
+   },
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "Jwala Ji: flames rise from rock, no idol"
+   },
+   {
+    "arch": "hills",
+    "sky": "snow",
+    "line": "Kangra's butter pindi, Chamunda below the snows"
+   }
+  ]
  }
 }
