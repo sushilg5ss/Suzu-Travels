@@ -10,3 +10,5 @@ JS off → nothing shown (planner unchanged). No storage, no fetch, no third-par
 Placement: `<!--szt:planner-matches-->` right after `<!--/szv:skin-->`. Revert = replace the marked block with ''.
 Rebuild: `python3 build.py` → widget.html, then wp_replace_in_page the old block. Update the map when new region pages go live.
 Note: on the cached plain URL WP Rocket "Delay JS" runs it after first scroll/tap (same as the planner script).
+
+**21 Nov 2026 (row 39):** map refreshed — each region chip now lists its own dedicated live page first (varanasi-trip-guide, ladakh-trip-guide, amritsar-golden-temple-tour, himachal-10-day-itinerary, kashmir-7-day-itinerary, golden-triangle-itinerary-7-days, south-india-tour …). Publish with `ops-row39-2026-11-21.json` (one replace of the JS map; dry_run, expected_count 1). Revert = the same op reversed. Note: the JS shows max 3 guides per region (loop q<3), max 4 links in total.

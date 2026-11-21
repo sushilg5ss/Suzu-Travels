@@ -7,19 +7,21 @@ def g(slug):
     v = live[slug]; return [v['path'], v['label'].replace(' & ', ' and ')]
 # chip value first word -> [card keyword regex source, [guides]]
 M = {
- 'Golden':   ['Golden Triangle|Agra', [g('taj-mahal-tour-from-delhi'), g('agra-to-jaipur'), g('golden-triangle-tour')]],
- 'Himachal': ['Shimla|Manali|Dharamshala', [g('best-time-to-visit-himachal'), g('india-2-week-itinerary')]],
- 'Kashmir':  ['Kashmir|Srinagar', [g('best-time-to-visit-kashmir'), g('gulmarg-ski-holiday')]],
+ 'Golden':   ['Golden Triangle|Agra', [g('golden-triangle-itinerary-7-days'), g('taj-mahal-tour-from-delhi'), g('agra-to-jaipur')]],
+ 'Himachal': ['Shimla|Manali|Dharamshala', [g('himachal-10-day-itinerary'), g('best-time-to-visit-himachal'), g('spiti-valley-trip-guide')]],
+ 'Kashmir':  ['Kashmir|Srinagar', [g('kashmir-7-day-itinerary'), g('best-time-to-visit-kashmir'), g('gulmarg-ski-holiday')]],
  'Rishikesh':['Rishikesh|Haridwar', [g('rishikesh-yoga-retreat-guide'), g('kumbh-mela-tour')]],
  'Char':     ['Char Dham', [g('char-dham-yatra-for-nri')]],
- 'Varanasi': ['Varanasi', [g('best-places-to-visit-in-india')]],
- 'Rajasthan':['Udaipur|Jodhpur|Jaisalmer|Rajasthan', [g('rajasthan-tour'), g('tiger-safari-india')]],
- 'Amritsar': ['Amritsar', [g('india-2-week-itinerary'), g('best-places-to-visit-in-india')]],
- 'Ladakh':   ['Ladakh|Leh', [g('best-places-to-visit-in-india')]],
- 'Kerala':   ['Kerala', [g('kerala-tour')]],
- 'Goa':      ['Goa', [g('goa-holiday')]],
- 'Not':      ['', [g('first-time-india-travel-guide'), g('best-time-to-visit-india'), g('best-places-to-visit-in-india')]],
+ 'Varanasi': ['Varanasi', [g('varanasi-trip-guide'), g('kumbh-mela-tour'), g('khajuraho-temples')]],
+ 'Rajasthan':['Udaipur|Jodhpur|Jaisalmer|Rajasthan', [g('rajasthan-tour'), g('agra-to-jaipur'), g('tiger-safari-india')]],
+ 'Amritsar': ['Amritsar', [g('amritsar-golden-temple-tour'), g('india-2-week-itinerary')]],
+ 'Ladakh':   ['Ladakh|Leh', [g('ladakh-trip-guide'), g('spiti-valley-trip-guide')]],
+ 'Kerala':   ['Kerala', [g('kerala-tour'), g('south-india-tour'), g('ayurveda-retreat-kerala')]],
+ 'Goa':      ['Goa', [g('goa-holiday'), g('south-india-tour')]],
+ 'Not':      ['', [g('first-time-india-travel-guide'), g('best-time-to-visit-india'), g('india-trip-cost')]],
 }
+# Map refreshed 2026-11-21 (TRUST_BACKLOG row 39): each region now points first to its own dedicated live page.
+# Only the first 3 guides per region are ever shown (JS loop q<3); max 4 links total across chips.
 css = ("<style>.szj{margin:0 0 12px;padding:10px 12px;border-radius:14px;background:#F4EEDD;border:1px solid #E6DCC0;font-family:'Plus Jakarta Sans',system-ui,sans-serif}"
 "#szpForm .szj b.t{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A6A12;margin:0 0 6px}"
 ".szj .szj-l{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}.szj .szj-l:last-child{margin:0}"

@@ -9,3 +9,6 @@ Counts = static enquiry links in the live HTML (page body + site header/footer/s
 | 2026-11-16 | 11411 /india-tours/ | 23 | 1 | 14 | 4 | 16 | not available |
 | 2026-11-16 | 11412 /golden-triangle-tour/ | 20 | 1 | 14 | 4 | 15 (incl. check-us, added today) | not available |
 | 2026-11-16 | 11413 /char-dham-yatra-for-nri/ | 17 | 1 | 11 | 4 | 12 (incl. check-us, added today) | not available |
+| 2026-11-21 | 11411 /india-tours/ | 27 | 1 | 16 | 4 | 16 | not available |
+| 2026-11-21 | 11412 /golden-triangle-tour/ | 25 | 1 | 17 | 4 | 16 | not available |
+| 2026-11-21 | 11413 /char-dham-yatra-for-nri/ | 23 | 1 | 15 | 4 | 14 | not available |
