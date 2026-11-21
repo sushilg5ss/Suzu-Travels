@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: #0b1f33; }
+      .kick { position: absolute; left: 120px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; }
+      .ttl { position: absolute; left: 120px; top: 112px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.ch { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .chip { position: absolute; top: 220px; left: 120px; height: 84px; padding: 0 34px; border-radius: 42px; border: 4px solid #d4a24c; color: #fff; font-weight: 800; font-size: 34px; display: flex; align-items: center; gap: 18px; white-space: nowrap; }
+      .end { position: absolute; inset: 0; background: #0b1f33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; }
+      .end .a { color: #fff; font-weight: 800; font-size: 72px; }
+      .end .b { color: #0b1f33; background: #d4a24c; font-weight: 800; font-size: 46px; padding: 22px 54px; border-radius: 50px; }
+      .end .c { color: rgba(255,255,255,0.85); font-weight: 500; font-size: 30px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="main" class="clip" data-layout-allow-overlap data-start="0" data-duration="10.4" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kick" id="k1">THATHARANA TREK · HOW IT WORKS</div>
+        <div class="ttl" id="t1">Forest climb to a meadow camp</div>
+        <div class="chip" id="water">5–7 km · 3–5 h up · 1 night</div>
+        <svg class="ch" viewBox="0 0 1920 1080">
+          <path d="M 160 700 C 300 692 380 660 460 640 C 640 590 820 470 1000 400 C 1120 356 1220 340 1300 336 L 1300 720 L 160 720 Z" fill="rgba(212,162,76,0.14)" />
+          <path id="pr" d="M 160 700 C 300 692 380 660 460 640 C 640 590 820 470 1000 400 C 1120 356 1220 340 1300 336" fill="none" stroke="#d4a24c" stroke-width="7" stroke-linecap="round" />
+          <path id="kp" d="M 1300 336 C 1450 320 1600 250 1760 214" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-dasharray="14 12" stroke-linecap="round" />
+          <line x1="160" y1="720" x2="1760" y2="720" stroke="rgba(255,255,255,0.45)" stroke-width="3" />
+          <g id="m1"><circle cx="160" cy="700" r="12" fill="#d4a24c"/><text x="130" y="772" font-size="34">Khaniyara</text><text x="130" y="812" font-size="26" style="fill:#d4a24c">~1,300 m · approx.</text></g>
+          <g id="m2"><circle cx="560" cy="616" r="11" fill="#fff" stroke="#d4a24c" stroke-width="4"/><text x="580" y="772" text-anchor="middle" font-size="34">Khadota check post</text><text x="580" y="812" text-anchor="middle" font-size="26" style="fill:#d4a24c">Register with ID</text></g>
+          <g id="m3"><circle cx="760" cy="526" r="9" fill="#fff"/><text x="730" y="500" text-anchor="end" font-size="28">Oak &amp; rhododendron forest</text><text x="730" y="464" text-anchor="end" font-size="26" style="fill:#d4a24c">3–5 h up · carry 2 L water</text></g>
+          <g id="m4"><circle cx="1300" cy="336" r="15" fill="#3f7d3a" stroke="#d4a24c" stroke-width="5"/><text x="1300" y="290" text-anchor="middle" font-size="34">Thatharana Top</text><text x="1300" y="252" text-anchor="middle" font-size="26" style="fill:#d4a24c">~2,500–2,750 m · camp 1 night</text></g>
+          <g id="m5"><circle cx="1760" cy="214" r="11" fill="#0b1f33" stroke="rgba(255,255,255,0.7)" stroke-width="4"/><text x="1760" y="176" text-anchor="end" font-size="28">Kundli Pass · summer only</text><rect x="1508" y="330" width="252" height="44" rx="22" fill="#b3412f"/><text x="1634" y="361" text-anchor="middle" font-size="24">above 3,000 m</text></g>
+          <g id="hk"><circle r="16" fill="#d4a24c" stroke="#fff" stroke-width="5"/></g>
+          <g transform="translate(160,880)"><g id="months">
+            <text x="0" y="-20" font-size="26" style="fill:#d4a24c" letter-spacing="3">TRAIL BY MONTH</text>
+            <g id="mb"></g>
+          </g></g>
+        </svg>
+      </div>
+      <div id="endc" class="clip" data-start="10.4" data-duration="1.6" data-track-index="1" style="position:absolute;inset:0">
+        <div class="end"><div class="a">Trek lead + camp + hotel + cab, one quote</div><div class="b">Get Quote on WhatsApp</div><div class="c">HP Tourism registered travel agent · Reg. No. DTO-MND-11-243/2022</div></div>
+      </div>
+    </div>
+    <script>
+      const NS = "http://www.w3.org/2000/svg";
+      const mb = document.getElementById("mb");
+      const mon = ["J","F","M","A","M","J","J","A","S","O","N","D"];
+      const col = ["#e8f1fb","#e8f1fb","#d4a24c","#d4a24c","#d4a24c","#d4a24c","#7a6a4a","#7a6a4a","#d4a24c","#d4a24c","#d4a24c","#e8f1fb"];
+      for (let i = 0; i < 12; i++) {
+        const r = document.createElementNS(NS, "rect");
+        r.setAttribute("x", i * 133); r.setAttribute("y", 0); r.setAttribute("width", 127); r.setAttribute("height", 56); r.setAttribute("rx", 10);
+        r.setAttribute("fill", col[i]); r.setAttribute("class", "mc"); mb.appendChild(r);
+        const t = document.createElementNS(NS, "text");
+        t.setAttribute("x", i * 133 + 63); t.setAttribute("y", 39); t.setAttribute("text-anchor", "middle"); t.setAttribute("font-size", "28");
+        t.setAttribute("style", "fill:" + ((i === 6 || i === 7) ? "#fff" : "#0b1f33"));
+        t.textContent = mon[i]; mb.appendChild(t);
+      }
+      const leg = [["Best: Mar–Jun & Sep–Nov", 0], ["Monsoon, avoid: Jul–Aug", 520], ["Snow up top Dec–Feb: clear days only", 1000]];
+      leg.forEach(([s, x]) => { const t = document.createElementNS(NS, "text"); t.setAttribute("x", x); t.setAttribute("y", 104); t.setAttribute("font-size", "26"); t.setAttribute("class", "lg"); t.textContent = s; mb.appendChild(t); });
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const pr = document.getElementById("pr");
+      const L = pr.getTotalLength();
+      pr.setAttribute("stroke-dasharray", L);
+      tl.fromTo("#k1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo("#t1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.2);
+      tl.fromTo(pr, { attr: { "stroke-dashoffset": L } }, { attr: { "stroke-dashoffset": 0 }, duration: 5.6, ease: "sine.inOut" }, 0.6);
+      const hk = document.getElementById("hk");
+      function put(t) { const a = pr.getPointAtLength(L * t); hk.setAttribute("transform", "translate(" + a.x.toFixed(1) + "," + a.y.toFixed(1) + ")"); }
+      put(0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 5.6, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.6);
+      [["#m1", 0.5], ["#m2", 1.5], ["#m3", 2.9], ["#m4", 5.4], ["#m5", 6.3]].forEach(([s, t]) => tl.fromTo(s, { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, t));
+      tl.fromTo("#water", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 2.4);
+      tl.fromTo("#kp", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 6.2);
+      tl.fromTo("#months", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 6.6);
+      tl.fromTo(".mc", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.4, stagger: 0.06, ease: "power2.out" }, 6.8);
+      tl.fromTo(".lg", { opacity: 0 }, { opacity: 1, duration: 0.4, stagger: 0.4, ease: "power1.out" }, 7.6);
+      tl.fromTo(".end", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 10.4);
+      tl.fromTo(".end .b", { scale: 0.9 }, { scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 10.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

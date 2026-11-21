@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .scene img { position: absolute; left: -96px; top: -54px; width: 2112px; height: 1188px; object-fit: cover; }
+      .mir { transform: scaleX(-1); }
+      .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,51,0) 0%, rgba(11,31,51,0.1) 38%, rgba(11,31,51,0.82) 54%, rgba(11,31,51,0.95) 100%); }
+      .panel { position: absolute; left: 1020px; top: 0; width: 860px; height: 1080px; }
+      .kicker { position: absolute; left: 0; top: 96px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.14em; white-space: nowrap; }
+      .t1 { position: absolute; left: 0; top: 146px; color: #fff; font-weight: 800; font-size: 96px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      .t2 { position: absolute; left: 0; top: 258px; color: #d4a24c; font-weight: 800; font-size: 96px; line-height: 1.02; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.prof { position: absolute; left: 0; top: 392px; width: 840px; height: 480px; overflow: visible; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; font-size: 30px; }
+      .bar { position: absolute; left: 0; top: 900px; width: 120px; height: 8px; background: #d4a24c; border-radius: 4px; }
+      .facts { position: absolute; left: 0; top: 926px; width: 860px; height: 80px; }
+      .fact { position: absolute; left: 0; top: 0; width: 860px; color: #fff; font-weight: 800; font-size: 48px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="sc1" class="scene clip" data-layout-allow-overflow data-start="0" data-duration="3.2" data-track-index="0"><img id="im1" src="assets/s1.jpg" alt="" /></div>
+      <div id="sc2" class="scene clip" data-layout-allow-overflow data-start="2.6" data-duration="3.2" data-track-index="1"><div id="fd2" style="position:absolute;inset:0"><div class="mir" style="position:absolute;inset:0"><img id="im2" src="assets/s2.jpg" alt="" /></div></div></div>
+      <div id="sc3" class="scene clip" data-layout-allow-overflow data-start="5.2" data-duration="3.2" data-track-index="2"><div id="fd3" style="position:absolute;inset:0"><div class="mir" style="position:absolute;inset:0"><img id="im3" src="assets/s3.jpg" alt="" /></div></div></div>
+      <div id="sc4" class="scene clip" data-layout-allow-overflow data-start="7.8" data-duration="3.2" data-track-index="3"><div id="fd4" style="position:absolute;inset:0"><img id="im4" src="assets/s4.jpg" alt="" /></div></div>
+      <div id="sc5" class="scene clip" data-layout-allow-overflow data-start="10.6" data-duration="1.4" data-track-index="4"><div id="fd5" style="position:absolute;inset:0"><img id="im5" src="assets/s1.jpg" alt="" /></div></div>
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="5" style="position:absolute;inset:0">
+        <div class="shade"></div>
+        <div class="panel">
+          <div class="kicker">TREK &amp; CAMP · DHARAMSHALA</div>
+          <div class="t1">Thatharana</div>
+          <div class="t2">Top trek</div>
+          <svg class="prof" viewBox="0 0 840 480">
+            <path d="M 40 400 C 160 392 220 330 330 290 C 450 246 520 190 610 150 C 690 116 740 104 800 100 L 800 420 L 40 420 Z" fill="rgba(212,162,76,0.14)" />
+            <path id="route" d="M 40 400 C 160 392 220 330 330 290 C 450 246 520 190 610 150 C 690 116 740 104 800 100" fill="none" stroke="#d4a24c" stroke-width="6" stroke-linecap="round" />
+            <line x1="40" y1="420" x2="800" y2="420" stroke="rgba(255,255,255,0.5)" stroke-width="2" />
+            <circle cx="40" cy="400" r="10" fill="#d4a24c" />
+            <circle cx="800" cy="100" r="12" fill="#3f7d3a" stroke="#d4a24c" stroke-width="5" />
+            <text x="40" y="462" style="font-size:26px">Khaniyara ~1,300 m</text>
+            <circle cx="160" cy="388" r="9" fill="#fff" stroke="#d4a24c" stroke-width="4" />
+            <text x="160" y="352" text-anchor="middle" style="font-size:22px">Khadota check post</text>
+            <text x="836" y="56" text-anchor="end" style="font-size:28px">Thatharana Top ~2,500–2,750 m</text>
+            <text x="540" y="398" text-anchor="middle" style="font-size:24px;fill:#d4a24c;letter-spacing:3px">OAK &amp; RHODODENDRON FOREST</text>
+            <text x="40" y="150" style="font-size:22px;fill:#d4a24c;letter-spacing:3px">ALTITUDE (APPROX.)</text>
+            <text id="alt" x="40" y="222" style="font-size:64px">1,300 m</text>
+            <g id="dot"><circle r="13" fill="#d4a24c" stroke="#fff" stroke-width="4" /></g>
+          </svg>
+          <div class="bar"></div>
+          <div class="facts">
+            <div class="fact" id="f1">Start: Khadota, above Khaniyara</div>
+            <div class="fact" id="f2">5–7 km · 3–5 h up</div>
+            <div class="fact" id="f3">Register at Khadota check post</div>
+            <div class="fact" id="f4">Best Mar–Jun &amp; Sep–Nov</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#im1", { scale: 1, x: 0 }, { scale: 1.07, x: -30, duration: 3.2, ease: "none" }, 0);
+      tl.fromTo("#im2", { scale: 1.06, y: 0 }, { scale: 1, y: -30, duration: 3.2, ease: "none" }, 2.6);
+      tl.fromTo("#im3", { scale: 1, x: 0 }, { scale: 1.07, x: 30, duration: 3.2, ease: "none" }, 5.2);
+      tl.fromTo("#im4", { scale: 1.07, y: 10 }, { scale: 1, y: -10, duration: 3.2, ease: "none" }, 7.8);
+      tl.fromTo("#im5", { scale: 1, x: 0 }, { scale: 1, x: 0, duration: 1.4, ease: "none" }, 10.6);
+      tl.fromTo("#fd2", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 2.6);
+      tl.fromTo("#fd3", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 5.2);
+      tl.fromTo("#fd4", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.inOut" }, 7.8);
+      tl.fromTo("#fd5", { opacity: 0 }, { opacity: 1, duration: 1.35, ease: "sine.inOut" }, 10.6);
+      const route = document.getElementById("route");
+      const L = route.getTotalLength();
+      const dot = document.getElementById("dot");
+      const alt = document.getElementById("alt");
+      function put(t) {
+        const a = route.getPointAtLength(L * t);
+        dot.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + a.y.toFixed(2) + ")");
+        const m = Math.round((1300 + 1200 * t) / 10) * 10;
+        alt.textContent = m.toLocaleString("en-US") + " m";
+      }
+      put(0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 9.6, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.5);
+      tl.to("#dot", { opacity: 0, duration: 0.4, ease: "power1.in" }, 10.5);
+      const rs = { t: 1 };
+      tl.fromTo(rs, { t: 1 }, { t: 0, duration: 0.01, immediateRender: false, onUpdate: () => put(rs.t) }, 11.0);
+      tl.to("#dot", { opacity: 1, duration: 0.55, ease: "power1.out" }, 11.3);
+      tl.set(["#f2", "#f3", "#f4"], { opacity: 0 }, 0);
+      const seq = [["#f1", "#f2", 2.8], ["#f2", "#f3", 5.6], ["#f3", "#f4", 8.4], ["#f4", "#f1", 11.1]];
+      seq.forEach(([a, b, t]) => {
+        tl.to(a, { opacity: 0, y: -20, duration: 0.35, ease: "power2.in" }, t);
+        tl.fromTo(b, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, t + 0.35);
+      });
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
