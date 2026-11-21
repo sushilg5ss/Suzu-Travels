@@ -211,6 +211,8 @@
 
   /* pattern rules: [regex, fn(match) -> hindi] — tried in order after the exact dictionary */
   var RX = [
+    [/^([❄★]) Best for (\w+)$/, function (m) { return m[1] + ' ' + (['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'][['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'].indexOf(m[2])] || m[2]) + ' के लिए बेहतरीन'; }],
+    [/^Best in (\w{3})$/, function (m) { return (['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'][MS.indexOf(m[1])] || m[1]) + ' में बेहतरीन'; }],
     [/^(.+) is closed on (\w+)s and your (.+) day falls on a \w+, so it is left out of your day plan — shift your dates by a day to include it\.$/, function (m) { var D = { Sunday: 'रविवार', Monday: 'सोमवार', Tuesday: 'मंगलवार', Wednesday: 'बुधवार', Thursday: 'गुरुवार', Friday: 'शुक्रवार', Saturday: 'शनिवार' }[m[2]] || m[2]; return sn(m[1]) + ' ' + D + ' को बंद रहता है और आपका ' + pn(m[3]) + ' वाला दिन ' + D + ' है, इसलिए इसे प्लान से हटाया गया है — इसे शामिल करने के लिए तारीख़ एक दिन आगे-पीछे करें।'; }],
     [/^Fits your budget: (.+?) hotels, (breakfast \+ dinner|breakfast only) — about (₹[\d,]+) per adult\.$/, function (m) { return 'आपके बजट में: ' + (EX[m[1]] || m[1]) + ' होटल, ' + (m[2] === 'breakfast only' ? 'सिर्फ़ नाश्ता' : 'नाश्ता + रात का खाना') + ' — लगभग ' + m[3] + ' प्रति वयस्क।'; }],
     [/^Car changed to (.+) \(right size for your group\) to bring the price down\.$/, function (m) { return 'कीमत कम करने के लिए गाड़ी बदलकर ' + (EX[m[1]] || m[1]) + ' की गई (आपके ग्रुप के हिसाब से सही साइज़)।'; }],

@@ -212,6 +212,18 @@ const { chromium, devices } = require('playwright');
       r.wseat.ok = r.wseat.on.length === 1 && (r.wseat.on[0].match(/ for (Maa|Baba|Badri)/g) || []).length === 4 && !r.wseat.offHit && r.wseat.hi.length === 1 && !/[A-Za-z]{4,}/.test(r.wseat.hi[0]);
       await p3.screenshot({ path: `${out}/${name}-4m-wseat-hi.png`, fullPage: true });
     }
+    { // v2.6 'Best for <month>' chip + badge (Dec: snow + Rajasthan, no Char Dham; Jun: Char Dham, no Rajasthan) EN + HI
+      await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+      await p3.goto('about:blank'); await p3.goto(base, { waitUntil: 'load' }); await p3.waitForTimeout(900);
+      const pick = async d => { await p3.fill('#q-date', d); await p3.dispatchEvent('#q-date', 'change'); await p3.waitForTimeout(300); await p3.click('#tpl-cats [data-cat="best"]'); await p3.waitForTimeout(300);
+        return { chip: (await p3.textContent('#tpl-cats [data-cat="best"]')).trim(), ids: await p3.$$eval('#tpl-row .tpl', x => x.map(y => y.dataset.tpl)), badges: await p3.$$eval('#tpl-row .bst', x => x.length) }; };
+      const dec = await pick('2026-12-10'), jun = await pick('2027-06-10');
+      await p3.click('#tp-lang'); await p3.waitForTimeout(400); const hiChip = (await p3.textContent('#tpl-cats [data-cat="best"]')).trim(), hiBadge = await p3.$eval('#tpl-row .bst', x => x.textContent.trim());
+      await p3.screenshot({ path: `${out}/${name}-4n-best-hi.png` }); await p3.click('#tp-lang'); await p3.waitForTimeout(200);
+      r.best = { dec: dec.chip + ' ' + dec.ids.length, jun: jun.chip + ' ' + jun.ids.length, hiChip, hiBadge };
+      r.best.ok = /Best for December/.test(dec.chip) && dec.ids.includes('shimla-manali') && dec.ids.includes('golden-triangle') && !dec.ids.includes('char-dham') && dec.badges === dec.ids.length
+        && /Best for June/.test(jun.chip) && jun.ids.includes('char-dham') && !jun.ids.includes('golden-triangle') && /दिसंबर|जून/.test(hiChip) && !/[A-Za-z]{3,}/.test(hiChip) && /जून में बेहतरीन/.test(hiBadge);
+    }
     { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
       const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
       const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;

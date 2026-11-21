@@ -960,7 +960,7 @@
     placeOptions($('#q-from'), 'chandigarh', function (p) { return p.kind === 'hub' || ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu', 'agra', 'udaipur', 'jodhpur', 'nainital'].indexOf(p.id) > -1; });
     $('#q-date').value = S.d; $('#q-date').min = iso(today);
     var qd = function () { var d = parseD($('#q-date').value); $('#q-date-s').textContent = d ? WD[d.getDay()] + (isPeak(d) ? ' · peak season' : '') : ''; }; qd();
-    $('#q-date').addEventListener('change', function (e) { if (e.target.value) S.d = e.target.value; qd(); });
+    $('#q-date').addEventListener('change', function (e) { if (e.target.value) S.d = e.target.value; qd(); if ($('#ws').hidden) renderTemplates(); });
     var pax = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 20];
     $('#q-pax').innerHTML = pax.map(function (n) { return '<option value="' + n + '"' + (n === 2 ? ' selected' : '') + '>' + n + ' Adult' + (n > 1 ? 's' : '') + '</option>'; }).join('');
     $('#q-pax').addEventListener('change', function (e) { S.a = +e.target.value; S.r = 0; });
@@ -1045,11 +1045,28 @@
   function tplCard(t) {
     var p = tplEstimate(t), n = t.stops.reduce(function (a, s) { return a + s[1]; }, 0);
     var rt = [t.start].concat(t.stops.map(function (s) { return s[0]; })).map(function (id) { return PL[id].name.split(' (')[0].split(' / ')[0]; }).filter(function (x, i, a) { return a.indexOf(x) === i; }).join(' → ');
-    return '<button type="button" class="tpl" data-tpl="' + t.id + '"><span class="spark"></span><span class="k">' + esc((CATS.filter(function (c) { return c[0] === t.cat; })[0] || ['', ''])[1]) + ' · ' + (n + 1) + 'D/' + n + 'N</span><b>' + esc(t.name) + '</b><span class="dv" style="color:var(--mut);font-size:13px">' + esc(t.hi) + '</span><span class="rt">' + esc(rt) + '</span><span class="ft"><span>est. ' + (p ? inr(p.price.pp) : '—') + '<small style="color:var(--mut);font-weight:600"> /adult</small></span><span>Customise →</span></span></button>';
+    return '<button type="button" class="tpl" data-tpl="' + t.id + '"><span class="spark"></span><span class="k">' + esc((CATS.filter(function (c) { return c[0] === t.cat; })[0] || ['', ''])[1]) + ' · ' + (n + 1) + 'D/' + n + 'N</span>' + (isBest(t, bestMonth()) ? '<span class="bst">Best in ' + MS[bestMonth() - 1] + '</span>' : '') + '<b>' + esc(t.name) + '</b><span class="dv" style="color:var(--mut);font-size:13px">' + esc(t.hi) + '</span><span class="rt">' + esc(rt) + '</span><span class="ft"><span>est. ' + (p ? inr(p.price.pp) : '—') + '<small style="color:var(--mut);font-weight:600"> /adult</small></span><span>Customise →</span></span></button>';
   }
+  /* v2.6 (21 Nov 2026): best months per ready idea — 'Best for <month>' chip + card badge (month of the chosen start date).
+     Sources: research/best-season.md (tourism boards + the trip's own open months / closures). */
+  var BEST = {
+    'shimla-manali': [10, 11, 12, 1, 2, 3, 4, 5, 6], 'manali-honeymoon': [10, 11, 12, 1, 2, 3, 4, 5, 6], 'dharamshala-dalhousie': [9, 10, 11, 12, 3, 4, 5, 6],
+    'grand-himachal': [3, 4, 5, 6, 9, 10, 11], 'kinnaur': [4, 5, 6, 9, 10], 'spiti-circuit': [6, 7, 8, 9, 10], 'winter-spiti': [12, 1, 2, 3], 'tirthan-jibhi': [3, 4, 5, 6, 9, 10, 11],
+    'nau-devi': [9, 10, 11, 2, 3, 4, 5, 6], 'vaishno-devi': [9, 10, 11, 12, 3, 4, 5, 6], 'vaishno-kashmir': [4, 5, 6, 9, 10], 'mata-plus-dharamshala': [9, 10, 11, 3, 4, 5, 6],
+    'char-dham': [5, 6, 9, 10], 'amarnath-baltal': [7, 8], 'amarnath-pahalgam': [7, 8], 'do-dham': [5, 6, 9, 10], 'golden-temple-himachal': [10, 11, 12, 1, 2, 3, 4],
+    'kashmir-classic': [3, 4, 5, 6, 9, 10, 12, 1, 2], 'ladakh-fly': [5, 6, 7, 8, 9], 'manali-leh': [6, 7, 8, 9], 'rishikesh-mussoorie': [2, 3, 4, 5, 9, 10, 11],
+    'nainital-corbett': [11, 12, 1, 2, 3, 4, 5, 6], 'golden-triangle': [10, 11, 12, 1, 2, 3], 'agra-mathura': [10, 11, 12, 1, 2, 3], 'rajasthan-royal': [10, 11, 12, 1, 2, 3],
+    'udaipur-mountabu': [10, 11, 12, 1, 2, 3], 'kumaon-kainchi': [3, 4, 5, 6, 10, 11], 'kumaon-grand': [3, 4, 5, 6, 10, 11], 'auli-chopta': [12, 1, 2, 3, 4, 5, 10, 11],
+    'mussoorie-dhanaulti': [10, 11, 12, 1, 2, 3, 4, 5, 6], 'vaishno-patnitop': [9, 10, 11, 12, 1, 2, 3, 4, 5, 6], 'dalhousie-khajjiar': [10, 11, 12, 1, 2, 3, 4, 5, 6],
+    'ladakh-grand': [6, 7, 8, 9], 'kashi-ayodhya': [10, 11, 12, 1, 2, 3]
+  };
+  var MFULLEN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  function bestMonth() { var q = $('#q-date'), d = (q && parseD(q.value)) || parseD(S.d) || today; return d.getMonth() + 1; }
+  function isBest(t, m) { var b = BEST[t.id] || t.months; return !!(b && b.indexOf(m) > -1); }
   function renderTemplates() {
-    $('#tpl-cats').innerHTML = CATS.map(function (c) { return '<button type="button" class="chip" data-cat="' + c[0] + '" aria-pressed="' + (CAT === c[0]) + '">' + c[1] + '</button>'; }).join('');
-    $('#tpl-row').innerHTML = TPL.filter(function (t) { return CAT === 'all' || t.cat === CAT; }).map(tplCard).join('');
+    var bm = bestMonth(), cats = [CATS[0], ['best', (bm === 12 || bm <= 2 ? '❄ ' : '★ ') + 'Best for ' + MFULLEN[bm - 1]]].concat(CATS.slice(1));
+    $('#tpl-cats').innerHTML = cats.map(function (c) { return '<button type="button" class="chip" data-cat="' + c[0] + '" aria-pressed="' + (CAT === c[0]) + '">' + c[1] + '</button>'; }).join('');
+    $('#tpl-row').innerHTML = TPL.filter(function (t) { return CAT === 'all' || (CAT === 'best' ? isBest(t, bm) : t.cat === CAT); }).map(tplCard).join('');
     $('#yatra-grid').innerHTML = TPL.filter(function (t) { return t.cat === 'mata' || t.cat === 'pilgrim'; }).map(tplCard).join('');
   }
   function wireTemplates() { $('#tpl-cats').addEventListener('click', function (e) { var b = e.target.closest('[data-cat]'); if (b) { CAT = b.dataset.cat; renderTemplates(); } }); }
