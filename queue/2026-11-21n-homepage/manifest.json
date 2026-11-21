@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-21n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "Trip sheet: live weather on this route (temps + snow flag -> weather pages, Hindi links); 74 weather links now direct (no 301); 10 links to 20 Nov pages",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "725e962e8b1b3e0a0af9a57587c0c901988684fc25015e74fe3270f464d23ab9",
+   "base_sha256": "a4efbfbf59cce0b7585a2dcda373eb06ec1f9dabed5185daaa2f4fcad176f496",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1054894
+  }
+ ]
+}
