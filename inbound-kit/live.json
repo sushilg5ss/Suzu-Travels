@@ -493,5 +493,14 @@
   "blurb": "A first route, getting around alone and the numbers to save",
   "added": "2026-11-20",
   "focus": "india solo travel"
+ },
+ "darjeeling-sikkim-tour": {
+  "id": 24483,
+  "path": "/india-tours/darjeeling-sikkim-tour/",
+  "kind": "guide",
+  "label": "Darjeeling & Sikkim",
+  "blurb": "Tea hills, the UNESCO toy train and Gangtok — with the 2026 permit rules",
+  "added": "2026-11-22",
+  "focus": "darjeeling and sikkim tour"
  }
 }
