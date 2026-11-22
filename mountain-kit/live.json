@@ -507,5 +507,20 @@
   "blurb": "Col, serac, bergschrund and F to ED, explained",
   "added": "2026-11-20",
   "commercial": true
+ },
+ "meru-peak": {
+  "id": 24591,
+  "path": "/mountains-of-india/meru-peak/",
+  "kind": "peak",
+  "label": "Meru and the Shark's Fin",
+  "blurb": "6,660 m · three summits above Tapovan, Gangotri",
+  "added": "2026-11-22",
+  "peak_id": "meru-central",
+  "peak_ids": [
+   "meru-central",
+   "meru-south",
+   "meru-north"
+  ],
+  "commercial": false
  }
 }
