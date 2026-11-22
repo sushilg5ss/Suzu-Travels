@@ -35,5 +35,59 @@
     "line": "Pilgrims bathe at Tapt Kund by the Alaknanda"
    }
   ]
+ },
+ "route": {
+  "title": "Rishikesh to Badrinath",
+  "sub": "The road of the five prayags · about 298 km",
+  "bounds": [
+   78.05,
+   79.75,
+   29.95,
+   30.9
+  ],
+  "stops": [
+   {
+    "name": "Rishikesh",
+    "deva": "ऋषिकेश",
+    "state": "Start",
+    "lat": 30.087,
+    "lon": 78.268
+   },
+   {
+    "name": "Devprayag",
+    "deva": "देवप्रयाग",
+    "state": "Ganga begins",
+    "lat": 30.146,
+    "lon": 78.598
+   },
+   {
+    "name": "Rudraprayag",
+    "deva": "रुद्रप्रयाग",
+    "state": "Alaknanda–Mandakini",
+    "lat": 30.284,
+    "lon": 78.981
+   },
+   {
+    "name": "Karnaprayag",
+    "deva": "कर्णप्रयाग",
+    "state": "Alaknanda–Pindar",
+    "lat": 30.262,
+    "lon": 79.218
+   },
+   {
+    "name": "Jyotirmath",
+    "deva": "ज्योतिर्मठ",
+    "state": "Winter seat",
+    "lat": 30.556,
+    "lon": 79.565
+   },
+   {
+    "name": "Badrinath",
+    "deva": "बद्रीनाथ",
+    "state": "Badri Vishal",
+    "lat": 30.7447,
+    "lon": 79.4911
+   }
+  ]
  }
 }
