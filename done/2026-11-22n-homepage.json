@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-22n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "Weather-now strip per region in trip explorer + 12 Explore links to 21-22 Nov pages",
+ "files": [
+  {
+   "target": "index.html",
+   "sha256": "6ee39f3a23cd3194ed9e4a12ca2d241e3f1550d2b9f00565f3597b31ab477803",
+   "base_sha256": "725e962e8b1b3e0a0af9a57587c0c901988684fc25015e74fe3270f464d23ab9",
+   "url": "https://suzutravels.com/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-22T17:53:24Z",
+ "status": "deployed"
+}
