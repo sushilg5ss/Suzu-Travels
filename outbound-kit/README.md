@@ -37,6 +37,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /south-korea-tour-packages/ | 23452 | `.hx` country page (18 Nov 2026) — `pages/gen_southkorea.py` (Seoul–Nami–Busan–Gyeongju + Jeju add-on; 8-day itinerary grid = 4 columns; 7-photo gallery like Philippines; Wikimedia Commons photos) |
 | /cambodia-tour-packages/ | 23680 | `.hx` country page (19 Nov 2026) — `pages/gen_cambodia.py` (Siem Reap/Angkor + Phnom Penh, Vietnam/Thailand add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like South Korea; Wikimedia Commons photos) |
 | /iceland-tour-packages/ | 23880 | `.hx` country page (20 Nov 2026) — `pages/gen_iceland.py` (Golden Circle + south coast to Jökulsárlón, Snæfellsnes option; 8-day itinerary grid = 4 columns; 7-photo gallery like Cambodia, gallery thumbs use the 768px `med` size; Wikimedia Commons photos) |
+| /norway-tour-packages/ | 24529 | `.hx` country page (22 Nov 2026) — `pages/gen_norway.py` (Oslo–Flåm–Nærøyfjord–Bergen–Geiranger–Ålesund + Tromsø/Lofoten; 8-day itinerary grid = 4 columns; 7-photo gallery like Iceland, `med` 768px thumbs; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -108,3 +109,9 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 ## Notes (21 Nov 2026)
 - Two WordPress connectors exist: **Suzu Travels WordPress** (suzutravels.com — the only one for this lane) and **SuzuCart WordPress** (suzucart.com, another site). Tool descriptions end with "(site: …)" — check it before any write. If the Suzu Travels connector is missing, prepare the build offline and stop; never write via SuzuCart.
 - UDI (udi.no) answers curl; the country guide personalises with `?c=ind`. norway.no (Embassy pages) returns a Cloudflare JS challenge to curl.
+
+## Notes (22 Nov 2026)
+- Suzu Travels WordPress connector was back; tool descriptions no longer end with "(site: …)" — confirm the site with a read first (e.g. `wp_get_seo_meta` 11347 returns the hub's Rank Math title).
+- WP converts uploads to .webp; the `768x<h>` size = round(768*h/w) of the 1920px upload — check each with curl before using it.
+- Grid cards for Norway were inserted before the Switzerland card (UK card on the Switzerland page) on all 31 country pages (+377 `.sx` / +356 `.hx`).
+- Content push: 5 chunks of ~16 KB (split on `><`), `wp_update_page` + 4 marker replaces; `content_length` matched the local UTF-8 bytes after every step.

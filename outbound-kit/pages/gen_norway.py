@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Norway page - .hx design; same template as gen_iceland.py.
-PREPARED 21 Nov 2026 but NOT PUBLISHED: the Suzu Travels WordPress connector needed a reconnect, so no photo could be
+PREPARED 21 Nov 2026; photos uploaded + page published 22 Nov 2026 (photos 24515-24528). Old note:
 uploaded and no page created. Next run: upload the 14 photos in photos/upload_plan_norway.json (view every WP copy,
 fix alt/cap if needed), add them to photos/wp_map.json as norway-1..14 + 'norway', then build with the page id.
 Run from outbound-kit/:  python3 pages/gen_norway.py <PAGE_ID> -> pages/norway-tour-packages.html (one line)
 Until wp_map has norway-* keys the build uses the Commons 1280px thumbs (PREVIEW only, never publish that build).
-Facts (official UDI pages read 21 Nov 2026 with curl, personalised for citizens of India, ?c=ind):
+Facts (official UDI pages read 21 Nov 2026, re-read 22 Nov 2026 with curl, personalised for citizens of India, ?c=ind):
 - udi.no visitors-visa-to-norway: "If you plan to visit Norway for up to 90 days, you can apply for a visitor visa. This visa
   is valid for entry to all Schengen countries." Requirements: application fee; all documents on the embassy's checklist;
   passport valid at least three months after the end of the visit and issued within the last ten years; valid travel
@@ -33,7 +33,7 @@ if PREVIEW:
     for p in PLAN:
         M[p['slug']] = dict(url=p['thumb1280'], med=p['thumb1280'], alt=p['alt'], cap=p['cap'], credit=p['credit'], license=p['license'], src=p['src'])
 svg, WA_SVG, wa = G.svg, G.WA_SVG, G.wa
-CHECKED = '21 November 2026'
+CHECKED = '22 November 2026'
 SRC_EMB = 'https://www.udi.no/en/want-to-apply/visit-and-holiday/visitors-visa-to-norway/?c=ind'
 SRC_VISA = 'https://www.udi.no/en/want-to-apply/visit-and-holiday/visitors-visa-to-norway/tourism-or-visit-norway-for-other-reasons1/how-to-apply-for-a-visitors-visa/?c=ind'
 SRC_ENTRY = 'https://www.udi.no/en/word-definitions/fees/'
@@ -115,9 +115,9 @@ GAL = ['norway-4', 'norway-7', 'norway-9', 'norway-10', 'norway-11', 'norway-12'
 FINAL = 'norway-3'  # Reine, Lofoten (also hero slide 3)
 
 FAQ = [
-    ("Do Indians need a visa for Norway?", "Yes. Norway's Directorate of Immigration (UDI) says that citizens of India who plan to visit Norway for up to 90 days can apply for a visitor visa, and that this visa is valid for entry to all Schengen countries (checked 21 November 2026). Whether a visa is issued is always the decision of the Norwegian authorities."),
+    ("Do Indians need a visa for Norway?", "Yes. Norway's Directorate of Immigration (UDI) says that citizens of India who plan to visit Norway for up to 90 days can apply for a visitor visa, and that this visa is valid for entry to all Schengen countries (checked 22 November 2026). Whether a visa is issued is always the decision of the Norwegian authorities."),
     ("Where do I apply for a Norway visa in India?", "UDI says visitor visa applications are processed by embassies and are handed in at the visa application centre, an embassy or a consulate, no earlier than six months before you travel. If Norway is your main destination in the Schengen area, you apply for Norway; if you spend longer in another Schengen country, you apply to that country instead. We confirm the current application centre and checklist for your city when you book."),
-    ("What is the Norway visa fee?", "UDI's fee list showed EUR 90 for a visitor visa for adults and children over 12, and EUR 45 for children aged six to twelve, when we checked on 21 November 2026. Fees can change, so we re-check when you book. Any service charge of the visa application centre is separate."),
+    ("What is the Norway visa fee?", "UDI's fee list showed EUR 90 for a visitor visa for adults and children over 12, and EUR 45 for children aged six to twelve, when we checked on 22 November 2026. Fees can change, so we re-check when you book. Any service charge of the visa application centre is separate."),
     ("What documents do I need for a Norway visitor visa?", "UDI lists these requirements: the application fee, all documents on the embassy's checklist, a passport valid for at least three months after the end of your visit and issued within the last ten years, valid travel insurance, enough money for your stay and return journey, and registration of your fingerprints. We help you prepare a clear itinerary and hotel confirmations for the file."),
     ("When can I see the northern lights in Norway?", "The northern lights need dark, clear skies, so the season in northern Norway — around Tromsø and the Lofoten islands — runs through the darker months, roughly from late September to March. Sightings depend on solar activity and cloud cover and are never guaranteed; we plan nights away from town lights and keep a flexible evening for a guided aurora outing."),
     ("How many days are enough for a Norway trip?", "Seven to nine nights covers Oslo, the Flåm Railway, a Nærøyfjord cruise, Bergen and Geirangerfjord with Ålesund. For the north, add three to four nights in Tromsø or the Lofoten islands. Shorter trips of five nights work well around Oslo, Flåm and Bergen."),
