@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(1200px 700px at 80% 0%, #17395a 0%, #0b1f33 60%); }
+      .flake { position: absolute; top: 0; border-radius: 50%; background: #fff; }
+      .k { position: absolute; left: 120px; top: 64px; color: #d4a24c; font-weight: 800; font-size: 32px; letter-spacing: 0.18em; }
+      .h { position: absolute; left: 120px; top: 104px; color: #fff; font-weight: 800; font-size: 76px; letter-spacing: -0.02em; white-space: nowrap; }
+      .mh { position: absolute; top: 218px; width: 173px; text-align: center; color: rgba(255,255,255,0.9); font-weight: 800; font-size: 30px; }
+      .row { position: absolute; left: 120px; width: 1680px; height: 92px; }
+      .name { position: absolute; left: 0; top: 10px; width: 600px; color: #fff; font-weight: 800; font-size: 40px; white-space: nowrap; }
+      .note { position: absolute; left: 0; top: 58px; width: 620px; color: rgba(255,255,255,0.82); font-weight: 500; font-size: 25px; white-space: nowrap; }
+      .track { position: absolute; left: 640px; top: 22px; width: 1040px; height: 50px; background: rgba(255,255,255,0.07); border-radius: 10px; }
+      .bar { position: absolute; top: 22px; height: 50px; background: #d4a24c; border-radius: 10px; }
+      .bar.alt { background: #7fa6c9; }
+      .end { position: absolute; left: 120px; top: 990px; width: 1680px; text-align: center; color: #fff; font-weight: 800; font-size: 38px; }
+      .end span { color: #d4a24c; }
+      .leg { position: absolute; top: 70px; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 26px; white-space: nowrap; }
+      .sw { display: inline-block; width: 28px; height: 18px; border-radius: 5px; margin-right: 10px; vertical-align: -2px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="S" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0"></div>
+      <div id="L" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div id="k" class="k">SNOW · HIMACHAL</div>
+        <div id="h" class="h">When the snow activities run</div>
+        <div id="leg1" class="leg" style="left:1080px"><span class="sw" style="background:#d4a24c"></span>Snow season · snowfall decides</div>
+        <div id="leg2" class="leg" style="left:1530px"><span class="sw" style="background:#7fa6c9"></span>Open all year</div>
+        <div id="mrow"></div>
+        <div id="rows"></div>
+        <div id="end" class="end">We check road and snow status the evening before · <span>Get Quote</span></div>
+      </div>
+    </div>
+    <script>
+      // Months Nov → Apr. Facts are the hub's own #snow cards (adventure page 11529).
+      const M = ["NOV", "DEC", "JAN", "FEB", "MAR", "APR"];
+      const X0 = 760, W = 1040 / 6;
+      const mrow = document.getElementById("mrow");
+      M.forEach((m, i) => { const d = document.createElement("div"); d.className = "mh"; d.style.left = (X0 + i * W) + "px"; d.textContent = m; mrow.appendChild(d); });
+      const data = [
+        ["Snow play & sledging", "Solang, Kufri, Sissu, Narkanda", [[1, 5]]],
+        ["Atal Tunnel & Sissu", "Road-open days · no Rohtang permit", [[1, 5]]],
+        ["Snow scooter rides", "Solang, Sissu and Kufri", [[1, 5]]],
+        ["Ski lessons", "Solang · Narkanda (Hatu, Dhumri)", [[2, 5]]],
+        ["Heli-skiing", "Above Manali · strong skiers only", [[2.5, 5]]],
+        ["Igloo stays", "Sethan, on the Hampta road", [[2, 5]]],
+        ["Dome stays", "Above Prini · snow late Dec–Feb", [[0, 6, 1], [1.5, 4]]]
+      ];
+      const rows = document.getElementById("rows");
+      data.forEach((r, i) => {
+        const row = document.createElement("div"); row.className = "row"; row.id = "r" + i; row.style.top = (268 + i * 100) + "px";
+        row.innerHTML = '<div class="name">' + r[0] + '</div><div class="note">' + r[1] + '</div><div class="track"></div>';
+        r[2].forEach((b, j) => {
+          const e = document.createElement("div"); e.className = "bar" + (b[2] ? " alt" : ""); e.id = "b" + i + "_" + j;
+          e.style.left = (640 + b[0] * W + 2) + "px"; e.style.width = ((b[1] - b[0]) * W - 4) + "px"; row.appendChild(e);
+        });
+        rows.appendChild(row);
+      });
+      // deterministic snowfall (seeded)
+      let seed = 7; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+      const S = document.getElementById("S"); const flakes = [];
+      for (let i = 0; i < 46; i++) {
+        const f = document.createElement("div"); f.className = "flake";
+        const s = 4 + rnd() * 8; f.style.width = s + "px"; f.style.height = s + "px";
+        f.style.left = (rnd() * 1920) + "px"; f.style.opacity = (0.12 + rnd() * 0.25).toFixed(2);
+        S.appendChild(f); flakes.push([f, 6 + rnd() * 5, rnd(), (rnd() - 0.5) * 120]);
+      }
+      const tl = gsap.timeline({ paused: true });
+      flakes.forEach(([f, dur, ph, dx]) => {
+        // y over a fixed 12 s cycle so the snow loops: start offset by phase, wrap via modulo
+        const obj = { t: 0 };
+        tl.to(obj, { t: 12, duration: 12, ease: "none", onUpdate: () => {
+          const p = ((obj.t / dur) + ph) % 1; gsap.set(f, { y: -20 + p * 1120, x: Math.sin(p * Math.PI * 2) * dx * 0.3 });
+        } }, 0);
+      });
+      tl.from(["#k", "#h"], { opacity: 0, y: 30, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0);
+      tl.from(".mh", { opacity: 0, y: -10, duration: 0.3, stagger: 0.05 }, 0.5);
+      tl.from(["#leg1", "#leg2"], { opacity: 0, duration: 0.4, stagger: 0.1 }, 0.7);
+      data.forEach((r, i) => {
+        const t = 1.0 + i * 0.95;
+        tl.from("#r" + i + " .name, #r" + i + " .note, #r" + i + " .track", { opacity: 0, x: -30, duration: 0.45, stagger: 0.06, ease: "power3.out" }, t);
+        tl.from("#r" + i + " .bar", { scaleX: 0, transformOrigin: "left center", duration: 0.6, stagger: 0.15, ease: "power2.out" }, t + 0.25);
+      });
+      tl.from("#end", { opacity: 0, y: 20, duration: 0.5, ease: "power3.out" }, 8.2);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
