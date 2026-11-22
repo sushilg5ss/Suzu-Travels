@@ -232,6 +232,7 @@ ROUTES = [
     dict(slug="chandigarh-to-amritsar-taxi", a="Chandigarh", b="Amritsar", km=230, t="4–5 hrs", f=0.85),   # 13 Nov 2026: page live; Kharar–Morinda–Samrala–Ludhiana (NH5), then NH44 via Phagwara–Jalandhar–Beas (Triveni upd. 14 Sep 2026 230 km, CabBazar 230, TaxiBazaar ~230, Revv 225–240, Savaari 228 via NH344A); same km/f as chandigarh-taxi-service + amritsar-taxi-service + chandigarh-airport-taxi rows
     dict(slug="chandigarh-to-kasauli-taxi", a="Chandigarh", b="Kasauli", km=60, t="1.5–2 hrs", f=1.1),   # 14 Nov 2026: page live; NH5 via Panchkula–Pinjore–Parwanoo–Dharampur, then Dharampur–Garkhal–Kasauli road (Triveni upd. 14 Sep 2026 57–65 km, HurryUp 57–60, EMT 58, Savaari 57–60 via NH5 / ~72 via Kurali); same km/f as chandigarh-taxi-service Kasauli row; all classes at their minimum fare
     dict(slug="delhi-to-agra-taxi", a="Delhi", b="Agra", km=230, t="3.5–4.5 hrs", f=0.9),   # 23 Oct 2026: f 0.9 keeps sedan at the market median (Uber ₹2,537 · Triveni ₹3,300 · HurryUp ₹3,798)
+    dict(slug="chandigarh-to-delhi-taxi", a="Chandigarh", b="Delhi", km=250, t="4–5 hrs", f=0.85),   # 22 Nov 2026: page live; reverse of delhi-to-chandigarh (same km/f so fares agree); NH44 via Zirakpur–Ambala–Kurukshetra–Karnal–Panipat–Murthal (houseoftaxi 245 km, sardartravels 244, fastcab 245–260, zipzap ~250, MMT 249)
 ]
 ROUTE_BY_SLUG = {r["slug"]: r for r in ROUTES if r["slug"]}
 
