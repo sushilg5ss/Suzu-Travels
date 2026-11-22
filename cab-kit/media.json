@@ -943,5 +943,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "chandigarh-to-delhi-taxi": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@0382a9b316fde3e15e693d14948926ff7c01eca7/cab-kit/media/chandigarh-to-delhi-taxi/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@0382a9b316fde3e15e693d14948926ff7c01eca7/cab-kit/media/chandigarh-to-delhi-taxi/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@0382a9b316fde3e15e693d14948926ff7c01eca7/cab-kit/media/chandigarh-to-delhi-taxi/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
