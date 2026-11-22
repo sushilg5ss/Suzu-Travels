@@ -355,3 +355,6 @@ details.fq p{margin:0 0 14px;color:#2c4637}
 .cmp tr.df td:not(:first-child){font-weight:800;color:var(--f)}
 .cmp-d{margin:2px 0;font-size:12.5px;font-weight:700;color:#9a4a00}.cmp-d.lo{color:#1d7a3e}
 .cmp-b{display:flex;flex-wrap:wrap;gap:6px}.cmp-b .chip{flex:1 1 auto}
+
+/* v2.7 long-weekend chips */
+.lwq{margin-top:10px}.lwq[hidden]{display:none}.chip.lw{flex-direction:column;align-items:flex-start;gap:0;border-radius:12px;padding:5px 12px;line-height:1.25;min-height:44px}.chip.lw b{font-size:12.5px;color:var(--f);margin:0}.chip.lw span{font-size:12px;font-weight:600}.chip.lw small{font-size:11px;color:var(--mut);font-weight:600}#b-lw{margin:6px 0 10px}#b-lw>b{width:100%}

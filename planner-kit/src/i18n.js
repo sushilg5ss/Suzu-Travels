@@ -18,7 +18,7 @@
     'Holiday planner': 'हॉलिडे प्लानर', 'Yatra & Mata darshan': 'यात्रा और माता दर्शन', 'Cabs': 'टैक्सी', 'Hotels': 'होटल',
     'Starting from': 'कहाँ से', 'Pickup city': 'पिकअप शहर', 'Going to': 'कहाँ जाना है', 'Place or ready trip idea': 'जगह या तैयार ट्रिप',
     'Start date': 'यात्रा की तारीख', 'Travellers': 'यात्री', 'Children & rooms next': 'बच्चे और कमरे अगले चरण में', 'Plan my trip': 'मेरी यात्रा प्लान करें',
-    'Popular:': 'लोकप्रिय:', 'Customise →': 'बदलें →', '/adult': '/वयस्क', '/ adult': '/ वयस्क',
+    'Popular:': 'लोकप्रिय:', 'Long weekends:': 'लंबे वीकेंड:', 'Christmas': 'क्रिसमस', 'Republic Day': 'गणतंत्र दिवस', 'Holi': 'होली', 'Good Friday': 'गुड फ्राइडे', 'Ram Navami – Mahavir Jayanti': 'राम नवमी – महावीर जयंती', 'Bakrid': 'बकरीद', 'Buddha Purnima': 'बुद्ध पूर्णिमा', 'Diwali': 'दिवाली', 'Customise →': 'बदलें →', '/adult': '/वयस्क', '/ adult': '/ वयस्क',
     'Ready pilgrim circuits — open one, then change nights, hotels and car as you like.': 'तैयार तीर्थ यात्राएँ — कोई भी खोलें, फिर रातें, होटल और गाड़ी अपनी मर्ज़ी से बदलें।',
     'From': 'कहाँ से', 'To': 'कहाँ तक', 'Trip': 'यात्रा', 'One way drop': 'एक तरफ़ (ड्रॉप)', 'Round trip': 'आना-जाना (राउंड ट्रिप)', 'Car': 'गाड़ी', 'Get fare': 'किराया देखें',
     'Destination': 'जगह', 'Check-in': 'चेक-इन', 'Nights': 'रातें', 'Rooms': 'कमरे', 'Hotel class': 'होटल श्रेणी', 'Check price': 'कीमत देखें',
@@ -211,6 +211,8 @@
 
   /* pattern rules: [regex, fn(match) -> hindi] — tried in order after the exact dictionary */
   var RX = [
+    [/^(\w{3}) (\d+)(?: (\w{3}))? – (\w{3}) (\d+) (\w{3})$/, function (m) { var M = ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'], f = function (x) { return M[MS.indexOf(x)] || x; }; if (!WD[m[1]] || !WD[m[4]]) return null; return WD[m[1]] + ' ' + m[2] + (m[3] ? ' ' + f(m[3]) : '') + ' – ' + WD[m[4]] + ' ' + m[5] + ' ' + f(m[6]); }],
+    [/^(\d+) days(?: · (\d+) leaves?)?$/, function (m) { return m[1] + ' दिन' + (m[2] ? ' · ' + m[2] + ' छुट्टी लेनी होगी' : ''); }],
     [/^([❄★]) Best for (\w+)$/, function (m) { return m[1] + ' ' + (['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'][['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'].indexOf(m[2])] || m[2]) + ' के लिए बेहतरीन'; }],
     [/^Best in (\w{3})$/, function (m) { return (['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर'][MS.indexOf(m[1])] || m[1]) + ' में बेहतरीन'; }],
     [/^(.+) is closed on (\w+)s and your (.+) day falls on a \w+, so it is left out of your day plan — shift your dates by a day to include it\.$/, function (m) { var D = { Sunday: 'रविवार', Monday: 'सोमवार', Tuesday: 'मंगलवार', Wednesday: 'बुधवार', Thursday: 'गुरुवार', Friday: 'शुक्रवार', Saturday: 'शनिवार' }[m[2]] || m[2]; return sn(m[1]) + ' ' + D + ' को बंद रहता है और आपका ' + pn(m[3]) + ' वाला दिन ' + D + ' है, इसलिए इसे प्लान से हटाया गया है — इसे शामिल करने के लिए तारीख़ एक दिन आगे-पीछे करें।'; }],

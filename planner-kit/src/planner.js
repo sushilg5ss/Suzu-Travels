@@ -573,6 +573,7 @@
       .map(function (p) { return [km(last, p.id), p]; }).sort(function (a, b) { return a[0] - b[0]; }).slice(0, 5);
     $('#b-sugg').innerHTML = near.length ? '<small style="width:100%;color:var(--mut);font-weight:700;font-size:12px">Near ' + esc(PL[last].name) + ':</small>' + near.map(function (x) { return '<button type="button" class="chip" data-add="' + x[1].id + '">+ ' + esc(x[1].name.split(' (')[0]) + ' <small style="color:var(--mut)">' + x[0] + ' km</small></button>'; }).join('') : '';
     $('#b-date').value = S.d; $('#b-date').min = iso(today);
+    renderLW($('#b-lw'), $('#b-date'), S.d);
     $$('.step').forEach(function (st) {
       var k = st.dataset.k, v = k === 'rooms' ? roomsCalc().rooms : S[k[0] === 'a' ? 'a' : k === 'ch' ? 'c' : k === 'inf' ? 'i' : 'r'];
       st.querySelector('output').textContent = v;
@@ -905,7 +906,7 @@
     $('#b-clear').addEventListener('click', function () { S.p = []; S.tp = ''; renderAll(false); pushHash(); $('#b-add').focus(); });
     $('#b-start').addEventListener('change', function (e) { var same = S.e === S.s; S.s = e.target.value; if (same) S.e = S.s; change(true); });
     $('#b-end').addEventListener('change', function (e) { S.e = e.target.value; change(true); });
-    $('#b-date').addEventListener('change', function (e) { if (e.target.value) { S.d = e.target.value; change(false); } });
+    $('#b-date').addEventListener('change', function (e) { if (e.target.value) { S.d = e.target.value; change(false); } lwAll(); });
     $$('.step').forEach(function (st) {
       st.addEventListener('click', function (e) {
         var b = e.target.closest('button'); if (!b) return; var plus = b === st.lastElementChild, k = st.dataset.k;
@@ -959,8 +960,8 @@
   function wireHero() {
     placeOptions($('#q-from'), 'chandigarh', function (p) { return p.kind === 'hub' || ['srinagar', 'leh', 'haridwar', 'shimla', 'manali', 'dharamshala', 'kullu', 'agra', 'udaipur', 'jodhpur', 'nainital'].indexOf(p.id) > -1; });
     $('#q-date').value = S.d; $('#q-date').min = iso(today);
-    var qd = function () { var d = parseD($('#q-date').value); $('#q-date-s').textContent = d ? WD[d.getDay()] + (isPeak(d) ? ' · peak season' : '') : ''; }; qd();
-    $('#q-date').addEventListener('change', function (e) { if (e.target.value) S.d = e.target.value; qd(); if ($('#ws').hidden) renderTemplates(); });
+    var qd = function () { var d = parseD($('#q-date').value); $('#q-date-s').textContent = d ? WD[d.getDay()] + (isPeak(d) ? ' · peak season' : '') : ''; }; qd(); renderLW($('#q-lw'), $('#q-date'), $('#q-date').value);
+    $('#q-date').addEventListener('change', function (e) { if (e.target.value) S.d = e.target.value; qd(); if ($('#ws').hidden) renderTemplates(); lwAll(); });
     var pax = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 20];
     $('#q-pax').innerHTML = pax.map(function (n) { return '<option value="' + n + '"' + (n === 2 ? ' selected' : '') + '>' + n + ' Adult' + (n > 1 ? 's' : '') + '</option>'; }).join('');
     $('#q-pax').addEventListener('change', function (e) { S.a = +e.target.value; S.r = 0; });
@@ -1070,6 +1071,26 @@
     $('#yatra-grid').innerHTML = TPL.filter(function (t) { return t.cat === 'mata' || t.cat === 'pilgrim'; }).map(tplCard).join('');
   }
   function wireTemplates() { $('#tpl-cats').addEventListener('click', function (e) { var b = e.target.closest('[data-cat]'); if (b) { CAT = b.dataset.cat; renderTemplates(); } }); }
+
+
+  /* v2.7 (22 Nov 2026): long-weekend chips under Start date (hero + builder). Gazetted holidays only
+     (DoP&T O.M. 16 Jul 2026, Central Govt offices Delhi; research/long-weekends.md). [start, end, name, leave days] */
+  var LW = [
+    ['2026-12-25', '2026-12-27', 'Christmas', 0], ['2027-01-23', '2027-01-26', 'Republic Day', 1], ['2027-03-20', '2027-03-23', 'Holi', 1],
+    ['2027-03-26', '2027-03-28', 'Good Friday', 0], ['2027-04-15', '2027-04-19', 'Ram Navami – Mahavir Jayanti', 1], ['2027-05-15', '2027-05-17', 'Bakrid', 0],
+    ['2027-05-20', '2027-05-23', 'Buddha Purnima', 1], ['2027-10-29', '2027-10-31', 'Diwali', 0]
+  ];
+  function renderLW(box, inp, cur) {
+    if (!box) return;
+    var t1 = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1), list = LW.filter(function (w) { return parseD(w[0]) >= t1; }).slice(0, 3);
+    box.hidden = !list.length; if (!list.length) return;
+    box.innerHTML = '<b>Long weekends:</b>' + list.map(function (w) {
+      var a = parseD(w[0]), b = parseD(w[1]), n = Math.round((b - a) / 864e5) + 1;
+      return '<button type="button" class="chip lw" data-lw="' + w[0] + '" aria-pressed="' + (cur === w[0]) + '"><b>' + esc(w[2]) + '</b><span>' + WD[a.getDay()] + ' ' + a.getDate() + (a.getMonth() !== b.getMonth() ? ' ' + MS[a.getMonth()] : '') + ' – ' + WD[b.getDay()] + ' ' + b.getDate() + ' ' + MS[b.getMonth()] + '</span><small>' + n + ' days' + (w[3] ? ' · ' + w[3] + ' leave' + (w[3] > 1 ? 's' : '') : '') + '</small></button>';
+    }).join('');
+    if (!box.dataset.w) { box.dataset.w = 1; box.addEventListener('click', function (e) { var c = e.target.closest('[data-lw]'); if (!c) return; inp.value = c.dataset.lw; inp.dispatchEvent(new Event('change', { bubbles: true })); ev('trip_planner', { step: 'long_weekend' }); }); }
+  }
+  function lwAll() { renderLW($('#q-lw'), $('#q-date'), $('#q-date').value); renderLW($('#b-lw'), $('#b-date'), $('#b-date').value); }
 
   /* ---------------- cabs tab ---------------- */
   function wireCab() {

@@ -224,6 +224,23 @@ const { chromium, devices } = require('playwright');
       r.best.ok = /Best for December/.test(dec.chip) && dec.ids.includes('shimla-manali') && dec.ids.includes('golden-triangle') && !dec.ids.includes('char-dham') && dec.badges === dec.ids.length
         && /Best for June/.test(jun.chip) && jun.ids.includes('char-dham') && !jun.ids.includes('golden-triangle') && /दिसंबर|जून/.test(hiChip) && !/[A-Za-z]{3,}/.test(hiChip) && /जून में बेहतरीन/.test(hiBadge);
     }
+    { // v2.7 long-weekend chips (hero + builder): next 3 gazetted long weekends; tap sets start date; HI clean
+      await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+      await p3.goto('about:blank'); await p3.goto(base, { waitUntil: 'load' }); await p3.waitForTimeout(900);
+      const chips = await p3.$$eval('#q-lw .chip.lw', x => x.map(y => y.dataset.lw + ' ' + Array.from(y.children).map(c => c.textContent.trim()).join(' ')));
+      await p3.click('#q-lw .chip.lw:nth-of-type(2)'); await p3.waitForTimeout(300);
+      const qd = await p3.inputValue('#q-date'), qs = (await p3.textContent('#q-date-s')).trim(), pressed = await p3.$$eval('#q-lw .chip.lw[aria-pressed=true]', x => x.map(y => y.dataset.lw));
+      await p3.click('#tp-lang'); await p3.waitForTimeout(400); const hi = await p3.$eval('#q-lw', x => Array.from(x.querySelectorAll('b,span,small')).map(c => c.textContent.trim()).join(' '));
+      await p3.screenshot({ path: `${out}/${name}-4o-lw-hi.png` }); await p3.click('#tp-lang'); await p3.waitForTimeout(200);
+      await p3.click('#q-go'); await p3.waitForTimeout(900);
+      const bc = await p3.$$eval('#b-lw .chip.lw', x => x.map(y => y.dataset.lw)); let bd = '';
+      if (bc.length) { await p3.click('#b-lw .chip.lw:nth-of-type(3)'); await p3.waitForTimeout(500); bd = await p3.inputValue('#b-date'); }
+      await p3.screenshot({ path: `${out}/${name}-4o-lw-builder.png` });
+      r.lw = { chips, qd, qs, pressed, hi, bc, bd };
+      r.lw.ok = chips.length === 3 && /^2026-12-25 Christmas Fri 25 – Sun 27 Dec 3 days$/.test(chips[0]) && /Republic Day Sat 23 – Tue 26 Jan 4 days · 1 leave/.test(chips[1])
+        && qd === '2027-01-23' && /^Sat/.test(qs) && pressed.join() === '2027-01-23' && /गणतंत्र दिवस/.test(hi) && /छुट्टी/.test(hi) && !/[A-Za-z]{3,}/.test(hi)
+        && bc.length === 3 && bd === bc[2];
+    }
     { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
       const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
       const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;
