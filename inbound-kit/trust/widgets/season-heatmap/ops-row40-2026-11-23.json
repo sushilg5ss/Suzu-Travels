@@ -1,0 +1,14 @@
+[
+ {
+  "find": ".szt-sh-sum strong{color:#E2C158}",
+  "replace": ".szt-sh-sum strong{color:#E2C158}.szt-sh-sum .szt-sh-rd{margin-top:8px}.szt-sh-sum .szt-sh-rd a{display:inline;min-height:0;margin:0 14px 0 0;padding:0;border-radius:0;background:none;color:#E2C158!important;font-weight:700;font-size:14px;text-decoration:underline!important;text-underline-offset:3px;line-height:2.2}.szt-sh-sum .szt-sh-rd a:focus-visible{outline:2px solid #E2C158;outline-offset:2px}"
+ },
+ {
+  "find": "\"December\"];var L={b:\"Best\"",
+  "replace": "\"December\"];var G=[[[\"India in January\",\"/india-tours/india-in-january/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"India in March\",\"/india-tours/india-in-march/\"],[\"Holi festival in India\",\"/india-tours/holi-festival-tour/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"Best time to visit India\",\"/india-tours/best-time-to-visit-india/\"]],[[\"India in December\",\"/india-tours/india-in-december/\"],[\"Christmas and New Year in India\",\"/india-tours/christmas-and-new-year-in-india/\"]]];var L={b:\"Best\""
+ },
+ {
+  "find": "}}if(wa){var t=\"Hello Suzu Travels, I am thinking of travelling",
+  "replace": "}}var gl=G[m]||[];if(gl.length){var rd=document.createElement(\"div\");rd.className=\"szt-sh-rd\";var rb=document.createElement(\"b\");rb.textContent=\"Read: \";rd.appendChild(rb);for(var y=0;y<gl.length;y++){var ra=document.createElement(\"a\");ra.href=gl[y][1];ra.textContent=gl[y][0]+\" →\";rd.appendChild(ra);}sum.appendChild(rd);}if(wa){var t=\"Hello Suzu Travels, I am thinking of travelling"
+ }
+]

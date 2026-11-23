@@ -43,6 +43,14 @@ SRC = ('Sources: IMD monsoon normals; tajmahal.gov.in; Incredible India (Varanas
        'Weather varies year to year — confirm before travel.')
 LBL = {B: 'Best', S: 'Snow season', M: 'Monsoon', O: 'Possible — ask us', C: 'Temples closed'}
 WA = 'https://wa.me/917087488961?text='
+# Row 40 (23 Nov 2026): 'Read' links under the month summary — paths + labels ONLY from live.json (month guides + month-fixed festival pages).
+_LIVE = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'live.json')))
+def _lk(key):
+    v = _LIVE[key]
+    return [v['label'].replace('&', 'and'), v['path']]
+GUIDES = {0: ['india-in-january'], 2: ['india-in-march', 'holi-festival-tour'], 11: ['india-in-december', 'christmas-and-new-year-in-india']}
+FALLBACK = 'best-time-to-visit-india'
+G = [[_lk(k) for k in GUIDES.get(i, [FALLBACK])] for i in range(12)]
 WA_DEFAULT = 'Hello%20Suzu%20Travels%2C%20I%20would%20like%20help%20choosing%20the%20best%20months%20for%20my%20India%20trip.'
 
 CSS = (".szt-sh{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;color:#0E1B14}"
@@ -53,7 +61,8 @@ CSS = (".szt-sh{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe U
        ".szt-sh-bar button[aria-pressed=true]{background:#0E1B14;color:#E2C158;border-color:#0E1B14}"
        ".szt-sh-bar button:focus-visible{outline:2px solid #B8860B;outline-offset:2px}"
        ".szt-sh-sum{background:#0E1B14;color:#F4EEDD;border-radius:16px;padding:14px 16px;margin:0 0 14px;font-size:14.5px;line-height:1.6}.szt-sh-sum[hidden]{display:none}"
-       ".szt-sh-sum strong{color:#E2C158}.szt-sh-sum b{color:#fff}.szt-sh-sum div{margin-top:4px}"
+       ".szt-sh-sum strong{color:#E2C158}.szt-sh-sum .szt-sh-rd{margin-top:8px}.szt-sh-sum .szt-sh-rd a{display:inline;min-height:0;margin:0 14px 0 0;padding:0;border-radius:0;background:none;color:#E2C158!important;font-weight:700;font-size:14px;text-decoration:underline!important;text-underline-offset:3px;line-height:2.2}"
+       ".szt-sh-sum .szt-sh-rd a:focus-visible{outline:2px solid #E2C158;outline-offset:2px}.szt-sh-sum b{color:#fff}.szt-sh-sum div{margin-top:4px}"
        ".szt-sh-sum a{display:inline-flex;align-items:center;min-height:44px;margin-top:10px;padding:10px 16px;border-radius:12px;background:#25D366;color:#0b2414!important;font-weight:800;font-size:14px;text-decoration:none!important}"
        ".szt-sh-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #E8DFC8;border-radius:16px;background:#fff;max-width:100%}"
        ".szt-sh table{border-collapse:separate;border-spacing:3px;width:100%;min-width:640px;margin:0;font-size:13px}"
@@ -91,7 +100,7 @@ def html():
            '<li><i class="m"></i>☔ Monsoon rain</li><li><i class="c"></i>✕ Temples closed (Char Dham)</li><li><i class="o"></i>Possible — ask us</li></ul>')
     notes = '<ul class="szt-sh-notes">' + ''.join('<li><b>%s:</b> %s</li>' % (n, t) for n, _, _, t in ROWS) + '<li><b>Kashmir:</b> ' + KASHMIR + '</li></ul>'
     data = json.dumps({n: r for n, _, r, _ in ROWS}, ensure_ascii=False, separators=(',', ':'))
-    js = ('<script>(function(){var D=' + data + ';var F=' + json.dumps(FULL, separators=(',', ':')) + ';'
+    js = ('<script>(function(){var D=' + data + ';var F=' + json.dumps(FULL, separators=(',', ':')) + ';var G=' + json.dumps(G, ensure_ascii=False, separators=(',', ':')) + ';'
           'var L={b:"Best",s:"Snow season",m:"Monsoon",o:"Possible — ask us",c:"Temples closed"};'
           'var R=document.getElementById("szt-season");if(!R){return;}'
           'var bar=R.querySelector(".szt-sh-bar"),sum=document.getElementById("szt-sh-sum"),wa=document.getElementById("szt-sh-wa");'
@@ -101,6 +110,8 @@ def html():
           'var g={b:[],s:[],m:[],c:[],o:[]};for(var k in D){if(D.hasOwnProperty(k)){g[D[k].charAt(m)].push(k);}}'
           'sum.textContent="";var hd=document.createElement("strong");hd.textContent=F[m]+" in India";sum.appendChild(hd);var o=["b","s","m","c","o"];'
           'for(var x=0;x<o.length;x++){if(g[o[x]].length){var dv=document.createElement("div"),bb=document.createElement("b");bb.textContent=L[o[x]]+": ";dv.appendChild(bb);dv.appendChild(document.createTextNode(g[o[x]].join(", ")));sum.appendChild(dv);}}'
+          'var gl=G[m]||[];if(gl.length){var rd=document.createElement("div");rd.className="szt-sh-rd";var rb=document.createElement("b");rb.textContent="Read: ";rd.appendChild(rb);'
+          'for(var y=0;y<gl.length;y++){var ra=document.createElement("a");ra.href=gl[y][1];ra.textContent=gl[y][0]+" \u2192";rd.appendChild(ra);}sum.appendChild(rd);}'
           'if(wa){var t="Hello Suzu Travels, I am thinking of travelling to India in "+F[m]+". Best for that month on your chart: "+(g.b.join(", ")||"none")+". Can you suggest a plan?";'
           'wa.href=wa.getAttribute("data-base")+encodeURIComponent(t);wa.textContent="Plan a "+F[m]+" trip on WhatsApp";sum.appendChild(wa);wa.hidden=false;}}'
           'bar.addEventListener("click",function(e){var b=e.target.closest("button");if(b){pick(parseInt(b.getAttribute("data-m"),10));}});'
