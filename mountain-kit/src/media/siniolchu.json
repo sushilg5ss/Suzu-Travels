@@ -1,0 +1,127 @@
+{
+ "hero": {
+  "kicker": "SINIOLCHU · NORTH SIKKIM",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 80,
+     "scale": 1.12,
+     "x": -150
+    },
+    "to": {
+     "y": 420,
+     "scale": 1.15,
+     "x": -190
+    }
+   },
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-38468349.jpg",
+    "kind": "land",
+    "h": 1406,
+    "t": [
+     7.0,
+     10.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.0,
+     14.0
+    ],
+    "from": {
+     "scale": 1.04
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40
+    }
+   }
+  ],
+  "steps": [
+   [
+    2750,
+    "LACHEN · ROAD-HEAD"
+   ],
+   [
+    4600,
+    "ZEMU BC · 1936"
+   ],
+   [
+    5700,
+    "CAMP · 1936"
+   ],
+   [
+    6200,
+    "RIDGE BIVOUAC"
+   ],
+   [
+    6888,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Siniolchu, camp by camp",
+  "sub": "1936 German route, west ridge · Himalayan Journal 9",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 4600,
+    "day": "19 Sep 1936"
+   },
+   {
+    "name": "Camp",
+    "m": 5000,
+    "day": "20 Sep"
+   },
+   {
+    "name": "Camp",
+    "m": 5700,
+    "day": "21 Sep"
+   },
+   {
+    "name": "Ridge bivouac",
+    "m": 6200,
+    "day": "22 Sep"
+   },
+   {
+    "name": "Summit",
+    "m": 6888,
+    "day": "23 Sep 1936"
+   }
+  ]
+ }
+}

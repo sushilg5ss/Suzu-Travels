@@ -1,0 +1,131 @@
+{
+ "hero": {
+  "kicker": "KANGTO · ARUNACHAL'S HIGHEST",
+  "scenes": [
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "scale": 1.0,
+     "x": 30
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -40
+    }
+   },
+   {
+    "img": "px-28409954.jpg",
+    "kind": "land",
+    "h": 1399,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.04,
+     "y": -150
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -40,
+     "y": -190
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     7.0,
+     10.6
+    ],
+    "from": {
+     "y": 560,
+     "scale": 1.22,
+     "x": -200
+    },
+    "to": {
+     "y": 900,
+     "scale": 1.24,
+     "x": -210
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.0,
+     14.0
+    ],
+    "from": {
+     "scale": 1.1,
+     "x": -180
+    },
+    "to": {
+     "scale": 1.14,
+     "x": -220
+    }
+   }
+  ],
+  "steps": [
+   [
+    4700,
+    "BASE CAMP · 1988"
+   ],
+   [
+    5300,
+    "ABC · 1988"
+   ],
+   [
+    5900,
+    "CAMP 1 · 1988"
+   ],
+   [
+    6450,
+    "CAMP 2 · 1988"
+   ],
+   [
+    7090,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Kangto, camp by camp (1988 route)",
+  "sub": "Tibet side, NW ridge · Japanese Alpine News 2014",
+  "camps": [
+   {
+    "name": "Base camp",
+    "m": 4700,
+    "day": "5 Mar 1988"
+   },
+   {
+    "name": "ABC",
+    "m": 5300,
+    "day": "8 Mar"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5900,
+    "day": "15 Mar"
+   },
+   {
+    "name": "Camp 2",
+    "m": 6450,
+    "day": "22 Mar"
+   },
+   {
+    "name": "Summit",
+    "m": 7090,
+    "day": "24 Mar 1988"
+   }
+  ]
+ }
+}
