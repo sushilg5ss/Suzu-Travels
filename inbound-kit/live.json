@@ -511,5 +511,14 @@
   "blurb": "Old Goa's churches, Kerala, a chance of snow in the hills — plus crowds, fog and dates",
   "added": "2026-11-23",
   "focus": "christmas in india"
+ },
+ "orchha": {
+  "id": 25106,
+  "path": "/india-tours/orchha/",
+  "kind": "guide",
+  "label": "Orchha",
+  "blurb": "Bundela palaces between Agra and Khajuraho",
+  "added": "2026-11-24",
+  "focus": "orchha"
  }
 }

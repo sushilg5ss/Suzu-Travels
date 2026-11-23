@@ -1,0 +1,179 @@
+{
+ "path": "/india-tours/orchha/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Orchha Travel Guide: Bundela Palaces, Ram Raja Temple and the Chhatris",
+ "seo_title": "Orchha Travel Guide: Palaces, Ram Raja Temple, Chhatris",
+ "seo_desc": "Orchha for first-time visitors: palaces, Ram Raja temple, chhatris, how many nights, best months and how to add it between Agra and Khajuraho by car.",
+ "focus": "orchha",
+ "label": "Orchha",
+ "blurb": "Bundela palaces between Agra and Khajuraho",
+ "kicker": "Madhya Pradesh · Betwa River",
+ "tag": "Palaces, temples and royal cenotaphs on a quiet river.",
+ "sub": "An honest guide to Orchha for travellers from the US, UK, Europe, Australia and Canada: what you see, how long to stay, when to go, and how to add it to a Golden Triangle and Khajuraho trip by private car.",
+ "hero_alt": "The Raja Mahal palace of Orchha at sunset, the domed rooftops of Orchha Fort, the Chaturbhuj Temple seen from the fort, and a royal chhatri (cenotaph) by the Betwa River in Madhya Pradesh, India",
+ "cta1": "See the route",
+ "chips": [
+  ["16th century", "founded by the Bundela chiefs"],
+  ["1–2 nights", "enough for most visitors"],
+  ["Oct–Mar", "the comfortable months"],
+  ["172 km", "to Khajuraho by road (107 mi)"]
+ ],
+ "q": "Is Orchha worth visiting, and how do I fit it in?",
+ "answer": "Orchha is a small town on the Betwa River in Madhya Pradesh, founded in the 16th century by the Bundela chief Rudra Pratap Singh. See the Raja Mahal and Jahangir Mahal, the Ram Raja temple and the riverside chhatris. It is about 16–17 km from Jhansi station and 172 km from Khajuraho; one or two nights is enough. We arrange it by private car — price on request.",
+ "talk": true,
+ "facts": [
+  ["16th century", "Orchha founded on the Betwa by Rudra Pratap Singh"],
+  ["17th century", "Jahangir Mahal built by Veer Singh Deo"],
+  ["16–17 km", "from Jhansi railway station (about 10 mi)"],
+  ["Tentative List", "UNESCO, submitted 2019 — not yet a World Heritage Site"]
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "nav": "What it is",
+   "h2": "What Orchha is — and why it is worth a night",
+   "kind": "prose",
+   "paras": [
+    "Orchha was founded in the 16th century by the Bundela chief Rudra Pratap Singh, on a stretch of land along the Betwa River in what is now Madhya Pradesh. For the next century his successors filled it with palaces, temples and a row of royal cenotaphs by the water.",
+    "Today it is a small, quiet town. The palaces and temples stand within walking distance of each other, which makes Orchha an easy, calm stop after the crowds of Agra and before the temples of Khajuraho.",
+    "One thing many websites get wrong: \"The historic ensemble of Orchha\" is on India's UNESCO World Heritage <b>Tentative List</b> (submitted 2019) — it is not (yet) a World Heritage Site. Khajuraho, a day's drive further on, has been a World Heritage Site since 1986."
+   ]
+  },
+  {
+   "id": "see",
+   "nav": "What to see",
+   "h2": "What you see in Orchha",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Raja Mahal", "The royal palace inside the fort complex. Construction started in the 16th century and was finished by later rulers, mainly Madhukar Shah."],
+    ["Jahangir Mahal", "Built in the 17th century by the Bundela ruler Veer Singh Deo to honour a visit by the Mughal emperor Jahangir."],
+    ["Ram Raja Temple", "The only temple in India where Rama is honoured as a king rather than as a god, with a ceremonial guard. Open from sunrise to sunset every day."],
+    ["Chaturbhuj Temple", "A tall 16th-century temple dedicated to Vishnu in the heart of Orchha."],
+    ["Laxmi Narayan Temple", "Built by Veer Singh Deo in the early 17th century."],
+    ["The chhatris", "A row of royal cenotaphs (chhatris) of the Bundela rulers on the bank of the Betwa at Kanchan Ghat, from the 16th and 17th centuries. Many visitors come here at sunset."]
+   ]
+  },
+  {
+   "id": "beyond",
+   "nav": "Beyond the palaces",
+   "h2": "Beyond the palaces: river, sanctuary and the evening show",
+   "kind": "cards",
+   "items": [
+    ["Sound and light show", "Held every evening at the fort (MP Tourism). Ask us or check locally for the time and language on your date."],
+    ["Rafting on the Betwa", "MP Tourism runs river rafting from Kanchan Ghat to Shiva Ghat, past the chhatris. It is seasonal — ask locally before you plan around it."],
+    ["Orchha sanctuary", "A sanctuary of about 46 sq km (18 sq mi) along the Betwa, good for a quiet walk and birdwatching away from the monuments."]
+   ]
+  },
+  {
+   "id": "route",
+   "nav": "Sample route",
+   "h2": "A sample week: Agra → Orchha → Khajuraho → Varanasi",
+   "kind": "table",
+   "lead": "Orchha sits on the natural road from the Golden Triangle to Khajuraho, so many foreign visitors add it as a stop between Agra and the temples. A private car lets you keep the same driver the whole way.",
+   "video": "route",
+   "video_caption": "Agra and the Taj Mahal first, two nights around Orchha, then Khajuraho and on to Varanasi. Positions approximate.",
+   "head": ["Day", "Where", "What you do"],
+   "rows": [
+    ["Day 1", "Agra", "The Taj Mahal (closed on Fridays) and Agra Fort"],
+    ["Day 2", "Agra → Orchha", "A long day on the road, in daylight, with breaks we plan in advance"],
+    ["Day 3", "Orchha", "Raja Mahal, Jahangir Mahal, Ram Raja and Chaturbhuj temples; the chhatris at sunset"],
+    ["Day 4", "Orchha → Khajuraho", "About 172 km (107 mi) by road; Western Group temples in the late-afternoon light"],
+    ["Day 5", "Khajuraho", "Eastern and Southern temple groups"],
+    ["Day 6–7", "Varanasi", "Travel on to Varanasi (seasonal flights or train — check current schedules); the ghats and the evening aarti"]
+   ],
+   "note": "Road times depend on traffic and stops — we plan each day around breaks, not a map distance. We drive in daylight; in winter, fog can slow the roads of North India."
+  },
+  {
+   "id": "reach",
+   "nav": "Getting there",
+   "h2": "How to get to Orchha",
+   "kind": "table",
+   "head": ["Way in", "What to know"],
+   "rows": [
+    ["By train to Jhansi", "Many visitors arrive by train at Jhansi Junction, about 16–17 km (10 mi) from Orchha, then go on by car. Check current trains and times on IRCTC."],
+    ["Orchha's own station", "Orchha has a small railway station of its own, about 6 km (4 mi) from the Ram Raja temple. Fewer trains stop here — check IRCTC."],
+    ["By private car", "The easiest way to combine Agra, Orchha and Khajuraho with one driver. Orchha to Khajuraho is about 172 km (107 mi) by road; Gwalior to Orchha about 200 km (124 mi)."],
+    ["By air", "There is no airport in Orchha. Gwalior and Khajuraho have the nearest airports, both a few hours away by road — many visitors find the train to Jhansi simpler."]
+   ]
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go to Orchha",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["October to March", "The comfortable season for walking the palaces. Winter nights can fall to about 13 °C (55 °F) — bring a warm layer."],
+    ["April to June", "April to June is very hot — temperatures can pass 40 °C (104 °F). If you have a heart condition or are sensitive to heat, consult your doctor; see CDC or NHS Fit for Travel."],
+    ["July to September", "The monsoon turns the river country green, but it is humid and some outdoor plans depend on the weather."],
+    ["Festivals", "Ram Navami (March or April) and Ram Vivah (around November–December) bring big crowds to the Ram Raja temple. Dates follow the Hindu calendar — ask us for the dates in your year."]
+   ]
+  },
+  {
+   "id": "practical",
+   "nav": "Visit & visa",
+   "h2": "Temple etiquette, fees and your visa",
+   "kind": "callout",
+   "style": "dark",
+   "text": "<b>The Ram Raja temple is an active place of worship: dress modestly, remove shoes, and follow the rules on photography at the gate.</b> Foreign visitors pay separate entry fees at the monuments, in Indian rupees; fees and timings change, so check locally or ask us before you go (as of Nov 2026). For your visa: <b>apply only at the official site indianvisaonline.gov.in — look-alike sites charge extra. We are not a visa agency.</b> In November 2026 the Government of India announced that the Tourist Visa is being renamed the Visitor Visa (PIB, 11 Nov 2026); until the official site changes, apply for the visa it shows there."
+  },
+  {
+   "id": "how",
+   "nav": "How we arrange it",
+   "h2": "How we arrange your Orchha trip",
+   "kind": "steps",
+   "lead": "Orchha is outside our home region. We arrange Orchha and Khajuraho with trusted local partners and a private car with driver; Suzu Travels plans the whole trip from our office in Himachal and stays your single point of contact.",
+   "items": [
+    ["Tell us your plan", "Where you start, your dates, how many of you, and whether you want Khajuraho, Varanasi or the Golden Triangle with it."],
+    ["Get a day-by-day plan", "With a US-dollar quote for the car, driver, hotels and any trains or flights between cities."],
+    ["Lock it with a 20% deposit", "Full refund if you cancel within 48 hours of paying; the balance is due before the trip."],
+    ["Before the trip", "Your driver's name, photo and car number are shared with you before the trip, along with our office number in Himachal."],
+    ["On the road", "Same car and driver from Agra to Khajuraho; licensed local guides at the palaces on request."]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "An Orchha stop is quoted on request — the number of days, hotel level, trains or flights and group size change the total. You get a day-by-day plan with a US-dollar total before you pay anything. Many guests add Orchha and Khajuraho to a Golden Triangle trip, which has published prices:",
+  "rows": [
+   ["Orchha, 1 or 2 nights — added to your India trip", "on request", "Private car and driver, hotel, guide on request; Khajuraho and onward travel to Varanasi quoted with it"],
+   ["Golden Triangle — 4 days (Delhi, Agra, Jaipur)", "from US$299", "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"],
+   ["Golden Triangle — classic 6 days", "from US$449", "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"]
+  ]
+ },
+ "faqs": [
+  ["Is Orchha worth visiting?", "For travellers who like history and a slower pace, yes. Orchha has 16th- and 17th-century Bundela palaces, the Ram Raja temple and a row of royal cenotaphs on the Betwa River, all within walking distance in a small, quiet town. It fits naturally between Agra and Khajuraho."],
+  ["How many days do you need in Orchha?", "One or two nights. One full day covers the Raja Mahal, Jahangir Mahal, the Ram Raja and Chaturbhuj temples and the chhatris at sunset; a second night adds the sanctuary, the river or simply a slower pace."],
+  ["How do I get to Orchha?", "Many visitors take a train to Jhansi Junction and drive the last 16–17 km (about 10 miles). Orchha also has a small station of its own. If you are touring by private car, Orchha is a stop on the road from Agra to Khajuraho."],
+  ["How far is Orchha from Khajuraho?", "About 172 km (107 miles) by road, according to MP Tourism. Many travellers drive it in a day and see the Khajuraho temples in the late-afternoon light."],
+  ["Is Orchha a UNESCO World Heritage Site?", "Not yet. Orchha is on India's UNESCO World Heritage Tentative List (submitted 2019) — it is not (yet) a World Heritage Site. Nearby Khajuraho is a World Heritage Site, inscribed in 1986."],
+  ["What is special about the Ram Raja temple?", "It is the only temple in India where Rama is honoured as a king rather than as a god, with a ceremonial guard. It is an active place of worship: dress modestly, remove shoes and follow the photography rules at the gate."],
+  ["When is the best time to visit Orchha?", "October to March is the comfortable season. April to June is very hot, often above 40 °C (104 °F), and the monsoon (July–September) is green but humid."],
+  ["Can I combine Orchha with the Golden Triangle?", "Yes. Many guests add Orchha and Khajuraho after Delhi, Agra and Jaipur, then go on to Varanasi. We arrange it by private car with driver; send us your dates for a day-by-day plan and a quote."]
+ ],
+ "sources": [
+  ["MP Tourism — Orchha", "https://www.mptourism.com/destination-orchha.php"],
+  ["MP Tourism — Gwalior, Orchha and Khajuraho itinerary", "https://www.mptourism.com/gwalior-orchha-khajuraho-itinerary.aspx"],
+  ["Incredible India — Orchha", "https://www.incredibleindia.gov.in/en/madhya-pradesh/orchha"],
+  ["Incredible India — Ram Raja Mandir, Orchha", "https://www.incredibleindia.gov.in/en/madhya-pradesh/orchha/ram-raja-mandir"],
+  ["Incredible India — Chhatris, Orchha", "https://www.incredibleindia.gov.in/en/madhya-pradesh/orchha/chattris"],
+  ["PIB / ASI — India's World Heritage Tentative List (2023)", "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/sep/doc2023919253801.pdf"],
+  ["UNESCO World Heritage Centre — Khajuraho Group of Monuments", "https://whc.unesco.org/en/list/240/"],
+  ["Government of India — e-Visa (official site)", "https://indianvisaonline.gov.in/"],
+  ["PIB — visa rationalisation, 11 Nov 2026", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2335182&reg=48&lang=2"]
+ ],
+ "verified": "24 Nov 2026",
+ "cta": {
+  "h2": "Add Orchha to your India trip",
+  "text": "Tell us your dates, where you start and how many of you. We reply with a day-by-day plan and a US-dollar quote, usually within two hours (9 am–9 pm IST).",
+  "wa": "Hello Suzu Travels, I'm planning a trip with Orchha. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "khajuraho-temples",
+  "golden-triangle-itinerary-7-days",
+  "private-driver-india",
+  "varanasi-trip-guide"
+ ]
+}
