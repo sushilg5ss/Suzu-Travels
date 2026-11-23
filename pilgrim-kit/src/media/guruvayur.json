@@ -1,0 +1,39 @@
+{
+ "hero": {
+  "arch": "hills",
+  "sky": "dawn",
+  "deva": "गुरुवायुर",
+  "kicker": "Sri Krishna · Thrissur, Kerala",
+  "beats": [
+   "Guru and Vayu bring Dwaraka's idol",
+   "A lotus lake chosen in Kerala",
+   "Lamps lit before 3 am Nirmalyam",
+   "Ekadasi music fills the night"
+  ]
+ },
+ "story": {
+  "title": "The legend of Guruvayur",
+  "beats": [
+   {
+    "arch": "nagara",
+    "sky": "night",
+    "line": "The sea rises over Dwaraka"
+   },
+   {
+    "arch": "lake",
+    "sky": "dawn",
+    "line": "Guru and Vayu carry the sacred image"
+   },
+   {
+    "arch": "hills",
+    "sky": "dawn",
+    "line": "A home beside a lotus lake"
+   },
+   {
+    "arch": "ghats",
+    "sky": "dusk",
+    "line": "Ekadasi lamps glow through the night"
+   }
+  ]
+ }
+}
