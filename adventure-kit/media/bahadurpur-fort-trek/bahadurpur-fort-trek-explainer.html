@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; color: #fff; }
+      .bg { position: absolute; inset: 0; }
+      .bg img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; object-fit: cover; opacity: 0.2; }
+      .bgshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,51,0.75) 0%, rgba(11,31,51,0.9) 60%, #0b1f33 100%); }
+      .kick { position: absolute; left: 110px; top: 66px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.18em; }
+      .title { position: absolute; left: 110px; top: 108px; width: 1200px; font-weight: 800; font-size: 58px; letter-spacing: -0.02em; white-space: nowrap; }
+      .ctr { position: absolute; top: 80px; width: 300px; text-align: right; }
+      .cv { font-weight: 800; font-size: 64px; color: #d4a24c; letter-spacing: -0.02em; }
+      .cl { font-weight: 500; font-size: 26px; color: rgba(255,255,255,0.85); }
+      svg.map { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
+      .st { position: absolute; width: 320px; font-weight: 800; font-size: 30px; }
+      .st span { display: block; font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.8); margin-top: 2px; }
+      .sm { color: rgba(255,255,255,0.85); font-size: 26px; }
+      .day { position: absolute; text-align: center; font-weight: 800; font-size: 24px; color: #0b1f33; background: #d4a24c; border-radius: 18px; height: 36px; line-height: 36px; }
+      .note { position: absolute; left: 1560px; top: 760px; width: 260px; text-align: right; font-weight: 500; font-size: 20px; color: rgba(255,255,255,0.55); }
+      .cal { position: absolute; left: 110px; top: 884px; width: 1700px; height: 70px; }
+      .m { position: absolute; top: 0; width: 132px; height: 60px; border-radius: 12px; text-align: center; line-height: 60px; font-weight: 800; font-size: 28px; }
+      .mo { background: #d4a24c; color: #0b1f33; }
+      .mw { background: rgba(170,205,235,0.14); color: #cfe3f5; border: 2px solid rgba(170,205,235,0.35); }
+      .ms { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.75); border: 2px solid rgba(255,255,255,0.18); }
+      .calk { position: absolute; left: 110px; top: 966px; width: 880px; line-height: 1.25; font-weight: 500; font-size: 25px; color: rgba(255,255,255,0.88); }
+      .foot { position: absolute; left: 1000px; top: 958px; width: 810px; height: 60px; font-weight: 800; font-size: 32px; }
+      .chip { position: absolute; top: 0; height: 60px; line-height: 56px; padding: 0 26px; border-radius: 30px; border: 2px solid rgba(255,255,255,0.5); white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="bgc" class="bg clip" data-start="0" data-duration="12" data-track-index="0"><img id="bgi" src="assets/bg.jpg" alt="" /><div class="bgshade"></div></div>
+      <div id="ui" class="clip" data-start="0" data-duration="12" data-track-index="1" style="position:absolute;inset:0">
+        <div class="kick" id="kick">BAHADURPUR FORT · BILASPUR DISTRICT</div>
+        <div class="title" id="title">Bilaspur → Namhol → Bahadurpur</div>
+        <div class="ctr" style="left:1180px"><div class="cv">~40 km</div><div class="cl">from Bilaspur town</div></div>
+        <div class="ctr" style="left:1540px"><div class="cv">~1,980 m</div><div class="cl">highest point of the district</div></div>
+        <svg class="map" viewBox="0 0 1920 1080"><g transform="translate(0,100)">
+          <g id="side" stroke="rgba(255,255,255,0.45)" stroke-width="4" stroke-dasharray="8 12" fill="none">
+            <path d="M 700 470 C 660 540 600 600 520 650" />
+            <path d="M 700 470 C 740 430 790 400 840 380" />
+            <path d="M 700 470 C 600 520 440 560 300 600" />
+          </g>
+          <path d="M 700 290 L 700 470" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="5" stroke-dasharray="10 12" />
+          <path id="drive" d="M 700 470 C 860 520 1020 560 1180 590" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="6" stroke-dasharray="14 12" />
+          <path id="hill" d="M 1180 590 C 1300 560 1380 470 1450 400 C 1500 350 1540 330 1580 320" fill="none" stroke="#d4a24c" stroke-width="8" stroke-linecap="round" />
+          <g fill="#fff">
+            <circle cx="700" cy="290" r="12" fill="#d4a24c" stroke="#fff" stroke-width="4" />
+            <circle cx="700" cy="470" r="12" />
+            <circle cx="1180" cy="590" r="12" />
+            <circle cx="1450" cy="400" r="10" />
+          </g>
+          <g id="side-dots" fill="rgba(255,255,255,0.7)"><circle cx="520" cy="650" r="9" /><circle cx="840" cy="380" r="9" /><circle cx="300" cy="600" r="9" /></g>
+          <g id="flag"><line x1="1580" y1="320" x2="1580" y2="260" stroke="#fff" stroke-width="4" /><path d="M 1580 260 L 1620 273 L 1580 286 Z" fill="#d4a24c" /><circle cx="1580" cy="320" r="14" fill="#d4a24c" stroke="#fff" stroke-width="4" /></g>
+          <circle id="dot" cx="700" cy="470" r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" />
+        </g></svg>
+        <div id="labels">
+          <div class="st" style="left:730px;top:352px">Ghumarwin<span>Suzu's office</span></div>
+          <div class="st" style="left:440px;top:520px;width:240px;text-align:right">Bilaspur town</div>
+          <div class="st" style="left:1060px;top:712px;width:260px">Namhol<span>road-head</span></div>
+          <div class="st" style="left:1475px;top:495px;width:160px">FRH<span>1,872 m</span></div>
+          <div class="st" style="left:1400px;top:280px;width:420px">Fort ruins ~1,980 m<span>built 1620 AD</span></div>
+        </div>
+        <div id="sides">
+          <div class="st sm" style="left:380px;top:766px;width:300px">Gobind Sagar</div>
+          <div class="st sm" style="left:860px;top:440px;width:300px">Bandla</div>
+          <div class="st sm" style="left:120px;top:716px;width:260px">Naina Devi</div>
+        </div>
+        <div class="day" id="d1" style="left:1240px;top:740px;width:260px">11 km hill road</div>
+        <div class="day" id="d2" style="left:1630px;top:470px;width:220px">forest walk</div>
+        <div class="note">Schematic, not to scale</div>
+        <div class="cal" id="cal">
+          <div class="m mw" style="left:0">Jan</div><div class="m mw" style="left:142px">Feb</div><div class="m mo" style="left:284px">Mar</div><div class="m mo" style="left:426px">Apr</div><div class="m mo" style="left:568px">May</div>
+          <div class="m mo" style="left:710px">Jun</div><div class="m ms" style="left:852px">Jul</div><div class="m ms" style="left:994px">Aug</div><div class="m ms" style="left:1136px">Sep</div>
+          <div class="m mo" style="left:1278px">Oct</div><div class="m mo" style="left:1420px">Nov</div><div class="m mw" style="left:1562px">Dec</div>
+        </div>
+        <div class="calk" id="calk">Open all year · Dec–Feb light snow some days · Jul–Sep misty, leeches</div>
+        <div class="foot" id="foot">
+          <div class="chip" style="left:0">Cab + guide on request</div>
+          <div class="chip" style="left:430px;border-color:#d4a24c;color:#d4a24c">Price: Get Quote</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bgi", { scale: 1.04 }, { scale: 1.1, duration: 12, ease: "none" }, 0);
+      tl.fromTo(["#kick", "#title"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.fromTo("#labels .st", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 0.6);
+      tl.fromTo(["#side", "#side-dots", "#sides .st"], { opacity: 0 }, { opacity: 1, duration: 0.5, stagger: 0.1 }, 6.6);
+      const drive = document.getElementById("drive");
+      const hill = document.getElementById("hill");
+      const dot = document.getElementById("dot");
+      const L1 = drive.getTotalLength(), L2 = hill.getTotalLength();
+      hill.style.strokeDasharray = L2 + " " + L2;
+      const st = { p: 0 };
+      function place() {
+        const tot = L1 + L2, d = tot * st.p;
+        let pt;
+        if (d <= L1) { pt = drive.getPointAtLength(Math.max(0.01, d)); hill.style.strokeDashoffset = L2.toFixed(2); }
+        else { const e = d - L1; pt = hill.getPointAtLength(e); hill.style.strokeDashoffset = (L2 - e).toFixed(2); }
+        dot.setAttribute("cx", pt.x.toFixed(2));
+        dot.setAttribute("cy", pt.y.toFixed(2));
+      }
+      tl.to(st, { p: 1, duration: 5.2, ease: "sine.inOut", onUpdate: place }, 1.6);
+      tl.fromTo(["#d1", "#d2"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, stagger: 2.4, ease: "power2.out" }, 2.4);
+      tl.fromTo("#flag", { opacity: 0, scale: 0.6, transformOrigin: "1580px 420px" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 6.8);
+      tl.fromTo("#cal .m", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.05, ease: "power2.out" }, 8.0);
+      tl.fromTo("#calk", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 8.8);
+      tl.fromTo("#foot .chip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 9.4);
+      place();
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
