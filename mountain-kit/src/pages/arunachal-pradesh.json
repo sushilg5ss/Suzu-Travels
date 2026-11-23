@@ -4,12 +4,12 @@
  "state": "arunachal-pradesh",
  "title": "Highest Peaks in Arunachal Pradesh: Kangto & More, All 5 Listed",
  "seo_title": "Highest Peak in Arunachal Pradesh: Kangto & More",
- "seo_desc": "Kangto (7,090 m) is the highest peak in Arunachal Pradesh, first climbed in Nov 2025. All 5 high peaks: heights, climbing record, permits and season.",
+ "seo_desc": "Kangto (7,090 m) is Arunachal Pradesh's highest peak, climbed from Tibet in 1988 and from India in 2025. All 5 high peaks, permits and season.",
  "focus": "highest peak in arunachal pradesh",
  "commercial": false,
  "label": "Peaks of Arunachal Pradesh",
- "blurb": "5 peaks · Kangto 7,090 m, first climbed in 2025",
- "verified": "9 Nov 2026",
+ "blurb": "5 peaks · Kangto 7,090 m, climbed 1988 and 2025",
+ "verified": "23 Nov 2026",
  "kicker": "Arunachal Pradesh · Eastern Himalaya",
  "tag": "Arunachal's high peaks: India's newest 7,000 m summit, and two still unclimbed.",
  "sub": "Five big summits on the India–Tibet border, from 6,383 m Tsangyang Gyatso above Tawang to 7,090 m Kangto, with their heights, who climbed them and when, and the permits you need to get anywhere near them.",
@@ -38,15 +38,15 @@
  "hero_alt": "A roped line on a snowfield, a glacier crossing, a high ridge and tents at night (stock footage, not Arunachal) with statements: Kangto 7,090 m, climbed in 2025, 2 still unclimbed, climb in Himachal",
  "ladder_alt": "Animated chart of Arunachal Pradesh's five high peaks at their true heights: Tsangyang Gyatso, Gorichen, Chiumo, Nyegyi Kansang and Kangto",
  "q": "Which is the highest peak in Arunachal Pradesh?",
- "answer": "<b>Kangto</b> (7,090 m / 23,261 ft; also given as 7,042–7,060 m) is the highest peak in Arunachal Pradesh, on the India–Tibet border in Bichom district. It stayed unclimbed until 26 November 2025, when an 18-member Indian Army team reached the top by the southern route. Second is <b>Nyegyi Kansang</b> (7,047 m), still unclimbed. All five are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
+ "answer": "<b>Kangto</b> (7,090 m / 23,261 ft; also given as 7,042–7,060 m) is the highest peak in Arunachal Pradesh, on the India–Tibet border in Bichom district. A Japanese team first climbed it from Tibet in 1988; on 26 November 2025 an Indian Army team made the first ascent from the Indian side. Second is <b>Nyegyi Kansang</b> (7,047 m), still unclimbed. All five are in our <a href=\"/mountains-of-india/highest-peaks-in-india/\">list of India's highest peaks</a>.",
  "facts": [
   [
    "Highest peak",
    "Kangto, 7,090 m / 23,261 ft (also given as 7,042–7,060 m)"
   ],
   [
-   "First recorded ascent",
-   "26 Nov 2025, Indian Army Eastern Command team, southern route"
+   "First ascents",
+   "24 Mar 1988 from Tibet (Japanese team); 26 Nov 2025 from India (Indian Army, southern route)"
   ],
   [
    "Second-highest",
@@ -86,15 +86,15 @@
    "id": "kangto",
    "label": "Kangto",
    "kicker": "The highest",
-   "h2": "Kangto peak: Arunachal's highest, first climbed in 2025",
-   "html": "<p>For decades Kangto was out of reach. Earlier attempts could not even reach its base; on <b>21 October 2017</b> a joint ITBP–IMF team set up a base camp at about 9,920 ft (3,024 m) on the Pachuk river.</p><ul class=\"szm-steps\"><li><b>3 November 2025</b>An 18-member Indian Army Eastern Command team (4 Corps) is flagged off from a forward base.</li><li><b>26 November 2025</b>The team reaches the summit by the \"extremely challenging\" southern route: the first recorded ascent of Kangto.</li><li><b>5 and 8 December 2025</b>The Army calls the peak \"hitherto unconquered\", and the Governor of Arunachal Pradesh congratulates the team.</li></ul><div class=\"szm-call\"><p><b>Why \"recorded\"?</b> No earlier ascent of Kangto is documented, so the 2025 climb is the first recorded one. Summit details such as camp heights and day counts have not been published.</p></div>"
+   "h2": "Kangto peak: Arunachal's highest, climbed from Tibet (1988) and India (2025)",
+   "html": "<p>Kangto was first climbed on <b>24 March 1988</b> by Takafumi Miyazaki and Kosuke Takano of the Doshisha University Alpine Club (Japan), by the north-west ridge from the Tibet side. From India it stayed out of reach for decades: earlier attempts could not even reach its base; on <b>21 October 2017</b> a joint ITBP–IMF team set up a base camp at about 9,920 ft (3,024 m) on the Pachuk river.</p><ul class=\"szm-steps\"><li><b>3 November 2025</b>An 18-member Indian Army Eastern Command team (4 Corps) is flagged off from a forward base.</li><li><b>26 November 2025</b>The team reaches the summit by the \"extremely challenging\" southern route: the first ascent of Kangto from the Indian side.</li><li><b>5 and 8 December 2025</b>The Army calls the peak \"hitherto unconquered\", and the Governor of Arunachal Pradesh congratulates the team.</li></ul><div class=\"szm-call\"><p><b>Two first ascents.</b> The 1988 Japanese climb came from Tibet; the 2025 Army climb was the first from India, which the Army called the first recorded successful ascent. Summit details of the 2025 climb such as camp heights and day counts have not been published.</p></div>"
   },
   {
    "id": "areas",
    "label": "By area",
    "kicker": "Where they are",
    "h2": "Arunachal's peaks, area by area",
-   "html": "<p>The five peaks sit in two groups along the border.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>The Kangto massif (Bichom, East Kameng)</h3><ul><li><a href=\"#peak-kangto\">Kangto</a> (7,090 m): the state's highest, first recorded ascent 2025</li><li><a href=\"#peak-nyegyi-kansang\">Nyegyi Kansang</a> (7,047 m, also 7,050 m): a 1995 Indian team led by M.P. Yadav claimed it by the north-east ridge on 23 October, but was later found to have stopped about 600 m below the main summit, so it is still counted as unclimbed</li><li><a href=\"#peak-chiumo\">Chiumo</a> (6,890 m): no documented ascent</li></ul></div><div class=\"szm-col\"><h3>Tawang and West Kameng</h3><ul><li><a href=\"#peak-gorichen\">Gorichen</a> (6,488 m): used by the Army for training; on 21 October 2024 the Mountaineers' Association of Krishnanagar (West Bengal) made what was reported as the first civilian ascent</li><li><a href=\"#peak-tsangyang-gyatso\">Tsangyang Gyatso</a> (6,383 m): first climbed on 25 September 2024 by NIMAS Dirang, and named after the 6th Dalai Lama</li></ul><p class=\"szm-note\">NIMAS, the National Institute of Mountaineering and Adventure Sports, is based at Dirang in West Kameng; see our <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses guide</a>.</p></div></div>"
+   "html": "<p>The five peaks sit in two groups along the border.</p><div class=\"szm-cols\"><div class=\"szm-col\"><h3>The Kangto massif (Bichom, East Kameng)</h3><ul><li><a href=\"#peak-kangto\">Kangto</a> (7,090 m): the state's highest, first climbed 1988 (from Tibet)</li><li><a href=\"#peak-nyegyi-kansang\">Nyegyi Kansang</a> (7,047 m, also 7,050 m): a 1995 Indian team led by M.P. Yadav claimed it by the north-east ridge on 23 October, but was later found to have stopped about 600 m below the main summit, so it is still counted as unclimbed</li><li><a href=\"#peak-chiumo\">Chiumo</a> (6,890 m): no documented ascent</li></ul></div><div class=\"szm-col\"><h3>Tawang and West Kameng</h3><ul><li><a href=\"#peak-gorichen\">Gorichen</a> (6,488 m): used by the Army for training; on 21 October 2024 the Mountaineers' Association of Krishnanagar (West Bengal) made what was reported as the first civilian ascent</li><li><a href=\"#peak-tsangyang-gyatso\">Tsangyang Gyatso</a> (6,383 m): first climbed on 25 September 2024 by NIMAS Dirang, and named after the 6th Dalai Lama</li></ul><p class=\"szm-note\">NIMAS, the National Institute of Mountaineering and Adventure Sports, is based at Dirang in West Kameng; see our <a href=\"/mountains-of-india/mountaineering-courses/\">mountaineering courses guide</a>.</p></div></div>"
   },
   {
    "id": "history",
@@ -134,7 +134,7 @@
   ],
   [
    "Has Kangto been climbed?",
-   "Yes. An 18-member Indian Army Eastern Command team made the first recorded ascent on 26 November 2025, by the southern route."
+   "Yes, twice by different sides. A Japanese Doshisha University team first climbed it from Tibet on 24 March 1988. An 18-member Indian Army team made the first ascent from the Indian side on 26 November 2025, by the southern route."
   ],
   [
    "Which is the second-highest peak in Arunachal Pradesh?",
@@ -217,6 +217,14 @@
   [
    "Indian Mountaineering Foundation — Peak fees",
    "https://www.indmount.org/IMF/peakfee"
+  ],
+  [
+   "Japanese Alpine News vol. 15 (2014), Nakamura — the 1988 Doshisha University ascent of Kangto",
+   "https://jac1.or.jp/english/images/vol15/JAPANESE%20ALPINE%20NEWS%20Vol15-84.pdf"
+  ],
+  [
+   "Himalayan Journal 71 (2016), Nakamura — Kangto from the Tibet side",
+   "https://www.himalayanclub.org/hj/71/14/eastern-rim-of-central-tibet-south-tibet-and-east-tibet/"
   ]
  ],
  "sameAs": [

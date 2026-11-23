@@ -8,7 +8,7 @@
  "commercial": false,
  "label": "Unclimbed peaks of India",
  "blurb": "8 virgin summits · closed and sacred peaks",
- "verified": "25 Oct 2026",
+ "verified": "23 Nov 2026",
  "kicker": "Unclimbed · closed · sacred · 2026",
  "tag": "The summits nobody has stood on.",
  "sub": "India's unclimbed mountains from our dataset of notable peaks: where they are, why they stay untouched, which peaks are closed or sacred instead, and which ones were climbed for the first time only recently.",
@@ -31,7 +31,7 @@
   ],
   [
    "2025",
-   "Kangto's first recorded ascent"
+   "Kangto's first ascent from India"
   ]
  ],
  "hero_alt": "Glaciated ridges, a corniced crest and high snow slopes (generic stock footage, not named peaks) with four statements: 7,780 m unclimbed; sacred, left alone; some stay closed; climb in Himachal",
@@ -61,7 +61,7 @@
   ],
   [
    "Biggest recent first ascent",
-   "Kangto, 7,090 m / 23,261 ft, 26 Nov 2025 (recorded)"
+   "Kangto from India, 7,090 m / 23,261 ft, 26 Nov 2025"
   ]
  ],
  "intro": [
@@ -99,7 +99,7 @@
    "label": "First ascents",
    "kicker": "Recently climbed",
    "h2": "Peaks climbed for the first time only recently",
-   "html": "<p>Unclimbed lists change. The most recent big first ascent in India is <b>Kangto</b>, Arunachal Pradesh's highest peak, whose first recorded ascent came on 26 November 2025. In September 2026 a 20-member team from NIMAS Dirang made what the Government of India calls the first-ever recorded summits of 20 unclimbed peaks above 6,000 m in the Ladakh Range (the Chamser–Lungser, Gyama Nala and Chokula areas), in 23 days. The peaks have not been named.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Height</th><th>State</th><th>First ascent</th></tr></thead><tbody><tr><td><b>20 unnamed peaks</b></td><td class=\"n\">above 6,000 m</td><td>Ladakh</td><td>Sep 2026: first recorded summits, by a NIMAS Dirang team (PIB, 25 Sep 2026)</td></tr><tr><td><b>Kangto</b></td><td class=\"n\">7,090 m / 23,261 ft</td><td>Arunachal Pradesh</td><td>26 Nov 2025: first recorded ascent, by an 18-member Indian Army team (Arunachal Governor’s press release, 8 Dec 2025)</td></tr><tr><td><b>Tsangyang Gyatso</b></td><td class=\"n\">6,383 m / 20,942 ft</td><td>Arunachal Pradesh</td><td>2024</td></tr><tr><td><b>Shahi Kangri</b></td><td class=\"n\">6,934 m / 22,749 ft</td><td>Ladakh</td><td>2022</td></tr><tr><td><b>Janhukut</b></td><td class=\"n\">6,805 m / 22,326 ft</td><td>Uttarakhand</td><td>2018</td></tr></tbody></table></div><p>For records and Indian climbing firsts, see our <a href=\"/mountains-of-india/mountaineering-in-india/\">guide to mountaineering in India</a>; for the other 7,000 m summits, the <a href=\"/mountains-of-india/7000m-peaks/\">7000m peaks list</a>.</p>"
+   "html": "<p>Unclimbed lists change. The most recent big first ascent in India is <b>Kangto</b>, Arunachal Pradesh's highest peak, first climbed from the Indian side on 26 November 2025 (a Japanese team had reached it from Tibet in 1988). In September 2026 a 20-member team from NIMAS Dirang made what the Government of India calls the first-ever recorded summits of 20 unclimbed peaks above 6,000 m in the Ladakh Range (the Chamser–Lungser, Gyama Nala and Chokula areas), in 23 days. The peaks have not been named.</p><div class=\"szm-scroll\"><table class=\"szm-tbl\"><thead><tr><th>Peak</th><th>Height</th><th>State</th><th>First ascent</th></tr></thead><tbody><tr><td><b>20 unnamed peaks</b></td><td class=\"n\">above 6,000 m</td><td>Ladakh</td><td>Sep 2026: first recorded summits, by a NIMAS Dirang team (PIB, 25 Sep 2026)</td></tr><tr><td><b>Kangto</b></td><td class=\"n\">7,090 m / 23,261 ft</td><td>Arunachal Pradesh</td><td>26 Nov 2025: first ascent from the Indian side, by an 18-member Indian Army team (Arunachal Governor’s press release, 8 Dec 2025); first climbed from Tibet in 1988 (Japanese Alpine News 2014)</td></tr><tr><td><b>Tsangyang Gyatso</b></td><td class=\"n\">6,383 m / 20,942 ft</td><td>Arunachal Pradesh</td><td>2024</td></tr><tr><td><b>Shahi Kangri</b></td><td class=\"n\">6,934 m / 22,749 ft</td><td>Ladakh</td><td>2022</td></tr><tr><td><b>Janhukut</b></td><td class=\"n\">6,805 m / 22,326 ft</td><td>Uttarakhand</td><td>2018</td></tr></tbody></table></div><p>For records and Indian climbing firsts, see our <a href=\"/mountains-of-india/mountaineering-in-india/\">guide to mountaineering in India</a>; for the other 7,000 m summits, the <a href=\"/mountains-of-india/7000m-peaks/\">7000m peaks list</a>.</p>"
   },
   {
    "id": "climb",
@@ -143,7 +143,7 @@
   ],
   [
    "Which Indian peak was climbed for the first time most recently?",
-   "Kangto (7,090 m), Arunachal Pradesh's highest peak, is the most recent big one: its first recorded ascent was on 26 November 2025, by an Indian Army team. In September 2026 a NIMAS Dirang team also made the first recorded summits of 20 unnamed peaks above 6,000 m in the Ladakh Range."
+   "Kangto (7,090 m), Arunachal Pradesh's highest peak, is the most recent big one from India: an Indian Army team made the first ascent from the Indian side on 26 November 2025 (a Japanese team had climbed it from Tibet in 1988). In September 2026 a NIMAS Dirang team also made the first recorded summits of 20 unnamed peaks above 6,000 m in the Ladakh Range."
   ]
  ],
  "links": [
@@ -200,6 +200,14 @@
   [
    "Explorersweb — first ascents",
    "https://explorersweb.com/category/first-ascents/"
+  ],
+  [
+   "Japanese Alpine News vol. 15 (2014), Nakamura — the 1988 Doshisha University ascent of Kangto",
+   "https://jac1.or.jp/english/images/vol15/JAPANESE%20ALPINE%20NEWS%20Vol15-84.pdf"
+  ],
+  [
+   "Himalayan Journal 71 (2016), Nakamura — Kangto from the Tibet side",
+   "https://www.himalayanclub.org/hj/71/14/eastern-rim-of-central-tibet-south-tibet-and-east-tibet/"
   ]
  ]
 }
