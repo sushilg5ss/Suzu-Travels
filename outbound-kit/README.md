@@ -38,6 +38,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /cambodia-tour-packages/ | 23680 | `.hx` country page (19 Nov 2026) — `pages/gen_cambodia.py` (Siem Reap/Angkor + Phnom Penh, Vietnam/Thailand add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like South Korea; Wikimedia Commons photos) |
 | /iceland-tour-packages/ | 23880 | `.hx` country page (20 Nov 2026) — `pages/gen_iceland.py` (Golden Circle + south coast to Jökulsárlón, Snæfellsnes option; 8-day itinerary grid = 4 columns; 7-photo gallery like Cambodia, gallery thumbs use the 768px `med` size; Wikimedia Commons photos) |
 | /norway-tour-packages/ | 24529 | `.hx` country page (22 Nov 2026) — `pages/gen_norway.py` (Oslo–Flåm–Nærøyfjord–Bergen–Geiranger–Ålesund + Tromsø/Lofoten; 8-day itinerary grid = 4 columns; 7-photo gallery like Iceland, `med` 768px thumbs; Wikimedia Commons photos) |
+| /seychelles-tour-packages/ | 24755 | `.hx` country page (23 Nov 2026) — `pages/gen_seychelles.py` (Mahé–Praslin–Curieuse–La Digue; 7-day itinerary grid = 4 columns; 7-photo gallery like Norway, `med` 768px thumbs; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -115,3 +116,8 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - WP converts uploads to .webp; the `768x<h>` size = round(768*h/w) of the 1920px upload — check each with curl before using it.
 - Grid cards for Norway were inserted before the Switzerland card (UK card on the Switzerland page) on all 31 country pages (+377 `.sx` / +356 `.hx`).
 - Content push: 5 chunks of ~16 KB (split on `><`), `wp_update_page` + 4 marker replaces; `content_length` matched the local UTF-8 bytes after every step.
+
+## Notes (23 Nov 2026)
+- Seychelles official entry pages answer plain curl: ics.gov.sc `/visa-and-travel/visiting-seychelles` and `/permits/visitors-permit`. seychelles.govtas.com (Travel Authorisation) is an Angular app — curl gets only the shell; the fee was not stated on the page.
+- Commons HTML search with `incategory:Quality_images` found plenty of NorbertNagel (CC BY-SA 4.0) Seychelles photos; WP fetched all 1920px thumbs. Portrait uploads (Anse Takamaka) get 1920×2560; use `med` 768×1024 in the gallery.
+- Grid cards for Seychelles were inserted before the Mauritius card (Maldives card on the Mauritius page) on all 32 country pages (+404 `.sx` / +355 `.hx`).
