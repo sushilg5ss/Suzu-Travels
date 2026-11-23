@@ -1,0 +1,24 @@
+{
+ "_note": "Media for /india-tours/orchha/ (guide, 'we arrange'). Visual Studio 23 Nov 2026. 4 NEW Pexels photos: Raja Mahal at sunset px-20000879 (= poster, the page's subject), Orchha Fort palace rooftop domes px-4177508, Chaturbhuj Temple seen from the fort px-20000875, a royal chhatri (cenotaph) at sunset px-36840029. No licensed Ram Raja temple photo found, so no Ram Raja caption (Chaturbhuj is a different temple). Route map from fact-pack lat/lon ('positions approximate', no km). No cost ladder (price on request).",
+ "hero": {
+  "kicker": "ORCHHA",
+  "scenes": [
+   {"img": "px-20000879.jpg", "kind": "land", "from": {"scale": 1.04, "x": 30, "y": 0}, "to": {"scale": 1.12, "x": -30, "y": 0}},
+   {"img": "px-4177508.jpg", "kind": "land", "from": {"scale": 1.10, "x": -30, "y": 0}, "to": {"scale": 1.03, "x": 30, "y": 0}},
+   {"img": "px-20000875.jpg", "kind": "land", "from": {"scale": 1.04, "x": 20, "y": 0}, "to": {"scale": 1.12, "x": -40, "y": 0}},
+   {"img": "px-36840029.jpg", "kind": "tilt", "from": {"y": 1000}, "to": {"y": 1450}}
+  ],
+  "steps": ["RAJA MAHAL", "ORCHHA FORT", "CHATURBHUJ TEMPLE", "ROYAL CHHATRIS"]
+ },
+ "route": {
+  "title": "VIA ORCHHA",
+  "sub": "A sample week by car · positions approximate",
+  "bounds": "auto",
+  "stops": [
+   {"name": "Agra", "sub": "Taj Mahal", "day": "Day 1", "lat": 27.1767, "lon": 78.0081},
+   {"name": "Orchha", "sub": "Bundela palaces", "day": "Day 3", "lat": 25.3519, "lon": 78.6420},
+   {"name": "Khajuraho", "sub": "Temples", "day": "Day 5", "lat": 24.8318, "lon": 79.9199},
+   {"name": "Varanasi", "sub": "The ghats", "day": "Day 7", "lat": 25.3176, "lon": 82.9739}
+  ]
+ }
+}
