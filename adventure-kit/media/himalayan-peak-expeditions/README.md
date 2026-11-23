@@ -1,0 +1,4 @@
+# himalayan-peak-expeditions media (Visual Studio, 23 Nov 2026 — website upgrade)
+
+reel-web.mp4 (1.08 MB) / reel-web.webm (979 KB) / reel-web-poster.webp — 15 s 9:16 (HyperFrames 0.8.85, himalayan-peak-expeditions-reel.html): Guided peak climbs from Himachal (Friendship Peak 5,289 m → Yunam 6,111 m) → Pick the right step up (First summit · 6,000er · technical) → Rest days before any summit (The guide decides the turnaround) → One quote, end to end (Guides · permits · hotel · transfers) → end card. Photos = the page's own WP peak heroes (Chau Chau Kang Nilda, Hanuman Tibba, Mulkila, Kanamo); captions never name the photo.
+Placed live 23 Nov 2026 on page 11846 as <section class="szm-sec szm-cv" id="reel"> just before the closing quote section: https://suzutravels.com/adventure/himalayan-peak-expeditions/#reel
