@@ -56,3 +56,7 @@ Same source and method as audit #1 (live hotel metasearch via MCP, 2 adults · 1
 
 Note: Rajasthan's real high season is Oct–Mar (our peak windows are hill-based); flagged for a Rajasthan-specific peak window in a later run.
 Next audit: Srinagar + Jaipur again (both still below target after the cap), small Mata towns (Chintpurni, Jwala Ji, Naina Devi), Char Dham towns, Manali luxury.
+
+# Rajasthan high-season window — 23 Nov 2026 (v2.8)
+Rajasthan city/heritage hotels peak in the cool months Oct–Mar (Diwali, Pushkar fair, Christmas–New Year, wedding season) and are off-season Apr–Sep (heat, monsoon). Audit #2 already showed Jaipur's public deluxe MAP at ₹6,910 on 18 Nov vs our ₹4,100 base. Change: `rates.json` hotel.peak.by_class.rajasthan = 1 Oct – 31 Mar (×1.25), replacing the hill windows for that class only (Mount Abu = hill class, Pushkar = pilgrim class keep the default windows). Effect: Rajasthan Royal 2 adults deluxe 10 Dec ₹46,000/adult (8 peak nights); 10 May ₹41,700/adult.
+Sources (season, neutral/industry): https://www.thomascook.in/india-tourism/best-time-to-visit-rajasthan · https://www.sotc.in/tourism/rajasthan-tourism/best-time-to-visit-rajasthan · https://www.skyscanner.co.in/news/best-time-to-visit-rajasthan

@@ -241,6 +241,19 @@ const { chromium, devices } = require('playwright');
         && qd === '2027-01-23' && /^Sat/.test(qs) && pressed.join() === '2027-01-23' && /गणतंत्र दिवस/.test(hi) && /छुट्टी/.test(hi) && !/[A-Za-z]{3,}/.test(hi)
         && bc.length === 3 && bd === bc[2];
     }
+    { // v2.8 Rajasthan Oct–Mar peak (rajasthan-royal: Dec → Rajasthan high-season note + higher price than May; shimla-manali Dec → no peak) EN + HI
+      const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const TT = Array.isArray(T) ? T : T.templates;
+      const rp = async (id, d, l) => { const tl = TT.find(x => x.id === id); const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return { price: await p3.textContent('#price .big'), warns: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => /Peak-season|पीक-सीज़न/.test(t)) }; };
+      const dec = await rp('rajasthan-royal', '2026-12-10', ''), may = await rp('rajasthan-royal', '2027-05-10', ''), hi = await rp('rajasthan-royal', '2026-12-10', 'hi'), sm = await rp('shimla-manali', '2026-12-10', '');
+      await p3.screenshot({ path: `${out}/${name}-4p-rj-peak-hi.png`, fullPage: true });
+      const n = t => +String(t).replace(/[^\d]/g, '');
+      r.rjpeak = { dec, may, hi, sm };
+      r.rjpeak.ok = dec.warns.length === 1 && /Rajasthan high season, October–March/.test(dec.warns[0]) && !may.warns.some(t => /Rajasthan/.test(t)) && n(dec.price) > n(may.price)
+        && hi.warns.length === 1 && /राजस्थान का हाई सीज़न/.test(hi.warns[0]) && !/[A-Za-z]{4,}/.test(hi.warns[0]) && sm.warns.length === 0;
+    }
     { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
       const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
       const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;
