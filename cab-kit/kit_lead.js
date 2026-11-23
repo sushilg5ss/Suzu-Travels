@@ -2,7 +2,10 @@
    On a WhatsApp / call-back / phone click inside the kit it sends ONE GA4 event szc_lead {src, kind, page} if the site's gtag is there.
    No name, phone, message text or anything typed is ever sent. Rules: ES5, no ampersand, no slash-slash comments, no '<'. Kept short on purpose (hub size budget).
    src: hero, calc, helper, fleet, viewer, compare, form, route-card, fares, faq, planner / chips / route-map / shared (how the planner result was started), else the section id.
-   kind: whatsapp, callback, call.  page: last path segment (cabs = hub). */
+   kind: whatsapp, callback, call.  page: last path segment (cabs = hub).
+   23 Nov 2026 (ENHANCEMENTS #30): the theme's floating WhatsApp button (a.sz-wa-floating-btn, outside .szc) gets a cab message
+   with page heading, slug and current fleet tier at run time (set on load and again on every tap, so a tier switch is always in it);
+   The site-wide ' [Ref: SRC-slug]' tag the theme appends is kept. Its taps count as src=float. No JS = the theme link stays as it was. */
 (function(){
 var d=document,L='planner',S={'szc-calc':'calc','szc-help':'helper','szc-fleet':'fleet','szc-qf':'form',routes:'route-card',more:'route-card',fares:'fares',faq:'faq','szc-pout':0,'szc-plan':0,live:0};
 if(location.search.indexOf('from=')>-1){L='shared';}
@@ -15,9 +18,27 @@ function W(a){
  m=a.closest('section[id]');
  return m?m.id:'page';
 }
+function F(){
+ var f=d.querySelector('a.sz-wa-floating-btn'),t='standard',n={prime:'Prime',standard:'Standard',saver:'Saver'},h,p,r,q;
+ if(f){
+  if(d.querySelector('.szc')){
+   try{t=localStorage.getItem('szcTier')||t;}catch(e){}
+   if(!n[t]){t='standard';}
+   h=d.querySelector('h1');h=h?h.textContent.replace(/\s+/g,' ').trim().slice(0,80):'';
+   p=location.pathname.split('/').filter(String).pop()||'cabs';
+   r=f.getAttribute('href')||'';
+   try{q=decodeURIComponent(r.split('text=')[1]||'');}catch(e){q='';}
+   q=q.indexOf(' [Ref:')>-1?q.slice(q.indexOf(' [Ref:')):'';
+   f.setAttribute('href',r.split('?')[0]+'?text='+encodeURIComponent('Hi Suzu Travels, I need a cab'+(h?' ('+h+')':'')+'. Fleet tier: '+n[t]+'. Date: ___ , people: ___ (page: '+p+', '+n[t]+')'+q));
+  }
+ }
+ return f;
+}
+F();
 d.addEventListener('click',function(e){
  var t=e.target,a,h,k;
  if(!t.closest){return;}
+ if(t.closest('a.sz-wa-floating-btn')){if(F()){G('float','whatsapp');}return;}
  if(t.closest('.szc-pchips button')){L='chips';return;}
  if(t.closest('[data-plan-route],.szc-route-card a[href="#planner"]')){L='route-map';return;}
  if(t.closest('#szc-plan [type=submit],#szc-padd')){L='planner';}
