@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-23-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.8 Rajasthan Oct\u2013Mar peak hotel window",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "ff0cc7bef2cab86b23d1fb61db382b956448d356afba51ffa1ee4f75010736a9",
+   "base_sha256": "d8e7329f807a35bf73b6cd977c4a745e640598fe4ebf51bd8d993e306ab91fca",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 411606
+  }
+ ]
+}
