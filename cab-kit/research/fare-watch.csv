@@ -91,3 +91,21 @@ date,route,source_domain,url,sedan,crysta,note
 2026-11-09,Chandigarh (Fortuner per km),rajputanacabs.in,https://rajputanacabs.in/chandigarh/cab-rates/,,,FORTUNER ₹23/km; outstation ₹5500-6000/day; no date (2025-07); engine hire ₹32/km
 2026-11-16,Chandigarh to Manali,rajputanacabs.in,https://rajputanacabs.in/chandigarh/manali-taxi/fare/,4400,10500,midpoints of ranges sedan 4000-4800 / Toyota Crysta 9999-11000; one-way inclusions not stated; page modified 17 Apr 2026; engine sedan 4199 (-5%) crysta 7199 (single source - no question)
 2026-11-16,FARE WATCH INCOMPLETE,-,-,,,17 of 18 competitor URLs (trivenicabs/cabbazar/easemytrip/quickride/makemytrip/oneway.cab; 6 routes) not fetched: fetch permission not approved in unattended run (3rd Monday) + 1 cabbazar client error; not fetched any other way
+2026-11-23,Delhi to Manali,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/delhi-to-manali,5940,9720,540 km @11/18 per km; fuel+driver incl; tolls/parking/state tax extra; updated 14 Sep 2026; engine 6899/11999
+2026-11-23,Delhi to Manali,rajputanacabs.in,https://rajputanacabs.in/delhi/manali-taxi/fare/,6999,12999,one side Dzire / Crysta; inclusions not stated; modified 2026-04-21
+2026-11-23,Delhi to Manali,cabbazar.com,https://cabbazar.com/route/delhi-to-manali.html,,,FETCH FAILED (4xx); search title 'from ₹4,999' (car not named) - not used
+2026-11-23,Chandigarh to Manali,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/chandigarh-to-manali,3410,5580,310 km; GST incl; tolls/parking/state entry extra; updated 14 Sep 2026; engine 4199/7199
+2026-11-23,Chandigarh to Manali,rajputanacabs.in,https://rajputanacabs.in/chandigarh/manali-taxi/fare/,4400,10500,midpoints sedan 4000-4800 / Crysta 9999-11000; modified 2026-04-17
+2026-11-23,Chandigarh to Manali,cabbazar.com,https://cabbazar.com/route/chandigarh-to-Manali,,,FETCH FAILED (4xx); search title 'from ₹2,900' - not used
+2026-11-23,Delhi to Chandigarh,easemytrip.com,https://www.easemytrip.com/cabs/chandigarh-to-delhi-cab-booking/,3952,9626,reverse direction; 3772+180 / 9175+451 taxes; 260/248 km incl; engine 3199/5599
+2026-11-23,Delhi to Chandigarh,uber.com,https://www.uber.com/in/en/blog/connecting-chandigarh-to-delhi/,3777,,reverse; Uber Sedan Intercity avg; XL (6 seats) 6280; Go 3052; updated Jun 2026
+2026-11-23,Delhi to Chandigarh,cabbazar.com,https://cabbazar.com/route/delhi-to-chandigarh.html,,,FETCH FAILED (4xx); yesterday's 4 CHD-DEL sources median sedan ~3350 -> combined median ~3500 (engine -8.6%)
+2026-11-23,Delhi to Dehradun,trivenicabs.in,https://www.trivenicabs.in/delhi-to-dehradun,3300,5400,300 km min billing; tolls extra; GST conflict; updated 14 Sep 2026; engine 3099/5399
+2026-11-23,Delhi to Dehradun,easemytrip.com,https://www.easemytrip.com/cabs/delhi-to-dehradun-cab-booking/,3951,12623,3771+180 / 12036+587 taxes; 6-seat SUV 4681+223
+2026-11-23,Delhi to Dehradun,uber.com,https://www.uber.com/in/en/r/intercity/delhi-new-delhi-to-dehradun-uttarakhand/,3129,,Uber Sedan Intercity avg; XL 4159; Go 2800; updated Jun 2026
+2026-11-23,Delhi to Haridwar,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/delhi-to-haridwar,3300,5400,300 km min billing; tolls extra; updated 14 Sep 2026; engine 2899/4899
+2026-11-23,Delhi to Haridwar,oneway.cab,https://oneway.cab/delhi/delhi-to-haridwar-taxi,,,only hatchback from 1499 shown; sedan/SUV behind widget
+2026-11-23,Delhi to Haridwar,cabbazar.com,https://cabbazar.com/route/delhi-to-haridwar.html,,,FETCH FAILED (4xx); only 1 sedan figure today -> no conclusion (26 Oct median 2893 = engine)
+2026-11-23,Chandigarh to Shimla,trivenicabs.in,https://www.trivenicabs.in/one-way-cab/chandigarh-to-shimla,3300,5400,115 km billed on 300 km min; tolls extra; updated 14 Sep 2026; engine 2499/4499
+2026-11-23,Chandigarh to Shimla,cabbazar.com,https://cabbazar.com/route/chandigarh-to-shimla,1499,,AC Sedan; Assured Innova 13.5/km only; toll/state tax incl vs FAQ contradiction; +5% GST
+2026-11-23,Chandigarh to Shimla,rajputanacabs.in,https://rajputanacabs.in/chandigarh/chandigarh-to-shimla-taxi/,2200,4000,one side Dzire / Crysta; page contradicts itself (chart 2000/5000); modified 2026-05-23
