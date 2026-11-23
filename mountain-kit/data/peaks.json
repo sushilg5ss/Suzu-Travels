@@ -1175,6 +1175,7 @@
   "ft": 23261,
   "m_alt": [
    7060,
+   7055,
    7042
   ],
   "band": "7000",
@@ -1183,19 +1184,22 @@
   "where": "Arunachal Pradesh (India–Tibet border)",
   "range": "Eastern (Assam) Himalaya",
   "area": "Bichom / East Kameng",
-  "fa": 2025,
-  "fa_by": "Indian Army Eastern Command team (18 members, southern route)",
+  "fa": 1988,
+  "fa_by": "Takafumi Miyazaki & Kosuke Takano, Doshisha University Alpine Club (Japan), 24 Mar 1988, NW ridge from the Tibet side; first ascent from the Indian side: Indian Army team, 26 Nov 2025 (southern route)",
   "status": "climbed",
-  "status_note": "First recorded ascent: an 18-member Indian Army team (4 Corps) reached the summit on 26 Nov 2025 (Arunachal Governor's press release, 8 Dec 2025). An ITBP/IMF team reached the approach in 2017. Border area near the McMahon Line.",
+  "status_note": "First climbed on 24 Mar 1988 by a Japanese team from the Tibet (north) side (Japanese Alpine News 2014; Himalayan Journal 71). First recorded ascent from the Indian side: an 18-member Indian Army team (4 Corps) by the southern route, summit 26 Nov 2025 (Arunachal Governor's press release, 8 Dec 2025). An ITBP/IMF team reached the Pachuk approach in 2017. Border area on the McMahon Line.",
   "grade": "technical",
   "grade_note": "Remote jungle-to-glacier approach, very few attempts",
   "season": "Oct–Nov",
   "base": "Bichom/Lada → Pachuk river",
   "foreigners": "restricted",
   "rank": 32,
-  "notable": "Highest point of Arunachal Pradesh; unclimbed until 2025.",
+  "notable": "Highest point of Arunachal Pradesh; first climbed from Tibet in 1988, and from the Indian side only in 2025.",
   "sources": [
    "https://en.wikipedia.org/wiki/Kangto",
+   "https://jac1.or.jp/english/images/vol15/JAPANESE%20ALPINE%20NEWS%20Vol15-84.pdf",
+   "https://www.himalayanclub.org/hj/71/14/eastern-rim-of-central-tibet-south-tibet-and-east-tibet/",
+   "https://www.himalayanclub.org/hj/67/8/the-riddle-of-kangto/",
    "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf",
    "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point"
   ]
@@ -1835,7 +1839,7 @@
   "fa": 1912,
   "fa_by": "Alexander Kellas with Sherpas",
   "status": "restricted",
-  "status_note": "Sikkim restrictions.",
+  "status_note": "Restricted border area (Sikkim). An Indian Army team (Spear Corps, 2 JAT) reached the summit in September 2026 (reported 17–18 Sep 2026).",
   "grade": "technical",
   "grade_note": "Glaciated border-area peak",
   "season": "Apr–May & Oct–Nov",
@@ -1845,7 +1849,9 @@
   "notable": "",
   "sources": [
    "https://en.wikipedia.org/wiki/Khangchengyao",
-   "https://publications.americanalpineclub.org/articles/12200640301/India-Himachal-Pradesh-Sikkim-Northern-Sikkim-Kangchengyao-6889m-Ascent-from-North"
+   "https://publications.americanalpineclub.org/articles/12200640301/India-Himachal-Pradesh-Sikkim-Northern-Sikkim-Kangchengyao-6889m-Ascent-from-North",
+   "https://news.ssbcrack.com/indian-armys-spear-corps-successfully-summits-mt-khangchengyao-at-6889-metres/",
+   "https://www.uniindia.com/east-india/2-jat-battalion-summits-khangchengyao/183384"
   ]
  },
  {
@@ -1854,7 +1860,10 @@
   "alt": [],
   "m": 6888,
   "ft": 22598,
-  "m_alt": [],
+  "m_alt": [
+   6891,
+   6887
+  ],
   "band": "6000",
   "state": "sikkim",
   "state_label": "Sikkim",
@@ -1862,18 +1871,21 @@
   "range": "Kangchenjunga Himal (eastern ridge)",
   "area": "North Sikkim (Zemu)",
   "fa": 1936,
-  "fa_by": "Karl Wien & Adolf Göttner (German)",
+  "fa_by": "Karl Wien & Adolf Göttner (German expedition led by Paul Bauer), 23 Sep 1936, west ridge from the Zemu glacier",
   "status": "restricted",
   "status_note": "Sikkim restrictions.",
   "grade": "technical",
   "grade_note": "Steep snow/ice pyramid",
   "season": "Apr–May & Oct–Nov",
-  "base": "Lachen → Zemu Glacier",
+  "base": "Lachen → Zemu glacier (1936 base camp ~4,600 m)",
   "foreigners": "restricted",
   "rank": null,
-  "notable": "Called by Douglas Freshfield 'the most beautiful snow mountain in the world'.",
+  "notable": "Douglas Freshfield's praise as perhaps the most beautiful snow peak in the world is quoted by Kenneth Mason and later writers. Second ascent 25 Sep 1937 (Schmaderer, Paidar, Grob); Indian ascents May 1979.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Siniolchu"
+   "https://en.wikipedia.org/wiki/Siniolchu",
+   "https://www.himalayanclub.org/hj/9/6/the-ascent-of-siniolchu-and-simvu-north-peak/",
+   "https://www.himalayanclub.org/hj/37/13/siniolchu/",
+   "https://www.himalayanclub.org/hj/53/5/the-ascent-of-siniolchu/"
   ]
  },
  {
@@ -2305,21 +2317,22 @@
   "state": "uttarakhand",
   "state_label": "Uttarakhand",
   "where": "Uttarakhand",
-  "range": "Garhwal Himalaya (Kamet group)",
+  "range": "Garhwal Himalaya",
   "area": "Chamoli",
   "fa": 1963,
-  "fa_by": "Sonam Gyatso, Lt Sisodia, Dawa Norbu & Sonam Wangyal (Indian)",
+  "fa_by": "Indian team (Sonam Gyatso, Lt Kaushal, H. C. Rawat, Thondup Tsering, Lakpa Tensing, D. S. Sisodia, Dawa Norbu & Sonam Wangyal), 6–7 Jun 1963",
   "status": "climbed",
   "status_note": "",
   "grade": "technical",
-  "grade_note": "Glaciated peak above Valley of Flowers",
+  "grade_note": "Glaciated peak; approaches from Ghangaria (Bhyundar valley) or Vishnuprayag",
   "season": "May–Jun & Sep–Oct",
   "base": "Govindghat → Ghangaria",
   "foreigners": "yes",
   "rank": null,
-  "notable": "'Elephant Peak'.",
+  "notable": "'Elephant Peak'; seen from Joshimath. Kakbhushundi Tal lies below it (crow-and-Garuda legend).",
   "sources": [
-   "https://en.wikipedia.org/wiki/Hathi_Parbat"
+   "https://en.wikipedia.org/wiki/Hathi_Parbat",
+   "https://publications.americanalpineclub.org/articles/12196547002"
   ]
  },
  {

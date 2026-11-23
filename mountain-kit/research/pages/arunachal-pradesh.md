@@ -1,4 +1,6 @@
 # Highest Peaks in Arunachal Pradesh: Kangto & More — fact pack
+
+> **CORRECTION 23 Nov 2026 (Research):** Kangto was first climbed on **24 Mar 1988** by a Japanese Doshisha University team from the Tibet side (NW ridge; Japanese Alpine News 2014 https://jac1.or.jp/english/images/vol15/JAPANESE%20ALPINE%20NEWS%20Vol15-84.pdf ; Himalayan Journal 71 https://www.himalayanclub.org/hj/71/14/eastern-rim-of-central-tibet-south-tibet-and-east-tibet/). The Indian Army climb of 26 Nov 2025 is the **first ascent from the Indian side** (the Army's 'first recorded ascent' claim). Do not say Kangto was unclimbed until 2025. See research/pages/kangto.md.
 slug: arunachal-pradesh · kind: state · path: /mountains-of-india/arunachal-pradesh/ · state: arunachal-pradesh (table where state=arunachal-pradesh)
 researched: 2026-10-28 · status: researched · Sell? **no** (Arunachal — information only; every dataset peak is "restricted" for foreigners and the big ones are army/institute climbs. CTA: "Want a 6,000 m summit you can actually book? Himachal" → Yunam 6,111 / Deo Tibba 6,001 / Friendship Peak).
 

@@ -115,11 +115,22 @@
   ]
  },
  "Kangto": {
-  "status_note": "First recorded ascent: an 18-member Indian Army team (4 Corps) reached the summit on 26 Nov 2025 (Arunachal Governor's press release, 8 Dec 2025). An ITBP/IMF team reached the approach in 2017. Border area near the McMahon Line.",
+  "status_note": "First climbed on 24 Mar 1988 by a Japanese team from the Tibet (north) side (Japanese Alpine News 2014; Himalayan Journal 71). First recorded ascent from the Indian side: an 18-member Indian Army team (4 Corps) by the southern route, summit 26 Nov 2025 (Arunachal Governor's press release, 8 Dec 2025). An ITBP/IMF team reached the Pachuk approach in 2017. Border area on the McMahon Line.",
   "sources": [
    "https://en.wikipedia.org/wiki/Kangto",
+   "https://jac1.or.jp/english/images/vol15/JAPANESE%20ALPINE%20NEWS%20Vol15-84.pdf",
+   "https://www.himalayanclub.org/hj/71/14/eastern-rim-of-central-tibet-south-tibet-and-east-tibet/",
+   "https://www.himalayanclub.org/hj/67/8/the-riddle-of-kangto/",
    "https://arunachalgovernor.gov.in/pr/2025/251208%20Governor%20congratulates%20Mount%20Kangto%20Expedition%20Team%20LB.pdf",
    "https://en.wikipedia.org/wiki/List_of_Indian_states_and_territories_by_highest_point"
+  ],
+  "first_ascent_year": 1988,
+  "first_ascent_by": "Takafumi Miyazaki & Kosuke Takano, Doshisha University Alpine Club (Japan), 24 Mar 1988, NW ridge from the Tibet side; first ascent from the Indian side: Indian Army team, 26 Nov 2025 (southern route)",
+  "notable": "Highest point of Arunachal Pradesh; first climbed from Tibet in 1988, and from the Indian side only in 2025.",
+  "height_alternates_m": [
+   7060,
+   7055,
+   7042
   ]
  },
  "Nanda Devi": {
@@ -534,5 +545,39 @@
  "Hardeol": {
   "first_ascent_by": "Indo-Tibetan Border Police team led by S.P. Mulasi, 31 May 1978 (six summiters, via the Ikualari glacier and the Tirsuli ridge)",
   "notable": "'Temple of God'; highest peak on the northern rim of the Nanda Devi Sanctuary. Only one further ascent recorded (Border Security Force, 24 Sep 1991)."
+ },
+ "Siniolchu": {
+  "first_ascent_by": "Karl Wien & Adolf Göttner (German expedition led by Paul Bauer), 23 Sep 1936, west ridge from the Zemu glacier",
+  "height_alternates_m": [
+   6891,
+   6887
+  ],
+  "base": "Lachen → Zemu glacier (1936 base camp ~4,600 m)",
+  "notable": "Douglas Freshfield's praise as perhaps the most beautiful snow peak in the world is quoted by Kenneth Mason and later writers. Second ascent 25 Sep 1937 (Schmaderer, Paidar, Grob); Indian ascents May 1979.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Siniolchu",
+   "https://www.himalayanclub.org/hj/9/6/the-ascent-of-siniolchu-and-simvu-north-peak/",
+   "https://www.himalayanclub.org/hj/37/13/siniolchu/",
+   "https://www.himalayanclub.org/hj/53/5/the-ascent-of-siniolchu/"
+  ]
+ },
+ "Hathi Parbat": {
+  "first_ascent_by": "Indian team (Sonam Gyatso, Lt Kaushal, H. C. Rawat, Thondup Tsering, Lakpa Tensing, D. S. Sisodia, Dawa Norbu & Sonam Wangyal), 6–7 Jun 1963",
+  "range": "Garhwal Himalaya",
+  "difficulty_note": "Glaciated peak; approaches from Ghangaria (Bhyundar valley) or Vishnuprayag",
+  "notable": "'Elephant Peak'; seen from Joshimath. Kakbhushundi Tal lies below it (crow-and-Garuda legend).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hathi_Parbat",
+   "https://publications.americanalpineclub.org/articles/12196547002"
+  ]
+ },
+ "Kangchenjau": {
+  "status_note": "Restricted border area (Sikkim). An Indian Army team (Spear Corps, 2 JAT) reached the summit in September 2026 (reported 17–18 Sep 2026).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Khangchengyao",
+   "https://publications.americanalpineclub.org/articles/12200640301/India-Himachal-Pradesh-Sikkim-Northern-Sikkim-Kangchengyao-6889m-Ascent-from-North",
+   "https://news.ssbcrack.com/indian-armys-spear-corps-successfully-summits-mt-khangchengyao-at-6889-metres/",
+   "https://www.uniindia.com/east-india/2-jat-battalion-summits-khangchengyao/183384"
+  ]
  }
 }

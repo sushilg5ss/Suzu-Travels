@@ -1,0 +1,110 @@
+{
+ "date": "2026-11-23",
+ "customer": "1172710099",
+ "lang": "en",
+ "note": "Pipeboard get_google_ads_keyword_ideas; avg monthly (banded); ww / IN / intl-6 (US GB AU DE FR IL)",
+ "kangto peak": [
+  1600,
+  1600,
+  10,
+  "Oct 2026 4,400"
+ ],
+ "kangto": [
+  1900,
+  590,
+  70
+ ],
+ "mount kangto": [
+  480,
+  480,
+  10
+ ],
+ "siniolchu": [
+  1300,
+  720,
+  210
+ ],
+ "mount siniolchu": [
+  390,
+  390,
+  10
+ ],
+ "mt siniolchu": [
+  390,
+  390,
+  10
+ ],
+ "siniolchu peak": [
+  50,
+  40,
+  10
+ ],
+ "hotel siniolchu": [
+  880,
+  880,
+  10,
+  "not ours"
+ ],
+ "hathi parvat": [
+  1300,
+  1000,
+  90
+ ],
+ "hathi parbat": [
+  70,
+  70,
+  10
+ ],
+ "hathi ghoda peak": [
+  null,
+  90,
+  null
+ ],
+ "gorichen peak": [
+  1000,
+  880,
+  10
+ ],
+ "gorichen": [
+  210,
+  null,
+  null
+ ],
+ "pauhunri": [
+  590,
+  null,
+  null
+ ],
+ "nanda ghunti": [
+  480,
+  null,
+  null
+ ],
+ "nanda ghunti expedition": [
+  20,
+  null,
+  null
+ ],
+ "tirsuli": [
+  40500,
+  null,
+  null,
+  "Aug 2026 301,000 spike; baseline 5,400-6,600"
+ ],
+ "patalsu peak": [
+  1300,
+  1300,
+  null,
+  "Oct 2,400; Adventure squad owns /adventure/patalsu-peak-trek/"
+ ],
+ "patalsu peak trekking": [
+  2400,
+  2400,
+  null
+ ],
+ "patalsu trek": [
+  210,
+  210,
+  null
+ ]
+}

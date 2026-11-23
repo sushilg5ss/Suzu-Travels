@@ -1,4 +1,6 @@
 # 7000m Peaks in India: Complete List & Climbing Status — fact pack
+
+> **CORRECTION 23 Nov 2026 (Research):** Kangto was first climbed on **24 Mar 1988** by a Japanese Doshisha University team from the Tibet side (NW ridge; Japanese Alpine News 2014 https://jac1.or.jp/english/images/vol15/JAPANESE%20ALPINE%20NEWS%20Vol15-84.pdf ; Himalayan Journal 71 https://www.himalayanclub.org/hj/71/14/eastern-rim-of-central-tibet-south-tibet-and-east-tibet/). The Indian Army climb of 26 Nov 2025 is the **first ascent from the Indian side** (the Army's 'first recorded ascent' claim). Do not say Kangto was unclimbed until 2025. See research/pages/kangto.md.
 slug: 7000m-peaks · kind: band · path: /mountains-of-india/7000m-peaks/ · peak_id: - (table band=7000)
 researched: 2026-10-12 · status: researched
 
