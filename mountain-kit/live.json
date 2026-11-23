@@ -522,5 +522,15 @@
    "meru-north"
   ],
   "commercial": false
+ },
+ "shilla": {
+  "id": 25005,
+  "path": "/mountains-of-india/shilla/",
+  "kind": "peak",
+  "label": "Shilla",
+  "blurb": "6,132 m · Spiti's 'lost 7,000er', above Langza",
+  "added": "2026-11-23",
+  "peak_id": "shilla",
+  "commercial": true
  }
 }
