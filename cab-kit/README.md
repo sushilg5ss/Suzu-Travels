@@ -97,3 +97,6 @@ City pages add a local-rates table and outstation table; vehicle pages add per-k
 - WP Rocket "Delay JS" is on: kit.js (calculator, route finder, quote form) runs after the first user interaction — expected. `moment is not defined` / `setSettings` / `feather is not defined` console errors are PRE-EXISTING site-wide (seen on /contact/ too), not from the kit.
 - Rank Math titles/descriptions/focus keywords set on all 13 (see `out/meta.json`). Old hub SEO: title "Himachal Cab Booking | Delhi & Chandigarh Taxi | Suzu Travels", focus "cab booking himachal"; old hub title "Cab Booking".
 - Old rendered hub saved in `backup/cabs-old-rendered-2026-09-30.html`.
+
+## Measuring speed (since 24 Nov 2026)
+`bash cab-kit/measure.sh [-n 3] URL…` — Lighthouse 12.6.1 mobile, 3 runs per URL, prints the MEDIAN score/FCP/LCP/TBT/CLS. Single runs swing ±8 points on the same URL; the "never drop mobile score by > 3 points" rule is judged on the median (before vs after), not on one run. Use it when the PSI API returns 429.
