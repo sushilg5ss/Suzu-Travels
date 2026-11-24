@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-24n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "Snow tile forecast line (night lows / snow forecast, lazy MET Norway feed) + 10 Explore links to 23-24 Nov pages",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "ae7940bcf46043be56e42e39b481dfee9571f8891c8b84f4fefe189e2842426e",
+   "base_sha256": "d8560d45fd66b8558284984c793182ed9075a449f39239621d2666ff4114362a",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1071727
+  }
+ ]
+}
