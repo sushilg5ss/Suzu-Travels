@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-24-planner",
+ "agent": "Trip Planner",
+ "summary": "v2.9 Gulmarg mid-Dec\u2013mid-Mar ski-season hotel peak",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "source": "plan-your-trip__index.html",
+   "sha256": "d927d5bc0c686cc504b1adcb5842dc8be71122779a820a9aaf8c997012d0559d",
+   "base_sha256": "ff0cc7bef2cab86b23d1fb61db382b956448d356afba51ffa1ee4f75010736a9",
+   "backup": "plan-your-trip/index-previous.html",
+   "url": "https://suzutravels.com/plan-your-trip/",
+   "bytes": 412938
+  }
+ ]
+}
