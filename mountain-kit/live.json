@@ -532,5 +532,15 @@
   "added": "2026-11-23",
   "peak_id": "shilla",
   "commercial": true
+ },
+ "kedar-dome": {
+  "id": 25206,
+  "path": "/mountains-of-india/kedar-dome/",
+  "kind": "peak",
+  "label": "Kedar Dome",
+  "blurb": "6,831 m · the big snow dome above Tapovan, Gangotri",
+  "added": "2026-11-24",
+  "peak_id": "kedar-dome",
+  "commercial": false
  }
 }
