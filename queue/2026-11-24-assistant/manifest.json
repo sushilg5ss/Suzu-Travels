@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-24-assistant",
+ "agent": "Suzu Assistant",
+ "summary": "Suzu v1.9: 3 new cab pages (Pathankot, Mussoorie, Chandigarh-Delhi), visible month carry-over, named place beats month",
+ "files": [
+  {
+   "target": "suzu-assistant.js",
+   "source": "suzu-assistant.js",
+   "sha256": "4711788c5ba4a0858fad96d2453c51dbae3347ca8dea7a6e193541b3ac2c5998",
+   "base_sha256": "7577ad83fe5d4920d3b6bc90c2da29ef6e3ecf98bf3c0af72b0996cadf1bf664",
+   "backup": "suzu-assistant-previous.js",
+   "url": "https://suzutravels.com/suzu-assistant.js",
+   "bytes": 85656
+  },
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "d8560d45fd66b8558284984c793182ed9075a449f39239621d2666ff4114362a",
+   "base_sha256": "91b6c64d7381cd414e0abc2b23ec6cd281a22bb97d9a8f256b667154acec002e",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1067708
+  }
+ ]
+}
