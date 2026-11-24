@@ -1,5 +1,5 @@
 {
-  "version": "0.5 — 23 Nov 2026 (Rajasthan Oct–Mar peak window; audit #2 + kashmir_resort class)",
+  "version": "0.6 — 24 Nov 2026 (Gulmarg mid-Dec–mid-Mar ski-season peak; Rajasthan Oct–Mar peak window; audit #2 + kashmir_resort class)",
   "note": "Estimator rates. Deliberately on the higher side of the 2026 market so the team can confirm at or below the estimate. Cab per-km rates and driver allowance are the same as the live /cabs/ fare engine (cab-kit/cabs_data.py). Hotel rates: per room per night incl. breakfast + dinner (MAP), double occupancy, off-peak. Sources: research/rates-sources.md.",
   "cab": {
     "min_km_per_day": 250,
@@ -38,7 +38,7 @@
     ],
     "extra_adult_f": 0.35,
     "child_bed_f": 0.25,
-    "peak": {"f": 1.25, "windows": [["03-15", "06-30"], ["10-01", "10-31"], ["12-20", "01-05"]], "by_class": {"rajasthan": [["10-01", "03-31"]]}, "by_class_note": "Rajasthan city/heritage hotels: high season Oct–Mar (cool months), Apr–Sep off-season; replaces the hill windows for that class (v2.8, 23 Nov 2026)."}
+    "peak": {"f": 1.25, "windows": [["03-15", "06-30"], ["10-01", "10-31"], ["12-20", "01-05"]], "by_class": {"rajasthan": [["10-01", "03-31"]]}, "add_by_place": {"gulmarg": [["12-15", "03-14"]]}, "add_by_place_note": "Gulmarg snow & ski season mid-Dec–mid-Mar = costliest nights of the Gulmarg year: peak ×1.25 added on top of the default windows (Pahalgam/Sonamarg winter stays off-peak). Sources: research/rates-sources.md (v2.9, 24 Nov 2026).", "by_class_note": "Rajasthan city/heritage hotels: high season Oct–Mar (cool months), Apr–Sep off-season; replaces the hill windows for that class (v2.8, 23 Nov 2026)."}
   },
   "service": {"handling_f": 0.10, "gst_f": 0.05, "range_high_f": 1.12},
   "b2b": {"default_markup_pct": 15}

@@ -254,6 +254,19 @@ const { chromium, devices } = require('playwright');
       r.rjpeak.ok = dec.warns.length === 1 && /Rajasthan high season, October–March/.test(dec.warns[0]) && !may.warns.some(t => /Rajasthan/.test(t)) && n(dec.price) > n(may.price)
         && hi.warns.length === 1 && /राजस्थान का हाई सीज़न/.test(hi.warns[0]) && !/[A-Za-z]{4,}/.test(hi.warns[0]) && sm.warns.length === 0;
     }
+    { // v2.9 Gulmarg ski-season peak (kashmir-classic: 15 Jan → Gulmarg note, higher than 15 Nov; HI clean)
+      const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const TT = Array.isArray(T) ? T : T.templates;
+      const rp = async (id, d, l) => { const tl = TT.find(x => x.id === id); const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;
+        await p3.evaluate(() => { try { localStorage.removeItem('suzuTpLang'); } catch (e) {} });
+        await p3.goto('about:blank'); await p3.goto(base + '#t=' + v1(st), { waitUntil: 'load' }); await p3.waitForTimeout(1000);
+        return { price: await p3.textContent('#price .big'), warns: (await p3.$$eval('.warn', x => x.map(y => y.textContent))).filter(t => /Peak-season|पीक-सीज़न/.test(t)) }; };
+      const jan = await rp('kashmir-classic', '2027-01-15', ''), nov = await rp('kashmir-classic', '2027-11-15', ''), hi = await rp('kashmir-classic', '2027-01-15', 'hi'), xm = await rp('kashmir-classic', '2026-12-28', '');
+      await p3.screenshot({ path: `${out}/${name}-4p-gm-peak-hi.png`, fullPage: true });
+      const n = t => +String(t).replace(/[^\d]/g, '');
+      r.gmpeak = { jan, nov, hi, xm };
+      r.gmpeak.ok = jan.warns.length === 1 && /\(Gulmarg snow & ski season, mid-December–mid-March\)/.test(jan.warns[0]) && nov.warns.length === 0 && n(jan.price) > n(nov.price)
+        && hi.warns.length === 1 && /गुलमर्ग का बर्फ़/.test(hi.warns[0]) && !/[A-Za-z]{4,}/.test(hi.warns[0]) && xm.warns.length === 1 && /mid-Mar–Jun/.test(xm.warns[0]);
+    }
     { // v2.3 short winter daylight (Auli → Rishikesh in Dec ends after sunset; not in June) EN + HI
       const T = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '../data/templates.json'), 'utf8')); const tl = (Array.isArray(T) ? T : T.templates).find(x => x.id === 'auli-chopta');
       const dk = async (d, l) => { const st = { v: 1, s: tl.start, e: tl.end, d: d, a: 2, c: 0, i: 0, r: 1, t: 'deluxe', m: 'MAP', k: 'auto', p: tl.stops, x: [], tp: tl.id }; if (l) st.l = l;

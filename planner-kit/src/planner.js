@@ -160,10 +160,22 @@
   function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
 
   /* ---------------- engine ---------------- */
-  function peakWin(cls) { var b = R.hotel.peak.by_class; return (cls && b && b[cls]) || R.hotel.peak.windows; }
-  function isPeak(d, cls) {
-    var md = pad(d.getMonth() + 1) + '-' + pad(d.getDate());
-    return peakWin(cls).some(function (w) { return w[0] <= w[1] ? (md >= w[0] && md <= w[1]) : (md >= w[0] || md <= w[1]); });
+  function inWin(md, ws) { return (ws || []).some(function (w) { return w[0] <= w[1] ? (md >= w[0] && md <= w[1]) : (md >= w[0] || md <= w[1]); }); }
+  /* '' | 'def' (hill windows) | 'rj' (class window replaces default) | place id (extra place window, e.g. Gulmarg ski season) */
+  function peakKind(d, cls, id) {
+    var P = R.hotel.peak, md = pad(d.getMonth() + 1) + '-' + pad(d.getDate()), b = P.by_class, x = P.add_by_place;
+    if (cls && b && b[cls]) return inWin(md, b[cls]) ? 'rj' : '';
+    if (inWin(md, P.windows)) return 'def';
+    if (id && x && x[id] && inWin(md, x[id])) return id;
+    return '';
+  }
+  function isPeak(d, cls, id) { return !!peakKind(d, cls, id); }
+  function peakLabel(k) {
+    var ks = Object.keys(k), one = ks.length === 1, parts = [];
+    if (k.def) parts.push('mid-Mar–Jun, October, Christmas–New Year');
+    if (k.rj) parts.push(one ? 'Rajasthan high season, October–March' : 'Rajasthan October–March');
+    if (k.gulmarg) parts.push(one ? 'Gulmarg snow & ski season, mid-December–mid-March' : 'Gulmarg mid-December–mid-March');
+    return parts.join('; ');
   }
   function tier(id) { return R.hotel.tiers.filter(function (t) { return t.id === id; })[0] || R.hotel.tiers[1]; }
   function veh(id) { return R.cab.vehicles.filter(function (v) { return v.id === id; })[0]; }
@@ -432,11 +444,11 @@
     if (uf > 1) out.warn.push({ r: 0, k: 'union', t: R.cab.local_union_note });
 
     /* ---- hotels ---- */
-    var rc = roomsCalc(), tr = tier(S.t), hotel = 0, peakN = 0, peakRj = 0, rows = {};
+    var rc = roomsCalc(), tr = tier(S.t), hotel = 0, peakN = 0, pkK = {}, rows = {};
     nights.forEach(function (nt) {
       var p = PL[nt.id], base = R.hotel.classes[p.cls].deluxe, f = tr.f;
       if (p.cls === 'remote' && f > 1.8) f = 1.8;
-      var pk = isPeak(nt.date, p.cls); if (pk) { peakN++; if (R.hotel.peak.by_class && R.hotel.peak.by_class[p.cls]) peakRj++; }
+      var pkk = peakKind(nt.date, p.cls, nt.id), pk = !!pkk; if (pk) { peakN++; pkK[pkk] = 1; }
       var rate = base * f * (S.m === 'CP' ? 0.88 : 1) * (pk ? R.hotel.peak.f : 1);
       var cost = rate * rc.rooms + rate * R.hotel.extra_adult_f * rc.extra + rate * R.hotel.child_bed_f * S.c;
       hotel += cost;
@@ -445,7 +457,7 @@
       rows[key].n++; rows[key].cost += cost;
     });
     out.hotel = { cost: hotel, rooms: rc, peakN: peakN, rows: Object.keys(rows).map(function (k) { return rows[k]; }), nights: nNights, tier: tr };
-    if (peakN) out.warn.push({ r: 0, k: 'peak', t: 'Peak-season hotel rates applied for ' + peakN + ' night' + (peakN > 1 ? 's' : '') + ' (' + (peakRj === peakN ? 'Rajasthan high season, October–March' : peakRj ? 'mid-Mar–Jun, October, Christmas–New Year; Rajasthan October–March' : 'mid-Mar–Jun, October, Christmas–New Year') + ').' });
+    if (peakN) out.warn.push({ r: 0, k: 'peak', t: 'Peak-season hotel rates applied for ' + peakN + ' night' + (peakN > 1 ? 's' : '') + ' (' + peakLabel(pkK) + ').' });
 
     var sub = out.cab.cost + hotel, handling = sub * R.service.handling_f, gst = (sub + handling) * R.service.gst_f;
     var total = r100(sub + handling + gst), high = r100(total * R.service.range_high_f);
@@ -1130,7 +1142,7 @@
     $('#h-go').addEventListener('click', function () {
       var p = PL[$('#h-place').value], n = +$('#h-n').value, rooms = +$('#h-rooms').value, t = tier($('#h-tier').value), d0 = parseD($('#h-in').value) || today;
       var tot = 0, pk = 0;
-      for (var i = 0; i < n; i++) { var dd = addD(d0, i), f = t.f; if (p.cls === 'remote' && f > 1.8) f = 1.8; var peak = isPeak(dd, p.cls); if (peak) pk++; tot += R.hotel.classes[p.cls].deluxe * f * (peak ? R.hotel.peak.f : 1) * rooms; }
+      for (var i = 0; i < n; i++) { var dd = addD(d0, i), f = t.f; if (p.cls === 'remote' && f > 1.8) f = 1.8; var peak = isPeak(dd, p.cls, p.id); if (peak) pk++; tot += R.hotel.classes[p.cls].deluxe * f * (peak ? R.hotel.peak.f : 1) * rooms; }
       tot = r100(tot * 1.12);
       var res = $('#h-res'); res.hidden = false;
       res.innerHTML = '<div><div class="v">' + inr(tot) + ' <small>' + n + ' night' + (n > 1 ? 's' : '') + ' · ' + rooms + ' room' + (rooms > 1 ? 's' : '') + '</small></div><p>' + esc(t.name) + ' in ' + esc(p.name) + ', breakfast + dinner, taxes (estimate)' + (pk ? ' · peak-season rate' : '') + '. About ' + inr(r100(tot / n / rooms)) + ' per room-night. We send 2–3 hotel options with photos.</p></div>' +
