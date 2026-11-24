@@ -43,5 +43,6 @@
  "shirdi-sai-baba": {"id": 23773, "path": "/pilgrimage-tours/shirdi-sai-baba/", "kind": "temple", "label": "Shirdi Sai Baba, Maharashtra", "blurb": "Sai Baba's Samadhi Mandir, Dwarkamai and the dhuni that still burns", "added": "2026-11-19"},
  "banke-bihari": {"id": 24211, "path": "/pilgrimage-tours/banke-bihari/", "kind": "temple", "label": "Banke Bihari, Vrindavan", "blurb": "Swami Haridas's Kunj Bihari, behind the curtain in Vrindavan's lanes", "added": "2026-11-20"},
  "dwarkadhish": {"id": 24632, "path": "/pilgrimage-tours/dwarkadhish/", "kind": "temple", "label": "Dwarkadhish, Dwarka", "blurb": "Krishna as king, on the Gomti and the western sea", "added": "2026-11-22"},
- "meenakshi-temple": {"id": 25043, "path": "/pilgrimage-tours/meenakshi-temple/", "kind": "temple", "label": "Meenakshi Temple, Madurai", "blurb": "The warrior queen and Shiva's wedding city", "added": "2026-11-23"}
+ "meenakshi-temple": {"id": 25043, "path": "/pilgrimage-tours/meenakshi-temple/", "kind": "temple", "label": "Meenakshi Temple, Madurai", "blurb": "The warrior queen and Shiva's wedding city", "added": "2026-11-23"},
+ "shani-shingnapur": {"id": 25242, "path": "/pilgrimage-tours/shani-shingnapur/", "kind": "temple", "label": "Shani Shingnapur, Maharashtra", "blurb": "Shani Dev's open-sky stone and the village without doors", "added": "2026-11-24"}
 }
