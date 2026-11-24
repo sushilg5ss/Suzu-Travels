@@ -961,5 +961,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "mussoorie-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@40c2f1125608bef55c027e5ee7b5d566a0d2178c/cab-kit/media/mussoorie-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@40c2f1125608bef55c027e5ee7b5d566a0d2178c/cab-kit/media/mussoorie-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@40c2f1125608bef55c027e5ee7b5d566a0d2178c/cab-kit/media/mussoorie-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
