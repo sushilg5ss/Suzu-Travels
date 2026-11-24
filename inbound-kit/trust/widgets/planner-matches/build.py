@@ -17,10 +17,12 @@ M = {
  'Amritsar': ['Amritsar', [g('amritsar-golden-temple-tour'), g('india-2-week-itinerary')]],
  'Ladakh':   ['Ladakh|Leh', [g('ladakh-trip-guide'), g('spiti-valley-trip-guide')]],
  'Kerala':   ['Kerala', [g('kerala-tour'), g('south-india-tour'), g('ayurveda-retreat-kerala')]],
- 'Goa':      ['Goa', [g('goa-holiday'), g('south-india-tour')]],
+ 'Goa':      ['Goa', [g('goa-holiday'), g('south-india-tour'), g('hampi')]],
+ 'South':    ['South India|Tamil Nadu|Hampi|Karnataka', [g('south-india-tour'), g('hampi'), g('kerala-tour')]],
  'Not':      ['', [g('first-time-india-travel-guide'), g('best-time-to-visit-india'), g('india-trip-cost')]],
 }
 # Map refreshed 2026-11-21 (TRUST_BACKLOG row 39): each region now points first to its own dedicated live page.
+# 2026-11-24 (row 41): 'South' chip (South India: Tamil Nadu · Hampi) + Hampi added to Goa.
 # Only the first 3 guides per region are ever shown (JS loop q<3); max 4 links total across chips.
 css = ("<style>.szj{margin:0 0 12px;padding:10px 12px;border-radius:14px;background:#F4EEDD;border:1px solid #E6DCC0;font-family:'Plus Jakarta Sans',system-ui,sans-serif}"
 "#szpForm .szj b.t{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A6A12;margin:0 0 6px}"

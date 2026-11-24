@@ -1,0 +1,14 @@
+[
+ {
+  "id": 11411,
+  "find": "value=\"Goa\">Goa</label>",
+  "replace": "value=\"Goa\">Goa</label><label><input type=\"checkbox\" name=\"r\" value=\"South India (Tamil Nadu · Hampi)\">South India (Tamil Nadu · Hampi)</label>",
+  "expected_count": 1
+ },
+ {
+  "id": 11411,
+  "find": "\"Goa\": [\"Goa\", [[\"/india-tours/goa-holiday/\", \"Goa holiday guide\"], [\"/india-tours/south-india-tour/\", \"South India tour — 12 days\"]]], ",
+  "replace": "\"Goa\": [\"Goa\", [[\"/india-tours/goa-holiday/\", \"Goa holiday guide\"], [\"/india-tours/south-india-tour/\", \"South India tour — 12 days\"], [\"/india-tours/hampi/\", \"Hampi\"]]], \"South\": [\"South India|Tamil Nadu|Hampi|Karnataka\", [[\"/india-tours/south-india-tour/\", \"South India tour — 12 days\"], [\"/india-tours/hampi/\", \"Hampi\"], [\"/india-tours/kerala-tour/\", \"Kerala tour — 8 days\"]]], ",
+  "expected_count": 1
+ }
+]

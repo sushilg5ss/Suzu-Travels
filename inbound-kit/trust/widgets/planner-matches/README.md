@@ -14,3 +14,5 @@ Note: on the cached plain URL WP Rocket "Delay JS" runs it after first scroll/ta
 **21 Nov 2026 (row 39):** map refreshed — each region chip now lists its own dedicated live page first (varanasi-trip-guide, ladakh-trip-guide, amritsar-golden-temple-tour, himachal-10-day-itinerary, kashmir-7-day-itinerary, golden-triangle-itinerary-7-days, south-india-tour …). Publish with `ops-row39-2026-11-21.json` (one replace of the JS map; dry_run, expected_count 1). Revert = the same op reversed. Note: the JS shows max 3 guides per region (loop q<3), max 4 links in total.
 
 **Live 22 Nov 2026:** row 39 map published on 11411 (dry_run 1, replaced 1). Live check 1440 + 390 (?v= + plain): Varanasi/Ladakh/Amritsar/Kerala chips list their own guides; screenshot live-row39-390.png.
+
+**Live 24 Nov 2026 (row 41):** new chip 'South India (Tamil Nadu · Hampi)' (source hub-v2/build.py PLACES) + map key 'South' → South India tour 12 d, Hampi, Kerala tour 8 d; Goa now also lists Hampi. No hub package card matches South → honest 'we plan it from scratch' line. Ops: ops-row41-2026-11-24.json (revert = ops reversed). Screenshot live-row41-390.png.
