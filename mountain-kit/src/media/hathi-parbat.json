@@ -1,0 +1,20 @@
+{
+ "hero": {
+  "kicker": "HATHI PARVAT · GARHWAL",
+  "size": 130,
+  "words": [["6,727 m", "ELEPHANT."], ["SEEN FROM", "JOSHIMATH."], ["CLIMBED", "JUNE 1963."], ["CROW AND", "GARUDA."]],
+  "scenes": [
+   {"img": "px-15148510.jpg", "kind": "land", "h": 1408, "t": [0, 3.8], "from": {"scale": 1.02}, "to": {"scale": 1.1, "x": -40}},
+   {"img": "px-92081.jpg", "kind": "land", "h": 1408, "t": [3.2, 7.0], "from": {"scale": 1.08, "x": -120}, "to": {"scale": 1.12, "x": -170}},
+   {"img": "px-28409954.jpg", "kind": "land", "h": 1399, "t": [6.4, 10.2], "from": {"scale": 1.04, "y": -150}, "to": {"scale": 1.1, "y": -190, "x": -30}},
+   {"img": "px-20809686.jpg", "kind": "tilt", "h": 2560, "t": [9.6, 13.0], "from": {"y": 820}, "to": {"y": 940, "scale": 1.05}}
+  ]
+ },
+ "ladder": {
+  "kicker": "HATHI PARVAT IN CONTEXT",
+  "title": "Peaks around Joshimath",
+  "peaks": ["nilkantha", "hathi-parbat", "dunagiri", "kamet"],
+  "subs": {"nilkantha": "~29 km away", "hathi-parbat": "First climbed 1963", "dunagiri": "~21 km away", "kamet": "~30 km away"},
+  "end": "Distances: straight line from Hathi Parvat"
+ }
+}
