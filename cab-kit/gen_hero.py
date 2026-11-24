@@ -202,6 +202,7 @@ VARIANTS = {
   "delhi-to-haldwani-taxi": dict(routes=[("Delhi","Haldwani")], kicker="KATHGODAM · GATEWAY TO KUMAON"),
   "shimla-to-manali-taxi": dict(routes=[("Shimla","Manali")], kicker="MANDI · KULLU VALLEY · BEAS"),
   "dehradun-to-mussoorie-taxi": dict(routes=[("Dehradun","Mussoorie")], kicker="QUEEN OF HILLS · 35 KM CLIMB"),
+  "mussoorie-taxi-service": dict(routes=[("Mussoorie","Dehradun")], kicker="KEMPTY · DHANAULTI · LANDOUR"),
   "tempo-traveller-chandigarh": dict(routes=[("Chandigarh","Manali")], kicker="12–17 SEATS · TRICITY PICKUP"),
   "kalka-to-shimla-taxi": dict(routes=[("Kalka","Shimla")], kicker="STATION PICKUP · NH5 HILLS"),
   "char-dham-yatra-taxi": dict(routes=[("Haridwar","Char Dham")], kicker="YAMUNOTRI · GANGOTRI · KEDARNATH · BADRINATH"),
