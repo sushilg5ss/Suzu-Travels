@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-25n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "One shared weather-feed fetch for 5 weather blocks (3 requests -> 1) + 11 Explore links to 24-25 Nov pages",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "cf8e022040c612fa47db5f34b1896418c56063e66c84f626e679aa88c24258b7",
+   "base_sha256": "ae7940bcf46043be56e42e39b481dfee9571f8891c8b84f4fefe189e2842426e",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1073119
+  }
+ ]
+}
