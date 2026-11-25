@@ -542,5 +542,15 @@
   "added": "2026-11-24",
   "peak_id": "kedar-dome",
   "commercial": false
+ },
+ "nilkantha": {
+  "id": 25586,
+  "path": "/mountains-of-india/nilkantha/",
+  "kind": "peak",
+  "label": "Neelkanth Peak",
+  "blurb": "6,596 m · the snow pyramid behind Badrinath temple",
+  "added": "2026-11-25",
+  "peak_id": "nilkantha",
+  "commercial": false
  }
 }
