@@ -1,5 +1,5 @@
 {
- "_note": "Media for /india-tours/jaisalmer/ (guide). Made by the Page Builder (day) 25 Nov 2026 under page-builder.md Step 1.3 (row was `researched`, no media). Library photos only, no new downloads: Jaisalmer rooftops below the fort px-17374445 (= poster, the page's subject), camel on a dune under stars px-5058588 (Pexels location Jaisalmer), Mehrangarh/Jodhpur px-797824 and Amber Fort/Jaipur px-9179927 as the road there — each captioned only with its CREDITS.md allowed caption. Route stops + lat/lon from research/pages/jaisalmer.md 'Media notes' (Sam stop dropped — it overlapped the Jaisalmer label at this scale; no km). No cost ladder (price on request).",
+ "_note": "Media for /india-tours/jaisalmer/ (guide). Made by the Page Builder (day) 25 Nov 2026 under page-builder.md Step 1.3 (row was `researched`, no media). Library photos only, no new downloads: Jaisalmer rooftops below the fort px-17374445 (= poster, the page's subject), camel on a dune under stars px-5058588 (Pexels location Jaisalmer), Mehrangarh/Jodhpur px-797824 and Amber Fort/Jaipur px-9179927 as the road there — each captioned only with its CREDITS.md allowed caption. Route stops + lat/lon from research/pages/jaisalmer.md 'Media notes' (Sam stop dropped — it overlapped the Jaisalmer label at this scale; no km). No cost ladder (price on request). Short captions (≤11 chars) so they don't run under the page's left-hand headline on desktop.",
  "hero": {
   "kicker": "JAISALMER · THAR DESERT",
   "scenes": [
@@ -57,10 +57,10 @@
    }
   ],
   "steps": [
-   "GOLDEN JAISALMER",
-   "JAISALMER DUNES",
-   "VIA JODHPUR",
-   "FROM JAIPUR"
+   "JAISALMER",
+   "THAR DESERT",
+   "JODHPUR",
+   "JAIPUR"
   ]
  },
  "route": {
