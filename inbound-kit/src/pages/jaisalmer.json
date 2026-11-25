@@ -1,0 +1,184 @@
+{
+ "path": "/india-tours/jaisalmer/",
+ "parent": 11411,
+ "kind": "guide",
+ "title": "Jaisalmer Travel Guide: the Golden Fort, Desert Safari and Sam Dunes",
+ "seo_title": "Jaisalmer Guide: Golden Fort, Desert Safari & Sam Dunes",
+ "seo_desc": "Jaisalmer for first-time visitors: the lived-in UNESCO fort, Jain temples, Sam dunes, desert camps, best months and how to add it to Rajasthan by car.",
+ "focus": "jaisalmer",
+ "label": "Jaisalmer",
+ "blurb": "The golden desert fort people still live in",
+ "kicker": "Rajasthan · Thar Desert",
+ "tag": "A golden fort at the edge of the dunes.",
+ "sub": "An honest guide to Jaisalmer for travellers from the US, UK, Europe, Australia and Canada: what you see, how many nights, how to choose a desert night, when to go, and how to add it to a Rajasthan trip by private car.",
+ "hero_alt": "Golden sandstone rooftops of Jaisalmer below the fort walls, a camel on a dune under a starry sky in the Thar Desert, Mehrangarh Fort above Jodhpur and Amber Fort near Jaipur, Rajasthan, India",
+ "cta1": "See the route",
+ "chips": [
+  ["UNESCO 2013", "one of the Hill Forts of Rajasthan"],
+  ["2 nights", "enough for most visitors"],
+  ["Nov–Mar", "the comfortable months"],
+  ["≈40 km", "to the Sam dunes (25 mi)"]
+ ],
+ "q": "Is Jaisalmer worth visiting, and how do I fit it in?",
+ "answer": "Jaisalmer, the Golden City in Rajasthan's Thar Desert, grew around a 12th-century sandstone fort that is part of the UNESCO Hill Forts of Rajasthan (2013) and is still lived in. Most visitors spend two nights: the fort, Jain temples, havelis and Gadisar Lake, then a sunset at the Sam dunes, about 40 km away. Go November–March. We plan it by private car — price on request.",
+ "talk": true,
+ "facts": [
+  ["12th century", "Jaisalmer's beginnings, founded by Rawal Jaisal according to tradition"],
+  ["UNESCO 2013", "Jaisalmer Fort, one of six Hill Forts of Rajasthan"],
+  ["≈3,000", "people still live inside the fort walls (Incredible India)"],
+  ["7 Jain temples", "inside the fort, 12th–15th centuries"]
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "nav": "What it is",
+   "h2": "What Jaisalmer is — and why it is worth the long trip",
+   "kind": "prose",
+   "paras": [
+    "Jaisalmer sits far out in the Thar Desert of western Rajasthan. Its story begins in the 12th century — founded by Rawal Jaisal, according to tradition — and its yellow sandstone gives it the name Rajasthan Tourism uses: the <b>Golden City</b>.",
+    "The fort is the reason to come. Jaisalmer Fort is one of six forts inscribed together as the UNESCO World Heritage Site 'Hill Forts of Rajasthan' (2013). UNESCO describes it as a hill fort in desert terrain whose township is still inhabited today — Incredible India counts about 3,000 residents inside the walls. That makes it one of the few forts in the world where people still live: you walk lanes of houses, shops and temples, not an empty monument.",
+    "It is far from everything else, so it needs planning. You either fly into Jaisalmer, take the train, or drive across the desert from Jodhpur with a break on the way. Two nights are enough for most visitors."
+   ]
+  },
+  {
+   "id": "see",
+   "nav": "What to see",
+   "h2": "What you see in Jaisalmer",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["Jaisalmer Fort", "The lived-in golden fort on its hill above the town, with lanes of houses, small shops and temples inside the walls. Part of the UNESCO Hill Forts of Rajasthan (2013)."],
+    ["The Jain temples", "Seven Jain temples inside the fort, built between the 12th and 15th centuries. Usually open in the mornings only — check locally."],
+    ["The havelis", "Carved merchants' mansions in the old town: Patwon ki Haveli, Salim Singh ki Haveli and Nathmal ki Haveli."],
+    ["Gadisar Lake", "A 14th-century reservoir built by a ruler of Jaisalmer, with boat rides."],
+    ["Bada Bagh", "Sandstone cenotaphs (chhatris) of Jaisalmer's royal family, a short drive from the town; open in the daytime."],
+    ["Amar Sagar", "A lake about 7 km (4 mi) from town with the 17th-century Amar Singh Palace beside it."]
+   ]
+  },
+  {
+   "id": "desert",
+   "nav": "Desert night",
+   "h2": "The Sam dunes, a desert safari and a night at a camp",
+   "kind": "cards",
+   "lead": "The Sam Sand Dunes are about 40 km (25 mi) from Jaisalmer. Camel and jeep rides, sunsets and sunrises over the sand, music in the evening and stargazing are why most visitors stay a night in the desert.",
+   "items": [
+    ["The night rule (Oct 2026)", "Since October 2026 the forest department has not allowed visitors on the dunes inside Desert National Park after sunset. Many camps and sunset camel rides are outside the park and carry on as before — rules can change, so we confirm them for your dates."],
+    ["Camel, jeep or on foot", "Camel rides are optional — if you'd rather not ride, a jeep or a walk on the dunes at sunset works too."],
+    ["Choosing a camp", "Camps vary a lot. What to check: proper toilets and showers, heating or heavy blankets in December–January, and how far the tents are from the road. We choose the camp for your dates and comfort level."],
+    ["Desert National Park", "The park around the dunes protects desert wildlife such as the great Indian bustard and the blackbuck."],
+    ["Desert Festival", "Usually late January or February — three days of music and events on the dunes, dates announced by Rajasthan Tourism. Ask us for the dates in your year."]
+   ],
+   "note": "Our blog has more for planners: <a href=\"https://suzutravels.com/jaisalmer-desert-camp/\">Sam vs Khuri desert camps</a> and <a href=\"https://suzutravels.com/sam-sand-dunes-closed-after-sunset-2026-rules-for-tourists/\">the 2026 Sam dunes sunset rule</a>."
+  },
+  {
+   "id": "route",
+   "nav": "Sample route",
+   "h2": "A sample week: Delhi → Jaipur → Jodhpur → Jaisalmer",
+   "kind": "table",
+   "lead": "Jaisalmer is the far western end of the classic Rajasthan loop. Many travellers reach it after Jaipur and Jodhpur, with the same car and driver the whole way, then fly out or continue to Udaipur.",
+   "video": "route",
+   "video_caption": "Delhi first, then Jaipur, Jodhpur and two nights at Jaisalmer and the dunes. Positions approximate.",
+   "head": ["Day", "Where", "What you do"],
+   "rows": [
+    ["Day 1", "Delhi", "Arrive; airport pick-up"],
+    ["Day 2–3", "Jaipur", "The Pink City, Amber Fort and the old bazaars"],
+    ["Day 4–5", "Jodhpur", "Mehrangarh Fort above the blue old city"],
+    ["Day 6", "Jodhpur → Jaisalmer", "A long drive day across the desert; we break it with a stop and drive in daylight"],
+    ["Day 7", "Jaisalmer", "The fort and Jain temples in the morning, havelis and Gadisar Lake; the Sam dunes at sunset and a camp night"],
+    ["Day 8", "Onward", "Fly out from Jaisalmer or Jodhpur, or drive on towards Udaipur"]
+   ],
+   "note": "Road times depend on traffic and stops — we plan each day around breaks, not a map distance. We avoid driving at night. For a longer loop with Udaipur see our <a href=\"/india-tours/rajasthan-tour/\">Rajasthan tour</a>."
+  },
+  {
+   "id": "reach",
+   "nav": "Getting there",
+   "h2": "How to get to Jaisalmer",
+   "kind": "table",
+   "head": ["Way in", "What to know"],
+   "rows": [
+    ["By air", "Jaisalmer has its own airport (JSR), and Jodhpur has one too. Flying one way saves a long road day — check current schedules."],
+    ["By train", "Jaisalmer has a railway station (JSM). Check current trains and times on IRCTC."],
+    ["By private car", "The easiest way to see Jaipur, Jodhpur and Jaisalmer with one driver. Jodhpur to Jaisalmer is a long drive day across the desert; we break it with a stop."],
+    ["By luxury train", "Some luxury trains, such as the Palace on Wheels, include Jaisalmer on their Rajasthan route — see our luxury trains guide."]
+   ]
+  },
+  {
+   "id": "when",
+   "nav": "When to go",
+   "h2": "When to go to Jaisalmer",
+   "kind": "cards",
+   "style": "alt",
+   "items": [
+    ["November to March", "The best months: sunny days and clear desert nights. Desert nights in December–January can be cold (about 5 °C / 41 °F) — bring warm layers for a camp night."],
+    ["April to June", "From April to June Jaisalmer can pass 45 °C (113 °F). If you have a heart condition or are sensitive to heat, consult your doctor; see CDC or NHS Fit for Travel."],
+    ["Outside the season", "Months outside November–March are hotter and less comfortable for the fort walk and a desert night — ask us whether your dates work."],
+    ["Desert Festival", "Usually late January or February, on the dunes — dates are announced by Rajasthan Tourism each year."]
+   ]
+  },
+  {
+   "id": "practical",
+   "nav": "Safety & visa",
+   "h2": "Border advice, temple etiquette and your visa",
+   "kind": "callout",
+   "style": "dark",
+   "text": "<b>Jaisalmer district borders Pakistan. The UK FCDO advises against all travel within 10 km of the India–Pakistan border, which is unmarked in places (advice as of Oct 2026 — check before you travel). Jaisalmer town and the Sam dunes are well away from that line, and our routes stay well away from it.</b> The Jain temples are active places of worship: dress modestly, remove shoes, and follow the rules at the entrance (leather items may not be allowed — ask at the gate). Foreign visitors pay separate entry fees in Indian rupees; fees and timings change, so check locally or ask us (as of Nov 2026). For your visa: <b>apply only at the official site indianvisaonline.gov.in — look-alike sites charge extra. We are not a visa agency.</b> In November 2026 the Government of India announced that the Tourist Visa is being renamed the Visitor Visa (PIB, 11 Nov 2026); until the official site changes, apply for the visa it shows there."
+  },
+  {
+   "id": "how",
+   "nav": "How we arrange it",
+   "h2": "How we arrange your Jaisalmer trip",
+   "kind": "steps",
+   "lead": "Rajasthan is one of our own North India car routes. Suzu Travels plans the whole trip from our office in Himachal and stays your single point of contact from the first message to the drive home.",
+   "items": [
+    ["Tell us your plan", "Your dates, where you start, how many of you, and whether you want Jaisalmer with the Golden Triangle, Jodhpur or Udaipur."],
+    ["Get a day-by-day plan", "With a US-dollar quote for the car, driver, hotels, the camp night and any flights or trains."],
+    ["Lock it with a 20% deposit", "Full refund if you cancel within 48 hours of paying; the balance is due before the trip."],
+    ["Before the trip", "Your driver's name, photo and car number are shared with you before the trip, along with our office number in Himachal."],
+    ["On the road", "Same car and driver across Rajasthan; licensed local guides at the fort and temples on request; we confirm the dunes rules for your dates."]
+   ]
+  }
+ ],
+ "prices": {
+  "h2": "Prices",
+  "lead": "A Jaisalmer trip is quoted on request — the number of days, hotel and camp level, flights or trains and group size change the total. You get a day-by-day plan with a US-dollar total before you pay anything. Many guests add Jodhpur and Jaisalmer to a Golden Triangle trip, which has published prices:",
+  "rows": [
+   ["Jodhpur and Jaisalmer, 3–4 nights — added to your India trip", "on request", "Private car and driver, hotels, one desert-camp night, guides on request"],
+   ["Golden Triangle — 4 days (Delhi, Agra, Jaipur)", "from US$299", "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"],
+   ["Golden Triangle — classic 6 days", "from US$449", "Per person, two sharing: private air-conditioned car and driver, hotels with breakfast, airport pick-up and drop, local guides at the main monuments"]
+  ]
+ },
+ "faqs": [
+  ["Is Jaisalmer worth the long trip?", "For most travellers, yes. Its golden sandstone fort is part of the UNESCO Hill Forts of Rajasthan (2013) and is still lived in, and a sunset at the dunes is a highlight of many India trips. To save a long road day, fly into Jaisalmer or out of it."],
+  ["How many nights do you need in Jaisalmer?", "Two nights suit most visitors: one in town for the fort, the Jain temples, the havelis and Gadisar Lake, and optionally one at a desert camp."],
+  ["How far are the Sam Sand Dunes from Jaisalmer?", "About 40 km (25 miles). Most visitors drive out in the afternoon for sunset and either return to town or stay the night at a camp."],
+  ["Can you still go to the Sam dunes at night?", "Since October 2026 the forest department has not allowed visitors on the dunes inside Desert National Park after sunset. Many camps and sunset camel rides are outside the park and carry on as before — rules can change, so we confirm them for your dates."],
+  ["Is a desert camp comfortable?", "It depends on the camp — quality varies a lot. Check for proper toilets and showers, heating or heavy blankets in December–January, and distance from the road. We choose the camp for your dates and comfort level."],
+  ["When is the best time to visit Jaisalmer?", "November to March. From April to June the town can pass 45 °C (113 °F), and desert nights in December–January can drop to about 5 °C (41 °F)."],
+  ["Is Jaisalmer close to the Pakistan border — is it safe?", "Jaisalmer district borders Pakistan, and the UK FCDO advises against all travel within 10 km of the border, which is unmarked in places (as of Oct 2026 — check before you travel). Jaisalmer town and the Sam dunes are well away from that line, and our routes stay well away from it."],
+  ["Can I combine Jaisalmer with the Golden Triangle?", "Yes. Many guests add Jodhpur and Jaisalmer after Delhi, Agra and Jaipur. The Golden Triangle is from US$299 (4 days) or US$449 (6 days) per person; the Rajasthan extension is quoted on request."]
+ ],
+ "sources": [
+  ["UNESCO World Heritage Centre — Hill Forts of Rajasthan (decision 37 COM 8B.31)", "https://whc.unesco.org/en/decisions/5159/"],
+  ["UNESCO World Heritage Centre — Hill Forts of Rajasthan, maps", "https://whc.unesco.org/en/list/247/maps/"],
+  ["Incredible India — Jaisalmer", "https://www.incredibleindia.gov.in/en/rajasthan/jaisalmer"],
+  ["Incredible India — Sam Sand Dunes", "https://www.incredibleindia.gov.in/en/rajasthan/jaisalmer/sam-sand-dunes"],
+  ["Incredible India — Jain Temples of Jaisalmer", "https://www.incredibleindia.gov.in/en/rajasthan/jaisalmer/jain-temples-of-jaisalmer"],
+  ["Utsav (Government of India) — Desert Festival", "https://utsav.gov.in/view-event/desert-festival"],
+  ["UK FCDO — India regional risks", "https://www.gov.uk/foreign-travel-advice/india/regional-risks"],
+  ["Free Press Journal — Sam dunes sunset rule, 16 Oct 2026", "https://www.freepressjournal.in/india/jaisalmers-sam-sand-dunes-face-night-tourism-ban-as-forest-department-restricts-entry-camel-safaris-after-sunset"],
+  ["Government of India — e-Visa (official site)", "https://indianvisaonline.gov.in/"],
+  ["PIB — visa rationalisation, 11 Nov 2026", "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2335182&reg=48&lang=2"]
+ ],
+ "verified": "25 Nov 2026",
+ "cta": {
+  "h2": "Add Jaisalmer to your India trip",
+  "text": "Tell us your dates, where you start and how many of you. We reply with a day-by-day plan and a US-dollar quote, usually within two hours (9 am–9 pm IST).",
+  "wa": "Hello Suzu Travels, I'm planning a trip with Jaisalmer. Dates: ___ , travellers: ___ , country: ___"
+ },
+ "links": [
+  "rajasthan-tour",
+  "golden-triangle-itinerary-7-days",
+  "private-driver-india",
+  "luxury-trains-india"
+ ]
+}

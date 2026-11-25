@@ -520,5 +520,14 @@
   "blurb": "Bundela palaces between Agra and Khajuraho",
   "added": "2026-11-24",
   "focus": "orchha"
+ },
+ "jaisalmer": {
+  "id": 25331,
+  "path": "/india-tours/jaisalmer/",
+  "kind": "guide",
+  "label": "Jaisalmer",
+  "blurb": "The golden desert fort people still live in",
+  "added": "2026-11-25",
+  "focus": "jaisalmer"
  }
 }
