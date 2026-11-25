@@ -65,3 +65,16 @@ Sources (season, neutral/industry): https://www.thomascook.in/india-tourism/best
 Gulmarg (class kashmir_resort, deluxe ₹6,800 off-peak) had no winter peak: our default windows give it only 20 Dec–5 Jan, but Dec–early Mar is Gulmarg's costliest season (gondola/ski). Public data: zoutons Gulmarg guide (27 Aug 2026) — "Winter (Dec–early Mar): Peak of peaks", "January-February weekends are the most expensive nights of the Gulmarg year", mid-range near gondola ₹4,000–10,000/night; travelcoffee (28 Oct 2026) — sampled rates for 15 Dec 2026, 2 adults: median ₹6,207 (1–2.5 km from Gondola), ₹11,231 (within 1 km), ₹2,741 (Tangmarg). Room-only figures; our MAP deluxe ₹6,800 → ₹8,500 with peak keeps us at/above the mid band.
 Change: `rates.json` hotel.peak.add_by_place.gulmarg = 15 Dec – 14 Mar (×1.25) added on top of the default windows (15 Mar–30 Jun, Oct, Christmas–New Year already peak). Pahalgam / Sonamarg winter stays off-peak (no evidence of a winter high season).
 Sources: https://zoutons.com/news/gulmarg-trip-guide-2026 · https://travelcoffee.in/blog/gulmarg-vs-tangmarg-stay-in-winter
+
+# Rate audit #3 — 25 Nov 2026 (v3.0) — small Mata towns + Char Dham towns
+Same method as audits #1/#2 (live hotel metasearch via MCP, 2 adults · 1 room · 1 night, cheapest first, USD × ₹88; public deluxe MAP = median priced listing × 1.12 + ₹900; target base ≈ 0.87 × public; max +15 % per class per run).
+
+| Place (class) | Date | Priced listings (USD) | Median | Public deluxe MAP ₹ | Planner deluxe before → after |
+|---|---|---|---|---|---|
+| Chintpurni (pilgrim) | 15 Jan 27 | 17, 21, 24, 44 (4★), 46, 116 (4★) | 34 | 4,250 | 2,750 → **3,160** (+15 %, cap) |
+| Uttarkashi (pilgrim) | 15 Sep 27 | 14, 15, 27, 31, 31, 115 (6 of 12 unpriced) | 29 | 3,760 | ″ |
+| Badrinath (pilgrim) | 15 Sep 27 | 3★ Hotel Dwarikesh 74 only (7 of 8 ≥3★ unpriced — 2027 yatra rates not out) | — | ~8,190 (1 listing) | ″ — thin; re-check Apr 2027 when yatra rates publish |
+| Guptkashi (pilgrim) | 15 Sep 27 | 0 of 12 priced | — | — | re-check Apr 2027 |
+
+Kangra (audit #2) was 6,080 public. The pilgrim class is still below target after the cap → re-check next audit (with Jwala Ji, Naina Devi). Char Dham towns: flag for a yatra-season (May–Jun, Sep–Oct) by_class window once 2027 rates are published.
+Source: https://slicktrip.com/hotels (searches above, run 25 Nov 2026).

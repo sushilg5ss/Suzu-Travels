@@ -23,7 +23,7 @@
       "hill_premium": {"label": "Popular hill station",    "deluxe": 3800},
       "hill":         {"label": "Hill town",               "deluxe": 3200},
       "remote":       {"label": "Remote valley / camp",    "deluxe": 3600},
-      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 2750},
+      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 3160},
       "pilgrim_city": {"label": "Pilgrim city (Katra / Haridwar)", "deluxe": 4000},
       "kashmir":      {"label": "Kashmir (Srinagar)",      "deluxe": 5000},
       "kashmir_resort": {"label": "Kashmir resort town (Gulmarg / Pahalgam / Sonamarg)", "deluxe": 6800},
