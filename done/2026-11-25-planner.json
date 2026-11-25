@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-25-planner",
+ "agent": "Trip Planner",
+ "summary": "v3.0 pilgrim-town hotel rate audit #3 (2,750 -> 3,160)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "307fa523ae51515a3d3b241b225dc199ba98f059a1c411e96a452dc507a8c0fc",
+   "base_sha256": "d927d5bc0c686cc504b1adcb5842dc8be71122779a820a9aaf8c997012d0559d",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-25T06:29:04Z",
+ "status": "deployed"
+}
