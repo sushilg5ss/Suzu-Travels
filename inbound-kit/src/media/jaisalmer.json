@@ -1,0 +1,101 @@
+{
+ "_note": "Media for /india-tours/jaisalmer/ (guide). Made by the Page Builder (day) 25 Nov 2026 under page-builder.md Step 1.3 (row was `researched`, no media). Library photos only, no new downloads: Jaisalmer rooftops below the fort px-17374445 (= poster, the page's subject), camel on a dune under stars px-5058588 (Pexels location Jaisalmer), Mehrangarh/Jodhpur px-797824 and Amber Fort/Jaipur px-9179927 as the road there — each captioned only with its CREDITS.md allowed caption. Route stops + lat/lon from research/pages/jaisalmer.md 'Media notes' (Sam stop dropped — it overlapped the Jaisalmer label at this scale; no km). No cost ladder (price on request).",
+ "hero": {
+  "kicker": "JAISALMER · THAR DESERT",
+  "scenes": [
+   {
+    "img": "px-17374445.jpg",
+    "kind": "tilt",
+    "from": {
+     "y": 900
+    },
+    "to": {
+     "y": 300
+    }
+   },
+   {
+    "img": "px-5058588.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.0,
+     "x": 0,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": 30,
+     "y": 10
+    }
+   },
+   {
+    "img": "px-797824.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.04,
+     "x": 40,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -30,
+     "y": -20
+    }
+   },
+   {
+    "img": "px-9179927.jpg",
+    "kind": "land",
+    "from": {
+     "scale": 1.1,
+     "x": -30,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.03,
+     "x": 30,
+     "y": 0
+    }
+   }
+  ],
+  "steps": [
+   "GOLDEN JAISALMER",
+   "JAISALMER DUNES",
+   "VIA JODHPUR",
+   "FROM JAIPUR"
+  ]
+ },
+ "route": {
+  "title": "TO JAISALMER BY CAR",
+  "sub": "A sample week · positions approximate",
+  "bounds": "auto",
+  "stops": [
+   {
+    "name": "Delhi",
+    "sub": "arrive",
+    "day": "Day 1",
+    "lat": 28.6139,
+    "lon": 77.209
+   },
+   {
+    "name": "Jaipur",
+    "sub": "Pink City",
+    "day": "Day 2–3",
+    "lat": 26.9124,
+    "lon": 75.7873
+   },
+   {
+    "name": "Jodhpur",
+    "sub": "Mehrangarh",
+    "day": "Day 4–5",
+    "lat": 26.2389,
+    "lon": 73.0243
+   },
+   {
+    "name": "Jaisalmer",
+    "sub": "living fort · dunes",
+    "day": "Day 6–7",
+    "lat": 26.9157,
+    "lon": 70.9083
+   }
+  ]
+ }
+}
