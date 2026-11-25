@@ -40,6 +40,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /norway-tour-packages/ | 24529 | `.hx` country page (22 Nov 2026) — `pages/gen_norway.py` (Oslo–Flåm–Nærøyfjord–Bergen–Geiranger–Ålesund + Tromsø/Lofoten; 8-day itinerary grid = 4 columns; 7-photo gallery like Iceland, `med` 768px thumbs; Wikimedia Commons photos) |
 | /seychelles-tour-packages/ | 24755 | `.hx` country page (23 Nov 2026) — `pages/gen_seychelles.py` (Mahé–Praslin–Curieuse–La Digue; 7-day itinerary grid = 4 columns; 7-photo gallery like Norway, `med` 768px thumbs; Wikimedia Commons photos) |
 | /oman-tour-packages/ | 25148 | `.hx` country page (24 Nov 2026) — `pages/gen_oman.py` (Muscat–coast–Wahiba–Nizwa + Musandam/Salalah/Dubai add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like Seychelles, `med` 768px thumbs; Wikimedia Commons photos) |
+| /kenya-tour-packages/ | 25353 | `.hx` country page (25 Nov 2026) — `pages/gen_kenya.py` (Nairobi–Masai Mara–Naivasha/Nakuru–Amboseli + Diani; 8-day itinerary grid = 4 columns; 7-photo gallery like Oman, `med` 768px thumbs; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -127,3 +128,9 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Royal Oman Police eVisa (evisa.rop.gov.om) answers curl but content is JS/forms: use headless Chromium — /en/types-of-visa → radio visaType=4 (Visit Unsponsored) → View → radio visaTypeId=26 → Sub-Type → subTypeId (26A/26B/26M/26N…) → Detail shows fee, stay, documents. The G1 nationality list is not public (only after registration). rop.gov.om root redirects to Arabic; old English visa URLs 404.
 - Commons Diego Delso Oman series (Aug 2024, Spanish file names "…, Omán, 2024-08-1x, DD nn.jpg", template {{User:Poco a poco/credit}} + Cc-by-sa-4.0) is a rich source for Muscat/Wahiba/wadis/Daymaniyat.
 - Grid cards for Oman were inserted before the Seychelles card (Mauritius card on the Seychelles page) on all 33 country pages (+368 `.sx` / +335 `.hx`); card image = Nizwa `768x507` (wide Muttrah harbour 768x297 looked thin in 4:3 cards).
+
+## Notes (25 Nov 2026)
+- Kenya eTA portal (etakenya.go.ke) answers plain curl: /how-to-apply + /general-information (exemption list, documents, processing), /eligibility (eTA types + USD fees), /faqs. The per-country eligibility search is JS.
+- Commons thumbs 429'd from the sandbox again; WordPress fetched all 1920px thumbs, then the WP copies were viewed (contact sheet). Watch for Commons series titled 'Mara River crossing' — the Charles J Sharp set is in Serengeti, Tanzania.
+- Page content pushed in 5 chunks (`wp_update_page` + 4 marker replaces); the first chunk splits on `}` because the CSS block has no `><` in its first 16 KB. `content_length` matched local UTF-8 bytes after each step.
+- Grid cards for Kenya were inserted before the Seychelles card (Mauritius card on the Seychelles page) on all 34 country pages (+370 `.sx` / +329 `.hx`); hub delta +4,129 bytes matched the local build diff.
