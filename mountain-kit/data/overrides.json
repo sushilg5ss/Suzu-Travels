@@ -579,5 +579,36 @@
    "https://news.ssbcrack.com/indian-armys-spear-corps-successfully-summits-mt-khangchengyao-at-6889-metres/",
    "https://www.uniindia.com/east-india/2-jat-battalion-summits-khangchengyao/183384"
   ]
+ },
+ "Gorichen": {
+  "height_alternates_m": [
+   6530,
+   6468
+  ],
+  "status_note": "Climbed by a civilian team (Mountaineers' Association of Krishnanagar) on 21 Oct 2024, described as the first civilian ascent (IMF permission; GPS read 6,468 m). Gorichen East (6,222 m) was climbed by a NIMAS Dirang team on 25 Sep 2025. Civilian access needs special defence clearance near the LAC.",
+  "base": "Jang → Mago (road-head) → Jithang → Merathang → Chokersam base camp (~4,920 m)",
+  "notable": "Locally revered as Sa-Nga Phu. Used by the Indian Army for training (19 Kumaon trained here before Siachen in the 1980s). An HMI Darjeeling team climbed Gorichen II by a new east-ridge route and made the first ascent of Gorichen East (AAJ 1995).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gori_Chen",
+   "https://publications.americanalpineclub.org/articles/12199522603/Asia-IndiaArunachal-Pradesh-Gorichen-II-and-Gorichen-East",
+   "https://t2online.in/goodlife/travel/historic-civilian-ascent-mak-team-conquers-mt-gorichen/1211814",
+   "https://www.oneindia.com/india/first-civilians-summit-gorichen-east-peak-6-222m-a-historic-feat-in-arunachal-s-sacred-himalayas-7882273.html"
+  ]
+ },
+ "Pauhunri": {
+  "height_alternates_m": [
+   7125,
+   7107
+  ],
+  "first_ascent_by": "Alexander Kellas with two Sherpas ('Sony' and 'Tuny's brother'), 14 Jun 1911, from the Lhonak glacier via a north-west col and the NE ridge",
+  "status_note": "Border peak in North Sikkim; restricted. No ascent recorded after 1 Nov 1989 (Sonam Gyatso Mountaineering Institute team).",
+  "base": "Lachen → Thangu → Lhonak valley (historic approach)",
+  "notable": "Highest climbed summit on Earth 1911–1928 (recognised only later); source of the Teesta. Next ascent: Wilfrid Noyce with Angtharkay and Namgar, Sep 1945, NE (Tibetan) flank.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pauhunri",
+   "https://en.wikipedia.org/wiki/Alexander_Kellas",
+   "https://www.himalayanclub.org/hj/13/6/chomiomo-and-pauhunri/",
+   "https://explorersweb.com/forgotten-7000ers-pauhunri/"
+  ]
  }
 }

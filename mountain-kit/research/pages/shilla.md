@@ -82,7 +82,7 @@ researched: 2026-11-06 · status: researched · Sell? **yes** (Himachal, `commer
 3. Himalayan Journal 40, Correspondence (J. de V. Graaff letter, 1983) — https://himalayanclub.org/hj/40/28/correspondence-39/
 4. Harish Kapadia, "Spiti: Land of Mountains and Monasteries" (PDF) — https://www.harishkapadia.com/wp-content/uploads/2020/09/1993-Spiti-Land-of-Mountains-and-Monasteris.pdf
 5. PeakVisor, Shilla — https://peakvisor.com/peak/shilla.html
-6. BMC, Alpine Club exploratory first ascents in the Indian Himalaya (Lingti; 1860 pole story) — https://thebmc.co.uk/alpine-club-exploratory-first-ascents-in-indian-Himalaya
+6. BMC, Alpine Club exploratory first ascents in the Indian Himalaya (Lingti; 1860 pole story) — https://services.thebmc.co.uk/alpine-club-exploratory-first-ascents-in-indian-himalaya (moved; old thebmc.co.uk URL 404s — re-checked 2026-11-25)
 7. Wikipedia, Langza — https://en.wikipedia.org/wiki/Langza
 8. HP Kinnaur district, tourism guide (protected areas) — https://hpkinnaur.nic.in/tourism-guide/
 9. IMF peak fees — https://www.indmount.org/IMF/peakfee

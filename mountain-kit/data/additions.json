@@ -213,5 +213,37 @@
    "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Kalanag"
   ],
   "height_alternates_m": []
+ },
+ {
+  "name": "Nanda Ghunti",
+  "alt_names": [
+   "Nandaghunti"
+  ],
+  "height_m": 6309,
+  "band": "6000",
+  "state": "Uttarakhand",
+  "range": "Garhwal Himalaya (western rim of the Nanda Devi–Trisul group)",
+  "district_or_area": "Chamoli",
+  "first_ascent_year": 1947,
+  "first_ascent_by": "André Roch, René Dittert & Ang Tenzing (Swiss Garhwal Expedition), September 1947, east ridge above the Ronti saddle",
+  "status": "climbed",
+  "status_note": "Few reported ascents (1947, 1960, 1977, 1980, 1989, 2001). Not named in the Feb 2026 reports of Uttarakhand's 83 opened peaks (those reports do not print the full list) — confirm with UKMPS / IMF (Nov 2026).",
+  "difficulty": "moderate",
+  "difficulty_note": "Glaciated; north ridge from the Ronti saddle PD+, south face couloir AD+ (2001)",
+  "best_season": "May–Jun & Sep–Oct",
+  "base": "Ghat → Sutol → Lata Kopri → Chandniya Ghat → base camp ~4,350 m (or from Hom Kund over the Ronti saddle)",
+  "open_to_foreigners": "unknown",
+  "india_rank": null,
+  "notable": "Seen from Ranikhet just left of Trisul. Hom Kund below it is the goal of the 12-yearly Nanda Devi Raj Jat. 2001 British–Indian team climbed it from both sides on the same day (south face new route).",
+  "sources": [
+   "https://www.himalayanclub.org/hj/58/5/nanda-ghunti-from-both-sides/",
+   "https://www.himalayanclub.org/hj/15/3/the-swiss-garhwal-expedition-of-1947/",
+   "https://www.himalayanclub.org/hj/14/4/nanda-ghunti-1945/",
+   "https://publications.americanalpineclub.org/articles/12200239303/Asia-India-Eastern-Garhwal-Nanda-Ghunti-New-Route",
+   "https://en.wikipedia.org/wiki/Ronti"
+  ],
+  "height_alternates_m": [
+   6390
+  ]
  }
 ]

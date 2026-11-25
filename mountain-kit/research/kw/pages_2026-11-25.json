@@ -1,0 +1,146 @@
+{
+ "date": "2026-11-25",
+ "customer": "1172710099",
+ "lang": "en",
+ "note": "Pipeboard get_google_ads_keyword_ideas; avg monthly (banded); ww / IN / intl-6 (US GB AU DE FR IL)",
+ "gorichen peak": [
+  1000,
+  880,
+  10,
+  "Oct–Dec 1,300"
+ ],
+ "gorichen": [
+  210,
+  140,
+  10
+ ],
+ "gori chen mountain": [
+  210,
+  170,
+  20
+ ],
+ "hotel gorichen": [
+  140,
+  140,
+  10,
+  "not ours"
+ ],
+ "gorichen peak expedition": [
+  10,
+  null,
+  null
+ ],
+ "pauhunri": [
+  590,
+  390,
+  90,
+  "Apr 2026 880"
+ ],
+ "pauhunri peak": [
+  20,
+  20,
+  10
+ ],
+ "nanda ghunti": [
+  480,
+  480,
+  20,
+  "Oct 2026 590"
+ ],
+ "nanda ghunti peak": [
+  90,
+  70,
+  10,
+  "Oct 2026 170"
+ ],
+ "nanda ghunti expedition": [
+  20,
+  20,
+  0
+ ],
+ "tirsuli": [
+  40500,
+  12100,
+  8100,
+  "spike Aug 2026 301,000 ww / 90,500 IN / 74,000 intl, Oct 9,900; baseline ~5,400-6,600 ww; cause not found (news search empty) — spike is global incl. US, so probably not the peak"
+ ],
+ "tirsuli peak": [
+  null,
+  null,
+  null
+ ],
+ "jongsong peak": [
+  390,
+  null,
+  null,
+  "ww only"
+ ],
+ "kabru north": [
+  260,
+  null,
+  null
+ ],
+ "mount kabru": [
+  170,
+  null,
+  null
+ ],
+ "kabru peak": [
+  140,
+  null,
+  null
+ ],
+ "kabru north summit": [
+  90,
+  null,
+  null
+ ],
+ "abi gamin": [
+  210,
+  null,
+  null
+ ],
+ "mukut parbat": [
+  170,
+  null,
+  null
+ ],
+ "gangotri peak": [
+  140,
+  null,
+  null
+ ],
+ "mulkila peak": [
+  140,
+  null,
+  null,
+  "live"
+ ],
+ "kedarnath peak": [
+  2900,
+  null,
+  null,
+  "temple-mixed"
+ ],
+ "kalindi khal trek": [
+  2900,
+  null,
+  null,
+  "Adventure lane"
+ ],
+ "rudugaira": [
+  40,
+  null,
+  null
+ ],
+ "friendship peak vs yunam": [
+  null,
+  null,
+  null
+ ],
+ "stok kangri alternative": [
+  null,
+  null,
+  null
+ ]
+}
