@@ -1,0 +1,108 @@
+{
+ "hero": {
+  "kicker": "PAUHUNRI · SIKKIM · 1911",
+  "scenes": [
+   {
+    "img": "px-17613105.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 500
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 560,
+     "scale": 1.22,
+     "x": -200
+    },
+    "to": {
+     "y": 900,
+     "scale": 1.24,
+     "x": -210
+    }
+   },
+   {
+    "img": "px-37358046.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 900,
+     "scale": 1.2,
+     "x": -170
+    },
+    "to": {
+     "y": 1300,
+     "scale": 1.22,
+     "x": -180
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   }
+  ],
+  "steps": [
+   [
+    5100,
+    "BASE CAMP · 1989"
+   ],
+   [
+    6210,
+    "CAMP 2 · 1989"
+   ],
+   [
+    7128,
+    "SUMMIT"
+   ]
+  ]
+ },
+ "ladder": {
+  "kicker": "PAUHUNRI IN CONTEXT",
+  "title": "Highest summits reached, in order",
+  "peaks": [
+   "trisul-i",
+   "pauhunri",
+   "kamet"
+  ],
+  "subs": {
+   "trisul-i": "First climbed 1907",
+   "pauhunri": "First climbed 1911",
+   "kamet": "First climbed 1931"
+  },
+  "end": "Pauhunri held the height record 1911–1928"
+ }
+}
