@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 30% 40%, #163a5c 0%, #0b1f33 70%); }
+      .kicker { position: absolute; left: 90px; top: 70px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .title { position: absolute; left: 90px; top: 116px; color: #fff; font-weight: 800; font-size: 72px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 60px; top: 230px; width: 1200px; height: 800px; overflow: visible; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .side { position: absolute; left: 1300px; top: 250px; width: 560px; height: 600px; }
+      .stat { position: absolute; left: 0; width: 560px; color: #fff; font-weight: 800; font-size: 52px; white-space: nowrap; }
+      .stat small { display: block; color: #d4a24c; font-size: 24px; letter-spacing: 0.14em; margin-bottom: 6px; }
+      .note { position: absolute; left: 90px; top: 1010px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 22px; white-space: nowrap; }
+      .quote { position: absolute; left: 1300px; top: 900px; height: 76px; padding: 0 34px; line-height: 76px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 36px; border-radius: 38px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker" id="kk">HOW THE WALK GOES · KASAULI</div>
+        <div class="title" id="tt">Gilbert Trail in one picture</div>
+        <svg class="map" viewBox="0 0 1200 800">
+          <path id="roadp" d="M 40 760 C 200 740, 260 640, 380 620 S 560 560, 600 470" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="16" stroke-linecap="round" />
+          <circle cx="40" cy="760" r="12" fill="#fff" />
+          <text x="62" y="752" style="font-size:28px">Chandigarh</text>
+          <text x="150" y="690" style="font-size:22px;fill:rgba(255,255,255,0.75)">Parwanoo · Dharampur</text>
+          <text id="kmroad" x="400" y="676" style="font-size:34px;fill:#d4a24c">~60 km by road</text>
+          <circle cx="600" cy="470" r="14" fill="#fff" />
+          <text x="470" y="520" style="font-size:26px">Bus stand</text>
+          <path id="up" d="M 600 470 L 640 360" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="6" stroke-dasharray="4 12" stroke-linecap="round" />
+          <text id="up2" x="634" y="436" style="font-size:22px;fill:rgba(255,255,255,0.75)">~2 km</text>
+          <circle cx="640" cy="360" r="14" fill="#d4a24c" />
+          <text x="420" y="345" style="font-size:28px">Kasauli Club</text>
+          <path id="trail" d="M 640 360 C 720 300, 780 340, 860 280 S 980 190, 1060 170" fill="none" stroke="#d4a24c" stroke-width="9" stroke-dasharray="3 18" stroke-linecap="round" />
+          <path id="trailr" d="M 640 360 C 720 300, 780 340, 860 280 S 980 190, 1060 170" fill="none" stroke="none" />
+          <text id="trl" x="700" y="250" style="font-size:24px;fill:#d4a24c">Gilbert Trail ~1.5 km</text>
+          <g id="walker"><circle r="15" fill="#fff" stroke="#d4a24c" stroke-width="5" /></g>
+          <circle id="sunpin" cx="1060" cy="170" r="18" fill="#e0703a" stroke="#fff" stroke-width="4" />
+          <text x="1110" y="130" text-anchor="end" style="font-size:30px">Sunset Point</text>
+          <g id="pmonkey">
+            <circle cx="1100" cy="330" r="12" fill="#fff" />
+            <text x="1080" y="320" text-anchor="end" style="font-size:26px">Monkey Point</text>
+            <text x="1124" y="372" text-anchor="end" style="font-size:20px;fill:#d4a24c">Air Force Station · ID · no phones</text>
+          </g>
+          <g id="pchurch">
+            <circle cx="760" cy="520" r="12" fill="#fff" />
+            <text x="784" y="528" style="font-size:26px">Christ Church &amp; Mall</text>
+          </g>
+        </svg>
+        <div class="side">
+          <div class="stat" id="st1" style="top:0"><small>LENGTH</small>~1.5 km</div>
+          <div class="stat" id="st2" style="top:150px"><small>TIME</small>1–3 h with stops</div>
+          <div class="stat" id="st3" style="top:300px"><small>LEVEL</small>Easy · cliff edge</div>
+          <div class="stat" id="st4" style="top:450px"><small>BEST</small>Early morning</div>
+        </div>
+        <div class="quote" id="qq">Price: Get Quote</div>
+        <div class="note">Schematic map, not to scale · most guides start near the Kasauli Club</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kk", "#tt"], { opacity: 0, y: 24, duration: 0.5, stagger: 0.12, ease: "power3.out" }, 0.1);
+      const rp = document.getElementById("roadp"); const RL = rp.getTotalLength();
+      tl.fromTo(rp, { strokeDasharray: RL, strokeDashoffset: RL }, { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" }, 0.5);
+      tl.from("#kmroad", { opacity: 0, x: -20, duration: 0.4 }, 1.9);
+      tl.from(["#up", "#up2"], { opacity: 0, duration: 0.5 }, 2.2);
+      const tr = document.getElementById("trailr"); const TL = tr.getTotalLength();
+      const w = document.getElementById("walker");
+      function put(t) { const a = tr.getPointAtLength(TL * t); w.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + a.y.toFixed(2) + ")"); }
+      put(0);
+      tl.from(["#trail", "#trl"], { opacity: 0, duration: 0.5 }, 2.8);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 4.2, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 3.0);
+      tl.fromTo("#sunpin", { scale: 0.4, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.5, ease: "back.out(2)" }, 7.1);
+      tl.from("#pmonkey", { opacity: 0, y: 14, duration: 0.5 }, 7.6);
+      tl.from("#pchurch", { opacity: 0, y: 14, duration: 0.5 }, 8.1);
+      tl.from(["#st1", "#st2", "#st3", "#st4"], { opacity: 0, x: 30, duration: 0.45, stagger: 0.7, ease: "power3.out" }, 3.0);
+      tl.from("#qq", { opacity: 0, scale: 0.9, duration: 0.5, ease: "back.out(1.6)" }, 8.8);
+      tl.to("#qq", { opacity: 1, duration: 0.01 }, 11.98);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
