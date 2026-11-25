@@ -135,7 +135,7 @@ def route_planner(p, r):
     pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
     cfg = dict(p={k: [round(PLACES[k][0], 3), round(PLACES[k][1], 3)] for k in (r["a"], r["b"])},
                r=[dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u="")], v=pv, s=p["slug"],
-               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
+               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.1/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.1/dist/maplibre-gl.css")
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
     return (f'<section class="szc-sec" id="live"><span class="szc-kicker">Live road map</span><h2>Watch the {r["a"]} to {r["b"]} drive - with the fare</h2>'
             f'<p class="szc-lead">The real {r["km"]} km road from OpenStreetMap, drawn live as the car drives it. Pick a car and trip type - the fare for every fleet tier updates below, then lock it on WhatsApp.</p>'

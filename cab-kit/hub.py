@@ -77,7 +77,7 @@ def planner():
     assert not any(c in k for k in pp for c in ";|'<>"), "place names must not contain ; | ' < >"
     # 6 Nov 2026 hub size trim (ENHANCEMENTS #19): places as one "Name;lat;lon|..." string (~1.2 KB less than the JSON object); kit_hub.js expands it back to PC.p
     cfg = dict(p=places_inline(pp), r=pr, v=pv, s="cabs",
-               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css")
+               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.1/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.1/dist/maplibre-gl.css")
     vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
     # 7 Nov 2026 (ENHANCEMENTS #15): one-tap popular route chips - tap = fill From/To + run (kit.js data-plan-route handler; kit_hub.js clears stops).
     # Taken from ROUTES (live pages only), so a renamed/unpublished route simply drops out; topped up from ROUTES order to 8.
