@@ -1,0 +1,14 @@
+[
+ {
+  "id": 11411,
+  "find": "value=\"South India (Tamil Nadu · Hampi)\">South India (Tamil Nadu · Hampi)</label>",
+  "replace": "value=\"South India (Tamil Nadu · Hampi)\">South India (Tamil Nadu · Hampi)</label><label><input type=\"checkbox\" name=\"r\" value=\"Darjeeling · Sikkim\">Darjeeling · Sikkim</label>",
+  "expected_count": 1
+ },
+ {
+  "id": 11411,
+  "find": "\"Rajasthan\": [\"Udaipur|Jodhpur|Jaisalmer|Rajasthan\", [[\"/india-tours/rajasthan-tour/\", \"Rajasthan tour — 12 days\"], [\"/india-tours/agra-to-jaipur/\", \"Agra to Jaipur\"], [\"/india-tours/tiger-safari-india/\", \"Tiger safari in India\"]]], ",
+  "replace": "\"Rajasthan\": [\"Udaipur|Jodhpur|Jaisalmer|Rajasthan\", [[\"/india-tours/rajasthan-tour/\", \"Rajasthan tour — 12 days\"], [\"/india-tours/jaisalmer/\", \"Jaisalmer\"], [\"/india-tours/agra-to-jaipur/\", \"Agra to Jaipur\"]]], \"Darjeeling\": [\"Darjeeling|Sikkim|Gangtok\", [[\"/india-tours/darjeeling-sikkim-tour/\", \"Darjeeling and Sikkim\"], [\"/india-tours/best-time-to-visit-india/\", \"Best time to visit India\"]]], ",
+  "expected_count": 1
+ }
+]
