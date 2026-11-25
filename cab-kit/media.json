@@ -970,5 +970,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "dalhousie-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5ec504d97179643ce464e7a9bda5a767ff83d395/cab-kit/media/dalhousie-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5ec504d97179643ce464e7a9bda5a767ff83d395/cab-kit/media/dalhousie-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5ec504d97179643ce464e7a9bda5a767ff83d395/cab-kit/media/dalhousie-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
