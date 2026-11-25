@@ -10,5 +10,30 @@
    "Devotees arrive with prayers and faith",
    "Tuesday crowds, saffron flags"
   ]
+ },
+ "story": {
+  "title": "The legend of Mehandipur Balaji",
+  "beats": [
+   {
+    "arch": "hills",
+    "sky": "dusk",
+    "line": "Balaji appears on his own among rocks"
+   },
+   {
+    "arch": "pillar",
+    "sky": "night",
+    "line": "A mahant sees Hanuman in a dream"
+   },
+   {
+    "arch": "devi",
+    "sky": "dawn",
+    "line": "He finds the images on the hillside"
+   },
+   {
+    "arch": "devi",
+    "sky": "saffron",
+    "line": "Families still come seeking relief and blessings"
+   }
+  ]
  }
 }

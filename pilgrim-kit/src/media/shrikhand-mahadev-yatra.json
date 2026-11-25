@@ -10,5 +10,30 @@
    "Five camps, glaciers, then Nain Sarovar",
    "Only when the Kullu DC opens it"
   ]
+ },
+ "story": {
+  "title": "The legend of Shrikhand",
+  "beats": [
+   {
+    "arch": "himalaya",
+    "sky": "dusk",
+    "line": "Bhasmasura's boon: his touch turns to ash"
+   },
+   {
+    "arch": "cave",
+    "sky": "night",
+    "line": "Shiva withdraws into these high mountains"
+   },
+   {
+    "arch": "devi",
+    "sky": "saffron",
+    "line": "As Mohini, Vishnu tricks him into ash"
+   },
+   {
+    "arch": "lake",
+    "sky": "dawn",
+    "line": "Pilgrims climb to the rock lingam today"
+   }
+  ]
  }
 }
