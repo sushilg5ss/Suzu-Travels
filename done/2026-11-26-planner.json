@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-26-planner",
+ "agent": "Trip Planner",
+ "summary": "v3.1 rate audit #4: pilgrim 3,480, Srinagar 5,750, Rajasthan 4,700",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "35d58971eb4e2763c5abb250a8972a51510f90106359fa3a696f2ebaf0ea8c6c",
+   "base_sha256": "307fa523ae51515a3d3b241b225dc199ba98f059a1c411e96a452dc507a8c0fc",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-26T06:33:43Z",
+ "status": "deployed"
+}
