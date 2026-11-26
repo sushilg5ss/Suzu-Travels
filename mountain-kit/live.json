@@ -552,5 +552,15 @@
   "added": "2026-11-25",
   "peak_id": "nilkantha",
   "commercial": false
+ },
+ "papsura": {
+  "id": 25827,
+  "path": "/mountains-of-india/papsura/",
+  "kind": "peak",
+  "label": "Papsura",
+  "blurb": "6,451 m · Kullu's 'Peak of Evil' above the Tos glacier",
+  "added": "2026-11-26",
+  "peak_id": "papsura",
+  "commercial": true
  }
 }
