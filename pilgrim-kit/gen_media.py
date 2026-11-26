@@ -9,7 +9,7 @@
 
 Why illustrated: every visual is drawn here from SVG shapes, so there is no photo licence to worry about (Sushil, 8 Oct
 2026: "copyright claim na ho"). Temple drawings are stylised ARCHETYPES (himalaya, nagara, ghats, gopuram, cave, devi,
-pillar, gurudwara, pagoda, devi-cave, lake, hills) — never captioned as an exact architectural likeness.
+pillar, gurudwara, pagoda, devi-cave, lake, hills, kerala) — never captioned as an exact architectural likeness.
 
 Rules (same as the mountain kit): 1920x1080, 30 fps, silent, seamless loop (last frame == first frame), deterministic
 (no Math.random at runtime — every random number is generated here with a fixed seed). Hero text stays in the RIGHT 55%
@@ -345,15 +345,62 @@ def arch_hills():
     return ridges + stream + t + forest + mist + '<rect x="-40" y="960" width="2000" height="140" fill="#0e0b14"/>'
 
 
+def arch_kerala():
+    """Kerala temple (Guruvayur / Padmanabhaswamy / Sabarimala region type): white walls ringed with rows of lamps
+    (vilakkumadam), two tiers of steep sloping tiled roofs with small front gables and brass finials, a tall brass lamp
+    pillar (deepastambham) with tiers of flames, a gold flagstaff (kodimaram) and coconut palms on low green hills.
+    Added 26 Nov 2026. Stylised archetype, not a likeness — caption it "a Kerala-style temple"."""
+    hills = ('<path d="M-40 760 Q160 640 340 690 Q520 600 720 680 Q880 630 1100 700 Q1500 650 1960 720 L1960 1080 L-40 1080Z" fill="#1a2a2a"/>'
+             '<path d="M-40 860 Q200 780 420 820 Q700 770 900 830 Q1400 790 1960 850 L1960 1080 L-40 1080Z" fill="#122020"/>')
+    def palm(x, base, h, lean, op=1):
+        tx, ty = x + lean, base - h
+        trunk = f'<path d="M{x - 7} {base} Q{x + lean * .2:.0f} {base - h * .55:.0f} {tx - 4:.0f} {ty} L{tx + 4:.0f} {ty} Q{x + lean * .2 + 10:.0f} {base - h * .55:.0f} {x + 7} {base}Z" fill="#0b1414" opacity="{op}"/>'
+        fr = "".join(f'<path d="M{tx:.0f} {ty} Q{tx + dx * .55:.0f} {ty - 40 + dy * .2:.0f} {tx + dx:.0f} {ty + dy:.0f} Q{tx + dx * .5:.0f} {ty - 14 + dy * .25:.0f} {tx:.0f} {ty + 6}Z" fill="#0b1414" opacity="{op}"/>'
+                     for dx, dy in [(-120, 40), (-90, 80), (-40, 100), (40, 100), (95, 78), (125, 36), (10, -40)])
+        return trunk + fr
+    palms = palm(70, 960, 360, 40, .95) + palm(160, 980, 270, -30) + palm(850, 960, 380, -50, .95)
+    lampdots = lambda x0, x1, y, step=22: "".join(f'<circle cx="{x}" cy="{y}" r="3.6" fill="{GOLD2}"/>' for x in range(x0, x1 + 1, step))
+    wall = ('<rect x="200" y="900" width="500" height="30" fill="#2a1630" stroke="rgba(242,193,78,.45)" stroke-width="2"/>'
+            '<rect x="230" y="770" width="440" height="130" fill="#2b1a33" stroke="rgba(242,193,78,.55)" stroke-width="3"/>'
+            + "".join(f'<g id="lr{i}">{lampdots(248, 652, y)}</g>' for i, y in enumerate((792, 822, 852, 880)))
+            + door(450, 900, 64, 104))
+    def roof(x0, x1, top_x0, top_x1, yb, yt, gid):
+        tiles = "".join(f'<line x1="{x0 + (x1 - x0) * k / 14:.0f}" y1="{yb - 3}" x2="{top_x0 + (top_x1 - top_x0) * k / 14:.0f}" y2="{yt + 4}" stroke="{RIM}" stroke-width="1.3"/>' for k in range(1, 14))
+        cx = (x0 + x1) / 2
+        gw = (top_x1 - top_x0) * .3
+        gable = (f'<path d="M{cx - gw:.0f} {yt + (yb - yt) * .55:.0f} L{cx} {yt - 34} L{cx + gw:.0f} {yt + (yb - yt) * .55:.0f}Z" fill="{SIL}" stroke="{GOLD}" stroke-width="2.4"/>'
+                 f'<path d="M{cx - gw * .55:.0f} {yt + (yb - yt) * .45:.0f} L{cx} {yt - 8} L{cx + gw * .55:.0f} {yt + (yb - yt) * .45:.0f}" fill="none" stroke="{RIM}" stroke-width="2"/>')
+        return (f'<path d="M{x0} {yb} L{top_x0} {yt} L{top_x1} {yt} L{x1} {yb}Z" fill="#2a1214" stroke="{GOLD}" stroke-width="2.6"/>' + tiles
+                + f'<line x1="{top_x0}" y1="{yt}" x2="{top_x1}" y2="{yt}" stroke="{GOLD}" stroke-width="4"/>' + gable)
+    roofs = (roof(170, 730, 300, 600, 778, 676, "r1")
+             + '<rect x="320" y="610" width="260" height="66" fill="#2b1a33" stroke="rgba(242,193,78,.55)" stroke-width="2"/>' + lampdots(336, 566, 643, 23)
+             + roof(270, 630, 360, 540, 618, 530, "r2")
+             + "".join(kalash(x, 528, .8) for x in (390, 450, 510)))
+    pillar = ('<rect x="752" y="560" width="16" height="360" fill="#6b4a1a" stroke="' + GOLD + '" stroke-width="2"/>'
+              '<path d="M722 930 L798 930 L784 900 L736 900Z" fill="#6b4a1a" stroke="' + GOLD + '" stroke-width="2"/>'
+              + "".join(f'<ellipse cx="760" cy="{y}" rx="{rx}" ry="6" fill="#6b4a1a" stroke="{GOLD}" stroke-width="1.6"/>'
+                        f'<g id="lp{i}">' + "".join(f'<ellipse cx="{760 + rx * math.cos(a):.0f}" cy="{y - 8 + 3 * math.sin(a):.0f}" rx="3.2" ry="6" fill="#ffe7a8"/>' for a in [k * math.pi / 3 + .3 for k in range(6)]) + '</g>'
+                        for i, (y, rx) in enumerate([(600, 24), (660, 32), (720, 40), (780, 48), (840, 56)]))
+              + kalash(760, 548, .7))
+    staff = ('<rect x="96" y="560" width="10" height="370" fill="' + GOLD + '"/>'
+             + "".join(f'<rect x="90" y="{y}" width="22" height="7" rx="2" fill="{GOLD2}"/>' for y in range(600, 930, 48))
+             + '<path d="M84 930 L118 930 L112 906 L90 906Z" fill="' + GOLD + '"/>' + flag(101, 560, 1, "fg"))
+    ground = '<rect x="-40" y="930" width="2000" height="170" fill="#0e0b14"/>'
+    glow = '<ellipse cx="450" cy="900" rx="320" ry="40" fill="url(#eg2)" opacity=".35"/>'
+    return ('<defs><radialGradient id="eg2"><stop offset="0" stop-color="#fff1b8" stop-opacity=".95"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient></defs>'
+            + hills + palms + roofs + wall + glow + pillar + staff + ground)
+
+
 ARCH = {"himalaya": arch_himalaya, "nagara": arch_nagara_sea, "ghats": arch_ghats, "devi": arch_devi,
         "gopuram": arch_gopuram, "cave": arch_cave, "pillar": arch_pillar, "gurudwara": arch_gurudwara,
-        "pagoda": arch_pagoda, "devi-cave": arch_devicave, "lake": arch_lake, "hills": arch_hills}
-SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk", "lake": "snow", "hills": "dawn"}
+        "pagoda": arch_pagoda, "devi-cave": arch_devicave, "lake": arch_lake, "hills": arch_hills,
+        "kerala": arch_kerala}
+SKY_FOR = {"himalaya": "snow", "nagara": "dusk", "ghats": "saffron", "devi": "dawn", "gopuram": "dusk", "cave": "night", "pillar": "night", "gurudwara": "dawn", "pagoda": "snow", "devi-cave": "dusk", "lake": "snow", "hills": "dawn", "kerala": "dusk"}
 
 
 def scene_svg(arch, uid, sky=None):
     sky = sky or SKY_FOR[arch]
-    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60), "lake": (760, 230, 60), "hills": (760, 300, 80)}.get(arch, (470, 560, 140))
+    sun = {"himalaya": (470, 420, 110), "pagoda": (700, 250, 60), "pillar": (450, 420, 60), "cave": (700, 220, 50), "devi-cave": (760, 240, 60), "lake": (760, 230, 60), "hills": (760, 300, 80), "kerala": (600, 340, 90)}.get(arch, (470, 560, 140))
     return (sky_svg(uid, sky, sun) + (stars(uid, 80, 7) if sky in ("night", "snow", "dusk") else "")
             + mandala(sun[0], sun[1], 300, f"md{uid}", op=.18)
             + f'<svg class="lay" viewBox="0 0 {W} {H}">{DEFS}<g>{ARCH[arch]()}</g></svg>')
@@ -362,7 +409,7 @@ def scene_svg(arch, uid, sky=None):
 def arch_js(arch, uid_prefix, dur, start=0.0):
     """Small seamless secondary motion for an archetype (flag sway, waves, diya bob, pillar pulse)."""
     js = []
-    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave", "lake", "hills"):
+    if arch in ("himalaya", "nagara", "devi", "pagoda", "devi-cave", "lake", "hills", "kerala"):
         js.append(f'tl.fromTo("{uid_prefix} #fg",{{rotation:-6}},{{rotation:6,duration:{dur / 8:.3f},ease:"sine.inOut",yoyo:true,repeat:7}},{start});')
     if arch == "nagara":
         for i in range(4):
@@ -377,6 +424,11 @@ def arch_js(arch, uid_prefix, dur, start=0.0):
         for i in range(3):
             js.append(f'tl.fromTo("{uid_prefix} #ms{i}",{{x:0}},{{x:{40 - i * 30},duration:{dur / 2:.3f},ease:"sine.inOut",yoyo:true,repeat:1}},{start});')
         js.append(f'tl.fromTo("{uid_prefix} #stm",{{strokeDashoffset:0}},{{strokeDashoffset:-400,duration:{dur:.3f},ease:"none"}},{start});')
+    if arch == "kerala":
+        for i in range(5):
+            js.append(f'tl.fromTo("{uid_prefix} #lp{i}",{{opacity:.55}},{{opacity:1,duration:{dur / 14:.3f},ease:"sine.inOut",yoyo:true,repeat:13}},{start});')
+        for i in range(4):
+            js.append(f'tl.fromTo("{uid_prefix} #lr{i}",{{opacity:.6}},{{opacity:1,duration:{dur / 8:.3f},ease:"sine.inOut",yoyo:true,repeat:7}},{start + i * .15:.2f});')
     if arch == "pillar":
         js.append(f'tl.fromTo("{uid_prefix} #pil",{{scaleX:.85,opacity:.85}},{{scaleX:1.12,opacity:1,duration:{dur / 4:.3f},ease:"sine.inOut",yoyo:true,repeat:3}},{start});')
         js.append(f'tl.fromTo("{uid_prefix} #ob1",{{y:0}},{{y:-640,duration:{dur / 2:.3f},ease:"sine.inOut",yoyo:true,repeat:1}},{start});')
