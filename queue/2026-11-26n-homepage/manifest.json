@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-26n-homepage",
+ "agent": "Homepage Enhancement",
+ "summary": "Trip route fixes (8 trips) + kashmir-7 itinerary + explorer sorts (best value per day, coldest nights / snow first) + 11 Explore links",
+ "files": [
+  {
+   "target": "index.html",
+   "source": "index.html",
+   "sha256": "cbd219f3897701f107af5694b699987fa9067e84aa0d948232a3124a433f6d25",
+   "base_sha256": "cf8e022040c612fa47db5f34b1896418c56063e66c84f626e679aa88c24258b7",
+   "backup": "index-nz-previous.html",
+   "url": "https://suzutravels.com/",
+   "bytes": 1077601
+  },
+  {
+   "target": "suzu-nz-trips.json",
+   "source": "suzu-nz-trips.json",
+   "sha256": "0e4d9fb693bfaab1677b4341bdb2ab5f726a1b445f6a1cbb86ce7f58c2b748ba",
+   "base_sha256": "1f13fabbfbc3610b848026cad0ee1ea6548ce37797d74ab44d9347c7785deca1",
+   "backup": null,
+   "url": "https://suzutravels.com/suzu-nz-trips.json",
+   "bytes": 162760
+  }
+ ]
+}
