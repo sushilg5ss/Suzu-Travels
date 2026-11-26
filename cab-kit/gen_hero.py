@@ -214,6 +214,7 @@ VARIANTS = {
   "outstation-cab-delhi": dict(routes=[("Delhi outstation",None)], kicker="ONE-WAY FROM DELHI NCR"),
   "amritsar-taxi-service": dict(routes=[("Amritsar taxis",None)], kicker="GOLDEN TEMPLE · WAGAH"),
   "nainital-taxi-service": dict(routes=[("Nainital taxis",None)], kicker="KATHGODAM · LAKES · KAINCHI"),
+  "haldwani-taxi-service": dict(routes=[("Haldwani taxis",None)], kicker="NAINITAL · KAINCHI DHAM · ALMORA"),
   "chandigarh-airport-taxi": dict(routes=[("Chandigarh Airport",None)], kicker="IXC · SHIMLA · MANALI"),
   "dehradun-airport-taxi": dict(routes=[("Dehradun Airport",None)], kicker="JOLLY GRANT · RISHIKESH · MUSSOORIE"),
   "delhi-airport-taxi": dict(routes=[("Delhi Airport",None)], kicker="IGI T1 · T2 · T3 · AGRA · HILLS"),

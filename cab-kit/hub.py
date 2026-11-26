@@ -162,6 +162,7 @@ def build():
              ("outstation-cab-delhi", "Outstation cab from Delhi", "One-way drops and round trips from all of Delhi NCR to the hills, Haridwar, Amritsar, Agra and Jaipur."),
              ("amritsar-taxi-service", "Amritsar taxi service", "Airport & Golden Temple pickups, Wagah border trips; drops to Dharamshala, Dalhousie, Jammu, Katra & Delhi."),
              ("nainital-taxi-service", "Nainital taxi service", "Kathgodam & Pantnagar pickups, lake tour, Kainchi Dham; drops to Mukteshwar, Almora, Ranikhet, Corbett & Delhi."),
+             ("haldwani-taxi-service", "Haldwani taxi service", "Station, bus stand & Pantnagar pickups; drops to Nainital, Kainchi Dham, Almora, Ranikhet, Corbett & Delhi."),
              ("tempo-traveller-hire-delhi", "Tempo Traveller hire in Delhi", "12–17 seats for hill trips, Char Dham and weddings."),
              ("tempo-traveller-chandigarh", "Tempo Traveller in Chandigarh", "12-seater, 17-seater & Urbania from the Tricity and IXC to Shimla, Manali, Dharamshala, Amritsar & Rishikesh."),
              ("innova-crysta-on-rent", "Innova Crysta on rent", "With driver, from ₹19/km for tours; one-way hill drops."),
