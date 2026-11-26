@@ -67,7 +67,7 @@ body.page-id-PID .szt-talk{background:#0E1B14!important}
 @media(max-width:768px){body.page-id-PID{max-width:none!important}}
 """.replace('PID', str(P)).replace('UPLD', U)
 
-PLACES = ['Golden Triangle', 'Himachal (Shimla · Manali)', 'Kashmir', 'Rishikesh & Haridwar', 'Char Dham', 'Varanasi', 'Rajasthan', 'Amritsar', 'Ladakh', 'Kerala', 'Goa', 'South India (Tamil Nadu · Hampi)', 'Darjeeling · Sikkim', 'Not sure yet']  # South India chip added 2026-11-24 (row 41); Darjeeling · Sikkim 2026-11-25 (row 42)
+PLACES = ['Golden Triangle', 'Himachal (Shimla · Manali)', 'Kashmir', 'Rishikesh & Haridwar', 'Char Dham', 'Varanasi', 'Rajasthan', 'Amritsar', 'Ladakh', 'Kerala', 'Goa', 'South India (Tamil Nadu · Hampi)', 'Darjeeling · Sikkim', 'Andaman Islands', 'Not sure yet']  # South India chip added 2026-11-24 (row 41); Darjeeling · Sikkim 2026-11-25 (row 42)
 
 def planner():
     chips = ''.join(f'<label><input type="checkbox" name="r" value="{html.escape(p)}"{" checked" if i == 0 else ""}>{html.escape(p)}</label>' for i, p in enumerate(PLACES))

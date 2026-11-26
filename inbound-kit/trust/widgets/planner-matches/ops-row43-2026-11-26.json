@@ -1,0 +1,14 @@
+[
+ {
+  "id": 11411,
+  "find": "value=\"Darjeeling · Sikkim\">Darjeeling · Sikkim</label>",
+  "replace": "value=\"Darjeeling · Sikkim\">Darjeeling · Sikkim</label><label><input type=\"checkbox\" name=\"r\" value=\"Andaman Islands\">Andaman Islands</label>",
+  "expected_count": 1
+ },
+ {
+  "id": 11411,
+  "find": "[[\"/india-tours/darjeeling-sikkim-tour/\", \"Darjeeling and Sikkim\"], [\"/india-tours/best-time-to-visit-india/\", \"Best time to visit India\"]]], \"Amritsar\": ",
+  "replace": "[[\"/india-tours/darjeeling-sikkim-tour/\", \"Darjeeling and Sikkim\"], [\"/india-tours/best-time-to-visit-india/\", \"Best time to visit India\"]]], \"Andaman\": [\"Andaman|Havelock|Port Blair\", [[\"/india-tours/andaman-islands/\", \"Andaman Islands guide\"], [\"/india-tours/best-time-to-visit-india/\", \"Best time to visit India\"], [\"/india-tours/goa-holiday/\", \"Goa holiday guide\"]]], \"Amritsar\": ",
+  "expected_count": 1
+ }
+]
