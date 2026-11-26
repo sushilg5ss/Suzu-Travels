@@ -1,5 +1,5 @@
 {
-  "version": "0.6 — 24 Nov 2026 (Gulmarg mid-Dec–mid-Mar ski-season peak; Rajasthan Oct–Mar peak window; audit #2 + kashmir_resort class)",
+  "version": "0.7 — 26 Nov 2026 (audit #4: pilgrim 3,480, kashmir 5,750, rajasthan 4,700; 25 Nov audit #3 pilgrim; 24 Nov Gulmarg ski-season peak; Rajasthan Oct–Mar peak window)",
   "note": "Estimator rates. Deliberately on the higher side of the 2026 market so the team can confirm at or below the estimate. Cab per-km rates and driver allowance are the same as the live /cabs/ fare engine (cab-kit/cabs_data.py). Hotel rates: per room per night incl. breakfast + dinner (MAP), double occupancy, off-peak. Sources: research/rates-sources.md.",
   "cab": {
     "min_km_per_day": 250,
@@ -23,12 +23,12 @@
       "hill_premium": {"label": "Popular hill station",    "deluxe": 3800},
       "hill":         {"label": "Hill town",               "deluxe": 3200},
       "remote":       {"label": "Remote valley / camp",    "deluxe": 3600},
-      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 3160},
+      "pilgrim":      {"label": "Pilgrim town",            "deluxe": 3480},
       "pilgrim_city": {"label": "Pilgrim city (Katra / Haridwar)", "deluxe": 4000},
-      "kashmir":      {"label": "Kashmir (Srinagar)",      "deluxe": 5000},
+      "kashmir":      {"label": "Kashmir (Srinagar)",      "deluxe": 5750},
       "kashmir_resort": {"label": "Kashmir resort town (Gulmarg / Pahalgam / Sonamarg)", "deluxe": 6800},
       "ladakh":       {"label": "Ladakh",                  "deluxe": 4300},
-      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 4100}
+      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 4700}
     },
     "tiers": [
       {"id": "standard", "name": "Standard (2★ / homestay)", "hi": "स्टैंडर्ड", "f": 0.7},

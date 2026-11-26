@@ -78,3 +78,17 @@ Same method as audits #1/#2 (live hotel metasearch via MCP, 2 adults · 1 room �
 
 Kangra (audit #2) was 6,080 public. The pilgrim class is still below target after the cap → re-check next audit (with Jwala Ji, Naina Devi). Char Dham towns: flag for a yatra-season (May–Jun, Sep–Oct) by_class window once 2027 rates are published.
 Source: https://slicktrip.com/hotels (searches above, run 25 Nov 2026).
+
+# Rate audit #4 — 26 Nov 2026 (v3.1) — Srinagar, Jaipur, Jwala Ji, Naina Devi
+Same method (live hotel metasearch via MCP, 2 adults · 1 room · 1 night, cheapest first, USD × ₹88; public deluxe MAP = median priced listing × 1.12 + ₹900; target base ≈ 0.87 × public; max +15 % per class per run). Srinagar/Jaipur: ≥3★ filter, deluxe-comparable median = 3–4★ listings (5★ excluded) except Jaipur July (cheap 5★ included, few 3–4★ priced).
+
+| Place (class) | Date | Priced listings (USD) | Median | Public deluxe MAP ₹ | Planner deluxe before → after |
+|---|---|---|---|---|---|
+| Srinagar (kashmir) | 15 Jan 27 (off-peak) | 3–4★: 62, 65, 97, 104, 110, 172 (5★ 127–311) | 100 | 10,800 | 5,000 → **5,750** (+15 %, cap; still far below → next audit) |
+| Jaipur (rajasthan) | 15 Jan 27 (peak) | 3–4★: 50, 68, 71, 86, 100 | 71 | 7,900 (vs our peak 4,100 × 1.25 = 5,125) | 4,100 → **4,700** (+15 %, cap) |
+| Jaipur (rajasthan) | 15 Jul 27 (off-peak) | 50 (5★ deal), 57, 62, 75, 120 | 62 | 7,010 | ″ — target ≈ 6,100, still below → next audit |
+| Jawalamukhi / Jwala Ji (pilgrim) | 15 Jan 27 | 23, 27, 50, 55, 56, 116, 124 (5 unpriced) | 55 | 6,320 | 3,160 → **3,480** (= target 0.87 × median of Chintpurni 4,250 / Uttarkashi 3,760 / Naina Devi 3,660 / Jwala Ji 6,320 ≈ 4,000) |
+| Naina Devi (pilgrim) | 15 Jan 27 | 15, 25, 25, 31, 45, 55 (6 unpriced; some Anandpur Sahib) | 28 | 3,660 | ″ |
+
+Pilgrim class now at target. Kashmir (Srinagar) and Rajasthan still below → continue +15 %/run in later audits. Char Dham yatra-season window: re-check Apr 2027.
+Source: https://slicktrip.com/hotels (searches above, run 26 Nov 2026).
