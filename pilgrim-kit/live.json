@@ -45,5 +45,6 @@
  "dwarkadhish": {"id": 24632, "path": "/pilgrimage-tours/dwarkadhish/", "kind": "temple", "label": "Dwarkadhish, Dwarka", "blurb": "Krishna as king, on the Gomti and the western sea", "added": "2026-11-22"},
  "meenakshi-temple": {"id": 25043, "path": "/pilgrimage-tours/meenakshi-temple/", "kind": "temple", "label": "Meenakshi Temple, Madurai", "blurb": "The warrior queen and Shiva's wedding city", "added": "2026-11-23"},
  "shani-shingnapur": {"id": 25242, "path": "/pilgrimage-tours/shani-shingnapur/", "kind": "temple", "label": "Shani Shingnapur, Maharashtra", "blurb": "Shani Dev's open-sky stone and the village without doors", "added": "2026-11-24"},
- "jagannath-puri": {"id": 25645, "path": "/pilgrimage-tours/jagannath-puri/", "kind": "temple", "label": "Jagannath Temple, Puri", "blurb": "The eastern dham by the sea and the chariot festival", "added": "2026-11-25"}
+ "jagannath-puri": {"id": 25645, "path": "/pilgrimage-tours/jagannath-puri/", "kind": "temple", "label": "Jagannath Temple, Puri", "blurb": "The eastern dham by the sea and the chariot festival", "added": "2026-11-25"},
+ "siddhivinayak": {"id": 25892, "path": "/pilgrimage-tours/siddhivinayak/", "kind": "temple", "label": "Siddhivinayak, Mumbai", "blurb": "Mumbai's right-trunk Ganapati and its pre-dawn Tuesdays", "added": "2026-11-26"}
 }
