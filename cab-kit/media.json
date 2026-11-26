@@ -979,5 +979,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "haldwani-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c40475ad7e89091d23668380cd6628f0fc60d59e/cab-kit/media/haldwani-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c40475ad7e89091d23668380cd6628f0fc60d59e/cab-kit/media/haldwani-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@c40475ad7e89091d23668380cd6628f0fc60d59e/cab-kit/media/haldwani-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
