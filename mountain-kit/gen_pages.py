@@ -929,7 +929,7 @@ def content_page(slug):
     base_links = [[HUB, "Mountains of India", "Records, permits and training"], [LIST, "Highest peaks in India", f"Full list of {TOTAL} peaks"], [EXP, "Guided peak climbs", "Friendship Peak to Deo Tibba"]]
     links = c.get("links", base_links)
     rel = "".join(tile(v) for _, v in related(slug, c))
-    more = ('<section class="szm-sec" id="more"><h2>Keep exploring</h2><div class="szm-links">' + rel + "".join(f'<a class="szm-link" href="{a}"><span class="n">{e(b)}</span><span class="c">{e(re.sub(r"Full list of \\d+ peaks", f"Full list of {TOTAL} peaks", d))}</span></a>' for a, b, d in links)
+    more = ('<section class="szm-sec" id="more"><h2>Keep exploring</h2><div class="szm-links">' + rel + "".join(f'<a class="szm-link" href="{a}"><span class="n">{e(b)}</span><span class="c">{e(re.sub(r"Full list of \d+ peaks", f"Full list of {TOTAL} peaks", d))}</span></a>' for a, b, d in links)
             + f'</div><h3 style="margin-top:30px">Sources</h3>{sources([tuple(x) for x in c.get("sources", [])])}{photo_credits(GI)}</section>')
     body = hero + nav(navi[:9], wa(wa_text)) + "".join(sec) + f'<section class="szm-sec">{quote}</section>' + more
     graph = []
