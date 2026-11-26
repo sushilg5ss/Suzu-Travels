@@ -4010,5 +4010,155 @@
   "src": "https://commons.wikimedia.org/wiki/File:Three_giraffes_01.jpg",
   "wp_id": 25341,
   "med": "https://suzutravels.com/wp-content/uploads/2026/11/kenya-masai-mara-giraffes-768x511.webp"
+ },
+ "tanzania-1": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-lion.webp",
+  "alt": "A male lion scanning the horizon in Serengeti National Park, Tanzania",
+  "cap": "Serengeti",
+  "credit": "Giles Laurent",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "wp_id": 25749,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-lion-768x512.webp"
+ },
+ "tanzania-2": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-ngorongoro-crater.webp",
+  "alt": "View from the rim over the floor and lake of the Ngorongoro Crater, Tanzania",
+  "cap": "Ngorongoro Crater",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Cr%C3%A1ter_volc%C3%A1nico,_zona_de_conservaci%C3%B3n_de_Ngorongoro,_Tanzania,_2024-05-27,_DD_11.jpg",
+  "wp_id": 25750,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-ngorongoro-crater-768x285.webp"
+ },
+ "tanzania-3": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-masai-giraffe.webp",
+  "alt": "A Masai giraffe in Serengeti National Park, Tanzania",
+  "cap": "Masai giraffe, Serengeti",
+  "credit": "Giles Laurent",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:042_Masai_giraffe_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "wp_id": 25755,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-masai-giraffe-768x512.webp"
+ },
+ "tanzania-4": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-mount-kilimanjaro.webp",
+  "alt": "The snow-capped summit of Mount Kilimanjaro rising above the clouds, Tanzania",
+  "cap": "Mount Kilimanjaro",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Kilimanjaro,_Tanzania,_2024-05-22,_DD_110.jpg",
+  "wp_id": 25747,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-mount-kilimanjaro-768x330.webp"
+ },
+ "tanzania-5": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-tarangire-baobab.webp",
+  "alt": "An African baobab tree in Tarangire National Park, Tanzania",
+  "cap": "Baobab, Tarangire",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Baobab_(Adansonia_digitata),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-24,_DD_78.jpg",
+  "wp_id": 25751,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-tarangire-baobab-768x543.webp"
+ },
+ "tanzania-6": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-stone-town-harbour.webp",
+  "alt": "Boats in the harbour in front of the seafront buildings of Stone Town, Zanzibar, Tanzania",
+  "cap": "Stone Town, Zanzibar",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Puerto_de_Stone_Town,_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_01.jpg",
+  "wp_id": 25752,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-stone-town-harbour-768x269.webp"
+ },
+ "tanzania-7": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-mara-river-crossing.webp",
+  "alt": "Wildebeest crossing the Mara River in Serengeti National Park, Tanzania",
+  "cap": "Mara River crossing",
+  "credit": "Charles J Sharp",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Western_white-bearded_wildebeest_(Connochaetes_taurinus_mearnsi)_Mara_River_crossing_2b.jpg",
+  "wp_id": 25753,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-mara-river-crossing-768x512.webp"
+ },
+ "tanzania-8": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-cheetah.webp",
+  "alt": "A cheetah close-up in Serengeti National Park, Tanzania",
+  "cap": "Cheetah, Serengeti",
+  "credit": "Giles Laurent",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:037_Cheetah_close-up_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "wp_id": 25754,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-cheetah-768x512.webp"
+ },
+ "tanzania-9": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-tarangire-elephant.webp",
+  "alt": "An African bush elephant in Tarangire National Park, Tanzania",
+  "cap": "Elephant, Tarangire",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Elefante_africano_de_sabana_(Loxodonta_africana),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-24,_DD_32.jpg",
+  "wp_id": 25756,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-tarangire-elephant-768x512.webp"
+ },
+ "tanzania-10": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-ngorongoro-landscape.webp",
+  "alt": "Grassland, pools and green hills under low cloud in the Ngorongoro Conservation Area, Tanzania",
+  "cap": "Ngorongoro highlands",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Paisaje_en_la_zona_de_conservaci%C3%B3n_de_Ngorongoro,_Tanzania,_2024-05-27,_DD_57.jpg",
+  "wp_id": 25757,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-ngorongoro-landscape-768x272.webp"
+ },
+ "tanzania-11": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-sunrise.webp",
+  "alt": "Golden early light over the grass plains and a distant hill in Serengeti National Park, Tanzania",
+  "cap": "Serengeti sunrise",
+  "credit": "Giles Laurent",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "wp_id": 25748,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-sunrise-768x246.webp"
+ },
+ "tanzania-12": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-forodhani-park.webp",
+  "alt": "Forodhani Park on the Stone Town seafront, Zanzibar, Tanzania",
+  "cap": "Forodhani Park, Stone Town",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Parque_Forodhani,_Stone_Town,_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_29-31_HDR.jpg",
+  "wp_id": 25758,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-forodhani-park-768x559.webp"
+ },
+ "tanzania-13": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-nungwi-beach.webp",
+  "alt": "White sand and turquoise shallow water at Nungwi Beach, Zanzibar, Tanzania",
+  "cap": "Nungwi Beach, Zanzibar",
+  "credit": "ObonyoML",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:White_sandy_beach_at_Nungwi,_Zanzibar.jpg",
+  "wp_id": 25759,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-nungwi-beach-768x576.webp"
+ },
+ "tanzania-14": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-nungwi-dhow-scaled.webp",
+  "alt": "A dhow off Nungwi Beach, Zanzibar, Tanzania",
+  "cap": "Dhow off Nungwi",
+  "credit": "Paul W",
+  "license": "CC0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:Dhow_off_Nungwi_Beach,_Zanzibar,_Tanzania.jpg",
+  "wp_id": 25760,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-zanzibar-nungwi-dhow-768x1365.webp"
+ },
+ "tanzania": {
+  "url": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-lion.webp",
+  "alt": "A male lion scanning the horizon in Serengeti National Park, Tanzania",
+  "cap": "Serengeti",
+  "credit": "Giles Laurent",
+  "license": "CC BY-SA 4.0, Wikimedia Commons",
+  "src": "https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "wp_id": 25749,
+  "med": "https://suzutravels.com/wp-content/uploads/2026/11/tanzania-serengeti-lion-768x512.webp"
  }
 }

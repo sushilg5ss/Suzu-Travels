@@ -41,6 +41,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /seychelles-tour-packages/ | 24755 | `.hx` country page (23 Nov 2026) — `pages/gen_seychelles.py` (Mahé–Praslin–Curieuse–La Digue; 7-day itinerary grid = 4 columns; 7-photo gallery like Norway, `med` 768px thumbs; Wikimedia Commons photos) |
 | /oman-tour-packages/ | 25148 | `.hx` country page (24 Nov 2026) — `pages/gen_oman.py` (Muscat–coast–Wahiba–Nizwa + Musandam/Salalah/Dubai add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like Seychelles, `med` 768px thumbs; Wikimedia Commons photos) |
 | /kenya-tour-packages/ | 25353 | `.hx` country page (25 Nov 2026) — `pages/gen_kenya.py` (Nairobi–Masai Mara–Naivasha/Nakuru–Amboseli + Diani; 8-day itinerary grid = 4 columns; 7-photo gallery like Oman, `med` 768px thumbs; Wikimedia Commons photos) |
+| /tanzania-tour-packages/ | 25765 | `.hx` country page (26 Nov 2026) — `pages/gen_tanzania.py` (Arusha–Tarangire–Serengeti–Ngorongoro + Zanzibar; 8-day itinerary grid = 4 columns; 7-photo gallery like Kenya, `med` 768px thumbs; Wikimedia Commons photos) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -134,3 +135,9 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Commons thumbs 429'd from the sandbox again; WordPress fetched all 1920px thumbs, then the WP copies were viewed (contact sheet). Watch for Commons series titled 'Mara River crossing' — the Charles J Sharp set is in Serengeti, Tanzania.
 - Page content pushed in 5 chunks (`wp_update_page` + 4 marker replaces); the first chunk splits on `}` because the CSS block has no `><` in its first 16 KB. `content_length` matched local UTF-8 bytes after each step.
 - Grid cards for Kenya were inserted before the Seychelles card (Mauritius card on the Seychelles page) on all 34 country pages (+370 `.sx` / +329 `.hx`); hub delta +4,129 bytes matched the local build diff.
+
+## Notes (26 Nov 2026)
+- Tanzania Immigration (immigration.go.tz) is a JS app: curl gets only the shell; headless Chromium reads /tourist-info and /service-fee (click the "Visa" tab). The Quick Menu "Visa" link is the official Tanzania Visa Guidelines PDF (curl downloads it; `pdftotext -layout`). visa.immigration.go.tz and inbound.visitzanzibar.go.tz did not answer from the sandbox — not linked.
+- Commons Giles Laurent Serengeti series ("NNN_… Photo by Giles Laurent", CC BY-SA 4.0) and Diego Delso May 2024 Tanzania series (Spanish file names, CC BY-SA 4.0) are rich sources; Ikiwaner featured pictures are GFDL-1.2 only — skip. Commons raw wikitext and 1920px thumbs answered fine this run.
+- Hub diff: two identical Jan/Feb WHEN anchors → one replace with expected_count 2 (simulate locally first). Live hub still 22 bytes shorter than local build (pre-existing drift).
+- Grid cards for Tanzania inserted before the Kenya card on 34 country pages (+376 `.sx` / +340 `.hx`) and before Seychelles on the Kenya page.
