@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 30% 40%, #163a5c 0%, #0b1f33 70%); }
+      .kicker { position: absolute; left: 90px; top: 64px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .title { position: absolute; left: 90px; top: 108px; color: #fff; font-weight: 800; font-size: 70px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 60px; top: 220px; width: 1140px; height: 560px; overflow: visible; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .side { position: absolute; left: 1290px; top: 240px; width: 580px; height: 560px; }
+      .stat { position: absolute; left: 0; width: 580px; color: #fff; font-weight: 800; font-size: 48px; white-space: nowrap; }
+      .stat small { display: block; color: #d4a24c; font-size: 24px; letter-spacing: 0.14em; margin-bottom: 6px; }
+      .strip { position: absolute; left: 90px; top: 820px; width: 1100px; height: 180px; }
+      .strip .lab { position: absolute; left: 0; top: 0; color: #d4a24c; font-weight: 800; font-size: 24px; letter-spacing: 0.14em; white-space: nowrap; }
+      .bars { position: absolute; left: 0; top: 40px; width: 1100px; height: 100px; }
+      .b { position: absolute; bottom: 0; width: 78px; border-radius: 8px 8px 0 0; transform-origin: 50% 100%; }
+      .m { position: absolute; top: 146px; width: 78px; text-align: center; color: rgba(255,255,255,0.8); font-weight: 800; font-size: 20px; }
+      .note { position: absolute; left: 1290px; top: 1010px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 22px; white-space: nowrap; }
+      .quote { position: absolute; left: 1290px; top: 880px; height: 76px; padding: 0 34px; line-height: 76px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 36px; border-radius: 38px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker" id="kk">HOW THE HALF-DAY GOES · SHIMLA</div>
+        <div class="title" id="tt">Chadwick Falls in one picture</div>
+        <svg class="map" viewBox="0 0 1140 560">
+          <path id="roadp" d="M 60 110 C 220 100, 330 160, 460 190 S 640 230, 700 260" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="16" stroke-linecap="round" />
+          <circle cx="60" cy="110" r="14" fill="#fff" />
+          <text x="40" y="70" style="font-size:28px">Mall / Ridge</text>
+          <text id="kmroad" x="110" y="178" style="font-size:30px;fill:#d4a24c">~5–7 km by cab</text>
+          <circle cx="460" cy="190" r="12" fill="#fff" />
+          <text x="410" y="238" style="font-size:26px">Summer Hill</text>
+          <circle cx="700" cy="260" r="14" fill="#d4a24c" />
+          <text x="560" y="300" style="font-size:26px">road-head</text>
+          <path id="trail" d="M 700 260 C 740 320, 700 380, 760 430 S 840 470, 880 500" fill="none" stroke="#d4a24c" stroke-width="9" stroke-dasharray="3 18" stroke-linecap="round" />
+          <path id="trailr" d="M 700 260 C 740 320, 700 380, 760 430 S 840 470, 880 500" fill="none" stroke="none" />
+          <text id="trl" x="520" y="430" style="font-size:28px;fill:#d4a24c">≈10 min walk</text>
+          <g id="walker"><circle r="15" fill="#fff" stroke="#d4a24c" stroke-width="5" /></g>
+          <circle id="fallpin" cx="880" cy="500" r="18" fill="#2f8fb8" stroke="#fff" stroke-width="4" />
+          <text x="910" y="510" style="font-size:30px">Chadwick Falls</text>
+          <g id="loop">
+            <path d="M 460 190 C 520 60, 760 40, 860 120 S 820 300, 700 260" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round" />
+            <text x="760" y="40" style="font-size:24px;fill:rgba(255,255,255,0.9)">optional: Potter Hill loop 4.7 km</text>
+          </g>
+        </svg>
+        <div class="side">
+          <div class="stat" id="st1" style="top:0"><small>ALTITUDE</small>~1,586 m</div>
+          <div class="stat" id="st2" style="top:140px"><small>LEVEL</small>Easy · half-day</div>
+          <div class="stat" id="st3" style="top:280px"><small>SAFETY</small>Stay off wet rocks</div>
+          <div class="stat" id="st4" style="top:420px"><small>TIMING</small>Out before dusk</div>
+        </div>
+        <div class="strip">
+          <div class="lab" id="slab">WATER IN THE FALLS · MONTH BY MONTH</div>
+          <div class="bars" id="bars">
+            <div class="b" id="b1" style="left:0;height:22px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b2" style="left:92px;height:22px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b3" style="left:184px;height:26px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b4" style="left:276px;height:26px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b5" style="left:368px;height:22px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b6" style="left:460px;height:30px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b7" style="left:552px;height:100px;background:#d4a24c"></div>
+            <div class="b" id="b8" style="left:644px;height:100px;background:#d4a24c"></div>
+            <div class="b" id="b9" style="left:736px;height:92px;background:#d4a24c"></div>
+            <div class="b" id="b10" style="left:828px;height:70px;background:#d4a24c"></div>
+            <div class="b" id="b11" style="left:920px;height:36px;background:rgba(255,255,255,0.35)"></div>
+            <div class="b" id="b12" style="left:1012px;height:24px;background:rgba(255,255,255,0.35)"></div>
+          </div>
+          <div class="m" style="left:0">Jan</div><div class="m" style="left:92px">Feb</div><div class="m" style="left:184px">Mar</div><div class="m" style="left:276px">Apr</div><div class="m" style="left:368px">May</div><div class="m" style="left:460px">Jun</div><div class="m" style="left:552px;color:#d4a24c">Jul</div><div class="m" style="left:644px;color:#d4a24c">Aug</div><div class="m" style="left:736px;color:#d4a24c">Sep</div><div class="m" style="left:828px;color:#d4a24c">Oct</div><div class="m" style="left:920px">Nov</div><div class="m" style="left:1012px">Dec</div>
+        </div>
+        <div class="quote" id="qq">Cab + stay: Get Quote</div>
+        <div class="note">Schematic, not to scale · water levels indicative</div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kk", "#tt"], { opacity: 0, y: 24, duration: 0.5, stagger: 0.12, ease: "power3.out" }, 0.1);
+      const rp = document.getElementById("roadp"); const RL = rp.getTotalLength();
+      tl.fromTo(rp, { strokeDasharray: RL, strokeDashoffset: RL }, { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" }, 0.5);
+      tl.from("#kmroad", { opacity: 0, x: -20, duration: 0.4 }, 1.6);
+      const tr = document.getElementById("trailr"); const TL = tr.getTotalLength();
+      const w = document.getElementById("walker");
+      function put(t) { const a = tr.getPointAtLength(TL * t); w.setAttribute("transform", "translate(" + a.x.toFixed(2) + "," + a.y.toFixed(2) + ")"); }
+      put(0);
+      tl.from(["#trail", "#trl"], { opacity: 0, duration: 0.5 }, 2.2);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 3.2, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 2.4);
+      tl.fromTo("#fallpin", { scale: 0.4, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.5, ease: "back.out(2)" }, 5.5);
+      tl.from("#loop", { opacity: 0, duration: 0.6 }, 6.0);
+      tl.from(["#st1", "#st2", "#st3", "#st4"], { opacity: 0, x: 30, duration: 0.45, stagger: 0.8, ease: "power3.out" }, 2.4);
+      tl.from("#slab", { opacity: 0, y: 12, duration: 0.4 }, 6.6);
+      tl.from(["#b1","#b2","#b3","#b4","#b5","#b6","#b7","#b8","#b9","#b10","#b11","#b12"], { scaleY: 0, duration: 0.45, stagger: 0.12, ease: "power2.out" }, 6.8);
+      tl.from("#qq", { opacity: 0, scale: 0.9, duration: 0.5, ease: "back.out(1.6)" }, 9.4);
+      tl.to("#qq", { opacity: 1, duration: 0.01 }, 11.98);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
