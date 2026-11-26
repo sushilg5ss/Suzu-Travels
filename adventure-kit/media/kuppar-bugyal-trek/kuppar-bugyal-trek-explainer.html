@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "PJS"; src: url("assets/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; overflow: hidden; background: #0b1f33; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "PJS", sans-serif; background: radial-gradient(ellipse at 30% 40%, #163a5c 0%, #0b1f33 70%); }
+      .kicker { position: absolute; left: 90px; top: 64px; color: #d4a24c; font-weight: 800; font-size: 30px; letter-spacing: 0.14em; white-space: nowrap; }
+      .title { position: absolute; left: 90px; top: 108px; color: #fff; font-weight: 800; font-size: 70px; letter-spacing: -0.02em; white-space: nowrap; }
+      svg.map { position: absolute; left: 60px; top: 220px; width: 1160px; height: 560px; overflow: visible; }
+      svg text { font-family: "PJS", sans-serif; font-weight: 800; fill: #fff; }
+      .side { position: absolute; left: 1300px; top: 240px; width: 570px; height: 560px; }
+      .stat { position: absolute; left: 0; width: 570px; color: #fff; font-weight: 800; font-size: 46px; white-space: nowrap; }
+      .stat small { display: block; color: #d4a24c; font-size: 24px; letter-spacing: 0.14em; margin-bottom: 6px; }
+      .strip { position: absolute; left: 90px; top: 820px; width: 1110px; height: 190px; }
+      .strip .lab { position: absolute; left: 0; top: 0; color: #d4a24c; font-weight: 800; font-size: 24px; letter-spacing: 0.14em; white-space: nowrap; }
+      .cells { position: absolute; left: 0; top: 44px; width: 1110px; height: 64px; }
+      .c { position: absolute; top: 0; width: 84px; height: 64px; border-radius: 10px; }
+      .m { position: absolute; top: 116px; width: 84px; text-align: center; color: rgba(255,255,255,0.85); font-weight: 800; font-size: 20px; }
+      .key { position: absolute; top: 156px; color: rgba(255,255,255,0.9); font-weight: 500; font-size: 22px; white-space: nowrap; }
+      .key i { display: inline-block; width: 22px; height: 22px; border-radius: 5px; vertical-align: -4px; margin-right: 8px; }
+      .note { position: absolute; left: 1300px; top: 1010px; color: rgba(255,255,255,0.6); font-weight: 500; font-size: 22px; white-space: nowrap; }
+      .quote { position: absolute; left: 1300px; top: 880px; height: 76px; padding: 0 34px; line-height: 76px; background: #d4a24c; color: #0b1f33; font-weight: 800; font-size: 34px; border-radius: 38px; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <div id="ov" class="clip" data-start="0" data-duration="12" data-track-index="0" style="position:absolute;inset:0">
+        <div class="kicker" id="kk">HOW THE TREK GOES · UPPER SHIMLA</div>
+        <div class="title" id="tt">Kuppar Bugyal in one picture</div>
+        <svg class="map" viewBox="0 0 1160 560">
+          <line x1="20" y1="500" x2="1140" y2="500" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+          <path d="M 60 420 C 220 410, 360 330, 470 300 S 640 280, 760 250 S 960 120, 1080 90 L 1080 500 L 60 500 Z" fill="rgba(212,162,76,0.10)" />
+          <path id="road" d="M 60 420 C 220 410, 360 330, 470 300" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="16" stroke-linecap="round" />
+          <path id="track" d="M 470 300 C 560 290, 680 268, 760 250" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 12" />
+          <path id="trail" d="M 760 250 C 860 220, 980 120, 1080 90" fill="none" stroke="#d4a24c" stroke-width="9" stroke-dasharray="3 18" stroke-linecap="round" />
+          <path id="rp" d="M 60 420 C 220 410, 360 330, 470 300 C 560 290, 680 268, 760 250 C 860 220, 980 120, 1080 90" fill="none" stroke="none" />
+          <circle cx="60" cy="420" r="14" fill="#fff" />
+          <text x="40" y="470" style="font-size:28px">Shimla</text>
+          <text x="40" y="380" style="font-size:22px;fill:rgba(255,255,255,0.75)">~2,200 m</text>
+          <text x="170" y="320" style="font-size:28px;fill:#d4a24c">~75 km by cab</text>
+          <circle cx="470" cy="300" r="14" fill="#fff" />
+          <text x="400" y="350" style="font-size:28px">Kharapathar</text>
+          <text x="400" y="384" style="font-size:22px;fill:rgba(255,255,255,0.75)">~2,700 m · stay here</text>
+          <text x="520" y="250" style="font-size:26px;fill:rgba(255,255,255,0.9)">track 6–7 km</text>
+          <circle cx="760" cy="250" r="13" fill="#fff" />
+          <text x="700" y="300" style="font-size:26px">Giri Ganga temple</text>
+          <text x="880" y="262" style="font-size:26px;fill:#d4a24c">forest trail 3–5 km</text>
+          <path d="M 1010 92 L 1050 40 L 1080 70 L 1110 30 L 1150 92 Z" fill="rgba(255,255,255,0.85)" />
+          <circle cx="1080" cy="90" r="18" fill="#5f9e4a" stroke="#fff" stroke-width="4" />
+          <text x="975" y="58" text-anchor="end" style="font-size:30px">Kuppar Bugyal</text>
+          <text x="975" y="92" text-anchor="end" style="font-size:22px;fill:rgba(255,255,255,0.75)">meadow ~3,200 m</text>
+          <g id="car"><rect x="-22" y="-14" width="44" height="22" rx="7" fill="#fff" /><circle cx="-12" cy="10" r="6" fill="#d4a24c" /><circle cx="12" cy="10" r="6" fill="#d4a24c" /></g>
+          <g id="hiker"><circle r="15" fill="#d4a24c" stroke="#fff" stroke-width="5" /></g>
+        </svg>
+        <div class="side">
+          <div class="stat" id="st1" style="top:0"><small>LEVEL</small>Easy–moderate</div>
+          <div class="stat" id="st2" style="top:140px"><small>TRAIL</small>Unmarked · local guide</div>
+          <div class="stat" id="st3" style="top:280px"><small>SAFETY</small>Group, daylight only</div>
+          <div class="stat" id="st4" style="top:420px"><small>CARRY</small>2 L water · cash</div>
+        </div>
+        <div class="strip">
+          <div class="lab" id="slab">WHEN TO GO · MONTH BY MONTH</div>
+          <div class="cells" id="cells">
+            <div class="c" style="left:0;background:#dfe8f0"></div><div class="c" style="left:92px;background:#dfe8f0"></div><div class="c" style="left:184px;background:#dfe8f0"></div>
+            <div class="c" style="left:276px;background:#5f9e4a"></div><div class="c" style="left:368px;background:#5f9e4a"></div><div class="c" style="left:460px;background:#5f9e4a"></div>
+            <div class="c" style="left:552px;background:rgba(255,255,255,0.18)"></div><div class="c" style="left:644px;background:rgba(255,255,255,0.18)"></div><div class="c" style="left:736px;background:rgba(255,255,255,0.18)"></div>
+            <div class="c" style="left:828px;background:#d4a24c"></div><div class="c" style="left:920px;background:rgba(212,162,76,0.55)"></div><div class="c" style="left:1012px;background:#dfe8f0"></div>
+          </div>
+          <div class="m" style="left:0">Jan</div><div class="m" style="left:92px">Feb</div><div class="m" style="left:184px">Mar</div><div class="m" style="left:276px">Apr</div><div class="m" style="left:368px">May</div><div class="m" style="left:460px">Jun</div><div class="m" style="left:552px">Jul</div><div class="m" style="left:644px">Aug</div><div class="m" style="left:736px">Sep</div><div class="m" style="left:828px;color:#d4a24c">Oct</div><div class="m" style="left:920px">Nov</div><div class="m" style="left:1012px">Dec</div>
+          <div class="key" style="left:0"><i style="background:#dfe8f0"></i>Snow · guide only</div>
+          <div class="key" style="left:270px"><i style="background:#5f9e4a"></i>Flowers Apr–Jun</div>
+          <div class="key" style="left:540px"><i style="background:rgba(255,255,255,0.18)"></i>Monsoon · avoid</div>
+          <div class="key" style="left:810px"><i style="background:#d4a24c"></i>Best: Oct · Nov cold</div>
+        </div>
+        <div class="quote" id="qq">Stay + cab + guide: Get Quote</div>
+        <div class="note">Schematic, not to scale · distances approximate</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from(["#kk", "#tt"], { opacity: 0, y: 24, duration: 0.5, stagger: 0.12, ease: "power3.out" }, 0.1);
+      tl.fromTo("#road", { strokeDasharray: "0 2000" }, { strokeDasharray: "2000 0", duration: 2.0, ease: "power1.inOut" }, 0.5);
+      tl.fromTo("#track", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 2.6);
+      tl.fromTo("#trail", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 4.0);
+      tl.fromTo("#trail", { strokeDashoffset: 0 }, { strokeDashoffset: -210, duration: 7, ease: "none", immediateRender: false }, 4.5);
+      const rp = document.getElementById("rp");
+      const L = rp.getTotalLength();
+      const car = document.getElementById("car"), hk = document.getElementById("hiker");
+      const roadL = 0.40, trackL = 0.68;
+      function put(t) {
+        const a = rp.getPointAtLength(L * t);
+        const tr = "translate(" + a.x.toFixed(2) + "," + a.y.toFixed(2) + ")";
+        car.setAttribute("transform", tr); hk.setAttribute("transform", tr);
+        car.style.opacity = t <= trackL ? 1 : 0; hk.style.opacity = t > trackL ? 1 : 0;
+      }
+      put(0);
+      const st = { t: 0 };
+      tl.fromTo(st, { t: 0 }, { t: 1, duration: 8.5, ease: "sine.inOut", immediateRender: false, onUpdate: () => put(st.t) }, 0.6);
+      tl.from(["#st1", "#st2", "#st3", "#st4"], { opacity: 0, x: 30, duration: 0.45, stagger: 0.5, ease: "power3.out" }, 1.2);
+      tl.from("#slab", { opacity: 0, duration: 0.4 }, 3.6);
+      tl.from("#cells .c", { scaleY: 0, transformOrigin: "50% 100%", duration: 0.35, stagger: 0.08, ease: "power2.out" }, 3.8);
+      tl.from(".key", { opacity: 0, y: 10, duration: 0.35, stagger: 0.15 }, 5.0);
+      tl.from("#qq", { opacity: 0, scale: 0.9, duration: 0.5, ease: "back.out(1.6)" }, 6.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
