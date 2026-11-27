@@ -155,6 +155,7 @@ def build():
              ("delhi-airport-taxi", "Delhi airport taxi", "IGI T1, T2 & T3 arrivals pickup; drops to Agra, Jaipur, Haridwar, Chandigarh, Shimla & Manali."),
              ("srinagar-taxi-service", "Srinagar taxi service", "Airport pickups, Gulmarg, Pahalgam & Sonamarg day trips; drops to Jammu."),
              ("jammu-taxi-service", "Jammu taxi service", "Airport & Jammu Tawi pickups, Vaishno Devi drops at Katra, Patnitop & Shiv Khori; drops to Srinagar, Amritsar & Delhi."),
+             ("katra-taxi-service", "Katra taxi service", "Hotel & SVDK station pickups after darshan; Shiv Khori, Patnitop, Jammu airport, Srinagar & Delhi."),
              ("pathankot-taxi-service", "Pathankot taxi service", "Junction, Chakki Bank & airport pickups; drops to Dalhousie, Dharamshala, Jammu, Katra & Amritsar."),
              ("dalhousie-taxi-service", "Dalhousie taxi service", "Hotel pickups for Khajjiar, Kalatop & Chamba days; drops to Pathankot, Dharamshala, Amritsar & Delhi."),
              ("haridwar-taxi-service", "Haridwar taxi service", "Station & ghat pickups, Rishikesh and Neelkanth trips; drops to Delhi, Sonprayag & Badrinath."),
