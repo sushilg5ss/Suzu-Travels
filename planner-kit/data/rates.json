@@ -25,10 +25,10 @@
       "remote":       {"label": "Remote valley / camp",    "deluxe": 3600},
       "pilgrim":      {"label": "Pilgrim town",            "deluxe": 3480},
       "pilgrim_city": {"label": "Pilgrim city (Katra / Haridwar)", "deluxe": 4000},
-      "kashmir":      {"label": "Kashmir (Srinagar)",      "deluxe": 5750},
+      "kashmir":      {"label": "Kashmir (Srinagar)",      "deluxe": 6600},
       "kashmir_resort": {"label": "Kashmir resort town (Gulmarg / Pahalgam / Sonamarg)", "deluxe": 6800},
       "ladakh":       {"label": "Ladakh",                  "deluxe": 4300},
-      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 4700}
+      "rajasthan":    {"label": "Rajasthan city / heritage", "deluxe": 5400}
     },
     "tiers": [
       {"id": "standard", "name": "Standard (2★ / homestay)", "hi": "स्टैंडर्ड", "f": 0.7},

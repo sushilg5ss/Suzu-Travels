@@ -92,3 +92,16 @@ Same method (live hotel metasearch via MCP, 2 adults · 1 room · 1 night, cheap
 
 Pilgrim class now at target. Kashmir (Srinagar) and Rajasthan still below → continue +15 %/run in later audits. Char Dham yatra-season window: re-check Apr 2027.
 Source: https://slicktrip.com/hotels (searches above, run 26 Nov 2026).
+
+# Rate audit #5 — 27 Nov 2026 (v3.2) — Srinagar/Jaipur step + Udaipur, Jodhpur spot-check
+Same method (live hotel metasearch via MCP, 2 adults · 1 room · 1 night, ≥3★, cheapest first, USD × ₹88; public deluxe MAP = median 3–4★ priced listing × 1.12 + ₹900; target base ≈ 0.87 × public; max +15 % per class per run).
+
+| Place (class) | Date | Priced 3–4★ listings (USD) | Median | Public deluxe MAP ₹ | Planner deluxe before → after |
+|---|---|---|---|---|---|
+| Udaipur (rajasthan) | 15 Jan 27 (peak) | 12, 31, 37, 42, 43, 44, 65, 128 (5★ 190–672) | 42.5 | 5,090 | ″ |
+| Jodhpur (rajasthan) | 15 Jan 27 (peak) | 50, 79, 106, 110, 113 (5★ 116–1,249) | 106 | 11,350 | ″ |
+| Rajasthan class (Jaipur 7,900 / 7,010 · Udaipur 5,090 · Jodhpur 11,350) | — | — | — | median ≈ 7,450 → target ≈ 6,500 | 4,700 → **5,400** (+15 %, cap; still below → next audit) |
+| Srinagar (kashmir) | audit #4 (15 Jan 27) | — | 100 | 10,800 → target ≈ 9,400 | 5,750 → **6,600** (+15 %, cap; still below → next audit) |
+
+Effect (2 adults deluxe): Rajasthan Royal 10 Dec ₹49,900 → ₹54,000/adult, 10 May ₹45,000 → ₹48,200; Kashmir (gmpeak) 15 Jan ₹29,000 → ₹29,900; Shimla–Manali unchanged (₹23,300 rjpeak.sm).
+Source: https://slicktrip.com/hotels (searches above, run 27 Nov 2026).
