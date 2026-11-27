@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-27-planner",
+ "agent": "Trip Planner",
+ "summary": "v3.2 rate audit #5: kashmir 6,600, rajasthan 5,400 (+15% caps; Srinagar/Jaipur/Udaipur/Jodhpur public medians)",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "bc14dd5c4d9ffc783b448de379b065427eeb4b96edc68f593afab4ae1f6c577f",
+   "base_sha256": "35d58971eb4e2763c5abb250a8972a51510f90106359fa3a696f2ebaf0ea8c6c",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-27T06:34:19Z",
+ "status": "deployed"
+}
