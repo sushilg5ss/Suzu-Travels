@@ -988,5 +988,14 @@
    "w": 1280,
    "h": 720
   }
+ },
+ "katra-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@34f516058420b08c22fe623c201cdde90e9b5606/cab-kit/media/katra-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@34f516058420b08c22fe623c201cdde90e9b5606/cab-kit/media/katra-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@34f516058420b08c22fe623c201cdde90e9b5606/cab-kit/media/katra-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
