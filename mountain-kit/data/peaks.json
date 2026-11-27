@@ -293,10 +293,16 @@
  {
   "id": "jongsong-peak",
   "name": "Jongsong Peak",
-  "alt": [],
+  "alt": [
+   "Jongsang Ri",
+   "Jonsong"
+  ],
   "m": 7462,
   "ft": 24482,
-  "m_alt": [],
+  "m_alt": [
+   7459,
+   7473
+  ],
   "band": "7000",
   "state": "sikkim",
   "state_label": "Sikkim",
@@ -304,19 +310,20 @@
   "range": "Kangchenjunga Himal (Janak)",
   "area": "North Sikkim (Lhonak)",
   "fa": 1930,
-  "fa_by": "Hermann Hoerlin & Erwin Schneider (Dyhrenfurth international expedition)",
+  "fa_by": "Hermann Hoerlin & Erwin Schneider (Dyhrenfurth international expedition), 3 Jun 1930 (Wikipedia: 2 Jun), north ridge; second party 8 Jun 1930",
   "status": "restricted",
-  "status_note": "Sikkim restricts mountaineering on most high peaks (2001 ban; only some reopened) – check IMF/Sikkim status.",
+  "status_note": "Restricted from the Indian (North Sikkim) side; Sikkim limits high-peak climbing. Later ascents (1983, 1998, 2000) per the Himalayan Database; the 1983 Indian ascent is marked disputed.",
   "grade": "technical",
   "grade_note": "Glaciated high peak at a tripoint",
   "season": "Apr–May & Oct–Nov",
   "base": "Lachen → Lhonak valley",
   "foreigners": "restricted",
   "rank": 10,
-  "notable": "Highest climbed summit in the world from 1930 until Kamet (1931).",
+  "notable": "Highest climbed summit in the world from June 1930 until Kamet (21 Jun 1931).",
   "sources": [
    "https://en.wikipedia.org/wiki/Jongsong_Peak",
-   "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
+   "https://www.himalayanclub.org/hj/3/9/the-international-himalayan-expedition-1930/",
+   "https://himalayan-database.climbing-history.org/peak/JONG",
    "https://m.thewire.in/article/government/sikkim-centre-open-sacred-peaks-kanchenjunga-trekking"
   ]
  },
@@ -448,11 +455,16 @@
   "id": "kabru-north",
   "name": "Kabru North",
   "alt": [
-   "Kabru N"
+   "Kabru N",
+   "Kabru (main summit)",
+   "Kabru I"
   ],
   "m": 7412,
   "ft": 24318,
-  "m_alt": [],
+  "m_alt": [
+   7338,
+   7395
+  ],
   "band": "7000",
   "state": "sikkim",
   "state_label": "Sikkim",
@@ -460,7 +472,7 @@
   "range": "Kangchenjunga Himal (Singalila)",
   "area": "West Sikkim",
   "fa": 1994,
-  "fa_by": "Indian Army expedition (12 summiters, 10 May 1994)",
+  "fa_by": "Indian Army expedition (12 summiters, 10 May 1994); C.R. Cooke soloed the 7,338 m north/central top on 18 Nov 1935",
   "status": "restricted",
   "status_note": "Opened to foreigners in the 2019 MHA list, but Sikkim regards Kabru as sacred – check current permit status.",
   "grade": "technical",
@@ -469,10 +481,12 @@
   "base": "Yuksom (Dzongri)",
   "foreigners": "restricted",
   "rank": 12,
-  "notable": "Southernmost 7,000 m peak on Earth; C.R. Cooke soloed the 7,338 m Kabru summit in 1935 and W.W. Graham claimed near-summit in 1883 (disputed).",
+  "notable": "7,412 m is the main summit of the Kabru massif (AAJ 2025); most sources call the 7,338 m central top 'Kabru North' (Cooke, solo, 1935). Southernmost 7,000 m peak on Earth. W.W. Graham's 1883 claim is disputed. 2025: main summit climbed alpine-style from Nepal (Meroi, Benet, Hámor).",
   "sources": [
    "https://en.wikipedia.org/wiki/Kabru",
-   "https://en.wikipedia.org/wiki/List_of_mountains_in_India",
+   "https://publications.americanalpineclub.org/articles/13201217403",
+   "https://www.himalayanclub.org/hj/52/5/kabru-mountain-of-the-gods/",
+   "https://himalayanclub.org/hj/8/12/the-ascent-of-kabru",
    "https://www.theuiaa.org/imf-confirms-opening-of-137-himalayan-peaks/"
   ]
  },
@@ -645,7 +659,7 @@
   "range": "Garhwal Himalaya (Kamet group)",
   "area": "Chamoli",
   "fa": 1950,
-  "fa_by": "René Dittert, Alfred Tissières & Gabriel Chevalley (Anglo-Swiss)",
+  "fa_by": "René Dittert, Alfred Tissières & Gabriel Chevalley (Anglo-Swiss, with Kenneth Berrill), 22 Aug 1950, NE ridge from the Tibet side",
   "status": "climbed",
   "status_note": "Border area; low prominence (217 m) so absent from prominence-based lists.",
   "grade": "moderate",
@@ -654,11 +668,11 @@
   "base": "Joshimath → Gamshali/Niti",
   "foreigners": "yes",
   "rank": null,
-  "notable": "Low-prominence neighbour of Kamet.",
+  "notable": "Low-prominence (217 m) neighbour of Kamet, joined by Meade's Col. Second ascent 16 Jun 1953 by N.D. Jayal's Bengal Sappers team (Jayal, Pemba, Pooran Singh).",
   "sources": [
    "https://en.wikipedia.org/wiki/Abi_Gamin",
-   "https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth",
-   "https://en.wikipedia.org/wiki/List_of_mountain_peaks_of_Uttarakhand"
+   "https://www.himalayanclub.org/hj/17/7/abi-gamin-1950/",
+   "https://publications.americanalpineclub.org/articles/12195420902/Asia-India-Abi-Gamin"
   ]
  },
  {

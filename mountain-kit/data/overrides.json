@@ -610,5 +610,53 @@
    "https://www.himalayanclub.org/hj/13/6/chomiomo-and-pauhunri/",
    "https://explorersweb.com/forgotten-7000ers-pauhunri/"
   ]
+ },
+ "Jongsong Peak": {
+  "alt_names": [
+   "Jongsang Ri",
+   "Jonsong"
+  ],
+  "height_alternates_m": [
+   7459,
+   7473
+  ],
+  "first_ascent_by": "Hermann Hoerlin & Erwin Schneider (Dyhrenfurth international expedition), 3 Jun 1930 (Wikipedia: 2 Jun), north ridge; second party 8 Jun 1930",
+  "status_note": "Restricted from the Indian (North Sikkim) side; Sikkim limits high-peak climbing. Later ascents (1983, 1998, 2000) per the Himalayan Database; the 1983 Indian ascent is marked disputed.",
+  "notable": "Highest climbed summit in the world from June 1930 until Kamet (21 Jun 1931).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jongsong_Peak",
+   "https://www.himalayanclub.org/hj/3/9/the-international-himalayan-expedition-1930/",
+   "https://himalayan-database.climbing-history.org/peak/JONG",
+   "https://m.thewire.in/article/government/sikkim-centre-open-sacred-peaks-kanchenjunga-trekking"
+  ]
+ },
+ "Kabru North": {
+  "alt_names": [
+   "Kabru N",
+   "Kabru (main summit)",
+   "Kabru I"
+  ],
+  "height_alternates_m": [
+   7338,
+   7395
+  ],
+  "first_ascent_by": "Indian Army expedition (12 summiters, 10 May 1994); C.R. Cooke soloed the 7,338 m north/central top on 18 Nov 1935",
+  "notable": "7,412 m is the main summit of the Kabru massif (AAJ 2025); most sources call the 7,338 m central top 'Kabru North' (Cooke, solo, 1935). Southernmost 7,000 m peak on Earth. W.W. Graham's 1883 claim is disputed. 2025: main summit climbed alpine-style from Nepal (Meroi, Benet, Hámor).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kabru",
+   "https://publications.americanalpineclub.org/articles/13201217403",
+   "https://www.himalayanclub.org/hj/52/5/kabru-mountain-of-the-gods/",
+   "https://himalayanclub.org/hj/8/12/the-ascent-of-kabru",
+   "https://www.theuiaa.org/imf-confirms-opening-of-137-himalayan-peaks/"
+  ]
+ },
+ "Abi Gamin": {
+  "first_ascent_by": "René Dittert, Alfred Tissières & Gabriel Chevalley (Anglo-Swiss, with Kenneth Berrill), 22 Aug 1950, NE ridge from the Tibet side",
+  "notable": "Low-prominence (217 m) neighbour of Kamet, joined by Meade's Col. Second ascent 16 Jun 1953 by N.D. Jayal's Bengal Sappers team (Jayal, Pemba, Pooran Singh).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Abi_Gamin",
+   "https://www.himalayanclub.org/hj/17/7/abi-gamin-1950/",
+   "https://publications.americanalpineclub.org/articles/12195420902/Asia-India-Abi-Gamin"
+  ]
  }
 }
