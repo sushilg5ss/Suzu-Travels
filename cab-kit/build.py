@@ -486,6 +486,25 @@ def lead_loader():
     print("WARNING: media/js/lead.js changed - commit it, pin media.json lead.js to the new SHA, rebuild (hub uses the inline counter meanwhile)")
     return lead_js()
 
+def kit_loader(m, js):
+    """27 Nov 2026 (ENHANCEMENTS #31): the hub's minified kit script (kit.js + kit_hub.js, ~42 KB) is served from jsDelivr
+    (media.json -> kit_hub.js, pinned full SHA; same file browser-cached on every visit) with a ~450 B async loader
+    (fastly.jsdelivr.net mirror on error). Only when the pinned file equals this build's script; otherwise the script stays
+    inline + WARNING (never blocks a build - hub is then ~42 KB bigger: commit media/js/kit-hub.js, pin, rebuild).
+    No-JS / failed load: every WhatsApp/tel/#enquiry link is a plain href and keeps working."""
+    f = ROOT / "media" / "js" / "kit-hub.js"
+    u = MEDIA.get("kit_hub", {}).get("js", "")
+    if u and f.exists() and f.read_text(encoding="utf-8") == js:
+        fb = u.replace("https://cdn.jsdelivr.net/", "https://fastly.jsdelivr.net/")
+        ld = ("<script>(function(){var d=document,s=d.createElement('script');s.src='" + u + "';s.async=true;"
+              "s.onerror=function(){var f=d.createElement('script');f.src='" + fb + "';f.async=true;d.head.appendChild(f);};"
+              "d.head.appendChild(s);})();</script>")
+        k = m.rfind("<script>" + js + "</script>")
+        return m[:k] + ld + m[k + len(js) + 17:]
+    f.write_text(js, encoding="utf-8")
+    print("WARNING: media/js/kit-hub.js changed - commit it, pin media.json kit_hub.js to the new SHA, rebuild (hub keeps the inline kit script meanwhile, ~42 KB bigger)")
+    return m
+
 def _amp(h):
     return re.sub(r"&(?![a-zA-Z]+;|#\d+;)", "&amp;", h.split("<script>")[0]) + ("<script>" + "<script>".join(h.split("<script>")[1:]) if "<script>" in h else "")
 
@@ -673,6 +692,8 @@ def finish(slug, h, css_extra=""):
         sys.exit(f"BUILD REFUSED {slug}: '&' in the minified kit script")
     if re.search(r"<(/|p\b|div\b|table\b|img\b|ul\b|ol\b|li\b|span\b|br\b|svg\b|button\b|details\b|summary\b|small\b|b\b|a\b|h[1-6]\b|t[rdh]\b|thead\b|tbody\b|circle\b|path\b)", kitjs):
         sys.exit(f"BUILD REFUSED {slug}: HTML tag inside kit script (wpautop would inject <p>) — use \\x3c")
+    if slug == "cabs":  # 27 Nov 2026 (ENHANCEMENTS #31): hub headroom lever #5 - the minified kit script as a pinned jsDelivr file
+        m = kit_loader(m, kitjs)
     (OUT / f"{slug}.min.html").write_text(m, encoding="utf-8")
     return len(m)
 
