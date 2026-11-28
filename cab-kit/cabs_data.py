@@ -175,6 +175,10 @@ PLACES = {
     "Dinanagar": (32.14, 75.47),
     # 18 Nov 2026 · Pathankot–Mandi highway (NH154) waypoint between Nurpur and Shahpur (OSM town centre)
     "Kotla": (32.25, 76.03),
+    # 28 Nov 2026 · Leh / Ladakh sightseeing hubs (approx. OSM village centres; Nubra = Diskit, Pangong = Spangmik, Tso Moriri = Karzok)
+    "Khardung La": (34.28, 77.60), "Nubra": (34.55, 77.55), "Hunder": (34.58, 77.48), "Turtuk": (34.85, 76.83),
+    "Chang La": (34.05, 77.93), "Pangong": (33.93, 78.45), "Tso Moriri": (32.97, 78.26), "Lamayuru": (34.28, 76.77),
+    "Alchi": (34.22, 77.18), "Hemis": (33.91, 77.70), "Thiksey": (34.06, 77.67),
 }
 
 # Pickup-point presets for the hub planner (ENHANCEMENTS #6, 27 Oct 2026). Name = "<ROUTES city>, <point>" so the planner's
