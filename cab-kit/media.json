@@ -1001,5 +1001,14 @@
  "kit_hub": {
   "js": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@5af251a1061c2d0499bc493456944af5e86a1cae/cab-kit/media/js/kit-hub.js",
   "note": "hub kit script (kit.js + kit_hub.js, terser-minified) loaded async by build.py kit_loader(); re-pin when kit.js/kit_hub.js change (build warns, hub stays inline meanwhile); ENHANCEMENTS #31, 27 Nov 2026"
+ },
+ "leh-taxi-service": {
+  "route": {
+   "mp4": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e708f9cba67ab44f8813ab94ab74a3a1a64f2ea2/cab-kit/media/leh-taxi-service/route.mp4",
+   "webm": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e708f9cba67ab44f8813ab94ab74a3a1a64f2ea2/cab-kit/media/leh-taxi-service/route.webm",
+   "poster": "https://cdn.jsdelivr.net/gh/sushilg5ss/suzu-travels@e708f9cba67ab44f8813ab94ab74a3a1a64f2ea2/cab-kit/media/leh-taxi-service/route-poster.webp",
+   "w": 1280,
+   "h": 720
+  }
  }
 }
