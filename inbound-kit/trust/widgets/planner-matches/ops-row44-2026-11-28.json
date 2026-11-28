@@ -1,0 +1,5 @@
+[
+ {"id":11411,"find":"[\"/india-tours/khajuraho-temples/\", \"Khajuraho temples\"]]], \"Rajasthan\": ","replace":"[\"/india-tours/khajuraho-temples/\", \"Khajuraho temples\"], [\"/india-tours/orchha/\", \"Orchha\"]]], \"Rajasthan\": ","expected_count":1},
+ {"id":11411,"find":"[\"/india-tours/agra-to-jaipur/\", \"Agra to Jaipur\"]]], \"Himachal\": ","replace":"[\"/india-tours/agra-to-jaipur/\", \"Agra to Jaipur\"], [\"/india-tours/orchha/\", \"Orchha\"]]], \"Himachal\": ","expected_count":1},
+ {"id":11411,"find":"for(var q=0;q<3;q++){for(var k2=0;k2<keys.length;k2++){var m2=M[keys[k2]]","replace":"for(var q=0;q<4;q++){for(var k2=0;k2<keys.length;k2++){var m2=M[keys[k2]]","expected_count":1}
+]

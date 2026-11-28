@@ -16,3 +16,5 @@ Note: on the cached plain URL WP Rocket "Delay JS" runs it after first scroll/ta
 **Live 22 Nov 2026:** row 39 map published on 11411 (dry_run 1, replaced 1). Live check 1440 + 390 (?v= + plain): Varanasi/Ladakh/Amritsar/Kerala chips list their own guides; screenshot live-row39-390.png.
 
 **Live 24 Nov 2026 (row 41):** new chip 'South India (Tamil Nadu · Hampi)' (source hub-v2/build.py PLACES) + map key 'South' → South India tour 12 d, Hampi, Kerala tour 8 d; Goa now also lists Hampi. No hub package card matches South → honest 'we plan it from scratch' line. Ops: ops-row41-2026-11-24.json (revert = ops reversed). Screenshot live-row41-390.png.
+
+**Live 28 Nov 2026 (row 44):** 4th-link rule reviewed — JS loop now q<4 (round-robin per chip, still max 4 links in total), so a single chip can show 4 guides. Orchha (live 24 Nov) added as 4th guide under Golden Triangle (Agra add-on) and Varanasi (Agra → Orchha → Khajuraho → Varanasi); Kumbh Mela 2027 kept. Multi-chip picks unchanged (first 4 round-robin). Ops: ops-row44-2026-11-28.json (revert = ops reversed). Screenshot live-row44-390.png.
