@@ -154,6 +154,7 @@ def build():
              ("mussoorie-taxi-service", "Mussoorie taxi service", "Hotel pickups for Kempty Falls, Dhanaulti & Landour; drops to Dehradun, Jolly Grant, Rishikesh, Haridwar & Delhi."),
              ("delhi-airport-taxi", "Delhi airport taxi", "IGI T1, T2 & T3 arrivals pickup; drops to Agra, Jaipur, Haridwar, Chandigarh, Shimla & Manali."),
              ("srinagar-taxi-service", "Srinagar taxi service", "Airport pickups, Gulmarg, Pahalgam & Sonamarg day trips; drops to Jammu."),
+             ("leh-taxi-service", "Leh taxi service", "Leh airport pickups and union taxis for Nubra, Pangong & Tso Moriri; drops to Kargil, Srinagar & Manali."),
              ("jammu-taxi-service", "Jammu taxi service", "Airport & Jammu Tawi pickups, Vaishno Devi drops at Katra, Patnitop & Shiv Khori; drops to Srinagar, Amritsar & Delhi."),
              ("katra-taxi-service", "Katra taxi service", "Hotel & SVDK station pickups after darshan; Shiv Khori, Patnitop, Jammu airport, Srinagar & Delhi."),
              ("pathankot-taxi-service", "Pathankot taxi service", "Junction, Chakki Bank & airport pickups; drops to Dalhousie, Dharamshala, Jammu, Katra & Amritsar."),
