@@ -105,3 +105,13 @@ Same method (live hotel metasearch via MCP, 2 adults · 1 room · 1 night, ≥3�
 
 Effect (2 adults deluxe): Rajasthan Royal 10 Dec ₹49,900 → ₹54,000/adult, 10 May ₹45,000 → ₹48,200; Kashmir (gmpeak) 15 Jan ₹29,000 → ₹29,900; Shimla–Manali unchanged (₹23,300 rjpeak.sm).
 Source: https://slicktrip.com/hotels (searches above, run 27 Nov 2026).
+
+# Rate audit #6 — 28 Nov 2026 (v3.3) — Srinagar/Rajasthan step (no new searches)
+Same targets as audits #4–#5 (Srinagar public ≈ ₹10,800 → target ≈ 9,400; Rajasthan class median ≈ ₹7,450 → target ≈ 6,500); max +15 % per class per run.
+
+| Class | Before → after | Status |
+|---|---|---|
+| kashmir (Srinagar) | 6,600 → **7,550** (+14.4 %) | still below target → one more step (~8,650), then re-measure |
+| rajasthan | 5,400 → **6,200** (+14.8 %) | within 5 % of target → stop; re-measure next season |
+
+Effect (2 adults deluxe): Rajasthan Royal 10 Dec ₹54,000 → ₹58,600/adult, 10 May ₹48,200 → ₹51,900; Kashmir (gmpeak) 15 Jan ₹29,900 → ₹31,000, 15 Nov ₹30,100; Shimla–Manali unchanged (₹23,300 rjpeak.sm).
