@@ -42,6 +42,7 @@ Audience: **Indian travellers going abroad**. Goal: enquiries (WhatsApp +91 7087
 | /oman-tour-packages/ | 25148 | `.hx` country page (24 Nov 2026) — `pages/gen_oman.py` (Muscat–coast–Wahiba–Nizwa + Musandam/Salalah/Dubai add-ons; 7-day itinerary grid = 4 columns; 7-photo gallery like Seychelles, `med` 768px thumbs; Wikimedia Commons photos) |
 | /kenya-tour-packages/ | 25353 | `.hx` country page (25 Nov 2026) — `pages/gen_kenya.py` (Nairobi–Masai Mara–Naivasha/Nakuru–Amboseli + Diani; 8-day itinerary grid = 4 columns; 7-photo gallery like Oman, `med` 768px thumbs; Wikimedia Commons photos) |
 | /tanzania-tour-packages/ | 25765 | `.hx` country page (26 Nov 2026) — `pages/gen_tanzania.py` (Arusha–Tarangire–Serengeti–Ngorongoro + Zanzibar; 8-day itinerary grid = 4 columns; 7-photo gallery like Kenya, `med` 768px thumbs; Wikimedia Commons photos) |
+| /south-africa-tour-packages/ | 26038 | `.hx` country page (28 Nov 2026) — `pages/gen_southafrica.py` (Cape Town–Cape Peninsula–Winelands + Kruger/Panorama Route, Garden Route option; 8-day itinerary grid = 4 columns; 7-photo gallery like Tanzania, `med` 768px thumbs; Wikimedia Commons photos; visa section built on the new DHA ETA) |
 | /turkey-tour-packages/ | 14629 | `.hx` country page (19 Oct 2026) — `pages/gen_turkey.py` (same template; 8-day itinerary grid = 4 columns) |
 
 ## Files
@@ -141,3 +142,9 @@ Playwright 1440 + 390 (no overflow, 0 broken images, one H1), links/media 200, l
 - Commons Giles Laurent Serengeti series ("NNN_… Photo by Giles Laurent", CC BY-SA 4.0) and Diego Delso May 2024 Tanzania series (Spanish file names, CC BY-SA 4.0) are rich sources; Ikiwaner featured pictures are GFDL-1.2 only — skip. Commons raw wikitext and 1920px thumbs answered fine this run.
 - Hub diff: two identical Jan/Feb WHEN anchors → one replace with expected_count 2 (simulate locally first). Live hub still 22 bytes shorter than local build (pre-existing drift).
 - Grid cards for Tanzania inserted before the Kenya card on 34 country pages (+376 `.sx` / +340 `.hx`) and before Seychelles on the Kenya page.
+
+## Notes (28 Nov 2026)
+- South Africa official sources: dha.gov.za pages answer curl (exempt-countries table: India ordinary column empty = visa needed; types-of-visas: no visas at ports of entry). The ETA portal eta.dha.gov.za is a JS app — headless Chromium reads /faq (validity, airports, passport 7 months, minors "future phase", alternative channels). Launch facts from sanews.gov.za (node 83530/83540). South African High Commission New Delhi pages are WordPress — `dirco.gov.za/newdelhi/wp-json/wp/v2/pages/1431` gives the visa section as JSON.
+- Commons Dietmar Rabich (User:XRay, `{{User:XRay/Templates/Credits/cc-by-sa}}` = CC BY-SA 4.0) 2024 South Africa series ("Place (ZA), … -- 2024 -- nnnn.jpg") is rich for Cape Town, Kruger, Garden Route, Blyde River Canyon; thumbs 429 from the sandbox again, WP fetched all 1920px thumbs.
+- WP Rocket: the `?v=` fetch serves non-lazyloaded images while the plain (cached) fetch has lazyload markup — compare new links/cards, not raw HTML. Both had the new content on all 38 pages.
+- Grid cards for South Africa inserted before the Tanzania card on 35 country pages (+382 `.sx` / +361 `.hx`) and before Kenya on the Tanzania page. Hub delta +4,545 bytes = local build diff (live still 22 bytes shorter).
