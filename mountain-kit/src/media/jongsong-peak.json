@@ -1,0 +1,123 @@
+{
+ "hero": {
+  "kicker": "JONGSONG · SIKKIM · 1930",
+  "scenes": [
+   {
+    "img": "px-35905430.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 0
+    },
+    "to": {
+     "y": 500
+    }
+   },
+   {
+    "img": "px-10254837.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 40
+    },
+    "to": {
+     "scale": 1.1,
+     "x": -20
+    }
+   },
+   {
+    "img": "px-9683997.jpg",
+    "kind": "land",
+    "h": 1408,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "scale": 1.02,
+     "x": 60,
+     "y": 30
+    },
+    "to": {
+     "scale": 1.12,
+     "x": -20,
+     "y": 70
+    }
+   },
+   {
+    "img": "px-38930225.jpg",
+    "kind": "land",
+    "h": 1188,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "scale": 1.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -30
+    }
+   }
+  ],
+  "steps": [
+   [
+    5425,
+    "LAKE CAMP · 1930"
+   ],
+   [
+    5700,
+    "CAMP 1 · 1930"
+   ],
+   [
+    6555,
+    "NORTH COL · 1930"
+   ],
+   [
+    7462,
+    "JONGSONG"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Jongsong Peak, camp by camp (1930)",
+  "sub": "1930 north-ridge line · Himalayan Journal 3",
+  "camps": [
+   {
+    "name": "Lake camp",
+    "m": 5425,
+    "day": "28 May 1930 · approx."
+   },
+   {
+    "name": "Camp 1",
+    "m": 5700,
+    "day": "Approx."
+   },
+   {
+    "name": "Camp 3",
+    "m": 6490,
+    "day": "Approx."
+   },
+   {
+    "name": "North col",
+    "m": 6555,
+    "day": "Last camp · approx."
+   },
+   {
+    "name": "Summit",
+    "m": 7462,
+    "day": "3 Jun 1930"
+   }
+  ]
+ }
+}

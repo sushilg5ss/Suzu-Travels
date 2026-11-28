@@ -1,0 +1,140 @@
+{
+ "hero": {
+  "kicker": "KABRU · SIKKIM–NEPAL",
+  "scenes": [
+   {
+    "img": "px-14100743.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     0,
+     4.0
+    ],
+    "from": {
+     "y": 450
+    },
+    "to": {
+     "y": 1000
+    }
+   },
+   {
+    "img": "px-20809686.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     3.4,
+     7.6
+    ],
+    "from": {
+     "y": 300
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-37016841.jpg",
+    "kind": "tilt",
+    "h": 2880,
+    "t": [
+     7.0,
+     10.8
+    ],
+    "from": {
+     "y": 600
+    },
+    "to": {
+     "y": 900
+    }
+   },
+   {
+    "img": "px-32109154.jpg",
+    "kind": "tilt",
+    "h": 2560,
+    "t": [
+     10.2,
+     14.0
+    ],
+    "from": {
+     "y": 560,
+     "scale": 1.22,
+     "x": -200
+    },
+    "to": {
+     "y": 900,
+     "scale": 1.24,
+     "x": -210
+    }
+   }
+  ],
+  "steps": [
+   [
+    3650,
+    "JAMLINGAON"
+   ],
+   [
+    4360,
+    "CHAURIKHANG BC"
+   ],
+   [
+    5860,
+    "CAMP 2"
+   ],
+   [
+    6580,
+    "CAMP 3"
+   ],
+   [
+    7412,
+    "KABRU"
+   ]
+  ]
+ },
+ "profile": {
+  "title": "Kabru, camp by camp (1994)",
+  "sub": "Sikkim-side line, 1994 · Himalayan Journal 52",
+  "camps": [
+   {
+    "name": "Bakhim",
+    "m": 2750,
+    "day": "Yuksom, Apr 1994"
+   },
+   {
+    "name": "Jamlingaon",
+    "m": 3650,
+    "day": "1994",
+    "dy": 18
+   },
+   {
+    "name": "Chaurikhang BC",
+    "m": 4360,
+    "day": "Base camp"
+   },
+   {
+    "name": "Advance base",
+    "m": 4940,
+    "day": "1994"
+   },
+   {
+    "name": "Camp 1",
+    "m": 5550,
+    "day": "1994"
+   },
+   {
+    "name": "Camp 2",
+    "m": 5860,
+    "day": "1994"
+   },
+   {
+    "name": "Camp 3",
+    "m": 6580,
+    "day": "1994"
+   },
+   {
+    "name": "Summit",
+    "m": 7412,
+    "day": "10 May 1994"
+   }
+  ]
+ }
+}
