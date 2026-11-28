@@ -1,0 +1,16 @@
+{
+ "id": "2026-11-28-planner",
+ "agent": "Trip Planner",
+ "summary": "v3.3 rate audit step: kashmir 7,550, rajasthan 6,200",
+ "files": [
+  {
+   "target": "plan-your-trip/index.html",
+   "sha256": "585b84f98ec0ffb3bd678886067f4efcdb5556948eb75b0543cee1bd8d4e786f",
+   "base_sha256": "bc14dd5c4d9ffc783b448de379b065427eeb4b96edc68f593afab4ae1f6c577f",
+   "url": "https://suzutravels.com/plan-your-trip/"
+  }
+ ],
+ "attempts": 1,
+ "finished_at": "2026-11-28T06:30:08Z",
+ "status": "deployed"
+}
