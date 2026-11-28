@@ -151,6 +151,59 @@ def route_planner(p, r):
             f'<div class="szc-pout" id="szc-pout"><div class="szc-pempty"><b>Fares for this road:</b> the map loads the real route and shows one-way or round-trip fares for Prime, Standard and Saver fleets - lock the price on WhatsApp in one tap.</div></div>'
             f'</form><p class="szc-note">Map data © OpenStreetMap contributors · road routing by OSRM · map tiles by OpenFreeMap. Distances and times are road estimates for planning; your WhatsApp quote is the final price.</p></section>')
 
+# 28 Nov 2026 (ENHANCEMENTS #33): "from <town> to anywhere" planner on city / airport / vehicle pages - rolled out 4 pages per
+# Experience run (add slugs here; every other page builds byte-identical). kit.js is unchanged: free From/To inputs, chips use the
+# existing data-plan-route handler, unknown places go to Photon, known pairs use the engine km/f, straight-line fallback on no routing.
+CITY_PLAN = ["manali-taxi-service", "shimla-taxi-service", "chandigarh-taxi-service", "dharamshala-taxi-service"]
+CITY_PLAN_CSS = (".szc-pchips{grid-column:1/-1;display:flex;gap:8px;align-items:center;overflow-x:auto;white-space:nowrap;min-height:36px;scrollbar-width:none}"
+                 ".szc-pchips b{font-size:13px;color:var(--mid)}"
+                 ".szc-pchips button{flex:none;font-family:inherit;font-weight:600;font-size:13px;line-height:1;padding:9px 13px;border:1px solid var(--gold);border-radius:99px;background:#fffaf0;color:var(--em);cursor:pointer}"
+                 ".szc-pchips button:hover{background:var(--em);color:#fff}")
+
+def city_planner(p, town, outs):
+    """Live planner for a city page: From = the page's town (editable), To = free text (Photon) + one-tap chips from the page's own
+    outstation rows; first chip pre-filled and auto-played on scroll like route pages. Same #szc-plan ids, so kit.js runs unchanged."""
+    if p["slug"] not in CITY_PLAN or town not in PLACES:
+        return ""
+    allp = dict(PLACES, **PICKUPS)
+    dests = []
+    for a, b, km, f in outs:
+        d = b if a == town else (a if b == town else None)
+        if d and d in allp and d not in dests:
+            dests.append(d)
+    if not dests:
+        return ""
+    rr = [dict(a=r["a"], b=r["b"], km=r["km"], f=r["f"], t=r["t"], u=(page_url(r["slug"]) if r["slug"] and is_live(r["slug"]) else ""))
+          for r in ROUTES if town in (r["a"], r["b"])]
+    seen = {frozenset((x["a"], x["b"])) for x in rr}
+    for a, b, km, f in outs:
+        if frozenset((a, b)) not in seen:
+            seen.add(frozenset((a, b)))
+            rr.append(dict(a=a, b=b, km=km, f=f, t="", u=""))
+    names = [town] + [k for k in PICKUPS if k.split(",")[0] == town] + dests[:8]
+    names += [x[k] for x in rr for k in ("a", "b") if x[k] in allp and x[k] not in names]
+    names = list(dict.fromkeys(names))
+    pv = [dict(id=v["id"], n=v["name"], ow=v["ow"], h=v["hire"], m=v["min"], nt=v["night"], seats=v["seats"], quote=bool(v.get("quote"))) for v in FLEET]
+    cfg = dict(p={k: [round(allp[k][0], 3), round(allp[k][1], 3)] for k in names}, r=rr, v=pv, s=p["slug"],
+               js="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.1/dist/maplibre-gl.js", css="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.1/dist/maplibre-gl.css")
+    vopts = "".join(f'<option value="{v["id"]}"{" selected" if v["id"]=="sedan" else ""}>{v["name"]} · {v["seats"]} seats</option>' for v in FLEET)
+    chips = "".join(f'<button type="button" data-plan-route="{esc(town + ">" + d)}">{d}</button>' for d in dests[:6])
+    dl = "".join(f'<option value="{esc(k)}">' for k in names)
+    return (f'<section class="szc-sec" id="live"><span class="szc-kicker">Live route planner</span><h2>Taxi from {town} to anywhere - see the road and the fare</h2>'
+            f'<p class="szc-lead">Type where you want to go from {town} (or change the pickup). We draw the real road route, play the drive and show one-way or round-trip fares for every car and fleet tier - then lock it on WhatsApp.</p>'
+            f'<form class="szc-plan" id="szc-plan" data-plan=\'{esc(json.dumps(cfg, ensure_ascii=False, separators=(",", ":")))}\' data-auto="1" onsubmit="return false">'
+            f'<div class="szc-pform"><div class="szc-pchips"><b>From {town} to:</b>{chips}</div>'
+            f'<div><label for="szc-fa">From</label><input id="szc-fa" type="text" list="szc-places" value="{esc(town)}" placeholder="City, airport or station" autocomplete="off"></div>'
+            f'<div><label for="szc-fb">To</label><input id="szc-fb" type="text" list="szc-places" value="{esc(dests[0])}" placeholder="Anywhere in North India" autocomplete="off"></div>'
+            f'<div><label for="szc-pv">Car</label><select id="szc-pv">{vopts}</select></div>'
+            f'<div><label for="szc-pm">Trip</label><select id="szc-pm"><option value="one">One-way drop</option><option value="round">Round trip</option></select></div>'
+            f'<div><label for="szc-pd">Date</label><input id="szc-pd" type="date"></div>'
+            f'<div><label for="szc-pn">People</label><input id="szc-pn" type="number" min="1" max="45" value="2"></div>'
+            f'<div class="szc-pgo"><button class="szc-btn gold" type="submit">Show route &amp; fare</button></div><p class="szc-pstat" id="szc-pstat"></p></div>'
+            f'<div class="szc-mapwrap"><div class="szc-map" id="szc-map" aria-label="Road map of your trip from {esc(town)}"></div><div class="szc-mapidle"><b>{town} → {dests[0]} on the map</b><span>Scroll here and the drive plays on real roads - or type any place and press Show route.</span></div></div>'
+            f'<div class="szc-pout" id="szc-pout"><div class="szc-pempty"><b>How it works:</b> pick a place above or type your own, press <b>Show route &amp; fare</b> and get the distance, drive time and the fare for Prime, Standard and Saver fleets - then lock the price on WhatsApp in one tap.</div></div>'
+            f'</form><datalist id="szc-places">{dl}</datalist><p class="szc-note">Map data © OpenStreetMap contributors · road routing by OSRM · map tiles by OpenFreeMap. Distances and times are road estimates for planning; your WhatsApp quote is the final price.</p></section>')
+
 def route_media(slug, stops, heading, lead):
     m = MEDIA.get(slug, {}).get("route")
     items = []
@@ -378,12 +431,14 @@ def build_city(p):
     outs = p["outstation"]
     chips = p.get("chips") or [f"Local sightseeing", f"Outstation drops", f'To {outs[0][1]} from <b>{inr(oneway("sedan", outs[0][2], outs[0][3]))}</b>', "Hatchback → Tempo Traveller", "24×7 WhatsApp"]
     dests = [dict(l=f"{a} → {b}", km=km, f=f) for a, b, km, f in outs]
-    body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Rates"), ("route", "Trips"), ("cars", "Cars"), ("tips", "Tips"), ("faq", "FAQ")])
+    cp = city_planner(p, town, outs)
+    body = hero(p, chips) + nav([("overview", "Overview"), ("fares", "Rates")] + ([("live", "Live map")] if cp else []) + [("route", "Trips"), ("cars", "Cars"), ("tips", "Tips"), ("faq", "FAQ")])
     body += (f'<section class="szc-sec" id="overview"><span class="szc-kicker">At a glance</span><h2>{p["title"]}: rates and trips</h2>'
              f'<div class="szc-answer">{p["answer"]}</div>{facts(p["facts"])}</section>')
     body += (f'<section class="szc-sec alt" id="fares"><span class="szc-kicker">Rates 2026</span><h2>{p.get("rates_h") or town + " local taxi rates"}</h2>{local_table(p["local_rates"])}'
              f'<h3 style="margin-top:34px">{p.get("out_h") or "Outstation taxi from " + town}</h3>{outstation_table(outs, p["slug"])}{includes()}'
              f'<h3 style="margin-top:34px">Fare calculator</h3>{calculator(dests, p["slug"])}</section>')
+    body += cp
     body += route_media(p["slug"], p["stops"], p.get("route_h") or f"Popular taxi trips from {town}", p.get("route_lead") or f"Where our {town} cabs go most, and what each trip is known for.")
     body += f'<section class="szc-sec alt" id="cars"><span class="szc-kicker">Our fleet</span><h2>Cars available {p.get("in_town") or "in " + town}</h2>{vehicle_cards(p["slug"], town, dests[0])}</section>'
     body += f'<section class="szc-sec" id="tips"><span class="szc-kicker">Know before you go</span><h2>Good to know about taxis {p.get("in_town") or "in " + town}</h2>{tips(p["tips"])}</section>'
@@ -647,6 +702,8 @@ def finish(slug, h, css_extra=""):
         sys.exit(f"BUILD REFUSED {slug}: literal '>' inside an attribute value (wptexturize breaks the closing quote) — use &gt;")
     if slug == "cabs":  # 28 Oct 2026 hub size budget: '"' needs no escaping inside the single-quoted data-cfg/fleet/plan JSON (saves ~11 KB)
         m = re.sub(r"data-(cfg|fleet|plan)='[^']*'", lambda x: x.group(0).replace("&quot;", '"'), m)
+    if slug in CITY_PLAN:  # 28 Nov 2026 (#33): same '"' trick as the hub, only inside the city planner's single-quoted data-plan (~1.6 KB)
+        m = re.sub(r"data-plan='[^']*'", lambda x: x.group(0).replace("&quot;", '"'), m)
     if slug == "cabs" and MEDIA.get("hub_speed"):  # 31 Oct 2026 speed pass: lighter photos/poster on the hub, 800w card photos (same URL length)
         nsha = MEDIA["hub_speed"]["sha"]
         swap = lambda u: re.sub(r"@[0-9a-f]{40}/", "@" + nsha + "/", u)
@@ -704,6 +761,6 @@ if __name__ == "__main__":
         if only and p["slug"] not in only:
             continue
         h = {"route": build_route, "city": build_city, "vehicle": build_vehicle}[p["kind"]](p)
-        print(p["slug"], finish(p["slug"], h))
+        print(p["slug"], finish(p["slug"], h, CITY_PLAN_CSS if 'id="szc-plan"' in h and p["kind"] != "route" else ""))
     if not only or "cabs" in only:
         print("cabs", finish("cabs", hub.build(), HUB_CSS))
